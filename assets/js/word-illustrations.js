@@ -39312,6 +39312,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/高压.svg",
     "caption": "áp lực cao, điện áp cao"
   },
+  "搞鬼": {
+    "file": "搞鬼.svg",
+    "src": "images/HSK_3.0/level7/搞鬼.svg",
+    "caption": "giở trò, giở mưu ma chước quỷ"
+  },
   "搞笑": {
     "file": "搞笑.svg",
     "src": "images/HSK_3.0/level7/搞笑.svg",
@@ -39321,6 +39326,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "告.svg",
     "src": "images/HSK_3.0/level7/告.svg",
     "caption": "kiện, thưa kiện, tố cáo"
+  },
+  "告示": {
+    "file": "告示.svg",
+    "src": "images/HSK_3.0/level7/告示.svg",
+    "caption": "thông báo, yết thị"
   },
   "告知": {
     "file": "告知.svg",
@@ -39427,10 +39437,25 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/根基.svg",
     "caption": "nền móng, gốc rễ, nền tảng"
   },
+  "跟进": {
+    "file": "跟进.svg",
+    "src": "images/HSK_3.0/level7/跟进.svg",
+    "caption": "theo sát, bám sát tiến độ"
+  },
+  "根深蒂固": {
+    "file": "根深蒂固.svg",
+    "src": "images/HSK_3.0/level7/根深蒂固.svg",
+    "caption": "ăn sâu bám rễ, thâm căn cố đế"
+  },
   "根源": {
     "file": "根源.svg",
     "src": "images/HSK_3.0/level7/根源.svg",
     "caption": "căn nguyên, nguồn cội"
+  },
+  "根治": {
+    "file": "根治.svg",
+    "src": "images/HSK_3.0/level7/根治.svg",
+    "caption": "chữa dứt điểm, trị tận gốc"
   },
   "耕": {
     "file": "耕.svg",
@@ -39441,6 +39466,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "更改.svg",
     "src": "images/HSK_3.0/level7/更改.svg",
     "caption": "thay đổi"
+  },
+  "耕耘": {
+    "file": "耕耘.svg",
+    "src": "images/HSK_3.0/level7/耕耘.svg",
+    "caption": "vun xới, cày bừa, cống hiến"
   }
 };
 
