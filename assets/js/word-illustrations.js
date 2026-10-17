@@ -43466,6 +43466,261 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "开发区.svg",
     "src": "images/HSK_3.0/level7/开发区.svg",
     "caption": "khu phát triển kinh tế, khu chế xuất"
+  },
+  "开发商": {
+    "file": "开发商.svg",
+    "src": "images/HSK_3.0/level7/开发商.svg",
+    "caption": "chủ đầu tư, nhà phát triển (bất động sản)"
+  },
+  "开工": {
+    "file": "开工.svg",
+    "src": "images/HSK_3.0/level7/开工.svg",
+    "caption": "khởi công, bắt đầu thi công/sản xuất"
+  },
+  "开垦": {
+    "file": "开垦.svg",
+    "src": "images/HSK_3.0/level7/开垦.svg",
+    "caption": "khai khẩn, vỡ hoang (đất đai)"
+  },
+  "开明": {
+    "file": "开明.svg",
+    "src": "images/HSK_3.0/level7/开明.svg",
+    "caption": "cởi mở, khai sáng, tiến bộ"
+  },
+  "开辟": {
+    "file": "开辟.svg",
+    "src": "images/HSK_3.0/level7/开辟.svg",
+    "caption": "mở ra, khai phá, mở đường"
+  },
+  "开天辟地": {
+    "file": "开天辟地.svg",
+    "src": "images/HSK_3.0/level7/开天辟地.svg",
+    "caption": "khai thiên lập địa, xưa nay chưa từng có"
+  },
+  "开庭": {
+    "file": "开庭.svg",
+    "src": "images/HSK_3.0/level7/开庭.svg",
+    "caption": "mở phiên tòa, xét xử"
+  },
+  "开销": {
+    "file": "开销.svg",
+    "src": "images/HSK_3.0/level7/开销.svg",
+    "caption": "chi tiêu, chi phí, phí tổn"
+  },
+  "开张": {
+    "file": "开张.svg",
+    "src": "images/HSK_3.0/level7/开张.svg",
+    "caption": "khai trương, mở hàng"
+  },
+  "开支": {
+    "file": "开支.svg",
+    "src": "images/HSK_3.0/level7/开支.svg",
+    "caption": "chi tiêu, chi phí ngân sách"
+  },
+  "楷模": {
+    "file": "楷模.svg",
+    "src": "images/HSK_3.0/level7/楷模.svg",
+    "caption": "tấm gương, hình mẫu, chuẩn mực"
+  },
+  "凯旋": {
+    "file": "凯旋.svg",
+    "src": "images/HSK_3.0/level7/凯旋.svg",
+    "caption": "khải hoàn, trở về trong chiến thắng"
+  },
+  "堪称": {
+    "file": "堪称.svg",
+    "src": "images/HSK_3.0/level7/堪称.svg",
+    "caption": "có thể coi là, xứng danh là"
+  },
+  "刊登": {
+    "file": "刊登.svg",
+    "src": "images/HSK_3.0/level7/刊登.svg",
+    "caption": "đăng tải, đăng báo"
+  },
+  "看护": {
+    "file": "看护.svg",
+    "src": "images/HSK_3.0/level7/看护.svg",
+    "caption": "chăm sóc, trông nom, chăm nom"
+  },
+  "看守": {
+    "file": "看守.svg",
+    "src": "images/HSK_3.0/level7/看守.svg",
+    "caption": "canh giữ, canh gác, trông coi"
+  },
+  "勘探": {
+    "file": "勘探.svg",
+    "src": "images/HSK_3.0/level7/勘探.svg",
+    "caption": "thăm dò, khảo sát địa chất"
+  },
+  "刊物": {
+    "file": "刊物.svg",
+    "src": "images/HSK_3.0/level7/刊物.svg",
+    "caption": "ấn phẩm, tập san, tạp chí"
+  },
+  "砍伐": {
+    "file": "砍伐.svg",
+    "src": "images/HSK_3.0/level7/砍伐.svg",
+    "caption": "chặt phá, đốn hạ (cây cối)"
+  },
+  "侃侃而谈": {
+    "file": "侃侃而谈.svg",
+    "src": "images/HSK_3.0/level7/侃侃而谈.svg",
+    "caption": "ăn nói lưu loát, đĩnh đạc tự tin, đàm luận sôi nổi"
+  },
+  "坎坷": {
+    "file": "坎坷.svg",
+    "src": "images/HSK_3.0/level7/坎坷.svg",
+    "caption": "trắc trở, gập ghềnh, gian truân"
+  },
+  "看台": {
+    "file": "看台.svg",
+    "src": "images/HSK_3.0/level7/看台.svg",
+    "caption": "khán đài"
+  },
+  "看管": {
+    "file": "看管.svg",
+    "src": "images/HSK_3.0/level7/看管.svg",
+    "caption": "trông coi, canh giữ, coi sóc"
+  },
+  "抗衡": {
+    "file": "抗衡.svg",
+    "src": "images/HSK_3.0/level7/抗衡.svg",
+    "caption": "đương đầu, kháng cự, cân sức đối đầu"
+  },
+  "抗拒": {
+    "file": "抗拒.svg",
+    "src": "images/HSK_3.0/level7/抗拒.svg",
+    "caption": "cưỡng lại, chống lại, kháng cự"
+  },
+  "抗生素": {
+    "file": "抗生素.svg",
+    "src": "images/HSK_3.0/level7/抗生素.svg",
+    "caption": "thuốc kháng sinh"
+  },
+  "抗争": {
+    "file": "抗争.svg",
+    "src": "images/HSK_3.0/level7/抗争.svg",
+    "caption": "đấu tranh, phản kháng"
+  },
+  "考查": {
+    "file": "考查.svg",
+    "src": "images/HSK_3.0/level7/考查.svg",
+    "caption": "kiểm tra, khảo sát, sát hạch"
+  },
+  "考量": {
+    "file": "考量.svg",
+    "src": "images/HSK_3.0/level7/考量.svg",
+    "caption": "cân nhắc, xem xét, tính toán"
+  },
+  "磕": {
+    "file": "磕.svg",
+    "src": "images/HSK_3.0/level7/磕.svg",
+    "caption": "va, đập; cắn (hạt dưa)"
+  },
+  "苛刻": {
+    "file": "苛刻.svg",
+    "src": "images/HSK_3.0/level7/苛刻.svg",
+    "caption": "khắt khe, cay nghiệt, nghiệt ngã"
+  },
+  "颗粒": {
+    "file": "颗粒.svg",
+    "src": "images/HSK_3.0/level7/颗粒.svg",
+    "caption": "hạt vi mô, hạt, hột"
+  },
+  "壳": {
+    "file": "壳.svg",
+    "src": "images/HSK_3.0/level7/壳.svg",
+    "caption": "vỏ (trứng, ốc, sò, cứng)"
+  },
+  "可悲": {
+    "file": "可悲.svg",
+    "src": "images/HSK_3.0/level7/可悲.svg",
+    "caption": "đáng buồn, bi thảm, đáng thương"
+  },
+  "可不是": {
+    "file": "可不是.svg",
+    "src": "images/HSK_3.0/level7/可不是.svg",
+    "caption": "đúng vậy, phải đấy, chẳng phải thế sao"
+  },
+  "可乘之机": {
+    "file": "可乘之机.svg",
+    "src": "images/HSK_3.0/level7/可乘之机.svg",
+    "caption": "cơ hội để lợi dụng, sơ hở có thể lợi dụng"
+  },
+  "可耻": {
+    "file": "可耻.svg",
+    "src": "images/HSK_3.0/level7/可耻.svg",
+    "caption": "đáng xấu hổ, đáng hổ thẹn, đê hèn"
+  },
+  "可贵": {
+    "file": "可贵.svg",
+    "src": "images/HSK_3.0/level7/可贵.svg",
+    "caption": "đáng quý, đáng trân trọng, quý báu"
+  },
+  "可谓": {
+    "file": "可谓.svg",
+    "src": "images/HSK_3.0/level7/可谓.svg",
+    "caption": "có thể nói là, có thể coi là"
+  },
+  "可想而知": {
+    "file": "可想而知.svg",
+    "src": "images/HSK_3.0/level7/可想而知.svg",
+    "caption": "có thể tưởng tượng được, đủ hiểu"
+  },
+  "可笑": {
+    "file": "可笑.svg",
+    "src": "images/HSK_3.0/level7/可笑.svg",
+    "caption": "nực cười, buồn cười"
+  },
+  "可疑": {
+    "file": "可疑.svg",
+    "src": "images/HSK_3.0/level7/可疑.svg",
+    "caption": "khả nghi, đáng ngờ"
+  },
+  "刻不容缓": {
+    "file": "刻不容缓.svg",
+    "src": "images/HSK_3.0/level7/刻不容缓.svg",
+    "caption": "không thể chậm trễ, cấp bách"
+  },
+  "客房": {
+    "file": "客房.svg",
+    "src": "images/HSK_3.0/level7/客房.svg",
+    "caption": "phòng nghỉ (khách sạn), phòng khách"
+  },
+  "刻画": {
+    "file": "刻画.svg",
+    "src": "images/HSK_3.0/level7/刻画.svg",
+    "caption": "khắc họa, miêu tả sinh động"
+  },
+  "客机": {
+    "file": "客机.svg",
+    "src": "images/HSK_3.0/level7/客机.svg",
+    "caption": "máy bay chở khách, phi cơ chở khách"
+  },
+  "客流": {
+    "file": "客流.svg",
+    "src": "images/HSK_3.0/level7/客流.svg",
+    "caption": "lượng khách, dòng hành khách"
+  },
+  "克隆": {
+    "file": "克隆.svg",
+    "src": "images/HSK_3.0/level7/克隆.svg",
+    "caption": "nhân bản vô tính, sao chép rập khuôn"
+  },
+  "刻意": {
+    "file": "刻意.svg",
+    "src": "images/HSK_3.0/level7/刻意.svg",
+    "caption": "cố tình, cố ý, chủ tâm"
+  },
+  "客运": {
+    "file": "客运.svg",
+    "src": "images/HSK_3.0/level7/客运.svg",
+    "caption": "vận tải hành khách, chở khách"
+  },
+  "刻舟求剑": {
+    "file": "刻舟求剑.svg",
+    "src": "images/HSK_3.0/level7/刻舟求剑.svg",
+    "caption": "khắc thuyền tìm kiếm, bảo thủ máy móc"
   }
 };
 
