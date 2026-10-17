@@ -1,0 +1,49 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background impact shockwave glow -->
+  <circle cx="120" cy="145" r="70" fill="#E65100" opacity="0.15"/>
+  <circle cx="120" cy="145" r="50" fill="#FF3D00" opacity="0.2"/>
+
+  <!-- Earth surface / terrain base (curved crust) -->
+  <path d="M 30,165 Q 120,135 210,165 L 210,210 L 30,210 Z" fill="#2C2F38"/>
+  <path d="M 30,165 Q 120,135 210,165" stroke="#FF6D00" stroke-width="2" fill="none" opacity="0.6"/>
+
+  <!-- Destruction fissures / cracks on ground -->
+  <path d="M 120,150 L 100,175 M 120,150 L 145,170 M 120,150 L 125,185 M 90,160 L 65,170 M 150,160 L 180,175" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <!-- Falling giant meteorite/asteroid crashing down -->
+  <!-- Motion trails / debris -->
+  <path d="M 80,40 L 110,105" stroke="#FFA726" stroke-width="2" stroke-dasharray="4,4" opacity="0.7"/>
+  <path d="M 160,50 L 130,105" stroke="#FFA726" stroke-width="2" stroke-dasharray="4,4" opacity="0.7"/>
+  <path d="M 120,30 L 120,95" stroke="#FFB74D" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Meteorite body (central physical object of total destruction) -->
+  <g transform="translate(120, 115)">
+    <!-- Outer fiery aura -->
+    <path d="M-30,-25 Q-45,-10 -35,15 Q-25,40 0,35 Q25,40 35,15 Q45,-10 30,-25 Q15,-40 -15,-40 Z" fill="#FF3D00" opacity="0.8"/>
+    <!-- Molten core glow -->
+    <path d="M-20,-15 Q-30,0 -20,20 Q-10,30 0,25 Q15,30 20,10 Q35,-5 20,-20 Q5,-35 -10,-25 Z" fill="#FFD54F"/>
+    <!-- Rocky jagged asteroid mass -->
+    <path d="M-22,-18 L-8,-32 L14,-24 L28,-5 L22,22 L-2,28 L-26,12 Z" fill="#424651"/>
+    <!-- Rock surface facets & crater details -->
+    <path d="M-8,-32 L3,-15 L14,-24 Z" fill="#2E3138"/>
+    <path d="M14,-24 L28,-5 L10,6 Z" fill="#565C6B"/>
+    <path d="M22,22 L-2,28 L5,10 Z" fill="#2E3138"/>
+    <path d="M-26,12 L-22,-18 L-8,-5 Z" fill="#565C6B"/>
+    <circle cx="-5" cy="-2" r="5" fill="#2E3138"/>
+    <circle cx="12" cy="12" r="4" fill="#2E3138"/>
+  </g>
+
+  <!-- Massive explosion debris & shockwave particles flying out -->
+  <circle cx="75" cy="140" r="5" fill="#FF9800"/>
+  <circle cx="165" cy="135" r="6" fill="#FF5722"/>
+  <circle cx="95" cy="120" r="4" fill="#FFD54F"/>
+  <circle cx="145" cy="125" r="5" fill="#FF9800"/>
+  <path d="M 50,150 L 35,140" stroke="#FF5722" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 190,145 L 205,130" stroke="#FF5722" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 105,130 L 90,105" stroke="#FFD54F" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 135,130 L 150,105" stroke="#FFD54F" stroke-width="2" stroke-linecap="round"/>
+
+</svg>

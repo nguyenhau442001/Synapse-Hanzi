@@ -41217,10 +41217,255 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/谎话.svg",
     "caption": "lời nói dối, lời dối trá"
   },
+  "恍然大悟": {
+    "file": "恍然大悟.svg",
+    "src": "images/HSK_3.0/level7/恍然大悟.svg",
+    "caption": "chợt hiểu ra, bừng tỉnh ngộ"
+  },
   "谎言": {
     "file": "谎言.svg",
     "src": "images/HSK_3.0/level7/谎言.svg",
     "caption": "lời dối trá, lời bịa đặt"
+  },
+  "晃荡": {
+    "file": "晃荡.svg",
+    "src": "images/HSK_3.0/level7/晃荡.svg",
+    "caption": "lắc lư, đung đưa, chao đảo"
+  },
+  "挥霍": {
+    "file": "挥霍.svg",
+    "src": "images/HSK_3.0/level7/挥霍.svg",
+    "caption": "tiêu xài hoang phí, phung phí"
+  },
+  "挥舞": {
+    "file": "挥舞.svg",
+    "src": "images/HSK_3.0/level7/挥舞.svg",
+    "caption": "vung vẩy, phất cờ, múa may"
+  },
+  "回避": {
+    "file": "回避.svg",
+    "src": "images/HSK_3.0/level7/回避.svg",
+    "caption": "né tránh, lảng tránh"
+  },
+  "回归": {
+    "file": "回归.svg",
+    "src": "images/HSK_3.0/level7/回归.svg",
+    "caption": "trở về, quay về"
+  },
+  "回合": {
+    "file": "回合.svg",
+    "src": "images/HSK_3.0/level7/回合.svg",
+    "caption": "hiệp đấu, vòng đấu"
+  },
+  "回馈": {
+    "file": "回馈.svg",
+    "src": "images/HSK_3.0/level7/回馈.svg",
+    "caption": "đền đáp, tri ân, hồi đáp"
+  },
+  "回落": {
+    "file": "回落.svg",
+    "src": "images/HSK_3.0/level7/回落.svg",
+    "caption": "giảm trở lại, hạ nhiệt"
+  },
+  "回升": {
+    "file": "回升.svg",
+    "src": "images/HSK_3.0/level7/回升.svg",
+    "caption": "tăng trở lại, hồi phục"
+  },
+  "回首": {
+    "file": "回首.svg",
+    "src": "images/HSK_3.0/level7/回首.svg",
+    "caption": "nhìn lại quá khứ, ngoảnh lại"
+  },
+  "回味": {
+    "file": "回味.svg",
+    "src": "images/HSK_3.0/level7/回味.svg",
+    "caption": "chiêm nghiệm, dư vị"
+  },
+  "回想": {
+    "file": "回想.svg",
+    "src": "images/HSK_3.0/level7/回想.svg",
+    "caption": "nhớ lại, hồi tưởng lại"
+  },
+  "回忆录": {
+    "file": "回忆录.svg",
+    "src": "images/HSK_3.0/level7/回忆录.svg",
+    "caption": "hồi ký, cuốn hồi ký"
+  },
+  "回应": {
+    "file": "回应.svg",
+    "src": "images/HSK_3.0/level7/回应.svg",
+    "caption": "đáp lại"
+  },
+  "毁": {
+    "file": "毁.svg",
+    "src": "images/HSK_3.0/level7/毁.svg",
+    "caption": "tàn phá, hủy hoại"
+  },
+  "悔恨": {
+    "file": "悔恨.svg",
+    "src": "images/HSK_3.0/level7/悔恨.svg",
+    "caption": "hối hận, ân hận tột cùng"
+  },
+  "毁坏": {
+    "file": "毁坏.svg",
+    "src": "images/HSK_3.0/level7/毁坏.svg",
+    "caption": "phá hủy, làm hư hại"
+  },
+  "毁灭": {
+    "file": "毁灭.svg",
+    "src": "images/HSK_3.0/level7/毁灭.svg",
+    "caption": "hủy diệt, tiêu diệt"
+  },
+  "会场": {
+    "file": "会场.svg",
+    "src": "images/HSK_3.0/level7/会场.svg",
+    "caption": "hội trường, địa điểm họp"
+  },
+  "汇合": {
+    "file": "汇合.svg",
+    "src": "images/HSK_3.0/level7/汇合.svg",
+    "caption": "hợp lưu, hội tụ"
+  },
+  "汇聚": {
+    "file": "汇聚.svg",
+    "src": "images/HSK_3.0/level7/汇聚.svg",
+    "caption": "quy tụ, tụ hội, hội tụ"
+  },
+  "会面": {
+    "file": "会面.svg",
+    "src": "images/HSK_3.0/level7/会面.svg",
+    "caption": "gặp mặt, gặp gỡ"
+  },
+  "绘声绘色": {
+    "file": "绘声绘色.svg",
+    "src": "images/HSK_3.0/level7/绘声绘色.svg",
+    "caption": "miêu tả tài tình, sống động như thật"
+  },
+  "会谈": {
+    "file": "会谈.svg",
+    "src": "images/HSK_3.0/level7/会谈.svg",
+    "caption": "nói chuyện"
+  },
+  "会晤": {
+    "file": "会晤.svg",
+    "src": "images/HSK_3.0/level7/会晤.svg",
+    "caption": "hội kiến, gặp gỡ cấp cao"
+  },
+  "会意": {
+    "file": "会意.svg",
+    "src": "images/HSK_3.0/level7/会意.svg",
+    "caption": "hiểu ý, ngầm hiểu"
+  },
+  "会诊": {
+    "file": "会诊.svg",
+    "src": "images/HSK_3.0/level7/会诊.svg",
+    "caption": "hội chẩn"
+  },
+  "绘制": {
+    "file": "绘制.svg",
+    "src": "images/HSK_3.0/level7/绘制.svg",
+    "caption": "vẽ, phác họa đồ bản"
+  },
+  "昏": {
+    "file": "昏.svg",
+    "src": "images/HSK_3.0/level7/昏.svg",
+    "caption": "ngất xỉu, hôn mê"
+  },
+  "荤": {
+    "file": "荤.svg",
+    "src": "images/HSK_3.0/level7/荤.svg",
+    "caption": "món mặn, thức ăn mặn"
+  },
+  "婚纱": {
+    "file": "婚纱.svg",
+    "src": "images/HSK_3.0/level7/婚纱.svg",
+    "caption": "váy cưới"
+  },
+  "浑身": {
+    "file": "浑身.svg",
+    "src": "images/HSK_3.0/level7/浑身.svg",
+    "caption": "toàn bộ cơ thể"
+  },
+  "混淆": {
+    "file": "混淆.svg",
+    "src": "images/HSK_3.0/level7/混淆.svg",
+    "caption": "làm lẫn lộn, đánh tráo"
+  },
+  "混浊": {
+    "file": "混浊.svg",
+    "src": "images/HSK_3.0/level7/混浊.svg",
+    "caption": "đục ngầu, vẩn đục"
+  },
+  "豁": {
+    "file": "豁.svg",
+    "src": "images/HSK_3.0/level7/豁.svg",
+    "caption": "rách, toạc"
+  },
+  "豁出去": {
+    "file": "豁出去.svg",
+    "src": "images/HSK_3.0/level7/豁出去.svg",
+    "caption": "liều mình, bất chấp tất cả"
+  },
+  "活该": {
+    "file": "活该.svg",
+    "src": "images/HSK_3.0/level7/活该.svg",
+    "caption": "đáng đời, đáng kiếp"
+  },
+  "活期": {
+    "file": "活期.svg",
+    "src": "images/HSK_3.0/level7/活期.svg",
+    "caption": "không kỳ hạn (tiền gửi)"
+  },
+  "火爆": {
+    "file": "火爆.svg",
+    "src": "images/HSK_3.0/level7/火爆.svg",
+    "caption": "ăn khách, sôi động"
+  },
+  "火候": {
+    "file": "火候.svg",
+    "src": "images/HSK_3.0/level7/火候.svg",
+    "caption": "độ lửa, mức chín muồi"
+  },
+  "火花": {
+    "file": "火花.svg",
+    "src": "images/HSK_3.0/level7/火花.svg",
+    "caption": "tia lửa"
+  },
+  "火箭": {
+    "file": "火箭.svg",
+    "src": "images/HSK_3.0/level7/火箭.svg",
+    "caption": "tên lửa"
+  },
+  "火炬": {
+    "file": "火炬.svg",
+    "src": "images/HSK_3.0/level7/火炬.svg",
+    "caption": "ngọn đuốc"
+  },
+  "火辣辣": {
+    "file": "火辣辣.svg",
+    "src": "images/HSK_3.0/level7/火辣辣.svg",
+    "caption": "bỏng rát, hừng hực"
+  },
+  "火热": {
+    "file": "火热.svg",
+    "src": "images/HSK_3.0/level7/火热.svg",
+    "caption": "cháy bỏng, hừng hực nhiệt huyết"
+  },
+  "火山": {
+    "file": "火山.svg",
+    "src": "images/HSK_3.0/level7/火山.svg",
+    "caption": "núi lửa"
+  },
+  "伙食": {
+    "file": "伙食.svg",
+    "src": "images/HSK_3.0/level7/伙食.svg",
+    "caption": "khẩu phần ăn, bữa ăn"
+  },
+  "火速": {
+    "file": "火速.svg",
+    "src": "images/HSK_3.0/level7/火速.svg",
+    "caption": "hỏa tốc, cấp tốc"
   }
 };
 

@@ -1,0 +1,63 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background glowing particles / sparks -->
+  <circle cx="60" cy="80" r="1.5" fill="#FF7A00" opacity="0.6"/>
+  <circle cx="180" cy="70" r="2" fill="#FFB800" opacity="0.7"/>
+  <circle cx="85" cy="45" r="1" fill="#FF4500" opacity="0.8"/>
+  <circle cx="155" cy="50" r="1.5" fill="#FF7A00" opacity="0.5"/>
+  <circle cx="50" cy="130" r="1" fill="#FFB800" opacity="0.4"/>
+  <circle cx="195" cy="120" r="1.5" fill="#FF4500" opacity="0.6"/>
+
+  <!-- Volcano Base (Mountain) -->
+  <path d="M50 190 L95 110 L145 110 L190 190 Z" fill="#2A2F3D"/>
+  
+  <!-- Mountain Shadow / Facet -->
+  <path d="M120 190 L95 110 L145 110 L120 190 Z" fill="#232733"/>
+  <path d="M120 190 L120 120 L145 110 L190 190 Z" fill="#1F232D"/>
+
+  <!-- Crater Glow & Interior -->
+  <ellipse cx="120" cy="110" rx="25" ry="6" fill="#1A1D24"/>
+  <ellipse cx="120" cy="110" rx="20" ry="4" fill="#FF4500"/>
+
+  <!-- Erupting Magma / Lava Blast -->
+  <path d="M110 106 Q115 60 100 30 Q120 50 120 20 Q120 50 140 30 Q125 60 130 106 Z" fill="url(#lavaGrad)"/>
+  <path d="M115 108 Q118 75 108 45 Q120 60 122 35 Q124 60 132 45 Q122 75 125 108 Z" fill="#FFDD55"/>
+
+  <!-- Flying Lava Blobs / Volcanic Bombs -->
+  <circle cx="95" cy="45" r="4" fill="#FF4500"/>
+  <circle cx="145" cy="40" r="5" fill="#FF7A00"/>
+  <circle cx="110" cy="15" r="3" fill="#FFDD55"/>
+  <circle cx="135" cy="20" r="3.5" fill="#FF4500"/>
+  <path d="M92 48 Q95 43 98 47 Z" fill="#FFB800"/>
+  <path d="M142 42 Q145 37 148 43 Z" fill="#FFDD55"/>
+
+  <!-- Thick Volcanic Ash Cloud / Smoke -->
+  <path d="M80 35 C70 35 60 25 65 15 C70 5 85 5 95 15 C100 8 115 5 125 12 C135 5 150 10 155 20 C165 18 175 25 170 35 C175 45 165 55 155 50 C145 60 125 55 115 45 C100 55 80 50 80 35 Z" fill="#3E4556" opacity="0.85"/>
+  <path d="M95 25 C90 20 85 15 90 10 C95 5 105 8 110 15 C115 10 125 12 128 20 C135 15 145 20 145 28 C152 30 150 40 140 40 C130 45 110 40 105 30 C98 35 90 30 95 25 Z" fill="#4E566A" opacity="0.6"/>
+
+  <!-- Glowing Lava Flows down the mountain slopes -->
+  <path d="M115 110 Q110 130 100 150 Q95 160 90 190 L102 190 Q106 170 112 150 Q118 130 122 112 Z" fill="#FF4500"/>
+  <path d="M125 112 Q130 135 138 160 Q142 175 148 190 L136 190 Q132 175 128 160 Q122 135 120 110 Z" fill="#FF7A00"/>
+  <path d="M117 125 Q114 145 108 165 L103 165 Q109 145 114 125 Z" fill="#FFDD55"/>
+  <path d="M126 130 Q130 150 135 170 L140 170 Q135 150 129 130 Z" fill="#FFDD55"/>
+
+  <!-- Ground Terrain -->
+  <path d="M20 190 L220 190 L220 210 L20 210 Z" fill="#14161C"/>
+  <path d="M20 190 Q60 185 120 190 Q180 185 220 190 L220 200 L20 200 Z" fill="#232733"/>
+  
+  <!-- Glowing fragments on the ground -->
+  <circle cx="85" cy="192" r="2" fill="#FF4500"/>
+  <circle cx="155" cy="193" r="1.5" fill="#FF7A00"/>
+  <circle cx="70" cy="195" r="1" fill="#FFDD55"/>
+  <circle cx="165" cy="194" r="2" fill="#FF4500"/>
+
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="lavaGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#FF4500" />
+      <stop offset="50%" stop-color="#FF7A00" />
+      <stop offset="100%" stop-color="#FFDD55" />
+    </linearGradient>
+  </defs>
+</svg>

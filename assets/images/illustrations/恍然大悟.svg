@@ -1,0 +1,67 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambient Light Effect (Enlightenment/Aha moment glow) -->
+  <circle cx="120" cy="110" r="70" fill="#FFB703" opacity="0.12"/>
+  <circle cx="120" cy="110" r="45" fill="#FFB703" opacity="0.18"/>
+
+  <!-- Light Rays / Flash of Understanding -->
+  <g opacity="0.85">
+    <path d="M120 35 L124 55 L120 52 L116 55 Z" fill="#FFB703"/>
+    <path d="M175 65 L155 74 L158 71 L154 68 Z" fill="#FFB703"/>
+    <path d="M195 120 L175 120 L175 116 L175 124 Z" fill="#FFB703"/>
+    <path d="M65 65 L85 74 L82 71 L86 68 Z" fill="#FFB703"/>
+    <path d="M45 120 L65 120 L65 116 L65 124 Z" fill="#FFB703"/>
+    <path d="M165 165 L150 150 L153 148 L148 153 Z" fill="#FFB703"/>
+    <path d="M75 165 L90 150 L87 148 L92 153 Z" fill="#FFB703"/>
+  </g>
+
+  <!-- Character / Person Figuring It Out (Sleek Flat Design) -->
+  <g transform="translate(0, 15)">
+    <!-- Shoulders & Body -->
+    <path d="M 75 165 Q 75 135 120 135 Q 165 135 165 165 L 175 185 L 65 185 Z" fill="#2D323F"/>
+    <path d="M 95 160 L 120 145 L 145 160 L 140 185 L 100 185 Z" fill="#3B4252"/>
+    <path d="M 120 145 L 120 185" stroke="#1A1D24" stroke-width="2"/>
+
+    <!-- Neck -->
+    <rect x="110" y="118" width="20" height="25" rx="6" fill="#E5B299"/>
+
+    <!-- Head -->
+    <circle cx="120" cy="100" r="28" fill="#F4C2A5"/>
+
+    <!-- Hair -->
+    <path d="M 92 95 Q 93 72 120 72 Q 147 72 148 95 Q 140 78 120 78 Q 100 78 92 95 Z" fill="#2E3440"/>
+
+    <!-- Face details (Eyes closed or wide in realization, smiling mouth) -->
+    <path d="M 108 98 Q 112 95 116 98" stroke="#3B4252" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M 124 98 Q 128 95 132 98" stroke="#3B4252" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <!-- Smile -->
+    <path d="M 113 110 Q 120 116 127 110" stroke="#3B4252" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Hand touching chin in realization -->
+    <path d="M 100 135 Q 98 118 108 112 Q 113 109 116 114" fill="#F4C2A5" stroke="#D89D7F" stroke-width="1.5"/>
+  </g>
+
+  <!-- The "Lightbulb" / Idea Concept floating above -->
+  <g transform="translate(0, -5)">
+    <!-- Bulb Glow -->
+    <circle cx="120" cy="48" r="18" fill="#FFB703" opacity="0.3"/>
+    
+    <!-- Bulb Glass -->
+    <path d="M 112 36 
+             C 112 30, 128 30, 128 36 
+             C 128 42, 124 45, 124 50 
+             L 116 50 
+             C 116 45, 112 42, 112 36 Z" 
+          fill="#FFB703"/>
+
+    <!-- Bulb Filament (Bright white spark) -->
+    <path d="M 118 40 L 122 40 M 120 38 L 120 43" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Bulb Base -->
+    <rect x="116" y="50" width="8" height="4" rx="1" fill="#8892B0"/>
+    <rect x="117" y="54" width="6" height="3" rx="0.5" fill="#4C566A"/>
+  </g>
+
+</svg>
