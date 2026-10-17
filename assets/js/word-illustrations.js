@@ -41966,6 +41966,256 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "价位.svg",
     "src": "images/HSK_3.0/level7/价位.svg",
     "caption": "mức giá, tầm giá"
+  },
+  "驾驭": {
+    "file": "驾驭.svg",
+    "src": "images/HSK_3.0/level7/驾驭.svg",
+    "caption": "làm chủ, điều khiển, chế ngự"
+  },
+  "价值观": {
+    "file": "价值观.svg",
+    "src": "images/HSK_3.0/level7/价值观.svg",
+    "caption": "hệ giá trị, quan niệm giá trị"
+  },
+  "嫁妆": {
+    "file": "嫁妆.svg",
+    "src": "images/HSK_3.0/level7/嫁妆.svg",
+    "caption": "của hồi môn"
+  },
+  "架子": {
+    "file": "架子.svg",
+    "src": "images/HSK_3.0/level7/架子.svg",
+    "caption": "vẻ lên mặt, điệu bộ kiêu ngạo; giá, kệ"
+  },
+  "兼": {
+    "file": "兼.svg",
+    "src": "images/HSK_3.0/level7/兼.svg",
+    "caption": "kiêm, đồng thời, gồm cả"
+  },
+  "煎": {
+    "file": "煎.svg",
+    "src": "images/HSK_3.0/level7/煎.svg",
+    "caption": "chiên, rán; sắc (thuốc)"
+  },
+  "煎熬": {
+    "file": "煎熬.svg",
+    "src": "images/HSK_3.0/level7/煎熬.svg",
+    "caption": "giày vò, dằn vặt, nỗi khổ sở"
+  },
+  "监察": {
+    "file": "监察.svg",
+    "src": "images/HSK_3.0/level7/监察.svg",
+    "caption": "thanh tra, giám sát"
+  },
+  "尖端": {
+    "file": "尖端.svg",
+    "src": "images/HSK_3.0/level7/尖端.svg",
+    "caption": "mũi nhọn, tối tân, đỉnh cao (công nghệ)"
+  },
+  "肩负": {
+    "file": "肩负.svg",
+    "src": "images/HSK_3.0/level7/肩负.svg",
+    "caption": "gánh vác, đảm đương"
+  },
+  "兼顾": {
+    "file": "兼顾.svg",
+    "src": "images/HSK_3.0/level7/兼顾.svg",
+    "caption": "tính đến cả hai, kết hợp hài hòa"
+  },
+  "监管": {
+    "file": "监管.svg",
+    "src": "images/HSK_3.0/level7/监管.svg",
+    "caption": "giám sát quản lý, kiểm soát điều tiết"
+  },
+  "坚果": {
+    "file": "坚果.svg",
+    "src": "images/HSK_3.0/level7/坚果.svg",
+    "caption": "hạt dinh dưỡng, quả hạch"
+  },
+  "监护": {
+    "file": "监护.svg",
+    "src": "images/HSK_3.0/level7/监护.svg",
+    "caption": "giám hộ, bảo hộ"
+  },
+  "监控": {
+    "file": "监控.svg",
+    "src": "images/HSK_3.0/level7/监控.svg",
+    "caption": "giám sát"
+  },
+  "歼灭": {
+    "file": "歼灭.svg",
+    "src": "images/HSK_3.0/level7/歼灭.svg",
+    "caption": "tiêu diệt sạch, xóa sổ, tiêu diệt toàn bộ"
+  },
+  "坚韧": {
+    "file": "坚韧.svg",
+    "src": "images/HSK_3.0/level7/坚韧.svg",
+    "caption": "kiên cường bền bỉ, dẻo dai"
+  },
+  "兼任": {
+    "file": "兼任.svg",
+    "src": "images/HSK_3.0/level7/兼任.svg",
+    "caption": "kiêm nhiệm, giữ thêm chức"
+  },
+  "兼容": {
+    "file": "兼容.svg",
+    "src": "images/HSK_3.0/level7/兼容.svg",
+    "caption": "tương thích, dung hợp"
+  },
+  "坚实": {
+    "file": "坚实.svg",
+    "src": "images/HSK_3.0/level7/坚实.svg",
+    "caption": "vững chắc, kiên cố, bền vững"
+  },
+  "坚守": {
+    "file": "坚守.svg",
+    "src": "images/HSK_3.0/level7/坚守.svg",
+    "caption": "kiên trì"
+  },
+  "艰险": {
+    "file": "艰险.svg",
+    "src": "images/HSK_3.0/level7/艰险.svg",
+    "caption": "gian khổ hiểm trở, gian nan hiểm nguy"
+  },
+  "坚信": {
+    "file": "坚信.svg",
+    "src": "images/HSK_3.0/level7/坚信.svg",
+    "caption": "tin tưởng vững chắc, tin chắc"
+  },
+  "奸诈": {
+    "file": "奸诈.svg",
+    "src": "images/HSK_3.0/level7/奸诈.svg",
+    "caption": "gian xảo, quỷ quyệt, xảo quyệt"
+  },
+  "拣": {
+    "file": "拣.svg",
+    "src": "images/HSK_3.0/level7/拣.svg",
+    "caption": "nhặt, lựa chọn, nhặt nhạnh"
+  },
+  "剪彩": {
+    "file": "剪彩.svg",
+    "src": "images/HSK_3.0/level7/剪彩.svg",
+    "caption": "cắt băng khánh thành"
+  },
+  "检察": {
+    "file": "检察.svg",
+    "src": "images/HSK_3.0/level7/检察.svg",
+    "caption": "kiểm sát, viện kiểm sát"
+  },
+  "简称": {
+    "file": "简称.svg",
+    "src": "images/HSK_3.0/level7/简称.svg",
+    "caption": "gọi tắt là, tên gọi tắt"
+  },
+  "简短": {
+    "file": "简短.svg",
+    "src": "images/HSK_3.0/level7/简短.svg",
+    "caption": "ngắn gọn, vắn tắt"
+  },
+  "减负": {
+    "file": "减负.svg",
+    "src": "images/HSK_3.0/level7/减负.svg",
+    "caption": "giảm bớt gánh nặng, giảm tải"
+  },
+  "剪辑": {
+    "file": "剪辑.svg",
+    "src": "images/HSK_3.0/level7/剪辑.svg",
+    "caption": "cắt ghép, biên tập (video, âm thanh)"
+  },
+  "简洁": {
+    "file": "简洁.svg",
+    "src": "images/HSK_3.0/level7/简洁.svg",
+    "caption": "súc tích, ngắn gọn rõ ràng"
+  },
+  "简练": {
+    "file": "简练.svg",
+    "src": "images/HSK_3.0/level7/简练.svg",
+    "caption": "cô đọng, khúc chiết, súc tích"
+  },
+  "简陋": {
+    "file": "简陋.svg",
+    "src": "images/HSK_3.0/level7/简陋.svg",
+    "caption": "đơn sơ, sơ sài, tồi tàn"
+  },
+  "减免": {
+    "file": "减免.svg",
+    "src": "images/HSK_3.0/level7/减免.svg",
+    "caption": "miễn giảm, giảm trừ"
+  },
+  "减退": {
+    "file": "减退.svg",
+    "src": "images/HSK_3.0/level7/减退.svg",
+    "caption": "suy giảm, giảm sút, sút giảm"
+  },
+  "简要": {
+    "file": "简要.svg",
+    "src": "images/HSK_3.0/level7/简要.svg",
+    "caption": "vắn tắt, tóm tắt, sơ lược"
+  },
+  "简易": {
+    "file": "简易.svg",
+    "src": "images/HSK_3.0/level7/简易.svg",
+    "caption": "đơn giản tiện lợi, sơ sài đơn giản"
+  },
+  "贱": {
+    "file": "贱.svg",
+    "src": "images/HSK_3.0/level7/贱.svg",
+    "caption": "rẻ mạt, hèn mọn, ti tiện"
+  },
+  "溅": {
+    "file": "溅.svg",
+    "src": "images/HSK_3.0/level7/溅.svg",
+    "caption": "bắn, văng, tóe (nước, bùn)"
+  },
+  "鉴别": {
+    "file": "鉴别.svg",
+    "src": "images/HSK_3.0/level7/鉴别.svg",
+    "caption": "giám định, nhận biết, phân biệt"
+  },
+  "间谍": {
+    "file": "间谍.svg",
+    "src": "images/HSK_3.0/level7/间谍.svg",
+    "caption": "gián điệp, điệp viên"
+  },
+  "间断": {
+    "file": "间断.svg",
+    "src": "images/HSK_3.0/level7/间断.svg",
+    "caption": "gián đoạn, ngắt quãng, đứt quãng"
+  },
+  "见多识广": {
+    "file": "见多识广.svg",
+    "src": "images/HSK_3.0/level7/见多识广.svg",
+    "caption": "hiểu rộng biết nhiều, từng trải, kiến thức uyên bác"
+  },
+  "见解": {
+    "file": "见解.svg",
+    "src": "images/HSK_3.0/level7/见解.svg",
+    "caption": "kiến giải, quan điểm, cách nhìn nhận"
+  },
+  "见利忘义": {
+    "file": "见利忘义.svg",
+    "src": "images/HSK_3.0/level7/见利忘义.svg",
+    "caption": "thấy lợi quên nghĩa, hám lợi phụ tình"
+  },
+  "健美": {
+    "file": "健美.svg",
+    "src": "images/HSK_3.0/level7/健美.svg",
+    "caption": "khỏe đẹp, thể hình, thể dục thẩm mỹ"
+  },
+  "见仁见智": {
+    "file": "见仁见智.svg",
+    "src": "images/HSK_3.0/level7/见仁见智.svg",
+    "caption": "mỗi người một ý, người nhân thấy nhân kẻ trí thấy trí"
+  },
+  "鉴赏": {
+    "file": "鉴赏.svg",
+    "src": "images/HSK_3.0/level7/鉴赏.svg",
+    "caption": "thưởng thức đánh giá, giám định thưởng lãm"
+  },
+  "建树": {
+    "file": "建树.svg",
+    "src": "images/HSK_3.0/level7/建树.svg",
+    "caption": "thành tựu, cống hiến, đóng góp lớn"
   }
 };
 

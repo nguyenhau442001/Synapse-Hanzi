@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Desk surface -->
+  <rect x="40" y="170" width="160" height="8" rx="4" fill="#323842"/>
+  
+  <!-- The Experiment/Object (A glowing, stable structure representing the goal) -->
+  <g>
+    <path d="M120 80 L150 130 L90 130 Z" fill="#FFB84D" opacity="0.9"/>
+    <circle cx="120" cy="105" r="10" fill="#1A1D24"/>
+  </g>
+  
+  <!-- Human Character (Action: Firm, steady hands holding/protecting the focus) -->
+  <g>
+    <!-- Arms -->
+    <path d="M60 180 C60 140, 80 120, 100 120" stroke="#E0E0E0" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <path d="M180 180 C180 140, 160 120, 140 120" stroke="#E0E0E0" stroke-width="12" stroke-linecap="round" fill="none"/>
+    
+    <!-- Hands firmly cupping the base of the object -->
+    <path d="M90 130 L110 130" stroke="#FFB84D" stroke-width="10" stroke-linecap="round"/>
+    <path d="M130 130 L150 130" stroke="#FFB84D" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Motion lines indicating steady focus/determination -->
+  <path d="M110 70 L115 60" stroke="#5D6D7E" stroke-width="3" stroke-linecap="round"/>
+  <path d="M130 70 L125 60" stroke="#5D6D7E" stroke-width="3" stroke-linecap="round"/>
+  <path d="M120 65 L120 55" stroke="#5D6D7E" stroke-width="3" stroke-linecap="round"/>
+</svg>

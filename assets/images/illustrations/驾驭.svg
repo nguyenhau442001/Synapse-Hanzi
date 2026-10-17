@@ -1,0 +1,54 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements representing complex narrative structures / history -->
+  <g opacity="0.15" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="3 3" fill="none">
+    <path d="M40 70 C70 40, 110 90, 140 60 C170 30, 200 80, 210 50"/>
+    <path d="M30 110 C80 130, 110 90, 150 120 C190 150, 210 100, 220 130"/>
+  </g>
+
+  <!-- Flowing structured narrative ribbon / architecture being controlled -->
+  <path d="M30 150 C70 190, 120 120, 170 160 C200 180, 220 140, 220 140" 
+        fill="none" stroke="#334155" stroke-width="12" stroke-linecap="round"/>
+
+  <path d="M30 150 C70 190, 120 120, 170 160 C200 180, 220 140, 220 140" 
+        fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" stroke-dasharray="160 40" stroke-dashoffset="20"/>
+
+  <!-- Dynamic Motion Lines (Action / Control) -->
+  <g stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.6">
+    <path d="M70 95 Q90 85 110 95" fill="none"/>
+    <path d="M85 85 Q105 75 125 85" fill="none"/>
+  </g>
+
+  <!-- Central Character (Mastering / Guiding / Directing Action) -->
+  <!-- Torso & Shoulders -->
+  <path d="M85 145 C85 125, 115 125, 115 145 L125 180 C125 185, 120 190, 115 190 L85 190 C80 190, 75 185, 75 180 Z" fill="#2563EB"/>
+  
+  <!-- Head & Neck -->
+  <circle cx="100" cy="102" r="14" fill="#FDE047"/>
+  <path d="M94 114 L106 114 L106 126 L94 126 Z" fill="#FDE047"/>
+
+  <!-- Arms showing active guidance/steering (驾驭) -->
+  <!-- Left arm holding/guiding structure -->
+  <path d="M88 135 L60 145 L50 130" fill="none" stroke="#2563EB" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Right arm reaching forward and directing energy/flow -->
+  <path d="M112 135 L140 120 L155 125" fill="none" stroke="#2563EB" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Focused hands/control nodes -->
+  <circle cx="50" cy="130" r="5" fill="#F59E0B"/>
+  <circle cx="155" cy="125" r="5" fill="#F59E0B"/>
+
+  <!-- Visual nodes/elements of the grand narrative being mastered (representing history, plot points) -->
+  <circle cx="80" cy="80" r="6" fill="#3B82F6"/>
+  <circle cx="130" cy="70" r="8" fill="#F59E0B"/>
+  <circle cx="180" cy="100" r="5" fill="#EC4899"/>
+  <circle cx="110" cy="160" r="6" fill="#10B981"/>
+
+  <!-- Connection beams showing mastery/control -->
+  <path d="M100 102 L80 80 M100 102 L130 70 M100 102 L180 100 M100 102 L110 160" 
+        stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.8"/>
+
+  <!-- Highlight accent glow behind character head -->
+  <circle cx="100" cy="102" r="28" fill="#F59E0B" opacity="0.15" filter="blur(4px)"/>
+</svg>
