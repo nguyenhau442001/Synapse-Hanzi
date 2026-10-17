@@ -1,0 +1,39 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle background glow/ambient circle for focal point -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.6"/>
+
+  <!-- Motion lines indicating tight embrace / action -->
+  <path d="M 75 80 C 60 100 60 140 75 160" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.4" stroke-dasharray="4 4"/>
+  <path d="M 165 80 C 180 100 180 140 165 160" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.4" stroke-dasharray="4 4"/>
+
+  <!-- Mother / Adult Figure (Back/Support) -->
+  <!-- Body/Torso -->
+  <path d="M 95 100 C 95 85 105 75 120 75 C 135 75 145 85 145 100 L 155 180 L 85 180 Z" fill="#3B82F6"/>
+  <!-- Head -->
+  <circle cx="120" cy="62" r="16" fill="#FDE047"/>
+  <!-- Hair -->
+  <path d="M 104 60 C 104 48 112 45 120 45 C 128 45 136 48 136 60 L 136 68 L 104 68 Z" fill="#1E293B"/>
+
+  <!-- Child / Second Figure (Embraced tightly in arms) -->
+  <!-- Head -->
+  <circle cx="120" cy="110" r="12" fill="#FDE047"/>
+  <!-- Hair -->
+  <path d="M 110 103 C 110 96 115 95 120 95 C 125 95 130 96 130 103 Z" fill="#334155"/>
+  <!-- Child Body tucked in -->
+  <path d="M 105 120 C 105 115 112 112 120 112 C 128 112 135 115 135 120 L 140 165 L 100 165 Z" fill="#EC4899"/>
+
+  <!-- Tightly Wrapping Arms (Visualizing "搂" - drawing close to the chest) -->
+  <!-- Left arm wrapping around -->
+  <path d="M 95 110 C 80 120 80 150 105 155 C 115 157 125 150 125 140" fill="none" stroke="#3B82F6" stroke-width="14" stroke-linecap="round"/>
+  <!-- Right arm wrapping around with hand clasping -->
+  <path d="M 145 110 C 160 120 160 150 135 155 C 125 157 115 150 115 140" fill="none" stroke="#3B82F6" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- Hands clasping tightly together in a protective hold -->
+  <circle cx="120" cy="155" r="7" fill="#FDE047"/>
+
+  <!-- Accent focal highlight -->
+  <circle cx="120" cy="110" r="3" fill="#F59E0B" opacity="0.8"/>
+</svg>

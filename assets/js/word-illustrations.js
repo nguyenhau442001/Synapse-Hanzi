@@ -44822,6 +44822,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/流淌.svg",
     "caption": "chảy trôi, chảy róc rách, tuôn trào"
   },
+  "流向": {
+    "file": "流向.svg",
+    "src": "images/HSK_3.0/level7/流向.svg",
+    "caption": "hướng dòng chảy, dòng luân chuyển"
+  },
   "留心": {
     "file": "留心.svg",
     "src": "images/HSK_3.0/level7/留心.svg",
@@ -44841,6 +44846,246 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "流转.svg",
     "src": "images/HSK_3.0/level7/流转.svg",
     "caption": "chuyển nhượng, lưu chuyển, luân chuyển"
+  },
+  "柳树": {
+    "file": "柳树.svg",
+    "src": "images/HSK_3.0/level7/柳树.svg",
+    "caption": "cây liễu"
+  },
+  "遛": {
+    "file": "遛.svg",
+    "src": "images/HSK_3.0/level7/遛.svg",
+    "caption": "dắt dạo, dạo (chó, chim)"
+  },
+  "聋": {
+    "file": "聋.svg",
+    "src": "images/HSK_3.0/level7/聋.svg",
+    "caption": "điếc"
+  },
+  "龙头": {
+    "file": "龙头.svg",
+    "src": "images/HSK_3.0/level7/龙头.svg",
+    "caption": "đầu tàu, doanh nghiệp dẫn đầu; vòi nước"
+  },
+  "隆重": {
+    "file": "隆重.svg",
+    "src": "images/HSK_3.0/level7/隆重.svg",
+    "caption": "trang trọng"
+  },
+  "笼子": {
+    "file": "笼子.svg",
+    "src": "images/HSK_3.0/level7/笼子.svg",
+    "caption": "cái lồng, cái chuồng"
+  },
+  "垄断": {
+    "file": "垄断.svg",
+    "src": "images/HSK_3.0/level7/垄断.svg",
+    "caption": "độc quyền, lũng đoạn"
+  },
+  "笼统": {
+    "file": "笼统.svg",
+    "src": "images/HSK_3.0/level7/笼统.svg",
+    "caption": "chung chung, khái quát mơ hồ"
+  },
+  "笼罩": {
+    "file": "笼罩.svg",
+    "src": "images/HSK_3.0/level7/笼罩.svg",
+    "caption": "bao trùm, bao phủ, phủ kín"
+  },
+  "搂": {
+    "file": "搂.svg",
+    "src": "images/HSK_3.0/level7/搂.svg",
+    "caption": "ôm, ôm vào lòng"
+  },
+  "炉子": {
+    "file": "炉子.svg",
+    "src": "images/HSK_3.0/level7/炉子.svg",
+    "caption": "bếp lò, cái lò"
+  },
+  "鲁莽": {
+    "file": "鲁莽.svg",
+    "src": "images/HSK_3.0/level7/鲁莽.svg",
+    "caption": "lỗ mãng, hấp tấp xốc nổi"
+  },
+  "卤味": {
+    "file": "卤味.svg",
+    "src": "images/HSK_3.0/level7/卤味.svg",
+    "caption": "món kho ngũ vị hương, món om thuốc bắc"
+  },
+  "鹿": {
+    "file": "鹿.svg",
+    "src": "images/HSK_3.0/level7/鹿.svg",
+    "caption": "hươu, nai"
+  },
+  "露²": {
+    "file": "露².svg",
+    "src": "images/HSK_3.0/level7/露².svg",
+    "caption": "sương, hạt sương, nước sương"
+  },
+  "路段": {
+    "file": "路段.svg",
+    "src": "images/HSK_3.0/level7/路段.svg",
+    "caption": "đoạn đường"
+  },
+  "路径": {
+    "file": "路径.svg",
+    "src": "images/HSK_3.0/level7/路径.svg",
+    "caption": "lộ trình, con đường, phương thức tiếp cận"
+  },
+  "陆军": {
+    "file": "陆军.svg",
+    "src": "images/HSK_3.0/level7/陆军.svg",
+    "caption": "lục quân"
+  },
+  "露天": {
+    "file": "露天.svg",
+    "src": "images/HSK_3.0/level7/露天.svg",
+    "caption": "ngoài trời, lộ thiên"
+  },
+  "路途": {
+    "file": "路途.svg",
+    "src": "images/HSK_3.0/level7/路途.svg",
+    "caption": "đường sá, lộ trình, đường đi"
+  },
+  "露营": {
+    "file": "露营.svg",
+    "src": "images/HSK_3.0/level7/露营.svg",
+    "caption": "cắm trại (ngoài trời)"
+  },
+  "路子": {
+    "file": "路子.svg",
+    "src": "images/HSK_3.0/level7/路子.svg",
+    "caption": "đường lối, cách làm"
+  },
+  "屡": {
+    "file": "屡.svg",
+    "src": "images/HSK_3.0/level7/屡.svg",
+    "caption": "nhiều lần, phen, luôn"
+  },
+  "缕": {
+    "file": "缕.svg",
+    "src": "images/HSK_3.0/level7/缕.svg",
+    "caption": "tia, làn, sợi, ngọn (gió, khói)"
+  },
+  "屡屡": {
+    "file": "屡屡.svg",
+    "src": "images/HSK_3.0/level7/屡屡.svg",
+    "caption": "liên tiếp, liên tục, nhiều lần"
+  },
+  "绿地": {
+    "file": "绿地.svg",
+    "src": "images/HSK_3.0/level7/绿地.svg",
+    "caption": "mảng xanh, dải cây xanh, thảm cỏ"
+  },
+  "绿洲": {
+    "file": "绿洲.svg",
+    "src": "images/HSK_3.0/level7/绿洲.svg",
+    "caption": "ốc đảo (sa mạc)"
+  },
+  "孪生": {
+    "file": "孪生.svg",
+    "src": "images/HSK_3.0/level7/孪生.svg",
+    "caption": "sinh đôi, song sinh"
+  },
+  "卵": {
+    "file": "卵.svg",
+    "src": "images/HSK_3.0/level7/卵.svg",
+    "caption": "trứng (côn trùng, cá, ếch); noãn"
+  },
+  "乱七八糟": {
+    "file": "乱七八糟.svg",
+    "src": "images/HSK_3.0/level7/乱七八糟.svg",
+    "caption": "rối tung rối mù, bừa bãi lộn xộn"
+  },
+  "略": {
+    "file": "略.svg",
+    "src": "images/HSK_3.0/level7/略.svg",
+    "caption": "sơ qua, lướt qua; hơi, một chút"
+  },
+  "略微": {
+    "file": "略微.svg",
+    "src": "images/HSK_3.0/level7/略微.svg",
+    "caption": "đôi chút, hơi, một chút"
+  },
+  "抡": {
+    "file": "抡.svg",
+    "src": "images/HSK_3.0/level7/抡.svg",
+    "caption": "vung mạnh, vung (búa, gậy)"
+  },
+  "轮换": {
+    "file": "轮换.svg",
+    "src": "images/HSK_3.0/level7/轮换.svg",
+    "caption": "luân phiên thay đổi, luân chuyển"
+  },
+  "伦理": {
+    "file": "伦理.svg",
+    "src": "images/HSK_3.0/level7/伦理.svg",
+    "caption": "luân lý, đạo đức"
+  },
+  "论述": {
+    "file": "论述.svg",
+    "src": "images/HSK_3.0/level7/论述.svg",
+    "caption": "phân tích trình bày, luận bàn, nghị luận"
+  },
+  "萝卜": {
+    "file": "萝卜.svg",
+    "src": "images/HSK_3.0/level7/萝卜.svg",
+    "caption": "củ cải"
+  },
+  "螺丝": {
+    "file": "螺丝.svg",
+    "src": "images/HSK_3.0/level7/螺丝.svg",
+    "caption": "ốc vít, đinh ốc, bu-lông"
+  },
+  "裸": {
+    "file": "裸.svg",
+    "src": "images/HSK_3.0/level7/裸.svg",
+    "caption": "trơ trọi, trần trụi, trần"
+  },
+  "裸露": {
+    "file": "裸露.svg",
+    "src": "images/HSK_3.0/level7/裸露.svg",
+    "caption": "lộ ra, phơi bày ra, trơ trụi"
+  },
+  "裸体": {
+    "file": "裸体.svg",
+    "src": "images/HSK_3.0/level7/裸体.svg",
+    "caption": "khỏa thân, trần truồng"
+  },
+  "落差": {
+    "file": "落差.svg",
+    "src": "images/HSK_3.0/level7/落差.svg",
+    "caption": "độ rơi, độ chênh lệch"
+  },
+  "落户": {
+    "file": "落户.svg",
+    "src": "images/HSK_3.0/level7/落户.svg",
+    "caption": "định cư, nhập hộ khẩu, lập nghiệp"
+  },
+  "麻¹": {
+    "file": "麻¹.svg",
+    "src": "images/HSK_3.0/level7/麻¹.svg",
+    "caption": "tê, tê dại"
+  },
+  "麻将": {
+    "file": "麻将.svg",
+    "src": "images/HSK_3.0/level7/麻将.svg",
+    "caption": "mạt chược"
+  },
+  "麻辣": {
+    "file": "麻辣.svg",
+    "src": "images/HSK_3.0/level7/麻辣.svg",
+    "caption": "cay nồng, cay tê"
+  },
+  "码¹": {
+    "file": "码¹.svg",
+    "src": "images/HSK_3.0/level7/码¹.svg",
+    "caption": "việc, chuyện, bận (sự việc)"
+  },
+  "码²": {
+    "file": "码².svg",
+    "src": "images/HSK_3.0/level7/码².svg",
+    "caption": "xếp, chất, chồng xếp"
   }
 };
 
