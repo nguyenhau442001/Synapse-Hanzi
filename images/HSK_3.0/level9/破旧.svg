@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(20, 20)">
+    <!-- Background glow/atmosphere to contrast the old house -->
+    <circle cx="100" cy="100" r="80" fill="#252A34" opacity="0.5"/>
+
+    <!-- Contrast elements (Scale exaggeration / structural collapse representing "破旧") -->
+    <!-- Sagging Roof / Broken Architecture -->
+    <path d="M40 95 L100 50 L160 95" fill="none" stroke="#E65F2B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Center sag indicating ruin -->
+    <path d="M95 54 L105 54" stroke="#E65F2B" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Crumbling / Leaning Walls -->
+    <path d="M50 95 L45 160 L155 160 L150 95" fill="#2C3240" stroke="#4A5568" stroke-width="2" stroke-linejoin="round"/>
+    
+    <!-- Structural Cracks (Visualizing deterioration) -->
+    <path d="M70 100 L78 120 L72 135 L85 155" fill="none" stroke="#E65F2B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M130 110 L122 130 L128 145" fill="none" stroke="#E65F2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Broken / Missing Windows -->
+    <rect x="60" y="110" width="25" height="30" rx="2" fill="#1A1D24" stroke="#E65F2B" stroke-width="2" stroke-dasharray="4 2"/>
+    <rect x="115" y="110" width="25" height="30" rx="2" fill="#1A1D24" stroke="#4A5568" stroke-width="2"/>
+    <!-- Broken pane lines inside right window -->
+    <line x1="115" y1="125" x2="140" y2="125" stroke="#4A5568" stroke-width="1.5"/>
+    <line x1="127" y1="110" x2="122" y2="140" stroke="#4A5568" stroke-width="1.5"/>
+
+    <!-- Sagging / Broken Door -->
+    <path d="M92 135 L108 138 L106 160 L90 160 Z" fill="#1A1D24" stroke="#E65F2B" stroke-width="2" stroke-linejoin="round" transform="rotate(8 90 135)"/>
+
+    <!-- Debris / Fallen Roof Tiles at the base -->
+    <path d="M35 165 C45 160, 55 168, 65 164" fill="none" stroke="#E65F2B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M135 163 C145 167, 155 161, 165 166" fill="none" stroke="#E65F2B" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="45" cy="168" r="2" fill="#E65F2B"/>
+    <circle cx="155" cy="165" r="1.5" fill="#E65F2B"/>
+
+    <!-- Subtle atmospheric marks of age (weathering dots) -->
+    <circle cx="55" cy="85" r="1.5" fill="#4A5568"/>
+    <circle cx="145" cy="88" r="1.5" fill="#4A5568"/>
+    <circle cx="100" cy="40" r="2" fill="#4A5568"/>
+  </g>
+</svg>
