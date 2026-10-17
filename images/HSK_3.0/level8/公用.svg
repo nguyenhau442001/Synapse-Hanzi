@@ -1,0 +1,66 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background architectural perspective grid for corridor/hallway context -->
+  <g opacity="0.3">
+    <!-- Floor perspective lines -->
+    <path d="M40 210 L100 140 M200 210 L140 140 M120 210 L120 140" stroke="#4A5568" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <!-- Ceiling perspective lines -->
+    <path d="M40 30 L100 90 M200 30 L140 90 M120 30 L120 90" stroke="#4A5568" stroke-width="1.5" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- Central Visual Object: Shared Corridor / Public Passageway (公用通道) -->
+  <!-- Left Wall -->
+  <path d="M20 20 L100 90 L100 160 L20 220 Z" fill="#242B35"/>
+  <line x1="60" y1="55" x2="60" y2="185" stroke="#2D3748" stroke-width="2"/>
+  <line x1="60" y1="120" x2="30" y2="140" stroke="#2D3748" stroke-width="2"/>
+
+  <!-- Right Wall -->
+  <path d="M220 20 L140 90 L140 160 L220 220 Z" fill="#2C3542"/>
+  <line x1="180" y1="55" x2="180" y2="185" stroke="#364152" stroke-width="2"/>
+  <line x1="180" y1="120" x2="210" y2="140" stroke="#364152" stroke-width="2"/>
+
+  <!-- Floor -->
+  <polygon points="20,220 100,160 140,160 220,220" fill="#1E242D"/>
+  
+  <!-- Ceiling -->
+  <polygon points="20,20 100,90 140,90 220,20" fill="#161A21"/>
+  <!-- Ceiling light fixtures -->
+  <rect x="110" y="85" width="20" height="6" rx="2" fill="#F6AD55" opacity="0.8"/>
+  <ellipse cx="120" cy="115" rx="35" ry="15" fill="#F6AD55" opacity="0.08"/>
+
+  <!-- Public Access / Shared Symbol Element: Open central corridor pathway with glowing directional indicator representing shared access -->
+  <path d="M100 160 L140 160 L135 145 L105 145 Z" fill="#E2E8F0" opacity="0.1"/>
+
+  <!-- Focus Icon representing "Shared / Common Use" (Multiple people icons converging / Shared asset icon) -->
+  <g transform="translate(120, 115)">
+    <!-- Outer accent ring -->
+    <circle cx="0" cy="0" r="32" fill="none" stroke="#F6AD55" stroke-width="2" stroke-dasharray="6 4" opacity="0.6"/>
+    
+    <!-- Central Shared Object: A public utility / shared access gate or gateway symbol rendered cleanly -->
+    <rect x="-18" y="-14" width="36" height="28" rx="4" fill="#2D3748" stroke="#4A5568" stroke-width="1.5"/>
+    
+    <!-- Status Indicator lights (Green/Gold for accessible public space) -->
+    <circle cx="-10" cy="-4" r="3" fill="#4FD1C5"/>
+    <circle cx="-10" cy="4" r="3" fill="#4FD1C5"/>
+    
+    <!-- Accessible opening gate arms -->
+    <path d="M2 -6 L14 -6 M2 6 L14 6" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="14" cy="-6" r="2.5" fill="#F6AD55"/>
+    <circle cx="14" cy="6" r="2.5" fill="#F6AD55"/>
+  </g>
+
+  <!-- Foreground Silhouettes of Multiple Owners/Residents sharing the space (representing 全体业主) -->
+  <!-- Person 1 (Left) -->
+  <g transform="translate(65, 140)">
+    <circle cx="0" cy="-16" r="7" fill="#63B3ED"/>
+    <path d="M-10 15 C-10 2 0 -2 0 -2 C0 -2 10 2 10 15 Z" fill="#4299E1"/>
+  </g>
+
+  <!-- Person 2 (Right) -->
+  <g transform="translate(175, 140)">
+    <circle cx="0" cy="-16" r="7" fill="#F6AD55"/>
+    <path d="M-10 15 C-10 2 0 -2 0 -2 C0 -2 10 2 10 15 Z" fill="#ED8936"/>
+  </g>
+</svg>

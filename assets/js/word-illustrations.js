@@ -39467,10 +39467,260 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/更改.svg",
     "caption": "thay đổi"
   },
+  "更衣室": {
+    "file": "更衣室.svg",
+    "src": "images/HSK_3.0/level7/更衣室.svg",
+    "caption": "phòng thay đồ"
+  },
   "耕耘": {
     "file": "耕耘.svg",
     "src": "images/HSK_3.0/level7/耕耘.svg",
     "caption": "vun xới, cày bừa, cống hiến"
+  },
+  "更正": {
+    "file": "更正.svg",
+    "src": "images/HSK_3.0/level7/更正.svg",
+    "caption": "đính chính, sửa lại cho đúng"
+  },
+  "哽咽": {
+    "file": "哽咽.svg",
+    "src": "images/HSK_3.0/level7/哽咽.svg",
+    "caption": "nghẹn ngào, khóc nghẹn"
+  },
+  "耿直": {
+    "file": "耿直.svg",
+    "src": "images/HSK_3.0/level7/耿直.svg",
+    "caption": "ngay thẳng, bộc trực, chính trực"
+  },
+  "弓": {
+    "file": "弓.svg",
+    "src": "images/HSK_3.0/level7/弓.svg",
+    "caption": "cây cung, uốn cong"
+  },
+  "功": {
+    "file": "功.svg",
+    "src": "images/HSK_3.0/level7/功.svg",
+    "caption": "công lao, công trạng, chiến công"
+  },
+  "攻": {
+    "file": "攻.svg",
+    "src": "images/HSK_3.0/level7/攻.svg",
+    "caption": "tấn công, công kích"
+  },
+  "供": {
+    "file": "供.svg",
+    "src": "images/HSK_3.0/level7/供.svg",
+    "caption": "cung cấp"
+  },
+  "公办": {
+    "file": "公办.svg",
+    "src": "images/HSK_3.0/level7/公办.svg",
+    "caption": "công lập, do nhà nước lập"
+  },
+  "供不应求": {
+    "file": "供不应求.svg",
+    "src": "images/HSK_3.0/level7/供不应求.svg",
+    "caption": "cung không đủ cầu"
+  },
+  "功臣": {
+    "file": "功臣.svg",
+    "src": "images/HSK_3.0/level7/功臣.svg",
+    "caption": "công thần, người có công lớn"
+  },
+  "功底": {
+    "file": "功底.svg",
+    "src": "images/HSK_3.0/level7/功底.svg",
+    "caption": "nền tảng kỹ năng, nội lực căn bản"
+  },
+  "攻读": {
+    "file": "攻读.svg",
+    "src": "images/HSK_3.0/level7/攻读.svg",
+    "caption": "theo học, chuyên tâm nghiên cứu"
+  },
+  "公费": {
+    "file": "公费.svg",
+    "src": "images/HSK_3.0/level7/公费.svg",
+    "caption": "kinh phí nhà nước, công phí"
+  },
+  "公关": {
+    "file": "公关.svg",
+    "src": "images/HSK_3.0/level7/公关.svg",
+    "caption": "quan hệ công chúng, PR"
+  },
+  "攻关": {
+    "file": "攻关.svg",
+    "src": "images/HSK_3.0/level7/攻关.svg",
+    "caption": "đột phá khó khăn then chốt"
+  },
+  "工会": {
+    "file": "工会.svg",
+    "src": "images/HSK_3.0/level7/工会.svg",
+    "caption": "công đoàn"
+  },
+  "工匠": {
+    "file": "工匠.svg",
+    "src": "images/HSK_3.0/level7/工匠.svg",
+    "caption": "thợ thủ công, nghệ nhân"
+  },
+  "恭敬": {
+    "file": "恭敬.svg",
+    "src": "images/HSK_3.0/level7/恭敬.svg",
+    "caption": "cung kính, kính cẩn"
+  },
+  "工科": {
+    "file": "工科.svg",
+    "src": "images/HSK_3.0/level7/工科.svg",
+    "caption": "khối kỹ thuật, ngành kỹ thuật"
+  },
+  "公款": {
+    "file": "公款.svg",
+    "src": "images/HSK_3.0/level7/公款.svg",
+    "caption": "công quỹ, tiền công"
+  },
+  "公立": {
+    "file": "公立.svg",
+    "src": "images/HSK_3.0/level7/公立.svg",
+    "caption": "công lập"
+  },
+  "功力": {
+    "file": "功力.svg",
+    "src": "images/HSK_3.0/level7/功力.svg",
+    "caption": "công lực, nội lực thâm sâu"
+  },
+  "功利": {
+    "file": "功利.svg",
+    "src": "images/HSK_3.0/level7/功利.svg",
+    "caption": "vụ lợi, thực dụng"
+  },
+  "功率": {
+    "file": "功率.svg",
+    "src": "images/HSK_3.0/level7/功率.svg",
+    "caption": "công suất"
+  },
+  "公墓": {
+    "file": "公墓.svg",
+    "src": "images/HSK_3.0/level7/公墓.svg",
+    "caption": "nghĩa trang, nghĩa trang công cộng"
+  },
+  "供暖": {
+    "file": "供暖.svg",
+    "src": "images/HSK_3.0/level7/供暖.svg",
+    "caption": "sưởi ấm"
+  },
+  "公仆": {
+    "file": "公仆.svg",
+    "src": "images/HSK_3.0/level7/公仆.svg",
+    "caption": "công bộc, đầy tớ của nhân dân"
+  },
+  "公顷": {
+    "file": "公顷.svg",
+    "src": "images/HSK_3.0/level7/公顷.svg",
+    "caption": "héc-ta (ha)"
+  },
+  "供求": {
+    "file": "供求.svg",
+    "src": "images/HSK_3.0/level7/供求.svg",
+    "caption": "cung cầu, cung và cầu"
+  },
+  "公然": {
+    "file": "公然.svg",
+    "src": "images/HSK_3.0/level7/公然.svg",
+    "caption": "công nhiên, trắng trợn"
+  },
+  "公示": {
+    "file": "公示.svg",
+    "src": "images/HSK_3.0/level7/公示.svg",
+    "caption": "công khai niêm yết, công bố"
+  },
+  "公事": {
+    "file": "公事.svg",
+    "src": "images/HSK_3.0/level7/公事.svg",
+    "caption": "việc công, công vụ"
+  },
+  "攻势": {
+    "file": "攻势.svg",
+    "src": "images/HSK_3.0/level7/攻势.svg",
+    "caption": "thế công, đợt tiến công"
+  },
+  "宫廷": {
+    "file": "宫廷.svg",
+    "src": "images/HSK_3.0/level7/宫廷.svg",
+    "caption": "cung đình, hoàng cung"
+  },
+  "公务": {
+    "file": "公务.svg",
+    "src": "images/HSK_3.0/level7/公务.svg",
+    "caption": "công vụ, việc công"
+  },
+  "供需": {
+    "file": "供需.svg",
+    "src": "images/HSK_3.0/level7/供需.svg",
+    "caption": "cung cầu, cung ứng và nhu cầu"
+  },
+  "供养": {
+    "file": "供养.svg",
+    "src": "images/HSK_3.0/level7/供养.svg",
+    "caption": "phụng dưỡng, chu cấp nuôi dưỡng"
+  },
+  "供应链": {
+    "file": "供应链.svg",
+    "src": "images/HSK_3.0/level7/供应链.svg",
+    "caption": "chuỗi cung ứng"
+  },
+  "公用": {
+    "file": "公用.svg",
+    "src": "images/HSK_3.0/level7/公用.svg",
+    "caption": "dùng chung, công cộng"
+  },
+  "公约": {
+    "file": "公约.svg",
+    "src": "images/HSK_3.0/level7/公约.svg",
+    "caption": "công ước, quy ước"
+  },
+  "公证": {
+    "file": "公证.svg",
+    "src": "images/HSK_3.0/level7/公证.svg",
+    "caption": "công chứng, chứng thực"
+  },
+  "工整": {
+    "file": "工整.svg",
+    "src": "images/HSK_3.0/level7/工整.svg",
+    "caption": "ngay ngắn, nắn nót, gọn gàng"
+  },
+  "公职": {
+    "file": "公职.svg",
+    "src": "images/HSK_3.0/level7/公职.svg",
+    "caption": "chức vụ nhà nước, chức vụ công"
+  },
+  "供奉": {
+    "file": "供奉.svg",
+    "src": "images/HSK_3.0/level7/供奉.svg",
+    "caption": "thờ phụng, thờ cúng"
+  },
+  "共鸣": {
+    "file": "共鸣.svg",
+    "src": "images/HSK_3.0/level7/共鸣.svg",
+    "caption": "đồng cảm, tiếng vang, cộng hưởng"
+  },
+  "共识": {
+    "file": "共识.svg",
+    "src": "images/HSK_3.0/level7/共识.svg",
+    "caption": "nhận thức chung, sự đồng thuận"
+  },
+  "共同体": {
+    "file": "共同体.svg",
+    "src": "images/HSK_3.0/level7/共同体.svg",
+    "caption": "khối cộng đồng, cộng đồng chung"
+  },
+  "共性": {
+    "file": "共性.svg",
+    "src": "images/HSK_3.0/level7/共性.svg",
+    "caption": "tính phổ biến, điểm chung"
+  },
+  "勾": {
+    "file": "勾.svg",
+    "src": "images/HSK_3.0/level7/勾.svg",
+    "caption": "đánh dấu, tích dấu"
   }
 };
 
