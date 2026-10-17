@@ -40187,6 +40187,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/诡计.svg",
     "caption": "quỷ kế, mưu ma chước quỷ"
   },
+  "贵宾": {
+    "file": "贵宾.svg",
+    "src": "images/HSK_3.0/level7/贵宾.svg",
+    "caption": "khách quý, quý khách"
+  },
   "桂花": {
     "file": "桂花.svg",
     "src": "images/HSK_3.0/level7/桂花.svg",
@@ -40221,6 +40226,251 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "国务院.svg",
     "src": "images/HSK_3.0/level7/国务院.svg",
     "caption": "quốc vụ viện"
+  },
+  "国学": {
+    "file": "国学.svg",
+    "src": "images/HSK_3.0/level7/国学.svg",
+    "caption": "quốc học (học thuật truyền thống Trung Hoa)"
+  },
+  "国有": {
+    "file": "国有.svg",
+    "src": "images/HSK_3.0/level7/国有.svg",
+    "caption": "thuộc sở hữu nhà nước"
+  },
+  "裹": {
+    "file": "裹.svg",
+    "src": "images/HSK_3.0/level7/裹.svg",
+    "caption": "quấn, bọc, gói"
+  },
+  "果断": {
+    "file": "果断.svg",
+    "src": "images/HSK_3.0/level7/果断.svg",
+    "caption": "quả đoán, quyết đoán, dứt khoát"
+  },
+  "果真": {
+    "file": "果真.svg",
+    "src": "images/HSK_3.0/level7/果真.svg",
+    "caption": "quả nhiên, quả thật"
+  },
+  "过意不去": {
+    "file": "过意不去.svg",
+    "src": "images/HSK_3.0/level7/过意不去.svg",
+    "caption": "áy náy, cảm thấy có lỗi"
+  },
+  "过半": {
+    "file": "过半.svg",
+    "src": "images/HSK_3.0/level7/过半.svg",
+    "caption": "quá nửa, hơn một nửa"
+  },
+  "过不去": {
+    "file": "过不去.svg",
+    "src": "images/HSK_3.0/level7/过不去.svg",
+    "caption": "làm khó, gây khó dễ"
+  },
+  "过错": {
+    "file": "过错.svg",
+    "src": "images/HSK_3.0/level7/过错.svg",
+    "caption": "lỗi"
+  },
+  "过道": {
+    "file": "过道.svg",
+    "src": "images/HSK_3.0/level7/过道.svg",
+    "caption": "hành lang, lối đi"
+  },
+  "过关": {
+    "file": "过关.svg",
+    "src": "images/HSK_3.0/level7/过关.svg",
+    "caption": "qua ải, đạt chuẩn, đạt yêu cầu"
+  },
+  "过奖": {
+    "file": "过奖.svg",
+    "src": "images/HSK_3.0/level7/过奖.svg",
+    "caption": "quá khen"
+  },
+  "过境": {
+    "file": "过境.svg",
+    "src": "images/HSK_3.0/level7/过境.svg",
+    "caption": "quá cảnh"
+  },
+  "过量": {
+    "file": "过量.svg",
+    "src": "images/HSK_3.0/level7/过量.svg",
+    "caption": "quá lượng, quá liều, quá mức"
+  },
+  "过剩": {
+    "file": "过剩.svg",
+    "src": "images/HSK_3.0/level7/过剩.svg",
+    "caption": "dư thừa, thừa mứa"
+  },
+  "过失": {
+    "file": "过失.svg",
+    "src": "images/HSK_3.0/level7/过失.svg",
+    "caption": "lỗi lầm do sơ suất, sơ suất"
+  },
+  "过头": {
+    "file": "过头.svg",
+    "src": "images/HSK_3.0/level7/过头.svg",
+    "caption": "quá đà, quá trớn"
+  },
+  "过往": {
+    "file": "过往.svg",
+    "src": "images/HSK_3.0/level7/过往.svg",
+    "caption": "qua lại, người qua lại"
+  },
+  "过问": {
+    "file": "过问.svg",
+    "src": "images/HSK_3.0/level7/过问.svg",
+    "caption": "hỏi han, can thiệp, để mắt tới"
+  },
+  "过瘾": {
+    "file": "过瘾.svg",
+    "src": "images/HSK_3.0/level7/过瘾.svg",
+    "caption": "đã đời, thỏa thích, cực kỳ đã"
+  },
+  "过硬": {
+    "file": "过硬.svg",
+    "src": "images/HSK_3.0/level7/过硬.svg",
+    "caption": "vững vàng, chuẩn xác, tinh thông"
+  },
+  "海报": {
+    "file": "海报.svg",
+    "src": "images/HSK_3.0/level7/海报.svg",
+    "caption": "áp phích, poster quảng cáo"
+  },
+  "海滨": {
+    "file": "海滨.svg",
+    "src": "images/HSK_3.0/level7/海滨.svg",
+    "caption": "bờ biển, ven biển"
+  },
+  "海盗": {
+    "file": "海盗.svg",
+    "src": "images/HSK_3.0/level7/海盗.svg",
+    "caption": "cướp biển, hải tặc"
+  },
+  "海军": {
+    "file": "海军.svg",
+    "src": "images/HSK_3.0/level7/海军.svg",
+    "caption": "hải quân"
+  },
+  "海量": {
+    "file": "海量.svg",
+    "src": "images/HSK_3.0/level7/海量.svg",
+    "caption": "khối lượng khổng lồ, dung lượng cực lớn"
+  },
+  "海绵": {
+    "file": "海绵.svg",
+    "src": "images/HSK_3.0/level7/海绵.svg",
+    "caption": "miếng bọt biển, mút xốp"
+  },
+  "海滩": {
+    "file": "海滩.svg",
+    "src": "images/HSK_3.0/level7/海滩.svg",
+    "caption": "bãi biển, bãi cát ven biển"
+  },
+  "海豚": {
+    "file": "海豚.svg",
+    "src": "images/HSK_3.0/level7/海豚.svg",
+    "caption": "cá heo"
+  },
+  "海湾": {
+    "file": "海湾.svg",
+    "src": "images/HSK_3.0/level7/海湾.svg",
+    "caption": "vịnh, vịnh biển"
+  },
+  "海峡": {
+    "file": "海峡.svg",
+    "src": "images/HSK_3.0/level7/海峡.svg",
+    "caption": "eo biển"
+  },
+  "海啸": {
+    "file": "海啸.svg",
+    "src": "images/HSK_3.0/level7/海啸.svg",
+    "caption": "sóng thần"
+  },
+  "海运": {
+    "file": "海运.svg",
+    "src": "images/HSK_3.0/level7/海运.svg",
+    "caption": "vận tải đường biển, đường biển"
+  },
+  "海藻": {
+    "file": "海藻.svg",
+    "src": "images/HSK_3.0/level7/海藻.svg",
+    "caption": "rong biển, tảo biển"
+  },
+  "害虫": {
+    "file": "害虫.svg",
+    "src": "images/HSK_3.0/level7/害虫.svg",
+    "caption": "loài gây hại"
+  },
+  "骇人听闻": {
+    "file": "骇人听闻.svg",
+    "src": "images/HSK_3.0/level7/骇人听闻.svg",
+    "caption": "nghe mà rùng mình, kinh hoàng"
+  },
+  "酣畅": {
+    "file": "酣畅.svg",
+    "src": "images/HSK_3.0/level7/酣畅.svg",
+    "caption": "sảng khoái, tràn trề thỏa thích"
+  },
+  "憨厚": {
+    "file": "憨厚.svg",
+    "src": "images/HSK_3.0/level7/憨厚.svg",
+    "caption": "thật thà, chất phác, đôn hậu"
+  },
+  "酣睡": {
+    "file": "酣睡.svg",
+    "src": "images/HSK_3.0/level7/酣睡.svg",
+    "caption": "ngủ say sưa, ngủ say"
+  },
+  "函": {
+    "file": "函.svg",
+    "src": "images/HSK_3.0/level7/函.svg",
+    "caption": "thư, công văn, thư mời"
+  },
+  "寒带": {
+    "file": "寒带.svg",
+    "src": "images/HSK_3.0/level7/寒带.svg",
+    "caption": "hàn đới, xứ lạnh"
+  },
+  "涵盖": {
+    "file": "涵盖.svg",
+    "src": "images/HSK_3.0/level7/涵盖.svg",
+    "caption": "bao quát, bao gồm, bao hàm"
+  },
+  "寒暄": {
+    "file": "寒暄.svg",
+    "src": "images/HSK_3.0/level7/寒暄.svg",
+    "caption": "hàn huyên, chào hỏi xã giao"
+  },
+  "汉服": {
+    "file": "汉服.svg",
+    "src": "images/HSK_3.0/level7/汉服.svg",
+    "caption": "hán phục, trang phục truyền thống"
+  },
+  "捍卫": {
+    "file": "捍卫.svg",
+    "src": "images/HSK_3.0/level7/捍卫.svg",
+    "caption": "bảo vệ vững chắc, giữ gìn"
+  },
+  "夯实": {
+    "file": "夯实.svg",
+    "src": "images/HSK_3.0/level7/夯实.svg",
+    "caption": "củng cố vững chắc, đầm chặt"
+  },
+  "航海": {
+    "file": "航海.svg",
+    "src": "images/HSK_3.0/level7/航海.svg",
+    "caption": "đi biển, hàng hải"
+  },
+  "行家": {
+    "file": "行家.svg",
+    "src": "images/HSK_3.0/level7/行家.svg",
+    "caption": "chuyên gia sành sỏi, người trong nghề"
+  },
+  "行情": {
+    "file": "行情.svg",
+    "src": "images/HSK_3.0/level7/行情.svg",
+    "caption": "tình hình thị trường, thị giá"
   }
 };
 
