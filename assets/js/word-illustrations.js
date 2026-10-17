@@ -48321,6 +48321,256 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "势不可当.svg",
     "src": "images/HSK_3.0/level7/势不可当.svg",
     "caption": "dũng mãnh không thể ngăn cản; thế như chẻ tre"
+  },
+  "视察": {
+    "file": "视察.svg",
+    "src": "images/HSK_3.0/level7/视察.svg",
+    "caption": "thị sát; kiểm tra thực địa"
+  },
+  "市场经济": {
+    "file": "市场经济.svg",
+    "src": "images/HSK_3.0/level7/市场经济.svg",
+    "caption": "kinh tế thị trường"
+  },
+  "试点": {
+    "file": "试点.svg",
+    "src": "images/HSK_3.0/level7/试点.svg",
+    "caption": "thí điểm; làm điểm"
+  },
+  "世故": {
+    "file": "世故.svg",
+    "src": "images/HSK_3.0/level7/世故.svg",
+    "caption": "lõi đời; từng trải"
+  },
+  "嗜好": {
+    "file": "嗜好.svg",
+    "src": "images/HSK_3.0/level7/嗜好.svg",
+    "caption": "tật nghiện; sở thích xấu"
+  },
+  "侍候": {
+    "file": "侍候.svg",
+    "src": "images/HSK_3.0/level7/侍候.svg",
+    "caption": "chăm sóc hầu hạ; phụng dưỡng"
+  },
+  "世间": {
+    "file": "世间.svg",
+    "src": "images/HSK_3.0/level7/世间.svg",
+    "caption": "thế gian; cõi trần"
+  },
+  "视角": {
+    "file": "视角.svg",
+    "src": "images/HSK_3.0/level7/视角.svg",
+    "caption": "góc nhìn; điểm nhìn"
+  },
+  "适量": {
+    "file": "适量.svg",
+    "src": "images/HSK_3.0/level7/适量.svg",
+    "caption": "lượng vừa phải; vừa phải"
+  },
+  "士气": {
+    "file": "士气.svg",
+    "src": "images/HSK_3.0/level7/士气.svg",
+    "caption": "nhuệ khí; tinh thần chiến đấu; sĩ khí"
+  },
+  "世人": {
+    "file": "世人.svg",
+    "src": "images/HSK_3.0/level7/世人.svg",
+    "caption": "người đời; thế nhân"
+  },
+  "适时": {
+    "file": "适时.svg",
+    "src": "images/HSK_3.0/level7/适时.svg",
+    "caption": "kịp thời; đúng lúc"
+  },
+  "试探": {
+    "file": "试探.svg",
+    "src": "images/HSK_3.0/level7/试探.svg",
+    "caption": "thăm dò; dò xét"
+  },
+  "势头": {
+    "file": "势头.svg",
+    "src": "images/HSK_3.0/level7/势头.svg",
+    "caption": "đà; thế; xu thế phát triển"
+  },
+  "事务所": {
+    "file": "事务所.svg",
+    "src": "images/HSK_3.0/level7/事务所.svg",
+    "caption": "văn phòng (luật sư, kế toán)"
+  },
+  "试行": {
+    "file": "试行.svg",
+    "src": "images/HSK_3.0/level7/试行.svg",
+    "caption": "áp dụng thử nghiệm; thi hành thử"
+  },
+  "事宜": {
+    "file": "事宜.svg",
+    "src": "images/HSK_3.0/level7/事宜.svg",
+    "caption": "vấn đề"
+  },
+  "市值": {
+    "file": "市值.svg",
+    "src": "images/HSK_3.0/level7/市值.svg",
+    "caption": "giá trị vốn hóa thị trường; giá trị thị trường"
+  },
+  "柿子": {
+    "file": "柿子.svg",
+    "src": "images/HSK_3.0/level7/柿子.svg",
+    "caption": "quả hồng (trái cây)"
+  },
+  "收复": {
+    "file": "收复.svg",
+    "src": "images/HSK_3.0/level7/收复.svg",
+    "caption": "thu hồi; lấy lại"
+  },
+  "收割": {
+    "file": "收割.svg",
+    "src": "images/HSK_3.0/level7/收割.svg",
+    "caption": "thu hoạch"
+  },
+  "收敛": {
+    "file": "收敛.svg",
+    "src": "images/HSK_3.0/level7/收敛.svg",
+    "caption": "kiềm chế bớt; thu mình lại"
+  },
+  "收留": {
+    "file": "收留.svg",
+    "src": "images/HSK_3.0/level7/收留.svg",
+    "caption": "cưu mang; thu nhận"
+  },
+  "收买": {
+    "file": "收买.svg",
+    "src": "images/HSK_3.0/level7/收买.svg",
+    "caption": "mua chuộc; đút lót"
+  },
+  "收视率": {
+    "file": "收视率.svg",
+    "src": "images/HSK_3.0/level7/收视率.svg",
+    "caption": "tỷ suất người xem; rating"
+  },
+  "收养": {
+    "file": "收养.svg",
+    "src": "images/HSK_3.0/level7/收养.svg",
+    "caption": "nhận nuôi; nhận làm con nuôi"
+  },
+  "收支": {
+    "file": "收支.svg",
+    "src": "images/HSK_3.0/level7/收支.svg",
+    "caption": "thu chi; các khoản thu và chi"
+  },
+  "手册": {
+    "file": "手册.svg",
+    "src": "images/HSK_3.0/level7/手册.svg",
+    "caption": "sổ tay; cẩm nang hướng dẫn"
+  },
+  "首创": {
+    "file": "首创.svg",
+    "src": "images/HSK_3.0/level7/首创.svg",
+    "caption": "sáng tạo đầu tiên; tiên phong khởi xướng"
+  },
+  "手动": {
+    "file": "手动.svg",
+    "src": "images/HSK_3.0/level7/手动.svg",
+    "caption": "thủ công; bằng tay"
+  },
+  "首付": {
+    "file": "首付.svg",
+    "src": "images/HSK_3.0/level7/首付.svg",
+    "caption": "tiền trả trước; khoản thanh toán đầu"
+  },
+  "首府": {
+    "file": "首府.svg",
+    "src": "images/HSK_3.0/level7/首府.svg",
+    "caption": "thủ phủ"
+  },
+  "守候": {
+    "file": "守候.svg",
+    "src": "images/HSK_3.0/level7/守候.svg",
+    "caption": "túc trực; ngóng chờ bên cạnh"
+  },
+  "手脚": {
+    "file": "手脚.svg",
+    "src": "images/HSK_3.0/level7/手脚.svg",
+    "caption": "chân tay"
+  },
+  "首脑": {
+    "file": "首脑.svg",
+    "src": "images/HSK_3.0/level7/首脑.svg",
+    "caption": "nguyên thủ; người đứng đầu"
+  },
+  "手帕": {
+    "file": "手帕.svg",
+    "src": "images/HSK_3.0/level7/手帕.svg",
+    "caption": "chiếc khăn tay"
+  },
+  "首批": {
+    "file": "首批.svg",
+    "src": "images/HSK_3.0/level7/首批.svg",
+    "caption": "đợt đầu; lô đầu tiên"
+  },
+  "手枪": {
+    "file": "手枪.svg",
+    "src": "images/HSK_3.0/level7/手枪.svg",
+    "caption": "súng ngắn; súng lục"
+  },
+  "手头": {
+    "file": "手头.svg",
+    "src": "images/HSK_3.0/level7/手头.svg",
+    "caption": "trong tay; hiện tại"
+  },
+  "手腕": {
+    "file": "手腕.svg",
+    "src": "images/HSK_3.0/level7/手腕.svg",
+    "caption": "tài khéo léo; thủ đoạn"
+  },
+  "首席": {
+    "file": "首席.svg",
+    "src": "images/HSK_3.0/level7/首席.svg",
+    "caption": "trưởng; cao cấp nhất; số một"
+  },
+  "守信": {
+    "file": "守信.svg",
+    "src": "images/HSK_3.0/level7/守信.svg",
+    "caption": "giữ chữ tín; giữ lời hứa"
+  },
+  "守株待兔": {
+    "file": "守株待兔.svg",
+    "src": "images/HSK_3.0/level7/守株待兔.svg",
+    "caption": "ôm cây đợi thỏ; trông chờ may rủi"
+  },
+  "受宠若惊": {
+    "file": "受宠若惊.svg",
+    "src": "images/HSK_3.0/level7/受宠若惊.svg",
+    "caption": "vừa mừng vừa lo; được ưu ái mà lo sợ"
+  },
+  "受挫": {
+    "file": "受挫.svg",
+    "src": "images/HSK_3.0/level7/受挫.svg",
+    "caption": "gặp trắc trở; vấp váp"
+  },
+  "受害": {
+    "file": "受害.svg",
+    "src": "images/HSK_3.0/level7/受害.svg",
+    "caption": "chịu thiệt hại; bị tổn thất"
+  },
+  "受害人": {
+    "file": "受害人.svg",
+    "src": "images/HSK_3.0/level7/受害人.svg",
+    "caption": "người bị hại; nạn nhân"
+  },
+  "受惊": {
+    "file": "受惊.svg",
+    "src": "images/HSK_3.0/level7/受惊.svg",
+    "caption": "giật mình hoảng sợ; hoảng loạn"
+  },
+  "受苦": {
+    "file": "受苦.svg",
+    "src": "images/HSK_3.0/level7/受苦.svg",
+    "caption": "chịu khổ; chịu cực"
+  },
+  "受理": {
+    "file": "受理.svg",
+    "src": "images/HSK_3.0/level7/受理.svg",
+    "caption": "thụ lý; tiếp nhận giải quyết"
   }
 };
 
