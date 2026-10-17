@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Central Focus: The physical object (Water bottle being poured / guàn - 灌) -->
+  <g transform="translate(0, 0)">
+    <!-- Splash / Droplet particles indicating sudden pouring action -->
+    <path d="M90 75 C85 65 95 55 95 55 C95 55 105 65 100 75 Z" fill="#38BDF8" opacity="0.6"/>
+    <path d="M145 75 C150 65 140 55 140 55 C140 55 130 65 135 75 Z" fill="#38BDF8" opacity="0.6"/>
+    <circle cx="100" cy="50" r="3" fill="#38BDF8" opacity="0.8"/>
+    <circle cx="138" cy="48" r="2.5" fill="#38BDF8" opacity="0.8"/>
+    
+    <!-- Angled Water Bottle (Cyan/Blue Ice Water) -->
+    <g transform="rotate(-35, 120, 110)">
+      <!-- Bottle Body -->
+      <rect x="106" y="65" width="28" height="75" rx="6" fill="#0EA5E9" opacity="0.3" stroke="#38BDF8" stroke-width="2.5"/>
+      <!-- Water inside bottle -->
+      <path d="M 108 85 L 132 85 L 132 138 C 132 139.5 130.5 140 129 140 L 111 140 C 109.5 140 108 139.5 108 138 Z" fill="#38BDF8" opacity="0.7"/>
+      <!-- Ice cubes inside bottle -->
+      <rect x="112" y="95" width="10" height="10" rx="2" fill="#FFFFFF" opacity="0.5" transform="rotate(15 117 100)"/>
+      <rect x="116" y="115" width="9" height="9" rx="2" fill="#FFFFFF" opacity="0.5" transform="rotate(-10 120 120)"/>
+      <!-- Bottle Cap -->
+      <rect x="111" y="53" width="18" height="12" rx="3" fill="#F59E0B"/>
+      <!-- Bottle Neck -->
+      <rect x="113" y="62" width="14" height="4" fill="#38BDF8" opacity="0.5"/>
+    </g>
+
+    <!-- Flowing Stream of Water pouring down -->
+    <path d="M 112 110 C 112 110 95 135 90 165 C 87 185 95 195 95 195 C 95 195 103 185 105 165 C 108 140 120 115 120 115 Z" fill="#38BDF8" opacity="0.9"/>
+    <path d="M 115 120 C 115 120 105 145 101 168 C 99 180 103 190 103 190 C 103 190 108 180 110 168 C 113 145 122 122 122 122 Z" fill="#E0F2FE" opacity="0.6"/>
+
+    <!-- Silhouette / Abstract human midsection representing 'pouring into the body/stomach' (肚子里) -->
+    <g transform="translate(0, 10)">
+      <!-- Lower torso outline / clothing contour -->
+      <path d="M 75 160 C 85 150 110 145 120 145 C 130 145 155 150 165 160 C 175 172 170 215 170 215 L 70 215 C 70 215 65 172 75 160 Z" fill="#272A35" stroke="#334155" stroke-width="2"/>
+      
+      <!-- Belt/Waistband accent in high-contrast orange -->
+      <rect x="80" y="195" width="80" height="6" rx="3" fill="#F59E0B"/>
+      
+      <!-- Impact ripples at the point of entry/stomach -->
+      <ellipse cx="98" cy="190" rx="14" ry="5" fill="none" stroke="#38BDF8" stroke-width="2" opacity="0.8"/>
+      <ellipse cx="98" cy="190" rx="8" ry="3" fill="none" stroke="#38BDF8" stroke-width="1.5" opacity="0.5"/>
+      
+      <!-- Splashing drops near stomach -->
+      <circle cx="82" cy="180" r="2" fill="#38BDF8"/>
+      <circle cx="114" cy="178" r="1.5" fill="#38BDF8"/>
+    </g>
+  </g>
+</svg>

@@ -39971,6 +39971,256 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "观感.svg",
     "src": "images/HSK_3.0/level7/观感.svg",
     "caption": "cảm tưởng, cảm nhận khi xem"
+  },
+  "关节": {
+    "file": "关节.svg",
+    "src": "images/HSK_3.0/level7/关节.svg",
+    "caption": "khớp xương, đốt khớp"
+  },
+  "官吏": {
+    "file": "官吏.svg",
+    "src": "images/HSK_3.0/level7/官吏.svg",
+    "caption": "quan lại, quan chức triều đình"
+  },
+  "官僚": {
+    "file": "官僚.svg",
+    "src": "images/HSK_3.0/level7/官僚.svg",
+    "caption": "quan liêu"
+  },
+  "观摩": {
+    "file": "观摩.svg",
+    "src": "images/HSK_3.0/level7/观摩.svg",
+    "caption": "tham quan học hỏi, quan sát học tập, dự giờ"
+  },
+  "关切": {
+    "file": "关切.svg",
+    "src": "images/HSK_3.0/level7/关切.svg",
+    "caption": "quan tâm sâu sắc, ân cần lo lắng"
+  },
+  "关税": {
+    "file": "关税.svg",
+    "src": "images/HSK_3.0/level7/关税.svg",
+    "caption": "thuế quan, thuế xuất nhập khẩu"
+  },
+  "官司": {
+    "file": "官司.svg",
+    "src": "images/HSK_3.0/level7/官司.svg",
+    "caption": "vụ kiện, kiện cáo"
+  },
+  "关头": {
+    "file": "关头.svg",
+    "src": "images/HSK_3.0/level7/关头.svg",
+    "caption": "thời điểm then chốt, bước ngoặt"
+  },
+  "观望": {
+    "file": "观望.svg",
+    "src": "images/HSK_3.0/level7/观望.svg",
+    "caption": "chờ đợi quan sát, ngóng trông nghe ngóng"
+  },
+  "管家": {
+    "file": "管家.svg",
+    "src": "images/HSK_3.0/level7/管家.svg",
+    "caption": "quản gia, người quản gia"
+  },
+  "管教": {
+    "file": "管教.svg",
+    "src": "images/HSK_3.0/level7/管教.svg",
+    "caption": "dạy dỗ, quản giáo"
+  },
+  "管辖": {
+    "file": "管辖.svg",
+    "src": "images/HSK_3.0/level7/管辖.svg",
+    "caption": "cai quản, quản lý, quyền tài phán"
+  },
+  "管用": {
+    "file": "管用.svg",
+    "src": "images/HSK_3.0/level7/管用.svg",
+    "caption": "có tác dụng, hiệu nghiệm"
+  },
+  "惯": {
+    "file": "惯.svg",
+    "src": "images/HSK_3.0/level7/惯.svg",
+    "caption": "chiều chuộng, nuông chiều"
+  },
+  "灌": {
+    "file": "灌.svg",
+    "src": "images/HSK_3.0/level7/灌.svg",
+    "caption": "rót, tưới, đổ vào bụng"
+  },
+  "贯彻": {
+    "file": "贯彻.svg",
+    "src": "images/HSK_3.0/level7/贯彻.svg",
+    "caption": "quán triệt, thực hiện thấu suốt"
+  },
+  "贯穿": {
+    "file": "贯穿.svg",
+    "src": "images/HSK_3.0/level7/贯穿.svg",
+    "caption": "xuyên suốt, bao quát xuyên qua"
+  },
+  "灌溉": {
+    "file": "灌溉.svg",
+    "src": "images/HSK_3.0/level7/灌溉.svg",
+    "caption": "tưới tiêu, tưới ruộng"
+  },
+  "惯例": {
+    "file": "惯例.svg",
+    "src": "images/HSK_3.0/level7/惯例.svg",
+    "caption": "thông lệ, lệ thường"
+  },
+  "灌输": {
+    "file": "灌输.svg",
+    "src": "images/HSK_3.0/level7/灌输.svg",
+    "caption": "nhồi nhét, truyền thụ"
+  },
+  "贯通": {
+    "file": "贯通.svg",
+    "src": "images/HSK_3.0/level7/贯通.svg",
+    "caption": "thông suốt, thông suốt nối liền"
+  },
+  "罐头": {
+    "file": "罐头.svg",
+    "src": "images/HSK_3.0/level7/罐头.svg",
+    "caption": "đồ hộp, thức ăn đóng hộp"
+  },
+  "惯性": {
+    "file": "惯性.svg",
+    "src": "images/HSK_3.0/level7/惯性.svg",
+    "caption": "quán tính"
+  },
+  "光彩": {
+    "file": "光彩.svg",
+    "src": "images/HSK_3.0/level7/光彩.svg",
+    "caption": "vẻ vang, rạng rỡ, hào quang"
+  },
+  "光顾": {
+    "file": "光顾.svg",
+    "src": "images/HSK_3.0/level7/光顾.svg",
+    "caption": "ghé thăm, quang lâm, ủng hộ mua hàng"
+  },
+  "光环": {
+    "file": "光环.svg",
+    "src": "images/HSK_3.0/level7/光环.svg",
+    "caption": "ánh hào quang, vầng hào quang"
+  },
+  "光辉": {
+    "file": "光辉.svg",
+    "src": "images/HSK_3.0/level7/光辉.svg",
+    "caption": "ngời sáng, rực rỡ, vẻ vang"
+  },
+  "光缆": {
+    "file": "光缆.svg",
+    "src": "images/HSK_3.0/level7/光缆.svg",
+    "caption": "cáp quang"
+  },
+  "光芒": {
+    "file": "光芒.svg",
+    "src": "images/HSK_3.0/level7/光芒.svg",
+    "caption": "tia sáng rực rỡ, ánh sáng"
+  },
+  "光明磊落": {
+    "file": "光明磊落.svg",
+    "src": "images/HSK_3.0/level7/光明磊落.svg",
+    "caption": "quang minh lỗi lạc, đàng hoàng trong sáng"
+  },
+  "光荣": {
+    "file": "光荣.svg",
+    "src": "images/HSK_3.0/level7/光荣.svg",
+    "caption": "quang vinh, vinh quang"
+  },
+  "光泽": {
+    "file": "光泽.svg",
+    "src": "images/HSK_3.0/level7/光泽.svg",
+    "caption": "nước bóng, độ bóng, ánh bóng"
+  },
+  "广义": {
+    "file": "广义.svg",
+    "src": "images/HSK_3.0/level7/广义.svg",
+    "caption": "nghĩa rộng"
+  },
+  "龟": {
+    "file": "龟.svg",
+    "src": "images/HSK_3.0/level7/龟.svg",
+    "caption": "rùa, con rùa"
+  },
+  "瑰宝": {
+    "file": "瑰宝.svg",
+    "src": "images/HSK_3.0/level7/瑰宝.svg",
+    "caption": "bảo vật quý báu, tinh hoa bảo vật"
+  },
+  "规格": {
+    "file": "规格.svg",
+    "src": "images/HSK_3.0/level7/规格.svg",
+    "caption": "quy cách, tiêu chuẩn kỹ thuật"
+  },
+  "归根到底": {
+    "file": "归根到底.svg",
+    "src": "images/HSK_3.0/level7/归根到底.svg",
+    "caption": "suy cho cùng, rốt cuộc"
+  },
+  "归结": {
+    "file": "归结.svg",
+    "src": "images/HSK_3.0/level7/归结.svg",
+    "caption": "quy về, tóm gọn lại"
+  },
+  "归来": {
+    "file": "归来.svg",
+    "src": "images/HSK_3.0/level7/归来.svg",
+    "caption": "trở về, quay về"
+  },
+  "闺女": {
+    "file": "闺女.svg",
+    "src": "images/HSK_3.0/level7/闺女.svg",
+    "caption": "con gái, con gái ruột"
+  },
+  "归属": {
+    "file": "归属.svg",
+    "src": "images/HSK_3.0/level7/归属.svg",
+    "caption": "thuộc về, quyền sở hữu"
+  },
+  "归于": {
+    "file": "归于.svg",
+    "src": "images/HSK_3.0/level7/归于.svg",
+    "caption": "quy về, dồn về, tan biến vào"
+  },
+  "诡计": {
+    "file": "诡计.svg",
+    "src": "images/HSK_3.0/level7/诡计.svg",
+    "caption": "quỷ kế, mưu ma chước quỷ"
+  },
+  "桂花": {
+    "file": "桂花.svg",
+    "src": "images/HSK_3.0/level7/桂花.svg",
+    "caption": "hoa quế"
+  },
+  "贵族": {
+    "file": "贵族.svg",
+    "src": "images/HSK_3.0/level7/贵族.svg",
+    "caption": "quý tộc"
+  },
+  "滚动": {
+    "file": "滚动.svg",
+    "src": "images/HSK_3.0/level7/滚动.svg",
+    "caption": "lăn, cuộn, xoay vần"
+  },
+  "国防": {
+    "file": "国防.svg",
+    "src": "images/HSK_3.0/level7/国防.svg",
+    "caption": "quốc phòng"
+  },
+  "国徽": {
+    "file": "国徽.svg",
+    "src": "images/HSK_3.0/level7/国徽.svg",
+    "caption": "quốc huy"
+  },
+  "国土": {
+    "file": "国土.svg",
+    "src": "images/HSK_3.0/level7/国土.svg",
+    "caption": "lãnh thổ quốc gia, bờ cõi"
+  },
+  "国务院": {
+    "file": "国务院.svg",
+    "src": "images/HSK_3.0/level7/国务院.svg",
+    "caption": "quốc vụ viện"
   }
 };
 
