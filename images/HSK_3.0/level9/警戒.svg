@@ -1,0 +1,54 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle Background Grid/Radar Lines for Border Context -->
+  <circle cx="120" cy="120" r="85" fill="none" stroke="#2A303C" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <circle cx="120" cy="120" r="55" fill="none" stroke="#2A303C" stroke-width="1"/>
+  <line x1="120" y1="20" x2="120" y2="220" stroke="#2A303C" stroke-width="1"/>
+  <line x1="20" y1="120" x2="220" y2="120" stroke="#2A303C" stroke-width="1"/>
+  
+  <!-- Watchtower Structure (Physical Object / Noun representation for Border Guard / Patrol station) -->
+  <!-- Base mount -->
+  <path d="M95 195 L145 195 L135 150 L105 150 Z" fill="#2C3545"/>
+  <!-- Tower legs / truss -->
+  <line x1="105" y1="150" x2="90" y2="95" stroke="#3E4A5E" stroke-width="4" stroke-linecap="round"/>
+  <line x1="135" y1="150" x2="150" y2="95" stroke="#3E4A5E" stroke-width="4" stroke-linecap="round"/>
+  <line x1="97" y1="125" x2="143" y2="125" stroke="#3E4A5E" stroke-width="3"/>
+  <line x1="101" y1="138" x2="139" y2="138" stroke="#3E4A5E" stroke-width="2"/>
+  
+  <!-- Watchtower Cabin -->
+  <rect x="85" y="80" width="70" height="25" rx="3" fill="#364156"/>
+  <polygon points="80,80 120,60 160,80" fill="#E65100"/>
+  
+  <!-- Window / Observation slit with bright alertness glow -->
+  <rect x="100" y="87" width="40" height="10" rx="2" fill="#FFA726"/>
+  
+  <!-- Searchlight casting beam (Vigilance / Scanning) -->
+  <path d="M120 92 L190 40 L195 55 Z" fill="url(#beamGradient)" opacity="0.4"/>
+  <circle cx="190" cy="48" r="4" fill="#FFB74D"/>
+
+  <!-- Foreground Border Post / Barrier -->
+  <rect x="50" y="160" width="12" height="50" rx="2" fill="#E0E6ED"/>
+  <!-- Red and White Stripe Pattern on Border Post -->
+  <path d="M50 170 L62 165 L62 175 L50 180 Z" fill="#E53935"/>
+  <path d="M50 190 L62 185 L62 195 L50 200 Z" fill="#E53935"/>
+  
+  <!-- Security Camera mounted on pole (Modern watch element) -->
+  <rect x="165" y="100" width="18" height="10" rx="3" transform="rotate(-15 165 100)" fill="#E0E6ED"/>
+  <line x1="174" y1="105" x2="185" y2="125" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="185" cy="125" r="3" fill="#64748B"/>
+  <!-- Camera lens glow -->
+  <circle cx="163" cy="98" r="2" fill="#FF5722"/>
+
+  <!-- High Alert Focus Indicator (Gold/Orange accent ring) -->
+  <path d="M100 60 A 30 30 0 0 1 140 60" fill="none" stroke="#FF9800" stroke-width="2" stroke-dasharray="3 3"/>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="beamGradient" x1="120" y1="92" x2="190" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFB74D" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FF9800" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>

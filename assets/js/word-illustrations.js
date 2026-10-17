@@ -42966,6 +42966,261 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "精神病.svg",
     "src": "images/HSK_3.0/level7/精神病.svg",
     "caption": "bệnh tâm thần, rối loạn tâm thần"
+  },
+  "经受": {
+    "file": "经受.svg",
+    "src": "images/HSK_3.0/level7/经受.svg",
+    "caption": "chịu đựng, trải qua thử thách"
+  },
+  "精髓": {
+    "file": "精髓.svg",
+    "src": "images/HSK_3.0/level7/精髓.svg",
+    "caption": "tinh hoa, tinh túy, cốt lõi"
+  },
+  "惊叹": {
+    "file": "惊叹.svg",
+    "src": "images/HSK_3.0/level7/惊叹.svg",
+    "caption": "trầm trồ thán phục, kinh ngạc thán phục"
+  },
+  "惊天动地": {
+    "file": "惊天动地.svg",
+    "src": "images/HSK_3.0/level7/惊天动地.svg",
+    "caption": "kinh thiên động địa, chấn động trời đất, vang dội"
+  },
+  "精细": {
+    "file": "精细.svg",
+    "src": "images/HSK_3.0/level7/精细.svg",
+    "caption": "tỉ mỉ tinh vi, tinh xảo chu đáo"
+  },
+  "惊吓": {
+    "file": "惊吓.svg",
+    "src": "images/HSK_3.0/level7/惊吓.svg",
+    "caption": "kinh hãi, sợ hãi, giật mình khiếp đảm"
+  },
+  "惊险": {
+    "file": "惊险.svg",
+    "src": "images/HSK_3.0/level7/惊险.svg",
+    "caption": "thót tim, nguy hiểm kịch tính, gay cấn"
+  },
+  "惊心动魄": {
+    "file": "惊心动魄.svg",
+    "src": "images/HSK_3.0/level7/惊心动魄.svg",
+    "caption": "nghẹt thở, thót tim, kinh tâm động phách"
+  },
+  "晶莹": {
+    "file": "晶莹.svg",
+    "src": "images/HSK_3.0/level7/晶莹.svg",
+    "caption": "trong suốt long lanh, lóng lánh"
+  },
+  "精英": {
+    "file": "精英.svg",
+    "src": "images/HSK_3.0/level7/精英.svg",
+    "caption": "tinh anh, tầng lớp ưu tú, tinh hoa"
+  },
+  "精湛": {
+    "file": "精湛.svg",
+    "src": "images/HSK_3.0/level7/精湛.svg",
+    "caption": "tuyệt vời"
+  },
+  "警报": {
+    "file": "警报.svg",
+    "src": "images/HSK_3.0/level7/警报.svg",
+    "caption": "báo động, cảnh báo"
+  },
+  "井底之蛙": {
+    "file": "井底之蛙.svg",
+    "src": "images/HSK_3.0/level7/井底之蛙.svg",
+    "caption": "ếch ngồi đáy giếng, tầm nhìn hạn hẹp"
+  },
+  "警戒": {
+    "file": "警戒.svg",
+    "src": "images/HSK_3.0/level7/警戒.svg",
+    "caption": "cảnh giới, canh phòng, đề phòng cảnh giác"
+  },
+  "警犬": {
+    "file": "警犬.svg",
+    "src": "images/HSK_3.0/level7/警犬.svg",
+    "caption": "chó cảnh sát"
+  },
+  "警示": {
+    "file": "警示.svg",
+    "src": "images/HSK_3.0/level7/警示.svg",
+    "caption": "nhắc nhở cảnh báo, cảnh tỉnh"
+  },
+  "警惕": {
+    "file": "警惕.svg",
+    "src": "images/HSK_3.0/level7/警惕.svg",
+    "caption": "cảnh giác, đề cao cảnh giác"
+  },
+  "警钟": {
+    "file": "警钟.svg",
+    "src": "images/HSK_3.0/level7/警钟.svg",
+    "caption": "chuông cảnh tỉnh, hồi chuông cảnh báo"
+  },
+  "竟": {
+    "file": "竟.svg",
+    "src": "images/HSK_3.0/level7/竟.svg",
+    "caption": "lại, mà lại, đến nỗi"
+  },
+  "敬": {
+    "file": "敬.svg",
+    "src": "images/HSK_3.0/level7/敬.svg",
+    "caption": "mời (trà, rượu); kính trọng, kính cẩn"
+  },
+  "敬爱": {
+    "file": "敬爱.svg",
+    "src": "images/HSK_3.0/level7/敬爱.svg",
+    "caption": "kính yêu, kính trọng yêu mến"
+  },
+  "敬而远之": {
+    "file": "敬而远之.svg",
+    "src": "images/HSK_3.0/level7/敬而远之.svg",
+    "caption": "kính nhi viễn chi, cung kính nhưng giữ khoảng cách xa"
+  },
+  "境地": {
+    "file": "境地.svg",
+    "src": "images/HSK_3.0/level7/境地.svg",
+    "caption": "hoàn cảnh, cảnh ngộ, tình thế"
+  },
+  "净化": {
+    "file": "净化.svg",
+    "src": "images/HSK_3.0/level7/净化.svg",
+    "caption": "thanh lọc"
+  },
+  "竞技": {
+    "file": "竞技.svg",
+    "src": "images/HSK_3.0/level7/竞技.svg",
+    "caption": "thi đấu thể thao, tranh tài"
+  },
+  "敬礼": {
+    "file": "敬礼.svg",
+    "src": "images/HSK_3.0/level7/敬礼.svg",
+    "caption": "chào nghiêm trang, kính cẩn chào"
+  },
+  "境内": {
+    "file": "境内.svg",
+    "src": "images/HSK_3.0/level7/境内.svg",
+    "caption": "trong địa phận, trong lãnh thổ, trong nước"
+  },
+  "敬请": {
+    "file": "敬请.svg",
+    "src": "images/HSK_3.0/level7/敬请.svg",
+    "caption": "kính mời, trân trọng kính mời"
+  },
+  "境外": {
+    "file": "境外.svg",
+    "src": "images/HSK_3.0/level7/境外.svg",
+    "caption": "ngoài lãnh thổ, ngoài biên giới, nước ngoài"
+  },
+  "敬畏": {
+    "file": "敬畏.svg",
+    "src": "images/HSK_3.0/level7/敬畏.svg",
+    "caption": "kính sợ, tôn kính nể sợ"
+  },
+  "竞相": {
+    "file": "竞相.svg",
+    "src": "images/HSK_3.0/level7/竞相.svg",
+    "caption": "tranh nhau, đua nhau, tranh đua"
+  },
+  "敬业": {
+    "file": "敬业.svg",
+    "src": "images/HSK_3.0/level7/敬业.svg",
+    "caption": "tận tụy với công việc, kính nghiệp"
+  },
+  "敬意": {
+    "file": "敬意.svg",
+    "src": "images/HSK_3.0/level7/敬意.svg",
+    "caption": "lòng kính trọng, sự tôn kính"
+  },
+  "境遇": {
+    "file": "境遇.svg",
+    "src": "images/HSK_3.0/level7/境遇.svg",
+    "caption": "cảnh ngộ, hoàn cảnh sống"
+  },
+  "径直": {
+    "file": "径直.svg",
+    "src": "images/HSK_3.0/level7/径直.svg",
+    "caption": "đi thẳng, thẳng một mạch"
+  },
+  "静止": {
+    "file": "静止.svg",
+    "src": "images/HSK_3.0/level7/静止.svg",
+    "caption": "đứng yên, tĩnh lặng, bất động"
+  },
+  "窘迫": {
+    "file": "窘迫.svg",
+    "src": "images/HSK_3.0/level7/窘迫.svg",
+    "caption": "quẫn bách, ngặt nghèo, lúng túng khó xử"
+  },
+  "揪": {
+    "file": "揪.svg",
+    "src": "images/HSK_3.0/level7/揪.svg",
+    "caption": "túm lấy, giật; kéo, nhổ"
+  },
+  "纠缠": {
+    "file": "纠缠.svg",
+    "src": "images/HSK_3.0/level7/纠缠.svg",
+    "caption": "dây dưa, quấn lấy, vướng bận lằng nhằng"
+  },
+  "酒楼": {
+    "file": "酒楼.svg",
+    "src": "images/HSK_3.0/level7/酒楼.svg",
+    "caption": "nhà hàng, tửu lầu"
+  },
+  "久违": {
+    "file": "久违.svg",
+    "src": "images/HSK_3.0/level7/久违.svg",
+    "caption": "đã lâu không gặp, lâu ngày vắng bóng"
+  },
+  "久仰": {
+    "file": "久仰.svg",
+    "src": "images/HSK_3.0/level7/久仰.svg",
+    "caption": "ngưỡng mộ đã lâu, hân hạnh được biết"
+  },
+  "就餐": {
+    "file": "就餐.svg",
+    "src": "images/HSK_3.0/level7/就餐.svg",
+    "caption": "dùng bữa, ăn cơm"
+  },
+  "就此": {
+    "file": "就此.svg",
+    "src": "images/HSK_3.0/level7/就此.svg",
+    "caption": "từ đây, dừng lại ở đây, như thế này"
+  },
+  "就地": {
+    "file": "就地.svg",
+    "src": "images/HSK_3.0/level7/就地.svg",
+    "caption": "ngay tại chỗ, tại chỗ"
+  },
+  "就近": {
+    "file": "就近.svg",
+    "src": "images/HSK_3.0/level7/就近.svg",
+    "caption": "ở gần, tiện gần, gần nhất"
+  },
+  "就任": {
+    "file": "就任.svg",
+    "src": "images/HSK_3.0/level7/就任.svg",
+    "caption": "nhậm chức, nhận nhiệm vụ"
+  },
+  "救死扶伤": {
+    "file": "救死扶伤.svg",
+    "src": "images/HSK_3.0/level7/救死扶伤.svg",
+    "caption": "cứu chữa người bệnh, cứu tử phò thương"
+  },
+  "就绪": {
+    "file": "就绪.svg",
+    "src": "images/HSK_3.0/level7/就绪.svg",
+    "caption": "chuẩn bị sẵn sàng, vào vị trí, đâu vào đấy"
+  },
+  "就诊": {
+    "file": "就诊.svg",
+    "src": "images/HSK_3.0/level7/就诊.svg",
+    "caption": "đến khám, đi khám bệnh"
+  },
+  "救治": {
+    "file": "救治.svg",
+    "src": "images/HSK_3.0/level7/救治.svg",
+    "caption": "cứu chữa, cấp cứu điều trị"
   }
 };
 
