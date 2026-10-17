@@ -46822,10 +46822,255 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/强加.svg",
     "caption": "áp đặt; cưỡng ép"
   },
+  "强劲": {
+    "file": "强劲.svg",
+    "src": "images/HSK_3.0/level7/强劲.svg",
+    "caption": "mạnh mẽ"
+  },
   "强势": {
     "file": "强势.svg",
     "src": "images/HSK_3.0/level7/强势.svg",
     "caption": "thế mạnh; mạnh mẽ; vượt trội"
+  },
+  "强项": {
+    "file": "强项.svg",
+    "src": "images/HSK_3.0/level7/强项.svg",
+    "caption": "thế mạnh; sở trường"
+  },
+  "强行": {
+    "file": "强行.svg",
+    "src": "images/HSK_3.0/level7/强行.svg",
+    "caption": "dùng vũ lực; cưỡng chế; ép buộc"
+  },
+  "强硬": {
+    "file": "强硬.svg",
+    "src": "images/HSK_3.0/level7/强硬.svg",
+    "caption": "cứng rắn; kiên quyết không nhượng bộ"
+  },
+  "强占": {
+    "file": "强占.svg",
+    "src": "images/HSK_3.0/level7/强占.svg",
+    "caption": "chiếm đoạt; cưỡng chiếm"
+  },
+  "抢夺": {
+    "file": "抢夺.svg",
+    "src": "images/HSK_3.0/level7/抢夺.svg",
+    "caption": "tranh cướp; cướp giật; giành giật"
+  },
+  "抢眼": {
+    "file": "抢眼.svg",
+    "src": "images/HSK_3.0/level7/抢眼.svg",
+    "caption": "bắt mắt; nổi bật"
+  },
+  "敲诈": {
+    "file": "敲诈.svg",
+    "src": "images/HSK_3.0/level7/敲诈.svg",
+    "caption": "tống tiền; đe dọa tống tiền"
+  },
+  "憔悴": {
+    "file": "憔悴.svg",
+    "src": "images/HSK_3.0/level7/憔悴.svg",
+    "caption": "tiều tụy; hốc hác; phờ phạc"
+  },
+  "巧合": {
+    "file": "巧合.svg",
+    "src": "images/HSK_3.0/level7/巧合.svg",
+    "caption": "trùng hợp; ngẫu nhiên trùng hợp"
+  },
+  "撬": {
+    "file": "撬.svg",
+    "src": "images/HSK_3.0/level7/撬.svg",
+    "caption": "bẩy; nạy; cạy"
+  },
+  "切除": {
+    "file": "切除.svg",
+    "src": "images/HSK_3.0/level7/切除.svg",
+    "caption": "cắt bỏ; phẫu thuật cắt bỏ"
+  },
+  "切磋": {
+    "file": "切磋.svg",
+    "src": "images/HSK_3.0/level7/切磋.svg",
+    "caption": "trao đổi học hỏi; so tài bàn bạc"
+  },
+  "切换": {
+    "file": "切换.svg",
+    "src": "images/HSK_3.0/level7/切换.svg",
+    "caption": "chuyển đổi; hoán đổi"
+  },
+  "切忌": {
+    "file": "切忌.svg",
+    "src": "images/HSK_3.0/level7/切忌.svg",
+    "caption": "tối kỵ; hết sức kiêng kỵ"
+  },
+  "窃取": {
+    "file": "窃取.svg",
+    "src": "images/HSK_3.0/level7/窃取.svg",
+    "caption": "đánh cắp; trộm cắp"
+  },
+  "切身": {
+    "file": "切身.svg",
+    "src": "images/HSK_3.0/level7/切身.svg",
+    "caption": "thiết thân; gắn bó sát sườn"
+  },
+  "惬意": {
+    "file": "惬意.svg",
+    "src": "images/HSK_3.0/level7/惬意.svg",
+    "caption": "thư thái; thoải mái dễ chịu"
+  },
+  "侵害": {
+    "file": "侵害.svg",
+    "src": "images/HSK_3.0/level7/侵害.svg",
+    "caption": "xâm hại; xâm phạm gây tổn hại"
+  },
+  "亲和力": {
+    "file": "亲和力.svg",
+    "src": "images/HSK_3.0/level7/亲和力.svg",
+    "caption": "sức hút gần gũi; sự thân thiện"
+  },
+  "亲近": {
+    "file": "亲近.svg",
+    "src": "images/HSK_3.0/level7/亲近.svg",
+    "caption": "gần gũi; hòa mình; thân thiết"
+  },
+  "侵权": {
+    "file": "侵权.svg",
+    "src": "images/HSK_3.0/level7/侵权.svg",
+    "caption": "xâm phạm bản quyền; vi phạm quyền lợi"
+  },
+  "亲身": {
+    "file": "亲身.svg",
+    "src": "images/HSK_3.0/level7/亲身.svg",
+    "caption": "đích thân; trực tiếp"
+  },
+  "亲生": {
+    "file": "亲生.svg",
+    "src": "images/HSK_3.0/level7/亲生.svg",
+    "caption": "ruột thịt; đẻ ra"
+  },
+  "亲手": {
+    "file": "亲手.svg",
+    "src": "images/HSK_3.0/level7/亲手.svg",
+    "caption": "bằng chính đôi tay của mình"
+  },
+  "亲眼": {
+    "file": "亲眼.svg",
+    "src": "images/HSK_3.0/level7/亲眼.svg",
+    "caption": "tận mắt; mắt thấy"
+  },
+  "侵占": {
+    "file": "侵占.svg",
+    "src": "images/HSK_3.0/level7/侵占.svg",
+    "caption": "lấn chiếm; chiếm đoạt trái phép"
+  },
+  "勤工俭学": {
+    "file": "勤工俭学.svg",
+    "src": "images/HSK_3.0/level7/勤工俭学.svg",
+    "caption": "vừa làm vừa học; kiếm tiền trang trải học phí"
+  },
+  "勤快": {
+    "file": "勤快.svg",
+    "src": "images/HSK_3.0/level7/勤快.svg",
+    "caption": "chăm chỉ; siêng năng"
+  },
+  "琴棋书画": {
+    "file": "琴棋书画.svg",
+    "src": "images/HSK_3.0/level7/琴棋书画.svg",
+    "caption": "cầm kỳ thi họa"
+  },
+  "寝室": {
+    "file": "寝室.svg",
+    "src": "images/HSK_3.0/level7/寝室.svg",
+    "caption": "phòng ngủ; ký túc xá"
+  },
+  "轻而易举": {
+    "file": "轻而易举.svg",
+    "src": "images/HSK_3.0/level7/轻而易举.svg",
+    "caption": "dễ như trở bàn tay; dễ dàng"
+  },
+  "清脆": {
+    "file": "清脆.svg",
+    "src": "images/HSK_3.0/level7/清脆.svg",
+    "caption": "trong trẻo; giòn giã"
+  },
+  "清单": {
+    "file": "清单.svg",
+    "src": "images/HSK_3.0/level7/清单.svg",
+    "caption": "bảng kê; danh sách; danh mục chi tiết"
+  },
+  "倾倒": {
+    "file": "倾倒.svg",
+    "src": "images/HSK_3.0/level7/倾倒.svg",
+    "caption": "đổ; xả; trút rác"
+  },
+  "倾家荡产": {
+    "file": "倾家荡产.svg",
+    "src": "images/HSK_3.0/level7/倾家荡产.svg",
+    "caption": "tán gia bại sản; khánh kiệt gia tài"
+  },
+  "清静": {
+    "file": "清静.svg",
+    "src": "images/HSK_3.0/level7/清静.svg",
+    "caption": "thanh tịnh; yên tĩnh"
+  },
+  "青睐": {
+    "file": "青睐.svg",
+    "src": "images/HSK_3.0/level7/青睐.svg",
+    "caption": "ưa chuộng; yêu thích; để mắt tới"
+  },
+  "清凉": {
+    "file": "清凉.svg",
+    "src": "images/HSK_3.0/level7/清凉.svg",
+    "caption": "mát rượi; thanh mát; mát mẻ"
+  },
+  "轻蔑": {
+    "file": "轻蔑.svg",
+    "src": "images/HSK_3.0/level7/轻蔑.svg",
+    "caption": "khinh miệt; coi thường; miệt thị"
+  },
+  "倾诉": {
+    "file": "倾诉.svg",
+    "src": "images/HSK_3.0/level7/倾诉.svg",
+    "caption": "giãi bày; trút bầu tâm sự"
+  },
+  "青铜器": {
+    "file": "青铜器.svg",
+    "src": "images/HSK_3.0/level7/青铜器.svg",
+    "caption": "đồ đồng cổ; đồ đồng xanh"
+  },
+  "轻微": {
+    "file": "轻微.svg",
+    "src": "images/HSK_3.0/level7/轻微.svg",
+    "caption": "mức độ nhẹ; nhẹ"
+  },
+  "倾销": {
+    "file": "倾销.svg",
+    "src": "images/HSK_3.0/level7/倾销.svg",
+    "caption": "bán phá giá"
+  },
+  "清新": {
+    "file": "清新.svg",
+    "src": "images/HSK_3.0/level7/清新.svg",
+    "caption": "trong lành; tươi mát"
+  },
+  "轻型": {
+    "file": "轻型.svg",
+    "src": "images/HSK_3.0/level7/轻型.svg",
+    "caption": "hạng nhẹ; loại nhẹ"
+  },
+  "情怀": {
+    "file": "情怀.svg",
+    "src": "images/HSK_3.0/level7/情怀.svg",
+    "caption": "tấm lòng; tình cảm sâu sắc"
+  },
+  "情结": {
+    "file": "情结.svg",
+    "src": "images/HSK_3.0/level7/情结.svg",
+    "caption": "mối gắn kết sâu nặng; nỗi niềm sâu lắng"
+  },
+  "情侣": {
+    "file": "情侣.svg",
+    "src": "images/HSK_3.0/level7/情侣.svg",
+    "caption": "cặp đôi yêu nhau; đôi tình nhân"
   }
 };
 
