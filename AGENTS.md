@@ -15,6 +15,34 @@
 - Keep commits small, focused, and meaningful.
 - Use clear conventional commit messages (e.g. `feat: ...`, `fix: ...`).
 
+## Semantic Versioning (SemVer) & Release Rules
+
+Bắt buộc tuân thủ chuẩn phiên bản **`x.x.x` (Semantic Versioning)** cho mọi lần phát hành/cập nhật:
+- Định dạng: `MAJOR.MINOR.PATCH` (gắn git tag `vX.Y.Z`).
+  - **MAJOR (x.0.0)**: Phá vỡ tương thích ngược (breaking changes), tái cấu trúc kiến trúc cốt lõi hoặc đại tu giao diện hoàn toàn.
+  - **MINOR (0.x.0)**: Thêm tính năng mới, bài tập/màn hình/công cụ mới mà không phá vỡ tính năng cũ (`feat: ...`).
+  - **PATCH (0.0.x)**: Sửa lỗi (`fix: ...`), cải thiện hiệu năng (`perf: ...`), tinh chỉnh UI/UX nhỏ hoặc sửa audio (`fix`, `style`, `refactor`).
+
+### Đồng bộ phiên bản khi phát hành
+Mỗi lần release, số phiên bản `x.x.x` phải được cập nhật đồng bộ ở các vị trí:
+1. `VERSION`: chứa chuỗi phiên bản `x.x.x`.
+2. `package.json`: trường `"version": "x.x.x"`.
+3. `sw.js`: `const APP_VERSION = 'x.x.x'; const ASSET_VERSION = APP_VERSION;`.
+4. `index.html`: `<span class="footer-version" title="Phiên bản ứng dụng">vx.x.x</span>` ở footer.
+> Tip: Chạy script `python3 tools/bump_version.py [patch|minor|major|X.Y.Z]` để tự động cập nhật đồng bộ tất cả các vị trí trên.
+
+### Quy trình đánh dấu Release & Git Tag
+Sau khi kiểm tra và commit lên `main`:
+1. Tạo annotated git tag:
+   ```bash
+   git tag -a vX.Y.Z -m "Release vX.Y.Z: <tóm tắt nội dung release>"
+   ```
+2. Đẩy commit và git tag lên GitHub:
+   ```bash
+   git push origin HEAD:main
+   git push origin vX.Y.Z
+   ```
+
 ## Dangerous Git Commands
 
 Before running any of these commands, stop and ask me first:

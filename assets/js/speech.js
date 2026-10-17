@@ -103,42 +103,14 @@ function speakText(text, button, rate = SPEECH_RATE, audioUrl = null) {
 
   activeSpeechButton = button;
 
-  const supported = checkSpeechSupported();
-
-  if (supported) {
-    const started = callSpeakChinese(text, {
-      rate: rate,
-      onStart: () => {
-        if (requestId !== speechRequestId) return;
-        setSpeechButtonState(button, true, text);
-      },
-      onEnd: () => {
-        if (requestId !== speechRequestId) return;
-        setSpeechButtonState(button, false);
-      },
-      onError: () => {
-        if (requestId !== speechRequestId) return;
-        if (audioUrl) {
-          playPrebuiltAudio(text, button, rate, audioUrl, requestId, hint, prevHint);
-          return;
-        }
-        setSpeechButtonState(button, false);
-        showSpeechHint(hint, 'Không thể phát âm trên trình duyệt này', prevHint);
-      }
-    });
-
-    if (started) return;
-  }
-
-  // Fallback to prebuilt audio if available when Web Speech is unsupported or couldn't start
+  // PRIORITY 1: Prebuilt studio-grade audio (Gemini Flash TTS / CosyVoice)
   if (audioUrl) {
     playPrebuiltAudio(text, button, rate, audioUrl, requestId, hint, prevHint);
     return;
   }
 
-  // Graceful fallback when speech is completely unavailable
-  setSpeechButtonState(button, false);
-  showSpeechHint(hint, 'Trình duyệt này không hỗ trợ phát âm (Web Speech API), hãy mở bằng Chrome hoặc Safari', prevHint);
+  // PRIORITY 2: Fallback to Web Speech API
+  speakWithWebSpeech(text, button, rate, requestId, hint, prevHint);
 }
 
 function playPrebuiltAudio(text, button, rate, audioUrl, requestId, hint, prevHint) {

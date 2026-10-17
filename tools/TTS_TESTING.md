@@ -1,7 +1,53 @@
-# HSK1 prebuilt-audio test
+# HSK Prebuilt-Audio Generation Guide
 
-The published HSK1 clips use `FunAudioLLM/Fun-CosyVoice3-0.5B-2512`. The older
-Qwen generator remains available for comparison, but it is not the production engine.
+## Frontier Gemini Flash TTS Workflow (HSK4 2.0 & All Levels)
+
+The Gemini Frontier Flash TTS generator (`tools/generate_hsk_audio_gemini.py`) uses Google's latest `gemini-3.8-flash-tts` model to produce studio-grade Mandarin audio files with natural prosody and accurate tones. Audio is normalized and encoded to 24kHz MP3 via `ffmpeg`, and an atomic `manifest.json` is generated for the web app.
+
+### Requirements
+
+- Python 3.10+ (Standard library only; no extra pip packages required)
+- `ffmpeg` installed on the system (e.g. `brew install ffmpeg`)
+- Google AI API key (placed in `.api_key`, `GEMINI_API_KEY`, or passed via `--api-key`)
+
+### Dry Run (Validate planned tasks)
+
+```bash
+python3 tools/generate_hsk_audio_gemini.py --level hsk4 --dry-run
+```
+
+### Generation Examples
+
+Generate the first 10 rows of HSK4 on Free Tier (3 RPM with automatic 20.5s rate-limit delay):
+
+```bash
+python3 tools/generate_hsk_audio_gemini.py --level hsk4 --limit 10
+```
+
+Generate a specific batch of IDs with a custom voice (e.g. `Aoede`, `Kore`, `Puck`):
+
+```bash
+python3 tools/generate_hsk_audio_gemini.py --level hsk4 --ids 1,2,3,4,5 --voice Aoede
+```
+
+Generate using a paid / Tier 1 key with fast throughput (0.5s delay):
+
+```bash
+python3 tools/generate_hsk_audio_gemini.py --level hsk4 --fast
+```
+
+The script outputs to:
+```text
+database/prebuilt_audio/hsk4/
+├── manifest.json
+├── words/0001.mp3
+└── examples/0001.mp3
+```
+
+---
+
+## CosyVoice3 HSK1 Prebuilt Audio
+
 
 Install CosyVoice3 from its official repository in a separate Python 3.10 environment.
 Large source and model directories stay outside this repository:

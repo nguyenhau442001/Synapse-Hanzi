@@ -456,8 +456,12 @@ class TestAssetAndPwaSynchronization(unittest.TestCase):
     def test_pwa_version_alignment(self):
         """sw.js ASSET_VERSION must be present in index.html stylesheet version strings."""
         match = re.search(r"const\s+ASSET_VERSION\s*=\s*['\"]([^'\"]+)['\"];", self.sw_js)
-        self.assertIsNotNone(match, "Could not find ASSET_VERSION in sw.js")
-        version = match.group(1)
+        if match:
+            version = match.group(1)
+        else:
+            app_match = re.search(r"const\s+APP_VERSION\s*=\s*['\"]([^'\"]+)['\"];", self.sw_js)
+            self.assertIsNotNone(app_match, "Could not find APP_VERSION or literal ASSET_VERSION in sw.js")
+            version = app_match.group(1)
         self.assertIn(version, self.index_html,
                       f"sw.js version '{version}' is not referenced in index.html cache busters")
 
@@ -588,6 +592,152 @@ class TestFlashcardIllustrationIntegration(unittest.TestCase):
         self.assertIn("shouldBeFlipped", self.flashcard_js)
         self.assertIn("c.classList.add('is-flipped')", self.flashcard_js)
 
+    def test_flashcard_meta_badges_row_omits_redundant_hsk_level(self):
+        """Flashcard meta row should not display redundant HSK level between word type and Sino-Vietnamese."""
+        self.assertNotIn('<span class="level-badge" id="levelBadge"', self.flashcard_js,
+                         "levelBadge must not be rendered in metaBadgesRow to avoid redundant level display")
+
+    def test_rating_buttons_do_not_render_shortcut_numbers(self):
+        """Rating buttons must not render shortcut numbers ([1], [2]) in the UI."""
+        self.assertNotIn('class="rating-shortcut"', self.flashcard_js)
+
+
+class TestLearningProgressNavigator(unittest.TestCase):
+    """Test suite for the redesigned Learning Progress Navigator in Synapse Hanzi."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.workstation_css = WORKSTATION_CSS.read_text(encoding="utf-8")
+        cls.flashcard_js = (REPO_ROOT / "assets" / "js" / "flashcard.js").read_text(encoding="utf-8")
+
+    def test_navigator_semantic_structure_rendered(self):
+        """renderFilters must construct the learning-progress-navigator component with header, bar, and 4 cards."""
+        self.assertIn("learning-progress-navigator", self.flashcard_js)
+        self.assertIn("progress-nav-header", self.flashcard_js)
+        self.assertIn("progress-nav-level-tag", self.flashcard_js)
+        self.assertIn("progress-nav-metric-main", self.flashcard_js)
+        self.assertIn("progress-nav-stats-breakdown", self.flashcard_js)
+        self.assertIn("progress-nav-bar", self.flashcard_js)
+        self.assertIn("progress-nav-track", self.flashcard_js)
+        self.assertIn("progress-nav-seg--known", self.flashcard_js)
+        self.assertIn("progress-nav-seg--unknown", self.flashcard_js)
+        self.assertIn("progress-nav-cards", self.flashcard_js)
+
+    def test_four_interactive_status_categories_present(self):
+        """All four categories (all, known, unknown, unseen) must be configured with correct Vietnamese labels."""
+        self.assertIn("key: 'all',", self.flashcard_js)
+        self.assertIn("label: 'Tất cả'", self.flashcard_js)
+        self.assertIn("key: 'known',", self.flashcard_js)
+        self.assertIn("label: 'Đã nhớ'", self.flashcard_js)
+        self.assertIn("key: 'unknown',", self.flashcard_js)
+        self.assertIn("label: 'Chưa nhớ'", self.flashcard_js)
+        self.assertIn("key: 'unseen',", self.flashcard_js)
+        self.assertIn("label: 'Chưa học'", self.flashcard_js)
+
+    def test_filter_index_reconciliation_logic(self):
+        """setFilter must reconcile current card index to preserve view when word exists in target filter."""
+        self.assertIn("currentWordId", self.flashcard_js)
+        self.assertIn("filteredOrder.findIndex", self.flashcard_js)
+
+    def test_desktop_four_column_grid_and_mobile_two_column_adaptation(self):
+        """Progress status cards must display 4 columns on desktop and adapt to 2 columns on mobile."""
+        self.assertIn("grid-template-columns: repeat(4, minmax(0, 1fr))", self.workstation_css)
+        mobile_blocks = extract_media_blocks(self.workstation_css, r"max-width:\s*640px")
+        combined = " ".join(b[1] for b in mobile_blocks)
+        self.assertIn("grid-template-columns: repeat(2, minmax(0, 1fr))", combined,
+                      "Mobile must adapt cards to a 2-column layout")
+
+    def test_status_cards_tactile_touch_target_height(self):
+        """Status cards must have comfortable touch targets >= 48px."""
+        self.assertIn(".progress-nav-card", self.workstation_css)
+        min_h_match = re.search(r"\.progress-nav-card\s*\{[^}]*min-height:\s*(\d+)px", self.workstation_css)
+        self.assertIsNotNone(min_h_match, "Status card min-height must be defined")
+        min_h = int(min_h_match.group(1))
+        self.assertGreaterEqual(min_h, 48, f"Card touch target height ({min_h}px) must be >= 48px")
+
+    def test_topbar_duplicate_progress_hidden_in_study_mode(self):
+        """Topbar progress bar must be hidden in flashcard study mode to prevent visual duplication."""
+        self.assertIn("body.flashcard-study-mode .study-topbar-progress", self.workstation_css)
+        match = re.search(r"body\.flashcard-study-mode\s+\.study-topbar-progress\s*\{([^}]+)\}", self.workstation_css)
+        self.assertIsNotNone(match)
+        self.assertIn("display: none !important", match.group(1))
+
+    def test_filter_cards_omit_redundant_selection_checkmark(self):
+        """Active filter cards must communicate selection via border/background without redundant corner checkmarks."""
+        self.assertNotIn("progress-nav-card-check", self.flashcard_js,
+                         "Redundant selection checkmark must be removed from progress-nav-card template")
+        self.assertNotIn(".progress-nav-card-check", self.workstation_css,
+                         "Obsolete progress-nav-card-check CSS rules must be removed")
+
+    def test_filter_cards_preserve_category_icons_and_rating_checkmark(self):
+        """Category icons (including check-circle for known) and review button checkmark must remain preserved."""
+        # Check-circle icon for 'known' filter category
+        self.assertIn("M22 11.08V12a10 10 0 1 1-5.93-9.14", self.flashcard_js)
+        # Polyline checkmark on review rating button
+        self.assertIn("polyline points=\"20 6 9 17 4 12\"", self.flashcard_js)
+
+    def test_filter_cards_active_styling_light_and_dark_themes(self):
+        """Active filter cards must retain clear border and background highlighting across light and dark themes."""
+        for filter_key in ("all", "known", "unknown", "unseen"):
+            self.assertIn(f".progress-nav-card--{filter_key}.is-active", self.workstation_css)
+            self.assertIn(f":root[data-theme=\"dark\"] .progress-nav-card--{filter_key}.is-active", self.workstation_css)
+        self.assertIn(".progress-nav-card:focus-visible", self.workstation_css)
+
+
+class TestFlashcardExperienceRefinements(unittest.TestCase):
+    """Test suite for the comprehensive visual and usability refinements in Synapse Hanzi Flashcard experience."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.workstation_css = WORKSTATION_CSS.read_text(encoding="utf-8")
+        cls.flashcard_css = FLASHCARD_CSS.read_text(encoding="utf-8")
+        cls.flashcard_js = (REPO_ROOT / "assets" / "js" / "flashcard.js").read_text(encoding="utf-8")
+        cls.progress_js = (REPO_ROOT / "assets" / "js" / "progress.js").read_text(encoding="utf-8")
+
+    def test_quiet_flip_prompt_affordance(self):
+        """getCardHintText must provide quiet affordance 'Chạm để lật · Space' and 'Chạm để lật'."""
+        self.assertIn("Chạm để lật · Space", self.flashcard_js)
+        self.assertIn("Chạm để lật", self.flashcard_js)
+
+    def test_tactile_navigation_markup_and_counter(self):
+        """buildCardArea must render tactile navigation controls [← Trước] [Current / Total] [Tiếp →]."""
+        self.assertIn('class="study-nav-controls"', self.flashcard_js)
+        self.assertIn('id="prevCardBtn"', self.flashcard_js)
+        self.assertIn('id="nextCardBtn"', self.flashcard_js)
+        self.assertIn('id="studyNavPosition"', self.flashcard_js)
+        self.assertIn('id="studyNavCurrent"', self.flashcard_js)
+        self.assertIn('id="studyNavTotal"', self.flashcard_js)
+
+    def test_arrow_key_grading_bug_resolved(self):
+        """Arrow keys in progress.js must navigate cards when unrevealed, and only grade when revealed."""
+        self.assertIn("isCardRevealed", self.progress_js)
+        self.assertIn("rateCurrentCard('good')", self.progress_js)
+        self.assertIn("rateCurrentCard('again')", self.progress_js)
+        self.assertIn("nextCard()", self.progress_js)
+        self.assertIn("prevCard()", self.progress_js)
+        self.assertIn("window.isCardRevealed = isCardRevealed", self.flashcard_js)
+
+    def test_desktop_layout_container_width(self):
+        """Desktop layout must expand main column comfortably for readability (870px / 912px)."""
+        self.assertTrue(any(w in self.workstation_css for w in ("max-width: 870px", "max-width: 820px")),
+                        "Desktop main column width should be expanded for readability")
+        self.assertTrue(any(w in self.workstation_css for w in ("max-width: 912px", "max-width: 860px")),
+                        "Desktop workstation width should be expanded for readability")
+
+    def test_cjk_fonts_placed_first(self):
+        """Chinese font family for .hanzi must place CJK fonts before system fonts."""
+        match = re.search(r"body\.flashcard-study-mode\s+\.hanzi\s*\{[^}]*font-family:\s*([^;]+);", self.workstation_css)
+        self.assertIsNotNone(match, ".hanzi font-family rule not found in workstation.css")
+        font_family = match.group(1).strip()
+        self.assertTrue(font_family.startswith('"PingFang SC"'),
+                        f".hanzi font-family ({font_family}) must start with CJK font 'PingFang SC'")
+
+    def test_nav_row_remains_visible_on_card_reveal(self):
+        """Study navigation controls must remain visible when card is flipped."""
+        self.assertNotIn(".card.is-flipped ~ #studyNavRow", self.workstation_css,
+                         "studyNavRow must not be forcibly hidden when card is flipped")
+
+
 
 def run_tests():
     suite = unittest.TestSuite()
@@ -606,6 +756,8 @@ def run_tests():
     suite.addTests(loader.loadTestsFromTestCase(TestHtmlStructureAndSemantics))
     suite.addTests(loader.loadTestsFromTestCase(TestTodayReviewZenMode))
     suite.addTests(loader.loadTestsFromTestCase(TestFlashcardIllustrationIntegration))
+    suite.addTests(loader.loadTestsFromTestCase(TestLearningProgressNavigator))
+    suite.addTests(loader.loadTestsFromTestCase(TestFlashcardExperienceRefinements))
 
     runner = unittest.TextTestRunner(verbosity=2)
     result = runner.run(suite)

@@ -3,13 +3,14 @@
 .quick-quiz-card {
   display: flex; align-items: center; justify-content: space-between; gap: 18px;
   min-width: 0; padding: 17px 19px; margin-top: 12px;
-  border: 1px solid color-mix(in srgb, var(--accent) 26%, var(--border));
+  border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  background: linear-gradient(110deg, color-mix(in srgb, var(--accent) 8%, var(--card-bg)), var(--card-bg) 68%);
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
 }
 body:not(.home-screen) .continue-learning-card { display: none; }
 .continue-learning-copy { min-width: 0; }
-.dashboard-kicker { color: var(--accent-text); font-size: 10px; font-weight: 750; letter-spacing: .08em; }
+.dashboard-kicker { color: var(--text-secondary); font-size: 10.5px; font-weight: 700; letter-spacing: .08em; }
 .continue-learning-card h2,
 .quick-quiz-card h2,
 .featured-topics h2 { margin: 4px 0 0; color: var(--text-primary); font-size: 15px; line-height: 1.3; }
@@ -17,27 +18,27 @@ body:not(.home-screen) .continue-learning-card { display: none; }
 .quick-quiz-card p { margin: 4px 0 0; color: var(--text-secondary); font-size: 12px; }
 .dashboard-primary-btn {
   flex: 0 0 auto; min-height: 40px; padding: 0 16px;
-  border: 1px solid color-mix(in srgb, var(--accent) 75%, black 15%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 11px;
-  background: var(--accent-gradient, var(--accent));
+  background: var(--brand-primary);
   color: var(--on-accent, #ffffff);
   font: inherit; font-size: 12.5px; font-weight: 700; cursor: pointer;
   letter-spacing: 0.01em;
-  box-shadow: 0 2px 6px color-mix(in srgb, var(--accent) 26%, transparent), 0 1px 2px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.04);
   transition: filter 150ms ease, transform 150ms ease, box-shadow 150ms ease;
   display: inline-flex; align-items: center; justify-content: center; gap: 6px;
   -webkit-font-smoothing: antialiased;
 }
 .dashboard-primary-btn:hover {
-  background: var(--accent-gradient-hover, var(--accent));
+  background: var(--brand-primary-hover);
   filter: brightness(1.04);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px color-mix(in srgb, var(--accent) 34%, transparent), 0 2px 4px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25), 0 2px 4px rgba(0, 0, 0, 0.06);
 }
 .dashboard-primary-btn:active {
   transform: translateY(0);
   filter: brightness(0.97);
-  box-shadow: 0 1px 3px color-mix(in srgb, var(--accent) 24%, transparent);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 .dashboard-primary-btn:focus-visible,
 .featured-topic-more:focus-visible,
@@ -87,8 +88,8 @@ body:not(.home-screen) .continue-learning-card { display: none; }
   transform: scale(0.985);
 }
 .level-card.is-active-level {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 1.5px var(--accent), 0 4px 18px color-mix(in srgb, var(--accent) 20%, transparent);
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 0 1px var(--brand-primary), 0 4px 14px rgba(0, 0, 0, 0.25);
 }
 .level-card-top {
   display: flex;
@@ -112,34 +113,34 @@ body:not(.home-screen) .continue-learning-card { display: none; }
   display: inline-flex;
   align-items: center;
   font-size: 11px;
-  font-weight: 700;
-  color: var(--text-muted, #64748b);
-  background: var(--surface-subtle, #f1f5f9);
-  border: 1px solid var(--border, #e2e8f0);
+  font-weight: 650;
+  color: var(--text-tertiary);
+  background: var(--surface-subtle);
+  border: 1px solid var(--border);
   padding: 3px 9px;
   border-radius: 999px;
   white-space: nowrap;
   letter-spacing: 0.01em;
 }
 .level-status-badge.is-learning {
-  color: #c2410c;
-  background: #fff7ed;
-  border-color: #fed7aa;
+  color: var(--status-warning, #996e1e);
+  background: var(--warning-bg, #fffbeb);
+  border-color: color-mix(in srgb, var(--status-warning, #996e1e) 30%, transparent);
 }
 :root[data-theme="dark"] .level-status-badge.is-learning {
-  color: #fb923c;
-  background: rgba(249, 115, 22, 0.15);
-  border-color: rgba(249, 115, 22, 0.32);
+  color: var(--status-warning, #D2AD6E);
+  background: rgba(210, 173, 110, 0.12);
+  border-color: rgba(210, 173, 110, 0.28);
 }
 .level-status-badge.is-complete {
-  color: #047857;
-  background: #ecfdf5;
-  border-color: #a7f3d0;
+  color: var(--status-success, #2e7d5a);
+  background: var(--success-bg, #ecfdf5);
+  border-color: color-mix(in srgb, var(--status-success, #2e7d5a) 30%, transparent);
 }
 :root[data-theme="dark"] .level-status-badge.is-complete {
-  color: #34d399;
-  background: rgba(16, 185, 129, 0.15);
-  border-color: rgba(16, 185, 129, 0.32);
+  color: var(--status-success, #72B99A);
+  background: rgba(114, 185, 154, 0.12);
+  border-color: rgba(114, 185, 154, 0.28);
 }
 .level-card-meta {
   display: flex;
@@ -613,18 +614,21 @@ body:not(.home-screen) .continue-learning-card { display: none; }
 /* Dashboard contrast and active-level accent */
 .level-card .lvl-mastery-track { background: var(--progress-track); border-radius: 999px; overflow: hidden; }
 .level-card .lvl-mastery-fill {
-  background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--accent) 80%, #ffffff));
+  background: var(--brand-primary);
   border-radius: 999px;
   transition: width 240ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.level-card.is-complete-level .lvl-mastery-fill {
+  background: var(--status-success);
 }
 .level-card .lvl-mastery-text { color: var(--text-secondary); }
 .daily-goal-track, .progress-bar-track { background: var(--progress-track); border-radius: 999px; overflow: hidden; }
 .progress-bar-fill {
-  background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--accent) 80%, #ffffff));
+  background: var(--brand-primary);
   border-radius: 999px;
 }
-.level-card.is-active-level { border-color: var(--accent); box-shadow: 0 0 10px color-mix(in srgb, var(--accent) 14%, transparent); }
-.level-status-badge.is-learning { border-color: var(--accent); background: var(--accent-light); color: var(--accent-text); }
+.level-card.is-active-level { border-color: var(--brand-primary); box-shadow: 0 0 0 1px var(--brand-primary), 0 4px 14px rgba(0, 0, 0, 0.25); }
+.level-status-badge.is-learning { border-color: color-mix(in srgb, var(--status-warning) 30%, transparent); background: var(--warning-bg); color: var(--status-warning); }
 .hanzi, .review-hanzi, .radical-char, .radical-group-preview, .vocabulary-hanzi, [lang="zh-CN"],
 .ssr-hanzi, .hw-cjk, .common-radical-char, .radical-tip-word {
   font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", system-ui, sans-serif;
@@ -1088,15 +1092,15 @@ body.home-screen .featured-topics {
     margin: 0;
     padding: 18px 22px;
     border-radius: var(--radius-lg);
-    border: 1.5px solid color-mix(in srgb, var(--accent) 35%, var(--border));
-    background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 10%, var(--card-bg)) 0%, var(--card-bg) 100%);
-    box-shadow: 0 4px 18px color-mix(in srgb, var(--accent) 14%, transparent), var(--card-shadow);
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    box-shadow: var(--card-shadow);
   }
   body.home-screen .continue-learning-card .dashboard-kicker {
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.08em;
-    color: var(--accent-text);
+    color: var(--text-secondary);
   }
   body.home-screen .continue-learning-card h2 {
     margin-top: 4px;
@@ -1115,22 +1119,23 @@ body.home-screen .featured-topics {
     font-size: 14px;
     font-weight: 750;
     border-radius: 12px;
-    background: linear-gradient(135deg, #ff6b35 0%, #ff4b1f 100%);
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    color: #ffffff;
-    box-shadow: 0 4px 16px rgba(255, 75, 31, 0.42), 0 2px 4px rgba(0, 0, 0, 0.2);
+    background: var(--brand-primary);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: var(--on-accent, #ffffff);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     letter-spacing: 0.02em;
     transition: transform 140ms ease, box-shadow 140ms ease, filter 140ms ease;
   }
   body.home-screen .continue-learning-card .dashboard-primary-btn:hover {
-    filter: brightness(1.08);
+    background: var(--brand-primary-hover);
+    filter: brightness(1.05);
     transform: translateY(-2px);
-    box-shadow: 0 6px 22px rgba(255, 75, 31, 0.55), 0 3px 6px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
   }
   body.home-screen .continue-learning-card .dashboard-primary-btn:active {
     transform: translateY(0);
     filter: brightness(0.96);
-    box-shadow: 0 2px 8px rgba(255, 75, 31, 0.35);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   }
 
   /* Navigation Tabs */
@@ -1226,13 +1231,13 @@ body.home-screen .featured-topics {
   }
   body.home-screen #screenPicker .level-card:hover {
     transform: translateY(-2px);
-    border-color: color-mix(in srgb, var(--accent) 35%, var(--border));
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-    background: linear-gradient(145deg, color-mix(in srgb, var(--accent) 4%, var(--card-bg)) 0%, var(--card-bg) 100%);
+    border-color: var(--border-strong);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    background: var(--card-bg);
   }
   body.home-screen #screenPicker .level-card.is-active-level {
-    border-color: var(--accent);
-    box-shadow: 0 0 0 1px var(--accent), 0 2px 10px color-mix(in srgb, var(--accent) 18%, transparent);
+    border-color: var(--brand-primary);
+    box-shadow: 0 0 0 1px var(--brand-primary), 0 4px 14px rgba(0, 0, 0, 0.25);
   }
 
   body.home-screen #screenPicker .level-card-top {
@@ -1255,7 +1260,7 @@ body.home-screen .featured-topics {
   }
   body.home-screen #screenPicker .level-status-badge {
     font-size: 11px;
-    font-weight: 600;
+    font-weight: 650;
     color: var(--text-tertiary);
     background: var(--surface-subtle);
     border: 1px solid var(--border);
@@ -1264,14 +1269,14 @@ body.home-screen .featured-topics {
     white-space: nowrap;
   }
   body.home-screen #screenPicker .level-status-badge.is-learning {
-    color: var(--accent-text);
-    background: var(--accent-light);
-    border-color: color-mix(in srgb, var(--accent) 30%, transparent);
+    color: var(--status-warning, #D2AD6E);
+    background: var(--warning-bg, rgba(210, 173, 110, 0.12));
+    border-color: color-mix(in srgb, var(--status-warning, #D2AD6E) 28%, transparent);
   }
   body.home-screen #screenPicker .level-status-badge.is-complete {
-    color: var(--success-text);
-    background: var(--success-bg);
-    border-color: color-mix(in srgb, var(--success-text) 30%, transparent);
+    color: var(--status-success, #72B99A);
+    background: var(--success-bg, rgba(114, 185, 154, 0.12));
+    border-color: color-mix(in srgb, var(--status-success, #72B99A) 28%, transparent);
   }
   body.home-screen #screenPicker .level-card-meta {
     display: flex;
@@ -1309,10 +1314,10 @@ body.home-screen .featured-topics {
     font-variant-numeric: tabular-nums;
   }
   body.home-screen #screenPicker .level-card.is-learning-level .lvl-percent-value {
-    color: var(--accent-text);
+    color: var(--brand-primary);
   }
   body.home-screen #screenPicker .level-card.is-complete-level .lvl-percent-value {
-    color: var(--success-text);
+    color: var(--status-success);
   }
   body.home-screen #screenPicker .lvl-today-count {
     display: none;
@@ -1328,9 +1333,9 @@ body.home-screen .featured-topics {
   }
   body.home-screen #screenPicker .lvl-today-count.has-activity {
     display: inline-flex;
-    color: var(--accent-text);
-    background: var(--accent-light);
-    border-color: color-mix(in srgb, var(--accent) 30%, transparent);
+    color: var(--text-primary);
+    background: var(--surface-subtle);
+    border-color: var(--border-strong);
   }
   body.home-screen #screenPicker .lvl-mastery-track {
     width: 100%;
@@ -1341,12 +1346,12 @@ body.home-screen .featured-topics {
   }
   body.home-screen #screenPicker .lvl-mastery-fill {
     height: 100%;
-    background: var(--accent-gradient, var(--accent));
+    background: var(--brand-primary);
     border-radius: 999px;
     transition: width 240ms ease;
   }
   body.home-screen #screenPicker .level-card.is-complete-level .lvl-mastery-fill {
-    background: var(--success-text);
+    background: var(--status-success);
   }
 
   body.home-screen #screenPicker .level-card-bottom {

@@ -448,7 +448,7 @@
   transform: translateY(-1px);
 }
 .card-decomp-char {
-  font-family: system-ui, -apple-system, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: var(--text-primary);
@@ -625,19 +625,17 @@
   transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .card:not(.is-flipped) .card-flip-prompt {
-  margin-top: clamp(12px, 2vh, 18px);
-  padding: 7px 16px;
+  margin-top: 10px;
+  padding: 4px 10px;
   border-radius: 999px;
-  background: var(--surface-subtle);
-  border: 1px solid var(--border-subtle);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  opacity: 0.72;
 }
 .card:not(.is-flipped) .card-flip-prompt:hover {
-  background: var(--surface-chip);
-  border-color: var(--border-color);
-  color: var(--text-primary);
+  opacity: 1;
   transform: translateY(-0.5px);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 .card:not(.is-flipped) .card-flip-prompt:active {
   transform: scale(0.97);
@@ -646,22 +644,22 @@
   color: var(--text-tertiary);
   display: inline-flex;
   align-items: center;
-  opacity: 0.8;
+  opacity: 0.65;
 }
 .card:not(.is-flipped) .card-flip-prompt-text {
   font-size: 13px;
   font-weight: 500;
-  color: var(--text-secondary);
+  color: var(--text-tertiary);
   margin-top: 0;
+  letter-spacing: 0.01em;
 }
 :root[data-theme="dark"] .card:not(.is-flipped) .card-flip-prompt {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 :root[data-theme="dark"] .card:not(.is-flipped) .card-flip-prompt:hover {
-  background: rgba(255, 255, 255, 0.09);
-  border-color: #f97316;
+  opacity: 1;
 }
 
 /* Back of Card: Flip prompt transforms into a discreet, quiet return affordance */
@@ -746,17 +744,68 @@
 }
 
 .hint { font-size: 12px; color: var(--text-tertiary); margin-top: 8px; }
+.study-nav-controls,
 .nav-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 520px;
-  margin: 14px auto 0;
+  max-width: 550px;
+  margin: 12px auto 0;
   gap: 12px;
 }
+.study-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 8px 18px;
+  font-size: 14.5px;
+  font-weight: 600;
+  background: var(--card-bg, #ffffff);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.16s ease;
+  user-select: none;
+}
+.study-nav-btn:hover:not(:disabled) {
+  background: var(--surface-subtle);
+  border-color: rgba(0, 0, 0, 0.18);
+  color: var(--text-primary);
+  transform: translateY(-0.5px);
+}
+.study-nav-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  transform: none;
+}
+.study-nav-position {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 7px 16px;
+  border-radius: 999px;
+  background: var(--surface-subtle);
+  border: 1px solid var(--border-subtle);
+  font-size: 14px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-secondary);
+  user-select: none;
+}
+.study-nav-current {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.study-nav-sep {
+  opacity: 0.5;
+}
 .nav-row button, .nav-btn {
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 600;
   padding: 8px 18px;
   border-radius: 999px;

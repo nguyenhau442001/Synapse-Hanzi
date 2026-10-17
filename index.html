@@ -95,6 +95,17 @@ if ('serviceWorker' in navigator) {
       </div>
       <div id="mobileDockDialogBody"></div>
     </dialog>
+    <dialog id="mobileStatsDialog" class="mobile-dock-dialog" aria-labelledby="mobileStatsSheetTitle">
+      <div class="mobile-dock-sheet-handle" aria-hidden="true"></div>
+      <div class="mobile-dock-sheet-header">
+        <div class="mobile-dock-sheet-title" id="mobileStatsSheetTitle">
+          <span class="mobile-dock-sheet-icon" aria-hidden="true">📊</span>
+          <span>Thống kê &amp; Hoạt động học tập</span>
+        </div>
+        <button type="button" id="mobileStatsClose" class="mobile-dock-close" aria-label="Đóng" onclick="closeMobileStatsSheet()">✕</button>
+      </div>
+      <div id="mobileStatsDialogBody" class="mobile-stats-dialog-body"></div>
+    </dialog>
     <div class="workstation-middle" id="workstationMiddle">
   <div class="app-header">
     <div class="app-header-actions">
@@ -125,7 +136,6 @@ if ('serviceWorker' in navigator) {
       </div>
       <div class="learning-dashboard-header-right">
         <button class="history-trigger" type="button" onclick="showHistoryModal()">Lịch sử học tập <span aria-hidden="true">↗</span></button>
-        <div class="learning-streak" id="learningStreak">🔥 0 ngày học</div>
       </div>
     </div>
 
@@ -1108,12 +1118,12 @@ if ('serviceWorker' in navigator) {
     </div>
     <aside class="workstation-right" id="workstationRight" aria-label="Phòng thực hành tương tác"></aside>
     <footer class="app-footer">
-      <p class="footer-note">Tiến trình tự lưu trên thiết bị này · Phát triển bởi <a href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer">haunguyenngoc442001</a> · <a href="https://www.facebook.com/haunguyenngoc442001/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+      <p class="footer-note"><span class="footer-version" title="Phiên bản ứng dụng">v1.0.2</span> · Tiến trình tự lưu trên thiết bị này · Phát triển bởi <a href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer">haunguyenngoc442001</a> · <a href="https://www.facebook.com/haunguyenngoc442001/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
     </footer>
   </div>
 </div>
 
-<script src="assets/js/state.js?v=20261006-review-mistakes1"></script>
+<script src="assets/js/state.js?v=20261017-gemini-tts-v2"></script>
 <script src="assets/js/storage.js?v=20261006-srs-sync1"></script>
 <script src="https://cdn.jsdelivr.net/npm/ts-fsrs@5.4.1/dist/index.umd.js" crossorigin="anonymous"></script>
 <script src="assets/js/srs.js?v=20261006-2tier-srs1"></script>
@@ -1131,8 +1141,8 @@ if ('serviceWorker' in navigator) {
 <script src="assets/js/flashcard.js?v=20261017-fix-example-box1"></script>
 <script src="assets/js/card-interactions.js?v=20261016-preserve-flip1"></script>
 <script src="assets/js/speechService.js?v=20261010-speech-mvp1"></script>
-<script src="assets/js/speech.js?v=20261016-fix-hanzi-size1"></script>
-<script src="assets/js/progress.js?v=20261010-close-backup1"></script>
+<script src="assets/js/speech.js?v=20261017-gemini-tts-v3"></script>
+<script src="assets/js/progress.js?v=20261017-refine-v2"></script>
 <script src="assets/js/due-review.js?v=20261007-router1"></script>
 <script src="assets/js/theme.js?v=20261010-smooth-theme1"></script>
 <script src="assets/js/backup.js?v=20261010-close-backup1"></script>
@@ -1205,17 +1215,132 @@ function openMobileNotebookSheet() {
   }
 }
 
-function openMobileProfileOrStats() {
-  var statsSection = document.getElementById('dashboardStatsAccordion');
-  if (statsSection) {
-    statsSection.open = true;
-    statsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    var label = statsSection.querySelector('.stats-toggle-label');
-    if (label) label.textContent = 'Thu gọn';
-  } else if (typeof showHistoryModal === 'function') {
+function renderMobileStatsHeader(dialogBody) {
+  var header = dialogBody.querySelector('.mobile-stats-kpi-summary');
+  if (!header) {
+    header = document.createElement('div');
+    header.className = 'mobile-stats-kpi-summary';
+    dialogBody.prepend(header);
+  }
+
+  var activity = typeof readStudyActivity === 'function' ? readStudyActivity() : { days: {} };
+  var stats = typeof streakStats === 'function' ? streakStats(activity.days) : { current: 0, longest: 0, totalDaysStudied: 0 };
+  var totalMinutes = Object.values(activity.days || {}).reduce(function(sum, entry) {
+    return sum + (typeof daySeconds === 'function' ? daySeconds(entry) : 0) / 60;
+  }, 0);
+  var timeFormatted = typeof formatStudyDuration === 'function' ? formatStudyDuration(totalMinutes) : Math.round(totalMinutes) + ' phút';
+
+  header.innerHTML =
+    '<div class="history-kpi-row mobile-kpi-grid">' +
+      '<div class="history-kpi"><strong>🔥 ' + stats.current + '</strong><span>Chuỗi hiện tại</span></div>' +
+      '<div class="history-kpi"><strong>🏆 ' + stats.longest + '</strong><span>Chuỗi dài nhất</span></div>' +
+      '<div class="history-kpi"><strong>📅 ' + stats.totalDaysStudied + '</strong><span>Ngày đã học</span></div>' +
+      '<div class="history-kpi"><strong>⏱ ' + timeFormatted + '</strong><span>Tổng thời gian</span></div>' +
+    '</div>' +
+    '<button type="button" class="mobile-stats-history-btn" onclick="openDetailedHistoryFromStatsSheet()">' +
+      '<span>📅 Xem biểu đồ lịch sử học tập (Heatmap)</span>' +
+      '<span aria-hidden="true">→</span>' +
+    '</button>';
+}
+
+function openDetailedHistoryFromStatsSheet() {
+  closeMobileStatsSheet();
+  if (typeof showHistoryModal === 'function') {
     showHistoryModal();
   }
 }
+
+function openMobileProfileOrStats() {
+  var dialog = document.getElementById('mobileStatsDialog');
+  var dialogBody = document.getElementById('mobileStatsDialogBody');
+  var widgets = document.getElementById('homeWidgets');
+
+  if (dialog && dialogBody) {
+    renderMobileStatsHeader(dialogBody);
+
+    if (widgets && widgets.parentNode !== dialogBody) {
+      dialogBody.appendChild(widgets);
+    }
+
+    if (typeof refreshHomeWidgets === 'function') {
+      try { refreshHomeWidgets(); } catch (e) {}
+    }
+
+    if (typeof dialog.showModal === 'function') {
+      try { dialog.showModal(); } catch (e) { dialog.setAttribute('open', ''); }
+    } else {
+      dialog.setAttribute('open', '');
+    }
+
+    var mobProfile = document.getElementById('mobNavProfile');
+    if (mobProfile) mobProfile.classList.add('active');
+    return;
+  }
+
+  if (typeof showHistoryModal === 'function') {
+    showHistoryModal();
+  }
+}
+
+function closeMobileStatsSheet() {
+  var dialog = document.getElementById('mobileStatsDialog');
+  if (dialog) {
+    if (typeof dialog.close === 'function') {
+      dialog.close();
+    } else {
+      dialog.removeAttribute('open');
+    }
+  }
+
+  var statsContent = document.getElementById('dashboardStatsContent');
+  var widgets = document.getElementById('homeWidgets');
+  if (statsContent && widgets && widgets.parentNode !== statsContent) {
+    statsContent.appendChild(widgets);
+  }
+
+  var mobProfile = document.getElementById('mobNavProfile');
+  if (mobProfile) mobProfile.classList.remove('active');
+}
+
+(function initMobileNavDialogEvents() {
+  var statsDialog = document.getElementById('mobileStatsDialog');
+  if (statsDialog) {
+    statsDialog.addEventListener('click', function(e) {
+      if (e.target === statsDialog) {
+        closeMobileStatsSheet();
+      }
+    });
+    statsDialog.addEventListener('close', function() {
+      var statsContent = document.getElementById('dashboardStatsContent');
+      var widgets = document.getElementById('homeWidgets');
+      if (statsContent && widgets && widgets.parentNode !== statsContent) {
+        statsContent.appendChild(widgets);
+      }
+      var mobProfile = document.getElementById('mobNavProfile');
+      if (mobProfile) mobProfile.classList.remove('active');
+    });
+  }
+
+  var dockDialog = document.getElementById('mobileDockDialog');
+  if (dockDialog) {
+    dockDialog.addEventListener('click', function(e) {
+      if (e.target === dockDialog) {
+        if (typeof dockDialog.close === 'function') dockDialog.close();
+        else dockDialog.removeAttribute('open');
+      }
+    });
+  }
+
+  var statsAccordion = document.getElementById('dashboardStatsAccordion');
+  if (statsAccordion) {
+    statsAccordion.addEventListener('toggle', function() {
+      var label = statsAccordion.querySelector('.stats-toggle-label');
+      if (label) {
+        label.textContent = statsAccordion.open ? 'Thu gọn' : 'Mở rộng';
+      }
+    });
+  }
+})();
 </script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4568b250a19345538a47a2da396637af"}'></script><!-- End Cloudflare Web Analytics -->
 </body>

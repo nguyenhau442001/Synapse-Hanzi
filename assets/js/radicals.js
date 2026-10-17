@@ -110,8 +110,11 @@ function setPrimaryTab(tab, options) {
   });
   const mobVocab = document.getElementById('mobNavVocab');
   const mobReview = document.getElementById('mobNavReview');
+  const mobProfile = document.getElementById('mobNavProfile');
   if (mobVocab) mobVocab.classList.toggle('active', tab === 'vocab');
   if (mobReview) mobReview.classList.toggle('active', tab === 'review');
+  if (mobProfile) mobProfile.classList.remove('active');
+  if (typeof closeMobileStatsSheet === 'function') closeMobileStatsSheet();
   const isTool = ['radicals', 'sentenceGame', 'guessWord', 'speedQuiz', 'reading', 'gradedReading'].includes(tab);
   const isGame = ['sentenceGame', 'guessWord', 'speedQuiz'].includes(tab);
   document.body.classList.toggle('is-game-view', isGame);

@@ -15,6 +15,7 @@
     <img src="https://img.shields.io/badge/🌐_Mở_Trực_Tuyến_Ngay-https%3A%2F%2Fnguyenhau442001.github.io%2FSynapse--Hanzi-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo">
   </a>
   <img src="https://img.shields.io/badge/Chế_độ-100%25_Offline_(PWA)-22c55e?style=for-the-badge&logo=pwa&logoColor=white" alt="PWA">
+  <img src="https://img.shields.io/badge/Phiên_bản-v1.0.0-blue?style=for-the-badge&logo=semver&logoColor=white" alt="Version v1.0.0">
   <img src="https://img.shields.io/badge/Build-Zero_Config-3b82f6?style=for-the-badge&logo=javascript&logoColor=white" alt="Zero Build">
   <img src="https://img.shields.io/badge/HSK-HSK_2.0_&_3.0_(1--9)-f59e0b?style=for-the-badge" alt="HSK 1-9">
 </p>

@@ -14,8 +14,20 @@ const LEVELS = {
     available: true,
     total: 150,
   },
-  hsk3: { label: 'HSK3', dataUrl: 'database/vocabs/hsk3_vocabularies.json', available: true, total: 300 },
-  hsk4: { label: 'HSK4', dataUrl: 'database/vocabs/hsk4_vocabularies.json', available: true, total: 600 },
+  hsk3: {
+    label: 'HSK3',
+    dataUrl: 'database/vocabs/hsk3_vocabularies.json',
+    audioManifestUrl: 'database/prebuilt_audio/hsk3/manifest.json',
+    available: true,
+    total: 300,
+  },
+  hsk4: {
+    label: 'HSK4',
+    dataUrl: 'database/vocabs/hsk4_vocabularies.json',
+    audioManifestUrl: 'database/prebuilt_audio/hsk4/manifest.json',
+    available: true,
+    total: 600,
+  },
   hsk5: { label: 'HSK5', dataUrl: 'database/vocabs/hsk5_vocabularies.json', available: true, total: 1300 },
   hsk6: { label: 'HSK6', dataUrl: 'database/vocabs/hsk6_vocabularies.json', available: true, total: 2500 },
 };

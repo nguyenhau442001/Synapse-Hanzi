@@ -1,4 +1,5 @@
-const ASSET_VERSION = '20261017-fix-example-box1';
+const APP_VERSION = '1.0.2';
+const ASSET_VERSION = APP_VERSION;
 const CACHE_NAME = 'hsk-flashcards-v' + ASSET_VERSION;
 const FSRS_CDN_URL = 'https://cdn.jsdelivr.net/npm/ts-fsrs@5.4.1/dist/index.umd.js';
 const APP_SHELL_URL = new URL('./index.html', self.registration.scope).href;
@@ -31,7 +32,7 @@ const PRECACHE_ASSET_URLS = [
   './assets/js/reading-analysis.js?v=' + ASSET_VERSION,
 ].map(path => (path.startsWith('http') ? path : new URL(path, self.registration.scope).href));
 // Vocabulary/audio JSON lives in its own cache so app deploys don't force every level to re-download.
-const DATA_CACHE_NAME = 'hsk-data-v5';
+const DATA_CACHE_NAME = 'hsk-data-v7';
 const DATA_PATH = new URL('./database/', self.registration.scope).pathname;
 
 self.addEventListener('install', event => {
