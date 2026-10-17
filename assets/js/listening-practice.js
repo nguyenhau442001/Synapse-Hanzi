@@ -227,7 +227,6 @@ const ListeningPractice = (function() {
         examData = data;
         if (data.questions && data.questions.length > 0) {
           currentQuestion = JSON.parse(JSON.stringify(data.questions[0]));
-          // Check for saved local draft overrides
           restoreLocalDraft();
         }
         isLoaded = true;
@@ -293,9 +292,8 @@ const ListeningPractice = (function() {
     initAudio();
 
     container.innerHTML = `
-      <div class="listening-container" style="text-align:center; padding: 40px 20px;">
-        <div style="font-size:16px; color:var(--text-secondary); margin-bottom:12px;">Đang tải dữ liệu bài nghe HSK 4...</div>
-        <div class="listening-status-pill draft"><span class="listening-status-dot"></span> Đang khởi tạo...</div>
+      <div class="listening-container" style="text-align:center; padding: 48px 20px;">
+        <div style="font-size:15px; color:var(--text-secondary); margin-bottom:8px;">Đang tải bài nghe HSK 4...</div>
       </div>
     `;
 
@@ -306,7 +304,7 @@ const ListeningPractice = (function() {
       container.innerHTML = `
         <div class="listening-container">
           <div class="listening-card" style="text-align:center; padding: 40px 20px;">
-            <div style="font-size:18px; font-weight:700; color:var(--danger-text); margin-bottom:8px;">Không thể tải bài nghe</div>
+            <div style="font-size:16px; font-weight:700; color:var(--danger-text); margin-bottom:8px;">Không thể tải bài nghe</div>
             <div style="font-size:14px; color:var(--text-secondary); margin-bottom:16px;">${err.message}</div>
             <button class="listening-back-btn" onclick="setPrimaryTab('vocab')" style="align-self:center;">Quay lại Trang chính</button>
           </div>
@@ -316,7 +314,7 @@ const ListeningPractice = (function() {
   }
 
   // ---------------------------------------------------------------------------
-  // Render Dispatcher
+  // Main Render Dispatcher
   // ---------------------------------------------------------------------------
   function render() {
     const container = document.getElementById('screenListeningPractice');
@@ -324,30 +322,37 @@ const ListeningPractice = (function() {
 
     container.innerHTML = `
       <div class="listening-container">
-        <!-- Top Navigation & Controls Bar -->
+        <!-- Compact Page Header -->
         <header class="listening-top-nav">
           <div class="listening-nav-left">
             <button type="button" class="listening-back-btn" onclick="ListeningPractice.goBack()" title="Quay lại Hub">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
               <span>Trở về</span>
             </button>
-            <span class="listening-exam-badge">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
-              HSK 4 · H41001 · Câu ${currentQuestion.question_number}
+            <span class="listening-nav-breadcrumb">
+              <span class="listening-nav-exam">HSK 4 · H41001</span>
+              <span class="listening-nav-sep" aria-hidden="true">·</span>
+              <span class="listening-nav-question">Câu ${currentQuestion.question_number}</span>
             </span>
-            ${renderAlignmentStatusPill()}
           </div>
-          <div class="listening-mode-switch" role="tablist">
-            <button type="button" class="listening-mode-btn ${currentMode === 'learner' ? 'active' : ''}" onclick="ListeningPractice.setMode('learner')" role="tab" aria-selected="${currentMode === 'learner'}">
-              Luyện nghe (Học viên)
-            </button>
-            <button type="button" class="listening-mode-btn ${currentMode === 'editor' ? 'active' : ''}" onclick="ListeningPractice.setMode('editor')" role="tab" aria-selected="${currentMode === 'editor'}">
-              Bộ căn chỉnh Audio (Editor)
-            </button>
+
+          <!-- Secondary Action: Boundary Editor Entry -->
+          <div class="listening-nav-right">
+            ${currentMode === 'learner' ? `
+              <button type="button" class="listening-editor-switch-btn" onclick="ListeningPractice.setMode('editor')" title="Mở bộ căn chỉnh mốc thời gian audio">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                <span>Căn chỉnh audio</span>
+              </button>
+            ` : `
+              <button type="button" class="listening-editor-switch-btn active" onclick="ListeningPractice.setMode('learner')" title="Quay lại màn hình luyện nghe">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                <span>Màn hình luyện nghe</span>
+              </button>
+            `}
           </div>
         </header>
 
-        <!-- Dynamic Main Content Based on Active Mode -->
+        <!-- Main Content -->
         <main id="listeningMainContent">
           ${currentMode === 'learner' ? renderLearnerView() : renderEditorView()}
         </main>
@@ -355,18 +360,6 @@ const ListeningPractice = (function() {
     `;
 
     attachDynamicListeners();
-  }
-
-  function renderAlignmentStatusPill() {
-    const align = currentQuestion.alignment || {};
-    const status = align.status || 'unaligned';
-    const label = status === 'verified' ? 'Đã xác thực' : (status === 'draft' ? 'Bản nháp (Draft)' : 'Chưa căn chỉnh');
-    return `
-      <span class="listening-status-pill ${status}" title="Phương pháp: ${align.method || 'Thủ công'}">
-        <span class="listening-status-dot"></span>
-        <span>${label}</span>
-      </span>
-    `;
   }
 
   function setMode(mode) {
@@ -384,51 +377,55 @@ const ListeningPractice = (function() {
   }
 
   // ---------------------------------------------------------------------------
-  // Learner View & Interactions
+  // Learner View
   // ---------------------------------------------------------------------------
   function renderLearnerView() {
     const q = currentQuestion;
     const isUnaligned = !q.segments || !q.segments.full_question || q.segments.full_question.start_ms == null;
 
     return `
-      <section class="listening-card" aria-label="Bài tập luyện nghe">
-        <div class="listening-card-header">
-          <div class="listening-card-title">
-            <span>Phần 1: Nghe và phán đoán Đúng / Sai (★)</span>
-          </div>
-          <div style="font-size:12px; color:var(--text-muted);">Mỗi câu nghe 1 lần</div>
+      <section class="listening-unified-card" aria-label="Bài tập luyện nghe">
+        <!-- 1. Question Context Header -->
+        <div class="listening-section-header">
+          <span class="listening-section-label">Nghe và chọn Đúng / Sai</span>
+          <span class="listening-exam-rule-note">Quy chế thi: Mỗi câu nghe 1 lần · Luyện tập: Có thể nghe lại tùy ý</span>
         </div>
 
-        <!-- Spoken Statement Presentation -->
-        <div class="listening-statement-box">
-          <div class="listening-statement-label">Nhận định cần phán đoán</div>
+        <!-- 2. Statement Presentation -->
+        <div class="listening-statement-block">
           <div class="listening-statement-zh" lang="zh-CN">${q.statement.zh}</div>
-          ${learnerState.answered && learnerState.showPinyin && q.statement.pinyin ? `<div class="listening-statement-pinyin">${q.statement.pinyin}</div>` : ''}
-          ${learnerState.answered && learnerState.showTranslation && q.statement.vi ? `<div class="listening-statement-vi">${q.statement.vi}</div>` : ''}
+          ${learnerState.answered && learnerState.showPinyin && q.statement.pinyin ? `
+            <div class="listening-statement-pinyin">${q.statement.pinyin}</div>
+          ` : ''}
+          ${learnerState.answered && learnerState.showTranslation && q.statement.vi ? `
+            <div class="listening-statement-vi">${q.statement.vi}</div>
+          ` : ''}
         </div>
 
-        <!-- Audio Player Cluster -->
+        <!-- 3. Integrated Audio Player Surface -->
         ${isUnaligned ? renderUnalignedNotice() : renderLearnerAudioPlayer()}
 
-        <!-- Answer Buttons (True / False) -->
+        <!-- 4. Equal-Sized Answer Controls (Đúng / Sai) -->
         <div class="listening-answers-zone">
-          <div class="listening-answers-label">Chọn nhận định trên là Đúng hay Sai:</div>
           <div class="listening-answers-grid">
             <button type="button" class="listening-choice-btn choice-true ${getChoiceBtnClass(true)}"
               onclick="ListeningPractice.submitAnswer(true)" ${learnerState.answered ? 'disabled' : ''} aria-label="Đúng">
-              <span class="listening-choice-symbol">√</span>
-              <span class="listening-choice-text">Đúng (True)</span>
+              <span class="listening-choice-label">Đúng</span>
+              ${getChoiceFeedbackBadge(true)}
             </button>
             <button type="button" class="listening-choice-btn choice-false ${getChoiceBtnClass(false)}"
               onclick="ListeningPractice.submitAnswer(false)" ${learnerState.answered ? 'disabled' : ''} aria-label="Sai">
-              <span class="listening-choice-symbol">×</span>
-              <span class="listening-choice-text">Sai (False)</span>
+              <span class="listening-choice-label">Sai</span>
+              ${getChoiceFeedbackBadge(false)}
             </button>
           </div>
         </div>
 
-        <!-- Answer Feedback & Revealed Study Details -->
-        ${learnerState.answered ? renderRevealedStudySection() : ''}
+        <!-- 5. Compact Feedback Section (revealed after answering) -->
+        ${learnerState.answered ? renderCompactFeedback() : ''}
+
+        <!-- 6. Transcript & Vocabulary Section (revealed after answering) -->
+        ${learnerState.answered ? renderTranscriptAndVocabSection() : ''}
       </section>
     `;
   }
@@ -439,19 +436,50 @@ const ListeningPractice = (function() {
     const isCorrectChoice = currentQuestion.answer === choiceVal;
 
     if (isThisChoice) {
-      return learnerState.isCorrect ? 'is-correct' : 'is-incorrect';
+      return isCorrectChoice ? 'is-correct-selected' : 'is-incorrect-selected';
     }
     if (isCorrectChoice) {
-      return 'is-correct';
+      return 'is-correct-answer';
+    }
+    return 'is-dimmed';
+  }
+
+  function getChoiceFeedbackBadge(choiceVal) {
+    if (!learnerState.answered) return '';
+    const isThisChoice = learnerState.selectedChoice === choiceVal;
+    const isCorrectChoice = currentQuestion.answer === choiceVal;
+
+    if (isThisChoice && isCorrectChoice) {
+      return `
+        <span class="listening-choice-badge correct">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Đáp án đúng</span>
+        </span>
+      `;
+    }
+    if (isThisChoice && !isCorrectChoice) {
+      return `
+        <span class="listening-choice-badge incorrect">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          <span>Lựa chọn của bạn</span>
+        </span>
+      `;
+    }
+    if (isCorrectChoice) {
+      return `
+        <span class="listening-choice-badge correct-dimmed">
+          <span>Đáp án đúng</span>
+        </span>
+      `;
     }
     return '';
   }
 
   function renderUnalignedNotice() {
     return `
-      <div style="padding:16px; background:var(--warning-bg); border:1px solid rgba(153,110,30,0.25); border-radius:10px; text-align:center; color:var(--warning-text); font-size:14px;">
-        <strong>Chưa có mốc thời gian âm thanh cho câu hỏi này.</strong><br>
-        Vui lòng chuyển sang <em>Bộ căn chỉnh Audio (Editor)</em> để thiết lập mốc bắt đầu/kết thúc trước khi luyện tập.
+      <div class="listening-notice-box">
+        <strong>Chưa có mốc thời gian âm thanh cho câu hỏi này.</strong>
+        <p>Vui lòng mở <em>Căn chỉnh audio</em> để thiết lập mốc bắt đầu và kết thúc.</p>
       </div>
     `;
   }
@@ -459,38 +487,41 @@ const ListeningPractice = (function() {
   function renderLearnerAudioPlayer() {
     const isPlayingFull = learnerState.activePlayingSegment === 'full_question';
     return `
-      <div class="listening-player-cluster">
-        <button type="button" class="listening-play-primary-btn ${isPlayingFull ? 'is-playing' : ''}"
-          onclick="ListeningPractice.togglePlayFullQuestion()" aria-label="Nghe câu hỏi">
-          ${isPlayingFull ? `
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
-            <span>Tạm dừng</span>
-          ` : `
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-            <span>${learnerState.answered ? 'Nghe lại toàn bài & câu hỏi' : 'Nghe toàn bộ câu hỏi'}</span>
-          `}
-        </button>
+      <div class="listening-player-surface">
+        <div class="listening-player-main-row">
+          <!-- Primary Play/Pause Button -->
+          <button type="button" class="listening-play-primary-btn ${isPlayingFull ? 'is-playing' : ''}"
+            onclick="ListeningPractice.togglePlayFullQuestion()" aria-label="Nghe đoạn này">
+            ${isPlayingFull ? `
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+              <span>Tạm dừng</span>
+            ` : `
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <span>Nghe đoạn này</span>
+            `}
+          </button>
 
-        <!-- Secondary controls: Speed & Loop -->
-        <div class="listening-player-controls-row">
+          <!-- Interactive Progress Track -->
+          <div class="listening-progress-wrap">
+            <div class="listening-progress-track" id="learnerProgressTrack">
+              <div class="listening-progress-fill" id="learnerProgressFill"></div>
+            </div>
+            <div class="listening-time-readout" id="learnerTimeBadge">00:00.0 / 00:14.7</div>
+          </div>
+        </div>
+
+        <!-- Secondary Compact Audio Options: Speed & Loop -->
+        <div class="listening-player-secondary-row">
           <div class="listening-speed-group" role="group" aria-label="Tốc độ phát">
             <button type="button" class="listening-speed-btn ${learnerState.speed === 0.75 ? 'active' : ''}" onclick="ListeningPractice.setSpeed(0.75)">0.75×</button>
             <button type="button" class="listening-speed-btn ${learnerState.speed === 1.0 ? 'active' : ''}" onclick="ListeningPractice.setSpeed(1.0)">1.0×</button>
             <button type="button" class="listening-speed-btn ${learnerState.speed === 1.25 ? 'active' : ''}" onclick="ListeningPractice.setSpeed(1.25)">1.25×</button>
           </div>
 
-          <button type="button" class="listening-loop-toggle-btn ${learnerState.loop ? 'active' : ''}" onclick="ListeningPractice.toggleLoop()" title="Lặp lại đoạn nghe">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
-            <span>Lặp lại ${learnerState.loop ? '(Bật)' : ''}</span>
+          <button type="button" class="listening-loop-btn ${learnerState.loop ? 'active' : ''}" onclick="ListeningPractice.toggleLoop()" title="Lặp lại đoạn nghe">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+            <span>Lặp lại ${learnerState.loop ? 'đoạn' : ''}</span>
           </button>
-        </div>
-
-        <!-- Progress track for active segment -->
-        <div class="listening-progress-bar-wrap">
-          <div class="listening-progress-track" id="learnerProgressTrack">
-            <div class="listening-progress-fill" id="learnerProgressFill"></div>
-          </div>
-          <span class="listening-time-badge" id="learnerTimeBadge">00:00 / 00:00</span>
         </div>
       </div>
     `;
@@ -540,94 +571,117 @@ const ListeningPractice = (function() {
     render();
   }
 
-  function renderRevealedStudySection() {
+  // ---------------------------------------------------------------------------
+  // Compact Feedback Section (Restrained colors & inline evidence highlight)
+  // ---------------------------------------------------------------------------
+  function renderCompactFeedback() {
     const q = currentQuestion;
     const isCorrect = learnerState.isCorrect;
 
     return `
-      <div class="listening-revealed-section">
-        <!-- Result & Explanation Banner -->
-        <div class="listening-feedback-card ${isCorrect ? 'correct' : 'incorrect'}">
-          <div class="listening-feedback-title">
+      <div class="listening-feedback-section ${isCorrect ? 'correct' : 'incorrect'}">
+        <div class="listening-feedback-header">
+          <div class="listening-feedback-status">
             ${isCorrect ? `
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Chính xác! Đáp án đúng: ${q.answer ? 'Đúng (√)' : 'Sai (×)'}</span>
+              <span class="listening-status-icon correct">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <span class="listening-status-text">Chính xác</span>
             ` : `
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
-              <span>Chưa chính xác! Đáp án đúng là: ${q.answer ? 'Đúng (√)' : 'Sai (×)'}</span>
+              <span class="listening-status-icon incorrect">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              </span>
+              <span class="listening-status-text">Chưa đúng (Đáp án: ${q.answer ? 'Đúng' : 'Sai'})</span>
             `}
           </div>
-          <div class="listening-explanation-text">
-            ${q.explanation_vi || 'Đáp án chính xác theo đề thi Hanban.'}
-          </div>
+        </div>
+
+        <div class="listening-feedback-body">
+          <p class="listening-feedback-explanation">${q.explanation_vi}</p>
           ${q.evidence ? `
-            <div class="listening-evidence-box">
-              <div class="listening-evidence-title">Căn cứ trong bài nghe</div>
-              <div class="listening-evidence-zh" lang="zh-CN">“${q.evidence.zh}”</div>
+            <div class="listening-evidence-line">
+              <span class="listening-evidence-label">Căn cứ trong bài:</span>
+              <span class="listening-evidence-quote" lang="zh-CN">
+                “今天的<mark class="listening-evidence-highlight">阳光多好啊，很暖和</mark>。”
+              </span>
             </div>
           ` : ''}
         </div>
+      </div>
+    `;
+  }
 
-        <!-- Transcript Study Box -->
-        <div class="listening-transcript-card">
-          <div class="listening-transcript-header">
-            <div class="listening-transcript-title">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-              <span>Bài nghe chi tiết (Transcript & Phân tích)</span>
-            </div>
-            <div class="listening-transcript-toggles">
-              <button type="button" class="listening-toggle-chip ${learnerState.showPinyin ? 'active' : ''}"
-                onclick="ListeningPractice.toggleTranscriptPinyin()">Pinyin</button>
-              <button type="button" class="listening-toggle-chip ${learnerState.showTranslation ? 'active' : ''}"
-                onclick="ListeningPractice.toggleTranscriptTranslation()">Bản dịch</button>
-            </div>
+  // ---------------------------------------------------------------------------
+  // Transcript ("Lời thoại") & Vocabulary Surface
+  // ---------------------------------------------------------------------------
+  function renderTranscriptAndVocabSection() {
+    const q = currentQuestion;
+
+    return `
+      <div class="listening-transcript-container">
+        <!-- Section Header with Compact Toggles -->
+        <div class="listening-transcript-header">
+          <div class="listening-transcript-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span>Lời thoại</span>
           </div>
+          <div class="listening-transcript-toggles">
+            <button type="button" class="listening-toggle-chip ${learnerState.showPinyin ? 'active' : ''}"
+              onclick="ListeningPractice.toggleTranscriptPinyin()">Pinyin</button>
+            <button type="button" class="listening-toggle-chip ${learnerState.showTranslation ? 'active' : ''}"
+              onclick="ListeningPractice.toggleTranscriptTranslation()">Bản dịch</button>
+          </div>
+        </div>
 
-          <!-- Sentence Breakdown with Individual Sentence Audio Replay -->
-          <div class="listening-sentence-list">
-            ${(q.transcript.sentences || []).map((s) => {
-              const isEvidence = q.evidence && q.evidence.sentence_index === s.index;
-              const isPlayingThis = learnerState.activePlayingSegment === s.id;
-              const hasValidTime = s.start_ms != null && s.end_ms != null;
-              return `
-                <div class="listening-sentence-item ${isPlayingThis ? 'is-active-sentence' : ''} ${isEvidence ? 'is-evidence-sentence' : ''}">
-                  <button type="button" class="listening-sentence-replay-btn ${isPlayingThis ? 'is-playing' : ''}"
-                    onclick="ListeningPractice.togglePlaySentence('${s.id}')"
-                    ${!hasValidTime ? 'disabled title="Chưa có mốc thời gian"' : `title="Nghe câu này (${((s.end_ms - s.start_ms)/1000).toFixed(1)}s)"`}>
-                    ${isPlayingThis ? `
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
-                    ` : `
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-                    `}
-                  </button>
-                  <div class="listening-sentence-content">
-                    <div class="listening-sentence-zh" lang="zh-CN">${s.zh}</div>
-                    ${learnerState.showPinyin && s.pinyin ? `<div class="listening-sentence-pinyin">${s.pinyin}</div>` : ''}
-                    ${learnerState.showTranslation && s.vi ? `<div class="listening-sentence-vi">${s.vi}</div>` : ''}
-                  </div>
+        <!-- Transcript Rows Separated by Subtle Dividers -->
+        <div class="listening-transcript-rows">
+          ${(q.transcript.sentences || []).map((s) => {
+            const isPlayingThis = learnerState.activePlayingSegment === s.id;
+            const hasValidTime = s.start_ms != null && s.end_ms != null;
+            return `
+              <div class="listening-transcript-row ${isPlayingThis ? 'is-playing-row' : ''}">
+                <button type="button" class="listening-row-play-btn ${isPlayingThis ? 'is-playing' : ''}"
+                  onclick="ListeningPractice.togglePlaySentence('${s.id}')"
+                  ${!hasValidTime ? 'disabled title="Chưa có mốc thời gian"' : `title="Nghe câu này (${((s.end_ms - s.start_ms)/1000).toFixed(1)}s)"`}
+                  aria-label="Nghe câu này">
+                  ${isPlayingThis ? `
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+                  ` : `
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  `}
+                </button>
+                <div class="listening-row-content">
+                  <div class="listening-row-zh" lang="zh-CN">${s.zh}</div>
+                  ${learnerState.showPinyin && s.pinyin ? `
+                    <div class="listening-row-pinyin">${s.pinyin}</div>
+                  ` : ''}
+                  ${learnerState.showTranslation && s.vi ? `
+                    <div class="listening-row-vi">${s.vi}</div>
+                  ` : ''}
                 </div>
-              `;
-            }).join('')}
-          </div>
-
-          <!-- Matched Vocabulary Tags -->
-          ${q.vocabulary_matches && q.vocabulary_matches.length > 0 ? `
-            <div style="margin-top:12px; border-top:1px solid var(--border-subtle); padding-top:14px;">
-              <div style="font-size:13px; font-weight:600; color:var(--text-secondary); margin-bottom:8px;">Từ vựng trọng tâm trong bài:</div>
-              <div class="listening-vocab-grid">
-                ${q.vocabulary_matches.map((v) => `
-                  <div class="listening-vocab-chip">
-                    <div class="listening-vocab-left">
-                      <span class="listening-vocab-word" lang="zh-CN">${v.word}</span>
-                      <span class="listening-vocab-meta">${v.pinyin} · ${v.meaning_vi}</span>
-                    </div>
-                    ${v.level ? `<span class="listening-vocab-level-tag ${v.level.toLowerCase()}">${v.level}</span>` : ''}
-                  </div>
-                `).join('')}
               </div>
-            </div>
-          ` : ''}
+            `;
+          }).join('')}
         </div>
+
+        <!-- Quieter Vocabulary Strip -->
+        ${q.vocabulary_matches && q.vocabulary_matches.length > 0 ? `
+          <div class="listening-vocab-section">
+            <div class="listening-vocab-title">Từ vựng trong bài</div>
+            <div class="listening-vocab-grid">
+              ${q.vocabulary_matches.map((v) => `
+                <div class="listening-vocab-card">
+                  <div class="listening-vocab-word" lang="zh-CN">${v.word}</div>
+                  <div class="listening-vocab-meta">
+                    <span class="listening-vocab-pinyin">${v.pinyin}</span>
+                    <span class="listening-vocab-vi">${v.meaning_vi}</span>
+                  </div>
+                  ${v.level ? `<span class="listening-vocab-badge">${v.level}</span>` : ''}
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        ` : ''}
       </div>
     `;
   }
@@ -643,32 +697,42 @@ const ListeningPractice = (function() {
   }
 
   // ---------------------------------------------------------------------------
-  // Boundary Editor View & Interactions
+  // Boundary Editor View
   // ---------------------------------------------------------------------------
   function renderEditorView() {
     const q = currentQuestion;
     const currentSeg = getSelectedEditorSegment();
+    const align = q.alignment || {};
+    const status = align.status || 'unaligned';
+    const statusLabel = status === 'verified' ? 'Đã xác thực' : (status === 'draft' ? 'Bản nháp (Draft)' : 'Chưa căn chỉnh');
 
     return `
       <section class="listening-editor-card" aria-label="Bộ căn chỉnh Audio">
         <div class="listening-editor-header">
-          <div class="listening-editor-title">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-            <span>Bộ căn chỉnh mốc thời gian (Boundary Editor)</span>
+          <div class="listening-editor-title-wrap">
+            <div class="listening-editor-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              <span>Bộ căn chỉnh mốc audio (Boundary Editor)</span>
+            </div>
+            <span class="listening-editor-status-pill ${status}" title="Phương pháp: ${align.method || 'Thủ công'}">
+              <span class="listening-status-dot"></span>
+              <span>${statusLabel}</span>
+            </span>
           </div>
+
           <div class="listening-editor-actions">
             <button type="button" class="listening-editor-btn" onclick="ListeningPractice.exportJSON()" title="Xuất dữ liệu câu hỏi thành file JSON">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
               <span>Xuất JSON</span>
             </button>
             <label class="listening-editor-btn" style="margin:0; cursor:pointer;" title="Nhập file JSON đã chỉnh sửa">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
               <span>Nhập JSON</span>
               <input type="file" accept=".json" onchange="ListeningPractice.importJSON(event)" style="display:none;">
             </label>
             <button type="button" class="listening-editor-btn primary" onclick="ListeningPractice.markAsVerified()" title="Xác thực toàn bộ mốc âm thanh">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Đánh dấu ĐÃ XÁC THỰC</span>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Xác thực mốc</span>
             </button>
           </div>
         </div>
@@ -708,10 +772,10 @@ const ListeningPractice = (function() {
           `).join('')}
         </div>
 
-        <!-- Segment Content Preview Text -->
-        <div style="font-size:14px; padding:10px 14px; background:var(--surface-subtle); border-radius:8px; border:1px solid var(--border-subtle);">
-          <strong>Nội dung đoạn đang chọn:</strong>
-          <span style="font-family:'PingFang SC', sans-serif; color:var(--brand-primary); font-weight:600; margin-left:6px;">
+        <!-- Selected Segment Quote -->
+        <div class="listening-editor-quote">
+          <span class="listening-editor-quote-label">Nội dung đoạn đang chọn:</span>
+          <span class="listening-editor-quote-zh" lang="zh-CN">
             ${getEditorSegmentText(editorState.selectedSegmentKey)}
           </span>
         </div>
@@ -722,7 +786,7 @@ const ListeningPractice = (function() {
           <div class="listening-boundary-col">
             <div class="listening-boundary-label">
               <span>Mốc Bắt đầu (Start)</span>
-              <span style="font-size:11px; color:var(--text-muted); font-family:monospace;">${currentSeg ? formatMs(currentSeg.start_ms) : '--'}</span>
+              <span class="listening-boundary-ms">${currentSeg ? formatMs(currentSeg.start_ms) : '--'}</span>
             </div>
             <div class="listening-boundary-inputs">
               <input type="number" class="listening-numeric-input" id="editorStartInput" value="${currentSeg && currentSeg.start_ms != null ? currentSeg.start_ms : ''}"
@@ -733,7 +797,6 @@ const ListeningPractice = (function() {
               </div>
             </div>
             <button type="button" class="listening-set-here-btn" onclick="ListeningPractice.setBoundaryFromCurrent('start')">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
               <span>Đặt mốc BẮT ĐẦU tại vị trí hiện tại</span>
             </button>
           </div>
@@ -742,7 +805,7 @@ const ListeningPractice = (function() {
           <div class="listening-boundary-col">
             <div class="listening-boundary-label">
               <span>Mốc Kết thúc (End)</span>
-              <span style="font-size:11px; color:var(--text-muted); font-family:monospace;">${currentSeg ? formatMs(currentSeg.end_ms) : '--'}</span>
+              <span class="listening-boundary-ms">${currentSeg ? formatMs(currentSeg.end_ms) : '--'}</span>
             </div>
             <div class="listening-boundary-inputs">
               <input type="number" class="listening-numeric-input" id="editorEndInput" value="${currentSeg && currentSeg.end_ms != null ? currentSeg.end_ms : ''}"
@@ -753,7 +816,6 @@ const ListeningPractice = (function() {
               </div>
             </div>
             <button type="button" class="listening-set-here-btn" onclick="ListeningPractice.setBoundaryFromCurrent('end')">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
               <span>Đặt mốc KẾT THÚC tại vị trí hiện tại</span>
             </button>
           </div>
@@ -764,17 +826,17 @@ const ListeningPractice = (function() {
           <button type="button" class="listening-preview-btn ${editorState.previewPlaying ? 'is-playing' : ''}"
             onclick="ListeningPractice.togglePreviewSelectedSegment()">
             ${editorState.previewPlaying ? `
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
               <span>Dừng phát thử</span>
             ` : `
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
               <span>Phát thử đoạn đã chọn (Preview)</span>
             `}
           </button>
           <div class="listening-duration-readout">
-            Độ dài đoạn: <strong>${currentSeg && currentSeg.start_ms != null && currentSeg.end_ms != null ? ((currentSeg.end_ms - currentSeg.start_ms) / 1000).toFixed(3) + ' giây' : 'Chưa xác định'}</strong>
+            Độ dài đoạn: <strong>${currentSeg && currentSeg.start_ms != null && currentSeg.end_ms != null ? ((currentSeg.end_ms - currentSeg.start_ms) / 1000).toFixed(3) + 's' : '--'}</strong>
           </div>
-          <label style="display:inline-flex; align-items:center; gap:6px; font-size:12px; cursor:pointer;">
+          <label class="listening-loop-checkbox-label">
             <input type="checkbox" ${editorState.loop ? 'checked' : ''} onchange="ListeningPractice.setEditorLoop(this.checked)">
             <span>Lặp lại đoạn (Loop)</span>
           </label>
@@ -784,7 +846,7 @@ const ListeningPractice = (function() {
         <div class="listening-editor-error" id="editorErrorBox"></div>
 
         <!-- Local Draft Status Note -->
-        <div style="display:flex; align-items:center; justify-content:space-between; font-size:12px; color:var(--text-muted); border-top:1px solid var(--border-subtle); padding-top:12px;">
+        <div class="listening-editor-footer">
           <span>Trạng thái lưu trữ: <strong>${editorState.lastSaved ? 'Đã lưu nháp lúc ' + editorState.lastSaved : 'Chưa lưu nháp mới'}</strong></span>
           <button type="button" class="listening-editor-btn" onclick="ListeningPractice.saveLocalDraftManual()">Lưu bản nháp</button>
         </div>
@@ -814,7 +876,6 @@ const ListeningPractice = (function() {
     stopAudio();
     editorState.selectedSegmentKey = key;
     render();
-    // Move scrubber to segment start for convenience
     const seg = getSelectedEditorSegment();
     if (seg && seg.start_ms != null && audio) {
       audio.currentTime = seg.start_ms / 1000;
@@ -896,7 +957,6 @@ const ListeningPractice = (function() {
       errBox.textContent = errorMsg;
     }
 
-    // Keep full_question start/end synced if passage and statement are updated
     if (currentQuestion.segments.passage && currentQuestion.segments.statement) {
       const pStart = currentQuestion.segments.passage.start_ms;
       const sEnd = currentQuestion.segments.statement.end_ms;
@@ -1072,8 +1132,8 @@ const ListeningPractice = (function() {
     }
     errBox.style.display = 'block';
     errBox.style.background = isError ? 'var(--danger-bg)' : 'var(--success-bg)';
-    errBox.style.borderColor = isError ? '#dc2626' : '#16a34a';
-    errBox.style.color = isError ? '#dc2626' : '#166534';
+    errBox.style.borderColor = isError ? 'rgba(220,38,38,0.3)' : 'rgba(22,163,74,0.3)';
+    errBox.style.color = isError ? 'var(--danger-text)' : 'var(--success-text)';
     errBox.textContent = msg;
     setTimeout(() => {
       if (errBox) errBox.style.display = 'none';
@@ -1090,39 +1150,36 @@ const ListeningPractice = (function() {
     if (playBtn) {
       playBtn.classList.toggle('is-playing', isPlayingFull);
       playBtn.innerHTML = isPlayingFull ? `
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
         <span>Tạm dừng</span>
       ` : `
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-        <span>${learnerState.answered ? 'Nghe lại toàn bài & câu hỏi' : 'Nghe toàn bộ câu hỏi'}</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        <span>Nghe đoạn này</span>
       `;
     }
 
     // 2. Sentence replay buttons
-    document.querySelectorAll('.listening-sentence-replay-btn').forEach((btn) => {
-      const sentenceId = btn.closest('.listening-sentence-item')?.querySelector('.listening-sentence-replay-btn')?.getAttribute('onclick')?.match(/'([^']+)'/)?.[1];
+    document.querySelectorAll('.listening-row-play-btn').forEach((btn) => {
+      const row = btn.closest('.listening-transcript-row');
+      const onclickAttr = btn.getAttribute('onclick') || '';
+      const match = onclickAttr.match(/'([^']+)'/);
+      const sentenceId = match ? match[1] : null;
       const isPlaying = sentenceId && learnerState.activePlayingSegment === sentenceId;
       btn.classList.toggle('is-playing', Boolean(isPlaying));
+      if (row) {
+        row.classList.toggle('is-playing-row', Boolean(isPlaying));
+      }
     });
 
-    // 3. Sentence list item active state
-    document.querySelectorAll('.listening-sentence-item').forEach((item) => {
-      const btn = item.querySelector('.listening-sentence-replay-btn');
-      const onclickAttr = btn ? btn.getAttribute('onclick') : '';
-      const match = onclickAttr ? onclickAttr.match(/'([^']+)'/) : null;
-      const sentenceId = match ? match[1] : null;
-      item.classList.toggle('is-active-sentence', Boolean(sentenceId && learnerState.activePlayingSegment === sentenceId));
-    });
-
-    // 4. Editor Preview Button
+    // 3. Editor Preview Button
     const prevBtn = document.querySelector('.listening-preview-btn');
     if (prevBtn) {
       prevBtn.classList.toggle('is-playing', editorState.previewPlaying);
       prevBtn.innerHTML = editorState.previewPlaying ? `
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
         <span>Dừng phát thử</span>
       ` : `
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
         <span>Phát thử đoạn đã chọn (Preview)</span>
       `;
     }
@@ -1149,7 +1206,6 @@ const ListeningPractice = (function() {
   }
 
   function attachDynamicListeners() {
-    // Click on progress track to seek inside active segment
     const track = document.getElementById('learnerProgressTrack');
     if (track && activeSegment) {
       track.onclick = (e) => {
@@ -1165,13 +1221,13 @@ const ListeningPractice = (function() {
   }
 
   function renderAudioError(msg) {
-    const box = document.getElementById('editorErrorBox') || document.querySelector('.listening-player-cluster');
+    const box = document.getElementById('editorErrorBox') || document.querySelector('.listening-player-surface');
     if (box) {
       const errDiv = document.createElement('div');
       errDiv.className = 'listening-editor-error';
       errDiv.style.display = 'block';
       errDiv.style.marginTop = '10px';
-      errDiv.textContent = 'Lỗi phát âm thanh: ' + msg;
+      errDiv.textContent = 'Lỗi âm thanh: ' + msg;
       box.appendChild(errDiv);
       setTimeout(() => errDiv.remove(), 5000);
     }
@@ -1186,7 +1242,7 @@ const ListeningPractice = (function() {
   }
 
   function formatMs(ms) {
-    if (isNaN(ms) || ms == null || ms < 0) return '00:00';
+    if (isNaN(ms) || ms == null || ms < 0) return '00:00.0';
     const totalSec = ms / 1000;
     const m = Math.floor(totalSec / 60);
     const s = Math.floor(totalSec % 60);
