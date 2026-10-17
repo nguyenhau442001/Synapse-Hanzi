@@ -4749,14 +4749,64 @@ body.flashcard-study-mode .grammar-breakdown-panel[hidden] { display: none !impo
     border-color: var(--accent);
   }
   .mobile-dock-close:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; border-radius: var(--radius-md); }
-  #mobileDockDialogBody {
+  #mobileDockDialogBody,
+  #mobileStatsDialogBody {
     clear: both;
     display: flex;
     flex-direction: column;
     gap: 16px;
     overflow-y: auto;
     overscroll-behavior: contain;
-    padding-bottom: 16px;
+    padding-bottom: 24px;
+  }
+  .mobile-dock-dialog .home-widgets {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+    width: 100% !important;
+    margin-top: 4px !important;
+  }
+  .mobile-dock-dialog .home-widgets > .hw-card {
+    margin: 0 !important;
+    background: var(--card-bg) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: var(--radius-lg, 16px) !important;
+    box-shadow: var(--card-shadow) !important;
+    padding: 16px !important;
+  }
+  .mobile-stats-kpi-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 4px;
+  }
+  .mobile-kpi-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    margin-bottom: 0 !important;
+  }
+  .mobile-stats-history-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-radius: var(--radius-md, 12px);
+    background: var(--surface-subtle);
+    border: 1px solid var(--border);
+    color: var(--accent);
+    font: inherit;
+    font-size: 13.5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 150ms ease;
+  }
+  .mobile-stats-history-btn:hover {
+    background: var(--accent-light);
+    border-color: var(--accent);
+  }
+  .mobile-stats-history-btn:active {
+    transform: scale(0.98);
   }
   .workstation-left, .workstation-right { display: none; }
   body.flashcard-study-mode .workstation-left { display: none !important; }

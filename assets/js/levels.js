@@ -461,13 +461,12 @@ function renderLearningDashboard() {
   const dailyFill = document.getElementById('dailyGoalFill');
   const dailyMessage = document.getElementById('dailyGoalMessage');
   const dailyGoalSelect = document.getElementById('dailyGoalSelect');
-  const streakNode = document.getElementById('learningStreak');
   const knownNode = document.getElementById('totalKnownCount');
   const studiedNode = document.getElementById('totalStudiedCount');
   const quickButton = document.getElementById('quickStudyButton');
   const dueCount = document.getElementById('todayDueCount');
   const todayReviewButton = document.getElementById('todayReviewButton');
-  if (!dailyCount || !dailyFill || !dailyMessage || !dailyGoalSelect || !streakNode || !knownNode || !studiedNode || !quickButton) return;
+  if (!dailyCount || !dailyFill || !dailyMessage || !dailyGoalSelect || !knownNode || !studiedNode || !quickButton) return;
 
   const activity = readStudyActivity();
   const today = localDateKey(new Date());
@@ -487,7 +486,6 @@ function renderLearningDashboard() {
     : todayCount > 0
       ? `Còn ${dailyGoal - todayCount} từ nữa để hoàn thành mục tiêu.`
       : `Học ${dailyGoal} từ để hoàn thành mục tiêu hôm nay.`;
-  streakNode.textContent = `🔥 ${streak} ngày học`;
   const headerStreak = document.getElementById('headerStreakText');
   if (headerStreak) headerStreak.textContent = `${streak} ngày`;
   knownNode.textContent = summary.totalKnown;

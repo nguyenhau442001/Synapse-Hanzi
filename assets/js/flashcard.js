@@ -899,6 +899,7 @@ function toggleStudyWritingPanel(forceOpen) {
 }
 
 function closeAllStudyDrawers() {
+  if (typeof closeMobileStatsSheet === 'function') closeMobileStatsSheet();
   if (typeof toggleTransferPanel === 'function') toggleTransferPanel(false);
   if (typeof toggleRadicalTransferPanel === 'function') toggleRadicalTransferPanel(false);
   const wasOpen = document.body.classList.contains('study-sidebar-open');
