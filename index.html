@@ -20,6 +20,7 @@
 <link rel="stylesheet" href="assets/css/dashboard-enhancements.css?v=20261017-mobile-clean1">
 <link rel="stylesheet" href="assets/css/reading-analysis.css?v=20261015-mobile-ui-opt">
 <link rel="stylesheet" href="assets/css/graded-reading.css?v=20261010-single-line-read1">
+<link rel="stylesheet" href="assets/css/listening-practice.css?v=20261018-listen1">
 <link rel="stylesheet" href="assets/css/study-help-modal.css?v=20261016-help-redesign1">
 <script>(function(){try{var p=new URLSearchParams(window.location.search).get('theme');if(p==='dark'||p==='light'){document.documentElement.dataset.theme=p;return;}}catch(e){}var h=new Date().getHours();var d=(h>=6&&h<18)?'light':'dark';var m=localStorage.getItem('hsk_theme_manual');var e=parseInt(localStorage.getItem('hsk_theme_manual_expiry')||'0',10);document.documentElement.dataset.theme=(m&&Date.now()<e)?m:d;if(localStorage.getItem('hsk_show_hanviet')==='false'){document.documentElement.classList.add('hide-hanviet');}})();</script>
 <script>
@@ -227,6 +228,11 @@ if ('serviceWorker' in navigator) {
             aria-controls="screenReadingAnalysis" onclick="setPrimaryTab('reading')" aria-label="Đọc hiểu HSK4">
             <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
             <span>Đọc hiểu HSK4</span>
+          </button>
+          <button id="primaryTabListening" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
+            aria-controls="screenListeningPractice" onclick="setPrimaryTab('listening')" aria-label="Luyện nghe HSK4">
+            <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+            <span>Luyện nghe HSK4</span>
           </button>
           <button id="primaryTabRadicals" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
             aria-controls="screenRadicalHub" onclick="setPrimaryTab('radicals')" aria-label="Bộ thủ">
@@ -1115,10 +1121,13 @@ if ('serviceWorker' in navigator) {
   <!-- SCREEN 11: Synapse Graded Reading -->
   <div id="screenGradedReading" style="display:none"></div>
 
+  <!-- SCREEN 12: HSK Listening Practice & Alignment -->
+  <div id="screenListeningPractice" style="display:none"></div>
+
     </div>
     <aside class="workstation-right" id="workstationRight" aria-label="Phòng thực hành tương tác"></aside>
     <footer class="app-footer">
-      <p class="footer-note"><span class="footer-version" title="Phiên bản ứng dụng">v1.0.1</span> · Tiến trình tự lưu trên thiết bị này · Phát triển bởi <a href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer">haunguyenngoc442001</a> · <a href="https://www.facebook.com/haunguyenngoc442001/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+      <p class="footer-note"><span class="footer-version" title="Phiên bản ứng dụng">v1.1.0</span> · Tiến trình tự lưu trên thiết bị này · Phát triển bởi <a href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer">haunguyenngoc442001</a> · <a href="https://www.facebook.com/haunguyenngoc442001/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
     </footer>
   </div>
 </div>
@@ -1160,6 +1169,7 @@ if ('serviceWorker' in navigator) {
 <script src="assets/js/grammar-breakdown.js?v=20261008-fix-stroke-drawer2"></script>
 <script src="assets/js/reading-analysis.js?v=20261015-mobile-ui-opt"></script>
 <script src="assets/js/graded-reading.js?v=20261014-fix-render1"></script>
+<script src="assets/js/listening-practice.js?v=20261018-listen1"></script>
 <script>
 window.addEventListener('load', function() {
   var prefetchReading = function() {

@@ -39,6 +39,7 @@ const PRIMARY_TAB_SCREENS = {
   review: { tabId: 'primaryTabReview', screenId: 'screenReviewPicker' },
   reading: { tabId: 'primaryTabReading', screenId: 'screenReadingAnalysis' },
   gradedReading: { tabId: 'primaryTabGradedReading', screenId: 'screenGradedReading' },
+  listening: { tabId: 'primaryTabListening', screenId: 'screenListeningPractice' },
   sentenceGame: { tabId: 'primaryTabSentenceGame', screenId: 'screenSentenceGame' },
   guessWord: { tabId: 'primaryTabGuessWord', screenId: 'screenGuessWord' },
   speedQuiz: { tabId: 'primaryTabSpeedQuiz', screenId: 'screenSpeedQuiz' },
@@ -115,12 +116,16 @@ function setPrimaryTab(tab, options) {
   if (mobReview) mobReview.classList.toggle('active', tab === 'review');
   if (mobProfile) mobProfile.classList.remove('active');
   if (typeof closeMobileStatsSheet === 'function') closeMobileStatsSheet();
-  const isTool = ['radicals', 'sentenceGame', 'guessWord', 'speedQuiz', 'reading', 'gradedReading'].includes(tab);
+  const isTool = ['radicals', 'sentenceGame', 'guessWord', 'speedQuiz', 'reading', 'gradedReading', 'listening'].includes(tab);
   const isGame = ['sentenceGame', 'guessWord', 'speedQuiz'].includes(tab);
   document.body.classList.toggle('is-game-view', isGame);
   document.body.classList.toggle('reading-view-active', tab === 'reading');
   document.body.classList.toggle('graded-reading-active', tab === 'gradedReading');
+  document.body.classList.toggle('listening-view-active', tab === 'listening');
   document.body.classList.toggle('review-view-active', tab === 'review');
+  if (previousTab === 'listening' && tab !== 'listening') {
+    if (typeof ListeningPractice !== 'undefined') ListeningPractice.stopAudio();
+  }
   if (tab !== 'reading') {
     document.body.classList.remove('reading-zen-active');
   }
@@ -147,6 +152,9 @@ function setPrimaryTab(tab, options) {
   }
   if (tab === 'gradedReading') {
     if (typeof GradedReading !== 'undefined') GradedReading.init();
+  }
+  if (tab === 'listening') {
+    if (typeof ListeningPractice !== 'undefined') ListeningPractice.init();
   }
   if (tab === 'review') {
     if (typeof showReviewSetup === 'function') {

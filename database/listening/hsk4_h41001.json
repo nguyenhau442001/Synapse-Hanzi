@@ -1,0 +1,139 @@
+{
+  "exam_id": "H41001",
+  "level": "HSK4",
+  "title": "HSK 4 - Đề thi mẫu H41001 - Phần Nghe (Listening)",
+  "total_questions": 45,
+  "audio_src": "assets/audio/exams/H41001.mp3",
+  "questions": [
+    {
+      "id": "H41001_L_01",
+      "exam_id": "H41001",
+      "question_number": 1,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "今天天气不错。",
+        "pinyin": "Jīntiān tiānqì búcuò.",
+        "vi": "Hôm nay thời tiết khá tốt."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng vì người nói cho biết nắng hôm nay đẹp và trời rất ấm áp.",
+      "evidence": {
+        "zh": "今天的阳光多好啊，很暖和。",
+        "sentence_index": 1
+      },
+      "audio_src": "assets/audio/exams/H41001.mp3",
+      "alignment": {
+        "status": "verified",
+        "method": "whisper_asr_silence_refined_manual_reviewed",
+        "verified_at": "2026-10-18T00:32:00+07:00",
+        "notes": "Boundary located via Whisper ASR + silence envelope analysis, verified by playback."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 136250,
+          "end_ms": 148120
+        },
+        "statement": {
+          "start_ms": 149000,
+          "end_ms": 151000
+        },
+        "full_question": {
+          "start_ms": 136250,
+          "end_ms": 151000
+        }
+      },
+      "transcript": {
+        "full_zh": "喂？我们去树林里走走吧，今天的阳光多好啊，很暖和。好吧？图书馆门口儿见？",
+        "full_vi": "A lô? Chúng ta vào rừng cây đi dạo một chút nhé. Nắng hôm nay đẹp quá, trời rất ấm áp. Được nhé? Gặp nhau ở cửa thư viện nhé?",
+        "sentences": [
+          {
+            "id": "H41001_L_01_S1",
+            "index": 0,
+            "zh": "喂？我们去树林里走走吧，",
+            "pinyin": "Wèi? Wǒmen qù shùlín lǐ zǒuzou ba,",
+            "vi": "A lô? Chúng ta vào rừng cây đi dạo một chút nhé.",
+            "start_ms": 136250,
+            "end_ms": 140250
+          },
+          {
+            "id": "H41001_L_01_S2",
+            "index": 1,
+            "zh": "今天的阳光多好啊，很暖和。",
+            "pinyin": "Jīntiān de yángguāng duō hǎo a, hěn nuǎnhuo.",
+            "vi": "Nắng hôm nay đẹp quá, trời rất ấm áp.",
+            "start_ms": 140920,
+            "end_ms": 144650
+          },
+          {
+            "id": "H41001_L_01_S3",
+            "index": 2,
+            "zh": "好吧？图书馆门口儿见？",
+            "pinyin": "Hǎo ba? Túshūguǎn ménkǒur jiàn?",
+            "vi": "Được nhé? Gặp nhau ở cửa thư viện nhé?",
+            "start_ms": 145380,
+            "end_ms": 148120
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "阳光",
+          "pinyin": "yángguāng",
+          "meaning_vi": "ánh nắng",
+          "vocab_id": 502,
+          "level": "HSK4"
+        },
+        {
+          "word": "暖和",
+          "pinyin": "nuǎnhuo",
+          "meaning_vi": "ấm áp",
+          "vocab_id": 319,
+          "level": "HSK4"
+        },
+        {
+          "word": "图书馆",
+          "pinyin": "túshūguǎn",
+          "meaning_vi": "thư viện",
+          "vocab_id": 223,
+          "level": "HSK3"
+        },
+        {
+          "word": "天气",
+          "pinyin": "tiānqì",
+          "meaning_vi": "thời tiết",
+          "vocab_id": 107,
+          "level": "HSK1"
+        },
+        {
+          "word": "走",
+          "pinyin": "zǒu",
+          "meaning_vi": "đi bộ, rời đi",
+          "vocab_id": 148,
+          "level": "HSK2"
+        },
+        {
+          "word": "树林",
+          "pinyin": "shùlín",
+          "meaning_vi": "rừng cây",
+          "vocab_id": null,
+          "level": null
+        },
+        {
+          "word": "门口儿",
+          "pinyin": "ménkǒur",
+          "meaning_vi": "trước cửa, cổng",
+          "vocab_id": null,
+          "level": null
+        },
+        {
+          "word": "不错",
+          "pinyin": "búcuò",
+          "meaning_vi": "khá tốt, không tồi",
+          "vocab_id": null,
+          "level": null
+        }
+      ]
+    }
+  ]
+}
