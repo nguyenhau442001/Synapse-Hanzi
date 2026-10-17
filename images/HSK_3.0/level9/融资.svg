@@ -1,0 +1,67 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed dark mode container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle background glow / atmosphere representing tech startup ecosystem -->
+  <circle cx="120" cy="110" r="70" fill="#242B38" opacity="0.6"/>
+
+  <!-- Dynamic background action lines representing capital flow (financing action) -->
+  <path d="M 60 170 Q 120 120 180 80" stroke="#3A4454" stroke-width="1.5" stroke-dasharray="4 4" fill="none"/>
+  <path d="M 70 185 Q 120 135 190 95" stroke="#F5A623" stroke-width="1.5" opacity="0.4" fill="none"/>
+
+  <!-- Emerging Tech / Startup Entity (Representing the "初创科技企业") -->
+  <g transform="translate(145, 115)">
+    <!-- Server / Tech Hub Base -->
+    <rect x="0" y="25" width="40" height="35" rx="4" fill="#2E3846"/>
+    <rect x="6" y="33" width="28" height="6" rx="2" fill="#3B4758"/>
+    <circle cx="12" cy="36" r="2" fill="#4CD964"/>
+    <rect x="6" y="47" width="28" height="6" rx="2" fill="#3B4758"/>
+    <circle cx="12" cy="50" r="2" fill="#F5A623"/>
+
+    <!-- Dynamic upward-growing data nodes / scaling up -->
+    <line x1="20" y1="25" x2="20" y2="10" stroke="#F5A623" stroke-width="2" stroke-dasharray="3 3"/>
+    <circle cx="20" cy="6" r="5" fill="#F5A623"/>
+    
+    <!-- Growth sparks -->
+    <path d="M 28 12 L 34 8" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 12 12 L 6 8" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Investor Character (Giving capital / Action: 融资 huy động vốn) -->
+  <g transform="translate(45, 100)">
+    <!-- Investor Body -->
+    <path d="M 35 60 C 35 45 55 45 55 60 L 65 90 C 65 92 63 94 60 94 L 30 94 C 27 94 25 92 25 90 Z" fill="#2E3846"/>
+    <!-- Investor Head & Hair -->
+    <circle cx="45" cy="30" r="12" fill="#E0E6ED"/>
+    <path d="M 33 28 C 33 20 57 20 57 28 C 57 30 55 30 55 30 C 55 30 50 24 45 24 C 40 24 35 30 35 30 C 35 30 33 30 33 28 Z" fill="#4A5568"/>
+
+    <!-- Extended arm showing dynamic action of transferring funds -->
+    <path d="M 45 52 L 75 62" stroke="#2E3846" stroke-width="8" stroke-linecap="round"/>
+    <!-- Hand holding gold coin / investment token -->
+    <circle cx="78" cy="63" r="10" fill="#F5A623"/>
+    <circle cx="78" cy="63" r="6" fill="#F8C15E"/>
+    <text x="78" y="67" font-family="sans-serif" font-size="10" font-weight="bold" fill="#1A1D24" text-anchor="middle">$</text>
+  </g>
+
+  <!-- Founder Character (Receiving capital / Action) -->
+  <g transform="translate(115, 100)">
+    <!-- Founder Body -->
+    <path d="M 35 60 C 35 45 55 45 55 60 L 65 90 C 65 92 63 94 60 94 L 30 94 C 27 94 25 92 25 90 Z" fill="#3B4758"/>
+    <!-- Founder Head & Hair -->
+    <circle cx="45" cy="30" r="12" fill="#E0E6ED"/>
+    <path d="M 33 27 C 35 18 55 18 57 27 C 53 23 37 23 33 27 Z" fill="#313A46"/>
+
+    <!-- Receiving arm reaching out -->
+    <path d="M 45 52 L 15 62" stroke="#3B4758" stroke-width="8" stroke-linecap="round"/>
+    <!-- Hand open welcoming investment -->
+    <circle cx="12" cy="63" r="5" fill="#E0E6ED"/>
+  </g>
+
+  <!-- Motion lines emphasizing the active transfer of strategic investment -->
+  <g transform="translate(95, 155)">
+    <!-- High contrast focal highlight under the exchange point -->
+    <ellipse cx="25" cy="5" rx="45" ry="6" fill="#F5A623" opacity="0.15"/>
+    <path d="M -5 -2 L 15 -2" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 2"/>
+    <path d="M 35 -2 L 55 -2" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 2"/>
+  </g>
+</svg>

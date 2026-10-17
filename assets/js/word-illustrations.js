@@ -47321,6 +47321,256 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "热衷.svg",
     "src": "images/HSK_3.0/level7/热衷.svg",
     "caption": "say mê; đam mê; tha thiết"
+  },
+  "人次": {
+    "file": "人次.svg",
+    "src": "images/HSK_3.0/level7/人次.svg",
+    "caption": "lượt người"
+  },
+  "人品": {
+    "file": "人品.svg",
+    "src": "images/HSK_3.0/level7/人品.svg",
+    "caption": "nhân phẩm; phẩm cách con người"
+  },
+  "人气": {
+    "file": "人气.svg",
+    "src": "images/HSK_3.0/level7/人气.svg",
+    "caption": "sức hút mến mộ; độ nổi tiếng"
+  },
+  "人情": {
+    "file": "人情.svg",
+    "src": "images/HSK_3.0/level7/人情.svg",
+    "caption": "tình người; món nợ ân nghĩa"
+  },
+  "人权": {
+    "file": "人权.svg",
+    "src": "images/HSK_3.0/level7/人权.svg",
+    "caption": "nhân quyền; quyền con người"
+  },
+  "人身": {
+    "file": "人身.svg",
+    "src": "images/HSK_3.0/level7/人身.svg",
+    "caption": "thân thể con người; nhân thân"
+  },
+  "人手": {
+    "file": "人手.svg",
+    "src": "images/HSK_3.0/level7/人手.svg",
+    "caption": "nhân lực; người làm"
+  },
+  "人文": {
+    "file": "人文.svg",
+    "src": "images/HSK_3.0/level7/人文.svg",
+    "caption": "nhân văn; văn hóa nhân bản"
+  },
+  "人选": {
+    "file": "人选.svg",
+    "src": "images/HSK_3.0/level7/人选.svg",
+    "caption": "người được chọn; ứng viên sáng giá"
+  },
+  "人缘儿": {
+    "file": "人缘儿.svg",
+    "src": "images/HSK_3.0/level7/人缘儿.svg",
+    "caption": "được lòng mọi người; duyên người"
+  },
+  "人造": {
+    "file": "人造.svg",
+    "src": "images/HSK_3.0/level7/人造.svg",
+    "caption": "nhân tạo"
+  },
+  "忍心": {
+    "file": "忍心.svg",
+    "src": "images/HSK_3.0/level7/忍心.svg",
+    "caption": "đành lòng; nhẫn tâm; nỡ"
+  },
+  "任": {
+    "file": "任.svg",
+    "src": "images/HSK_3.0/level7/任.svg",
+    "caption": "ren"
+  },
+  "任期": {
+    "file": "任期.svg",
+    "src": "images/HSK_3.0/level7/任期.svg",
+    "caption": "nhiệm kỳ"
+  },
+  "韧性": {
+    "file": "韧性.svg",
+    "src": "images/HSK_3.0/level7/韧性.svg",
+    "caption": "tính dẻo dai; độ bền bỉ"
+  },
+  "认证": {
+    "file": "认证.svg",
+    "src": "images/HSK_3.0/level7/认证.svg",
+    "caption": "chứng nhận; kiểm định"
+  },
+  "任职": {
+    "file": "任职.svg",
+    "src": "images/HSK_3.0/level7/任职.svg",
+    "caption": "đảm nhiệm; giữ chức vụ"
+  },
+  "日复一日": {
+    "file": "日复一日.svg",
+    "src": "images/HSK_3.0/level7/日复一日.svg",
+    "caption": "ngày qua ngày; ngày lại ngày"
+  },
+  "日趋": {
+    "file": "日趋.svg",
+    "src": "images/HSK_3.0/level7/日趋.svg",
+    "caption": "ngày một; ngày càng"
+  },
+  "融": {
+    "file": "融.svg",
+    "src": "images/HSK_3.0/level7/融.svg",
+    "caption": "tan chảy; hòa tan"
+  },
+  "容光焕发": {
+    "file": "容光焕发.svg",
+    "src": "images/HSK_3.0/level7/容光焕发.svg",
+    "caption": "rạng rỡ tươi tắn; nét mặt sáng ngời"
+  },
+  "荣获": {
+    "file": "荣获.svg",
+    "src": "images/HSK_3.0/level7/荣获.svg",
+    "caption": "vinh dự nhận được; vinh dự đoạt giải"
+  },
+  "容许": {
+    "file": "容许.svg",
+    "src": "images/HSK_3.0/level7/容许.svg",
+    "caption": "cho phép; dung thứ"
+  },
+  "容颜": {
+    "file": "容颜.svg",
+    "src": "images/HSK_3.0/level7/容颜.svg",
+    "caption": "dung nhan; diện mạo"
+  },
+  "荣耀": {
+    "file": "荣耀.svg",
+    "src": "images/HSK_3.0/level7/荣耀.svg",
+    "caption": "vinh quang; vinh dự vẻ vang"
+  },
+  "融资": {
+    "file": "融资.svg",
+    "src": "images/HSK_3.0/level7/融资.svg",
+    "caption": "gọi vốn; huy động vốn"
+  },
+  "冗长": {
+    "file": "冗长.svg",
+    "src": "images/HSK_3.0/level7/冗长.svg",
+    "caption": "dài dòng; lê thê"
+  },
+  "如痴如醉": {
+    "file": "如痴如醉.svg",
+    "src": "images/HSK_3.0/level7/如痴如醉.svg",
+    "caption": "say sưa ngây ngất; mê đắm"
+  },
+  "如期": {
+    "file": "如期.svg",
+    "src": "images/HSK_3.0/level7/如期.svg",
+    "caption": "đúng hạn; đúng kỳ hạn"
+  },
+  "如实": {
+    "file": "如实.svg",
+    "src": "images/HSK_3.0/level7/如实.svg",
+    "caption": "đúng sự thật; thành thật"
+  },
+  "如意": {
+    "file": "如意.svg",
+    "src": "images/HSK_3.0/level7/如意.svg",
+    "caption": "như ý; vừa lòng; toại nguyện"
+  },
+  "如一": {
+    "file": "如一.svg",
+    "src": "images/HSK_3.0/level7/如一.svg",
+    "caption": "trước sau như một; không hề thay đổi"
+  },
+  "如愿以偿": {
+    "file": "如愿以偿.svg",
+    "src": "images/HSK_3.0/level7/如愿以偿.svg",
+    "caption": "thỏa lòng mong ước; toại nguyện"
+  },
+  "乳制品": {
+    "file": "乳制品.svg",
+    "src": "images/HSK_3.0/level7/乳制品.svg",
+    "caption": "sản phẩm từ sữa; chế phẩm sữa"
+  },
+  "入场": {
+    "file": "入场.svg",
+    "src": "images/HSK_3.0/level7/入场.svg",
+    "caption": "vào hội trường; vào khán phòng"
+  },
+  "入场券": {
+    "file": "入场券.svg",
+    "src": "images/HSK_3.0/level7/入场券.svg",
+    "caption": "vé vào cửa; vé vào cổng"
+  },
+  "入侵": {
+    "file": "入侵.svg",
+    "src": "images/HSK_3.0/level7/入侵.svg",
+    "caption": "xâm nhập; xâm lược"
+  },
+  "入手": {
+    "file": "入手.svg",
+    "src": "images/HSK_3.0/level7/入手.svg",
+    "caption": "bắt tay vào làm; tiếp cận giải quyết"
+  },
+  "软弱": {
+    "file": "软弱.svg",
+    "src": "images/HSK_3.0/level7/软弱.svg",
+    "caption": "yếu đuối; mềm yếu"
+  },
+  "软实力": {
+    "file": "软实力.svg",
+    "src": "images/HSK_3.0/level7/软实力.svg",
+    "caption": "sức mạnh mềm"
+  },
+  "瑞雪": {
+    "file": "瑞雪.svg",
+    "src": "images/HSK_3.0/level7/瑞雪.svg",
+    "caption": "tuyết lành; tuyết báo hiệu mùa màng bội thu"
+  },
+  "润": {
+    "file": "润.svg",
+    "src": "images/HSK_3.0/level7/润.svg",
+    "caption": "làm ẩm; nhuận"
+  },
+  "若": {
+    "file": "若.svg",
+    "src": "images/HSK_3.0/level7/若.svg",
+    "caption": "nếu; nếu như"
+  },
+  "弱势": {
+    "file": "弱势.svg",
+    "src": "images/HSK_3.0/level7/弱势.svg",
+    "caption": "yếu thế; thế yếu"
+  },
+  "弱项": {
+    "file": "弱项.svg",
+    "src": "images/HSK_3.0/level7/弱项.svg",
+    "caption": "điểm yếu; hạn chế; sở đoản"
+  },
+  "赛": {
+    "file": "赛.svg",
+    "src": "images/HSK_3.0/level7/赛.svg",
+    "caption": "chạy đua; thi đua; tranh tài"
+  },
+  "赛车": {
+    "file": "赛车.svg",
+    "src": "images/HSK_3.0/level7/赛车.svg",
+    "caption": "đua xe; xe đua"
+  },
+  "赛季": {
+    "file": "赛季.svg",
+    "src": "images/HSK_3.0/level7/赛季.svg",
+    "caption": "mùa giải"
+  },
+  "赛跑": {
+    "file": "赛跑.svg",
+    "src": "images/HSK_3.0/level7/赛跑.svg",
+    "caption": "chạy đua; chạy thi"
+  },
+  "三番五次": {
+    "file": "三番五次.svg",
+    "src": "images/HSK_3.0/level7/三番五次.svg",
+    "caption": "năm lần bảy lượt"
   }
 };
 
