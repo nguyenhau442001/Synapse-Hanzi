@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground -->
+  <path d="M40 180 L200 180 L200 185 C200 190 40 190 40 185 Z" fill="#2D343E"/>
+  
+  <!-- Tombstone -->
+  <path d="M100 180 L100 110 C100 90 140 90 140 110 L140 180 Z" fill="#7D8590"/>
+  <path d="M105 115 L135 115 L135 175 L105 175 Z" fill="#1A1D24"/>
+  
+  <!-- Mound -->
+  <path d="M80 180 C80 140 160 140 160 180" fill="#3A424F" stroke="#5D6775" stroke-width="2"/>
+  
+  <!-- Offering/Respectful gesture: Small bouquet of flowers -->
+  <g transform="translate(145, 170)">
+    <circle cx="0" cy="0" r="6" fill="#FFB84D"/>
+    <circle cx="8" cy="-5" r="6" fill="#FFB84D"/>
+    <circle cx="-8" cy="-5" r="6" fill="#FFB84D"/>
+    <path d="M0 0 L0 10" stroke="#A8B1C0" stroke-width="2"/>
+  </g>
+  
+  <!-- Decorative elements: Willow branch silhouette -->
+  <path d="M50 180 Q50 100 60 80 M55 100 Q60 100 65 110 M55 120 Q60 120 65 130" stroke="#4A5568" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

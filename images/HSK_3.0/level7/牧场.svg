@@ -1,0 +1,63 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background / Sky & Sun -->
+  <circle cx="120" cy="110" r="80" fill="#252A34" opacity="0.6"/>
+  <!-- Warm golden sun/glow representing Hulunbuir summer -->
+  <circle cx="180" cy="70" r="18" fill="#F39C12" opacity="0.2"/>
+  <circle cx="180" cy="70" r="12" fill="#F1C40F" opacity="0.4"/>
+
+  <!-- Distant rolling hills -->
+  <path d="M 20,130 Q 80,90 140,125 T 220,120 L 220,180 L 20,180 Z" fill="#274635" opacity="0.7"/>
+
+  <!-- Main lush grassland (牧场) -->
+  <path d="M 20,145 Q 90,110 160,135 T 220,130 L 220,205 Q 120,225 20,205 Z" fill="#2ECC71" opacity="0.85"/>
+  <path d="M 20,165 Q 100,140 220,155 L 220,210 Q 120,230 20,210 Z" fill="#27AE60"/>
+
+  <!-- Wooden Fence (Ranch Element) -->
+  <!-- Post 1 -->
+  <rect x="45" y="145" width="4" height="25" fill="#D35400" rx="1"/>
+  <!-- Post 2 -->
+  <rect x="75" y="150" width="4" height="25" fill="#D35400" rx="1"/>
+  <!-- Post 3 -->
+  <rect x="105" y="155" width="4" height="25" fill="#D35400" rx="1"/>
+  <!-- Rails -->
+  <path d="M 45,152 L 110,162 M 45,162 L 110,172" stroke="#E67E22" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Wooden Barn / Ranch House silhouette in background -->
+  <path d="M 160,135 L 175,115 L 190,135 Z" fill="#C0392B"/>
+  <rect x="163" y="135" width="24" height="20" fill="#E74C3C"/>
+  <rect x="171" y="143" width="8" height="12" fill="#78281F"/>
+
+  <!-- Grazing Cattle (Core Semantic Focus: Noun - Ranch/Pasture with livestock) -->
+  <!-- Cow 1 (Main front) -->
+  <!-- Body -->
+  <ellipse cx="95" cy="185" rx="18" ry="12" fill="#FFFFFF"/>
+  <!-- Head -->
+  <path d="M 77,180 Q 72,175 75,170 L 82,175 Z" fill="#FFFFFF"/>
+  <circle cx="74" cy="173" r="3" fill="#FFFFFF"/>
+  <!-- Spots -->
+  <path d="M 88,178 Q 92,175 95,182 Z" fill="#2C3E50"/>
+  <path d="M 102,185 Q 107,180 105,190 Z" fill="#2C3E50"/>
+  <!-- Legs -->
+  <rect x="83" y="195" width="3" height="8" fill="#ECF0F1"/>
+  <rect x="88" y="195" width="3" height="8" fill="#ECF0F1"/>
+  <rect x="99" y="195" width="3" height="8" fill="#ECF0F1"/>
+  <rect x="104" y="195" width="3" height="8" fill="#ECF0F1"/>
+
+  <!-- Cow 2 (Smaller, further back) -->
+  <ellipse cx="140" cy="165" rx="12" ry="8" fill="#ECF0F1"/>
+  <circle cx="130" cy="162" r="4" fill="#ECF0F1"/>
+  <rect x="133" y="171" width="2" height="5" fill="#BDC3C7"/>
+  <rect x="145" y="171" width="2" height="5" fill="#BDC3C7"/>
+
+  <!-- Stylized Grass Tufts for detail -->
+  <path d="M 35,190 L 37,180 L 39,190" stroke="#27AE60" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 40,192 L 43,182 L 45,192" stroke="#27AE60" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 185,185 L 188,175 L 191,185" stroke="#27AE60" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 193,188 L 196,177 L 199,188" stroke="#27AE60" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Accent frame/border for sleek modern educational UI look -->
+  <rect x="12" y="12" width="216" height="216" rx="20" fill="none" stroke="#F1C40F" stroke-width="2" opacity="0.3"/>
+</svg>
