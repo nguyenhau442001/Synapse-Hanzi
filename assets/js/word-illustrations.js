@@ -43897,10 +43897,25 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/枯竭.svg",
     "caption": "cạn kiệt, khô kiệt"
   },
+  "窟窿": {
+    "file": "窟窿.svg",
+    "src": "images/HSK_3.0/level7/窟窿.svg",
+    "caption": "lỗ thủng; món nợ thiếu hụt"
+  },
+  "哭泣": {
+    "file": "哭泣.svg",
+    "src": "images/HSK_3.0/level7/哭泣.svg",
+    "caption": "thổn thức, khóc lóc"
+  },
   "哭笑不得": {
     "file": "哭笑不得.svg",
     "src": "images/HSK_3.0/level7/哭笑不得.svg",
     "caption": "dở khóc dở cười"
+  },
+  "苦尽甘来": {
+    "file": "苦尽甘来.svg",
+    "src": "images/HSK_3.0/level7/苦尽甘来.svg",
+    "caption": "khổ tận cam lai, hết cơn bĩ cực đến hồi thái lai"
   },
   "苦难": {
     "file": "苦难.svg",
@@ -44057,6 +44072,16 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/矿产.svg",
     "caption": "khoáng sản"
   },
+  "框架": {
+    "file": "框架.svg",
+    "src": "images/HSK_3.0/level7/框架.svg",
+    "caption": "khuôn khổ, khung sườn, khung kết cấu"
+  },
+  "旷课": {
+    "file": "旷课.svg",
+    "src": "images/HSK_3.0/level7/旷课.svg",
+    "caption": "nghỉ học không phép, cúp học, trốn học"
+  },
   "亏本": {
     "file": "亏本.svg",
     "src": "images/HSK_3.0/level7/亏本.svg",
@@ -44137,10 +44162,20 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/来电.svg",
     "caption": "cuộc gọi đến; có điện lại"
   },
+  "来访": {
+    "file": "来访.svg",
+    "src": "images/HSK_3.0/level7/来访.svg",
+    "caption": "đến thăm, viếng thăm"
+  },
   "来龙去脉": {
     "file": "来龙去脉.svg",
     "src": "images/HSK_3.0/level7/来龙去脉.svg",
     "caption": "đầu đuôi ngọn ngành, nguồn cơn gốc rễ"
+  },
+  "栏杆": {
+    "file": "栏杆.svg",
+    "src": "images/HSK_3.0/level7/栏杆.svg",
+    "caption": "lan can, rào chắn"
   },
   "栏目": {
     "file": "栏目.svg",
@@ -44202,6 +44237,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/牢牢.svg",
     "caption": "thật chặt, vững chắc, chắc chắn"
   },
+  "牢骚": {
+    "file": "牢骚.svg",
+    "src": "images/HSK_3.0/level7/牢骚.svg",
+    "caption": "lời phàn nàn, càu nhàu, bất mãn"
+  },
   "老伴儿": {
     "file": "老伴儿.svg",
     "src": "images/HSK_3.0/level7/老伴儿.svg",
@@ -44216,6 +44256,86 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "老化.svg",
     "src": "images/HSK_3.0/level7/老化.svg",
     "caption": "lão hóa, xuống cấp"
+  },
+  "老乡": {
+    "file": "老乡.svg",
+    "src": "images/HSK_3.0/level7/老乡.svg",
+    "caption": "đồng hương, người đồng hương"
+  },
+  "老字号": {
+    "file": "老字号.svg",
+    "src": "images/HSK_3.0/level7/老字号.svg",
+    "caption": "thương hiệu lâu đời, tiệm lâu năm"
+  },
+  "乐此不疲": {
+    "file": "乐此不疲.svg",
+    "src": "images/HSK_3.0/level7/乐此不疲.svg",
+    "caption": "say mê không biết chán, mê mải không biết mệt"
+  },
+  "勒": {
+    "file": "勒.svg",
+    "src": "images/HSK_3.0/level7/勒.svg",
+    "caption": "siết, thắt, buộc chặt"
+  },
+  "雷同": {
+    "file": "雷同.svg",
+    "src": "images/HSK_3.0/level7/雷同.svg",
+    "caption": "rập khuôn giống hệt, na ná nhau, tương tự"
+  },
+  "累赘": {
+    "file": "累赘.svg",
+    "src": "images/HSK_3.0/level7/累赘.svg",
+    "caption": "vướng víu, cồng kềnh, gánh nặng"
+  },
+  "累计": {
+    "file": "累计.svg",
+    "src": "images/HSK_3.0/level7/累计.svg",
+    "caption": "lũy kế, tích lũy, tính dồn"
+  },
+  "累积": {
+    "file": "累积.svg",
+    "src": "images/HSK_3.0/level7/累积.svg",
+    "caption": "tích lũy dồn lại, tích tụ"
+  },
+  "棱角": {
+    "file": "棱角.svg",
+    "src": "images/HSK_3.0/level7/棱角.svg",
+    "caption": "góc cạnh, cá tính góc cạnh"
+  },
+  "冷冻": {
+    "file": "冷冻.svg",
+    "src": "images/HSK_3.0/level7/冷冻.svg",
+    "caption": "đông lạnh, ướp lạnh"
+  },
+  "冷酷": {
+    "file": "冷酷.svg",
+    "src": "images/HSK_3.0/level7/冷酷.svg",
+    "caption": "tàn nhẫn lạnh lùng, vô tình"
+  },
+  "冷落": {
+    "file": "冷落.svg",
+    "src": "images/HSK_3.0/level7/冷落.svg",
+    "caption": "nguội lạnh, vắng vẻ quạnh hiu, thờ ơ ghẻ lạnh"
+  },
+  "冷门": {
+    "file": "冷门.svg",
+    "src": "images/HSK_3.0/level7/冷门.svg",
+    "caption": "ít người chú ý, ít phổ biến"
+  },
+  "冷漠": {
+    "file": "冷漠.svg",
+    "src": "images/HSK_3.0/level7/冷漠.svg",
+    "caption": "thờ ơ, lạnh nhạt, hờ hững"
+  },
+  "冷气": {
+    "file": "冷气.svg",
+    "src": "images/HSK_3.0/level7/冷气.svg",
+    "caption": "hơi lạnh, máy lạnh, điều hòa nhiệt độ"
+  },
+  "愣": {
+    "file": "愣.svg",
+    "src": "images/HSK_3.0/level7/愣.svg",
+    "caption": "ngẩn người, sững sờ, ngơ ngác"
   }
 };
 
