@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Landscape background representing the two provinces -->
+  <path d="M0 120 L120 180 L240 120 L240 240 L0 240 Z" fill="#2D3436"/>
+  <path d="M0 120 L120 180 L240 120 L240 60 L120 120 L0 60 Z" fill="#3B4248"/>
+  
+  <!-- The boundary line (The "交界") -->
+  <line x1="120" y1="60" x2="120" y2="240" stroke="#FFB84D" stroke-width="4" stroke-dasharray="8 8"/>
+  
+  <!-- Stylized mountain/terrain elements to show the geographical edge -->
+  <path d="M30 150 L80 120 L130 150 Z" fill="#4A5568"/>
+  <path d="M110 180 L160 150 L210 180 Z" fill="#566270"/>
+  
+  <!-- Focus point: The intersection/border marker -->
+  <circle cx="120" cy="150" r="12" fill="#FFB84D"/>
+  <circle cx="120" cy="150" r="6" fill="#1A1D24"/>
+  
+  <!-- Decorative elements to emphasize the border -->
+  <path d="M110 140 L130 160 M130 140 L110 160" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+</svg>
