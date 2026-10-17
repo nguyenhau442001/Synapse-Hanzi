@@ -42466,6 +42466,256 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "叫好.svg",
     "src": "images/HSK_3.0/level7/叫好.svg",
     "caption": "khen hay, vỗ tay tán thưởng, reo hò"
+  },
+  "较劲": {
+    "file": "较劲.svg",
+    "src": "images/HSK_3.0/level7/较劲.svg",
+    "caption": "ganh đua, đọ sức; cố chấp"
+  },
+  "教科书": {
+    "file": "教科书.svg",
+    "src": "images/HSK_3.0/level7/教科书.svg",
+    "caption": "sách giáo khoa"
+  },
+  "较量": {
+    "file": "较量.svg",
+    "src": "images/HSK_3.0/level7/较量.svg",
+    "caption": "đọ tài, so tài, đọ sức"
+  },
+  "教条": {
+    "file": "教条.svg",
+    "src": "images/HSK_3.0/level7/教条.svg",
+    "caption": "giáo điều, rập khuôn"
+  },
+  "皆": {
+    "file": "皆.svg",
+    "src": "images/HSK_3.0/level7/皆.svg",
+    "caption": "đều, thảy, đều là"
+  },
+  "揭": {
+    "file": "揭.svg",
+    "src": "images/HSK_3.0/level7/揭.svg",
+    "caption": "mở, bóc, vạch trần, giở"
+  },
+  "接二连三": {
+    "file": "接二连三.svg",
+    "src": "images/HSK_3.0/level7/接二连三.svg",
+    "caption": "liên tiếp, dồn dập, hết đợt này đến đợt khác"
+  },
+  "接班": {
+    "file": "接班.svg",
+    "src": "images/HSK_3.0/level7/接班.svg",
+    "caption": "tiếp quản, nhận ca, nối nghiệp"
+  },
+  "接班人": {
+    "file": "接班人.svg",
+    "src": "images/HSK_3.0/level7/接班人.svg",
+    "caption": "người kế nghiệp, người tiếp nối"
+  },
+  "阶层": {
+    "file": "阶层.svg",
+    "src": "images/HSK_3.0/level7/阶层.svg",
+    "caption": "tầng lớp, giai tầng"
+  },
+  "皆大欢喜": {
+    "file": "皆大欢喜.svg",
+    "src": "images/HSK_3.0/level7/皆大欢喜.svg",
+    "caption": "ai nấy đều vui mừng, đôi bên cùng vui"
+  },
+  "揭发": {
+    "file": "揭发.svg",
+    "src": "images/HSK_3.0/level7/揭发.svg",
+    "caption": "vạch trần, tố giác, bóc trần"
+  },
+  "街坊": {
+    "file": "街坊.svg",
+    "src": "images/HSK_3.0/level7/街坊.svg",
+    "caption": "hàng xóm, láng giềng"
+  },
+  "接轨": {
+    "file": "接轨.svg",
+    "src": "images/HSK_3.0/level7/接轨.svg",
+    "caption": "hội nhập, bắt nhịp (với tiêu chuẩn quốc tế)"
+  },
+  "阶级": {
+    "file": "阶级.svg",
+    "src": "images/HSK_3.0/level7/阶级.svg",
+    "caption": "giai cấp"
+  },
+  "接济": {
+    "file": "接济.svg",
+    "src": "images/HSK_3.0/level7/接济.svg",
+    "caption": "chu cấp giúp đỡ, cứu tế, tiếp tế"
+  },
+  "接力": {
+    "file": "接力.svg",
+    "src": "images/HSK_3.0/level7/接力.svg",
+    "caption": "tiếp sức, tiếp nối"
+  },
+  "揭露": {
+    "file": "揭露.svg",
+    "src": "images/HSK_3.0/level7/揭露.svg",
+    "caption": "tiết lộ"
+  },
+  "接纳": {
+    "file": "接纳.svg",
+    "src": "images/HSK_3.0/level7/接纳.svg",
+    "caption": "đón nhận, dung nạp, kết nạp"
+  },
+  "揭示": {
+    "file": "揭示.svg",
+    "src": "images/HSK_3.0/level7/揭示.svg",
+    "caption": "làm sáng tỏ, hé lộ, vạch rõ"
+  },
+  "接手": {
+    "file": "接手.svg",
+    "src": "images/HSK_3.0/level7/接手.svg",
+    "caption": "tiếp quản, tiếp nhận (công việc)"
+  },
+  "接替": {
+    "file": "接替.svg",
+    "src": "images/HSK_3.0/level7/接替.svg",
+    "caption": "tiếp quản thay, thay thế"
+  },
+  "阶梯": {
+    "file": "阶梯.svg",
+    "src": "images/HSK_3.0/level7/阶梯.svg",
+    "caption": "nấc thang, bậc thang"
+  },
+  "揭晓": {
+    "file": "揭晓.svg",
+    "src": "images/HSK_3.0/level7/揭晓.svg",
+    "caption": "công bố, hé lộ (kết quả)"
+  },
+  "劫": {
+    "file": "劫.svg",
+    "src": "images/HSK_3.0/level7/劫.svg",
+    "caption": "cướp bóc, kiếp nạn"
+  },
+  "截": {
+    "file": "截.svg",
+    "src": "images/HSK_3.0/level7/截.svg",
+    "caption": "đoạn, mẩu; cắt, chặn"
+  },
+  "洁白": {
+    "file": "洁白.svg",
+    "src": "images/HSK_3.0/level7/洁白.svg",
+    "caption": "trắng tinh, trắng ngần, trắng muốt"
+  },
+  "劫持": {
+    "file": "劫持.svg",
+    "src": "images/HSK_3.0/level7/劫持.svg",
+    "caption": "cướp"
+  },
+  "节俭": {
+    "file": "节俭.svg",
+    "src": "images/HSK_3.0/level7/节俭.svg",
+    "caption": "tiết kiệm, cần kiệm"
+  },
+  "洁净": {
+    "file": "洁净.svg",
+    "src": "images/HSK_3.0/level7/洁净.svg",
+    "caption": "sạch sẽ, trong sạch, tinh khiết"
+  },
+  "捷径": {
+    "file": "捷径.svg",
+    "src": "images/HSK_3.0/level7/捷径.svg",
+    "caption": "lối tắt, đường tắt"
+  },
+  "结晶": {
+    "file": "结晶.svg",
+    "src": "images/HSK_3.0/level7/结晶.svg",
+    "caption": "kết tinh, tinh thể"
+  },
+  "竭尽全力": {
+    "file": "竭尽全力.svg",
+    "src": "images/HSK_3.0/level7/竭尽全力.svg",
+    "caption": "dốc hết sức mình, dốc toàn lực"
+  },
+  "节气": {
+    "file": "节气.svg",
+    "src": "images/HSK_3.0/level7/节气.svg",
+    "caption": "tiết khí (trong nông lịch)"
+  },
+  "截然不同": {
+    "file": "截然不同.svg",
+    "src": "images/HSK_3.0/level7/截然不同.svg",
+    "caption": "hoàn toàn khác biệt, khác nhau một trời một vực"
+  },
+  "结识": {
+    "file": "结识.svg",
+    "src": "images/HSK_3.0/level7/结识.svg",
+    "caption": "làm quen, kết giao, quen biết"
+  },
+  "结算": {
+    "file": "结算.svg",
+    "src": "images/HSK_3.0/level7/结算.svg",
+    "caption": "thanh toán, quyết toán"
+  },
+  "节衣缩食": {
+    "file": "节衣缩食.svg",
+    "src": "images/HSK_3.0/level7/节衣缩食.svg",
+    "caption": "thắt lưng buộc bụng, tằn tiện chi tiêu"
+  },
+  "节制": {
+    "file": "节制.svg",
+    "src": "images/HSK_3.0/level7/节制.svg",
+    "caption": "tiết chế, chừng mực, kiềm chế"
+  },
+  "解除": {
+    "file": "解除.svg",
+    "src": "images/HSK_3.0/level7/解除.svg",
+    "caption": "xóa bỏ, bãi bỏ, giải trừ"
+  },
+  "解雇": {
+    "file": "解雇.svg",
+    "src": "images/HSK_3.0/level7/解雇.svg",
+    "caption": "sa thải, cho thôi việc, đuổi việc"
+  },
+  "解救": {
+    "file": "解救.svg",
+    "src": "images/HSK_3.0/level7/解救.svg",
+    "caption": "giải cứu, cứu nguy, cứu giúp"
+  },
+  "解渴": {
+    "file": "解渴.svg",
+    "src": "images/HSK_3.0/level7/解渴.svg",
+    "caption": "giải khát, đỡ khát"
+  },
+  "解剖": {
+    "file": "解剖.svg",
+    "src": "images/HSK_3.0/level7/解剖.svg",
+    "caption": "giải phẫu, mổ xẻ"
+  },
+  "解散": {
+    "file": "解散.svg",
+    "src": "images/HSK_3.0/level7/解散.svg",
+    "caption": "giải tán, giải thể"
+  },
+  "解围": {
+    "file": "解围.svg",
+    "src": "images/HSK_3.0/level7/解围.svg",
+    "caption": "gỡ rối, giải vây"
+  },
+  "解约": {
+    "file": "解约.svg",
+    "src": "images/HSK_3.0/level7/解约.svg",
+    "caption": "chấm dứt hợp đồng, hủy bỏ hợp đồng"
+  },
+  "界": {
+    "file": "界.svg",
+    "src": "images/HSK_3.0/level7/界.svg",
+    "caption": "giới, ranh giới, phạm vi"
+  },
+  "介入": {
+    "file": "介入.svg",
+    "src": "images/HSK_3.0/level7/介入.svg",
+    "caption": "can thiệp, can dự, tham gia vào"
+  },
+  "届时": {
+    "file": "届时.svg",
+    "src": "images/HSK_3.0/level7/届时.svg",
+    "caption": "đến lúc đó, vào thời điểm đó"
   }
 };
 
