@@ -47537,6 +47537,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/若.svg",
     "caption": "nếu; nếu như"
   },
+  "若是": {
+    "file": "若是.svg",
+    "src": "images/HSK_3.0/level7/若是.svg",
+    "caption": "nếu như; giả sử"
+  },
   "弱势": {
     "file": "弱势.svg",
     "src": "images/HSK_3.0/level7/弱势.svg",
@@ -47571,6 +47576,251 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "三番五次.svg",
     "src": "images/HSK_3.0/level7/三番五次.svg",
     "caption": "năm lần bảy lượt"
+  },
+  "三角": {
+    "file": "三角.svg",
+    "src": "images/HSK_3.0/level7/三角.svg",
+    "caption": "tam giác; hình tam giác"
+  },
+  "三维": {
+    "file": "三维.svg",
+    "src": "images/HSK_3.0/level7/三维.svg",
+    "caption": "ba chiều; không gian 3D"
+  },
+  "散落": {
+    "file": "散落.svg",
+    "src": "images/HSK_3.0/level7/散落.svg",
+    "caption": "rơi rớt; vương vãi"
+  },
+  "桑拿": {
+    "file": "桑拿.svg",
+    "src": "images/HSK_3.0/level7/桑拿.svg",
+    "caption": "xông hơi; tắm hơi sauna"
+  },
+  "嗓音": {
+    "file": "嗓音.svg",
+    "src": "images/HSK_3.0/level7/嗓音.svg",
+    "caption": "giọng hát; giọng nói"
+  },
+  "丧生": {
+    "file": "丧生.svg",
+    "src": "images/HSK_3.0/level7/丧生.svg",
+    "caption": "thiệt mạng; mất mạng"
+  },
+  "骚乱": {
+    "file": "骚乱.svg",
+    "src": "images/HSK_3.0/level7/骚乱.svg",
+    "caption": "bạo loạn; hỗn loạn"
+  },
+  "扫除": {
+    "file": "扫除.svg",
+    "src": "images/HSK_3.0/level7/扫除.svg",
+    "caption": "quét sạch; dẹp tan"
+  },
+  "扫墓": {
+    "file": "扫墓.svg",
+    "src": "images/HSK_3.0/level7/扫墓.svg",
+    "caption": "tảo mộ; viếng mộ"
+  },
+  "扫兴": {
+    "file": "扫兴.svg",
+    "src": "images/HSK_3.0/level7/扫兴.svg",
+    "caption": "cụt hứng; mất vui"
+  },
+  "扫帚": {
+    "file": "扫帚.svg",
+    "src": "images/HSK_3.0/level7/扫帚.svg",
+    "caption": "cái chổi; chổi quét nhà"
+  },
+  "僧人": {
+    "file": "僧人.svg",
+    "src": "images/HSK_3.0/level7/僧人.svg",
+    "caption": "nhà sư; tăng nhân"
+  },
+  "纱": {
+    "file": "纱.svg",
+    "src": "images/HSK_3.0/level7/纱.svg",
+    "caption": "vải gạc; vải sa"
+  },
+  "杀毒": {
+    "file": "杀毒.svg",
+    "src": "images/HSK_3.0/level7/杀毒.svg",
+    "caption": "diệt virus (máy tính)"
+  },
+  "杀害": {
+    "file": "杀害.svg",
+    "src": "images/HSK_3.0/level7/杀害.svg",
+    "caption": "giết"
+  },
+  "沙龙": {
+    "file": "沙龙.svg",
+    "src": "images/HSK_3.0/level7/沙龙.svg",
+    "caption": "buổi tọa đàm; salon văn nghệ"
+  },
+  "杀手": {
+    "file": "杀手.svg",
+    "src": "images/HSK_3.0/level7/杀手.svg",
+    "caption": "sát thủ; kẻ sát nhân"
+  },
+  "傻瓜": {
+    "file": "傻瓜.svg",
+    "src": "images/HSK_3.0/level7/傻瓜.svg",
+    "caption": "kẻ ngốc; đồ ngốc"
+  },
+  "筛": {
+    "file": "筛.svg",
+    "src": "images/HSK_3.0/level7/筛.svg",
+    "caption": "rây; sàng lọc"
+  },
+  "筛查": {
+    "file": "筛查.svg",
+    "src": "images/HSK_3.0/level7/筛查.svg",
+    "caption": "tầm soát; sàng lọc kiểm tra"
+  },
+  "山川": {
+    "file": "山川.svg",
+    "src": "images/HSK_3.0/level7/山川.svg",
+    "caption": "non sông; núi sông"
+  },
+  "煽动": {
+    "file": "煽动.svg",
+    "src": "images/HSK_3.0/level7/煽动.svg",
+    "caption": "kích động; xúi giục"
+  },
+  "山谷": {
+    "file": "山谷.svg",
+    "src": "images/HSK_3.0/level7/山谷.svg",
+    "caption": "thung lũng"
+  },
+  "山岭": {
+    "file": "山岭.svg",
+    "src": "images/HSK_3.0/level7/山岭.svg",
+    "caption": "rặng núi; dãy núi"
+  },
+  "山寨": {
+    "file": "山寨.svg",
+    "src": "images/HSK_3.0/level7/山寨.svg",
+    "caption": "hàng nhái; hàng giả nhái"
+  },
+  "善": {
+    "file": "善.svg",
+    "src": "images/HSK_3.0/level7/善.svg",
+    "caption": "thiện; lương thiện"
+  },
+  "膳食": {
+    "file": "膳食.svg",
+    "src": "images/HSK_3.0/level7/膳食.svg",
+    "caption": "khẩu phần ăn; chế độ ăn uống"
+  },
+  "赡养": {
+    "file": "赡养.svg",
+    "src": "images/HSK_3.0/level7/赡养.svg",
+    "caption": "phụng dưỡng; nuôi dưỡng"
+  },
+  "善意": {
+    "file": "善意.svg",
+    "src": "images/HSK_3.0/level7/善意.svg",
+    "caption": "thiện ý; lòng tốt"
+  },
+  "伤残": {
+    "file": "伤残.svg",
+    "src": "images/HSK_3.0/level7/伤残.svg",
+    "caption": "thương tật; tàn tật"
+  },
+  "商贩": {
+    "file": "商贩.svg",
+    "src": "images/HSK_3.0/level7/商贩.svg",
+    "caption": "tiểu thương; người buôn bán nhỏ"
+  },
+  "伤感": {
+    "file": "伤感.svg",
+    "src": "images/HSK_3.0/level7/伤感.svg",
+    "caption": "bùi ngùi; đau buồn"
+  },
+  "商贾": {
+    "file": "商贾.svg",
+    "src": "images/HSK_3.0/level7/商贾.svg",
+    "caption": "nhà buôn; thương nhân"
+  },
+  "伤痕": {
+    "file": "伤痕.svg",
+    "src": "images/HSK_3.0/level7/伤痕.svg",
+    "caption": "vết sẹo"
+  },
+  "商机": {
+    "file": "商机.svg",
+    "src": "images/HSK_3.0/level7/商机.svg",
+    "caption": "cơ hội kinh doanh; thời cơ làm ăn"
+  },
+  "伤势": {
+    "file": "伤势.svg",
+    "src": "images/HSK_3.0/level7/伤势.svg",
+    "caption": "tình trạng thương tích; vết thương"
+  },
+  "商讨": {
+    "file": "商讨.svg",
+    "src": "images/HSK_3.0/level7/商讨.svg",
+    "caption": "thảo luận; bàn bạc"
+  },
+  "商议": {
+    "file": "商议.svg",
+    "src": "images/HSK_3.0/level7/商议.svg",
+    "caption": "bàn bạc; thương nghị"
+  },
+  "商用": {
+    "file": "商用.svg",
+    "src": "images/HSK_3.0/level7/商用.svg",
+    "caption": "thương mại; dùng trong thương mại"
+  },
+  "赏识": {
+    "file": "赏识.svg",
+    "src": "images/HSK_3.0/level7/赏识.svg",
+    "caption": "đánh giá cao; tán thưởng"
+  },
+  "尚": {
+    "file": "尚.svg",
+    "src": "images/HSK_3.0/level7/尚.svg",
+    "caption": "vẫn còn; còn; chưa"
+  },
+  "上半场": {
+    "file": "上半场.svg",
+    "src": "images/HSK_3.0/level7/上半场.svg",
+    "caption": "hiệp một; nửa đầu trận đấu"
+  },
+  "上报": {
+    "file": "上报.svg",
+    "src": "images/HSK_3.0/level7/上报.svg",
+    "caption": "báo cáo lên cấp trên; trình báo"
+  },
+  "上层": {
+    "file": "上层.svg",
+    "src": "images/HSK_3.0/level7/上层.svg",
+    "caption": "tầng trên; thượng tầng"
+  },
+  "上场": {
+    "file": "上场.svg",
+    "src": "images/HSK_3.0/level7/上场.svg",
+    "caption": "ra sân; ra thi đấu"
+  },
+  "上岗": {
+    "file": "上岗.svg",
+    "src": "images/HSK_3.0/level7/上岗.svg",
+    "caption": "nhận việc; vào ca"
+  },
+  "上火": {
+    "file": "上火.svg",
+    "src": "images/HSK_3.0/level7/上火.svg",
+    "caption": "nóng trong người; bốc hỏa"
+  },
+  "上空": {
+    "file": "上空.svg",
+    "src": "images/HSK_3.0/level7/上空.svg",
+    "caption": "bầu trời; trên không trung"
+  },
+  "上司": {
+    "file": "上司.svg",
+    "src": "images/HSK_3.0/level7/上司.svg",
+    "caption": "cấp trên; thủ trưởng"
   }
 };
 

@@ -1,0 +1,38 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Atmospheric Background Elements -->
+  <!-- Distant mountain silhouette -->
+  <polygon points="20,160 80,100 130,140 190,90 220,120 220,180 20,180" fill="#252A34"/>
+
+  <!-- Flowing River / Chuan (川) winding through -->
+  <path d="M120,140 C100,150 90,165 70,175 C55,182 35,185 20,195 L220,195 C200,185 180,180 160,170 C140,160 135,150 120,140 Z" fill="#2E3748"/>
+  <path d="M125,142 C110,149 100,160 85,168 C68,177 45,180 20,185" fill="none" stroke="#4DA3FF" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <path d="M165,162 C150,155 140,150 125,142" fill="none" stroke="#4DA3FF" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Majestic Mountains (山) - Layer 1 (Back Peaks) -->
+  <polygon points="60,170 120,60 180,170" fill="#323B4D"/>
+  <!-- Mountain snow cap -->
+  <polygon points="120,60 138,95 120,90 102,95" fill="#E2E8F0"/>
+
+  <!-- Majestic Mountains (山) - Layer 2 (Front Dominant Peak) -->
+  <polygon points="100,180 170,80 230,180" fill="#3B465C"/>
+  <!-- Mountain snow cap -->
+  <polygon points="170,80 188,112 170,105 152,112" fill="#F8FAFC"/>
+
+  <!-- Secondary Peak Left -->
+  <polygon points="30,180 85,95 140,180" fill="#2D3545"/>
+  <polygon points="85,95 98,120 85,115 72,120" fill="#CBD5E1"/>
+
+  <!-- Golden Sunrise / Focal Point (Accentuating the grand landscape context) -->
+  <circle cx="170" cy="55" r="16" fill="#F6AD55" opacity="0.9"/>
+  <circle cx="170" cy="55" r="22" fill="#F6AD55" opacity="0.2"/>
+
+  <!-- River stream details (Flowing water highlights) -->
+  <path d="M75,170 Q85,165 95,168" fill="none" stroke="#63B3ED" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M110,155 Q118,150 125,153" fill="none" stroke="#63B3ED" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Foreground base line to anchor the landscape -->
+  <path d="M0,195 L240,195" stroke="#1A1D24" stroke-width="4"/>
+</svg>

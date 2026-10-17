@@ -1,0 +1,33 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Street Ground -->
+  <path d="M0 180 L240 180 L240 240 L0 240 Z" fill="#2D343E"/>
+  
+  <!-- Rioters (Silhouettes) -->
+  <g fill="#FF9F1C">
+    <!-- Figure 1 -->
+    <path d="M40 180 L60 180 L55 130 L45 130 Z"/>
+    <circle cx="50" cy="120" r="12"/>
+    <!-- Figure 2 -->
+    <path d="M80 180 L100 180 L95 125 L85 125 Z"/>
+    <circle cx="90" cy="115" r="12"/>
+    <!-- Figure 3 -->
+    <path d="M120 180 L140 180 L135 135 L125 135 Z"/>
+    <circle cx="130" cy="125" r="12"/>
+  </g>
+
+  <!-- Riot Police (Shield and Uniform) -->
+  <g transform="translate(160, 100)">
+    <!-- Shield -->
+    <path d="M0 0 L40 0 L45 60 L-5 60 Z" fill="#5DADE2" stroke="#FFFFFF" stroke-width="2"/>
+    <!-- Police Body -->
+    <rect x="5" y="10" width="20" height="70" fill="#34495E"/>
+    <circle cx="15" cy="5" r="10" fill="#34495E"/>
+  </g>
+
+  <!-- Chaos elements (Flying objects/debris) -->
+  <circle cx="70" cy="90" r="4" fill="#E74C3C"/>
+  <rect x="110" y="80" width="6" height="6" fill="#E74C3C" transform="rotate(20 113 83)"/>
+  <path d="M150 70 L160 70 L155 80 Z" fill="#E74C3C"/>
+</svg>

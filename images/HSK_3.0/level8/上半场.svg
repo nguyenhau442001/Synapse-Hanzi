@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Soccer Field Pitch -->
+  <rect x="40" y="80" width="160" height="80" rx="4" fill="#2D3436" stroke="#4A5568" stroke-width="2"/>
+  <line x1="120" y1="80" x2="120" y2="160" stroke="#4A5568" stroke-width="2"/>
+  <circle cx="120" cy="120" r="15" fill="none" stroke="#4A5568" stroke-width="2"/>
+  
+  <!-- Left Half Highlight -->
+  <rect x="40" y="80" width="80" height="80" rx="4" fill="#F39C12" fill-opacity="0.2"/>
+  
+  <!-- Soccer Ball -->
+  <circle cx="90" cy="120" r="8" fill="#F1F2F6"/>
+  <path d="M90 112 A8 8 0 0 1 98 120 L90 120 Z" fill="#2D3436"/>
+  <path d="M82 120 A8 8 0 0 1 90 128 L90 120 Z" fill="#2D3436"/>
+  
+  <!-- Clock/Time Indicator (Top Left Corner) -->
+  <circle cx="60" cy="60" r="12" fill="#2D3436" stroke="#F39C12" stroke-width="2"/>
+  <line x1="60" y1="60" x2="60" y2="52" stroke="#F39C12" stroke-width="2" stroke-linecap="round"/>
+  <line x1="60" y1="60" x2="66" y2="60" stroke="#F39C12" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Goal Post Left -->
+  <rect x="40" y="105" width="5" height="30" fill="#F1F2F6"/>
+  
+  <!-- Emphasizing the first half (Left side) -->
+  <path d="M40 75 L120 75 L120 165 L40 165 Z" fill="none" stroke="#F39C12" stroke-width="3" stroke-dasharray="4 4"/>
+</svg>
