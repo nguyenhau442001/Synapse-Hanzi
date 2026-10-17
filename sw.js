@@ -1,4 +1,4 @@
-const ASSET_VERSION = '20261017-zero-lag1';
+const ASSET_VERSION = '20261017-fix-example-box1';
 const CACHE_NAME = 'hsk-flashcards-v' + ASSET_VERSION;
 const FSRS_CDN_URL = 'https://cdn.jsdelivr.net/npm/ts-fsrs@5.4.1/dist/index.umd.js';
 const APP_SHELL_URL = new URL('./index.html', self.registration.scope).href;

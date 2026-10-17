@@ -1022,7 +1022,7 @@ body.flashcard-study-mode #cardArea > .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: safe center;
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: none !important;
@@ -1932,6 +1932,8 @@ body.flashcard-study-mode .example-box {
   max-height: none !important;
   overflow-y: visible !important;
   box-shadow: none;
+  flex-shrink: 0 !important;
+  min-height: min-content !important;
 }
 :root[data-theme="dark"] body.flashcard-study-mode .example-box {
   background: rgba(255, 255, 255, 0.02);
@@ -2855,7 +2857,7 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
   }
 
   body.flashcard-study-mode .card.is-flipped .card-content {
-    justify-content: center !important;
+    justify-content: safe center !important;
     margin: auto 0 !important;
     padding: 12px 6px !important;
     gap: 8px !important;
@@ -3057,6 +3059,8 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
     background: rgba(0, 0, 0, 0.015) !important;
     width: 100%;
     box-sizing: border-box;
+    flex-shrink: 0 !important;
+    min-height: min-content !important;
   }
   body.flashcard-study-mode .example-box::-webkit-scrollbar {
     display: none !important;
@@ -3428,6 +3432,8 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
     margin-top: 6px;
     padding: 6px 12px;
     max-height: 75px;
+    flex-shrink: 0;
+    min-height: min-content;
   }
 
   body.flashcard-study-mode .rating-area {
@@ -3471,16 +3477,53 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
 
 @media (min-width: 768px) and (max-height: 720px) {
   body.flashcard-study-mode .hanzi {
-    font-size: clamp(50px, 7.8vh, 68px);
+    font-size: clamp(44px, 6.8vh, 56px);
   }
-  body.flashcard-study-mode .card-visual-col {
-    flex: 0 0 clamp(110px, 20vh, 150px) !important;
-    width: clamp(110px, 20vh, 150px) !important;
-    height: clamp(110px, 20vh, 150px) !important;
+  body.flashcard-study-mode .card.is-flipped .hanzi {
+    font-size: clamp(36px, 5.4vh, 46px) !important;
+  }
+  body.flashcard-study-mode .card:not(.is-flipped) .card-visual-col {
+    flex: 0 0 clamp(80px, 15vh, 110px) !important;
+    width: clamp(80px, 15vh, 110px) !important;
+    height: clamp(80px, 15vh, 110px) !important;
+  }
+  body.flashcard-study-mode .card.is-flipped .card-visual-col {
+    flex: 0 0 64px !important;
+    width: 64px !important;
+    height: 64px !important;
+  }
+  body.flashcard-study-mode .card.is-flipped .card-illustration-frame {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  body.flashcard-study-mode .card.is-flipped .hanzi-stage {
+    padding: 4px 16px 2px !important;
+  }
+  body.flashcard-study-mode .card.is-flipped .meaning {
+    margin-top: 2px !important;
+  }
+  body.flashcard-study-mode .card.is-flipped .card-supporting-group {
+    margin: 2px auto 2px !important;
+    gap: 10px !important;
+  }
+  body.flashcard-study-mode .card.is-flipped .example-box {
+    margin-top: 6px !important;
+    padding: 8px 14px !important;
+  }
+  body.flashcard-study-mode .card.is-flipped .example-box .ex-zh {
+    margin-bottom: 2px !important;
+    line-height: 1.4 !important;
+  }
+  body.flashcard-study-mode .card.is-flipped .example-box .ex-py {
+    margin-bottom: 2px !important;
+    line-height: 1.35 !important;
+  }
+  body.flashcard-study-mode .card.is-flipped .example-box .ex-vi {
+    line-height: 1.4 !important;
   }
   body.flashcard-study-mode #cardArea > .card {
     min-height: clamp(270px, 44vh, 330px);
-    padding: 34px 20px 14px;
+    padding: 16px 18px 12px;
   }
 }
 
