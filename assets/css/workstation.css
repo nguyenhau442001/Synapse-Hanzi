@@ -679,6 +679,7 @@ body.flashcard-study-mode .study-back-btn {
   cursor: pointer;
   transition: all 0.15s ease;
   margin: 0;
+  white-space: nowrap;
 }
 body.flashcard-study-mode .study-back-btn:hover {
   background: var(--surface-subtle);
@@ -696,6 +697,7 @@ body.flashcard-study-mode .study-back-btn:hover {
   border-color: rgba(255, 255, 255, 0.12);
   color: #ffffff;
 }
+body.flashcard-study-mode .study-back-text,
 body.flashcard-study-mode .study-level-badge {
   display: inline-block;
   padding: 0;
@@ -703,8 +705,8 @@ body.flashcard-study-mode .study-level-badge {
   background: transparent;
   color: var(--text-primary);
   font-size: 13.5px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }
 body.flashcard-study-mode .view-tabs {
   display: inline-flex;
@@ -2903,6 +2905,7 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
     flex-shrink: 0;
   }
 
+  body.flashcard-study-mode .study-back-text,
   body.flashcard-study-mode .study-level-badge {
     font-size: 11.5px;
   }

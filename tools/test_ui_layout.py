@@ -693,6 +693,14 @@ class TestFlashcardExperienceRefinements(unittest.TestCase):
         cls.flashcard_css = FLASHCARD_CSS.read_text(encoding="utf-8")
         cls.flashcard_js = (REPO_ROOT / "assets" / "js" / "flashcard.js").read_text(encoding="utf-8")
         cls.progress_js = (REPO_ROOT / "assets" / "js" / "progress.js").read_text(encoding="utf-8")
+        cls.index_html = INDEX_HTML.read_text(encoding="utf-8")
+        cls.levels_js = (REPO_ROOT / "assets" / "js" / "levels.js").read_text(encoding="utf-8")
+
+    def test_study_view_back_button_displays_home_navigation(self):
+        """Top-left back button in flashcard study mode must display home navigation and not duplicate HSK level."""
+        self.assertIn("Quay về trang chủ", self.index_html)
+        self.assertIn('class="back-btn study-back-btn"', self.index_html)
+        self.assertNotIn("studyLevelBadge", self.levels_js)
 
     def test_quiet_flip_prompt_affordance(self):
         """getCardHintText must provide quiet affordance 'Chạm để lật · Space' and 'Chạm để lật'."""
