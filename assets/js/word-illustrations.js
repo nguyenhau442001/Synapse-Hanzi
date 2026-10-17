@@ -48071,6 +48071,256 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "生命线.svg",
     "src": "images/HSK_3.0/level7/生命线.svg",
     "caption": "đường sống; huyết mạch"
+  },
+  "生怕": {
+    "file": "生怕.svg",
+    "src": "images/HSK_3.0/level7/生怕.svg",
+    "caption": "chỉ sợ rằng; nơm nớp lo"
+  },
+  "生平": {
+    "file": "生平.svg",
+    "src": "images/HSK_3.0/level7/生平.svg",
+    "caption": "cuộc đời; lúc sinh thời"
+  },
+  "生前": {
+    "file": "生前.svg",
+    "src": "images/HSK_3.0/level7/生前.svg",
+    "caption": "lúc sinh thời; khi còn sống"
+  },
+  "生死": {
+    "file": "生死.svg",
+    "src": "images/HSK_3.0/level7/生死.svg",
+    "caption": "sinh tử; sống chết"
+  },
+  "声望": {
+    "file": "声望.svg",
+    "src": "images/HSK_3.0/level7/声望.svg",
+    "caption": "danh vọng; uy tín"
+  },
+  "生涯": {
+    "file": "生涯.svg",
+    "src": "images/HSK_3.0/level7/生涯.svg",
+    "caption": "sự nghiệp; cuộc đời"
+  },
+  "生硬": {
+    "file": "生硬.svg",
+    "src": "images/HSK_3.0/level7/生硬.svg",
+    "caption": "gượng gạo; cứng nhắc; khô khan"
+  },
+  "升值": {
+    "file": "升值.svg",
+    "src": "images/HSK_3.0/level7/升值.svg",
+    "caption": "tăng giá; lên giá"
+  },
+  "省事": {
+    "file": "省事.svg",
+    "src": "images/HSK_3.0/level7/省事.svg",
+    "caption": "tiện lợi; đỡ việc"
+  },
+  "胜出": {
+    "file": "胜出.svg",
+    "src": "images/HSK_3.0/level7/胜出.svg",
+    "caption": "giành chiến thắng; thắng cuộc"
+  },
+  "盛大": {
+    "file": "盛大.svg",
+    "src": "images/HSK_3.0/level7/盛大.svg",
+    "caption": "long trọng; hoành tráng"
+  },
+  "盛会": {
+    "file": "盛会.svg",
+    "src": "images/HSK_3.0/level7/盛会.svg",
+    "caption": "ngày hội lớn; đại hội long trọng"
+  },
+  "盛气凌人": {
+    "file": "盛气凌人.svg",
+    "src": "images/HSK_3.0/level7/盛气凌人.svg",
+    "caption": "hống hách; kiêu căng ngạo mạn"
+  },
+  "胜任": {
+    "file": "胜任.svg",
+    "src": "images/HSK_3.0/level7/胜任.svg",
+    "caption": "đảm đương; hoàn thành tốt"
+  },
+  "盛夏": {
+    "file": "盛夏.svg",
+    "src": "images/HSK_3.0/level7/盛夏.svg",
+    "caption": "giữa mùa hè; chính hè"
+  },
+  "圣贤": {
+    "file": "圣贤.svg",
+    "src": "images/HSK_3.0/level7/圣贤.svg",
+    "caption": "thánh hiền; bậc thánh"
+  },
+  "盛宴": {
+    "file": "盛宴.svg",
+    "src": "images/HSK_3.0/level7/盛宴.svg",
+    "caption": "bữa tiệc thịnh soạn; đại tiệc"
+  },
+  "失传": {
+    "file": "失传.svg",
+    "src": "images/HSK_3.0/level7/失传.svg",
+    "caption": "thất truyền; bị mai một"
+  },
+  "湿地": {
+    "file": "湿地.svg",
+    "src": "images/HSK_3.0/level7/湿地.svg",
+    "caption": "vùng đất ngập nước; đầm lầy"
+  },
+  "施工": {
+    "file": "施工.svg",
+    "src": "images/HSK_3.0/level7/施工.svg",
+    "caption": "thi công; xây dựng"
+  },
+  "失控": {
+    "file": "失控.svg",
+    "src": "images/HSK_3.0/level7/失控.svg",
+    "caption": "mất kiểm soát; mất lái"
+  },
+  "失利": {
+    "file": "失利.svg",
+    "src": "images/HSK_3.0/level7/失利.svg",
+    "caption": "thất bại; thua trận"
+  },
+  "失礼": {
+    "file": "失礼.svg",
+    "src": "images/HSK_3.0/level7/失礼.svg",
+    "caption": "thất lễ; bất lịch sự"
+  },
+  "失灵": {
+    "file": "失灵.svg",
+    "src": "images/HSK_3.0/level7/失灵.svg",
+    "caption": "mất tác dụng; hỏng hóc"
+  },
+  "失落": {
+    "file": "失落.svg",
+    "src": "images/HSK_3.0/level7/失落.svg",
+    "caption": "hụt hẫng; thất vọng"
+  },
+  "失明": {
+    "file": "失明.svg",
+    "src": "images/HSK_3.0/level7/失明.svg",
+    "caption": "mù lòa; mất thị lực"
+  },
+  "失态": {
+    "file": "失态.svg",
+    "src": "images/HSK_3.0/level7/失态.svg",
+    "caption": "thất thố; mất phong thái"
+  },
+  "失效": {
+    "file": "失效.svg",
+    "src": "images/HSK_3.0/level7/失效.svg",
+    "caption": "hết hiệu lực; mất tác dụng"
+  },
+  "施行": {
+    "file": "施行.svg",
+    "src": "images/HSK_3.0/level7/施行.svg",
+    "caption": "thi hành; áp dụng thực thi"
+  },
+  "施压": {
+    "file": "施压.svg",
+    "src": "images/HSK_3.0/level7/施压.svg",
+    "caption": "gây sức ép; gây áp lực"
+  },
+  "师长": {
+    "file": "师长.svg",
+    "src": "images/HSK_3.0/level7/师长.svg",
+    "caption": "thầy cô; bậc bề trên"
+  },
+  "师资": {
+    "file": "师资.svg",
+    "src": "images/HSK_3.0/level7/师资.svg",
+    "caption": "đội ngũ giáo viên; giảng viên"
+  },
+  "时隔": {
+    "file": "时隔.svg",
+    "src": "images/HSK_3.0/level7/时隔.svg",
+    "caption": "sau khoảng thời gian; cách nhau"
+  },
+  "实地": {
+    "file": "实地.svg",
+    "src": "images/HSK_3.0/level7/实地.svg",
+    "caption": "thực địa; tại chỗ"
+  },
+  "时段": {
+    "file": "时段.svg",
+    "src": "images/HSK_3.0/level7/时段.svg",
+    "caption": "khung giờ; khoảng thời gian"
+  },
+  "时好时坏": {
+    "file": "时好时坏.svg",
+    "src": "images/HSK_3.0/level7/时好时坏.svg",
+    "caption": "chập chờn thất thường; lúc tốt lúc xấu"
+  },
+  "实话实说": {
+    "file": "实话实说.svg",
+    "src": "images/HSK_3.0/level7/实话实说.svg",
+    "caption": "nói lời thật lòng; nói thật"
+  },
+  "时节": {
+    "file": "时节.svg",
+    "src": "images/HSK_3.0/level7/时节.svg",
+    "caption": "mùa vụ; thời tiết"
+  },
+  "时空": {
+    "file": "时空.svg",
+    "src": "images/HSK_3.0/level7/时空.svg",
+    "caption": "không gian và thời gian; thời không"
+  },
+  "实况": {
+    "file": "实况.svg",
+    "src": "images/HSK_3.0/level7/实况.svg",
+    "caption": "hiện trường; thực tế"
+  },
+  "时时": {
+    "file": "时时.svg",
+    "src": "images/HSK_3.0/level7/时时.svg",
+    "caption": "luôn luôn; thường xuyên"
+  },
+  "食宿": {
+    "file": "食宿.svg",
+    "src": "images/HSK_3.0/level7/食宿.svg",
+    "caption": "chỗ ăn chỗ ở; ăn ở"
+  },
+  "实体": {
+    "file": "实体.svg",
+    "src": "images/HSK_3.0/level7/实体.svg",
+    "caption": "thực thể; hữu hình"
+  },
+  "实物": {
+    "file": "实物.svg",
+    "src": "images/HSK_3.0/level7/实物.svg",
+    "caption": "vật thật; hiện vật"
+  },
+  "时装": {
+    "file": "时装.svg",
+    "src": "images/HSK_3.0/level7/时装.svg",
+    "caption": "thời trang; trang phục thời trang"
+  },
+  "屎": {
+    "file": "屎.svg",
+    "src": "images/HSK_3.0/level7/屎.svg",
+    "caption": "phân (chất thải tiêu hóa)"
+  },
+  "使唤": {
+    "file": "使唤.svg",
+    "src": "images/HSK_3.0/level7/使唤.svg",
+    "caption": "sai bảo; sai khiến"
+  },
+  "史无前例": {
+    "file": "史无前例.svg",
+    "src": "images/HSK_3.0/level7/史无前例.svg",
+    "caption": "chưa từng có trong lịch sử; tiền lệ chưa từng có"
+  },
+  "使者": {
+    "file": "使者.svg",
+    "src": "images/HSK_3.0/level7/使者.svg",
+    "caption": "sứ giả; người truyền tin"
+  },
+  "势不可当": {
+    "file": "势不可当.svg",
+    "src": "images/HSK_3.0/level7/势不可当.svg",
+    "caption": "dũng mãnh không thể ngăn cản; thế như chẻ tre"
   }
 };
 

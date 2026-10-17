@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Left side: The "Chaotic/Manual" state (Small, cluttered, busy) -->
+  <g opacity="0.4">
+    <rect x="30" y="120" width="70" height="80" rx="4" fill="#3D4451"/>
+    <path d="M45 140h40M45 155h40M45 170h40" stroke="#788292" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="65" cy="100" r="15" fill="#788292"/>
+    <path d="M65 115v10" stroke="#788292" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Right side: The "省事/Convenient" state (Large, sleek, automated) -->
+  <g>
+    <rect x="130" y="80" width="80" height="120" rx="8" fill="#FFB84D"/>
+    <rect x="145" y="100" width="50" height="60" rx="4" fill="#1A1D24"/>
+    <circle cx="170" cy="175" r="12" fill="#FFB84D"/>
+    <path d="M170 170v10M165 175h10" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Transition/Action Arrow -->
+  <path d="M105 140h20" stroke="#FFB84D" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+  <path d="M120 135l5 5-5 5" stroke="#FFB84D" stroke-width="4" stroke-linecap="round" fill="none"/>
+</svg>
