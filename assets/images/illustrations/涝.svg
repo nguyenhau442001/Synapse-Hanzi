@@ -1,0 +1,68 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Atmospheric Background & Rain Elements -->
+  <g opacity="0.3">
+    <line x1="50" y1="40" x2="40" y2="70" stroke="#4A90E2" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="90" y1="30" x2="80" y2="60" stroke="#4A90E2" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="150" y1="35" x2="140" y2="65" stroke="#4A90E2" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="190" y1="45" x2="180" y2="75" stroke="#4A90E2" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <line x1="30" y1="70" x2="20" y2="100" stroke="#4A90E2" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="70" y1="65" x2="60" y2="95" stroke="#4A90E2" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="120" y1="55" x2="110" y2="85" stroke="#4A90E2" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="160" y1="65" x2="150" y2="95" stroke="#4A90E2" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="210" y1="55" x2="200" y2="85" stroke="#4A90E2" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Lowland Farmland Terrain (Cross-section view emphasizing water accumulation) -->
+  <!-- Soil layers underground -->
+  <path d="M 30 150 Q 120 180 210 150 L 210 200 L 30 200 Z" fill="#2C241D"/>
+  
+  <!-- Surface soil depression profile -->
+  <path d="M 30 130 Q 120 170 210 130 L 210 150 Q 120 180 30 150 Z" fill="#5C4033"/>
+
+  <!-- Submerged & Stressed Crops (Golden/Brown rotting stalks bent in water) -->
+  <g>
+    <!-- Crop 1 -->
+    <path d="M 75 140 Q 65 110 50 100" fill="none" stroke="#D08838" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="48" cy="95" rx="5" ry="3" fill="#B86F28" transform="rotate(-30 48 95)"/>
+    
+    <!-- Crop 2 (Drooping heavily) -->
+    <path d="M 95 145 Q 90 115 80 110" fill="none" stroke="#C27C30" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="78" cy="107" rx="5" ry="3" fill="#A75F20" transform="rotate(-40 78 107)"/>
+
+    <!-- Crop 3 (Submerged base) -->
+    <path d="M 145 145 Q 150 115 160 110" fill="none" stroke="#D08838" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="162" cy="107" rx="5" ry="3" fill="#B86F28" transform="rotate(25 162 107)"/>
+
+    <!-- Crop 4 -->
+    <path d="M 165 140 Q 175 110 190 100" fill="none" stroke="#C27C30" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="192" cy="95" rx="5" ry="3" fill="#A75F20" transform="rotate(30 192 95)"/>
+  </g>
+
+  <!-- Flood Water Body (Engulfing the crops in the depression) -->
+  <path d="M 40 145 Q 120 170 200 145 L 205 158 Q 120 185 35 158 Z" fill="#2980B9" opacity="0.6"/>
+  <path d="M 35 138 Q 120 168 205 138 L 210 150 Q 120 180 30 150 Z" fill="#3498DB" opacity="0.8"/>
+
+  <!-- Water Surface Ripple Highlights -->
+  <ellipse cx="90" cy="144" rx="15" ry="3" fill="none" stroke="#AED6F1" stroke-width="1.5" opacity="0.7"/>
+  <ellipse cx="150" cy="144" rx="12" ry="2.5" fill="none" stroke="#AED6F1" stroke-width="1.5" opacity="0.7"/>
+  <ellipse cx="120" cy="149" rx="20" ry="3.5" fill="none" stroke="#AED6F1" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Foreground Rain Splashes on Water -->
+  <g fill="#AED6F1">
+    <circle cx="85" cy="142" r="1.5"/>
+    <circle cx="115" cy="146" r="1"/>
+    <circle cx="155" cy="143" r="1.5"/>
+    <circle cx="130" cy="141" r="1"/>
+  </g>
+
+  <!-- Heavy Rain Overlay foreground lines -->
+  <g opacity="0.6">
+    <line x1="60" y1="80" x2="45" y2="120" stroke="#5DADE2" stroke-width="2" stroke-linecap="round"/>
+    <line x1="110" y1="70" x2="95" y2="110" stroke="#5DADE2" stroke-width="2" stroke-linecap="round"/>
+    <line x1="170" y1="75" x2="155" y2="115" stroke="#5DADE2" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>
