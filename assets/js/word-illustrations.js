@@ -45067,6 +45067,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/麻¹.svg",
     "caption": "tê, tê dại"
   },
+  "麻²": {
+    "file": "麻².svg",
+    "src": "images/HSK_3.0/level7/麻².svg",
+    "caption": "cây gai, sợi đay, sợi lanh"
+  },
   "麻将": {
     "file": "麻将.svg",
     "src": "images/HSK_3.0/level7/麻将.svg",
@@ -45086,6 +45091,241 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "码².svg",
     "src": "images/HSK_3.0/level7/码².svg",
     "caption": "xếp, chất, chồng xếp"
+  },
+  "马后炮": {
+    "file": "马后炮.svg",
+    "src": "images/HSK_3.0/level7/马后炮.svg",
+    "caption": "vuốt đuôi, chuyện đã rồi mới nói"
+  },
+  "马力": {
+    "file": "马力.svg",
+    "src": "images/HSK_3.0/level7/马力.svg",
+    "caption": "mã lực, sức ngựa"
+  },
+  "马桶": {
+    "file": "马桶.svg",
+    "src": "images/HSK_3.0/level7/马桶.svg",
+    "caption": "bồn cầu"
+  },
+  "埋藏": {
+    "file": "埋藏.svg",
+    "src": "images/HSK_3.0/level7/埋藏.svg",
+    "caption": "chôn vùi, vùi lấp, chôn giấu"
+  },
+  "埋头苦干": {
+    "file": "埋头苦干.svg",
+    "src": "images/HSK_3.0/level7/埋头苦干.svg",
+    "caption": "vùi đầu cặm cụi làm việc, cặm cụi làm lụng"
+  },
+  "脉络": {
+    "file": "脉络.svg",
+    "src": "images/HSK_3.0/level7/脉络.svg",
+    "caption": "mạch lạc, hệ thống mạch, manh mối"
+  },
+  "瞒": {
+    "file": "瞒.svg",
+    "src": "images/HSK_3.0/level7/瞒.svg",
+    "caption": "giấu giếm, giấu giếm lừa dối"
+  },
+  "满怀": {
+    "file": "满怀.svg",
+    "src": "images/HSK_3.0/level7/满怀.svg",
+    "caption": "chan chứa, tràn ngập trong lòng"
+  },
+  "漫": {
+    "file": "漫.svg",
+    "src": "images/HSK_3.0/level7/漫.svg",
+    "caption": "tràn ngập, ngập tràn, lan tỏa"
+  },
+  "漫游": {
+    "file": "漫游.svg",
+    "src": "images/HSK_3.0/level7/漫游.svg",
+    "caption": "du ngoạn, lang thang"
+  },
+  "忙活": {
+    "file": "忙活.svg",
+    "src": "images/HSK_3.0/level7/忙活.svg",
+    "caption": "tất bật, bận rộn tất bật, làm lụng"
+  },
+  "忙乱": {
+    "file": "忙乱.svg",
+    "src": "images/HSK_3.0/level7/忙乱.svg",
+    "caption": "luống cuống, bận rộn rối bời"
+  },
+  "矛头": {
+    "file": "矛头.svg",
+    "src": "images/HSK_3.0/level7/矛头.svg",
+    "caption": "mũi nhọn, mũi dùi chĩa vào"
+  },
+  "冒昧": {
+    "file": "冒昧.svg",
+    "src": "images/HSK_3.0/level7/冒昧.svg",
+    "caption": "mạo muội, mạn phép"
+  },
+  "茂密": {
+    "file": "茂密.svg",
+    "src": "images/HSK_3.0/level7/茂密.svg",
+    "caption": "rậm rạp, um tùm, tươi tốt"
+  },
+  "没劲": {
+    "file": "没劲.svg",
+    "src": "images/HSK_3.0/level7/没劲.svg",
+    "caption": "mất sức, uể oải; chán ngắt"
+  },
+  "眉开眼笑": {
+    "file": "眉开眼笑.svg",
+    "src": "images/HSK_3.0/level7/眉开眼笑.svg",
+    "caption": "hớn hở tươi cười, cười tít mắt, mày mở mắt cười"
+  },
+  "煤气": {
+    "file": "煤气.svg",
+    "src": "images/HSK_3.0/level7/煤气.svg",
+    "caption": "khí than, khí gas"
+  },
+  "没完没了": {
+    "file": "没完没了.svg",
+    "src": "images/HSK_3.0/level7/没完没了.svg",
+    "caption": "dây dưa không dứt, không hồi kết"
+  },
+  "没辙": {
+    "file": "没辙.svg",
+    "src": "images/HSK_3.0/level7/没辙.svg",
+    "caption": "bó tay, hết cách, đành chịu"
+  },
+  "没准儿": {
+    "file": "没准儿.svg",
+    "src": "images/HSK_3.0/level7/没准儿.svg",
+    "caption": "chưa biết chừng, không chừng, có lẽ"
+  },
+  "美德": {
+    "file": "美德.svg",
+    "src": "images/HSK_3.0/level7/美德.svg",
+    "caption": "mỹ đức, phẩm chất tốt đẹp"
+  },
+  "美化": {
+    "file": "美化.svg",
+    "src": "images/HSK_3.0/level7/美化.svg",
+    "caption": "làm đẹp, tô điểm, mỹ hóa"
+  },
+  "美容": {
+    "file": "美容.svg",
+    "src": "images/HSK_3.0/level7/美容.svg",
+    "caption": "làm đẹp, chăm sóc sắc đẹp"
+  },
+  "美学": {
+    "file": "美学.svg",
+    "src": "images/HSK_3.0/level7/美学.svg",
+    "caption": "mỹ học"
+  },
+  "美誉": {
+    "file": "美誉.svg",
+    "src": "images/HSK_3.0/level7/美誉.svg",
+    "caption": "tiếng thơm, danh tiếng tốt"
+  },
+  "美中不足": {
+    "file": "美中不足.svg",
+    "src": "images/HSK_3.0/level7/美中不足.svg",
+    "caption": "điểm chưa hoàn hảo, còn chút khiếm khuyết"
+  },
+  "美滋滋": {
+    "file": "美滋滋.svg",
+    "src": "images/HSK_3.0/level7/美滋滋.svg",
+    "caption": "sướng rơn, khoái chí, đắc ý"
+  },
+  "闷": {
+    "file": "闷.svg",
+    "src": "images/HSK_3.0/level7/闷.svg",
+    "caption": "ngột ngạt, bí bách; om kín"
+  },
+  "闷热": {
+    "file": "闷热.svg",
+    "src": "images/HSK_3.0/level7/闷热.svg",
+    "caption": "oi bức, nóng nực ngột ngạt"
+  },
+  "门槛": {
+    "file": "门槛.svg",
+    "src": "images/HSK_3.0/level7/门槛.svg",
+    "caption": "ngưỡng cửa, điều kiện gia nhập"
+  },
+  "门路": {
+    "file": "门路.svg",
+    "src": "images/HSK_3.0/level7/门路.svg",
+    "caption": "đường đi nước bước, mối quan hệ"
+  },
+  "蒙": {
+    "file": "蒙.svg",
+    "src": "images/HSK_3.0/level7/蒙.svg",
+    "caption": "lừa bịp, lừa gạt; đoán mò"
+  },
+  "萌发": {
+    "file": "萌发.svg",
+    "src": "images/HSK_3.0/level7/萌发.svg",
+    "caption": "nảy mầm, nhen nhóm, chớm nở"
+  },
+  "朦胧": {
+    "file": "朦胧.svg",
+    "src": "images/HSK_3.0/level7/朦胧.svg",
+    "caption": "mờ ảo, lờ mờ, mơ màng"
+  },
+  "盟友": {
+    "file": "盟友.svg",
+    "src": "images/HSK_3.0/level7/盟友.svg",
+    "caption": "đồng minh"
+  },
+  "猛": {
+    "file": "猛.svg",
+    "src": "images/HSK_3.0/level7/猛.svg",
+    "caption": "dữ dội, mãnh liệt, đột ngột"
+  },
+  "猛然": {
+    "file": "猛然.svg",
+    "src": "images/HSK_3.0/level7/猛然.svg",
+    "caption": "đột nhiên, bất thình lình, chợt"
+  },
+  "梦幻": {
+    "file": "梦幻.svg",
+    "src": "images/HSK_3.0/level7/梦幻.svg",
+    "caption": "huyền ảo, như mơ, mộng ảo"
+  },
+  "梦寐以求": {
+    "file": "梦寐以求.svg",
+    "src": "images/HSK_3.0/level7/梦寐以求.svg",
+    "caption": "hằng ao ước, mơ ước bấy lâu"
+  },
+  "谜": {
+    "file": "谜.svg",
+    "src": "images/HSK_3.0/level7/谜.svg",
+    "caption": "điều bí ẩn, câu đố, bí mật"
+  },
+  "谜底": {
+    "file": "谜底.svg",
+    "src": "images/HSK_3.0/level7/谜底.svg",
+    "caption": "chân tướng sự việc, lời giải đố"
+  },
+  "迷恋": {
+    "file": "迷恋.svg",
+    "src": "images/HSK_3.0/level7/迷恋.svg",
+    "caption": "say đắm, mê mẩn, say mê"
+  },
+  "迷失": {
+    "file": "迷失.svg",
+    "src": "images/HSK_3.0/level7/迷失.svg",
+    "caption": "đánh mất, mất phương hướng, lạc lối"
+  },
+  "谜团": {
+    "file": "谜团.svg",
+    "src": "images/HSK_3.0/level7/谜团.svg",
+    "caption": "mớ bí ẩn, câu hỏi hóc búa chưa lời giải"
+  },
+  "密布": {
+    "file": "密布.svg",
+    "src": "images/HSK_3.0/level7/密布.svg",
+    "caption": "giăng kín, dày đặc, phủ đầy"
+  },
+  "秘方": {
+    "file": "秘方.svg",
+    "src": "images/HSK_3.0/level7/秘方.svg",
+    "caption": "phương thuốc bí truyền, bí phương"
   }
 };
 
