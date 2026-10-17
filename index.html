@@ -12,9 +12,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Synapse Hanzi">
-<link rel="stylesheet" href="assets/flashcards.css?v=20261017-mobile-clean1">
+<link rel="stylesheet" href="assets/flashcards.css?v=20261017-fix-example-box1">
 <link rel="stylesheet" href="assets/css/fast-review-picker.css?v=20261006-ui-refinement1">
-<link rel="stylesheet" href="assets/css/workstation.css?v=20261017-refine-v2">
+<link rel="stylesheet" href="assets/css/workstation.css?v=20261017-fix-example-box1">
 <link rel="stylesheet" href="assets/css/sidebar-lab.css?v=20261015-viewport-fix-v7">
 <link rel="stylesheet" href="assets/css/home-widgets.css?v=20261015-dashboard-redesign">
 <link rel="stylesheet" href="assets/css/dashboard-enhancements.css?v=20261017-mobile-clean1">
@@ -487,9 +487,9 @@ if ('serviceWorker' in navigator) {
   <div id="screenCards" style="display:none">
     <div class="study-view-topbar">
       <div class="study-view-topbar-left">
-        <button class="back-btn study-back-btn" onclick="SpaRouter.navigateBack()" title="Quay lại chọn cấp độ (Esc)" aria-label="Quay lại">
+        <button class="back-btn study-back-btn" onclick="SpaRouter.navigateBack()" title="Quay về trang chủ (Esc)" aria-label="Quay về trang chủ">
           <span class="back-arrow" aria-hidden="true">←</span>
-          <span class="study-level-badge" id="studyLevelBadge"></span>
+          <span class="study-back-text" id="studyBackBtnText">Quay về trang chủ</span>
         </button>
         <!-- Accessible hidden tab references for backward compatibility with router/overview scripts -->
         <div class="view-tabs" role="tablist" aria-label="Chế độ xem" style="display:none" hidden>
@@ -1137,17 +1137,17 @@ if ('serviceWorker' in navigator) {
 <script src="https://cdn.jsdelivr.net/npm/ts-fsrs@5.4.1/dist/index.umd.js" crossorigin="anonymous"></script>
 <script src="assets/js/srs.js?v=20261006-2tier-srs1"></script>
 <script src="assets/js/spa-router.js?v=20261014-router2"></script>
-<script src="assets/js/word-illustrations.js?v=20261017-zero-lag1"></script>
-<script src="assets/js/levels.js?v=20261017-zero-lag1"></script>
+<script src="assets/js/word-illustrations.js?v=20261017-fix-example-box1"></script>
+<script src="assets/js/levels.js?v=20261017-fix-example-box1"></script>
 <script src="assets/js/topics.js?v=20261006-decimal-pct1"></script>
 <script src="assets/js/hsk30.js?v=20261006-decimal-pct1"></script>
 <script src="assets/js/sentence-game.js?v=20261006-sentence-ux1"></script>
 <script src="assets/js/guess-word-game.js?v=20261006-fix-chair1"></script>
 <script src="assets/js/speed-quiz-game.js?v=20261017-speedquiz-redesign1"></script>
-<script src="assets/js/vocabulary-overview.js?v=20261017-zero-lag1"></script>
+<script src="assets/js/vocabulary-overview.js?v=20261017-fix-example-box1"></script>
 <script src="assets/js/fast-review.js?v=20261016-fix-l4-review1"></script>
 <script src="assets/js/hanviet-dict.js?v=20261007-pos-visual2"></script>
-<script src="assets/js/flashcard.js?v=20261017-refine-v2"></script>
+<script src="assets/js/flashcard.js?v=20261017-fix-example-box1"></script>
 <script src="assets/js/card-interactions.js?v=20261016-preserve-flip1"></script>
 <script src="assets/js/speechService.js?v=20261010-speech-mvp1"></script>
 <script src="assets/js/speech.js?v=20261017-gemini-tts-v3"></script>
