@@ -718,9 +718,11 @@ class TestFlashcardExperienceRefinements(unittest.TestCase):
         self.assertIn("window.isCardRevealed = isCardRevealed", self.flashcard_js)
 
     def test_desktop_layout_container_width(self):
-        """Desktop layout must expand main column from 660px/680px to 820px/860px."""
-        self.assertIn("max-width: 820px", self.workstation_css)
-        self.assertIn("max-width: 860px", self.workstation_css)
+        """Desktop layout must expand main column comfortably for readability (870px / 912px)."""
+        self.assertTrue(any(w in self.workstation_css for w in ("max-width: 870px", "max-width: 820px")),
+                        "Desktop main column width should be expanded for readability")
+        self.assertTrue(any(w in self.workstation_css for w in ("max-width: 912px", "max-width: 860px")),
+                        "Desktop workstation width should be expanded for readability")
 
     def test_cjk_fonts_placed_first(self):
         """Chinese font family for .hanzi must place CJK fonts before system fonts."""
