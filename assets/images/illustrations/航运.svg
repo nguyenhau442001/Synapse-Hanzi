@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ocean Background & Waves -->
+  <path d="M0 160 Q60 150 120 160 T240 160 V240 H0 Z" fill="#1E293B"/>
+  <path d="M0 180 Q60 170 120 180 T240 180 V240 H0 Z" fill="#0F172A"/>
+  
+  <!-- Globe / Network Grid Lines in Background -->
+  <circle cx="120" cy="110" r="70" fill="none" stroke="#2D3748" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <path d="M50 110 H190" stroke="#2D3748" stroke-width="1" stroke-dasharray="3 3"/>
+  <path d="M120 40 V180" stroke="#2D3748" stroke-width="1" stroke-dasharray="3 3"/>
+  
+  <!-- Curved Trade Routes (Dotted Arcs) -->
+  <path d="M60 130 Q120 70 180 130" fill="none" stroke="#F59E0B" stroke-width="2" stroke-dasharray="5 5" opacity="0.6"/>
+  <path d="M80 150 Q120 90 160 150" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.5"/>
+
+  <!-- Modern Container Ship (Physical Object Centerpiece) -->
+  <!-- Hull (Dark Blue & Red bottom) -->
+  <path d="M65 145 L180 145 C185 145 190 155 185 165 L175 175 C170 178 165 180 160 180 H70 C62 180 58 175 58 165 L62 148 C63 146 64 145 65 145 Z" fill="#0EA5E9"/>
+  <path d="M58 165 C58 175 62 180 70 180 H160 C165 180 170 178 175 175 L185 165 H58 Z" fill="#EF4444"/>
+  
+  <!-- Ship Deck & Superstructure -->
+  <rect x="75" y="130" width="85" height="15" fill="#E2E8F0" rx="2"/>
+  
+  <!-- Bridge/Control Tower (Aft) -->
+  <rect x="145" y="105" width="25" height="25" fill="#F8FAFC" rx="2"/>
+  <rect x="150" y="110" width="15" height="8" fill="#0EA5E9" rx="1"/>
+  <rect x="155" y="95" width="5" height="10" fill="#94A3B8"/>
+  <circle cx="157" cy="93" r="2" fill="#EF4444"/>
+
+  <!-- Colorful Stacked Shipping Containers -->
+  <!-- Stack 1 (Forward) -->
+  <rect x="80" y="115" width="16" height="15" fill="#EF4444" rx="1"/>
+  <rect x="80" y="100" width="16" height="15" fill="#F59E0B" rx="1"/>
+  
+  <!-- Stack 2 (Mid-Forward) -->
+  <rect x="98" y="115" width="16" height="15" fill="#3B82F6" rx="1"/>
+  <rect x="98" y="100" width="16" height="15" fill="#10B981" rx="1"/>
+  <rect x="98" y="85" width="16" height="15" fill="#F59E0B" rx="1"/>
+
+  <!-- Stack 3 (Mid-Aft) -->
+  <rect x="116" y="115" width="16" height="15" fill="#8B5CF6" rx="1"/>
+  <rect x="116" y="100" width="16" height="15" fill="#EF4444" rx="1"/>
+  <rect x="116" y="85" width="16" height="15" fill="#3B82F6" rx="1"/>
+
+  <!-- Crane / Port Infrastructure Accent (Subtle, framing the concept) -->
+  <path d="M20 70 H50 L60 90 V180" fill="none" stroke="#64748B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M45 70 V130" fill="none" stroke="#64748B" stroke-width="2"/>
+  
+  <!-- Water Reflection / Foam -->
+  <path d="M60 183 C70 180 80 185 90 183 C100 181 110 185 120 183 C130 181 140 185 150 183 C160 181 170 185 180 183" fill="none" stroke="#F8FAFC" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+</svg>

@@ -40447,6 +40447,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/汉服.svg",
     "caption": "hán phục, trang phục truyền thống"
   },
+  "汗马功劳": {
+    "file": "汗马功劳.svg",
+    "src": "images/HSK_3.0/level7/汗马功劳.svg",
+    "caption": "công lao to lớn, chiến công hãn mã"
+  },
   "捍卫": {
     "file": "捍卫.svg",
     "src": "images/HSK_3.0/level7/捍卫.svg",
@@ -40471,6 +40476,251 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "行情.svg",
     "src": "images/HSK_3.0/level7/行情.svg",
     "caption": "tình hình thị trường, thị giá"
+  },
+  "航天": {
+    "file": "航天.svg",
+    "src": "images/HSK_3.0/level7/航天.svg",
+    "caption": "hàng không vũ trụ, không gian"
+  },
+  "航天员": {
+    "file": "航天员.svg",
+    "src": "images/HSK_3.0/level7/航天员.svg",
+    "caption": "phi hành gia, nhà du hành vũ trụ"
+  },
+  "航行": {
+    "file": "航行.svg",
+    "src": "images/HSK_3.0/level7/航行.svg",
+    "caption": "hành trình đi biển, di chuyển"
+  },
+  "航运": {
+    "file": "航运.svg",
+    "src": "images/HSK_3.0/level7/航运.svg",
+    "caption": "vận tải đường biển, vận tải hàng hải"
+  },
+  "豪迈": {
+    "file": "豪迈.svg",
+    "src": "images/HSK_3.0/level7/豪迈.svg",
+    "caption": "hào sảng, hào hùng"
+  },
+  "好比": {
+    "file": "好比.svg",
+    "src": "images/HSK_3.0/level7/好比.svg",
+    "caption": "giống như, tựa như"
+  },
+  "好歹": {
+    "file": "好歹.svg",
+    "src": "images/HSK_3.0/level7/好歹.svg",
+    "caption": "dù sao đi nữa, hay dở"
+  },
+  "好受": {
+    "file": "好受.svg",
+    "src": "images/HSK_3.0/level7/好受.svg",
+    "caption": "dễ chịu, dễ thở, thanh thản"
+  },
+  "好说": {
+    "file": "好说.svg",
+    "src": "images/HSK_3.0/level7/好说.svg",
+    "caption": "dễ thương lượng, dễ nói"
+  },
+  "好似": {
+    "file": "好似.svg",
+    "src": "images/HSK_3.0/level7/好似.svg",
+    "caption": "tựa như, dường như"
+  },
+  "好心": {
+    "file": "好心.svg",
+    "src": "images/HSK_3.0/level7/好心.svg",
+    "caption": "lòng tốt"
+  },
+  "好意": {
+    "file": "好意.svg",
+    "src": "images/HSK_3.0/level7/好意.svg",
+    "caption": "thiện chí, ý tốt"
+  },
+  "好在": {
+    "file": "好在.svg",
+    "src": "images/HSK_3.0/level7/好在.svg",
+    "caption": "may mà, may thay"
+  },
+  "耗": {
+    "file": "耗.svg",
+    "src": "images/HSK_3.0/level7/耗.svg",
+    "caption": "tiêu hao, tiêu tốn"
+  },
+  "号称": {
+    "file": "号称.svg",
+    "src": "images/HSK_3.0/level7/号称.svg",
+    "caption": "mệnh danh là, tự xưng là"
+  },
+  "浩瀚": {
+    "file": "浩瀚.svg",
+    "src": "images/HSK_3.0/level7/浩瀚.svg",
+    "caption": "mênh mông bao la, bát ngát"
+  },
+  "浩劫": {
+    "file": "浩劫.svg",
+    "src": "images/HSK_3.0/level7/浩劫.svg",
+    "caption": "thảm họa khôn lường, kiếp nạn"
+  },
+  "好胜": {
+    "file": "好胜.svg",
+    "src": "images/HSK_3.0/level7/好胜.svg",
+    "caption": "hiếu thắng, chuộng thắng"
+  },
+  "耗时": {
+    "file": "耗时.svg",
+    "src": "images/HSK_3.0/level7/耗时.svg",
+    "caption": "tốn thời gian, mất nhiều thời gian"
+  },
+  "呵": {
+    "file": "呵.svg",
+    "src": "images/HSK_3.0/level7/呵.svg",
+    "caption": "hà hơi, phà hơi ấm"
+  },
+  "呵护": {
+    "file": "呵护.svg",
+    "src": "images/HSK_3.0/level7/呵护.svg",
+    "caption": "che chở, nâng niu, chăm sóc"
+  },
+  "何": {
+    "file": "何.svg",
+    "src": "images/HSK_3.0/level7/何.svg",
+    "caption": "hà tất, cớ sao, gì"
+  },
+  "和²": {
+    "file": "和².svg",
+    "src": "images/HSK_3.0/level7/和².svg",
+    "caption": "và"
+  },
+  "核": {
+    "file": "核.svg",
+    "src": "images/HSK_3.0/level7/核.svg",
+    "caption": "hột (quả), hạt nhân"
+  },
+  "和蔼": {
+    "file": "和蔼.svg",
+    "src": "images/HSK_3.0/level7/和蔼.svg",
+    "caption": "hòa nhã, từ ái, đôn hậu"
+  },
+  "核查": {
+    "file": "核查.svg",
+    "src": "images/HSK_3.0/level7/核查.svg",
+    "caption": "kiểm tra xác minh, thẩm tra"
+  },
+  "合唱": {
+    "file": "合唱.svg",
+    "src": "images/HSK_3.0/level7/合唱.svg",
+    "caption": "hợp xướng, đồng ca"
+  },
+  "何等": {
+    "file": "何等.svg",
+    "src": "images/HSK_3.0/level7/何等.svg",
+    "caption": "biết bao, dường nào"
+  },
+  "核电站": {
+    "file": "核电站.svg",
+    "src": "images/HSK_3.0/level7/核电站.svg",
+    "caption": "nhà máy điện hạt nhân"
+  },
+  "核对": {
+    "file": "核对.svg",
+    "src": "images/HSK_3.0/level7/核对.svg",
+    "caption": "đối chiếu, kiểm tra đối chiếu"
+  },
+  "和好": {
+    "file": "和好.svg",
+    "src": "images/HSK_3.0/level7/和好.svg",
+    "caption": "làm lành, hòa hảo"
+  },
+  "合乎": {
+    "file": "合乎.svg",
+    "src": "images/HSK_3.0/level7/合乎.svg",
+    "caption": "phù hợp với, hợp với"
+  },
+  "荷花": {
+    "file": "荷花.svg",
+    "src": "images/HSK_3.0/level7/荷花.svg",
+    "caption": "hoa sen"
+  },
+  "合伙": {
+    "file": "合伙.svg",
+    "src": "images/HSK_3.0/level7/合伙.svg",
+    "caption": "chung vốn, hợp tác làm ăn"
+  },
+  "合计": {
+    "file": "合计.svg",
+    "src": "images/HSK_3.0/level7/合计.svg",
+    "caption": "tổng cộng, cộng lại là"
+  },
+  "和解": {
+    "file": "和解.svg",
+    "src": "images/HSK_3.0/level7/和解.svg",
+    "caption": "hòa giải"
+  },
+  "何苦": {
+    "file": "何苦.svg",
+    "src": "images/HSK_3.0/level7/何苦.svg",
+    "caption": "hà tất, tội gì, cớ sao phải khổ"
+  },
+  "禾苗": {
+    "file": "禾苗.svg",
+    "src": "images/HSK_3.0/level7/禾苗.svg",
+    "caption": "mạ, cây lúa non"
+  },
+  "核能": {
+    "file": "核能.svg",
+    "src": "images/HSK_3.0/level7/核能.svg",
+    "caption": "năng lượng hạt nhân"
+  },
+  "河畔": {
+    "file": "河畔.svg",
+    "src": "images/HSK_3.0/level7/河畔.svg",
+    "caption": "bờ sông, ven sông"
+  },
+  "和平共处": {
+    "file": "和平共处.svg",
+    "src": "images/HSK_3.0/level7/和平共处.svg",
+    "caption": "cùng chung sống hòa bình"
+  },
+  "和气": {
+    "file": "和气.svg",
+    "src": "images/HSK_3.0/level7/和气.svg",
+    "caption": "hòa nhã, hòa khí"
+  },
+  "和尚": {
+    "file": "和尚.svg",
+    "src": "images/HSK_3.0/level7/和尚.svg",
+    "caption": "nhà sư, hòa thượng"
+  },
+  "核实": {
+    "file": "核实.svg",
+    "src": "images/HSK_3.0/level7/核实.svg",
+    "caption": "xác minh, kiểm tra xác thực"
+  },
+  "核桃": {
+    "file": "核桃.svg",
+    "src": "images/HSK_3.0/level7/核桃.svg",
+    "caption": "quả óc chó"
+  },
+  "核武器": {
+    "file": "核武器.svg",
+    "src": "images/HSK_3.0/level7/核武器.svg",
+    "caption": "vũ khí hạt nhân"
+  },
+  "合约": {
+    "file": "合约.svg",
+    "src": "images/HSK_3.0/level7/合约.svg",
+    "caption": "hợp đồng, khế ước"
+  },
+  "鹤立鸡群": {
+    "file": "鹤立鸡群.svg",
+    "src": "images/HSK_3.0/level7/鹤立鸡群.svg",
+    "caption": "hạc đứng giữa bầy gà, nổi bật vượt trội"
+  },
+  "赫然": {
+    "file": "赫然.svg",
+    "src": "images/HSK_3.0/level7/赫然.svg",
+    "caption": "sờ sờ đập vào mắt, rõ rành rành"
   }
 };
 

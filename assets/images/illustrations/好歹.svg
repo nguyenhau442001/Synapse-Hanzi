@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient background glow representing contrast/balance -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.6"/>
+
+  <!-- Visual Metaphor: Scales Tipping / Contrast & Concession (好歹 - "anyway/at any rate/at least") -->
+  <!-- Represents weighing heavy burden vs essential baseline care (the breakfast/health context) -->
+
+  <!-- Pivot Stand for Balance / Scale -->
+  <path d="M120 70 L120 170" stroke="#3A4252" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="120" cy="70" r="10" fill="#F39C12"/>
+  <circle cx="120" cy="70" r="5" fill="#1A1D24"/>
+  
+  <!-- Tipping Beam (representing concession: despite heavy workload, at least take care of health) -->
+  <g transform="rotate(-8 120 70)">
+    <!-- Horizontal Beam -->
+    <rect x="50" y="66" width="140" height="8" rx="4" fill="#4E5D6C"/>
+    
+    <!-- Left side: Heavy Workload / Chaos (representing the chaotic workload) -->
+    <line x1="65" y1="74" x2="65" y2="120" stroke="#3A4252" stroke-width="2"/>
+    <path d="M45 120 L85 120 L80 150 L50 150 Z" fill="#2C3540"/>
+    <!-- Stack of chaotic papers/tasks -->
+    <rect x="52" y="125" width="26" height="4" rx="1" fill="#E74C3C"/>
+    <rect x="50" y="132" width="30" height="4" rx="1" fill="#95A5A6"/>
+    <rect x="54" y="139" width="22" height="4" rx="1" fill="#95A5A6"/>
+
+    <!-- Right side: Essential Care / Vital Baseline (representing "at least eat/nourish") -->
+    <line x1="175" y1="74" x2="175" y2="115" stroke="#3A4252" stroke-width="2"/>
+    <!-- Tray / Base -->
+    <path d="M150,145 Q175,152 200,145 L195,152 Q175,156 155,152 Z" fill="#F39C12"/>
+    
+    <!-- Hot bowl representing the essential meal / morning care ("早饭好歹还是要吃") -->
+    <path d="M160,122 C160,116 190,116 190,122 Z" fill="#E67E22"/>
+    <path d="M157,122 L193,122 L188,142 C188,144 186,145 184,145 L166,145 C164,145 162,144 162,142 Z" fill="#F1C40F"/>
+    
+    <!-- Steaming wisps representing life force / sustenance -->
+    <path d="M170,112 Q172,107 170,102" stroke="#F1C40F" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <path d="M180,110 Q178,105 182,100" stroke="#F1C40F" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8"/>
+  </g>
+
+  <!-- Ground Base Line -->
+  <path d="M80 185 L160 185" stroke="#3A4252" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Accent focal indicator elements (Modern flat UI touches) -->
+  <circle cx="175" cy="125" r="3" fill="#FFFFFF" opacity="0.9"/>
+</svg>
