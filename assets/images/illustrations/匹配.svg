@@ -1,0 +1,71 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle background grid pattern for technical/matching context -->
+  <g stroke="#262B35" stroke-width="1" stroke-dasharray="4 4" opacity="0.6">
+    <line x1="40" y1="0" x2="40" y2="240" />
+    <line x1="120" y1="0" x2="120" y2="240" />
+    <line x1="200" y1="0" x2="200" y2="240" />
+    <line x1="0" y1="60" x2="240" y2="60" />
+    <line x1="0" y1="120" x2="240" y2="120" />
+    <line x1="0" y1="180" x2="240" y2="180" />
+  </g>
+
+  <!-- Left Side: Profile/Candidate Card (Job Application Context) -->
+  <g transform="translate(30, 70)">
+    <rect x="0" y="0" width="60" height="80" rx="8" fill="#222733" stroke="#3A4254" stroke-width="2"/>
+    <!-- Avatar -->
+    <circle cx="30" cy="25" r="12" fill="#4E65FF" opacity="0.8"/>
+    <path d="M 16 48 Q 30 38 44 48" fill="#4E65FF" opacity="0.8"/>
+    <!-- Skill lines -->
+    <rect x="15" y="56" width="30" height="4" rx="2" fill="#F59E0B"/>
+    <rect x="18" y="66" width="24" height="3" rx="1.5" fill="#3A4254"/>
+  </g>
+
+  <!-- Right Side: Job Requirement Card -->
+  <g transform="translate(150, 70)">
+    <rect x="0" y="0" width="60" height="80" rx="8" fill="#222733" stroke="#3A4254" stroke-width="2"/>
+    <!-- Target/Briefcase Icon -->
+    <rect x="20" y="16" width="20" height="16" rx="3" fill="#10B981" opacity="0.8"/>
+    <path d="M 25 16 V 13 C 25 11.5 26.5 10 28 10 H 32 C 33.5 10 35 11.5 35 13 V 16" fill="none" stroke="#10B981" stroke-width="2"/>
+    <!-- Requirement lines -->
+    <rect x="15" y="44" width="30" height="4" rx="2" fill="#10B981"/>
+    <rect x="15" y="56" width="30" height="4" rx="2" fill="#F59E0B"/>
+    <rect x="18" y="66" width="24" height="3" rx="1.5" fill="#3A4254"/>
+  </g>
+
+  <!-- Central Dynamic Interaction (Matching Action) -->
+  <g transform="translate(120, 110)">
+    <!-- Motion lines representing the dynamic fitting action -->
+    <path d="M -45 -10 Q -30 -25 -15 -10" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="3 3"/>
+    <path d="M 45 -10 Q 30 -25 15 -10" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="3 3"/>
+
+    <!-- Glowing magnetic connection aura / Success puzzle connector -->
+    <circle cx="0" cy="0" r="26" fill="#F59E0B" opacity="0.15"/>
+    <circle cx="0" cy="0" r="20" fill="#F59E0B" opacity="0.25"/>
+
+    <!-- Puzzle Piece / Match shape merging -->
+    <path d="M -12 -12 
+             H -4 
+             C -4 -18, 4 -18, 4 -12 
+             H 12 
+             V -4 
+             C 18 -4, 18 4, 12 4 
+             V 12 
+             H 4 
+             C 4 18, -4 18, -4 12 
+             H -12 
+             V 4 
+             C -18 4, -18 -4, -12 -4 
+             Z" 
+          fill="#F59E0B" 
+          stroke="#FFFFFF" 
+          stroke-width="2" 
+          stroke-linejoin="round"/>
+
+    <!-- Checkmark inside matching element -->
+    <path d="M -4 1 L -1 4 L 5 -3" fill="none" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+</svg>
