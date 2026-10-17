@@ -1,0 +1,77 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle grid background representing zoning / master plan -->
+  <g opacity="0.15">
+    <line x1="30" y1="180" x2="210" y2="180" stroke="#64748B" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="30" y1="140" x2="210" y2="140" stroke="#64748B" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="30" y1="100" x2="210" y2="100" stroke="#64748B" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="80" y1="60" x2="80" y2="200" stroke="#64748B" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="150" y1="60" x2="150" y2="200" stroke="#64748B" stroke-width="1" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- Zone Boundary / Foundation (Economic Development Zone map outline) -->
+  <path d="M45 195 L195 195 L210 110 L165 75 L75 75 L30 110 Z" fill="#252D3D" stroke="#3B82F6" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Modern Infrastructure & Tech Buildings (High-tech park) -->
+  <!-- Building Left (R&D Center) -->
+  <path d="M55 180 L55 115 L85 105 L85 180 Z" fill="#334155"/>
+  <path d="M55 115 L70 100 L85 105 Z" fill="#475569"/>
+  <!-- Windows Left -->
+  <rect x="61" y="125" width="6" height="8" rx="1" fill="#60A5FA" opacity="0.8"/>
+  <rect x="71" y="125" width="6" height="8" rx="1" fill="#60A5FA" opacity="0.8"/>
+  <rect x="61" y="140" width="6" height="8" rx="1" fill="#60A5FA" opacity="0.8"/>
+  <rect x="71" y="140" width="6" height="8" rx="1" fill="#60A5FA" opacity="0.8"/>
+  <rect x="61" y="155" width="6" height="8" rx="1" fill="#60A5FA" opacity="0.8"/>
+  <rect x="71" y="155" width="6" height="8" rx="1" fill="#60A5FA" opacity="0.8"/>
+
+  <!-- Building Right (Advanced Manufacturing / Industry) -->
+  <path d="M145 180 L145 90 L185 100 L185 180 Z" fill="#1E293B"/>
+  <polygon points="145,90 165,75 185,100" fill="#334155"/>
+  <!-- Windows Right -->
+  <rect x="153" y="110" width="8" height="6" rx="1" fill="#38BDF8" opacity="0.7"/>
+  <rect x="167" y="110" width="8" height="6" rx="1" fill="#38BDF8" opacity="0.7"/>
+  <rect x="153" y="125" width="8" height="6" rx="1" fill="#38BDF8" opacity="0.7"/>
+  <rect x="167" y="125" width="8" height="6" rx="1" fill="#38BDF8" opacity="0.7"/>
+  <rect x="153" y="140" width="8" height="6" rx="1" fill="#38BDF8" opacity="0.7"/>
+  <rect x="167" y="140" width="8" height="6" rx="1" fill="#38BDF8" opacity="0.7"/>
+  <rect x="153" y="155" width="8" height="6" rx="1" fill="#38BDF8" opacity="0.7"/>
+  <rect x="167" y="155" width="8" height="6" rx="1" fill="#38BDF8" opacity="0.7"/>
+
+  <!-- Central Headquarters / Innovation Tower (Focal Point) -->
+  <path d="M95 180 L95 70 L135 60 L135 180 Z" fill="#0F172A" stroke="#F59E0B" stroke-width="1.5"/>
+  <polygon points="95,70 115,50 135,60" fill="#1E293B" stroke="#F59E0B" stroke-width="1"/>
+  <!-- Tower Spire -->
+  <line x1="115" y1="50" x2="115" y2="35" stroke="#F59E0B" stroke-width="2"/>
+  <circle cx="115" cy="33" r="2" fill="#F59E0B"/>
+
+  <!-- Tower Windows / Glowing Tech Matrix -->
+  <rect x="103" y="80" width="10" height="12" rx="1" fill="#F59E0B" opacity="0.9"/>
+  <rect x="117" y="80" width="10" height="12" rx="1" fill="#F59E0B" opacity="0.9"/>
+  <rect x="103" y="100" width="10" height="12" rx="1" fill="#F59E0B" opacity="0.9"/>
+  <rect x="117" y="100" width="10" height="12" rx="1" fill="#F59E0B" opacity="0.9"/>
+  <rect x="103" y="120" width="10" height="12" rx="1" fill="#F59E0B" opacity="0.9"/>
+  <rect x="117" y="120" width="10" height="12" rx="1" fill="#F59E0B" opacity="0.9"/>
+  <rect x="103" y="140" width="10" height="12" rx="1" fill="#F59E0B" opacity="0.9"/>
+  <rect x="117" y="140" width="10" height="12" rx="1" fill="#F59E0B" opacity="0.9"/>
+
+  <!-- Modern Expressway / Logistics Path (Connecting the zone) -->
+  <path d="M20 195 C 60 185, 180 185, 220 195" fill="none" stroke="#334155" stroke-width="10" stroke-linecap="round"/>
+  <path d="M20 195 C 60 185, 180 185, 220 195" fill="none" stroke="#F59E0B" stroke-width="2" stroke-dasharray="6 8" stroke-linecap="round"/>
+
+  <!-- Green Ecological Innovation Elements (Sustainable Development) -->
+  <!-- Low-poly Trees -->
+  <circle cx="45" cy="175" r="8" fill="#10B981"/>
+  <path d="M45 183 L45 188" stroke="#065F46" stroke-width="2"/>
+  
+  <circle cx="200" cy="175" r="7" fill="#10B981"/>
+  <path d="M200 182 L200 187" stroke="#065F46" stroke-width="2"/>
+
+  <circle cx="140" cy="183" r="6" fill="#10B981"/>
+  <path d="M140 189 L140 193" stroke="#065F46" stroke-width="2"/>
+
+  <!-- Solar/Tech Indicator Node (Floating Growth Symbol) -->
+  <circle cx="115" cy="15" r="4" fill="#38BDF8" opacity="0.8"/>
+  <path d="M112 15 L118 15 M115 12 L115 18" stroke="#1E293B" stroke-width="1.5"/>
+</svg>

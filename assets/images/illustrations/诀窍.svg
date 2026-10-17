@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Glow & Details -->
+  <circle cx="120" cy="115" r="75" fill="#252A34"/>
+  
+  <!-- Sleek Modern Key Icon Representing "Bí quyết / 诀窍" -->
+  <!-- Bow of the key (Gear/Precision mechanism) -->
+  <g transform="translate(120, 115)">
+    <!-- Outer decorative ring / gear teeth -->
+    <path d="M-15,-38 L-8,-38 L-6,-44 L6,-44 L8,-38 L15,-38 L18,-32 L12,-27 L18,-22 L15,-16 L8,-16 L6,-10 L-6,-10 L-8,-16 L-15,-16 L-18,-22 L-12,-27 L-18,-32 Z" fill="#3E4A59"/>
+    <circle cx="0" cy="-27" r="16" fill="#1A1D24"/>
+    
+    <!-- Golden Core / Highlight on Key -->
+    <circle cx="0" cy="-27" r="8" fill="#F39C12"/>
+    <circle cx="0" cy="-27" r="4" fill="#F1C40F"/>
+
+    <!-- Key Shaft -->
+    <rect x="-4" y="-16" width="8" height="64" rx="2" fill="#F39C12"/>
+    
+    <!-- Central slot on shaft -->
+    <rect x="-1.5" y="-12" width="3" height="40" rx="1" fill="#D35400"/>
+
+    <!-- Key Bit (Teeth at the bottom representing the "trick/mechanism" solving a problem) -->
+    <path d="M4,32 L20,32 L20,38 L12,38 L12,42 L4,42 Z" fill="#F39C12"/>
+    
+    <!-- Cutout in key bit -->
+    <rect x="8" y="34" width="4" height="4" fill="#1A1D24"/>
+  </g>
+
+  <!-- Sparkle / Insight Elements -->
+  <g fill="#F1C40F">
+    <!-- Top-left sparkle -->
+    <path d="M65,60 C65,60 65,70 60,70 C55,70 55,60 55,60 C55,60 55,50 60,50 C65,50 65,60 65,60 Z" opacity="0.9"/>
+    <path d="M50,65 C50,65 60,65 60,60 C60,55 60,65 60,65 C60,65 60,75 60,70 C60,65 50,65 50,65 Z" opacity="0.9"/>
+
+    <!-- Top-right sparkle -->
+    <path d="M185,80 C185,80 185,88 180,88 C175,88 175,80 175,80 C175,80 175,72 180,72 C185,72 185,80 185,80 Z" opacity="0.7"/>
+    <path d="M170,80 C170,80 190,80 180,75 C170,80 170,80 170,80 C170,80 190,80 180,85 C170,80 170,80 170,80 Z" opacity="0.7"/>
+
+    <!-- Small accent dot -->
+    <circle cx="85" cy="140" r="3" opacity="0.5"/>
+    <circle cx="155" cy="130" r="2" opacity="0.4"/>
+  </g>
+</svg>
