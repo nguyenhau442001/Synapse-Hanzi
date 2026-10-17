@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background subtle warm accent glow representing care -->
+  <circle cx="120" cy="130" r="70" fill="#FFA500" opacity="0.05"/>
+
+  <!-- Character 1: Stepfather (standing, older, warm approachable posture) -->
+  <g transform="translate(10, 0)">
+    <!-- Father Body / Torso -->
+    <path d="M 85 170 L 65 210 L 115 210 L 105 170 Z" fill="#2E4057"/>
+    <!-- Father Shoulders & Shirt -->
+    <path d="M 60 130 C 60 115 80 110 95 110 C 110 110 130 115 130 130 L 135 170 C 135 170 120 175 95 175 C 70 175 55 170 55 170 Z" fill="#3B82F6"/>
+    <!-- Father Neck -->
+    <rect x="85" y="98" width="20" height="18" fill="#F1C27D"/>
+    <!-- Father Head -->
+    <circle cx="95" cy="85" r="18" fill="#F1C27D"/>
+    <!-- Father Hair (mature, styled) -->
+    <path d="M 77 82 C 77 70 85 67 95 67 C 105 67 113 70 113 82 L 113 88 C 105 85 85 85 77 88 Z" fill="#4B5563"/>
+    <!-- Father Gentle Smile & Eyes -->
+    <circle cx="89" cy="83" r="1.5" fill="#1F2937"/>
+    <circle cx="101" cy="83" r="1.5" fill="#1F2937"/>
+    <path d="M 92 90 Q 95 93 98 90" stroke="#1F2937" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    
+    <!-- Father Arm reaching out warmly to guide/support the child -->
+    <path d="M 120 130 C 135 130 145 140 150 150 L 135 158 C 132 152 127 145 120 142 Z" fill="#3B82F6"/>
+    <!-- Father Hand resting on child's shoulder -->
+    <circle cx="153" cy="153" r="5" fill="#F1C27D"/>
+  </g>
+
+  <!-- Character 2: Child (younger, slightly shorter, looking up with trust) -->
+  <g transform="translate(10, 0)">
+    <!-- Child Body -->
+    <path d="M 155 175 L 140 210 L 180 210 L 170 175 Z" fill="#1E3A8A"/>
+    <!-- Child Shirt -->
+    <path d="M 138 140 C 138 130 150 125 162 125 C 174 125 186 130 186 140 L 190 175 C 190 175 180 180 162 180 C 144 180 134 175 134 175 Z" fill="#F59E0B"/>
+    <!-- Child Neck -->
+    <rect x="154" y="112" width="16" height="15" fill="#F1C27D"/>
+    <!-- Child Head -->
+    <circle cx="162" cy="100" r="15" fill="#F1C27D"/>
+    <!-- Child Hair -->
+    <path d="M 148 98 C 148 88 155 85 162 85 C 169 85 176 88 176 98 L 176 102 C 169 98 155 98 148 102 Z" fill="#1F2937"/>
+    <!-- Child Face (looking towards father) -->
+    <circle cx="158" cy="98" r="1.5" fill="#1F2937"/>
+    <circle cx="168" cy="98" r="1.5" fill="#1F2937"/>
+    <path d="M 161 104 Q 163 107 165 104" stroke="#1F2937" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Symbolic warm bond accent (NO HEARTS): Simple gentle connecting arc representing guidance and family unity -->
+  <path d="M 115 60 Q 135 45 155 65" stroke="#F59E0B" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <circle cx="135" cy="50" r="3" fill="#F59E0B"/>
+</svg>

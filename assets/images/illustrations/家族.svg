@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow representing prosperity/growth -->
+  <circle cx="120" cy="130" r="70" fill="#FFB703" opacity="0.06"/>
+  
+  <!-- Family Tree / Lineage Symbolizing "家族" (Generational lineage & prosperity) -->
+  <g transform="translate(0, 10)">
+    <!-- Tree Trunk & Roots (Foundation / Ancestry) -->
+    <path d="M110 160 L130 160 L125 105 L115 105 Z" fill="#4A5568"/>
+    <path d="M100 165 C110 165, 118 160, 120 150 C122 160, 130 165, 140 165" stroke="#4A5568" stroke-width="4" stroke-linecap="round" fill="none"/>
+    
+    <!-- Generational Branches -->
+    <!-- Grandparents / Ancestors (Top tier) -->
+    <circle cx="95" cy="75" r="14" fill="#3B82F6"/>
+    <circle cx="145" cy="75" r="14" fill="#3B82F6"/>
+    <path d="M120 105 L95 75" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+    <path d="M120 105 L145 75" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Parents (Middle tier) -->
+    <circle cx="80" cy="115" r="16" fill="#60A5FA"/>
+    <circle cx="160" cy="115" r="16" fill="#60A5FA"/>
+    <path d="M120 135 L80 115" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+    <path d="M120 135 L160 115" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Descendants / Children (Lower/Wider tier - Prospering "兴旺") -->
+    <circle cx="65" cy="155" r="12" fill="#FFB703"/>
+    <circle cx="100" cy="165" r="12" fill="#FFB703"/>
+    <circle cx="140" cy="165" r="12" fill="#FFB703"/>
+    <circle cx="175" cy="155" r="12" fill="#FFB703"/>
+    
+    <path d="M80 135 L65 155" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+    <path d="M80 135 L100 165" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+    <path d="M160 135 L140 165" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+    <path d="M160 135 L175 155" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Connecting Canopy / Foliage representing flourishing life and prosperity -->
+    <path d="M120 40 C90 40, 70 60, 70 85 C70 95, 75 105, 85 110 C65 115, 55 130, 55 145 C55 165, 75 180, 100 180 C110 180, 120 175, 120 175 C120 175, 130 180, 140 180 C165 180, 185 165, 185 145 C185 130, 175 115, 155 110 C165 105, 170 95, 170 85 C170 60, 150 40, 120 40 Z" fill="#2563EB" opacity="0.15"/>
+    
+    <!-- Golden Prosperity Accents (Sparkles/Leaves) -->
+    <circle cx="120" cy="35" r="4" fill="#FFB703"/>
+    <circle cx="85" cy="55" r="3" fill="#FFB703"/>
+    <circle cx="155" cy="55" r="3" fill="#FFB703"/>
+    <circle cx="45" cy="135" r="3.5" fill="#FFB703"/>
+    <circle cx="195" cy="135" r="3.5" fill="#FFB703"/>
+  </g>
+  
+  <!-- Modern minimalist base platform -->
+  <rect x="80" y="200" width="80" height="6" rx="3" fill="#334155"/>
+</svg>

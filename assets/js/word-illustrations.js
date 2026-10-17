@@ -41716,6 +41716,256 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "及早.svg",
     "src": "images/HSK_3.0/level7/及早.svg",
     "caption": "sớm, càng sớm càng tốt"
+  },
+  "急中生智": {
+    "file": "急中生智.svg",
+    "src": "images/HSK_3.0/level7/急中生智.svg",
+    "caption": "cái khó ló cái khôn, trong lúc nguy cấp nảy ra mưu trí"
+  },
+  "集装箱": {
+    "file": "集装箱.svg",
+    "src": "images/HSK_3.0/level7/集装箱.svg",
+    "caption": "thùng container, công-te-nơ"
+  },
+  "集资": {
+    "file": "集资.svg",
+    "src": "images/HSK_3.0/level7/集资.svg",
+    "caption": "huy động vốn, gom vốn"
+  },
+  "挤压": {
+    "file": "挤压.svg",
+    "src": "images/HSK_3.0/level7/挤压.svg",
+    "caption": "chèn ép, bóp ép, đè ép"
+  },
+  "计": {
+    "file": "计.svg",
+    "src": "images/HSK_3.0/level7/计.svg",
+    "caption": "kế sách, mưu tính, tính toán"
+  },
+  "忌": {
+    "file": "忌.svg",
+    "src": "images/HSK_3.0/level7/忌.svg",
+    "caption": "kiêng, kiêng kỵ, tránh"
+  },
+  "剂": {
+    "file": "剂.svg",
+    "src": "images/HSK_3.0/level7/剂.svg",
+    "caption": "liều, thang (thuốc), chất"
+  },
+  "继": {
+    "file": "继.svg",
+    "src": "images/HSK_3.0/level7/继.svg",
+    "caption": "tiếp sau, nối tiếp"
+  },
+  "祭": {
+    "file": "祭.svg",
+    "src": "images/HSK_3.0/level7/祭.svg",
+    "caption": "tế bái, cúng tế"
+  },
+  "暨": {
+    "file": "暨.svg",
+    "src": "images/HSK_3.0/level7/暨.svg",
+    "caption": "cùng với, và, kiêm"
+  },
+  "继而": {
+    "file": "继而.svg",
+    "src": "images/HSK_3.0/level7/继而.svg",
+    "caption": "tiếp đó, liền sau đó"
+  },
+  "计策": {
+    "file": "计策.svg",
+    "src": "images/HSK_3.0/level7/计策.svg",
+    "caption": "kế sách, mưu lược"
+  },
+  "祭奠": {
+    "file": "祭奠.svg",
+    "src": "images/HSK_3.0/level7/祭奠.svg",
+    "caption": "cúng viếng, tưởng nhớ"
+  },
+  "忌妒": {
+    "file": "忌妒.svg",
+    "src": "images/HSK_3.0/level7/忌妒.svg",
+    "caption": "đố kỵ, ghen ghét"
+  },
+  "继父": {
+    "file": "继父.svg",
+    "src": "images/HSK_3.0/level7/继父.svg",
+    "caption": "cha dượng"
+  },
+  "记号": {
+    "file": "记号.svg",
+    "src": "images/HSK_3.0/level7/记号.svg",
+    "caption": "dấu hiệu ghi nhớ, ký hiệu"
+  },
+  "计较": {
+    "file": "计较.svg",
+    "src": "images/HSK_3.0/level7/计较.svg",
+    "caption": "so đo, tính toán, tị nạnh"
+  },
+  "寂静": {
+    "file": "寂静.svg",
+    "src": "images/HSK_3.0/level7/寂静.svg",
+    "caption": "tĩnh mịch, thanh tịnh, vắng lặng"
+  },
+  "忌口": {
+    "file": "忌口.svg",
+    "src": "images/HSK_3.0/level7/忌口.svg",
+    "caption": "kiêng khem món ăn, kiêng ăn"
+  },
+  "剂量": {
+    "file": "剂量.svg",
+    "src": "images/HSK_3.0/level7/剂量.svg",
+    "caption": "liều lượng (thuốc)"
+  },
+  "继母": {
+    "file": "继母.svg",
+    "src": "images/HSK_3.0/level7/继母.svg",
+    "caption": "mẹ kế, mẹ ghẻ"
+  },
+  "纪念碑": {
+    "file": "纪念碑.svg",
+    "src": "images/HSK_3.0/level7/纪念碑.svg",
+    "caption": "đài tưởng niệm, bia kỷ niệm"
+  },
+  "纪实": {
+    "file": "纪实.svg",
+    "src": "images/HSK_3.0/level7/纪实.svg",
+    "caption": "ký sự, phóng sự thực tế"
+  },
+  "祭祀": {
+    "file": "祭祀.svg",
+    "src": "images/HSK_3.0/level7/祭祀.svg",
+    "caption": "cúng tế, tế lễ, tế tự"
+  },
+  "迹象": {
+    "file": "迹象.svg",
+    "src": "images/HSK_3.0/level7/迹象.svg",
+    "caption": "dấu hiệu, hiện tượng, manh mối"
+  },
+  "绩效": {
+    "file": "绩效.svg",
+    "src": "images/HSK_3.0/level7/绩效.svg",
+    "caption": "hiệu suất công việc, thành tích công tác"
+  },
+  "纪要": {
+    "file": "纪要.svg",
+    "src": "images/HSK_3.0/level7/纪要.svg",
+    "caption": "biên bản tóm tắt, kỷ yếu (hội nghị)"
+  },
+  "记忆犹新": {
+    "file": "记忆犹新.svg",
+    "src": "images/HSK_3.0/level7/记忆犹新.svg",
+    "caption": "ký ức vẫn như in, nhớ như in"
+  },
+  "家伙": {
+    "file": "家伙.svg",
+    "src": "images/HSK_3.0/level7/家伙.svg",
+    "caption": "gã, tên, thằng cha, đồ nghề"
+  },
+  "家教": {
+    "file": "家教.svg",
+    "src": "images/HSK_3.0/level7/家教.svg",
+    "caption": "gia giáo, nề nếp gia đình"
+  },
+  "佳节": {
+    "file": "佳节.svg",
+    "src": "images/HSK_3.0/level7/佳节.svg",
+    "caption": "ngày tết, dịp lễ hội, ngày vui"
+  },
+  "加紧": {
+    "file": "加紧.svg",
+    "src": "images/HSK_3.0/level7/加紧.svg",
+    "caption": "đẩy nhanh, ráo riết, khẩn trương"
+  },
+  "家境": {
+    "file": "家境.svg",
+    "src": "images/HSK_3.0/level7/家境.svg",
+    "caption": "hoàn cảnh gia đình, gia cảnh"
+  },
+  "加盟": {
+    "file": "加盟.svg",
+    "src": "images/HSK_3.0/level7/加盟.svg",
+    "caption": "gia nhập, liên minh, nhượng quyền thương mại"
+  },
+  "嘉年华": {
+    "file": "嘉年华.svg",
+    "src": "images/HSK_3.0/level7/嘉年华.svg",
+    "caption": "lễ hội náo nhiệt, carnival"
+  },
+  "家禽": {
+    "file": "家禽.svg",
+    "src": "images/HSK_3.0/level7/家禽.svg",
+    "caption": "gia cầm"
+  },
+  "家世": {
+    "file": "家世.svg",
+    "src": "images/HSK_3.0/level7/家世.svg",
+    "caption": "gia thế, xuất thân gia đình"
+  },
+  "佳肴": {
+    "file": "佳肴.svg",
+    "src": "images/HSK_3.0/level7/佳肴.svg",
+    "caption": "món ngon, cao lương mỹ vị"
+  },
+  "家用": {
+    "file": "家用.svg",
+    "src": "images/HSK_3.0/level7/家用.svg",
+    "caption": "dùng trong gia đình, đồ gia dụng"
+  },
+  "家喻户晓": {
+    "file": "家喻户晓.svg",
+    "src": "images/HSK_3.0/level7/家喻户晓.svg",
+    "caption": "nhà nhà đều biết, ai ai cũng biết"
+  },
+  "夹杂": {
+    "file": "夹杂.svg",
+    "src": "images/HSK_3.0/level7/夹杂.svg",
+    "caption": "lẫn lộn, xen lẫn, pha trộn"
+  },
+  "家政": {
+    "file": "家政.svg",
+    "src": "images/HSK_3.0/level7/家政.svg",
+    "caption": "dịch vụ việc nhà, kinh tế gia đình"
+  },
+  "加之": {
+    "file": "加之.svg",
+    "src": "images/HSK_3.0/level7/加之.svg",
+    "caption": "hơn nữa, thêm vào đó, cộng thêm"
+  },
+  "家族": {
+    "file": "家族.svg",
+    "src": "images/HSK_3.0/level7/家族.svg",
+    "caption": "gia đình"
+  },
+  "假定": {
+    "file": "假定.svg",
+    "src": "images/HSK_3.0/level7/假定.svg",
+    "caption": "giả định, giả thiết, cho rằng"
+  },
+  "假冒": {
+    "file": "假冒.svg",
+    "src": "images/HSK_3.0/level7/假冒.svg",
+    "caption": "giả mạo"
+  },
+  "假使": {
+    "file": "假使.svg",
+    "src": "images/HSK_3.0/level7/假使.svg",
+    "caption": "giả sử, ví bằng, nếu như"
+  },
+  "驾": {
+    "file": "驾.svg",
+    "src": "images/HSK_3.0/level7/驾.svg",
+    "caption": "lái, điều khiển (xe, thuyền, máy bay)"
+  },
+  "架势": {
+    "file": "架势.svg",
+    "src": "images/HSK_3.0/level7/架势.svg",
+    "caption": "tư thế, dáng vẻ, điệu bộ"
+  },
+  "价位": {
+    "file": "价位.svg",
+    "src": "images/HSK_3.0/level7/价位.svg",
+    "caption": "mức giá, tầm giá"
   }
 };
 

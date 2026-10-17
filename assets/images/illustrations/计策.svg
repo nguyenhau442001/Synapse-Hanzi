@@ -1,0 +1,60 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 120)">
+    <!-- Strategic map / tactical grid background subtle lines -->
+    <circle cx="0" cy="0" r="85" fill="none" stroke="#2A2F3B" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <circle cx="0" cy="0" r="60" fill="none" stroke="#2A2F3B" stroke-width="1"/>
+    <line x1="-75" y1="0" x2="75" y2="0" stroke="#2A2F3B" stroke-width="1"/>
+    <line x1="0" y1="-75" x2="0" y2="75" stroke="#2A2F3B" stroke-width="1"/>
+
+    <!-- Open Ancient Scroll (计策 - Strategy/Plan) -->
+    <g transform="translate(0, 0)">
+      <!-- Scroll body / parchment -->
+      <path d="M-55,-35 L55,-35 L55,35 L-55,35 Z" fill="#F4E4BC" rx="2"/>
+      
+      <!-- Inner text/tactical marks representation (abstract clean strokes instead of real text) -->
+      <line x1="-40" y1="-20" x2="-15" y2="-20" stroke="#8C7355" stroke-width="3" stroke-linecap="round"/>
+      <line x1="-40" y1="-10" x2="-5" y2="-10" stroke="#8C7355" stroke-width="3" stroke-linecap="round"/>
+      <line x1="-40" y1="0" x2="-20" y2="0" stroke="#8C7355" stroke-width="3" stroke-linecap="round"/>
+      
+      <!-- Strategic map drawing on scroll -->
+      <circle cx="25" cy="5" r="14" fill="none" stroke="#D9534F" stroke-width="2"/>
+      <path d="M15,12 L25,-5 L35,12" fill="none" stroke="#F0AD4E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="25" cy="-5" r="3" fill="#D9534F"/>
+
+      <!-- Left Scroll Roller -->
+      <g transform="translate(-55, 0)">
+        <rect x="-6" y="-42" width="12" height="84" rx="4" fill="#A86B32"/>
+        <rect x="-8" y="-45" width="16" height="6" rx="2" fill="#D4AF37"/>
+        <rect x="-8" y="39" width="16" height="6" rx="2" fill="#D4AF37"/>
+      </g>
+
+      <!-- Right Scroll Roller -->
+      <g transform="translate(55, 0)">
+        <rect x="-6" y="-42" width="12" height="84" rx="4" fill="#A86B32"/>
+        <rect x="-8" y="-45" width="16" height="6" rx="2" fill="#D4AF37"/>
+        <rect x="-8" y="39" width="16" height="6" rx="2" fill="#D4AF37"/>
+      </g>
+    </g>
+
+    <!-- Strategic Chess Pieces / Tactical Markers accentuating the "计策" concept -->
+    <!-- Left marker (Gold) -->
+    <g transform="translate(-65, 45)">
+      <path d="M-10,12 L10,12 L7,-2 L-7,-2 Z" fill="#D4AF37"/>
+      <circle cx="0" cy="-8" r="7" fill="#D4AF37"/>
+      <path d="M-12,12 L12,12 L14,16 L-14,16 Z" fill="#F0C674" rx="2"/>
+    </g>
+
+    <!-- Right marker (Red/Accent) -->
+    <g transform="translate(65, -45)">
+      <path d="M-10,12 L10,12 L7,-2 L-7,-2 Z" fill="#E65100"/>
+      <circle cx="0" cy="-8" r="7" fill="#E65100"/>
+      <path d="M-12,12 L12,12 L14,16 L-14,16 Z" fill="#FF8A65" rx="2"/>
+    </g>
+
+    <!-- Glowing focal sparkle indicating brilliance / 神机妙算 -->
+    <path d="M 0,-72 L 3,-60 L 15,-57 L 3,-54 L 0,-42 L -3,-54 L -15,-57 L -3,-60 Z" fill="#FFD700"/>
+    <path d="M 65,25 L 67,31 L 73,33 L 67,35 L 65,41 L 63,35 L 57,33 L 63,31 Z" fill="#FFD700" opacity="0.8"/>
+  </g>
+</svg>

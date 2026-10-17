@@ -1,0 +1,44 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Ground / Tomb mound -->
+    <path d="M 60 175 Q 120 135 180 175 Z" fill="#2D333B"/>
+    <ellipse cx="120" cy="175" rx="65" ry="12" fill="#23272E"/>
+    
+    <!-- Tombstone (Stele) -->
+    <path d="M 100 135 L 100 85 Q 120 70 140 85 L 140 135 Z" fill="#3A424D"/>
+    <!-- Decorative engraving on stele -->
+    <line x1="120" y1="92" x2="120" y2="125" stroke="#4E5868" stroke-width="3" stroke-linecap="round"/>
+    <line x1="112" y1="102" x2="128" y2="102" stroke="#4E5868" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Incense Burner / Offering Table -->
+    <rect x="104" y="160" width="32" height="6" rx="2" fill="#606A7B"/>
+    <rect x="110" y="166" width="20" height="10" fill="#4E5868"/>
+    
+    <!-- Incense sticks -->
+    <line x1="118" y1="160" x2="116" y2="142" stroke="#B0BAC8" stroke-width="1.5"/>
+    <line x1="122" y1="160" x2="124" y2="142" stroke="#B0BAC8" stroke-width="1.5"/>
+    
+    <!-- Glowing Incense Embers & Smoke -->
+    <circle cx="116" cy="142" r="1.5" fill="#FF5722"/>
+    <circle cx="124" cy="142" r="1.5" fill="#FF5722"/>
+    
+    <path d="M 116 138 Q 112 128 122 118 Q 132 108 118 96" fill="none" stroke="#8C9BAE" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <path d="M 124 138 Q 130 128 120 118 Q 110 108 122 96" fill="none" stroke="#8C9BAE" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Offering Bowl with Fruit (Orange/Gold accent) -->
+    <path d="M 78 162 Q 90 162 94 156 L 74 156 Q 78 162 78 162 Z" fill="#525E6F"/>
+    <circle cx="84" cy="151" r="6" fill="#F39C12"/>
+    <circle cx="87" cy="149" r="2" fill="#F1C40F" opacity="0.6"/>
+
+    <!-- Silhouette of Person Bending/Kneeling respectfully in reverence -->
+    <!-- Head -->
+    <circle cx="120" cy="115" r="7" fill="#E6EDF3"/>
+    <!-- Body & Bowing Posture -->
+    <path d="M 115 122 C 115 130 110 145 102 155 C 98 160 92 165 85 167" fill="none" stroke="#E6EDF3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Hands raised in respect / holding offering -->
+    <path d="M 112 135 L 122 142" stroke="#E6EDF3" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>
