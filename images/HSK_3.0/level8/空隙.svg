@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(30, 45)">
+    <!-- Heavy busy work blocks (representing high-intensity work) -->
+    <!-- Left heavy block -->
+    <rect x="0" y="20" width="60" height="110" rx="6" fill="#2A303C"/>
+    <rect x="12" y="36" width="36" height="8" rx="3" fill="#3E4756"/>
+    <rect x="12" y="52" width="24" height="8" rx="3" fill="#3E4756"/>
+    <rect x="12" y="80" width="36" height="24" rx="4" fill="#3E4756"/>
+
+    <!-- Right heavy block -->
+    <rect x="120" y="20" width="60" height="110" rx="6" fill="#2A303C"/>
+    <rect x="132" y="36" width="36" height="8" rx="3" fill="#3E4756"/>
+    <rect x="132" y="52" width="24" height="8" rx="3" fill="#3E4756"/>
+    <rect x="132" y="80" width="36" height="24" rx="4" fill="#3E4756"/>
+
+    <!-- The physical gap / 空隙 (Kòngxì) in the middle highlighted with golden focus color -->
+    <!-- Background depth for the gap -->
+    <rect x="68" y="10" width="44" height="130" rx="4" fill="#15181E"/>
+
+    <!-- Central illuminated gap elements representing the precious breathing room/time -->
+    <path d="M 90,30 L 90,120" stroke="#FF9F43" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 6"/>
+    
+    <!-- Silhouette figures in the gap representing family time / bonding -->
+    <!-- Adult figure -->
+    <circle cx="90" cy="72" r="7" fill="#FF9F43"/>
+    <path d="M 83,86 L 97,86 L 94,115 L 86,115 Z" fill="#FF9F43" rx="2"/>
+
+    <!-- Child figure -->
+    <circle cx="75" cy="88" r="5" fill="#FF9F43"/>
+    <path d="M 70,98 L 80,98 L 78,115 L 72,115 Z" fill="#FF9F43" rx="1.5"/>
+
+    <!-- Connection / holding hands gesture line -->
+    <path d="M 78,92 C 82,90 85,90 88,92" stroke="#FF9F43" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Top and bottom structural boundary markers emphasizing the tight squeeze -->
+    <path d="M 68,15 L 112,15" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 68,135 L 112,135" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Subtle brackets indicating the gap width -->
+    <path d="M 64,65 L 60,65 L 60,75 L 64,75" fill="none" stroke="#FF9F43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 116,65 L 120,65 L 120,75 L 116,75" fill="none" stroke="#FF9F43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

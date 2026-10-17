@@ -1,0 +1,11 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(60, 60)">
+    <!-- Arm shape -->
+    <path d="M120 100 C 120 140, 0 140, 0 100 L 0 20 C 0 -10, 120 -10, 120 20 Z" fill="#E0E0E0"/>
+    <!-- The "kouzi" (cut/laceration) -->
+    <path d="M40 50 C 45 45, 75 45, 80 50 C 75 55, 45 55, 40 50 Z" fill="#FF5722" stroke="#B71C1C" stroke-width="2"/>
+    <!-- Highlight on arm -->
+    <path d="M10 10 C 30 5, 90 5, 110 15" stroke="#FFFFFF" stroke-width="4" stroke-opacity="0.2" stroke-linecap="round"/>
+  </g>
+</svg>

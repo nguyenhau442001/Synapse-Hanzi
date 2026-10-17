@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- The Dreamer/Thinker silhouette -->
+  <g transform="translate(60, 80)">
+    <path d="M60 120c0-20 15-35 35-35s35 15 35 35v40H60v-40z" fill="#3D4451"/>
+    <circle cx="95" cy="50" r="25" fill="#E0E0E0"/>
+    <path d="M85 45h5M100 45h5" stroke="#1A1D24" stroke-width="2"/>
+  </g>
+
+  <!-- The "Empty" Thought Bubble / Mirage representation -->
+  <g transform="translate(130, 40)">
+    <path d="M40 10 C 60 10, 70 20, 70 40 C 70 60, 60 70, 40 70 L 30 80 L 30 70 C 10 70, 0 60, 0 40 C 0 20, 10 10, 40 10 Z" fill="none" stroke="#FFB84D" stroke-width="3" stroke-dasharray="6 4"/>
+    
+    <!-- The "Mirror/Water" illusion inside the bubble -->
+    <ellipse cx="35" cy="40" rx="25" ry="15" fill="#2C3E50" opacity="0.6"/>
+    <path d="M15 40 Q 35 30 55 40" stroke="#FFB84D" stroke-width="2" fill="none"/>
+    <path d="M15 45 Q 35 35 55 45" stroke="#FFB84D" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Ground plane -->
+  <path d="M20 200 L 220 200" stroke="#3D4451" stroke-width="2"/>
+</svg>

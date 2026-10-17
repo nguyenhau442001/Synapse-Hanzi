@@ -43721,6 +43721,251 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "刻舟求剑.svg",
     "src": "images/HSK_3.0/level7/刻舟求剑.svg",
     "caption": "khắc thuyền tìm kiếm, bảo thủ máy móc"
+  },
+  "啃": {
+    "file": "啃.svg",
+    "src": "images/HSK_3.0/level7/啃.svg",
+    "caption": "gặm, cắn; nghiền ngẫm vất vả"
+  },
+  "恳切": {
+    "file": "恳切.svg",
+    "src": "images/HSK_3.0/level7/恳切.svg",
+    "caption": "khẩn thiết, tha thiết, chân thành"
+  },
+  "恳求": {
+    "file": "恳求.svg",
+    "src": "images/HSK_3.0/level7/恳求.svg",
+    "caption": "khẩn cầu, van xin, cầu xin"
+  },
+  "空荡荡": {
+    "file": "空荡荡.svg",
+    "src": "images/HSK_3.0/level7/空荡荡.svg",
+    "caption": "trống trải, trống rỗng, vắng tanh"
+  },
+  "空洞": {
+    "file": "空洞.svg",
+    "src": "images/HSK_3.0/level7/空洞.svg",
+    "caption": "sáo rỗng, rỗng tuếch, trống rỗng"
+  },
+  "空间站": {
+    "file": "空间站.svg",
+    "src": "images/HSK_3.0/level7/空间站.svg",
+    "caption": "trạm không gian, trạm vũ trụ"
+  },
+  "空军": {
+    "file": "空军.svg",
+    "src": "images/HSK_3.0/level7/空军.svg",
+    "caption": "không quân"
+  },
+  "空难": {
+    "file": "空难.svg",
+    "src": "images/HSK_3.0/level7/空难.svg",
+    "caption": "tai nạn hàng không, thảm họa máy bay"
+  },
+  "空前": {
+    "file": "空前.svg",
+    "src": "images/HSK_3.0/level7/空前.svg",
+    "caption": "chưa từng có, tiền đề chưa từng có"
+  },
+  "空想": {
+    "file": "空想.svg",
+    "src": "images/HSK_3.0/level7/空想.svg",
+    "caption": "ảo tưởng, không tưởng, viển vông"
+  },
+  "空虚": {
+    "file": "空虚.svg",
+    "src": "images/HSK_3.0/level7/空虚.svg",
+    "caption": "trống rỗng, hư không, vô vị"
+  },
+  "孔": {
+    "file": "孔.svg",
+    "src": "images/HSK_3.0/level7/孔.svg",
+    "caption": "lỗ, hốc; Khổng (họ)"
+  },
+  "恐慌": {
+    "file": "恐慌.svg",
+    "src": "images/HSK_3.0/level7/恐慌.svg",
+    "caption": "hoang mang hoảng sợ, khủng hoảng"
+  },
+  "恐龙": {
+    "file": "恐龙.svg",
+    "src": "images/HSK_3.0/level7/恐龙.svg",
+    "caption": "khủng long"
+  },
+  "控告": {
+    "file": "控告.svg",
+    "src": "images/HSK_3.0/level7/控告.svg",
+    "caption": "tố cáo, khởi tố, khiếu nại"
+  },
+  "空隙": {
+    "file": "空隙.svg",
+    "src": "images/HSK_3.0/level7/空隙.svg",
+    "caption": "khoảng trống, kẽ hở, khe hở"
+  },
+  "抠": {
+    "file": "抠.svg",
+    "src": "images/HSK_3.0/level7/抠.svg",
+    "caption": "keo kiệt, bủn xỉn; cạy, móc"
+  },
+  "口岸": {
+    "file": "口岸.svg",
+    "src": "images/HSK_3.0/level7/口岸.svg",
+    "caption": "cửa khẩu, cảng"
+  },
+  "口碑": {
+    "file": "口碑.svg",
+    "src": "images/HSK_3.0/level7/口碑.svg",
+    "caption": "tiếng lành, danh tiếng, bia miệng"
+  },
+  "口才": {
+    "file": "口才.svg",
+    "src": "images/HSK_3.0/level7/口才.svg",
+    "caption": "tài ăn nói, tài hùng biện"
+  },
+  "口吃": {
+    "file": "口吃.svg",
+    "src": "images/HSK_3.0/level7/口吃.svg",
+    "caption": "nói lắp, nói cà lăm"
+  },
+  "口径": {
+    "file": "口径.svg",
+    "src": "images/HSK_3.0/level7/口径.svg",
+    "caption": "phương châm thống nhất; khẩu kính (súng)"
+  },
+  "口令": {
+    "file": "口令.svg",
+    "src": "images/HSK_3.0/level7/口令.svg",
+    "caption": "khẩu lệnh, mật khẩu"
+  },
+  "口哨儿": {
+    "file": "口哨儿.svg",
+    "src": "images/HSK_3.0/level7/口哨儿.svg",
+    "caption": "tiếng huýt sáo, huýt sáo"
+  },
+  "口水": {
+    "file": "口水.svg",
+    "src": "images/HSK_3.0/level7/口水.svg",
+    "caption": "nước bọt, nước dãi"
+  },
+  "口头禅": {
+    "file": "口头禅.svg",
+    "src": "images/HSK_3.0/level7/口头禅.svg",
+    "caption": "câu cửa miệng"
+  },
+  "口香糖": {
+    "file": "口香糖.svg",
+    "src": "images/HSK_3.0/level7/口香糖.svg",
+    "caption": "kẹo cao su"
+  },
+  "口音": {
+    "file": "口音.svg",
+    "src": "images/HSK_3.0/level7/口音.svg",
+    "caption": "giọng, khẩu âm, ngữ âm địa phương"
+  },
+  "口罩": {
+    "file": "口罩.svg",
+    "src": "images/HSK_3.0/level7/口罩.svg",
+    "caption": "khẩu trang"
+  },
+  "口子": {
+    "file": "口子.svg",
+    "src": "images/HSK_3.0/level7/口子.svg",
+    "caption": "vết rách, vết đứt; cửa ngõ; miệng"
+  },
+  "扣除": {
+    "file": "扣除.svg",
+    "src": "images/HSK_3.0/level7/扣除.svg",
+    "caption": "khấu trừ, trừ bớt"
+  },
+  "扣留": {
+    "file": "扣留.svg",
+    "src": "images/HSK_3.0/level7/扣留.svg",
+    "caption": "tạm giữ, lưu giữ"
+  },
+  "扣人心弦": {
+    "file": "扣人心弦.svg",
+    "src": "images/HSK_3.0/level7/扣人心弦.svg",
+    "caption": "chạm đến lòng người, rung động lòng người, nghẹt thở"
+  },
+  "扣押": {
+    "file": "扣押.svg",
+    "src": "images/HSK_3.0/level7/扣押.svg",
+    "caption": "tạm giữ, câu lưu, tịch thu"
+  },
+  "枯竭": {
+    "file": "枯竭.svg",
+    "src": "images/HSK_3.0/level7/枯竭.svg",
+    "caption": "cạn kiệt, khô kiệt"
+  },
+  "哭笑不得": {
+    "file": "哭笑不得.svg",
+    "src": "images/HSK_3.0/level7/哭笑不得.svg",
+    "caption": "dở khóc dở cười"
+  },
+  "苦难": {
+    "file": "苦难.svg",
+    "src": "images/HSK_3.0/level7/苦难.svg",
+    "caption": "khổ nạn, nỗi khổ cực"
+  },
+  "苦恼": {
+    "file": "苦恼.svg",
+    "src": "images/HSK_3.0/level7/苦恼.svg",
+    "caption": "phiền não, khổ não, buồn rầu"
+  },
+  "苦涩": {
+    "file": "苦涩.svg",
+    "src": "images/HSK_3.0/level7/苦涩.svg",
+    "caption": "cay đắng, đắng chát, cay đắng ngậm ngùi"
+  },
+  "苦笑": {
+    "file": "苦笑.svg",
+    "src": "images/HSK_3.0/level7/苦笑.svg",
+    "caption": "cười gượng, cười khổ"
+  },
+  "苦心": {
+    "file": "苦心.svg",
+    "src": "images/HSK_3.0/level7/苦心.svg",
+    "caption": "tâm huyết, dày công, nỗi khổ tâm"
+  },
+  "库存": {
+    "file": "库存.svg",
+    "src": "images/HSK_3.0/level7/库存.svg",
+    "caption": "tồn kho, lượng hàng trong kho"
+  },
+  "酷似": {
+    "file": "酷似.svg",
+    "src": "images/HSK_3.0/level7/酷似.svg",
+    "caption": "rất giống, giống hệt, giống như đúc"
+  },
+  "夸耀": {
+    "file": "夸耀.svg",
+    "src": "images/HSK_3.0/level7/夸耀.svg",
+    "caption": "khoe khoang, khoác lác"
+  },
+  "垮": {
+    "file": "垮.svg",
+    "src": "images/HSK_3.0/level7/垮.svg",
+    "caption": "suy sụp; sụp đổ, sập"
+  },
+  "挎": {
+    "file": "挎.svg",
+    "src": "images/HSK_3.0/level7/挎.svg",
+    "caption": "đeo, khoác (túi, giỏ)"
+  },
+  "跨度": {
+    "file": "跨度.svg",
+    "src": "images/HSK_3.0/level7/跨度.svg",
+    "caption": "nhịp (cầu); khoảng biến động"
+  },
+  "跨国": {
+    "file": "跨国.svg",
+    "src": "images/HSK_3.0/level7/跨国.svg",
+    "caption": "đa quốc gia, xuyên quốc gia"
+  },
+  "跨越": {
+    "file": "跨越.svg",
+    "src": "images/HSK_3.0/level7/跨越.svg",
+    "caption": "vượt qua, bước qua, băng qua"
   }
 };
 
