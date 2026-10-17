@@ -683,6 +683,45 @@ class TestLearningProgressNavigator(unittest.TestCase):
             self.assertIn(f":root[data-theme=\"dark\"] .progress-nav-card--{filter_key}.is-active", self.workstation_css)
         self.assertIn(".progress-nav-card:focus-visible", self.workstation_css)
 
+    def test_filter_cards_unified_brand_orange_selection(self):
+        """All active filter cards must use brand orange border and subtle warm accent-light background without blue/purple."""
+        # Active cards must use brand primary tokens
+        self.assertIn("border-color: var(--brand-primary);", self.workstation_css)
+        self.assertIn("background: var(--accent-light);", self.workstation_css)
+        # Blue and purple selection accents must be completely removed from progress-nav-card
+        self.assertNotIn("#3b82f6", self.workstation_css)
+        self.assertNotIn("#6366f1", self.workstation_css)
+        self.assertNotIn("#60a5fa", self.workstation_css[:self.workstation_css.find(".pos-tag--num")])
+        self.assertNotIn("#818cf8", self.workstation_css)
+
+    def test_unseen_category_icon_is_neutral(self):
+        """The 'Not studied' category icon must be neutral (var(--text-tertiary)) instead of blue or purple."""
+        match = re.search(r"\.progress-nav-card--unseen\s+\.progress-nav-card-icon\s*\{([^}]+)\}", self.workstation_css)
+        self.assertIsNotNone(match, ".progress-nav-card--unseen .progress-nav-card-icon rule must exist")
+        self.assertIn("var(--text-tertiary)", match.group(1))
+
+    def test_multisegment_progress_bar_and_legend_preserve_semantic_colors(self):
+        """Progress bar segments and legend dots must preserve green for remembered and amber for review."""
+        self.assertIn(".progress-nav-seg--known", self.workstation_css)
+        self.assertIn(".progress-nav-seg--unknown", self.workstation_css)
+        self.assertIn(".progress-nav-stat--known .progress-nav-stat-dot", self.workstation_css)
+        self.assertIn(".progress-nav-stat--unknown .progress-nav-stat-dot", self.workstation_css)
+        # Known segment must be green
+        self.assertIn("#10b981", self.workstation_css)
+        # Unknown segment must be amber
+        self.assertIn("#f59e0b", self.workstation_css)
+
+    def test_filter_cards_hover_and_focus_coordinated_orange(self):
+        """Filter cards must use coordinated orange hover, active, and keyboard focus states."""
+        self.assertIn(".progress-nav-card:hover", self.workstation_css)
+        self.assertIn(".progress-nav-card:active", self.workstation_css)
+        self.assertIn(".progress-nav-card:focus-visible", self.workstation_css)
+        # Focus-visible must use brand-primary outline
+        match_focus = re.search(r"\.progress-nav-card:focus-visible\s*\{([^}]+)\}", self.workstation_css)
+        self.assertIsNotNone(match_focus)
+        self.assertIn("var(--brand-primary)", match_focus.group(1))
+
+
 
 class TestFlashcardExperienceRefinements(unittest.TestCase):
     """Test suite for the comprehensive visual and usability refinements in Synapse Hanzi Flashcard experience."""
