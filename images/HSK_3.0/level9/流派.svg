@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Central Stage / Platform representing the tradition / arts -->
+    <ellipse cx="120" cy="180" rx="70" ry="18" fill="#252A34"/>
+    <ellipse cx="120" cy="178" rx="55" ry="12" fill="#2D3442"/>
+    
+    <!-- Central Iconographic Object: Traditional Chinese Opera Mask (representing school/sect/流派 of art) -->
+    <g transform="translate(120, 105)">
+      <!-- Mask Base (Sleek modern flat design) -->
+      <path d="M-32,-45 C-32,-45 -42,-15 -42,5 C-42,32 -22,50 0,55 C22,50 42,32 42,5 C42,-15 32,-45 32,-45 Z" fill="#222831" stroke="#FFB703" stroke-width="2.5" stroke-linejoin="round"/>
+      
+      <!-- Dramatic Opera Face Paint / Line Flow (representing '流' flow of styles/schools) -->
+      <!-- Forehead marking -->
+      <path d="M0,-35 C-10,-25 0,-10 0,0 C0,-10 10,-25 0,-35 Z" fill="#FFB703"/>
+      
+      <!-- Eyes - stylized traditional theatrical shape -->
+      <path d="M-26,-12 C-18,-18 -10,-8 -4,-12 C-12,-4 -18,-4 -26,-12 Z" fill="#FFB703"/>
+      <path d="M26,-12 C18,-18 10,-8 4,-12 C12,-4 18,-4 26,-12 Z" fill="#FFB703"/>
+      
+      <!-- Expressive center markings -->
+      <path d="M0,8 L0,32" stroke="#FFB703" stroke-width="3" stroke-linecap="round"/>
+      <path d="M-12,40 C-6,46 6,46 12,40" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- Branching "Streams" / "Schools" (流派 visualization: divergent artistic paths flowing from a common origin) -->
+    <!-- Left Branch -->
+    <g transform="translate(45, 95)">
+      <path d="M25,25 C10,25 -5,10 -15,0" fill="none" stroke="#3A86EF" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="-15" cy="0" r="6" fill="#3A86EF"/>
+      <circle cx="-15" cy="0" r="10" fill="none" stroke="#3A86EF" stroke-width="1.5" opacity="0.5"/>
+    </g>
+
+    <!-- Right Branch -->
+    <g transform="translate(195, 95)">
+      <path d="M-25,25 C-10,25 5,10 15,0" fill="none" stroke="#FB5607" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="15" cy="0" r="6" fill="#FB5607"/>
+      <circle cx="15" cy="0" r="10" fill="none" stroke="#FB5607" stroke-width="1.5" opacity="0.5"/>
+    </g>
+
+    <!-- Top Branch -->
+    <g transform="translate(120, 38)">
+      <path d="M0,15 C0,0 0,-10 0,-20" fill="none" stroke="#8338EC" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="0" cy="-20" r="6" fill="#8338EC"/>
+      <circle cx="0" cy="-20" r="10" fill="none" stroke="#8338EC" stroke-width="1.5" opacity="0.5"/>
+    </g>
+
+    <!-- Subtle connection aura / core heritage ring -->
+    <circle cx="120" cy="105" r="52" fill="none" stroke="#2D3442" stroke-width="1.5" stroke-dasharray="4 4"/>
+  </g>
+</svg>
