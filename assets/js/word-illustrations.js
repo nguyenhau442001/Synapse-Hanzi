@@ -45807,6 +45807,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/能耐.svg",
     "caption": "bản lĩnh; tài cán; năng lực"
   },
+  "能人": {
+    "file": "能人.svg",
+    "src": "images/HSK_3.0/level7/能人.svg",
+    "caption": "người tài giỏi; người có tài cán"
+  },
   "泥泞": {
     "file": "泥泞.svg",
     "src": "images/HSK_3.0/level7/泥泞.svg",
@@ -45826,6 +45831,251 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "拟.svg",
     "src": "images/HSK_3.0/level7/拟.svg",
     "caption": "dự định; soạn thảo; phác thảo"
+  },
+  "逆": {
+    "file": "逆.svg",
+    "src": "images/HSK_3.0/level7/逆.svg",
+    "caption": "nghịch; ngược lại; đi ngược lại"
+  },
+  "逆境": {
+    "file": "逆境.svg",
+    "src": "images/HSK_3.0/level7/逆境.svg",
+    "caption": "nghịch cảnh; hoàn cảnh khó khăn"
+  },
+  "匿名": {
+    "file": "匿名.svg",
+    "src": "images/HSK_3.0/level7/匿名.svg",
+    "caption": "ẩn danh; giấu tên; nặc danh"
+  },
+  "溺水": {
+    "file": "溺水.svg",
+    "src": "images/HSK_3.0/level7/溺水.svg",
+    "caption": "đuối nước; chết đuối"
+  },
+  "黏": {
+    "file": "黏.svg",
+    "src": "images/HSK_3.0/level7/黏.svg",
+    "caption": "dính; quánh; dẻo"
+  },
+  "年报": {
+    "file": "年报.svg",
+    "src": "images/HSK_3.0/level7/年报.svg",
+    "caption": "báo cáo thường niên; báo cáo năm"
+  },
+  "年画": {
+    "file": "年画.svg",
+    "src": "images/HSK_3.0/level7/年画.svg",
+    "caption": "tranh Tết"
+  },
+  "年均": {
+    "file": "年均.svg",
+    "src": "images/HSK_3.0/level7/年均.svg",
+    "caption": "bình quân hàng năm; bình quân năm"
+  },
+  "年轮": {
+    "file": "年轮.svg",
+    "src": "images/HSK_3.0/level7/年轮.svg",
+    "caption": "vòng năm (cây gỗ)"
+  },
+  "年迈": {
+    "file": "年迈.svg",
+    "src": "images/HSK_3.0/level7/年迈.svg",
+    "caption": "tuổi già sức yếu; cao tuổi; già yếu"
+  },
+  "年限": {
+    "file": "年限.svg",
+    "src": "images/HSK_3.0/level7/年限.svg",
+    "caption": "thời hạn năm; niên hạn"
+  },
+  "年薪": {
+    "file": "年薪.svg",
+    "src": "images/HSK_3.0/level7/年薪.svg",
+    "caption": "lương năm; thu nhập hàng năm"
+  },
+  "撵": {
+    "file": "撵.svg",
+    "src": "images/HSK_3.0/level7/撵.svg",
+    "caption": "đuổi; xua đuổi"
+  },
+  "念念不忘": {
+    "file": "念念不忘.svg",
+    "src": "images/HSK_3.0/level7/念念不忘.svg",
+    "caption": "nhớ mãi không quên; luôn ghi nhớ trong lòng"
+  },
+  "念头": {
+    "file": "念头.svg",
+    "src": "images/HSK_3.0/level7/念头.svg",
+    "caption": "ý nghĩ; suy nghĩ; ý niệm"
+  },
+  "娘": {
+    "file": "娘.svg",
+    "src": "images/HSK_3.0/level7/娘.svg",
+    "caption": "mẹ; u; bu"
+  },
+  "酿造": {
+    "file": "酿造.svg",
+    "src": "images/HSK_3.0/level7/酿造.svg",
+    "caption": "ủ men; chưng cất; làm rượu"
+  },
+  "鸟巢": {
+    "file": "鸟巢.svg",
+    "src": "images/HSK_3.0/level7/鸟巢.svg",
+    "caption": "tổ chim"
+  },
+  "尿": {
+    "file": "尿.svg",
+    "src": "images/HSK_3.0/level7/尿.svg",
+    "caption": "nước tiểu; tiểu tiện"
+  },
+  "凝结": {
+    "file": "凝结.svg",
+    "src": "images/HSK_3.0/level7/凝结.svg",
+    "caption": "ngưng tụ; đọng lại; kết tinh"
+  },
+  "宁静": {
+    "file": "宁静.svg",
+    "src": "images/HSK_3.0/level7/宁静.svg",
+    "caption": "yên tĩnh; thanh bình; tĩnh lặng"
+  },
+  "纽带": {
+    "file": "纽带.svg",
+    "src": "images/HSK_3.0/level7/纽带.svg",
+    "caption": "cầu nối; mối liên kết; sợi dây liên lạc"
+  },
+  "纽扣": {
+    "file": "纽扣.svg",
+    "src": "images/HSK_3.0/level7/纽扣.svg",
+    "caption": "cúc áo; khuy áo"
+  },
+  "扭曲": {
+    "file": "扭曲.svg",
+    "src": "images/HSK_3.0/level7/扭曲.svg",
+    "caption": "vặn vẹo; bóp méo; xuyên tạc"
+  },
+  "扭头": {
+    "file": "扭头.svg",
+    "src": "images/HSK_3.0/level7/扭头.svg",
+    "caption": "ngoảnh đầu; quay đầu lại"
+  },
+  "农场": {
+    "file": "农场.svg",
+    "src": "images/HSK_3.0/level7/农场.svg",
+    "caption": "trang trại"
+  },
+  "农民工": {
+    "file": "农民工.svg",
+    "src": "images/HSK_3.0/level7/农民工.svg",
+    "caption": "công nhân xuất thân nông dân; lao động nông thôn tha hương"
+  },
+  "浓缩": {
+    "file": "浓缩.svg",
+    "src": "images/HSK_3.0/level7/浓缩.svg",
+    "caption": "cô đọng; cô đặc"
+  },
+  "浓郁": {
+    "file": "浓郁.svg",
+    "src": "images/HSK_3.0/level7/浓郁.svg",
+    "caption": "nồng nàn; đậm đà"
+  },
+  "浓重": {
+    "file": "浓重.svg",
+    "src": "images/HSK_3.0/level7/浓重.svg",
+    "caption": "đậm nét; nồng đậm; dày đặc"
+  },
+  "弄虚作假": {
+    "file": "弄虚作假.svg",
+    "src": "images/HSK_3.0/level7/弄虚作假.svg",
+    "caption": "gian lận; làm giả dối; bịa đặt lừa dối"
+  },
+  "女婿": {
+    "file": "女婿.svg",
+    "src": "images/HSK_3.0/level7/女婿.svg",
+    "caption": "con rể"
+  },
+  "拍板": {
+    "file": "拍板.svg",
+    "src": "images/HSK_3.0/level7/拍板.svg",
+    "caption": "quyết định dứt khoát; chốt lại"
+  },
+  "拍卖": {
+    "file": "拍卖.svg",
+    "src": "images/HSK_3.0/level7/拍卖.svg",
+    "caption": "bán đấu giá"
+  },
+  "排查": {
+    "file": "排查.svg",
+    "src": "images/HSK_3.0/level7/排查.svg",
+    "caption": "rà soát; kiểm tra sàng lọc"
+  },
+  "排行榜": {
+    "file": "排行榜.svg",
+    "src": "images/HSK_3.0/level7/排行榜.svg",
+    "caption": "bảng xếp hạng"
+  },
+  "牌照": {
+    "file": "牌照.svg",
+    "src": "images/HSK_3.0/level7/牌照.svg",
+    "caption": "biển số xe; giấy phép"
+  },
+  "攀": {
+    "file": "攀.svg",
+    "src": "images/HSK_3.0/level7/攀.svg",
+    "caption": "trèo; leo; trèo lên"
+  },
+  "攀升": {
+    "file": "攀升.svg",
+    "src": "images/HSK_3.0/level7/攀升.svg",
+    "caption": "tăng vọt; leo thang; tăng nhanh"
+  },
+  "盘算": {
+    "file": "盘算.svg",
+    "src": "images/HSK_3.0/level7/盘算.svg",
+    "caption": "tính toán; trù tính; tính nhẩm trong lòng"
+  },
+  "判": {
+    "file": "判.svg",
+    "src": "images/HSK_3.0/level7/判.svg",
+    "caption": "phán quyết; phân xử; xử định"
+  },
+  "盼": {
+    "file": "盼.svg",
+    "src": "images/HSK_3.0/level7/盼.svg",
+    "caption": "mong mỏi; mong chờ; ngóng trông"
+  },
+  "判处": {
+    "file": "判处.svg",
+    "src": "images/HSK_3.0/level7/判处.svg",
+    "caption": "tuyên án; kết án"
+  },
+  "判定": {
+    "file": "判定.svg",
+    "src": "images/HSK_3.0/level7/判定.svg",
+    "caption": "xác định; phán đoán; định đoạt"
+  },
+  "叛逆": {
+    "file": "叛逆.svg",
+    "src": "images/HSK_3.0/level7/叛逆.svg",
+    "caption": "nổi loạn; phản nghịch; chống đối"
+  },
+  "旁人": {
+    "file": "旁人.svg",
+    "src": "images/HSK_3.0/level7/旁人.svg",
+    "caption": "người khác; người ngoài; người bên cạnh"
+  },
+  "螃蟹": {
+    "file": "螃蟹.svg",
+    "src": "images/HSK_3.0/level7/螃蟹.svg",
+    "caption": "con cua"
+  },
+  "胖乎乎": {
+    "file": "胖乎乎.svg",
+    "src": "images/HSK_3.0/level7/胖乎乎.svg",
+    "caption": "mập mạp; béo tròn; mũm mĩm"
+  },
+  "刨": {
+    "file": "刨.svg",
+    "src": "images/HSK_3.0/level7/刨.svg",
+    "caption": "đào; bới; bào"
   }
 };
 
