@@ -40971,6 +40971,256 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "护.svg",
     "src": "images/HSK_3.0/level7/护.svg",
     "caption": "che chở, bảo vệ"
+  },
+  "互补": {
+    "file": "互补.svg",
+    "src": "images/HSK_3.0/level7/互补.svg",
+    "caption": "bổ khuyết cho nhau, tương hỗ"
+  },
+  "护理": {
+    "file": "护理.svg",
+    "src": "images/HSK_3.0/level7/护理.svg",
+    "caption": "chăm sóc điều dưỡng, hộ lý"
+  },
+  "花瓣": {
+    "file": "花瓣.svg",
+    "src": "images/HSK_3.0/level7/花瓣.svg",
+    "caption": "cánh hoa"
+  },
+  "花卉": {
+    "file": "花卉.svg",
+    "src": "images/HSK_3.0/level7/花卉.svg",
+    "caption": "hoa cỏ, hoa cảnh"
+  },
+  "花蕾": {
+    "file": "花蕾.svg",
+    "src": "images/HSK_3.0/level7/花蕾.svg",
+    "caption": "nụ hoa"
+  },
+  "花纹": {
+    "file": "花纹.svg",
+    "src": "images/HSK_3.0/level7/花纹.svg",
+    "caption": "hoa văn, họa tiết"
+  },
+  "划不来": {
+    "file": "划不来.svg",
+    "src": "images/HSK_3.0/level7/划不来.svg",
+    "caption": "không bõ, không đáng"
+  },
+  "划得来": {
+    "file": "划得来.svg",
+    "src": "images/HSK_3.0/level7/划得来.svg",
+    "caption": "rất đáng, có lời"
+  },
+  "滑稽": {
+    "file": "滑稽.svg",
+    "src": "images/HSK_3.0/level7/滑稽.svg",
+    "caption": "khôi hài, hài hước, buồn cười"
+  },
+  "华丽": {
+    "file": "华丽.svg",
+    "src": "images/HSK_3.0/level7/华丽.svg",
+    "caption": "lộng lẫy, nguy nga, tráng lệ"
+  },
+  "华侨": {
+    "file": "华侨.svg",
+    "src": "images/HSK_3.0/level7/华侨.svg",
+    "caption": "hoa kiều"
+  },
+  "哗然": {
+    "file": "哗然.svg",
+    "src": "images/HSK_3.0/level7/哗然.svg",
+    "caption": "xôn xao, ồ lên kinh ngạc"
+  },
+  "华人": {
+    "file": "华人.svg",
+    "src": "images/HSK_3.0/level7/华人.svg",
+    "caption": "người Hoa"
+  },
+  "划算": {
+    "file": "划算.svg",
+    "src": "images/HSK_3.0/level7/划算.svg",
+    "caption": "kinh tế, tính ra có lợi"
+  },
+  "滑梯": {
+    "file": "滑梯.svg",
+    "src": "images/HSK_3.0/level7/滑梯.svg",
+    "caption": "cầu trượt"
+  },
+  "画册": {
+    "file": "画册.svg",
+    "src": "images/HSK_3.0/level7/画册.svg",
+    "caption": "tập sách ảnh, tập tranh ảnh"
+  },
+  "化解": {
+    "file": "化解.svg",
+    "src": "images/HSK_3.0/level7/化解.svg",
+    "caption": "hóa giải, giải tỏa"
+  },
+  "画龙点睛": {
+    "file": "画龙点睛.svg",
+    "src": "images/HSK_3.0/level7/画龙点睛.svg",
+    "caption": "nét chấm phá đắt giá, vẽ rồng điểm mắt"
+  },
+  "化身": {
+    "file": "化身.svg",
+    "src": "images/HSK_3.0/level7/化身.svg",
+    "caption": "hiện thân, hóa thân"
+  },
+  "画蛇添足": {
+    "file": "画蛇添足.svg",
+    "src": "images/HSK_3.0/level7/画蛇添足.svg",
+    "caption": "vẽ rắn thêm chân, vẽ vời thừa thãi"
+  },
+  "划时代": {
+    "file": "划时代.svg",
+    "src": "images/HSK_3.0/level7/划时代.svg",
+    "caption": "mở ra thời đại mới, mang tính thời đại"
+  },
+  "化险为夷": {
+    "file": "化险为夷.svg",
+    "src": "images/HSK_3.0/level7/化险为夷.svg",
+    "caption": "hóa nguy thành an, biến dữ thành lành"
+  },
+  "话语": {
+    "file": "话语.svg",
+    "src": "images/HSK_3.0/level7/话语.svg",
+    "caption": "diễn ngôn"
+  },
+  "怀抱": {
+    "file": "怀抱.svg",
+    "src": "images/HSK_3.0/level7/怀抱.svg",
+    "caption": "vòng tay, lòng mẹ"
+  },
+  "怀旧": {
+    "file": "怀旧.svg",
+    "src": "images/HSK_3.0/level7/怀旧.svg",
+    "caption": "hoài niệm, nhớ về quá khứ"
+  },
+  "槐树": {
+    "file": "槐树.svg",
+    "src": "images/HSK_3.0/level7/槐树.svg",
+    "caption": "cây hòe"
+  },
+  "欢呼": {
+    "file": "欢呼.svg",
+    "src": "images/HSK_3.0/level7/欢呼.svg",
+    "caption": "reo hò, hoan hô vui sướng"
+  },
+  "欢聚": {
+    "file": "欢聚.svg",
+    "src": "images/HSK_3.0/level7/欢聚.svg",
+    "caption": "sum họp vui vẻ, tề tựu"
+  },
+  "欢快": {
+    "file": "欢快.svg",
+    "src": "images/HSK_3.0/level7/欢快.svg",
+    "caption": "vui tươi, rộn rã"
+  },
+  "欢声笑语": {
+    "file": "欢声笑语.svg",
+    "src": "images/HSK_3.0/level7/欢声笑语.svg",
+    "caption": "tiếng nói cười rộn rã, tiếng cười vui"
+  },
+  "环比": {
+    "file": "环比.svg",
+    "src": "images/HSK_3.0/level7/环比.svg",
+    "caption": "so với tháng trước, so với kỳ trước"
+  },
+  "环球": {
+    "file": "环球.svg",
+    "src": "images/HSK_3.0/level7/环球.svg",
+    "caption": "vòng quanh thế giới, hoàn cầu"
+  },
+  "缓": {
+    "file": "缓.svg",
+    "src": "images/HSK_3.0/level7/缓.svg",
+    "caption": "hồi phục, chậm lại, hoãn lại"
+  },
+  "焕发": {
+    "file": "焕发.svg",
+    "src": "images/HSK_3.0/level7/焕发.svg",
+    "caption": "bừng sáng, rạng rỡ, tràn trề"
+  },
+  "唤起": {
+    "file": "唤起.svg",
+    "src": "images/HSK_3.0/level7/唤起.svg",
+    "caption": "khơi dậy, gợi lên"
+  },
+  "换取": {
+    "file": "换取.svg",
+    "src": "images/HSK_3.0/level7/换取.svg",
+    "caption": "đổi lấy, đánh đổi"
+  },
+  "焕然一新": {
+    "file": "焕然一新.svg",
+    "src": "images/HSK_3.0/level7/焕然一新.svg",
+    "caption": "thương hiệu mới"
+  },
+  "唤醒": {
+    "file": "唤醒.svg",
+    "src": "images/HSK_3.0/level7/唤醒.svg",
+    "caption": "đánh thức, thức tỉnh"
+  },
+  "幻影": {
+    "file": "幻影.svg",
+    "src": "images/HSK_3.0/level7/幻影.svg",
+    "caption": "ảo ảnh, ảo mộng"
+  },
+  "荒": {
+    "file": "荒.svg",
+    "src": "images/HSK_3.0/level7/荒.svg",
+    "caption": "bỏ hoang, hoang phế"
+  },
+  "慌": {
+    "file": "慌.svg",
+    "src": "images/HSK_3.0/level7/慌.svg",
+    "caption": "hốt hoảng, hoảng sợ"
+  },
+  "慌乱": {
+    "file": "慌乱.svg",
+    "src": "images/HSK_3.0/level7/慌乱.svg",
+    "caption": "hoảng loạn, rối bời"
+  },
+  "荒唐": {
+    "file": "荒唐.svg",
+    "src": "images/HSK_3.0/level7/荒唐.svg",
+    "caption": "hoang đường, vô lý nực cười"
+  },
+  "皇宫": {
+    "file": "皇宫.svg",
+    "src": "images/HSK_3.0/level7/皇宫.svg",
+    "caption": "cung điện hoàng gia"
+  },
+  "黄昏": {
+    "file": "黄昏.svg",
+    "src": "images/HSK_3.0/level7/黄昏.svg",
+    "caption": "hoàng hôn, chạng vạng"
+  },
+  "皇上": {
+    "file": "皇上.svg",
+    "src": "images/HSK_3.0/level7/皇上.svg",
+    "caption": "hoàng thượng, hoàng đế"
+  },
+  "皇室": {
+    "file": "皇室.svg",
+    "src": "images/HSK_3.0/level7/皇室.svg",
+    "caption": "hoàng gia, hoàng thất"
+  },
+  "晃": {
+    "file": "晃.svg",
+    "src": "images/HSK_3.0/level7/晃.svg",
+    "caption": "chói mắt, lóe sáng"
+  },
+  "谎话": {
+    "file": "谎话.svg",
+    "src": "images/HSK_3.0/level7/谎话.svg",
+    "caption": "lời nói dối, lời dối trá"
+  },
+  "谎言": {
+    "file": "谎言.svg",
+    "src": "images/HSK_3.0/level7/谎言.svg",
+    "caption": "lời dối trá, lời bịa đặt"
   }
 };
 

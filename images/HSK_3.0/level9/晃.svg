@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Silhouette of a person covering eyes -->
+  <g transform="translate(120, 120)">
+    <path d="M-20 40 C-20 20, -10 10, 0 10 C10 10, 20 20, 20 40 L20 80 L-20 80 Z" fill="#4A5568"/>
+    <circle cx="0" cy="-10" r="20" fill="#4A5568"/>
+    <path d="M-25 -5 L-45 -20 M25 -5 L45 -20" stroke="#4A5568" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- The blinding light source (Car headlights) -->
+  <g transform="translate(120, 120)">
+    <path d="M-60 0 L-20 -20 L-20 20 Z" fill="#F6AD55" opacity="0.8"/>
+    <path d="M60 0 L20 -20 L20 20 Z" fill="#F6AD55" opacity="0.8"/>
+    
+    <!-- Blinding light rays -->
+    <path d="M-80 -60 L-40 -30" stroke="#FBD38D" stroke-width="4" stroke-linecap="round"/>
+    <path d="M-90 0 L-50 0" stroke="#FBD38D" stroke-width="4" stroke-linecap="round"/>
+    <path d="M-80 60 L-40 30" stroke="#FBD38D" stroke-width="4" stroke-linecap="round"/>
+    
+    <path d="M80 -60 L40 -30" stroke="#FBD38D" stroke-width="4" stroke-linecap="round"/>
+    <path d="M90 0 L50 0" stroke="#FBD38D" stroke-width="4" stroke-linecap="round"/>
+    <path d="M80 60 L40 30" stroke="#FBD38D" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Central glare burst -->
+    <circle cx="-60" cy="0" r="10" fill="#FEFCBF"/>
+    <circle cx="60" cy="0" r="10" fill="#FEFCBF"/>
+  </g>
+</svg>

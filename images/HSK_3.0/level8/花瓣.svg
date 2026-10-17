@@ -1,0 +1,65 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow to enhance dark mode contrast -->
+  <circle cx="120" cy="120" r="70" fill="#252A34" opacity="0.5"/>
+
+  <!-- Motion lines / gentle breeze path -->
+  <path d="M45 85 Q75 75 105 95" stroke="#4A5568" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <path d="M30 115 Q60 105 90 125" stroke="#4A5568" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.3"/>
+  <path d="M135 155 Q165 145 195 165" stroke="#4A5568" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.3"/>
+
+  <!-- Falling Petal 1 (Background, smaller, tilted) -->
+  <g transform="translate(70, 75) rotate(-25)">
+    <path d="M 0,0 C -12,-15 -20,-30 0,-40 C 20,-30 12,-15 0,0 Z" fill="#E53E3E" opacity="0.8"/>
+    <path d="M 0,-5 C -4,-15 -6,-25 0,-35 C 6,-25 4,-15 0,-5 Z" fill="#FC8181" opacity="0.6"/>
+  </g>
+
+  <!-- Falling Petal 2 (Mid-ground, tumbling) -->
+  <g transform="translate(160, 95) rotate(45)">
+    <path d="M 0,0 C -14,-18 -24,-35 0,-48 C 24,-35 14,-18 0,0 Z" fill="#F56565"/>
+    <path d="M 0,-6 C -5,-18 -8,-30 0,-42 C 8,-30 5,-18 0,-6 Z" fill="#FEB2B2" opacity="0.7"/>
+  </g>
+
+  <!-- Falling Petal 3 (Small accent) -->
+  <g transform="translate(95, 155) rotate(-10)">
+    <path d="M 0,0 C -8,-10 -14,-20 0,-28 C 14,-20 8,-10 0,0 Z" fill="#E53E3E" opacity="0.6"/>
+  </g>
+
+  <!-- MAIN CENTRAL PETAL (Iconic physical object representing 花瓣) -->
+  <g transform="translate(120, 120)">
+    <!-- Soft shadow beneath main petal -->
+    <ellipse cx="0" cy="42" rx="22" ry="6" fill="#111318" opacity="0.6"/>
+
+    <!-- Main Rose Petal Silhouette -->
+    <!-- Curved, elegant teardrop form with natural organic fold -->
+    <path d="M 0,-45 
+             C -22,-30 -35,-8 -22,22 
+             C -12,40 -2,46 0,48 
+             C 2,46 12,40 22,22 
+             C 35,-8 22,-30 0,-45 Z" 
+          fill="url(#petalGradient)" />
+
+    <!-- Inner Vein Structure (Highlight) -->
+    <path d="M 0,-35 Q -3,0 0,38" stroke="#FED7D7" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+    
+    <!-- Delicate Side Veins -->
+    <path d="M -3,-15 Q -12,-8 -18,2" stroke="#FED7D7" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+    <path d="M 3,-15 Q 12,-8 18,2" stroke="#FED7D7" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+    <path d="M -2,-25 Q -8,-20 -12,-12" stroke="#FED7D7" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.3"/>
+    <path d="M 2,-25 Q 8,-20 12,-12" stroke="#FED7D7" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.3"/>
+
+    <!-- Dynamic 3D lighting reflection curve -->
+    <path d="M 0,-42 C -12,-28 -20,-8 -12,15 C -6,28 0,35 0,35" stroke="#FFFFFF" stroke-width="1.5" fill="none" opacity="0.3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="petalGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B6B" />
+      <stop offset="40%" stop-color="#E53E3E" />
+      <stop offset="100%" stop-color="#9B2C2C" />
+    </linearGradient>
+  </defs>
+</svg>

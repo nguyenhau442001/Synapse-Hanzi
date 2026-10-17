@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Gradient/Atmosphere -->
+  <path d="M0 120 Q 120 80 240 120 L 240 240 L 0 240 Z" fill="#2C3E50" opacity="0.6"/>
+  
+  <!-- Sun -->
+  <circle cx="120" cy="140" r="35" fill="#FF9F1C"/>
+  <circle cx="120" cy="140" r="45" fill="#FF9F1C" opacity="0.2"/>
+  
+  <!-- Horizon Line -->
+  <path d="M0 140 L 240 140" stroke="#FF5733" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Silhouette of Landscape -->
+  <path d="M0 240 L 0 160 L 40 130 L 80 150 L 120 125 L 160 145 L 200 135 L 240 160 L 240 240 Z" fill="#0F1116"/>
+  
+  <!-- Clouds -->
+  <path d="M30 80 Q 50 70 70 80 T 110 80" stroke="#FF5733" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <path d="M150 90 Q 170 80 190 90 T 230 90" stroke="#FF5733" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8"/>
+  
+  <!-- Rays -->
+  <line x1="120" y1="140" x2="120" y2="70" stroke="#FF9F1C" stroke-width="2" opacity="0.3"/>
+  <line x1="120" y1="140" x2="170" y2="90" stroke="#FF9F1C" stroke-width="2" opacity="0.3"/>
+  <line x1="120" y1="140" x2="70" y2="90" stroke="#FF9F1C" stroke-width="2" opacity="0.3"/>
+</svg>
