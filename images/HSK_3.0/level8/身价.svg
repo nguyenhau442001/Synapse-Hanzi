@@ -1,0 +1,18 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Player Figure -->
+  <g transform="translate(120, 120)">
+    <circle cx="0" cy="-40" r="15" fill="#FFC107"/>
+    <path d="M-25 10 L25 10 L20 60 L-20 60 Z" fill="#FFC107"/>
+    <path d="M-10 60 L-10 90 M10 60 L10 90" stroke="#FFC107" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Upward Trend Indicator (Representing Value Increase) -->
+  <path d="M60 180 L120 120 L180 60" stroke="#FF9800" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M160 60 L180 60 L180 80" stroke="#FF9800" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Coin/Value Symbol -->
+  <circle cx="180" cy="180" r="25" fill="none" stroke="#FFC107" stroke-width="4"/>
+  <path d="M180 165 L180 195 M170 180 L190 180" stroke="#FFC107" stroke-width="4" stroke-linecap="round"/>
+</svg>

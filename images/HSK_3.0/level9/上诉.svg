@@ -1,0 +1,60 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle ambient glow to focus on the central legal icon -->
+  <circle cx="120" cy="115" r="70" fill="#262B36" opacity="0.6"/>
+
+  <!-- Legal Appeal (上诉) Illustration: Court Gavel resting on a sound block with an upward-pointing legal document/appeal scroll -->
+  <g transform="translate(0, 5)">
+    <!-- Document / Appeal Petition (Background paper rising upward) -->
+    <g transform="translate(120, 95)">
+      <!-- Document Base -->
+      <path d="M-30,-45 L20,-45 L35,-30 L35,55 L-30,55 Z" fill="#2E3646" rx="4"/>
+      <!-- Folded Corner -->
+      <path d="M20,-45 L35,-30 L20,-30 Z" fill="#1A1D24" opacity="0.4"/>
+      <path d="M20,-45 L35,-30 L20,-30 Z" fill="#4B5563"/>
+      
+      <!-- Document Text Lines -->
+      <rect x="-20" y="-25" width="35" height="4" rx="2" fill="#E5E7EB" opacity="0.8"/>
+      <rect x="-20" y="-15" width="40" height="4" rx="2" fill="#9CA3AF" opacity="0.6"/>
+      <rect x="-20" y="-5" width="28" height="4" rx="2" fill="#9CA3AF" opacity="0.6"/>
+      <rect x="-20" y="5" width="35" height="4" rx="2" fill="#9CA3AF" opacity="0.6"/>
+
+      <!-- Large Upward Arrow Accent on Document (representing appeal/escalation) -->
+      <circle cx="0" cy="32" r="12" fill="#F59E0B" opacity="0.2"/>
+      <path d="M-4,36 L0,28 L4,36 M0,28 L0,42" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Sound Block (Gavel Base) -->
+    <g transform="translate(120, 160)">
+      <!-- Wooden Base Bottom -->
+      <rect x="-42" y="5" width="84" height="12" rx="4" fill="#92400E"/>
+      <!-- Wooden Base Top -->
+      <rect x="-34" y="-2" width="68" height="8" rx="3" fill="#B45309"/>
+      <!-- Highlight -->
+      <rect x="-30" y="0" width="60" height="2" rx="1" fill="#FBBF24" opacity="0.4"/>
+    </g>
+
+    <!-- Gavel Head & Handle (Angled upward for dynamic appeal action) -->
+    <g transform="translate(120, 125) rotate(-25)">
+      <!-- Handle -->
+      <path d="M-5,4 L-2,75 C-2,78 2,78 2,75 L5,4 Z" fill="#92400E"/>
+      <circle cx="0" cy="76" r="3.5" fill="#B45309"/>
+      
+      <!-- Gavel Head -->
+      <rect x="-36" y="-12" width="72" height="20" rx="6" fill="#D97706"/>
+      <!-- Head Metal Band Left -->
+      <rect x="-28" y="-13" width="6" height="22" rx="2" fill="#9CA3AF" opacity="0.7"/>
+      <!-- Head Metal Band Right -->
+      <rect x="22" y="-13" width="6" height="22" rx="2" fill="#9CA3AF" opacity="0.7"/>
+      <!-- Head Highlights -->
+      <rect x="-20" y="-9" width="40" height="4" rx="2" fill="#FBBF24" opacity="0.5"/>
+    </g>
+  </g>
+
+  <!-- Flashcard Topic Indicator / Subtle UI Accent -->
+  <circle cx="120" cy="208" r="4" fill="#F59E0B"/>
+  <circle cx="104" cy="208" r="2.5" fill="#4B5563"/>
+  <circle cx="136" cy="208" r="2.5" fill="#4B5563"/>
+</svg>

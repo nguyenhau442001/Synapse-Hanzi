@@ -47821,6 +47821,256 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "上司.svg",
     "src": "images/HSK_3.0/level7/上司.svg",
     "caption": "cấp trên; thủ trưởng"
+  },
+  "上诉": {
+    "file": "上诉.svg",
+    "src": "images/HSK_3.0/level7/上诉.svg",
+    "caption": "kháng cáo"
+  },
+  "上调": {
+    "file": "上调.svg",
+    "src": "images/HSK_3.0/level7/上调.svg",
+    "caption": "điều chỉnh tăng; tăng mức"
+  },
+  "尚未": {
+    "file": "尚未.svg",
+    "src": "images/HSK_3.0/level7/尚未.svg",
+    "caption": "vẫn chưa; chưa"
+  },
+  "上限": {
+    "file": "上限.svg",
+    "src": "images/HSK_3.0/level7/上限.svg",
+    "caption": "mức trần; mức tối đa; giới hạn trên"
+  },
+  "上行": {
+    "file": "上行.svg",
+    "src": "images/HSK_3.0/level7/上行.svg",
+    "caption": "chiều lên; đi lên"
+  },
+  "上演": {
+    "file": "上演.svg",
+    "src": "images/HSK_3.0/level7/上演.svg",
+    "caption": "công diễn; trình diễn"
+  },
+  "上映": {
+    "file": "上映.svg",
+    "src": "images/HSK_3.0/level7/上映.svg",
+    "caption": "công chiếu; chiếu rạp"
+  },
+  "稍后": {
+    "file": "稍后.svg",
+    "src": "images/HSK_3.0/level7/稍后.svg",
+    "caption": "chốc lát nữa; một lát sau"
+  },
+  "烧毁": {
+    "file": "烧毁.svg",
+    "src": "images/HSK_3.0/level7/烧毁.svg",
+    "caption": "thiêu rụi; cháy rụi"
+  },
+  "稍稍": {
+    "file": "稍稍.svg",
+    "src": "images/HSK_3.0/level7/稍稍.svg",
+    "caption": "đôi chút; một chút; hơi"
+  },
+  "少不了": {
+    "file": "少不了.svg",
+    "src": "images/HSK_3.0/level7/少不了.svg",
+    "caption": "không thể thiếu; ắt hẳn"
+  },
+  "少女": {
+    "file": "少女.svg",
+    "src": "images/HSK_3.0/level7/少女.svg",
+    "caption": "thiếu nữ; cô gái trẻ"
+  },
+  "奢望": {
+    "file": "奢望.svg",
+    "src": "images/HSK_3.0/level7/奢望.svg",
+    "caption": "hy vọng xa vời; mong ước viển vông"
+  },
+  "设": {
+    "file": "设.svg",
+    "src": "images/HSK_3.0/level7/设.svg",
+    "caption": "đặt; thiết lập"
+  },
+  "设定": {
+    "file": "设定.svg",
+    "src": "images/HSK_3.0/level7/设定.svg",
+    "caption": "cài đặt; thiết lập"
+  },
+  "设法": {
+    "file": "设法.svg",
+    "src": "images/HSK_3.0/level7/设法.svg",
+    "caption": "tìm cách; nghĩ cách"
+  },
+  "社会主义": {
+    "file": "社会主义.svg",
+    "src": "images/HSK_3.0/level7/社会主义.svg",
+    "caption": "chủ nghĩa xã hội"
+  },
+  "社交": {
+    "file": "社交.svg",
+    "src": "images/HSK_3.0/level7/社交.svg",
+    "caption": "xã hội"
+  },
+  "涉猎": {
+    "file": "涉猎.svg",
+    "src": "images/HSK_3.0/level7/涉猎.svg",
+    "caption": "tìm hiểu rộng; đọc rộng"
+  },
+  "社团": {
+    "file": "社团.svg",
+    "src": "images/HSK_3.0/level7/社团.svg",
+    "caption": "câu lạc bộ; đoàn thể sinh viên"
+  },
+  "涉嫌": {
+    "file": "涉嫌.svg",
+    "src": "images/HSK_3.0/level7/涉嫌.svg",
+    "caption": "bị tình nghi; dính líu nghi vấn"
+  },
+  "申办": {
+    "file": "申办.svg",
+    "src": "images/HSK_3.0/level7/申办.svg",
+    "caption": "đăng cai; xin tổ chức"
+  },
+  "身不由己": {
+    "file": "身不由己.svg",
+    "src": "images/HSK_3.0/level7/身不由己.svg",
+    "caption": "thân bất do kỷ; không làm chủ được mình"
+  },
+  "深化": {
+    "file": "深化.svg",
+    "src": "images/HSK_3.0/level7/深化.svg",
+    "caption": "làm sâu sắc thêm; đi vào chiều sâu"
+  },
+  "身价": {
+    "file": "身价.svg",
+    "src": "images/HSK_3.0/level7/身价.svg",
+    "caption": "giá trị chuyển nhượng; vị thế giá trị"
+  },
+  "申领": {
+    "file": "申领.svg",
+    "src": "images/HSK_3.0/level7/申领.svg",
+    "caption": "làm thủ tục xin nhận; đăng ký nhận"
+  },
+  "深切": {
+    "file": "深切.svg",
+    "src": "images/HSK_3.0/level7/深切.svg",
+    "caption": "sâu sắc; sâu đậm"
+  },
+  "深情": {
+    "file": "深情.svg",
+    "src": "images/HSK_3.0/level7/深情.svg",
+    "caption": "chan chứa tình cảm; thắm thiết"
+  },
+  "身躯": {
+    "file": "身躯.svg",
+    "src": "images/HSK_3.0/level7/身躯.svg",
+    "caption": "tấm thân; thân thể"
+  },
+  "深入人心": {
+    "file": "深入人心.svg",
+    "src": "images/HSK_3.0/level7/深入人心.svg",
+    "caption": "đi sâu vào lòng người"
+  },
+  "伸手": {
+    "file": "伸手.svg",
+    "src": "images/HSK_3.0/level7/伸手.svg",
+    "caption": "ngửa tay xin xỏ; chìa tay"
+  },
+  "深邃": {
+    "file": "深邃.svg",
+    "src": "images/HSK_3.0/level7/深邃.svg",
+    "caption": "sâu thẳm; thâm sâu"
+  },
+  "伸缩": {
+    "file": "伸缩.svg",
+    "src": "images/HSK_3.0/level7/伸缩.svg",
+    "caption": "co giãn; đàn hồi"
+  },
+  "身影": {
+    "file": "身影.svg",
+    "src": "images/HSK_3.0/level7/身影.svg",
+    "caption": "bóng dáng; hình bóng"
+  },
+  "深造": {
+    "file": "深造.svg",
+    "src": "images/HSK_3.0/level7/深造.svg",
+    "caption": "học nâng cao; đi tu nghiệp"
+  },
+  "伸张": {
+    "file": "伸张.svg",
+    "src": "images/HSK_3.0/level7/伸张.svg",
+    "caption": "thực thi; giương cao (công lý)"
+  },
+  "身子": {
+    "file": "身子.svg",
+    "src": "images/HSK_3.0/level7/身子.svg",
+    "caption": "cơ thể"
+  },
+  "神情": {
+    "file": "神情.svg",
+    "src": "images/HSK_3.0/level7/神情.svg",
+    "caption": "vẻ mặt; thần thái; nét mặt"
+  },
+  "审": {
+    "file": "审.svg",
+    "src": "images/HSK_3.0/level7/审.svg",
+    "caption": "xét xử; thẩm tra"
+  },
+  "审定": {
+    "file": "审定.svg",
+    "src": "images/HSK_3.0/level7/审定.svg",
+    "caption": "thẩm định phê duyệt; thẩm tra duyệt y"
+  },
+  "审核": {
+    "file": "审核.svg",
+    "src": "images/HSK_3.0/level7/审核.svg",
+    "caption": "xét duyệt; kiểm tra đối chiếu"
+  },
+  "审计": {
+    "file": "审计.svg",
+    "src": "images/HSK_3.0/level7/审计.svg",
+    "caption": "kiểm toán"
+  },
+  "审批": {
+    "file": "审批.svg",
+    "src": "images/HSK_3.0/level7/审批.svg",
+    "caption": "phê duyệt; xét duyệt"
+  },
+  "审视": {
+    "file": "审视.svg",
+    "src": "images/HSK_3.0/level7/审视.svg",
+    "caption": "nhìn nhận xem xét kỹ; soi xét"
+  },
+  "肾": {
+    "file": "肾.svg",
+    "src": "images/HSK_3.0/level7/肾.svg",
+    "caption": "thận; tạng thận"
+  },
+  "渗": {
+    "file": "渗.svg",
+    "src": "images/HSK_3.0/level7/渗.svg",
+    "caption": "rỉ vào; ngấm; thấm vào"
+  },
+  "生产线": {
+    "file": "生产线.svg",
+    "src": "images/HSK_3.0/level7/生产线.svg",
+    "caption": "dây chuyền sản xuất"
+  },
+  "声称": {
+    "file": "声称.svg",
+    "src": "images/HSK_3.0/level7/声称.svg",
+    "caption": "tuyên bố; khẳng định"
+  },
+  "升华": {
+    "file": "升华.svg",
+    "src": "images/HSK_3.0/level7/升华.svg",
+    "caption": "thăng hoa; nâng cao lên tầm cao mới"
+  },
+  "生命线": {
+    "file": "生命线.svg",
+    "src": "images/HSK_3.0/level7/生命线.svg",
+    "caption": "đường sống; huyết mạch"
   }
 };
 
