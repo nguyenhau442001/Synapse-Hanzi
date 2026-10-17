@@ -48826,6 +48826,176 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "丝.svg",
     "src": "images/HSK_3.0/level7/丝.svg",
     "caption": "mảy may; sợi tơ; chút xíu"
+  },
+  "私家车": {
+    "file": "私家车.svg",
+    "src": "images/HSK_3.0/level7/私家车.svg",
+    "caption": "xe ô tô cá nhân; xe hơi riêng"
+  },
+  "司空见惯": {
+    "file": "司空见惯.svg",
+    "src": "images/HSK_3.0/level7/司空见惯.svg",
+    "caption": "quen mắt; chuyện thường thấy"
+  },
+  "私事": {
+    "file": "私事.svg",
+    "src": "images/HSK_3.0/level7/私事.svg",
+    "caption": "chuyện riêng tư"
+  },
+  "私下": {
+    "file": "私下.svg",
+    "src": "images/HSK_3.0/level7/私下.svg",
+    "caption": "chỗ riêng tư; riêng tư"
+  },
+  "四方": {
+    "file": "四方.svg",
+    "src": "images/HSK_3.0/level7/四方.svg",
+    "caption": "bốn phương; bốn bề"
+  },
+  "伺机": {
+    "file": "伺机.svg",
+    "src": "images/HSK_3.0/level7/伺机.svg",
+    "caption": "chực chờ cơ hội; rình cơ hội"
+  },
+  "饲料": {
+    "file": "饲料.svg",
+    "src": "images/HSK_3.0/level7/饲料.svg",
+    "caption": "thức ăn chăn nuôi; thức ăn gia súc"
+  },
+  "四面八方": {
+    "file": "四面八方.svg",
+    "src": "images/HSK_3.0/level7/四面八方.svg",
+    "caption": "bốn phương tám hướng; muôn phương"
+  },
+  "似是而非": {
+    "file": "似是而非.svg",
+    "src": "images/HSK_3.0/level7/似是而非.svg",
+    "caption": "tưởng đúng hóa sai; ngỡ là đúng mà lại sai"
+  },
+  "四通八达": {
+    "file": "四通八达.svg",
+    "src": "images/HSK_3.0/level7/四通八达.svg",
+    "caption": "thông suốt bốn phương; mạng lưới giao thông thuận tiện"
+  },
+  "松弛": {
+    "file": "松弛.svg",
+    "src": "images/HSK_3.0/level7/松弛.svg",
+    "caption": "thả lỏng; chùng xuống"
+  },
+  "松树": {
+    "file": "松树.svg",
+    "src": "images/HSK_3.0/level7/松树.svg",
+    "caption": "cây thông"
+  },
+  "松懈": {
+    "file": "松懈.svg",
+    "src": "images/HSK_3.0/level7/松懈.svg",
+    "caption": "lơ là; chểnh mảng"
+  },
+  "耸立": {
+    "file": "耸立.svg",
+    "src": "images/HSK_3.0/level7/耸立.svg",
+    "caption": "sừng sững; vươn cao sừng sững"
+  },
+  "怂恿": {
+    "file": "怂恿.svg",
+    "src": "images/HSK_3.0/level7/怂恿.svg",
+    "caption": "xúi giục; kích động; dụ dỗ"
+  },
+  "送别": {
+    "file": "送别.svg",
+    "src": "images/HSK_3.0/level7/送别.svg",
+    "caption": "tiễn biệt; đưa tiễn"
+  },
+  "送行": {
+    "file": "送行.svg",
+    "src": "images/HSK_3.0/level7/送行.svg",
+    "caption": "tiễn đưa; tiễn chân"
+  },
+  "搜救": {
+    "file": "搜救.svg",
+    "src": "images/HSK_3.0/level7/搜救.svg",
+    "caption": "tìm kiếm cứu nạn"
+  },
+  "搜寻": {
+    "file": "搜寻.svg",
+    "src": "images/HSK_3.0/level7/搜寻.svg",
+    "caption": "dò tìm; lùng sục; tìm kiếm"
+  },
+  "酥": {
+    "file": "酥.svg",
+    "src": "images/HSK_3.0/level7/酥.svg",
+    "caption": "giòn tan; xốp giòn"
+  },
+  "俗": {
+    "file": "俗.svg",
+    "src": "images/HSK_3.0/level7/俗.svg",
+    "caption": "dung tục; tầm thường; thô tục"
+  },
+  "俗称": {
+    "file": "俗称.svg",
+    "src": "images/HSK_3.0/level7/俗称.svg",
+    "caption": "thường gọi là; tên gọi dân gian"
+  },
+  "俗语": {
+    "file": "俗语.svg",
+    "src": "images/HSK_3.0/level7/俗语.svg",
+    "caption": "tục ngữ; câu nói dân gian"
+  },
+  "素": {
+    "file": "素.svg",
+    "src": "images/HSK_3.0/level7/素.svg",
+    "caption": "chay; thanh đạm"
+  },
+  "素不相识": {
+    "file": "素不相识.svg",
+    "src": "images/HSK_3.0/level7/素不相识.svg",
+    "caption": "chưa từng quen biết; hoàn toàn xa lạ"
+  },
+  "素材": {
+    "file": "素材.svg",
+    "src": "images/HSK_3.0/level7/素材.svg",
+    "caption": "chất liệu; tư liệu sáng tác"
+  },
+  "诉苦": {
+    "file": "诉苦.svg",
+    "src": "images/HSK_3.0/level7/诉苦.svg",
+    "caption": "kể khổ; than thở"
+  },
+  "诉说": {
+    "file": "诉说.svg",
+    "src": "images/HSK_3.0/level7/诉说.svg",
+    "caption": "kể lể; giãi bày"
+  },
+  "素养": {
+    "file": "素养.svg",
+    "src": "images/HSK_3.0/level7/素养.svg",
+    "caption": "tố chất; trình độ văn hóa đạo đức"
+  },
+  "缩减": {
+    "file": "缩减.svg",
+    "src": "images/HSK_3.0/level7/缩减.svg",
+    "caption": "cắt giảm; thu hẹp"
+  },
+  "缩水": {
+    "file": "缩水.svg",
+    "src": "images/HSK_3.0/level7/缩水.svg",
+    "caption": "hao hụt giá trị; co lại"
+  },
+  "缩影": {
+    "file": "缩影.svg",
+    "src": "images/HSK_3.0/level7/缩影.svg",
+    "caption": "bức tranh thu nhỏ; hình ảnh thu nhỏ"
+  },
+  "锁定": {
+    "file": "锁定.svg",
+    "src": "images/HSK_3.0/level7/锁定.svg",
+    "caption": "khóa mục tiêu; xác định đích xác"
+  },
+  "索赔": {
+    "file": "索赔.svg",
+    "src": "images/HSK_3.0/level7/索赔.svg",
+    "caption": "đòi bồi thường; yêu cầu bồi thường"
   }
 };
 
