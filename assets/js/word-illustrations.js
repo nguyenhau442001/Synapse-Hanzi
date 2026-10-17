@@ -48557,6 +48557,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/受害人.svg",
     "caption": "người bị hại; nạn nhân"
   },
+  "受贿": {
+    "file": "受贿.svg",
+    "src": "images/HSK_3.0/level7/受贿.svg",
+    "caption": "nhận hối lộ"
+  },
   "受惊": {
     "file": "受惊.svg",
     "src": "images/HSK_3.0/level7/受惊.svg",
@@ -48571,6 +48576,256 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "受理.svg",
     "src": "images/HSK_3.0/level7/受理.svg",
     "caption": "thụ lý; tiếp nhận giải quyết"
+  },
+  "受骗": {
+    "file": "受骗.svg",
+    "src": "images/HSK_3.0/level7/受骗.svg",
+    "caption": "bị lừa; mắc lừa"
+  },
+  "授权": {
+    "file": "授权.svg",
+    "src": "images/HSK_3.0/level7/授权.svg",
+    "caption": "ủy quyền; cấp phép"
+  },
+  "受益": {
+    "file": "受益.svg",
+    "src": "images/HSK_3.0/level7/受益.svg",
+    "caption": "hưởng lợi; nhận được lợi ích"
+  },
+  "受益匪浅": {
+    "file": "受益匪浅.svg",
+    "src": "images/HSK_3.0/level7/受益匪浅.svg",
+    "caption": "thu hoạch được rất nhiều; hưởng lợi không nhỏ"
+  },
+  "梳": {
+    "file": "梳.svg",
+    "src": "images/HSK_3.0/level7/梳.svg",
+    "caption": "chải (tóc)"
+  },
+  "疏导": {
+    "file": "疏导.svg",
+    "src": "images/HSK_3.0/level7/疏导.svg",
+    "caption": "phân luồng; giải tỏa"
+  },
+  "枢纽": {
+    "file": "枢纽.svg",
+    "src": "images/HSK_3.0/level7/枢纽.svg",
+    "caption": "đầu mối; trung tâm then chốt"
+  },
+  "抒情": {
+    "file": "抒情.svg",
+    "src": "images/HSK_3.0/level7/抒情.svg",
+    "caption": "trữ tình; bày tỏ cảm xúc"
+  },
+  "疏散": {
+    "file": "疏散.svg",
+    "src": "images/HSK_3.0/level7/疏散.svg",
+    "caption": "sơ tán; giải tán"
+  },
+  "疏通": {
+    "file": "疏通.svg",
+    "src": "images/HSK_3.0/level7/疏通.svg",
+    "caption": "khơi thông; thông tắc"
+  },
+  "输血": {
+    "file": "输血.svg",
+    "src": "images/HSK_3.0/level7/输血.svg",
+    "caption": "truyền máu"
+  },
+  "输液": {
+    "file": "输液.svg",
+    "src": "images/HSK_3.0/level7/输液.svg",
+    "caption": "truyền dịch"
+  },
+  "舒展": {
+    "file": "舒展.svg",
+    "src": "images/HSK_3.0/level7/舒展.svg",
+    "caption": "thư giãn vươn vai; giãn ra"
+  },
+  "赎": {
+    "file": "赎.svg",
+    "src": "images/HSK_3.0/level7/赎.svg",
+    "caption": "chuộc; chuộc lại"
+  },
+  "属相": {
+    "file": "属相.svg",
+    "src": "images/HSK_3.0/level7/属相.svg",
+    "caption": "con giáp"
+  },
+  "属性": {
+    "file": "属性.svg",
+    "src": "images/HSK_3.0/level7/属性.svg",
+    "caption": "thuộc tính; đặc tính"
+  },
+  "数一数二": {
+    "file": "数一数二.svg",
+    "src": "images/HSK_3.0/level7/数一数二.svg",
+    "caption": "thuộc top đầu; hàng đầu"
+  },
+  "树干": {
+    "file": "树干.svg",
+    "src": "images/HSK_3.0/level7/树干.svg",
+    "caption": "thân cây"
+  },
+  "数据库": {
+    "file": "数据库.svg",
+    "src": "images/HSK_3.0/level7/数据库.svg",
+    "caption": "cơ sở dữ liệu"
+  },
+  "竖立": {
+    "file": "竖立.svg",
+    "src": "images/HSK_3.0/level7/竖立.svg",
+    "caption": "dựng lên; sừng sững đứng"
+  },
+  "树梢": {
+    "file": "树梢.svg",
+    "src": "images/HSK_3.0/level7/树梢.svg",
+    "caption": "ngọn cây"
+  },
+  "衰竭": {
+    "file": "衰竭.svg",
+    "src": "images/HSK_3.0/level7/衰竭.svg",
+    "caption": "suy kiệt; suy (chức năng cơ quan)"
+  },
+  "霜": {
+    "file": "霜.svg",
+    "src": "images/HSK_3.0/level7/霜.svg",
+    "caption": "sương giá; sương muối"
+  },
+  "双边": {
+    "file": "双边.svg",
+    "src": "images/HSK_3.0/level7/双边.svg",
+    "caption": "song phương"
+  },
+  "双重": {
+    "file": "双重.svg",
+    "src": "images/HSK_3.0/level7/双重.svg",
+    "caption": "kép; nhân đôi"
+  },
+  "双向": {
+    "file": "双向.svg",
+    "src": "images/HSK_3.0/level7/双向.svg",
+    "caption": "hai chiều; tương hỗ"
+  },
+  "双赢": {
+    "file": "双赢.svg",
+    "src": "images/HSK_3.0/level7/双赢.svg",
+    "caption": "đôi bên cùng có lợi; song thắng"
+  },
+  "爽": {
+    "file": "爽.svg",
+    "src": "images/HSK_3.0/level7/爽.svg",
+    "caption": "đã; sảng khoái"
+  },
+  "水产": {
+    "file": "水产.svg",
+    "src": "images/HSK_3.0/level7/水产.svg",
+    "caption": "thủy sản; hải sản"
+  },
+  "水滴石穿": {
+    "file": "水滴石穿.svg",
+    "src": "images/HSK_3.0/level7/水滴石穿.svg",
+    "caption": "nước chảy đá mòn"
+  },
+  "水晶": {
+    "file": "水晶.svg",
+    "src": "images/HSK_3.0/level7/水晶.svg",
+    "caption": "pha lê; tinh thể thạch anh"
+  },
+  "水落石出": {
+    "file": "水落石出.svg",
+    "src": "images/HSK_3.0/level7/水落石出.svg",
+    "caption": "chân tướng sáng tỏ; ngã ngũ"
+  },
+  "水汽": {
+    "file": "水汽.svg",
+    "src": "images/HSK_3.0/level7/水汽.svg",
+    "caption": "hơi nước; khí ẩm"
+  },
+  "水土": {
+    "file": "水土.svg",
+    "src": "images/HSK_3.0/level7/水土.svg",
+    "caption": "phong thổ; thổ nhưỡng và nguồn nước"
+  },
+  "水域": {
+    "file": "水域.svg",
+    "src": "images/HSK_3.0/level7/水域.svg",
+    "caption": "vùng nước; thủy vực"
+  },
+  "水源": {
+    "file": "水源.svg",
+    "src": "images/HSK_3.0/level7/水源.svg",
+    "caption": "nguồn nước"
+  },
+  "水涨船高": {
+    "file": "水涨船高.svg",
+    "src": "images/HSK_3.0/level7/水涨船高.svg",
+    "caption": "nước lên thuyền lên"
+  },
+  "水准": {
+    "file": "水准.svg",
+    "src": "images/HSK_3.0/level7/水准.svg",
+    "caption": "trình độ; chuẩn mực"
+  },
+  "顺差": {
+    "file": "顺差.svg",
+    "src": "images/HSK_3.0/level7/顺差.svg",
+    "caption": "thặng dư thương mại; xuất siêu"
+  },
+  "顺理成章": {
+    "file": "顺理成章.svg",
+    "src": "images/HSK_3.0/level7/顺理成章.svg",
+    "caption": "thuận lý thành chương; đương nhiên"
+  },
+  "顺其自然": {
+    "file": "顺其自然.svg",
+    "src": "images/HSK_3.0/level7/顺其自然.svg",
+    "caption": "thuận theo tự nhiên"
+  },
+  "顺势": {
+    "file": "顺势.svg",
+    "src": "images/HSK_3.0/level7/顺势.svg",
+    "caption": "thuận đà; nhân đà"
+  },
+  "顺手": {
+    "file": "顺手.svg",
+    "src": "images/HSK_3.0/level7/顺手.svg",
+    "caption": "tiện tay; thuận tay"
+  },
+  "顺心": {
+    "file": "顺心.svg",
+    "src": "images/HSK_3.0/level7/顺心.svg",
+    "caption": "vừa ý; toại nguyện"
+  },
+  "顺延": {
+    "file": "顺延.svg",
+    "src": "images/HSK_3.0/level7/顺延.svg",
+    "caption": "hoãn dời lại; lùi lại theo thứ tự"
+  },
+  "顺应": {
+    "file": "顺应.svg",
+    "src": "images/HSK_3.0/level7/顺应.svg",
+    "caption": "thuận theo; thích ứng với"
+  },
+  "说不上": {
+    "file": "说不上.svg",
+    "src": "images/HSK_3.0/level7/说不上.svg",
+    "caption": "nói không ra; khó mà nói"
+  },
+  "说情": {
+    "file": "说情.svg",
+    "src": "images/HSK_3.0/level7/说情.svg",
+    "caption": "nói đỡ; xin xỏ"
+  },
+  "硕果": {
+    "file": "硕果.svg",
+    "src": "images/HSK_3.0/level7/硕果.svg",
+    "caption": "thành quả to lớn; quả ngọt"
+  },
+  "丝": {
+    "file": "丝.svg",
+    "src": "images/HSK_3.0/level7/丝.svg",
+    "caption": "mảy may; sợi tơ; chút xíu"
   }
 };
 

@@ -1,6 +1,6 @@
 # 🎨 Kho Lưu Trữ Hình Minh Họa Ngữ Cảnh HSK (Scene-Based Vector Illustrations)
 
-*Báo cáo cập nhật tự động lúc: `2026-10-17 18:54:36`*
+*Báo cáo cập nhật tự động lúc: `2026-10-17 18:57:32`*
 
 Kho hình ảnh vector minh họa trực quan (Scene-Based Visual Mnemonics) cho toàn bộ từ vựng tiếng Trung thuộc hai hệ thống giáo trình **HSK 2.0 (Level 1 - 6)** và **HSK 3.0 (Level 1 - 9)**.
 
@@ -70,13 +70,13 @@ images/
 | **HSK 3.0 Level 4** | `1000/1000` | **100.0%** | `██████████` | ✅ Hoàn thành |
 | **HSK 3.0 Level 5** | `1600/1600` | **100.0%** | `██████████` | ✅ Hoàn thành |
 | **HSK 3.0 Level 6** | `1800/1800` | **100.0%** | `██████████` | ✅ Hoàn thành |
-| **HSK 3.0 Level 7** | `4119/5600` | **73.6%** | `███████░░░` | ⏳ Đang tạo |
-| **HSK 3.0 Level 8** | `4119/5600` | **73.6%** | `███████░░░` | ⏳ Đang tạo |
-| **HSK 3.0 Level 9** | `4119/5600` | **73.6%** | `███████░░░` | ⏳ Đang tạo |
-| **TỔNG CỘNG HSK 3.0** | **`17757/22200`** | **`80.0%`** | `████████░░` | ⏳ Đang hoàn thiện |
+| **HSK 3.0 Level 7** | `4170/5600` | **74.5%** | `███████░░░` | ⏳ Đang tạo |
+| **HSK 3.0 Level 8** | `4170/5600` | **74.5%** | `███████░░░` | ⏳ Đang tạo |
+| **HSK 3.0 Level 9** | `4170/5600` | **74.5%** | `███████░░░` | ⏳ Đang tạo |
+| **TỔNG CỘNG HSK 3.0** | **`17910/22200`** | **`80.7%`** | `████████░░` | ⏳ Đang hoàn thiện |
 
 ---
 
 ## 💡 Tổng kết tài nguyên hiện tại
-- **Tổng số từ vựng duy nhất đã có minh họa vector**: **`9654`** từ.
+- **Tổng số từ vựng duy nhất đã có minh họa vector**: **`9705`** từ.
 - **Manifest tích hợp ứng dụng**: File [`assets/js/word-illustrations.js`](file:///assets/js/word-illustrations.js) và [`images/generated_manifest.json`](file:///images/generated_manifest.json) tự động đồng bộ đường dẫn để flashcard tải trực tiếp hình ảnh theo cấp độ tương ứng.

@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Central Hub Node -->
+  <circle cx="120" cy="120" r="24" fill="#FFB800"/>
+  <circle cx="120" cy="120" r="12" fill="#1A1D24"/>
+  
+  <!-- Connecting Paths (Lines) -->
+  <path d="M120 96 L120 40" stroke="#FFB800" stroke-width="6" stroke-linecap="round"/>
+  <path d="M120 144 L120 200" stroke="#FFB800" stroke-width="6" stroke-linecap="round"/>
+  <path d="M96 120 L40 120" stroke="#FFB800" stroke-width="6" stroke-linecap="round"/>
+  <path d="M144 120 L200 120" stroke="#FFB800" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Peripheral Nodes (Representing transport modes) -->
+  <rect x="112" y="20" width="16" height="20" rx="4" fill="#5D6D7E"/>
+  <rect x="112" y="200" width="16" height="20" rx="4" fill="#5D6D7E"/>
+  <rect x="20" y="112" width="20" height="16" rx="4" fill="#5D6D7E"/>
+  <rect x="200" y="112" width="20" height="16" rx="4" fill="#5D6D7E"/>
+  
+  <!-- Decorative connection accents -->
+  <circle cx="120" cy="68" r="6" fill="#FFB800"/>
+  <circle cx="120" cy="172" r="6" fill="#FFB800"/>
+  <circle cx="68" cy="120" r="6" fill="#FFB800"/>
+  <circle cx="172" cy="120" r="6" fill="#FFB800"/>
+</svg>
