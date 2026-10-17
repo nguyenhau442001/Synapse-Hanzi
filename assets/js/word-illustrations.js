@@ -42697,6 +42697,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/解围.svg",
     "caption": "gỡ rối, giải vây"
   },
+  "解析": {
+    "file": "解析.svg",
+    "src": "images/HSK_3.0/level7/解析.svg",
+    "caption": "phân tích tường tận, giải tích"
+  },
   "解约": {
     "file": "解约.svg",
     "src": "images/HSK_3.0/level7/解约.svg",
@@ -42707,6 +42712,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/界.svg",
     "caption": "giới, ranh giới, phạm vi"
   },
+  "界定": {
+    "file": "界定.svg",
+    "src": "images/HSK_3.0/level7/界定.svg",
+    "caption": "phân định, định giới, xác định ranh giới"
+  },
   "介入": {
     "file": "介入.svg",
     "src": "images/HSK_3.0/level7/介入.svg",
@@ -42716,6 +42726,246 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "届时.svg",
     "src": "images/HSK_3.0/level7/届时.svg",
     "caption": "đến lúc đó, vào thời điểm đó"
+  },
+  "借条": {
+    "file": "借条.svg",
+    "src": "images/HSK_3.0/level7/借条.svg",
+    "caption": "giấy vay tiền, giấy nợ"
+  },
+  "界线": {
+    "file": "界线.svg",
+    "src": "images/HSK_3.0/level7/界线.svg",
+    "caption": "ranh giới, đường phân định"
+  },
+  "介意": {
+    "file": "介意.svg",
+    "src": "images/HSK_3.0/level7/介意.svg",
+    "caption": "để bụng, bận lòng, bận tâm"
+  },
+  "借用": {
+    "file": "借用.svg",
+    "src": "images/HSK_3.0/level7/借用.svg",
+    "caption": "mượn dùng, mượn tạm"
+  },
+  "介于": {
+    "file": "介于.svg",
+    "src": "images/HSK_3.0/level7/介于.svg",
+    "caption": "nằm giữa, nằm ở khoảng giữa"
+  },
+  "筋": {
+    "file": "筋.svg",
+    "src": "images/HSK_3.0/level7/筋.svg",
+    "caption": "gân, bắp thịt"
+  },
+  "禁不住": {
+    "file": "禁不住.svg",
+    "src": "images/HSK_3.0/level7/禁不住.svg",
+    "caption": "không kìm được, không nhịn được"
+  },
+  "津津有味": {
+    "file": "津津有味.svg",
+    "src": "images/HSK_3.0/level7/津津有味.svg",
+    "caption": "say sưa ngon lành, thích thú"
+  },
+  "紧凑": {
+    "file": "紧凑.svg",
+    "src": "images/HSK_3.0/level7/紧凑.svg",
+    "caption": "chặt chẽ, sít sao, khít khao"
+  },
+  "紧迫": {
+    "file": "紧迫.svg",
+    "src": "images/HSK_3.0/level7/紧迫.svg",
+    "caption": "cấp bách, bức thiết, khẩn cấp"
+  },
+  "锦旗": {
+    "file": "锦旗.svg",
+    "src": "images/HSK_3.0/level7/锦旗.svg",
+    "caption": "cờ thưởng, cờ thi đua, cờ lưu niệm"
+  },
+  "紧缺": {
+    "file": "紧缺.svg",
+    "src": "images/HSK_3.0/level7/紧缺.svg",
+    "caption": "khan hiếm, thiếu hụt trầm trọng"
+  },
+  "锦上添花": {
+    "file": "锦上添花.svg",
+    "src": "images/HSK_3.0/level7/锦上添花.svg",
+    "caption": "thêu hoa trên gấm, thêm phần rực rỡ"
+  },
+  "紧缩": {
+    "file": "紧缩.svg",
+    "src": "images/HSK_3.0/level7/紧缩.svg",
+    "caption": "thắt chặt, siết lại, thu hẹp"
+  },
+  "尽早": {
+    "file": "尽早.svg",
+    "src": "images/HSK_3.0/level7/尽早.svg",
+    "caption": "càng sớm càng tốt, sớm ngày"
+  },
+  "劲": {
+    "file": "劲.svg",
+    "src": "images/HSK_3.0/level7/劲.svg",
+    "caption": "hăng hái, sức lực, kình lực"
+  },
+  "进程": {
+    "file": "进程.svg",
+    "src": "images/HSK_3.0/level7/进程.svg",
+    "caption": "tiến trình, quá trình phát triển"
+  },
+  "进攻": {
+    "file": "进攻.svg",
+    "src": "images/HSK_3.0/level7/进攻.svg",
+    "caption": "tiến công, tấn công"
+  },
+  "晋级": {
+    "file": "晋级.svg",
+    "src": "images/HSK_3.0/level7/晋级.svg",
+    "caption": "vào vòng trong, thăng cấp, lên hạng"
+  },
+  "禁忌": {
+    "file": "禁忌.svg",
+    "src": "images/HSK_3.0/level7/禁忌.svg",
+    "caption": "điều cấm kỵ, kiêng kỵ"
+  },
+  "进军": {
+    "file": "进军.svg",
+    "src": "images/HSK_3.0/level7/进军.svg",
+    "caption": "tiến quân, tiến vào, thâm nhập thị trường"
+  },
+  "尽情": {
+    "file": "尽情.svg",
+    "src": "images/HSK_3.0/level7/尽情.svg",
+    "caption": "thỏa thích, hết mình, thỏa lòng"
+  },
+  "进取": {
+    "file": "进取.svg",
+    "src": "images/HSK_3.0/level7/进取.svg",
+    "caption": "chí tiến thủ, cầu tiến, vươn lên"
+  },
+  "禁区": {
+    "file": "禁区.svg",
+    "src": "images/HSK_3.0/level7/禁区.svg",
+    "caption": "vùng cấm, khu cấm"
+  },
+  "晋升": {
+    "file": "晋升.svg",
+    "src": "images/HSK_3.0/level7/晋升.svg",
+    "caption": "thăng chức, đề bạt, thăng cấp"
+  },
+  "尽头": {
+    "file": "尽头.svg",
+    "src": "images/HSK_3.0/level7/尽头.svg",
+    "caption": "tận cùng, điểm cuối, ngõ cùng"
+  },
+  "劲头": {
+    "file": "劲头.svg",
+    "src": "images/HSK_3.0/level7/劲头.svg",
+    "caption": "khí thế, hăng say, hăng hái"
+  },
+  "进修": {
+    "file": "进修.svg",
+    "src": "images/HSK_3.0/level7/进修.svg",
+    "caption": "tu nghiệp, học nâng cao, bồi dưỡng chuyên môn"
+  },
+  "经": {
+    "file": "经.svg",
+    "src": "images/HSK_3.0/level7/经.svg",
+    "caption": "sách kinh điển, kinh sách"
+  },
+  "精": {
+    "file": "精.svg",
+    "src": "images/HSK_3.0/level7/精.svg",
+    "caption": "tinh thông, tinh vi, tinh nhuệ"
+  },
+  "鲸": {
+    "file": "鲸.svg",
+    "src": "images/HSK_3.0/level7/鲸.svg",
+    "caption": "cá voi"
+  },
+  "精彩纷呈": {
+    "file": "精彩纷呈.svg",
+    "src": "images/HSK_3.0/level7/精彩纷呈.svg",
+    "caption": "vô cùng đặc sắc, đặc sắc rực rỡ, muôn màu muôn vẻ"
+  },
+  "惊动": {
+    "file": "惊动.svg",
+    "src": "images/HSK_3.0/level7/惊动.svg",
+    "caption": "kinh động, đánh động, làm kinh động"
+  },
+  "经度": {
+    "file": "经度.svg",
+    "src": "images/HSK_3.0/level7/经度.svg",
+    "caption": "kinh độ"
+  },
+  "精度": {
+    "file": "精度.svg",
+    "src": "images/HSK_3.0/level7/精度.svg",
+    "caption": "độ chính xác"
+  },
+  "惊慌": {
+    "file": "惊慌.svg",
+    "src": "images/HSK_3.0/level7/惊慌.svg",
+    "caption": "hoảng hốt, kinh hoàng, hoang mang"
+  },
+  "惊慌失措": {
+    "file": "惊慌失措.svg",
+    "src": "images/HSK_3.0/level7/惊慌失措.svg",
+    "caption": "hoảng loạn mất bình tĩnh, cuống cuồng hoảng sợ"
+  },
+  "荆棘": {
+    "file": "荆棘.svg",
+    "src": "images/HSK_3.0/level7/荆棘.svg",
+    "caption": "chông gai trắc trở, gai góc, bụi gai"
+  },
+  "兢兢业业": {
+    "file": "兢兢业业.svg",
+    "src": "images/HSK_3.0/level7/兢兢业业.svg",
+    "caption": "tận tụy hết lòng, cẩn trọng chu đáo, cần cù mẫn cán"
+  },
+  "经久不息": {
+    "file": "经久不息.svg",
+    "src": "images/HSK_3.0/level7/经久不息.svg",
+    "caption": "kéo dài không dứt, vang dội hồi lâu không dứt"
+  },
+  "精练": {
+    "file": "精练.svg",
+    "src": "images/HSK_3.0/level7/精练.svg",
+    "caption": "súc tích cô đọng, tinh giản sắc sảo"
+  },
+  "经贸": {
+    "file": "经贸.svg",
+    "src": "images/HSK_3.0/level7/经贸.svg",
+    "caption": "kinh tế thương mại, kinh thương"
+  },
+  "精妙": {
+    "file": "精妙.svg",
+    "src": "images/HSK_3.0/level7/精妙.svg",
+    "caption": "tinh diệu, tinh tế kỳ diệu, khéo léo tuyệt vời"
+  },
+  "精明": {
+    "file": "精明.svg",
+    "src": "images/HSK_3.0/level7/精明.svg",
+    "caption": "khôn khéo, tinh ranh, tháo vát lanh lợi"
+  },
+  "精疲力竭": {
+    "file": "精疲力竭.svg",
+    "src": "images/HSK_3.0/level7/精疲力竭.svg",
+    "caption": "sức cùng lực kiệt, kiệt sức, mệt nhoài"
+  },
+  "精品": {
+    "file": "精品.svg",
+    "src": "images/HSK_3.0/level7/精品.svg",
+    "caption": "tác phẩm đỉnh cao, hàng tinh phẩm, sản phẩm cao cấp"
+  },
+  "精巧": {
+    "file": "精巧.svg",
+    "src": "images/HSK_3.0/level7/精巧.svg",
+    "caption": "tinh xảo, khéo léo tinh xảo"
+  },
+  "精神病": {
+    "file": "精神病.svg",
+    "src": "images/HSK_3.0/level7/精神病.svg",
+    "caption": "bệnh tâm thần, rối loạn tâm thần"
   }
 };
 
