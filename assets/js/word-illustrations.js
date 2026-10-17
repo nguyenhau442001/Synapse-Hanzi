@@ -39692,6 +39692,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/公职.svg",
     "caption": "chức vụ nhà nước, chức vụ công"
   },
+  "拱": {
+    "file": "拱.svg",
+    "src": "images/HSK_3.0/level7/拱.svg",
+    "caption": "vòm, uốn cong"
+  },
   "供奉": {
     "file": "供奉.svg",
     "src": "images/HSK_3.0/level7/供奉.svg",
@@ -39721,6 +39726,251 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "勾.svg",
     "src": "images/HSK_3.0/level7/勾.svg",
     "caption": "đánh dấu, tích dấu"
+  },
+  "钩": {
+    "file": "钩.svg",
+    "src": "images/HSK_3.0/level7/钩.svg",
+    "caption": "lưỡi câu, móc"
+  },
+  "勾勒": {
+    "file": "勾勒.svg",
+    "src": "images/HSK_3.0/level7/勾勒.svg",
+    "caption": "phác họa, phác thảo đường nét"
+  },
+  "构建": {
+    "file": "构建.svg",
+    "src": "images/HSK_3.0/level7/构建.svg",
+    "caption": "xây dựng, kiến tạo"
+  },
+  "够呛": {
+    "file": "够呛.svg",
+    "src": "images/HSK_3.0/level7/够呛.svg",
+    "caption": "khó mà chịu nổi, gay go"
+  },
+  "构想": {
+    "file": "构想.svg",
+    "src": "images/HSK_3.0/level7/构想.svg",
+    "caption": "ý tưởng phác thảo, ý niệm thiết kế"
+  },
+  "孤单": {
+    "file": "孤单.svg",
+    "src": "images/HSK_3.0/level7/孤单.svg",
+    "caption": "cô đơn, lẻ loi"
+  },
+  "孤儿": {
+    "file": "孤儿.svg",
+    "src": "images/HSK_3.0/level7/孤儿.svg",
+    "caption": "trẻ mồ côi"
+  },
+  "孤零零": {
+    "file": "孤零零.svg",
+    "src": "images/HSK_3.0/level7/孤零零.svg",
+    "caption": "trơ trọi, cô độc một mình"
+  },
+  "孤陋寡闻": {
+    "file": "孤陋寡闻.svg",
+    "src": "images/HSK_3.0/level7/孤陋寡闻.svg",
+    "caption": "kiến thức hạn hẹp, nông cạn ít thấy"
+  },
+  "姑且": {
+    "file": "姑且.svg",
+    "src": "images/HSK_3.0/level7/姑且.svg",
+    "caption": "tạm hãy, tạm thời"
+  },
+  "估算": {
+    "file": "估算.svg",
+    "src": "images/HSK_3.0/level7/估算.svg",
+    "caption": "ước tính, tính áng chừng"
+  },
+  "股": {
+    "file": "股.svg",
+    "src": "images/HSK_3.0/level7/股.svg",
+    "caption": "luồng, làn, dòng, cổ phần"
+  },
+  "鼓动": {
+    "file": "鼓动.svg",
+    "src": "images/HSK_3.0/level7/鼓动.svg",
+    "caption": "cổ động, xúi giục"
+  },
+  "古董": {
+    "file": "古董.svg",
+    "src": "images/HSK_3.0/level7/古董.svg",
+    "caption": "đồ cổ"
+  },
+  "骨骼": {
+    "file": "骨骼.svg",
+    "src": "images/HSK_3.0/level7/骨骼.svg",
+    "caption": "xương, bộ xương, khung xương"
+  },
+  "古籍": {
+    "file": "古籍.svg",
+    "src": "images/HSK_3.0/level7/古籍.svg",
+    "caption": "cổ tịch, sách cổ"
+  },
+  "骨架": {
+    "file": "骨架.svg",
+    "src": "images/HSK_3.0/level7/骨架.svg",
+    "caption": "khung xương, bộ khung"
+  },
+  "古今中外": {
+    "file": "古今中外.svg",
+    "src": "images/HSK_3.0/level7/古今中外.svg",
+    "caption": "kim cổ đông tây, xưa nay trong ngoài"
+  },
+  "股民": {
+    "file": "股民.svg",
+    "src": "images/HSK_3.0/level7/股民.svg",
+    "caption": "nhà đầu tư cổ phiếu, người chơi chứng khoán"
+  },
+  "古朴": {
+    "file": "古朴.svg",
+    "src": "images/HSK_3.0/level7/古朴.svg",
+    "caption": "cổ kính mộc mạc, cổ sơ giản dị"
+  },
+  "骨气": {
+    "file": "骨气.svg",
+    "src": "images/HSK_3.0/level7/骨气.svg",
+    "caption": "khí phách, khí tiết"
+  },
+  "骨折": {
+    "file": "骨折.svg",
+    "src": "images/HSK_3.0/level7/骨折.svg",
+    "caption": "gãy xương"
+  },
+  "故": {
+    "file": "故.svg",
+    "src": "images/HSK_3.0/level7/故.svg",
+    "caption": "cho nên, vì thế, duyên cớ"
+  },
+  "雇": {
+    "file": "雇.svg",
+    "src": "images/HSK_3.0/level7/雇.svg",
+    "caption": "thuê, mướn"
+  },
+  "固化": {
+    "file": "固化.svg",
+    "src": "images/HSK_3.0/level7/固化.svg",
+    "caption": "định hình cứng nhắc, xơ cứng"
+  },
+  "顾及": {
+    "file": "顾及.svg",
+    "src": "images/HSK_3.0/level7/顾及.svg",
+    "caption": "nghĩ tới, đoái hoài, tính đến"
+  },
+  "顾虑": {
+    "file": "顾虑.svg",
+    "src": "images/HSK_3.0/level7/顾虑.svg",
+    "caption": "lo ngại, băn khoăn, e ngại"
+  },
+  "顾名思义": {
+    "file": "顾名思义.svg",
+    "src": "images/HSK_3.0/level7/顾名思义.svg",
+    "caption": "nhìn tên suy ra nghĩa, trông mặt đặt tên"
+  },
+  "顾全大局": {
+    "file": "顾全大局.svg",
+    "src": "images/HSK_3.0/level7/顾全大局.svg",
+    "caption": "vì đại cục, chăm lo cho toàn cục"
+  },
+  "固然": {
+    "file": "固然.svg",
+    "src": "images/HSK_3.0/level7/固然.svg",
+    "caption": "cố nhiên, dẫu rằng, tuy rằng"
+  },
+  "固有": {
+    "file": "固有.svg",
+    "src": "images/HSK_3.0/level7/固有.svg",
+    "caption": "vốn có, cố hữu"
+  },
+  "雇员": {
+    "file": "雇员.svg",
+    "src": "images/HSK_3.0/level7/雇员.svg",
+    "caption": "người làm công, nhân viên được thuê"
+  },
+  "固执": {
+    "file": "固执.svg",
+    "src": "images/HSK_3.0/level7/固执.svg",
+    "caption": "cố chấp, bướng bỉnh, khăng khăng"
+  },
+  "雇主": {
+    "file": "雇主.svg",
+    "src": "images/HSK_3.0/level7/雇主.svg",
+    "caption": "chủ thuê, người sử dụng lao động"
+  },
+  "瓜分": {
+    "file": "瓜分.svg",
+    "src": "images/HSK_3.0/level7/瓜分.svg",
+    "caption": "xâu xé, chia cắt, phân chia"
+  },
+  "刮目相看": {
+    "file": "刮目相看.svg",
+    "src": "images/HSK_3.0/level7/刮目相看.svg",
+    "caption": "nhìn bằng con mắt khác, lau mắt mà nhìn"
+  },
+  "瓜子": {
+    "file": "瓜子.svg",
+    "src": "images/HSK_3.0/level7/瓜子.svg",
+    "caption": "hạt dưa"
+  },
+  "寡妇": {
+    "file": "寡妇.svg",
+    "src": "images/HSK_3.0/level7/寡妇.svg",
+    "caption": "góa phụ, phụ nữ góa chồng"
+  },
+  "挂钩": {
+    "file": "挂钩.svg",
+    "src": "images/HSK_3.0/level7/挂钩.svg",
+    "caption": "gắn liền, liên kết, móc nối"
+  },
+  "挂念": {
+    "file": "挂念.svg",
+    "src": "images/HSK_3.0/level7/挂念.svg",
+    "caption": "bận tâm, lo lắng, nhớ nhung"
+  },
+  "挂失": {
+    "file": "挂失.svg",
+    "src": "images/HSK_3.0/level7/挂失.svg",
+    "caption": "báo mất (thẻ, giấy tờ)"
+  },
+  "乖巧": {
+    "file": "乖巧.svg",
+    "src": "images/HSK_3.0/level7/乖巧.svg",
+    "caption": "ngoan ngoãn, lanh lợi"
+  },
+  "拐杖": {
+    "file": "拐杖.svg",
+    "src": "images/HSK_3.0/level7/拐杖.svg",
+    "caption": "gậy chống, cái gậy"
+  },
+  "怪物": {
+    "file": "怪物.svg",
+    "src": "images/HSK_3.0/level7/怪物.svg",
+    "caption": "quái vật"
+  },
+  "怪异": {
+    "file": "怪异.svg",
+    "src": "images/HSK_3.0/level7/怪异.svg",
+    "caption": "quái dị, kỳ quặc, khác thường"
+  },
+  "官兵": {
+    "file": "官兵.svg",
+    "src": "images/HSK_3.0/level7/官兵.svg",
+    "caption": "cán bộ chiến sĩ, quan binh"
+  },
+  "棺材": {
+    "file": "棺材.svg",
+    "src": "images/HSK_3.0/level7/棺材.svg",
+    "caption": "quan tài"
+  },
+  "观测": {
+    "file": "观测.svg",
+    "src": "images/HSK_3.0/level7/观测.svg",
+    "caption": "quan trắc, quan sát đo đạc"
+  },
+  "观感": {
+    "file": "观感.svg",
+    "src": "images/HSK_3.0/level7/观感.svg",
+    "caption": "cảm tưởng, cảm nhận khi xem"
   }
 };
 
