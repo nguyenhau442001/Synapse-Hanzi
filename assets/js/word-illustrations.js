@@ -45326,6 +45326,256 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "秘方.svg",
     "src": "images/HSK_3.0/level7/秘方.svg",
     "caption": "phương thuốc bí truyền, bí phương"
+  },
+  "秘诀": {
+    "file": "秘诀.svg",
+    "src": "images/HSK_3.0/level7/秘诀.svg",
+    "caption": "bí quyết, bí kíp"
+  },
+  "蜜月": {
+    "file": "蜜月.svg",
+    "src": "images/HSK_3.0/level7/蜜月.svg",
+    "caption": "tuần trăng mật"
+  },
+  "免不了": {
+    "file": "免不了.svg",
+    "src": "images/HSK_3.0/level7/免不了.svg",
+    "caption": "khó tránh khỏi, không sao tránh được"
+  },
+  "免除": {
+    "file": "免除.svg",
+    "src": "images/HSK_3.0/level7/免除.svg",
+    "caption": "miễn trừ, xóa bỏ"
+  },
+  "缅怀": {
+    "file": "缅怀.svg",
+    "src": "images/HSK_3.0/level7/缅怀.svg",
+    "caption": "tưởng nhớ, hoài niệm"
+  },
+  "腼腆": {
+    "file": "腼腆.svg",
+    "src": "images/HSK_3.0/level7/腼腆.svg",
+    "caption": "bẽn lẽn, e thẹn, ngượng ngùng"
+  },
+  "免职": {
+    "file": "免职.svg",
+    "src": "images/HSK_3.0/level7/免职.svg",
+    "caption": "miễn nhiệm, bãi chức"
+  },
+  "面红耳赤": {
+    "file": "面红耳赤.svg",
+    "src": "images/HSK_3.0/level7/面红耳赤.svg",
+    "caption": "đỏ mặt tía tai"
+  },
+  "面孔": {
+    "file": "面孔.svg",
+    "src": "images/HSK_3.0/level7/面孔.svg",
+    "caption": "khuôn mặt, diện mạo"
+  },
+  "面面俱到": {
+    "file": "面面俱到.svg",
+    "src": "images/HSK_3.0/level7/面面俱到.svg",
+    "caption": "chu đáo mọi mặt; vẹn toàn đôi đường"
+  },
+  "面目全非": {
+    "file": "面目全非.svg",
+    "src": "images/HSK_3.0/level7/面目全非.svg",
+    "caption": "thay đổi hoàn toàn; biến dạng hoàn toàn; tan hoang"
+  },
+  "苗": {
+    "file": "苗.svg",
+    "src": "images/HSK_3.0/level7/苗.svg",
+    "caption": "mầm non; cây con; mầm mống"
+  },
+  "苗头": {
+    "file": "苗头.svg",
+    "src": "images/HSK_3.0/level7/苗头.svg",
+    "caption": "mầm mống; dấu hiệu ban đầu; chiều hướng"
+  },
+  "庙": {
+    "file": "庙.svg",
+    "src": "images/HSK_3.0/level7/庙.svg",
+    "caption": "miếu; đền; chùa"
+  },
+  "庙会": {
+    "file": "庙会.svg",
+    "src": "images/HSK_3.0/level7/庙会.svg",
+    "caption": "hội đền; hội chợ chùa"
+  },
+  "灭绝": {
+    "file": "灭绝.svg",
+    "src": "images/HSK_3.0/level7/灭绝.svg",
+    "caption": "tuyệt chủng; diệt vong"
+  },
+  "民办": {
+    "file": "民办.svg",
+    "src": "images/HSK_3.0/level7/民办.svg",
+    "caption": "dân lập; tư thục"
+  },
+  "民居": {
+    "file": "民居.svg",
+    "src": "images/HSK_3.0/level7/民居.svg",
+    "caption": "nhà ở dân gian; nhà dân"
+  },
+  "民生": {
+    "file": "民生.svg",
+    "src": "images/HSK_3.0/level7/民生.svg",
+    "caption": "dân sinh; đời sống nhân dân"
+  },
+  "民事": {
+    "file": "民事.svg",
+    "src": "images/HSK_3.0/level7/民事.svg",
+    "caption": "dân sự"
+  },
+  "民意": {
+    "file": "民意.svg",
+    "src": "images/HSK_3.0/level7/民意.svg",
+    "caption": "dân ý; ý nguyện của nhân dân"
+  },
+  "民营": {
+    "file": "民营.svg",
+    "src": "images/HSK_3.0/level7/民营.svg",
+    "caption": "dân doanh; tư nhân quản lý"
+  },
+  "民用": {
+    "file": "民用.svg",
+    "src": "images/HSK_3.0/level7/民用.svg",
+    "caption": "dân dụng; phục vụ dân sự"
+  },
+  "鸣": {
+    "file": "鸣.svg",
+    "src": "images/HSK_3.0/level7/鸣.svg",
+    "caption": "hót; kêu; gáy; gióng lên"
+  },
+  "名贵": {
+    "file": "名贵.svg",
+    "src": "images/HSK_3.0/level7/名贵.svg",
+    "caption": "quý giá; quý hiếm"
+  },
+  "铭记": {
+    "file": "铭记.svg",
+    "src": "images/HSK_3.0/level7/铭记.svg",
+    "caption": "khắc ghi; ghi nhớ sâu sắc"
+  },
+  "明朗": {
+    "file": "明朗.svg",
+    "src": "images/HSK_3.0/level7/明朗.svg",
+    "caption": "sáng sủa; rõ ràng; minh bạch"
+  },
+  "名利": {
+    "file": "名利.svg",
+    "src": "images/HSK_3.0/level7/名利.svg",
+    "caption": "danh lợi; danh vọng và tài lộc"
+  },
+  "明媚": {
+    "file": "明媚.svg",
+    "src": "images/HSK_3.0/level7/明媚.svg",
+    "caption": "tươi đẹp; rực rỡ (ánh nắng, cảnh vật)"
+  },
+  "名声": {
+    "file": "名声.svg",
+    "src": "images/HSK_3.0/level7/名声.svg",
+    "caption": "danh tiếng; tiếng tăm"
+  },
+  "名言": {
+    "file": "名言.svg",
+    "src": "images/HSK_3.0/level7/名言.svg",
+    "caption": "câu nói nổi tiếng"
+  },
+  "名义": {
+    "file": "名义.svg",
+    "src": "images/HSK_3.0/level7/名义.svg",
+    "caption": "danh nghĩa"
+  },
+  "名著": {
+    "file": "名著.svg",
+    "src": "images/HSK_3.0/level7/名著.svg",
+    "caption": "kiệt tác; tác phẩm nổi tiếng"
+  },
+  "命²": {
+    "file": "命².svg",
+    "src": "images/HSK_3.0/level7/命².svg",
+    "caption": "ra lệnh; sai bảo; phái cử"
+  },
+  "磨": {
+    "file": "磨.svg",
+    "src": "images/HSK_3.0/level7/磨.svg",
+    "caption": "mài; cọ xát; rèn luyện"
+  },
+  "蘑菇": {
+    "file": "蘑菇.svg",
+    "src": "images/HSK_3.0/level7/蘑菇.svg",
+    "caption": "nấm"
+  },
+  "磨难": {
+    "file": "磨难.svg",
+    "src": "images/HSK_3.0/level7/磨难.svg",
+    "caption": "gian truân; hoạn nạn; thử thách"
+  },
+  "磨损": {
+    "file": "磨损.svg",
+    "src": "images/HSK_3.0/level7/磨损.svg",
+    "caption": "mòn sờn; hao mòn"
+  },
+  "抹": {
+    "file": "抹.svg",
+    "src": "images/HSK_3.0/level7/抹.svg",
+    "caption": "bôi; thoa; quét; quệt; lau"
+  },
+  "墨": {
+    "file": "墨.svg",
+    "src": "images/HSK_3.0/level7/墨.svg",
+    "caption": "mực; thỏi mực"
+  },
+  "莫大": {
+    "file": "莫大.svg",
+    "src": "images/HSK_3.0/level7/莫大.svg",
+    "caption": "hết sức to lớn; cực kỳ to lớn"
+  },
+  "莫非": {
+    "file": "莫非.svg",
+    "src": "images/HSK_3.0/level7/莫非.svg",
+    "caption": "chẳng lẽ; chẳng phải là"
+  },
+  "茉莉": {
+    "file": "茉莉.svg",
+    "src": "images/HSK_3.0/level7/茉莉.svg",
+    "caption": "hoa nhài; hoa lài"
+  },
+  "没落": {
+    "file": "没落.svg",
+    "src": "images/HSK_3.0/level7/没落.svg",
+    "caption": "suy tàn; sa sút; suy vong"
+  },
+  "默默无闻": {
+    "file": "默默无闻.svg",
+    "src": "images/HSK_3.0/level7/默默无闻.svg",
+    "caption": "âm thầm lặng lẽ; vô danh; ít ai biết tới"
+  },
+  "默契": {
+    "file": "默契.svg",
+    "src": "images/HSK_3.0/level7/默契.svg",
+    "caption": "ăn ý; thấu hiểu ngầm"
+  },
+  "漠然": {
+    "file": "漠然.svg",
+    "src": "images/HSK_3.0/level7/漠然.svg",
+    "caption": "thờ ơ; lãnh đạm; dửng dưng"
+  },
+  "末日": {
+    "file": "末日.svg",
+    "src": "images/HSK_3.0/level7/末日.svg",
+    "caption": "ngày tận thế; ngày tàn"
+  },
+  "墨水": {
+    "file": "墨水.svg",
+    "src": "images/HSK_3.0/level7/墨水.svg",
+    "caption": "mực viết; kiến thức, chữ nghĩa"
+  },
+  "谋害": {
+    "file": "谋害.svg",
+    "src": "images/HSK_3.0/level7/谋害.svg",
+    "caption": "mưu hại; ám hại"
   }
 };
 

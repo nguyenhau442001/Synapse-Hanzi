@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle ambient glow for focus -->
+  <circle cx="120" cy="115" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Conceptual illustration for 民生 (People's Livelihood / Well-being) -->
+  <g transform="translate(0, 5)">
+    <!-- House representing livelihood/home/stability -->
+    <path d="M70 120 L120 75 L170 120 V165 C170 170.5 165.5 175 160 175 H80 C74.5 175 70 170.5 70 165 Z" fill="#2B313F"/>
+    
+    <!-- Warm glowing home interior / window -->
+    <path d="M100 115 H140 V155 H100 Z" fill="#E67E22" opacity="0.15"/>
+    <rect x="105" y="120" width="30" height="30" rx="4" fill="#F39C12" opacity="0.9"/>
+    <path d="M120 120 V150 M105 135 H135" stroke="#2B313F" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Roof accent -->
+    <path d="M64 116 L120 66 L176 116" stroke="#F1C40F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+    <!-- Figures representing the people (Family / Community) -->
+    <!-- Left Person -->
+    <circle cx="95" cy="140" r="8" fill="#ECF0F1"/>
+    <path d="M85 165 C85 155 90 152 95 152 C100 152 105 155 105 165" fill="#3498DB"/>
+
+    <!-- Center Child / Smaller Figure -->
+    <circle cx="120" cy="145" r="6" fill="#ECF0F1"/>
+    <path d="M112 165 C112 158 116 156 120 156 C124 156 128 158 128 165" fill="#E67E22"/>
+
+    <!-- Right Person -->
+    <circle cx="145" cy="140" r="8" fill="#ECF0F1"/>
+    <path d="M135 165 C135 155 140 152 145 152 C150 152 155 155 155 165" fill="#2ECC71"/>
+
+    <!-- Supporting base / Ground line representing stability & society -->
+    <path d="M50 185 H190" stroke="#3A4252" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Sprouts / Growth elements symbolizing well-being and thriving life -->
+    <path d="M62 185 C62 175 68 170 75 165" stroke="#2ECC71" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M178 185 C178 175 172 170 165 165" stroke="#2ECC71" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M75 165 C80 160 85 162 82 168 C79 170 75 168 75 165 Z" fill="#2ECC71"/>
+    <path d="M165 165 C160 160 155 162 158 168 C161 170 165 168 165 165 Z" fill="#2ECC71"/>
+  </g>
+</svg>
