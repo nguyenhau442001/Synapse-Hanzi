@@ -47067,10 +47067,260 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/情结.svg",
     "caption": "mối gắn kết sâu nặng; nỗi niềm sâu lắng"
   },
+  "情境": {
+    "file": "情境.svg",
+    "src": "images/HSK_3.0/level7/情境.svg",
+    "caption": "ngữ cảnh; hoàn cảnh tình huống"
+  },
   "情侣": {
     "file": "情侣.svg",
     "src": "images/HSK_3.0/level7/情侣.svg",
     "caption": "cặp đôi yêu nhau; đôi tình nhân"
+  },
+  "情人": {
+    "file": "情人.svg",
+    "src": "images/HSK_3.0/level7/情人.svg",
+    "caption": "người yêu; người tình"
+  },
+  "情商": {
+    "file": "情商.svg",
+    "src": "images/HSK_3.0/level7/情商.svg",
+    "caption": "chỉ số cảm xúc (EQ); trí tuệ cảm xúc"
+  },
+  "情谊": {
+    "file": "情谊.svg",
+    "src": "images/HSK_3.0/level7/情谊.svg",
+    "caption": "tình nghĩa; tình bạn thắm thiết"
+  },
+  "情愿": {
+    "file": "情愿.svg",
+    "src": "images/HSK_3.0/level7/情愿.svg",
+    "caption": "tình nguyện; bằng lòng"
+  },
+  "庆典": {
+    "file": "庆典.svg",
+    "src": "images/HSK_3.0/level7/庆典.svg",
+    "caption": "đại lễ mừng; lễ kỷ niệm"
+  },
+  "庆贺": {
+    "file": "庆贺.svg",
+    "src": "images/HSK_3.0/level7/庆贺.svg",
+    "caption": "chúc mừng; ăn mừng"
+  },
+  "庆幸": {
+    "file": "庆幸.svg",
+    "src": "images/HSK_3.0/level7/庆幸.svg",
+    "caption": "may mắn; cảm thấy may mắn"
+  },
+  "囚犯": {
+    "file": "囚犯.svg",
+    "src": "images/HSK_3.0/level7/囚犯.svg",
+    "caption": "tù nhân"
+  },
+  "求同存异": {
+    "file": "求同存异.svg",
+    "src": "images/HSK_3.0/level7/求同存异.svg",
+    "caption": "tìm điểm chung gác lại bất đồng"
+  },
+  "求学": {
+    "file": "求学.svg",
+    "src": "images/HSK_3.0/level7/求学.svg",
+    "caption": "cầu học; đi học xa"
+  },
+  "求医": {
+    "file": "求医.svg",
+    "src": "images/HSK_3.0/level7/求医.svg",
+    "caption": "tìm thầy thuốc; khám chữa bệnh"
+  },
+  "求证": {
+    "file": "求证.svg",
+    "src": "images/HSK_3.0/level7/求证.svg",
+    "caption": "kiểm chứng; xác minh"
+  },
+  "驱动": {
+    "file": "驱动.svg",
+    "src": "images/HSK_3.0/level7/驱动.svg",
+    "caption": "thúc đẩy; truyền động"
+  },
+  "区间": {
+    "file": "区间.svg",
+    "src": "images/HSK_3.0/level7/区间.svg",
+    "caption": "khoảng; khoảng cách an toàn"
+  },
+  "区区": {
+    "file": "区区.svg",
+    "src": "images/HSK_3.0/level7/区区.svg",
+    "caption": "chút ít; vỏn vẹn; cỏn con"
+  },
+  "曲线": {
+    "file": "曲线.svg",
+    "src": "images/HSK_3.0/level7/曲线.svg",
+    "caption": "đường cong"
+  },
+  "趋于": {
+    "file": "趋于.svg",
+    "src": "images/HSK_3.0/level7/趋于.svg",
+    "caption": "có xu hướng; dần trở nên"
+  },
+  "取而代之": {
+    "file": "取而代之.svg",
+    "src": "images/HSK_3.0/level7/取而代之.svg",
+    "caption": "thay thế; thế chỗ"
+  },
+  "取材": {
+    "file": "取材.svg",
+    "src": "images/HSK_3.0/level7/取材.svg",
+    "caption": "lấy đề tài; chọn tư liệu"
+  },
+  "取经": {
+    "file": "取经.svg",
+    "src": "images/HSK_3.0/level7/取经.svg",
+    "caption": "học hỏi kinh nghiệm"
+  },
+  "取决": {
+    "file": "取决.svg",
+    "src": "images/HSK_3.0/level7/取决.svg",
+    "caption": "tùy thuộc vào; quyết định bởi"
+  },
+  "取暖": {
+    "file": "取暖.svg",
+    "src": "images/HSK_3.0/level7/取暖.svg",
+    "caption": "ấm áp"
+  },
+  "取胜": {
+    "file": "取胜.svg",
+    "src": "images/HSK_3.0/level7/取胜.svg",
+    "caption": "giành chiến thắng; thắng lợi"
+  },
+  "取笑": {
+    "file": "取笑.svg",
+    "src": "images/HSK_3.0/level7/取笑.svg",
+    "caption": "trêu chọc; chế giễu"
+  },
+  "曲艺": {
+    "file": "曲艺.svg",
+    "src": "images/HSK_3.0/level7/曲艺.svg",
+    "caption": "nghệ thuật khúc nghệ"
+  },
+  "去除": {
+    "file": "去除.svg",
+    "src": "images/HSK_3.0/level7/去除.svg",
+    "caption": "loại bỏ; tẩy sạch"
+  },
+  "去向": {
+    "file": "去向.svg",
+    "src": "images/HSK_3.0/level7/去向.svg",
+    "caption": "nơi đến; hướng đi"
+  },
+  "拳击": {
+    "file": "拳击.svg",
+    "src": "images/HSK_3.0/level7/拳击.svg",
+    "caption": "quyền anh; môn boxing"
+  },
+  "权限": {
+    "file": "权限.svg",
+    "src": "images/HSK_3.0/level7/权限.svg",
+    "caption": "thẩm quyền; quyền hạn"
+  },
+  "全心全意": {
+    "file": "全心全意.svg",
+    "src": "images/HSK_3.0/level7/全心全意.svg",
+    "caption": "toàn tâm toàn ý; hết lòng hết dạ"
+  },
+  "权益": {
+    "file": "权益.svg",
+    "src": "images/HSK_3.0/level7/权益.svg",
+    "caption": "quyền và lợi ích; quyền lợi"
+  },
+  "劝告": {
+    "file": "劝告.svg",
+    "src": "images/HSK_3.0/level7/劝告.svg",
+    "caption": "lời khuyên; khuyên bảo"
+  },
+  "劝说": {
+    "file": "劝说.svg",
+    "src": "images/HSK_3.0/level7/劝说.svg",
+    "caption": "khuyên giải; thuyết phục"
+  },
+  "劝阻": {
+    "file": "劝阻.svg",
+    "src": "images/HSK_3.0/level7/劝阻.svg",
+    "caption": "can ngăn; khuyên can"
+  },
+  "缺失": {
+    "file": "缺失.svg",
+    "src": "images/HSK_3.0/level7/缺失.svg",
+    "caption": "thiếu hụt; khiếm khuyết"
+  },
+  "确凿": {
+    "file": "确凿.svg",
+    "src": "images/HSK_3.0/level7/确凿.svg",
+    "caption": "xác thực; không thể chối cãi"
+  },
+  "确诊": {
+    "file": "确诊.svg",
+    "src": "images/HSK_3.0/level7/确诊.svg",
+    "caption": "chẩn đoán xác định; xác nhận mắc bệnh"
+  },
+  "燃放": {
+    "file": "燃放.svg",
+    "src": "images/HSK_3.0/level7/燃放.svg",
+    "caption": "bắn; đốt (pháo hoa)"
+  },
+  "燃气": {
+    "file": "燃气.svg",
+    "src": "images/HSK_3.0/level7/燃气.svg",
+    "caption": "khí đốt; khí gas"
+  },
+  "燃油": {
+    "file": "燃油.svg",
+    "src": "images/HSK_3.0/level7/燃油.svg",
+    "caption": "nhiên liệu đốt; dầu nhiên liệu"
+  },
+  "饶": {
+    "file": "饶.svg",
+    "src": "images/HSK_3.0/level7/饶.svg",
+    "caption": "tha; tha thứ; dung thứ"
+  },
+  "绕行": {
+    "file": "绕行.svg",
+    "src": "images/HSK_3.0/level7/绕行.svg",
+    "caption": "đi đường vòng; chạy vòng quanh"
+  },
+  "绕远儿": {
+    "file": "绕远儿.svg",
+    "src": "images/HSK_3.0/level7/绕远儿.svg",
+    "caption": "đi đường vòng; vòng vèo xa xôi"
+  },
+  "惹": {
+    "file": "惹.svg",
+    "src": "images/HSK_3.0/level7/惹.svg",
+    "caption": "gây; chọc giận; chuốc lấy"
+  },
+  "热潮": {
+    "file": "热潮.svg",
+    "src": "images/HSK_3.0/level7/热潮.svg",
+    "caption": "làn sóng sôi nổi; cao trào; trào lưu"
+  },
+  "热带": {
+    "file": "热带.svg",
+    "src": "images/HSK_3.0/level7/热带.svg",
+    "caption": "nhiệt đới"
+  },
+  "热腾腾": {
+    "file": "热腾腾.svg",
+    "src": "images/HSK_3.0/level7/热腾腾.svg",
+    "caption": "nóng hôi hổi; bốc hơi nghi ngút"
+  },
+  "热销": {
+    "file": "热销.svg",
+    "src": "images/HSK_3.0/level7/热销.svg",
+    "caption": "bán chạy; tiêu thụ mạnh"
+  },
+  "热衷": {
+    "file": "热衷.svg",
+    "src": "images/HSK_3.0/level7/热衷.svg",
+    "caption": "say mê; đam mê; tha thiết"
   }
 };
 

@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Victim character (The one being mocked) -->
+  <g transform="translate(70, 100)">
+    <circle cx="20" cy="20" r="18" fill="#E0E0E0"/>
+    <rect x="5" y="40" width="30" height="60" rx="5" fill="#5DADE2"/>
+    <path d="M10 40 L10 80 M30 40 L30 80" stroke="#5DADE2" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="12" cy="15" r="2" fill="#1A1D24"/>
+    <circle cx="28" cy="15" r="2" fill="#1A1D24"/>
+    <path d="M12 25 Q20 22 28 25" stroke="#1A1D24" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Mocking character (The one pointing/laughing) -->
+  <g transform="translate(140, 80)">
+    <circle cx="20" cy="20" r="18" fill="#F1C40F"/>
+    <rect x="5" y="40" width="30" height="60" rx="5" fill="#E67E22"/>
+    <path d="M35 50 L55 30" stroke="#E67E22" stroke-width="6" stroke-linecap="round"/>
+    <path d="M55 30 L65 25" stroke="#E67E22" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="12" cy="15" r="2" fill="#1A1D24"/>
+    <circle cx="28" cy="15" r="2" fill="#1A1D24"/>
+    <path d="M12 28 Q20 35 28 28" stroke="#1A1D24" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Visual indicator of mocking (Sound/Gesture lines) -->
+  <path d="M130 60 Q135 50 145 55" stroke="#F39C12" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M135 45 Q140 35 150 40" stroke="#F39C12" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>
