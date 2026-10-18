@@ -72,10 +72,31 @@ function setSentenceGameScope(scope) {
   loadNextSentenceGameRound();
 }
 
+function toggleSentenceGameSettings(force) {
+  const filtersEl = document.getElementById('sentenceGameFilters');
+  const btn = document.getElementById('sentenceGameSettingsBtn');
+  if (!filtersEl) return;
+  const willOpen = typeof force === 'boolean' ? force : filtersEl.hidden;
+  filtersEl.hidden = !willOpen;
+  if (btn) {
+    btn.setAttribute('aria-expanded', String(willOpen));
+    btn.classList.toggle('active', willOpen);
+  }
+}
+
 function updateSentenceGamePoolBadge() {
   const badge = document.getElementById('sentencePoolBadge');
-  if (badge) {
-    badge.textContent = `${sentenceGameFilteredPool.length} câu khả dụng`;
+  if (!badge) return;
+  const count = sentenceGameFilteredPool.length;
+  if (sentenceGameLevel === 'all') {
+    badge.textContent = `Tất cả cấp độ · ${count} câu trong kho`;
+  } else {
+    const levelNum = parseInt(sentenceGameLevel.replace('hsk', ''), 10) || 1;
+    if (sentenceGameScope === 'cumulative') {
+      badge.textContent = `Phạm vi: HSK 1–${levelNum} · ${count} câu trong kho`;
+    } else {
+      badge.textContent = `Phạm vi: HSK ${levelNum} · ${count} câu trong kho`;
+    }
   }
 }
 
@@ -83,6 +104,13 @@ function toggleSentenceGamePinyin() {
   sentenceGameShowPinyin = !sentenceGameShowPinyin;
   try { localStorage.setItem('hsk_sentence_pinyin', String(sentenceGameShowPinyin)); } catch (e) {}
   syncSentenceGamePinyinUI();
+  const pyResult = document.getElementById('sentenceResultPy');
+  if (pyResult && sentenceGameCurrentEntry) {
+    pyResult.hidden = !sentenceGameShowPinyin;
+    if (sentenceGameShowPinyin) {
+      pyResult.textContent = sentenceGameCurrentEntry.sentence_py || (sentenceGameCurrentEntry.pinyin_tokens || []).join(' ');
+    }
+  }
   renderSentenceGameBoard();
 }
 
@@ -102,12 +130,16 @@ function toggleSentenceGameFocus(force) {
     sentenceGameFocusMode = !sentenceGameFocusMode;
   }
   document.body.classList.toggle('sentence-game-focus', sentenceGameFocusMode);
+  const icon = document.getElementById('sentenceGameFocusIcon');
+  const label = document.getElementById('sentenceGameFocusLabel');
   const btn = document.getElementById('sentenceGameFocusBtn');
-  if (btn) {
-    btn.classList.toggle('active', sentenceGameFocusMode);
-    btn.innerHTML = sentenceGameFocusMode
-      ? '<span>⛶</span> <span>Thoát tập trung</span>'
-      : '<span>🎯</span> <span>Tập trung</span>';
+  if (icon) icon.textContent = sentenceGameFocusMode ? '⛶' : '🎯';
+  if (label) label.textContent = sentenceGameFocusMode ? 'Thoát tập trung' : 'Tập trung';
+  if (btn) btn.classList.toggle('active', sentenceGameFocusMode);
+
+  // In focus mode, keep settings neatly collapsed so the exercise dominates
+  if (sentenceGameFocusMode) {
+    toggleSentenceGameSettings(false);
   }
   try { localStorage.setItem('hsk_sentence_focus', String(sentenceGameFocusMode)); } catch (e) {}
 }
@@ -192,11 +224,8 @@ function loadNextSentenceGameRound() {
   document.getElementById('sentenceGameMeaning').textContent = entry.meaning || '';
   const levelTag = document.getElementById('sentenceLevelTag');
   if (levelTag) {
-    levelTag.textContent = entry.level_num ? `HSK ${entry.level_num}` : (entry.level || 'HSK').toUpperCase();
-  }
-  const grammarTag = document.getElementById('sentenceGrammarTag');
-  if (grammarTag) {
-    grammarTag.textContent = entry.grammar_point || 'Cấu trúc ngữ pháp';
+    const lvlText = entry.level_num ? `HSK ${entry.level_num}` : (entry.level || 'HSK').toUpperCase();
+    levelTag.textContent = lvlText;
   }
   const distractorTag = document.getElementById('sentenceDistractorTag');
   if (distractorTag) {
@@ -205,24 +234,22 @@ function loadNextSentenceGameRound() {
 
   const counter = document.getElementById('sentenceGameCounter');
   if (counter) {
-    counter.textContent = `Câu ${sentenceGameIdx} / ${sentenceGameFilteredPool.length}`;
+    counter.textContent = `Câu ${sentenceGameIdx}`;
   }
 
-  // Clear feedback & solution
+  // Clear feedback & result card
   const feedbackEl = document.getElementById('sentenceGameFeedback');
   if (feedbackEl) {
     feedbackEl.textContent = '';
     feedbackEl.className = 'sentence-game-feedback';
   }
-  const solutionBox = document.getElementById('sentenceSolutionBox');
-  if (solutionBox) solutionBox.hidden = true;
+  const resultCard = document.getElementById('sentenceResultCard');
+  if (resultCard) resultCard.hidden = true;
 
+  const actionsEl = document.getElementById('sentenceGameActions');
+  if (actionsEl) actionsEl.hidden = false;
   const checkBtn = document.getElementById('sentenceGameCheckBtn');
   if (checkBtn) checkBtn.hidden = false;
-  const nextBtn = document.getElementById('sentenceGameNextBtn');
-  if (nextBtn) nextBtn.hidden = true;
-  const speakBtn = document.getElementById('sentenceGameSpeakBtn');
-  if (speakBtn) speakBtn.hidden = true;
 
   renderSentenceGameBoard();
 }
@@ -232,14 +259,25 @@ function renderSentenceGameBoard() {
   if (!entry) return;
   const slotsEl = document.getElementById('sentenceGameSlots');
   const bankEl = document.getElementById('sentenceGameBank');
+  const bankWrapper = document.getElementById('sentenceBankWrapper');
+  const bankTitle = document.getElementById('sentenceBankTitle');
   if (!slotsEl || !bankEl) return;
 
   const targetCount = (entry.zh_tokens || []).length;
 
+  // Update container state classes
+  if (sentenceGameSolved) {
+    slotsEl.className = 'sentence-game-slots is-correct';
+  } else if (sentenceGameSlots.length === 0) {
+    slotsEl.className = 'sentence-game-slots is-empty';
+  } else {
+    slotsEl.className = 'sentence-game-slots has-items';
+  }
+
   // Update reset button state
   const resetBtn = document.getElementById('sentenceGameResetBtn');
   if (resetBtn) {
-    const hasPlaced = sentenceGameSlots.length > 0;
+    const hasPlaced = sentenceGameSlots.length > 0 && !sentenceGameSolved;
     resetBtn.disabled = !hasPlaced;
     resetBtn.classList.toggle('has-items', hasPlaced);
   }
@@ -258,45 +296,70 @@ function renderSentenceGameBoard() {
     }
     const rubyPy = sentenceGameShowPinyin && filledToken.py ? `<span class="chip-ruby-py">${escapeHtml(filledToken.py)}</span>` : '';
     const distractorClass = filledToken.hasDistractorMark ? ' has-distractor' : '';
+    const disabledAttr = sentenceGameSolved ? ' disabled' : '';
     return `
-      <button class="sentence-slot filled${distractorClass}" type="button"
-        draggable="true"
+      <button class="sentence-slot filled${distractorClass}" type="button"${disabledAttr}
+        draggable="${!sentenceGameSolved}"
         ondragstart="handleSlotDragStart(event, ${slotIdx})"
         ondragend="handleDragEnd(event)"
         ondragover="handleSlotDragOver(event)"
         ondragleave="handleSlotDragLeave(event)"
         ondrop="handleSlotDrop(event, ${slotIdx})"
         onclick="removeSentenceGameSlot(${slotIdx})"
-        title="Nhấn để gỡ từ này">
+        title="${sentenceGameSolved ? '' : 'Nhấn để gỡ từ này'}">
         ${rubyPy}
         <span class="chip-hanzi">${escapeHtml(filledToken.tok)}</span>
       </button>`;
   }).join('');
 
-  // Render word bank (available tokens + ghost placeholders for used ones)
+  // Render word bank
   const usedIds = new Set(sentenceGameSlots.map(s => s.id));
-  bankEl.innerHTML = sentenceGameBankTokens
-    .map(item => {
-      const isUsed = usedIds.has(item.id);
-      const rubyPy = sentenceGameShowPinyin && item.py ? `<span class="chip-ruby-py">${escapeHtml(item.py)}</span>` : '';
-      if (isUsed) {
+
+  if (sentenceGameSolved) {
+    // Check for unused distractors
+    const unusedDistractors = sentenceGameBankTokens.filter(t => t.isDistractor && !usedIds.has(t.id));
+    if (unusedDistractors.length > 0) {
+      if (bankWrapper) bankWrapper.hidden = false;
+      if (bankTitle) bankTitle.textContent = 'Từ bẫy không dùng:';
+      bankEl.innerHTML = `
+        <div class="sentence-bank-distractors-compact">
+          <span class="distractor-compact-label">Từ không dùng:</span>
+          ${unusedDistractors.map(d => `
+            <span class="distractor-compact-pill">
+              <span class="chip-hanzi">${escapeHtml(d.tok)}</span>
+              ${sentenceGameShowPinyin && d.py ? `<span class="chip-py">(${escapeHtml(d.py)})</span>` : ''}
+            </span>
+          `).join(' ')}
+        </div>`;
+    } else {
+      if (bankWrapper) bankWrapper.hidden = true;
+    }
+  } else {
+    if (bankWrapper) bankWrapper.hidden = false;
+    if (bankTitle) bankTitle.textContent = 'Kho từ vựng (Nhấn hoặc kéo thẻ vào ô trên):';
+    bankEl.innerHTML = sentenceGameBankTokens
+      .map(item => {
+        const isUsed = usedIds.has(item.id);
+        const rubyPy = sentenceGameShowPinyin && item.py ? `<span class="chip-ruby-py">${escapeHtml(item.py)}</span>` : '';
+        if (isUsed) {
+          return `
+            <div class="sentence-chip is-used" aria-hidden="true" title="Từ này đã được xếp vào câu">
+              ${rubyPy}
+              <span class="chip-hanzi">${escapeHtml(item.tok)}</span>
+            </div>`;
+        }
         return `
-          <div class="sentence-chip is-used" aria-hidden="true" title="Từ này đã được xếp vào câu">
+          <button class="sentence-chip" type="button"
+            draggable="true"
+            ondragstart="handleTokenDragStart(event, '${item.id}')"
+            ondragend="handleDragEnd(event)"
+            onclick="pickSentenceGameToken('${item.id}')"
+            title="Nhấn hoặc kéo vào ô ghép câu">
             ${rubyPy}
             <span class="chip-hanzi">${escapeHtml(item.tok)}</span>
-          </div>`;
-      }
-      return `
-        <button class="sentence-chip" type="button"
-          draggable="true"
-          ondragstart="handleTokenDragStart(event, '${item.id}')"
-          ondragend="handleDragEnd(event)"
-          onclick="pickSentenceGameToken('${item.id}')"
-          title="Nhấn hoặc kéo vào ô ghép câu">
-          ${rubyPy}
-          <span class="chip-hanzi">${escapeHtml(item.tok)}</span>
-        </button>`;
-    }).join('');
+          </button>`;
+      }).join('');
+  }
 }
 
 function pickSentenceGameToken(tokenId) {
@@ -414,21 +477,47 @@ function checkSentenceGameAnswer() {
 
   if (playerText === targetText) {
     sentenceGameSolved = true;
-    feedbackEl.textContent = '🎉 Chính xác! Bạn đã sắp xếp câu hoàn toàn đúng.';
-    feedbackEl.className = 'sentence-game-feedback correct';
+    renderSentenceGameBoard();
 
-    const solutionBox = document.getElementById('sentenceSolutionBox');
-    if (solutionBox) {
-      solutionBox.hidden = false;
-      document.getElementById('sentenceSolutionZh').textContent = entry.sentence_zh || targetText;
-      document.getElementById('sentenceSolutionPy').textContent = entry.sentence_py || (entry.pinyin_tokens || []).join(' ');
-      document.getElementById('sentenceSolutionGrammar').textContent = '💡 ' + (entry.grammar_point || 'Cấu trúc ngữ pháp chuẩn');
+    // Clear and hide in-progress feedback message
+    if (feedbackEl) {
+      feedbackEl.textContent = '';
+      feedbackEl.className = 'sentence-game-feedback';
     }
 
-    document.getElementById('sentenceGameCheckBtn').hidden = true;
-    document.getElementById('sentenceGameNextBtn').hidden = false;
-    const speakBtn = document.getElementById('sentenceGameSpeakBtn');
-    if (speakBtn) speakBtn.hidden = false;
+    // Hide in-progress action buttons
+    const actionsEl = document.getElementById('sentenceGameActions');
+    if (actionsEl) actionsEl.hidden = true;
+
+    // Show consolidated result card
+    const resultCard = document.getElementById('sentenceResultCard');
+    if (resultCard) {
+      resultCard.hidden = false;
+      const zhEl = document.getElementById('sentenceResultZh');
+      const pyEl = document.getElementById('sentenceResultPy');
+      if (zhEl) zhEl.textContent = entry.sentence_zh || targetText;
+      if (pyEl) {
+        pyEl.textContent = entry.sentence_py || (entry.pinyin_tokens || []).join(' ');
+        pyEl.hidden = !sentenceGameShowPinyin;
+      }
+
+      const disclosure = document.getElementById('sentenceGrammarDisclosure');
+      const grammarContent = document.getElementById('sentenceGrammarContent');
+      if (disclosure && grammarContent) {
+        if (entry.grammar_point) {
+          disclosure.hidden = false;
+          disclosure.open = false; // Collapsed by default to save height
+          grammarContent.innerHTML = `<p class="grammar-point-text"><strong>Cấu trúc:</strong> ${escapeHtml(entry.grammar_point)}</p>`;
+        } else {
+          disclosure.hidden = true;
+        }
+      }
+
+      const nextBtn = document.getElementById('sentenceResultNextBtn');
+      if (nextBtn) {
+        setTimeout(() => nextBtn.focus(), 60);
+      }
+    }
 
     speakCurrentSentence();
   } else {
@@ -460,7 +549,7 @@ function revealSentenceHint() {
 function speakCurrentSentence() {
   const entry = sentenceGameCurrentEntry;
   if (!entry || !entry.sentence_zh) return;
-  const speakBtn = document.getElementById('sentenceGameSpeakBtn');
+  const speakBtn = document.getElementById('sentenceResultSpeakBtn') || document.getElementById('sentenceGameSpeakBtn');
   if (typeof speakText === 'function') {
     const rate = typeof exampleSpeechSpeed !== 'undefined' ? exampleSpeechSpeed : 0.8;
     speakText(entry.sentence_zh, speakBtn, rate);
@@ -472,3 +561,19 @@ function escapeHtml(value) {
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
   })[character]);
 }
+
+// Keyboard shortcuts: Enter to check answer or advance to next sentence
+window.addEventListener('keydown', (e) => {
+  const screen = document.getElementById('screenSentenceGame');
+  if (!screen || screen.style.display === 'none') return;
+  if (e.target && ['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName)) return;
+
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    if (sentenceGameSolved) {
+      loadNextSentenceGameRound();
+    } else {
+      checkSentenceGameAnswer();
+    }
+  }
+});
