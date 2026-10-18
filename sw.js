@@ -1,4 +1,4 @@
-const APP_VERSION = '1.2.1';
+const APP_VERSION = '1.2.2';
 const ASSET_VERSION = APP_VERSION;
 const CACHE_NAME = 'hsk-flashcards-v' + ASSET_VERSION;
 const FSRS_CDN_URL = 'https://cdn.jsdelivr.net/npm/ts-fsrs@5.4.1/dist/index.umd.js';
@@ -34,7 +34,7 @@ const PRECACHE_ASSET_URLS = [
   './assets/js/listening-practice.js?v=' + ASSET_VERSION,
 ].map(path => (path.startsWith('http') ? path : new URL(path, self.registration.scope).href));
 // Vocabulary/audio JSON lives in its own cache so app deploys don't force every level to re-download.
-const DATA_CACHE_NAME = 'hsk-data-v8';
+const DATA_CACHE_NAME = 'hsk-data-v9';
 const DATA_PATH = new URL('./database/', self.registration.scope).pathname;
 
 self.addEventListener('install', event => {

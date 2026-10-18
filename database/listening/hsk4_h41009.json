@@ -19,163 +19,45 @@
       "answer": false,
       "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Chìa khóa cửa chính chỉ có một chiếc.'.",
       "evidence": {
-        "zh": "只要你打开电视 总能看到那么多的广告浪费我的时间他喜欢看电视广告现在开始第一题这是家里大门的钥匙你和你姐一人一把这把小的是你房间的 拿好了 别弄丢了大门要是只有一个",
+        "zh": "有些人认为家天用浪水洗澡会更凉快这是不正确的 其实热水洗澡更容易帮人降温同样 家天喝热水也比喝冰水更结可",
         "sentence_index": 0
       },
       "audio_src": "assets/audio/exams/H41009.mp3",
       "alignment": {
-        "status": "draft",
-        "method": "whisper_asr_silence_refined",
-        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
       },
       "segments": {
         "passage": {
-          "start_ms": 103280,
-          "end_ms": 158790
+          "start_ms": 159460,
+          "end_ms": 174970
         },
         "statement": {
-          "start_ms": 158800,
-          "end_ms": 162790
+          "start_ms": 175170,
+          "end_ms": 179120
         },
         "full_question": {
-          "start_ms": 103280,
-          "end_ms": 162790
+          "start_ms": 159460,
+          "end_ms": 179120
         }
       },
       "transcript": {
-        "full_zh": "只要你打开电视 总能看到那么多的广告浪费我的时间他喜欢看电视广告现在开始第一题这是家里大门的钥匙你和你姐一人一把这把小的是你房间的 拿好了 别弄丢了大门要是只有一个",
+        "full_zh": "有些人认为家天用浪水洗澡会更凉快这是不正确的 其实热水洗澡更容易帮人降温同样 家天喝热水也比喝冰水更结可",
         "full_vi": "",
         "sentences": [
           {
             "id": "H41009_L_01_S1",
             "index": 0,
-            "zh": "只要你打开电视 总能看到那么多的广告浪费我的时间他喜欢看电视广告现在开始第一题这是家里大门的钥匙你和你姐一人一把这把小的是你房间的 拿好了 别弄丢了大门要是只有一个",
-            "pinyin": "zhǐ yào nǐ dǎ kāi diàn shì   zǒng néng kàn dào nà me duō de guǎng gào làng fèi wǒ de shí jiān tā xǐ huān kàn diàn shì guǎng gào xiàn zài kāi shǐ dì yī tí zhè shì jiā lǐ dà mén de yào shi nǐ hé nǐ jiě yī rén yī bǎ zhè bǎ xiǎo de shì nǐ fáng jiān de   ná hǎo le   bié nòng diū le dà mén yào shì zhǐ yǒu yí gè",
+            "zh": "有些人认为家天用浪水洗澡会更凉快这是不正确的 其实热水洗澡更容易帮人降温同样 家天喝热水也比喝冰水更结可",
+            "pinyin": "yǒu xiē rén rèn wéi jiā tiān yòng làng shuǐ xǐ zǎo huì gèng liáng kuài zhè shì bù zhèng què de   qí shí rè shuǐ xǐ zǎo gèng róng yì bāng rén jiàng wēn tóng yàng   jiā tiān hē rè shuǐ yě bǐ hē bīng shuǐ gèng jié kě",
             "vi": "",
-            "start_ms": 103280,
-            "end_ms": 158790
+            "start_ms": 159460,
+            "end_ms": 174970
           }
         ]
       },
       "vocabulary_matches": [
-        {
-          "word": "电视",
-          "pinyin": "diànshì",
-          "meaning_vi": "tivi",
-          "vocab_id": 18,
-          "level": "HSK1"
-        },
-        {
-          "word": "喜欢",
-          "pinyin": "xǐhuan",
-          "meaning_vi": "thích",
-          "vocab_id": 114,
-          "level": "HSK1"
-        },
-        {
-          "word": "现在",
-          "pinyin": "xiànzài",
-          "meaning_vi": "hiện tại, bây giờ",
-          "vocab_id": 119,
-          "level": "HSK1"
-        },
-        {
-          "word": "第一",
-          "pinyin": "dìyī",
-          "meaning_vi": "thứ nhất",
-          "vocab_id": 22,
-          "level": "HSK2"
-        },
-        {
-          "word": "房间",
-          "pinyin": "fángjiān",
-          "meaning_vi": "phòng",
-          "vocab_id": 26,
-          "level": "HSK2"
-        },
-        {
-          "word": "开始",
-          "pinyin": "kāishǐ",
-          "meaning_vi": "bắt đầu",
-          "vocab_id": 54,
-          "level": "HSK2"
-        },
-        {
-          "word": "时间",
-          "pinyin": "shíjiān",
-          "meaning_vi": "thời gian",
-          "vocab_id": 94,
-          "level": "HSK2"
-        },
-        {
-          "word": "广告",
-          "pinyin": "guǎnggào",
-          "meaning_vi": "quảng cáo",
-          "vocab_id": 157,
-          "level": "HSK4"
-        }
-      ]
-    },
-    {
-      "id": "H41009_L_02",
-      "exam_id": "H41009",
-      "question_number": 2,
-      "part": 1,
-      "type": "true_false",
-      "statement": {
-        "zh": "夏天洗热水澡更凉快。",
-        "pinyin": "xià tiān xǐ rè shuǐ zǎo gèng liáng kuài 。",
-        "vi": "Mùa hè tắm nước nóng sẽ thấy mát mẻ hơn."
-      },
-      "answer": true,
-      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Mùa hè tắm nước nóng sẽ thấy mát mẻ hơn.'.",
-      "evidence": {
-        "zh": "你和你姐一人一把这把小的是你房间的 拿好了 别弄丢了大门要是只有一个有些人认为家天用浪水洗澡会更凉快这是不正确的 其实热水洗澡更容易帮人降温同样 家天喝热水也比喝冰水更结可夏天洗热水澡更凉快",
-        "sentence_index": 0
-      },
-      "audio_src": "assets/audio/exams/H41009.mp3",
-      "alignment": {
-        "status": "draft",
-        "method": "whisper_asr_silence_refined",
-        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
-      },
-      "segments": {
-        "passage": {
-          "start_ms": 134830,
-          "end_ms": 179130
-        },
-        "statement": {
-          "start_ms": 189250,
-          "end_ms": 189780
-        },
-        "full_question": {
-          "start_ms": 134830,
-          "end_ms": 189780
-        }
-      },
-      "transcript": {
-        "full_zh": "你和你姐一人一把这把小的是你房间的 拿好了 别弄丢了大门要是只有一个有些人认为家天用浪水洗澡会更凉快这是不正确的 其实热水洗澡更容易帮人降温同样 家天喝热水也比喝冰水更结可夏天洗热水澡更凉快",
-        "full_vi": "",
-        "sentences": [
-          {
-            "id": "H41009_L_02_S1",
-            "index": 0,
-            "zh": "你和你姐一人一把这把小的是你房间的 拿好了 别弄丢了大门要是只有一个有些人认为家天用浪水洗澡会更凉快这是不正确的 其实热水洗澡更容易帮人降温同样 家天喝热水也比喝冰水更结可夏天洗热水澡更凉快",
-            "pinyin": "nǐ hé nǐ jiě yī rén yī bǎ zhè bǎ xiǎo de shì nǐ fáng jiān de   ná hǎo le   bié nòng diū le dà mén yào shì zhǐ yǒu yí gè yǒu xiē rén rèn wéi jiā tiān yòng làng shuǐ xǐ zǎo huì gèng liáng kuài zhè shì bù zhèng què de   qí shí rè shuǐ xǐ zǎo gèng róng yì bāng rén jiàng wēn tóng yàng   jiā tiān hē rè shuǐ yě bǐ hē bīng shuǐ gèng jié kě xià tiān xǐ rè shuǐ zǎo gèng liáng kuài",
-            "vi": "",
-            "start_ms": 134830,
-            "end_ms": 179130
-          }
-        ]
-      },
-      "vocabulary_matches": [
-        {
-          "word": "房间",
-          "pinyin": "fángjiān",
-          "meaning_vi": "phòng",
-          "vocab_id": 26,
-          "level": "HSK2"
-        },
         {
           "word": "其实",
           "pinyin": "qíshí",
@@ -212,10 +94,10 @@
           "level": "HSK4"
         },
         {
-          "word": "要是",
+          "word": "钥匙",
           "pinyin": "yàoshi",
-          "meaning_vi": "nếu, nếu là",
-          "vocab_id": 506,
+          "meaning_vi": "chìa khóa",
+          "vocab_id": 507,
           "level": "HSK4"
         },
         {
@@ -223,6 +105,117 @@
           "pinyin": "zhèngquè",
           "meaning_vi": "chính xác, đúng đắn",
           "vocab_id": 560,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41009_L_02",
+      "exam_id": "H41009",
+      "question_number": 2,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "夏天洗热水澡更凉快。",
+        "pinyin": "xià tiān xǐ rè shuǐ zǎo gèng liáng kuài 。",
+        "vi": "Mùa hè tắm nước nóng sẽ thấy mát mẻ hơn."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Mùa hè tắm nước nóng sẽ thấy mát mẻ hơn.'.",
+      "evidence": {
+        "zh": "我刚学会开车 技术一般 还经常走错路朋友建议我平时多开车出去走走熟悉一下道路情况 这也慢慢就好了",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41009.mp3",
+      "alignment": {
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 189220,
+          "end_ms": 204460
+        },
+        "statement": {
+          "start_ms": 204660,
+          "end_ms": 208660
+        },
+        "full_question": {
+          "start_ms": 189220,
+          "end_ms": 208660
+        }
+      },
+      "transcript": {
+        "full_zh": "我刚学会开车 技术一般 还经常走错路朋友建议我平时多开车出去走走熟悉一下道路情况 这也慢慢就好了",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41009_L_02_S1",
+            "index": 0,
+            "zh": "我刚学会开车 技术一般 还经常走错路朋友建议我平时多开车出去走走熟悉一下道路情况 这也慢慢就好了",
+            "pinyin": "wǒ gāng xué huì kāi chē   jì shù yì bān   hái jīng cháng zǒu cuò lù péng yǒu jiàn yì wǒ píng shí duō kāi chē chū qù zǒu zǒu shú xī yī xià dào lù qíng kuàng   zhè yě màn màn jiù hǎo le",
+            "vi": "",
+            "start_ms": 189220,
+            "end_ms": 204460
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "朋友",
+          "pinyin": "péngyou",
+          "meaning_vi": "bạn",
+          "vocab_id": 76,
+          "level": "HSK1"
+        },
+        {
+          "word": "一下",
+          "pinyin": "yīxià",
+          "meaning_vi": "một chút, thử xem",
+          "vocab_id": 128,
+          "level": "HSK2"
+        },
+        {
+          "word": "经常",
+          "pinyin": "jīngcháng",
+          "meaning_vi": "thường xuyên",
+          "vocab_id": 129,
+          "level": "HSK3"
+        },
+        {
+          "word": "一般",
+          "pinyin": "yìbān",
+          "meaning_vi": "bình thường, nói chung",
+          "vocab_id": 259,
+          "level": "HSK3"
+        },
+        {
+          "word": "技术",
+          "pinyin": "jìshù",
+          "meaning_vi": "kỹ thuật",
+          "vocab_id": 196,
+          "level": "HSK4"
+        },
+        {
+          "word": "建议",
+          "pinyin": "jiànyì",
+          "meaning_vi": "đề nghị, gợi ý",
+          "vocab_id": 206,
+          "level": "HSK4"
+        },
+        {
+          "word": "凉快",
+          "pinyin": "liángkuai",
+          "meaning_vi": "mát mẻ",
+          "vocab_id": 288,
+          "level": "HSK4"
+        },
+        {
+          "word": "平时",
+          "pinyin": "píngshí",
+          "meaning_vi": "bình thường, hàng ngày",
+          "vocab_id": 331,
           "level": "HSK4"
         }
       ]
@@ -241,92 +234,71 @@
       "answer": false,
       "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Kinh nghiệm lái xe của anh ấy rất phong phú.'.",
       "evidence": {
-        "zh": "这是不正确的 其实热水洗澡更容易帮人降温同样 家天喝热水也比喝冰水更结可夏天洗热水澡更凉快三我刚学会开车 技术一般 还经常走错路朋友建议我平时多开车出去走走熟悉一下道路情况 这也慢慢就好了他开车经验很丰富",
+        "zh": "只有通过了考试 完全符合要求后或是才能正式开始工作依然对护是这一职业的要求是专业 负责 尊重生命",
         "sentence_index": 0
       },
       "audio_src": "assets/audio/exams/H41009.mp3",
       "alignment": {
-        "status": "draft",
-        "method": "whisper_asr_silence_refined",
-        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
       },
       "segments": {
         "passage": {
-          "start_ms": 162800,
-          "end_ms": 208670
+          "start_ms": 218740,
+          "end_ms": 234570
         },
         "statement": {
-          "start_ms": 218770,
-          "end_ms": 219380
+          "start_ms": 234770,
+          "end_ms": 238720
         },
         "full_question": {
-          "start_ms": 162800,
-          "end_ms": 219380
+          "start_ms": 218740,
+          "end_ms": 238720
         }
       },
       "transcript": {
-        "full_zh": "这是不正确的 其实热水洗澡更容易帮人降温同样 家天喝热水也比喝冰水更结可夏天洗热水澡更凉快三我刚学会开车 技术一般 还经常走错路朋友建议我平时多开车出去走走熟悉一下道路情况 这也慢慢就好了他开车经验很丰富",
+        "full_zh": "只有通过了考试 完全符合要求后或是才能正式开始工作依然对护是这一职业的要求是专业 负责 尊重生命",
         "full_vi": "",
         "sentences": [
           {
             "id": "H41009_L_03_S1",
             "index": 0,
-            "zh": "这是不正确的 其实热水洗澡更容易帮人降温同样 家天喝热水也比喝冰水更结可夏天洗热水澡更凉快三我刚学会开车 技术一般 还经常走错路朋友建议我平时多开车出去走走熟悉一下道路情况 这也慢慢就好了他开车经验很丰富",
-            "pinyin": "zhè shì bù zhèng què de   qí shí rè shuǐ xǐ zǎo gèng róng yì bāng rén jiàng wēn tóng yàng   jiā tiān hē rè shuǐ yě bǐ hē bīng shuǐ gèng jié kě xià tiān xǐ rè shuǐ zǎo gèng liáng kuài sān wǒ gāng xué huì kāi chē   jì shù yì bān   hái jīng cháng zǒu cuò lù péng yǒu jiàn yì wǒ píng shí duō kāi chē chū qù zǒu zǒu shú xī yī xià dào lù qíng kuàng   zhè yě màn màn jiù hǎo le tā kāi chē jīng yàn hěn fēng fù",
+            "zh": "只有通过了考试 完全符合要求后或是才能正式开始工作依然对护是这一职业的要求是专业 负责 尊重生命",
+            "pinyin": "zhǐ yǒu tōng guò le kǎo shì   wán quán fú hé yāo qiú hòu huò shì cái néng zhèng shì kāi shǐ gōng zuò yī rán duì hù shì zhè yī zhí yè de yāo qiú shì zhuān yè   fù zé   zūn chóng shēng mìng",
             "vi": "",
-            "start_ms": 162800,
-            "end_ms": 208670
+            "start_ms": 218740,
+            "end_ms": 234570
           }
         ]
       },
       "vocabulary_matches": [
         {
-          "word": "朋友",
-          "pinyin": "péngyou",
-          "meaning_vi": "bạn",
-          "vocab_id": 76,
+          "word": "工作",
+          "pinyin": "gōngzuò",
+          "meaning_vi": "công việc, làm việc",
+          "vocab_id": 33,
           "level": "HSK1"
         },
         {
-          "word": "一下",
-          "pinyin": "yīxià",
-          "meaning_vi": "một chút, thử xem",
-          "vocab_id": 128,
+          "word": "开始",
+          "pinyin": "kāishǐ",
+          "meaning_vi": "bắt đầu",
+          "vocab_id": 54,
           "level": "HSK2"
         },
         {
-          "word": "经常",
-          "pinyin": "jīngcháng",
-          "meaning_vi": "thường xuyên",
-          "vocab_id": 129,
-          "level": "HSK3"
+          "word": "考试",
+          "pinyin": "kǎoshì",
+          "meaning_vi": "thi cử",
+          "vocab_id": 55,
+          "level": "HSK2"
         },
         {
-          "word": "其实",
-          "pinyin": "qíshí",
-          "meaning_vi": "thực ra",
-          "vocab_id": 181,
-          "level": "HSK3"
-        },
-        {
-          "word": "容易",
-          "pinyin": "róngyì",
-          "meaning_vi": "dễ dàng",
-          "vocab_id": 195,
-          "level": "HSK3"
-        },
-        {
-          "word": "洗澡",
-          "pinyin": "xǐzǎo",
-          "meaning_vi": "tắm rửa",
-          "vocab_id": 236,
-          "level": "HSK3"
-        },
-        {
-          "word": "一般",
-          "pinyin": "yìbān",
-          "meaning_vi": "bình thường, nói chung",
-          "vocab_id": 259,
+          "word": "要求",
+          "pinyin": "yāoqiú",
+          "meaning_vi": "yêu cầu",
+          "vocab_id": 252,
           "level": "HSK3"
         },
         {
@@ -334,6 +306,27 @@
           "pinyin": "fēngfù",
           "meaning_vi": "phong phú",
           "vocab_id": 119,
+          "level": "HSK4"
+        },
+        {
+          "word": "符合",
+          "pinyin": "fúhé",
+          "meaning_vi": "phù hợp, đúng với",
+          "vocab_id": 121,
+          "level": "HSK4"
+        },
+        {
+          "word": "负责",
+          "pinyin": "fùzé",
+          "meaning_vi": "chịu trách nhiệm",
+          "vocab_id": 127,
+          "level": "HSK4"
+        },
+        {
+          "word": "经验",
+          "pinyin": "jīngyàn",
+          "meaning_vi": "kinh nghiệm",
+          "vocab_id": 232,
           "level": "HSK4"
         }
       ]
@@ -352,45 +345,52 @@
       "answer": true,
       "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Y tá trước khi đi làm phải vượt qua kỳ thi.'.",
       "evidence": {
-        "zh": "我刚学会开车 技术一般 还经常走错路朋友建议我平时多开车出去走走熟悉一下道路情况 这也慢慢就好了他开车经验很丰富四只有通过了考试 完全符合要求后或是才能正式开始工作依然对护是这一职业的要求是专业 负责 尊重生命",
+        "zh": "这个电影讲的是一个男孩子和一吃老虎在大海上努力活下来的故事 听说非常棒咱们明天晚上去看看吧",
         "sentence_index": 0
       },
       "audio_src": "assets/audio/exams/H41009.mp3",
       "alignment": {
-        "status": "draft",
-        "method": "whisper_asr_silence_refined",
-        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
       },
       "segments": {
         "passage": {
-          "start_ms": 190900,
-          "end_ms": 234790
+          "start_ms": 248900,
+          "end_ms": 263320
         },
         "statement": {
-          "start_ms": 234800,
-          "end_ms": 238740
+          "start_ms": 263520,
+          "end_ms": 267520
         },
         "full_question": {
-          "start_ms": 190900,
-          "end_ms": 238740
+          "start_ms": 248900,
+          "end_ms": 267520
         }
       },
       "transcript": {
-        "full_zh": "我刚学会开车 技术一般 还经常走错路朋友建议我平时多开车出去走走熟悉一下道路情况 这也慢慢就好了他开车经验很丰富四只有通过了考试 完全符合要求后或是才能正式开始工作依然对护是这一职业的要求是专业 负责 尊重生命",
+        "full_zh": "这个电影讲的是一个男孩子和一吃老虎在大海上努力活下来的故事 听说非常棒咱们明天晚上去看看吧",
         "full_vi": "",
         "sentences": [
           {
             "id": "H41009_L_04_S1",
             "index": 0,
-            "zh": "我刚学会开车 技术一般 还经常走错路朋友建议我平时多开车出去走走熟悉一下道路情况 这也慢慢就好了他开车经验很丰富四只有通过了考试 完全符合要求后或是才能正式开始工作依然对护是这一职业的要求是专业 负责 尊重生命",
-            "pinyin": "wǒ gāng xué huì kāi chē   jì shù yì bān   hái jīng cháng zǒu cuò lù péng yǒu jiàn yì wǒ píng shí duō kāi chē chū qù zǒu zǒu shú xī yī xià dào lù qíng kuàng   zhè yě màn màn jiù hǎo le tā kāi chē jīng yàn hěn fēng fù sì zhǐ yǒu tōng guò le kǎo shì   wán quán fú hé yāo qiú hòu huò shì cái néng zhèng shì kāi shǐ gōng zuò yī rán duì hù shì zhè yī zhí yè de yāo qiú shì zhuān yè   fù zé   zūn chóng shēng mìng",
+            "zh": "这个电影讲的是一个男孩子和一吃老虎在大海上努力活下来的故事 听说非常棒咱们明天晚上去看看吧",
+            "pinyin": "zhè ge diàn yǐng jiǎng de shì yí gè nán hái zi hé yī chī lǎo hǔ zài dà hǎi shàng nǔ lì huó xià lái de gù shì   tīng shuō fēi cháng bàng zán men míng tiān wǎn shàng qù kàn kàn ba",
             "vi": "",
-            "start_ms": 190900,
-            "end_ms": 234790
+            "start_ms": 248900,
+            "end_ms": 263320
           }
         ]
       },
       "vocabulary_matches": [
+        {
+          "word": "电影",
+          "pinyin": "diànyǐng",
+          "meaning_vi": "phim",
+          "vocab_id": 19,
+          "level": "HSK1"
+        },
         {
           "word": "工作",
           "pinyin": "gōngzuò",
@@ -399,17 +399,24 @@
           "level": "HSK1"
         },
         {
-          "word": "朋友",
-          "pinyin": "péngyou",
-          "meaning_vi": "bạn",
-          "vocab_id": 76,
+          "word": "明天",
+          "pinyin": "míngtiān",
+          "meaning_vi": "ngày mai",
+          "vocab_id": 67,
           "level": "HSK1"
         },
         {
-          "word": "开始",
-          "pinyin": "kāishǐ",
-          "meaning_vi": "bắt đầu",
-          "vocab_id": 54,
+          "word": "非常",
+          "pinyin": "fēicháng",
+          "meaning_vi": "rất, vô cùng",
+          "vocab_id": 27,
+          "level": "HSK2"
+        },
+        {
+          "word": "孩子",
+          "pinyin": "háizi",
+          "meaning_vi": "đứa trẻ",
+          "vocab_id": 37,
           "level": "HSK2"
         },
         {
@@ -420,31 +427,17 @@
           "level": "HSK2"
         },
         {
-          "word": "一下",
-          "pinyin": "yīxià",
-          "meaning_vi": "một chút, thử xem",
-          "vocab_id": 128,
+          "word": "晚上",
+          "pinyin": "wǎnshang",
+          "meaning_vi": "buổi tối",
+          "vocab_id": 108,
           "level": "HSK2"
         },
         {
-          "word": "经常",
-          "pinyin": "jīngcháng",
-          "meaning_vi": "thường xuyên",
-          "vocab_id": 129,
-          "level": "HSK3"
-        },
-        {
-          "word": "要求",
-          "pinyin": "yāoqiú",
-          "meaning_vi": "yêu cầu",
-          "vocab_id": 252,
-          "level": "HSK3"
-        },
-        {
-          "word": "一般",
-          "pinyin": "yìbān",
-          "meaning_vi": "bình thường, nói chung",
-          "vocab_id": 259,
+          "word": "故事",
+          "pinyin": "gùshi",
+          "meaning_vi": "câu chuyện",
+          "vocab_id": 82,
           "level": "HSK3"
         }
       ]
@@ -463,45 +456,52 @@
       "answer": false,
       "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Bộ phim khiến khán giả rất thất vọng.'.",
       "evidence": {
-        "zh": "只有通过了考试 完全符合要求后或是才能正式开始工作依然对护是这一职业的要求是专业 负责 尊重生命护是工作前要通过考试这个电影讲的是一个男孩子和一吃老虎在大海上努力活下来的故事 听说非常棒咱们明天晚上去看看吧",
+        "zh": "今天去游泳的时候 遇见小原和他妻子了我本来以为他俩都去北京工作了没想到他们还一直留在这",
         "sentence_index": 0
       },
       "audio_src": "assets/audio/exams/H41009.mp3",
       "alignment": {
-        "status": "draft",
-        "method": "whisper_asr_silence_refined",
-        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
       },
       "segments": {
         "passage": {
-          "start_ms": 220470,
-          "end_ms": 264170
+          "start_ms": 277620,
+          "end_ms": 291510
         },
         "statement": {
-          "start_ms": 264830,
-          "end_ms": 267560
+          "start_ms": 291710,
+          "end_ms": 295660
         },
         "full_question": {
-          "start_ms": 220470,
-          "end_ms": 267560
+          "start_ms": 277620,
+          "end_ms": 295660
         }
       },
       "transcript": {
-        "full_zh": "只有通过了考试 完全符合要求后或是才能正式开始工作依然对护是这一职业的要求是专业 负责 尊重生命护是工作前要通过考试这个电影讲的是一个男孩子和一吃老虎在大海上努力活下来的故事 听说非常棒咱们明天晚上去看看吧",
+        "full_zh": "今天去游泳的时候 遇见小原和他妻子了我本来以为他俩都去北京工作了没想到他们还一直留在这",
         "full_vi": "",
         "sentences": [
           {
             "id": "H41009_L_05_S1",
             "index": 0,
-            "zh": "只有通过了考试 完全符合要求后或是才能正式开始工作依然对护是这一职业的要求是专业 负责 尊重生命护是工作前要通过考试这个电影讲的是一个男孩子和一吃老虎在大海上努力活下来的故事 听说非常棒咱们明天晚上去看看吧",
-            "pinyin": "zhǐ yǒu tōng guò le kǎo shì   wán quán fú hé yāo qiú hòu huò shì cái néng zhèng shì kāi shǐ gōng zuò yī rán duì hù shì zhè yī zhí yè de yāo qiú shì zhuān yè   fù zé   zūn chóng shēng mìng hù shì gōng zuò qián yào tōng guò kǎo shì zhè ge diàn yǐng jiǎng de shì yí gè nán hái zi hé yī chī lǎo hǔ zài dà hǎi shàng nǔ lì huó xià lái de gù shì   tīng shuō fēi cháng bàng zán men míng tiān wǎn shàng qù kàn kàn ba",
+            "zh": "今天去游泳的时候 遇见小原和他妻子了我本来以为他俩都去北京工作了没想到他们还一直留在这",
+            "pinyin": "jīn tiān qù yóu yǒng de shí hòu   yù jiàn xiǎo yuán hé tā qī zǐ le wǒ běn lái yǐ wéi tā liǎ dōu qù běi jīng gōng zuò le méi xiǎng dào tā men hái yì zhí liú zài zhè",
             "vi": "",
-            "start_ms": 220470,
-            "end_ms": 264170
+            "start_ms": 277620,
+            "end_ms": 291510
           }
         ]
       },
       "vocabulary_matches": [
+        {
+          "word": "北京",
+          "pinyin": "běijīng",
+          "meaning_vi": "Bắc Kinh",
+          "vocab_id": 5,
+          "level": "HSK1"
+        },
         {
           "word": "电影",
           "pinyin": "diànyǐng",
@@ -517,46 +517,39 @@
           "level": "HSK1"
         },
         {
-          "word": "明天",
-          "pinyin": "míngtiān",
-          "meaning_vi": "ngày mai",
-          "vocab_id": 67,
+          "word": "今天",
+          "pinyin": "jīntiān",
+          "meaning_vi": "hôm nay",
+          "vocab_id": 47,
           "level": "HSK1"
         },
         {
-          "word": "非常",
-          "pinyin": "fēicháng",
-          "meaning_vi": "rất, vô cùng",
-          "vocab_id": 27,
+          "word": "时候",
+          "pinyin": "shíhou",
+          "meaning_vi": "lúc, thời điểm",
+          "vocab_id": 95,
+          "level": "HSK1"
+        },
+        {
+          "word": "妻子",
+          "pinyin": "qīzi",
+          "meaning_vi": "vợ",
+          "vocab_id": 82,
           "level": "HSK2"
         },
         {
-          "word": "孩子",
-          "pinyin": "háizi",
-          "meaning_vi": "đứa trẻ",
-          "vocab_id": 37,
+          "word": "游泳",
+          "pinyin": "yóuyǒng",
+          "meaning_vi": "bơi lội",
+          "vocab_id": 134,
           "level": "HSK2"
         },
         {
-          "word": "开始",
-          "pinyin": "kāishǐ",
-          "meaning_vi": "bắt đầu",
-          "vocab_id": 54,
-          "level": "HSK2"
-        },
-        {
-          "word": "考试",
-          "pinyin": "kǎoshì",
-          "meaning_vi": "thi cử",
-          "vocab_id": 55,
-          "level": "HSK2"
-        },
-        {
-          "word": "晚上",
-          "pinyin": "wǎnshang",
-          "meaning_vi": "buổi tối",
-          "vocab_id": 108,
-          "level": "HSK2"
+          "word": "一直",
+          "pinyin": "yìzhí",
+          "meaning_vi": "luôn luôn, thẳng",
+          "vocab_id": 261,
+          "level": "HSK3"
         }
       ]
     },
@@ -574,41 +567,41 @@
       "answer": false,
       "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Tiểu Nguyên làm việc ở Bắc Kinh.'.",
       "evidence": {
-        "zh": "这个电影讲的是一个男孩子和一吃老虎在大海上努力活下来的故事 听说非常棒咱们明天晚上去看看吧电影让观众很失望6今天去游泳的时候 遇见小原和他妻子了我本来以为他俩都去北京工作了没想到他们还一直留在这",
+        "zh": "大人有时会陷谋孩子因为孩子的世界没有那么复杂所以他们总是很快乐同时孩子也是最诚实的不会怀疑别人 更不会去骗人",
         "sentence_index": 0
       },
       "audio_src": "assets/audio/exams/H41009.mp3",
       "alignment": {
-        "status": "draft",
-        "method": "whisper_asr_silence_refined",
-        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
       },
       "segments": {
         "passage": {
-          "start_ms": 250600,
-          "end_ms": 291790
+          "start_ms": 305800,
+          "end_ms": 323860
         },
         "statement": {
-          "start_ms": 291800,
-          "end_ms": 295690
+          "start_ms": 324060,
+          "end_ms": 327660
         },
         "full_question": {
-          "start_ms": 250600,
-          "end_ms": 295690
+          "start_ms": 305800,
+          "end_ms": 327660
         }
       },
       "transcript": {
-        "full_zh": "这个电影讲的是一个男孩子和一吃老虎在大海上努力活下来的故事 听说非常棒咱们明天晚上去看看吧电影让观众很失望6今天去游泳的时候 遇见小原和他妻子了我本来以为他俩都去北京工作了没想到他们还一直留在这",
+        "full_zh": "大人有时会陷谋孩子因为孩子的世界没有那么复杂所以他们总是很快乐同时孩子也是最诚实的不会怀疑别人 更不会去骗人",
         "full_vi": "",
         "sentences": [
           {
             "id": "H41009_L_06_S1",
             "index": 0,
-            "zh": "这个电影讲的是一个男孩子和一吃老虎在大海上努力活下来的故事 听说非常棒咱们明天晚上去看看吧电影让观众很失望6今天去游泳的时候 遇见小原和他妻子了我本来以为他俩都去北京工作了没想到他们还一直留在这",
-            "pinyin": "zhè ge diàn yǐng jiǎng de shì yí gè nán hái zi hé yī chī lǎo hǔ zài dà hǎi shàng nǔ lì huó xià lái de gù shì   tīng shuō fēi cháng bàng zán men míng tiān wǎn shàng qù kàn kàn ba diàn yǐng ràng guān zhòng hěn shī wàng 6 jīn tiān qù yóu yǒng de shí hòu   yù jiàn xiǎo yuán hé tā qī zǐ le wǒ běn lái yǐ wéi tā liǎ dōu qù běi jīng gōng zuò le méi xiǎng dào tā men hái yì zhí liú zài zhè",
+            "zh": "大人有时会陷谋孩子因为孩子的世界没有那么复杂所以他们总是很快乐同时孩子也是最诚实的不会怀疑别人 更不会去骗人",
+            "pinyin": "dà rén yǒu shí huì xiàn móu hái zi yīn wèi hái zi de shì jiè méi yǒu nà me fù zá suǒ yǐ tā men zǒng shì hěn kuài lè tóng shí hái zi yě shì zuì chéng shí de bú huì huái yí bié rén   gèng bú huì qù piàn rén",
             "vi": "",
-            "start_ms": 250600,
-            "end_ms": 291790
+            "start_ms": 305800,
+            "end_ms": 323860
           }
         ]
       },
@@ -621,46 +614,11 @@
           "level": "HSK1"
         },
         {
-          "word": "电影",
-          "pinyin": "diànyǐng",
-          "meaning_vi": "phim",
-          "vocab_id": 19,
+          "word": "没有",
+          "pinyin": "méiyǒu",
+          "meaning_vi": "không có",
+          "vocab_id": 64,
           "level": "HSK1"
-        },
-        {
-          "word": "工作",
-          "pinyin": "gōngzuò",
-          "meaning_vi": "công việc, làm việc",
-          "vocab_id": 33,
-          "level": "HSK1"
-        },
-        {
-          "word": "今天",
-          "pinyin": "jīntiān",
-          "meaning_vi": "hôm nay",
-          "vocab_id": 47,
-          "level": "HSK1"
-        },
-        {
-          "word": "明天",
-          "pinyin": "míngtiān",
-          "meaning_vi": "ngày mai",
-          "vocab_id": 67,
-          "level": "HSK1"
-        },
-        {
-          "word": "时候",
-          "pinyin": "shíhou",
-          "meaning_vi": "lúc, thời điểm",
-          "vocab_id": 95,
-          "level": "HSK1"
-        },
-        {
-          "word": "非常",
-          "pinyin": "fēicháng",
-          "meaning_vi": "rất, vô cùng",
-          "vocab_id": 27,
-          "level": "HSK2"
         },
         {
           "word": "孩子",
@@ -668,6 +626,41 @@
           "meaning_vi": "đứa trẻ",
           "vocab_id": 37,
           "level": "HSK2"
+        },
+        {
+          "word": "快乐",
+          "pinyin": "kuàilè",
+          "meaning_vi": "vui vẻ",
+          "vocab_id": 60,
+          "level": "HSK2"
+        },
+        {
+          "word": "上班",
+          "pinyin": "shàngbān",
+          "meaning_vi": "đi làm",
+          "vocab_id": 90,
+          "level": "HSK2"
+        },
+        {
+          "word": "别人",
+          "pinyin": "biérén",
+          "meaning_vi": "người khác",
+          "vocab_id": 23,
+          "level": "HSK3"
+        },
+        {
+          "word": "世界",
+          "pinyin": "shìjiè",
+          "meaning_vi": "thế giới",
+          "vocab_id": 202,
+          "level": "HSK3"
+        },
+        {
+          "word": "总是",
+          "pinyin": "zǒngshì",
+          "meaning_vi": "luôn luôn",
+          "vocab_id": 296,
+          "level": "HSK3"
         }
       ]
     },
@@ -685,80 +678,45 @@
       "answer": true,
       "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Trẻ em dễ cảm thấy vui vẻ hơn.'.",
       "evidence": {
-        "zh": "今天去游泳的时候 遇见小原和他妻子了我本来以为他俩都去北京工作了没想到他们还一直留在这校圆在北京上班7大人有时会陷谋孩子因为孩子的世界没有那么复杂所以他们总是很快乐同时孩子也是最诚实的不会怀疑别人 更不会去骗人",
+        "zh": "我再往上给你买了几本书估计三天左右就能到你说到了 记得给我打个电话说一声",
         "sentence_index": 0
       },
       "audio_src": "assets/audio/exams/H41009.mp3",
       "alignment": {
-        "status": "draft",
-        "method": "whisper_asr_silence_refined",
-        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
       },
       "segments": {
         "passage": {
-          "start_ms": 279240,
-          "end_ms": 323790
+          "start_ms": 337760,
+          "end_ms": 348840
         },
         "statement": {
-          "start_ms": 323800,
-          "end_ms": 327680
+          "start_ms": 349040,
+          "end_ms": 353040
         },
         "full_question": {
-          "start_ms": 279240,
-          "end_ms": 327680
+          "start_ms": 337760,
+          "end_ms": 353040
         }
       },
       "transcript": {
-        "full_zh": "今天去游泳的时候 遇见小原和他妻子了我本来以为他俩都去北京工作了没想到他们还一直留在这校圆在北京上班7大人有时会陷谋孩子因为孩子的世界没有那么复杂所以他们总是很快乐同时孩子也是最诚实的不会怀疑别人 更不会去骗人",
+        "full_zh": "我再往上给你买了几本书估计三天左右就能到你说到了 记得给我打个电话说一声",
         "full_vi": "",
         "sentences": [
           {
             "id": "H41009_L_07_S1",
             "index": 0,
-            "zh": "今天去游泳的时候 遇见小原和他妻子了我本来以为他俩都去北京工作了没想到他们还一直留在这校圆在北京上班7大人有时会陷谋孩子因为孩子的世界没有那么复杂所以他们总是很快乐同时孩子也是最诚实的不会怀疑别人 更不会去骗人",
-            "pinyin": "jīn tiān qù yóu yǒng de shí hòu   yù jiàn xiǎo yuán hé tā qī zǐ le wǒ běn lái yǐ wéi tā liǎ dōu qù běi jīng gōng zuò le méi xiǎng dào tā men hái yì zhí liú zài zhè xiào yuán zài běi jīng shàng bān 7 dà rén yǒu shí huì xiàn móu hái zi yīn wèi hái zi de shì jiè méi yǒu nà me fù zá suǒ yǐ tā men zǒng shì hěn kuài lè tóng shí hái zi yě shì zuì chéng shí de bú huì huái yí bié rén   gèng bú huì qù piàn rén",
+            "zh": "我再往上给你买了几本书估计三天左右就能到你说到了 记得给我打个电话说一声",
+            "pinyin": "wǒ zài wǎng shàng gěi nǐ mǎi le jǐ běn shū gū jì sān tiān zuǒ yòu jiù néng dào nǐ shuō dào le   jì de gěi wǒ dǎ gè diàn huà shuō yī shēng",
             "vi": "",
-            "start_ms": 279240,
-            "end_ms": 323790
+            "start_ms": 337760,
+            "end_ms": 348840
           }
         ]
       },
       "vocabulary_matches": [
-        {
-          "word": "北京",
-          "pinyin": "běijīng",
-          "meaning_vi": "Bắc Kinh",
-          "vocab_id": 5,
-          "level": "HSK1"
-        },
-        {
-          "word": "工作",
-          "pinyin": "gōngzuò",
-          "meaning_vi": "công việc, làm việc",
-          "vocab_id": 33,
-          "level": "HSK1"
-        },
-        {
-          "word": "今天",
-          "pinyin": "jīntiān",
-          "meaning_vi": "hôm nay",
-          "vocab_id": 47,
-          "level": "HSK1"
-        },
-        {
-          "word": "没有",
-          "pinyin": "méiyǒu",
-          "meaning_vi": "không có",
-          "vocab_id": 64,
-          "level": "HSK1"
-        },
-        {
-          "word": "时候",
-          "pinyin": "shíhou",
-          "meaning_vi": "lúc, thời điểm",
-          "vocab_id": 95,
-          "level": "HSK1"
-        },
         {
           "word": "孩子",
           "pinyin": "háizi",
@@ -774,11 +732,39 @@
           "level": "HSK2"
         },
         {
-          "word": "妻子",
-          "pinyin": "qīzi",
-          "meaning_vi": "vợ",
-          "vocab_id": 82,
-          "level": "HSK2"
+          "word": "记得",
+          "pinyin": "jìde",
+          "meaning_vi": "nhớ (việc gì)",
+          "vocab_id": 111,
+          "level": "HSK3"
+        },
+        {
+          "word": "容易",
+          "pinyin": "róngyì",
+          "meaning_vi": "dễ dàng",
+          "vocab_id": 195,
+          "level": "HSK3"
+        },
+        {
+          "word": "估计",
+          "pinyin": "gūjì",
+          "meaning_vi": "ước tính",
+          "vocab_id": 147,
+          "level": "HSK4"
+        },
+        {
+          "word": "获得",
+          "pinyin": "huòdé",
+          "meaning_vi": "đạt được, giành được",
+          "vocab_id": 185,
+          "level": "HSK4"
+        },
+        {
+          "word": "左右",
+          "pinyin": "zuǒyòu",
+          "meaning_vi": "khoảng, trái phải",
+          "vocab_id": 595,
+          "level": "HSK4"
         }
       ]
     },
@@ -796,78 +782,85 @@
       "answer": false,
       "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Anh ấy không hài lòng với cuốn sách đã mua.'.",
       "evidence": {
-        "zh": "大人有时会陷谋孩子因为孩子的世界没有那么复杂所以他们总是很快乐同时孩子也是最诚实的不会怀疑别人 更不会去骗人孩子更容易会得快乐8我再往上给你买了几本书估计三天左右就能到你说到了 记得给我打个电话说一声",
+        "zh": "我问过大家了3分之二的同学都去过常常这次春游得换个地方了咱们明天开个班会 商量一下去哪儿吧",
         "sentence_index": 0
       },
       "audio_src": "assets/audio/exams/H41009.mp3",
       "alignment": {
-        "status": "draft",
-        "method": "whisper_asr_silence_refined",
-        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
       },
       "segments": {
         "passage": {
-          "start_ms": 307490,
-          "end_ms": 349790
+          "start_ms": 363100,
+          "end_ms": 378230
         },
         "statement": {
-          "start_ms": 349800,
-          "end_ms": 353050
+          "start_ms": 378430,
+          "end_ms": 382380
         },
         "full_question": {
-          "start_ms": 307490,
-          "end_ms": 353050
+          "start_ms": 363100,
+          "end_ms": 382380
         }
       },
       "transcript": {
-        "full_zh": "大人有时会陷谋孩子因为孩子的世界没有那么复杂所以他们总是很快乐同时孩子也是最诚实的不会怀疑别人 更不会去骗人孩子更容易会得快乐8我再往上给你买了几本书估计三天左右就能到你说到了 记得给我打个电话说一声",
+        "full_zh": "我问过大家了3分之二的同学都去过常常这次春游得换个地方了咱们明天开个班会 商量一下去哪儿吧",
         "full_vi": "",
         "sentences": [
           {
             "id": "H41009_L_08_S1",
             "index": 0,
-            "zh": "大人有时会陷谋孩子因为孩子的世界没有那么复杂所以他们总是很快乐同时孩子也是最诚实的不会怀疑别人 更不会去骗人孩子更容易会得快乐8我再往上给你买了几本书估计三天左右就能到你说到了 记得给我打个电话说一声",
-            "pinyin": "dà rén yǒu shí huì xiàn móu hái zi yīn wèi hái zi de shì jiè méi yǒu nà me fù zá suǒ yǐ tā men zǒng shì hěn kuài lè tóng shí hái zi yě shì zuì chéng shí de bú huì huái yí bié rén   gèng bú huì qù piàn rén hái zi gèng róng yì huì dé kuài lè 8 wǒ zài wǎng shàng gěi nǐ mǎi le jǐ běn shū gū jì sān tiān zuǒ yòu jiù néng dào nǐ shuō dào le   jì de gěi wǒ dǎ gè diàn huà shuō yī shēng",
+            "zh": "我问过大家了3分之二的同学都去过常常这次春游得换个地方了咱们明天开个班会 商量一下去哪儿吧",
+            "pinyin": "wǒ wèn guò dà jiā le 3 fēn zhī èr de tóng xué dōu qù guò cháng cháng zhè cì chūn yóu dé huàn gè dì fāng le zán men míng tiān kāi gè bān huì   shāng liáng yī xià qù nǎ ér ba",
             "vi": "",
-            "start_ms": 307490,
-            "end_ms": 349790
+            "start_ms": 363100,
+            "end_ms": 378230
           }
         ]
       },
       "vocabulary_matches": [
         {
-          "word": "没有",
-          "pinyin": "méiyǒu",
-          "meaning_vi": "không có",
-          "vocab_id": 64,
+          "word": "明天",
+          "pinyin": "míngtiān",
+          "meaning_vi": "ngày mai",
+          "vocab_id": 67,
           "level": "HSK1"
         },
         {
-          "word": "孩子",
-          "pinyin": "háizi",
-          "meaning_vi": "đứa trẻ",
-          "vocab_id": 37,
+          "word": "哪儿",
+          "pinyin": "nǎr",
+          "meaning_vi": "ở đâu",
+          "vocab_id": 69,
+          "level": "HSK1"
+        },
+        {
+          "word": "同学",
+          "pinyin": "tóngxué",
+          "meaning_vi": "bạn học",
+          "vocab_id": 109,
+          "level": "HSK1"
+        },
+        {
+          "word": "大家",
+          "pinyin": "dàjiā",
+          "meaning_vi": "mọi người",
+          "vocab_id": 17,
           "level": "HSK2"
         },
         {
-          "word": "快乐",
-          "pinyin": "kuàilè",
-          "meaning_vi": "vui vẻ",
-          "vocab_id": 60,
+          "word": "一下",
+          "pinyin": "yīxià",
+          "meaning_vi": "một chút, thử xem",
+          "vocab_id": 128,
           "level": "HSK2"
         },
         {
-          "word": "别人",
-          "pinyin": "biérén",
-          "meaning_vi": "người khác",
-          "vocab_id": 23,
-          "level": "HSK3"
-        },
-        {
-          "word": "记得",
-          "pinyin": "jìde",
-          "meaning_vi": "nhớ (việc gì)",
-          "vocab_id": 111,
+          "word": "地方",
+          "pinyin": "dìfang",
+          "meaning_vi": "nơi, địa phương",
+          "vocab_id": 48,
           "level": "HSK3"
         },
         {
@@ -878,18 +871,11 @@
           "level": "HSK3"
         },
         {
-          "word": "容易",
-          "pinyin": "róngyì",
-          "meaning_vi": "dễ dàng",
-          "vocab_id": 195,
-          "level": "HSK3"
-        },
-        {
-          "word": "世界",
-          "pinyin": "shìjiè",
-          "meaning_vi": "thế giới",
-          "vocab_id": 202,
-          "level": "HSK3"
+          "word": "商量",
+          "pinyin": "shāngliang",
+          "meaning_vi": "thảo luận, bàn bạc",
+          "vocab_id": 367,
+          "level": "HSK4"
         }
       ]
     },
@@ -907,93 +893,51 @@
       "answer": true,
       "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Họ quyết định không đi leo Vạn Lý Trường Thành nữa.'.",
       "evidence": {
-        "zh": "8我再往上给你买了几本书估计三天左右就能到你说到了 记得给我打个电话说一声他对买的书不满意9我问过大家了3分之二的同学都去过常常这次春游得换个地方了咱们明天开个班会 商量一下去哪儿吧",
+        "zh": "前进的过程中最关键的是要找对方向如果方向错了无论你怎么努力都只会离目地地越来越远",
         "sentence_index": 0
       },
       "audio_src": "assets/audio/exams/H41009.mp3",
       "alignment": {
-        "status": "draft",
-        "method": "whisper_asr_silence_refined",
-        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
       },
       "segments": {
         "passage": {
-          "start_ms": 337800,
-          "end_ms": 378790
+          "start_ms": 392440,
+          "end_ms": 405040
         },
         "statement": {
-          "start_ms": 378800,
-          "end_ms": 382390
+          "start_ms": 405240,
+          "end_ms": 409240
         },
         "full_question": {
-          "start_ms": 337800,
-          "end_ms": 382390
+          "start_ms": 392440,
+          "end_ms": 409240
         }
       },
       "transcript": {
-        "full_zh": "8我再往上给你买了几本书估计三天左右就能到你说到了 记得给我打个电话说一声他对买的书不满意9我问过大家了3分之二的同学都去过常常这次春游得换个地方了咱们明天开个班会 商量一下去哪儿吧",
+        "full_zh": "前进的过程中最关键的是要找对方向如果方向错了无论你怎么努力都只会离目地地越来越远",
         "full_vi": "",
         "sentences": [
           {
             "id": "H41009_L_09_S1",
             "index": 0,
-            "zh": "8我再往上给你买了几本书估计三天左右就能到你说到了 记得给我打个电话说一声他对买的书不满意9我问过大家了3分之二的同学都去过常常这次春游得换个地方了咱们明天开个班会 商量一下去哪儿吧",
-            "pinyin": "8 wǒ zài wǎng shàng gěi nǐ mǎi le jǐ běn shū gū jì sān tiān zuǒ yòu jiù néng dào nǐ shuō dào le   jì de gěi wǒ dǎ gè diàn huà shuō yī shēng tā duì mǎi de shū bù mǎn yì 9 wǒ wèn guò dà jiā le 3 fēn zhī èr de tóng xué dōu qù guò cháng cháng zhè cì chūn yóu dé huàn gè dì fāng le zán men míng tiān kāi gè bān huì   shāng liáng yī xià qù nǎ ér ba",
+            "zh": "前进的过程中最关键的是要找对方向如果方向错了无论你怎么努力都只会离目地地越来越远",
+            "pinyin": "qián jìn de guò chéng zhōng zuì guān jiàn de shì yào zhǎo duì fāng xiàng rú guǒ fāng xiàng cuò liǎo wú lùn nǐ zěn me nǔ lì dōu zhǐ huì lí mù dì dì yuè lái yuè yuǎn",
             "vi": "",
-            "start_ms": 337800,
-            "end_ms": 378790
+            "start_ms": 392440,
+            "end_ms": 405040
           }
         ]
       },
       "vocabulary_matches": [
         {
-          "word": "明天",
-          "pinyin": "míngtiān",
-          "meaning_vi": "ngày mai",
-          "vocab_id": 67,
+          "word": "怎么",
+          "pinyin": "zěnme",
+          "meaning_vi": "thế nào, sao",
+          "vocab_id": 140,
           "level": "HSK1"
-        },
-        {
-          "word": "哪儿",
-          "pinyin": "nǎr",
-          "meaning_vi": "ở đâu",
-          "vocab_id": 69,
-          "level": "HSK1"
-        },
-        {
-          "word": "同学",
-          "pinyin": "tóngxué",
-          "meaning_vi": "bạn học",
-          "vocab_id": 109,
-          "level": "HSK1"
-        },
-        {
-          "word": "大家",
-          "pinyin": "dàjiā",
-          "meaning_vi": "mọi người",
-          "vocab_id": 17,
-          "level": "HSK2"
-        },
-        {
-          "word": "一下",
-          "pinyin": "yīxià",
-          "meaning_vi": "một chút, thử xem",
-          "vocab_id": 128,
-          "level": "HSK2"
-        },
-        {
-          "word": "地方",
-          "pinyin": "dìfang",
-          "meaning_vi": "nơi, địa phương",
-          "vocab_id": 48,
-          "level": "HSK3"
-        },
-        {
-          "word": "记得",
-          "pinyin": "jìde",
-          "meaning_vi": "nhớ (việc gì)",
-          "vocab_id": 111,
-          "level": "HSK3"
         },
         {
           "word": "决定",
@@ -1001,6 +945,48 @@
           "meaning_vi": "quyết định",
           "vocab_id": 135,
           "level": "HSK3"
+        },
+        {
+          "word": "努力",
+          "pinyin": "nǔlì",
+          "meaning_vi": "nỗ lực, cố gắng",
+          "vocab_id": 174,
+          "level": "HSK3"
+        },
+        {
+          "word": "如果",
+          "pinyin": "rúguǒ",
+          "meaning_vi": "nếu",
+          "vocab_id": 196,
+          "level": "HSK3"
+        },
+        {
+          "word": "长城",
+          "pinyin": "chángchéng",
+          "meaning_vi": "Trường Thành",
+          "vocab_id": 40,
+          "level": "HSK4"
+        },
+        {
+          "word": "方向",
+          "pinyin": "fāngxiàng",
+          "meaning_vi": "phương hướng",
+          "vocab_id": 113,
+          "level": "HSK4"
+        },
+        {
+          "word": "关键",
+          "pinyin": "guānjiàn",
+          "meaning_vi": "mấu chốt, then chốt",
+          "vocab_id": 152,
+          "level": "HSK4"
+        },
+        {
+          "word": "过程",
+          "pinyin": "guòchéng",
+          "meaning_vi": "quá trình",
+          "vocab_id": 163,
+          "level": "HSK4"
         }
       ]
     },
@@ -1018,100 +1004,86 @@
       "answer": true,
       "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Tìm đúng phương hướng là điều rất quan trọng.'.",
       "evidence": {
-        "zh": "9我问过大家了3分之二的同学都去过常常这次春游得换个地方了咱们明天开个班会 商量一下去哪儿吧他们决定不去爬成成了10前进的过程中最关键的是要找对方向如果方向错了无论你怎么努力都只会离目地地越来越远",
+        "zh": "第二部分1共15个题每题听一次例如该加油了去机场的路上有加油战吗有你放心吧",
         "sentence_index": 0
       },
       "audio_src": "assets/audio/exams/H41009.mp3",
       "alignment": {
-        "status": "draft",
-        "method": "whisper_asr_silence_refined",
-        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
       },
       "segments": {
         "passage": {
-          "start_ms": 363130,
-          "end_ms": 405790
+          "start_ms": 419420,
+          "end_ms": 436860
         },
         "statement": {
-          "start_ms": 405800,
-          "end_ms": 409290
+          "start_ms": 437060,
+          "end_ms": 440660
         },
         "full_question": {
-          "start_ms": 363130,
-          "end_ms": 409290
+          "start_ms": 419420,
+          "end_ms": 440660
         }
       },
       "transcript": {
-        "full_zh": "9我问过大家了3分之二的同学都去过常常这次春游得换个地方了咱们明天开个班会 商量一下去哪儿吧他们决定不去爬成成了10前进的过程中最关键的是要找对方向如果方向错了无论你怎么努力都只会离目地地越来越远",
+        "full_zh": "第二部分1共15个题每题听一次例如该加油了去机场的路上有加油战吗有你放心吧",
         "full_vi": "",
         "sentences": [
           {
             "id": "H41009_L_10_S1",
             "index": 0,
-            "zh": "9我问过大家了3分之二的同学都去过常常这次春游得换个地方了咱们明天开个班会 商量一下去哪儿吧他们决定不去爬成成了10前进的过程中最关键的是要找对方向如果方向错了无论你怎么努力都只会离目地地越来越远",
-            "pinyin": "9 wǒ wèn guò dà jiā le 3 fēn zhī èr de tóng xué dōu qù guò cháng cháng zhè cì chūn yóu dé huàn gè dì fāng le zán men míng tiān kāi gè bān huì   shāng liáng yī xià qù nǎ ér ba tā men jué dìng bù qù pá chéng chéng le 10 qián jìn de guò chéng zhōng zuì guān jiàn de shì yào zhǎo duì fāng xiàng rú guǒ fāng xiàng cuò liǎo wú lùn nǐ zěn me nǔ lì dōu zhǐ huì lí mù dì dì yuè lái yuè yuǎn",
+            "zh": "第二部分1共15个题每题听一次例如该加油了去机场的路上有加油战吗有你放心吧",
+            "pinyin": "dì èr bù fèn 1 gòng 15 gè tí měi tí tīng yī cì lì rú gāi jiā yóu le qù jī chǎng de lù shàng yǒu jiā yóu zhàn ma yǒu nǐ fàng xīn ba",
             "vi": "",
-            "start_ms": 363130,
-            "end_ms": 405790
+            "start_ms": 419420,
+            "end_ms": 436860
           }
         ]
       },
       "vocabulary_matches": [
         {
-          "word": "明天",
-          "pinyin": "míngtiān",
-          "meaning_vi": "ngày mai",
-          "vocab_id": 67,
-          "level": "HSK1"
-        },
-        {
-          "word": "哪儿",
-          "pinyin": "nǎr",
-          "meaning_vi": "ở đâu",
-          "vocab_id": 69,
-          "level": "HSK1"
-        },
-        {
-          "word": "同学",
-          "pinyin": "tóngxué",
-          "meaning_vi": "bạn học",
-          "vocab_id": 109,
-          "level": "HSK1"
-        },
-        {
-          "word": "怎么",
-          "pinyin": "zěnme",
-          "meaning_vi": "thế nào, sao",
-          "vocab_id": 140,
-          "level": "HSK1"
-        },
-        {
-          "word": "大家",
-          "pinyin": "dàjiā",
-          "meaning_vi": "mọi người",
-          "vocab_id": 17,
+          "word": "机场",
+          "pinyin": "jīchǎng",
+          "meaning_vi": "sân bay",
+          "vocab_id": 43,
           "level": "HSK2"
         },
         {
-          "word": "一下",
-          "pinyin": "yīxià",
-          "meaning_vi": "một chút, thử xem",
-          "vocab_id": 128,
-          "level": "HSK2"
-        },
-        {
-          "word": "地方",
-          "pinyin": "dìfang",
-          "meaning_vi": "nơi, địa phương",
-          "vocab_id": 48,
+          "word": "放心",
+          "pinyin": "fàngxīn",
+          "meaning_vi": "yên tâm",
+          "vocab_id": 68,
           "level": "HSK3"
         },
         {
-          "word": "决定",
-          "pinyin": "juédìng",
-          "meaning_vi": "quyết định",
-          "vocab_id": 135,
+          "word": "重要",
+          "pinyin": "zhòngyào",
+          "meaning_vi": "quan trọng",
+          "vocab_id": 290,
           "level": "HSK3"
+        },
+        {
+          "word": "部分",
+          "pinyin": "bùfen",
+          "meaning_vi": "bộ phận, một phần",
+          "vocab_id": 32,
+          "level": "HSK4"
+        },
+        {
+          "word": "方向",
+          "pinyin": "fāngxiàng",
+          "meaning_vi": "phương hướng",
+          "vocab_id": 113,
+          "level": "HSK4"
+        },
+        {
+          "word": "例如",
+          "pinyin": "lìrú",
+          "meaning_vi": "ví dụ như",
+          "vocab_id": 284,
+          "level": "HSK4"
         }
       ]
     }

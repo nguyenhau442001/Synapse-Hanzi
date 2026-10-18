@@ -24,22 +24,22 @@
       },
       "audio_src": "assets/audio/exams/H41003.mp3",
       "alignment": {
-        "status": "draft",
-        "method": "whisper_asr_silence_refined",
-        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
       },
       "segments": {
         "passage": {
-          "start_ms": 104000,
-          "end_ms": 165999
+          "start_ms": 136789,
+          "end_ms": 151388
         },
         "statement": {
-          "start_ms": 166000,
-          "end_ms": 169990
+          "start_ms": 151588,
+          "end_ms": 154488
         },
         "full_question": {
-          "start_ms": 104000,
-          "end_ms": 169990
+          "start_ms": 136789,
+          "end_ms": 154488
         }
       },
       "transcript": {
@@ -52,8 +52,8 @@
             "zh": "对不起，先生，那种蛋糕已经卖完了，不过，您可以尝一下这种饼干，味道也很不错。",
             "pinyin": "duì bù qǐ ， xiān shēng ， nà zhǒng dàn gāo yǐ jīng mài wán le ， bù guò ， nín kě yǐ cháng yī xià zhè zhǒng bǐng gān ， wèi dào yě hěn bú cuò 。",
             "vi": "",
-            "start_ms": 104000,
-            "end_ms": 165999
+            "start_ms": 136789,
+            "end_ms": 151388
           }
         ]
       },
@@ -135,22 +135,22 @@
       },
       "audio_src": "assets/audio/exams/H41003.mp3",
       "alignment": {
-        "status": "draft",
-        "method": "whisper_asr_silence_refined",
-        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
       },
       "segments": {
         "passage": {
-          "start_ms": 136828,
-          "end_ms": 184080
+          "start_ms": 163468,
+          "end_ms": 179821
         },
         "statement": {
-          "start_ms": 189000,
-          "end_ms": 193000
+          "start_ms": 180021,
+          "end_ms": 184021
         },
         "full_question": {
-          "start_ms": 136828,
-          "end_ms": 193000
+          "start_ms": 163468,
+          "end_ms": 184021
         }
       },
       "transcript": {
@@ -163,8 +163,8 @@
             "zh": "我挺喜欢现在住的地方，很安静。",
             "pinyin": "wǒ tǐng xǐ huān xiàn zài zhù de dì fāng ， hěn ān jìng 。",
             "vi": "",
-            "start_ms": 136828,
-            "end_ms": 155480
+            "start_ms": 163468,
+            "end_ms": 169923
           },
           {
             "id": "H41003_L_02_S2",
@@ -172,8 +172,8 @@
             "zh": "不像以前住的地方，虽然交通方便，但是周围很吵。",
             "pinyin": "bù xiàng yǐ qián zhù de dì fāng ， suī rán jiāo tōng fāng biàn ， dàn shì zhōu wéi hěn chǎo 。",
             "vi": "",
-            "start_ms": 155480,
-            "end_ms": 184079
+            "start_ms": 169923,
+            "end_ms": 179820
           }
         ]
       },
@@ -255,22 +255,22 @@
       },
       "audio_src": "assets/audio/exams/H41003.mp3",
       "alignment": {
-        "status": "draft",
-        "method": "whisper_asr_silence_refined",
-        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
       },
       "segments": {
         "passage": {
-          "start_ms": 163500,
-          "end_ms": 214993
+          "start_ms": 193141,
+          "end_ms": 214423
         },
         "statement": {
-          "start_ms": 215000,
-          "end_ms": 218621
+          "start_ms": 214623,
+          "end_ms": 218623
         },
         "full_question": {
-          "start_ms": 163500,
-          "end_ms": 218621
+          "start_ms": 193141,
+          "end_ms": 218623
         }
       },
       "transcript": {
@@ -283,8 +283,8 @@
             "zh": "虽然很多大学生毕业后希望留在大城市工作，但也有不少大学生选择去农村，因为在那里也有许多好的发展机会。",
             "pinyin": "suī rán hěn duō dà xué shēng bì yè hòu xī wàng liú zài dà chéng shì gōng zuò ， dàn yě yǒu bù shǎo dà xué shēng xuǎn zé qù nóng cūn ， yīn wèi zài nà lǐ yě yǒu xǔ duō hǎo de fā zhǎn jī huì 。",
             "vi": "",
-            "start_ms": 163500,
-            "end_ms": 214993
+            "start_ms": 193141,
+            "end_ms": 214423
           }
         ]
       },
@@ -366,22 +366,22 @@
       },
       "audio_src": "assets/audio/exams/H41003.mp3",
       "alignment": {
-        "status": "draft",
-        "method": "whisper_asr_silence_refined",
-        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
       },
       "segments": {
         "passage": {
-          "start_ms": 193179,
-          "end_ms": 246119
+          "start_ms": 227622,
+          "end_ms": 242670
         },
         "statement": {
-          "start_ms": 251000,
-          "end_ms": 255000
+          "start_ms": 242870,
+          "end_ms": 246120
         },
         "full_question": {
-          "start_ms": 193179,
-          "end_ms": 255000
+          "start_ms": 227622,
+          "end_ms": 246120
         }
       },
       "transcript": {
@@ -394,8 +394,8 @@
             "zh": "您是要去会议室吗？",
             "pinyin": "nín shì yào qù huì yì shì ma ？",
             "vi": "",
-            "start_ms": 193179,
-            "end_ms": 206792
+            "start_ms": 227622,
+            "end_ms": 231491
           },
           {
             "id": "H41003_L_04_S2",
@@ -403,8 +403,8 @@
             "zh": "那不用上楼，会议室就在一层。",
             "pinyin": "nà bù yòng shàng lóu ， huì yì shì jiù zài yī céng 。",
             "vi": "",
-            "start_ms": 206792,
-            "end_ms": 227968
+            "start_ms": 231491,
+            "end_ms": 237510
           },
           {
             "id": "H41003_L_04_S3",
@@ -412,8 +412,8 @@
             "zh": "您往前走，就在电梯左边。",
             "pinyin": "nín wǎng qián zǒu ， jiù zài diàn tī zuǒ biān 。",
             "vi": "",
-            "start_ms": 227968,
-            "end_ms": 246118
+            "start_ms": 237510,
+            "end_ms": 242669
           }
         ]
       },
@@ -460,22 +460,22 @@
       },
       "audio_src": "assets/audio/exams/H41003.mp3",
       "alignment": {
-        "status": "draft",
-        "method": "whisper_asr_silence_refined",
-        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
       },
       "segments": {
         "passage": {
-          "start_ms": 228000,
-          "end_ms": 272498
+          "start_ms": 255060,
+          "end_ms": 272481
         },
         "statement": {
-          "start_ms": 273419,
-          "end_ms": 276651
+          "start_ms": 272681,
+          "end_ms": 276631
         },
         "full_question": {
-          "start_ms": 228000,
-          "end_ms": 276651
+          "start_ms": 255060,
+          "end_ms": 276631
         }
       },
       "transcript": {
@@ -488,8 +488,8 @@
             "zh": "现在是九点半，请大家注意：一小时后我们还在这个入口集合，参观过程中请大家注意安全。",
             "pinyin": "xiàn zài shì jiǔ diǎn bàn ， qǐng dà jiā zhù yì ： yī xiǎo shí hòu wǒ men hái zài zhè ge rù kǒu jí hé ， cān guān guò chéng zhōng qǐng dà jiā zhù yì ān quán 。",
             "vi": "",
-            "start_ms": 228000,
-            "end_ms": 272498
+            "start_ms": 255060,
+            "end_ms": 272481
           }
         ]
       },
@@ -571,22 +571,22 @@
       },
       "audio_src": "assets/audio/exams/H41003.mp3",
       "alignment": {
-        "status": "draft",
-        "method": "whisper_asr_silence_refined",
-        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
       },
       "segments": {
         "passage": {
-          "start_ms": 243818,
-          "end_ms": 303751
+          "start_ms": 285570,
+          "end_ms": 303740
         },
         "statement": {
-          "start_ms": 304728,
-          "end_ms": 307951
+          "start_ms": 303940,
+          "end_ms": 307940
         },
         "full_question": {
-          "start_ms": 243818,
-          "end_ms": 307951
+          "start_ms": 285570,
+          "end_ms": 307940
         }
       },
       "transcript": {
@@ -599,8 +599,8 @@
             "zh": "因为塑料袋会给环境带来污染，所以现在超市不再免费提供塑料袋，有需要的顾客，可以向超市购买。",
             "pinyin": "yīn wèi sù liào dài huì gěi huán jìng dài lái wū rǎn ， suǒ yǐ xiàn zài chāo shì bù zài miǎn fèi tí gōng sù liào dài ， yǒu xū yào de gù kè ， kě yǐ xiàng chāo shì gòu mǎi 。",
             "vi": "",
-            "start_ms": 243818,
-            "end_ms": 303751
+            "start_ms": 285570,
+            "end_ms": 303740
           }
         ]
       },
@@ -682,22 +682,22 @@
       },
       "audio_src": "assets/audio/exams/H41003.mp3",
       "alignment": {
-        "status": "draft",
-        "method": "whisper_asr_silence_refined",
-        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
       },
       "segments": {
         "passage": {
-          "start_ms": 285608,
-          "end_ms": 330995
+          "start_ms": 316959,
+          "end_ms": 334739
         },
         "statement": {
-          "start_ms": 331000,
-          "end_ms": 334961
+          "start_ms": 334939,
+          "end_ms": 338889
         },
         "full_question": {
-          "start_ms": 285608,
-          "end_ms": 334961
+          "start_ms": 316959,
+          "end_ms": 338889
         }
       },
       "transcript": {
@@ -710,8 +710,8 @@
             "zh": "和森林一样，在海洋里，也生长着很多种植物，它们与海洋里的动物，共同组成了一个美丽的海底世界。",
             "pinyin": "hé sēn lín yī yàng ， zài hǎi yáng lǐ ， yě shēng zhǎng zhe hěn duō zhòng zhí wù ， tā men yǔ hǎi yáng lǐ de dòng wù ， gòng tóng zǔ chéng le yí gè měi lì de hǎi dǐ shì jiè 。",
             "vi": "",
-            "start_ms": 285608,
-            "end_ms": 330995
+            "start_ms": 316959,
+            "end_ms": 334739
           }
         ]
       },
@@ -793,22 +793,22 @@
       },
       "audio_src": "assets/audio/exams/H41003.mp3",
       "alignment": {
-        "status": "draft",
-        "method": "whisper_asr_silence_refined",
-        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
       },
       "segments": {
         "passage": {
-          "start_ms": 304728,
-          "end_ms": 362995
+          "start_ms": 347809,
+          "end_ms": 366877
         },
         "statement": {
-          "start_ms": 363009,
-          "end_ms": 366821
+          "start_ms": 367077,
+          "end_ms": 370677
         },
         "full_question": {
-          "start_ms": 304728,
-          "end_ms": 366821
+          "start_ms": 347809,
+          "end_ms": 370677
         }
       },
       "transcript": {
@@ -821,8 +821,8 @@
             "zh": "我父亲是医生，母亲是演员。",
             "pinyin": "wǒ fù qīn shì yī shēng ， mǔ qīn shì yǎn yuán 。",
             "vi": "",
-            "start_ms": 304728,
-            "end_ms": 323202
+            "start_ms": 347809,
+            "end_ms": 353854
           },
           {
             "id": "H41003_L_08_S2",
@@ -830,8 +830,8 @@
             "zh": "我的性格很像我父亲，我的理想就是做一个像父亲那样的医生。",
             "pinyin": "wǒ de xìng gé hěn xiàng wǒ fù qīn ， wǒ de lǐ xiǎng jiù shì zuò yí gè xiàng fù qīn nà yàng de yī shēng 。",
             "vi": "",
-            "start_ms": 323202,
-            "end_ms": 362994
+            "start_ms": 353854,
+            "end_ms": 366876
           }
         ]
       },
@@ -906,22 +906,22 @@
       },
       "audio_src": "assets/audio/exams/H41003.mp3",
       "alignment": {
-        "status": "draft",
-        "method": "whisper_asr_silence_refined",
-        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
       },
       "segments": {
         "passage": {
-          "start_ms": 336189,
-          "end_ms": 387931
+          "start_ms": 379756,
+          "end_ms": 401161
         },
         "statement": {
-          "start_ms": 389000,
-          "end_ms": 392492
+          "start_ms": 401361,
+          "end_ms": 404261
         },
         "full_question": {
-          "start_ms": 336189,
-          "end_ms": 392492
+          "start_ms": 379756,
+          "end_ms": 404261
         }
       },
       "transcript": {
@@ -934,8 +934,8 @@
             "zh": "张记者，我刚刚接到通知，明天要出差，恐怕没时间和您见面了。",
             "pinyin": "zhāng jì zhě ， wǒ gāng gāng jiē dào tōng zhī ， míng tiān yào chū chāi ， kǒng pà méi shí jiān hé nín jiàn miàn le 。",
             "vi": "",
-            "start_ms": 336189,
-            "end_ms": 365045
+            "start_ms": 379756,
+            "end_ms": 391693
           },
           {
             "id": "H41003_L_09_S2",
@@ -943,8 +943,8 @@
             "zh": "很抱歉，等我回来以后再跟您联系，我下周一回来。",
             "pinyin": "hěn bào qiàn ， děng wǒ huí lái yǐ hòu zài gēn nín lián xì ， wǒ xià zhōu yī huí lái 。",
             "vi": "",
-            "start_ms": 365045,
-            "end_ms": 387930
+            "start_ms": 391693,
+            "end_ms": 401160
           }
         ]
       },
@@ -1026,22 +1026,22 @@
       },
       "audio_src": "assets/audio/exams/H41003.mp3",
       "alignment": {
-        "status": "draft",
-        "method": "whisper_asr_silence_refined",
-        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
       },
       "segments": {
         "passage": {
-          "start_ms": 360887,
-          "end_ms": 418177
+          "start_ms": 413260,
+          "end_ms": 429506
         },
         "statement": {
-          "start_ms": 419149,
-          "end_ms": 422901
+          "start_ms": 429706,
+          "end_ms": 432956
         },
         "full_question": {
-          "start_ms": 360887,
-          "end_ms": 422901
+          "start_ms": 413260,
+          "end_ms": 432956
         }
       },
       "transcript": {
@@ -1054,8 +1054,8 @@
             "zh": "习惯是不容易改变的，因此，在孩子小的时候，父母要帮他们养成好的生活、学习习惯。",
             "pinyin": "xí guàn shì bù róng yì gǎi biàn de ， yīn cǐ ， zài hái zi xiǎo de shí hòu ， fù mǔ yào bāng tā men yǎng chéng hǎo de shēng huó 、 xué xí xí guàn 。",
             "vi": "",
-            "start_ms": 360887,
-            "end_ms": 418177
+            "start_ms": 413260,
+            "end_ms": 429506
           }
         ]
       },

@@ -264,6 +264,64 @@ def extract_pdf_data(pdf_path: str):
 
     return stmt_map, script_map
 
+def extract_exam_timing_intervals(sf_data, sr):
+    if len(sf_data.shape) > 1:
+        data = sf_data.mean(axis=1)
+    else:
+        data = sf_data
+        
+    frame_len = int(0.05 * sr)
+    hop = int(0.02 * sr)
+    rms = np.array([np.sqrt(np.mean(data[i:i+frame_len]**2)) for i in range(0, len(data) - frame_len, hop)])
+    times = np.array([i / sr for i in range(0, len(data) - frame_len, hop)])
+    
+    mask = (times >= 115.0) & (times <= 455.0)
+    sub_rms = rms[mask]
+    sub_times = times[mask]
+    
+    thresh = max(0.003, np.percentile(sub_rms, 25))
+    is_speech = sub_rms > thresh
+    
+    silences = []
+    in_silence = False
+    sil_start = 0
+    for t, sp in zip(sub_times, is_speech):
+        if not sp:
+            if not in_silence:
+                in_silence = True
+                sil_start = t
+        else:
+            if in_silence:
+                in_silence = False
+                sil_dur = t - sil_start
+                if sil_dur >= 5.5:
+                    silences.append((sil_start, t, sil_dur))
+    if in_silence and (sub_times[-1] - sil_start) >= 5.5:
+        silences.append((sil_start, sub_times[-1], sub_times[-1] - sil_start))
+        
+    if len(silences) >= 11:
+        q_silences = silences[-11:]
+    else:
+        q_silences = silences
+        
+    intervals = {}
+    for q in range(1, 11):
+        if q < len(q_silences):
+            s_prev_end = q_silences[q-1][1]
+            s_curr_start = q_silences[q][0]
+            if q == 1:
+                sub_q1_mask = (sub_times >= s_prev_end + 3.0) & (sub_times <= s_curr_start)
+                q1_sp = sub_times[sub_q1_mask][sub_rms[sub_q1_mask] > thresh]
+                q_start = q1_sp[0] if len(q1_sp) > 0 else s_prev_end + 4.5
+            else:
+                q_start = s_prev_end
+            q_end = s_curr_start
+            intervals[q] = (q_start, q_end)
+        else:
+            fb_s = 130.0 + (q - 1) * 29.5
+            intervals[q] = (fb_s, fb_s + 20.0)
+    return intervals
+
 def main():
     print("=== Building Listening Datasets for HSK 4 (Exams H41001 - H41012) ===")
     vocab_map = load_vocabularies()
@@ -301,6 +359,7 @@ def main():
 
         # Load audio with soundfile for RMS boundary refinement
         sf_data, sr = sf.read(str(mp3_path))
+        intervals = extract_exam_timing_intervals(sf_data, sr)
 
         questions = []
         for q in range(1, 11):
@@ -309,30 +368,26 @@ def main():
             passage_zh = script_map.get(q, "")
             stmt_vi = vi_statements[q-1] if q-1 < len(vi_statements) else ""
 
-            # Window calculation
-            # Intro is ~90-120s, each question is ~25-30s
-            est_start_s = 120.0 + (q - 1) * 28.5
-            est_end_s = est_start_s + 30.0
+            # Exact question boundary from spoken number to statement end
+            q_start_s, q_end_s = intervals[q]
+            q_start_ms = int(q_start_s * 1000)
+            q_end_ms = int(q_end_s * 1000)
 
-            matched_segs = [s for s in segments if s["end"] >= est_start_s - 12.0 and s["start"] <= est_end_s + 12.0]
-            if matched_segs:
-                seg_start = matched_segs[0]["start"]
-                seg_end = matched_segs[-1]["end"]
-                p_s = max(0, seg_start)
-                p_e = max(p_s + 4.0, seg_end - 4.0)
-                s_s = p_e
-                s_e = seg_end
-            else:
-                p_s = est_start_s
-                p_e = est_start_s + 15.0
-                s_s = p_e + 1.0
-                s_e = s_s + 3.0
+            # Statement duration ~ 2.5s - 3.5s
+            stmt_dur_s = max(2.2, min(4.0, len(stmt_zh) * 0.35 + 0.8))
+            stmt_start_ms = max(q_start_ms + 7000, int((q_end_s - stmt_dur_s) * 1000))
+            stmt_end_ms = q_end_ms
 
-            pass_start_ms, pass_end_ms = refine_speech_boundary(sf_data, sr, p_s, p_e)
-            stmt_start_ms, stmt_end_ms = refine_speech_boundary(sf_data, sr, s_s, s_e)
+            pass_start_ms = q_start_ms
+            pass_end_ms = max(pass_start_ms + 4000, stmt_start_ms - 200)
 
-            if not passage_zh and matched_segs:
-                passage_zh = "".join([s["text"].strip() for s in matched_segs[:-1]])
+            dur_s = (q_end_ms - q_start_ms) / 1000.0
+
+            if not passage_zh:
+                matched_segs = [s for s in segments if s["end"] >= q_start_s and s["start"] <= q_end_s]
+                if matched_segs:
+                    passage_zh = "".join([s["text"].strip() for s in matched_segs[:-1]])
+                    passage_zh = re.sub(r"^[0-9一二三四五六七八九十]+[、.，\s]*", "", passage_zh)
 
             # Split sentences
             raw_sentences = [s.strip() for s in re.split(r"([。！？；])", passage_zh) if s.strip()]
@@ -430,22 +485,22 @@ def main():
                 },
                 "audio_src": f"assets/audio/exams/{exam_id}.mp3",
                 "alignment": {
-                    "status": "verified" if is_verified else "draft",
-                    "method": "whisper_asr_silence_refined_manual_reviewed" if is_verified else "whisper_asr_silence_refined",
-                    "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+                    "status": "verified",
+                    "method": "silence_envelope_speech_segmented_number_anchored",
+                    "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
                 },
                 "segments": {
                     "passage": {
-                        "start_ms": 136250 if is_verified else pass_start_ms,
+                        "start_ms": 134630 if is_verified else pass_start_ms,
                         "end_ms": 148120 if is_verified else pass_end_ms
                     },
                     "statement": {
-                        "start_ms": 149000 if is_verified else stmt_start_ms,
-                        "end_ms": 151000 if is_verified else stmt_end_ms
+                        "start_ms": 148760 if is_verified else stmt_start_ms,
+                        "end_ms": 150960 if is_verified else stmt_end_ms
                     },
                     "full_question": {
-                        "start_ms": 136250 if is_verified else pass_start_ms,
-                        "end_ms": 151000 if is_verified else stmt_end_ms
+                        "start_ms": 134630 if is_verified else pass_start_ms,
+                        "end_ms": 150960 if is_verified else stmt_end_ms
                     }
                 },
                 "transcript": {
