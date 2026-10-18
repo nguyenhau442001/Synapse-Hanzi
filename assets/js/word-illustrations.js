@@ -52546,6 +52546,261 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "阴暗.svg",
     "src": "images/HSK_3.0/level7/阴暗.svg",
     "caption": "u ám, tăm tối, góc khuất"
+  },
+  "因地制宜": {
+    "file": "因地制宜.svg",
+    "src": "images/HSK_3.0/level7/因地制宜.svg",
+    "caption": "tùy theo điều kiện địa phương mà làm, linh hoạt theo từng nơi"
+  },
+  "阴历": {
+    "file": "阴历.svg",
+    "src": "images/HSK_3.0/level7/阴历.svg",
+    "caption": "âm lịch"
+  },
+  "殷勤": {
+    "file": "殷勤.svg",
+    "src": "images/HSK_3.0/level7/殷勤.svg",
+    "caption": "ân cần, niềm nở, chu đáo"
+  },
+  "因人而异": {
+    "file": "因人而异.svg",
+    "src": "images/HSK_3.0/level7/因人而异.svg",
+    "caption": "khác nhau tùy từng người, thay đổi theo mỗi người"
+  },
+  "阴性": {
+    "file": "阴性.svg",
+    "src": "images/HSK_3.0/level7/阴性.svg",
+    "caption": "âm tính (xét nghiệm y tế)"
+  },
+  "阴影": {
+    "file": "阴影.svg",
+    "src": "images/HSK_3.0/level7/阴影.svg",
+    "caption": "bóng râm, bóng đen tâm lý"
+  },
+  "银幕": {
+    "file": "银幕.svg",
+    "src": "images/HSK_3.0/level7/银幕.svg",
+    "caption": "màn bạc, màn ảnh rộng"
+  },
+  "瘾": {
+    "file": "瘾.svg",
+    "src": "images/HSK_3.0/level7/瘾.svg",
+    "caption": "cơn nghiện, tật mê say"
+  },
+  "隐含": {
+    "file": "隐含.svg",
+    "src": "images/HSK_3.0/level7/隐含.svg",
+    "caption": "ngụ ý, hàm chứa, ngầm có"
+  },
+  "引荐": {
+    "file": "引荐.svg",
+    "src": "images/HSK_3.0/level7/引荐.svg",
+    "caption": "tiến cử, giới thiệu"
+  },
+  "引经据典": {
+    "file": "引经据典.svg",
+    "src": "images/HSK_3.0/level7/引经据典.svg",
+    "caption": "dẫn kinh trích điển, trích dẫn sách vở cổ điển"
+  },
+  "引领": {
+    "file": "引领.svg",
+    "src": "images/HSK_3.0/level7/引领.svg",
+    "caption": "dẫn dắt, dẫn đầu, dẫn dắt xu thế"
+  },
+  "隐情": {
+    "file": "隐情.svg",
+    "src": "images/HSK_3.0/level7/隐情.svg",
+    "caption": "nỗi niềm u uẩn khó nói, uẩn khúc giấu kín"
+  },
+  "引人入胜": {
+    "file": "引人入胜.svg",
+    "src": "images/HSK_3.0/level7/引人入胜.svg",
+    "caption": "cuốn hút, hấp dẫn, lôi cuốn"
+  },
+  "引人注目": {
+    "file": "引人注目.svg",
+    "src": "images/HSK_3.0/level7/引人注目.svg",
+    "caption": "gây chú ý, bắt mắt, thu hút ánh nhìn"
+  },
+  "隐形": {
+    "file": "隐形.svg",
+    "src": "images/HSK_3.0/level7/隐形.svg",
+    "caption": "vô hình, tàng hình, ẩn"
+  },
+  "隐性": {
+    "file": "隐性.svg",
+    "src": "images/HSK_3.0/level7/隐性.svg",
+    "caption": "tính lặn, ngầm, tiềm ẩn"
+  },
+  "引诱": {
+    "file": "引诱.svg",
+    "src": "images/HSK_3.0/level7/引诱.svg",
+    "caption": "dụ dỗ, cám dỗ, quyến rũ"
+  },
+  "印章": {
+    "file": "印章.svg",
+    "src": "images/HSK_3.0/level7/印章.svg",
+    "caption": "con dấu, ấn chương"
+  },
+  "印证": {
+    "file": "印证.svg",
+    "src": "images/HSK_3.0/level7/印证.svg",
+    "caption": "minh chứng, kiểm chứng, làm sáng tỏ"
+  },
+  "鹰": {
+    "file": "鹰.svg",
+    "src": "images/HSK_3.0/level7/鹰.svg",
+    "caption": "chim ưng, chim đại bàng"
+  },
+  "应有尽有": {
+    "file": "应有尽有.svg",
+    "src": "images/HSK_3.0/level7/应有尽有.svg",
+    "caption": "cái gì cũng có, có đủ mọi thứ"
+  },
+  "荧光": {
+    "file": "荧光.svg",
+    "src": "images/HSK_3.0/level7/荧光.svg",
+    "caption": "huỳnh quang, phát sáng"
+  },
+  "迎合": {
+    "file": "迎合.svg",
+    "src": "images/HSK_3.0/level7/迎合.svg",
+    "caption": "xu nịnh, hùa theo, chiều theo"
+  },
+  "赢家": {
+    "file": "赢家.svg",
+    "src": "images/HSK_3.0/level7/赢家.svg",
+    "caption": "người thắng cuộc, bên chiến thắng"
+  },
+  "营救": {
+    "file": "营救.svg",
+    "src": "images/HSK_3.0/level7/营救.svg",
+    "caption": "cứu hộ, giải cứu"
+  },
+  "应": {
+    "file": "应.svg",
+    "src": "images/HSK_3.0/level7/应.svg",
+    "caption": "đáp ứng, ứng phó, ứng lời"
+  },
+  "硬币": {
+    "file": "硬币.svg",
+    "src": "images/HSK_3.0/level7/硬币.svg",
+    "caption": "đồng tiền xu"
+  },
+  "应急": {
+    "file": "应急.svg",
+    "src": "images/HSK_3.0/level7/应急.svg",
+    "caption": "ứng phó khẩn cấp, cứu nguy khẩn cấp"
+  },
+  "硬朗": {
+    "file": "硬朗.svg",
+    "src": "images/HSK_3.0/level7/硬朗.svg",
+    "caption": "khỏe khoắn, quắc thước, cứng cáp"
+  },
+  "硬盘": {
+    "file": "硬盘.svg",
+    "src": "images/HSK_3.0/level7/硬盘.svg",
+    "caption": "ổ cứng (máy tính)"
+  },
+  "涌": {
+    "file": "涌.svg",
+    "src": "images/HSK_3.0/level7/涌.svg",
+    "caption": "tuôn trào, trào dâng, ùa tới"
+  },
+  "永久": {
+    "file": "永久.svg",
+    "src": "images/HSK_3.0/level7/永久.svg",
+    "caption": "vĩnh viễn, lâu dài, vĩnh cửu"
+  },
+  "勇往直前": {
+    "file": "勇往直前.svg",
+    "src": "images/HSK_3.0/level7/勇往直前.svg",
+    "caption": "dũng cảm tiến lên phía trước, tiến thẳng không lùi bước"
+  },
+  "用意": {
+    "file": "用意.svg",
+    "src": "images/HSK_3.0/level7/用意.svg",
+    "caption": "dụng ý, ý định, mục đích"
+  },
+  "忧愁": {
+    "file": "忧愁.svg",
+    "src": "images/HSK_3.0/level7/忧愁.svg",
+    "caption": "buồn phiền, sầu muộn, lo âu"
+  },
+  "忧虑": {
+    "file": "忧虑.svg",
+    "src": "images/HSK_3.0/level7/忧虑.svg",
+    "caption": "lo lắng, ưu tư, bận lòng"
+  },
+  "悠闲": {
+    "file": "悠闲.svg",
+    "src": "images/HSK_3.0/level7/悠闲.svg",
+    "caption": "ung dung, thong dong, nhàn nhã"
+  },
+  "优雅": {
+    "file": "优雅.svg",
+    "src": "images/HSK_3.0/level7/优雅.svg",
+    "caption": "thanh lịch"
+  },
+  "邮编": {
+    "file": "邮编.svg",
+    "src": "images/HSK_3.0/level7/邮编.svg",
+    "caption": "mã bưu chính, mã zip"
+  },
+  "游船": {
+    "file": "游船.svg",
+    "src": "images/HSK_3.0/level7/游船.svg",
+    "caption": "du thuyền, thuyền du lịch"
+  },
+  "油画": {
+    "file": "油画.svg",
+    "src": "images/HSK_3.0/level7/油画.svg",
+    "caption": "tranh sơn dầu"
+  },
+  "尤为": {
+    "file": "尤为.svg",
+    "src": "images/HSK_3.0/level7/尤为.svg",
+    "caption": "càng, đặc biệt, hơn hết"
+  },
+  "游行": {
+    "file": "游行.svg",
+    "src": "images/HSK_3.0/level7/游行.svg",
+    "caption": "diễu hành, tuần hành"
+  },
+  "犹豫不决": {
+    "file": "犹豫不决.svg",
+    "src": "images/HSK_3.0/level7/犹豫不决.svg",
+    "caption": "do dự không quyết, chần chừ lưỡng lự"
+  },
+  "邮政": {
+    "file": "邮政.svg",
+    "src": "images/HSK_3.0/level7/邮政.svg",
+    "caption": "bưu chính, bưu điện"
+  },
+  "由衷": {
+    "file": "由衷.svg",
+    "src": "images/HSK_3.0/level7/由衷.svg",
+    "caption": "xuất phát từ đáy lòng, chân thành"
+  },
+  "有待": {
+    "file": "有待.svg",
+    "src": "images/HSK_3.0/level7/有待.svg",
+    "caption": "còn phải, cần chờ, chưa xong"
+  },
+  "有的放矢": {
+    "file": "有的放矢.svg",
+    "src": "images/HSK_3.0/level7/有的放矢.svg",
+    "caption": "bắn tên có đích, nói làm có mục đích rõ ràng"
+  },
+  "友善": {
+    "file": "友善.svg",
+    "src": "images/HSK_3.0/level7/友善.svg",
+    "caption": "thân thiện, hòa nhã"
+  },
+  "有声有色": {
+    "file": "有声有色.svg",
+    "src": "images/HSK_3.0/level7/有声有色.svg",
+    "caption": "sống động, sinh động có hồn, đặc sắc"
   }
 };
 
