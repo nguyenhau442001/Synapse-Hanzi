@@ -50801,6 +50801,256 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "息息相关.svg",
     "src": "images/HSK_3.0/level7/息息相关.svg",
     "caption": "liên quan khăng khít; gắn bó mật thiết"
+  },
+  "稀有": {
+    "file": "稀有.svg",
+    "src": "images/HSK_3.0/level7/稀有.svg",
+    "caption": "hiếm"
+  },
+  "锡纸": {
+    "file": "锡纸.svg",
+    "src": "images/HSK_3.0/level7/锡纸.svg",
+    "caption": "giấy bạc; lá thiếc"
+  },
+  "席": {
+    "file": "席.svg",
+    "src": "images/HSK_3.0/level7/席.svg",
+    "caption": "lời (lượng từ); bữa tiệc; ghế ngồi"
+  },
+  "席位": {
+    "file": "席位.svg",
+    "src": "images/HSK_3.0/level7/席位.svg",
+    "caption": "ghế; vị trí; chỗ ngồi (nghị viện)"
+  },
+  "喜出望外": {
+    "file": "喜出望外.svg",
+    "src": "images/HSK_3.0/level7/喜出望外.svg",
+    "caption": "mừng vui khôn xiết; mừng rỡ ngoài mong đợi"
+  },
+  "洗涤": {
+    "file": "洗涤.svg",
+    "src": "images/HSK_3.0/level7/洗涤.svg",
+    "caption": "gột rửa; giặt tẩy; thanh lọc"
+  },
+  "喜好": {
+    "file": "喜好.svg",
+    "src": "images/HSK_3.0/level7/喜好.svg",
+    "caption": "sở thích; thị hiếu"
+  },
+  "喜酒": {
+    "file": "喜酒.svg",
+    "src": "images/HSK_3.0/level7/喜酒.svg",
+    "caption": "rượu mừng; tiệc cưới"
+  },
+  "洗礼": {
+    "file": "洗礼.svg",
+    "src": "images/HSK_3.0/level7/洗礼.svg",
+    "caption": "tôi luyện; lễ rửa tội; gột rửa"
+  },
+  "喜怒哀乐": {
+    "file": "喜怒哀乐.svg",
+    "src": "images/HSK_3.0/level7/喜怒哀乐.svg",
+    "caption": "hỷ nộ ái ố; mọi cung bậc cảm xúc"
+  },
+  "喜庆": {
+    "file": "喜庆.svg",
+    "src": "images/HSK_3.0/level7/喜庆.svg",
+    "caption": "vui tươi hân hoan; rộn ràng tưng bừng"
+  },
+  "喜糖": {
+    "file": "喜糖.svg",
+    "src": "images/HSK_3.0/level7/喜糖.svg",
+    "caption": "kẹo cưới; kẹo mừng"
+  },
+  "喜洋洋": {
+    "file": "喜洋洋.svg",
+    "src": "images/HSK_3.0/level7/喜洋洋.svg",
+    "caption": "hớn hở tươi vui; rộn ràng niềm vui"
+  },
+  "细腻": {
+    "file": "细腻.svg",
+    "src": "images/HSK_3.0/level7/细腻.svg",
+    "caption": "tinh tế; tỉ mỉ; mịn màng"
+  },
+  "细微": {
+    "file": "细微.svg",
+    "src": "images/HSK_3.0/level7/细微.svg",
+    "caption": "nhỏ nhặt; tinh vi; vi tế"
+  },
+  "虾": {
+    "file": "虾.svg",
+    "src": "images/HSK_3.0/level7/虾.svg",
+    "caption": "con tôm"
+  },
+  "瑕疵": {
+    "file": "瑕疵.svg",
+    "src": "images/HSK_3.0/level7/瑕疵.svg",
+    "caption": "tì vết; khiếm khuyết nhỏ"
+  },
+  "辖区": {
+    "file": "辖区.svg",
+    "src": "images/HSK_3.0/level7/辖区.svg",
+    "caption": "địa bàn quản lý; khu vực quản hạt"
+  },
+  "狭小": {
+    "file": "狭小.svg",
+    "src": "images/HSK_3.0/level7/狭小.svg",
+    "caption": "chật hẹp; nhỏ hẹp"
+  },
+  "狭义": {
+    "file": "狭义.svg",
+    "src": "images/HSK_3.0/level7/狭义.svg",
+    "caption": "nghĩa hẹp"
+  },
+  "下半场": {
+    "file": "下半场.svg",
+    "src": "images/HSK_3.0/level7/下半场.svg",
+    "caption": "hiệp hai (thể thao)"
+  },
+  "下达": {
+    "file": "下达.svg",
+    "src": "images/HSK_3.0/level7/下达.svg",
+    "caption": "ban xuống; truyền đạt xuống (lệnh)"
+  },
+  "吓唬": {
+    "file": "吓唬.svg",
+    "src": "images/HSK_3.0/level7/吓唬.svg",
+    "caption": "hù dọa; dọa nạt"
+  },
+  "下滑": {
+    "file": "下滑.svg",
+    "src": "images/HSK_3.0/level7/下滑.svg",
+    "caption": "trượt dốc; suy giảm (chỉ số, doanh thu)"
+  },
+  "下级": {
+    "file": "下级.svg",
+    "src": "images/HSK_3.0/level7/下级.svg",
+    "caption": "cấp dưới"
+  },
+  "下令": {
+    "file": "下令.svg",
+    "src": "images/HSK_3.0/level7/下令.svg",
+    "caption": "thứ tự"
+  },
+  "下落": {
+    "file": "下落.svg",
+    "src": "images/HSK_3.0/level7/下落.svg",
+    "caption": "tung tích; nơi chốn"
+  },
+  "吓人": {
+    "file": "吓人.svg",
+    "src": "images/HSK_3.0/level7/吓人.svg",
+    "caption": "đáng sợ"
+  },
+  "下手": {
+    "file": "下手.svg",
+    "src": "images/HSK_3.0/level7/下手.svg",
+    "caption": "bắt tay vào làm; ra tay; hạ thủ"
+  },
+  "下台": {
+    "file": "下台.svg",
+    "src": "images/HSK_3.0/level7/下台.svg",
+    "caption": "từ chức; rời bỏ chức vụ; bước xuống đài"
+  },
+  "下调": {
+    "file": "下调.svg",
+    "src": "images/HSK_3.0/level7/下调.svg",
+    "caption": "điều chỉnh lại"
+  },
+  "下行": {
+    "file": "下行.svg",
+    "src": "images/HSK_3.0/level7/下行.svg",
+    "caption": "suy giảm đi xuống; áp lực đi xuống"
+  },
+  "下意识": {
+    "file": "下意识.svg",
+    "src": "images/HSK_3.0/level7/下意识.svg",
+    "caption": "theo phản xạ vô thức; tiềm thức"
+  },
+  "下游": {
+    "file": "下游.svg",
+    "src": "images/HSK_3.0/level7/下游.svg",
+    "caption": "hạ nguồn (chuỗi cung ứng); hạ lưu"
+  },
+  "下坠": {
+    "file": "下坠.svg",
+    "src": "images/HSK_3.0/level7/下坠.svg",
+    "caption": "rơi chùng xuống; sa xuống"
+  },
+  "掀": {
+    "file": "掀.svg",
+    "src": "images/HSK_3.0/level7/掀.svg",
+    "caption": "lật tung; vén lên; dấy lên"
+  },
+  "先锋": {
+    "file": "先锋.svg",
+    "src": "images/HSK_3.0/level7/先锋.svg",
+    "caption": "tiên phong; đội quân đi đầu"
+  },
+  "仙鹤": {
+    "file": "仙鹤.svg",
+    "src": "images/HSK_3.0/level7/仙鹤.svg",
+    "caption": "hạc tiên; chim hạc"
+  },
+  "鲜活": {
+    "file": "鲜活.svg",
+    "src": "images/HSK_3.0/level7/鲜活.svg",
+    "caption": "sinh động; tươi mới; chân thực"
+  },
+  "先例": {
+    "file": "先例.svg",
+    "src": "images/HSK_3.0/level7/先例.svg",
+    "caption": "tiền lệ"
+  },
+  "鲜美": {
+    "file": "鲜美.svg",
+    "src": "images/HSK_3.0/level7/鲜美.svg",
+    "caption": "thơm ngon đậm đà; tươi ngon"
+  },
+  "仙女": {
+    "file": "仙女.svg",
+    "src": "images/HSK_3.0/level7/仙女.svg",
+    "caption": "tiên nữ; nàng tiên"
+  },
+  "先天": {
+    "file": "先天.svg",
+    "src": "images/HSK_3.0/level7/先天.svg",
+    "caption": "bẩm sinh; tiên thiên"
+  },
+  "鲜血": {
+    "file": "鲜血.svg",
+    "src": "images/HSK_3.0/level7/鲜血.svg",
+    "caption": "máu tươi; dòng máu nóng"
+  },
+  "嫌弃": {
+    "file": "嫌弃.svg",
+    "src": "images/HSK_3.0/level7/嫌弃.svg",
+    "caption": "chê bỏ; ghét bỏ; ghẻ lạnh"
+  },
+  "闲置": {
+    "file": "闲置.svg",
+    "src": "images/HSK_3.0/level7/闲置.svg",
+    "caption": "để trống; bỏ không; nhàn rỗi"
+  },
+  "显而易见": {
+    "file": "显而易见.svg",
+    "src": "images/HSK_3.0/level7/显而易见.svg",
+    "caption": "hiển nhiên dễ thấy; rõ ràng"
+  },
+  "显赫": {
+    "file": "显赫.svg",
+    "src": "images/HSK_3.0/level7/显赫.svg",
+    "caption": "hiển hách; lẫy lừng"
+  },
+  "显露": {
+    "file": "显露.svg",
+    "src": "images/HSK_3.0/level7/显露.svg",
+    "caption": "bộc lộ; hiển lộ; lộ ra"
+  },
+  "显示器": {
+    "file": "显示器.svg",
+    "src": "images/HSK_3.0/level7/显示器.svg",
+    "caption": "màn hình hiển thị"
   }
 };
 

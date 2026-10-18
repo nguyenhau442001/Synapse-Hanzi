@@ -1,0 +1,42 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background subtle glowing focus beam -->
+  <path d="M70 210 L120 40 L170 210 Z" fill="#2A303C" opacity="0.4"/>
+  <circle cx="120" cy="110" r="50" fill="#2A303C" opacity="0.6"/>
+
+  <!-- Physical Object representing "显而易见" (The Magnifying Glass / Crystal Lens revealing clarity) -->
+  <!-- Magnifying Glass Shadow/Glow -->
+  <circle cx="120" cy="105" r="48" fill="#F39C12" opacity="0.15"/>
+  
+  <!-- Glass Rim (Outer) -->
+  <circle cx="120" cy="105" r="44" fill="none" stroke="#F39C12" stroke-width="6"/>
+  <!-- Glass Interior -->
+  <circle cx="120" cy="105" r="38" fill="#111318"/>
+  
+  <!-- Lens reflection highlight -->
+  <path d="M 98 85 A 32 32 0 0 1 142 85" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Visible Object inside the lens (A bright, crystal-clear illuminated core/diamond/light) -->
+  <polygon points="120,80 135,105 120,130 105,105" fill="#3498DB"/>
+  <polygon points="120,85 130,105 120,125 110,105" fill="#5DADE2"/>
+  <circle cx="120" cy="105" r="6" fill="#FFFFFF"/>
+
+  <!-- Magnifying Glass Handle -->
+  <path d="M 148 133 L 180 165" stroke="#E67E22" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 148 133 L 180 165" stroke="#F39C12" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Clarity Sparkles / Rays indicating "obviousness" -->
+  <g fill="#F39C12">
+    <!-- Top Sparkle -->
+    <path d="M 120 45 L 122 55 L 124 45 L 134 43 L 124 41 L 122 31 L 120 41 L 110 43 Z"/>
+    <!-- Right Sparkle -->
+    <path d="M 180 90 L 181 95 L 186 96 L 181 97 L 180 102 L 179 97 L 174 96 L 179 95 Z"/>
+    <!-- Left Sparkle -->
+    <path d="M 60 110 L 61 113 L 64 114 L 61 115 L 60 118 L 59 115 L 56 114 L 59 113 Z"/>
+  </g>
+
+  <!-- Ground shadow / base platform -->
+  <ellipse cx="120" cy="200" rx="60" ry="8" fill="#111318"/>
+</svg>
