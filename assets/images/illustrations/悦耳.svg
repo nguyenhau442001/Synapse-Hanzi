@@ -1,0 +1,67 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements: Subtle stylized mountain peaks and leaves representing the morning forest context -->
+  <path d="M30 200 L90 140 L150 200 Z" fill="#242833" opacity="0.6"/>
+  <path d="M110 200 L165 130 L220 200 Z" fill="#222630" opacity="0.8"/>
+  
+  <!-- Subtle glowing morning sun/glow behind the focal point -->
+  <circle cx="120" cy="115" r="55" fill="#3D3522" opacity="0.5"/>
+  <circle cx="120" cy="115" r="40" fill="#FFB703" opacity="0.08"/>
+
+  <!-- Sound wave ripples / Melodic resonance (Visualizing "êm tai, thánh thót") -->
+  <path d="M85 95 C75 105 75 125 85 135" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <path d="M72 82 C58 98 58 122 72 138" stroke="#FFB703" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.25"/>
+  
+  <path d="M155 95 C165 105 165 125 155 135" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <path d="M168 82 C182 98 182 122 168 138" stroke="#FFB703" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.25"/>
+
+  <!-- Main Branch / Perch for the bird -->
+  <path d="M40 160 C80 155 160 165 200 150" stroke="#4A5568" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M140 158 C155 140 170 120 185 105" stroke="#4A5568" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <!-- Decorative small leaves on branch -->
+  <path d="M75 156 C70 145 80 142 85 152 Z" fill="#2A9D8F"/>
+  <path d="M130 160 C135 148 145 150 140 162 Z" fill="#2A9D8F"/>
+
+  <!-- Physical Object / Character: A charming, clear songbird singing (representing 悦耳 - pleasant sound/birdsong) -->
+  <!-- Bird Body -->
+  <ellipse cx="115" cy="115" rx="26" ry="20" fill="#E76F51"/>
+  
+  <!-- Bird Breast (lighter tone for flat design depth) -->
+  <path d="M96 118 C96 130 115 135 128 125 C120 125 105 122 96 118 Z" fill="#F4A261"/>
+
+  <!-- Bird Head -->
+  <circle cx="132" cy="98" r="16" fill="#E76F51"/>
+
+  <!-- Bird Wing -->
+  <path d="M100 110 C115 110 125 125 110 132 C105 125 100 118 100 110 Z" fill="#D65F3F"/>
+
+  <!-- Bird Tail Feathers -->
+  <path d="M90 115 L65 105 L72 120 L60 125 L90 128 Z" fill="#D65F3F"/>
+
+  <!-- Bird Eye -->
+  <circle cx="137" cy="95" r="2.5" fill="#1A1D24"/>
+  <circle cx="138" cy="94" r="0.8" fill="#FFFFFF"/>
+
+  <!-- Bird Beaking (Open, singing) -->
+  <path d="M145 96 L158 93 L145 100 Z" fill="#FFB703"/>
+
+  <!-- Musical Notes / Sound Elements emanating from the bird's song -->
+  <g fill="#FFB703">
+    <!-- Note 1 -->
+    <ellipse cx="155" cy="70" rx="3.5" ry="2.5" transform="rotate(-20 155 70)"/>
+    <path d="M158 70 L158 58 L165 55 L165 58 L161 59 L161 70 Z"/>
+    
+    <!-- Note 2 -->
+    <ellipse cx="130" cy="55" rx="3" ry="2" transform="rotate(-15 130 55)"/>
+    <path d="M133 55 L133 44 L140 41 L140 44 L136 45 L136 55 Z"/>
+    
+    <!-- Floating Sparkles / Melodic notes -->
+    <circle cx="172" cy="78" r="2" opacity="0.8"/>
+    <circle cx="112" cy="65" r="1.5" opacity="0.7"/>
+    <polygon points="148,45 150,50 155,52 150,54 148,59 146,54 141,52 146,50" opacity="0.9"/>
+  </g>
+
+</svg>

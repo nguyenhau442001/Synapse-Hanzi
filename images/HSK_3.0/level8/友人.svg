@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Person 1 (Left) -->
+  <g transform="translate(60, 100)">
+    <circle cx="30" cy="20" r="15" fill="#FFB84D"/>
+    <path d="M15 40 Q30 30 45 40 L45 100 L15 100 Z" fill="#4D88FF"/>
+    <path d="M20 50 L30 60 L40 50" stroke="#1A1D24" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Person 2 (Right) -->
+  <g transform="translate(120, 100)">
+    <circle cx="30" cy="20" r="15" fill="#FFB84D"/>
+    <path d="M15 40 Q30 30 45 40 L45 100 L15 100 Z" fill="#FF8C4D"/>
+    <path d="M20 50 L30 60 L40 50" stroke="#1A1D24" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Handshake gesture -->
+  <g transform="translate(105, 140)">
+    <path d="M10 20 L30 10" stroke="#FFD700" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="10" cy="20" r="4" fill="#FFB84D"/>
+    <circle cx="30" cy="10" r="4" fill="#FF8C4D"/>
+  </g>
+
+  <!-- Ground line -->
+  <path d="M40 200 L200 200" stroke="#333B47" stroke-width="2" stroke-linecap="round"/>
+</svg>

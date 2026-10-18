@@ -1,0 +1,33 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Atmospheric background waves / radar sweep -->
+  <circle cx="120" cy="115" r="75" fill="none" stroke="#262B35" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <circle cx="120" cy="115" r="50" fill="none" stroke="#262B35" stroke-width="1.5"/>
+
+  <!-- Glowing background aura representing alert -->
+  <circle cx="120" cy="115" r="38" fill="#FFC107" opacity="0.12"/>
+
+  <!-- Main Warning Sign Body (Triangle) -->
+  <path d="M120 62 L168 144 Q171 149 166 151 L74 151 Q69 149 72 144 Z" fill="#222733" stroke="#FFC107" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- Inner Amber Glow / Hazard fill tint -->
+  <path d="M120 72 L159 139 Q161 142 157 144 L83 144 Q79 142 81 139 Z" fill="#FF9800" opacity="0.15"/>
+
+  <!-- Simplified Typhoon / Coastal Storm Icon inside triangle -->
+  <path d="M102 102 C102 96 110 92 120 96 C130 100 138 110 135 120 C132 128 123 133 117 128" fill="none" stroke="#FFC107" stroke-width="4" stroke-linecap="round"/>
+  <path d="M138 102 C142 108 141 118 132 124 C123 130 110 130 103 121" fill="none" stroke="#FFC107" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Exclamation mark / Alert core symbol -->
+  <rect x="116" y="94" width="8" height="26" rx="4" fill="#FFC107"/>
+  <circle cx="120" cy="132" r="4.5" fill="#FFC107"/>
+
+  <!-- Signal / Radio Waves emanating from the top -->
+  <path d="M102 46 C110 40 130 40 138 46" fill="none" stroke="#FF9800" stroke-width="3" stroke-linecap="round"/>
+  <path d="M94 37 C106 28 134 28 146 37" fill="none" stroke="#FF9800" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Base stand / pedestal -->
+  <path d="M104 151 L136 151 L142 162 L98 162 Z" fill="#2E3646" stroke="#404B60" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="90" y="162" width="60" height="6" rx="3" fill="#404B60"/>
+</svg>
