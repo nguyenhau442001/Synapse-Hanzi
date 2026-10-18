@@ -17,7 +17,7 @@
         "vi": "Hôm nay thời tiết khá tốt."
       },
       "answer": true,
-      "explanation_vi": "Nhận định đúng vì người nói cho biết nắng hôm nay đẹp và trời rất ấm áp.",
+      "explanation_vi": "Trời nhiều nắng và rất ấm áp, hoàn toàn phù hợp với nhận định thời tiết tốt.",
       "evidence": {
         "zh": "今天的阳光多好啊，很暖和。",
         "sentence_index": 1
@@ -118,6 +118,20 @@
           "vocab_id": 502,
           "level": "HSK4"
         }
+      ],
+      "key_expressions": [
+        {
+          "phrase": "阳光多好啊",
+          "pinyin": "yángguāng duō hǎo a",
+          "meaning_vi": "ánh nắng đẹp biết bao",
+          "note": "Cấu trúc cảm thán 多……啊 biểu thị sự tán thưởng."
+        },
+        {
+          "phrase": "暖和",
+          "pinyin": "nuǎnhuo",
+          "meaning_vi": "ấm áp",
+          "note": "Trạng thái thời tiết dễ chịu."
+        }
       ]
     },
     {
@@ -132,7 +146,7 @@
         "vi": "Hai người họ thường hay trò chuyện."
       },
       "answer": false,
-      "explanation_vi": "Nhận định sai. Người nói cho biết dù thường gặp trong thang máy nhưng hai người chưa từng nói chuyện với nhau (“从来没有说过话”).",
+      "explanation_vi": "Thường gặp trong thang máy không có nghĩa là hai người thường trò chuyện với nhau.",
       "evidence": {
         "zh": "从来没有说过话",
         "sentence_index": 1
@@ -159,62 +173,55 @@
       },
       "transcript": {
         "full_zh": "我经常在电梯里遇到她，可能她也在这座大楼里上班。但是我们从来没有说过话，只是看着很熟悉。",
-        "full_vi": "Tôi thường gặp cô ấy trong thang máy, có thể cô ấy cũng làm việc trong tòa nhà này. Nhưng chúng tôi chưa bao giờ nói chuyện, chỉ nhìn thấy quen mặt thôi.",
+        "full_vi": "Tôi thường gặp cô ấy trong thang máy, có lẽ cô ấy cũng làm việc trong tòa nhà này. Nhưng chúng tôi chưa từng nói chuyện với nhau, chỉ là nhìn thấy rất quen mặt.",
         "sentences": [
           {
             "id": "H41001_L_02_S1",
             "index": 0,
             "zh": "我经常在电梯里遇到她，可能她也在这座大楼里上班。",
             "pinyin": "Wǒ jīngcháng zài diàntī lǐ yùdào tā, kěnéng tā yě zài zhè zuò dàlóu lǐ shàngbān.",
-            "vi": "Tôi thường gặp cô ấy trong thang máy, có thể cô ấy cũng làm việc trong tòa nhà này.",
-            "start_ms": 162000,
-            "end_ms": 170000
+            "vi": "Tôi thường gặp cô ấy trong thang máy, có lẽ cô ấy cũng làm việc trong tòa nhà này.",
+            "start_ms": 160854,
+            "end_ms": 169165
           },
           {
             "id": "H41001_L_02_S2",
             "index": 1,
             "zh": "但是我们从来没有说过话，只是看着很熟悉。",
             "pinyin": "Dànshì wǒmen cónglái méiyǒu shuō guò huà, zhǐshì kànzhe hěn shúxī.",
-            "vi": "Nhưng chúng tôi chưa bao giờ nói chuyện, chỉ nhìn thấy quen mặt thôi.",
-            "start_ms": 170200,
-            "end_ms": 177100
+            "vi": "Nhưng chúng tôi chưa từng nói chuyện với nhau, chỉ là nhìn thấy rất quen mặt.",
+            "start_ms": 169165,
+            "end_ms": 176090
           }
         ]
       },
       "vocabulary_matches": [
         {
-          "word": "没有",
-          "pinyin": "méiyǒu",
-          "meaning_vi": "không có",
-          "vocab_id": 64,
-          "level": "HSK1"
+          "word": "从来",
+          "pinyin": "cónglái",
+          "meaning_vi": "từ trước tới nay",
+          "vocab_id": 43,
+          "level": "HSK4"
         },
         {
-          "word": "我们",
-          "pinyin": "wǒmen",
-          "meaning_vi": "chúng tôi, chúng ta",
-          "vocab_id": 112,
-          "level": "HSK1"
-        },
-        {
-          "word": "可能",
-          "pinyin": "kěnéng",
-          "meaning_vi": "có thể",
-          "vocab_id": 56,
-          "level": "HSK2"
-        },
-        {
-          "word": "上班",
-          "pinyin": "shàngbān",
-          "meaning_vi": "đi làm",
-          "vocab_id": 90,
-          "level": "HSK2"
+          "word": "熟悉",
+          "pinyin": "shúxī",
+          "meaning_vi": "quen thuộc, quen mặt",
+          "vocab_id": 392,
+          "level": "HSK4"
         },
         {
           "word": "电梯",
           "pinyin": "diàntī",
           "meaning_vi": "thang máy",
           "vocab_id": 51,
+          "level": "HSK3"
+        },
+        {
+          "word": "遇到",
+          "pinyin": "yùdào",
+          "meaning_vi": "gặp phải, bắt gặp",
+          "vocab_id": 271,
           "level": "HSK3"
         },
         {
@@ -227,16 +234,43 @@
         {
           "word": "聊天",
           "pinyin": "liáotiān",
-          "meaning_vi": "nói chuyện, chat",
+          "meaning_vi": "trò chuyện, tán gẫu",
           "vocab_id": 151,
           "level": "HSK3"
         },
         {
-          "word": "遇到",
-          "pinyin": "yùdào",
-          "meaning_vi": "gặp phải",
-          "vocab_id": 271,
-          "level": "HSK3"
+          "word": "上班",
+          "pinyin": "shàngbān",
+          "meaning_vi": "đi làm",
+          "vocab_id": 90,
+          "level": "HSK2"
+        },
+        {
+          "word": "可能",
+          "pinyin": "kěnéng",
+          "meaning_vi": "có thể, có lẽ",
+          "vocab_id": 56,
+          "level": "HSK2"
+        }
+      ],
+      "key_expressions": [
+        {
+          "phrase": "从来没有……过",
+          "pinyin": "cónglái méiyǒu... guò",
+          "meaning_vi": "chưa từng bao giờ...",
+          "note": "Cấu trúc phủ định diễn tả trải nghiệm từ trước đến nay chưa từng xảy ra."
+        },
+        {
+          "phrase": "只是",
+          "pinyin": "zhǐshì",
+          "meaning_vi": "chỉ là",
+          "note": "Biểu thị sự giới hạn hoặc chuyển ý nhẹ."
+        },
+        {
+          "phrase": "熟悉",
+          "pinyin": "shúxī",
+          "meaning_vi": "quen thuộc, quen mặt",
+          "note": "Từ vựng trọng tâm HSK 4."
         }
       ]
     },
@@ -252,7 +286,7 @@
         "vi": "Nấu canh cà chua trứng rất đơn giản."
       },
       "answer": true,
-      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Nấu canh cà chua trứng rất đơn giản.'.",
+      "explanation_vi": "Cách nấu không hề phức tạp, chỉ cần chuẩn bị cà chua và trứng là xong.",
       "evidence": {
         "zh": "西红柿鸡蛋汤的做法很简单，一点儿也不复杂",
         "sentence_index": 0
@@ -349,6 +383,20 @@
           "vocab_id": 126,
           "level": "HSK4"
         }
+      ],
+      "key_expressions": [
+        {
+          "phrase": "一点儿也不……",
+          "pinyin": "yìdiǎnr yě bù...",
+          "meaning_vi": "không hề... một chút nào",
+          "note": "Cấu trúc nhấn mạnh phủ định hoàn toàn."
+        },
+        {
+          "phrase": "保证",
+          "pinyin": "bǎozhèng",
+          "meaning_vi": "bảo đảm, cam đoan",
+          "note": "Khẳng định chắc chắn về kết quả."
+        }
       ]
     },
     {
@@ -363,7 +411,7 @@
         "vi": "Anh ấy thích chơi bóng rổ."
       },
       "answer": true,
-      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Anh ấy thích chơi bóng rổ.'.",
+      "explanation_vi": "Anh ấy là vận động viên bóng rổ nổi tiếng dù chỉ cao 1m60.",
       "evidence": {
         "zh": "他是世界上最著名的矮个子篮球运动员",
         "sentence_index": 0
@@ -455,6 +503,20 @@
           "vocab_id": 581,
           "level": "HSK4"
         }
+      ],
+      "key_expressions": [
+        {
+          "phrase": "矮个子",
+          "pinyin": "ǎi gèzi",
+          "meaning_vi": "người có vóc dáng thấp lùn",
+          "note": "Từ miêu tả ngoại hình."
+        },
+        {
+          "phrase": "不只是……也是……",
+          "pinyin": "bù zhǐshì... yě shì...",
+          "meaning_vi": "không chỉ là... mà còn là...",
+          "note": "Liên từ biểu thị quan hệ tăng tiến, bổ sung."
+        }
       ]
     },
     {
@@ -469,7 +531,7 @@
         "vi": "Tiểu Lưu đã được khen ngợi."
       },
       "answer": true,
-      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Tiểu Lưu đã được khen ngợi.'.",
+      "explanation_vi": "Tiểu Lưu hoàn thành sớm nhiệm vụ và được toàn thể đồng nghiệp vỗ tay khen ngợi.",
       "evidence": {
         "zh": "小刘已经提前完成了全年任务...让我们一起鼓掌祝贺小刘",
         "sentence_index": 1
@@ -575,6 +637,20 @@
           "vocab_id": 24,
           "level": "HSK4"
         }
+      ],
+      "key_expressions": [
+        {
+          "phrase": "提前",
+          "pinyin": "tíqián",
+          "meaning_vi": "trước thời hạn",
+          "note": "Hoàn thành sớm hơn dự kiến."
+        },
+        {
+          "phrase": "鼓掌祝贺",
+          "pinyin": "gǔzhǎng zhùhè",
+          "meaning_vi": "vỗ tay chúc mừng",
+          "note": "Hành động tán dương, khen ngợi tập thể."
+        }
       ]
     },
     {
@@ -589,7 +665,7 @@
         "vi": "Anh ấy vừa mới xuống máy bay."
       },
       "answer": false,
-      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Anh ấy vừa mới xuống máy bay.'.",
+      "explanation_vi": "Người nói đang ở sân bay chờ máy bay cất cánh chứ chưa hạ cánh xuống Bắc Kinh.",
       "evidence": {
         "zh": "飞机马上就要起飞了",
         "sentence_index": 2
@@ -704,6 +780,20 @@
           "vocab_id": 186,
           "level": "HSK3"
         }
+      ],
+      "key_expressions": [
+        {
+          "phrase": "出差",
+          "pinyin": "chūchāi",
+          "meaning_vi": "đi công tác",
+          "note": "Thuật ngữ công việc phổ biến HSK 4."
+        },
+        {
+          "phrase": "马上就要……了",
+          "pinyin": "mǎshàng jiù yào... le",
+          "meaning_vi": "sắp sửa... rồi",
+          "note": "Biểu thị hành động sắp diễn ra ngay lập tức."
+        }
       ]
     },
     {
@@ -718,7 +808,7 @@
         "vi": "Tính cách của hai chị em gần như nhau."
       },
       "answer": false,
-      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Tính cách của hai chị em gần như nhau.'.",
+      "explanation_vi": "Người chị trầm tĩnh ít nói còn người em gái thì ngược lại rất thích trò chuyện.",
       "evidence": {
         "zh": "性格却很不一样",
         "sentence_index": 0
@@ -824,6 +914,20 @@
           "vocab_id": 151,
           "level": "HSK3"
         }
+      ],
+      "key_expressions": [
+        {
+          "phrase": "性格",
+          "pinyin": "xìnggé",
+          "meaning_vi": "tính cách",
+          "note": "Đặc điểm tâm lý, tính tình của con người."
+        },
+        {
+          "phrase": "正好相反",
+          "pinyin": "zhènghǎo xiāngfǎn",
+          "meaning_vi": "hoàn toàn ngược lại",
+          "note": "So sánh đối lập giữa hai đối tượng."
+        }
       ]
     },
     {
@@ -838,7 +942,7 @@
         "vi": "Anh ấy muốn tặng Lão Vương một tấm vé xem biểu diễn."
       },
       "answer": true,
-      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Anh ấy muốn tặng Lão Vương một tấm vé xem biểu diễn.'.",
+      "explanation_vi": "Người nói bận tăng ca nên tặng vé cho Lão Vương đi xem biểu diễn thay mình.",
       "evidence": {
         "zh": "你去看吧，听说这次演出邀请了许多著名的演员",
         "sentence_index": 1
@@ -944,6 +1048,20 @@
           "vocab_id": 505,
           "level": "HSK4"
         }
+      ],
+      "key_expressions": [
+        {
+          "phrase": "加班",
+          "pinyin": "jiābān",
+          "meaning_vi": "tăng ca, làm thêm giờ",
+          "note": "Thuật ngữ công sở quen thuộc."
+        },
+        {
+          "phrase": "可惜",
+          "pinyin": "kěxī",
+          "meaning_vi": "đáng tiếc",
+          "note": "Bày tỏ cảm xúc tiếc nuối."
+        }
       ]
     },
     {
@@ -958,7 +1076,7 @@
         "vi": "Kết quả điều tra của Tiểu Trương được viết rất tốt."
       },
       "answer": false,
-      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Kết quả điều tra của Tiểu Trương được viết rất tốt.'.",
+      "explanation_vi": "Thứ được khen viết tốt là bản kế hoạch, còn kết quả điều tra tháng sau mới có.",
       "evidence": {
         "zh": "下个月我要看调查结果",
         "sentence_index": 1
@@ -1036,6 +1154,20 @@
           "vocab_id": 221,
           "level": "HSK4"
         }
+      ],
+      "key_expressions": [
+        {
+          "phrase": "计划书",
+          "pinyin": "jìhuàshū",
+          "meaning_vi": "bản kế hoạch",
+          "note": "Tài liệu đề xuất phương án làm việc."
+        },
+        {
+          "phrase": "按照",
+          "pinyin": "ànzhào",
+          "meaning_vi": "dựa theo, tuân theo",
+          "note": "Giới từ chỉ căn cứ thực hiện."
+        }
       ]
     },
     {
@@ -1050,7 +1182,7 @@
         "vi": "Con gái không đồng ý tiêm thuốc."
       },
       "answer": false,
-      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Con gái không đồng ý tiêm thuốc.'.",
+      "explanation_vi": "Bé tuy sợ tiêm nhưng vẫn ngoan ngoãn để bác sĩ tiêm và không hề khóc.",
       "evidence": {
         "zh": "三岁的女儿尽管很害怕打针，不过她没有哭",
         "sentence_index": 1
@@ -1155,6 +1287,20 @@
           "meaning_vi": "tiêm thuốc",
           "vocab_id": 70,
           "level": "HSK4"
+        }
+      ],
+      "key_expressions": [
+        {
+          "phrase": "打针",
+          "pinyin": "dǎzhēn",
+          "meaning_vi": "tiêm thuốc",
+          "note": "Thuật ngữ y tế quen thuộc."
+        },
+        {
+          "phrase": "尽管……不过……",
+          "pinyin": "jǐnguǎn... búguò...",
+          "meaning_vi": "dẫu cho... nhưng...",
+          "note": "Liên từ biểu thị sự nhượng bộ và chuyển ý."
         }
       ]
     }
