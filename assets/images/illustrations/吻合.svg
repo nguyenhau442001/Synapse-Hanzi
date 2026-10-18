@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background grid lines for forensic context -->
+  <path d="M40 120h160M120 40v160" stroke="#2D343E" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Left side: Fingerprint pattern (The evidence) -->
+  <g transform="translate(60, 80)">
+    <path d="M30 0C13.4 0 0 13.4 0 30s13.4 30 30 30 30-13.4 30-30S46.6 0 30 0zm0 52c-12.1 0-22-9.9-22-22s9.9-22 22-22 22 9.9 22 22-9.9 22-22 22z" fill="#FFB84D"/>
+    <path d="M30 12c-9.9 0-18 8.1-18 18s8.1 18 18 18 18-8.1 18-18-8.1-18-18-18z" fill="#FFB84D" opacity="0.6"/>
+    <path d="M30 20c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10z" fill="#FFB84D" opacity="0.3"/>
+  </g>
+  
+  <!-- Right side: Matching fingerprint pattern (The suspect) -->
+  <g transform="translate(120, 80)">
+    <path d="M30 0C13.4 0 0 13.4 0 30s13.4 30 30 30 30-13.4 30-30S46.6 0 30 0zm0 52c-12.1 0-22-9.9-22-22s9.9-22 22-22 22 9.9 22 22-9.9 22-22 22z" fill="#FFB84D"/>
+    <path d="M30 12c-9.9 0-18 8.1-18 18s8.1 18 18 18 18-8.1 18-18-8.1-18-18-18z" fill="#FFB84D" opacity="0.6"/>
+    <path d="M30 20c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10z" fill="#FFB84D" opacity="0.3"/>
+  </g>
+  
+  <!-- Connection/Verification indicator -->
+  <path d="M100 110l40 20" stroke="#FFB84D" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="120" cy="120" r="8" fill="#FFB84D"/>
+</svg>

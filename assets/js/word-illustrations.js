@@ -50292,10 +50292,260 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/旺季.svg",
     "caption": "mùa cao điểm; mùa làm ăn phát đạt"
   },
+  "旺盛": {
+    "file": "旺盛.svg",
+    "src": "images/HSK_3.0/level7/旺盛.svg",
+    "caption": "dồi dào; tràn trề; sung mãn"
+  },
   "望远镜": {
     "file": "望远镜.svg",
     "src": "images/HSK_3.0/level7/望远镜.svg",
     "caption": "kính viễn vọng; ống nhòm"
+  },
+  "微": {
+    "file": "微.svg",
+    "src": "images/HSK_3.0/level7/微.svg",
+    "caption": "nhỏ bé; vi mô; khẽ"
+  },
+  "微波炉": {
+    "file": "微波炉.svg",
+    "src": "images/HSK_3.0/level7/微波炉.svg",
+    "caption": "lò vi sóng"
+  },
+  "危及": {
+    "file": "危及.svg",
+    "src": "images/HSK_3.0/level7/危及.svg",
+    "caption": "đe dọa; làm nguy hại đến"
+  },
+  "危急": {
+    "file": "危急.svg",
+    "src": "images/HSK_3.0/level7/危急.svg",
+    "caption": "nguy cấp; cấp bách hiểm nghèo"
+  },
+  "微妙": {
+    "file": "微妙.svg",
+    "src": "images/HSK_3.0/level7/微妙.svg",
+    "caption": "tế nhị; nhạy cảm khó lường; vi diệu"
+  },
+  "微弱": {
+    "file": "微弱.svg",
+    "src": "images/HSK_3.0/level7/微弱.svg",
+    "caption": "yếu ớt; mờ nhạt; le lói"
+  },
+  "威慑": {
+    "file": "威慑.svg",
+    "src": "images/HSK_3.0/level7/威慑.svg",
+    "caption": "răn đe; thị uy; uy hiếp"
+  },
+  "微生物": {
+    "file": "微生物.svg",
+    "src": "images/HSK_3.0/level7/微生物.svg",
+    "caption": "vi sinh vật"
+  },
+  "微微": {
+    "file": "微微.svg",
+    "src": "images/HSK_3.0/level7/微微.svg",
+    "caption": "nhè nhẹ; khẽ khàng; mỉm cười khẽ"
+  },
+  "微型": {
+    "file": "微型.svg",
+    "src": "images/HSK_3.0/level7/微型.svg",
+    "caption": "siêu nhỏ; thu nhỏ; mini"
+  },
+  "唯": {
+    "file": "唯.svg",
+    "src": "images/HSK_3.0/level7/唯.svg",
+    "caption": "duy chỉ; chỉ; duy nhất"
+  },
+  "围观": {
+    "file": "围观.svg",
+    "src": "images/HSK_3.0/level7/围观.svg",
+    "caption": "xúm lại xem; vây quanh xem"
+  },
+  "围墙": {
+    "file": "围墙.svg",
+    "src": "images/HSK_3.0/level7/围墙.svg",
+    "caption": "tường rào; tường bao quanh"
+  },
+  "维权": {
+    "file": "维权.svg",
+    "src": "images/HSK_3.0/level7/维权.svg",
+    "caption": "bảo vệ quyền lợi hợp pháp"
+  },
+  "为人": {
+    "file": "为人.svg",
+    "src": "images/HSK_3.0/level7/为人.svg",
+    "caption": "làm người; phẩm cách; đối nhân xử thế"
+  },
+  "唯有": {
+    "file": "唯有.svg",
+    "src": "images/HSK_3.0/level7/唯有.svg",
+    "caption": "chỉ có; duy chỉ có"
+  },
+  "违约": {
+    "file": "违约.svg",
+    "src": "images/HSK_3.0/level7/违约.svg",
+    "caption": "vi phạm hợp đồng; bội ước"
+  },
+  "违章": {
+    "file": "违章.svg",
+    "src": "images/HSK_3.0/level7/违章.svg",
+    "caption": "vi phạm"
+  },
+  "尾气": {
+    "file": "尾气.svg",
+    "src": "images/HSK_3.0/level7/尾气.svg",
+    "caption": "khí thải (xe cộ)"
+  },
+  "尾声": {
+    "file": "尾声.svg",
+    "src": "images/HSK_3.0/level7/尾声.svg",
+    "caption": "hồi kết; đoạn kết; vĩ thanh"
+  },
+  "萎缩": {
+    "file": "萎缩.svg",
+    "src": "images/HSK_3.0/level7/萎缩.svg",
+    "caption": "co cụm; suy thoái; teo tóp"
+  },
+  "味精": {
+    "file": "味精.svg",
+    "src": "images/HSK_3.0/level7/味精.svg",
+    "caption": "mì chính; bột ngọt"
+  },
+  "慰劳": {
+    "file": "慰劳.svg",
+    "src": "images/HSK_3.0/level7/慰劳.svg",
+    "caption": "thăm hỏi động viên; khao thưởng; úy lao"
+  },
+  "卫视": {
+    "file": "卫视.svg",
+    "src": "images/HSK_3.0/level7/卫视.svg",
+    "caption": "truyền hình vệ tinh"
+  },
+  "畏缩": {
+    "file": "畏缩.svg",
+    "src": "images/HSK_3.0/level7/畏缩.svg",
+    "caption": "chùn bước; co rúm sợ hãi"
+  },
+  "喂养": {
+    "file": "喂养.svg",
+    "src": "images/HSK_3.0/level7/喂养.svg",
+    "caption": "cho ăn; nuôi dưỡng (động vật, trẻ nhỏ)"
+  },
+  "未知数": {
+    "file": "未知数.svg",
+    "src": "images/HSK_3.0/level7/未知数.svg",
+    "caption": "ẩn số; điều chưa biết"
+  },
+  "位子": {
+    "file": "位子.svg",
+    "src": "images/HSK_3.0/level7/位子.svg",
+    "caption": "chỗ ngồi; vị trí"
+  },
+  "温差": {
+    "file": "温差.svg",
+    "src": "images/HSK_3.0/level7/温差.svg",
+    "caption": "độ chênh nhiệt; chênh lệch nhiệt độ"
+  },
+  "温度计": {
+    "file": "温度计.svg",
+    "src": "images/HSK_3.0/level7/温度计.svg",
+    "caption": "nhiệt kế"
+  },
+  "温泉": {
+    "file": "温泉.svg",
+    "src": "images/HSK_3.0/level7/温泉.svg",
+    "caption": "suối nước nóng"
+  },
+  "温室": {
+    "file": "温室.svg",
+    "src": "images/HSK_3.0/level7/温室.svg",
+    "caption": "nhà kính (nông nghiệp)"
+  },
+  "温习": {
+    "file": "温习.svg",
+    "src": "images/HSK_3.0/level7/温习.svg",
+    "caption": "ôn tập; ôn lại bài"
+  },
+  "温馨": {
+    "file": "温馨.svg",
+    "src": "images/HSK_3.0/level7/温馨.svg",
+    "caption": "sự ấm áp"
+  },
+  "瘟疫": {
+    "file": "瘟疫.svg",
+    "src": "images/HSK_3.0/level7/瘟疫.svg",
+    "caption": "ôn dịch; dịch bệnh truyền nhiễm"
+  },
+  "文": {
+    "file": "文.svg",
+    "src": "images/HSK_3.0/level7/文.svg",
+    "caption": "văn tự; chữ viết; văn"
+  },
+  "文盲": {
+    "file": "文盲.svg",
+    "src": "images/HSK_3.0/level7/文盲.svg",
+    "caption": "mù chữ; người mù chữ"
+  },
+  "文人": {
+    "file": "文人.svg",
+    "src": "images/HSK_3.0/level7/文人.svg",
+    "caption": "văn nhân; mặc khách; học giả"
+  },
+  "蚊帐": {
+    "file": "蚊帐.svg",
+    "src": "images/HSK_3.0/level7/蚊帐.svg",
+    "caption": "màn; mùng chống muỗi"
+  },
+  "蚊子": {
+    "file": "蚊子.svg",
+    "src": "images/HSK_3.0/level7/蚊子.svg",
+    "caption": "con muỗi"
+  },
+  "稳": {
+    "file": "稳.svg",
+    "src": "images/HSK_3.0/level7/稳.svg",
+    "caption": "vững vàng; chắc chắn; ổn định"
+  },
+  "稳固": {
+    "file": "稳固.svg",
+    "src": "images/HSK_3.0/level7/稳固.svg",
+    "caption": "vững chắc; kiên cố; bền vững"
+  },
+  "吻合": {
+    "file": "吻合.svg",
+    "src": "images/HSK_3.0/level7/吻合.svg",
+    "caption": "trùng khớp; ăn khớp hoàn toàn"
+  },
+  "稳健": {
+    "file": "稳健.svg",
+    "src": "images/HSK_3.0/level7/稳健.svg",
+    "caption": "vững vàng; thận trọng kiên định"
+  },
+  "紊乱": {
+    "file": "紊乱.svg",
+    "src": "images/HSK_3.0/level7/紊乱.svg",
+    "caption": "rối loạn; hỗn loạn"
+  },
+  "稳妥": {
+    "file": "稳妥.svg",
+    "src": "images/HSK_3.0/level7/稳妥.svg",
+    "caption": "ổn thỏa; chắc chắn; thỏa đáng"
+  },
+  "稳重": {
+    "file": "稳重.svg",
+    "src": "images/HSK_3.0/level7/稳重.svg",
+    "caption": "đĩnh đạc; chín chắn; điềm đạm"
+  },
+  "卧": {
+    "file": "卧.svg",
+    "src": "images/HSK_3.0/level7/卧.svg",
+    "caption": "nằm; ngả lưng"
+  },
+  "卧铺": {
+    "file": "卧铺.svg",
+    "src": "images/HSK_3.0/level7/卧铺.svg",
+    "caption": "giường nằm (tàu, xe)"
   }
 };
 
