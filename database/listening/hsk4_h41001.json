@@ -25,8 +25,8 @@
       "audio_src": "assets/audio/exams/H41001.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa. Đã hiệu chỉnh đầy đủ từng câu thoại và từ vựng."
       },
       "segments": {
         "passage": {
@@ -141,7 +141,7 @@
       "alignment": {
         "status": "verified",
         "method": "whisper_word_level_acoustic_aligned",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa. Đã hiệu chỉnh đầy đủ âm cuối '很熟悉'."
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa. Đã hiệu chỉnh đầy đủ từng câu thoại và từ vựng."
       },
       "segments": {
         "passage": {
@@ -254,41 +254,41 @@
       "answer": true,
       "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Nấu canh cà chua trứng rất đơn giản.'.",
       "evidence": {
-        "zh": "西红柿鸡蛋汤的做法很简单，一点儿也不复杂，准备几个西红柿和鸡蛋就可以了，我保证你一次就能学会。",
+        "zh": "西红柿鸡蛋汤的做法很简单，一点儿也不复杂",
         "sentence_index": 0
       },
       "audio_src": "assets/audio/exams/H41001.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa. Đã hiệu chỉnh đầy đủ từng câu thoại và từ vựng."
       },
       "segments": {
         "passage": {
-          "start_ms": 189928,
-          "end_ms": 206161
+          "start_ms": 189500,
+          "end_ms": 206200
         },
         "statement": {
-          "start_ms": 206361,
-          "end_ms": 210361
+          "start_ms": 206800,
+          "end_ms": 210200
         },
         "full_question": {
-          "start_ms": 189928,
-          "end_ms": 210361
+          "start_ms": 189500,
+          "end_ms": 210200
         }
       },
       "transcript": {
         "full_zh": "西红柿鸡蛋汤的做法很简单，一点儿也不复杂，准备几个西红柿和鸡蛋就可以了，我保证你一次就能学会。",
-        "full_vi": "",
+        "full_vi": "Cách nấu canh cà chua trứng rất đơn giản, không hề phức tạp chút nào, chỉ cần chuẩn bị vài quả cà chua và trứng là được, tôi đảm bảo bạn học một lần là biết làm ngay.",
         "sentences": [
           {
             "id": "H41001_L_03_S1",
             "index": 0,
             "zh": "西红柿鸡蛋汤的做法很简单，一点儿也不复杂，准备几个西红柿和鸡蛋就可以了，我保证你一次就能学会。",
-            "pinyin": "xī hóng shì jī dàn tāng de zuò fǎ hěn jiǎn dān ， yì diǎn ér yě bù fù zá ， zhǔn bèi jǐ gè xī hóng shì hé jī dàn jiù kě yǐ le ， wǒ bǎo zhèng nǐ yī cì jiù néng xué huì 。",
-            "vi": "",
-            "start_ms": 189928,
-            "end_ms": 206161
+            "pinyin": "Xīhóngshì jīdàntāng de zuòfǎ hěn jiǎndān, yìdiǎnr yě bù fùzá, zhǔnbèi jǐ gè xīhóngshì hé jīdàn jiù kěyǐ le, wǒ bǎozhèng nǐ yícì jiù néng xuéhuì.",
+            "vi": "Cách nấu canh cà chua trứng rất đơn giản, không hề phức tạp chút nào, chỉ cần chuẩn bị vài quả cà chua và trứng là được, tôi đảm bảo bạn học một lần là biết làm ngay.",
+            "start_ms": 191000,
+            "end_ms": 206200
           }
         ]
       },
@@ -365,59 +365,50 @@
       "answer": true,
       "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Anh ấy thích chơi bóng rổ.'.",
       "evidence": {
-        "zh": "身高只有一米六零，他是世界上最著名的矮个子篮球运动员。",
+        "zh": "他是世界上最著名的矮个子篮球运动员",
         "sentence_index": 0
       },
       "audio_src": "assets/audio/exams/H41001.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa. Đã hiệu chỉnh đầy đủ từng câu thoại và từ vựng."
       },
       "segments": {
         "passage": {
-          "start_ms": 220339,
-          "end_ms": 240865
+          "start_ms": 220000,
+          "end_ms": 241700
         },
         "statement": {
-          "start_ms": 241065,
-          "end_ms": 243965
+          "start_ms": 241800,
+          "end_ms": 244000
         },
         "full_question": {
-          "start_ms": 220339,
-          "end_ms": 243965
+          "start_ms": 220000,
+          "end_ms": 244000
         }
       },
       "transcript": {
         "full_zh": "身高只有一米六零，他是世界上最著名的矮个子篮球运动员。他曾经说过：“篮球不只是让那些高个子打的，也是给那些喜欢它的人们打的。”",
-        "full_vi": "",
+        "full_vi": "Chiều cao chỉ có 1m60, anh ấy là cầu thủ bóng rổ lùn nổi tiếng nhất thế giới. Anh ấy từng nói: “Bóng rổ không chỉ dành cho những người cao chơi, mà còn dành cho tất cả những ai yêu thích nó.”",
         "sentences": [
           {
             "id": "H41001_L_04_S1",
             "index": 0,
             "zh": "身高只有一米六零，他是世界上最著名的矮个子篮球运动员。",
-            "pinyin": "shēn gāo zhǐ yǒu yī mǐ liù líng ， tā shì shì jiè shàng zuì zhù míng de ǎi gè zi lán qiú yùn dòng yuán 。",
-            "vi": "",
-            "start_ms": 220339,
-            "end_ms": 229135
+            "pinyin": "Shēngāo zhǐyǒu yī mǐ liù líng, tā shì shìjiè shang zuì zhùmíng de ǎigèzi lánqiú yùndòngyuán.",
+            "vi": "Chiều cao chỉ có 1m60, anh ấy là cầu thủ bóng rổ lùn nổi tiếng nhất thế giới.",
+            "start_ms": 220300,
+            "end_ms": 230300
           },
           {
             "id": "H41001_L_04_S2",
             "index": 1,
-            "zh": "他曾经说过：“篮球不只是让那些高个子打的，也是给那些喜欢它的人们打的。",
-            "pinyin": "tā céng jīng shuō guò ：“ lán qiú bù zhǐ shì ràng nà xiē gāo gè zi dǎ dī ， yě shì gěi nà xiē xǐ huān tā de rén men dǎ dī 。",
-            "vi": "",
-            "start_ms": 229135,
-            "end_ms": 240538
-          },
-          {
-            "id": "H41001_L_04_S3",
-            "index": 2,
-            "zh": "”",
-            "pinyin": "”",
-            "vi": "",
-            "start_ms": 240538,
-            "end_ms": 240863
+            "zh": "他曾经说过：“篮球不只是让那些高个子打的，也是给那些喜欢它的人们打的。”",
+            "pinyin": "Tā céngjīng shuō guò: “Lánqiú bù zhǐshì ràng nàxiē gāogèzi dǎ de, yě shì gěi nàxiē xǐhuan tā de rénmen dǎ de.”",
+            "vi": "Anh ấy từng nói: “Bóng rổ không chỉ dành cho những người cao chơi, mà còn dành cho tất cả những ai yêu thích nó.”",
+            "start_ms": 230400,
+            "end_ms": 241700
           }
         ]
       },
@@ -480,50 +471,50 @@
       "answer": true,
       "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Tiểu Lưu đã được khen ngợi.'.",
       "evidence": {
-        "zh": "小刘已经提前完成了全年任务，我希望你们各位也都能像小刘一样，希望你们加油！",
-        "sentence_index": 0
+        "zh": "小刘已经提前完成了全年任务...让我们一起鼓掌祝贺小刘",
+        "sentence_index": 1
       },
       "audio_src": "assets/audio/exams/H41001.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa. Đã hiệu chỉnh đầy đủ từng câu thoại và từ vựng."
       },
       "segments": {
         "passage": {
-          "start_ms": 253803,
-          "end_ms": 271773
+          "start_ms": 253300,
+          "end_ms": 272400
         },
         "statement": {
-          "start_ms": 271973,
-          "end_ms": 275573
+          "start_ms": 273500,
+          "end_ms": 275500
         },
         "full_question": {
-          "start_ms": 253803,
-          "end_ms": 275573
+          "start_ms": 253300,
+          "end_ms": 275500
         }
       },
       "transcript": {
         "full_zh": "小刘已经提前完成了全年任务，我希望你们各位也都能像小刘一样，希望你们加油！好，现在让我们一起鼓掌祝贺小刘！",
-        "full_vi": "",
+        "full_vi": "Tiểu Lưu đã hoàn thành vượt trước thời hạn chỉ tiêu cả năm, tôi hy vọng các bạn ở đây ai cũng có thể làm được như Tiểu Lưu, mong mọi người cùng cố gắng! Được rồi, bây giờ chúng ta hãy cùng vỗ tay chúc mừng Tiểu Lưu nào!",
         "sentences": [
           {
             "id": "H41001_L_05_S1",
             "index": 0,
             "zh": "小刘已经提前完成了全年任务，我希望你们各位也都能像小刘一样，希望你们加油！",
-            "pinyin": "xiǎo liú yǐ jīng tí qián wán chéng le quán nián rèn wù ， wǒ xī wàng nǐ men gè wèi yě dōu néng xiàng xiǎo liú yī yàng ， xī wàng nǐ men jiā yóu ！",
-            "vi": "",
-            "start_ms": 253803,
-            "end_ms": 266348
+            "pinyin": "Xiǎo Liú yǐjīng tíqián wánchéng le quán nián rènwù, wǒ xīwàng nǐmen gèwèi yě dōu néng xiàng Xiǎo Liú yíyàng, xīwàng nǐmen jiāyóu!",
+            "vi": "Tiểu Lưu đã hoàn thành vượt trước thời hạn chỉ tiêu cả năm, tôi hy vọng các bạn ở đây ai cũng có thể làm được như Tiểu Lưu, mong mọi người cùng cố gắng!",
+            "start_ms": 254800,
+            "end_ms": 266400
           },
           {
             "id": "H41001_L_05_S2",
             "index": 1,
             "zh": "好，现在让我们一起鼓掌祝贺小刘！",
-            "pinyin": "hǎo ， xiàn zài ràng wǒ men yì qǐ gǔ zhǎng zhù hè xiǎo liú ！",
-            "vi": "",
-            "start_ms": 266348,
-            "end_ms": 271772
+            "pinyin": "Hǎo, xiànzài ràng wǒmen yìqǐ gǔzhǎng zhùhè Xiǎo Liú!",
+            "vi": "Được rồi, bây giờ chúng ta hãy cùng vỗ tay chúc mừng Tiểu Lưu nào!",
+            "start_ms": 266400,
+            "end_ms": 272400
           }
         ]
       },
@@ -600,59 +591,59 @@
       "answer": false,
       "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Anh ấy vừa mới xuống máy bay.'.",
       "evidence": {
-        "zh": "喂，是你啊，我今天去北京出差。",
-        "sentence_index": 0
+        "zh": "飞机马上就要起飞了",
+        "sentence_index": 2
       },
       "audio_src": "assets/audio/exams/H41001.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa. Đã hiệu chỉnh đầy đủ từng câu thoại và từ vựng."
       },
       "segments": {
         "passage": {
-          "start_ms": 285531,
-          "end_ms": 303882
+          "start_ms": 285200,
+          "end_ms": 304200
         },
         "statement": {
-          "start_ms": 304082,
-          "end_ms": 306982
+          "start_ms": 305000,
+          "end_ms": 307000
         },
         "full_question": {
-          "start_ms": 285531,
-          "end_ms": 306982
+          "start_ms": 285200,
+          "end_ms": 307000
         }
       },
       "transcript": {
         "full_zh": "喂，是你啊，我今天去北京出差。我现在在机场，等我到了北京以后再给你打电话好吗？飞机马上就要起飞了。",
-        "full_vi": "",
+        "full_vi": "A lô, cậu à, hôm nay tớ đi Bắc Kinh công tác. Bây giờ tớ đang ở sân bay, đợi tớ đến Bắc Kinh rồi gọi lại cho cậu nhé? Máy bay sắp sửa cất cánh rồi.",
         "sentences": [
           {
             "id": "H41001_L_06_S1",
             "index": 0,
             "zh": "喂，是你啊，我今天去北京出差。",
-            "pinyin": "wèi ， shì nǐ a ， wǒ jīn tiān qù běi jīng chū chāi 。",
-            "vi": "",
-            "start_ms": 285531,
-            "end_ms": 291148
+            "pinyin": "Wèi, shì nǐ a, wǒ jīntiān qù Běijīng chūchāi.",
+            "vi": "A lô, cậu à, hôm nay tớ đi Bắc Kinh công tác.",
+            "start_ms": 287000,
+            "end_ms": 292200
           },
           {
             "id": "H41001_L_06_S2",
             "index": 1,
             "zh": "我现在在机场，等我到了北京以后再给你打电话好吗？",
-            "pinyin": "wǒ xiàn zài zài jī chǎng ， děng wǒ dào le běi jīng yǐ hòu zài gěi nǐ dǎ diàn huà hǎo ma ？",
-            "vi": "",
-            "start_ms": 291148,
-            "end_ms": 300136
+            "pinyin": "Wǒ xiànzài zài jīchǎng, děng wǒ dào le Běijīng yǐhòu zài gěi nǐ dǎ diànhuà hǎo ma?",
+            "vi": "Bây giờ tớ đang ở sân bay, đợi tớ đến Bắc Kinh rồi gọi lại cho cậu nhé?",
+            "start_ms": 293000,
+            "end_ms": 300500
           },
           {
             "id": "H41001_L_06_S3",
             "index": 2,
             "zh": "飞机马上就要起飞了。",
-            "pinyin": "fēi jī mǎ shàng jiù yào qǐ fēi le 。",
-            "vi": "",
-            "start_ms": 300136,
-            "end_ms": 303881
+            "pinyin": "Fēijī mǎshàng jiù yào qǐfēi le.",
+            "vi": "Máy bay sắp sửa cất cánh rồi.",
+            "start_ms": 301300,
+            "end_ms": 304200
           }
         ]
       },
@@ -729,50 +720,50 @@
       "answer": false,
       "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Tính cách của hai chị em gần như nhau.'.",
       "evidence": {
-        "zh": "虽然她俩是姐妹，性格却很不一样。",
+        "zh": "性格却很不一样",
         "sentence_index": 0
       },
       "audio_src": "assets/audio/exams/H41001.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa. Đã hiệu chỉnh đầy đủ từng câu thoại và từ vựng."
       },
       "segments": {
         "passage": {
-          "start_ms": 316919,
-          "end_ms": 333143
+          "start_ms": 316500,
+          "end_ms": 333600
         },
         "statement": {
-          "start_ms": 333343,
-          "end_ms": 337293
+          "start_ms": 334100,
+          "end_ms": 337300
         },
         "full_question": {
-          "start_ms": 316919,
-          "end_ms": 337293
+          "start_ms": 316500,
+          "end_ms": 337300
         }
       },
       "transcript": {
         "full_zh": "虽然她俩是姐妹，性格却很不一样。姐姐非常安静，极少说话，妹妹正好相反，最喜欢和人聊天。",
-        "full_vi": "",
+        "full_vi": "Mặc dù hai người là chị em nhưng tính cách lại rất khác nhau. Người chị rất trầm tính, cực kỳ ít nói; người em thì ngược lại, thích trò chuyện với mọi người nhất.",
         "sentences": [
           {
             "id": "H41001_L_07_S1",
             "index": 0,
             "zh": "虽然她俩是姐妹，性格却很不一样。",
-            "pinyin": "suī rán tā liǎ shì jiě mèi ， xìng gé què hěn bù yí yàng 。",
-            "vi": "",
-            "start_ms": 316919,
-            "end_ms": 322955
+            "pinyin": "Suīrán tā liǎ shì jiěmèi, xìnggé què hěn bù yíyàng.",
+            "vi": "Mặc dù hai người là chị em nhưng tính cách lại rất khác nhau.",
+            "start_ms": 317800,
+            "end_ms": 323600
           },
           {
             "id": "H41001_L_07_S2",
             "index": 1,
             "zh": "姐姐非常安静，极少说话，妹妹正好相反，最喜欢和人聊天。",
-            "pinyin": "jiě jiě fēi cháng ān jìng ， jí shǎo shuō huà ， mèi mèi zhèng hǎo xiāng fǎn ， zuì xǐ huān hé rén liáo tiān 。",
-            "vi": "",
-            "start_ms": 322955,
-            "end_ms": 333142
+            "pinyin": "Jiějie fēicháng ānjìng, jíshǎo shuōhuà, mèimei zhènghǎo xiāngfǎn, zuì xǐhuan hé rén liáotiān.",
+            "vi": "Người chị rất trầm tính, cực kỳ ít nói; người em thì ngược lại, thích trò chuyện với mọi người nhất.",
+            "start_ms": 323600,
+            "end_ms": 333600
           }
         ]
       },
@@ -849,50 +840,50 @@
       "answer": true,
       "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Anh ấy muốn tặng Lão Vương một tấm vé xem biểu diễn.'.",
       "evidence": {
-        "zh": "老王，我今晚要加班，这张票浪费了就可惜了。",
-        "sentence_index": 0
+        "zh": "你去看吧，听说这次演出邀请了许多著名的演员",
+        "sentence_index": 1
       },
       "audio_src": "assets/audio/exams/H41001.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa. Đã hiệu chỉnh đầy đủ từng câu thoại và từ vựng."
       },
       "segments": {
         "passage": {
-          "start_ms": 347230,
-          "end_ms": 364980
+          "start_ms": 347200,
+          "end_ms": 365200
         },
         "statement": {
-          "start_ms": 365180,
-          "end_ms": 369180
+          "start_ms": 365400,
+          "end_ms": 369200
         },
         "full_question": {
-          "start_ms": 347230,
-          "end_ms": 369180
+          "start_ms": 347200,
+          "end_ms": 369200
         }
       },
       "transcript": {
         "full_zh": "老王，我今晚要加班，这张票浪费了就可惜了。你去看吧，听说这次演出邀请了许多著名的演员，很精彩的。",
-        "full_vi": "",
+        "full_vi": "Anh Vương, tối nay tôi phải tăng ca, bỏ phí tấm vé này thì tiếc quá. Anh đi xem đi, nghe nói buổi biểu diễn lần này mời rất nhiều diễn viên nổi tiếng, đặc sắc lắm.",
         "sentences": [
           {
             "id": "H41001_L_08_S1",
             "index": 0,
             "zh": "老王，我今晚要加班，这张票浪费了就可惜了。",
-            "pinyin": "lǎo wáng ， wǒ jīn wǎn yào jiā bān ， zhè zhāng piào làng fèi le jiù kě xī le 。",
-            "vi": "",
-            "start_ms": 347230,
-            "end_ms": 354995
+            "pinyin": "Lǎo Wáng, wǒ jīnwǎn yào jiābān, zhè zhāng piào làngfèi le jiù kěxī le.",
+            "vi": "Anh Vương, tối nay tôi phải tăng ca, bỏ phí tấm vé này thì tiếc quá.",
+            "start_ms": 348000,
+            "end_ms": 355500
           },
           {
             "id": "H41001_L_08_S2",
             "index": 1,
             "zh": "你去看吧，听说这次演出邀请了许多著名的演员，很精彩的。",
-            "pinyin": "nǐ qù kàn ba ， tīng shuō zhè cì yǎn chū yāo qǐng le xǔ duō zhù míng de yǎn yuán ， hěn jīng cǎi de 。",
-            "vi": "",
-            "start_ms": 354995,
-            "end_ms": 364979
+            "pinyin": "Nǐ qù kàn ba, tīngshuō zhè cì yǎnchū yāoqǐng le xǔduō zhùmíng de yǎnyuán, hěn jīngcǎi de.",
+            "vi": "Anh đi xem đi, nghe nói buổi biểu diễn lần này mời rất nhiều diễn viên nổi tiếng, đặc sắc lắm.",
+            "start_ms": 355500,
+            "end_ms": 365200
           }
         ]
       },
@@ -969,50 +960,50 @@
       "answer": false,
       "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Kết quả điều tra của Tiểu Trương được viết rất tốt.'.",
       "evidence": {
-        "zh": "小张，你这份计划书写得不错，就按照这个计划去做市场调查吧。",
-        "sentence_index": 0
+        "zh": "下个月我要看调查结果",
+        "sentence_index": 1
       },
       "audio_src": "assets/audio/exams/H41001.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa. Đã hiệu chỉnh đầy đủ từng câu thoại và từ vựng."
       },
       "segments": {
         "passage": {
-          "start_ms": 379078,
-          "end_ms": 395950
+          "start_ms": 378800,
+          "end_ms": 394800
         },
         "statement": {
-          "start_ms": 396150,
-          "end_ms": 400150
+          "start_ms": 395500,
+          "end_ms": 400200
         },
         "full_question": {
-          "start_ms": 379078,
-          "end_ms": 400150
+          "start_ms": 378800,
+          "end_ms": 400200
         }
       },
       "transcript": {
         "full_zh": "小张，你这份计划书写得不错，就按照这个计划去做市场调查吧。下个月我要看调查结果。",
-        "full_vi": "",
+        "full_vi": "Tiểu Trương, bản kế hoạch này của cậu viết khá tốt, cứ theo kế hoạch này mà đi khảo sát thị trường nhé. Tháng sau tôi muốn xem kết quả điều tra.",
         "sentences": [
           {
             "id": "H41001_L_09_S1",
             "index": 0,
             "zh": "小张，你这份计划书写得不错，就按照这个计划去做市场调查吧。",
-            "pinyin": "xiǎo zhāng ， nǐ zhè fèn jì huà shū xiě dé bù cuò ， jiù àn zhào zhè ge jì huà qù zuò shì chǎng diào chá ba 。",
-            "vi": "",
-            "start_ms": 379078,
-            "end_ms": 391310
+            "pinyin": "Xiǎo Zhāng, nǐ zhè fèn jìhuàshū xiě de búcuò, jiù ànzhào zhège jìhuà qù zuò shìchǎng diàochá ba.",
+            "vi": "Tiểu Trương, bản kế hoạch này của cậu viết khá tốt, cứ theo kế hoạch này mà đi khảo sát thị trường nhé.",
+            "start_ms": 380100,
+            "end_ms": 390700
           },
           {
             "id": "H41001_L_09_S2",
             "index": 1,
             "zh": "下个月我要看调查结果。",
-            "pinyin": "xià gè yuè wǒ yào kàn diào chá jié guǒ 。",
-            "vi": "",
-            "start_ms": 391310,
-            "end_ms": 395949
+            "pinyin": "Xià gè yuè wǒ yào kàn diàochá jiéguǒ.",
+            "vi": "Tháng sau tôi muốn xem kết quả điều tra.",
+            "start_ms": 390700,
+            "end_ms": 394800
           }
         ]
       },
@@ -1061,50 +1052,50 @@
       "answer": false,
       "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Con gái không đồng ý tiêm thuốc.'.",
       "evidence": {
-        "zh": "女儿发烧了，我带她去医院。",
-        "sentence_index": 0
+        "zh": "三岁的女儿尽管很害怕打针，不过她没有哭",
+        "sentence_index": 1
       },
       "audio_src": "assets/audio/exams/H41001.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa. Đã hiệu chỉnh đầy đủ từng câu thoại và từ vựng."
       },
       "segments": {
         "passage": {
-          "start_ms": 410127,
-          "end_ms": 425863
+          "start_ms": 409800,
+          "end_ms": 426000
         },
         "statement": {
-          "start_ms": 426063,
-          "end_ms": 429663
+          "start_ms": 426700,
+          "end_ms": 429600
         },
         "full_question": {
-          "start_ms": 410127,
-          "end_ms": 429663
+          "start_ms": 409800,
+          "end_ms": 429600
         }
       },
       "transcript": {
         "full_zh": "女儿发烧了，我带她去医院。大夫给她打了一针，三岁的女儿尽管很害怕打针，不过她没有哭。",
-        "full_vi": "",
+        "full_vi": "Con gái bị sốt, tôi đưa cháu đi bệnh viện. Bác sĩ tiêm cho cháu một mũi, bé con ba tuổi dù rất sợ tiêm nhưng cháu không hề khóc.",
         "sentences": [
           {
             "id": "H41001_L_10_S1",
             "index": 0,
             "zh": "女儿发烧了，我带她去医院。",
-            "pinyin": "nǚ ér fā shāo le ， wǒ dài tā qù yī yuàn 。",
-            "vi": "",
-            "start_ms": 410127,
-            "end_ms": 414997
+            "pinyin": "Nǚ’ér fāshāo le, wǒ dài tā qù yīyuàn.",
+            "vi": "Con gái bị sốt, tôi đưa cháu đi bệnh viện.",
+            "start_ms": 411200,
+            "end_ms": 415700
           },
           {
             "id": "H41001_L_10_S2",
             "index": 1,
             "zh": "大夫给她打了一针，三岁的女儿尽管很害怕打针，不过她没有哭。",
-            "pinyin": "dà fū gěi tā dǎ le yī zhēn ， sān suì de nǚ ér jǐn guǎn hěn hài pà dǎ zhēn ， bù guò tā méi yǒu kū 。",
-            "vi": "",
-            "start_ms": 414997,
-            "end_ms": 425862
+            "pinyin": "Dàifu gěi tā dǎ le yì zhēn, sān suì de nǚ’ér jǐnguǎn hěn hàipà dǎzhēn, búguò tā méiyǒu kū.",
+            "vi": "Bác sĩ tiêm cho cháu một mũi, bé con ba tuổi dù rất sợ tiêm nhưng cháu không hề khóc.",
+            "start_ms": 416200,
+            "end_ms": 426000
           }
         ]
       },
