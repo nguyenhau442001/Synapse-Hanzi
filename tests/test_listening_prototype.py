@@ -180,10 +180,9 @@ def test_listening_polish_v112():
     # 1. Workspace width 900-1040px
     assert "max-width: 960px" in css, "Workspace width must be 960px (within 900-1040px range)"
 
-    # 2. Player structure: Seek row on top, secondary subcontrols (speed + loop) aligned with seek bar start
+    # 2. Player structure: Streamlined controls grid with seek track & thumb
     assert "listening-player-controls-grid" in js and "listening-player-controls-grid" in css
     assert "listening-player-right-col" in js and "listening-player-right-col" in css
-    assert "listening-player-subcontrols" in js and "listening-player-subcontrols" in css
     assert "listening-progress-thumb" in js and "listening-progress-thumb" in css
 
     # 3. Learner-facing time format (0:00 / 0:15)

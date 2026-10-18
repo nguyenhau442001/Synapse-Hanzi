@@ -758,7 +758,7 @@ const ListeningPractice = (function() {
             `}
           </button>
 
-          <!-- Right Column: Seek track on row 1, Subcontrols on row 2 (aligned with seek bar) -->
+          <!-- Right Column: Seek track and time readout -->
           <div class="listening-player-right-col">
             <div class="listening-progress-wrap">
               <div class="listening-progress-track" id="learnerProgressTrack" tabindex="0" role="slider"
@@ -768,19 +768,6 @@ const ListeningPractice = (function() {
                 <span class="listening-progress-thumb" id="learnerProgressThumb"></span>
               </div>
               <div class="listening-time-readout" id="learnerTimeBadge">0:00 / ${totalTimeText}</div>
-            </div>
-
-            <div class="listening-player-subcontrols">
-              <div class="listening-speed-group" role="group" aria-label="Tốc độ phát">
-                <button type="button" class="listening-speed-btn ${learnerState.speed === 0.75 ? 'active' : ''}" onclick="ListeningPractice.setSpeed(0.75)">0.75×</button>
-                <button type="button" class="listening-speed-btn ${learnerState.speed === 1.0 ? 'active' : ''}" onclick="ListeningPractice.setSpeed(1.0)">1.0×</button>
-                <button type="button" class="listening-speed-btn ${learnerState.speed === 1.25 ? 'active' : ''}" onclick="ListeningPractice.setSpeed(1.25)">1.25×</button>
-              </div>
-
-              <button type="button" class="listening-loop-btn ${learnerState.loop ? 'active' : ''}" onclick="ListeningPractice.toggleLoop()" title="Lặp lại đoạn nghe">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
-                <span>Lặp lại ${learnerState.loop ? 'đoạn' : ''}</span>
-              </button>
             </div>
           </div>
         </div>
