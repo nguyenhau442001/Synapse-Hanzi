@@ -1,0 +1,37 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Airport Terminal Structure -->
+  <path d="M40 180 L200 180 L190 120 L50 120 Z" fill="#2D343E"/>
+  <rect x="60" y="130" width="30" height="40" fill="#3D4754"/>
+  <rect x="100" y="130" width="30" height="40" fill="#3D4754"/>
+  <rect x="140" y="130" width="30" height="40" fill="#3D4754"/>
+  
+  <!-- Snowflakes -->
+  <g fill="#A0AEC0" opacity="0.6">
+    <path d="M50 40 L54 40 M52 38 L52 42 M51 39 L53 41 M51 41 L53 39" stroke="#A0AEC0" stroke-width="1"/>
+    <path d="M180 50 L184 50 M182 48 L182 52 M181 49 L183 51 M181 51 L183 49" stroke="#A0AEC0" stroke-width="1"/>
+    <path d="M120 30 L124 30 M122 28 L122 32 M121 29 L123 31 M121 31 L123 29" stroke="#A0AEC0" stroke-width="1"/>
+  </g>
+
+  <!-- Stranded Traveler (Iconic Figure) -->
+  <g transform="translate(110, 150)">
+    <!-- Body -->
+    <path d="M0 0 C-5 -15, 5 -25, 10 -25 C15 -25, 25 -15, 20 0 Z" fill="#F6AD55"/>
+    <!-- Head -->
+    <circle cx="10" cy="-32" r="8" fill="#F6AD55"/>
+    <!-- Luggage -->
+    <rect x="-15" y="-5" width="12" height="15" rx="2" fill="#718096"/>
+    <rect x="-12" y="-10" width="6" height="5" rx="1" fill="#718096"/>
+  </g>
+
+  <!-- Second Traveler -->
+  <g transform="translate(150, 155)">
+    <path d="M0 0 C-5 -15, 5 -25, 10 -25 C15 -25, 25 -15, 20 0 Z" fill="#CBD5E0"/>
+    <circle cx="10" cy="-32" r="8" fill="#CBD5E0"/>
+  </g>
+
+  <!-- Ground/Snow accumulation -->
+  <path d="M40 180 Q120 190 200 180 L200 200 L40 200 Z" fill="#2D343E"/>
+  <path d="M40 180 L200 180 L200 185 L40 185 Z" fill="#E2E8F0"/>
+</svg>

@@ -53796,6 +53796,191 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "证券.svg",
     "src": "images/HSK_3.0/level7/证券.svg",
     "caption": "chứng khoán"
+  },
+  "证人": {
+    "file": "证人.svg",
+    "src": "images/HSK_3.0/level7/证人.svg",
+    "caption": "nhân chứng, người làm chứng"
+  },
+  "正视": {
+    "file": "正视.svg",
+    "src": "images/HSK_3.0/level7/正视.svg",
+    "caption": "nhìn thẳng vào, đối diện trực diện"
+  },
+  "正直": {
+    "file": "正直.svg",
+    "src": "images/HSK_3.0/level7/正直.svg",
+    "caption": "chính trực, ngay thẳng cương trực"
+  },
+  "郑重": {
+    "file": "郑重.svg",
+    "src": "images/HSK_3.0/level7/郑重.svg",
+    "caption": "trịnh trọng, trang trọng"
+  },
+  "正宗": {
+    "file": "正宗.svg",
+    "src": "images/HSK_3.0/level7/正宗.svg",
+    "caption": "chính gốc, chuẩn vị truyền thống"
+  },
+  "之²": {
+    "file": "之².svg",
+    "src": "images/HSK_3.0/level7/之².svg",
+    "caption": "của (trợ từ văn viết)"
+  },
+  "织": {
+    "file": "织.svg",
+    "src": "images/HSK_3.0/level7/织.svg",
+    "caption": "dệt, đan"
+  },
+  "之际": {
+    "file": "之际.svg",
+    "src": "images/HSK_3.0/level7/之际.svg",
+    "caption": "vào lúc, nhân dịp, trong khi"
+  },
+  "知己": {
+    "file": "知己.svg",
+    "src": "images/HSK_3.0/level7/知己.svg",
+    "caption": "bạn tri kỷ, người thấu hiểu mình"
+  },
+  "支架": {
+    "file": "支架.svg",
+    "src": "images/HSK_3.0/level7/支架.svg",
+    "caption": "giá đỡ, giá chống, stent y tế"
+  },
+  "知觉": {
+    "file": "知觉.svg",
+    "src": "images/HSK_3.0/level7/知觉.svg",
+    "caption": "tri giác, cảm giác, nhận thức"
+  },
+  "肢体": {
+    "file": "肢体.svg",
+    "src": "images/HSK_3.0/level7/肢体.svg",
+    "caption": "tay chân, tứ chi, thân thể"
+  },
+  "支柱": {
+    "file": "支柱.svg",
+    "src": "images/HSK_3.0/level7/支柱.svg",
+    "caption": "trụ cột, cột trụ"
+  },
+  "职能": {
+    "file": "职能.svg",
+    "src": "images/HSK_3.0/level7/职能.svg",
+    "caption": "chức năng, vai trò nhiệm vụ"
+  },
+  "值钱": {
+    "file": "值钱.svg",
+    "src": "images/HSK_3.0/level7/值钱.svg",
+    "caption": "đáng giá, có giá trị cao, đắt tiền"
+  },
+  "直升机": {
+    "file": "直升机.svg",
+    "src": "images/HSK_3.0/level7/直升机.svg",
+    "caption": "máy bay trực thăng"
+  },
+  "直视": {
+    "file": "直视.svg",
+    "src": "images/HSK_3.0/level7/直视.svg",
+    "caption": "nhìn thẳng vào, nhìn trực diện"
+  },
+  "直线": {
+    "file": "直线.svg",
+    "src": "images/HSK_3.0/level7/直线.svg",
+    "caption": "đường thẳng"
+  },
+  "直辖市": {
+    "file": "直辖市.svg",
+    "src": "images/HSK_3.0/level7/直辖市.svg",
+    "caption": "thành phố trực thuộc trung ương"
+  },
+  "执意": {
+    "file": "执意.svg",
+    "src": "images/HSK_3.0/level7/执意.svg",
+    "caption": "khăng khăng, nhất quyết một mực"
+  },
+  "直至": {
+    "file": "直至.svg",
+    "src": "images/HSK_3.0/level7/直至.svg",
+    "caption": "cho tới khi, mãi đến tận"
+  },
+  "执着": {
+    "file": "执着.svg",
+    "src": "images/HSK_3.0/level7/执着.svg",
+    "caption": "chấp niệm, kiên trì theo đuổi bền bỉ"
+  },
+  "纸币": {
+    "file": "纸币.svg",
+    "src": "images/HSK_3.0/level7/纸币.svg",
+    "caption": "tiền giấy"
+  },
+  "指标": {
+    "file": "指标.svg",
+    "src": "images/HSK_3.0/level7/指标.svg",
+    "caption": "chỉ tiêu, mục tiêu định mức"
+  },
+  "止步": {
+    "file": "止步.svg",
+    "src": "images/HSK_3.0/level7/止步.svg",
+    "caption": "dừng bước, dừng lại"
+  },
+  "指点": {
+    "file": "指点.svg",
+    "src": "images/HSK_3.0/level7/指点.svg",
+    "caption": "chỉ bảo, chỉ dẫn; chỉ trỏ"
+  },
+  "只管": {
+    "file": "只管.svg",
+    "src": "images/HSK_3.0/level7/只管.svg",
+    "caption": "cứ việc, chỉ việc, chớ ngại"
+  },
+  "指甲": {
+    "file": "指甲.svg",
+    "src": "images/HSK_3.0/level7/指甲.svg",
+    "caption": "móng tay"
+  },
+  "指教": {
+    "file": "指教.svg",
+    "src": "images/HSK_3.0/level7/指教.svg",
+    "caption": "chỉ giáo, chỉ bảo đóng góp ý kiến"
+  },
+  "指控": {
+    "file": "指控.svg",
+    "src": "images/HSK_3.0/level7/指控.svg",
+    "caption": "cáo buộc, luận tội"
+  },
+  "指数": {
+    "file": "指数.svg",
+    "src": "images/HSK_3.0/level7/指数.svg",
+    "caption": "chỉ số"
+  },
+  "致富": {
+    "file": "致富.svg",
+    "src": "images/HSK_3.0/level7/致富.svg",
+    "caption": "làm giàu, vươn lên làm giàu"
+  },
+  "滞后": {
+    "file": "滞后.svg",
+    "src": "images/HSK_3.0/level7/滞后.svg",
+    "caption": "tụt hậu, chậm trễ, trễ pha"
+  },
+  "致敬": {
+    "file": "致敬.svg",
+    "src": "images/HSK_3.0/level7/致敬.svg",
+    "caption": "gửi lời chào kính trọng, bày tỏ lòng tôn kính"
+  },
+  "滞留": {
+    "file": "滞留.svg",
+    "src": "images/HSK_3.0/level7/滞留.svg",
+    "caption": "mắc kẹt, lưu lại do sự cố"
+  },
+  "致力于": {
+    "file": "致力于.svg",
+    "src": "images/HSK_3.0/level7/致力于.svg",
+    "caption": "cam kết với"
+  },
+  "稚嫩": {
+    "file": "稚嫩.svg",
+    "src": "images/HSK_3.0/level7/稚嫩.svg",
+    "caption": "non nớt, thơ ngây, non trẻ"
   }
 };
 
