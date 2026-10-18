@@ -1,0 +1,57 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle Ambient Glow for Focus -->
+  <circle cx="120" cy="125" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Conceptual Physical Object: "小菜一碟" (A small dish / plate of food - symbolizing something extremely easy) -->
+  <g transform="translate(0, 5)">
+    <!-- Plate Shadow/Base -->
+    <ellipse cx="120" cy="155" rx="72" ry="24" fill="#111317"/>
+    
+    <!-- Outer Ceramic Plate -->
+    <ellipse cx="120" cy="150" rx="70" ry="22" fill="#2D3748" stroke="#4A5568" stroke-width="2"/>
+    
+    <!-- Inner Plate Surface -->
+    <ellipse cx="120" cy="148" rx="56" ry="17" fill="#1E232D"/>
+    
+    <!-- Delicate Appetizer (A neat stack of jade-green cucumber slices / delicacy) -->
+    <!-- Slice 1 (Bottom) -->
+    <ellipse cx="120" cy="138" rx="36" ry="11" fill="#2F855A" stroke="#38A169" stroke-width="1.5"/>
+    <ellipse cx="120" cy="136" rx="34" ry="9" fill="#48BB78"/>
+    <ellipse cx="120" cy="136" rx="10" ry="3" fill="#2F855A" opacity="0.4"/>
+
+    <!-- Slice 2 (Middle) -->
+    <ellipse cx="120" cy="126" rx="30" ry="9" fill="#2F855A" stroke="#38A169" stroke-width="1.5"/>
+    <ellipse cx="120" cy="124" rx="28" ry="7" fill="#48BB78"/>
+    
+    <!-- Slice 3 (Top Garnish / Lemon & Mint) -->
+    <ellipse cx="115" cy="112" rx="18" ry="6" fill="#D69E2E" stroke="#ECC94B" stroke-width="1"/>
+    <ellipse cx="115" cy="110" rx="16" ry="4" fill="#ECC94B"/>
+    
+    <!-- Fresh Mint Leaf Accent -->
+    <path d="M125,108 C132,104 140,110 138,116 C136,122 127,120 125,108 Z" fill="#48BB78" stroke="#68D391" stroke-width="1"/>
+  </g>
+
+  <!-- Floating Sparkles / Ease Indicator (High-contrast gold accents to represent effortless success) -->
+  <g fill="#F6E05E">
+    <!-- Top Left Sparkle -->
+    <path d="M70,75 Q70,90 55,90 Q70,90 70,105 Q70,90 85,90 Q70,90 70,75 Z"/>
+    <!-- Top Right Large Sparkle -->
+    <path d="M175,65 Q175,85 155,85 Q175,85 175,105 Q175,85 195,85 Q175,85 175,65 Z"/>
+    <!-- Small Accent Star -->
+    <circle cx="150" cy="55" r="3" opacity="0.8"/>
+    <circle cx="85" cy="120" r="2" opacity="0.6"/>
+  </g>
+
+  <!-- Sleek Chopsticks resting elegantly across -->
+  <g>
+    <!-- Chopstick 1 -->
+    <path d="M45,95 L205,125" stroke="#D69E2E" stroke-width="4" stroke-linecap="round"/>
+    <path d="M45,95 L205,125" stroke="#FAF089" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="10 4"/>
+    
+    <!-- Chopstick 2 (Slightly offset) -->
+    <path d="M50,103 L210,133" stroke="#B7791F" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+</svg>

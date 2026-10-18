@@ -51051,6 +51051,256 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "显示器.svg",
     "src": "images/HSK_3.0/level7/显示器.svg",
     "caption": "màn hình hiển thị"
+  },
+  "显微镜": {
+    "file": "显微镜.svg",
+    "src": "images/HSK_3.0/level7/显微镜.svg",
+    "caption": "kính hiển vi"
+  },
+  "鲜为人知": {
+    "file": "鲜为人知.svg",
+    "src": "images/HSK_3.0/level7/鲜为人知.svg",
+    "caption": "hiếm ai biết; ít người biết đến"
+  },
+  "显现": {
+    "file": "显现.svg",
+    "src": "images/HSK_3.0/level7/显现.svg",
+    "caption": "hiện rõ; hiển hiện; lộ ra"
+  },
+  "显性": {
+    "file": "显性.svg",
+    "src": "images/HSK_3.0/level7/显性.svg",
+    "caption": "trội (gen di truyền); công khai rõ ràng"
+  },
+  "显眼": {
+    "file": "显眼.svg",
+    "src": "images/HSK_3.0/level7/显眼.svg",
+    "caption": "bắt mắt; nổi bật; dễ thấy"
+  },
+  "陷": {
+    "file": "陷.svg",
+    "src": "images/HSK_3.0/level7/陷.svg",
+    "caption": "lún; sụt; rơi vào"
+  },
+  "馅": {
+    "file": "馅.svg",
+    "src": "images/HSK_3.0/level7/馅.svg",
+    "caption": "nhân (bánh, sủi cảo)"
+  },
+  "献": {
+    "file": "献.svg",
+    "src": "images/HSK_3.0/level7/献.svg",
+    "caption": "hiến tặng; dâng tặng; cống hiến"
+  },
+  "限定": {
+    "file": "限定.svg",
+    "src": "images/HSK_3.0/level7/限定.svg",
+    "caption": "giới hạn; hạn chế; quy định"
+  },
+  "现任": {
+    "file": "现任.svg",
+    "src": "images/HSK_3.0/level7/现任.svg",
+    "caption": "đương nhiệm; hiện giữ chức"
+  },
+  "线条": {
+    "file": "线条.svg",
+    "src": "images/HSK_3.0/level7/线条.svg",
+    "caption": "đường nét; nét vẽ"
+  },
+  "镶": {
+    "file": "镶.svg",
+    "src": "images/HSK_3.0/level7/镶.svg",
+    "caption": "nạm; khảm; đính"
+  },
+  "相识": {
+    "file": "相识.svg",
+    "src": "images/HSK_3.0/level7/相识.svg",
+    "caption": "quen biết; quen nhau"
+  },
+  "相通": {
+    "file": "相通.svg",
+    "src": "images/HSK_3.0/level7/相通.svg",
+    "caption": "tương thông; thông suốt với nhau"
+  },
+  "乡下": {
+    "file": "乡下.svg",
+    "src": "images/HSK_3.0/level7/乡下.svg",
+    "caption": "thôn quê; dưới quê; nông thôn"
+  },
+  "香油": {
+    "file": "香油.svg",
+    "src": "images/HSK_3.0/level7/香油.svg",
+    "caption": "dầu mè; dầu thơm"
+  },
+  "相遇": {
+    "file": "相遇.svg",
+    "src": "images/HSK_3.0/level7/相遇.svg",
+    "caption": "gặp gỡ"
+  },
+  "相约": {
+    "file": "相约.svg",
+    "src": "images/HSK_3.0/level7/相约.svg",
+    "caption": "hẹn nhau; cùng hẹn"
+  },
+  "祥和": {
+    "file": "祥和.svg",
+    "src": "images/HSK_3.0/level7/祥和.svg",
+    "caption": "thái bình êm ấm; an hòa"
+  },
+  "详尽": {
+    "file": "详尽.svg",
+    "src": "images/HSK_3.0/level7/详尽.svg",
+    "caption": "cặn kẽ chi tiết; tỉ mỉ thấu đáo"
+  },
+  "享": {
+    "file": "享.svg",
+    "src": "images/HSK_3.0/level7/享.svg",
+    "caption": "hưởng; thụ hưởng; hưởng thụ"
+  },
+  "享用": {
+    "file": "享用.svg",
+    "src": "images/HSK_3.0/level7/享用.svg",
+    "caption": "thưởng thức; tận hưởng (ẩm thực, tiện ích)"
+  },
+  "享有": {
+    "file": "享有.svg",
+    "src": "images/HSK_3.0/level7/享有.svg",
+    "caption": "có được; được hưởng (uy tín, quyền lợi)"
+  },
+  "橡胶": {
+    "file": "橡胶.svg",
+    "src": "images/HSK_3.0/level7/橡胶.svg",
+    "caption": "cao su"
+  },
+  "相貌": {
+    "file": "相貌.svg",
+    "src": "images/HSK_3.0/level7/相貌.svg",
+    "caption": "diện mạo; tướng mạo khuôn mặt"
+  },
+  "像样": {
+    "file": "像样.svg",
+    "src": "images/HSK_3.0/level7/像样.svg",
+    "caption": "ra hồn ra trò; đàng hoàng tươm tất"
+  },
+  "消": {
+    "file": "消.svg",
+    "src": "images/HSK_3.0/level7/消.svg",
+    "caption": "tiêu tan; tan biến; tiêu trừ"
+  },
+  "销": {
+    "file": "销.svg",
+    "src": "images/HSK_3.0/level7/销.svg",
+    "caption": "bán ra; tiêu thụ"
+  },
+  "消沉": {
+    "file": "消沉.svg",
+    "src": "images/HSK_3.0/level7/消沉.svg",
+    "caption": "chán nản; rệu rã; sa sút tinh thần"
+  },
+  "消磨": {
+    "file": "消磨.svg",
+    "src": "images/HSK_3.0/level7/消磨.svg",
+    "caption": "làm mòn mỏi; tiêu hao; giết (thời gian)"
+  },
+  "消遣": {
+    "file": "消遣.svg",
+    "src": "images/HSK_3.0/level7/消遣.svg",
+    "caption": "giải trí; tiêu khiển; giải khuây"
+  },
+  "萧条": {
+    "file": "萧条.svg",
+    "src": "images/HSK_3.0/level7/萧条.svg",
+    "caption": "tiêu điều; ảm đạm; đình trệ"
+  },
+  "嚣张": {
+    "file": "嚣张.svg",
+    "src": "images/HSK_3.0/level7/嚣张.svg",
+    "caption": "hung hăng ngang ngược; ngông cuồng"
+  },
+  "小菜一碟": {
+    "file": "小菜一碟.svg",
+    "src": "images/HSK_3.0/level7/小菜一碟.svg",
+    "caption": "chuyện nhỏ như con thỏ; dễ như trở bàn tay"
+  },
+  "小丑": {
+    "file": "小丑.svg",
+    "src": "images/HSK_3.0/level7/小丑.svg",
+    "caption": "chú hề; vai hề lố bịch"
+  },
+  "小费": {
+    "file": "小费.svg",
+    "src": "images/HSK_3.0/level7/小费.svg",
+    "caption": "tiền boa; tiền tip"
+  },
+  "小看": {
+    "file": "小看.svg",
+    "src": "images/HSK_3.0/level7/小看.svg",
+    "caption": "xem nhẹ; coi thường; đánh giá thấp"
+  },
+  "小康": {
+    "file": "小康.svg",
+    "src": "images/HSK_3.0/level7/小康.svg",
+    "caption": "ấm no khá giả; tiểu khang"
+  },
+  "小品": {
+    "file": "小品.svg",
+    "src": "images/HSK_3.0/level7/小品.svg",
+    "caption": "tiểu phẩm (hài, kịch ngắn)"
+  },
+  "小人": {
+    "file": "小人.svg",
+    "src": "images/HSK_3.0/level7/小人.svg",
+    "caption": "tiểu nhân; kẻ hèn hạ"
+  },
+  "小提琴": {
+    "file": "小提琴.svg",
+    "src": "images/HSK_3.0/level7/小提琴.svg",
+    "caption": "vĩ cầm; đàn vi-ô-lông"
+  },
+  "效仿": {
+    "file": "效仿.svg",
+    "src": "images/HSK_3.0/level7/效仿.svg",
+    "caption": "bắt chước; noi theo; mô phỏng"
+  },
+  "孝敬": {
+    "file": "孝敬.svg",
+    "src": "images/HSK_3.0/level7/孝敬.svg",
+    "caption": "hiếu kính; phụng dưỡng"
+  },
+  "效力": {
+    "file": "效力.svg",
+    "src": "images/HSK_3.0/level7/效力.svg",
+    "caption": "hiệu lực (pháp lý)"
+  },
+  "邪": {
+    "file": "邪.svg",
+    "src": "images/HSK_3.0/level7/邪.svg",
+    "caption": "tà; tà đạo; xấu xa"
+  },
+  "挟持": {
+    "file": "挟持.svg",
+    "src": "images/HSK_3.0/level7/挟持.svg",
+    "caption": "bắt giữ khống chế; bắt cóc uy hiếp"
+  },
+  "协定": {
+    "file": "协定.svg",
+    "src": "images/HSK_3.0/level7/协定.svg",
+    "caption": "hiệp định; hiệp ước"
+  },
+  "携手": {
+    "file": "携手.svg",
+    "src": "images/HSK_3.0/level7/携手.svg",
+    "caption": "chung tay; kề vai sát cánh; nắm tay"
+  },
+  "协同": {
+    "file": "协同.svg",
+    "src": "images/HSK_3.0/level7/协同.svg",
+    "caption": "hiệp đồng; phối hợp nhịp nhàng"
+  },
+  "协作": {
+    "file": "协作.svg",
+    "src": "images/HSK_3.0/level7/协作.svg",
+    "caption": "hợp tác phối hợp; hiệp tác"
   }
 };
 

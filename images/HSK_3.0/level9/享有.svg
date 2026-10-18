@@ -1,0 +1,39 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed dark mode container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements -->
+  <circle cx="120" cy="120" r="80" fill="#222733" />
+  <circle cx="120" cy="120" r="50" fill="#2A303C" />
+
+  <!-- Central Visual: Prestigious Academic/Honor Award Object representing "享有" (reputation, high status, privilege) -->
+  <g transform="translate(0, 5)">
+    <!-- Golden Laurel Wreath (Symbol of high honor and prestige) -->
+    <path d="M75 110 C 65 90, 75 60, 100 50" fill="none" stroke="#F39C12" stroke-width="4" stroke-linecap="round"/>
+    <path d="M165 110 C 175 90, 165 60, 140 50" fill="none" stroke="#F39C12" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Wreath Leaves -->
+    <path d="M72 95 Q 60 90 68 80 Q 75 85 72 95" fill="#F1C40F"/>
+    <path d="M78 75 Q 66 70 73 60 Q 80 65 78 75" fill="#F1C40F"/>
+    <path d="M90 60 Q 80 50 88 42 Q 95 50 90 60" fill="#F1C40F"/>
+
+    <path d="M168 95 Q 180 90 172 80 Q 165 85 168 95" fill="#F1C40F"/>
+    <path d="M162 75 Q 174 70 167 60 Q 160 65 162 75" fill="#F1C40F"/>
+    <path d="M150 60 Q 160 50 152 42 Q 145 50 150 60" fill="#F1C40F"/>
+
+    <!-- Pedestal Base -->
+    <path d="M90 175 L150 175 L140 190 L100 190 Z" fill="#3B4252"/>
+    <rect x="95" y="165" width="50" height="10" fill="#4C566A" rx="2"/>
+
+    <!-- Central Plaque / Honor Emblem representing the attained status/rights -->
+    <circle cx="120" cy="115" r="38" fill="#1E222B" stroke="#F1C40F" stroke-width="4"/>
+    
+    <!-- Star of Excellence inside -->
+    <polygon points="120,90 126,105 142,105 129,115 134,130 120,120 106,130 111,115 98,105 114,105" fill="#F39C12"/>
+
+    <!-- Radiating prestige glow lines -->
+    <line x1="120" y1="35" x2="120" y2="42" stroke="#F1C40F" stroke-width="3" stroke-linecap="round"/>
+    <line x1="85" y1="48" x2="90" y2="53" stroke="#F1C40F" stroke-width="3" stroke-linecap="round"/>
+    <line x1="155" y1="48" x2="150" y2="53" stroke="#F1C40F" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

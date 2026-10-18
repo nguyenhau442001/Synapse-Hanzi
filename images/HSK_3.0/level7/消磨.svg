@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Ambient glow behind erosion point -->
+  <circle cx="120" cy="130" r="50" fill="#FF5722" opacity="0.08" filter="blur(8px)"/>
+
+  <!-- Glowing digital screen / abstract phone (Source of erosion) -->
+  <g transform="translate(45, 65)">
+    <!-- Phone body representing digital distraction -->
+    <rect x="0" y="0" width="44" height="76" rx="8" fill="#2A2F3D" stroke="#3A4254" stroke-width="1.5"/>
+    <rect x="4" y="8" width="36" height="54" rx="4" fill="#12151B"/>
+    <!-- Abstract glowing video/game elements inside screen -->
+    <circle cx="22" cy="35" r="10" fill="#FF5722" opacity="0.8"/>
+    <polygon points="19,30 28,35 19,40" fill="#12151B"/>
+  </g>
+
+  <!-- Dynamic erosion / dissolving stream (Motion lines & fading particles) -->
+  <path d="M 90 95 C 110 95, 120 110, 140 110" stroke="#FF5722" stroke-width="2" stroke-dasharray="3,3" fill="none" opacity="0.6"/>
+  <path d="M 92 105 C 112 105, 125 120, 145 120" stroke="#FF5722" stroke-width="1.5" stroke-dasharray="2,4" fill="none" opacity="0.4"/>
+
+  <!-- Human Character (Action: Willpower/ambition eroding away) -->
+  <g transform="translate(130, 80)">
+    <!-- Head -->
+    <circle cx="35" cy="22" r="11" fill="#8E99AF"/>
+    
+    <!-- Torso / Upper body leaning forward in fatigue/apathy -->
+    <path d="M 35 33 C 35 33, 40 50, 30 70 C 25 80, 15 85, 10 85" stroke="#8E99AF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    
+    <!-- Arm interacting / dissolving -->
+    <path d="M 35 42 C 25 45, 10 50, -5 45" stroke="#8E99AF" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+    <!-- Dissolving fading particles representing 消磨 (wearing down / wasting away) -->
+    <circle cx="45" cy="55" r="4" fill="#FF5722" opacity="0.9"/>
+    <circle cx="55" cy="45" r="3" fill="#FF5722" opacity="0.7"/>
+    <circle cx="62" cy="35" r="2" fill="#FF5722" opacity="0.5"/>
+    <circle cx="68" cy="25" r="1.5" fill="#FF5722" opacity="0.3"/>
+    
+    <circle cx="40" cy="70" r="3" fill="#FF5722" opacity="0.6"/>
+    <circle cx="48" cy="78" r="2" fill="#FF5722" opacity="0.4"/>
+  </g>
+
+  <!-- Ground line -->
+  <line x1="40" y1="180" x2="200" y2="180" stroke="#2A2F3D" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Fading ambition pillar / upward spark (representing "远大斗志" being worn down) -->
+  <g transform="translate(170, 110)">
+    <path d="M 10 70 L 10 40 L 15 35 L 10 30 L 10 10" stroke="#3A4254" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-dasharray="4,4"/>
+    <!-- Flipped/fading top of ambition -->
+    <path d="M 10 20 L 10 0" stroke="#FF5722" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+    <circle cx="10" cy="-5" r="2" fill="#FF5722" opacity="0.4"/>
+  </g>
+</svg>
