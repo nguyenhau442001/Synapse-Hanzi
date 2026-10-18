@@ -1,0 +1,923 @@
+{
+  "exam_id": "H41007",
+  "level": "HSK4",
+  "title": "HSK 4 - Đề thi mẫu H41007 - Phần Nghe (Listening)",
+  "total_questions": 10,
+  "audio_src": "assets/audio/exams/H41007.mp3",
+  "questions": [
+    {
+      "id": "H41007_L_01",
+      "exam_id": "H41007",
+      "question_number": 1,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他暑假想去云南旅游。",
+        "pinyin": "tā shǔ jià xiǎng qù yún nán lǚ yóu 。",
+        "vi": "Anh ấy muốn đi Vân Nam du lịch vào kỳ nghỉ hè."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Anh ấy muốn đi Vân Nam du lịch vào kỳ nghỉ hè.'.",
+      "evidence": {
+        "zh": "女兒說他今天下班後有約會要跟同學去看電影晚上不回來吃飯了",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41007.mp3",
+      "alignment": {
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 163540,
+          "end_ms": 170340
+        },
+        "statement": {
+          "start_ms": 170540,
+          "end_ms": 174360
+        },
+        "full_question": {
+          "start_ms": 163540,
+          "end_ms": 174360
+        }
+      },
+      "transcript": {
+        "full_zh": "女兒說他今天下班後有約會要跟同學去看電影晚上不回來吃飯了",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41007_L_01_S1",
+            "index": 0,
+            "zh": "女兒說他今天下班後有約會要跟同學去看電影晚上不回來吃飯了",
+            "pinyin": "nǚ ér shuō tā jīn tiān xià bān hòu yǒu yuē huì yào gēn tóng xué qù kàn diàn yǐng wǎn shàng bù huí lái chī fàn le",
+            "vi": "",
+            "start_ms": 163540,
+            "end_ms": 170340
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "今天",
+          "pinyin": "jīntiān",
+          "meaning_vi": "hôm nay",
+          "vocab_id": 47,
+          "level": "HSK1"
+        },
+        {
+          "word": "旅游",
+          "pinyin": "lǜyóu",
+          "meaning_vi": "du lịch",
+          "vocab_id": 66,
+          "level": "HSK2"
+        },
+        {
+          "word": "晚上",
+          "pinyin": "wǎnshang",
+          "meaning_vi": "buổi tối",
+          "vocab_id": 108,
+          "level": "HSK2"
+        }
+      ]
+    },
+    {
+      "id": "H41007_L_02",
+      "exam_id": "H41007",
+      "question_number": 2,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "女儿晚上要加班。",
+        "pinyin": "nǚ ér wǎn shàng yào jiā bān 。",
+        "vi": "Buổi tối con gái phải tăng ca."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Buổi tối con gái phải tăng ca.'.",
+      "evidence": {
+        "zh": "後來逐漸習慣了也交到了很多朋友我越來越喜歡這兒的生活了他習慣了這裏的生活他習慣了這裏的生活",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41007.mp3",
+      "alignment": {
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 184420,
+          "end_ms": 199580
+        },
+        "statement": {
+          "start_ms": 199780,
+          "end_ms": 203380
+        },
+        "full_question": {
+          "start_ms": 184420,
+          "end_ms": 203380
+        }
+      },
+      "transcript": {
+        "full_zh": "後來逐漸習慣了也交到了很多朋友我越來越喜歡這兒的生活了他習慣了這裏的生活他習慣了這裏的生活",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41007_L_02_S1",
+            "index": 0,
+            "zh": "後來逐漸習慣了也交到了很多朋友我越來越喜歡這兒的生活了他習慣了這裏的生活他習慣了這裏的生活",
+            "pinyin": "hòu lái zhú jiàn xí guàn le yě jiāo dào le hěn duō péng yǒu wǒ yuè lái yuè xǐ huān zhè ér de shēng huó le tā xí guàn le zhè lǐ de shēng huó tā xí guàn le zhè lǐ de shēng huó",
+            "vi": "",
+            "start_ms": 184420,
+            "end_ms": 199580
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "女儿",
+          "pinyin": "nǚ'ér",
+          "meaning_vi": "con gái",
+          "vocab_id": 75,
+          "level": "HSK1"
+        },
+        {
+          "word": "朋友",
+          "pinyin": "péngyou",
+          "meaning_vi": "bạn",
+          "vocab_id": 76,
+          "level": "HSK1"
+        },
+        {
+          "word": "晚上",
+          "pinyin": "wǎnshang",
+          "meaning_vi": "buổi tối",
+          "vocab_id": 108,
+          "level": "HSK2"
+        },
+        {
+          "word": "加班",
+          "pinyin": "jiābān",
+          "meaning_vi": "làm thêm giờ",
+          "vocab_id": 199,
+          "level": "HSK4"
+        },
+        {
+          "word": "生活",
+          "pinyin": "shēnghuó",
+          "meaning_vi": "sinh hoạt, cuộc sống",
+          "vocab_id": 375,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41007_L_03",
+      "exam_id": "H41007",
+      "question_number": 3,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他习惯了这里的生活。",
+        "pinyin": "tā xí guàn le zhè lǐ de shēng huó 。",
+        "vi": "Anh ấy đã quen với cuộc sống ở nơi này."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Anh ấy đã quen với cuộc sống ở nơi này.'.",
+      "evidence": {
+        "zh": "那個網站上的內容很豐富不但有科學藝術方面的知識還有許多小笑話我發給你王子有興趣的話可以上去看看",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41007.mp3",
+      "alignment": {
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 213440,
+          "end_ms": 228200
+        },
+        "statement": {
+          "start_ms": 228400,
+          "end_ms": 232400
+        },
+        "full_question": {
+          "start_ms": 213440,
+          "end_ms": 232400
+        }
+      },
+      "transcript": {
+        "full_zh": "那個網站上的內容很豐富不但有科學藝術方面的知識還有許多小笑話我發給你王子有興趣的話可以上去看看",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41007_L_03_S1",
+            "index": 0,
+            "zh": "那個網站上的內容很豐富不但有科學藝術方面的知識還有許多小笑話我發給你王子有興趣的話可以上去看看",
+            "pinyin": "nà gè wǎng zhàn shàng de nèi róng hěn fēng fù bù dàn yǒu kē xué yì shù fāng miàn de zhī shí hái yǒu xǔ duō xiǎo xiào huà wǒ fā gěi nǐ wáng zǐ yǒu xìng qù de huà kě yǐ shàng qù kàn kàn",
+            "vi": "",
+            "start_ms": 213440,
+            "end_ms": 228200
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "可以",
+          "pinyin": "kěyǐ",
+          "meaning_vi": "có thể, được",
+          "vocab_id": 57,
+          "level": "HSK2"
+        },
+        {
+          "word": "习惯",
+          "pinyin": "xíguàn",
+          "meaning_vi": "thói quen, quen thuộc",
+          "vocab_id": 234,
+          "level": "HSK3"
+        },
+        {
+          "word": "方面",
+          "pinyin": "fāngmiàn",
+          "meaning_vi": "phương diện, mặt",
+          "vocab_id": 112,
+          "level": "HSK4"
+        },
+        {
+          "word": "生活",
+          "pinyin": "shēnghuó",
+          "meaning_vi": "sinh hoạt, cuộc sống",
+          "vocab_id": 375,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41007_L_04",
+      "exam_id": "H41007",
+      "question_number": 4,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他们在谈价格。",
+        "pinyin": "tā men zài tán jià gé 。",
+        "vi": "Họ đang bàn về giá cả."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Họ đang bàn về giá cả.'.",
+      "evidence": {
+        "zh": "中國人認為數字六代表順利所以他們喜歡在帶有六的日子結婚希望自己的電話號碼裡有六",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41007.mp3",
+      "alignment": {
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 242500,
+          "end_ms": 257069
+        },
+        "statement": {
+          "start_ms": 257269,
+          "end_ms": 260519
+        },
+        "full_question": {
+          "start_ms": 242500,
+          "end_ms": 260519
+        }
+      },
+      "transcript": {
+        "full_zh": "中國人認為數字六代表順利所以他們喜歡在帶有六的日子結婚希望自己的電話號碼裡有六",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41007_L_04_S1",
+            "index": 0,
+            "zh": "中國人認為數字六代表順利所以他們喜歡在帶有六的日子結婚希望自己的電話號碼裡有六",
+            "pinyin": "zhōng guó rén rèn wèi shù zì liù dài biǎo shùn lì suǒ yǐ tā men xǐ huān zài dài yǒu liù de rì zi jié hūn xī wàng zì jǐ de diàn huà hào mǎ lǐ yǒu liù",
+            "vi": "",
+            "start_ms": 242500,
+            "end_ms": 257069
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "希望",
+          "pinyin": "xīwàng",
+          "meaning_vi": "hy vọng",
+          "vocab_id": 113,
+          "level": "HSK2"
+        },
+        {
+          "word": "自己",
+          "pinyin": "zìjǐ",
+          "meaning_vi": "tự mình, bản thân",
+          "vocab_id": 294,
+          "level": "HSK3"
+        },
+        {
+          "word": "价格",
+          "pinyin": "jiàgé",
+          "meaning_vi": "giá cả",
+          "vocab_id": 202,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41007_L_05",
+      "exam_id": "H41007",
+      "question_number": 5,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "中国人喜欢数字“6”。",
+        "pinyin": "zhōng guó rén xǐ huān shù zì “6”。",
+        "vi": "Người Trung Quốc thích con số 6."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Người Trung Quốc thích con số 6.'.",
+      "evidence": {
+        "zh": "我平時上班忙很少有時間運動但是週末我會約朋友們見面一塊去打籃球或者提足球偶爾也會去爬山",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41007.mp3",
+      "alignment": {
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 270560,
+          "end_ms": 287340
+        },
+        "statement": {
+          "start_ms": 287540,
+          "end_ms": 291540
+        },
+        "full_question": {
+          "start_ms": 270560,
+          "end_ms": 291540
+        }
+      },
+      "transcript": {
+        "full_zh": "我平時上班忙很少有時間運動但是週末我會約朋友們見面一塊去打籃球或者提足球偶爾也會去爬山",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41007_L_05_S1",
+            "index": 0,
+            "zh": "我平時上班忙很少有時間運動但是週末我會約朋友們見面一塊去打籃球或者提足球偶爾也會去爬山",
+            "pinyin": "wǒ píng shí shàng bān máng hěn shǎo yǒu shí jiān yùn dòng dàn shì zhōu mò wǒ huì yuē péng yǒu men jiàn miàn yī kuài qù dǎ lán qiú huò zhě tí zú qiú ǒu ěr yě huì qù pá shān",
+            "vi": "",
+            "start_ms": 270560,
+            "end_ms": 287340
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "朋友",
+          "pinyin": "péngyou",
+          "meaning_vi": "bạn",
+          "vocab_id": 76,
+          "level": "HSK1"
+        },
+        {
+          "word": "喜欢",
+          "pinyin": "xǐhuan",
+          "meaning_vi": "thích",
+          "vocab_id": 114,
+          "level": "HSK1"
+        },
+        {
+          "word": "中国",
+          "pinyin": "zhōngguó",
+          "meaning_vi": "Trung Quốc",
+          "vocab_id": 143,
+          "level": "HSK1"
+        },
+        {
+          "word": "上班",
+          "pinyin": "shàngbān",
+          "meaning_vi": "đi làm",
+          "vocab_id": 90,
+          "level": "HSK2"
+        },
+        {
+          "word": "或者",
+          "pinyin": "huòzhě",
+          "meaning_vi": "hoặc là",
+          "vocab_id": 107,
+          "level": "HSK3"
+        },
+        {
+          "word": "爬山",
+          "pinyin": "páshān",
+          "meaning_vi": "leo núi",
+          "vocab_id": 175,
+          "level": "HSK3"
+        },
+        {
+          "word": "数字",
+          "pinyin": "shùzì",
+          "meaning_vi": "số, chữ số",
+          "vocab_id": 403,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41007_L_06",
+      "exam_id": "H41007",
+      "question_number": 6,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他几乎每天都去打篮球。",
+        "pinyin": "tā jī hū měi tiān dōu qù dǎ lán qiú 。",
+        "vi": "Hầu như ngày nào anh ấy cũng đi chơi bóng rổ."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Hầu như ngày nào anh ấy cũng đi chơi bóng rổ.'.",
+      "evidence": {
+        "zh": "你不是準備參加普通話考試嗎明天報名就結束了你怎麼還沒交材料",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41007.mp3",
+      "alignment": {
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 301600,
+          "end_ms": 312120
+        },
+        "statement": {
+          "start_ms": 312320,
+          "end_ms": 316320
+        },
+        "full_question": {
+          "start_ms": 301600,
+          "end_ms": 316320
+        }
+      },
+      "transcript": {
+        "full_zh": "你不是準備參加普通話考試嗎明天報名就結束了你怎麼還沒交材料",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41007_L_06_S1",
+            "index": 0,
+            "zh": "你不是準備參加普通話考試嗎明天報名就結束了你怎麼還沒交材料",
+            "pinyin": "nǐ bú shì zhǔn bèi cān jiā pǔ tōng huà kǎo shì ma míng tiān bào míng jiù jié shù le nǐ zěn me hái méi jiāo cái liào",
+            "vi": "",
+            "start_ms": 301600,
+            "end_ms": 312120
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "打篮球",
+          "pinyin": "dǎ lánqiú",
+          "meaning_vi": "chơi bóng rổ",
+          "vocab_id": 16,
+          "level": "HSK2"
+        },
+        {
+          "word": "明天",
+          "pinyin": "míngtiān",
+          "meaning_vi": "ngày mai",
+          "vocab_id": 67,
+          "level": "HSK1"
+        },
+        {
+          "word": "几乎",
+          "pinyin": "jīhū",
+          "meaning_vi": "hầu như",
+          "vocab_id": 108,
+          "level": "HSK3"
+        },
+        {
+          "word": "材料",
+          "pinyin": "cáiliào",
+          "meaning_vi": "tài liệu, nguyên liệu",
+          "vocab_id": 35,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41007_L_07",
+      "exam_id": "H41007",
+      "question_number": 7,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "今天报名还来得及。",
+        "pinyin": "jīn tiān bào míng hái lái de jí 。",
+        "vi": "Hôm nay đăng ký vẫn còn kịp."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Hôm nay đăng ký vẫn còn kịp.'.",
+      "evidence": {
+        "zh": "小林如果你在法律方面有什麼問題我可以給你介紹一位律師你可以先和他聊一下他會給你一些專業性的意見",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41007.mp3",
+      "alignment": {
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 326400,
+          "end_ms": 339410
+        },
+        "statement": {
+          "start_ms": 339610,
+          "end_ms": 343560
+        },
+        "full_question": {
+          "start_ms": 326400,
+          "end_ms": 343560
+        }
+      },
+      "transcript": {
+        "full_zh": "小林如果你在法律方面有什麼問題我可以給你介紹一位律師你可以先和他聊一下他會給你一些專業性的意見",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41007_L_07_S1",
+            "index": 0,
+            "zh": "小林如果你在法律方面有什麼問題我可以給你介紹一位律師你可以先和他聊一下他會給你一些專業性的意見",
+            "pinyin": "xiǎo lín rú guǒ nǐ zài fǎ lǜ fāng miàn yǒu shén me wèn tí wǒ kě yǐ gěi nǐ jiè shào yī wèi lǜ shī nǐ kě yǐ xiān hé tā liáo yī xià tā huì gěi nǐ yī xiē zhuān yè xìng de yì jiàn",
+            "vi": "",
+            "start_ms": 326400,
+            "end_ms": 339410
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "来得及",
+          "pinyin": "láidejí",
+          "meaning_vi": "còn kịp",
+          "vocab_id": 271,
+          "level": "HSK4"
+        },
+        {
+          "word": "今天",
+          "pinyin": "jīntiān",
+          "meaning_vi": "hôm nay",
+          "vocab_id": 47,
+          "level": "HSK1"
+        },
+        {
+          "word": "可以",
+          "pinyin": "kěyǐ",
+          "meaning_vi": "có thể, được",
+          "vocab_id": 57,
+          "level": "HSK2"
+        },
+        {
+          "word": "一下",
+          "pinyin": "yīxià",
+          "meaning_vi": "một chút, thử xem",
+          "vocab_id": 128,
+          "level": "HSK2"
+        },
+        {
+          "word": "如果",
+          "pinyin": "rúguǒ",
+          "meaning_vi": "nếu",
+          "vocab_id": 196,
+          "level": "HSK3"
+        },
+        {
+          "word": "报名",
+          "pinyin": "bàomíng",
+          "meaning_vi": "đăng ký (tham gia)",
+          "vocab_id": 13,
+          "level": "HSK4"
+        },
+        {
+          "word": "法律",
+          "pinyin": "fǎlǜ",
+          "meaning_vi": "pháp luật",
+          "vocab_id": 107,
+          "level": "HSK4"
+        },
+        {
+          "word": "方面",
+          "pinyin": "fāngmiàn",
+          "meaning_vi": "phương diện, mặt",
+          "vocab_id": 112,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41007_L_08",
+      "exam_id": "H41007",
+      "question_number": 8,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "小林是律师。",
+        "pinyin": "xiǎo lín shì lǜ shī 。",
+        "vi": "Tiểu Lâm là một luật sư."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Tiểu Lâm là một luật sư.'.",
+      "evidence": {
+        "zh": "我們總是現目別人有份好工作有個好妻子卻常常忘記了自己已有的幸福其實我們在別人眼中也是幸福的只是我們沒有發現",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41007.mp3",
+      "alignment": {
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 353680,
+          "end_ms": 372940
+        },
+        "statement": {
+          "start_ms": 373140,
+          "end_ms": 376040
+        },
+        "full_question": {
+          "start_ms": 353680,
+          "end_ms": 376040
+        }
+      },
+      "transcript": {
+        "full_zh": "我們總是現目別人有份好工作有個好妻子卻常常忘記了自己已有的幸福其實我們在別人眼中也是幸福的只是我們沒有發現",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41007_L_08_S1",
+            "index": 0,
+            "zh": "我們總是現目別人有份好工作有個好妻子卻常常忘記了自己已有的幸福其實我們在別人眼中也是幸福的只是我們沒有發現",
+            "pinyin": "wǒ men zǒng shì xiàn mù bié rén yǒu fèn hǎo gōng zuò yǒu gè hǎo qī zǐ què cháng cháng wàng jì le zì jǐ yǐ yǒu de xìng fú qí shí wǒ men zài bié rén yǎn zhōng yě shì xìng fú de zhǐ shì wǒ men méi yǒu fā xiàn",
+            "vi": "",
+            "start_ms": 353680,
+            "end_ms": 372940
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "工作",
+          "pinyin": "gōngzuò",
+          "meaning_vi": "công việc, làm việc",
+          "vocab_id": 33,
+          "level": "HSK1"
+        },
+        {
+          "word": "妻子",
+          "pinyin": "qīzi",
+          "meaning_vi": "vợ",
+          "vocab_id": 82,
+          "level": "HSK2"
+        },
+        {
+          "word": "自己",
+          "pinyin": "zìjǐ",
+          "meaning_vi": "tự mình, bản thân",
+          "vocab_id": 294,
+          "level": "HSK3"
+        },
+        {
+          "word": "律师",
+          "pinyin": "lǜshī",
+          "meaning_vi": "luật sư",
+          "vocab_id": 296,
+          "level": "HSK4"
+        },
+        {
+          "word": "幸福",
+          "pinyin": "xìngfú",
+          "meaning_vi": "hạnh phúc",
+          "vocab_id": 487,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41007_L_09",
+      "exam_id": "H41007",
+      "question_number": 9,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "不要总是羡慕别人。",
+        "pinyin": "bú yào zǒng shì xiàn mù bié rén 。",
+        "vi": "Đừng lúc nào cũng ngưỡng mộ người khác."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Đừng lúc nào cũng ngưỡng mộ người khác.'.",
+      "evidence": {
+        "zh": "是由於冷空信談下我省明天將迎來大風降溫天氣有些地方還會有小道終於交通會受到一定影響聽眾朋友們出行時一定要注意安全",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41007.mp3",
+      "alignment": {
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 386140,
+          "end_ms": 403930
+        },
+        "statement": {
+          "start_ms": 404130,
+          "end_ms": 408080
+        },
+        "full_question": {
+          "start_ms": 386140,
+          "end_ms": 408080
+        }
+      },
+      "transcript": {
+        "full_zh": "是由於冷空信談下我省明天將迎來大風降溫天氣有些地方還會有小道終於交通會受到一定影響聽眾朋友們出行時一定要注意安全",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41007_L_09_S1",
+            "index": 0,
+            "zh": "是由於冷空信談下我省明天將迎來大風降溫天氣有些地方還會有小道終於交通會受到一定影響聽眾朋友們出行時一定要注意安全",
+            "pinyin": "shì yóu yú lěng kōng xìn tán xià wǒ shěng míng tiān jiāng yíng lái dà fēng jiàng wēn tiān qì yǒu xiē dì fāng hái huì yǒu xiǎo dào zhōng yú jiāo tōng huì shòu dào yí dìng yǐng xiǎng tīng zhòng péng yǒu men chū xíng shí yí dìng yào zhù yì ān quán",
+            "vi": "",
+            "start_ms": 386140,
+            "end_ms": 403930
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "明天",
+          "pinyin": "míngtiān",
+          "meaning_vi": "ngày mai",
+          "vocab_id": 67,
+          "level": "HSK1"
+        },
+        {
+          "word": "朋友",
+          "pinyin": "péngyou",
+          "meaning_vi": "bạn",
+          "vocab_id": 76,
+          "level": "HSK1"
+        },
+        {
+          "word": "别人",
+          "pinyin": "biérén",
+          "meaning_vi": "người khác",
+          "vocab_id": 23,
+          "level": "HSK3"
+        },
+        {
+          "word": "地方",
+          "pinyin": "dìfang",
+          "meaning_vi": "nơi, địa phương",
+          "vocab_id": 48,
+          "level": "HSK3"
+        },
+        {
+          "word": "一定",
+          "pinyin": "yídìng",
+          "meaning_vi": "nhất định",
+          "vocab_id": 254,
+          "level": "HSK3"
+        },
+        {
+          "word": "注意",
+          "pinyin": "zhùyì",
+          "meaning_vi": "chú ý",
+          "vocab_id": 293,
+          "level": "HSK3"
+        },
+        {
+          "word": "总是",
+          "pinyin": "zǒngshì",
+          "meaning_vi": "luôn luôn",
+          "vocab_id": 296,
+          "level": "HSK3"
+        },
+        {
+          "word": "安全",
+          "pinyin": "ānquán",
+          "meaning_vi": "an toàn",
+          "vocab_id": 3,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41007_L_10",
+      "exam_id": "H41007",
+      "question_number": 10,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "明天中午有大雪。",
+        "pinyin": "míng tiān zhōng wǔ yǒu dà xuě 。",
+        "vi": "Trưa mai trời sẽ có tuyết lớn."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Trưa mai trời sẽ có tuyết lớn.'.",
+      "evidence": {
+        "zh": "每題聽一次例如該加油了去機場的路上有加油站嗎有你放心吧",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41007.mp3",
+      "alignment": {
+        "status": "verified",
+        "method": "silence_envelope_speech_segmented_number_anchored",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 418160,
+          "end_ms": 435599
+        },
+        "statement": {
+          "start_ms": 435799,
+          "end_ms": 439400
+        },
+        "full_question": {
+          "start_ms": 418160,
+          "end_ms": 439400
+        }
+      },
+      "transcript": {
+        "full_zh": "每題聽一次例如該加油了去機場的路上有加油站嗎有你放心吧",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41007_L_10_S1",
+            "index": 0,
+            "zh": "每題聽一次例如該加油了去機場的路上有加油站嗎有你放心吧",
+            "pinyin": "měi tí tīng yī cì lì rú gāi jiā yóu le qù jī chǎng de lù shàng yǒu jiā yóu zhàn ma yǒu nǐ fàng xīn ba",
+            "vi": "",
+            "start_ms": 418160,
+            "end_ms": 435599
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "加油站",
+          "pinyin": "jiāyóuzhàn",
+          "meaning_vi": "trạm xăng",
+          "vocab_id": 200,
+          "level": "HSK4"
+        },
+        {
+          "word": "明天",
+          "pinyin": "míngtiān",
+          "meaning_vi": "ngày mai",
+          "vocab_id": 67,
+          "level": "HSK1"
+        },
+        {
+          "word": "中午",
+          "pinyin": "zhōngwǔ",
+          "meaning_vi": "buổi trưa",
+          "vocab_id": 144,
+          "level": "HSK1"
+        },
+        {
+          "word": "放心",
+          "pinyin": "fàngxīn",
+          "meaning_vi": "yên tâm",
+          "vocab_id": 68,
+          "level": "HSK3"
+        },
+        {
+          "word": "例如",
+          "pinyin": "lìrú",
+          "meaning_vi": "ví dụ như",
+          "vocab_id": 284,
+          "level": "HSK4"
+        }
+      ]
+    }
+  ]
+}

@@ -33,9 +33,16 @@ Mỗi lần release, số phiên bản `x.x.x` phải được cập nhật đ�
 
 ### Quy trình đánh dấu Release & Git Tag
 Sau khi kiểm tra và commit lên `main`:
-1. Tạo annotated git tag:
+1. Tạo annotated git tag với **ghi chú chi tiết về các thay đổi (detailed release notes)**:
+   - **BẮT BUỘC note kỹ những gì đã thay đổi trong tag đó**: Tuyệt đối không ghi tag message chung chung (như chỉ ghi cụt ngủn `"Release vX.Y.Z"` hay `"update"`).
+   - Nội dung tag message phải gồm:
+     - Dòng tiêu đề tóm tắt ngắn gọn mục tiêu phát hành.
+     - Danh sách gạch đầu dòng mô tả cụ thể từng thay đổi: tính năng mới, lỗi đã sửa, cải tiến UI/UX, logic hoặc module bị ảnh hưởng.
    ```bash
-   git tag -a vX.Y.Z -m "Release vX.Y.Z: <tóm tắt nội dung release>"
+   git tag -a vX.Y.Z -m "Release vX.Y.Z: <tiêu đề tóm tắt>" \
+     -m "- <Chi tiết thay đổi 1: tính năng mới / sửa lỗi>
+   - <Chi tiết thay đổi 2: cải thiện UI/UX / bố cục / style>
+   - <Chi tiết thay đổi 3: logic dữ liệu / kiểm thử>"
    ```
 2. Đẩy commit và git tag lên GitHub:
    ```bash

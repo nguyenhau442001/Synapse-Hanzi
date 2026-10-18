@@ -517,7 +517,7 @@ function renderExerciseCardHtml(currentEntry) {
 
       <!-- INTERACTIVE EXERCISE BODY -->
       <div class="exercise-interactive-body">
-        ${renderInteractiveExerciseForm(currentEntry)}
+        ${renderPracticePanelsHtml(currentEntry)}
       </div>
 
       <!-- FEEDBACK BANNER (If any) -->
