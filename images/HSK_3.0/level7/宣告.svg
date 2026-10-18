@@ -1,0 +1,37 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for 宣告 (Official Proclamation/Announcement) -->
+  <g transform="translate(120, 115)">
+    <!-- Radiating announcement waves / sound waves -->
+    <path d="M-35 -55 C-55 -35 -55 -5 -35 15" fill="none" stroke="#FFA726" stroke-width="4" stroke-linecap="round" opacity="0.4"/>
+    <path d="M-50 -70 C-75 -45 -75 0 -50 25" fill="none" stroke="#FFA726" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+    
+    <path d="M35 -55 C55 -35 55 -5 35 15" fill="none" stroke="#FFA726" stroke-width="4" stroke-linecap="round" opacity="0.4"/>
+    <path d="M50 -70 C75 -45 75 0 50 25" fill="none" stroke="#FFA726" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Megaphone Body (Modern Flat Style) -->
+    <!-- Handle -->
+    <path d="M-15 35 L-5 65 L5 65 L-5 35 Z" fill="#78909C"/>
+    <!-- Speaker Back / Grip base -->
+    <rect x="-16" y="25" width="32" height="12" rx="4" fill="#37474F"/>
+    
+    <!-- Main Cone -->
+    <path d="M-16 10 L-35 -25 L35 -25 L16 10 Z" fill="#FFA726"/>
+    <path d="M-16 10 L-35 -25 L35 -25 L16 10 Z" fill="#000000" opacity="0.1"/>
+    
+    <!-- Speaker Rim / Opening -->
+    <ellipse cx="0" cy="-25" rx="35" ry="10" fill="#FFB74D"/>
+    <ellipse cx="0" cy="-25" rx="30" ry="7" fill="#FFF3E0"/>
+
+    <!-- Official Seal / Ribbon hanging below (representing official proclamation/announcement) -->
+    <path d="M-10 65 L0 85 L10 65 Z" fill="#E53935"/>
+    <circle cx="0" cy="65" r="8" fill="#D32F2F"/>
+    
+    <!-- Sparkles / Emphasis indicators -->
+    <path d="M-55 -25 L-45 -25 M-50 -30 L-50 -20" stroke="#FFF3E0" stroke-width="3" stroke-linecap="round"/>
+    <path d="M55 -25 L45 -25 M50 -30 L50 -20" stroke="#FFF3E0" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="0" cy="-60" r="4" fill="#FFA726"/>
+  </g>
+</svg>

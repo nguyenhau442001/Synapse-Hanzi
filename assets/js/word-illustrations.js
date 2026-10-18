@@ -51551,6 +51551,251 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "姓氏.svg",
     "src": "images/HSK_3.0/level7/姓氏.svg",
     "caption": "dòng họ; họ"
+  },
+  "兴致": {
+    "file": "兴致.svg",
+    "src": "images/HSK_3.0/level7/兴致.svg",
+    "caption": "hứng thú; sự hào hứng"
+  },
+  "凶": {
+    "file": "凶.svg",
+    "src": "images/HSK_3.0/level7/凶.svg",
+    "caption": "dữ tợn; hung dữ; hung ác"
+  },
+  "凶残": {
+    "file": "凶残.svg",
+    "src": "images/HSK_3.0/level7/凶残.svg",
+    "caption": "hung tàn; tàn bạo dã man"
+  },
+  "凶狠": {
+    "file": "凶狠.svg",
+    "src": "images/HSK_3.0/level7/凶狠.svg",
+    "caption": "hung hãn; dữ dằn"
+  },
+  "凶猛": {
+    "file": "凶猛.svg",
+    "src": "images/HSK_3.0/level7/凶猛.svg",
+    "caption": "hung dữ; mãnh liệt"
+  },
+  "胸有成竹": {
+    "file": "胸有成竹.svg",
+    "src": "images/HSK_3.0/level7/胸有成竹.svg",
+    "caption": "tự tin chắc chắn nắm phần thắng; liệu trước mọi việc"
+  },
+  "雄性": {
+    "file": "雄性.svg",
+    "src": "images/HSK_3.0/level7/雄性.svg",
+    "caption": "giống đực; con đực"
+  },
+  "修补": {
+    "file": "修补.svg",
+    "src": "images/HSK_3.0/level7/修补.svg",
+    "caption": "tu bổ; sửa chữa; vá víu"
+  },
+  "修长": {
+    "file": "修长.svg",
+    "src": "images/HSK_3.0/level7/修长.svg",
+    "caption": "thon dài; thanh mảnh thon thả"
+  },
+  "休克": {
+    "file": "休克.svg",
+    "src": "images/HSK_3.0/level7/休克.svg",
+    "caption": "sốc; choáng ngất (y học)"
+  },
+  "羞愧": {
+    "file": "羞愧.svg",
+    "src": "images/HSK_3.0/level7/羞愧.svg",
+    "caption": "hổ thẹn; xấu hổ"
+  },
+  "休眠": {
+    "file": "休眠.svg",
+    "src": "images/HSK_3.0/level7/休眠.svg",
+    "caption": "ngủ đông; trạng thái ngủ ngưng hoạt động"
+  },
+  "休想": {
+    "file": "休想.svg",
+    "src": "images/HSK_3.0/level7/休想.svg",
+    "caption": "đừng hòng; đừng mơ tưởng"
+  },
+  "休养": {
+    "file": "休养.svg",
+    "src": "images/HSK_3.0/level7/休养.svg",
+    "caption": "tĩnh dưỡng; an dưỡng; nghỉ ngơi bồi bổ"
+  },
+  "修正": {
+    "file": "修正.svg",
+    "src": "images/HSK_3.0/level7/修正.svg",
+    "caption": "hiệu chỉnh; sửa chữa; đính chính"
+  },
+  "锈": {
+    "file": "锈.svg",
+    "src": "images/HSK_3.0/level7/锈.svg",
+    "caption": "gỉ sét; han gỉ"
+  },
+  "嗅": {
+    "file": "嗅.svg",
+    "src": "images/HSK_3.0/level7/嗅.svg",
+    "caption": "ngửi; khứu giác"
+  },
+  "秀丽": {
+    "file": "秀丽.svg",
+    "src": "images/HSK_3.0/level7/秀丽.svg",
+    "caption": "tú lệ; thanh tú; tươi đẹp"
+  },
+  "秀美": {
+    "file": "秀美.svg",
+    "src": "images/HSK_3.0/level7/秀美.svg",
+    "caption": "tươi đẹp thanh nhã; tú mỹ"
+  },
+  "袖手旁观": {
+    "file": "袖手旁观.svg",
+    "src": "images/HSK_3.0/level7/袖手旁观.svg",
+    "caption": "khoanh tay đứng nhìn; bàng quan"
+  },
+  "袖珍": {
+    "file": "袖珍.svg",
+    "src": "images/HSK_3.0/level7/袖珍.svg",
+    "caption": "bỏ túi; nhỏ gọn; mini"
+  },
+  "虚幻": {
+    "file": "虚幻.svg",
+    "src": "images/HSK_3.0/level7/虚幻.svg",
+    "caption": "hư ảo; ảo tưởng không thật"
+  },
+  "虚拟": {
+    "file": "虚拟.svg",
+    "src": "images/HSK_3.0/level7/虚拟.svg",
+    "caption": "ảo; mô phỏng ảo"
+  },
+  "虚弱": {
+    "file": "虚弱.svg",
+    "src": "images/HSK_3.0/level7/虚弱.svg",
+    "caption": "suy nhược; yếu ớt; kiệt sức"
+  },
+  "徐徐": {
+    "file": "徐徐.svg",
+    "src": "images/HSK_3.0/level7/徐徐.svg",
+    "caption": "từ từ; chầm chậm"
+  },
+  "许": {
+    "file": "许.svg",
+    "src": "images/HSK_3.0/level7/许.svg",
+    "caption": "hứa; cho phép; có lẽ"
+  },
+  "许愿": {
+    "file": "许愿.svg",
+    "src": "images/HSK_3.0/level7/许愿.svg",
+    "caption": "ước nguyện; cầu nguyện"
+  },
+  "序": {
+    "file": "序.svg",
+    "src": "images/HSK_3.0/level7/序.svg",
+    "caption": "lời tựa; bài tựa; thứ tự"
+  },
+  "续": {
+    "file": "续.svg",
+    "src": "images/HSK_3.0/level7/续.svg",
+    "caption": "rót thêm; châm thêm; nối tiếp"
+  },
+  "絮叨": {
+    "file": "絮叨.svg",
+    "src": "images/HSK_3.0/level7/絮叨.svg",
+    "caption": "lải nhải cằn nhằn; nói dông dài"
+  },
+  "续航": {
+    "file": "续航.svg",
+    "src": "images/HSK_3.0/level7/续航.svg",
+    "caption": "tầm hoạt động liên tục; thời lượng pin"
+  },
+  "序列": {
+    "file": "序列.svg",
+    "src": "images/HSK_3.0/level7/序列.svg",
+    "caption": "trình tự; chuỗi; dãy số"
+  },
+  "序幕": {
+    "file": "序幕.svg",
+    "src": "images/HSK_3.0/level7/序幕.svg",
+    "caption": "màn dạo đầu; mở màn"
+  },
+  "旭日": {
+    "file": "旭日.svg",
+    "src": "images/HSK_3.0/level7/旭日.svg",
+    "caption": "mặt trời ban mai; húc nhật"
+  },
+  "宣称": {
+    "file": "宣称.svg",
+    "src": "images/HSK_3.0/level7/宣称.svg",
+    "caption": "tuyên bố; tự xưng"
+  },
+  "宣读": {
+    "file": "宣读.svg",
+    "src": "images/HSK_3.0/level7/宣读.svg",
+    "caption": "tuyên đọc; công bố"
+  },
+  "宣告": {
+    "file": "宣告.svg",
+    "src": "images/HSK_3.0/level7/宣告.svg",
+    "caption": "tuyên bố; tuyên cáo"
+  },
+  "喧闹": {
+    "file": "喧闹.svg",
+    "src": "images/HSK_3.0/level7/喧闹.svg",
+    "caption": "ồn ào huyên náo; náo nhiệt"
+  },
+  "宣泄": {
+    "file": "宣泄.svg",
+    "src": "images/HSK_3.0/level7/宣泄.svg",
+    "caption": "giải tỏa (cảm xúc); xả ra"
+  },
+  "宣言": {
+    "file": "宣言.svg",
+    "src": "images/HSK_3.0/level7/宣言.svg",
+    "caption": "tuyên ngôn"
+  },
+  "玄": {
+    "file": "玄.svg",
+    "src": "images/HSK_3.0/level7/玄.svg",
+    "caption": "huyền diệu; huyền bí; khó tin"
+  },
+  "悬": {
+    "file": "悬.svg",
+    "src": "images/HSK_3.0/level7/悬.svg",
+    "caption": "nguy hiểm khó lường; chưa chắc chắn; lơ lửng"
+  },
+  "玄机": {
+    "file": "玄机.svg",
+    "src": "images/HSK_3.0/level7/玄机.svg",
+    "caption": "huyền cơ; bí ẩn thâm sâu"
+  },
+  "旋涡": {
+    "file": "旋涡.svg",
+    "src": "images/HSK_3.0/level7/旋涡.svg",
+    "caption": "xoáy nước; vòng xoáy"
+  },
+  "悬崖": {
+    "file": "悬崖.svg",
+    "src": "images/HSK_3.0/level7/悬崖.svg",
+    "caption": "vách đá cheo leo; vực thẳm"
+  },
+  "选民": {
+    "file": "选民.svg",
+    "src": "images/HSK_3.0/level7/选民.svg",
+    "caption": "cử tri"
+  },
+  "选项": {
+    "file": "选项.svg",
+    "src": "images/HSK_3.0/level7/选项.svg",
+    "caption": "lựa chọn; phương án chọn"
+  },
+  "削减": {
+    "file": "削减.svg",
+    "src": "images/HSK_3.0/level7/削减.svg",
+    "caption": "cắt giảm; giảm bớt"
+  },
+  "靴子": {
+    "file": "靴子.svg",
+    "src": "images/HSK_3.0/level7/靴子.svg",
+    "caption": "ủng; giày bốt"
   }
 };
 
