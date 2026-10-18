@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(60, 60)">
+    <!-- Workbench surface -->
+    <rect x="0" y="100" width="120" height="10" rx="2" fill="#343A46"/>
+    <rect x="10" y="110" width="100" height="10" fill="#2C313C"/>
+    
+    <!-- Precision Tool (The "Skill/Specialty") -->
+    <path d="M60 20 L85 45 L80 50 L55 25 Z" fill="#FFB86C"/>
+    <path d="M40 40 L65 65 L60 70 L35 45 Z" fill="#FFB86C"/>
+    <rect x="30" y="50" width="40" height="50" rx="4" fill="#FFB86C"/>
+    <rect x="45" y="60" width="10" height="30" rx="2" fill="#1A1D24"/>
+    
+    <!-- Hand holding the tool -->
+    <path d="M35 70 C 35 60, 55 60, 55 70 L 55 85 C 55 95, 35 95, 35 85 Z" fill="#FFD8A8"/>
+    <path d="M40 75 L40 95" stroke="#FFD8A8" stroke-width="6" stroke-linecap="round"/>
+    <path d="M50 75 L50 95" stroke="#FFD8A8" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Spark of expertise/precision -->
+    <circle cx="90" cy="30" r="4" fill="#FFB86C"/>
+    <circle cx="95" cy="40" r="2" fill="#FFB86C"/>
+  </g>
+</svg>
