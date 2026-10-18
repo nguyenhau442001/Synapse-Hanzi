@@ -50067,6 +50067,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/推选.svg",
     "caption": "bầu chọn; đề cử; suy tôn"
   },
+  "推移": {
+    "file": "推移.svg",
+    "src": "images/HSK_3.0/level7/推移.svg",
+    "caption": "trôi qua; biến chuyển theo thời gian"
+  },
   "颓废": {
     "file": "颓废.svg",
     "src": "images/HSK_3.0/level7/颓废.svg",
@@ -50076,6 +50081,16 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "退化.svg",
     "src": "images/HSK_3.0/level7/退化.svg",
     "caption": "thoái hóa; suy thoái"
+  },
+  "退回": {
+    "file": "退回.svg",
+    "src": "images/HSK_3.0/level7/退回.svg",
+    "caption": "trả lại; gửi trả lại"
+  },
+  "退让": {
+    "file": "退让.svg",
+    "src": "images/HSK_3.0/level7/退让.svg",
+    "caption": "nhượng bộ; nhân nhượng"
   },
   "退缩": {
     "file": "退缩.svg",
@@ -50246,6 +50261,26 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "挽.svg",
     "src": "images/HSK_3.0/level7/挽.svg",
     "caption": "xắn (tay áo); kéo; cứu vãn"
+  },
+  "晚年": {
+    "file": "晚年.svg",
+    "src": "images/HSK_3.0/level7/晚年.svg",
+    "caption": "tuổi già; những năm cuối đời"
+  },
+  "晚期": {
+    "file": "晚期.svg",
+    "src": "images/HSK_3.0/level7/晚期.svg",
+    "caption": "thời kỳ cuối; giai đoạn cuối"
+  },
+  "晚霞": {
+    "file": "晚霞.svg",
+    "src": "images/HSK_3.0/level7/晚霞.svg",
+    "caption": "hoàng hôn"
+  },
+  "万能": {
+    "file": "万能.svg",
+    "src": "images/HSK_3.0/level7/万能.svg",
+    "caption": "vạn năng; toàn năng"
   },
   "万万": {
     "file": "万万.svg",
