@@ -45502,10 +45502,25 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/磨.svg",
     "caption": "mài; cọ xát; rèn luyện"
   },
+  "魔法": {
+    "file": "魔法.svg",
+    "src": "images/HSK_3.0/level7/魔法.svg",
+    "caption": "phép thuật; ma pháp"
+  },
   "蘑菇": {
     "file": "蘑菇.svg",
     "src": "images/HSK_3.0/level7/蘑菇.svg",
     "caption": "nấm"
+  },
+  "魔力": {
+    "file": "魔力.svg",
+    "src": "images/HSK_3.0/level7/魔力.svg",
+    "caption": "ma lực; sức quyến rũ kỳ diệu"
+  },
+  "磨炼": {
+    "file": "磨炼.svg",
+    "src": "images/HSK_3.0/level7/磨炼.svg",
+    "caption": "rèn luyện; trui rèn"
   },
   "磨难": {
     "file": "磨难.svg",
@@ -45677,10 +45692,20 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/目中无人.svg",
     "caption": "coi trời bằng vung; kiêu căng ngạo mạn; không coi ai ra gì"
   },
+  "呐喊": {
+    "file": "呐喊.svg",
+    "src": "images/HSK_3.0/level7/呐喊.svg",
+    "caption": "hò reo; cổ vũ; gào thét"
+  },
   "纳入": {
     "file": "纳入.svg",
     "src": "images/HSK_3.0/level7/纳入.svg",
     "caption": "đưa vào; nạp vào; tính vào"
+  },
+  "纳税": {
+    "file": "纳税.svg",
+    "src": "images/HSK_3.0/level7/纳税.svg",
+    "caption": "nộp thuế"
   },
   "纳税人": {
     "file": "纳税人.svg",
@@ -45987,10 +46012,25 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/弄虚作假.svg",
     "caption": "gian lận; làm giả dối; bịa đặt lừa dối"
   },
+  "女方": {
+    "file": "女方.svg",
+    "src": "images/HSK_3.0/level7/女方.svg",
+    "caption": "nhà gái; bên đằng gái"
+  },
   "女婿": {
     "file": "女婿.svg",
     "src": "images/HSK_3.0/level7/女婿.svg",
     "caption": "con rể"
+  },
+  "暖烘烘": {
+    "file": "暖烘烘.svg",
+    "src": "images/HSK_3.0/level7/暖烘烘.svg",
+    "caption": "ấm áp dễ chịu; ấm sực"
+  },
+  "诺言": {
+    "file": "诺言.svg",
+    "src": "images/HSK_3.0/level7/诺言.svg",
+    "caption": "lời hứa; lời hẹn ước"
   },
   "拍板": {
     "file": "拍板.svg",
@@ -46892,10 +46932,20 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/切磋.svg",
     "caption": "trao đổi học hỏi; so tài bàn bạc"
   },
+  "切割": {
+    "file": "切割.svg",
+    "src": "images/HSK_3.0/level7/切割.svg",
+    "caption": "cắt gọt; xẻ; cắt"
+  },
   "切换": {
     "file": "切换.svg",
     "src": "images/HSK_3.0/level7/切换.svg",
     "caption": "chuyển đổi; hoán đổi"
+  },
+  "切记": {
+    "file": "切记.svg",
+    "src": "images/HSK_3.0/level7/切记.svg",
+    "caption": "nhớ kỹ; ghi lòng tạc dạ"
   },
   "切忌": {
     "file": "切忌.svg",
