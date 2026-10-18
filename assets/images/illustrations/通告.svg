@@ -1,0 +1,35 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(48, 32)">
+    {/* Official Bulletin Board / Notice Board Frame */}
+    <rect x="20" y="10" width="104" height="136" rx="6" fill="#2D333B" stroke="#4F5660" stroke-width="3"/>
+    
+    {/* Bulletin Board Interior (Cork texture/darker shade) */}
+    <rect x="28" y="22" width="88" height="112" rx="3" fill="#22272E"/>
+    
+    {/* Official Notice Document (Yết thị / Thông cáo) */}
+    <rect x="42" y="38" width="60" height="80" rx="2" fill="#F0F3F6"/>
+    
+    {/* Header / Seal Area representing official decree */}
+    <circle cx="72" cy="54" r="8" fill="#F0883E"/>
+    
+    {/* Text lines on the notice (abstract representation) */}
+    <rect x="52" y="70" width="40" height="4" rx="2" fill="#8C959F"/>
+    <rect x="52" y="80" width="40" height="4" rx="2" fill="#8C959F"/>
+    <rect x="52" y="90" width="28" height="4" rx="2" fill="#8C959F"/>
+    <rect x="52" y="100" width="34" height="4" rx="2" fill="#8C959F"/>
+    
+    {/* Push pin holding the notice */}
+    <circle cx="72" cy="30" r="3" fill="#FF7B72"/>
+    
+    {/* Megaphone / Broadcasting element symbolizing public announcement (通) */}
+    <path d="M 12 120 L 32 108 L 32 152 L 12 140 Z" fill="#F0883E"/>
+    <path d="M 32 104 C 42 104, 48 110, 48 130 C 48 150, 42 156, 32 156 Z" fill="#FFA657"/>
+    <rect x="8" y="124" width="6" height="20" rx="2" fill="#D16933"/>
+    
+    {/* Sound waves emitting from megaphone indicating public broadcast */}
+    <path d="M 58 114 C 62 122, 62 138, 58 146" stroke="#FFA657" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 66 106 C 74 118, 74 134, 66 154" stroke="#FFA657" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+  </g>
+</svg>
