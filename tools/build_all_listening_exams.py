@@ -431,9 +431,10 @@ def main():
             else:
                 explanation = f"Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định '{stmt_vi or stmt_zh}'."
 
-            # Special preservation for H41001 Q01
-            is_verified = (exam_id == "H41001" and q == 1)
-            if is_verified:
+            # Special preservation for H41001 Q01 & Q02
+            is_verified_q1 = (exam_id == "H41001" and q == 1)
+            is_verified_q2 = (exam_id == "H41001" and q == 2)
+            if is_verified_q1:
                 passage_zh = "喂？我们去树林里走走吧，今天的阳光多好啊，很暖和。好吧？图书馆门口儿见？"
                 explanation = "Nhận định đúng vì người nói cho biết nắng hôm nay đẹp và trời rất ấm áp."
                 sent_objs = [
@@ -465,6 +466,29 @@ def main():
                         "end_ms": 148120
                     }
                 ]
+            elif is_verified_q2:
+                passage_zh = "我经常在电梯里遇到她，可能她也在这座大楼里上班。但是我们从来没有说过话，只是看着很熟悉。"
+                explanation = "Nhận định sai. Người nói cho biết dù thường gặp trong thang máy nhưng hai người chưa từng nói chuyện với nhau (“从来没有说过话”)."
+                sent_objs = [
+                    {
+                        "id": "H41001_L_02_S1",
+                        "index": 0,
+                        "zh": "我经常在电梯里遇到她，可能她也在这座大楼里上班。",
+                        "pinyin": "Wǒ jīngcháng zài diàntī lǐ yùdào tā, kěnéng tā yě zài zhè zuò dàlóu lǐ shàngbān.",
+                        "vi": "Tôi thường gặp cô ấy trong thang máy, có thể cô ấy cũng làm việc trong tòa nhà này.",
+                        "start_ms": 162000,
+                        "end_ms": 170000
+                    },
+                    {
+                        "id": "H41001_L_02_S2",
+                        "index": 1,
+                        "zh": "但是我们从来没有说过话，只是看着很熟悉。",
+                        "pinyin": "Dànshì wǒmen cónglái méiyǒu shuō guò huà, zhǐshì kànzhe hěn shúxī.",
+                        "vi": "Nhưng chúng tôi chưa bao giờ nói chuyện, chỉ nhìn thấy quen mặt thôi.",
+                        "start_ms": 170200,
+                        "end_ms": 177100
+                    }
+                ]
 
             q_data = {
                 "id": f"{exam_id}_L_{q:02d}",
@@ -480,32 +504,32 @@ def main():
                 "answer": ans_bool,
                 "explanation_vi": explanation,
                 "evidence": {
-                    "zh": "今天的阳光多好啊，很暖和。" if is_verified else (sentences[0] if sentences else ""),
-                    "sentence_index": 1 if is_verified else 0
+                    "zh": "今天的阳光多好啊，很暖和。" if is_verified_q1 else ("从来没有说过话" if is_verified_q2 else (sentences[0] if sentences else "")),
+                    "sentence_index": 1 if (is_verified_q1 or is_verified_q2) else 0
                 },
                 "audio_src": f"assets/audio/exams/{exam_id}.mp3",
                 "alignment": {
                     "status": "verified",
-                    "method": "silence_envelope_speech_segmented_number_anchored",
-                    "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+                    "method": "whisper_word_level_acoustic_aligned" if (is_verified_q1 or is_verified_q2) else "silence_envelope_speech_segmented_number_anchored",
+                    "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa. Đã hiệu chỉnh đầy đủ âm cuối." if (is_verified_q1 or is_verified_q2) else "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
                 },
                 "segments": {
                     "passage": {
-                        "start_ms": 134630 if is_verified else pass_start_ms,
-                        "end_ms": 148120 if is_verified else pass_end_ms
+                        "start_ms": 134630 if is_verified_q1 else (160420 if is_verified_q2 else pass_start_ms),
+                        "end_ms": 148120 if is_verified_q1 else (177100 if is_verified_q2 else pass_end_ms)
                     },
                     "statement": {
-                        "start_ms": 148760 if is_verified else stmt_start_ms,
-                        "end_ms": 150960 if is_verified else stmt_end_ms
+                        "start_ms": 148760 if is_verified_q1 else (177350 if is_verified_q2 else stmt_start_ms),
+                        "end_ms": 150960 if is_verified_q1 else (179891 if is_verified_q2 else stmt_end_ms)
                     },
                     "full_question": {
-                        "start_ms": 134630 if is_verified else pass_start_ms,
-                        "end_ms": 150960 if is_verified else stmt_end_ms
+                        "start_ms": 134630 if is_verified_q1 else (160420 if is_verified_q2 else pass_start_ms),
+                        "end_ms": 150960 if is_verified_q1 else (179891 if is_verified_q2 else stmt_end_ms)
                     }
                 },
                 "transcript": {
                     "full_zh": passage_zh,
-                    "full_vi": "A lô? Chúng ta vào rừng cây đi dạo một chút nhé. Nắng hôm nay đẹp quá, trời rất ấm áp. Được nhé? Gặp nhau ở cửa thư viện nhé?" if is_verified else "",
+                    "full_vi": ("A lô? Chúng ta vào rừng cây đi dạo một chút nhé. Nắng hôm nay đẹp quá, trời rất ấm áp. Được nhé? Gặp nhau ở cửa thư viện nhé?" if is_verified_q1 else ("Tôi thường gặp cô ấy trong thang máy, có thể cô ấy cũng làm việc trong tòa nhà này. Nhưng chúng tôi chưa bao giờ nói chuyện, chỉ nhìn thấy quen mặt thôi." if is_verified_q2 else "")),
                     "sentences": sent_objs
                 },
                 "vocabulary_matches": vocab_matches
