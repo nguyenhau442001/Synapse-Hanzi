@@ -68,9 +68,12 @@ body.graded-story-active #primaryTabs {
   .workstation {
     /* Side columns are comfortably proportioned so content has natural breathing room */
     grid-template-columns: 280px minmax(0, 1fr) 340px;
-    grid-template-areas: "left middle right";
+    grid-template-areas:
+      "left middle right"
+      "footer footer footer";
     align-items: start;
-    gap: 24px;
+    row-gap: 36px;
+    column-gap: 24px;
     max-width: 1440px;
     margin: 0 auto;
     min-height: auto;
@@ -103,7 +106,14 @@ body.graded-story-active #primaryTabs {
     max-width: 1240px !important;
     gap: 32px;
   }
-  .app-footer { grid-column: 1 / -1; margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--border); }
+  .app-footer {
+    grid-area: footer;
+    grid-column: 1 / -1;
+    margin-top: 36px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-top: 1px solid var(--border);
+  }
   .workstation-right {
     grid-area: right;
     align-self: start;
@@ -265,22 +275,37 @@ body.graded-story-active #primaryTabs {
     height: auto; min-height: auto;
     display: grid;
     grid-template-columns: 310px minmax(0, 1fr);
-    grid-template-areas: "left middle";
+    grid-template-areas:
+      "left middle"
+      "footer footer";
     align-items: start;
-    gap: 28px;
+    row-gap: 40px;
+    column-gap: 28px;
     max-width: 1380px;
     margin: 0 auto;
   }
   body.home-screen .workstation-left {
-    min-height: auto; height: auto; gap: 18px; position: sticky; top: 24px; overflow: visible;
+    min-height: auto;
+    height: auto;
+    gap: 18px;
+    position: relative;
+    top: 0;
+    overflow: visible;
   }
   body.home-screen .workstation-right {
     display: none !important;
   }
   body.home-screen .workstation-middle { min-height: auto; height: auto; display: flex; flex-direction: column; gap: 20px; overflow: visible; }
   body.home-screen .app-footer {
-    grid-column: 1 / -1; margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border);
-    display: flex; justify-content: center; align-items: center;
+    grid-area: footer;
+    grid-column: 1 / -1;
+    margin-top: 40px;
+    padding-top: 24px;
+    padding-bottom: 28px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   body.home-screen .footer-note {
     margin: 0; color: var(--text-tertiary); font-size: 12px; line-height: 1.4;
