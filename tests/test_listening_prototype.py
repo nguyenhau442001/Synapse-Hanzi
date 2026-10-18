@@ -109,27 +109,81 @@ def test_ui_refinements():
     css_content = (ROOT / "assets/css/listening-practice.css").read_text(encoding="utf-8")
     js_content = (ROOT / "assets/js/listening-practice.js").read_text(encoding="utf-8")
 
-    # Layout width 1040-1120px
-    assert "max-width: 1080px" in css_content, "max-width: 1080px missing from listening CSS"
+    # Layout width 900-1040px (constrained from 1080px)
+    assert any(w in css_content for w in ["max-width: 960px", "max-width: 1000px", "max-width: 1040px"]), "Layout must be constrained within 900-1040px"
+
+    # Warm neutral theme tokens
+    assert "--listening-canvas" in css_content, "Listening mode must define warm neutral canvas"
+    assert "--listening-player-bg" in css_content, "Listening player must use warm neutral background"
 
     # UI labels in JS
     assert "Lời thoại" in js_content, "Transcript section must be titled 'Lời thoại'"
     assert "Nghe đoạn này" in js_content, "Player button must use concise label 'Nghe đoạn này'"
     assert "Căn chỉnh audio" in js_content, "Header must provide secondary 'Căn chỉnh audio' action"
+    assert "Chế độ luyện tập" in js_content, "Section header must include 'Chế độ luyện tập' chip"
+    assert "Tự lưu" in js_content, "Header must include quiet auto-save indicator"
     assert "listening-evidence-highlight" in js_content, "Key evidence words must be highlighted"
     assert "Đúng" in js_content and "Sai" in js_content, "Choice buttons must use Đúng and Sai"
 
-    # Touch target sizes in CSS
-    assert "height: 44px" in css_content or "min-height: 44px" in css_content, "Play buttons must have >= 44px touch target"
-    assert "height: 56px" in css_content or "52px" in css_content, "Choice buttons must have 52-60px height"
+    # Touch target sizes & answer button constraints in CSS
+    assert "height: 44px" in css_content or "min-height: 44px" in css_content or "height: 48px" in css_content, "Play buttons must have >= 44px touch target"
+    assert any(h in css_content for h in ["54px", "52px", "56px"]), "Choice buttons must have 52-56px height"
+    assert any(w in css_content for w in ["max-width: 580px", "max-width: 600px"]), "Choice buttons must have combined max-width 520-640px"
 
     print("   ✓ UI refinements verified successfully!")
+
+def test_listening_polish_v112():
+    print("-> Checking specific v1.1.2 UI polish requirements...")
+    css = (ROOT / "assets/css/listening-practice.css").read_text(encoding="utf-8")
+    js = (ROOT / "assets/js/listening-practice.js").read_text(encoding="utf-8")
+    html = (ROOT / "index.html").read_text(encoding="utf-8")
+    help_js = (ROOT / "assets/js/study-help-modal.js").read_text(encoding="utf-8")
+
+    # 1. Workspace width 900-1040px
+    assert "max-width: 960px" in css, "Workspace width must be 960px (within 900-1040px range)"
+
+    # 2. Player structure: Seek row on top, secondary subcontrols (speed + loop) aligned with seek bar start
+    assert "listening-player-controls-grid" in js and "listening-player-controls-grid" in css
+    assert "listening-player-right-col" in js and "listening-player-right-col" in css
+    assert "listening-player-subcontrols" in js and "listening-player-subcontrols" in css
+    assert "listening-progress-thumb" in js and "listening-progress-thumb" in css
+
+    # 3. Learner-facing time format (0:00 / 0:15)
+    assert "formatLearnerTime" in js, "formatLearnerTime must exist for 0:00 / 0:15 time formatting"
+    assert "0:00 / " in js, "Learner time display must start with 0:00 /"
+
+    # 4. Deliberate True/False answer buttons
+    assert "max-width: 580px" in css, "Answer buttons combined width must be constrained around 520-640px"
+    assert "height: 54px" in css, "Answer buttons height must be 52-56px"
+    assert "listening-answers-grid" in css and "grid-template-columns: 1fr 1fr" in css
+
+    # 5. Section heading rule removal & info popover
+    assert "listening-exam-rule-note" not in js, "Long exam rule sentence must be removed from section header"
+    assert "listening-mode-chip" in js and "listening-rules-popover" in js
+    assert "toggleRulesDialog" in js
+
+    # 6. Overflow settings menu for editor action
+    assert "listening-more-btn" in js and "listeningSettingsDropdown" in js
+    assert "toggleSettingsMenu" in js
+    assert "getQuestionProgressText" in js, "Progress logic must not invent question totals"
+
+    # 7. Warm neutral surface tokens
+    assert "--listening-canvas: #faf8f5" in css
+    assert "--listening-player-bg: #f8f4ee" in css
+    assert "--listening-border-subtle: #ece5dc" in css
+
+    # 8. Footer prominence reduction
+    assert "body.listening-view-active .app-footer" in css and "display: none !important" in css
+    assert "helpTabAbout" in help_js, "Developer and project info must be available in About modal"
+
+    print("   ✓ All v1.1.2 UI polish requirements verified successfully!")
 
 def main():
     print("=== Starting HSK Listening Prototype Automated Verification ===")
     test_data_integrity()
     test_integration_files()
     test_ui_refinements()
+    test_listening_polish_v112()
     print("=== ALL VERIFICATION TESTS PASSED SUCCESSFULLY! ===")
 
 if __name__ == "__main__":

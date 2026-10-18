@@ -290,6 +290,7 @@ const ListeningPractice = (function() {
 
     document.body.classList.add('listening-view-active');
     initAudio();
+    attachGlobalListeners();
 
     container.innerHTML = `
       <div class="listening-container" style="text-align:center; padding: 48px 20px;">
@@ -320,6 +321,8 @@ const ListeningPractice = (function() {
     const container = document.getElementById('screenListeningPractice');
     if (!container || !currentQuestion) return;
 
+    const progressText = getQuestionProgressText();
+
     container.innerHTML = `
       <div class="listening-container">
         <!-- Compact Page Header -->
@@ -332,19 +335,32 @@ const ListeningPractice = (function() {
             <span class="listening-nav-breadcrumb">
               <span class="listening-nav-exam">HSK 4 · H41001</span>
               <span class="listening-nav-sep" aria-hidden="true">·</span>
-              <span class="listening-nav-question">Câu ${currentQuestion.question_number}</span>
+              <span class="listening-nav-question">${progressText}</span>
             </span>
           </div>
 
-          <!-- Secondary Action: Boundary Editor Entry -->
           <div class="listening-nav-right">
+            <!-- Subtle Auto-Save Indicator -->
+            <span class="listening-sync-indicator" title="Tiến trình học tự động lưu an toàn trên thiết bị này">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Tự lưu</span>
+            </span>
+
+            <!-- Secondary Overflow Menu for Editor Tool -->
             ${currentMode === 'learner' ? `
-              <button type="button" class="listening-editor-switch-btn" onclick="ListeningPractice.setMode('editor')" title="Mở bộ căn chỉnh mốc thời gian audio">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-                <span>Căn chỉnh audio</span>
-              </button>
+              <div class="listening-menu-anchor">
+                <button type="button" class="listening-more-btn" id="listeningMoreBtn" onclick="ListeningPractice.toggleSettingsMenu(event)" aria-haspopup="true" aria-expanded="false" title="Tùy chọn mở rộng">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="5" r="1.75"/><circle cx="12" cy="12" r="1.75"/><circle cx="12" cy="19" r="1.75"/></svg>
+                </button>
+                <div class="listening-settings-dropdown" id="listeningSettingsDropdown" hidden>
+                  <button type="button" class="listening-dropdown-item" onclick="ListeningPractice.setMode('editor')">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                    <span>Căn chỉnh audio</span>
+                  </button>
+                </div>
+              </div>
             ` : `
-              <button type="button" class="listening-editor-switch-btn active" onclick="ListeningPractice.setMode('learner')" title="Quay lại màn hình luyện nghe">
+              <button type="button" class="listening-back-learner-btn" onclick="ListeningPractice.setMode('learner')" title="Quay lại màn hình luyện nghe">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
                 <span>Màn hình luyện nghe</span>
               </button>
@@ -360,6 +376,39 @@ const ListeningPractice = (function() {
     `;
 
     attachDynamicListeners();
+  }
+
+  function getQuestionProgressText() {
+    if (!currentQuestion) return '';
+    const questions = (examData && Array.isArray(examData.questions)) ? examData.questions : [];
+    // Only display total if multiple questions are actually present in the dataset
+    if (questions.length > 1) {
+      return `Câu ${currentQuestion.question_number} / ${questions.length}`;
+    }
+    return `Câu ${currentQuestion.question_number}`;
+  }
+
+  function toggleSettingsMenu(e) {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    const dropdown = document.getElementById('listeningSettingsDropdown');
+    const btn = document.getElementById('listeningMoreBtn');
+    if (!dropdown) return;
+    const willShow = dropdown.hidden;
+    dropdown.hidden = !willShow;
+    if (btn) btn.setAttribute('aria-expanded', String(willShow));
+  }
+
+  function toggleRulesDialog(e) {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    const popover = document.getElementById('listeningRulesPopover');
+    if (!popover) return;
+    popover.hidden = !popover.hidden;
   }
 
   function setMode(mode) {
@@ -385,13 +434,27 @@ const ListeningPractice = (function() {
 
     return `
       <section class="listening-unified-card" aria-label="Bài tập luyện nghe">
-        <!-- 1. Question Context Header -->
+        <!-- 1. Question Context Header (Clean tag + Info Disclosure) -->
         <div class="listening-section-header">
-          <span class="listening-section-label">Nghe và chọn Đúng / Sai</span>
-          <span class="listening-exam-rule-note">Quy chế thi: Mỗi câu nghe 1 lần · Luyện tập: Có thể nghe lại tùy ý</span>
+          <div class="listening-section-title-wrap">
+            <span class="listening-section-label">Nghe và chọn Đúng / Sai</span>
+            <span class="listening-mode-chip">Chế độ luyện tập</span>
+          </div>
+          <div class="listening-rules-wrap">
+            <button type="button" class="listening-rules-btn" id="listeningRulesBtn" onclick="ListeningPractice.toggleRulesDialog(event)" title="Xem quy chế thi & hướng dẫn luyện tập" aria-label="Quy chế bài thi">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              <span>Quy chế</span>
+            </button>
+            <div class="listening-rules-popover" id="listeningRulesPopover" hidden>
+              <div class="listening-rules-popover-content">
+                <p class="rules-popover-item"><strong>Quy chế thi thực tế:</strong> Mỗi câu nghe đúng 1 lần duy nhất.</p>
+                <p class="rules-popover-item"><strong>Chế độ luyện tập:</strong> Bạn có thể nghe lại tùy ý, điều chỉnh tốc độ phát và xem lời thoại chi tiết sau khi trả lời.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- 2. Statement Presentation -->
+        <!-- 2. Statement Presentation (Prominent & Left-aligned) -->
         <div class="listening-statement-block">
           <div class="listening-statement-zh" lang="zh-CN">${q.statement.zh}</div>
           ${learnerState.answered && learnerState.showPinyin && q.statement.pinyin ? `
@@ -486,42 +549,50 @@ const ListeningPractice = (function() {
 
   function renderLearnerAudioPlayer() {
     const isPlayingFull = learnerState.activePlayingSegment === 'full_question';
+    const seg = currentQuestion.segments ? currentQuestion.segments.full_question : null;
+    const totalMs = seg ? Math.max(0, seg.end_ms - seg.start_ms) : 0;
+    const totalTimeText = formatLearnerTime(totalMs);
+
     return `
       <div class="listening-player-surface">
-        <div class="listening-player-main-row">
+        <div class="listening-player-controls-grid">
           <!-- Primary Play/Pause Button -->
           <button type="button" class="listening-play-primary-btn ${isPlayingFull ? 'is-playing' : ''}"
             onclick="ListeningPractice.togglePlayFullQuestion()" aria-label="Nghe đoạn này">
             ${isPlayingFull ? `
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
               <span>Tạm dừng</span>
             ` : `
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
               <span>Nghe đoạn này</span>
             `}
           </button>
 
-          <!-- Interactive Progress Track -->
-          <div class="listening-progress-wrap">
-            <div class="listening-progress-track" id="learnerProgressTrack">
-              <div class="listening-progress-fill" id="learnerProgressFill"></div>
+          <!-- Right Column: Seek track on row 1, Subcontrols on row 2 (aligned with seek bar) -->
+          <div class="listening-player-right-col">
+            <div class="listening-progress-wrap">
+              <div class="listening-progress-track" id="learnerProgressTrack" tabindex="0" role="slider"
+                aria-label="Thanh tua âm thanh" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
+                title="Bấm để tua hoặc dùng phím mũi tên ← →">
+                <div class="listening-progress-fill" id="learnerProgressFill"></div>
+                <span class="listening-progress-thumb" id="learnerProgressThumb"></span>
+              </div>
+              <div class="listening-time-readout" id="learnerTimeBadge">0:00 / ${totalTimeText}</div>
             </div>
-            <div class="listening-time-readout" id="learnerTimeBadge">00:00.0 / 00:14.7</div>
-          </div>
-        </div>
 
-        <!-- Secondary Compact Audio Options: Speed & Loop -->
-        <div class="listening-player-secondary-row">
-          <div class="listening-speed-group" role="group" aria-label="Tốc độ phát">
-            <button type="button" class="listening-speed-btn ${learnerState.speed === 0.75 ? 'active' : ''}" onclick="ListeningPractice.setSpeed(0.75)">0.75×</button>
-            <button type="button" class="listening-speed-btn ${learnerState.speed === 1.0 ? 'active' : ''}" onclick="ListeningPractice.setSpeed(1.0)">1.0×</button>
-            <button type="button" class="listening-speed-btn ${learnerState.speed === 1.25 ? 'active' : ''}" onclick="ListeningPractice.setSpeed(1.25)">1.25×</button>
-          </div>
+            <div class="listening-player-subcontrols">
+              <div class="listening-speed-group" role="group" aria-label="Tốc độ phát">
+                <button type="button" class="listening-speed-btn ${learnerState.speed === 0.75 ? 'active' : ''}" onclick="ListeningPractice.setSpeed(0.75)">0.75×</button>
+                <button type="button" class="listening-speed-btn ${learnerState.speed === 1.0 ? 'active' : ''}" onclick="ListeningPractice.setSpeed(1.0)">1.0×</button>
+                <button type="button" class="listening-speed-btn ${learnerState.speed === 1.25 ? 'active' : ''}" onclick="ListeningPractice.setSpeed(1.25)">1.25×</button>
+              </div>
 
-          <button type="button" class="listening-loop-btn ${learnerState.loop ? 'active' : ''}" onclick="ListeningPractice.toggleLoop()" title="Lặp lại đoạn nghe">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
-            <span>Lặp lại ${learnerState.loop ? 'đoạn' : ''}</span>
-          </button>
+              <button type="button" class="listening-loop-btn ${learnerState.loop ? 'active' : ''}" onclick="ListeningPractice.toggleLoop()" title="Lặp lại đoạn nghe">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+                <span>Lặp lại ${learnerState.loop ? 'đoạn' : ''}</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     `;
@@ -1150,12 +1221,25 @@ const ListeningPractice = (function() {
     if (playBtn) {
       playBtn.classList.toggle('is-playing', isPlayingFull);
       playBtn.innerHTML = isPlayingFull ? `
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
         <span>Tạm dừng</span>
       ` : `
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
         <span>Nghe đoạn này</span>
       `;
+    }
+
+    if (!activeSegment && currentMode === 'learner') {
+      const fill = document.getElementById('learnerProgressFill');
+      const track = document.getElementById('learnerProgressTrack');
+      const badge = document.getElementById('learnerTimeBadge');
+      if (fill) fill.style.width = '0%';
+      if (track) track.setAttribute('aria-valuenow', '0');
+      if (badge && currentQuestion && currentQuestion.segments && currentQuestion.segments.full_question) {
+        const seg = currentQuestion.segments.full_question;
+        const totalDurationMs = Math.max(0, seg.end_ms - seg.start_ms);
+        badge.textContent = `0:00 / ${formatLearnerTime(totalDurationMs)}`;
+      }
     }
 
     // 2. Sentence replay buttons
@@ -1194,10 +1278,12 @@ const ListeningPractice = (function() {
       const ratio = Math.min(1, Math.max(0, elapsed / segDuration));
 
       const fill = document.getElementById('learnerProgressFill');
+      const track = document.getElementById('learnerProgressTrack');
       const badge = document.getElementById('learnerTimeBadge');
       if (fill) fill.style.width = (ratio * 100).toFixed(1) + '%';
+      if (track) track.setAttribute('aria-valuenow', Math.round(ratio * 100));
       if (badge) {
-        badge.textContent = `${formatMs(elapsed)} / ${formatMs(segDuration)}`;
+        badge.textContent = `${formatLearnerTime(elapsed)} / ${formatLearnerTime(segDuration)}`;
       }
     }
     if (currentMode === 'editor') {
@@ -1205,19 +1291,136 @@ const ListeningPractice = (function() {
     }
   }
 
+  function seekRelative(deltaSec) {
+    if (!currentQuestion || !currentQuestion.segments || !currentQuestion.segments.full_question) return;
+    const fullSeg = currentQuestion.segments.full_question;
+    initAudio();
+    let currentMs = audio.currentTime * 1000;
+    if (!activeSegment || learnerState.activePlayingSegment !== 'full_question') {
+      currentMs = fullSeg.start_ms;
+    }
+    const targetMs = Math.max(fullSeg.start_ms, Math.min(fullSeg.end_ms, currentMs + deltaSec * 1000));
+    if (activeSegment && learnerState.activePlayingSegment === 'full_question') {
+      audio.currentTime = targetMs / 1000;
+    } else {
+      playSegment(targetMs, fullSeg.end_ms, {
+        loop: learnerState.loop,
+        onEnd: () => {
+          learnerState.activePlayingSegment = null;
+          updatePlaybackUI();
+        }
+      });
+      learnerState.activePlayingSegment = 'full_question';
+      updatePlaybackUI();
+    }
+    updatePlaybackProgressUI(targetMs);
+  }
+
   function attachDynamicListeners() {
     const track = document.getElementById('learnerProgressTrack');
-    if (track && activeSegment) {
+    if (track && currentQuestion && currentQuestion.segments && currentQuestion.segments.full_question) {
+      const fullSeg = currentQuestion.segments.full_question;
+
       track.onclick = (e) => {
         const rect = track.getBoundingClientRect();
-        const pos = (e.clientX - rect.left) / rect.width;
-        const segDuration = activeSegment.endMs - activeSegment.startMs;
-        const targetMs = activeSegment.startMs + pos * segDuration;
-        if (audio) {
+        const pos = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+        const segDuration = fullSeg.end_ms - fullSeg.start_ms;
+        const targetMs = fullSeg.start_ms + pos * segDuration;
+
+        if (activeSegment && learnerState.activePlayingSegment === 'full_question') {
           audio.currentTime = targetMs / 1000;
+        } else {
+          playSegment(targetMs, fullSeg.end_ms, {
+            loop: learnerState.loop,
+            onEnd: () => {
+              learnerState.activePlayingSegment = null;
+              updatePlaybackUI();
+            }
+          });
+          learnerState.activePlayingSegment = 'full_question';
+          updatePlaybackUI();
+        }
+      };
+
+      track.onkeydown = (e) => {
+        if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') {
+          e.preventDefault();
+          seekRelative(-2);
+        } else if (e.key === 'ArrowRight' || e.key === 'ArrowUp') {
+          e.preventDefault();
+          seekRelative(2);
+        } else if (e.key === ' ' || e.key === 'Enter') {
+          e.preventDefault();
+          togglePlayFullQuestion();
         }
       };
     }
+  }
+
+  let globalListenersAttached = false;
+  function attachGlobalListeners() {
+    if (globalListenersAttached) return;
+    globalListenersAttached = true;
+
+    document.addEventListener('click', (e) => {
+      // Dismiss settings dropdown
+      const dropdown = document.getElementById('listeningSettingsDropdown');
+      const moreBtn = document.getElementById('listeningMoreBtn');
+      if (dropdown && !dropdown.hidden && !dropdown.contains(e.target) && (!moreBtn || !moreBtn.contains(e.target))) {
+        dropdown.hidden = true;
+        if (moreBtn) moreBtn.setAttribute('aria-expanded', 'false');
+      }
+
+      // Dismiss rules popover
+      const rulesPopover = document.getElementById('listeningRulesPopover');
+      const rulesBtn = document.getElementById('listeningRulesBtn');
+      if (rulesPopover && !rulesPopover.hidden && !rulesPopover.contains(e.target) && (!rulesBtn || !rulesBtn.contains(e.target))) {
+        rulesPopover.hidden = true;
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (!document.body.classList.contains('listening-view-active')) return;
+      const activeTag = document.activeElement ? document.activeElement.tagName.toLowerCase() : '';
+      if (activeTag === 'input' || activeTag === 'textarea' || activeTag === 'select') return;
+
+      if (e.key === 'Escape') {
+        const dropdown = document.getElementById('listeningSettingsDropdown');
+        if (dropdown && !dropdown.hidden) {
+          dropdown.hidden = true;
+          const moreBtn = document.getElementById('listeningMoreBtn');
+          if (moreBtn) moreBtn.setAttribute('aria-expanded', 'false');
+          return;
+        }
+        const rulesPopover = document.getElementById('listeningRulesPopover');
+        if (rulesPopover && !rulesPopover.hidden) {
+          rulesPopover.hidden = true;
+          return;
+        }
+      }
+
+      if (currentMode === 'learner') {
+        if (e.key === ' ' || e.key.toLowerCase() === 'p') {
+          if (document.activeElement && document.activeElement.tagName.toLowerCase() === 'button') {
+            return;
+          }
+          e.preventDefault();
+          togglePlayFullQuestion();
+        } else if (e.key === '1' || e.key.toLowerCase() === 't') {
+          if (!learnerState.answered) {
+            e.preventDefault();
+            submitAnswer(true);
+          }
+        } else if (e.key === '2' || e.key.toLowerCase() === 'f') {
+          if (!learnerState.answered) {
+            e.preventDefault();
+            submitAnswer(false);
+          }
+        } else if (e.key.toLowerCase() === 'r') {
+          toggleLoop();
+        }
+      }
+    });
   }
 
   function renderAudioError(msg) {
@@ -1231,6 +1434,14 @@ const ListeningPractice = (function() {
       box.appendChild(errDiv);
       setTimeout(() => errDiv.remove(), 5000);
     }
+  }
+
+  function formatLearnerTime(ms) {
+    if (isNaN(ms) || ms == null || ms < 0) return '0:00';
+    const totalSec = Math.round(ms / 1000);
+    const m = Math.floor(totalSec / 60);
+    const s = totalSec % 60;
+    return `${m}:${String(s).padStart(2, '0')}`;
   }
 
   function formatSec(sec) {
@@ -1266,6 +1477,9 @@ const ListeningPractice = (function() {
     submitAnswer,
     toggleTranscriptPinyin,
     toggleTranscriptTranslation,
+    toggleSettingsMenu,
+    toggleRulesDialog,
+    seekRelative,
     // Editor methods
     selectEditorSegment,
     updateSegmentBoundary,
