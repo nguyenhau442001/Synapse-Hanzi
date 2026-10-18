@@ -1,0 +1,1105 @@
+{
+  "exam_id": "H41011",
+  "level": "HSK4",
+  "title": "HSK 4 - Đề thi mẫu H41011 - Phần Nghe (Listening)",
+  "total_questions": 10,
+  "audio_src": "assets/audio/exams/H41011.mp3",
+  "questions": [
+    {
+      "id": "H41011_L_01",
+      "exam_id": "H41011",
+      "question_number": 1,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "李经理不在办公室。",
+        "pinyin": "lǐ jīng lǐ bù zài bàn gōng shì 。",
+        "vi": "Giám đốc Lý không có ở văn phòng."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Giám đốc Lý không có ở văn phòng.'.",
+      "evidence": {
+        "zh": "只要你打开电视 总能看到那么多的广告浪费我的时间他喜欢看电视广告现在开始第一题李经里去哪了 他的电话一直站线去办公室找他 瞧了半天门 也没人开李经里不在办公室",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41011.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 103280,
+          "end_ms": 159790
+        },
+        "statement": {
+          "start_ms": 159800,
+          "end_ms": 163780
+        },
+        "full_question": {
+          "start_ms": 103280,
+          "end_ms": 163780
+        }
+      },
+      "transcript": {
+        "full_zh": "只要你打开电视 总能看到那么多的广告浪费我的时间他喜欢看电视广告现在开始第一题李经里去哪了 他的电话一直站线去办公室找他 瞧了半天门 也没人开李经里不在办公室",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41011_L_01_S1",
+            "index": 0,
+            "zh": "只要你打开电视 总能看到那么多的广告浪费我的时间他喜欢看电视广告现在开始第一题李经里去哪了 他的电话一直站线去办公室找他 瞧了半天门 也没人开李经里不在办公室",
+            "pinyin": "zhǐ yào nǐ dǎ kāi diàn shì   zǒng néng kàn dào nà me duō de guǎng gào làng fèi wǒ de shí jiān tā xǐ huān kàn diàn shì guǎng gào xiàn zài kāi shǐ dì yī tí lǐ jīng lǐ qù nǎ le   tā de diàn huà yì zhí zhàn xiàn qù bàn gōng shì zhǎo tā   qiáo le bàn tiān mén   yě méi rén kāi lǐ jīng lǐ bù zài bàn gōng shì",
+            "vi": "",
+            "start_ms": 103280,
+            "end_ms": 159790
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "办公室",
+          "pinyin": "bàngōngshì",
+          "meaning_vi": "văn phòng",
+          "vocab_id": 11,
+          "level": "HSK3"
+        },
+        {
+          "word": "电视",
+          "pinyin": "diànshì",
+          "meaning_vi": "tivi",
+          "vocab_id": 18,
+          "level": "HSK1"
+        },
+        {
+          "word": "喜欢",
+          "pinyin": "xǐhuan",
+          "meaning_vi": "thích",
+          "vocab_id": 114,
+          "level": "HSK1"
+        },
+        {
+          "word": "现在",
+          "pinyin": "xiànzài",
+          "meaning_vi": "hiện tại, bây giờ",
+          "vocab_id": 119,
+          "level": "HSK1"
+        },
+        {
+          "word": "第一",
+          "pinyin": "dìyī",
+          "meaning_vi": "thứ nhất",
+          "vocab_id": 22,
+          "level": "HSK2"
+        },
+        {
+          "word": "开始",
+          "pinyin": "kāishǐ",
+          "meaning_vi": "bắt đầu",
+          "vocab_id": 54,
+          "level": "HSK2"
+        },
+        {
+          "word": "时间",
+          "pinyin": "shíjiān",
+          "meaning_vi": "thời gian",
+          "vocab_id": 94,
+          "level": "HSK2"
+        },
+        {
+          "word": "经理",
+          "pinyin": "jīnglǐ",
+          "meaning_vi": "giám đốc, quản lý",
+          "vocab_id": 131,
+          "level": "HSK3"
+        }
+      ]
+    },
+    {
+      "id": "H41011_L_02",
+      "exam_id": "H41011",
+      "question_number": 2,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他让小高写邀请信。",
+        "pinyin": "tā ràng xiǎo gāo xiě yāo qǐng xìn 。",
+        "vi": "Anh ấy bảo Tiểu Cao viết thư mời."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Anh ấy bảo Tiểu Cao viết thư mời.'.",
+      "evidence": {
+        "zh": "李经里去哪了 他的电话一直站线去办公室找他 瞧了半天门 也没人开李经里不在办公室尔小高 这次会议的安排 我打印出来放在你桌子上了你在检察一遍 没问题就附印了 让大家都看他他讓小高血邀請信三我和他是在一次活動中認識的",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41011.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 130820,
+          "end_ms": 187810
+        },
+        "statement": {
+          "start_ms": 187820,
+          "end_ms": 191720
+        },
+        "full_question": {
+          "start_ms": 130820,
+          "end_ms": 191720
+        }
+      },
+      "transcript": {
+        "full_zh": "李经里去哪了 他的电话一直站线去办公室找他 瞧了半天门 也没人开李经里不在办公室尔小高 这次会议的安排 我打印出来放在你桌子上了你在检察一遍 没问题就附印了 让大家都看他他讓小高血邀請信三我和他是在一次活動中認識的",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41011_L_02_S1",
+            "index": 0,
+            "zh": "李经里去哪了 他的电话一直站线去办公室找他 瞧了半天门 也没人开李经里不在办公室尔小高 这次会议的安排 我打印出来放在你桌子上了你在检察一遍 没问题就附印了 让大家都看他他讓小高血邀請信三我和他是在一次活動中認識的",
+            "pinyin": "lǐ jīng lǐ qù nǎ le   tā de diàn huà yì zhí zhàn xiàn qù bàn gōng shì zhǎo tā   qiáo le bàn tiān mén   yě méi rén kāi lǐ jīng lǐ bù zài bàn gōng shì ěr xiǎo gāo   zhè cì huì yì de ān pái   wǒ dǎ yìn chū lái fàng zài nǐ zhuō zi shàng le nǐ zài jiǎn chá yī biàn   méi wèn tí jiù fù yìn le   ràng dà jiā dōu kàn tā tā ràng xiǎo gāo xuè yāo qǐng xìn sān wǒ hé tā shì zài yī cì huó dòng zhōng rèn shí de",
+            "vi": "",
+            "start_ms": 130820,
+            "end_ms": 187810
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "办公室",
+          "pinyin": "bàngōngshì",
+          "meaning_vi": "văn phòng",
+          "vocab_id": 11,
+          "level": "HSK3"
+        },
+        {
+          "word": "桌子",
+          "pinyin": "zhuōzi",
+          "meaning_vi": "cái bàn",
+          "vocab_id": 146,
+          "level": "HSK1"
+        },
+        {
+          "word": "大家",
+          "pinyin": "dàjiā",
+          "meaning_vi": "mọi người",
+          "vocab_id": 17,
+          "level": "HSK2"
+        },
+        {
+          "word": "问题",
+          "pinyin": "wèntí",
+          "meaning_vi": "câu hỏi, vấn đề",
+          "vocab_id": 112,
+          "level": "HSK2"
+        },
+        {
+          "word": "会议",
+          "pinyin": "huìyì",
+          "meaning_vi": "cuộc họp",
+          "vocab_id": 106,
+          "level": "HSK3"
+        },
+        {
+          "word": "一直",
+          "pinyin": "yìzhí",
+          "meaning_vi": "luôn luôn, thẳng",
+          "vocab_id": 261,
+          "level": "HSK3"
+        },
+        {
+          "word": "安排",
+          "pinyin": "ānpái",
+          "meaning_vi": "sắp xếp, bố trí",
+          "vocab_id": 2,
+          "level": "HSK4"
+        },
+        {
+          "word": "打印",
+          "pinyin": "dǎyìn",
+          "meaning_vi": "in (ấn)",
+          "vocab_id": 68,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41011_L_03",
+      "exam_id": "H41011",
+      "question_number": 3,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他俩从小就认识。",
+        "pinyin": "tā liǎ cóng xiǎo jiù rèn shí 。",
+        "vi": "Hai người họ quen biết nhau từ nhỏ."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Hai người họ quen biết nhau từ nhỏ.'.",
+      "evidence": {
+        "zh": "你在检察一遍 没问题就附印了 让大家都看他他讓小高血邀請信三我和他是在一次活動中認識的雖然當時沒怎麼交流但他給我的印象很深後來我們進了同意加公司臺曼曼熟悉起來他俩從小就認識四",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41011.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 164400,
+          "end_ms": 213840
+        },
+        "statement": {
+          "start_ms": 214900,
+          "end_ms": 218870
+        },
+        "full_question": {
+          "start_ms": 164400,
+          "end_ms": 218870
+        }
+      },
+      "transcript": {
+        "full_zh": "你在检察一遍 没问题就附印了 让大家都看他他讓小高血邀請信三我和他是在一次活動中認識的雖然當時沒怎麼交流但他給我的印象很深後來我們進了同意加公司臺曼曼熟悉起來他俩從小就認識四",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41011_L_03_S1",
+            "index": 0,
+            "zh": "你在检察一遍 没问题就附印了 让大家都看他他讓小高血邀請信三我和他是在一次活動中認識的雖然當時沒怎麼交流但他給我的印象很深後來我們進了同意加公司臺曼曼熟悉起來他俩從小就認識四",
+            "pinyin": "nǐ zài jiǎn chá yī biàn   méi wèn tí jiù fù yìn le   ràng dà jiā dōu kàn tā tā ràng xiǎo gāo xuè yāo qǐng xìn sān wǒ hé tā shì zài yī cì huó dòng zhōng rèn shí de suī rán dāng shí méi zěn me jiāo liú dàn tā gěi wǒ de yìn xiàng hěn shēn hòu lái wǒ men jìn le tóng yì jiā gōng sī tái màn màn shú xī qǐ lái tā liǎ cóng xiǎo jiù rèn shí sì",
+            "vi": "",
+            "start_ms": 164400,
+            "end_ms": 213840
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "认识",
+          "pinyin": "rènshi",
+          "meaning_vi": "biết, quen biết",
+          "vocab_id": 86,
+          "level": "HSK1"
+        },
+        {
+          "word": "大家",
+          "pinyin": "dàjiā",
+          "meaning_vi": "mọi người",
+          "vocab_id": 17,
+          "level": "HSK2"
+        },
+        {
+          "word": "公司",
+          "pinyin": "gōngsī",
+          "meaning_vi": "công ty",
+          "vocab_id": 34,
+          "level": "HSK2"
+        },
+        {
+          "word": "问题",
+          "pinyin": "wèntí",
+          "meaning_vi": "câu hỏi, vấn đề",
+          "vocab_id": 112,
+          "level": "HSK2"
+        },
+        {
+          "word": "同意",
+          "pinyin": "tóngyì",
+          "meaning_vi": "đồng ý",
+          "vocab_id": 220,
+          "level": "HSK3"
+        },
+        {
+          "word": "交流",
+          "pinyin": "jiāoliú",
+          "meaning_vi": "giao lưu, trao đổi",
+          "vocab_id": 212,
+          "level": "HSK4"
+        },
+        {
+          "word": "熟悉",
+          "pinyin": "shúxī",
+          "meaning_vi": "quen thuộc, thông thuộc",
+          "vocab_id": 401,
+          "level": "HSK4"
+        },
+        {
+          "word": "印象",
+          "pinyin": "yìnxiàng",
+          "meaning_vi": "ấn tượng",
+          "vocab_id": 518,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41011_L_04",
+      "exam_id": "H41011",
+      "question_number": 4,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "叔叔现在还爱打篮球。",
+        "pinyin": "shū shū xiàn zài hái ài dǎ lán qiú 。",
+        "vi": "Hiện tại chú vẫn thích chơi bóng rổ."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Hiện tại chú vẫn thích chơi bóng rổ.'.",
+      "evidence": {
+        "zh": "但他給我的印象很深後來我們進了同意加公司臺曼曼熟悉起來他俩從小就認識四叔叔最大的愛號就是打蘭球大學時他還多次參加校蘭球比賽儘管現在工作很忙可到了週末他仍然會約朋友去打球叔叔現在還愛打蘭球",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41011.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 192270,
+          "end_ms": 247630
+        },
+        "statement": {
+          "start_ms": 247640,
+          "end_ms": 251620
+        },
+        "full_question": {
+          "start_ms": 192270,
+          "end_ms": 251620
+        }
+      },
+      "transcript": {
+        "full_zh": "但他給我的印象很深後來我們進了同意加公司臺曼曼熟悉起來他俩從小就認識四叔叔最大的愛號就是打蘭球大學時他還多次參加校蘭球比賽儘管現在工作很忙可到了週末他仍然會約朋友去打球叔叔現在還愛打蘭球",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41011_L_04_S1",
+            "index": 0,
+            "zh": "但他給我的印象很深後來我們進了同意加公司臺曼曼熟悉起來他俩從小就認識四叔叔最大的愛號就是打蘭球大學時他還多次參加校蘭球比賽儘管現在工作很忙可到了週末他仍然會約朋友去打球叔叔現在還愛打蘭球",
+            "pinyin": "dàn tā gěi wǒ de yìn xiàng hěn shēn hòu lái wǒ men jìn le tóng yì jiā gōng sī tái màn màn shú xī qǐ lái tā liǎ cóng xiǎo jiù rèn shí sì shū shū zuì dà de ài hào jiù shì dǎ lán qiú dà xué shí tā hái duō cì cān jiā xiào lán qiú bǐ sài jǐn guǎn xiàn zài gōng zuò hěn máng kě dào le zhōu mò tā réng rán huì yuē péng yǒu qù dǎ qiú shū shū xiàn zài hái ài dǎ lán qiú",
+            "vi": "",
+            "start_ms": 192270,
+            "end_ms": 247630
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "打篮球",
+          "pinyin": "dǎ lánqiú",
+          "meaning_vi": "chơi bóng rổ",
+          "vocab_id": 16,
+          "level": "HSK2"
+        },
+        {
+          "word": "工作",
+          "pinyin": "gōngzuò",
+          "meaning_vi": "công việc, làm việc",
+          "vocab_id": 33,
+          "level": "HSK1"
+        },
+        {
+          "word": "朋友",
+          "pinyin": "péngyou",
+          "meaning_vi": "bạn",
+          "vocab_id": 76,
+          "level": "HSK1"
+        },
+        {
+          "word": "现在",
+          "pinyin": "xiànzài",
+          "meaning_vi": "hiện tại, bây giờ",
+          "vocab_id": 119,
+          "level": "HSK1"
+        },
+        {
+          "word": "公司",
+          "pinyin": "gōngsī",
+          "meaning_vi": "công ty",
+          "vocab_id": 34,
+          "level": "HSK2"
+        },
+        {
+          "word": "叔叔",
+          "pinyin": "shūshu",
+          "meaning_vi": "chú (em trai của bố)",
+          "vocab_id": 205,
+          "level": "HSK3"
+        },
+        {
+          "word": "同意",
+          "pinyin": "tóngyì",
+          "meaning_vi": "đồng ý",
+          "vocab_id": 220,
+          "level": "HSK3"
+        },
+        {
+          "word": "仍然",
+          "pinyin": "réngrán",
+          "meaning_vi": "vẫn, vẫn còn",
+          "vocab_id": 361,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41011_L_05",
+      "exam_id": "H41011",
+      "question_number": 5,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "日记是他生活的一部分。",
+        "pinyin": "rì jì shì tā shēng huó de yī bù fèn 。",
+        "vi": "Nhật ký là một phần trong cuộc sống của anh ấy."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Nhật ký là một phần trong cuộc sống của anh ấy.'.",
+      "evidence": {
+        "zh": "大學時他還多次參加校蘭球比賽儘管現在工作很忙可到了週末他仍然會約朋友去打球叔叔現在還愛打蘭球血日記是我生活中不可缺少的一部分無論是煩惱的是還是愉快的是我都會記下來日記本就像我在老朋友生活的酸甜苦辣我都會告訴他",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41011.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 219610,
+          "end_ms": 264790
+        },
+        "statement": {
+          "start_ms": 264800,
+          "end_ms": 268790
+        },
+        "full_question": {
+          "start_ms": 219610,
+          "end_ms": 268790
+        }
+      },
+      "transcript": {
+        "full_zh": "大學時他還多次參加校蘭球比賽儘管現在工作很忙可到了週末他仍然會約朋友去打球叔叔現在還愛打蘭球血日記是我生活中不可缺少的一部分無論是煩惱的是還是愉快的是我都會記下來日記本就像我在老朋友生活的酸甜苦辣我都會告訴他",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41011_L_05_S1",
+            "index": 0,
+            "zh": "大學時他還多次參加校蘭球比賽儘管現在工作很忙可到了週末他仍然會約朋友去打球叔叔現在還愛打蘭球血日記是我生活中不可缺少的一部分無論是煩惱的是還是愉快的是我都會記下來日記本就像我在老朋友生活的酸甜苦辣我都會告訴他",
+            "pinyin": "dà xué shí tā hái duō cì cān jiā xiào lán qiú bǐ sài jǐn guǎn xiàn zài gōng zuò hěn máng kě dào le zhōu mò tā réng rán huì yuē péng yǒu qù dǎ qiú shū shū xiàn zài hái ài dǎ lán qiú xuè rì jì shì wǒ shēng huó zhōng bù kě quē shǎo de yī bù fèn wú lùn shì fán nǎo de shì hái shì yú kuài de shì wǒ dōu huì jì xià lái rì jì běn jiù xiàng wǒ zài lǎo péng yǒu shēng huó de suān tián kǔ là wǒ dōu huì gào sù tā",
+            "vi": "",
+            "start_ms": 219610,
+            "end_ms": 264790
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "工作",
+          "pinyin": "gōngzuò",
+          "meaning_vi": "công việc, làm việc",
+          "vocab_id": 33,
+          "level": "HSK1"
+        },
+        {
+          "word": "朋友",
+          "pinyin": "péngyou",
+          "meaning_vi": "bạn",
+          "vocab_id": 76,
+          "level": "HSK1"
+        },
+        {
+          "word": "叔叔",
+          "pinyin": "shūshu",
+          "meaning_vi": "chú (em trai của bố)",
+          "vocab_id": 205,
+          "level": "HSK3"
+        },
+        {
+          "word": "部分",
+          "pinyin": "bùfen",
+          "meaning_vi": "bộ phận, một phần",
+          "vocab_id": 32,
+          "level": "HSK4"
+        },
+        {
+          "word": "缺少",
+          "pinyin": "quēshǎo",
+          "meaning_vi": "thiếu",
+          "vocab_id": 353,
+          "level": "HSK4"
+        },
+        {
+          "word": "仍然",
+          "pinyin": "réngrán",
+          "meaning_vi": "vẫn, vẫn còn",
+          "vocab_id": 361,
+          "level": "HSK4"
+        },
+        {
+          "word": "日记",
+          "pinyin": "rìjì",
+          "meaning_vi": "nhật ký",
+          "vocab_id": 362,
+          "level": "HSK4"
+        },
+        {
+          "word": "生活",
+          "pinyin": "shēnghuó",
+          "meaning_vi": "sinh hoạt, cuộc sống",
+          "vocab_id": 375,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41011_L_06",
+      "exam_id": "H41011",
+      "question_number": 6,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他正在排队买票。",
+        "pinyin": "tā zhèng zài pái duì mǎi piào 。",
+        "vi": "Anh ấy đang xếp hàng mua vé."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Anh ấy đang xếp hàng mua vé.'.",
+      "evidence": {
+        "zh": "血日記是我生活中不可缺少的一部分無論是煩惱的是還是愉快的是我都會記下來日記本就像我在老朋友生活的酸甜苦辣我都會告訴他日記其他生活的一部分六這個經具我一直想看下星期六是他們在這兒的最後一場演出中午你記得提醒我去買票否則我就沒有機會看了",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41011.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 247440,
+          "end_ms": 294590
+        },
+        "statement": {
+          "start_ms": 294600,
+          "end_ms": 298590
+        },
+        "full_question": {
+          "start_ms": 247440,
+          "end_ms": 298590
+        }
+      },
+      "transcript": {
+        "full_zh": "血日記是我生活中不可缺少的一部分無論是煩惱的是還是愉快的是我都會記下來日記本就像我在老朋友生活的酸甜苦辣我都會告訴他日記其他生活的一部分六這個經具我一直想看下星期六是他們在這兒的最後一場演出中午你記得提醒我去買票否則我就沒有機會看了",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41011_L_06_S1",
+            "index": 0,
+            "zh": "血日記是我生活中不可缺少的一部分無論是煩惱的是還是愉快的是我都會記下來日記本就像我在老朋友生活的酸甜苦辣我都會告訴他日記其他生活的一部分六這個經具我一直想看下星期六是他們在這兒的最後一場演出中午你記得提醒我去買票否則我就沒有機會看了",
+            "pinyin": "xuè rì jì shì wǒ shēng huó zhōng bù kě quē shǎo de yī bù fèn wú lùn shì fán nǎo de shì hái shì yú kuài de shì wǒ dōu huì jì xià lái rì jì běn jiù xiàng wǒ zài lǎo péng yǒu shēng huó de suān tián kǔ là wǒ dōu huì gào sù tā rì jì qí tā shēng huó de yī bù fèn liù zhè gè jīng jù wǒ yì zhí xiǎng kàn xià xīng qī liù shì tā men zài zhè ér de zuì hòu yī chǎng yǎn chū zhōng wǔ nǐ jì dé tí xǐng wǒ qù mǎi piào fǒu zé wǒ jiù méi yǒu jī huì kàn le",
+            "vi": "",
+            "start_ms": 247440,
+            "end_ms": 294590
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "朋友",
+          "pinyin": "péngyou",
+          "meaning_vi": "bạn",
+          "vocab_id": 76,
+          "level": "HSK1"
+        },
+        {
+          "word": "星期",
+          "pinyin": "xīngqī",
+          "meaning_vi": "tuần, thứ (trong tuần)",
+          "vocab_id": 126,
+          "level": "HSK1"
+        },
+        {
+          "word": "中午",
+          "pinyin": "zhōngwǔ",
+          "meaning_vi": "buổi trưa",
+          "vocab_id": 144,
+          "level": "HSK1"
+        },
+        {
+          "word": "正在",
+          "pinyin": "zhèngzài",
+          "meaning_vi": "đang",
+          "vocab_id": 145,
+          "level": "HSK2"
+        },
+        {
+          "word": "其他",
+          "pinyin": "qítā",
+          "meaning_vi": "cái khác, người khác",
+          "vocab_id": 182,
+          "level": "HSK3"
+        },
+        {
+          "word": "一直",
+          "pinyin": "yìzhí",
+          "meaning_vi": "luôn luôn, thẳng",
+          "vocab_id": 261,
+          "level": "HSK3"
+        },
+        {
+          "word": "部分",
+          "pinyin": "bùfen",
+          "meaning_vi": "bộ phận, một phần",
+          "vocab_id": 32,
+          "level": "HSK4"
+        },
+        {
+          "word": "排队",
+          "pinyin": "páiduì",
+          "meaning_vi": "xếp hàng",
+          "vocab_id": 321,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41011_L_07",
+      "exam_id": "H41011",
+      "question_number": 7,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他希望大家给他发短信。",
+        "pinyin": "tā xī wàng dà jiā gěi tā fā duǎn xìn 。",
+        "vi": "Anh ấy hy vọng mọi người gửi tin nhắn cho mình."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Anh ấy hy vọng mọi người gửi tin nhắn cho mình.'.",
+      "evidence": {
+        "zh": "六這個經具我一直想看下星期六是他們在這兒的最後一場演出中午你記得提醒我去買票否則我就沒有機會看了他正在排隊買票七大家如果還有什麼問題不明白可以給我發電子有見這是我的優香地址你們記一下",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41011.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 278940,
+          "end_ms": 319870
+        },
+        "statement": {
+          "start_ms": 319880,
+          "end_ms": 323830
+        },
+        "full_question": {
+          "start_ms": 278940,
+          "end_ms": 323830
+        }
+      },
+      "transcript": {
+        "full_zh": "六這個經具我一直想看下星期六是他們在這兒的最後一場演出中午你記得提醒我去買票否則我就沒有機會看了他正在排隊買票七大家如果還有什麼問題不明白可以給我發電子有見這是我的優香地址你們記一下",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41011_L_07_S1",
+            "index": 0,
+            "zh": "六這個經具我一直想看下星期六是他們在這兒的最後一場演出中午你記得提醒我去買票否則我就沒有機會看了他正在排隊買票七大家如果還有什麼問題不明白可以給我發電子有見這是我的優香地址你們記一下",
+            "pinyin": "liù zhè gè jīng jù wǒ yì zhí xiǎng kàn xià xīng qī liù shì tā men zài zhè ér de zuì hòu yī chǎng yǎn chū zhōng wǔ nǐ jì dé tí xǐng wǒ qù mǎi piào fǒu zé wǒ jiù méi yǒu jī huì kàn le tā zhèng zài pái duì mǎi piào qī dà jiā rú guǒ hái yǒu shén me wèn tí bù míng bái kě yǐ gěi wǒ fā diàn zi yǒu jiàn zhè shì wǒ de yōu xiāng dì zhǐ nǐ men jì yī xià",
+            "vi": "",
+            "start_ms": 278940,
+            "end_ms": 319870
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "星期",
+          "pinyin": "xīngqī",
+          "meaning_vi": "tuần, thứ (trong tuần)",
+          "vocab_id": 126,
+          "level": "HSK1"
+        },
+        {
+          "word": "中午",
+          "pinyin": "zhōngwǔ",
+          "meaning_vi": "buổi trưa",
+          "vocab_id": 144,
+          "level": "HSK1"
+        },
+        {
+          "word": "大家",
+          "pinyin": "dàjiā",
+          "meaning_vi": "mọi người",
+          "vocab_id": 17,
+          "level": "HSK2"
+        },
+        {
+          "word": "可以",
+          "pinyin": "kěyǐ",
+          "meaning_vi": "có thể, được",
+          "vocab_id": 57,
+          "level": "HSK2"
+        },
+        {
+          "word": "希望",
+          "pinyin": "xīwàng",
+          "meaning_vi": "hy vọng",
+          "vocab_id": 113,
+          "level": "HSK2"
+        },
+        {
+          "word": "一下",
+          "pinyin": "yīxià",
+          "meaning_vi": "một chút, thử xem",
+          "vocab_id": 128,
+          "level": "HSK2"
+        },
+        {
+          "word": "正在",
+          "pinyin": "zhèngzài",
+          "meaning_vi": "đang",
+          "vocab_id": 145,
+          "level": "HSK2"
+        },
+        {
+          "word": "明白",
+          "pinyin": "míngbai",
+          "meaning_vi": "hiểu rõ, rõ ràng",
+          "vocab_id": 165,
+          "level": "HSK3"
+        }
+      ]
+    },
+    {
+      "id": "H41011_L_08",
+      "exam_id": "H41011",
+      "question_number": 8,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "生气时别急着做决定。",
+        "pinyin": "shēng qì shí bié jí zhe zuò jué dìng 。",
+        "vi": "Khi đang tức giận thì đừng vội đưa ra quyết định."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Khi đang tức giận thì đừng vội đưa ra quyết định.'.",
+      "evidence": {
+        "zh": "七大家如果還有什麼問題不明白可以給我發電子有見這是我的優香地址你們記一下他希望大家給他發短信八生氣時千萬不要急著下半半或做決定因為此時做的決定很可能會讓你在冷靜時後悔生氣時也急著做決定九",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41011.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 308750,
+          "end_ms": 349430
+        },
+        "statement": {
+          "start_ms": 359549,
+          "end_ms": 363260
+        },
+        "full_question": {
+          "start_ms": 308750,
+          "end_ms": 363260
+        }
+      },
+      "transcript": {
+        "full_zh": "七大家如果還有什麼問題不明白可以給我發電子有見這是我的優香地址你們記一下他希望大家給他發短信八生氣時千萬不要急著下半半或做決定因為此時做的決定很可能會讓你在冷靜時後悔生氣時也急著做決定九",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41011_L_08_S1",
+            "index": 0,
+            "zh": "七大家如果還有什麼問題不明白可以給我發電子有見這是我的優香地址你們記一下他希望大家給他發短信八生氣時千萬不要急著下半半或做決定因為此時做的決定很可能會讓你在冷靜時後悔生氣時也急著做決定九",
+            "pinyin": "qī dà jiā rú guǒ hái yǒu shén me wèn tí bù míng bái kě yǐ gěi wǒ fā diàn zi yǒu jiàn zhè shì wǒ de yōu xiāng dì zhǐ nǐ men jì yī xià tā xī wàng dà jiā gěi tā fā duǎn xìn bā shēng qì shí qiān wàn bú yào jí zhù xià bàn bàn huò zuò jué dìng yīn wèi cǐ shí zuò de jué dìng hěn kě néng huì ràng nǐ zài lěng jìng shí hòu huǐ shēng qì shí yě jí zhù zuò jué dìng jiǔ",
+            "vi": "",
+            "start_ms": 308750,
+            "end_ms": 349430
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "大家",
+          "pinyin": "dàjiā",
+          "meaning_vi": "mọi người",
+          "vocab_id": 17,
+          "level": "HSK2"
+        },
+        {
+          "word": "可能",
+          "pinyin": "kěnéng",
+          "meaning_vi": "có thể",
+          "vocab_id": 56,
+          "level": "HSK2"
+        },
+        {
+          "word": "可以",
+          "pinyin": "kěyǐ",
+          "meaning_vi": "có thể, được",
+          "vocab_id": 57,
+          "level": "HSK2"
+        },
+        {
+          "word": "希望",
+          "pinyin": "xīwàng",
+          "meaning_vi": "hy vọng",
+          "vocab_id": 113,
+          "level": "HSK2"
+        },
+        {
+          "word": "一下",
+          "pinyin": "yīxià",
+          "meaning_vi": "một chút, thử xem",
+          "vocab_id": 128,
+          "level": "HSK2"
+        },
+        {
+          "word": "决定",
+          "pinyin": "juédìng",
+          "meaning_vi": "quyết định",
+          "vocab_id": 135,
+          "level": "HSK3"
+        },
+        {
+          "word": "明白",
+          "pinyin": "míngbai",
+          "meaning_vi": "hiểu rõ, rõ ràng",
+          "vocab_id": 165,
+          "level": "HSK3"
+        },
+        {
+          "word": "如果",
+          "pinyin": "rúguǒ",
+          "meaning_vi": "nếu",
+          "vocab_id": 196,
+          "level": "HSK3"
+        }
+      ]
+    },
+    {
+      "id": "H41011_L_09",
+      "exam_id": "H41011",
+      "question_number": 9,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "妻子觉得房子很便宜。",
+        "pinyin": "qī zǐ jué de fáng zi hěn pián yi 。",
+        "vi": "Người vợ cảm thấy ngôi nhà đó rất rẻ."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Người vợ cảm thấy ngôi nhà đó rất rẻ.'.",
+      "evidence": {
+        "zh": "生氣時千萬不要急著下半半或做決定因為此時做的決定很可能會讓你在冷靜時後悔生氣時也急著做決定九那個房子在一層帶個小花園我挺滿意的我七字覺得初今有點貴我們想再商量一下七字覺得房子很便宜十",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41011.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 335440,
+          "end_ms": 376860
+        },
+        "statement": {
+          "start_ms": 386990,
+          "end_ms": 390230
+        },
+        "full_question": {
+          "start_ms": 335440,
+          "end_ms": 390230
+        }
+      },
+      "transcript": {
+        "full_zh": "生氣時千萬不要急著下半半或做決定因為此時做的決定很可能會讓你在冷靜時後悔生氣時也急著做決定九那個房子在一層帶個小花園我挺滿意的我七字覺得初今有點貴我們想再商量一下七字覺得房子很便宜十",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41011_L_09_S1",
+            "index": 0,
+            "zh": "生氣時千萬不要急著下半半或做決定因為此時做的決定很可能會讓你在冷靜時後悔生氣時也急著做決定九那個房子在一層帶個小花園我挺滿意的我七字覺得初今有點貴我們想再商量一下七字覺得房子很便宜十",
+            "pinyin": "shēng qì shí qiān wàn bú yào jí zhù xià bàn bàn huò zuò jué dìng yīn wèi cǐ shí zuò de jué dìng hěn kě néng huì ràng nǐ zài lěng jìng shí hòu huǐ shēng qì shí yě jí zhù zuò jué dìng jiǔ nà gè fáng zi zài yī céng dài gè xiǎo huā yuán wǒ tǐng mǎn yì de wǒ qī zì jué dé chū jīn yǒu diǎn guì wǒ men xiǎng zài shāng liáng yī xià qī zì jué dé fáng zi hěn pián yi shí",
+            "vi": "",
+            "start_ms": 335440,
+            "end_ms": 376860
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "觉得",
+          "pinyin": "juéde",
+          "meaning_vi": "cảm thấy",
+          "vocab_id": 52,
+          "level": "HSK2"
+        },
+        {
+          "word": "可能",
+          "pinyin": "kěnéng",
+          "meaning_vi": "có thể",
+          "vocab_id": 56,
+          "level": "HSK2"
+        },
+        {
+          "word": "便宜",
+          "pinyin": "piányi",
+          "meaning_vi": "rẻ",
+          "vocab_id": 80,
+          "level": "HSK2"
+        },
+        {
+          "word": "妻子",
+          "pinyin": "qīzi",
+          "meaning_vi": "vợ",
+          "vocab_id": 82,
+          "level": "HSK2"
+        },
+        {
+          "word": "一下",
+          "pinyin": "yīxià",
+          "meaning_vi": "một chút, thử xem",
+          "vocab_id": 128,
+          "level": "HSK2"
+        },
+        {
+          "word": "商量",
+          "pinyin": "shāngliang",
+          "meaning_vi": "thảo luận, bàn bạc",
+          "vocab_id": 367,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41011_L_10",
+      "exam_id": "H41011",
+      "question_number": 10,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "手机上网让生活更方便了。",
+        "pinyin": "shǒu jī shàng wǎng ràng shēng huó gèng fāng biàn le 。",
+        "vi": "Điện thoại lên mạng giúp cuộc sống thuận tiện hơn."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Điện thoại lên mạng giúp cuộc sống thuận tiện hơn.'.",
+      "evidence": {
+        "zh": "帶個小花園我挺滿意的我七字覺得初今有點貴我們想再商量一下七字覺得房子很便宜十隨著科技的發展手機也能上網了這大大方便了人們的生活比如說迷路時只要用手機上網查一下地圖馬上就能找到方向手機上網讓生活更方便了",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41011.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 363680,
+          "end_ms": 407510
+        },
+        "statement": {
+          "start_ms": 417620,
+          "end_ms": 418790
+        },
+        "full_question": {
+          "start_ms": 363680,
+          "end_ms": 418790
+        }
+      },
+      "transcript": {
+        "full_zh": "帶個小花園我挺滿意的我七字覺得初今有點貴我們想再商量一下七字覺得房子很便宜十隨著科技的發展手機也能上網了這大大方便了人們的生活比如說迷路時只要用手機上網查一下地圖馬上就能找到方向手機上網讓生活更方便了",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41011_L_10_S1",
+            "index": 0,
+            "zh": "帶個小花園我挺滿意的我七字覺得初今有點貴我們想再商量一下七字覺得房子很便宜十隨著科技的發展手機也能上網了這大大方便了人們的生活比如說迷路時只要用手機上網查一下地圖馬上就能找到方向手機上網讓生活更方便了",
+            "pinyin": "dài gè xiǎo huā yuán wǒ tǐng mǎn yì de wǒ qī zì jué dé chū jīn yǒu diǎn guì wǒ men xiǎng zài shāng liáng yī xià qī zì jué dé fáng zi hěn pián yi shí suí zhù kē jì de fā zhǎn shǒu jī yě néng shàng wǎng le zhè dà dà fāng biàn le rén men de shēng huó bǐ rú shuō mí lù shí zhǐ yào yòng shǒu jī shàng wǎng chá yī xià dì tú mǎ shàng jiù néng zhǎo dào fāng xiàng shǒu jī shàng wǎng ràng shēng huó gèng fāng biàn le",
+            "vi": "",
+            "start_ms": 363680,
+            "end_ms": 407510
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "便宜",
+          "pinyin": "piányi",
+          "meaning_vi": "rẻ",
+          "vocab_id": 80,
+          "level": "HSK2"
+        },
+        {
+          "word": "手机",
+          "pinyin": "shǒujī",
+          "meaning_vi": "điện thoại di động",
+          "vocab_id": 97,
+          "level": "HSK2"
+        },
+        {
+          "word": "一下",
+          "pinyin": "yīxià",
+          "meaning_vi": "một chút, thử xem",
+          "vocab_id": 128,
+          "level": "HSK2"
+        },
+        {
+          "word": "方便",
+          "pinyin": "fāngbiàn",
+          "meaning_vi": "thuận tiện",
+          "vocab_id": 66,
+          "level": "HSK3"
+        },
+        {
+          "word": "上网",
+          "pinyin": "shàngwǎng",
+          "meaning_vi": "lên mạng",
+          "vocab_id": 198,
+          "level": "HSK3"
+        },
+        {
+          "word": "比如",
+          "pinyin": "bǐrú",
+          "meaning_vi": "ví như, chẳng hạn",
+          "vocab_id": 17,
+          "level": "HSK4"
+        },
+        {
+          "word": "方向",
+          "pinyin": "fāngxiàng",
+          "meaning_vi": "phương hướng",
+          "vocab_id": 113,
+          "level": "HSK4"
+        },
+        {
+          "word": "迷路",
+          "pinyin": "mílù",
+          "meaning_vi": "lạc đường",
+          "vocab_id": 304,
+          "level": "HSK4"
+        }
+      ]
+    }
+  ]
+}

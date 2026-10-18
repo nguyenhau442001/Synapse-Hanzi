@@ -1,0 +1,1122 @@
+{
+  "exam_id": "H41003",
+  "level": "HSK4",
+  "title": "HSK 4 - Đề thi mẫu H41003 - Phần Nghe (Listening)",
+  "total_questions": 10,
+  "audio_src": "assets/audio/exams/H41003.mp3",
+  "questions": [
+    {
+      "id": "H41003_L_01",
+      "exam_id": "H41003",
+      "question_number": 1,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他想买蛋糕。",
+        "pinyin": "tā xiǎng mǎi dàn gāo 。",
+        "vi": "Anh ấy muốn mua bánh ngọt."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Anh ấy muốn mua bánh ngọt.'.",
+      "evidence": {
+        "zh": "对不起，先生，那种蛋糕已经卖完了，不过，您可以尝一下这种饼干，味道也很不错。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41003.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 104000,
+          "end_ms": 165999
+        },
+        "statement": {
+          "start_ms": 166000,
+          "end_ms": 169990
+        },
+        "full_question": {
+          "start_ms": 104000,
+          "end_ms": 169990
+        }
+      },
+      "transcript": {
+        "full_zh": "对不起，先生，那种蛋糕已经卖完了，不过，您可以尝一下这种饼干，味道也很不错。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41003_L_01_S1",
+            "index": 0,
+            "zh": "对不起，先生，那种蛋糕已经卖完了，不过，您可以尝一下这种饼干，味道也很不错。",
+            "pinyin": "duì bù qǐ ， xiān shēng ， nà zhǒng dàn gāo yǐ jīng mài wán le ， bù guò ， nín kě yǐ cháng yī xià zhè zhǒng bǐng gān ， wèi dào yě hěn bú cuò 。",
+            "vi": "",
+            "start_ms": 104000,
+            "end_ms": 165999
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "对不起",
+          "pinyin": "duìbuqǐ",
+          "meaning_vi": "xin lỗi",
+          "vocab_id": 23,
+          "level": "HSK1"
+        },
+        {
+          "word": "先生",
+          "pinyin": "xiānsheng",
+          "meaning_vi": "ông, quý ông",
+          "vocab_id": 118,
+          "level": "HSK1"
+        },
+        {
+          "word": "可以",
+          "pinyin": "kěyǐ",
+          "meaning_vi": "có thể, được",
+          "vocab_id": 57,
+          "level": "HSK2"
+        },
+        {
+          "word": "一下",
+          "pinyin": "yīxià",
+          "meaning_vi": "một chút, thử xem",
+          "vocab_id": 128,
+          "level": "HSK2"
+        },
+        {
+          "word": "已经",
+          "pinyin": "yǐjīng",
+          "meaning_vi": "đã",
+          "vocab_id": 129,
+          "level": "HSK2"
+        },
+        {
+          "word": "蛋糕",
+          "pinyin": "dàngāo",
+          "meaning_vi": "bánh ngọt",
+          "vocab_id": 44,
+          "level": "HSK3"
+        },
+        {
+          "word": "饼干",
+          "pinyin": "bǐnggān",
+          "meaning_vi": "bánh quy",
+          "vocab_id": 25,
+          "level": "HSK4"
+        },
+        {
+          "word": "不过",
+          "pinyin": "búguò",
+          "meaning_vi": "nhưng, tuy nhiên",
+          "vocab_id": 28,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41003_L_02",
+      "exam_id": "H41003",
+      "question_number": 2,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他现在住的地方很安静。",
+        "pinyin": "tā xiàn zài zhù de dì fāng hěn ān jìng 。",
+        "vi": "Nơi anh ấy đang ở hiện tại rất yên tĩnh."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Nơi anh ấy đang ở hiện tại rất yên tĩnh.'.",
+      "evidence": {
+        "zh": "我挺喜欢现在住的地方，很安静。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41003.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 136828,
+          "end_ms": 184080
+        },
+        "statement": {
+          "start_ms": 189000,
+          "end_ms": 193000
+        },
+        "full_question": {
+          "start_ms": 136828,
+          "end_ms": 193000
+        }
+      },
+      "transcript": {
+        "full_zh": "我挺喜欢现在住的地方，很安静。不像以前住的地方，虽然交通方便，但是周围很吵。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41003_L_02_S1",
+            "index": 0,
+            "zh": "我挺喜欢现在住的地方，很安静。",
+            "pinyin": "wǒ tǐng xǐ huān xiàn zài zhù de dì fāng ， hěn ān jìng 。",
+            "vi": "",
+            "start_ms": 136828,
+            "end_ms": 155480
+          },
+          {
+            "id": "H41003_L_02_S2",
+            "index": 1,
+            "zh": "不像以前住的地方，虽然交通方便，但是周围很吵。",
+            "pinyin": "bù xiàng yǐ qián zhù de dì fāng ， suī rán jiāo tōng fāng biàn ， dàn shì zhōu wéi hěn chǎo 。",
+            "vi": "",
+            "start_ms": 155480,
+            "end_ms": 184079
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "喜欢",
+          "pinyin": "xǐhuan",
+          "meaning_vi": "thích",
+          "vocab_id": 114,
+          "level": "HSK1"
+        },
+        {
+          "word": "现在",
+          "pinyin": "xiànzài",
+          "meaning_vi": "hiện tại, bây giờ",
+          "vocab_id": 119,
+          "level": "HSK1"
+        },
+        {
+          "word": "安静",
+          "pinyin": "ānjìng",
+          "meaning_vi": "yên tĩnh",
+          "vocab_id": 5,
+          "level": "HSK3"
+        },
+        {
+          "word": "地方",
+          "pinyin": "dìfang",
+          "meaning_vi": "nơi, địa phương",
+          "vocab_id": 48,
+          "level": "HSK3"
+        },
+        {
+          "word": "方便",
+          "pinyin": "fāngbiàn",
+          "meaning_vi": "thuận tiện",
+          "vocab_id": 66,
+          "level": "HSK3"
+        },
+        {
+          "word": "以前",
+          "pinyin": "yǐqián",
+          "meaning_vi": "trước đây",
+          "vocab_id": 258,
+          "level": "HSK3"
+        },
+        {
+          "word": "交通",
+          "pinyin": "jiāotōng",
+          "meaning_vi": "giao thông",
+          "vocab_id": 213,
+          "level": "HSK4"
+        },
+        {
+          "word": "周围",
+          "pinyin": "zhōuwéi",
+          "meaning_vi": "xung quanh",
+          "vocab_id": 578,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41003_L_03",
+      "exam_id": "H41003",
+      "question_number": 3,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "大学生不愿意去农村工作。",
+        "pinyin": "dà xué shēng bù yuàn yì qù nóng cūn gōng zuò 。",
+        "vi": "Sinh viên đại học không muốn về nông thôn làm việc."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Sinh viên đại học không muốn về nông thôn làm việc.'.",
+      "evidence": {
+        "zh": "虽然很多大学生毕业后希望留在大城市工作，但也有不少大学生选择去农村，因为在那里也有许多好的发展机会。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41003.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 163500,
+          "end_ms": 214993
+        },
+        "statement": {
+          "start_ms": 215000,
+          "end_ms": 218621
+        },
+        "full_question": {
+          "start_ms": 163500,
+          "end_ms": 218621
+        }
+      },
+      "transcript": {
+        "full_zh": "虽然很多大学生毕业后希望留在大城市工作，但也有不少大学生选择去农村，因为在那里也有许多好的发展机会。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41003_L_03_S1",
+            "index": 0,
+            "zh": "虽然很多大学生毕业后希望留在大城市工作，但也有不少大学生选择去农村，因为在那里也有许多好的发展机会。",
+            "pinyin": "suī rán hěn duō dà xué shēng bì yè hòu xī wàng liú zài dà chéng shì gōng zuò ， dàn yě yǒu bù shǎo dà xué shēng xuǎn zé qù nóng cūn ， yīn wèi zài nà lǐ yě yǒu xǔ duō hǎo de fā zhǎn jī huì 。",
+            "vi": "",
+            "start_ms": 163500,
+            "end_ms": 214993
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "工作",
+          "pinyin": "gōngzuò",
+          "meaning_vi": "công việc, làm việc",
+          "vocab_id": 33,
+          "level": "HSK1"
+        },
+        {
+          "word": "学生",
+          "pinyin": "xuésheng",
+          "meaning_vi": "học sinh",
+          "vocab_id": 127,
+          "level": "HSK1"
+        },
+        {
+          "word": "希望",
+          "pinyin": "xīwàng",
+          "meaning_vi": "hy vọng",
+          "vocab_id": 113,
+          "level": "HSK2"
+        },
+        {
+          "word": "城市",
+          "pinyin": "chéngshì",
+          "meaning_vi": "thành phố",
+          "vocab_id": 33,
+          "level": "HSK3"
+        },
+        {
+          "word": "机会",
+          "pinyin": "jīhuì",
+          "meaning_vi": "cơ hội",
+          "vocab_id": 109,
+          "level": "HSK3"
+        },
+        {
+          "word": "选择",
+          "pinyin": "xuǎnzé",
+          "meaning_vi": "lựa chọn",
+          "vocab_id": 251,
+          "level": "HSK3"
+        },
+        {
+          "word": "愿意",
+          "pinyin": "yuànyì",
+          "meaning_vi": "sẵn lòng, muốn",
+          "vocab_id": 273,
+          "level": "HSK3"
+        },
+        {
+          "word": "毕业",
+          "pinyin": "bìyè",
+          "meaning_vi": "tốt nghiệp",
+          "vocab_id": 18,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41003_L_04",
+      "exam_id": "H41003",
+      "question_number": 4,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "会议室在二层。",
+        "pinyin": "huì yì shì zài èr céng 。",
+        "vi": "Phòng họp ở tầng hai."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Phòng họp ở tầng hai.'.",
+      "evidence": {
+        "zh": "您是要去会议室吗？",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41003.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 193179,
+          "end_ms": 246119
+        },
+        "statement": {
+          "start_ms": 251000,
+          "end_ms": 255000
+        },
+        "full_question": {
+          "start_ms": 193179,
+          "end_ms": 255000
+        }
+      },
+      "transcript": {
+        "full_zh": "您是要去会议室吗？那不用上楼，会议室就在一层。您往前走，就在电梯左边。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41003_L_04_S1",
+            "index": 0,
+            "zh": "您是要去会议室吗？",
+            "pinyin": "nín shì yào qù huì yì shì ma ？",
+            "vi": "",
+            "start_ms": 193179,
+            "end_ms": 206792
+          },
+          {
+            "id": "H41003_L_04_S2",
+            "index": 1,
+            "zh": "那不用上楼，会议室就在一层。",
+            "pinyin": "nà bù yòng shàng lóu ， huì yì shì jiù zài yī céng 。",
+            "vi": "",
+            "start_ms": 206792,
+            "end_ms": 227968
+          },
+          {
+            "id": "H41003_L_04_S3",
+            "index": 2,
+            "zh": "您往前走，就在电梯左边。",
+            "pinyin": "nín wǎng qián zǒu ， jiù zài diàn tī zuǒ biān 。",
+            "vi": "",
+            "start_ms": 227968,
+            "end_ms": 246118
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "左边",
+          "pinyin": "zuǒbian",
+          "meaning_vi": "bên trái",
+          "vocab_id": 150,
+          "level": "HSK2"
+        },
+        {
+          "word": "电梯",
+          "pinyin": "diàntī",
+          "meaning_vi": "thang máy",
+          "vocab_id": 51,
+          "level": "HSK3"
+        },
+        {
+          "word": "会议",
+          "pinyin": "huìyì",
+          "meaning_vi": "cuộc họp",
+          "vocab_id": 106,
+          "level": "HSK3"
+        }
+      ]
+    },
+    {
+      "id": "H41003_L_05",
+      "exam_id": "H41003",
+      "question_number": 5,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "参观时间是一小时。",
+        "pinyin": "cān guān shí jiān shì yī xiǎo shí 。",
+        "vi": "Thời gian tham quan là một tiếng."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Thời gian tham quan là một tiếng.'.",
+      "evidence": {
+        "zh": "现在是九点半，请大家注意：一小时后我们还在这个入口集合，参观过程中请大家注意安全。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41003.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 228000,
+          "end_ms": 272498
+        },
+        "statement": {
+          "start_ms": 273419,
+          "end_ms": 276651
+        },
+        "full_question": {
+          "start_ms": 228000,
+          "end_ms": 276651
+        }
+      },
+      "transcript": {
+        "full_zh": "现在是九点半，请大家注意：一小时后我们还在这个入口集合，参观过程中请大家注意安全。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41003_L_05_S1",
+            "index": 0,
+            "zh": "现在是九点半，请大家注意：一小时后我们还在这个入口集合，参观过程中请大家注意安全。",
+            "pinyin": "xiàn zài shì jiǔ diǎn bàn ， qǐng dà jiā zhù yì ： yī xiǎo shí hòu wǒ men hái zài zhè ge rù kǒu jí hé ， cān guān guò chéng zhōng qǐng dà jiā zhù yì ān quán 。",
+            "vi": "",
+            "start_ms": 228000,
+            "end_ms": 272498
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "我们",
+          "pinyin": "wǒmen",
+          "meaning_vi": "chúng tôi, chúng ta",
+          "vocab_id": 112,
+          "level": "HSK1"
+        },
+        {
+          "word": "现在",
+          "pinyin": "xiànzài",
+          "meaning_vi": "hiện tại, bây giờ",
+          "vocab_id": 119,
+          "level": "HSK1"
+        },
+        {
+          "word": "大家",
+          "pinyin": "dàjiā",
+          "meaning_vi": "mọi người",
+          "vocab_id": 17,
+          "level": "HSK2"
+        },
+        {
+          "word": "时间",
+          "pinyin": "shíjiān",
+          "meaning_vi": "thời gian",
+          "vocab_id": 94,
+          "level": "HSK2"
+        },
+        {
+          "word": "小时",
+          "pinyin": "xiǎoshí",
+          "meaning_vi": "giờ (đơn vị thời gian)",
+          "vocab_id": 116,
+          "level": "HSK2"
+        },
+        {
+          "word": "注意",
+          "pinyin": "zhùyì",
+          "meaning_vi": "chú ý",
+          "vocab_id": 293,
+          "level": "HSK3"
+        },
+        {
+          "word": "安全",
+          "pinyin": "ānquán",
+          "meaning_vi": "an toàn",
+          "vocab_id": 3,
+          "level": "HSK4"
+        },
+        {
+          "word": "参观",
+          "pinyin": "cānguān",
+          "meaning_vi": "tham quan",
+          "vocab_id": 36,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41003_L_06",
+      "exam_id": "H41003",
+      "question_number": 6,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "超市提供免费塑料袋。",
+        "pinyin": "chāo shì tí gōng miǎn fèi sù liào dài 。",
+        "vi": "Siêu thị cung cấp túi ni-lông miễn phí."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Siêu thị cung cấp túi ni-lông miễn phí.'.",
+      "evidence": {
+        "zh": "因为塑料袋会给环境带来污染，所以现在超市不再免费提供塑料袋，有需要的顾客，可以向超市购买。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41003.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 243818,
+          "end_ms": 303751
+        },
+        "statement": {
+          "start_ms": 304728,
+          "end_ms": 307951
+        },
+        "full_question": {
+          "start_ms": 243818,
+          "end_ms": 307951
+        }
+      },
+      "transcript": {
+        "full_zh": "因为塑料袋会给环境带来污染，所以现在超市不再免费提供塑料袋，有需要的顾客，可以向超市购买。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41003_L_06_S1",
+            "index": 0,
+            "zh": "因为塑料袋会给环境带来污染，所以现在超市不再免费提供塑料袋，有需要的顾客，可以向超市购买。",
+            "pinyin": "yīn wèi sù liào dài huì gěi huán jìng dài lái wū rǎn ， suǒ yǐ xiàn zài chāo shì bù zài miǎn fèi tí gōng sù liào dài ， yǒu xū yào de gù kè ， kě yǐ xiàng chāo shì gòu mǎi 。",
+            "vi": "",
+            "start_ms": 243818,
+            "end_ms": 303751
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "塑料袋",
+          "pinyin": "sùliàodài",
+          "meaning_vi": "túi nhựa",
+          "vocab_id": 412,
+          "level": "HSK4"
+        },
+        {
+          "word": "现在",
+          "pinyin": "xiànzài",
+          "meaning_vi": "hiện tại, bây giờ",
+          "vocab_id": 119,
+          "level": "HSK1"
+        },
+        {
+          "word": "可以",
+          "pinyin": "kěyǐ",
+          "meaning_vi": "có thể, được",
+          "vocab_id": 57,
+          "level": "HSK2"
+        },
+        {
+          "word": "超市",
+          "pinyin": "chāoshì",
+          "meaning_vi": "siêu thị",
+          "vocab_id": 30,
+          "level": "HSK3"
+        },
+        {
+          "word": "环境",
+          "pinyin": "huánjìng",
+          "meaning_vi": "môi trường",
+          "vocab_id": 102,
+          "level": "HSK3"
+        },
+        {
+          "word": "需要",
+          "pinyin": "xūyào",
+          "meaning_vi": "cần thiết, cần",
+          "vocab_id": 250,
+          "level": "HSK3"
+        },
+        {
+          "word": "顾客",
+          "pinyin": "gùkè",
+          "meaning_vi": "khách hàng",
+          "vocab_id": 149,
+          "level": "HSK4"
+        },
+        {
+          "word": "免费",
+          "pinyin": "miǎnfèi",
+          "meaning_vi": "miễn phí",
+          "vocab_id": 306,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41003_L_07",
+      "exam_id": "H41003",
+      "question_number": 7,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "海洋里的植物很少。",
+        "pinyin": "hǎi yáng lǐ de zhí wù hěn shǎo 。",
+        "vi": "Thực vật trong đại dương rất ít."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Thực vật trong đại dương rất ít.'.",
+      "evidence": {
+        "zh": "和森林一样，在海洋里，也生长着很多种植物，它们与海洋里的动物，共同组成了一个美丽的海底世界。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41003.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 285608,
+          "end_ms": 330995
+        },
+        "statement": {
+          "start_ms": 331000,
+          "end_ms": 334961
+        },
+        "full_question": {
+          "start_ms": 285608,
+          "end_ms": 334961
+        }
+      },
+      "transcript": {
+        "full_zh": "和森林一样，在海洋里，也生长着很多种植物，它们与海洋里的动物，共同组成了一个美丽的海底世界。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41003_L_07_S1",
+            "index": 0,
+            "zh": "和森林一样，在海洋里，也生长着很多种植物，它们与海洋里的动物，共同组成了一个美丽的海底世界。",
+            "pinyin": "hé sēn lín yī yàng ， zài hǎi yáng lǐ ， yě shēng zhǎng zhe hěn duō zhòng zhí wù ， tā men yǔ hǎi yáng lǐ de dòng wù ， gòng tóng zǔ chéng le yí gè měi lì de hǎi dǐ shì jiè 。",
+            "vi": "",
+            "start_ms": 285608,
+            "end_ms": 330995
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "动物",
+          "pinyin": "dòngwù",
+          "meaning_vi": "động vật",
+          "vocab_id": 55,
+          "level": "HSK3"
+        },
+        {
+          "word": "世界",
+          "pinyin": "shìjiè",
+          "meaning_vi": "thế giới",
+          "vocab_id": 202,
+          "level": "HSK3"
+        },
+        {
+          "word": "一样",
+          "pinyin": "yíyàng",
+          "meaning_vi": "giống nhau",
+          "vocab_id": 257,
+          "level": "HSK3"
+        },
+        {
+          "word": "共同",
+          "pinyin": "gòngtóng",
+          "meaning_vi": "chung, cùng nhau",
+          "vocab_id": 144,
+          "level": "HSK4"
+        },
+        {
+          "word": "海洋",
+          "pinyin": "hǎiyáng",
+          "meaning_vi": "biển, đại dương",
+          "vocab_id": 164,
+          "level": "HSK4"
+        },
+        {
+          "word": "美丽",
+          "pinyin": "měilì",
+          "meaning_vi": "xinh đẹp",
+          "vocab_id": 302,
+          "level": "HSK4"
+        },
+        {
+          "word": "森林",
+          "pinyin": "sēnlín",
+          "meaning_vi": "rừng",
+          "vocab_id": 365,
+          "level": "HSK4"
+        },
+        {
+          "word": "植物",
+          "pinyin": "zhíwù",
+          "meaning_vi": "thực vật",
+          "vocab_id": 568,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41003_L_08",
+      "exam_id": "H41003",
+      "question_number": 8,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他的职业是演员。",
+        "pinyin": "tā de zhí yè shì yǎn yuán 。",
+        "vi": "Nghề nghiệp của anh ấy là diễn viên."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Nghề nghiệp của anh ấy là diễn viên.'.",
+      "evidence": {
+        "zh": "我父亲是医生，母亲是演员。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41003.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 304728,
+          "end_ms": 362995
+        },
+        "statement": {
+          "start_ms": 363009,
+          "end_ms": 366821
+        },
+        "full_question": {
+          "start_ms": 304728,
+          "end_ms": 366821
+        }
+      },
+      "transcript": {
+        "full_zh": "我父亲是医生，母亲是演员。我的性格很像我父亲，我的理想就是做一个像父亲那样的医生。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41003_L_08_S1",
+            "index": 0,
+            "zh": "我父亲是医生，母亲是演员。",
+            "pinyin": "wǒ fù qīn shì yī shēng ， mǔ qīn shì yǎn yuán 。",
+            "vi": "",
+            "start_ms": 304728,
+            "end_ms": 323202
+          },
+          {
+            "id": "H41003_L_08_S2",
+            "index": 1,
+            "zh": "我的性格很像我父亲，我的理想就是做一个像父亲那样的医生。",
+            "pinyin": "wǒ de xìng gé hěn xiàng wǒ fù qīn ， wǒ de lǐ xiǎng jiù shì zuò yí gè xiàng fù qīn nà yàng de yī shēng 。",
+            "vi": "",
+            "start_ms": 323202,
+            "end_ms": 362994
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "医生",
+          "pinyin": "yīshēng",
+          "meaning_vi": "bác sĩ",
+          "vocab_id": 132,
+          "level": "HSK1"
+        },
+        {
+          "word": "父亲",
+          "pinyin": "fùqīn",
+          "meaning_vi": "cha",
+          "vocab_id": 124,
+          "level": "HSK4"
+        },
+        {
+          "word": "理想",
+          "pinyin": "lǐxiǎng",
+          "meaning_vi": "lý tưởng",
+          "vocab_id": 279,
+          "level": "HSK4"
+        },
+        {
+          "word": "母亲",
+          "pinyin": "mǔqīn",
+          "meaning_vi": "mẹ",
+          "vocab_id": 309,
+          "level": "HSK4"
+        },
+        {
+          "word": "性格",
+          "pinyin": "xìnggé",
+          "meaning_vi": "tính cách",
+          "vocab_id": 486,
+          "level": "HSK4"
+        },
+        {
+          "word": "演员",
+          "pinyin": "yǎnyuán",
+          "meaning_vi": "diễn viên",
+          "vocab_id": 500,
+          "level": "HSK4"
+        },
+        {
+          "word": "职业",
+          "pinyin": "zhíyè",
+          "meaning_vi": "nghề nghiệp",
+          "vocab_id": 569,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41003_L_09",
+      "exam_id": "H41003",
+      "question_number": 9,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他下周回来。",
+        "pinyin": "tā xià zhōu huí lái 。",
+        "vi": "Tuần sau anh ấy sẽ quay về."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Tuần sau anh ấy sẽ quay về.'.",
+      "evidence": {
+        "zh": "张记者，我刚刚接到通知，明天要出差，恐怕没时间和您见面了。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41003.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 336189,
+          "end_ms": 387931
+        },
+        "statement": {
+          "start_ms": 389000,
+          "end_ms": 392492
+        },
+        "full_question": {
+          "start_ms": 336189,
+          "end_ms": 392492
+        }
+      },
+      "transcript": {
+        "full_zh": "张记者，我刚刚接到通知，明天要出差，恐怕没时间和您见面了。很抱歉，等我回来以后再跟您联系，我下周一回来。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41003_L_09_S1",
+            "index": 0,
+            "zh": "张记者，我刚刚接到通知，明天要出差，恐怕没时间和您见面了。",
+            "pinyin": "zhāng jì zhě ， wǒ gāng gāng jiē dào tōng zhī ， míng tiān yào chū chāi ， kǒng pà méi shí jiān hé nín jiàn miàn le 。",
+            "vi": "",
+            "start_ms": 336189,
+            "end_ms": 365045
+          },
+          {
+            "id": "H41003_L_09_S2",
+            "index": 1,
+            "zh": "很抱歉，等我回来以后再跟您联系，我下周一回来。",
+            "pinyin": "hěn bào qiàn ， děng wǒ huí lái yǐ hòu zài gēn nín lián xì ， wǒ xià zhōu yī huí lái 。",
+            "vi": "",
+            "start_ms": 365045,
+            "end_ms": 387930
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "明天",
+          "pinyin": "míngtiān",
+          "meaning_vi": "ngày mai",
+          "vocab_id": 67,
+          "level": "HSK1"
+        },
+        {
+          "word": "时间",
+          "pinyin": "shíjiān",
+          "meaning_vi": "thời gian",
+          "vocab_id": 94,
+          "level": "HSK2"
+        },
+        {
+          "word": "见面",
+          "pinyin": "jiànmiàn",
+          "meaning_vi": "gặp mặt",
+          "vocab_id": 116,
+          "level": "HSK3"
+        },
+        {
+          "word": "抱歉",
+          "pinyin": "bàoqiàn",
+          "meaning_vi": "xin lỗi, lấy làm tiếc",
+          "vocab_id": 12,
+          "level": "HSK4"
+        },
+        {
+          "word": "出差",
+          "pinyin": "chūchāi",
+          "meaning_vi": "đi công tác",
+          "vocab_id": 52,
+          "level": "HSK4"
+        },
+        {
+          "word": "记者",
+          "pinyin": "jìzhě",
+          "meaning_vi": "nhà báo, phóng viên",
+          "vocab_id": 193,
+          "level": "HSK4"
+        },
+        {
+          "word": "恐怕",
+          "pinyin": "kǒngpà",
+          "meaning_vi": "sợ rằng, e là",
+          "vocab_id": 261,
+          "level": "HSK4"
+        },
+        {
+          "word": "联系",
+          "pinyin": "liánxì",
+          "meaning_vi": "liên hệ",
+          "vocab_id": 287,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41003_L_10",
+      "exam_id": "H41003",
+      "question_number": 10,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "习惯很难改变。",
+        "pinyin": "xí guàn hěn nán gǎi biàn 。",
+        "vi": "Thói quen rất khó thay đổi."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Thói quen rất khó thay đổi.'.",
+      "evidence": {
+        "zh": "习惯是不容易改变的，因此，在孩子小的时候，父母要帮他们养成好的生活、学习习惯。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41003.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 360887,
+          "end_ms": 418177
+        },
+        "statement": {
+          "start_ms": 419149,
+          "end_ms": 422901
+        },
+        "full_question": {
+          "start_ms": 360887,
+          "end_ms": 422901
+        }
+      },
+      "transcript": {
+        "full_zh": "习惯是不容易改变的，因此，在孩子小的时候，父母要帮他们养成好的生活、学习习惯。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41003_L_10_S1",
+            "index": 0,
+            "zh": "习惯是不容易改变的，因此，在孩子小的时候，父母要帮他们养成好的生活、学习习惯。",
+            "pinyin": "xí guàn shì bù róng yì gǎi biàn de ， yīn cǐ ， zài hái zi xiǎo de shí hòu ， fù mǔ yào bāng tā men yǎng chéng hǎo de shēng huó 、 xué xí xí guàn 。",
+            "vi": "",
+            "start_ms": 360887,
+            "end_ms": 418177
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "时候",
+          "pinyin": "shíhou",
+          "meaning_vi": "lúc, thời điểm",
+          "vocab_id": 95,
+          "level": "HSK1"
+        },
+        {
+          "word": "学习",
+          "pinyin": "xuéxí",
+          "meaning_vi": "học tập",
+          "vocab_id": 128,
+          "level": "HSK1"
+        },
+        {
+          "word": "孩子",
+          "pinyin": "háizi",
+          "meaning_vi": "đứa trẻ",
+          "vocab_id": 37,
+          "level": "HSK2"
+        },
+        {
+          "word": "容易",
+          "pinyin": "róngyì",
+          "meaning_vi": "dễ dàng",
+          "vocab_id": 195,
+          "level": "HSK3"
+        },
+        {
+          "word": "习惯",
+          "pinyin": "xíguàn",
+          "meaning_vi": "thói quen, quen thuộc",
+          "vocab_id": 234,
+          "level": "HSK3"
+        },
+        {
+          "word": "改变",
+          "pinyin": "gǎibiàn",
+          "meaning_vi": "thay đổi",
+          "vocab_id": 128,
+          "level": "HSK4"
+        },
+        {
+          "word": "生活",
+          "pinyin": "shēnghuó",
+          "meaning_vi": "sinh hoạt, cuộc sống",
+          "vocab_id": 375,
+          "level": "HSK4"
+        },
+        {
+          "word": "养成",
+          "pinyin": "yǎngchéng",
+          "meaning_vi": "hình thành, tạo thành (thói quen)",
+          "vocab_id": 503,
+          "level": "HSK4"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1152 @@
+{
+  "exam_id": "H41012",
+  "level": "HSK4",
+  "title": "HSK 4 - Đề thi mẫu H41012 - Phần Nghe (Listening)",
+  "total_questions": 10,
+  "audio_src": "assets/audio/exams/H41012.mp3",
+  "questions": [
+    {
+      "id": "H41012_L_01",
+      "exam_id": "H41012",
+      "question_number": 1,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "老张经常迟到。",
+        "pinyin": "lǎo zhāng jīng cháng chí dào 。",
+        "vi": "Lão Trương thường hay đến muộn."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Lão Trương thường hay đến muộn.'.",
+      "evidence": {
+        "zh": "老张这个人一直很准时，开会从来不迟到。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41012.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 103300,
+          "end_ms": 160989
+        },
+        "statement": {
+          "start_ms": 161000,
+          "end_ms": 164989
+        },
+        "full_question": {
+          "start_ms": 103300,
+          "end_ms": 164989
+        }
+      },
+      "transcript": {
+        "full_zh": "老张这个人一直很准时，开会从来不迟到。今天到现在还没来，大概是有什么事情，你打个电话问问他吧。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41012_L_01_S1",
+            "index": 0,
+            "zh": "老张这个人一直很准时，开会从来不迟到。",
+            "pinyin": "lǎo zhāng zhè ge rén yì zhí hěn zhǔn shí ， kāi huì cóng lái bù chí dào 。",
+            "vi": "",
+            "start_ms": 103300,
+            "end_ms": 126621
+          },
+          {
+            "id": "H41012_L_01_S2",
+            "index": 1,
+            "zh": "今天到现在还没来，大概是有什么事情，你打个电话问问他吧。",
+            "pinyin": "jīn tiān dào xiàn zài hái méi lái ， dà gài shì yǒu shén me shì qíng ， nǐ dǎ gè diàn huà wèn wèn tā ba 。",
+            "vi": "",
+            "start_ms": 126621,
+            "end_ms": 160988
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "今天",
+          "pinyin": "jīntiān",
+          "meaning_vi": "hôm nay",
+          "vocab_id": 47,
+          "level": "HSK1"
+        },
+        {
+          "word": "什么",
+          "pinyin": "shénme",
+          "meaning_vi": "cái gì",
+          "vocab_id": 93,
+          "level": "HSK1"
+        },
+        {
+          "word": "现在",
+          "pinyin": "xiànzài",
+          "meaning_vi": "hiện tại, bây giờ",
+          "vocab_id": 119,
+          "level": "HSK1"
+        },
+        {
+          "word": "事情",
+          "pinyin": "shìqing",
+          "meaning_vi": "việc, sự việc",
+          "vocab_id": 95,
+          "level": "HSK2"
+        },
+        {
+          "word": "迟到",
+          "pinyin": "chídào",
+          "meaning_vi": "đến muộn",
+          "vocab_id": 34,
+          "level": "HSK3"
+        },
+        {
+          "word": "经常",
+          "pinyin": "jīngcháng",
+          "meaning_vi": "thường xuyên",
+          "vocab_id": 129,
+          "level": "HSK3"
+        },
+        {
+          "word": "一直",
+          "pinyin": "yìzhí",
+          "meaning_vi": "luôn luôn, thẳng",
+          "vocab_id": 261,
+          "level": "HSK3"
+        },
+        {
+          "word": "从来",
+          "pinyin": "cónglái",
+          "meaning_vi": "từ trước đến nay, luôn luôn",
+          "vocab_id": 60,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41012_L_02",
+      "exam_id": "H41012",
+      "question_number": 2,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "睡太久对身体不好。",
+        "pinyin": "shuì tài jiǔ duì shēn tǐ bù hǎo 。",
+        "vi": "Ngủ quá nhiều không tốt cho sức khỏe."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Ngủ quá nhiều không tốt cho sức khỏe.'.",
+      "evidence": {
+        "zh": "很多人一到周末就喜欢睡懒觉，而且一睡就是大半天。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41012.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 136000,
+          "end_ms": 179430
+        },
+        "statement": {
+          "start_ms": 189500,
+          "end_ms": 192989
+        },
+        "full_question": {
+          "start_ms": 136000,
+          "end_ms": 192989
+        }
+      },
+      "transcript": {
+        "full_zh": "很多人一到周末就喜欢睡懒觉，而且一睡就是大半天。医生提醒我们，睡觉时间太长并不好，有时甚至会引起头疼，一般睡够八小时就可以了。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41012_L_02_S1",
+            "index": 0,
+            "zh": "很多人一到周末就喜欢睡懒觉，而且一睡就是大半天。",
+            "pinyin": "hěn duō rén yī dào zhōu mò jiù xǐ huān shuì lǎn jiào ， ér qiě yī shuì jiù shì dà bàn tiān 。",
+            "vi": "",
+            "start_ms": 136000,
+            "end_ms": 152544
+          },
+          {
+            "id": "H41012_L_02_S2",
+            "index": 1,
+            "zh": "医生提醒我们，睡觉时间太长并不好，有时甚至会引起头疼，一般睡够八小时就可以了。",
+            "pinyin": "yī shēng tí xǐng wǒ men ， shuì jiào shí jiān tài zhǎng bìng bù hǎo ， yǒu shí shèn zhì huì yǐn qǐ tóu téng ， yì bān shuì gòu bā xiǎo shí jiù kě yǐ le 。",
+            "vi": "",
+            "start_ms": 152544,
+            "end_ms": 179429
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "睡觉",
+          "pinyin": "shuìjiào",
+          "meaning_vi": "ngủ",
+          "vocab_id": 100,
+          "level": "HSK1"
+        },
+        {
+          "word": "我们",
+          "pinyin": "wǒmen",
+          "meaning_vi": "chúng tôi, chúng ta",
+          "vocab_id": 112,
+          "level": "HSK1"
+        },
+        {
+          "word": "喜欢",
+          "pinyin": "xǐhuan",
+          "meaning_vi": "thích",
+          "vocab_id": 114,
+          "level": "HSK1"
+        },
+        {
+          "word": "医生",
+          "pinyin": "yīshēng",
+          "meaning_vi": "bác sĩ",
+          "vocab_id": 132,
+          "level": "HSK1"
+        },
+        {
+          "word": "可以",
+          "pinyin": "kěyǐ",
+          "meaning_vi": "có thể, được",
+          "vocab_id": 57,
+          "level": "HSK2"
+        },
+        {
+          "word": "身体",
+          "pinyin": "shēntǐ",
+          "meaning_vi": "cơ thể, sức khỏe",
+          "vocab_id": 91,
+          "level": "HSK2"
+        },
+        {
+          "word": "时间",
+          "pinyin": "shíjiān",
+          "meaning_vi": "thời gian",
+          "vocab_id": 94,
+          "level": "HSK2"
+        },
+        {
+          "word": "小时",
+          "pinyin": "xiǎoshí",
+          "meaning_vi": "giờ (đơn vị thời gian)",
+          "vocab_id": 116,
+          "level": "HSK2"
+        }
+      ]
+    },
+    {
+      "id": "H41012_L_03",
+      "exam_id": "H41012",
+      "question_number": 3,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他希望大家能提些意见。",
+        "pinyin": "tā xī wàng dà jiā néng tí xiē yì jiàn 。",
+        "vi": "Anh ấy hy vọng mọi người có thể đóng góp một vài ý kiến."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Anh ấy hy vọng mọi người có thể đóng góp một vài ý kiến.'.",
+      "evidence": {
+        "zh": "希望通过这次交流会，大家能给我们的工作提一些意见或者建议，无论是哪方面的，我们都会认真考虑。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41012.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 162000,
+          "end_ms": 217989
+        },
+        "statement": {
+          "start_ms": 218000,
+          "end_ms": 221989
+        },
+        "full_question": {
+          "start_ms": 162000,
+          "end_ms": 221989
+        }
+      },
+      "transcript": {
+        "full_zh": "希望通过这次交流会，大家能给我们的工作提一些意见或者建议，无论是哪方面的，我们都会认真考虑。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41012_L_03_S1",
+            "index": 0,
+            "zh": "希望通过这次交流会，大家能给我们的工作提一些意见或者建议，无论是哪方面的，我们都会认真考虑。",
+            "pinyin": "xī wàng tōng guò zhè cì jiāo liú huì ， dà jiā néng gěi wǒ men de gōng zuò tí yī xiē yì jiàn huò zhě jiàn yì ， wú lùn shì nǎ fāng miàn de ， wǒ men dū huì rèn zhēn kǎo lǜ 。",
+            "vi": "",
+            "start_ms": 162000,
+            "end_ms": 217989
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "工作",
+          "pinyin": "gōngzuò",
+          "meaning_vi": "công việc, làm việc",
+          "vocab_id": 33,
+          "level": "HSK1"
+        },
+        {
+          "word": "我们",
+          "pinyin": "wǒmen",
+          "meaning_vi": "chúng tôi, chúng ta",
+          "vocab_id": 112,
+          "level": "HSK1"
+        },
+        {
+          "word": "大家",
+          "pinyin": "dàjiā",
+          "meaning_vi": "mọi người",
+          "vocab_id": 17,
+          "level": "HSK2"
+        },
+        {
+          "word": "希望",
+          "pinyin": "xīwàng",
+          "meaning_vi": "hy vọng",
+          "vocab_id": 113,
+          "level": "HSK2"
+        },
+        {
+          "word": "或者",
+          "pinyin": "huòzhě",
+          "meaning_vi": "hoặc là",
+          "vocab_id": 107,
+          "level": "HSK3"
+        },
+        {
+          "word": "认真",
+          "pinyin": "rènzhēn",
+          "meaning_vi": "nghiêm túc, chăm chỉ",
+          "vocab_id": 194,
+          "level": "HSK3"
+        },
+        {
+          "word": "方面",
+          "pinyin": "fāngmiàn",
+          "meaning_vi": "phương diện, mặt",
+          "vocab_id": 112,
+          "level": "HSK4"
+        },
+        {
+          "word": "建议",
+          "pinyin": "jiànyì",
+          "meaning_vi": "đề nghị, gợi ý",
+          "vocab_id": 206,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41012_L_04",
+      "exam_id": "H41012",
+      "question_number": 4,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "在入口处换礼物。",
+        "pinyin": "zài rù kǒu chù huàn lǐ wù 。",
+        "vi": "Đổi quà ở ngay cửa ra vào."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Đổi quà ở ngay cửa ra vào.'.",
+      "evidence": {
+        "zh": "购物满四百元的顾客可免费获得一份小礼物，请您在付款后，拿着购物小票到一楼出口处换取。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41012.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 193000,
+          "end_ms": 245950
+        },
+        "statement": {
+          "start_ms": 246000,
+          "end_ms": 249989
+        },
+        "full_question": {
+          "start_ms": 193000,
+          "end_ms": 249989
+        }
+      },
+      "transcript": {
+        "full_zh": "购物满四百元的顾客可免费获得一份小礼物，请您在付款后，拿着购物小票到一楼出口处换取。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41012_L_04_S1",
+            "index": 0,
+            "zh": "购物满四百元的顾客可免费获得一份小礼物，请您在付款后，拿着购物小票到一楼出口处换取。",
+            "pinyin": "gòu wù mǎn sì bǎi yuán de gù kè kě miǎn fèi huò dé yī fèn xiǎo lǐ wù ， qǐng nín zài fù kuǎn hòu ， ná zhe gòu wù xiǎo piào dào yī lóu chū kǒu chù huàn qǔ 。",
+            "vi": "",
+            "start_ms": 193000,
+            "end_ms": 245950
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "礼物",
+          "pinyin": "lǐwù",
+          "meaning_vi": "quà tặng",
+          "vocab_id": 148,
+          "level": "HSK3"
+        },
+        {
+          "word": "付款",
+          "pinyin": "fùkuǎn",
+          "meaning_vi": "trả tiền",
+          "vocab_id": 123,
+          "level": "HSK4"
+        },
+        {
+          "word": "购物",
+          "pinyin": "gòuwù",
+          "meaning_vi": "mua sắm",
+          "vocab_id": 146,
+          "level": "HSK4"
+        },
+        {
+          "word": "顾客",
+          "pinyin": "gùkè",
+          "meaning_vi": "khách hàng",
+          "vocab_id": 149,
+          "level": "HSK4"
+        },
+        {
+          "word": "获得",
+          "pinyin": "huòdé",
+          "meaning_vi": "đạt được, giành được",
+          "vocab_id": 185,
+          "level": "HSK4"
+        },
+        {
+          "word": "免费",
+          "pinyin": "miǎnfèi",
+          "meaning_vi": "miễn phí",
+          "vocab_id": 306,
+          "level": "HSK4"
+        },
+        {
+          "word": "入口",
+          "pinyin": "rùkǒu",
+          "meaning_vi": "lối vào",
+          "vocab_id": 363,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41012_L_05",
+      "exam_id": "H41012",
+      "question_number": 5,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他认为输赢并不重要。",
+        "pinyin": "tā rèn wéi shū yíng bìng bú zhòng yào 。",
+        "vi": "Anh ấy cho rằng thắng thua vốn không quan trọng."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Anh ấy cho rằng thắng thua vốn không quan trọng.'.",
+      "evidence": {
+        "zh": "在我看来，比赛输赢并不是最重要的，在与他人竞争的过程中使自己获得提高，才是参赛的最终目的。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41012.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 216100,
+          "end_ms": 272990
+        },
+        "statement": {
+          "start_ms": 273000,
+          "end_ms": 276980
+        },
+        "full_question": {
+          "start_ms": 216100,
+          "end_ms": 276980
+        }
+      },
+      "transcript": {
+        "full_zh": "在我看来，比赛输赢并不是最重要的，在与他人竞争的过程中使自己获得提高，才是参赛的最终目的。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41012_L_05_S1",
+            "index": 0,
+            "zh": "在我看来，比赛输赢并不是最重要的，在与他人竞争的过程中使自己获得提高，才是参赛的最终目的。",
+            "pinyin": "zài wǒ kàn lái ， bǐ sài shū yíng bìng bú shì zuì zhòng yào de ， zài yǔ tā rén jìng zhēng de guò chéng zhōng shǐ zì jǐ huò dé tí gāo ， cái shì cān sài de zuì zhōng mù dì 。",
+            "vi": "",
+            "start_ms": 216100,
+            "end_ms": 272990
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "比赛",
+          "pinyin": "bǐsài",
+          "meaning_vi": "cuộc thi đấu",
+          "vocab_id": 19,
+          "level": "HSK3"
+        },
+        {
+          "word": "认为",
+          "pinyin": "rènwéi",
+          "meaning_vi": "cho rằng, nghĩ rằng",
+          "vocab_id": 193,
+          "level": "HSK3"
+        },
+        {
+          "word": "提高",
+          "pinyin": "tígāo",
+          "meaning_vi": "nâng cao",
+          "vocab_id": 215,
+          "level": "HSK3"
+        },
+        {
+          "word": "重要",
+          "pinyin": "zhòngyào",
+          "meaning_vi": "quan trọng",
+          "vocab_id": 290,
+          "level": "HSK3"
+        },
+        {
+          "word": "自己",
+          "pinyin": "zìjǐ",
+          "meaning_vi": "tự mình, bản thân",
+          "vocab_id": 294,
+          "level": "HSK3"
+        },
+        {
+          "word": "过程",
+          "pinyin": "guòchéng",
+          "meaning_vi": "quá trình",
+          "vocab_id": 163,
+          "level": "HSK4"
+        },
+        {
+          "word": "获得",
+          "pinyin": "huòdé",
+          "meaning_vi": "đạt được, giành được",
+          "vocab_id": 185,
+          "level": "HSK4"
+        },
+        {
+          "word": "竞争",
+          "pinyin": "jìngzhēng",
+          "meaning_vi": "cạnh tranh",
+          "vocab_id": 237,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41012_L_06",
+      "exam_id": "H41012",
+      "question_number": 6,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "这节课讲气候变化。",
+        "pinyin": "zhè jié kè jiǎng qì hòu biàn huà 。",
+        "vi": "Tiết học này giảng về biến đổi khí hậu."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Tiết học này giảng về biến đổi khí hậu.'.",
+      "evidence": {
+        "zh": "同学们，今天我们要学习关于太阳的知识。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41012.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 250000,
+          "end_ms": 300990
+        },
+        "statement": {
+          "start_ms": 301000,
+          "end_ms": 304990
+        },
+        "full_question": {
+          "start_ms": 250000,
+          "end_ms": 304990
+        }
+      },
+      "transcript": {
+        "full_zh": "同学们，今天我们要学习关于太阳的知识。太阳距离地球有多远？太阳的温度究竟有多高？学完这节课大家就会知道答案了。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41012_L_06_S1",
+            "index": 0,
+            "zh": "同学们，今天我们要学习关于太阳的知识。",
+            "pinyin": "tóng xué men ， jīn tiān wǒ men yào xué xí guān yú tài yáng de zhī shí 。",
+            "vi": "",
+            "start_ms": 250000,
+            "end_ms": 267614
+          },
+          {
+            "id": "H41012_L_06_S2",
+            "index": 1,
+            "zh": "太阳距离地球有多远？",
+            "pinyin": "tài yáng jù lí dì qiú yǒu duō yuǎn ？",
+            "vi": "",
+            "start_ms": 267614,
+            "end_ms": 276884
+          },
+          {
+            "id": "H41012_L_06_S3",
+            "index": 2,
+            "zh": "太阳的温度究竟有多高？",
+            "pinyin": "tài yáng de wēn dù jiū jìng yǒu duō gāo ？",
+            "vi": "",
+            "start_ms": 276884,
+            "end_ms": 287082
+          },
+          {
+            "id": "H41012_L_06_S4",
+            "index": 3,
+            "zh": "学完这节课大家就会知道答案了。",
+            "pinyin": "xué wán zhè jié kè dà jiā jiù huì zhī dào dá àn le 。",
+            "vi": "",
+            "start_ms": 287082,
+            "end_ms": 300988
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "今天",
+          "pinyin": "jīntiān",
+          "meaning_vi": "hôm nay",
+          "vocab_id": 47,
+          "level": "HSK1"
+        },
+        {
+          "word": "同学",
+          "pinyin": "tóngxué",
+          "meaning_vi": "bạn học",
+          "vocab_id": 109,
+          "level": "HSK1"
+        },
+        {
+          "word": "我们",
+          "pinyin": "wǒmen",
+          "meaning_vi": "chúng tôi, chúng ta",
+          "vocab_id": 112,
+          "level": "HSK1"
+        },
+        {
+          "word": "学习",
+          "pinyin": "xuéxí",
+          "meaning_vi": "học tập",
+          "vocab_id": 128,
+          "level": "HSK1"
+        },
+        {
+          "word": "大家",
+          "pinyin": "dàjiā",
+          "meaning_vi": "mọi người",
+          "vocab_id": 17,
+          "level": "HSK2"
+        },
+        {
+          "word": "知道",
+          "pinyin": "zhīdào",
+          "meaning_vi": "biết",
+          "vocab_id": 146,
+          "level": "HSK2"
+        },
+        {
+          "word": "变化",
+          "pinyin": "biànhuà",
+          "meaning_vi": "sự thay đổi",
+          "vocab_id": 22,
+          "level": "HSK3"
+        },
+        {
+          "word": "关于",
+          "pinyin": "guānyú",
+          "meaning_vi": "về, liên quan đến",
+          "vocab_id": 87,
+          "level": "HSK3"
+        }
+      ]
+    },
+    {
+      "id": "H41012_L_07",
+      "exam_id": "H41012",
+      "question_number": 7,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "舞会将在这个礼拜天举行。",
+        "pinyin": "wǔ huì jiāng zài zhè ge lǐ bài tiān jǔ xíng 。",
+        "vi": "Buổi khiêu vũ sẽ được tổ chức vào Chủ Nhật tuần này."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Buổi khiêu vũ sẽ được tổ chức vào Chủ Nhật tuần này.'.",
+      "evidence": {
+        "zh": "黄律师，下周六晚上我们公司要举办一场舞会，我们经理想邀请您和您妻子参加，您那时候有时间吗？",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41012.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 277000,
+          "end_ms": 329990
+        },
+        "statement": {
+          "start_ms": 330000,
+          "end_ms": 333990
+        },
+        "full_question": {
+          "start_ms": 277000,
+          "end_ms": 333990
+        }
+      },
+      "transcript": {
+        "full_zh": "黄律师，下周六晚上我们公司要举办一场舞会，我们经理想邀请您和您妻子参加，您那时候有时间吗？",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41012_L_07_S1",
+            "index": 0,
+            "zh": "黄律师，下周六晚上我们公司要举办一场舞会，我们经理想邀请您和您妻子参加，您那时候有时间吗？",
+            "pinyin": "huáng lǜ shī ， xià zhōu liù wǎn shàng wǒ men gōng sī yào jǔ bàn yī cháng wǔ huì ， wǒ men jīng lǐ xiǎng yāo qǐng nín hé nín qī zǐ cān jiā ， nín nà shí hòu yǒu shí jiān ma ？",
+            "vi": "",
+            "start_ms": 277000,
+            "end_ms": 329990
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "礼拜天",
+          "pinyin": "lǐbàitiān",
+          "meaning_vi": "ngày chủ nhật",
+          "vocab_id": 281,
+          "level": "HSK4"
+        },
+        {
+          "word": "时候",
+          "pinyin": "shíhou",
+          "meaning_vi": "lúc, thời điểm",
+          "vocab_id": 95,
+          "level": "HSK1"
+        },
+        {
+          "word": "我们",
+          "pinyin": "wǒmen",
+          "meaning_vi": "chúng tôi, chúng ta",
+          "vocab_id": 112,
+          "level": "HSK1"
+        },
+        {
+          "word": "公司",
+          "pinyin": "gōngsī",
+          "meaning_vi": "công ty",
+          "vocab_id": 34,
+          "level": "HSK2"
+        },
+        {
+          "word": "妻子",
+          "pinyin": "qīzi",
+          "meaning_vi": "vợ",
+          "vocab_id": 82,
+          "level": "HSK2"
+        },
+        {
+          "word": "时间",
+          "pinyin": "shíjiān",
+          "meaning_vi": "thời gian",
+          "vocab_id": 94,
+          "level": "HSK2"
+        },
+        {
+          "word": "晚上",
+          "pinyin": "wǎnshang",
+          "meaning_vi": "buổi tối",
+          "vocab_id": 108,
+          "level": "HSK2"
+        },
+        {
+          "word": "参加",
+          "pinyin": "cānjiā",
+          "meaning_vi": "tham gia",
+          "vocab_id": 26,
+          "level": "HSK3"
+        }
+      ]
+    },
+    {
+      "id": "H41012_L_08",
+      "exam_id": "H41012",
+      "question_number": 8,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "那种镜子比较轻。",
+        "pinyin": "nà zhǒng jìng zi bǐ jiào qīng 。",
+        "vi": "Loại gương đó tương đối nhẹ."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Loại gương đó tương đối nhẹ.'.",
+      "evidence": {
+        "zh": "这种小镜子非常适合你们年轻女孩子用，样子好看又不重，放在包里十分方便。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41012.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 305000,
+          "end_ms": 359990
+        },
+        "statement": {
+          "start_ms": 360000,
+          "end_ms": 363990
+        },
+        "full_question": {
+          "start_ms": 305000,
+          "end_ms": 363990
+        }
+      },
+      "transcript": {
+        "full_zh": "这种小镜子非常适合你们年轻女孩子用，样子好看又不重，放在包里十分方便。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41012_L_08_S1",
+            "index": 0,
+            "zh": "这种小镜子非常适合你们年轻女孩子用，样子好看又不重，放在包里十分方便。",
+            "pinyin": "zhè zhǒng xiǎo jìng zi fēi cháng shì hé nǐ men nián qīng nǚ hái zi yòng ， yàng zi hǎo kàn yòu bù zhòng ， fàng zài bāo lǐ shí fēn fāng biàn 。",
+            "vi": "",
+            "start_ms": 305000,
+            "end_ms": 359990
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "非常",
+          "pinyin": "fēicháng",
+          "meaning_vi": "rất, vô cùng",
+          "vocab_id": 27,
+          "level": "HSK2"
+        },
+        {
+          "word": "孩子",
+          "pinyin": "háizi",
+          "meaning_vi": "đứa trẻ",
+          "vocab_id": 37,
+          "level": "HSK2"
+        },
+        {
+          "word": "比较",
+          "pinyin": "bǐjiào",
+          "meaning_vi": "tương đối, so sánh",
+          "vocab_id": 18,
+          "level": "HSK3"
+        },
+        {
+          "word": "方便",
+          "pinyin": "fāngbiàn",
+          "meaning_vi": "thuận tiện",
+          "vocab_id": 66,
+          "level": "HSK3"
+        },
+        {
+          "word": "年轻",
+          "pinyin": "niánqīng",
+          "meaning_vi": "trẻ tuổi",
+          "vocab_id": 172,
+          "level": "HSK3"
+        },
+        {
+          "word": "镜子",
+          "pinyin": "jìngzi",
+          "meaning_vi": "cái gương",
+          "vocab_id": 238,
+          "level": "HSK4"
+        },
+        {
+          "word": "十分",
+          "pinyin": "shífēn",
+          "meaning_vi": "rất, mười phần",
+          "vocab_id": 383,
+          "level": "HSK4"
+        },
+        {
+          "word": "适合",
+          "pinyin": "shìhé",
+          "meaning_vi": "phù hợp",
+          "vocab_id": 389,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41012_L_09",
+      "exam_id": "H41012",
+      "question_number": 9,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "九江市历史很短。",
+        "pinyin": "jiǔ jiāng shì lì shǐ hěn duǎn 。",
+        "vi": "Thành phố Cửu Giang có lịch sử rất ngắn."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Thành phố Cửu Giang có lịch sử rất ngắn.'.",
+      "evidence": {
+        "zh": "九江市在长江的南边，是江西省第二大城市。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41012.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 334000,
+          "end_ms": 386940
+        },
+        "statement": {
+          "start_ms": 387250,
+          "end_ms": 390990
+        },
+        "full_question": {
+          "start_ms": 334000,
+          "end_ms": 390990
+        }
+      },
+      "transcript": {
+        "full_zh": "九江市在长江的南边，是江西省第二大城市。它有两千二百多年的历史，既是一座文化名城，也是著名的旅游城市。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41012_L_09_S1",
+            "index": 0,
+            "zh": "九江市在长江的南边，是江西省第二大城市。",
+            "pinyin": "jiǔ jiāng shì zài cháng jiāng de nán biān ， shì jiāng xī shěng dì èr dà chéng shì 。",
+            "vi": "",
+            "start_ms": 334000,
+            "end_ms": 354760
+          },
+          {
+            "id": "H41012_L_09_S2",
+            "index": 1,
+            "zh": "它有两千二百多年的历史，既是一座文化名城，也是著名的旅游城市。",
+            "pinyin": "tā yǒu liǎng qiān èr bǎi duō nián de lì shǐ ， jì shì yī zuò wén huà míng chéng ， yě shì zhù míng de lǚ yóu chéng shì 。",
+            "vi": "",
+            "start_ms": 354760,
+            "end_ms": 386939
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "旅游",
+          "pinyin": "lǜyóu",
+          "meaning_vi": "du lịch",
+          "vocab_id": 66,
+          "level": "HSK2"
+        },
+        {
+          "word": "城市",
+          "pinyin": "chéngshì",
+          "meaning_vi": "thành phố",
+          "vocab_id": 33,
+          "level": "HSK3"
+        },
+        {
+          "word": "历史",
+          "pinyin": "lìshǐ",
+          "meaning_vi": "lịch sử",
+          "vocab_id": 149,
+          "level": "HSK3"
+        },
+        {
+          "word": "文化",
+          "pinyin": "wénhuà",
+          "meaning_vi": "văn hóa",
+          "vocab_id": 232,
+          "level": "HSK3"
+        },
+        {
+          "word": "长江",
+          "pinyin": "chángjiāng",
+          "meaning_vi": "sông Trường Giang",
+          "vocab_id": 41,
+          "level": "HSK4"
+        },
+        {
+          "word": "著名",
+          "pinyin": "zhùmíng",
+          "meaning_vi": "nổi tiếng",
+          "vocab_id": 581,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41012_L_10",
+      "exam_id": "H41012",
+      "question_number": 10,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "有误会要及时解释清楚。",
+        "pinyin": "yǒu wù huì yào jí shí jiě shì qīng chǔ 。",
+        "vi": "Khi có hiểu lầm thì cần phải giải thích rõ ràng kịp thời."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Khi có hiểu lầm thì cần phải giải thích rõ ràng kịp thời.'.",
+      "evidence": {
+        "zh": "两个人之间有了误会一定要及时解释清楚，否则时间一长误会就会更深，到那时再去解决恐怕就不容易了。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41012.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 364000,
+          "end_ms": 415840
+        },
+        "statement": {
+          "start_ms": 416440,
+          "end_ms": 419990
+        },
+        "full_question": {
+          "start_ms": 364000,
+          "end_ms": 419990
+        }
+      },
+      "transcript": {
+        "full_zh": "两个人之间有了误会一定要及时解释清楚，否则时间一长误会就会更深，到那时再去解决恐怕就不容易了。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41012_L_10_S1",
+            "index": 0,
+            "zh": "两个人之间有了误会一定要及时解释清楚，否则时间一长误会就会更深，到那时再去解决恐怕就不容易了。",
+            "pinyin": "liǎng gè rén zhī jiān yǒu le wù huì yí dìng yào jí shí jiě shì qīng chǔ ， fǒu zé shí jiān yī zhǎng wù huì jiù huì gēng shēn ， dào nà shí zài qù jiě jué kǒng pà jiù bù róng yì le 。",
+            "vi": "",
+            "start_ms": 364000,
+            "end_ms": 415840
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "时间",
+          "pinyin": "shíjiān",
+          "meaning_vi": "thời gian",
+          "vocab_id": 94,
+          "level": "HSK2"
+        },
+        {
+          "word": "解决",
+          "pinyin": "jiějué",
+          "meaning_vi": "giải quyết",
+          "vocab_id": 127,
+          "level": "HSK3"
+        },
+        {
+          "word": "清楚",
+          "pinyin": "qīngchu",
+          "meaning_vi": "rõ ràng",
+          "vocab_id": 187,
+          "level": "HSK3"
+        },
+        {
+          "word": "容易",
+          "pinyin": "róngyì",
+          "meaning_vi": "dễ dàng",
+          "vocab_id": 195,
+          "level": "HSK3"
+        },
+        {
+          "word": "一定",
+          "pinyin": "yídìng",
+          "meaning_vi": "nhất định",
+          "vocab_id": 254,
+          "level": "HSK3"
+        },
+        {
+          "word": "否则",
+          "pinyin": "fǒuzé",
+          "meaning_vi": "nếu không thì",
+          "vocab_id": 120,
+          "level": "HSK4"
+        },
+        {
+          "word": "及时",
+          "pinyin": "jíshí",
+          "meaning_vi": "kịp thời",
+          "vocab_id": 190,
+          "level": "HSK4"
+        },
+        {
+          "word": "解释",
+          "pinyin": "jiěshì",
+          "meaning_vi": "giải thích",
+          "vocab_id": 224,
+          "level": "HSK4"
+        }
+      ]
+    }
+  ]
+}

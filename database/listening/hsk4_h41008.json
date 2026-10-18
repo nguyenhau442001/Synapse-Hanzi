@@ -1,0 +1,1119 @@
+{
+  "exam_id": "H41008",
+  "level": "HSK4",
+  "title": "HSK 4 - Đề thi mẫu H41008 - Phần Nghe (Listening)",
+  "total_questions": 10,
+  "audio_src": "assets/audio/exams/H41008.mp3",
+  "questions": [
+    {
+      "id": "H41008_L_01",
+      "exam_id": "H41008",
+      "question_number": 1,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他反对把任务交给小高。",
+        "pinyin": "tā fǎn duì bǎ rèn wù jiāo gěi xiǎo gāo 。",
+        "vi": "Anh ấy phản đối việc giao nhiệm vụ cho Tiểu Cao."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Anh ấy phản đối việc giao nhiệm vụ cho Tiểu Cao.'.",
+      "evidence": {
+        "zh": "只要你打开电视 总能看到那么多的广告浪费我的时间现在开始第一题一 虽然小高平时爱开玩笑但他做起事来还是很认真的把这个任务交给他 他一定能够做好他反对 把任务交给小高二 二字 你看 地图上不同的颜色",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41008.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 103280,
+          "end_ms": 159989
+        },
+        "statement": {
+          "start_ms": 160000,
+          "end_ms": 163980
+        },
+        "full_question": {
+          "start_ms": 103280,
+          "end_ms": 163980
+        }
+      },
+      "transcript": {
+        "full_zh": "只要你打开电视 总能看到那么多的广告浪费我的时间现在开始第一题一 虽然小高平时爱开玩笑但他做起事来还是很认真的把这个任务交给他 他一定能够做好他反对 把任务交给小高二 二字 你看 地图上不同的颜色",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41008_L_01_S1",
+            "index": 0,
+            "zh": "只要你打开电视 总能看到那么多的广告浪费我的时间现在开始第一题一 虽然小高平时爱开玩笑但他做起事来还是很认真的把这个任务交给他 他一定能够做好他反对 把任务交给小高二 二字 你看 地图上不同的颜色",
+            "pinyin": "zhǐ yào nǐ dǎ kāi diàn shì   zǒng néng kàn dào nà me duō de guǎng gào làng fèi wǒ de shí jiān xiàn zài kāi shǐ dì yī tí yī   suī rán xiǎo gāo píng shí ài kāi wán xiào dàn tā zuò qǐ shì lái hái shì hěn rèn zhēn de bǎ zhè ge rèn wù jiāo gěi tā   tā yí dìng néng gòu zuò hǎo tā fǎn duì   bǎ rèn wù jiāo gěi xiǎo gāo èr   èr zì   nǐ kàn   dì tú shàng bù tóng de yán sè",
+            "vi": "",
+            "start_ms": 103280,
+            "end_ms": 159989
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "开玩笑",
+          "pinyin": "kāiwánxiào",
+          "meaning_vi": "đùa cợt, nói đùa",
+          "vocab_id": 246,
+          "level": "HSK4"
+        },
+        {
+          "word": "电视",
+          "pinyin": "diànshì",
+          "meaning_vi": "tivi",
+          "vocab_id": 18,
+          "level": "HSK1"
+        },
+        {
+          "word": "现在",
+          "pinyin": "xiànzài",
+          "meaning_vi": "hiện tại, bây giờ",
+          "vocab_id": 119,
+          "level": "HSK1"
+        },
+        {
+          "word": "第一",
+          "pinyin": "dìyī",
+          "meaning_vi": "thứ nhất",
+          "vocab_id": 22,
+          "level": "HSK2"
+        },
+        {
+          "word": "开始",
+          "pinyin": "kāishǐ",
+          "meaning_vi": "bắt đầu",
+          "vocab_id": 54,
+          "level": "HSK2"
+        },
+        {
+          "word": "时间",
+          "pinyin": "shíjiān",
+          "meaning_vi": "thời gian",
+          "vocab_id": 94,
+          "level": "HSK2"
+        },
+        {
+          "word": "颜色",
+          "pinyin": "yánsè",
+          "meaning_vi": "màu sắc",
+          "vocab_id": 122,
+          "level": "HSK2"
+        },
+        {
+          "word": "地图",
+          "pinyin": "dìtú",
+          "meaning_vi": "bản đồ",
+          "vocab_id": 50,
+          "level": "HSK3"
+        }
+      ]
+    },
+    {
+      "id": "H41008_L_02",
+      "exam_id": "H41008",
+      "question_number": 2,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "地图上蓝色表示海洋。",
+        "pinyin": "dì tú shàng lán sè biǎo shì hǎi yáng 。",
+        "vi": "Màu xanh lam trên bản đồ biểu thị đại dương."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Màu xanh lam trên bản đồ biểu thị đại dương.'.",
+      "evidence": {
+        "zh": "但他做起事来还是很认真的把这个任务交给他 他一定能够做好他反对 把任务交给小高二 二字 你看 地图上不同的颜色表示不同的地方綠色的是森林 蓝色的是海洋这是黄河他向不向一个大大的几字地图上蓝色表示海洋",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41008.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 134000,
+          "end_ms": 187530
+        },
+        "statement": {
+          "start_ms": 188740,
+          "end_ms": 191989
+        },
+        "full_question": {
+          "start_ms": 134000,
+          "end_ms": 191989
+        }
+      },
+      "transcript": {
+        "full_zh": "但他做起事来还是很认真的把这个任务交给他 他一定能够做好他反对 把任务交给小高二 二字 你看 地图上不同的颜色表示不同的地方綠色的是森林 蓝色的是海洋这是黄河他向不向一个大大的几字地图上蓝色表示海洋",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41008_L_02_S1",
+            "index": 0,
+            "zh": "但他做起事来还是很认真的把这个任务交给他 他一定能够做好他反对 把任务交给小高二 二字 你看 地图上不同的颜色表示不同的地方綠色的是森林 蓝色的是海洋这是黄河他向不向一个大大的几字地图上蓝色表示海洋",
+            "pinyin": "dàn tā zuò qǐ shì lái hái shì hěn rèn zhēn de bǎ zhè ge rèn wù jiāo gěi tā   tā yí dìng néng gòu zuò hǎo tā fǎn duì   bǎ rèn wù jiāo gěi xiǎo gāo èr   èr zì   nǐ kàn   dì tú shàng bù tóng de yán sè biǎo shì bù tóng de dì fāng lǜ sè de shì sēn lín   lán sè de shì hǎi yáng zhè shì huáng hé tā xiàng bù xiàng yí gè dà dà de jǐ zì dì tú shàng lán sè biǎo shì hǎi yáng",
+            "vi": "",
+            "start_ms": 134000,
+            "end_ms": 187530
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "颜色",
+          "pinyin": "yánsè",
+          "meaning_vi": "màu sắc",
+          "vocab_id": 122,
+          "level": "HSK2"
+        },
+        {
+          "word": "地方",
+          "pinyin": "dìfang",
+          "meaning_vi": "nơi, địa phương",
+          "vocab_id": 48,
+          "level": "HSK3"
+        },
+        {
+          "word": "地图",
+          "pinyin": "dìtú",
+          "meaning_vi": "bản đồ",
+          "vocab_id": 50,
+          "level": "HSK3"
+        },
+        {
+          "word": "还是",
+          "pinyin": "háishì",
+          "meaning_vi": "hay là, vẫn là",
+          "vocab_id": 91,
+          "level": "HSK3"
+        },
+        {
+          "word": "黄河",
+          "pinyin": "huánghé",
+          "meaning_vi": "sông Hoàng Hà",
+          "vocab_id": 104,
+          "level": "HSK3"
+        },
+        {
+          "word": "认真",
+          "pinyin": "rènzhēn",
+          "meaning_vi": "nghiêm túc, chăm chỉ",
+          "vocab_id": 194,
+          "level": "HSK3"
+        },
+        {
+          "word": "一定",
+          "pinyin": "yídìng",
+          "meaning_vi": "nhất định",
+          "vocab_id": 254,
+          "level": "HSK3"
+        },
+        {
+          "word": "表示",
+          "pinyin": "biǎoshì",
+          "meaning_vi": "biểu thị, thể hiện",
+          "vocab_id": 22,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41008_L_03",
+      "exam_id": "H41008",
+      "question_number": 3,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他对那条裙子很满意。",
+        "pinyin": "tā duì nà tiáo qún zi hěn mǎn yì 。",
+        "vi": "Cô ấy rất hài lòng với chiếc váy đó."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Cô ấy rất hài lòng với chiếc váy đó.'.",
+      "evidence": {
+        "zh": "綠色的是森林 蓝色的是海洋这是黄河他向不向一个大大的几字地图上蓝色表示海洋三 我觉得这条裙子很适合女儿现在穿肯定特别凉快正好又打折 咱们就买这条吧他对那条裙子很满意四 尽管很辛苦但他还是坚持每天做运动",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41008.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 164130,
+          "end_ms": 218930
+        },
+        "statement": {
+          "start_ms": 219010,
+          "end_ms": 222989
+        },
+        "full_question": {
+          "start_ms": 164130,
+          "end_ms": 222989
+        }
+      },
+      "transcript": {
+        "full_zh": "綠色的是森林 蓝色的是海洋这是黄河他向不向一个大大的几字地图上蓝色表示海洋三 我觉得这条裙子很适合女儿现在穿肯定特别凉快正好又打折 咱们就买这条吧他对那条裙子很满意四 尽管很辛苦但他还是坚持每天做运动",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41008_L_03_S1",
+            "index": 0,
+            "zh": "綠色的是森林 蓝色的是海洋这是黄河他向不向一个大大的几字地图上蓝色表示海洋三 我觉得这条裙子很适合女儿现在穿肯定特别凉快正好又打折 咱们就买这条吧他对那条裙子很满意四 尽管很辛苦但他还是坚持每天做运动",
+            "pinyin": "lǜ sè de shì sēn lín   lán sè de shì hǎi yáng zhè shì huáng hé tā xiàng bù xiàng yí gè dà dà de jǐ zì dì tú shàng lán sè biǎo shì hǎi yáng sān   wǒ jué de zhè tiáo qún zi hěn shì hé nǚ ér xiàn zài chuān kěn dìng tè bié liáng kuài zhèng hǎo yòu dǎ zhé   zán men jiù mǎi zhè tiáo ba tā duì nà tiáo qún zi hěn mǎn yì sì   jǐn guǎn hěn xīn kǔ dàn tā hái shì jiān chí měi tiān zuò yùn dòng",
+            "vi": "",
+            "start_ms": 164130,
+            "end_ms": 218930
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "女儿",
+          "pinyin": "nǚ'ér",
+          "meaning_vi": "con gái",
+          "vocab_id": 75,
+          "level": "HSK1"
+        },
+        {
+          "word": "现在",
+          "pinyin": "xiànzài",
+          "meaning_vi": "hiện tại, bây giờ",
+          "vocab_id": 119,
+          "level": "HSK1"
+        },
+        {
+          "word": "觉得",
+          "pinyin": "juéde",
+          "meaning_vi": "cảm thấy",
+          "vocab_id": 52,
+          "level": "HSK2"
+        },
+        {
+          "word": "运动",
+          "pinyin": "yùndòng",
+          "meaning_vi": "vận động, thể thao",
+          "vocab_id": 138,
+          "level": "HSK2"
+        },
+        {
+          "word": "地图",
+          "pinyin": "dìtú",
+          "meaning_vi": "bản đồ",
+          "vocab_id": 50,
+          "level": "HSK3"
+        },
+        {
+          "word": "还是",
+          "pinyin": "háishì",
+          "meaning_vi": "hay là, vẫn là",
+          "vocab_id": 91,
+          "level": "HSK3"
+        },
+        {
+          "word": "黄河",
+          "pinyin": "huánghé",
+          "meaning_vi": "sông Hoàng Hà",
+          "vocab_id": 104,
+          "level": "HSK3"
+        },
+        {
+          "word": "满意",
+          "pinyin": "mǎnyì",
+          "meaning_vi": "hài lòng",
+          "vocab_id": 161,
+          "level": "HSK3"
+        }
+      ]
+    },
+    {
+      "id": "H41008_L_04",
+      "exam_id": "H41008",
+      "question_number": 4,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他最近胖了。",
+        "pinyin": "tā zuì jìn pàng le 。",
+        "vi": "Gần đây anh ấy đã béo lên."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Gần đây anh ấy đã béo lên.'.",
+      "evidence": {
+        "zh": "现在穿肯定特别凉快正好又打折 咱们就买这条吧他对那条裙子很满意四 尽管很辛苦但他还是坚持每天做运动几个月下来 减肥的效果很不错他最近碰了五您放心 只要是在我店购买的家具无论架钱多少无论您家里这儿多元",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41008.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 192000,
+          "end_ms": 245989
+        },
+        "statement": {
+          "start_ms": 246000,
+          "end_ms": 249970
+        },
+        "full_question": {
+          "start_ms": 192000,
+          "end_ms": 249970
+        }
+      },
+      "transcript": {
+        "full_zh": "现在穿肯定特别凉快正好又打折 咱们就买这条吧他对那条裙子很满意四 尽管很辛苦但他还是坚持每天做运动几个月下来 减肥的效果很不错他最近碰了五您放心 只要是在我店购买的家具无论架钱多少无论您家里这儿多元",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41008_L_04_S1",
+            "index": 0,
+            "zh": "现在穿肯定特别凉快正好又打折 咱们就买这条吧他对那条裙子很满意四 尽管很辛苦但他还是坚持每天做运动几个月下来 减肥的效果很不错他最近碰了五您放心 只要是在我店购买的家具无论架钱多少无论您家里这儿多元",
+            "pinyin": "xiàn zài chuān kěn dìng tè bié liáng kuài zhèng hǎo yòu dǎ zhé   zán men jiù mǎi zhè tiáo ba tā duì nà tiáo qún zi hěn mǎn yì sì   jǐn guǎn hěn xīn kǔ dàn tā hái shì jiān chí měi tiān zuò yùn dòng jǐ gè yuè xià lái   jiǎn féi de xiào guǒ hěn bú cuò tā zuì jìn pèng le wǔ nín fàng xīn   zhǐ yào shì zài wǒ diàn gòu mǎi de jiā jù wú lùn jià qián duō shǎo wú lùn nín jiā lǐ zhè ér duō yuán",
+            "vi": "",
+            "start_ms": 192000,
+            "end_ms": 245989
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "多少",
+          "pinyin": "duōshao",
+          "meaning_vi": "bao nhiêu",
+          "vocab_id": 25,
+          "level": "HSK1"
+        },
+        {
+          "word": "现在",
+          "pinyin": "xiànzài",
+          "meaning_vi": "hiện tại, bây giờ",
+          "vocab_id": 119,
+          "level": "HSK1"
+        },
+        {
+          "word": "运动",
+          "pinyin": "yùndòng",
+          "meaning_vi": "vận động, thể thao",
+          "vocab_id": 138,
+          "level": "HSK2"
+        },
+        {
+          "word": "放心",
+          "pinyin": "fàngxīn",
+          "meaning_vi": "yên tâm",
+          "vocab_id": 68,
+          "level": "HSK3"
+        },
+        {
+          "word": "还是",
+          "pinyin": "háishì",
+          "meaning_vi": "hay là, vẫn là",
+          "vocab_id": 91,
+          "level": "HSK3"
+        },
+        {
+          "word": "满意",
+          "pinyin": "mǎnyì",
+          "meaning_vi": "hài lòng",
+          "vocab_id": 161,
+          "level": "HSK3"
+        },
+        {
+          "word": "裙子",
+          "pinyin": "qúnzi",
+          "meaning_vi": "cái váy",
+          "vocab_id": 190,
+          "level": "HSK3"
+        },
+        {
+          "word": "特别",
+          "pinyin": "tèbié",
+          "meaning_vi": "đặc biệt",
+          "vocab_id": 213,
+          "level": "HSK3"
+        }
+      ]
+    },
+    {
+      "id": "H41008_L_05",
+      "exam_id": "H41008",
+      "question_number": 5,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "那家店免费为顾客送家具。",
+        "pinyin": "nà jiā diàn miǎn fèi wèi gù kè sòng jiā jù 。",
+        "vi": "Cửa hàng đó miễn phí vận chuyển đồ nội thất cho khách hàng."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Cửa hàng đó miễn phí vận chuyển đồ nội thất cho khách hàng.'.",
+      "evidence": {
+        "zh": "几个月下来 减肥的效果很不错他最近碰了五您放心 只要是在我店购买的家具无论架钱多少无论您家里这儿多元我们都将为您提供免费送货上门服务那家店免费为顾客送家具六我住的地方 离地铁战 由点元走路至少要30分钟我早就想搬家了",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41008.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 219010,
+          "end_ms": 273990
+        },
+        "statement": {
+          "start_ms": 274000,
+          "end_ms": 277930
+        },
+        "full_question": {
+          "start_ms": 219010,
+          "end_ms": 277930
+        }
+      },
+      "transcript": {
+        "full_zh": "几个月下来 减肥的效果很不错他最近碰了五您放心 只要是在我店购买的家具无论架钱多少无论您家里这儿多元我们都将为您提供免费送货上门服务那家店免费为顾客送家具六我住的地方 离地铁战 由点元走路至少要30分钟我早就想搬家了",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41008_L_05_S1",
+            "index": 0,
+            "zh": "几个月下来 减肥的效果很不错他最近碰了五您放心 只要是在我店购买的家具无论架钱多少无论您家里这儿多元我们都将为您提供免费送货上门服务那家店免费为顾客送家具六我住的地方 离地铁战 由点元走路至少要30分钟我早就想搬家了",
+            "pinyin": "jǐ gè yuè xià lái   jiǎn féi de xiào guǒ hěn bú cuò tā zuì jìn pèng le wǔ nín fàng xīn   zhǐ yào shì zài wǒ diàn gòu mǎi de jiā jù wú lùn jià qián duō shǎo wú lùn nín jiā lǐ zhè ér duō yuán wǒ men dōu jiāng wèi nín tí gōng miǎn fèi sòng huò shàng mén fú wù nà jiā diàn miǎn fèi wèi gù kè sòng jiā jù liù wǒ zhù de dì fāng   lí dì tiě zhàn   yóu diǎn yuán zǒu lù zhì shǎo yào 30 fēn zhōng wǒ zǎo jiù xiǎng bān jiā le",
+            "vi": "",
+            "start_ms": 219010,
+            "end_ms": 273990
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "多少",
+          "pinyin": "duōshao",
+          "meaning_vi": "bao nhiêu",
+          "vocab_id": 25,
+          "level": "HSK1"
+        },
+        {
+          "word": "分钟",
+          "pinyin": "fēnzhōng",
+          "meaning_vi": "phút",
+          "vocab_id": 30,
+          "level": "HSK1"
+        },
+        {
+          "word": "我们",
+          "pinyin": "wǒmen",
+          "meaning_vi": "chúng tôi, chúng ta",
+          "vocab_id": 112,
+          "level": "HSK1"
+        },
+        {
+          "word": "地方",
+          "pinyin": "dìfang",
+          "meaning_vi": "nơi, địa phương",
+          "vocab_id": 48,
+          "level": "HSK3"
+        },
+        {
+          "word": "地铁",
+          "pinyin": "dìtiě",
+          "meaning_vi": "tàu điện ngầm",
+          "vocab_id": 49,
+          "level": "HSK3"
+        },
+        {
+          "word": "放心",
+          "pinyin": "fàngxīn",
+          "meaning_vi": "yên tâm",
+          "vocab_id": 68,
+          "level": "HSK3"
+        },
+        {
+          "word": "最近",
+          "pinyin": "zuìjìn",
+          "meaning_vi": "gần đây",
+          "vocab_id": 299,
+          "level": "HSK3"
+        },
+        {
+          "word": "顾客",
+          "pinyin": "gùkè",
+          "meaning_vi": "khách hàng",
+          "vocab_id": 149,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41008_L_06",
+      "exam_id": "H41008",
+      "question_number": 6,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他租到了合适的房子。",
+        "pinyin": "tā zū dào le hé shì de fáng zi 。",
+        "vi": "Anh ấy đã thuê được một căn nhà phù hợp."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Anh ấy đã thuê được một căn nhà phù hợp.'.",
+      "evidence": {
+        "zh": "那家店免费为顾客送家具六我住的地方 离地铁战 由点元走路至少要30分钟我早就想搬家了但是一直没找到合适的房子所以暂时还得在这儿注意短时间他猪到了合适的房子保护环境可以从小事做起",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41008.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 250520,
+          "end_ms": 300990
+        },
+        "statement": {
+          "start_ms": 301000,
+          "end_ms": 304990
+        },
+        "full_question": {
+          "start_ms": 250520,
+          "end_ms": 304990
+        }
+      },
+      "transcript": {
+        "full_zh": "那家店免费为顾客送家具六我住的地方 离地铁战 由点元走路至少要30分钟我早就想搬家了但是一直没找到合适的房子所以暂时还得在这儿注意短时间他猪到了合适的房子保护环境可以从小事做起",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41008_L_06_S1",
+            "index": 0,
+            "zh": "那家店免费为顾客送家具六我住的地方 离地铁战 由点元走路至少要30分钟我早就想搬家了但是一直没找到合适的房子所以暂时还得在这儿注意短时间他猪到了合适的房子保护环境可以从小事做起",
+            "pinyin": "nà jiā diàn miǎn fèi wèi gù kè sòng jiā jù liù wǒ zhù de dì fāng   lí dì tiě zhàn   yóu diǎn yuán zǒu lù zhì shǎo yào 30 fēn zhōng wǒ zǎo jiù xiǎng bān jiā le dàn shì yì zhí méi zhǎo dào hé shì de fáng zi suǒ yǐ zàn shí hái dé zài zhè ér zhù yì duǎn shí jiān tā zhū dào le hé shì de fáng zi bǎo hù huán jìng kě yǐ cóng xiǎo shì zuò qǐ",
+            "vi": "",
+            "start_ms": 250520,
+            "end_ms": 300990
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "分钟",
+          "pinyin": "fēnzhōng",
+          "meaning_vi": "phút",
+          "vocab_id": 30,
+          "level": "HSK1"
+        },
+        {
+          "word": "可以",
+          "pinyin": "kěyǐ",
+          "meaning_vi": "có thể, được",
+          "vocab_id": 57,
+          "level": "HSK2"
+        },
+        {
+          "word": "时间",
+          "pinyin": "shíjiān",
+          "meaning_vi": "thời gian",
+          "vocab_id": 94,
+          "level": "HSK2"
+        },
+        {
+          "word": "地方",
+          "pinyin": "dìfang",
+          "meaning_vi": "nơi, địa phương",
+          "vocab_id": 48,
+          "level": "HSK3"
+        },
+        {
+          "word": "地铁",
+          "pinyin": "dìtiě",
+          "meaning_vi": "tàu điện ngầm",
+          "vocab_id": 49,
+          "level": "HSK3"
+        },
+        {
+          "word": "环境",
+          "pinyin": "huánjìng",
+          "meaning_vi": "môi trường",
+          "vocab_id": 102,
+          "level": "HSK3"
+        },
+        {
+          "word": "一直",
+          "pinyin": "yìzhí",
+          "meaning_vi": "luôn luôn, thẳng",
+          "vocab_id": 261,
+          "level": "HSK3"
+        },
+        {
+          "word": "注意",
+          "pinyin": "zhùyì",
+          "meaning_vi": "chú ý",
+          "vocab_id": 293,
+          "level": "HSK3"
+        }
+      ]
+    },
+    {
+      "id": "H41008_L_07",
+      "exam_id": "H41008",
+      "question_number": 7,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "环保要从身边小事做起。",
+        "pinyin": "huán bǎo yào cóng shēn biān xiǎo shì zuò qǐ 。",
+        "vi": "Bảo vệ môi trường cần bắt đầu từ những việc nhỏ xung quanh."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Bảo vệ môi trường cần bắt đầu từ những việc nhỏ xung quanh.'.",
+      "evidence": {
+        "zh": "所以暂时还得在这儿注意短时间他猪到了合适的房子保护环境可以从小事做起例如少用素料带 将拉机丢紧拉机统夏天把空调的温度开的高一些等等这些是我们每个人都能够做到的环保要从身边小事做起阿黄先生很抱歉我们办公室的传真机坏了",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41008.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 278120,
+          "end_ms": 330990
+        },
+        "statement": {
+          "start_ms": 331000,
+          "end_ms": 334940
+        },
+        "full_question": {
+          "start_ms": 278120,
+          "end_ms": 334940
+        }
+      },
+      "transcript": {
+        "full_zh": "所以暂时还得在这儿注意短时间他猪到了合适的房子保护环境可以从小事做起例如少用素料带 将拉机丢紧拉机统夏天把空调的温度开的高一些等等这些是我们每个人都能够做到的环保要从身边小事做起阿黄先生很抱歉我们办公室的传真机坏了",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41008_L_07_S1",
+            "index": 0,
+            "zh": "所以暂时还得在这儿注意短时间他猪到了合适的房子保护环境可以从小事做起例如少用素料带 将拉机丢紧拉机统夏天把空调的温度开的高一些等等这些是我们每个人都能够做到的环保要从身边小事做起阿黄先生很抱歉我们办公室的传真机坏了",
+            "pinyin": "suǒ yǐ zàn shí hái dé zài zhè ér zhù yì duǎn shí jiān tā zhū dào le hé shì de fáng zi bǎo hù huán jìng kě yǐ cóng xiǎo shì zuò qǐ lì rú shǎo yòng sù liào dài   jiāng lā jī diū jǐn lā jī tǒng xià tiān bǎ kōng tiáo de wēn dù kāi de gāo yī xiē děng děng zhè xiē shì wǒ men měi gè rén dōu néng gòu zuò dào de huán bǎo yào cóng shēn biān xiǎo shì zuò qǐ ā huáng xiān shēng hěn bào qiàn wǒ men bàn gōng shì de chuán zhēn jī huài le",
+            "vi": "",
+            "start_ms": 278120,
+            "end_ms": 330990
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "办公室",
+          "pinyin": "bàngōngshì",
+          "meaning_vi": "văn phòng",
+          "vocab_id": 11,
+          "level": "HSK3"
+        },
+        {
+          "word": "我们",
+          "pinyin": "wǒmen",
+          "meaning_vi": "chúng tôi, chúng ta",
+          "vocab_id": 112,
+          "level": "HSK1"
+        },
+        {
+          "word": "先生",
+          "pinyin": "xiānsheng",
+          "meaning_vi": "ông, quý ông",
+          "vocab_id": 118,
+          "level": "HSK1"
+        },
+        {
+          "word": "可以",
+          "pinyin": "kěyǐ",
+          "meaning_vi": "có thể, được",
+          "vocab_id": 57,
+          "level": "HSK2"
+        },
+        {
+          "word": "时间",
+          "pinyin": "shíjiān",
+          "meaning_vi": "thời gian",
+          "vocab_id": 94,
+          "level": "HSK2"
+        },
+        {
+          "word": "环境",
+          "pinyin": "huánjìng",
+          "meaning_vi": "môi trường",
+          "vocab_id": 102,
+          "level": "HSK3"
+        },
+        {
+          "word": "空调",
+          "pinyin": "kōngtiáo",
+          "meaning_vi": "máy điều hòa",
+          "vocab_id": 140,
+          "level": "HSK3"
+        },
+        {
+          "word": "注意",
+          "pinyin": "zhùyì",
+          "meaning_vi": "chú ý",
+          "vocab_id": 293,
+          "level": "HSK3"
+        }
+      ]
+    },
+    {
+      "id": "H41008_L_08",
+      "exam_id": "H41008",
+      "question_number": 8,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "复印机坏了。",
+        "pinyin": "fù yìn jī huài le 。",
+        "vi": "Máy photocopy bị hỏng rồi."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Máy photocopy bị hỏng rồi.'.",
+      "evidence": {
+        "zh": "夏天把空调的温度开的高一些等等这些是我们每个人都能够做到的环保要从身边小事做起阿黄先生很抱歉我们办公室的传真机坏了现在还在修理可能过一会儿才能把材料传给您不应机坏了舅本来只是个小问题但你和小夏当时都没做出解释这才引起了误会",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41008.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 305000,
+          "end_ms": 358969
+        },
+        "statement": {
+          "start_ms": 359030,
+          "end_ms": 362990
+        },
+        "full_question": {
+          "start_ms": 305000,
+          "end_ms": 362990
+        }
+      },
+      "transcript": {
+        "full_zh": "夏天把空调的温度开的高一些等等这些是我们每个人都能够做到的环保要从身边小事做起阿黄先生很抱歉我们办公室的传真机坏了现在还在修理可能过一会儿才能把材料传给您不应机坏了舅本来只是个小问题但你和小夏当时都没做出解释这才引起了误会",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41008_L_08_S1",
+            "index": 0,
+            "zh": "夏天把空调的温度开的高一些等等这些是我们每个人都能够做到的环保要从身边小事做起阿黄先生很抱歉我们办公室的传真机坏了现在还在修理可能过一会儿才能把材料传给您不应机坏了舅本来只是个小问题但你和小夏当时都没做出解释这才引起了误会",
+            "pinyin": "xià tiān bǎ kōng tiáo de wēn dù kāi de gāo yī xiē děng děng zhè xiē shì wǒ men měi gè rén dōu néng gòu zuò dào de huán bǎo yào cóng shēn biān xiǎo shì zuò qǐ ā huáng xiān shēng hěn bào qiàn wǒ men bàn gōng shì de chuán zhēn jī huài le xiàn zài hái zài xiū lǐ kě néng guò yī huì er cái néng bǎ cái liào chuán gěi nín bù yīng jī huài le jiù běn lái zhǐ shì gè xiǎo wèn tí dàn nǐ hé xiǎo xià dāng shí dōu méi zuò chū jiě shì zhè cái yǐn qǐ le wù huì",
+            "vi": "",
+            "start_ms": 305000,
+            "end_ms": 358969
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "办公室",
+          "pinyin": "bàngōngshì",
+          "meaning_vi": "văn phòng",
+          "vocab_id": 11,
+          "level": "HSK3"
+        },
+        {
+          "word": "一会儿",
+          "pinyin": "yíhuìr",
+          "meaning_vi": "một lúc, một chút",
+          "vocab_id": 256,
+          "level": "HSK3"
+        },
+        {
+          "word": "我们",
+          "pinyin": "wǒmen",
+          "meaning_vi": "chúng tôi, chúng ta",
+          "vocab_id": 112,
+          "level": "HSK1"
+        },
+        {
+          "word": "先生",
+          "pinyin": "xiānsheng",
+          "meaning_vi": "ông, quý ông",
+          "vocab_id": 118,
+          "level": "HSK1"
+        },
+        {
+          "word": "现在",
+          "pinyin": "xiànzài",
+          "meaning_vi": "hiện tại, bây giờ",
+          "vocab_id": 119,
+          "level": "HSK1"
+        },
+        {
+          "word": "可能",
+          "pinyin": "kěnéng",
+          "meaning_vi": "có thể",
+          "vocab_id": 56,
+          "level": "HSK2"
+        },
+        {
+          "word": "问题",
+          "pinyin": "wèntí",
+          "meaning_vi": "câu hỏi, vấn đề",
+          "vocab_id": 112,
+          "level": "HSK2"
+        },
+        {
+          "word": "空调",
+          "pinyin": "kōngtiáo",
+          "meaning_vi": "máy điều hòa",
+          "vocab_id": 140,
+          "level": "HSK3"
+        }
+      ]
+    },
+    {
+      "id": "H41008_L_09",
+      "exam_id": "H41008",
+      "question_number": 9,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "小夏把误会解释清楚了。",
+        "pinyin": "xiǎo xià bǎ wù huì jiě shì qīng chǔ le 。",
+        "vi": "Tiểu Hạ đã giải thích rõ ràng hiểu lầm."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Tiểu Hạ đã giải thích rõ ràng hiểu lầm.'.",
+      "evidence": {
+        "zh": "可能过一会儿才能把材料传给您不应机坏了舅本来只是个小问题但你和小夏当时都没做出解释这才引起了误会我觉得你们俩见一面把事情说清楚就好了小夏把误会解释清楚了是研究发现吃甜的东西能使人心情愉快所以如果你觉得心烦",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41008.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 335060,
+          "end_ms": 387990
+        },
+        "statement": {
+          "start_ms": 388000,
+          "end_ms": 391980
+        },
+        "full_question": {
+          "start_ms": 335060,
+          "end_ms": 391980
+        }
+      },
+      "transcript": {
+        "full_zh": "可能过一会儿才能把材料传给您不应机坏了舅本来只是个小问题但你和小夏当时都没做出解释这才引起了误会我觉得你们俩见一面把事情说清楚就好了小夏把误会解释清楚了是研究发现吃甜的东西能使人心情愉快所以如果你觉得心烦",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41008_L_09_S1",
+            "index": 0,
+            "zh": "可能过一会儿才能把材料传给您不应机坏了舅本来只是个小问题但你和小夏当时都没做出解释这才引起了误会我觉得你们俩见一面把事情说清楚就好了小夏把误会解释清楚了是研究发现吃甜的东西能使人心情愉快所以如果你觉得心烦",
+            "pinyin": "kě néng guò yī huì er cái néng bǎ cái liào chuán gěi nín bù yīng jī huài le jiù běn lái zhǐ shì gè xiǎo wèn tí dàn nǐ hé xiǎo xià dāng shí dōu méi zuò chū jiě shì zhè cái yǐn qǐ le wù huì wǒ jué de nǐ men liǎ jiàn yí miàn bǎ shì qíng shuō qīng chǔ jiù hǎo le xiǎo xià bǎ wù huì jiě shì qīng chǔ le shì yán jiū fā xiàn chī tián de dōng xī néng shǐ rén xīn qíng yú kuài suǒ yǐ rú guǒ nǐ jué de xīn fán",
+            "vi": "",
+            "start_ms": 335060,
+            "end_ms": 387990
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "一会儿",
+          "pinyin": "yíhuìr",
+          "meaning_vi": "một lúc, một chút",
+          "vocab_id": 256,
+          "level": "HSK3"
+        },
+        {
+          "word": "东西",
+          "pinyin": "dōngxi",
+          "meaning_vi": "đồ vật",
+          "vocab_id": 20,
+          "level": "HSK1"
+        },
+        {
+          "word": "觉得",
+          "pinyin": "juéde",
+          "meaning_vi": "cảm thấy",
+          "vocab_id": 52,
+          "level": "HSK2"
+        },
+        {
+          "word": "可能",
+          "pinyin": "kěnéng",
+          "meaning_vi": "có thể",
+          "vocab_id": 56,
+          "level": "HSK2"
+        },
+        {
+          "word": "事情",
+          "pinyin": "shìqing",
+          "meaning_vi": "việc, sự việc",
+          "vocab_id": 95,
+          "level": "HSK2"
+        },
+        {
+          "word": "问题",
+          "pinyin": "wèntí",
+          "meaning_vi": "câu hỏi, vấn đề",
+          "vocab_id": 112,
+          "level": "HSK2"
+        },
+        {
+          "word": "发现",
+          "pinyin": "fāxiàn",
+          "meaning_vi": "phát hiện",
+          "vocab_id": 65,
+          "level": "HSK3"
+        },
+        {
+          "word": "清楚",
+          "pinyin": "qīngchu",
+          "meaning_vi": "rõ ràng",
+          "vocab_id": 187,
+          "level": "HSK3"
+        }
+      ]
+    },
+    {
+      "id": "H41008_L_10",
+      "exam_id": "H41008",
+      "question_number": 10,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "吃甜的东西能让心情变好。",
+        "pinyin": "chī tián de dōng xī néng ràng xīn qíng biàn hǎo 。",
+        "vi": "Ăn đồ ngọt có thể làm cho tâm trạng tốt hơn."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Ăn đồ ngọt có thể làm cho tâm trạng tốt hơn.'.",
+      "evidence": {
+        "zh": "把事情说清楚就好了小夏把误会解释清楚了是研究发现吃甜的东西能使人心情愉快所以如果你觉得心烦可以吃点蛋糕或者巧克力这些甜的东西也许会给你带来好心情吃甜的东西能让心情变好第二部分一共十五个题每题听一次例如该加油了去机场的路上有加油战吗有",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41008.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 363000,
+          "end_ms": 414850
+        },
+        "statement": {
+          "start_ms": 415200,
+          "end_ms": 418990
+        },
+        "full_question": {
+          "start_ms": 363000,
+          "end_ms": 418990
+        }
+      },
+      "transcript": {
+        "full_zh": "把事情说清楚就好了小夏把误会解释清楚了是研究发现吃甜的东西能使人心情愉快所以如果你觉得心烦可以吃点蛋糕或者巧克力这些甜的东西也许会给你带来好心情吃甜的东西能让心情变好第二部分一共十五个题每题听一次例如该加油了去机场的路上有加油战吗有",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41008_L_10_S1",
+            "index": 0,
+            "zh": "把事情说清楚就好了小夏把误会解释清楚了是研究发现吃甜的东西能使人心情愉快所以如果你觉得心烦可以吃点蛋糕或者巧克力这些甜的东西也许会给你带来好心情吃甜的东西能让心情变好第二部分一共十五个题每题听一次例如该加油了去机场的路上有加油战吗有",
+            "pinyin": "bǎ shì qíng shuō qīng chǔ jiù hǎo le xiǎo xià bǎ wù huì jiě shì qīng chǔ le shì yán jiū fā xiàn chī tián de dōng xī néng shǐ rén xīn qíng yú kuài suǒ yǐ rú guǒ nǐ jué de xīn fán kě yǐ chī diǎn dàn gāo huò zhě qiǎo kè lì zhè xiē tián de dōng xī yě xǔ huì gěi nǐ dài lái hǎo xīn qíng chī tián de dōng xī néng ràng xīn qíng biàn hǎo dì èr bù fèn yī gòng shí wǔ gè tí měi tí tīng yī cì lì rú gāi jiā yóu le qù jī chǎng de lù shàng yǒu jiā yóu zhàn ma yǒu",
+            "vi": "",
+            "start_ms": 363000,
+            "end_ms": 414850
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "巧克力",
+          "pinyin": "qiǎokèlì",
+          "meaning_vi": "sô-cô-la",
+          "vocab_id": 343,
+          "level": "HSK4"
+        },
+        {
+          "word": "东西",
+          "pinyin": "dōngxi",
+          "meaning_vi": "đồ vật",
+          "vocab_id": 20,
+          "level": "HSK1"
+        },
+        {
+          "word": "机场",
+          "pinyin": "jīchǎng",
+          "meaning_vi": "sân bay",
+          "vocab_id": 43,
+          "level": "HSK2"
+        },
+        {
+          "word": "觉得",
+          "pinyin": "juéde",
+          "meaning_vi": "cảm thấy",
+          "vocab_id": 52,
+          "level": "HSK2"
+        },
+        {
+          "word": "可以",
+          "pinyin": "kěyǐ",
+          "meaning_vi": "có thể, được",
+          "vocab_id": 57,
+          "level": "HSK2"
+        },
+        {
+          "word": "事情",
+          "pinyin": "shìqing",
+          "meaning_vi": "việc, sự việc",
+          "vocab_id": 95,
+          "level": "HSK2"
+        },
+        {
+          "word": "蛋糕",
+          "pinyin": "dàngāo",
+          "meaning_vi": "bánh ngọt",
+          "vocab_id": 44,
+          "level": "HSK3"
+        },
+        {
+          "word": "发现",
+          "pinyin": "fāxiàn",
+          "meaning_vi": "phát hiện",
+          "vocab_id": 65,
+          "level": "HSK3"
+        }
+      ]
+    }
+  ]
+}

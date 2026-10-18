@@ -71,6 +71,44 @@ def test_data_integrity():
 
     print("   ✓ JSON Data Model & Timestamps pass all integrity checks!")
 
+def test_all_12_listening_exams():
+    print("-> Checking all 12 Hanban HSK 4 listening exams (H41001 to H41012)...")
+    for idx in range(1, 13):
+        exam_id = f"H410{idx:02d}"
+        json_path = ROOT / f"database/listening/hsk4_{exam_id.lower()}.json"
+        assert json_path.exists(), f"Exam JSON missing: {json_path}"
+
+        with open(json_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        assert data["exam_id"] == exam_id, f"Mismatched exam_id in {json_path}"
+        assert data["level"] == "HSK4"
+        assert data["total_questions"] == 10, f"Expected 10 questions in {exam_id}, got {data['total_questions']}"
+        assert len(data["questions"]) == 10, f"Expected 10 question objects in {exam_id}, got {len(data['questions'])}"
+
+        # Check audio file exists
+        audio_file = ROOT / data["audio_src"]
+        assert audio_file.exists(), f"Audio file not found: {audio_file}"
+
+        # Check exam materials folder & pdf
+        pdf_file = ROOT / f"exam_materials/hsk4/{exam_id}/{exam_id}.pdf"
+        assert pdf_file.exists(), f"Exam PDF not found: {pdf_file}"
+
+        for q in data["questions"]:
+            assert q["exam_id"] == exam_id
+            assert q["type"] == "true_false"
+            assert isinstance(q["answer"], bool)
+            assert len(q["statement"]["zh"]) > 0
+            assert len(q["statement"]["vi"]) > 0
+            assert len(q["transcript"]["sentences"]) >= 1
+
+            segs = q["segments"]
+            assert 0 <= segs["passage"]["start_ms"] < segs["passage"]["end_ms"]
+            assert 0 <= segs["statement"]["start_ms"] < segs["statement"]["end_ms"]
+
+    print("   ✓ All 12 Hanban HSK 4 exams verified successfully (120 questions total)!")
+
+
 def test_integration_files():
     print("-> Checking web integration files...")
     index_html = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -181,6 +219,7 @@ def test_listening_polish_v112():
 def main():
     print("=== Starting HSK Listening Prototype Automated Verification ===")
     test_data_integrity()
+    test_all_12_listening_exams()
     test_integration_files()
     test_ui_refinements()
     test_listening_polish_v112()

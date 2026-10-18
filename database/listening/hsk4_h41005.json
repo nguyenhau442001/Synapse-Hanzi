@@ -1,0 +1,1161 @@
+{
+  "exam_id": "H41005",
+  "level": "HSK4",
+  "title": "HSK 4 - Đề thi mẫu H41005 - Phần Nghe (Listening)",
+  "total_questions": 10,
+  "audio_src": "assets/audio/exams/H41005.mp3",
+  "questions": [
+    {
+      "id": "H41005_L_01",
+      "exam_id": "H41005",
+      "question_number": 1,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "很多学生希望出国留学。",
+        "pinyin": "hěn duō xué shēng xī wàng chū guó liú xué 。",
+        "vi": "Rất nhiều học sinh mong muốn đi du học nước ngoài."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Rất nhiều học sinh mong muốn đi du học nước ngoài.'.",
+      "evidence": {
+        "zh": "在接受调查的学生中，有超过百分之八十的人希望自己能有机会出国留学，但只有大约百分之二十的人已经开始申请国外学校。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41005.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 107059,
+          "end_ms": 153673
+        },
+        "statement": {
+          "start_ms": 153680,
+          "end_ms": 156703
+        },
+        "full_question": {
+          "start_ms": 107059,
+          "end_ms": 156703
+        }
+      },
+      "transcript": {
+        "full_zh": "在接受调查的学生中，有超过百分之八十的人希望自己能有机会出国留学，但只有大约百分之二十的人已经开始申请国外学校。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41005_L_01_S1",
+            "index": 0,
+            "zh": "在接受调查的学生中，有超过百分之八十的人希望自己能有机会出国留学，但只有大约百分之二十的人已经开始申请国外学校。",
+            "pinyin": "zài jiē shòu diào chá de xué shēng zhōng ， yǒu chāo guò bǎi fēn zhī bā shí de rén xī wàng zì jǐ néng yǒu jī huì chū guó liú xué ， dàn zhǐ yǒu dà yuē bǎi fēn zhī èr shí de rén yǐ jīng kāi shǐ shēn qǐng guó wài xué xiào 。",
+            "vi": "",
+            "start_ms": 107059,
+            "end_ms": 153673
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "百分之",
+          "pinyin": "bǎifēnzhī",
+          "meaning_vi": "phần trăm",
+          "vocab_id": 6,
+          "level": "HSK4"
+        },
+        {
+          "word": "学生",
+          "pinyin": "xuésheng",
+          "meaning_vi": "học sinh",
+          "vocab_id": 127,
+          "level": "HSK1"
+        },
+        {
+          "word": "学校",
+          "pinyin": "xuéxiào",
+          "meaning_vi": "trường học",
+          "vocab_id": 129,
+          "level": "HSK1"
+        },
+        {
+          "word": "开始",
+          "pinyin": "kāishǐ",
+          "meaning_vi": "bắt đầu",
+          "vocab_id": 54,
+          "level": "HSK2"
+        },
+        {
+          "word": "希望",
+          "pinyin": "xīwàng",
+          "meaning_vi": "hy vọng",
+          "vocab_id": 113,
+          "level": "HSK2"
+        },
+        {
+          "word": "已经",
+          "pinyin": "yǐjīng",
+          "meaning_vi": "đã",
+          "vocab_id": 129,
+          "level": "HSK2"
+        },
+        {
+          "word": "机会",
+          "pinyin": "jīhuì",
+          "meaning_vi": "cơ hội",
+          "vocab_id": 109,
+          "level": "HSK3"
+        },
+        {
+          "word": "留学",
+          "pinyin": "liúxué",
+          "meaning_vi": "du học",
+          "vocab_id": 156,
+          "level": "HSK3"
+        }
+      ]
+    },
+    {
+      "id": "H41005_L_02",
+      "exam_id": "H41005",
+      "question_number": 2,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他想参加网球比赛。",
+        "pinyin": "tā xiǎng cān jiā wǎng qiú bǐ sài 。",
+        "vi": "Anh ấy muốn tham gia thi đấu quần vợt."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Anh ấy muốn tham gia thi đấu quần vợt.'.",
+      "evidence": {
+        "zh": "你别跟我开玩笑了，我从来没学过游泳，怎么去比赛啊？",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41005.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 133228,
+          "end_ms": 182666
+        },
+        "statement": {
+          "start_ms": 182719,
+          "end_ms": 186670
+        },
+        "full_question": {
+          "start_ms": 133228,
+          "end_ms": 186670
+        }
+      },
+      "transcript": {
+        "full_zh": "你别跟我开玩笑了，我从来没学过游泳，怎么去比赛啊？你去问问小王吧，他每个周末都去游泳。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41005_L_02_S1",
+            "index": 0,
+            "zh": "你别跟我开玩笑了，我从来没学过游泳，怎么去比赛啊？",
+            "pinyin": "nǐ bié gēn wǒ kāi wán xiào le ， wǒ cóng lái méi xué guò yóu yǒng ， zěn me qù bǐ sài a ？",
+            "vi": "",
+            "start_ms": 133228,
+            "end_ms": 161971
+          },
+          {
+            "id": "H41005_L_02_S2",
+            "index": 1,
+            "zh": "你去问问小王吧，他每个周末都去游泳。",
+            "pinyin": "nǐ qù wèn wèn xiǎo wáng ba ， tā měi gè zhōu mò dōu qù yóu yǒng 。",
+            "vi": "",
+            "start_ms": 161971,
+            "end_ms": 182665
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "开玩笑",
+          "pinyin": "kāiwánxiào",
+          "meaning_vi": "đùa cợt, nói đùa",
+          "vocab_id": 246,
+          "level": "HSK4"
+        },
+        {
+          "word": "怎么",
+          "pinyin": "zěnme",
+          "meaning_vi": "thế nào, sao",
+          "vocab_id": 140,
+          "level": "HSK1"
+        },
+        {
+          "word": "游泳",
+          "pinyin": "yóuyǒng",
+          "meaning_vi": "bơi lội",
+          "vocab_id": 134,
+          "level": "HSK2"
+        },
+        {
+          "word": "比赛",
+          "pinyin": "bǐsài",
+          "meaning_vi": "cuộc thi đấu",
+          "vocab_id": 19,
+          "level": "HSK3"
+        },
+        {
+          "word": "参加",
+          "pinyin": "cānjiā",
+          "meaning_vi": "tham gia",
+          "vocab_id": 26,
+          "level": "HSK3"
+        },
+        {
+          "word": "周末",
+          "pinyin": "zhōumò",
+          "meaning_vi": "cuối tuần",
+          "vocab_id": 291,
+          "level": "HSK3"
+        },
+        {
+          "word": "从来",
+          "pinyin": "cónglái",
+          "meaning_vi": "từ trước đến nay, luôn luôn",
+          "vocab_id": 60,
+          "level": "HSK4"
+        },
+        {
+          "word": "网球",
+          "pinyin": "wǎngqiú",
+          "meaning_vi": "bóng tennis",
+          "vocab_id": 448,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41005_L_03",
+      "exam_id": "H41005",
+      "question_number": 3,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "年轻人应该相信自己。",
+        "pinyin": "nián qīng rén yīng gāi xiāng xìn zì jǐ 。",
+        "vi": "Người trẻ tuổi nên tin tưởng vào chính mình."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Người trẻ tuổi nên tin tưởng vào chính mình.'.",
+      "evidence": {
+        "zh": "年轻就是健康，年轻就是美丽。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41005.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 166491,
+          "end_ms": 218084
+        },
+        "statement": {
+          "start_ms": 218859,
+          "end_ms": 221962
+        },
+        "full_question": {
+          "start_ms": 166491,
+          "end_ms": 221962
+        }
+      },
+      "transcript": {
+        "full_zh": "年轻就是健康，年轻就是美丽。不要太担心胖瘦，也不要太关心自己长得是不是漂亮，是不是帅，年轻人最重要的是要对自己有信心。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41005_L_03_S1",
+            "index": 0,
+            "zh": "年轻就是健康，年轻就是美丽。",
+            "pinyin": "nián qīng jiù shì jiàn kāng ， nián qīng jiù shì měi lì 。",
+            "vi": "",
+            "start_ms": 166491,
+            "end_ms": 178733
+          },
+          {
+            "id": "H41005_L_03_S2",
+            "index": 1,
+            "zh": "不要太担心胖瘦，也不要太关心自己长得是不是漂亮，是不是帅，年轻人最重要的是要对自己有信心。",
+            "pinyin": "bú yào tài dān xīn pàng shòu ， yě bú yào tài guān xīn zì jǐ zhǎng dé shì bú shì piào liàng ， shì bú shì shuài ， nián qīng rén zuì zhòng yào de shì yào duì zì jǐ yǒu xìn xīn 。",
+            "vi": "",
+            "start_ms": 178733,
+            "end_ms": 218083
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "漂亮",
+          "pinyin": "piàoliang",
+          "meaning_vi": "đẹp",
+          "vocab_id": 77,
+          "level": "HSK1"
+        },
+        {
+          "word": "担心",
+          "pinyin": "dānxīn",
+          "meaning_vi": "lo lắng",
+          "vocab_id": 43,
+          "level": "HSK3"
+        },
+        {
+          "word": "关心",
+          "pinyin": "guānxīn",
+          "meaning_vi": "quan tâm",
+          "vocab_id": 86,
+          "level": "HSK3"
+        },
+        {
+          "word": "健康",
+          "pinyin": "jiànkāng",
+          "meaning_vi": "khỏe mạnh, sức khỏe",
+          "vocab_id": 115,
+          "level": "HSK3"
+        },
+        {
+          "word": "年轻",
+          "pinyin": "niánqīng",
+          "meaning_vi": "trẻ tuổi",
+          "vocab_id": 172,
+          "level": "HSK3"
+        },
+        {
+          "word": "相信",
+          "pinyin": "xiāngxìn",
+          "meaning_vi": "tin tưởng",
+          "vocab_id": 240,
+          "level": "HSK3"
+        },
+        {
+          "word": "应该",
+          "pinyin": "yīnggāi",
+          "meaning_vi": "nên, cần phải",
+          "vocab_id": 265,
+          "level": "HSK3"
+        },
+        {
+          "word": "重要",
+          "pinyin": "zhòngyào",
+          "meaning_vi": "quan trọng",
+          "vocab_id": 290,
+          "level": "HSK3"
+        }
+      ]
+    },
+    {
+      "id": "H41005_L_04",
+      "exam_id": "H41005",
+      "question_number": 4,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他们要坐地铁。",
+        "pinyin": "tā men yào zuò dì tiě 。",
+        "vi": "Họ muốn đi tàu điện ngầm."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Họ muốn đi tàu điện ngầm.'.",
+      "evidence": {
+        "zh": "姐，咱们弄错方向了，去西边的公共汽车应该在对面坐。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41005.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 196591,
+          "end_ms": 244671
+        },
+        "statement": {
+          "start_ms": 244680,
+          "end_ms": 247812
+        },
+        "full_question": {
+          "start_ms": 196591,
+          "end_ms": 247812
+        }
+      },
+      "transcript": {
+        "full_zh": "姐，咱们弄错方向了，去西边的公共汽车应该在对面坐。正好前边有个天桥，我们从那儿过马路吧。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41005_L_04_S1",
+            "index": 0,
+            "zh": "姐，咱们弄错方向了，去西边的公共汽车应该在对面坐。",
+            "pinyin": "jiě ， zán men nòng cuò fāng xiàng le ， qù xī biān de gōng gòng qì chē yīng gāi zài duì miàn zuò 。",
+            "vi": "",
+            "start_ms": 196591,
+            "end_ms": 223909
+          },
+          {
+            "id": "H41005_L_04_S2",
+            "index": 1,
+            "zh": "正好前边有个天桥，我们从那儿过马路吧。",
+            "pinyin": "zhèng hǎo qián biān yǒu gè tiān qiáo ， wǒ men cóng nà ér guò mǎ lù ba 。",
+            "vi": "",
+            "start_ms": 223909,
+            "end_ms": 244670
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "公共汽车",
+          "pinyin": "gōnggòng qìchē",
+          "meaning_vi": "xe buýt",
+          "vocab_id": 33,
+          "level": "HSK2"
+        },
+        {
+          "word": "我们",
+          "pinyin": "wǒmen",
+          "meaning_vi": "chúng tôi, chúng ta",
+          "vocab_id": 112,
+          "level": "HSK1"
+        },
+        {
+          "word": "地铁",
+          "pinyin": "dìtiě",
+          "meaning_vi": "tàu điện ngầm",
+          "vocab_id": 49,
+          "level": "HSK3"
+        },
+        {
+          "word": "应该",
+          "pinyin": "yīnggāi",
+          "meaning_vi": "nên, cần phải",
+          "vocab_id": 265,
+          "level": "HSK3"
+        },
+        {
+          "word": "对面",
+          "pinyin": "duìmiàn",
+          "meaning_vi": "đối diện",
+          "vocab_id": 102,
+          "level": "HSK4"
+        },
+        {
+          "word": "方向",
+          "pinyin": "fāngxiàng",
+          "meaning_vi": "phương hướng",
+          "vocab_id": 113,
+          "level": "HSK4"
+        },
+        {
+          "word": "咱们",
+          "pinyin": "zánmen",
+          "meaning_vi": "chúng ta (gồm cả người nghe)",
+          "vocab_id": 548,
+          "level": "HSK4"
+        },
+        {
+          "word": "正好",
+          "pinyin": "zhènghǎo",
+          "meaning_vi": "vừa đúng, vừa khéo",
+          "vocab_id": 559,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41005_L_05",
+      "exam_id": "H41005",
+      "question_number": 5,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "阳光的作用很大。",
+        "pinyin": "yáng guāng de zuò yòng hěn dà 。",
+        "vi": "Ánh nắng mặt trời có tác dụng rất lớn."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Ánh nắng mặt trời có tác dụng rất lớn.'.",
+      "evidence": {
+        "zh": "我喜欢阳光，因为阳光给了万物生命。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41005.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 218859,
+          "end_ms": 274672
+        },
+        "statement": {
+          "start_ms": 274680,
+          "end_ms": 278670
+        },
+        "full_question": {
+          "start_ms": 218859,
+          "end_ms": 278670
+        }
+      },
+      "transcript": {
+        "full_zh": "我喜欢阳光，因为阳光给了万物生命。因为有了阳光，花园里的小草更绿了；因为有了阳光，天空下的海洋更蓝了。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41005_L_05_S1",
+            "index": 0,
+            "zh": "我喜欢阳光，因为阳光给了万物生命。",
+            "pinyin": "wǒ xǐ huān yáng guāng ， yīn wèi yáng guāng gěi le wàn wù shēng mìng 。",
+            "vi": "",
+            "start_ms": 218859,
+            "end_ms": 237463
+          },
+          {
+            "id": "H41005_L_05_S2",
+            "index": 1,
+            "zh": "因为有了阳光，花园里的小草更绿了；",
+            "pinyin": "yīn wèi yǒu le yáng guāng ， huā yuán lǐ de xiǎo cǎo gèng lǜ le ；",
+            "vi": "",
+            "start_ms": 237463,
+            "end_ms": 256067
+          },
+          {
+            "id": "H41005_L_05_S3",
+            "index": 2,
+            "zh": "因为有了阳光，天空下的海洋更蓝了。",
+            "pinyin": "yīn wèi yǒu le yáng guāng ， tiān kōng xià de hǎi yáng gèng lán le 。",
+            "vi": "",
+            "start_ms": 256067,
+            "end_ms": 274671
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "喜欢",
+          "pinyin": "xǐhuan",
+          "meaning_vi": "thích",
+          "vocab_id": 114,
+          "level": "HSK1"
+        },
+        {
+          "word": "海洋",
+          "pinyin": "hǎiyáng",
+          "meaning_vi": "biển, đại dương",
+          "vocab_id": 164,
+          "level": "HSK4"
+        },
+        {
+          "word": "生命",
+          "pinyin": "shēngmìng",
+          "meaning_vi": "sinh mệnh, sự sống",
+          "vocab_id": 376,
+          "level": "HSK4"
+        },
+        {
+          "word": "阳光",
+          "pinyin": "yángguāng",
+          "meaning_vi": "ánh nắng",
+          "vocab_id": 502,
+          "level": "HSK4"
+        },
+        {
+          "word": "作用",
+          "pinyin": "zuòyòng",
+          "meaning_vi": "tác dụng",
+          "vocab_id": 599,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41005_L_06",
+      "exam_id": "H41005",
+      "question_number": 6,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "第一印象不容易忘记。",
+        "pinyin": "dì yī yìn xiàng bù róng yì wàng jì 。",
+        "vi": "Ấn tượng ban đầu không dễ quên."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Ấn tượng ban đầu không dễ quên.'.",
+      "evidence": {
+        "zh": "第一印象是指在第一次见面时给别人留下的印象，第一印象往往是最深的，而且很难改变。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41005.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 248789,
+          "end_ms": 301679
+        },
+        "statement": {
+          "start_ms": 301680,
+          "end_ms": 305670
+        },
+        "full_question": {
+          "start_ms": 248789,
+          "end_ms": 305670
+        }
+      },
+      "transcript": {
+        "full_zh": "第一印象是指在第一次见面时给别人留下的印象，第一印象往往是最深的，而且很难改变。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41005_L_06_S1",
+            "index": 0,
+            "zh": "第一印象是指在第一次见面时给别人留下的印象，第一印象往往是最深的，而且很难改变。",
+            "pinyin": "dì yī yìn xiàng shì zhǐ zài dì yī cì jiàn miàn shí gěi bié rén liú xià de yìn xiàng ， dì yī yìn xiàng wǎng wǎng shì zuì shēn de ， ér qiě hěn nán gǎi biàn 。",
+            "vi": "",
+            "start_ms": 248789,
+            "end_ms": 301679
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "第一",
+          "pinyin": "dìyī",
+          "meaning_vi": "thứ nhất",
+          "vocab_id": 22,
+          "level": "HSK2"
+        },
+        {
+          "word": "别人",
+          "pinyin": "biérén",
+          "meaning_vi": "người khác",
+          "vocab_id": 23,
+          "level": "HSK3"
+        },
+        {
+          "word": "见面",
+          "pinyin": "jiànmiàn",
+          "meaning_vi": "gặp mặt",
+          "vocab_id": 116,
+          "level": "HSK3"
+        },
+        {
+          "word": "容易",
+          "pinyin": "róngyì",
+          "meaning_vi": "dễ dàng",
+          "vocab_id": 195,
+          "level": "HSK3"
+        },
+        {
+          "word": "忘记",
+          "pinyin": "wàngjì",
+          "meaning_vi": "quên",
+          "vocab_id": 228,
+          "level": "HSK3"
+        },
+        {
+          "word": "改变",
+          "pinyin": "gǎibiàn",
+          "meaning_vi": "thay đổi",
+          "vocab_id": 128,
+          "level": "HSK4"
+        },
+        {
+          "word": "往往",
+          "pinyin": "wǎngwǎng",
+          "meaning_vi": "thường thường",
+          "vocab_id": 447,
+          "level": "HSK4"
+        },
+        {
+          "word": "印象",
+          "pinyin": "yìnxiàng",
+          "meaning_vi": "ấn tượng",
+          "vocab_id": 518,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41005_L_07",
+      "exam_id": "H41005",
+      "question_number": 7,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "没能力的人没有责任心。",
+        "pinyin": "méi néng lì de rén méi yǒu zé rèn xīn 。",
+        "vi": "Người không có năng lực thì không có tinh thần trách nhiệm."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Người không có năng lực thì không có tinh thần trách nhiệm.'.",
+      "evidence": {
+        "zh": "有能力的人可以把复杂的事情变简单，而没能力的人却经常把简单的事情变复杂。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41005.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 278680,
+          "end_ms": 331679
+        },
+        "statement": {
+          "start_ms": 331680,
+          "end_ms": 335401
+        },
+        "full_question": {
+          "start_ms": 278680,
+          "end_ms": 335401
+        }
+      },
+      "transcript": {
+        "full_zh": "有能力的人可以把复杂的事情变简单，而没能力的人却经常把简单的事情变复杂。这就是这两种人的区别。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41005_L_07_S1",
+            "index": 0,
+            "zh": "有能力的人可以把复杂的事情变简单，而没能力的人却经常把简单的事情变复杂。",
+            "pinyin": "yǒu néng lì de rén kě yǐ bǎ fù zá de shì qíng biàn jiǎn dān ， ér méi néng lì de rén què jīng cháng bǎ jiǎn dān de shì qíng biàn fù zá 。",
+            "vi": "",
+            "start_ms": 278680,
+            "end_ms": 319274
+          },
+          {
+            "id": "H41005_L_07_S2",
+            "index": 1,
+            "zh": "这就是这两种人的区别。",
+            "pinyin": "zhè jiù shì zhè liǎng zhǒng rén de qū bié 。",
+            "vi": "",
+            "start_ms": 319274,
+            "end_ms": 331678
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "没有",
+          "pinyin": "méiyǒu",
+          "meaning_vi": "không có",
+          "vocab_id": 64,
+          "level": "HSK1"
+        },
+        {
+          "word": "可以",
+          "pinyin": "kěyǐ",
+          "meaning_vi": "có thể, được",
+          "vocab_id": 57,
+          "level": "HSK2"
+        },
+        {
+          "word": "事情",
+          "pinyin": "shìqing",
+          "meaning_vi": "việc, sự việc",
+          "vocab_id": 95,
+          "level": "HSK2"
+        },
+        {
+          "word": "简单",
+          "pinyin": "jiǎndān",
+          "meaning_vi": "đơn giản",
+          "vocab_id": 114,
+          "level": "HSK3"
+        },
+        {
+          "word": "经常",
+          "pinyin": "jīngcháng",
+          "meaning_vi": "thường xuyên",
+          "vocab_id": 129,
+          "level": "HSK3"
+        },
+        {
+          "word": "复杂",
+          "pinyin": "fùzá",
+          "meaning_vi": "phức tạp",
+          "vocab_id": 126,
+          "level": "HSK4"
+        },
+        {
+          "word": "能力",
+          "pinyin": "nénglì",
+          "meaning_vi": "năng lực",
+          "vocab_id": 316,
+          "level": "HSK4"
+        },
+        {
+          "word": "区别",
+          "pinyin": "qūbié",
+          "meaning_vi": "sự khác biệt",
+          "vocab_id": 349,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41005_L_08",
+      "exam_id": "H41005",
+      "question_number": 8,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "好书越来越少。",
+        "pinyin": "hǎo shū yuè lái yuè shǎo 。",
+        "vi": "Sách hay ngày càng ít đi."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Sách hay ngày càng ít đi.'.",
+      "evidence": {
+        "zh": "我从小就非常喜欢读书。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41005.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 305680,
+          "end_ms": 357671
+        },
+        "statement": {
+          "start_ms": 357680,
+          "end_ms": 361670
+        },
+        "full_question": {
+          "start_ms": 305680,
+          "end_ms": 361670
+        }
+      },
+      "transcript": {
+        "full_zh": "我从小就非常喜欢读书。长大后，发现身边的图书越来越多，而时间是有限的，所以，不仅要会读书，还要会选择其中的好书来阅读。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41005_L_08_S1",
+            "index": 0,
+            "zh": "我从小就非常喜欢读书。",
+            "pinyin": "wǒ cóng xiǎo jiù fēi cháng xǐ huān dú shū 。",
+            "vi": "",
+            "start_ms": 305680,
+            "end_ms": 315373
+          },
+          {
+            "id": "H41005_L_08_S2",
+            "index": 1,
+            "zh": "长大后，发现身边的图书越来越多，而时间是有限的，所以，不仅要会读书，还要会选择其中的好书来阅读。",
+            "pinyin": "zhǎng dà hòu ， fā xiàn shēn biān de tú shū yuè lái yuè duō ， ér shí jiān shì yǒu xiàn de ， suǒ yǐ ， bù jǐn yào huì dú shū ， hái yào huì xuǎn zé qí zhōng de hǎo shū lái yuè dú 。",
+            "vi": "",
+            "start_ms": 315373,
+            "end_ms": 357670
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "喜欢",
+          "pinyin": "xǐhuan",
+          "meaning_vi": "thích",
+          "vocab_id": 114,
+          "level": "HSK1"
+        },
+        {
+          "word": "非常",
+          "pinyin": "fēicháng",
+          "meaning_vi": "rất, vô cùng",
+          "vocab_id": 27,
+          "level": "HSK2"
+        },
+        {
+          "word": "时间",
+          "pinyin": "shíjiān",
+          "meaning_vi": "thời gian",
+          "vocab_id": 94,
+          "level": "HSK2"
+        },
+        {
+          "word": "发现",
+          "pinyin": "fāxiàn",
+          "meaning_vi": "phát hiện",
+          "vocab_id": 65,
+          "level": "HSK3"
+        },
+        {
+          "word": "选择",
+          "pinyin": "xuǎnzé",
+          "meaning_vi": "lựa chọn",
+          "vocab_id": 251,
+          "level": "HSK3"
+        },
+        {
+          "word": "不仅",
+          "pinyin": "bùjǐn",
+          "meaning_vi": "không chỉ",
+          "vocab_id": 31,
+          "level": "HSK4"
+        },
+        {
+          "word": "其中",
+          "pinyin": "qízhōng",
+          "meaning_vi": "trong đó",
+          "vocab_id": 337,
+          "level": "HSK4"
+        },
+        {
+          "word": "阅读",
+          "pinyin": "yuèdú",
+          "meaning_vi": "đọc, đọc hiểu",
+          "vocab_id": 544,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41005_L_09",
+      "exam_id": "H41005",
+      "question_number": 9,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "很多人仍然爱看报纸。",
+        "pinyin": "hěn duō rén réng rán ài kàn bào zhǐ 。",
+        "vi": "Rất nhiều người vẫn thích đọc báo giấy."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Rất nhiều người vẫn thích đọc báo giấy.'.",
+      "evidence": {
+        "zh": "越来越多的人选择上网看新闻，因为这样很方便，网站的报道更及时，内容也更详细、丰富。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41005.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 336288,
+          "end_ms": 386674
+        },
+        "statement": {
+          "start_ms": 386680,
+          "end_ms": 390341
+        },
+        "full_question": {
+          "start_ms": 336288,
+          "end_ms": 390341
+        }
+      },
+      "transcript": {
+        "full_zh": "越来越多的人选择上网看新闻，因为这样很方便，网站的报道更及时，内容也更详细、丰富。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41005_L_09_S1",
+            "index": 0,
+            "zh": "越来越多的人选择上网看新闻，因为这样很方便，网站的报道更及时，内容也更详细、丰富。",
+            "pinyin": "yuè lái yuè duō de rén xuǎn zé shàng wǎng kàn xīn wén ， yīn wèi zhè yàng hěn fāng biàn ， wǎng zhàn de bào dào gèng jí shí ， nèi róng yě gèng xiáng xì 、 fēng fù 。",
+            "vi": "",
+            "start_ms": 336288,
+            "end_ms": 386674
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "报纸",
+          "pinyin": "bàozhǐ",
+          "meaning_vi": "báo",
+          "vocab_id": 5,
+          "level": "HSK2"
+        },
+        {
+          "word": "方便",
+          "pinyin": "fāngbiàn",
+          "meaning_vi": "thuận tiện",
+          "vocab_id": 66,
+          "level": "HSK3"
+        },
+        {
+          "word": "上网",
+          "pinyin": "shàngwǎng",
+          "meaning_vi": "lên mạng",
+          "vocab_id": 198,
+          "level": "HSK3"
+        },
+        {
+          "word": "新闻",
+          "pinyin": "xīnwén",
+          "meaning_vi": "tin tức",
+          "vocab_id": 245,
+          "level": "HSK3"
+        },
+        {
+          "word": "选择",
+          "pinyin": "xuǎnzé",
+          "meaning_vi": "lựa chọn",
+          "vocab_id": 251,
+          "level": "HSK3"
+        },
+        {
+          "word": "丰富",
+          "pinyin": "fēngfù",
+          "meaning_vi": "phong phú",
+          "vocab_id": 119,
+          "level": "HSK4"
+        },
+        {
+          "word": "及时",
+          "pinyin": "jíshí",
+          "meaning_vi": "kịp thời",
+          "vocab_id": 190,
+          "level": "HSK4"
+        },
+        {
+          "word": "内容",
+          "pinyin": "nèiróng",
+          "meaning_vi": "nội dung",
+          "vocab_id": 315,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41005_L_10",
+      "exam_id": "H41005",
+      "question_number": 10,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "她不愿意用宾馆的毛巾。",
+        "pinyin": "tā bù yuàn yì yòng bīn guǎn de máo jīn 。",
+        "vi": "Cô ấy không muốn dùng khăn tắm của khách sạn."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Cô ấy không muốn dùng khăn tắm của khách sạn.'.",
+      "evidence": {
+        "zh": "虽然还有一部分宾馆会向客人提供免费的毛巾、牙膏和牙刷，但是每次出差，她都会自己带这些东西，很少用宾馆里的。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41005.mp3",
+      "alignment": {
+        "status": "draft",
+        "method": "whisper_asr_silence_refined",
+        "notes": "Mốc âm thanh được nhận diện bằng Whisper ASR và tinh chỉnh tự động qua phong bì năng lượng RMS."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 361680,
+          "end_ms": 414679
+        },
+        "statement": {
+          "start_ms": 414680,
+          "end_ms": 418670
+        },
+        "full_question": {
+          "start_ms": 361680,
+          "end_ms": 418670
+        }
+      },
+      "transcript": {
+        "full_zh": "虽然还有一部分宾馆会向客人提供免费的毛巾、牙膏和牙刷，但是每次出差，她都会自己带这些东西，很少用宾馆里的。",
+        "full_vi": "",
+        "sentences": [
+          {
+            "id": "H41005_L_10_S1",
+            "index": 0,
+            "zh": "虽然还有一部分宾馆会向客人提供免费的毛巾、牙膏和牙刷，但是每次出差，她都会自己带这些东西，很少用宾馆里的。",
+            "pinyin": "suī rán hái yǒu yī bù fèn bīn guǎn huì xiàng kè rén tí gōng miǎn fèi de máo jīn 、 yá gāo hé yá shuā ， dàn shì měi cì chū chāi ， tā dū huì zì jǐ dài zhè xiē dōng xī ， hěn shǎo yòng bīn guǎn lǐ de 。",
+            "vi": "",
+            "start_ms": 361680,
+            "end_ms": 414679
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "东西",
+          "pinyin": "dōngxi",
+          "meaning_vi": "đồ vật",
+          "vocab_id": 20,
+          "level": "HSK1"
+        },
+        {
+          "word": "宾馆",
+          "pinyin": "bīnguǎn",
+          "meaning_vi": "khách sạn",
+          "vocab_id": 8,
+          "level": "HSK2"
+        },
+        {
+          "word": "客人",
+          "pinyin": "kèrén",
+          "meaning_vi": "khách",
+          "vocab_id": 139,
+          "level": "HSK3"
+        },
+        {
+          "word": "愿意",
+          "pinyin": "yuànyì",
+          "meaning_vi": "sẵn lòng, muốn",
+          "vocab_id": 273,
+          "level": "HSK3"
+        },
+        {
+          "word": "自己",
+          "pinyin": "zìjǐ",
+          "meaning_vi": "tự mình, bản thân",
+          "vocab_id": 294,
+          "level": "HSK3"
+        },
+        {
+          "word": "部分",
+          "pinyin": "bùfen",
+          "meaning_vi": "bộ phận, một phần",
+          "vocab_id": 32,
+          "level": "HSK4"
+        },
+        {
+          "word": "出差",
+          "pinyin": "chūchāi",
+          "meaning_vi": "đi công tác",
+          "vocab_id": 52,
+          "level": "HSK4"
+        },
+        {
+          "word": "毛巾",
+          "pinyin": "máojīn",
+          "meaning_vi": "khăn mặt",
+          "vocab_id": 301,
+          "level": "HSK4"
+        }
+      ]
+    }
+  ]
+}

@@ -7,11 +7,29 @@ const ListeningPractice = (function() {
   // ---------------------------------------------------------------------------
   // Data State
   // ---------------------------------------------------------------------------
+  const AVAILABLE_EXAMS = [
+    { id: 'H41001', name: 'Đề 1 (H41001)' },
+    { id: 'H41002', name: 'Đề 2 (H41002)' },
+    { id: 'H41003', name: 'Đề 3 (H41003)' },
+    { id: 'H41004', name: 'Đề 4 (H41004)' },
+    { id: 'H41005', name: 'Đề 5 (H41005)' },
+    { id: 'H41006', name: 'Đề 6 (H41006)' },
+    { id: 'H41007', name: 'Đề 7 (H41007)' },
+    { id: 'H41008', name: 'Đề 8 (H41008)' },
+    { id: 'H41009', name: 'Đề 9 (H41009)' },
+    { id: 'H41010', name: 'Đề 10 (H41010)' },
+    { id: 'H41011', name: 'Đề 11 (H41011)' },
+    { id: 'H41012', name: 'Đề 12 (H41012)' }
+  ];
+
   let examData = null;
+  let currentExamId = 'H41001';
+  let currentQuestionIndex = 0;
   let currentQuestion = null;
   let currentMode = 'learner'; // 'learner' | 'editor'
   let isLoaded = false;
   let loadPromise = null;
+  let userSessionAnswers = {}; // { [questionId]: { answered, selectedChoice, isCorrect } }
 
   // Learner State
   let learnerState = {
@@ -212,22 +230,28 @@ const ListeningPractice = (function() {
   // ---------------------------------------------------------------------------
   // Data Loading & LocalStorage Draft Management
   // ---------------------------------------------------------------------------
-  const STORAGE_KEY = 'hsk_listening_h41001_q01_draft';
+  function getStorageKey(questionId) {
+    const qId = questionId || (currentQuestion ? currentQuestion.id : 'default');
+    return `hsk_listening_${qId.toLowerCase()}_draft`;
+  }
 
-  async function loadData() {
-    if (examData && isLoaded) return examData;
-    if (loadPromise) return loadPromise;
-
-    loadPromise = fetch('database/listening/hsk4_h41001.json')
+  async function loadData(examId = currentExamId, qIndex = currentQuestionIndex) {
+    currentExamId = examId;
+    currentQuestionIndex = qIndex;
+    loadPromise = fetch(`database/listening/hsk4_${examId.toLowerCase()}.json`)
       .then((res) => {
-        if (!res.ok) throw new Error('Không thể tải cơ sở dữ liệu bài thi nghe H41001.');
+        if (!res.ok) throw new Error(`Không thể tải cơ sở dữ liệu bài thi nghe ${examId}.`);
         return res.json();
       })
       .then((data) => {
         examData = data;
         if (data.questions && data.questions.length > 0) {
-          currentQuestion = JSON.parse(JSON.stringify(data.questions[0]));
+          const idx = Math.max(0, Math.min(qIndex, data.questions.length - 1));
+          currentQuestionIndex = idx;
+          currentQuestion = JSON.parse(JSON.stringify(data.questions[idx]));
+          restoreQuestionSessionState();
           restoreLocalDraft();
+          syncAudioSource();
         }
         isLoaded = true;
         return examData;
@@ -241,9 +265,37 @@ const ListeningPractice = (function() {
     return loadPromise;
   }
 
+  function syncAudioSource() {
+    if (!audio || !currentQuestion) return;
+    const targetSrc = currentQuestion.audio_src || (examData ? examData.audio_src : '');
+    if (!targetSrc) return;
+    const currentSrc = audio.getAttribute('src') || '';
+    if (!currentSrc.endsWith(targetSrc)) {
+      audio.src = targetSrc;
+      audio.load();
+    }
+  }
+
+  function restoreQuestionSessionState() {
+    if (!currentQuestion) return;
+    const saved = userSessionAnswers[currentQuestion.id];
+    if (saved) {
+      learnerState.answered = saved.answered;
+      learnerState.selectedChoice = saved.selectedChoice;
+      learnerState.isCorrect = saved.isCorrect;
+    } else {
+      learnerState.answered = false;
+      learnerState.selectedChoice = null;
+      learnerState.isCorrect = null;
+    }
+    learnerState.activePlayingSegment = null;
+  }
+
   function restoreLocalDraft() {
+    if (!currentQuestion) return;
     try {
-      const saved = localStorage.getItem(STORAGE_KEY);
+      const key = getStorageKey(currentQuestion.id);
+      const saved = localStorage.getItem(key);
       if (saved) {
         const parsed = JSON.parse(saved);
         if (parsed && parsed.id === currentQuestion.id && parsed.segments) {
@@ -273,11 +325,51 @@ const ListeningPractice = (function() {
         alignment: currentQuestion.alignment,
         _savedAt: now
       };
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(draftObj));
+      const key = getStorageKey(currentQuestion.id);
+      localStorage.setItem(key, JSON.stringify(draftObj));
       editorState.lastSaved = now;
       showEditorFeedback('Đã lưu bản nháp vào trình duyệt lúc ' + now);
     } catch (e) {
       showEditorFeedback('Lỗi lưu nháp trình duyệt: ' + e.message, true);
+    }
+  }
+
+  async function switchExam(examId) {
+    if (!examId || (examId === currentExamId && examData)) return;
+    stopAudio();
+    currentExamId = examId;
+    currentQuestionIndex = 0;
+    loadPromise = null;
+    isLoaded = false;
+    try {
+      await loadData(examId, 0);
+      render();
+    } catch (err) {
+      console.error('Failed to switch exam:', err);
+    }
+  }
+
+  function goToQuestion(index) {
+    if (!examData || !examData.questions) return;
+    if (index < 0 || index >= examData.questions.length) return;
+    stopAudio();
+    currentQuestionIndex = index;
+    currentQuestion = JSON.parse(JSON.stringify(examData.questions[index]));
+    restoreQuestionSessionState();
+    restoreLocalDraft();
+    syncAudioSource();
+    render();
+  }
+
+  function prevQuestion() {
+    if (currentQuestionIndex > 0) {
+      goToQuestion(currentQuestionIndex - 1);
+    }
+  }
+
+  function nextQuestion() {
+    if (examData && currentQuestionIndex < examData.questions.length - 1) {
+      goToQuestion(currentQuestionIndex + 1);
     }
   }
 
@@ -333,7 +425,13 @@ const ListeningPractice = (function() {
               <span>Trở về</span>
             </button>
             <span class="listening-nav-breadcrumb">
-              <span class="listening-nav-exam">HSK 4 · H41001</span>
+              <div class="listening-exam-picker-wrap">
+                <select class="listening-exam-select" onchange="ListeningPractice.switchExam(this.value)" aria-label="Chọn đề thi">
+                  ${AVAILABLE_EXAMS.map(e => `
+                    <option value="${e.id}" ${e.id === currentExamId ? 'selected' : ''}>HSK 4 · ${e.name}</option>
+                  `).join('')}
+                </select>
+              </div>
               <span class="listening-nav-sep" aria-hidden="true">·</span>
               <span class="listening-nav-question">${progressText}</span>
             </span>
@@ -425,6 +523,46 @@ const ListeningPractice = (function() {
     }
   }
 
+  function renderQuestionPagination() {
+    const questions = (examData && Array.isArray(examData.questions)) ? examData.questions : [currentQuestion];
+    if (questions.length <= 1) return '';
+
+    return `
+      <div class="listening-question-nav" role="navigation" aria-label="Danh sách câu hỏi bài thi">
+        <button type="button" class="listening-nav-arrow-btn prev" onclick="ListeningPractice.prevQuestion()" ${currentQuestionIndex === 0 ? 'disabled' : ''} title="Câu trước">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+          <span>Trước</span>
+        </button>
+        <div class="listening-question-pills" role="tablist">
+          ${questions.map((q, idx) => {
+            const isCurrent = idx === currentQuestionIndex;
+            const ans = userSessionAnswers[q.id];
+            const isDone = ans && ans.answered;
+            let statusClass = '';
+            if (isCurrent) {
+              statusClass = 'active';
+            } else if (isDone) {
+              statusClass = ans.isCorrect ? 'answered-correct' : 'answered-incorrect';
+            }
+            return `
+              <button type="button" class="listening-q-pill ${statusClass}"
+                onclick="ListeningPractice.goToQuestion(${idx})"
+                role="tab"
+                aria-selected="${isCurrent}"
+                title="Câu ${q.question_number}${isDone ? (ans.isCorrect ? ' (Đúng)' : ' (Sai)') : ''}">
+                ${q.question_number}
+              </button>
+            `;
+          }).join('')}
+        </div>
+        <button type="button" class="listening-nav-arrow-btn next" onclick="ListeningPractice.nextQuestion()" ${currentQuestionIndex >= questions.length - 1 ? 'disabled' : ''} title="Câu sau">
+          <span>Tiếp</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+    `;
+  }
+
   // ---------------------------------------------------------------------------
   // Learner View
   // ---------------------------------------------------------------------------
@@ -453,6 +591,9 @@ const ListeningPractice = (function() {
             </div>
           </div>
         </div>
+
+        <!-- 1b. Question Pagination Strip -->
+        ${renderQuestionPagination()}
 
         <!-- 2. Statement Presentation (Prominent & Left-aligned) -->
         <div class="listening-statement-block">
@@ -639,6 +780,11 @@ const ListeningPractice = (function() {
     learnerState.answered = true;
     learnerState.selectedChoice = choice;
     learnerState.isCorrect = choice === currentQuestion.answer;
+    userSessionAnswers[currentQuestion.id] = {
+      answered: true,
+      selectedChoice: choice,
+      isCorrect: learnerState.isCorrect
+    };
     render();
   }
 
@@ -648,6 +794,8 @@ const ListeningPractice = (function() {
   function renderCompactFeedback() {
     const q = currentQuestion;
     const isCorrect = learnerState.isCorrect;
+    const questions = (examData && Array.isArray(examData.questions)) ? examData.questions : [];
+    const hasNext = currentQuestionIndex < questions.length - 1;
 
     return `
       <div class="listening-feedback-section ${isCorrect ? 'correct' : 'incorrect'}">
@@ -669,12 +817,21 @@ const ListeningPractice = (function() {
 
         <div class="listening-feedback-body">
           <p class="listening-feedback-explanation">${q.explanation_vi}</p>
-          ${q.evidence ? `
+          ${q.evidence && q.evidence.zh ? `
             <div class="listening-evidence-line">
               <span class="listening-evidence-label">Căn cứ trong bài:</span>
-              <span class="listening-evidence-quote" lang="zh-CN">
-                “今天的<mark class="listening-evidence-highlight">阳光多好啊，很暖和</mark>。”
+              <span class="listening-evidence-quote listening-evidence-highlight" lang="zh-CN">
+                “${q.evidence.zh}”
               </span>
+            </div>
+          ` : ''}
+
+          ${hasNext ? `
+            <div class="listening-next-action-wrap">
+              <button type="button" class="listening-next-q-btn" onclick="ListeningPractice.nextQuestion()">
+                <span>Chuyển sang Câu ${currentQuestion.question_number + 1}</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
             </div>
           ` : ''}
         </div>
@@ -1480,6 +1637,11 @@ const ListeningPractice = (function() {
     toggleSettingsMenu,
     toggleRulesDialog,
     seekRelative,
+    // Exam & Question Navigation
+    switchExam,
+    goToQuestion,
+    prevQuestion,
+    nextQuestion,
     // Editor methods
     selectEditorSegment,
     updateSegmentBoundary,
