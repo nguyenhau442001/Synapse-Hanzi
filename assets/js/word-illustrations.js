@@ -53292,10 +53292,260 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/诈骗.svg",
     "caption": "lừa gạt"
   },
+  "炸药": {
+    "file": "炸药.svg",
+    "src": "images/HSK_3.0/level7/炸药.svg",
+    "caption": "thuốc nổ"
+  },
   "摘要": {
     "file": "摘要.svg",
     "src": "images/HSK_3.0/level7/摘要.svg",
     "caption": "tóm tắt, trích yếu, bản tóm tắt"
+  },
+  "债": {
+    "file": "债.svg",
+    "src": "images/HSK_3.0/level7/债.svg",
+    "caption": "món nợ, nợ nần"
+  },
+  "债券": {
+    "file": "债券.svg",
+    "src": "images/HSK_3.0/level7/债券.svg",
+    "caption": "trái phiếu"
+  },
+  "债务": {
+    "file": "债务.svg",
+    "src": "images/HSK_3.0/level7/债务.svg",
+    "caption": "món nợ"
+  },
+  "沾": {
+    "file": "沾.svg",
+    "src": "images/HSK_3.0/level7/沾.svg",
+    "caption": "dính, vấy, đẫm"
+  },
+  "占卜": {
+    "file": "占卜.svg",
+    "src": "images/HSK_3.0/level7/占卜.svg",
+    "caption": "bói toán, bói quẻ"
+  },
+  "沾光": {
+    "file": "沾光.svg",
+    "src": "images/HSK_3.0/level7/沾光.svg",
+    "caption": "thơm lây, hưởng phúc lây, dựa bóng"
+  },
+  "瞻仰": {
+    "file": "瞻仰.svg",
+    "src": "images/HSK_3.0/level7/瞻仰.svg",
+    "caption": "chiêm ngưỡng, nghiêng mình tưởng niệm"
+  },
+  "斩": {
+    "file": "斩.svg",
+    "src": "images/HSK_3.0/level7/斩.svg",
+    "caption": "chém, trảm, cắt đứt"
+  },
+  "盏": {
+    "file": "盏.svg",
+    "src": "images/HSK_3.0/level7/盏.svg",
+    "caption": "ngọn, chén, ngọn (đèn)"
+  },
+  "斩钉截铁": {
+    "file": "斩钉截铁.svg",
+    "src": "images/HSK_3.0/level7/斩钉截铁.svg",
+    "caption": "dứt khoát như đinh đóng cột, đanh thép quyết đoán"
+  },
+  "展望": {
+    "file": "展望.svg",
+    "src": "images/HSK_3.0/level7/展望.svg",
+    "caption": "nhìn về phía trước, hướng tới tương lai, triển vọng"
+  },
+  "绽放": {
+    "file": "绽放.svg",
+    "src": "images/HSK_3.0/level7/绽放.svg",
+    "caption": "nở rộ, đua nở, bừng nở"
+  },
+  "站立": {
+    "file": "站立.svg",
+    "src": "images/HSK_3.0/level7/站立.svg",
+    "caption": "đứng, đứng thẳng"
+  },
+  "占领": {
+    "file": "占领.svg",
+    "src": "images/HSK_3.0/level7/占领.svg",
+    "caption": "chiếm lĩnh, chiếm đóng, chiếm lĩnh thị trường"
+  },
+  "战略": {
+    "file": "战略.svg",
+    "src": "images/HSK_3.0/level7/战略.svg",
+    "caption": "chiến lược, tầm nhìn chiến lược"
+  },
+  "战士": {
+    "file": "战士.svg",
+    "src": "images/HSK_3.0/level7/战士.svg",
+    "caption": "chiến sĩ, người lính"
+  },
+  "战术": {
+    "file": "战术.svg",
+    "src": "images/HSK_3.0/level7/战术.svg",
+    "caption": "chiến thuật"
+  },
+  "战役": {
+    "file": "战役.svg",
+    "src": "images/HSK_3.0/level7/战役.svg",
+    "caption": "chiến dịch (quân sự)"
+  },
+  "占用": {
+    "file": "占用.svg",
+    "src": "images/HSK_3.0/level7/占用.svg",
+    "caption": "chiếm dụng, chiếm giữ sử dụng"
+  },
+  "战友": {
+    "file": "战友.svg",
+    "src": "images/HSK_3.0/level7/战友.svg",
+    "caption": "đồng chí"
+  },
+  "章程": {
+    "file": "章程.svg",
+    "src": "images/HSK_3.0/level7/章程.svg",
+    "caption": "điều lệ, quy chế"
+  },
+  "张灯结彩": {
+    "file": "张灯结彩.svg",
+    "src": "images/HSK_3.0/level7/张灯结彩.svg",
+    "caption": "chăng đèn kết hoa"
+  },
+  "张贴": {
+    "file": "张贴.svg",
+    "src": "images/HSK_3.0/level7/张贴.svg",
+    "caption": "dán, dán thông báo"
+  },
+  "张扬": {
+    "file": "张扬.svg",
+    "src": "images/HSK_3.0/level7/张扬.svg",
+    "caption": "phô trương, khoe khoang; rêu rao"
+  },
+  "掌舵": {
+    "file": "掌舵.svg",
+    "src": "images/HSK_3.0/level7/掌舵.svg",
+    "caption": "cầm lái, chèo lái con thuyền"
+  },
+  "涨幅": {
+    "file": "涨幅.svg",
+    "src": "images/HSK_3.0/level7/涨幅.svg",
+    "caption": "biên độ tăng, mức tăng"
+  },
+  "掌管": {
+    "file": "掌管.svg",
+    "src": "images/HSK_3.0/level7/掌管.svg",
+    "caption": "nắm giữ quyền hành, quản lý"
+  },
+  "长相": {
+    "file": "长相.svg",
+    "src": "images/HSK_3.0/level7/长相.svg",
+    "caption": "diện mạo, tướng mạo, tướng người"
+  },
+  "胀": {
+    "file": "胀.svg",
+    "src": "images/HSK_3.0/level7/胀.svg",
+    "caption": "trướng bụng, đầy phình"
+  },
+  "帐篷": {
+    "file": "帐篷.svg",
+    "src": "images/HSK_3.0/level7/帐篷.svg",
+    "caption": "lều bạt, lều cắm trại"
+  },
+  "招标": {
+    "file": "招标.svg",
+    "src": "images/HSK_3.0/level7/招标.svg",
+    "caption": "mời thầu, gọi thầu"
+  },
+  "招揽": {
+    "file": "招揽.svg",
+    "src": "images/HSK_3.0/level7/招揽.svg",
+    "caption": "thu hút, chèo kéo, lôi kéo (khách hàng, nhân tài)"
+  },
+  "招募": {
+    "file": "招募.svg",
+    "src": "images/HSK_3.0/level7/招募.svg",
+    "caption": "tuyển mộ, chiêu mộ"
+  },
+  "招牌": {
+    "file": "招牌.svg",
+    "src": "images/HSK_3.0/level7/招牌.svg",
+    "caption": "biển hiệu, bảng hiệu; thương hiệu đặc trưng"
+  },
+  "朝气蓬勃": {
+    "file": "朝气蓬勃.svg",
+    "src": "images/HSK_3.0/level7/朝气蓬勃.svg",
+    "caption": "tràn đầy sức sống thanh xuân, hăng hái trẻ trung"
+  },
+  "朝三暮四": {
+    "file": "朝三暮四.svg",
+    "src": "images/HSK_3.0/level7/朝三暮四.svg",
+    "caption": "sớm ba chiều bốn, thay đổi thất thường"
+  },
+  "招商": {
+    "file": "招商.svg",
+    "src": "images/HSK_3.0/level7/招商.svg",
+    "caption": "thu hút đầu tư thương mại, chiêu thương"
+  },
+  "招数": {
+    "file": "招数.svg",
+    "src": "images/HSK_3.0/level7/招数.svg",
+    "caption": "chiêu thức, ngón đòn, mánh khóe"
+  },
+  "朝夕相处": {
+    "file": "朝夕相处.svg",
+    "src": "images/HSK_3.0/level7/朝夕相处.svg",
+    "caption": "sớm tối bên nhau, gắn bó ngày đêm"
+  },
+  "着迷": {
+    "file": "着迷.svg",
+    "src": "images/HSK_3.0/level7/着迷.svg",
+    "caption": "say mê, mê mẩn"
+  },
+  "沼泽": {
+    "file": "沼泽.svg",
+    "src": "images/HSK_3.0/level7/沼泽.svg",
+    "caption": "đầm lầy"
+  },
+  "罩": {
+    "file": "罩.svg",
+    "src": "images/HSK_3.0/level7/罩.svg",
+    "caption": "bao bọc, trùm lên; tấm che, chụp"
+  },
+  "照射": {
+    "file": "照射.svg",
+    "src": "images/HSK_3.0/level7/照射.svg",
+    "caption": "chiếu rọi, chiếu sáng"
+  },
+  "肇事": {
+    "file": "肇事.svg",
+    "src": "images/HSK_3.0/level7/肇事.svg",
+    "caption": "gây tai nạn, gây họa"
+  },
+  "遮挡": {
+    "file": "遮挡.svg",
+    "src": "images/HSK_3.0/level7/遮挡.svg",
+    "caption": "che chắn, chắn gió chắn mưa"
+  },
+  "遮盖": {
+    "file": "遮盖.svg",
+    "src": "images/HSK_3.0/level7/遮盖.svg",
+    "caption": "che phủ, đậy lại; che giấu"
+  },
+  "折腾": {
+    "file": "折腾.svg",
+    "src": "images/HSK_3.0/level7/折腾.svg",
+    "caption": "lăn lộn giày vò; vật lộn làm đi làm lại"
+  },
+  "折叠": {
+    "file": "折叠.svg",
+    "src": "images/HSK_3.0/level7/折叠.svg",
+    "caption": "gấp lại, xếp gập"
+  },
+  "折合": {
+    "file": "折合.svg",
+    "src": "images/HSK_3.0/level7/折合.svg",
+    "caption": "quy đổi thành, tương đương với"
   }
 };
 
