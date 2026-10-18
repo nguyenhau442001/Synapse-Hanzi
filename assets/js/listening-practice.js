@@ -523,42 +523,109 @@ const ListeningPractice = (function() {
     }
   }
 
-  function renderQuestionPagination() {
+  // ---------------------------------------------------------------------------
+  // Natural Pinyin Formatter & Compounds Dictionary
+  // ---------------------------------------------------------------------------
+  const COMMON_PINYIN_COMPOUNDS = {
+    'tā men': 'tāmen', 'wǒ men': 'wǒmen', 'nǐ men': 'nǐmen',
+    'jīng cháng': 'jīngcháng', 'liáo tiān': 'liáotiān',
+    'diàn tī': 'diàntī', 'kě néng': 'kěnéng', 'dà lóu': 'dàlóu',
+    'shàng bān': 'shàngbān', 'cóng lái': 'cónglái', 'méi yǒu': 'méiyǒu',
+    'shuō huà': 'shuōhuà', 'shú xī': 'shúxī', 'xī hóng shì': 'xīhóngshì',
+    'jī dàn': 'jīdàn', 'jiǎn dān': 'jiǎndān', 'fù zá': 'fùzá',
+    'zhǔn bèi': 'zhǔnbèi', 'bǎo zhèng': 'bǎozhèng', 'xué huì': 'xuéhuì',
+    'lán qiú': 'lánqiú', 'yùn dòng yuán': 'yùndòngyuán', 'zhù míng': 'zhùmíng',
+    'xǐ huān': 'xǐhuan', 'xǐ huan': 'xǐhuan', 'tí qián': 'tíqián', 'wán chéng': 'wánchéng',
+    'rèn wù': 'rènwu', 'rèn wu': 'rènwu', 'gǔ zhǎng': 'gǔzhǎng', 'zhù hè': 'zhùhè',
+    'jī chǎng': 'jīchǎng', 'chū chāi': 'chūchāi', 'qǐ fēi': 'qǐfēi',
+    'diàn huà': 'diànhuà', 'xìng gé': 'xìnggé', 'ān jìng': 'ānjìng',
+    'jiā bān': 'jiābān', 'yǎn chū': 'yǎnchū', 'yǎn yuán': 'yǎnyuán',
+    'jīng cǎi': 'jīngcǎi', 'jì huà': 'jìhuà', 'diào chá': 'diàochá',
+    'jié guǒ': 'jiéguǒ', 'shì chǎng': 'shìchǎng', 'fā shāo': 'fāshāo',
+    'yī yuàn': 'yīyuàn', 'dà fū': 'dàifu', 'dǎ zhēn': 'dǎzhēn', 'hài pà': 'hàipà',
+    'qiān zhèng': 'qiānzhèng', 'yǐ jīng': 'yǐjīng', 'bàn hǎo': 'bànhǎo',
+    'zhè ge': 'zhège', 'nà ge': 'nàge', 'yí yàng': 'yíyàng', 'dàn shì': 'dànshì',
+    'yù dào': 'yùdào', 'zhǐ shì': 'zhǐshì', 'kàn zhe': 'kànzhe', 'yī qǐ': 'yìqǐ',
+    'yì qǐ': 'yìqǐ', 'bù cuò': 'bùcuò', 'tiān qì': 'tiānqì', 'jīn tiān': 'jīntiān',
+    'shù lín': 'shùlín', 'zǒu zou': 'zǒuzou', 'yáng guāng': 'yángguāng', 'nuǎn huo': 'nuǎnhuo',
+    'tú shū guǎn': 'túshūguǎn', 'mén kǒur': 'ménkǒur'
+  };
+
+  function formatNaturalPinyin(pinyinStr) {
+    if (!pinyinStr || typeof pinyinStr !== 'string') return '';
+    let text = pinyinStr.trim();
+    // Normalize punctuation
+    text = text.replace(/。/g, '. ').replace(/，/g, ', ').replace(/？/g, '? ').replace(/！/g, '! ').replace(/：/g, ': ');
+    // Strip spaces before punctuation
+    text = text.replace(/\s+([.,?!:;])/g, '$1');
+    // Replace common compounds
+    const keys = Object.keys(COMMON_PINYIN_COMPOUNDS).sort((a, b) => b.length - a.length);
+    keys.forEach(k => {
+      const reg = new RegExp(k, 'gi');
+      text = text.replace(reg, COMMON_PINYIN_COMPOUNDS[k]);
+    });
+    // Strip double spaces
+    text = text.replace(/\s{2,}/g, ' ').trim();
+    // Capitalize first character
+    if (text.length > 0) {
+      text = text.charAt(0).toUpperCase() + text.slice(1);
+    }
+    // Capitalize after period, question mark, exclamation mark
+    text = text.replace(/([.?!]\s+)([a-zāáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ])/g, (m, p1, p2) => p1 + p2.toUpperCase());
+    return text;
+  }
+
+  // ---------------------------------------------------------------------------
+  // Streamlined Meta & Progress Bar
+  // ---------------------------------------------------------------------------
+  function renderMetaBar() {
     const questions = (examData && Array.isArray(examData.questions)) ? examData.questions : [currentQuestion];
-    if (questions.length <= 1) return '';
 
     return `
-      <div class="listening-question-nav" role="navigation" aria-label="Danh sách câu hỏi bài thi">
-        <button type="button" class="listening-nav-arrow-btn prev" onclick="ListeningPractice.prevQuestion()" ${currentQuestionIndex === 0 ? 'disabled' : ''} title="Câu trước">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
-          <span>Trước</span>
-        </button>
-        <div class="listening-question-pills" role="tablist">
-          ${questions.map((q, idx) => {
-            const isCurrent = idx === currentQuestionIndex;
-            const ans = userSessionAnswers[q.id];
-            const isDone = ans && ans.answered;
-            let statusClass = '';
-            if (isCurrent) {
-              statusClass = 'active';
-            } else if (isDone) {
-              statusClass = ans.isCorrect ? 'answered-correct' : 'answered-incorrect';
-            }
-            return `
-              <button type="button" class="listening-q-pill ${statusClass}"
-                onclick="ListeningPractice.goToQuestion(${idx})"
-                role="tab"
-                aria-selected="${isCurrent}"
-                title="Câu ${q.question_number}${isDone ? (ans.isCorrect ? ' (Đúng)' : ' (Sai)') : ''}">
-                ${q.question_number}
-              </button>
-            `;
-          }).join('')}
+      <div class="listening-meta-bar">
+        <div class="listening-meta-left">
+          <span class="listening-section-label">Nghe và chọn Đúng / Sai</span>
+          <span class="listening-mode-chip">Chế độ luyện tập</span>
         </div>
-        <button type="button" class="listening-nav-arrow-btn next" onclick="ListeningPractice.nextQuestion()" ${currentQuestionIndex >= questions.length - 1 ? 'disabled' : ''} title="Câu sau">
-          <span>Tiếp</span>
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
-        </button>
+
+        <div class="listening-meta-right">
+          <!-- Compact question progress map -->
+          <div class="listening-progress-map" role="tablist" aria-label="Bản đồ tiến độ bài thi">
+            ${questions.map((q, idx) => {
+              const isCurrent = idx === currentQuestionIndex;
+              const ans = userSessionAnswers[q.id];
+              const isDone = ans && ans.answered;
+              let dotClass = 'pending';
+              if (isCurrent) {
+                dotClass = 'is-current';
+              } else if (isDone) {
+                dotClass = ans.isCorrect ? 'is-correct' : 'is-incorrect';
+              }
+              return `
+                <button type="button" class="listening-map-dot ${dotClass}"
+                  onclick="ListeningPractice.goToQuestion(${idx})"
+                  role="tab"
+                  aria-selected="${isCurrent}"
+                  title="Câu ${q.question_number}${isDone ? (ans.isCorrect ? ' (Đúng)' : ' (Sai)') : ''}">
+                  ${q.question_number}
+                </button>
+              `;
+            }).join('')}
+          </div>
+
+          <div class="listening-rules-wrap">
+            <button type="button" class="listening-rules-btn" id="listeningRulesBtn" onclick="ListeningPractice.toggleRulesDialog(event)" title="Xem quy chế thi & hướng dẫn" aria-label="Quy chế bài thi">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              <span>Quy chế</span>
+            </button>
+            <div class="listening-rules-popover" id="listeningRulesPopover" hidden>
+              <div class="listening-rules-popover-content">
+                <p class="rules-popover-item"><strong>Quy chế thi thực tế:</strong> Mỗi câu nghe đúng 1 lần duy nhất.</p>
+                <p class="rules-popover-item"><strong>Chế độ luyện tập:</strong> Nghe lại tùy ý, chỉnh tốc độ phát và xem lời thoại chi tiết sau khi trả lời.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     `;
   }
@@ -569,37 +636,19 @@ const ListeningPractice = (function() {
   function renderLearnerView() {
     const q = currentQuestion;
     const isUnaligned = !q.segments || !q.segments.full_question || q.segments.full_question.start_ms == null;
+    const questions = (examData && Array.isArray(examData.questions)) ? examData.questions : [currentQuestion];
+    const hasNext = currentQuestionIndex < questions.length - 1;
 
     return `
       <section class="listening-unified-card" aria-label="Bài tập luyện nghe">
-        <!-- 1. Question Context Header (Clean tag + Info Disclosure) -->
-        <div class="listening-section-header">
-          <div class="listening-section-title-wrap">
-            <span class="listening-section-label">Nghe và chọn Đúng / Sai</span>
-            <span class="listening-mode-chip">Chế độ luyện tập</span>
-          </div>
-          <div class="listening-rules-wrap">
-            <button type="button" class="listening-rules-btn" id="listeningRulesBtn" onclick="ListeningPractice.toggleRulesDialog(event)" title="Xem quy chế thi & hướng dẫn luyện tập" aria-label="Quy chế bài thi">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-              <span>Quy chế</span>
-            </button>
-            <div class="listening-rules-popover" id="listeningRulesPopover" hidden>
-              <div class="listening-rules-popover-content">
-                <p class="rules-popover-item"><strong>Quy chế thi thực tế:</strong> Mỗi câu nghe đúng 1 lần duy nhất.</p>
-                <p class="rules-popover-item"><strong>Chế độ luyện tập:</strong> Bạn có thể nghe lại tùy ý, điều chỉnh tốc độ phát và xem lời thoại chi tiết sau khi trả lời.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- 1. Streamlined Meta Bar (Title + Progress Map + Rules popover) -->
+        ${renderMetaBar()}
 
-        <!-- 1b. Question Pagination Strip -->
-        ${renderQuestionPagination()}
-
-        <!-- 2. Statement Presentation (Prominent & Left-aligned) -->
+        <!-- 2. Statement Presentation (Immediate, Uncluttered, Front & Center) -->
         <div class="listening-statement-block">
           <div class="listening-statement-zh" lang="zh-CN">${q.statement.zh}</div>
           ${learnerState.answered && learnerState.showPinyin && q.statement.pinyin ? `
-            <div class="listening-statement-pinyin">${q.statement.pinyin}</div>
+            <div class="listening-statement-pinyin">${formatNaturalPinyin(q.statement.pinyin)}</div>
           ` : ''}
           ${learnerState.answered && learnerState.showTranslation && q.statement.vi ? `
             <div class="listening-statement-vi">${q.statement.vi}</div>
@@ -609,74 +658,74 @@ const ListeningPractice = (function() {
         <!-- 3. Integrated Audio Player Surface -->
         ${isUnaligned ? renderUnalignedNotice() : renderLearnerAudioPlayer()}
 
-        <!-- 4. Equal-Sized Answer Controls (Đúng / Sai) -->
+        <!-- 4. Symmetrical 2-Line Answer Controls (Đúng / Sai) -->
         <div class="listening-answers-zone">
           <div class="listening-answers-grid">
-            <button type="button" class="listening-choice-btn choice-true ${getChoiceBtnClass(true)}"
-              onclick="ListeningPractice.submitAnswer(true)" ${learnerState.answered ? 'disabled' : ''} aria-label="Đúng">
-              <span class="listening-choice-label">Đúng</span>
-              ${getChoiceFeedbackBadge(true)}
-            </button>
-            <button type="button" class="listening-choice-btn choice-false ${getChoiceBtnClass(false)}"
-              onclick="ListeningPractice.submitAnswer(false)" ${learnerState.answered ? 'disabled' : ''} aria-label="Sai">
-              <span class="listening-choice-label">Sai</span>
-              ${getChoiceFeedbackBadge(false)}
-            </button>
+            ${renderChoiceButton(true)}
+            ${renderChoiceButton(false)}
           </div>
         </div>
 
-        <!-- 5. Compact Feedback Section (revealed after answering) -->
+        <!-- 5. Calm Neutral Feedback Section (revealed after answering) -->
         ${learnerState.answered ? renderCompactFeedback() : ''}
 
         <!-- 6. Transcript & Vocabulary Section (revealed after answering) -->
         ${learnerState.answered ? renderTranscriptAndVocabSection() : ''}
+
+        <!-- 7. Bottom Navigation (Previous / Next Question) -->
+        <div class="listening-bottom-nav">
+          <button type="button" class="listening-nav-arrow-btn prev" onclick="ListeningPractice.prevQuestion()" ${currentQuestionIndex === 0 ? 'disabled' : ''} title="Câu trước">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+            <span>Trước</span>
+          </button>
+          <span class="listening-bottom-counter">${currentQuestion.question_number} / ${questions.length}</span>
+          <button type="button" class="listening-nav-arrow-btn next ${learnerState.answered ? 'is-answered' : ''}" onclick="ListeningPractice.nextQuestion()" ${!hasNext ? 'disabled' : ''} title="Câu tiếp">
+            <span>Tiếp</span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
       </section>
     `;
   }
 
-  function getChoiceBtnClass(choiceVal) {
-    if (!learnerState.answered) return '';
-    const isThisChoice = learnerState.selectedChoice === choiceVal;
-    const isCorrectChoice = currentQuestion.answer === choiceVal;
+  function renderChoiceButton(choiceVal) {
+    const label = choiceVal ? 'Đúng' : 'Sai';
+    let btnStateClass = '';
+    let subtext = '&nbsp;';
+    let subtextClass = 'listening-choice-subtext-empty';
 
-    if (isThisChoice) {
-      return isCorrectChoice ? 'is-correct-selected' : 'is-incorrect-selected';
-    }
-    if (isCorrectChoice) {
-      return 'is-correct-answer';
-    }
-    return 'is-dimmed';
-  }
+    if (learnerState.answered) {
+      const isThisChoice = learnerState.selectedChoice === choiceVal;
+      const isCorrectChoice = currentQuestion.answer === choiceVal;
 
-  function getChoiceFeedbackBadge(choiceVal) {
-    if (!learnerState.answered) return '';
-    const isThisChoice = learnerState.selectedChoice === choiceVal;
-    const isCorrectChoice = currentQuestion.answer === choiceVal;
+      if (isThisChoice) {
+        if (isCorrectChoice) {
+          btnStateClass = 'is-correct-selected';
+          subtext = 'Bạn đã chọn · Chính xác';
+          subtextClass = 'is-correct';
+        } else {
+          btnStateClass = 'is-incorrect-selected';
+          subtext = 'Bạn đã chọn';
+          subtextClass = 'is-incorrect';
+        }
+      } else if (isCorrectChoice) {
+        btnStateClass = 'is-correct-answer';
+        subtext = 'Đáp án đúng';
+        subtextClass = 'is-correct';
+      } else {
+        btnStateClass = 'is-dimmed';
+      }
+    }
 
-    if (isThisChoice && isCorrectChoice) {
-      return `
-        <span class="listening-choice-badge correct">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-          <span>Đáp án đúng</span>
-        </span>
-      `;
-    }
-    if (isThisChoice && !isCorrectChoice) {
-      return `
-        <span class="listening-choice-badge incorrect">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-          <span>Lựa chọn của bạn</span>
-        </span>
-      `;
-    }
-    if (isCorrectChoice) {
-      return `
-        <span class="listening-choice-badge correct-dimmed">
-          <span>Đáp án đúng</span>
-        </span>
-      `;
-    }
-    return '';
+    return `
+      <button type="button" class="listening-choice-btn choice-${choiceVal ? 'true' : 'false'} ${btnStateClass}"
+        onclick="ListeningPractice.submitAnswer(${choiceVal})"
+        ${learnerState.answered ? 'disabled' : ''}
+        aria-label="${label}">
+        <span class="listening-choice-primary">${label}</span>
+        <span class="listening-choice-subtext ${subtextClass}">${subtext}</span>
+      </button>
+    `;
   }
 
   function renderUnalignedNotice() {
@@ -789,49 +838,63 @@ const ListeningPractice = (function() {
   }
 
   // ---------------------------------------------------------------------------
-  // Compact Feedback Section (Restrained colors & inline evidence highlight)
+  // Compact Feedback Section (Neutral warm palette & inline evidence playback)
   // ---------------------------------------------------------------------------
   function renderCompactFeedback() {
     const q = currentQuestion;
     const isCorrect = learnerState.isCorrect;
-    const questions = (examData && Array.isArray(examData.questions)) ? examData.questions : [];
-    const hasNext = currentQuestionIndex < questions.length - 1;
+    const sentences = (q.transcript && Array.isArray(q.transcript.sentences)) ? q.transcript.sentences : [];
+
+    // Find matching sentence for evidence replay
+    let evidenceSentence = null;
+    if (q.evidence) {
+      if (typeof q.evidence.sentence_index === 'number' && sentences[q.evidence.sentence_index]) {
+        evidenceSentence = sentences[q.evidence.sentence_index];
+      } else if (q.evidence.zh) {
+        evidenceSentence = sentences.find(s => s.zh && (s.zh.includes(q.evidence.zh) || q.evidence.zh.includes(s.zh)));
+      }
+    }
+    const evidenceSentenceId = evidenceSentence ? evidenceSentence.id : (sentences.length > 0 ? sentences[0].id : null);
+    const evidenceVi = evidenceSentence && evidenceSentence.vi ? evidenceSentence.vi : '';
+    const isEvidencePlaying = evidenceSentenceId && learnerState.activePlayingSegment === evidenceSentenceId;
 
     return `
-      <div class="listening-feedback-section ${isCorrect ? 'correct' : 'incorrect'}">
-        <div class="listening-feedback-header">
-          <div class="listening-feedback-status">
+      <div class="listening-feedback-card ${isCorrect ? 'is-correct' : 'is-incorrect'}">
+        <div class="listening-feedback-header-line">
+          <span class="listening-feedback-badge ${isCorrect ? 'badge-correct' : 'badge-incorrect'}">
             ${isCorrect ? `
-              <span class="listening-status-icon correct">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              </span>
-              <span class="listening-status-text">Chính xác</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Chính xác</span>
             ` : `
-              <span class="listening-status-icon incorrect">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-              </span>
-              <span class="listening-status-text">Chưa đúng (Đáp án: ${q.answer ? 'Đúng' : 'Sai'})</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              <span>Chưa đúng · Đáp án: ${q.answer ? 'Đúng' : 'Sai'}</span>
             `}
-          </div>
+          </span>
         </div>
 
         <div class="listening-feedback-body">
-          <p class="listening-feedback-explanation">${q.explanation_vi}</p>
-          ${q.evidence && q.evidence.zh ? `
-            <div class="listening-evidence-line">
-              <span class="listening-evidence-label">Căn cứ trong bài:</span>
-              <span class="listening-evidence-quote listening-evidence-highlight" lang="zh-CN">
-                “${q.evidence.zh}”
-              </span>
-            </div>
-          ` : ''}
+          <p class="listening-feedback-explanation">${q.explanation_vi || ''}</p>
 
-          ${hasNext ? `
-            <div class="listening-next-action-wrap">
-              <button type="button" class="listening-next-q-btn" onclick="ListeningPractice.nextQuestion()">
-                <span>Chuyển sang Câu ${currentQuestion.question_number + 1}</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
-              </button>
+          ${q.evidence && q.evidence.zh ? `
+            <div class="listening-evidence-box">
+              <div class="listening-evidence-header">
+                <span class="listening-evidence-tag">Căn cứ trong bài:</span>
+                ${evidenceSentenceId ? `
+                  <button type="button" class="listening-replay-evidence-btn ${isEvidencePlaying ? 'is-playing' : ''}"
+                    onclick="ListeningPractice.togglePlaySentence('${evidenceSentenceId}')"
+                    title="Nghe lại câu chứa bằng chứng">
+                    ${isEvidencePlaying ? `
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+                      <span>Tạm dừng</span>
+                    ` : `
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                      <span>Nghe lại câu chứa bằng chứng</span>
+                    `}
+                  </button>
+                ` : ''}
+              </div>
+              <div class="listening-evidence-quote listening-evidence-highlight" lang="zh-CN">“${q.evidence.zh}”</div>
+              ${evidenceVi ? `<div class="listening-evidence-vi">${evidenceVi}</div>` : ''}
             </div>
           ` : ''}
         </div>
@@ -847,17 +910,39 @@ const ListeningPractice = (function() {
 
     return `
       <div class="listening-transcript-container">
-        <!-- Section Header with Compact Toggles -->
+        <!-- Section Header with Pill Toggles -->
         <div class="listening-transcript-header">
           <div class="listening-transcript-title">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
             <span>Lời thoại</span>
           </div>
           <div class="listening-transcript-toggles">
-            <button type="button" class="listening-toggle-chip ${learnerState.showPinyin ? 'active' : ''}"
-              onclick="ListeningPractice.toggleTranscriptPinyin()">Pinyin</button>
-            <button type="button" class="listening-toggle-chip ${learnerState.showTranslation ? 'active' : ''}"
-              onclick="ListeningPractice.toggleTranscriptTranslation()">Bản dịch</button>
+            <button type="button" class="listening-toggle-pill ${learnerState.showPinyin ? 'is-active' : ''}"
+              onclick="ListeningPractice.toggleTranscriptPinyin()"
+              aria-pressed="${learnerState.showPinyin}"
+              title="Bật / tắt Pinyin">
+              <span class="listening-toggle-indicator">
+                ${learnerState.showPinyin ? `
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                ` : `
+                  <span class="indicator-off"></span>
+                `}
+              </span>
+              <span>Pinyin</span>
+            </button>
+            <button type="button" class="listening-toggle-pill ${learnerState.showTranslation ? 'is-active' : ''}"
+              onclick="ListeningPractice.toggleTranscriptTranslation()"
+              aria-pressed="${learnerState.showTranslation}"
+              title="Bật / tắt Bản dịch">
+              <span class="listening-toggle-indicator">
+                ${learnerState.showTranslation ? `
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                ` : `
+                  <span class="indicator-off"></span>
+                `}
+              </span>
+              <span>Bản dịch</span>
+            </button>
           </div>
         </div>
 
@@ -873,15 +958,15 @@ const ListeningPractice = (function() {
                   ${!hasValidTime ? 'disabled title="Chưa có mốc thời gian"' : `title="Nghe câu này (${((s.end_ms - s.start_ms)/1000).toFixed(1)}s)"`}
                   aria-label="Nghe câu này">
                   ${isPlayingThis ? `
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
                   ` : `
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
                   `}
                 </button>
                 <div class="listening-row-content">
                   <div class="listening-row-zh" lang="zh-CN">${s.zh}</div>
                   ${learnerState.showPinyin && s.pinyin ? `
-                    <div class="listening-row-pinyin">${s.pinyin}</div>
+                    <div class="listening-row-pinyin">${formatNaturalPinyin(s.pinyin)}</div>
                   ` : ''}
                   ${learnerState.showTranslation && s.vi ? `
                     <div class="listening-row-vi">${s.vi}</div>
@@ -1411,6 +1496,23 @@ const ListeningPractice = (function() {
         row.classList.toggle('is-playing-row', Boolean(isPlaying));
       }
     });
+
+    // 2b. Evidence replay button in feedback
+    const evidenceReplayBtn = document.querySelector('.listening-replay-evidence-btn');
+    if (evidenceReplayBtn) {
+      const onclickAttr = evidenceReplayBtn.getAttribute('onclick') || '';
+      const match = onclickAttr.match(/'([^']+)'/);
+      const sentenceId = match ? match[1] : null;
+      const isPlaying = sentenceId && learnerState.activePlayingSegment === sentenceId;
+      evidenceReplayBtn.classList.toggle('is-playing', Boolean(isPlaying));
+      evidenceReplayBtn.innerHTML = isPlaying ? `
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+        <span>Tạm dừng</span>
+      ` : `
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        <span>Nghe lại câu chứa bằng chứng</span>
+      `;
+    }
 
     // 3. Editor Preview Button
     const prevBtn = document.querySelector('.listening-preview-btn');
