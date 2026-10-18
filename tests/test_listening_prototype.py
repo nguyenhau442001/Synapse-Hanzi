@@ -104,10 +104,32 @@ def test_integration_files():
 
     print("   ✓ Navigation, routing, sw.js, and reading non-regression pass!")
 
+def test_ui_refinements():
+    print("-> Checking UI refinements in CSS and JS...")
+    css_content = (ROOT / "assets/css/listening-practice.css").read_text(encoding="utf-8")
+    js_content = (ROOT / "assets/js/listening-practice.js").read_text(encoding="utf-8")
+
+    # Layout width 1040-1120px
+    assert "max-width: 1080px" in css_content, "max-width: 1080px missing from listening CSS"
+
+    # UI labels in JS
+    assert "Lời thoại" in js_content, "Transcript section must be titled 'Lời thoại'"
+    assert "Nghe đoạn này" in js_content, "Player button must use concise label 'Nghe đoạn này'"
+    assert "Căn chỉnh audio" in js_content, "Header must provide secondary 'Căn chỉnh audio' action"
+    assert "listening-evidence-highlight" in js_content, "Key evidence words must be highlighted"
+    assert "Đúng" in js_content and "Sai" in js_content, "Choice buttons must use Đúng and Sai"
+
+    # Touch target sizes in CSS
+    assert "height: 44px" in css_content or "min-height: 44px" in css_content, "Play buttons must have >= 44px touch target"
+    assert "height: 56px" in css_content or "52px" in css_content, "Choice buttons must have 52-60px height"
+
+    print("   ✓ UI refinements verified successfully!")
+
 def main():
     print("=== Starting HSK Listening Prototype Automated Verification ===")
     test_data_integrity()
     test_integration_files()
+    test_ui_refinements()
     print("=== ALL VERIFICATION TESTS PASSED SUCCESSFULLY! ===")
 
 if __name__ == "__main__":
