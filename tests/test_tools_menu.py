@@ -67,7 +67,7 @@ def test_tools_menu_skill_grouping_and_order():
     # 3. Viết
     viet_items = sections[2]["items"]
     assert len(viet_items) == 2
-    assert "Xếp câu" in viet_items[0]["label"]
+    assert "Xếp câu HSK4" in viet_items[0]["label"]
     assert "setPrimaryTab('sentenceGame')" in viet_items[0]["onclick"]
     assert "Điền từ" in viet_items[1]["label"]
     assert "setPrimaryTab('speedQuiz')" in viet_items[1]["onclick"]

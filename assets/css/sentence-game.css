@@ -107,114 +107,115 @@
   color: var(--accent);
 }
 
-/* Collapsible Settings Drawer */
-.sentence-game-filters {
-  padding: 12px 14px;
-  background: var(--bg);
-  border-radius: 12px;
-  border: 1px solid var(--border);
-  animation: settingsSlideDown 0.18s ease-out;
-}
-
-.sentence-game-filters[hidden] {
-  display: none !important;
-}
-
-@keyframes settingsSlideDown {
-  from { opacity: 0; transform: translateY(-4px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.sentence-filters-inner {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.sentence-filter-section {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.sentence-filter-label {
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--text-secondary);
-}
-
-.sentence-level-chips {
-  display: inline-flex;
-  background: var(--card-bg);
-  padding: 3px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  gap: 2px;
-  flex-wrap: wrap;
-}
-
-.sentence-lvl-btn {
-  height: 27px;
-  padding: 0 10px;
-  border: none;
-  border-radius: 7px;
-  background: transparent;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--text-secondary);
-  cursor: pointer;
-  transition: all 0.14s ease;
-}
-
-.sentence-lvl-btn:hover {
-  color: var(--text-primary);
-}
-
-.sentence-lvl-btn.active {
-  background: var(--bg);
-  color: var(--accent);
-  font-weight: 700;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-}
-
-.sentence-scope-controls {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 12.5px;
-  flex-wrap: wrap;
-}
-
-.sentence-scope-label {
+/* Exam Selector in Header */
+.sentence-exam-selector-group {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: var(--text-secondary);
-  font-size: 12px;
-  font-weight: 500;
 }
 
-.sentence-scope-label select {
-  height: 28px;
+.sentence-exam-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.sentence-exam-select {
+  height: 32px;
+  padding: 0 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.16s ease, box-shadow 0.16s ease;
+}
+
+.sentence-exam-select:hover,
+.sentence-exam-select:focus-visible {
+  border-color: var(--accent);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--accent-light, rgba(234, 88, 12, 0.15));
+}
+
+/* Question Navigator (86 - 95) */
+.sentence-question-nav-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.sentence-question-nav-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.sentence-question-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.sentence-q-btn {
+  position: relative;
+  min-width: 38px;
+  height: 32px;
   padding: 0 8px;
   border: 1px solid var(--border);
   border-radius: 8px;
-  background: var(--card-bg);
-  color: var(--text-primary);
-  font-size: 12px;
-  font-weight: 500;
+  background: var(--bg);
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  transition: all 0.15s ease;
 }
 
-.sentence-pool-badge {
-  font-size: 11.5px;
-  font-weight: 600;
-  padding: 3px 9px;
-  border-radius: 6px;
+.sentence-q-btn:hover {
+  border-color: var(--accent);
+  color: var(--text-primary);
   background: var(--card-bg);
-  border: 1px solid var(--border);
+}
+
+.sentence-q-btn.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+  box-shadow: 0 2px 8px rgba(234, 88, 12, 0.28);
+}
+
+.sentence-q-btn.is-solved:not(.active) {
+  border-color: rgba(16, 185, 129, 0.45);
+  background: rgba(16, 185, 129, 0.08);
+  color: #059669;
+}
+
+.sentence-q-btn .solved-dot {
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.sentence-game-instruction {
+  font-size: 14px;
+  font-weight: 500;
   color: var(--text-secondary);
+  line-height: 1.45;
 }
 
 /* 2. Challenge Board */
@@ -503,6 +504,139 @@
   box-sizing: border-box;
 }
 
+/* Tactile Hanban Sentence Tokens */
+.sentence-token {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-family: var(--font-cjk-clean);
+  cursor: pointer;
+  user-select: none;
+  box-sizing: border-box;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.sentence-bank-token {
+  background: var(--card-bg);
+  border: 1.5px solid var(--border);
+  border-bottom: 3px solid var(--tile-shadow-border);
+  color: var(--text-primary);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.sentence-bank-token:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  border-bottom-color: var(--accent);
+  box-shadow: 0 6px 14px rgba(234, 88, 12, 0.15);
+}
+
+.sentence-bank-token:active {
+  transform: translateY(1px);
+  border-bottom-width: 1.5px;
+}
+
+.sentence-bank-token:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.sentence-slot-token {
+  background: var(--card-bg);
+  border: 1.5px solid var(--border);
+  border-bottom: 3px solid var(--tile-shadow-border);
+  color: var(--text-primary);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+  animation: tileSnap 0.18s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.sentence-slot-token:hover {
+  transform: translateY(-2px);
+  border-color: var(--danger-text, #ef4444);
+  border-bottom-color: var(--danger-text, #ef4444);
+  background: var(--danger-bg, #fef2f2);
+}
+
+.token-zh {
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.token-py {
+  font-size: 11.5px;
+  font-family: var(--font-base, -apple-system, sans-serif);
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-top: 2px;
+  line-height: 1;
+}
+
+.token-shortcut {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-tertiary);
+  line-height: 1;
+}
+
+/* End punctuation mark (fixed at the end of sentence slots) */
+.sentence-end-punct {
+  font-size: 28px;
+  font-family: var(--font-cjk-clean);
+  font-weight: 700;
+  color: var(--text-primary);
+  align-self: center;
+  user-select: none;
+  padding: 0 4px;
+}
+
+/* Dropzone Placeholder */
+.sentence-slot-placeholder {
+  min-width: 58px;
+  min-height: 52px;
+  border: 2px dashed var(--border);
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.sentence-slot-placeholder.dragover {
+  border-color: var(--accent);
+  background: var(--accent-light, #fbf2ee);
+}
+
+.placeholder-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border);
+}
+
+/* Bank Empty State */
+.sentence-bank-empty-state {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  color: #059669;
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px dashed rgba(16, 185, 129, 0.4);
+  border-radius: 12px;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
 /* Magnetic Word Tiles in Bank */
 .sentence-chip {
   min-width: 54px;
@@ -742,6 +876,26 @@
   font-size: 14px;
   color: var(--text-secondary);
   font-weight: 500;
+}
+
+.sentence-result-vi {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  margin-top: 4px;
+}
+
+.grammar-badge {
+  display: inline-block;
+  padding: 2px 7px;
+  font-size: 11px;
+  font-weight: 700;
+  background: var(--accent-light, #fbf2ee);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  margin-right: 6px;
 }
 
 /* Optional Grammar Disclosure */
@@ -2268,6 +2422,36 @@ body.is-game-view .featured-topics {
 }
 
 @media (max-width: 600px) {
+  .sentence-game {
+    margin: 10px auto 24px;
+    padding: 0 8px;
+    gap: 12px;
+  }
+  .sentence-game-top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .sentence-game-tools {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .sentence-question-nav {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 4px;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+  .sentence-card-board {
+    padding: 16px 14px;
+    border-radius: 14px;
+    gap: 16px;
+  }
+  .token-zh {
+    font-size: 19px;
+  }
   .guess-word-game,
   .speed-quiz-game {
     margin: 12px auto 28px;
