@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient glow / background depth for the core location/focal point -->
+  <circle cx="120" cy="120" r="70" fill="#242833" opacity="0.5"/>
+  <circle cx="120" cy="120" r="45" fill="#2D3342" opacity="0.7"/>
+
+  <!-- Concentric radar / focal ripples (representing "chỗ then chốt", exact place/epicenter) -->
+  <circle cx="120" cy="120" r="60" fill="none" stroke="#3A4254" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6"/>
+  <circle cx="120" cy="120" r="35" fill="none" stroke="#F59E0B" stroke-width="1" opacity="0.3"/>
+
+  <!-- Central Target / Pin / Core Element (representing "Nơi, chỗ, chỗ then chốt") -->
+  <!-- Outer pulse ring -->
+  <circle cx="120" cy="112" r="22" fill="#F59E0B" opacity="0.15"/>
+  
+  <!-- Map Pin / Landmark Icon Base (Modern Flat Vector) -->
+  <g transform="translate(0, 2)">
+    <!-- Pin Head -->
+    <path d="M120 72 C106.7 72 96 82.7 96 96 C96 114 120 138 120 138 C120 138 144 114 144 96 C144 82.7 133.3 72 120 72 Z" fill="#F59E0B"/>
+    
+    <!-- Inner Cutout in Pin -->
+    <circle cx="120" cy="95" r="8" fill="#1A1D24"/>
+    
+    <!-- Glowing Core Point -->
+    <circle cx="120" cy="95" r="4" fill="#38BDF8"/>
+  </g>
+
+  <!-- Ground Shadow / Base Indicator -->
+  <ellipse cx="120" cy="150" rx="18" ry="5" fill="#0F1117"/>
+
+  <!-- Magnifying / Investigating element intersecting the core (referencing the context of finding the exact crux) -->
+  <g transform="translate(132, 118) rotate(-25)">
+    <circle cx="0" cy="0" r="14" fill="none" stroke="#38BDF8" stroke-width="3.5"/>
+    <circle cx="0" cy="0" r="14" fill="#38BDF8" opacity="0.1"/>
+    <!-- Handle -->
+    <rect x="-3" y="14" width="6" height="18" rx="3" fill="#64748B"/>
+    <rect x="-1.5" y="16" width="3" height="14" rx="1.5" fill="#94A3B8"/>
+  </g>
+
+  <!-- Small accent nodes symbolizing discovered data points/aspects around the core -->
+  <circle cx="76" cy="90" r="4" fill="#64748B"/>
+  <circle cx="168" cy="135" r="4" fill="#64748B"/>
+  <circle cx="95" cy="155" r="3" fill="#475569"/>
+  
+  <!-- Connecting dashed diagnostic lines -->
+  <path d="M82 92 L102 95" stroke="#475569" stroke-width="1.5" stroke-dasharray="2 2"/>
+  <path d="M148 125 L162 132" stroke="#475569" stroke-width="1.5" stroke-dasharray="2 2"/>
+</svg>
