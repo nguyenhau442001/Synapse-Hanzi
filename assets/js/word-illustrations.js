@@ -46942,6 +46942,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/切换.svg",
     "caption": "chuyển đổi; hoán đổi"
   },
+  "且": {
+    "file": "且.svg",
+    "src": "images/HSK_3.0/level7/且.svg",
+    "caption": "hơn nữa; vả lại"
+  },
   "切记": {
     "file": "切记.svg",
     "src": "images/HSK_3.0/level7/切记.svg",
@@ -47107,6 +47112,16 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/轻型.svg",
     "caption": "hạng nhẹ; loại nhẹ"
   },
+  "情不自禁": {
+    "file": "情不自禁.svg",
+    "src": "images/HSK_3.0/level7/情不自禁.svg",
+    "caption": "không kìm được lòng; bất giác"
+  },
+  "情调": {
+    "file": "情调.svg",
+    "src": "images/HSK_3.0/level7/情调.svg",
+    "caption": "phong điệu; bầu không khí thi vị"
+  },
   "情怀": {
     "file": "情怀.svg",
     "src": "images/HSK_3.0/level7/情怀.svg",
@@ -47257,15 +47272,50 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/去除.svg",
     "caption": "loại bỏ; tẩy sạch"
   },
+  "去处": {
+    "file": "去处.svg",
+    "src": "images/HSK_3.0/level7/去处.svg",
+    "caption": "nơi đến; chốn dừng chân"
+  },
   "去向": {
     "file": "去向.svg",
     "src": "images/HSK_3.0/level7/去向.svg",
     "caption": "nơi đến; hướng đi"
   },
+  "圈子": {
+    "file": "圈子.svg",
+    "src": "images/HSK_3.0/level7/圈子.svg",
+    "caption": "giới; hội nhóm"
+  },
+  "拳": {
+    "file": "拳.svg",
+    "src": "images/HSK_3.0/level7/拳.svg",
+    "caption": "quyền; nắm đấm"
+  },
+  "全方位": {
+    "file": "全方位.svg",
+    "src": "images/HSK_3.0/level7/全方位.svg",
+    "caption": "toàn diện; mọi phương diện"
+  },
   "拳击": {
     "file": "拳击.svg",
     "src": "images/HSK_3.0/level7/拳击.svg",
     "caption": "quyền anh; môn boxing"
+  },
+  "全能": {
+    "file": "全能.svg",
+    "src": "images/HSK_3.0/level7/全能.svg",
+    "caption": "toàn năng; giỏi mọi mặt"
+  },
+  "全身心": {
+    "file": "全身心.svg",
+    "src": "images/HSK_3.0/level7/全身心.svg",
+    "caption": "toàn tâm toàn ý; dốc hết tâm sức"
+  },
+  "诠释": {
+    "file": "诠释.svg",
+    "src": "images/HSK_3.0/level7/诠释.svg",
+    "caption": "diễn giải; thể hiện sống động"
   },
   "权限": {
     "file": "权限.svg",
@@ -48027,6 +48077,16 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/伸手.svg",
     "caption": "ngửa tay xin xỏ; chìa tay"
   },
+  "深思": {
+    "file": "深思.svg",
+    "src": "images/HSK_3.0/level7/深思.svg",
+    "caption": "suy ngẫm sâu sắc; suy nghĩ chín chắn"
+  },
+  "申诉": {
+    "file": "申诉.svg",
+    "src": "images/HSK_3.0/level7/申诉.svg",
+    "caption": "khiếu nại; kháng nghị"
+  },
   "深邃": {
     "file": "深邃.svg",
     "src": "images/HSK_3.0/level7/深邃.svg",
@@ -48582,6 +48642,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/守信.svg",
     "caption": "giữ chữ tín; giữ lời hứa"
   },
+  "手掌": {
+    "file": "手掌.svg",
+    "src": "images/HSK_3.0/level7/手掌.svg",
+    "caption": "lòng bàn tay; bàn tay"
+  },
   "守株待兔": {
     "file": "守株待兔.svg",
     "src": "images/HSK_3.0/level7/守株待兔.svg",
@@ -48657,6 +48722,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/疏导.svg",
     "caption": "phân luồng; giải tỏa"
   },
+  "梳理": {
+    "file": "梳理.svg",
+    "src": "images/HSK_3.0/level7/梳理.svg",
+    "caption": "hệ thống lại; rà soát chỉnh lý"
+  },
   "枢纽": {
     "file": "枢纽.svg",
     "src": "images/HSK_3.0/level7/枢纽.svg",
@@ -48697,6 +48767,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/赎.svg",
     "caption": "chuộc; chuộc lại"
   },
+  "曙光": {
+    "file": "曙光.svg",
+    "src": "images/HSK_3.0/level7/曙光.svg",
+    "caption": "ánh bình minh; rạng đông; tia hy vọng"
+  },
   "属相": {
     "file": "属相.svg",
     "src": "images/HSK_3.0/level7/属相.svg",
@@ -48732,10 +48807,60 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/树梢.svg",
     "caption": "ngọn cây"
   },
+  "束手无策": {
+    "file": "束手无策.svg",
+    "src": "images/HSK_3.0/level7/束手无策.svg",
+    "caption": "bó tay hết cách; bất lực hoàn toàn"
+  },
+  "树荫": {
+    "file": "树荫.svg",
+    "src": "images/HSK_3.0/level7/树荫.svg",
+    "caption": "bóng cây; bóng râm"
+  },
+  "刷新": {
+    "file": "刷新.svg",
+    "src": "images/HSK_3.0/level7/刷新.svg",
+    "caption": "phá vỡ (kỷ lục); làm mới"
+  },
+  "耍赖": {
+    "file": "耍赖.svg",
+    "src": "images/HSK_3.0/level7/耍赖.svg",
+    "caption": "ăn vạ; cù nhầy gian lận"
+  },
+  "衰减": {
+    "file": "衰减.svg",
+    "src": "images/HSK_3.0/level7/衰减.svg",
+    "caption": "suy giảm; hao hụt (tín hiệu)"
+  },
+  "摔跤": {
+    "file": "摔跤.svg",
+    "src": "images/HSK_3.0/level7/摔跤.svg",
+    "caption": "té ngã; ngã"
+  },
   "衰竭": {
     "file": "衰竭.svg",
     "src": "images/HSK_3.0/level7/衰竭.svg",
     "caption": "suy kiệt; suy (chức năng cơ quan)"
+  },
+  "衰落": {
+    "file": "衰落.svg",
+    "src": "images/HSK_3.0/level7/衰落.svg",
+    "caption": "suy tàn; sa sút"
+  },
+  "衰弱": {
+    "file": "衰弱.svg",
+    "src": "images/HSK_3.0/level7/衰弱.svg",
+    "caption": "suy nhược; già yếu hao mòn"
+  },
+  "拴": {
+    "file": "拴.svg",
+    "src": "images/HSK_3.0/level7/拴.svg",
+    "caption": "buộc; cột"
+  },
+  "涮": {
+    "file": "涮.svg",
+    "src": "images/HSK_3.0/level7/涮.svg",
+    "caption": "rửa sạch"
   },
   "霜": {
     "file": "霜.svg",
@@ -48817,15 +48942,45 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/水准.svg",
     "caption": "trình độ; chuẩn mực"
   },
+  "睡袋": {
+    "file": "睡袋.svg",
+    "src": "images/HSK_3.0/level7/睡袋.svg",
+    "caption": "túi ngủ"
+  },
+  "税收": {
+    "file": "税收.svg",
+    "src": "images/HSK_3.0/level7/税收.svg",
+    "caption": "tiền thuế; thuế thu"
+  },
+  "税务": {
+    "file": "税务.svg",
+    "src": "images/HSK_3.0/level7/税务.svg",
+    "caption": "thuế vụ; ngành thuế"
+  },
   "顺差": {
     "file": "顺差.svg",
     "src": "images/HSK_3.0/level7/顺差.svg",
     "caption": "thặng dư thương mại; xuất siêu"
   },
+  "顺畅": {
+    "file": "顺畅.svg",
+    "src": "images/HSK_3.0/level7/顺畅.svg",
+    "caption": "thông suốt; trôi chảy"
+  },
+  "顺从": {
+    "file": "顺从.svg",
+    "src": "images/HSK_3.0/level7/顺从.svg",
+    "caption": "phục tùng; thuận theo"
+  },
   "顺理成章": {
     "file": "顺理成章.svg",
     "src": "images/HSK_3.0/level7/顺理成章.svg",
     "caption": "thuận lý thành chương; đương nhiên"
+  },
+  "顺路": {
+    "file": "顺路.svg",
+    "src": "images/HSK_3.0/level7/顺路.svg",
+    "caption": "tiện đường; tiện đường đi qua"
   },
   "顺其自然": {
     "file": "顺其自然.svg",
@@ -48862,6 +49017,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/说不上.svg",
     "caption": "nói không ra; khó mà nói"
   },
+  "说谎": {
+    "file": "说谎.svg",
+    "src": "images/HSK_3.0/level7/说谎.svg",
+    "caption": "nói dối"
+  },
   "说情": {
     "file": "说情.svg",
     "src": "images/HSK_3.0/level7/说情.svg",
@@ -48887,6 +49047,16 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/司空见惯.svg",
     "caption": "quen mắt; chuyện thường thấy"
   },
+  "私立": {
+    "file": "私立.svg",
+    "src": "images/HSK_3.0/level7/私立.svg",
+    "caption": "tư thục; dân lập"
+  },
+  "思前想后": {
+    "file": "思前想后.svg",
+    "src": "images/HSK_3.0/level7/思前想后.svg",
+    "caption": "suy đi tính lại; đắn đo suy nghĩ"
+  },
   "私事": {
     "file": "私事.svg",
     "src": "images/HSK_3.0/level7/私事.svg",
@@ -48896,6 +49066,36 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "私下.svg",
     "src": "images/HSK_3.0/level7/私下.svg",
     "caption": "chỗ riêng tư; riêng tư"
+  },
+  "思绪": {
+    "file": "思绪.svg",
+    "src": "images/HSK_3.0/level7/思绪.svg",
+    "caption": "dòng suy nghĩ; tâm tư"
+  },
+  "私营": {
+    "file": "私营.svg",
+    "src": "images/HSK_3.0/level7/私营.svg",
+    "caption": "tư doanh; tư nhân"
+  },
+  "私有": {
+    "file": "私有.svg",
+    "src": "images/HSK_3.0/level7/私有.svg",
+    "caption": "sở hữu tư nhân; tư hữu"
+  },
+  "死心": {
+    "file": "死心.svg",
+    "src": "images/HSK_3.0/level7/死心.svg",
+    "caption": "từ bỏ hy vọng; cam tâm chịu từ bỏ"
+  },
+  "寺": {
+    "file": "寺.svg",
+    "src": "images/HSK_3.0/level7/寺.svg",
+    "caption": "chùa; ngôi chùa; tự viện"
+  },
+  "似曾相识": {
+    "file": "似曾相识.svg",
+    "src": "images/HSK_3.0/level7/似曾相识.svg",
+    "caption": "dường như đã từng quen biết; quen quen"
   },
   "四方": {
     "file": "四方.svg",
@@ -48962,6 +49162,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/送行.svg",
     "caption": "tiễn đưa; tiễn chân"
   },
+  "搜查": {
+    "file": "搜查.svg",
+    "src": "images/HSK_3.0/level7/搜查.svg",
+    "caption": "khám xét; lục soát"
+  },
   "搜救": {
     "file": "搜救.svg",
     "src": "images/HSK_3.0/level7/搜救.svg",
@@ -49012,6 +49217,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/诉苦.svg",
     "caption": "kể khổ; than thở"
   },
+  "诉求": {
+    "file": "诉求.svg",
+    "src": "images/HSK_3.0/level7/诉求.svg",
+    "caption": "nguyện vọng; thỉnh cầu"
+  },
   "诉说": {
     "file": "诉说.svg",
     "src": "images/HSK_3.0/level7/诉说.svg",
@@ -49021,6 +49231,46 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "素养.svg",
     "src": "images/HSK_3.0/level7/素养.svg",
     "caption": "tố chất; trình độ văn hóa đạo đức"
+  },
+  "诉诸": {
+    "file": "诉诸.svg",
+    "src": "images/HSK_3.0/level7/诉诸.svg",
+    "caption": "viện đến; nhờ đến"
+  },
+  "蒜": {
+    "file": "蒜.svg",
+    "src": "images/HSK_3.0/level7/蒜.svg",
+    "caption": "củ tỏi; tỏi"
+  },
+  "算盘": {
+    "file": "算盘.svg",
+    "src": "images/HSK_3.0/level7/算盘.svg",
+    "caption": "toan tính; bàn tính"
+  },
+  "算账": {
+    "file": "算账.svg",
+    "src": "images/HSK_3.0/level7/算账.svg",
+    "caption": "tính sổ; thanh toán"
+  },
+  "虽说": {
+    "file": "虽说.svg",
+    "src": "images/HSK_3.0/level7/虽说.svg",
+    "caption": "tuy rằng; mặc dù nói rằng"
+  },
+  "随处可见": {
+    "file": "随处可见.svg",
+    "src": "images/HSK_3.0/level7/随处可见.svg",
+    "caption": "đâu đâu cũng thấy; thấy ở khắp mọi nơi"
+  },
+  "随机": {
+    "file": "随机.svg",
+    "src": "images/HSK_3.0/level7/随机.svg",
+    "caption": "ngẫu nhiên; tùy ý"
+  },
+  "随时随地": {
+    "file": "随时随地.svg",
+    "src": "images/HSK_3.0/level7/随时随地.svg",
+    "caption": "mọi lúc mọi nơi; bất cứ lúc nào bất cứ nơi đâu"
   },
   "缩减": {
     "file": "缩减.svg",

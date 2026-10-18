@@ -1,0 +1,58 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements (gymnastics arena lighting / podium atmosphere) -->
+  <circle cx="120" cy="120" r="85" fill="none" stroke="#262A34" stroke-width="2" stroke-dasharray="4 8"/>
+  <path d="M70 190 L170 190 L185 205 L55 205 Z" fill="#262A34"/>
+  <rect x="95" y="180" width="50" height="10" rx="3" fill="#F5A623"/>
+
+  <!-- Gymnastic Rings (representing All-Around event apparatus) -->
+  <circle cx="95" cy="55" r="16" fill="none" stroke="#4A5568" stroke-width="4"/>
+  <circle cx="145" cy="55" r="16" fill="none" stroke="#4A5568" stroke-width="4"/>
+  <line x1="95" y1="20" x2="95" y2="39" stroke="#4A5568" stroke-width="3"/>
+  <line x1="145" y1="20" x2="145" y2="39" stroke="#4A5568" stroke-width="3"/>
+
+  <!-- Central Character: The All-Around Athlete (Dynamic pose showing mastery across multiple disciplines) -->
+  <!-- Head -->
+  <circle cx="120" cy="85" r="12" fill="#E2E8F0"/>
+  
+  <!-- Torso & Leotard (Modern sleek athletic wear with gold accents) -->
+  <path d="M106 102 L134 102 L140 145 L100 145 Z" fill="#2B6CB0"/>
+  <path d="M110 102 L130 102 L135 130 L105 130 Z" fill="#3182CE"/>
+  <path d="M115 102 L125 102 L122 135 L118 135 Z" fill="#F5A623"/> <!-- Gold sash/stripe -->
+
+  <!-- Arms in dynamic champion balance pose -->
+  <path d="M106 105 L70 95" stroke="#E2E8F0" stroke-width="7" stroke-linecap="round"/>
+  <path d="M134 105 L170 95" stroke="#E2E8F0" stroke-width="7" stroke-linecap="round"/>
+  
+  <!-- Hands -->
+  <circle cx="67" cy="94" r="4" fill="#E2E8F0"/>
+  <circle cx="173" cy="94" r="4" fill="#E2E8F0"/>
+
+  <!-- Legs in powerful stance -->
+  <path d="M108 143 L90 178" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+  <path d="M132 143 L150 178" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Feet -->
+  <path d="M84 178 L94 182" stroke="#CBD5E0" stroke-width="5" stroke-linecap="round"/>
+  <path d="M146 178 L156 182" stroke="#CBD5E0" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Championship Gold Medal (representing the "金牌" context) -->
+  <path d="M120.5 110 L132 135 L109 135 Z" fill="#D69E2E"/> <!-- Ribbon -->
+  <circle cx="120" cy="143" r="11" fill="#F6E05E"/>
+  <circle cx="120" cy="143" r="8" fill="#D69E2E"/>
+  <text x="120" y="146" font-family="sans-serif" font-weight="bold" font-size="9" fill="#744210" text-anchor="middle">★</text>
+
+  <!-- Multi-discipline floating skill icons (representing universal mastery / 全能) -->
+  <!-- Skill 1: Ball/Coordination (Top Left) -->
+  <circle cx="55" cy="115" r="9" fill="#ED8936"/>
+  <path d="M49 111 Q55 117 61 111" fill="none" stroke="#DD6B20" stroke-width="2"/>
+
+  <!-- Skill 2: Star/Excellence (Top Right) -->
+  <polygon points="185,115 188,122 195,123 190,128 191,135 185,132 179,135 180,128 175,123 182,122" fill="#4FD1C5"/>
+
+  <!-- Skill 3: Lightning/Speed & Power (Lower Left) -->
+  <polygon points="65,150 75,150 70,160 78,160 62,178 67,165 60,165" fill="#ECC94B"/>
+
+</svg>
