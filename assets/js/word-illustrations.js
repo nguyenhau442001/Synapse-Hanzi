@@ -49796,6 +49796,256 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "通告.svg",
     "src": "images/HSK_3.0/level7/通告.svg",
     "caption": "thông cáo; yết thị"
+  },
+  "通红": {
+    "file": "通红.svg",
+    "src": "images/HSK_3.0/level7/通红.svg",
+    "caption": "đỏ bừng; đỏ rực"
+  },
+  "通顺": {
+    "file": "通顺.svg",
+    "src": "images/HSK_3.0/level7/通顺.svg",
+    "caption": "trôi chảy; suôn sẻ; lưu loát"
+  },
+  "通通": {
+    "file": "通通.svg",
+    "src": "images/HSK_3.0/level7/通通.svg",
+    "caption": "toàn bộ; tất thảy; hết thảy"
+  },
+  "通宵": {
+    "file": "通宵.svg",
+    "src": "images/HSK_3.0/level7/通宵.svg",
+    "caption": "thâu đêm; suốt đêm"
+  },
+  "同比": {
+    "file": "同比.svg",
+    "src": "images/HSK_3.0/level7/同比.svg",
+    "caption": "so với cùng kỳ năm trước; cùng kỳ"
+  },
+  "同步": {
+    "file": "同步.svg",
+    "src": "images/HSK_3.0/level7/同步.svg",
+    "caption": "đồng bộ; đồng thời"
+  },
+  "同等": {
+    "file": "同等.svg",
+    "src": "images/HSK_3.0/level7/同等.svg",
+    "caption": "ngang bằng; như nhau; bình đẳng"
+  },
+  "同感": {
+    "file": "同感.svg",
+    "src": "images/HSK_3.0/level7/同感.svg",
+    "caption": "đồng cảm; cùng chung cảm nghĩ"
+  },
+  "同伙": {
+    "file": "同伙.svg",
+    "src": "images/HSK_3.0/level7/同伙.svg",
+    "caption": "đồng bọn; đồng phạm"
+  },
+  "同盟": {
+    "file": "同盟.svg",
+    "src": "images/HSK_3.0/level7/同盟.svg",
+    "caption": "liên minh; đồng minh"
+  },
+  "同期": {
+    "file": "同期.svg",
+    "src": "images/HSK_3.0/level7/同期.svg",
+    "caption": "cùng kỳ; cùng một thời kỳ"
+  },
+  "同仁": {
+    "file": "同仁.svg",
+    "src": "images/HSK_3.0/level7/同仁.svg",
+    "caption": "đồng nghiệp; đồng nhân"
+  },
+  "同舟共济": {
+    "file": "同舟共济.svg",
+    "src": "images/HSK_3.0/level7/同舟共济.svg",
+    "caption": "đồng chu cộng tế; cùng chung hoạn nạn"
+  },
+  "捅": {
+    "file": "捅.svg",
+    "src": "images/HSK_3.0/level7/捅.svg",
+    "caption": "chọc; đâm; thọc"
+  },
+  "筒": {
+    "file": "筒.svg",
+    "src": "images/HSK_3.0/level7/筒.svg",
+    "caption": "ống; ống hình trụ"
+  },
+  "统筹": {
+    "file": "统筹.svg",
+    "src": "images/HSK_3.0/level7/统筹.svg",
+    "caption": "quy hoạch tổng thể; thống trù"
+  },
+  "痛心": {
+    "file": "痛心.svg",
+    "src": "images/HSK_3.0/level7/痛心.svg",
+    "caption": "đau lòng; xót xa; đau xót"
+  },
+  "偷窥": {
+    "file": "偷窥.svg",
+    "src": "images/HSK_3.0/level7/偷窥.svg",
+    "caption": "nhìn trộm; nhìn lén; rình coi"
+  },
+  "偷懒": {
+    "file": "偷懒.svg",
+    "src": "images/HSK_3.0/level7/偷懒.svg",
+    "caption": "lười biếng; trốn việc; làm biếng"
+  },
+  "投奔": {
+    "file": "投奔.svg",
+    "src": "images/HSK_3.0/level7/投奔.svg",
+    "caption": "đến nương tựa; tìm đến nương nhờ"
+  },
+  "投放": {
+    "file": "投放.svg",
+    "src": "images/HSK_3.0/level7/投放.svg",
+    "caption": "tung ra; đưa vào thị trường; đầu tư"
+  },
+  "投稿": {
+    "file": "投稿.svg",
+    "src": "images/HSK_3.0/level7/投稿.svg",
+    "caption": "gửi bài viết; gửi bản thảo"
+  },
+  "头号": {
+    "file": "头号.svg",
+    "src": "images/HSK_3.0/level7/头号.svg",
+    "caption": "số một; hàng đầu; trùm"
+  },
+  "投射": {
+    "file": "投射.svg",
+    "src": "images/HSK_3.0/level7/投射.svg",
+    "caption": "chiếu rọi; phản chiếu; phóng chiếu"
+  },
+  "投身": {
+    "file": "投身.svg",
+    "src": "images/HSK_3.0/level7/投身.svg",
+    "caption": "dấn thân; lao vào cống hiến"
+  },
+  "头条": {
+    "file": "头条.svg",
+    "src": "images/HSK_3.0/level7/头条.svg",
+    "caption": "tin trang nhất; tiêu đề hàng đầu"
+  },
+  "头头是道": {
+    "file": "头头是道.svg",
+    "src": "images/HSK_3.0/level7/头头是道.svg",
+    "caption": "mạch lạc rõ ràng; rành mạch khúc chiết"
+  },
+  "头衔": {
+    "file": "头衔.svg",
+    "src": "images/HSK_3.0/level7/头衔.svg",
+    "caption": "danh hiệu; chức danh; tước hiệu"
+  },
+  "透彻": {
+    "file": "透彻.svg",
+    "src": "images/HSK_3.0/level7/透彻.svg",
+    "caption": "thấu đáo; sâu sắc; triệt để"
+  },
+  "透气": {
+    "file": "透气.svg",
+    "src": "images/HSK_3.0/level7/透气.svg",
+    "caption": "thoáng khí; thông gió"
+  },
+  "透支": {
+    "file": "透支.svg",
+    "src": "images/HSK_3.0/level7/透支.svg",
+    "caption": "tiêu hao quá độ; thấu chi"
+  },
+  "凸": {
+    "file": "凸.svg",
+    "src": "images/HSK_3.0/level7/凸.svg",
+    "caption": "lồi; nhô lên"
+  },
+  "突击": {
+    "file": "突击.svg",
+    "src": "images/HSK_3.0/level7/突击.svg",
+    "caption": "tấn công bất ngờ; đột kích"
+  },
+  "突破口": {
+    "file": "突破口.svg",
+    "src": "images/HSK_3.0/level7/突破口.svg",
+    "caption": "điểm đột phá; khâu đột phá"
+  },
+  "突如其来": {
+    "file": "突如其来.svg",
+    "src": "images/HSK_3.0/level7/突如其来.svg",
+    "caption": "bất thình lình; ập đến đột ngột"
+  },
+  "突兀": {
+    "file": "突兀.svg",
+    "src": "images/HSK_3.0/level7/突兀.svg",
+    "caption": "chướng mắt; đột ngột; kỳ quặc"
+  },
+  "凸显": {
+    "file": "凸显.svg",
+    "src": "images/HSK_3.0/level7/凸显.svg",
+    "caption": "làm nổi bật; lộ rõ; thể hiện rõ nét"
+  },
+  "涂": {
+    "file": "涂.svg",
+    "src": "images/HSK_3.0/level7/涂.svg",
+    "caption": "sơn"
+  },
+  "徒步": {
+    "file": "徒步.svg",
+    "src": "images/HSK_3.0/level7/徒步.svg",
+    "caption": "đi bộ; hành quân bộ"
+  },
+  "徒劳": {
+    "file": "徒劳.svg",
+    "src": "images/HSK_3.0/level7/徒劳.svg",
+    "caption": "uổng công; vô ích"
+  },
+  "屠杀": {
+    "file": "屠杀.svg",
+    "src": "images/HSK_3.0/level7/屠杀.svg",
+    "caption": "tàn sát; thảm sát"
+  },
+  "图形": {
+    "file": "图形.svg",
+    "src": "images/HSK_3.0/level7/图形.svg",
+    "caption": "đồ họa"
+  },
+  "图纸": {
+    "file": "图纸.svg",
+    "src": "images/HSK_3.0/level7/图纸.svg",
+    "caption": "bản vẽ; bản thiết kế"
+  },
+  "吐槽": {
+    "file": "吐槽.svg",
+    "src": "images/HSK_3.0/level7/吐槽.svg",
+    "caption": "phàn nàn; bóc mẽ; chê bai"
+  },
+  "土生土长": {
+    "file": "土生土长.svg",
+    "src": "images/HSK_3.0/level7/土生土长.svg",
+    "caption": "sinh ra và lớn lên tại địa phương; bản xứ"
+  },
+  "团伙": {
+    "file": "团伙.svg",
+    "src": "images/HSK_3.0/level7/团伙.svg",
+    "caption": "băng nhóm; ổ nhóm tội phạm"
+  },
+  "团聚": {
+    "file": "团聚.svg",
+    "src": "images/HSK_3.0/level7/团聚.svg",
+    "caption": "đoàn tụ"
+  },
+  "团员": {
+    "file": "团员.svg",
+    "src": "images/HSK_3.0/level7/团员.svg",
+    "caption": "đoàn viên"
+  },
+  "推崇": {
+    "file": "推崇.svg",
+    "src": "images/HSK_3.0/level7/推崇.svg",
+    "caption": "đánh giá cao; tôn sùng; sùng kính"
+  },
+  "推断": {
+    "file": "推断.svg",
+    "src": "images/HSK_3.0/level7/推断.svg",
+    "caption": "suy đoán; suy luận"
   }
 };
 
