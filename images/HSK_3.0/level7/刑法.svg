@@ -1,0 +1,54 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative subtle background glow -->
+  <circle cx="120" cy="120" r="80" fill="#2D323F" opacity="0.4"/>
+
+  <!-- Central Physical Object: Scales of Justice combined with a Law Book/Gavel motif -->
+  <!-- We'll feature a prominent, classic wooden gavel resting on a block, with balancing scale beams above, rendered in sleek modern flat vector art with high-contrast gold/orange accents -->
+
+  <!-- Scales Frame / Stand (Background structural element) -->
+  <g transform="translate(120, 105)">
+    <!-- Base -->
+    <path d="M-30 60 L30 60 L24 50 L-24 50 Z" fill="#64748B"/>
+    <rect x="-6" y="10" width="12" height="40" rx="2" fill="#94A3B8"/>
+    <!-- Top arch / hook -->
+    <path d="M-40 -20 C-40 -40 40 -40 40 -20" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="0" cy="-28" r="5" fill="#F59E0B"/>
+    
+    <!-- Left Scale Pan -->
+    <path d="M-40 -20 L-60 15 L-20 15 Z" fill="none" stroke="#94A3B8" stroke-width="2"/>
+    <ellipse cx="-40" cy="15" rx="16" ry="5" fill="#3B82F6"/>
+    <ellipse cx="-40" cy="13" rx="14" ry="3" fill="#60A5FA"/>
+
+    <!-- Right Scale Pan -->
+    <path d="M40 -20 L20 15 L60 15 Z" fill="none" stroke="#94A3B8" stroke-width="2"/>
+    <ellipse cx="40" cy="15" rx="16" ry="5" fill="#3B82F6"/>
+    <ellipse cx="40" cy="13" rx="14" ry="3" fill="#60A5FA"/>
+  </g>
+
+  <!-- Foreground: Prominent Legal Gavel (Symbolizing Penal Law / 刑法 execution & authority) -->
+  <g transform="translate(120, 150)">
+    <!-- Striking block (Sound block) -->
+    <path d="M-40 25 L40 25 L32 8 L-32 8 Z" fill="#D97706"/>
+    <rect x="-42" y="25" width="84" height="8" rx="2" fill="#B45309"/>
+
+    <!-- Gavel Handle (angled dynamically) -->
+    <path d="M-28 -12 L38 22" fill="none" stroke="#78350F" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="-32" cy="-14" r="5" fill="#92400E"/>
+
+    <!-- Gavel Head -->
+    <g transform="translate(-15, -2) rotate(28)">
+      <rect x="-24" y="-14" width="48" height="28" rx="4" fill="#F59E0B"/>
+      <!-- Metallic accent bands on gavel head -->
+      <rect x="-18" y="-14" width="6" height="28" fill="#FBBF24" opacity="0.6"/>
+      <rect x="12" y="-14" width="6" height="28" fill="#FBBF24" opacity="0.6"/>
+    </g>
+  </g>
+
+  <!-- High-contrast focus highlights (modern flat UI touches) -->
+  <circle cx="120" cy="50" r="3" fill="#F59E0B"/>
+  <circle cx="75" cy="85" r="2" fill="#60A5FA" opacity="0.8"/>
+  <circle cx="165" cy="85" r="2" fill="#60A5FA" opacity="0.8"/>
+</svg>

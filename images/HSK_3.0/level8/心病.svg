@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Main glowing heart/mind core representing "Xin" (Heart/Mind) -->
+    <path d="M120 48 C105 28 75 28 60 52 C45 76 55 104 120 150 C185 104 195 76 180 52 C165 28 135 28 120 48 Z" fill="#2D3748" opacity="0.6"/>
+    
+    <!-- The physical weight/worry inside (The "Bing" / burden) -->
+    <!-- Stylized mountain/path and graduation cap subtly embedded inside the heart shape to represent the contextual meaning: unfulfilled educational mission -->
+    <path d="M120 65 L85 105 L155 105 Z" fill="#E2E8F0" opacity="0.9"/>
+    <path d="M120 85 L95 115 L145 115 Z" fill="#4A5568"/>
+    
+    <!-- Graduation Cap (representing the unfulfilled goal of rural children going to university) -->
+    <polygon points="120,68 145,78 120,88 95,78" fill="#F6AD55"/>
+    <rect x="135" y="81" width="3" height="8" rx="1.5" fill="#F6AD55"/>
+    <path d="M113 83 L113 93 C113 97 127 97 127 93 L127 83" fill="none" stroke="#F6AD55" stroke-width="2"/>
+
+    <!-- Subtle glowing pulse lines (worry/anxiety element radiating from within) -->
+    <path d="M70 120 C85 130 95 130 120 130 C145 130 155 130 170 120" fill="none" stroke="#E53E3E" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+    <path d="M85 138 C100 145 110 145 120 145 C130 145 140 145 155 138" fill="none" stroke="#E53E3E" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Anchor/Weight symbol at the bottom of the heart representing deep-seated worry ("深埋心底") -->
+    <path d="M120 115 L120 155" stroke="#CBD5E0" stroke-width="4" stroke-linecap="round"/>
+    <path d="M102 145 C102 155 138 155 138 145" fill="none" stroke="#CBD5E0" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="120" cy="113" r="4" fill="#CBD5E0"/>
+  </g>
+</svg>

@@ -51301,6 +51301,256 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "协作.svg",
     "src": "images/HSK_3.0/level7/协作.svg",
     "caption": "hợp tác phối hợp; hiệp tác"
+  },
+  "写照": {
+    "file": "写照.svg",
+    "src": "images/HSK_3.0/level7/写照.svg",
+    "caption": "bức tranh phản ánh chân thực; minh chứng"
+  },
+  "泄": {
+    "file": "泄.svg",
+    "src": "images/HSK_3.0/level7/泄.svg",
+    "caption": "tiết lộ; rò rỉ; xả ra"
+  },
+  "泻": {
+    "file": "泻.svg",
+    "src": "images/HSK_3.0/level7/泻.svg",
+    "caption": "đổ xối xả; tuôn chảy; tiêu chảy"
+  },
+  "卸": {
+    "file": "卸.svg",
+    "src": "images/HSK_3.0/level7/卸.svg",
+    "caption": "dỡ (hàng); tháo dỡ"
+  },
+  "泄漏": {
+    "file": "泄漏.svg",
+    "src": "images/HSK_3.0/level7/泄漏.svg",
+    "caption": "rò rỉ; để lộ; tiết lộ"
+  },
+  "泄密": {
+    "file": "泄密.svg",
+    "src": "images/HSK_3.0/level7/泄密.svg",
+    "caption": "tiết lộ bí mật; lộ cơ mật"
+  },
+  "卸任": {
+    "file": "卸任.svg",
+    "src": "images/HSK_3.0/level7/卸任.svg",
+    "caption": "mãn nhiệm; thôi việc; rời nhiệm sở"
+  },
+  "卸载": {
+    "file": "卸载.svg",
+    "src": "images/HSK_3.0/level7/卸载.svg",
+    "caption": "gỡ cài đặt (phần mềm); dỡ tải"
+  },
+  "心安理得": {
+    "file": "心安理得.svg",
+    "src": "images/HSK_3.0/level7/心安理得.svg",
+    "caption": "lòng thanh thản; tâm an lý đắc"
+  },
+  "心病": {
+    "file": "心病.svg",
+    "src": "images/HSK_3.0/level7/心病.svg",
+    "caption": "tâm bệnh; nỗi bận tâm; mối lo trong lòng"
+  },
+  "心肠": {
+    "file": "心肠.svg",
+    "src": "images/HSK_3.0/level7/心肠.svg",
+    "caption": "tấm lòng; bụng dạ; tâm can"
+  },
+  "新潮": {
+    "file": "新潮.svg",
+    "src": "images/HSK_3.0/level7/新潮.svg",
+    "caption": "hợp thời mốt mới; tân tiến"
+  },
+  "薪酬": {
+    "file": "薪酬.svg",
+    "src": "images/HSK_3.0/level7/薪酬.svg",
+    "caption": "thù lao; mức lương đãi ngộ"
+  },
+  "新春": {
+    "file": "新春.svg",
+    "src": "images/HSK_3.0/level7/新春.svg",
+    "caption": "tân xuân; mùa xuân mới"
+  },
+  "心慌": {
+    "file": "心慌.svg",
+    "src": "images/HSK_3.0/level7/心慌.svg",
+    "caption": "hoảng hốt bồn chồn; tim đập thình thịch"
+  },
+  "心急如焚": {
+    "file": "心急如焚.svg",
+    "src": "images/HSK_3.0/level7/心急如焚.svg",
+    "caption": "sốt ruột như lửa đốt; nóng lòng như lửa đốt"
+  },
+  "心灵手巧": {
+    "file": "心灵手巧.svg",
+    "src": "images/HSK_3.0/level7/心灵手巧.svg",
+    "caption": "khéo tay hay làm; thông minh khéo léo"
+  },
+  "芯片": {
+    "file": "芯片.svg",
+    "src": "images/HSK_3.0/level7/芯片.svg",
+    "caption": "chip"
+  },
+  "新奇": {
+    "file": "新奇.svg",
+    "src": "images/HSK_3.0/level7/新奇.svg",
+    "caption": "mới lạ; mới mẻ kỳ thú"
+  },
+  "心声": {
+    "file": "心声.svg",
+    "src": "images/HSK_3.0/level7/心声.svg",
+    "caption": "tiếng lòng; tiếng nói từ đáy lòng"
+  },
+  "新生": {
+    "file": "新生.svg",
+    "src": "images/HSK_3.0/level7/新生.svg",
+    "caption": "cuộc sống mới"
+  },
+  "心事": {
+    "file": "心事.svg",
+    "src": "images/HSK_3.0/level7/心事.svg",
+    "caption": "tâm sự; nỗi niềm trong lòng"
+  },
+  "新式": {
+    "file": "新式.svg",
+    "src": "images/HSK_3.0/level7/新式.svg",
+    "caption": "kiểu mới; tân tiến"
+  },
+  "新手": {
+    "file": "新手.svg",
+    "src": "images/HSK_3.0/level7/新手.svg",
+    "caption": "người mới; người mới vào nghề"
+  },
+  "心思": {
+    "file": "心思.svg",
+    "src": "images/HSK_3.0/level7/心思.svg",
+    "caption": "tâm trí; tâm tư; suy nghĩ"
+  },
+  "心酸": {
+    "file": "心酸.svg",
+    "src": "images/HSK_3.0/level7/心酸.svg",
+    "caption": "xót xa; chua xót trong lòng"
+  },
+  "辛酸": {
+    "file": "辛酸.svg",
+    "src": "images/HSK_3.0/level7/辛酸.svg",
+    "caption": "cay đắng ngậm ngùi; xót xa gian truân"
+  },
+  "欣喜": {
+    "file": "欣喜.svg",
+    "src": "images/HSK_3.0/level7/欣喜.svg",
+    "caption": "hân hoan; vui sướng; mừng rỡ"
+  },
+  "心想事成": {
+    "file": "心想事成.svg",
+    "src": "images/HSK_3.0/level7/心想事成.svg",
+    "caption": "tâm tưởng sự thành; vạn sự như ý"
+  },
+  "心胸": {
+    "file": "心胸.svg",
+    "src": "images/HSK_3.0/level7/心胸.svg",
+    "caption": "tấm lòng; độ lượng; lòng dạ"
+  },
+  "心意": {
+    "file": "心意.svg",
+    "src": "images/HSK_3.0/level7/心意.svg",
+    "caption": "tâm ý; thành ý; tấm lòng"
+  },
+  "信贷": {
+    "file": "信贷.svg",
+    "src": "images/HSK_3.0/level7/信贷.svg",
+    "caption": "tín dụng; cho vay"
+  },
+  "兴建": {
+    "file": "兴建.svg",
+    "src": "images/HSK_3.0/level7/兴建.svg",
+    "caption": "khởi công xây dựng; xây cất"
+  },
+  "星球": {
+    "file": "星球.svg",
+    "src": "images/HSK_3.0/level7/星球.svg",
+    "caption": "hành tinh; thiên thể; tinh cầu"
+  },
+  "兴盛": {
+    "file": "兴盛.svg",
+    "src": "images/HSK_3.0/level7/兴盛.svg",
+    "caption": "hưng thịnh; phồn thịnh"
+  },
+  "星系": {
+    "file": "星系.svg",
+    "src": "images/HSK_3.0/level7/星系.svg",
+    "caption": "thiên hà; hệ ngân hà"
+  },
+  "猩猩": {
+    "file": "猩猩.svg",
+    "src": "images/HSK_3.0/level7/猩猩.svg",
+    "caption": "tinh tinh; đười ươi"
+  },
+  "星座": {
+    "file": "星座.svg",
+    "src": "images/HSK_3.0/level7/星座.svg",
+    "caption": "chòm sao; cung hoàng đạo"
+  },
+  "刑法": {
+    "file": "刑法.svg",
+    "src": "images/HSK_3.0/level7/刑法.svg",
+    "caption": "hình pháp; luật hình sự"
+  },
+  "行使": {
+    "file": "行使.svg",
+    "src": "images/HSK_3.0/level7/行使.svg",
+    "caption": "thực thi; hành sử (quyền)"
+  },
+  "行星": {
+    "file": "行星.svg",
+    "src": "images/HSK_3.0/level7/行星.svg",
+    "caption": "hành tinh"
+  },
+  "形形色色": {
+    "file": "形形色色.svg",
+    "src": "images/HSK_3.0/level7/形形色色.svg",
+    "caption": "muôn hình vạn trạng; đủ loại"
+  },
+  "形影不离": {
+    "file": "形影不离.svg",
+    "src": "images/HSK_3.0/level7/形影不离.svg",
+    "caption": "như hình với bóng; không rời nửa bước"
+  },
+  "醒目": {
+    "file": "醒目.svg",
+    "src": "images/HSK_3.0/level7/醒目.svg",
+    "caption": "bắt mắt; dễ thấy; nổi bật"
+  },
+  "醒悟": {
+    "file": "醒悟.svg",
+    "src": "images/HSK_3.0/level7/醒悟.svg",
+    "caption": "tỉnh ngộ; giác ngộ"
+  },
+  "幸存": {
+    "file": "幸存.svg",
+    "src": "images/HSK_3.0/level7/幸存.svg",
+    "caption": "sống sót; may mắn còn sống"
+  },
+  "幸好": {
+    "file": "幸好.svg",
+    "src": "images/HSK_3.0/level7/幸好.svg",
+    "caption": "may mà; may thay"
+  },
+  "幸免": {
+    "file": "幸免.svg",
+    "src": "images/HSK_3.0/level7/幸免.svg",
+    "caption": "may mắn thoát khỏi (tai họa); tránh được"
+  },
+  "性情": {
+    "file": "性情.svg",
+    "src": "images/HSK_3.0/level7/性情.svg",
+    "caption": "tính tình; tính khí"
+  },
+  "姓氏": {
+    "file": "姓氏.svg",
+    "src": "images/HSK_3.0/level7/姓氏.svg",
+    "caption": "dòng họ; họ"
   }
 };
 
