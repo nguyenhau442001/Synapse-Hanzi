@@ -574,12 +574,11 @@ body.listening-view-active #screenListeningPractice {
   outline-offset: 2px;
 }
 
-/* Right Column: Row 1 = Seek bar, Row 2 = Subcontrols (Aligned with seek bar start!) */
+/* Right Column: Seek track and time readout */
 .listening-player-right-col {
   flex: 1;
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  align-items: center;
   min-width: 0;
 }
 
