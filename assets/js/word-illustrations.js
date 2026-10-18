@@ -50046,6 +50046,256 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "推断.svg",
     "src": "images/HSK_3.0/level7/推断.svg",
     "caption": "suy đoán; suy luận"
+  },
+  "推敲": {
+    "file": "推敲.svg",
+    "src": "images/HSK_3.0/level7/推敲.svg",
+    "caption": "đắn đo suy xét; cân nhắc từng câu chữ"
+  },
+  "推算": {
+    "file": "推算.svg",
+    "src": "images/HSK_3.0/level7/推算.svg",
+    "caption": "tính toán; suy tính"
+  },
+  "推卸": {
+    "file": "推卸.svg",
+    "src": "images/HSK_3.0/level7/推卸.svg",
+    "caption": "đùn đẩy; thoái thác; trốn tránh"
+  },
+  "推选": {
+    "file": "推选.svg",
+    "src": "images/HSK_3.0/level7/推选.svg",
+    "caption": "bầu chọn; đề cử; suy tôn"
+  },
+  "颓废": {
+    "file": "颓废.svg",
+    "src": "images/HSK_3.0/level7/颓废.svg",
+    "caption": "suy đồi; trụy lạc; buông xuôi"
+  },
+  "退化": {
+    "file": "退化.svg",
+    "src": "images/HSK_3.0/level7/退化.svg",
+    "caption": "thoái hóa; suy thoái"
+  },
+  "退缩": {
+    "file": "退缩.svg",
+    "src": "images/HSK_3.0/level7/退缩.svg",
+    "caption": "chùn bước; co cụm; lùi bước"
+  },
+  "退役": {
+    "file": "退役.svg",
+    "src": "images/HSK_3.0/level7/退役.svg",
+    "caption": "giải nghệ; xuất ngũ; giải ngũ"
+  },
+  "臀": {
+    "file": "臀.svg",
+    "src": "images/HSK_3.0/level7/臀.svg",
+    "caption": "mông"
+  },
+  "托": {
+    "file": "托.svg",
+    "src": "images/HSK_3.0/level7/托.svg",
+    "caption": "nâng; đỡ trên tay; nhờ"
+  },
+  "托付": {
+    "file": "托付.svg",
+    "src": "images/HSK_3.0/level7/托付.svg",
+    "caption": "ủy thác; gửi gắm; phó thác"
+  },
+  "脱节": {
+    "file": "脱节.svg",
+    "src": "images/HSK_3.0/level7/脱节.svg",
+    "caption": "xa rời; đứt quãng; mất liên kết"
+  },
+  "脱口而出": {
+    "file": "脱口而出.svg",
+    "src": "images/HSK_3.0/level7/脱口而出.svg",
+    "caption": "thốt ra; buột miệng nói ra"
+  },
+  "拖累": {
+    "file": "拖累.svg",
+    "src": "images/HSK_3.0/level7/拖累.svg",
+    "caption": "liên lụy; làm vướng bận; kéo lùi"
+  },
+  "脱落": {
+    "file": "脱落.svg",
+    "src": "images/HSK_3.0/level7/脱落.svg",
+    "caption": "rơi rụng; rụng; bong tróc"
+  },
+  "拖欠": {
+    "file": "拖欠.svg",
+    "src": "images/HSK_3.0/level7/拖欠.svg",
+    "caption": "nợ đọng; chậm trả; khất nợ"
+  },
+  "脱身": {
+    "file": "脱身.svg",
+    "src": "images/HSK_3.0/level7/脱身.svg",
+    "caption": "dứt ra được; thoát thân; rút lui"
+  },
+  "脱颖而出": {
+    "file": "脱颖而出.svg",
+    "src": "images/HSK_3.0/level7/脱颖而出.svg",
+    "caption": "nổi bật hẳn lên; tài năng vượt trội"
+  },
+  "驮": {
+    "file": "驮.svg",
+    "src": "images/HSK_3.0/level7/驮.svg",
+    "caption": "thồ (hàng); cõng"
+  },
+  "妥": {
+    "file": "妥.svg",
+    "src": "images/HSK_3.0/level7/妥.svg",
+    "caption": "thỏa đáng; ổn thỏa; chu toàn"
+  },
+  "拓宽": {
+    "file": "拓宽.svg",
+    "src": "images/HSK_3.0/level7/拓宽.svg",
+    "caption": "mở rộng"
+  },
+  "唾液": {
+    "file": "唾液.svg",
+    "src": "images/HSK_3.0/level7/唾液.svg",
+    "caption": "nước bọt"
+  },
+  "拓展": {
+    "file": "拓展.svg",
+    "src": "images/HSK_3.0/level7/拓展.svg",
+    "caption": "mở rộng"
+  },
+  "挖苦": {
+    "file": "挖苦.svg",
+    "src": "images/HSK_3.0/level7/挖苦.svg",
+    "caption": "mỉa mai; châm chọc; xỉa xói"
+  },
+  "瓦": {
+    "file": "瓦.svg",
+    "src": "images/HSK_3.0/level7/瓦.svg",
+    "caption": "ngói; ngói lợp nhà"
+  },
+  "外币": {
+    "file": "外币.svg",
+    "src": "images/HSK_3.0/level7/外币.svg",
+    "caption": "ngoại tệ"
+  },
+  "外号": {
+    "file": "外号.svg",
+    "src": "images/HSK_3.0/level7/外号.svg",
+    "caption": "biệt danh; biệt hiệu; tên lóng"
+  },
+  "外汇": {
+    "file": "外汇.svg",
+    "src": "images/HSK_3.0/level7/外汇.svg",
+    "caption": "ngoại hối"
+  },
+  "外籍": {
+    "file": "外籍.svg",
+    "src": "images/HSK_3.0/level7/外籍.svg",
+    "caption": "quốc tịch nước ngoài; ngoại quốc"
+  },
+  "外贸": {
+    "file": "外贸.svg",
+    "src": "images/HSK_3.0/level7/外贸.svg",
+    "caption": "ngoại thương; thương mại quốc tế"
+  },
+  "外貌": {
+    "file": "外貌.svg",
+    "src": "images/HSK_3.0/level7/外貌.svg",
+    "caption": "ngoại hình; diện mạo bề ngoài"
+  },
+  "外星人": {
+    "file": "外星人.svg",
+    "src": "images/HSK_3.0/level7/外星人.svg",
+    "caption": "người ngoài hành tinh"
+  },
+  "外援": {
+    "file": "外援.svg",
+    "src": "images/HSK_3.0/level7/外援.svg",
+    "caption": "viện trợ bên ngoài; ngoại binh (thể thao)"
+  },
+  "外在": {
+    "file": "外在.svg",
+    "src": "images/HSK_3.0/level7/外在.svg",
+    "caption": "bên ngoài; ngoại tại"
+  },
+  "外资": {
+    "file": "外资.svg",
+    "src": "images/HSK_3.0/level7/外资.svg",
+    "caption": "vốn đầu tư nước ngoài; vốn ngoại"
+  },
+  "完好": {
+    "file": "完好.svg",
+    "src": "images/HSK_3.0/level7/完好.svg",
+    "caption": "nguyên vẹn; lành lặn; không hư tổn"
+  },
+  "顽皮": {
+    "file": "顽皮.svg",
+    "src": "images/HSK_3.0/level7/顽皮.svg",
+    "caption": "nghịch ngợm; tinh nghịch"
+  },
+  "玩耍": {
+    "file": "玩耍.svg",
+    "src": "images/HSK_3.0/level7/玩耍.svg",
+    "caption": "chơi"
+  },
+  "丸子": {
+    "file": "丸子.svg",
+    "src": "images/HSK_3.0/level7/丸子.svg",
+    "caption": "viên (thịt, cá); chả viên"
+  },
+  "挽": {
+    "file": "挽.svg",
+    "src": "images/HSK_3.0/level7/挽.svg",
+    "caption": "xắn (tay áo); kéo; cứu vãn"
+  },
+  "万万": {
+    "file": "万万.svg",
+    "src": "images/HSK_3.0/level7/万万.svg",
+    "caption": "tuyệt đối; vạn lần (dùng với phủ định)"
+  },
+  "王国": {
+    "file": "王国.svg",
+    "src": "images/HSK_3.0/level7/王国.svg",
+    "caption": "vương quốc; thế giới riêng"
+  },
+  "王牌": {
+    "file": "王牌.svg",
+    "src": "images/HSK_3.0/level7/王牌.svg",
+    "caption": "át chủ bài; quân bài chủ lực"
+  },
+  "亡羊补牢": {
+    "file": "亡羊补牢.svg",
+    "src": "images/HSK_3.0/level7/亡羊补牢.svg",
+    "caption": "kịp thời sửa sai; mất bò mới lo làm chuồng"
+  },
+  "网点": {
+    "file": "网点.svg",
+    "src": "images/HSK_3.0/level7/网点.svg",
+    "caption": "điểm mạng lưới; chi nhánh giao dịch"
+  },
+  "网民": {
+    "file": "网民.svg",
+    "src": "images/HSK_3.0/level7/网民.svg",
+    "caption": "cư dân mạng; người dùng internet"
+  },
+  "往日": {
+    "file": "往日.svg",
+    "src": "images/HSK_3.0/level7/往日.svg",
+    "caption": "ngày trước; ngày xưa; trước đây"
+  },
+  "旺": {
+    "file": "旺.svg",
+    "src": "images/HSK_3.0/level7/旺.svg",
+    "caption": "cháy rực; phát đạt; vượng"
+  },
+  "旺季": {
+    "file": "旺季.svg",
+    "src": "images/HSK_3.0/level7/旺季.svg",
+    "caption": "mùa cao điểm; mùa làm ăn phát đạt"
+  },
+  "望远镜": {
+    "file": "望远镜.svg",
+    "src": "images/HSK_3.0/level7/望远镜.svg",
+    "caption": "kính viễn vọng; ống nhòm"
   }
 };
 

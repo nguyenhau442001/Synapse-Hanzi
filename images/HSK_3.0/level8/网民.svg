@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for focus -->
+  <circle cx="120" cy="115" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Network nodes/web background subtle hints -->
+  <path d="M70 70 L120 95 L170 70" stroke="#2D3748" stroke-width="1.5" stroke-dasharray="3 3" fill="none"/>
+  <path d="M70 160 L120 135 L170 160" stroke="#2D3748" stroke-width="1.5" stroke-dasharray="3 3" fill="none"/>
+  <circle cx="70" cy="70" r="3" fill="#4A5568"/>
+  <circle cx="170" cy="70" r="3" fill="#4A5568"/>
+  <circle cx="70" cy="160" r="3" fill="#4A5568"/>
+  <circle cx="170" cy="160" r="3" fill="#4A5568"/>
+
+  <!-- Globe / Network Wireframe -->
+  <circle cx="120" cy="115" r="55" fill="none" stroke="#3182CE" stroke-width="2" opacity="0.3"/>
+  <ellipse cx="120" cy="115" rx="55" ry="20" fill="none" stroke="#3182CE" stroke-width="1.5" opacity="0.4"/>
+  <ellipse cx="120" cy="115" rx="20" ry="55" fill="none" stroke="#3182CE" stroke-width="1.5" opacity="0.4"/>
+  <line x1="120" y1="60" x2="120" y2="170" stroke="#3182CE" stroke-width="1.5" opacity="0.4"/>
+  <line x1="65" y1="115" x2="175" y2="115" stroke="#3182CE" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Central Character (User / Netizen) -->
+  <!-- Body/Shoulders -->
+  <path d="M 85 165 C 85 145, 100 135, 120 135 C 140 135, 155 145, 155 165 Z" fill="#2B6CB0"/>
+  
+  <!-- Neck -->
+  <rect x="112" y="125" width="16" height="15" fill="#E2E8F0"/>
+
+  <!-- Head -->
+  <circle cx="120" cy="105" r="22" fill="#CBD5E0"/>
+
+  <!-- Hair -->
+  <path d="M 98 105 C 98 90, 105 82, 120 82 C 135 82, 142 90, 142 105 C 142 100, 138 85, 120 85 C 102 85, 98 100, 98 105 Z" fill="#4A5568"/>
+
+  <!-- Connected Digital Device (Smartphone in hand / floating interface) -->
+  <rect x="96" y="145" width="48" height="28" rx="4" fill="#2D3748" stroke="#F6AD55" stroke-width="2"/>
+  <rect x="100" y="149" width="40" height="20" rx="2" fill="#1A202C"/>
+  <!-- Screen graphic: connection waves -->
+  <path d="M 112 159 Q 120 153 128 159" stroke="#68D391" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 108 155 Q 120 147 132 155" stroke="#68D391" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Floating Digital Connectivity Elements (Focus Accent) -->
+  <circle cx="155" cy="85" r="4" fill="#F6AD55"/>
+  <circle cx="85" cy="95" r="3" fill="#F6AD55"/>
+  <path d="M 145 90 Q 150 87 155 85" stroke="#F6AD55" stroke-width="1.5" fill="none"/>
+
+  <circle cx="80" cy="135" r="4" fill="#F6AD55"/>
+  <path d="M 80 135 Q 88 140 96 145" stroke="#F6AD55" stroke-width="1.5" fill="none"/>
+
+</svg>
