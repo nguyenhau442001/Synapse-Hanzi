@@ -52282,6 +52282,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/一面.svg",
     "caption": "một lần (gặp mặt); một mặt"
   },
+  "遗弃": {
+    "file": "遗弃.svg",
+    "src": "images/HSK_3.0/level7/遗弃.svg",
+    "caption": "vứt bỏ; ruồng bỏ; bỏ rơi"
+  },
   "怡然自得": {
     "file": "怡然自得.svg",
     "src": "images/HSK_3.0/level7/怡然自得.svg",
@@ -52296,6 +52301,251 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "一事无成.svg",
     "src": "images/HSK_3.0/level7/一事无成.svg",
     "caption": "không làm nên trò trống gì; công danh dang dở"
+  },
+  "遗体": {
+    "file": "遗体.svg",
+    "src": "images/HSK_3.0/level7/遗体.svg",
+    "caption": "thi hài; thi thể"
+  },
+  "遗忘": {
+    "file": "遗忘.svg",
+    "src": "images/HSK_3.0/level7/遗忘.svg",
+    "caption": "lãng quên; quên lãng"
+  },
+  "一味": {
+    "file": "一味.svg",
+    "src": "images/HSK_3.0/level7/一味.svg",
+    "caption": "một mực; chăm chăm mù quáng"
+  },
+  "遗物": {
+    "file": "遗物.svg",
+    "src": "images/HSK_3.0/level7/遗物.svg",
+    "caption": "kỷ vật; di vật"
+  },
+  "以身作则": {
+    "file": "以身作则.svg",
+    "src": "images/HSK_3.0/level7/以身作则.svg",
+    "caption": "lấy mình làm gương; nêu gương đi đầu"
+  },
+  "以至于": {
+    "file": "以至于.svg",
+    "src": "images/HSK_3.0/level7/以至于.svg",
+    "caption": "đến nỗi; đến mức mà"
+  },
+  "议": {
+    "file": "议.svg",
+    "src": "images/HSK_3.0/level7/议.svg",
+    "caption": "bàn bạc; thảo luận; nghị sự"
+  },
+  "译": {
+    "file": "译.svg",
+    "src": "images/HSK_3.0/level7/译.svg",
+    "caption": "dịch; phiên dịch; biên dịch"
+  },
+  "溢": {
+    "file": "溢.svg",
+    "src": "images/HSK_3.0/level7/溢.svg",
+    "caption": "tràn ngập; dạt dào; lan tỏa"
+  },
+  "议程": {
+    "file": "议程.svg",
+    "src": "images/HSK_3.0/level7/议程.svg",
+    "caption": "chương trình nghị sự; nghị trình"
+  },
+  "一成不变": {
+    "file": "一成不变.svg",
+    "src": "images/HSK_3.0/level7/一成不变.svg",
+    "caption": "rập khuôn bất biến; không hề thay đổi"
+  },
+  "一筹莫展": {
+    "file": "一筹莫展.svg",
+    "src": "images/HSK_3.0/level7/一筹莫展.svg",
+    "caption": "bó tay hết cách, không nghĩ ra được kế sách nào"
+  },
+  "一干二净": {
+    "file": "一干二净.svg",
+    "src": "images/HSK_3.0/level7/一干二净.svg",
+    "caption": "sạch sành sanh, sạch trơn, không còn sót lại gì"
+  },
+  "义工": {
+    "file": "义工.svg",
+    "src": "images/HSK_3.0/level7/义工.svg",
+    "caption": "tình nguyện viên, công việc tình nguyện"
+  },
+  "一鼓作气": {
+    "file": "一鼓作气.svg",
+    "src": "images/HSK_3.0/level7/一鼓作气.svg",
+    "caption": "thừa thắng xông lên, dồn sức làm một mạch"
+  },
+  "一经": {
+    "file": "一经.svg",
+    "src": "images/HSK_3.0/level7/一经.svg",
+    "caption": "một khi, vừa mới"
+  },
+  "一举": {
+    "file": "一举.svg",
+    "src": "images/HSK_3.0/level7/一举.svg",
+    "caption": "một phen, chỉ trong một lần, một đòn"
+  },
+  "一举一动": {
+    "file": "一举一动.svg",
+    "src": "images/HSK_3.0/level7/一举一动.svg",
+    "caption": "nhất cử nhất động, mọi hành vi cử chỉ"
+  },
+  "异口同声": {
+    "file": "异口同声.svg",
+    "src": "images/HSK_3.0/level7/异口同声.svg",
+    "caption": "đồng thanh một lời, nhất tề lên tiếng"
+  },
+  "易拉罐": {
+    "file": "易拉罐.svg",
+    "src": "images/HSK_3.0/level7/易拉罐.svg",
+    "caption": "lon nước ngọt (nắp khoen kéo), lon kim loại"
+  },
+  "一揽子": {
+    "file": "一揽子.svg",
+    "src": "images/HSK_3.0/level7/一揽子.svg",
+    "caption": "trọn gói, toàn diện"
+  },
+  "屹立": {
+    "file": "屹立.svg",
+    "src": "images/HSK_3.0/level7/屹立.svg",
+    "caption": "sừng sững, đứng vững hiên ngang"
+  },
+  "一连": {
+    "file": "一连.svg",
+    "src": "images/HSK_3.0/level7/一连.svg",
+    "caption": "liên tiếp, liên tục"
+  },
+  "一连串": {
+    "file": "一连串.svg",
+    "src": "images/HSK_3.0/level7/一连串.svg",
+    "caption": "một chuỗi, một loạt"
+  },
+  "一毛不拔": {
+    "file": "一毛不拔.svg",
+    "src": "images/HSK_3.0/level7/一毛不拔.svg",
+    "caption": "vắt cổ chày ra nước, keo kiệt bủn xỉn"
+  },
+  "疫苗": {
+    "file": "疫苗.svg",
+    "src": "images/HSK_3.0/level7/疫苗.svg",
+    "caption": "vắc xin"
+  },
+  "一旁": {
+    "file": "一旁.svg",
+    "src": "images/HSK_3.0/level7/一旁.svg",
+    "caption": "một bên, bên cạnh"
+  },
+  "一齐": {
+    "file": "一齐.svg",
+    "src": "images/HSK_3.0/level7/一齐.svg",
+    "caption": "cùng lúc, đồng loạt"
+  },
+  "一声不吭": {
+    "file": "一声不吭.svg",
+    "src": "images/HSK_3.0/level7/一声不吭.svg",
+    "caption": "không hé một lời, nín thin thít"
+  },
+  "一手": {
+    "file": "一手.svg",
+    "src": "images/HSK_3.0/level7/一手.svg",
+    "caption": "một tay, đích thân một mình; ngón nghề, sở trường"
+  },
+  "一塌糊涂": {
+    "file": "一塌糊涂.svg",
+    "src": "images/HSK_3.0/level7/一塌糊涂.svg",
+    "caption": "rối be bét, nát bét, hỗn độn"
+  },
+  "议题": {
+    "file": "议题.svg",
+    "src": "images/HSK_3.0/level7/议题.svg",
+    "caption": "đề tài thảo luận, chủ đề nghị sự"
+  },
+  "一体": {
+    "file": "一体.svg",
+    "src": "images/HSK_3.0/level7/一体.svg",
+    "caption": "một khối thống nhất, tích hợp đồng bộ"
+  },
+  "一头": {
+    "file": "一头.svg",
+    "src": "images/HSK_3.0/level7/一头.svg",
+    "caption": "cắm đầu vào, lao thẳng vào; một đầu"
+  },
+  "亿万": {
+    "file": "亿万.svg",
+    "src": "images/HSK_3.0/level7/亿万.svg",
+    "caption": "hàng trăm triệu, ức vạn"
+  },
+  "意味": {
+    "file": "意味.svg",
+    "src": "images/HSK_3.0/level7/意味.svg",
+    "caption": "ý nghĩa"
+  },
+  "一无所有": {
+    "file": "一无所有.svg",
+    "src": "images/HSK_3.0/level7/一无所有.svg",
+    "caption": "hai bàn tay trắng, không có thứ gì trong tay"
+  },
+  "一无所知": {
+    "file": "一无所知.svg",
+    "src": "images/HSK_3.0/level7/一无所知.svg",
+    "caption": "hoàn toàn không biết gì, mù tịt"
+  },
+  "意想不到": {
+    "file": "意想不到.svg",
+    "src": "images/HSK_3.0/level7/意想不到.svg",
+    "caption": "không ngờ tới, ngoài dự kiến"
+  },
+  "异想天开": {
+    "file": "异想天开.svg",
+    "src": "images/HSK_3.0/level7/异想天开.svg",
+    "caption": "viển vông, hão huyền, tưởng tượng kỳ quặc"
+  },
+  "一言一行": {
+    "file": "一言一行.svg",
+    "src": "images/HSK_3.0/level7/一言一行.svg",
+    "caption": "từng lời nói cử chỉ, nhất ngôn nhất hành"
+  },
+  "异议": {
+    "file": "异议.svg",
+    "src": "images/HSK_3.0/level7/异议.svg",
+    "caption": "ý kiến phản đối, ý kiến bất đồng"
+  },
+  "一应俱全": {
+    "file": "一应俱全.svg",
+    "src": "images/HSK_3.0/level7/一应俱全.svg",
+    "caption": "đầy đủ tất cả, không thiếu thứ gì"
+  },
+  "抑郁": {
+    "file": "抑郁.svg",
+    "src": "images/HSK_3.0/level7/抑郁.svg",
+    "caption": "u uất, trầm cảm, buồn rầu"
+  },
+  "意愿": {
+    "file": "意愿.svg",
+    "src": "images/HSK_3.0/level7/意愿.svg",
+    "caption": "nguyện vọng, mong muốn, ý chí"
+  },
+  "抑郁症": {
+    "file": "抑郁症.svg",
+    "src": "images/HSK_3.0/level7/抑郁症.svg",
+    "caption": "bệnh trầm cảm"
+  },
+  "一早": {
+    "file": "一早.svg",
+    "src": "images/HSK_3.0/level7/一早.svg",
+    "caption": "sáng sớm tinh mơ"
+  },
+  "一针见血": {
+    "file": "一针见血.svg",
+    "src": "images/HSK_3.0/level7/一针见血.svg",
+    "caption": "nói trúng tim đen, đánh trúng điểm mấu chốt"
+  },
+  "阴暗": {
+    "file": "阴暗.svg",
+    "src": "images/HSK_3.0/level7/阴暗.svg",
+    "caption": "u ám, tăm tối, góc khuất"
   }
 };
 
