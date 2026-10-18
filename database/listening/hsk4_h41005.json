@@ -25,21 +25,21 @@
       "audio_src": "assets/audio/exams/H41005.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 133197,
-          "end_ms": 152463
+          "start_ms": 132700,
+          "end_ms": 156359
         },
         "statement": {
-          "start_ms": 152663,
-          "end_ms": 156663
+          "start_ms": 156559,
+          "end_ms": 156750
         },
         "full_question": {
-          "start_ms": 133197,
-          "end_ms": 156663
+          "start_ms": 132700,
+          "end_ms": 156750
         }
       },
       "transcript": {
@@ -52,8 +52,8 @@
             "zh": "在接受调查的学生中，有超过百分之八十的人希望自己能有机会出国留学，但只有大约百分之二十的人已经开始申请国外学校。",
             "pinyin": "zài jiē shòu diào chá de xué shēng zhōng ， yǒu chāo guò bǎi fēn zhī bā shí de rén xī wàng zì jǐ néng yǒu jī huì chū guó liú xué ， dàn zhǐ yǒu dà yuē bǎi fēn zhī èr shí de rén yǐ jīng kāi shǐ shēn qǐng guó wài xué xiào 。",
             "vi": "",
-            "start_ms": 133197,
-            "end_ms": 152463
+            "start_ms": 134450,
+            "end_ms": 156359
           }
         ]
       },
@@ -136,21 +136,21 @@
       "audio_src": "assets/audio/exams/H41005.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 166461,
-          "end_ms": 182525
+          "start_ms": 165900,
+          "end_ms": 184600
         },
         "statement": {
-          "start_ms": 182725,
-          "end_ms": 186675
+          "start_ms": 184800,
+          "end_ms": 186830
         },
         "full_question": {
-          "start_ms": 166461,
-          "end_ms": 186675
+          "start_ms": 165900,
+          "end_ms": 186830
         }
       },
       "transcript": {
@@ -163,8 +163,8 @@
             "zh": "你别跟我开玩笑了，我从来没学过游泳，怎么去比赛啊？",
             "pinyin": "nǐ bié gēn wǒ kāi wán xiào le ， wǒ cóng lái méi xué guò yóu yǒng ， zěn me qù bǐ sài a ？",
             "vi": "",
-            "start_ms": 166461,
-            "end_ms": 175800
+            "start_ms": 167190,
+            "end_ms": 175155
           },
           {
             "id": "H41005_L_02_S2",
@@ -172,8 +172,8 @@
             "zh": "你去问问小王吧，他每个周末都去游泳。",
             "pinyin": "nǐ qù wèn wèn xiǎo wáng ba ， tā měi gè zhōu mò dōu qù yóu yǒng 。",
             "vi": "",
-            "start_ms": 175800,
-            "end_ms": 182524
+            "start_ms": 175255,
+            "end_ms": 184600
           }
         ]
       },
@@ -256,21 +256,21 @@
       "audio_src": "assets/audio/exams/H41005.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 196553,
-          "end_ms": 217755
+          "start_ms": 195960,
+          "end_ms": 219500
         },
         "statement": {
-          "start_ms": 217955,
-          "end_ms": 221955
+          "start_ms": 219700,
+          "end_ms": 222170
         },
         "full_question": {
-          "start_ms": 196553,
-          "end_ms": 221955
+          "start_ms": 195960,
+          "end_ms": 222170
         }
       },
       "transcript": {
@@ -283,8 +283,8 @@
             "zh": "年轻就是健康，年轻就是美丽。",
             "pinyin": "nián qīng jiù shì jiàn kāng ， nián qīng jiù shì měi lì 。",
             "vi": "",
-            "start_ms": 196553,
-            "end_ms": 201583
+            "start_ms": 197350,
+            "end_ms": 202014
           },
           {
             "id": "H41005_L_03_S2",
@@ -292,8 +292,8 @@
             "zh": "不要太担心胖瘦，也不要太关心自己长得是不是漂亮，是不是帅，年轻人最重要的是要对自己有信心。",
             "pinyin": "bú yào tài dān xīn pàng shòu ， yě bú yào tài guān xīn zì jǐ zhǎng dé shì bú shì piào liàng ， shì bú shì shuài ， nián qīng rén zuì zhòng yào de shì yào duì zì jǐ yǒu xìn xīn 。",
             "vi": "",
-            "start_ms": 201583,
-            "end_ms": 217754
+            "start_ms": 202114,
+            "end_ms": 219500
           }
         ]
       },
@@ -376,21 +376,21 @@
       "audio_src": "assets/audio/exams/H41005.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 231633,
-          "end_ms": 247739
+          "start_ms": 231340,
+          "end_ms": 249339
         },
         "statement": {
-          "start_ms": 247939,
-          "end_ms": 251189
+          "start_ms": 249539,
+          "end_ms": 251310
         },
         "full_question": {
-          "start_ms": 231633,
-          "end_ms": 251189
+          "start_ms": 231340,
+          "end_ms": 251310
         }
       },
       "transcript": {
@@ -403,8 +403,8 @@
             "zh": "姐，咱们弄错方向了，去西边的公共汽车应该在对面坐。",
             "pinyin": "jiě ， zán men nòng cuò fāng xiàng le ， qù xī biān de gōng gòng qì chē yīng gāi zài duì miàn zuò 。",
             "vi": "",
-            "start_ms": 231633,
-            "end_ms": 240784
+            "start_ms": 232870,
+            "end_ms": 240794
           },
           {
             "id": "H41005_L_04_S2",
@@ -412,8 +412,8 @@
             "zh": "正好前边有个天桥，我们从那儿过马路吧。",
             "pinyin": "zhèng hǎo qián biān yǒu gè tiān qiáo ， wǒ men cóng nà ér guò mǎ lù ba 。",
             "vi": "",
-            "start_ms": 240784,
-            "end_ms": 247738
+            "start_ms": 240894,
+            "end_ms": 249339
           }
         ]
       },
@@ -496,21 +496,21 @@
       "audio_src": "assets/audio/exams/H41005.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 260966,
-          "end_ms": 278358
+          "start_ms": 260519,
+          "end_ms": 280620
         },
         "statement": {
-          "start_ms": 278558,
-          "end_ms": 282158
+          "start_ms": 280820,
+          "end_ms": 282310
         },
         "full_question": {
-          "start_ms": 260966,
-          "end_ms": 282158
+          "start_ms": 260519,
+          "end_ms": 282310
         }
       },
       "transcript": {
@@ -523,8 +523,8 @@
             "zh": "我喜欢阳光，因为阳光给了万物生命。",
             "pinyin": "wǒ xǐ huān yáng guāng ， yīn wèi yáng guāng gěi le wàn wù shēng mìng 。",
             "vi": "",
-            "start_ms": 260966,
-            "end_ms": 266763
+            "start_ms": 262010,
+            "end_ms": 267395
           },
           {
             "id": "H41005_L_05_S2",
@@ -532,8 +532,8 @@
             "zh": "因为有了阳光，花园里的小草更绿了；",
             "pinyin": "yīn wèi yǒu le yáng guāng ， huā yuán lǐ de xiǎo cǎo gèng lǜ le ；",
             "vi": "",
-            "start_ms": 266763,
-            "end_ms": 272560
+            "start_ms": 267495,
+            "end_ms": 272735
           },
           {
             "id": "H41005_L_05_S3",
@@ -541,8 +541,8 @@
             "zh": "因为有了阳光，天空下的海洋更蓝了。",
             "pinyin": "yīn wèi yǒu le yáng guāng ， tiān kōng xià de hǎi yáng gèng lán le 。",
             "vi": "",
-            "start_ms": 272560,
-            "end_ms": 278357
+            "start_ms": 272835,
+            "end_ms": 280620
           }
         ]
       },
@@ -604,21 +604,21 @@
       "audio_src": "assets/audio/exams/H41005.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 292076,
-          "end_ms": 305476
+          "start_ms": 291599,
+          "end_ms": 307159
         },
         "statement": {
-          "start_ms": 305676,
-          "end_ms": 309676
+          "start_ms": 307359,
+          "end_ms": 309890
         },
         "full_question": {
-          "start_ms": 292076,
-          "end_ms": 309676
+          "start_ms": 291599,
+          "end_ms": 309890
         }
       },
       "transcript": {
@@ -631,8 +631,8 @@
             "zh": "第一印象是指在第一次见面时给别人留下的印象，第一印象往往是最深的，而且很难改变。",
             "pinyin": "dì yī yìn xiàng shì zhǐ zài dì yī cì jiàn miàn shí gěi bié rén liú xià de yìn xiàng ， dì yī yìn xiàng wǎng wǎng shì zuì shēn de ， ér qiě hěn nán gǎi biàn 。",
             "vi": "",
-            "start_ms": 292076,
-            "end_ms": 305476
+            "start_ms": 293090,
+            "end_ms": 307159
           }
         ]
       },
@@ -715,21 +715,21 @@
       "audio_src": "assets/audio/exams/H41005.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 319394,
-          "end_ms": 335068
+          "start_ms": 318979,
+          "end_ms": 337560
         },
         "statement": {
-          "start_ms": 335268,
-          "end_ms": 339268
+          "start_ms": 337760,
+          "end_ms": 339310
         },
         "full_question": {
-          "start_ms": 319394,
-          "end_ms": 339268
+          "start_ms": 318979,
+          "end_ms": 339310
         }
       },
       "transcript": {
@@ -742,8 +742,8 @@
             "zh": "有能力的人可以把复杂的事情变简单，而没能力的人却经常把简单的事情变复杂。",
             "pinyin": "yǒu néng lì de rén kě yǐ bǎ fù zá de shì qíng biàn jiǎn dān ， ér méi néng lì de rén què jīng cháng bǎ jiǎn dān de shì qíng biàn fù zá 。",
             "vi": "",
-            "start_ms": 319394,
-            "end_ms": 331399
+            "start_ms": 320350,
+            "end_ms": 331735
           },
           {
             "id": "H41005_L_07_S2",
@@ -751,8 +751,8 @@
             "zh": "这就是这两种人的区别。",
             "pinyin": "zhè jiù shì zhè liǎng zhǒng rén de qū bié 。",
             "vi": "",
-            "start_ms": 331399,
-            "end_ms": 335067
+            "start_ms": 331835,
+            "end_ms": 337560
           }
         ]
       },
@@ -835,21 +835,21 @@
       "audio_src": "assets/audio/exams/H41005.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 349026,
-          "end_ms": 368744
+          "start_ms": 348380,
+          "end_ms": 368979
         },
         "statement": {
-          "start_ms": 368944,
-          "end_ms": 372194
+          "start_ms": 369179,
+          "end_ms": 369290
         },
         "full_question": {
-          "start_ms": 349026,
-          "end_ms": 372194
+          "start_ms": 348380,
+          "end_ms": 369290
         }
       },
       "transcript": {
@@ -862,8 +862,8 @@
             "zh": "我从小就非常喜欢读书。",
             "pinyin": "wǒ cóng xiǎo jiù fēi cháng xǐ huān dú shū 。",
             "vi": "",
-            "start_ms": 349026,
-            "end_ms": 352702
+            "start_ms": 349950,
+            "end_ms": 353195
           },
           {
             "id": "H41005_L_08_S2",
@@ -871,8 +871,8 @@
             "zh": "长大后，发现身边的图书越来越多，而时间是有限的，所以，不仅要会读书，还要会选择其中的好书来阅读。",
             "pinyin": "zhǎng dà hòu ， fā xiàn shēn biān de tú shū yuè lái yuè duō ， ér shí jiān shì yǒu xiàn de ， suǒ yǐ ， bù jǐn yào huì dú shū ， hái yào huì xuǎn zé qí zhōng de hǎo shū lái yuè dú 。",
             "vi": "",
-            "start_ms": 352702,
-            "end_ms": 368743
+            "start_ms": 353295,
+            "end_ms": 368979
           }
         ]
       },
@@ -955,21 +955,21 @@
       "audio_src": "assets/audio/exams/H41005.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 381912,
-          "end_ms": 396289
+          "start_ms": 380780,
+          "end_ms": 397780
         },
         "statement": {
-          "start_ms": 396489,
-          "end_ms": 400489
+          "start_ms": 397980,
+          "end_ms": 400490
         },
         "full_question": {
-          "start_ms": 381912,
-          "end_ms": 400489
+          "start_ms": 380780,
+          "end_ms": 400490
         }
       },
       "transcript": {
@@ -982,8 +982,8 @@
             "zh": "越来越多的人选择上网看新闻，因为这样很方便，网站的报道更及时，内容也更详细、丰富。",
             "pinyin": "yuè lái yuè duō de rén xuǎn zé shàng wǎng kàn xīn wén ， yīn wèi zhè yàng hěn fāng biàn ， wǎng zhàn de bào dào gèng jí shí ， nèi róng yě gèng xiáng xì 、 fēng fù 。",
             "vi": "",
-            "start_ms": 381912,
-            "end_ms": 396289
+            "start_ms": 381410,
+            "end_ms": 397780
           }
         ]
       },
@@ -1066,21 +1066,21 @@
       "audio_src": "assets/audio/exams/H41005.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 410227,
-          "end_ms": 428795
+          "start_ms": 409700,
+          "end_ms": 430520
         },
         "statement": {
-          "start_ms": 428995,
-          "end_ms": 432995
+          "start_ms": 430720,
+          "end_ms": 433050
         },
         "full_question": {
-          "start_ms": 410227,
-          "end_ms": 432995
+          "start_ms": 409700,
+          "end_ms": 433050
         }
       },
       "transcript": {
@@ -1093,8 +1093,8 @@
             "zh": "虽然还有一部分宾馆会向客人提供免费的毛巾、牙膏和牙刷，但是每次出差，她都会自己带这些东西，很少用宾馆里的。",
             "pinyin": "suī rán hái yǒu yī bù fèn bīn guǎn huì xiàng kè rén tí gōng miǎn fèi de máo jīn 、 yá gāo hé yá shuā ， dàn shì měi cì chū chāi ， tā dū huì zì jǐ dài zhè xiē dōng xī ， hěn shǎo yòng bīn guǎn lǐ de 。",
             "vi": "",
-            "start_ms": 410227,
-            "end_ms": 428795
+            "start_ms": 411150,
+            "end_ms": 430520
           }
         ]
       },
