@@ -128,7 +128,7 @@
       "type": "true_false",
       "statement": {
         "zh": "他们俩经常聊天。",
-        "pinyin": "tā men liǎ jīng cháng liáo tiān 。",
+        "pinyin": "Tāmen liǎ jīngcháng liáotiān.",
         "vi": "Hai người họ thường hay trò chuyện."
       },
       "answer": false,
@@ -140,44 +140,44 @@
       "audio_src": "assets/audio/exams/H41001.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa. Đã hiệu chỉnh đầy đủ âm cuối '很熟悉'."
       },
       "segments": {
         "passage": {
-          "start_ms": 160854,
-          "end_ms": 176091
+          "start_ms": 160420,
+          "end_ms": 177100
         },
         "statement": {
-          "start_ms": 176291,
+          "start_ms": 177350,
           "end_ms": 179891
         },
         "full_question": {
-          "start_ms": 160854,
+          "start_ms": 160420,
           "end_ms": 179891
         }
       },
       "transcript": {
         "full_zh": "我经常在电梯里遇到她，可能她也在这座大楼里上班。但是我们从来没有说过话，只是看着很熟悉。",
-        "full_vi": "",
+        "full_vi": "Tôi thường gặp cô ấy trong thang máy, có thể cô ấy cũng làm việc trong tòa nhà này. Nhưng chúng tôi chưa bao giờ nói chuyện, chỉ nhìn thấy quen mặt thôi.",
         "sentences": [
           {
             "id": "H41001_L_02_S1",
             "index": 0,
             "zh": "我经常在电梯里遇到她，可能她也在这座大楼里上班。",
-            "pinyin": "wǒ jīng cháng zài diàn tī lǐ yù dào tā ， kě néng tā yě zài zhè zuò dà lóu lǐ shàng bān 。",
-            "vi": "",
-            "start_ms": 160854,
-            "end_ms": 169165
+            "pinyin": "Wǒ jīngcháng zài diàntī lǐ yùdào tā, kěnéng tā yě zài zhè zuò dàlóu lǐ shàngbān.",
+            "vi": "Tôi thường gặp cô ấy trong thang máy, có thể cô ấy cũng làm việc trong tòa nhà này.",
+            "start_ms": 162000,
+            "end_ms": 170000
           },
           {
             "id": "H41001_L_02_S2",
             "index": 1,
             "zh": "但是我们从来没有说过话，只是看着很熟悉。",
-            "pinyin": "dàn shì wǒ men cóng lái méi yǒu shuō guò huà ， zhǐ shì kàn zhe hěn shú xī 。",
-            "vi": "",
-            "start_ms": 169165,
-            "end_ms": 176090
+            "pinyin": "Dànshì wǒmen cónglái méiyǒu shuō guò huà, zhǐshì kànzhe hěn shúxī.",
+            "vi": "Nhưng chúng tôi chưa bao giờ nói chuyện, chỉ nhìn thấy quen mặt thôi.",
+            "start_ms": 170200,
+            "end_ms": 177100
           }
         ]
       },
