@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground -->
+  <rect x="20" y="180" width="200" height="10" fill="#3A404D" rx="2"/>
+  
+  <!-- Truck Body -->
+  <rect x="60" y="120" width="120" height="60" fill="#FF9F1C" rx="4"/>
+  <rect x="160" y="130" width="30" height="30" fill="#2D3446" rx="2"/>
+  
+  <!-- Wheels -->
+  <circle cx="90" cy="190" r="15" fill="#F5F5F5"/>
+  <circle cx="150" cy="190" r="15" fill="#F5F5F5"/>
+  <circle cx="90" cy="190" r="7" fill="#1A1D24"/>
+  <circle cx="150" cy="190" r="7" fill="#1A1D24"/>
+  
+  <!-- Motion/Vibration lines -->
+  <path d="M40 185 Q 50 175, 60 185 T 80 185" stroke="#FF9F1C" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M180 185 Q 190 175, 200 185 T 220 185" stroke="#FF9F1C" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Vibration effects on ground -->
+  <path d="M70 195 L 80 205 M140 195 L 150 205" stroke="#FF9F1C" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Speed lines -->
+  <path d="M20 130 L 40 130" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round"/>
+  <path d="M25 145 L 45 145" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round"/>
+  <path d="M20 160 L 40 160" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round"/>
+</svg>

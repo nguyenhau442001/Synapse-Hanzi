@@ -1,0 +1,67 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <circle cx="120" cy="115" r="70" fill="#252A34"/>
+  
+  <!-- Subtle pedestal / glow effect indicating preciousness -->
+  <ellipse cx="120" cy="165" rx="45" ry="12" fill="#E5A93B" opacity="0.15"/>
+  <ellipse cx="120" cy="165" rx="30" ry="8" fill="#E5A93B" opacity="0.3"/>
+
+  <!-- Giant Panda Silhouette / Stylized Flat Icon (Representing "珍稀" Wildlife) -->
+  <g transform="translate(0, 5)">
+    <!-- Ears -->
+    <circle cx="92" cy="72" r="16" fill="#0D1117"/>
+    <circle cx="148" cy="72" r="16" fill="#0D1117"/>
+    
+    <!-- Head -->
+    <circle cx="120" cy="98" r="38" fill="#F0F3F6"/>
+    
+    <!-- Eye Patches -->
+    <ellipse cx="102" cy="96" rx="11" ry="14" fill="#0D1117" transform="rotate(-15 102 96)"/>
+    <ellipse cx="138" cy="96" rx="11" ry="14" fill="#0D1117" transform="rotate(15 138 96)"/>
+    
+    <!-- Eyes (White shine) -->
+    <circle cx="104" cy="93" r="3.5" fill="#FFFFFF"/>
+    <circle cx="136" cy="93" r="3.5" fill="#FFFFFF"/>
+    
+    <!-- Nose & Mouth -->
+    <polygon points="120,103 116,108 124,108" fill="#0D1117"/>
+    <path d="M 115 113 Q 120 117 125 113" fill="none" stroke="#0D1117" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Body -->
+    <path d="M 88 126 C 75 126 65 142 68 162 C 72 178 92 185 120 185 C 148 185 168 178 172 162 C 175 142 165 126 152 126 Z" fill="#0D1117"/>
+    
+    <!-- Belly (White patch) -->
+    <ellipse cx="120" cy="155" rx="24" ry="22" fill="#F0F3F6"/>
+    
+    <!-- Paws -->
+    <circle cx="92" cy="172" r="10" fill="#0D1117"/>
+    <circle cx="148" cy="172" r="10" fill="#0D1117"/>
+  </g>
+
+  <!-- Golden bamboo accents symbolizing rarity/nature (珍稀) -->
+  <g transform="translate(0, 5)">
+    <!-- Left Bamboo stalk -->
+    <rect x="55" y="110" width="8" height="40" rx="4" fill="#E5A93B"/>
+    <rect x="53" y="105" width="12" height="4" rx="2" fill="#D4962A"/>
+    <rect x="53" y="125" width="12" height="4" rx="2" fill="#D4962A"/>
+    <rect x="53" y="145" width="12" height="4" rx="2" fill="#D4962A"/>
+    <path d="M 55 115 Q 40 110 35 120 Q 50 125 55 125" fill="#52B788"/>
+    
+    <!-- Right Bamboo stalk -->
+    <rect x="177" y="110" width="8" height="40" rx="4" fill="#E5A93B"/>
+    <rect x="175" y="105" width="12" height="4" rx="2" fill="#D4962A"/>
+    <rect x="175" y="125" width="12" height="4" rx="2" fill="#D4962A"/>
+    <rect x="175" y="145" width="12" height="4" rx="2" fill="#D4962A"/>
+    <path d="M 185 115 Q 200 110 205 120 Q 190 125 185 125" fill="#52B788"/>
+  </g>
+
+  <!-- Sparkles denoting preciousness / rarity -->
+  <g fill="#E5A93B">
+    <!-- Top Right Sparkle -->
+    <path d="M 172 48 Q 172 58 162 58 Q 172 58 172 68 Q 172 58 182 58 Q 172 58 172 48 Z"/>
+    <!-- Top Left Sparkle (smaller) -->
+    <path d="M 68 62 Q 68 68 62 68 Q 68 68 68 74 Q 68 68 74 68 Q 68 68 68 62 Z" opacity="0.7"/>
+    <!-- Bottom Sparkle -->
+    <path d="M 120 188 Q 120 195 113 195 Q 120 195 120 202 Q 120 195 127 195 Q 120 195 120 188 Z"/>
+  </g>
+</svg>

@@ -53546,6 +53546,256 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "折合.svg",
     "src": "images/HSK_3.0/level7/折合.svg",
     "caption": "quy đổi thành, tương đương với"
+  },
+  "哲理": {
+    "file": "哲理.svg",
+    "src": "images/HSK_3.0/level7/哲理.svg",
+    "caption": "triết lý, đạo lý sâu sắc"
+  },
+  "折磨": {
+    "file": "折磨.svg",
+    "src": "images/HSK_3.0/level7/折磨.svg",
+    "caption": "tra tấn, dày vò, hành hạ"
+  },
+  "折射": {
+    "file": "折射.svg",
+    "src": "images/HSK_3.0/level7/折射.svg",
+    "caption": "khúc xạ; phản ánh, phản chiếu"
+  },
+  "珍藏": {
+    "file": "珍藏.svg",
+    "src": "images/HSK_3.0/level7/珍藏.svg",
+    "caption": "trân tàng, cất giữ trân trọng, lưu giữ làm kỷ niệm"
+  },
+  "侦查": {
+    "file": "侦查.svg",
+    "src": "images/HSK_3.0/level7/侦查.svg",
+    "caption": "trinh sát, điều tra phá án"
+  },
+  "针锋相对": {
+    "file": "针锋相对.svg",
+    "src": "images/HSK_3.0/level7/针锋相对.svg",
+    "caption": "kim châm đối chọi gắt gao, ăn miếng trả miếng"
+  },
+  "针灸": {
+    "file": "针灸.svg",
+    "src": "images/HSK_3.0/level7/针灸.svg",
+    "caption": "châm cứu (y học cổ truyền)"
+  },
+  "真空": {
+    "file": "真空.svg",
+    "src": "images/HSK_3.0/level7/真空.svg",
+    "caption": "chân không"
+  },
+  "真理": {
+    "file": "真理.svg",
+    "src": "images/HSK_3.0/level7/真理.svg",
+    "caption": "chân lý"
+  },
+  "真情": {
+    "file": "真情.svg",
+    "src": "images/HSK_3.0/level7/真情.svg",
+    "caption": "chân tình, tình cảm chân thật"
+  },
+  "真是": {
+    "file": "真是.svg",
+    "src": "images/HSK_3.0/level7/真是.svg",
+    "caption": "thật là (khẩu ngữ than thở nhẹ)"
+  },
+  "珍视": {
+    "file": "珍视.svg",
+    "src": "images/HSK_3.0/level7/珍视.svg",
+    "caption": "trân quý, trân trọng xem như báu vật"
+  },
+  "侦探": {
+    "file": "侦探.svg",
+    "src": "images/HSK_3.0/level7/侦探.svg",
+    "caption": "thám tử"
+  },
+  "珍稀": {
+    "file": "珍稀.svg",
+    "src": "images/HSK_3.0/level7/珍稀.svg",
+    "caption": "quý hiếm, trân quý và hiếm thấy"
+  },
+  "真心": {
+    "file": "真心.svg",
+    "src": "images/HSK_3.0/level7/真心.svg",
+    "caption": "lòng chân thành, tấm lòng thật sự"
+  },
+  "真挚": {
+    "file": "真挚.svg",
+    "src": "images/HSK_3.0/level7/真挚.svg",
+    "caption": "chân thành tha thiết, nồng hậu"
+  },
+  "珍重": {
+    "file": "珍重.svg",
+    "src": "images/HSK_3.0/level7/珍重.svg",
+    "caption": "bảo trọng, giữ gìn sức khỏe"
+  },
+  "斟酌": {
+    "file": "斟酌.svg",
+    "src": "images/HSK_3.0/level7/斟酌.svg",
+    "caption": "cân nhắc kỹ lưỡng, đắn đo suy xét"
+  },
+  "枕": {
+    "file": "枕.svg",
+    "src": "images/HSK_3.0/level7/枕.svg",
+    "caption": "gối đầu, tựa đầu gối"
+  },
+  "诊所": {
+    "file": "诊所.svg",
+    "src": "images/HSK_3.0/level7/诊所.svg",
+    "caption": "phòng khám bệnh"
+  },
+  "震": {
+    "file": "震.svg",
+    "src": "images/HSK_3.0/level7/震.svg",
+    "caption": "rung, chấn động, làm rúng động"
+  },
+  "震荡": {
+    "file": "震荡.svg",
+    "src": "images/HSK_3.0/level7/震荡.svg",
+    "caption": "rung lắc mạnh, dao động lớn (thị trường, sóng)"
+  },
+  "阵地": {
+    "file": "阵地.svg",
+    "src": "images/HSK_3.0/level7/阵地.svg",
+    "caption": "trận địa, cứ điểm"
+  },
+  "镇定": {
+    "file": "镇定.svg",
+    "src": "images/HSK_3.0/level7/镇定.svg",
+    "caption": "bình tĩnh, trấn tĩnh"
+  },
+  "震动": {
+    "file": "震动.svg",
+    "src": "images/HSK_3.0/level7/震动.svg",
+    "caption": "rung động, rung rinh, chấn động"
+  },
+  "振奋": {
+    "file": "振奋.svg",
+    "src": "images/HSK_3.0/level7/振奋.svg",
+    "caption": "phấn chấn, phấn khởi hăng hái"
+  },
+  "震撼": {
+    "file": "震撼.svg",
+    "src": "images/HSK_3.0/level7/震撼.svg",
+    "caption": "chấn động lòng người, rung chuyển sâu sắc"
+  },
+  "镇静": {
+    "file": "镇静.svg",
+    "src": "images/HSK_3.0/level7/镇静.svg",
+    "caption": "bình tĩnh, trấn tĩnh, điềm tĩnh"
+  },
+  "震惊": {
+    "file": "震惊.svg",
+    "src": "images/HSK_3.0/level7/震惊.svg",
+    "caption": "sửng sốt, kinh hoàng, bàng hoàng chấn động"
+  },
+  "阵容": {
+    "file": "阵容.svg",
+    "src": "images/HSK_3.0/level7/阵容.svg",
+    "caption": "đội hình, dàn sao, lực lượng tham gia"
+  },
+  "蒸": {
+    "file": "蒸.svg",
+    "src": "images/HSK_3.0/level7/蒸.svg",
+    "caption": "hấp, chưng"
+  },
+  "争辩": {
+    "file": "争辩.svg",
+    "src": "images/HSK_3.0/level7/争辩.svg",
+    "caption": "tranh biện, cãi cọ, biện giải"
+  },
+  "争端": {
+    "file": "争端.svg",
+    "src": "images/HSK_3.0/level7/争端.svg",
+    "caption": "tranh chấp, mâu thuẫn xung đột"
+  },
+  "蒸发": {
+    "file": "蒸发.svg",
+    "src": "images/HSK_3.0/level7/蒸发.svg",
+    "caption": "bốc hơi, bay hơi"
+  },
+  "争分夺秒": {
+    "file": "争分夺秒.svg",
+    "src": "images/HSK_3.0/level7/争分夺秒.svg",
+    "caption": "tranh thủ từng phút từng giây, chạy đua với thời gian"
+  },
+  "征服": {
+    "file": "征服.svg",
+    "src": "images/HSK_3.0/level7/征服.svg",
+    "caption": "chinh phục, quy phục"
+  },
+  "争光": {
+    "file": "争光.svg",
+    "src": "images/HSK_3.0/level7/争光.svg",
+    "caption": "làm rạng danh, đem lại vinh quang"
+  },
+  "征集": {
+    "file": "征集.svg",
+    "src": "images/HSK_3.0/level7/征集.svg",
+    "caption": "trưng cầu, thu thập, phát động lấy (ý kiến, mẫu thiết kế)"
+  },
+  "症结": {
+    "file": "症结.svg",
+    "src": "images/HSK_3.0/level7/症结.svg",
+    "caption": "nút thắt, điểm mấu chốt của vấn đề"
+  },
+  "争气": {
+    "file": "争气.svg",
+    "src": "images/HSK_3.0/level7/争气.svg",
+    "caption": "biết phấn đấu làm rạng danh, không phụ lòng mong mỏi"
+  },
+  "征收": {
+    "file": "征收.svg",
+    "src": "images/HSK_3.0/level7/征收.svg",
+    "caption": "trưng thu, thu (thuế, phí)"
+  },
+  "争相": {
+    "file": "争相.svg",
+    "src": "images/HSK_3.0/level7/争相.svg",
+    "caption": "tranh nhau, thi nhau làm"
+  },
+  "争先恐后": {
+    "file": "争先恐后.svg",
+    "src": "images/HSK_3.0/level7/争先恐后.svg",
+    "caption": "tranh nhau chen trước, sợ tụt lại phía sau"
+  },
+  "正月": {
+    "file": "正月.svg",
+    "src": "images/HSK_3.0/level7/正月.svg",
+    "caption": "tháng Giêng (âm lịch)"
+  },
+  "挣扎": {
+    "file": "挣扎.svg",
+    "src": "images/HSK_3.0/level7/挣扎.svg",
+    "caption": "giãy giụa, vùng vẫy chống chọi"
+  },
+  "争执": {
+    "file": "争执.svg",
+    "src": "images/HSK_3.0/level7/争执.svg",
+    "caption": "tranh chấp, bất đồng tranh cãi"
+  },
+  "正能量": {
+    "file": "正能量.svg",
+    "src": "images/HSK_3.0/level7/正能量.svg",
+    "caption": "năng lượng tích cực"
+  },
+  "正气": {
+    "file": "正气.svg",
+    "src": "images/HSK_3.0/level7/正气.svg",
+    "caption": "chính khí, khí phách ngay thẳng chính nghĩa"
+  },
+  "政权": {
+    "file": "政权.svg",
+    "src": "images/HSK_3.0/level7/政权.svg",
+    "caption": "quyền lực chính trị"
+  },
+  "证券": {
+    "file": "证券.svg",
+    "src": "images/HSK_3.0/level7/证券.svg",
+    "caption": "chứng khoán"
   }
 };
 
