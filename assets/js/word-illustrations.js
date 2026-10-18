@@ -50546,6 +50546,261 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "卧铺.svg",
     "src": "images/HSK_3.0/level7/卧铺.svg",
     "caption": "giường nằm (tàu, xe)"
+  },
+  "污秽": {
+    "file": "污秽.svg",
+    "src": "images/HSK_3.0/level7/污秽.svg",
+    "caption": "nhơ bẩn; dơ dáy; ô uế"
+  },
+  "屋檐": {
+    "file": "屋檐.svg",
+    "src": "images/HSK_3.0/level7/屋檐.svg",
+    "caption": "mái hiên; hiên nhà"
+  },
+  "呜咽": {
+    "file": "呜咽.svg",
+    "src": "images/HSK_3.0/level7/呜咽.svg",
+    "caption": "nghẹn ngào; nức nở; than thở"
+  },
+  "乌云": {
+    "file": "乌云.svg",
+    "src": "images/HSK_3.0/level7/乌云.svg",
+    "caption": "mây đen; mây mù"
+  },
+  "无边无际": {
+    "file": "无边无际.svg",
+    "src": "images/HSK_3.0/level7/无边无际.svg",
+    "caption": "mênh mông bát ngát; vô biên vô bến"
+  },
+  "无不": {
+    "file": "无不.svg",
+    "src": "images/HSK_3.0/level7/无不.svg",
+    "caption": "không ai không; đều; không gì không"
+  },
+  "无敌": {
+    "file": "无敌.svg",
+    "src": "images/HSK_3.0/level7/无敌.svg",
+    "caption": "vô địch; không đối thủ"
+  },
+  "无家可归": {
+    "file": "无家可归.svg",
+    "src": "images/HSK_3.0/level7/无家可归.svg",
+    "caption": "không nhà để về; vô gia cư"
+  },
+  "无价之宝": {
+    "file": "无价之宝.svg",
+    "src": "images/HSK_3.0/level7/无价之宝.svg",
+    "caption": "bảo vật vô giá; báu vật"
+  },
+  "无济于事": {
+    "file": "无济于事.svg",
+    "src": "images/HSK_3.0/level7/无济于事.svg",
+    "caption": "chẳng giúp ích gì được; vô dụng"
+  },
+  "无可厚非": {
+    "file": "无可厚非.svg",
+    "src": "images/HSK_3.0/level7/无可厚非.svg",
+    "caption": "không có gì đáng trách; khó trách"
+  },
+  "无可奈何": {
+    "file": "无可奈何.svg",
+    "src": "images/HSK_3.0/level7/无可奈何.svg",
+    "caption": "đành chịu không biết làm sao; bất đắc dĩ"
+  },
+  "无力": {
+    "file": "无力.svg",
+    "src": "images/HSK_3.0/level7/无力.svg",
+    "caption": "bủn rủn mất sức; bất lực; không có sức"
+  },
+  "无理": {
+    "file": "无理.svg",
+    "src": "images/HSK_3.0/level7/无理.svg",
+    "caption": "vô lý; ngang ngược"
+  },
+  "无论如何": {
+    "file": "无论如何.svg",
+    "src": "images/HSK_3.0/level7/无论如何.svg",
+    "caption": "dù thế nào đi nữa; bằng bất cứ giá nào"
+  },
+  "无能": {
+    "file": "无能.svg",
+    "src": "images/HSK_3.0/level7/无能.svg",
+    "caption": "bất tài vô năng; bất lực"
+  },
+  "无情": {
+    "file": "无情.svg",
+    "src": "images/HSK_3.0/level7/无情.svg",
+    "caption": "vô tình; tàn nhẫn; lạnh lùng"
+  },
+  "无穷": {
+    "file": "无穷.svg",
+    "src": "images/HSK_3.0/level7/无穷.svg",
+    "caption": "vô cùng; bất tận; vô tận"
+  },
+  "无私": {
+    "file": "无私.svg",
+    "src": "images/HSK_3.0/level7/无私.svg",
+    "caption": "vô tư; chí công vô tư; không vụ lợi"
+  },
+  "无所事事": {
+    "file": "无所事事.svg",
+    "src": "images/HSK_3.0/level7/无所事事.svg",
+    "caption": "rảnh rỗi không làm gì; ngồi không"
+  },
+  "无所作为": {
+    "file": "无所作为.svg",
+    "src": "images/HSK_3.0/level7/无所作为.svg",
+    "caption": "không làm nên trò trống gì; không có thành tựu"
+  },
+  "无条件": {
+    "file": "无条件.svg",
+    "src": "images/HSK_3.0/level7/无条件.svg",
+    "caption": "vô điều kiện"
+  },
+  "无线": {
+    "file": "无线.svg",
+    "src": "images/HSK_3.0/level7/无线.svg",
+    "caption": "không dây; vô tuyến"
+  },
+  "无形": {
+    "file": "无形.svg",
+    "src": "images/HSK_3.0/level7/无形.svg",
+    "caption": "vô hình"
+  },
+  "无须": {
+    "file": "无须.svg",
+    "src": "images/HSK_3.0/level7/无须.svg",
+    "caption": "không cần; không nhất thiết"
+  },
+  "无意": {
+    "file": "无意.svg",
+    "src": "images/HSK_3.0/level7/无意.svg",
+    "caption": "vô tình"
+  },
+  "无缘": {
+    "file": "无缘.svg",
+    "src": "images/HSK_3.0/level7/无缘.svg",
+    "caption": "lỡ hẹn; không có duyên"
+  },
+  "捂": {
+    "file": "捂.svg",
+    "src": "images/HSK_3.0/level7/捂.svg",
+    "caption": "bịt chặt; che; ấp"
+  },
+  "舞": {
+    "file": "舞.svg",
+    "src": "images/HSK_3.0/level7/舞.svg",
+    "caption": "múa; nhảy múa"
+  },
+  "五官": {
+    "file": "五官.svg",
+    "src": "images/HSK_3.0/level7/五官.svg",
+    "caption": "ngũ quan; đường nét gương mặt"
+  },
+  "五花八门": {
+    "file": "五花八门.svg",
+    "src": "images/HSK_3.0/level7/五花八门.svg",
+    "caption": "đủ loại muôn hình muôn vẻ; đa dạng phức tạp"
+  },
+  "五湖四海": {
+    "file": "五湖四海.svg",
+    "src": "images/HSK_3.0/level7/五湖四海.svg",
+    "caption": "khắp bốn phương trời; năm châu bốn biển"
+  },
+  "武力": {
+    "file": "武力.svg",
+    "src": "images/HSK_3.0/level7/武力.svg",
+    "caption": "vũ lực; sức mạnh quân sự"
+  },
+  "误导": {
+    "file": "误导.svg",
+    "src": "images/HSK_3.0/level7/误导.svg",
+    "caption": "hướng dẫn sai; làm hiểu lầm"
+  },
+  "务工": {
+    "file": "务工.svg",
+    "src": "images/HSK_3.0/level7/务工.svg",
+    "caption": "làm thuê; đi làm công xa"
+  },
+  "物力": {
+    "file": "物力.svg",
+    "src": "images/HSK_3.0/level7/物力.svg",
+    "caption": "vật lực; nguồn lực vật chất"
+  },
+  "物流": {
+    "file": "物流.svg",
+    "src": "images/HSK_3.0/level7/物流.svg",
+    "caption": "hậu cần logistics; luân chuyển hàng hóa"
+  },
+  "误区": {
+    "file": "误区.svg",
+    "src": "images/HSK_3.0/level7/误区.svg",
+    "caption": "nhận thức sai lầm; quan niệm sai lệch"
+  },
+  "务实": {
+    "file": "务实.svg",
+    "src": "images/HSK_3.0/level7/务实.svg",
+    "caption": "thực chất; thiết thực; thực tế"
+  },
+  "物种": {
+    "file": "物种.svg",
+    "src": "images/HSK_3.0/level7/物种.svg",
+    "caption": "loài"
+  },
+  "稀": {
+    "file": "稀.svg",
+    "src": "images/HSK_3.0/level7/稀.svg",
+    "caption": "loãng; thưa; hiếm"
+  },
+  "吸毒": {
+    "file": "吸毒.svg",
+    "src": "images/HSK_3.0/level7/吸毒.svg",
+    "caption": "hút hít ma túy; nghiện ma túy"
+  },
+  "熄火": {
+    "file": "熄火.svg",
+    "src": "images/HSK_3.0/level7/熄火.svg",
+    "caption": "tắt máy; tắt lửa; dập lửa"
+  },
+  "犀利": {
+    "file": "犀利.svg",
+    "src": "images/HSK_3.0/level7/犀利.svg",
+    "caption": "sắc bén; đanh thép; bén nhọn"
+  },
+  "奚落": {
+    "file": "奚落.svg",
+    "src": "images/HSK_3.0/level7/奚落.svg",
+    "caption": "chế giễu; gièm pha; mỉa mai"
+  },
+  "吸纳": {
+    "file": "吸纳.svg",
+    "src": "images/HSK_3.0/level7/吸纳.svg",
+    "caption": "thu nhận; tiếp thu; dung nạp"
+  },
+  "稀奇": {
+    "file": "稀奇.svg",
+    "src": "images/HSK_3.0/level7/稀奇.svg",
+    "caption": "kỳ lạ; lạ lùng; hiếm lạ"
+  },
+  "稀少": {
+    "file": "稀少.svg",
+    "src": "images/HSK_3.0/level7/稀少.svg",
+    "caption": "thưa thớt; hiếm hoi; ít ỏi"
+  },
+  "嬉笑": {
+    "file": "嬉笑.svg",
+    "src": "images/HSK_3.0/level7/嬉笑.svg",
+    "caption": "cười đùa; vui đùa; nô giỡn"
+  },
+  "熙熙攘攘": {
+    "file": "熙熙攘攘.svg",
+    "src": "images/HSK_3.0/level7/熙熙攘攘.svg",
+    "caption": "tấp nập nhộn nhịp; đông đúc huyên náo"
+  },
+  "息息相关": {
+    "file": "息息相关.svg",
+    "src": "images/HSK_3.0/level7/息息相关.svg",
+    "caption": "liên quan khăng khít; gắn bó mật thiết"
   }
 };
 

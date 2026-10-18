@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Horizon line and sky -->
+  <path d="M0 120 L240 120 L240 0 L0 0 Z" fill="#252A33"/>
+  
+  <!-- Golden wheat field waves -->
+  <path d="M0 240 L0 180 Q60 150 120 180 T240 180 L240 240 Z" fill="#D48806"/>
+  <path d="M0 240 L0 190 Q60 160 120 190 T240 190 L240 240 Z" fill="#FADB14"/>
+  <path d="M0 240 L0 200 Q60 170 120 200 T240 200 L240 240 Z" fill="#FFC53D"/>
+  
+  <!-- Distant horizon detail -->
+  <path d="M0 120 L240 120" stroke="#3D4451" stroke-width="2"/>
+  
+  <!-- Stylized wheat stalks in foreground -->
+  <g fill="#FFD666">
+    <rect x="20" y="160" width="2" height="40" rx="1"/>
+    <rect x="50" y="150" width="2" height="50" rx="1"/>
+    <rect x="90" y="155" width="2" height="45" rx="1"/>
+    <rect x="140" y="150" width="2" height="50" rx="1"/>
+    <rect x="180" y="160" width="2" height="40" rx="1"/>
+    <rect x="220" y="155" width="2" height="45" rx="1"/>
+  </g>
+</svg>
