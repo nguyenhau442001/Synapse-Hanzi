@@ -53042,10 +53042,260 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/越发.svg",
     "caption": "càng, ngày càng, càng thêm"
   },
+  "岳父": {
+    "file": "岳父.svg",
+    "src": "images/HSK_3.0/level7/岳父.svg",
+    "caption": "bố vợ, nhạc phụ"
+  },
   "越过": {
     "file": "越过.svg",
     "src": "images/HSK_3.0/level7/越过.svg",
     "caption": "vượt qua, băng qua"
+  },
+  "阅览": {
+    "file": "阅览.svg",
+    "src": "images/HSK_3.0/level7/阅览.svg",
+    "caption": "đọc duyệt, xem đọc sách báo"
+  },
+  "阅历": {
+    "file": "阅历.svg",
+    "src": "images/HSK_3.0/level7/阅历.svg",
+    "caption": "trải nghiệm đường đời, vốn sống lịch duyệt"
+  },
+  "晕头转向": {
+    "file": "晕头转向.svg",
+    "src": "images/HSK_3.0/level7/晕头转向.svg",
+    "caption": "hoa mắt chóng mặt, mất phương hướng cuống cuồng"
+  },
+  "陨石": {
+    "file": "陨石.svg",
+    "src": "images/HSK_3.0/level7/陨石.svg",
+    "caption": "thiên thạch, đá sao băng"
+  },
+  "运筹帷幄": {
+    "file": "运筹帷幄.svg",
+    "src": "images/HSK_3.0/level7/运筹帷幄.svg",
+    "caption": "mưu tính trong màn trướng, bày mưu tính kế điều khiển đại cục"
+  },
+  "孕妇": {
+    "file": "孕妇.svg",
+    "src": "images/HSK_3.0/level7/孕妇.svg",
+    "caption": "phụ nữ mang thai, thai phụ"
+  },
+  "蕴含": {
+    "file": "蕴含.svg",
+    "src": "images/HSK_3.0/level7/蕴含.svg",
+    "caption": "hàm chứa, ẩn chứa bên trong"
+  },
+  "运河": {
+    "file": "运河.svg",
+    "src": "images/HSK_3.0/level7/运河.svg",
+    "caption": "kênh đào, kênh vận tải đường thủy"
+  },
+  "韵味": {
+    "file": "韵味.svg",
+    "src": "images/HSK_3.0/level7/韵味.svg",
+    "caption": "phong vị, nét duyên thâm trầm, dư vị sâu sắc"
+  },
+  "运转": {
+    "file": "运转.svg",
+    "src": "images/HSK_3.0/level7/运转.svg",
+    "caption": "vận hành, chuyển động quay, hoạt động xoay vần"
+  },
+  "运作": {
+    "file": "运作.svg",
+    "src": "images/HSK_3.0/level7/运作.svg",
+    "caption": "vận hành, hoạt động điều hành"
+  },
+  "杂技": {
+    "file": "杂技.svg",
+    "src": "images/HSK_3.0/level7/杂技.svg",
+    "caption": "xiếc, trò xiếc nhào lộn"
+  },
+  "杂交": {
+    "file": "杂交.svg",
+    "src": "images/HSK_3.0/level7/杂交.svg",
+    "caption": "lai giống, lai tạo"
+  },
+  "杂乱无章": {
+    "file": "杂乱无章.svg",
+    "src": "images/HSK_3.0/level7/杂乱无章.svg",
+    "caption": "bừa bộn lộn xộn, không theo thứ tự quy củ"
+  },
+  "栽": {
+    "file": "栽.svg",
+    "src": "images/HSK_3.0/level7/栽.svg",
+    "caption": "trồng (cây); ngã dúi dụi"
+  },
+  "栽赃": {
+    "file": "栽赃.svg",
+    "src": "images/HSK_3.0/level7/栽赃.svg",
+    "caption": "gài bẫy, vu oan giá họa, nhét tang vật để đổ tội"
+  },
+  "再度": {
+    "file": "再度.svg",
+    "src": "images/HSK_3.0/level7/再度.svg",
+    "caption": "một lần nữa, lại một lần nữa"
+  },
+  "在所难免": {
+    "file": "在所难免.svg",
+    "src": "images/HSK_3.0/level7/在所难免.svg",
+    "caption": "khó tránh khỏi, tất yếu không thể tránh"
+  },
+  "载体": {
+    "file": "载体.svg",
+    "src": "images/HSK_3.0/level7/载体.svg",
+    "caption": "vật mang, phương tiện truyền tải, chất mang"
+  },
+  "再现": {
+    "file": "再现.svg",
+    "src": "images/HSK_3.0/level7/再现.svg",
+    "caption": "tái hiện, hiện lại trước mắt"
+  },
+  "在职": {
+    "file": "在职.svg",
+    "src": "images/HSK_3.0/level7/在职.svg",
+    "caption": "đương chức, đang làm việc, tại chức"
+  },
+  "暂": {
+    "file": "暂.svg",
+    "src": "images/HSK_3.0/level7/暂.svg",
+    "caption": "tạm thời, tạm"
+  },
+  "赞不绝口": {
+    "file": "赞不绝口.svg",
+    "src": "images/HSK_3.0/level7/赞不绝口.svg",
+    "caption": "khen ngợi không dứt lời, tấm tắc khen ngợi"
+  },
+  "赞许": {
+    "file": "赞许.svg",
+    "src": "images/HSK_3.0/level7/赞许.svg",
+    "caption": "tán thưởng, khen ngợi, gật đầu biểu dương"
+  },
+  "赞扬": {
+    "file": "赞扬.svg",
+    "src": "images/HSK_3.0/level7/赞扬.svg",
+    "caption": "ca ngợi, biểu dương, khen ngợi"
+  },
+  "葬": {
+    "file": "葬.svg",
+    "src": "images/HSK_3.0/level7/葬.svg",
+    "caption": "chôn cất, an táng"
+  },
+  "葬礼": {
+    "file": "葬礼.svg",
+    "src": "images/HSK_3.0/level7/葬礼.svg",
+    "caption": "tang lễ, lễ tang"
+  },
+  "早日": {
+    "file": "早日.svg",
+    "src": "images/HSK_3.0/level7/早日.svg",
+    "caption": "sớm ngày, sớm"
+  },
+  "灶": {
+    "file": "灶.svg",
+    "src": "images/HSK_3.0/level7/灶.svg",
+    "caption": "bếp lò, bếp lò nấu ăn"
+  },
+  "造福": {
+    "file": "造福.svg",
+    "src": "images/HSK_3.0/level7/造福.svg",
+    "caption": "tạo phúc, mang lại lợi ích cho"
+  },
+  "造价": {
+    "file": "造价.svg",
+    "src": "images/HSK_3.0/level7/造价.svg",
+    "caption": "giá thành xây dựng, chi phí thi công"
+  },
+  "造假": {
+    "file": "造假.svg",
+    "src": "images/HSK_3.0/level7/造假.svg",
+    "caption": "làm giả, gian lận, làm giả mạo"
+  },
+  "造就": {
+    "file": "造就.svg",
+    "src": "images/HSK_3.0/level7/造就.svg",
+    "caption": "đào tạo nên, tôi luyện nên, thành tựu"
+  },
+  "则²": {
+    "file": "则².svg",
+    "src": "images/HSK_3.0/level7/则².svg",
+    "caption": "thì, là (liên từ văn viết)"
+  },
+  "贼": {
+    "file": "贼.svg",
+    "src": "images/HSK_3.0/level7/贼.svg",
+    "caption": "tên trộm, kẻ cắp"
+  },
+  "增产": {
+    "file": "增产.svg",
+    "src": "images/HSK_3.0/level7/增产.svg",
+    "caption": "tăng sản lượng"
+  },
+  "增收": {
+    "file": "增收.svg",
+    "src": "images/HSK_3.0/level7/增收.svg",
+    "caption": "tăng thêm thu nhập"
+  },
+  "增速": {
+    "file": "增速.svg",
+    "src": "images/HSK_3.0/level7/增速.svg",
+    "caption": "tốc độ tăng trưởng"
+  },
+  "增添": {
+    "file": "增添.svg",
+    "src": "images/HSK_3.0/level7/增添.svg",
+    "caption": "thêm vào, tô điểm thêm"
+  },
+  "增值": {
+    "file": "增值.svg",
+    "src": "images/HSK_3.0/level7/增值.svg",
+    "caption": "tăng giá trị, gia tăng giá trị"
+  },
+  "渣": {
+    "file": "渣.svg",
+    "src": "images/HSK_3.0/level7/渣.svg",
+    "caption": "bã, cặn, mẩu vụn"
+  },
+  "扎根": {
+    "file": "扎根.svg",
+    "src": "images/HSK_3.0/level7/扎根.svg",
+    "caption": "bám rễ, cắm rễ sâu"
+  },
+  "扎实": {
+    "file": "扎实.svg",
+    "src": "images/HSK_3.0/level7/扎实.svg",
+    "caption": "vững vàng, chắc chắn, bài bản"
+  },
+  "闸": {
+    "file": "闸.svg",
+    "src": "images/HSK_3.0/level7/闸.svg",
+    "caption": "cửa cống, van đập, phanh hãm"
+  },
+  "眨眼": {
+    "file": "眨眼.svg",
+    "src": "images/HSK_3.0/level7/眨眼.svg",
+    "caption": "chớp mắt, nháy mắt"
+  },
+  "榨": {
+    "file": "榨.svg",
+    "src": "images/HSK_3.0/level7/榨.svg",
+    "caption": "ép, vắt"
+  },
+  "炸弹": {
+    "file": "炸弹.svg",
+    "src": "images/HSK_3.0/level7/炸弹.svg",
+    "caption": "quả bom"
+  },
+  "诈骗": {
+    "file": "诈骗.svg",
+    "src": "images/HSK_3.0/level7/诈骗.svg",
+    "caption": "lừa gạt"
+  },
+  "摘要": {
+    "file": "摘要.svg",
+    "src": "images/HSK_3.0/level7/摘要.svg",
+    "caption": "tóm tắt, trích yếu, bản tóm tắt"
   }
 };
 

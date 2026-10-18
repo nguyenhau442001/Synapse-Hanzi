@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative grounding soil/earth strata -->
+  <path d="M40 180 C80 170, 160 170, 200 180 L210 210 C160 220, 80 220, 30 210 Z" fill="#252A34" opacity="0.6"/>
+
+  <!-- Deep Earth Sub-layer -->
+  <path d="M30 195 C80 188, 160 188, 210 195 L215 220 C160 228, 80 228, 25 220 Z" fill="#1E232D"/>
+
+  <!-- Roots (Cắm rễ sâu) branching deep into the earth -->
+  <g fill="none" stroke="#F39C12" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Main taproot -->
+    <path d="M120 145 C118 165, 122 185, 120 205"/>
+    
+    <!-- Secondary roots spreading left -->
+    <path d="M115 160 C95 165, 80 180, 65 195"/>
+    <path d="M105 175 C90 185, 82 190, 75 205"/>
+    <path d="M120 190 C105 198, 95 205, 90 212"/>
+
+    <!-- Secondary roots spreading right -->
+    <path d="M125 160 C145 165, 160 180, 175 195"/>
+    <path d="M135 175 C150 185, 158 190, 165 205"/>
+    <path d="M120 190 C135 198, 145 205, 150 212"/>
+  </g>
+
+  <!-- Ground Level Line -->
+  <line x1="30" y1="145" x2="210" y2="145" stroke="#3A4252" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Plant Stem & Leaves (Vật thể đại diện: Cây vươn mạnh mẽ từ rễ sâu) -->
+  <g>
+    <!-- Stem -->
+    <path d="M120 145 C120 120, 122 95, 120 75" fill="none" stroke="#2ECC71" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Left Leaf -->
+    <path d="M120 100 C100 95, 85 105, 80 120 C95 125, 110 115, 120 100 Z" fill="#2ECC71"/>
+    <path d="M120 100 C105 102, 95 110, 89 116" fill="none" stroke="#27AE60" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Right Leaf -->
+    <path d="M120 85 C140 80, 155 90, 160 105 C145 110, 130 100, 120 85 Z" fill="#2ECC71"/>
+    <path d="M120 85 C135 87, 145 95, 151 101" fill="none" stroke="#27AE60" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Top Sprout / Bud -->
+    <path d="M120 75 C115 60, 120 50, 120 45 C120 50, 125 60, 120 75 Z" fill="#F1C40F"/>
+  </g>
+
+  <!-- Accent glow elements representing foundational strength/stability -->
+  <circle cx="120" cy="180" r="2" fill="#F39C12" opacity="0.8"/>
+  <circle cx="85" cy="190" r="1.5" fill="#F39C12" opacity="0.8"/>
+  <circle cx="155" cy="190" r="1.5" fill="#F39C12" opacity="0.8"/>
+  <circle cx="100" cy="205" r="1.5" fill="#F39C12" opacity="0.8"/>
+  <circle cx="140" cy="205" r="1.5" fill="#F39C12" opacity="0.8"/>
+</svg>
