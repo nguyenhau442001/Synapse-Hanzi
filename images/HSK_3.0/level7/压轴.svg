@@ -1,0 +1,70 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Atmospheric spotlight effects (Dark mode theme) -->
+  <circle cx="120" cy="110" r="85" fill="#252D3D" opacity="0.6"/>
+  <path d="M120 25 L65 200 L175 200 Z" fill="url(#spotlight)" opacity="0.15"/>
+  <defs>
+    <linearGradient id="spotlight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="curtainLeft" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0F131A"/>
+      <stop offset="100%" stop-color="#1E2533"/>
+    </linearGradient>
+    <linearGradient id="curtainRight" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0%" stop-color="#0F131A"/>
+      <stop offset="100%" stop-color="#1E2533"/>
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Side Stage Curtains (framing the grand finale performance) -->
+  <path d="M0 0 L40 0 L25 240 L0 240 Z" fill="url(#curtainLeft)"/>
+  <path d="M240 0 L200 0 L215 240 L240 240 Z" fill="url(#curtainRight)"/>
+
+  <!-- Stage Floor -->
+  <path d="M20 205 L220 205 L235 240 L5 240 Z" fill="#12151C"/>
+  <line x1="20" y1="205" x2="220" y2="205" stroke="#F59E0B" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Central Iconic Subject: The Grand Finale Performance (The Peak/压轴) -->
+  <!-- Elegant Performer / Soprano Character representing the ultimate act -->
+  <!-- Dress / Body -->
+  <path d="M102 145 C102 135 110 120 120 120 C130 120 138 135 138 145 L150 205 L90 205 Z" fill="#1E293B"/>
+  <path d="M102 145 C102 135 110 120 120 120 C130 120 138 135 138 145 L155 205 C155 205 135 210 120 210 C105 210 85 205 85 205 Z" fill="url(#goldAccent)"/>
+
+  <!-- Head & Neck -->
+  <circle cx="120" cy="98" r="14" fill="#FDE68A"/>
+  <path d="M116 110 L124 110 L125 122 L115 122 Z" fill="#FDE68A"/>
+  
+  <!-- Upheld Arms (Expressive performance posture) -->
+  <path d="M110 125 C95 120 85 105 82 95" stroke="#FDE68A" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M130 125 C145 120 155 105 158 95" stroke="#FDE68A" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+  <!-- Microphone on Stand (Signifying the grand vocal performance) -->
+  <path d="M120 205 L120 130" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="120" cy="125" r="4" fill="url(#goldAccent)"/>
+  <path d="M117 122 C117 120 123 120 123 122 L123 128 C123 130 117 130 117 128 Z" fill="#CBD5E1" opacity="0.8"/>
+
+  <!-- Musical notes floating gracefully upward (Indicating the climax/highlight) -->
+  <g fill="#F59E0B">
+    <!-- Note 1 -->
+    <circle cx="85" cy="70" r="3.5"/>
+    <path d="M88.5 70 L88.5 55 L95 53 L95 56 L91.5 57 L91.5 70 Z"/>
+    
+    <!-- Note 2 (Larger, higher up) -->
+    <circle cx="150" cy="55" r="4.5"/>
+    <path d="M154.5 55 L154.5 37 L163 35 L163 39 L158.5 40 L158.5 55 Z"/>
+
+    <!-- Sparkles / Highlight indicators -->
+    <path d="M120 40 L122 47 L129 49 L122 51 L120 58 L118 51 L111 49 L118 47 Z" fill="#FCD34D" opacity="0.9"/>
+    <path d="M72 105 L73 108 L76 109 L73 110 L72 113 L71 110 L68 109 L71 108 Z" fill="#FCD34D" opacity="0.6"/>
+    <path d="M168 95 L169 98 L172 99 L169 100 L168 103 L167 100 L164 99 L167 98 Z" fill="#FCD34D" opacity="0.6"/>
+  </g>
+
+</svg>

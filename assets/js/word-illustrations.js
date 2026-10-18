@@ -51787,6 +51787,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/选项.svg",
     "caption": "lựa chọn; phương án chọn"
   },
+  "选用": {
+    "file": "选用.svg",
+    "src": "images/HSK_3.0/level7/选用.svg",
+    "caption": "chọn dùng; tuyển chọn sử dụng"
+  },
   "削减": {
     "file": "削减.svg",
     "src": "images/HSK_3.0/level7/削减.svg",
@@ -51796,6 +51801,261 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "靴子.svg",
     "src": "images/HSK_3.0/level7/靴子.svg",
     "caption": "ủng; giày bốt"
+  },
+  "学识": {
+    "file": "学识.svg",
+    "src": "images/HSK_3.0/level7/学识.svg",
+    "caption": "học thức; sự hiểu biết sâu rộng"
+  },
+  "学士": {
+    "file": "学士.svg",
+    "src": "images/HSK_3.0/level7/学士.svg",
+    "caption": "cử nhân (học vị)"
+  },
+  "穴位": {
+    "file": "穴位.svg",
+    "src": "images/HSK_3.0/level7/穴位.svg",
+    "caption": "huyệt vị; huyệt đạo"
+  },
+  "学业": {
+    "file": "学业.svg",
+    "src": "images/HSK_3.0/level7/学业.svg",
+    "caption": "việc học tập; học nghiệp"
+  },
+  "血缘": {
+    "file": "血缘.svg",
+    "src": "images/HSK_3.0/level7/血缘.svg",
+    "caption": "huyết thống; huyết duyên"
+  },
+  "勋章": {
+    "file": "勋章.svg",
+    "src": "images/HSK_3.0/level7/勋章.svg",
+    "caption": "huân chương"
+  },
+  "旬": {
+    "file": "旬.svg",
+    "src": "images/HSK_3.0/level7/旬.svg",
+    "caption": "tuần (10 ngày); mười năm tuổi"
+  },
+  "寻": {
+    "file": "寻.svg",
+    "src": "images/HSK_3.0/level7/寻.svg",
+    "caption": "tìm kiếm; kiếm tìm"
+  },
+  "寻常": {
+    "file": "寻常.svg",
+    "src": "images/HSK_3.0/level7/寻常.svg",
+    "caption": "bình thường; tầm thường"
+  },
+  "巡回": {
+    "file": "巡回.svg",
+    "src": "images/HSK_3.0/level7/巡回.svg",
+    "caption": "lưu động; tuần hồi"
+  },
+  "巡视": {
+    "file": "巡视.svg",
+    "src": "images/HSK_3.0/level7/巡视.svg",
+    "caption": "tuần tra kiểm tra; tuần thị"
+  },
+  "训": {
+    "file": "训.svg",
+    "src": "images/HSK_3.0/level7/训.svg",
+    "caption": "mắng mỏ dạy bảo; răn dạy; khiển trách"
+  },
+  "驯": {
+    "file": "驯.svg",
+    "src": "images/HSK_3.0/level7/驯.svg",
+    "caption": "ngoan ngoãn thuần phục; thuần hóa"
+  },
+  "迅猛": {
+    "file": "迅猛.svg",
+    "src": "images/HSK_3.0/level7/迅猛.svg",
+    "caption": "nhanh chóng như vũ bão; dũng mãnh mau lẹ"
+  },
+  "逊色": {
+    "file": "逊色.svg",
+    "src": "images/HSK_3.0/level7/逊色.svg",
+    "caption": "thua kém lép vế; kém hơn"
+  },
+  "押": {
+    "file": "押.svg",
+    "src": "images/HSK_3.0/level7/押.svg",
+    "caption": "đặt cọc; thế chấp; cầm cố"
+  },
+  "压倒": {
+    "file": "压倒.svg",
+    "src": "images/HSK_3.0/level7/压倒.svg",
+    "caption": "áp đảo; vượt trội hoàn toàn"
+  },
+  "丫头": {
+    "file": "丫头.svg",
+    "src": "images/HSK_3.0/level7/丫头.svg",
+    "caption": "cô bé; con bé; nha đầu"
+  },
+  "压轴": {
+    "file": "压轴.svg",
+    "src": "images/HSK_3.0/level7/压轴.svg",
+    "caption": "đỉnh cao nhất; tiết mục áp chót xuất sắc nhất"
+  },
+  "芽": {
+    "file": "芽.svg",
+    "src": "images/HSK_3.0/level7/芽.svg",
+    "caption": "mầm; chồi cây"
+  },
+  "哑": {
+    "file": "哑.svg",
+    "src": "images/HSK_3.0/level7/哑.svg",
+    "caption": "khản giọng; câm; nghẹt tiếng"
+  },
+  "揠苗助长": {
+    "file": "揠苗助长.svg",
+    "src": "images/HSK_3.0/level7/揠苗助长.svg",
+    "caption": "kéo mạ cho mau lớn; dục tốc bất đạt"
+  },
+  "烟囱": {
+    "file": "烟囱.svg",
+    "src": "images/HSK_3.0/level7/烟囱.svg",
+    "caption": "ống khói"
+  },
+  "咽喉": {
+    "file": "咽喉.svg",
+    "src": "images/HSK_3.0/level7/咽喉.svg",
+    "caption": "yết hầu; cổ họng; vị trí hiểm yếu"
+  },
+  "烟花": {
+    "file": "烟花.svg",
+    "src": "images/HSK_3.0/level7/烟花.svg",
+    "caption": "pháo hoa"
+  },
+  "烟火": {
+    "file": "烟火.svg",
+    "src": "images/HSK_3.0/level7/烟火.svg",
+    "caption": "khói lửa nhân gian; khói lửa; bếp núc"
+  },
+  "延": {
+    "file": "延.svg",
+    "src": "images/HSK_3.0/level7/延.svg",
+    "caption": "trì hoãn; hoãn lại; kéo dài"
+  },
+  "沿岸": {
+    "file": "沿岸.svg",
+    "src": "images/HSK_3.0/level7/沿岸.svg",
+    "caption": "ven bờ; dọc bờ biển"
+  },
+  "言辞": {
+    "file": "言辞.svg",
+    "src": "images/HSK_3.0/level7/言辞.svg",
+    "caption": "lời lẽ; ngôn từ"
+  },
+  "延缓": {
+    "file": "延缓.svg",
+    "src": "images/HSK_3.0/level7/延缓.svg",
+    "caption": "làm chậm lại; trì hoãn"
+  },
+  "严谨": {
+    "file": "严谨.svg",
+    "src": "images/HSK_3.0/level7/严谨.svg",
+    "caption": "nghiêm cẩn; cẩn trọng; chặt chẽ"
+  },
+  "沿途": {
+    "file": "沿途.svg",
+    "src": "images/HSK_3.0/level7/沿途.svg",
+    "caption": "dọc đường; trên đường đi"
+  },
+  "阎王": {
+    "file": "阎王.svg",
+    "src": "images/HSK_3.0/level7/阎王.svg",
+    "caption": "diêm Vương"
+  },
+  "延误": {
+    "file": "延误.svg",
+    "src": "images/HSK_3.0/level7/延误.svg",
+    "caption": "trễ nải; làm chậm trễ"
+  },
+  "沿线": {
+    "file": "沿线.svg",
+    "src": "images/HSK_3.0/level7/沿线.svg",
+    "caption": "dọc tuyến (đường, sông)"
+  },
+  "言行": {
+    "file": "言行.svg",
+    "src": "images/HSK_3.0/level7/言行.svg",
+    "caption": "lời nói và việc làm; ngôn hành"
+  },
+  "沿用": {
+    "file": "沿用.svg",
+    "src": "images/HSK_3.0/level7/沿用.svg",
+    "caption": "tiếp tục dùng; giữ nguyên cách cũ"
+  },
+  "掩耳盗铃": {
+    "file": "掩耳盗铃.svg",
+    "src": "images/HSK_3.0/level7/掩耳盗铃.svg",
+    "caption": "bịt tai trộm chuông; tự dối mình"
+  },
+  "眼红": {
+    "file": "眼红.svg",
+    "src": "images/HSK_3.0/level7/眼红.svg",
+    "caption": "đỏ mắt ghen ghét; đố kỵ"
+  },
+  "衍生": {
+    "file": "衍生.svg",
+    "src": "images/HSK_3.0/level7/衍生.svg",
+    "caption": "phái sinh; nảy sinh ra"
+  },
+  "演示": {
+    "file": "演示.svg",
+    "src": "images/HSK_3.0/level7/演示.svg",
+    "caption": "trình diễn thị phạm; thuyết trình mẫu"
+  },
+  "演说": {
+    "file": "演说.svg",
+    "src": "images/HSK_3.0/level7/演说.svg",
+    "caption": "diễn thuyết; bài diễn văn"
+  },
+  "眼下": {
+    "file": "眼下.svg",
+    "src": "images/HSK_3.0/level7/眼下.svg",
+    "caption": "ngay lúc này; hiện tại trước mắt"
+  },
+  "咽": {
+    "file": "咽.svg",
+    "src": "images/HSK_3.0/level7/咽.svg",
+    "caption": "nuốt"
+  },
+  "验": {
+    "file": "验.svg",
+    "src": "images/HSK_3.0/level7/验.svg",
+    "caption": "kiểm tra; kiểm nghiệm; thử nghiệm"
+  },
+  "厌烦": {
+    "file": "厌烦.svg",
+    "src": "images/HSK_3.0/level7/厌烦.svg",
+    "caption": "ngán ngẩm bực bội; chán ngấy"
+  },
+  "厌倦": {
+    "file": "厌倦.svg",
+    "src": "images/HSK_3.0/level7/厌倦.svg",
+    "caption": "chán ngấy mệt mỏi; chán chường"
+  },
+  "艳丽": {
+    "file": "艳丽.svg",
+    "src": "images/HSK_3.0/level7/艳丽.svg",
+    "caption": "diễm lệ sặc sỡ; tươi thắm"
+  },
+  "燕子": {
+    "file": "燕子.svg",
+    "src": "images/HSK_3.0/level7/燕子.svg",
+    "caption": "chim én; chim nhạn"
+  },
+  "秧歌": {
+    "file": "秧歌.svg",
+    "src": "images/HSK_3.0/level7/秧歌.svg",
+    "caption": "điệu múa ương ca"
+  },
+  "扬": {
+    "file": "扬.svg",
+    "src": "images/HSK_3.0/level7/扬.svg",
+    "caption": "giương cao; kéo lên; tung lên"
   }
 };
 
