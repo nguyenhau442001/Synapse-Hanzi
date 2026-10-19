@@ -1335,6 +1335,13 @@
   color: var(--text-secondary);
 }
 
+.today-card-example u {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--accent);
+  font-weight: 600;
+}
+
 /* Card Actions / Rating Area */
 .today-card-actions {
   width: 100%;

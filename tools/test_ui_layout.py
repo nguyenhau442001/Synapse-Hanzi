@@ -529,6 +529,14 @@ class TestTodayReviewZenMode(unittest.TestCase):
         self.assertIn(".today-btn-reveal", self.flashcard_css)
         self.assertIn(".today-review-celebration-card", self.flashcard_css)
 
+    def test_today_review_example_markup_support(self):
+        """Today review must format example markup with <u> tags instead of escaping them as raw text."""
+        due_review_js = (REPO_ROOT / "assets" / "js" / "due-review.js").read_text(encoding="utf-8")
+        self.assertIn("formatTodayExample(item.word.example_zh)", due_review_js)
+        self.assertIn("formatTodayExample(item.word.example_vi)", due_review_js)
+        self.assertIn("function formatTodayExample", due_review_js)
+        self.assertIn(".today-card-example u", self.flashcard_css)
+
 
 class TestFlashcardIllustrationIntegration(unittest.TestCase):
     """Test Flashcard SVG illustration integration, responsive sizing, contrast, and toggle preferences."""
