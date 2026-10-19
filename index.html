@@ -12,14 +12,15 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Synapse Hanzi">
-<link rel="stylesheet" href="assets/flashcards.css?v=20261017-mobile-clean1">
+<link rel="stylesheet" href="assets/flashcards.css?v=20261017-fix-example-box1">
 <link rel="stylesheet" href="assets/css/fast-review-picker.css?v=20261006-ui-refinement1">
-<link rel="stylesheet" href="assets/css/workstation.css?v=20261017-refine-v2">
+<link rel="stylesheet" href="assets/css/workstation.css?v=20261017-fix-example-box1">
 <link rel="stylesheet" href="assets/css/sidebar-lab.css?v=20261015-viewport-fix-v7">
 <link rel="stylesheet" href="assets/css/home-widgets.css?v=20261015-dashboard-redesign">
 <link rel="stylesheet" href="assets/css/dashboard-enhancements.css?v=20261017-mobile-clean1">
 <link rel="stylesheet" href="assets/css/reading-analysis.css?v=20261015-mobile-ui-opt">
 <link rel="stylesheet" href="assets/css/graded-reading.css?v=20261010-single-line-read1">
+<link rel="stylesheet" href="assets/css/listening-practice.css?v=1.2.2">
 <link rel="stylesheet" href="assets/css/study-help-modal.css?v=20261016-help-redesign1">
 <script>(function(){try{var p=new URLSearchParams(window.location.search).get('theme');if(p==='dark'||p==='light'){document.documentElement.dataset.theme=p;return;}}catch(e){}var h=new Date().getHours();var d=(h>=6&&h<18)?'light':'dark';var m=localStorage.getItem('hsk_theme_manual');var e=parseInt(localStorage.getItem('hsk_theme_manual_expiry')||'0',10);document.documentElement.dataset.theme=(m&&Date.now()<e)?m:d;if(localStorage.getItem('hsk_show_hanviet')==='false'){document.documentElement.classList.add('hide-hanviet');}})();</script>
 <script>
@@ -216,8 +217,17 @@ if ('serviceWorker' in navigator) {
           <span>Công cụ</span>
           <svg class="primary-menu-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
         </summary>
-        <div class="primary-games-menu-panel" role="menu" aria-label="Công cụ và trò chơi học từ">
-          <div class="primary-menu-section-title" role="presentation">Công cụ học</div>
+        <div class="primary-games-menu-panel" role="menu" aria-label="Công cụ theo kỹ năng">
+          <!-- 1. Nghe -->
+          <div class="primary-menu-section-title" role="presentation">Nghe</div>
+          <button id="primaryTabListening" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
+            aria-controls="screenListeningPractice" onclick="setPrimaryTab('listening')" aria-label="Luyện nghe HSK4">
+            <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+            <span>Luyện nghe HSK4</span>
+          </button>
+
+          <!-- 2. Đọc -->
+          <div class="primary-menu-section-title" role="presentation">Đọc</div>
           <button id="primaryTabGradedReading" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
             aria-controls="screenGradedReading" onclick="setPrimaryTab('gradedReading')" aria-label="Bài đọc phân cấp">
             <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
@@ -227,6 +237,29 @@ if ('serviceWorker' in navigator) {
             aria-controls="screenReadingAnalysis" onclick="setPrimaryTab('reading')" aria-label="Đọc hiểu HSK4">
             <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
             <span>Đọc hiểu HSK4</span>
+          </button>
+
+          <!-- 3. Viết -->
+          <div class="primary-menu-section-title" role="presentation">Viết</div>
+          <button id="primaryTabSentenceGame" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
+            aria-controls="screenSentenceGame" onclick="setPrimaryTab('sentenceGame')" aria-label="Xếp câu HSK4">
+            <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19.5 14.5A2.5 2.5 0 0 0 22 12a2.5 2.5 0 0 0-2.5-2.5v-4a2 2 0 0 0-2-2h-4a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0-2.5-2.5h-4a2 2 0 0 0-2 2v4A2.5 2.5 0 0 0 2 12a2.5 2.5 0 0 0 2.5 2.5v4a2 2 0 0 0 2 2h4a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0 2.5 2.5h4a2 2 0 0 0 2-2v-4z"/></svg>
+            <span>Xếp câu HSK4</span>
+          </button>
+          <button id="primaryTabSpeedQuiz" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
+            aria-controls="screenSpeedQuiz" onclick="setPrimaryTab('speedQuiz')" aria-label="Điền từ">
+            <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 5-3-3L3 14v4h4L18 5z"/><line x1="14" x2="17" y1="2" y2="5"/></svg>
+            <span>Điền từ</span>
+          </button>
+
+          <!-- 4. Nói (Ẩn vì chưa có tính năng luyện nói dùng được) -->
+
+          <!-- 5. Từ vựng & chữ Hán -->
+          <div class="primary-menu-section-title" role="presentation">Từ vựng &amp; chữ Hán</div>
+          <button id="primaryTabGuessWord" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
+            aria-controls="screenGuessWord" onclick="setPrimaryTab('guessWord')" aria-label="Đuổi hình bắt chữ">
+            <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+            <span>Đuổi hình bắt chữ</span>
           </button>
           <button id="primaryTabRadicals" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
             aria-controls="screenRadicalHub" onclick="setPrimaryTab('radicals')" aria-label="Bộ thủ">
@@ -238,24 +271,10 @@ if ('serviceWorker' in navigator) {
             <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
             <span>Tra cứu 214 bộ thủ</span>
           </button>
-          <div class="primary-menu-section-title primary-menu-section-title--games" role="presentation">Trò chơi</div>
-          <button id="primaryTabSentenceGame" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
-            aria-controls="screenSentenceGame" onclick="setPrimaryTab('sentenceGame')" aria-label="Xếp câu">
-            <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19.5 14.5A2.5 2.5 0 0 0 22 12a2.5 2.5 0 0 0-2.5-2.5v-4a2 2 0 0 0-2-2h-4a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0-2.5-2.5h-4a2 2 0 0 0-2 2v4A2.5 2.5 0 0 0 2 12a2.5 2.5 0 0 0 2.5 2.5v4a2 2 0 0 0 2 2h4a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0 2.5 2.5h4a2 2 0 0 0 2-2v-4z"/></svg>
-            <span>Xếp câu</span>
-          </button>
-          <button id="primaryTabGuessWord" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
-            aria-controls="screenGuessWord" onclick="setPrimaryTab('guessWord')" aria-label="Đuổi hình bắt chữ">
-            <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
-            <span>Đuổi hình bắt chữ</span>
-          </button>
-          <button id="primaryTabSpeedQuiz" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
-            aria-controls="screenSpeedQuiz" onclick="setPrimaryTab('speedQuiz')" aria-label="Điền từ">
-            <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 5-3-3L3 14v4h4L18 5z"/><line x1="14" x2="17" y1="2" y2="5"/></svg>
-            <span>Điền từ</span>
-          </button>
-          <div class="primary-menu-section-title primary-menu-section-title--help" role="presentation">Trợ giúp</div>
-          <button class="primary-tab" type="button" role="menuitem" onclick="openStudyHelpModal()" aria-label="Hướng dẫn &amp; Trợ giúp học tập">
+
+          <!-- 6. Trợ giúp -->
+          <div class="primary-menu-section-title" role="presentation">Trợ giúp</div>
+          <button class="primary-tab" type="button" role="menuitem" onclick="openStudyHelpModal()" aria-label="Hướng dẫn &amp; Phím tắt">
             <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
             <span>Hướng dẫn &amp; Phím tắt</span>
           </button>
@@ -481,9 +500,9 @@ if ('serviceWorker' in navigator) {
   <div id="screenCards" style="display:none">
     <div class="study-view-topbar">
       <div class="study-view-topbar-left">
-        <button class="back-btn study-back-btn" onclick="SpaRouter.navigateBack()" title="Quay lại chọn cấp độ (Esc)" aria-label="Quay lại">
+        <button class="back-btn study-back-btn" onclick="SpaRouter.navigateBack()" title="Quay về trang chủ (Esc)" aria-label="Quay về trang chủ">
           <span class="back-arrow" aria-hidden="true">←</span>
-          <span class="study-level-badge" id="studyLevelBadge"></span>
+          <span class="study-back-text" id="studyBackBtnText">Quay về trang chủ</span>
         </button>
         <!-- Accessible hidden tab references for backward compatibility with router/overview scripts -->
         <div class="view-tabs" role="tablist" aria-label="Chế độ xem" style="display:none" hidden>
@@ -887,61 +906,46 @@ if ('serviceWorker' in navigator) {
     </div>
   </div>
 
-  <!-- SCREEN 7: Sentence-ordering game -->
+  <!-- SCREEN 7: Sentence Game (HSK 4 Hanban Mock Exams) -->
   <div id="screenSentenceGame" style="display:none">
     <div class="sentence-game">
       <header class="sentence-game-header">
         <div class="sentence-game-top-bar">
           <div class="sentence-game-title-group">
-            <h2 class="sentence-game-title">🧩 Sắp xếp từ thành câu</h2>
-            <span class="sentence-game-counter" id="sentenceGameCounter">Đang tải...</span>
+            <h2 class="sentence-game-title">🧩 Xếp câu HSK4</h2>
+            <span class="sentence-game-counter" id="sentenceGameCounter">Đề 1 (H41001) · Câu 86</span>
           </div>
           <div class="sentence-game-tools">
+            <div class="sentence-exam-selector-group">
+              <label for="sentenceGameExamSelect" class="sentence-exam-label">Đề thi:</label>
+              <select id="sentenceGameExamSelect" class="sentence-exam-select" onchange="setSentenceGameExam(this.value)" aria-label="Chọn đề thi HSK 4"></select>
+            </div>
             <button type="button" class="sentence-tool-btn active" id="sentenceGamePinyinBtn" onclick="toggleSentenceGamePinyin()" title="Bật hoặc tắt Pinyin" aria-label="Bật hoặc tắt Pinyin">
               <span id="sentenceGamePinyinIcon">👁</span> <span id="sentenceGamePinyinLabel">Pinyin: Bật</span>
             </button>
             <button type="button" class="sentence-tool-btn" id="sentenceGameFocusBtn" onclick="toggleSentenceGameFocus()" title="Bật hoặc tắt chế độ tập trung" aria-label="Bật hoặc tắt chế độ tập trung">
-              <span>🎯</span> <span>Tập trung</span>
+              <span id="sentenceGameFocusIcon">🎯</span> <span id="sentenceGameFocusLabel">Tập trung</span>
             </button>
           </div>
         </div>
 
-        <!-- Level selector & Scope bar -->
-        <div class="sentence-game-filters" id="sentenceGameFilters">
-          <div class="sentence-level-chips" id="sentenceLevelChips" role="group" aria-label="Chọn cấp độ HSK">
-            <button type="button" class="sentence-lvl-btn active" data-level="hsk1" onclick="setSentenceGameLevel('hsk1')">HSK 1</button>
-            <button type="button" class="sentence-lvl-btn" data-level="hsk2" onclick="setSentenceGameLevel('hsk2')">HSK 2</button>
-            <button type="button" class="sentence-lvl-btn" data-level="hsk3" onclick="setSentenceGameLevel('hsk3')">HSK 3</button>
-            <button type="button" class="sentence-lvl-btn" data-level="hsk4" onclick="setSentenceGameLevel('hsk4')">HSK 4</button>
-            <button type="button" class="sentence-lvl-btn" data-level="hsk5" onclick="setSentenceGameLevel('hsk5')">HSK 5</button>
-            <button type="button" class="sentence-lvl-btn" data-level="hsk6" onclick="setSentenceGameLevel('hsk6')">HSK 6</button>
-            <button type="button" class="sentence-lvl-btn" data-level="all" onclick="setSentenceGameLevel('all')">Tất cả</button>
-          </div>
-          <div class="sentence-scope-controls">
-            <label class="sentence-scope-label" title="Phạm vi câu hỏi">
-              <span>Phạm vi:</span>
-              <select id="sentenceGameScopeSelect" onchange="setSentenceGameScope(this.value)" aria-label="Phạm vi câu hỏi">
-                <option value="cumulative" selected>Từ HSK 1 đến cấp độ này (Khuyên dùng)</option>
-                <option value="exact">Chỉ cấp độ đã chọn</option>
-              </select>
-            </label>
-            <span class="sentence-pool-badge" id="sentencePoolBadge">135 câu khả dụng</span>
-          </div>
-        </div>
+        <!-- Question Navigator (Q86 - Q95) -->
+        <nav class="sentence-question-nav-container" aria-label="Điều hướng câu hỏi">
+          <span class="sentence-question-nav-label">Câu hỏi:</span>
+          <div class="sentence-question-nav" id="sentenceQuestionNav" role="tablist" aria-label="Danh sách câu hỏi đề thi"></div>
+        </nav>
       </header>
 
       <!-- Sentence card board -->
       <section class="sentence-card-board" aria-label="Bàn sắp xếp câu">
         <div class="sentence-prompt">
           <div class="sentence-prompt-header">
-            <span class="sentence-prompt-title">Dịch câu sang tiếng Trung:</span>
+            <span class="sentence-prompt-title">HSK 4 · 书写 第一部分: 完成句子</span>
             <div class="sentence-card-meta">
-              <span class="sentence-level-tag" id="sentenceLevelTag">HSK 1</span>
-              <span class="sentence-grammar-tag" id="sentenceGrammarTag">Cấu trúc S + V + O cơ bản</span>
-              <span class="sentence-distractor-tag" id="sentenceDistractorTag" hidden>⚠️ Có từ bẫy</span>
+              <span class="sentence-level-tag" id="sentenceLevelTag">HSK 4 · Câu 86</span>
             </div>
           </div>
-          <div class="sentence-game-meaning" id="sentenceGameMeaning">Đang tải câu hỏi...</div>
+          <div class="sentence-game-instruction">Sắp xếp các cụm từ bên dưới thành câu hoàn chỉnh theo ngữ pháp tiếng Trung:</div>
         </div>
 
         <!-- Target slots area -->
@@ -952,34 +956,54 @@ if ('serviceWorker' in navigator) {
               <span class="reset-icon">↺</span> <span>Làm lại</span>
             </button>
           </div>
-          <div class="sentence-game-slots" id="sentenceGameSlots" role="region" aria-label="Khu vực xếp từ"></div>
+          <div class="sentence-game-slots is-empty" id="sentenceGameSlots" role="region" aria-label="Khu vực xếp từ"></div>
         </div>
 
         <!-- Word bank area -->
-        <div class="sentence-bank-wrapper">
+        <div class="sentence-bank-wrapper" id="sentenceBankWrapper">
           <div class="sentence-bank-label">
-            <span class="sentence-sub-title">Kho từ vựng (Nhấn hoặc kéo thẻ vào ô trên):</span>
+            <span class="sentence-sub-title" id="sentenceBankTitle">Kho cụm từ (Bấm hoặc dùng phím số 1-9):</span>
           </div>
-          <div class="sentence-game-bank" id="sentenceGameBank" role="group" aria-label="Kho từ vựng để chọn"></div>
+          <div class="sentence-game-bank" id="sentenceGameBank" role="group" aria-label="Kho cụm từ để chọn"></div>
         </div>
 
-        <!-- Dynamic feedback message -->
+        <!-- Dynamic feedback message (errors, warnings, hints) -->
         <div class="sentence-game-feedback" id="sentenceGameFeedback" role="status" aria-live="polite"></div>
 
-        <!-- Result solution & audio when solved -->
-        <div class="sentence-solution-box" id="sentenceSolutionBox" hidden>
-          <div class="sentence-solution-badge">✨ Câu mẫu chuẩn xác</div>
-          <div class="sentence-solution-zh" id="sentenceSolutionZh"></div>
-          <div class="sentence-solution-py" id="sentenceSolutionPy"></div>
-          <div class="sentence-solution-grammar" id="sentenceSolutionGrammar"></div>
+        <!-- Consolidated Result Card (when solved) -->
+        <div class="sentence-result-card" id="sentenceResultCard" hidden>
+          <div class="sentence-result-header">
+            <div class="sentence-result-status">
+              <span class="sentence-result-check-icon">✓</span>
+              <span class="sentence-result-status-text" id="sentenceResultStatusText">Chính xác! Bạn đã hoàn thành câu.</span>
+            </div>
+            <div class="sentence-result-actions">
+              <button type="button" class="sentence-result-speak-btn" id="sentenceResultSpeakBtn" onclick="speakCurrentSentence()" title="Nghe đọc lại câu" aria-label="Nghe đọc câu">
+                <span>🔊</span> <span>Nghe đọc</span>
+              </button>
+              <button type="button" class="sentence-action-btn sentence-action-btn--success" id="sentenceResultNextBtn" onclick="loadNextSentenceGameRound()">
+                <span>Câu tiếp theo →</span>
+              </button>
+            </div>
+          </div>
+          <div class="sentence-result-body">
+            <div class="sentence-result-zh" id="sentenceResultZh"></div>
+            <div class="sentence-result-py" id="sentenceResultPy"></div>
+            <div class="sentence-result-vi" id="sentenceResultVi"></div>
+          </div>
+          <details class="sentence-grammar-disclosure" id="sentenceGrammarDisclosure" hidden>
+            <summary class="sentence-grammar-summary">
+              <span>💡 Phân tích cấu trúc ngữ pháp</span>
+              <span class="disclosure-arrow">▾</span>
+            </summary>
+            <div class="sentence-grammar-content" id="sentenceGrammarContent"></div>
+          </details>
         </div>
 
-        <!-- Primary actions -->
-        <div class="sentence-game-actions">
+        <!-- Primary in-progress actions -->
+        <div class="sentence-game-actions" id="sentenceGameActions">
           <button type="button" class="sentence-action-btn sentence-action-btn--secondary" id="sentenceGameHintBtn" onclick="revealSentenceHint()" title="Xem gợi ý câu">💡 Gợi ý</button>
           <button type="button" class="sentence-action-btn sentence-action-btn--primary" id="sentenceGameCheckBtn" onclick="checkSentenceGameAnswer()">Kiểm tra đáp án</button>
-          <button type="button" class="sentence-action-btn sentence-action-btn--success" id="sentenceGameNextBtn" onclick="loadNextSentenceGameRound()" hidden>Câu tiếp theo →</button>
-          <button type="button" class="sentence-action-btn sentence-action-btn--audio" id="sentenceGameSpeakBtn" onclick="speakCurrentSentence()" hidden aria-label="Nghe đọc câu">🔊 Nghe đọc</button>
         </div>
       </section>
     </div>
@@ -1115,10 +1139,13 @@ if ('serviceWorker' in navigator) {
   <!-- SCREEN 11: Synapse Graded Reading -->
   <div id="screenGradedReading" style="display:none"></div>
 
+  <!-- SCREEN 12: HSK Listening Practice & Alignment -->
+  <div id="screenListeningPractice" style="display:none"></div>
+
     </div>
     <aside class="workstation-right" id="workstationRight" aria-label="Phòng thực hành tương tác"></aside>
     <footer class="app-footer">
-      <p class="footer-note"><span class="footer-version" title="Phiên bản ứng dụng">v1.0.2</span> · Tiến trình tự lưu trên thiết bị này · Phát triển bởi <a href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer">haunguyenngoc442001</a> · <a href="https://www.facebook.com/haunguyenngoc442001/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+      <p class="footer-note"><span class="footer-version" title="Phiên bản ứng dụng">v1.2.14</span> · Tiến trình tự lưu trên thiết bị này · Phát triển bởi <a href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer">haunguyenngoc442001</a> · <a href="https://www.facebook.com/haunguyenngoc442001/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
     </footer>
   </div>
 </div>
@@ -1128,17 +1155,17 @@ if ('serviceWorker' in navigator) {
 <script src="https://cdn.jsdelivr.net/npm/ts-fsrs@5.4.1/dist/index.umd.js" crossorigin="anonymous"></script>
 <script src="assets/js/srs.js?v=20261006-2tier-srs1"></script>
 <script src="assets/js/spa-router.js?v=20261014-router2"></script>
-<script src="assets/js/word-illustrations.js?v=20261017-zero-lag1"></script>
-<script src="assets/js/levels.js?v=20261017-zero-lag1"></script>
+<script src="assets/js/word-illustrations.js?v=20261017-fix-example-box1"></script>
+<script src="assets/js/levels.js?v=20261017-fix-example-box1"></script>
 <script src="assets/js/topics.js?v=20261006-decimal-pct1"></script>
 <script src="assets/js/hsk30.js?v=20261006-decimal-pct1"></script>
 <script src="assets/js/sentence-game.js?v=20261006-sentence-ux1"></script>
 <script src="assets/js/guess-word-game.js?v=20261006-fix-chair1"></script>
 <script src="assets/js/speed-quiz-game.js?v=20261017-speedquiz-redesign1"></script>
-<script src="assets/js/vocabulary-overview.js?v=20261017-zero-lag1"></script>
+<script src="assets/js/vocabulary-overview.js?v=20261017-fix-example-box1"></script>
 <script src="assets/js/fast-review.js?v=20261016-fix-l4-review1"></script>
 <script src="assets/js/hanviet-dict.js?v=20261007-pos-visual2"></script>
-<script src="assets/js/flashcard.js?v=20261017-refine-v2"></script>
+<script src="assets/js/flashcard.js?v=20261017-fix-example-box1"></script>
 <script src="assets/js/card-interactions.js?v=20261016-preserve-flip1"></script>
 <script src="assets/js/speechService.js?v=20261010-speech-mvp1"></script>
 <script src="assets/js/speech.js?v=20261017-gemini-tts-v3"></script>
@@ -1160,6 +1187,7 @@ if ('serviceWorker' in navigator) {
 <script src="assets/js/grammar-breakdown.js?v=20261008-fix-stroke-drawer2"></script>
 <script src="assets/js/reading-analysis.js?v=20261015-mobile-ui-opt"></script>
 <script src="assets/js/graded-reading.js?v=20261014-fix-render1"></script>
+<script src="assets/js/listening-practice.js?v=1.2.2"></script>
 <script>
 window.addEventListener('load', function() {
   var prefetchReading = function() {
