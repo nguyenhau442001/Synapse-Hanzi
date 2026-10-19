@@ -294,6 +294,16 @@ body.dark-mode .review-streak-pill {
   animation: heartShatter 480ms ease-in-out;
 }
 
+@media (max-width: 540px) {
+  .review-hearts {
+    gap: 4px;
+  }
+  .review-heart-svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 /* Timer Bar & Seconds */
 .review-timer-wrap {
   display: flex;
