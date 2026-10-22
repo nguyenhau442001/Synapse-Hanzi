@@ -133,8 +133,8 @@ function renderTodayReviewCard() {
 
             ${item.word.example_zh ? `
               <div class="today-card-example">
-                <p class="today-example-zh hw-cjk">${escapeHtml(item.word.example_zh)}</p>
-                ${item.word.example_vi ? `<p class="today-example-vi">${escapeHtml(item.word.example_vi)}</p>` : ''}
+                <p class="today-example-zh hw-cjk">${formatTodayExample(item.word.example_zh)}</p>
+                ${item.word.example_vi ? `<p class="today-example-vi">${formatTodayExample(item.word.example_vi)}</p>` : ''}
               </div>
             ` : ''}
           </div>
@@ -212,6 +212,13 @@ function escapeHtml(value) {
   return String(value == null ? '' : value).replace(/[&<>"']/g, character => ({
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
   })[character]);
+}
+
+function formatTodayExample(text) {
+  if (!text) return '';
+  return escapeHtml(text)
+    .replace(/&lt;u&gt;/gi, '<u>')
+    .replace(/&lt;\/u&gt;/gi, '</u>');
 }
 
 function rateTodayReview(rating) {

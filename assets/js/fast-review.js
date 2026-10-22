@@ -321,9 +321,11 @@ function removeReviewKeydownListener() {
   }
 }
 
+const REVIEW_MAX_LIVES = 5;
+
 function renderReviewHeartsHtml(lives) {
   let heartsHtml = '<div class="review-hearts" aria-label="' + lives + ' mạng còn lại">';
-  for (let i = 1; i <= 3; i++) {
+  for (let i = 1; i <= REVIEW_MAX_LIVES; i++) {
     const isAlive = i <= lives;
     heartsHtml += `
       <span class="review-heart-item ${isAlive ? 'is-alive' : 'is-lost'}" data-heart-idx="${i}" aria-hidden="true">
@@ -354,7 +356,7 @@ function renderReviewStart() {
 
 function startReviewSession() {
   reviewIndex = 0;
-  reviewLives = 3;
+  reviewLives = REVIEW_MAX_LIVES;
   reviewScore = 0;
   reviewStreak = 0;
   reviewBestStreak = 0;
