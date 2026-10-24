@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Document representing the Law -->
+  <rect x="120" y="80" width="70" height="90" rx="4" fill="#E0E0E0"/>
+  <rect x="130" y="95" width="50" height="6" rx="2" fill="#BDBDBD"/>
+  <rect x="130" y="110" width="50" height="6" rx="2" fill="#BDBDBD"/>
+  <rect x="130" y="125" width="30" height="6" rx="2" fill="#BDBDBD"/>
+  
+  <!-- Hand holding the Law -->
+  <path d="M100 170 C 100 150, 110 140, 130 140 L 140 140 L 140 170 Z" fill="#FFB74D"/>
+  <path d="M130 140 L 130 170" stroke="#FFB74D" stroke-width="10" stroke-linecap="round"/>
+  
+  <!-- Character Action -->
+  <circle cx="70" cy="90" r="20" fill="#FFB74D"/>
+  <path d="M70 110 L 70 160 L 50 200 M 70 160 L 90 200" stroke="#FFB74D" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Motion lines indicating assertive action -->
+  <path d="M110 130 L 125 120" stroke="#FFB74D" stroke-width="3" stroke-linecap="round"/>
+  <path d="M110 140 L 125 130" stroke="#FFB74D" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- The "Unfair" element being pushed away -->
+  <rect x="150" y="50" width="40" height="40" rx="4" fill="#CF6679"/>
+  <path d="M160 60 L 180 80 M 180 60 L 160 80" stroke="#1A1D24" stroke-width="4" stroke-linecap="round"/>
+</svg>

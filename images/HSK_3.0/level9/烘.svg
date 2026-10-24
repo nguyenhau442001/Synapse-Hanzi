@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background glowing warmth from fireplace -->
+  <radialGradient id="fireGlow" cx="120" cy="165" r="70" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#FF7A00" stop-opacity="0.3"/>
+    <stop offset="100%" stop-color="#1A1D24" stop-opacity="0"/>
+  </radialGradient>
+  <circle cx="120" cy="165" r="70" fill="url(#fireGlow)"/>
+
+  <!-- Fireplace structure -->
+  <path d="M 75 195 L 75 130 C 75 115, 85 105, 100 105 L 140 105 C 155 105, 165 115, 165 130 L 165 195 Z" fill="#2A2F3D"/>
+  <!-- Fireplace interior (dark hearth) -->
+  <path d="M 85 195 L 85 135 C 85 125, 92 120, 102 120 L 138 120 C 148 120, 155 125, 155 135 L 155 195 Z" fill="#13151A"/>
+
+  <!-- Burning Logs -->
+  <rect x="95" y="175" width="50" height="10" rx="4" transform="rotate(-10 120 180)" fill="#5C3A21"/>
+  <rect x="95" y="172" width="50" height="10" rx="4" transform="rotate(15 120 177)" fill="#7A4E2D"/>
+
+  <!-- Flames (Sấy / Hơ / 烘) -->
+  <path d="M120 140 Q 130 160 125 175 Q 120 180 115 175 Q 110 160 120 140 Z" fill="#FF9F0A"/>
+  <path d="M112 148 Q 118 162 115 173 Q 112 176 109 173 Q 106 162 112 148 Z" fill="#FF453A"/>
+  <path d="M128 148 Q 134 162 131 173 Q 128 176 125 173 Q 122 162 128 148 Z" fill="#FFD60A"/>
+
+  <!-- Mantelpiece shelf -->
+  <rect x="65" y="97" width="110" height="8" rx="2" fill="#3A4154"/>
+
+  <!-- Clothesline / Drying Rack above fireplace -->
+  <line x1="50" y1="65" x2="190" y2="65" stroke="#4B5563" stroke-width="3" stroke-linecap="round"/>
+  <line x1="55" y1="65" x2="65" y2="97" stroke="#4B5563" stroke-width="2"/>
+  <line x1="185" y1="65" x2="175" y2="97" stroke="#4B5563" stroke-width="2"/>
+
+  <!-- Hanging Garment 1 (Sweater being dried / hong khô) -->
+  <path d="M 85 68 L 105 68 L 115 80 L 115 115 L 85 115 Z" fill="#3B82F6"/>
+  <!-- Sleeves -->
+  <path d="M 85 68 L 68 85 L 75 92 L 88 78 Z" fill="#3B82F6"/>
+  <path d="M 105 68 L 122 85 L 115 92 L 102 78 Z" fill="#3B82F6"/>
+  <!-- Heat waves / steam rising from clothes (indicating 'hơ' / 'sấy') -->
+  <path d="M 95 60 Q 92 50 98 40 Q 104 30 100 20" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" stroke-opacity="0.6"/>
+  <path d="M 145 58 Q 142 48 148 38 Q 154 28 150 18" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" stroke-opacity="0.6"/>
+
+  <!-- Hanging Garment 2 (Pants / Trousers) -->
+  <path d="M 135 68 L 165 68 L 163 120 L 152 120 L 150 95 L 148 120 L 137 120 Z" fill="#10B981"/>
+
+  <!-- Hearth Base / Floor -->
+  <rect x="60" y="195" width="120" height="6" rx="3" fill="#3A4154"/>
+</svg>

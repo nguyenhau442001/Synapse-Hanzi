@@ -1,0 +1,64 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Deep space background elements -->
+  <circle cx="50" cy="60" r="1" fill="#4A5568" opacity="0.6"/>
+  <circle cx="190" cy="50" r="1.5" fill="#4A5568" opacity="0.8"/>
+  <circle cx="210" cy="180" r="1" fill="#4A5568" opacity="0.5"/>
+  <circle cx="40" cy="190" r="1.5" fill="#4A5568" opacity="0.7"/>
+  <circle cx="120" cy="30" r="1" fill="#E2E8F0" opacity="0.9"/>
+  
+  <!-- Central Physical Object: Cosmic Hourglass (representing Time & Space united) -->
+  <g transform="translate(120, 120)">
+    <!-- Outer Space Grid / Orbit rings representing Space -->
+    <ellipse cx="0" cy="0" rx="75" ry="32" fill="none" stroke="#2D3748" stroke-width="1.5" stroke-dasharray="4 4" transform="rotate(-25)" />
+    <ellipse cx="0" cy="0" rx="85" ry="25" fill="none" stroke="#3182CE" stroke-width="1" opacity="0.4" transform="rotate(35)" />
+
+    <!-- Hourglass Frame -->
+    <!-- Top and bottom wooden/metallic caps -->
+    <path d="M -30,-68 L 30,-68 L 34,-60 L -34,-60 Z" fill="#4A5568" />
+    <path d="M -30,68 L 30,68 L 34,60 L -34,60 Z" fill="#4A5568" />
+    <rect x="-35" y="-64" width="70" height="4" rx="2" fill="#718096" />
+    <rect x="-35" y="60" width="70" height="4" rx="2" fill="#718096" />
+    
+    <!-- Vertical support pillars -->
+    <rect x="-32" y="-60" width="4" height="120" rx="2" fill="#4A5568" />
+    <rect x="28" y="-60" width="4" height="120" rx="2" fill="#4A5568" />
+
+    <!-- Glass Bulbs -->
+    <!-- Top Bulb (Space/Nebula inside) -->
+    <path d="M -26,-58 C -26,-25 26,-25 26,-58 Z" fill="#1A202C" stroke="#718096" stroke-width="2" />
+    <!-- Nebula inside top bulb -->
+    <path d="M -15,-45 C -5,-50 10,-40 15,-48 C 20,-35 5,-30 -10,-35 Z" fill="#805AD5" opacity="0.6" />
+    <circle cx="8" cy="-42" r="2" fill="#D6BCFA" />
+    <circle cx="-8" cy="-48" r="1.5" fill="#F6AD55" />
+    
+    <!-- Bottom Bulb (Golden Cosmos/Planet inside) -->
+    <path d="M -26,58 C -26,25 26,25 26,58 Z" fill="#1A202C" stroke="#718096" stroke-width="2" />
+    <!-- Planet/Stars inside bottom bulb -->
+    <circle cx="0" cy="45" r="14" fill="#DD6B20" opacity="0.8" />
+    <path d="M -16,42 C -5,38 8,42 16,48 C 10,52 -5,48 -16,42 Z" fill="#F6AD55" opacity="0.9" />
+    
+    <!-- Flowing Sand / Cosmic Stream through the center -->
+    <line x1="0" y1="-25" x2="0" y2="25" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 4" />
+    <circle cx="0" cy="0" r="3" fill="#ECC94B" />
+    
+    <!-- Glowing Accent Rings (Space-Time Continuum) -->
+    <ellipse cx="0" cy="0" rx="42" ry="14" fill="none" stroke="#D6BCFA" stroke-width="2" opacity="0.7" />
+    <ellipse cx="0" cy="0" rx="55" ry="18" fill="none" stroke="#F6AD55" stroke-width="1.5" opacity="0.5" />
+  </g>
+
+  <!-- Floating celestial objects framing the central concept -->
+  <!-- Small glowing planet top-left -->
+  <circle cx="45" cy="70" r="12" fill="#3182CE" />
+  <path d="M 30,73 C 35,78 55,78 60,73 C 55,67 35,67 30,73 Z" fill="#63B3ED" opacity="0.8" />
+  
+  <!-- Orbiting ring accent top-left -->
+  <ellipse cx="45" cy="70" rx="18" ry="6" fill="none" stroke="#E2E8F0" stroke-width="1" transform="rotate(-20 45 70)" />
+
+  <!-- Distant Star bottom-right -->
+  <g transform="translate(195, 160)">
+    <path d="M 0,-10 C 1,-3 3,-1 10,0 C 3,1 1,3 0,10 C -1,3 -3,1 -10,0 C -3,-1 -1,-3 0,-10 Z" fill="#F6AD55" />
+  </g>
+
+</svg>

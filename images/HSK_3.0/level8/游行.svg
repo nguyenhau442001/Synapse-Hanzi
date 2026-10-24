@@ -1,0 +1,42 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground -->
+  <path d="M0 190 L240 190 L240 240 L0 240 Z" fill="#2D343E"/>
+  
+  <!-- Parade Figures -->
+  <!-- Person 1 -->
+  <g transform="translate(40, 140)">
+    <circle cx="20" cy="20" r="12" fill="#FFB86C"/>
+    <rect x="15" y="35" width="10" height="40" rx="2" fill="#FFB86C"/>
+    <path d="M5 45 L15 55 M35 45 L25 55" stroke="#FFB86C" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Person 2 (Costumed) -->
+  <g transform="translate(90, 120)">
+    <path d="M20 10 L30 0 L10 0 Z" fill="#FF79C6"/>
+    <circle cx="20" cy="25" r="12" fill="#FFB86C"/>
+    <rect x="15" y="40" width="10" height="40" rx="2" fill="#FF79C6"/>
+    <path d="M5 50 L15 60 M35 50 L25 60" stroke="#FF79C6" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Person 3 -->
+  <g transform="translate(140, 140)">
+    <circle cx="20" cy="20" r="12" fill="#FFB86C"/>
+    <rect x="15" y="35" width="10" height="40" rx="2" fill="#8BE9FD"/>
+    <path d="M5 45 L15 55 M35 45 L25 55" stroke="#8BE9FD" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Person 4 -->
+  <g transform="translate(190, 130)">
+    <circle cx="20" cy="20" r="12" fill="#FFB86C"/>
+    <rect x="15" y="35" width="10" height="40" rx="2" fill="#50FA7B"/>
+    <path d="M5 45 L15 55 M35 45 L25 55" stroke="#50FA7B" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Confetti/Festive elements -->
+  <circle cx="60" cy="80" r="3" fill="#FFB86C"/>
+  <circle cx="120" cy="60" r="4" fill="#FF79C6"/>
+  <circle cx="180" cy="90" r="3" fill="#8BE9FD"/>
+  <circle cx="210" cy="50" r="4" fill="#50FA7B"/>
+</svg>

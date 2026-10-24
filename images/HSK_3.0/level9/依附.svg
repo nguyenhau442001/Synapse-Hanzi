@@ -1,0 +1,18 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Large Primary Tree (The Support) -->
+  <path d="M120 40 L120 200 M110 50 C110 50 100 80 110 120 C120 160 110 200 110 200" stroke="#4A5568" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <path d="M120 40 C120 40 130 80 120 120 C110 160 120 200 120 200" stroke="#4A5568" stroke-width="12" stroke-linecap="round" fill="none"/>
+  
+  <!-- Parasitic Vine (The Dependent) -->
+  <path d="M115 190 C100 180 100 160 115 150 C130 140 130 120 115 110 C100 100 100 80 115 70 C130 60 130 40 115 30" stroke="#F6AD55" stroke-width="6" stroke-linecap="round" fill="none"/>
+  
+  <!-- Leaves on the Vine -->
+  <ellipse cx="115" cy="150" rx="4" ry="8" fill="#F6AD55" transform="rotate(30 115 150)"/>
+  <ellipse cx="115" cy="110" rx="4" ry="8" fill="#F6AD55" transform="rotate(-30 115 110)"/>
+  <ellipse cx="115" cy="70" rx="4" ry="8" fill="#F6AD55" transform="rotate(30 115 70)"/>
+  
+  <!-- Top foliage of the main tree -->
+  <path d="M120 40 C100 20 140 20 120 40" fill="#4A5568"/>
+</svg>

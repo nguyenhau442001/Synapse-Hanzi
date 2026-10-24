@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Definitions for gradients and shadows -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#222733"/>
+      <stop offset="100%" stop-color="#14171E"/>
+    </linearGradient>
+    <linearGradient id="gearGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3A435E"/>
+      <stop offset="100%" stop-color="#293042"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Inner subtle canvas layer -->
+  <rect x="16" y="16" width="208" height="208" rx="18" fill="url(#bgGrad)"/>
+
+  <!-- SCENE: Visualizing "在所难免" (Inescapable / Inevitable stumble during learning process) -->
+  <!-- Adjective Rule: Use visual contrast / scale exaggeration / clear state difference -->
+  <!-- Left Side: Large smooth trajectory/path representing the main progress -->
+  <!-- Right Side: Small, inevitable structural anomaly (bump/stumble) highlighted in focus orange -->
+
+  <!-- Atmospheric Background Elements: Faint connecting path of learning curve -->
+  <path d="M 45 160 C 80 160, 95 120, 120 120 C 145 120, 160 80, 195 80" fill="none" stroke="#2D3748" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+
+  <!-- Main Progress Path (Sleek vector curve) -->
+  <path d="M 40 165 C 75 165, 90 125, 120 125 C 140 125, 155 90, 185 90" fill="none" stroke="#4A5568" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- THE INEVITABLE STUMBLE (Contrast Element - Orange/Gold Accent) -->
+  <!-- A distinct microscopic error drop / structural bump seamlessly integrated into the path -->
+  <g filter="url(#shadow)">
+    <!-- Highlighted unavoidable small deviation node -->
+    <circle cx="152" cy="107" r="14" fill="#1F2430" stroke="url(#accentGrad)" stroke-width="3"/>
+    
+    <!-- Tiny abstract error marker (A playful structural glitch / small slip) -->
+    <path d="M 147 103 L 157 111 M 157 103 L 147 111" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Starting Character / Learner Concept (Flat vector avatar anchor on left) -->
+  <g transform="translate(45, 135)" filter="url(#shadow)">
+    <!-- Body/Base -->
+    <path d="M -12 28 C -12 18, -4 14, 0 14 C 4 14, 12 18, 12 28 Z" fill="#3B82F6"/>
+    <!-- Head -->
+    <circle cx="0" cy="3" r="8" fill="#60A5FA"/>
+    <!-- Focused expression / looking ahead -->
+    <circle cx="3" cy="2" r="1.5" fill="#1E293B"/>
+  </g>
+
+  <!-- Destination / Mastery Goal (Flag / Star icon on top right) -->
+  <g transform="translate(185, 70)" filter="url(#shadow)">
+    <!-- Flag pole -->
+    <line x1="0" y1="0" x2="0" y2="25" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    <!-- Flag banner -->
+    <path d="M 0 0 L 16 6 L 0 12 Z" fill="#10B981"/>
+  </g>
+
+  <!-- Inevitability Indicator: Symmetrical sleek brackets framing the inevitable point to emphasize the concept -->
+  <!-- Left bracket -->
+  <path d="M 134 92 C 130 98, 130 116, 134 122" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <!-- Right bracket -->
+  <path d="M 170 92 C 174 98, 174 116, 170 122" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Subtle conceptual gear/mechanism in background representing process -->
+  <g transform="translate(120, 168)" opacity="0.15">
+    <circle cx="0" cy="0" r="18" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="4 3"/>
+    <circle cx="0" cy="0" r="8" fill="#FFFFFF"/>
+  </g>
+</svg>

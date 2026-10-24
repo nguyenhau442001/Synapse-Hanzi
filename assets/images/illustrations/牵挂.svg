@@ -1,0 +1,64 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container & Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle ambient glow representing emotional connection across distance -->
+  <circle cx="120" cy="115" r="70" fill="#242B38" opacity="0.6"/>
+
+  <!-- Background elements: Distant homeland horizon/hills at the top -->
+  <path d="M60 95 Q90 80 120 90 T180 85 L180 110 L60 110 Z" fill="#232A36" opacity="0.4"/>
+  <!-- Distant tiny house and tree silhouette on the horizon -->
+  <path d="M110 87 L115 82 L120 87 Z" fill="#3A4454"/>
+  <rect x="113" y="87" width="4" height="4" fill="#3A4454"/>
+  <circle cx="132" cy="88" r="4" fill="#2F3846"/>
+  <line x1="132" y1="88" x2="132" y2="92" stroke="#2F3846" stroke-width="1"/>
+
+  <!-- The Core Noun Representation: A traveler's classic wooden suitcase/luggage (physical object representing the wandering traveler/游子) -->
+  <g transform="translate(0, 10)">
+    <!-- Suitcase Shadow -->
+    <ellipse cx="120" cy="180" rx="42" ry="8" fill="#111317"/>
+
+    <!-- Suitcase Body (Main) -->
+    <rect x="80" y="110" width="80" height="55" rx="8" fill="#C27835"/>
+    <rect x="80" y="110" width="80" height="12" rx="4" fill="#D98A42"/>
+
+    <!-- Suitcase Straps & Hardware -->
+    <rect x="96" y="110" width="10" height="55" fill="#965620"/>
+    <rect x="134" y="110" width="10" height="55" fill="#965620"/>
+    <rect x="112" y="130" width="16" height="12" rx="3" fill="#E5C158"/>
+    <circle cx="120" cy="136" r="3" fill="#8C651A"/>
+
+    <!-- Suitcase Handle -->
+    <path d="M102 110 C102 98 138 98 138 110" fill="none" stroke="#965620" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Brass Corners -->
+    <path d="M80 114 L88 114 L88 110 L80 110 Z" fill="#E5C158"/>
+    <path d="M160 114 L152 114 L152 110 L160 110 Z" fill="#E5C158"/>
+    <path d="M80 161 L88 161 L88 165 L80 165 Z" fill="#E5C158"/>
+    <path d="M160 161 L152 161 L152 165 L160 165 Z" fill="#E5C158"/>
+
+    <!-- Travel/Postal Stamps on the suitcase (indicating distant journeys) -->
+    <rect x="90" y="125" width="10" height="8" rx="1" fill="#42352A" opacity="0.4"/>
+    <circle cx="148" cy="150" r="6" fill="#42352A" opacity="0.4"/>
+  </g>
+
+  <!-- The Emotional Bond / "Qiang Gua" (Bận lòng, vương vấn): Warm golden glowing thread curving gracefully from the distant homeland down to the traveler's luggage -->
+  <!-- Elegant connecting arc representing thoughts/attachment spanning distance -->
+  <path d="M 120 88 Q 80 40 50 85 Q 35 110 55 130 Q 75 145 95 140" fill="none" stroke="#E59838" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4" opacity="0.8"/>
+  <path d="M 120 88 Q 160 40 190 85 Q 205 110 185 130 Q 165 145 145 140" fill="none" stroke="#E59838" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- Focal Glowing Embers / Connection Nodes (Deep emotional weight / 牵挂) -->
+  <circle cx="50" cy="85" r="4" fill="#F3B351"/>
+  <circle cx="50" cy="85" r="8" fill="#E59838" opacity="0.3"/>
+
+  <circle cx="190" cy="85" r="4" fill="#F3B351"/>
+  <circle cx="190" cy="85" r="8" fill="#E59838" opacity="0.3"/>
+
+  <!-- Main glowing focal point directly hovering over the luggage, symbolizing the lingering care/attachment -->
+  <circle cx="120" cy="72" r="6" fill="#FFC857"/>
+  <circle cx="120" cy="72" r="14" fill="#E59838" opacity="0.3"/>
+  <circle cx="120" cy="72" r="22" fill="#E59838" opacity="0.1"/>
+
+  <!-- Subtle upward warm light touching the luggage handle -->
+  <path d="M110 98 Q120 90 130 98" fill="none" stroke="#FFC857" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+</svg>

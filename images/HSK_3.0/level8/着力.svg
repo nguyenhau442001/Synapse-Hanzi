@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient glow representing focused energy -->
+  <circle cx="120" cy="120" r="75" fill="#3B82F6" opacity="0.08"/>
+  <circle cx="120" cy="120" r="50" fill="#F59E0B" opacity="0.05"/>
+
+  <!-- Concentrated Force Vector / Fulcrum & Lever System (Representing "着力" - application of concerted effort/force) -->
+  <g transform="translate(120, 120)">
+    <!-- Base / Fulcrum (The anchoring point where effort is applied) -->
+    <path d="M-40 60 L40 60 L25 35 L-25 35 Z" fill="#334155" />
+    <polygon points="0,15 -18,35 18,35" fill="#475569" />
+    <circle cx="0" cy="15" r="6" fill="#64748B" />
+
+    <!-- Heavy Load representing the key public issues (medical/education) -->
+    <rect x="-70" y="-30" width="40" height="40" rx="6" fill="#EF4444" opacity="0.9" />
+    <!-- White cross icon on load to symbolize healthcare/welfare -->
+    <path d="M-53 -18 h6 v-6 h6 v6 h6 v6 h-6 v6 h-6 v-6 h-6 z" fill="#FFFFFF" />
+
+    <!-- The Lever Beam being pushed down/acted upon -->
+    <path d="M-85 -38 L75 -22 L70 -6 L-80 -22 Z" fill="#94A3B8" />
+
+    <!-- Concentrated Downward Force Hands / Pressing Down (representing focused effort/action) -->
+    <!-- Right arm applying concerted downward force -->
+    <path d="M40 -75 L60 -30 L45 -22 L25 -65 Z" fill="#F59E0B" />
+    <!-- Hand pushing down -->
+    <circle cx="50" cy="-26" r="10" fill="#FBBF24" />
+    <path d="M42 -30 C45 -33 55 -33 58 -30 L55 -20 C52 -18 45 -18 42 -20 Z" fill="#D97706" />
+
+    <!-- Energy/Force Impact Waves at the point of action (Focus indicator) -->
+    <path d="M-12 -2 C-15 -12 -5 -18 2 -12" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" fill="none" />
+    <path d="M-22 2 C-26 -12 -12 -24 -2 -18" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6" />
+
+    <!-- Upward rising target / solved state on the left -->
+    <path d="M-50 -55 L-50 -75 L-30 -65 Z" fill="#10B981" />
+    <circle cx="-40" cy="-65" r="5" fill="#34D399" />
+  </g>
+
+  <!-- Accent Focus Indicator Rings -->
+  <circle cx="120" cy="120" r="88" fill="none" stroke="#F59E0B" stroke-width="2" stroke-dasharray="8 12" opacity="0.4"/>
+</svg>

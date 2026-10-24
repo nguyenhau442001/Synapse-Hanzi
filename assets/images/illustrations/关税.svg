@@ -1,0 +1,55 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow -->
+  <circle cx="120" cy="120" r="80" fill="#2D323E" opacity="0.4"/>
+
+  <!-- Conceptual illustration: Customs Gate / Tariff Border (关税 - Tariff / Customs Duty) -->
+  <g transform="translate(0, 10)">
+    <!-- Border ground line -->
+    <rect x="40" y="150" width="160" height="4" rx="2" fill="#4A5265"/>
+
+    <!-- Left Border Post / Toll Gate House -->
+    <path d="M 50 150 L 50 100 L 80 80 L 80 150 Z" fill="#2E3646"/>
+    <rect x="58" y="105" width="14" height="20" rx="3" fill="#61AFEF" opacity="0.8"/>
+    
+    <!-- Right Border Post -->
+    <path d="M 160 150 L 160 80 L 190 100 L 190 150 Z" fill="#2E3646"/>
+    <rect x="168" y="105" width="14" height="20" rx="3" fill="#61AFEF" opacity="0.8"/>
+
+    <!-- Crossing Barrier Arm (Customs Gate) -->
+    <g transform="rotate(-25 80 125)">
+      <!-- Arm Pole -->
+      <rect x="80" y="120" width="100" height="10" rx="5" fill="#ABB2BF"/>
+      <!-- Warning Stripes -->
+      <rect x="100" y="120" width="12" height="10" fill="#E06C75"/>
+      <rect x="130" y="120" width="12" height="10" fill="#E06C75"/>
+      <rect x="160" y="120" width="12" height="10" fill="#E06C75"/>
+    </g>
+
+    <!-- Cargo Box representing International Trade / Imports & Exports -->
+    <g transform="translate(95, 105)">
+      <rect x="0" y="15" width="36" height="30" rx="4" fill="#D19A66"/>
+      <!-- Box detail lines -->
+      <line x1="18" y1="15" x2="18" y2="45" stroke="#B4885C" stroke-width="2"/>
+      <line x1="0" y1="30" x2="36" y2="30" stroke="#B4885C" stroke-width="2"/>
+    </g>
+
+    <!-- Coin / Tax Symbol hovering above, representing the Duty/Tariff -->
+    <g transform="translate(145, 65)">
+      <!-- Outer coin rim -->
+      <circle cx="0" cy="0" r="18" fill="#E5C07B"/>
+      <!-- Inner coin detail -->
+      <circle cx="0" cy="0" r="13" fill="none" stroke="#D19A66" stroke-width="1.5" stroke-dasharray="3 2"/>
+      <!-- Currency symbol or simplified glyph representation inside coin -->
+      <path d="M -3 -7 L 3 -7 M 0 -7 L 0 7 M -4 4 L 4 4" stroke="#986801" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Downward arrow indicating reduction/regulation (Tariff lowering context) -->
+    <g transform="translate(145, 95)">
+      <circle cx="0" cy="0" r="12" fill="#98C379"/>
+      <path d="M -4 -3 L 0 3 L 4 -3" fill="none" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+  </g>
+</svg>

@@ -1,0 +1,63 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow representing cinema screen / excitement -->
+  <ellipse cx="120" cy="110" rx="90" ry="70" fill="#FF5722" opacity="0.08"/>
+  <ellipse cx="120" cy="100" rx="60" ry="40" fill="#FFC107" opacity="0.1"/>
+
+  <!-- Cinema screen frame in background -->
+  <rect x="50" y="45" width="140" height="85" rx="6" fill="#222730" stroke="#3A4250" stroke-width="2"/>
+  <path d="M 60 115 Q 120 125 180 115" stroke="#FF5722" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M 50 45 L 35 130 L 205 130 L 190 45 Z" fill="#15181E" opacity="0.4"/> <!-- Perspective floor/walls -->
+
+  <!-- Dynamic action lines radiating from center (sôi động / hot blockbuster) -->
+  <g opacity="0.7">
+    <line x1="90" y1="80" x2="65" y2="60" stroke="#FF5722" stroke-width="3" stroke-linecap="round"/>
+    <line x1="150" y1="80" x2="175" y2="60" stroke="#FF5722" stroke-width="3" stroke-linecap="round"/>
+    <line x1="85" y1="105" x2="55" y2="105" stroke="#FFC107" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="155" y1="105" x2="185" y2="105" stroke="#FFC107" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="100" y1="65" x2="90" y2="35" stroke="#FFC107" stroke-width="2" stroke-linecap="round"/>
+    <line x1="140" y1="65" x2="150" y2="35" stroke="#FF5722" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Exploding / glowing star accents (blockbuster hit / 火爆) -->
+  <path d="M 120 25 L 124 37 L 136 41 L 124 45 L 120 57 L 116 45 L 104 41 L 116 37 Z" fill="#FFC107"/>
+  <path d="M 185 75 L 187 81 L 193 83 L 187 85 L 185 91 L 183 85 L 177 83 L 183 81 Z" fill="#FF5722"/>
+  <path d="M 55 75 L 57 81 L 63 83 L 57 85 L 55 91 L 53 85 L 47 83 L 53 81 Z" fill="#FF5722"/>
+
+  <!-- Sold out / Full house dynamic crowd silhouettes surging forward -->
+  <!-- Back row silhouettes -->
+  <circle cx="85" cy="140" r="12" fill="#3A4250"/>
+  <path d="M 70 170 C 70 152 76 150 85 150 C 94 150 100 152 100 170 Z" fill="#3A4250"/>
+
+  <circle cx="155" cy="140" r="12" fill="#3A4250"/>
+  <path d="M 140 170 C 140 152 146 150 155 150 C 164 150 170 152 170 170 Z" fill="#3A4250"/>
+
+  <!-- Foreground dynamic character (Verb/Action: reaching up excitedly with tickets/hands, selling out fast) -->
+  <g>
+    <!-- Raised arms and hands showing dynamic action -->
+    <path d="M 95 160 L 75 130" stroke="#4F5D73" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 145 160 L 165 130" stroke="#4F5D73" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Head and torso -->
+    <circle cx="120" cy="130" r="16" fill="#627D98"/>
+    <path d="M 96 195 C 96 168 104 162 120 162 C 136 162 144 168 144 195 Z" fill="#FF5722"/>
+    
+    <!-- Active hands raised high -->
+    <circle cx="70" cy="123" r="6" fill="#627D98"/>
+    <circle cx="170" cy="123" r="6" fill="#627D98"/>
+    
+    <!-- Holding glowing cinema tickets / passes representing block-buster demand -->
+    <rect x="60" y="110" width="18" height="10" rx="2" transform="rotate(-25 69 115)" fill="#FFC107"/>
+    <rect x="162" y="110" width="18" height="10" rx="2" transform="rotate(25 171 115)" fill="#FFC107"/>
+  </g>
+
+  <!-- Ground reflection / floor base -->
+  <rect x="20" y="195" width="200" height="3" rx="1.5" fill="#3A4250"/>
+
+  <!-- Spark particles around the center character for energy -->
+  <circle cx="105" cy="100" r="3" fill="#FFC107"/>
+  <circle cx="135" cy="100" r="3" fill="#FFC107"/>
+  <circle cx="90" cy="125" r="2" fill="#FF5722"/>
+  <circle cx="150" cy="125" r="2" fill="#FF5722"/>
+</svg>

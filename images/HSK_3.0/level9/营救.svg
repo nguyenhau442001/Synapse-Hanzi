@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Smoke/Fire background elements -->
+  <path d="M140 160 C 160 140, 180 140, 190 160 C 200 180, 180 200, 160 200 C 140 200, 130 180, 140 160" fill="#FF8C00" opacity="0.3"/>
+  <path d="M150 170 C 170 150, 190 150, 200 170 C 210 190, 190 210, 170 210 C 150 210, 140 190, 150 170" fill="#FF4500" opacity="0.4"/>
+  
+  <!-- Firefighter figure -->
+  <g transform="translate(80, 80)">
+    <!-- Helmet -->
+    <path d="M20 40 C 20 20, 50 20, 50 40 L 55 50 L 15 50 Z" fill="#FF4500"/>
+    <!-- Body -->
+    <rect x="25" y="50" width="20" height="60" rx="4" fill="#FF8C00"/>
+    <!-- Arms -->
+    <path d="M25 60 L 10 80 L 15 85 L 30 65" fill="#FF8C00"/>
+    <path d="M45 60 L 60 80 L 55 85 L 40 65" fill="#FF8C00"/>
+    <!-- Rescue Action: Carrying a person -->
+    <g transform="translate(40, 20)">
+      <!-- Person being rescued -->
+      <circle cx="20" cy="40" r="8" fill="#FFD700"/>
+      <rect x="15" y="48" width="10" height="30" rx="3" fill="#FFD700"/>
+      <path d="M10 60 L 20 70 L 30 60" fill="#FFD700"/>
+    </g>
+  </g>
+  
+  <!-- Ground -->
+  <rect x="0" y="210" width="240" height="30" fill="#2C3E50"/>
+</svg>

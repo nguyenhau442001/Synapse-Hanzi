@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for revitalization/rising theme -->
+  <circle cx="120" cy="120" r="80" fill="#242B38" opacity="0.6"/>
+  <path d="M120 40 L120 180" stroke="#2D3748" stroke-width="2" stroke-dasharray="4 4" opacity="0.5"/>
+
+  <!-- Agricultural field / foundation base -->
+  <path d="M60 170 C90 160 150 160 180 170 L190 190 C150 198 90 198 50 190 Z" fill="#2D3748"/>
+  <path d="M50 190 C90 198 150 198 190 190 L195 200 C150 208 90 208 45 200 Z" fill="#1E2430"/>
+
+  <!-- Rising/Revitalizing Sprout (Representing 振兴 - Chấn hưng / Phục hưng phát triển) -->
+  <g transform="translate(0, 5)">
+    <!-- Central strong stem -->
+    <path d="M120 175 C120 140 120 110 120 85" stroke="#48BB78" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+    <!-- Left dynamic curling leaf (growth/revival) -->
+    <path d="M120 135 C100 135 75 120 70 95 C65 70 85 60 100 75 C115 90 115 115 120 135 Z" fill="#68D391"/>
+    <path d="M120 135 C105 125 90 105 92 85" stroke="#38A169" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <!-- Right dynamic curling leaf -->
+    <path d="M120 110 C140 110 165 95 170 70 C175 45 155 35 140 50 C125 65 125 90 120 110 Z" fill="#48BB78"/>
+    <path d="M120 110 C135 100 150 80 148 60" stroke="#2F855A" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <!-- Top energetic young shoot / apex -->
+    <path d="M120 85 C115 70 120 50 120 40 C120 50 125 70 120 85 Z" fill="#9AE6B4"/>
+  </g>
+
+  <!-- Golden upward energy burst / revitalization sparks (Focus on 兴 - prosperous/thriving) -->
+  <g fill="#F6AD55">
+    <!-- Rising upward arrows / spark indicators -->
+    <path d="M120 20 L114 32 L126 32 Z"/>
+    <path d="M85 45 L80 55 L90 52 Z" transform="rotate(-15 85 45)"/>
+    <path d="M155 45 L150 52 L160 55 Z" transform="rotate(15 155 45)"/>
+  </g>
+
+  <!-- Glowing accent orb at the core of growth -->
+  <circle cx="120" cy="115" r="4" fill="#FFEE56" filter="drop-shadow(0px 0px 6px #F6AD55)"/>
+
+  <!-- Modern base floor reflection / platform arc -->
+  <ellipse cx="120" cy="195" rx="75" ry="6" fill="#323B4D"/>
+</svg>

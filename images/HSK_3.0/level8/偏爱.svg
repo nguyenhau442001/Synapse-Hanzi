@@ -1,0 +1,49 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow to focus on the central book stack -->
+  <circle cx="120" cy="125" r="70" fill="#2D333F" opacity="0.4"/>
+
+  <!-- Conceptual illustration for "偏爱" (special affection/favoritism towards realist novels based on the context) -->
+  <!-- We visualize a neat stack of books, where one specific realist novel (with a tree/nature realism motif on its spine) is visually elevated, highlighted in glowing warm gold, tilted slightly or distinguished with a specialized marker/bookmark to represent "piān’ài" (special preference/partiality). -->
+
+  <!-- Bookshelf / Surface Base -->
+  <path d="M50 185 L190 185" stroke="#3A4150" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Book 1 (Bottom book, neutral dark blue) -->
+  <rect x="65" y="155" width="110" height="22" rx="4" fill="#252B36"/>
+  <rect x="75" y="161" width="40" height="10" rx="2" fill="#323A4B"/>
+  <!-- Pages edge -->
+  <path d="M175 155 L182 159 L182 181 L175 177 Z" fill="#E2E8F0" opacity="0.15"/>
+
+  <!-- Book 2 (Middle book, neutral slate) -->
+  <rect x="60" y="130" width="120" height="23" rx="4" fill="#2D3544"/>
+  <rect x="72" y="137" width="55" height="10" rx="2" fill="#3B4659"/>
+  <!-- Pages edge -->
+  <path d="M180 130 L187 134 L187 150 L180 147 Z" fill="#E2E8F0" opacity="0.15"/>
+
+  <!-- THE CHOSEN OBJECT: The distinctly favored book (Top, highlighted in vibrant gold/orange accent representing '偏爱') -->
+  <!-- Drop shadow for elevation -->
+  <rect x="53" y="99" width="134" height="26" rx="5" fill="#000000" opacity="0.3"/>
+  
+  <!-- Main Book Body -->
+  <rect x="52" y="95" width="134" height="26" rx="5" fill="#F59E0B"/>
+  
+  <!-- Spine details & Realism motif (Tree icon representing realistic literature) -->
+  <rect x="64" y="103" width="70" height="10" rx="2" fill="#78350F" opacity="0.3"/>
+  <circle cx="160" cy="108" r="8" fill="#FEF3C7" opacity="0.4"/>
+  <!-- Mini tree silhouette inside the gold book cover to tie back to the realist novel context -->
+  <path d="M160 102 L160 114 M160 108 L156 105 M160 106 L164 104 M160 110 L157 108 M160 109 L163 107" stroke="#78350F" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Pages edge of the favored book -->
+  <path d="M186 95 L194 99 L194 117 L186 113 Z" fill="#FDE68A"/>
+  
+  <!-- Glowing aura / Spotlight rays specifically framing the favored top book -->
+  <path d="M100 65 L120 95 L140 65" fill="none" stroke="#FBBF24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+  <circle cx="120" cy="58" r="3" fill="#FBBF24"/>
+
+  <!-- Elegant bookmark hanging down from the favored book -->
+  <path d="M80 121 L80 145 L86 141 L92 145 L92 121 Z" fill="#EF4444"/>
+
+</svg>

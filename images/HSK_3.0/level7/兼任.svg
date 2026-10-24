@@ -1,0 +1,82 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "兼任" (holding multiple posts / dual roles) -->
+  <!-- We visualize a professional character centrally positioned, flanked by or connected to two distinct role symbols/desks representing holding two positions simultaneously. -->
+
+  <!-- Background subtle glowing connection line -->
+  <line x1="70" y1="130" x2="170" y2="130" stroke="#2A303C" stroke-width="4" stroke-dasharray="6,6"/>
+
+  <!-- Left Role: Academic/Dean Desk (representing the primary post) -->
+  <g transform="translate(45, 135)">
+    <!-- Desk Base -->
+    <rect x="-25" y="25" width="50" height="8" rx="2" fill="#3B4252"/>
+    <rect x="-20" y="33" width="6" height="15" fill="#2E3440"/>
+    <rect x="14" y="33" width="6" height="15" fill="#2E3440"/>
+    <!-- Book / Document stack -->
+    <rect x="-12" y="15" width="24" height="4" rx="1" fill="#D8DEE9"/>
+    <rect x="-15" y="19" width="30" height="4" rx="1" fill="#88C0D0"/>
+    <rect x="-10" y="11" width="20" height="4" rx="1" fill="#E5E9F0"/>
+    <!-- Floating role icon badge (Dean's cap/scroll) -->
+    <circle cx="0" cy="-20" r="16" fill="#2E3440" stroke="#88C0D0" stroke-width="2"/>
+    <path d="M-8 -22 L0 -26 L8 -22 L0 -18 Z" fill="#88C0D0"/>
+    <path d="M-5 -19 V-15 C-5 -13 5 -13 5 -15 V-19" fill="none" stroke="#88C0D0" stroke-width="1.5"/>
+  </g>
+
+  <!-- Right Role: Advisory/Consultant Podium (representing the second post) -->
+  <g transform="translate(195, 135)">
+    <!-- Desk Base -->
+    <rect x="-25" y="25" width="50" height="8" rx="2" fill="#3B4252"/>
+    <rect x="-20" y="33" width="6" height="15" fill="#2E3440"/>
+    <rect x="14" y="33" width="6" height="15" fill="#2E3440"/>
+    <!-- Laptop / Tablet representing advisory tech/reports -->
+    <path d="M-15 25 L15 25 L12 13 L-12 13 Z" fill="#E5E9F0"/>
+    <rect x="-18" y="25" width="36" height="3" rx="1" fill="#D8DEE9"/>
+    <!-- Floating role icon badge (Briefcase/Star) -->
+    <circle cx="0" cy="-20" r="16" fill="#2E3440" stroke="#EBCB8B" stroke-width="2"/>
+    <path d="M-6 -17 H6 V-23 H3 V-25 H-3 V-23 H-6 Z" fill="#EBCB8B"/>
+    <rect x="-7" y="-17" width="14" height="10" rx="1" fill="none" stroke="#EBCB8B" stroke-width="1.5"/>
+  </g>
+
+  <!-- Central Character (The person holding both posts) -->
+  <g transform="translate(120, 115)">
+    <!-- Suit Body / Torso -->
+    <path d="M-22 45 C-22 30 -12 25 0 25 C12 25 22 30 22 45 Z" fill="#4C566A"/>
+    <!-- Shirt collar & Tie -->
+    <path d="M-6 25 L0 35 L6 25 Z" fill="#ECEFF4"/>
+    <path d="M-2 33 L2 33 L1 45 L-1 45 Z" fill="#D08770"/>
+
+    <!-- Neck -->
+    <rect x="-5" y="18" width="10" height="10" fill="#E5C4A8"/>
+
+    <!-- Head -->
+    <circle cx="0" cy="5" r="16" fill="#E5C4A8"/>
+
+    <!-- Hair (Modern sleek style, dark blue-grey) -->
+    <path d="M-16 2 C-16 -6 -8 -12 0 -12 C8 -12 16 -6 16 2 C12 1 8 -3 0 -3 C-8 -3 -12 1 -16 2 Z" fill="#2E3440"/>
+
+    <!-- Glasses / Professional look -->
+    <circle cx="-6" cy="3" r="4" fill="none" stroke="#D8DEE9" stroke-width="1.5"/>
+    <circle cx="6" cy="3" r="4" fill="none" stroke="#D8DEE9" stroke-width="1.5"/>
+    <line x1="-2" y1="3" x2="2" y2="3" stroke="#D8DEE9" stroke-width="1.5"/>
+
+    <!-- Confident welcoming expression (subtle smile) -->
+    <path d="M-3 12 C-1 14 1 14 3 12" fill="none" stroke="#B48EAD" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Dual-role connecting gesture / arms outstretched to both sides -->
+    <path d="M-18 35 C-30 35 -38 45 -45 52" fill="none" stroke="#4C566A" stroke-width="6" stroke-linecap="round"/>
+    <path d="M18 35 C30 35 38 45 45 52" fill="none" stroke="#4C566A" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Focus Accent: Dual-badge floating indicator atop the character signifying "Concurrent Posts / 兼任" -->
+  <g transform="translate(120, 36)">
+    <circle cx="-14" cy="0" r="10" fill="#88C0D0"/>
+    <text x="-14" y="4" font-family="sans-serif" font-size="10" font-weight="bold" fill="#1A1D24" text-anchor="middle">1</text>
+    
+    <circle cx="14" cy="0" r="10" fill="#EBCB8B"/>
+    <text x="14" y="4" font-family="sans-serif" font-size="10" font-weight="bold" fill="#1A1D24" text-anchor="middle">2</text>
+    
+    <path d="M-4 0 H4" stroke="#ECEFF4" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

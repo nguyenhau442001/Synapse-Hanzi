@@ -1,0 +1,64 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Tectonic Plates / Geological Compression Visualization -->
+  <!-- Left Plate (Moving Right) -->
+  <g transform="translate(0, 0)">
+    <!-- Earth crust layers -->
+    <path d="M 15 130 L 70 120 L 95 140 L 95 200 L 15 200 Z" fill="#2D3748" />
+    <path d="M 15 100 L 75 90 L 95 110 L 95 140 L 70 120 L 15 130 Z" fill="#4A5568" />
+    <path d="M 15 70 L 80 60 L 95 80 L 95 110 L 75 90 L 15 100 Z" fill="#718096" />
+    
+    <!-- Movement Force Arrows (Left) -->
+    <g fill="#F59E0B">
+      <polygon points="50,150 70,140 70,160"/>
+      <rect x="30" y="146" width="22" height="8"/>
+      <polygon points="65,115 85,105 85,125"/>
+      <rect x="45" y="111" width="22" height="8"/>
+    </g>
+  </g>
+
+  <!-- Right Plate (Moving Left) -->
+  <g transform="translate(0, 0)">
+    <!-- Earth crust layers -->
+    <path d="M 225 130 L 170 120 L 145 140 L 145 200 L 225 200 Z" fill="#2D3748" />
+    <path d="M 225 100 L 165 90 L 145 110 L 145 140 L 170 120 L 225 130 Z" fill="#4A5568" />
+    <path d="M 225 70 L 160 60 L 145 80 L 145 110 L 165 90 L 225 100 Z" fill="#718096" />
+    
+    <!-- Movement Force Arrows (Right) -->
+    <g fill="#F59E0B">
+      <polygon points="190,150 170,140 170,160"/>
+      <rect x="188" y="146" width="22" height="8"/>
+      <polygon points="175,115 155,105 155,125"/>
+      <rect x="173" y="111" width="22" height="8"/>
+    </g>
+  </g>
+
+  <!-- Central Fold/Mountain Uplift (The Result of Jǐyā / Compression) -->
+  <g>
+    <!-- Back mountain range -->
+    <polygon points="90,140 120,70 150,140" fill="#334155" />
+    
+    <!-- Main folded peaks rising up -->
+    <polygon points="95,145 120,50 145,145" fill="#64748B" />
+    
+    <!-- Central high peak with accent geological strata -->
+    <path d="M 105,145 L 125,40 L 135,55 L 145,145 Z" fill="#94A3B8" />
+    
+    <!-- Snow caps / High altitude peaks -->
+    <path d="M 119,40 L 125,40 L 129,50 L 121,52 Z" fill="#F8FAFC" />
+    <path d="M 132,55 L 135,55 L 138,62 L 130,60 Z" fill="#F8FAFC" />
+
+    <!-- Strata compression lines on the mountains -->
+    <path d="M 112,100 L 122,95 L 132,105" stroke="#1A1D24" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M 108,120 L 120,115 L 136,122" stroke="#1A1D24" stroke-width="2" fill="none" opacity="0.6"/>
+  </g>
+
+  <!-- Focal Compression Impact Zone (Center Energy/Pressure Indicators) -->
+  <g opacity="0.9">
+    <circle cx="120" cy="142" r="6" fill="#F59E0B" />
+    <path d="M 110,135 Q 120,128 130,135" stroke="#F59E0B" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 105,142 Q 120,132 135,142" stroke="#EF4444" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+</svg>

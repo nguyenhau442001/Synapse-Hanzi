@@ -1,0 +1,43 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container & Dark Theme Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow to enhance central physical asset -->
+  <circle cx="120" cy="120" r="70" fill="#FFC107" opacity="0.05" />
+
+  <!-- Noun Object: A sleek, modern physical vault safe representing stored and growing asset value -->
+  <!-- Main Vault Body -->
+  <rect x="75" y="70" width="90" height="100" rx="12" fill="#2B303C" stroke="#3A4252" stroke-width="3"/>
+  <rect x="85" y="80" width="70" height="80" rx="6" fill="#21252E"/>
+
+  <!-- Vault Door Hinge & Details -->
+  <rect x="71" y="95" width="4" height="20" rx="2" fill="#FFC107"/>
+  <rect x="71" y="135" width="4" height="20" rx="2" fill="#FFC107"/>
+
+  <!-- Vault Dial (Combination Lock) -->
+  <circle cx="110" cy="120" r="16" fill="#1A1D24" stroke="#FFC107" stroke-width="3"/>
+  <circle cx="110" cy="120" r="6" fill="#FFC107"/>
+  <line x1="110" y1="104" x2="110" y2="110" stroke="#FFC107" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Vault Handle -->
+  <rect x="135" y="112" width="12" height="16" rx="4" fill="#FFC107"/>
+  <circle cx="141" cy="120" r="3" fill="#21252E"/>
+
+  <!-- Physical Asset Growth Representation: Gold Coins emerging upward from the top, clearly visualizing 'value addition/growth' (增值) -->
+  <!-- Coin 1 (Back) -->
+  <ellipse cx="105" cy="58" rx="14" ry="6" fill="#E0A800"/>
+  <path d="M91 58v8c0 3.3 6.3 6 14 6s14-2.7 14-6v-8" fill="#FFC107"/>
+  <ellipse cx="105" cy="66" rx="14" ry="6" fill="#FFC107"/>
+
+  <!-- Coin 2 (Front/Center) -->
+  <ellipse cx="135" cy="50" rx="16" ry="7" fill="#E0A800"/>
+  <path d="M119 50v9c0 3.9 7.2 7 16 7s16-3.1 16-7v-9" fill="#FFC107"/>
+  <ellipse cx="135" cy="59" rx="16" ry="7" fill="#FFD54F"/>
+  <text x="135" y="63" font-family="Arial, sans-serif" font-weight="bold" font-size="10" fill="#B38600" text-anchor="middle">$</text>
+
+  <!-- Upward Growth Dynamic Accents (Physical upward motion indicators) -->
+  <path d="M 120 32 L 120 20 M 115 25 L 120 20 L 125 25" stroke="#FFC107" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Base Ground Reflection -->
+  <ellipse cx="120" cy="182" r="45" ry="4" fill="#111318"/>
+</svg>

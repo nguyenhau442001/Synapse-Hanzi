@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle architectural elements (podium / electoral context) -->
+  <path d="M70 176 L170 176 L185 195 L55 195 Z" fill="#2A303C"/>
+  <rect x="90" y="160" width="60" height="16" fill="#3A4252" rx="2"/>
+
+  <!-- Microphone Stand -->
+  <rect x="117" y="105" width="6" height="55" fill="#5A6578"/>
+  <circle cx="120" cy="100" r="8" fill="#F1C40F"/>
+  <rect x="114" y="96" width="12" height="10" rx="3" fill="#F39C12"/>
+
+  <!-- Central Character (Elected Official / Leader) representing 连任 (Re-election / Continued term) -->
+  <!-- Suit Body -->
+  <path d="M95 195 L95 145 Q95 130 120 130 Q145 130 145 145 L145 195 Z" fill="#2C3E50"/>
+  <!-- Shirt & Tie -->
+  <polygon points="120,135 110,155 130,155" fill="#ECF0F1"/>
+  <polygon points="118,150 122,150 124,185 120,195 116,185" fill="#E74C3C"/>
+
+  <!-- Neck -->
+  <rect x="112" y="118" width="16" height="16" fill="#F5CBA7"/>
+
+  <!-- Head -->
+  <circle cx="120" cy="98" r="22" fill="#F5CBA7"/>
+
+  <!-- Hair (Clean, modern professional haircut) -->
+  <path d="M98 96 C98 80, 110 76, 120 76 C135 76, 142 84, 142 98 C142 98, 138 90, 120 89 C102 88, 98 96, 98 96 Z" fill="#2C3E50"/>
+
+  <!-- Confident Smile & Eyes -->
+  <circle cx="113" cy="96" r="2.5" fill="#2C3E50"/>
+  <circle cx="127" cy="96" r="2.5" fill="#2C3E50"/>
+  <path d="M115 106 Q120 111 125 106" stroke="#2C3E50" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <!-- Raised Right Arm holding a ballot/certificate of mandate (representing official continuation/succession) -->
+  <path d="M140 140 Q165 125 160 100" stroke="#F5CBA7" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <circle cx="160" cy="96" r="6" fill="#F5CBA7"/>
+
+  <!-- Official Document / Ballot Paper with Checkmark -->
+  <rect x="145" y="60" width="36" height="46" rx="4" fill="#FFFFFF" transform="rotate(15 150 70)"/>
+  <rect x="151" y="66" width="16" height="4" rx="2" fill="#BDC3C7" transform="rotate(15 150 70)"/>
+  <rect x="151" y="75" width="24" height="4" rx="2" fill="#BDC3C7" transform="rotate(15 150 70)"/>
+  <!-- Checkmark for Re-election Success -->
+  <path d="M153 92 L159 98 L171 84" stroke="#27AE60" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" transform="rotate(15 150 70)"/>
+
+  <!-- Golden Laurel Wreath / Success Badge floating gracefully above to signify continuing mandate & victory -->
+  <path d="M95 50 Q120 30 145 50" stroke="#F1C40F" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <!-- Left leaves -->
+  <path d="M100 48 Q95 40 102 42" fill="#F39C12"/>
+  <path d="M110 42 Q105 34 112 36" fill="#F39C12"/>
+  <!-- Right leaves -->
+  <path d="M140 48 Q145 40 138 42" fill="#F39C12"/>
+  <path d="M130 42 Q135 34 128 36" fill="#F39C12"/>
+  <circle cx="120" cy="34" r="4" fill="#E67E22"/>
+
+</svg>

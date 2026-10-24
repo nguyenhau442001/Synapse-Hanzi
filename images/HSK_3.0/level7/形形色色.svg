@@ -1,0 +1,66 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 112)">
+    <!-- Central visual representing "形形色色" (muôn hình vạn trạng, đủ loại - diverse shapes, forms, and colors) -->
+    <!-- Diverse overlapping/floating iconic figures and shapes representing variety of forms and types -->
+    
+    <!-- Outer ambient glow / connection lines representing information network / ocean of data -->
+    <circle cx="0" cy="0" r="90" fill="none" stroke="#2A303C" stroke-width="1.5" stroke-dasharray="4 6"/>
+    <circle cx="0" cy="0" r="68" fill="none" stroke="#333B4D" stroke-width="1" opacity="0.6"/>
+
+    <!-- Distinct various entities (people, objects, symbols) arranged dynamically to show variety -->
+    
+    <!-- Entity 1: Person / Character top-left (Teal) -->
+    <g transform="translate(-52, -35)">
+      <circle cx="0" cy="-14" r="12" fill="#2DD4BF"/>
+      <path d="M-15 10 C-15 1, 15 1, 15 10 L15 16 L-15 16 Z" fill="#2DD4BF"/>
+    </g>
+
+    <!-- Entity 2: Document / Data top-right (Coral/Orange) -->
+    <g transform="translate(42, -42)">
+      <rect x="-14" y="-16" width="28" height="34" rx="4" fill="#FB923C"/>
+      <rect x="-9" y="-9" width="18" height="3" rx="1.5" fill="#1A1D24" opacity="0.7"/>
+      <rect x="-9" y="-3" width="12" height="3" rx="1.5" fill="#1A1D24" opacity="0.7"/>
+      <rect x="-9" y="3" width="15" height="3" rx="1.5" fill="#1A1D24" opacity="0.7"/>
+    </g>
+
+    <!-- Entity 3: Gear / Mechanism center-left (Purple/Blue) -->
+    <g transform="translate(-48, 38)">
+      <circle cx="0" cy="0" r="15" fill="#818CF8"/>
+      <circle cx="0" cy="0" r="6" fill="#1A1D24"/>
+    </g>
+
+    <!-- Entity 4: Shield / Security bottom-right (Emerald Green) -->
+    <g transform="translate(48, 32)">
+      <path d="M0 -16 L13 -9 L13 6 C13 13, 0 19, 0 19 C0 19, -13 13, -13 6 L-13 -9 Z" fill="#34D399"/>
+      <path d="M-4 1 L-1 4 L5 -3" fill="none" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Entity 5: Central prominent figure/node (Gold/Yellow focus point) -->
+    <g transform="translate(0, 2)">
+      <!-- Distinct star/hexagon cluster shape representing core diversity -->
+      <polygon points="0,-24 18,-8 12,16 -12,16 -18,-8" fill="#FACC15"/>
+      <circle cx="0" cy="0" r="8" fill="#1A1D24"/>
+      <circle cx="0" cy="0" r="3" fill="#FACC15"/>
+    </g>
+
+    <!-- Entity 6: Floating communication speech bubble top-center -->
+    <g transform="translate(2, -58)">
+      <rect x="-14" y="-9" width="28" height="18" rx="5" fill="#EC4899"/>
+      <path d="M-4 9 L0 14 L4 9 Z" fill="#EC4899"/>
+      <circle cx="-6" cy="0" r="2" fill="#FFFFFF"/>
+      <circle cx="0" cy="0" r="2" fill="#FFFFFF"/>
+      <circle cx="6" cy="0" r="2" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Dynamic connecting rays showing diversity emanating from a central concept -->
+    <path d="M-38 -25 L-15 -10" stroke="#4B5563" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+    <path d="M30 -28 L12 -12" stroke="#4B5563" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+    <path d="M-35 25 L-12 10" stroke="#4B5563" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+    <path d="M35 22 L14 8" stroke="#4B5563" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+    <path d="M0 -42 L0 -20" stroke="#4B5563" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+
+  </g>
+</svg>

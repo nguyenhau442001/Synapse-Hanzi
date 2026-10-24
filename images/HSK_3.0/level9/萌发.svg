@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Glowing ambient light from underground sprouting -->
+  <circle cx="120" cy="140" r="50" fill="#4ADE80" opacity="0.1" filter="blur(12px)"/>
+  
+  <!-- Soil layers (Rich dark earth with curved strata) -->
+  <path d="M 30,135 Q 120,120 210,135 L 210,210 Q 120,225 30,210 Z" fill="#2D2327"/>
+  <path d="M 30,150 Q 120,135 210,150 L 210,210 Q 120,225 30,210 Z" fill="#241C20"/>
+  
+  <!-- Soil surface contour (Breaking soil / Cracking mounds) -->
+  <path d="M 30,135 Q 70,125 100,138 Q 120,120 145,137 Q 180,128 210,135 L 210,145 Q 180,138 145,145 Q 120,130 100,145 Q 70,133 30,145 Z" fill="#3D3035"/>
+  
+  <!-- Soil cracks / breaking chunks -->
+  <path d="M 110,133 L 100,123" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 130,135 L 140,125" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 120,138 L 122,126" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Roots underground (Nhen nhóm / Sprouting life force) -->
+  <path d="M 120,150 Q 105,170 90,185" fill="none" stroke="#65A30D" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 120,155 Q 135,175 150,190" fill="none" stroke="#65A30D" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 120,165 Q 115,185 105,200" fill="none" stroke="#65A30D" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Main Sprout stem breaking through (Chớm nở / Nảy mầm) -->
+  <path d="M 120,180 Q 120,140 120,95" fill="none" stroke="#4ADE80" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Spring rain drops falling (Contextual reference: 春雨过后) -->
+  <g opacity="0.6">
+    <path d="M 70,60 Q 68,68 68,72 A 2,2 0 0,0 72,72 Q 72,68 70,60 Z" fill="#38BDF8"/>
+    <path d="M 175,75 Q 173,83 173,87 A 2,2 0 0,0 177,87 Q 177,83 175,75 Z" fill="#38BDF8"/>
+    <path d="M 90,95 Q 88,101 88,104 A 1.5,1.5 0 0,0 91,104 Q 91,101 90,95 Z" fill="#38BDF8"/>
+    <path d="M 155,55 Q 153,61 153,64 A 1.5,1.5 0 0,0 157,64 Q 157,61 155,55 Z" fill="#38BDF8"/>
+  </g>
+
+  <!-- Tender green leaves unfolding (Vô số mầm non xanh mướt... vươn mình) -->
+  <!-- Left Leaf -->
+  <path d="M 120,95 Q 90,90 80,65 Q 100,60 120,90 Z" fill="#4ADE80"/>
+  <path d="M 120,95 Q 100,85 80,65" fill="none" stroke="#22C55E" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Right Leaf (Main focal point, catching light) -->
+  <path d="M 120,90 Q 150,80 165,55 Q 145,50 120,80 Z" fill="#86EFAC"/>
+  <path d="M 120,90 Q 140,75 165,55" fill="none" stroke="#4ADE80" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Center top emerging tip (Chớm nở) -->
+  <path d="M 120,95 Q 122,80 120,70 Q 118,80 120,95 Z" fill="#BBF7D0"/>
+
+</svg>

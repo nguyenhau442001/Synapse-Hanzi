@@ -1,0 +1,45 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Road / Crossroads Symbolizing Life-Defining Choice (十字路口) -->
+  <path d="M100 24V120H24V144H100V216H140V144H216V120H140V24H100Z" fill="#262B35"/>
+  <path d="M112 36V108H36V132H112V204H128V132H204V108H128V36H112Z" fill="#303642"/>
+  
+  <!-- Dashed center lines for roads -->
+  <line x1="120" y1="40" x2="120" y2="90" stroke="#1A1D24" stroke-width="4" stroke-dasharray="6,6"/>
+  <line x1="120" y1="150" x2="120" y2="200" stroke="#1A1D24" stroke-width="4" stroke-dasharray="6,6"/>
+  <line x1="40" y1="120" x2="90" y2="120" stroke="#1A1D24" stroke-width="4" stroke-dasharray="6,6"/>
+  <line x1="150" y1="120" x2="200" y2="120" stroke="#1A1D24" stroke-width="4" stroke-dasharray="6,6"/>
+
+  <!-- Glowing focal point / Crossroads center representing the moment of "抉择" (Decision/Turning Point) -->
+  <circle cx="120" cy="120" r="28" fill="#1A1D24" stroke="#FF9F43" stroke-width="4"/>
+  <circle cx="120" cy="120" r="16" fill="#FF9F43" opacity="0.2"/>
+
+  <!-- Stylized Traveler / Character at the crossroads -->
+  <!-- Legs / Stance -->
+  <line x1="114" y1="135" x2="108" y2="150" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round"/>
+  <line x1="126" y1="135" x2="132" y2="150" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Torso -->
+  <path d="M112 110H128V138H112Z" fill="#E2E8F0" rx="2"/>
+
+  <!-- Head -->
+  <circle cx="120" cy="96" r="8" fill="#E2E8F0"/>
+
+  <!-- Arms outstretched slightly in contemplation/decision -->
+  <path d="M112 115L98 122" stroke="#E2E8F0" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M128 115L142 122" stroke="#E2E8F0" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Glowing Directional Decision Indicators (Highlighting options) -->
+  <!-- Left Path Option (Subdued) -->
+  <circle cx="68" cy="120" r="8" fill="#3B82F6" opacity="0.6"/>
+  
+  <!-- Up/Rural/High-value Path Option (Highlighted in Gold/Orange representing the noble choice) -->
+  <circle cx="120" cy="68" r="12" fill="#FF9F43"/>
+  <path d="M120 62V74M114 68L120 62L126 68" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Right Path Option (Subdued) -->
+  <circle cx="172" cy="120" r="8" fill="#3B82F6" opacity="0.6"/>
+
+</svg>

@@ -1,0 +1,51 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow to create depth -->
+  <circle cx="120" cy="120" r="80" fill="#242B38" opacity="0.6"/>
+
+  <!-- Conceptual Physical Object for "权益" (Rights & Interests / Legal protection of interests) -->
+  <!-- A golden scale of justice seamlessly integrated with a protective shield and vibrant sprouting plant, 
+       representing legal rights (scale), security/protection (shield), and legitimate benefits/growth (plant). -->
+  
+  <!-- Shield Background -->
+  <path d="M120 45 L175 65 V125 C175 160 148 185 120 195 C92 185 65 160 65 125 V65 Z" fill="#2A3446" stroke="#3B4861" stroke-width="3"/>
+  <path d="M120 53 L167 70 V123 C167 153 144 175 120 185 C96 175 73 153 73 123 V70 Z" fill="#1E2532"/>
+
+  <!-- Central Scale & Benefits Metaphor -->
+  <!-- Scale Pillar -->
+  <rect x="116" y="75" width="8" height="75" rx="3" fill="#F0B429"/>
+  <!-- Scale Base -->
+  <path d="M96 155 H144 V163 H96 Z" rx="3" fill="#F0B429"/>
+  <circle cx="120" cy="78" r="6" fill="#FEE180"/>
+
+  <!-- Scale Beam -->
+  <path d="M75 90 H165 V98 H75 Z" rx="3" fill="#F0B429"/>
+
+  <!-- Left Pan (representing the balanced weight of rights/laws) -->
+  <path d="M75 94 L60 120 H90 Z" fill="#F0B429" opacity="0.4"/>
+  <path d="M55 120 C55 128 67 128 75 128 C83 128 95 128 95 120 Z" fill="#E2A120"/>
+  <ellipse cx="75" cy="120" rx="20" ry="7" fill="#F0B429"/>
+
+  <!-- Right Pan (representing legitimate benefits & flourishing interests) -->
+  <path d="M165 94 L150 120 H180 Z" fill="#F0B429" opacity="0.4"/>
+  <path d="M145 120 C145 128 157 128 165 128 C173 128 185 128 185 120 Z" fill="#E2A120"/>
+  <ellipse cx="165" cy="120" rx="20" ry="7" fill="#F0B429"/>
+
+  <!-- Vibrant Sprout / Benefits symbol resting securely on the right pan -->
+  <path d="M165 120 C165 110 172 100 180 96 C172 102 168 110 165 120 Z" fill="#2ECC71"/>
+  <path d="M165 120 C165 110 158 100 150 96 C158 102 162 110 165 120 Z" fill="#27AE60"/>
+  <path d="M165 122 V106" stroke="#239B56" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Legal Document / Certificate Scroll at the base (symbolizing legal entitlement) -->
+  <g transform="translate(95, 145)">
+    <rect x="0" y="0" width="50" height="32" rx="4" fill="#3B82F6"/>
+    <rect x="6" y="6" width="38" height="4" rx="2" fill="#93C5FD"/>
+    <rect x="6" y="14" width="28" height="3" rx="1.5" fill="#BFDBFE"/>
+    <rect x="6" y="21" width="20" height="3" rx="1.5" fill="#BFDBFE"/>
+    <circle cx="40" cy="22" r="5" fill="#F59E0B"/>
+  </g>
+
+  <!-- Accent Highlights -->
+  <circle cx="120" cy="53" r="3" fill="#FEE180"/>
+</svg>

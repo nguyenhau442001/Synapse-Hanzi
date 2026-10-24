@@ -1,0 +1,68 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient glow in background -->
+  <circle cx="120" cy="110" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Monitor/Website Display representing the Official Platform (官网上) -->
+  <g transform="translate(40, 45)">
+    <!-- Monitor Outer Frame -->
+    <rect x="0" y="0" width="160" height="115" rx="8" fill="#2D323E" stroke="#3F4657" stroke-width="2"/>
+    
+    <!-- Screen Header Bar -->
+    <rect x="0" y="0" width="160" height="20" rx="8" fill="#232731"/>
+    <rect x="0" y="12" width="160" height="8" fill="#232731"/>
+    <!-- Window Control Dots -->
+    <circle cx="12" cy="10" r="2.5" fill="#FF5F56"/>
+    <circle cx="21" cy="10" r="2.5" fill="#FFBD2E"/>
+    <circle cx="30" cy="10" r="2.5" fill="#27C93F"/>
+
+    <!-- Screen Content Area -->
+    <rect x="12" y="28" width="136" height="75" rx="4" fill="#1A1D24"/>
+
+    <!-- Document / List Representation (候选人员名单) -->
+    <rect x="22" y="38" width="116" height="55" rx="3" fill="#252A34"/>
+    
+    <!-- Header line in document -->
+    <rect x="32" y="46" width="60" height="4" rx="2" fill="#E6AF2E"/>
+    
+    <!-- List item 1 (Highlighted as public announcement) -->
+    <rect x="32" y="58" width="96" height="10" rx="2" fill="#2D323E"/>
+    <circle cx="38" cy="63" r="3" fill="#E6AF2E"/>
+    <rect x="46" y="61" width="50" height="4" rx="2" fill="#E2E8F0"/>
+
+    <!-- List item 2 -->
+    <rect x="32" y="72" width="96" height="10" rx="2" fill="#2D323E"/>
+    <circle cx="38" cy="77" r="3" fill="#64748B"/>
+    <rect x="46" y="75" width="40" height="4" rx="2" fill="#94A3B8"/>
+
+    <!-- Monitor Stand -->
+    <path d="M72 115 H88 V128 H72 Z" fill="#3F4657"/>
+    <rect x="52" y="128" width="56" height="4" rx="2" fill="#3F4657"/>
+  </g>
+
+  <!-- Public/Broadcasting Symbolism: Megaphone / Spotlight Beam -->
+  <!-- Golden Megaphone facing outward, symbolizing "向社会全面公示" (Public Announcement) -->
+  <g transform="translate(120, 115) scale(0.85)">
+    <!-- Sound Waves / Public Reach -->
+    <path d="M 45 -25 C 55 -15 55 15 45 25" stroke="#E6AF2E" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <path d="M 55 -35 C 70 -20 70 20 55 35" stroke="#E6AF2E" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.5"/>
+
+    <!-- Megaphone Body -->
+    <path d="M -15 -10 L 25 -25 L 25 25 L -15 10 Z" fill="#F6C90E"/>
+    <!-- Megaphone Handle -->
+    <path d="M -10 10 L -15 22 C -15 24 -13 25 -11 25 L -7 25 C -5 25 -4 23 -5 21 L -8 10 Z" fill="#D97706"/>
+    <!-- Megaphone Bell (Opening) -->
+    <ellipse cx="25" cy="0" rx="5" ry="25" fill="#E6AF2E"/>
+    <!-- Megaphone Inner Dark Area -->
+    <ellipse cx="23" cy="0" rx="2.5" ry="20" fill="#B45309"/>
+    <!-- Grip / Base -->
+    <rect x="-18" y="-12" width="8" height="24" rx="3" fill="#D97706"/>
+  </g>
+
+  <!-- Glowing Accent Checkmark badge indicating official public validation -->
+  <circle cx="175" cy="65" r="14" fill="#10B981" stroke="#1A1D24" stroke-width="3"/>
+  <path d="M 168 65 L 173 70 L 183 58" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+</svg>

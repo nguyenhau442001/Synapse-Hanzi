@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Garlic Bulb -->
+  <g transform="translate(120, 130)">
+    <!-- Main bulb body -->
+    <path d="M-45,0 C-45,-40 -20,-70 0,-70 C20,-70 45,-40 45,0 C45,40 20,60 0,60 C-20,60 -45,40 -45,0 Z" fill="#E0E0E0"/>
+    
+    <!-- Cloves segments -->
+    <path d="M0,-70 L0,60 M-20,-60 L-20,40 M20,-60 L20,40 M-40,-20 L-40,20 M40,-20 L40,20" stroke="#B0B0B0" stroke-width="2" fill="none"/>
+    
+    <!-- Stem/Root -->
+    <path d="M-10,-70 L-15,-90 M0,-70 L0,-95 M10,-70 L15,-90" stroke="#A8D08D" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Shadow -->
+    <ellipse cx="0" cy="65" rx="50" ry="10" fill="#000000" opacity="0.3"/>
+  </g>
+  
+  <!-- Accent highlight (Gold/Orange) -->
+  <path d="M150,60 A10,10 0 1,0 170,60 A10,10 0 1,0 150,60" fill="#FFB347" opacity="0.8"/>
+</svg>

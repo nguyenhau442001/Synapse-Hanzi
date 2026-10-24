@@ -1,0 +1,78 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Conceptual Illustration: 相继 (Sequential arrival / train cars following one another sequentially on tracks) -->
+  <g transform="translate(0, 15)">
+    <!-- Curved railway tracks representing the route along cities -->
+    <path d="M 30,120 Q 120,60 210,120" fill="none" stroke="#2A2F3D" stroke-width="12" stroke-linecap="round"/>
+    <path d="M 30,120 Q 120,60 210,120" fill="none" stroke="#FFB703" stroke-width="2" stroke-dasharray="6,8" stroke-linecap="round"/>
+    
+    <!-- Railway sleepers (ties) -->
+    <line x1="60" y1="102" x2="60" y2="114" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+    <line x1="90" y1="92" x2="90" y2="104" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+    <line x1="120" y1="87" x2="120" y2="99" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+    <line x1="150" y1="92" x2="150" y2="104" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+    <line x1="180" y1="102" x2="180" y2="114" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Sequential High-Speed Train Units (representing "相继" - successive arrival/following one another) -->
+    
+    <!-- Train 3 (Lead / Farthest along the curve) -->
+    <g transform="translate(160, 80)">
+      <path d="M 0,10 C 15,10 25,15 32,22 L 35,28 C 35,32 30,35 20,35 L -5,35 C -15,35 -20,32 -20,28 L -15,22 C -8,15 0,10 0,10 Z" fill="#00B4D8"/>
+      <!-- Windshield -->
+      <path d="M 5,14 C 12,14 18,17 22,21 L 24,25 L -4,25 L -2,21 C 2,17 5,14 5,14 Z" fill="#E0FBFC"/>
+      <!-- Headlight beam representing active motion -->
+      <path d="M 32,24 L 48,22 L 48,30 L 32,28 Z" fill="#FFB703" opacity="0.8"/>
+      <circle cx="35" cy="26" r="3" fill="#FFF"/>
+    </g>
+
+    <!-- Train 2 (Middle) -->
+    <g transform="translate(105, 68)">
+      <rect x="-18" y="10" width="36" height="24" rx="6" fill="#0077B6"/>
+      <!-- Windows -->
+      <rect x="-12" y="14" width="8" height="8" rx="2" fill="#E0FBFC"/>
+      <rect x="4" y="14" width="8" height="8" rx="2" fill="#E0FBFC"/>
+      <!-- Connection connector to front -->
+      <rect x="18" y="18" width="6" height="8" rx="2" fill="#2A2F3D"/>
+    </g>
+
+    <!-- Train 1 (Rear / Following closely) -->
+    <g transform="translate(50, 80)">
+      <path d="M 0,10 C -15,10 -25,15 -32,22 L -35,28 C -35,32 -30,35 -20,35 L 5,35 C 15,35 20,32 20,28 L 15,22 C 8,15 0,10 0,10 Z" fill="#0096C7"/>
+      <!-- Rear lights -->
+      <rect x="-32" y="24" width="3" height="6" rx="1" fill="#FF4D6D"/>
+      <rect x="-32" y="18" width="3" height="4" rx="1" fill="#E0FBFC"/>
+      <!-- Connection connector -->
+      <rect x="18" y="18" width="6" height="8" rx="2" fill="#2A2F3D"/>
+    </g>
+
+    <!-- Motion/Sequential indicator arrows floating above to emphasize the concept of succession (相继) -->
+    <g fill="none" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+      <!-- Arrow 1 -->
+      <path d="M 68,52 Q 78,42 88,52"/>
+      <path d="M 83,46 L 89,53 L 82,57"/>
+      
+      <!-- Arrow 2 -->
+      <path d="M 125,44 Q 135,34 145,44"/>
+      <path d="M 140,38 L 146,45 L 139,49"/>
+    </g>
+
+    <!-- City / Station Markers along the route (representing the "旅游城市" from context) -->
+    <g transform="translate(0, 10)">
+      <!-- City 1 -->
+      <rect x="35" y="115" width="10" height="15" rx="2" fill="#4A5568"/>
+      <polygon points="40,108 33,116 47,116" fill="#FFB703"/>
+      
+      <!-- City 2 (Lit up indicating arrival) -->
+      <rect x="95" y="95" width="12" height="22" rx="2" fill="#00B4D8"/>
+      <polygon points="101,86 92,96 110,96" fill="#FFB703"/>
+      <circle cx="101" cy="103" r="2" fill="#FFF"/>
+      
+      <!-- City 3 (Lit up indicating subsequent arrival) -->
+      <rect x="155" y="95" width="12" height="22" rx="2" fill="#00B4D8"/>
+      <polygon points="161,86 152,96 170,96" fill="#FFB703"/>
+      <circle cx="161" cy="103" r="2" fill="#FFF"/>
+    </g>
+  </g>
+</svg>

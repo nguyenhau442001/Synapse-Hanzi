@@ -1,0 +1,58 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Water Background Waves -->
+  <path d="M0 160 Q 30 150, 60 160 T 120 160 T 180 160 T 240 160 V 240 H 0 Z" fill="#242936"/>
+  <path d="M0 180 Q 40 170, 80 180 T 160 180 T 240 180 V 240 H 0 Z" fill="#1E232F"/>
+
+  <!-- The Boat (Side View) -->
+  <g transform="translate(60, 115)">
+    <!-- Boat Hull -->
+    <path d="M10 20 L30 50 H90 L110 20 Z" fill="#8C5A3C"/>
+    <path d="M15 20 H105 L90 45 H30 Z" fill="#A86F4C"/>
+    <!-- Gunwale line -->
+    <line x1="10" y1="20" x2="110" y2="20" stroke="#633C24" stroke-width="3"/>
+    
+    <!-- The Carved Notch (Bright Accent) -->
+    <rect x="55" y="17" width="10" height="6" fill="#F39C12" rx="1"/>
+    
+    <!-- Person Sitting in Boat -->
+    <!-- Body -->
+    <path d="M45 20 L50 -5 L70 -5 L75 20 Z" fill="#3B82F6"/>
+    <!-- Head -->
+    <circle cx="60" cy="-15" r="9" fill="#E2E8F0"/>
+    <!-- Traditional Scholar Hat -->
+    <path d="M48 -22 H72 L65 -28 H55 Z" fill="#1E293B"/>
+    <!-- Hands holding boat edge -->
+    <circle cx="50" cy="18" r="3" fill="#E2E8F0"/>
+    <circle cx="70" cy="18" r="3" fill="#E2E8F0"/>
+  </g>
+
+  <!-- The Sunken Sword (Deep Underwater, directly below the boat's initial carved spot) -->
+  <g transform="translate(100, 185)">
+    <!-- Faint drop-down dashed line from boat/notch to show original drop point -->
+    <line x1="15" y1="-70" x2="15" y2="-5" stroke="#F39C12" stroke-dasharray="3,3" stroke-width="1.5" opacity="0.6"/>
+    
+    <!-- Sword stuck in riverbed -->
+    <!-- Blade -->
+    <path d="M12 -25 L18 -25 L20 10 L15 15 L10 10 Z" fill="#94A3B8"/>
+    <line x1="15" y1="-22" x2="15" y2="8" stroke="#64748B" stroke-width="1"/>
+    <!-- Hilt / Guard -->
+    <rect x="5" y="-30" width="20" height="5" fill="#D97706" rx="1"/>
+    <!-- Handle -->
+    <rect x="12" y="-42" width="6" height="12" fill="#78350F" rx="1"/>
+    <!-- Pommel -->
+    <circle cx="15" cy="-43" r="3.5" fill="#D97706"/>
+    
+    <!-- Riverbed Mud -->
+    <path d="M-10 12 Q 15 22, 40 12 V 25 H -10 Z" fill="#334155"/>
+  </g>
+
+  <!-- Visual Foolishness / Mismatch Indicator (Glowing offset marker above sword vs boat) -->
+  <g transform="translate(0, 0)">
+    <!-- Arrow pointing from current boat position to sunken sword -->
+    <path d="M115 135 L115 165" stroke="#EF4444" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4,4"/>
+    <polygon points="115,170 111,162 119,162" fill="#EF4444"/>
+  </g>
+</svg>

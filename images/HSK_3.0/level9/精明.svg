@@ -1,0 +1,64 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background details representing boardroom/strategy context -->
+  <g opacity="0.15" stroke="#4F5D75" stroke-width="1" stroke-dasharray="4 4">
+    <line x1="40" y1="60" x2="200" y2="60"/>
+    <line x1="40" y1="180" x2="200" y2="180"/>
+  </g>
+
+  <!-- Central Character: The Shrewd/Astute Businessman (精明商人) -->
+  <!-- Suit & Shoulders -->
+  <path d="M70 210 L70 185 C70 170 90 160 120 160 C150 160 170 170 170 185 L170 210 Z" fill="#2C3E50"/>
+  <!-- Shirt & Tie -->
+  <polygon points="120,165 105,190 135,190" fill="#FFFFFF"/>
+  <polygon points="116,190 124,190 126,215 120,220 114,215" fill="#E67E22"/>
+
+  <!-- Neck & Chin -->
+  <rect x="110" y="140" width="20" height="25" fill="#F5CBA7"/>
+
+  <!-- Head -->
+  <path d="M95 100 C95 75 105 65 120 65 C135 65 145 75 145 100 C145 125 135 135 120 135 C105 135 95 125 95 100 Z" fill="#F5CBA7"/>
+
+  <!-- Hair (Sleek, modern cut) -->
+  <path d="M96 95 C94 75 105 62 122 62 C140 62 147 73 146 95 C140 85 125 80 120 80 C110 80 100 88 96 95 Z" fill="#2C3E50"/>
+
+  <!-- Astute facial features: Confident smirk -->
+  <path d="M112 115 Q120 122 128 116" stroke="#2C3E50" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  
+  <!-- Sharp, calculating eyes -->
+  <path d="M102 95 L112 97" stroke="#2C3E50" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M128 97 L138 95" stroke="#2C3E50" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Eyebrows (slightly angled for sharpness) -->
+  <path d="M100 90 L113 92" stroke="#2C3E50" stroke-width="2" stroke-linecap="round"/>
+  <path d="M127 92 L140 90" stroke="#2C3E50" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Glasses (sleek modern frames representing clarity and insight) -->
+  <rect x="99" y="87" width="18" height="15" rx="2" fill="none" stroke="#F1C40F" stroke-width="2"/>
+  <rect x="123" y="87" width="18" height="15" rx="2" fill="none" stroke="#F1C40F" stroke-width="2"/>
+  <line x1="117" y1="94" x2="123" y2="94" stroke="#F1C40F" stroke-width="2"/>
+
+  <!-- Interactive element: Holding a glowing digital tablet / grasping an opportunity (capturing the moment) -->
+  <!-- Arm -->
+  <path d="M70 185 L95 145 L110 155 L85 195 Z" fill="#2C3E50"/>
+  <!-- Hand -->
+  <circle cx="95" cy="143" r="7" fill="#F5CBA7"/>
+
+  <!-- Sleek Tablet / Strategic Device (Gold/Orange accent for focus) -->
+  <g transform="translate(75, 110) rotate(-15)">
+    <rect x="0" y="0" width="55" height="35" rx="4" fill="#0F172A" stroke="#F1C40F" stroke-width="2.5"/>
+    <!-- Abstract data / chart symbolizing sharp business acumen -->
+    <polyline points="10,25 20,18 30,22 45,10" fill="none" stroke="#E67E22" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="45" cy="10" r="3" fill="#F1C40F"/>
+  </g>
+
+  <!-- Sparkle of insight / catching the opportunity ("捕捉先机") -->
+  <g transform="translate(155, 65)">
+    <path d="M0 12 C 0 5, 5 0, 12 0 C 5 0, 0 -5, 0 -12 C 0 -5, -5 0, -12 0 C -5 0, 0 5, 0 12 Z" fill="#F1C40F"/>
+  </g>
+  <g transform="translate(75, 75) scale(0.6)">
+    <path d="M0 12 C 0 5, 5 0, 12 0 C 5 0, 0 -5, 0 -12 C 0 -5, -5 0, -12 0 C -5 0, 0 5, 0 12 Z" fill="#E67E22"/>
+  </g>
+
+</svg>

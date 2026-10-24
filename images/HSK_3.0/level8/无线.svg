@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle high-speed train window frame line -->
+  <path d="M40 70 L200 70" stroke="#2A2F3D" stroke-width="2" stroke-dasharray="4 4" opacity="0.5"/>
+  <path d="M40 190 L200 190" stroke="#2A2F3D" stroke-width="2" stroke-dasharray="4 4" opacity="0.5"/>
+
+  <!-- Central Physical Object: Modern High-Tech Wireless Wi-Fi Router / Access Point (Physical Object Representation of 无线) -->
+  
+  <!-- Shadow beneath the router -->
+  <ellipse cx="120" cy="182" rx="45" ry="8" fill="#111317"/>
+
+  <!-- Router Base / Body -->
+  <path d="M85 140 L155 140 C162 140, 168 146, 168 153 L168 170 C168 177, 162 183, 155 183 L85 183 C78 183, 72 177, 72 170 L72 153 C72 146, 78 140, 85 140 Z" fill="#252B3B"/>
+  
+  <!-- Router Front Bevel/Plate -->
+  <path d="M85 144 L155 144 C159 144, 163 148, 163 152 L163 168 C163 172, 159 176, 155 176 L85 176 C81 176, 77 172, 77 168 L77 152 C77 148, 81 144, 85 144 Z" fill="#2E374A"/>
+
+  <!-- Status Indicator Lights (Accent Orange/Gold) -->
+  <circle cx="100" cy="160" r="3.5" fill="#FF9F43"/>
+  <circle cx="112" cy="160" r="2.5" fill="#1A1D24" opacity="0.6"/>
+  <!-- Glowing signal active dot -->
+  <circle cx="124" cy="160" r="3.5" fill="#FF9F43"/>
+  <circle cx="124" cy="160" r="6" fill="#FF9F43" opacity="0.3"/>
+
+  <!-- Antenna Left -->
+  <rect x="90" y="90" width="6" height="55" rx="3" fill="#3B445B" transform="rotate(-15 93 145)"/>
+  <rect x="91" y="92" width="4" height="20" rx="2" fill="#525E7A" transform="rotate(-15 93 145)"/>
+
+  <!-- Antenna Right -->
+  <rect x="144" y="90" width="6" height="55" rx="3" fill="#3B445B" transform="rotate(15 147 145)"/>
+  <rect x="145" y="92" width="4" height="20" rx="2" fill="#525E7A" transform="rotate(15 147 145)"/>
+
+  <!-- Antenna Center -->
+  <rect x="117" y="78" width="6" height="65" rx="3" fill="#3B445B"/>
+  <rect x="118" y="80" width="4" height="25" rx="2" fill="#525E7A"/>
+
+  <!-- Wireless Signal Waves (Emitting from Center Antenna Top) -->
+  <!-- Inner Wave -->
+  <path d="M 104 70 A 20 20 0 0 1 136 70" fill="none" stroke="#FF9F43" stroke-width="3.5" stroke-linecap="round"/>
+  
+  <!-- Middle Wave -->
+  <path d="M 94 58 A 34 34 0 0 1 146 58" fill="none" stroke="#FF9F43" stroke-width="3.5" stroke-linecap="round" opacity="0.8"/>
+  
+  <!-- Outer Wave -->
+  <path d="M 84 46 A 48 48 0 0 1 156 46" fill="none" stroke="#FF9F43" stroke-width="3.5" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Floating Data Nodes / Signal Sparks -->
+  <circle cx="120" cy="32" r="3" fill="#FF9F43"/>
+  <circle cx="158" cy="68" r="2.5" fill="#FF9F43" opacity="0.7"/>
+  <circle cx="82" cy="68" r="2.5" fill="#FF9F43" opacity="0.7"/>
+  <circle cx="140" cy="40" r="2" fill="#FFFFFF" opacity="0.9"/>
+  <circle cx="100" cy="40" r="2" fill="#FFFFFF" opacity="0.9"/>
+
+</svg>

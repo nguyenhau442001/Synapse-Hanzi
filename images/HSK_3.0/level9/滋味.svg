@@ -1,0 +1,39 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for focus -->
+  <circle cx="120" cy="115" r="70" fill="#FFB703" opacity="0.06"/>
+
+  <!-- Steaming Ceramic Teacup / Bowl representing "Taste / Flavor" (滋味) -->
+  <g transform="translate(0, 5)">
+    <!-- Steam / Aroma wisps (representing flavor/experience) -->
+    <path d="M95 65 C95 50, 105 45, 100 30" fill="none" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+    <path d="M120 60 C120 45, 130 40, 125 25" fill="none" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+    <path d="M145 65 C145 50, 135 45, 140 30" fill="none" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Tea/Liquid Surface (Rich flavor base) -->
+    <ellipse cx="120" cy="95" rx="42" ry="10" fill="#E8912D"/>
+
+    <!-- Teacup Body (Sleek modern design) -->
+    <path d="M 78 95 
+             C 78 135, 90 155, 120 155 
+             C 150 155, 162 135, 162 95 Z" 
+          fill="#2C323D"/>
+    
+    <!-- Inner shadow/rim detail -->
+    <ellipse cx="120" cy="95" rx="42" ry="6" fill="#1A1D24" opacity="0.3"/>
+
+    <!-- Elegant Teacup Handle -->
+    <path d="M 160 102 
+             C 178 102, 178 135, 160 138" 
+          fill="none" stroke="#2C323D" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- Saucer / Base Platform -->
+    <ellipse cx="120" cy="163" rx="58" ry="7" fill="#3A4250"/>
+  </g>
+
+  <!-- Accent star/sparkle representing the profound realization/sweetness of experience -->
+  <path d="M 175 75 Q 175 85 185 85 Q 175 85 175 95 Q 175 85 165 85 Q 175 85 175 75 Z" fill="#FFB703" opacity="0.85"/>
+  <path d="M 65 110 Q 65 116 71 116 Q 65 116 65 122 Q 65 116 59 116 Q 65 116 65 110 Z" fill="#FFB703" opacity="0.6"/>
+
+</svg>

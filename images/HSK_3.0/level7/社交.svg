@@ -1,0 +1,55 @@
+<svg width="240" height="240" rx="24" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative Network Nodes/Lines in background (subtle) -->
+  <g opacity="0.25" stroke="#4A5568" stroke-width="1.5" stroke-dasharray="3 3">
+    <line x1="70" y1="90" x2="120" y2="120" />
+    <line x1="170" y1="90" x2="120" y2="120" />
+    <line x1="120" y1="120" x2="120" y2="170" />
+  </g>
+
+  <!-- Central Social Concept Illustration (Human figures interacting in a modern flat style) -->
+  
+  <!-- Person 1 (Left) -->
+  <g transform="translate(45, 60)">
+    <!-- Head -->
+    <circle cx="25" cy="25" r="14" fill="#E2E8F0"/>
+    <!-- Body / Shoulders -->
+    <path d="M5 65 C5 48, 15 45, 25 45 C35 45, 45 48, 45 65" fill="#3B82F6"/>
+  </g>
+
+  <!-- Person 2 (Center - Main Focus) -->
+  <g transform="translate(95, 45)">
+    <!-- Head -->
+    <circle cx="25" cy="22" r="16" fill="#F8FAFC"/>
+    <!-- Body / Shoulders (Highlighted with Accent Color) -->
+    <path d="M3 65 C3 46, 13 42, 25 42 C37 42, 47 46, 47 65" fill="#F59E0B"/>
+  </g>
+
+  <!-- Person 3 (Right) -->
+  <g transform="translate(145, 60)">
+    <!-- Head -->
+    <circle cx="25" cy="25" r="14" fill="#E2E8F0"/>
+    <!-- Body / Shoulders -->
+    <path d="M5 65 C5 48, 15 45, 25 45 C35 45, 45 48, 45 65" fill="#10B981"/>
+  </g>
+
+  <!-- Connecting Speech Bubbles / Interaction Elements -->
+  <g transform="translate(0, 0)">
+    <!-- Left Speech Bubble -->
+    <path d="M 65 135 L 85 135 A 8 8 0 0 1 93 143 L 93 153 A 8 8 0 0 1 85 161 L 75 161 L 65 171 L 68 161 L 65 161 A 8 8 0 0 1 57 153 L 57 143 A 8 8 0 0 1 65 135 Z" fill="#2D3748" stroke="#4A5568" stroke-width="1.5"/>
+    <circle cx="70" cy="148" r="2" fill="#94A3B8"/>
+    <circle cx="75" cy="148" r="2" fill="#94A3B8"/>
+    <circle cx="80" cy="148" r="2" fill="#94A3B8"/>
+
+    <!-- Right Speech Bubble (Active/Focal) -->
+    <path d="M 155 125 L 175 125 A 8 8 0 0 1 183 133 L 183 143 A 8 8 0 0 1 175 151 L 168 151 L 165 161 L 162 151 L 155 151 A 8 8 0 0 1 147 143 L 147 133 A 8 8 0 0 1 155 125 Z" fill="#F59E0B" opacity="0.9"/>
+    <circle cx="161" cy="138" r="2" fill="#FFFFFF"/>
+    <circle cx="166" cy="138" r="2" fill="#FFFFFF"/>
+    <circle cx="171" cy="138" r="2" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Ground / Base platform line -->
+  <path d="M 60 190 L 180 190" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
+</svg>

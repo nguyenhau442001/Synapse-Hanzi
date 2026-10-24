@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground -->
+  <path d="M40 190 L200 190" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Sisyphus-inspired boulder representing the futile effort -->
+  <circle cx="120" cy="160" r="30" fill="#718096"/>
+  <circle cx="110" cy="150" r="8" fill="#A0AEC0"/>
+  
+  <!-- Person pushing the boulder -->
+  <g fill="#F6AD55">
+    <circle cx="160" cy="165" r="10"/>
+    <path d="M160 175 L160 200 M160 180 L145 195 M160 180 L175 195" stroke="#F6AD55" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Steep incline line indicating the wrong direction -->
+  <path d="M150 160 L190 120" stroke="#E53E3E" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+  
+  <!-- Visual indicator of the loop/futility -->
+  <path d="M120 130 C 100 130 90 140 90 160 C 90 180 100 190 120 190" fill="none" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+  <path d="M120 190 L115 185 M120 190 L125 185" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+</svg>

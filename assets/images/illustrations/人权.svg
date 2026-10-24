@@ -1,0 +1,42 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle glow representing dignity and society -->
+  <circle cx="120" cy="115" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Conceptual Representation of "人权" (Human Rights): 
+       A central stylized human figure sheltered/uplifted by protective, embracing hands, 
+       with a subtle balance/scale or upward growth motif representing fundamental rights and protection under rule of law. -->
+  
+  <!-- Protective hands (representing society / legal protection / guarantee) -->
+  <path d="M 65 145 C 65 125, 80 110, 100 110 C 105 110, 110 112, 115 116 C 120 112, 125 110, 130 110 C 150 110, 165 125, 165 145 C 165 155, 160 165, 155 175 L 85 175 C 80 165, 65 155, 65 145 Z" fill="#2D3748" opacity="0.8"/>
+  
+  <!-- Left Hand Open Supporting -->
+  <path d="M 65 145 C 55 145, 45 135, 45 120 C 45 110, 55 105, 65 115 C 70 120, 75 130, 75 140 Z" fill="#3B4758"/>
+  <!-- Right Hand Open Supporting -->
+  <path d="M 175 145 C 185 145, 195 135, 195 120 C 195 110, 185 105, 175 115 C 170 120, 165 130, 165 140 Z" fill="#3B4758"/>
+
+  <!-- Central Human Figure (representing the individual citizen) -->
+  <!-- Head -->
+  <circle cx="120" cy="75" r="14" fill="#F6AD55"/>
+  <!-- Body / Torso with upward dignified posture -->
+  <path d="M 102 98 C 102 93, 110 90, 120 90 C 130 90, 138 93, 138 98 L 142 145 C 142 150, 138 155, 132 155 L 108 155 C 102 155, 98 150, 98 145 Z" fill="#E2E8F0"/>
+
+  <!-- Scale of Justice / Equality Elements subtly integrated into the background/base -->
+  <path d="M 90 185 L 150 185" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="120" cy="185" r="4" fill="#F6AD55"/>
+  
+  <!-- Scale Pans -->
+  <path d="M 85 170 L 95 170" stroke="#CBD5E0" stroke-width="2"/>
+  <line x1="85" y1="170" x2="90" y2="185" stroke="#CBD5E0" stroke-width="1.5"/>
+  <line x1="95" y1="170" x2="90" y2="185" stroke="#CBD5E0" stroke-width="1.5"/>
+
+  <path d="M 145 170 L 155 170" stroke="#CBD5E0" stroke-width="2"/>
+  <line x1="145" y1="170" x2="150" y2="185" stroke="#CBD5E0" stroke-width="1.5"/>
+  <line x1="155" y1="170" x2="150" y2="185" stroke="#CBD5E0" stroke-width="1.5"/>
+
+  <!-- Upward beam/glow representing flourishing rights -->
+  <path d="M 120 60 L 120 40" stroke="#F6AD55" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 112 45 L 120 37 L 128 45" fill="none" stroke="#F6AD55" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

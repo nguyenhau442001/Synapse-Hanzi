@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background accent / depth -->
+  <circle cx="120" cy="120" r="70" fill="#222732"/>
+
+  <!-- Conceptual illustration for "掌管" (to hold power, manage, authority) -->
+  <!-- Represented as a powerful physical object: An ornate, modern golden key/scepter resting securely upon an authoritative, structured hand -->
+
+  <!-- Hand representing control/management (掌) -->
+  <g>
+    <!-- Palm & Wrist -->
+    <path d="M 85,175 C 85,150 95,130 110,130 C 120,130 125,140 130,140 C 135,140 140,130 150,130 C 165,130 175,150 175,175 C 175,190 160,205 130,205 C 100,205 85,190 85,175 Z" fill="#3E4A61"/>
+    
+    <!-- Fingers wrapped securely upward providing support and command -->
+    <!-- Thumb -->
+    <path d="M 90,165 C 80,155 75,135 85,120 C 92,110 102,115 105,125 C 107,132 102,145 98,155 Z" fill="#4E5D78"/>
+    <!-- Index / Middle fingers holding the base -->
+    <path d="M 120,130 C 115,110 120,95 130,95 C 140,95 145,110 142,130 Z" fill="#4E5D78"/>
+  </g>
+
+  <!-- Object of authority / management (管 / 权柄 - Key/Scepter) -->
+  <g transform="translate(120, 105) rotate(-35)">
+    <!-- Main shaft -->
+    <rect x="-40" y="-8" width="80" height="16" rx="4" fill="url(#goldGrad)" />
+    
+    <!-- Intricate top head (Symbolizing core administration / power) -->
+    <circle cx="-42" cy="0" r="18" fill="none" stroke="#F5B342" stroke-width="6"/>
+    <circle cx="-42" cy="0" r="8" fill="#1A1D24"/>
+    <rect x="-56" y="-3" width="10" height="6" fill="#F5B342"/>
+
+    <!-- Key teeth / Structural base on the right -->
+    <rect x="25" y="-14" width="8" height="12" rx="2" fill="#F5B342"/>
+    <rect x="35" y="-14" width="8" height="20" rx="2" fill="#F5B342"/>
+  </g>
+
+  <!-- Accent glow / Focus on the interaction -->
+  <circle cx="120" cy="100" r="45" fill="none" stroke="#F5B342" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.4"/>
+
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E59828"/>
+      <stop offset="50%" stop-color="#F5B342"/>
+      <stop offset="100%" stop-color="#FFD079"/>
+    </linearGradient>
+  </defs>
+</svg>

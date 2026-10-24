@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <circle cx="120" cy="115" r="70" fill="#14161B" stroke="#2A2F3B" stroke-width="2"/>
+  
+  <path d="M120 45 C158.66 45 190 76.34 190 115 C190 153.66 158.66 185 120 185" fill="none" stroke="#343B4C" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <path d="M120 185 C81.34 185 50 153.66 50 115 C50 76.34 81.34 45 120 45" fill="none" stroke="#343B4C" stroke-width="1.5" stroke-dasharray="3 3"/>
+  
+  <g transform="translate(120, 115)">
+    <path d="M0 -35 L30.31 17.5 L-30.31 17.5 Z" fill="none" stroke="#D4AF37" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M0 35 L30.31 -17.5 L-30.31 -17.5 Z" fill="none" stroke="#D4AF37" stroke-width="2.5" stroke-linejoin="round"/>
+    
+    <polygon points="0,-18 15.6,-9 15.6,9 0,18 -15.6,9 -15.6,-9" fill="#1A1D24" stroke="#FF8C42" stroke-width="2"/>
+    <circle cx="0" cy="0" r="4" fill="#FF8C42"/>
+    
+    <path d="M-60 -65 C-40 -75 40 -75 60 -65" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M-75 -30 C-85 -10 -85 10 -75 30" fill="none" stroke="#FF8C42" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M75 -30 C85 -10 85 10 75 30" fill="none" stroke="#FF8C42" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    
+    <circle cx="-50" cy="-50" r="1.5" fill="#D4AF37" opacity="0.8"/>
+    <circle cx="55" cy="-45" r="2" fill="#FF8C42" opacity="0.9"/>
+    <circle cx="-65" cy="15" r="1.5" fill="#D4AF37" opacity="0.7"/>
+    <circle cx="60" cy="20" r="2" fill="#D4AF37" opacity="0.9"/>
+    
+    <path d="M-15 -52 L-10 -57 M10 -57 L15 -52" stroke="#FF8C42" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+  </g>
+
+  <path d="M95 200 C110 206 130 206 145 200" fill="none" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="120" cy="203" r="1.5" fill="#D4AF37"/>
+</svg>

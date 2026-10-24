@@ -1,0 +1,57 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Morning Sun / Light Beam -->
+  <circle cx="190" cy="50" r="35" fill="#FFA726" opacity="0.15"/>
+  <circle cx="190" cy="50" r="22" fill="#FFA726" opacity="0.3"/>
+  
+  <!-- Rays of dawn light -->
+  <path d="M165 35 L130 20" stroke="#FFB74D" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <path d="M170 65 L110 50" stroke="#FFB74D" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Vibrant Green Blade of Grass (Curved background leaf) -->
+  <path d="M40 210 Q 70 140, 90 80 Q 95 65, 98 50 Q 85 85, 65 130 Q 45 175, 40 210 Z" fill="#2E7D32"/>
+  
+  <!-- Main Foreground Blade of Grass -->
+  <path d="M70 210 Q 110 130, 145 70 Q 155 52, 160 35 Q 140 85, 110 140 Q 85 185, 70 210 Z" fill="#4CAF50"/>
+  
+  <!-- Grass texture / highlight line -->
+  <path d="M80 200 Q 115 135, 147 75" stroke="#81C784" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- The Dewdrop (Crystalline Pearl) -->
+  <g transform="translate(132, 75)">
+    <!-- Outer Glow -->
+    <circle cx="0" cy="0" r="22" fill="#80DEEA" opacity="0.15"/>
+    <circle cx="0" cy="0" r="16" fill="#80DEEA" opacity="0.3"/>
+    
+    <!-- Main Drop Body -->
+    <path d="M 0 -16 C 10 -16, 16 -10, 16 0 C 16 10, 10 16, 0 16 C -10 16, -16 10, -16 0 C -16 -10, -10 -16, 0 -16 Z" fill="#B2EBF2" fill-opacity="0.8"/>
+    
+    <!-- Internal Refraction Gradient/Shading -->
+    <path d="M 0 -14 C 8 -14, 14 -8, 14 0 C 14 7, 9 13, 2 14 C -6 13, -12 7, -12 0 C -12 -8, -6 -14, 0 -14 Z" fill="url(#dewGrad)" opacity="0.9"/>
+
+    <!-- Sparkle / Specular Highlights -->
+    <path d="M-6 -6 Q -2 -10, 2 -6 Q -2 -2, -6 -6 Z" fill="#FFFFFF" opacity="0.9"/>
+    <circle cx="-7" cy="-7" r="3.5" fill="#FFFFFF"/>
+    <circle cx="6" cy="6" r="1.5" fill="#FFFFFF" opacity="0.7"/>
+    <path d="M5 2 Q 8 -1, 9 3 Z" fill="#FFA726" opacity="0.6"/> <!-- Golden sunrise reflection -->
+  </g>
+
+  <!-- Secondary Smaller Dewdrop -->
+  <g transform="translate(95, 120)">
+    <circle cx="0" cy="0" r="8" fill="#B2EBF2" fill-opacity="0.7"/>
+    <circle cx="-2" cy="-2" r="2" fill="#FFFFFF"/>
+    <circle cx="2" cy="2" r="1" fill="#FFA726" opacity="0.5"/>
+  </g>
+
+  <!-- Gradient Definitions -->
+  <defs>
+    <radialGradient id="dewGrad" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="40%" stop-color="#80DEEA"/>
+      <stop offset="80%" stop-color="#26A69A"/>
+      <stop offset="100%" stop-color="#00695C"/>
+    </radialGradient>
+  </defs>
+</svg>

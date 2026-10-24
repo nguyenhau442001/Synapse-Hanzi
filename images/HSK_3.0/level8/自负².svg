@@ -1,0 +1,73 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative subtle elements (dark mode architectural floor/pedestal) -->
+  <ellipse cx="120" cy="190" rx="60" ry="12" fill="#222730"/>
+  <path d="M 85 190 L 120 170 L 155 190 Z" fill="#2A303C" opacity="0.3"/>
+
+  <!-- Character representing "自负" (Arrogance/Hubris): 
+       An elegantly dressed person leaning back with an exaggeratedly high, haughty posture, 
+       chin tilted way up, arms crossed, wearing a top hat or crown-like element, 
+       looking down their nose with an expression of self-importance. -->
+  
+  <!-- Shadow under character -->
+  <ellipse cx="120" cy="182" rx="35" ry="7" fill="#121418"/>
+
+  <!-- Body / Torso (Tailored sharp suit, deep slate blue with gold accents) -->
+  <path d="M 95 140 L 145 140 L 155 180 L 85 180 Z" fill="#2E384D"/>
+  
+  <!-- Lapels -->
+  <polygon points="120,140 110,165 120,180" fill="#3B465F"/>
+  <polygon points="120,140 130,165 120,180" fill="#3B465F"/>
+
+  <!-- Gold Tie / Brooch -->
+  <polygon points="117,142 123,142 125,165 120,172 115,165" fill="#F5C038"/>
+
+  <!-- Crossed Arms (Symbolizing closed, defensive, self-absorbed attitude) -->
+  <!-- Back arm -->
+  <path d="M 100 135 Q 120 150 140 135" fill="none" stroke="#252D3D" stroke-width="12" stroke-linecap="round"/>
+  <!-- Front arms crossed -->
+  <path d="M 90 145 Q 120 165 150 145" fill="none" stroke="#2E384D" stroke-width="14" stroke-linecap="round"/>
+  <!-- Cuffs / Hands -->
+  <circle cx="100" cy="150" r="6" fill="#FAD1A5"/>
+  <circle cx="140" cy="150" r="6" fill="#FAD1A5"/>
+
+  <!-- Neck -->
+  <rect x="113" y="125" width="14" height="20" fill="#FAD1A5"/>
+
+  <!-- Head (Tilted backward, looking up/away) -->
+  <circle cx="125" cy="105" r="22" fill="#FAD1A5"/>
+
+  <!-- Hair (Sleek, modern sharp cut) -->
+  <path d="M 103 105 C 103 90 115 83 130 85 C 142 87 147 98 147 98 C 147 98 140 88 128 88 C 115 88 107 95 103 105 Z" fill="#2B2D33"/>
+
+  <!-- Haughty Facial Features (Chin up, closed eyes in disdain or half-closed looking down) -->
+  <!-- Nose (Sharp, upturned) -->
+  <path d="M 142 105 L 148 100 L 143 108" fill="none" stroke="#DFB28A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Smug Smile (Arrogant smirk) -->
+  <path d="M 136 116 Q 142 119 146 114" fill="none" stroke="#B87D52" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Eyebrow (Arched high in condescension) -->
+  <path d="M 132 96 Q 140 92 146 95" fill="none" stroke="#2B2D33" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Elegant Tall Top Hat (Symbolizing inflated ego / high status) -->
+  <!-- Brim -->
+  <ellipse cx="128" cy="85" rx="28" ry="6" fill="#2B2D33"/>
+  <ellipse cx="128" cy="85" rx="28" ry="6" fill="none" stroke="#F5C038" stroke-width="1.5"/>
+  <!-- Crown -->
+  <path d="M 108 83 L 112 40 C 112 38 114 36 117 36 L 139 36 C 142 36 144 38 144 40 L 148 83 Z" fill="#2B2D33"/>
+  <!-- Hat Band (Gold accent for pride/vanity) -->
+  <path d="M 109 75 L 147 75 L 148 81 L 108 81 Z" fill="#F5C038"/>
+
+  <!-- Floating Golden Aura / Sparkles of Grandiosity (Visual metaphor for overinflated self-worth) -->
+  <path d="M 75 75 L 78 82 L 85 85 L 78 88 L 75 95 L 72 88 L 65 85 L 72 82 Z" fill="#F5C038" opacity="0.8"/>
+  <path d="M 175 110 L 177 114 L 181 116 L 177 118 L 175 122 L 173 118 L 169 116 L 173 114 Z" fill="#F5C038" opacity="0.6"/>
+  <circle cx="165" cy="70" r="3" fill="#F5C038" opacity="0.9"/>
+  <circle cx="70" cy="130" r="2" fill="#F5C038" opacity="0.7"/>
+
+  <!-- Upward diagonal accent lines emphasizing the "looking down on others" angle -->
+  <line x1="160" y1="50" x2="190" y2="40" stroke="#F5C038" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <line x1="168" y1="60" x2="188" y2="53" stroke="#F5C038" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+</svg>

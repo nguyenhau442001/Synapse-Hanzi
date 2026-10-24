@@ -1,0 +1,29 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle grid lines for financial context -->
+  <line x1="36" y1="60" x2="204" y2="60" stroke="#2A2F3B" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="36" y1="100" x2="204" y2="100" stroke="#2A2F3B" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="36" y1="140" x2="204" y2="140" stroke="#2A2F3B" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="36" y1="180" x2="204" y2="180" stroke="#2A2F3B" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- Trend vector line (representing 走势 - upward physical trajectory/market movement) -->
+  <path d="M 40 170 L 80 140 L 120 155 L 160 90 L 200 65" fill="none" stroke="#F59E0B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Area under the trend line -->
+  <path d="M 40 170 L 80 140 L 120 155 L 160 90 L 200 65 L 200 195 L 40 195 Z" fill="#F59E0B" opacity="0.1"/>
+
+  <!-- Trend nodes / data points -->
+  <circle cx="40" cy="170" r="4" fill="#1A1D24" stroke="#F59E0B" stroke-width="3"/>
+  <circle cx="80" cy="140" r="4" fill="#1A1D24" stroke="#F59E0B" stroke-width="3"/>
+  <circle cx="120" cy="155" r="4" fill="#1A1D24" stroke="#F59E0B" stroke-width="3"/>
+  <circle cx="160" cy="90" r="4" fill="#1A1D24" stroke="#F59E0B" stroke-width="3"/>
+  
+  <!-- Highlighted peak terminal point representing the active movement -->
+  <circle cx="200" cy="65" r="7" fill="#F59E0B"/>
+  <circle cx="200" cy="65" r="12" fill="none" stroke="#F59E0B" stroke-width="2" opacity="0.5"/>
+
+  <!-- Sleek physical axis base representing the physical object tracking the trend -->
+  <line x1="36" y1="195" x2="204" y2="195" stroke="#4B5563" stroke-width="3" stroke-linecap="round"/>
+  <line x1="36" y1="45" x2="36" y2="195" stroke="#4B5563" stroke-width="3" stroke-linecap="round"/>
+</svg>

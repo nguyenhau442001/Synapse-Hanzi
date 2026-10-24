@@ -1,0 +1,31 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Character representing the internal conflict of "shuōbushàng" -->
+  <!-- The character is looking slightly down, hand touching their chin/throat area, 
+       representing the inability to articulate a feeling. -->
+  
+  <g transform="translate(120, 120)">
+    <!-- Body -->
+    <path d="M-30 80 L-30 40 C-30 20, -10 10, 0 10 C10 10, 30 20, 30 40 L30 80" fill="#4A5568"/>
+    
+    <!-- Head -->
+    <circle cx="0" cy="-10" r="25" fill="#E2E8F0"/>
+    
+    <!-- Expression: Hesitant, mouth closed, brow slightly furrowed -->
+    <path d="M-8 -15 L-2 -15 M8 -15 L2 -15" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+    <path d="M-5 5 Q0 8 5 5" stroke="#1A1D24" stroke-width="2" fill="none" stroke-linecap="round"/>
+    
+    <!-- Hand gesture: Touching throat/chin, indicating "cannot say" -->
+    <path d="M15 15 L25 5 L35 15" fill="#E2E8F0"/>
+    <path d="M25 5 L30 -5" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Abstract "unspoken" cloud/thought bubble effect (non-geometric, organic shape) -->
+    <path d="M40 -30 Q60 -50 80 -30 T100 -30" stroke="#F6AD55" stroke-width="3" fill="none" stroke-dasharray="4 4"/>
+    <path d="M45 -20 Q55 -10 65 -20" stroke="#F6AD55" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Motion lines indicating internal hesitation/thought -->
+  <path d="M160 100 Q170 90 180 100" stroke="#F6AD55" stroke-width="2" fill="none"/>
+  <path d="M165 110 Q175 100 185 110" stroke="#F6AD55" stroke-width="2" fill="none"/>
+</svg>

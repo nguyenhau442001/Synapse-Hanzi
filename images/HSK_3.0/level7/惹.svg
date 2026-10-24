@@ -1,0 +1,78 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "惹" (gây chuyện, chọc giận, chuốc lấy rắc rối) -->
+  <!-- Central object/character representing a person accidentally stirring up a hornets' nest / trouble -->
+  
+  <g transform="translate(0, 0)">
+    <!-- Ambient warning glow representing provocation/trouble -->
+    <circle cx="120" cy="110" r="55" fill="#FF5722" opacity="0.1" />
+
+    <!-- Disturbed Hive / Trouble Source (Top Center) -->
+    <g transform="translate(120, 55)">
+      <!-- Hive body -->
+      <path d="M-22,-10 C-25,-25 25,-25 22,-10 C28,5 25,20 18,25 C10,30 -10,30 -18,25 C-25,20 -28,5 -22,-10 Z" fill="#FFA726"/>
+      <!-- Hive stripes -->
+      <path d="M-18,-12 C-10,-8 10,-8 18,-12" stroke="#E65100" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M-21,0 C-12,4 12,4 21,0" stroke="#E65100" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M-17,13 C-8,17 8,17 17,13" stroke="#E65100" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <!-- Hive exit hole -->
+      <ellipse cx="0" cy="5" rx="5" ry="4" fill="#3E2723"/>
+    </g>
+
+    <!-- Aggressive Hornets / Trouble flying out (Dynamic elements) -->
+    <!-- Hornet 1 -->
+    <g transform="translate(85, 75) rotate(-20)">
+      <ellipse cx="0" cy="0" rx="6" ry="4" fill="#FFC107"/>
+      <path d="M-3,-4 L3,4 M3,-4 L-3,4" stroke="#3E2723" stroke-width="1.5"/>
+      <circle cx="6" cy="-1" r="2" fill="#3E2723"/>
+      <path d="M-2,-5 C-6,-10 -2,-12 0,-8" fill="none" stroke="#FFF" stroke-width="1.5" opacity="0.7"/>
+    </g>
+
+    <!-- Hornet 2 -->
+    <g transform="translate(155, 70) rotate(25)">
+      <ellipse cx="0" cy="0" rx="6" ry="4" fill="#FFC107"/>
+      <path d="M-3,-4 L3,4 M3,-4 L-3,4" stroke="#3E2723" stroke-width="1.5"/>
+      <circle cx="-6" cy="-1" r="2" fill="#3E2723"/>
+      <path d="M2,-5 C6,-10 2,-12 0,-8" fill="none" stroke="#FFF" stroke-width="1.5" opacity="0.7"/>
+    </g>
+
+    <!-- Hornet 3 (Close to stick) -->
+    <g transform="translate(100, 100) rotate(-45)">
+      <ellipse cx="0" cy="0" rx="5" ry="3" fill="#FFC107"/>
+      <path d="M-2,-3 L2,3" stroke="#3E2723" stroke-width="1.5"/>
+      <circle cx="5" cy="0" r="1.5" fill="#3E2723"/>
+    </g>
+
+    <!-- Person / Character triggering the trouble (Bottom Center) -->
+    <g transform="translate(120, 165)">
+      <!-- Shoulders / Body -->
+      <path d="M-30,45 C-30,25 -15,20 0,20 C15,20 30,25 30,45 Z" fill="#37474F"/>
+      
+      <!-- Head -->
+      <circle cx="0" cy="-5" r="18" fill="#FFCCBC"/>
+      
+      <!-- Surprised / Reactive face expression (Eyes wide, open mouth) -->
+      <circle cx="-6" cy="-7" r="2.5" fill="#263238"/>
+      <circle cx="6" cy="-7" r="2.5" fill="#263238"/>
+      <ellipse cx="0" cy="3" rx="3.5" ry="5" fill="#263238"/>
+      
+      <!-- Hair -->
+      <path d="M-18,-12 C-15,-22 15,-22 18,-12 C12,-15 -12,-15 -18,-12 Z" fill="#546E7A"/>
+
+      <!-- Arms and Stick provoking the hive -->
+      <!-- Right arm reaching up with a stick -->
+      <path d="M18,30 C30,10 40,-10 45,-35" stroke="#FFCCBC" stroke-width="7" stroke-linecap="round" fill="none"/>
+      <!-- The poking stick -->
+      <line x1="45" y1="-35" x2="25" y2="-12" stroke="#8D6E63" stroke-width="4" stroke-linecap="round"/>
+      
+      <!-- Left arm reacting in panic/surprise -->
+      <path d="M-18,35 C-35,25 -25,5 -30,0" stroke="#FFCCBC" stroke-width="7" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- Accent Sparks / Trouble Indicators -->
+    <path d="M70,50 L76,58 M76,50 L70,58" stroke="#FF5722" stroke-width="2" stroke-linecap="round"/>
+    <path d="M165,45 L173,53 M173,45 L165,53" stroke="#FF5722" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

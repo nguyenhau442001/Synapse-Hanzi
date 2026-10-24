@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow/ambience to give depth to dark mode -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.5"/>
+
+  <!-- Centered physical object representing "难处" (a knot/tangle or heavy burdened pathway) -->
+  <!-- We visualize a physical obstacle / knot symbolizing a dilemma or hard spot -->
+  
+  <g transform="translate(0, 5)">
+    <!-- Pathway or pedestal base -->
+    <path d="M 70 175 Q 120 185 170 175" fill="none" stroke="#3A4252" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Central tangled rope / knot structure representing 'difficult situation / dilemma' -->
+    <!-- Loop 1 -->
+    <path d="M 90 135 C 70 135 70 95 100 95 C 115 95 125 110 135 125" fill="none" stroke="#E67E22" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Loop 2 weaving through (creating the "knot" or "hard spot") -->
+    <path d="M 150 135 C 170 135 170 95 140 95 C 125 95 115 110 105 125" fill="none" stroke="#D35400" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Center tight knot intersection -->
+    <path d="M 100 115 C 110 125 130 125 140 115" fill="none" stroke="#F39C12" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Focal point: a tight pinch/knot indicator or tension spark -->
+    <circle cx="120" cy="110" r="5" fill="#FFFFFF"/>
+    
+    <!-- Supporting hands or brackets gently attempting to untangle/resolve -->
+    <!-- Left hand silhouette -->
+    <path d="M 55 145 C 55 135 65 130 75 140 L 85 155 C 90 160 85 170 75 170 C 65 170 55 160 55 145 Z" fill="#606F7B" opacity="0.9"/>
+    
+    <!-- Right hand silhouette -->
+    <path d="M 185 145 C 185 135 175 130 165 140 L 155 155 C 150 160 155 170 165 170 C 175 170 185 160 185 145 Z" fill="#606F7B" opacity="0.9"/>
+  </g>
+
+  <!-- Accent highlight dots representing thoughtful consideration -->
+  <circle cx="120" cy="55" r="3" fill="#E67E22" opacity="0.6"/>
+  <circle cx="95" cy="65" r="2" fill="#E67E22" opacity="0.4"/>
+  <circle cx="145" cy="65" r="2" fill="#E67E22" opacity="0.4"/>
+</svg>

@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Central Concept: A stylized collection box/receptacle for design submissions -->
+  <!-- The box represents the 'gathering' of creative proposals -->
+  <g transform="translate(60, 80)">
+    <!-- Main Box Body -->
+    <path d="M10 20 L110 20 L100 90 L20 90 Z" fill="#2D343E" stroke="#FFB84D" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Slot -->
+    <rect x="35" y="25" width="50" height="8" rx="4" fill="#FFB84D"/>
+    
+    <!-- Representing the 'Design' aspect: A stylized paper document entering the box -->
+    <path d="M70 10 L100 10 L90 30 L60 30 Z" fill="#FFFFFF" opacity="0.9"/>
+    <path d="M75 15 L95 15 M75 20 L90 20" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Representing the 'Public/Mass' aspect: Multiple stylized paper icons floating towards the slot -->
+    <rect x="10" y="5" width="20" height="15" rx="2" fill="#FFB84D" opacity="0.6"/>
+    <rect x="110" y="5" width="20" height="15" rx="2" fill="#FFB84D" opacity="0.6"/>
+    <rect x="120" y="35" width="20" height="15" rx="2" fill="#FFB84D" opacity="0.4"/>
+  </g>
+  
+  <!-- Decorative accent lines to imply movement/gathering -->
+  <path d="M40 60 Q 60 40 80 40" stroke="#FFB84D" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+  <path d="M100 60 Q 120 40 140 40" stroke="#FFB84D" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+</svg>

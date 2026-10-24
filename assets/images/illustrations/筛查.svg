@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Medical Sieve/Filter Concept -->
+  <!-- Main body of the sieve -->
+  <circle cx="120" cy="120" r="70" fill="none" stroke="#FFB84D" stroke-width="6" stroke-dasharray="12 12"/>
+  
+  <!-- Mesh grid inside -->
+  <path d="M70 120 H170 M120 70 V170 M85 85 L155 155 M155 85 L85 155" stroke="#4A5568" stroke-width="2"/>
+  
+  <!-- Particles being filtered -->
+  <circle cx="120" cy="90" r="6" fill="#FFB84D"/>
+  <circle cx="145" cy="105" r="4" fill="#FFB84D"/>
+  <circle cx="95" cy="105" r="4" fill="#FFB84D"/>
+  
+  <!-- Particles passing through (filtered out) -->
+  <circle cx="120" cy="150" r="8" fill="#E2E8F0" opacity="0.6"/>
+  <circle cx="105" cy="165" r="5" fill="#E2E8F0" opacity="0.4"/>
+  <circle cx="135" cy="165" r="5" fill="#E2E8F0" opacity="0.4"/>
+  
+  <!-- Magnifying glass focus -->
+  <circle cx="160" cy="160" r="20" fill="none" stroke="#FFB84D" stroke-width="4"/>
+  <line x1="174" y1="174" x2="195" y2="195" stroke="#FFB84D" stroke-width="6" stroke-linecap="round"/>
+</svg>

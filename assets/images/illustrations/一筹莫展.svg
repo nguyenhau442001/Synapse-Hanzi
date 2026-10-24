@@ -1,0 +1,47 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Desk surface / Technical workspace background -->
+  <path d="M40 180 L200 180" stroke="#2A2F3A" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Broken technical device/monitor frame -->
+  <rect x="70" y="80" width="100" height="70" rx="6" fill="none" stroke="#3A4252" stroke-width="4"/>
+  <line x1="110" y1="150" x2="130" y2="150" stroke="#3A4252" stroke-width="4" stroke-linecap="round"/>
+  <line x1="120" y1="150" x2="120" y2="180" stroke="#3A4252" stroke-width="4"/>
+  <line x1="100" y1="180" x2="140" y2="180" stroke="#3A4252" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Glitch / Error lines on monitor -->
+  <line x1="85" y1="100" x2="125" y2="100" stroke="#F6465D" stroke-width="3" stroke-linecap="round"/>
+  <line x1="95" y1="115" x2="155" y2="115" stroke="#F6465D" stroke-width="3" stroke-linecap="round"/>
+  <line x1="85" y1="130" x2="115" y2="130" stroke="#F6465D" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Warning spark / gear breakdown indicator -->
+  <path d="M120 55 L125 65 L135 67 L128 75 L130 85 L120 80 L110 85 L112 75 L105 67 L115 65 Z" fill="#F0B90B" opacity="0.8"/>
+  
+  <!-- Frustrated Engineer / Character (Bó tay hết cách) -->
+  <!-- Body / Torso -->
+  <path d="M90 180 L90 145 C90 135 105 130 120 130 C135 130 150 135 150 145 L150 180 Z" fill="#2E65F3"/>
+  
+  <!-- Head -->
+  <circle cx="120" cy="110" r="16" fill="#FFD1A9"/>
+  
+  <!-- Hair -->
+  <path d="M104 108 C104 95 112 92 120 92 C128 92 136 95 136 108 C132 104 126 103 120 103 C114 103 108 104 104 108 Z" fill="#22252A"/>
+
+  <!-- Hands on head / helpless gesture (一筹莫展 pose) -->
+  <circle cx="103" cy="118" r="6" fill="#FFD1A9"/>
+  <circle cx="137" cy="118" r="6" fill="#FFD1A9"/>
+  <path d="M107 124 C100 125 96 118 99 113" stroke="#FFD1A9" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M133 124 C140 125 144 118 141 113" stroke="#FFD1A9" stroke-width="5" stroke-linecap="round" fill="none"/>
+  
+  <!-- Bent arms -->
+  <path d="M98 135 C90 130 95 118 103 118" fill="none" stroke="#2E65F3" stroke-width="6" stroke-linecap="round"/>
+  <path d="M142 135 C150 130 145 118 137 118" fill="none" stroke="#2E65F3" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Question marks floating (representing lack of ideas / không nghĩ ra được kế sách) -->
+  <path d="M72 65 C72 57 82 55 85 62 C88 68 78 72 78 78" fill="none" stroke="#F0B90B" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="78" cy="88" r="2" fill="#F0B90B"/>
+  
+  <path d="M168 65 C168 57 178 55 181 62 C184 68 174 72 174 78" fill="none" stroke="#F0B90B" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="174" cy="88" r="2" fill="#F0B90B"/>
+</svg>

@@ -1,0 +1,67 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle glowing radar rings to reinforce multidirectional space -->
+  <circle cx="120" cy="120" r="85" fill="none" stroke="#2D3748" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6"/>
+  <circle cx="120" cy="120" r="55" fill="none" stroke="#2D3748" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Omnidirectional Connection Lines & Orbit Nodes -->
+  <!-- Top -->
+  <line x1="120" y1="120" x2="120" y2="45" stroke="#F59E0B" stroke-width="2" opacity="0.4"/>
+  <circle cx="120" cy="45" r="7" fill="#F59E0B"/>
+
+  <!-- Bottom -->
+  <line x1="120" y1="120" x2="120" y2="195" stroke="#F59E0B" stroke-width="2" opacity="0.4"/>
+  <circle cx="120" cy="195" r="7" fill="#3B82F6"/>
+
+  <!-- Left -->
+  <line x1="120" y1="120" x2="45" y2="120" stroke="#F59E0B" stroke-width="2" opacity="0.4"/>
+  <circle cx="45" cy="120" r="7" fill="#10B981"/>
+
+  <!-- Right -->
+  <line x1="120" y1="120" x2="195" y2="120" stroke="#F59E0B" stroke-width="2" opacity="0.4"/>
+  <circle cx="195" cy="120" r="7" fill="#8B5CF6"/>
+
+  <!-- Diagonal Top-Left -->
+  <line x1="120" y1="120" x2="67" y2="67" stroke="#F59E0B" stroke-width="2" opacity="0.4"/>
+  <circle cx="67" cy="67" r="5" fill="#F59E0B" opacity="0.8"/>
+
+  <!-- Diagonal Top-Right -->
+  <line x1="120" y1="120" x2="173" y2="67" stroke="#F59E0B" stroke-width="2" opacity="0.4"/>
+  <circle cx="173" cy="67" r="5" fill="#F59E0B" opacity="0.8"/>
+
+  <!-- Diagonal Bottom-Left -->
+  <line x1="120" y1="120" x2="67" y2="173" stroke="#F59E0B" stroke-width="2" opacity="0.4"/>
+  <circle cx="67" cy="173" r="5" fill="#F59E0B" opacity="0.8"/>
+
+  <!-- Diagonal Bottom-Right -->
+  <line x1="120" y1="120" x2="173" y2="173" stroke="#F59E0B" stroke-width="2" opacity="0.4"/>
+  <circle cx="173" cy="173" r="5" fill="#F59E0B" opacity="0.8"/>
+
+  <!-- Central Physical Object: Modern Spherical Satellite / Globe Hub representing the core entity covered from all directions -->
+  <!-- Outer metallic ring -->
+  <circle cx="120" cy="120" r="32" fill="none" stroke="#64748B" stroke-width="3"/>
+  
+  <!-- Core sphere -->
+  <circle cx="120" cy="120" r="26" fill="#0F172A"/>
+  <circle cx="120" cy="120" r="26" fill="url(#sphereGradient)" opacity="0.8"/>
+
+  <!-- Globe meridians / parallels detail -->
+  <path d="M 94 120 Q 120 100 146 120" fill="none" stroke="#38BDF8" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 94 120 Q 120 140 146 120" fill="none" stroke="#38BDF8" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 120 94 Q 100 120 120 146" fill="none" stroke="#38BDF8" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 120 94 Q 140 120 120 146" fill="none" stroke="#38BDF8" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Center Core Pulsar -->
+  <circle cx="120" cy="120" r="8" fill="#F59E0B"/>
+  <circle cx="120" cy="120" r="3" fill="#FFFFFF"/>
+
+  <!-- Gradient definitions -->
+  <defs>
+    <radialGradient id="sphereGradient" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </radialGradient>
+  </defs>
+</svg>

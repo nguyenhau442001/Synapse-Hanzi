@@ -1,0 +1,71 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Running Track / Competition Arena Context -->
+  <g transform="translate(0, 10)">
+    <!-- Track surface -->
+    <path d="M 30,170 L 210,170 L 190,130 L 50,130 Z" fill="#252A34"/>
+    <path d="M 40,190 L 200,190 L 210,170 L 30,170 Z" fill="#1E232D"/>
+    
+    <!-- Track Lane Markings -->
+    <line x1="75" y1="130" x2="65" y2="170" stroke="#3E4553" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <line x1="120" y1="130" x2="105" y2="170" stroke="#3E4553" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <line x1="165" y1="130" x2="145" y2="170" stroke="#3E4553" stroke-width="1.5" stroke-dasharray="4,4"/>
+    
+    <!-- Finish Line Tape / Ribbon (Intense competition moment) -->
+    <path d="M 25,100 C 60,95 180,105 215,95" fill="none" stroke="#F6C90E" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 25,97 C 60,92 180,102 215,92" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+  </g>
+
+  <!-- Speed lines / Motion effects -->
+  <g opacity="0.4">
+    <line x1="30" y1="70" x2="70" y2="70" stroke="#F6C90E" stroke-width="2" stroke-linecap="round"/>
+    <line x1="20" y1="90" x2="50" y2="90" stroke="#00E5FF" stroke-width="2" stroke-linecap="round"/>
+    <line x1="170" y1="65" x2="210" y2="65" stroke="#F6C90E" stroke-width="2" stroke-linecap="round"/>
+    <line x1="180" y1="85" x2="220" y2="85" stroke="#00E5FF" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Competitor 1 (Left Runner - Cyan/Blue theme) -->
+  <g transform="translate(65, 75)">
+    <!-- Motion blur/trail -->
+    <path d="M -15,45 L 0,30 L -10,70 Z" fill="#00E5FF" opacity="0.2"/>
+    <!-- Head & Helmet -->
+    <circle cx="10" cy="15" r="8" fill="#00E5FF"/>
+    <path d="M 4,12 C 4,12 8,16 16,12" fill="none" stroke="#1A1D24" stroke-width="2"/>
+    <!-- Torso (Leaning forward aggressively) -->
+    <path d="M 5,22 C 2,35 -5,50 -12,60 L 8,65 L 18,40 Z" fill="#00E5FF"/>
+    <circle cx="12" cy="35" r="4" fill="#1A1D24"/>
+    <!-- Arms in sprint motion -->
+    <path d="M 12,25 L 25,15 L 32,25" fill="none" stroke="#00E5FF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 2,40 L -8,55 L -2,62" fill="none" stroke="#00E5FF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Legs in powerful stride -->
+    <path d="M -10,55 L -25,70 L -15,85" fill="none" stroke="#00E5FF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M -8,58 L 10,75 L 20,68" fill="none" stroke="#00E5FF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Competitor 2 (Right Runner - Gold/Orange theme - Neck-and-neck clash) -->
+  <g transform="translate(135, 70)">
+    <!-- Motion blur/trail -->
+    <path d="M 25,45 L 10,30 L 20,70 Z" fill="#F6C90E" opacity="0.2"/>
+    <!-- Head & Helmet -->
+    <circle cx="0" cy="15" r="8" fill="#F6C90E"/>
+    <path d="M -6,12 C -6,12 -2,16 6,12" fill="none" stroke="#1A1D24" stroke-width="2"/>
+    <!-- Torso (Intense lean) -->
+    <path d="M -2,22 C 1,35 8,50 15,60 L -5,65 L -15,40 Z" fill="#F6C90E"/>
+    <circle cx="-8" cy="35" r="4" fill="#1A1D24"/>
+    <!-- Arms in sprint motion -->
+    <path d="M -8,25 L -22,18 L -30,28" fill="none" stroke="#F6C90E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 2,40 L 15,50 L 10,60" fill="none" stroke="#F6C90E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Legs in powerful stride -->
+    <path d="M 10,55 L 28,68 L 20,85" fill="none" stroke="#F6C90E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 8,58 L -8,78 L -18,72" fill="none" stroke="#F6C90E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Central Clash / Energy Spark (Visualizing intense competition point) -->
+  <g transform="translate(110, 95)">
+    <circle cx="0" cy="0" r="16" fill="#F6C90E" opacity="0.15"/>
+    <path d="M-8,-8 L8,8 M-8,8 L8,-8" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="4" fill="#FFFFFF"/>
+  </g>
+</svg>

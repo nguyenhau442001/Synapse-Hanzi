@@ -1,0 +1,33 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Architecture (State Guest House style) -->
+  <path d="M40 180 L200 180 L200 120 L40 120 Z" fill="#2C313C"/>
+  <path d="M60 120 L60 80 L80 80 L80 120 Z" fill="#3D4454"/>
+  <path d="M160 120 L160 80 L180 80 L180 120 Z" fill="#3D4454"/>
+  <path d="M40 80 L200 80 L120 50 Z" fill="#3D4454"/>
+  
+  <!-- Motion Lines for Arrival -->
+  <path d="M20 150 Q50 140 80 150" stroke="#FFB84D" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
+  <path d="M10 165 Q40 155 70 165" stroke="#FFB84D" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
+  
+  <!-- Character 1: Host (Standing) -->
+  <g transform="translate(140, 130)">
+    <circle cx="10" cy="15" r="8" fill="#FFD180"/>
+    <path d="M2 25 L18 25 L15 55 L5 55 Z" fill="#FFD180"/>
+    <path d="M15 25 L25 40" stroke="#FFD180" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Character 2: Visitor (Arriving/Walking) -->
+  <g transform="translate(60, 130)">
+    <circle cx="10" cy="15" r="8" fill="#4DB6AC"/>
+    <path d="M2 25 L18 25 L15 55 L5 55 Z" fill="#4DB6AC"/>
+    <path d="M15 25 L25 40" stroke="#4DB6AC" stroke-width="4" stroke-linecap="round"/>
+    <path d="M5 55 L0 70" stroke="#4DB6AC" stroke-width="4" stroke-linecap="round"/>
+    <path d="M15 55 L20 70" stroke="#4DB6AC" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Interaction: Handshake (Polite Greeting) -->
+  <circle cx="110" cy="165" r="6" fill="#FFD180"/>
+  <circle cx="120" cy="165" r="6" fill="#4DB6AC"/>
+</svg>

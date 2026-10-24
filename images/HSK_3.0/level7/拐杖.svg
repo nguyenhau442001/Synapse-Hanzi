@@ -1,0 +1,38 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle floor shadow and grounding -->
+  <ellipse cx="120" cy="205" rx="45" ry="8" fill="#111318" opacity="0.8"/>
+
+  <!-- Wooden Cane (拐杖) - Centered iconic physical object -->
+  <g>
+    <!-- Main shaft with gentle natural curve -->
+    <path d="M102 45 C102 36, 114 36, 120 36 C138 36, 144 48, 144 60 L132 195 C131.5 200, 127 202, 122 201 C117 200, 115 196, 115.5 192 Z" fill="#C68A59"/>
+    
+    <!-- Wood texture grain details -->
+    <path d="M124 55 L130 140" stroke="#A86F42" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M120 70 L126 170" stroke="#A86F42" stroke-width="1" stroke-linecap="round" opacity="0.4"/>
+    <path d="M128 48 L138 90" stroke="#A86F42" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Curved handle highlight -->
+    <path d="M106 41 C108 38, 115 39, 120 39 C133 39, 139 46, 140 55" stroke="#E2A97B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Handle ergonomic grip wrap (leather/cloth tape detail) -->
+    <rect x="100" y="55" width="22" height="6" rx="2" fill="#E5B28C" transform="rotate(-15 111 58)"/>
+    <rect x="104" y="63" width="20" height="5" rx="2" fill="#E5B28C" transform="rotate(-10 114 65)"/>
+
+    <!-- Metal ferrule / collar at the top of the shaft -->
+    <rect x="127" y="62" width="16" height="5" rx="1" fill="#7A8B9E"/>
+    <rect x="129" y="63.5" width="12" height="2" fill="#A4B3C6"/>
+
+    <!-- Rubber tip at the bottom (anti-slip base) -->
+    <path d="M115 192 L132 195 C132 198, 130.5 201, 122 201 C113.5 201, 114 195, 115 192 Z" fill="#3E4551"/>
+    <!-- Rubber tip grooves -->
+    <line x1="117" y1="195" x2="130" y2="197" stroke="#2B303B" stroke-width="1.5"/>
+    <line x1="116" y1="198" x2="128" y2="200" stroke="#2B303B" stroke-width="1.5"/>
+  </g>
+
+  <!-- Focused decorative accent ring/glow behind the object -->
+  <circle cx="120" cy="120" r="85" fill="none" stroke="#E2A97B" stroke-width="1.5" stroke-dasharray="6 8" opacity="0.25"/>
+</svg>

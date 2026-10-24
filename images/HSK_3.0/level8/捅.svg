@@ -1,0 +1,62 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements (Garden hint & branch) -->
+  <path d="M40 70 Q 100 60 160 85 T 220 75" fill="none" stroke="#2D323E" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Tree Branch & Foliage -->
+  <path d="M120 75 L 210 50" fill="none" stroke="#5A4A42" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="195" cy="45" r="22" fill="#2E4033"/>
+  <circle cx="215" cy="55" r="16" fill="#233227"/>
+
+  <!-- Falling Wasps / Insects -->
+  <g fill="#F59E0B">
+    <ellipse cx="140" cy="110" rx="4" ry="25" transform="rotate(-30 140 110)"/>
+    <ellipse cx="105" cy="140" rx="3" ry="20" transform="rotate(45 105 140)"/>
+    <circle cx="125" cy="100" r="2" fill="#FFFFFF"/>
+    <circle cx="95" cy="125" r="2" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Hornets Nest (The Object being "tǒng" - poked/fallen) -->
+  <g transform="translate(160, 85)">
+    <!-- Motion lines of falling -->
+    <path d="M -15 15 L -25 30" stroke="#F59E0B" stroke-width="2" stroke-dasharray="3,3" stroke-linecap="round"/>
+    <path d="M 0 20 L -5 35" stroke="#F59E0B" stroke-width="2" stroke-dasharray="3,3" stroke-linecap="round"/>
+    
+    <!-- The Nest itself -->
+    <ellipse cx="0" cy="0" rx="18" ry="22" fill="#D97706"/>
+    <ellipse cx="0" cy="-2" rx="14" ry="17" fill="#F59E0B"/>
+    <!-- Nest texture layers -->
+    <path d="M -12 -10 Q 0 -5 12 -10" fill="none" stroke="#B45309" stroke-width="2" stroke-linecap="round"/>
+    <path d="M -15 0 Q 0 6 15 0" fill="none" stroke="#B45309" stroke-width="2" stroke-linecap="round"/>
+    <path d="M -12 10 Q 0 15 12 10" fill="none" stroke="#B45309" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- The Poking Tool / Bamboo Pole (Representing the action instrument of "捅") -->
+  <g transform="rotate(-25 80 180)">
+    <rect x="20" y="175" width="160" height="8" rx="4" fill="#A87948"/>
+    <!-- Bamboo segments -->
+    <line x1="50" y1="175" x2="50" y2="183" stroke="#875E37" stroke-width="2"/>
+    <line x1="90" y1="175" x2="90" y2="183" stroke="#875E37" stroke-width="2"/>
+    <line x1="130" y1="175" x2="130" y2="183" stroke="#875E37" stroke-width="2"/>
+    <line x1="170" y1="175" x2="170" y2="183" stroke="#875E37" stroke-width="2"/>
+    <!-- Pole tip -->
+    <path d="M 180 175 L 186 179 L 180 183 Z" fill="#6B4423"/>
+  </g>
+
+  <!-- Action / Thrust Impact Highlight (Focus on the physical stabbing/poking motion) -->
+  <g transform="translate(142, 95)">
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#EF4444" stroke-width="2.5" opacity="0.8"/>
+    <path d="M -16 0 L -8 0" stroke="#EF4444" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 0 -16 L 0 -8" stroke="#EF4444" stroke-width="2" stroke-linecap="round"/>
+    <path d="M -11 -11 L -5 -5" stroke="#EF4444" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Character Hands holding the pole (Stylized flat representation) -->
+  <circle cx="70" cy="195" r="10" fill="#3B82F6"/>
+  <circle cx="110" cy="177" r="9" fill="#3B82F6"/>
+
+  <!-- Sleek focus frame / visual anchor -->
+  <rect x="20" y="20" width="200" height="200" rx="16" fill="none" stroke="#323846" stroke-width="2"/>
+</svg>

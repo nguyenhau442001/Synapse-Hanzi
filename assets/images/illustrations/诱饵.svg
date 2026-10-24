@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Fishing Hook and Bait Concept -->
+  <g transform="translate(120, 120)">
+    <!-- Fishing Line -->
+    <path d="M0 -80 L0 0" stroke="#5D6D7E" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Fishing Hook -->
+    <path d="M0 0 C 0 40, 40 40, 40 10" fill="none" stroke="#BDC3C7" stroke-width="6" stroke-linecap="round"/>
+    <path d="M40 10 L40 0" stroke="#BDC3C7" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- The Bait (Gold Coin representing the 'high return' lure) -->
+    <circle cx="0" cy="0" r="22" fill="#F39C12" stroke="#D35400" stroke-width="4"/>
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#F1C40F" stroke-width="3"/>
+    
+    <!-- Shine effect on coin -->
+    <path d="M-8 -8 L8 8" stroke="#F1C40F" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

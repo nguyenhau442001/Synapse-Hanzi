@@ -1,0 +1,32 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glowing anchor / base line representing "依据" (basing on objective reality) -->
+  <line x1="48" y1="184" x2="192" y2="184" stroke="#2A303C" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Central Physical Object: A classic architectural pillar resting firmly on a solid foundation slab, representing "依" (relying on, leaning on, conforming to a solid base/standard) -->
+  
+  <!-- Foundation Slab / Objective Reality Base -->
+  <rect x="68" y="156" width="104" height="16" rx="3" fill="#2E384D"/>
+  <rect x="76" y="148" width="88" height="8" rx="2" fill="#3B465F"/>
+
+  <!-- Pillar Body (representing what leans/relies: 依) -->
+  <path d="M96 60 L144 60 L148 148 L92 148 Z" fill="#4C5C7A"/>
+  
+  <!-- Pillar Fluting / Details for Modern Flat Design -->
+  <line x1="108" y1="60" x2="108" y2="148" stroke="#3B465F" stroke-width="3"/>
+  <line x1="120" y1="60" x2="120" y2="148" stroke="#3B465F" stroke-width="3"/>
+  <line x1="132" y1="60" x2="132" y2="148" stroke="#3B465F" stroke-width="3"/>
+
+  <!-- Pillar Capital (Top) -->
+  <rect x="90" y="48" width="60" height="12" rx="2" fill="#64779A"/>
+  <rect x="86" y="40" width="68" height="8" rx="2" fill="#E6A15C"/>
+
+  <!-- Supporting Beam / Roof Structure resting securely on the pillar -->
+  <path d="M60 40 L180 40 L170 24 L70 24 Z" fill="#3B465F"/>
+  <rect x="64" y="20" width="112" height="6" rx="2" fill="#4C5C7A"/>
+
+  <!-- High-contrast focus accent: A bright warm golden beam symbolizing objective truth/standard aligning perfectly -->
+  <path d="M120 184 L120 40" stroke="#E6A15C" stroke-width="2" stroke-dasharray="4 4" opacity="0.6"/>
+  <circle cx="120" cy="148" r="5" fill="#E6A15C"/>
+</svg>

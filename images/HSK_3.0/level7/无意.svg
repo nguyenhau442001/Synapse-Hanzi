@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Abstract Causality / Contrast Metaphor for "Wúyì" (Unintentional/No intention) -->
+  <g transform="translate(0, 0)">
+    <!-- Pathway or scale tipping showing unintended consequence -->
+    <path d="M70 140 L120 110 L170 140" stroke="#3A4252" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <circle cx="120" cy="110" r="4" fill="#525E75"/>
+    
+    <!-- Left side: Intentional action/source -->
+    <circle cx="70" cy="140" r="16" fill="#2E384A"/>
+    <path d="M64 140 L76 140" stroke="#8A99AD" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Right side: Unintended outcome / shifted trajectory (Causality split) -->
+    <!-- Dashed unexpected deviation line -->
+    <path d="M120 110 Q 150 80, 185 85" stroke="#F59E0B" stroke-width="3" stroke-dasharray="4 4" fill="none"/>
+    <circle cx="185" cy="85" r="12" fill="#F59E0B" fill-opacity="0.2"/>
+    <circle cx="185" cy="85" r="5" fill="#F59E0B"/>
+
+    <!-- Main accidental ripple/spark effect indicating "unintentional" occurrence -->
+    <g transform="translate(120, 110)">
+      <circle cx="0" cy="0" r="28" stroke="#3A4252" stroke-width="2" stroke-dasharray="2 6" fill="none">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+      </circle>
+      <!-- Subtle crossed-out intention symbol integrated cleanly: a soft X floating neutrally -->
+      <path d="M-6 -6 L6 6 M6 -6 L-6 6" stroke="#EF4444" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+    </g>
+
+    <!-- Contextual Politeness / Respectful Interaction silhouette (representing "I had no intention of offending") -->
+    <!-- Minimalist stylized bowing / respectful gesture figures interacting without romantic tropes or text -->
+    <g transform="translate(0, 20)">
+      <!-- Person A (Speaker expressing unintentional action) -->
+      <circle cx="85" cy="135" r="8" fill="#8A99AD"/>
+      <path d="M77 165 C77 150, 93 150, 93 165" fill="#525E75"/>
+      <!-- Slight polite hand gesture -->
+      <circle cx="97" cy="148" r="3" fill="#8A99AD"/>
+
+      <!-- Directional polite vector flow -->
+      <path d="M105 138 Q 120 130, 135 138" stroke="#525E75" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+      <!-- Person B (Recipient receiving the polite reassurance) -->
+      <circle cx="155" cy="135" r="8" fill="#F3F4F6"/>
+      <path d="M147 165 C147 150, 163 150, 163 165" fill="#9CA3AF"/>
+    </g>
+  </g>
+</svg>

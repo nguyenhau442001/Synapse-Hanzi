@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle floor shadow/line -->
+  <line x1="60" y1="185" x2="180" y2="185" stroke="#2A2F3A" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Character 1 (Left) - Expressing deep gratitude/apology (slightly bowing, hands clasped, polite posture) -->
+  <g transform="translate(68, 95)">
+    <!-- Body/Torso -->
+    <path d="M-12 55 L12 55 L15 90 L-15 90 Z" fill="#2D3748"/>
+    <!-- Head -->
+    <circle cx="0" cy="22" r="13" fill="#E2E8F0"/>
+    <!-- Hair -->
+    <path d="M-13 20 C-13 12 -5 10 0 10 C5 10 13 12 13 20 C13 25 10 26 0 26 C-10 26 -13 25 -13 20 Z" fill="#4A5568"/>
+    <!-- Upper Body leaning forward respectfully -->
+    <path d="M-10 32 C-15 40 -12 50 -12 55 L12 55 C12 50 15 40 10 32 Z" fill="#3182CE"/>
+    <!-- Clasped hands near chest -->
+    <circle cx="0" cy="50" r="6" fill="#CBD5E0"/>
+  </g>
+
+  <!-- Character 2 (Right) - Receiving gratitude graciously (warm, reassuring open posture) -->
+  <g transform="translate(162, 95)">
+    <!-- Body/Torso -->
+    <path d="M-12 55 L12 55 L15 90 L-15 90 Z" fill="#4A5568"/>
+    <!-- Head -->
+    <circle cx="0" cy="22" r="13" fill="#EDF2F7"/>
+    <!-- Hair -->
+    <path d="M-13 20 C-13 12 -5 10 0 10 C5 10 13 12 13 20 C13 25 10 26 0 26 C-10 26 -13 25 -13 20 Z" fill="#2D3748"/>
+    <!-- Upper Body -->
+    <path d="M-12 32 L12 32 L12 55 L-12 55 Z" fill="#DD6B20"/>
+    <!-- Reassuring open hand gesture -->
+    <circle cx="-14" cy="52" r="5" fill="#CBD5E0"/>
+  </g>
+
+  <!-- Symbolic Inner Emotional Tension / Acknowledgment (Guilt/Embarrassment represented by a soft, warm amber glow and modest tilt lines) -->
+  <g transform="translate(120, 75)">
+    <!-- Subtle overlapping warm aura waves indicating internal psychological weight/awkwardness -->
+    <path d="M-15 -10 C-5 -20 5 -20 15 -10" fill="none" stroke="#D69E2E" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+    <path d="M-22 -3 C-8 -15 8 -15 22 -3" fill="none" stroke="#D69E2E" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  </g>
+</svg>

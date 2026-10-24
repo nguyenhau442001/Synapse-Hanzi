@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for focus -->
+  <circle cx="120" cy="125" r="70" fill="#FF8800" opacity="0.08"/>
+  
+  <!-- Fuel Pump / Dispenser Nozzle System representing "燃油" (Fuel/Oil) -->
+  <g transform="translate(0, 5)">
+    <!-- Fuel Pump Body -->
+    <rect x="75" y="70" width="55" height="100" rx="8" fill="#2A313C"/>
+    <!-- Pump Screen/Display Panel -->
+    <rect x="85" y="85" width="35" height="25" rx="4" fill="#1A1D24"/>
+    <rect x="91" y="93" width="23" height="4" rx="2" fill="#FF8800"/>
+    <rect x="91" y="101" width="15" height="4" rx="2" fill="#3E4C60"/>
+    
+    <!-- Hose (Connecting body to nozzle) -->
+    <path d="M 75 130 C 50 130, 45 95, 65 80 C 72 75, 78 80, 75 88" fill="none" stroke="#FF8800" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Nozzle Handle and Spout -->
+    <g transform="translate(35, 65)">
+      <!-- Handle Guard -->
+      <path d="M 25 30 L 45 30 C 50 30, 55 35, 55 42 L 55 52 C 55 58, 50 63, 45 63 L 28 63" fill="none" stroke="#6C7A9C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Trigger -->
+      <path d="M 38 40 L 42 53" stroke="#FF8800" stroke-width="4" stroke-linecap="round"/>
+      <!-- Main Body/Grip -->
+      <rect x="23" y="25" width="12" height="40" rx="4" fill="#6C7A9C" transform="rotate(-15 23 25)"/>
+      <!-- Spout/Nozzle Tip -->
+      <path d="M 23 30 L 10 20 C 6 17, 8 12, 12 14 L 20 23" fill="#A6B4CD" stroke="#A6B4CD" stroke-width="2" stroke-linejoin="round"/>
+      <!-- Drop of fuel falling -->
+      <path d="M 10 32 C 10 32, 6 38, 6 41 C 6 43.2, 7.8 45, 10 45 C 12.2 45, 14 43.2, 14 41 C 14 38, 10 32, 10 32 Z" fill="#FF8800"/>
+    </g>
+    
+    <!-- Drop of fuel splashing/flowing below nozzle -->
+    <g transform="translate(10, 115)">
+      <path d="M 12 15 C 12 15, 6 23, 6 27 C 6 30.3, 8.7 33, 12 33 C 15.3 33, 18 30.3, 18 27 C 18 23, 12 15, 12 15 Z" fill="#FF8800"/>
+      <!-- Tiny ripple lines -->
+      <path d="M 5 39 Q 12 43 19 39" fill="none" stroke="#FF8800" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    </g>
+  </g>
+</svg>

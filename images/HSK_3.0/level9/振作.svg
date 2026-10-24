@@ -1,0 +1,41 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Floor shadow / ground line -->
+    <ellipse cx="120" cy="205" rx="55" ry="8" fill="#121418"/>
+    
+    <!-- Rising upward energy trail (subtle upward motion lines) -->
+    <path d="M95 160 C 95 130, 85 110, 80 85" stroke="#3A4454" stroke-width="2" stroke-linecap="round" fill="none" stroke-dasharray="4 4"/>
+    <path d="M145 160 C 145 130, 155 110, 160 85" stroke="#3A4454" stroke-width="2" stroke-linecap="round" fill="none" stroke-dasharray="4 4"/>
+
+    <!-- Dynamic upward arrows / momentum indicators -->
+    <path d="M120 100 L120 60 M120 60 L110 70 M120 60 L130 70" stroke="#FF9F43" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M95 115 L95 85 M95 85 L88 92 M95 85 L102 92" stroke="#FF9F43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.6"/>
+    <path d="M145 115 L145 85 M145 85 L138 92 M145 85 L152 92" stroke="#FF9F43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.6"/>
+
+    <!-- Character rising up (Physical representation of "vực dậy tinh thần" / bouncing back) -->
+    <!-- Body / Torso leaning up dynamically -->
+    <path d="M100 185 C 95 160, 105 130, 120 115 C 135 130, 145 160, 140 185 Z" fill="#3B82F6"/>
+    
+    <!-- Head lifting up -->
+    <circle cx="120" cy="98" r="16" fill="#FBBF24"/>
+    <path d="M108 92 C 110 86, 130 86, 132 92 Z" fill="#4B5563"/> <!-- Hair -->
+
+    <!-- Arms pushing up energetically -->
+    <path d="M105 140 L78 120 M78 120 L72 128" stroke="#3B82F6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M135 140 L162 120 M162 120 L168 128" stroke="#3B82F6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Hands -->
+    <circle cx="72" cy="128" r="5" fill="#FBBF24"/>
+    <circle cx="168" cy="128" r="5" fill="#FBBF24"/>
+
+    <!-- Legs planted firmly -->
+    <path d="M106 182 L90 202 M90 202 L102 204" stroke="#1E40AF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M134 182 L150 202 M150 202 L138 204" stroke="#1E40AF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Core glow representing inner strength / spirit revived -->
+    <circle cx="120" cy="135" r="12" fill="#FF9F43" opacity="0.4"/>
+    <circle cx="120" cy="135" r="6" fill="#FF9F43"/>
+  </g>
+</svg>

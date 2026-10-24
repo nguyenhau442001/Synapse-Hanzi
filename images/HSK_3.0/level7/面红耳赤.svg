@@ -1,0 +1,78 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Academic Seminar Setting (Abstracted) -->
+  <path d="M40 180L200 180" stroke="#2A2F3B" stroke-width="2" stroke-linecap="round"/>
+  <path d="M70 180L70 140" stroke="#2A2F3B" stroke-width="2"/>
+  <path d="M170 180L170 140" stroke="#2A2F3B" stroke-width="2"/>
+
+  <!-- Left Debater (Calm/Reasoned Contrast to exaggerate the right) -->
+  <g transform="translate(65, 95)">
+    <!-- Body -->
+    <path d="M -15 65 L 15 65 L 20 85 L -20 85 Z" fill="#2E3544"/>
+    <!-- Head -->
+    <circle cx="0" cy="20" r="18" fill="#D4A373"/>
+    <!-- Hair -->
+    <path d="M -16 15 C -15 5, -5 2, 0 2 C 5 2, 15 5, 16 15 C 16 10, 10 0, 0 0 C -10 0, -16 10, -16 15 Z" fill="#2C3E50"/>
+    <!-- Glasses & expression -->
+    <rect x="-8" y="15" width="16" height="6" rx="2" fill="none" stroke="#1A1D24" stroke-width="1.5"/>
+    <path d="M -3 30 Q 0 33 3 30" stroke="#8D5B4C" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <!-- Raised Hand / Argument gesture -->
+    <path d="M 15 40 Q 25 35 28 25" stroke="#D4A373" stroke-width="5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Right Debater (Focal Point: Miànhóng-ěrsè / 面红耳赤 - Red Face & Ears) -->
+  <g transform="translate(160, 90)">
+    <!-- Body / Leaning forward aggressively -->
+    <path d="M -20 70 L 25 70 L 30 90 L -25 90 Z" fill="#3B2E2E" transform="rotate(-5)"/>
+    
+    <!-- Neck -->
+    <path d="M -5 45 L 5 45 L 6 60 L -6 60 Z" fill="#FF7B72"/> <!-- Reddened neck -->
+
+    <!-- Head (Enlarged expression of tension) -->
+    <g transform="translate(0, 10)">
+      <!-- Red Face & Ears (The Core Semantic Meaning) -->
+      <circle cx="0" cy="15" r="22" fill="#FF5252"/> <!-- Deep glowing flush/blush -->
+      
+      <!-- Ears (Bright Red) -->
+      <circle cx="-22" cy="12" r="7" fill="#FF5252"/>
+      <circle cx="22" cy="12" r="7" fill="#FF5252"/>
+
+      <!-- Facial Features - Intense Argument -->
+      <!-- Eyebrows angled aggressively -->
+      <path d="M -12 5 L -2 10" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M 12 5 L 2 10" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round"/>
+
+      <!-- Eyes (Determined/Fierce slits) -->
+      <circle cx="-7" cy="12" r="2" fill="#1A1D24"/>
+      <circle cx="7" cy="12" r="2" fill="#1A1D24"/>
+
+      <!-- Mouth (Opened wide in heated speech) -->
+      <path d="M -8 22 Q 0 32 8 22 Z" fill="#1A1D24"/>
+      <path d="M -6 22 Q 0 25 6 22" fill="#FFF"/>
+
+      <!-- Hair -->
+      <path d="M -20 5 C -18 -8, -8 -12, 0 -12 C 8 -12, 18 -8, 20 5 C 15 -2, 5 -5, 0 -5 C -5 -5, -15 -2, -20 5 Z" fill="#2C3E50"/>
+    </g>
+
+    <!-- Dynamic Action Lines / Heat Emitting (High-contrast accent colors) -->
+    <path d="M 32 0 L 42 -5" stroke="#FFA726" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 35 15 L 47 15" stroke="#FFA726" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 30 30 L 42 35" stroke="#FFA726" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Fist slammed on table / emphasized gesture -->
+    <path d="M -15 65 Q -30 60 -25 45" stroke="#FF5252" stroke-width="6" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Central Academic Chart / Podium Element (Contextual Anchor) -->
+  <rect x="105" y="130" width="30" height="50" rx="4" fill="#2A2F3B"/>
+  <path d="M 112 142 L 128 142" stroke="#FFA726" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 112 152 L 124 152" stroke="#6C7A89" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 112 162 L 120 162" stroke="#6C7A89" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Heat/Intensity Sparks in the atmosphere -->
+  <circle cx="120" cy="70" r="2" fill="#FFA726"/>
+  <circle cx="105" cy="55" r="1.5" fill="#FF5252"/>
+  <circle cx="135" cy="60" r="2" fill="#FFA726"/>
+</svg>

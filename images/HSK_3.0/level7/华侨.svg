@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Globe representing the world/overseas -->
+  <circle cx="120" cy="120" r="70" fill="#2D343E" stroke="#3D4754" stroke-width="2"/>
+  <path d="M50 120 C 50 81.34 81.34 50 120 50 C 158.66 50 190 81.34 190 120 C 190 158.66 158.66 190 120 190 C 81.34 190 50 158.66 50 120 Z" fill="none" stroke="#3D4754" stroke-width="2"/>
+  <path d="M120 50 C 140 50 160 80 160 120 C 160 160 140 190 120 190 M120 50 C 100 50 80 80 80 120 C 80 160 100 190 120 190" fill="none" stroke="#3D4754" stroke-width="2"/>
+  
+  <!-- Stylized person (Overseas Chinese) -->
+  <g transform="translate(120, 120)">
+    <circle cx="0" cy="-30" r="12" fill="#FFB84D"/>
+    <path d="M-25 50 C -25 20, -10 10, 0 10 C 10 10, 25 20, 25 50 L 25 70 L -25 70 Z" fill="#FFB84D"/>
+    <path d="M-15 10 L -20 40 M 15 10 L 20 40" stroke="#FFB84D" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Directional indicator towards homeland -->
+  <path d="M120 100 L 120 60 M 110 70 L 120 60 L 130 70" fill="none" stroke="#FFB84D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Homeland marker -->
+  <circle cx="120" cy="50" r="6" fill="#FFB84D"/>
+</svg>

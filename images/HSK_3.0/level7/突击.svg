@@ -1,0 +1,68 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle Dynamic Background Elements (Night Ops Vibe) -->
+  <path d="M0 0L240 120L0 240Z" fill="#1E232F" opacity="0.4"/>
+  
+  <!-- Speed Lines / Lightning Flash Indicating Sudden Attack (迅雷) -->
+  <g opacity="0.3">
+    <path d="M20 60L100 80L40 100" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M180 140L120 160L200 180" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <line x1="160" y1="40" x2="110" y2="100" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="80" y1="200" x2="130" y2="140" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Central Action Object: The Elite Tactical Assault / Breaching Team (突击队员) -->
+  <!-- We center a dynamic, high-contrast, iconic tactical operator breaking forward -->
+  <g transform="translate(30, 20)">
+    <!-- Dynamic Motion Blur / Energy Trail -->
+    <path d="M40 110L15 115" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+    <path d="M50 130L20 140" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Operator Body & Tactical Gear (Dark Navy/Slate with High-Contrast Orange/Gold Accents) -->
+    <!-- Torso (Leaning forward aggressively for assault) -->
+    <path d="M65 85L95 105L85 135L55 115Z" fill="#293548"/>
+    
+    <!-- Tactical Vest & Armor Plate -->
+    <path d="M70 90L90 102L83 125L63 113Z" fill="#1E293B"/>
+    <rect x="73" y="98" width="12" height="15" rx="2" fill="#F59E0B" opacity="0.9"/> <!-- High-visibility tactical gear accent -->
+
+    <!-- Head / Helmet with Night Vision Goggles (NVG) mount -->
+    <circle cx="95" cy="72" r="14" fill="#334155"/>
+    <!-- Helmet -->
+    <path d="M82 72C82 63 90 58 100 58C108 58 112 65 110 74L82 72Z" fill="#1E293B"/>
+    <!-- Night Vision / Optics Goggles -->
+    <rect x="103" y="66" width="10" height="7" rx="2" fill="#38BDF8"/>
+
+    <!-- Legs in dynamic running/breaching stance -->
+    <!-- Back Leg -->
+    <path d="M65 125L45 155L60 160L75 135" fill="#1E293B"/>
+    <circle cx="45" cy="155" r="5" fill="#0F172A"/> <!-- Boot -->
+
+    <!-- Front Leg -->
+    <path d="M80 130L105 150L115 138L95 120" fill="#334155"/>
+    <path d="M105 150L125 165L135 155L115 138" fill="#1E293B"/>
+    <ellipse cx="125" cy="165" rx="7" ry="4" fill="#0F172A"/> <!-- Boot -->
+
+    <!-- Arms & Assault Rifle (突击步枪 pointing forward decisively) -->
+    <!-- Back Arm -->
+    <path d="M75 95L95 110L105 100" fill="none" stroke="#334155" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Front Arm & Weapon -->
+    <path d="M85 90L120 100" stroke="#334155" stroke-width="9" stroke-linecap="round"/>
+    
+    <!-- Assault Rifle Barrel and Body -->
+    <path d="M100 95L165 95" stroke="#0F172A" stroke-width="5" stroke-linecap="round"/>
+    <path d="M125 95L125 105" stroke="#334155" stroke-width="4"/> <!-- Magazine -->
+    <rect x="145" y="93" width="25" height="4" rx="2" fill="#F59E0B"/> <!-- Laser sight / tactical accent -->
+    
+    <!-- Muzzle Flash / Sudden Impact Spark (突击爆破闪光) -->
+    <polygon points="165,95 185,90 175,95 190,95 173,100 180,105 165,98" fill="#F59E0B"/>
+    <circle cx="170" cy="95" r="12" fill="#FBBF24" opacity="0.4"/>
+  </g>
+
+  <!-- Ground Line / Breach Point -->
+  <path d="M40 185L200 185" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+  <path d="M70 185L90 175L110 185" fill="#F59E0B" opacity="0.8"/> <!-- Debris / Breached barrier symbol -->
+</svg>

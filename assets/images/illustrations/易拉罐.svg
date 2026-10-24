@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glowing accent background circle for focus -->
+  <circle cx="120" cy="120" r="75" fill="#252A34" opacity="0.8"/>
+
+  <!-- Can Body -->
+  <!-- Main cylinder body -->
+  <path d="M 88,68 L 152,68 C 160,68 166,74 164,82 L 152,190 C 151,196 146,200 140,200 L 100,200 C 94,200 89,196 88,190 L 76,82 C 74,74 80,68 88,68 Z" fill="url(#canGradient)"/>
+  
+  <!-- Can vertical highlight for 3D/flat hybrid modern look -->
+  <path d="M 98,80 L 104,188 L 118,188 L 112,80 Z" fill="#FFFFFF" opacity="0.1"/>
+
+  <!-- Soda graphic wave on the can body -->
+  <path d="M 80,110 Q 120,130 160,115 L 157,145 Q 120,165 83,150 Z" fill="#FF5722" opacity="0.85"/>
+  <path d="M 82,135 Q 120,155 158,140 L 156,165 Q 120,185 84,170 Z" fill="#FFC107" opacity="0.75"/>
+
+  <!-- Can Rim - Top (Stepper reduction) -->
+  <ellipse cx="120" cy="68" rx="32" ry="7" fill="#CFD8DC"/>
+  <ellipse cx="120" cy="66" rx="29" ry="6" fill="#ECEFF1"/>
+
+  <!-- Pull-Tab (Ring Pull mechanism) -->
+  <g transform="translate(120, 65)">
+    <!-- Rivet base -->
+    <circle cx="0" cy="1" r="4" fill="#B0BEC5"/>
+    
+    <!-- Tab anchor/hinge -->
+    <path d="M -2,1 L -2,-8 L 2,-8 L 2,1 Z" fill="#90A4AE"/>
+
+    <!-- Pull ring -->
+    <path d="M -7,-7 C -7,-13 7,-13 7,-7 C 7,-3 -7,-3 -7,-7 Z" fill="none" stroke="#CFD8DC" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Can Bottom Rim -->
+  <ellipse cx="120" cy="200" rx="20" ry="4" fill="#B0BEC5"/>
+
+  <!-- Sparkles / Modern flat accent details -->
+  <path d="M 165,55 L 168,62 L 175,65 L 168,68 L 165,75 L 162,68 L 155,65 L 162,62 Z" fill="#FFC107" opacity="0.9"/>
+  <path d="M 72,130 L 74,135 L 79,137 L 74,139 L 72,144 L 70,139 L 65,137 L 70,135 Z" fill="#FFC107" opacity="0.6"/>
+
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="canGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#78909C"/>
+      <stop offset="35%" stop-color="#CFD8DC"/>
+      <stop offset="70%" stop-color="#90A4AE"/>
+      <stop offset="100%" stop-color="#546E7A"/>
+    </linearGradient>
+  </defs>
+</svg>

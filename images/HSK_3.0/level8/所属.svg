@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Central Parent Organization (Main Building) -->
+  <rect x="95" y="40" width="50" height="60" rx="4" fill="#FFB84D"/>
+  <rect x="110" y="55" width="20" height="30" rx="2" fill="#1A1D24"/>
+  
+  <!-- Connecting Lines (Hierarchy) -->
+  <path d="M120 100 L120 130" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+  <path d="M60 130 L180 130" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Branch/Subordinate Enterprises -->
+  <rect x="45" y="130" width="30" height="40" rx="4" fill="#4D94FF"/>
+  <rect x="105" y="130" width="30" height="40" rx="4" fill="#4D94FF"/>
+  <rect x="165" y="130" width="30" height="40" rx="4" fill="#4D94FF"/>
+  
+  <!-- Connection points -->
+  <circle cx="60" cy="130" r="6" fill="#FFB84D"/>
+  <circle cx="120" cy="130" r="6" fill="#FFB84D"/>
+  <circle cx="180" cy="130" r="6" fill="#FFB84D"/>
+  
+  <!-- Windows on subordinates -->
+  <rect x="50" y="140" width="8" height="8" fill="#1A1D24"/>
+  <rect x="62" y="140" width="8" height="8" fill="#1A1D24"/>
+  <rect x="110" y="140" width="8" height="8" fill="#1A1D24"/>
+  <rect x="122" y="140" width="8" height="8" fill="#1A1D24"/>
+  <rect x="170" y="140" width="8" height="8" fill="#1A1D24"/>
+  <rect x="182" y="140" width="8" height="8" fill="#1A1D24"/>
+</svg>

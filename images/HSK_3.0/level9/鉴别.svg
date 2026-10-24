@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background grid/glow elements for analytical atmosphere -->
+  <circle cx="120" cy="115" r="70" fill="#252A34" opacity="0.5"/>
+  <circle cx="120" cy="115" r="50" fill="#1F242D" opacity="0.8"/>
+
+  <!-- Conceptual Object: Antique Chinese Bronze Vessel/Ding (representing the antique from context) -->
+  <g id="antique-vessel">
+    <!-- Vessel Body -->
+    <path d="M90 100 C85 130 95 150 120 150 C145 150 155 130 150 100 Z" fill="#D4AF37" opacity="0.9"/>
+    <path d="M92 103 C88 128 96 147 120 147 C144 147 152 128 148 103 Z" fill="#B8860B"/>
+    
+    <!-- Vessel Rim / Neck -->
+    <ellipse cx="120" cy="100" rx="30" ry="8" fill="#E6C657"/>
+    <ellipse cx="120" cy="100" rx="26" ry="6" fill="#A07805"/>
+    
+    <!-- Vessel Base/Feet -->
+    <path d="M100 148 L95 162 L105 160 Z" fill="#996D00"/>
+    <path d="M140 148 L145 162 L135 160 Z" fill="#996D00"/>
+    <path d="M120 150 L120 164 L125 162 Z" fill="#996D00"/>
+    
+    <!-- Handles -->
+    <path d="M87 105 C75 105 75 120 87 120" fill="none" stroke="#D4AF37" stroke-width="4" stroke-linecap="round"/>
+    <path d="M153 105 C165 105 165 120 153 120" fill="none" stroke="#D4AF37" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Ancient Decorative Motif (Taotie/Cloud lines) -->
+    <path d="M105 120 Q120 135 135 120" fill="none" stroke="#664D00" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="112" cy="118" r="2" fill="#664D00"/>
+    <circle cx="128" cy="118" r="2" fill="#664D00"/>
+  </g>
+
+  <!-- Magnifying Glass (Representing Inspection, Authentication, 鉴别) -->
+  <g id="magnifying-glass">
+    <!-- Glass Lens Tint / Reflection -->
+    <circle cx="125" cy="105" r="38" fill="#38BDF8" opacity="0.15"/>
+    <path d="M 100 85 A 38 38 0 0 1 150 125" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.6" stroke-linecap="round"/>
+    
+    <!-- Lens Frame (Focus/Gold accent for precision) -->
+    <circle cx="125" cy="105" r="38" fill="none" stroke="#F59E0B" stroke-width="6"/>
+    
+    <!-- Handle -->
+    <path d="M152 132 L185 165" stroke="#334155" stroke-width="12" stroke-linecap="round"/>
+    <path d="M152 132 L185 165" stroke="#F59E0B" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Highlight on Handle -->
+    <line x1="156" y1="136" x2="178" y2="158" stroke="#FFFFFF" stroke-width="2" opacity="0.4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Verification/Analysis Indicators (Subtle checkmark & authenticity ray) -->
+  <g id="indicators" transform="translate(0, 0)">
+    <!-- Small analytical grid/reticle over the antique -->
+    <path d="M125 60 L125 72" stroke="#F59E0B" stroke-width="2" opacity="0.8"/>
+    <path d="M125 138 L125 150" stroke="#F59E0B" stroke-width="2" opacity="0.8"/>
+    <path d="M80 105 L92 105" stroke="#F59E0B" stroke-width="2" opacity="0.8"/>
+    <path d="M158 105 L170 105" stroke="#F59E0B" stroke-width="2" opacity="0.8"/>
+  </g>
+
+  <!-- Bottom Label Area / Clean framing -->
+  <rect x="70" y="195" width="100" height="4" rx="2" fill="#334155"/>
+</svg>

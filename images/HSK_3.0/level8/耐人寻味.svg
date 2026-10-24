@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient glow for mystery/depth -->
+  <circle cx="120" cy="115" r="70" fill="#252D3D" opacity="0.5"/>
+  
+  <!-- Cinematic Film Reel / Projector Film Strip forming a subtle question mark / thought spiral -->
+  <!-- Outer film perforations and body -->
+  <g transform="translate(120, 115)">
+    <!-- Dramatic central cinematic frame -->
+    <rect x="-45" y="-55" width="90" height="110" rx="12" fill="#2D3748" stroke="#F59E0B" stroke-width="2.5"/>
+    
+    <!-- Inner screen showing profound depth / perspective lines -->
+    <rect x="-35" y="-45" width="70" height="80" rx="6" fill="#111827"/>
+    
+    <!-- Abstract meaningful imagery inside the film frame (horizon, layers of thought, subtle glowing paths) -->
+    <path d="M-35 15 L-10 -5 L15 10 L35 -15" stroke="#38BDF8" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M-35 25 L5 5 L35 20" stroke="#F59E0B" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <circle cx="15" cy="10" r="3" fill="#38BDF8"/>
+    <circle cx="-10" cy="-5" r="2.5" fill="#F59E0B"/>
+
+    <!-- Film sprockets / holes on left and right -->
+    <rect x="-53" y="-40" width="5" height="8" rx="1.5" fill="#1A1D24"/>
+    <rect x="-53" y="-20" width="5" height="8" rx="1.5" fill="#1A1D24"/>
+    <rect x="-53" y="0" width="5" height="8" rx="1.5" fill="#1A1D24"/>
+    <rect x="-53" y="20" width="5" height="8" rx="1.5" fill="#1A1D24"/>
+
+    <rect x="48" y="-40" width="5" height="8" rx="1.5" fill="#1A1D24"/>
+    <rect x="48" y="-20" width="5" height="8" rx="1.5" fill="#1A1D24"/>
+    <rect x="48" y="0" width="5" height="8" rx="1.5" fill="#1A1D24"/>
+    <rect x="48" y="20" width="5" height="8" rx="1.5" fill="#1A1D24"/>
+
+    <!-- Emanating ripples of contemplation / lingering thought waves -->
+    <path d="M -65 -65 C -80 -40 -80 0 -65 30" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.7"/>
+    <path d="M 65 -65 C 80 -40 80 0 65 30" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.7"/>
+    
+    <!-- Floating spark of deep realization / nuance -->
+    <circle cx="0" cy="-70" r="4" fill="#F59E0B"/>
+    <path d="M0 -78 L0 -62 M-8 -70 L8 -70" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+  </g>
+</svg>

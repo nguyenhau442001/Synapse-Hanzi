@@ -1,0 +1,51 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle glow/ambiance -->
+  <circle cx="120" cy="120" r="80" fill="#F59E0B" opacity="0.05"/>
+
+  <!-- Central Human Silhouette (Root / Body representing descendants worldwide) -->
+  <path d="M120 70 C128 70 134 64 134 56 C134 48 128 42 120 42 C112 42 106 48 106 56 C106 64 112 70 120 70 Z" fill="#334155"/>
+  <path d="M96 110 C96 92 106 82 120 82 C134 82 144 92 144 110 L148 160 C148 164 144 168 140 168 L134 168 L134 200 C134 206 128 210 122 210 L118 210 C112 210 106 206 106 200 L106 168 L100 168 C96 168 92 164 92 160 Z" fill="#334155"/>
+
+  <!-- Glowing Bloodline (Xuè mài) - Intertwining golden roots/veins radiating from the core outward and connecting -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Central Core Glow -->
+    <circle cx="120" cy="115" r="16" fill="#F59E0B" opacity="0.15"/>
+
+    <!-- Main Circulation / Tree Roots of Heritage -->
+    <path d="M120 100 C120 115 120 120 120 140" stroke="#F59E0B" stroke-width="3" opacity="0.9"/>
+    
+    <!-- Branching Veins (Left side) -->
+    <path d="M120 115 C105 110 90 95 75 80" stroke="#F59E0B" stroke-width="2.5" opacity="0.8"/>
+    <path d="M95 95 C80 95 65 110 50 115" stroke="#F59E0B" stroke-width="2" opacity="0.7"/>
+    <path d="M85 88 C70 70 60 70 45 60" stroke="#F59E0B" stroke-width="1.5" opacity="0.6"/>
+    <path d="M110 130 C95 135 80 150 70 165" stroke="#F59E0B" stroke-width="2" opacity="0.7"/>
+
+    <!-- Branching Veins (Right side) -->
+    <path d="M120 115 C135 110 150 95 165 80" stroke="#F59E0B" stroke-width="2.5" opacity="0.8"/>
+    <path d="M145 95 C160 95 175 110 190 115" stroke="#F59E0B" stroke-width="2" opacity="0.7"/>
+    <path d="M155 88 C170 70 180 70 195 60" stroke="#F59E0B" stroke-width="1.5" opacity="0.6"/>
+    <path d="M130 130 C145 135 160 150 170 165" stroke="#F59E0B" stroke-width="2" opacity="0.7"/>
+
+    <!-- Downward grounding roots -->
+    <path d="M120 140 C110 155 100 170 95 190" stroke="#F59E0B" stroke-width="2" opacity="0.7"/>
+    <path d="M120 140 C130 155 140 170 145 190" stroke="#F59E0B" stroke-width="2" opacity="0.7"/>
+  </g>
+
+  <!-- Pulsing nodes representing shared ancestry/connections across space -->
+  <g fill="#FBBF24">
+    <circle cx="75" cy="80" r="3"/>
+    <circle cx="50" cy="115" r="2.5"/>
+    <circle cx="45" cy="60" r="2"/>
+    <circle cx="70" cy="165" r="2.5"/>
+    <circle cx="165" cy="80" r="3"/>
+    <circle cx="190" cy="115" r="2.5"/>
+    <circle cx="195" cy="60" r="2"/>
+    <circle cx="170" cy="165" r="2.5"/>
+    <circle cx="95" cy="190" r="2"/>
+    <circle cx="145" cy="190" r="2"/>
+    <circle cx="120" cy="115" r="4" fill="#FEF3C7"/>
+  </g>
+
+</svg>

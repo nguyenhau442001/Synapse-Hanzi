@@ -1,0 +1,58 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements (sleek modern mechanic workshop vibe) -->
+  <path d="M40 200 L200 200" stroke="#2A2F3B" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="120" cy="125" r="70" fill="none" stroke="#252A37" stroke-width="2" stroke-dasharray="4 8"/>
+
+  <!-- Mechanic Character (Head and Torso profile) -->
+  <!-- Body / Jumpsuit -->
+  <path d="M 70 200 L 70 175 C 70 155, 90 145, 120 145 C 150 145, 170 155, 170 175 L 170 200 Z" fill="#2E4057"/>
+  <!-- Collar / Zipper details -->
+  <path d="M 100 145 L 120 165 L 140 145" fill="none" stroke="#4B5E7B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="120" y1="165" x2="120" y2="200" stroke="#4B5E7B" stroke-width="2"/>
+
+  <!-- Neck -->
+  <rect x="107" y="125" width="26" height="25" fill="#E0AC9D"/>
+
+  <!-- Head -->
+  <path d="M 95 90 C 95 65, 145 65, 145 90 C 145 115, 145 125, 120 130 C 95 125, 95 115, 95 90 Z" fill="#E0AC9D"/>
+
+  <!-- Hair -->
+  <path d="M 96 85 C 95 65, 110 55, 130 57 C 143 59, 146 72, 146 85 Z" fill="#4A5568"/>
+
+  <!-- Ear (Focus of "keen hearing") -->
+  <path d="M 92 92 C 86 92, 86 108, 92 110" fill="none" stroke="#D09887" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Safety Glasses pushed up / cap detail -->
+  <path d="M 95 70 L 145 70" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Focused/Expert Facial Expression -->
+  <!-- Closed/Concentrated Eye -->
+  <path d="M 115 95 C 120 98, 125 98, 130 95" fill="none" stroke="#2D3748" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Confident slight smile -->
+  <path d="M 120 115 C 124 118, 128 118, 132 114" fill="none" stroke="#2D3748" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Sound Waves (Representing sharp/sensitive hearing of engine sound) -->
+  <g transform="translate(65, 98)">
+    <path d="M -5 5 C -12 2, -12 -8, -5 -12" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M -12 12 C -22 6, -22 -12, -12 -18" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-opacity="0.6" stroke-linecap="round"/>
+    <path d="M -19 19 C -32 10, -32 -16, -19 -24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-opacity="0.3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Engine Component in Foreground (The source of sound) -->
+  <g transform="translate(155, 130)">
+    <!-- Engine Block Base -->
+    <rect x="0" y="20" width="55" height="40" rx="6" fill="#374151"/>
+    <!-- Engine Cylinders/Details -->
+    <rect x="10" y="8" width="12" height="15" rx="3" fill="#9CA3AF"/>
+    <rect x="33" y="8" width="12" height="15" rx="3" fill="#9CA3AF"/>
+    <!-- Highlight accent indicating precision/diagnosis -->
+    <circle cx="27" cy="40" r="8" fill="#F59E0B"/>
+    <path d="M 23 40 L 26 43 L 32 37" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Sound emission indicator from engine -->
+  <path d="M 152 145 C 142 140, 135 125, 135 110" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-dasharray="3 4" stroke-linecap="round"/>
+</svg>

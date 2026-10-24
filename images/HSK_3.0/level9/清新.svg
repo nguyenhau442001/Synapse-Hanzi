@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Bamboo stalks -->
+  <path d="M80 240 L80 60 C80 40, 95 40, 95 60 L95 240 Z" fill="#2D5A27"/>
+  <path d="M110 240 L110 40 C110 20, 125 20, 125 40 L125 240 Z" fill="#3D7A35"/>
+  <path d="M140 240 L140 80 C140 60, 155 60, 155 80 L155 240 Z" fill="#2D5A27"/>
+  
+  <!-- Bamboo leaves -->
+  <path d="M95 70 C110 60, 130 60, 140 70 C130 65, 110 65, 95 70" fill="#4CAF50"/>
+  <path d="M125 50 C140 40, 160 40, 170 50 C160 45, 140 45, 125 50" fill="#4CAF50"/>
+  
+  <!-- Dew drops (representing freshness/moisture) -->
+  <ellipse cx="105" cy="120" rx="4" ry="6" fill="#A7D8FF" opacity="0.8"/>
+  <ellipse cx="135" cy="150" rx="3" ry="5" fill="#A7D8FF" opacity="0.8"/>
+  <ellipse cx="115" cy="190" rx="4" ry="6" fill="#A7D8FF" opacity="0.8"/>
+  
+  <!-- Subtle mist/air flow lines -->
+  <path d="M60 100 C90 90, 120 110, 150 100" stroke="#E0E0E0" stroke-width="1" fill="none" opacity="0.3"/>
+  <path d="M70 140 C100 130, 130 150, 160 140" stroke="#E0E0E0" stroke-width="1" fill="none" opacity="0.3"/>
+  
+  <!-- Golden accent for focus -->
+  <circle cx="180" cy="60" r="15" fill="none" stroke="#FFB300" stroke-width="2" opacity="0.6"/>
+  <path d="M180 45 L180 55 M180 65 L180 75 M165 60 L175 60 M185 60 L195 60" stroke="#FFB300" stroke-width="2" opacity="0.6"/>
+</svg>
