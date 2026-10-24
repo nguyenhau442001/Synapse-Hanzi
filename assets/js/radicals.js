@@ -344,25 +344,82 @@ function goBackToRadicalHub() {
   }
 }
 
-// Close primary tools & games menu on click outside
+// Close primary tools & skills menu on click outside or item selection
 document.addEventListener('click', event => {
   const menu = document.getElementById('primaryGamesMenu');
-  if (menu && menu.open && !menu.contains(event.target)) {
+  if (!menu || !menu.open) return;
+  if (!menu.contains(event.target) || event.target.closest('.primary-games-menu-panel button')) {
     menu.open = false;
   }
 });
 
-// Close primary tools & games menu on Escape and return focus to trigger
+// Close primary tools & skills menu on Escape and return focus to trigger
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape' || event.key === 'Esc') {
     const menu = document.getElementById('primaryGamesMenu');
     if (menu && menu.open) {
+      event.preventDefault();
       menu.open = false;
       const trigger = menu.querySelector('.primary-menu-trigger');
       if (trigger) trigger.focus();
     }
   }
 });
+
+// Keyboard arrow navigation for primary skills menu
+(function initPrimaryMenuKeyboard() {
+  function handleMenuKeydown(event) {
+    const menu = document.getElementById('primaryGamesMenu');
+    if (!menu) return;
+    const trigger = menu.querySelector('.primary-menu-trigger');
+    const items = Array.from(menu.querySelectorAll('.primary-games-menu-panel [role="menuitem"]:not([disabled])'));
+    if (!items.length) return;
+
+    if (event.target === trigger) {
+      if (event.key === 'ArrowDown' || event.key === 'Down') {
+        event.preventDefault();
+        menu.open = true;
+        items[0].focus();
+        return;
+      }
+      if (event.key === 'ArrowUp' || event.key === 'Up') {
+        event.preventDefault();
+        menu.open = true;
+        items[items.length - 1].focus();
+        return;
+      }
+    }
+
+    const currentIndex = items.indexOf(document.activeElement);
+    if (currentIndex !== -1) {
+      if (event.key === 'ArrowDown' || event.key === 'Down') {
+        event.preventDefault();
+        const nextIndex = (currentIndex + 1) % items.length;
+        items[nextIndex].focus();
+      } else if (event.key === 'ArrowUp' || event.key === 'Up') {
+        event.preventDefault();
+        const prevIndex = (currentIndex - 1 + items.length) % items.length;
+        items[prevIndex].focus();
+      } else if (event.key === 'Home') {
+        event.preventDefault();
+        items[0].focus();
+      } else if (event.key === 'End') {
+        event.preventDefault();
+        items[items.length - 1].focus();
+      }
+    }
+  }
+
+  const menu = document.getElementById('primaryGamesMenu');
+  if (menu) {
+    menu.addEventListener('keydown', handleMenuKeydown);
+  } else if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+      const el = document.getElementById('primaryGamesMenu');
+      if (el) el.addEventListener('keydown', handleMenuKeydown);
+    });
+  }
+})();
 
 // Sync aria-expanded state on toggle
 (function initPrimaryMenuAria() {

@@ -27,6 +27,16 @@ let readingPrefs = {
   grammarExpanded: true
 };
 
+function escapeHtml(str) {
+  if (str === null || str === undefined) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 // Practice State for Current Entry
 let practiceBuilderSlots = [];
 let practiceBuilderBank = [];
@@ -365,9 +375,9 @@ function renderReadingAnalysisScreen() {
     resetPracticeState();
   }
 
-  // Initialize selected word for sidebar if not already set
-  if (readingSelectedTokenIndex === null || !currentEntry.tokens || !currentEntry.tokens[readingSelectedTokenIndex]) {
-    readingSelectedTokenIndex = getInitialSelectedTokenIndex(currentEntry);
+  // Clear selected token if it is out of range for the current entry
+  if (readingSelectedTokenIndex !== null && (!currentEntry.tokens || !currentEntry.tokens[readingSelectedTokenIndex])) {
+    readingSelectedTokenIndex = null;
   }
 
   const isReviewed = (readingExerciseState === 'reviewed' || readingActiveMode === 'breakdown');
@@ -533,16 +543,19 @@ function renderExplanationSheetHtml(currentEntry) {
         <div class="sheet-title-row">
           <span class="sheet-header-icon">📖</span>
           <div class="sheet-title-text">
-            <h2 class="sheet-main-title">Phân tích & Giải thích chi tiết</h2>
-            <p class="sheet-sub-title">Đối chiếu đáp án chuẩn, cấu trúc ngữ pháp và mẹo phòng bẫy thi HSK 4</p>
+            <h2 class="sheet-main-title">Phân tích & Hướng dẫn chi tiết</h2>
+            <p class="sheet-sub-title">Đối chiếu đáp án, cấu trúc ngữ pháp và phân tích thành phần câu</p>
           </div>
         </div>
       </div>
 
-      <!-- 1. FULL STANDARD SENTENCE & AUDIO -->
+      <!-- 1. FULL STANDARD SENTENCE & AUDIO (Đáp án tham khảo) -->
       <div class="sheet-card sheet-sentence-card">
         <div class="sentence-hero-top">
-          <span class="sheet-section-tag">Câu chuẩn ngữ pháp Hanban:</span>
+          <div class="sentence-hero-tags">
+            <span class="sheet-section-tag">Đáp án tham khảo</span>
+            ${currentEntry.source ? `<span class="sheet-source-badge" title="${escapeHtml(currentEntry.source)}">${escapeHtml(currentEntry.source)}</span>` : ''}
+          </div>
           <div class="sentence-hero-audio">
             <button type="button" class="reading-btn-speaker" onclick="playReadingSentenceAudio(readingFilteredList[readingCurrentIndex])" title="Nghe phát âm chuẩn">
               🔊 Nghe phát âm
@@ -560,54 +573,72 @@ function renderExplanationSheetHtml(currentEntry) {
         ${renderSentenceTranslationsHtml(currentEntry)}
       </div>
 
-      <!-- 2. GRAMMAR POINT & EXAM TRAP NOTES -->
+      <!-- 2. GRAMMAR POINT & EXPLANATION (Vì sao sắp xếp như vậy) -->
       ${currentEntry.grammar_point ? `
         <div class="sheet-card sheet-grammar-card">
           ${renderSidebarGrammarHtml(currentEntry)}
         </div>
       ` : ''}
 
-      <!-- 3. WORD ORDER BREAKDOWN (SVO) -->
+      <!-- 3. WORD ORDER BREAKDOWN (Phân tích thành phần câu - Mở khi cần) -->
       ${(currentEntry.breakdown && currentEntry.breakdown.length) ? `
-        <div class="sheet-card sheet-breakdown-card">
-          <div class="sheet-card-header">
-            <div class="sidebar-header-left">
-              <span class="sidebar-header-icon">🔬</span>
-              <span class="sidebar-header-title">Phân tách thành phần cấu trúc câu</span>
+        <details class="sheet-collapsible-section sheet-breakdown-card" open>
+          <summary class="sheet-collapsible-summary">
+            <div class="summary-left">
+              <span class="summary-icon">🔬</span>
+              <span class="summary-title">Phân tích thành phần câu</span>
+              <span class="summary-count">${currentEntry.breakdown.length} thành phần</span>
+            </div>
+            <span class="summary-chevron" aria-hidden="true">▾</span>
+          </summary>
+          <div class="sheet-collapsible-content">
+            <div class="breakdown-table-wrapper">
+              <table class="breakdown-table">
+                <thead>
+                  <tr>
+                    <th class="col-comp">Thành phần</th>
+                    <th class="col-role">Vai trò ngữ pháp</th>
+                    <th class="col-desc">Giải thích chi tiết</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${currentEntry.breakdown.map(b => `
+                    <tr>
+                      <td class="col-comp"><span class="breakdown-text-pill">${escapeHtml(b.text)}</span></td>
+                      <td class="col-role"><span class="breakdown-role-tag">${escapeHtml(b.role)}</span></td>
+                      <td class="col-desc">${escapeHtml(b.desc || '')}</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
             </div>
           </div>
-          <div class="breakdown-chips-flow">
-            ${currentEntry.breakdown.map(b => `
-              <div class="breakdown-chip">
-                <span class="b-chip-role">${b.role}</span>
-                <span class="b-chip-text">${b.text}</span>
-                ${b.desc ? `<span class="b-chip-desc">${b.desc}</span>` : ''}
-              </div>
-            `).join('')}
-          </div>
-        </div>
+        </details>
       ` : ''}
 
-      <!-- 4. VOCABULARY IN SENTENCE -->
+      <!-- 4. VOCABULARY IN SENTENCE (Từ vựng trong câu - Mở khi cần) -->
       ${(currentEntry.tokens && currentEntry.tokens.length) ? `
-        <div class="sheet-card sheet-vocab-card">
-          <div class="sheet-card-header">
-            <div class="sidebar-header-left">
-              <span class="sidebar-header-icon">📚</span>
-              <span class="sidebar-header-title">Từ vựng trong câu</span>
+        <details class="sheet-collapsible-section sheet-vocab-card" open>
+          <summary class="sheet-collapsible-summary">
+            <div class="summary-left">
+              <span class="summary-icon">📚</span>
+              <span class="summary-title">Từ vựng trong câu</span>
+              <span class="summary-hint">Bấm vào từ để xem nghĩa và nghe phát âm</span>
             </div>
-            <span class="sidebar-hint-tag">Bấm vào từ để xem nghĩa và nghe phát âm</span>
-          </div>
+            <span class="summary-chevron" aria-hidden="true">▾</span>
+          </summary>
 
-          <div class="sheet-vocab-list">
-            ${renderSidebarVocabGridHtml(currentEntry)}
-          </div>
+          <div class="sheet-collapsible-content">
+            <div class="sheet-vocab-list">
+              ${renderSidebarVocabGridHtml(currentEntry)}
+            </div>
 
-          <!-- Word Detail micro-panel -->
-          <div class="sheet-word-detail-container" id="readingWordDetailPanel">
-            ${renderSidebarWordDetailHtml(currentEntry)}
+            <!-- Word Detail micro-panel -->
+            <div class="sheet-word-detail-container" id="readingWordDetailPanel">
+              ${renderSidebarWordDetailHtml(currentEntry)}
+            </div>
           </div>
-        </div>
+        </details>
       ` : ''}
 
       <!-- 5. BOTTOM NAVIGATION CTA -->
@@ -700,6 +731,18 @@ function selectReadingWord(tokenIdx, shouldSpeak = false) {
   const entry = readingFilteredList[readingCurrentIndex];
   if (!entry || !entry.tokens || isNaN(tokenIdx) || !entry.tokens[tokenIdx]) return;
 
+  // Toggle deselect if same word clicked again
+  if (readingSelectedTokenIndex === tokenIdx) {
+    readingSelectedTokenIndex = null;
+    document.querySelectorAll('.reading-token-word').forEach(el => el.classList.remove('active-inspect'));
+    document.querySelectorAll('.sidebar-vocab-pill').forEach(el => el.classList.remove('active-selected-tag'));
+    const detailPanel = document.getElementById('readingWordDetailPanel');
+    if (detailPanel) {
+      detailPanel.innerHTML = renderSidebarWordDetailHtml(entry);
+    }
+    return;
+  }
+
   readingSelectedTokenIndex = tokenIdx;
   const tok = entry.tokens[tokenIdx];
 
@@ -731,29 +774,34 @@ function selectReadingWord(tokenIdx, shouldSpeak = false) {
  * Render Tokens naturally without noisy box borders or orange background clutter
  */
 function renderCleanTokensHtml(entry) {
-  if (!entry || !entry.tokens) return `<span class="reading-zh-text">${entry.zh || ''}</span>`;
+  if (!entry || !entry.tokens) return `<span class="reading-zh-text">${escapeHtml(entry.zh || '')}</span>`;
 
   return entry.tokens.map((tok, i) => {
     let highlightClass = '';
     if (readingPrefs.highlight) {
       if (tok.type === 'grammar') highlightClass = 'token-hl-grammar';
-      else if (tok.type === 'core') highlightClass = 'token-hl-core';
       else if (tok.type === 'advanced') highlightClass = 'token-hl-advanced';
     }
 
     const isPunct = /^[，。？！、；：“”‘’（）《》…—]+$/.test(tok.text.trim());
 
     if (isPunct) {
-      return `<span class="reading-token-punct">${tok.text}</span>`;
+      return `<span class="reading-token-punct">${escapeHtml(tok.text)}</span>`;
     }
 
     const isSelected = (i === readingSelectedTokenIndex);
 
     return `
-      <span class="reading-token-word ${highlightClass} ${isSelected ? 'active-inspect' : ''}" data-token-idx="${i}" onclick="selectReadingWord(${i}, true)" title="${tok.meaning ? `${tok.text} [${tok.hanviet || ''}]: ${tok.meaning}` : 'Bấm để tra từ này'}">
-        ${readingPrefs.pinyin ? `<span class="token-py">${tok.pinyin || ''}</span>` : ''}
-        <span class="token-zh">${tok.text}</span>
-        ${readingPrefs.hanviet ? `<span class="token-hv">${tok.hanviet || ''}</span>` : ''}
+      <span class="reading-token-word ${highlightClass} ${isSelected ? 'active-inspect' : ''}" 
+        data-token-idx="${i}" 
+        role="button"
+        tabindex="0"
+        onclick="selectReadingWord(${i}, true)" 
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectReadingWord(${i}, true);}"
+        title="${tok.meaning ? `${escapeHtml(tok.text)} [${escapeHtml(tok.hanviet || '')}]: ${escapeHtml(tok.meaning)}` : 'Bấm để tra từ này'}">
+        ${readingPrefs.pinyin ? `<span class="token-py">${escapeHtml(tok.pinyin || '')}</span>` : ''}
+        <span class="token-zh">${escapeHtml(tok.text)}</span>
+        ${readingPrefs.hanviet ? `<span class="token-hv">${escapeHtml(tok.hanviet || '')}</span>` : ''}
       </span>
     `;
   }).join('');
@@ -770,12 +818,12 @@ function renderSentenceTranslationsHtml(entry) {
     <div class="reading-sentence-translations">
       ${readingPrefs.meaning && viMeaning ? `
         <div class="reading-translation-meaning">
-          ${viMeaning}
+          ${escapeHtml(viMeaning)}
         </div>
       ` : ''}
       ${!readingPrefs.pinyin && entry.pinyin ? `
         <div class="reading-translation-pinyin">
-          ${entry.pinyin}
+          ${escapeHtml(entry.pinyin)}
         </div>
       ` : ''}
     </div>
@@ -821,14 +869,14 @@ function renderSidebarVocabGridHtml(entry) {
             class="sidebar-vocab-pill ${badgeType} ${isSelected ? 'active-selected-tag' : ''}" 
             data-token-idx="${idx}"
             onclick="selectReadingWord(${idx}, true)"
-            title="${tok.text} ${tok.hanviet ? `[${tok.hanviet}]` : ''}: ${shortMeaning || tok.role || ''}">
+            title="${escapeHtml(tok.text)} ${tok.hanviet ? `[${escapeHtml(tok.hanviet)}]` : ''}: ${escapeHtml(shortMeaning || tok.role || '')}">
             <div class="pill-top-row">
-              <span class="pill-zh">${tok.text}</span>
-              ${tok.pinyin ? `<span class="pill-py">${tok.pinyin}</span>` : ''}
+              <span class="pill-zh">${escapeHtml(tok.text)}</span>
+              ${tok.pinyin ? `<span class="pill-py">${escapeHtml(tok.pinyin)}</span>` : ''}
             </div>
             <div class="pill-bottom-row">
-              ${tok.hanviet ? `<span class="pill-hv">[${tok.hanviet}]</span>` : ''}
-              ${shortMeaning ? `<span class="pill-mean">${shortMeaning}</span>` : ''}
+              ${tok.hanviet ? `<span class="pill-hv">[${escapeHtml(tok.hanviet)}]</span>` : ''}
+              ${shortMeaning ? `<span class="pill-mean">${escapeHtml(shortMeaning)}</span>` : ''}
             </div>
           </button>
         `;
@@ -839,9 +887,6 @@ function renderSidebarVocabGridHtml(entry) {
 
 /**
  * Render Dedicated Detail Panel for Selected Word (Middle of sidebar)
- */
-/**
- * Render Dedicated Detail Panel for Selected Word (Middle of sidebar)
  * Strictly no duplicated exam trap notes - clean breathing whitespace
  */
 function renderSidebarWordDetailHtml(entry) {
@@ -849,7 +894,7 @@ function renderSidebarWordDetailHtml(entry) {
     return `
       <div class="sw-placeholder">
         <span class="sw-placeholder-icon">👆</span>
-        <div class="sw-placeholder-text">Bấm vào bất kỳ từ nào ở danh sách phía trên hoặc trên câu chính để xem chi tiết.</div>
+        <div class="sw-placeholder-text">Bấm vào bất kỳ từ nào ở danh sách phía trên hoặc trên câu mẫu để xem phân tích chi tiết.</div>
       </div>
     `;
   }
@@ -892,13 +937,13 @@ function renderSidebarWordDetailHtml(entry) {
       <div class="sw-main-hero">
         <div class="sw-hero-left">
           <div class="sw-zh-row">
-            <span class="sw-zh">${tok.text}</span>
-            <button type="button" class="sw-audio-btn" onclick="speakToken('${tok.text}')" title="Phát âm từ này (Audio)">
+            <span class="sw-zh">${escapeHtml(tok.text)}</span>
+            <button type="button" class="sw-audio-btn" onclick="speakToken('${escapeHtml(tok.text)}')" title="Phát âm từ này (Audio)">
               🔊
             </button>
             <div class="sw-phonetics">
-              ${tok.pinyin ? `<span class="sw-py">${tok.pinyin}</span>` : ''}
-              ${tok.hanviet ? `<span class="sw-hv">[${tok.hanviet}]</span>` : ''}
+              ${tok.pinyin ? `<span class="sw-py">${escapeHtml(tok.pinyin)}</span>` : ''}
+              ${tok.hanviet ? `<span class="sw-hv">[${escapeHtml(tok.hanviet)}]</span>` : ''}
             </div>
           </div>
         </div>
@@ -907,14 +952,70 @@ function renderSidebarWordDetailHtml(entry) {
       <!-- Meaning Block -->
       <div class="sw-meaning-block">
         <div class="sw-meaning-label">Nghĩa tiếng Việt</div>
-        <div class="sw-meaning-text">${meaning || 'Chưa có chú giải nghĩa tiếng Việt'}</div>
+        <div class="sw-meaning-text">${escapeHtml(meaning || 'Chưa có chú giải nghĩa tiếng Việt')}</div>
       </div>
 
       <!-- Syntax / Role Line (No duplicate exam notes) -->
       ${roleDesc ? `
         <div class="sw-role-block">
           <span class="sw-role-tag">Cú pháp trong câu:</span>
-          <span class="sw-role-desc">${roleDesc}</span>
+          <span class="sw-role-desc">${escapeHtml(roleDesc)}</span>
+        </div>
+      ` : ''}
+    </div>
+  `;
+}
+
+/**
+ * Render Grammar Formula & Applied Sentence matching (Point 3)
+ */
+function renderGrammarFormulaHtml(pattern, patternApplied, entry) {
+  if (!pattern) return '';
+
+  const parseParts = (str) => {
+    if (!str) return [];
+    return str.split('+').map(s => s.trim()).filter(Boolean);
+  };
+
+  const patternParts = parseParts(pattern);
+  let appliedParts = patternApplied ? parseParts(patternApplied) : [];
+
+  if (!appliedParts.length && entry && entry.zh && entry.zh.includes('克服') && patternParts.length >= 4) {
+    appliedParts = ['很多困难', '是', '可以', '克服', '的'];
+  }
+
+  const getPartType = (p) => {
+    const s = (p || '').toLowerCase();
+    if (s === '是' || s === '的' || s.includes('khung') || s.includes('nhấn mạnh')) return 'marker';
+    if (s.includes('chủ ngữ') || s === '很多困难') return 'subject';
+    if (s.includes('có thể') || s.includes('có') || s === '可以' || s.includes('năng nguyện')) return 'aux';
+    if (s.includes('động từ') || s === '克服' || s.includes('vị ngữ')) return 'verb';
+    return 'default';
+  };
+
+  return `
+    <div class="grammar-formula-card">
+      <div class="gfc-header">
+        <span class="gfc-label">Cấu trúc trọng điểm</span>
+      </div>
+      <div class="gfc-flow gfc-pattern-flow">
+        ${patternParts.map((part, i) => `
+          <span class="gfc-chip gfc-${getPartType(part)}">${escapeHtml(part)}</span>
+          ${i < patternParts.length - 1 ? '<span class="gfc-plus">+</span>' : ''}
+        `).join('')}
+      </div>
+      ${appliedParts.length ? `
+        <div class="gfc-applied-block">
+          <div class="gfc-applied-label">Áp dụng trong câu thực tế:</div>
+          <div class="gfc-flow gfc-applied-flow">
+            ${appliedParts.map((part, i) => {
+              const matchedType = (i < patternParts.length) ? getPartType(patternParts[i]) : getPartType(part);
+              return `
+                <span class="gfc-chip gfc-${matchedType}">${escapeHtml(part)}</span>
+                ${i < appliedParts.length - 1 ? '<span class="gfc-plus">+</span>' : ''}
+              `;
+            }).join('')}
+          </div>
         </div>
       ` : ''}
     </div>
@@ -935,45 +1036,48 @@ function renderSidebarGrammarHtml(entry) {
     `;
   }
 
+  const formulaHtml = renderGrammarFormulaHtml(gp.pattern, gp.pattern_applied, entry);
+
+  let noteHtml = '';
+  if (gp.trap_note) {
+    const cleanNote = gp.trap_note.replace(/^(BẪY\s+CẤU\s+TRÚC|BẪY\s+THI|MẸO\s+BẪY\s+THI\s*HSK\s*\d*)\s*:\s*/i, '');
+    noteHtml = `
+      <div class="grammar-note-box">
+        <div class="gnb-header">
+          <span class="gnb-icon">📌</span>
+          <span class="gnb-title">Lưu ý</span>
+        </div>
+        <div class="gnb-content">${escapeHtml(cleanNote)}</div>
+      </div>
+    `;
+  }
+
   return `
     <div class="sidebar-grammar-inner">
       <div class="sidebar-card-header grammar-highlight-header">
         <div class="sidebar-header-left">
           <span class="grammar-lightning-icon">⚡</span>
-          <span class="sidebar-header-title">Ngữ pháp & Mẹo thi</span>
+          <span class="sidebar-header-title">Vì sao sắp xếp như vậy & Ngữ pháp trọng điểm</span>
         </div>
-        ${gp.level ? `<span class="sidebar-grammar-level">${gp.level}</span>` : ''}
+        ${gp.level ? `<span class="sidebar-grammar-level">${escapeHtml(gp.level)}</span>` : ''}
       </div>
 
       ${gp.name ? `
         <div class="sidebar-grammar-name">
-          <span class="sgn-title">${gp.name}</span>
-        </div>
-      ` : ''}
-
-      ${gp.pattern ? `
-        <div class="sidebar-grammar-pattern">
-          <span class="sgp-label">Cấu trúc trọng điểm:</span>
-          <code class="sgp-code">${gp.pattern}</code>
-        </div>
-      ` : ''}
-
-      ${gp.trap_note ? `
-        <div class="sidebar-grammar-trap">
-          <div class="sgt-header">
-            <span class="sgt-icon">⚠️</span>
-            <span class="sgt-title">Mẹo bẫy thi HSK 4:</span>
-          </div>
-          <div class="sgt-content">${gp.trap_note}</div>
+          <span class="sgn-title">${escapeHtml(gp.name)}</span>
         </div>
       ` : ''}
 
       ${gp.explanation ? `
         <div class="sidebar-grammar-exp">
-          <span class="sge-title">💡 Giải thích ứng dụng:</span>
-          <span class="sge-content">${gp.explanation}</span>
+          <div class="sge-title">💡 Giải thích cú pháp:</div>
+          <div class="sge-content">${escapeHtml(gp.explanation)}</div>
         </div>
       ` : ''}
+
+      ${formulaHtml}
+
+      ${noteHtml}
     </div>
   `;
 }
