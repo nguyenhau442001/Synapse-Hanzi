@@ -55016,6 +55016,256 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "主页.svg",
     "src": "images/HSK_3.0/level7/主页.svg",
     "caption": "trang chủ (website)"
+  },
+  "主义": {
+    "file": "主义.svg",
+    "src": "images/HSK_3.0/level7/主义.svg",
+    "caption": "chủ nghĩa, học thuyết"
+  },
+  "主宰": {
+    "file": "主宰.svg",
+    "src": "images/HSK_3.0/level7/主宰.svg",
+    "caption": "làm chủ, chi phối định đoạt"
+  },
+  "注": {
+    "file": "注.svg",
+    "src": "images/HSK_3.0/level7/注.svg",
+    "caption": "chú thích, ghi chú; rót vào, trút vào"
+  },
+  "驻": {
+    "file": "驻.svg",
+    "src": "images/HSK_3.0/level7/驻.svg",
+    "caption": "đóng quân, đồn trú, đóng tại"
+  },
+  "筑": {
+    "file": "筑.svg",
+    "src": "images/HSK_3.0/level7/筑.svg",
+    "caption": "xây dựng"
+  },
+  "贮藏": {
+    "file": "贮藏.svg",
+    "src": "images/HSK_3.0/level7/贮藏.svg",
+    "caption": "cất trữ, dự trữ, bảo quản"
+  },
+  "著称": {
+    "file": "著称.svg",
+    "src": "images/HSK_3.0/level7/著称.svg",
+    "caption": "nổi danh là, nổi tiếng vì"
+  },
+  "住处": {
+    "file": "住处.svg",
+    "src": "images/HSK_3.0/level7/住处.svg",
+    "caption": "chỗ ở, nơi ở"
+  },
+  "注定": {
+    "file": "注定.svg",
+    "src": "images/HSK_3.0/level7/注定.svg",
+    "caption": "định sẵn, số phận đã an bài"
+  },
+  "住户": {
+    "file": "住户.svg",
+    "src": "images/HSK_3.0/level7/住户.svg",
+    "caption": "hộ dân cư, cư dân sinh sống"
+  },
+  "助力": {
+    "file": "助力.svg",
+    "src": "images/HSK_3.0/level7/助力.svg",
+    "caption": "tiếp sức, trợ lực, hỗ trợ thúc đẩy"
+  },
+  "注射": {
+    "file": "注射.svg",
+    "src": "images/HSK_3.0/level7/注射.svg",
+    "caption": "tiêm, chích (thuốc)"
+  },
+  "注视": {
+    "file": "注视.svg",
+    "src": "images/HSK_3.0/level7/注视.svg",
+    "caption": "chăm chú nhìn, dõi mắt theo dõi"
+  },
+  "注释": {
+    "file": "注释.svg",
+    "src": "images/HSK_3.0/level7/注释.svg",
+    "caption": "chú thích, giải nghĩa chú giải"
+  },
+  "助威": {
+    "file": "助威.svg",
+    "src": "images/HSK_3.0/level7/助威.svg",
+    "caption": "cổ vũ, trợ oai, hò reo tiếp sức"
+  },
+  "注销": {
+    "file": "注销.svg",
+    "src": "images/HSK_3.0/level7/注销.svg",
+    "caption": "hủy bỏ, xóa sổ, hủy tài khoản"
+  },
+  "蛀牙": {
+    "file": "蛀牙.svg",
+    "src": "images/HSK_3.0/level7/蛀牙.svg",
+    "caption": "sâu răng, răng sâu"
+  },
+  "铸造": {
+    "file": "铸造.svg",
+    "src": "images/HSK_3.0/level7/铸造.svg",
+    "caption": "đúc, đúc tạo nên"
+  },
+  "驻扎": {
+    "file": "驻扎.svg",
+    "src": "images/HSK_3.0/level7/驻扎.svg",
+    "caption": "đóng quân, đồn trú"
+  },
+  "柱子": {
+    "file": "柱子.svg",
+    "src": "images/HSK_3.0/level7/柱子.svg",
+    "caption": "cây cột, cột trụ"
+  },
+  "驻足": {
+    "file": "驻足.svg",
+    "src": "images/HSK_3.0/level7/驻足.svg",
+    "caption": "dừng bước, dừng chân nán lại"
+  },
+  "爪子": {
+    "file": "爪子.svg",
+    "src": "images/HSK_3.0/level7/爪子.svg",
+    "caption": "móng vuốt, vuốt (động vật)"
+  },
+  "拽": {
+    "file": "拽.svg",
+    "src": "images/HSK_3.0/level7/拽.svg",
+    "caption": "lôi, kéo, túm lấy"
+  },
+  "专长": {
+    "file": "专长.svg",
+    "src": "images/HSK_3.0/level7/专长.svg",
+    "caption": "sở trường, chuyên môn sâu"
+  },
+  "专程": {
+    "file": "专程.svg",
+    "src": "images/HSK_3.0/level7/专程.svg",
+    "caption": "dành riêng một chuyến, lặn lội đến tận nơi"
+  },
+  "专柜": {
+    "file": "专柜.svg",
+    "src": "images/HSK_3.0/level7/专柜.svg",
+    "caption": "quầy hàng chuyên doanh, quầy chuyên bán"
+  },
+  "专辑": {
+    "file": "专辑.svg",
+    "src": "images/HSK_3.0/level7/专辑.svg",
+    "caption": "album âm nhạc, tuyển tập chuyên đề"
+  },
+  "专栏": {
+    "file": "专栏.svg",
+    "src": "images/HSK_3.0/level7/专栏.svg",
+    "caption": "chuyên mục, mục chuyên đề (trên báo)"
+  },
+  "专卖": {
+    "file": "专卖.svg",
+    "src": "images/HSK_3.0/level7/专卖.svg",
+    "caption": "độc quyền bán, kinh doanh chuyên biệt"
+  },
+  "专人": {
+    "file": "专人.svg",
+    "src": "images/HSK_3.0/level7/专人.svg",
+    "caption": "người chuyên trách, người được giao riêng việc"
+  },
+  "专项": {
+    "file": "专项.svg",
+    "src": "images/HSK_3.0/level7/专项.svg",
+    "caption": "chuyên đề, hạng mục riêng biệt"
+  },
+  "专职": {
+    "file": "专职.svg",
+    "src": "images/HSK_3.0/level7/专职.svg",
+    "caption": "chuyên trách, làm việc toàn thời gian"
+  },
+  "专制": {
+    "file": "专制.svg",
+    "src": "images/HSK_3.0/level7/专制.svg",
+    "caption": "chuyên chế, độc đoán gia trưởng"
+  },
+  "专著": {
+    "file": "专著.svg",
+    "src": "images/HSK_3.0/level7/专著.svg",
+    "caption": "chuyên khảo, sách chuyên khảo học thuật"
+  },
+  "转播": {
+    "file": "转播.svg",
+    "src": "images/HSK_3.0/level7/转播.svg",
+    "caption": "tiếp sóng, truyền hình trực tiếp"
+  },
+  "转达": {
+    "file": "转达.svg",
+    "src": "images/HSK_3.0/level7/转达.svg",
+    "caption": "chuyển lời, chuyển đạt"
+  },
+  "转化": {
+    "file": "转化.svg",
+    "src": "images/HSK_3.0/level7/转化.svg",
+    "caption": "chuyển hóa, chuyển thành"
+  },
+  "转机²": {
+    "file": "转机².svg",
+    "src": "images/HSK_3.0/level7/转机².svg",
+    "caption": "bước ngoặt tốt, cơ hội chuyển biến thuận lợi"
+  },
+  "转型": {
+    "file": "转型.svg",
+    "src": "images/HSK_3.0/level7/转型.svg",
+    "caption": "chuyển đổi mô hình, chuyển mình đổi mới"
+  },
+  "转眼": {
+    "file": "转眼.svg",
+    "src": "images/HSK_3.0/level7/转眼.svg",
+    "caption": "chớp mắt, thoáng chốc"
+  },
+  "转载": {
+    "file": "转载.svg",
+    "src": "images/HSK_3.0/level7/转载.svg",
+    "caption": "đăng lại, trích đăng lại"
+  },
+  "转折": {
+    "file": "转折.svg",
+    "src": "images/HSK_3.0/level7/转折.svg",
+    "caption": "bước ngoặt, chuyển biến"
+  },
+  "转折点": {
+    "file": "转折点.svg",
+    "src": "images/HSK_3.0/level7/转折点.svg",
+    "caption": "điểm bước ngoặt, mốc xoay chuyển"
+  },
+  "传记": {
+    "file": "传记.svg",
+    "src": "images/HSK_3.0/level7/传记.svg",
+    "caption": "sách tiểu sử, hồi ký nhân vật"
+  },
+  "撰写": {
+    "file": "撰写.svg",
+    "src": "images/HSK_3.0/level7/撰写.svg",
+    "caption": "soạn thảo, viết (báo cáo, luận văn)"
+  },
+  "转悠": {
+    "file": "转悠.svg",
+    "src": "images/HSK_3.0/level7/转悠.svg",
+    "caption": "đi loanh quanh, lượn quanh"
+  },
+  "桩": {
+    "file": "桩.svg",
+    "src": "images/HSK_3.0/level7/桩.svg",
+    "caption": "cọc gỗ; cọc, vụ việc (lượng từ)"
+  },
+  "装扮": {
+    "file": "装扮.svg",
+    "src": "images/HSK_3.0/level7/装扮.svg",
+    "caption": "hóa trang, ăn mặc trang điểm"
+  },
+  "庄园": {
+    "file": "庄园.svg",
+    "src": "images/HSK_3.0/level7/庄园.svg",
+    "caption": "trang viên, điền trang"
+  },
+  "装置": {
+    "file": "装置.svg",
+    "src": "images/HSK_3.0/level7/装置.svg",
+    "caption": "thiết bị, bộ máy, hệ thống cơ cấu"
   }
 };
 
