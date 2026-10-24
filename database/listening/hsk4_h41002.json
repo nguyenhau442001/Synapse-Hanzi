@@ -25,21 +25,21 @@
       "audio_src": "assets/audio/exams/H41002.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 131521,
-          "end_ms": 142008
+          "start_ms": 130900,
+          "end_ms": 144440
         },
         "statement": {
-          "start_ms": 142208,
-          "end_ms": 145808
+          "start_ms": 144640,
+          "end_ms": 145890
         },
         "full_question": {
-          "start_ms": 131521,
-          "end_ms": 145808
+          "start_ms": 130900,
+          "end_ms": 145890
         }
       },
       "transcript": {
@@ -52,8 +52,8 @@
             "zh": "明天就要去使馆办签证了，邀请信竟然还没寄到，这可怎么办？",
             "pinyin": "míng tiān jiù yào qù shǐ guǎn bàn qiān zhèng le ， yāo qǐng xìn jìng rán hái méi jì dào ， zhè kě zěn me bàn ？",
             "vi": "Ngày mai là phải đến đại sứ quán làm visa rồi, thư mời thế mà vẫn chưa gửi đến, việc này biết làm sao đây?",
-            "start_ms": 131521,
-            "end_ms": 142008
+            "start_ms": 132410,
+            "end_ms": 144440
           }
         ]
       },
@@ -122,21 +122,21 @@
       "audio_src": "assets/audio/exams/H41002.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 156045,
-          "end_ms": 171830
+          "start_ms": 155560,
+          "end_ms": 172320
         },
         "statement": {
-          "start_ms": 172030,
-          "end_ms": 175980
+          "start_ms": 173030,
+          "end_ms": 176350
         },
         "full_question": {
-          "start_ms": 156045,
-          "end_ms": 175980
+          "start_ms": 155560,
+          "end_ms": 176350
         }
       },
       "transcript": {
@@ -149,8 +149,8 @@
             "zh": "女儿出生以后，我才知道做妈妈有多么不容易。",
             "pinyin": "nǚ ér chū shēng yǐ hòu ， wǒ cái zhī dào zuò mā mā yǒu duō me bù róng yì 。",
             "vi": "Sau khi con gái chào đời, tôi mới biết làm mẹ khó khăn và vất vả nhường nào.",
-            "start_ms": 156045,
-            "end_ms": 162674
+            "start_ms": 156810,
+            "end_ms": 162894
           },
           {
             "id": "H41002_L_02_S2",
@@ -158,8 +158,8 @@
             "zh": "因此，我更加理解我的父母了，也感谢他们这么多年来给我的爱。",
             "pinyin": "yīn cǐ ， wǒ gèng jiā lǐ jiě wǒ de fù mǔ le ， yě gǎn xiè tā men zhè me duō nián lái gěi wǒ de ài 。",
             "vi": "Vì vậy, tôi càng thấu hiểu cha mẹ mình hơn, và cũng cảm ơn tình yêu thương mà họ đã dành cho tôi suốt bao năm qua.",
-            "start_ms": 162674,
-            "end_ms": 171829
+            "start_ms": 162994,
+            "end_ms": 172320
           }
         ]
       },
@@ -242,21 +242,21 @@
       "audio_src": "assets/audio/exams/H41002.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 186436,
-          "end_ms": 203987
+          "start_ms": 185840,
+          "end_ms": 205899
         },
         "statement": {
-          "start_ms": 204187,
-          "end_ms": 207787
+          "start_ms": 205950,
+          "end_ms": 207990
         },
         "full_question": {
-          "start_ms": 186436,
-          "end_ms": 207787
+          "start_ms": 185840,
+          "end_ms": 207990
         }
       },
       "transcript": {
@@ -269,8 +269,8 @@
             "zh": "小王，这份材料明天早上就要用，得请你翻译一下，晚上十点之前一定要完成，翻译好后打印一份给经理，辛苦你了。",
             "pinyin": "xiǎo wáng ， zhè fèn cái liào míng tiān zǎo shàng jiù yào yòng ， dé qǐng nǐ fān yì yī xià ， wǎn shàng shí diǎn zhī qián yí dìng yào wán chéng ， fān yì hǎo hòu dǎ yìn yī fèn gěi jīng lǐ ， xīn kǔ nǐ le 。",
             "vi": "Tiểu Vương, tài liệu này sáng mai cần dùng rồi, nhờ cậu dịch giúp nhé, nhất định phải hoàn thành trước 10 giờ tối, dịch xong thì in một bản đưa cho giám đốc, vất vả cho cậu rồi.",
-            "start_ms": 186436,
-            "end_ms": 203987
+            "start_ms": 187250,
+            "end_ms": 205899
           }
         ]
       },
@@ -353,21 +353,21 @@
       "audio_src": "assets/audio/exams/H41002.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 218383,
-          "end_ms": 232422
+          "start_ms": 218300,
+          "end_ms": 234280
         },
         "statement": {
-          "start_ms": 232622,
-          "end_ms": 236622
+          "start_ms": 234480,
+          "end_ms": 236810
         },
         "full_question": {
-          "start_ms": 218383,
-          "end_ms": 236622
+          "start_ms": 218300,
+          "end_ms": 236810
         }
       },
       "transcript": {
@@ -380,8 +380,8 @@
             "zh": "节日是文化的一部分，所以，如果想了解一个国家的文化，我们可以从了解这个国家的节日开始。",
             "pinyin": "jié rì shì wén huà de yī bù fèn ， suǒ yǐ ， rú guǒ xiǎng liǎo jiě yí gè guó jiā de wén huà ， wǒ men kě yǐ cóng liǎo jiě zhè ge guó jiā de jié rì kāi shǐ 。",
             "vi": "Lễ hội là một phần của văn hóa, vì thế nếu muốn tìm hiểu văn hóa của một quốc gia, chúng ta có thể bắt đầu từ việc tìm hiểu các ngày lễ của quốc gia đó.",
-            "start_ms": 218383,
-            "end_ms": 232422
+            "start_ms": 219290,
+            "end_ms": 234280
           }
         ]
       },
@@ -464,21 +464,21 @@
       "audio_src": "assets/audio/exams/H41002.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 246918,
-          "end_ms": 261497
+          "start_ms": 246420,
+          "end_ms": 263219
         },
         "statement": {
-          "start_ms": 261697,
-          "end_ms": 265297
+          "start_ms": 263419,
+          "end_ms": 265450
         },
         "full_question": {
-          "start_ms": 246918,
-          "end_ms": 265297
+          "start_ms": 246420,
+          "end_ms": 265450
         }
       },
       "transcript": {
@@ -491,8 +491,8 @@
             "zh": "三十七岁的王教授，在我们学校很有名，不但会三种语言，而且会写小说，各方面都很优秀。",
             "pinyin": "sān shí qī suì de wáng jiào shòu ， zài wǒ men xué xiào hěn yǒu míng ， bù dàn huì sān zhǒng yǔ yán ， ér qiě huì xiě xiǎo shuō ， gè fāng miàn dōu hěn yōu xiù 。",
             "vi": "Giáo sư Vương 37 tuổi rất nổi tiếng ở trường chúng tôi, không chỉ biết 3 thứ tiếng mà còn biết viết tiểu thuyết, phương diện nào cũng rất xuất sắc.",
-            "start_ms": 246918,
-            "end_ms": 261497
+            "start_ms": 248030,
+            "end_ms": 263219
           }
         ]
       },
@@ -575,21 +575,21 @@
       "audio_src": "assets/audio/exams/H41002.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 275533,
-          "end_ms": 295299
+          "start_ms": 274960,
+          "end_ms": 297159
         },
         "statement": {
-          "start_ms": 295499,
-          "end_ms": 299499
+          "start_ms": 297359,
+          "end_ms": 299710
         },
         "full_question": {
-          "start_ms": 275533,
-          "end_ms": 299499
+          "start_ms": 274960,
+          "end_ms": 299710
         }
       },
       "transcript": {
@@ -602,8 +602,8 @@
             "zh": "怎么样才能找到适合自己的人？",
             "pinyin": "zěn me yàng cái néng zhǎo dào shì hé zì jǐ de rén ？",
             "vi": "Làm thế nào mới có thể tìm được người phù hợp với mình?",
-            "start_ms": 275533,
-            "end_ms": 279996
+            "start_ms": 276430,
+            "end_ms": 279615
           },
           {
             "id": "H41002_L_06_S2",
@@ -611,8 +611,8 @@
             "zh": "两个人共同生活，不仅需要浪漫的爱情，更需要性格上互相吸引，最重要的是，两个人都要有对家的责任感。",
             "pinyin": "liǎng gè rén gòng tóng shēng huó ， bù jǐn xū yào làng màn de ài qíng ， gèng xū yào xìng gé shàng hù xiāng xī yǐn ， zuì zhòng yào de shì ， liǎng gè rén dōu yào yǒu duì jiā de zé rèn gǎn 。",
             "vi": "Hai người cùng chung sống không chỉ cần tình yêu lãng mạn, mà càng cần sự thu hút nhau về tính cách, quan trọng nhất là cả hai đều phải có trách nhiệm với gia đình.",
-            "start_ms": 279996,
-            "end_ms": 295298
+            "start_ms": 279715,
+            "end_ms": 297159
           }
         ]
       },
@@ -695,21 +695,21 @@
       "audio_src": "assets/audio/exams/H41002.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 309795,
-          "end_ms": 325370
+          "start_ms": 309299,
+          "end_ms": 326500
         },
         "statement": {
-          "start_ms": 325570,
-          "end_ms": 329570
+          "start_ms": 326700,
+          "end_ms": 329590
         },
         "full_question": {
-          "start_ms": 309795,
-          "end_ms": 329570
+          "start_ms": 309299,
+          "end_ms": 329590
         }
       },
       "transcript": {
@@ -722,8 +722,8 @@
             "zh": "只要注意一下，你会发现，早上的公园里、街道上，早起锻炼的人中，老年人很多而年轻人很少。",
             "pinyin": "zhǐ yào zhù yì yī xià ， nǐ huì fā xiàn ， zǎo shàng de gōng yuán lǐ 、 jiē dào shàng ， zǎo qǐ duàn liàn de rén zhōng ， lǎo nián rén hěn duō ér nián qīng rén hěn shǎo 。",
             "vi": "Chỉ cần để ý một chút bạn sẽ phát hiện ra, trong công viên và trên đường phố vào buổi sáng sớm, trong số những người dậy sớm tập thể dục thì người già rất nhiều còn người trẻ lại rất ít.",
-            "start_ms": 309795,
-            "end_ms": 325370
+            "start_ms": 309930,
+            "end_ms": 326500
           }
         ]
       },
@@ -806,21 +806,21 @@
       "audio_src": "assets/audio/exams/H41002.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 339867,
-          "end_ms": 357379
+          "start_ms": 339219,
+          "end_ms": 359219
         },
         "statement": {
-          "start_ms": 357579,
-          "end_ms": 361179
+          "start_ms": 359419,
+          "end_ms": 361290
         },
         "full_question": {
-          "start_ms": 339867,
-          "end_ms": 361179
+          "start_ms": 339219,
+          "end_ms": 361290
         }
       },
       "transcript": {
@@ -833,8 +833,8 @@
             "zh": "小林，这次的招聘是由你负责吧？",
             "pinyin": "xiǎo lín ， zhè cì de zhāo pìn shì yóu nǐ fù zé ba ？",
             "vi": "Tiểu Lâm, đợt tuyển dụng lần này do cậu phụ trách đúng không?",
-            "start_ms": 339867,
-            "end_ms": 344918
+            "start_ms": 339890,
+            "end_ms": 345135
           },
           {
             "id": "H41002_L_08_S2",
@@ -842,8 +842,8 @@
             "zh": "李教授介绍了他的一个学生，是个博士，条件还不错，这是他的申请材料，你看看。",
             "pinyin": "lǐ jiào shòu jiè shào le tā de yí gè xué shēng ， shì gè bó shì ， tiáo jiàn hái bú cuò ， zhè shì tā de shēn qǐng cái liào ， nǐ kàn kàn 。",
             "vi": "Giáo sư Lý có giới thiệu một học trò của thầy, là một tiến sĩ, điều kiện khá tốt, đây là hồ sơ xin việc của anh ấy, cậu xem qua nhé.",
-            "start_ms": 344918,
-            "end_ms": 357378
+            "start_ms": 345235,
+            "end_ms": 359219
           }
         ]
       },
@@ -926,21 +926,21 @@
       "audio_src": "assets/audio/exams/H41002.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 371395,
-          "end_ms": 388726
+          "start_ms": 370919,
+          "end_ms": 390620
         },
         "statement": {
-          "start_ms": 388926,
-          "end_ms": 392926
+          "start_ms": 390820,
+          "end_ms": 393110
         },
         "full_question": {
-          "start_ms": 371395,
-          "end_ms": 392926
+          "start_ms": 370919,
+          "end_ms": 393110
         }
       },
       "transcript": {
@@ -953,8 +953,8 @@
             "zh": "回忆过去，有苦也有甜，有伤心、难过也有幸福、愉快，有很多故事让人难以忘记，有很多经验值得我们总结。",
             "pinyin": "huí yì guò qù ， yǒu kǔ yě yǒu tián ， yǒu shāng xīn 、 nán guò yě yǒu xìng fú 、 yú kuài ， yǒu hěn duō gù shì ràng rén nán yǐ wàng jì ， yǒu hěn duō jīng yàn zhí de wǒ men zǒng jié 。",
             "vi": "Hồi tưởng quá khứ có đắng cay cũng có ngọt ngào, có đau lòng buồn bã cũng có hạnh phúc vui vẻ, có rất nhiều câu chuyện khiến người ta khó quên, có rất nhiều kinh nghiệm đáng để chúng ta đúc kết.",
-            "start_ms": 371395,
-            "end_ms": 388726
+            "start_ms": 372330,
+            "end_ms": 390620
           }
         ]
       },
@@ -1037,21 +1037,21 @@
       "audio_src": "assets/audio/exams/H41002.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 403143,
-          "end_ms": 419058
+          "start_ms": 402820,
+          "end_ms": 420800
         },
         "statement": {
-          "start_ms": 419258,
-          "end_ms": 422858
+          "start_ms": 421000,
+          "end_ms": 422910
         },
         "full_question": {
-          "start_ms": 403143,
-          "end_ms": 422858
+          "start_ms": 402820,
+          "end_ms": 422910
         }
       },
       "transcript": {
@@ -1064,8 +1064,8 @@
             "zh": "理想的广告词应该简短，一般六到十二个字比较合适，不应该太长，否则观众不易记住，也就流行不起来。",
             "pinyin": "lǐ xiǎng de guǎng gào cí yīng gāi jiǎn duǎn ， yì bān liù dào shí èr gè zì bǐ jiào hé shì ， bù yīng gāi tài zhǎng ， fǒu zé guān zhòng bù yì jì zhù ， yě jiù liú xíng bù qǐ lái 。",
             "vi": "Câu quảng cáo lý tưởng nên ngắn gọn, thông thường 6 đến 12 chữ là tương đối phù hợp, không nên quá dài, nếu không khán giả sẽ khó nhớ và cũng không thể lan tỏa được.",
-            "start_ms": 403143,
-            "end_ms": 419058
+            "start_ms": 404130,
+            "end_ms": 420800
           }
         ]
       },

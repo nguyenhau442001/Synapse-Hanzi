@@ -25,21 +25,21 @@
       "audio_src": "assets/audio/exams/H41012.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 159840,
-          "end_ms": 175970
+          "start_ms": 157780,
+          "end_ms": 178560
         },
         "statement": {
-          "start_ms": 176170,
-          "end_ms": 179420
+          "start_ms": 178760,
+          "end_ms": 179370
         },
         "full_question": {
-          "start_ms": 159840,
-          "end_ms": 179420
+          "start_ms": 157780,
+          "end_ms": 179370
         }
       },
       "transcript": {
@@ -52,8 +52,8 @@
             "zh": "老张这个人一直很准时，开会从来不迟到。",
             "pinyin": "lǎo zhāng zhè ge rén yì zhí hěn zhǔn shí ， kāi huì cóng lái bù chí dào 。",
             "vi": "Lão Trương là người vô cùng coi trọng chữ tín và giờ giấc, trong công việc anh ấy chưa từng đến muộn bao giờ, lúc nào cũng đến trước giờ hẹn 10 phút.",
-            "start_ms": 159840,
-            "end_ms": 166360
+            "start_ms": 158410,
+            "end_ms": 166435
           },
           {
             "id": "H41012_L_01_S2",
@@ -61,8 +61,8 @@
             "zh": "今天到现在还没来，大概是有什么事情，你打个电话问问他吧。",
             "pinyin": "jīn tiān dào xiàn zài hái méi lái ， dà gài shì yǒu shén me shì qíng ， nǐ dǎ gè diàn huà wèn wèn tā ba 。",
             "vi": "Hôm nay đến giờ này vẫn chưa đến, chắc là có chuyện gì rồi, cậu gọi điện thoại hỏi anh ấy xem sao.",
-            "start_ms": 166360,
-            "end_ms": 175969
+            "start_ms": 166535,
+            "end_ms": 178560
           }
         ]
       },
@@ -145,21 +145,21 @@
       "audio_src": "assets/audio/exams/H41012.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 189480,
-          "end_ms": 201830
+          "start_ms": 189200,
+          "end_ms": 205200
         },
         "statement": {
-          "start_ms": 202030,
-          "end_ms": 205980
+          "start_ms": 205400,
+          "end_ms": 206090
         },
         "full_question": {
-          "start_ms": 189480,
-          "end_ms": 205980
+          "start_ms": 189200,
+          "end_ms": 206090
         }
       },
       "transcript": {
@@ -172,8 +172,8 @@
             "zh": "很多人一到周末就喜欢睡懒觉，而且一睡就是大半天。",
             "pinyin": "hěn duō rén yī dào zhōu mò jiù xǐ huān shuì lǎn jiào ， ér qiě yī shuì jiù shì dà bàn tiān 。",
             "vi": "Ngủ đủ giấc rất quan trọng đối với sức khỏe, nhưng ngủ quá nhiều lại không hề có lợi, ngược lại còn khiến người ta cảm thấy uể oải, đau đầu và thiếu tập trung.",
-            "start_ms": 189480,
-            "end_ms": 194184
+            "start_ms": 190650,
+            "end_ms": 196014
           },
           {
             "id": "H41012_L_02_S2",
@@ -181,8 +181,8 @@
             "zh": "医生提醒我们，睡觉时间太长并不好，有时甚至会引起头疼，一般睡够八小时就可以了。",
             "pinyin": "yī shēng tí xǐng wǒ men ， shuì jiào shí jiān tài zhǎng bìng bù hǎo ， yǒu shí shèn zhì huì yǐn qǐ tóu téng ， yì bān shuì gòu bā xiǎo shí jiù kě yǐ le 。",
             "vi": "Bác sĩ nhắc nhở chúng ta rằng thời gian ngủ quá dài không hề tốt, đôi khi thậm chí còn gây đau đầu, thông thường ngủ đủ 8 tiếng là được rồi.",
-            "start_ms": 194184,
-            "end_ms": 201829
+            "start_ms": 196114,
+            "end_ms": 205200
           }
         ]
       },
@@ -265,21 +265,21 @@
       "audio_src": "assets/audio/exams/H41012.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 216060,
-          "end_ms": 227540
+          "start_ms": 215700,
+          "end_ms": 230480
         },
         "statement": {
-          "start_ms": 227740,
-          "end_ms": 231740
+          "start_ms": 230680,
+          "end_ms": 231950
         },
         "full_question": {
-          "start_ms": 216060,
-          "end_ms": 231740
+          "start_ms": 215700,
+          "end_ms": 231950
         }
       },
       "transcript": {
@@ -292,8 +292,8 @@
             "zh": "希望通过这次交流会，大家能给我们的工作提一些意见或者建议，无论是哪方面的，我们都会认真考虑。",
             "pinyin": "xī wàng tōng guò zhè cì jiāo liú huì ， dà jiā néng gěi wǒ men de gōng zuò tí yī xiē yì jiàn huò zhě jiàn yì ， wú lùn shì nǎ fāng miàn de ， wǒ men dū huì rèn zhēn kǎo lǜ 。",
             "vi": "Bản kế hoạch này vẫn còn nhiều chỗ chưa hoàn thiện, tôi rất mong mọi người có thể thẳng thắn đóng góp thêm ý kiến để cùng nhau sửa đổi cho tốt hơn.",
-            "start_ms": 216060,
-            "end_ms": 227540
+            "start_ms": 217010,
+            "end_ms": 230480
           }
         ]
       },
@@ -376,21 +376,21 @@
       "audio_src": "assets/audio/exams/H41012.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 241800,
-          "end_ms": 253539
+          "start_ms": 241480,
+          "end_ms": 247780
         },
         "statement": {
-          "start_ms": 253739,
-          "end_ms": 257339
+          "start_ms": 247980,
+          "end_ms": 257470
         },
         "full_question": {
-          "start_ms": 241800,
-          "end_ms": 257339
+          "start_ms": 241480,
+          "end_ms": 257470
         }
       },
       "transcript": {
@@ -403,8 +403,8 @@
             "zh": "购物满四百元的顾客可免费获得一份小礼物，请您在付款后，拿着购物小票到一楼出口处换取。",
             "pinyin": "gòu wù mǎn sì bǎi yuán de gù kè kě miǎn fèi huò dé yī fèn xiǎo lǐ wù ， qǐng nín zài fù kuǎn hòu ， ná zhe gòu wù xiǎo piào dào yī lóu chū kǒu chù huàn qǔ 。",
             "vi": "Quầy đổi quà tặng tri ân khách hàng đặt ngay tại sảnh chính cửa ra vào của trung tâm thương mại, quý khách có thể mang hóa đơn đến đó để nhận quà.",
-            "start_ms": 241800,
-            "end_ms": 253539
+            "start_ms": 242870,
+            "end_ms": 247780
           }
         ]
       },
@@ -480,21 +480,21 @@
       "audio_src": "assets/audio/exams/H41012.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 267440,
-          "end_ms": 283300
+          "start_ms": 267060,
+          "end_ms": 286719
         },
         "statement": {
-          "start_ms": 283500,
-          "end_ms": 287500
+          "start_ms": 286919,
+          "end_ms": 287550
         },
         "full_question": {
-          "start_ms": 267440,
-          "end_ms": 287500
+          "start_ms": 267060,
+          "end_ms": 287550
         }
       },
       "transcript": {
@@ -507,8 +507,8 @@
             "zh": "在我看来，比赛输赢并不是最重要的，在与他人竞争的过程中使自己获得提高，才是参赛的最终目的。",
             "pinyin": "zài wǒ kàn lái ， bǐ sài shū yíng bìng bú shì zuì zhòng yào de ， zài yǔ tā rén jìng zhēng de guò chéng zhōng shǐ zì jǐ huò dé tí gāo ， cái shì cān sài de zuì zhōng mù dì 。",
             "vi": "Tham gia thi đấu thể thao quan trọng nhất là tinh thần học hỏi và giao lưu kết bạn, thắng thua là chuyện bình thường, không nên quá đặt nặng kết quả.",
-            "start_ms": 267440,
-            "end_ms": 283300
+            "start_ms": 268230,
+            "end_ms": 286719
           }
         ]
       },
@@ -591,21 +591,21 @@
       "audio_src": "assets/audio/exams/H41012.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 297580,
-          "end_ms": 312650
+          "start_ms": 298500,
+          "end_ms": 314680
         },
         "statement": {
-          "start_ms": 312850,
-          "end_ms": 316800
+          "start_ms": 314880,
+          "end_ms": 316930
         },
         "full_question": {
-          "start_ms": 297580,
-          "end_ms": 316800
+          "start_ms": 298500,
+          "end_ms": 316930
         }
       },
       "transcript": {
@@ -618,8 +618,8 @@
             "zh": "同学们，今天我们要学习关于太阳的知识。",
             "pinyin": "tóng xué men ， jīn tiān wǒ men yào xué xí guān yú tài yáng de zhī shí 。",
             "vi": "Tiết học hôm nay giáo sư giảng rất kỹ về hiện tượng biến đổi khí hậu toàn cầu và những tác động nghiêm trọng của nó đối với môi trường sống của con người.",
-            "start_ms": 297580,
-            "end_ms": 302786
+            "start_ms": 299130,
+            "end_ms": 304434
           },
           {
             "id": "H41012_L_06_S2",
@@ -627,8 +627,8 @@
             "zh": "太阳距离地球有多远？",
             "pinyin": "tài yáng jù lí dì qiú yǒu duō yuǎn ？",
             "vi": "Mặt trời cách Trái Đất bao xa?",
-            "start_ms": 302786,
-            "end_ms": 305526
+            "start_ms": 304534,
+            "end_ms": 307335
           },
           {
             "id": "H41012_L_06_S3",
@@ -636,8 +636,8 @@
             "zh": "太阳的温度究竟有多高？",
             "pinyin": "tài yáng de wēn dù jiū jìng yǒu duō gāo ？",
             "vi": "Nhiệt độ của mặt trời rốt cuộc cao đến mức nào?",
-            "start_ms": 305526,
-            "end_ms": 308540
+            "start_ms": 307435,
+            "end_ms": 309314
           },
           {
             "id": "H41012_L_06_S4",
@@ -645,8 +645,8 @@
             "zh": "学完这节课大家就会知道答案了。",
             "pinyin": "xué wán zhè jié kè dà jiā jiù huì zhī dào dá àn le 。",
             "vi": "Học xong tiết học này mọi người sẽ biết được câu trả lời.",
-            "start_ms": 308540,
-            "end_ms": 312650
+            "start_ms": 309414,
+            "end_ms": 314680
           }
         ]
       },
@@ -729,21 +729,21 @@
       "audio_src": "assets/audio/exams/H41012.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 326900,
-          "end_ms": 336740
+          "start_ms": 327859,
+          "end_ms": 339659
         },
         "statement": {
-          "start_ms": 336940,
-          "end_ms": 340940
+          "start_ms": 339859,
+          "end_ms": 341010
         },
         "full_question": {
-          "start_ms": 326900,
-          "end_ms": 340940
+          "start_ms": 327859,
+          "end_ms": 341010
         }
       },
       "transcript": {
@@ -756,8 +756,8 @@
             "zh": "黄律师，下周六晚上我们公司要举办一场舞会，我们经理想邀请您和您妻子参加，您那时候有时间吗？",
             "pinyin": "huáng lǜ shī ， xià zhōu liù wǎn shàng wǒ men gōng sī yào jǔ bàn yī cháng wǔ huì ， wǒ men jīng lǐ xiǎng yāo qǐng nín hé nín qī zǐ cān jiā ， nín nà shí hòu yǒu shí jiān ma ？",
             "vi": "Dạ hội khiêu vũ chào đón tân sinh viên sẽ được tổ chức vào tối Chủ Nhật tuần này tại nhà thi đấu của trường, hoan nghênh tất cả các bạn đến tham gia.",
-            "start_ms": 326900,
-            "end_ms": 336740
+            "start_ms": 328450,
+            "end_ms": 339659
           }
         ]
       },
@@ -840,21 +840,21 @@
       "audio_src": "assets/audio/exams/H41012.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 351020,
-          "end_ms": 366140
+          "start_ms": 350679,
+          "end_ms": 369219
         },
         "statement": {
-          "start_ms": 366340,
-          "end_ms": 369940
+          "start_ms": 369419,
+          "end_ms": 370010
         },
         "full_question": {
-          "start_ms": 351020,
-          "end_ms": 369940
+          "start_ms": 350679,
+          "end_ms": 370010
         }
       },
       "transcript": {
@@ -867,8 +867,8 @@
             "zh": "这种小镜子非常适合你们年轻女孩子用，样子好看又不重，放在包里十分方便。",
             "pinyin": "zhè zhǒng xiǎo jìng zi fēi cháng shì hé nǐ men nián qīng nǚ hái zi yòng ， yàng zi hǎo kàn yòu bù zhòng ， fàng zài bāo lǐ shí fēn fāng biàn 。",
             "vi": "Loại gương này sử dụng chất liệu composite đặc biệt thế hệ mới, không chỉ độ phản chiếu rõ nét mà trọng lượng còn vô cùng nhẹ, rất dễ di chuyển và lắp đặt.",
-            "start_ms": 351020,
-            "end_ms": 366140
+            "start_ms": 352030,
+            "end_ms": 369219
           }
         ]
       },
@@ -951,21 +951,21 @@
       "audio_src": "assets/audio/exams/H41012.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 380060,
-          "end_ms": 394820
+          "start_ms": 379760,
+          "end_ms": 397900
         },
         "statement": {
-          "start_ms": 395020,
-          "end_ms": 398620
+          "start_ms": 398100,
+          "end_ms": 398750
         },
         "full_question": {
-          "start_ms": 380060,
-          "end_ms": 398620
+          "start_ms": 379760,
+          "end_ms": 398750
         }
       },
       "transcript": {
@@ -978,8 +978,8 @@
             "zh": "九江市在长江的南边，是江西省第二大城市。",
             "pinyin": "jiǔ jiāng shì zài cháng jiāng de nán biān ， shì jiāng xī shěng dì èr dà chéng shì 。",
             "vi": "Thành phố Cửu Giang là một thành phố cổ kính nổi tiếng bên sông Trường Giang, nơi đây có bề dày lịch sử văn hóa hơn hai nghìn năm.",
-            "start_ms": 380060,
-            "end_ms": 385848
+            "start_ms": 381170,
+            "end_ms": 388434
           },
           {
             "id": "H41012_L_09_S2",
@@ -987,8 +987,8 @@
             "zh": "它有两千二百多年的历史，既是一座文化名城，也是著名的旅游城市。",
             "pinyin": "tā yǒu liǎng qiān èr bǎi duō nián de lì shǐ ， jì shì yī zuò wén huà míng chéng ， yě shì zhù míng de lǚ yóu chéng shì 。",
             "vi": "Nơi đây có hơn 2.200 năm lịch sử, vừa là một thành phố văn hóa nổi tiếng, vừa là một thành phố du lịch trứ danh.",
-            "start_ms": 385848,
-            "end_ms": 394819
+            "start_ms": 388534,
+            "end_ms": 397900
           }
         ]
       },
@@ -1057,21 +1057,21 @@
       "audio_src": "assets/audio/exams/H41012.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 408720,
-          "end_ms": 425780
+          "start_ms": 407960,
+          "end_ms": 423659
         },
         "statement": {
-          "start_ms": 425980,
-          "end_ms": 429980
+          "start_ms": 423870,
+          "end_ms": 430010
         },
         "full_question": {
-          "start_ms": 408720,
-          "end_ms": 429980
+          "start_ms": 407960,
+          "end_ms": 430010
         }
       },
       "transcript": {
@@ -1084,8 +1084,8 @@
             "zh": "两个人之间有了误会一定要及时解释清楚，否则时间一长误会就会更深，到那时再去解决恐怕就不容易了。",
             "pinyin": "liǎng gè rén zhī jiān yǒu le wù huì yí dìng yào jí shí jiě shì qīng chǔ ， fǒu zé shí jiān yī zhǎng wù huì jiù huì gēng shēn ， dào nà shí zài qù jiě jué kǒng pà jiù bù róng yì le 。",
             "vi": "Trong cuộc sống giữa bạn bè hay đồng nghiệp với nhau khó tránh khỏi hiểu lầm, khi có hiểu lầm thì nhất định phải giải thích rõ ràng kịp thời, đừng để khúc mắc kéo dài.",
-            "start_ms": 408720,
-            "end_ms": 425780
+            "start_ms": 408710,
+            "end_ms": 423659
           }
         ]
       },

@@ -25,21 +25,21 @@
       "audio_src": "assets/audio/exams/H41009.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 159460,
-          "end_ms": 174970
+          "start_ms": 157460,
+          "end_ms": 178260
         },
         "statement": {
-          "start_ms": 175170,
-          "end_ms": 179120
+          "start_ms": 178460,
+          "end_ms": 179310
         },
         "full_question": {
-          "start_ms": 159460,
-          "end_ms": 179120
+          "start_ms": 157460,
+          "end_ms": 179310
         }
       },
       "transcript": {
@@ -52,8 +52,8 @@
             "zh": "有些人认为家天用浪水洗澡会更凉快这是不正确的 其实热水洗澡更容易帮人降温同样 家天喝热水也比喝冰水更结可",
             "pinyin": "yǒu xiē rén rèn wéi jiā tiān yòng làng shuǐ xǐ zǎo huì gèng liáng kuài zhè shì bù zhèng què de   qí shí rè shuǐ xǐ zǎo gèng róng yì bāng rén jiàng wēn tóng yàng   jiā tiān hē rè shuǐ yě bǐ hē bīng shuǐ gèng jié kě",
             "vi": "Quản lý Lý, đây là tài liệu cuộc họp sáng nay, tôi đã sắp xếp chỉnh lý xong rồi, mời ngài xem qua.",
-            "start_ms": 159460,
-            "end_ms": 174970
+            "start_ms": 157970,
+            "end_ms": 178260
           }
         ]
       },
@@ -129,21 +129,21 @@
       "audio_src": "assets/audio/exams/H41009.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 189220,
-          "end_ms": 204460
+          "start_ms": 188780,
+          "end_ms": 207720
         },
         "statement": {
-          "start_ms": 204660,
-          "end_ms": 208660
+          "start_ms": 207920,
+          "end_ms": 208750
         },
         "full_question": {
-          "start_ms": 189220,
-          "end_ms": 208660
+          "start_ms": 188780,
+          "end_ms": 208750
         }
       },
       "transcript": {
@@ -156,8 +156,8 @@
             "zh": "我刚学会开车 技术一般 还经常走错路朋友建议我平时多开车出去走走熟悉一下道路情况 这也慢慢就好了",
             "pinyin": "wǒ gāng xué huì kāi chē   jì shù yì bān   hái jīng cháng zǒu cuò lù péng yǒu jiàn yì wǒ píng shí duō kāi chē chū qù zǒu zǒu shú xī yī xià dào lù qíng kuàng   zhè yě màn màn jiù hǎo le",
             "vi": "Hôm nay tuyết rơi dày quá, trên đường trơn lắm, xe cộ đi lại đều rất chậm, xem ra sáng nay khó lòng đến công ty đúng giờ rồi.",
-            "start_ms": 189220,
-            "end_ms": 204460
+            "start_ms": 190590,
+            "end_ms": 207720
           }
         ]
       },
@@ -240,21 +240,21 @@
       "audio_src": "assets/audio/exams/H41009.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 218740,
-          "end_ms": 234570
+          "start_ms": 218400,
+          "end_ms": 227060
         },
         "statement": {
-          "start_ms": 234770,
-          "end_ms": 238720
+          "start_ms": 227260,
+          "end_ms": 238910
         },
         "full_question": {
-          "start_ms": 218740,
-          "end_ms": 238720
+          "start_ms": 218400,
+          "end_ms": 238910
         }
       },
       "transcript": {
@@ -267,8 +267,8 @@
             "zh": "只有通过了考试 完全符合要求后或是才能正式开始工作依然对护是这一职业的要求是专业 负责 尊重生命",
             "pinyin": "zhǐ yǒu tōng guò le kǎo shì   wán quán fú hé yāo qiú hòu huò shì cái néng zhèng shì kāi shǐ gōng zuò yī rán duì hù shì zhè yī zhí yè de yāo qiú shì zhuān yè   fù zé   zūn chóng shēng mìng",
             "vi": "Tiểu Trương, cậu nghe xem bài hát này hát thế nào? Đây là bài hát trong bộ phim truyền hình đang rất nổi tiếng gần đây đấy.",
-            "start_ms": 218740,
-            "end_ms": 234570
+            "start_ms": 219970,
+            "end_ms": 227060
           }
         ]
       },
@@ -351,21 +351,21 @@
       "audio_src": "assets/audio/exams/H41009.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 248900,
-          "end_ms": 263320
+          "start_ms": 249380,
+          "end_ms": 250959
         },
         "statement": {
-          "start_ms": 263520,
-          "end_ms": 267520
+          "start_ms": 251159,
+          "end_ms": 267670
         },
         "full_question": {
-          "start_ms": 248900,
-          "end_ms": 267520
+          "start_ms": 249380,
+          "end_ms": 267670
         }
       },
       "transcript": {
@@ -378,8 +378,8 @@
             "zh": "这个电影讲的是一个男孩子和一吃老虎在大海上努力活下来的故事 听说非常棒咱们明天晚上去看看吧",
             "pinyin": "zhè ge diàn yǐng jiǎng de shì yí gè nán hái zi hé yī chī lǎo hǔ zài dà hǎi shàng nǔ lì huó xià lái de gù shì   tīng shuō fēi cháng bàng zán men míng tiān wǎn shàng qù kàn kàn ba",
             "vi": "Ăn nhiều hoa quả và rau xanh rất tốt cho sức khỏe, không chỉ có thể bổ sung vitamin mà còn giúp nâng cao sức đề kháng của cơ thể.",
-            "start_ms": 248900,
-            "end_ms": 263320
+            "start_ms": 249970,
+            "end_ms": 250959
           }
         ]
       },
@@ -462,21 +462,21 @@
       "audio_src": "assets/audio/exams/H41009.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 277620,
-          "end_ms": 291510
+          "start_ms": 277280,
+          "end_ms": 294780
         },
         "statement": {
-          "start_ms": 291710,
-          "end_ms": 295660
+          "start_ms": 294980,
+          "end_ms": 295770
         },
         "full_question": {
-          "start_ms": 277620,
-          "end_ms": 295660
+          "start_ms": 277280,
+          "end_ms": 295770
         }
       },
       "transcript": {
@@ -489,8 +489,8 @@
             "zh": "今天去游泳的时候 遇见小原和他妻子了我本来以为他俩都去北京工作了没想到他们还一直留在这",
             "pinyin": "jīn tiān qù yóu yǒng de shí hòu   yù jiàn xiǎo yuán hé tā qī zǐ le wǒ běn lái yǐ wéi tā liǎ dōu qù běi jīng gōng zuò le méi xiǎng dào tā men hái yì zhí liú zài zhè",
             "vi": "Chuyến bay ban đầu dự định 2 giờ chiều cất cánh vì lý do thời tiết đành phải hoãn lại đến 5 giờ chiều, xin quý hành khách thông cảm.",
-            "start_ms": 277620,
-            "end_ms": 291510
+            "start_ms": 278830,
+            "end_ms": 294780
           }
         ]
       },
@@ -573,21 +573,21 @@
       "audio_src": "assets/audio/exams/H41009.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 305800,
-          "end_ms": 323860
+          "start_ms": 305320,
+          "end_ms": 327200
         },
         "statement": {
-          "start_ms": 324060,
-          "end_ms": 327660
+          "start_ms": 327400,
+          "end_ms": 327890
         },
         "full_question": {
-          "start_ms": 305800,
-          "end_ms": 327660
+          "start_ms": 305320,
+          "end_ms": 327890
         }
       },
       "transcript": {
@@ -600,8 +600,8 @@
             "zh": "大人有时会陷谋孩子因为孩子的世界没有那么复杂所以他们总是很快乐同时孩子也是最诚实的不会怀疑别人 更不会去骗人",
             "pinyin": "dà rén yǒu shí huì xiàn móu hái zi yīn wèi hái zi de shì jiè méi yǒu nà me fù zá suǒ yǐ tā men zǒng shì hěn kuài lè tóng shí hái zi yě shì zuì chéng shí de bú huì huái yí bié rén   gèng bú huì qù piàn rén",
             "vi": "Cậu đã đi công viên mới xây ở phía tây thành phố chưa? Nghe nói phong cảnh bên trong rất đẹp, cuối tuần chúng mình cùng đi dạo xem sao nhé.",
-            "start_ms": 305800,
-            "end_ms": 323860
+            "start_ms": 307050,
+            "end_ms": 327200
           }
         ]
       },
@@ -684,21 +684,21 @@
       "audio_src": "assets/audio/exams/H41009.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 337760,
-          "end_ms": 348840
+          "start_ms": 337200,
+          "end_ms": 352060
         },
         "statement": {
-          "start_ms": 349040,
-          "end_ms": 353040
+          "start_ms": 352260,
+          "end_ms": 353210
         },
         "full_question": {
-          "start_ms": 337760,
-          "end_ms": 353040
+          "start_ms": 337200,
+          "end_ms": 353210
         }
       },
       "transcript": {
@@ -711,8 +711,8 @@
             "zh": "我再往上给你买了几本书估计三天左右就能到你说到了 记得给我打个电话说一声",
             "pinyin": "wǒ zài wǎng shàng gěi nǐ mǎi le jǐ běn shū gū jì sān tiān zuǒ yòu jiù néng dào nǐ shuō dào le   jì de gěi wǒ dǎ gè diàn huà shuō yī shēng",
             "vi": "Học ngoại ngữ cần sự tích lũy lâu dài, chỉ dựa vào sự hứng thú nhất thời thì không thể học giỏi được, quan trọng là phải kiên trì ngày này qua ngày khác.",
-            "start_ms": 337760,
-            "end_ms": 348840
+            "start_ms": 338890,
+            "end_ms": 352060
           }
         ]
       },
@@ -788,21 +788,21 @@
       "audio_src": "assets/audio/exams/H41009.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 363100,
-          "end_ms": 378230
+          "start_ms": 362780,
+          "end_ms": 378920
         },
         "statement": {
-          "start_ms": 378430,
-          "end_ms": 382380
+          "start_ms": 378950,
+          "end_ms": 382570
         },
         "full_question": {
-          "start_ms": 363100,
-          "end_ms": 382380
+          "start_ms": 362780,
+          "end_ms": 382570
         }
       },
       "transcript": {
@@ -815,8 +815,8 @@
             "zh": "我问过大家了3分之二的同学都去过常常这次春游得换个地方了咱们明天开个班会 商量一下去哪儿吧",
             "pinyin": "wǒ wèn guò dà jiā le 3 fēn zhī èr de tóng xué dōu qù guò cháng cháng zhè cì chūn yóu dé huàn gè dì fāng le zán men míng tiān kāi gè bān huì   shāng liáng yī xià qù nǎ ér ba",
             "vi": "Tiểu Vương, lần này cậu làm việc biểu hiện rất xuất sắc, ban lãnh đạo quyết định thăng chức cho cậu làm phó giám đốc bộ phận, cố gắng lên nhé!",
-            "start_ms": 363100,
-            "end_ms": 378230
+            "start_ms": 364630,
+            "end_ms": 378920
           }
         ]
       },
@@ -899,21 +899,21 @@
       "audio_src": "assets/audio/exams/H41009.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 392440,
-          "end_ms": 405040
+          "start_ms": 392179,
+          "end_ms": 407719
         },
         "statement": {
-          "start_ms": 405240,
-          "end_ms": 409240
+          "start_ms": 407919,
+          "end_ms": 409410
         },
         "full_question": {
-          "start_ms": 392440,
-          "end_ms": 409240
+          "start_ms": 392179,
+          "end_ms": 409410
         }
       },
       "transcript": {
@@ -926,8 +926,8 @@
             "zh": "前进的过程中最关键的是要找对方向如果方向错了无论你怎么努力都只会离目地地越来越远",
             "pinyin": "qián jìn de guò chéng zhōng zuì guān jiàn de shì yào zhǎo duì fāng xiàng rú guǒ fāng xiàng cuò liǎo wú lùn nǐ zěn me nǔ lì dōu zhǐ huì lí mù dì dì yuè lái yuè yuǎn",
             "vi": "Món cá này nấu ngon thật đấy, vừa thơm vừa đậm đà, cậu dạy tôi cách nấu đi, về nhà tôi cũng muốn làm thử cho gia đình nếm xem.",
-            "start_ms": 392440,
-            "end_ms": 405040
+            "start_ms": 393970,
+            "end_ms": 407719
           }
         ]
       },
@@ -1010,21 +1010,21 @@
       "audio_src": "assets/audio/exams/H41009.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 419420,
-          "end_ms": 436860
+          "start_ms": 419120,
+          "end_ms": 439640
         },
         "statement": {
-          "start_ms": 437060,
-          "end_ms": 440660
+          "start_ms": 439840,
+          "end_ms": 440650
         },
         "full_question": {
-          "start_ms": 419420,
-          "end_ms": 440660
+          "start_ms": 419120,
+          "end_ms": 440650
         }
       },
       "transcript": {
@@ -1037,8 +1037,8 @@
             "zh": "第二部分1共15个题每题听一次例如该加油了去机场的路上有加油战吗有你放心吧",
             "pinyin": "dì èr bù fèn 1 gòng 15 gè tí měi tí tīng yī cì lì rú gāi jiā yóu le qù jī chǎng de lù shàng yǒu jiā yóu zhàn ma yǒu nǐ fàng xīn ba",
             "vi": "Mua sắm trên mạng tuy rất thuận tiện nhưng thỉnh thoảng cũng sẽ gặp phải sản phẩm chất lượng không tương xứng với ảnh chụp, cho nên khi mua đồ cần phải lựa chọn cẩn thận.",
-            "start_ms": 419420,
-            "end_ms": 436860
+            "start_ms": 419710,
+            "end_ms": 439640
           }
         ]
       },

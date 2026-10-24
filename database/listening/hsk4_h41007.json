@@ -25,21 +25,21 @@
       "audio_src": "assets/audio/exams/H41007.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 163540,
-          "end_ms": 170340
+          "start_ms": 162560,
+          "end_ms": 173280
         },
         "statement": {
-          "start_ms": 170540,
-          "end_ms": 174360
+          "start_ms": 173480,
+          "end_ms": 174370
         },
         "full_question": {
-          "start_ms": 163540,
-          "end_ms": 174360
+          "start_ms": 162560,
+          "end_ms": 174370
         }
       },
       "transcript": {
@@ -52,8 +52,8 @@
             "zh": "女兒說他今天下班後有約會要跟同學去看電影晚上不回來吃飯了",
             "pinyin": "nǚ ér shuō tā jīn tiān xià bān hòu yǒu yuē huì yào gēn tóng xué qù kàn diàn yǐng wǎn shàng bù huí lái chī fàn le",
             "vi": "Kỳ nghỉ hè này tôi dự định đi Vân Nam du lịch một chuyến, phong cảnh nơi đó rất đẹp.",
-            "start_ms": 163540,
-            "end_ms": 170340
+            "start_ms": 162989,
+            "end_ms": 173280
           }
         ]
       },
@@ -101,21 +101,21 @@
       "audio_src": "assets/audio/exams/H41007.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 184420,
-          "end_ms": 199580
+          "start_ms": 184020,
+          "end_ms": 199019
         },
         "statement": {
-          "start_ms": 199780,
-          "end_ms": 203380
+          "start_ms": 199219,
+          "end_ms": 203350
         },
         "full_question": {
-          "start_ms": 184420,
-          "end_ms": 203380
+          "start_ms": 184020,
+          "end_ms": 203350
         }
       },
       "transcript": {
@@ -128,8 +128,8 @@
             "zh": "後來逐漸習慣了也交到了很多朋友我越來越喜歡這兒的生活了他習慣了這裏的生活他習慣了這裏的生活",
             "pinyin": "hòu lái zhú jiàn xí guàn le yě jiāo dào le hěn duō péng yǒu wǒ yuè lái yuè xǐ huān zhè ér de shēng huó le tā xí guàn le zhè lǐ de shēng huó tā xí guàn le zhè lǐ de shēng huó",
             "vi": "Con gái bảo hôm nay sau khi tan làm có hẹn đi xem phim cùng bạn học, tối không về nhà ăn cơm.",
-            "start_ms": 184420,
-            "end_ms": 199580
+            "start_ms": 185410,
+            "end_ms": 199019
           }
         ]
       },
@@ -191,21 +191,21 @@
       "audio_src": "assets/audio/exams/H41007.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 213440,
-          "end_ms": 228200
+          "start_ms": 213220,
+          "end_ms": 229959
         },
         "statement": {
-          "start_ms": 228400,
-          "end_ms": 232400
+          "start_ms": 230159,
+          "end_ms": 232410
         },
         "full_question": {
-          "start_ms": 213440,
-          "end_ms": 232400
+          "start_ms": 213220,
+          "end_ms": 232410
         }
       },
       "transcript": {
@@ -218,8 +218,8 @@
             "zh": "那個網站上的內容很豐富不但有科學藝術方面的知識還有許多小笑話我發給你王子有興趣的話可以上去看看",
             "pinyin": "nà gè wǎng zhàn shàng de nèi róng hěn fēng fù bù dàn yǒu kē xué yì shù fāng miàn de zhī shí hái yǒu xǔ duō xiǎo xiào huà wǒ fā gěi nǐ wáng zǐ yǒu xìng qù de huà kě yǐ shàng qù kàn kàn",
             "vi": "Về sau dần dần quen rồi cũng kết thêm được nhiều bạn bè, tôi ngày càng yêu thích cuộc sống ở nơi này.",
-            "start_ms": 213440,
-            "end_ms": 228200
+            "start_ms": 214670,
+            "end_ms": 229959
           }
         ]
       },
@@ -274,21 +274,21 @@
       "audio_src": "assets/audio/exams/H41007.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 242500,
-          "end_ms": 257069
+          "start_ms": 242200,
+          "end_ms": 250179
         },
         "statement": {
-          "start_ms": 257269,
-          "end_ms": 260519
+          "start_ms": 250379,
+          "end_ms": 260529
         },
         "full_question": {
-          "start_ms": 242500,
-          "end_ms": 260519
+          "start_ms": 242200,
+          "end_ms": 260529
         }
       },
       "transcript": {
@@ -301,8 +301,8 @@
             "zh": "中國人認為數字六代表順利所以他們喜歡在帶有六的日子結婚希望自己的電話號碼裡有六",
             "pinyin": "zhōng guó rén rèn wèi shù zì liù dài biǎo shùn lì suǒ yǐ tā men xǐ huān zài dài yǒu liù de rì zi jié hūn xī wàng zì jǐ de diàn huà hào mǎ lǐ yǒu liù",
             "vi": "Nội dung trên trang web đó rất phong phú, không chỉ có kiến thức khoa học nghệ thuật mà còn có rất nhiều mẩu chuyện cười, tôi gửi đường dẫn cho cậu, nếu hứng thú thì lên xem thử nhé.",
-            "start_ms": 242500,
-            "end_ms": 257069
+            "start_ms": 243730,
+            "end_ms": 250179
           }
         ]
       },
@@ -350,21 +350,21 @@
       "audio_src": "assets/audio/exams/H41007.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 270560,
-          "end_ms": 287340
+          "start_ms": 270140,
+          "end_ms": 290500
         },
         "statement": {
-          "start_ms": 287540,
-          "end_ms": 291540
+          "start_ms": 290700,
+          "end_ms": 291570
         },
         "full_question": {
-          "start_ms": 270560,
-          "end_ms": 291540
+          "start_ms": 270140,
+          "end_ms": 291570
         }
       },
       "transcript": {
@@ -377,8 +377,8 @@
             "zh": "我平時上班忙很少有時間運動但是週末我會約朋友們見面一塊去打籃球或者提足球偶爾也會去爬山",
             "pinyin": "wǒ píng shí shàng bān máng hěn shǎo yǒu shí jiān yùn dòng dàn shì zhōu mò wǒ huì yuē péng yǒu men jiàn miàn yī kuài qù dǎ lán qiú huò zhě tí zú qiú ǒu ěr yě huì qù pá shān",
             "vi": "Người Trung Quốc cho rằng số 6 đại diện cho sự thuận lợi, cho nên họ thích kết hôn vào những ngày có số 6, hy vọng số điện thoại của mình cũng có số 6.",
-            "start_ms": 270560,
-            "end_ms": 287340
+            "start_ms": 270810,
+            "end_ms": 290500
           }
         ]
       },
@@ -454,21 +454,21 @@
       "audio_src": "assets/audio/exams/H41007.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 301600,
-          "end_ms": 312120
+          "start_ms": 301140,
+          "end_ms": 315000
         },
         "statement": {
-          "start_ms": 312320,
-          "end_ms": 316320
+          "start_ms": 315200,
+          "end_ms": 316570
         },
         "full_question": {
-          "start_ms": 301600,
-          "end_ms": 316320
+          "start_ms": 301140,
+          "end_ms": 316570
         }
       },
       "transcript": {
@@ -481,8 +481,8 @@
             "zh": "你不是準備參加普通話考試嗎明天報名就結束了你怎麼還沒交材料",
             "pinyin": "nǐ bú shì zhǔn bèi cān jiā pǔ tōng huà kǎo shì ma míng tiān bào míng jiù jié shù le nǐ zěn me hái méi jiāo cái liào",
             "vi": "Bình thường đi làm bận rộn tôi hiếm khi có thời gian vận động, nhưng cuối tuần tôi sẽ hẹn bạn bè gặp mặt, cùng đi chơi bóng rổ hoặc đá bóng, thỉnh thoảng cũng đi leo núi.",
-            "start_ms": 301600,
-            "end_ms": 312120
+            "start_ms": 301850,
+            "end_ms": 315000
           }
         ]
       },
@@ -537,21 +537,21 @@
       "audio_src": "assets/audio/exams/H41007.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 326400,
-          "end_ms": 339410
+          "start_ms": 327320,
+          "end_ms": 342360
         },
         "statement": {
-          "start_ms": 339610,
-          "end_ms": 343560
+          "start_ms": 342560,
+          "end_ms": 343570
         },
         "full_question": {
-          "start_ms": 326400,
-          "end_ms": 343560
+          "start_ms": 327320,
+          "end_ms": 343570
         }
       },
       "transcript": {
@@ -564,8 +564,8 @@
             "zh": "小林如果你在法律方面有什麼問題我可以給你介紹一位律師你可以先和他聊一下他會給你一些專業性的意見",
             "pinyin": "xiǎo lín rú guǒ nǐ zài fǎ lǜ fāng miàn yǒu shén me wèn tí wǒ kě yǐ gěi nǐ jiè shào yī wèi lǜ shī nǐ kě yǐ xiān hé tā liáo yī xià tā huì gěi nǐ yī xiē zhuān yè xìng de yì jiàn",
             "vi": "Cậu chẳng phải chuẩn bị thi tiếng Phổ thông sao, ngày mai là hết hạn đăng ký rồi, sao cậu vẫn chưa nộp hồ sơ?",
-            "start_ms": 326400,
-            "end_ms": 339410
+            "start_ms": 327830,
+            "end_ms": 342360
           }
         ]
       },
@@ -648,21 +648,21 @@
       "audio_src": "assets/audio/exams/H41007.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 353680,
-          "end_ms": 372940
+          "start_ms": 353320,
+          "end_ms": 374500
         },
         "statement": {
-          "start_ms": 373140,
-          "end_ms": 376040
+          "start_ms": 374700,
+          "end_ms": 378150
         },
         "full_question": {
-          "start_ms": 353680,
-          "end_ms": 376040
+          "start_ms": 353320,
+          "end_ms": 378150
         }
       },
       "transcript": {
@@ -675,8 +675,8 @@
             "zh": "我們總是現目別人有份好工作有個好妻子卻常常忘記了自己已有的幸福其實我們在別人眼中也是幸福的只是我們沒有發現",
             "pinyin": "wǒ men zǒng shì xiàn mù bié rén yǒu fèn hǎo gōng zuò yǒu gè hǎo qī zǐ què cháng cháng wàng jì le zì jǐ yǐ yǒu de xìng fú qí shí wǒ men zài bié rén yǎn zhōng yě shì xìng fú de zhǐ shì wǒ men méi yǒu fā xiàn",
             "vi": "Tiểu Lâm, nếu cậu có vấn đề gì về mặt pháp luật thì tôi có thể giới thiệu cho cậu một luật sư, cậu có thể trò chuyện trước với anh ấy, anh ấy sẽ cho cậu một vài lời khuyên chuyên môn.",
-            "start_ms": 353680,
-            "end_ms": 372940
+            "start_ms": 354910,
+            "end_ms": 374500
           }
         ]
       },
@@ -738,21 +738,21 @@
       "audio_src": "assets/audio/exams/H41007.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 386140,
-          "end_ms": 403930
+          "start_ms": 384739,
+          "end_ms": 403120
         },
         "statement": {
-          "start_ms": 404130,
-          "end_ms": 408080
+          "start_ms": 403320,
+          "end_ms": 408230
         },
         "full_question": {
-          "start_ms": 386140,
-          "end_ms": 408080
+          "start_ms": 384739,
+          "end_ms": 408230
         }
       },
       "transcript": {
@@ -765,8 +765,8 @@
             "zh": "是由於冷空信談下我省明天將迎來大風降溫天氣有些地方還會有小道終於交通會受到一定影響聽眾朋友們出行時一定要注意安全",
             "pinyin": "shì yóu yú lěng kōng xìn tán xià wǒ shěng míng tiān jiāng yíng lái dà fēng jiàng wēn tiān qì yǒu xiē dì fāng hái huì yǒu xiǎo dào zhōng yú jiāo tōng huì shòu dào yí dìng yǐng xiǎng tīng zhòng péng yǒu men chū xíng shí yí dìng yào zhù yì ān quán",
             "vi": "Chúng ta lúc nào cũng ngưỡng mộ người khác có công việc tốt, có người vợ hiền, mà thường quên mất hạnh phúc sẵn có của chính mình. Thực ra trong mắt người khác chúng ta cũng rất hạnh phúc, chỉ là chúng ta chưa nhận ra thôi.",
-            "start_ms": 386140,
-            "end_ms": 403930
+            "start_ms": 385310,
+            "end_ms": 403120
           }
         ]
       },
@@ -849,21 +849,21 @@
       "audio_src": "assets/audio/exams/H41007.mp3",
       "alignment": {
         "status": "verified",
-        "method": "silence_envelope_speech_segmented_number_anchored",
-        "notes": "Mốc âm thanh bắt đầu từ số thứ tự câu hỏi và kết thúc chính xác sau câu hỏi nhận định, loại bỏ khoảng lặng dư thừa."
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
       },
       "segments": {
         "passage": {
-          "start_ms": 418160,
-          "end_ms": 435599
+          "start_ms": 417340,
+          "end_ms": 438420
         },
         "statement": {
-          "start_ms": 435799,
-          "end_ms": 439400
+          "start_ms": 438620,
+          "end_ms": 439430
         },
         "full_question": {
-          "start_ms": 418160,
-          "end_ms": 439400
+          "start_ms": 417340,
+          "end_ms": 439430
         }
       },
       "transcript": {
@@ -876,8 +876,8 @@
             "zh": "每題聽一次例如該加油了去機場的路上有加油站嗎有你放心吧",
             "pinyin": "měi tí tīng yī cì lì rú gāi jiā yóu le qù jī chǎng de lù shàng yǒu jiā yóu zhàn ma yǒu nǐ fàng xīn ba",
             "vi": "Do khối không khí lạnh tràn xuống, ngày mai tỉnh ta sẽ đón thời tiết gió mạnh giảm nhiệt độ, một số nơi còn có mưa tuyết, giao thông sẽ chịu ảnh hưởng nhất định, quý thính giả khi ra ngoài nhất định phải chú ý an toàn.",
-            "start_ms": 418160,
-            "end_ms": 435599
+            "start_ms": 418410,
+            "end_ms": 438420
           }
         ]
       },
