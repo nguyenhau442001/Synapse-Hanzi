@@ -767,13 +767,13 @@ const ListeningPractice = (function() {
         <!-- 7. Bottom Navigation (Previous / Next Question) -->
         <div class="listening-bottom-nav">
           <button type="button" class="listening-nav-arrow-btn prev" onclick="ListeningPractice.prevQuestion()" ${currentQuestionIndex === 0 ? 'disabled' : ''} title="Câu trước">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
-            <span>Trước</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+            <span>Câu trước</span>
           </button>
           <span class="listening-bottom-counter">${currentQuestion.question_number} / ${questions.length}</span>
-          <button type="button" class="listening-nav-arrow-btn next ${learnerState.answered ? 'is-answered' : ''}" onclick="ListeningPractice.nextQuestion()" ${!hasNext ? 'disabled' : ''} title="Câu tiếp">
-            <span>Tiếp</span>
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          <button type="button" class="listening-nav-arrow-btn next ${learnerState.answered ? 'is-answered' : ''}" onclick="ListeningPractice.nextQuestion()" ${!hasNext ? 'disabled' : ''} title="Câu tiếp theo">
+            <span>Câu tiếp theo</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
           </button>
         </div>
       </section>
@@ -917,7 +917,56 @@ const ListeningPractice = (function() {
   }
 
   // ---------------------------------------------------------------------------
-  // Compact Feedback Section (Neutral warm palette & inline evidence playback)
+  // Helper: Highlight Evidence within Chinese Sentence
+  // ---------------------------------------------------------------------------
+  function escapeHtml(str) {
+    if (!str) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function highlightEvidenceInSentence(sentZh, evidenceZh) {
+    if (!sentZh) return '';
+    if (!evidenceZh) return escapeHtml(sentZh);
+    const cleanEv = String(evidenceZh).replace(/^[“”"'\s]+|[“”"'\s]+$/g, '').trim();
+    if (!cleanEv || !sentZh.includes(cleanEv)) {
+      return escapeHtml(sentZh);
+    }
+    const parts = sentZh.split(cleanEv);
+    return parts.map(p => escapeHtml(p)).join(`<mark class="listening-evidence-highlight listening-evidence-inline-mark">${escapeHtml(cleanEv)}</mark>`);
+  }
+
+  function getPrioritizedVocabularies(vocabs) {
+    if (!Array.isArray(vocabs)) return [];
+    const ultraBasic = new Set(['没有', '我们', '我', '你', '他', '她', '这', '那', '的', '了']);
+    const levelOrder = { 'HSK4': 4, 'HSK3': 3, 'HSK2': 2, 'HSK1': 1 };
+    
+    // Filter out ultra-basic words if we already have richer vocabulary
+    let filtered = vocabs;
+    const nonBasic = vocabs.filter(v => !ultraBasic.has(v.word));
+    if (nonBasic.length >= 4) {
+      filtered = nonBasic;
+    }
+    
+    return [...filtered].sort((a, b) => {
+      const aBasic = ultraBasic.has(a.word) ? 1 : 0;
+      const bBasic = ultraBasic.has(b.word) ? 1 : 0;
+      if (aBasic !== bBasic) return aBasic - bBasic;
+      
+      const aLvl = levelOrder[a.level] || 0;
+      const bLvl = levelOrder[b.level] || 0;
+      if (aLvl !== bLvl) return bLvl - aLvl;
+      
+      return (b.word || '').length - (a.word || '').length;
+    });
+  }
+
+  // ---------------------------------------------------------------------------
+  // Compact Feedback Section (Streamlined, clear outcome & inline evidence)
   // ---------------------------------------------------------------------------
   function renderCompactFeedback() {
     const q = currentQuestion;
@@ -937,44 +986,51 @@ const ListeningPractice = (function() {
     const evidenceVi = evidenceSentence && evidenceSentence.vi ? evidenceSentence.vi : '';
     const isEvidencePlaying = evidenceSentenceId && learnerState.activePlayingSegment === evidenceSentenceId;
 
+    const answerLabel = q.answer ? 'Đúng' : 'Sai';
+    const statusText = isCorrect
+      ? `Bạn trả lời đúng · Đáp án: ${answerLabel}`
+      : `Bạn trả lời chưa đúng · Đáp án: ${answerLabel}`;
+
+    const evidenceZhText = evidenceSentence ? evidenceSentence.zh : (q.evidence ? q.evidence.zh : '');
+
     return `
       <div class="listening-feedback-card ${isCorrect ? 'is-correct' : 'is-incorrect'}">
-        <div class="listening-feedback-header-line">
+        <div class="listening-feedback-status">
           <span class="listening-feedback-badge ${isCorrect ? 'badge-correct' : 'badge-incorrect'}">
             ${isCorrect ? `
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Chính xác</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
             ` : `
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-              <span>Chưa đúng · Đáp án: ${q.answer ? 'Đúng' : 'Sai'}</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
             `}
+            <span>${statusText}</span>
           </span>
         </div>
 
         <div class="listening-feedback-body">
-          <p class="listening-feedback-explanation">${q.explanation_vi || ''}</p>
-
-          ${q.evidence && q.evidence.zh ? `
-            <div class="listening-evidence-box">
-              <div class="listening-evidence-header">
-                <span class="listening-evidence-tag">Căn cứ trong bài:</span>
+          ${evidenceZhText ? `
+            <div class="listening-feedback-evidence">
+              <div class="listening-evidence-playback-row">
                 ${evidenceSentenceId ? `
-                  <button type="button" class="listening-replay-evidence-btn ${isEvidencePlaying ? 'is-playing' : ''}"
+                  <button type="button" class="listening-evidence-play-btn ${isEvidencePlaying ? 'is-playing' : ''}"
                     onclick="ListeningPractice.togglePlaySentence('${evidenceSentenceId}')"
-                    title="Nghe lại câu chứa bằng chứng">
+                    title="${isEvidencePlaying ? 'Tạm dừng câu này' : 'Nghe câu này'}">
                     ${isEvidencePlaying ? `
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
                       <span>Tạm dừng</span>
                     ` : `
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-                      <span>Nghe lại câu chứa bằng chứng</span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 19 12 6 20 6 4"/></svg>
+                      <span>Nghe câu này</span>
                     `}
                   </button>
                 ` : ''}
+                <div class="listening-evidence-zh" lang="zh-CN">${highlightEvidenceInSentence(evidenceZhText, q.evidence ? q.evidence.zh : '')}</div>
               </div>
-              <div class="listening-evidence-quote listening-evidence-highlight" lang="zh-CN">“${q.evidence.zh}”</div>
               ${evidenceVi ? `<div class="listening-evidence-vi">${evidenceVi}</div>` : ''}
             </div>
+          ` : ''}
+
+          ${q.explanation_vi ? `
+            <div class="listening-feedback-explanation">${q.explanation_vi}</div>
           ` : ''}
         </div>
       </div>
@@ -982,17 +1038,18 @@ const ListeningPractice = (function() {
   }
 
   // ---------------------------------------------------------------------------
-  // Transcript ("Lời thoại") & Vocabulary Surface
+  // Transcript ("Lời thoại") & Structured Learning Surface
   // ---------------------------------------------------------------------------
   function renderTranscriptAndVocabSection() {
     const q = currentQuestion;
+    const sortedVocabs = getPrioritizedVocabularies(q.vocabulary_matches);
 
     return `
       <div class="listening-transcript-container">
         <!-- Section Header with Pill Toggles -->
         <div class="listening-transcript-header">
           <div class="listening-transcript-title">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
             <span>Lời thoại</span>
           </div>
           <div class="listening-transcript-toggles">
@@ -1025,7 +1082,7 @@ const ListeningPractice = (function() {
           </div>
         </div>
 
-        <!-- Transcript Rows Separated by Subtle Dividers -->
+        <!-- Transcript Rows with Accent Highlight for Active Audio & Evidence Mark -->
         <div class="listening-transcript-rows">
           ${(q.transcript.sentences || []).map((s) => {
             const isPlayingThis = learnerState.activePlayingSegment === s.id;
@@ -1034,16 +1091,16 @@ const ListeningPractice = (function() {
               <div class="listening-transcript-row ${isPlayingThis ? 'is-playing-row' : ''}">
                 <button type="button" class="listening-row-play-btn ${isPlayingThis ? 'is-playing' : ''}"
                   onclick="ListeningPractice.togglePlaySentence('${s.id}')"
-                  ${!hasValidTime ? 'disabled title="Chưa có mốc thời gian"' : `title="Nghe câu này (${((s.end_ms - s.start_ms)/1000).toFixed(1)}s)"`}
-                  aria-label="Nghe câu này">
+                  ${!hasValidTime ? 'disabled title="Chưa có mốc thời gian"' : `title="${isPlayingThis ? 'Tạm dừng' : 'Nghe câu này'} (${((s.end_ms - s.start_ms)/1000).toFixed(1)}s)"`}
+                  aria-label="${isPlayingThis ? 'Tạm dừng' : 'Nghe câu này'}">
                   ${isPlayingThis ? `
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
                   ` : `
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 19 12 6 20 6 4"/></svg>
                   `}
                 </button>
                 <div class="listening-row-content">
-                  <div class="listening-row-zh" lang="zh-CN">${s.zh}</div>
+                  <div class="listening-row-zh" lang="zh-CN">${highlightEvidenceInSentence(s.zh, q.evidence ? q.evidence.zh : '')}</div>
                   ${learnerState.showPinyin && s.pinyin ? `
                     <div class="listening-row-pinyin">${formatNaturalPinyin(s.pinyin)}</div>
                   ` : ''}
@@ -1056,25 +1113,48 @@ const ListeningPractice = (function() {
           }).join('')}
         </div>
 
-        <!-- Quieter Vocabulary Strip -->
-        ${q.vocabulary_matches && q.vocabulary_matches.length > 0 ? `
+        <!-- Key Expressions & Points of Comprehension -->
+        ${q.key_expressions && q.key_expressions.length > 0 ? `
+          <div class="listening-key-section">
+            <div class="listening-section-title">Cụm cần hiểu & Điểm ngữ pháp</div>
+            <div class="listening-key-grid">
+              ${q.key_expressions.map(item => `
+                <div class="listening-key-card">
+                  <div class="listening-key-top">
+                    <span class="listening-key-phrase" lang="zh-CN">${item.phrase}</span>
+                    ${item.pinyin ? `<span class="listening-key-pinyin">${item.pinyin}</span>` : ''}
+                  </div>
+                  <div class="listening-key-meaning">${item.meaning_vi}</div>
+                  ${item.note ? `<div class="listening-key-note">${item.note}</div>` : ''}
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        ` : ''}
+
+        <!-- Vocabulary Section (Prioritized by learning relevance) -->
+        ${sortedVocabs.length > 0 ? `
           <div class="listening-vocab-section">
-            <div class="listening-vocab-title">Từ vựng trong bài</div>
+            <div class="listening-section-title">Từ vựng trong bài</div>
             <div class="listening-vocab-grid">
-              ${q.vocabulary_matches.map((v) => `
+              ${sortedVocabs.map((v) => `
                 <div class="listening-vocab-card">
-                  <div class="listening-vocab-word" lang="zh-CN">${v.word}</div>
+                  <div class="listening-vocab-top">
+                    <span class="listening-vocab-word" lang="zh-CN">${v.word}</span>
+                    ${v.level ? `<span class="listening-vocab-badge">${v.level}</span>` : ''}
+                  </div>
                   <div class="listening-vocab-meta">
                     <span class="listening-vocab-pinyin">${v.pinyin}</span>
                     <span class="listening-vocab-vi">${v.meaning_vi}</span>
                   </div>
-                  ${v.level ? `<span class="listening-vocab-badge">${v.level}</span>` : ''}
                 </div>
               `).join('')}
             </div>
           </div>
         ` : ''}
       </div>
+    `;
+  }
     `;
   }
 

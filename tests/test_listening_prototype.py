@@ -244,6 +244,44 @@ def test_audio_range_and_resilience():
 
     print("   ✓ Audio streaming & resilience checks passed!")
 
+def test_listening_user_feedback_improvements():
+    print("-> Checking user feedback improvements (typography, translations, evidence, navigation)...")
+    css = (ROOT / "assets/css/listening-practice.css").read_text(encoding="utf-8")
+    js = (ROOT / "assets/js/listening-practice.js").read_text(encoding="utf-8")
+
+    # 1. Non-empty sentence translations
+    for idx in range(1, 13):
+        exam_id = f"H410{idx:02d}"
+        json_path = ROOT / f"database/listening/hsk4_{exam_id.lower()}.json"
+        with open(json_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        for q in data["questions"]:
+            for s in q["transcript"]["sentences"]:
+                assert s.get("vi") and len(s["vi"].strip()) > 0, f"Sentence translation missing in {exam_id} Q{q['question_number']} S{s['index']}"
+
+    # 2. Typography scale verified in CSS
+    assert "font-size: 23px" in css, "Transcript Chinese characters must be readable (~23px)"
+    assert "font-size: 16px" in css, "Pinyin, translation and explanation must be comfortably readable (16px)"
+    assert "font-size: 21px" in css, "Evidence and vocabulary Hanzi must be prominent (21px)"
+
+    # 3. Direct outcome without cognitive conflict
+    assert "Bạn trả lời đúng · Đáp án:" in js, "Correct feedback must clearly state 'Bạn trả lời đúng · Đáp án:'"
+    assert "Bạn trả lời chưa đúng · Đáp án:" in js, "Incorrect feedback must clearly state 'Bạn trả lời chưa đúng · Đáp án:'"
+
+    # 4. Immediate evidence audio action & inline highlight
+    assert "Nghe câu này" in js, "Evidence button must use concise 'Nghe câu này'"
+    assert "listening-evidence-inline-mark" in js and "listening-evidence-inline-mark" in css, "Evidence must be highlighted inline in transcript"
+
+    # 5. Prominent navigation buttons
+    assert "Câu trước" in js and "Câu tiếp theo" in js, "Bottom navigation must use full clear labels 'Câu trước' / 'Câu tiếp theo'"
+    assert "height: 46px" in css or "min-height: 46px" in css, "Navigation buttons must have prominent 44-48px touch targets"
+
+    # 6. Key expressions and prioritized vocabulary
+    assert "listening-key-section" in js and "listening-key-section" in css, "Key expressions section must exist"
+    assert "getPrioritizedVocabularies" in js, "Vocabulary matching must prioritize learning relevance over raw HSK levels"
+
+    print("   ✓ All user feedback improvements verified successfully!")
+
 def main():
     print("=== Starting HSK Listening Prototype Automated Verification ===")
     test_data_integrity()
@@ -252,6 +290,8 @@ def main():
     test_ui_refinements()
     test_listening_polish_v112()
     test_audio_range_and_resilience()
+    test_listening_user_feedback_improvements()
+    print("=== ALL VERIFICATION TESTS PASSED SUCCESSFULLY! ===")
     print("=== ALL VERIFICATION TESTS PASSED SUCCESSFULLY! ===")
 
 if __name__ == "__main__":
