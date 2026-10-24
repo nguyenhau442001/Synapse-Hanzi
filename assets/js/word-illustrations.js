@@ -55512,10 +55512,260 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/子弹.svg",
     "caption": "viên đạn"
   },
+  "子弟": {
+    "file": "子弟.svg",
+    "src": "images/HSK_3.0/level7/子弟.svg",
+    "caption": "con em, thế hệ trẻ trong gia đình/dân tộc"
+  },
   "子孙": {
     "file": "子孙.svg",
     "src": "images/HSK_3.0/level7/子孙.svg",
     "caption": "con cháu, con cháu đời sau"
+  },
+  "自卑": {
+    "file": "自卑.svg",
+    "src": "images/HSK_3.0/level7/自卑.svg",
+    "caption": "tự ti, mặc cảm tự ti"
+  },
+  "自称": {
+    "file": "自称.svg",
+    "src": "images/HSK_3.0/level7/自称.svg",
+    "caption": "tự xưng, tự nhận mình là"
+  },
+  "自发": {
+    "file": "自发.svg",
+    "src": "images/HSK_3.0/level7/自发.svg",
+    "caption": "tự phát, tự nguyện không ai bảo"
+  },
+  "自费": {
+    "file": "自费.svg",
+    "src": "images/HSK_3.0/level7/自费.svg",
+    "caption": "tự túc kinh phí, tự trả tiền"
+  },
+  "自负¹": {
+    "file": "自负¹.svg",
+    "src": "images/HSK_3.0/level7/自负¹.svg",
+    "caption": "tự gánh chịu (hậu quả, chi phí)"
+  },
+  "自负²": {
+    "file": "自负².svg",
+    "src": "images/HSK_3.0/level7/自负².svg",
+    "caption": "tự phụ, kiêu ngạo tự mãn"
+  },
+  "字迹": {
+    "file": "字迹.svg",
+    "src": "images/HSK_3.0/level7/字迹.svg",
+    "caption": "nét chữ, chữ viết tay"
+  },
+  "自立": {
+    "file": "自立.svg",
+    "src": "images/HSK_3.0/level7/自立.svg",
+    "caption": "tự lập, tự đứng trên đôi chân mình"
+  },
+  "自理": {
+    "file": "自理.svg",
+    "src": "images/HSK_3.0/level7/自理.svg",
+    "caption": "tự lo liệu, tự chăm sóc bản thân"
+  },
+  "自力更生": {
+    "file": "自力更生.svg",
+    "src": "images/HSK_3.0/level7/自力更生.svg",
+    "caption": "tự lực cánh sinh, tự dựa vào sức mình"
+  },
+  "自满": {
+    "file": "自满.svg",
+    "src": "images/HSK_3.0/level7/自满.svg",
+    "caption": "tự mãn, thỏa mãn với bản thân"
+  },
+  "自强不息": {
+    "file": "自强不息.svg",
+    "src": "images/HSK_3.0/level7/自强不息.svg",
+    "caption": "tự cường không ngừng, không ngừng vươn lên"
+  },
+  "自然而然": {
+    "file": "自然而然.svg",
+    "src": "images/HSK_3.0/level7/自然而然.svg",
+    "caption": "tự nhiên mà thành, tự nhiên diễn ra"
+  },
+  "自然界": {
+    "file": "自然界.svg",
+    "src": "images/HSK_3.0/level7/自然界.svg",
+    "caption": "giới tự nhiên, thế giới tự nhiên"
+  },
+  "自如": {
+    "file": "自如.svg",
+    "src": "images/HSK_3.0/level7/自如.svg",
+    "caption": "tự do lưu loát, thuần thục trôi chảy"
+  },
+  "自始至终": {
+    "file": "自始至终.svg",
+    "src": "images/HSK_3.0/level7/自始至终.svg",
+    "caption": "từ đầu đến cuối, trọn vẹn từ trước tới sau"
+  },
+  "自首": {
+    "file": "自首.svg",
+    "src": "images/HSK_3.0/level7/自首.svg",
+    "caption": "tự thú, đầu thú"
+  },
+  "字体": {
+    "file": "字体.svg",
+    "src": "images/HSK_3.0/level7/字体.svg",
+    "caption": "phông chữ, kiểu chữ"
+  },
+  "自卫": {
+    "file": "自卫.svg",
+    "src": "images/HSK_3.0/level7/自卫.svg",
+    "caption": "tự vệ, bảo vệ bản thân"
+  },
+  "自相矛盾": {
+    "file": "自相矛盾.svg",
+    "src": "images/HSK_3.0/level7/自相矛盾.svg",
+    "caption": "tự mâu thuẫn, tiền hậu bất nhất"
+  },
+  "自行": {
+    "file": "自行.svg",
+    "src": "images/HSK_3.0/level7/自行.svg",
+    "caption": "tự mình, tự xử lý"
+  },
+  "字眼": {
+    "file": "字眼.svg",
+    "src": "images/HSK_3.0/level7/字眼.svg",
+    "caption": "con chữ, từ ngữ dùng"
+  },
+  "自以为是": {
+    "file": "自以为是.svg",
+    "src": "images/HSK_3.0/level7/自以为是.svg",
+    "caption": "tự cho mình là đúng, ngạo mạn cho là phải"
+  },
+  "自在": {
+    "file": "自在.svg",
+    "src": "images/HSK_3.0/level7/自在.svg",
+    "caption": "tự tại, ung dung thoải mái"
+  },
+  "自责": {
+    "file": "自责.svg",
+    "src": "images/HSK_3.0/level7/自责.svg",
+    "caption": "tự trách mình, hối hận trách móc bản thân"
+  },
+  "自治区": {
+    "file": "自治区.svg",
+    "src": "images/HSK_3.0/level7/自治区.svg",
+    "caption": "khu tự trị"
+  },
+  "自主": {
+    "file": "自主.svg",
+    "src": "images/HSK_3.0/level7/自主.svg",
+    "caption": "tự chủ, độc lập làm chủ"
+  },
+  "自尊": {
+    "file": "自尊.svg",
+    "src": "images/HSK_3.0/level7/自尊.svg",
+    "caption": "lòng tự trọng, tự tôn"
+  },
+  "宗": {
+    "file": "宗.svg",
+    "src": "images/HSK_3.0/level7/宗.svg",
+    "caption": "vụ, mẻ, món (lượng từ)"
+  },
+  "踪迹": {
+    "file": "踪迹.svg",
+    "src": "images/HSK_3.0/level7/踪迹.svg",
+    "caption": "tung tích, dấu vết"
+  },
+  "宗教": {
+    "file": "宗教.svg",
+    "src": "images/HSK_3.0/level7/宗教.svg",
+    "caption": "tôn giáo"
+  },
+  "综艺": {
+    "file": "综艺.svg",
+    "src": "images/HSK_3.0/level7/综艺.svg",
+    "caption": "chương trình giải trí tổng hợp, gameshow"
+  },
+  "宗旨": {
+    "file": "宗旨.svg",
+    "src": "images/HSK_3.0/level7/宗旨.svg",
+    "caption": "tôn chỉ, mục đích cốt lõi"
+  },
+  "总额": {
+    "file": "总额.svg",
+    "src": "images/HSK_3.0/level7/总额.svg",
+    "caption": "tổng ngạch, tổng số tiền"
+  },
+  "总而言之": {
+    "file": "总而言之.svg",
+    "src": "images/HSK_3.0/level7/总而言之.svg",
+    "caption": "tóm lại, tựu trung lại"
+  },
+  "总和": {
+    "file": "总和.svg",
+    "src": "images/HSK_3.0/level7/总和.svg",
+    "caption": "tổng số, tổng hòa"
+  },
+  "纵观": {
+    "file": "纵观.svg",
+    "src": "images/HSK_3.0/level7/纵观.svg",
+    "caption": "nhìn bao quát, nhìn suốt chiều dài"
+  },
+  "纵横": {
+    "file": "纵横.svg",
+    "src": "images/HSK_3.0/level7/纵横.svg",
+    "caption": "dọc ngang, ngang dọc đan xen"
+  },
+  "纵然": {
+    "file": "纵然.svg",
+    "src": "images/HSK_3.0/level7/纵然.svg",
+    "caption": "cho dù, dẫu cho (liên từ)"
+  },
+  "纵容": {
+    "file": "纵容.svg",
+    "src": "images/HSK_3.0/level7/纵容.svg",
+    "caption": "dung túng, nuông chiều bao che"
+  },
+  "纵深": {
+    "file": "纵深.svg",
+    "src": "images/HSK_3.0/level7/纵深.svg",
+    "caption": "chiều sâu, thâm nhập theo chiều sâu"
+  },
+  "走过场": {
+    "file": "走过场.svg",
+    "src": "images/HSK_3.0/level7/走过场.svg",
+    "caption": "làm cho có lệ, chiếu lệ hình thức"
+  },
+  "走弯路": {
+    "file": "走弯路.svg",
+    "src": "images/HSK_3.0/level7/走弯路.svg",
+    "caption": "đi đường vòng, chịu tổn thất do mò mẫm sai lầm"
+  },
+  "走漏": {
+    "file": "走漏.svg",
+    "src": "images/HSK_3.0/level7/走漏.svg",
+    "caption": "làm lộ ra, để rò rỉ (thông tin mật)"
+  },
+  "走势": {
+    "file": "走势.svg",
+    "src": "images/HSK_3.0/level7/走势.svg",
+    "caption": "xu thế vận động, xu hướng biến động"
+  },
+  "走私": {
+    "file": "走私.svg",
+    "src": "images/HSK_3.0/level7/走私.svg",
+    "caption": "buôn lậu"
+  },
+  "走投无路": {
+    "file": "走投无路.svg",
+    "src": "images/HSK_3.0/level7/走投无路.svg",
+    "caption": "cùng đường bí lối, bước vào bước đường cùng"
+  },
+  "走向": {
+    "file": "走向.svg",
+    "src": "images/HSK_3.0/level7/走向.svg",
+    "caption": "về phía"
+  },
+  "揍": {
+    "file": "揍.svg",
+    "src": "images/HSK_3.0/level7/揍.svg",
+    "caption": "đánh, đấm cho một trận"
   }
 };
 
