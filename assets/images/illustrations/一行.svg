@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ground shadow / depth line -->
+  <ellipse cx="120" cy="180" rx="80" ry="8" fill="#121418" opacity="0.6"/>
+
+  <!-- Delegation / Group of people (一行 - đoàn người, đoàn đại biểu) in modern sleek flat design -->
+  <g transform="translate(0, 10)">
+    <!-- Person 1 (Leader / Delegate - Amber/Gold Accent) -->
+    <g transform="translate(65, 55)">
+      <!-- Body / Suit -->
+      <path d="M12 45 C12 36 20 30 30 30 C40 30 48 36 48 45 L54 85 L6 85 Z" fill="#252A34"/>
+      <path d="M30 35 L30 85" stroke="#1A1D24" stroke-width="2"/>
+      <!-- Tie / Lapel detail -->
+      <polygon points="30,35 27,50 33,50" fill="#F39C12"/>
+      <!-- Head -->
+      <circle cx="30" cy="18" r="11" fill="#EAECEE"/>
+      <!-- Hair -->
+      <path d="M19 15 C19 10 24 7 30 7 C36 7 41 10 41 15 Z" fill="#3A4150"/>
+    </g>
+
+    <!-- Person 2 (Delegate - Center) -->
+    <g transform="translate(95, 45)">
+      <!-- Body / Suit -->
+      <path d="M12 45 C12 36 20 30 30 30 C40 30 48 36 48 45 L54 95 L6 95 Z" fill="#2D3340"/>
+      <!-- Head -->
+      <circle cx="30" cy="18" r="11" fill="#EAECEE"/>
+      <!-- Hair -->
+      <path d="M19 16 C22 10 38 10 41 16 Z" fill="#4E596D"/>
+    </g>
+
+    <!-- Person 3 (Delegate - Right) -->
+    <g transform="translate(125, 60)">
+      <!-- Body / Suit -->
+      <path d="M12 45 C12 36 20 30 30 30 C40 30 48 36 48 45 L52 80 L8 80 Z" fill="#252A34"/>
+      <!-- Head -->
+      <circle cx="30" cy="18" r="11" fill="#EAECEE"/>
+      <!-- Hair -->
+      <path d="M19 15 C23 9 37 9 41 15 Z" fill="#2C323D"/>
+    </g>
+  </g>
+
+  <!-- Motion / Travel indicator (representing arrival / journey context like flight/trip) -->
+  <path d="M50 160 Q120 175 190 160" stroke="#F39C12" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.4" stroke-dasharray="6 6"/>
+  
+  <!-- Subtle directional forward arrows -->
+  <path d="M185 156 L193 160 L185 164" fill="none" stroke="#F39C12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+</svg>

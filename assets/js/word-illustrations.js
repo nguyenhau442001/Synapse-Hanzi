@@ -52602,6 +52602,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/遗嘱.svg",
     "caption": "di chúc"
   },
+  "矣": {
+    "file": "矣.svg",
+    "src": "images/HSK_3.0/level7/矣.svg",
+    "caption": "rồi; vậy thay (trợ từ ngữ khí cổ)"
+  },
   "倚": {
     "file": "倚.svg",
     "src": "images/HSK_3.0/level7/倚.svg",
@@ -52787,6 +52792,36 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/异想天开.svg",
     "caption": "viển vông, hão huyền, tưởng tượng kỳ quặc"
   },
+  "一心": {
+    "file": "一心.svg",
+    "src": "images/HSK_3.0/level7/一心.svg",
+    "caption": "một lòng, chuyên tâm, toàn tâm toàn ý"
+  },
+  "一行": {
+    "file": "一行.svg",
+    "src": "images/HSK_3.0/level7/一行.svg",
+    "caption": "đoàn người, đoàn đại biểu"
+  },
+  "异性": {
+    "file": "异性.svg",
+    "src": "images/HSK_3.0/level7/异性.svg",
+    "caption": "người khác giới, khác giới tính"
+  },
+  "一心一意": {
+    "file": "一心一意.svg",
+    "src": "images/HSK_3.0/level7/一心一意.svg",
+    "caption": "một lòng một dạ, toàn tâm toàn ý"
+  },
+  "一言不发": {
+    "file": "一言不发.svg",
+    "src": "images/HSK_3.0/level7/一言不发.svg",
+    "caption": "không hé răng một lời, im như thóc"
+  },
+  "抑扬顿挫": {
+    "file": "抑扬顿挫.svg",
+    "src": "images/HSK_3.0/level7/抑扬顿挫.svg",
+    "caption": "trầm bổng nhịp nhàng, có ngữ điệu du dương"
+  },
   "一言一行": {
     "file": "一言一行.svg",
     "src": "images/HSK_3.0/level7/一言一行.svg",
@@ -52962,6 +52997,26 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/营救.svg",
     "caption": "cứu hộ, giải cứu"
   },
+  "营利": {
+    "file": "营利.svg",
+    "src": "images/HSK_3.0/level7/营利.svg",
+    "caption": "vì mục đích lợi nhuận, kiếm lời, sinh lợi"
+  },
+  "营销": {
+    "file": "营销.svg",
+    "src": "images/HSK_3.0/level7/营销.svg",
+    "caption": "tiếp thị, marketing"
+  },
+  "营造": {
+    "file": "营造.svg",
+    "src": "images/HSK_3.0/level7/营造.svg",
+    "caption": "tạo dựng, xây dựng, kiến tạo (bầu không khí, môi trường)"
+  },
+  "影像": {
+    "file": "影像.svg",
+    "src": "images/HSK_3.0/level7/影像.svg",
+    "caption": "hình ảnh, phim ảnh tư liệu"
+  },
   "应": {
     "file": "应.svg",
     "src": "images/HSK_3.0/level7/应.svg",
@@ -53132,10 +53187,25 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/淤泥.svg",
     "caption": "bùn lầy, bùn lắng phù sa"
   },
+  "余": {
+    "file": "余.svg",
+    "src": "images/HSK_3.0/level7/余.svg",
+    "caption": "dư, hơn, sót lại"
+  },
   "渔船": {
     "file": "渔船.svg",
     "src": "images/HSK_3.0/level7/渔船.svg",
     "caption": "thuyền đánh cá"
+  },
+  "余地": {
+    "file": "余地.svg",
+    "src": "images/HSK_3.0/level7/余地.svg",
+    "caption": "sự chậm trễ"
+  },
+  "愚公移山": {
+    "file": "愚公移山.svg",
+    "src": "images/HSK_3.0/level7/愚公移山.svg",
+    "caption": "ngu Công dời núi, kiên trì bền bỉ vượt khó"
   },
   "逾期": {
     "file": "逾期.svg",
@@ -53307,15 +53377,55 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/原装.svg",
     "caption": "nguyên kiện nguyên đai, nguyên hộp từ nhà máy sản xuất"
   },
+  "远见": {
+    "file": "远见.svg",
+    "src": "images/HSK_3.0/level7/远见.svg",
+    "caption": "tầm nhìn xa, tầm nhìn chiến lược"
+  },
+  "远近闻名": {
+    "file": "远近闻名.svg",
+    "src": "images/HSK_3.0/level7/远近闻名.svg",
+    "caption": "nức tiếng gần xa, nổi tiếng khắp nơi"
+  },
+  "怨": {
+    "file": "怨.svg",
+    "src": "images/HSK_3.0/level7/怨.svg",
+    "caption": "oán trách, than phiền, oán hận"
+  },
+  "怨恨": {
+    "file": "怨恨.svg",
+    "src": "images/HSK_3.0/level7/怨恨.svg",
+    "caption": "oán hận, hận thù, căm ghét"
+  },
   "怨气": {
     "file": "怨气.svg",
     "src": "images/HSK_3.0/level7/怨气.svg",
     "caption": "nỗi oán hờn, khí hận, nỗi uất ức"
   },
+  "院士": {
+    "file": "院士.svg",
+    "src": "images/HSK_3.0/level7/院士.svg",
+    "caption": "viện sĩ (viện hàn lâm)"
+  },
   "怨言": {
     "file": "怨言.svg",
     "src": "images/HSK_3.0/level7/怨言.svg",
     "caption": "lời phàn nàn, lời than vãn oán trách"
+  },
+  "曰": {
+    "file": "曰.svg",
+    "src": "images/HSK_3.0/level7/曰.svg",
+    "caption": "rằng, nói rằng (thường dùng trong văn ngôn)"
+  },
+  "约定俗成": {
+    "file": "约定俗成.svg",
+    "src": "images/HSK_3.0/level7/约定俗成.svg",
+    "caption": "thói quen ăn sâu thành nếp, ước định thành tục"
+  },
+  "乐队": {
+    "file": "乐队.svg",
+    "src": "images/HSK_3.0/level7/乐队.svg",
+    "caption": "ban nhạc, dàn nhạc"
   },
   "悦耳": {
     "file": "悦耳.svg",
@@ -53471,6 +53581,26 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "葬礼.svg",
     "src": "images/HSK_3.0/level7/葬礼.svg",
     "caption": "tang lễ, lễ tang"
+  },
+  "糟粕": {
+    "file": "糟粕.svg",
+    "src": "images/HSK_3.0/level7/糟粕.svg",
+    "caption": "hủ tục, cặn bã, rác rưởi (tư tưởng cũ)"
+  },
+  "凿": {
+    "file": "凿.svg",
+    "src": "images/HSK_3.0/level7/凿.svg",
+    "caption": "đục, khoét, trổ"
+  },
+  "枣": {
+    "file": "枣.svg",
+    "src": "images/HSK_3.0/level7/枣.svg",
+    "caption": "quả táo tàu, cây táo tàu"
+  },
+  "早年": {
+    "file": "早年.svg",
+    "src": "images/HSK_3.0/level7/早年.svg",
+    "caption": "thời trẻ, những năm đầu đời"
   },
   "早日": {
     "file": "早日.svg",
@@ -53642,6 +53772,21 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/展望.svg",
     "caption": "nhìn về phía trước, hướng tới tương lai, triển vọng"
   },
+  "辗转": {
+    "file": "辗转.svg",
+    "src": "images/HSK_3.0/level7/辗转.svg",
+    "caption": "trằn trọc; bôn ba qua nhiều nơi"
+  },
+  "蘸": {
+    "file": "蘸.svg",
+    "src": "images/HSK_3.0/level7/蘸.svg",
+    "caption": "chấm, nhúng"
+  },
+  "战场": {
+    "file": "战场.svg",
+    "src": "images/HSK_3.0/level7/战场.svg",
+    "caption": "chiến trường"
+  },
   "绽放": {
     "file": "绽放.svg",
     "src": "images/HSK_3.0/level7/绽放.svg",
@@ -53797,6 +53942,26 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/罩.svg",
     "caption": "bao bọc, trùm lên; tấm che, chụp"
   },
+  "照办": {
+    "file": "照办.svg",
+    "src": "images/HSK_3.0/level7/照办.svg",
+    "caption": "làm theo y lệnh, cứ thế mà làm"
+  },
+  "召集": {
+    "file": "召集.svg",
+    "src": "images/HSK_3.0/level7/召集.svg",
+    "caption": "triệu tập, tập hợp"
+  },
+  "照例": {
+    "file": "照例.svg",
+    "src": "images/HSK_3.0/level7/照例.svg",
+    "caption": "theo thông lệ, như thường lệ"
+  },
+  "照料": {
+    "file": "照料.svg",
+    "src": "images/HSK_3.0/level7/照料.svg",
+    "caption": "chăm sóc, săn sóc"
+  },
   "照射": {
     "file": "照射.svg",
     "src": "images/HSK_3.0/level7/照射.svg",
@@ -53806,6 +53971,26 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "肇事.svg",
     "src": "images/HSK_3.0/level7/肇事.svg",
     "caption": "gây tai nạn, gây họa"
+  },
+  "兆头": {
+    "file": "兆头.svg",
+    "src": "images/HSK_3.0/level7/兆头.svg",
+    "caption": "điềm báo, dấu hiệu báo trước"
+  },
+  "照样": {
+    "file": "照样.svg",
+    "src": "images/HSK_3.0/level7/照样.svg",
+    "caption": "vẫn như cũ, y như trước"
+  },
+  "照耀": {
+    "file": "照耀.svg",
+    "src": "images/HSK_3.0/level7/照耀.svg",
+    "caption": "soi sáng, chiếu tỏa"
+  },
+  "遮": {
+    "file": "遮.svg",
+    "src": "images/HSK_3.0/level7/遮.svg",
+    "caption": "che khuất, che chắn"
   },
   "遮挡": {
     "file": "遮挡.svg",
@@ -53982,6 +54167,26 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/阵容.svg",
     "caption": "đội hình, dàn sao, lực lượng tham gia"
   },
+  "振兴": {
+    "file": "振兴.svg",
+    "src": "images/HSK_3.0/level7/振兴.svg",
+    "caption": "chấn hưng, phục hưng phát triển"
+  },
+  "阵营": {
+    "file": "阵营.svg",
+    "src": "images/HSK_3.0/level7/阵营.svg",
+    "caption": "phe cánh, tập đoàn, phe phái"
+  },
+  "振作": {
+    "file": "振作.svg",
+    "src": "images/HSK_3.0/level7/振作.svg",
+    "caption": "phấn chấn lên, vực dậy tinh thần"
+  },
+  "征": {
+    "file": "征.svg",
+    "src": "images/HSK_3.0/level7/征.svg",
+    "caption": "chiêu mộ, chinh phục; đánh thuế; dấu hiệu"
+  },
   "蒸": {
     "file": "蒸.svg",
     "src": "images/HSK_3.0/level7/蒸.svg",
@@ -54061,6 +54266,51 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "争执.svg",
     "src": "images/HSK_3.0/level7/争执.svg",
     "caption": "tranh chấp, bất đồng tranh cãi"
+  },
+  "整顿": {
+    "file": "整顿.svg",
+    "src": "images/HSK_3.0/level7/整顿.svg",
+    "caption": "chấn chỉnh, chỉnh đốn, lập lại trật tự"
+  },
+  "整合": {
+    "file": "整合.svg",
+    "src": "images/HSK_3.0/level7/整合.svg",
+    "caption": "tích hợp, sáp nhập liên kết nguồn lực"
+  },
+  "整洁": {
+    "file": "整洁.svg",
+    "src": "images/HSK_3.0/level7/整洁.svg",
+    "caption": "gọn gàng ngăn nắp, sạch sẽ tươm tất"
+  },
+  "拯救": {
+    "file": "拯救.svg",
+    "src": "images/HSK_3.0/level7/拯救.svg",
+    "caption": "giải cứu, cứu rỗi, cứu thoát"
+  },
+  "整数": {
+    "file": "整数.svg",
+    "src": "images/HSK_3.0/level7/整数.svg",
+    "caption": "số nguyên, con số tròn chục/tròn trăm"
+  },
+  "整治": {
+    "file": "整治.svg",
+    "src": "images/HSK_3.0/level7/整治.svg",
+    "caption": "cải tạo, chỉnh trị, trừng trị xử lý"
+  },
+  "正版": {
+    "file": "正版.svg",
+    "src": "images/HSK_3.0/level7/正版.svg",
+    "caption": "bản quyền chính hãng, ấn bản chính thức"
+  },
+  "正当": {
+    "file": "正当.svg",
+    "src": "images/HSK_3.0/level7/正当.svg",
+    "caption": "chính đáng, hợp pháp hợp lý"
+  },
+  "政党": {
+    "file": "政党.svg",
+    "src": "images/HSK_3.0/level7/政党.svg",
+    "caption": "đảng phái chính trị, chính đảng"
   },
   "正能量": {
     "file": "正能量.svg",
