@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Central Physical Object: The Scales of Justice / Sanctions Gavel & Shield -->
+  <!-- Background glow / subtle accent -->
+  <circle cx="120" cy="120" r="70" fill="#252A34" opacity="0.6"/>
+  
+  <!-- Scales / Legal Framework Base -->
+  <!-- Vertical Pillar -->
+  <rect x="114" y="60" width="12" height="110" rx="3" fill="#8C9BAE"/>
+  <!-- Base Stand -->
+  <path d="M 90 174 L 150 174 L 160 186 L 80 186 Z" fill="#627D98" rx="2"/>
+  <!-- Top Balance Beam Pivot -->
+  <circle cx="120" cy="65" r="8" fill="#F0B429"/>
+
+  <!-- Horizontal Beam (Tilted to show weight/sanction action) -->
+  <path d="M 68 77 L 172 73" stroke="#CBD5E1" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Left Pan (Weighed down / Restricted) -->
+  <line x1="72" y1="76" x2="52" y2="120" stroke="#8C9BAE" stroke-width="2"/>
+  <line x1="72" y1="76" x2="92" y2="120" stroke="#8C9BAE" stroke-width="2"/>
+  <path d="M 46 120 Q 72 136 98 120 Z" fill="#E12D39" opacity="0.9"/>
+  <!-- Restriction Crossmark on Left Pan -->
+  <line x1="62" y1="120" x2="82" y2="120" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Right Pan (Heavy Gavel of Sanction resting in/acting on it) -->
+  <line x1="168" y1="74" x2="148" y2="110" stroke="#8C9BAE" stroke-width="2"/>
+  <line x1="168" y1="74" x2="188" y2="110" stroke="#8C9BAE" stroke-width="2"/>
+  <path d="M 142 110 Q 168" fill="none"/>
+  
+  <!-- Striking Gavel (Symbolizing authoritative penalty / sanction) -->
+  <g transform="rotate(25 120 120)">
+    <!-- Gavel Handle -->
+    <rect x="112" y="90" width="10" height="70" rx="3" fill="#D97706"/>
+    <!-- Gavel Head -->
+    <rect x="96" y="80" width="42" height="22" rx="4" fill="#F59E0B"/>
+    <!-- Metal Band on Gavel -->
+    <rect x="112" y="80" width="10" height="22" fill="#FEF3C7"/>
+  </g>
+
+  <!-- Impact / Enforcement Rings (Orange/Gold Accent) -->
+  <path d="M 70 145 C 90 155, 110 155, 130 145" stroke="#F59E0B" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <circle cx="100" cy="150" r="3" fill="#F59E0B"/>
+  <circle cx="125" cy="148" r="2" fill="#F59E0B"/>
+</svg>
