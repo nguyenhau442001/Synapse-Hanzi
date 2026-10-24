@@ -406,6 +406,31 @@ class TestGridBlowoutProtection(unittest.TestCase):
         match = re.search(r"#cardArea\s*\{[^}]*overflow-x:\s*(clip|hidden)", self.workstation_css)
         self.assertIsNotNone(match, "#cardArea must specify overflow-x: clip or hidden")
 
+    def test_home_screen_footer_grid_area_and_workstation_clearance(self):
+        """Home screen workstation grid must declare footer row and generous separation."""
+        self.assertIn('"footer footer"', self.workstation_css,
+                      "body.home-screen .workstation must declare explicit footer grid area")
+        self.assertIn("grid-area: footer;", self.workstation_css,
+                      ".app-footer must use grid-area: footer to prevent overlapping content rows")
+
+    def test_workstation_left_avoids_sticky_overlap_on_home_screen(self):
+        """Home screen workstation-left must use position: relative to prevent sticking over footer."""
+        match = re.search(r"body\.home-screen\s+\.workstation-left\s*\{([^}]+)\}", self.workstation_css)
+        self.assertIsNotNone(match, "body.home-screen .workstation-left block missing")
+        content = match.group(1)
+        self.assertIn("position: relative", content,
+                      "body.home-screen .workstation-left must use position: relative to flow naturally with page")
+
+    def test_forgotten_review_button_breathing_room(self):
+        """Review button in forgotten card must maintain breathing room and minimum 44px touch target."""
+        match = re.search(r"\.hw-card\s+\.hw-primary-btn\s*\{([^}]+)\}", self.dashboard_css)
+        self.assertIsNotNone(match, ".hw-card .hw-primary-btn rule missing in dashboard-enhancements.css")
+        content = match.group(1)
+        self.assertIn("margin-top: 16px", content, "Review button must have at least 16px top margin")
+        min_h = re.search(r"min-height:\s*(\d+)px", content)
+        self.assertIsNotNone(min_h)
+        self.assertGreaterEqual(int(min_h.group(1)), 44)
+
 
 class TestViewportMetaConfiguration(unittest.TestCase):
     """Test mobile viewport meta tag configuration in index.html."""
