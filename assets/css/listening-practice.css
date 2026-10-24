@@ -1665,6 +1665,26 @@ body.listening-view-active #screenListeningPractice {
   display: none;
 }
 
+.listening-error-retry-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid currentColor;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.listening-error-retry-btn:hover {
+  background: rgba(220, 38, 38, 0.12);
+}
+
 .listening-editor-footer {
   display: flex;
   align-items: center;

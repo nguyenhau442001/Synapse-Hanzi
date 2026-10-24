@@ -58,8 +58,64 @@ const ListeningPractice = (function() {
   let activeSegment = null; // { startMs, endMs, onEnd, loop, loopPauseMs }
   let rafId = null;
   let loopTimer = null;
+  let audioRetryTimer = null;
+  let autoRetryAttempted = false;
   let isSeeking = false;
   let audioDurationSec = 0;
+
+  function resetAudio() {
+    stopMonitoring();
+    if (loopTimer) {
+      clearTimeout(loopTimer);
+      loopTimer = null;
+    }
+    if (audioRetryTimer) {
+      clearTimeout(audioRetryTimer);
+      audioRetryTimer = null;
+    }
+    if (audio) {
+      try {
+        audio.pause();
+        audio.removeAttribute('src');
+        audio.load();
+      } catch (e) {}
+      audio = null;
+    }
+    isSeeking = false;
+  }
+
+  function handleAudioError(rawMsg) {
+    console.error('ListeningPractice Audio Error:', rawMsg, audio ? audio.error : null);
+    const prevSeg = activeSegment;
+    const prevActivePlaying = learnerState.activePlayingSegment;
+    stopAudio();
+
+    // Auto-retry once on intermittent format/decode or network glitch
+    if (!autoRetryAttempted && prevSeg) {
+      autoRetryAttempted = true;
+      console.warn('Intermittent audio error detected (' + rawMsg + '). Retrying with clean audio instance...');
+      resetAudio();
+      audioRetryTimer = setTimeout(() => {
+        if (currentQuestion && prevSeg) {
+          learnerState.activePlayingSegment = prevActivePlaying;
+          playSegment(prevSeg.startMs, prevSeg.endMs, {
+            loop: prevSeg.loop,
+            loopPauseMs: prevSeg.loopPauseMs,
+            onEnd: prevSeg.onEnd
+          });
+        }
+      }, 400);
+      return;
+    }
+
+    autoRetryAttempted = false;
+    let userMsg = 'Không thể phát âm thanh. Vui lòng bấm "Thử lại".';
+    if (rawMsg && (rawMsg.includes('Format error') || rawMsg.includes('MEDIA_ELEMENT_ERROR'))) {
+      userMsg = 'Đường truyền âm thanh bị gián đoạn. Vui lòng bấm "Thử lại".';
+    }
+    renderAudioError(userMsg, true);
+    resetAudio();
+  }
 
   function initAudio() {
     if (audio) return audio;
@@ -73,8 +129,7 @@ const ListeningPractice = (function() {
     });
 
     audio.addEventListener('error', (e) => {
-      console.error('ListeningPractice Audio Error:', e, audio.error);
-      renderAudioError(audio.error ? audio.error.message : 'Lỗi tải âm thanh');
+      handleAudioError(audio && audio.error ? audio.error.message : 'Lỗi tải âm thanh');
     });
 
     audio.addEventListener('pause', () => {
@@ -162,7 +217,8 @@ const ListeningPractice = (function() {
     stopMonitoring();
 
     const expectedSrc = currentQuestion.audio_src;
-    if (!audio.src || !audio.src.endsWith(expectedSrc)) {
+    const srcChanged = !audio.src || !audio.src.endsWith(expectedSrc);
+    if (srcChanged) {
       audio.src = expectedSrc;
     }
 
@@ -180,11 +236,15 @@ const ListeningPractice = (function() {
 
     const beginPlayback = () => {
       isSeeking = false;
+      autoRetryAttempted = false;
       const playPromise = audio.play();
       if (playPromise && typeof playPromise.catch === 'function') {
         playPromise.catch((err) => {
           console.warn('Audio play failed:', err);
-          renderAudioError('Không thể phát âm thanh. Vui lòng nhấn vào trang để cấp quyền phát.');
+          isSeeking = false;
+          if (err.name !== 'AbortError') {
+            renderAudioError('Không thể phát âm thanh. Vui lòng bấm vào trang để cấp quyền phát.', true);
+          }
           stopAudio();
         });
       }
@@ -193,21 +253,53 @@ const ListeningPractice = (function() {
       updatePlaybackUI();
     };
 
-    // If audio is already near target time, start immediately; otherwise wait for seeked
-    if (Math.abs(audio.currentTime - targetSec) < 0.03) {
-      beginPlayback();
-    } else {
-      const onSeeked = () => {
-        audio.removeEventListener('seeked', onSeeked);
+    const seekAndPlay = () => {
+      if (Math.abs(audio.currentTime - targetSec) < 0.03) {
         beginPlayback();
-      };
-      audio.addEventListener('seeked', onSeeked, { once: true });
-      try {
-        audio.currentTime = targetSec;
-      } catch (e) {
-        audio.removeEventListener('seeked', onSeeked);
-        beginPlayback();
+      } else {
+        let seekTimer = null;
+        const onSeeked = () => {
+          if (seekTimer) clearTimeout(seekTimer);
+          audio.removeEventListener('seeked', onSeeked);
+          beginPlayback();
+        };
+        audio.addEventListener('seeked', onSeeked, { once: true });
+        seekTimer = setTimeout(() => {
+          audio.removeEventListener('seeked', onSeeked);
+          beginPlayback();
+        }, 1500);
+
+        try {
+          audio.currentTime = targetSec;
+        } catch (e) {
+          if (seekTimer) clearTimeout(seekTimer);
+          audio.removeEventListener('seeked', onSeeked);
+          beginPlayback();
+        }
       }
+    };
+
+    // If audio is freshly loaded or metadata isn't ready yet, wait for loadedmetadata
+    if (audio.readyState === 0) {
+      let readyTimer = null;
+      const onReady = () => {
+        if (readyTimer) clearTimeout(readyTimer);
+        audio.removeEventListener('loadedmetadata', onReady);
+        audio.removeEventListener('canplay', onReady);
+        seekAndPlay();
+      };
+      audio.addEventListener('loadedmetadata', onReady, { once: true });
+      audio.addEventListener('canplay', onReady, { once: true });
+      readyTimer = setTimeout(() => {
+        audio.removeEventListener('loadedmetadata', onReady);
+        audio.removeEventListener('canplay', onReady);
+        seekAndPlay();
+      }, 1500);
+      try {
+        audio.load();
+      } catch (e) {}
+    } else {
+      seekAndPlay();
     }
   }
 
@@ -1669,16 +1761,48 @@ const ListeningPractice = (function() {
     });
   }
 
-  function renderAudioError(msg) {
+  function renderAudioError(msg, showRetry = false) {
     const box = document.getElementById('editorErrorBox') || document.querySelector('.listening-player-surface');
     if (box) {
+      const existing = box.querySelector('.listening-editor-error');
+      if (existing) existing.remove();
+
       const errDiv = document.createElement('div');
       errDiv.className = 'listening-editor-error';
-      errDiv.style.display = 'block';
+      errDiv.style.display = 'flex';
+      errDiv.style.alignItems = 'center';
+      errDiv.style.justifyContent = 'space-between';
+      errDiv.style.gap = '10px';
       errDiv.style.marginTop = '10px';
-      errDiv.textContent = 'Lỗi âm thanh: ' + msg;
+
+      const label = document.createElement('span');
+      label.textContent = 'Lỗi âm thanh: ' + msg;
+      errDiv.appendChild(label);
+
+      if (showRetry) {
+        const retryBtn = document.createElement('button');
+        retryBtn.type = 'button';
+        retryBtn.textContent = 'Thử lại';
+        retryBtn.className = 'listening-error-retry-btn';
+        retryBtn.style.padding = '3px 10px';
+        retryBtn.style.fontSize = '12px';
+        retryBtn.style.borderRadius = '4px';
+        retryBtn.style.border = '1px solid currentColor';
+        retryBtn.style.background = 'transparent';
+        retryBtn.style.color = 'inherit';
+        retryBtn.style.cursor = 'pointer';
+        retryBtn.onclick = (e) => {
+          e.preventDefault();
+          errDiv.remove();
+          togglePlayFullQuestion();
+        };
+        errDiv.appendChild(retryBtn);
+      }
+
       box.appendChild(errDiv);
-      setTimeout(() => errDiv.remove(), 5000);
+      setTimeout(() => {
+        if (errDiv.parentNode) errDiv.remove();
+      }, 7000);
     }
   }
 

@@ -215,6 +215,35 @@ def test_listening_polish_v112():
 
     print("   ✓ All v1.1.2 UI polish requirements verified successfully!")
 
+def test_audio_range_and_resilience():
+    print("-> Checking Service Worker and Audio Controller resilience against MEDIA_ELEMENT_ERROR...")
+    sw_path = ROOT / "sw.js"
+    assert sw_path.exists(), "sw.js must exist"
+    sw_code = sw_path.read_text(encoding="utf-8")
+
+    # 1. SW must bypass range requests and media streaming
+    assert "request.headers.has('range')" in sw_code, "sw.js must bypass range requests"
+    assert "request.destination === 'audio'" in sw_code, "sw.js must bypass audio destination requests"
+
+    # 2. SW must guard cache.put from status 206
+    assert "response.status === 200" in sw_code, "sw.js must only cache status 200 responses"
+    assert "response.ok" not in sw_code, "sw.js must avoid caching partial 206 responses with response.ok"
+
+    # 3. ListeningPractice controller must handle audio errors and readyState cleanly
+    js_path = ROOT / "assets/js/listening-practice.js"
+    js_code = js_path.read_text(encoding="utf-8")
+    assert "resetAudio" in js_code, "resetAudio must exist to clean up broken audio instances"
+    assert "handleAudioError" in js_code, "handleAudioError must exist for resilient recovery"
+    assert "readyState === 0" in js_code, "playSegment must guard readyState before seeking"
+    assert "listening-error-retry-btn" in js_code, "Retry button must be provided on audio error"
+
+    # 4. CSS must style the retry button
+    css_path = ROOT / "assets/css/listening-practice.css"
+    css_code = css_path.read_text(encoding="utf-8")
+    assert ".listening-error-retry-btn" in css_code, "CSS must style retry button"
+
+    print("   ✓ Audio streaming & resilience checks passed!")
+
 def main():
     print("=== Starting HSK Listening Prototype Automated Verification ===")
     test_data_integrity()
@@ -222,6 +251,7 @@ def main():
     test_integration_files()
     test_ui_refinements()
     test_listening_polish_v112()
+    test_audio_range_and_resilience()
     print("=== ALL VERIFICATION TESTS PASSED SUCCESSFULLY! ===")
 
 if __name__ == "__main__":
