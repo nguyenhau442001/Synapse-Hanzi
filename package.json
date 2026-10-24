@@ -1,9 +1,10 @@
 {
   "name": "synapse-hanzi",
-  "version": "1.2.13",
+  "version": "1.2.17",
   "description": "Trạm học từ vựng chữ Hán đa giác quan, hiện đại, tối giản và 100% Offline (PWA)",
   "private": true,
   "scripts": {
+    "test": "node tools/test_fast_review_pinyin.js",
     "version:patch": "python3 tools/bump_version.py patch",
     "version:minor": "python3 tools/bump_version.py minor",
     "version:major": "python3 tools/bump_version.py major"

@@ -554,6 +554,14 @@ class TestTodayReviewZenMode(unittest.TestCase):
         self.assertIn(".today-btn-reveal", self.flashcard_css)
         self.assertIn(".today-review-celebration-card", self.flashcard_css)
 
+    def test_today_review_example_markup_support(self):
+        """Today review must format example markup with <u> tags instead of escaping them as raw text."""
+        due_review_js = (REPO_ROOT / "assets" / "js" / "due-review.js").read_text(encoding="utf-8")
+        self.assertIn("formatTodayExample(item.word.example_zh)", due_review_js)
+        self.assertIn("formatTodayExample(item.word.example_vi)", due_review_js)
+        self.assertIn("function formatTodayExample", due_review_js)
+        self.assertIn(".today-card-example u", self.flashcard_css)
+
 
 class TestFlashcardIllustrationIntegration(unittest.TestCase):
     """Test Flashcard SVG illustration integration, responsive sizing, contrast, and toggle preferences."""
@@ -810,6 +818,42 @@ class TestFlashcardExperienceRefinements(unittest.TestCase):
                          "studyNavRow must not be forcibly hidden when card is flipped")
 
 
+class TestFastReviewLivesConfiguration(unittest.TestCase):
+    """Test suite for Fast Review mode lives configuration (5 lives)."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.index_html = (REPO_ROOT / "index.html").read_text(encoding="utf-8")
+        cls.fast_review_js = (REPO_ROOT / "assets" / "js" / "fast-review.js").read_text(encoding="utf-8")
+        cls.state_js = (REPO_ROOT / "assets" / "js" / "state.js").read_text(encoding="utf-8")
+        cls.fast_review_css = (REPO_ROOT / "assets" / "css" / "fast-review.css").read_text(encoding="utf-8")
+
+    def test_review_rules_card_displays_five_lives(self):
+        """Review setup card in index.html must specify 5 lives."""
+        self.assertIn("5 mạng sinh mệnh", self.index_html,
+                      "Setup rules must state '5 mạng sinh mệnh'")
+        self.assertNotIn("3 mạng sinh mệnh", self.index_html,
+                         "Obsolete '3 mạng sinh mệnh' should no longer be present in index.html")
+
+    def test_fast_review_js_configures_five_lives(self):
+        """fast-review.js must declare REVIEW_MAX_LIVES = 5 and initialize session with 5 lives."""
+        self.assertIn("const REVIEW_MAX_LIVES = 5;", self.fast_review_js,
+                      "fast-review.js must define REVIEW_MAX_LIVES = 5")
+        self.assertIn("reviewLives = REVIEW_MAX_LIVES;", self.fast_review_js,
+                      "startReviewSession must set reviewLives = REVIEW_MAX_LIVES")
+        self.assertIn("for (let i = 1; i <= REVIEW_MAX_LIVES; i++)", self.fast_review_js,
+                      "renderReviewHeartsHtml must loop up to REVIEW_MAX_LIVES")
+
+    def test_state_js_initializes_review_lives_five(self):
+        """state.js reviewLives default state must be 5."""
+        self.assertRegex(self.state_js, r"let\s+reviewLives\s*=\s*5;",
+                         "state.js must declare let reviewLives = 5")
+
+    def test_fast_review_css_responsive_hearts(self):
+        """fast-review.css must adapt heart size on mobile screens."""
+        self.assertIn(".review-hearts", self.fast_review_css)
+        self.assertIn(".review-heart-svg", self.fast_review_css)
+
 
 def run_tests():
     suite = unittest.TestSuite()
@@ -830,6 +874,7 @@ def run_tests():
     suite.addTests(loader.loadTestsFromTestCase(TestFlashcardIllustrationIntegration))
     suite.addTests(loader.loadTestsFromTestCase(TestLearningProgressNavigator))
     suite.addTests(loader.loadTestsFromTestCase(TestFlashcardExperienceRefinements))
+    suite.addTests(loader.loadTestsFromTestCase(TestFastReviewLivesConfiguration))
 
     runner = unittest.TextTestRunner(verbosity=2)
     result = runner.run(suite)

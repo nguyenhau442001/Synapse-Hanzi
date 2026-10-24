@@ -242,9 +242,9 @@ if ('serviceWorker' in navigator) {
           <!-- 3. Viết -->
           <div class="primary-menu-section-title" role="presentation">Viết</div>
           <button id="primaryTabSentenceGame" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
-            aria-controls="screenSentenceGame" onclick="setPrimaryTab('sentenceGame')" aria-label="Xếp câu">
+            aria-controls="screenSentenceGame" onclick="setPrimaryTab('sentenceGame')" aria-label="Xếp câu HSK4">
             <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19.5 14.5A2.5 2.5 0 0 0 22 12a2.5 2.5 0 0 0-2.5-2.5v-4a2 2 0 0 0-2-2h-4a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0-2.5-2.5h-4a2 2 0 0 0-2 2v4A2.5 2.5 0 0 0 2 12a2.5 2.5 0 0 0 2.5 2.5v4a2 2 0 0 0 2 2h4a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0 2.5 2.5h4a2 2 0 0 0 2-2v-4z"/></svg>
-            <span>Xếp câu</span>
+            <span>Xếp câu HSK4</span>
           </button>
           <button id="primaryTabSpeedQuiz" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
             aria-controls="screenSpeedQuiz" onclick="setPrimaryTab('speedQuiz')" aria-label="Điền từ">
@@ -831,7 +831,7 @@ if ('serviceWorker' in navigator) {
           <div class="review-rule-card">
             <div class="review-rule-icon">❤️</div>
             <div class="review-rule-content">
-              <div class="review-rule-title">3 mạng sinh mệnh</div>
+              <div class="review-rule-title">5 mạng sinh mệnh</div>
               <div class="review-rule-sub">Sai / hết giờ mất 1 mạng</div>
             </div>
           </div>
@@ -906,19 +906,20 @@ if ('serviceWorker' in navigator) {
     </div>
   </div>
 
-  <!-- SCREEN 7: Sentence-ordering game -->
+  <!-- SCREEN 7: Sentence Game (HSK 4 Hanban Mock Exams) -->
   <div id="screenSentenceGame" style="display:none">
     <div class="sentence-game">
       <header class="sentence-game-header">
         <div class="sentence-game-top-bar">
           <div class="sentence-game-title-group">
-            <h2 class="sentence-game-title">🧩 Sắp xếp từ thành câu</h2>
-            <span class="sentence-game-counter" id="sentenceGameCounter">Câu 1</span>
+            <h2 class="sentence-game-title">🧩 Xếp câu HSK4</h2>
+            <span class="sentence-game-counter" id="sentenceGameCounter">Đề 1 (H41001) · Câu 86</span>
           </div>
           <div class="sentence-game-tools">
-            <button type="button" class="sentence-tool-btn" id="sentenceGameSettingsBtn" onclick="toggleSentenceGameSettings()" title="Mở hoặc đóng cài đặt cấp độ và phạm vi" aria-expanded="false" aria-controls="sentenceGameFilters">
-              <span class="tool-icon">⚙️</span> <span class="tool-label">Cài đặt</span>
-            </button>
+            <div class="sentence-exam-selector-group">
+              <label for="sentenceGameExamSelect" class="sentence-exam-label">Đề thi:</label>
+              <select id="sentenceGameExamSelect" class="sentence-exam-select" onchange="setSentenceGameExam(this.value)" aria-label="Chọn đề thi HSK 4"></select>
+            </div>
             <button type="button" class="sentence-tool-btn active" id="sentenceGamePinyinBtn" onclick="toggleSentenceGamePinyin()" title="Bật hoặc tắt Pinyin" aria-label="Bật hoặc tắt Pinyin">
               <span id="sentenceGamePinyinIcon">👁</span> <span id="sentenceGamePinyinLabel">Pinyin: Bật</span>
             </button>
@@ -928,46 +929,23 @@ if ('serviceWorker' in navigator) {
           </div>
         </div>
 
-        <!-- Collapsible settings drawer: Level selector & Scope bar -->
-        <div class="sentence-game-filters" id="sentenceGameFilters" hidden>
-          <div class="sentence-filters-inner">
-            <div class="sentence-filter-section">
-              <span class="sentence-filter-label">Cấp độ HSK:</span>
-              <div class="sentence-level-chips" id="sentenceLevelChips" role="group" aria-label="Chọn cấp độ HSK">
-                <button type="button" class="sentence-lvl-btn active" data-level="hsk1" onclick="setSentenceGameLevel('hsk1')">HSK 1</button>
-                <button type="button" class="sentence-lvl-btn" data-level="hsk2" onclick="setSentenceGameLevel('hsk2')">HSK 2</button>
-                <button type="button" class="sentence-lvl-btn" data-level="hsk3" onclick="setSentenceGameLevel('hsk3')">HSK 3</button>
-                <button type="button" class="sentence-lvl-btn" data-level="hsk4" onclick="setSentenceGameLevel('hsk4')">HSK 4</button>
-                <button type="button" class="sentence-lvl-btn" data-level="hsk5" onclick="setSentenceGameLevel('hsk5')">HSK 5</button>
-                <button type="button" class="sentence-lvl-btn" data-level="hsk6" onclick="setSentenceGameLevel('hsk6')">HSK 6</button>
-                <button type="button" class="sentence-lvl-btn" data-level="all" onclick="setSentenceGameLevel('all')">Tất cả</button>
-              </div>
-            </div>
-            <div class="sentence-scope-controls">
-              <label class="sentence-scope-label" title="Phạm vi câu hỏi">
-                <span>Phạm vi:</span>
-                <select id="sentenceGameScopeSelect" onchange="setSentenceGameScope(this.value)" aria-label="Phạm vi câu hỏi">
-                  <option value="cumulative" selected>Từ HSK 1 đến cấp độ đã chọn (Cộng dồn)</option>
-                  <option value="exact">Chỉ cấp độ đã chọn</option>
-                </select>
-              </label>
-              <span class="sentence-pool-badge" id="sentencePoolBadge">Đang tính toán...</span>
-            </div>
-          </div>
-        </div>
+        <!-- Question Navigator (Q86 - Q95) -->
+        <nav class="sentence-question-nav-container" aria-label="Điều hướng câu hỏi">
+          <span class="sentence-question-nav-label">Câu hỏi:</span>
+          <div class="sentence-question-nav" id="sentenceQuestionNav" role="tablist" aria-label="Danh sách câu hỏi đề thi"></div>
+        </nav>
       </header>
 
       <!-- Sentence card board -->
       <section class="sentence-card-board" aria-label="Bàn sắp xếp câu">
         <div class="sentence-prompt">
           <div class="sentence-prompt-header">
-            <span class="sentence-prompt-title">Dịch câu sang tiếng Trung</span>
+            <span class="sentence-prompt-title">HSK 4 · 书写 第一部分: 完成句子</span>
             <div class="sentence-card-meta">
-              <span class="sentence-level-tag" id="sentenceLevelTag">HSK 1</span>
-              <span class="sentence-distractor-tag" id="sentenceDistractorTag" hidden>⚠️ Có từ bẫy</span>
+              <span class="sentence-level-tag" id="sentenceLevelTag">HSK 4 · Câu 86</span>
             </div>
           </div>
-          <div class="sentence-game-meaning" id="sentenceGameMeaning">Đang tải câu hỏi...</div>
+          <div class="sentence-game-instruction">Sắp xếp các cụm từ bên dưới thành câu hoàn chỉnh theo ngữ pháp tiếng Trung:</div>
         </div>
 
         <!-- Target slots area -->
@@ -984,9 +962,9 @@ if ('serviceWorker' in navigator) {
         <!-- Word bank area -->
         <div class="sentence-bank-wrapper" id="sentenceBankWrapper">
           <div class="sentence-bank-label">
-            <span class="sentence-sub-title" id="sentenceBankTitle">Kho từ vựng:</span>
+            <span class="sentence-sub-title" id="sentenceBankTitle">Kho cụm từ (Bấm hoặc dùng phím số 1-9):</span>
           </div>
-          <div class="sentence-game-bank" id="sentenceGameBank" role="group" aria-label="Kho từ vựng để chọn"></div>
+          <div class="sentence-game-bank" id="sentenceGameBank" role="group" aria-label="Kho cụm từ để chọn"></div>
         </div>
 
         <!-- Dynamic feedback message (errors, warnings, hints) -->
@@ -997,7 +975,7 @@ if ('serviceWorker' in navigator) {
           <div class="sentence-result-header">
             <div class="sentence-result-status">
               <span class="sentence-result-check-icon">✓</span>
-              <span class="sentence-result-status-text">Chính xác! Bạn đã hoàn thành câu.</span>
+              <span class="sentence-result-status-text" id="sentenceResultStatusText">Chính xác! Bạn đã hoàn thành câu.</span>
             </div>
             <div class="sentence-result-actions">
               <button type="button" class="sentence-result-speak-btn" id="sentenceResultSpeakBtn" onclick="speakCurrentSentence()" title="Nghe đọc lại câu" aria-label="Nghe đọc câu">
@@ -1011,6 +989,7 @@ if ('serviceWorker' in navigator) {
           <div class="sentence-result-body">
             <div class="sentence-result-zh" id="sentenceResultZh"></div>
             <div class="sentence-result-py" id="sentenceResultPy"></div>
+            <div class="sentence-result-vi" id="sentenceResultVi"></div>
           </div>
           <details class="sentence-grammar-disclosure" id="sentenceGrammarDisclosure" hidden>
             <summary class="sentence-grammar-summary">
@@ -1166,7 +1145,7 @@ if ('serviceWorker' in navigator) {
     </div>
     <aside class="workstation-right" id="workstationRight" aria-label="Phòng thực hành tương tác"></aside>
     <footer class="app-footer">
-      <p class="footer-note"><span class="footer-version" title="Phiên bản ứng dụng">v1.2.13</span> · Tiến trình tự lưu trên thiết bị này · Phát triển bởi <a href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer">haunguyenngoc442001</a> · <a href="https://www.facebook.com/haunguyenngoc442001/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+      <p class="footer-note"><span class="footer-version" title="Phiên bản ứng dụng">v1.2.17</span> · Tiến trình tự lưu trên thiết bị này · Phát triển bởi <a href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer">haunguyenngoc442001</a> · <a href="https://www.facebook.com/haunguyenngoc442001/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
     </footer>
   </div>
 </div>
