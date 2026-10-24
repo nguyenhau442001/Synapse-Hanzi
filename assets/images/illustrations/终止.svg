@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Background subtle lighting/shadow to ground the physical object -->
+    <ellipse cx="120" cy="190" rx="65" ry="12" fill="#111318" opacity="0.8"/>
+    
+    <!-- Red Stamp / Seal Platform (representing official termination/cancellation) -->
+    <!-- Handle -->
+    <rect x="104" y="60" width="32" height="24" rx="4" fill="#3A4252"/>
+    <path d="M100 84 H140 V92 H100 Z" fill="#2E3440"/>
+    <rect x="110" y="68" width="20" height="8" rx="2" fill="#4C566A"/>
+    
+    <!-- Stamp Base Body -->
+    <path d="M85 92 H155 V104 C155 108 151 112 147 112 H93 C89 112 85 108 85 104 Z" fill="#E53935"/>
+    <path d="M85 104 H155 V108 C155 112 151 116 147 116 H93 C89 116 85 112 85 108 Z" fill="#B71C1C"/>
+
+    <!-- Dynamic "Stamp Impact" Effect: Glowing Red Ink Pad / Impact Mark Below -->
+    <g transform="translate(120, 155)">
+      <!-- Splat/Impact Ring -->
+      <ellipse cx="0" cy="0" rx="55" ry="22" fill="#E53935" opacity="0.15"/>
+      <ellipse cx="0" cy="0" rx="45" ry="16" fill="#E53935" opacity="0.3"/>
+      
+      <!-- The Big Bold Red "X" Mark (Termination / Cease / Stop) -->
+      <g stroke="#FF5252" stroke-width="12" stroke-linecap="round">
+        <line x1="-30" y1="-14" x2="30" y2="14" />
+        <line x1="30" y1="-14" x2="-30" y2="14" />
+      </g>
+      <!-- Inner core bright accent -->
+      <g stroke="#FF8A80" stroke-width="4" stroke-linecap="round">
+        <line x1="-30" y1="-14" x2="30" y2="14" />
+        <line x1="30" y1="-14" x2="-30" y2="14" />
+      </g>
+    </g>
+
+    <!-- Falling/Motion Stamp Lines indicating final action -->
+    <path d="M75 110 L60 120" stroke="#4C566A" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    <path d="M165 110 L180 120" stroke="#4C566A" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    <path d="M80 85 L65 90" stroke="#4C566A" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+    <path d="M160 85 L175 90" stroke="#4C566A" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Small decorative sparks of finality -->
+    <circle cx="65" cy="140" r="3" fill="#FF5252" opacity="0.8"/>
+    <circle cx="175" cy="140" r="3" fill="#FF5252" opacity="0.8"/>
+    <circle cx="120" cy="122" r="2" fill="#FF8A80" opacity="0.9"/>
+  </g>
+</svg>

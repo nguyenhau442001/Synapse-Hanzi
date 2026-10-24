@@ -1,0 +1,73 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background construction grid / site lines -->
+  <path d="M20 190 H220" stroke="#2D333B" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M40 190 L90 120 H150 L200 190" fill="#22272E"/>
+
+  <!-- Ground / Industrial Platform -->
+  <rect x="20" y="190" width="200" height="6" rx="3" fill="#3A424D"/>
+
+  <!-- Heavy Excavator (重型挖掘机) Illustration -->
+  <g transform="translate(15, 10)">
+    <!-- Tracks / Undercarriage (Heavy duty) -->
+    <rect x="35" y="145" width="95" height="25" rx="12.5" fill="#2D333B"/>
+    <rect x="40" y="150" width="85" height="15" rx="7.5" fill="#1A1D24"/>
+    
+    <!-- Track treads detail -->
+    <path d="M55 150 V165 M70 150 V165 M85 150 V165 M100 150 V165 M115 150 V165" stroke="#3A424D" stroke-width="2"/>
+    
+    <!-- Wheels inside track -->
+    <circle cx="50" cy="157" r="5" fill="#F5A623"/>
+    <circle cx="82" cy="157" r="5" fill="#F5A623"/>
+    <circle cx="114" cy="157" r="5" fill="#F5A623"/>
+
+    <!-- Chassis / Body -->
+    <path d="M40 145 H125 L135 125 H30 Z" fill="#E67E22"/>
+    
+    <!-- Cabin (Operator's compartment) -->
+    <path d="M75 125 V95 C75 92 77 90 80 90 H115 C118 90 120 92 120 95 V125 Z" fill="#2D333B"/>
+    <!-- Cabin Window -->
+    <path d="M82 97 H113 V125 H82 Z" fill="#5D6D7E" opacity="0.6"/>
+    <!-- Seat & Control hint inside -->
+    <rect x="95" y="105" width="8" height="12" fill="#F5A623"/>
+
+    <!-- Engine Hood / Counterweight (Back) -->
+    <path d="M35 125 H75 V105 C75 102 73 100 70 100 H40 C37 100 35 102 35 105 Z" fill="#D35400"/>
+    <!-- Warning stripes on counterweight -->
+    <path d="M37 115 L43 110 M47 115 L53 110 M57 115 L63 110" stroke="#F1C40F" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Boom (First arm segment) -->
+    <path d="M105 100 L145 60 L155 70 L115 115 Z" fill="#D35400"/>
+    <circle cx="105" cy="105" r="6" fill="#3A424D"/>
+
+    <!-- Hydraulic cylinder 1 -->
+    <rect x="115" y="95" width="30" height="8" rx="4" transform="rotate(-35 115 95)" fill="#7F8C8D"/>
+    <rect x="120" y="92" width="15" height="5" rx="2.5" transform="rotate(-35 120 92)" fill="#BDC3C7"/>
+
+    <!-- Stick (Second arm segment) -->
+    <path d="M145 60 L185 90 L192 82 L152 52 Z" fill="#E67E22"/>
+    <circle cx="145" cy="60" r="5" fill="#3A424D"/>
+
+    <!-- Hydraulic cylinder 2 -->
+    <rect x="135" y="55" width="25" height="6" rx="3" transform="rotate(25 135 55)" fill="#7F8C8D"/>
+
+    <!-- Bucket (Heavy duty digging bucket) -->
+    <path d="M185 90 L195 115 L210 110 L218 95 L205 85 Z" fill="#3A424D"/>
+    <!-- Bucket teeth -->
+    <path d="M210 110 L215 117 M215 105 L222 110 M218 99 L225 102" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="185" cy="90" r="4" fill="#F5A623"/>
+  </g>
+
+  <!-- Scale/Weight Indicators (Visualizing "Heavy" / 重) -->
+  <g transform="translate(30, 45)">
+    <circle cx="12" cy="12" r="10" fill="#F5A623" opacity="0.15"/>
+    <path d="M12 6 V18 M7 11 L12 6 L17 11" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="rotate(180 12 12)"/>
+  </g>
+  <g transform="translate(52, 35)">
+    <circle cx="12" cy="12" r="10" fill="#F5A623" opacity="0.3"/>
+    <path d="M12 6 V18 M7 11 L12 6 L17 11" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="rotate(180 12 12)"/>
+  </g>
+
+</svg>

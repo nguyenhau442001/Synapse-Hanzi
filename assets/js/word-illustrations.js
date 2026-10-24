@@ -54732,6 +54732,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/制约.svg",
     "caption": "kiềm chế, kìm hãm, ràng buộc kìm giữ"
   },
+  "制止": {
+    "file": "制止.svg",
+    "src": "images/HSK_3.0/level7/制止.svg",
+    "caption": "ngăn chặn, kiềm chế, chặn đứng"
+  },
   "钟": {
     "file": "钟.svg",
     "src": "images/HSK_3.0/level7/钟.svg",
@@ -54762,6 +54767,11 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "src": "images/HSK_3.0/level7/终结.svg",
     "caption": "kết thúc, đặt dấu chấm hết"
   },
+  "终究": {
+    "file": "终究.svg",
+    "src": "images/HSK_3.0/level7/终究.svg",
+    "caption": "rốt cuộc, suy cho cùng"
+  },
   "中立": {
     "file": "中立.svg",
     "src": "images/HSK_3.0/level7/中立.svg",
@@ -54771,6 +54781,241 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "终生.svg",
     "src": "images/HSK_3.0/level7/终生.svg",
     "caption": "trọn đời, suốt đời"
+  },
+  "忠实": {
+    "file": "忠实.svg",
+    "src": "images/HSK_3.0/level7/忠实.svg",
+    "caption": "trung thành, trung thực, trung kiên"
+  },
+  "中途": {
+    "file": "中途.svg",
+    "src": "images/HSK_3.0/level7/中途.svg",
+    "caption": "giữa đường, nửa chừng"
+  },
+  "忠心": {
+    "file": "忠心.svg",
+    "src": "images/HSK_3.0/level7/忠心.svg",
+    "caption": "lòng trung thành, dạ sắt son"
+  },
+  "衷心": {
+    "file": "衷心.svg",
+    "src": "images/HSK_3.0/level7/衷心.svg",
+    "caption": "từ tận đáy lòng, chân thành"
+  },
+  "中性": {
+    "file": "中性.svg",
+    "src": "images/HSK_3.0/level7/中性.svg",
+    "caption": "trung tính (hóa học, phong cách, thái độ)"
+  },
+  "中叶": {
+    "file": "中叶.svg",
+    "src": "images/HSK_3.0/level7/中叶.svg",
+    "caption": "giữa thời kỳ, trung diệp"
+  },
+  "中庸": {
+    "file": "中庸.svg",
+    "src": "images/HSK_3.0/level7/中庸.svg",
+    "caption": "trung dung, hài hòa vừa mực không thiên lệch"
+  },
+  "忠于": {
+    "file": "忠于.svg",
+    "src": "images/HSK_3.0/level7/忠于.svg",
+    "caption": "trung thành với, tận tụy với"
+  },
+  "忠贞": {
+    "file": "忠贞.svg",
+    "src": "images/HSK_3.0/level7/忠贞.svg",
+    "caption": "trung trinh, kiên trinh bất khuất"
+  },
+  "中止": {
+    "file": "中止.svg",
+    "src": "images/HSK_3.0/level7/中止.svg",
+    "caption": "tạm ngừng giữa chừng, hoãn lại"
+  },
+  "终止": {
+    "file": "终止.svg",
+    "src": "images/HSK_3.0/level7/终止.svg",
+    "caption": "chấm dứt, kết thúc hoàn toàn"
+  },
+  "肿瘤": {
+    "file": "肿瘤.svg",
+    "src": "images/HSK_3.0/level7/肿瘤.svg",
+    "caption": "khối u, bướu"
+  },
+  "种族": {
+    "file": "种族.svg",
+    "src": "images/HSK_3.0/level7/种族.svg",
+    "caption": "chủng tộc, sắc tộc"
+  },
+  "仲裁": {
+    "file": "仲裁.svg",
+    "src": "images/HSK_3.0/level7/仲裁.svg",
+    "caption": "trọng tài (pháp lý thương mại)"
+  },
+  "重创": {
+    "file": "重创.svg",
+    "src": "images/HSK_3.0/level7/重创.svg",
+    "caption": "giáng đòn nặng nề, tàn phá nặng nề"
+  },
+  "重量级": {
+    "file": "重量级.svg",
+    "src": "images/HSK_3.0/level7/重量级.svg",
+    "caption": "hạng nặng, nhân vật tầm cỡ trọng lượng"
+  },
+  "重任": {
+    "file": "重任.svg",
+    "src": "images/HSK_3.0/level7/重任.svg",
+    "caption": "trọng trách, nhiệm vụ nặng nề"
+  },
+  "重型": {
+    "file": "重型.svg",
+    "src": "images/HSK_3.0/level7/重型.svg",
+    "caption": "hạng nặng (máy móc, vũ khí)"
+  },
+  "重用": {
+    "file": "重用.svg",
+    "src": "images/HSK_3.0/level7/重用.svg",
+    "caption": "trọng dụng, cất nhắc giữ chức quan trọng"
+  },
+  "众志成城": {
+    "file": "众志成城.svg",
+    "src": "images/HSK_3.0/level7/众志成城.svg",
+    "caption": "muôn người một lòng vững như thành đồng"
+  },
+  "重中之重": {
+    "file": "重中之重.svg",
+    "src": "images/HSK_3.0/level7/重中之重.svg",
+    "caption": "trọng tâm hàng đầu, ưu tiên số một"
+  },
+  "周密": {
+    "file": "周密.svg",
+    "src": "images/HSK_3.0/level7/周密.svg",
+    "caption": "chu đáo tỉ mỉ, cẩn mật toàn diện"
+  },
+  "周岁": {
+    "file": "周岁.svg",
+    "src": "images/HSK_3.0/level7/周岁.svg",
+    "caption": "tròn một tuổi, đầy năm"
+  },
+  "周旋": {
+    "file": "周旋.svg",
+    "src": "images/HSK_3.0/level7/周旋.svg",
+    "caption": "giao thiệp khôn khéo, ứng phó linh hoạt"
+  },
+  "周折": {
+    "file": "周折.svg",
+    "src": "images/HSK_3.0/level7/周折.svg",
+    "caption": "trắc trở, trục trặc vòng vo"
+  },
+  "周转": {
+    "file": "周转.svg",
+    "src": "images/HSK_3.0/level7/周转.svg",
+    "caption": "luân chuyển, xoay vòng (vốn, hàng hóa)"
+  },
+  "皱": {
+    "file": "皱.svg",
+    "src": "images/HSK_3.0/level7/皱.svg",
+    "caption": "nhăn, cau (mày), nhăn nhúm"
+  },
+  "骤然": {
+    "file": "骤然.svg",
+    "src": "images/HSK_3.0/level7/骤然.svg",
+    "caption": "đột ngột, thình lình"
+  },
+  "皱纹": {
+    "file": "皱纹.svg",
+    "src": "images/HSK_3.0/level7/皱纹.svg",
+    "caption": "nếp nhăn"
+  },
+  "昼夜": {
+    "file": "昼夜.svg",
+    "src": "images/HSK_3.0/level7/昼夜.svg",
+    "caption": "ngày đêm, suốt ngày đêm"
+  },
+  "朱红": {
+    "file": "朱红.svg",
+    "src": "images/HSK_3.0/level7/朱红.svg",
+    "caption": "màu đỏ chu sa, đỏ son"
+  },
+  "诸如此类": {
+    "file": "诸如此类.svg",
+    "src": "images/HSK_3.0/level7/诸如此类.svg",
+    "caption": "những thứ tương tự như thế, vân vân"
+  },
+  "诸位": {
+    "file": "诸位.svg",
+    "src": "images/HSK_3.0/level7/诸位.svg",
+    "caption": "chư vị, quý vị"
+  },
+  "竹竿": {
+    "file": "竹竿.svg",
+    "src": "images/HSK_3.0/level7/竹竿.svg",
+    "caption": "cây sào tre, cọc tre"
+  },
+  "逐年": {
+    "file": "逐年.svg",
+    "src": "images/HSK_3.0/level7/逐年.svg",
+    "caption": "hàng năm"
+  },
+  "逐一": {
+    "file": "逐一.svg",
+    "src": "images/HSK_3.0/level7/逐一.svg",
+    "caption": "lần lượt từng cái một, từng thứ một"
+  },
+  "拄": {
+    "file": "拄.svg",
+    "src": "images/HSK_3.0/level7/拄.svg",
+    "caption": "chống (gậy)"
+  },
+  "主编": {
+    "file": "主编.svg",
+    "src": "images/HSK_3.0/level7/主编.svg",
+    "caption": "tổng biên tập, chủ biên"
+  },
+  "主打": {
+    "file": "主打.svg",
+    "src": "images/HSK_3.0/level7/主打.svg",
+    "caption": "chủ lực, dòng sản phẩm chính"
+  },
+  "嘱咐": {
+    "file": "嘱咐.svg",
+    "src": "images/HSK_3.0/level7/嘱咐.svg",
+    "caption": "dặn dò, dặn bảo"
+  },
+  "主力": {
+    "file": "主力.svg",
+    "src": "images/HSK_3.0/level7/主力.svg",
+    "caption": "chủ lực, lực lượng nòng cốt"
+  },
+  "主权": {
+    "file": "主权.svg",
+    "src": "images/HSK_3.0/level7/主权.svg",
+    "caption": "chủ quyền"
+  },
+  "主人公": {
+    "file": "主人公.svg",
+    "src": "images/HSK_3.0/level7/主人公.svg",
+    "caption": "nhân vật chính (trong tác phẩm nghệ thuật)"
+  },
+  "主体": {
+    "file": "主体.svg",
+    "src": "images/HSK_3.0/level7/主体.svg",
+    "caption": "chủ thể, phần nòng cốt chính"
+  },
+  "主题曲": {
+    "file": "主题曲.svg",
+    "src": "images/HSK_3.0/level7/主题曲.svg",
+    "caption": "bài hát chủ đề, ca khúc chủ đề"
+  },
+  "嘱托": {
+    "file": "嘱托.svg",
+    "src": "images/HSK_3.0/level7/嘱托.svg",
+    "caption": "ủy thác, gửi gắm dặn dò"
+  },
+  "主页": {
+    "file": "主页.svg",
+    "src": "images/HSK_3.0/level7/主页.svg",
+    "caption": "trang chủ (website)"
   }
 };
 
