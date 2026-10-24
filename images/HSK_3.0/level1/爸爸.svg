@@ -1,38 +1,9 @@
-<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#1e293b"/>
-    </linearGradient>
-  </defs>
-  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
-  
-  <!-- Desk Surface -->
-  <rect x="20" y="150" width="200" height="90" rx="10" fill="#334155"/>
-  
-  <!-- Laptop -->
-  <path d="M60 150 L180 150 L190 120 L50 120 Z" fill="#64748b"/>
-  <rect x="65" y="125" width="110" height="20" rx="2" fill="#38bdf8"/>
-  
-  <!-- Father Figure (Upper Body) -->
-  <circle cx="120" cy="90" r="25" fill="#fbbf24"/>
-  <path d="M80 120 C80 90, 160 90, 160 120 L150 180 L90 180 Z" fill="#f59e0b"/>
-  
-  <!-- Details -->
-  <circle cx="110" cy="85" r="3" fill="#0f172a"/>
-  <circle cx="130" cy="85" r="3" fill="#0f172a"/>
-  <path d="M110 100 Q120 105 130 100" stroke="#0f172a" stroke-width="2" fill="none"/>
-  
-  <!-- Coffee Mug -->
-  <rect x="180" y="130" width="25" height="30" rx="4" fill="#ec4899"/>
-  <path d="M205 135 Q215 135 215 145 Q215 155 205 155" stroke="#ec4899" stroke-width="4" fill="none"/>
-  
-  <!-- Desk Lamp -->
-  <path d="M30 150 L40 150 L45 80 L25 80 Z" fill="#fb923c"/>
-  <circle cx="35" cy="80" r="15" fill="#fb923c"/>
-  <circle cx="35" cy="80" r="8" fill="#fef3c7"/>
-  
-  <!-- Floating ambient light -->
-  <circle cx="190" cy="60" r="2" fill="#10b981"/>
-  <circle cx="200" cy="40" r="3" fill="#38bdf8"/>
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+  <path d="M36 24 Q44 34 48 42" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M64 24 Q56 34 52 42" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M24 44 Q50 48 76 44" stroke="#fb923c" stroke-width="4.2" stroke-linecap="round"/>
+  <path d="M32 44 Q42 62 26 78" stroke="#fb923c" stroke-width="4.2" stroke-linecap="round"/>
+  <path d="M68 44 Q58 62 74 78" stroke="#fb923c" stroke-width="4.2" stroke-linecap="round"/>
+  <path d="M40 76 Q50 70 60 76" stroke="#34d399" stroke-width="3.5" stroke-linecap="round"/>
 </svg>

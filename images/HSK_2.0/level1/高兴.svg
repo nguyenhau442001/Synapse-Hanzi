@@ -1,43 +1,9 @@
-<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#1e293b"/>
-    </linearGradient>
-  </defs>
-  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
-  
-  <!-- Atmospheric Glow -->
-  <circle cx="120" cy="120" r="80" fill="#f59e0b" opacity="0.05"/>
-  
-  <!-- Character Body -->
-  <path d="M120 190 C 80 190, 60 170, 60 140 L 180 140 C 180 170, 160 190, 120 190 Z" fill="#38bdf8"/>
-  
-  <!-- Arms (Action: Arms raised in joy) -->
-  <path d="M70 130 Q 50 80, 80 60" stroke="#38bdf8" stroke-width="12" stroke-linecap="round" fill="none"/>
-  <path d="M170 130 Q 190 80, 160 60" stroke="#38bdf8" stroke-width="12" stroke-linecap="round" fill="none"/>
-  
-  <!-- Hands -->
-  <circle cx="80" cy="60" r="10" fill="#fbbf24"/>
-  <circle cx="160" cy="60" r="10" fill="#fbbf24"/>
-  
-  <!-- Face -->
-  <circle cx="120" cy="100" r="35" fill="#fbbf24"/>
-  
-  <!-- Eyes (Closed in joy) -->
-  <path d="M105 95 Q 110 90, 115 95" stroke="#0f172a" stroke-width="3" fill="none" stroke-linecap="round"/>
-  <path d="M125 95 Q 130 90, 135 95" stroke="#0f172a" stroke-width="3" fill="none" stroke-linecap="round"/>
-  
-  <!-- Mouth (Big smile) -->
-  <path d="M105 115 Q 120 130, 135 115" stroke="#0f172a" stroke-width="4" fill="none" stroke-linecap="round"/>
-  
-  <!-- Cheeks -->
-  <circle cx="100" cy="110" r="5" fill="#ec4899" opacity="0.6"/>
-  <circle cx="140" cy="110" r="5" fill="#ec4899" opacity="0.6"/>
-  
-  <!-- Confetti/Atmospheric Accents -->
-  <circle cx="50" cy="50" r="3" fill="#10b981"/>
-  <circle cx="190" cy="40" r="4" fill="#fb923c"/>
-  <circle cx="40" cy="180" r="3" fill="#38bdf8"/>
-  <circle cx="200" cy="190" r="4" fill="#ec4899"/>
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+  <circle cx="50" cy="50" r="32" stroke="#38bdf8" stroke-width="4" fill="none"/>
+  <circle cx="38" cy="42" r="3.5" fill="#fb923c"/>
+  <circle cx="62" cy="42" r="3.5" fill="#fb923c"/>
+  <path d="M34 54 Q50 72 66 54" stroke="#f43f5e" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M26 44 Q30 40 34 44" stroke="#fb923c" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M66 44 Q70 40 74 44" stroke="#fb923c" stroke-width="2.5" stroke-linecap="round"/>
 </svg>
