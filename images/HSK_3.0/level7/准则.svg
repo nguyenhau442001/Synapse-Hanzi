@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Background subtle design elements -->
+    <circle cx="120" cy="120" r="85" fill="none" stroke="#252A34" stroke-width="2" stroke-dasharray="4 4"/>
+    
+    <!-- Central Physical Object representing "准则" (Standard Rule/Calibrated Straightedge & Plumb Line) -->
+    <!-- Scale base / Anchor point -->
+    <path d="M120 45 L120 195" stroke="#3A4256" stroke-width="2" stroke-dasharray="2 2"/>
+    
+    <!-- Plumb line / Standard reference vertical -->
+    <path d="M120 60 L120 160" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="116,160 124,160 120,172" fill="#F5A623"/>
+
+    <!-- Architectural Square / Ruler (Set square representing calibration and standard) -->
+    <g transform="rotate(-15 120 120)">
+      <!-- Outer Triangle -->
+      <polygon points="70,150 170,150 70,50" fill="#222733" stroke="#4F5D75" stroke-width="4" stroke-linejoin="round"/>
+      
+      <!-- Inner cutout of the triangle (making it a true square ruler tool) -->
+      <polygon points="82,138 145,138 82,75" fill="#1A1D24"/>
+      
+      <!-- Calibration notches (Standard markings) -->
+      <line x1="75" y1="60" x2="81" y2="60" stroke="#F5A623" stroke-width="2"/>
+      <line x1="75" y1="70" x2="85" y2="70" stroke="#F5A623" stroke-width="2"/>
+      <line x1="75" y1="80" x2="81" y2="80" stroke="#F5A623" stroke-width="2"/>
+      <line x1="75" y1="90" x2="85" y2="90" stroke="#F5A623" stroke-width="2"/>
+      <line x1="75" y1="100" x2="81" y2="100" stroke="#F5A623" stroke-width="2"/>
+      
+      <line x1="90" y1="145" x2="90" y2="139" stroke="#F5A623" stroke-width="2"/>
+      <line x1="100" y1="145" x2="100" y2="135" stroke="#F5A623" stroke-width="2"/>
+      <line x1="110" y1="145" x2="110" y2="139" stroke="#F5A623" stroke-width="2"/>
+      <line x1="120" y1="145" x2="120" y2="135" stroke="#F5A623" stroke-width="2"/>
+      <line x1="130" y1="145" x2="130" y2="139" stroke="#F5A623" stroke-width="2"/>
+    </g>
+
+    <!-- Checkmark focal point symbolizing adherence to the standard/rule -->
+    <circle cx="162" cy="85" r="20" fill="#2E384D"/>
+    <path d="M153 85 L159 91 L172 78" fill="none" stroke="#2ECC71" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Accent decorative dots -->
+    <circle cx="75" cy="170" r="4" fill="#F5A623"/>
+    <circle cx="175" cy="140" r="3" fill="#4F5D75"/>
+  </g>
+</svg>

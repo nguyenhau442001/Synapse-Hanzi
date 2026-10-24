@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative background elements representing digital network/internet data stream -->
+  <g opacity="0.3">
+    <path d="M 40,70 L 90,70 L 110,95 L 200,95" fill="none" stroke="#2C323D" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4"/>
+    <path d="M 30,150 L 70,150 L 95,125 L 180,125" fill="none" stroke="#2C323D" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4"/>
+    <circle cx="90" cy="70" r="3" fill="#3A4252"/>
+    <circle cx="110" cy="95" r="3" fill="#3A4252"/>
+    <circle cx="70" cy="150" r="3" fill="#3A4252"/>
+    <circle cx="95" cy="125" r="3" fill="#3A4252"/>
+  </g>
+
+  <!-- Dynamic floating information panels (representing 'news/information' stream) -->
+  <g transform="translate(15, 0)">
+    <!-- Back information card -->
+    <g transform="translate(135, 45) rotate(10)">
+      <rect x="0" y="0" width="55" height="40" rx="6" fill="#242B38" stroke="#323C4E" stroke-width="1.5"/>
+      <rect x="8" y="8" width="25" height="4" rx="2" fill="#4E5D78"/>
+      <rect x="8" y="16" width="38" height="3" rx="1.5" fill="#323C4E"/>
+      <rect x="8" y="22" width="30" height="3" rx="1.5" fill="#323C4E"/>
+      <circle cx="45" cy="10" r="3" fill="#F59E0B"/>
+    </g>
+
+    <!-- Side information card -->
+    <g transform="translate(30, 55) rotate(-8)">
+      <rect x="0" y="0" width="60" height="45" rx="6" fill="#242B38" stroke="#323C4E" stroke-width="1.5"/>
+      <rect x="8" y="8" width="30" height="4" rx="2" fill="#38BDF8"/>
+      <rect x="8" y="16" width="42" height="3" rx="1.5" fill="#323C4E"/>
+      <rect x="8" y="22" width="35" height="3" rx="1.5" fill="#323C4E"/>
+      <rect x="8" y="28" width="20" height="3" rx="1.5" fill="#323C4E"/>
+    </g>
+
+    <!-- Central active/focal information panel (gold/orange accent for 'fetching/obtaining' focus) -->
+    <g transform="translate(75, 25)">
+      <rect x="0" y="0" width="70" height="50" rx="8" fill="#242B38" stroke="#F59E0B" stroke-width="2"/>
+      <rect x="10" y="10" width="35" height="5" rx="2.5" fill="#F59E0B"/>
+      <rect x="10" y="20" width="50" height="3" rx="1.5" fill="#4E5D78"/>
+      <rect x="10" y="27" width="40" height="3" rx="1.5" fill="#4E5D78"/>
+      <rect x="10" y="34" width="25" height="3" rx="1.5" fill="#4E5D78"/>
+      <circle cx="58" cy="12" r="4" fill="#38BDF8"/>
+    </g>
+  </g>
+
+  <!-- Motion lines indicating action/fetching/gathering (Verbs / Action) -->
+  <g stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8">
+    <path d="M 85,100 C 95,110 105,120 115,130" />
+    <path d="M 155,100 C 145,110 135,120 125,130" />
+    <path d="M 120,90 L 120,115" />
+    <!-- Arrowhead pointing downward to the user's hand/action -->
+    <polyline points="112,107 120,118 128,107" fill="none" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Human Character Action (Upper body, interacting directly with the data stream) -->
+  <g transform="translate(0, 20)">
+    <!-- Character Torso / Shoulders -->
+    <path d="M 80,185 C 80,165 95,155 120,155 C 145,155 160,165 160,185" fill="#3B82F6"/>
+    
+    <!-- Neck & Head -->
+    <rect x="112" y="138" width="16" height="20" rx="4" fill="#FED7AA"/>
+    <circle cx="120" cy="120" r="18" fill="#FED7AA"/>
+    
+    <!-- Modern Hair Style -->
+    <path d="M 102,120 C 102,105 110,100 120,100 C 132,100 138,108 138,122 C 138,122 135,114 125,114 C 115,114 105,120 102,120 Z" fill="#1E293B"/>
+
+    <!-- Dynamic Arms Reaching Upwards (Cause & Effect interaction) -->
+    <!-- Left Arm -->
+    <path d="M 90,165 C 90,150 100,140 110,135" fill="none" stroke="#3B82F6" stroke-width="12" stroke-linecap="round"/>
+    <!-- Right Arm -->
+    <path d="M 150,165 C 150,150 140,140 130,135" fill="none" stroke="#3B82F6" stroke-width="12" stroke-linecap="round"/>
+
+    <!-- Hands actively receiving/interacting -->
+    <circle cx="110" cy="132" r="6" fill="#FED7AA"/>
+    <circle cx="130" cy="132" r="6" fill="#FED7AA"/>
+  </g>
+
+  <!-- Base interface surface/desk line -->
+  <path d="M 50,205 L 190,205" stroke="#323C4E" stroke-width="3" stroke-linecap="round"/>
+</svg>
