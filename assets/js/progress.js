@@ -483,6 +483,12 @@ function toggleUnknownWords() {
 
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape') {
+    const cardMoreDropdown = document.getElementById('cardMoreDropdown');
+    if (cardMoreDropdown && !cardMoreDropdown.hidden) {
+      event.preventDefault();
+      if (typeof closeCardMoreMenu === 'function') closeCardMoreMenu();
+      return;
+    }
     const transferPanel = document.getElementById('transferPanel');
     if (transferPanel && !transferPanel.hidden) {
       event.preventDefault();
@@ -539,26 +545,54 @@ document.addEventListener('keydown', event => {
     return;
   }
   if (event.key === ' ') {
-    if (document.activeElement && document.activeElement.closest('button, summary, a')) return;
+    if (document.activeElement && document.activeElement.closest('input, textarea, select')) return;
     event.preventDefault();
-    if (!isCardRevealed()) flip();
+    flip();
     return;
   }
-  const rating = RATING_KEYS[event.key];
-  if (rating && ratingsVisible()) { event.preventDefault(); rateCurrentCard(rating); return; }
-  if (event.key === 'r' || event.key === 'R') {
-    event.preventDefault();
-    jumpToRandomWord();
-    return;
-  }
+  const revealed = typeof isCardRevealed === 'function' ? isCardRevealed() : false;
   if (event.key === 'ArrowRight') {
+    if (document.activeElement && document.activeElement.closest('input, textarea, select')) return;
     event.preventDefault();
-    nextCard();
+    if (revealed && typeof rateCurrentCard === 'function') {
+      rateCurrentCard('good');
+    } else if (typeof nextCard === 'function') {
+      nextCard();
+    }
     return;
   }
   if (event.key === 'ArrowLeft') {
+    if (document.activeElement && document.activeElement.closest('input, textarea, select')) return;
     event.preventDefault();
-    prevCard();
+    if (revealed && typeof rateCurrentCard === 'function') {
+      rateCurrentCard('again');
+    } else if (typeof prevCard === 'function') {
+      prevCard();
+    }
+    return;
+  }
+  if (event.key === '1') {
+    if (document.activeElement && document.activeElement.closest('input, textarea, select')) return;
+    event.preventDefault();
+    if (typeof rateCurrentCard === 'function') rateCurrentCard('again');
+    return;
+  }
+  if (event.key === '2') {
+    if (document.activeElement && document.activeElement.closest('input, textarea, select')) return;
+    event.preventDefault();
+    if (typeof rateCurrentCard === 'function') rateCurrentCard('good');
+    return;
+  }
+  const rating = (typeof RATING_KEYS !== 'undefined' && RATING_KEYS) ? RATING_KEYS[event.key] : null;
+  if (rating) {
+    if (document.activeElement && document.activeElement.closest('input, textarea, select')) return;
+    event.preventDefault();
+    rateCurrentCard(rating);
+    return;
+  }
+  if (event.key === 'r' || event.key === 'R') {
+    event.preventDefault();
+    jumpToRandomWord();
     return;
   }
 });

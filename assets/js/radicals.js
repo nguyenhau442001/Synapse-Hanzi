@@ -39,6 +39,7 @@ const PRIMARY_TAB_SCREENS = {
   review: { tabId: 'primaryTabReview', screenId: 'screenReviewPicker' },
   reading: { tabId: 'primaryTabReading', screenId: 'screenReadingAnalysis' },
   gradedReading: { tabId: 'primaryTabGradedReading', screenId: 'screenGradedReading' },
+  listening: { tabId: 'primaryTabListening', screenId: 'screenListeningPractice' },
   sentenceGame: { tabId: 'primaryTabSentenceGame', screenId: 'screenSentenceGame' },
   guessWord: { tabId: 'primaryTabGuessWord', screenId: 'screenGuessWord' },
   speedQuiz: { tabId: 'primaryTabSpeedQuiz', screenId: 'screenSpeedQuiz' },
@@ -108,11 +109,23 @@ function setPrimaryTab(tab, options) {
       screenEl.style.display = isActive ? '' : 'none';
     }
   });
-  const isTool = ['radicals', 'sentenceGame', 'guessWord', 'speedQuiz', 'reading', 'gradedReading'].includes(tab);
+  const mobVocab = document.getElementById('mobNavVocab');
+  const mobReview = document.getElementById('mobNavReview');
+  const mobProfile = document.getElementById('mobNavProfile');
+  if (mobVocab) mobVocab.classList.toggle('active', tab === 'vocab');
+  if (mobReview) mobReview.classList.toggle('active', tab === 'review');
+  if (mobProfile) mobProfile.classList.remove('active');
+  if (typeof closeMobileStatsSheet === 'function') closeMobileStatsSheet();
+  const isTool = ['radicals', 'sentenceGame', 'guessWord', 'speedQuiz', 'reading', 'gradedReading', 'listening'].includes(tab);
   const isGame = ['sentenceGame', 'guessWord', 'speedQuiz'].includes(tab);
   document.body.classList.toggle('is-game-view', isGame);
   document.body.classList.toggle('reading-view-active', tab === 'reading');
   document.body.classList.toggle('graded-reading-active', tab === 'gradedReading');
+  document.body.classList.toggle('listening-view-active', tab === 'listening');
+  document.body.classList.toggle('review-view-active', tab === 'review');
+  if (previousTab === 'listening' && tab !== 'listening') {
+    if (typeof ListeningPractice !== 'undefined') ListeningPractice.stopAudio();
+  }
   if (tab !== 'reading') {
     document.body.classList.remove('reading-zen-active');
   }
@@ -123,6 +136,10 @@ function setPrimaryTab(tab, options) {
   if (gamesMenu) {
     gamesMenu.open = false;
     gamesMenu.classList.toggle('has-active-tool', isTool);
+  }
+  const versionControls = document.getElementById('pickerVersionControls');
+  if (versionControls) {
+    versionControls.hidden = (tab !== 'vocab') || (vocabSubTab !== 'level');
   }
   const dashboard = document.getElementById('learningDashboard');
   if (dashboard) dashboard.style.display = tab === 'vocab' ? '' : 'none';
@@ -136,9 +153,17 @@ function setPrimaryTab(tab, options) {
   if (tab === 'gradedReading') {
     if (typeof GradedReading !== 'undefined') GradedReading.init();
   }
+  if (tab === 'listening') {
+    if (typeof ListeningPractice !== 'undefined') ListeningPractice.init();
+  }
   if (tab === 'review') {
-    const slider = document.getElementById('reviewRangeSlider');
-    if (slider) updateReviewRangeLabel(slider.value);
+    if (typeof showReviewSetup === 'function') {
+      showReviewSetup();
+    } else {
+      const slider = document.getElementById('reviewRangeSlider');
+      if (slider && typeof updateReviewRangeLabel === 'function') updateReviewRangeLabel(slider.value);
+    }
+    if (typeof updateReviewMobileAuxBadge === 'function') updateReviewMobileAuxBadge();
   }
   if (tab === 'vocab' && vocabSubTab === 'topic') renderTopicGrid();
   if (tab === 'sentenceGame') startSentenceGame();
@@ -148,7 +173,8 @@ function setPrimaryTab(tab, options) {
   if (tab === 'guessWord') startGuessWordGame();
   if (tab === 'speedQuiz') startSpeedQuizGame(options || {});
   if (previousTab === 'review' && tab !== 'review') {
-    abandonReviewSession();
+    if (typeof abandonReviewSession === 'function') abandonReviewSession();
+    if (typeof closeReviewBottomSheet === 'function') closeReviewBottomSheet();
   }
   syncHomeScreen();
   // Reset scroll position to top and focus container/heading
@@ -318,10 +344,100 @@ function goBackToRadicalHub() {
   }
 }
 
-// Close primary tools & games menu on click outside
+// Close primary tools & skills menu on click outside or item selection
 document.addEventListener('click', event => {
   const menu = document.getElementById('primaryGamesMenu');
-  if (menu && menu.open && !menu.contains(event.target)) {
+  if (!menu || !menu.open) return;
+  if (!menu.contains(event.target) || event.target.closest('.primary-games-menu-panel button')) {
     menu.open = false;
   }
 });
+
+// Close primary tools & skills menu on Escape and return focus to trigger
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' || event.key === 'Esc') {
+    const menu = document.getElementById('primaryGamesMenu');
+    if (menu && menu.open) {
+      event.preventDefault();
+      menu.open = false;
+      const trigger = menu.querySelector('.primary-menu-trigger');
+      if (trigger) trigger.focus();
+    }
+  }
+});
+
+// Keyboard arrow navigation for primary skills menu
+(function initPrimaryMenuKeyboard() {
+  function handleMenuKeydown(event) {
+    const menu = document.getElementById('primaryGamesMenu');
+    if (!menu) return;
+    const trigger = menu.querySelector('.primary-menu-trigger');
+    const items = Array.from(menu.querySelectorAll('.primary-games-menu-panel [role="menuitem"]:not([disabled])'));
+    if (!items.length) return;
+
+    if (event.target === trigger) {
+      if (event.key === 'ArrowDown' || event.key === 'Down') {
+        event.preventDefault();
+        menu.open = true;
+        items[0].focus();
+        return;
+      }
+      if (event.key === 'ArrowUp' || event.key === 'Up') {
+        event.preventDefault();
+        menu.open = true;
+        items[items.length - 1].focus();
+        return;
+      }
+    }
+
+    const currentIndex = items.indexOf(document.activeElement);
+    if (currentIndex !== -1) {
+      if (event.key === 'ArrowDown' || event.key === 'Down') {
+        event.preventDefault();
+        const nextIndex = (currentIndex + 1) % items.length;
+        items[nextIndex].focus();
+      } else if (event.key === 'ArrowUp' || event.key === 'Up') {
+        event.preventDefault();
+        const prevIndex = (currentIndex - 1 + items.length) % items.length;
+        items[prevIndex].focus();
+      } else if (event.key === 'Home') {
+        event.preventDefault();
+        items[0].focus();
+      } else if (event.key === 'End') {
+        event.preventDefault();
+        items[items.length - 1].focus();
+      }
+    }
+  }
+
+  const menu = document.getElementById('primaryGamesMenu');
+  if (menu) {
+    menu.addEventListener('keydown', handleMenuKeydown);
+  } else if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+      const el = document.getElementById('primaryGamesMenu');
+      if (el) el.addEventListener('keydown', handleMenuKeydown);
+    });
+  }
+})();
+
+// Sync aria-expanded state on toggle
+(function initPrimaryMenuAria() {
+  function bindToggle() {
+    const menu = document.getElementById('primaryGamesMenu');
+    if (menu) {
+      menu.addEventListener('toggle', () => {
+        const trigger = menu.querySelector('.primary-menu-trigger');
+        if (trigger) {
+          trigger.setAttribute('aria-expanded', String(menu.open));
+        }
+      });
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', bindToggle);
+  } else {
+    bindToggle();
+  }
+})();
+

@@ -5,7 +5,7 @@ function exportProgress() {
     level: currentLevel,
     cards: srsCards,
     reviewLog: readSrsReviewLog(currentLevel),
-    prefs: { showPinyin, order, desiredRetention: srsRetention },
+    prefs: { showPinyin, showIllustration, order, desiredRetention: srsRetention },
     progress,
   }, null, 2);
   const blob = new Blob([data], { type: 'application/json' });
@@ -53,6 +53,11 @@ function importProgress(event) {
       appendImportedReviewLog(currentLevel, data.reviewLog);
       if (Array.isArray(backupPrefs.order) && backupPrefs.order.length === WORDS.length) order = backupPrefs.order;
       if (typeof backupPrefs.showPinyin === 'boolean') showPinyin = backupPrefs.showPinyin;
+      if (typeof backupPrefs.showIllustration === 'boolean') {
+        showIllustration = backupPrefs.showIllustration;
+        try { localStorage.setItem('hsk_show_illustrations', String(showIllustration)); } catch (e) {}
+        document.body.classList.toggle('hide-illustrations', !showIllustration);
+      }
       if (Number.isFinite(Number(backupPrefs.desiredRetention))) srsRetention = saveRetention(backupPrefs.desiredRetention);
       const retentionSlider = document.getElementById('desiredRetentionSlider');
       const retentionLabel = document.getElementById('desiredRetentionValue');

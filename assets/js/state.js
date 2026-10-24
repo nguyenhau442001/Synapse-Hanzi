@@ -14,8 +14,20 @@ const LEVELS = {
     available: true,
     total: 150,
   },
-  hsk3: { label: 'HSK3', dataUrl: 'database/vocabs/hsk3_vocabularies.json', available: true, total: 300 },
-  hsk4: { label: 'HSK4', dataUrl: 'database/vocabs/hsk4_vocabularies.json', available: true, total: 600 },
+  hsk3: {
+    label: 'HSK3',
+    dataUrl: 'database/vocabs/hsk3_vocabularies.json',
+    audioManifestUrl: 'database/prebuilt_audio/hsk3/manifest.json',
+    available: true,
+    total: 300,
+  },
+  hsk4: {
+    label: 'HSK4',
+    dataUrl: 'database/vocabs/hsk4_vocabularies.json',
+    audioManifestUrl: 'database/prebuilt_audio/hsk4/manifest.json',
+    available: true,
+    total: 600,
+  },
   hsk5: { label: 'HSK5', dataUrl: 'database/vocabs/hsk5_vocabularies.json', available: true, total: 1300 },
   hsk6: { label: 'HSK6', dataUrl: 'database/vocabs/hsk6_vocabularies.json', available: true, total: 2500 },
 };
@@ -55,8 +67,8 @@ function hsk30LevelKeys() {
   return Object.keys(LEVELS_HSK30);
 }
 const SPEECH_RATE = 0.85;
-const EXAMPLE_SPEECH_SPEEDS = [0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2];
-const DEFAULT_EXAMPLE_SPEECH_SPEED = 1;
+const EXAMPLE_SPEECH_SPEEDS = [0.5, 0.75, 0.8, 1, 1.25, 1.5, 1.75, 2];
+const DEFAULT_EXAMPLE_SPEECH_SPEED = 0.8;
 
 let currentLevel = null;
 let WORDS = [];
@@ -76,6 +88,14 @@ let showHanViet = (function() {
     return true;
   }
 })();
+let showIllustration = (function() {
+  try {
+    const saved = localStorage.getItem('hsk_show_illustrations');
+    return saved !== null ? saved === 'true' : true;
+  } catch (e) {
+    return true;
+  }
+})();
 let currentFilter = 'all';
 let transitionTimer = null;
 let celebrationShown = false;
@@ -90,7 +110,7 @@ let overviewQuery = '';
 let overviewStatus = 'all';
 let reviewPool = [];
 let reviewIndex = 0;
-let reviewLives = 3;
+let reviewLives = 5;
 let reviewScore = 0;
 let reviewStreak = 0;
 let reviewBestStreak = 0;

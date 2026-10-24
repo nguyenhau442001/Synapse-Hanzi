@@ -37,7 +37,7 @@ function getStrokeColors() {
 function getGridBoxSize() {
   const panel = document.getElementById('strokeCanvasWrap');
   const rawWidth = (panel && panel.clientWidth > 180) ? panel.clientWidth - 36 : 360;
-  return Math.min(200, Math.max(170, Math.floor(rawWidth * 0.58)));
+  return Math.min(230, Math.max(190, Math.floor(rawWidth * 0.62)));
 }
 
 // Classify basic Chinese stroke type and provide clear Vietnamese directional instructions
@@ -198,8 +198,8 @@ function computeSingleStrokeGuideGeometry(median, boxSize, padding) {
   const polylineStr = linePts.map(p => `${p[0].toFixed(1)},${p[1].toFixed(1)}`).join(' ');
   const arrowPolyStr = `${tipPt[0].toFixed(1)},${tipPt[1].toFixed(1)} ${leftX.toFixed(1)},${leftY.toFixed(1)} ${rightX.toFixed(1)},${rightY.toFixed(1)}`;
 
-  const bx = Math.max(badgeRadius + 3, Math.min(boxSize - badgeRadius - 3, pts[0][0]));
-  const by = Math.max(badgeRadius + 3, Math.min(boxSize - badgeRadius - 3, pts[0][1]));
+  const bx = Math.max(badgeRadius + 6, Math.min(boxSize - badgeRadius - 6, pts[0][0]));
+  const by = Math.max(badgeRadius + 6, Math.min(boxSize - badgeRadius - 6, pts[0][1]));
 
   return {
     bx,
@@ -224,7 +224,7 @@ function renderFocusedStrokeOverlay() {
   const totalStrokes = charData.strokes.length;
   const safeStrokeIdx = Math.max(0, Math.min(totalStrokes - 1, activeStrokeIdx ?? 0));
   const boxSize = parseInt(target.style.getPropertyValue('--grid-box-size') || '0', 10) || getGridBoxSize();
-  const padding = Math.max(14, Math.round(boxSize * 0.08));
+  const padding = Math.max(26, Math.round(boxSize * 0.13));
   const scale = (boxSize - 2 * padding) / 1024;
   const transformAttr = `translate(${padding.toFixed(2)}, ${(padding + 900 * scale).toFixed(2)}) scale(${scale.toFixed(5)}, ${(-scale).toFixed(5)})`;
 
@@ -462,7 +462,7 @@ function createWriterForActiveChar() {
   const boxSize = getGridBoxSize();
   target.style.setProperty('--grid-box-size', `${boxSize}px`);
   const colors = getStrokeColors();
-  const padding = Math.max(14, Math.round(boxSize * 0.08));
+  const padding = Math.max(26, Math.round(boxSize * 0.13));
 
   try {
     const writer = HanziWriter.create('strokeSingleGridTarget', ch, {

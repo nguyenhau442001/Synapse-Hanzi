@@ -139,14 +139,25 @@ function renderStrokeDecomposition(char, container) {
   mount.innerHTML = html;
 }
 
-// Render clean, non-intrusive radical pills on flashcard
+// Render clean, non-intrusive character decomposition on flashcard
 function renderCardRadicals(word) {
   const mount = document.getElementById('cardRadicalsRow');
+  const wrap = document.getElementById('cardDecompositionWrap');
   if (!mount) return;
 
-  if (!word || !word.hanzi) {
+  const hideDecomp = () => {
     mount.innerHTML = '';
     mount.style.display = 'none';
+    if (wrap) {
+      wrap.hidden = true;
+      wrap.style.display = 'none';
+    }
+    if (typeof syncCardSupportingGroup === 'function') syncCardSupportingGroup();
+  };
+
+  hideDecomp();
+
+  if (!word || !word.hanzi) {
     return;
   }
 
@@ -155,47 +166,73 @@ function renderCardRadicals(word) {
     const clean = raw.replace(/[（\(].*?[）\)]/g, '').trim() || raw;
     const chars = Array.from(clean).filter(ch => /\p{Script=Han}/u.test(ch));
     if (chars.length === 0) {
-      mount.innerHTML = '';
-      mount.style.display = 'none';
+      hideDecomp();
       return;
     }
 
-    const pills = [];
-    const seenChars = new Set();
-
+    const charDecomps = [];
     chars.forEach((ch, charIdx) => {
       const d = getCharacterDecomposition(ch);
-      if (!d || !d.components) return;
-
-      d.components.forEach(c => {
-        if (!seenChars.has(c.char)) {
-          seenChars.add(c.char);
-          pills.push({
-            charIdx,
-            char: ch,
-            compChar: c.char,
-            name: c.name || c.char,
-            strokes: c.stroke_indices || []
-          });
-        }
+      if (!d || !Array.isArray(d.components) || d.components.length === 0) return;
+      charDecomps.push({
+        ch,
+        charIdx,
+        comps: d.components
       });
     });
 
-    if (pills.length === 0) {
-      mount.innerHTML = '';
-      mount.style.display = 'none';
+    if (charDecomps.length === 0) {
+      hideDecomp();
       return;
     }
 
+    if (wrap) {
+      wrap.hidden = false;
+      wrap.style.display = 'flex';
+    }
     mount.style.display = 'flex';
-    mount.innerHTML = pills.map(p => `
-      <button type="button" class="card-radical-pill"
-        onclick="event.stopPropagation(); jumpToStudyRadical('${p.char}', ${p.charIdx}, [${p.strokes.join(',')}])"
-        title="Bộ thủ: ${p.name}">
-        <span class="card-radical-char" lang="zh-CN">${p.compChar}</span>
-        <span class="card-radical-name">${p.name.replace('Bộ ', '')}</span>
-      </button>
-    `).join('');
+
+    if (charDecomps.length === 1) {
+      const { ch, charIdx, comps } = charDecomps[0];
+      mount.innerHTML = `
+        <div class="card-decomp-formula-wrap">
+          <div class="card-decomp-chars-row">
+            ${comps.map((c, idx) => `
+              <button type="button" class="card-decomp-char-btn"
+                onclick="event.stopPropagation(); jumpToStudyRadical('${ch}', ${charIdx}, [${(c.stroke_indices || []).join(',')}])"
+                title="Thành phần: ${c.name.replace('Bộ ', '')}">
+                <span class="card-decomp-char" lang="zh-CN">${c.char}</span>
+                <span class="card-decomp-sub">${(c.name || c.char).replace('Bộ ', '')}</span>
+              </button>
+              ${idx < comps.length - 1 ? '<span class="card-decomp-op">+</span>' : ''}
+            `).join('')}
+          </div>
+        </div>
+      `;
+    } else {
+      mount.innerHTML = `
+        <div class="card-decomp-multi-wrap">
+          ${charDecomps.map(({ ch, charIdx, comps }) => `
+            <div class="card-decomp-char-block">
+              <div class="card-decomp-chars-row">
+                <span class="card-decomp-target-char" lang="zh-CN">${ch}:</span>
+                ${comps.map((c, idx) => `
+                  <button type="button" class="card-decomp-char-btn"
+                    onclick="event.stopPropagation(); jumpToStudyRadical('${ch}', ${charIdx}, [${(c.stroke_indices || []).join(',')}])"
+                    title="Thành phần: ${c.name.replace('Bộ ', '')}">
+                    <span class="card-decomp-char" lang="zh-CN">${c.char}</span>
+                    <span class="card-decomp-sub">${(c.name || c.char).replace('Bộ ', '')}</span>
+                  </button>
+                  ${idx < comps.length - 1 ? '<span class="card-decomp-op">+</span>' : ''}
+                `).join('')}
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    if (typeof syncCardSupportingGroup === 'function') syncCardSupportingGroup();
   });
 }
 

@@ -13,10 +13,10 @@ function initSidebarTabs() {
     header.className = 'study-drawer-header';
     header.innerHTML = `
       <div class="study-drawer-title-group">
-        <span class="study-drawer-icon">✍️</span>
-        <strong class="study-drawer-title">Trợ giúp học tập</strong>
+        <span class="study-drawer-icon" aria-hidden="true">✍️</span>
+        <strong class="study-drawer-title">Bổ trợ từ vựng</strong>
       </div>
-      <button type="button" class="study-drawer-close-btn" onclick="closeAllStudyDrawers()" aria-label="Đóng bảng trợ giúp" title="Đóng bảng (Esc)">✕</button>
+      <button type="button" class="study-drawer-close-btn" onclick="closeAllStudyDrawers()" aria-label="Đóng bảng tiện ích" title="Đóng bảng (Esc)">✕</button>
     `;
     mount.insertBefore(header, mount.firstChild);
   }

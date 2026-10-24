@@ -30,26 +30,24 @@ function renderDashboardEnhancements() {
   const target = summary.target;
   if (continuation) {
     if (summary.totalStudied === 0) {
-      document.getElementById('continueLearningTitle').textContent = 'Chào bạn mới! Bắt đầu học HSK ngay';
-      document.getElementById('continueLearningProgress').innerHTML = `
-        <span style="display: block; margin-top: 4px;">1️⃣ <strong>Học 5 từ đầu tiên</strong> (HSK1 cơ bản) &nbsp;·&nbsp; 2️⃣ <strong>Ôn nhanh</strong> củng cố trí nhớ &nbsp;·&nbsp; 3️⃣ <strong>Đọc bài HSK1 đầu tiên</strong></span>
-      `;
+      document.getElementById('continueLearningTitle').textContent = 'Bắt đầu HSK 1';
+      document.getElementById('continueLearningProgress').textContent = '150 từ nền tảng · Flashcard thông minh';
       const ctaBtn = continuation.querySelector('.dashboard-primary-btn');
       if (ctaBtn) {
-        ctaBtn.innerHTML = `Học 5 từ đầu tiên <span aria-hidden="true">→</span>`;
+        ctaBtn.innerHTML = `Học ngay <span aria-hidden="true">→</span>`;
       }
       continuation.dataset.level = 'hsk1';
     } else if (target) {
       const cfg = LEVELS[target.level];
-      const ratio = `${target.known.toLocaleString('vi-VN')} / ${cfg.total.toLocaleString('vi-VN')} từ đã nhớ`;
+      const ratio = `${target.known.toLocaleString('vi-VN')} / ${cfg.total.toLocaleString('vi-VN')} từ`;
       const pctStr = typeof formatProgressPercent === 'function'
         ? formatProgressPercent(target.known, cfg.total)
         : `${Math.round(target.known / cfg.total * 100)}%`;
-      document.getElementById('continueLearningTitle').textContent = `${cfg.label} · Bộ từ đang học`;
-      document.getElementById('continueLearningProgress').textContent = `${ratio} · ${pctStr} tiến độ`;
+      document.getElementById('continueLearningTitle').textContent = `Học tiếp ${cfg.label}`;
+      document.getElementById('continueLearningProgress').textContent = `${ratio} · ${pctStr} hoàn thành`;
       const ctaBtn = continuation.querySelector('.dashboard-primary-btn');
       if (ctaBtn) {
-        ctaBtn.innerHTML = `Tiếp tục học ngay <span aria-hidden="true">→</span>`;
+        ctaBtn.innerHTML = `Học ngay <span aria-hidden="true">→</span>`;
       }
       continuation.dataset.level = target.level;
     }
@@ -92,20 +90,34 @@ function renderDashboardEnhancements() {
       }
     }
     const todayCount = [...todayWords].filter(key => key.startsWith(level + ':')).length;
-    daily.classList.toggle('has-activity', todayCount > 0);
-    daily.textContent = `+${todayCount} từ hôm nay`;
+    if (todayCount > 0) {
+      daily.style.display = 'inline-flex';
+      daily.classList.add('has-activity');
+      daily.textContent = `+${todayCount} hôm nay`;
+    } else {
+      daily.style.display = 'none';
+      daily.classList.remove('has-activity');
+      daily.textContent = '';
+    }
     const rawPct = cfg.total > 0 ? (known / cfg.total * 100) : 0;
     const pctStr = typeof formatProgressPercent === 'function'
       ? formatProgressPercent(known, cfg.total)
       : `${Math.round(rawPct)}%`;
     const percentValue = card.querySelector('.lvl-percent-value');
-    if (percentValue) percentValue.textContent = pctStr;
+    if (percentValue) {
+      percentValue.textContent = known > 0 ? pctStr : '0%';
+      percentValue.style.opacity = known > 0 ? '1' : '0.6';
+    }
     const legacyPercent = card.querySelector('.lvl-percent-complete');
     if (legacyPercent) legacyPercent.remove();
     const progressText = card.querySelector('.lvl-mastery-text');
-    if (progressText) progressText.textContent = `${known.toLocaleString('vi-VN')} / ${cfg.total.toLocaleString('vi-VN')} đã nhớ`;
+    if (progressText) {
+      progressText.textContent = known > 0
+        ? `${known.toLocaleString('vi-VN')} / ${cfg.total.toLocaleString('vi-VN')} đã nhớ`
+        : `0 / ${cfg.total.toLocaleString('vi-VN')} đã nhớ`;
+    }
     const bar = card.querySelector('.lvl-mastery-fill');
-    if (bar) bar.style.width = `${known > 0 ? Math.max(rawPct, 0.75) : 0}%`;
+    if (bar) bar.style.width = `${known > 0 ? Math.max(rawPct, 1) : 0}%`;
     const actionHint = card.querySelector('.lvl-action-hint');
     if (actionHint) {
       actionHint.innerHTML = `${complete ? 'Ôn lại' : isLearning ? 'Học tiếp' : 'Học ngay'} <span aria-hidden="true">→</span>`;
@@ -114,54 +126,13 @@ function renderDashboardEnhancements() {
 }
 
 function initDashboardSidebar() {
-  if (!document.body.classList.contains('is-desktop-dock')) return;
-  const mount = document.getElementById('workstationLeft');
-  if (!mount) return;
-
-  const radicals = document.createElement('details');
-  radicals.className = 'dashboard-sidebar-card dashboard-sidebar-accordion common-radicals-card';
-  radicals.innerHTML = `<summary class="sidebar-card-heading sidebar-accordion-summary">
-      <div class="sidebar-accordion-title">
-        <span class="accordion-arrow" aria-hidden="true">▸</span>
-        <h2>Bộ thủ thông dụng</h2>
-      </div>
-      <button type="button" class="sidebar-link-btn" onclick="event.stopPropagation(); openRadicalDirectory()" aria-label="Mở danh sách 214 bộ thủ">214 bộ →</button>
-    </summary>
-    <div class="sidebar-accordion-body">
-      <div class="common-radicals-grid">${COMMON_RADICALS.map(item => `
-        <button type="button" class="common-radical" data-radical="${item.char}" aria-label="Học bộ ${item.name}: ${item.hint}">
-          <span class="common-radical-char" lang="zh-CN">${item.char}</span><span class="common-radical-name">${item.name}</span>
-        </button>`).join('')}</div>
-    </div>`;
-  radicals.addEventListener('click', event => {
-    const button = event.target.closest('[data-radical]');
-    if (button) {
-      event.preventDefault();
-      openCommonRadical(button.dataset.radical);
-    }
-  });
-  mount.appendChild(radicals);
-
-  const tip = document.createElement('details');
-  tip.className = 'dashboard-sidebar-card dashboard-sidebar-accordion radical-tip-card';
-  tip.innerHTML = `<summary class="sidebar-card-heading sidebar-accordion-summary">
-      <div class="sidebar-accordion-title">
-        <span class="accordion-arrow" aria-hidden="true">▸</span>
-        <h2>Mẹo nhớ chữ Hán</h2>
-      </div>
-      <span class="sidebar-card-meta">Gợi ý</span>
-    </summary>
-    <div class="sidebar-accordion-body">
-      <div class="radical-tip-word" lang="zh-CN">休 <span>xiū · nghỉ ngơi</span></div>
-      <p>Một người <b>亻</b> tựa vào gốc cây <b>木</b> để nghỉ ngơi. Nhìn chữ là nhớ ngay!</p>
-    </div>`;
-  mount.appendChild(tip);
-
   const desktopQuery = window.matchMedia('(min-width: 1280px)');
   const placeReviewCard = isDesktop => {
     const card = document.getElementById('hwForgotten');
     if (!card) return;
-    const parent = isDesktop ? document.getElementById('workstationLeft') : document.getElementById('homeWidgets');
+    const parent = isDesktop
+      ? document.getElementById('workstationLeft')
+      : (document.getElementById('mobileDockDialogBody') || document.getElementById('homeWidgets'));
     if (parent) parent.appendChild(card);
   };
   placeReviewCard(desktopQuery.matches);

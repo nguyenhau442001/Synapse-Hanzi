@@ -70,10 +70,10 @@
 }
 
 :root[data-theme="dark"] .celebration-box {
-  background: #181920;
-  border-color: rgba(255, 255, 255, 0.12);
+  background: var(--card-bg, #1C2022);
+  border-color: var(--border, #343A3C);
   box-shadow: 0 28px 70px rgba(0, 0, 0, 0.7),
-              0 0 55px rgba(234, 179, 8, 0.22);
+              0 0 55px rgba(210, 173, 110, 0.18);
 }
 
 /* Close Button */
@@ -499,6 +499,22 @@
   font-size: 14px;
   color: var(--text-secondary, #71717a);
   margin: 0 0 20px;
+}
+.generic-empty-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+}
+@media (min-width: 480px) {
+  .generic-empty-actions {
+    flex-direction: row;
+    justify-content: center;
+    max-width: none;
+  }
 }
 
 /* Topbar 100% Badge */

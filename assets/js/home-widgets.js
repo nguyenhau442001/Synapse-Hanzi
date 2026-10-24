@@ -448,9 +448,13 @@ async function renderForgotten(snapshot, renderId) {
     const hanzi = homeElement('span', 'hw-forgot-hanzi hw-cjk', item.word.hanzi);
     hanzi.lang = 'zh-CN';
     const text = homeElement('span', 'hw-forgot-text');
-    text.appendChild(homeElement('span', 'hw-forgot-pinyin', item.word.pinyin));
+    const meta = homeElement('span', 'hw-forgot-meta');
+    meta.appendChild(homeElement('span', 'hw-forgot-pinyin', item.word.pinyin));
+    meta.appendChild(homeElement('span', 'hw-level-pill', homeShortLevelLabel(item.level)));
+    meta.appendChild(homeElement('span', 'hw-lapse-pill', item.card.lapses + '×'));
+    text.appendChild(meta);
     text.appendChild(homeElement('span', 'hw-forgot-meaning', item.word.meaning));
-    open.append(hanzi, text, homeElement('span', 'hw-level-pill', homeShortLevelLabel(item.level)), homeElement('span', 'hw-lapse-pill', item.card.lapses + '×'));
+    open.append(hanzi, text);
     open.addEventListener('click', () => openWordInLevel(item.level, item.word.id));
     const speak = homeElement('button', 'hw-review-speak hw-icon-btn');
     speak.type = 'button';
@@ -466,6 +470,7 @@ async function renderForgotten(snapshot, renderId) {
   review.type = 'button';
   review.addEventListener('click', () => openForgottenReview(items));
   section.appendChild(review);
+  if (typeof updateReviewMobileAuxBadge === 'function') updateReviewMobileAuxBadge();
 }
 
 function openForgottenReview(items) {
@@ -588,6 +593,11 @@ function invalidateHomeWidgets() {
 }
 
 function placeHomeWidgets(container, isDesktop) {
+  const statsContent = document.getElementById('dashboardStatsContent');
+  if (statsContent) {
+    statsContent.appendChild(container);
+    return;
+  }
   const target = isDesktop
     ? document.getElementById('workstationRight')
     : document.getElementById('screenVocabHub');

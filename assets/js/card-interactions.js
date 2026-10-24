@@ -3,7 +3,7 @@ function initCardSwipe(options) {
   const card = document.getElementById(options.cardId);
   if (!card) return;
 
-  const COMMIT_PX = 90;
+  const COMMIT_PX = 75;
   const LOCK_PX = 8;
 
   let startX = 0, startY = 0, dx = 0, dy = 0;
@@ -38,16 +38,19 @@ function initCardSwipe(options) {
   function applyDrag(x) {
     if (prefersReduced()) return;
     setSwipingState(true);
-    card.style.transform = `translateX(${x}px) rotate(${x / 24}deg)`;
-    card.style.opacity = String(Math.max(0.55, 1 - Math.abs(x) / 450));
+    card.style.transform = `translateX(${x}px) rotate(${x / 20}deg)`;
+    card.style.opacity = String(Math.max(0.65, 1 - Math.abs(x) / 500));
     const [bk, bu] = getBadges();
-    const op = String(Math.min(1, Math.max(0, (Math.abs(x) - 20) / 60)));
-    if (bk) bk.style.opacity = x > 20  ? op : '0';
-    if (bu) bu.style.opacity = x < -20 ? op : '0';
+    const op = String(Math.min(1, Math.max(0, (Math.abs(x) - 15) / 50)));
+    if (bk) bk.style.opacity = x > 15 ? op : '0';
+    if (bu) bu.style.opacity = x < -15 ? op : '0';
   }
   function commitSwipe(dir) {
     if (committed) return;
     committed = true;
+    try {
+      if (navigator.vibrate) navigator.vibrate(10);
+    } catch (_) {}
     if (prefersReduced()) {
       resetCard();
       if (dir === 'right') options.markKnown(); else options.markUnknown();
@@ -55,9 +58,9 @@ function initCardSwipe(options) {
       return;
     }
     setSwipingState(true);
-    const flyX = dir === 'right' ? 520 : -520;
-    card.style.transition = 'transform 220ms ease, opacity 220ms ease';
-    card.style.transform = `translateX(${flyX}px) rotate(${dir === 'right' ? 12 : -12}deg)`;
+    const flyX = dir === 'right' ? (window.innerWidth || 520) : -(window.innerWidth || 520);
+    card.style.transition = 'transform 220ms ease-out, opacity 220ms ease-out';
+    card.style.transform = `translateX(${flyX}px) rotate(${dir === 'right' ? 14 : -14}deg)`;
     card.style.opacity = '0';
     setTimeout(() => {
       card.style.transition = 'none';
@@ -68,8 +71,9 @@ function initCardSwipe(options) {
       // Sync card fade-in with the renderers' 150ms exit-then-swap timer so new content
       // arrives as the card becomes visible — no double animation.
       setTimeout(() => {
-        card.style.transition = 'opacity 180ms ease';
+        card.style.transition = 'opacity 180ms ease, transform 180ms ease';
         card.style.opacity = '';
+        card.style.transform = '';
         committed = false;
         setTimeout(() => {
           card.style.transition = '';
@@ -104,7 +108,12 @@ function initCardSwipe(options) {
       locked = Math.abs(dx) >= Math.abs(dy) ? 'h' : 'v';
     }
     if (locked === 'h') {
-      card.setPointerCapture(e.pointerId);
+      if (e.cancelable) e.preventDefault();
+      try {
+        if (card.setPointerCapture && (!card.hasPointerCapture || !card.hasPointerCapture(e.pointerId))) {
+          card.setPointerCapture(e.pointerId);
+        }
+      } catch (_) {}
       applyDrag(dx);
     }
   }, { passive: false });
@@ -131,7 +140,7 @@ function initSwipe() {
     knownBadgeId: 'swipeBadgeKnown',
     unknownBadgeId: 'swipeBadgeUnknown',
     hasCards: () => filteredOrder.length > 0,
-    interactiveSelector: '.speech-btn, .card-interactive, .hanzi, .card-radicals-row, .card-radical-pill',
+    interactiveSelector: 'button, .speech-btn, .example-speed-picker, .card-more-btn, .card-dropdown-item, input, select, a',
     flip,
     markKnown,
     markUnknown,
@@ -144,7 +153,7 @@ function initRadicalSwipe() {
     knownBadgeId: 'radicalSwipeBadgeKnown',
     unknownBadgeId: 'radicalSwipeBadgeUnknown',
     hasCards: () => radicalFilteredOrder.length > 0,
-    interactiveSelector: '.speech-btn, .card-interactive, .radical-char-display',
+    interactiveSelector: 'button, .speech-btn, select, input, a',
     flip: radicalFlip,
     markKnown: markRadicalKnown,
     markUnknown: markRadicalUnknown,
@@ -168,6 +177,10 @@ function flip() {
   } else if (!willShow && !showPinyin) {
     document.getElementById('pinyin').textContent = '';
   }
-  document.getElementById('hint').textContent = willShow ? '' : 'Nhấn vào thẻ để lật';
+  const hintEl = document.getElementById('hint');
+  if (hintEl) {
+    hintEl.textContent = typeof getCardHintText === 'function' ? getCardHintText(willShow) : (willShow ? 'Chạm vào thẻ để ẩn' : 'Chạm vào thẻ để xem nghĩa');
+  }
   syncRevealControls();
 }
+

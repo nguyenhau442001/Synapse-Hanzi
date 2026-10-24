@@ -171,7 +171,7 @@
    *
    * @param {string} text - Text to speak.
    * @param {Object} [options]
-   * @param {number} [options.rate=1.0] - Speech rate (0.1 to 2.0).
+   * @param {number} [options.rate=0.8] - Speech rate (0.1 to 2.0).
    * @param {number} [options.pitch=1.0] - Pitch (0 to 2.0).
    * @param {number} [options.volume=1.0] - Volume (0 to 1.0).
    * @param {SpeechSynthesisVoice} [options.voice] - Explicit voice override.
@@ -200,7 +200,7 @@
     stopSpeaking();
 
     const playbackId = activePlaybackId;
-    const rate = typeof options.rate === 'number' ? Math.max(0.1, Math.min(2.0, options.rate)) : 1.0;
+    const rate = typeof options.rate === 'number' ? Math.max(0.1, Math.min(2.0, options.rate)) : 0.8;
     const pitch = typeof options.pitch === 'number' ? Math.max(0, Math.min(2.0, options.pitch)) : 1.0;
     const volume = typeof options.volume === 'number' ? Math.max(0, Math.min(1.0, options.volume)) : 1.0;
 

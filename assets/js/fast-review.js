@@ -9,28 +9,122 @@ const REVIEW_TONE_MARKS = {
 };
 
 function stripTonePinyin(text) {
-  return String(text || '')
-    .toLowerCase()
-    .split('')
-    .map(ch => REVIEW_TONE_MARKS[ch] || ch)
-    .join('')
-    .replace(/\s+/g, ' ')
-    .trim();
+  let s = String(text || '').toLowerCase();
+  s = s.split('').map(ch => REVIEW_TONE_MARKS[ch] || ch).join('');
+  s = s.replace(/[\u2018\u2019\u02bb\u02bc`´]/g, "'");
+  return s.replace(/\s+/g, ' ').trim();
+}
+
+function cleanPinyin(text, { allowUForV = false, recoverTelexR = false } = {}) {
+  if (!text) return '';
+  let s = String(text).toLowerCase();
+
+  s = s.split('').map(ch => REVIEW_TONE_MARKS[ch] || ch).join('');
+
+  if (recoverTelexR) {
+    s = s.normalize('NFD').replace(/\u0309/g, 'r');
+  }
+
+  s = s.normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/đ/g, 'd');
+
+  s = s.replace(/['\u2018\u2019\u02bb\u02bc`´\-\s0-9\.,!?_]/g, '');
+
+  if (allowUForV) {
+    s = s.replace(/v/g, 'u');
+  }
+  return s;
 }
 
 function pinyinLooseMatch(input, target) {
-  return stripTonePinyin(input) === stripTonePinyin(target);
+  if (!input || !target) return false;
+
+  if (typeof target === 'string' && (target.includes('/') || target.includes(';'))) {
+    const targets = target.split(/[\/;]/).map(t => t.trim()).filter(Boolean);
+    if (targets.some(t => pinyinLooseMatch(input, t))) return true;
+  }
+
+  const strippedIn = stripTonePinyin(input);
+  const strippedTar = stripTonePinyin(target);
+  if (strippedIn && strippedIn === strippedTar) return true;
+
+  const cleanIn = cleanPinyin(input);
+  const cleanTar = cleanPinyin(target);
+  if (cleanIn && cleanIn === cleanTar) return true;
+
+  const telexIn = cleanPinyin(input, { recoverTelexR: true });
+  if (telexIn && telexIn === cleanTar) return true;
+
+  const cleanInU = cleanPinyin(input, { allowUForV: true });
+  const cleanTarU = cleanPinyin(target, { allowUForV: true });
+  if (cleanInU && cleanInU === cleanTarU) return true;
+
+  const telexInU = cleanPinyin(input, { allowUForV: true, recoverTelexR: true });
+  if (telexInU && telexInU === cleanTarU) return true;
+
+  return false;
 }
 
 const REVIEW_RANGE_LEVELS = ['hsk1', 'hsk2', 'hsk3', 'hsk4', 'hsk5', 'hsk6'];
+let reviewSelectedLevel = 1;
+try {
+  const savedLevel = parseInt(localStorage.getItem('hsk_fast_review_level'), 10);
+  if (savedLevel >= 1 && savedLevel <= 6) reviewSelectedLevel = savedLevel;
+} catch (e) {}
+
+function selectReviewLevel(level) {
+  const n = Math.max(1, Math.min(6, Number(level) || 1));
+  reviewSelectedLevel = n;
+  try { localStorage.setItem('hsk_fast_review_level', String(n)); } catch (e) {}
+
+  const slider = document.getElementById('reviewRangeSlider');
+  if (slider) slider.value = n;
+
+  const chips = document.querySelectorAll('.review-filter-chip');
+  chips.forEach(chip => {
+    const chipLvl = Number(chip.dataset.level);
+    const isSelected = chipLvl === n;
+    const isInRange = chipLvl <= n;
+    chip.classList.toggle('active', isSelected);
+    chip.classList.toggle('in-range', isInRange);
+    chip.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
+  });
+
+  const levels = REVIEW_RANGE_LEVELS.slice(0, n);
+  const totalWords = levels.reduce((sum, lvl) => sum + (LEVELS[lvl] ? LEVELS[lvl].total : 0), 0);
+
+  const labelEl = document.getElementById('reviewRangeLabel');
+  if (labelEl) {
+    labelEl.textContent = n === 1 ? 'HSK 1' : `HSK 1 – HSK ${n}`;
+  }
+
+  const subtextEl = document.getElementById('reviewScopeSubtext');
+  if (subtextEl) {
+    subtextEl.textContent = n === 1
+      ? 'Chỉ ôn từ vựng thuộc cấp độ HSK 1'
+      : `Ôn tập gộp từ vựng từ cấp độ HSK 1 đến HSK ${n}`;
+  }
+
+  const countEl = document.getElementById('reviewRangeCount');
+  if (countEl) {
+    countEl.textContent = `${totalWords.toLocaleString('vi-VN')} từ`;
+  }
+
+  const poolStatus = document.getElementById('reviewPoolStatus');
+  const poolSub = document.getElementById('reviewPoolSub');
+  if (reviewLoadedRangeMax === n && reviewWordPool.length > 0) {
+    const pool = buildReviewPool();
+    if (poolStatus) poolStatus.textContent = `${pool.length} từ chờ ôn`;
+    if (poolSub) poolSub.textContent = pool.length > 0 ? 'Sẵn sàng bắt đầu ngay' : 'Đã thuộc hết từ trong phạm vi này!';
+  } else {
+    if (poolStatus) poolStatus.textContent = 'Từ chưa thuộc';
+    if (poolSub) poolSub.textContent = 'Tự động ưu tiên thẻ cần ôn';
+  }
+}
 
 function updateReviewRangeLabel(sliderValue) {
-  const n = Number(sliderValue);
-  const levels = REVIEW_RANGE_LEVELS.slice(0, n);
-  const totalWords = levels.reduce((sum, lvl) => sum + LEVELS[lvl].total, 0);
-  document.getElementById('reviewRangeLabel').textContent =
-    n === 1 ? 'HSK1' : `HSK1 – HSK${n}`;
-  document.getElementById('reviewRangeCount').textContent = `${totalWords} từ`;
+  selectReviewLevel(sliderValue);
 }
 
 function buildReviewPool() {
@@ -66,19 +160,34 @@ async function fetchReviewWords(levels) {
   return words;
 }
 
-function startReviewRangeLoad() {
-  const slider = document.getElementById('reviewRangeSlider');
-  const n = Number(slider.value);
+function startUnifiedReview() {
+  const n = reviewSelectedLevel || 1;
   const levels = REVIEW_RANGE_LEVELS.slice(0, n);
-
   const startBtn = document.getElementById('reviewRangeStart');
-  const body = document.getElementById('reviewPickerBody');
-  startBtn.disabled = true;
-  body.innerHTML = '<div class="loading-text">Đang tải dữ liệu...</div>';
+  const btnLabel = document.getElementById('reviewStartBtnLabel');
+
+  if (startBtn) startBtn.disabled = true;
+  if (btnLabel) btnLabel.textContent = 'Đang tải dữ liệu...';
+
+  const proceedToStart = function () {
+    if (startBtn) startBtn.disabled = false;
+    if (btnLabel) btnLabel.textContent = 'Bắt đầu ôn ngay';
+
+    const pool = buildReviewPool();
+    reviewPool = pool;
+
+    if (pool.length === 0) {
+      alert(countNewReviewsToday() >= readDailyStudyGoal()
+        ? 'Bạn đã hoàn thành mục tiêu thẻ mới hôm nay! Thẻ mới sẽ mở lại ngày mai. Bạn vẫn có thể ôn thẻ đến hạn trong mục Ôn hôm nay.'
+        : 'Bạn đã thuộc hết từ trong phạm vi này! Hãy chọn cấp độ rộng hơn.');
+      return;
+    }
+
+    startReviewSession();
+  };
 
   if (reviewLoadedRangeMax === n && reviewWordPool.length > 0) {
-    startBtn.disabled = false;
-    renderReviewStart();
+    proceedToStart();
     return;
   }
 
@@ -89,7 +198,6 @@ function startReviewRangeLoad() {
 
   let fallbackStarted = false;
   const finishLoad = function (words) {
-    startBtn.disabled = false;
     reviewWordPool = words;
     reviewCardsByLevel = {};
     for (const level of levels) {
@@ -99,13 +207,16 @@ function startReviewRangeLoad() {
       reviewProgressByLevel[level] = progressFromCards(reviewCardsByLevel[level]);
     }
     reviewLoadedRangeMax = n;
-    renderReviewStart();
+    proceedToStart();
   };
+
   const failLoad = function (error) {
-    startBtn.disabled = false;
+    if (startBtn) startBtn.disabled = false;
+    if (btnLabel) btnLabel.textContent = 'Bắt đầu ôn ngay';
     console.error('Fast-review range load failed:', error);
-    body.innerHTML = '<div class="error-text">Không thể tải dữ liệu. Vui lòng thử lại.</div>';
+    alert('Không thể tải dữ liệu cấp độ. Vui lòng thử lại.');
   };
+
   const loadWithoutWorker = function (workerError) {
     if (fallbackStarted) return;
     fallbackStarted = true;
@@ -148,52 +259,123 @@ function startReviewRangeLoad() {
   }
 }
 
-function renderReviewStart() {
-  closeReviewMistakesModal();
-  const body = document.getElementById('reviewPickerBody');
-  body.innerHTML = `
-    <div id="reviewSession" hidden></div>
-    <div id="reviewResult" hidden></div>
-    <div id="reviewStart"></div>`;
-  const start = document.getElementById('reviewStart');
+function startReviewRangeLoad() {
+  startUnifiedReview();
+}
 
-  const pool = buildReviewPool();
-  reviewPool = pool;
+let reviewCurrentChoices = [];
+let reviewKeydownHandler = null;
 
-  if (pool.length === 0) {
-    start.innerHTML = `
-      <div class="review-empty">
-        <div class="review-empty-icon">🎉</div>
-        <div class="review-empty-title">${countNewReviewsToday() >= readDailyStudyGoal() ? 'Bạn đã hoàn thành mục tiêu thẻ mới hôm nay!' : 'Bạn đã thuộc hết từ trong phạm vi này!'}</div>
-        <div class="review-empty-msg">${countNewReviewsToday() >= readDailyStudyGoal() ? 'Thẻ mới sẽ mở lại ngày mai. Bạn vẫn có thể ôn thẻ đến hạn trong mục Ôn hôm nay.' : 'Không còn từ nào để ôn nhanh. Hãy học thêm từ mới hoặc chọn phạm vi rộng hơn.'}</div>
-      </div>`;
-    return;
+function enterReviewFocusMode() {
+  document.body.classList.add('review-focus-mode');
+  const setupCard = document.getElementById('reviewSetupCard');
+  if (setupCard) setupCard.hidden = true;
+  const picker = document.querySelector('.review-range-picker');
+  if (picker) picker.hidden = true;
+}
+
+function exitReviewFocusMode() {
+  document.body.classList.remove('review-focus-mode');
+  const setupCard = document.getElementById('reviewSetupCard');
+  if (setupCard) setupCard.hidden = false;
+  const picker = document.querySelector('.review-range-picker');
+  if (picker) picker.hidden = false;
+}
+
+function setupReviewKeydownListener() {
+  removeReviewKeydownListener();
+  reviewKeydownHandler = function (e) {
+    if (e.key === 'Escape') {
+      if (document.getElementById('reviewMistakesModal')) {
+        closeReviewMistakesModal();
+      } else if (reviewSessionLive) {
+        exitReviewSession();
+      }
+      return;
+    }
+
+    if (reviewAnswered || !reviewSessionLive || !reviewCurrentQuestion) return;
+    if (reviewCurrentQuestion.type !== 'choice') return;
+    if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
+    if (e.altKey || e.ctrlKey || e.metaKey) return;
+
+    const key = e.key.toLowerCase();
+    let choiceIndex = -1;
+    if (key === '1' || key === 'a') choiceIndex = 0;
+    else if (key === '2' || key === 'b') choiceIndex = 1;
+    else if (key === '3' || key === 'c') choiceIndex = 2;
+    else if (key === '4' || key === 'd') choiceIndex = 3;
+
+    if (choiceIndex >= 0 && reviewCurrentChoices && reviewCurrentChoices[choiceIndex] !== undefined) {
+      e.preventDefault();
+      submitReviewChoice(reviewCurrentChoices[choiceIndex]);
+    }
+  };
+  document.addEventListener('keydown', reviewKeydownHandler);
+}
+
+function removeReviewKeydownListener() {
+  if (reviewKeydownHandler) {
+    document.removeEventListener('keydown', reviewKeydownHandler);
+    reviewKeydownHandler = null;
   }
+}
 
-  start.innerHTML = `
-    <div class="review-intro">
-      <div class="review-intro-icon">⚡</div>
-      <div class="review-intro-title">Ôn nhanh</div>
-      <ul class="review-rules">
-        <li>Mỗi câu có <strong>20 giây</strong> để trả lời</li>
-        <li>Bạn có <strong>3 mạng</strong> — trả lời sai hoặc hết giờ sẽ mất 1 mạng</li>
-        <li>Gõ pinyin hoặc chọn đáp án đúng, xen kẽ ngẫu nhiên</li>
-        <li><strong>${pool.length}</strong> từ chưa nhớ đang chờ ôn</li>
-      </ul>
-      <button class="review-start-btn" onclick="startReviewSession()">Bắt đầu</button>
-    </div>`;
+const REVIEW_MAX_LIVES = 5;
+
+function renderReviewHeartsHtml(lives) {
+  let heartsHtml = '<div class="review-hearts" aria-label="' + lives + ' mạng còn lại">';
+  for (let i = 1; i <= REVIEW_MAX_LIVES; i++) {
+    const isAlive = i <= lives;
+    heartsHtml += `
+      <span class="review-heart-item ${isAlive ? 'is-alive' : 'is-lost'}" data-heart-idx="${i}" aria-hidden="true">
+        <svg viewBox="0 0 24 24" class="review-heart-svg">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+      </span>`;
+  }
+  heartsHtml += '</div>';
+  return heartsHtml;
+}
+
+function showReviewSetup() {
+  abandonReviewSession();
+  const setupCard = document.getElementById('reviewSetupCard');
+  if (setupCard) setupCard.hidden = false;
+  const sessionEl = document.getElementById('reviewSession');
+  if (sessionEl) sessionEl.hidden = true;
+  const resultEl = document.getElementById('reviewResult');
+  if (resultEl) resultEl.hidden = true;
+  selectReviewLevel(reviewSelectedLevel || 1);
+  updateReviewMobileAuxBadge();
+}
+
+function renderReviewStart() {
+  showReviewSetup();
 }
 
 function startReviewSession() {
   reviewIndex = 0;
-  reviewLives = 3;
+  reviewLives = REVIEW_MAX_LIVES;
   reviewScore = 0;
   reviewStreak = 0;
   reviewBestStreak = 0;
   reviewMistakes = [];
-  document.getElementById('reviewStart').hidden = true;
-  document.getElementById('reviewResult').hidden = true;
-  document.getElementById('reviewSession').hidden = false;
+  reviewSessionLive = true;
+  reviewAnswered = false;
+  closeReviewMistakesModal();
+  enterReviewFocusMode();
+
+  const setupCard = document.getElementById('reviewSetupCard');
+  if (setupCard) setupCard.hidden = true;
+  const startEl = document.getElementById('reviewStart');
+  if (startEl) startEl.hidden = true;
+  const resultEl = document.getElementById('reviewResult');
+  if (resultEl) resultEl.hidden = true;
+  const sessionEl = document.getElementById('reviewSession');
+  if (sessionEl) sessionEl.hidden = false;
+
+  setupReviewKeydownListener();
   renderReviewQuestion();
 }
 
@@ -224,12 +406,13 @@ function abandonReviewSession() {
   if (reviewTimer) { clearInterval(reviewTimer); reviewTimer = null; }
   reviewAnswered = true;
   reviewSessionLive = false;
+  removeReviewKeydownListener();
+  exitReviewFocusMode();
   closeReviewMistakesModal();
 }
 
 function renderReviewQuestion() {
-  if (reviewAnswered && !reviewSessionLive) return;
-  reviewSessionLive = true;
+  if (!reviewSessionLive) return;
   if (reviewTimer) { clearInterval(reviewTimer); reviewTimer = null; }
   while (reviewIndex < reviewPool.length && countNewReviewsToday() >= readDailyStudyGoal()) {
     const candidate = reviewWordPool[reviewPool[reviewIndex]];
@@ -246,7 +429,6 @@ function renderReviewQuestion() {
   reviewAnswered = false;
   reviewTimeLeft = 20;
 
-  const livesHtml = '♥'.repeat(reviewLives) + '♡'.repeat(3 - reviewLives);
   const reviewCoreHanzi = String(word.hanzi || '').replace(/[（\(].*?[）\)]/g, '').trim() || word.hanzi || '';
   const reviewLen = Array.from(reviewCoreHanzi).length;
   const reviewLenClass = reviewLen >= 6 ? ' is-len-6-plus' : reviewLen === 5 ? ' is-len-5' : reviewLen === 4 ? ' is-len-4' : '';
@@ -256,37 +438,72 @@ function renderReviewQuestion() {
     : (word.hanzi || '');
 
   const header = `
-    <div class="review-header">
-      <div class="review-lives" aria-label="${reviewLives} mạng còn lại">${livesHtml}</div>
-      <div class="review-progress-text">${reviewIndex + 1} / ${reviewPool.length}</div>
+    <div class="review-topbar">
+      <button type="button" class="review-exit-btn" onclick="exitReviewSession()" title="Thoát ôn nhanh (Esc)" aria-label="Thoát ôn nhanh">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="review-topbar-center">
+        <div class="review-progress-badge">
+          <span class="review-progress-curr">${reviewIndex + 1}</span>
+          <span class="review-progress-slash">/</span>
+          <span class="review-progress-total">${reviewPool.length}</span>
+        </div>
+        ${reviewStreak >= 2 ? `<div class="review-streak-pill" title="Chuỗi đúng liên tiếp">🔥 ${reviewStreak}</div>` : ''}
+      </div>
+      <div class="review-topbar-right">
+        ${renderReviewHeartsHtml(reviewLives)}
+      </div>
     </div>
-    <div class="review-timer-track"><div class="review-timer-fill" id="reviewTimerFill"></div></div>
-    <div class="review-question-word">
-      <div class="review-hanzi${reviewLenClass}">${reviewHanziHtml}</div>
-      <div class="review-meaning">${word.meaning}</div>
+
+    <div class="review-timer-wrap">
+      <div class="review-timer-track">
+        <div class="review-timer-fill" id="reviewTimerFill"></div>
+      </div>
+      <span class="review-timer-num" id="reviewTimerNum">${reviewTimeLeft}s</span>
+    </div>
+
+    <div class="review-question-card">
+      <div class="review-hanzi-wrap">
+        <div class="review-hanzi${reviewLenClass}">${reviewHanziHtml}</div>
+      </div>
     </div>`;
 
   let bodyHtml;
   if (type === 'type') {
+    reviewCurrentChoices = [];
     bodyHtml = `
-      <div class="review-answer-area">
-        <input type="text" id="reviewTypeInput" class="review-type-input"
-          autocomplete="off" autocapitalize="off" spellcheck="false"
-          placeholder="Gõ pinyin (không dấu)..."
-          onkeydown="if(event.key==='Enter') submitReviewTypeAnswer()">
-        <button class="review-submit-btn" onclick="submitReviewTypeAnswer()">Trả lời</button>
+      <div class="review-type-wrap">
+        <div class="review-answer-area">
+          <input type="text" id="reviewTypeInput" class="review-type-input"
+            autocomplete="off" autocapitalize="off" spellcheck="false"
+            placeholder="Gõ pinyin (không dấu)..."
+            aria-label="Nhập pinyin của chữ Hán"
+            onkeydown="if(event.key==='Enter') submitReviewTypeAnswer()">
+          <button type="button" class="review-submit-btn" onclick="submitReviewTypeAnswer()">
+            <span>Trả lời</span>
+            <span class="review-submit-kbd" aria-hidden="true">↵</span>
+          </button>
+        </div>
+        <div class="review-type-hint">Nhấn Enter để gửi đáp án</div>
       </div>
-      <div class="review-feedback" id="reviewFeedback"></div>`;
+      <div class="review-feedback" id="reviewFeedback" aria-live="polite"></div>`;
   } else {
     const choiceIdxs = buildReviewChoices(wordIdx);
+    reviewCurrentChoices = choiceIdxs;
+    const KEY_HINTS = ['A', 'B', 'C', 'D'];
     bodyHtml = `
-      <div class="review-choices">
-        ${choiceIdxs.map(i => `
-          <button class="review-choice-btn" data-word-idx="${i}" onclick="submitReviewChoice(${i})">
-            ${reviewWordPool[i].pinyin}
+      <div class="review-choices" role="group" aria-label="Bốn đáp án lựa chọn">
+        ${choiceIdxs.map((i, idx) => `
+          <button type="button" class="review-choice-btn" data-word-idx="${i}" data-choice-idx="${idx}" onclick="submitReviewChoice(${i})">
+            <span class="review-choice-badge" aria-hidden="true">${KEY_HINTS[idx]}</span>
+            <span class="review-choice-pinyin">${escapeReviewHtml(reviewWordPool[i].pinyin)}</span>
+            <span class="review-choice-shortcut-hint" aria-hidden="true">${idx + 1}</span>
           </button>`).join('')}
       </div>
-      <div class="review-feedback" id="reviewFeedback"></div>`;
+      <div class="review-feedback" id="reviewFeedback" aria-live="polite"></div>`;
   }
 
   document.getElementById('reviewSession').innerHTML = header + bodyHtml;
@@ -300,9 +517,12 @@ function renderReviewQuestion() {
 
 function updateReviewTimerBar() {
   const fill = document.getElementById('reviewTimerFill');
+  const num = document.getElementById('reviewTimerNum');
+  if (num) num.textContent = `${Math.max(0, reviewTimeLeft)}s`;
   if (!fill) return;
   const pct = Math.max(0, (reviewTimeLeft / 20) * 100);
   fill.style.width = pct + '%';
+  fill.classList.toggle('review-timer-warning', reviewTimeLeft <= 8 && reviewTimeLeft > 5);
   fill.classList.toggle('review-timer-low', reviewTimeLeft <= 5);
 }
 
@@ -341,6 +561,7 @@ function submitReviewChoice(chosenIdx) {
   const chosenWord = reviewWordPool[chosenIdx];
   const word = reviewWordPool[reviewCurrentQuestion.wordIdx];
   gradeReviewAnswer(isCorrect, {
+    chosenIdx,
     userAnswer: chosenWord ? chosenWord.pinyin : '',
     expected: word ? word.pinyin : '',
     type: 'choice'
@@ -367,6 +588,13 @@ function gradeReviewAnswer(isCorrect, details) {
     reviewLives -= 1;
     reviewStreak = 0;
 
+    const lostHeartIdx = reviewLives + 1;
+    const lostHeartEl = document.querySelector(`.review-heart-item[data-heart-idx="${lostHeartIdx}"]`);
+    if (lostHeartEl) {
+      lostHeartEl.classList.remove('is-alive');
+      lostHeartEl.classList.add('is-lost', 'just-lost');
+    }
+
     const userAnswer = details && details.userAnswer ? details.userAnswer : (details && details.isTimeout ? 'Hết giờ (chưa kịp trả lời)' : 'Sai');
     const expected = details && details.expected ? details.expected : word.pinyin;
     const qType = details && details.type ? details.type : (reviewCurrentQuestion ? reviewCurrentQuestion.type : 'choice');
@@ -386,24 +614,64 @@ function gradeReviewAnswer(isCorrect, details) {
     });
   }
 
-  const feedback = document.getElementById('reviewFeedback');
-  if (feedback) {
-    feedback.textContent = isCorrect ? 'Chính xác!' : `Sai rồi. Đáp án: ${word.pinyin}`;
-    feedback.className = 'review-feedback show ' + (isCorrect ? 'review-feedback--correct' : 'review-feedback--wrong');
-  }
   document.querySelectorAll('.review-choice-btn').forEach(btn => {
     btn.disabled = true;
-    if (Number(btn.dataset.wordIdx) === wordIdx) btn.classList.add('review-choice-btn--correct');
+    const bWordIdx = Number(btn.dataset.wordIdx);
+    if (bWordIdx === wordIdx) {
+      btn.classList.add('review-choice-btn--correct');
+      const badge = btn.querySelector('.review-choice-badge');
+      if (badge) badge.textContent = '✓';
+    } else if (details && details.chosenIdx === bWordIdx && !isCorrect) {
+      btn.classList.add('review-choice-btn--wrong');
+      const badge = btn.querySelector('.review-choice-badge');
+      if (badge) badge.textContent = '✕';
+    }
   });
 
+  const feedback = document.getElementById('reviewFeedback');
+  if (feedback) {
+    if (isCorrect) {
+      feedback.innerHTML = `
+        <div class="review-feedback-content">
+          <div class="review-feedback-badge review-feedback-badge--correct">
+            <span class="review-feedback-icon">✓</span>
+            <span class="review-feedback-title">Chính xác!</span>
+          </div>
+          <div class="review-feedback-meta">
+            <span class="review-feedback-pinyin">${escapeReviewHtml(word.pinyin)}</span>
+            <span class="review-feedback-sep">·</span>
+            <span class="review-feedback-meaning">${escapeReviewHtml(word.meaning)}</span>
+          </div>
+        </div>`;
+      feedback.className = 'review-feedback show review-feedback--correct';
+    } else {
+      feedback.innerHTML = `
+        <div class="review-feedback-content">
+          <div class="review-feedback-badge review-feedback-badge--wrong">
+            <span class="review-feedback-icon">✕</span>
+            <span class="review-feedback-title">${details && details.isTimeout ? 'Hết giờ!' : 'Chưa đúng!'}</span>
+          </div>
+          <div class="review-feedback-meta">
+            <span class="review-feedback-expected">Đáp án: <strong>${escapeReviewHtml(word.pinyin)}</strong></span>
+            <span class="review-feedback-sep">·</span>
+            <span class="review-feedback-meaning">${escapeReviewHtml(word.meaning)}</span>
+          </div>
+        </div>`;
+      feedback.className = 'review-feedback show review-feedback--wrong';
+    }
+  }
+
+  const delay = isCorrect ? 900 : 1300;
   setTimeout(() => {
     reviewIndex += 1;
     renderReviewQuestion();
-  }, 900);
+  }, delay);
 }
 
 function endReviewSession() {
   if (reviewTimer) { clearInterval(reviewTimer); reviewTimer = null; }
+  reviewSessionLive = false;
+  removeReviewKeydownListener();
   document.getElementById('reviewSession').hidden = true;
   renderReviewResult();
 }
@@ -414,6 +682,7 @@ function renderReviewResult() {
   const total = Math.min(reviewIndex, reviewPool.length);
   const survived = reviewLives > 0;
   const mistakeCount = reviewMistakes.length;
+  const accuracy = total > 0 ? Math.round((reviewScore / total) * 100) : 0;
 
   const mistakesBtnHtml = mistakeCount > 0
     ? `<button type="button" class="review-mistakes-btn" onclick="openReviewMistakesModal()">📋 Xem lại câu sai (${mistakeCount})</button>`
@@ -421,33 +690,46 @@ function renderReviewResult() {
 
   result.innerHTML = `
     <div class="review-result">
-      <div class="review-result-icon">${survived ? '🏁' : '💔'}</div>
-      <div class="review-result-title">${survived ? 'Hoàn thành!' : 'Hết mạng!'}</div>
+      <div class="review-result-icon">${survived ? '🏆' : '💔'}</div>
+      <h2 class="review-result-title">${survived ? 'Hoàn thành phiên ôn!' : 'Hết mạng mất rồi!'}</h2>
+      <p class="review-result-sub">${survived ? 'Xuất sắc! Bạn đã vượt qua các từ vựng trong phạm vi ôn.' : 'Đừng nản lòng! Hãy ôn lại các câu trả lời chưa đúng để nhớ lâu hơn.'}</p>
       <div class="review-result-stats">
         <div class="review-result-stat">
           <div class="review-result-num">${reviewScore}</div>
-          <div class="review-result-lbl">câu đúng</div>
+          <div class="review-result-lbl">Câu đúng</div>
         </div>
         <div class="review-result-stat">
           <div class="review-result-num">${total}</div>
-          <div class="review-result-lbl">tổng số câu</div>
+          <div class="review-result-lbl">Tổng số câu</div>
         </div>
         <div class="review-result-stat">
-          <div class="review-result-num">${reviewBestStreak}</div>
-          <div class="review-result-lbl">chuỗi đúng dài nhất</div>
+          <div class="review-result-num">${accuracy}%</div>
+          <div class="review-result-lbl">Chính xác</div>
+        </div>
+        <div class="review-result-stat">
+          <div class="review-result-num">🔥 ${reviewBestStreak}</div>
+          <div class="review-result-lbl">Chuỗi dài nhất</div>
         </div>
       </div>
       <div class="review-result-actions">
         ${mistakesBtnHtml}
-        <button type="button" class="review-again-btn" onclick="renderReviewStart()">Chơi lại</button>
-        <button type="button" class="review-back-btn" onclick="renderReviewRangePicker()">Chọn lại phạm vi</button>
+        <button type="button" class="review-again-btn" onclick="startReviewSession()">⚡ Chơi lại</button>
+        <button type="button" class="review-back-btn" onclick="showReviewSetup()">⚙️ Đổi phạm vi</button>
       </div>
     </div>`;
 }
 
+function exitReviewSession() {
+  if (reviewSessionLive && !reviewAnswered && reviewLives > 0) {
+    const confirmExit = window.confirm('Bạn có muốn dừng phiên ôn nhanh này không?');
+    if (!confirmExit) return;
+  }
+  abandonReviewSession();
+  showReviewSetup();
+}
+
 function renderReviewRangePicker() {
-  closeReviewMistakesModal();
-  document.getElementById('reviewPickerBody').innerHTML = '';
+  showReviewSetup();
 }
 
 function escapeReviewHtml(value) {
@@ -615,3 +897,134 @@ function openReviewMistakesModal() {
   document.body.classList.add('review-modal-open');
   document.addEventListener('keydown', handleReviewMistakesKeydown);
 }
+
+function openReviewBottomSheet() {
+  const sheet = document.getElementById('reviewBottomSheet');
+  if (!sheet) return;
+  renderReviewBottomSheetPanes();
+  if (typeof sheet.showModal === 'function') {
+    try { sheet.showModal(); } catch (e) {}
+  }
+  sheet.classList.add('is-open');
+  document.body.classList.add('review-sheet-open');
+}
+
+function closeReviewBottomSheet() {
+  const sheet = document.getElementById('reviewBottomSheet');
+  if (!sheet) return;
+  sheet.classList.remove('is-open');
+  document.body.classList.remove('review-sheet-open');
+  setTimeout(() => {
+    if (typeof sheet.close === 'function') {
+      try { sheet.close(); } catch (e) {}
+    }
+  }, 200);
+}
+
+function switchReviewSheetTab(tab) {
+  const forgotTab = document.getElementById('reviewSheetTabForgot');
+  const weakTab = document.getElementById('reviewSheetTabWeak');
+  const forgotPane = document.getElementById('reviewSheetForgotPane');
+  const weakPane = document.getElementById('reviewSheetWeakPane');
+  if (!forgotTab || !weakTab || !forgotPane || !weakPane) return;
+
+  const isForgot = tab === 'forgot';
+  forgotTab.classList.toggle('active', isForgot);
+  weakTab.classList.toggle('active', !isForgot);
+  forgotPane.style.display = isForgot ? 'block' : 'none';
+  weakPane.style.display = isForgot ? 'none' : 'block';
+}
+
+function renderReviewBottomSheetPanes() {
+  const weakListContainer = document.getElementById('reviewSheetWeakList');
+  if (weakListContainer) {
+    const list = typeof loadWeakWords === 'function' ? loadWeakWords() : [];
+    if (!list.length) {
+      weakListContainer.innerHTML = '<div class="review-sheet-empty">Chưa có từ khó nào được đánh dấu.</div>';
+    } else {
+      weakListContainer.innerHTML = list.map(w => {
+        const hanziSafe = escapeReviewHtml(w.hanzi);
+        const pinyinSafe = escapeReviewHtml(w.pinyin || '');
+        const meaningSafe = escapeReviewHtml(w.meaning || '');
+        const levelSafe = escapeReviewHtml(w.level || '');
+        const levelPill = w.level ? (typeof formatWeakWordLevel === 'function' ? formatWeakWordLevel(w.level) : w.level.toUpperCase()) : '';
+        return `
+          <div class="review-sheet-row" data-hanzi="${hanziSafe}">
+            <button type="button" class="review-sheet-row-main" onclick="openWordInLevel('${levelSafe}', '${escapeReviewHtml(w.id || w.hanzi)}', true); closeReviewBottomSheet();">
+              <span class="review-sheet-hanzi" lang="zh-CN">${hanziSafe}</span>
+              <span class="review-sheet-text">
+                <span class="review-sheet-meta">
+                  <span class="review-sheet-pinyin">${pinyinSafe}</span>
+                  ${levelPill ? `<span class="review-sheet-pill">${escapeReviewHtml(levelPill)}</span>` : ''}
+                </span>
+                <span class="review-sheet-meaning" title="${meaningSafe}">${meaningSafe}</span>
+              </span>
+            </button>
+            <button type="button" class="review-sheet-remove-btn" onclick="removeWeakWordFromSheet('${hanziSafe}')" aria-label="Bỏ đánh dấu ${hanziSafe}" title="Bỏ đánh dấu">✕</button>
+          </div>
+        `;
+      }).join('');
+    }
+  }
+
+  const forgotListContainer = document.getElementById('reviewSheetForgotList');
+  const forgotActionsContainer = document.getElementById('reviewSheetForgotActions');
+  if (forgotListContainer) {
+    const hwForgottenEl = document.getElementById('hwForgotten');
+    const existingList = hwForgottenEl ? hwForgottenEl.querySelector('.hw-forgot-list') : null;
+    const existingBtn = hwForgottenEl ? hwForgottenEl.querySelector('.hw-primary-btn') : null;
+
+    if (existingList && existingList.children.length > 0) {
+      forgotListContainer.innerHTML = existingList.innerHTML;
+      if (forgotActionsContainer && existingBtn) {
+        forgotActionsContainer.innerHTML = '';
+        const cloneBtn = existingBtn.cloneNode(true);
+        cloneBtn.onclick = function() {
+          existingBtn.click();
+          closeReviewBottomSheet();
+        };
+        forgotActionsContainer.appendChild(cloneBtn);
+      }
+    } else {
+      forgotListContainer.innerHTML = '<div class="review-sheet-empty">Hiện không có từ nào hay nhầm lẫn đang chờ ôn gấp!</div>';
+      if (forgotActionsContainer) forgotActionsContainer.innerHTML = '';
+    }
+  }
+}
+
+function removeWeakWordFromSheet(hanzi) {
+  if (typeof loadWeakWords === 'function' && typeof saveWeakWords === 'function') {
+    const list = loadWeakWords().filter(w => w.hanzi !== hanzi);
+    saveWeakWords(list);
+    if (typeof renderWeakWordsList === 'function') renderWeakWordsList();
+    if (typeof updateWeakWordToggleButton === 'function') updateWeakWordToggleButton();
+    renderReviewBottomSheetPanes();
+    updateReviewMobileAuxBadge();
+  }
+}
+
+function updateReviewMobileAuxBadge() {
+  const badge = document.getElementById('reviewMobileAuxLabel');
+  if (!badge) return;
+  const weakCount = typeof loadWeakWords === 'function' ? loadWeakWords().length : 0;
+  const hwForgottenEl = document.getElementById('hwForgotten');
+  const forgotItems = hwForgottenEl ? hwForgottenEl.querySelectorAll('.hw-forgot-row').length : 0;
+  const total = weakCount + forgotItems;
+  if (total > 0) {
+    badge.textContent = `${forgotItems} từ cần ôn gấp • ${weakCount} từ khó`;
+  } else {
+    badge.textContent = 'Danh sách từ hay nhầm & từ khó';
+  }
+  const mobBadge = document.getElementById('mobNotebookBadge');
+  if (mobBadge) {
+    mobBadge.textContent = String(total);
+    mobBadge.hidden = total === 0;
+  }
+}
+
+document.addEventListener('click', (e) => {
+  const sheet = document.getElementById('reviewBottomSheet');
+  if (sheet && sheet.classList.contains('is-open') && e.target === sheet) {
+    closeReviewBottomSheet();
+  }
+});

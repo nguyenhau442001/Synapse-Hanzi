@@ -35,6 +35,16 @@ const GradedReading = (function() {
     } catch (e) {}
   }
 
+  function escapeHtml(str) {
+    if (str == null) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
   // Audio Speech Helpers
   function speakSentence(text, sentId) {
     if (!text) return;
@@ -48,7 +58,7 @@ const GradedReading = (function() {
     currentlyPlayingSentenceId = sentId;
     updateSentenceAudioUI();
 
-    const rate = typeof SPEECH_RATE !== 'undefined' ? SPEECH_RATE : 0.85;
+    const rate = typeof exampleSpeechSpeed !== 'undefined' ? exampleSpeechSpeed : 0.8;
     if (typeof speakChinese === 'function') {
       speakChinese(text, {
         rate,
@@ -77,7 +87,7 @@ const GradedReading = (function() {
     updateSentenceAudioUI();
 
     const fullZh = activeStory.sentences.map(s => s.zh || s.text || '').filter(Boolean).join(' ');
-    const rate = typeof SPEECH_RATE !== 'undefined' ? SPEECH_RATE : 0.85;
+    const rate = typeof exampleSpeechSpeed !== 'undefined' ? exampleSpeechSpeed : 0.8;
     if (typeof speakChinese === 'function') {
       speakChinese(fullZh, {
         rate,
@@ -624,41 +634,51 @@ const GradedReading = (function() {
 
   function renderStoryCardHtml(story) {
     const isRead = isStoryRead(story.id);
+    const lvl = (story.level || 'hsk1').toLowerCase();
+    const estMin = story.estimatedMinutes || 3;
+    const sentCount = story.sentence_count ?? story.sentences_count ?? 5;
+    const wordCount = story.spotlight_count ?? story.words_count ?? 15;
+    const zhTitle = story.title && story.title.zh ? story.title.zh : '';
+    const viTitle = story.title && story.title.vi ? story.title.vi : '';
+    const descVi = story.description_vi || '';
+    const topicVi = story.topic_vi || '';
+
     return `
-    <article class="graded-story-card ${isRead ? 'is-read' : ''}" onclick="GradedReading.openStory('${story.id}')" tabindex="0" role="button" aria-label="Đọc bài ${story.title.vi}">
-      <div>
+    <article class="graded-story-card ${isRead ? 'is-read' : ''}" onclick="GradedReading.openStory('${story.id}')" tabindex="0" role="button" aria-label="Đọc bài ${escapeHtml(viTitle)}">
+      <div class="graded-card-main">
         <div class="graded-card-header">
           <div class="graded-card-header-left">
-            <span class="graded-card-level-badge">${story.level}</span>
-            ${isRead ? `
-              <span class="graded-card-read-badge" title="Đã đọc">
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                <span>Đã đọc</span>
-              </span>
-            ` : ''}
+            <span class="graded-card-level-badge lvl-${lvl}">${escapeHtml(story.level)}</span>
+            <span class="graded-card-topic" title="${escapeHtml(topicVi)}">${escapeHtml(topicVi)}</span>
           </div>
           <div class="graded-card-header-right">
-            <span class="graded-card-topic">${story.topic_vi}</span>
-            <span class="graded-card-time">⏱️ ${story.estimatedMinutes}m</span>
             <button type="button" class="graded-card-mark-toggle ${isRead ? 'read' : ''}" onclick="GradedReading.toggleStoryRead('${story.id}', event)" title="${isRead ? 'Đã đọc (Bấm để hủy)' : 'Đánh dấu đã đọc'}" aria-label="${isRead ? 'Đã đọc (Bấm để hủy)' : 'Đánh dấu đã đọc'}">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="${isRead ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
             </button>
           </div>
         </div>
         <div class="graded-card-body">
-          <h2 class="graded-card-zh-title">
-            <span>${story.icon || '📖'}</span>
-            <span>${story.title.zh}</span>
+          <h2 class="graded-card-zh-title" title="${escapeHtml(zhTitle)}">
+            <span>${escapeHtml(zhTitle)}</span>
           </h2>
-          <div class="graded-card-vi-title">${story.title.vi}</div>
-          <p class="graded-card-desc">${story.description_vi}</p>
+          <div class="graded-card-vi-title" title="${escapeHtml(viTitle)}">${escapeHtml(viTitle)}</div>
+          <p class="graded-card-desc" title="${escapeHtml(descVi)}">${escapeHtml(descVi)}</p>
         </div>
       </div>
       <footer class="graded-card-footer">
-        <span class="graded-card-meta-text">${story.sentence_count ?? story.sentences_count ?? 5} câu · ${story.spotlight_count ?? 10} từ</span>
-        <span class="graded-card-read-btn ${isRead ? 'read' : ''}">
-          ${isRead ? 'Đọc lại →' : 'Đọc ngay →'}
-        </span>
+        <div class="graded-card-meta">
+          <span>${sentCount} câu</span>
+          <span class="graded-meta-divider">·</span>
+          <span>${wordCount} từ</span>
+          <span class="graded-meta-divider">·</span>
+          <span>⏱️ ${estMin}m</span>
+        </div>
+        <div class="graded-card-arrow" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </div>
       </footer>
     </article>
     `;
@@ -726,7 +746,7 @@ const GradedReading = (function() {
           <div class="graded-reader-title-group">
             <h1 class="graded-reader-zh-title">
               <span>${story.title.zh}</span>
-              <span class="graded-card-level-badge">${story.level}</span>
+              <span class="graded-card-level-badge lvl-${(story.level || 'hsk1').toLowerCase()}">${story.level}</span>
             </h1>
             <div class="graded-reader-vi-title">${story.title.vi} · ⏱️ ${story.estimatedMinutes} phút</div>
           </div>
