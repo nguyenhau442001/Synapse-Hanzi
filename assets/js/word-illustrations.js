@@ -55766,6 +55766,216 @@ const STATIC_ILLUSTRATIONS_INDEX = {
     "file": "揍.svg",
     "src": "images/HSK_3.0/level7/揍.svg",
     "caption": "đánh, đấm cho một trận"
+  },
+  "奏效": {
+    "file": "奏效.svg",
+    "src": "images/HSK_3.0/level7/奏效.svg",
+    "caption": "phát huy hiệu quả, có tác dụng"
+  },
+  "租赁": {
+    "file": "租赁.svg",
+    "src": "images/HSK_3.0/level7/租赁.svg",
+    "caption": "thuê mướn, cho thuê"
+  },
+  "足不出户": {
+    "file": "足不出户.svg",
+    "src": "images/HSK_3.0/level7/足不出户.svg",
+    "caption": "không ra khỏi cửa, ngồi tại nhà"
+  },
+  "足迹": {
+    "file": "足迹.svg",
+    "src": "images/HSK_3.0/level7/足迹.svg",
+    "caption": "dấu chân, vết chân in dấu"
+  },
+  "足智多谋": {
+    "file": "足智多谋.svg",
+    "src": "images/HSK_3.0/level7/足智多谋.svg",
+    "caption": "lắm mưu nhiều kế, mưu trí túc trí đa mưu"
+  },
+  "祖传": {
+    "file": "祖传.svg",
+    "src": "images/HSK_3.0/level7/祖传.svg",
+    "caption": "gia truyền, tổ tiên truyền lại"
+  },
+  "祖父": {
+    "file": "祖父.svg",
+    "src": "images/HSK_3.0/level7/祖父.svg",
+    "caption": "ông nội"
+  },
+  "祖籍": {
+    "file": "祖籍.svg",
+    "src": "images/HSK_3.0/level7/祖籍.svg",
+    "caption": "nguyên quán, quê quán tổ tiên"
+  },
+  "组建": {
+    "file": "组建.svg",
+    "src": "images/HSK_3.0/level7/组建.svg",
+    "caption": "thành lập, lập nên (đoàn thể, đội ngũ)"
+  },
+  "阻拦": {
+    "file": "阻拦.svg",
+    "src": "images/HSK_3.0/level7/阻拦.svg",
+    "caption": "ngăn cản, cản trở"
+  },
+  "阻力": {
+    "file": "阻力.svg",
+    "src": "images/HSK_3.0/level7/阻力.svg",
+    "caption": "lực cản, sức cản trở"
+  },
+  "祖母": {
+    "file": "祖母.svg",
+    "src": "images/HSK_3.0/level7/祖母.svg",
+    "caption": "bà nội"
+  },
+  "阻挠": {
+    "file": "阻挠.svg",
+    "src": "images/HSK_3.0/level7/阻挠.svg",
+    "caption": "cản trở, ngáng đường, quấy nhiễu"
+  },
+  "组装": {
+    "file": "组装.svg",
+    "src": "images/HSK_3.0/level7/组装.svg",
+    "caption": "lắp ráp (máy móc, thiết bị)"
+  },
+  "祖宗": {
+    "file": "祖宗.svg",
+    "src": "images/HSK_3.0/level7/祖宗.svg",
+    "caption": "tổ tiên, ông cha tổ phụ"
+  },
+  "钻空子": {
+    "file": "钻空子.svg",
+    "src": "images/HSK_3.0/level7/钻空子.svg",
+    "caption": "chui lỗ hổng, lợi dụng sơ hở trục lợi"
+  },
+  "钻研": {
+    "file": "钻研.svg",
+    "src": "images/HSK_3.0/level7/钻研.svg",
+    "caption": "đào sâu nghiên cứu, miệt mài nghiên cứu"
+  },
+  "钻石": {
+    "file": "钻石.svg",
+    "src": "images/HSK_3.0/level7/钻石.svg",
+    "caption": "kim cương"
+  },
+  "嘴唇": {
+    "file": "嘴唇.svg",
+    "src": "images/HSK_3.0/level7/嘴唇.svg",
+    "caption": "đôi môi, bờ môi"
+  },
+  "罪犯": {
+    "file": "罪犯.svg",
+    "src": "images/HSK_3.0/level7/罪犯.svg",
+    "caption": "tội phạm, kẻ phạm tội"
+  },
+  "罪魁祸首": {
+    "file": "罪魁祸首.svg",
+    "src": "images/HSK_3.0/level7/罪魁祸首.svg",
+    "caption": "thủ phạm đầu sỏ, kẻ chủ mưu gây họa"
+  },
+  "尊贵": {
+    "file": "尊贵.svg",
+    "src": "images/HSK_3.0/level7/尊贵.svg",
+    "caption": "tôn quý, quý phái cao sang"
+  },
+  "遵循": {
+    "file": "遵循.svg",
+    "src": "images/HSK_3.0/level7/遵循.svg",
+    "caption": "theo dõi"
+  },
+  "尊严": {
+    "file": "尊严.svg",
+    "src": "images/HSK_3.0/level7/尊严.svg",
+    "caption": "phẩm giá"
+  },
+  "遵照": {
+    "file": "遵照.svg",
+    "src": "images/HSK_3.0/level7/遵照.svg",
+    "caption": "tuân theo, chiểu theo"
+  },
+  "琢磨": {
+    "file": "琢磨.svg",
+    "src": "images/HSK_3.0/level7/琢磨.svg",
+    "caption": "suy ngẫm, đắn đo nghiền ngẫm"
+  },
+  "左顾右盼": {
+    "file": "左顾右盼.svg",
+    "src": "images/HSK_3.0/level7/左顾右盼.svg",
+    "caption": "ngó nghiêng nhìn trước ngó sau, liếc ngang liếc dọc"
+  },
+  "作弊": {
+    "file": "作弊.svg",
+    "src": "images/HSK_3.0/level7/作弊.svg",
+    "caption": "gian lận (thi cử, trò chơi)"
+  },
+  "作对": {
+    "file": "作对.svg",
+    "src": "images/HSK_3.0/level7/作对.svg",
+    "caption": "đối đầu, làm trái ý, chống đối"
+  },
+  "作废": {
+    "file": "作废.svg",
+    "src": "images/HSK_3.0/level7/作废.svg",
+    "caption": "vô hiệu lực, hủy bỏ tính hiệu lực"
+  },
+  "作风": {
+    "file": "作风.svg",
+    "src": "images/HSK_3.0/level7/作风.svg",
+    "caption": "tác phong, lề lối làm việc"
+  },
+  "作客": {
+    "file": "作客.svg",
+    "src": "images/HSK_3.0/level7/作客.svg",
+    "caption": "làm khách, đến chơi nhà"
+  },
+  "作料": {
+    "file": "作料.svg",
+    "src": "images/HSK_3.0/level7/作料.svg",
+    "caption": "gia vị, đồ nêm nếm"
+  },
+  "坐落": {
+    "file": "坐落.svg",
+    "src": "images/HSK_3.0/level7/坐落.svg",
+    "caption": "tọa lạc, nằm ở vị trí"
+  },
+  "座谈": {
+    "file": "座谈.svg",
+    "src": "images/HSK_3.0/level7/座谈.svg",
+    "caption": "tọa đàm, trò chuyện thảo luận thân mật"
+  },
+  "作为²": {
+    "file": "作为².svg",
+    "src": "images/HSK_3.0/level7/作为².svg",
+    "caption": "là, với danh nghĩa"
+  },
+  "作物": {
+    "file": "作物.svg",
+    "src": "images/HSK_3.0/level7/作物.svg",
+    "caption": "hoa màu, cây trồng nông nghiệp"
+  },
+  "作息": {
+    "file": "作息.svg",
+    "src": "images/HSK_3.0/level7/作息.svg",
+    "caption": "sinh hoạt nghỉ ngơi, thời gian biểu làm việc nghỉ ngơi"
+  },
+  "座右铭": {
+    "file": "座右铭.svg",
+    "src": "images/HSK_3.0/level7/座右铭.svg",
+    "caption": "phương châm sống, châm ngôn gối đầu giường"
+  },
+  "作战": {
+    "file": "作战.svg",
+    "src": "images/HSK_3.0/level7/作战.svg",
+    "caption": "tác chiến, chiến đấu"
+  },
+  "做证": {
+    "file": "做证.svg",
+    "src": "images/HSK_3.0/level7/做证.svg",
+    "caption": "làm chứng, ra làm nhân chứng"
+  },
+  "做主": {
+    "file": "做主.svg",
+    "src": "images/HSK_3.0/level7/做主.svg",
+    "caption": "làm chủ, quyết định, đứng ra chủ trì quyết định"
   }
 };
 
