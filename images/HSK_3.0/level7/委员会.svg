@@ -1,0 +1,39 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient glow for the central concept -->
+  <circle cx="120" cy="115" r="70" fill="#2E3646" opacity="0.4"/>
+
+  <!-- Committee Table / Conference Setup -->
+  <!-- Long curved table base -->
+  <path d="M 60,140 Q 120,160 180,140 L 170,165 Q 120,185 70,165 Z" fill="#3B4454"/>
+  <!-- Table top surface -->
+  <ellipse cx="120" cy="140" rx="65" ry="18" fill="#4E596D"/>
+  <ellipse cx="120" cy="137" rx="63" ry="16" fill="#62708A"/>
+
+  <!-- Draft Document on Table (representing "审议草案") -->
+  <rect x="105" y="130" width="30" height="20" rx="2" fill="#E2E8F0" transform="rotate(-10 120 140)"/>
+  <line x1="110" y1="135" x2="125" y2="135" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="110" y1="140" x2="120" y2="140" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Committee Members (Representing the board/committee people) -->
+  <!-- Member Left -->
+  <circle cx="85" cy="100" r="14" fill="#F8FAFC"/>
+  <path d="M 65,130 Q 85,115 105,130" fill="#38BDF8"/>
+  <path d="M 75,95 Q 85,85 95,95" fill="#334155"/>
+
+  <!-- Member Center (Head/Chairperson) -->
+  <circle cx="120" cy="90" r="16" fill="#F8FAFC"/>
+  <path d="M 98,125 Q 120,105 142,125" fill="#F59E0B"/>
+  <path d="M 108,83 Q 120,70 132,83" fill="#1E293B"/>
+
+  <!-- Member Right -->
+  <circle cx="155" cy="100" r="14" fill="#F8FAFC"/>
+  <path d="M 135,130 Q 155,115 175,130" fill="#38BDF8"/>
+  <path d="M 145,95 Q 155,85 165,95" fill="#334155"/>
+
+  <!-- Focus/Decision Accent: Checkmark / Approval Badge hovering above -->
+  <circle cx="120" cy="50" r="18" fill="#1E293B" stroke="#F59E0B" stroke-width="3"/>
+  <path d="M 111,50 L 117,56 L 130,42" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

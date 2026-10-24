@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Globe Illustration for Latitude (纬度) -->
+  <g transform="translate(120, 120)">
+    <!-- Outer Atmosphere Glow -->
+    <circle r="72" fill="#2563EB" opacity="0.15"/>
+    
+    <!-- Globe Base (Sphere) -->
+    <circle r="64" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+
+    <!-- Continents / Landmass silhouettes (Stylized flat vector) -->
+    <g fill="#3B82F6" opacity="0.4">
+      <path d="M-30,-20 C-15,-25 -5,-40 10,-35 C25,-30 40,-45 45,-30 C50,-15 35,-5 40,10 C45,25 30,35 15,30 C0,25 -20,35 -30,20 C-40,5 -45,-15 -30,-20 Z"/>
+      <path d="M-45,35 C-35,30 -25,45 -15,40 C-5,35 -10,50 -25,55 C-40,60 -50,45 -45,35 Z"/>
+    </g>
+
+    <!-- Latitude Grid Lines (Parallel rings representing vĕidù) -->
+    <!-- Equator -->
+    <ellipse cx="0" cy="0" rx="64" ry="16" fill="none" stroke="#F59E0B" stroke-width="2" stroke-dasharray="4 2"/>
+    
+    <!-- Mid Latitudes (Northern & Southern) -->
+    <ellipse cx="0" cy="-24" rx="59" ry="12" fill="none" stroke="#60A5FA" stroke-width="1.5"/>
+    <ellipse cx="0" cy="24" rx="59" ry="12" fill="none" stroke="#60A5FA" stroke-width="1.5"/>
+
+    <!-- High Latitudes / Polar Circles -->
+    <ellipse cx="0" cy="-45" rx="45" ry="8" fill="none" stroke="#60A5FA" stroke-width="1"/>
+    <ellipse cx="0" cy="45" rx="45" ry="8" fill="none" stroke="#60A5FA" stroke-width="1"/>
+
+    <!-- Prime Meridian / Vertical Axis Reference -->
+    <path d="M0,-64 C15,-40 15,40 0,64" fill="none" stroke="#475569" stroke-width="1" stroke-dasharray="2 2"/>
+    <path d="M0,-64 C-15,-40 -15,40 0,64" fill="none" stroke="#475569" stroke-width="1" stroke-dasharray="2 2"/>
+
+    <!-- Highlight Indicator on Equator (Focus accent) -->
+    <circle cx="64" cy="0" r="3" fill="#F59E0B"/>
+    <circle cx="-64" cy="0" r="3" fill="#F59E0B"/>
+    <path d="M0,-64 L0,64" fill="none" stroke="#334155" stroke-width="1" opacity="0.5"/>
+  </g>
+</svg>
