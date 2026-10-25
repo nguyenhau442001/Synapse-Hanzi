@@ -638,6 +638,7 @@ function goBackToPicker() {
   setActiveStudyWord(null);
   document.body.classList.remove('study-mode');
   document.body.classList.remove('flashcard-study-mode');
+  document.documentElement.classList.remove('flashcard-study-mode');
   const wasTopic = currentLevel && LEVELS[currentLevel] && LEVELS[currentLevel].isTopic;
   document.getElementById('screenCards').style.display = 'none';
   const studyLevelBadge = document.getElementById('studyLevelBadge');
@@ -682,6 +683,7 @@ async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal = false
   if (typeof closeAllStudyDrawers === 'function') closeAllStudyDrawers();
   document.body.classList.add('study-mode');
   document.body.classList.add('flashcard-study-mode');
+  document.documentElement.classList.add('flashcard-study-mode');
   window.scrollTo({ top: 0, behavior: 'instant' });
   const wsMid = document.getElementById('workstationMiddle');
   if (wsMid) wsMid.scrollTop = 0;

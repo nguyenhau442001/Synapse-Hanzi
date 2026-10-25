@@ -735,6 +735,14 @@ class TestFlashcardExperienceRefinements(unittest.TestCase):
         self.assertNotIn(".card.is-flipped ~ #studyNavRow", self.workstation_css,
                          "studyNavRow must not be forcibly hidden when card is flipped")
 
+    def test_flashcard_study_mode_locks_page_scroll(self):
+        """Flashcard study stage must lock page scroll and mouse wheel scrolling."""
+        self.assertIn("html:has(body.flashcard-study-mode)", self.workstation_css)
+        self.assertIn("overflow: hidden !important", self.workstation_css)
+        self.assertIn("overflow-y: hidden !important", self.workstation_css)
+        self.assertIn("addEventListener('wheel'", self.flashcard_js)
+        self.assertIn("e.preventDefault()", self.flashcard_js)
+
 
 
 def run_tests():
