@@ -738,6 +738,10 @@ const ListeningPractice = (function() {
 
         <!-- 2. Statement Presentation (Immediate, Uncluttered, Front & Center) -->
         <div class="listening-statement-block">
+          <div class="listening-statement-badge">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            <span>Mệnh đề nhận định</span>
+          </div>
           <div class="listening-statement-zh" lang="zh-CN">${q.statement.zh}</div>
           ${learnerState.answered && learnerState.showPinyin && q.statement.pinyin ? `
             <div class="listening-statement-pinyin">${formatNaturalPinyin(q.statement.pinyin)}</div>
@@ -783,8 +787,8 @@ const ListeningPractice = (function() {
   function renderChoiceButton(choiceVal) {
     const label = choiceVal ? 'Đúng' : 'Sai';
     let btnStateClass = '';
-    let subtext = '&nbsp;';
-    let subtextClass = 'listening-choice-subtext-empty';
+    let subtext = '';
+    let subtextClass = '';
 
     if (learnerState.answered) {
       const isThisChoice = learnerState.selectedChoice === choiceVal;
@@ -809,13 +813,22 @@ const ListeningPractice = (function() {
       }
     }
 
+    const iconSvg = choiceVal
+      ? `<svg class="listening-choice-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>`
+      : `<svg class="listening-choice-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>`;
+
     return `
       <button type="button" class="listening-choice-btn choice-${choiceVal ? 'true' : 'false'} ${btnStateClass}"
         onclick="ListeningPractice.submitAnswer(${choiceVal})"
         ${learnerState.answered ? 'disabled' : ''}
         aria-label="${label}">
-        <span class="listening-choice-primary">${label}</span>
-        <span class="listening-choice-subtext ${subtextClass}">${subtext}</span>
+        <div class="listening-choice-main">
+          <span class="listening-choice-icon-wrap" aria-hidden="true">${iconSvg}</span>
+          <span class="listening-choice-primary">${label}</span>
+        </div>
+        ${learnerState.answered && subtext ? `
+          <span class="listening-choice-subtext ${subtextClass}">${subtext}</span>
+        ` : ''}
       </button>
     `;
   }
