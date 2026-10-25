@@ -840,9 +840,10 @@ const ListeningPractice = (function() {
         <div class="listening-player-controls-grid">
           <!-- Primary Play/Pause Button -->
           <button type="button" class="listening-play-primary-btn ${isPlayingFull ? 'is-playing' : ''}"
-            onclick="ListeningPractice.togglePlayFullQuestion()" aria-label="Nghe đoạn này">
+            onclick="ListeningPractice.togglePlayFullQuestion()" aria-label="${isPlayingFull ? 'Tạm dừng' : 'Nghe đoạn này'}">
             ${isPlayingFull ? `
               <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+              <span class="listening-playing-waves" aria-hidden="true"><span></span><span></span><span></span></span>
               <span>Tạm dừng</span>
             ` : `
               <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -1013,10 +1014,12 @@ const ListeningPractice = (function() {
                 ${evidenceSentenceId ? `
                   <button type="button" class="listening-evidence-play-btn ${isEvidencePlaying ? 'is-playing' : ''}"
                     onclick="ListeningPractice.togglePlaySentence('${evidenceSentenceId}')"
-                    title="${isEvidencePlaying ? 'Tạm dừng câu này' : 'Nghe câu này'}">
+                    title="${isEvidencePlaying ? 'Tạm dừng câu này' : 'Nghe câu này'}"
+                    aria-label="${isEvidencePlaying ? 'Tạm dừng câu này' : 'Nghe câu này'}">
                     ${isEvidencePlaying ? `
                       <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
-                      <span>Tạm dừng</span>
+                      <span class="listening-playing-waves" aria-hidden="true"><span></span><span></span><span></span></span>
+                      <span>Đang phát</span>
                     ` : `
                       <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 19 12 6 20 6 4"/></svg>
                       <span>Nghe câu này</span>
@@ -1094,7 +1097,8 @@ const ListeningPractice = (function() {
                   ${!hasValidTime ? 'disabled title="Chưa có mốc thời gian"' : `title="${isPlayingThis ? 'Tạm dừng' : 'Nghe câu này'} (${((s.end_ms - s.start_ms)/1000).toFixed(1)}s)"`}
                   aria-label="${isPlayingThis ? 'Tạm dừng' : 'Nghe câu này'}">
                   ${isPlayingThis ? `
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+                    <span class="listening-playing-waves" aria-hidden="true"><span></span><span></span><span></span></span>
+                    <svg class="listening-pause-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
                   ` : `
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 19 12 6 20 6 4"/></svg>
                   `}
@@ -1619,8 +1623,10 @@ const ListeningPractice = (function() {
     const isPlayingFull = learnerState.activePlayingSegment === 'full_question';
     if (playBtn) {
       playBtn.classList.toggle('is-playing', isPlayingFull);
+      playBtn.setAttribute('aria-label', isPlayingFull ? 'Tạm dừng' : 'Nghe đoạn này');
       playBtn.innerHTML = isPlayingFull ? `
         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+        <span class="listening-playing-waves" aria-hidden="true"><span></span><span></span><span></span></span>
         <span>Tạm dừng</span>
       ` : `
         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -1641,7 +1647,7 @@ const ListeningPractice = (function() {
       }
     }
 
-    // 2. Sentence replay buttons
+    // 2. Sentence replay buttons in transcript rows
     document.querySelectorAll('.listening-row-play-btn').forEach((btn) => {
       const row = btn.closest('.listening-transcript-row');
       const onclickAttr = btn.getAttribute('onclick') || '';
@@ -1649,25 +1655,36 @@ const ListeningPractice = (function() {
       const sentenceId = match ? match[1] : null;
       const isPlaying = sentenceId && learnerState.activePlayingSegment === sentenceId;
       btn.classList.toggle('is-playing', Boolean(isPlaying));
+      btn.setAttribute('aria-label', isPlaying ? 'Tạm dừng' : 'Nghe câu này');
+      btn.setAttribute('title', isPlaying ? 'Tạm dừng' : 'Nghe câu này');
+      btn.innerHTML = isPlaying ? `
+        <span class="listening-playing-waves" aria-hidden="true"><span></span><span></span><span></span></span>
+        <svg class="listening-pause-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+      ` : `
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 19 12 6 20 6 4"/></svg>
+      `;
       if (row) {
         row.classList.toggle('is-playing-row', Boolean(isPlaying));
       }
     });
 
     // 2b. Evidence replay button in feedback
-    const evidenceReplayBtn = document.querySelector('.listening-replay-evidence-btn');
-    if (evidenceReplayBtn) {
-      const onclickAttr = evidenceReplayBtn.getAttribute('onclick') || '';
+    const evidenceBtn = document.querySelector('.listening-evidence-play-btn');
+    if (evidenceBtn) {
+      const onclickAttr = evidenceBtn.getAttribute('onclick') || '';
       const match = onclickAttr.match(/'([^']+)'/);
       const sentenceId = match ? match[1] : null;
       const isPlaying = sentenceId && learnerState.activePlayingSegment === sentenceId;
-      evidenceReplayBtn.classList.toggle('is-playing', Boolean(isPlaying));
-      evidenceReplayBtn.innerHTML = isPlaying ? `
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
-        <span>Tạm dừng</span>
+      evidenceBtn.classList.toggle('is-playing', Boolean(isPlaying));
+      evidenceBtn.setAttribute('title', isPlaying ? 'Tạm dừng câu này' : 'Nghe câu này');
+      evidenceBtn.setAttribute('aria-label', isPlaying ? 'Tạm dừng câu này' : 'Nghe câu này');
+      evidenceBtn.innerHTML = isPlaying ? `
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+        <span class="listening-playing-waves" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>Đang phát</span>
       ` : `
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-        <span>Nghe lại câu chứa bằng chứng</span>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 19 12 6 20 6 4"/></svg>
+        <span>Nghe câu này</span>
       `;
     }
 

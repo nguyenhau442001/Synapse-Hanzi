@@ -283,6 +283,34 @@ def test_listening_user_feedback_improvements():
 
     print("   ✓ All user feedback improvements verified successfully!")
 
+def test_audio_playback_cut_off_and_playing_indicator():
+    print("-> Checking audio playback cutoff fix and playing indicator effects...")
+    # 1. Verify H41001 Q2 sentence S2 timing does not cut off
+    json_path = ROOT / "database/listening/hsk4_h41001.json"
+    with open(json_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    q2 = next(q for q in data["questions"] if q["question_number"] == 2)
+    s2 = next(s for s in q2["transcript"]["sentences"] if s["id"] == "H41001_L_02_S2")
+    assert s2["end_ms"] == 177100, f"H41001_L_02_S2 end_ms should be 177100 to prevent cutoff, got {s2['end_ms']}"
+    assert s2["end_ms"] == q2["segments"]["passage"]["end_ms"], "S2 end_ms should match passage end_ms"
+
+    # 2. Check CSS contains playing wave animation and pulse effects
+    css = (ROOT / "assets/css/listening-practice.css").read_text(encoding="utf-8")
+    assert ".listening-playing-waves" in css, "CSS must define .listening-playing-waves for animated sound waves"
+    assert "listening-wave-bounce" in css, "CSS must define keyframes listening-wave-bounce"
+    assert "listening-playing-pulse" in css, "CSS must define keyframes listening-playing-pulse"
+    assert ".listening-row-play-btn.is-playing" in css, "CSS must style .listening-row-play-btn.is-playing"
+    assert ".listening-evidence-play-btn.is-playing" in css, "CSS must style .listening-evidence-play-btn.is-playing"
+
+    # 3. Check JS updatePlaybackUI handles evidence button and row button with playing wave indicator
+    js = (ROOT / "assets/js/listening-practice.js").read_text(encoding="utf-8")
+    assert "listening-replay-evidence-btn" not in js, "Old mismatched selector listening-replay-evidence-btn must be removed"
+    assert "document.querySelector('.listening-evidence-play-btn')" in js, "JS must query .listening-evidence-play-btn"
+    assert "listening-playing-waves" in js, "JS must render animated sound waves during playback"
+    assert "Đang phát" in js, "Evidence button must show 'Đang phát' state when playing"
+
+    print("   ✓ Audio cutoff and playing indicator effects verified successfully!")
+
 def test_listening_js_syntax():
     print("-> Checking listening-practice.js syntax integrity...")
     js_path = ROOT / "assets/js/listening-practice.js"
@@ -300,6 +328,7 @@ def main():
     test_listening_polish_v112()
     test_audio_range_and_resilience()
     test_listening_user_feedback_improvements()
+    test_audio_playback_cut_off_and_playing_indicator()
     test_listening_js_syntax()
     print("=== ALL VERIFICATION TESTS PASSED SUCCESSFULLY! ===")
 
