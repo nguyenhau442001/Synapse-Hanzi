@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground track and history wheel -->
+  <g>
+    <!-- Ground line -->
+    <line x1="30" y1="180" x2="210" y2="180" stroke="#343B48" stroke-width="4" stroke-linecap="round"/>
+    <line x1="30" y1="186" x2="190" y2="186" stroke="#252A34" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Large historical progress wheel moving forward (left to right) -->
+    <g transform="translate(105, 130)">
+      <!-- Outer rim -->
+      <circle cx="0" cy="0" r="45" fill="none" stroke="#4A90E2" stroke-width="6"/>
+      <!-- Inner rim -->
+      <circle cx="0" cy="0" r="35" fill="none" stroke="#343B48" stroke-width="2" stroke-dasharray="6,4"/>
+      <!-- Center hub -->
+      <circle cx="0" cy="0" r="10" fill="#4A90E2"/>
+      <circle cx="0" cy="0" r="5" fill="#1A1D24"/>
+      <!-- Spokes -->
+      <line x1="0" y1="-35" x2="0" y2="-10" stroke="#4A90E2" stroke-width="4" stroke-linecap="round"/>
+      <line x1="0" y1="10" x2="0" y2="35" stroke="#4A90E2" stroke-width="4" stroke-linecap="round"/>
+      <line x1="-35" y1="0" x2="-10" y2="0" stroke="#4A90E2" stroke-width="4" stroke-linecap="round"/>
+      <line x1="10" y1="0" x2="35" y2="0" stroke="#4A90E2" stroke-width="4" stroke-linecap="round"/>
+      <line x1="-24.75" y1="-24.75" x2="-7.07" y2="-7.07" stroke="#4A90E2" stroke-width="4" stroke-linecap="round"/>
+      <line x1="7.07" y1="7.07" x2="24.75" y2="24.75" stroke="#4A90E2" stroke-width="4" stroke-linecap="round"/>
+      <line x1="-24.75" y1="24.75" x2="-7.07" y2="7.07" stroke="#4A90E2" stroke-width="4" stroke-linecap="round"/>
+      <line x1="7.07" y1="-7.07" x2="24.75" y2="-24.75" stroke="#4A90E2" stroke-width="4" stroke-linecap="round"/>
+      
+      <!-- Motion lines behind wheel -->
+      <line x1="-55" y1="-20" x2="-65" y2="-20" stroke="#4A90E2" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+      <line x1="-55" y1="0" x2="-75" y2="0" stroke="#4A90E2" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+      <line x1="-55" y1="20" x2="-65" y2="20" stroke="#4A90E2" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    </g>
+  </g>
+
+  <!-- Obstruction / Impediment (阻挠 - Malicious physical block / obstruction) -->
+  <g>
+    <!-- Heavy structural roadblock / barrier wedge -->
+    <path d="M 125 180 L 155 120 L 175 120 L 195 180 Z" fill="#E67E22"/>
+    
+    <!-- Warning stripes on the barrier -->
+    <path d="M 143 180 L 157 150 L 165 150 L 151 180 Z" fill="#2C3E50"/>
+    <path d="M 163 180 L 173 160 L 181 160 L 171 180 Z" fill="#2C3E50"/>
+
+    <!-- Direct mechanical obstruction rod pressing against the wheel -->
+    <rect x="135" y="105" width="45" height="15" rx="3" fill="#E74C3C" transform="rotate(-25 135 105)"/>
+    <circle cx="135" cy="112" r="8" fill="#C0392B"/>
+
+    <!-- Impact spark / resistance focal point -->
+    <circle cx="130" cy="115" r="5" fill="#F1C40F"/>
+    <line x1="120" y1="105" x2="127" y2="112" stroke="#F1C40F" stroke-width="2" stroke-linecap="round"/>
+    <line x1="122" y1="122" x2="128" y2="117" stroke="#F1C40F" stroke-width="2" stroke-linecap="round"/>
+    <line x1="138" y1="103" x2="133" y2="110" stroke="#F1C40F" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+</svg>

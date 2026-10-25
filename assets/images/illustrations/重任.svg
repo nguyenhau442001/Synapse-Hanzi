@@ -1,0 +1,58 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background architectural grid details to fit project management / construction context -->
+  <line x1="40" y1="200" x2="200" y2="200" stroke="#2A2F3B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="70" y1="200" x2="70" y2="60" stroke="#262B36" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="170" y1="200" x2="170" y2="60" stroke="#262B36" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!-- Physical Object representing "重任" (heavy responsibility / critical project burden):
+       An iconic, massive yet balanced golden architectural blueprint framework / building structure
+       being steadily and firmly carried/supported by a stylized figure, symbolizing immense duty. -->
+  
+  <!-- The Structure (Heavy Responsibility / Project Load) -->
+  <g transform="translate(0, 0)">
+    <!-- Support Beam / Load Top -->
+    <rect x="75" y="65" width="90" height="12" rx="3" fill="#D4AF37"/>
+    <rect x="85" y="57" width="70" height="8" rx="2" fill="#E6C657"/>
+
+    <!-- Truss Framework (representing complex project construction) -->
+    <polygon points="75,77 120,105 165,77" fill="none" stroke="#D4AF37" stroke-width="4" stroke-linejoin="round"/>
+    <line x1="95" y1="77" x2="120" y2="105" stroke="#D4AF37" stroke-width="3"/>
+    <line x1="145" y1="77" x2="120" y2="105" stroke="#D4AF37" stroke-width="3"/>
+
+    <!-- Vertical weight pillars -->
+    <rect x="95" y="105" width="8" height="20" fill="#C59B27"/>
+    <rect x="137" y="105" width="8" height="20" fill="#C59B27"/>
+  </g>
+
+  <!-- Central Character (The person bearing the heavy responsibility) -->
+  <g transform="translate(0, 5)">
+    <!-- Body / Torso leaning slightly under the immense weight -->
+    <path d="M 105 155 Q 115 130 125 125 L 135 155 Z" fill="#3B82F6"/>
+    <rect x="100" y="150" width="40" height="50" rx="6" fill="#2563EB"/>
+
+    <!-- Head -->
+    <circle cx="120" cy="112" r="13" fill="#E2E8F0"/>
+    <!-- Hair -->
+    <path d="M 107 112 C 107 103 113 100 120 100 C 127 100 133 103 133 110 Z" fill="#64748B"/>
+
+    <!-- Arms firmly holding up the heavy load -->
+    <!-- Left Arm -->
+    <path d="M 105 145 C 95 130 90 95 90 85" fill="none" stroke="#2563EB" stroke-width="8" stroke-linecap="round"/>
+    <!-- Right Arm -->
+    <path d="M 135 145 C 145 130 150 95 150 85" fill="none" stroke="#2563EB" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Hands pushing up against the golden beam -->
+    <circle cx="90" cy="81" r="5" fill="#E2E8F0"/>
+    <circle cx="150" cy="81" r="5" fill="#E2E8F0"/>
+
+    <!-- Sturdy Legs rooted firmly on the ground -->
+    <rect x="106" y="195" width="10" height="15" rx="3" fill="#1D4ED8"/>
+    <rect x="124" y="195" width="10" height="15" rx="3" fill="#1D4ED8"/>
+  </g>
+
+  <!-- Accent glow indicating importance and high value of the task (Focus color: Gold/Orange) -->
+  <circle cx="120" cy="71" r="2" fill="#FFFFFF"/>
+</svg>

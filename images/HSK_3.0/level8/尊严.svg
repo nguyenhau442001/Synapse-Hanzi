@@ -1,0 +1,30 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Shield / Protection Structure representing dignity and safeguarding -->
+    <!-- Base Glow -->
+    <path d="M120 35 L175 55 V110 C175 145 150 175 120 190 C90 175 65 145 65 110 V55 Z" fill="#252A34" stroke="#323846" stroke-width="2"/>
+    
+    <!-- Inner Shield (Gold/Orange accent for high contrast and focus) -->
+    <path d="M120 45 L165 62 V108 C165 138 145 163 120 176 C95 163 75 138 75 108 V62 Z" fill="#1E232F" stroke="#E6A15C" stroke-width="3"/>
+    
+    <!-- Central Pillar/Column representing standing tall, pride, and unwavering structure -->
+    <rect x="113" y="75" width="14" height="70" rx="2" fill="#E6A15C"/>
+    <!-- Capital of the pillar -->
+    <path d="M106 75 H134 V82 H106 Z" fill="#F4B879" rx="1"/>
+    <!-- Base of the pillar -->
+    <path d="M106 138 H134 V145 H106 Z" fill="#F4B879" rx="1"/>
+
+    <!-- Upward soaring arrow / flame of dignity and pride -->
+    <path d="M120 90 L132 112 H108 Z" fill="#FFFFFF"/>
+    
+    <!-- Laurel Wreath accents flanking the pillar -->
+    <path d="M92 100 C85 100 80 108 85 115 C90 120 98 115 95 108" fill="none" stroke="#E6A15C" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M148 100 C155 100 160 108 155 115 C150 120 142 115 145 108" fill="none" stroke="#E6A15C" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Ground / Base platform -->
+    <ellipse cx="120" cy="183" rx="45" ry="5" fill="#2E3544"/>
+    <ellipse cx="120" cy="183" rx="25" ry="2.5" fill="#E6A15C" opacity="0.3"/>
+  </g>
+</svg>

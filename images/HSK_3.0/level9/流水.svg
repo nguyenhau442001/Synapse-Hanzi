@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Riverbed/Ground -->
+  <path d="M40 160 C 80 140, 160 140, 200 160 L 200 190 L 40 190 Z" fill="#2D343E"/>
+  
+  <!-- Flowing Water -->
+  <path d="M40 160 C 80 140, 160 140, 200 160 L 200 175 C 160 155, 80 155, 40 175 Z" fill="#4DA6FF" opacity="0.8"/>
+  <path d="M40 170 C 80 150, 160 150, 200 170 L 200 180 C 160 160, 80 160, 40 180 Z" fill="#74B9FF" opacity="0.6"/>
+  
+  <!-- Ripples/Movement lines -->
+  <path d="M60 165 Q 80 155 100 165" stroke="#E0E0E0" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M140 165 Q 160 155 180 165" stroke="#E0E0E0" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Decorative Stone -->
+  <path d="M110 185 C 105 175, 135 175, 130 185 Z" fill="#A0A0A0"/>
+  
+  <!-- Accent highlight -->
+  <path d="M40 160 C 80 140, 160 140, 200 160" stroke="#FFB84D" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="4 8"/>
+</svg>

@@ -1,34 +1,7 @@
-<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#1e293b"/>
-    </linearGradient>
-  </defs>
-  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
-  
-  <!-- Desk Surface -->
-  <rect x="20" y="160" width="200" height="60" rx="8" fill="#334155"/>
-  
-  <!-- Laptop -->
-  <path d="M60 160 L180 160 L170 110 L70 110 Z" fill="#64748b"/>
-  <path d="M75 115 L165 115 L160 155 L80 155 Z" fill="#0f172a"/>
-  <rect x="95" y="125" width="50" height="20" rx="2" fill="#38bdf8" opacity="0.6"/>
-  
-  <!-- Coffee Mug -->
-  <circle cx="190" cy="145" r="15" fill="#fb923c"/>
-  <path d="M205 140 A 5 5 0 0 1 205 155" fill="none" stroke="#fb923c" stroke-width="3"/>
-  
-  <!-- Desk Lamp -->
-  <path d="M40 160 L50 160 L45 100 Z" fill="#475569"/>
-  <circle cx="45" cy="95" r="15" fill="#f59e0b"/>
-  <circle cx="45" cy="95" r="8" fill="#fff" opacity="0.2"/>
-  
-  <!-- Floating Task Elements -->
-  <rect x="200" y="60" width="20" height="20" rx="4" fill="#10b981"/>
-  <rect x="180" y="85" width="20" height="20" rx="4" fill="#ec4899"/>
-  <circle cx="160" cy="70" r="8" fill="#fbbf24"/>
-  
-  <!-- Decorative Lines -->
-  <path d="M20 160 L240 160" stroke="#475569" stroke-width="2" stroke-dasharray="4 4"/>
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+  <rect x="22" y="34" width="56" height="42" rx="4" stroke="#38bdf8" stroke-width="3.8" fill="none"/>
+  <path d="M38 34 V26 C38 22 42 20 46 20 H54 C58 20 62 22 62 26 V34" stroke="#fb923c" stroke-width="3.5" fill="none"/>
+  <line x1="22" y1="52" x2="78" y2="52" stroke="#38bdf8" stroke-width="2.5"/>
+  <rect x="46" y="48" width="8" height="8" rx="2" fill="#34d399"/>
 </svg>

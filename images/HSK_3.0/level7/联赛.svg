@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 115)">
+    <!-- Circular League Pathway / Tournament Bracket Concept (Representing '联赛' - Sports League / Round-robin tournament) -->
+    <!-- Outer glowing track representing the continuous cycle/rounds -->
+    <circle cx="0" cy="0" r="72" fill="none" stroke="#252A34" stroke-width="12" stroke-linecap="round"/>
+    
+    <!-- Segmented glowing league path representing rounds (vòng tròn / giải đấu) -->
+    <path d="M 0 -72 A 72 72 0 0 1 62.35 36" fill="none" stroke="#FF9F43" stroke-width="12" stroke-linecap="round"/>
+    <path d="M 62.35 36 A 72 72 0 0 1 -62.35 36" fill="none" stroke="#2E5BFF" stroke-width="12" stroke-linecap="round"/>
+    <path d="M -62.35 36 A 72 72 0 0 1 0 -72" fill="none" stroke="#00C896" stroke-width="12" stroke-linecap="round"/>
+
+    <!-- Central Trophy / Championship Cup (Representing 'giải vô địch') -->
+    <g transform="translate(0, -5)">
+      <!-- Trophy Base -->
+      <path d="M-16 52 L16 52 L12 40 L-12 40 Z" fill="#4B5563"/>
+      <rect x="-24" y="52" width="48" height="8" rx="3" fill="#6B7280"/>
+      
+      <!-- Trophy Stem -->
+      <rect x="-5" y="28" width="10" height="14" fill="#4B5563"/>
+      
+      <!-- Trophy Cup Body -->
+      <path d="M-22 -14 C-22 18 22 18 22 -14 L18 -26 C18 -30 14 -32 8 -32 L-8 -32 C-14 -32 -18 -30 -18 -26 Z" fill="#F59E0B"/>
+      
+      <!-- Trophy Inner Highlight -->
+      <path d="M-18 -14 C-18 14 18 14 18 -14 L15 -24 C15 -27 11 -28 6 -28 L-6 -28 C-11 -28 -15 -27 -15 -24 Z" fill="#FBBF24"/>
+      
+      <!-- Left Handle -->
+      <path d="M-20 -24 C-32 -24 -32 -4 -20 2" fill="none" stroke="#F59E0B" stroke-width="5" stroke-linecap="round"/>
+      
+      <!-- Right Handle -->
+      <path d="M20 -24 C32 -24 32 -4 20 2" fill="none" stroke="#F59E0B" stroke-width="5" stroke-linecap="round"/>
+      
+      <!-- Star on Trophy -->
+      <polygon points="0,-16 3,-8 11,-8 5,-3 7,5 0,1 -7,5 -5,-3 -11,-8 -3,-8" fill="#FEF3C7"/>
+    </g>
+
+    <!-- Floating Competition / Sports Elements (Basketball & Soccer accents representing team sports) -->
+    <!-- Basketball icon top-left -->
+    <g transform="translate(-64, -45)">
+      <circle cx="0" cy="0" r="16" fill="#F97316"/>
+      <path d="M-16 0 A16 16 0 0 0 16 0" fill="none" stroke="#1A1D24" stroke-width="2.5"/>
+      <path d="M0 -16 A16 16 0 0 0 0 16" fill="none" stroke="#1A1D24" stroke-width="2.5"/>
+      <path d="M-12 -10 C-4 -4 -4 4 -12 10" fill="none" stroke="#1A1D24" stroke-width="2"/>
+      <path d="M12 -10 C4 -4 4 4 12 10" fill="none" stroke="#1A1D24" stroke-width="2"/>
+    </g>
+
+    <!-- Podium / Ranking Node bottom-right -->
+    <g transform="translate(64, -15)">
+      <rect x="-14" y="-10" width="28" height="32" rx="4" fill="#3B82F6"/>
+      <text x="0" y="10" font-family="sans-serif" font-weight="bold" font-size="16" fill="#FFFFFF" text-anchor="middle">1</text>
+    </g>
+  </g>
+</svg>

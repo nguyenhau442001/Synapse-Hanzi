@@ -1,0 +1,72 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient glow behind the demonstration screen -->
+  <rect x="52" y="42" width="136" height="88" rx="8" fill="#252A34" opacity="0.6"/>
+  
+  <!-- Demonstration Screen / Board -->
+  <rect x="60" y="50" width="120" height="76" rx="6" fill="#2E3646"/>
+  <rect x="70" y="62" width="70" height="8" rx="4" fill="#64748B"/>
+  <rect x="70" y="78" width="50" height="6" rx="3" fill="#475569"/>
+  
+  <!-- Presentation Graphic on Screen (Abstract bar chart / model) -->
+  <rect x="145" y="75" width="10" height="35" rx="2" fill="#F59E0B" opacity="0.8"/>
+  <rect x="160" y="65" width="10" height="45" rx="2" fill="#3B82F6" opacity="0.8"/>
+  <path d="M72 105 L100 85 L120 95 L140 70" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Spotlight cone casting down to the observation area -->
+  <path d="M120 16 L60 140 H180 Z" fill="#F59E0B" opacity="0.06"/>
+  <path d="M120 16 L90 140 H150 Z" fill="#F59E0B" opacity="0.08"/>
+
+  <!-- Foreground Divider / Desk Rail -->
+  <path d="M20 190 H220" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Observer 1 (Left - taking notes / intently watching) -->
+  <g transform="translate(45, 130)">
+    <!-- Body -->
+    <path d="M25 60 C25 45 35 40 45 40 C55 40 65 45 65 60 V60 H25 Z" fill="#3B82F6"/>
+    <!-- Head -->
+    <circle cx="45" cy="25" r="14" fill="#FDE047"/>
+    <!-- Hair -->
+    <path d="M31 22 C31 15 37 11 45 11 C53 11 59 15 59 22 C56 19 50 17 45 17 C40 17 34 19 31 22 Z" fill="#1E293B"/>
+    <!-- Notebook / Clipboard -->
+    <rect x="12" y="38" width="22" height="28" rx="2" fill="#E2E8F0"/>
+    <path d="M16 45 H30 M16 52 H26" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+    <!-- Observing Arm/Hand -->
+    <path d="M30 45 L18 42" stroke="#3B82F6" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Observer 2 (Center - focused, upright, representative core teacher) -->
+  <g transform="translate(95, 120)">
+    <!-- Body -->
+    <path d="M25 70 C25 55 35 50 45 50 C55 50 65 55 65 70 V70 H25 Z" fill="#10B981"/>
+    <!-- Head -->
+    <circle cx="45" cy="30" r="15" fill="#FDE047"/>
+    <!-- Hair -->
+    <path d="M30 26 C30 18 37 14 45 14 C53 14 60 18 60 26 C56 22 51 20 45 20 C39 20 34 22 30 26 Z" fill="#334155"/>
+    <!-- Focused Eye / Glasses accent (clean minimal) -->
+    <circle cx="51" cy="29" r="2" fill="#1E293B"/>
+    <circle cx="39" cy="29" r="2" fill="#1E293B"/>
+    <!-- Subtle attentive hand gesture near chin -->
+    <path d="M40 48 L44 42 L48 48" stroke="#10B981" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Observer 3 (Right - leaning slightly forward) -->
+  <g transform="translate(145, 130)">
+    <!-- Body -->
+    <path d="M25 60 C25 45 35 40 45 40 C55 40 65 45 65 60 V60 H25 Z" fill="#F59E0B"/>
+    <!-- Head -->
+    <circle cx="45" cy="25" r="14" fill="#FDE047"/>
+    <!-- Hair -->
+    <path d="M31 22 C31 15 37 11 45 11 C53 11 59 15 59 22 C56 19 50 17 45 17 C40 17 34 19 31 22 Z" fill="#475569"/>
+    <!-- Observing Arm -->
+    <path d="M60 45 L72 45" stroke="#F59E0B" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Focus / Observation Indicator: Precision optical lens brackets framing the central learning scene -->
+  <path d="M28 75 V60 H43" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M212 75 V60 H197" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M28 175 V190 H43" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M212 175 V190 H197" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Press Badge / Microphone Base (Physical object representing news source / official information reception) -->
+    <!-- Microphone Stand / Holder -->
+    <rect x="112" y="145" width="16" height="30" rx="4" fill="#4B5563"/>
+    <rect x="92" y="170" width="56" height="8" rx="4" fill="#6B7280"/>
+    
+    <!-- Microphone Head -->
+    <rect x="96" y="80" width="48" height="65" rx="24" fill="#1F2937" stroke="#38BDF8" stroke-width="4"/>
+    <path d="M 96 100 L 144 100 M 96 115 L 144 115 M 96 130 L 144 130" stroke="#38BDF8" stroke-width="2" opacity="0.6"/>
+
+    <!-- Official Document / Dispatch (Representing "Received Information / Official Dispatch") -->
+    <g transform="translate(40, 65) rotate(-12)">
+      <rect width="60" height="75" rx="6" fill="#F3F4F6"/>
+      <!-- Header line -->
+      <rect x="12" y="12" width="36" height="6" rx="3" fill="#3B82F6"/>
+      <!-- Text lines -->
+      <rect x="12" y="26" width="36" height="4" rx="2" fill="#9CA3AF"/>
+      <rect x="12" y="36" width="28" height="4" rx="2" fill="#9CA3AF"/>
+      <rect x="12" y="46" width="32" height="4" rx="2" fill="#9CA3AF"/>
+      <!-- Official Stamp / Seal (Signifying official release/receipt) -->
+      <circle cx="42" cy="58" r="10" fill="#EF4444" opacity="0.85"/>
+    </g>
+
+    <!-- Glowing Signal Wave / Received Information Indicator (Flashes of insight/knowledge obtained) -->
+    <path d="M 155 70 C 175 80, 175 110, 155 120" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M 167 58 C 195 72, 195 118, 167 132" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.7"/>
+
+    <!-- Sparkle / Flash of "Got it!" realization -->
+    <path d="M 175 40 L 179 48 L 187 52 L 179 56 L 175 64 L 171 56 L 163 52 L 171 48 Z" fill="#F59E0B"/>
+    <path d="M 65 45 L 67 49 L 71 51 L 67 53 L 65 57 L 63 53 L 59 51 L 63 49 Z" fill="#38BDF8" opacity="0.8"/>
+  </g>
+</svg>

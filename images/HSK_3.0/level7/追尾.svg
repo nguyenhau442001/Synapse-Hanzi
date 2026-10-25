@@ -1,0 +1,58 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Atmospheric Fog Layers for Context -->
+  <path d="M20 90 Q 70 80, 120 95 T 220 85" stroke="#3A4454" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <path d="M10 160 Q 90 150, 150 165 T 230 155" stroke="#3A4454" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.3"/>
+
+  <!-- Rear Car (First vehicle) -->
+  <g transform="translate(15, 110)">
+    <!-- Car Body -->
+    <path d="M15 35 L35 15 L75 15 L95 35 L105 50 L15 50 Z" fill="#3B82F6"/>
+    <path d="M10 45 L105 45 L105 65 L10 65 Z" fill="#2563EB"/>
+    <!-- Windows -->
+    <path d="M38 18 L60 18 L73 33 L28 33 Z" fill="#1E293B"/>
+    <!-- Wheels -->
+    <circle cx="32" cy="65" r="11" fill="#0F172A"/>
+    <circle cx="32" cy="65" r="5" fill="#64748B"/>
+    <circle cx="85" cy="65" r="11" fill="#0F172A"/>
+    <circle cx="85" cy="65" r="5" fill="#64748B"/>
+    <!-- Tail Lights -->
+    <rect x="8" y="48" width="4" height="10" rx="2" fill="#EF4444"/>
+    <rect x="98" y="48" width="4" height="10" rx="2" fill="#EF4444"/>
+  </g>
+
+  <!-- Front Car (Struck vehicle, slightly pushed/rotated forward) -->
+  <g transform="translate(108, 102) rotate(-6)">
+    <!-- Car Body -->
+    <path d="M15 35 L35 15 L75 15 L95 35 L105 50 L15 50 Z" fill="#E2E8F0"/>
+    <path d="M10 45 L105 45 L105 65 L10 65 Z" fill="#CBD5E1"/>
+    <!-- Windows -->
+    <path d="M38 18 L60 18 L73 33 L28 33 Z" fill="#1E293B"/>
+    <!-- Wheels -->
+    <circle cx="32" cy="65" r="11" fill="#0F172A"/>
+    <circle cx="32" cy="65" r="5" fill="#64748B"/>
+    <circle cx="85" cy="65" r="11" fill="#0F172A"/>
+    <circle cx="85" cy="65" r="5" fill="#64748B"/>
+    <!-- Headlights -->
+    <rect x="100" y="48" width="4" height="10" rx="2" fill="#FACC15"/>
+    <rect x="4" y="48" width="4" height="10" rx="2" fill="#EF4444"/>
+  </g>
+
+  <!-- Impact / Collision Point Focus (Highlighting the "Zhuiwei" tail-end collision) -->
+  <g transform="translate(112, 138)">
+    <circle cx="0" cy="0" r="22" fill="#F97316" opacity="0.2"/>
+    <circle cx="0" cy="0" r="14" fill="#F97316" opacity="0.4"/>
+    <!-- Collision Spark / Star -->
+    <path d="M0 -12 L3 -3 L12 0 L3 3 L0 12 L-3 3 L-12 0 L-3 -3 Z" fill="#FACC15"/>
+    <path d="M-8 -8 L-2 -2" stroke="#EF4444" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M8 8 L2 2" stroke="#EF4444" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M8 -8 L2 -2" stroke="#EF4444" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Ground Road Surface -->
+  <path d="M0 178 L240 178" stroke="#334155" stroke-width="4"/>
+  <path d="M20 188 L70 188 M110 188 L160 188 M200 188 L230 188" stroke="#94A3B8" stroke-width="2" stroke-dasharray="8 6"/>
+
+</svg>

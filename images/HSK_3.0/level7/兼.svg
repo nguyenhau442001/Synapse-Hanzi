@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Person representing the dual role -->
+  <g transform="translate(120, 120)">
+    <!-- Body -->
+    <path d="M-40 80 C-40 40, -20 20, 0 20 C20 20, 40 40, 40 80" fill="#3D4451"/>
+    <!-- Head -->
+    <circle cx="0" cy="-20" r="25" fill="#E0E0E0"/>
+    
+    <!-- Role 1: Founder (Briefcase/Suit) -->
+    <rect x="-50" y="20" width="30" height="40" rx="5" fill="#FFB347"/>
+    <path d="M-45 20 L-45 10 L-35 10 L-35 20" stroke="#1A1D24" stroke-width="4" fill="none"/>
+    
+    <!-- Role 2: Scientist (Lab Coat/Beaker) -->
+    <rect x="20" y="20" width="30" height="40" rx="5" fill="#81C784"/>
+    <path d="M30 10 L30 20 M25 15 L35 15" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Connecting lines to emphasize '兼' (simultaneous/dual) -->
+    <path d="M-20 40 L20 40" stroke="#FFD700" stroke-width="4" stroke-dasharray="4 4"/>
+    
+    <!-- Central focus icon: Dual-purpose badge -->
+    <circle cx="0" cy="-20" r="8" fill="#FFD700"/>
+    <path d="M-10 -20 L10 -20 M0 -30 L0 -10" stroke="#1A1D24" stroke-width="3"/>
+  </g>
+</svg>

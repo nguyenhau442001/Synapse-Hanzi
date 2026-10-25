@@ -1,0 +1,62 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle Background Runway/Spotlight Elements -->
+  <path d="M70 210 L120 40 L170 210 Z" fill="#222733" opacity="0.6"/>
+  <ellipse cx="120" cy="205" rx="75" ry="12" fill="#2A3040" opacity="0.8"/>
+
+  <!-- Clothing Silhouette / Modern High Fashion Dress on a Sleek Stand -->
+  <g transform="translate(0, 5)">
+    <!-- Spotlight Beam (Backdrop) -->
+    <path d="M90 30 L150 30 L175 205 L65 205 Z" fill="url(#spotlightGrad)" opacity="0.15"/>
+
+    <!-- Fashion Mannequin / Stand -->
+    <circle cx="120" cy="38" r="9" fill="#E2E8F0" opacity="0.9"/>
+    <rect x="118" y="47" width="4" height="20" fill="#E2E8F0" opacity="0.8"/>
+    <rect x="108" y="65" width="24" height="4" rx="2" fill="#E2E8F0" opacity="0.8"/>
+    <rect x="119" y="69" width="2" height="135" fill="#E2E8F0" opacity="0.6"/>
+    <ellipse cx="120" cy="204" rx="22" ry="6" fill="#E2E8F0" opacity="0.7"/>
+
+    <!-- High Fashion Garment (Modern Asymmetrical Dress / Haute Couture) -->
+    <!-- Main Dress Body -->
+    <path d="M102 67 
+             C110 67, 115 69, 120 74 
+             C125 69, 130 67, 138 67 
+             L152 95 
+             C165 110, 158 140, 168 185 
+             L135 190 
+             C130 150, 128 120, 120 100
+             C112 120, 110 150, 105 190 
+             L72 185 
+             C82 140, 75 110, 88 95 Z" 
+          fill="url(#dressGrad)" />
+
+    <!-- Stylish Accents / Golden Haute Couture Details -->
+    <!-- Diagonal Sash / Drapery -->
+    <path d="M120 74 C120 74, 140 110, 155 160 C156 163, 150 166, 146 163 C135 135, 125 100, 120 74 Z" fill="#F59E0B" opacity="0.9"/>
+    <path d="M102 67 L120 74 L138 67 L132 78 L108 78 Z" fill="#FBBF24"/>
+
+    <!-- Modern Cutouts / Layering -->
+    <path d="M112 95 C116 115, 124 115, 128 95 C124 105, 116 105, 112 95 Z" fill="#1A1D24" opacity="0.5"/>
+
+    <!-- Floating Fashion Sparkles/Accents -->
+    <path d="M72 85 L75 92 L82 95 L75 98 L72 105 L69 98 L62 95 L69 92 Z" fill="#F59E0B" opacity="0.8"/>
+    <path d="M168 115 L170 120 L175 122 L170 124 L168 129 L166 124 L161 122 L166 120 Z" fill="#F59E0B" opacity="0.9"/>
+    <circle cx="150" cy="60" r="2.5" fill="#FBBF24" opacity="0.9"/>
+    <circle cx="90" cy="55" r="1.5" fill="#FBBF24" opacity="0.7"/>
+  </g>
+
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="spotlightGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#1A1D24" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="dressGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="50%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+  </defs>
+</svg>

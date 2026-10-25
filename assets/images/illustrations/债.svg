@@ -1,0 +1,54 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(60, 40)">
+    <!-- Scale Base / Stand -->
+    <path d="M60 140 L80 140 L75 110 L65 110 Z" fill="#4A5568"/>
+    <rect x="45" y="140" width="30" height="8" rx="4" fill="#718096"/>
+    <rect x="50" y="40" width="20" height="80" fill="#CBD5E0"/>
+    <circle cx="60" cy="40" r="10" fill="#E2E8F0"/>
+    <circle cx="60" cy="40" r="5" fill="#4A5568"/>
+
+    <!-- Scale Beam -->
+    <path d="M20 55 L100 55 L95 65 L25 65 Z" fill="#E2E8F0"/>
+
+    <!-- Left Pan (Heavy, Down) -->
+    <line x1="25" y1="60" x2="10" y2="105" stroke="#A0AEC0" stroke-width="2"/>
+    <line x1="25" y1="60" x2="40" y2="105" stroke="#A0AEC0" stroke-width="2"/>
+    <path d="M5 105 Q25 120 45 105 Z" fill="#CBD5E0"/>
+    
+    <!-- Coin Stack (Heavy Debt) -->
+    <g transform="translate(18, 85)">
+      <ellipse cx="7" cy="15" rx="10" ry="4" fill="#D69E2E"/>
+      <rect x="-3" y="10" width="20" height="5" fill="#B7791F"/>
+      <ellipse cx="7" cy="10" rx="10" ry="4" fill="#ECC94B"/>
+      
+      <ellipse cx="7" cy="5" rx="10" ry="4" fill="#D69E2E"/>
+      <rect x="-3" y="0" width="20" height="5" fill="#B7791F"/>
+      <ellipse cx="7" cy="0" rx="10" ry="4" fill="#ECC94B"/>
+
+      <ellipse cx="7" cy="-5" rx="10" ry="4" fill="#D69E2E"/>
+      <rect x="-3" y="-10" width="20" height="5" fill="#B7791F"/>
+      <ellipse cx="7" cy="-10" rx="10" ry="4" fill="#ECC94B"/>
+    </g>
+
+    <!-- Right Pan (Light, Up) -->
+    <line x1="95" y1="60" x2="80" y2="75" stroke="#A0AEC0" stroke-width="2"/>
+    <line x1="95" y1="60" x2="110" y2="75" stroke="#A0AEC0" stroke-width="2"/>
+    <path d="M75 75 Q95 90 115 75 Z" fill="#CBD5E0"/>
+    
+    <!-- Single Small Coin (Paid Off / Light) -->
+    <ellipse cx="95" cy="72" rx="7" ry="3" fill="#D69E2E"/>
+    <rect x="88" y="70" width="14" height="3" fill="#B7791F"/>
+    <ellipse cx="95" cy="70" rx="7" ry="3" fill="#ECC94B"/>
+
+    <!-- Document / IOU Paper folded behind scale -->
+    <path d="M75 95 L115 95 L115 135 L75 135 Z" fill="#EDF2F7" rx="2"/>
+    <path d="M105 95 L115 105 L115 95 Z" fill="#CBD5E0"/>
+    <line x1="83" y1="105" x2="105" y2="105" stroke="#A0AEC0" stroke-width="2" stroke-linecap="round"/>
+    <line x1="83" y1="115" x2="107" y2="115" stroke="#A0AEC0" stroke-width="2" stroke-linecap="round"/>
+    <line x1="83" y1="125" x2="97" y2="125" stroke="#A0AEC0" stroke-width="2" stroke-linecap="round"/>
+    <!-- Red Seal / Stamp on IOU -->
+    <circle cx="102" cy="125" r="5" fill="#E53E3E"/>
+  </g>
+</svg>

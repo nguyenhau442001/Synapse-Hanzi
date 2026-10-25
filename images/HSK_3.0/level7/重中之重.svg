@@ -1,0 +1,58 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container & Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle Industrial Factory Floor Grid / Structure hinting at context -->
+  <g opacity="0.3">
+    <line x1="40" y1="180" x2="200" y2="180" stroke="#333947" stroke-width="2" stroke-linecap="round"/>
+    <line x1="70" y1="180" x2="70" y2="130" stroke="#333947" stroke-width="2"/>
+    <line x1="170" y1="180" x2="170" y2="130" stroke="#333947" stroke-width="2"/>
+    <rect x="60" y="120" width="120" height="15" rx="3" fill="#262C38"/>
+  </g>
+
+  <!-- Central Noun Focus: The Ultimate Priority / Core Focus Object -->
+  <!-- Sleek industrial safety gear / shield mechanism combined with a glowing core target to represent "重中之重" (The absolute top priority / core safety focus) -->
+  <g transform="translate(120, 115)">
+    <!-- Outer Focus Rings (Layer 1) -->
+    <circle cx="0" cy="0" r="54" fill="none" stroke="#262C38" stroke-width="3" stroke-dasharray="8 4"/>
+    
+    <!-- Outer Focus Rings (Layer 2 - Highlighting Priority) -->
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#333947" stroke-width="4"/>
+
+    <!-- Main Shield Base (Safety Context) -->
+    <path d="M 0 -36 
+             C 22 -36 32 -26 32 -2 
+             C 32 20 18 34 0 42 
+             C -18 34 -32 20 -32 -2 
+             C -32 -26 -22 -36 0 -36 Z" 
+          fill="#212631" stroke="#FF9F0A" stroke-width="3" stroke-linejoin="round"/>
+
+    <!-- Inner Core - The Absolute Priority Target -->
+    <circle cx="0" cy="3" r="22" fill="#1A1D24"/>
+    
+    <!-- Precision Crosshairs / Focus Elements in Gold/Orange -->
+    <line x1="0" y1="-14" x2="0" y2="20" stroke="#FF9F0A" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-14" y1="3" x2="14" y2="3" stroke="#FF9F0A" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Center Focal Point (The Core of the Core) -->
+    <circle cx="0" cy="3" r="6" fill="#FF9F0A"/>
+
+    <!-- Dynamic Accent Highlights (Top Priority Glow) -->
+    <path d="M -16 -24 C -6 -28 6 -28 16 -24" fill="none" stroke="#FFB340" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Supporting Visual Context: Minimalist factory/industrial safety check indicator below -->
+  <g transform="translate(120, 195)">
+    <!-- Base pill badge -->
+    <rect x="-65" y="-12" width="130" height="24" rx="12" fill="#262C38" stroke="#333947" stroke-width="1.5"/>
+    
+    <!-- Safety Shield Mini Icon -->
+    <path d="M -43 -4 L -39 2 L -35 -4 Z" fill="#FF9F0A"/>
+    <circle cx="-39" cy="-1" r="5" fill="none" stroke="#FF9F0A" stroke-width="1.5"/>
+
+    <!-- Triple Priority Indicator Dots (Representing Layers of Importance, highlighting the central one) -->
+    <circle cx="-10" cy="0" r="3" fill="#333947"/>
+    <circle cx="0" cy="0" r="4.5" fill="#FF9F0A"/>
+    <circle cx="10" cy="0" r="3" fill="#333947"/>
+  </g>
+</svg>

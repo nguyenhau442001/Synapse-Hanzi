@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 120)">
+    <!-- Background subtle glow -->
+    <circle cx="0" cy="10" r="70" fill="#2D3340" opacity="0.6"/>
+
+    <!-- Elderly Parent Figure (Left) -->
+    <g transform="translate(-45, 10)">
+      <!-- Body / Shawl -->
+      <path d="M-25,50 C-25,25 -10,15 0,15 C10,15 25,25 25,50 Z" fill="#4B5563"/>
+      <!-- Inner collar -->
+      <path d="M-8,15 L0,25 L8,15 Z" fill="#6B7280"/>
+      <!-- Head -->
+      <circle cx="0" cy="-5" r="14" fill="#E5E7EB"/>
+      <!-- Hair/Bun -->
+      <path d="M-12,-8 C-12,-16 12,-16 12,-8 C12,-4 8,-2 0,-2 C-8,-2 -12,-4 -12,-8 Z" fill="#9CA3AF"/>
+      <!-- Gentle smiling eye and wrinkle lines -->
+      <path d="M-4,-6 C-3,-7 -1,-7 0,-6" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- Adult Child Figure (Right) -->
+    <g transform="translate(45, 10)">
+      <!-- Body / Jacket -->
+      <path d="M-28,50 C-28,22 -12,14 0,14 C12,14 28,22 28,50 Z" fill="#1E3A8A"/>
+      <!-- Inner shirt -->
+      <path d="M-10,14 L0,26 L10,14 Z" fill="#3B82F6"/>
+      <!-- Head -->
+      <circle cx="0" cy="-6" r="15" fill="#E5E7EB"/>
+      <!-- Hair -->
+      <path d="M-13,-10 C-12,-18 12,-18 13,-10 C10,-14 -10,-14 -13,-10 Z" fill="#111827"/>
+      <!-- Respectful/Warm facial expression -->
+      <path d="M-3,-7 C-2,-8 0,-8 1,-7" stroke="#374151" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- Interlocking Warm Hands / Support Gesture at Center -->
+    <g transform="translate(0, 22)">
+      <!-- Supporting hands -->
+      <path d="M-35,15 C-25,5 -10,5 0,12 C10,5 25,5 35,15 C25,25 -25,25 -35,15 Z" fill="#F59E0B"/>
+      <!-- Golden bond representing natural duty / rightness -->
+      <circle cx="0" cy="12" r="8" fill="#FBBF24"/>
+    </g>
+
+    <!-- Floating subtle gold laurel / rightness element above -->
+    <g transform="translate(0, -55)">
+      <path d="M-20,0 C-10,-10 0,-15 0,-15 C0,-15 10,-10 20,0 C10,-5 0,-8 -20,0 Z" fill="#F59E0B" opacity="0.9"/>
+      <circle cx="0" cy="-18" r="3" fill="#FBBF24"/>
+    </g>
+  </g>
+</svg>

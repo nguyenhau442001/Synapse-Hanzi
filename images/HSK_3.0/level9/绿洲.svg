@@ -1,0 +1,59 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Background Desert Dunes (Yellow/Orange Ochre) -->
+    <path d="M 0 160 Q 60 140 120 165 T 240 155 L 240 240 L 0 240 Z" fill="#2D2522" opacity="0.8"/>
+    <path d="M 0 180 Q 90 165 160 190 T 240 185 L 240 240 L 0 240 Z" fill="#D9822B" opacity="0.3"/>
+    
+    <!-- Distant Dunes -->
+    <path d="M 0 130 Q 80 110 170 140 T 240 135 L 240 160 L 0 160 Z" fill="#B35F27" opacity="0.4"/>
+    
+    <!-- Central Oasis Depression / Water Body -->
+    <ellipse cx="120" cy="165" rx="55" ry="22" fill="#2E4A62"/>
+    <ellipse cx="120" cy="167" rx="45" ry="16" fill="#4AA0B5"/>
+    <ellipse cx="120" cy="169" rx="35" ry="10" fill="#6CC4DC"/>
+    
+    <!-- Lush Vegetation / Grass around water -->
+    <path d="M 75 165 C 75 155 85 155 90 165 Z" fill="#4CAF50"/>
+    <path d="M 85 170 C 85 158 98 158 102 170 Z" fill="#81C784"/>
+    <path d="M 150 165 C 150 155 160 155 165 165 Z" fill="#4CAF50"/>
+    <path d="M 140 172 C 140 160 152 160 156 172 Z" fill="#81C784"/>
+    <path d="M 100 177 C 100 165 110 165 115 177 Z" fill="#2E7D32"/>
+    <path d="M 130 175 C 130 163 140 163 145 175 Z" fill="#2E7D32"/>
+
+    <!-- Palm Tree Left -->
+    <path d="M 95 165 Q 92 130 75 100" stroke="#8D6E63" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M 75 100 Q 60 90 50 105 Q 65 105 75 100 Z" fill="#2E7D32"/>
+    <path d="M 75 100 Q 60 105 55 125 Q 70 115 75 100 Z" fill="#4CAF50"/>
+    <path d="M 75 100 Q 80 80 95 85 Q 85 95 75 100 Z" fill="#81C784"/>
+    <path d="M 75 100 Q 95 95 100 110 Q 85 110 75 100 Z" fill="#2E7D32"/>
+
+    <!-- Palm Tree Right -->
+    <path d="M 145 160 Q 150 125 165 90" stroke="#8D6E63" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M 165 90 Q 185 85 195 100 Q 180 105 165 90 Z" fill="#4CAF50"/>
+    <path d="M 165 90 Q 180 100 185 120 Q 170 110 165 90 Z" fill="#2E7D32"/>
+    <path d="M 165 90 Q 160 70 145 75 Q 155 85 165 90 Z" fill="#81C784"/>
+    <path d="M 165 90 Q 145 85 140 100 Q 155 105 165 90 Z" fill="#2E7D32"/>
+
+    <!-- Center Palm Tree (Tallest) -->
+    <path d="M 120 167 Q 120 115 120 70" stroke="#795548" stroke-width="7" stroke-linecap="round" fill="none"/>
+    <!-- Fronds Center -->
+    <path d="M 120 70 Q 120 40 100 50 Q 110 65 120 70 Z" fill="#4CAF50"/>
+    <path d="M 120 70 Q 120 40 140 50 Q 130 65 120 70 Z" fill="#81C784"/>
+    <path d="M 120 70 Q 90 55 80 75 Q 105 75 120 70 Z" fill="#2E7D32"/>
+    <path d="M 120 70 Q 150 55 160 75 Q 135 75 120 70 Z" fill="#4CAF50"/>
+    <path d="M 120 70 Q 100 85 95 100 Q 115 90 120 70 Z" fill="#81C784"/>
+    <path d="M 120 70 Q 140 85 145 100 Q 125 90 120 70 Z" fill="#2E7D32"/>
+    
+    <!-- Coconuts -->
+    <circle cx="114" cy="74" r="3" fill="#5D4037"/>
+    <circle cx="126" cy="74" r="3" fill="#5D4037"/>
+    <circle cx="120" cy="78" r="3.5" fill="#5D4037"/>
+
+    <!-- Ambient Sun/Light Ray -->
+    <circle cx="120" cy="45" r="14" fill="#F39C12" opacity="0.15"/>
+    <circle cx="120" cy="45" r="8" fill="#F1C40F" opacity="0.3"/>
+  </g>
+</svg>

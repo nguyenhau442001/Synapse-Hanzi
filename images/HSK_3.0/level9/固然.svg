@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle background glow for dark mode -->
+  <circle cx="120" cy="120" r="90" fill="#252A34" opacity="0.5"/>
+
+  <!-- Ground Line / Anchor -->
+  <path d="M 60 185 L 180 185" stroke="#3A4150" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Conceptual Physical Object: A Classic Mechanical Scale (representing undeniable balance, admission, "cố nhiên/dẫu rằng") -->
+  <g transform="translate(0, -5)">
+    <!-- Base -->
+    <path d="M 100 185 L 140 185 L 130 165 L 110 165 Z" fill="#4E5D6C"/>
+    <ellipse cx="120" cy="165" rx="15" ry="4" fill="#657786"/>
+
+    <!-- Central Pillar -->
+    <rect x="117" y="85" width="6" height="80" rx="3" fill="#AAB8C2"/>
+    <circle cx="120" cy="85" r="7" fill="#FFB800"/>
+
+    <!-- Beam Pivot -->
+    <path d="M 75 92 L 165 92 L 160 86 L 80 86 Z" fill="#E1E8ED"/>
+
+    <!-- Left Pan Chain & Pan -->
+    <path d="M 80 90 L 60 135" stroke="#AAB8C2" stroke-width="2"/>
+    <path d="M 80 90 L 85 135" stroke="#AAB8C2" stroke-width="2"/>
+    <path d="M 50 135 Q 72 148 95 135 Z" fill="#4E5D6C"/>
+    <ellipse cx="72.5" cy="135" rx="22.5" ry="5" fill="#657786"/>
+
+    <!-- Right Pan Chain & Pan -->
+    <path d="M 160 90 L 145 135" stroke="#AAB8C2" stroke-width="2"/>
+    <path d="M 160 90 L 180 135" stroke="#AAB8C2" stroke-width="2"/>
+    <path d="M 135 135 Q 157 148 180 135 Z" fill="#4E5D6C"/>
+    <ellipse cx="157.5" cy="135" rx="22.5" ry="5" fill="#657786"/>
+
+    <!-- Left Weight Object (Solid Material Wealth - Gold/Orange Cube) -->
+    <g transform="translate(56, 110)">
+      <rect x="5" y="5" width="22" height="22" rx="3" fill="#F5A623"/>
+      <path d="M 5 5 L 13 -2 L 35 -2 L 27 5 Z" fill="#F8E71C"/>
+      <path d="M 27 5 L 35 -2 L 35 20 L 27 27 Z" fill="#D78512"/>
+    </g>
+
+    <!-- Right Weight Object (Inner Calm/Spirit - Soft Teal Sphere) -->
+    <g transform="translate(140, 115)">
+      <circle cx="17.5" cy="12" r="14" fill="#00D2D3"/>
+      <circle cx="13" cy="8" r="4" fill="#48DBFB" opacity="0.7"/>
+    </g>
+  </g>
+
+  <!-- Accent indicator dots for modern UI context -->
+  <circle cx="120" cy="50" r="3" fill="#FFB800"/>
+</svg>

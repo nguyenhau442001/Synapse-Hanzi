@@ -1,0 +1,30 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background City Silhouette -->
+  <path d="M40 200h160v-60h-30v-40h-40v-30h-50v130z" fill="#2C313C"/>
+  <path d="M70 180h20v-50h-20zM110 160h30v-70h-30zM160 190h20v-80h-20z" fill="#3D4454"/>
+  
+  <!-- Character: Migrant Worker -->
+  <!-- Body -->
+  <path d="M100 160h40v60h-40z" fill="#F59E0B"/>
+  <path d="M105 165h30v55h-30z" fill="#D97706"/>
+  
+  <!-- Head -->
+  <circle cx="120" cy="135" r="20" fill="#FDE68A"/>
+  
+  <!-- Hard Hat -->
+  <path d="M100 125h40a15 15 0 0 0-40 0z" fill="#F59E0B"/>
+  
+  <!-- Arms -->
+  <path d="M90 170l-15 20M150 170l15 20" stroke="#F59E0B" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Tool (Wrench) -->
+  <path d="M75 190l-10 10m0 0l5 5m-5-5l-5 5" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Legs -->
+  <path d="M105 220v20M135 220v20" stroke="#F59E0B" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Ground -->
+  <path d="M0 240h240" stroke="#4B5563" stroke-width="2"/>
+</svg>

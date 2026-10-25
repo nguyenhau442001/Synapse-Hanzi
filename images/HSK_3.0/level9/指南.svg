@@ -1,0 +1,66 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 115)">
+    <!-- Travel Guidebook (Open Book / Manual) -->
+    <g transform="translate(0, 15)">
+      <!-- Left Page Shadow/Backing -->
+      <path d="M-65 -45 C-45 -55 -15 -50 0 -40 L0 55 C-15 45 -45 40 -65 50 Z" fill="#2E3440" />
+      <!-- Right Page Shadow/Backing -->
+      <path d="M65 -45 C45 -55 15 -50 0 -40 L0 55 C15 45 45 40 65 50 Z" fill="#2E3440" />
+      
+      <!-- Left Cover / Pages -->
+      <path d="M-68 -42 C-46 -52 -16 -47 0 -38 L0 52 C-16 43 -46 38 -68 48 Z" fill="#3B4252" />
+      <!-- Right Cover / Pages -->
+      <path d="M68 -42 C46 -52 16 -47 0 -38 L0 52 C16 43 46 38 68 48 Z" fill="#4C566A" />
+
+      <!-- Inner Pages White/Light -->
+      <path d="M-62 -40 C-42 -49 -14 -44 0 -35 L0 48 C-14 39 -42 34 -62 43 Z" fill="#ECEFF4" />
+      <path d="M62 -40 C42 -49 14 -44 0 -35 L0 48 C14 39 42 34 62 43 Z" fill="#D8DEE9" />
+
+      <!-- Content on Left Page (Map illustration hints) -->
+      <path d="M-45 -25 L-25 -30 L-15 -15 L-35 -10 Z" fill="#E59866" opacity="0.6"/>
+      <path d="M-50 0 L-20 5 L-30 25 L-50 20 Z" fill="#A3BE8C" opacity="0.6"/>
+      <circle cx="-35" cy="-5" r="4" fill="#BF616A"/>
+      <path d="M-45 -20 L-20 -15" stroke="#4C566A" stroke-width="2" stroke-dasharray="3,2" fill="none"/>
+
+      <!-- Content on Right Page (Text lines and landmark icon) -->
+      <line x1="15" y1="-25" x2="45" y2="-25" stroke="#4C566A" stroke-width="3" stroke-linecap="round"/>
+      <line x1="15" y1="-15" x2="50" y2="-15" stroke="#4C566A" stroke-width="3" stroke-linecap="round"/>
+      <line x1="15" y1="-5" x2="35" y2="-5" stroke="#4C566A" stroke-width="3" stroke-linecap="round"/>
+      <!-- Tiny Mountain Landmark Icon on right page -->
+      <path d="M25 25 L38 5 L50 25 Z" fill="#EBCB8B"/>
+      <path d="M38 5 L43 15 L33 15 Z" fill="#ECEFF4"/>
+    </g>
+
+    <!-- Golden Compass (Kim chỉ nam) overlaying the guidebook -->
+    <g transform="translate(0, -10)">
+      <!-- Outer Ring Shadow -->
+      <circle cx="0" cy="0" r="44" fill="#1A1D24" opacity="0.3"/>
+      <!-- Outer Gold Rim -->
+      <circle cx="0" cy="0" r="40" fill="#EBCB8B" />
+      <!-- Inner Dark Face -->
+      <circle cx="0" cy="0" r="34" fill="#2E3440" />
+      
+      <!-- Compass Tick Marks -->
+      <line x1="0" y1="-34" x2="0" y2="-28" stroke="#EBCB8B" stroke-width="2" stroke-linecap="round"/>
+      <line x1="0" y1="34" x2="0" y2="28" stroke="#EBCB8B" stroke-width="2" stroke-linecap="round"/>
+      <line x1="-34" y1="0" x2="-28" y2="0" stroke="#EBCB8B" stroke-width="2" stroke-linecap="round"/>
+      <line x1="34" y1="0" x2="28" y2="0" stroke="#EBCB8B" stroke-width="2" stroke-linecap="round"/>
+
+      <!-- Compass Needle (Pointing North-West/Up-Left towards orientation) -->
+      <!-- North half (Red/Orange Accent) -->
+      <polygon points="0,0 -7,-26 0,-30" fill="#D08770" />
+      <polygon points="0,0 7,-26 0,-30" fill="#BF616A" />
+      
+      <!-- South half (Slate/Light) -->
+      <polygon points="0,0 -7,26 0,30" fill="#D8DEE9" />
+      <polygon points="0,0 7,26 0,30" fill="#ECEFF4" />
+
+      <!-- Center Pin -->
+      <circle cx="0" cy="0" r="5" fill="#EBCB8B"/>
+      <circle cx="0" cy="0" r="2" fill="#2E3440"/>
+    </g>
+  </g>
+</svg>

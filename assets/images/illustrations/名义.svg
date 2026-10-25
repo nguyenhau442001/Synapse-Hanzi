@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Document representing the agreement -->
+  <rect x="70" y="80" width="100" height="120" rx="4" fill="#E0E0E0"/>
+  <line x1="85" y1="100" x2="155" y2="100" stroke="#BDBDBD" stroke-width="4" stroke-linecap="round"/>
+  <line x1="85" y1="120" x2="155" y2="120" stroke="#BDBDBD" stroke-width="4" stroke-linecap="round"/>
+  <line x1="85" y1="140" x2="120" y2="140" stroke="#BDBDBD" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- The "Name/Identity" badge representing the "Name" (名义) -->
+  <rect x="95" y="155" width="50" height="30" rx="4" fill="#FFB300"/>
+  <circle cx="120" cy="170" r="8" fill="#1A1D24"/>
+  
+  <!-- Hand holding a pen signing the document -->
+  <path d="M130 190 L150 160 L165 170 L145 200 Z" fill="#FFCC80"/>
+  <path d="M145 195 L175 145" stroke="#455A64" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Company seal/stamp icon to signify official capacity -->
+  <circle cx="140" cy="180" r="15" fill="none" stroke="#FFB300" stroke-width="3" stroke-dasharray="4 4"/>
+  <path d="M132 180 L138 186 L148 174" stroke="#FFB300" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

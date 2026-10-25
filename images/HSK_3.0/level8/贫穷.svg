@@ -1,0 +1,31 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground line -->
+  <path d="M40 180 L200 180" stroke="#4A5568" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Left side: The state of poverty (Describing the quality) -->
+  <!-- A small, withered, sparse plant in a cracked pot -->
+  <g transform="translate(70, 140)">
+    <path d="M-15 40 L15 40 L10 10 L-10 10 Z" fill="#718096"/>
+    <path d="M-5 10 L-10 -5 M0 10 L0 -15 M5 10 L10 -5" stroke="#A0AEC0" stroke-width="2" stroke-linecap="round"/>
+    <path d="M-10 20 L10 20" stroke="#1A1D24" stroke-width="2"/>
+  </g>
+  
+  <!-- Right side: The state of prosperity/development (Contrast) -->
+  <!-- A large, lush, vibrant plant in a solid pot -->
+  <g transform="translate(170, 140)">
+    <path d="M-20 40 L20 40 L15 10 L-15 10 Z" fill="#D69E2E"/>
+    <path d="M0 10 L0 -40" stroke="#F6E05E" stroke-width="4" stroke-linecap="round"/>
+    <path d="M0 -35 C 15 -35 15 -15 0 -15 C -15 -15 -15 -35 0 -35" fill="#F6E05E"/>
+    <path d="M0 -25 C 10 -25 10 -10 0 -10 C -10 -10 -10 -25 0 -25" fill="#ECC94B"/>
+  </g>
+  
+  <!-- Visual Scale Exaggeration: Arrow indicating transition/growth -->
+  <path d="M90 120 Q 130 90 170 120" fill="none" stroke="#4A5568" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4A5568"/>
+    </marker>
+  </defs>
+</svg>

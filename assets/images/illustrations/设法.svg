@@ -1,0 +1,33 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Network/Server Rack Structure -->
+  <rect x="70" y="80" width="100" height="110" rx="4" fill="#2D343E"/>
+  <rect x="80" y="90" width="80" height="10" rx="2" fill="#4A5568"/>
+  <rect x="80" y="105" width="80" height="10" rx="2" fill="#4A5568"/>
+  <rect x="80" y="120" width="80" height="10" rx="2" fill="#E53E3E"/>
+  
+  <!-- Character -->
+  <g transform="translate(120, 140)">
+    <!-- Body -->
+    <path d="M-20 60 L20 60 L15 20 L-15 20 Z" fill="#718096"/>
+    <!-- Head -->
+    <circle cx="0" cy="0" r="15" fill="#A0AEC0"/>
+    <!-- Arm reaching to cables -->
+    <path d="M15 25 L45 10" stroke="#718096" stroke-width="8" stroke-linecap="round"/>
+    <!-- Hand interacting with cables -->
+    <circle cx="48" cy="8" r="6" fill="#F6AD55"/>
+  </g>
+  
+  <!-- Cables/Wires -->
+  <path d="M160 125 C180 125 180 150 160 150" stroke="#F6AD55" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M160 135 C190 135 190 160 160 160" stroke="#F6AD55" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Motion Lines for "Thinking/Action" -->
+  <path d="M100 60 L110 50" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+  <path d="M105 55 L115 45" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Focus Tool -->
+  <path d="M40 160 L60 160 L55 180 L45 180 Z" fill="#F6AD55"/>
+  <rect x="45" y="150" width="10" height="10" fill="#F6AD55"/>
+</svg>

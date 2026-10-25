@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Pill Bottle -->
+  <g transform="translate(85, 60)">
+    <!-- Bottle Body -->
+    <rect x="10" y="20" width="50" height="90" rx="4" fill="#E0E0E0"/>
+    <!-- Cap -->
+    <rect x="5" y="10" width="60" height="15" rx="3" fill="#FF9800"/>
+    <!-- Label Area -->
+    <rect x="15" y="40" width="40" height="30" fill="#2C3E50"/>
+    <!-- Expiration Cross-out lines -->
+    <line x1="20" y1="45" x2="50" y2="65" stroke="#FF5252" stroke-width="3" stroke-linecap="round"/>
+    <line x1="50" y1="45" x2="20" y2="65" stroke="#FF5252" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Cracked/Faded Pill representation -->
+  <g transform="translate(100, 150)">
+    <ellipse cx="20" cy="20" rx="20" ry="10" fill="#B0BEC5"/>
+    <path d="M5 20 Q 20 10 35 20" stroke="#1A1D24" stroke-width="2" fill="none"/>
+    <circle cx="10" cy="20" r="3" fill="#1A1D24"/>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background grid/glow elements for depth -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.5"/>
+  <path d="M120 40 L120 200" stroke="#2F3644" stroke-width="1" stroke-dasharray="4 4"/>
+  
+  <!-- Central Character representing "Yàoqiáng" (Ambitious, unyielding, resilient woman standing tall against adversity) -->
+  <!-- Ground/Platform -->
+  <path d="M70 190 L170 190" stroke="#E67E22" stroke-width="3" stroke-linecap="round"/>
+  <path d="M85 196 L155 196" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Body & Posture: Upright, determined stance -->
+  <!-- Cape / Flowing wind effect representing adversity ( nghịch cảnh ) -->
+  <path d="M100 130 C80 140 70 160 65 180 C90 175 110 160 115 140 Z" fill="#2C3E50" opacity="0.8"/>
+  <path d="M140 130 C160 140 170 160 175 180 C150 175 130 160 125 140 Z" fill="#34495E" opacity="0.6"/>
+
+  <!-- Torso & Shoulders (Square, strong) -->
+  <path d="M95 115 L145 115 L150 160 L90 160 Z" fill="#2980B9"/>
+  
+  <!-- Head & Hair -->
+  <circle cx="120" cy="85" r="18" fill="#FAD7A0"/>
+  <!-- Determined facial expression hint (eyebrow angle) -->
+  <path d="M112 82 L118 84" stroke="#2C3E50" stroke-width="2" stroke-linecap="round"/>
+  <path d="M128 82 L122 84" stroke="#2C3E50" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Hair blowing in wind -->
+  <path d="M105 75 C100 70 90 75 95 85 C90 80 85 90 95 95 Z" fill="#2C3E50"/>
+  
+  <!-- Raised fist / Unyielding arm gesture -->
+  <path d="M145 115 L165 85 L173 93 L153 125 Z" fill="#FAD7A0"/>
+  <circle cx="169" cy="89" r="6" fill="#FAD7A0"/>
+
+  <!-- Other arm on hip -->
+  <path d="M95 120 L80 140 L95 155" fill="none" stroke="#2980B9" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Golden Accent: Aura of inner strength and ambition (rising upward) -->
+  <path d="M100 55 L120 35 L140 55" fill="none" stroke="#F1C40F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M120 42 L120 25" fill="none" stroke="#F1C40F" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="120" cy="20" r="3" fill="#F1C40F"/>
+  
+  <path d="M85 70 L70 55" stroke="#E67E22" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <path d="M155 70 L170 55" stroke="#E67E22" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+</svg>

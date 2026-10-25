@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Arm representation -->
+  <path d="M60 140 C 60 120, 180 120, 180 140 L 180 160 C 180 180, 60 180, 60 160 Z" fill="#3D4451"/>
+  
+  <!-- Skin tone layer -->
+  <path d="M65 142 C 65 125, 175 125, 175 142 L 175 158 C 175 175, 65 175, 65 158 Z" fill="#FFCBA4"/>
+  
+  <!-- The healed wound (a subtle, clean scar line) -->
+  <path d="M100 150 Q 120 145, 140 150" stroke="#E6A875" stroke-width="2" stroke-linecap="round" fill="none"/>
+  
+  <!-- Stitch marks (faint, indicating healing) -->
+  <line x1="110" y1="147" x2="110" y2="153" stroke="#D19060" stroke-width="1" stroke-linecap="round"/>
+  <line x1="120" y1="146" x2="120" y2="154" stroke="#D19060" stroke-width="1" stroke-linecap="round"/>
+  <line x1="130" y1="147" x2="130" y2="153" stroke="#D19060" stroke-width="1" stroke-linecap="round"/>
+  
+  <!-- Highlight accent on the healed area -->
+  <circle cx="120" cy="150" r="25" fill="none" stroke="#FFB84D" stroke-width="2" stroke-dasharray="4 4" opacity="0.6"/>
+</svg>

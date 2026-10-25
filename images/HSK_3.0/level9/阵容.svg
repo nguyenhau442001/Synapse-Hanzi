@@ -1,0 +1,41 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Stage Floor -->
+  <path d="M40 180 L200 180 L220 200 L20 200 Z" fill="#2D343E"/>
+  
+  <!-- Spotlight Beams -->
+  <path d="M80 200 L110 60 L140 200 Z" fill="#3D4450" opacity="0.6"/>
+  <path d="M100 200 L130 60 L160 200 Z" fill="#3D4450" opacity="0.6"/>
+  
+  <!-- Characters (The "Lineup") -->
+  <!-- Character 1 -->
+  <g transform="translate(60, 120)">
+    <circle cx="20" cy="20" r="12" fill="#FFB84D"/>
+    <path d="M8 40 L32 40 L30 80 L10 80 Z" fill="#FFB84D"/>
+  </g>
+  
+  <!-- Character 2 (Center/Tall) -->
+  <g transform="translate(100, 100)">
+    <circle cx="20" cy="20" r="14" fill="#FFD700"/>
+    <path d="M6 45 L34 45 L32 100 L8 100 Z" fill="#FFD700"/>
+  </g>
+  
+  <!-- Character 3 -->
+  <g transform="translate(140, 120)">
+    <circle cx="20" cy="20" r="12" fill="#FFB84D"/>
+    <path d="M8 40 L32 40 L30 80 L10 80 Z" fill="#FFB84D"/>
+  </g>
+  
+  <!-- Character 4 (Side) -->
+  <g transform="translate(30, 135)">
+    <circle cx="15" cy="15" r="10" fill="#E69138"/>
+    <path d="M5 30 L25 30 L24 70 L6 70 Z" fill="#E69138"/>
+  </g>
+  
+  <!-- Character 5 (Side) -->
+  <g transform="translate(175, 135)">
+    <circle cx="15" cy="15" r="10" fill="#E69138"/>
+    <path d="M5 30 L25 30 L24 70 L6 70 Z" fill="#E69138"/>
+  </g>
+</svg>

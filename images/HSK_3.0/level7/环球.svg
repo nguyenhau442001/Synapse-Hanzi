@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 115)">
+    <!-- Globe/Sphere Body representing "Huánqiú" (Global/Earth) -->
+    <circle cx="0" cy="0" r="75" fill="#2563EB" opacity="0.15"/>
+    <circle cx="0" cy="0" r="75" fill="none" stroke="#38BDF8" stroke-width="2" stroke-dasharray="4 4" opacity="0.4"/>
+    
+    <circle cx="0" cy="0" r="64" fill="#1E293B"/>
+    <circle cx="0" cy="0" r="64" fill="url(#globeGrad)" opacity="0.8"/>
+    
+    <!-- Continents Silhouette stylized -->
+    <path d="M-35 -20 C-20 -40 10 -45 30 -30 C45 -15 50 15 35 30 C20 45 -10 40 -30 25 C-45 10 -50 0 -35 -20 Z" fill="#334155" opacity="0.6"/>
+    <path d="M-20 -10 C-10 -25 15 -25 25 -10 C35 5 20 25 0 20 C-15 15 -25 5 -20 -10 Z" fill="#475569" opacity="0.4"/>
+
+    <!-- Orbital Ring / Sailing Route representing "Round the World Voyage" -->
+    <ellipse cx="0" cy="0" rx="84" ry="32" fill="none" stroke="#F59E0B" stroke-width="2.5" transform="rotate(-25)" stroke-dasharray="320" stroke-dashoffset="60"/>
+    <ellipse cx="0" cy="0" rx="84" ry="32" fill="none" stroke="#38BDF8" stroke-width="1.5" transform="rotate(-25)" opacity="0.4"/>
+
+    <!-- Sailing Boat on the route (symbolizing single-handed sailing expedition) -->
+    <g transform="rotate(-25) translate(84, 0) rotate(25)">
+      <!-- Wake / Splash -->
+      <path d="M-8 4 L-16 8 M-4 4 L-10 10" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+      
+      <!-- Hull -->
+      <path d="M-8 2 L8 2 C9 2 10 4 8 6 L-8 6 C-10 4 -9 2 -8 2 Z" fill="#F8FAFC"/>
+      
+      <!-- Mast -->
+      <line x1="0" y1="2" x2="0" y2="-12" stroke="#94A3B8" stroke-width="1.5"/>
+      
+      <!-- Sail -->
+      <path d="M0 -12 C6 -8 6 -2 0 2 Z" fill="#F59E0B"/>
+    </g>
+
+    <!-- Meridian & Equator Grid Lines -->
+    <ellipse cx="0" cy="0" rx="64" ry="64" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.2"/>
+    <path d="M-64 0 H64" stroke="#38BDF8" stroke-width="1" opacity="0.2"/>
+    <path d="M0 -64 V64" stroke="#38BDF8" stroke-width="1" opacity="0.2"/>
+    
+    <!-- Accent Sparkle for Educational Focus -->
+    <path d="M55 -45 L58 -52 L65 -55 L58 -58 L55 -65 L52 -58 L45 -55 L52 -52 Z" fill="#F59E0B"/>
+  </g>
+
+  <!-- Gradient Definitions -->
+  <defs>
+    <radialGradient id="globeGrad" cx="35%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9"/>
+    </radialGradient>
+  </defs>
+</svg>

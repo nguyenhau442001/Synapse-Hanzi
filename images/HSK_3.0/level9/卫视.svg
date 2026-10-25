@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Glow & Grid Elements (Modern Dark Mode Interface Vibe) -->
+  <circle cx="120" cy="120" r="85" fill="#222733" opacity="0.6"/>
+  <circle cx="120" cy="120" r="60" fill="#2A3142" opacity="0.4"/>
+  
+  <!-- Orbit Rings for Satellite (Television Satellite Theme) -->
+  <ellipse cx="120" cy="120" rx="85" ry="32" fill="none" stroke="#3A445C" stroke-width="1.5" stroke-dasharray="4 4" transform="rotate(-30 120 120)"/>
+  <ellipse cx="120" cy="120" rx="70" ry="25" fill="none" stroke="#FF9F43" stroke-width="1.5" opacity="0.6" transform="rotate(45 120 120)"/>
+
+  <!-- Satellite Dish Base / Globe Representation -->
+  <circle cx="120" cy="120" r="36" fill="#2F3648"/>
+  <path d="M 95 125 Q 120 105 145 125" fill="none" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 102 135 Q 120 120 138 135" fill="none" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Satellite Object (Physical Object representing 卫视 - Satellite TV) -->
+  <!-- Main Body -->
+  <rect x="108" y="98" width="24" height="20" rx="4" fill="#6EE7B7" transform="rotate(15 120 108)"/>
+  
+  <!-- Solar Panels -->
+  <rect x="75" y="85" width="26" height="14" rx="2" fill="#3B82F6" transform="rotate(15 88 92)"/>
+  <rect x="139" y="115" width="26" height="14" rx="2" fill="#3B82F6" transform="rotate(15 152 122)"/>
+  <!-- Panel Grid Lines -->
+  <line x1="88" y1="85" x2="88" y2="99" stroke="#1D4ED8" stroke-width="1" transform="rotate(15 88 92)"/>
+  <line x1="152" y1="115" x2="152" y2="129" stroke="#1D4ED8" stroke-width="1" transform="rotate(15 152 122)"/>
+
+  <!-- Connecting Arms -->
+  <line x1="101" y1="96" x2="108" y2="102" stroke="#9CA3AF" stroke-width="2"/>
+  <line x1="139" y1="116" x2="146" y2="122" stroke="#9CA3AF" stroke-width="2"/>
+
+  <!-- Satellite Dish / Reflector -->
+  <path d="M 125 102 C 145 92 155 105 145 120 C 135 135 120 130 125 102 Z" fill="#F3F4F6"/>
+  <!-- Feed Horn -->
+  <circle cx="137" cy="110" r="3" fill="#EF4444"/>
+  <line x1="132" y1="113" x2="137" y2="110" stroke="#4B5563" stroke-width="2"/>
+
+  <!-- Signal Waves (Broadcasting / Transmission) -->
+  <path d="M 148 102 C 158 107 158 115 148 122" fill="none" stroke="#FF9F43" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 154 97 C 168 104 168 118 154 127" fill="none" stroke="#FF9F43" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Stylized TV Screen Element at the bottom (Connecting to "Television") -->
+  <rect x="96" y="162" width="48" height="32" rx="6" fill="#111827" stroke="#374151" stroke-width="2"/>
+  <!-- TV Stand -->
+  <path d="M 108 194 L 132 194 M 120 190 L 120 194" stroke="#374151" stroke-width="2" stroke-linecap="round"/>
+  <!-- Screen Glow / Wave inside TV -->
+  <path d="M 104 178 Q 112 170 120 178 T 136 178" fill="none" stroke="#6EE7B7" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="120" cy="178" r="12" fill="#6EE7B7" opacity="0.1"/>
+
+  <!-- Signal Transmission beam from Satellite to TV -->
+  <line x1="120" y1="132" x2="120" y2="158" stroke="#FF9F43" stroke-width="2" stroke-dasharray="3 3"/>
+</svg>

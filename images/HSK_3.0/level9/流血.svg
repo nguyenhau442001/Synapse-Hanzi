@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle ambient glow representing the intense frontline scene -->
+  <circle cx="120" cy="120" r="80" fill="#FF5722" opacity="0.06" filter="blur(20px)"/>
+
+  <!-- Conceptual illustration: A firefighter's protective leg gear/boot with a sharp metallic rebar graze and vivid drops of bleeding/flowing blood -->
+  <g transform="translate(0, 5)">
+    <!-- Firefighter trouser / boot contour in dark slate and amber rescue stripes -->
+    <!-- Lower leg/boot shape -->
+    <path d="M 90,65 L 150,65 L 155,145 L 165,185 L 135,190 L 105,185 L 75,180 L 85,145 Z" fill="#2C323D"/>
+    
+    <!-- Heavy duty protective fabric folds & structure -->
+    <path d="M 95,75 L 145,75 L 147,125 L 93,125 Z" fill="#242933"/>
+    
+    <!-- High-visibility reflective safety stripes (Amber/Gold accent) -->
+    <rect x="93" y="90" width="54" height="12" rx="2" fill="#F1C40F" opacity="0.9"/>
+    <rect x="91" y="110" width="58" height="8" rx="2" fill="#F1C40F" opacity="0.9"/>
+
+    <!-- Rugged rubber boot base -->
+    <path d="M 85,145 L 155,145 L 165,185 L 135,190 L 105,185 L 75,180 Z" fill="#15181F"/>
+    <rect x="75" y="180" width="90" height="8" rx="3" fill="#0D0F14"/>
+
+    <!-- Sharp metallic rebar causing the injury / breaking through -->
+    <g transform="rotate(-25 120 130)">
+      <!-- Rebar ridges -->
+      <rect x="114" y="80" width="12" height="100" rx="3" fill="#7F8C8D"/>
+      <line x1="114" y1="95" x2="126" y2="95" stroke="#4E5D6C" stroke-width="3"/>
+      <line x1="114" y1="115" x2="126" y2="115" stroke="#4E5D6C" stroke-width="3"/>
+      <line x1="114" y1="135" x2="126" y2="135" stroke="#4E5D6C" stroke-width="3"/>
+      <line x1="114" y1="155" x2="126" y2="155" stroke="#4E5D6C" stroke-width="3"/>
+      <!-- Rebar tip highlight -->
+      <polygon points="120,75 114,85 126,85" fill="#BDC3C7"/>
+    </g>
+
+    <!-- Wound laceration point -->
+    <path d="M 115,125 Q 120,132 125,125 Q 123,135 115,125 Z" fill="#A93226"/>
+
+    <!-- Flowing blood drops (流血 - representing the exact semantic meaning visually) -->
+    <!-- Primary heavy droplet emerging from wound -->
+    <path d="M 120,130 C 120,130 127,138 127,144 C 127,148 124,151 120,151 C 116,151 113,148 113,144 C 113,138 120,130 120,130 Z" fill="#E74C3C"/>
+    
+    <!-- Falling droplet streak 1 -->
+    <path d="M 120,158 C 120,158 124,163 124,166 C 124,168 122,170 120,170 C 118,170 116,168 116,166 C 116,163 120,158 120,158 Z" fill="#E74C3C"/>
+    
+    <!-- Tiny droplet splash / downward motion -->
+    <circle cx="120" cy="180" r="2" fill="#E74C3C"/>
+    <circle cx="117" cy="190" r="1.5" fill="#C0392B"/>
+
+    <!-- Additional side blood bead -->
+    <path d="M 112,136 C 112,136 115,140 115,142 C 115,144 113,145 112,145 C 110,145 109,144 109,142 C 109,140 112,136 112,136 Z" fill="#E74C3C"/>
+  </g>
+</svg>

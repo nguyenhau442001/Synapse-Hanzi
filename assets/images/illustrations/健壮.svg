@@ -1,0 +1,84 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow/circle for focus -->
+  <circle cx="120" cy="120" r="75" fill="#252A34" opacity="0.6"/>
+
+  <!-- Conceptual illustration for 健壮 (Sturdy, robust, muscular physique) -->
+  <g transform="translate(0, 5)">
+    <!-- Shoulders and Torso (V-taper, wide chest, muscular build) -->
+    <!-- Broad shoulders/chest base in dark suit/skin tone or athletic wear -->
+    <path d="M 70 115 
+             Q 75 95 100 95 
+             L 120 95 
+             L 140 95 
+             Q 165 95 170 115
+             L 190 175 
+             Q 192 185 180 185
+             L 60 185
+             Q 48 185 50 175 Z" 
+          fill="#2C3440"/>
+
+    <!-- Athletic vest / tank top shape outlining the broad chest -->
+    <path d="M 90 95
+             Q 105 105 120 105
+             Q 135 105 150 95
+             L 165 170
+             L 75 170 Z" 
+          fill="#3E4C59"/>
+
+    <!-- Pectoral muscles (defined, strong chest) -->
+    <path d="M 92 112 
+             Q 105 125 120 125 
+             Q 105 140 90 130 Z" 
+          fill="#4E5D6C"/>
+    <path d="M 148 112 
+             Q 135 125 120 125 
+             Q 135 140 148 130 Z" 
+          fill="#4E5D6C"/>
+
+    <!-- Abdominal definition (six-pack / solid core) -->
+    <line x1="120" y1="125" x2="120" y2="165" stroke="#3E4C59" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="105" y1="137" x2="135" y2="137" stroke="#3E4C59" stroke-width="2" stroke-linecap="round"/>
+    <line x1="103" y1="150" x2="137" y2="150" stroke="#3E4C59" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Powerful Neck -->
+    <path d="M 105 95 L 105 75 L 135 75 L 135 95 Z" fill="#E0A96D" opacity="0.9"/>
+
+    <!-- Strong Chin and Jaw -->
+    <path d="M 105 75 Q 120 85 135 75 L 133 65 Q 120 68 107 65 Z" fill="#E0A96D"/>
+
+    <!-- Head / Silhouette -->
+    <ellipse cx="120" cy="52" rx="16" ry="19" fill="#E0A96D"/>
+    
+    <!-- Hair -->
+    <path d="M 104 50 Q 106 33 120 33 Q 134 33 136 50 Q 130 38 120 38 Q 110 38 104 50 Z" fill="#2C3440"/>
+
+    <!-- Muscular Arms / Biceps flexing outwards -->
+    <!-- Left Arm -->
+    <path d="M 72 100 
+             Q 52 110 48 130 
+             Q 45 150 55 165
+             Q 65 150 72 135 Z" 
+          fill="#E0A96D"/>
+    <!-- Left Bicep highlight -->
+    <path d="M 62 118 Q 50 128 55 142 Q 65 130 62 118 Z" fill="#D49A5A" opacity="0.6"/>
+
+    <!-- Right Arm -->
+    <path d="M 168 100 
+             Q 188 110 192 130 
+             Q 195 150 185 165
+             Q 175 150 168 135 Z" 
+          fill="#E0A96D"/>
+    <!-- Right Bicep highlight -->
+    <path d="M 178 118 Q 190 128 185 142 Q 175 130 178 118 Z" fill="#D49A5A" opacity="0.6"/>
+  </g>
+
+  <!-- High-contrast energy / strength accent elements (gold/orange vibe) -->
+  <circle cx="120" cy="120" r="92" fill="none" stroke="#F6AD55" stroke-width="2.5" stroke-dasharray="12 8" opacity="0.8"/>
+  
+  <!-- Subtle glow chevrons indicating robust health/vitality -->
+  <path d="M 95 38 L 105 28 L 115 38" fill="none" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 125 38 L 135 28 L 145 38" fill="none" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

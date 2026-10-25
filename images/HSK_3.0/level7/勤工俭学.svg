@@ -1,0 +1,64 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Desk Background Shape -->
+  <path d="M40 185C40 182.791 41.7909 181 44 181H196C198.209 181 200 182.791 200 185V190C200 192.209 198.209 194 196 194H44C41.7909 194 40 192.209 40 190V185Z" fill="#2D333B"/>
+
+  <!-- Open Textbook / Study element -->
+  <g transform="translate(48, 125)">
+    <!-- Book Pages Shadow/Base -->
+    <path d="M72 45C55 45 42 50 20 40V12C42 22 55 17 72 17C89 17 102 22 124 12V40C102 50 89 45 72 45Z" fill="#111418"/>
+    <!-- Left Page -->
+    <path d="M71 18C54 18 41 23 20 13V38C41 48 54 43 71 43V18Z" fill="#E6EDF3"/>
+    <path d="M28 20H60V23H28V20Z" fill="#8B949E" opacity="0.6"/>
+    <path d="M28 27H53V30H28V27Z" fill="#8B949E" opacity="0.6"/>
+    
+    <!-- Right Page -->
+    <path d="M73 18C90 18 103 23 124 13V38C103 48 90 43 73 43V18Z" fill="#E6EDF3"/>
+    <path d="M84 20H116V23H84V20Z" fill="#8B949E" opacity="0.6"/>
+    <path d="M84 27H109V30H84V27Z" fill="#8B949E" opacity="0.6"/>
+    
+    <!-- Center Spine Binding -->
+    <path d="M71 17H73V45H71V17Z" fill="#30363D"/>
+  </g>
+
+  <!-- Laptop (Work element) -->
+  <g transform="translate(70, 75)">
+    <!-- Laptop Base -->
+    <path d="M12 55H88C91.3137 55 94 57.6863 94 61V63C94 64.6569 92.6569 66 91 66H9C7.34315 66 6 64.6569 6 63V61C6 57.6863 8.68629 55 12 55Z" fill="#8B949E"/>
+    <!-- Laptop Screen Bezel -->
+    <path d="M15 10H85C87.2091 10 89 11.7909 89 14V53C89 54.1046 88.1046 55 87 55H13C11.8954 55 11 54.1046 11 53V14C11 11.7909 12.7909 10 15 10Z" fill="#30363D"/>
+    <!-- Screen Display -->
+    <rect x="15" y="14" width="70" height="37" rx="2" fill="#0D1117"/>
+    
+    <!-- UI / Dashboard mockup inside screen (representing earning/work) -->
+    <rect x="21" y="20" width="30" height="4" rx="2" fill="#58A6FF"/>
+    <rect x="21" y="28" width="58" height="16" rx="2" fill="#161B22"/>
+    <!-- Chart lines -->
+    <path d="M26 39L35 32L43 36L55 26L69 34" stroke="#3FB950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Golden Coin Floating (representing earning / self-reliance) -->
+  <g transform="translate(145, 60)">
+    <circle cx="15" cy="15" r="14" fill="#F0883E"/>
+    <circle cx="15" cy="15" r="10" fill="#DB6D28"/>
+    <!-- Currency Symbol/Detail -->
+    <path d="M15 9V21M11 12H19M11 18H19" stroke="#F0883E" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <g transform="translate(35, 95)">
+    <circle cx="12" cy="12" r="10" fill="#F0883E"/>
+    <circle cx="12" cy="12" r="7" fill="#DB6D28"/>
+  </g>
+
+  <!-- Graduation Cap (Academic element floating subtly above) -->
+  <g transform="translate(100, 28)">
+    <path d="M20 15L40 7L60 15L40 23L20 15Z" fill="#58A6FF"/>
+    <path d="M26 18.5V26C26 29.3137 32.268 32 40 32C47.732 32 54 29.3137 54 26V18.5" stroke="#58A6FF" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- Tassel -->
+    <path d="M52 18L58 24V29" stroke="#F0883E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="58" cy="30" r="1.5" fill="#F0883E"/>
+  </g>
+  
+</svg>

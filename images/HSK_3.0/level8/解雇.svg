@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "解雇" (Sa thải / Cho thôi việc) -->
+  <!-- Represents a physical object/scenario: An office desk with a terminated employee's box of personal belongings and an employment termination document -->
+
+  <!-- Desk Surface -->
+  <path d="M30 185 L210 185 L220 200 L20 200 Z" fill="#2A2F3D"/>
+  <rect x="35" y="190" width="170" height="6" fill="#1E222D" rx="2"/>
+
+  <!-- Cardboard Box of Belongings (Centerpiece) -->
+  <g transform="translate(75, 125)">
+    <!-- Box Back Flap -->
+    <path d="M15 0 L35 -15 L55 0 Z" fill="#C28A53"/>
+    <!-- Box Body -->
+    <rect x="0" y="0" width="90" height="60" fill="#D79B62" rx="3"/>
+    <!-- Box Front Shade -->
+    <path d="M0 0 L45 15 L90 0 L90 60 L0 60 Z" fill="#E2A66D"/>
+    <rect x="0" y="0" width="90" height="60" rx="3" fill="none" stroke="#B57A43" stroke-width="2"/>
+    
+    <!-- Folded items inside the box (Pencil & Folder edge) -->
+    <rect x="30" y="-10" width="8" height="20" fill="#E74C3C" rx="1"/>
+    <rect x="50" y="-15" width="25" height="18" fill="#F1C40F" rx="1"/>
+
+    <!-- Tape / Label on Box -->
+    <rect x="35" y="25" width="20" height="12" fill="#5A6072" rx="2"/>
+  </g>
+
+  <!-- Termination Document / Folder (Left side) -->
+  <g transform="translate(35, 110) rotate(-12)">
+    <!-- Folder Base -->
+    <rect x="0" y="0" width="45" height="55" fill="#EAEFF8" rx="2"/>
+    <!-- Red Accent / Stamp representing dismissal -->
+    <circle cx="22" cy="27" r="12" fill="none" stroke="#E74C3C" stroke-width="3"/>
+    <line x1="14" y1="19" x2="30" y2="35" stroke="#E74C3C" stroke-width="3" stroke-linecap="round"/>
+    <line x1="10" y1="42" x2="35" y2="42" stroke="#A0AEC0" stroke-width="3" stroke-linecap="round"/>
+    <line x1="10" y1="48" x2="28" y2="48" stroke="#A0AEC0" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Office Chair back (Subtle background element) -->
+  <path d="M160 80 L190 80 L185 160 L165 160 Z" fill="#323846" rx="4"/>
+  <rect x="170" y="95" width="10" height="50" fill="#252A34" rx="2"/>
+
+</svg>

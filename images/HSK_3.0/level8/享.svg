@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Ambient glow representing warmth and peace -->
+  <circle cx="120" cy="120" r="80" fill="#2D2218" opacity="0.6"/>
+
+  <g transform="translate(0, 5)">
+    <!-- Floor / Ground Plane -->
+    <path d="M48 185 L192 185" stroke="#3A3F4B" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Senior Figure (Left, sitting peacefully in an armchair) -->
+    <!-- Armchair Back & Base -->
+    <path d="M60 130 C60 110 75 95 95 95 L115 95 C135 95 150 110 150 130 L150 175 L60 175 Z" fill="#2E3544"/>
+    <path d="M55 135 C55 125 63 118 73 118 L80 118 L80 175 L55 175 Z" fill="#252A36"/>
+    <!-- Senior Head & Hair -->
+    <circle cx="105" cy="105" r="16" fill="#F4D0B2"/>
+    <path d="M89 105 C89 95 97 90 105 90 C113 90 121 95 121 105 Z" fill="#E2E8F0"/>
+    <!-- Senior Torso -->
+    <path d="M85 125 L125 125 L135 175 L75 175 Z" fill="#3B82F6"/>
+    <!-- Senior Arm (Relaxed) -->
+    <path d="M85 130 C75 135 70 145 75 155" stroke="#F4D0B2" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+    <!-- Grandchild / Child Figure (Right, leaning warmly against the senior) -->
+    <!-- Child Head -->
+    <circle cx="145" cy="120" r="13" fill="#F4D0B2"/>
+    <path d="M132 118 C132 108 140 105 145 105 C153 105 158 110 158 120 Z" fill="#D97706"/>
+    <!-- Child Torso -->
+    <path d="M135 135 C135 128 140 125 148 125 L165 165 L130 175 Z" fill="#10B981"/>
+    <!-- Child Arm reaching out happily -->
+    <path d="M150 140 L170 130" stroke="#F4D0B2" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Warm Embrace / Connection Hands in Center -->
+    <circle cx="125" cy="145" r="4" fill="#F4D0B2"/>
+
+    <!-- Supporting ambient elements: Warm glow / rays symbolizing harmony and happiness ("天伦之乐") -->
+    <path d="M120 65 L120 75" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <path d="M95 72 L101 79" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <path d="M145 72 L139 79" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  </g>
+</svg>

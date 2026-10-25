@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Sea/Water -->
+  <path d="M0 160 C 60 140, 180 140, 240 160 L 240 240 L 0 240 Z" fill="#2C3E50"/>
+  <path d="M0 175 C 80 155, 160 155, 240 175 L 240 240 L 0 240 Z" fill="#34495E"/>
+  
+  <!-- Golden Sand Beach -->
+  <path d="M0 160 C 60 180, 180 180, 240 160 L 240 240 L 0 240 Z" fill="#F39C12"/>
+  
+  <!-- Sun (Setting) -->
+  <circle cx="120" cy="140" r="35" fill="#E67E22"/>
+  <circle cx="120" cy="140" r="25" fill="#F1C40F"/>
+  
+  <!-- Palm Tree -->
+  <g transform="translate(40, 150)">
+    <path d="M0 0 C -5 -30, -5 -60, 0 -80" stroke="#8E44AD" stroke-width="6" fill="none"/>
+    <path d="M0 -75 L -20 -95 M0 -75 L -25 -85 M0 -75 L -20 -65 M0 -75 L 20 -95 M0 -75 L 25 -85 M0 -75 L 20 -65" stroke="#27AE60" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Beach Umbrella -->
+  <g transform="translate(180, 165)">
+    <line x1="0" y1="0" x2="0" y2="-40" stroke="#BDC3C7" stroke-width="3"/>
+    <path d="M-30 0 C -30 -20, 30 -20, 30 0 Z" fill="#E74C3C"/>
+    <path d="M-10 0 C -10 -10, 10 -10, 10 0 Z" fill="#C0392B"/>
+  </g>
+</svg>

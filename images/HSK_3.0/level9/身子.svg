@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements (subtle floor shadow/line) -->
+  <ellipse cx="120" cy="200" rx="60" ry="8" fill="#111318"/>
+  <line x1="50" y1="200" x2="190" y2="200" stroke="#2A2F3A" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Person bending down ("俯下身子捡东西" context) -->
+  <g transform="translate(0, 5)">
+    <!-- Head -->
+    <circle cx="150" cy="72" r="14" fill="#E2E8F0"/>
+    
+    <!-- Torso (bent forward dynamically) -->
+    <path d="M 142 84 C 135 105, 115 125, 95 120 C 85 118, 80 110, 88 102 C 105 92, 125 80, 138 82 Z" fill="#3B82F6"/>
+
+    <!-- Bent Legs / Lower Body -->
+    <!-- Thighs & Knees -->
+    <path d="M 95 120 L 75 145 L 95 155" fill="none" stroke="#1E293B" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Lower Legs -->
+    <path d="M 95 155 L 110 185" fill="none" stroke="#1E293B" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 75 145 L 68 185" fill="none" stroke="#3B82F6" stroke-width="10" stroke-linecap="round"/>
+    
+    <!-- Shoes -->
+    <path d="M 100 185 L 120 188 C 124 188, 124 182, 118 182 L 100 182 Z" fill="#F59E0B"/>
+    <path d="M 60 185 L 75 188 C 79 188, 79 182, 73 182 L 58 182 Z" fill="#F59E0B"/>
+
+    <!-- Arms reaching down to pick up an item -->
+    <!-- Back/Upper Arm -->
+    <path d="M 130 90 L 110 130 L 125 150" fill="none" stroke="#3B82F6" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Hands -->
+    <circle cx="128" cy="155" r="5" fill="#E2E8F0"/>
+  </g>
+
+  <!-- The dropped object being picked up (Focus accent color) -->
+  <g transform="translate(0, 5)">
+    <!-- Dropped document / folder -->
+    <rect x="115" y="160" width="22" height="16" rx="3" fill="#F59E0B" transform="rotate(-15 126 168)"/>
+    <line x1="120" y1="165" x2="130" y2="165" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    <line x1="120" y1="170" x2="127" y2="170" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Motion lines indicating bending down action -->
+    <path d="M 165 95 C 175 105, 175 125, 160 140" fill="none" stroke="#64748B" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round"/>
+    <polyline points="157,132 160,140 167,138" fill="none" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Highlighting the core concept (Physical Body / 身子) with subtle framing anchor -->
+  <circle cx="120" cy="120" r="96" fill="none" stroke="#3B82F6" stroke-width="1.5" stroke-opacity="0.2"/>
+</svg>

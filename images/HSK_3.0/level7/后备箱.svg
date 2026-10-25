@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Car Body -->
+  <path d="M40 140 L200 140 L190 185 C190 190 185 195 180 195 L60 195 C55 195 50 190 50 185 L40 140 Z" fill="#3A404D"/>
+  
+  <!-- Trunk Compartment (The focus: 后备箱) -->
+  <path d="M145 140 L195 140 L188 180 C188 183 185 186 182 186 L150 186 L145 140 Z" fill="#FFB84D"/>
+  
+  <!-- Suitcase inside the trunk -->
+  <rect x="155" y="150" width="25" height="30" rx="2" fill="#FFFFFF"/>
+  <rect x="157" y="147" width="21" height="3" rx="1" fill="#FFFFFF"/>
+  
+  <!-- Trunk Lid (Open) -->
+  <path d="M145 140 L145 110 L195 110 L195 140" stroke="#FFB84D" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Wheels -->
+  <circle cx="75" cy="195" r="12" fill="#2D3436"/>
+  <circle cx="165" cy="195" r="12" fill="#2D3436"/>
+  
+  <!-- Ground line -->
+  <line x1="30" y1="207" x2="210" y2="207" stroke="#4A5568" stroke-width="2"/>
+</svg>

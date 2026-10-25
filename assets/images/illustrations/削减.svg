@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Desk/Surface -->
+  <rect x="40" y="160" width="160" height="8" rx="2" fill="#3E4451"/>
+  
+  <!-- Paper stack being cut -->
+  <g transform="translate(80, 80)">
+    <rect x="0" y="40" width="80" height="40" rx="2" fill="#E0E6ED"/>
+    <rect x="0" y="30" width="80" height="10" rx="2" fill="#BCCCDC"/>
+    <rect x="0" y="20" width="80" height="10" rx="2" fill="#9FB3C8"/>
+  </g>
+
+  <!-- Scissors action -->
+  <g transform="translate(130, 70)">
+    <path d="M-20 20 L20 60 M-20 60 L20 20" stroke="#FFB454" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="-25" cy="15" r="8" fill="none" stroke="#FFB454" stroke-width="4"/>
+    <circle cx="-25" cy="65" r="8" fill="none" stroke="#FFB454" stroke-width="4"/>
+  </g>
+
+  <!-- Motion lines indicating cutting action -->
+  <path d="M160 60 L180 40" stroke="#FFB454" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4"/>
+  <path d="M160 100 L180 120" stroke="#FFB454" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4"/>
+
+  <!-- Removed segment falling away -->
+  <rect x="165" y="110" width="20" height="10" rx="1" fill="#FFB454" opacity="0.6" transform="rotate(20 175 115)"/>
+</svg>

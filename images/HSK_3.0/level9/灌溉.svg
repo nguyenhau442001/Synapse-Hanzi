@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Soil/Earth ground layer -->
+    <path d="M 30 190 L 210 190 C 210 205, 195 210, 180 210 L 60 210 C 45 210, 30 205, 30 190 Z" fill="#2C231E"/>
+    <path d="M 30 190 L 210 190 C 210 198, 195 202, 180 202 L 60 202 C 45 202, 30 198, 30 190 Z" fill="#3D3028"/>
+    
+    <!-- Plant / Farmland Sprout (Green Life) -->
+    <path d="M 120 190 C 120 165, 110 145, 90 135" fill="none" stroke="#4ADE80" stroke-width="4" stroke-linecap="round"/>
+    <!-- Left Leaf -->
+    <path d="M 90 135 C 75 125, 70 140, 80 150 C 90 155, 95 145, 90 135 Z" fill="#22C55E"/>
+    <!-- Right Leaf -->
+    <path d="M 120 165 C 135 155, 145 165, 135 175 C 125 180, 120 170, 120 165 Z" fill="#22C55E"/>
+
+    <!-- Irrigation Canal (Channel / Waterway) on the side -->
+    <path d="M 170 140 L 210 140 L 220 190 L 160 190 Z" fill="#1E293B"/>
+    <path d="M 175 145 L 205 145 L 213 185 L 167 185 Z" fill="#334155"/>
+    <!-- Flowing Clear Water in Canal -->
+    <path d="M 177 150 L 203 150 L 210 180 L 170 180 Z" fill="#0EA5E9" opacity="0.8"/>
+
+    <!-- Dynamic Flow / Water Streams (Guangai / Irrigation action) -->
+    <!-- Curved stream flowing from canal to crops -->
+    <path d="M 165 155 C 140 155, 130 170, 105 185" fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
+    <path d="M 155 165 C 135 165, 125 175, 115 185" fill="none" stroke="#7DD3FC" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Droplets representing vital water feeding the soil -->
+    <circle cx="125" cy="188" r="3" fill="#38BDF8"/>
+    <circle cx="100" cy="182" r="2" fill="#38BDF8"/>
+    <circle cx="140" cy="178" r="2.5" fill="#38BDF8"/>
+
+    <!-- Overhead stylized watering mechanism / modern channel flow indicator -->
+    <path d="M 70 95 Q 120 75 170 95" fill="none" stroke="#334155" stroke-dash-array="4 4" stroke-width="2"/>
+
+    <!-- Golden Accent / Focus Splash (Sleek modern contrast) -->
+    <circle cx="120" cy="130" r="3" fill="#F59E0B" opacity="0.8"/>
+    <path d="M 117 125 L 123 135 M 123 125 L 117 135" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle technological grid / sparks of innovation -->
+  <g opacity="0.15" stroke="#38BDF8" stroke-width="1" stroke-dasharray="2 4">
+    <line x1="40" y1="180" x2="200" y2="180" />
+    <line x1="120" y1="40" x2="120" y2="200" />
+  </g>
+
+  <!-- Modern Industrial Gear (Representing Traditional Manufacturing) -->
+  <g transform="translate(150, 130)">
+    <!-- Outer gear ring -->
+    <path d="M 0,-42 L 8,-40 L 12,-32 L 20,-34 L 27,-27 L 34,-20 L 32,-12 L 40,-8 L 42,0 L 40,8 L 32,12 L 34,20 L 27,27 L 20,34 L 12,32 L 8,40 L 0,42 L -8,40 L -12,32 L -20,34 L -27,27 L -34,20 L -32,12 L -40,8 L -42,0 L -40,-8 L -32,-12 L -34,-20 L -27,-27 L -20,-34 L -12,-32 L -8,-40 Z" fill="#64748B" />
+    <!-- Gear inner cut -->
+    <circle cx="0" cy="0" r="22" fill="#1A1D24" />
+    <!-- Gear center axle -->
+    <circle cx="0" cy="0" r="8" fill="#64748B" />
+    <!-- Upward arrow / trajectory representing upgrade/advancement -->
+    <path d="M 0,10 L 0,-15 M -6,-8 L 0,-15 L 6,-8" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Sleek Robotic Arm / Precision Lever (Representing Sci-Tech Innovation / 助力 - The physical physical force/support) -->
+  <g transform="translate(90, 110)">
+    <!-- Base mounting block -->
+    <path d="M -30,70 L 30,70 L 20,50 L -20,50 Z" fill="#334155" />
+    
+    <!-- Lower arm segment -->
+    <path d="M -10,50 L -40,-20 L -25,-25 L 0,45 Z" fill="#0284C7" />
+    
+    <!-- Articulation joint (gold/orange accent for focus) -->
+    <circle cx="-32.5" cy="-22.5" r="10" fill="#F59E0B" />
+    <circle cx="-32.5" cy="-22.5" r="4" fill="#1A1D24" />
+
+    <!-- Upper arm segment lifting up -->
+    <path d="M -32.5,-22.5 L 35,-65 L 42,-52 L -20,-10 Z" fill="#38BDF8" />
+
+    <!-- End-effector / Precision tool propelling the gear upwards -->
+    <path d="M 35,-65 L 55,-75 L 60,-65 L 42,-52 Z" fill="#F59E0B" />
+    
+    <!-- Dynamic energy push / thrust lines ( trợ lực ) -->
+    <path d="M 65,-50 L 85,-40" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" />
+    <path d="M 72,-62 L 92,-52" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" />
+    <path d="M 58,-38 L 78,-28" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Spark / Innovation Core Point -->
+  <circle cx="122" cy="65" r="6" fill="#F59E0B" />
+  <circle cx="122" cy="65" r="12" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity="0.6" />
+
+</svg>

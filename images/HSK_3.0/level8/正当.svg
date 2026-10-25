@@ -1,0 +1,39 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow -->
+  <circle cx="120" cy="120" r="70" fill="#222A36" opacity="0.6"/>
+
+  <!-- Iconic Physical Object: Modern Legal Balance Scale with Shield (representing Righteous, Legitimate, Just/正当) -->
+  <g transform="translate(0, 5)">
+    <!-- Base Platform -->
+    <path d="M 90 190 L 150 190 L 160 200 L 80 200 Z" fill="#4F5D75"/>
+    <rect x="115" y="115" width="10" height="75" rx="3" fill="#E0E6ED"/>
+    
+    <!-- Top Finial / Ring -->
+    <circle cx="120" cy="105" r="8" fill="none" stroke="#F6AD55" stroke-width="3"/>
+
+    <!-- Central Beam -->
+    <path d="M 70 115 L 170 115 L 170 122 L 70 122 Z" fill="#E0E6ED"/>
+    <circle cx="120" cy="118" r="5" fill="#F6AD55"/>
+
+    <!-- Left Arm & Scale Pan -->
+    <line x1="70" y1="118" x2="50" y2="155" stroke="#E0E6ED" stroke-width="2.5"/>
+    <line x1="70" y1="118" x2="90" y2="155" stroke="#E0E6ED" stroke-width="2.5"/>
+    <path d="M 45 155 Q 70 170 95 155 Z" fill="#CBD5E1"/>
+    <ellipse cx="70" cy="155" rx="25" ry="5" fill="#E0E6ED"/>
+
+    <!-- Right Arm & Scale Pan -->
+    <line x1="170" y1="118" x2="150" y2="155" stroke="#E0E6ED" stroke-width="2.5"/>
+    <line x1="170" y1="118" x2="190" y2="155" stroke="#E0E6ED" stroke-width="2.5"/>
+    <path d="M 145 155 Q 170 170 195 155 Z" fill="#CBD5E1"/>
+    <ellipse cx="170" cy="155" rx="25" ry="5" fill="#E0E6ED"/>
+
+    <!-- Protective Shield (Legitimate/Lawful element) in the center background -->
+    <path d="M 120 45 C 135 45 155 52 155 52 C 155 85 145 110 120 125 C 95 110 85 85 85 52 C 85 52 105 45 120 45 Z" fill="#2B3748" stroke="#F6AD55" stroke-width="3"/>
+    
+    <!-- Checkmark inside Shield (Righteous & Correct/正) -->
+    <path d="M 107 82 L 115 90 L 135 70" fill="none" stroke="#F6AD55" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

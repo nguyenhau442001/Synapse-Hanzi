@@ -1,0 +1,19 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 120)">
+    <!-- Outer protective membrane -->
+    <circle r="65" fill="none" stroke="#3A404D" stroke-width="2" stroke-dasharray="4 4"/>
+    
+    <!-- Embryo body -->
+    <path d="M-20,-30 C-40,-30 -50,-10 -50,10 C-50,30 -30,45 -10,45 C10,45 25,30 25,10 C25,-10 15,-25 0,-30" fill="#FFB84D"/>
+    
+    <!-- Head area -->
+    <circle cx="-25" cy="-15" r="20" fill="#FFB84D"/>
+    
+    <!-- Tail/Curvature -->
+    <path d="M20,20 C35,35 45,30 50,15" fill="none" stroke="#FFB84D" stroke-width="12" stroke-linecap="round"/>
+    
+    <!-- Subtle developmental detail -->
+    <circle cx="-30" cy="-20" r="3" fill="#1A1D24" opacity="0.3"/>
+  </g>
+</svg>

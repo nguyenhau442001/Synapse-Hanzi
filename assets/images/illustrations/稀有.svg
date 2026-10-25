@@ -1,0 +1,62 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Ambient glow behind the object to emphasize rarity/value -->
+  <circle cx="120" cy="115" r="55" fill="#FFB703" opacity="0.08"/>
+  <circle cx="120" cy="115" r="40" fill="#FFB703" opacity="0.12"/>
+
+  <!-- Pedestal / Display base -->
+  <g transform="translate(0, 10)">
+    <!-- Base shadow -->
+    <ellipse cx="120" cy="165" r="48" fill="#111318"/>
+    <!-- Pedestal lower tier -->
+    <path d="M 72 155 L 168 155 L 160 163 L 80 163 Z" fill="#2D333B"/>
+    <!-- Pedestal upper tier -->
+    <path d="M 88 147 L 152 147 L 146 155 L 94 155 Z" fill="#3A424E"/>
+    <!-- Glowing rim on pedestal -->
+    <path d="M 92 147 L 148 147" stroke="#FFB703" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  </g>
+
+  <!-- Physical Object: Rare glowing mineral / gemstone representing "稀有" -->
+  <g transform="translate(0, 5)">
+    <!-- Back facets (darker tones) -->
+    <polygon points="120,60 145,90 120,135" fill="#D97706"/>
+    <polygon points="120,60 95,90 120,135" fill="#B45309"/>
+    
+    <!-- Left main facet -->
+    <polygon points="120,60 95,90 80,105 100,125" fill="#F59E0B"/>
+    
+    <!-- Right main facet -->
+    <polygon points="120,60 145,90 160,105 140,125" fill="#FBBF24"/>
+    
+    <!-- Top-left facet -->
+    <polygon points="120,60 100,75 95,90" fill="#FCD34D"/>
+    
+    <!-- Top-right facet -->
+    <polygon points="120,60 140,75 145,90" fill="#FDE68A"/>
+
+    <!-- Bottom anchoring facets -->
+    <polygon points="100,125 120,135 105,145" fill="#D97706"/>
+    <polygon points="140,125 120,135 135,145" fill="#B45309"/>
+    <polygon points="100,125 80,105 90,115" fill="#D97706"/>
+    <polygon points="140,125 160,105 150,115" fill="#D97706"/>
+
+    <!-- Center crystal highlight / sparkle lines -->
+    <polygon points="120,60 120,135 125,120" fill="#FFFBEB" opacity="0.4"/>
+    
+    <!-- Specular highlights (gloss) -->
+    <polygon points="120,60 108,78 114,82" fill="#FFFFFF" opacity="0.7"/>
+    <polygon points="140,75 145,90 138,88" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+
+  <!-- Sparkle accents indicating extreme rarity/preciousness -->
+  <g fill="#FBBF24">
+    <!-- Top-right sparkle -->
+    <path d="M 168 70 C 168 75 164 76 159 76 C 164 76 168 77 168 82 C 168 77 172 76 177 76 C 172 76 168 75 168 70 Z"/>
+    <!-- Bottom-left sparkle -->
+    <path d="M 72 125 C 72 129 69 130 65 130 C 69 130 72 131 72 135 C 72 131 75 130 79 130 C 75 130 72 129 72 125 Z"/>
+    <!-- Small floating star -->
+    <path d="M 155 122 C 155 124 153 125 151 125 C 153 125 155 126 155 128 C 155 126 157 125 159 125 C 157 125 155 124 155 122 Z" fill="#FDE68A"/>
+  </g>
+</svg>

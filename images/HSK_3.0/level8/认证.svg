@@ -1,0 +1,37 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow -->
+  <circle cx="120" cy="120" r="80" fill="#242B38" opacity="0.5"/>
+
+  <!-- Official Document / Certificate Base -->
+  <g transform="translate(65, 45)">
+    <!-- Document background -->
+    <rect x="0" y="0" width="110" height="150" rx="8" fill="#2E384D"/>
+    
+    <!-- Header banner bar -->
+    <rect x="15" y="20" width="80" height="8" rx="4" fill="#3B475E"/>
+    
+    <!-- Text lines on certificate -->
+    <rect x="15" y="42" width="65" height="5" rx="2.5" fill="#4E5D78"/>
+    <rect x="15" y="55" width="80" height="5" rx="2.5" fill="#4E5D78"/>
+    <rect x="15" y="68" width="50" height="5" rx="2.5" fill="#4E5D78"/>
+
+    <!-- Document ribbon / seal tails -->
+    <path d="M 75 115 L 75 145 L 85 138 L 95 145 L 95 115 Z" fill="#E67E22"/>
+  </g>
+
+  <!-- Golden Wax Seal (The core Certification object) -->
+  <g transform="translate(120, 145)">
+    <!-- Outer scalloped circle -->
+    <circle cx="0" cy="0" r="32" fill="#D35400"/>
+    <circle cx="0" cy="0" r="28" fill="#F39C12"/>
+    
+    <!-- Inner face -->
+    <circle cx="0" cy="0" r="24" fill="#E67E22"/>
+
+    <!-- White Verification Checkmark (exact semantic symbol for 认证) -->
+    <path d="M -9 0 L -3 6 L 10 -7" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+</svg>

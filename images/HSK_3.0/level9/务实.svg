@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background grounding elements -->
+  <line x1="48" y1="185" x2="192" y2="185" stroke="#2D333B" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Conceptual Physical Object: Sturdy Workbench with Blueprint and Precision Tools representing "Thực chất / Thực tế" (Grounded, practical action) -->
+  
+  <!-- Workbench Legs -->
+  <rect x="70" y="150" width="12" height="35" rx="3" fill="#3A424E"/>
+  <rect x="158" y="150" width="12" height="35" rx="3" fill="#3A424E"/>
+  
+  <!-- Workbench Surface (Thick, solid plank) -->
+  <rect x="50" y="140" width="140" height="14" rx="4" fill="#4E5966"/>
+  <rect x="46" y="134" width="148" height="8" rx="3" fill="#626F80"/>
+  
+  <!-- Blueprint/Plan on table (representing structured, real planning) -->
+  <rect x="65" y="105" width="60" height="32" rx="2" fill="#253858"/>
+  <!-- Blueprint grid lines -->
+  <line x1="75" y1="115" x2="115" y2="115" stroke="#4C9AFF" stroke-width="1.5" stroke-opacity="0.6"/>
+  <line x1="75" y1="125" x2="105" y2="125" stroke="#4C9AFF" stroke-width="1.5" stroke-opacity="0.6"/>
+  
+  <!-- Hard hat / Safety helmet (representing construction, reality, active implementation) -->
+  <path d="M 125 108 C 125 90 142 82 160 82 C 178 82 195 90 195 108 L 195 114 L 125 114 Z" fill="#FFAB00"/>
+  <!-- Helmet brim -->
+  <path d="M 118 114 C 118 112 122 110 125 110 L 195 110 C 198 110 202 112 202 114 C 202 116 198 116 195 116 L 125 116 C 122 116 118 116 118 114 Z" fill="#FF8F00"/>
+  <!-- Helmet ridge -->
+  <path d="M 160 82 L 160 114" stroke="#FF8F00" stroke-width="3"/>
+
+  <!-- Precision Caliper / Ruler (representing exactness, tangible results) -->
+  <g transform="translate(85, 80) rotate(-15)">
+    <rect x="0" y="0" width="6" height="55" rx="2" fill="#97A0AF"/>
+    <rect x="-6" y="4" width="18" height="6" rx="1" fill="#DFE1E6"/>
+    <rect x="-3" y="45" width="12" height="6" rx="1" fill="#DFE1E6"/>
+  </g>
+
+  <!-- Focus/Anchor Element: A heavy, solid metal gear/cog embedded or resting centrally to emphasize tangible mechanics and substance over superficial form -->
+  <g transform="translate(132, 137)">
+    <circle cx="0" cy="0" r="16" fill="#1A1D24"/>
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#FFAB00" stroke-width="5"/>
+    <circle cx="0" cy="0" r="5" fill="#FFAB00"/>
+  </g>
+</svg>

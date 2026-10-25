@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements: sharp jagged mountain peaks -->
+  <polygon points="20,190 70,120 120,190" fill="#242B38"/>
+  <polygon points="90,190 150,90 210,190" fill="#242B38"/>
+  <polygon points="170,190 205,130 240,190" fill="#242B38"/>
+
+  <!-- Sound wave / roar energy bursts emanating from the beast -->
+  <path d="M 105,95 Q 90,110 105,125" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M 95,85 Q 70,110 95,135" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M 85,75 Q 50,110 85,145" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- Fierce beast (tiger/wild beast silhouette in dark mode style with high contrast accents) -->
+  <g transform="translate(100, 95)">
+    <!-- Body / Back -->
+    <path d="M -20,40 C -10,25 20,25 35,40 C 45,50 40,75 25,75 C 10,75 -15,75 -20,40 Z" fill="#323B4D"/>
+    
+    <!-- Head -->
+    <path d="M 20,15 C 25,5 40,0 50,15 C 55,25 50,40 35,40 C 25,40 18,30 20,15 Z" fill="#323B4D"/>
+    
+    <!-- Ears -->
+    <polygon points="23,8 28,-3 35,8" fill="#F59E0B"/>
+    <polygon points="43,10 50,2 52,14" fill="#F59E0B"/>
+
+    <!-- Open Roaring Mouth (Dark interior with sharp white fangs) -->
+    <path d="M 40,25 C 55,23 62,28 65,35 C 62,42 50,42 40,38 Z" fill="#111318"/>
+    <!-- Upper Fang -->
+    <polygon points="45,26 48,32 50,26" fill="#FFFFFF"/>
+    <!-- Lower Fang -->
+    <polygon points="46,38 49,32 52,38" fill="#FFFFFF"/>
+
+    <!-- Glowing Fierce Eye -->
+    <circle cx="38" cy="18" r="3" fill="#F59E0B"/>
+
+    <!-- Stripes -->
+    <path d="M -5,45 L 0,60" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 10,48 L 15,65" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Paws gripping the ground -->
+    <rect x="-18" y="70" width="8" height="15" rx="4" fill="#323B4D"/>
+    <rect x="15" y="70" width="8" height="15" rx="4" fill="#323B4D"/>
+  </g>
+
+  <!-- Ground -->
+  <rect x="0" y="185" width="240" height="55" fill="#14161B"/>
+</svg>

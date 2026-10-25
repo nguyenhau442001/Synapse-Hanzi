@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Character: A miserly person clutching a coin -->
+  <g transform="translate(60, 60)">
+    <!-- Body -->
+    <path d="M60 140 C60 110, 80 90, 120 90 C160 90, 180 110, 180 140 L180 180 L60 180 Z" fill="#3D4451"/>
+    
+    <!-- Head -->
+    <circle cx="120" cy="70" r="30" fill="#FFD1A9"/>
+    
+    <!-- Tight-lipped expression -->
+    <line x1="110" y1="75" x2="130" y2="75" stroke="#2C313C" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Arms clutching tightly -->
+    <path d="M90 110 L60 130" stroke="#FFD1A9" stroke-width="12" stroke-linecap="round"/>
+    <path d="M150 110 L180 130" stroke="#FFD1A9" stroke-width="12" stroke-linecap="round"/>
+    
+    <!-- The "Hair" (Single hair being pulled but not coming out) -->
+    <path d="M120 40 L120 10" stroke="#FFB84D" stroke-width="4" stroke-linecap="round"/>
+    <path d="M115 15 L125 15" stroke="#FFB84D" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- The Coin being held tightly -->
+    <circle cx="120" cy="110" r="15" fill="#FFB84D"/>
+    <circle cx="120" cy="110" r="8" fill="#1A1D24"/>
+  </g>
+</svg>

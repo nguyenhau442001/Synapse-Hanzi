@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Table Surface -->
+  <path d="M40 180 L200 180 L190 200 L50 200 Z" fill="#2D343E"/>
+  
+  <!-- Wine Bottle -->
+  <path d="M80 180 L80 110 C80 100 85 95 95 95 L105 95 C115 95 120 100 120 110 L120 180 Z" fill="#D4AF37"/>
+  <rect x="90" y="90" width="20" height="5" fill="#B8860B"/>
+  
+  <!-- Wine Glass -->
+  <path d="M130 180 L135 180 L135 150 L155 150 L155 180 L160 180" fill="none" stroke="#F4A460" stroke-width="3"/>
+  <path d="M135 150 C135 140 140 130 145 130 C150 130 155 140 155 150 Z" fill="#F4A460" opacity="0.6"/>
+  
+  <!-- Fruit Bowl (Platter) -->
+  <ellipse cx="170" cy="180" rx="30" ry="10" fill="#D4AF37"/>
+  <circle cx="165" cy="170" r="12" fill="#E67E22"/>
+  <circle cx="180" cy="172" r="10" fill="#D35400"/>
+  
+  <!-- Welcoming Gesture (Hand) -->
+  <path d="M50 140 C40 140 30 150 30 160 L30 170 C30 180 40 185 50 185 L70 185 C80 185 85 180 85 170 L85 160 C85 150 75 140 65 140 Z" fill="#FFD700" opacity="0.9"/>
+  <path d="M60 140 L60 125 M70 140 L75 125 M50 140 L45 125" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Decorative steam/warmth lines -->
+  <path d="M100 85 Q100 75 105 70" stroke="#F4A460" stroke-width="2" fill="none"/>
+  <path d="M110 85 Q110 75 115 70" stroke="#F4A460" stroke-width="2" fill="none"/>
+</svg>

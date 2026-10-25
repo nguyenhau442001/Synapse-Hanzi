@@ -1,0 +1,39 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Visualizing "均" (Uniformity/All/Evenly) through a progression of identical high-performance components -->
+  <!-- The concept: A series of identical, high-quality electronic components (represented as sleek, glowing blocks) -->
+  <!-- all reaching the same elevated peak of performance (the "excellence" mentioned in the context). -->
+  
+  <!-- Baseline/Platform -->
+  <rect x="30" y="180" width="180" height="4" rx="2" fill="#3D4451"/>
+  
+  <!-- Components representing the "all" (均) reaching the same high standard -->
+  <!-- Component 1 -->
+  <rect x="45" y="140" width="20" height="40" rx="2" fill="#FFB84D"/>
+  <rect x="47" y="142" width="16" height="36" rx="1" fill="#1A1D24"/>
+  
+  <!-- Component 2 -->
+  <rect x="85" y="140" width="20" height="40" rx="2" fill="#FFB84D"/>
+  <rect x="87" y="142" width="16" height="36" rx="1" fill="#1A1D24"/>
+  
+  <!-- Component 3 -->
+  <rect x="125" y="140" width="20" height="40" rx="2" fill="#FFB84D"/>
+  <rect x="127" y="142" width="16" height="36" rx="1" fill="#1A1D24"/>
+  
+  <!-- Component 4 -->
+  <rect x="165" y="140" width="20" height="40" rx="2" fill="#FFB84D"/>
+  <rect x="167" y="142" width="16" height="36" rx="1" fill="#1A1D24"/>
+  
+  <!-- The "Excellence" line - a horizontal line connecting all peaks to show uniformity -->
+  <line x1="55" y1="130" x2="175" y2="130" stroke="#FFB84D" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Visualizing the "Excellence" peak reached by all -->
+  <path d="M55 140 L55 130 L175 130 L175 140" fill="none" stroke="#FFB84D" stroke-width="2"/>
+  
+  <!-- Small markers indicating the "test" result on each -->
+  <circle cx="55" cy="130" r="3" fill="#FFB84D"/>
+  <circle cx="95" cy="130" r="3" fill="#FFB84D"/>
+  <circle cx="135" cy="130" r="3" fill="#FFB84D"/>
+  <circle cx="175" cy="130" r="3" fill="#FFB84D"/>
+</svg>

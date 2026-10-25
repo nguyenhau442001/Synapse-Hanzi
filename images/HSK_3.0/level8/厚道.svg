@@ -1,0 +1,64 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle warm ambient glow to represent kindness/warmth -->
+  <circle cx="120" cy="115" r="70" fill="#E5A93B" opacity="0.08"/>
+
+  <!-- Character / Physical Object representing "厚道" (Kind, honest, benevolent person in a cooperative/fair exchange context) -->
+  <g id="hòudao-character">
+    <!-- Torso & Suit/Outfit (Warm, approachable yet professional attire) -->
+    <!-- Coat / Jacket base -->
+    <path d="M 80 175 L 80 145 Q 80 130 95 125 L 145 125 Q 160 130 160 145 L 160 175 Z" fill="#2C3545"/>
+    
+    <!-- Inner Shirt & Collar -->
+    <path d="M 105 125 L 120 145 L 135 125 Z" fill="#EAEAEA"/>
+    <path d="M 112 125 L 120 138 L 128 125 Z" fill="#D0342C"/> <!-- Subtle professional tie accent -->
+
+    <!-- Neck -->
+    <rect x="111" y="108" width="18" height="22" rx="6" fill="#F2C1A8"/>
+
+    <!-- Head & Face -->
+    <circle cx="120" cy="90" r="26" fill="#F2C1A8"/>
+
+    <!-- Gentle Friendly Smile & Warm Expression (representing honesty, kindness, reliability) -->
+    <!-- Eyes: Soft curved friendly eyes -->
+    <path d="M 107 88 Q 111 84 115 88" stroke="#3A2E2B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M 125 88 Q 129 84 133 88" stroke="#3A2E2B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <!-- Eyebrows: Relaxed, kind -->
+    <path d="M 105 81 Q 111 79 116 82" stroke="#3A2E2B" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M 124 82 Q 129 79 135 81" stroke="#3A2E2B" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <!-- Warm open smile -->
+    <path d="M 113 100 Q 120 106 127 100" stroke="#3A2E2B" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <!-- Rosy cheeks for warmth -->
+    <circle cx="102" cy="95" r="4" fill="#E8837D" opacity="0.4"/>
+    <circle cx="138" cy="95" r="4" fill="#E8837D" opacity="0.4"/>
+
+    <!-- Hair (Neat, mature, dependable styling) -->
+    <path d="M 94 92 Q 94 66 120 64 Q 146 66 146 92 Q 144 72 120 71 Q 96 72 94 92 Z" fill="#2E2827"/>
+
+    <!-- Arms & Fair/Balanced Interaction Gestures (Giving slightly more, sharing fairly) -->
+    <!-- Left arm (Balanced, open gesture offering cooperation) -->
+    <path d="M 82 135 Q 65 145 68 162" stroke="#2C3545" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <circle cx="68" cy="164" r="7" fill="#F2C1A8"/>
+
+    <!-- Right arm (Bearing a slight extra share / shouldering responsibility willingly without complaint) -->
+    <path d="M 158 135 Q 175 140 178 158" stroke="#2C3545" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <circle cx="179" cy="160" r="7" fill="#F2C1A8"/>
+
+    <!-- Scale / Balance Icon subtly integrated in front to symbolize fairness, integrity, and "厚道" (moral weight and fairness) -->
+    <g transform="translate(120, 172)">
+      <!-- Scale Stand -->
+      <rect x="-2" y="-12" width="4" height="16" fill="#E5A93B"/>
+      <rect x="-8" y="4" width="16" height="3" rx="1.5" fill="#E5A93B"/>
+      <!-- Scale Beam -->
+      <line x1="-18" y1="-12" x2="18" y2="-12" stroke="#E5A93B" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- Left Pan (Slightly lower to visually represent taking on a fair share/little loss willingly: 吃亏是福) -->
+      <path d="M -22 -4 L -14 -4 L -18 -8 Z" fill="#E5A93B"/>
+      <path d="M -24 -4 Q -18 3 -12 -4" stroke="#E5A93B" stroke-width="1.5" fill="none"/>
+      <!-- Right Pan (Balanced) -->
+      <path d="M 14 -7 L 22 -7 L 18 -11 Z" fill="#E5A93B"/>
+      <path d="M 12 -7 Q 18 0 24 -7" stroke="#E5A93B" stroke-width="1.5" fill="none"/>
+    </g>
+  </g>
+</svg>

@@ -640,8 +640,6 @@ function goBackToPicker() {
   document.body.classList.remove('flashcard-study-mode');
   const wasTopic = currentLevel && LEVELS[currentLevel] && LEVELS[currentLevel].isTopic;
   document.getElementById('screenCards').style.display = 'none';
-  const studyLevelBadge = document.getElementById('studyLevelBadge');
-  if (studyLevelBadge) studyLevelBadge.textContent = '';
   const vocabHub = document.getElementById('screenVocabHub');
   if (vocabHub) vocabHub.style.display = '';
   const auxCol = document.querySelector('.dashboard-aux-column');
@@ -696,8 +694,6 @@ async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal = false
   overviewStatus = 'all';
   try { localStorage.setItem(LAST_LEVEL_KEY, level); } catch (e) {}
   document.getElementById('appTitle').textContent = LEVELS[level].label + ' · Synapse Hanzi';
-  const studyLevelBadge = document.getElementById('studyLevelBadge');
-  if (studyLevelBadge && LEVELS[level]) studyLevelBadge.textContent = LEVELS[level].label;
   document.getElementById('primaryTabs').style.display = 'none';
   document.getElementById('pickerControls').style.display = 'none';
   document.getElementById('learningDashboard').style.display = 'none';

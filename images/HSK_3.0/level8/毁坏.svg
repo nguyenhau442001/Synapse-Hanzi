@@ -1,0 +1,72 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambient Glow & Debris Elements -->
+  <path d="M120 40 L210 190 H30 Z" fill="#EF4444" opacity="0.05" />
+  
+  <!-- Falling debris / destruction particles -->
+  <polygon points="50,90 60,85 55,95" fill="#EF4444" opacity="0.4" />
+  <rect x="185" y="110" width="8" height="8" transform="rotate(45 189 114)" fill="#F59E0B" opacity="0.6" />
+  <polygon points="170,70 180,75 175,85" fill="#EF4444" opacity="0.5" />
+  <circle cx="65" cy="150" r="3" fill="#F59E0B" opacity="0.7" />
+
+  <!-- Ground Plane -->
+  <path d="M30 190 L210 190" stroke="#2D3748" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Destroyed Structure / House (Collapsing) -->
+  <g opacity="0.8">
+    <!-- Intact background outline reference (ghost) -->
+    <polygon points="140,110 180,140 180,190 140,190" fill="none" stroke="#4A5568" stroke-dash_array="3,3" stroke-width="2" />
+    
+    <!-- Collapsing Wall -->
+    <path d="M130 130 L160 160 L140 190 L110 190 Z" fill="#334155" />
+    
+    <!-- Broken Roof Section falling -->
+    <path d="M125 110 L175 125 L150 100 Z" fill="#475569" transform="rotate(-15 150 115)" />
+    
+    <!-- Broken Beams / Planks -->
+    <line x1="135" y1="120" x2="165" y2="170" stroke="#EF4444" stroke-width="4" stroke-linecap="round" />
+    <line x1="160" y1="130" x2="125" y2="180" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Impact / Shockwave / Dynamic Action Effect -->
+  <path d="M110 145 C 100 130, 105 115, 90 110" stroke="#EF4444" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8" />
+  <path d="M115 160 C 95 150, 90 135, 75 130" stroke="#F59E0B" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.8" />
+  
+  <!-- Motion / Force Lines -->
+  <g stroke="#EF4444" stroke-width="3" stroke-linecap="round" opacity="0.9">
+    <line x1="60" y1="120" x2="95" y2="135" />
+    <line x1="50" y1="140" x2="85" y2="150" />
+    <line x1="70" y1="160" x2="105" y2="165" />
+  </g>
+
+  <!-- Dynamic Human Character (Action: Breaking / Causing Destruction) -->
+  <g>
+    <!-- Torso bent forward dynamically -->
+    <path d="M75 140 L95 165 L85 190" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    
+    <!-- Head -->
+    <circle cx="65" cy="125" r="9" fill="#38BDF8" />
+    
+    <!-- Back Leg / Foot anchored -->
+    <path d="M85 190 L60 190" stroke="#0284C7" stroke-width="7" stroke-linecap="round" fill="none" />
+    
+    <!-- Front Leg stepping forward -->
+    <path d="M95 165 L115 190" stroke="#38BDF8" stroke-width="7" stroke-linecap="round" fill="none" />
+    
+    <!-- Powerful Striking Arm / Tool -->
+    <path d="M75 140 L110 150" stroke="#38BDF8" stroke-width="6" stroke-linecap="round" fill="none" />
+    
+    <!-- Impact Object / Heavy Hammer or Fist -->
+    <circle cx="115" cy="152" r="8" fill="#F59E0B" />
+  </g>
+
+  <!-- Dust and Debris Clouds -->
+  <circle cx="130" cy="180" r="12" fill="#64748B" opacity="0.5" />
+  <circle cx="145" cy="185" r="8" fill="#475569" opacity="0.6" />
+  <circle cx="110" cy="185" r="10" fill="#64748B" opacity="0.4" />
+
+  <!-- Spark / Destruction Flash -->
+  <path d="M115 142 L120 152 L127 147 L122 157 L132 160 L122 163 L125 170 L117 162 L110 167 L113 158 Z" fill="#FBBF24" />
+</svg>

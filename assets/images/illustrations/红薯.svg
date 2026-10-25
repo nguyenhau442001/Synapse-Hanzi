@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle warm glow behind the roasted sweet potato -->
+  <circle cx="120" cy="120" r="70" fill="#FF7A00" opacity="0.12" filter="blur(16px)"/>
+
+  <!-- Steam/Heat wisps (winter theme) -->
+  <g fill="none" stroke="#FFB84D" stroke-width="2.5" stroke-linecap="round" opacity="0.75">
+    <path d="M95 55 C90 45 105 35 100 25" />
+    <path d="M120 50 C125 40 110 30 115 18" />
+    <path d="M145 55 C150 45 135 35 140 25" />
+  </g>
+
+  <!-- Roasted Sweet Potato (红薯) Graphic -->
+  <g transform="translate(120, 130)">
+    <!-- Charred/Crispy rustic skin (Dark brownish-purple) -->
+    <path d="M -75,0 C -85,-35 -40,-65 0,-60 C 45,-55 80,-25 75,10 C 70,45 35,60 0,55 C -45,50 -65,35 -75,0 Z" fill="#3D2636"/>
+    
+    <!-- Potato body base color (Warm deep terracotta/brown) -->
+    <path d="M -70,0 C -78,-32 -38,-58 0,-54 C 41,-50 74,-23 70,8 C 65,40 32,54 0,50 C -41,45 -62,32 -70,0 Z" fill="#8B4513"/>
+
+    <!-- Lighter roasted contours & texture bumps -->
+    <path d="M -50,-20 C -25,-45 25,-40 50,-15 C 35,10 -15,25 -50,-20 Z" fill="#A0522D" opacity="0.7"/>
+
+    <!-- Broken open section revealing steaming golden-orange flesh -->
+    <path d="M -25,-15 C -5,-35 25,-25 35,-5 C 40,15 15,30 -10,20 C -30,10 -35,0 -25,-15 Z" fill="#FF8C00"/>
+    
+    <!-- Sweet glowing core & caramelized sugar syrup drops -->
+    <path d="M -15,-5 C 5,-20 20,-10 25,5 C 10,18 -5,10 -15,-5 Z" fill="#FFA500"/>
+    <ellipse cx="5" cy="0" rx="6" ry="4" fill="#FFD700" opacity="0.9"/>
+    
+    <!-- Caramel drips/gleams inside the split -->
+    <path d="M 12,8 Q 15,14 18,10" fill="none" stroke="#FF4500" stroke-width="2" stroke-linecap="round"/>
+    <path d="M -5,5 Q -8,12 -2,10" fill="none" stroke="#FF4500" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Natural surface texture lines / irregularities -->
+    <path d="M -55,-5 C -40,10 -50,30 -35,42" fill="none" stroke="#5C2E0B" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    <path d="M 30,-35 C 45,-20 55,-10 50,5" fill="none" stroke="#5C2E0B" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M -20,-42 C 0,-45 15,-40 25,-35" fill="none" stroke="#5C2E0B" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Highlights -->
+    <path d="M -52,-28 C -35,-42 -10,-42 5,-36" fill="none" stroke="#B86532" stroke-width="3.5" stroke-linecap="round" opacity="0.8"/>
+  </g>
+
+  <!-- Ground shadow -->
+  <ellipse cx="120" cy="188" rx="65" ry="10" fill="#0D0F13" opacity="0.6"/>
+</svg>

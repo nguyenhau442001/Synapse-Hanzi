@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed dark mode container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements for depth -->
+  <circle cx="120" cy="120" r="88" fill="none" stroke="#262B35" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <circle cx="120" cy="120" r="70" fill="#222732"/>
+
+  <!-- Conceptual Representation for "灵巧" (Agile/Dexterous Hands with Embroidery/Artisan Craft) -->
+  <g transform="translate(120, 120)">
+    <!-- Fabric/Silk Curving Flow (Background) -->
+    <path d="M-60 30 C -20 60, 20 10, 60 40 C 80 55, 70 80, 50 85" fill="none" stroke="#3A4454" stroke-width="6" stroke-linecap="round"/>
+    <path d="M-50 -10 C -10 20, 30 -30, 70 -5 C 90 10, 60 35, 40 40" fill="none" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Glowing Golden Thread & Needle (Precision & Dexterity) -->
+    <path d="M-70 -30 Q -20 -60, 20 -10 T 70 50" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-dasharray="120" stroke-dashoffset="0"/>
+    
+    <!-- Modern Needle -->
+    <g transform="translate(45, 25) rotate(-35)">
+      <rect x="-2" y="-20" width="4" height="40" rx="2" fill="#E2E8F0"/>
+      <circle cx="0" cy="-12" r="1" fill="#1A1D24"/>
+      <polygon points="0,-24 -2,-20 2,-20" fill="#E2E8F0"/>
+    </g>
+
+    <!-- Stylized Dexterous Hands (Left and Right framing the creation) -->
+    <!-- Left Hand (Agile fingers) -->
+    <g transform="translate(-45, 10)">
+      <path d="M-15 40 C -20 20, -5 10, 0 0 C 3 -5, 8 -2, 6 5 C 4 12, 12 18, 10 25 C 8 32, 15 38, 10 45 Z" fill="#FBBF24"/>
+      <!-- Fingers detail -->
+      <path d="M -5 5 L -12 -5 M 0 3 L -5 -10 M 6 8 L 2 -4" stroke="#D97706" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Right Hand (Nimble fingers balancing the needle/thread) -->
+    <g transform="translate(25, -25) scale(-1, 1)">
+      <path d="M-15 40 C -20 20, -5 10, 0 0 C 3 -5, 8 -2, 6 5 C 4 12, 12 18, 10 25 C 8 32, 15 38, 10 45 Z" fill="#FBBF24"/>
+      <!-- Fingers detail -->
+      <path d="M -5 5 L -12 -5 M 0 3 L -5 -10 M 6 8 L 2 -4" stroke="#D97706" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Blooming Peony Motif (Result of the skilled hands) -->
+    <g transform="translate(0, -35)">
+      <circle cx="0" cy="0" r="14" fill="#F43F5E"/>
+      <path d="M-10 -8 C -15 -18, 0 -22, 5 -12 C 15 -15, 20 0, 10 5 C 18 12, 5 22, -2 12 C -12 18, -20 5, -10 -8 Z" fill="#FB7185" opacity="0.8"/>
+      <circle cx="0" cy="0" r="5" fill="#FDE047"/>
+    </g>
+    
+    <!-- Sparkles/Focus indicators (Highlighting precision & mastery) -->
+    <path d="M -60 -40 L -56 -40 L -56 -36 L -52 -36 L -52 -40 L -48 -40 L -48 -44 L -52 -44 L -52 -48 L -56 -48 L -56 -44 L -60 -44 Z" fill="#F59E0B"/>
+    <path d="M 55 -50 L 58 -50 L 58 -47 L 61 -47 L 61 -50 L 64 -50 L 64 -53 L 61 -53 L 61 -56 L 58 -56 L 58 -53 L 55 -53 Z" fill="#F59E0B" transform="scale(0.8) translate(20, -10)"/>
+  </g>
+</svg>

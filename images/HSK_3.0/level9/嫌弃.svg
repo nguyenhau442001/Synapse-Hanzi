@@ -1,0 +1,56 @@
+<svg width="240" height="240" rx="24" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle atmosphere -->
+  <circle cx="120" cy="120" r="85" fill="#222733" opacity="0.6"/>
+
+  <!-- Scene Representation for "嫌弃" (rejection, disdain, turning away in disgust) -->
+  <g transform="translate(0, 5)">
+    <!-- Person A (Rejecting / Disdained figure) - Turning away with crossed arms -->
+    <g transform="translate(145, 65)">
+      <!-- Body / Torso -->
+      <path d="M 15 45 L 35 105 L -5 105 Z" fill="#2E3545"/>
+      <!-- Head -->
+      <circle cx="15" cy="22" r="14" fill="#E6EDF5"/>
+      <!-- Hair -->
+      <path d="M 1 20 C 1 10, 20 5, 29 18 C 24 15, 10 16, 1 20 Z" fill="#A2ABB8"/>
+      <!-- Facial expression: closed eyes, turned down mouth indicating disgust -->
+      <path d="M 10 24 L 16 22" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+      <path d="M 10 30 C 12 28, 15 28, 17 30" stroke="#1A1D24" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+      <!-- Arms crossed pushing away -->
+      <path d="M 5 50 L 25 65 L 12 75 Z" fill="#3B4459"/>
+      <path d="M 25 48 L 5 62" stroke="#3B4459" stroke-width="7" stroke-linecap="round"/>
+    </g>
+
+    <!-- Person B (Being rejected / Left aside) - Dropped posture, holding a hand out in confusion/hurt -->
+    <g transform="translate(75, 75)">
+      <!-- Body / Torso -->
+      <path d="M -5 35 L 15 95 L -25 95 Z" fill="#384356"/>
+      <!-- Head -->
+      <circle cx="-5" cy="15" r="13" fill="#D4DEE8"/>
+      <!-- Hair -->
+      <path d="M -18 13 C -18 3, -2 0, 8 10 C 2 8, -10 9, -18 13 Z" fill="#69758C"/>
+      <!-- Sad expression -->
+      <circle cx="-9" cy="15" r="1.5" fill="#1A1D24"/>
+      <path d="M -10 23 C -8 21, -6 21, -4 23" stroke="#1A1D24" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+      <!-- Dropped arm -->
+      <path d="M -15 40 L -25 65" stroke="#384356" stroke-width="6" stroke-linecap="round"/>
+    </g>
+
+    <!-- Separation / Disdain Visual Indicators (Aversion vector lines & cold atmosphere) -->
+    <!-- Repulsion lines between figures -->
+    <path d="M 115 110 C 120 100, 120 90, 115 80" stroke="#E06C75" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <path d="M 122 115 C 128 105, 128 95, 122 85" stroke="#E06C75" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+
+    <!-- Small dust / rejection particle elements -->
+    <circle cx="112" cy="70" r="2" fill="#E06C75" opacity="0.7"/>
+    <circle cx="128" cy="125" r="1.5" fill="#E06C75" opacity="0.5"/>
+  </g>
+
+  <!-- Ground shadow -->
+  <ellipse cx="120" cy="185" rx="75" ry="6" fill="#111317"/>
+
+  <!-- Accent Focus Frame / Highlight -->
+  <path d="M 50 160 L 190 160" stroke="#E06C75" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+</svg>

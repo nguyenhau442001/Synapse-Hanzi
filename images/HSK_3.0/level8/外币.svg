@@ -1,0 +1,72 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Background subtle lighting/glow for focus -->
+    <circle cx="120" cy="120" r="70" fill="#252A34" opacity="0.6"/>
+
+    <!-- Bank / Exchange Counter shape (subtle base context) -->
+    <path d="M70 165 L170 165 L178 190 L62 190 Z" fill="#2D3748" opacity="0.8"/>
+    <rect x="85" y="150" width="70" height="15" rx="3" fill="#4A5568"/>
+
+    <!-- Foreign Currency Stack 1 (Back, tilted left) -->
+    <g transform="translate(85, 110) rotate(-12)">
+      <rect x="-35" y="-22" width="70" height="44" rx="6" fill="#10B981" opacity="0.9"/>
+      <rect x="-31" y="-18" width="62" height="36" rx="4" fill="#047857"/>
+      <!-- Dollar symbol/abstract security pattern -->
+      <circle cx="0" cy="0" r="12" fill="#10B981" opacity="0.5"/>
+      <text x="0" y="5" font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="#D1FAE5" text-anchor="middle">$</text>
+    </g>
+
+    <!-- Foreign Currency Stack 2 (Right, tilted right) -->
+    <g transform="translate(155, 125) rotate(15)">
+      <rect x="-35" y="-22" width="70" height="44" rx="6" fill="#3B82F6" opacity="0.9"/>
+      <rect x="-31" y="-18" width="62" height="36" rx="4" fill="#1D4ED8"/>
+      <!-- Euro/Foreign symbol -->
+      <circle cx="0" cy="0" r="12" fill="#3B82F6" opacity="0.5"/>
+      <text x="0" y="5" font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="#DBEAFE" text-anchor="middle">€</text>
+    </g>
+
+    <!-- Main Central Currency Stack (Gold/Primary focus - representing exchanged foreign currency) -->
+    <g transform="translate(120, 95)">
+      <!-- Drop shadow for depth -->
+      <ellipse cx="0" cy="30" rx="45" ry="12" fill="#0D1117" opacity="0.4"/>
+      
+      <!-- Bill layers -->
+      <rect x="-42" y="10" width="84" height="48" rx="8" fill="#F59E0B"/>
+      <rect x="-42" y="5" width="84" height="48" rx="8" fill="#FBBF24"/>
+      <rect x="-42" y="0" width="84" height="48" rx="8" fill="#FCD34D"/>
+
+      <!-- Inner bill design details -->
+      <rect x="-36" y="6" width="72" height="36" rx="4" fill="#F59E0B" opacity="0.3"/>
+      
+      <!-- Central Emblem/Portrait area -->
+      <circle cx="0" cy="24" r="14" fill="#D97706"/>
+      <circle cx="0" cy="24" r="10" fill="#FEF3C7"/>
+      
+      <!-- Star/Geometric security mark inside emblem -->
+      <path d="M0 17 L2.2 21.5 L7.2 22.2 L3.6 25.8 L4.5 30.8 L0 28.4 L-4.5 30.8 L-3.6 25.8 L-7.2 22.2 L-2.2 21.5 Z" fill="#D97706"/>
+
+      <!-- Corner security ornaments -->
+      <circle cx="-30" cy="12" r="3" fill="#D97706"/>
+      <circle cx="30" cy="12" r="3" fill="#D97706"/>
+      <circle cx="-30" cy="36" r="3" fill="#D97706"/>
+      <circle cx="30" cy="36" r="3" fill="#D97706"/>
+    </g>
+
+    <!-- Exchange / Conversion Motion Arrows (Sleek, modern floating indicators) -->
+    <g stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <!-- Left curved arrow pointing in -->
+      <path d="M55 75 C 45 90, 45 110, 60 120"/>
+      <path d="M50 112 L60 120 L52 128"/>
+
+      <!-- Right curved arrow pointing out -->
+      <path d="M185 75 C 195 90, 195 110, 180 120"/>
+      <path d="M190 112 L180 120 L188 128"/>
+    </g>
+
+    <!-- Sparkling accent highlights to denote value/currency -->
+    <path d="M 68 55 L 70 62 L 77 64 L 70 66 L 68 73 L 66 66 L 59 64 L 66 62 Z" fill="#FDE047"/>
+    <path d="M 172 45 L 173.5 50 L 178.5 51.5 L 173.5 53 L 172 58 L 170.5 53 L 165.5 51.5 L 170.5 50 Z" fill="#38BDF8"/>
+  </g>
+</svg>

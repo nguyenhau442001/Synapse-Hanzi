@@ -1,0 +1,61 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative grounding elements -->
+  <path d="M40 180 C 80 170, 160 170, 200 180" stroke="#2A2F3B" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Left Character (Person A) - Distinctive pose & style -->
+  <g transform="translate(65, 80)">
+    <!-- Shadow -->
+    <ellipse cx="15" cy="95" rx="18" ry="5" fill="#12141A"/>
+    <!-- Body / Torso -->
+    <path d="M 0 75 Q 15 50, 30 75 L 35 95 L -5 95 Z" fill="#3B82F6"/>
+    <!-- Head -->
+    <circle cx="15" cy="30" r="16" fill="#FDE047"/>
+    <!-- Hair -->
+    <path d="M 1 22 Q 15 10, 29 22 Q 31 35, 30 25 Q 15 15, 0 25 Z" fill="#1E293B"/>
+    <!-- Glasses / Distinct feature representing individuality -->
+    <rect x="7" y="24" width="16" height="8" rx="2" fill="none" stroke="#1E293B" stroke-width="2"/>
+    <line x1="23" y1="28" x2="27" y2="26" stroke="#1E293B" stroke-width="2"/>
+    <!-- Arms interacting with unique path -->
+    <path d="M 0 65 Q -10 50, -5 40" fill="none" stroke="#3B82F6" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Right Character (Person B) - Distinctive pose & style -->
+  <g transform="translate(145, 80)">
+    <!-- Shadow -->
+    <ellipse cx="15" cy="95" rx="18" ry="5" fill="#12141A"/>
+    <!-- Body / Torso -->
+    <path d="M 0 75 Q 15 50, 30 75 L 35 95 L -5 95 Z" fill="#F97316"/>
+    <!-- Head -->
+    <circle cx="15" cy="30" r="16" fill="#FDE047"/>
+    <!-- Hair (Different style) -->
+    <path d="M 0 24 Q 15 12, 30 24 L 30 18 Q 15 8, 0 18 Z" fill="#451A03"/>
+    <!-- Headband / Distinct feature -->
+    <rect x="-1" y="22" width="32" height="5" rx="2" fill="#EF4444"/>
+    <!-- Arms interacting -->
+    <path d="M 30 65 Q 40 50, 35 40" fill="none" stroke="#F97316" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Divergent Paths / Methods (Visualizing "differing depending on the person") -->
+  <!-- Left distinct method trail -->
+  <path d="M 80 150 C 70 170, 50 160, 35 190" stroke="#3B82F6" stroke-width="4" stroke-dasharray="6 4" stroke-linecap="round" fill="none"/>
+  <circle cx="35" cy="190" r="6" fill="#3B82F6"/>
+
+  <!-- Right distinct method trail -->
+  <path d="M 160 150 C 170 170, 190 160, 205 190" stroke="#F97316" stroke-width="4" stroke-dasharray="6 4" stroke-linecap="round" fill="none"/>
+  <circle cx="205" cy="190" r="6" fill="#F97316"/>
+
+  <!-- Central diverging dynamic indicator -->
+  <g transform="translate(120, 120)">
+    <!-- Split arrows radiating outward -->
+    <path d="M -15 -10 L -35 -25" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 15 -10 L 35 -25" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="-35,-20 -43,-27 -33,-30" fill="#E2E8F0"/>
+    <polygon points="35,-20 43,-27 33,-30" fill="#E2E8F0"/>
+    
+    <!-- Core focal node -->
+    <circle cx="0" cy="-10" r="10" fill="#14B8A6"/>
+    <circle cx="0" cy="-10" r="4" fill="#FFFFFF"/>
+  </g>
+</svg>

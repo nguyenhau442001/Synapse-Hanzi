@@ -1,0 +1,67 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient background glow for rustic elegance -->
+  <circle cx="120" cy="120" r="80" fill="#E8A838" opacity="0.05" filter="blur(20px)"/>
+
+  <!-- Conceptual Representation of "古朴" (Traditional, Ancient, Simple/Rustic Architecture) -->
+  <g transform="translate(0, 5)">
+    <!-- Base / Ground platform -->
+    <path d="M50 170 L190 170 L200 180 L40 180 Z" fill="#2A303C"/>
+    <line x1="45" y1="175" x2="195" y2="175" stroke="#3A4250" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+    <!-- Traditional Ming/Qing Style Architectural Elements -->
+    <!-- Stone wall foundation texture -->
+    <rect x="65" y="130" width="110" height="40" fill="#2D3440" rx="2"/>
+    <path d="M65 143 L175 143 M65 156 L175 156 M95 130 L95 143 M135 143 L135 156 M80 156 L80 170 M150 156 L150 170" stroke="#1A1D24" stroke-width="1.5"/>
+
+    <!-- Wooden Pillar Structure (Mortal/Rustic dark wood) -->
+    <rect x="75" y="90" width="12" height="40" fill="#5C3A21" rx="1"/>
+    <rect x="153" y="90" width="12" height="40" fill="#5C3A21" rx="1"/>
+    <rect x="73" y="125" width="16" height="6" fill="#3D2514" rx="1"/>
+    <rect x="151" y="125" width="16" height="6" fill="#3D2514" rx="1"/>
+
+    <!-- Lattice Wooden Window (Traditional Chinese Window Frame) -->
+    <rect x="95" y="98" width="50" height="32" fill="#3D2514" rx="2"/>
+    <rect x="99" y="102" width="42" height="24" fill="#15181E"/>
+    <!-- Window grid -->
+    <line x1="120" y1="102" x2="120" y2="126" stroke="#3D2514" stroke-width="2"/>
+    <line x1="99" y1="114" x2="141" y2="114" stroke="#3D2514" stroke-width="2"/>
+    <line x1="109" y1="102" x2="109" y2="126" stroke="#3D2514" stroke-width="1.5"/>
+    <line x1="131" y1="102" x2="131" y2="126" stroke="#3D2514" stroke-width="1.5"/>
+
+    <!-- Roof Eaves (Traditional Curved Tile Roof - representing age and simplicity) -->
+    <!-- Main Roof Body -->
+    <path d="M50 85 L190 85 L175 60 L65 60 Z" fill="#343B48"/>
+    <!-- Tile Ridges -->
+    <line x1="75" y1="60" x2="60" y2="85" stroke="#252A34" stroke-width="2"/>
+    <line x1="95" y1="60" x2="85" y2="85" stroke="#252A34" stroke-width="2"/>
+    <line x1="115" y1="60" x2="110" y2="85" stroke="#252A34" stroke-width="2"/>
+    <line x1="125" y1="60" x2="130" y2="85" stroke="#252A34" stroke-width="2"/>
+    <line x1="145" y1="60" x2="155" y2="85" stroke="#252A34" stroke-width="2"/>
+    <line x1="165" y1="60" x2="180" y2="85" stroke="#252A34" stroke-width="2"/>
+
+    <!-- Overhanging Curved Eaves (Classic sweeping roof corners) -->
+    <path d="M40 85 C45 83 55 83 65 85 L55 92 C45 90 42 88 40 85 Z" fill="#E8A838" opacity="0.9"/>
+    <path d="M200 85 C195 83 185 83 175 85 L185 92 C195 90 198 88 200 85 Z" fill="#E8A838" opacity="0.9"/>
+    <path d="M65 60 L175 60 L180 54 L60 54 Z" fill="#252A34"/>
+    
+    <!-- Ridge tile cap (Center) -->
+    <path d="M60 54 L180 54 L175 50 L65 50 Z" fill="#E8A838" opacity="0.8"/>
+
+    <!-- Subtle Plum Blossom / Nature Branch accent denoting quiet elegance (幽雅) -->
+    <path d="M165 140 C175 130 185 135 190 125" fill="none" stroke="#5C3A21" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="185" cy="128" r="3" fill="#E8A838" opacity="0.8"/>
+    <circle cx="192" cy="122" r="2.5" fill="#E8A838" opacity="0.8"/>
+    <circle cx="178" cy="133" r="2" fill="#E8A838" opacity="0.6"/>
+
+    <!-- Lantern casting a warm, rustic glow (representing the cozy, lived-in ancient vibe) -->
+    <line x1="60" y1="75" x2="60" y2="95" stroke="#1A1D24" stroke-width="1.5"/>
+    <path d="M55 95 L65 95 L68 108 L52 108 Z" fill="#C0392B"/>
+    <path d="M53 108 L67 108 L65 113 L55 113 Z" fill="#962D22"/>
+    <ellipse cx="60" cy="101.5" rx="5" ry="3.5" fill="#E8A838" opacity="0.9"/>
+    <!-- Glow effect from lantern -->
+    <circle cx="60" cy="101.5" r="12" fill="#E8A838" opacity="0.25" filter="blur(4px)"/>
+  </g>
+</svg>

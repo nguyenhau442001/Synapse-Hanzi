@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambient Glow -->
+  <circle cx="120" cy="120" r="80" fill="#242B38" opacity="0.6"/>
+
+  <!-- Frost/Hazard Atmosphere (Dark blue-grey shards in background) -->
+  <g opacity="0.3">
+    <path d="M40 70 L50 85 L35 90 Z" fill="#4B6584"/>
+    <path d="M190 60 L180 80 L195 85 Z" fill="#4B6584"/>
+    <path d="M200 150 L185 160 L195 175 Z" fill="#4B6584"/>
+    <path d="M45 160 L60 155 L55 170 Z" fill="#4B6584"/>
+  </g>
+
+  <!-- Central Physical Object: Modern Double-Layer Climate-Controlled Greenhouse (Safe/Escaped) -->
+  <g transform="translate(120, 125)">
+    <!-- Outer Shield / Outer Glass Arch -->
+    <path d="M -60 10 L -60 -25 C -60 -55 -30 -75 0 -75 C 30 -75 60 -55 60 -25 L 60 10 Z" 
+          fill="#2C3A47" stroke="#4B6584" stroke-width="2.5" stroke-linejoin="round"/>
+          
+    <!-- Inner Dome Layer (Double-layer technology representing protection) -->
+    <path d="M -48 10 L -48 -20 C -48 -45 -24 -60 0 -60 C 24 -60 48 -45 48 -20 L 48 10 Z" 
+          fill="#1E272C" stroke="#38ADA4" stroke-width="2" stroke-linejoin="round" opacity="0.85"/>
+
+    <!-- Greenhouse Glass Panels Grid (Inner) -->
+    <path d="M -48 -25 L 48 -25 M -35 -42 L 35 -42 M 0 -60 L 0 10" stroke="#38ADA4" stroke-width="1.5" opacity="0.4"/>
+
+    <!-- Base Structure -->
+    <rect x="-66" y="10" width="132" height="10" rx="3" fill="#4B6584"/>
+
+    <!-- Safe Thriving Plant Inside (Escaped the hazard) -->
+    <!-- Soil Bed -->
+    <rect x="-30" y="2" width="60" height="8" rx="2" fill="#718093"/>
+    
+    <!-- Vibrant Green Sprout/Tree representing life preserved -->
+    <path d="M 0 2 L 0 -18" stroke="#2ED573" stroke-width="4" stroke-linecap="round"/>
+    <!-- Leaves -->
+    <path d="M 0 -8 C -15 -18 -20 -2 -10 2 C -4 4 -2 -2 0 -8 Z" fill="#2ED573"/>
+    <path d="M 0 -14 C 15 -24 20 -8 10 -4 C 4 -2 2 -8 0 -14 Z" fill="#2ED573"/>
+  </g>
+
+  <!-- External Hazard Indicator: Frost Crystal / Danger Element cleanly deflected -->
+  <g transform="translate(120, 45)">
+    <!-- Golden Accent / Glow representing successful evasion / luck -->
+    <circle cx="0" cy="0" r="22" fill="#FFA502" opacity="0.15"/>
+    <circle cx="0" cy="0" r="16" fill="none" stroke="#FFA502" stroke-width="2" stroke-dasharray="4 3"/>
+    
+    <!-- Stylized Safe Check / Shield Icon floating precisely above -->
+    <path d="M -5 1 L -1 5 L 7 -4" fill="none" stroke="#FFA502" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

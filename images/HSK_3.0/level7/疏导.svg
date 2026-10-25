@@ -1,0 +1,34 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Traffic Officer -->
+  <g transform="translate(120, 120)">
+    <!-- Body -->
+    <path d="M-15 20 L-15 60 L15 60 L15 20 Z" fill="#2C3E50"/>
+    <!-- Head -->
+    <circle cx="0" cy="0" r="15" fill="#F39C12"/>
+    <!-- Hat -->
+    <rect x="-18" y="-25" width="36" height="10" rx="2" fill="#34495E"/>
+    <!-- Arms signaling -->
+    <path d="M-15 25 L-45 5 L-50 15" stroke="#F39C12" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M15 25 L45 25 L50 35" stroke="#F39C12" stroke-width="8" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Traffic Flow Visualization -->
+  <g stroke-width="4" fill="none" stroke-linecap="round">
+    <!-- Left Lane (Flowing) -->
+    <path d="M40 180 Q 80 180 80 140 L 80 60" stroke="#3498DB" stroke-dasharray="8 8"/>
+    <!-- Right Lane (Flowing) -->
+    <path d="M200 180 Q 160 180 160 140 L 160 60" stroke="#3498DB" stroke-dasharray="8 8"/>
+    <!-- Top Lane (Flowing) -->
+    <path d="M120 40 L 120 80" stroke="#3498DB" stroke-dasharray="8 8"/>
+    <!-- Bottom Lane (Flowing) -->
+    <path d="M120 200 L 120 160" stroke="#3498DB" stroke-dasharray="8 8"/>
+  </g>
+
+  <!-- Vehicles (Simplified) -->
+  <rect x="70" y="190" width="20" height="12" rx="2" fill="#E74C3C"/>
+  <rect x="150" y="50" width="20" height="12" rx="2" fill="#E74C3C"/>
+  <rect x="30" y="130" width="12" height="20" rx="2" fill="#2ECC71"/>
+  <rect x="198" y="130" width="12" height="20" rx="2" fill="#2ECC71"/>
+</svg>

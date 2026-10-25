@@ -1,0 +1,37 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative subtle elements -->
+  <circle cx="120" cy="120" r="80" fill="none" stroke="#2A2F3B" stroke-width="2" stroke-dasharray="4 4" opacity="0.5"/>
+  <path d="M 60 170 L 180 170" stroke="#2A2F3B" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Concept: "亲身" (Personal experience / Direct involvement) -->
+  <!-- Visualizing a dedicated human figure physically climbing/experiencing a rocky path directly, contrasting with passive observation -->
+  
+  <!-- Mountain/Path shape representing the "hardships" (艰辛磨难) -->
+  <path d="M 50 170 L 90 120 L 130 145 L 180 80 L 200 170 Z" fill="#222733"/>
+  <path d="M 90 120 L 130 145 L 180 80" fill="none" stroke="#3A4252" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Character actively climbing/stepping directly (representing 亲身 - doing it oneself) -->
+  <!-- Legs in motion (First-hand physical action) -->
+  <path d="M 115 135 L 128 115 L 140 130" fill="none" stroke="#4DA3FF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Torso -->
+  <path d="M 115 110 L 120 135" stroke="#E6EDF5" stroke-width="8" stroke-linecap="round"/>
+  <!-- Head -->
+  <circle cx="112" cy="98" r="8" fill="#E6EDF5"/>
+  <!-- Arms reaching up (effort, direct experience) -->
+  <path d="M 115 112 L 100 100" fill="none" stroke="#E6EDF5" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 118 115 L 132 105" fill="none" stroke="#E6EDF5" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Accent highlight representing the breakthrough/success at the top (黄金/橙色 - focus accent) -->
+  <circle cx="180" cy="80" r="10" fill="#FFB800"/>
+  <path d="M 180 65 L 180 70" stroke="#FFB800" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 180 90 L 180 95" stroke="#FFB800" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 165 80 L 170 80" stroke="#FFB800" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 190 80 L 195 80" stroke="#FFB800" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Footprints on the ground path showing direct personal journey -->
+  <ellipse cx="80" cy="155" rx="5" ry="3" fill="#4DA3FF" opacity="0.6" transform="rotate(-15 80 155)"/>
+  <ellipse cx="100" cy="142" rx="5" ry="3" fill="#4DA3FF" opacity="0.8" transform="rotate(-10 100 142)"/>
+</svg>

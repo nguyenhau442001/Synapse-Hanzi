@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "内地" (Interior/Mainland/Hinterland) -->
+  <!-- Context: Coastal enterprises expanding inward to the central/western interior -->
+
+  <!-- Background topographical elements representing distance from coast -->
+  <path d="M 30 180 Q 80 160 120 170 Q 180 185 210 160" fill="none" stroke="#2A303C" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 40 195 Q 90 175 140 185 Q 190 195 210 180" fill="none" stroke="#2A303C" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Coastal Line on the left/edge context -->
+  <path d="M 20 130 C 25 150 20 180 30 210" fill="none" stroke="#3A4454" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Central Mainland / Hinterland (内地) - Focal physical place & development -->
+  <!-- Mountain ranges in the interior background -->
+  <polygon points="110,130 145,80 180,130" fill="#242B36"/>
+  <polygon points="70,140 110,95 150,140" fill="#2C3542"/>
+  <polygon points="140,140 175,90 210,140" fill="#2C3542"/>
+  <polygon points="130,95 145,80 160,95 145,110" fill="#364150"/> <!-- Snow peak accent -->
+
+  <!-- Landmass base -->
+  <path d="M 40 140 Q 120 120 200 140 L 210 200 Q 120 215 30 200 Z" fill="#222831"/>
+
+  <!-- Grid/Terrain plateau representation of the vast inland -->
+  <path d="M 60 150 L 180 150 L 195 185 L 45 185 Z" fill="#2A323D"/>
+  
+  <!-- Expansion/Development infrastructure (Roads / Arrows pointing inward) -->
+  <path d="M 25 165 C 50 165 80 160 110 165 C 130 168 160 172 190 170" fill="none" stroke="#F39C12" stroke-width="3" stroke-dasharray="6,4" stroke-linecap="round"/>
+
+  <!-- Target / Focal Icon representing the Interior Hub (内地) -->
+  <g transform="translate(120, 145)">
+    <!-- Outer pulse ring -->
+    <circle cx="0" cy="0" r="22" fill="none" stroke="#F39C12" stroke-width="1.5" opacity="0.4"/>
+    <!-- Inner glowing node -->
+    <circle cx="0" cy="0" r="14" fill="#F39C12" opacity="0.2"/>
+    <circle cx="0" cy="0" r="8" fill="#F39C12"/>
+    <circle cx="0" cy="0" r="3" fill="#1A1D24"/>
+  </g>
+
+  <!-- Modern architectural/development markers in the interior -->
+  <rect x="95" y="132" width="6" height="18" rx="1" fill="#4E6075"/>
+  <polygon points="98,126 92,132 104,132" fill="#F39C12"/>
+
+  <rect x="145" y="135" width="8" height="15" rx="1" fill="#4E6075"/>
+  <polygon points="149,128 143,135 155,135" fill="#F39C12"/>
+
+  <!-- Compass / Directional Indicator framing the "interior" concept -->
+  <path d="M 215 50 L 215 30 L 195 30" fill="none" stroke="#4E6075" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="215" cy="30" r="2" fill="#4E6075"/>
+  <line x1="215" y1="30" x2="205" y2="40" stroke="#F39C12" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Desk/Surface -->
+  <path d="M40 160 L200 160 L190 180 L50 180 Z" fill="#2C313C"/>
+  
+  <!-- Hand 1 (Giving - Donor) -->
+  <path d="M170 140 L190 120 L205 135 L185 155 Z" fill="#FFB347"/>
+  <path d="M185 155 C190 160 195 155 195 150 L205 135" stroke="#FFB347" stroke-width="12" stroke-linecap="round"/>
+  
+  <!-- Money Stack (The Bribe) -->
+  <rect x="130" y="145" width="40" height="25" rx="2" fill="#FFD700"/>
+  <rect x="132" y="142" width="40" height="25" rx="2" fill="#FFD700"/>
+  <rect x="134" y="139" width="40" height="25" rx="2" fill="#FFD700"/>
+  
+  <!-- Hand 2 (Receiving - Official) -->
+  <path d="M120 145 L100 125 L85 140 L105 160 Z" fill="#FFB347"/>
+  <path d="M105 160 C100 165 95 160 95 155 L85 140" stroke="#FFB347" stroke-width="12" stroke-linecap="round"/>
+  
+  <!-- Official's Sleeve/Arm -->
+  <path d="M80 160 L40 200" stroke="#4A90E2" stroke-width="20" stroke-linecap="round"/>
+  
+  <!-- Motion Lines -->
+  <path d="M140 120 Q150 110 160 120" stroke="#FFD700" stroke-width="3" fill="none" stroke-dasharray="4 4"/>
+  <path d="M135 115 Q150 100 165 115" stroke="#FFD700" stroke-width="3" fill="none" stroke-dasharray="4 4"/>
+</svg>

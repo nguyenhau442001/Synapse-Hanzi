@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle warm glow representing sincerity and earnestness -->
+  <circle cx="120" cy="120" r="70" fill="#FF8C42" opacity="0.08" filter="blur(15px)"/>
+
+  <!-- Physical Object: A heartfelt handwritten letter / document (representing "来信/言辞") with an emanating warm glow of sincerity -->
+  <!-- Letter base / envelope -->
+  <path d="M70,85 L170,85 C175.5,85 180,89.5 180,95 L180,165 C180,170.5 175.5,175 170,175 L70,175 C64.5,175 60,170.5 60,165 L60,95 C60,89.5 64.5,85 70,85 Z" fill="#2A2F3D" stroke="#3E4558" stroke-width="2"/>
+  
+  <!-- Letter fold / flap -->
+  <path d="M60,90 L120,130 L180,90" fill="none" stroke="#FF8C42" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- The heartfelt document emerging from the letter -->
+  <rect x="75" y="55" width="90" height="85" rx="6" fill="#F4F5F7"/>
+  
+  <!-- Document lines (representing earnest words / 恳切言辞) -->
+  <line x1="90" y1="75" x2="150" y2="75" stroke="#4A5265" stroke-width="3" stroke-linecap="round"/>
+  <line x1="90" y1="92" x2="140" y2="92" stroke="#4A5265" stroke-width="3" stroke-linecap="round"/>
+  <line x1="90" y1="109" x2="125" y2="109" stroke="#4A5265" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Focus/Accent: A pair of hands gently presenting the letter with utmost respect and earnestness (representing 恳切 - earnest, heartfelt delivery) -->
+  <!-- Left hand -->
+  <path d="M45,170 C45,150 65,145 80,150 C95,155 105,170 105,185 L50,185 C47,185 45,178 45,170 Z" fill="#D49B7A"/>
+  <!-- Right hand -->
+  <path d="M195,170 C195,150 175,145 160,150 C145,155 135,170 135,185 L190,185 C193,185 195,178 195,170 Z" fill="#D49B7A"/>
+  
+  <!-- Cuff accents for hands -->
+  <path d="M45,185 L55,200 L95,200 L105,185 Z" fill="#3B82F6"/>
+  <path d="M195,185 L185,200 L145,200 L135,185 Z" fill="#3B82F6"/>
+
+  <!-- Warm sparkling accent dots representing sincerity, earnest advice, and deep meaning -->
+  <circle cx="120" cy="40" r="3" fill="#FFB703"/>
+  <circle cx="155" cy="50" r="2" fill="#FF8C42"/>
+  <circle cx="85" cy="48" r="2" fill="#FF8C42"/>
+  
+  <!-- Subtle glowing beam from the letter upward -->
+  <path d="M95,55 L120,35 L145,55 Z" fill="#FFB703" opacity="0.3"/>
+</svg>

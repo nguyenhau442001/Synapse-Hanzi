@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative subtle grid for modern sleek look -->
+  <path d="M30 120 H210 M120 30 V210" stroke="#252A34" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- Central Visual Representation for "外贸" (Foreign Trade / International Shipping) -->
+  <!-- A sleek, stylized container ship carrying vibrant cargo containers, bridging two hemispheres/continents via stylized waves -->
+  
+  <g transform="translate(0, 5)">
+    <!-- Stylized globe / trade route arc -->
+    <path d="M 50 140 Q 120 170 190 140" fill="none" stroke="#2F3640" stroke-width="2" stroke-dasharray="6 6"/>
+    <path d="M 60 115 Q 120 145 180 115" fill="none" stroke="#FF9F43" stroke-width="2" stroke-opacity="0.4"/>
+
+    <!-- Ocean Waves -->
+    <path d="M 30 160 C 50 155, 70 165, 90 160 C 110 155, 130 165, 150 160 C 170 155, 190 165, 210 160" fill="none" stroke="#00D2D3" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 40 172 C 60 167, 80 177, 100 172 C 120 167, 140 177, 160 172 C 180 167, 200 177, 210 172" fill="none" stroke="#0abde3" stroke-width="2" stroke-linecap="round" stroke-opacity="0.6"/>
+
+    <!-- Container Ship Hull -->
+    <path d="M 75 145 L 165 145 L 180 130 L 60 130 Z" fill="#4B6584"/>
+    <path d="M 60 130 L 75 145 L 75 120 L 60 120 Z" fill="#778CA3"/>
+    <!-- Ship bridge/cabin -->
+    <rect x="150" y="105" width="20" height="25" rx="2" fill="#A5B1C2"/>
+    <rect x="153" y="108" width="14" height="6" fill="#00D2D3"/>
+
+    <!-- Cargo Containers (Colorful, stacking) -->
+    <!-- Stack 1 (Orange/Gold - focal point) -->
+    <rect x="75" y="112" width="18" height="18" rx="1" fill="#FF9F43"/>
+    <rect x="75" y="94" width="18" height="18" rx="1" fill="#EE5253"/>
+    
+    <!-- Stack 2 (Blue/Cyan) -->
+    <rect x="95" y="112" width="18" height="18" rx="1" fill="#00D2D3"/>
+    <rect x="95" y="94" width="18" height="18" rx="1" fill="#0abde3"/>
+    <rect x="95" y="76" width="18" height="18" rx="1" fill="#54a0ff"/>
+
+    <!-- Stack 3 (Teal/Green) -->
+    <rect x="115" y="112" width="18" height="18" rx="1" fill="#1dd1a1"/>
+    <rect x="115" y="94" width="18" height="18" rx="1" fill="#10ac84"/>
+
+    <!-- Stack 4 (Purple) -->
+    <rect x="135" y="112" width="18" height="18" rx="1" fill="#5f27cd"/>
+    <rect x="135" y="94" width="18" height="18" rx="1" fill="#8854d0"/>
+
+    <!-- Crane / Global Exchange Hook motif hovering above -->
+    <path d="M 120 40 L 120 70" stroke="#FF9F43" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 90 45 L 150 45" stroke="#FF9F43" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 105 45 L 120 65 L 135 45" fill="none" stroke="#FF9F43" stroke-width="2"/>
+  </g>
+
+  <!-- Modern Accent Glow/Highlights -->
+  <circle cx="120" cy="120" r="90" fill="none" stroke="#FF9F43" stroke-width="1" stroke-opacity="0.15"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 120)">
+    <!-- Main Object: A heavy, solid metal bell suspended in mid-air, mid-vibration -->
+    <path d="M-40 20 L40 20 C40 60 20 80 0 80 C-20 80 -40 60 -40 20 Z" fill="#F39C12"/>
+    <path d="M-45 20 L45 20 L40 10 L-40 10 Z" fill="#E67E22"/>
+    <circle cx="0" cy="80" r="8" fill="#D35400"/>
+    
+    <!-- Vibration/Oscillation Effect: Stylized kinetic motion lines -->
+    <path d="M-60 30 Q-75 50 -60 70" stroke="#F1C40F" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M60 30 Q75 50 60 70" stroke="#F1C40F" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M-50 15 Q-80 15 -50 15" stroke="#F1C40F" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M50 15 Q80 15 50 15" stroke="#F1C40F" stroke-width="3" stroke-linecap="round" fill="none"/>
+    
+    <!-- Supporting structure -->
+    <rect x="-5" y="-80" width="10" height="100" fill="#34495E"/>
+    <rect x="-60" y="-80" width="120" height="10" rx="2" fill="#34495E"/>
+  </g>
+</svg>

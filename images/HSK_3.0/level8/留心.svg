@@ -1,0 +1,39 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient background lighting representing awareness/focus -->
+  <circle cx="120" cy="110" r="70" fill="#3A3F4E" opacity="0.3"/>
+  <circle cx="120" cy="110" r="45" fill="#F39C12" opacity="0.08"/>
+
+  <!-- Physical Object representing "留心" (Mindful Observation / The magnifying glass of attention focused on the heart/essence of life) -->
+  <g transform="translate(120, 105)">
+    <!-- Natural leaf/sprout (representing 'life practice' from the context) -->
+    <g transform="translate(0, 10)">
+      <!-- Stem -->
+      <path d="M0,25 C0,15 0,5 -5,-10" fill="none" stroke="#2ECC71" stroke-width="3" stroke-linecap="round"/>
+      <!-- Leaves -->
+      <path d="M-5,-10 C-15,-20 -25,-10 -15,5 C-5,10 -5,-10 -5,-10 Z" fill="#2ECC71" opacity="0.9"/>
+      <path d="M-5,0 C5,-15 20,-10 10,10 C0,15 -5,0 -5,0 Z" fill="#2ECC71"/>
+      <path d="M0,25 C5,35 15,35 20,30" fill="none" stroke="#2ECC71" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Glowing Magnifying Glass (representing careful observation/liúxīn) -->
+    <!-- Glass lens circle with warm focus gradient -->
+    <circle cx="0" cy="-10" r="42" fill="#1A1D24" stroke="#F39C12" stroke-width="6"/>
+    
+    <!-- Lens inner reflection -->
+    <circle cx="-12" cy="-22" r="32" fill="#2C3343" opacity="0.6"/>
+    <path d="M-22,-30 C-12,-40 5,-35 12,-25" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Handle of the magnifying glass -->
+    <path d="M30,20 L62,52" stroke="#E67E22" stroke-width="10" stroke-linecap="round"/>
+    <path d="M30,20 L62,52" stroke="#F39C12" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Highlight accent on handle -->
+    <line x1="34" y1="24" x2="52" y2="42" stroke="#FAD7A0" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Ground shadow -->
+  <ellipse cx="120" cy="180" rx="40" ry="6" fill="#111318"/>
+</svg>

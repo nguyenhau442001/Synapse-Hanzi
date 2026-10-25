@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Context: Fire Emergency Escape Lane & Building wall -->
+  <path d="M40 180 L200 180 L200 200 L40 200 Z" fill="#2A2F3B"/>
+  <path d="M40 70 L200 70 L200 180 L40 180 Z" fill="#222631"/>
+  
+  <!-- Building Windows in background -->
+  <rect x="60" y="90" width="25" height="40" rx="4" fill="#2A2F3B"/>
+  <rect x="105" y="90" width="25" height="40" rx="4" fill="#2A2F3B"/>
+  <rect x="150" y="90" width="25" height="40" rx="4" fill="#2A2F3B"/>
+  
+  <!-- Fire Lane Floor Markings (Stripes) -->
+  <path d="M55 190 L75 190 M95 190 L115 190 M135 190 L155 190 M175 190 L195 190" stroke="#E65100" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Wall-mounted Fire Hydrant Box (Signifying Fire Lane) -->
+  <rect x="175" y="110" width="30" height="40" rx="4" fill="#D32F2F"/>
+  <rect x="182" y="117" width="16" height="26" rx="2" fill="#B71C1C"/>
+  <circle cx="190" cy="130" r="4" fill="#FFC107"/>
+
+  <!-- The Obstacle: A modern sedan parked illegally blocking the path -->
+  <!-- Car Shadow -->
+  <ellipse cx="120" cy="172" rx="75" ry="12" fill="#111317" opacity="0.7"/>
+
+  <!-- Car Body (Sleek Modern Flat Design) -->
+  <path d="M65 155 L75 135 C80 125, 95 120, 120 120 C145 120, 160 125, 165 135 L175 155 Z" fill="#3B82F6"/>
+  
+  <!-- Car Roof/Windows -->
+  <path d="M85 135 L95 124 C100 122, 110 122, 120 122 C130 122, 140 122, 145 124 L155 135 Z" fill="#1E293B"/>
+
+  <!-- Main Chassis -->
+  <rect x="50" y="145" width="140" height="25" rx="6" fill="#60A5FA"/>
+  
+  <!-- Headlights & Details -->
+  <rect x="51" y="152" width="6" height="8" rx="2" fill="#FEF08A"/>
+  <rect x="183" y="152" width="6" height="8" rx="2" fill="#EF4444"/>
+  <rect x="100" y="152" width="40" height="10" rx="2" fill="#1E293B" opacity="0.3"/>
+
+  <!-- Wheels -->
+  <circle cx="80" cy="170" r="14" fill="#0F172A"/>
+  <circle cx="80" cy="170" r="6" fill="#64748B"/>
+  <circle cx="160" cy="170" r="14" fill="#0F172A"/>
+  <circle cx="160" cy="170" r="6" fill="#64748B"/>
+
+  <!-- Focal Warning Element: Bold Red Prohibition / Blocked Overlay -->
+  <circle cx="120" cy="105" r="28" fill="#EF4444" opacity="0.95"/>
+  <circle cx="120" cy="105" r="22" fill="#1A1D24"/>
+  <!-- Crossed lines indicating occupation/blocking -->
+  <path d="M104 89 L136 121 M136 89 L104 121" stroke="#EF4444" stroke-width="6" stroke-linecap="round"/>
+
+</svg>

@@ -1,0 +1,68 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background glowing fire effect (bottom and right context) -->
+  <circle cx="190" cy="190" r="80" fill="#FF5722" opacity="0.15" filter="blur(10px)"/>
+  
+  <!-- Flames at the threshold -->
+  <path d="M160,200 L180,150 L195,175 L215,130 L230,200 Z" fill="#FF7043" opacity="0.8"/>
+  <path d="M140,200 L160,165 L175,185 L190,140 L210,200 Z" fill="#FFA726" opacity="0.9"/>
+  <path d="M180,200 L195,160 L205,175 L220,135 L240,200 Z" fill="#FFC107" opacity="0.7"/>
+
+  <!-- Structural burning doorway / intense barrier -->
+  <rect x="130" y="40" width="12" height="160" fill="#37474F"/>
+  <rect x="130" y="40" width="100" height="10" fill="#37474F"/>
+  
+  <!-- Fire silhouette overlay -->
+  <path d="M135,120 Q145,90 140,70 Q160,95 155,130 Z" fill="#FF5722" opacity="0.6"/>
+  <path d="M132,160 Q145,130 140,110 Q165,130 150,170 Z" fill="#FF7043" opacity="0.7"/>
+
+  <!-- CENTRAL CHARACTER: Young firefighter diving/leaping forward ("豁出去" - risking everything, total commitment) -->
+  <!-- Motion lines / dynamic lean -->
+  <g transform="translate(15, 10)">
+    <!-- Firefighter Suit (Protective Yellow/Tan and Navy) -->
+    <!-- Right arm reaching forward into danger -->
+    <path d="M90,115 L135,110 L140,125 L95,130 Z" fill="#FFA000"/>
+    
+    <!-- Helmet -->
+    <path d="M70,80 Q95,75 105,90 L95,100 L70,95 Z" fill="#D32F2F"/>
+    <path d="M65,88 L105,92 L102,96 L65,92 Z" fill="#FF8F00"/> <!-- Visor rim -->
+    <path d="M95,82 L112,88 L108,98 L92,92 Z" fill="#B71C1C"/> <!-- Helmet brim extension -->
+
+    <!-- Head & Face (determined expression implied by forward angle) -->
+    <circle cx="80" cy="94" r="9" fill="#FFCCBC"/>
+    
+    <!-- Torso leaning forward aggressively -->
+    <path d="M60,95 L95,100 L85,140 L45,135 Z" fill="#FFA000"/>
+    <!-- Reflective safety stripes on jacket -->
+    <path d="M55,110 L85,115 L82,123 L52,118 Z" fill="#E0E0E0" opacity="0.8"/>
+    <path d="M50,128 L80,133 L77,139 L47,134 Z" fill="#E0E0E0" opacity="0.8"/>
+
+    <!-- Left arm bracing / pushing -->
+    <path d="M70,105 L50,125 L60,135 L80,115 Z" fill="#FF8F00"/>
+
+    <!-- Legs in dynamic stride / leap -->
+    <!-- Back leg -->
+    <path d="M45,135 L20,155 L30,165 L55,140 Z" fill="#37474F"/>
+    <!-- Front leg -->
+    <path d="M75,138 L45,175 L60,185 L85,145 Z" fill="#37474F"/>
+
+    <!-- Boots -->
+    <path d="M20,155 L10,162 L18,172 L30,165 Z" fill="#212121"/>
+    <path d="M45,175 L35,190 L50,195 L60,185 Z" fill="#212121"/>
+    
+    <!-- Hands / Gloves -->
+    <circle cx="140" cy="120" r="6" fill="#37474F"/>
+    <circle cx="55" cy="130" r="5" fill="#37474F"/>
+  </g>
+
+  <!-- Ground plane -->
+  <rect x="20" y="200" width="200" height="4" fill="#263238" rx="2"/>
+
+  <!-- Dynamic spark particles for intense action -->
+  <circle cx="130" cy="80" r="3" fill="#FFEB3B"/>
+  <circle cx="150" cy="65" r="2" fill="#FF9800"/>
+  <circle cx="115" cy="110" r="2.5" fill="#FFC107"/>
+  <circle cx="160" cy="140" r="3.5" fill="#FF5722"/>
+  <circle cx="125" cy="170" r="2" fill="#FFEB3B"/>
+</svg>

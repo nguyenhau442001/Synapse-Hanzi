@@ -1,0 +1,42 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative styling representing a modern dark-mode UI flashcard -->
+  <circle cx="120" cy="120" r="85" fill="#222733" opacity="0.6"/>
+  
+  <!-- Subtle floor shadow -->
+  <ellipse cx="120" cy="195" rx="55" ry="8" fill="#111317" opacity="0.8"/>
+
+  <!-- Physical Object representing "外在" (Exterior / Outer Appearance / Attire) -->
+  <!-- A stylish modern coat / suit jacket on a sleek hanger, symbolizing outer presentation, clothing, and styling from the context -->
+  <g transform="translate(0, 12)">
+    <!-- Hanger -->
+    <path d="M 120 48 C 120 42 124 38 130 38 C 135 38 138 42 138 46 C 138 51 134 54 128 54 L 120 54" fill="none" stroke="#6C7A9C" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="90,75 150,75 120,54" fill="#6C7A9C"/>
+
+    <!-- Suit / Coat Structure (Outer Layer) -->
+    <!-- Shoulders and Body -->
+    <path d="M 85 85 C 95 83 110 80 120 80 C 130 80 145 83 155 85 L 168 115 L 150 125 L 145 175 L 95 175 L 90 125 L 72 115 Z" fill="#2E384D"/>
+    
+    <!-- Lapels -->
+    <polygon points="120,80 105,135 120,135" fill="#3B4863"/>
+    <polygon points="120,80 135,135 120,135" fill="#3B4863"/>
+
+    <!-- Inner Shirt / Collar V-neck -->
+    <polygon points="120,80 110,98 120,105 130,98" fill="#F0F4F8"/>
+    <!-- Tie -->
+    <polygon points="120,102 116,155 120,165 124,155" fill="#F5A623"/>
+
+    <!-- Buttons -->
+    <circle cx="120" cy="142" r="3" fill="#F0F4F8"/>
+    <circle cx="120" cy="162" r="3" fill="#F0F4F8"/>
+
+    <!-- Accent Highlights (Sleek modern fashion touch, gold trim/lining) -->
+    <path d="M 85 85 L 72 115" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 155 85 L 168 115" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Focus Indicator Accents (Modern flat design framing) -->
+  <circle cx="120" cy="120" r="95" fill="none" stroke="#3B4863" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.4"/>
+</svg>

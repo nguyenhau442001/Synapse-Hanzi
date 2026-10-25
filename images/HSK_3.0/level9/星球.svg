@@ -1,0 +1,72 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background stars and space elements -->
+  <g fill="#4A5568" opacity="0.6">
+    <circle cx="45" cy="55" r="1.5" />
+    <circle cx="195" cy="45" r="2" />
+    <circle cx="205" cy="175" r="1.5" />
+    <circle cx="40" cy="180" r="1" />
+    <circle cx="95" cy="35" r="1" />
+    <circle cx="170" cy="205" r="1.5" />
+  </g>
+  <g fill="#A0AEC0" opacity="0.8">
+    <circle cx="185" cy="75" r="1" />
+    <circle cx="65" cy="135" r="1.5" />
+    <circle cx="135" cy="25" r="1" />
+    <circle cx="55" cy="95" r="1" />
+  </g>
+
+  <!-- Central Planet (星球 - Celestial Body / Planet) -->
+  <g transform="translate(120, 115)">
+    <!-- Outer glow / Atmosphere -->
+    <circle cx="0" cy="0" r="62" fill="#3182CE" opacity="0.15" />
+    <circle cx="0" cy="0" r="56" fill="#3182CE" opacity="0.25" />
+
+    <!-- Planet Base Body -->
+    <circle cx="0" cy="0" r="50" fill="#2B6CB0" />
+
+    <!-- Planet Surface Details (Craters & Continents) -->
+    <!-- Continent 1 -->
+    <path d="M-30 -20 C-15 -35, 10 -30, 25 -15 C35 -5, 20 20, 5 25 C-15 30, -25 5, -30 -20 Z" fill="#319795" opacity="0.85" />
+    <!-- Continent 2 -->
+    <path d="M10 25 C25 20, 35 30, 30 40 C20 45, -5 45, 5 25 Z" fill="#319795" opacity="0.75" />
+    
+    <!-- Craters -->
+    <circle cx="-15" cy="-8" r="4" fill="#2C5282" opacity="0.6" />
+    <circle cx="-18" cy="-6" r="4.5" fill="none" stroke="#1A365D" stroke-width="1" opacity="0.4" />
+    
+    <circle cx="18" cy="-18" r="3" fill="#2C5282" opacity="0.6" />
+    <circle cx="-5" cy="15" r="5" fill="#2C5282" opacity="0.6" />
+
+    <!-- Shading / 3D Sphere Effect (Gradient Overlay) -->
+    <circle cx="0" cy="0" r="50" fill="url(#planet-shadow)" />
+
+    <!-- Orbital Ring / Planetary Ring (Accentuating the celestial concept) -->
+    <g transform="rotate(-25)">
+      <!-- Back part of the ring -->
+      <path d="M -75 0 A 78 22 0 0 1 75 0" fill="none" stroke="#ED8936" stroke-width="3" opacity="0.4" />
+      <!-- Planet covers the middle, front part rendered below -->
+    </g>
+
+    <!-- Ring Front Part -->
+    <g transform="rotate(-25)">
+      <path d="M 75 0 A 78 22 0 0 1 -75 0" fill="none" stroke="#F6AD55" stroke-width="6" stroke-linecap="round" />
+      <!-- Highlight on ring -->
+      <path d="M 35 18 A 78 22 0 0 1 -35 18" fill="none" stroke="#FBD38D" stroke-width="2" opacity="0.8" />
+    </g>
+
+    <!-- Highlight crescent for glossy spherical look -->
+    <path d="M -35 -35 C -20 -48, 10 -45, 28 -30 C 15 -40, -15 -40, -35 -35 Z" fill="#FFFFFF" opacity="0.3" />
+  </g>
+
+  <!-- Definitions for gradients -->
+  <defs>
+    <radialGradient id="planet-shadow" cx="35%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0" />
+      <stop offset="60%" stop-color="#000000" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.85" />
+    </radialGradient>
+  </defs>
+</svg>

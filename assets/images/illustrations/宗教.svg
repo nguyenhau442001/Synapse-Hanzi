@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient background glow -->
+  <circle cx="120" cy="120" r="80" fill="#2D323F" opacity="0.4"/>
+  <circle cx="120" cy="120" r="45" fill="#E6B800" opacity="0.05"/>
+
+  <!-- Architectural Structure (Traditional East Asian temple roof / place of worship silhouette) -->
+  <g>
+    <!-- Main roof base/tier -->
+    <path d="M70 105 L120 85 L170 105 L175 115 L65 115 Z" fill="#3E4556"/>
+    <!-- Overhanging curved roof eaves -->
+    <path d="M55 115 Q120 125 185 115 L175 130 Q120 140 65 130 Z" fill="#F0C419"/>
+    
+    <!-- Second tier roof -->
+    <path d="M85 85 L120 70 L155 85 L160 93 L80 93 Z" fill="#4E566A"/>
+    <path d="M75 93 Q120 100 165 93 L160 103 Q120 110 80 103 Z" fill="#E5B20D"/>
+
+    <!-- Temple walls -->
+    <rect x="85" y="130" width="70" height="60" fill="#2D323F"/>
+    <rect x="92" y="140" width="16" height="40" rx="8" fill="#1A1D24"/>
+    <rect x="112" y="140" width="16" height="40" rx="8" fill="#1A1D24"/>
+    <rect x="132" y="140" width="16" height="40" rx="8" fill="#1A1D24"/>
+  </g>
+
+  <!-- Central Focal Element: Traditional multi-faith architectural spire & harmony symbols -->
+  <g>
+    <!-- Spire/Mast -->
+    <rect x="118" y="40" width="4" height="35" fill="#F0C419"/>
+    <circle cx="120" cy="37" r="5" fill="#F0C419"/>
+    
+    <!-- Central Beam/Halo element representing spirituality/faith -->
+    <path d="M120 48 L132 60 L120 72 L108 60 Z" fill="#FFA500" opacity="0.9"/>
+    <circle cx="120" cy="60" r="4" fill="#1A1D24"/>
+  </g>
+
+  <!-- Base platform -->
+  <rect x="50" y="190" width="140" height="8" rx="3" fill="#4E566A"/>
+  <rect x="40" y="198" width="160" height="6" rx="3" fill="#3E4556"/>
+</svg>

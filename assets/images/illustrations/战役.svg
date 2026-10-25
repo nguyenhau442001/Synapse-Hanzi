@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle strategic map grid lines in the background -->
+  <g opacity="0.15" stroke="#64748B" stroke-width="1" stroke-dasharray="4 4">
+    <line x1="30" y1="60" x2="210" y2="60"/>
+    <line x1="30" y1="120" x2="210" y2="120"/>
+    <line x1="30" y1="180" x2="210" y2="180"/>
+    <line x1="60" y1="30" x2="60" y2="210"/>
+    <line x1="120" y1="30" x2="120" y2="210"/>
+    <line x1="180" y1="30" x2="180" y2="210"/>
+  </g>
+
+  <!-- Central Strategic Campaign Element: Tactical Map & Flag Marker -->
+  <g transform="translate(0, 5)">
+    <!-- Terrain / Base Map Platform -->
+    <path d="M 60 145 L 120 115 L 180 145 L 180 175 L 120 205 L 60 175 Z" fill="#252B3B" stroke="#334155" stroke-width="2"/>
+    <path d="M 120 115 L 180 145 L 120 175 L 60 145 Z" fill="#1E293B"/>
+
+    <!-- Strategic Contour Lines -->
+    <path d="M 80 155 L 120 135 L 160 155" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity="0.4"/>
+    <path d="M 90 165 L 120 150 L 150 165" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity="0.6"/>
+
+    <!-- Tactical Flag Pole (The iconic physical object anchoring the military campaign/battle node) -->
+    <line x1="120" y1="148" x2="120" y2="60" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Dynamic Campaign Flag (Golden/Orange accent for high focus) -->
+    <path d="M 120 60 L 175 78 L 120 96 Z" fill="#F59E0B"/>
+    
+    <!-- Focus Indicator / Strategic Objective Pulse rings -->
+    <ellipse cx="120" cy="145" rx="25" ry="12" fill="none" stroke="#F59E0B" stroke-width="2" opacity="0.8"/>
+    <ellipse cx="120" cy="145" rx="40" ry="20" fill="none" stroke="#3B82F6" stroke-width="1.5" opacity="0.5" stroke-dasharray="6 4"/>
+
+    <!-- Tactical Map Pins / Markers indicating troop movements -->
+    <!-- Left tactical unit -->
+    <circle cx="85" cy="100" r="6" fill="#EF4444"/>
+    <path d="M 85 100 Q 100 120 110 138" fill="none" stroke="#EF4444" stroke-width="2" stroke-dasharray="3 3"/>
+    
+    <!-- Right tactical unit -->
+    <circle cx="155" cy="110" r="6" fill="#3B82F6"/>
+    <path d="M 155 110 Q 135 125 125 140" fill="none" stroke="#3B82F6" stroke-width="2" stroke-dasharray="3 3"/>
+  </g>
+
+</svg>

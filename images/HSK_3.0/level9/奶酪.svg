@@ -1,0 +1,54 @@
+<svg width="240" height="240" rx="24" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle glow/shadow for the cheese wedge -->
+  <ellipse cx="120" cy="165" rx="65" ry="14" fill="#0E1015" opacity="0.6"/>
+
+  <!-- Cheese Wedge Group -->
+  <g transform="translate(45, 60)">
+    <!-- Back face / thickness of the cheese wedge -->
+    <path d="M 125 15 L 125 45 C 100 80, 50 90, 20 85 L 20 55 C 50 60, 95 50, 125 15 Z" fill="#E58E26"/>
+    
+    <!-- Side depth / right rectangular face -->
+    <path d="M 125 15 L 150 45 L 150 75 L 125 45 Z" fill="#D35400"/>
+
+    <!-- Top triangular face of the wedge -->
+    <path d="M 20 20 L 150 45 L 125 15 Z" fill="#F39C12"/>
+
+    <!-- Front curved vertical face of the wedge -->
+    <path d="M 20 20 L 20 50 C 50 55, 100 45, 150 45 L 150 15 Z" fill="#F1C40F"/>
+
+    <!-- Cheese Holes (Craters) - Top Face -->
+    <!-- Hole 1 (Top face, near front-left) -->
+    <ellipse cx="45" cy="27" rx="6" ry="3" transform="rotate(10 45 27)" fill="#D68910"/>
+    <ellipse cx="45" cy="26" rx="5" ry="2.5" transform="rotate(10 45 26)" fill="#F39C12"/>
+
+    <!-- Hole 2 (Top face, near middle) -->
+    <ellipse cx="90" cy="32" rx="8" ry="4" transform="rotate(12 90 32)" fill="#D68910"/>
+    <ellipse cx="90" cy="31" rx="7" ry="3.5" transform="rotate(12 90 31)" fill="#F39C12"/>
+
+    <!-- Cheese Holes - Front Curved Face -->
+    <!-- Hole 3 (Front face, large) -->
+    <ellipse cx="65" cy="35" rx="7" ry="8" transform="rotate(-15 65 35)" fill="#D4AC0D"/>
+    <ellipse cx="64" cy="34" rx="5.5" ry="6.5" transform="rotate(-15 64 34)" fill="#F1C40F"/>
+
+    <!-- Hole 4 (Front face, small lower right) -->
+    <circle cx="115" cy="38" r="4.5" fill="#D4AC0D"/>
+    <circle cx="114" cy="37" r="3.5" fill="#F1C40F"/>
+
+    <!-- Hole 5 (Front face, bottom left) -->
+    <ellipse cx="38" cy="42" rx="4" ry="5" transform="rotate(20 38 42)" fill="#D4AC0D"/>
+    <ellipse cx="37" cy="41" rx="3" ry="4" transform="rotate(20 37 41)" fill="#F1C40F"/>
+  </g>
+
+  <!-- Aroma / Steam lines representing "浓郁的奶香" -->
+  <g fill="none" stroke-linecap="round" stroke-width="2.5" opacity="0.7">
+    <!-- Left wisp -->
+    <path d="M 85 55 C 75 42, 95 32, 85 18" stroke="#F1C40F"/>
+    <!-- Center wisp -->
+    <path d="M 120 45 C 130 32, 110 22, 120 10" stroke="#F39C12"/>
+    <!-- Right wisp -->
+    <path d="M 155 55 C 165 42, 145 32, 155 18" stroke="#F1C40F"/>
+  </g>
+</svg>

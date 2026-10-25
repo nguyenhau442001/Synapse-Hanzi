@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Muddy Pit / Quagmire -->
+  <path d="M60 140 Q120 120 180 140 L180 190 Q120 210 60 190 Z" fill="#3E2723"/>
+  <path d="M70 145 Q120 130 170 145 L170 185 Q120 200 70 185 Z" fill="#5D4037"/>
+  
+  <!-- Person sinking -->
+  <g transform="translate(120, 160)">
+    <!-- Legs/Lower body submerged -->
+    <rect x="-15" y="0" width="30" height="20" fill="#E64A19"/>
+    <!-- Torso -->
+    <rect x="-20" y="-40" width="40" height="40" rx="4" fill="#FF9800"/>
+    <!-- Arms struggling -->
+    <path d="M-20 -20 L-40 -10" stroke="#FF9800" stroke-width="8" stroke-linecap="round"/>
+    <path d="M20 -20 L40 -10" stroke="#FF9800" stroke-width="8" stroke-linecap="round"/>
+    <!-- Head -->
+    <circle cx="0" cy="-55" r="15" fill="#FFCC80"/>
+  </g>
+  
+  <!-- Bubbles/Splatter -->
+  <circle cx="90" cy="140" r="4" fill="#795548"/>
+  <circle cx="150" cy="135" r="6" fill="#795548"/>
+  <circle cx="110" cy="130" r="3" fill="#795548"/>
+</svg>
