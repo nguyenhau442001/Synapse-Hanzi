@@ -735,6 +735,35 @@ class TestFlashcardExperienceRefinements(unittest.TestCase):
         self.assertNotIn(".card.is-flipped ~ #studyNavRow", self.workstation_css,
                          "studyNavRow must not be forcibly hidden when card is flipped")
 
+    def test_screen_edge_padding_and_scalable_layout(self):
+        """Flashcard study screen must have safe bottom clearance and fluid vertical scaling across screens."""
+        # 1. Base body must allow vertical scroll when content exceeds viewport, without clipping
+        base_match = re.search(r"body\.flashcard-study-mode\s*\{([^}]+)\}", self.workstation_css)
+        self.assertIsNotNone(base_match, "body.flashcard-study-mode rule not found in workstation.css")
+        base_body = base_match.group(1)
+        self.assertIn("overflow-y: auto", base_body, "Study mode body must allow vertical scrolling when needed")
+        self.assertNotIn("overflow: hidden !important", base_body, "Study mode body must not clip with overflow: hidden")
+        self.assertIn("env(safe-area-inset-bottom", base_body, "Study mode body must respect safe-area-inset-bottom")
+
+        # 2. Rating area must have safe bottom padding / clearance
+        rating_match = re.search(r"body\.flashcard-study-mode\s+\.rating-area\s*\{([^}]+)\}", self.workstation_css)
+        self.assertIsNotNone(rating_match, "rating-area rule not found in workstation.css")
+        rating_block = rating_match.group(1)
+        self.assertNotIn("padding-bottom: 0", rating_block, "rating-area must not have 0 bottom padding")
+
+        # 3. cardArea must provide bottom clearance
+        card_area_match = re.search(r"body\.flashcard-study-mode\s+#cardArea\s*\{([^}]+)\}", self.workstation_css)
+        self.assertIsNotNone(card_area_match, "#cardArea rule not found in workstation.css")
+        self.assertIn("padding-bottom", card_area_match.group(1), "#cardArea must have padding-bottom clearance")
+
+        # 4. Laptop & Desktop Landscape media query must include fluid scaling
+        laptop_blocks = extract_media_blocks(self.workstation_css, r"min-width:\s*768px.*max-height:\s*880px")
+        self.assertTrue(len(laptop_blocks) >= 1, "Missing @media (min-width: 768px) and (max-height: 880px)")
+        laptop_combined = " ".join(b[1] for b in laptop_blocks)
+        self.assertIn(".hanzi", laptop_combined)
+        self.assertIn(".example-box", laptop_combined)
+        self.assertIn(".rating-area", laptop_combined)
+
 
 
 def run_tests():
