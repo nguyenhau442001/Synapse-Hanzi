@@ -1,0 +1,16 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(60, 60)">
+    <!-- Arm and Sleeve Detail -->
+    <path d="M120 120 C 120 60, 80 40, 40 40 L 20 60 L 60 80 L 80 120 Z" fill="#4A90E2"/>
+    <path d="M40 40 L 20 60 L 30 70 L 50 50 Z" fill="#357ABD"/>
+    <path d="M60 80 L 80 120 L 100 110 L 80 70 Z" fill="#2A6A9E"/>
+    
+    <!-- Hand -->
+    <path d="M20 60 L 10 70 L 30 90 L 40 80 Z" fill="#FFD54F"/>
+    <path d="M10 70 L 0 80 L 20 100 L 30 90 Z" fill="#FFC107"/>
+    
+    <!-- Action lines suggesting upward motion -->
+    <path d="M70 30 L 80 10 M85 20 L 95 0" stroke="#FF9800" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

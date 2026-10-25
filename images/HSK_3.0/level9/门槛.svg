@@ -1,0 +1,37 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow to create depth -->
+  <circle cx="120" cy="130" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Floor/Ground plane -->
+  <path d="M40 185 L200 185" stroke="#323846" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Traditional / Modern Threshold Structure (门槛) -->
+  <!-- Door frame side posts -->
+  <rect x="65" y="65" width="12" height="120" rx="3" fill="#2C3240"/>
+  <rect x="163" y="65" width="12" height="120" rx="3" fill="#2C3240"/>
+  
+  <!-- Door frame top lintel -->
+  <rect x="60" y="55" width="120" height="14" rx="3" fill="#323846"/>
+
+  <!-- The Threshold Beam (Ménkǎn - raised wooden/stone sill at the bottom) -->
+  <g transform="translate(0, 5)">
+    <!-- Shadow beneath threshold -->
+    <rect x="75" y="172" width="90" height="8" rx="2" fill="#101217" opacity="0.8"/>
+    <!-- Main threshold body -->
+    <rect x="77" y="160" width="86" height="15" rx="3" fill="#E67E22"/>
+    <!-- Threshold highlight (sleek modern flat vector style) -->
+    <rect x="77" y="160" width="86" height="4" rx="2" fill="#F39C12"/>
+    <rect x="80" y="163" width="80" height="2" fill="#FAD7A0" opacity="0.4"/>
+  </g>
+
+  <!-- Architectural details (Subtle panel lines on door frames) -->
+  <line x1="71" y1="75" x2="71" y2="175" stroke="#1A1D24" stroke-width="2" opacity="0.5"/>
+  <line x1="169" y1="75" x2="169" y2="175" stroke="#1A1D24" stroke-width="2" opacity="0.5"/>
+
+  <!-- Focus accent: A glowing passage indicator showing accessibility/entry condition -->
+  <path d="M105 105 L135 125 L105 145" fill="none" stroke="#F39C12" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+  <path d="M120 105 L150 125 L120 145" fill="none" stroke="#F39C12" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg>

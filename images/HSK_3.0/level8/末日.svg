@@ -1,0 +1,22 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Cracked Earth Surface -->
+  <path d="M40 180 L200 180 L190 210 L50 210 Z" fill="#3E4451"/>
+  <path d="M70 180 L75 195 M120 180 L115 205 M160 180 L170 200" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Sun setting/fading -->
+  <circle cx="120" cy="120" r="45" fill="#FF9500" opacity="0.8"/>
+  <path d="M75 120 A45 45 0 0 1 165 120" fill="#1A1D24" opacity="0.6"/>
+  
+  <!-- Silhouette of a crumbling structure -->
+  <path d="M180 180 L180 130 L160 130 L160 150 L140 150 L140 180 Z" fill="#2C313C"/>
+  <path d="M150 130 L150 110 L130 110 L130 130 Z" fill="#2C313C"/>
+  
+  <!-- Falling debris/meteorite -->
+  <path d="M190 60 L210 80 L195 75 Z" fill="#FFC107"/>
+  <path d="M195 65 L220 90" stroke="#FF9500" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Atmosphere/Haze -->
+  <circle cx="120" cy="120" r="60" fill="none" stroke="#3E4451" stroke-width="2" stroke-dasharray="4 8"/>
+</svg>

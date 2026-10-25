@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Glow / Context -->
+  <circle cx="120" cy="120" r="80" fill="#222733" />
+
+  <!-- Document/Paper Base -->
+  <g transform="translate(64, 40)">
+    <!-- Document shadow -->
+    <rect x="0" y="8" width="112" height="152" rx="10" fill="#111317" opacity="0.6"/>
+    
+    <!-- Document background -->
+    <rect x="0" y="0" width="112" height="152" rx="10" fill="#2D333F"/>
+    
+    <!-- Top accent bar (representing full paper header) -->
+    <rect x="16" y="20" width="80" height="6" rx="3" fill="#404859"/>
+    
+    <!-- Full text lines representing the main text / article -->
+    <rect x="16" y="34" width="70" height="4" rx="2" fill="#363C4A"/>
+    <rect x="16" y="44" width="80" height="4" rx="2" fill="#363C4A"/>
+    <rect x="16" y="54" width="55" height="4" rx="2" fill="#363C4A"/>
+
+    <!-- Highlighted Summary Section (摘要) - The core noun object -->
+    <g transform="translate(10, 68)">
+      <!-- Summary container background -->
+      <rect x="0" y="0" width="92" height="68" rx="6" fill="#1A1D24"/>
+      
+      <!-- Summary left accent border -->
+      <path d="M 0 6 C 0 3 3 0 6 0 L 6 68 L 6 68 C 3 68 0 65 0 62 Z" fill="#F5A623"/>
+
+      <!-- Summary mini lines (representing condensed key text) -->
+      <!-- Line 1 -->
+      <rect x="16" y="14" width="60" height="5" rx="2.5" fill="#F5A623"/>
+      <!-- Line 2 -->
+      <rect x="16" y="26" width="68" height="4" rx="2" fill="#8C95A6"/>
+      <!-- Line 3 -->
+      <rect x="16" y="36" width="50" height="4" rx="2" fill="#8C95A6"/>
+      <!-- Line 4 -->
+      <rect x="16" y="46" width="64" height="4" rx="2" fill="#8C95A6"/>
+
+      <!-- Magnifying glass / extraction icon overlaying the summary -->
+      <g transform="translate(56, 32)">
+        <circle cx="12" cy="12" r="14" fill="#F5A623" opacity="0.15"/>
+        <circle cx="12" cy="12" r="10" fill="none" stroke="#F5A623" stroke-width="3"/>
+        <line x1="19" y1="19" x2="28" y2="28" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <!-- Remaining background lines -->
+    <rect x="16" y="146" width="40" height="4" rx="2" fill="#363C4A"/>
+  </g>
+</svg>

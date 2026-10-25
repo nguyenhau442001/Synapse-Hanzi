@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Object: A modern, balanced scale representing "利弊" (Pros and Cons / Gains and Losses) -->
+  <!-- Background subtle glow/podium for physical object anchoring -->
+  <ellipse cx="120" cy="200" rx="60" ry="10" fill="#121418" opacity="0.8"/>
+
+  <!-- Scale Stand / Base -->
+  <path d="M100 200 L140 200 L132 188 L108 188 Z" fill="#4A5568"/>
+  <rect x="116" y="90" width="8" height="100" fill="#718096" rx="2"/>
+  <circle cx="120" cy="90" r="12" fill="#E2E8F0"/>
+  <circle cx="120" cy="90" r="6" fill="#1A1D24"/>
+
+  <!-- Scale Beam (Tilted slightly to show dynamic weighing) -->
+  <g transform="rotate(-6 120 90)">
+    <!-- Main horizontal beam -->
+    <rect x="55" y="86" width="130" height="8" rx="4" fill="#CBD5E0"/>
+    
+    <!-- Left Suspension (Loss/Negative - Slate/Blue accent) -->
+    <line x1="60" y1="94" x2="60" y2="135" stroke="#4A5568" stroke-width="2"/>
+    <line x1="60" y1="94" x2="80" y2="135" stroke="#4A5568" stroke-width="2"/>
+    <!-- Left Pan -->
+    <path d="M40 135 C40 135, 60 145, 80 135 Z" fill="#2D3748" stroke="#4A5568" stroke-width="1.5"/>
+    <ellipse cx="60" cy="135" rx="20" ry="6" fill="#4A5568"/>
+    <!-- Objects on Left Pan (Cons / 弊 - Represented by subdued block elements) -->
+    <rect x="50" y="118" width="20" height="18" rx="3" fill="#E53E3E" opacity="0.85"/>
+    <rect x="53" y="105" width="14" height="15" rx="2" fill="#FC8181" opacity="0.85"/>
+
+    <!-- Right Suspension (Gain/Positive - Gold/Orange accent) -->
+    <line x1="180" y1="94" x2="160" y2="125" stroke="#4A5568" stroke-width="2"/>
+    <line x1="180" y1="94" x2="200" y2="125" stroke="#4A5568" stroke-width="2"/>
+    <!-- Right Pan -->
+    <path d="M160 125 C160 125, 180 135, 200 125 Z" fill="#2D3748" stroke="#4A5568" stroke-width="1.5"/>
+    <ellipse cx="180" cy="125" rx="20" ry="6" fill="#4A5568"/>
+    <!-- Objects on Right Pan (Pros / 利 - Represented by glowing gold/orange valuable blocks) -->
+    <rect x="170" y="105" width="20" height="21" rx="3" fill="#D69E2E"/>
+    <circle cx="180" cy="98" r="7" fill="#ECC94B"/>
+  </g>
+</svg>

@@ -1,0 +1,34 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Patient Figure -->
+  <g transform="translate(120, 140)">
+    <!-- Body -->
+    <path d="M-30 80 Q0 80 30 80 L20 30 L-20 30 Z" fill="#4A5568"/>
+    <!-- Head -->
+    <circle cx="0" cy="0" r="25" fill="#E2E8F0"/>
+    <!-- Eyes (Closed/Calm) -->
+    <path d="M-12 -5 Q-6 -10 0 -5 Q6 -10 12 -5" stroke="#1A1D24" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Mouth (Calm) -->
+    <path d="M-8 12 Q0 16 8 12" stroke="#1A1D24" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Doctor Figure (Upper body) -->
+  <g transform="translate(120, 100)">
+    <!-- Stethoscope around neck -->
+    <path d="M-15 -10 L-25 20 A10 10 0 0 0 -5 20 L5 20 A10 10 0 0 0 25 20 L15 -10" fill="none" stroke="#F6AD55" stroke-width="4" stroke-linecap="round"/>
+    <!-- Doctor Head -->
+    <circle cx="0" cy="-30" r="20" fill="#E2E8F0"/>
+    <!-- Doctor Smile -->
+    <path d="M-8 -22 Q0 -18 8 -22" stroke="#1A1D24" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Doctor Eyes -->
+    <circle cx="-6" cy="-32" r="2" fill="#1A1D24"/>
+    <circle cx="6" cy="-32" r="2" fill="#1A1D24"/>
+  </g>
+
+  <!-- Gentle Hand Gesture (Reassurance) -->
+  <g transform="translate(160, 130)">
+    <path d="M0 0 C10 -20 30 -20 40 0 L35 10 C25 5 15 5 5 10 Z" fill="#F6AD55"/>
+    <path d="M5 10 L5 25 L15 25 L15 10" fill="#F6AD55"/>
+  </g>
+</svg>

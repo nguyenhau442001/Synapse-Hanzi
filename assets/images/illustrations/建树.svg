@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Base pedestal/foundation -->
+  <path d="M60 190 L180 190 L170 210 L70 210 Z" fill="#343A46"/>
+  <path d="M70 210 L170 210 L165 220 L75 220 Z" fill="#252932"/>
+  
+  <!-- The Tree of Knowledge (representing "建树" - achievements/contributions) -->
+  <!-- Trunk -->
+  <path d="M115 190 L125 190 L122 130 L118 130 Z" fill="#8B5E3C"/>
+  
+  <!-- Branches/Foliage representing academic achievements -->
+  <circle cx="120" cy="110" r="35" fill="#FFB84D"/>
+  <circle cx="100" cy="125" r="25" fill="#FFB84D"/>
+  <circle cx="140" cy="125" r="25" fill="#FFB84D"/>
+  
+  <!-- Stylized "leaves" as symbols of scholarly papers/scrolls -->
+  <path d="M95 100 L110 90 L105 115 Z" fill="#FFD699"/>
+  <path d="M145 100 L130 90 L135 115 Z" fill="#FFD699"/>
+  <path d="M120 80 L130 100 L110 100 Z" fill="#FFD699"/>
+  
+  <!-- Subtle light rays behind the tree to signify "extraordinary/distinguished" -->
+  <path d="M120 140 L130 70 L110 70 Z" fill="#FFB84D" opacity="0.1"/>
+  <path d="M120 140 L150 80 L130 80 Z" fill="#FFB84D" opacity="0.1"/>
+  <path d="M120 140 L90 80 L110 80 Z" fill="#FFB84D" opacity="0.1"/>
+</svg>

@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative glowing aura representing warmth and deep care -->
+  <circle cx="120" cy="110" r="70" fill="#FFB74D" opacity="0.08"/>
+  <circle cx="120" cy="110" r="45" fill="#FFB74D" opacity="0.12"/>
+
+  <!-- Action: Genuine, tender protective/caring hands sheltering a delicate growing sprout (symbolizing life, care in adversity) -->
+  
+  <!-- Soil base -->
+  <path d="M 85,160 C 95,155 145,155 155,160 L 165,170 C 165,175 75,175 75,170 Z" fill="#37474F"/>
+  <path d="M 95,163 C 110,160 130,160 145,163" stroke="#546E7A" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <!-- Vibrant delicate green sprout (Cause & Effect: nourished and protected) -->
+  <!-- Stem -->
+  <path d="M 120,160 C 120,140 118,125 120,110" stroke="#81C784" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <!-- Leaves -->
+  <path d="M 120,130 C 105,125 95,135 100,145 C 105,150 115,145 120,130 Z" fill="#A5D6A7"/>
+  <path d="M 120,120 C 135,115 145,125 140,135 C 135,140 125,135 120,120 Z" fill="#66BB6A"/>
+  
+  <!-- Tender protecting hands (Human character action showing deep care and concern - 关切) -->
+  <!-- Left protecting hand -->
+  <path d="M 75,135 C 70,120 85,100 100,105 C 108,108 112,115 110,125" stroke="#FFCC80" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- Right protecting hand -->
+  <path d="M 165,135 C 170,120 155,100 140,105 C 132,108 128,115 130,125" stroke="#FFCC80" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Motion lines indicating gentle shielding and focus / warmth -->
+  <path d="M 90,92 C 98,85 110,82 120,82" stroke="#FFB74D" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M 150,92 C 142,85 130,82 120,82" stroke="#FFB74D" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8"/>
+  
+  <!-- Subtle warm ambient sparkle/focus points -->
+  <circle cx="120" cy="74" r="2" fill="#FFE0B2"/>
+  <circle cx="95" cy="85" r="1.5" fill="#FFE0B2" opacity="0.7"/>
+  <circle cx="145" cy="85" r="1.5" fill="#FFE0B2" opacity="0.7"/>
+
+  <!-- Floor shadow / grounding element -->
+  <ellipse cx="120" cy="175" rx="55" ry="4" fill="#0D1117" opacity="0.6"/>
+
+  <!-- UI Flashcard Label Area (Bottom branding/context line, purely visual design element) -->
+  <rect x="85" y="200" width="70" height="4" rx="2" fill="#374151"/>
+</svg>

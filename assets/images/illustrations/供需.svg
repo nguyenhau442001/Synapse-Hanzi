@@ -1,0 +1,42 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Central Physical Object: Modern Market Scale / Equilibrium Balance representing Supply & Demand (供需) -->
+  
+  <!-- Base Stand -->
+  <path d="M100 190 L140 190 L130 150 L110 150 Z" fill="#2E3440" />
+  <rect x="90" y="190" width="60" height="10" rx="3" fill="#4C566A" />
+  <rect x="114" y="90" width="12" height="65" fill="#4C566A" rx="2" />
+  <circle cx="120" cy="90" r="8" fill="#D08770" />
+
+  <!-- Balance Beam -->
+  <path d="M60 100 L180 100 L180 104 L60 104 Z" fill="#E5E9F0" rx="2" />
+
+  <!-- Left Pan (Supply / Cung - represented by stacked physical goods/cubes) -->
+  <path d="M60 102 L40 145 L80 145 Z" fill="none" stroke="#88C0D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <line x1="60" y1="102" x2="60" y2="120" stroke="#88C0D0" stroke-width="2" />
+  <!-- Left Tray -->
+  <ellipse cx="60" cy="145" rx="22" ry="6" fill="#88C0D0" />
+  <!-- Goods on Left Pan -->
+  <rect x="50" y="125" width="10" height="10" fill="#EBCB8B" rx="1" />
+  <rect x="62" y="125" width="10" height="10" fill="#BF616A" rx="1" />
+  <rect x="56" y="115" width="10" height="10" fill="#A3BE8C" rx="1" />
+
+  <!-- Right Pan (Demand / Cầu - represented by shopping baskets / desire icons) -->
+  <path d="M180 102 L160 145 L200 145 Z" fill="none" stroke="#B48EAD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <line x1="180" y1="102" x2="180" y2="120" stroke="#B48EAD" stroke-width="2" />
+  <!-- Right Tray -->
+  <ellipse cx="180" cy="145" rx="22" ry="6" fill="#B48EAD" />
+  <!-- Shopping Basket on Right Pan -->
+  <path d="M170 123 L190 123 L188 135 L172 135 Z" fill="#D8DEE9" />
+  <path d="M173 123 C173 118 187 118 187 123" fill="none" stroke="#D8DEE9" stroke-width="2" />
+
+  <!-- Equilibrium Indicator / Glow (Balanced State) -->
+  <circle cx="120" cy="90" r="3" fill="#A3BE8C" />
+  
+  <!-- Subtle directional arrows denoting dynamic balance -->
+  <path d="M85 75 Q120 65 155 75" fill="none" stroke="#4C566A" stroke-width="1.5" stroke-dasharray="3 3" />
+  <path d="M150 72 L156 75 L150 78" fill="none" stroke="#4C566A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M90 72 L84 75 L90 78" fill="none" stroke="#4C566A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

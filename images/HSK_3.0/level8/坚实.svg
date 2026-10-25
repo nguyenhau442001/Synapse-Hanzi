@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Architectural Pedestal / Deep Foundation Concept (Vững chắc, kiên cố) -->
+    
+    <!-- Ground / Subsurface Layer (Darker strata) -->
+    <rect x="40" y="170" width="160" height="25" rx="4" fill="#252A34"/>
+    <rect x="55" y="195" width="130" height="15" rx="3" fill="#1E222B"/>
+    
+    <!-- Deep Concrete Footings / Piles -->
+    <rect x="70" y="130" width="20" height="40" fill="#323846"/>
+    <rect x="150" y="130" width="20" height="40" fill="#323846"/>
+    <rect x="110" y="130" width="20" height="40" fill="#323846"/>
+    
+    <!-- Massive Base Platform (Foundation Layer) -->
+    <rect x="50" y="130" width="140" height="12" rx="3" fill="#4B5563"/>
+    
+    <!-- Heavy Solid Pillar / Architectural Monolith representing "坚实" -->
+    <!-- Main Body -->
+    <path d="M 75 55 L 165 55 L 175 130 L 65 130 Z" fill="#3B82F6"/>
+    
+    <!-- Pillar Shading / Dimensional Cut -->
+    <path d="M 120 55 L 165 55 L 175 130 L 120 130 Z" fill="#2563EB"/>
+    
+    <!-- Capital Top Block -->
+    <rect x="65" y="45" width="110" height="12" rx="3" fill="#60A5FA"/>
+    
+    <!-- Structural Reinforcement Lines (Grid of strength) -->
+    <line x1="95" y1="70" x2="95" y2="115" stroke="#1D4ED8" stroke-width="3" stroke-dasharray="4 4"/>
+    <line x1="120" y1="70" x2="120" y2="115" stroke="#1D4ED8" stroke-width="3" stroke-dasharray="4 4"/>
+    <line x1="145" y1="70" x2="145" y2="115" stroke="#1D4ED8" stroke-width="3" stroke-dasharray="4 4"/>
+    
+    <!-- Highlight Accent (Gold/Orange for focus/breakthrough foundation) -->
+    <rect x="100" y="32" width="40" height="8" rx="2" fill="#F59E0B"/>
+    <circle cx="120" cy="36" r="2" fill="#FEF3C7"/>
+    
+    <!-- Strong Anchor Bolts at Base -->
+    <circle cx="80" cy="136" r="3" fill="#9CA3AF"/>
+    <circle cx="160" cy="136" r="3" fill="#9CA3AF"/>
+  </g>
+</svg>

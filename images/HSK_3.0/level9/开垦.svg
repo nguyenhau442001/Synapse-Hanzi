@@ -1,0 +1,57 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Definition Grid / Subtle Ambient Background Elements -->
+  <g opacity="0.15">
+    <line x1="30" y1="200" x2="210" y2="200" stroke="#64748B" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <line x1="30" y1="170" x2="210" y2="170" stroke="#64748B" stroke-width="1" stroke-dasharray="2 6"/>
+  </g>
+
+  <!-- Untamed / Barren Wasteland Section (Left & Background) -->
+  <path d="M 30,195 L 60,185 L 85,190 L 110,180 L 130,195 Z" fill="#2D3748" opacity="0.6"/>
+  <!-- Cracked barren earth texture lines -->
+  <path d="M 45,190 L 52,193 M 70,187 L 75,191 M 95,183 L 90,188" stroke="#4A5568" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Cultivated / Fertile Field Section (Foreground & Right - "开垦" result) -->
+  <!-- Rich soil ridges -->
+  <path d="M 100,205 Q 140,195 210,198 L 210,215 L 100,215 Z" fill="#78350F"/>
+  <path d="M 80,195 Q 130,183 210,187 L 210,198 L 80,198 Z" fill="#92400E"/>
+  <path d="M 65,185 Q 120,172 210,177 L 210,187 L 65,187 Z" fill="#B45309"/>
+
+  <!-- Glowing/Vibrant Young Crops (Symbolizing successful reclamation) -->
+  <g fill="#10B981">
+    <!-- Sprout 1 -->
+    <path d="M 115,182 Q 115,172 110,167 Q 120,169 125,178 Z"/>
+    <path d="M 115,182 Q 115,172 120,167 Q 115,169 110,178 Z"/>
+    <!-- Sprout 2 -->
+    <path d="M 145,190 Q 145,178 138,173 Q 148,175 155,185 Z"/>
+    <!-- Sprout 3 -->
+    <path d="M 175,182 Q 175,170 168,165 Q 178,167 185,177 Z"/>
+  </g>
+
+  <!-- Central Iconic Object: The Reclamation Plow (Plowing action from barren to fertile) -->
+  <g transform="translate(10, 10)">
+    <!-- Wooden Handle -->
+    <path d="M 60,70 L 110,135" stroke="#D97706" stroke-width="7" stroke-linecap="round"/>
+    <!-- Plow Beam -->
+    <path d="M 75,100 L 140,155" stroke="#B45309" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Metal Share / Blade (Cutting deep into the soil) -->
+    <path d="M 130,145 L 155,150 L 140,168 Z" fill="#94A3B8"/>
+    <path d="M 155,150 L 168,153 L 140,168 Z" fill="#CBD5E1"/>
+
+    <!-- Handle Grip -->
+    <circle cx="58" cy="67" r="5" fill="#F59E0B"/>
+  </g>
+
+  <!-- Dynamic Soil Turning Effect (Action lines & clods) -->
+  <circle cx="150" cy="140" r="3" fill="#B45309"/>
+  <circle cx="158" cy="135" r="2" fill="#D97706"/>
+  <path d="M 135,130 Q 145,120 160,125" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <path d="M 142,122 Q 152,112 165,118" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Focal Accent Lighting / Sun Glow -->
+  <circle cx="180" cy="70" r="25" fill="#FBBF24" opacity="0.12"/>
+  <circle cx="180" cy="70" r="15" fill="#FBBF24" opacity="0.2"/>
+</svg>

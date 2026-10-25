@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements / warmth glow -->
+  <circle cx="120" cy="130" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Stove body -->
+  <path d="M 80 185 L 160 185 L 150 155 L 90 155 Z" fill="#2D3748"/>
+  <rect x="100" y="163" width="40" height="14" rx="3" fill="#1A1D24"/>
+  <circle cx="120" cy="170" r="4" fill="#F6AD55"/>
+
+  <!-- Dynamic Fire / Flames -->
+  <path d="M 105 155 C 105 135, 115 130, 120 120 C 125 130, 135 135, 135 155 Z" fill="#DD6B20"/>
+  <path d="M 112 155 C 112 142, 118 138, 120 130 C 122 138, 128 142, 128 155 Z" fill="#F6AD55"/>
+
+  <!-- Wok / Cooking Pot -->
+  <path d="M 75 125 C 75 155, 165 155, 165 125 Z" fill="#4A5568"/>
+  <ellipse cx="120" cy="125" rx="45" ry="12" fill="#718096"/>
+  <ellipse cx="120" cy="123" rx="42" ry="9" fill="#2D3748"/>
+  
+  <!-- Pot Handles -->
+  <path d="M 75 123 C 65 123, 65 117, 73 115" stroke="#718096" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M 165 123 C 175 123, 175 117, 167 115" stroke="#718096" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- Steam & Motion Lines (Cooking action) -->
+  <path d="M 105 105 C 100 95, 110 85, 105 75" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M 135 108 C 140 98, 130 88, 135 78" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M 120 110 C 120 98, 125 90, 120 80" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+
+  <!-- Ingredients inside wok (sliced carrots/veg) -->
+  <circle cx="105" cy="123" r="5" fill="#ED8936"/>
+  <circle cx="135" cy="125" r="4" fill="#48BB78"/>
+  <circle cx="120" cy="121" r="5" fill="#ED8936"/>
+
+  <!-- Cooking Spatula / Turner interacting with food -->
+  <g transform="rotate(-25 140 95)">
+    <!-- Handle -->
+    <rect x="137" y="55" width="6" height="45" rx="3" fill="#D69E2E"/>
+    <!-- Blade -->
+    <path d="M 133 95 L 147 95 L 152 115 L 128 115 Z" fill="#E2E8F0"/>
+    <circle cx="140" cy="103" r="1.5" fill="#4A5568"/>
+    <circle cx="140" cy="109" r="1.5" fill="#4A5568"/>
+  </g>
+
+  <!-- Dynamic motion lines for stirring action -->
+  <path d="M 148 85 C 158 90, 160 102, 155 110" stroke="#F6AD55" stroke-width="2.5" stroke-linecap="round" fill="none" stroke-dasharray="4 4"/>
+</svg>

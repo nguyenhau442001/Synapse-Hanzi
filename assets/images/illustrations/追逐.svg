@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground: Green lawn matching contextual reference -->
+  <path d="M 0 170 Q 120 155 240 170 L 240 220 Q 120 220 0 220 Z" fill="#2E4F4F"/>
+  <path d="M 0 185 Q 120 175 240 185 L 240 240 Q 120 240 0 240 Z" fill="#1E3838"/>
+  
+  <!-- Grass tufts / details -->
+  <path d="M 30 172 L 34 162 L 38 172" stroke="#4E878C" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M 85 178 L 89 166 L 93 178" stroke="#4E878C" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M 160 174 L 164 163 L 168 174" stroke="#4E878C" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M 205 180 L 208 170 L 212 180" stroke="#4E878C" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <!-- Motion lines for speed/chasing -->
+  <path d="M 35 110 Q 55 105 75 110" stroke="#FFD166" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M 95 95 Q 115 90 135 95" stroke="#FFD166" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+  <!-- Boy 1 (Chaser - behind, leaning forward energetically) -->
+  <!-- Legs -->
+  <line x1="75" y1="155" x2="60" y2="180" stroke="#EF476F" stroke-width="6" stroke-linecap="round"/>
+  <line x1="85" y1="155" x2="98" y2="175" stroke="#EF476F" stroke-width="6" stroke-linecap="round"/>
+  <!-- Body/Torso -->
+  <path d="M 70 120 L 85 125 L 80 155 L 65 150 Z" fill="#EF476F"/>
+  <!-- Arms (reaching forward) -->
+  <line x1="75" y1="125" x2="105" y2="120" stroke="#EF476F" stroke-width="5" stroke-linecap="round"/>
+  <line x1="78" y1="130" x2="95" y2="145" stroke="#FFD166" stroke-width="5" stroke-linecap="round"/>
+  <!-- Head -->
+  <circle cx="65" cy="110" r="12" fill="#FFD166"/>
+  <!-- Hair -->
+  <path d="M 55 108 Q 62 98 75 105 Z" fill="#2B2D42"/>
+
+  <!-- Boy 2 (Being chased - ahead, running joyfully) -->
+  <!-- Legs (running stride) -->
+  <line x1="145" y1="155" x2="130" y2="182" stroke="#118AB2" stroke-width="6" stroke-linecap="round"/>
+  <line x1="155" y1="155" x2="175" y2="170" stroke="#118AB2" stroke-width="6" stroke-linecap="round"/>
+  <!-- Body/Torso -->
+  <path d="M 140 120 L 158 125 L 150 155 L 132 150 Z" fill="#118AB2"/>
+  <!-- Arms (pumped for running) -->
+  <line x1="148" y1="125" x2="130" y2="140" stroke="#118AB2" stroke-width="5" stroke-linecap="round"/>
+  <line x1="142" y1="128" x2="165" y2="120" stroke="#FFD166" stroke-width="5" stroke-linecap="round"/>
+  <!-- Head -->
+  <circle cx="155" cy="108" r="12" fill="#FFD166"/>
+  <!-- Hair -->
+  <path d="M 145 105 Q 155 95 167 103 Z" fill="#2B2D42"/>
+
+  <!-- Dust particles / dynamic speed cues near feet -->
+  <circle cx="58" cy="183" r="3" fill="#8D99AE" opacity="0.6"/>
+  <circle cx="127" cy="185" r="2.5" fill="#8D99AE" opacity="0.6"/>
+  <circle cx="178" cy="173" r="2" fill="#8D99AE" opacity="0.6"/>
+</svg>

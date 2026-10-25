@@ -1,0 +1,87 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Definitions for glowing and gradient effects -->
+  <defs>
+    <!-- Background glow for the focal point -->
+    <radialGradient id="memoryGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F5A623" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="#3B4252" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#1A1D24" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Gradient for the timeline/progression path -->
+    <linearGradient id="timePathGrad" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#4C566A" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#F5A623" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#88C0D0" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Accent gold gradient -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD166"/>
+      <stop offset="100%" stop-color="#F5A623"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Background Glow -->
+  <circle cx="120" cy="115" r="90" fill="url(#memoryGlow)"/>
+
+  <!-- ABSTRACT METAPHOR: PROGRESSION / CAUSALITY (Timeline & Echoing Resonance) -->
+  <!-- Connecting curved path showing past meeting present (Causality / Progression) -->
+  <path d="M 50,150 Q 120,70 190,150" fill="none" stroke="url(#timePathGrad)" stroke-width="2.5" stroke-dasharray="4 4" stroke-linecap="round"/>
+
+  <!-- PAST EVENT NODE (Left side: Ancient arched architecture silhouette) -->
+  <g transform="translate(40, 95)">
+    <!-- Node background anchor -->
+    <circle cx="10" cy="35" r="22" fill="#2E3440" stroke="#4C566A" stroke-width="1.5"/>
+    <!-- Minimalist ancient structure (roof curve) -->
+    <path d="M -2,40 C 2,30 18,30 22,40 L 26,44 C 18,41 2,41 -6,44 Z" fill="#D8DEE9"/>
+    <path d="M 10,23 C 4,23 2,28 2,32 L 18,32 C 18,28 16,23 10,23 Z" fill="#88C0D0"/>
+    <rect x="7" y="32" width="6" height="12" fill="#2E3440"/>
+    <!-- Emitting echo waves backwards -->
+    <path d="M -10,35 C -15,30 -15,15 -10,10" fill="none" stroke="#4C566A" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- PRESENT EVENT NODE (Right side: Modern architectural arch silhouette resonating) -->
+  <g transform="translate(170, 95)">
+    <!-- Node background anchor -->
+    <circle cx="10" cy="35" r="22" fill="#2E3440" stroke="#88C0D0" stroke-width="1.5"/>
+    <!-- Minimalist arch structure matching the past -->
+    <path d="M -2,40 C 2,30 18,30 22,40 L 26,44 C 18,41 2,41 -6,44 Z" fill="#D8DEE9"/>
+    <path d="M 10,23 C 4,23 2,28 2,32 L 18,32 C 18,28 16,23 10,23 Z" fill="#88C0D0"/>
+    <rect x="7" y="32" width="6" height="12" fill="#2E3440"/>
+  </g>
+
+  <!-- CENTER FOCUS: THE MOMENT OF RECOGNITION (Resonance / Overlapping Echoes & Focal Magnification) -->
+  <!-- Central glowing resonance ripples (Visualizing "dường như đã từng quen biết") -->
+  <g transform="translate(120, 115)">
+    <!-- Outer resonance ring -->
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#F5A623" stroke-width="1" stroke-opacity="0.3"/>
+    <!-- Mid resonance ring -->
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#F5A623" stroke-width="1.5" stroke-opacity="0.6"/>
+    <!-- Inner solid focal core -->
+    <circle cx="0" cy="0" r="18" fill="#2E3440" stroke="url(#goldGradient)" stroke-width="2"/>
+    
+    <!-- Abstract intersecting geometric paths representing memory overlapping/matching -->
+    <path d="M -8,-3 C -4,-10 4,-10 8,-3 C 4,4 -4,4 -8,-3 Z" fill="url(#goldGradient)"/>
+    <circle cx="0" cy="-3" r="3" fill="#1A1D24"/>
+  </g>
+
+  <!-- SOUND / MELODY WAVE ELEMENT (Contextual reference: "悠扬东方旋律") -->
+  <!-- Stylized smooth sine wave flowing across the upper middle scene, turning golden at the point of recognition -->
+  <path d="M 75,70 C 95,50 105,90 120,70 C 135,50 145,90 165,70" fill="none" stroke="url(#goldGradient)" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Floating melodic notes translating recognition -->
+  <circle cx="100" cy="58" r="2.5" fill="#FFD166"/>
+  <circle cx="140" cy="58" r="2.5" fill="#FFD166"/>
+
+  <!-- SCENE BASELINE (Minimalist horizon/ground line) -->
+  <line x1="50" y1="165" x2="190" y2="165" stroke="#3B4252" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Subtle ground distance markers (Progression/Step indicators) -->
+  <circle cx="85" cy="165" r="2" fill="#4C566A"/>
+  <circle cx="120" cy="165" r="3.5" fill="url(#goldGradient)"/>
+  <circle cx="155" cy="165" r="2" fill="#4C566A"/>
+
+</svg>

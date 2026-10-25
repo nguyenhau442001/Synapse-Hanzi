@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 120)">
+    <!-- Mountain Background representing reaching the peak/ambition -->
+    <polygon points="-80,70 -20,-20 30,70" fill="#242933"/>
+    <polygon points="-20,-20 40,50 90,70 30,70" fill="#2A313D"/>
+    
+    <!-- Majestic Peak -->
+    <polygon points="10,-50 70,70 -45,70" fill="#313A48"/>
+    <!-- Peak Snowcap / Highlight -->
+    <polygon points="10,-50 31,-8 1,-12" fill="#434D5E"/>
+    <polygon points="10,-50 31,-8 43,15" fill="#3A4454"/>
+
+    <!-- Rising Sun / Determination Accent -->
+    <circle cx="-50" cy="-30" r="16" fill="#F59E0B" opacity="0.9"/>
+
+    <!-- Ground Line -->
+    <line x1="-90" y1="70" x2="90" y2="70" stroke="#3A4454" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Climber Character (Personification of 志气: unwavering will scaling upward) -->
+    <!-- Body & Backpack -->
+    <rect x="18" y="25" width="12" height="22" rx="4" fill="#E2E8F0"/>
+    <rect x="23" y="28" width="8" height="15" rx="2" fill="#F59E0B"/> <!-- Backpack -->
+    
+    <!-- Head with determination helmet/cap -->
+    <circle cx="24" cy="16" r="6" fill="#E2E8F0"/>
+    <path d="M18 14h12l-2-3h-8z" fill="#F59E0B"/>
+
+    <!-- Limbs in dynamic climbing motion -->
+    <!-- Back arm reaching up -->
+    <line x1="24" y1="28" x2="38" y2="12" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round"/>
+    <!-- Front leg stepping up -->
+    <line x1="24" y1="47" x2="12" y2="60" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round"/>
+    <line x1="12" y1="60" x2="5" y2="62" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/> <!-- Crampon/boot -->
+
+    <!-- Ice Axe / Climbing Pole symbolizing upward drive -->
+    <line x1="38" y1="6" x2="38" y2="52" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M34 8h8l-4-8z" fill="#F59E0B"/>
+
+    <!-- Uplifting Particles / Energy Sparks -->
+    <circle cx="55" cy="-20" r="2.5" fill="#F59E0B" opacity="0.8"/>
+    <circle cx="45" cy="-35" r="1.5" fill="#F59E0B" opacity="0.6"/>
+    <circle cx="68" cy="-5" r="2" fill="#F59E0B" opacity="0.7"/>
+  </g>
+</svg>

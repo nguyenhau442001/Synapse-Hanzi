@@ -1,0 +1,78 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <defs>
+    <!-- Gradients for depth in flat design -->
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D3748"/>
+      <stop offset="100%" stop-color="#1A202C"/>
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6AD55"/>
+      <stop offset="100%" stop-color="#D69E2E"/>
+    </linearGradient>
+    <linearGradient id="maskGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A5568"/>
+      <stop offset="100%" stop-color="#2D3748"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background subtle geometric corporate lines -->
+  <g opacity="0.15" stroke="#CBD5E0" stroke-width="1" stroke-dasharray="4 4">
+    <line x1="40" y1="120" x2="200" y2="120" />
+    <line x1="120" y1="40" x2="120" y2="200" />
+    <circle cx="120" cy="120" r="70" fill="none"/>
+  </g>
+
+  <!-- Central Character representing "世故" (Worldly, sophisticated, polished persona) -->
+  <!-- Shoulders & Suit -->
+  <path d="M 70 200 C 70 170 90 155 120 155 C 150 155 170 170 170 200 Z" fill="url(#suitGrad)"/>
+  
+  <!-- Shirt & Tie -->
+  <polygon points="120,165 110,185 130,185" fill="#E2E8F0"/>
+  <polygon points="117,185 123,185 125,210 120,215 115,210" fill="url(#goldAccent)"/>
+  <path d="M 95 160 L 120 178 L 145 160" fill="none" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Neck -->
+  <rect x="110" y="135" width="20" height="25" fill="#CBD5E0" rx="4"/>
+
+  <!-- Head/Face Structure -->
+  <path d="M 90 90 C 90 65 150 65 150 90 C 150 115 145 135 120 135 C 95 135 90 115 90 90 Z" fill="#CBD5E0"/>
+
+  <!-- Hair (Neat, modern slicked-back corporate style) -->
+  <path d="M 91 85 C 88 60 105 48 120 48 C 138 48 151 60 149 88 C 144 75 135 60 120 60 C 105 60 95 72 91 85 Z" fill="#2D3748"/>
+
+  <!-- Sophisticated Persona Elements: The Dual-Layer Mask/Expression -->
+  <!-- Outer Persona Mask (Sleek, polished veneer) -->
+  <g transform="translate(0, 0)">
+    <!-- Polished half-face mask tilted slightly -->
+    <path d="M 120 68 C 145 68 152 95 142 118 C 135 130 120 133 120 133 L 120 68 Z" fill="url(#maskGrad)" opacity="0.9"/>
+    
+    <!-- Mask Edge Highlight -->
+    <path d="M 120 68 L 120 133" stroke="url(#goldAccent)" stroke-width="2"/>
+    
+    <!-- Sophisticated Smiling Eye on Mask -->
+    <path d="M 125 90 C 130 85 138 85 142 90" fill="none" stroke="url(#goldAccent)" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Subtle Knowing Smile on Mask -->
+    <path d="M 126 112 C 132 118 138 115 142 110" fill="none" stroke="url(#goldAccent)" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Decorative intricate gear/network line on mask representing calculation/tact -->
+    <circle cx="134" cy="100" r="12" fill="none" stroke="url(#goldAccent)" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.8"/>
+  </g>
+
+  <!-- Left Side: Genuine/Inner neutral feature -->
+  <circle cx="105" cy="90" r="3" fill="#2D3748"/>
+  <path d="M 98 110 C 102 113 108 113 112 110" fill="none" stroke="#2D3748" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Floating abstract indicators of worldly nuance/tact (chess pieces/nodes) -->
+  <!-- Gold accent nodes floating around to signify social agility & complexity -->
+  <circle cx="72" cy="75" r="5" fill="url(#goldAccent)"/>
+  <circle cx="175" cy="100" r="7" fill="url(#goldAccent)"/>
+  <circle cx="160" cy="145" r="4" fill="url(#goldAccent)"/>
+  
+  <!-- Connecting subtle lines representing intricate social web / networking -->
+  <path d="M 72 75 L 95 90 M 175 100 L 142 95 M 160 145 L 140 130" stroke="url(#goldAccent)" stroke-width="1.5" opacity="0.6"/>
+
+</svg>

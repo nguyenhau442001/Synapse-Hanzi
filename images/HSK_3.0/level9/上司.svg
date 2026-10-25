@@ -1,0 +1,32 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Desk -->
+  <rect x="40" y="150" width="160" height="15" rx="2" fill="#343A46"/>
+  <rect x="50" y="165" width="10" height="40" fill="#2A2F3A"/>
+  <rect x="180" y="165" width="10" height="40" fill="#2A2F3A"/>
+
+  <!-- Superior (The Boss) -->
+  <g transform="translate(140, 80)">
+    <circle cx="20" cy="20" r="15" fill="#FFB84D"/>
+    <path d="M5 35 C5 55, 35 55, 35 35 L35 80 L5 80 Z" fill="#FFB84D"/>
+    <rect x="10" y="80" width="20" height="50" fill="#FFB84D"/>
+    <rect x="15" y="40" width="10" height="5" fill="#1A1D24"/>
+  </g>
+
+  <!-- Subordinate (Employee) -->
+  <g transform="translate(60, 100)">
+    <circle cx="20" cy="20" r="12" fill="#8892B0"/>
+    <path d="M8 32 C8 45, 32 45, 32 32 L32 70 L8 70 Z" fill="#8892B0"/>
+    <rect x="12" y="70" width="16" height="40" fill="#8892B0"/>
+  </g>
+
+  <!-- Interaction: Document/Report being handed over -->
+  <rect x="100" y="110" width="40" height="30" rx="2" fill="#E9ECEF"/>
+  <line x1="105" y1="118" x2="135" y2="118" stroke="#ADB5BD" stroke-width="2"/>
+  <line x1="105" y1="125" x2="135" y2="125" stroke="#ADB5BD" stroke-width="2"/>
+  <line x1="105" y1="132" x2="120" y2="132" stroke="#ADB5BD" stroke-width="2"/>
+
+  <!-- Visual Hierarchy: Subtle elevated platform for the boss -->
+  <rect x="120" y="145" width="80" height="5" fill="#2A2F3A"/>
+</svg>

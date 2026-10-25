@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Conceptualizing "就此" as a definitive point of resolution/stopping a conflict -->
+  <!-- Two hands meeting in a firm, respectful handshake to symbolize the end of a dispute -->
+  
+  <!-- Left Arm -->
+  <path d="M60 180 L90 140 L110 150 L80 190 Z" fill="#FFB347"/>
+  <path d="M70 190 L100 150 L115 160 L85 200 Z" fill="#E69138"/>
+  
+  <!-- Right Arm -->
+  <path d="M180 180 L150 140 L130 150 L160 190 Z" fill="#FFB347"/>
+  <path d="M170 190 L140 150 L125 160 L155 200 Z" fill="#E69138"/>
+  
+  <!-- Handshake Intersection -->
+  <circle cx="120" cy="145" r="25" fill="#FFB347"/>
+  <circle cx="120" cy="145" r="15" fill="#E69138"/>
+  
+  <!-- Stop/Resolution Marker: A vertical line indicating the point of cessation -->
+  <rect x="115" y="70" width="10" height="40" rx="2" fill="#FFB347"/>
+  <rect x="105" y="100" width="30" height="10" rx="2" fill="#FFB347"/>
+  
+  <!-- Subtle ground shadow -->
+  <ellipse cx="120" cy="210" rx="80" ry="10" fill="#000000" opacity="0.3"/>
+</svg>

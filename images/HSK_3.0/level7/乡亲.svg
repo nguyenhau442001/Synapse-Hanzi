@@ -1,0 +1,65 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Warm Glow representing hometown warmth -->
+  <circle cx="120" cy="120" r="80" fill="#2D221B" opacity="0.6"/>
+
+  <!-- Traditional Village Roof silhouette subtly in the background -->
+  <path d="M70 95 L120 65 L170 95" stroke="#3E3832" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M95 80 L95 68 L105 68 L105 74" stroke="#3E3832" stroke-width="2" fill="none"/>
+
+  <!-- Character 1: Older Hometown Elder (Left, welcoming posture) -->
+  <g transform="translate(65, 115)">
+    <!-- Body -->
+    <path d="M-15 50 L-25 75 L25 75 L15 50 Z" fill="#2E4057"/>
+    <!-- Head -->
+    <circle cx="0" cy="20" r="16" fill="#D4A373"/>
+    <!-- Hair (grey) -->
+    <path d="M-14 18 C-14 8 -6 4 0 4 C6 4 14 8 14 18 Z" fill="#A4B0BE"/>
+    <!-- Smile & friendly eye -->
+    <path d="M-4 22 Q0 26 4 22" stroke="#2C3E50" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <circle cx="-5" cy="17" r="1.5" fill="#2C3E50"/>
+    <circle cx="5" cy="17" r="1.5" fill="#2C3E50"/>
+    <!-- Waving / Greeting Arm -->
+    <path d="M-12 35 C-25 30 -30 20 -25 15" stroke="#D4A373" stroke-width="5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Character 2: Returning Youth / Neighbor (Right, friendly posture) -->
+  <g transform="translate(175, 115)">
+    <!-- Body -->
+    <path d="M-15 50 L-25 75 L25 75 L15 50 Z" fill="#3D5A80"/>
+    <!-- Head -->
+    <circle cx="0" cy="20" r="16" fill="#E0A96D"/>
+    <!-- Hair (dark modern cut) -->
+    <path d="M-15 16 C-15 6 -6 4 0 4 C8 4 15 8 15 16 Z" fill="#2B2D42"/>
+    <!-- Smile -->
+    <path d="M-4 22 Q0 26 4 22" stroke="#2C3E50" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <circle cx="-5" cy="17" r="1.5" fill="#2C3E50"/>
+    <circle cx="5" cy="17" r="1.5" fill="#2C3E50"/>
+    <!-- Gesturing Arm -->
+    <path d="M12 35 C22 35 25 25 20 20" stroke="#E0A96D" stroke-width="5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Central Shared New Year Gift / Supplies Box (representing 慰问物资 / community sharing) -->
+  <g transform="translate(120, 140)">
+    <!-- Box Body -->
+    <rect x="-24" y="-10" width="48" height="35" rx="3" fill="#D97706"/>
+    <!-- Box Lid -->
+    <rect x="-28" y="-18" width="56" height="10" rx="2" fill="#B45309"/>
+    <!-- Ribbon Vertical -->
+    <rect x="-5" y="-18" width="10" height="43" fill="#FBBF24"/>
+    <!-- Ribbon Horizontal -->
+    <rect x="-28" y="-4" width="56" height="8" fill="#FBBF24"/>
+    <!-- Ribbon Bow on Top -->
+    <path d="M0 -18 C-8 -28 -14 -18 -4 -13" stroke="#FBBF24" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M0 -18 C8 -28 14 -18 4 -13" stroke="#FBBF24" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Warm greeting connection indicator (subtle gold sparkle above the box) -->
+  <g transform="translate(120, 102)">
+    <path d="M0 -8 L2 -2 L8 0 L2 2 L0 8 L-2 2 L-8 0 L-2 -2 Z" fill="#FBBF24"/>
+    <path d="M10 -15 L11 -11 L15 -10 L11 -9 L10 -5 L9 -9 L5 -10 L9 -11 Z" fill="#F59E0B" opacity="0.8"/>
+  </g>
+
+</svg>

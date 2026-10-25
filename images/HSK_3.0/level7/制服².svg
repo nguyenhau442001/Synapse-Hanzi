@@ -1,0 +1,48 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background grid/glow effects for dynamic action -->
+  <circle cx="120" cy="120" r="80" fill="none" stroke="#2A303C" stroke-width="1" stroke-dasharray="4 4"/>
+  
+  <!-- Motion / Dynamic Action Lines -->
+  <path d="M40 90 Q 70 80, 95 100" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M30 110 Q 60 100, 85 115" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <path d="M50 130 Q 75 120, 100 130" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+  
+  <!-- Character 2: The subdued figure (Aggressor/Threat being neutralized) -->
+  <g transform="translate(145, 125)">
+    <!-- Body falling forward / pinned -->
+    <path d="M 0 30 L 25 45 L 40 20 L 20 0 Z" fill="#64748B"/>
+    <!-- Head lowered -->
+    <circle cx="35" cy="10" r="10" fill="#94A3B8"/>
+    <!-- Outstretched arm trying to reach ground -->
+    <path d="M 30 35 L 55 45" stroke="#94A3B8" stroke-width="6" stroke-linecap="round"/>
+    <!-- Dropped knife (threat neutralized) -->
+    <path d="M 65 50 L 80 55 L 67 48 Z" fill="#E2E8F0"/>
+    <path d="M 55 45 L 68 50" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Character 1: The dynamic officer performing the action ("制服" - subduing/pinning) -->
+  <g transform="translate(70, 75)">
+    <!-- Officer dynamic lunging torso -->
+    <path d="M 10 40 L 45 30 L 65 60 L 30 70 Z" fill="#3B82F6"/>
+    <!-- Officer head (focused, determined) -->
+    <circle cx="0" cy="30" r="11" fill="#60A5FA"/>
+    <!-- Police cap peak -->
+    <path d="M -12 21 L 5 19 L 2 24 L -10 24 Z" fill="#1E3A8A"/>
+    <!-- Action arm firmly pinning down -->
+    <path d="M 35 45 L 75 65" stroke="#3B82F6" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="75" cy="65" r="5" fill="#60A5FA"/>
+    <!-- Second arm supporting/securing -->
+    <path d="M 25 50 L 50 80" stroke="#2563EB" stroke-width="7" stroke-linecap="round"/>
+    <!-- Dynamic leg lunging back -->
+    <path d="M 10 65 L -15 95 L -5 100 L 20 70 Z" fill="#1E40AF"/>
+  </g>
+  
+  <!-- Impact / Control Focus Effect -->
+  <circle cx="145" cy="140" r="12" fill="none" stroke="#F59E0B" stroke-width="2.5" opacity="0.9"/>
+  <path d="M 145 125 L 145 155" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 130 140 L 160 140" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+
+</svg>

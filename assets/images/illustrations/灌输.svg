@@ -1,0 +1,19 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Head of the student -->
+  <circle cx="120" cy="140" r="35" fill="#E0E0E0"/>
+  <path d="M95 140 Q 120 165 145 140" stroke="#333" stroke-width="2" fill="none"/>
+  
+  <!-- Funnel -->
+  <path d="M90 60 L 150 60 L 130 100 L 110 100 Z" fill="#FFB347"/>
+  <rect x="115" y="100" width="10" height="20" fill="#FFB347"/>
+  
+  <!-- Knowledge blocks being poured -->
+  <rect x="115" y="40" width="10" height="10" fill="#4A90E2"/>
+  <rect x="130" y="30" width="10" height="10" fill="#50E3C2"/>
+  <rect x="100" y="25" width="10" height="10" fill="#F5A623"/>
+  
+  <!-- Neck and shoulders -->
+  <path d="M95 170 C 95 190, 145 190, 145 170 L 145 220 L 95 220 Z" fill="#333"/>
+</svg>

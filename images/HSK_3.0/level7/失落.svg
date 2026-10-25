@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Desk surface -->
+    <path d="M40 185 L200 185" stroke="#2D333B" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Rejected project folder / document -->
+    <g transform="translate(75, 95) rotate(-8)">
+      <!-- Folder back -->
+      <path d="M0 15 C0 10 5 5 12 5 L35 5 L50 20 L78 20 C85 20 90 25 90 30 L90 85 C90 90 85 95 78 95 L12 95 C5 95 0 90 0 85 Z" fill="#2E3846"/>
+      <!-- Folder contents / Rejected document with red stamp/mark -->
+      <rect x="10" y="25" width="70" height="65" rx="3" fill="#F0F3F6"/>
+      <!-- Text lines placeholder -->
+      <rect x="18" y="35" width="40" height="5" rx="1.5" fill="#A0AEC0"/>
+      <rect x="18" y="47" width="54" height="4" rx="1" fill="#CBD5E0"/>
+      <rect x="18" y="57" width="45" height="4" rx="1" fill="#CBD5E0"/>
+      <rect x="18" y="67" width="30" height="4" rx="1" fill="#CBD5E0"/>
+      
+      <!-- Rejection cross mark -->
+      <path d="M42 42 L62 62 M62 42 L42 62" stroke="#E5534B" stroke-width="4" stroke-linecap="round"/>
+    </g>
+
+    <!-- Character slumped over in despair/disappointment (失落) -->
+    <!-- Chair back -->
+    <path d="M145 90 L145 155 C145 160 140 165 135 165 L130 165 C125 165 120 160 120 155 L120 90 Z" fill="#2E3846" opacity="0.6"/>
+
+    <!-- Head and hair (slumped forward) -->
+    <circle cx="115" cy="115" r="18" fill="#F6AD55"/>
+    <path d="M97 112 C98 98 110 95 125 98 C130 99 133 103 133 108 C133 108 128 103 120 104 C112 105 103 108 97 112 Z" fill="#4A5568"/>
+
+    <!-- Slumped Body / Back -->
+    <path d="M100 128 C105 122 125 120 140 135 C150 145 155 160 155 175 L105 175 C100 165 95 145 100 128 Z" fill="#3182CE"/>
+
+    <!-- Drooping arms -->
+    <path d="M125 138 C115 145 105 160 95 178" stroke="#3182CE" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Hands hanging down -->
+    <circle cx="93" cy="180" r="4" fill="#F6AD55"/>
+
+    <!-- Legs sitting -->
+    <path d="M150 170 L185 170 C190 170 195 175 195 180 L195 185" stroke="#2B6CB0" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

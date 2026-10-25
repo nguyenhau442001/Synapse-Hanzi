@@ -1,0 +1,61 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background ambient glow for mood -->
+  <circle cx="120" cy="120" r="90" fill="#222733" opacity="0.6"/>
+
+  <!-- Scenery / Environmental details (Tree canopy & path evoking the context) -->
+  <path d="M40 180 Q120 170 200 180" stroke="#2A3140" stroke-width="6" stroke-linecap="round" fill="none"/>
+  
+  <!-- Stylized tree silhouettes / foliage overhead -->
+  <path d="M50 80 Q70 40 110 50 Q150 30 180 70 Q210 100 170 120 Q120 130 70 110 Q30 100 50 80 Z" fill="#242B38" opacity="0.7"/>
+  <path d="M120 60 Q150 30 190 60 Q220 90 190 120 Q150 140 110 110 Q90 90 120 60 Z" fill="#2A3342" opacity="0.5"/>
+
+  <!-- Main Character Representation: An elderly couple leisurely strolling (溜达) hand in hand -->
+  <g transform="translate(0, 10)">
+    <!-- Shadow beneath figures -->
+    <ellipse cx="120" cy="182" rx="46" ry="6" fill="#111317"/>
+
+    <!-- Left Figure (Grandpa - stylized flat modern avatar) -->
+    <g transform="translate(94, 110)">
+      <!-- Body / Jacket -->
+      <path d="M-6 25 L-12 55 L-2 70 L6 55 L2 25 Z" fill="#3B82F6"/>
+      <!-- Head -->
+      <circle cx="-3" cy="12" r="9" fill="#E5E7EB"/>
+      <!-- Hair (gray/white) -->
+      <path d="M-11 10 Q-3 3 5 10 Q2 5 -3 5 Q-8 5 -11 10 Z" fill="#9CA3AF"/>
+      <!-- Arm / Hand reaching to hold -->
+      <path d="M-5 28 L14 38" stroke="#3B82F6" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="15" cy="39" r="3" fill="#E5E7EB"/>
+      <!-- Leg walking stride -->
+      <path d="M-4 52 L-10 71" stroke="#1E293B" stroke-width="5" stroke-linecap="round"/>
+      <path d="M2 52 L10 70" stroke="#334155" stroke-width="5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Right Figure (Grandma - stylized flat modern avatar) -->
+    <g transform="translate(132, 108)">
+      <!-- Body / Dress or Coat -->
+      <path d="M-2 25 L-8 55 Q0 73 8 55 L2 25 Z" fill="#F59E0B"/>
+      <!-- Head -->
+      <circle cx="3" cy="12" r="9" fill="#E5E7EB"/>
+      <!-- Hair (bun/styling) -->
+      <path d="M-2 5 Q6 2 8 10 Q4 8 3 8 Z" fill="#9CA3AF"/>
+      <!-- Arm / Hand reaching to hold -->
+      <path d="M5 28 L-14 40" stroke="#F59E0B" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="-15" cy="41" r="3" fill="#E5E7EB"/>
+      <!-- Leg walking stride -->
+      <path d="M-3 54 L-8 72" stroke="#D97706" stroke-width="5" stroke-linecap="round"/>
+      <path d="M3 54 L11 72" stroke="#B45309" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    
+    <!-- Joined hands highlight (warm connection without floating hearts) -->
+    <circle cx="120" cy="150" r="4" fill="#FBBF24"/>
+  </g>
+
+  <!-- Decorative modern accent light elements (Soft glowing atmospheric particles) -->
+  <circle cx="70" cy="95" r="2" fill="#F59E0B" opacity="0.6"/>
+  <circle cx="175" cy="85" r="1.5" fill="#3B82F6" opacity="0.7"/>
+  <circle cx="150" cy="65" r="2.5" fill="#F59E0B" opacity="0.4"/>
+  <circle cx="90" cy="70" r="1.5" fill="#60A5FA" opacity="0.5"/>
+</svg>

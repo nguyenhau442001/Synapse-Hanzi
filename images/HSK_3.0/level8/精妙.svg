@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(30, 20)">
+    <!-- Scroll Stand / Background Structure -->
+    <path d="M40 20 L140 20 L150 170 L30 170 Z" fill="#252A34" opacity="0.6"/>
+    <!-- Scroll Rollers -->
+    <rect x="25" y="10" width="130" height="15" rx="7.5" fill="#C59B27"/>
+    <rect x="25" y="165" width="130" height="15" rx="7.5" fill="#C59B27"/>
+    
+    <!-- Classical Artwork Canvas (The Masterpiece) -->
+    <rect x="35" y="25" width="110" height="142" fill="#F4EDE2"/>
+    
+    <!-- Delicate Ink Landscape Art (Representing 精妙 - exquisite ingenuity) -->
+    <!-- Distant Mountains -->
+    <path d="M50 90 Q 75 60 100 85 T 135 75 L 140 130 L 45 130 Z" fill="#D0D7DE" opacity="0.7"/>
+    <path d="M65 105 Q 90 70 120 95 L 130 130 L 55 130 Z" fill="#A4B0BE" opacity="0.5"/>
+    
+    <!-- Masterful Pine Tree (Precise brushwork) -->
+    <path d="M95 130 C 93 110 97 90 95 75" stroke="#2F3640" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M95 85 C 80 80 75 70 85 65 C 95 70 95 85 95 85 Z" fill="#2F3640"/>
+    <path d="M96 75 C 110 70 115 60 105 55 C 95 60 96 75 96 75 Z" fill="#2F3640"/>
+    <path d="M95 95 C 82 92 78 85 86 80 C 93 85 95 95 95 95 Z" fill="#2F3640"/>
+    <path d="M96 88 C 108 85 112 78 104 74 C 98 78 96 88 96 88 Z" fill="#2F3640"/>
+
+    <!-- Flowing River / Negative Space -->
+    <path d="M45 130 Q 75 125 90 135 T 135 130" stroke="#718093" stroke-width="2" fill="none" opacity="0.6"/>
+
+    <!-- Golden Accent: The Master's Seal (象征精妙的印章) -->
+    <rect x="115" y="135" width="16" height="16" rx="2" fill="#D9534F"/>
+    <rect x="117" y="137" width="12" height="12" rx="1" fill="none" stroke="#F4EDE2" stroke-width="1"/>
+
+    <!-- Floating Magnifying/Analysis Lens highlighting exquisite detail -->
+    <g transform="translate(130, 85)">
+      <!-- Lens Body -->
+      <circle cx="25" cy="25" r="24" fill="none" stroke="#E5C158" stroke-width="4"/>
+      <circle cx="25" cy="25" r="22" fill="#1A1D24" fill-opacity="0.3"/>
+      <!-- Handle -->
+      <path d="M8 42 L -6 56" stroke="#E5C158" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="-8" cy="58" r="3" fill="#E5C158"/>
+      <!-- Glowing spark of ingenuity -->
+      <circle cx="25" cy="25" r="3" fill="#FFF" opacity="0.9"/>
+      <path d="M25 15 L25 35 M15 25 L35 25" stroke="#E5C158" stroke-width="1.5" opacity="0.6"/>
+    </g>
+  </g>
+</svg>

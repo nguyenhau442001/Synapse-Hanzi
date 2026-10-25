@@ -1,0 +1,58 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle official seal/stamp graphic to imply formal official notice/dispatch -->
+  <circle cx="120" cy="120" r="75" fill="none" stroke="#2A313C" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6"/>
+
+  <!-- Official Document / Certificate Body -->
+  <g transform="translate(65, 52)">
+    <!-- Document shadow/back layer -->
+    <rect x="6" y="6" width="98" height="126" rx="6" fill="#111317" opacity="0.5"/>
+    
+    <!-- Main paper sheet -->
+    <rect x="0" y="0" width="98" height="126" rx="6" fill="#F4F6F9"/>
+    
+    <!-- Header accent band -->
+    <path d="M 0 6 A 6 6 0 0 1 6 0 L 92 0 A 6 6 0 0 1 98 6 L 98 24 L 0 24 Z" fill="#E0A838"/>
+    
+    <!-- Header lines / text placeholders -->
+    <rect x="34" y="8" width="30" height="8" rx="2" fill="#1A1D24" opacity="0.8"/>
+    
+    <!-- Body lines representing formal text -->
+    <rect x="16" y="38" width="66" height="5" rx="2" fill="#2A313C" opacity="0.2"/>
+    <rect x="16" y="50" width="66" height="5" rx="2" fill="#2A313C" opacity="0.2"/>
+    <rect x="16" y="62" width="50" height="5" rx="2" fill="#2A313C" opacity="0.2"/>
+    
+    <!-- Specific focal highlight bar representing "特此" (hereby / officially issued) -->
+    <rect x="16" y="76" width="40" height="6" rx="3" fill="#E0A838"/>
+
+    <!-- Additional document lines -->
+    <rect x="16" y="90" width="66" height="4" rx="2" fill="#2A313C" opacity="0.15"/>
+    <rect x="16" y="100" width="40" height="4" rx="2" fill="#2A313C" opacity="0.15"/>
+  </g>
+
+  <!-- Official Red Seal (Hanko/Chop) overlapping the document bottom-right -->
+  <g transform="translate(125, 120)">
+    <!-- Seal base circle -->
+    <circle cx="28" cy="28" r="22" fill="#D93838"/>
+    <circle cx="28" cy="28" r="18" fill="none" stroke="#F4F6F9" stroke-width="1.5" opacity="0.9"/>
+    
+    <!-- Inner seal abstract symbol/star -->
+    <path d="M 28 17 L 30.5 23 L 37 23.5 L 32 27.5 L 33.5 34 L 28 30.5 L 22.5 34 L 24 27.5 L 19 23.5 L 25.5 23 Z" fill="#F4F6F9" opacity="0.9"/>
+  </g>
+
+  <!-- Golden Ribbon / Formal Ribbon dangling below the certificate -->
+  <g transform="translate(100, 155)">
+    <path d="M 15 0 L 25 0 L 30 25 L 20 28 L 10 25 Z" fill="#C68A2C"/>
+    <path d="M 25 0 L 35 0 L 40 25 L 30 28 L 20 25 Z" fill="#E0A838"/>
+  </g>
+
+  <!-- Focus Sparkles / Highlights indicating official issuance importance -->
+  <g fill="#E0A838">
+    <!-- Top-left sparkle -->
+    <path d="M 45 65 Q 45 75 35 75 Q 45 75 45 85 Q 45 75 55 75 Q 45 75 45 65 Z"/>
+    <!-- Top-right sparkle -->
+    <path d="M 195 50 Q 195 58 187 58 Q 195 58 195 66 Q 195 58 203 58 Q 195 58 195 50 Z" transform="scale(0.8) translate(50, -10)"/>
+  </g>
+</svg>

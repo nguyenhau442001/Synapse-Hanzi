@@ -1,0 +1,37 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle Background Glow representing "Haoran zhi qi" (righteous aura) -->
+  <circle cx="120" cy="115" r="70" fill="#252A34" opacity="0.6"/>
+  <circle cx="120" cy="115" r="50" fill="#E67E22" opacity="0.08"/>
+
+  <!-- Conceptual Central Object: A traditional Chinese bamboo stalk stylized with a strong, unbreakable upright spine structure, representing "Gǔqì" (integrity, backbone, moral fortitude) -->
+  <g transform="translate(0, 5)">
+    <!-- Main Upright Bamboo/Spine Stem -->
+    <rect x="114" y="35" width="12" height="150" rx="6" fill="#2C3E50"/>
+    
+    <!-- Bamboo Nodes / Vertebrae representation -->
+    <rect x="111" y="65" width="18" height="6" rx="3" fill="#E67E22"/>
+    <rect x="111" y="105" width="18" height="6" rx="3" fill="#E67E22"/>
+    <rect x="111" y="145" width="18" height="6" rx="3" fill="#E67E22"/>
+
+    <!-- Strong Resilient Shoots / Leaves (Angled firmly upward, unbending) -->
+    <!-- Left upper shoot -->
+    <path d="M 114 65 Q 85 50 65 55 Q 85 68 114 71 Z" fill="#3498DB" opacity="0.9"/>
+    <!-- Right upper shoot -->
+    <path d="M 126 65 Q 155 50 175 55 Q 155 68 126 71 Z" fill="#3498DB" opacity="0.9"/>
+
+    <!-- Left lower shoot -->
+    <path d="M 114 105 Q 85 90 65 95 Q 85 108 114 111 Z" fill="#E67E22" opacity="0.9"/>
+    <!-- Right lower shoot -->
+    <path d="M 126 105 Q 155 90 175 95 Q 155 108 126 111 Z" fill="#E67E22" opacity="0.9"/>
+
+    <!-- Base / Foundation representing unyielding stance (Banyan/Rock base) -->
+    <path d="M 90 185 L 150 185 L 140 198 L 100 198 Z" fill="#4A5568"/>
+    <rect x="95" y="198" width="50" height="6" rx="3" fill="#E67E22"/>
+  </g>
+
+  <!-- Accent Focus Glow at Top Tip -->
+  <circle cx="120" cy="35" r="4" fill="#F1C40F"/>
+</svg>

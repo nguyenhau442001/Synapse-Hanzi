@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle lighting/atmosphere -->
+  <circle cx="120" cy="110" r="70" fill="#252A34" opacity="0.5"/>
+
+  <!-- Physical Object: Will / Di chúc (Scroll / Legal Document with seal) -->
+  <g transform="translate(0, 5)">
+    <!-- Hanging / Rolled scroll sides or base document sheet -->
+    <path d="M70,65 L170,65 C175.5,65 180,69.5 180,75 L180,165 C180,170.5 175.5,175 170,175 L70,175 C64.5,175 60,170.5 60,165 L60,75 C60,69.5 64.5,65 70,65 Z" fill="#F4EDE2"/>
+    
+    <!-- Document inner border/shadow lines representing text/clauses -->
+    <line x1="75" y1="85" x2="140" y2="85" stroke="#D3C7B4" stroke-width="4" stroke-linecap="round"/>
+    <line x1="75" y1="105" x2="165" y2="105" stroke="#D3C7B4" stroke-width="4" stroke-linecap="round"/>
+    <line x1="75" y1="125" x2="155" y2="125" stroke="#D3C7B4" stroke-width="4" stroke-linecap="round"/>
+    <line x1="75" y1="145" x2="120" y2="145" stroke="#D3C7B4" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Gold Accent Ribbon / Binding at the bottom -->
+    <path d="M60,155 L180,155 L180,168 C180,171.866 176.866,175 173,175 L67,175 C63.134,175 60,171.866 60,168 Z" fill="#D4AF37"/>
+    <rect x="60" y="152" width="120" height="6" fill="#F1C40F"/>
+
+    <!-- Legal Red Seal / Stamp (Hanko / Red Wax Seal) -->
+    <circle cx="148" cy="155" r="14" fill="#C0392B"/>
+    <circle cx="148" cy="155" r="10" fill="none" stroke="#E74C3C" stroke-width="1.5"/>
+    <path d="M143,155 L153,155 M148,150 L148,160" stroke="#E74C3C" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Fountain Pen / Quill diagonally crossing over the document for signing action -->
+    <g transform="translate(110, 85) rotate(-25)">
+      <!-- Pen body -->
+      <path d="M20,0 L30,0 L27,60 L23,60 Z" fill="#34495E"/>
+      <!-- Gold nib / tip -->
+      <path d="M23,60 L27,60 L25,72 Z" fill="#F1C40F"/>
+      <!-- Pen cap / clip detail -->
+      <rect x="22" y="5" width="6" height="15" rx="2" fill="#F1C40F"/>
+    </g>
+  </g>
+
+  <!-- Focus Glow/Highlight representing legality, finality, and importance -->
+  <circle cx="148" cy="160" r="22" fill="#F1C40F" opacity="0.15" filter="blur(4px)"/>
+</svg>

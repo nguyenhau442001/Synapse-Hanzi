@@ -1,0 +1,68 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background grid/circuit lines to represent technical complexity -->
+  <g opacity="0.15" stroke="#38BDF8" stroke-width="1" stroke-dasharray="2 4" fill="none">
+    <path d="M40 60 H200" />
+    <path d="M40 100 H160" />
+    <path d="M40 140 H180" />
+    <path d="M80 40 V180" />
+    <path d="M140 40 V160" />
+  </g>
+
+  <!-- Glowing Central Node (Core Algorithm / Complex Problem) -->
+  <g transform="translate(145, 95)">
+    <!-- Outer energy/data rings -->
+    <circle cx="0" cy="0" r="32" fill="none" stroke="#0EA5E9" stroke-width="1.5" opacity="0.4" stroke-dasharray="4 2"/>
+    <circle cx="0" cy="0" r="26" fill="#0F172A" stroke="#38BDF8" stroke-width="2"/>
+    
+    <!-- Inner geometric/algorithmic representation -->
+    <path d="M-10 -10 L10 -10 L0 14 Z" fill="#38BDF8" opacity="0.3"/>
+    <polygon points="0,-12 12,6 -12,6" fill="none" stroke="#F59E0B" stroke-width="2"/>
+    <circle cx="0" cy="0" r="4" fill="#F59E0B"/>
+    
+    <!-- Data connection nodes -->
+    <circle cx="-26" cy="-15" r="3" fill="#38BDF8"/>
+    <line x1="-26" y1="-15" x2="-13" y2="-8" stroke="#38BDF8" stroke-width="1.5"/>
+    
+    <circle cx="24" cy="18" r="3" fill="#38BDF8"/>
+    <line x1="24" y1="18" x2="12" y2="8" stroke="#38BDF8" stroke-width="1.5"/>
+  </g>
+
+  <!-- Dynamic Motion Lines representing 'Bắt tay vào làm' (Action / Intervention) -->
+  <g stroke="#F59E0B" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8">
+    <path d="M 75 105 Q 95 100 112 95" stroke-dasharray="4 3"/>
+    <path d="M 70 120 Q 95 110 118 102" />
+  </g>
+
+  <!-- Human Character (Action / Hand reaching in to grasp the starting point) -->
+  <g transform="translate(0, 10)">
+    <!-- Character Body / Torso (Modern flat style) -->
+    <path d="M 45 155 C 45 130 65 120 85 120 C 105 120 125 130 125 155 L 125 180 L 45 180 Z" fill="#334155"/>
+    
+    <!-- Head & Hair -->
+    <circle cx="75" cy="95" r="16" fill="#CBD5E1"/>
+    <path d="M 60 92 C 60 80 75 76 88 85 C 92 88 92 95 90 98 C 80 94 65 96 60 92 Z" fill="#1E293B"/>
+
+    <!-- Arm reaching forward (The exact "Rùshǒu" / Starting action) -->
+    <path d="M 65 125 Q 85 115 115 110" stroke="#334155" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <path d="M 65 125 Q 85 115 115 110" stroke="#64748B" stroke-width="10" stroke-linecap="round" fill="none"/>
+
+    <!-- Hand actively touching/interacting with the core mechanism -->
+    <circle cx="120" cy="107" r="7" fill="#CBD5E1"/>
+    <!-- Fingers grip detail -->
+    <path d="M 116 102 L 123 105 L 118 112" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Focus/Anchor Marker at the starting point (Highlighting the fundamental step) -->
+  <g transform="translate(120, 107)">
+    <circle cx="0" cy="0" r="14" fill="none" stroke="#F59E0B" stroke-width="2" opacity="0.9">
+      <animate attributeName="r" values="10;18;10" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Floor line -->
+  <path d="M 35 180 L 205 180" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+</svg>

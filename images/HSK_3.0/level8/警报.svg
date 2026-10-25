@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative concentric rings representing radar/sound waves -->
+  <circle cx="120" cy="115" r="85" fill="none" stroke="#FF4D4F" stroke-width="1.5" opacity="0.15" stroke-dasharray="4 4"/>
+  <circle cx="120" cy="115" r="65" fill="none" stroke="#FF4D4F" stroke-width="1.5" opacity="0.25"/>
+  <circle cx="120" cy="115" r="45" fill="none" stroke="#FF4D4F" stroke-width="1.5" opacity="0.35"/>
+
+  <!-- Sound/Warning waves (Left) -->
+  <path d="M 65 95 C 55 102 55 128 65 135" fill="none" stroke="#FFA940" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 50 80 C 35 92 35 138 50 150" fill="none" stroke="#FFA940" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Sound/Warning waves (Right) -->
+  <path d="M 175 95 C 185 102 185 128 175 135" fill="none" stroke="#FFA940" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 190 80 C 205 92 205 138 190 150" fill="none" stroke="#FFA940" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Siren Light Beams (Cone Background) -->
+  <path d="M 120 70 L 175 155 L 65 155 Z" fill="#FF4D4F" opacity="0.12"/>
+
+  <!-- Siren Light Base & Stand -->
+  <path d="M 95 155 L 145 155 L 140 170 L 100 170 Z" fill="#3B4252"/>
+  <rect x="90" y="170" width="60" height="10" rx="3" fill="#2E3440"/>
+  <rect x="105" y="180" width="30" height="4" rx="2" fill="#4C566A"/>
+
+  <!-- Siren Body/Dome (Glass part) -->
+  <path d="M 90 100 C 90 75 150 75 150 100 L 145 155 L 95 155 Z" fill="#2E3440"/>
+  <path d="M 92 100 C 92 78 148 78 148 100 L 143 153 L 97 153 Z" fill="#FF4D4F"/>
+  
+  <!-- Glass highlights -->
+  <path d="M 103 88 C 103 82 115 82 118 85" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 120 95 L 132 135" fill="none" stroke="#FFA940" stroke-width="6" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Rotating Beacon Light Top Cap -->
+  <ellipse cx="120" cy="100" rx="28" ry="10" fill="#D32F2F"/>
+  <ellipse cx="120" cy="98" rx="28" ry="10" fill="#FF4D4F"/>
+  <ellipse cx="120" cy="96" rx="22" ry="7" fill="#FF7875"/>
+  <ellipse cx="120" cy="94" rx="12" ry="4" fill="#FFFFFF" opacity="0.6"/>
+
+  <!-- Metallic Band -->
+  <rect x="91" y="123" width="58" height="6" fill="#1E222B"/>
+  <circle cx="100" cy="126" rx="1.5" fill="#4C566A"/>
+  <circle cx="140" cy="126" rx="1.5" fill="#4C566A"/>
+
+  <!-- Exclamation Mark Symbol floating above indicating alert -->
+  <g transform="translate(0, -5)">
+    <circle cx="120" cy="50" r="10" fill="#FF4D4F"/>
+    <path d="M 120 32 L 120 44" stroke="#FF4D4F" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 120 32 L 120 44" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="120" cy="50" r="3" fill="#FFFFFF"/>
+  </g>
+</svg>

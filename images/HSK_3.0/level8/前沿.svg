@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle grid and background atmosphere representing technological frontier -->
+  <g opacity="0.15">
+    <line x1="30" y1="200" x2="210" y2="200" stroke="#00E5FF" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="50" y1="170" x2="190" y2="170" stroke="#00E5FF" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="70" y1="140" x2="170" y2="140" stroke="#00E5FF" stroke-width="1" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Ground platform representing the baseline/boundary -->
+  <path d="M40 210 L200 210 L180 180 L60 180 Z" fill="#252A34"/>
+  <line x1="50" y1="195" x2="190" y2="195" stroke="#FFB300" stroke-width="2" opacity="0.8"/>
+
+  <!-- Main Focus: The physical object/pinnacle representing "前沿" (Frontier/Cutting-edge vanguard) -->
+  <!-- Sleek futuristic exploration rover / technological vanguard probe placed at the absolute frontline edge -->
+  <g transform="translate(0, -5)">
+    <!-- Main chassis -->
+    <path d="M90 145 L150 145 L160 165 L80 165 Z" fill="#2E384D"/>
+    <rect x="95" y="125" width="50" height="20" rx="4" fill="#3B4252"/>
+    
+    <!-- High-tech sensor head / optic lens pointing forward -->
+    <circle cx="120" cy="115" r="14" fill="#1F232A"/>
+    <circle cx="120" cy="115" r="9" fill="#00E5FF"/>
+    <circle cx="122" cy="113" r="3" fill="#FFFFFF" opacity="0.8"/>
+
+    <!-- Directional laser / energy pulse emitting forward (cutting edge) -->
+    <polygon points="120,115 210,95 210,135" fill="url(#laserGrad)" opacity="0.3"/>
+    <line x1="120" y1="115" x2="205" y2="115" stroke="#00E5FF" stroke-width="2"/>
+
+    <!-- Advanced wheels/treads denoting physical exploration vehicle on the front line -->
+    <rect x="75" y="160" width="22" height="12" rx="6" fill="#FFB300"/>
+    <rect x="143" y="160" width="22" height="12" rx="6" fill="#FFB300"/>
+    <circle cx="86" cy="166" r="3" fill="#1A1D24"/>
+    <circle cx="154" cy="166" r="3" fill="#1A1D24"/>
+
+    <!-- Antenna signaling connection to the forefront -->
+    <line x1="135" y1="125" x2="150" y2="95" stroke="#94A3B8" stroke-width="2"/>
+    <circle cx="150" cy="93" r="4" fill="#FF5252"/>
+  </g>
+
+  <!-- Accent glowing markers for cutting-edge technology -->
+  <circle cx="100" cy="135" r="2" fill="#00E5FF"/>
+  <circle cx="140" cy="135" r="2" fill="#00E5FF"/>
+
+  <!-- Definitions -->
+  <defs>
+    <linearGradient id="laserGrad" x1="120" y1="115" x2="210" y2="115" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>

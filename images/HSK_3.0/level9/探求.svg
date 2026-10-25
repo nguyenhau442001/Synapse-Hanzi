@@ -1,0 +1,57 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Background subtle academic grid lines -->
+    <line x1="40" y1="200" x2="200" y2="200" stroke="#2A2F3B" stroke-width="2" stroke-linecap="round"/>
+    <line x1="60" y1="210" x2="180" y2="210" stroke="#2A2F3B" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Cosmos / Unknown realm representation (Subtle floating scientific nodes) -->
+    <circle cx="170" cy="70" r="2" fill="#E67E22" opacity="0.6"/>
+    <circle cx="195" cy="100" r="1.5" fill="#E67E22" opacity="0.4"/>
+    <circle cx="150" cy="50" r="1" fill="#E67E22" opacity="0.5"/>
+    <path d="M150 70 L170 70 L185 95" stroke="#2A2F3B" stroke-width="1.5" stroke-dasharray="3 3" fill="none"/>
+    
+    <!-- Target of Investigation: Glowing Object of Truth / Discovery (Golden Planet/Atom core) -->
+    <circle cx="175" cy="85" r="18" fill="#F39C12" opacity="0.15"/>
+    <circle cx="175" cy="85" r="12" fill="#F39C12"/>
+    <circle cx="175" cy="85" r="6" fill="#FFF" opacity="0.9"/>
+    <path d="M155 85 C155 65, 195 65, 195 85" stroke="#F39C12" stroke-width="1.5" stroke-dasharray="4 4" fill="none" opacity="0.8"/>
+    <path d="M162 70 C170 60, 180 60, 188 70" stroke="#E67E22" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Dynamic Action Beam / Magnifying Field (Searching / Tànqiú) -->
+    <path d="M95 130 L160 95" stroke="#E67E22" stroke-width="2" stroke-dasharray="4 4" opacity="0.7"/>
+    <path d="M105 145 L170 110" stroke="#E67E22" stroke-width="1.5" opacity="0.4"/>
+
+    <!-- Motion / Dynamic lines showing active seeking -->
+    <path d="M75 125 C80 115, 88 110, 98 108" stroke="#E67E22" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M68 135 C75 120, 85 112, 98 108" stroke="#E67E22" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+    <!-- Human Character (Researcher engaged in active exploration/seeking) -->
+    <!-- Torso -->
+    <path d="M65 170 C65 150, 75 140, 95 140 C110 140, 120 150, 120 170 Z" fill="#34495E"/>
+    <!-- Head -->
+    <circle cx="85" cy="115" r="13" fill="#E2E8F0"/>
+    <!-- Hair -->
+    <path d="M72 112 C72 100, 95 100, 98 112 Z" fill="#2C3E50"/>
+    
+    <!-- Arm extending forward dynamically with a Magnifying Glass -->
+    <!-- Upper arm & Forearm holding lens -->
+    <path d="M90 148 L115 130 L135 115" stroke="#34495E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Hand -->
+    <circle cx="137" cy="113" r="5" fill="#E2E8F0"/>
+    
+    <!-- Magnifying Glass Frame & Lens -->
+    <circle cx="145" cy="105" r="16" fill="#1A1D24" stroke="#E67E22" stroke-width="4"/>
+    <circle cx="145" cy="105" r="14" fill="#E67E22" opacity="0.2"/>
+    <path d="M135 95 L142 102" stroke="#FFF" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Lower Body / Seated/Leaning Posture -->
+    <path d="M70 170 L55 200 L95 200 L110 170 Z" fill="#2C3E50"/>
+    <path d="M95 200 L125 200" stroke="#2C3E50" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Ground / Base platform -->
+    <rect x="40" y="200" width="160" height="4" rx="2" fill="#3A4454"/>
+  </g>
+</svg>

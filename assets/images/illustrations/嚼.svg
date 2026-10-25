@@ -1,0 +1,35 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle glow / ambient background lighting -->
+  <circle cx="120" cy="125" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Anatomical / Dental Profile representing the action of chewing (jiáo - nhai kỹ) -->
+  <g transform="translate(0, 0)">
+    <!-- Upper jaw / teeth structure -->
+    <path d="M 75 95 Q 120 70 165 95" fill="none" stroke="#4F5D75" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Upper molars -->
+    <path d="M 85 92 L 95 102 L 105 92 L 115 102 L 125 92 L 135 102 L 145 92 L 155 102" fill="none" stroke="#E0E6ED" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Lower jaw / mandible structure (offset slightly to show chewing motion / interaction) -->
+    <path d="M 75 155 Q 120 180 165 155" fill="none" stroke="#4F5D75" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Lower molars -->
+    <path d="M 85 158 L 95 148 L 105 158 L 115 148 L 125 158 L 135 148 L 145 158 L 155 148" fill="none" stroke="#E0E6ED" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Food particle being broken down / chewed (Focus accent: Orange/Gold) -->
+    <circle cx="110" cy="125" r="14" fill="#FF9F43"/>
+    <circle cx="130" cy="120" r="10" fill="#FFB74D"/>
+    <circle cx="120" cy="135" r="8" fill="#F39C12"/>
+    <circle cx="100" cy="118" r="5" fill="#E67E22"/>
+
+    <!-- Dynamic action motion lines indicating chewing / grinding motion -->
+    <path d="M 145 110 Q 155 125 145 140" fill="none" stroke="#FF9F43" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 152 115 Q 160 125 152 135" fill="none" stroke="#FF9F43" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+    
+    <path d="M 95 140 Q 85 125 95 110" fill="none" stroke="#FF9F43" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 88 135 Q 80 125 88 115" fill="none" stroke="#FF9F43" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  </g>
+</svg>

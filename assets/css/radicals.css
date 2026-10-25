@@ -127,10 +127,15 @@
   z-index: 60;
   top: calc(100% + 6px);
   right: 0;
-  display: grid;
-  gap: 4px;
-  min-width: 230px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 236px;
+  width: max-content;
   max-width: min(320px, calc(100vw - 24px));
+  max-height: calc(100vh - 84px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
   padding: 6px;
   background: var(--card-bg);
   border: 1px solid var(--border);
@@ -138,27 +143,89 @@
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
 }
 .primary-menu-section-title {
-  padding: 5px 10px 2px; color: var(--text-tertiary); font-size: 10px;
-  font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  padding: 6px 10px 2px;
+  color: var(--text-tertiary);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  user-select: none;
 }
-.primary-menu-section-title--games { margin-top: 4px; border-top: 1px solid var(--border); padding-top: 9px; }
+.primary-menu-section-title:not(:first-child) {
+  margin-top: 4px;
+  padding-top: 7px;
+  border-top: 1px solid var(--border);
+}
 .primary-games-menu-panel .primary-tab {
-  justify-content: flex-start; white-space: normal; border-color: transparent;
-  gap: 8px; padding: 8px 12px; border-radius: calc(var(--radius-md) - 3px);
-  background: transparent; color: var(--text-secondary); font: inherit; font-size: 13px; font-weight: 550;
-  display: flex; align-items: center; width: 100%; transition: all 140ms ease;
+  justify-content: flex-start;
+  white-space: normal;
+  border: 1px solid transparent;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: calc(var(--radius-md) - 3px);
+  background: transparent;
+  color: var(--text-secondary);
+  font: inherit;
+  font-size: 13.5px;
+  font-weight: 550;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color 140ms ease, color 140ms ease, border-color 140ms ease;
+}
+.primary-games-menu-panel .primary-tab .nav-tab-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  transition: stroke 140ms ease;
+}
+.primary-games-menu-panel .primary-tab .nav-tab-glyph {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent);
 }
 .primary-games-menu-panel .primary-tab:hover {
-  background: var(--surface-subtle); color: var(--text-primary);
+  background: var(--accent-light);
+  color: var(--accent);
+  border-color: rgba(192, 86, 36, 0.15);
+}
+.primary-games-menu-panel .primary-tab:hover .nav-tab-icon {
+  stroke: var(--accent);
 }
 .primary-games-menu-panel .primary-tab.active {
-  border-color: var(--accent); background: var(--accent-light); color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-light);
+  color: var(--accent);
+  font-weight: 600;
 }
-.primary-menu-radical-lookup { display: none; }
+.primary-games-menu-panel .primary-tab.active .nav-tab-icon {
+  stroke: var(--accent);
+}
+.primary-games-menu-panel .primary-tab:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+  background: var(--accent-light);
+  color: var(--accent);
+}
+.primary-games-menu-panel .primary-tab:focus-visible .nav-tab-icon {
+  stroke: var(--accent);
+}
+.primary-games-menu-panel .primary-menu-radical-lookup {
+  display: flex;
+}
 @media (max-width: 1279px) {
   .primary-tabs-group .primary-tab,
   .primary-menu-trigger { min-height: 42px; }
-  .primary-games-menu-panel .primary-menu-radical-lookup { display: flex; }
 }
 @media (max-width: 1023px) {
   /* Eliminate redundant duplicate middle tabs on mobile/tablet since Bottom Navigation Bar is active */
@@ -274,20 +341,32 @@
   /* Dropdown Menu below trigger, aligned to right edge */
   .primary-games-menu-panel {
     position: absolute;
-    top: calc(100% + 6px);
+    top: calc(100% + 8px);
     bottom: auto;
     right: 0;
     left: auto;
-    min-width: 210px;
-    width: max-content;
-    max-width: calc(100vw - 32px);
-    max-height: 60vh;
+    min-width: 250px;
+    width: calc(100vw - 24px);
+    max-width: 320px;
+    max-height: min(78vh, 520px);
     overflow-y: auto;
-    padding: 8px;
-    border-radius: var(--radius-md);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
-    z-index: 60;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    padding: 8px 6px;
+    border-radius: 14px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.28);
+    z-index: 100;
     animation: menuSlideDown 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .primary-games-menu-panel .primary-tab {
+    min-height: 42px;
+    padding: 9px 12px;
+    font-size: 14px;
+    gap: 10px;
+  }
+  .primary-menu-section-title {
+    padding: 7px 12px 3px;
+    font-size: 11px;
   }
   @keyframes menuSlideDown {
     from {

@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient background glow representing arrangement/placement space -->
+  <circle cx="120" cy="120" r="70" fill="#222732" opacity="0.6"/>
+  
+  <!-- Desk surface or stable platform for "placement" (đặt, để, bố trí) -->
+  <path d="M 60,170 L 180,170 L 195,190 L 45,190 Z" fill="#2A303C"/>
+  <rect x="50" y="166" width="140" height="4" rx="2" fill="#E67E22" opacity="0.8"/>
+
+  <!-- Physical object 1: Neatly arranged storage box / container (representing 'bố trí' / arrangement) -->
+  <g transform="translate(65, 110)">
+    <!-- Box Body -->
+    <rect x="0" y="15" width="45" height="40" rx="4" fill="#3A4454"/>
+    <!-- Box Inner -->
+    <rect x="4" y="19" width="37" height="34" rx="2" fill="#28303C"/>
+    <!-- Lid open at an angle -->
+    <path d="M 0,15 L 10,0 L 45,0 L 40,15 Z" fill="#4A5568"/>
+    <!-- Stored items (neatly placed) -->
+    <rect x="10" y="26" width="10" height="20" rx="2" fill="#E67E22"/>
+    <rect x="24" y="30" width="12" height="16" rx="2" fill="#3498DB"/>
+  </g>
+
+  <!-- Physical object 2: Carefully placed precious item / vessel (representing 'đặt, để') -->
+  <g transform="translate(130, 95)">
+    <!-- Wooden / Ceramic Base Stand -->
+    <ellipse cx="22" cy="65" rx="20" ry="6" fill="#4A5568"/>
+    <!-- Object (Stylized Vase / Ornament) -->
+    <path d="M 12,60 C 12,45 8,30 15,20 C 18,15 26,15 29,20 C 36,30 32,45 32,60 Z" fill="#E67E22"/>
+    <ellipse cx="22" cy="20" rx="5" ry="2" fill="#F39C12"/>
+    <!-- Subtle highlight on the object -->
+    <path d="M 17,30 Q 15,40 18,50" stroke="#F8C471" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+  </g>
+
+  <!-- Spatial arrangement marker (floating coordinate / precise placement indicator) -->
+  <g transform="translate(120, 45)">
+    <circle cx="0" cy="0" r="12" fill="#E67E22" opacity="0.2"/>
+    <circle cx="0" cy="0" r="6" fill="#E67E22"/>
+    <!-- Precision crosshairs -->
+    <line x1="-16" y1="0" x2="-8" y2="0" stroke="#E67E22" stroke-width="2" stroke-linecap="round"/>
+    <line x1="8" y1="0" x2="16" y2="0" stroke="#E67E22" stroke-width="2" stroke-linecap="round"/>
+    <line x1="0" y1="-16" x2="0" y2="-8" stroke="#E67E22" stroke-width="2" stroke-linecap="round"/>
+    <line x1="0" y1="8" x2="0" y2="16" stroke="#E67E22" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Focal clarity ring -->
+  <circle cx="120" cy="120" r="88" stroke="#3A4454" stroke-width="2" stroke-dasharray="6 6" fill="none" opacity="0.5"/>
+</svg>

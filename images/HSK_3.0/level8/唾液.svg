@@ -1,0 +1,38 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative anatomical glow representing biological context -->
+  <circle cx="120" cy="125" r="70" fill="#222831" opacity="0.6"/>
+
+  <!-- Stylized Open Mouth / Oral Cavity Profile Base -->
+  <path d="M 70 100 Q 120 70 170 100 Q 175 140 120 170 Q 65 140 70 100 Z" fill="#2A2F3B" stroke="#3A4252" stroke-width="3"/>
+
+  <!-- Upper teeth line -->
+  <path d="M 85 105 Q 120 90 155 105" fill="none" stroke="#E2E8F0" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Tongue -->
+  <path d="M 90 145 Q 120 120 150 145 Q 140 165 120 165 Q 100 165 90 145 Z" fill="#E06D73"/>
+
+  <!-- Salivary Gland Indicator (Submandibular glow/source) -->
+  <path d="M 105 155 Q 120 175 135 155" fill="#4FD1C5" opacity="0.4"/>
+
+  <!-- Saliva Droplets (The core physical subject of "唾液" - Noun: saliva) -->
+  <!-- Main central falling droplet (High-contrast focus in amber/gold as per rules) -->
+  <path d="M 120 135 C 120 135 132 155 132 165 C 132 172 126 177 120 177 C 114 177 108 172 108 165 C 108 155 120 135 120 135 Z" fill="#F6AD55"/>
+  <!-- Highlight on main droplet -->
+  <path d="M 117 158 C 117 158 114 165 114 169" stroke="#FFF" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8"/>
+
+  <!-- Secondary supporting saliva droplets indicating fluid secretion -->
+  <path d="M 95 125 C 95 125 101 133 101 138 C 101 142 98 145 95 145 C 92 145 89 142 89 138 C 89 133 95 125 95 125 Z" fill="#63B3ED"/>
+  <path d="M 145 125 C 145 125 151 133 151 138 C 151 142 148 145 145 145 C 142 145 139 142 139 138 C 139 133 145 125 145 125 Z" fill="#63B3ED"/>
+
+  <!-- Active Enzymes / Biochemical Sparkles (Representing digestive/antibacterial properties) -->
+  <g fill="#F6AD55">
+    <circle cx="95" cy="95" r="3" opacity="0.9"/>
+    <circle cx="145" cy="95" r="2.5" opacity="0.9"/>
+    <path d="M 120 75 L 122 81 L 128 83 L 122 85 L 120 91 L 118 85 L 112 83 L 118 81 Z" fill="#F6AD55" transform="scale(0.6) translate(80, 50)"/>
+    <path d="M 155 115 L 156.5 119 L 160.5 120.5 L 156.5 122 L 155 126 L 153.5 122 L 149.5 120.5 L 153.5 119 Z" fill="#4FD1C5" transform="scale(0.5) translate(140, 110)"/>
+  </g>
+
+</svg>

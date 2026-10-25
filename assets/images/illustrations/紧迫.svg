@@ -1,0 +1,55 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background atmosphere lines representing rising floodwater level -->
+  <path d="M 0 170 Q 60 165, 120 170 T 240 170 L 240 240 L 0 240 Z" fill="#1E2636" opacity="0.5"/>
+  <path d="M 0 185 Q 60 180, 120 185 T 240 185 L 240 240 L 0 240 Z" fill="#1E2636" opacity="0.8"/>
+
+  <!-- Physical Object representing 紧迫: A classic mechanical hourglass combined with a dynamic warning emphasis -->
+  <!-- Outer Glow / Urgency aura -->
+  <circle cx="120" cy="120" r="75" fill="none" stroke="#FF5500" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.4"/>
+  <circle cx="120" cy="120" r="85" fill="none" stroke="#FF5500" stroke-width="1" opacity="0.2"/>
+
+  <!-- Hourglass Frame Structure -->
+  <!-- Top & Bottom wooden/metal bases -->
+  <path d="M 85 55 L 155 55 L 150 65 L 90 65 Z" fill="#2E384D"/>
+  <rect x="90" y="50" width="60" height="6" rx="3" fill="#4B5E7E"/>
+  
+  <path d="M 85 185 L 155 185 L 150 175 L 90 175 Z" fill="#2E384D"/>
+  <rect x="90" y="184" width="60" height="6" rx="3" fill="#4B5E7E"/>
+
+  <!-- Four corner pillars -->
+  <rect x="92" y="65" width="6" height="110" fill="#3A485E"/>
+  <rect x="142" y="65" width="6" height="110" fill="#3A485E"/>
+
+  <!-- Glass Bulbs -->
+  <!-- Top Glass Bulb -->
+  <path d="M 98 68 C 98 68, 95 118, 120 120 C 145 118, 142 68, 142 68 Z" fill="#243044" stroke="#4B5E7E" stroke-width="2"/>
+  
+  <!-- Bottom Glass Bulb -->
+  <path d="M 98 172 C 98 172, 95 122, 120 120 C 145 122, 142 172, 142 172 Z" fill="#243044" stroke="#4B5E7E" stroke-width="2"/>
+
+  <!-- Sand inside Hourglass (High urgency: almost all sand has rushed to the bottom, very little left at top) -->
+  <!-- Top remaining sand (very low) -->
+  <path d="M 108 105 C 114 108, 126 108, 132 105 C 138 112, 135 118, 120 119 C 105 118, 102 112, 108 105 Z" fill="#FF9F0A"/>
+  
+  <!-- Falling stream of sand -->
+  <line x1="120" y1="119" x2="120" y2="135" stroke="#FF9F0A" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Bottom accumulated sand (piled high, emphasizing critical time limit) -->
+  <path d="M 102 165 C 110 162, 130 162, 138 165 C 142 170, 142 171, 142 171 L 98 171 C 98 171, 98 170, 102 165 Z" fill="#FF9F0A"/>
+  <path d="M 105 155 C 112 150, 128 150, 135 155 C 140 162, 138 165, 120 167 C 102 165, 100 162, 105 155 Z" fill="#FFB340"/>
+
+  <!-- Dynamic visual elements representing "紧迫" (Urgency / Critical Time) -->
+  <!-- Fast motion speed lines radiating from top -->
+  <path d="M 120 38 L 120 46" stroke="#FF5500" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 100 43 L 105 49" stroke="#FF5500" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 140 43 L 135 49" stroke="#FF5500" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Accent exclamation / warning spark near top right -->
+  <g transform="translate(155, 75)">
+    <circle cx="0" cy="0" r="10" fill="#FF3B30"/>
+    <path d="M 0 -4 L 0 1 M 0 3 L 0 5" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>

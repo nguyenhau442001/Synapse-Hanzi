@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Neck and Throat cross-section / silhouette -->
+    <!-- Outer neck shape -->
+    <path d="M 85 40 Q 80 120 70 200 L 170 200 Q 160 120 155 40 Z" fill="#252A34"/>
+    
+    <!-- Skin tone inner profile -->
+    <path d="M 92 45 Q 88 120 78 190 L 162 190 Q 152 120 148 45 Z" fill="#2E3544"/>
+
+    <!-- Spinal column at the back -->
+    <rect x="110" y="45" width="20" height="145" rx="6" fill="#1E232D" opacity="0.5"/>
+
+    <!-- Esophagus / Throat tube -->
+    <path d="M 105 80 C 105 130 100 170 120 195 C 140 170 135 130 135 80 Z" fill="#3E2723" opacity="0.3"/>
+
+    <!-- Epiglottis and Pharynx area -->
+    <path d="M 100 75 Q 120 65 140 75 Q 135 95 120 100 Q 105 95 100 75 Z" fill="#D9534F" opacity="0.6"/>
+
+    <!-- Swallowed Water Drop (Focus of '咽') passing down the throat -->
+    <g transform="translate(120, 115)">
+      <!-- Motion lines showing downward action -->
+      <path d="M 0 -25 L 0 -15" stroke="#3498DB" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+      <path d="M -6 -18 L -6 -8" stroke="#3498DB" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+      <path d="M 6 -18 L 6 -8" stroke="#3498DB" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+      
+      <!-- Main glowing water droplet -->
+      <path d="M 0 -10 C 10 2, 12 10, 12 14 C 12 21, 7 26, 0 26 C -7 26, -12 21, -12 14 C -12 10, -10 2, 0 -10 Z" fill="#3498DB"/>
+      <!-- Water droplet highlight -->
+      <path d="M -3 6 C -5 10, -6 14, -4 17 C -3 18, -2 17, -3 15 C -4 12, -3 9, -1 6 Z" fill="#FFFFFF" opacity="0.6" stroke-linecap="round"/>
+    </g>
+
+    <!-- Highlighted painful area indicator (Tonsil/Throat constriction) -->
+    <g transform="translate(120, 85)">
+      <circle cx="-14" cy="0" r="6" fill="#E74C3C" opacity="0.8"/>
+      <circle cx="14" cy="0" r="6" fill="#E74C3C" opacity="0.8"/>
+      
+      <!-- Subtle pain pulse rings -->
+      <circle cx="-14" cy="0" r="10" stroke="#E74C3C" stroke-width="1.5" fill="none" opacity="0.5"/>
+      <circle cx="14" cy="0" r="10" stroke="#E74C3C" stroke-width="1.5" fill="none" opacity="0.5"/>
+    </g>
+
+    <!-- Throat anatomical layers / collarbone context at bottom -->
+    <path d="M 60 190 Q 120 210 180 190" stroke="#3E465B" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

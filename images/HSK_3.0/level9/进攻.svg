@@ -1,0 +1,79 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Artillery Shells and Trajectory -->
+    <path d="M 60 170 Q 120 70 180 170" fill="none" stroke="#FF5722" stroke-width="2" stroke-dasharray="4 4" opacity="0.6"/>
+    
+    <!-- Incoming Artillery Shell 1 -->
+    <g transform="translate(110, 95) rotate(-35)">
+      <path d="M -12 -4 L 8 -4 C 12 -4 15 -2 16 0 C 15 2 12 4 8 4 L -12 4 Z" fill="#FFC107"/>
+      <polygon points="-12,-4 -16,0 -12,4" fill="#FFA000"/>
+      <!-- Motion lines -->
+      <line x1="-18" y1="-2" x2="-24" y2="-2" stroke="#FF5722" stroke-width="2" stroke-linecap="round"/>
+      <line x1="-16" y1="2" x2="-22" y2="2" stroke="#FF5722" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Incoming Artillery Shell 2 -->
+    <g transform="translate(75, 125) rotate(-50)">
+      <path d="M -9 -3 L 6 -3 C 9 -3 11 -1.5 12 0 C 11 1.5 9 3 6 3 L -9 3 Z" fill="#FFC107"/>
+      <polygon points="-9,-3 -13,0 -9,3" fill="#FFA000"/>
+    </g>
+
+    <!-- Central Mountain / High Ground (Core Objective) -->
+    <polygon points="120,80 200,180 40,180" fill="#2C3440"/>
+    <polygon points="120,80 170,180 70,180" fill="#343E4D"/>
+    
+    <!-- Terrain ridges -->
+    <path d="M 120 80 L 140 180" stroke="#1A1D24" stroke-width="2" opacity="0.3"/>
+
+    <!-- Charging Infantry/Forces Silhouette -->
+    <!-- Soldier 1 (Lead) -->
+    <g transform="translate(90, 165)">
+      <circle cx="2" cy="-14" r="3" fill="#FF5722"/>
+      <path d="M 0 -8 L 5 0 L 3 10" fill="none" stroke="#FF5722" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 2 -5 L -4 2 L -8 0" fill="none" stroke="#FF5722" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M 3 2 L 7 10" fill="none" stroke="#FF5722" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Soldier 2 -->
+    <g transform="translate(65, 170)">
+      <circle cx="2" cy="-14" r="3" fill="#FF5722"/>
+      <path d="M 0 -8 L 5 0 L 3 10" fill="none" stroke="#FF5722" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 2 -5 L -4 2 L -8 0" fill="none" stroke="#FF5722" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M 3 2 L 7 10" fill="none" stroke="#FF5722" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Soldier 3 -->
+    <g transform="translate(115, 172)">
+      <circle cx="2" cy="-14" r="3" fill="#FF5722"/>
+      <path d="M 0 -8 L 5 0 L 3 10" fill="none" stroke="#FF5722" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 2 -5 L -4 2 L -8 0" fill="none" stroke="#FF5722" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M 3 2 L 7 10" fill="none" stroke="#FF5722" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Dynamic Forward-pointing Attack Arrows -->
+    <g transform="translate(0, 5)">
+      <path d="M 70 150 L 110 130" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/>
+      <polygon points="115,127 105,127 108,135" fill="#FFC107"/>
+
+      <path d="M 90 165 L 135 142" stroke="#FF5722" stroke-width="4" stroke-linecap="round"/>
+      <polygon points="142,138 130,138 134,148" fill="#FF5722"/>
+    </g>
+
+    <!-- Explosions / Impact on Target Hill -->
+    <g transform="translate(145, 115)">
+      <circle cx="0" cy="0" r="12" fill="#FF5722" opacity="0.8"/>
+      <circle cx="0" cy="0" r="6" fill="#FFC107"/>
+      <!-- Spark lines -->
+      <line x1="-16" y1="-16" x2="-8" y2="-8" stroke="#FFC107" stroke-width="2" stroke-linecap="round"/>
+      <line x1="16" y1="-16" x2="8" y2="-8" stroke="#FFC107" stroke-width="2" stroke-linecap="round"/>
+      <line x1="0" y1="-20" x2="0" y2="-10" stroke="#FF5722" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <g transform="translate(125, 95)">
+      <circle cx="0" cy="0" r="8" fill="#FF5722" opacity="0.9"/>
+      <circle cx="0" cy="0" r="4" fill="#FFC107"/>
+    </g>
+  </g>
+</svg>

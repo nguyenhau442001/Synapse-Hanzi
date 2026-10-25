@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background grid/glow to indicate structure and modern dark mode UI -->
+  <circle cx="120" cy="120" r="85" fill="none" stroke="#2A2F3D" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <path d="M40 160 L200 160" stroke="#2A2F3D" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Motion lines indicating active construction/building -->
+  <path d="M75 95 L60 80" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M165 95 L180 80" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M120 60 L120 45" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Left Character (Collaborator 1) -->
+  <g transform="translate(60, 110)">
+    <!-- Body / Torso -->
+    <path d="M0 50 C0 35 15 30 25 30 C35 30 50 35 50 50 L50 65 L0 65 Z" fill="#3B82F6"/>
+    <!-- Head -->
+    <circle cx="25" cy="15" r="12" fill="#E2E8F0"/>
+    <!-- Active Arm placing a block -->
+    <path d="M35 35 L55 25" stroke="#E2E8F0" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="58" cy="23" r="4" fill="#E2E8F0"/>
+  </g>
+
+  <!-- Right Character (Collaborator 2) -->
+  <g transform="translate(130, 110)">
+    <!-- Body / Torso -->
+    <path d="M0 50 C0 35 15 30 25 30 C35 30 50 35 50 50 L50 65 L0 65 Z" fill="#10B981"/>
+    <!-- Head -->
+    <circle cx="25" cy="15" r="12" fill="#E2E8F0"/>
+    <!-- Active Arm placing a block -->
+    <path d="M15 35 L-5 25" stroke="#E2E8F0" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="-8" cy="23" r="4" fill="#E2E8F0"/>
+  </g>
+
+  <!-- The Central Structure / Building Action (构建 / Constructing) -->
+  <g transform="translate(0, 0)">
+    <!-- Base structural blocks -->
+    <rect x="95" y="145" width="50" height="15" rx="3" fill="#334155"/>
+    <rect x="102" y="125" width="36" height="18" rx="3" fill="#475569"/>
+    
+    <!-- Rising central pillar / golden accent block being placed collaboratively -->
+    <rect x="107" y="90" width="26" height="30" rx="4" fill="#F59E0B"/>
+    <path d="M115 100 L125 100 M115 110 L125 110" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Sparks / dynamic construction dust -->
+    <circle cx="100" cy="85" r="2" fill="#F59E0B"/>
+    <circle cx="140" cy="85" r="2" fill="#F59E0B"/>
+    <circle cx="120" cy="78" r="2.5" fill="#F59E0B"/>
+  </g>
+</svg>

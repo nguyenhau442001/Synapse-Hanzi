@@ -1,0 +1,37 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background / Sky -->
+  <path d="M24 40C24 30.0589 32.0589 22 42 22H198C207.941 22 216 30.0589 216 40V120H24V40Z" fill="#252A34"/>
+
+  <!-- Sun -->
+  <circle cx="70" cy="65" r="16" fill="#F39C12"/>
+  
+  <!-- Coastal Landscape (Land, Beach, Sea) -->
+  <!-- Sea water -->
+  <path d="M24 120H216V160C216 160 170 150 120 160C70 170 24 160 24 160V120Z" fill="#2980B9"/>
+  <path d="M24 135C70 145 120 135 216 145V155C170 145 120 155 24 145V135Z" fill="#3498DB" opacity="0.6"/>
+
+  <!-- Beach / Shoreline (Bờ biển) -->
+  <path d="M24 160C70 160 120 170 216 160V205C216 214.389 208.389 222 199 222H41C31.6112 222 24 214.389 24 205V160Z" fill="#F1C40F"/>
+
+  <!-- Beach elements (Umbrella & Lounger for "hǎibīn" resort context) -->
+  <!-- Umbrella pole -->
+  <line x1="160" y1="140" x2="160" y2="185" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <!-- Umbrella canopy -->
+  <path d="M135 140C135 125 185 125 185 140H135Z" fill="#E74C3C"/>
+  <path d="M147 140C147 130 173 130 173 140H147Z" fill="#FFFFFF"/>
+
+  <!-- Lounger chair -->
+  <path d="M175 170L195 185M170 180L190 195M173 175L193 190" stroke="#BDC3C7" stroke-width="3" stroke-linecap="round"/>
+  <rect x="175" y="172" width="22" height="10" rx="2" transform="rotate(38 175 172)" fill="#34495E"/>
+
+  <!-- Palm Tree silhouette on the shore -->
+  <path d="M60 175C60 175 62 145 50 125C65 130 75 145 75 175" fill="#27AE60"/>
+  <path d="M45 125C45 125 35 115 25 120C35 128 45 135 50 135C55 135 65 128 75 120C65 115 55 125 45 125Z" fill="#2ECC71"/>
+  <path d="M50 125C50 125 45 110 35 105C45 112 52 120 55 125C58 120 65 112 75 105C65 110 55 125 50 125Z" fill="#2ECC71"/>
+
+  <!-- Focus/Semantic Ring (Modern UI styling) -->
+  <rect x="24" y="22" width="192" height="200" rx="16" fill="none" stroke="#F39C12" stroke-width="2" opacity="0.4"/>
+</svg>

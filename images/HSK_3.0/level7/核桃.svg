@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Glow/Shadow beneath walnut -->
+    <ellipse cx="120" cy="180" rx="45" ry="12" fill="#0D0F13" opacity="0.6"/>
+    
+    <!-- Walnut Shell Back / Base Shape -->
+    <path d="M 120 60 C 152 60, 172 88, 168 120 C 165 148, 142 172, 120 174 C 98 172, 75 148, 72 120 C 68 88, 88 60, 120 60 Z" fill="#8E5A36"/>
+    
+    <!-- Walnut Texture Grooves & Highlights (Right Half) -->
+    <path d="M 120 62 C 145 75, 158 98, 155 125 C 153 145, 138 162, 120 172 C 140 162, 158 138, 158 118 C 158 92, 140 72, 120 62 Z" fill="#A86F45"/>
+    <path d="M 135 75 C 148 90, 152 110, 145 130 C 140 145, 128 158, 120 168 C 132 155, 142 138, 142 120 C 142 100, 135 85, 135 75 Z" fill="#C48455"/>
+
+    <!-- Central Ridge (Equator seam) -->
+    <path d="M 120 58 C 119 90, 121 140, 120 176 C 121 140, 119 90, 120 58 Z" fill="#59341D" stroke="#59341D" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Walnut Texture Grooves & Highlights (Left Half) -->
+    <path d="M 120 62 C 95 75, 82 98, 85 125 C 87 145, 102 162, 120 172 C 100 162, 82 138, 82 118 C 82 92, 100 72, 120 62 Z" fill="#754728"/>
+    <path d="M 105 75 C 92 90, 88 110, 95 130 C 100 145, 112 158, 120 168 C 108 155, 98 138, 98 120 C 98 100, 105 85, 105 75 Z" fill="#59341D"/>
+
+    <!-- Top Stem / Attachment Point -->
+    <path d="M 115 57 C 115 53, 125 53, 125 57 C 125 59, 115 59, 115 57 Z" fill="#3D200E"/>
+    
+    <!-- Modern Accent Highlight (Brain-like organic folds suggestion on surface) -->
+    <path d="M 108 95 C 114 98, 116 105, 112 112" fill="none" stroke="#C48455" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 132 95 C 126 98, 124 105, 128 112" fill="none" stroke="#8E5A36" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 105 130 C 112 135, 115 142, 110 150" fill="none" stroke="#A86F45" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 135 130 C 128 135, 125 142, 130 150" fill="none" stroke="#754728" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

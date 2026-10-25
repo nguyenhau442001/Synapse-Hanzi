@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Water channel -->
+  <path d="M0 120 C 80 100, 160 140, 240 120 L 240 160 C 160 180, 80 140, 0 160 Z" fill="#2C3E50"/>
+  <path d="M0 125 C 80 105, 160 145, 240 125 L 240 155 C 160 175, 80 135, 0 155 Z" fill="#3498DB"/>
+  
+  <!-- Cargo ship -->
+  <g transform="translate(80, 115)">
+    <path d="M0 15 L 60 15 L 55 35 L 5 35 Z" fill="#E67E22"/>
+    <rect x="15" y="5" width="30" height="10" rx="2" fill="#F39C12"/>
+    <rect x="25" y="-5" width="10" height="10" fill="#D35400"/>
+  </g>
+  
+  <!-- Banks -->
+  <path d="M0 160 L 240 160 L 240 240 L 0 240 Z" fill="#27AE60"/>
+  <path d="M0 0 L 240 0 L 240 120 L 0 120 Z" fill="#27AE60"/>
+  
+  <!-- Details -->
+  <circle cx="40" cy="40" r="3" fill="#F1C40F" opacity="0.6"/>
+  <circle cx="190" cy="200" r="4" fill="#F1C40F" opacity="0.6"/>
+  <path d="M20 200 L 40 200 M 30 190 L 30 210" stroke="#2ECC71" stroke-width="2" stroke-linecap="round"/>
+</svg>

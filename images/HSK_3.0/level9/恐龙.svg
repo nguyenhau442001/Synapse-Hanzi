@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements (pale excavation strata lines) -->
+  <path d="M20 180 Q 80 170, 140 190 T 240 185" fill="none" stroke="#262B35" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M10 205 Q 90 195, 170 215 T 240 210" fill="none" stroke="#262B35" stroke-width="2"/>
+
+  <!-- Dinosaur illustration (T-Rex / 恐龙) -->
+  <!-- Tail -->
+  <path d="M 65 140 Q 40 130, 30 100 Q 45 120, 60 130 Z" fill="#2ED573"/>
+  
+  <!-- Back and Body -->
+  <path d="M 60 130 C 60 90, 90 85, 120 90 C 150 95, 175 110, 185 135 C 195 160, 175 170, 140 170 C 105 170, 65 160, 60 130 Z" fill="#2ED573"/>
+
+  <!-- Underbelly contrast -->
+  <path d="M 75 145 C 90 160, 130 165, 160 150 C 140 165, 95 165, 75 145 Z" fill="#7BED9F"/>
+
+  <!-- Legs -->
+  <path d="M 95 165 L 90 195 L 105 195 L 110 165 Z" fill="#20BF6B"/>
+  <path d="M 140 165 L 145 195 L 160 195 L 150 165 Z" fill="#20BF6B"/>
+  <!-- Feet / Claws -->
+  <path d="M 85 195 L 110 195 L 108 202 L 87 202 Z" fill="#1B9CFC"/>
+  <path d="M 138 195 L 163 195 L 161 202 L 140 202 Z" fill="#1B9CFC"/>
+
+  <!-- Head & Neck -->
+  <path d="M 160 105 C 170 95, 185 85, 195 90 C 205 95, 205 110, 195 115 C 185 120, 175 120, 165 115 Z" fill="#2ED573"/>
+  <!-- Jaw / Mouth -->
+  <path d="M 175 110 L 202 110 L 195 118 L 178 118 Z" fill="#20BF6B"/>
+  <!-- Eye -->
+  <circle cx="188" cy="100" r="3.5" fill="#FFA502"/>
+  <circle cx="189" cy="100" r="1.5" fill="#1A1D24"/>
+
+  <!-- Dorsal plates / spikes (Modern iconic accent in gold/orange) -->
+  <polygon points="75,93 83,80 90,92" fill="#FFA502"/>
+  <polygon points="95,88 103,73 111,88" fill="#FFA502"/>
+  <polygon points="118,87 127,72 135,87" fill="#FFA502"/>
+  <polygon points="142,91 150,77 158,93" fill="#FFA502"/>
+
+  <!-- Small arms -->
+  <path d="M 155 125 L 165 135 L 162 138 L 152 128 Z" fill="#20BF6B"/>
+
+  <!-- Fossil / Context element (ground brush/rock accent) -->
+  <path d="M 190 205 L 210 205 L 215 215 L 185 215 Z" fill="#4B6584"/>
+</svg>

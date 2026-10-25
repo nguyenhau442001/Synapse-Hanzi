@@ -1,0 +1,64 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Glow & Grid elements representing deep-sea/tech exploration context -->
+  <g opacity="0.3">
+    <!-- Subtle radar/search waves -->
+    <circle cx="120" cy="110" r="70" fill="none" stroke="#F59E0B" stroke-width="1" stroke-dasharray="4 4" opacity="0.4"/>
+    <circle cx="120" cy="110" r="45" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity="0.6"/>
+    <circle cx="120" cy="110" r="20" fill="none" stroke="#F59E0B" stroke-width="2" opacity="0.8"/>
+    <line x1="120" y1="30" x2="120" y2="190" stroke="#374151" stroke-width="1"/>
+    <line x1="40" y1="110" x2="200" y2="110" stroke="#374151" stroke-width="1"/>
+  </g>
+
+  <!-- Magnifying Glass / Exploration Beam (Symbolizing "寻" - searching/investigating) -->
+  <g>
+    <!-- Light cone emanating from the lens -->
+    <path d="M120 85 L80 185 L160 185 Z" fill="#F59E0B" opacity="0.12"/>
+    
+    <!-- Target object being sought (Glowing core/solution) -->
+    <circle cx="120" cy="140" r="10" fill="#3B82F6"/>
+    <circle cx="120" cy="140" r="16" fill="none" stroke="#60A5FA" stroke-width="2" stroke-dasharray="3 3">
+      <animateTransform attributeName="transform" type="rotate" values="0 120 140;360 120 140" dur="10s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Character action: Leaning forward, holding a high-tech scanning lens, dynamically searching -->
+  <g transform="translate(0, 5)">
+    <!-- Character Body / Torso -->
+    <path d="M100 135 C100 120 110 110 120 110 C130 110 140 120 140 135 L145 170 L95 170 Z" fill="#2563EB"/>
+    
+    <!-- Character Head -->
+    <circle cx="120" cy="95" r="14" fill="#FCD34D"/>
+    
+    <!-- Hair -->
+    <path d="M106 93 C106 85 114 81 122 82 C130 83 134 89 134 95 Z" fill="#1E293B"/>
+
+    <!-- Dynamic Motion Lines -->
+    <path d="M72 105 C68 110 65 118 65 125" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M64 115 C61 120 60 125 60 130" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Arm extending forward holding the magnifying scanner -->
+    <path d="M110 120 L85 130 L95 138" fill="none" stroke="#2563EB" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Magnifying Glass Tool -->
+    <line x1="90" y1="134" x2="70" y2="142" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="62" cy="146" r="14" fill="none" stroke="#F59E0B" stroke-width="4"/>
+    <circle cx="62" cy="146" r="10" fill="#60A5FA" opacity="0.3"/>
+
+    <!-- Other Arm -->
+    <path d="M130 120 L140 140 L132 148" fill="none" stroke="#1D4ED8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Legs in searching stance -->
+    <path d="M105 170 L95 205 L105 208" fill="none" stroke="#1E293B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M135 170 L145 200 L135 205" fill="none" stroke="#1E293B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Focus highlights / discovery sparkles -->
+  <g fill="#F59E0B">
+    <path d="M150 95 L152 101 L158 103 L152 105 L150 111 L148 105 L142 103 L148 101 Z"/>
+    <path d="M90 75 L91 78 L94 79 L91 80 L90 83 L89 80 L86 79 L89 78 Z" transform="scale(0.7) translate(40, 20)"/>
+  </g>
+
+</svg>

@@ -1,0 +1,30 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Bridge Structure representing the "niudai" (link/bond) -->
+  <g transform="translate(40, 100)">
+    <!-- Bridge Deck -->
+    <path d="M0,40 L160,40" stroke="#FFB84D" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Left Pillar -->
+    <rect x="20" y="0" width="12" height="40" fill="#FFB84D" rx="2"/>
+    
+    <!-- Right Pillar -->
+    <rect x="128" y="0" width="12" height="40" fill="#FFB84D" rx="2"/>
+    
+    <!-- Suspension Cables -->
+    <path d="M26,0 Q80,-40 134,0" fill="none" stroke="#FFB84D" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Vertical Support Cables -->
+    <line x1="45" y1="0" x2="45" y2="40" stroke="#FFB84D" stroke-width="2"/>
+    <line x1="80" y1="-15" x2="80" y2="40" stroke="#FFB84D" stroke-width="2"/>
+    <line x1="115" y1="0" x2="115" y2="40" stroke="#FFB84D" stroke-width="2"/>
+  </g>
+
+  <!-- Stylized figures at ends representing connection -->
+  <circle cx="50" cy="130" r="8" fill="#FFFFFF"/>
+  <circle cx="190" cy="130" r="8" fill="#FFFFFF"/>
+  
+  <!-- Ground line -->
+  <path d="M40,140 L200,140" stroke="#4A5568" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>

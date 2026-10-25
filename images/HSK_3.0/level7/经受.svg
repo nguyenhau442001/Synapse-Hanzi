@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambient / Night Storm Elements -->
+  <!-- Rain streaks / wind motion lines -->
+  <g stroke="#3A4454" stroke-width="1.5" stroke-linecap="round" opacity="0.6">
+    <line x1="30" y1="40" x2="15" y2="70" />
+    <line x1="60" y1="30" x2="45" y2="60" />
+    <line x1="90" y1="50" x2="75" y2="80" />
+    <line x1="180" y1="35" x2="165" y2="65" />
+    <line x1="210" y1="45" x2="195" y2="75" />
+  </g>
+
+  <!-- Raging Water / Flood waves at the base -->
+  <path d="M 20 200 Q 60 190, 100 200 T 180 200 T 240 200 L 240 225 L 0 225 Z" fill="#243b55" opacity="0.8"/>
+  <path d="M 0 207 Q 40 197, 80 207 T 160 207 T 240 207 L 240 225 L 0 225 Z" fill="#1e324c" opacity="0.9"/>
+  <!-- Dynamic water splash action -->
+  <path d="M 95 195 Q 110 175, 120 185 Q 130 170, 145 195" fill="none" stroke="#4a90e2" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Main Object: The Ancient Stone Bridge / Pillar representing endurance against trials (经受) -->
+  <!-- Bridge Foundation / Pier standing firm against turbulent waters -->
+  <path d="M 85 130 L 155 130 L 165 200 L 75 200 Z" fill="#4A5568" />
+  <path d="M 90 135 L 150 135 L 158 195 L 82 195 Z" fill="#323B46" />
+  
+  <!-- Stone texture blocks on the pillar -->
+  <line x1="92" y1="150" x2="148" y2="150" stroke="#222831" stroke-width="2"/>
+  <line x1="88" y1="170" x2="152" y2="170" stroke="#222831" stroke-width="2"/>
+
+  <!-- Bridge Arch Structure -->
+  <path d="M 60 130 C 60 100, 180 100, 180 130 Z" fill="#5C6B73" />
+  <path d="M 75 130 C 75 110, 165 110, 165 130 Z" fill="#1A1D24" />
+  <!-- Bridge Deck -->
+  <rect x="50" y="122" width="140" height="10" rx="2" fill="#718096" />
+
+  <!-- Action / Impact Elements: Force vectors pressing against the structure (representing tests, trials, floods) -->
+  <g fill="none" stroke="#F6AD55" stroke-width="3" stroke-linecap="round">
+    <!-- Left impactful push / wind / water pressure lines -->
+    <path d="M 25 155 C 40 155, 50 155, 65 155" />
+    <path d="M 20 175 C 35 175, 45 175, 60 175" />
+    <!-- Arrow heads indicating ongoing active pressure being endured -->
+    <polygon points="65,152 73,155 65,158" fill="#F6AD55" stroke="none"/>
+    <polygon points="60,172 68,175 60,178" fill="#F6AD55" stroke="none"/>
+  </g>
+
+  <!-- Structural Resilience / Glowing Focal Point of Endurance -->
+  <!-- Subtle warm golden glow emanating from the core of the bridge showing successful endurance (經受住考验) -->
+  <circle cx="120" cy="165" r="18" fill="#F6AD55" opacity="0.15" />
+  <circle cx="120" cy="165" r="8" fill="#F6AD55" opacity="0.3" />
+</svg>

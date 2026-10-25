@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 120)">
+    <circle cx="0" cy="0" r="8" fill="#FFB84D"/>
+    <g stroke="#FFB84D" stroke-width="6" stroke-linecap="round">
+      <line x1="0" y1="-20" x2="0" y2="-80"/>
+      <line x1="0" y1="20" x2="0" y2="80"/>
+      <line x1="-20" y1="0" x2="-80" y2="0"/>
+      <line x1="20" y1="0" x2="80" y2="0"/>
+      <line x1="-14" y1="-14" x2="-56" y2="-56"/>
+      <line x1="14" y1="-14" x2="56" y2="-56"/>
+      <line x1="-14" y1="14" x2="-56" y2="56"/>
+      <line x1="14" y1="14" x2="56" y2="56"/>
+    </g>
+    <circle cx="0" cy="-80" r="6" fill="#4DA6FF"/>
+    <circle cx="0" cy="80" r="6" fill="#4DA6FF"/>
+    <circle cx="-80" cy="0" r="6" fill="#4DA6FF"/>
+    <circle cx="80" cy="0" r="6" fill="#4DA6FF"/>
+    <circle cx="-56" cy="-56" r="6" fill="#4DA6FF"/>
+    <circle cx="56" cy="-56" r="6" fill="#4DA6FF"/>
+    <circle cx="-56" cy="56" r="6" fill="#4DA6FF"/>
+    <circle cx="56" cy="56" r="6" fill="#4DA6FF"/>
+  </g>
+</svg>

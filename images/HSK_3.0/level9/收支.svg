@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ledger Book -->
+  <rect x="60" y="60" width="120" height="120" rx="8" fill="#2D343E" stroke="#4A5568" stroke-width="2"/>
+  <rect x="60" y="60" width="120" height="20" rx="8" fill="#3A4452"/>
+  
+  <!-- Income (Green Arrow Up) -->
+  <path d="M90 140 L105 110 L120 140 Z" fill="#48BB78"/>
+  <rect x="98" y="140" width="4" height="20" fill="#48BB78"/>
+  
+  <!-- Expense (Orange Arrow Down) -->
+  <path d="M135 110 L150 140 L165 110 Z" fill="#F6AD55"/>
+  <rect x="143" y="90" width="4" height="20" fill="#F6AD55"/>
+  
+  <!-- Ledger Lines -->
+  <line x1="75" y1="95" x2="165" y2="95" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+  <line x1="75" y1="110" x2="165" y2="110" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+  <line x1="75" y1="125" x2="165" y2="125" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+  <line x1="75" y1="140" x2="165" y2="140" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+  <line x1="75" y1="155" x2="165" y2="155" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Pen -->
+  <path d="M170 170 L185 155 L195 165 L180 180 Z" fill="#A0AEC0"/>
+  <path d="M170 170 L175 175" stroke="#1A1D24" stroke-width="2"/>
+</svg>

@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Object: Inspection / Verification (验) -->
+  <!-- Context: Checking cargo, parts, specifications -->
+  
+  <g transform="translate(0, 0)">
+    <!-- Open Shipping Container / Crate Box Base -->
+    <path d="M50 140 L80 160 L190 115 L160 95 Z" fill="#2A313C" stroke="#3A4454" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M50 140 L50 170 L80 190 L80 160 Z" fill="#1E232B" stroke="#3A4454" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M80 160 L80 190 L190 145 L190 115 Z" fill="#242B35" stroke="#3A4454" stroke-width="2" stroke-linejoin="round"/>
+
+    <!-- Inside the Container: Mechanical Parts / Components -->
+    <rect x="90" y="125" width="25" height="15" rx="2" fill="#E58E26"/>
+    <circle cx="135" cy="132" r="8" fill="#4B6584" stroke="#D1D8E0" stroke-width="2"/>
+    <rect x="150" y="120" width="18" height="22" rx="2" fill="#20bf6b"/>
+
+    <!-- Checklist / Document (Verification standard) -->
+    <g transform="translate(60, 60) rotate(-10)">
+      <rect x="0" y="0" width="60" height="75" rx="4" fill="#F1F2F6" stroke="#CED6E0" stroke-width="2"/>
+      <!-- Header line -->
+      <rect x="10" y="10" width="25" height="6" rx="2" fill="#718093"/>
+      <!-- Check items -->
+      <path d="M10 26 L14 30 L22 22" fill="none" stroke="#20bf6b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="28" y="24" width="22" height="4" rx="2" fill="#A4B0BE"/>
+      
+      <path d="M10 42 L14 46 L22 38" fill="none" stroke="#20bf6b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="28" y="40" width="18" height="4" rx="2" fill="#A4B0BE"/>
+
+      <path d="M10 58 L14 62 L22 54" fill="none" stroke="#20bf6b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="28" y="56" width="20" height="4" rx="2" fill="#A4B0BE"/>
+    </g>
+
+    <!-- Magnifying Glass (Inspection / 验) - Focal Point in Orange/Gold -->
+    <g transform="translate(130, 90)">
+      <!-- Glass reflection -->
+      <circle cx="0" cy="0" r="32" fill="#1E272E" fill-opacity="0.8" stroke="#E58E26" stroke-width="6"/>
+      <path d="M-18 -18 C -5 -25, 15 -15, 20 -5" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+      <!-- Handle -->
+      <path d="M22 22 L52 52" stroke="#E58E26" stroke-width="8" stroke-linecap="round"/>
+      <path d="M22 22 L52 52" stroke="#F6B93B" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="52" cy="52" r="4" fill="#E58E26"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background confetti elements -->
+  <circle cx="40" cy="50" r="3" fill="#FFD700" opacity="0.6"/>
+  <circle cx="200" cy="70" r="4" fill="#FF8C00" opacity="0.5"/>
+  <rect x="180" y="180" width="6" height="3" rx="1" fill="#FFD700" transform="rotate(45)" opacity="0.7"/>
+  <rect x="60" y="200" width="8" height="4" rx="1" fill="#FF8C00" transform="rotate(-30)" opacity="0.6"/>
+  
+  <!-- Central Figure: Exaggerated expression of 'Kuánghuān' (Wild Joy) -->
+  <!-- Arms raised high, dynamic posture -->
+  <g transform="translate(120, 130)">
+    <!-- Body -->
+    <path d="M-20 20 L20 20 L15 80 L-15 80 Z" fill="#FFD700"/>
+    <!-- Arms raised -->
+    <path d="M-20 20 L-45 -20 L-35 -30 L-10 10 Z" fill="#FFD700"/>
+    <path d="M20 20 L45 -20 L35 -30 L10 10 Z" fill="#FFD700"/>
+    <!-- Head -->
+    <circle cx="0" cy="-25" r="25" fill="#FFD700"/>
+    <!-- Exaggerated Open Mouth (Joy) -->
+    <ellipse cx="0" cy="-15" rx="8" ry="10" fill="#1A1D24"/>
+    <!-- Eyes closed in excitement -->
+    <path d="M-12 -35 L-4 -27 M-4 -35 L-12 -27" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+    <path d="M4 -35 L12 -27 M12 -35 L4 -27" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Dynamic streamers/ribbons to emphasize movement -->
+  <path d="M30 100 Q80 20 130 60 T220 100" stroke="#FF8C00" stroke-width="6" fill="none" stroke-linecap="round" stroke-dasharray="20 10"/>
+  <path d="M10 180 Q100 120 230 190" stroke="#FFD700" stroke-width="4" fill="none" stroke-linecap="round" stroke-dasharray="15 10"/>
+  
+  <!-- Contrast elements: Smaller, static silhouettes in background to show scale -->
+  <circle cx="40" cy="160" r="15" fill="#333842"/>
+  <circle cx="200" cy="150" r="12" fill="#333842"/>
+  <circle cx="170" cy="200" r="10" fill="#333842"/>
+</svg>

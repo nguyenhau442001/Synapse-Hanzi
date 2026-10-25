@@ -1,0 +1,19 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(60, 60)">
+    <!-- Finger base -->
+    <path d="M40 120 C40 140, 80 140, 80 120 L80 40 C80 20, 40 20, 40 40 Z" fill="#FFCBA4"/>
+    <!-- Nail bed -->
+    <path d="M45 45 C45 35, 75 35, 75 45 L75 85 C75 95, 45 95, 45 85 Z" fill="#FFDAB9"/>
+    <!-- Nail plate -->
+    <path d="M48 48 C48 40, 72 40, 72 48 L72 82 C72 90, 48 90, 48 82 Z" fill="#FDF5E6"/>
+    <!-- Cuticle -->
+    <path d="M48 80 C48 85, 72 85, 72 80" stroke="#FFCBA4" stroke-width="2" fill="none"/>
+    <!-- Highlight on nail -->
+    <path d="M55 50 C55 45, 65 45, 65 50 L65 70 C65 75, 55 75, 55 70 Z" fill="#FFFFFF" opacity="0.3"/>
+    <!-- Nail clipper (accent color) -->
+    <path d="M20 90 L100 90 L95 110 L25 110 Z" fill="#FFB300"/>
+    <path d="M60 90 L60 75" stroke="#FFB300" stroke-width="6" stroke-linecap="round"/>
+    <path d="M40 75 L80 75" stroke="#FFB300" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

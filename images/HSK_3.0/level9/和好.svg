@@ -1,0 +1,54 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambient Glow for Reconciliation / Warmth -->
+  <circle cx="120" cy="120" r="70" fill="#FFB703" opacity="0.06"/>
+
+  <!-- Motion lines / resolution arc -->
+  <path d="M 95 85 Q 120 70 145 85" fill="none" stroke="#FFB703" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 4" opacity="0.6"/>
+
+  <!-- Character 1 (Left) -->
+  <g id="character-left">
+    <!-- Body / Torso -->
+    <path d="M 65 160 C 65 140 75 130 95 130 C 105 130 110 135 110 160 Z" fill="#219EBC"/>
+    <!-- Head -->
+    <circle cx="88" cy="110" r="16" fill="#F4A261"/>
+    <!-- Hair -->
+    <path d="M 72 110 C 72 95 104 95 104 110 C 100 102 76 102 72 110 Z" fill="#2B2D42"/>
+    <!-- Arm reaching out to shake hands -->
+    <path d="M 95 135 L 122 135" stroke="#219EBC" stroke-width="8" stroke-linecap="round"/>
+    <!-- Hand -->
+    <circle cx="123" cy="135" r="5" fill="#F4A261"/>
+  </g>
+
+  <!-- Character 2 (Right) -->
+  <g id="character-right">
+    <!-- Body / Torso -->
+    <path d="M 175 160 C 175 140 165 130 145 130 C 135 130 130 135 130 160 Z" fill="#E76F51"/>
+    <!-- Head -->
+    <circle cx="152" cy="110" r="16" fill="#F4A261"/>
+    <!-- Hair -->
+    <path d="M 136 110 C 136 95 168 95 168 110 C 164 102 140 102 136 110 Z" fill="#2B2D42"/>
+    <!-- Arm reaching out to shake hands -->
+    <path d="M 145 135 L 117 135" stroke="#E76F51" stroke-width="8" stroke-linecap="round"/>
+    <!-- Hand -->
+    <circle cx="117" cy="135" r="5" fill="#F4A261"/>
+  </g>
+
+  <!-- Handshake Interlock Detail -->
+  <circle cx="120" cy="135" r="4" fill="#E9C46A"/>
+
+  <!-- Smiling / Happy Expressions (Contextual cues for 'making up') -->
+  <!-- Smile Left -->
+  <path d="M 85 115 Q 88 119 91 115" fill="none" stroke="#2B2D42" stroke-width="2" stroke-linecap="round"/>
+  <!-- Smile Right -->
+  <path d="M 149 115 Q 152 119 155 115" fill="none" stroke="#2B2D42" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Subtle grounding shadow -->
+  <ellipse cx="120" cy="170" rx="75" ry="6" fill="#0D1117" opacity="0.6"/>
+
+  <!-- Spark / Joy Accents representing resolution -->
+  <path d="M 120 60 L 122 68 L 130 70 L 122 72 L 120 80 L 118 72 L 110 70 L 118 68 Z" fill="#FFB703" opacity="0.9"/>
+  <path d="M 80 85 L 81 89 L 85 90 L 81 91 L 80 95 L 79 91 L 75 90 L 79 89 Z" fill="#FFB703" opacity="0.6"/>
+  <path d="M 160 85 L 161 89 L 165 90 L 161 91 L 160 95 L 159 91 L 155 90 L 159 89 Z" fill="#FFB703" opacity="0.6"/>
+</svg>

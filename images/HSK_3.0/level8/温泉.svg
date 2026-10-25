@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Snowy Mountain Background (Contextual Reference) -->
+  <path d="M20 140 L80 60 L140 140 Z" fill="#2E384D" opacity="0.6"/>
+  <path d="M60 140 L130 50 L220 140 Z" fill="#3B465E" opacity="0.6"/>
+  
+  <!-- Snowcaps -->
+  <path d="M80 60 L97 85 L85 82 L75 75 Z" fill="#E2E8F0" opacity="0.8"/>
+  <path d="M130 50 L152 80 L140 75 L120 62 Z" fill="#E2E8F0" opacity="0.8"/>
+
+  <!-- Steaming Hot Spring Pool (Physical Object / Noun) -->
+  <!-- Outer stone border / deck -->
+  <ellipse cx="120" cy="155" rx="90" ry="35" fill="#252F3F"/>
+  <ellipse cx="120" cy="153" rx="84" ry="31" fill="#1E2530"/>
+
+  <!-- Hot Spring Water -->
+  <ellipse cx="120" cy="150" rx="78" ry="27" fill="#0EA5E9"/>
+  <ellipse cx="120" cy="150" rx="72" ry="23" fill="#38BDF8"/>
+
+  <!-- Water Ripples / Details -->
+  <path d="M90 148 Q105 152 120 148 T150 148" stroke="#0284C7" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M100 156 Q110 159 125 155 T140 155" stroke="#0284C7" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- Rocks surrounding the hot spring -->
+  <circle cx="42" cy="150" r="14" fill="#4B5563"/>
+  <circle cx="35" cy="162" r="12" fill="#374151"/>
+  <circle cx="198" cy="152" r="15" fill="#4B5563"/>
+  <circle cx="205" cy="165" r="11" fill="#374151"/>
+  <ellipse cx="120" cy="178" rx="20" ry="8" fill="#4B5563"/>
+
+  <!-- Rising Steam / Heat Vapors (Accent Color: Orange/Gold for focus & warmth) -->
+  <path d="M90 130 C85 115 95 100 90 85" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M120 125 C115 110 125 95 120 75" stroke="#FBBF24" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.9"/>
+  <path d="M150 130 C155 115 145 100 150 80" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+  
+  <!-- Additional wisps of steam -->
+  <path d="M105 120 C100 105 108 95 105 85" stroke="#FFF" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <path d="M135 120 C140 105 132 95 135 85" stroke="#FFF" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+</svg>

@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Person A (The one imposing) -->
+  <g transform="translate(140, 80)">
+    <circle cx="20" cy="20" r="20" fill="#FFB84D"/>
+    <rect x="5" y="45" width="30" height="80" rx="5" fill="#FFB84D"/>
+    <path d="M 35 50 L 55 70 L 45 75 L 30 60" fill="#FFB84D"/>
+  </g>
+
+  <!-- Person B (The one receiving the imposition) -->
+  <g transform="translate(60, 100)">
+    <circle cx="20" cy="20" r="20" fill="#6C757D"/>
+    <rect x="5" y="45" width="30" height="80" rx="5" fill="#6C757D"/>
+  </g>
+
+  <!-- The "Imposed" Object (A heavy, rigid block being forced onto the person) -->
+  <rect x="100" y="90" width="40" height="40" rx="4" fill="#FF5733"/>
+  
+  <!-- Forceful Action Line -->
+  <path d="M 140 110 L 105 110" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 115 100 L 105 110 L 115 120" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- Visual weight/pressure indicator -->
+  <path d="M 80 90 L 100 70" stroke="#FF5733" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 80 130 L 100 150" stroke="#FF5733" stroke-width="3" stroke-linecap="round"/>
+</svg>
