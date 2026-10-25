@@ -1155,8 +1155,6 @@ const ListeningPractice = (function() {
       </div>
     `;
   }
-    `;
-  }
 
   function toggleTranscriptPinyin() {
     learnerState.showPinyin = !learnerState.showPinyin;

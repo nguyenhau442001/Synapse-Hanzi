@@ -154,7 +154,20 @@ function setPrimaryTab(tab, options) {
     if (typeof GradedReading !== 'undefined') GradedReading.init();
   }
   if (tab === 'listening') {
-    if (typeof ListeningPractice !== 'undefined') ListeningPractice.init();
+    if (typeof ListeningPractice !== 'undefined') {
+      ListeningPractice.init();
+    } else {
+      const screenEl = document.getElementById('screenListeningPractice');
+      if (screenEl) {
+        screenEl.innerHTML = `
+          <div class="listening-container" style="text-align:center; padding: 48px 20px;">
+            <div style="font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:12px;">Đang khởi tạo Luyện nghe HSK...</div>
+            <p style="font-size:14px; color:var(--text-secondary); margin-bottom:16px;">Vui lòng thử lại sau vài giây hoặc tải lại trang.</p>
+            <button class="listening-back-btn" onclick="setPrimaryTab('vocab')" style="align-self:center; margin: 0 auto;">Quay lại Trang chính</button>
+          </div>
+        `;
+      }
+    }
   }
   if (tab === 'review') {
     if (typeof showReviewSetup === 'function') {

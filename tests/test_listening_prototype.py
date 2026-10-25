@@ -14,6 +14,7 @@ Automated Verification Suite for HSK Listening Practice Prototype:
 import sys
 import json
 import re
+import subprocess
 from pathlib import Path
 import soundfile as sf
 
@@ -282,6 +283,14 @@ def test_listening_user_feedback_improvements():
 
     print("   ✓ All user feedback improvements verified successfully!")
 
+def test_listening_js_syntax():
+    print("-> Checking listening-practice.js syntax integrity...")
+    js_path = ROOT / "assets/js/listening-practice.js"
+    assert js_path.exists(), "assets/js/listening-practice.js must exist"
+    res = subprocess.run(["node", "-c", str(js_path)], capture_output=True, text=True)
+    assert res.returncode == 0, f"assets/js/listening-practice.js syntax check failed: {res.stderr}"
+    print("   ✓ listening-practice.js syntax is valid!")
+
 def main():
     print("=== Starting HSK Listening Prototype Automated Verification ===")
     test_data_integrity()
@@ -291,7 +300,7 @@ def main():
     test_listening_polish_v112()
     test_audio_range_and_resilience()
     test_listening_user_feedback_improvements()
-    print("=== ALL VERIFICATION TESTS PASSED SUCCESSFULLY! ===")
+    test_listening_js_syntax()
     print("=== ALL VERIFICATION TESTS PASSED SUCCESSFULLY! ===")
 
 if __name__ == "__main__":
