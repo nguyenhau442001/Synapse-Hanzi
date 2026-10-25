@@ -299,10 +299,8 @@ def extract_exam_timing_intervals(sf_data, sr):
     if in_silence and (sub_times[-1] - sil_start) >= 5.5:
         silences.append((sil_start, sub_times[-1], sub_times[-1] - sil_start))
         
-    if len(silences) >= 11:
-        q_silences = silences[-11:]
-    else:
-        q_silences = silences
+    # Part 1 consists of the initial pause before Q1 and the silences between/after Q1..Q10
+    q_silences = silences[:11]
         
     intervals = {}
     for q in range(1, 11):

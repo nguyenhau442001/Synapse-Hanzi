@@ -903,10 +903,32 @@ const ListeningPractice = (function() {
     if (learnerState.activePlayingSegment === sentenceId) {
       stopAudio();
     } else {
-      const sentence = (currentQuestion.transcript.sentences || []).find((s) => s.id === sentenceId);
-      if (!sentence || sentence.start_ms == null) return;
+      const sents = (currentQuestion && currentQuestion.transcript && currentQuestion.transcript.sentences) || [];
+      const sIdx = sents.findIndex((s) => s.id === sentenceId);
+      if (sIdx === -1) return;
+      const sentence = sents[sIdx];
+      if (sentence.start_ms == null || sentence.end_ms == null) return;
+
+      let startMs = sentence.start_ms;
+      let endMs = sentence.end_ms;
+
+      // Natural acoustic tail protection:
+      // 1. If it's the last sentence of the passage, ensure it plays completely up to passage.end_ms
+      const passSeg = currentQuestion.segments && currentQuestion.segments.passage;
+      if (passSeg && passSeg.end_ms != null && sIdx === sents.length - 1) {
+        endMs = Math.max(endMs, passSeg.end_ms);
+      } else if (sIdx < sents.length - 1) {
+        // 2. If it's an intermediate sentence, use available inter-sentence silence (up to 100ms cushion)
+        const nextSent = sents[sIdx + 1];
+        if (nextSent && nextSent.start_ms != null && nextSent.start_ms > endMs) {
+          const gap = nextSent.start_ms - endMs;
+          const cushion = Math.min(100, Math.max(0, gap - 40));
+          endMs += cushion;
+        }
+      }
+
       learnerState.activePlayingSegment = sentenceId;
-      playSegment(sentence.start_ms, sentence.end_ms, {
+      playSegment(startMs, endMs, {
         loop: learnerState.loop,
         onEnd: () => {
           learnerState.activePlayingSegment = null;
