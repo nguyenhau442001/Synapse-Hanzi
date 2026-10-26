@@ -1,0 +1,55 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle road perspective -->
+  <path d="M70 240 L110 130 L130 130 L170 240 Z" fill="#222732"/>
+  <line x1="120" y1="130" x2="120" y2="240" stroke="#2D3545" stroke-dasharray="4,6" stroke-width="2"/>
+
+  <!-- Steering wheel steering column & hands -->
+  <circle cx="120" cy="115" r="55" fill="none" stroke="#384152" stroke-width="12"/>
+  <path d="M85 135 L120 115 L155 135" fill="none" stroke="#384152" stroke-width="10" stroke-linecap="round"/>
+  <line x1="120" y1="115" x2="120" y2="165" stroke="#384152" stroke-width="12"/>
+
+  <!-- Driver Hands gripping firmly (subconscious reaction) -->
+  <!-- Left hand -->
+  <path d="M70 100 C65 95 65 85 73 82 C80 80 88 88 85 96 Z" fill="#F6AD55"/>
+  <!-- Right hand -->
+  <path d="M170 100 C175 95 175 85 167 82 C160 80 152 88 155 96 Z" fill="#F6AD55"/>
+
+  <!-- Action lines / Reflex pulse emanating from the wheel/driver -->
+  <circle cx="120" cy="115" r="72" fill="none" stroke="#F6AD55" stroke-width="2" stroke-dasharray="6,8" opacity="0.6"/>
+  <circle cx="120" cy="115" r="85" fill="none" stroke="#F6AD55" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Sudden Obstacle (Little Dog) caught in headlights -->
+  <!-- Headlight beam left -->
+  <polygon points="100,125 30,220 85,220" fill="#F6AD55" opacity="0.12"/>
+  <!-- Headlight beam right -->
+  <polygon points="140,125 155,220 210,220" fill="#F6AD55" opacity="0.12"/>
+
+  <!-- Cute startled puppy right in the path -->
+  <g transform="translate(107, 138)">
+    <!-- Body -->
+    <ellipse cx="13" cy="12" rx="10" ry="7" fill="#E2E8F0"/>
+    <!-- Head -->
+    <circle cx="13" cy="5" r="6" fill="#E2E8F0"/>
+    <!-- Ears (perked up in surprise) -->
+    <polygon points="8,1 6,-4 11,-1" fill="#CBD5E1"/>
+    <polygon points="18,1 20,-4 15,-1" fill="#CBD5E1"/>
+    <!-- Legs -->
+    <rect x="8" y="16" width="2" height="5" fill="#CBD5E1"/>
+    <rect x="16" y="16" width="2" height="5" fill="#CBD5E1"/>
+    <!-- Shock exclamation above puppy -->
+    <text x="13" y="-8" font-family="sans-serif" font-weight="bold" font-size="10" fill="#F6AD55" text-anchor="middle">!</text>
+  </g>
+
+  <!-- Brake Pedal Action (The Subconscious Physical Response) -->
+  <g transform="translate(100, 185)">
+    <!-- Pedal arm -->
+    <path d="M20 0 L20 20" stroke="#718096" stroke-width="6" stroke-linecap="round"/>
+    <!-- Pedal pad, tilted sharply forward representing the "slam" -->
+    <rect x="10" y="16" width="20" height="8" rx="2" fill="#E53E3E" transform="rotate(-25 20 20)"/>
+    <!-- Motion lines for rapid downward press -->
+    <path d="M8 8 L13 14" stroke="#E53E3E" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M32 8 L27 14" stroke="#E53E3E" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>

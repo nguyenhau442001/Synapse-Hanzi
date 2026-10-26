@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground -->
+  <path d="M0 160 C 80 150, 160 150, 240 160 L 240 240 L 0 240 Z" fill="#2D3436"/>
+  
+  <!-- Muddy Pit -->
+  <path d="M80 160 Q 120 210 160 160" fill="none" stroke="#4A3420" stroke-width="12" stroke-linecap="round"/>
+  <path d="M85 165 Q 120 200 155 165" fill="#4A3420"/>
+  
+  <!-- Truck Wheel -->
+  <g transform="translate(120, 150)">
+    <circle cx="0" cy="0" r="35" fill="#F39C12"/>
+    <circle cx="0" cy="0" r="25" fill="#1A1D24"/>
+    <rect x="-35" y="-5" width="70" height="10" fill="#F39C12"/>
+    <rect x="-5" y="-35" width="10" height="70" fill="#F39C12"/>
+    <circle cx="0" cy="0" r="10" fill="#F39C12"/>
+  </g>
+  
+  <!-- Mud Splatter Effects -->
+  <circle cx="95" cy="170" r="4" fill="#4A3420"/>
+  <circle cx="145" cy="170" r="3" fill="#4A3420"/>
+  <path d="M100 160 L 90 150" stroke="#4A3420" stroke-width="3" stroke-linecap="round"/>
+  <path d="M140 160 L 150 150" stroke="#4A3420" stroke-width="3" stroke-linecap="round"/>
+</svg>

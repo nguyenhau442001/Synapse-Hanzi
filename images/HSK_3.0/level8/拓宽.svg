@@ -1,0 +1,68 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambient Glow for Expansion -->
+  <circle cx="120" cy="120" r="90" fill="#222733" opacity="0.6"/>
+
+  <!-- Network Channels / Pathways (Sales Channels Concept) -->
+  <g id="channels">
+    <!-- Center Node (Source/Business) -->
+    <circle cx="120" cy="120" r="14" fill="#FFA500"/>
+    <circle cx="120" cy="120" r="8" fill="#1A1D24"/>
+
+    <!-- Existing Narrow Paths (Fading out) -->
+    <path d="M 120 106 L 120 55" stroke="#3A4255" stroke-width="3" stroke-dasharray="4 3" stroke-linecap="round"/>
+    <path d="M 134 120 L 185 120" stroke="#3A4255" stroke-width="3" stroke-dasharray="4 3" stroke-linecap="round"/>
+
+    <!-- EXPANDED NEW PATHS (Bright Orange/Gold with Motion/Direction) -->
+    <!-- Top-Left Expansion -->
+    <path d="M 110 110 L 70 70" stroke="#FFA500" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="70" cy="70" r="8" fill="#FFA500"/>
+    <!-- Motion lines for top-left -->
+    <path d="M 62 62 L 55 55" stroke="#FFE066" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Top-Right Expansion -->
+    <path d="M 130 110 L 170 70" stroke="#FFA500" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="170" cy="70" r="8" fill="#FFA500"/>
+    <!-- Motion lines for top-right -->
+    <path d="M 178 62 L 185 55" stroke="#FFE066" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Bottom-Left Expansion -->
+    <path d="M 110 130 L 70 170" stroke="#FFA500" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="70" cy="170" r="8" fill="#FFA500"/>
+    <!-- Motion lines for bottom-left -->
+    <path d="M 62 178 L 55 185" stroke="#FFE066" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Bottom-Right Expansion -->
+    <path d="M 130 130 L 170 170" stroke="#FFA500" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="170" cy="170" r="8" fill="#FFA500"/>
+    <!-- Motion lines for bottom-right -->
+    <path d="M 178 178 L 185 185" stroke="#FFE066" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Human Character Action (Widen/Pushing outward dynamically) -->
+  <g id="character-action">
+    <!-- Character Head -->
+    <circle cx="120" cy="95" r="9" fill="#E2E8F0"/>
+    <!-- Character Body/Torso -->
+    <path d="M 110 130 C 110 115 130 115 130 130 L 134 148 C 134 150 130 152 120 152 C 110 152 106 150 106 148 Z" fill="#4A5568"/>
+
+    <!-- Active Arms pushing outward / expanding -->
+    <!-- Left arm reaching out -->
+    <path d="M 112 122 L 85 110" stroke="#E2E8F0" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="82" cy="108" r="4" fill="#FFA500"/>
+
+    <!-- Right arm reaching out -->
+    <path d="M 128 122 L 155 110" stroke="#E2E8F0" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="158" cy="108" r="4" fill="#FFA500"/>
+
+    <!-- Expansion Arc Indicators (Dynamic Action Waves) -->
+    <path d="M 60 90 C 50 105 50 135 60 150" stroke="#FFA500" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 180 90 C 190 105 190 135 180 150" stroke="#FFA500" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Outward arrows on arcs -->
+    <path d="M 55 98 L 47 90 L 57 88" stroke="#FFA500" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 185 98 L 193 90 L 183 88" stroke="#FFA500" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

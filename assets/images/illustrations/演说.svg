@@ -1,0 +1,42 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Ambient light glow from podium spot -->
+  <circle cx="120" cy="110" r="70" fill="#2D323E" opacity="0.6"/>
+
+  <!-- Microphone Stand & Base -->
+  <path d="M100 195 L140 195 L135 202 L105 202 Z" fill="#4A5568"/>
+  <rect x="117" y="115" width="6" height="85" fill="#718096" rx="3"/>
+  <rect x="116" y="110" width="8" height="8" fill="#A0AEC0" rx="2"/>
+
+  <!-- Podium / Lectern Structure -->
+  <path d="M85 130 L155 130 L165 202 L75 202 Z" fill="#2B6CB0"/>
+  <path d="M85 130 L155 130 L150 142 L90 142 Z" fill="#3182CE"/>
+  <!-- Podium Front Face Highlight/Design -->
+  <path d="M105 155 L135 155 L138 185 L102 185 Z" fill="#2C5282" opacity="0.7"/>
+
+  <!-- Vintage/Professional Microphone Head -->
+  <path d="M120 70 C110 70 105 78 105 88 C105 98 110 102 120 102 C130 102 135 98 135 88 C135 78 130 70 120 70 Z" fill="#E2E8F0"/>
+  <!-- Microphone Grille Lines -->
+  <path d="M110 78 L130 78" stroke="#4A5568" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M108 85 L132 85" stroke="#4A5568" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M110 92 L130 92" stroke="#4A5568" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Microphone Neck connector -->
+  <rect x="117" y="100" width="6" height="12" fill="#4A5568"/>
+
+  <!-- Sound Waves / Speech Emanation (Orange/Gold focus accent) -->
+  <path d="M92 78 C86 82 86 94 92 98" stroke="#ED8936" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M83 72 C74 79 74 97 83 104" stroke="#D69E2E" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+  
+  <path d="M148 78 C154 82 154 94 148 98" stroke="#ED8936" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M157 72 C166 79 166 97 157 104" stroke="#D69E2E" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+
+  <path d="M120 54 C117 57 117 61 120 64" stroke="#ED8936" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Optional subtle audience silhouettes at the bottom -->
+  <path d="M20 220 C20 210 35 205 50 205 C65 205 75 210 75 220 Z" fill="#2D3748"/>
+  <path d="M165 220 C165 210 175 205 190 205 C205 205 220 210 220 220 Z" fill="#2D3748"/>
+  <path d="M85 225 C85 215 100 210 120 210 C140 210 155 215 155 225 Z" fill="#2D3748" opacity="0.8"/>
+
+</svg>

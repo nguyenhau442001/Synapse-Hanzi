@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Representing "情结" (deep emotional attachment/nostalgia for homeland) -->
+  <!-- A stylized, warm-toned silhouette of a traditional Chinese pavilion/roof structure -->
+  <!-- held gently in the palm of a hand to signify the "deep-seated attachment" -->
+  
+  <!-- Hand holding the memory -->
+  <path d="M80 180 C80 160, 90 140, 110 140 C130 140, 140 160, 140 180 L140 200 L80 200 Z" fill="#FFB86C" opacity="0.8"/>
+  <path d="M110 140 L110 120 M125 145 L135 125 M95 145 L85 125" stroke="#FFB86C" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- The "Home" (Pavilion) icon representing the homeland -->
+  <g transform="translate(120, 110)">
+    <path d="M-40 0 L40 0 L20 -30 L-20 -30 Z" fill="#FF79C6" />
+    <path d="M-30 0 L-30 25 L30 25 L30 0" fill="#FFB86C" />
+    <path d="M-10 25 L-10 10 L10 10 L10 25" fill="#1A1D24" />
+    <path d="M-45 -5 L45 -5" stroke="#FF79C6" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Subtle golden glow/connection lines to emphasize the 'bond' -->
+  <path d="M120 140 Q120 100 120 80" stroke="#F1FA8C" stroke-width="2" stroke-dasharray="4 4" opacity="0.5"/>
+  <circle cx="120" cy="80" r="4" fill="#F1FA8C"/>
+</svg>

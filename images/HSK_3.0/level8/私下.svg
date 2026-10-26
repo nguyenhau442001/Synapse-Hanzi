@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Desk/Table representing the private space -->
+  <path d="M40 180 L200 180 L190 210 L50 210 Z" fill="#2D343E"/>
+  <path d="M40 180 L50 210 L50 220 L40 190 Z" fill="#1E232A"/>
+  <path d="M200 180 L190 210 L190 220 L200 190 Z" fill="#1E232A"/>
+  
+  <!-- Two figures whispering in a private, secluded corner -->
+  <!-- Figure 1 (Left) -->
+  <circle cx="90" cy="120" r="20" fill="#FFB86C"/>
+  <path d="M70 140 C70 160, 110 160, 110 140 L105 180 L75 180 Z" fill="#FFB86C"/>
+  
+  <!-- Figure 2 (Right) -->
+  <circle cx="150" cy="120" r="20" fill="#FFB86C"/>
+  <path d="M130 140 C130 160, 170 160, 170 140 L165 180 L135 180 Z" fill="#FFB86C"/>
+  
+  <!-- Hand gesture indicating 'hush' or private conversation -->
+  <path d="M115 115 L125 115" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+  <path d="M120 100 L120 110" stroke="#FFB86C" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Privacy screen/partition in the background -->
+  <rect x="60" y="60" width="120" height="80" rx="4" fill="none" stroke="#3E4756" stroke-width="2" stroke-dasharray="6 6"/>
+  
+  <!-- Shadow cast on the floor -->
+  <ellipse cx="120" cy="215" rx="70" ry="10" fill="#000000" opacity="0.2"/>
+</svg>

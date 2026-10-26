@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(24, 24)">
+    <!-- Document / Contract Base -->
+    <path d="M48 20 C48 14.4772 52.4772 10 58 10 H134 C139.523 10 144 14.4772 144 20 V172 C144 177.523 139.523 182 134 182 H58 C52.4772 182 48 177.523 48 172 Z" fill="#2A2F3D" stroke="#3A4255" stroke-width="3"/>
+    
+    <!-- Document Header Fold -->
+    <path d="M124 10 L144 30 H124 Z" fill="#3A4255"/>
+    <path d="M124 10 V30 H144" fill="none" stroke="#4A556B" stroke-width="2" stroke-linejoin="round"/>
+
+    <!-- Document Lines (Text Placeholders) -->
+    <rect x="68" y="32" width="56" height="6" rx="3" fill="#4A556B"/>
+    <rect x="68" y="52" width="60" height="4" rx="2" fill="#3A4255"/>
+    <rect x="68" y="62" width="45" height="4" rx="2" fill="#3A4255"/>
+    
+    <rect x="68" y="86" width="60" height="4" rx="2" fill="#3A4255"/>
+    <rect x="68" y="96" width="52" height="4" rx="2" fill="#3A4255"/>
+
+    <!-- Accent lines representing legal clauses -->
+    <rect x="68" y="120" width="40" height="4" rx="2" fill="#F59E0B" opacity="0.6"/>
+    <rect x="68" y="130" width="56" height="4" rx="2" fill="#F59E0B" opacity="0.6"/>
+
+    <!-- Wax Seal Ribbon -->
+    <path d="M116 142 L132 176 L120 184 L108 176 Z" fill="#D97706"/>
+
+    <!-- Wax Seal Stamp (Circular Gold/Orange Emblem) -->
+    <circle cx="120" cy="142" r="22" fill="#F59E0B" stroke="#D97706" stroke-width="3"/>
+    <!-- Seal Inner Detail / Checkmark Symbol of Agreement -->
+    <path d="M110 142 L117 149 L131 133" fill="none" stroke="#1A1D24" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Fountain Pen Nib Overlay (Representing the signing/binding nature) -->
+    <g transform="translate(100, 45) rotate(45)">
+      <!-- Pen Body -->
+      <path d="M10 0 C10 0 16 10 16 24 L16 38 C16 39.1046 15.1046 40 14 40 H6 C4.89543 40 4 39.1046 4 38 L4 24 C4 10 10 0 10 0 Z" fill="#60A5FA"/>
+      <!-- Pen Tip -->
+      <path d="M4 24 L10 50 L16 24 Z" fill="#93C5FD"/>
+      <!-- Nib Slit & Breathing Hole -->
+      <circle cx="10" cy="32" r="1.5" fill="#1A1D24"/>
+      <line x1="10" y1="34" x2="10" y2="44" stroke="#1A1D24" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

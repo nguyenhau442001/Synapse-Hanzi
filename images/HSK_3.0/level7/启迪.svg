@@ -1,0 +1,63 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle ambient glow representing enlightenment/inspiration -->
+  <circle cx="120" cy="115" r="75" fill="#FFB703" opacity="0.08"/>
+  <circle cx="120" cy="115" r="45" fill="#FFB703" opacity="0.12"/>
+
+  <!-- Central Physical Object: A sleek, modern glowing desk lamp (representing "soi sáng", "khơi gợi", "khai sáng") combined with dynamic light beam shaping into an open book/mind concept -->
+  
+  <!-- Lamp Base -->
+  <path d="M 95 190 L 145 190 C 145 190 148 185 142 183 L 98 183 C 92 185 95 190 95 190 Z" fill="#3A4252"/>
+  <ellipse cx="120" cy="186" rx="25" ry="4" fill="#525D73"/>
+
+  <!-- Lower Arm -->
+  <line x1="120" y1="183" x2="100" y2="135" stroke="#7A8B9E" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Upper Arm -->
+  <line x1="100" y1="135" x2="135" y2="90" stroke="#7A8B9E" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Joint Pivots -->
+  <circle cx="120" cy="183" r="3.5" fill="#FFB703"/>
+  <circle cx="100" cy="135" r="4" fill="#FFB703"/>
+  <circle cx="135" cy="90" r="3.5" fill="#FFB703"/>
+
+  <!-- Lamp Shade (Modern angled cone) -->
+  <path d="M 115 73 L 155 77 L 142 62 L 122 58 Z" fill="#2E3748"/>
+  <path d="M 122 58 L 142 62 L 147 68 L 117 64 Z" fill="#3A4252"/>
+
+  <!-- Focused Beam of Light (Warm Gold/Orange) emerging from the lamp downward onto an open book -->
+  <polygon points="122,68 147,68 190,165 50,165" fill="url(#lightBeamGradient)" opacity="0.85"/>
+
+  <!-- Light Beam Gradient Definition -->
+  <defs>
+    <linearGradient id="lightBeamGradient" x1="120" y1="68" x2="120" y2="165" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFD166" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFB703" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Open Book at the center of the light (Knowledge / Inspiration source) -->
+  <g transform="translate(75, 145)">
+    <!-- Book Shadow -->
+    <ellipse cx="45" cy="22" rx="42" ry="6" fill="#0D0F13" opacity="0.5"/>
+    
+    <!-- Left Page -->
+    <path d="M 45 18 C 30 14 10 16 2 20 L 2 32 C 10 28 30 26 45 30 Z" fill="#E2E8F0"/>
+    
+    <!-- Right Page -->
+    <path d="M 45 18 C 60 14 80 16 88 20 L 88 32 C 80 28 60 26 45 30 Z" fill="#E2E8F0"/>
+
+    <!-- Book Spine center line -->
+    <line x1="45" y1="18" x2="45" y2="30" stroke="#CBD5E1" stroke-width="1.5"/>
+
+    <!-- Abstract light particles / ideas rising from the book within the beam -->
+    <circle cx="35" cy="10" r="2" fill="#FFD166"/>
+    <circle cx="55" cy="7" r="1.5" fill="#FFD166"/>
+    <circle cx="45" cy="2" r="2.5" fill="#FFB703"/>
+    
+    <path d="M 43 5 L 47 5 M 45 3 L 45 7" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round"/>
+  </g>
+
+</svg>

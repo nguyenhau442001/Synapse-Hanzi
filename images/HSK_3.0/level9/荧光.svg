@@ -1,0 +1,15 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 120)">
+    <path d="M-40 -60 C -60 -60 -80 -40 -80 -20 C -80 20 -40 40 -40 80 C -40 40 0 20 0 -20 C 0 -40 -20 -60 -40 -60 Z" fill="#2D3436"/>
+    <path d="M-40 -55 C -55 -55 -70 -40 -70 -20 C -70 10 -40 30 -40 65 C -40 30 -10 10 -10 -20 C -10 -40 -25 -55 -40 -55 Z" fill="#A8E063" opacity="0.8"/>
+    <path d="M-40 -55 C -55 -55 -70 -40 -70 -20 C -70 10 -40 30 -40 65 C -40 30 -10 10 -10 -20 C -10 -40 -25 -55 -40 -55 Z" fill="url(#glow)" filter="blur(8px)"/>
+    <circle cx="-40" cy="-20" r="15" fill="#FFFFFF" opacity="0.15"/>
+  </g>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#A8E063" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#A8E063" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

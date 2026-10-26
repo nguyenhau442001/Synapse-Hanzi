@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background graduation podium subtle arch / atmosphere -->
+  <path d="M70 200 L170 200 L160 140 L80 140 Z" fill="#252A34"/>
+  <rect x="95" y="130" width="50" height="15" rx="3" fill="#323846"/>
+
+  <!-- Flow of time / past path curving behind -->
+  <path d="M 40 180 Q 70 140, 100 170" fill="none" stroke="#323846" stroke-width="4" stroke-dasharray="4 4" stroke-linecap="round"/>
+  <circle cx="40" cy="180" r="4" fill="#323846"/>
+  <circle cx="70" cy="155" r="5" fill="#323846"/>
+  <circle cx="100" cy="170" r="6" fill="#323846"/>
+
+  <!-- Character turning back (回首 - looking back) -->
+  <!-- Body facing somewhat forward/right, but head turned left/back -->
+  <!-- Graduation gown -->
+  <path d="M 100 200 L 105 155 Q 120 150, 135 155 L 140 200 Z" fill="#2D3748"/>
+  
+  <!-- Graduation stole / sash (gold accent) -->
+  <path d="M 112 153 L 115 200 L 125 200 L 128 153 Z" fill="#D69E2E"/>
+
+  <!-- Neck -->
+  <rect x="115" y="138" width="10" height="16" fill="#FBD38D"/>
+
+  <!-- Head turned looking backward (to the left) -->
+  <circle cx="112" cy="128" r="14" fill="#FBD38D"/>
+
+  <!-- Hair -->
+  <path d="M 98 125 Q 100 112, 112 112 Q 126 112, 126 125 Q 122 135, 112 135 Z" fill="#2D3748"/>
+
+  <!-- Graduation Cap (Mortarboard) angled to match head -->
+  <polygon points="90,112 115,102 140,112 115,122" fill="#1A202C"/>
+  <polygon points="92,113 115,104 138,113 115,120" fill="#2D3748"/>
+  <!-- Tassel hanging back -->
+  <path d="M 132,115 Q 138,125, 135,135" fill="none" stroke="#D69E2E" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="135" cy="136" r="2.5" fill="#D69E2E"/>
+
+  <!-- Gaze / Sightline indicator (dotted arc looking back into the past) -->
+  <path d="M 100 125 Q 70 120, 50 145" fill="none" stroke="#ECC94B" stroke-width="2.5" stroke-dasharray="3 3" stroke-linecap="round"/>
+  <polygon points="48,142 56,146 51,150" fill="#ECC94B"/>
+
+  <!-- Focal highlight / Memory spark at the end of the gaze -->
+  <circle cx="48" cy="146" r="3" fill="#F6E05E"/>
+
+</svg>

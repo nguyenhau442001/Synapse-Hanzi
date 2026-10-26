@@ -1,0 +1,47 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background grid/glow elements for modern dark theme port context -->
+  <path d="M20 180 L220 180" stroke="#2A303C" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M20 200 L220 200" stroke="#2A303C" stroke-width="1"/>
+  
+  <!-- Giant Smart Crane (上方机械吊机 - representing the automated port context) -->
+  <g fill="none" stroke="#60A5FA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Crane structure hanging down from top -->
+    <line x1="120" y1="20" x2="120" y2="70"/>
+    <line x1="90" y1="20" x2="150" y2="20"/>
+    <!-- Trolley cables -->
+    <line x1="105" y1="70" x2="105" y2="90"/>
+    <line x1="135" y1="70" x2="135" y2="90"/>
+  </g>
+  
+  <!-- Spreader bar (吊具) -->
+  <rect x="95" y="90" width="50" height="8" rx="2" fill="#F59E0B"/>
+  
+  <!-- Cable drop from spreader to container -->
+  <line x1="105" y1="98" x2="105" y2="108" stroke="#F59E0B" stroke-width="2"/>
+  <line x1="135" y1="98" x2="135" y2="108" stroke="#F59E0B" stroke-width="2"/>
+
+  <!-- MAIN OBJECT: 集装箱 (Container - Noun / Physical Object) -->
+  <!-- Centered, clear, iconic, high-contrast flat vector design -->
+  <g transform="translate(40, 108)">
+    <!-- Container Body -->
+    <rect x="0" y="0" width="160" height="80" rx="4" fill="#E11D48"/>
+    
+    <!-- Corrugation ridges (standard corrugated container pattern) -->
+    <!-- Vertical ribbed lines across the container -->
+    <path d="M 15 0 L 15 80 M 30 0 L 30 80 M 45 0 L 45 80 M 60 0 L 60 80 M 75 0 L 75 80 M 90 0 L 90 80 M 105 0 L 105 80 M 120 0 L 120 80 M 135 0 L 135 80 M 150 0 L 150 80" 
+          stroke="#9F1239" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+    
+    <!-- Corner castings (standard ISO corner blocks) -->
+    <rect x="0" y="0" width="12" height="10" rx="2" fill="#FBBF24"/>
+    <rect x="148" y="0" width="12" height="10" rx="2" fill="#FBBF24"/>
+    <rect x="0" y="70" width="12" height="10" rx="2" fill="#FBBF24"/>
+    <rect x="148" y="70" width="12" height="10" rx="2" fill="#FBBF24"/>
+
+    <!-- Center locking eyelet / ISO detail -->
+    <circle cx="80" cy="40" r="4" fill="#FBBF24" opacity="0.8"/>
+  </g>
+
+</svg>

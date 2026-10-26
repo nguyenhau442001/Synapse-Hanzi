@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Chessboard base -->
+  <path d="M60 180 L180 180 L195 150 L45 150 Z" fill="#2C313C"/>
+  <path d="M45 150 L195 150 L180 120 L60 120 Z" fill="#3D4451"/>
+  
+  <!-- Chess Piece (King) -->
+  <g transform="translate(120, 135)">
+    <path d="M-15 0 L15 0 L12 25 L-12 25 Z" fill="#E0E0E0"/>
+    <path d="M-10 0 L10 0 L8 -25 L-8 -25 Z" fill="#E0E0E0"/>
+    <path d="M-15 -25 L15 -25 L12 -35 L-12 -35 Z" fill="#E0E0E0"/>
+    <path d="M-5 -35 L5 -35 L3 -45 L-3 -45 Z" fill="#E0E0E0"/>
+    <path d="M-8 -45 L8 -45 L6 -55 L-6 -55 Z" fill="#E0E0E0"/>
+    <rect x="-4" y="-65" width="8" height="10" fill="#E0E0E0"/>
+    <rect x="-12" y="-55" width="24" height="4" fill="#E0E0E0"/>
+  </g>
+  
+  <!-- The "Fatal" element: A sharp, bright orange crack/shatter effect on the piece -->
+  <path d="M115 100 L125 90 L110 80 L120 70 L105 60" stroke="#FF9F1C" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <circle cx="120" cy="80" r="4" fill="#FF9F1C"/>
+  
+  <!-- Falling/Toppling motion lines -->
+  <path d="M140 100 L160 80" stroke="#FF9F1C" stroke-width="2" stroke-linecap="round"/>
+  <path d="M145 110 L165 90" stroke="#FF9F1C" stroke-width="2" stroke-linecap="round"/>
+</svg>

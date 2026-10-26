@@ -1,0 +1,75 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Musical Soundwaves / Aura Waves -->
+  <path d="M 60 120 Q 80 90 100 120 T 140 120 T 180 120" fill="none" stroke="#2D3748" stroke-width="2" opacity="0.5"/>
+  <path d="M 40 135 Q 70 85 100 135 T 160 135 T 200 135" fill="none" stroke="#2D3748" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Grand Piano (Central Object) -->
+  <g transform="translate(45, 80)">
+    <!-- Piano Body (Main Frame) -->
+    <path d="M 10 60 L 140 30 C 145 30 150 35 150 40 L 150 85 C 150 90 145 95 140 95 L 10 95 Z" fill="#2A3439"/>
+    
+    <!-- Piano Lid (Opened Upward) -->
+    <path d="M 30 57 L 130 15 L 135 30 L 35 72 Z" fill="#3E4C59"/>
+    
+    <!-- Keyboard Area -->
+    <rect x="15" y="70" width="125" height="15" fill="#E2E8F0" rx="1"/>
+    
+    <!-- Black Keys Detail -->
+    <line x1="25" y1="70" x2="25" y2="78" stroke="#1A1D24" stroke-width="1.5"/>
+    <line x1="35" y1="70" x2="35" y2="78" stroke="#1A1D24" stroke-width="1.5"/>
+    <line x1="55" y1="70" x2="55" y2="78" stroke="#1A1D24" stroke-width="1.5"/>
+    <line x1="65" y1="70" x2="65" y2="78" stroke="#1A1D24" stroke-width="1.5"/>
+    <line x1="75" y1="70" x2="75" y2="78" stroke="#1A1D24" stroke-width="1.5"/>
+    <line x1="95" y1="70" x2="95" y2="78" stroke="#1A1D24" stroke-width="1.5"/>
+    <line x1="105" y1="70" x2="105" y2="78" stroke="#1A1D24" stroke-width="1.5"/>
+    <line x1="125" y1="70" x2="125" y2="78" stroke="#1A1D24" stroke-width="1.5"/>
+
+    <!-- Piano Legs -->
+    <rect x="20" y="95" width="6" height="35" fill="#1F2937" rx="2"/>
+    <rect x="130" y="95" width="6" height="35" fill="#1F2937" rx="2"/>
+    <rect x="75" y="95" width="5" height="35" fill="#1F2937" rx="1"/>
+  </g>
+
+  <!-- Pianist Character (Completely absorbed in playing - 如痴如醉) -->
+  <g transform="translate(85, 95)">
+    <!-- Body / Torso leaning in deep concentration -->
+    <path d="M 20 60 C 15 45 20 30 35 25 C 45 22 55 30 55 45 L 60 75 Z" fill="#3182CE"/>
+    
+    <!-- Head tilted upward in blissful trance -->
+    <circle cx="38" cy="14" r="11" fill="#EDF2F7"/>
+    <!-- Closed blissful eyes (arc) -->
+    <path d="M 42 13 Q 45 15 48 13" fill="none" stroke="#2D3748" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Hair -->
+    <path d="M 27 12 C 27 5 35 4 45 8 C 47 10 45 14 43 14 C 38 10 32 10 27 12 Z" fill="#1A202C"/>
+
+    <!-- Arms reaching gracefully to the keyboard -->
+    <path d="M 30 35 Q 45 35 55 25" fill="none" stroke="#EDF2F7" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 50 25 Q 65 20 75 18" fill="none" stroke="#EDF2F7" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Musical Notes / Melody Floating Upwards (Visualizing "Enchantment & Bliss") -->
+  <g fill="#F6AD55">
+    <!-- Note 1 -->
+    <ellipse cx="165" cy="75" rx="4" ry="3" transform="rotate(-20 165 75)"/>
+    <path d="M 168 74 L 168 55 C 168 52 175 50 178 52" fill="none" stroke="#F6AD55" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 168 55 Q 175 52 182 55" fill="none" stroke="#F6AD55" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Note 2 -->
+    <ellipse cx="185" cy="95" rx="3.5" ry="2.5" transform="rotate(-20 185 95)"/>
+    <path d="M 188 94 L 188 78 C 188 75 194 73 197 75" fill="none" stroke="#F6AD55" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Note 3 (Higher up, glowing gold accent) -->
+    <circle cx="145" cy="45" r="3" fill="#F6AD55"/>
+    <path d="M 147 44 L 147 30" stroke="#F6AD55" stroke-width="2"/>
+    <path d="M 147 30 L 155 33" stroke="#F6AD55" stroke-width="2"/>
+
+    <!-- Floating Sparkles of Inspiration/Trance -->
+    <path d="M 120 40 L 122 45 L 127 47 L 122 49 L 120 54 L 118 49 L 113 47 L 118 45 Z" fill="#F6AD55" opacity="0.8"/>
+    <path d="M 195 55 L 196.5 58 L 199.5 59.5 L 196.5 61 L 195 64 L 193.5 61 L 190.5 59.5 L 193.5 58 Z" fill="#F6AD55" opacity="0.6"/>
+  </g>
+
+</svg>

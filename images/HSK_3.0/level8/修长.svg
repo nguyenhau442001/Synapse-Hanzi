@@ -1,0 +1,16 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 120)">
+    <!-- Legs representation: Sleek, elongated, graceful lines -->
+    <path d="M-25 -80 C-25 -80 -15 20 -10 80 C-10 80 -5 90 0 90 C5 90 10 80 10 80 C15 20 25 -80 25 -80" fill="#FFD700" opacity="0.9"/>
+    <path d="M-45 -80 C-45 -80 -35 20 -30 80 C-30 80 -25 90 -20 90 C-15 90 -10 80 -10 80 C-5 20 5 -80 5 -80" fill="#FFC107" opacity="0.7"/>
+    
+    <!-- Silhouette of the dancer's posture (upper body suggestion) -->
+    <circle cx="0" cy="-95" r="15" fill="#FFD700"/>
+    <path d="M-15 -80 L15 -80 L5 -60 L-5 -60 Z" fill="#FFD700"/>
+    
+    <!-- Emphasizing the "long/slender" aspect with vertical motion lines -->
+    <line x1="-35" y1="-70" x2="-35" y2="70" stroke="#37474F" stroke-width="2" stroke-dasharray="4 4"/>
+    <line x1="35" y1="-70" x2="35" y2="70" stroke="#37474F" stroke-width="2" stroke-dasharray="4 4"/>
+  </g>
+</svg>

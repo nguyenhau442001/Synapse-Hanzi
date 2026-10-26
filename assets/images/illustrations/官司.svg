@@ -1,0 +1,48 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 115)">
+    <!-- Scale base/stand -->
+    <path d="M-12 65 L12 65 L16 80 L-16 80 Z" fill="#4A5568"/>
+    <rect x="-3" y="10" width="6" height="55" fill="#718096"/>
+    
+    <!-- Central pillar & top ring -->
+    <circle cx="0" cy="5" r="8" fill="#E2E8F0"/>
+    <path d="M-30 10 L30 10 L35 2 L-35 2 Z" fill="#E2E8F0"/>
+    
+    <!-- Beam -->
+    <line x1="-55" y1="18" x2="55" y2="18" stroke="#E2E8F0" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Left Scale Pan (Lowered/Heavy) -->
+    <path d="M-55 18 L-75 60 L-35 60 Z" fill="none" stroke="#A0AEC0" stroke-width="2"/>
+    <ellipse cx="-55" cy="60" rx="22" ry="7" fill="#D69E2E"/>
+    <path d="M-77 60 C-77 72 -33 72 -33 60 Z" fill="#ECC94B"/>
+    <!-- Legal documents / files inside left pan -->
+    <rect x="-62" y="42" width="14" height="18" rx="1" fill="#F7FAFC" transform="rotate(-10 -55 50)"/>
+    <rect x="-56" y="38" width="14" height="18" rx="1" fill="#E2E8F0" transform="rotate(5 -55 45)"/>
+    <rect x="-50" y="35" width="14" height="18" rx="1" fill="#FFFFFF"/>
+    <line x1="-46" y1="40" x2="-40" y2="40" stroke="#CBD5E0" stroke-width="2"/>
+    <line x1="-46" y1="45" x2="-42" y2="45" stroke="#CBD5E0" stroke-width="2"/>
+
+    <!-- Right Scale Pan (Raised) -->
+    <path d="M55 18 L35 48 L75 48 Z" fill="none" stroke="#A0AEC0" stroke-width="2"/>
+    <ellipse cx="55" cy="48" rx="22" ry="7" fill="#D69E2E"/>
+    <path d="M33 48 C33 60 77 60 77 48 Z" fill="#ECC94B"/>
+    <!-- Single document inside right pan -->
+    <rect x="48" y="28" width="14" height="18" rx="1" fill="#FFFFFF"/>
+    <line x1="52" y1="33" x2="58" y2="33" stroke="#CBD5E0" stroke-width="2"/>
+    <line x1="52" y1="38" x2="56" y2="38" stroke="#CBD5E0" stroke-width="2"/>
+
+    <!-- Wooden Gavel crossing base -->
+    <!-- Gavel handle -->
+    <path d="M-25 -25 L25 35" stroke="#975A16" stroke-width="6" stroke-linecap="round"/>
+    <!-- Gavel head -->
+    <g transform="translate(15, 23) rotate(37)">
+      <rect x="-18" y="-9" width="36" height="18" rx="4" fill="#D69E2E"/>
+      <rect x="-21" y="-11" width="6" height="22" rx="2" fill="#B7791F"/>
+      <rect x="15" y="-11" width="6" height="22" rx="2" fill="#B7791F"/>
+    </g>
+    <!-- Gavel striking block -->
+    <path d="M-15 75 L15 75 L20 85 L-20 85 Z" fill="#975A16"/>
+  </g>
+</svg>

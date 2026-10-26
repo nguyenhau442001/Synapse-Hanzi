@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative subtle elements -->
+  <circle cx="120" cy="120" r="85" fill="none" stroke="#262B35" stroke-width="1.5" stroke-dasharray="4 6"/>
+  
+  <!-- Subtle glowing halo representing inner peace & clarity -->
+  <circle cx="120" cy="115" r="54" fill="#FFB800" opacity="0.08"/>
+  <circle cx="120" cy="115" r="42" fill="#FFB800" opacity="0.12"/>
+
+  <!-- Central Visual Representation: A calm, upright figure in relaxed, confident posture embodying "心安理得" (inner peace from honest labor / clear conscience) -->
+  <g transform="translate(0, 8)">
+    <!-- Base / Ground line -->
+    <path d="M 75 165 L 165 165" stroke="#343B48" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Torso and Shoulders (Upright, dignified posture) -->
+    <path d="M 92 150 C 92 128 102 122 120 122 C 138 122 148 128 148 150 Z" fill="#2E62FF"/>
+    
+    <!-- Neck -->
+    <rect x="113" y="108" width="14" height="18" rx="4" fill="#F8B195"/>
+
+    <!-- Head -->
+    <circle cx="120" cy="94" r="16" fill="#F8B195"/>
+
+    <!-- Hair -->
+    <path d="M 104 94 C 104 80 110 76 120 76 C 130 76 136 80 136 92 C 136 92 134 90 130 89 C 124 87 116 87 110 89 C 106 90 104 94 104 94 Z" fill="#2A2E39"/>
+
+    <!-- Calm facial expression hints (closed contented eyes & gentle smile) -->
+    <path d="M 113 95 Q 116 97 119 95" stroke="#4A5260" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M 121 95 Q 124 97 127 95" stroke="#4A5260" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M 117 101 Q 120 103 123 101" stroke="#4A5260" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Arms relaxed at sides or hands resting comfortably -->
+    <path d="M 94 130 L 82 152" stroke="#2E62FF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 146 130 L 158 152" stroke="#2E62FF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Hands -->
+    <circle cx="80" cy="155" r="5" fill="#F8B195"/>
+    <circle cx="160" cy="155" r="5" fill="#F8B195"/>
+  </g>
+
+  <!-- Golden balance/clarity emblem hovering above representing "理得" (justified, clear conscience) -->
+  <g transform="translate(120, 52)">
+    <!-- Outer ring -->
+    <circle cx="0" cy="0" r="14" fill="#1A1D24" stroke="#FFB800" stroke-width="2.5"/>
+    <!-- Checkmark representing correctness and justified peace -->
+    <path d="M -5 -1 L -1 3 L 6 -4" fill="none" stroke="#FFB800" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+</svg>

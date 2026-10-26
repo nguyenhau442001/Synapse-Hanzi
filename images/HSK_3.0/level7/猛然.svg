@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Visual Metaphor: Sharp Peak/Break in Timeline -->
+  <!-- Baseline representing steady progression -->
+  <path d="M40 160 L120 160" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- The "猛然" (Sudden) break: A sharp, jagged upward spike -->
+  <path d="M120 160 L140 80 L160 120 L200 120" fill="none" stroke="#F6AD55" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Accent highlighting the sudden impact point -->
+  <circle cx="140" cy="80" r="8" fill="#F6AD55"/>
+  
+  <!-- Motion lines indicating the suddenness of the action -->
+  <path d="M145 75 L160 60" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+  <path d="M150 85 L170 95" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Contrast: The shift from horizontal flow to vertical intensity -->
+  <path d="M120 160 L120 120" stroke="#2D3748" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>

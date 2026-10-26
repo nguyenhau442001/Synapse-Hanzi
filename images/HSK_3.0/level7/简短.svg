@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "简短" (Short, Concise) -->
+  <!-- Visualizing contrast between a long, verbose scroll/wave and a concise, sharp, powerful impact -->
+  
+  <!-- Background subtle design elements -->
+  <g opacity="0.15">
+    <!-- Faded long scroll representing verbosity -->
+    <path d="M40 85h80v70h-80z" fill="none" stroke="#8E99A8" stroke-dasharray="4 4" stroke-width="2" rx="4"/>
+    <path d="M55 100h50 M55 115h40 M55 130h45" stroke="#8E99A8" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Main Focus: Concise, impactful speech / text block (Orange/Gold accent) -->
+  <g transform="translate(15, 0)">
+    <!-- Podium / Stage base for conference context -->
+    <path d="M85 180h75l-10-35h-55z" fill="#2E3440"/>
+    <path d="M70 180h105v6h-105z" fill="#4C566A" rx="3"/>
+
+    <!-- Speaker silhouette behind podium -->
+    <circle cx="122" cy="115" r="14" fill="#4C566A"/>
+    <path d="M102 155c0-11 9-20 20-20s20 9 20 20v25h-40z" fill="#4C566A"/>
+
+    <!-- Microphone -->
+    <path d="M135 105v15" stroke="#D8DEE9" stroke-width="2" stroke-linecap="round"/>
+    <path d="M132 102h6v6h-6z" fill="#D8DEE9" rx="3"/>
+
+    <!-- Concise & Powerful Speech Wave / Lightning-like punchy sound waves -->
+    <g transform="translate(150, 85)">
+      <!-- Sharp, bold, short energetic burst lines representing "简短有力" -->
+      <path d="M0 25h35" stroke="#FFB020" stroke-width="5" stroke-linecap="round"/>
+      <path d="M5 40h20" stroke="#FFB020" stroke-width="4" stroke-linecap="round"/>
+      <path d="M10 55h12" stroke="#FFB020" stroke-width="3" stroke-linecap="round"/>
+      
+      <!-- Spark / impact star representing strength and precision -->
+      <path d="M42 25l4-8 4 8 8 4-8 4-4 8-4-8-8-4z" fill="#FFB020"/>
+    </g>
+  </g>
+</svg>

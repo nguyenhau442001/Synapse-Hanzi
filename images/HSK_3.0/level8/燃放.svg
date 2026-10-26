@@ -1,0 +1,48 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle background atmosphere/sparks -->
+  <circle cx="60" cy="80" r="1" fill="#4A5568" opacity="0.4"/>
+  <circle cx="180" cy="70" r="1.5" fill="#4A5568" opacity="0.4"/>
+  <circle cx="195" cy="140" r="1" fill="#4A5568" opacity="0.4"/>
+  <circle cx="50" cy="160" r="1.5" fill="#4A5568" opacity="0.4"/>
+
+  <!-- Central Firework Object: "燃放" (bắn / đốt pháo hoa) -->
+  <!-- Launch trail / upward spark beam -->
+  <path d="M120 180 L120 125" stroke="#FFA726" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 3"/>
+
+  <!-- Central bursting core / ignition point -->
+  <circle cx="120" cy="105" r="4" fill="#FFE082"/>
+
+  <!-- Vibrant Firework Petals & Explosive Rays (Gold/Orange/Red theme for celebration) -->
+  <g fill="none" stroke-linecap="round">
+    <!-- Primary cardinal rays -->
+    <path d="M120 105 L120 45" stroke="#FF7043" stroke-width="3"/>
+    <path d="M120 105 L120 165" stroke="#FF7043" stroke-width="2"/>
+    <path d="M120 105 L60 105" stroke="#FF7043" stroke-width="3"/>
+    <path d="M120 105 L180 105" stroke="#FF7043" stroke-width="3"/>
+
+    <!-- Diagonal rays -->
+    <path d="M120 105 L78 63" stroke="#FFA726" stroke-width="3"/>
+    <path d="M120 105 L162 63" stroke="#FFA726" stroke-width="3"/>
+    <path d="M120 105 L78 147" stroke="#FFA726" stroke-width="2.5"/>
+    <path d="M120 105 L162 147" stroke="#FFA726" stroke-width="2.5"/>
+
+    <!-- Intermediate fine sparks -->
+    <path d="M120 105 L95 80" stroke="#FFCA28" stroke-width="2"/>
+    <path d="M120 105 L145 80" stroke="#FFCA28" stroke-width="2"/>
+    <path d="M120 105 L95 130" stroke="#FFCA28" stroke-width="2"/>
+    <path d="M120 105 L145 130" stroke="#FFCA28" stroke-width="2"/>
+  </g>
+
+  <!-- Floating Sparkles / Stars -->
+  <path d="M140 45 L142 50 L147 52 L142 54 L140 59 L138 54 L133 52 L138 50 Z" fill="#FFE082"/>
+  <path d="M95 65 L96.5 68 L100 69.5 L96.5 71 L95 74 L93.5 71 L90 69.5 L93.5 68 Z" fill="#FFCA28"/>
+  <path d="M155 125 L156.2 127.5 L159 128.7 L156.2 130 L155 132.5 L153.8 130 L151 128.7 L153.8 127.5 Z" fill="#FF7043"/>
+  <path d="M85 115 L86 117 L89 118 L86 119 L85 121 L84 119 L81 118 L84 117 Z" fill="#FFA726"/>
+
+  <!-- Base platform / launch pad silhouette hinting at the ground context -->
+  <path d="M90 195 L150 195 L158 202 L82 202 Z" fill="#2D3748" rx="2"/>
+  <rect x="105" y="190" width="30" height="5" rx="1" fill="#4A5568"/>
+</svg>

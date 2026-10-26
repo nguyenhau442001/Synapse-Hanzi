@@ -1,0 +1,57 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Central Physical Object: Vintage Framed Black & White Photograph -->
+    <!-- Drop Shadow / Depth -->
+    <rect x="52" y="42" width="136" height="106" rx="6" fill="#0E1015" opacity="0.6"/>
+    
+    <!-- Outer Frame (Warm Gold/Amber Accent for '唤起' focus) -->
+    <rect x="50" y="40" width="136" height="106" rx="6" fill="#2A2F3D" stroke="#E5A93B" stroke-width="2.5"/>
+    
+    <!-- Inner Matting -->
+    <rect x="58" y="48" width="120" height="90" rx="2" fill="#E8ECEF"/>
+    
+    <!-- Sepia/Aged Photo Area -->
+    <rect x="64" y="54" width="108" height="78" fill="#D4C9B8"/>
+    
+    <!-- Stylized Landscape inside photo (Childhood memory: Sun, hills, little kite) -->
+    <!-- Distant Hills -->
+    <path d="M64 95 Q90 70 115 95 Q145 75 172 90 L172 132 L64 132 Z" fill="#B5A894"/>
+    <path d="M90 92 Q130 60 172 85 L172 132 L90 132 Z" fill="#A49783"/>
+    
+    <!-- Sun / Nostalgic Glow -->
+    <circle cx="140" cy="75" r="10" fill="#E8DCB8" opacity="0.8"/>
+    
+    <!-- Simple tree/figure motif representing childhood memory -->
+    <path d="M90 110 L90 128 M90 115 Q80 110 85 102 Q90 105 90 110 Z" fill="#6E6252"/>
+    <circle cx="87" cy="98" r="8" fill="#7D705C"/>
+    
+    <!-- Photo Corner Mounts / Details -->
+    <path d="M64 54 L74 54 L64 64 Z" fill="#C2B6A2"/>
+    <path d="M172 54 L162 54 L172 64 Z" fill="#C2B6A2"/>
+    <path d="M64 132 L74 132 L64 122 Z" fill="#C2B6A2"/>
+    <path d="M172 132 L162 132 L172 122 Z" fill="#C2B6A2"/>
+
+    <!-- Emanating Waves / Awakening Effect (Khơi dậy / Gợi lên) -->
+    <!-- Expanding arcs rising from the photo to represent memory being evoked -->
+    <path d="M95 32 Q120 20 145 32" fill="none" stroke="#E5A93B" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+    <path d="M80 22 Q120 8 160 22" fill="none" stroke="#E5A93B" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+    <path d="M65 12 Q120 -2 175 12" fill="none" stroke="#E5A93B" stroke-width="1.5" stroke-linecap="round" opacity="1.0"/>
+    
+    <!-- Sparkles of memory -->
+    <circle cx="100" cy="24" r="2" fill="#E5A93B"/>
+    <circle cx="145" cy="18" r="1.5" fill="#E5A93B"/>
+    <circle cx="120" cy="10" r="2.5" fill="#E5A93B"/>
+
+    <!-- Base / Stand for the photo object -->
+    <path d="M95 146 L145 146 L155 156 L85 156 Z" fill="#363C4E"/>
+    <rect x="75" y="156" width="90" height="6" rx="3" fill="#242935"/>
+
+    <!-- Ground Floor Line -->
+    <line x1="40" y1="185" x2="200" y2="185" stroke="#363C4E" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Subtle atmospheric glow below the object -->
+    <ellipse cx="120" cy="162" rx="55" ry="8" fill="#E5A93B" opacity="0.12"/>
+  </g>
+</svg>

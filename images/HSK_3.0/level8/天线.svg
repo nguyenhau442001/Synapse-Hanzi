@@ -1,0 +1,38 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Mountain Background to match context -->
+  <polygon points="30,190 120,95 210,190" fill="#222733"/>
+  <polygon points="120,95 140,115 100,115" fill="#2E3544" opacity="0.6"/>
+
+  <!-- Base mount / Observatory rooftop -->
+  <rect x="95" y="180" width="50" height="15" rx="3" fill="#3B4252"/>
+  <rect x="105" y="160" width="30" height="20" fill="#4C566A"/>
+
+  <!-- Satellite Dish / Antenna Structure -->
+  <!-- Support Pole -->
+  <rect x="117" y="110" width="6" height="55" fill="#88C0D0"/>
+  
+  <!-- Dish Backing -->
+  <circle cx="120" cy="115" r="28" fill="#3B4252"/>
+  
+  <!-- Satellite Dish Face -->
+  <ellipse cx="120" cy="115" rx="26" ry="26" fill="#E5E9F0"/>
+  <ellipse cx="123" cy="115" rx="22" ry="22" fill="#D8DEE9"/>
+
+  <!-- LNB / Receiver (Focus point) -->
+  <circle cx="110" cy="115" r="4" fill="#EBCB8B"/>
+  <line x1="120" y1="115" x2="110" y2="115" stroke="#4C566A" stroke-width="2"/>
+
+  <!-- Signal Waves (Orange/Gold focus accent) -->
+  <path d="M 85,100 A 25,25 0 0,1 85,130" stroke="#EBCB8B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 77,90 A 37,37 0 0,1 77,140" stroke="#EBCB8B" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 69,80 A 49,49 0 0,1 69,150" stroke="#EBCB8B" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Starry Sky Detail -->
+  <circle cx="60" cy="50" r="1.5" fill="#E5E9F0" opacity="0.8"/>
+  <circle cx="180" cy="65" r="1.5" fill="#E5E9F0" opacity="0.5"/>
+  <circle cx="150" cy="40" r="2" fill="#E5E9F0" opacity="0.9"/>
+  <circle cx="90" cy="60" r="1" fill="#E5E9F0" opacity="0.6"/>
+</svg>

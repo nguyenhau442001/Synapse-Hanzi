@@ -1,0 +1,15 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 120)">
+    <!-- Candle Body -->
+    <rect x="-12" y="-40" width="24" height="80" rx="4" fill="#E63946"/>
+    <!-- Candle Wick -->
+    <rect x="-1" y="-50" width="2" height="10" fill="#2D3436"/>
+    <!-- Flame -->
+    <path d="M0 -50 C -15 -70, -15 -90, 0 -100 C 15 -90, 15 -70, 0 -50 Z" fill="#FFB703"/>
+    <path d="M0 -55 C -8 -70, -8 -85, 0 -92 C 8 -85, 8 -70, 0 -55 Z" fill="#FB8500"/>
+    <!-- Wax Drip -->
+    <path d="M-12 0 Q -18 5, -12 10 Q -6 5, -12 0" fill="#E63946"/>
+    <path d="M12 -10 Q 18 -5, 12 0 Q 6 -5, 12 -10" fill="#E63946"/>
+  </g>
+</svg>

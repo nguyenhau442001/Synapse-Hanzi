@@ -263,7 +263,7 @@ body:not(.home-screen) .continue-learning-card { display: none; }
 
 .dashboard-sidebar-card,
 .workstation-left > .hw-card {
-  min-width: 0; padding: 18px 20px; border: 1px solid var(--border);
+  min-width: 0; padding: 18px 20px 22px; border: 1px solid var(--border);
   border-radius: var(--radius-lg); background: var(--card-bg); box-shadow: var(--card-shadow); color: var(--text-primary);
 }
 :root[data-theme="dark"] .workstation-left .dashboard-sidebar-card,
@@ -468,8 +468,9 @@ body:not(.home-screen) .continue-learning-card { display: none; }
   align-items: center !important;
   justify-content: center !important;
   width: 100% !important;
-  min-height: 44px !important;
-  margin-top: 14px !important;
+  min-height: 46px !important;
+  margin-top: 16px !important;
+  margin-bottom: 2px !important;
   font-size: 13.5px !important;
   font-weight: 700 !important;
   border-radius: 12px !important;
@@ -1440,7 +1441,7 @@ body.home-screen .featured-topics {
   body.home-screen .workstation-left > .sidebar-search { flex: 0 0 auto; }
   body.home-screen .workstation-left > .common-radicals-card { flex: 0 0 auto; }
   body.home-screen .workstation-left > .radical-tip-card { flex: 0 0 auto; }
-  body.home-screen .workstation-left > #hwForgotten { flex: 0 0 auto; }
+  body.home-screen .workstation-left > #hwForgotten { flex: 0 0 auto; margin-bottom: 8px; }
   body.home-screen .workstation-left > #hwForgotten .hw-forgot-empty {
     display: flex;
     flex-direction: column;

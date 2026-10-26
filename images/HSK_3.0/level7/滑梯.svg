@@ -1,0 +1,17 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Slide Structure -->
+  <path d="M160 160 L160 190 L200 190 L200 160 Z" fill="#4A5568"/> <!-- Base support -->
+  <path d="M60 100 L160 160 L170 150 L70 90 Z" fill="#E53E3E"/> <!-- Side panel -->
+  <path d="M70 90 L170 150 L185 135 L85 75 Z" fill="#F6AD55"/> <!-- Slide surface -->
+  <path d="M85 75 L185 135 L195 125 L95 65 Z" fill="#FBD38D"/> <!-- Top edge -->
+  
+  <!-- Ladder -->
+  <path d="M65 105 L75 160 M75 100 L85 155" stroke="#A0AEC0" stroke-width="4" stroke-linecap="round"/>
+  <path d="M68 120 L78 115 M72 135 L82 130 M76 150 L86 145" stroke="#A0AEC0" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Child character -->
+  <circle cx="95" cy="70" r="12" fill="#63B3ED"/>
+  <path d="M95 82 L95 105 M95 90 L85 100 M95 90 L105 100 M95 105 L90 120 M95 105 L100 120" stroke="#63B3ED" stroke-width="6" stroke-linecap="round"/>
+</svg>

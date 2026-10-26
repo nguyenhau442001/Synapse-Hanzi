@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Roads/Paths representing the main route -->
+  <!-- Diverging paths to show "extra detour" (grayed out) vs "smooth alignment" -->
+  <path d="M40 180 C90 180, 100 120, 150 120 C180 120, 200 90, 210 60" fill="none" stroke="#2A2F3D" stroke-width="6" stroke-linecap="round" stroke-dasharray="4 4"/>
+  <path d="M40 180 C90 180, 110 180, 150 140 C175 115, 185 80, 210 60" fill="none" stroke="#2A2F3D" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Main Highlighted Route (顺路 - On the way, perfectly aligned) -->
+  <path d="M40 180 C90 180, 120 180, 160 130 C185 100, 195 80, 210 60" fill="none" stroke="#FF9F43" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Destination Marker 1 (Library / Stop point on the way) -->
+  <g transform="translate(135, 140)">
+    <circle cx="0" cy="0" r="10" fill="#3B82F6"/>
+    <path d="M-4 3 L-4 -2 L0 -5 L4 -2 L4 3 Z" fill="#FFFFFF"/>
+    <rect x="-3" y="1" width="6" height="3" fill="#3B82F6"/>
+  </g>
+
+  <!-- Final Destination Marker (End of commute) -->
+  <g transform="translate(210, 50)">
+    <path d="M0 -12 C-5 -12, -9 -8, -9 -3 C-9 3, 0 10, 0 10 C0 10, 9 3, 9 -3 C9 -8, 5 -12, 0 -12 Z" fill="#FF5252"/>
+    <circle cx="0" cy="-4" r="3.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Car representing the driver/journey -->
+  <g transform="translate(110, 155) rotate(-35)">
+    <!-- Car body -->
+    <rect x="-14" y="-8" width="28" height="14" rx="4" fill="#38BDF8"/>
+    <!-- Car cabin roof -->
+    <path d="M-6 -8 L-3 -14 L6 -14 L9 -8 Z" fill="#0EA5E9"/>
+    <!-- Headlights -->
+    <circle cx="13" cy="-4" r="1.5" fill="#FEF08A"/>
+    <circle cx="13" cy="2" r="1.5" fill="#FEF08A"/>
+    <!-- Wheels -->
+    <circle cx="-8" cy="7" r="3" fill="#111827"/>
+    <circle cx="8" cy="7" r="3" fill="#111827"/>
+  </g>
+
+  <!-- Passenger waiting at the stop (Contrasting scale/position showing smooth alignment) -->
+  <g transform="translate(125, 125)">
+    <!-- Body/Torso -->
+    <circle cx="0" cy="-8" r="4.5" fill="#F472B6"/>
+    <path d="M-5 1 C-5 -3, 5 -3, 5 1 L4 12 L-4 12 Z" fill="#DB2777"/>
+    <!-- Friendly waving hand gesture -->
+    <circle cx="5" cy="-2" r="2" fill="#F472B6"/>
+  </g>
+
+  <!-- Visual contrast indicator: Arrow cleanly merging into the path (Highlighting the "convenient alignment" concept) -->
+  <path d="M70 160 L90 170 L85 150" fill="none" stroke="#FF9F43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Sparkle/Accent denoting synergy and convenience -->
+  <path d="M165 95 L168 102 L175 105 L168 108 L165 115 L162 108 L155 105 L162 102 Z" fill="#FEF08A"/>
+  <path d="M85 90 L87 94 L91 96 L87 98 L85 102 L83 98 L79 96 L83 94 Z" fill="#38BDF8" opacity="0.6"/>
+
+</svg>

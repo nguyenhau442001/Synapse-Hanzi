@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(30, 30)">
+    <!-- Scientific Grid / Blueprint background lines -->
+    <line x1="0" y1="60" x2="180" y2="60" stroke="#2A313C" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="0" y1="120" x2="180" y2="120" stroke="#2A313C" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="60" y1="0" x2="60" y2="180" stroke="#2A313C" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="120" y1="0" x2="120" y2="180" stroke="#2A313C" stroke-width="1" stroke-dasharray="3,3"/>
+
+    <!-- Microscopic / Academic Structure (The Theoretical Framework) -->
+    <!-- Node 1 -->
+    <circle cx="30" cy="40" r="8" fill="#3B82F6"/>
+    <!-- Node 2 -->
+    <circle cx="150" cy="40" r="8" fill="#3B82F6"/>
+    <!-- Node 3 -->
+    <circle cx="30" cy="140" r="8" fill="#3B82F6"/>
+    <!-- Node 4 -->
+    <circle cx="150" cy="140" r="8" fill="#3B82F6"/>
+
+    <!-- Connections around the gap -->
+    <line x1="38" y1="40" x2="70" y2="40" stroke="#3B82F6" stroke-width="4" stroke-linecap="round"/>
+    <line x1="110" y1="40" x2="142" y2="40" stroke="#3B82F6" stroke-width="4" stroke-linecap="round"/>
+    
+    <line x1="30" y1="48" x2="30" y2="132" stroke="#3B82F6" stroke-width="4" stroke-linecap="round"/>
+    <line x1="150" y1="48" x2="150" y2="90" stroke="#3B82F6" stroke-width="4" stroke-linecap="round"/>
+    <line x1="150" y1="110" x2="150" y2="132" stroke="#3B82F6" stroke-width="4" stroke-linecap="round"/>
+
+    <line x1="38" y1="140" x2="90" y2="140" stroke="#3B82F6" stroke-width="4" stroke-linecap="round"/>
+    <line x1="110" y1="140" x2="142" y2="140" stroke="#3B82F6" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Dashed outline showing the "Gap" (空白) in the upper right/center -->
+    <rect x="75" y="25" width="30" height="30" rx="4" fill="none" stroke="#64748B" stroke-width="2" stroke-dasharray="4,4"/>
+
+    <!-- The exact physical piece filling the gap ("填补" - filling the puzzle/void) -->
+    <g transform="translate(72, 22)">
+      <rect x="3" y="3" width="30" height="30" rx="4" fill="#F59E0B" opacity="0.9"/>
+      <circle cx="18" cy="18" r="6" fill="#1A1D24"/>
+      <!-- Glowing highlights indicating successful integration -->
+      <path d="M 0 15 L 0 5 C 0 3.895 0.895 3 2 3 L 12 3" fill="none" stroke="#FBD38D" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Additional structural bridge piece at the bottom gap -->
+    <g transform="translate(90, 125)">
+      <rect x="0" y="0" width="20" height="30" rx="4" fill="#F59E0B"/>
+      <line x1="10" y1="8" x2="10" y2="22" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    
+    <!-- Focus rays / precision action lines -->
+    <path d="M 115 20 L 125 10" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 65 20 L 55 10" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

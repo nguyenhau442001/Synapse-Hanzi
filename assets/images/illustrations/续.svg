@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Table Surface -->
+  <rect x="20" y="180" width="200" height="15" fill="#2D343E" rx="4"/>
+  
+  <!-- Teapot -->
+  <path d="M145 110 C145 90, 165 80, 185 80 C205 80, 220 95, 220 120 C220 145, 205 160, 185 160 C165 160, 145 150, 145 130" fill="#FFB84D"/>
+  <path d="M145 100 L130 90 L130 140 L145 130" fill="#FFB84D"/>
+  <path d="M210 100 C230 100, 235 120, 225 130" fill="none" stroke="#FFB84D" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Teacup -->
+  <path d="M60 140 L120 140 L110 180 L70 180 Z" fill="#E0E6ED"/>
+  
+  <!-- Tea Stream (The action of "续" - refilling) -->
+  <path d="M145 120 C130 120, 110 130, 100 145" fill="none" stroke="#FFB84D" stroke-width="6" stroke-linecap="round" stroke-dasharray="4 6"/>
+  
+  <!-- Tea inside cup -->
+  <ellipse cx="90" cy="140" rx="30" ry="8" fill="#FFB84D"/>
+  
+  <!-- Hand holding teapot -->
+  <path d="M160 110 C160 100, 170 95, 180 95 C190 95, 195 105, 195 115" fill="#A8B3C0"/>
+  <rect x="185" y="100" width="10" height="30" rx="2" fill="#A8B3C0" transform="rotate(10 190 115)"/>
+</svg>

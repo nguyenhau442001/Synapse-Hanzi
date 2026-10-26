@@ -1,0 +1,40 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Construction Site Elements -->
+  <path d="M40 180 L200 180" stroke="#333842" stroke-width="4" stroke-dasharray="8 8"/>
+  <rect x="160" y="100" width="30" height="80" fill="#2A2F3A"/>
+  <rect x="170" y="80" width="10" height="20" fill="#2A2F3A"/>
+  
+  <!-- Character Body -->
+  <g transform="translate(100, 120)">
+    <!-- Legs -->
+    <rect x="-15" y="40" width="10" height="20" fill="#4A5568"/>
+    <rect x="5" y="40" width="10" height="20" fill="#4A5568"/>
+    
+    <!-- Torso -->
+    <rect x="-20" y="-10" width="40" height="50" rx="4" fill="#2A2F3A"/>
+    
+    <!-- The "显眼" (High-Visibility) Vest -->
+    <rect x="-22" y="-8" width="44" height="46" rx="4" fill="#FFD700"/>
+    <rect x="-18" y="0" width="36" height="6" fill="#1A1D24"/>
+    <rect x="-18" y="12" width="36" height="6" fill="#1A1D24"/>
+    <rect x="-18" y="24" width="36" height="6" fill="#1A1D24"/>
+    
+    <!-- Arms in motion -->
+    <path d="M-25 10 L-45 30" stroke="#4A5568" stroke-width="8" stroke-linecap="round"/>
+    <path d="M25 10 L45 30" stroke="#4A5568" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Head -->
+    <circle cx="0" cy="-30" r="15" fill="#E2E8F0"/>
+    <rect x="-18" y="-45" width="36" height="8" rx="2" fill="#FF9F1C"/>
+  </g>
+  
+  <!-- Motion/Visibility Lines -->
+  <g stroke="#FFD700" stroke-width="2" stroke-linecap="round" opacity="0.6">
+    <line x1="60" y1="100" x2="80" y2="100"/>
+    <line x1="50" y1="120" x2="75" y2="120"/>
+    <line x1="160" y1="100" x2="180" y2="100"/>
+    <line x1="165" y1="120" x2="190" y2="120"/>
+  </g>
+</svg>

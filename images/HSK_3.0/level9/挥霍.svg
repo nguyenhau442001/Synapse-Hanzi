@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Hand throwing coins -->
+  <g transform="translate(60, 60)">
+    <!-- Arm -->
+    <path d="M120 120 L160 80 L180 100 L140 140 Z" fill="#FFB74D"/>
+    <!-- Hand -->
+    <path d="M120 120 C110 110 100 110 90 120 L80 110 C90 90 110 90 120 100 Z" fill="#FFCC80"/>
+    
+    <!-- Falling Coins -->
+    <circle cx="70" cy="130" r="12" fill="#FFD700"/>
+    <circle cx="50" cy="150" r="10" fill="#FFD700"/>
+    <circle cx="30" cy="170" r="8" fill="#FFD700"/>
+    <circle cx="90" cy="140" r="14" fill="#FFD700"/>
+    
+    <!-- Motion lines -->
+    <path d="M80 120 L60 140" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
+    <path d="M70 130 L50 150" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Empty Wallet/Purse base -->
+  <path d="M60 180 L180 180 L170 210 L70 210 Z" fill="#455A64"/>
+  <path d="M65 180 L175 180 L165 205 L75 205 Z" fill="#263238"/>
+  <path d="M70 180 L170 180" stroke="#546E7A" stroke-width="4"/>
+</svg>

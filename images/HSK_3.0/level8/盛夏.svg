@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background glow for blazing sun -->
+  <circle cx="120" cy="110" r="75" fill="#FF8800" opacity="0.15"/>
+  <circle cx="120" cy="110" r="55" fill="#FF8800" opacity="0.25"/>
+
+  <!-- Blazing Summer Sun -->
+  <circle cx="120" cy="110" r="36" fill="#FFB703"/>
+
+  <!-- Sun Rays (Peak Summer Heat) -->
+  <g stroke="#FFB703" stroke-width="4" stroke-linecap="round">
+    <line x1="120" y1="56" x2="120" y2="42" />
+    <line x1="120" y1="164" x2="120" y2="178" />
+    <line x1="66" y1="110" x2="52" y2="110" />
+    <line x1="174" y1="110" x2="188" y2="110" />
+    <line x1="82" y1="72" x2="72" y2="62" />
+    <line x1="158" y1="148" x2="168" y2="158" />
+    <line x1="158" y1="72" x2="168" y2="62" />
+    <line x1="82" y1="148" x2="72" y2="158" />
+  </g>
+
+  <!-- Lush Green Foliage Overhang (representing Peak Summer / Mid-summer vitality) -->
+  <path d="M 0 0 L 240 0 L 240 45 C 200 40 180 65 140 55 C 100 45 80 25 40 40 C 20 48 10 35 0 40 Z" fill="#2D6A4F"/>
+  <path d="M 0 0 L 240 0 L 240 30 C 210 25 195 45 165 38 C 135 30 115 15 85 28 C 55 40 35 20 0 25 Z" fill="#40916C" opacity="0.7"/>
+
+  <!-- Foliage details (Leaves) -->
+  <path d="M 140 55 Q 155 70 170 55 Q 185 40 165 38 Z" fill="#52B788"/>
+  <path d="M 75 35 Q 90 50 105 40 Q 120 30 100 25 Z" fill="#52B788"/>
+
+  <!-- Ground / Mountain silhouette at the bottom representing the cool valley contrast -->
+  <path d="M 0 240 L 0 200 C 40 190 70 215 120 205 C 170 195 200 200 240 190 L 240 240 Z" fill="#1B4332"/>
+  <path d="M 0 240 L 0 215 C 60 205 90 225 150 210 C 200 198 220 220 240 210 L 240 240 Z" fill="#081C15"/>
+
+  <!-- Thriving Lush Plant in Full Summer -->
+  <g transform="translate(120, 205)">
+    <!-- Stem -->
+    <path d="M 0 0 C -2 -15 -5 -25 0 -40" stroke="#52B788" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- Leaves -->
+    <path d="M 0 -20 C -15 -25 -25 -10 -15 0 C -10 5 0 0 0 -20 Z" fill="#52B788"/>
+    <path d="M 0 -30 C 15 -35 25 -20 15 -10 C 10 -5 0 -10 0 -30 Z" fill="#74C69D"/>
+    <path d="M 0 -40 C -10 -55 -25 -45 -15 -30 C -10 -25 0 -30 0 -40 Z" fill="#52B788"/>
+  </g>
+</svg>

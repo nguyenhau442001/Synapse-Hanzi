@@ -1,0 +1,58 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(30, 25)">
+    <!-- Fence / Enclosure Structure (Back Bars) -->
+    <rect x="35" y="80" width="8" height="60" rx="2" fill="#4A5568"/>
+    <rect x="75" y="80" width="8" height="60" rx="2" fill="#4A5568"/>
+    <rect x="115" y="80" width="8" height="60" rx="2" fill="#4A5568"/>
+    <rect x="155" y="80" width="8" height="60" rx="2" fill="#4A5568"/>
+
+    <!-- Horizontal Rails -->
+    <rect x="25" y="95" width="140" height="6" rx="2" fill="#718096"/>
+    <rect x="25" y="125" width="140" height="6" rx="2" fill="#718096"/>
+
+    <!-- Broken section on the left indicating the missing part / breach -->
+    <path d="M 45 95 L 35 110 L 45 125" stroke="#1A1D24" stroke-width="4" fill="none"/>
+
+    <!-- The Repaired / Fixed Section (Highlighted with Amber/Gold Accent) -->
+    <g transform="translate(15, 0)">
+      <!-- New vertical pillar being fixed -->
+      <rect x="15" y="75" width="10" height="68" rx="2" fill="#F6AD55"/>
+      <!-- Crossbars for the fixed segment -->
+      <rect x="10" y="93" width="30" height="8" rx="2" fill="#DD6B20"/>
+      <rect x="10" y="123" width="30" height="8" rx="2" fill="#DD6B20"/>
+      <!-- Metallic brackets / reinforcement -->
+      <rect x="12" y="85" width="14" height="6" rx="1" fill="#CBD5E0"/>
+      <rect x="12" y="135" width="14" height="6" rx="1" fill="#CBD5E0"/>
+    </g>
+
+    <!-- Wrench / Fixing Tool element -->
+    <g transform="translate(25, 115) rotate(-35)">
+      <path d="M 0 0 L 25 -8 L 30 -2 L 5 12 Z" fill="#E2E8F0"/>
+      <circle cx="28" cy="-5" r="5" fill="#1A1D24"/>
+      <rect x="-8" y="-2" width="12" height="6" rx="3" fill="#CBD5E0"/>
+    </g>
+
+    <!-- Stylized Sheep (Safe inside the pen) -->
+    <g transform="translate(95, 100)">
+      <!-- Body -->
+      <ellipse cx="25" cy="20" rx="18" ry="14" fill="#EDF2F7"/>
+      <!-- Wool puffs -->
+      <circle cx="15" cy="12" r="8" fill="#F7FAFC"/>
+      <circle cx="25" cy="9" r="9" fill="#F7FAFC"/>
+      <circle cx="35" cy="13" r="8" fill="#F7FAFC"/>
+      <circle cx="38" cy="22" r="7" fill="#F7FAFC"/>
+      <circle cx="14" cy="22" r="7" fill="#F7FAFC"/>
+      <!-- Head -->
+      <ellipse cx="8" cy="17" rx="6" ry="7" fill="#CBD5E0"/>
+      <!-- Ears -->
+      <ellipse cx="4" cy="12" rx="2" ry="4" fill="#CBD5E0" transform="rotate(-20 4 12)"/>
+      <!-- Legs -->
+      <rect x="18" y="30" width="3" height="10" rx="1.5" fill="#CBD5E0"/>
+      <rect x="30" y="30" width="3" height="10" rx="1.5" fill="#CBD5E0"/>
+    </g>
+
+    <!-- Ground Line -->
+    <rect x="15" y="140" width="150" height="6" rx="3" fill="#2D3748"/>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Mountain Lake Scene -->
+  <!-- Background Mountain Silhouette -->
+  <path d="M40 180 L120 80 L200 180 Z" fill="#2C3440"/>
+  
+  <!-- Lake Surface (The "Crystal Mirror") -->
+  <rect x="40" y="180" width="160" height="20" fill="#2A5C82"/>
+  
+  <!-- Reflection in the water -->
+  <path d="M40 200 L120 100 L200 200 Z" fill="#1E4059" opacity="0.6"/>
+  
+  <!-- Perfectly still surface line -->
+  <line x1="40" y1="180" x2="200" y2="180" stroke="#7FB3D5" stroke-width="2"/>
+  
+  <!-- The "Still" Object: A single, perfectly upright, motionless stone cairn -->
+  <g transform="translate(120, 180)">
+    <ellipse cx="0" cy="-10" rx="15" ry="10" fill="#AAB7B8"/>
+    <ellipse cx="0" cy="-25" rx="12" ry="8" fill="#BDC3C7"/>
+    <ellipse cx="0" cy="-37" rx="9" ry="6" fill="#D5DBDB"/>
+  </g>
+  
+  <!-- Accent highlight for focus -->
+  <circle cx="120" cy="143" r="2" fill="#F39C12"/>
+</svg>

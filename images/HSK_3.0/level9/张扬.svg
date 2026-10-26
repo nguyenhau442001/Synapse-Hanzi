@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(40, 40)">
+    <!-- Character representing 'Zhangyang' (Phô trương) -->
+    <!-- A figure standing on a pedestal, arms wide open, wearing a vibrant, oversized, flamboyant golden cape -->
+    <path d="M120 180 C 120 180 160 180 160 180 L 150 140 L 90 140 L 80 180 Z" fill="#3D4451"/>
+    <path d="M100 140 L 140 140 L 130 80 L 110 80 Z" fill="#E6E6E6"/>
+    <circle cx="120" cy="65" r="15" fill="#FFD700"/>
+    
+    <!-- The flamboyant cape -->
+    <path d="M105 80 L 30 100 L 80 150 L 105 100 Z" fill="#FF9500"/>
+    <path d="M135 80 L 210 100 L 160 150 L 135 100 Z" fill="#FF9500"/>
+    
+    <!-- Arms stretched out wide -->
+    <path d="M110 90 L 50 110" stroke="#E6E6E6" stroke-width="8" stroke-linecap="round"/>
+    <path d="M130 90 L 190 110" stroke="#E6E6E6" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Spotlight effect -->
+    <path d="M120 20 L 60 180 L 180 180 Z" fill="#FFD700" opacity="0.15"/>
+  </g>
+</svg>

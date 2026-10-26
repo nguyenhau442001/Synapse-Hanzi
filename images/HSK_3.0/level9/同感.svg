@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(40, 60)">
+    <!-- Person A (Speaker/Professor) -->
+    <g transform="translate(0, 0)">
+      <circle cx="30" cy="30" r="20" fill="#FFB84D"/>
+      <path d="M15 60 Q30 80 45 60 L45 120 L15 120 Z" fill="#FFB84D"/>
+      <path d="M20 70 L40 70" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <!-- Person B (Listener) -->
+    <g transform="translate(100, 0)">
+      <circle cx="30" cy="30" r="20" fill="#4D94FF"/>
+      <path d="M15 60 Q30 80 45 60 L45 120 L15 120 Z" fill="#4D94FF"/>
+      <path d="M20 70 L40 70" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <!-- Visualizing "Same Feeling" (Synchronized Nod/Gesture) -->
+    <path d="M55 40 L85 40" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+    <path d="M65 30 L55 40 L65 50" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M75 30 L85 40 L75 50" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

@@ -68,26 +68,68 @@ def get_api_keys(cli_arg=""):
     return keys
 
 MODELS_TO_TRY = [
-    "gemini-flash-lite-latest",
     "gemini-2.5-flash",
-    "gemini-3.5-flash-lite",
-    "gemini-3.1-flash-lite-preview",
-    "gemini-3.1-flash-lite",
-    "gemini-3.6-flash",
-    "gemini-3.5-flash",
-    "gemini-3.8-flash",
-    "gemini-3-flash-preview",
     "gemini-flash-latest",
+    "gemini-3.5-flash",
+    "gemini-3.6-flash",
+    "gemini-3.7-flash",
+    "gemini-3.8-flash",
+    "gemini-flash-lite-latest",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite",
+    "gemini-3.1-flash-lite-preview",
 ]
 
 
+def log_ts(msg):
+    ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    s = str(msg)
+    if s.startswith("\n"):
+        print(f"\n[{ts}] {s[1:]}", flush=True)
+    else:
+        print(f"[{ts}] {s}", flush=True)
+
 MODEL_COOLDOWNS = {}      # (k_idx, model) -> float timestamp when cooldown expires
 PERMANENT_EXHAUSTED = set() # (k_idx, model) -> only for daily quota or 404/400
+RENEW_TIMESTAMPS = []       # list of float timestamps when quota renews
+ABORT_EVENT = threading.Event() # Set when all models are exhausted to immediately stop all workers
+
+def extract_retry_delay(err_body):
+    try:
+        data = json.loads(err_body)
+        for d in data.get("error", {}).get("details", []):
+            if "retryDelay" in d:
+                m = re.match(r"^(\d+)", str(d["retryDelay"]))
+                if m:
+                    return int(m.group(1))
+    except Exception:
+        pass
+    m = re.search(r"retry in\s+(?:(\d+)h)?\s*(?:(\d+)m)?\s*(?:([0-9.]+)s)?", err_body, re.IGNORECASE)
+    if m:
+        h = int(m.group(1) or 0)
+        minutes = int(m.group(2) or 0)
+        secs = float(m.group(3) or 0)
+        return int(h * 3600 + minutes * 60 + secs)
+    return None
 
 def all_models_permanently_exhausted(api_keys):
     with exhausted_lock:
         total_possible = len(api_keys) * len(MODELS_TO_TRY)
         return len(PERMANENT_EXHAUSTED) >= total_possible
+
+def report_exhausted_and_renew():
+    with exhausted_lock:
+        best_renew = min(RENEW_TIMESTAMPS) if RENEW_TIMESTAMPS else (time.time() + 20 * 3600)
+    renew_dt = datetime.fromtimestamp(best_renew).strftime("%Y-%m-%d %H:%M:%S")
+    diff_secs = max(0, int(best_renew - time.time()))
+    h = diff_secs // 3600
+    m = (diff_secs % 3600) // 60
+    s = diff_secs % 60
+    log_ts("==================================================================")
+    log_ts("[!] TẤT CẢ CÁC MODEL FLASH ĐÃ CHẠM TRẦN DAILY QUOTA CỦA GOOGLE.")
+    log_ts(f"[*] THỜI GIAN DỰ KIẾN GOOGLE RENEW QUOTA: {renew_dt} (sau {h}h {m}m {s}s).")
+    log_ts("[*] Đã lưu manifest & dừng tiến trình an toàn.")
+    log_ts("==================================================================")
 
 def is_model_available(k_idx, model):
     with exhausted_lock:
@@ -96,13 +138,23 @@ def is_model_available(k_idx, model):
         cooldown = MODEL_COOLDOWNS.get((k_idx, model), 0)
         return time.time() >= cooldown
 
-def mark_model_throttled(k_idx, model, is_daily=False, seconds=6):
+def mark_model_throttled(k_idx, model, is_daily=False, seconds=6, retry_delay=None, api_keys=None):
     with exhausted_lock:
         if is_daily:
             PERMANENT_EXHAUSTED.add((k_idx, model))
-            print(f"        [>>> PERMANENT DAILY LIMIT] Key #{k_idx+1} on {model} reached daily quota.", flush=True)
+            if retry_delay and retry_delay > 0:
+                renew_ts = time.time() + retry_delay
+                RENEW_TIMESTAMPS.append(renew_ts)
+                dt_str = datetime.fromtimestamp(renew_ts).strftime("%Y-%m-%d %H:%M:%S")
+                rem_h = retry_delay / 3600
+                log_ts(f"        [>>> DAILY LIMIT] Key #{k_idx+1} on {model} chạm trần ngày. Renew lúc: {dt_str} (~{rem_h:.1f}h nữa)")
+            else:
+                log_ts(f"        [>>> DAILY LIMIT] Key #{k_idx+1} on {model} chạm trần ngày.")
         else:
             MODEL_COOLDOWNS[(k_idx, model)] = time.time() + seconds
+
+        if api_keys and len(PERMANENT_EXHAUSTED) >= len(api_keys) * len(MODELS_TO_TRY):
+            ABORT_EVENT.set()
 
 def load_hsk_pos_db():
     """Loads exact part of speech dictionary from word-illustrations.js."""
@@ -175,7 +227,7 @@ def load_level_data(file_path):
             data = json.load(f)
             return data if isinstance(data, list) else []
     except Exception as e:
-        print(f"[!] Error loading {file_path}: {e}", flush=True)
+        log_ts(f"[!] Error loading {file_path}: {e}")
         return []
 
 def ensure_directory_structure():
@@ -202,7 +254,7 @@ def build_manifest_and_organize():
     Updates assets/js/word-illustrations.js.
     """
     ensure_directory_structure()
-    print("[*] Building illustration organization and manifest under images/...", flush=True)
+    log_ts("[*] Building illustration organization and manifest under images/...")
 
     hsk2_curriculum = [(f"level{i}", VOCAB_DIR / f"hsk{i}_vocabularies.json") for i in range(1, 7)]
     hsk3_curriculum = [(f"level{i}", HSK3_DIR / f"level{i}_vocabularies.json") for i in range(1, 10)]
@@ -326,7 +378,7 @@ def build_manifest_and_organize():
     # Update assets/js/word-illustrations.js
     update_word_illustrations_js(manifest_entries)
 
-    print(f"[*] Manifest and images/ organization built successfully. Total indexed: {len(manifest_entries)} words.", flush=True)
+    log_ts(f"[*] Manifest and images/ organization built successfully. Total indexed: {len(manifest_entries)} words.")
     return manifest_data
 
 def generate_readme_markdown(stats_hsk2, stats_hsk3, total_unique):
@@ -423,7 +475,7 @@ images/
 | Cấp độ | Đã có hình / Tổng từ | Tỷ lệ | Tiến độ trực quan | Trạng thái |
 | :--- | :---: | :---: | :--- | :--- |
 {chr(10).join(hsk3_rows)}
-| **TỔNG CỘNG HSK 3.0** | **`{total_hsk3_svg}/{total_hsk3_words}`** | **`{hsk3_pct:.1f}%`** | `{make_progress_bar(f'{hsk3_pct:.1f}%')}` | ⏳ Đang hoàn thiện |
+| **TỔNG CỘNG HSK 3.0** | **`{total_hsk3_svg}/{total_hsk3_words}`** | **`{hsk3_pct:.1f}%`** | `{make_progress_bar(f'{hsk3_pct:.1f}%')}` | {'✅ Đầy đủ' if hsk3_pct == 100 else '⏳ Đang hoàn thiện'} |
 
 ---
 
@@ -524,8 +576,8 @@ GENERAL CONSTRAINTS:
 
     rotated_models = MODELS_TO_TRY[model_offset % len(MODELS_TO_TRY):] + MODELS_TO_TRY[:model_offset % len(MODELS_TO_TRY)]
 
-    for attempt in range(10):
-        if all_models_permanently_exhausted(api_keys):
+    for attempt in range(4):
+        if ABORT_EVENT.is_set() or all_models_permanently_exhausted(api_keys):
             return None
 
         available_pairs = []
@@ -535,12 +587,14 @@ GENERAL CONSTRAINTS:
                     available_pairs.append((k_idx, key, model))
 
         if not available_pairs:
-            if all_models_permanently_exhausted(api_keys):
+            if ABORT_EVENT.is_set() or all_models_permanently_exhausted(api_keys):
                 return None
-            time.sleep(3)
+            time.sleep(2)
             continue
 
         for k_idx, key, model in available_pairs:
+            if ABORT_EVENT.is_set():
+                return None
             url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
             try:
                 req = urllib.request.Request(
@@ -562,40 +616,45 @@ GENERAL CONSTRAINTS:
                                     return svg_str
             except urllib.error.HTTPError as he:
                 err_body = he.read().decode("utf-8", errors="ignore")
+                retry_delay = extract_retry_delay(err_body)
                 if he.code == 429:
-                    is_daily = "limit: 500" in err_body.lower() or "limit: 20" in err_body.lower() or "per day" in err_body.lower() or "perday" in err_body.lower() or "daily" in err_body.lower()
-                    mark_model_throttled(k_idx, model, is_daily=is_daily, seconds=5)
+                    err_lower = err_body.lower()
+                    is_daily = (retry_delay and retry_delay > 180) or (("requestsperday" in err_lower or "per day" in err_lower or "requests_per_day" in err_lower or "limit: 20" in err_lower or "limit: 500" in err_lower) and ("quota exceeded" in err_lower or "limit" in err_lower) and not ("perminute" in err_lower or "per minute" in err_lower))
+                    if is_daily:
+                        mark_model_throttled(k_idx, model, is_daily=True, retry_delay=retry_delay, api_keys=api_keys)
+                    else:
+                        mark_model_throttled(k_idx, model, is_daily=False, seconds=12, api_keys=api_keys)
                     continue
                 elif he.code in (404, 400):
-                    mark_model_throttled(k_idx, model, is_daily=True)
+                    mark_model_throttled(k_idx, model, is_daily=True, api_keys=api_keys)
                     continue
                 elif he.code == 503:
-                    mark_model_throttled(k_idx, model, is_daily=False, seconds=3)
+                    mark_model_throttled(k_idx, model, is_daily=False, seconds=5, api_keys=api_keys)
                     continue
                 else:
                     continue
             except Exception:
                 continue
 
-        if attempt < 9:
+        if attempt < 3:
             time.sleep(2)
 
     return None
 
-def git_commit_and_push(batch_count, level_label):
+def git_commit_and_push(batch_count, level_label, no_commit=False, no_push=False):
+    if no_commit:
+        return
     try:
-        print(f"\n[>>> GIT] Committing and pushing batch of {batch_count} newly generated SVGs for {level_label} directly to main...", flush=True)
+        log_ts(f"\n[>>> GIT] Committing batch of {batch_count} newly generated SVGs for {level_label}...")
         subprocess.run(["git", "add", "images", "assets/images/illustrations", "generated_manifest.json", "README_ILLUSTRATIONS.md", "assets/js/word-illustrations.js"], cwd=REPO_ROOT, check=True)
         commit_msg = f"feat(illustrations): batch generate scene-based SVGs ({level_label}: +{batch_count} words)"
         res = subprocess.run(["git", "commit", "-m", commit_msg], cwd=REPO_ROOT, capture_output=True, text=True)
-        print(f"[>>> GIT] {res.stdout.strip()}", flush=True)
-        push_res = subprocess.run(["git", "push", "origin", "HEAD:main"], cwd=REPO_ROOT, capture_output=True, text=True)
-        if push_res.returncode != 0:
-            subprocess.run(["git", "pull", "--rebase", "origin", "main"], cwd=REPO_ROOT, capture_output=True, text=True)
+        log_ts(f"[>>> GIT] {res.stdout.strip()}")
+        if not no_push:
             push_res = subprocess.run(["git", "push", "origin", "HEAD:main"], cwd=REPO_ROOT, capture_output=True, text=True)
-        print(f"[>>> GIT] Push result: {push_res.stdout.strip() or push_res.stderr.strip() or 'OK'}", flush=True)
+            log_ts(f"[>>> GIT] Push result: {push_res.stdout.strip() or push_res.stderr.strip() or 'OK'}")
     except Exception as e:
-        print(f"[!] Warning git commit/push encountered error: {e}", flush=True)
+        log_ts(f"[!] Warning git commit/push encountered error: {e}")
 
 def main():
     parser = argparse.ArgumentParser(description="Master batch generator & organizer for all HSK 2.0 & HSK 3.0 levels")
@@ -605,20 +664,22 @@ def main():
     parser.add_argument("--batch-size", type=int, default=50, help="Commit and push every N generated items (default: 50)")
     parser.add_argument("--only-organize", action="store_true", help="Only reorganize existing SVGs, build manifest & README without generating new SVGs")
     parser.add_argument("--target-level", default="all", help="Target specific level (e.g., 'level3', 'level5', 'level6', 'all')")
+    parser.add_argument("--no-commit", action="store_true", help="Do not create git commits automatically")
+    parser.add_argument("--no-push", action="store_true", help="Do not push commits to remote repository")
     args = parser.parse_args()
 
     api_keys = get_api_keys(args.api_key.strip())
     if not api_keys and not args.only_organize:
-        print("[!] No Google AI API key found! Please set GOOGLE_AI_KEY or add to .api_key", flush=True)
+        log_ts("[!] No Google AI API key found! Please set GOOGLE_AI_KEY or add to .api_key")
         return
 
-    print(f"[*] Loaded {len(api_keys)} API key(s) for generation rotation. Concurrency: {args.concurrency} workers, Delay: {args.delay}s.", flush=True)
+    log_ts(f"[*] Loaded {len(api_keys)} API key(s) for generation rotation. Concurrency: {args.concurrency} workers, Delay: {args.delay}s.")
 
     # Step 1: Organization under images/
     manifest_data = build_manifest_and_organize()
 
     if args.only_organize:
-        print("[*] Reorganization completed successfully (--only-organize). Exiting.", flush=True)
+        log_ts("[*] Reorganization completed successfully (--only-organize). Exiting.")
         return
 
     # Step 2: Curriculum roadmap
@@ -648,19 +709,19 @@ def main():
     total_generated_session = 0
     batch_new_count = 0
 
-    print("\n==================================================================", flush=True)
-    print("  HSK Flashcards: Master Scene-Based Illustration Pipeline (HIGH SPEED)", flush=True)
-    print(f"  Target: images/HSK_2.0/level1..6 -> images/HSK_3.0/level1..9", flush=True)
-    print(f"  Concurrency: {args.concurrency} parallel workers | Delay: {args.delay}s", flush=True)
-    print(f"  Batch commit threshold: Every {args.batch_size} newly generated SVGs -> main", flush=True)
-    print("==================================================================\n", flush=True)
+    log_ts("\n==================================================================")
+    log_ts("  HSK Flashcards: Master Scene-Based Illustration Pipeline (HIGH SPEED)")
+    log_ts(f"  Target: images/HSK_2.0/level1..6 -> images/HSK_3.0/level1..9")
+    log_ts(f"  Concurrency: {args.concurrency} parallel workers | Delay: {args.delay}s")
+    log_ts(f"  Batch commit threshold: Every {args.batch_size} newly generated SVGs -> main")
+    log_ts("==================================================================\n")
 
     for level_label, lvl_code, schema_type, file_path in curriculum:
         words = load_level_data(file_path)
         if not words:
             continue
 
-        print(f"\n[*] Scanning {level_label} ({len(words)} words) from {file_path.name}...", flush=True)
+        log_ts(f"\n[*] Scanning {level_label} ({len(words)} words) from {file_path.name}...")
         level_new = 0
         level_skipped = 0
 
@@ -683,25 +744,27 @@ def main():
 
             missing_items.append((idx, item))
 
-        print(f"[*] {level_label}: {len(missing_items)} missing words to generate ({level_skipped} already exist). Spawning {args.concurrency} parallel workers...", flush=True)
+        log_ts(f"[*] {level_label}: {len(missing_items)} missing words to generate ({level_skipped} already exist). Spawning {args.concurrency} parallel workers...")
 
         if not missing_items:
-            print(f"[*] {level_label} is already 100% complete! Skipping to next level.", flush=True)
+            log_ts(f"[*] {level_label} is already 100% complete! Skipping to next level.")
             continue
 
         current_missing = missing_items
         pass_idx = 1
         while current_missing:
             if all_models_permanently_exhausted(api_keys):
-                print(f"[!] All candidate models reached their daily quota. Halting {level_label}.", flush=True)
+                report_exhausted_and_renew()
                 break
 
             if pass_idx > 1:
-                print(f"[*] {level_label} (Pass {pass_idx}): Retrying {len(current_missing)} uncompleted words...", flush=True)
+                log_ts(f"[*] {level_label} (Pass {pass_idx}): Retrying {len(current_missing)} uncompleted words...")
 
             failed_in_pass = []
 
             def process_word(task_info):
+                if ABORT_EVENT.is_set():
+                    return False
                 nonlocal batch_new_count, level_new, total_generated_session
                 orig_idx, item = task_info
                 hanzi = item.get("hanzi", "").strip()
@@ -737,7 +800,7 @@ def main():
                         level_new += 1
                         batch_new_count += 1
                         total_generated_session += 1
-                        print(f"    ✓ [{orig_idx}/{len(words)}] Generated '{hanzi}' ({pinyin} - {meaning[:22]}) [{len(svg_code)} B] (Total session: {total_generated_session})", flush=True)
+                        log_ts(f"    ✓ [{orig_idx}/{len(words)}] Generated '{hanzi}' ({pinyin} - {meaning[:22]}) [{len(svg_code)} B] (Total session: {total_generated_session})")
                         if batch_new_count >= args.batch_size:
                             batch_new_count = 0
                             should_commit = True
@@ -745,33 +808,45 @@ def main():
                     if should_commit:
                         with git_lock:
                             build_manifest_and_organize()
-                            git_commit_and_push(args.batch_size, level_label)
+                            git_commit_and_push(args.batch_size, level_label, no_commit=args.no_commit, no_push=args.no_push)
 
                     return True
                 else:
                     return False
 
-            with ThreadPoolExecutor(max_workers=args.concurrency) as executor:
-                futures = {executor.submit(process_word, task): task for task in current_missing}
-                for fut in as_completed(futures):
-                    t = futures[fut]
-                    try:
-                        ok = fut.result()
-                        if not ok:
-                            failed_in_pass.append(t)
-                    except Exception as e:
-                        print(f"[!] Worker exception: {e}", flush=True)
-                        failed_in_pass.append(t)
+            CHUNK_SIZE = 40
+            for chunk_idx in range(0, len(current_missing), CHUNK_SIZE):
+                if ABORT_EVENT.is_set() or all_models_permanently_exhausted(api_keys):
+                    break
+                chunk_items = current_missing[chunk_idx:chunk_idx + CHUNK_SIZE]
+                with ThreadPoolExecutor(max_workers=args.concurrency) as executor:
+                    futures = {executor.submit(process_word, task): task for task in chunk_items}
+                    for fut in as_completed(futures):
+                        t = futures[fut]
+                        try:
+                            ok = fut.result()
+                            if not ok and not ABORT_EVENT.is_set():
+                                failed_in_pass.append(t)
+                        except Exception as e:
+                            log_ts(f"[!] Worker exception: {e}")
+                            if not ABORT_EVENT.is_set():
+                                failed_in_pass.append(t)
+                if ABORT_EVENT.is_set() or all_models_permanently_exhausted(api_keys):
+                    break
+
+            if ABORT_EVENT.is_set() or all_models_permanently_exhausted(api_keys):
+                with git_lock:
+                    build_manifest_and_organize()
+                    if batch_new_count > 0:
+                        git_commit_and_push(batch_new_count, level_label, no_commit=args.no_commit, no_push=args.no_push)
+                report_exhausted_and_renew()
+                sys.exit(0)
 
             if not failed_in_pass:
                 break
 
-            if len(failed_in_pass) == len(current_missing) and all_models_permanently_exhausted(api_keys):
-                print(f"[!] All available models exhausted for today. Stopping at {level_label}.", flush=True)
-                break
-
             if len(failed_in_pass) == len(current_missing) and pass_idx >= 3:
-                print(f"[*] Stopping retries for {level_label} after 3 passes with {len(failed_in_pass)} pending words.", flush=True)
+                log_ts(f"[*] Stopping retries for {level_label} after 3 passes with {len(failed_in_pass)} pending words.")
                 break
 
             current_missing = failed_in_pass
@@ -782,18 +857,18 @@ def main():
         with git_lock:
             build_manifest_and_organize()
             if batch_new_count > 0:
-                git_commit_and_push(batch_new_count, level_label)
+                git_commit_and_push(batch_new_count, level_label, no_commit=args.no_commit, no_push=args.no_push)
                 batch_new_count = 0
 
-        print(f"[*] Completed {level_label}: {level_new} newly generated, {level_skipped} skipped.", flush=True)
+        log_ts(f"[*] Completed {level_label}: {level_new} newly generated, {level_skipped} skipped.")
 
-        if all_models_permanently_exhausted(api_keys):
-            print(f"\n[!] Daily quota across all models is exhausted for today. Exiting cleanly.", flush=True)
-            break
+        if ABORT_EVENT.is_set() or all_models_permanently_exhausted(api_keys):
+            report_exhausted_and_renew()
+            sys.exit(0)
 
-    print("\n==================================================================", flush=True)
-    print(f"[*] ALL LEVELS COMPLETED! Total newly generated: {total_generated_session}", flush=True)
-    print("==================================================================", flush=True)
+    log_ts("\n==================================================================")
+    log_ts(f"[*] ALL LEVELS COMPLETED! Total newly generated: {total_generated_session}")
+    log_ts("==================================================================")
 
 if __name__ == "__main__":
     main()

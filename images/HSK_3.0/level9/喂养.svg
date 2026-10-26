@@ -1,0 +1,82 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Bamboo shoot and fresh bamboo stalk (representing the high-mountain bamboo in context) -->
+    <g transform="translate(35, 125)">
+      <!-- Bamboo stalk back -->
+      <rect x="0" y="-30" width="12" height="70" rx="4" fill="#2E7D32"/>
+      <rect x="0" y="-10" width="12" height="4" fill="#1B5E20"/>
+      <rect x="0" y="30" width="12" height="4" fill="#1B5E20"/>
+      
+      <!-- Bamboo leaves -->
+      <path d="M 6 -20 Q 30 -40 45 -35 Q 25 -15 6 -10 Z" fill="#4CAF50"/>
+      <path d="M 6 10 Q -25 5 -35 -15 Q -10 -5 6 5 Z" fill="#4CAF50"/>
+      <path d="M 12 35 Q 35 50 40 70 Q 20 50 12 40 Z" fill="#4CAF50"/>
+    </g>
+
+    <!-- Fresh bamboo shoot being offered -->
+    <g transform="translate(130, 110) rotate(-25)">
+      <path d="M0,0 C10,-25 20,-30 25,-40 C15,-20 10,-10 -5,5 Z" fill="#81C784"/>
+      <path d="M-5,5 C5,-15 12,-20 18,-30 C10,-10 5,-5 -12,15 Z" fill="#A5D6A7"/>
+      <path d="M-12,15 C-2,0 3,-5 8,-15 C2,0 -5,10 -18,25 Z" fill="#C8E6C9"/>
+    </g>
+
+    <!-- Baby Panda Body & Head (Central iconic character for '喂养' context) -->
+    <g transform="translate(135, 115)">
+      <!-- Panda Body -->
+      <ellipse cx="0" cy="55" rx="42" ry="38" fill="#FFFFFF"/>
+      
+      <!-- Panda Arms reaching up happily -->
+      <ellipse cx="-32" cy="40" rx="14" ry="22" transform="rotate(25 -32 40)" fill="#212121"/>
+      <ellipse cx="28" cy="35" rx="14" ry="22" transform="rotate(-35 28 35)" fill="#212121"/>
+      
+      <!-- Panda Legs -->
+      <ellipse cx="-22" cy="85" rx="15" ry="12" fill="#212121"/>
+      <ellipse cx="22" cy="85" rx="15" ry="12" fill="#212121"/>
+
+      <!-- Panda Head -->
+      <circle cx="0" cy="15" rx="42" fill="#FFFFFF"/>
+      
+      <!-- Panda Ears -->
+      <circle cx="-32" cy="-15" rx="14" fill="#212121"/>
+      <circle cx="32" cy="-15" rx="14" fill="#212121"/>
+
+      <!-- Panda Eye Patches -->
+      <ellipse cx="-16" cy="10" rx="12" ry="16" transform="rotate(15 -16 10)" fill="#212121"/>
+      <ellipse cx="16" cy="10" rx="12" ry="16" transform="rotate(-15 16 10)" fill="#212121"/>
+      
+      <!-- Panda Eyes (sparkling white highlights) -->
+      <circle cx="-14" cy="8" rx="4" fill="#FFFFFF"/>
+      <circle cx="-13" cy="7" rx="1.5" fill="#212121"/>
+      <circle cx="18" cy="8" rx="4" fill="#FFFFFF"/>
+      <circle cx="19" cy="7" rx="1.5" fill="#212121"/>
+
+      <!-- Panda Nose and Happy Open Mouth -->
+      <ellipse cx="2" cy="20" rx="6" ry="4" fill="#212121"/>
+      <path d="M -4 26 Q 2 34 8 26" fill="none" stroke="#212121" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M 2 26 L 2 30" fill="none" stroke="#212121" stroke-width="2" stroke-linecap="round"/>
+      
+      <!-- Rosy Cheeks -->
+      <ellipse cx="-26" cy="22" rx="6" ry="4" fill="#FF8A80" opacity="0.6"/>
+      <ellipse cx="26" cy="22" rx="6" ry="4" fill="#FF8A80" opacity="0.6"/>
+    </g>
+
+    <!-- Professional Caretaker's Hands (representing 饲养员 nourishing/feeding action) -->
+    <!-- Left Hand supporting from below -->
+    <g transform="translate(100, 145)">
+      <path d="M0,15 C-15,15 -25,10 -35,0 C-40,-5 -35,-12 -25,-8 C-15,-4 -5,5 0,15 Z" fill="#FFA726"/>
+      <ellipse cx="-15" cy="5" rx="12" ry="8" transform="rotate(-15 -15 5)" fill="#FB8C00"/>
+    </g>
+
+    <!-- Right Hand holding / presenting -->
+    <g transform="translate(165, 120)">
+      <path d="M0,0 C10,10 20,25 35,20 C45,15 45,5 35,2 C25,-1 10,-5 0,0 Z" fill="#FFA726"/>
+      <ellipse cx="15" cy="8" rx="10" ry="7" transform="rotate(20 15 8)" fill="#FB8C00"/>
+    </g>
+    
+    <!-- Accent focus glow (Golden/Orange highlight to draw eye to the interaction center) -->
+    <circle cx="130" cy="120" r="60" fill="none" stroke="#FFB300" stroke-width="1.5" stroke-dasharray="6,8" opacity="0.4"/>
+  </g>
+</svg>

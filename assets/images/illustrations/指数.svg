@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Baseline/Ground -->
+  <path d="M40 180 L200 180" stroke="#4A5568" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Escalation Curve -->
+  <path d="M40 180 C 80 180, 100 160, 120 120 C 140 80, 160 60, 200 40" 
+        stroke="#F6AD55" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Data Points/Steps -->
+  <circle cx="40" cy="180" r="4" fill="#F6AD55"/>
+  <circle cx="80" cy="170" r="4" fill="#F6AD55"/>
+  <circle cx="120" cy="120" r="5" fill="#F6AD55"/>
+  <circle cx="160" cy="70" r="6" fill="#F6AD55"/>
+  <circle cx="200" cy="40" r="8" fill="#F6AD55"/>
+  
+  <!-- Vertical Marker for "Peak" -->
+  <line x1="200" y1="180" x2="200" y2="40" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="2 2"/>
+  
+  <!-- Accent highlight at the peak -->
+  <path d="M190 40 L210 40 M200 30 L200 50" stroke="#F6AD55" stroke-width="2" stroke-linecap="round"/>
+</svg>

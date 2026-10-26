@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Table Surface -->
+  <rect x="40" y="150" width="160" height="10" rx="2" fill="#374151"/>
+  
+  <!-- Documents/Blueprints -->
+  <rect x="70" y="120" width="60" height="40" rx="2" fill="#4B5563"/>
+  <rect x="75" y="125" width="50" height="30" rx="1" fill="#9CA3AF"/>
+  
+  <!-- Person 1 (Outgoing) -->
+  <circle cx="80" cy="90" r="20" fill="#F3F4F6"/>
+  <path d="M60 110 C60 130, 100 130, 100 110" fill="#F3F4F6"/>
+  <rect x="65" y="130" width="30" height="60" rx="5" fill="#F3F4F6"/>
+  
+  <!-- Person 2 (Incoming) -->
+  <circle cx="160" cy="90" r="20" fill="#FBBF24"/>
+  <path d="M140 110 C140 130, 180 130, 180 110" fill="#FBBF24"/>
+  <rect x="145" y="130" width="30" height="60" rx="5" fill="#FBBF24"/>
+  
+  <!-- Handover Action -->
+  <path d="M100 135 L140 135" stroke="#FBBF24" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="100" cy="135" r="5" fill="#F3F4F6"/>
+  <circle cx="140" cy="135" r="5" fill="#FBBF24"/>
+  
+  <!-- Decorative elements for professional context -->
+  <rect x="180" y="50" width="4" height="40" rx="2" fill="#374151"/>
+  <rect x="190" y="60" width="4" height="30" rx="2" fill="#374151"/>
+</svg>

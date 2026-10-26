@@ -1,0 +1,67 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Atmospheric background wind streams -->
+  <path d="M30 65 Q70 65 100 55 T170 60" fill="none" stroke="#3A4454" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M70 120 Q120 115 160 125 T210 115" fill="none" stroke="#3A4454" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+  <path d="M40 180 Q90 185 130 175 T200 180" fill="none" stroke="#3A4454" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Background wind gusts (horizontal streaks) -->
+  <g fill="none" stroke="#526175" stroke-linecap="round" opacity="0.7">
+    <path d="M25 90 L85 90" stroke-width="3"/>
+    <path d="M100 75 L140 75" stroke-width="2"/>
+    <path d="M145 105 L215 105" stroke-width="3"/>
+    <path d="M50 145 L110 145" stroke-width="2.5"/>
+    <path d="M130 160 L180 160" stroke-width="3"/>
+  </g>
+
+  <!-- Mixed rain droplets (angled slashes intermingled with wind) -->
+  <g stroke="#7CA5B8" stroke-linecap="round" stroke-width="2" opacity="0.85">
+    <line x1="60" y1="50" x2="52" y2="70" />
+    <line x1="95" y1="40" x2="87" y2="60" />
+    <line x1="130" y1="65" x2="122" y2="85" />
+    <line x1="165" y1="45" x2="157" y2="65" />
+    <line x1="200" y1="70" x2="192" y2="90" />
+    
+    <line x1="40" y1="105" x2="32" y2="125" />
+    <line x1="75" y1="95" x2="67" y2="115" />
+    <line x1="110" y1="115" x2="102" y2="135" />
+    <line x1="150" y1="130" x2="142" y2="150" />
+    <line x1="185" y1="110" x2="177" y2="130" />
+    
+    <line x1="55" y1="160" x2="47" y2="180" />
+    <line x1="90" y1="145" x2="82" y2="165" />
+    <line x1="125" y1="170" x2="117" y2="190" />
+    <line x1="165" y1="185" x2="157" y2="205" />
+    <line x1="205" y1="150" x2="197" y2="170" />
+  </g>
+
+  <!-- Central Physical Object representing 'Intermingled/Mixed' (A dynamic vortex/blend of swirling elements) -->
+  <g transform="translate(120, 120)">
+    <!-- Outer swirl path background glow -->
+    <circle cx="0" cy="0" r="48" fill="#1A1D24" opacity="0.9"/>
+    
+    <!-- Swirling containment ring -->
+    <path d="M -35 -25 C -55 20, -10 50, 25 35 C 50 20, 45 -30, 15 -45 C -15 -60, -40 -10, -25 25" fill="none" stroke="#323B4A" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Intermingled elements: Wind currents (Orange/Gold focus) and Precipitation (Blue/Teal) -->
+    <!-- Wind swirl component -->
+    <path d="M-30 -15 C-10 -40, 30 -30, 40 0 C50 30, 10 45, -20 30" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Rain swirl component -->
+    <path d="M30 20 C10 45, -30 30, -40 0 C-50 -30, -10 -45, 20 -25" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Floating blended particles (mixing together) -->
+    <circle cx="-18" cy="-22" r="5" fill="#F59E0B" />
+    <circle cx="22" cy="-18" r="3.5" fill="#38BDF8" />
+    <circle cx="30" cy="18" r="4" fill="#F59E0B" />
+    <circle cx="-25" cy="15" r="3" fill="#38BDF8" />
+    <circle cx="0" cy="35" r="4.5" fill="#F59E0B" />
+    <circle cx="0" cy="-35" r="3" fill="#38BDF8" />
+    
+    <!-- Core intersection node representing 'Jiāzá' (Blending/Mix) -->
+    <circle cx="0" cy="0" r="10" fill="#E2E8F0" />
+    <circle cx="0" cy="0" r="5" fill="#1A1D24" />
+  </g>
+</svg>

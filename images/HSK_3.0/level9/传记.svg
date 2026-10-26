@@ -1,0 +1,59 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow/accent -->
+  <circle cx="120" cy="120" r="70" fill="#252A34" opacity="0.5"/>
+  
+  <!-- Book Shadow -->
+  <path d="M50 165 C50 165 95 175 120 170 C145 175 190 165 190 165 L195 190 C195 190 145 200 120 195 C95 200 45 190 45 190 Z" fill="#0E1015" opacity="0.6"/>
+
+  <!-- Open Biography Book -->
+  <g>
+    <!-- Left Cover -->
+    <path d="M45 60 C45 55 52 50 58 50 L115 56 L115 180 L50 172 C47 171 45 168 45 164 Z" fill="#3A4454"/>
+    <!-- Right Cover -->
+    <path d="M195 60 C195 55 188 50 182 50 L125 56 L125 180 L190 172 C193 171 195 168 195 164 Z" fill="#2E3745"/>
+    
+    <!-- Left Page Base -->
+    <path d="M50 62 C50 59 55 55 60 55 L116 61 L116 173 L54 167 C51 166 50 164 50 161 Z" fill="#F4F6F9"/>
+    <!-- Right Page Base -->
+    <path d="M190 62 C190 59 185 55 180 55 L124 61 L124 173 L186 167 C189 166 190 164 190 161 Z" fill="#EAEFF5"/>
+    
+    <!-- Book Spine Center Shadow -->
+    <path d="M116 61 L124 61 L124 173 L116 173 Z" fill="#D1D8E0"/>
+
+    <!-- Left Page Content (Text lines & Portrait Silhouette) -->
+    <g opacity="0.7">
+      <!-- Text lines -->
+      <rect x="65" y="115" width="38" height="3" rx="1.5" fill="#CBD5E1"/>
+      <rect x="65" y="125" width="42" height="3" rx="1.5" fill="#CBD5E1"/>
+      <rect x="65" y="135" width="30" height="3" rx="1.5" fill="#CBD5E1"/>
+      <rect x="65" y="145" width="39" height="3" rx="1.5" fill="#CBD5E1"/>
+    </g>
+
+    <!-- Right Page Content: Scientist/Figure Portrait (Symbolizing Biography Subject) -->
+    <g>
+      <!-- Portrait Frame/Circle Background -->
+      <circle cx="157" cy="95" r="22" fill="#E2E8F0"/>
+      <!-- Subject Silhouette (Person with lab coat / collar representing scientist) -->
+      <path d="M157 80 C151 80 147 84 147 89 C147 91 148 93 150 94 C147 96 144 100 142 105 L172 105 C170 100 167 96 164 94 C166 93 167 91 167 89 C167 84 163 80 157 80 Z" fill="#475569"/>
+      <path d="M157 109 L142 118 L172 118 Z" fill="#FFB703"/> <!-- Accent tie/collar -->
+      
+      <!-- Text lines below portrait -->
+      <rect x="135" y="135" width="44" height="3" rx="1.5" fill="#94A3B8"/>
+      <rect x="135" y="145" width="35" height="3" rx="1.5" fill="#94A3B8"/>
+    </g>
+  </g>
+
+  <!-- Bookmark Ribbon hanging out -->
+  <path d="M105 53 L105 85 L112 80 L119 85 L119 55" fill="#FF5722"/>
+
+  <!-- Floating Inspiration / Achievement Elements (Gold Star / Sparkle) -->
+  <g transform="translate(182, 38)">
+    <path d="M0 -8 L2 -2 L8 0 L2 2 L0 8 L-2 2 L-8 0 L-2 -2 Z" fill="#FFB703"/>
+  </g>
+  <g transform="translate(58, 42) scale(0.6)">
+    <path d="M0 -8 L2 -2 L8 0 L2 2 L0 8 L-2 2 L-8 0 L-2 -2 Z" fill="#FFB703"/>
+  </g>
+</svg>

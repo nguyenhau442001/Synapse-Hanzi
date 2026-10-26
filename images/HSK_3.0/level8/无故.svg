@@ -1,0 +1,26 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background school window/frame grid -->
+  <path d="M60 40H180V200H60Z" fill="#222730"/>
+  <line x1="120" y1="40" x2="120" y2="200" stroke="#2C323D" stroke-width="2"/>
+  <line x1="60" y1="120" x2="180" y2="120" stroke="#2C323D" stroke-width="2"/>
+
+  <!-- Empty school desk representing unexcused absence -->
+  <rect x="80" y="130" width="80" height="8" rx="2" fill="#E65F2B"/>
+  <rect x="110" y="138" width="20" height="60" fill="#CF4E1D"/>
+  <rect x="75" y="195" width="30" height="8" rx="3" fill="#B53E13"/>
+  <rect x="135" y="195" width="30" height="8" rx="3" fill="#B53E13"/>
+
+  <!-- Empty school chair pushed slightly away -->
+  <rect x="95" y="160" width="50" height="40" rx="6" fill="none" stroke="#606A7B" stroke-width="4"/>
+  <line x1="105" y1="200" x2="100" y2="225" stroke="#4A5260" stroke-width="4" stroke-linecap="round"/>
+  <line x1="135" y1="200" x2="140" y2="225" stroke="#4A5260" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Floating question mark / unknown absence indicator (noun physical representation of the missing person's status) -->
+  <path d="M100 85C100 68 140 68 140 85C140 96 120 100 120 115" fill="none" stroke="#F6A623" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="120" cy="140" r="6" fill="#F6A623"/>
+
+  <!-- Red warning slash overlay representing "unexcused / no reason" -->
+  <line x1="65" y1="65" x2="175" y2="175" stroke="#E03E3E" stroke-width="8" stroke-linecap="round"/>
+</svg>

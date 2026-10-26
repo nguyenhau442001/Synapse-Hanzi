@@ -1,0 +1,57 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background / Sky gradient/glow -->
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#162032"/>
+      <stop offset="100%" stop-color="#1A1D24"/>
+    </linearGradient>
+    <linearGradient id="waterGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1976D2"/>
+      <stop offset="50%" stop-color="#0D47A1"/>
+      <stop offset="100%" stop-color="#082b6b"/>
+    </linearGradient>
+    <linearGradient id="waveHighlight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#64B5F6" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#BBDEFB" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#64B5F6" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky area -->
+  <rect x="0" y="0" width="240" height="110" fill="url(#skyGrad)"/>
+
+  <!-- Distant storm clouds / horizon elements -->
+  <path d="M 30,70 Q 50,55 70,70 T 110,65 Q 130,50 150,70 T 190,65 Q 210,55 220,70 L 220,110 L 30,110 Z" fill="#243044" opacity="0.7"/>
+
+  <!-- Vast Ocean Body (汪洋) -->
+  <rect x="0" y="105" width="240" height="135" fill="url(#waterGrad)"/>
+
+  <!-- Deep rolling waves / Vast expanse lines -->
+  <path d="M 0,125 Q 60,115 120,125 T 240,125 L 240,240 L 0,240 Z" fill="#0b3875" opacity="0.5"/>
+
+  <!-- Layered wave crests for depth and "mênh mông" (boundless) feel -->
+  <path d="M -10,135 C 40,120 80,150 130,135 C 180,120 210,145 250,135" fill="none" stroke="url(#waveHighlight)" stroke-width="3" stroke-linecap="round"/>
+  
+  <path d="M 10,165 C 70,150 110,180 170,165 C 210,155 235,170 250,165" fill="none" stroke="url(#waveHighlight)" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+
+  <path d="M -5,195 C 50,180 90,210 150,195 C 190,185 220,200 245,195" fill="none" stroke="url(#waveHighlight)" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+  <path d="M 20,220 C 80,210 120,230 180,220 C 210,215 230,225 245,220" fill="none" stroke="url(#waveHighlight)" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Focus Element: Partially submerged rooftop/treetop hinting at the context (flooded fertile fields/village) to anchor semantic meaning cleanly -->
+  <!-- Submerged fence/structure on the horizon -->
+  <g opacity="0.5" transform="translate(0, 15)">
+    <rect x="180" y="85" width="24" height="20" fill="#37474F"/>
+    <polygon points="175,85 192,70 209,85" fill="#455A64"/>
+  </g>
+
+  <!-- Distant solitary tree top emerging from water -->
+  <path d="M 75,108 Q 78,100 85,105 Q 92,100 95,108 Q 93,112 85,110 Q 77,112 75,108 Z" fill="#1b4332" opacity="0.8"/>
+  <rect x="83" y="110" width="4" height="10" fill="#2d3748" opacity="0.8"/>
+
+  <!-- Sleek framing / Focus lighting overlay -->
+  <circle cx="120" cy="120" r="105" fill="none" stroke="#64B5F6" stroke-width="1" opacity="0.15"/>
+</svg>

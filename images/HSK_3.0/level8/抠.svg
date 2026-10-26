@@ -1,0 +1,51 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements (subtle) -->
+  <circle cx="120" cy="120" r="80" fill="#222733" opacity="0.6"/>
+
+  <!-- Character / Object representing "抠" (person tightly guarding a single coin / penny-pinching) -->
+  <!-- Body/Suit -->
+  <path d="M70 190 C70 160 90 145 120 145 C150 145 170 160 170 190 Z" fill="#2E384D"/>
+  <path d="M120 145 L120 190" stroke="#1A1D24" stroke-width="3"/>
+
+  <!-- Shirt collar & tie -->
+  <polygon points="105,145 135,145 120,165" fill="#E2E8F0"/>
+  <polygon points="117,162 123,162 125,185 120,190 115,185" fill="#F59E0B"/>
+
+  <!-- Head & Face -->
+  <circle cx="120" cy="105" r="32" fill="#FDE68A"/>
+  
+  <!-- Suspicious/Prudent Facial Expression -->
+  <!-- Eyebrows (tilted sharply in concentration/tightness) -->
+  <line x1="100" y1="94" x2="114" y2="98" stroke="#1E293B" stroke-width="3" stroke-linecap="round"/>
+  <line x1="140" y1="94" x2="126" y2="98" stroke="#1E293B" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Eyes (narrowed, focused) -->
+  <line x1="103" y1="102" x2="113" y2="102" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="127" y1="102" x2="137" y2="102" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Mouth (tight, thin line) -->
+  <path d="M110 118 Q120 115 130 118" stroke="#1E293B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Arms tightly hugging/protecting a single coin -->
+  <!-- Left Arm -->
+  <path d="M70 170 C80 145 100 135 120 135" fill="none" stroke="#2E384D" stroke-width="14" stroke-linecap="round"/>
+  <!-- Right Arm -->
+  <path d="M170 170 C160 145 140 135 120 135" fill="none" stroke="#2E384D" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- Hands clutching closely at the center -->
+  <circle cx="112" cy="132" r="7" fill="#FDE68A"/>
+  <circle cx="128" cy="132" r="7" fill="#FDE68A"/>
+
+  <!-- The Single Coin Held Securely in Center -->
+  <g transform="translate(120, 126)">
+    <circle cx="0" cy="0" r="14" fill="#D97706"/>
+    <circle cx="0" cy="0" r="11" fill="#F59E0B"/>
+    <rect x="-3" y="-6" width="6" height="12" fill="#B45309" rx="1"/>
+  </g>
+
+  <!-- Accent glow for focus -->
+  <circle cx="120" cy="126" r="18" fill="none" stroke="#F59E0B" stroke-width="2" opacity="0.4"/>
+</svg>

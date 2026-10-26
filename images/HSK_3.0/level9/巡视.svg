@@ -1,0 +1,49 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 115)">
+    <!-- Railroad Tracks Perspective -->
+    <path d="M-15,85 L-60,5 M15,85 L60,5" stroke="#3A4252" stroke-width="4" stroke-linecap="round"/>
+    <path d="M-45,25 L45,25 M-30,45 L30,45 M-15,65 L15,65 M-55,5 L55,5" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-35" y1="95" x2="35" y2="95" stroke="#2D3748" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Inspector Character (Worker) -->
+    <!-- Legs -->
+    <path d="M-8,55 L-12,85" stroke="#718096" stroke-width="6" stroke-linecap="round"/>
+    <path d="M8,55 L15,85" stroke="#718096" stroke-width="6" stroke-linecap="round"/>
+    <!-- Boots -->
+    <rect x="-17" y="83" width="10" height="6" rx="3" fill="#2D3748"/>
+    <rect x="11" y="83" width="10" height="6" rx="3" fill="#2D3748"/>
+
+    <!-- Torso (Safety Vest) -->
+    <path d="M-12,20 L12,20 L15,55 L-15,55 Z" fill="#D69E2E"/>
+    <!-- Vest Details -->
+    <path d="M-4,20 L-4,55" stroke="#CBD5E0" stroke-width="3"/>
+    <path d="M4,20 L4,55" stroke="#CBD5E0" stroke-width="3"/>
+    <path d="M-12,30 L12,30" stroke="#E2E8F0" stroke-width="2"/>
+
+    <!-- Head & Hard Hat -->
+    <circle cx="0" cy="8" r="9" fill="#F6AD55"/>
+    <path d="M-12,3 C-12,0 12,0 12,3 Z" fill="#ECC94B"/>
+    <path d="M-14,3 L14,3 L12,5 L-12,5 Z" fill="#D69E2E"/>
+
+    <!-- Arms & Inspection Tool (Flashlight / Scanner) -->
+    <!-- Left Arm holding tool forward -->
+    <path d="M-12,25 L-28,35" stroke="#D69E2E" stroke-width="5" stroke-linecap="round"/>
+    <!-- Right Arm pointing down/forward -->
+    <path d="M12,25 L25,45" stroke="#D69E2E" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Inspection Flashlight Beam -->
+    <path d="M-30,38 L-65,65 L-45,70 Z" fill="#F6AD55" opacity="0.3"/>
+    <circle cx="-31" cy="39" r="4" fill="#E2E8F0"/>
+
+    <!-- Focus / Scanning Reticle (Visualizing "Patrol/Inspection") -->
+    <g transform="translate(-40, 50)" opacity="0.8">
+      <path d="M-8,-4 L-12,-4 L-12,0" stroke="#F6AD55" stroke-width="2" fill="none"/>
+      <path d="M8,-4 L12,-4 L12,0" stroke="#F6AD55" stroke-width="2" fill="none"/>
+      <path d="M-8,4 L-12,4 L-12,0" stroke="#F6AD55" stroke-width="2" fill="none"/>
+      <path d="M8,4 L12,4 L12,0" stroke="#F6AD55" stroke-width="2" fill="none"/>
+      <circle cx="0" cy="0" r="3" fill="none" stroke="#F6AD55" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

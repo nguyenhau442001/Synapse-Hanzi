@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Digital Network / Megaphone / Incitement Concept -->
+    <!-- Sound Waves / Malicious Spread (Orange/Red Accents) -->
+    <path d="M150 70 C165 85, 165 115, 150 130" stroke="#FF5722" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <path d="M165 55 C185 75, 185 125, 165 145" stroke="#FF5722" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.5"/>
+    <path d="M180 40 C205 65, 205 135, 180 160" stroke="#FF5722" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.2"/>
+
+    <!-- Smartphone / Network Source -->
+    <rect x="45" y="70" width="45" height="75" rx="6" fill="#2C313C" stroke="#3E4553" stroke-width="2"/>
+    <!-- Screen Content: Glowing Toxic Waves -->
+    <rect x="51" y="82" width="33" height="50" fill="#1A1D24"/>
+    <path d="M56 100 L64 108 L72 96 L80 114" stroke="#FF9800" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <circle cx="67" cy="120" r="3" fill="#FF5722"/>
+
+    <!-- Connection Beam (Spreading the message) -->
+    <line x1="90" y1="107" x2="115" y2="107" stroke="#FF5722" stroke-width="3" stroke-dasharray="4 4"/>
+
+    <!-- Megaphone (Main Physical Object of Incitement/Agitation) -->
+    <!-- Handle -->
+    <path d="M110 120 L100 145 C98 150, 102 154, 107 152 L120 142 Z" fill="#3E4553"/>
+    
+    <!-- Body -->
+    <path d="M105 95 L145 75 C150 72, 155 77, 155 82 L155 132 C155 137, 150 142, 145 139 L105 119 Z" fill="#FF9800"/>
+    
+    <!-- Speaker Cone (Dark Inner) -->
+    <ellipse cx="155" cy="107" rx="6" ry="25" fill="#E65100"/>
+    <ellipse cx="155" cy="107" rx="3" ry="18" fill="#B71C1C"/>
+
+    <!-- Base / Stand -->
+    <rect x="115" y="142" width="20" height="8" rx="2" fill="#2C313C"/>
+    <rect x="110" y="150" width="30" height="4" rx="2" fill="#3E4553"/>
+
+    <!-- Floating Disruption Particles / Sparks -->
+    <circle cx="170" cy="85" r="4" fill="#FF5722"/>
+    <circle cx="185" cy="115" r="3" fill="#FF9800"/>
+    <circle cx="165" cy="140" r="5" fill="#E65100"/>
+    <polygon points="130,55 135,62 125,62" fill="#FF5722"/>
+    <polygon points="195,80 200,88 190,88" fill="#FF9800"/>
+  </g>
+</svg>

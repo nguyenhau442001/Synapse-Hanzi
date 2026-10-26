@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient background glow representing insight/intuition -->
+  <circle cx="120" cy="115" r="70" fill="#242B3A" opacity="0.6"/>
+  <circle cx="120" cy="115" r="45" fill="#2E394E" opacity="0.4"/>
+
+  <!-- Physical Object: Modern stylized Detective's Magnifying Glass representing observation, insight, and "zhíjué" (intuition/gut feeling) -->
+  <g transform="translate(120, 110)">
+    <!-- Magnifying Glass Handle -->
+    <path d="M-30 30 L-70 70 C-74 74 -74 80 -70 84 C-66 88 -60 88 -56 84 L-16 44 Z" fill="#3B4659"/>
+    <path d="M-30 30 L-70 70 C-74 74 -74 80 -70 84 C-66 88 -60 88 -56 84 L-16 44 Z" fill="url(#handleGrad)" opacity="0.3"/>
+    
+    <!-- Handle Metallic Accent -->
+    <path d="M-40 40 L-60 60 C-62 62 -62 65 -60 67 C-58 69 -55 69 -53 67 L-33 47 Z" fill="#F39C12" opacity="0.3"/>
+
+    <!-- Outer Rim of Lens -->
+    <circle cx="0" cy="0" r="46" fill="#1A1D24"/>
+    <circle cx="0" cy="0" r="46" fill="none" stroke="#2E394E" stroke-width="3"/>
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#F39C12" stroke-width="6"/>
+
+    <!-- Lens Glass Background -->
+    <circle cx="0" cy="0" r="39" fill="#14171F"/>
+
+    <!-- Inside the Lens: Visualizing the "Intuition / Flash of Insight" (Glowing Lightbulb/Core) -->
+    <!-- Light Rays/Sparkles inside lens -->
+    <path d="M0 -24 L0 -32" stroke="#F39C12" stroke-width="3" stroke-linecap="round"/>
+    <path d="M-17 -17 L-23 -23" stroke="#F39C12" stroke-width="3" stroke-linecap="round"/>
+    <path d="M17 -17 L23 -23" stroke="#F39C12" stroke-width="3" stroke-linecap="round"/>
+    <path d="M-24 0 L-32 0" stroke="#F39C12" stroke-width="3" stroke-linecap="round"/>
+    <path d="M24 0 L32 0" stroke="#F39C12" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Central Glowing Bulb / Spark representing "Aha!" moment & gut feeling -->
+    <circle cx="0" cy="-3" r="16" fill="#F39C12" opacity="0.2"/>
+    <path d="M-8 2 C-8 -4 -4 -9 0 -9 C4 -9 8 -4 8 2 C8 7 5 9 4 11 L-4 11 C-5 9 -8 7 -8 2 Z" fill="#F39C12"/>
+    <!-- Bulb base -->
+    <rect x="-3" y="11" width="6" height="4" rx="1" fill="#A6B0B9"/>
+    
+    <!-- Lens Glass Reflection / Gloss -->
+    <path d="M-28 -20 C-15 -32 15 -32 28 -20 C20 -28 -20 -28 -28 -20 Z" fill="#FFFFFF" opacity="0.15"/>
+  </g>
+</svg>

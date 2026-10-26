@@ -1,0 +1,57 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative concentric sound wave ripples (subtle) -->
+  <path d="M 120 120 M 120 75 A 45 45 0 0 1 165 120" stroke="#313846" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 120 120 M 120 50 A 70 70 0 0 1 190 120" stroke="#252B36" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 120 120 M 120 25 A 95 95 0 0 1 215 120" stroke="#1E232D" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Military instructor character symbolizing "hóngliàng" (loud, resonant, authoritative voice) -->
+  <!-- Torso & Shoulders -->
+  <path d="M 85 180 L 90 145 L 150 145 L 155 180 Z" fill="#2E4A3E"/>
+  <!-- Collar / Uniform details -->
+  <path d="M 105 145 L 120 160 L 135 145 Z" fill="#243B31"/>
+  <!-- Red epaulets / collar badge for military drill instructor -->
+  <rect x="92" y="147" width="8" height="4" rx="2" fill="#E05638"/>
+  <rect x="140" y="147" width="8" height="4" rx="2" fill="#E05638"/>
+
+  <!-- Neck -->
+  <rect x="110" y="132" width="20" height="16" fill="#DDB796"/>
+
+  <!-- Head profile facing right -->
+  <circle cx="123" cy="115" r="22" fill="#DDB796"/>
+  
+  <!-- Military Cap (Peaked cap) -->
+  <path d="M 100 105 C 100 95 110 93 125 93 C 145 93 148 100 148 107 Z" fill="#1E332B"/>
+  <!-- Cap visor -->
+  <path d="M 102 107 C 115 111 138 111 152 107 C 148 113 120 113 102 107 Z" fill="#111B17"/>
+  <!-- Cap badge -->
+  <circle cx="124" cy="101" r="3" fill="#F39C12"/>
+
+  <!-- Facial features - shouting mouth open -->
+  <!-- Eye -->
+  <path d="M 133 112 Q 137 110 141 113" stroke="#2C2C2C" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- Open shouting mouth -->
+  <path d="M 135 124 C 135 122 142 121 146 125 C 150 129 148 135 143 135 C 138 135 135 128 135 124 Z" fill="#5A1818"/>
+  <path d="M 136 125 Q 141 123 145 126" stroke="#FFFFFF" stroke-width="1.5" fill="none"/>
+
+  <!-- Megaphone held in hand projecting the sound -->
+  <!-- Hand gripping handle -->
+  <rect x="135" y="140" width="8" height="14" rx="4" fill="#DDB796" transform="rotate(-15 135 140)"/>
+  
+  <!-- Megaphone body -->
+  <path d="M 130 118 L 175 98 C 180 96 185 100 183 105 L 163 145 C 161 149 155 149 152 145 Z" fill="#F39C12"/>
+  <!-- Megaphone dark rim/details -->
+  <ellipse cx="173" cy="125" rx="6" ry="14" fill="#D68910" transform="rotate(-25 173 125)"/>
+  <path d="M 130 118 L 136 126 L 159 136 L 153 128 Z" fill="#E67E22"/>
+
+  <!-- Powerful sound wave emissions radiating outward from the megaphone (highlighting 'hóngliàng' - booming, resonant sound) -->
+  <path d="M 185 115 C 195 120 195 130 185 135" stroke="#F1C40F" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M 195 105 C 210 115 210 135 195 145" stroke="#F1C40F" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M 205 95 C 225 110 225 140 205 155" stroke="#F1C40F" stroke-width="4" stroke-linecap="round" fill="none"/>
+  
+  <!-- Sound accent ripples / sonic energy particles -->
+  <circle cx="198" cy="100" r="3" fill="#F39C12"/>
+  <circle cx="212" cy="125" r="4" fill="#F1C40F"/>
+  <circle cx="195" cy="150" r="3" fill="#F39C12"/>
+</svg>

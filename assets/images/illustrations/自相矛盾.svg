@@ -1,0 +1,18 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Spear (矛) pointing left -->
+  <g transform="translate(40, 120)">
+    <path d="M0,0 L120,0 M110,-10 L130,0 L110,10 Z" fill="none" stroke="#FFB84D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="0" y="-3" width="110" height="6" fill="#FFB84D"/>
+  </g>
+  
+  <!-- Shield (盾) facing right -->
+  <g transform="translate(120, 120)">
+    <path d="M0,-50 C40,-50 60,-30 60,0 C60,30 40,50 0,50 L0,-50" fill="#4D94FF"/>
+    <path d="M0,-50 L0,50" fill="none" stroke="#1A1D24" stroke-width="4"/>
+  </g>
+  
+  <!-- Visual conflict indicator: The spear tip is touching the shield surface -->
+  <circle cx="120" cy="120" r="8" fill="#FF5555"/>
+</svg>

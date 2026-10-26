@@ -1,0 +1,33 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(20, 20)">
+    <!-- Outer technical boundary frame representing the 'interval/range' zone (区间) -->
+    <rect x="20" y="20" width="160" height="160" rx="16" fill="#222730" stroke="#323A48" stroke-width="2" stroke-dasharray="6 6"/>
+    
+    <!-- Safe zone indicator brackets/corners -->
+    <path d="M 35 55 L 35 35 L 55 35" fill="none" stroke="#F39C12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 165 55 L 165 35 L 145 35" fill="none" stroke="#F39C12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 35 145 L 35 165 L 55 165" fill="none" stroke="#F39C12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 165 145 L 165 165 L 145 165" fill="none" stroke="#F39C12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Central Physical Object: Modern precision electronic device / industrial unit (representing the physical equipment tested) -->
+    <rect x="65" y="70" width="70" height="60" rx="8" fill="#2C3440" stroke="#3A4454" stroke-width="2"/>
+    
+    <!-- Cooling vents on the device -->
+    <line x1="77" y1="82" x2="93" y2="82" stroke="#4E5D6C" stroke-width="2" stroke-linecap="round"/>
+    <line x1="107" y1="82" x2="123" y2="82" stroke="#4E5D6C" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Central status display screen showing optimal operation within safe interval -->
+    <rect x="80" y="94" width="40" height="24" rx="4" fill="#1A1D24"/>
+    <polyline points="86,106 94,106 98,99 104,113 110,102 118,106" fill="none" stroke="#2ECC71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Status indicator LED (Safe state: Amber/Gold accent reflecting safe operational range) -->
+    <circle cx="100" cy="142" r="5" fill="#F39C12"/>
+    <circle cx="100" cy="142" r="9" fill="none" stroke="#F39C12" stroke-width="1.5" opacity="0.4"/>
+    
+    <!-- Subtle directional bounds representing the physical interval (区间) -->
+    <line x1="50" y1="100" x2="60" y2="100" stroke="#F39C12" stroke-width="2" stroke-linecap="round"/>
+    <line x1="140" y1="100" x2="150" y2="100" stroke="#F39C12" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

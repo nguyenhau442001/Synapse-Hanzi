@@ -1,0 +1,56 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle background grid/glow elements for modern dark mode UI context -->
+  <circle cx="120" cy="120" r="90" fill="none" stroke="#262B36" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- Laboratory/Inspection desk surface -->
+  <path d="M 40 185 L 200 185 L 210 205 L 30 205 Z" fill="#222733"/>
+  <rect x="35" y="180" width="170" height="6" rx="3" fill="#323846"/>
+
+  <!-- Microscope / Testing Equipment in background -->
+  <path d="M 180 145 L 195 145 L 190 180 L 175 180 Z" fill="#3E4756"/>
+  <path d="M 172 135 L 198 135 L 200 145 L 170 145 Z" fill="#4E596D"/>
+  <path d="M 160 115 L 180 115 L 185 135 L 165 135 Z" fill="#3E4756"/>
+  <path d="M 155 105 L 185 105 L 180 115 L 160 115 Z" fill="#4E596D"/>
+  <!-- Microscope eyepiece / lens tube -->
+  <path d="M 145 90 L 165 95 L 155 115 L 135 110 Z" fill="#5C687E"/>
+  <circle cx="150" cy="102" r="6" fill="#FF9F43"/>
+
+  <!-- Action Subject: Food Safety Test Tube & Falsification Stamp/Adjustment -->
+  <!-- Test rack & tube with suspicious manipulation (Green check turning to Red cross or fake label) -->
+  <rect x="95" y="140" width="22" height="42" rx="4" fill="#2E3748"/>
+  <rect x="98" y="145" width="16" height="32" rx="2" fill="#1E232D"/>
+  <!-- Liquid inside test tube: bright glowing neon green shifting to murky/fake red -->
+  <path d="M 99 155 L 113 155 L 113 174 L 99 174 Z" fill="#2ED573"/>
+  
+  <!-- Fake Inspection Label / Seal being applied -->
+  <!-- The hand holding a fake stamp or altering the result -->
+  <path d="M 125 100 L 155 125 L 140 140 L 110 115 Z" fill="#323846"/>
+  <!-- Stamp / Stylus tool (Action vector) -->
+  <rect x="135" y="85" width="12" height="35" rx="3" transform="rotate(45 141 102)" fill="#FF9F43"/>
+  <path d="M 120 110 L 130 120 L 122 128 L 112 118 Z" fill="#EA5455"/>
+
+  <!-- Dynamic Action Lines showing motion of falsification / tampering -->
+  <path d="M 115 95 Q 125 90 135 100" fill="none" stroke="#FF9F43" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="3 3"/>
+  <path d="M 105 85 Q 120 80 130 90" fill="none" stroke="#FF9F43" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Character / Operator hand manipulating the test (Fabrication/Action) -->
+  <!-- Forearm -->
+  <path d="M 50 160 Q 75 160 95 150 L 105 165 Q 80 180 40 180 Z" fill="#E0A96D"/>
+  <!-- Hand gripping/overlaying -->
+  <circle cx="95" cy="155" r="10" fill="#E0A96D"/>
+  <!-- Fingers pressing -->
+  <path d="M 100 150 Q 110 145 115 152 Q 110 158 100 155 Z" fill="#CD9257"/>
+
+  <!-- Warning / Fraud Indicator (Subtle high-contrast red alert badge representing 'Fake/Fraud') -->
+  <circle cx="70" cy="75" r="18" fill="#2A1E22"/>
+  <circle cx="70" cy="75" r="18" fill="none" stroke="#EA5455" stroke-width="2.5"/>
+  <!-- Cross mark / falsification indicator -->
+  <path d="M 63 68 L 77 82 M 77 68 L 63 82" stroke="#EA5455" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Sparkles of deceit / unauthorized alteration effect -->
+  <path d="M 140 60 L 143 68 L 151 71 L 143 74 L 140 82 L 137 74 L 129 71 L 137 68 Z" fill="#FF9F43" opacity="0.8"/>
+  <path d="M 75 115 L 77 119 L 81 121 L 77 123 L 75 127 L 73 123 L 69 121 L 73 119 Z" fill="#EA5455" opacity="0.8"/>
+</svg>

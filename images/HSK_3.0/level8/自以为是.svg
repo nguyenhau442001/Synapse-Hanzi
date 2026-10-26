@@ -1,0 +1,64 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "自以为是" (Arrogant person stubbornly thinking they are always right, ignoring others) -->
+  <g transform="translate(0, 0)">
+    <!-- Blind ears / Deaf tone background subtle rings -->
+    <circle cx="120" cy="115" r="70" fill="none" stroke="#2A2F3D" stroke-width="2" stroke-dasharray="6 6"/>
+
+    <!-- Team members silhouettes ignored on the side (left and right) -->
+    <!-- Left team member offering ideas -->
+    <g transform="translate(45, 110)">
+      <circle cx="0" cy="-15" r="12" fill="#4A5568"/>
+      <path d="M-15,25 C-15,5 15,5 15,25" fill="#4A5568"/>
+      <!-- Speech bubble outline being blocked/ignored -->
+      <rect x="-22" y="-45" width="28" height="18" rx="4" fill="#2D3748"/>
+      <polygon points="-8,-27 -4,-22 0,-27" fill="#2D3748"/>
+      <line x1="-17" y1="-39" x2="-3" y2="-39" stroke="#718096" stroke-width="2" stroke-linecap="round"/>
+      <line x1="-17" y1="-33" x2="-8" y2="-33" stroke="#718096" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Right team member offering ideas -->
+    <g transform="translate(195, 110)">
+      <circle cx="0" cy="-15" r="12" fill="#4A5568"/>
+      <path d="M-15,25 C-15,5 15,5 15,25" fill="#4A5568"/>
+      <!-- Speech bubble outline being blocked/ignored -->
+      <rect x="-6" y="-45" width="28" height="18" rx="4" fill="#2D3748"/>
+      <polygon points="4,-27 8,-22 12,-27" fill="#2D3748"/>
+      <line x1="-1" y1="-39" x2="13" y2="-39" stroke="#718096" stroke-width="2" stroke-linecap="round"/>
+      <line x1="-1" y1="-33" x2="8" y2="-33" stroke="#718096" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Central Arrogant Character (自以为是) -->
+    <!-- Body -->
+    <path d="M85,175 C85,145 100,135 120,135 C140,135 155,145 155,175 Z" fill="#2B3748"/>
+    <rect x="105" y="150" width="30" height="30" fill="#E2E8F0" rx="4"/>
+    <path d="M105,150 L120,165 L135,150" fill="none" stroke="#1A1D24" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/> <!-- Collar/Tie accent -->
+
+    <!-- Head -->
+    <circle cx="120" cy="95" r="32" fill="#E2E8F0"/>
+    <!-- Hair (modern sleek flat style) -->
+    <path d="M88,90 C88,70 102,60 120,60 C138,60 152,70 152,90 L152,98 C140,92 130,90 120,90 C110,90 100,92 88,98 Z" fill="#E53E3E"/>
+
+    <!-- Arrogant Facial Expression: Head tilted up, smug smirk, closed arrogant eyes -->
+    <!-- Closed self-righteous eyes (upward curves) -->
+    <path d="M106,92 C109,89 113,89 116,92" fill="none" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M124,92 C127,89 131,89 134,92" fill="none" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Smug smirk -->
+    <path d="M112,108 C117,112 125,112 130,106" fill="none" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Giant floating Crown / "I am right" Halo symbol over head to represent "自以为是" (stubbornly putting oneself on a pedestal) -->
+    <g transform="translate(120, 36)">
+      <polygon points="-22,-8 -14,-24 0,-14 14,-24 22,-8" fill="#F6AD55"/>
+      <rect x="-24" y="-6" width="48" height="8" rx="3" fill="#ED8936"/>
+      <!-- Glowing focal gem -->
+      <circle cx="0" cy="-2" r="3.5" fill="#FFF"/>
+    </g>
+
+    <!-- Blocking hands / Ear-muff stubborn gesture -->
+    <path d="M88,95 C80,95 78,105 84,112" fill="none" stroke="#CBD5E0" stroke-width="6" stroke-linecap="round"/>
+    <path d="M152,95 C160,95 162,105 156,112" fill="none" stroke="#CBD5E0" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>

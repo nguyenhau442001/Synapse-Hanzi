@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Abstract background atmosphere: repetitive looping soundwaves/words fading -->
+  <g opacity="0.15" stroke="#8A99AD" stroke-width="1.5" stroke-linecap="round" fill="none">
+    <path d="M70 70 C85 60, 95 60, 110 70"/>
+    <path d="M60 90 C80 75, 100 75, 120 90"/>
+    <path d="M55 110 C80 90, 100 90, 125 110"/>
+    <path d="M60 130 C80 115, 100 115, 120 130"/>
+  </g>
+
+  <!-- Central Character representing the rebellious/exhausted teen experiencing "yànfán" -->
+  <g transform="translate(15, 15)">
+    <!-- Body/Hoodie -->
+    <path d="M85 170 L75 210 L145 210 L135 170 Z" fill="#2D3748"/>
+    
+    <!-- Shoulders and Back slumped -->
+    <path d="M55 160 C55 130, 85 125, 105 125 C125 125, 155 130, 155 160 Z" fill="#3182CE"/>
+    
+    <!-- Neck -->
+    <rect x="95" y="108" width="20" height="22" rx="6" fill="#F6AD55"/>
+
+    <!-- Head -->
+    <circle cx="105" cy="92" r="28" fill="#F6AD55"/>
+
+    <!-- Messy Teen Hair -->
+    <path d="M77 88 C75 70, 90 62, 108 62 C125 62, 137 72, 135 90 C130 80, 120 75, 105 76 C90 77, 82 82, 77 88 Z" fill="#2D3748"/>
+
+    <!-- Facial Expression: Annoyed / Glancing away -->
+    <!-- Closed/bored eyes -->
+    <path d="M92 90 L102 93" stroke="#2D3748" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M110 90 L120 93" stroke="#2D3748" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Frowning Flat Mouth showing exasperation -->
+    <path d="M96 104 Q105 99 114 104" stroke="#2D3748" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Hand propped against cheek (classic gesture of weariness/annoyance) -->
+    <!-- Arm -->
+    <path d="M125 145 Q150 135, 145 110" fill="none" stroke="#3182CE" stroke-width="14" stroke-linecap="round"/>
+    <!-- Hand on cheek -->
+    <circle cx="132" cy="100" r="10" fill="#F6AD55"/>
+  </g>
+
+  <!-- Focus Accent: Subtle visual vibration lines near head to show mental friction/impatience -->
+  <path d="M155 90 L165 88" stroke="#ED8936" stroke-width="2" stroke-linecap="round"/>
+  <path d="M158 100 L170 100" stroke="#ED8936" stroke-width="2" stroke-linecap="round"/>
+  <path d="M155 110 L165 112" stroke="#ED8936" stroke-width="2" stroke-linecap="round"/>
+</svg>

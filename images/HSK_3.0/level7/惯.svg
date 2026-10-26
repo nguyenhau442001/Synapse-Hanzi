@@ -1,0 +1,60 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(12, 12)">
+    <!-- Background subtle glow/shadow under the scene -->
+    <ellipse cx="108" cy="190" rx="70" ry="12" fill="#111317" opacity="0.6"/>
+
+    <!-- Parent character (Adult figure, sitting/leaning forward) -->
+    <g id="parent-character">
+      <!-- Body/Torso -->
+      <path d="M 65 140 Q 65 105 85 95 L 125 95 Q 145 105 145 140 Z" fill="#3B82F6"/>
+      <!-- Head -->
+      <circle cx="105" cy="72" r="18" fill="#FBBF24"/>
+      <!-- Hair -->
+      <path d="M 87 70 Q 105 52 123 70 Q 120 58 105 58 Q 90 58 87 70 Z" fill="#D97706"/>
+      <!-- Arm extending downward to spoil/pamper (holding up or offering something indulgent) -->
+      <path d="M 75 110 Q 55 125 50 145" fill="none" stroke="#3B82F6" stroke-width="12" stroke-linecap="round"/>
+      <!-- Hand -->
+      <circle cx="46" cy="150" r="7" fill="#FBBF24"/>
+    </g>
+
+    <!-- Child character (Spoiled child sitting on an ornate chair/throne, demanding or receiving excessive pampering) -->
+    <g id="child-character">
+      <!-- Ornate small chair -->
+      <rect x="135" y="125" width="45" height="55" rx="6" fill="#4B5563"/>
+      <rect x="130" y="110" width="55" height="20" rx="4" fill="#6B7280"/>
+
+      <!-- Child Body -->
+      <path d="M 140 145 Q 140 120 155 115 L 175 115 Q 190 120 190 145 Z" fill="#EC4899"/>
+      <!-- Child Head -->
+      <circle cx="165" cy="92" r="15" fill="#FBBF24"/>
+      <!-- Child Hair / Crown-like tuft -->
+      <path d="M 150 90 Q 165 75 180 90 Z" fill="#F59E0B"/>
+      
+      <!-- Spoiled expression / outstretched hands demanding -->
+      <path d="M 155 125 Q 140 135 135 130" fill="none" stroke="#EC4899" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="132" cy="128" r="5" fill="#FBBF24"/>
+    </g>
+
+    <!-- Excessive indulgent items (representing "过度迁就娇惯" - excessive pampering/spoiling with gifts/sweets floating or being handed over) -->
+    <g id="pampering-items" transform="translate(0, -5)">
+      <!-- Wrapped luxury gift box floating/offered -->
+      <rect x="80" y="120" width="28" height="28" rx="4" fill="#10B981"/>
+      <rect x="91" y="120" width="6" height="28" fill="#FBBF24"/>
+      <rect x="80" y="131" width="28" height="6" fill="#FBBF24"/>
+      <path d="M 94 120 Q 94 110 88 110 Q 82 110 94 120" fill="none" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- Floating sweet/candy symbolizing over-indulgence -->
+      <g transform="translate(125, 80) scale(0.8)">
+        <circle cx="0" cy="0" r="10" fill="#EF4444"/>
+        <path d="M -16 -6 L -10 0 L -16 6 Z" fill="#F87171"/>
+        <path d="M 16 -6 L 10 0 L 16 6 Z" fill="#F87171"/>
+      </g>
+      
+      <!-- Star accents representing indulgence/spoil (non-heart, non-abstract badge) -->
+      <path d="M 60 85 L 63 92 L 70 93 L 65 98 L 66 105 L 60 101 L 54 105 L 55 98 L 50 93 L 57 92 Z" fill="#FBBF24" opacity="0.8"/>
+      <path d="M 140 65 L 142 70 L 147 71 L 143 75 L 144 80 L 140 77 L 136 80 L 137 75 L 133 71 L 138 70 Z" fill="#FBBF24" opacity="0.6"/>
+    </g>
+  </g>
+</svg>

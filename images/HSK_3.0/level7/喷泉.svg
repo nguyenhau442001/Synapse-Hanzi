@@ -1,0 +1,61 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Glowing Ambient / Night City Vibe -->
+  <circle cx="120" cy="115" r="70" fill="#222C3C" opacity="0.6"/>
+
+  <!-- Fountain Base / Pool -->
+  <path d="M 60 160 L 180 160 C 190 160, 195 170, 190 178 C 180 190, 150 200, 120 200 C 90 200, 60 190, 50 178 C 45 170, 50 160, 60 160 Z" fill="#2E3B4E"/>
+  <ellipse cx="120" cy="160" rx="60" ry="12" fill="#3E4F67"/>
+  <ellipse cx="120" cy="162" rx="55" ry="9" fill="#141923"/>
+
+  <!-- Water Surface inside Pool with ripples -->
+  <ellipse cx="120" cy="163" rx="48" ry="7" fill="#00D2FF" opacity="0.3"/>
+  <ellipse cx="120" cy="163" rx="32" ry="4" fill="#00D2FF" opacity="0.5"/>
+
+  <!-- Fountain Tier Structure (Pedestal) -->
+  <!-- Bottom Tier Bowl -->
+  <path d="M 90 145 L 150 145 C 155 145, 158 150, 153 154 C 145 160, 133 162, 120 162 C 107 162, 95 160, 87 154 C 82 150, 85 145, 90 145 Z" fill="#5D6D7E"/>
+  <ellipse cx="120" cy="145" rx="30" ry="6" fill="#85929E"/>
+
+  <!-- Center Pillar -->
+  <rect x="114" y="115" width="12" height="32" fill="#5D6D7E"/>
+
+  <!-- Top Tier Bowl -->
+  <path d="M 100 110 L 140 140 C 143 140, 145 143, 142 145 C 137 148, 128 150, 120 150 C 112 150, 103 148, 98 145 C 95 143, 97 140, 100 140 Z" fill="#7F8C8D" opacity="0"/> <!-- invisible helper, draw bowl directly -->
+  <path d="M 95 110 L 145 110 C 150 110, 153 115, 148 119 C 140 125, 130 128, 120 128 C 110 128, 100 125, 92 119 C 87 115, 90 110, 95 110 Z" fill="#7F8C8D"/>
+  <ellipse cx="120" cy="110" rx="25" ry="5" fill="#A6ACAF"/>
+
+  <!-- Spire / Top Pillar -->
+  <rect x="116" y="95" width="8" height="17" fill="#7F8C8D"/>
+  <circle cx="120" cy="94" r="5" fill="#F39C12"/>
+
+  <!-- Water Streams (Arcs) - High Contrast Orange/Gold & Cyan accents -->
+  <!-- Outer large splashes from bottom tier -->
+  <path d="M 85 145 Q 60 110, 55 135" fill="none" stroke="#00D2FF" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <path d="M 155 145 Q 180 110, 185 135" fill="none" stroke="#00D2FF" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  
+  <path d="M 90 145 Q 70 120, 68 140" fill="none" stroke="#F39C12" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+  <path d="M 150 145 Q 170 120, 172 140" fill="none" stroke="#F39C12" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- Mid-tier splashes -->
+  <path d="M 100 110 Q 75 75, 80 100" fill="none" stroke="#00D2FF" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+  <path d="M 140 110 Q 165 75, 160 100" fill="none" stroke="#00D2FF" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- Center high jets (Gold/Orange focus highlight) -->
+  <path d="M 119 95 Q 120 50, 105 70" fill="none" stroke="#F39C12" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M 121 95 Q 120 50, 135 70" fill="none" stroke="#F39C12" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M 120 95 Q 120 40, 120 65" fill="none" stroke="#00D2FF" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Water Droplets / Sparkles -->
+  <circle cx="120" cy="38" r="2.5" fill="#FFFFFF"/>
+  <circle cx="103" cy="65" r="2" fill="#F39C12"/>
+  <circle cx="137" cy="65" r="2" fill="#F39C12"/>
+  <circle cx="75" cy="90" r="1.5" fill="#00D2FF"/>
+  <circle cx="165" cy="90" r="1.5" fill="#00D2FF"/>
+  <circle cx="52" cy="125" r="1.5" fill="#00D2FF"/>
+  <circle cx="188" cy="125" r="1.5" fill="#00D2FF"/>
+  <circle cx="65" cy="150" r="2" fill="#FFFFFF"/>
+  <circle cx="175" cy="150" r="2" fill="#FFFFFF"/>
+</svg>

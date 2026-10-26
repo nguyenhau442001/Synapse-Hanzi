@@ -1,0 +1,60 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambient Garden Elements (Night theme) -->
+  <!-- Ground Path Curve -->
+  <path d="M 0 190 Q 80 170 240 195 L 240 240 L 0 240 Z" fill="#222733"/>
+  <path d="M 0 185 Q 80 165 240 190" fill="none" stroke="#2E3646" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <!-- Subtle Garden Foliage / Bushes -->
+  <circle cx="40" cy="180" r="22" fill="#28332A"/>
+  <circle cx="25" cy="190" r="18" fill="#1F2822"/>
+  <circle cx="205" cy="185" r="25" fill="#28332A"/>
+  <circle cx="225" cy="195" r="20" fill="#1F2822"/>
+
+  <!-- Lantern Pole casting a warm glow on the scene -->
+  <rect x="185" y="100" width="4" height="90" fill="#3A4454"/>
+  <path d="M 187 100 L 197 85 L 177 85 Z" fill="#4B5563"/>
+  <circle cx="187" cy="92" r="8" fill="#FBBF24" opacity="0.9"/>
+  <!-- Lantern Glow Gradient -->
+  <circle cx="187" cy="92" r="45" fill="#FBBF24" opacity="0.15"/>
+
+  <!-- Motion Path (Lurking / Wandering curve) -->
+  <path d="M 80 165 Q 120 135 155 160 T 100 130" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-dasharray="6 6" opacity="0.6" stroke-linecap="round"/>
+
+  <!-- Walking Elderly Character (Representing 'zhuànyou' / strolling leisurely) -->
+  <g transform="translate(10, 0)">
+    <!-- Body/Outfit -->
+    <!-- Legs in motion (Stride) -->
+    <path d="M 115 150 L 100 185" stroke="#64748B" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 125 150 L 138 183" stroke="#475569" stroke-width="6" stroke-linecap="round"/>
+    <!-- Shoes -->
+    <ellipse cx="96" cy="187" rx="6" ry="3" fill="#0F172A"/>
+    <ellipse cx="142" cy="185" rx="6" ry="3" fill="#0F172A"/>
+
+    <!-- Torso -->
+    <path d="M 112 115 Q 130 115 128 155 L 110 155 Z" fill="#3B82F6"/>
+    <path d="M 115 115 L 125 115 L 127 152 L 113 152 Z" fill="#60A5FA"/>
+
+    <!-- Arms in relaxed strolling motion -->
+    <!-- Back Arm -->
+    <path d="M 116 122 L 102 142" stroke="#60A5FA" stroke-width="5" stroke-linecap="round"/>
+    <!-- Front Arm (holding something or swinging) -->
+    <path d="M 124 122 L 138 145" stroke="#60A5FA" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="140" cy="147" r="3" fill="#CBD5E1"/>
+
+    <!-- Neck & Head -->
+    <rect x="118" y="105" width="6" height="12" fill="#CBD5E1"/>
+    <!-- Head -->
+    <circle cx="121" cy="95" r="14" fill="#CBD5E1"/>
+    <!-- Hair (Elderly styling) -->
+    <path d="M 107 92 C 107 83 135 83 135 92 C 135 90 107 90 107 92 Z" fill="#94A3B8"/>
+    <!-- Gentle profile / Expression -->
+    <path d="M 132 94 Q 135 97 132 100" fill="none" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Small decorative natural elements (Leaves floating/drifting to emphasize outdoor environment) -->
+  <path d="M 70 110 Q 75 105 80 112 Q 72 115 70 110 Z" fill="#34D399" opacity="0.7"/>
+  <path d="M 160 80 Q 165 75 170 82 Q 162 85 160 80 Z" fill="#34D399" opacity="0.5"/>
+</svg>

@@ -1,0 +1,43 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow/spotlight for top news focus -->
+  <circle cx="120" cy="110" r="90" fill="#252A34" opacity="0.6"/>
+
+  <!-- Main News App Interface / Card (representing "tin trang nhất / tiêu đề hàng đầu") -->
+  <rect x="36" y="48" width="168" height="152" rx="12" fill="#21262D" stroke="#30363D" stroke-width="2"/>
+
+  <!-- App Top Bar / Header -->
+  <rect x="36" y="48" width="168" height="24" rx="12" fill="#161B22"/>
+  <circle cx="50" cy="60" r="3" fill="#FF5F56"/>
+  <circle cx="60" cy="60" r="3" fill="#FFBD2E"/>
+  <circle cx="70" cy="60" r="3" fill="#27C93F"/>
+
+  <!-- Top Headline / Headline Banner (Action Target: 头条) -->
+  <rect x="48" y="84" width="144" height="46" rx="8" fill="#FFB703" opacity="0.15"/>
+  <rect x="48" y="84" width="144" height="46" rx="8" fill="none" stroke="#FFB703" stroke-width="2"/>
+  
+  <!-- Headline content mock lines (Bold top story) -->
+  <rect x="64" y="96" width="90" height="8" rx="4" fill="#FFB703"/>
+  <rect x="64" y="110" width="112" height="6" rx="3" fill="#E6EDF3" opacity="0.8"/>
+
+  <!-- Secondary news items below -->
+  <rect x="48" y="142" width="144" height="24" rx="6" fill="#161B22"/>
+  <circle cx="60" cy="154" r="5" fill="#30363D"/>
+  <rect x="74" y="151" width="80" height="6" rx="3" fill="#8B949E"/>
+
+  <rect x="48" y="174" width="144" height="24" rx="6" fill="#161B22"/>
+  <circle cx="60" cy="186" r="5" fill="#30363D"/>
+  <rect x="74" y="183" width="95" height="6" rx="3" fill="#8B949E"/>
+
+  <!-- Dynamic Action: Person interacting, pointing/elevating to the top story (Verb/Action requirement) -->
+  <!-- Motion / Elevation lines rising to the top -->
+  <path d="M 120 160 L 120 138" stroke="#FFB703" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 3"/>
+  <path d="M 112 144 L 120 134 L 128 144" fill="none" stroke="#FFB703" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Character Hand reaching up to interact with/push to the top headline -->
+  <circle cx="120" cy="168" r="14" fill="#58A6FF"/>
+  <path d="M 113 168 L 120 156 L 127 168 Z" fill="#FFB703"/>
+
+</svg>

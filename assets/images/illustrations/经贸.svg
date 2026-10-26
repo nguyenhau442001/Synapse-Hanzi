@@ -1,0 +1,45 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle global background grid/network for international trade context -->
+  <path d="M40,120 L200,120 M120,40 L120,200" stroke="#262B36" stroke-width="1" stroke-dasharray="3,6"/>
+  <circle cx="120" cy="120" r="70" fill="none" stroke="#262B36" stroke-width="1"/>
+
+  <!-- Central physical object: A sleek, modern glowing globe framed by intersecting trade currency/exchange rings representing global economy & commerce (经贸) -->
+  
+  <!-- Meridian & Latitude background lines -->
+  <ellipse cx="120" cy="120" rx="45" ry="70" fill="none" stroke="#2E3646" stroke-width="1.5"/>
+  <ellipse cx="120" cy="120" rx="70" ry="45" fill="none" stroke="#2E3646" stroke-width="1.5"/>
+
+  <!-- Globe Base Sphere -->
+  <circle cx="120" cy="120" r="54" fill="#222834"/>
+  <circle cx="120" cy="120" r="54" fill="url(#globeGlow)" opacity="0.3"/>
+
+  <!-- Stylized Continents / Trade Regions (Flat Vector Shapes) -->
+  <path d="M95,95 Q105,85 115,95 T135,105 Q140,120 130,135 Q115,140 100,125 Z" fill="#323B4D"/>
+  <path d="M140,80 Q155,75 160,95 Q150,110 135,100 Z" fill="#323B4D"/>
+  <path d="M85,140 Q105,145 110,165 Q90,170 80,155 Z" fill="#323B4D"/>
+
+  <!-- Intersecting Dynamic Orbit / Trade Route Rings (Gold/Orange Accent) -->
+  <ellipse cx="120" cy="120" rx="82" ry="30" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" transform="rotate(-25 120 120)"/>
+  <ellipse cx="120" cy="120" rx="82" ry="30" fill="none" stroke="#3B82F6" stroke-width="2" stroke-dasharray="6,8" transform="rotate(35 120 120)"/>
+
+  <!-- Dynamic Trade Node Markers -->
+  <circle cx="178" cy="98" r="5" fill="#F59E0B"/>
+  <circle cx="178" cy="98" r="9" fill="#F59E0B" opacity="0.3"/>
+
+  <circle cx="62" cy="142" r="4" fill="#3B82F6"/>
+  <circle cx="62" cy="142" r="8" fill="#3B82F6" opacity="0.3"/>
+
+  <!-- Commercial Exchange Handshake / Partnership Node at Center -->
+  <circle cx="120" cy="120" r="22" fill="#1A1D24" stroke="#F59E0B" stroke-width="2"/>
+  <path d="M110,120 L117,127 L132,112" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Gradients -->
+  <defs>
+    <radialGradient id="globeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#1A1D24" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

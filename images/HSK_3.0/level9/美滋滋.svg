@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative subtle elements -->
+  <circle cx="120" cy="120" r="75" fill="#222732" opacity="0.6"/>
+  <path d="M120 40 L125 55 L140 60 L125 65 L120 80 L115 65 L100 60 L115 55 Z" fill="#F1C40F" opacity="0.15"/>
+  <path d="M175 75 L178 85 L188 88 L178 91 L175 101 L172 91 L162 88 L172 85 Z" fill="#F1C40F" opacity="0.2"/>
+  <path d="M60 150 L63 158 L71 161 L63 164 L60 172 L57 164 L49 161 L57 158 Z" fill="#F1C40F" opacity="0.2"/>
+
+  <!-- Central Character (Young girl feeling "měizīzī" - proud, overjoyed, glowing with satisfaction) -->
+  <g transform="translate(0, 10)">
+    <!-- Hair background -->
+    <path d="M85 85 Q75 120 80 155 Q90 170 100 175 L105 120 Q110 100 120 100 Q130 100 135 120 L140 175 Q150 170 160 155 Q165 120 155 85 Q120 70 85 85 Z" fill="#2C3E50"/>
+    
+    <!-- Award ribbon / Certificate held close to heart -->
+    <path d="M95 135 L120 120 L145 135 L140 175 L100 175 Z" fill="#E74C3C"/>
+    <path d="M120 120 L120 175" fill="none" stroke="#C0392B" stroke-width="4"/>
+    <!-- Gold medal -->
+    <circle cx="120" cy="135" r="14" fill="#F1C40F"/>
+    <circle cx="120" cy="135" r="10" fill="#F39C12"/>
+    <path d="M120 129 L122 133 L126 133 L123 135 L124 139 L120 137 L116 139 L117 135 L114 133 L118 133 Z" fill="#F1C40F"/>
+
+    <!-- Neck & Collar -->
+    <path d="M110 105 L130 105 L135 115 L105 115 Z" fill="#F5CBA7"/>
+    <path d="M95 112 Q120 125 145 112 L145 120 Q120 132 95 120 Z" fill="#ECF0F1"/>
+
+    <!-- Head / Face -->
+    <circle cx="120" cy="85" r="32" fill="#FAD7A0"/>
+
+    <!-- Rosy cheeks (sign of sweetness and joy) -->
+    <circle cx="102" cy="92" r="6" fill="#FF7675" opacity="0.6"/>
+    <circle cx="138" cy="92" r="6" fill="#FF7675" opacity="0.6"/>
+
+    <!-- Eyes (happy, closed curves ^_^ ) -->
+    <path d="M103 82 Q108 77 113 82" fill="none" stroke="#2C3E50" stroke-width="3" stroke-linecap="round"/>
+    <path d="M127 82 Q132 77 137 82" fill="none" stroke="#2C3E50" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Big joyful smile -->
+    <path d="M108 92 Q120 106 132 92" fill="#D35400"/>
+    <!-- Tongue detail -->
+    <path d="M115 97 Q120 103 125 97 Z" fill="#FF6B81"/>
+
+    <!-- Hair front / bangs -->
+    <path d="M88 75 Q100 65 120 70 Q140 65 152 75 Q155 85 145 80 Q120 75 95 80 Q85 85 88 75 Z" fill="#2C3E50"/>
+  </g>
+
+  <!-- Floating sweet/happy sparkle elements (representing "sweet and overjoyed" feeling) -->
+  <g transform="translate(0, 0)">
+    <!-- Golden sparkles -->
+    <path d="M55 70 L58 80 L68 83 L58 86 L55 96 L52 86 L42 83 L52 80 Z" fill="#F1C40F"/>
+    <path d="M185 95 L187 101 L193 103 L187 105 L185 111 L183 105 L177 103 L183 101 Z" fill="#F1C40F"/>
+    <path d="M75 145 L77 150 L82 152 L77 154 L75 159 L73 154 L68 152 L73 150 Z" fill="#F39C12"/>
+    <path d="M165 140 L168 147 L175 150 L168 153 L165 160 L162 153 L155 150 L162 147 Z" fill="#F1C40F"/>
+  </g>
+</svg>

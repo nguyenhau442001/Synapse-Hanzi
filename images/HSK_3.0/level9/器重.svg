@@ -1,0 +1,59 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Floor shadow / platform -->
+    <ellipse cx="120" cy="195" rx="70" ry="12" fill="#111318"/>
+    
+    <!-- Heavy ornate Chinese ancient pedestal vessel (representing "器" - vessel/talent and "重" - heavy/weight/value) -->
+    <!-- Vessel base -->
+    <path d="M 95 185 L 145 185 L 140 165 L 100 165 Z" fill="#3E4451"/>
+    
+    <!-- Vessel stem -->
+    <rect x="108" y="145" width="24" height="25" fill="#4E5668"/>
+    
+    <!-- Main vessel body (Ding/Zun style - representing container of great worth) -->
+    <path d="M 80 95 C 80 135, 90 145, 120 145 C 150 145, 160 135, 160 95 Z" fill="#2C313C"/>
+    <path d="M 85 95 C 85 128, 93 138, 120 138 C 147 138, 155 128, 155 95 Z" fill="#3E4451"/>
+    
+    <!-- Vessel rim -->
+    <rect x="75" y="85" width="90" height="12" rx="4" fill="#F1C40F"/>
+    
+    <!-- Handles -->
+    <path d="M 75 92 C 60 92, 60 115, 76 120" fill="none" stroke="#F1C40F" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 165 92 C 180 92, 180 115, 164 120" fill="none" stroke="#F1C40F" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Decorative patterns on vessel (Traditional taotie-inspired modern geometric lines) -->
+    <path d="M 105 105 L 120 120 L 135 105" fill="none" stroke="#5C667A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="120" cy="100" r="4" fill="#F1C40F"/>
+    
+    <!-- Glowing beam / Weight and Value aura (representing "重" - value, trust, and recognition) -->
+    <path d="M 120 30 L 145 75 L 95 75 Z" fill="url(#goldGrad)" opacity="0.15"/>
+    
+    <!-- Central floating glowing golden crest/medal (Symbolizing high trust, recognition and promotion) -->
+    <g transform="translate(120, 65)">
+      <!-- Outer glow -->
+      <circle cx="0" cy="0" r="24" fill="#F1C40F" opacity="0.2"/>
+      
+      <!-- Medal base -->
+      <circle cx="0" cy="0" r="18" fill="#F1C40F"/>
+      <circle cx="0" cy="0" r="13" fill="#D4AC0D"/>
+      
+      <!-- Star icon inside medal -->
+      <polygon points="0,-7 2,-2 7,-2 3,1 5,6 0,3 -5,6 -3,1 -7,-2 -2,-2" fill="#FFFFFF"/>
+    </g>
+    
+    <!-- Rising upward supporting hand silhouettes at the base (representing the act of elevating and trusting someone) -->
+    <path d="M 70 190 C 70 180, 85 175, 95 185" fill="none" stroke="#F1C40F" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 170 190 C 170 180, 155 175, 145 185" fill="none" stroke="#F1C40F" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F1C40F" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#F1C40F" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient glow on table / center -->
+  <ellipse cx="120" cy="180" rx="80" ry="20" fill="#252A34" opacity="0.6"/>
+
+  <!-- Medical Consultation Table (Oval meeting table) -->
+  <path d="M 50,150 L 190,150 C 205,150 215,160 215,175 C 215,190 205,200 190,200 L 50,200 C 35,200 25,190 25,175 C 25,160 35,150 50,150 Z" fill="#2D3748"/>
+  <path d="M 60,155 L 180,155 C 193,155 200,163 200,175 C 200,187 193,195 180,195 L 60,195 C 47,195 40,187 40,175 C 40,163 47,155 60,155 Z" fill="#1E2530"/>
+
+  <!-- Central Patient Case / Holographic Medical Scan on Table -->
+  <g transform="translate(95, 125)">
+    <!-- Base stand -->
+    <rect x="20" y="30" width="10" height="15" fill="#4A5568"/>
+    <rect x="10" y="45" width="30" height="4" rx="2" fill="#718096"/>
+    <!-- Holographic display screen -->
+    <rect x="0" y="0" width="50" height="32" rx="4" fill="#0EA5E9" fill-opacity="0.15" stroke="#38BDF8" stroke-width="1.5"/>
+    <!-- Heartbeat / EKG line inside hologram -->
+    <path d="M 5,16 L 15,16 L 20,8 L 25,24 L 30,12 L 35,20 L 40,16 L 45,16" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Expert 1 (Left - Surgeon / Specialist) -->
+  <g transform="translate(30, 80)">
+    <!-- Body / White Coat -->
+    <path d="M 15,70 C 15,50 30,45 45,45 C 60,45 75,50 75,70 L 75,90 L 15,90 Z" fill="#3B82F6"/>
+    <path d="M 30,45 L 45,70 L 60,45 Z" fill="#FFFFFF"/>
+    <!-- Head -->
+    <circle cx="45" cy="28" r="14" fill="#FBBF24"/>
+    <!-- Hair -->
+    <path d="M 31,25 C 31,16 38,14 45,14 C 52,14 59,16 59,25 Z" fill="#1E293B"/>
+    <!-- Stethoscope around neck -->
+    <path d="M 38,36 C 38,36 45,42 52,36" fill="none" stroke="#94A3B8" stroke-width="2"/>
+    <circle cx="45" cy="43" r="3" fill="#94A3B8"/>
+  </g>
+
+  <!-- Expert 2 (Right - Physician / Specialist) -->
+  <g transform="translate(135, 80)">
+    <!-- Body / White Coat -->
+    <path d="M 15,70 C 15,50 30,45 45,45 C 60,45 75,50 75,70 L 75,90 L 15,90 Z" fill="#10B981"/>
+    <path d="M 30,45 L 45,70 L 60,45 Z" fill="#FFFFFF"/>
+    <!-- Head -->
+    <circle cx="45" cy="28" r="14" fill="#F87171"/>
+    <!-- Hair / Medical Cap detail -->
+    <path d="M 31,26 C 35,16 55,16 59,26 Z" fill="#334155"/>
+    <!-- Glasses -->
+    <rect x="38" y="24" width="7" height="4" rx="1" fill="none" stroke="#1E293B" stroke-width="1.5"/>
+    <rect x="47" y="24" width="7" height="4" rx="1" fill="none" stroke="#1E293B" stroke-width="1.5"/>
+    <line x1="45" y1="26" x2="47" y2="26" stroke="#1E293B" stroke-width="1.5"/>
+  </g>
+
+  <!-- Expert 3 (Center Back - Chief / Lead Specialist) -->
+  <g transform="translate(82, 60)">
+    <!-- Body / White Coat -->
+    <path d="M 15,70 C 15,50 30,45 45,45 C 60,45 75,50 75,70 L 75,90 L 15,90 Z" fill="#F59E0B"/>
+    <path d="M 30,45 L 45,70 L 60,45 Z" fill="#FFFFFF"/>
+    <!-- Head -->
+    <circle cx="45" cy="28" r="14" fill="#FBBF24"/>
+    <!-- Hair (Grayer/Distinguished) -->
+    <path d="M 31,24 C 32,15 38,13 45,13 C 52,13 58,15 59,24 Z" fill="#64748B"/>
+    <!-- Focused expression / Eyebrows -->
+    <line x1="39" y1="24" x2="43" y2="26" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="47" y1="26" x2="51" y2="24" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Focus / Collaboration Indicators (Professional minimal nodes floating above) -->
+  <g transform="translate(120, 45)">
+    <line x1="-35" y1="15" x2="0" y2="0" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <line x1="35" y1="15" x2="0" y2="0" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <circle cx="0" cy="0" r="4" fill="#F59E0B"/>
+    <circle cx="-35" cy="15" r="3" fill="#38BDF8"/>
+    <circle cx="35" cy="15" r="3" fill="#10B981"/>
+  </g>
+
+</svg>

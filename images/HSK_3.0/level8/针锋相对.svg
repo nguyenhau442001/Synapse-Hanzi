@@ -1,0 +1,19 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Left Needle/Blade -->
+  <g transform="translate(80, 120) rotate(-45)">
+    <path d="M0,0 L100,0 L95,10 L5,10 Z" fill="#FFB84D"/>
+    <path d="M95,0 L110,5 L95,10 Z" fill="#FFD699"/>
+  </g>
+  
+  <!-- Right Needle/Blade -->
+  <g transform="translate(160, 120) rotate(135)">
+    <path d="M0,0 L100,0 L95,10 L5,10 Z" fill="#4D94FF"/>
+    <path d="M95,0 L110,5 L95,10 Z" fill="#99C2FF"/>
+  </g>
+  
+  <!-- Collision Point -->
+  <circle cx="120" cy="120" r="8" fill="#FFFFFF" opacity="0.2"/>
+  <circle cx="120" cy="120" r="4" fill="#FFFFFF"/>
+</svg>

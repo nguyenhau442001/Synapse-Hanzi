@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for warm hospitality setting -->
+  <circle cx="120" cy="125" r="70" fill="#2D2328" opacity="0.6"/>
+
+  <!-- Family representation: Mother and Father (The Bride's side / 家长) -->
+  <!-- Father (Right side) -->
+  <g transform="translate(145, 85)">
+    <!-- Suit body -->
+    <path d="M-20 85 C-20 60 -10 50 -10 35 C-10 25 -5 20 0 20 C5 20 10 25 10 35 C10 50 20 60 20 85 Z" fill="#2E3B4E"/>
+    <!-- Suit lapels -->
+    <path d="M-10 35 L0 55 L10 35 Z" fill="#1E2732"/>
+    <path d="M-3 35 L0 45 L3 35 Z" fill="#E2E8F0"/>
+    <!-- Head -->
+    <circle cx="0" cy="0" r="16" fill="#F1C27D"/>
+    <!-- Hair -->
+    <path d="M-15 -3 C-15 -12 -8 -16 0 -16 C8 -16 15 -12 15 -3 C10 -7 -10 -7 -15 -3 Z" fill="#333333"/>
+    <!-- Welcoming arm gesture -->
+    <path d="M10 40 C25 45 35 60 30 75" fill="none" stroke="#2E3B4E" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="31" cy="79" r="5" fill="#F1C27D"/>
+  </g>
+
+  <!-- Mother (Left side, wearing traditional/formal qipao collar outline) -->
+  <g transform="translate(95, 85)">
+    <!-- Dress body -->
+    <path d="M-22 85 C-22 55 -12 45 -10 33 C-10 25 -5 20 0 20 C5 20 10 25 10 33 C12 45 22 55 22 85 Z" fill="#B83232"/>
+    <!-- Collar detail -->
+    <path d="M-6 26 L0 32 L6 26" fill="none" stroke="#E2E8F0" stroke-width="2"/>
+    <!-- Head -->
+    <circle cx="0" cy="0" r="15" fill="#F5D0A9"/>
+    <!-- Hair (bun style) -->
+    <path d="M-14 -2 C-14 -12 -6 -15 0 -15 C8 -15 14 -12 14 -2 C12 -6 -12 -6 -14 -2 Z" fill="#222222"/>
+    <circle cx="0" cy="-18" r="5" fill="#222222"/>
+    <!-- Welcoming open hand gesture -->
+    <path d="M-10 40 C-22 45 -32 55 -28 70" fill="none" stroke="#B83232" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="-29" cy="74" r="4.5" fill="#F5D0A9"/>
+  </g>
+
+  <!-- Symbolic welcoming element: Traditional celebratory hanging lantern / ribbon arch hint at top -->
+  <path d="M60 40 Q120 20 180 40" fill="none" stroke="#E5A93B" stroke-width="2" stroke-dasharray="4,4" opacity="0.6"/>
+  <circle cx="120" cy="27" r="6" fill="#E5A93B"/>
+
+  <!-- Floor line representing home/venue interior -->
+  <line x1="40" y1="170" x2="200" y2="170" stroke="#3A4454" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Focus / Context Indicator: Subtle gold framing element representing formal family gathering / banquet setting -->
+  <path d="M50 140 L50 155 L65 155" fill="none" stroke="#E5A93B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M190 140 L190 155 L175 155" fill="none" stroke="#E5A93B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,32 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Warehouse Floor -->
+  <path d="M40 180 L200 180 L220 210 L20 210 Z" fill="#2D343E"/>
+  
+  <!-- The Precious Equipment (Central Object) -->
+  <rect x="85" y="120" width="70" height="60" rx="4" fill="#3D4756" stroke="#FFC107" stroke-width="2"/>
+  <rect x="95" y="130" width="50" height="40" rx="2" fill="#262D37"/>
+  <circle cx="120" cy="150" r="10" fill="#FFC107" opacity="0.8"/>
+  
+  <!-- The Guard (Character) -->
+  <g transform="translate(160, 100)">
+    <!-- Body -->
+    <path d="M0 80 L40 80 L35 40 L5 40 Z" fill="#4A5568"/>
+    <!-- Head -->
+    <circle cx="20" cy="25" r="15" fill="#A0AEC0"/>
+    <!-- Cap -->
+    <path d="M5 15 L35 15 L30 25 L10 25 Z" fill="#2D343E"/>
+    <!-- Arm reaching out to guard -->
+    <path d="M0 50 L-25 70" stroke="#A0AEC0" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Vigilant Stance (Flashlight beam/Focus) -->
+  <path d="M135 150 L180 120 L180 180 Z" fill="#FFC107" opacity="0.15"/>
+  
+  <!-- Security Fence (Background context) -->
+  <line x1="40" y1="180" x2="40" y2="80" stroke="#4A5568" stroke-width="4"/>
+  <line x1="60" y1="180" x2="60" y2="80" stroke="#4A5568" stroke-width="4"/>
+  <line x1="40" y1="100" x2="60" y2="100" stroke="#4A5568" stroke-width="4"/>
+  <line x1="40" y1="140" x2="60" y2="140" stroke="#4A5568" stroke-width="4"/>
+</svg>

@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background accent circles representing selection pool -->
+  <circle cx="120" cy="120" r="88" fill="none" stroke="#2A2F3D" stroke-width="2" stroke-dasharray="4 8"/>
+  <circle cx="120" cy="120" r="68" fill="none" stroke="#2A2F3D" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Central Noun Object: A sleek, modern raffle/lottery tumbler (representing randomized selection/sampling in market inspection) -->
+  <g transform="translate(120, 115)">
+    <!-- Stand Base -->
+    <path d="M-28 65 L28 65 L22 75 L-22 75 Z" fill="#3E4456"/>
+    <!-- Side Holder Left -->
+    <path d="M-30 0 L-42 10 L-42 45 L-32 55 L-26 45 L-32 15 Z" fill="#525B75"/>
+    <!-- Side Holder Right -->
+    <path d="M30 0 L42 10 L42 45 L32 55 L26 45 L32 15 Z" fill="#525B75"/>
+
+    <!-- Rotating Cage / Drum Outer Ring -->
+    <ellipse cx="0" cy="0" rx="36" ry="52" fill="none" stroke="#687393" stroke-width="5"/>
+    
+    <!-- Cage Bars (Transparent cylindrical effect) -->
+    <path d="M-36 0 C-36 28 -16 52 0 52 C16 52 36 28 36 0 C36 -28 16 -52 0 -52 C-16 -52 -36 -28 -36 0 Z" fill="#15181F" opacity="0.8"/>
+    <line x1="0" y1="-52" x2="0" y2="52" stroke="#687393" stroke-width="3"/>
+    <line x1="-33" y1="-20" x2="33" y2="20" stroke="#687393" stroke-width="2.5"/>
+    <line x1="-33" y1="20" x2="33" y2="-20" stroke="#687393" stroke-width="2.5"/>
+
+    <!-- Random Sampling Tokens / Balls inside tumbler -->
+    <circle cx="-10" cy="10" r="8" fill="#F59E0B"/>
+    <circle cx="12" cy="-14" r="7" fill="#3B82F6"/>
+    <circle cx="5" cy="18" r="7.5" fill="#10B981"/>
+    <circle cx="-14" cy="-8" r="6.5" fill="#EC4899"/>
+    <circle cx="2" cy="-2" r="8" fill="#F59E0B"/>
+
+    <!-- Selected Token dropping down / popping out (Highlighting 'suiji' action) -->
+    <g transform="translate(0, 72)">
+      <circle cx="0" cy="0" r="12" fill="#F59E0B"/>
+      <!-- Inner detail on selected token -->
+      <circle cx="0" cy="0" r="8" fill="none" stroke="#FFF" stroke-width="1.5" opacity="0.6"/>
+      <path d="M-3 -1 L-1 2 L4 -3" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Motion / Selection Sparks -->
+    <path d="M-50 -10 L-58 -14" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M50 10 L58 14" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M-35 -40 L-43 -48" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
+    <path d="M35 40 L43 48" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

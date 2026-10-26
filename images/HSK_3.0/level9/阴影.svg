@@ -1,0 +1,30 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambient Glow for Psychological Contrast -->
+  <circle cx="120" cy="110" r="70" fill="#2D3748" opacity="0.3"/>
+
+  <!-- Character Silhouette representing inner psyche (Context: 心理阴影) -->
+  <g transform="translate(0, 5)">
+    <!-- Head and Shoulders base -->
+    <path d="M120 70 C105 70 95 82 95 97 C95 110 102 120 110 125 L110 150 C110 155 114 159 120 159 C126 159 130 155 130 150 L130 125 C138 120 145 110 145 97 C145 82 135 70 120 70 Z" fill="#4A5568"/>
+    
+    <!-- Face Profile / Silhouette inner detail (facing left) -->
+    <circle cx="120" cy="95" r="20" fill="#2D3748"/>
+  </g>
+
+  <!-- The Dark Shadow (阴影) projecting from the silhouette -->
+  <g>
+    <!-- Sharp, dramatic shadow shape overlaying the chest/mind area, symbolizing trauma/dark memory -->
+    <path d="M120 95 L165 65 C175 100 170 140 150 165 L120 125 Z" fill="#111318" opacity="0.85"/>
+    
+    <!-- Secondary angular shadow spikes representing the lingering mental burden -->
+    <path d="M115 115 L175 110 L145 155 Z" fill="#0D0E12" opacity="0.9"/>
+  </g>
+
+  <!-- Focus Accent: Subtle golden light cutting through, highlighting the struggle -->
+  <path d="M75 50 L105 170" stroke="#F6AD55" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <circle cx="105" cy="170" r="3" fill="#F6AD55" opacity="0.6"/>
+
+</svg>

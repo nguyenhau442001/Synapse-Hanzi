@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Atmospheric Background Glow -->
+  <circle cx="120" cy="115" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Stylized Government / Administrative Capital Building (Symbolizing 首府) -->
+  <g transform="translate(0, 15)">
+    <!-- Base Platform & Steps -->
+    <rect x="70" y="145" width="100" height="8" rx="2" fill="#3A4252"/>
+    <rect x="80" y="153" width="80" height="6" rx="1" fill="#4B5563"/>
+
+    <!-- Main Administrative Hall Structure -->
+    <rect x="75" y="95" width="90" height="50" rx="3" fill="#2D3748"/>
+    
+    <!-- Central Grand Entrance / Portico -->
+    <rect x="104" y="110" width="32" height="35" rx="2" fill="#1F2937"/>
+    <path d="M 120 110 C 113 110 108 115 108 120 L 108 145 L 132 145 L 132 120 C 132 115 127 110 120 110 Z" fill="#F59E0B" opacity="0.15"/>
+
+    <!-- Classic Administrative Columns -->
+    <rect x="86" y="105" width="6" height="40" rx="2" fill="#9CA3AF"/>
+    <rect x="96" y="105" width="6" height="40" rx="2" fill="#9CA3AF"/>
+    <rect x="138" y="105" width="6" height="40" rx="2" fill="#9CA3AF"/>
+    <rect x="148" y="105" width="6" height="40" rx="2" fill="#9CA3AF"/>
+
+    <!-- Prominent Capital Dome (Representing regional hub / political center) -->
+    <path d="M 95 95 C 95 65 145 65 145 95 Z" fill="#3B82F6"/>
+    <path d="M 115 62 L 125 62 L 120 54 Z" fill="#F59E0B"/>
+
+    <!-- Accent Roof Cornice -->
+    <rect x="72" y="90" width="96" height="6" rx="2" fill="#4B5563"/>
+
+    <!-- Windows (Administrative offices) -->
+    <rect x="83" y="115" width="8" height="12" rx="1.5" fill="#60A5FA" opacity="0.8"/>
+    <rect x="149" y="115" width="8" height="12" rx="1.5" fill="#60A5FA" opacity="0.8"/>
+  </g>
+
+  <!-- Location Pin / Focal Accent (Highlighting the "Capital City" status) -->
+  <g transform="translate(120, 35)">
+    <!-- Outer Ping Pulse -->
+    <circle cx="0" cy="0" r="16" fill="#F59E0B" opacity="0.2"/>
+    <!-- Location Pin Body -->
+    <path d="M 0 -12 C -6.6 -12 -12 -6.6 -12 0 C -12 7 -2 16 0 18 C 2 16 12 7 12 0 C 12 -6.6 6.6 -12 0 -12 Z" fill="#F59E0B"/>
+    <!-- Inner Dot of Pin -->
+    <circle cx="0" cy="-1" r="4.5" fill="#1A1D24"/>
+  </g>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="120" cy="172" rx="60" ry="5" fill="#111318"/>
+</svg>

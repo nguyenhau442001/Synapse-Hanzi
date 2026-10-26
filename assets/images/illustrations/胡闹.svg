@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle floor line for ground context -->
+  <line x1="40" y1="185" x2="200" y2="185" stroke="#2A2F3B" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Central Character: A mischievous figure causing a ruckus (胡闹 - quậy phá, làm loạn) -->
+  <g transform="translate(0, 0)">
+    <!-- Motion lines / Chaos indicators -->
+    <path d="M 60,90 Q 75,70 65,55" fill="none" stroke="#FF5722" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 180,95 Q 165,75 175,60" fill="none" stroke="#FFC107" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 35,130 Q 20,120 30,105" fill="none" stroke="#FF5722" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M 210,135 Q 225,125 215,110" fill="none" stroke="#FFC107" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Flying/Dropped items representing chaotic disruption -->
+    <!-- Papers flying -->
+    <polygon points="50,75 70,70 65,85 45,90" fill="#94A3B8" transform="rotate(-25 57 80)"/>
+    <polygon points="175,70 195,80 185,95 165,85" fill="#CBD5E1" transform="rotate(35 180 82)"/>
+    <!-- Knocked over cup -->
+    <path d="M 170,165 L 190,160 L 193,172 L 173,177 Z" fill="#FF5722"/>
+    <!-- Splashing liquid drop -->
+    <circle cx="160" cy="170" r="4" fill="#38BDF8"/>
+    <circle cx="152" cy="178" r="3" fill="#38BDF8"/>
+
+    <!-- Dynamic Figure Body & Limbs in Mid-Action -->
+    <!-- Left Leg kicking up -->
+    <path d="M 105,145 L 75,130 L 70,115" fill="none" stroke="#38BDF8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Right Leg planted/bending -->
+    <path d="M 125,145 L 140,175 L 155,183" fill="none" stroke="#38BDF8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Torso (leaning wildly) -->
+    <path d="M 110,100 L 130,140 L 105,150 L 95,110 Z" fill="#38BDF8"/>
+
+    <!-- Left Arm flailing high -->
+    <path d="M 100,105 L 75,80 L 60,75" fill="none" stroke="#38BDF8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Right Arm flailing wide -->
+    <path d="M 120,115 L 150,105 L 170,115" fill="none" stroke="#38BDF8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Head (tilted backwards/sideways in unruly excitement) -->
+    <circle cx="95" cy="85" r="18" fill="#F1F5F9"/>
+
+    <!-- Unruly Hair Tufts -->
+    <path d="M 80,75 Q 85,60 95,70 Q 105,60 102,76" fill="#FFC107"/>
+
+    <!-- Playful/Naughty Face Expressions -->
+    <!-- Closed laughing/yelling curved eyes -->
+    <path d="M 87,83 Q 91,88 95,83" fill="none" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 97,83 Q 101,88 105,83" fill="none" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Wide open laughing mouth -->
+    <path d="M 91,91 Q 96,101 101,91 Z" fill="#FF5722"/>
+
+    <!-- Dynamic Jacket/Shirt Accent -->
+    <path d="M 102,110 L 122,120 L 115,135 L 97,125 Z" fill="#FFC107" opacity="0.9"/>
+  </g>
+
+  <!-- Focus / Accent Glow Stars/Burst representing disturbance -->
+  <path d="M 120,40 L 123,48 L 131,51 L 123,54 L 120,62 L 117,54 L 109,51 L 117,48 Z" fill="#FFC107"/>
+  <path d="M 55,135 L 57,140 L 62,142 L 57,144 L 55,149 L 53,144 L 48,142 L 53,140 Z" fill="#FF5722" transform="scale(0.8) translate(20, 20)"/>
+</svg>

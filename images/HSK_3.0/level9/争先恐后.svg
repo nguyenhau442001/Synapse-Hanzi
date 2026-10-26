@@ -1,0 +1,33 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Doorway frame -->
+  <path d="M70 60h100v130H70z" fill="#2D343E"/>
+  
+  <!-- Student 1 (Leading) -->
+  <g transform="translate(130, 100)">
+    <circle cx="10" cy="10" r="10" fill="#FFB84D"/>
+    <path d="M5 25h10v40h-10z" fill="#FFB84D"/>
+    <path d="M0 35l10-10 10 10" fill="none" stroke="#FFB84D" stroke-width="4" stroke-linecap="round"/>
+    <path d="M5 65l-5 20M15 65l5 20" fill="none" stroke="#FFB84D" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Student 2 (Following closely) -->
+  <g transform="translate(90, 110)">
+    <circle cx="10" cy="10" r="10" fill="#4DA6FF"/>
+    <path d="M5 25h10v40h-10z" fill="#4DA6FF"/>
+    <path d="M0 35l10-10 10 10" fill="none" stroke="#4DA6FF" stroke-width="4" stroke-linecap="round"/>
+    <path d="M5 65l-5 20M15 65l5 20" fill="none" stroke="#4DA6FF" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Student 3 (Pushing from back) -->
+  <g transform="translate(50, 120)">
+    <circle cx="10" cy="10" r="10" fill="#FF6B6B"/>
+    <path d="M5 25h10v40h-10z" fill="#FF6B6B"/>
+    <path d="M0 35l10-10 10 10" fill="none" stroke="#FF6B6B" stroke-width="4" stroke-linecap="round"/>
+    <path d="M5 65l-5 20M15 65l5 20" fill="none" stroke="#FF6B6B" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Motion lines -->
+  <path d="M160 110l20-10M170 130l20-10M160 150l20-10" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round"/>
+</svg>

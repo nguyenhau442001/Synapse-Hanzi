@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Reservoir structure -->
+  <path d="M40 120 L200 120 L190 200 L50 200 Z" fill="#2C3E50" stroke="#34495E" stroke-width="2"/>
+  <path d="M50 120 L40 120 L50 200 Z" fill="#34495E"/>
+  <path d="M190 120 L200 120 L190 200 Z" fill="#34495E"/>
+  
+  <!-- Water inside reservoir -->
+  <path d="M45 130 L195 130 L185 195 L55 195 Z" fill="#3498DB" opacity="0.8"/>
+  
+  <!-- Pipe output -->
+  <rect x="190" y="160" width="30" height="15" fill="#7F8C8D"/>
+  
+  <!-- Continuous flow stream -->
+  <path d="M220 167.5 C240 167.5 240 167.5 260 167.5" stroke="#F1C40F" stroke-width="6" stroke-dasharray="8 8" stroke-linecap="round">
+    <animate attributeName="stroke-dashoffset" from="16" to="0" dur="1s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Water droplets falling from stream -->
+  <circle cx="230" cy="167.5" r="3" fill="#F1C40F"/>
+  <circle cx="245" cy="167.5" r="3" fill="#F1C40F"/>
+  <circle cx="260" cy="167.5" r="3" fill="#F1C40F"/>
+  
+  <!-- Decorative ripples at the bottom -->
+  <path d="M60 190 Q70 185 80 190" stroke="#5DADE2" stroke-width="2" fill="none"/>
+  <path d="M100 190 Q110 185 120 190" stroke="#5DADE2" stroke-width="2" fill="none"/>
+  <path d="M140 190 Q150 185 160 190" stroke="#5DADE2" stroke-width="2" fill="none"/>
+</svg>

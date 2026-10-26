@@ -1,0 +1,54 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle floor shadow / ground -->
+  <ellipse cx="120" cy="186" rx="72" ry="10" fill="#14161B"/>
+
+  <!-- Modern Storefront Building representing a Private Enterprise (私营) -->
+  <!-- Building body -->
+  <rect x="68" y="70" width="104" height="110" rx="6" fill="#222733"/>
+  
+  <!-- Left & Right structural columns / frame -->
+  <rect x="68" y="70" width="10" height="110" fill="#2C3343"/>
+  <rect x="162" y="70" width="10" height="110" fill="#2C3343"/>
+
+  <!-- Glass storefront windows -->
+  <!-- Left Window -->
+  <rect x="84" y="96" width="32" height="66" rx="4" fill="#15181F"/>
+  <!-- Right Window -->
+  <rect x="124" y="96" width="32" height="66" rx="4" fill="#15181F"/>
+  <!-- Window Glass Highlights -->
+  <polygon points="84,116 104,96 84,96" fill="#FFFFFF" opacity="0.04"/>
+  <polygon points="124,116 144,96 124,96" fill="#FFFFFF" opacity="0.04"/>
+
+  <!-- Double Glass Entrance Doors in the center -->
+  <rect x="106" y="112" width="28" height="50" rx="2" fill="#2C3343"/>
+  <line x1="120" y1="112" x2="120" y2="162" stroke="#1A1D24" stroke-width="2"/>
+  <!-- Door handle dots -->
+  <circle cx="116" cy="138" r="1.5" fill="#E59835"/>
+  <circle cx="124" cy="138" r="1.5" fill="#E59835"/>
+
+  <!-- Store Awning / Canopy with modern stripes -->
+  <path d="M 58 70 L 182 70 L 174 52 L 66 52 Z" fill="#2C3343"/>
+  <path d="M 66 52 L 174 52 L 182 70 L 174 70 L 168 56 L 150 56 L 156 70 L 148 70 L 142 56 L 124 56 L 130 70 L 122 70 L 116 56 L 98 56 L 104 70 L 96 70 L 90 56 L 72 56 L 78 70 L 66 70 Z" fill="#E59835"/>
+
+  <!-- Independent Business Signage / Plaque on Top -->
+  <!-- Mounting bars -->
+  <rect x="110" y="32" width="4" height="12" fill="#8C95A6"/>
+  <rect x="126" y="32" width="4" height="12" fill="#8C95A6"/>
+  <!-- Sleek Golden/Orange Sign Board -->
+  <rect x="85" y="16" width="70" height="20" rx="4" fill="#E59835"/>
+  <!-- Inner graphic detail on sign (representing business / entrepreneurship icon) -->
+  <circle cx="100" cy="26" r="4" fill="#1A1D24"/>
+  <rect x="110" y="24" width="35" height="4" rx="2" fill="#1A1D24"/>
+
+  <!-- Growth sprout / tree beside the storefront representing healthy private enterprise development -->
+  <path d="M 50 174 C 50 160 56 150 64 140" stroke="#4ADE80" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M 57 155 C 50 152 44 154 40 160 C 44 164 50 162 57 155 Z" fill="#4ADE80"/>
+  <path d="M 61 146 C 68 142 73 145 76 151 C 71 155 66 153 61 146 Z" fill="#22C55E"/>
+  
+  <!-- Planter pot -->
+  <path d="M 44 174 L 56 174 L 54 184 L 46 184 Z" fill="#8C95A6"/>
+
+</svg>

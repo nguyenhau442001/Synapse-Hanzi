@@ -1,0 +1,32 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background atmosphere: subtle lines suggesting a conversation space -->
+  <path d="M40 180 L200 180" stroke="#2D343E" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Character 1: The Elder (Narrator) -->
+  <g>
+    <circle cx="70" cy="110" r="25" fill="#FFB84D"/>
+    <path d="M55 140 C55 170, 85 170, 85 140" fill="#FFB84D"/>
+    <!-- Hand gesture: pointing/referencing -->
+    <path d="M95 130 L120 110" stroke="#FFB84D" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="125" cy="105" r="6" fill="#FFB84D"/>
+  </g>
+  
+  <!-- Character 2: The Listener -->
+  <g>
+    <circle cx="170" cy="130" r="20" fill="#6C7A89"/>
+    <path d="M155 150 C155 180, 185 180, 185 150" fill="#6C7A89"/>
+  </g>
+  
+  <!-- The "Topic" being discussed: A stylized mountain/path silhouette representing the "hardship/past" -->
+  <g>
+    <path d="M110 160 L130 120 L150 160 Z" fill="#3D4755"/>
+    <path d="M120 150 L140 150" stroke="#FFB84D" stroke-width="2"/>
+    <path d="M125 140 L135 140" stroke="#FFB84D" stroke-width="2"/>
+  </g>
+  
+  <!-- Motion lines indicating speech/reference -->
+  <path d="M100 100 Q115 85 130 95" stroke="#FFB84D" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M105 90 Q120 75 135 85" stroke="#FFB84D" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

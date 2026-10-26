@@ -1,0 +1,66 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle stage spotlight glow -->
+  <ellipse cx="120" cy="140" rx="80" ry="40" fill="#38BDF8" opacity="0.08"/>
+
+  <!-- Magician / Character representing the subject of continuous action -->
+  <g transform="translate(0, 10)">
+    <!-- Body / Suit -->
+    <path d="M95 150 L95 180 L80 180 L80 150 Z" fill="#2563EB"/>
+    <path d="M145 150 L145 180 L160 180 L160 150 Z" fill="#2563EB"/>
+    <path d="M90 115 L150 115 L155 150 L85 150 Z" fill="#1E293B"/>
+    <!-- Shirt & Bowtie -->
+    <polygon points="120,115 110,135 130,135" fill="#F8FAFC"/>
+    <circle cx="120" cy="132" r="4" fill="#F59E0B"/>
+
+    <!-- Head & Hat -->
+    <circle cx="120" cy="95" r="18" fill="#FDE047"/>
+    <!-- Top Hat -->
+    <ellipse cx="120" cy="78" rx="22" ry="5" fill="#334155"/>
+    <path d="M106 78 L108 55 L132 55 L134 78 Z" fill="#334155"/>
+    <rect x="107" y="72" width="26" height="4" fill="#F59E0B"/>
+
+    <!-- Arms gesturing sequentially / continuously -->
+    <!-- Left arm raising up -->
+    <path d="M85 125 L60 100 L70 90 L95 115" fill="#2563EB"/>
+    <!-- Right arm pointing / performing -->
+    <path d="M155 125 L180 135 L175 145 L150 135" fill="#2563EB"/>
+  </g>
+
+  <!-- Continuous / Successive floating magic objects (representing "liánlián" - one after another in rapid succession) -->
+  <!-- Object 1: Star (First in sequence) -->
+  <g transform="translate(65, 75) scale(0.6)">
+    <polygon points="20,0 26,13 40,15 30,25 32,39 20,32 8,39 10,25 0,15 14,13" fill="#F59E0B" opacity="0.5"/>
+  </g>
+  
+  <!-- Object 2: Star (Second in sequence - higher energy) -->
+  <g transform="translate(145, 55) scale(0.8)">
+    <polygon points="20,0 26,13 40,15 30,25 32,39 20,32 8,39 10,25 0,15 14,13" fill="#F59E0B" opacity="0.8"/>
+  </g>
+
+  <!-- Object 3: Glowing Magic Orb (Main focus of continuous action) -->
+  <circle cx="120" cy="45" r="12" fill="#F59E0B"/>
+  <circle cx="120" cy="45" r="18" fill="#F59E0B" opacity="0.3"/>
+  <circle cx="120" cy="45" r="24" fill="#F59E0B" opacity="0.1"/>
+
+  <!-- Motion trails / Successive indicators (Showing continuous repetition/action) -->
+  <path d="M 100 55 Q 110 35 120 45" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4"/>
+  <path d="M 140 65 Q 130 45 120 45" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4"/>
+
+  <!-- Applause / Hands clapping below (representing audience clapping continuously: 拍手连连) -->
+  <g transform="translate(0, 10)">
+    <!-- Left hand clapping -->
+    <path d="M75 195 C75 185 85 180 95 185 C100 188 105 195 105 205 L75 205 Z" fill="#FDE047"/>
+    <!-- Right hand clapping -->
+    <path d="M165 195 C165 185 155 180 145 185 C140 188 135 195 135 205 L165 205 Z" fill="#FDE047"/>
+    
+    <!-- Sound/Motion waves for continuous applause -->
+    <path d="M65 180 C55 185 55 200 65 205" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+    <path d="M55 175 C40 185 40 205 55 215" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    
+    <path d="M175 180 C185 185 185 200 175 205" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+    <path d="M185 175 C200 185 200 205 185 215" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  </g>
+</svg>

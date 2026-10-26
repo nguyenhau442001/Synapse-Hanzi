@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Senior Figure (The "Yuanlao") -->
+  <g transform="translate(120, 120)">
+    <!-- Body -->
+    <path d="M-40 80 C-40 40, -20 20, 0 20 C20 20, 40 40, 40 80" fill="#3A404D"/>
+    
+    <!-- Head and Hair (Representing seniority/wisdom) -->
+    <circle cx="0" cy="-20" r="35" fill="#E0E6ED"/>
+    <path d="M-25 -25 C-25 -50, 25 -50, 25 -25" fill="#94A3B8"/>
+    
+    <!-- Clothing (Professional/Formal) -->
+    <path d="M-20 20 L0 45 L20 20" fill="#2D3440"/>
+    
+    <!-- Gold/Orange Accent (Symbolizing status/founding role) -->
+    <circle cx="0" cy="-20" r="38" fill="none" stroke="#F59E0B" stroke-width="4" stroke-dasharray="10 10"/>
+    
+    <!-- Gesture of respect/mentorship -->
+    <path d="M-45 10 L-65 30" stroke="#E0E6ED" stroke-width="6" stroke-linecap="round"/>
+    <path d="M-65 30 L-75 20" stroke="#E0E6ED" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Badge of honor/founding role -->
+    <circle cx="25" cy="30" r="10" fill="#F59E0B"/>
+    <path d="M25 25 L25 35 M20 30 L30 30" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

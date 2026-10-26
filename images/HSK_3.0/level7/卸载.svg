@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Smartphone Body (Physical Object Representation for "卸载" / uninstall software context) -->
+    <rect x="75" y="32" width="90" height="176" rx="16" fill="#282D3D" stroke="#3A4256" stroke-width="3"/>
+    
+    <!-- Phone Screen -->
+    <rect x="85" y="48" width="70" height="144" rx="8" fill="#12151B"/>
+    
+    <!-- Phone Speaker Notch -->
+    <rect x="105" y="38" width="30" height="4" rx="2" fill="#3A4256"/>
+
+    <!-- App Grid / Interface Items (Redundant Software) -->
+    <!-- App 1 -->
+    <rect x="97" y="64" width="20" height="20" rx="5" fill="#4F5D75"/>
+    <!-- App 2 (Target for uninstallation - highlighted with accent color) -->
+    <rect x="123" y="64" width="20" height="20" rx="5" fill="#F97316"/>
+    <path d="M130 71 L136 77 M136 71 L130 77" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- App 3 -->
+    <rect x="97" y="92" width="20" height="20" rx="5" fill="#4F5D75"/>
+    <!-- App 4 -->
+    <rect x="123" y="92" width="20" height="20" rx="5" fill="#4F5D75"/>
+
+    <!-- App 5 -->
+    <rect x="97" y="120" width="20" height="20" rx="5" fill="#4F5D75"/>
+    <!-- App 6 -->
+    <rect x="123" y="120" width="20" height="20" rx="5" fill="#4F5D75"/>
+
+    <!-- Dynamic Action / Uninstallation Effect: Outward ejection arrow representing "卸载" (uninstall/unload) -->
+    <path d="M120 162 L120 200 M108 188 L120 200 L132 188" fill="none" stroke="#F97316" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Floating debris / uninstalled application block lifting off -->
+    <g transform="translate(0, -12)">
+      <rect x="110" y="145" width="20" height="20" rx="5" fill="#F97316" opacity="0.85"/>
+      <path d="M115 152 L125 162 M125 152 L115 162" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

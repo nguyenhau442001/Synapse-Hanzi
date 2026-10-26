@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative subtle elements -->
+  <g opacity="0.15">
+    <polygon points="120,40 160,80 120,120 80,80" fill="none" stroke="#60A5FA" stroke-width="2"/>
+    <circle cx="120" cy="80" r="60" fill="none" stroke="#60A5FA" stroke-width="1" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Central Visual: Traditional Military Medal / Great Merit Award symbolizing "Chiến công / Công trạng" (功) -->
+  <g transform="translate(0, 5)">
+    <!-- Hanging Ribbon -->
+    <path d="M100,50 L140,50 L145,95 L95,95 Z" fill="#991B1B"/>
+    <path d="M112,50 L128,50 L131,95 L109,95 Z" fill="#B91C1C"/>
+    <path d="M117,50 L123,50 L124,95 L116,95 Z" fill="#EF4444"/>
+
+    <!-- Ribbon Top Mount / Ring -->
+    <rect x="106" y="38" width="28" height="14" rx="3" fill="#D97706"/>
+    <rect x="110" y="40" width="20" height="10" rx="2" fill="#F59E0B"/>
+
+    <!-- Medal Star Background / Rays -->
+    <g fill="#F59E0B">
+      <path d="M120,85 L126,120 L155,100 L140,130 L170,145 L140,155 L155,185 L126,165 L120,200 L114,165 L85,185 L100,155 L70,145 L100,130 L85,100 L114,120 Z" opacity="0.25"/>
+      <path d="M120,80 L127,115 L160,105 L135,130 L165,155 L130,155 L145,190 L115,170 L120,205 L125,170 L95,190 L110,155 L75,155 L105,130 L80,105 L113,115 Z" opacity="0.4"/>
+    </g>
+
+    <!-- Main Gold Star Medal Body -->
+    <circle cx="120" cy="145" r="42" fill="#D97706"/>
+    <circle cx="120" cy="145" r="37" fill="#FBBF24"/>
+    <circle cx="120" cy="145" r="32" fill="#F59E0B"/>
+
+    <!-- Inner Emblem / Laurel Wreath Details -->
+    <circle cx="120" cy="145" r="25" fill="#B45309"/>
+    <circle cx="120" cy="145" r="22" fill="#D97706"/>
+
+    <!-- Central Five-Pointed Star (Achievement Icon) -->
+    <polygon points="120,128 125,140 138,141 128,150 131,162 120,155 109,162 112,150 102,141 115,140" fill="#FEF3C7"/>
+
+    <!-- Sparkle Highlights -->
+    <path d="M152,112 Q152,118 158,118 Q152,118 152,124 Q152,118 146,118 Q152,118 152,112 Z" fill="#FFFFFF" opacity="0.9"/>
+    <path d="M88,165 Q88,169 92,169 Q88,169 88,173 Q88,169 84,169 Q88,169 88,165 Z" fill="#FFFFFF" opacity="0.7"/>
+  </g>
+</svg>

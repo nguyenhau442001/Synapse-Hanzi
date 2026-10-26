@@ -1,0 +1,44 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient background glow for solemn atmosphere -->
+  <circle cx="120" cy="115" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Official Podium / Court Stand -->
+  <path d="M 95 180 L 145 180 L 155 210 L 85 210 Z" fill="#2C3440"/>
+  <path d="M 90 180 L 150 180 L 150 185 L 90 185 Z" fill="#3E4A5C"/>
+  <path d="M 100 210 L 140 210 L 145 215 L 95 215 Z" fill="#1E232B"/>
+
+  <!-- Open Official Legal Document / Verdict Scroll -->
+  <!-- Left page -->
+  <path d="M 85 85 L 120 75 L 120 155 L 85 165 Z" fill="#ECEFF4"/>
+  <!-- Right page -->
+  <path d="M 155 85 L 120 75 L 120 155 L 155 165 Z" fill="#DFE3EC"/>
+  <!-- Center fold crease -->
+  <line x1="120" y1="75" x2="120" y2="155" stroke="#CBD0D9" stroke-width="2"/>
+
+  <!-- Text lines representing formal judgment/proclamation -->
+  <line x1="93" y1="92" x2="113" y2="87" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="93" y1="104" x2="114" y2="99" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="93" y1="116" x2="110" y2="111" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="93" y1="128" x2="115" y2="123" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="93" y1="140" x2="108" y2="135" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+
+  <line x1="127" y1="87" x2="147" y2="92" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="127" y1="99" x2="148" y2="104" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="127" y1="111" x2="145" y2="116" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="127" y1="123" x2="146" y2="128" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="127" y1="135" x2="144" y2="140" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Official Red Seal / Stamp (representing public pronouncement & legality) -->
+  <circle cx="138" cy="148" r="8" fill="#E53E3E"/>
+  <circle cx="138" cy="148" r="6" fill="none" stroke="#FFF" stroke-width="1"/>
+
+  <!-- Focus / Sound Waves / Pronouncement Radiance (Gold Accent) -->
+  <path d="M 70 85 C 60 100 60 125 70 140" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <path d="M 170 85 C 180 100 180 125 170 140" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <path d="M 60 75 C 45 95 45 130 60 150" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+  <path d="M 180 75 C 195 95 195 130 180 150" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+
+</svg>
