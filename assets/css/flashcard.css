@@ -354,8 +354,10 @@
 .card:not(.is-flipped) .pos-badge,
 .card:not(.is-flipped) .level-badge,
 .card:not(.is-flipped) .card-supporting-group,
+.card:not(.is-flipped) .card-decomposition-wrap,
 .card:not(.is-flipped) .card-radicals-row,
-.card:not(.is-flipped) .card-visual-col {
+.card:not(.is-flipped) .card-visual-col,
+.card:not(.is-flipped) .card-related-wrap {
   display: none !important;
 }
 .hide-hanviet .hanviet-badge {
@@ -491,6 +493,244 @@
 }
 .card-decomp-dot {
   opacity: 0.6;
+}
+
+/* Khối Chữ liên quan (Học theo cụm: Cùng chữ, Cùng âm, Cùng bộ) */
+.card-related-wrap {
+  width: 100%;
+  max-width: 520px;
+  margin: 6px auto 2px;
+  padding: 0 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  box-sizing: border-box;
+}
+.card-related-wrap[hidden] {
+  display: none !important;
+}
+.card-related-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.card-related-title {
+  font-size: 10.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted, #8B918C);
+  line-height: 1.2;
+}
+.card-related-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 7px;
+  border-radius: 6px;
+  font-size: 10.5px;
+  font-weight: 500;
+  color: var(--accent, #c05624);
+  background: var(--accent-light, rgba(192, 86, 36, 0.08));
+  border: 1px solid rgba(192, 86, 36, 0.25);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  line-height: 1.2;
+}
+.card-related-back-btn:hover {
+  background: rgba(192, 86, 36, 0.16);
+  border-color: rgba(192, 86, 36, 0.4);
+}
+.card-related-chips {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-sizing: border-box;
+}
+
+/* Chip Chữ liên quan */
+.related-chip {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border-radius: 9px;
+  border: 1px solid var(--border-subtle);
+  background: var(--surface-subtle);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  text-decoration: none;
+  font-family: inherit;
+  box-sizing: border-box;
+  text-align: center;
+}
+.related-chip:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.related-chip:active {
+  transform: scale(0.97);
+}
+
+.related-chip-main {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  line-height: 1.2;
+}
+.related-chip-hanzi {
+  font-size: 14.5px;
+  font-weight: 600;
+  font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  color: inherit;
+}
+.related-chip-pinyin {
+  font-size: 11.5px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+.related-chip-tag {
+  font-size: 9px;
+  font-weight: 600;
+  padding: 1px 4px;
+  border-radius: 4px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+}
+.related-chip-tag--whole-char {
+  background: rgba(37, 99, 235, 0.12);
+  color: #2563eb;
+}
+:root[data-theme="dark"] .related-chip-tag--whole-char {
+  background: rgba(96, 165, 250, 0.2);
+  color: #93c5fd;
+}
+.related-chip-tag--phonetic {
+  background: rgba(147, 51, 234, 0.12);
+  color: #9333ea;
+}
+:root[data-theme="dark"] .related-chip-tag--phonetic {
+  background: rgba(192, 132, 252, 0.2);
+  color: #d8b4fe;
+}
+.related-chip-tag--radical {
+  background: rgba(217, 119, 6, 0.12);
+  color: #b45309;
+}
+:root[data-theme="dark"] .related-chip-tag--radical {
+  background: rgba(251, 146, 60, 0.2);
+  color: #fdba74;
+}
+
+.related-chip-mean {
+  font-size: 10px;
+  color: var(--text-tertiary);
+  margin-top: 2px;
+  max-width: 140px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0.85;
+}
+
+/* Trạng thái màu sắc của Chip: Xanh = Đã nhớ, Cam = Chưa nhớ, Xám = Chưa học */
+.related-chip--known {
+  background: #ecfdf5;
+  border-color: rgba(46, 125, 90, 0.3);
+  color: #166534;
+}
+:root[data-theme="dark"] .related-chip--known {
+  background: rgba(114, 185, 154, 0.12);
+  border-color: rgba(114, 185, 154, 0.35);
+  color: #a7f3d0;
+}
+.related-chip--known .related-chip-pinyin {
+  color: #15803d;
+}
+:root[data-theme="dark"] .related-chip--known .related-chip-pinyin {
+  color: #6ee7b7;
+}
+
+.related-chip--unknown {
+  background: #fff7ed;
+  border-color: rgba(234, 88, 12, 0.3);
+  color: #9a3412;
+}
+:root[data-theme="dark"] .related-chip--unknown {
+  background: rgba(219, 137, 87, 0.14);
+  border-color: rgba(219, 137, 87, 0.4);
+  color: #fdba74;
+}
+.related-chip--unknown .related-chip-pinyin {
+  color: #c2410c;
+}
+:root[data-theme="dark"] .related-chip--unknown .related-chip-pinyin {
+  color: #fb923c;
+}
+
+.related-chip--unseen {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  color: #475569;
+}
+:root[data-theme="dark"] .related-chip--unseen {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
+}
+
+/* Toast gợi ý ôn tập theo nhóm thành tố khi bấm Chưa nhớ */
+.related-cluster-toast {
+  position: fixed;
+  bottom: 82px;
+  left: 50%;
+  transform: translateX(-50%) translateY(12px);
+  background: var(--bg-surface, #ffffff);
+  border: 1px solid var(--border-strong, #cbd5e1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+  border-radius: 999px;
+  padding: 8px 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-primary);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.22s ease, transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 99999;
+  max-width: 90vw;
+  box-sizing: border-box;
+}
+:root[data-theme="dark"] .related-cluster-toast {
+  background: #1e2428;
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+.related-cluster-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+.related-cluster-icon {
+  font-size: 15px;
+  flex-shrink: 0;
+}
+.related-cluster-msg {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.related-cluster-msg strong {
+  color: var(--accent, #c05624);
+  font-weight: 600;
 }
 
 /* Khối ví dụ thực tế: Tối ưu nhịp khoảng cách (Vertical Rhythm) và phân cấp màu sắc */
@@ -734,6 +974,7 @@
 .card.is-flipped .meaning,
 .card.is-flipped .meta-badges-row,
 .card.is-flipped .card-supporting-group,
+.card.is-flipped .card-related-wrap,
 .card.is-flipped .example-box {
   animation: cardRevealFade 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
@@ -751,6 +992,7 @@
   .card.is-flipped .meaning,
   .card.is-flipped .meta-badges-row,
   .card.is-flipped .card-supporting-group,
+  .card.is-flipped .card-related-wrap,
   .card.is-flipped .example-box {
     animation: none;
   }
