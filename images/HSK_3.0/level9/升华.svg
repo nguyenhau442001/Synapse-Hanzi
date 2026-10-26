@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Base: Two elderly figures standing side by side, representing the couple -->
+  <g transform="translate(60, 120)">
+    <!-- Person 1 -->
+    <path d="M20 100 Q20 60 40 60 T60 100" fill="#FFB84D" stroke="#1A1D24" stroke-width="2"/>
+    <circle cx="40" cy="45" r="15" fill="#FFB84D"/>
+    
+    <!-- Person 2 -->
+    <path d="M80 100 Q80 60 100 60 T120 100" fill="#FFB84D" stroke="#1A1D24" stroke-width="2"/>
+    <circle cx="100" cy="45" r="15" fill="#FFB84D"/>
+  </g>
+
+  <!-- The "Sublimation/Elevation" visual: A golden, glowing, solid structure rising from their joined hands -->
+  <!-- Representing the transition from romantic love to deep, structural kinship -->
+  <g transform="translate(120, 120)">
+    <path d="M-20 0 L20 0 L10 -60 L-10 -60 Z" fill="#FFD700" opacity="0.9"/>
+    <path d="M-10 -60 L10 -60 L0 -90 Z" fill="#FFB84D"/>
+    
+    <!-- Supporting hands -->
+    <path d="M-30 0 C-30 -20 -10 -20 -10 0" fill="#FFB84D"/>
+    <path d="M30 0 C30 -20 10 -20 10 0" fill="#FFB84D"/>
+  </g>
+
+  <!-- Subtle atmospheric lines indicating upward movement/elevation -->
+  <path d="M120 100 L120 20" stroke="#3A3F4B" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>

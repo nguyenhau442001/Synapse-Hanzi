@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Traffic Light Pole & Housing -->
+  <rect x="108" y="40" width="24" height="130" rx="4" fill="#2E3440" stroke="#4C566A" stroke-width="2"/>
+  <rect x="96" y="55" width="48" height="110" rx="8" fill="#242933" stroke="#4C566A" stroke-width="2"/>
+  
+  <!-- Red Light (Blazing/Glaringly Open - "公然") -->
+  <circle cx="120" cy="80" r="14" fill="#D08770"/>
+  <circle cx="120" cy="80" r="18" fill="none" stroke="#BF616A" stroke-width="3" stroke-dasharray="4 2"/>
+  
+  <!-- Yellow Light -->
+  <circle cx="120" cy="110" r="12" fill="#434C5E"/>
+  
+  <!-- Green Light -->
+  <circle cx="120" cy="140" r="12" fill="#434C5E"/>
+
+  <!-- Bold Eyeball Overlay representing "Openly / In Plain Sight" (公然) -->
+  <g transform="translate(120, 105)">
+    <!-- Dramatic glare rays -->
+    <path d="M-35 -15 L-22 -8" stroke="#EBCB8B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M35 -15 L22 -8" stroke="#EBCB8B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M0 -40 L0 -26" stroke="#EBCB8B" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Outer Eye Shape -->
+    <path d="M-30 0 C-15 18 15 18 30 0 C15 -18 -15 -18 -30 0 Z" fill="#ECEFF4" stroke="#D8DEE9" stroke-width="2"/>
+    <!-- Iris -->
+    <circle cx="0" cy="0" r="10" fill="#D08770"/>
+    <!-- Pupil -->
+    <circle cx="0" cy="0" r="4" fill="#2E3440"/>
+    <!-- Highlight -->
+    <circle cx="3" cy="-3" r="2" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Base mount -->
+  <rect x="104" y="170" width="32" height="10" rx="2" fill="#4C566A"/>
+  
+  <!-- Floor line -->
+  <line x1="60" y1="180" x2="180" y2="180" stroke="#4C566A" stroke-width="4" stroke-linecap="round"/>
+</svg>

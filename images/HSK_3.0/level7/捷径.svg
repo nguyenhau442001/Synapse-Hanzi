@@ -1,0 +1,55 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Grid / Atmosphere (Subtle technical grid lines for "scientific/learning context") -->
+  <g opacity="0.15">
+    <line x1="30" y1="60" x2="210" y2="60" stroke="#64748B" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="30" y1="120" x2="210" y2="120" stroke="#64748B" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="30" y1="180" x2="210" y2="180" stroke="#64748B" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="60" y1="30" x2="60" y2="210" stroke="#64748B" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="120" y1="30" x2="120" y2="210" stroke="#64748B" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="180" y1="30" x2="180" y2="210" stroke="#64748B" stroke-width="1" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Physical Object representing "Lối tắt" (A physical cutting path through terrain/mountains) -->
+  <g transform="translate(0, 5)">
+    <!-- Long winding mountain path (The hard, normal way - faintly rendered in background slate) -->
+    <path d="M 40,170 Q 70,170 85,140 T 120,110 T 155,80 T 200,65" 
+          fill="none" stroke="#334155" stroke-width="10" stroke-linecap="round" stroke-dasharray="6 6"/>
+    
+    <!-- Terrain / Mountain Base Silhouette -->
+    <path d="M 30,190 L 210,190 L 210,70 Q 150,50 120,90 Q 90,130 30,170 Z" fill="#222731" opacity="0.6"/>
+
+    <!-- The Shortcut ("Lối tắt" - physical glowing direct tunnel/path piercing straight through) -->
+    <!-- Glow effect for the shortcut path -->
+    <path d="M 50,160 L 190,75" 
+          fill="none" stroke="#F59E0B" stroke-width="16" stroke-linecap="round" opacity="0.25"/>
+    
+    <!-- Core bright path -->
+    <path d="M 50,160 L 190,75" 
+          fill="none" stroke="#FBBF24" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Dashed directional indicators along the shortcut -->
+    <path d="M 50,160 L 190,75" 
+          fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-dasharray="10 10" opacity="0.9"/>
+
+    <!-- Entrance marker (Start point) -->
+    <circle cx="50" cy="160" r="7" fill="#F59E0B"/>
+    <circle cx="50" cy="160" r="3" fill="#1A1D24"/>
+
+    <!-- Exit marker (Destination point) -->
+    <circle cx="190" cy="75" r="7" fill="#F59E0B"/>
+    <circle cx="190" cy="75" r="3" fill="#1A1D24"/>
+    
+    <!-- Scissors cutting icon metaphor subtly integrated into the middle of the shortcut representing "cutting across" -->
+    <g transform="translate(110, 110) scale(0.7)" opacity="0.9">
+      <circle cx="0" cy="0" r="14" fill="#1A1D24" stroke="#F59E0B" stroke-width="3"/>
+      <!-- Scissor blades cross -->
+      <path d="M -6,-6 L 6,6 M -6,6 L 6,-6" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Foreground framing elements for modern flat UI interface look -->
+  <rect x="24" y="24" width="192" height="192" rx="16" fill="none" stroke="#334155" stroke-width="2" opacity="0.4"/>
+</svg>

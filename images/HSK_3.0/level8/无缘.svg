@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Podium -->
+  <rect x="60" y="180" width="120" height="20" fill="#2D343E"/>
+  <rect x="80" y="160" width="80" height="20" fill="#3A4350"/>
+  <rect x="100" y="140" width="40" height="20" fill="#4A5568"/>
+  
+  <!-- Gold Medal on the highest podium -->
+  <circle cx="120" cy="130" r="12" fill="#FFD700"/>
+  <circle cx="120" cy="130" r="8" fill="#F4B400"/>
+  
+  <!-- Athlete figure standing slightly apart -->
+  <g transform="translate(40, 100)">
+    <circle cx="30" cy="40" r="10" fill="#A0AEC0"/>
+    <path d="M20 55 Q30 50 40 55 L40 100 L20 100 Z" fill="#A0AEC0"/>
+    <path d="M25 60 L15 80 M35 60 L45 80" stroke="#A0AEC0" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- The "Missed" connection: A dashed line representing the gap -->
+  <path d="M75 140 L95 130" stroke="#FF8C00" stroke-width="3" stroke-dasharray="4 4" stroke-linecap="round"/>
+  
+  <!-- Subtle visual indicator of distance/separation -->
+  <line x1="70" y1="180" x2="70" y2="120" stroke="#4A5568" stroke-width="2" stroke-dasharray="6 6"/>
+</svg>

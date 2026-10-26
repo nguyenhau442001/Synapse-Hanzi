@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle atmosphere: Dynamic sweeping energy lines representing "hānchàng" (smooth, flowing, deeply satisfying release of energy) -->
+  <g opacity="0.15" stroke-linecap="round" fill="none">
+    <path d="M30 190 C 80 140, 160 140, 210 50" stroke="#00E5FF" stroke-width="4"/>
+    <path d="M20 160 C 70 120, 130 110, 190 70" stroke="#FFD700" stroke-width="2"/>
+    <path d="M50 210 C 100 170, 170 160, 220 90" stroke="#FF5722" stroke-width="3"/>
+  </g>
+
+  <!-- Central Physical Object: The Go/Xiangqi board and pieces in an intense, brilliant, deeply satisfying match ("hānchàng" context) -->
+  <g transform="translate(120, 125)">
+    <!-- Wooden Table / Board Base (Isometric-flat perspective) -->
+    <path d="M -75 10 L 0 45 L 75 10 L 0 -25 Z" fill="#2C221E" stroke="#3E302B" stroke-width="2"/>
+    <path d="M -75 25 L 0 60 L 75 25 L 75 10 L 0 45 L -75 10 Z" fill="#1A1311" stroke="#2C221E" stroke-width="1"/>
+    
+    <!-- The Go Board Surface -->
+    <path d="M -65 0 L 0 30 L 65 0 L 0 -30 Z" fill="#E6C289" stroke="#C29B61" stroke-width="2"/>
+    
+    <!-- Board Grid Lines -->
+    <line x1="-39" y1="9" x2="39" y2="9" stroke="#C29B61" stroke-width="1" opacity="0.6"/>
+    <line x1="-20" y1="18" x2="20" y2="0" stroke="#C29B61" stroke-width="1" opacity="0.6"/>
+    <line x1="-50" y1="4" x2="16" y2="-13" stroke="#C29B61" stroke-width="1" opacity="0.6"/>
+    <line x1="-16" y1="13" x2="50" y2="-4" stroke="#C29B61" stroke-width="1" opacity="0.6"/>
+
+    <!-- Brilliant, satisfying arrangement of game pieces (Xiangqi / Go hybrid style) representing master-level clash -->
+    <!-- Dark Pieces -->
+    <circle cx="-25" cy="5" r="7" fill="#212121" stroke="#424242" stroke-width="1.5"/>
+    <circle cx="10" cy="-5" r="7" fill="#212121" stroke="#424242" stroke-width="1.5"/>
+    <circle cx="-5" cy="18" r="7" fill="#212121" stroke="#424242" stroke-width="1.5"/>
+
+    <!-- Vibrant Gold/Orange Accent Pieces (representing the peak flow state / 酣畅) -->
+    <circle cx="-10" cy="5" r="8" fill="#FF8F00" stroke="#FFD700" stroke-width="2"/>
+    <circle cx="25" cy="12" r="8" fill="#FF8F00" stroke="#FFD700" stroke-width="2"/>
+    <circle cx="0" cy="-10" r="8" fill="#FFD700" stroke="#FFF59D" stroke-width="2"/>
+    
+    <!-- Dynamic Glowing Impact/Energy Burst above the board (Visualizing uninhibited, gratifying satisfaction) -->
+    <g transform="translate(0, -25)">
+      <!-- Central Spark of Insight / Victory -->
+      <path d="M 0 -35 Q 3 -15 20 -15 Q 3 -15 0 5 Q -3 -15 -20 -15 Q -3 -15 0 -35 Z" fill="#FFD700"/>
+      <path d="M 15 -45 Q 18 -30 30 -30 Q 18 -30 15 -15 Q 12 -30 0 -30 Q 12 -30 15 -45 Z" fill="#FF5722"/>
+      <path d="M -15 -42 Q -18 -28 -30 -28 Q -18 -28 -15 -14 Q -12 -28 0 -28 Q -12 -28 -15 -42 Z" fill="#00E5FF"/>
+    </g>
+
+    <!-- Radiating energetic ripples (Smooth, flowing, absolute engagement) -->
+    <ellipse cx="0" cy="8" rx="75" ry="35" fill="none" stroke="#FFD700" stroke-width="1.5" opacity="0.4" stroke-dasharray="6 4"/>
+    <ellipse cx="0" cy="8" rx="90" ry="42" fill="none" stroke="#00E5FF" stroke-width="1" opacity="0.3" stroke-dasharray="10 6"/>
+  </g>
+</svg>

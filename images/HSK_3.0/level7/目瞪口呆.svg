@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Character Head -->
+  <circle cx="120" cy="120" r="60" fill="#2D343E"/>
+  
+  <!-- Eyes (Wide/Staring) -->
+  <circle cx="95" cy="105" r="8" fill="#FFC107"/>
+  <circle cx="145" cy="105" r="8" fill="#FFC107"/>
+  <circle cx="95" cy="105" r="3" fill="#1A1D24"/>
+  <circle cx="145" cy="105" r="3" fill="#1A1D24"/>
+  
+  <!-- Eyebrows (Raised in shock) -->
+  <path d="M80 90 Q95 80 110 90" stroke="#FFC107" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M130 90 Q145 80 160 90" stroke="#FFC107" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Mouth (Open in shock) -->
+  <ellipse cx="120" cy="150" rx="15" ry="20" fill="#FFC107"/>
+  
+  <!-- Shock lines/effect around head -->
+  <path d="M120 40 L120 55" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/>
+  <path d="M180 120 L195 120" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/>
+  <path d="M60 120 L45 120" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/>
+  <path d="M165 75 L175 65" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/>
+  <path d="M75 75 L65 65" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/>
+</svg>

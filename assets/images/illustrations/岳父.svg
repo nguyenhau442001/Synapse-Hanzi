@@ -1,0 +1,74 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(12, 12)">
+    <!-- Background subtle ambient glow -->
+    <circle cx="108" cy="108" r="80" fill="#242B38" opacity="0.6"/>
+
+    <!-- Left Character: Father-in-law (Older male figure, dignified, warm smile, wearing a neat collar shirt/sweater) -->
+    <g transform="translate(38, 40)">
+      <!-- Body/Shoulders -->
+      <path d="M15 100 C15 75, 35 65, 60 65 C85 65, 105 75, 105 100 L105 115 L15 115 Z" fill="#3B82F6"/>
+      <!-- Collar / Shirt details -->
+      <path d="M45 65 L60 85 L75 65" fill="none" stroke="#1A1D24" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M60 85 L60 115" fill="none" stroke="#1A1D24" stroke-width="2"/>
+      
+      <!-- Neck -->
+      <rect x="50" y="52" width="20" height="18" fill="#E2B49F"/>
+      
+      <!-- Head -->
+      <circle cx="60" cy="40" r="22" fill="#E2B49F"/>
+      
+      <!-- Hair (Silver/Grey, distinguished side-part) -->
+      <path d="M38 40 C38 25, 48 16, 60 16 C73 16, 82 24, 82 40 C82 42, 80 43, 78 41 C72 32, 48 32, 42 41 C40 43, 38 42, 38 40 Z" fill="#94A3B8"/>
+      <path d="M40 38 C45 28, 55 24, 65 24 C75 24, 79 30, 81 38" fill="none" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+
+      <!-- Glasses (Warm gold frame) -->
+      <rect x="46" y="32" width="13" height="9" rx="2" fill="none" stroke="#F59E0B" stroke-width="2"/>
+      <rect x="61" y="32" width="13" height="9" rx="2" fill="none" stroke="#F59E0B" stroke-width="2"/>
+      <line x1="59" y1="36" x2="61" y2="36" stroke="#F59E0B" stroke-width="2"/>
+
+      <!-- Facial Features: Warm Smile & Gentle Eyes -->
+      <path d="M51 30 L55 31" stroke="#334155" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M65 31 L69 30" stroke="#334155" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M52 47 C55 51, 65 51, 68 47" fill="none" stroke="#B45309" stroke-width="2" stroke-linecap="round"/>
+
+      <!-- Warm welcoming gesture: Outstretched friendly hand -->
+      <path d="M95 90 C110 90, 115 105, 120 100" fill="none" stroke="#E2B49F" stroke-width="10" stroke-linecap="round"/>
+    </g>
+
+    <!-- Right Character: Son-in-law (Younger male figure, showing polite respect with a slight forward lean and welcoming gesture) -->
+    <g transform="translate(100, 48)">
+      <!-- Body/Shoulders (Slightly leaned) -->
+      <path d="M20 92 C20 70, 40 60, 65 60 C90 60, 110 70, 110 92 L110 107 L20 107 Z" fill="#10B981"/>
+      <!-- Jacket / Shirt lapel -->
+      <path d="M50 60 L65 78 L80 60" fill="none" stroke="#1A1D24" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- Neck -->
+      <rect x="55" y="46" width="18" height="18" fill="#F4D0B8"/>
+      
+      <!-- Head -->
+      <circle cx="64" cy="34" r="20" fill="#F4D0B8"/>
+      
+      <!-- Hair (Dark, modern neat crop) -->
+      <path d="M46 34 C46 20, 54 14, 64 14 C75 14, 82 20, 82 34 C82 36, 80 37, 78 35 C74 27, 54 27, 50 35 C48 37, 46 36, 46 34 Z" fill="#334155"/>
+
+      <!-- Facial Features: Polite, respectful smile -->
+      <circle cx="57" cy="31" r="1.5" fill="#334155"/>
+      <circle cx="71" cy="31" r="1.5" fill="#334155"/>
+      <path d="M59 40 C61 43, 67 43, 69 40" fill="none" stroke="#B45309" stroke-width="1.8" stroke-linecap="round"/>
+
+      <!-- Hand meeting in a polite respectful handshake / greeting gesture -->
+      <path d="M15 85 C5 85, 0 95, 5 98" fill="none" stroke="#F4D0B8" stroke-width="9" stroke-linecap="round"/>
+    </g>
+
+    <!-- Central Interactive Connection: Warm handshake / respectful family bond indicator -->
+    <g transform="translate(112, 126)">
+      <circle cx="8" cy="12" r="10" fill="#F59E0B" opacity="0.2"/>
+      <path d="M2 12 L14 12" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+      <path d="M8 6 L8 18" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Floor / Ground line representing stability and home setting -->
+    <path d="M30 185 C80 190, 160 190, 210 185" fill="none" stroke="#334155" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  </g>
+</svg>

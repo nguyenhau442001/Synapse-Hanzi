@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Representing "终生" (Lifelong/Whole life) through the metaphor of a person's journey from youth to old age, 
+       focused on the continuity of a professional pursuit (the professor's career). -->
+  
+  <!-- Ground line -->
+  <path d="M40 180 L200 180" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Silhouette of a person at different stages, walking towards a goal -->
+  <!-- Young stage -->
+  <circle cx="70" cy="165" r="8" fill="#F6AD55"/>
+  <path d="M70 173 L70 190 M70 180 L60 185 M70 180 L80 185" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Middle stage -->
+  <circle cx="120" cy="155" r="10" fill="#F6AD55"/>
+  <path d="M120 165 L120 190 M120 175 L110 185 M120 175 L130 185" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Old stage (The Professor) -->
+  <circle cx="170" cy="145" r="12" fill="#F6AD55"/>
+  <path d="M170 157 L170 190 M170 165 L160 180 M170 165 L180 180" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- The "Career/Knowledge" symbol (a book being held/carried throughout the journey) -->
+  <rect x="175" y="140" width="15" height="12" rx="2" fill="#E2E8F0"/>
+  <path d="M177 143 L188 143 M177 146 L188 146 M177 149 L188 149" stroke="#1A1D24" stroke-width="1"/>
+  
+  <!-- Path line connecting them -->
+  <path d="M70 195 C 100 180, 140 180, 170 195" stroke="#F6AD55" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+</svg>

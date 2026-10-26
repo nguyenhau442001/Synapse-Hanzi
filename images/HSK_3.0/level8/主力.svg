@@ -1,0 +1,61 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Goal frame background lines -->
+    <path d="M 60 70 L 60 160 L 180 160 L 180 70" fill="none" stroke="#2D323E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Soccer goal net pattern -->
+    <path d="M 60 90 L 180 90 M 60 110 L 180 110 M 60 130 L 180 130 M 60 150 L 180 150 M 80 70 L 80 160 M 100 70 L 100 160 M 120 70 L 120 160 M 140 70 L 140 160 M 160 70 L 160 160" fill="none" stroke="#252A34" stroke-width="1.5"/>
+
+    <!-- Dynamic action blur / energy trail representing core strength (主力) -->
+    <path d="M 85 105 Q 115 135 145 125" fill="none" stroke="#F5A623" stroke-width="16" stroke-linecap="round" opacity="0.25"/>
+
+    <!-- Main Character (The Key Player / 主力) - Running posture -->
+    <g transform="translate(10, 0)">
+      <!-- Left Leg (back) -->
+      <path d="M 115 135 L 100 165 L 90 160" fill="none" stroke="#4A5568" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- Torso (Jersey in high-contrast blue/orange accent) -->
+      <path d="M 110 100 L 135 105 L 125 140 L 105 130 Z" fill="#2E5BFF" stroke="#2E5BFF" stroke-linejoin="round"/>
+      <path d="M 120 102 L 132 135" stroke="#F5A623" stroke-width="4" stroke-linecap="round"/> <!-- Jersey stripe -->
+
+      <!-- Head & Face -->
+      <circle cx="118" cy="83" r="11" fill="#FFD166"/>
+      <!-- Hair -->
+      <path d="M 108 82 C 108 73, 125 73, 128 82" fill="#1A1D24"/>
+
+      <!-- Right Arm (forward) -->
+      <path d="M 125 105 L 145 115 L 155 110" fill="none" stroke="#FFD166" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- Left Arm (back) -->
+      <path d="M 112 105 L 95 120" fill="none" stroke="#FFD166" stroke-width="7" stroke-linecap="round"/>
+
+      <!-- Right Leg (forward, striking) -->
+      <path d="M 120 135 L 145 138 L 165 130" fill="none" stroke="#4A5568" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- Cleats -->
+      <path d="M 87 161 L 93 166" stroke="#F5A623" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 163 127 L 170 132" stroke="#F5A623" stroke-width="5" stroke-linecap="round"/>
+    </g>
+
+    <!-- The Soccer Ball (being struck powerfully) -->
+    <g transform="translate(162, 120)">
+      <circle cx="0" cy="0" r="14" fill="#FFFFFF"/>
+      <!-- Classic soccer ball pentagon/hex patterns (simplified flat vector) -->
+      <polygon points="0,-6 5,-2 3,4 -3,4 -5,-2" fill="#1A1D24"/>
+      <path d="M 0 -6 L 0 -14 M 5 -2 L 12 -6 M 3 4 L 9 11 M -3 4 L -9 11 M -5 -2 L -12 -6" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Glowing focus indicator / Core energy ring under the key player -->
+    <ellipse cx="125" cy="172" rx="35" ry="8" fill="#F5A623" opacity="0.3"/>
+    <ellipse cx="125" cy="172" rx="20" ry="4" fill="#F5A623" opacity="0.6"/>
+
+    <!-- Hat-trick representation: 3 subtle glowing star icons indicating "独中三元" context -->
+    <g fill="#F5A623" transform="translate(0, 5)">
+      <polygon points="75,45 77,50 82,50 78,53 80,58 75,55 70,58 72,53 68,50 73,50" transform="scale(0.6) translate(65, 10)"/>
+      <polygon points="75,45 77,50 82,50 78,53 80,58 75,55 70,58 72,53 68,50 73,50" transform="scale(0.8) translate(53, 5)"/>
+      <polygon points="75,45 77,50 82,50 78,53 80,58 75,55 70,58 72,53 68,50 73,50" transform="scale(0.6) translate(85, 10)"/>
+    </g>
+  </g>
+</svg>

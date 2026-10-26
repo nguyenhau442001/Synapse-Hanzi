@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle floor shadow / ambient glow -->
+  <ellipse cx="120" cy="195" rx="70" ry="12" fill="#111318" opacity="0.8"/>
+  
+  <!-- Stylized Modern House representing "新房" (New House purchase context) -->
+  <g transform="translate(0, 5)">
+    <!-- House Body -->
+    <path d="M75 110 L120 70 L165 110 V165 H75 Z" fill="#2D3343" stroke="#3E475B" stroke-width="3"/>
+    
+    <!-- Roof -->
+    <path d="M65 112 L120 62 L175 112 Z" fill="#F59E0B"/>
+    <path d="M120 62 L175 112 L165 112 L120 72 L75 112 L65 112 Z" fill="#FBBF24"/>
+    
+    <!-- Window -->
+    <rect x="102" y="125" width="36" height="36" rx="4" fill="#1A1D24" stroke="#3E475B" stroke-width="2"/>
+    <line x1="120" y1="125" x2="120" y2="161" stroke="#3E475B" stroke-width="2"/>
+    <line x1="102" y1="143" x2="138" y2="143" stroke="#3E475B" stroke-width="2"/>
+  </g>
+
+  <!-- Down Payment Focus: Glowing Gold Coins & Hand/Token representing initial payment ("首付") -->
+  <g transform="translate(0, 10)">
+    <!-- Stack of Coins (representing down payment portion) -->
+    <!-- Coin 3 (Bottom) -->
+    <ellipse cx="120" cy="175" rx="40" ry="12" fill="#D97706"/>
+    <path d="M80 175 V183 C80 190 100 195 120 195 C140 195 160 190 160 183 V175" fill="#D97706"/>
+    
+    <!-- Coin 2 (Middle) -->
+    <ellipse cx="120" cy="165" rx="40" ry="12" fill="#F59E0B"/>
+    <path d="M80 165 V173 C80 180 100 185 120 185 C140 185 160 180 160 173 V165" fill="#D97706"/>
+    
+    <!-- Coin 1 (Top - Main Accent) -->
+    <ellipse cx="120" cy="155" rx="40" ry="12" fill="#FBBF24"/>
+    <ellipse cx="120" cy="155" rx="28" ry="8" fill="none" stroke="#F59E0B" stroke-width="2"/>
+    
+    <!-- Sparkles / Highlight for financial transaction value -->
+    <path d="M68 145 L72 150 L68 155 L64 150 Z" fill="#FFFFFF" opacity="0.9"/>
+    <path d="M172 140 L175 144 L172 148 L169 144 Z" fill="#FBBF24"/>
+    <path d="M115 130 L118 135 L115 140 L112 135 Z" fill="#FFFFFF" opacity="0.7"/>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(40, 60)">
+    <!-- Casket/Coffin base -->
+    <path d="M20 120 L140 120 L130 150 L30 150 Z" fill="#3D4451"/>
+    <path d="M20 120 L130 120 L120 110 L30 110 Z" fill="#5D6778"/>
+    <rect x="25" y="110" width="110" height="10" fill="#788499"/>
+    
+    <!-- White Chrysanthemum placed on top -->
+    <circle cx="80" cy="100" r="12" fill="#E0E6ED"/>
+    <circle cx="80" cy="100" r="6" fill="#FDE68A"/>
+    <path d="M80 88 L80 82 M80 112 L80 118 M68 100 L62 100 M92 100 L98 100" stroke="#E0E6ED" stroke-width="2"/>
+    
+    <!-- Subtle draped cloth effect -->
+    <path d="M20 120 Q80 140 140 120" fill="none" stroke="#2D3440" stroke-width="2"/>
+  </g>
+</svg>

@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Elements (Dorm Room Interior at Night) -->
+  <rect x="24" y="24" width="192" height="192" rx="16" fill="#222733"/>
+  
+  <!-- Window with Night Sky -->
+  <path d="M165 50H195V105H165V50Z" fill="#151821"/>
+  <circle cx="185" cy="65" r="4" fill="#F39C12" opacity="0.8"/>
+  <path d="M172 85C175 83 178 85 180 88C182 85 185 83 188 85C189 87 188 90 185 92L180 97L175 92C172 90 171 87 172 85Z" fill="#F39C12" opacity="0.2"/>
+  <line x1="180" y1="50" x2="180" y2="105" stroke="#1A1D24" stroke-width="2"/>
+  <line x1="165" y1="77" x2="195" y2="77" stroke="#1A1D24" stroke-width="2"/>
+
+  <!-- Study Desk and Lamp (referencing late night study context) -->
+  <rect x="145" y="150" width="60" height="8" rx="2" fill="#3A4454"/>
+  <rect x="160" y="158" width="6" height="30" fill="#2C3440"/>
+  <path d="M153 125L163 150H173L183 125H153Z" fill="#F39C12" opacity="0.9"/>
+  <!-- Desk Lamp Light Cone -->
+  <path d="M140 158H196L210 200H126L140 158Z" fill="#F39C12" opacity="0.08"/>
+  
+  <!-- Laptop on Desk -->
+  <rect x="155" y="142" width="22" height="10" rx="1" fill="#718096"/>
+  <path d="M151 152H183V154H151V152Z" fill="#A0AEC0"/>
+
+  <!-- Main Object: Bunk Bed / Dorm Bed (Representing 寝室 - Bedroom/Dormitory) -->
+  <!-- Bed Frame -->
+  <rect x="45" y="90" width="100" height="110" rx="4" fill="#2C3440"/>
+  <rect x="52" y="97" width="86" height="96" fill="#333B4A"/>
+  
+  <!-- Mattress / Bedding -->
+  <rect x="56" y="125" width="78" height="64" rx="6" fill="#4A5568"/>
+  
+  <!-- Pillow -->
+  <rect x="62" y="105" width="30" height="16" rx="6" fill="#E2E8F0"/>
+  
+  <!-- Cozy Blanket / Quilt with Accent Color -->
+  <path d="M56 140H134V183C134 186.314 131.314 189 128 189H62C58.6863 189 56 186.314 56 183V140Z" fill="#3182CE"/>
+  <path d="M56 160H134V183C134 186.314 131.314 189 128 189H62C58.6863 189 56 186.314 56 183V160Z" fill="#2B6CB0"/>
+  
+  <!-- Folded blanket trim / pillow accent (Orange/Gold focus color) -->
+  <rect x="62" y="107" width="8" height="12" rx="3" fill="#F39C12"/>
+  <path d="M56 140H134V146H56V140Z" fill="#F39C12" opacity="0.8"/>
+
+  <!-- Bed Ladder -->
+  <line x1="135" y1="95" x2="135" y2="195" stroke="#718096" stroke-width="3" stroke-linecap="round"/>
+  <line x1="145" y1="95" x2="145" y2="195" stroke="#718096" stroke-width="3" stroke-linecap="round"/>
+  <line x1="135" y1="115" x2="145" y2="115" stroke="#718096" stroke-width="2"/>
+  <line x1="135" y1="135" x2="145" y2="135" stroke="#718096" stroke-width="2"/>
+  <line x1="135" y1="155" x2="145" y2="155" stroke="#718096" stroke-width="2"/>
+  <line x1="135" y1="175" x2="145" y2="175" stroke="#718096" stroke-width="2"/>
+
+  <!-- Little Dorm Essentials: Slippers neatly placed beside bed -->
+  <rect x="75" y="200" width="10" height="5" rx="2.5" fill="#F39C12"/>
+  <rect x="90" y="200" width="10" height="5" rx="2.5" fill="#F39C12"/>
+
+</svg>

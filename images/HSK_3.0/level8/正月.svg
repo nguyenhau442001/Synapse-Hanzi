@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Lantern -->
+  <g transform="translate(120, 120)">
+    <!-- Lantern Body -->
+    <path d="M-40,-30 C-40,-60 -20,-75 0,-75 C20,-75 40,-60 40,-30 L40,30 C40,60 20,75 0,75 C-20,75 -40,60 -40,30 Z" fill="#FFB000"/>
+    
+    <!-- Lantern Details (Gold accents) -->
+    <rect x="-45" y="-35" width="90" height="10" rx="2" fill="#D48806"/>
+    <rect x="-45" y="25" width="90" height="10" rx="2" fill="#D48806"/>
+    
+    <!-- Tassel -->
+    <path d="M-5,75 L-5,100 M0,75 L0,105 M5,75 L5,100" stroke="#FF4500" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Top Hanger -->
+    <path d="M0,-75 L0,-95 M-10,-95 L10,-95" stroke="#D48806" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Inner Glow -->
+    <circle cx="0" cy="0" r="20" fill="#FFF5E0" opacity="0.8"/>
+  </g>
+  
+  <!-- Moon (Lunar context) -->
+  <circle cx="180" cy="60" r="25" fill="#E0E0E0" opacity="0.3"/>
+</svg>

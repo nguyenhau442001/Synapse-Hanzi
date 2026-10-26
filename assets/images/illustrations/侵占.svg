@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Public Property/Land Plot -->
+  <rect x="50" y="80" width="140" height="100" rx="4" fill="#2D343E" stroke="#4A5568" stroke-width="2"/>
+  <path d="M50 80h140v20H50z" fill="#3D4754"/>
+  
+  <!-- The Intruder's Fence/Structure (The "Encroachment") -->
+  <rect x="120" y="70" width="70" height="110" rx="2" fill="#F59E0B" fill-opacity="0.9"/>
+  <path d="M120 70h70v15H120z" fill="#D97706"/>
+  
+  <!-- Warning/Illegal indicator (Red accent) -->
+  <path d="M125 75l10 10m-10 0l10-10" stroke="#EF4444" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Decorative grid on the encroached area -->
+  <path d="M135 90v80m15-80v80m15-80v80m15-80v80" stroke="#B45309" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Boundary line being crossed -->
+  <line x1="120" y1="80" x2="120" y2="180" stroke="#F59E0B" stroke-width="4"/>
+</svg>

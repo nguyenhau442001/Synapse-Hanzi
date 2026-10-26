@@ -1,0 +1,19 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Wooden fermentation vat representing the traditional object being "continued" -->
+  <path d="M70 80 L170 80 L160 180 L80 180 Z" fill="#D35400" stroke="#F39C12" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M70 80 L170 80 L170 95 L70 95 Z" fill="#E67E22"/>
+  <path d="M70 110 L170 110 L170 120 L70 120 Z" fill="#E67E22"/>
+  <path d="M70 140 L170 140 L170 150 L70 150 Z" fill="#E67E22"/>
+  
+  <!-- Liquid inside the vat -->
+  <ellipse cx="120" cy="80" rx="50" ry="10" fill="#A04000"/>
+  
+  <!-- Arrow indicating continuity/persistence -->
+  <path d="M120 40 L120 70 M110 50 L120 40 L130 50" stroke="#F1C40F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- Circular arrow wrapping around the vat to symbolize "retaining/using as before" -->
+  <path d="M185 130 A 65 65 0 1 0 120 195" stroke="#F1C40F" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M120 195 L110 185 L120 205 L130 185" fill="#F1C40F"/>
+</svg>

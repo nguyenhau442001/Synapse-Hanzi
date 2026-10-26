@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambient Glow for Escalation / Danger -->
+  <circle cx="120" cy="120" r="90" fill="#FF5722" opacity="0.08"/>
+
+  <!-- Escalation / Progression Metaphor: Multi-tier Timeline / Causality Peak -->
+  <!-- Base Ground Line -->
+  <path d="M 30 190 L 210 190" stroke="#2D333B" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Step 1: Small Spark (Initial minor hazard) -->
+  <g transform="translate(60, 160)">
+    <!-- Small hazard base -->
+    <path d="M-12 30 L12 30 L0 10 Z" fill="#3A4454"/>
+    <!-- Small spark flame -->
+    <path d="M0 8 C -6 0, -2 -8, 0 -12 C 2 -8, 6 0, 0 8 Z" fill="#FFA726"/>
+    <circle cx="0" cy="18" r="3" fill="#8C9BA5"/>
+  </g>
+
+  <!-- Connecting Path / Progression Arrow -->
+  <path d="M 85 160 Q 120 150 155 125" fill="none" stroke="#FF7043" stroke-width="2.5" stroke-dasharray="4 4" stroke-linecap="round"/>
+
+  <!-- Step 2: Final Consequence (The extreme outcome, towering flame / point of no return) -->
+  <g transform="translate(170, 110)">
+    <!-- Ground marker / pedestal -->
+    <rect x="-25" y="70" width="50" height="10" rx="3" fill="#2D333B"/>
+    
+    <!-- Large overwhelming flame (representing "矣" - completion of action, too late) -->
+    <path d="M0 60 C -25 40, -35 15, -20 -15 C -10 -35, -2 -50, 0 -65 C 2 -50, 10 -35, 20 -15 C 35 15, 25 40, 0 60 Z" fill="#FF5722"/>
+    <path d="M0 45 C -12 30, -18 10, -10 -8 C -5 -20, -1 -30, 0 -40 C 1 -30, 5 -20, 10 -8 C 18 10, 12 30, 0 45 Z" fill="#FFC107"/>
+  </g>
+
+  <!-- Structural Time-lapse / Phase Markers (Left-to-right irreversible progression) -->
+  <!-- Vertical cutoff barrier indicating "Past the point of return" -->
+  <line x1="120" y1="60" x2="120" y2="200" stroke="#FF5722" stroke-width="1.5" stroke-dasharray="2 6" opacity="0.4"/>
+
+  <!-- Focal Character / Observer arriving too late (Regret / Realization posture) -->
+  <g transform="translate(95, 135)">
+    <!-- Body / Torso leaning back slightly in realization -->
+    <path d="M15 45 L10 20 C10 15, 18 12, 22 18 L28 45 Z" fill="#546E7A"/>
+    <!-- Head -->
+    <circle cx="21" cy="7" r="7" fill="#CFD8DC"/>
+    <!-- Arm raised in a gesture of helplessness / realization ("too late") -->
+    <path d="M12 22 C 2 20, -2 10, -8 6" fill="none" stroke="#546E7A" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="-9" cy="5" r="2.5" fill="#CFD8DC"/>
+  </g>
+
+</svg>

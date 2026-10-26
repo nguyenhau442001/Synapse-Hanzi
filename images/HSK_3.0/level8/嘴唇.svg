@@ -1,0 +1,39 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative subtle cold wind lines background context -->
+  <path d="M40 70 Q70 65 100 75 T160 70" stroke="#2D3748" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M140 160 Q170 155 200 165" stroke="#2D3748" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M50 175 Q80 170 110 180" stroke="#2D3748" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+
+  <!-- Chill frost / cold shimmer details -->
+  <circle cx="85" cy="112" r="1.5" fill="#A0AEC0" opacity="0.7"/>
+  <circle cx="155" cy="112" r="1.5" fill="#A0AEC0" opacity="0.7"/>
+  <circle cx="120" cy="105" r="1" fill="#A0AEC0" opacity="0.5"/>
+
+  <!-- Lips Graphic (Zuǐchún) - Centered, modern flat vector, slight purplish-blue tint for cold context -->
+  <g transform="translate(0, 5)">
+    <!-- Outer contour / dark shadow line -->
+    <path d="M 75 110 C 95 100, 120 100, 120 110 C 120 100, 145 100, 165 110 C 175 115, 170 125, 165 125 C 145 122, 125 127, 120 133 C 115 127, 95 122, 75 125 C 70 125, 65 115, 75 110 Z" fill="#2D2235"/>
+
+    <!-- Upper Lip -->
+    <path d="M 75 111 C 92 103, 110 111, 120 116 C 130 111, 148 103, 165 111 C 158 119, 138 123, 120 123 C 102 123, 82 119, 75 111 Z" fill="#7C6B8C"/>
+
+    <!-- Upper Lip Highlight / Cold Tint -->
+    <path d="M 90 111 C 102 107, 114 111, 120 114 C 114 112, 102 108, 90 111 Z" fill="#A393B3" opacity="0.6"/>
+    <path d="M 150 111 C 138 107, 126 111, 120 114 C 126 112, 138 108, 150 111 Z" fill="#A393B3" opacity="0.6"/>
+
+    <!-- Lower Lip -->
+    <path d="M 75 116 C 85 126, 105 136, 120 136 C 135 136, 155 126, 165 116 C 152 133, 135 138, 120 138 C 105 138, 88 133, 75 116 Z" fill="#6A5A78"/>
+
+    <!-- Lower Lip Soft Volume / Highlight -->
+    <path d="M 95 127 C 108 132, 132 132, 145 127 C 135 134, 105 134, 95 127 Z" fill="#8E7D9E" opacity="0.5"/>
+
+    <!-- Center Lip Line (Mouth Opening) -->
+    <path d="M 77 114 C 98 120, 120 120, 163 114 C 145 117, 132 119, 120 119 C 108 119, 95 117, 77 114 Z" fill="#3D304A"/>
+  </g>
+
+  <!-- Sleek focus accent (gold/orange dot minimalist anchor) -->
+  <circle cx="120" cy="180" r="3" fill="#F6AD55"/>
+</svg>

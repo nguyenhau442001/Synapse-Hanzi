@@ -1,0 +1,56 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Yellow Earth Plateau Ground -->
+    <path d="M 20 180 Q 80 160, 140 175 T 220 170 L 220 200 L 20 200 Z" fill="#D97706" opacity="0.3"/>
+    <path d="M 20 185 Q 90 170, 160 182 T 220 178 L 220 200 L 20 200 Z" fill="#D97706" opacity="0.6"/>
+
+    <!-- Dynamic Flowing Silk Ribbons Background -->
+    <path d="M 40 130 C 70 80, 110 160, 150 90 C 180 40, 200 90, 220 70" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" opacity="0.4"/>
+    <path d="M 30 150 C 70 100, 100 170, 140 110 C 180 50, 210 110, 230 90" fill="none" stroke="#EF4444" stroke-width="3" stroke-linecap="round" opacity="0.3"/>
+
+    <!-- Yangge Dancer Character (Shanbei Style) -->
+    <!-- Head & Traditional White Headwrap (Yangge Towel) -->
+    <circle cx="120" cy="75" r="16" fill="#FBBF24"/>
+    <path d="M 100 70 C 105 50, 135 50, 140 70 C 145 78, 135 85, 120 85 C 105 85, 95 78, 100 70 Z" fill="#EF4444"/>
+    <path d="M 135 70 Q 155 65, 160 80 Q 150 85, 138 75 Z" fill="#EF4444"/> <!-- Headwrap knot/tail -->
+
+    <!-- Upper Body (Vibrant Red Festive Vest/Shirt) -->
+    <path d="M 98 95 L 142 95 L 152 145 L 88 145 Z" fill="#EF4444"/>
+    <!-- Festive Yellow Vest Trim / Inner layer -->
+    <path d="M 108 95 L 132 95 L 136 145 L 104 145 Z" fill="#F59E0B"/>
+
+    <!-- Dynamic Arms holding Yangge Silk Ribbon & Waist Drum/Props -->
+    <!-- Left Arm raised high -->
+    <path d="M 98 100 L 70 80 L 55 95" fill="none" stroke="#EF4444" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Right Arm sweeping low -->
+    <path d="M 142 100 L 175 110 L 190 95" fill="none" stroke="#EF4444" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Flowing Red & Yellow Silk Ribbons in Motion -->
+    <path d="M 55 95 C 40 105, 30 90, 20 110" fill="none" stroke="#FBBF24" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 190 95 C 205 85, 215 110, 225 90" fill="none" stroke="#F59E0B" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Waist & Legs in Dancing Pose (Action lines) -->
+    <!-- Left Leg stepping / bending -->
+    <path d="M 103 145 L 90 175 L 75 180" fill="none" stroke="#1E293B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Right Leg grounded/pivoting -->
+    <path d="M 137 145 L 150 175 L 165 180" fill="none" stroke="#1E293B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Traditional Waist Drum (Anxugu - common in Yangge) -->
+    <rect x="105" y="125" width="30" height="20" rx="4" fill="#B45309" transform="rotate(15 120 135)"/>
+    <path d="M 105 125 L 105 145" stroke="#FBBF24" stroke-width="3"/>
+    <path d="M 135 125 L 135 145" stroke="#FBBF24" stroke-width="3"/>
+    <!-- Drum sashes -->
+    <path d="M 120 95 L 110 125" stroke="#EF4444" stroke-width="3"/>
+    <path d="M 120 95 L 130 125" stroke="#EF4444" stroke-width="3"/>
+
+    <!-- Festive Celebration Sparkles / Confetti -->
+    <circle cx="75" cy="55" r="3" fill="#FBBF24"/>
+    <circle cx="165" cy="50" r="2.5" fill="#EF4444"/>
+    <circle cx="45" cy="135" r="2" fill="#F59E0B"/>
+    <circle cx="195" cy="140" r="3" fill="#FBBF24"/>
+    <rect x="135" y="40" width="4" height="4" fill="#F59E0B" transform="rotate(45 137 42)"/>
+    <rect x="95" y="45" width="3" height="3" fill="#EF4444" transform="rotate(30 96 46)"/>
+  </g>
+</svg>

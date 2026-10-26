@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for focus -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.5"/>
+
+  <!-- Conceptual illustration for "开销" (Expenses / Living Costs): 
+       A sleek, modern physical wallet slightly open, with a credit card and minimalist bills emerging,
+       combining housing/meals context implicitly into financial outflow. -->
+
+  <!-- Wallet Shadow -->
+  <path d="M64 165 C64 165 120 173 176 165 C184 164 190 156 190 148 L190 156 C190 166 182 174 172 174 C120 182 64 174 64 174 Z" fill="#0D0F12"/>
+
+  <!-- Banknote / Card 1 (Back - Gold Accent) -->
+  <rect x="85" y="75" width="70" height="45" rx="6" fill="#F39C12" transform="rotate(-12 120 97)"/>
+  <circle cx="120" cy="97" r="10" fill="#E67E22" transform="rotate(-12 120 97)" opacity="0.5"/>
+
+  <!-- Banknote 2 (Middle - Crisp Light Blue) -->
+  <rect x="80" y="90" width="80" height="50" rx="6" fill="#3498DB" transform="rotate(5 120 115)"/>
+  <circle cx="120" cy="115" r="12" fill="#2980B9" transform="rotate(5 120 115)"/>
+  <rect x="92" y="109" width="12" height="12" rx="2" fill="#ECF0F1" transform="rotate(5 120 115)" opacity="0.8"/>
+
+  <!-- Main Wallet Body (Back Pocket) -->
+  <rect x="60" y="110" width="120" height="75" rx="12" fill="#2C3E50"/>
+  
+  <!-- Wallet Inner Dark Lining -->
+  <path d="M68 110 L172 110 L172 122 L68 122 Z" fill="#1E272C"/>
+
+  <!-- Wallet Flap / Front Pocket -->
+  <path d="M60 135 C60 128 66 122 73 122 L167 122 C174 122 180 128 180 135 L180 170 C180 177 174 183 167 183 L73 183 C66 183 60 177 60 170 Z" fill="#34495E"/>
+
+  <!-- Wallet Stitching Details -->
+  <rect x="68" y="130" width="104" height="45" rx="8" fill="none" stroke="#4E6D8C" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <!-- Metallic Clasp / Button on Wallet -->
+  <rect x="110" y="145" width="20" height="14" rx="4" fill="#F1C40F"/>
+  <rect x="114" y="149" width="12" height="6" rx="2" fill="#D35400"/>
+
+  <!-- Outflow / Upward Motion Indicator Arrows (Sleek minimalist gold accents) -->
+  <path d="M100 55 L104 45 L108 55 Z" fill="#F39C12"/>
+  <path d="M120 48 L124 38 L128 48 Z" fill="#F39C12"/>
+  <path d="M140 55 L144 45 L148 55 Z" fill="#F39C12"/>
+
+</svg>

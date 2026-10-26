@@ -852,6 +852,42 @@ window.addEventListener('resize', () => {
   if (h && h.textContent) fitHanziToContainer(h);
 });
 
+// Lock mouse wheel scrolling on flashcard study stage since there is no extra content below
+window.addEventListener('wheel', (e) => {
+  if (!document.body.classList.contains('flashcard-study-mode')) return;
+
+  // Allow wheel scrolling in Overview list
+  const overviewView = document.getElementById('overviewView');
+  if (overviewView && !overviewView.hidden && overviewView.contains(e.target)) {
+    return;
+  }
+
+  // Allow scrolling inside slide-over study drawer (handwriting canvas, radicals, etc.)
+  if (document.body.classList.contains('study-sidebar-open') && e.target.closest('.workstation-right')) {
+    return;
+  }
+
+  // Allow scrolling in open dialogs/modals (e.g., filter dialog, help modal)
+  const openModal = document.querySelector('dialog[open], .study-modal.open, .study-filter-dialog[open]');
+  if (openModal && openModal.contains(e.target)) {
+    return;
+  }
+
+  // If inside the card and card itself is overflowing and can scroll in that direction, allow it
+  const card = e.target.closest('.card');
+  if (card && card.scrollHeight > card.clientHeight) {
+    const isScrollingDown = e.deltaY > 0;
+    const canScrollDown = card.scrollTop + card.clientHeight < card.scrollHeight - 1;
+    const canScrollUp = card.scrollTop > 1;
+    if ((isScrollingDown && canScrollDown) || (!isScrollingDown && canScrollUp)) {
+      return;
+    }
+  }
+
+  // Prevent wheel scrolling on the study view since there is no extra content below
+  e.preventDefault();
+}, { passive: false });
+
 function toggleStudySidebar(forceOpen) {
   const isOpen = document.body.classList.contains('study-sidebar-open');
   const isTargetTab = document.body.dataset.sidebarTab === 'words';

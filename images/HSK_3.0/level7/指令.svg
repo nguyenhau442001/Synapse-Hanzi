@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Ambient Space Background elements -->
+  <circle cx="50" cy="60" r="1" fill="#4A5568"/>
+  <circle cx="190" cy="50" r="1.5" fill="#718096"/>
+  <circle cx="210" cy="180" r="1" fill="#4A5568"/>
+  <circle cx="40" cy="200" r="1.5" fill="#A0AEC0"/>
+  <circle cx="110" cy="30" r="1" fill="#718096"/>
+
+  <!-- Mars Planet (Contextual reference) -->
+  <circle cx="195" cy="185" r="35" fill="#C53030"/>
+  <path d="M 170 165 Q 185 155 210 170 Q 220 190 200 210 Q 180 215 170 195 Z" fill="#9B2C2C" opacity="0.6"/>
+  <path d="M 175 190 Q 185 180 195 195 Z" fill="#742A2A" opacity="0.8"/>
+
+  <!-- Radio Signal Waves (Transmission from Earth/Control to Mars) -->
+  <path d="M 68 120 C 78 115, 88 115, 98 120" stroke="#F6AD55" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.3"/>
+  <path d="M 60 110 C 75 100, 95 100, 110 110" stroke="#F6AD55" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M 52 100 C 72 85, 102 85, 122 100" stroke="#F6AD55" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.9"/>
+  
+  <!-- Glowing Data Packets / Command pulses along the wave -->
+  <circle cx="85" cy="105" r="3" fill="#ED8936"/>
+  <circle cx="105" cy="98" r="2.5" fill="#F6AD55"/>
+  <circle cx="68" cy="113" r="2" fill="#DD6B20"/>
+
+  <!-- Mars Rover (Physical Object representing the target of the command) -->
+  <g transform="translate(110, 130)">
+    <!-- Rover body -->
+    <rect x="-15" y="-5" width="30" height="16" rx="4" fill="#E2E8F0"/>
+    <rect x="-10" y="-10" width="20" height="6" rx="2" fill="#CBD5E0"/>
+    
+    <!-- Solar panel / Deck -->
+    <path d="M -18 -5 L 18 -5 L 14 -12 L -14 -12 Z" fill="#3182CE"/>
+    <line x1="-14" y1="-8.5" x2="14" y2="-8.5" stroke="#2B6CB0" stroke-width="1"/>
+    <line x1="-6" y1="-12" x2="-8" y2="-5" stroke="#2B6CB0" stroke-width="1"/>
+    <line x1="6" y1="-12" x2="8" y2="-5" stroke="#2B6CB0" stroke-width="1"/>
+
+    <!-- Robotic Arm -->
+    <path d="M 10 -2 L 20 -8 L 22 -3" stroke="#A0AEC0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <circle cx="22" cy="-3" r="2" fill="#ED8936"/>
+
+    <!-- Mast / Camera -->
+    <rect x="-2" y="-18" width="4" height="8" fill="#A0AEC0"/>
+    <circle cx="0" cy="-19" r="3" fill="#CBD5E0"/>
+    <circle cx="0" cy="-19" r="1.5" fill="#ED8936"/>
+
+    <!-- Wheels -->
+    <circle cx="-16" cy="16" r="6" fill="#4A5568"/>
+    <circle cx="-16" cy="16" r="3" fill="#2D3748"/>
+    
+    <circle cx="0" cy="16" r="6" fill="#4A5568"/>
+    <circle cx="0" cy="16" r="3" fill="#2D3748"/>
+    
+    <circle cx="16" cy="16" r="6" fill="#4A5568"/>
+    <circle cx="16" cy="16" r="3" fill="#2D3748"/>
+
+    <!-- Suspension / Axles -->
+    <line x1="-16" y1="10" x2="0" y2="10" stroke="#718096" stroke-width="2"/>
+    <line x1="0" y1="10" x2="16" y2="10" stroke="#718096" stroke-width="2"/>
+  </g>
+
+  <!-- Central Focus: The Command / Instruction Object (指令 - physical data token / holographic command stream rising from a sleek control console/transmitter) -->
+  <g transform="translate(50, 150)">
+    <!-- Base Transmitter Station -->
+    <path d="M -25 35 L 25 35 L 20 15 L -20 15 Z" fill="#2D3748"/>
+    <rect x="-30" y="35" width="60" height="6" rx="2" fill="#4A5568"/>
+    <circle cx="-10" cy="25" r="2" fill="#48BB78"/>
+    <circle cx="0" cy="25" r="2" fill="#ED8936"/>
+    <circle cx="10" cy="25" r="2" fill="#4299E1"/>
+
+    <!-- Transmitter Dish / Emission Point -->
+    <ellipse cx="0" cy="15" rx="14" ry="4" fill="#718096"/>
+    <path d="M -14 15 Q 0 5 14 15" fill="none" stroke="#CBD5E0" stroke-width="2"/>
+
+    <!-- Holographic Command Stream (Structured digital vector lines representing "指令") -->
+    <g transform="translate(0, -10)">
+      <!-- Hologram base beam -->
+      <path d="M 0 25 L -8 -15 L 8 -15 Z" fill="#ED8936" opacity="0.15"/>
+      
+      <!-- Abstract command UI/Data lines floating upwards -->
+      <g transform="translate(0, -25)">
+        <rect x="-16" y="-12" width="32" height="24" rx="4" fill="#2D3748" stroke="#ED8936" stroke-width="1.5"/>
+        <!-- Command execution lines inside UI card -->
+        <line x1="-11" y1="-5" x2="-3" y2="-5" stroke="#F6AD55" stroke-width="2" stroke-linecap="round"/>
+        <line x1="-11" y1="1" x2="9" y2="1" stroke="#CBD5E0" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="-11" y1="7" x2="3" y2="7" stroke="#CBD5E0" stroke-width="1.5" stroke-linecap="round"/>
+        <!-- Accent indicator -->
+        <circle cx="8" cy="-5" r="2" fill="#48BB78"/>
+      </g>
+      
+      <!-- Floating Binary/Command Data Blocks -->
+      <rect x="-6" y="-45" width="12" height="6" rx="1" fill="#F6AD55" opacity="0.8"/>
+      <rect x="-12" y="-56" width="24" height="6" rx="1" fill="#F6AD55"/>
+      <circle cx="0" cy="-65" r="3" fill="#F6AD55"/>
+    </g>
+  </g>
+
+</svg>

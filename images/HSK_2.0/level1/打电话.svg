@@ -1,33 +1,6 @@
-<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#1e293b"/>
-    </linearGradient>
-  </defs>
-  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
-  
-  <!-- Desk Surface -->
-  <rect x="0" y="160" width="240" height="80" fill="#0f172a" opacity="0.4"/>
-  
-  <!-- Phone Body -->
-  <rect x="90" y="60" width="60" height="120" rx="12" fill="#334155" stroke="#475569" stroke-width="2"/>
-  <rect x="98" y="70" width="44" height="80" rx="4" fill="#1e293b"/>
-  
-  <!-- Screen Glow -->
-  <circle cx="120" cy="110" r="15" fill="#f59e0b" opacity="0.2"/>
-  <circle cx="120" cy="110" r="8" fill="#fbbf24"/>
-  
-  <!-- Sound Waves (Action) -->
-  <path d="M155 110 Q 170 110 175 125 M155 110 Q 170 110 175 95" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" fill="none"/>
-  <path d="M165 110 Q 185 110 190 135 M165 110 Q 185 110 190 85" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" opacity="0.6" fill="none"/>
-  
-  <!-- Hand holding phone -->
-  <path d="M70 180 C 60 150 70 130 90 120 L 90 160 Z" fill="#fb923c"/>
-  <path d="M150 120 C 170 130 180 150 170 180 L 150 170 Z" fill="#fb923c"/>
-  
-  <!-- Decorative elements -->
-  <circle cx="40" cy="50" r="6" fill="#10b981"/>
-  <circle cx="200" cy="190" r="8" fill="#ec4899"/>
-  <path d="M200 40 L 210 60 L 190 60 Z" fill="#fbbf24" opacity="0.5"/>
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+  <path d="M28 32 C28 26 34 22 40 24 L48 30 C52 34 50 38 46 40 C44 42 42 46 46 54 C50 62 54 64 56 62 C58 58 62 56 66 60 L72 68 C74 74 70 80 64 80 C44 80 28 52 28 32 Z" stroke="#38bdf8" stroke-width="3.8" stroke-linejoin="round" fill="none"/>
+  <path d="M64 26 A20 20 0 0 1 78 40" stroke="#fb923c" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M72 18 A32 32 0 0 1 88 34" stroke="#fb923c" stroke-width="3" stroke-linecap="round" fill="none"/>
 </svg>

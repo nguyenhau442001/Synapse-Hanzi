@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(60, 60)">
+    <!-- Person representing "稳重" (Steady/Mature) -->
+    <!-- Torso/Suit -->
+    <path d="M40 120 L80 120 L90 160 L30 160 Z" fill="#34495E"/>
+    <!-- Shoulders/Arms -->
+    <path d="M30 120 C 20 120, 20 130, 30 140 L40 140 L40 120 Z" fill="#2C3E50"/>
+    <path d="M90 120 C 100 120, 100 130, 90 140 L80 140 L80 120 Z" fill="#2C3E50"/>
+    <!-- Neck -->
+    <rect x="55" y="105" width="10" height="15" fill="#E67E22"/>
+    <!-- Head -->
+    <circle cx="60" cy="85" r="25" fill="#E67E22"/>
+    <!-- Hair -->
+    <path d="M40 85 C 40 60, 80 60, 80 85 L80 90 L40 90 Z" fill="#2C3E50"/>
+    <!-- Calm Facial Features -->
+    <line x1="48" y1="80" x2="53" y2="80" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+    <line x1="67" y1="80" x2="72" y2="80" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+    <path d="M52 95 C 55 98, 65 98, 68 95" stroke="#1A1D24" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Steady Posture: Hands clasped in front -->
+    <ellipse cx="60" cy="140" rx="15" ry="8" fill="#F39C12"/>
+  </g>
+</svg>

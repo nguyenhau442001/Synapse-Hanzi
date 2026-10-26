@@ -1,0 +1,51 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background subtle mountain layers and rain hint (contextual representation) -->
+  <path d="M20 190 L80 130 L140 170 L200 110 L220 190 Z" fill="#222733"/>
+  <path d="M0 200 L60 150 L120 185 L180 135 L240 180 L240 240 L0 240 Z" fill="#2A303C"/>
+  
+  <!-- Rain streaks -->
+  <g stroke="#3A4454" stroke-width="1.5" stroke-linecap="round" opacity="0.6">
+    <line x1="50" y1="40" x2="42" y2="60"/>
+    <line x1="90" y1="30" x2="82" y2="50"/>
+    <line x1="150" y1="45" x2="142" y2="65"/>
+    <line x1="190" y1="35" x2="182" y2="55"/>
+    <line x1="70" y1="70" x2="62" y2="90"/>
+    <line x1="130" y1="65" x2="122" y2="85"/>
+  </g>
+
+  <!-- Central iconic object: A brass field explorer's magnifying glass / telescope merged with shining enthusiasm sparks (Representing "兴致" - high spirits/keen interest) -->
+  <g transform="translate(120, 115)">
+    <!-- Glowing aura representing high enthusiasm/spark -->
+    <circle cx="0" cy="-10" r="55" fill="#FF9F43" opacity="0.15"/>
+    <circle cx="0" cy="-10" r="45" fill="#FF9F43" opacity="0.25"/>
+
+    <!-- Magnifying Glass Frame (Outer gold ring) -->
+    <circle cx="-10" cy="-20" r="38" fill="none" stroke="#2A303C" stroke-width="8"/>
+    <circle cx="-10" cy="-20" r="34" fill="#1E232B" stroke="#F39C12" stroke-width="6"/>
+    
+    <!-- Lens reflection -->
+    <path d="M -25 -32 A 25 25 0 0 1 5 -32" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Handle -->
+    <g transform="rotate(45)">
+      <rect x="18" y="10" width="16" height="50" rx="8" fill="#D35400"/>
+      <rect x="22" y="14" width="8" height="42" rx="4" fill="#E67E22"/>
+      <!-- Handle grip rings -->
+      <line x1="18" y1="22" x2="34" y2="22" stroke="#BA4A00" stroke-width="3"/>
+      <line x1="18" y1="34" x2="34" y2="34" stroke="#BA4A00" stroke-width="3"/>
+      <line x1="18" y1="46" x2="34" y2="46" stroke="#BA4A00" stroke-width="3"/>
+    </g>
+
+    <!-- Inside the lens: Nature discovery element (Tiny vibrant green fern/leaf & sparkling star of discovery) -->
+    <!-- Fern leaves -->
+    <path d="M -15 -5 C -15 -15 -25 -20 -25 -20 C -25 -20 -15 -25 -10 -35 C -5 -25 5 -20 5 -20 C 5 -20 -5 -15 -5 -5 Z" fill="#2ECC71"/>
+    <path d="M -10 5 C -10 -2 -18 -8 -18 -8" fill="none" stroke="#2ECC71" stroke-width="2" stroke-linecap="round"/>
+    <path d="M -5 -2 C -2 -8 5 -12 5 -12" fill="none" stroke="#2ECC71" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Bright spark of keen interest / enthusiasm -->
+    <path d="M 12 -38 L 15 -28 L 25 -25 L 15 -22 L 12 -12 L 9 -22 L -1 -25 L 9 -28 Z" fill="#F1C40F"/>
+    <path d="M -22 2 L -20 8 L -14 10 L -20 12 L -22 18 L -24 12 L -30 10 L -24 8 Z" fill="#F1C40F" transform="scale(0.6) translate(-10, 10)"/>
+  </g>
+</svg>

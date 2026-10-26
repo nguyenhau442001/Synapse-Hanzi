@@ -1,0 +1,65 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(12, 12)">
+    <!-- Window Frame / Riverbank Atmosphere View -->
+    <path d="M12 28 C12 18 18 12 28 12 H188 C198 12 204 18 204 28 V204 C204 214 198 220 188 220 H28 C18 220 12 214 12 204 Z" fill="#222730" stroke="#313846" stroke-width="2"/>
+    
+    <!-- Night River Scene background through window -->
+    <clipPath id="window-clip">
+      <path d="M24 24 H192 V130 H24 Z"/>
+    </clipPath>
+    
+    <g clip-path="url(#window-clip)">
+      <rect x="24" y="24" width="168" height="106" fill="#15181F"/>
+      <!-- Distant city lights & river reflection -->
+      <circle cx="60" cy="50" r="1.5" fill="#E2B714" opacity="0.6"/>
+      <circle cx="85" cy="40" r="1" fill="#E2B714" opacity="0.4"/>
+      <circle cx="130" cy="45" r="2" fill="#E2B714" opacity="0.5"/>
+      <circle cx="160" cy="55" r="1.5" fill="#E2B714" opacity="0.7"/>
+      
+      <path d="M24 100 Q 108 90 192 100 V130 H24 Z" fill="#1B2230" opacity="0.8"/>
+      <!-- River glow -->
+      <ellipse cx="108" cy="105" rx="50" ry="4" fill="#E2B714" opacity="0.15"/>
+    </g>
+
+    <!-- Warm Cafe Interior Foreground -->
+    <!-- Table -->
+    <path d="M54 180 H162 C168 180 172 184 170 190 L156 216 C154 220 150 222 145 222 H71 C66 222 62 220 60 216 L46 190 C44 184 48 180 54 180 Z" fill="#2C231E" stroke="#3D3028" stroke-width="2"/>
+    <ellipse cx="108" cy="180" rx="54" ry="8" fill="#3D3028"/>
+
+    <!-- Ambient Pendant Light / Warm Glow -->
+    <path d="M108 12 L108 55" stroke="#E2B714" stroke-width="1.5" opacity="0.5"/>
+    <path d="M96 55 H120 L126 64 H90 Z" fill="#E2B714"/>
+    <path d="M60 75 Q 108 135 156 75 Z" fill="#E2B714" opacity="0.08"/>
+    <circle cx="108" cy="62" r="6" fill="#FFF2B2"/>
+
+    <!-- Coffee Cup & Saucer (Central Iconic Object representing 'Qíngdiào' setting) -->
+    <ellipse cx="108" cy="168" rx="22" ry="7" fill="#4E3B31"/>
+    <ellipse cx="108" cy="166" rx="18" ry="5" fill="#E8D8C8"/>
+    
+    <!-- Cup Body -->
+    <path d="M92 142 H124 C124 156 120 164 108 164 C96 164 92 156 92 142 Z" fill="#E8D8C8"/>
+    <ellipse cx="108" cy="142" rx="16" ry="4" fill="#F5EBE1"/>
+    <!-- Coffee liquid -->
+    <ellipse cx="108" cy="143" rx="14" ry="3" fill="#5C3A21"/>
+    <!-- Cup Handle -->
+    <path d="M123 145 C132 145 132 157 123 159" fill="none" stroke="#E8D8C8" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Delicate Plant / Vase for poetic atmosphere -->
+    <path d="M66 162 L74 148 H82 L90 162 Z" fill="#D47A43"/>
+    <path d="M78 148 V128" stroke="#52796F" stroke-width="2" stroke-linecap="round"/>
+    <path d="M78 138 C72 134 68 128 70 122 C74 120 78 124 78 138 Z" fill="#84A98C"/>
+    <path d="M78 132 C84 128 88 122 86 116 C82 114 78 118 78 132 Z" fill="#52796F"/>
+
+    <!-- Subtle atmospheric light particles / bokeh -->
+    <circle cx="75" cy="95" r="2.5" fill="#E2B714" opacity="0.6"/>
+    <circle cx="138" cy="115" r="1.5" fill="#E2B714" opacity="0.4"/>
+    <circle cx="145" cy="85" r="3" fill="#E2B714" opacity="0.3"/>
+    <circle cx="85" cy="75" r="1.5" fill="#E2B714" opacity="0.5"/>
+
+    <!-- Window Frame Bars -->
+    <path d="M108 24 V130" stroke="#1A1D24" stroke-width="4"/>
+    <path d="M24 77 H192" stroke="#1A1D24" stroke-width="4"/>
+  </g>
+</svg>

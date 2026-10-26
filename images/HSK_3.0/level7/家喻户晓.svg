@@ -1,0 +1,70 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glowing radiating lines representing widespread reach/fame -->
+  <g opacity="0.15" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4 4">
+    <line x1="120" y1="120" x2="120" y2="30" />
+    <line x1="120" y1="120" x2="210" y2="120" />
+    <line x1="120" y1="120" x2="120" y2="210" />
+    <line x1="120" y1="120" x2="30" y2="120" />
+    <line x1="120" y1="120" x2="183" y2="57" />
+    <line x1="120" y1="120" x2="57" y2="183" />
+    <line x1="120" y1="120" x2="183" y2="183" />
+    <line x1="120" y1="120" x2="57" y2="57" />
+  </g>
+
+  <!-- Central focal icon: The traditional Chinese courtyard house (户/家) with a glowing broadcast/star (喻/晓) symbolizing household-to-household widespread fame -->
+  <g transform="translate(0, 5)">
+    <!-- Glowing aura behind the house -->
+    <circle cx="120" cy="115" r="55" fill="#38BDF8" opacity="0.1"/>
+    
+    <!-- House Base / Walls -->
+    <path d="M 80,125 L 80,155 L 160,155 L 160,125 Z" fill="#334155" />
+    
+    <!-- Traditional House Roof -->
+    <path d="M 65,125 L 120,80 L 175,125 Z" fill="#F59E0B" />
+    <path d="M 70,120 L 120,85 L 170,120 Z" fill="#FBBF24" />
+
+    <!-- Door (户) -->
+    <rect x="106" y="130" width="28" height="25" rx="3" fill="#1E293B" />
+    <circle cx="128" cy="144" r="1.5" fill="#F59E0B" />
+
+    <!-- Windows / Details -->
+    <rect x="88" y="133" width="12" height="12" rx="2" fill="#38BDF8" opacity="0.8" />
+    <rect x="140" y="133" width="12" height="12" rx="2" fill="#38BDF8" opacity="0.8" />
+
+    <!-- Radiant Broadcast / Fame symbol (喻/晓 - universally known) floating above roof -->
+    <g transform="translate(120, 60)">
+      <!-- Central Star -->
+      <path d="M 0,-16 L 4,-5 L 15,-3 L 7,4 L 9,15 L 0,9 L -9,15 L -7,4 L -15,-3 L -4,-5 Z" fill="#F59E0B" />
+      
+      <!-- Sparkles / Broadcast waves -->
+      <circle cx="0" cy="0" r="22" fill="none" stroke="#FBBF24" stroke-width="2" stroke-dasharray="3 5" opacity="0.8" />
+    </g>
+
+    <!-- Ground Line -->
+    <path d="M 60,158 L 180,158" stroke="#475569" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Surrounding small icons representing multiple households/people (家家户户) -->
+  <g transform="translate(0, 15)">
+    <!-- Left small house silhouette -->
+    <g transform="translate(45, 120) scale(0.45)">
+      <path d="M 20,40 L 50,15 L 80,40 Z" fill="#38BDF8" />
+      <rect x="25" y="40" width="50" height="40" fill="#334155" />
+      <rect x="42" y="55" width="16" height="25" fill="#1E293B" />
+    </g>
+
+    <!-- Right small house silhouette -->
+    <g transform="translate(150, 120) scale(0.45)">
+      <path d="M 20,40 L 50,15 L 80,40 Z" fill="#38BDF8" />
+      <rect x="25" y="40" width="50" height="40" fill="#334155" />
+      <rect x="42" y="55" width="16" height="25" fill="#1E293B" />
+    </g>
+  </g>
+
+  <!-- Sound/Information waves spreading outward -->
+  <path d="M 75,95 Q 60,110 75,125" fill="none" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 165,95 Q 180,110 165,125" fill="none" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+</svg>

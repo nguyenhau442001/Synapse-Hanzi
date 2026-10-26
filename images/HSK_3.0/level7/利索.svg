@@ -1,0 +1,32 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Visualization for "利索" (Agile, neat, decisive movement) -->
+  <!-- Using visual contrast: A chaotic, blurred trailing motion vs a crisp, precise cutting/action vector line -->
+  
+  <g transform="translate(0, 0)">
+    <!-- Background subtle motion grid lines -->
+    <line x1="40" y1="120" x2="200" y2="120" stroke="#2A2F3B" stroke-width="2" stroke-dasharray="4 4" />
+    
+    <!-- Left side: Ghosted trailing motion lines representing speed and neatness (干净利落) -->
+    <path d="M 70 90 L 105 90" stroke="#3A4254" stroke-width="6" stroke-linecap="round" opacity="0.4"/>
+    <path d="M 60 120 L 115 120" stroke="#3A4254" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+    <path d="M 75 150 L 110 150" stroke="#3A4254" stroke-width="6" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Dynamic crisp cutting / shaping action symbol (Orange/Gold accent for focus) -->
+    <!-- Represents precision, decisiveness, and no hesitation -->
+    <path d="M 90 75 L 160 120 L 90 165 L 115 120 Z" fill="#F59E0B" opacity="0.2"/>
+    
+    <!-- Sharp cutting blade / precise geometric motion arc -->
+    <path d="M 100 65 Q 170 120 100 175" fill="none" stroke="#F59E0B" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Focal sharp nodes indicating neatness and accuracy -->
+    <circle cx="100" cy="65" r="5" fill="#F59E0B"/>
+    <circle cx="170" cy="120" r="7" fill="#F59E0B"/>
+    <circle cx="100" cy="175" r="5" fill="#F59E0B"/>
+
+    <!-- A stylized crisp checkmark / neat slicing motion overlay -->
+    <path d="M 125 105 L 145 125 L 185 85" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

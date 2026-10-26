@@ -1,0 +1,37 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Underwater background ambient glow -->
+  <circle cx="120" cy="140" r="80" fill="#1E3A4C" opacity="0.4"/>
+  
+  <!-- Sea floor rocks / Reefs in shallow water -->
+  <path d="M40 210 Q60 190 90 205 Q120 185 150 200 Q180 185 200 210 Z" fill="#2E3B4E"/>
+  <path d="M70 215 Q100 195 130 215 Z" fill="#3E4E63"/>
+
+  <!-- Vibrant edible seaweeds (hǎizǎo) growing from the reef -->
+  <!-- Left kelp / frond -->
+  <path d="M80 200 Q50 150 65 100 Q75 60 60 40 Q75 60 90 100 Q100 150 90 200 Z" fill="#2ECC71"/>
+  <path d="M80 200 Q50 150 65 100 Q75 60 60 40" fill="none" stroke="#A9DFBF" stroke-width="2" opacity="0.4"/>
+
+  <!-- Center tall swaying seaweed -->
+  <path d="M120 205 Q150 140 110 90 Q80 50 100 25 Q85 60 120 90 Q150 140 130 205 Z" fill="#27AE60"/>
+  <path d="M120 205 Q150 140 110 90 Q80 50 100 25" fill="none" stroke="#A9DFBF" stroke-width="2.5" opacity="0.4"/>
+
+  <!-- Right broad-leaf seaweed -->
+  <path d="M165 210 Q200 160 185 110 Q170 70 195 50 Q170 80 165 110 Q160 160 155 210 Z" fill="#1ABC9C"/>
+  <path d="M165 210 Q200 160 185 110 Q170 70 195 50" fill="none" stroke="#A3E4D7" stroke-width="2" opacity="0.4"/>
+
+  <!-- Additional foreground fronds -->
+  <path d="M100 212 Q80 170 95 130 Q105 100 90 80 Q105 100 110 130 Q120 170 110 212 Z" fill="#2ECC71"/>
+  <path d="M140 210 Q165 175 145 135 Q130 105 150 85 Q135 110 145 135 Q165 175 150 210 Z" fill="#1E8449"/>
+
+  <!-- Tiny air/water bubbles for underwater context -->
+  <circle cx="75" cy="80" r="3" fill="#E8F8F5" opacity="0.6"/>
+  <circle cx="70" cy="70" r="1.5" fill="#E8F8F5" opacity="0.4"/>
+  <circle cx="135" cy="65" r="2.5" fill="#E8F8F5" opacity="0.5"/>
+  <circle cx="140" cy="55" r="1" fill="#E8F8F5" opacity="0.3"/>
+  <circle cx="105" cy="45" r="2" fill="#E8F8F5" opacity="0.5"/>
+
+  <!-- Soft lighting highlights -->
+  <path d="M110 25 C100 40 85 55 100 25 Z" fill="#52BE80" opacity="0.6"/>
+</svg>

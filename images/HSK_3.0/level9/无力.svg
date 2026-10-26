@@ -1,0 +1,55 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Floor shadow for context -->
+    <ellipse cx="120" cy="195" rx="60" ry="8" fill="#121418" opacity="0.8"/>
+    
+    <!-- Table Surface -->
+    <path d="M70,145 L170,145 L185,170 L55,170 Z" fill="#2A2F3B"/>
+    <rect x="75" y="170" width="12" height="30" fill="#1E232D"/>
+    <rect x="153" y="170" width="12" height="30" fill="#1E232D"/>
+
+    <!-- Dropped Glass / Water Spilling -->
+    <g transform="translate(145, 125)">
+      <!-- Water puddle -->
+      <path d="M-15,28 C-5,25 25,32 35,26 C42,22 35,15 25,18 C15,21 -5,17 -18,22 C-24,24 -22,29 -15,28 Z" fill="#4DA6FF" opacity="0.6"/>
+      <!-- Shattered / Fallen glass tumbler -->
+      <path d="M-10,10 L5,25 L15,10 Z" fill="none" stroke="#8BC34A" stroke-width="2" stroke-linejoin="round" opacity="0.7"/>
+      <!-- Water drops -->
+      <circle cx="-5" cy="22" r="1.5" fill="#4DA6FF"/>
+      <circle cx="12" cy="23" r="2" fill="#4DA6FF"/>
+    </g>
+
+    <!-- Character slumped in chair (Noun/Human representation of "wúlì") -->
+    <!-- Chair Back -->
+    <rect x="95" y="60" width="50" height="90" rx="8" fill="#323846"/>
+    <rect x="103" y="68" width="34" height="74" rx="4" fill="#222732"/>
+    <rect x="115" y="150" width="10" height="30" fill="#1E232D"/>
+
+    <!-- Character Body - Slumped & limp -->
+    <!-- Head hanging down -->
+    <circle cx="120" cy="95" r="16" fill="#F4A261"/>
+    <!-- Closed relaxed eyes / fatigued face -->
+    <path d="M114,98 Q117,100 120,98" stroke="#D97706" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M122,98 Q125,100 128,98" stroke="#D97706" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <!-- Hair -->
+    <path d="M104,90 C105,80 115,77 120,77 C128,77 135,82 136,92 Z" fill="#2C3E50"/>
+
+    <!-- Torso slumped backward -->
+    <path d="M100,105 L140,105 L148,150 L92,150 Z" fill="#E76F51"/>
+
+    <!-- Limp Arms (hanging completely down by the sides, powerless) -->
+    <!-- Left Arm -->
+    <path d="M100,110 C90,120 80,135 75,148" stroke="#F4A261" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <circle cx="74" cy="151" r="4.5" fill="#F4A261"/>
+
+    <!-- Right Arm -->
+    <path d="M140,110 C150,120 158,135 163,148" stroke="#F4A261" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <circle cx="164" cy="151" r="4.5" fill="#F4A261"/>
+
+    <!-- Legs (weak, unsupportive posture) -->
+    <path d="M98,150 L85,185 L75,188" stroke="#264653" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M142,150 L155,185 L168,187" stroke="#264653" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

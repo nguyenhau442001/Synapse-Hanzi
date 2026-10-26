@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Community Representative (Left) -->
+  <g transform="translate(60, 120)">
+    <circle cx="0" cy="-40" r="15" fill="#FFB84D"/>
+    <path d="M-25 0 C-25 -20, 25 -20, 25 0 L 20 60 L -20 60 Z" fill="#4D8CFF"/>
+    <path d="M-10 10 L 0 20 L 10 10" stroke="#1A1D24" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- New Resident (Right) -->
+  <g transform="translate(180, 120)">
+    <circle cx="0" cy="-40" r="15" fill="#A8D08D"/>
+    <path d="M-25 0 C-25 -20, 25 -20, 25 0 L 20 60 L -20 60 Z" fill="#7D7D7D"/>
+    <rect x="-15" y="-5" width="30" height="10" rx="2" fill="#5A5A5A"/>
+  </g>
+
+  <!-- Interaction: Open arms/Welcoming gesture -->
+  <path d="M 85 90 Q 120 70 155 90" stroke="#FFB84D" stroke-width="6" stroke-linecap="round" fill="none"/>
+  
+  <!-- Ground line -->
+  <line x1="30" y1="180" x2="210" y2="180" stroke="#333842" stroke-width="4" stroke-linecap="round"/>
+</svg>

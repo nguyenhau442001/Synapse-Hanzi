@@ -1,0 +1,36 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Globe Outline (Subtle) -->
+  <circle cx="120" cy="120" r="70" fill="none" stroke="#2D343E" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Character: The Scholar Entrepreneur -->
+  <!-- Body -->
+  <path d="M100 180h40v40h-40z" fill="#3A414D"/>
+  <path d="M110 140h20v40h-20z" fill="#E0E6ED"/>
+  
+  <!-- Head and Face -->
+  <circle cx="120" cy="120" r="25" fill="#FFD1A9"/>
+  <path d="M105 115a5 5 0 1 0 10 0 5 5 0 1 0-10 0M125 115a5 5 0 1 0 10 0 5 5 0 1 0-10 0" fill="#2D343E"/>
+  <path d="M112 130h16" stroke="#2D343E" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Action: Holding a magnifying glass over a stylized map/book -->
+  <g transform="translate(140, 100)">
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#FFB84D" stroke-width="4"/>
+    <path d="M14 14l15 15" stroke="#FFB84D" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Floating Icons representing "Worldly Experience" -->
+  <!-- Mountain -->
+  <path d="M40 150l15-25 15 25z" fill="#FFB84D"/>
+  <!-- Compass -->
+  <circle cx="180" cy="160" r="10" fill="none" stroke="#FFB84D" stroke-width="2"/>
+  <path d="M180 152v16M172 160h16" stroke="#FFB84D" stroke-width="2"/>
+  <!-- Book -->
+  <path d="M50 80h30v20h-30z" fill="#FFB84D"/>
+  <path d="M55 85h20M55 90h20" stroke="#1A1D24" stroke-width="2"/>
+  
+  <!-- Motion lines indicating travel/observation -->
+  <path d="M30 100c10-20 30-20 40 0" fill="none" stroke="#FFB84D" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M170 80c10 20 30 20 40 0" fill="none" stroke="#FFB84D" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>

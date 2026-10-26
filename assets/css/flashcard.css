@@ -61,19 +61,32 @@
   color: var(--text-primary); font-size: 14.5px; font-weight: 500;
   cursor: pointer; transition: all 0.15s ease; box-sizing: border-box;
 }
-.study-filter-sheet-option:hover { background: var(--surface-chip); }
+.study-filter-sheet-option:hover {
+  background: var(--surface-chip);
+  border-color: color-mix(in srgb, var(--brand-primary) 35%, var(--border));
+}
 .study-filter-sheet-option:active { transform: scale(0.98); }
+.study-filter-sheet-option:focus-visible {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 2px;
+}
 .study-filter-sheet-option.is-active {
-  background: var(--accent-light, rgba(192, 86, 56, 0.12));
-  border-color: var(--accent); color: var(--accent); font-weight: 700;
+  background: var(--accent-light);
+  border-color: var(--brand-primary);
+  color: var(--text-primary);
+  font-weight: 700;
+}
+.study-filter-sheet-option.is-active:hover {
+  border-color: var(--brand-primary-hover, var(--brand-primary));
+  background: var(--accent-light);
 }
 .filter-sheet-option-left { display: flex; align-items: center; gap: 10px; }
 .filter-sheet-option-icon { font-size: 17px; line-height: 1; }
 .filter-sheet-option-label { font-size: 14.5px; }
 .filter-sheet-option-right { display: flex; align-items: center; gap: 8px; }
 .filter-sheet-option-count { font-size: 13px; color: var(--text-secondary); }
-.study-filter-sheet-option.is-active .filter-sheet-option-count { color: var(--accent); font-weight: 600; }
-.filter-sheet-check { font-size: 15px; font-weight: 700; color: var(--accent); }
+.study-filter-sheet-option.is-active .filter-sheet-option-count { color: var(--text-secondary); font-weight: 600; }
+.filter-sheet-check { font-size: 15px; font-weight: 700; color: var(--brand-primary); }
 
 .card-header-bar {
   position: absolute;
@@ -498,6 +511,8 @@
   overflow-y: visible !important;
   box-shadow: none;
   transition: all 0.2s ease;
+  flex-shrink: 0 !important;
+  min-height: min-content !important;
 }
 :root[data-theme="dark"] .example-box {
   background: rgba(255, 255, 255, 0.02);
@@ -748,8 +763,9 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 820px;
+  max-width: 550px;
   margin: 12px auto 0;
+  padding-bottom: max(16px, env(safe-area-inset-bottom, 16px));
   gap: 12px;
 }
 .study-nav-btn {
@@ -757,9 +773,9 @@
   align-items: center;
   justify-content: center;
   gap: 6px;
-  min-height: 42px;
-  padding: 8px 16px;
-  font-size: 13.5px;
+  min-height: 44px;
+  padding: 8px 18px;
+  font-size: 14.5px;
   font-weight: 600;
   background: var(--card-bg, #ffffff);
   border: 1px solid var(--border);
@@ -785,11 +801,11 @@
   align-items: center;
   justify-content: center;
   gap: 4px;
-  padding: 6px 14px;
+  padding: 7px 16px;
   border-radius: 999px;
   background: var(--surface-subtle);
   border: 1px solid var(--border-subtle);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   font-variant-numeric: tabular-nums;
   color: var(--text-secondary);
@@ -803,7 +819,7 @@
   opacity: 0.5;
 }
 .nav-row button, .nav-btn {
-  font-size: 13px;
+  font-size: 14.5px;
   font-weight: 600;
   padding: 8px 18px;
   border-radius: 999px;
@@ -833,7 +849,10 @@
 .nav-row--progress-only { justify-content: center; }
 
 /* SRS rating: one "Lật thẻ" button before the answer, two clean tactile ratings after it. */
-.rating-area { margin-top: 14px; }
+.rating-area {
+  margin-top: 14px;
+  padding-bottom: max(16px, env(safe-area-inset-bottom, 16px));
+}
 .reveal-btn {
   display: none !important;
 }
@@ -1335,6 +1354,13 @@
   color: var(--text-secondary);
 }
 
+.today-card-example u {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--accent);
+  font-weight: 600;
+}
+
 /* Card Actions / Rating Area */
 .today-card-actions {
   width: 100%;
@@ -1786,6 +1812,8 @@
     margin-top: 10px;
     padding: 11px 13px;
     line-height: 1.5;
+    flex-shrink: 0;
+    min-height: min-content;
   }
   .study-mode .example-box .ex-label { margin-bottom: 4px; }
   .study-mode .example-box .ex-line,

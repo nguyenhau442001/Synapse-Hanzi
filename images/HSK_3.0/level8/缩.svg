@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle cold wind lines -->
+  <path d="M30 70 Q60 65 90 70" stroke="#3A4454" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M150 160 Q180 155 210 160" stroke="#3A4454" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M40 180 Q70 175 100 180" stroke="#3A4454" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+
+  <!-- Character figure representing "缩" (coing in / retracting neck into collar) -->
+  <g transform="translate(0, 5)">
+    <!-- Back / Shoulder / Coat body -->
+    <path d="M 85 185 L 70 205 L 170 205 L 155 185 Z" fill="#2C3545"/>
+    <path d="M 70 140 C 70 140 75 185 85 185 L 155 185 C 165 185 170 140 170 140 Z" fill="#3D4F66"/>
+
+    <!-- Thick winter coat collar (tall and wrapped up high) -->
+    <path d="M 85 125 C 85 110 95 95 120 95 C 145 95 155 110 155 125 L 165 145 C 165 145 150 160 120 160 C 90 160 75 145 75 145 Z" fill="#4E6482"/>
+    <!-- Collar accent shading -->
+    <path d="M 90 135 C 90 125 100 115 120 115 C 140 115 150 125 150 135 L 158 148 C 158 148 140 158 120 158 C 100 158 82 148 82 148 Z" fill="#3A4E68"/>
+
+    <!-- Head retracted/hunched down into the coat -->
+    <!-- Chin tucked down behind the collar top edge -->
+    <circle cx="120" cy="115" r="22" fill="#E8B896"/>
+
+    <!-- Tucked-in facial features showing looking down / shivering -->
+    <!-- Closed eyes / squinting against cold -->
+    <path d="M 111 114 Q 115 117 119 114" stroke="#8C5E3C" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M 121 114 Q 125 117 129 114" stroke="#8C5E3C" stroke-width="2" stroke-linecap="round" fill="none"/>
+    
+    <!-- Winter hat (Beanie) sitting low on head -->
+    <path d="M 98 105 C 98 85 142 85 142 105 Z" fill="#F2A93B"/>
+    <!-- Beanie brim fold -->
+    <rect x="96" y="102" width="48" height="8" rx="3" fill="#D98E23"/>
+    <!-- Pom-pom on hat -->
+    <circle cx="120" cy="80" r="8" fill="#F2A93B"/>
+
+    <!-- Dynamic shiver/action lines indicating drawing inward -->
+    <path d="M 68 115 L 60 120 L 68 125" stroke="#F2A93B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M 172 115 L 180 120 L 172 125" stroke="#F2A93B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+    <!-- Cold frost/wind swirls around -->
+    <path d="M 95 72 Q 105 68 115 75" stroke="#617A9C" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M 125 75 Q 135 68 145 72" stroke="#617A9C" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

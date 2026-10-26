@@ -1,0 +1,22 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Representing "剧变" (Dramatic Change/Upheaval) as a tectonic shift of a physical structure -->
+  <!-- The base platform -->
+  <path d="M60 180 L180 180 L190 200 L50 200 Z" fill="#374151"/>
+  
+  <!-- The structure undergoing a dramatic shift (a tall pillar/building splitting) -->
+  <g fill="#F59E0B">
+    <!-- Left side of the structure -->
+    <path d="M80 180 L80 100 L115 100 L115 180 Z"/>
+    <!-- Right side of the structure (shifted upwards and tilted) -->
+    <path d="M125 140 L125 60 L160 60 L160 140 Z" transform="rotate(10 142 100)"/>
+  </g>
+  
+  <!-- Visualizing the "rupture" or "break" -->
+  <path d="M115 100 L125 140 L125 60 L115 100" fill="#1A1D24"/>
+  
+  <!-- Debris/Fragments to emphasize the intensity -->
+  <rect x="165" y="70" width="8" height="8" fill="#F59E0B" transform="rotate(25 169 74)"/>
+  <rect x="70" y="90" width="6" height="6" fill="#F59E0B" transform="rotate(-15 73 93)"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ticket Booth Structure -->
+  <path d="M70 80h100v100H70z" fill="#2D343E" stroke="#FFB84D" stroke-width="3"/>
+  <path d="M90 110h60v50H90z" fill="#1A1D24" stroke="#FFB84D" stroke-width="2"/>
+  <path d="M115 160v20" stroke="#FFB84D" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Ticket Dispenser/Slot -->
+  <rect x="95" y="120" width="50" height="10" fill="#FFB84D"/>
+  
+  <!-- Tickets coming out -->
+  <rect x="105" y="130" width="30" height="15" fill="#E0E0E0" rx="2"/>
+  <rect x="105" y="145" width="30" height="15" fill="#E0E0E0" rx="2"/>
+  <rect x="105" y="160" width="30" height="15" fill="#E0E0E0" rx="2"/>
+  
+  <!-- Decorative Roof -->
+  <path d="M60 80l20-20h80l20 20z" fill="#FFB84D"/>
+  
+  <!-- Coins/Revenue representation -->
+  <circle cx="180" cy="190" r="12" fill="#FFD700"/>
+  <circle cx="195" cy="180" r="10" fill="#FFD700"/>
+  <circle cx="210" cy="195" r="8" fill="#FFD700"/>
+  
+  <!-- Ticket stub detail -->
+  <path d="M105 130h30v15h-30z" fill="none" stroke="#1A1D24" stroke-width="2"/>
+  <path d="M105 145h30v15h-30z" fill="none" stroke="#1A1D24" stroke-width="2"/>
+  <path d="M105 160h30v15h-30z" fill="none" stroke="#1A1D24" stroke-width="2"/>
+</svg>

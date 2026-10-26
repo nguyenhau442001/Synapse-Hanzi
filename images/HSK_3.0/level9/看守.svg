@@ -1,0 +1,92 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Elements: Blizzard/Snow atmosphere -->
+  <g opacity="0.3">
+    <circle cx="50" cy="60" r="1.5" fill="#FFFFFF"/>
+    <circle cx="80" cy="40" r="1" fill="#FFFFFF"/>
+    <circle cx="120" cy="50" r="1.5" fill="#FFFFFF"/>
+    <circle cx="170" cy="35" r="2" fill="#FFFFFF"/>
+    <circle cx="200" cy="70" r="1" fill="#FFFFFF"/>
+    <circle cx="30" cy="110" r="1.2" fill="#FFFFFF"/>
+    <circle cx="210" cy="130" r="1.5" fill="#FFFFFF"/>
+    <!-- Diagonal wind streaks -->
+    <line x1="20" y1="80" x2="60" y2="70" stroke="#FFFFFF" stroke-width="0.8" stroke-dasharray="4,8"/>
+    <line x1="90" y1="90" x2="140" y2="75" stroke="#FFFFFF" stroke-width="0.8" stroke-dasharray="6,10"/>
+    <line x1="160" y1="95" x2="210" y2="80" stroke="#FFFFFF" stroke-width="0.8" stroke-dasharray="4,6"/>
+  </g>
+
+  <!-- Border Wall/Gate Structure (The object being guarded) -->
+  <g>
+    <!-- Wall base -->
+    <path d="M20 180 L220 180 L220 210 L20 210 Z" fill="#2C323D"/>
+    <!-- Wall blocks -->
+    <line x1="60" y1="180" x2="60" y2="210" stroke="#1A1D24" stroke-width="2"/>
+    <line x1="120" y1="180" x2="120" y2="210" stroke="#1A1D24" stroke-width="2"/>
+    <line x1="180" y1="180" x2="180" y2="210" stroke="#1A1D24" stroke-width="2"/>
+    <line x1="20" y1="195" x2="220" y2="195" stroke="#1A1D24" stroke-width="1.5"/>
+
+    <!-- Guardpost / Watchtower structure on the right -->
+    <path d="M160 110 L200 110 L210 180 L150 180 Z" fill="#242933"/>
+    <!-- Roof overhang -->
+    <path d="M150 110 L210 110 L220 95 L140 95 Z" fill="#363C4A"/>
+    <!-- Watchtower slit window with warm guard light -->
+    <path d="M175 130 L185 130 L185 155 L175 155 Z" fill="#F59E0B" opacity="0.8"/>
+  </g>
+
+  <!-- Central Character: The Border Guard (Noun - Con người) -->
+  <g transform="translate(15, 0)">
+    <!-- Heavy Winter Parka / Coat (Dark Blue/Slate with orange accent) -->
+    <!-- Legs -->
+    <rect x="85" y="165" width="12" height="20" fill="#242933" rx="4"/>
+    <rect x="103" y="165" width="12" height="20" fill="#242933" rx="4"/>
+    <rect x="83" y="180" width="16" height="5" fill="#1A1D24" rx="2"/>
+    <rect x="101" y="180" width="16" height="5" fill="#1A1D24" rx="2"/>
+
+    <!-- Coat Body -->
+    <path d="M80 110 L120 110 L128 170 L72 170 Z" fill="#323846"/>
+    <!-- Coat trim / zipper line -->
+    <line x1="100" y1="110" x2="100" y2="170" stroke="#1A1D24" stroke-width="2"/>
+
+    <!-- High Collar & Scarf -->
+    <path d="M88 100 L112 100 L115 115 L85 115 Z" fill="#E65100"/>
+
+    <!-- Head & Winter Ushanka Hat -->
+    <!-- Head/Face base -->
+    <circle cx="100" cy="85" r="14" fill="#D4B29A"/>
+    
+    <!-- Ushanka (Russian-style fur hat common for border guards in cold climates) -->
+    <!-- Ear flaps down -->
+    <path d="M84 80 L88 105 L94 105 L90 85 Z" fill="#242933"/>
+    <path d="M116 80 L112 105 L106 105 L110 85 Z" fill="#242933"/>
+    <!-- Crown of hat -->
+    <path d="M85 85 C85 70, 115 70, 115 85 L118 88 C118 88, 100 82, 82 88 Z" fill="#242933"/>
+    <!-- Front badge/symbol plate -->
+    <rect x="96" y="80" width="8" height="5" rx="1" fill="#F59E0B"/>
+
+    <!-- Focused, vigilant eyes looking forward -->
+    <circle cx="95" cy="86" r="1.5" fill="#1A1D24"/>
+    <circle cx="105" cy="86" r="1.5" fill="#1A1D24"/>
+
+    <!-- Arms holding rifle firmly across body (Watchful posture) -->
+    <!-- Left arm -->
+    <path d="M85 115 L70 135 L85 140 Z" fill="#323846"/>
+    <!-- Right arm -->
+    <path d="M115 115 L130 130 L115 140 Z" fill="#323846"/>
+
+    <!-- Rifle / Equipment -->
+    <!-- Barrel & Stock -->
+    <rect x="60" y="125" width="80" height="5" rx="2.5" transform="rotate(25, 60, 125)" fill="#1A1D24"/>
+    <!-- Scope/Details -->
+    <rect x="95" y="128" width="14" height="6" rx="1" fill="#4B5563"/>
+  </g>
+
+  <!-- Foreground Snow Drift -->
+  <path d="M0 195 Q 60 185, 120 195 T 240 190 L 240 240 L 0 240 Z" fill="#E5E7EB" opacity="0.9"/>
+  <path d="M0 205 Q 80 195, 160 208 T 240 200 L 240 240 L 0 240 Z" fill="#FFFFFF" opacity="0.95"/>
+
+  <!-- Dramatic Lighting / Focus Glow on Guard -->
+  <circle cx="115" cy="120" r="60" fill="#F59E0B" opacity="0.08" style="mix-blend-mode: screen;"/>
+
+</svg>

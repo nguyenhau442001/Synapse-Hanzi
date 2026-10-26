@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for transformation theme -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.6"/>
+  
+  <!-- Modern City Skyline (Left/Old half transitioning to Right/New half) -->
+  <!-- Split baseline / ground -->
+  <line x1="40" y1="175" x2="200" y2="175" stroke="#3A4454" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Left Side: Old/Traditional building fading out -->
+  <g opacity="0.4">
+    <rect x="55" y="125" width="30" height="50" fill="#4E5D6C"/>
+    <polygon points="50,125 70,105 90,125" fill="#3B4654"/>
+    <rect x="63" y="135" width="6" height="10" fill="#1A1D24"/>
+    <rect x="71" y="135" width="6" height="10" fill="#1A1D24"/>
+    <rect x="63" y="155" width="6" height="10" fill="#1A1D24"/>
+    <rect x="71" y="155" width="6" height="10" fill="#1A1D24"/>
+  </g>
+
+  <!-- Transition / Sparkle effect representing "焕然一新" (completely renewed) -->
+  <g transform="translate(120, 115)">
+    <!-- Central energetic burst -->
+    <path d="M0 -35 L5 -10 L30 -5 L8 10 L15 35 L-2 18 L-20 30 L-10 8 L-35 -2 L-8 -8 Z" fill="#F39C12"/>
+    <circle cx="0" cy="0" r="4" fill="#FFFFFF"/>
+    <!-- Secondary sparkle -->
+    <path d="M25 -30 L28 -20 L38 -18 L29 -12 L32 -2 L24 -8 L16 -2 L19 -12 L10 -18 L20 -20 Z" fill="#F1C40F" opacity="0.8"/>
+  </g>
+
+  <!-- Right Side: Sleek, Modern, Vibrant Skyscraper (New face of the city) -->
+  <g>
+    <!-- Main tower body with gradient-like layered flat shapes -->
+    <path d="M145 175 L145 75 L175 65 L175 175 Z" fill="#2C3E50"/>
+    <path d="M160 175 L160 70 L195 60 L195 175 Z" fill="#3498DB"/>
+    
+    <!-- Modern glass facade lines (High-contrast gold/cyan accents) -->
+    <line x1="166" y1="75" x2="189" y2="69" stroke="#00CEC9" stroke-width="2"/>
+    <line x1="166" y1="85" x2="189" y2="79" stroke="#00CEC9" stroke-width="2"/>
+    <line x1="166" y1="95" x2="189" y2="89" stroke="#00CEC9" stroke-width="2"/>
+    <line x1="166" y1="105" x2="189" y2="99" stroke="#00CEC9" stroke-width="2"/>
+    <line x1="166" y1="115" x2="189" y2="109" stroke="#00CEC9" stroke-width="2"/>
+    <line x1="166" y1="125" x2="189" y2="119" stroke="#00CEC9" stroke-width="2"/>
+    <line x1="166" y1="135" x2="189" y2="129" stroke="#00CEC9" stroke-width="2"/>
+    <line x1="166" y1="145" x2="189" y2="139" stroke="#00CEC9" stroke-width="2"/>
+    <line x1="166" y1="155" x2="189" y2="149" stroke="#00CEC9" stroke-width="2"/>
+
+    <!-- Architectural spire / modern antenna -->
+    <line x1="177" y1="60" x2="177" y2="40" stroke="#F1C40F" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="177" cy="38" r="3" fill="#E67E22"/>
+  </g>
+
+  <!-- Dynamic sweeping arrow representing renewal/transformation direction -->
+  <path d="M 70 145 C 90 120, 110 120, 130 140" fill="none" stroke="#F39C12" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 4"/>
+  <polygon points="132,134 140,143 128,147" fill="#F39C12"/>
+</svg>

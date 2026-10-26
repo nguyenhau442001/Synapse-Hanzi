@@ -1,0 +1,54 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle atmosphere (spring rain/vitality glow) -->
+  <circle cx="120" cy="115" r="70" fill="#252D3D" opacity="0.6"/>
+
+  <!-- Spring Raindrops -->
+  <g opacity="0.4" stroke="#60A5FA" stroke-width="1.5" stroke-linecap="round">
+    <line x1="75" y1="60" x2="70" y2="72" />
+    <line x1="165" y1="75" x2="160" y2="87" />
+    <line x1="90" y1="130" x2="85" y2="142" />
+    <line x1="155" y1="140" x2="150" y2="152" />
+  </g>
+
+  <!-- Branch / Stem system -->
+  <g>
+    <!-- Main branch -->
+    <path d="M70 190 C 95 180, 115 160, 120 135" fill="none" stroke="#2D4A3E" stroke-width="6" stroke-linecap="round"/>
+    <!-- Secondary twig supporting the bud -->
+    <path d="M105 158 C 112 148, 117 142, 120 135" fill="none" stroke="#2D4A3E" stroke-width="4" stroke-linecap="round"/>
+    <!-- Small leaf 1 -->
+    <path d="M95 169 C 85 165, 78 172, 82 178 C 88 180, 93 175, 95 169 Z" fill="#34D399" opacity="0.8"/>
+    <!-- Small leaf 2 -->
+    <path d="M112 148 C 122 144, 128 152, 124 158 C 118 160, 114 154, 112 148 Z" fill="#10B981" opacity="0.9"/>
+  </g>
+
+  <!-- Peony Bud (花蕾) - Majestic, plump, about to bloom -->
+  <g transform="translate(120, 115)">
+    <!-- Outer calyx (green sepals cradling the bud) -->
+    <path d="M -15 15 C -20 5, -10 -5, -5 -10 C -2 -5, 0 0, -3 18 Z" fill="#059669"/>
+    <path d="M 15 15 C 20 5, 10 -5, 5 -10 C 2 -5, 0 0, 3 18 Z" fill="#059669"/>
+    <path d="M 0 18 C -8 10, -5 -2, 0 -12 C 5 -2, 8 10, 0 18 Z" fill="#10B981"/>
+
+    <!-- Plump overlapping petals (Peony pink/magenta theme with high contrast) -->
+    <!-- Back/Lower petals -->
+    <path d="M -20 5 C -25 -10, -15 -25, 0 -28 C 15 -25, 25 -10, 20 5 C 15 15, -15 15, -20 5 Z" fill="#EC4899"/>
+    
+    <!-- Mid-layer wrapping petals -->
+    <path d="M -14 2 C -18 -12, -10 -22, 0 -24 C 10 -22, 18 -12, 14 2 C 10 10, -10 10, -14 2 Z" fill="#F472B6"/>
+
+    <!-- Inner tight core (showing a hint of opening at the very top) -->
+    <path d="M -8 -4 C -10 -15, -5 -20, 0 -22 C 5 -20, 10 -15, 8 -4 C 5 2, -5 2, -8 -4 Z" fill="#FB7185"/>
+
+    <!-- Delicate highlight lines indicating texture & tension of the upcoming bloom -->
+    <path d="M 0 -22 C 2 -15, 4 -10, 3 -2" fill="none" stroke="#FCE7F3" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+    <path d="M -4 -18 C -2 -12, -1 -8, -3 0" fill="none" stroke="#FCE7F3" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+  </g>
+
+  <!-- Glowing accent particle (vitality/life essence) -->
+  <circle cx="123" cy="85" r="2.5" fill="#FDE047" opacity="0.9"/>
+  <circle cx="102" cy="105" r="1.5" fill="#67E8F9" opacity="0.8"/>
+  <circle cx="140" cy="110" r="2" fill="#FDE047" opacity="0.7"/>
+</svg>

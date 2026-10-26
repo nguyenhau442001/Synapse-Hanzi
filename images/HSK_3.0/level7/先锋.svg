@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative tech lines / grid hints -->
+  <line x1="30" y1="200" x2="210" y2="200" stroke="#2A2F3D" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M 120 40 L 120 180" stroke="#252A37" stroke-width="1.5"/>
+
+  <!-- Pioneer / Vanguard Symbolism: A sleek modern arrow / spearhead breaking forward, combined with a human-centric leadership stance -->
+  <!-- Forward motion trails -->
+  <path d="M 60 120 L 90 120" stroke="#3A4256" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 50 140 L 85 140" stroke="#3A4256" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 50 100 L 85 100" stroke="#3A4256" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Ground shadow / launch pad -->
+  <ellipse cx="130" cy="190" rx="45" ry="8" fill="#111318"/>
+
+  <!-- Vanguard Figure (Leading the charge - representing the vanguard/pioneer human element) -->
+  <!-- Body / Torso angled forward -->
+  <path d="M 105 155 L 120 125 L 140 140 L 130 175 Z" fill="#2E384D"/>
+  
+  <!-- Head -->
+  <circle cx="125" cy="112" r="10" fill="#FFA500"/>
+  
+  <!-- Dynamic arms pushing forward -->
+  <path d="M 125 130 L 150 115" stroke="#FFA500" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 115 140 L 135 155" stroke="#2E384D" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Legs running / striding -->
+  <path d="M 125 170 L 145 185" stroke="#2E384D" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 115 170 L 105 188" stroke="#1E2430" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- The "Xiānfēng" Arrowhead / Spear / Breakthrough Element (Bold Gold/Orange Accent) -->
+  <!-- Main dynamic arrowhead piercing through -->
+  <polygon points="140,80 205,120 140,160 155,120" fill="#FFA500"/>
+  <polygon points="140,80 205,120 155,120" fill="#FFC107"/>
+
+  <!-- Core energy beam or breakthrough trail -->
+  <path d="M 90 120 L 155 120" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- High-tech focal points / nodes -->
+  <circle cx="205" cy="120" r="4" fill="#FFFFFF"/>
+  <circle cx="140" cy="80" r="3" fill="#FFE082"/>
+  <circle cx="140" cy="160" r="3" fill="#FFE082"/>
+
+  <!-- Ambient glowing tech dots -->
+  <circle cx="85" cy="70" r="2" fill="#3A4256"/>
+  <circle cx="190" cy="65" r="3" fill="#3A4256"/>
+  <circle cx="210" cy="175" r="2.5" fill="#3A4256"/>
+</svg>

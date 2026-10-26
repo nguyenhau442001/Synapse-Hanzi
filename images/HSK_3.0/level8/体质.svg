@@ -1,0 +1,38 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background medical grid/pulse line -->
+  <path d="M 30,120 H 90 L 105,95 L 120,145 L 135,105 L 150,120 H 210" fill="none" stroke="#2A2F3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Central Physical Body / Constitution Representation (Stylized Human Silhouette with Bio-Energy/Vitality Core) -->
+  <g transform="translate(0, 5)">
+    <!-- Head -->
+    <circle cx="120" cy="55" r="16" fill="#38BDF8"/>
+    
+    <!-- Neck -->
+    <path d="M 114,71 H 126 V 79 H 114 Z" fill="#38BDF8"/>
+    
+    <!-- Torso representing constitution/physique -->
+    <path d="M 92,79 C 92,79 100,77 120,77 C 140,77 148,79 148,79 L 158,135 C 158,135 145,143 120,143 C 95,143 82,135 82,135 Z" fill="#38BDF8"/>
+    
+    <!-- Inner Core / Bio-Constitution Glowing Indicator (Orange/Gold accent) -->
+    <circle cx="120" cy="110" r="18" fill="#1A1D24"/>
+    <circle cx="120" cy="110" r="12" fill="#F59E0B"/>
+    
+    <!-- DNA Helix accent wrapping the core (representing genetic constitution/crasis) -->
+    <path d="M 110,95 Q 120,105 130,95" fill="none" stroke="#FBBF24" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 110,125 Q 120,115 130,125" fill="none" stroke="#FBBF24" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Arms -->
+    <path d="M 94,81 L 76,120 L 86,124 L 98,92 Z" fill="#38BDF8" opacity="0.85"/>
+    <path d="M 146,81 L 164,120 L 154,124 L 142,92 Z" fill="#38BDF8" opacity="0.85"/>
+    
+    <!-- Legs -->
+    <path d="M 100,141 L 104,185 L 116,185 L 118,141 Z" fill="#38BDF8" opacity="0.85"/>
+    <path d="M 140,141 L 136,185 L 124,185 L 122,141 Z" fill="#38BDF8" opacity="0.85"/>
+  </g>
+
+  <!-- Focus / Vitality Nodes -->
+  <circle cx="120" cy="55" r="22" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.5"/>
+  <circle cx="120" cy="110" r="32" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity="0.4"/>
+</svg>

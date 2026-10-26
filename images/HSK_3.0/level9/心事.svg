@@ -1,0 +1,39 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background atmosphere: night lake edge -->
+  <path d="M 0,200 Q 80,180 240,200 L 240,240 L 0,240 Z" fill="#14171E" />
+  
+  <!-- Bench representation -->
+  <rect x="40" y="165" width="160" height="8" rx="3" fill="#2E3440" />
+  <rect x="60" y="173" width="12" height="30" fill="#21252D" />
+  <rect x="168" y="173" width="12" height="30" fill="#21252D" />
+  
+  <!-- Sitting character, head bowed in deep thought -->
+  <!-- Torso & Hood/Coat -->
+  <path d="M 105,125 Q 120,110 140,125 L 155,168 L 85,168 Z" fill="#3B4252" />
+  
+  <!-- Head (bowed down) -->
+  <circle cx="118" cy="112" r="14" fill="#D8DEE9" />
+  <!-- Hair -->
+  <path d="M 104,110 Q 112,96 130,105 Q 120,102 108,112 Z" fill="#4C566A" />
+
+  <!-- The core semantic visualization for "心事" (Inner burden / heavy thoughts):
+       A glowing, translucent stylized silhouette of a heart/mind structure inside the chest area,
+       entangled with heavy, swirling knot lines representing unresolved worries. -->
+  <g transform="translate(120, 130)">
+    <!-- Soft emotional glow behind the chest -->
+    <circle cx="0" cy="0" r="22" fill="#D08770" opacity="0.15" />
+    
+    <!-- Tangled thoughts / 烦恼 knots radiating from the chest -->
+    <path d="M -8, -5 Q -18, -18 -8, -25 Q 2, -32 -2, -15" fill="none" stroke="#D08770" stroke-width="2.5" stroke-linecap="round" opacity="0.85" />
+    <path d="M 5, -2 Q 18, -15 12, -25 Q 6, -35 15, -20" fill="none" stroke="#EBCB8B" stroke-width="2" stroke-linecap="round" opacity="0.75" />
+    <path d="M -2, 5 Q -15, 12 -22, 5 Q -28, -2 -15, 2" fill="none" stroke="#D08770" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+    
+    <!-- Central heavy thought anchor (abstract inner weight) -->
+    <circle cx="0" cy="-2" r="6" fill="#EBCB8B" />
+  </g>
+  
+  <!-- Slumped posture accent lines -->
+  <path d="M 100,120 Q 110,115 115,122" fill="none" stroke="#4C566A" stroke-width="2" stroke-linecap="round" />
+</svg>

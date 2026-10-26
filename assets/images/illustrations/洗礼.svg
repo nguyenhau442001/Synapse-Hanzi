@@ -1,0 +1,47 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container / Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glowing atmospheric backdrop (Fire & Steel context) -->
+  <circle cx="120" cy="115" r="70" fill="#FF5722" opacity="0.12"/>
+  <circle cx="120" cy="115" r="45" fill="#FFC107" opacity="0.08"/>
+
+  <!-- Sparks / Embers rising -->
+  <g fill="#FFC107">
+    <circle cx="95" cy="65" r="1.5" opacity="0.8"/>
+    <circle cx="145" cy="55" r="2" opacity="0.9"/>
+    <circle cx="80" cy="85" r="1" opacity="0.6"/>
+    <circle cx="160" cy="80" r="1.5" opacity="0.7"/>
+    <circle cx="110" cy="45" r="2.5" opacity="0.9"/>
+  </g>
+
+  <!-- Flame / Purifying Fire base -->
+  <path d="M120 40 C120 40 102 75 102 95 C102 105 110 113 120 113 C130 113 138 105 138 95 C138 75 120 40 120 40 Z" fill="#FF5722" opacity="0.85"/>
+  <path d="M120 62 C120 62 109 85 109 97 C109 103 114 108 120 108 C126 108 131 103 131 97 C131 85 120 62 120 62 Z" fill="#FFC107"/>
+
+  <!-- Steel Sword (The physical object representing "tôi luyện", tempered steel, trials) -->
+  <!-- Blade -->
+  <path d="M116 85 L120 65 L124 85 L124 165 L120 175 L116 165 Z" fill="#E0E6ED"/>
+  <!-- Blade center groove/fuller -->
+  <path d="M120 72 L120 162" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Crossguard -->
+  <path d="M96 165 L144 165 L142 172 L98 172 Z" fill="#FFC107"/>
+
+  <!-- Hilt / Handle -->
+  <path d="M117 172 L123 172 L123 192 L117 192 Z" fill="#475569"/>
+  <path d="M117 177 L123 177" stroke="#334155" stroke-width="1.5"/>
+  <path d="M117 182 L123 182" stroke="#334155" stroke-width="1.5"/>
+  <path d="M117 187 L123 187" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Pommel -->
+  <circle cx="120" cy="195" r="4" fill="#FFC107"/>
+
+  <!-- Droplets / Cleansing Water motif subtly intersecting with fire/steel -->
+  <path d="M75 105 C75 105 68 115 68 121 C68 125 71 128 75 128 C79 128 82 125 82 121 C82 115 75 105 75 105 Z" fill="#00BCD4" opacity="0.8"/>
+  <path d="M165 105 C165 105 158 115 158 121 C158 125 161 128 165 128 C169 128 172 125 172 121 C172 115 165 105 165 105 Z" fill="#00BCD4" opacity="0.8"/>
+
+  <!-- Anvil base (Grounding the object securely) -->
+  <path d="M90 200 L150 200 L158 214 L82 214 Z" fill="#334155"/>
+  <path d="M74 214 L166 214 L174 224 L66 224 Z" fill="#1E293B"/>
+</svg>

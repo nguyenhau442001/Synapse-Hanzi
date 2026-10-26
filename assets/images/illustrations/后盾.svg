@@ -1,0 +1,18 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- The "Backing/Support" (Houdun) - A stylized, solid, architectural wall/shield structure -->
+  <path d="M70 60 L170 60 L170 180 L70 180 Z" fill="#2D343E" stroke="#FFB84D" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M85 75 L155 75 L155 165 L85 165 Z" fill="#3A4452"/>
+  
+  <!-- The "Person" (Overseas individual) - A smaller, protected figure standing in front -->
+  <circle cx="120" cy="110" r="15" fill="#FFB84D"/>
+  <path d="M105 130 C105 120, 135 120, 135 130 L135 170 L105 170 Z" fill="#FFB84D"/>
+  
+  <!-- Visualizing the "Backing" concept: The structure acts as a solid, immovable support behind the person -->
+  <path d="M120 180 L120 195" stroke="#FFB84D" stroke-width="6" stroke-linecap="round"/>
+  <path d="M100 195 L140 195" stroke="#FFB84D" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Ground line -->
+  <line x1="60" y1="180" x2="180" y2="180" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+</svg>

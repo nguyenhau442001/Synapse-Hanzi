@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground/Earth -->
+  <path d="M40 180 C80 170, 160 170, 200 180 L200 200 L40 200 Z" fill="#3E362E"/>
+  
+  <!-- Cracked Earth Surface -->
+  <path d="M40 180 L60 185 L55 195 M90 182 L100 190 L110 183 M140 180 L150 195 L165 188 M180 182 L190 192" stroke="#2A2520" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Dried Well Structure -->
+  <rect x="90" y="100" width="60" height="80" fill="#4A4A4A"/>
+  <rect x="85" y="90" width="70" height="15" fill="#5A5A5A"/>
+  
+  <!-- Well Interior (Empty) -->
+  <rect x="100" y="100" width="40" height="70" fill="#1A1D24"/>
+  
+  <!-- Sun (Symbolizing drought/heat) -->
+  <circle cx="190" cy="50" r="25" fill="#FFB347"/>
+  <path d="M190 15 L190 5 M190 85 L190 95 M225 50 L235 50 M155 50 L145 50" stroke="#FFB347" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Dead Plant/Branch -->
+  <path d="M120 100 L120 70 M120 85 L105 75 M120 80 L135 70" stroke="#8B5A2B" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Desk / Surface -->
+  <path d="M 40 190 L 200 190" stroke="#3A3F4B" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Clipboard / Dossier representing physical investigation/examination object (Danh từ - vật thể) -->
+  <!-- Clipboard Base -->
+  <rect x="75" y="45" width="90" height="135" rx="8" fill="#2D333F"/>
+  <rect x="85" y="55" width="70" height="115" rx="4" fill="#F0F2F5"/>
+  
+  <!-- Clipboard Clip -->
+  <path d="M 105 45 L 135 45 L 135 53 L 105 53 Z" fill="#6C7A89" rx="2"/>
+  <circle cx="120" cy="49" r="3" fill="#1A1D24"/>
+  
+  <!-- Document Lines (representing detailed inspection content) -->
+  <rect x="95" y="70" width="30" height="6" rx="3" fill="#D0D5DD"/>
+  <rect x="95" y="85" width="50" height="4" rx="2" fill="#E4E7EC"/>
+  <rect x="95" y="95" width="40" height="4" rx="2" fill="#E4E7EC"/>
+  
+  <rect x="95" y="115" width="25" height="6" rx="3" fill="#D0D5DD"/>
+  <rect x="95" y="130" width="50" height="4" rx="2" fill="#E4E7EC"/>
+  <rect x="95" y="140" width="35" height="4" rx="2" fill="#E4E7EC"/>
+  
+  <!-- Checkmarks (indicating thorough examination/checking) -->
+  <path d="M 143 72 L 146 75 L 152 68" stroke="#00B4D8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M 143 117 L 146 120 L 152 113" stroke="#00B4D8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Magnifying Glass (Physical object for meticulous inspection / 考查) -->
+  <g transform="translate(100, 95)">
+    <!-- Glass Lens Area (Semi-transparent overlay feel) -->
+    <circle cx="45" cy="45" r="32" fill="#1A1D24" fill-opacity="0.6"/>
+    <!-- Glass Rim -->
+    <circle cx="45" cy="45" r="32" stroke="#FFB703" stroke-width="6" fill="none"/>
+    <!-- Lens reflection -->
+    <path d="M 27 30 Q 35 22 45 22" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+    <!-- Handle -->
+    <path d="M 68 68 L 92 92" stroke="#FFB703" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="92" cy="92" r="4" fill="#E89B00"/>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Turntable Base -->
+  <rect x="60" y="140" width="120" height="20" rx="4" fill="#3A3F4B"/>
+  <rect x="70" y="160" width="100" height="10" rx="2" fill="#2A2E38"/>
+  
+  <!-- Vinyl Record -->
+  <circle cx="120" cy="100" r="60" fill="#2A2E38"/>
+  <circle cx="120" cy="100" r="55" fill="none" stroke="#4A4F5C" stroke-width="2" stroke-dasharray="4 4"/>
+  <circle cx="120" cy="100" r="15" fill="#FFB84D"/>
+  <circle cx="120" cy="100" r="5" fill="#1A1D24"/>
+  
+  <!-- Tonearm -->
+  <path d="M160 100 L180 60 L190 60" fill="none" stroke="#FFB84D" stroke-width="6" stroke-linecap="round"/>
+  <rect x="185" y="55" width="10" height="15" rx="2" fill="#FFB84D"/>
+  
+  <!-- Warm Glow/Focus Effect (Subtle) -->
+  <circle cx="120" cy="100" r="70" fill="none" stroke="#FFB84D" stroke-width="2" opacity="0.2"/>
+  
+  <!-- Stylized Sound Waves (Representing the music flowing) -->
+  <path d="M40 80 Q60 60 80 80" fill="none" stroke="#FFB84D" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M30 100 Q60 70 90 100" fill="none" stroke="#FFB84D" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+</svg>

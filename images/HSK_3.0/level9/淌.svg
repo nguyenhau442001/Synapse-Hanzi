@@ -1,0 +1,52 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Head/Face contour of the soldier -->
+    <path d="M 80,80 Q 80,45 120,45 Q 160,45 160,80 L 160,135 Q 160,150 145,150 L 95,150 Q 80,150 80,135 Z" fill="#2C323B"/>
+    
+    <!-- Helmet / Cap top -->
+    <path d="M 75,70 Q 120,25 165,70 L 160,80 Q 120,50 80,80 Z" fill="#3E4756"/>
+    <rect x="70" y="70" width="100" height="10" rx="4" fill="#4E5A6A"/>
+    
+    <!-- Eyebrows and facial structure (determined expression) -->
+    <path d="M 95,95 L 115,102" stroke="#6C7A89" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 145,95 L 125,102" stroke="#6C7A89" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Eyes -->
+    <circle cx="105" cy="112" r="5" fill="#6C7A89"/>
+    <circle cx="135" cy="112" r="5" fill="#6C7A89"/>
+    
+    <!-- Focused Mouth -->
+    <path d="M 112,135 Q 120,132 128,135" stroke="#6C7A89" stroke-width="3" stroke-linecap="round" fill="none"/>
+    
+    <!-- Brow ridge (skin tone highlight / shadow) -->
+    <path d="M 90,85 Q 120,75 150,85" stroke="#353D4A" stroke-width="4" fill="none"/>
+
+    <!-- Sweat drops (淌 - flowing, trickling, dripping drops of sweat) -->
+    <!-- Drop 1: Forming/Emerging at hairline -->
+    <path d="M 120,68 C 120,68 123,73 123,76 C 123,78 121.8,80 120,80 C 118.2,80 117,78 117,76 C 117,73 120,68 120,68 Z" fill="#00D2FF"/>
+    
+    <!-- Drop 2: Sliding down the forehead (elongated for motion) -->
+    <path d="M 120,92 C 120,92 124,98 124,103 C 124,105.2 122.2,107 120,107 C 117.8,107 116,105.2 116,103 C 116,98 120,92 120,92 Z" fill="#00D2FF"/>
+    <path d="M 119.5,88 L 120.5,91" stroke="#00D2FF" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Drop 3: Dripping further down past the eyebrow (large, distinct droplet) -->
+    <path d="M 134,115 C 134,115 139,123 139,127 C 139,129.8 136.8,132 134,132 C 131.2,132 129,129.8 129,127 C 129,123 134,115 134,115 Z" fill="#00D2FF"/>
+    
+    <!-- Motion streak / trail showing continuous trickling (tuôn, chảy) -->
+    <path d="M 134,105 L 134,111" stroke="#00D2FF" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <path d="M 134,98 L 134,101" stroke="#00D2FF" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+
+    <!-- Drop 4: Falling off the chin / cheek -->
+    <path d="M 142,145 C 142,145 145,150 145,153 C 145,154.7 143.7,156 142,156 C 140.3,156 139,154.7 139,153 C 139,150 142,145 142,145 Z" fill="#00D2FF" opacity="0.8"/>
+    <path d="M 142,137 L 142,141" stroke="#00D2FF" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Tiny sparkle/highlight on major drops for fluid realism -->
+    <circle cx="122" cy="101" r="0.8" fill="#FFFFFF"/>
+    <circle cx="136" cy="125" r="1" fill="#FFFFFF"/>
+    
+    <!-- Ground / Collar base -->
+    <path d="M 70,165 Q 120,150 170,165 L 180,185 L 60,185 Z" fill="#252A33"/>
+  </g>
+</svg>

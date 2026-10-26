@@ -1,0 +1,60 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow/vignette to emphasize central figures -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.5"/>
+
+  <!-- Depicting 'yīyī-bùshě' (reluctant to part / bittersweet farewell): 
+       An adult volunteer carrying a travel bag/backpack, clasping hands/holding hands 
+       with a young villager/child in a warm, emotional farewell gesture, 
+       capturing the exact narrative context of the volunteer teacher leaving the village. -->
+
+  <!-- Distant mountain silhouette / village scenery hint -->
+  <path d="M40 170 L80 130 L110 155 L160 115 L200 170 Z" fill="#222733"/>
+  <path d="M20 170 L50 145 L80 170 Z" fill="#282E3D"/>
+
+  <!-- Ground line -->
+  <path d="M30 170 L210 170" stroke="#303748" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Character 1: Volunteer (Left) -->
+  <g id="volunteer">
+    <!-- Travel backpack -->
+    <rect x="72" y="95" width="16" height="28" rx="4" fill="#E06D53"/>
+    <path d="M75 105 L85 105" stroke="#1A1D24" stroke-width="2"/>
+    
+    <!-- Body & Clothes -->
+    <path d="M80 115 L95 170 L65 170 Z" fill="#3B82F6"/>
+    <path d="M80 115 L95 130 L90 145 Z" fill="#2563EB"/> <!-- Jacket fold -->
+
+    <!-- Head & Hair -->
+    <circle cx="85" cy="85" r="14" fill="#FBBF24"/> <!-- Skin tone -->
+    <path d="M72 82 C72 73 98 73 98 82 C98 85 95 86 92 82 C89 78 81 78 78 82 C75 86 72 85 72 82 Z" fill="#1E293B"/> <!-- Hair -->
+
+    <!-- Arm reaching out to hold hands -->
+    <path d="M92 122 L112 125" stroke="#3B82F6" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="114" cy="125" r="4" fill="#FBBF24"/>
+  </g>
+
+  <!-- Character 2: Local Child / Villager (Right) -->
+  <g id="villager">
+    <!-- Body & Clothes -->
+    <path d="M160 120 L145 170 L175 170 Z" fill="#10B981"/>
+    
+    <!-- Head & Hair -->
+    <circle cx="155" cy="90" r="13" fill="#FBBF24"/>
+    <path d="M143 88 C143 80 167 80 167 88 C167 91 164 91 161 87 C158 83 152 83 149 87 C146 91 143 91 143 88 Z" fill="#1E293B"/>
+
+    <!-- Arm reaching out to hold hands -->
+    <path d="M148 125 L126 125" stroke="#10B981" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="124" cy="125" r="4" fill="#FBBF24"/>
+  </g>
+
+  <!-- Interlocking hands in the center (bịn rịn, không nỡ rời) -->
+  <circle cx="119" cy="125" r="5" fill="#F59E0B"/>
+
+  <!-- Subtle emotional accent (warm golden highlights on the characters to denote sincerity and deep bond) -->
+  <path d="M85 71 A 14 14 0 0 1 99 85" stroke="#FEE140" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M155 77 A 13 13 0 0 1 168 90" stroke="#FEE140" stroke-width="2" fill="none" opacity="0.6"/>
+
+</svg>

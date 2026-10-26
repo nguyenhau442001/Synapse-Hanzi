@@ -1,0 +1,19 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Podium -->
+  <rect x="60" y="140" width="120" height="60" rx="4" fill="#2D343E"/>
+  <rect x="80" y="120" width="80" height="20" rx="4" fill="#3D4654"/>
+  
+  <!-- Medal -->
+  <circle cx="120" cy="100" r="25" fill="#FFC107"/>
+  <circle cx="120" cy="100" r="18" fill="#FFD54F"/>
+  <path d="M120 85 L124 95 L135 95 L126 102 L129 112 L120 106 L111 112 L114 102 L105 95 L116 95 Z" fill="#FFC107"/>
+  
+  <!-- Ribbon -->
+  <path d="M105 80 L90 50 M135 80 L150 50" stroke="#FFC107" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Athlete's hand reaching up -->
+  <path d="M110 140 L110 120 C110 115 130 115 130 120 L130 140" fill="#FF9800"/>
+  <rect x="110" y="140" width="20" height="60" fill="#FF9800"/>
+</svg>

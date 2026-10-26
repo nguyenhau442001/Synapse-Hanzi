@@ -1,0 +1,74 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <defs>
+    <!-- Shadow for depth -->
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    
+    <!-- Gold gradient for the bookmark / focal point -->
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#FFA500"/>
+    </linearGradient>
+
+    <!-- Page gradient -->
+    <linearGradient id="page-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient background glow for focus -->
+  <circle cx="120" cy="120" r="80" fill="#2563EB" opacity="0.08" filter="blur(20px)"/>
+
+  <!-- Open Book (The physical object representing "zuòyòumíng" / motto bedside book) -->
+  <g filter="url(#drop-shadow)">
+    <!-- Left Page -->
+    <path d="M 50 80 Q 85 70 120 78 L 120 185 Q 85 175 50 185 Z" fill="url(#page-grad)"/>
+    <!-- Right Page -->
+    <path d="M 190 80 Q 155 70 120 78 L 120 185 Q 155 175 190 185 Z" fill="#F8FAFC"/>
+    
+    <!-- Book Spine center shadow -->
+    <path d="M 116 78 C 118 78 122 78 124 78 L 124 185 C 122 185 118 185 116 185 Z" fill="#94A3B8"/>
+    
+    <!-- Cover Base (visible underneath) -->
+    <path d="M 45 83 Q 85 73 120 81 L 120 190 Q 85 180 45 190 Z" fill="#1E3A8A"/>
+    <path d="M 195 83 Q 155 73 120 81 L 120 190 Q 155 180 195 190 Z" fill="#1E3A8A"/>
+  </g>
+
+  <!-- Text lines on pages (representing written wisdom / classic quotes) -->
+  <!-- Left Page Lines -->
+  <line x1="65" y1="105" x2="102" y2="100" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="65" y1="125" x2="98" y2="120" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="65" y1="145" x2="105" y2="140" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Right Page Lines (Focus quote area) -->
+  <line x1="138" y1="105" x2="175" y2="108" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+  <line x1="138" y1="125" x2="172" y2="128" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Highlighted Motto Line (The core semantic representation of "Motto / 座右铭") -->
+  <line x1="138" y1="150" x2="178" y2="153" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" filter="url(#drop-shadow)"/>
+
+  <!-- Elegant Gold Ribbon Bookmark draped over the right page -->
+  <path d="M 155 60 L 175 60 L 175 165 L 165 155 L 155 165 Z" fill="url(#gold-grad)" filter="url(#drop-shadow)"/>
+
+  <!-- Pen/Stylus indicating active writing / personal creation of the motto -->
+  <g transform="translate(130, 110) rotate(-35)" filter="url(#drop-shadow)">
+    <!-- Pen body -->
+    <rect x="-4" y="-35" width="8" height="45" rx="2" fill="#3B82F6"/>
+    <!-- Pen grip -->
+    <rect x="-4" y="5" width="8" height="15" fill="#1D4ED8"/>
+    <!-- Pen nib -->
+    <path d="M -4 10 L 0 22 L 4 10 Z" fill="#E2E8F0"/>
+    <!-- Nib tip -->
+    <circle cx="0" cy="22" r="1" fill="#F59E0B"/>
+  </g>
+
+  <!-- Sparkle indicating inspiration/wisdom -->
+  <g transform="translate(182, 138)">
+    <path d="M 0 -8 C 0 -2 2 0 8 0 C 2 0 0 2 0 8 C 0 2 -2 0 -8 0 C -2 0 0 -2 0 -8 Z" fill="#F59E0B"/>
+  </g>
+</svg>

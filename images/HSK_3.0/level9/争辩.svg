@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Central Physical Object Representation for 争辩 (Debate/Dispute/Argument): Two opposing stylized character silhouettes engaged in vocal debate with speech bubble friction -->
+  
+  <!-- Subtle floor shadow / base plate -->
+  <ellipse cx="120" cy="195" rx="70" ry="8" fill="#111318"/>
+  
+  <!-- Left Debater (Blue/Teal tone) -->
+  <g transform="translate(75, 135)">
+    <!-- Body / Shoulders -->
+    <path d="M-25,55 L25,55 C25,35 15,25 0,25 C-15,25 -25,35 -25,55 Z" fill="#38BDF8"/>
+    <!-- Head -->
+    <circle cx="0" cy="0" r="18" fill="#38BDF8"/>
+    <!-- Dynamic leaning head/neck angle -->
+    <path d="M-5,18 L5,18 L3,27 L-3,27 Z" fill="#38BDF8"/>
+    <!-- Open shouting mouth / profile hint -->
+    <path d="M12,-2 C16,-2 18,2 14,5 C10,8 6,3 12,-2 Z" fill="#1A1D24"/>
+  </g>
+
+  <!-- Right Debater (Orange/Gold tone, representing high-contrast conflict) -->
+  <g transform="translate(165, 135) scale(-1, 1)">
+    <!-- Body / Shoulders -->
+    <path d="M-25,55 L25,55 C25,35 15,25 0,25 C-15,25 -25,35 -25,55 Z" fill="#F59E0B"/>
+    <!-- Head -->
+    <circle cx="0" cy="0" r="18" fill="#F59E0B"/>
+    <path d="M-5,18 L5,18 L3,27 L-3,27 Z" fill="#F59E0B"/>
+    <path d="M12,-2 C16,-2 18,2 14,5 C10,8 6,3 12,-2 Z" fill="#1A1D24"/>
+  </g>
+
+  <!-- Clashing Speech Bubbles / Argument Dynamics in the Center -->
+  <g transform="translate(120, 95)">
+    <!-- Left Speech Bubble (Teal) -->
+    <path d="M-10,-25 C-25,-25 -35,-15 -35,0 C-35,10 -28,18 -18,22 L-25,35 L-8,26 C-9,26 -10,26 -10,26 C5,26 12,16 12,0 C12,-15 2,-25 -10,-25 Z" fill="#0284C7" transform="scale(-1, 1) translate(0, 0)"/>
+    
+    <!-- Right Speech Bubble (Gold/Orange) -->
+    <path d="M-10,-25 C-25,-25 -35,-15 -35,0 C-35,10 -28,18 -18,22 L-25,35 L-8,26 C-9,26 -10,26 -10,26 C5,26 12,16 12,0 C12,-15 2,-25 -10,-25 Z" fill="#D97706" transform="translate(0, 0)"/>
+    
+    <!-- Exclamation / Clashing elements inside bubbles representing verbal conflict -->
+    <path d="M-38,-5 L-42,5 M-40,9 L-40,11" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M38,-5 L42,5 M40,9 L40,11" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Central friction / lightning spark representing heated debate (爭) -->
+  <path d="M120,55 L112,75 L124,75 L116,95" fill="none" stroke="#FBBF24" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M120,55 L112,75 L124,75 L116,95" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

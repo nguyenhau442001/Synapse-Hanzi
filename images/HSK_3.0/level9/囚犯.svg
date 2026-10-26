@@ -1,0 +1,62 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background prison bars glow/gradient effects -->
+  <g opacity="0.15">
+    <rect x="52" y="30" width="12" height="180" fill="#64748B" rx="6"/>
+    <rect x="88" y="30" width="12" height="180" fill="#64748B" rx="6"/>
+    <rect x="124" y="30" width="12" height="180" fill="#64748B" rx="6"/>
+    <rect x="160" y="30" width="12" height="180" fill="#64748B" rx="6"/>
+    <rect x="196" y="30" width="12" height="180" fill="#64748B" rx="6"/>
+  </g>
+
+  <!-- Prison Bars Foreground -->
+  <g>
+    <!-- Top and Bottom Frame bars -->
+    <rect x="20" y="24" width="200" height="16" fill="#334155" rx="4"/>
+    <rect x="20" y="200" width="200" height="16" fill="#334155" rx="4"/>
+    
+    <!-- Vertical Bars -->
+    <rect x="36" y="24" width="16" height="192" fill="#475569" rx="4"/>
+    <rect x="36" y="24" width="6" height="192" fill="#64748B" opacity="0.5"/>
+
+    <rect x="84" y="24" width="16" height="192" fill="#475569" rx="4"/>
+    <rect x="84" y="24" width="6" height="192" fill="#64748B" opacity="0.5"/>
+
+    <rect x="132" y="24" width="16" height="192" fill="#475569" rx="4"/>
+    <rect x="132" y="24" width="6" height="192" fill="#64748B" opacity="0.5"/>
+
+    <rect x="180" y="24" width="16" height="192" fill="#475569" rx="4"/>
+    <rect x="180" y="24" width="6" height="192" fill="#64748B" opacity="0.5"/>
+  </g>
+
+  <!-- Prisoner Character -->
+  <g transform="translate(10, 0)">
+    <!-- Prisoner Shadow/Base -->
+    <ellipse cx="110" cy="195" rx="35" ry="8" fill="#0F172A"/>
+
+    <!-- Shoulders & Body (Striped Uniform) -->
+    <path d="M 75 195 Q 75 155 110 155 Q 145 155 145 195 Z" fill="#F1F5F9"/>
+    <!-- Stripes -->
+    <path d="M 77 165 L 143 165" stroke="#0F172A" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 75 180 L 145 180" stroke="#0F172A" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Neck -->
+    <rect x="100" y="138" width="20" height="22" fill="#E2E8F0"/>
+
+    <!-- Head -->
+    <circle cx="110" cy="115" r="28" fill="#E2E8F0"/>
+
+    <!-- Prisoner Hat / Cap (Optional touch for clarity, kept minimal) -->
+    <path d="M 85 105 Q 110 90 135 105 L 138 115 Q 110 102 82 115 Z" fill="#F8FAFC"/>
+
+    <!-- Facial features (Sad/Subdued Expression) -->
+    <circle cx="101" cy="113" r="2.5" fill="#334155"/>
+    <circle cx="119" cy="113" r="2.5" fill="#334155"/>
+    <path d="M 105 127 Q 110 123 115 127" stroke="#334155" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Accent Focus Glow / Highlights (Orange/Gold Theme) -->
+  <circle cx="110" cy="115" r="50" stroke="#F59E0B" stroke-width="2" fill="none" opacity="0.3" stroke-dasharray="6 6"/>
+</svg>

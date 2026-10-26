@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "设" (Noun - physical information desk / established installation) -->
+  <g transform="translate(0, 0)">
+    <!-- Floor shadow / Base plane -->
+    <ellipse cx="120" cy="190" rx="70" ry="10" fill="#111318"/>
+
+    <!-- Desk / Counter Structure (Representing an established physical service station / 导医台) -->
+    <!-- Main desk body -->
+    <path d="M 65 140 L 175 140 L 190 175 L 50 175 Z" fill="#2B313B"/>
+    <!-- Desk top surface (3D perspective) -->
+    <path d="M 55 130 L 185 130 L 175 140 L 65 140 Z" fill="#3E4553"/>
+    <!-- Front accent panel -->
+    <path d="M 72 147 L 168 147 L 173 168 L 67 168 Z" fill="#21252C"/>
+
+    <!-- Information / Help Symbol mounted on the desk (Clear iconic indicator) -->
+    <!-- Stand / Post -->
+    <rect x="116" y="90" width="8" height="40" fill="#94A3B8"/>
+    <!-- Circular Sign Board -->
+    <circle cx="120" cy="75" r="22" fill="#F59E0B"/>
+    <circle cx="120" cy="75" r="17" fill="#1A1D24"/>
+    <!-- Symbol 'i' or cross/help marker inside -->
+    <circle cx="120" cy="68" r="2.5" fill="#F59E0B"/>
+    <path d="M 120 74 L 120 83" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Decorative helpful elements on counter -->
+    <!-- Small computer / terminal screen -->
+    <rect x="85" y="112" width="22" height="16" rx="2" fill="#475569"/>
+    <rect x="89" y="115" width="14" height="10" rx="1" fill="#60A5FA"/>
+    <path d="M 96 128 L 96 130" stroke="#94A3B8" stroke-width="2"/>
+    <rect x="91" y="130" width="10" height="2" fill="#94A3B8"/>
+
+    <!-- Leaflet holder / accessories -->
+    <rect x="140" y="116" width="16" height="14" rx="1" fill="#CBD5E1"/>
+    <path d="M 143 116 L 143 113 L 153 113 L 153 116 Z" fill="#94A3B8"/>
+
+    <!-- Staff figure silhouette behind the counter (Friendly helper) -->
+    <!-- Head -->
+    <circle cx="120" cy="112" r="10" fill="#CBD5E1"/>
+    <!-- Shoulders / Uniform -->
+    <path d="M 104 140 C 104 126 136 126 136 140 Z" fill="#3B82F6"/>
+
+    <!-- Focal highlight marker (Orange glow/bracket indicating 'set up / established facility') -->
+    <path d="M 40 95 L 40 70 L 65 70" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 200 95 L 200 70 L 175 70" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 40 145 L 40 170 L 65 170" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 200 145 L 200 170 L 175 170" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

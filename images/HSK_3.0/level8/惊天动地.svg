@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Shockwave / Earth-shaking rings -->
+    <ellipse cx="120" cy="180" rx="90" ry="25" fill="none" stroke="#FF8A00" stroke-width="2" opacity="0.3"/>
+    <ellipse cx="120" cy="180" rx="65" ry="18" fill="none" stroke="#FF8A00" stroke-width="3" opacity="0.6"/>
+    <ellipse cx="120" cy="180" rx="40" ry="10" fill="none" stroke="#FF8A00" stroke-width="4" opacity="0.9"/>
+    
+    <!-- Dynamic ground fissures / mountains -->
+    <path d="M 30,190 L 70,165 L 90,195 L 130,150 L 160,190 L 210,170 L 225,200 L 15,200 Z" fill="#2C323D"/>
+    
+    <!-- Central Epic Monument / Heroic Obelisk representing "惊天动地" (earth-shaking heroic epic) -->
+    <!-- Broken ground shards lifting up -->
+    <polygon points="75,170 95,140 105,160" fill="#3E4656"/>
+    <polygon points="165,165 150,135 140,155" fill="#3E4656"/>
+    
+    <!-- Majestic glowing monument/sword of epic history -->
+    <polygon points="110,180 130,180 135,60 120,35 105,60" fill="#2E3748"/>
+    <polygon points="117,180 123,180 123,45 120,40 117,45" fill="#FFC700"/>
+    
+    <!-- Golden energy beam shooting into the sky (shaking the heavens) -->
+    <path d="M 112,40 L 128,40 L 135,15 L 105,15 Z" fill="url(#skyBeam)" opacity="0.8"/>
+    
+    <!-- Floating cosmic debris / stars representing the shaking heavens -->
+    <path d="M 75,70 L 78,76 L 84,79 L 78,82 L 75,88 L 72,82 L 66,79 L 72,76 Z" fill="#FFC700"/>
+    <path d="M 165,60 L 167,64 L 171,66 L 167,68 L 165,72 L 163,68 L 159,66 L 163,64 Z" fill="#FFC700"/>
+    <path d="M 95,45 L 96,48 L 99,49 L 96,50 L 95,53 L 94,50 L 91,49 L 94,48 Z" fill="#FF8A00" opacity="0.7"/>
+    <path d="M 145,50 L 146,53 L 149,54 L 146,55 L 145,58 L 144,55 L 141,54 L 144,53 Z" fill="#FF8A00" opacity="0.7"/>
+
+    <!-- Dramatic shocklines from center -->
+    <line x1="120" y1="100" x2="60" y2="90" stroke="#FF8A00" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <line x1="120" y1="100" x2="180" y2="90" stroke="#FF8A00" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <line x1="120" y1="80" x2="90" y2="50" stroke="#FFC700" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+    <line x1="120" y1="80" x2="150" y2="50" stroke="#FFC700" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  </g>
+
+  <defs>
+    <linearGradient id="skyBeam" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#FF8A00" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#FFC700" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+</svg>

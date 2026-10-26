@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient lighting representing dual environments -->
+  <!-- Upper land zone glow -->
+  <circle cx="120" cy="70" r="50" fill="#3B82F6" opacity="0.08" filter="blur(20px)"/>
+  <!-- Lower water zone glow -->
+  <circle cx="120" cy="170" r="50" fill="#06B6D4" opacity="0.12" filter="blur(20px)"/>
+
+  <!-- Divider / Water Surface line -->
+  <path d="M 40,120 Q 90,116 120,120 T 200,120" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 60,125 Q 110,122 140,125 T 180,125" fill="none" stroke="#38BDF8" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- Water Area (Lower Half) -->
+  <path d="M 40,120 C 40,120 50,180 120,180 C 190,180 200,120 200,120 Z" fill="#0E2235" opacity="0.8"/>
+  
+  <!-- Aquatic plant details (bottom left) -->
+  <path d="M 55,180 C 55,160 48,140 45,130" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 65,180 C 65,165 60,145 62,135" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 45,145 Q 40,140 43,135 Q 47,140 45,145 Z" fill="#059669"/>
+  <path d="M 62,145 Q 57,140 60,135 Q 64,140 62,145 Z" fill="#10B981"/>
+
+  <!-- Land Area elements (upper right) -->
+  <!-- Small tuft of grass on land -->
+  <path d="M 180,120 L 178,105 M 183,120 L 185,108 M 186,120 L 191,107" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Main Subject: Amphibian (Stylized Cute Frog bridging water and land) -->
+  <!-- Body Group -->
+  <g transform="translate(120, 120)">
+    <!-- Back legs (on land/water boundary) -->
+    <ellipse cx="-22" cy="10" rx="12" ry="7" fill="#059669" transform="rotate(-15 -22 10)"/>
+    <ellipse cx="22" cy="10" rx="12" ry="7" fill="#059669" transform="rotate(15 22 10)"/>
+
+    <!-- Main Torso - Sleek flat design, vibrant green with amber/gold accent belly -->
+    <ellipse cx="0" cy="5" rx="26" ry="22" fill="#10B981"/>
+    
+    <!-- Underbelly (Amphibian dual-tone) -->
+    <ellipse cx="0" cy="8" rx="18" ry="14" fill="#F59E0B" opacity="0.9"/>
+
+    <!-- Front Arms/Feet -->
+    <path d="M -16,18 C -22,22 -26,18 -28,15" fill="none" stroke="#059669" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 16,18 C 22,22 26,18 28,15" fill="none" stroke="#059669" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Head -->
+    <ellipse cx="0" cy="-14" rx="22" ry="16" fill="#10B981"/>
+
+    <!-- Big expressive eyes (Amphibian prominent eyes) -->
+    <circle cx="-11" cy="-24" r="7" fill="#F8FAFC"/>
+    <circle cx="11" cy="-24" r="7" fill="#F8FAFC"/>
+    <circle cx="-10" cy="-24" r="3" fill="#0F172A"/>
+    <circle cx="12" cy="-24" r="3" fill="#0F172A"/>
+    
+    <!-- Eye highlights -->
+    <circle cx="-12" cy="-26" r="1" fill="#FFFFFF"/>
+    <circle cx="10" cy="-26" r="1" fill="#FFFFFF"/>
+
+    <!-- Cute smile -->
+    <path d="M -6,-10 Q 0,-6 6,-10" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Cheek blush -->
+    <circle cx="-15" cy="-11" r="3.5" fill="#F43F5E" opacity="0.4"/>
+    <circle cx="15" cy="-11" r="3.5" fill="#F43F5E" opacity="0.4"/>
+  </g>
+
+  <!-- Environmental transition indicators (Subtle modern floating elements) -->
+  <!-- Water droplets (Underwater/Water aspect) -->
+  <circle cx="75" cy="150" r="2.5" fill="#38BDF8" opacity="0.8"/>
+  <circle cx="65" cy="165" r="1.5" fill="#38BDF8" opacity="0.6"/>
+  <circle cx="160" cy="140" r="2" fill="#38BDF8" opacity="0.7"/>
+
+  <!-- Sun/Air rays (Land aspect) -->
+  <path d="M 175,65 L 183,57" stroke="#FBBF24" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <circle cx="190" cy="50" r="4" fill="#FBBF24" opacity="0.9"/>
+  <path d="M 160,70 L 165,60" stroke="#FBBF24" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+</svg>

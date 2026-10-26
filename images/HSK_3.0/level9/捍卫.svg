@@ -1,0 +1,30 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Snowy Mountain Background -->
+  <path d="M0 160 L60 80 L120 140 L180 60 L240 120 V240 H0 Z" fill="#2C3440"/>
+  <path d="M40 120 L80 60 L120 100 L160 40 L200 90 V240 H40 Z" fill="#3A4454"/>
+  <path d="M0 160 L60 80 L120 140 L180 60 L240 120 V140 L180 80 L120 160 L60 100 L0 180 Z" fill="#E0E6ED" opacity="0.8"/>
+  
+  <!-- Soldier Figure -->
+  <g transform="translate(120, 180)">
+    <!-- Legs -->
+    <path d="M-15 0 L-15 -40 M15 0 L15 -40" stroke="#FFB84D" stroke-width="8" stroke-linecap="round"/>
+    <!-- Body -->
+    <path d="M-20 -40 H20 V-80 L0 -100 L-20 -80 Z" fill="#FFB84D"/>
+    <!-- Arms in protective stance -->
+    <path d="M-20 -70 L-50 -40 M20 -70 L50 -40" stroke="#FFB84D" stroke-width="8" stroke-linecap="round"/>
+    <!-- Head -->
+    <circle cx="0" cy="-115" r="15" fill="#FFB84D"/>
+  </g>
+  
+  <!-- Territory/Flag Marker (The object being defended) -->
+  <g transform="translate(120, 120)">
+    <rect x="-10" y="0" width="20" height="60" fill="#E0E6ED"/>
+    <path d="M10 0 L40 15 L10 30 Z" fill="#FF5733"/>
+  </g>
+  
+  <!-- Motion/Wind Lines -->
+  <path d="M20 40 Q50 20 80 40" stroke="#E0E6ED" stroke-width="2" fill="none" opacity="0.3"/>
+  <path d="M160 30 Q190 10 220 30" stroke="#E0E6ED" stroke-width="2" fill="none" opacity="0.3"/>
+</svg>

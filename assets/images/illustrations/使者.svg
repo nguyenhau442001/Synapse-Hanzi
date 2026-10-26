@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements (global bridge / connection theme) -->
+  <path d="M40 180 C 90 140, 150 140, 200 180" stroke="#2A2F3D" stroke-width="3" fill="none" stroke-dasharray="4 4"/>
+  <circle cx="120" cy="110" r="70" fill="#222733" opacity="0.6"/>
+
+  <!-- Central Character: The Messenger/Emissary (Sứ giả bridging cultures) -->
+  <!-- Suit / Body -->
+  <path d="M95 180 L95 145 C95 130, 145 130, 145 145 L145 180 Z" fill="#3B82F6"/>
+  <!-- Collar & Tie/Scarf -->
+  <polygon points="120,138 112,150 128,150" fill="#F59E0B"/>
+  <path d="M105 135 L120 148 L135 135" fill="#E2E8F0"/>
+
+  <!-- Head & Face -->
+  <circle cx="120" cy="105" r="22" fill="#FDE68A"/>
+  <!-- Friendly expression -->
+  <path d="M112 110 Q120 116 128 110" stroke="#1E293B" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Hair -->
+  <path d="M98 100 C98 85, 142 85, 142 100 C142 100, 135 92, 120 92 C105 92, 98 100, 98 100 Z" fill="#1E293B"/>
+
+  <!-- Arms holding cultural scroll / message symbol -->
+  <path d="M95 145 L75 160 L85 170 L105 155" fill="#3B82F6"/>
+  <path d="M145 145 L165 160 L155 170 L135 155" fill="#3B82F6"/>
+
+  <!-- Scroll / Message object (Representing transmission of culture/news) -->
+  <rect x="90" y="155" width="60" height="16" rx="4" fill="#F59E0B"/>
+  <rect x="94" y="159" width="52" height="8" rx="2" fill="#FEF3C7"/>
+  <!-- Scroll handles -->
+  <circle cx="88" cy="163" r="4" fill="#D97706"/>
+  <circle cx="152" cy="163" r="4" fill="#D97706"/>
+
+  <!-- Floating cultural connection icons / subtle sparks representing spread of tradition -->
+  <path d="M60 90 L64 94 L60 98 L56 94 Z" fill="#F59E0B" opacity="0.8"/>
+  <path d="M180 90 L184 94 L180 98 L176 94" fill="#3B82F6" opacity="0.8"/>
+  <circle cx="75" cy="70" r="3" fill="#F59E0B" opacity="0.6"/>
+  <circle cx="165" cy="70" r="3" fill="#3B82F6" opacity="0.6"/>
+  
+  <!-- Radiating communication waves -->
+  <path d="M45 105 C 45 90, 55 80, 70 75" stroke="#F59E0B" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+  <path d="M195 105 C 195 90, 185 80, 170 75" stroke="#3B82F6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+</svg>

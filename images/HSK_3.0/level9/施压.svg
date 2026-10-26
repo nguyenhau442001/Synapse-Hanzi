@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Base surface / Ground platform -->
+    <path d="M 60,175 L 180,175 L 195,190 L 45,190 Z" fill="#2A2F3D"/>
+    <rect x="70" y="155" width="100" height="20" rx="4" fill="#3A4256"/>
+    
+    <!-- Object being compressed / Object under pressure (Cube) -->
+    <!-- Compressed shape: wider and squatter to visually show pressure -->
+    <g id="compressed-object">
+      <rect x="85" y="125" width="70" height="35" rx="4" fill="#FFB703"/>
+      <!-- 3D depth top face of cube -->
+      <path d="M 85,125 L 105,110 L 175,110 L 155,125 Z" fill="#FFD166"/>
+      <!-- 3D depth right face of cube -->
+      <path d="M 155,125 L 175,110 L 175,145 L 155,160 Z" fill="#F39C12"/>
+      
+      <!-- Visual stress cracks / force indicator on the object -->
+      <path d="M 110,135 L 120,145 L 115,155" stroke="#D35400" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 135,130 L 140,140" stroke="#D35400" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    </g>
+    
+    <!-- Pressing Mechanism (Top Plunger / Heavy weight pressing down) -->
+    <g id="press-plate">
+      <!-- Hydraulic/Mechanical Arm hanging down -->
+      <rect x="112" y="45" width="16" height="50" rx="2" fill="#6C757D"/>
+      <!-- Top Press Plate -->
+      <path d="M 70,95 L 170,95 L 160,110 L 80,110 Z" fill="#495057"/>
+      <!-- Underside shadow of press plate -->
+      <rect x="75" y="105" width="90" height="5" fill="#343A40"/>
+    </g>
+    
+    <!-- Directional Downward Force Arrows (Semantic visual indicators for pressure) -->
+    <!-- Left Force Arrow -->
+    <g transform="translate(0, -5)">
+      <path d="M 55,75 L 55,115" stroke="#E63946" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 45,105 L 55,120 L 65,105" fill="none" stroke="#E63946" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    
+    <!-- Right Force Arrow -->
+    <g transform="translate(0, -5)">
+      <path d="M 185,75 L 185,115" stroke="#E63946" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 175,105 L 185,120 L 195,105" fill="none" stroke="#E63946" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Center Heavy Pressure Arrow -->
+    <g transform="translate(0, 5)">
+      <path d="M 120,40 L 120,80" stroke="#E63946" stroke-width="5" stroke-linecap="round"/>
+      <path d="M 108,68 L 120,85 L 132,68" fill="none" stroke="#E63946" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    
+  </g>
+</svg>

@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background elements: Distant horizons/waves evoking wandering far from home -->
+  <path d="M 40 180 Q 90 170 140 180 T 240 180 L 240 240 L 0 240 Z" fill="#222733"/>
+  <path d="M 0 195 Q 70 185 150 195 T 240 190 L 240 240 L 0 240 Z" fill="#282E3D"/>
+
+  <!-- Central iconic object: A lone, weathered wooden suitcase with a subtle traveling tag, drifting/floating slightly above waves, representing "piāobó" (wandering / drifting life) -->
+  <g transform="translate(0, -5)">
+    <!-- Suitcase shadow/glow on water -->
+    <ellipse cx="120" cy="172" rx="36" ry="6" fill="#12141A" opacity="0.6"/>
+
+    <!-- Suitcase main body -->
+    <rect x="84" y="112" rx="10" ry="10" width="72" height="52" fill="#D97736"/>
+    <!-- Suitcase front panel highlight -->
+    <rect x="88" y="116" rx="8" ry="8" width="64" height="44" fill="#E88A45"/>
+
+    <!-- Corner metal reinforcements -->
+    <path d="M 84 116 L 94 116 L 94 124 L 84 124 Z" fill="#9BA1AE"/>
+    <path d="M 156 116 L 146 116 L 146 124 L 156 124 Z" fill="#9BA1AE"/>
+    <path d="M 84 154 L 94 154 L 94 146 L 84 146 Z" fill="#9BA1AE"/>
+    <path d="M 156 154 L 146 154 L 146 146 L 156 146 Z" fill="#9BA1AE"/>
+
+    <!-- Horizontal leather straps -->
+    <rect x="84" y="128" width="72" height="6" fill="#B35C1E"/>
+    <rect x="84" y="146" width="72" height="6" fill="#B35C1E"/>
+
+    <!-- Metal latches -->
+    <rect x="104" y="110" width="8" height="6" rx="2" fill="#CFD5E2"/>
+    <rect x="128" y="110" width="8" height="6" rx="2" fill="#CFD5E2"/>
+
+    <!-- Suitcase handle (arched) -->
+    <path d="M 104 112 C 104 98 136 98 136 112" stroke="#B35C1E" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M 106 112 C 106 100 134 100 134 112" stroke="#E88A45" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- A worn paper luggage tag attached to the handle, fluttering slightly in the wind -->
+    <path d="M 116 105 L 102 88 L 118 80 L 126 95 Z" fill="#F4ECE1"/>
+    <circle cx="118" cy="85" r="2" fill="#282E3D"/>
+    <!-- Faint lines on the tag representing distant journey stamps -->
+    <line x1="108" y1="90" x2="114" y2="87" stroke="#9BA1AE" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="110" y1="94" x2="118" y2="90" stroke="#9BA1AE" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Atmospheric motion / wind lines suggesting the journey of drifting (piāobó) -->
+  <path d="M 45 95 C 65 95 70 85 90 85" stroke="#E88A45" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <path d="M 150 78 C 170 78 175 68 195 68" stroke="#E88A45" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.3"/>
+  <path d="M 30 130 C 45 130 50 125 65 125" stroke="#E88A45" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.25"/>
+
+  <!-- Subtle falling autumn leaf / traveling motif representing the rootless nature of drifting -->
+  <path d="M 185 110 C 185 110 195 115 190 125 C 185 135 175 138 175 138 C 175 138 182 125 185 110 Z" fill="#E88A45" opacity="0.8"/>
+  <path d="M 175 138 C 180 130 185 120 185 110" stroke="#D97736" stroke-width="1" fill="none"/>
+</svg>

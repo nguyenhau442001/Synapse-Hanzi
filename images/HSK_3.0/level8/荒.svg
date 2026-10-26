@@ -1,0 +1,61 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background / Environment (Dark Mode Styled Remote Mountains & Abandoned Farmland) -->
+  <path d="M20 170 L80 110 L140 150 L200 100 L220 170 Z" fill="#222733"/>
+  <path d="M10 170 L230 170 L230 210 L10 210 Z" fill="#15181E"/>
+
+  <!-- Abandoned Farmland / Terraces (Hoang phế / Bỏ hoang) -->
+  <path d="M30 185 Q120 170 210 185" stroke="#2D3748" stroke-width="6" stroke-dasharray="8 6" fill="none"/>
+  <path d="M45 198 Q120 185 195 198" stroke="#2D3748" stroke-width="5" stroke-dasharray="6 6" fill="none"/>
+
+  <!-- Overgrown Weeds & Dry Crops (Action/Result of Abandonment) -->
+  <!-- Weed 1 -->
+  <path d="M70 185 Q65 155 55 140" stroke="#4A5568" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M70 170 Q80 150 90 145" stroke="#4A5568" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <circle cx="53" cy="138" r="3" fill="#4A5568"/>
+  
+  <!-- Weed 2 (Cracked Dry Earth effect) -->
+  <path d="M150 190 Q155 165 145 150" stroke="#4A5568" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M150 175 Q140 160 130 155" stroke="#4A5568" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M150 180 Q165 165 175 160" stroke="#4A5568" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Abandoned Farming Tool (Wooden Plow/Hoe left behind - Action Context) -->
+  <g transform="translate(160, 140) rotate(-25)">
+    <!-- Handle -->
+    <rect x="0" y="0" width="6" height="55" rx="3" fill="#D69E2E"/>
+    <!-- Blade -->
+    <path d="M-6 45 L12 45 L3 60 Z" fill="#718096"/>
+  </g>
+
+  <!-- Dynamic Human Action: Leaving/Walking away into the city (Contextual bridge: Thanh niên lên thành phố) -->
+  <g transform="translate(95, 115)">
+    <!-- Motion lines representing departure/action -->
+    <path d="M -15 35 L -35 35" stroke="#E2E8F0" stroke-width="2" stroke-dasharray="4 3" stroke-linecap="round"/>
+    <path d="M -10 45 L -25 45" stroke="#E2E8F0" stroke-width="2" stroke-dasharray="4 3" stroke-linecap="round"/>
+    
+    <!-- Walking Character Silhouette in Modern Flat Design -->
+    <!-- Head -->
+    <circle cx="0" cy="10" r="8" fill="#F6AD55"/>
+    <!-- Torso (leaning forward in motion) -->
+    <path d="M -4 20 L 4 38 L -6 40 Z" fill="#3182CE"/>
+    <!-- Back Leg (Stride) -->
+    <path d="M -2 38 L -14 55" stroke="#2B6CB0" stroke-width="4" stroke-linecap="round"/>
+    <!-- Front Leg (Stride) -->
+    <path d="M 2 38 L 12 55" stroke="#2B6CB0" stroke-width="4" stroke-linecap="round"/>
+    <!-- Back Arm -->
+    <path d="M -3 23 L -12 35" stroke="#3182CE" stroke-width="3" stroke-linecap="round"/>
+    <!-- Front Arm -->
+    <path d="M 2 23 L 14 33" stroke="#3182CE" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Subtle indicator of contrast: City skyline far in the background -->
+  <rect x="185" y="115" width="10" height="55" fill="#2A4365"/>
+  <rect x="198" y="100" width="12" height="70" fill="#2C5282"/>
+  <rect x="212" y="125" width="8" height="45" fill="#2A4365"/>
+  <rect x="188" y="125" width="2" height="2" fill="#F6AD55"/>
+  <rect x="202" y="110" width="2" height="2" fill="#F6AD55"/>
+  <rect x="202" y="120" width="2" height="2" fill="#F6AD55"/>
+
+</svg>

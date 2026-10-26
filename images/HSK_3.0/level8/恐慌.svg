@@ -1,0 +1,55 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background atmosphere: subtle radiating anxiety waves/pulse -->
+  <circle cx="120" cy="120" r="70" fill="none" stroke="#E65100" stroke-width="1.5" opacity="0.15" stroke-dasharray="4 4"/>
+  <circle cx="120" cy="120" r="50" fill="none" stroke="#E65100" stroke-width="1.5" opacity="0.25"/>
+
+  <!-- Character representing "Kǒnghuāng" (panic / hoang mang hoảng sợ) -->
+  <g transform="translate(0, 5)">
+    <!-- Shoulders and Body -->
+    <path d="M 75 185 C 75 155, 95 145, 120 145 C 145 145, 165 155, 165 185 Z" fill="#2C323D"/>
+    
+    <!-- Neck -->
+    <rect x="110" y="128" width="20" height="22" fill="#E0A96D"/>
+
+    <!-- Head -->
+    <circle cx="120" cy="105" r="32" fill="#E0A96D"/>
+
+    <!-- Hair (messy/panicked shape) -->
+    <path d="M 88 100 C 88 78, 100 70, 120 70 C 140 70, 152 78, 152 100 C 145 92, 135 90, 120 92 C 105 90, 95 92, 88 100 Z" fill="#3D4451"/>
+    <!-- Stray hair tuft rising in alarm -->
+    <path d="M 120 72 C 118 60, 124 54, 130 50 C 126 58, 125 64, 128 73 Z" fill="#3D4451"/>
+
+    <!-- Eyes (wide, panicked) -->
+    <circle cx="107" cy="103" r="7" fill="#FFFFFF"/>
+    <circle cx="133" cy="103" r="7" fill="#FFFFFF"/>
+    <circle cx="108" cy="103" r="3" fill="#1A1D24"/>
+    <circle cx="134" cy="103" r="3" fill="#1A1D24"/>
+    
+    <!-- Sweat drops (classic indicators of panic/fear) -->
+    <path d="M 88 95 C 88 95, 84 103, 84 107 C 84 110, 87 112, 90 107 C 90 107, 88 95, 88 95 Z" fill="#4FC3F7" opacity="0.8"/>
+    <path d="M 154 105 C 154 105, 158 112, 158 116 C 158 119, 155 121, 152 116 C 152 116, 154 105, 154 105 Z" fill="#4FC3F7" opacity="0.8"/>
+
+    <!-- Eyebrows (tilted sharply upward inward for panic expression) -->
+    <path d="M 98 92 L 114 96" stroke="#3D4451" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 142 92 L 126 96" stroke="#3D4451" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Open mouth (gasping/shocked) -->
+    <ellipse cx="120" cy="122" rx="6" ry="8" fill="#1A1D24"/>
+
+    <!-- Hands gripping head in distress (Noun representation of a person experiencing panic) -->
+    <!-- Left hand gripping side of head -->
+    <path d="M 92 112 C 86 112, 80 105, 82 98 C 84 94, 90 96, 94 102 Z" fill="#E0A96D"/>
+    <!-- Right hand gripping side of head -->
+    <path d="M 148 112 C 154 112, 160 105, 158 98 C 156 94, 150 96, 146 102 Z" fill="#E0A96D"/>
+    
+    <!-- Sleeves / arms leading to hands -->
+    <path d="M 75 155 L 90 115" stroke="#FFA726" stroke-width="12" stroke-linecap="round"/>
+    <path d="M 165 155 L 150 115" stroke="#FFA726" stroke-width="12" stroke-linecap="round"/>
+  </g>
+
+  <!-- Focus accent highlight: vivid orange warning framing -->
+  <circle cx="120" cy="120" r="102" fill="none" stroke="#FFA726" stroke-width="2" opacity="0.4" stroke-dasharray="8 6"/>
+</svg>

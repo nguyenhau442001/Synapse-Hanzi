@@ -1,0 +1,30 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Room Wall & Floor -->
+  <path d="M30 40 H210 V175 H30 Z" fill="#222733"/>
+  <path d="M30 175 H210 V200 H30 Z" fill="#161920"/>
+
+  <!-- Window Frame (Dark, closed curtains representing 阴暗) -->
+  <rect x="90" y="60" width="60" height="90" fill="#111318" stroke="#2C3440" stroke-width="3"/>
+  <line x1="120" y1="60" x2="120" y2="150" stroke="#2C3440" stroke-width="2"/>
+  <line x1="90" y1="105" x2="150" y2="105" stroke="#2C3440" stroke-width="2"/>
+
+  <!-- Closed Heavy Curtains (U ám, tăm tối) -->
+  <path d="M90 60 Q105 105 90 150 H105 Q115 105 105 60 Z" fill="#3B4656"/>
+  <path d="M150 60 Q135 105 150 150 H135 Q125 105 135 60 Z" fill="#3B4656"/>
+
+  <!-- Gloomy Shadows casting into the room (Góc khuất) -->
+  <path d="M30 40 L90 105 V175 H30 Z" fill="#000000" opacity="0.4"/>
+  <path d="M210 40 L150 105 V175 H210 Z" fill="#000000" opacity="0.4"/>
+
+  <!-- Foreground Dark Object representing a physical dimly-lit place/object -->
+  <!-- A simple armchair in the corner, shrouded in shadow -->
+  <path d="M75 145 H105 V175 H75 Z" fill="#2C3542"/>
+  <path d="M70 135 Q90 125 110 135 L115 150 H65 Z" fill="#374252"/>
+  <rect x="73" y="115" width="34" height="25" rx="4" fill="#2C3542"/>
+
+  <!-- Subtle floor shadow -->
+  <ellipse cx="90" cy="177" rx="25" ry="5" fill="#101217"/>
+</svg>

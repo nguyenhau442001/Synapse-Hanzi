@@ -1,0 +1,57 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glowing background aura representing honor/glory -->
+  <circle cx="120" cy="115" r="70" fill="#FFC107" opacity="0.1"/>
+  <circle cx="120" cy="115" r="50" fill="#FFC107" opacity="0.15"/>
+
+  <!-- Podium steps -->
+  <rect x="70" y="165" width="100" height="35" rx="4" fill="#2C313C"/>
+  <rect x="90" y="140" width="60" height="25" rx="3" fill="#3B4252"/>
+  <!-- Top podium center block -->
+  <rect x="100" y="120" width="40" height="20" rx="2" fill="#4C566A"/>
+  
+  <!-- Number 1 on podium -->
+  <text x="120" y="135" font-family="Arial, sans-serif" font-weight="bold" font-size="12" fill="#E5E9F0" text-anchor="middle">1</text>
+
+  <!-- Golden Laurel Wreath / Trophy (Physical Object representing 光荣 - Glory/Honor) -->
+  <!-- Left laurel branch -->
+  <path d="M 120 100 C 105 100 95 85 95 70 C 95 62 100 55 105 50" fill="none" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 105 75 C 98 73 93 68 93 60 C 98 63 102 68 105 75 Z" fill="#FFD700"/>
+  <path d="M 112 88 C 105 85 100 78 101 70 C 105 73 109 78 112 88 Z" fill="#FFD700"/>
+  <path d="M 100 62 C 93 60 88 55 89 48 C 93 51 97 56 100 62 Z" fill="#FFD700"/>
+
+  <!-- Right laurel branch -->
+  <path d="M 120 100 C 135 100 145 85 145 70 C 145 62 140 55 135 50" fill="none" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 135 75 C 142 73 147 68 147 60 C 142 63 138 68 135 75 Z" fill="#FFD700"/>
+  <path d="M 128 88 C 135 85 140 78 139 70 C 135 73 131 78 128 88 Z" fill="#FFD700"/>
+  <path d="M 140 62 C 147 60 152 55 151 48 C 147 51 143 56 140 62 Z" fill="#FFD700"/>
+
+  <!-- Trophy Cup Base -->
+  <path d="M 110 108 L 130 108 L 126 95 L 114 95 Z" fill="#E5A900"/>
+  <rect x="115" y="108" width="10" height="6" fill="#D09300"/>
+
+  <!-- Trophy Cup Body -->
+  <path d="M 104 70 C 104 88 136 88 136 70 C 136 65 134 60 134 60 L 106 60 C 106 60 104 65 104 70 Z" fill="#FFD700"/>
+  <!-- Trophy rim -->
+  <ellipse cx="120" cy="60" rx="14" ry="3" fill="#FFF176"/>
+  <ellipse cx="120" cy="60" rx="12" ry="2" fill="#FFD700"/>
+
+  <!-- Trophy handles -->
+  <path d="M 105 63 C 98 63 97 72 104 77" fill="none" stroke="#FFD700" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 135 63 C 142 63 143 72 136 77" fill="none" stroke="#FFD700" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Star emblem on trophy -->
+  <polygon points="120,66 122,71 127,71 123,74 125,79 120,76 115,79 117,74 113,71 118,71" fill="#FFFFFF" opacity="0.9"/>
+
+  <!-- Ray/Sparkle details around the trophy to emphasize "Glory" -->
+  <path d="M 120 40 L 120 46" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 92 48 L 96 52" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 148 48 L 144 52" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 86 70 L 92 70" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 154 70 L 148 70" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Ground reflection/shadow -->
+  <ellipse cx="120" cy="200" rx="60" ry="4" fill="#111318"/>
+</svg>

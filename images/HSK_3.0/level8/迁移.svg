@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative subtle background mapping curve (migration path) -->
+  <path d="M40 160 Q 120 70, 200 130" fill="none" stroke="#2A3241" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round"/>
+
+  <!-- Location Pin 1 (Origin - North) -->
+  <g transform="translate(45, 135)">
+    <circle cx="0" cy="0" r="14" fill="#242B38"/>
+    <path d="M0 -7 C-3.5 -7 -6 -4.5 -6 -1 C-6 3 0 8 0 8 C0 8 6 3 6 -1 C6 -4.5 3.5 -7 0 -7 Z" fill="#64748B"/>
+    <circle cx="0" cy="-1.5" r="2.5" fill="#1A1D24"/>
+  </g>
+
+  <!-- Location Pin 2 (Destination - South) -->
+  <g transform="translate(195, 115)">
+    <circle cx="0" cy="0" r="14" fill="#242B38"/>
+    <path d="M0 -7 C-3.5 -7 -6 -4.5 -6 -1 C-6 3 0 8 0 8 C0 8 6 3 6 -1 C6 -4.5 3.5 -7 0 -7 Z" fill="#F59E0B"/>
+    <circle cx="0" cy="-1.5" r="2.5" fill="#1A1D24"/>
+  </g>
+
+  <!-- Migrating Geese (Formation representing 迁移) -->
+  <!-- Lead Goose -->
+  <g transform="translate(120, 85)">
+    <path d="M -12 -4 C -6 -2, -2 -1, 0 2 C 2 -1, 6 -2, 12 -4 C 7 -7, 4 -10, 0 -8 C -4 -10, -7 -7, -12 -4 Z" fill="#F59E0B" stroke="#F59E0B" stroke-linejoin="round"/>
+    <path d="M 0 2 L 0 5" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Follower Goose 1 (Top Left) -->
+  <g transform="translate(85, 105) scale(0.75)">
+    <path d="M -12 -4 C -6 -2, -2 -1, 0 2 C 2 -1, 6 -2, 12 -4 C 7 -7, 4 -10, 0 -8 C -4 -10, -7 -7, -12 -4 Z" fill="#94A3B8"/>
+  </g>
+
+  <!-- Follower Goose 2 (Bottom Left) -->
+  <g transform="translate(95, 130) scale(0.65)">
+    <path d="M -12 -4 C -6 -2, -2 -1, 0 2 C 2 -1, 6 -2, 12 -4 C 7 -7, 4 -10, 0 -8 C -4 -10, -7 -7, -12 -4 Z" fill="#64748B"/>
+  </g>
+
+  <!-- Follower Goose 3 (Top Right) -->
+  <g transform="translate(155, 95) scale(0.75)">
+    <path d="M -12 -4 C -6 -2, -2 -1, 0 2 C 2 -1, 6 -2, 12 -4 C 7 -7, 4 -10, 0 -8 C -4 -10, -7 -7, -12 -4 Z" fill="#94A3B8"/>
+  </g>
+
+  <!-- Follower Goose 4 (Bottom Right) -->
+  <g transform="translate(145, 120) scale(0.6)">
+    <path d="M -12 -4 C -6 -2, -2 -1, 0 2 C 2 -1, 6 -2, 12 -4 C 7 -7, 4 -10, 0 -8 C -4 -10, -7 -7, -12 -4 Z" fill="#64748B"/>
+  </g>
+
+  <!-- Directional Motion Wind Lines -->
+  <path d="M 45 95 Q 60 92, 75 98" fill="none" stroke="#334155" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 30 110 Q 45 107, 60 113" fill="none" stroke="#334155" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Minimalist Landscape Elements (Autumn ground hints) -->
+  <path d="M 20 195 Q 60 185, 100 192 T 180 188 T 220 194" fill="none" stroke="#2A3241" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 40 203 Q 90 198, 140 204 T 220 200" fill="none" stroke="#242B38" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Stylized Sun/Warmth Indicator at Destination -->
+  <circle cx="195" cy="55" r="10" fill="#F59E0B" opacity="0.15"/>
+  <circle cx="195" cy="55" r="6" fill="#F59E0B" opacity="0.3"/>
+</svg>

@@ -1,0 +1,56 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Atmospheric celebration sparkles / confetti representing the context of victory -->
+  <circle cx="180" cy="70" r="2.5" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="205" cy="95" r="2" fill="#60A5FA" opacity="0.9"/>
+  <circle cx="195" cy="50" r="1.5" fill="#FFFFFF" opacity="0.7"/>
+  <circle cx="155" cy="60" r="2" fill="#F59E0B" opacity="0.6"/>
+  
+  <!-- Cannon Smoke / Blast Effect -->
+  <path d="M55 105 C40 100 25 105 18 90 C12 75 25 60 40 68 C45 50 65 45 80 60 C90 50 110 55 115 70 C125 75 125 95 110 105 Z" fill="#334155" opacity="0.7"/>
+  <path d="M60 100 C48 95 38 98 32 87 C28 77 38 66 50 72 C54 59 70 54 82 66 C90 58 106 62 110 73 C118 78 118 92 106 100 Z" fill="#64748B" opacity="0.9"/>
+  <circle cx="45" cy="75" r="12" fill="#E2E8F0" opacity="0.8"/>
+  <circle cx="75" cy="65" r="16" fill="#CBD5E1" opacity="0.9"/>
+  <circle cx="95" cy="85" r="14" fill="#94A3B8" opacity="0.85"/>
+  
+  <!-- Cannon Flash / Fire -->
+  <path d="M100 88 L125 75 L112 90 L138 92 L112 98 L122 112 L102 100 Z" fill="#F59E0B"/>
+  <circle cx="106" cy="95" r="8" fill="#FEF3C7"/>
+
+  <!-- Cannon Wheels -->
+  <!-- Back Wheel -->
+  <circle cx="95" cy="155" r="22" fill="#0F172A"/>
+  <circle cx="95" cy="155" r="18" fill="none" stroke="#F59E0B" stroke-width="4"/>
+  <circle cx="95" cy="155" r="6" fill="#D97706"/>
+  
+  <!-- Front Wheel -->
+  <circle cx="155" cy="155" r="22" fill="#0F172A"/>
+  <circle cx="155" cy="155" r="18" fill="none" stroke="#F59E0B" stroke-width="4"/>
+  <circle cx="155" cy="155" r="6" fill="#D97706"/>
+  
+  <!-- Wooden Carriage / Base Frame -->
+  <path d="M80 145 L170 145 L160 165 L90 165 Z" fill="#B45309"/>
+  <path d="M120 135 L140 135 L150 148 L110 148 Z" fill="#92400E"/>
+  
+  <!-- Axles -->
+  <rect x="90" y="152" width="10" height="6" rx="2" fill="#475569"/>
+  <rect x="150" y="152" width="10" height="6" rx="2" fill="#475569"/>
+
+  <!-- Cannon Barrel (Sleek Modern Flat Vector) -->
+  <g transform="rotate(-25 120 115)">
+    <!-- Main Barrel Body -->
+    <rect x="75" y="100" width="80" height="30" rx="6" fill="#475569"/>
+    <!-- Barrel Highlights/Details -->
+    <rect x="85" y="103" width="60" height="8" rx="4" fill="#64748B" opacity="0.6"/>
+    <!-- Reinforcing Rings -->
+    <rect x="90" y="98" width="8" height="34" rx="2" fill="#334155"/>
+    <rect x="135" y="98" width="8" height="34" rx="2" fill="#334155"/>
+    <!-- Muzzle (Barrel opening flare) -->
+    <path d="M150 96 L160 98 L160 132 L150 134 Z" fill="#334155"/>
+    <ellipse cx="155" cy="115" rx="3" ry="17" fill="#0F172A"/>
+    <!-- Back Breech -->
+    <path d="M75 101 L72 105 L72 125 L75 129 Z" fill="#334155"/>
+  </g>
+</svg>

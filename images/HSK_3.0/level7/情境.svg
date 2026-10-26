@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Setting: A simplified cafe/classroom environment -->
+  <path d="M40 180h160v20H40z" fill="#2D343E"/>
+  <path d="M70 120h100v60H70z" fill="#252B35"/>
+  <circle cx="120" cy="150" r="25" fill="#3A4452"/>
+  
+  <!-- Character 1: Speaker -->
+  <g transform="translate(60, 100)">
+    <circle cx="20" cy="20" r="15" fill="#FFB86C"/>
+    <path d="M5 40h30v40H5z" fill="#FFB86C"/>
+    <path d="M15 45l-10 20M25 45l10 20" stroke="#FFB86C" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Character 2: Listener -->
+  <g transform="translate(140, 100)">
+    <circle cx="20" cy="20" r="15" fill="#8BE9FD"/>
+    <path d="M5 40h30v40H5z" fill="#8BE9FD"/>
+    <path d="M20 45v30" stroke="#8BE9FD" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Speech Bubble/Interaction Indicator (Representing Context) -->
+  <path d="M100 80h40v30h-20l-10 10v-10h-10z" fill="#FFB86C"/>
+  <circle cx="110" cy="95" r="3" fill="#1A1D24"/>
+  <circle cx="120" cy="95" r="3" fill="#1A1D24"/>
+  <circle cx="130" cy="95" r="3" fill="#1A1D24"/>
+</svg>

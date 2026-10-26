@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow to create depth for the central subject -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.6"/>
+
+  <g transform="translate(0, 10)">
+    <!-- Floor shadow / grounding line -->
+    <ellipse cx="120" cy="180" rx="70" ry="10" fill="#111318"/>
+
+    <!-- Elderly Parent Figure (Seated respectfully) -->
+    <g id="elderly-parent">
+      <!-- Chair -->
+      <rect x="75" y="110" width="30" height="60" rx="4" fill="#363C4E"/>
+      <rect x="70" y="150" width="40" height="30" rx="4" fill="#2E3440"/>
+      <!-- Body / Torso -->
+      <path d="M 75 145 C 75 125, 105 125, 105 145 L 105 170 L 75 170 Z" fill="#4B5563"/>
+      <!-- Head -->
+      <circle cx="90" cy="105" r="12" fill="#E5E7EB"/>
+      <!-- Hair (Silver/Grey) -->
+      <path d="M 78 105 C 78 96, 102 96, 102 105 Z" fill="#9CA3AF"/>
+    </g>
+
+    <!-- Adult Child Figure (Providing support / offering care) -->
+    <g id="adult-child">
+      <!-- Body / Torso -->
+      <rect x="130" y="100" width="36" height="75" rx="8" fill="#3B82F6"/>
+      <!-- Head -->
+      <circle cx="148" cy="84" r="12" fill="#E5E7EB"/>
+      <!-- Hair -->
+      <path d="M 136 84 C 136 74, 160 74, 160 84 Z" fill="#1F2937"/>
+    </g>
+
+    <!-- Offering / Provision Element (Bowl of nourishing food / warmth) representing 供养 (material support & care) -->
+    <g id="provision-tray">
+      <!-- Extended hands / Arms passing the bowl -->
+      <path d="M 105 135 L 132 135" stroke="#E5E7EB" stroke-width="6" stroke-linecap="round"/>
+      <!-- Bowl -->
+      <path d="M 108 128 C 108 138, 126 138, 126 128 Z" fill="#F59E0B"/>
+      <!-- Steam / warmth rising (subtle, non-abstract, natural care visual) -->
+      <path d="M 114 120 C 112 115, 120 112, 117 107" stroke="#FBBF24" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8"/>
+      <path d="M 120 121 C 122 116, 115 113, 118 108" stroke="#FBBF24" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8"/>
+    </g>
+
+    <!-- Warm accent lighting / Care atmosphere -->
+    <circle cx="117" cy="128" r="4" fill="#FDE047" opacity="0.6"/>
+  </g>
+</svg>

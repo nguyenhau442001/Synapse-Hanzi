@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glow effect behind the RAM module -->
+  <ellipse cx="120" cy="120" rx="75" ry="50" fill="#0EA5E9" opacity="0.1" filter="blur(10px)"/>
+
+  <!-- RAM Stick (Bộ nhớ trong / Internal Memory) -->
+  <g transform="translate(45, 78)">
+    <!-- PCB Board Base -->
+    <rect x="0" y="0" width="150" height="64" rx="6" fill="#0F172A" stroke="#334155" stroke-width="2"/>
+    
+    <!-- Gold Connector Pins at bottom -->
+    <g fill="#F59E0B">
+      <rect x="12" y="56" width="6" height="12" rx="1"/>
+      <rect x="22" y="56" width="6" height="12" rx="1"/>
+      <rect x="32" y="56" width="6" height="12" rx="1"/>
+      <rect x="42" y="56" width="6" height="12" rx="1"/>
+      <rect x="52" y="56" width="6" height="12" rx="1"/>
+      <rect x="62" y="56" width="6" height="12" rx="1"/>
+      <rect x="72" y="56" width="6" height="12" rx="1"/>
+      
+      <!-- Notch / Gap -->
+      <rect x="88" y="56" width="6" height="12" rx="1"/>
+      <rect x="98" y="56" width="6" height="12" rx="1"/>
+      <rect x="108" y="56" width="6" height="12" rx="1"/>
+      <rect x="118" y="56" width="6" height="12" rx="1"/>
+      <rect x="128" y="56" width="6" height="12" rx="1"/>
+    </g>
+
+    <!-- Metallic Heat Spreader / Heatsink Shell -->
+    <rect x="10" y="8" width="130" height="46" rx="4" fill="#38BDF8" opacity="0.15"/>
+    <rect x="10" y="8" width="130" height="46" rx="4" stroke="#38BDF8" stroke-width="2" fill="none"/>
+
+    <!-- Decorative Heatsink Lines & Ridges -->
+    <line x1="25" y1="8" x2="25" y2="54" stroke="#1E293B" stroke-width="2"/>
+    <line x1="40" y1="8" x2="40" y2="54" stroke="#1E293B" stroke-width="2"/>
+    <line x1="60" y1="8" x2="60" y2="54" stroke="#1E293B" stroke-width="2"/>
+    <line x1="90" y1="8" x2="90" y2="54" stroke="#1E293B" stroke-width="2"/>
+    <line x1="110" y1="8" x2="110" y2="54" stroke="#1E293B" stroke-width="2"/>
+    <line x1="125" y1="8" x2="125" y2="54" stroke="#1E293B" stroke-width="2"/>
+
+    <!-- Central Chip Die / Processor Icon -->
+    <rect x="68" y="19" width="14" height="24" rx="2" fill="#0EA5E9"/>
+    <circle cx="75" cy="31" r="3" fill="#1A1D24"/>
+
+    <!-- Small SMD components on PCB -->
+    <g fill="#94A3B8">
+      <rect x="18" y="22" width="5" height="8" rx="1"/>
+      <rect x="135" y="22" width="5" height="8" rx="1"/>
+      <rect x="18" y="36" width="5" height="8" rx="1"/>
+      <rect x="135" y="36" width="5" height="8" rx="1"/>
+    </g>
+
+    <!-- Gold Contact Edge Line -->
+    <line x1="10" y1="55" x2="140" y2="55" stroke="#F59E0B" stroke-width="2"/>
+  </g>
+
+  <!-- Data Flow Accent Dots (Modern touch for memory/processing) -->
+  <g fill="#38BDF8">
+    <circle cx="75" cy="62" r="2"/>
+    <circle cx="120" cy="62" r="3"/>
+    <circle cx="165" cy="62" r="2"/>
+  </g>
+</svg>
