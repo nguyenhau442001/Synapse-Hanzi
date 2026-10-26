@@ -1,4 +1,4 @@
-const APP_VERSION = '1.0.1';
+const APP_VERSION = '1.4.0';
 const ASSET_VERSION = APP_VERSION;
 const CACHE_NAME = 'hsk-flashcards-v' + ASSET_VERSION;
 const FSRS_CDN_URL = 'https://cdn.jsdelivr.net/npm/ts-fsrs@5.4.1/dist/index.umd.js';
@@ -25,6 +25,7 @@ const PRECACHE_ASSET_URLS = [
   './assets/js/word-illustrations.js?v=' + ASSET_VERSION,
   './assets/js/word-companion.js?v=' + ASSET_VERSION,
   './assets/js/hanzi-decomposition.js?v=' + ASSET_VERSION,
+  './assets/js/related-words.js?v=' + ASSET_VERSION,
   './assets/js/sidebar-tabs.js?v=' + ASSET_VERSION,
   './assets/js/study-help-modal.js?v=' + ASSET_VERSION,
   './assets/js/hsk30.js?v=' + ASSET_VERSION,

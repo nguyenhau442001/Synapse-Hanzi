@@ -1715,7 +1715,9 @@ body.flashcard-study-mode .card-supporting-group {
   justify-content: center;
   gap: 12px;
 }
-body.flashcard-study-mode .card:not(.is-flipped) .card-supporting-group {
+body.flashcard-study-mode .card:not(.is-flipped) .card-supporting-group,
+body.flashcard-study-mode .card:not(.is-flipped) .card-decomposition-wrap,
+body.flashcard-study-mode .card:not(.is-flipped) .card-related-wrap {
   display: none !important;
 }
 body.flashcard-study-mode .card-supporting-group.has-both {
@@ -2032,6 +2034,7 @@ body.flashcard-study-mode #cardArea > .card.is-flipped {
 body.flashcard-study-mode .card.is-flipped .meaning,
 body.flashcard-study-mode .card.is-flipped .meta-badges-row,
 body.flashcard-study-mode .card.is-flipped .card-supporting-group,
+body.flashcard-study-mode .card.is-flipped .card-related-wrap,
 body.flashcard-study-mode .card.is-flipped .example-box {
   animation: cardRevealFade 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
@@ -2489,7 +2492,8 @@ body.flashcard-study-mode #studyNavRow[hidden],
 body.flashcard-study-mode .nav-row[hidden],
 body.flashcard-study-mode .card-supporting-group[hidden],
 body.flashcard-study-mode .card-decomposition-wrap[hidden],
-body.flashcard-study-mode .card-radicals-row[hidden] {
+body.flashcard-study-mode .card-radicals-row[hidden],
+body.flashcard-study-mode .card-related-wrap[hidden] {
   display: none !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -3239,10 +3243,10 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
   }
 
   body.flashcard-study-mode .card.is-flipped .card-content {
-    justify-content: center !important;
-    margin: auto 0 !important;
-    padding: 12px 6px !important;
-    gap: 8px !important;
+    justify-content: safe center !important;
+    margin: 0 !important;
+    padding: 10px 6px 14px !important;
+    gap: 6px !important;
     min-height: 100% !important;
   }
 
@@ -3430,17 +3434,27 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
 
   body.flashcard-study-mode .example-box {
     margin-top: 6px !important;
-    padding: 10px 14px !important;
+    padding: 8px 12px !important;
     border-radius: 12px !important;
-    max-height: 145px !important;
+    max-height: 160px !important;
     overflow-y: auto !important;
-    scrollbar-width: none !important;
-    -ms-overflow-style: none !important;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    scrollbar-width: thin !important;
+    scrollbar-color: var(--border-strong) transparent;
     border: 1px solid rgba(0, 0, 0, 0.05) !important;
     box-shadow: none !important;
     background: rgba(0, 0, 0, 0.015) !important;
     width: 100%;
     box-sizing: border-box;
+  }
+  body.flashcard-study-mode .example-box::-webkit-scrollbar {
+    display: block !important;
+    width: 4px !important;
+  }
+  body.flashcard-study-mode .example-box::-webkit-scrollbar-thumb {
+    background: var(--border-strong) !important;
+    border-radius: 999px !important;
   }
   body.flashcard-study-mode .example-box::-webkit-scrollbar {
     display: none !important;
@@ -3900,7 +3914,10 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
   body.flashcard-study-mode .example-box {
     margin-top: 6px;
     padding: 6px 12px;
-    max-height: 75px;
+    max-height: 85px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
   }
 
   body.flashcard-study-mode .rating-area {
