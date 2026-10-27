@@ -1,4 +1,4 @@
-const APP_VERSION = '1.0.1';
+const APP_VERSION = '1.1.0';
 const ASSET_VERSION = APP_VERSION;
 const CACHE_NAME = 'hsk-flashcards-v' + ASSET_VERSION;
 const FSRS_CDN_URL = 'https://cdn.jsdelivr.net/npm/ts-fsrs@5.4.1/dist/index.umd.js';
@@ -21,6 +21,8 @@ const PRECACHE_ASSET_URLS = [
   './assets/css/home-widgets.css?v=' + ASSET_VERSION,
   './assets/js/dashboard-enhancements.js?v=' + ASSET_VERSION,
   './assets/css/dashboard-enhancements.css?v=' + ASSET_VERSION,
+  './assets/css/quick-access-drawer.css?v=' + ASSET_VERSION,
+  './assets/js/quick-access-drawer.js?v=' + ASSET_VERSION,
   './assets/js/hanviet-dict.js?v=' + ASSET_VERSION,
   './assets/js/word-illustrations.js?v=' + ASSET_VERSION,
   './assets/js/word-companion.js?v=' + ASSET_VERSION,

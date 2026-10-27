@@ -428,6 +428,10 @@ async function renderForgotten(snapshot, renderId) {
   }
   if (renderId !== homeWidgetsRenderId) return;
 
+  if (typeof updateQuickUrgentWords === 'function') {
+    updateQuickUrgentWords(failed ? [] : items);
+  }
+
   section.replaceChildren();
   section.appendChild(homeCardHead('Từ cần ôn gấp', items.length ? 'Hay nhầm lẫn' : ''));
   if (failed) {

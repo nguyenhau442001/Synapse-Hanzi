@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="assets/css/sidebar-lab.css?v=20261015-viewport-fix-v7">
 <link rel="stylesheet" href="assets/css/home-widgets.css?v=20261015-dashboard-redesign">
 <link rel="stylesheet" href="assets/css/dashboard-enhancements.css?v=20261017-mobile-clean1">
+<link rel="stylesheet" href="assets/css/quick-access-drawer.css?v=20261027-dashboard-redesign1">
 <link rel="stylesheet" href="assets/css/reading-analysis.css?v=20261015-mobile-ui-opt">
 <link rel="stylesheet" href="assets/css/graded-reading.css?v=20261010-single-line-read1">
 <link rel="stylesheet" href="assets/css/study-help-modal.css?v=20261016-help-redesign1">
@@ -106,14 +107,120 @@ if ('serviceWorker' in navigator) {
       </div>
       <div id="mobileStatsDialogBody" class="mobile-stats-dialog-body"></div>
     </dialog>
+    <!-- Quick Access Drawer for Secondary Data (Saved / Urgent Words) -->
+    <aside id="quickAccessDrawer" class="quick-access-drawer" aria-label="Sổ từ &amp; Ôn tập nhanh" aria-hidden="true">
+      <div class="quick-drawer-backdrop" id="quickDrawerBackdrop" onclick="closeQuickAccessDrawer()"></div>
+      <div class="quick-drawer-panel" role="dialog" aria-modal="true" aria-label="Bảng tra cứu nhanh">
+        <div class="quick-drawer-header">
+          <div class="quick-drawer-tabs" role="tablist" aria-label="Chọn danh sách">
+            <button type="button" id="quickTabSaved" class="quick-drawer-tab active" role="tab" aria-selected="true" onclick="switchQuickDrawerTab('saved')">
+              <span class="quick-tab-icon" aria-hidden="true">🔖</span>
+              <span>Từ khó (<strong id="quickSavedTabCount">0</strong>)</span>
+            </button>
+            <button type="button" id="quickTabUrgent" class="quick-drawer-tab" role="tab" aria-selected="false" onclick="switchQuickDrawerTab('urgent')">
+              <span class="quick-tab-icon" aria-hidden="true">⚡</span>
+              <span>Cần ôn gấp (<strong id="quickUrgentTabCount">0</strong>)</span>
+            </button>
+          </div>
+          <button type="button" id="quickDrawerCloseBtn" class="quick-drawer-close" onclick="closeQuickAccessDrawer()" aria-label="Đóng bảng">✕</button>
+        </div>
+        <div class="quick-drawer-body">
+          <div id="quickDrawerSavedPane" class="quick-drawer-pane active">
+            <div class="quick-pane-intro">
+              <span class="quick-pane-title">Sổ từ khó đã lưu</span>
+              <span class="quick-pane-subtitle">Học &amp; nghe phát âm</span>
+            </div>
+            <ul class="quick-word-list" id="quickSavedWordsList"></ul>
+            <div id="quickSavedEmpty" class="quick-drawer-empty" hidden>
+              <span class="quick-empty-icon" aria-hidden="true">🔖</span>
+              <div class="quick-empty-title">Chưa có từ khó nào</div>
+              <div class="quick-empty-desc">Nhấn biểu tượng dấu sao ⭐ khi học từ để lưu vào sổ từ xem lại nhanh tại đây.</div>
+            </div>
+          </div>
+          <div id="quickDrawerUrgentPane" class="quick-drawer-pane" hidden>
+            <div class="quick-pane-intro">
+              <span class="quick-pane-title">Từ vựng hay nhầm lẫn</span>
+              <span class="quick-pane-subtitle">Dựa trên thuật toán SRS</span>
+            </div>
+            <ul class="quick-word-list" id="quickUrgentWordsList"></ul>
+            <div id="quickUrgentEmpty" class="quick-drawer-empty" hidden>
+              <span class="quick-empty-icon" aria-hidden="true">✨</span>
+              <div class="quick-empty-title">Không có từ cần ôn gấp</div>
+              <div class="quick-empty-desc">Trí nhớ của bạn đang rất tốt! Hãy tiếp tục duy trì chuỗi học tập nhé.</div>
+            </div>
+            <div id="quickUrgentActionWrap" class="quick-drawer-action-wrap" hidden>
+              <button type="button" id="quickUrgentReviewBtn" class="quick-urgent-cta-btn">
+                <span>⚡ Ôn tập ngay</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Quick Search Command Palette Modal (Ctrl+K) -->
+    <dialog id="quickSearchModal" class="quick-search-modal" aria-label="Tìm kiếm từ vựng HSK">
+      <div class="qsm-container" role="document">
+        <div class="qsm-header">
+          <svg class="qsm-search-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input type="search" id="quickSearchInput" class="qsm-input" placeholder="Tra từ (Hán tự, pinyin, nghĩa tiếng Việt)..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="Tìm từ vựng">
+          <button type="button" class="qsm-close-btn" onclick="closeQuickSearchModal()" aria-label="Đóng tìm kiếm">✕</button>
+        </div>
+        <div class="qsm-body">
+          <ul id="quickSearchResults" class="qsm-results-list" role="listbox" aria-label="Kết quả tìm kiếm"></ul>
+          <div id="quickSearchEmpty" class="qsm-empty" hidden>
+            <span class="qsm-empty-icon" aria-hidden="true">🔍</span>
+            <div class="qsm-empty-text">Không tìm thấy từ vựng nào phù hợp.</div>
+            <div class="qsm-empty-hint">Thử tìm theo chữ Hán (vd: 好), Pinyin không dấu (vd: hao, ni hao), hoặc nghĩa tiếng Việt (vd: tốt).</div>
+          </div>
+          <div id="quickSearchInitial" class="qsm-initial">
+            <div class="qsm-initial-hint">Gõ để tra cứu nhanh hơn 5.000 từ vựng HSK 1-6 &amp; HSK 3.0:</div>
+            <div class="qsm-initial-tags">
+              <span class="qsm-tag" onclick="setQuickSearchQuery('你好')">你好</span>
+              <span class="qsm-tag" onclick="setQuickSearchQuery('xiexie')">xiexie</span>
+              <span class="qsm-tag" onclick="setQuickSearchQuery('yundong')">yundong</span>
+              <span class="qsm-tag" onclick="setQuickSearchQuery('bác sĩ')">bác sĩ</span>
+              <span class="qsm-tag" onclick="setQuickSearchQuery('học tập')">học tập</span>
+            </div>
+          </div>
+        </div>
+        <div class="qsm-footer">
+          <span class="qsm-hint"><kbd>↑</kbd><kbd>↓</kbd> để di chuyển</span>
+          <span class="qsm-hint"><kbd>↵</kbd> để học từ</span>
+          <span class="qsm-hint"><kbd>ESC</kbd> để đóng</span>
+        </div>
+      </div>
+    </dialog>
+
     <div class="workstation-middle" id="workstationMiddle">
-  <div class="app-header">
+  <header class="app-header" id="appHeader">
+    <div class="app-header-brand">
+      <h1 id="appTitle">Synapse Hanzi</h1>
+      <p id="appSubtitle">Trạm học chữ Hán đa chiều · Minh họa ngữ cảnh · Lặp lại ngắt quãng</p>
+    </div>
+
+    <div class="header-search-wrap">
+      <button type="button" id="headerQuickSearchBtn" class="header-quick-search-btn" aria-label="Tìm kiếm từ vựng (Ctrl+K)" title="Tìm kiếm từ vựng (Ctrl+K)">
+        <svg class="hqs-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <span class="hqs-placeholder">Tra từ nhanh (Hán tự, pinyin, nghĩa)...</span>
+        <kbd class="hqs-kbd" aria-hidden="true"><span class="hqs-kbd-mod">⌘</span>K</kbd>
+      </button>
+    </div>
+
     <div class="app-header-actions">
+      <button type="button" id="headerSavedWordsBtn" class="header-action-badge header-badge-saved" onclick="openQuickAccessDrawer('saved')" title="Từ khó đã đánh dấu (Sổ từ)" aria-label="Từ khó đã đánh dấu">
+        <span class="header-badge-icon" aria-hidden="true">🔖</span>
+        <span class="header-badge-count" id="headerSavedCount">0</span>
+      </button>
+      <button type="button" id="headerUrgentReviewBtn" class="header-action-badge header-badge-urgent" onclick="openQuickAccessDrawer('urgent')" title="Từ cần ôn gấp" aria-label="Từ cần ôn gấp">
+        <span class="header-badge-icon" aria-hidden="true">⚡</span>
+        <span class="header-badge-count" id="headerUrgentCount">0</span>
+      </button>
       <button type="button" id="headerStreakBadge" class="header-streak-badge" onclick="showHistoryModal()" aria-label="Xem lịch sử học tập" title="Lịch sử học tập">
         <span class="header-streak-icon" aria-hidden="true">🔥</span>
         <span class="header-streak-text" id="headerStreakText">0 ngày</span>
       </button>
-      <button type="button" id="headerSearchBtn" class="header-search-btn" aria-label="Tìm từ vựng" aria-haspopup="dialog">
+      <button type="button" id="headerSearchBtn" class="header-search-btn" aria-label="Tìm từ vựng" title="Tìm từ vựng (Ctrl+K)">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
       </button>
       <button type="button" id="headerHelpBtn" class="header-help-btn" onclick="openStudyHelpModal()" title="Hướng dẫn &amp; Trợ giúp học tập (?)" aria-label="Hướng dẫn học tập và phím tắt">
@@ -121,9 +228,7 @@ if ('serviceWorker' in navigator) {
       </button>
       <button id="themeToggle" class="theme-toggle-btn" onclick="toggleTheme()" title="Đổi giao diện Sáng / Tối" aria-label="Đổi giao diện Sáng / Tối">🌙</button>
     </div>
-    <h1 id="appTitle">Synapse Hanzi</h1>
-    <p id="appSubtitle">Trạm học chữ Hán đa chiều · Minh họa ngữ cảnh · Lặp lại ngắt quãng</p>
-  </div>
+  </header>
 
   <section class="learning-dashboard" id="learningDashboard" aria-labelledby="learningDashboardTitle">
     <div class="learning-dashboard-header">
@@ -1118,7 +1223,7 @@ if ('serviceWorker' in navigator) {
     </div>
     <aside class="workstation-right" id="workstationRight" aria-label="Phòng thực hành tương tác"></aside>
     <footer class="app-footer">
-      <p class="footer-note"><span class="footer-version" title="Phiên bản ứng dụng">v1.0.1</span> · Tiến trình tự lưu trên thiết bị này · Phát triển bởi <a href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer">haunguyenngoc442001</a> · <a href="https://www.facebook.com/haunguyenngoc442001/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+      <p class="footer-note"><span class="footer-version" title="Phiên bản ứng dụng">v1.1.0</span> · Tiến trình tự lưu trên thiết bị này · Phát triển bởi <a href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer">haunguyenngoc442001</a> · <a href="https://www.facebook.com/haunguyenngoc442001/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
     </footer>
   </div>
 </div>
@@ -1174,6 +1279,7 @@ window.addEventListener('load', function() {
 </script>
 <script src="assets/js/home-widgets.js?v=20261015-dashboard-redesign"></script>
 <script src="assets/js/dashboard-enhancements.js?v=20261017-mobile-clean1"></script>
+<script src="assets/js/quick-access-drawer.js?v=20261027-dashboard-redesign1"></script>
 <script src="assets/js/study-help-modal.js?v=20261016-help-redesign1"></script>
 <script src="assets/flashcards.js?v=20261003-hsk20-rich1"></script>
 <!-- Mobile Bottom Navigation Bar -->
@@ -1201,16 +1307,16 @@ window.addEventListener('load', function() {
 
 <script>
 function openMobileNotebookSheet() {
+  if (typeof openQuickAccessDrawer === 'function') {
+    openQuickAccessDrawer('saved');
+    return;
+  }
   var dialog = document.getElementById('mobileDockDialog');
   if (dialog) {
     if (typeof dialog.showModal === 'function') {
       try { dialog.showModal(); } catch (e) { dialog.setAttribute('open', ''); }
     } else {
       dialog.setAttribute('open', '');
-    }
-    var searchInput = document.getElementById('sidebarSearchInput');
-    if (searchInput) {
-      setTimeout(function() { searchInput.focus(); }, 120);
     }
   }
 }

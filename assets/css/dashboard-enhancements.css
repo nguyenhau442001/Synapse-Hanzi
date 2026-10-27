@@ -647,10 +647,36 @@ body:not(.home-screen) .continue-learning-card { display: none; }
   .quick-quiz-card .dashboard-primary-btn { margin-left: 56px; }
 }
 @media (max-width: 767px) {
-  /* Mobile: Eliminate bulky redundant dashboard card to prevent visual suffocation;
-     Streak and progress are cleanly integrated in the header and hero card */
+  /* Mobile: Clean, compact learning dashboard goal & progress */
   .learning-dashboard {
-    display: none !important;
+    display: block;
+    padding: 14px 16px;
+    border-radius: 14px;
+    margin: 4px 0 8px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+  .learning-dashboard-header {
+    margin-bottom: 8px;
+  }
+  .learning-dashboard h2 {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .daily-goal {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+  }
+  .daily-goal-count strong {
+    font-size: 22px;
+    font-weight: 800;
+  }
+  .daily-goal-actions {
+    display: none;
   }
 
   /* Single Hero Card Above the Fold - Clean, soft elevation & compact ergonomics */

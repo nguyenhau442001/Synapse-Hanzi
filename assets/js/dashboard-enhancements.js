@@ -126,17 +126,14 @@ function renderDashboardEnhancements() {
 }
 
 function initDashboardSidebar() {
-  const desktopQuery = window.matchMedia('(min-width: 1280px)');
-  const placeReviewCard = isDesktop => {
-    const card = document.getElementById('hwForgotten');
-    if (!card) return;
-    const parent = isDesktop
-      ? document.getElementById('workstationLeft')
-      : (document.getElementById('mobileDockDialogBody') || document.getElementById('homeWidgets'));
-    if (parent) parent.appendChild(card);
-  };
-  placeReviewCard(desktopQuery.matches);
-  desktopQuery.addEventListener('change', event => placeReviewCard(event.matches));
+  const card = document.getElementById('hwForgotten');
+  if (card) {
+    const drawerUrgent = document.getElementById('quickDrawerUrgentPane');
+    if (drawerUrgent) {
+      // Urgent cards are rendered into drawer list
+      card.style.display = 'none';
+    }
+  }
   renderDashboardEnhancements();
 }
 
