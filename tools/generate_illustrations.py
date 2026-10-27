@@ -232,34 +232,22 @@ GENERAL CONSTRAINTS:
     return None
 
 def update_illustrations_manifest(records):
-    """Updates STATIC_ILLUSTRATIONS_INDEX in word-illustrations.js."""
-    if not WORD_ILLUSTRATIONS_JS.exists():
-        return
-
-    content = WORD_ILLUSTRATIONS_JS.read_text(encoding="utf-8")
-
-    match = re.search(r"const STATIC_ILLUSTRATIONS_INDEX = (\{[\s\S]*?\});", content)
-    if match:
+    """Updates illustrations_index.json in database/illustrations/."""
+    out_file = REPO_ROOT / "database" / "illustrations" / "illustrations_index.json"
+    existing = {}
+    if out_file.exists():
         try:
-            existing = json.loads(match.group(1))
+            existing = json.loads(out_file.read_text(encoding="utf-8"))
         except Exception:
             existing = {}
-        existing.update(records)
-        new_block = f"const STATIC_ILLUSTRATIONS_INDEX = {json.dumps(existing, ensure_ascii=False, indent=2)};"
-        content = content[:match.start()] + new_block + content[match.end():]
-    else:
-        new_block = f"\n// Pre-generated static illustration assets stored in assets/images/illustrations/\nconst STATIC_ILLUSTRATIONS_INDEX = {json.dumps(records, ensure_ascii=False, indent=2)};\n\n"
-        target = "function getWordIllustration"
-        if target in content:
-            content = content.replace(target, new_block + target, 1)
-
-    WORD_ILLUSTRATIONS_JS.write_text(content, encoding="utf-8")
+    existing.update(records)
+    out_file.write_text(json.dumps(existing, ensure_ascii=False, indent=2), encoding="utf-8")
 
     # Sync to worktree if available
     if WORKTREE_DIR.exists():
         try:
-            dest = WORKTREE_DIR / "assets" / "js" / "word-illustrations.js"
-            dest.write_text(content, encoding="utf-8")
+            dest = WORKTREE_DIR / "database" / "illustrations" / "illustrations_index.json"
+            dest.write_text(json.dumps(existing, ensure_ascii=False, indent=2), encoding="utf-8")
         except Exception:
             pass
 

@@ -368,7 +368,6 @@ def build_manifest_and_organize():
 
     manifest_json_str = json.dumps(manifest_data, ensure_ascii=False, indent=2)
     (IMAGES_DIR / "generated_manifest.json").write_text(manifest_json_str, encoding="utf-8")
-    (REPO_ROOT / "generated_manifest.json").write_text(manifest_json_str, encoding="utf-8")
 
     # Output README.md
     readme_md = generate_readme_markdown(stats_hsk2, stats_hsk3, len(manifest_entries))
@@ -485,10 +484,9 @@ images/
 """
 
 def update_word_illustrations_js(manifest_entries):
-    if not WORD_ILLUSTRATIONS_JS.exists() or not manifest_entries:
+    if not manifest_entries:
         return
 
-    content = WORD_ILLUSTRATIONS_JS.read_text(encoding="utf-8")
     js_index = {}
     for hz, item in manifest_entries.items():
         js_index[hz] = {
@@ -497,24 +495,16 @@ def update_word_illustrations_js(manifest_entries):
             "caption": item["meaning"]
         }
 
-    new_block = f"const STATIC_ILLUSTRATIONS_INDEX = {json.dumps(js_index, ensure_ascii=False, indent=2)};"
-
-    match = re.search(r"const STATIC_ILLUSTRATIONS_INDEX = (\{[\s\S]*?\});", content)
-    if match:
-        content = content[:match.start()] + new_block + content[match.end():]
-    else:
-        target = "function getWordIllustration"
-        if target in content:
-            content = content.replace(target, new_block + "\n\n" + target, 1)
-
-    WORD_ILLUSTRATIONS_JS.write_text(content, encoding="utf-8")
+    out_file = REPO_ROOT / "database" / "illustrations" / "illustrations_index.json"
+    out_file.write_text(json.dumps(js_index, ensure_ascii=False, indent=2), encoding="utf-8")
 
     if WORKTREE_DIR.exists():
         try:
-            wt_js = WORKTREE_DIR / "assets" / "js" / "word-illustrations.js"
-            wt_js.write_text(content, encoding="utf-8")
+            wt_out = WORKTREE_DIR / "database" / "illustrations" / "illustrations_index.json"
+            wt_out.write_text(json.dumps(js_index, ensure_ascii=False, indent=2), encoding="utf-8")
         except Exception:
             pass
+
 
 def call_gemini_svg_api(word_info, api_keys, max_retries=3, model_offset=0):
     if isinstance(api_keys, str):
@@ -646,7 +636,7 @@ def git_commit_and_push(batch_count, level_label, no_commit=False, no_push=False
         return
     try:
         log_ts(f"\n[>>> GIT] Committing batch of {batch_count} newly generated SVGs for {level_label}...")
-        subprocess.run(["git", "add", "images", "assets/images/illustrations", "generated_manifest.json", "README_ILLUSTRATIONS.md", "assets/js/word-illustrations.js"], cwd=REPO_ROOT, check=True)
+        subprocess.run(["git", "add", "images", "assets/images/illustrations", "database/illustrations", "README_ILLUSTRATIONS.md", "assets/js/word-illustrations.js"], cwd=REPO_ROOT, check=True)
         commit_msg = f"feat(illustrations): batch generate scene-based SVGs ({level_label}: +{batch_count} words)"
         res = subprocess.run(["git", "commit", "-m", commit_msg], cwd=REPO_ROOT, capture_output=True, text=True)
         log_ts(f"[>>> GIT] {res.stdout.strip()}")
