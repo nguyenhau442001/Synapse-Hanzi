@@ -28,26 +28,34 @@ function renderDashboardEnhancements() {
   const continuation = document.getElementById('continueLearningCard');
   const summary = learningProgressSummary();
   const target = summary.target;
+  const courseFill = document.getElementById('continueLearningFill');
   if (continuation) {
     if (summary.totalStudied === 0) {
       document.getElementById('continueLearningTitle').textContent = 'Bắt đầu HSK 1';
       document.getElementById('continueLearningProgress').textContent = '150 từ nền tảng · Flashcard thông minh';
       const ctaBtn = continuation.querySelector('.dashboard-primary-btn');
       if (ctaBtn) {
-        ctaBtn.innerHTML = `Học ngay <span aria-hidden="true">→</span>`;
+        ctaBtn.innerHTML = `<span>Học ngay</span> <span aria-hidden="true">➔</span>`;
+      }
+      if (courseFill) {
+        courseFill.style.width = '0%';
       }
       continuation.dataset.level = 'hsk1';
     } else if (target) {
       const cfg = LEVELS[target.level];
       const ratio = `${target.known.toLocaleString('vi-VN')} / ${cfg.total.toLocaleString('vi-VN')} từ`;
+      const pctNum = Math.min(100, Math.round((target.known / cfg.total) * 100));
       const pctStr = typeof formatProgressPercent === 'function'
         ? formatProgressPercent(target.known, cfg.total)
-        : `${Math.round(target.known / cfg.total * 100)}%`;
+        : `${pctNum}%`;
       document.getElementById('continueLearningTitle').textContent = `Học tiếp ${cfg.label}`;
       document.getElementById('continueLearningProgress').textContent = `${ratio} · ${pctStr} hoàn thành`;
+      if (courseFill) {
+        courseFill.style.width = pctNum + '%';
+      }
       const ctaBtn = continuation.querySelector('.dashboard-primary-btn');
       if (ctaBtn) {
-        ctaBtn.innerHTML = `Học ngay <span aria-hidden="true">→</span>`;
+        ctaBtn.innerHTML = `<span>Học ngay</span> <span aria-hidden="true">➔</span>`;
       }
       continuation.dataset.level = target.level;
     }

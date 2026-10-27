@@ -1019,84 +1019,159 @@ body.home-screen .featured-topics {
   body.home-screen .app-header h1 { font-size: 22px; font-weight: 700; line-height: 1.2; }
   body.home-screen .app-header p { margin-top: 4px; font-size: 13px; color: var(--text-secondary); }
 
-  /* Dashboard Hero Grid: 2 columns on wide screens, responsive stack on tablet/mobile */
-  .dashboard-hero-grid {
+  /* ==========================================================================
+     Unified All-in-One Hero Banner (.dashboard-hero-banner)
+     ========================================================================== */
+  .dashboard-hero-banner {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px;
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    gap: 28px;
+    align-items: stretch;
     width: 100%;
-  }
-  @media (min-width: 1024px) {
-    .dashboard-hero-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 20px;
-      align-items: stretch;
-    }
+    padding: 24px 28px;
+    border-radius: var(--radius-lg, 20px);
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    box-shadow: var(--card-shadow);
+    box-sizing: border-box;
+    position: relative;
+    transition: box-shadow 180ms ease, border-color 180ms ease;
   }
 
-  /* Goal & Streak Card */
-  body.home-screen .learning-dashboard {
-    margin: 0;
-    padding: 22px 24px;
-    border-radius: var(--radius-lg);
-    border: 1px solid var(--border);
-    background: var(--card-bg);
-    box-shadow: var(--card-shadow);
+  :root[data-theme="dark"] .dashboard-hero-banner {
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.45);
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+
+  /* Left / Main Section: Daily Goal & Totals */
+  .hero-banner-main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
-    box-sizing: border-box;
+    min-width: 0;
+    gap: 16px;
   }
-  body.home-screen .learning-dashboard-eyebrow {
+
+  .hero-banner-main .learning-dashboard-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .hero-banner-main .learning-dashboard-eyebrow {
     font-size: 11px;
-    font-weight: 700;
+    font-weight: 750;
     letter-spacing: 0.08em;
     color: var(--accent-text);
   }
-  body.home-screen .learning-dashboard h2 {
+
+  .hero-banner-main .learning-title-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     margin-top: 4px;
-    font-size: 17px;
-    font-weight: 700;
+  }
+
+  .hero-banner-main h2 {
+    font-size: 18px;
+    font-weight: 750;
+    color: var(--text-primary);
+    line-height: 1.25;
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+
+  .hero-banner-main .goal-settings-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: var(--text-tertiary);
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 140ms ease;
+  }
+
+  .hero-banner-main .goal-settings-btn:hover {
+    background: var(--surface-subtle);
     color: var(--text-primary);
   }
-  body.home-screen .daily-goal {
-    display: grid;
-    grid-template-columns: auto minmax(0, 1fr);
+
+  .hero-banner-main .history-trigger {
+    display: inline-flex;
     align-items: center;
-    gap: 16px;
-    margin-top: 14px;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--accent-text);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px 6px;
+    border-radius: 6px;
+    transition: all 140ms ease;
+    white-space: nowrap;
   }
-  body.home-screen .daily-goal-actions { display: none; }
-  body.home-screen .daily-goal-count {
+
+  .hero-banner-main .history-trigger:hover {
+    background: var(--surface-subtle);
+    color: var(--brand-primary);
+  }
+
+  /* Daily Goal Tracker */
+  .hero-banner-main .daily-goal {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+  }
+
+  .hero-banner-main .daily-goal-top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .hero-banner-main .daily-goal-count {
     display: flex;
     align-items: baseline;
     gap: 4px;
-    white-space: nowrap;
-    flex-shrink: 0;
   }
-  body.home-screen .daily-goal-count strong { font-size: 28px; font-weight: 800; color: var(--text-primary); }
-  body.home-screen .daily-goal-selector {
+
+  .hero-banner-main .daily-goal-count strong {
+    font-size: 30px;
+    font-weight: 850;
+    line-height: 1;
+    color: var(--text-primary);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .hero-banner-main .daily-goal-selector {
     display: inline-flex;
     align-items: baseline;
     gap: 4px;
-    margin-left: 2px;
+    font-size: 13.5px;
+    font-weight: 600;
     color: var(--text-secondary);
-    font-size: 13px;
-    white-space: nowrap;
   }
-  body.home-screen .daily-goal-selector select {
-    width: auto;
-    max-width: none;
-    min-width: 44px;
-    padding: 2px 18px 2px 6px;
-    font-size: 13px;
+
+  .hero-banner-main .daily-goal-selector select {
+    font-family: inherit;
+    font-size: 13.5px;
     font-weight: 700;
-    line-height: 1.2;
+    color: var(--text-primary);
+    background: var(--surface-subtle);
     border: 1px solid var(--border);
     border-radius: 6px;
-    background: var(--surface-subtle);
-    color: var(--text-primary);
+    padding: 2px 20px 2px 7px;
     cursor: pointer;
     appearance: none;
     -webkit-appearance: none;
@@ -1104,91 +1179,196 @@ body.home-screen .featured-topics {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 5px center;
+    transition: all 140ms ease;
   }
-  body.home-screen .daily-goal-selector select:hover {
-    background-color: var(--card-bg);
-    border-color: var(--accent);
-    color: var(--accent-text);
+
+  .hero-banner-main .daily-goal-selector select:hover {
+    border-color: var(--brand-primary);
   }
-  body.home-screen .daily-goal-selector select:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
-  }
-  body.home-screen .daily-goal-unit {
+
+  .hero-banner-main .daily-goal-message {
+    font-size: 12.5px;
     color: var(--text-secondary);
-    font-size: 13px;
-    font-weight: 600;
-    margin-left: 1px;
+    font-weight: 500;
   }
-  body.home-screen .daily-goal-track { height: 8px; border-radius: 999px; }
-  body.home-screen .daily-goal-message { font-size: 12px; color: var(--text-tertiary); margin-top: 5px; }
-  body.home-screen .learning-totals {
+
+  .hero-banner-main .daily-goal-track {
+    width: 100%;
+    height: 8px;
+    background: var(--progress-track);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+
+  .hero-banner-main .daily-goal-fill {
+    height: 100%;
+    background: var(--accent-gradient, var(--brand-primary));
+    border-radius: 999px;
+    transition: width 350ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .hero-banner-main .daily-goal-actions {
+    display: none;
+  }
+
+  /* Learning Totals */
+  .hero-banner-main .learning-totals {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-top: 14px;
-    padding-top: 12px;
+    padding-top: 10px;
     border-top: 1px solid var(--border);
     font-size: 12.5px;
     color: var(--text-secondary);
   }
-  body.home-screen .learning-totals strong { font-size: 13px; color: var(--text-primary); }
 
-  /* Single Hero CTA: Continue Learning */
-  body.home-screen .continue-learning-card {
-    margin: 0;
-    padding: 22px 24px;
-    border-radius: var(--radius-lg);
-    border: 1px solid var(--border);
-    background: var(--card-bg);
-    box-shadow: var(--card-shadow);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    height: 100%;
-    box-sizing: border-box;
-  }
-  body.home-screen .continue-learning-card .dashboard-kicker {
-    font-size: 11px;
+  .hero-banner-main .learning-totals strong {
+    color: var(--text-primary);
     font-weight: 700;
+  }
+
+  .hero-banner-main .learning-total-divider {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--border-strong);
+  }
+
+  /* Right / Action Section: Active Course & CTA */
+  .hero-banner-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 24px;
+    border-radius: 16px;
+    background: var(--surface-subtle);
+    border: 1px solid var(--border);
+    box-sizing: border-box;
+    min-width: 0;
+    gap: 16px;
+    transition: border-color 160ms ease, background-color 160ms ease;
+  }
+
+  :root[data-theme="dark"] .hero-banner-action {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .hero-course-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+  }
+
+  .hero-course-copy .dashboard-kicker {
+    font-size: 11px;
+    font-weight: 750;
     letter-spacing: 0.08em;
     color: var(--text-secondary);
   }
-  body.home-screen .continue-learning-card h2 {
-    margin-top: 4px;
-    font-size: 17px;
-    font-weight: 700;
+
+  .hero-course-copy h2 {
+    font-size: 19px;
+    font-weight: 800;
     color: var(--text-primary);
+    margin: 2px 0 0;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
   }
-  body.home-screen .continue-learning-card p {
-    margin-top: 4px;
+
+  .hero-course-copy p {
     font-size: 13px;
     color: var(--text-secondary);
+    margin: 3px 0 0;
+    font-weight: 500;
   }
-  body.home-screen .continue-learning-card .dashboard-primary-btn {
+
+  .hero-course-track {
+    width: 100%;
+    height: 6px;
+    background: var(--border);
+    border-radius: 999px;
+    overflow: hidden;
+    margin-top: 6px;
+  }
+
+  .hero-course-fill {
+    height: 100%;
+    width: 0%;
+    background: var(--brand-primary);
+    border-radius: 999px;
+    transition: width 350ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .hero-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
     min-height: 44px;
-    padding: 0 24px;
-    font-size: 14px;
-    font-weight: 750;
+    padding: 0 20px;
     border-radius: 12px;
     background: var(--brand-primary);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    color: var(--on-accent, #ffffff);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    letter-spacing: 0.02em;
-    transition: transform 140ms ease, box-shadow 140ms ease, filter 140ms ease;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 14.5px;
+    font-weight: 750;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18), 0 1px 2px rgba(0, 0, 0, 0.06);
+    transition: all 160ms cubic-bezier(0.16, 1, 0.3, 1);
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    user-select: none;
+    box-sizing: border-box;
   }
-  body.home-screen .continue-learning-card .dashboard-primary-btn:hover {
+
+  .hero-cta-btn:hover {
     background: var(--brand-primary-hover);
-    filter: brightness(1.05);
     transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25), 0 2px 4px rgba(0, 0, 0, 0.08);
   }
-  body.home-screen .continue-learning-card .dashboard-primary-btn:active {
+
+  .hero-cta-btn:active {
     transform: translateY(0);
-    filter: brightness(0.96);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .hero-cta-btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  /* Responsive Banner Breakpoints */
+  @media (max-width: 991px) {
+    .dashboard-hero-banner {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .dashboard-hero-banner {
+      padding: 16px;
+      gap: 16px;
+      border-radius: 16px;
+    }
+    .hero-banner-main h2 {
+      font-size: 16px;
+    }
+    .hero-banner-main .daily-goal-count strong {
+      font-size: 26px;
+    }
+    .hero-banner-action {
+      padding: 14px 16px;
+      border-radius: 12px;
+    }
+    .hero-course-copy h2 {
+      font-size: 17px;
+    }
   }
 
   /* Navigation Tabs */
