@@ -794,6 +794,44 @@ export function App() {
 
       {/* TAB 4: MINI GAMES */}
       {activeNavTab === 'games' && <GamesView />}
+
+      {/* FOOTER */}
+      <footer style={{
+        marginTop: 'auto',
+        padding: '24px 16px 16px',
+        textAlign: 'center',
+        borderTop: '1px solid var(--border-subtle)',
+        color: 'var(--text-muted)',
+        fontSize: '12px',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '8px',
+        alignItems: 'center'
+      }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap', justifyContent: 'center' }}>
+          <span>Synapse Hanzi · Trạm học chữ Hán đa giác quan</span>
+          <span>·</span>
+          <span className="footer-version" title="Phiên bản ứng dụng">v2.0.0</span>
+          <span>·</span>
+          <a
+            href="./legacy.html"
+            style={{
+              color: 'var(--brand-terracotta)',
+              textDecoration: 'none',
+              fontWeight: '600',
+              padding: '2px 8px',
+              borderRadius: '6px',
+              background: 'var(--bg-elevated)',
+              border: '1px solid var(--border-subtle)'
+            }}
+          >
+            Giao diện cũ (v1.x) ↺
+          </a>
+        </div>
+        <p style={{ margin: 0, opacity: 0.8 }}>
+          FSRS Spaced Repetition · 450 Graded Readings · Kangxi Radicals · 100% Offline PWA
+        </p>
+      </footer>
     </div>
   );
 }
