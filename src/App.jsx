@@ -37,6 +37,7 @@ import { LEVELS_CONFIG } from './services/dataRepository';
 import { playWordAudio, playExampleAudio, isPlayingAudioSignal } from './services/speechService';
 import { CardIllustration } from './components/CardIllustration';
 import { HanziDecomposition } from './components/HanziDecomposition';
+import { StrokeCanvas } from './components/StrokeCanvas';
 
 // Theme signal
 export const themeSignal = signal(
@@ -51,6 +52,7 @@ themeSignal.subscribe(theme => {
 
 export function App() {
   const [showDecomp, setShowDecomp] = useState(false);
+  const [showStroke, setShowStroke] = useState(false);
   const isReviewMode = isDueReviewModeSignal.value;
   const word = isReviewMode ? currentDueWord.value : currentWord.value;
 
@@ -528,29 +530,56 @@ export function App() {
                   </div>
                 )}
 
-                {/* Hanzi Radical Decomposition Drawer Button */}
-                <div style={{ marginTop: '16px', textAlign: 'center' }}>
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setShowDecomp(!showDecomp);
-                    }}
-                    style={{
-                      background: 'var(--bg-elevated)',
-                      border: '1px solid var(--border-subtle)',
-                      borderRadius: 'var(--radius-full)',
-                      padding: '6px 14px',
-                      fontSize: '12px',
-                      color: 'var(--text-secondary)',
-                      fontWeight: '600',
-                      cursor: 'pointer'
-                    }}
-                  >
-                    {showDecomp ? '▲ Thu gọn chiết tự' : '🧩 Bóc tách chiết tự & bộ thủ'}
-                  </button>
+                {/* Hanzi Radical Decomposition and Stroke Practice Drawer Buttons */}
+                <div style={{ marginTop: '16px', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
+                  <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', justifyContent: 'center' }}>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setShowStroke(!showStroke);
+                      }}
+                      style={{
+                        background: showStroke ? 'var(--bg-elevated)' : 'var(--bg-surface)',
+                        border: showStroke ? '1px solid var(--brand-primary)' : '1px solid var(--border-subtle)',
+                        borderRadius: 'var(--radius-full)',
+                        padding: '6px 14px',
+                        fontSize: '12px',
+                        color: showStroke ? 'var(--brand-primary)' : 'var(--text-secondary)',
+                        fontWeight: '600',
+                        cursor: 'pointer'
+                      }}
+                    >
+                      {showStroke ? '▲ Đóng tập viết' : '✍️ Tập viết thứ tự nét'}
+                    </button>
+
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setShowDecomp(!showDecomp);
+                      }}
+                      style={{
+                        background: showDecomp ? 'var(--bg-elevated)' : 'var(--bg-surface)',
+                        border: showDecomp ? '1px solid var(--brand-primary)' : '1px solid var(--border-subtle)',
+                        borderRadius: 'var(--radius-full)',
+                        padding: '6px 14px',
+                        fontSize: '12px',
+                        color: showDecomp ? 'var(--brand-primary)' : 'var(--text-secondary)',
+                        fontWeight: '600',
+                        cursor: 'pointer'
+                      }}
+                    >
+                      {showDecomp ? '▲ Thu gọn chiết tự' : '🧩 Bóc tách chiết tự'}
+                    </button>
+                  </div>
+
+                  {showStroke && (
+                    <div onClick={(e) => e.stopPropagation()} style={{ width: '100%', maxWidth: '420px', marginTop: '6px' }}>
+                      <StrokeCanvas word={word} />
+                    </div>
+                  )}
 
                   {showDecomp && (
-                    <div onClick={(e) => e.stopPropagation()} style={{ marginTop: '8px' }}>
+                    <div onClick={(e) => e.stopPropagation()} style={{ width: '100%', maxWidth: '500px', marginTop: '6px' }}>
                       <HanziDecomposition word={word} />
                     </div>
                   )}
