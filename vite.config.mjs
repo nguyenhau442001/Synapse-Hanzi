@@ -55,7 +55,7 @@ export default defineConfig({
       manifest: {
         name: 'Synapse Hanzi — Trạm học chữ Hán đa giác quan',
         short_name: 'Synapse Hanzi',
-        description: 'Trạm học từ vựng chữ Hán đa giác quan, hiện đại, tối giản và thông minh (PWA)',
+        description: 'Công cụ học từ vựng Flashcard chữ Hán đa giác quan, kết hợp các tính năng ôn thi HSK toàn diện',
         theme_color: '#c05624',
         background_color: '#f8fafc',
         display: 'standalone',
