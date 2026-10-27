@@ -13,6 +13,7 @@ import {
   currentWord,
   progressStats,
   progressSignal,
+  audioManifestSignal,
   setLevel,
   nextCard,
   prevCard,
@@ -21,6 +22,8 @@ import {
   setStudyFilter
 } from './signals/studySignals';
 import { LEVELS_CONFIG } from './services/dataRepository';
+import { playWordAudio, playExampleAudio, isPlayingAudioSignal } from './services/speechService';
+import { CardIllustration } from './components/CardIllustration';
 
 // Theme signal
 export const themeSignal = signal(
@@ -37,6 +40,34 @@ export function App() {
   useEffect(() => {
     // Initial level load
     setLevel(currentLevelSignal.value);
+
+    // Keyboard shortcuts
+    const handleKeyDown = (e) => {
+      if (['INPUT', 'TEXTAREA'].includes(e.target?.tagName)) return;
+
+      if (e.code === 'Space' || e.code === 'Enter') {
+        e.preventDefault();
+        toggleCardFlip();
+      } else if (e.code === 'ArrowRight') {
+        e.preventDefault();
+        nextCard();
+      } else if (e.code === 'ArrowLeft') {
+        e.preventDefault();
+        prevCard();
+      } else if (e.code === 'KeyS' || e.code === 'ArrowDown') {
+        e.preventDefault();
+        if (currentWord.value) {
+          playWordAudio(currentWord.value, audioManifestSignal.value);
+        }
+      } else if (e.code === 'Digit1') {
+        markWordProgress('learning');
+      } else if (e.code === 'Digit2') {
+        markWordProgress('remembered');
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
   const toggleTheme = () => {
@@ -50,8 +81,20 @@ export function App() {
   const isFlipped = isFlippedSignal.value;
   const curFilter = filterSignal.value;
   const curLevel = currentLevelSignal.value;
+  const manifest = audioManifestSignal.value;
+  const isPlaying = isPlayingAudioSignal.value;
 
   const currentStatus = word && progressSignal.value[word.id] ? progressSignal.value[word.id] : 'unlearned';
+
+  const handleSpeakWord = (e) => {
+    e.stopPropagation();
+    if (word) playWordAudio(word, manifest);
+  };
+
+  const handleSpeakExample = (e) => {
+    e.stopPropagation();
+    if (word) playExampleAudio(word, manifest);
+  };
 
   return (
     <div style={{ maxWidth: '720px', margin: '0 auto', padding: '16px 12px 60px' }}>
@@ -65,7 +108,7 @@ export function App() {
             </span>
           </h1>
           <p style={{ margin: '2px 0 0', fontSize: '12px', color: 'var(--text-muted)' }}>
-            Trạm học từ vựng chữ Hán đa giác quan • Tối giản & Siêu nhẹ
+            Trạm học từ vựng chữ Hán đa giác quan • Audio + Visual Mnemonics
           </p>
         </div>
 
@@ -199,8 +242,8 @@ export function App() {
               background: 'var(--bg-surface)',
               borderRadius: 'var(--radius-lg)',
               border: '1px solid var(--border-subtle)',
-              minHeight: '340px',
-              padding: '32px 24px',
+              minHeight: '380px',
+              padding: '32px 20px',
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
@@ -237,43 +280,94 @@ export function App() {
             {/* Card Content */}
             {!isFlipped ? (
               /* FRONT VIEW */
-              <div style={{ textAlign: 'center' }}>
-                <div style={{
-                  fontSize: '84px',
-                  fontWeight: '900',
-                  color: 'var(--text-primary)',
-                  fontFamily: 'var(--font-hanzi)',
-                  lineHeight: '1.1',
-                  marginBottom: '12px'
-                }}>
-                  {word.hanzi}
+              <div style={{ textAlign: 'center', width: '100%' }}>
+                {/* Visual Mnemonic Illustration */}
+                <CardIllustration word={word} size={150} />
+
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', marginBottom: '8px' }}>
+                  <div style={{
+                    fontSize: '76px',
+                    fontWeight: '900',
+                    color: 'var(--text-primary)',
+                    fontFamily: 'var(--font-hanzi)',
+                    lineHeight: '1.1'
+                  }}>
+                    {word.hanzi}
+                  </div>
+
+                  {/* Audio Pronunciation Button */}
+                  <button
+                    onClick={handleSpeakWord}
+                    aria-label="Phát âm"
+                    title="Phát âm (phím S)"
+                    style={{
+                      width: '42px',
+                      height: '42px',
+                      borderRadius: 'var(--radius-full)',
+                      border: '1px solid var(--border-strong)',
+                      background: isPlaying ? 'var(--brand-primary)' : 'var(--bg-elevated)',
+                      color: isPlaying ? '#ffffff' : 'var(--brand-primary)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontSize: '18px',
+                      boxShadow: 'var(--shadow-sm)'
+                    }}
+                  >
+                    🔊
+                  </button>
                 </div>
-                <div style={{ fontSize: '18px', color: 'var(--brand-primary)', fontWeight: '600', marginBottom: '24px' }}>
+
+                <div style={{ fontSize: '18px', color: 'var(--brand-primary)', fontWeight: '600', marginBottom: '20px' }}>
                   {word.pinyin}
                 </div>
-                <div style={{ fontSize: '13px', color: 'var(--text-muted)', background: 'var(--bg-elevated)', padding: '6px 16px', borderRadius: 'var(--radius-full)' }}>
-                  👆 Nhấn vào thẻ để xem nghĩa & ví dụ
+
+                <div style={{ fontSize: '13px', color: 'var(--text-muted)', background: 'var(--bg-elevated)', padding: '6px 16px', borderRadius: 'var(--radius-full)', display: 'inline-block' }}>
+                  👆 Nhấn vào thẻ (hoặc phím Space) để lật xem nghĩa
                 </div>
               </div>
             ) : (
               /* BACK VIEW */
               <div style={{ width: '100%', textAlign: 'center' }}>
-                <div style={{ fontSize: '40px', fontWeight: '900', color: 'var(--text-primary)', fontFamily: 'var(--font-hanzi)', marginBottom: '4px' }}>
-                  {word.hanzi}
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', marginBottom: '2px' }}>
+                  <span style={{ fontSize: '36px', fontWeight: '900', color: 'var(--text-primary)', fontFamily: 'var(--font-hanzi)' }}>
+                    {word.hanzi}
+                  </span>
+                  <button
+                    onClick={handleSpeakWord}
+                    aria-label="Phát âm"
+                    style={{
+                      width: '32px',
+                      height: '32px',
+                      borderRadius: 'var(--radius-full)',
+                      border: '1px solid var(--border-subtle)',
+                      background: 'var(--bg-elevated)',
+                      color: 'var(--brand-primary)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontSize: '14px'
+                    }}
+                  >
+                    🔊
+                  </button>
                 </div>
-                <div style={{ fontSize: '18px', color: 'var(--brand-primary)', fontWeight: '700', marginBottom: '2px' }}>
+
+                <div style={{ fontSize: '17px', color: 'var(--brand-primary)', fontWeight: '700', marginBottom: '2px' }}>
                   {word.pinyin}
                 </div>
+
                 {word.hanviet && (
-                  <div style={{ fontSize: '13px', color: 'var(--text-muted)', fontStyle: 'italic', marginBottom: '14px' }}>
+                  <div style={{ fontSize: '13px', color: 'var(--text-muted)', fontStyle: 'italic', marginBottom: '12px' }}>
                     Hán-Việt: {word.hanviet}
                   </div>
                 )}
-                <div style={{ fontSize: '20px', fontWeight: '700', color: 'var(--text-primary)', marginBottom: '20px' }}>
+
+                <div style={{ fontSize: '20px', fontWeight: '700', color: 'var(--text-primary)', marginBottom: '18px' }}>
                   {word.meaning}
                 </div>
 
-                {/* Example box */}
+                {/* Example sentence box with audio */}
                 {word.example_zh && (
                   <div style={{
                     background: 'var(--bg-elevated)',
@@ -281,13 +375,38 @@ export function App() {
                     padding: '14px 18px',
                     textAlign: 'left',
                     borderLeft: '4px solid var(--brand-primary)',
-                    maxWidth: '480px',
-                    margin: '0 auto'
+                    maxWidth: '500px',
+                    margin: '0 auto',
+                    position: 'relative'
                   }}>
-                    <div
-                      style={{ fontSize: '15px', color: 'var(--text-primary)', fontWeight: '600', marginBottom: '4px' }}
-                      dangerouslySetInnerHTML={{ __html: word.example_zh }}
-                    />
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '8px' }}>
+                      <div
+                        style={{ fontSize: '15px', color: 'var(--text-primary)', fontWeight: '600', marginBottom: '4px' }}
+                        dangerouslySetInnerHTML={{ __html: word.example_zh }}
+                      />
+                      <button
+                        onClick={handleSpeakExample}
+                        aria-label="Đọc câu ví dụ"
+                        title="Đọc câu ví dụ"
+                        style={{
+                          width: '28px',
+                          height: '28px',
+                          borderRadius: 'var(--radius-full)',
+                          border: 'none',
+                          background: 'var(--bg-surface)',
+                          color: 'var(--brand-primary)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          fontSize: '12px',
+                          flexShrink: 0,
+                          boxShadow: 'var(--shadow-sm)'
+                        }}
+                      >
+                        🔊
+                      </button>
+                    </div>
+
                     {word.example_py && (
                       <div
                         style={{ fontSize: '13px', color: 'var(--brand-primary)', marginBottom: '4px' }}
@@ -310,6 +429,7 @@ export function App() {
           <div style={{ display: 'flex', gap: '10px', marginTop: '16px', justifyContent: 'center' }}>
             <button
               onClick={prevCard}
+              title="Thẻ trước (←)"
               style={{
                 flex: 1,
                 padding: '12px 16px',
@@ -326,6 +446,7 @@ export function App() {
 
             <button
               onClick={() => markWordProgress('learning')}
+              title="Đang nhớ (phím 1)"
               style={{
                 flex: 1.2,
                 padding: '12px 16px',
@@ -342,6 +463,7 @@ export function App() {
 
             <button
               onClick={() => markWordProgress('remembered')}
+              title="Đã thuộc (phím 2)"
               style={{
                 flex: 1.2,
                 padding: '12px 16px',
@@ -358,6 +480,7 @@ export function App() {
 
             <button
               onClick={nextCard}
+              title="Thẻ tiếp theo (→)"
               style={{
                 flex: 1,
                 padding: '12px 16px',
@@ -371,6 +494,11 @@ export function App() {
             >
               Tiếp →
             </button>
+          </div>
+
+          {/* Keyboard Shortcuts Hint */}
+          <div style={{ marginTop: '16px', textAlign: 'center', fontSize: '12px', color: 'var(--text-muted)' }}>
+            Phím tắt: <kbd style={{ padding: '2px 5px', background: 'var(--bg-elevated)', borderRadius: '4px', border: '1px solid var(--border-subtle)' }}>Space</kbd> Lật thẻ • <kbd style={{ padding: '2px 5px', background: 'var(--bg-elevated)', borderRadius: '4px', border: '1px solid var(--border-subtle)' }}>S</kbd> Phát âm • <kbd style={{ padding: '2px 5px', background: 'var(--bg-elevated)', borderRadius: '4px', border: '1px solid var(--border-subtle)' }}>1</kbd> Đang nhớ • <kbd style={{ padding: '2px 5px', background: 'var(--bg-elevated)', borderRadius: '4px', border: '1px solid var(--border-subtle)' }}>2</kbd> Đã thuộc • <kbd style={{ padding: '2px 5px', background: 'var(--bg-elevated)', borderRadius: '4px', border: '1px solid var(--border-subtle)' }}>← / →</kbd> Chuyển thẻ
           </div>
         </div>
       )}
