@@ -36,7 +36,7 @@
             <span>🎯</span> Phương pháp SRS
           </button>
           <button type="button" class="study-help-tab-btn" data-tab="features" role="tab" aria-selected="false" aria-controls="helpTabFeatures">
-            <span>✨</span> Tính năng học
+            <span>✨</span> Tính năng
           </button>
           <button type="button" class="study-help-tab-btn" data-tab="faq" role="tab" aria-selected="false" aria-controls="helpTabFaq">
             <span>❓</span> Câu hỏi (FAQ)
@@ -330,11 +330,17 @@
     activeTabKey = tabKey;
 
     const navBtns = helpModalEl.querySelectorAll('.study-help-tab-btn');
+    let matchedBtn = null;
     navBtns.forEach((btn) => {
       const isMatch = btn.dataset.tab === tabKey;
       btn.classList.toggle('active', isMatch);
       btn.setAttribute('aria-selected', isMatch ? 'true' : 'false');
+      if (isMatch) matchedBtn = btn;
     });
+
+    if (matchedBtn && typeof matchedBtn.scrollIntoView === 'function') {
+      matchedBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+    }
 
     const sections = helpModalEl.querySelectorAll('.study-help-section');
     sections.forEach((sec) => {
@@ -364,6 +370,14 @@
 
     helpModalEl.classList.add('open');
     document.addEventListener('keydown', handleModalKeydown);
+
+    // Ensure active tab button is fully scrolled into view
+    setTimeout(() => {
+      const activeBtn = helpModalEl.querySelector('.study-help-tab-btn.active');
+      if (activeBtn && typeof activeBtn.scrollIntoView === 'function') {
+        activeBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+      }
+    }, 60);
 
     // Focus close button for accessibility
     const closeBtn = helpModalEl.querySelector('.study-help-close-btn');

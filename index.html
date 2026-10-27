@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="assets/css/reading-analysis.css?v=20261015-mobile-ui-opt">
 <link rel="stylesheet" href="assets/css/graded-reading.css?v=20261010-single-line-read1">
 <link rel="stylesheet" href="assets/css/listening-practice.css?v=1.3.3">
-<link rel="stylesheet" href="assets/css/study-help-modal.css?v=20261016-help-redesign1">
+<link rel="stylesheet" href="assets/css/study-help-modal.css?v=20261027-fix-about1">
 <script>(function(){try{var p=new URLSearchParams(window.location.search).get('theme');if(p==='dark'||p==='light'){document.documentElement.dataset.theme=p;return;}}catch(e){}var h=new Date().getHours();var d=(h>=6&&h<18)?'light':'dark';var m=localStorage.getItem('hsk_theme_manual');var e=parseInt(localStorage.getItem('hsk_theme_manual_expiry')||'0',10);document.documentElement.dataset.theme=(m&&Date.now()<e)?m:d;if(localStorage.getItem('hsk_show_hanviet')==='false'){document.documentElement.classList.add('hide-hanviet');}})();</script>
 <script>
 if ('serviceWorker' in navigator) {
@@ -235,9 +235,6 @@ if ('serviceWorker' in navigator) {
 
       <!-- Cluster 3: System Utilities (Ghost Minimal Icons) -->
       <div class="header-cluster header-utility-cluster" role="group" aria-label="Công cụ hệ thống">
-        <button type="button" id="headerSearchBtn" class="header-search-btn" onclick="openQuickSearchModal()" aria-label="Tìm từ vựng" title="Tìm từ vựng (Ctrl+K)">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        </button>
         <button type="button" id="headerHelpBtn" class="header-help-btn" onclick="openStudyHelpModal()" title="Hướng dẫn &amp; Trợ giúp học tập (?)" aria-label="Hướng dẫn học tập và phím tắt">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
         </button>
@@ -1331,7 +1328,7 @@ window.addEventListener('load', function() {
 <script src="assets/js/home-widgets.js?v=20261015-dashboard-redesign"></script>
 <script src="assets/js/dashboard-enhancements.js?v=20261017-mobile-clean1"></script>
 <script src="assets/js/quick-access-drawer.js?v=20261027-dashboard-redesign1"></script>
-<script src="assets/js/study-help-modal.js?v=20261016-help-redesign1"></script>
+<script src="assets/js/study-help-modal.js?v=20261027-fix-about1"></script>
 <script src="assets/flashcards.js?v=20261003-hsk20-rich1"></script>
 <!-- Mobile Bottom Navigation Bar -->
 <nav class="mobile-bottom-nav" id="mobileBottomNav" aria-label="Điều hướng di động">
