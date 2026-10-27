@@ -581,56 +581,169 @@ body:not(.home-screen) .continue-learning-card { display: none; }
   font-size: 12px;
   transition: transform 180ms ease;
 }
-/* Core Upper Learning Cards: Word of the Day & 7-Day Review Forecast */
-.dashboard-upper-widgets {
+/* Bottom Secondary Widgets (Word of the Day & Compact 7-Day Forecast) */
+.dashboard-bottom-widgets {
   width: 100%;
-  margin: 0;
+  margin-top: 10px;
 }
-.dashboard-upper-widgets .home-widgets,
-body.home-screen .dashboard-upper-widgets .home-widgets {
+.dashboard-bottom-widgets .home-widgets,
+body.home-screen .dashboard-bottom-widgets .home-widgets {
   display: grid !important;
   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   gap: 20px;
   width: 100%;
   margin: 0;
 }
-.dashboard-upper-widgets .hw-card,
-body.home-screen .dashboard-upper-widgets .hw-card {
+.dashboard-bottom-widgets .hw-card,
+body.home-screen .dashboard-bottom-widgets .hw-card {
   margin: 0;
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg, 20px);
   box-shadow: var(--card-shadow);
-  padding: 22px 24px;
+  padding: 18px 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 180px;
+  justify-content: flex-start;
+  gap: 12px;
+  min-height: auto;
   transition: transform 160ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 160ms ease, border-color 160ms ease;
 }
-.dashboard-upper-widgets .hw-card:hover,
-body.home-screen .dashboard-upper-widgets .hw-card:hover {
+.dashboard-bottom-widgets .hw-card:hover,
+body.home-screen .dashboard-bottom-widgets .hw-card:hover {
   transform: translateY(-2px);
   border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
-  box-shadow: 0 10px 24px -4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.08);
 }
-:root[data-theme="dark"] .dashboard-upper-widgets .hw-card,
-:root[data-theme="dark"] body.home-screen .dashboard-upper-widgets .hw-card {
+:root[data-theme="dark"] .dashboard-bottom-widgets .hw-card,
+:root[data-theme="dark"] body.home-screen .dashboard-bottom-widgets .hw-card {
   box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.4);
   border-color: rgba(255, 255, 255, 0.08);
 }
+
+/* Streamlined Compact Forecast Widget */
+.dashboard-bottom-widgets .hw-forecast {
+  justify-content: space-between;
+}
+.dashboard-bottom-widgets .hw-forecast .hw-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.dashboard-bottom-widgets .hw-forecast .hw-sub {
+  margin: 2px 0 0;
+  font-size: 11.5px;
+  color: var(--text-secondary);
+}
+.dashboard-bottom-widgets .hw-forecast .hw-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  margin-top: 10px;
+  padding-top: 4px;
+}
+.dashboard-bottom-widgets .hw-forecast .hw-bar-col {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+.dashboard-bottom-widgets .hw-forecast .hw-bar-value {
+  font-size: 10.5px;
+  color: var(--text-tertiary);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+.dashboard-bottom-widgets .hw-forecast .hw-bar {
+  display: block;
+  width: 100%;
+  max-width: 22px;
+  border-radius: 4px;
+  background: var(--border);
+  transition: height 200ms ease;
+}
+.dashboard-bottom-widgets .hw-forecast .hw-bar-label {
+  font-size: 10.5px;
+  color: var(--text-secondary);
+  line-height: 1;
+}
+.dashboard-bottom-widgets .hw-forecast .hw-bar-col.is-today .hw-bar {
+  background: var(--accent-gradient, var(--brand-primary));
+}
+.dashboard-bottom-widgets .hw-forecast .hw-bar-col.is-today .hw-bar-value,
+.dashboard-bottom-widgets .hw-forecast .hw-bar-col.is-today .hw-bar-label {
+  color: var(--brand-primary);
+  font-weight: 700;
+}
+
+/* Compact Word of the Day Widget */
+.dashboard-bottom-widgets .hw-wotd-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  text-align: left;
+  margin-top: 0;
+}
+.dashboard-bottom-widgets .hw-wotd-hanzi {
+  font-size: 38px;
+  line-height: 1.1;
+  flex: 0 0 auto;
+}
+.dashboard-bottom-widgets .hw-wotd-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.dashboard-bottom-widgets .hw-wotd-pinyin {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--text-secondary);
+}
+.dashboard-bottom-widgets .hw-wotd-meaning {
+  margin: 0;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.dashboard-bottom-widgets .hw-example {
+  margin-top: 0;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+.dashboard-bottom-widgets .hw-example-zh {
+  font-size: 13px;
+}
+.dashboard-bottom-widgets .hw-example-vi {
+  font-size: 11.5px;
+}
+.dashboard-bottom-widgets .hw-actions {
+  margin-top: 0;
+  display: flex;
+  gap: 8px;
+}
+.dashboard-bottom-widgets .hw-actions .hw-primary-btn {
+  min-height: 38px;
+  font-size: 13px;
+}
+.dashboard-bottom-widgets .hw-actions .hw-icon-btn {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+}
+
 @media (max-width: 900px) {
-  .dashboard-upper-widgets .home-widgets,
-  body.home-screen .dashboard-upper-widgets .home-widgets {
+  .dashboard-bottom-widgets .home-widgets,
+  body.home-screen .dashboard-bottom-widgets .home-widgets {
     grid-template-columns: 1fr !important;
     gap: 16px;
-  }
-  .dashboard-upper-widgets .hw-card,
-  body.home-screen .dashboard-upper-widgets .hw-card {
-    padding: 18px 20px;
-    border-radius: 16px;
-    min-height: auto;
   }
 }
 
@@ -1042,25 +1155,23 @@ body.home-screen .featured-topics {
   body.home-screen .app-header p { margin-top: 2px; font-size: 11.5px; color: var(--text-tertiary); font-weight: 500; }
 
   /* ==========================================================================
-     Classic Unified Hero Banner (.learning-dashboard.dashboard-hero-banner)
-     - ONE single, beautifully padded card container
-     - Left Wing: Daily goals, count, progress bar, message & stats footer
-     - Right Wing: Active course, progress, streak pill & prominent CTA button
-     - Seamless vertical division, equal height, zero floating boxes, zero gaps
+     Top Daily Goal Card (.learning-dashboard.dashboard-hero-banner)
+     - Standalone, clean, beautifully padded card container
+     - Daily goals, count, progress bar, message & stats footer
      ========================================================================== */
   body.home-screen .learning-dashboard.dashboard-hero-banner {
     width: 100%;
     margin: 0;
-    padding: 24px 28px;
+    padding: 22px 26px;
     border-radius: var(--radius-lg, 20px);
     background: var(--card-bg);
     border: 1px solid var(--border);
     box-shadow: var(--card-shadow);
     box-sizing: border-box;
-    display: grid;
-    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
-    gap: 36px;
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: stretch;
     transition: box-shadow 180ms ease, border-color 180ms ease;
   }
 
@@ -1069,12 +1180,13 @@ body.home-screen .featured-topics {
     border-color: rgba(255, 255, 255, 0.08);
   }
 
-  /* Left Wing */
+  /* Daily Goal Main Column */
   body.home-screen .hero-banner-main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 14px;
+    width: 100%;
     min-width: 0;
   }
 
@@ -1259,154 +1371,10 @@ body.home-screen .featured-topics {
     user-select: none;
   }
 
-  /* Right Wing: Seamless & Organic without harsh divider */
-  body.home-screen .hero-banner-action {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 12px;
-    min-width: 0;
-  }
-
-  body.home-screen .hero-action-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-  }
-
-  body.home-screen .hero-action-header .dashboard-kicker {
-    font-size: 11px;
-    font-weight: 750;
-    letter-spacing: 0.08em;
-    color: var(--text-secondary);
-  }
-
-  body.home-screen .banner-streak-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    padding: 2px 8px;
-    border-radius: 999px;
-    font-size: 11.5px;
-    font-weight: 700;
-    background: rgba(249, 115, 22, 0.08);
-    border: 1px solid rgba(249, 115, 22, 0.22);
-    color: var(--text-primary);
-    white-space: nowrap;
-    user-select: none;
-  }
-
-  :root[data-theme="dark"] body.home-screen .banner-streak-pill {
-    background: rgba(249, 115, 22, 0.12);
-    border-color: rgba(249, 115, 22, 0.32);
-  }
-
-  body.home-screen .banner-streak-icon {
-    font-size: 12.5px;
-    line-height: 1;
-  }
-
-  body.home-screen .hero-course-copy {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    min-width: 0;
-  }
-
-  body.home-screen .hero-course-copy h2 {
-    font-size: 18px;
-    font-weight: 800;
-    color: var(--text-primary);
-    margin: 0;
-    line-height: 1.25;
-    letter-spacing: -0.01em;
-  }
-
-  body.home-screen .hero-course-copy p {
-    font-size: 12.5px;
-    color: var(--text-secondary);
-    margin: 0;
-    font-weight: 500;
-  }
-
-  body.home-screen .continue-learning-track {
-    width: 100%;
-    height: 6px;
-    background: var(--progress-track);
-    border-radius: 999px;
-    overflow: hidden;
-    margin-top: 6px;
-  }
-
-  body.home-screen .continue-learning-fill {
-    height: 100%;
-    width: 0%;
-    background: var(--brand-primary);
-    border-radius: 999px;
-    transition: width 350ms cubic-bezier(0.16, 1, 0.3, 1);
-  }
-
-  /* Refined Sleek CTA Button (no longer a massive 100% wide block) */
-  body.home-screen .hero-cta-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    width: fit-content;
-    min-width: 160px;
-    max-width: 220px;
-    min-height: 38px;
-    height: 38px;
-    padding: 0 18px;
-    margin-top: 4px;
-    border-radius: 10px;
-    background: var(--brand-primary);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    color: #ffffff;
-    font-family: inherit;
-    font-size: 13.5px;
-    font-weight: 750;
-    cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
-    transition: all 160ms cubic-bezier(0.16, 1, 0.3, 1);
-    letter-spacing: 0.01em;
-    text-decoration: none;
-    user-select: none;
-    box-sizing: border-box;
-  }
-
-  body.home-screen .hero-cta-btn:hover {
-    background: var(--brand-primary-hover);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
-  }
-
-  body.home-screen .hero-cta-btn:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
-  }
-
-  body.home-screen .hero-cta-btn:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
-  }
-
   /* Responsive Banner Breakpoints */
   @media (max-width: 900px) {
     body.home-screen .learning-dashboard.dashboard-hero-banner {
-      grid-template-columns: 1fr;
-      gap: 20px;
-      padding: 20px 22px;
-    }
-    body.home-screen .hero-banner-action {
-      border-top: 1px solid var(--border);
-      padding-top: 16px;
-      gap: 12px;
-    }
-    body.home-screen .hero-cta-btn {
-      width: 100%;
-      max-width: 100%;
+      padding: 18px 20px;
     }
   }
 
@@ -1419,10 +1387,7 @@ body.home-screen .featured-topics {
       font-size: 16px;
     }
     body.home-screen .daily-goal-count strong {
-      font-size: 26px;
-    }
-    body.home-screen .hero-course-copy h2 {
-      font-size: 17px;
+      font-size: 24px;
     }
   }
 

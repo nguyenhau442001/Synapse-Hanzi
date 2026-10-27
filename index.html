@@ -249,9 +249,8 @@ if ('serviceWorker' in navigator) {
     </div>
   </header>
 
-  <!-- Classic Unified Hero Banner: Goals & Active Course in ONE Single Card -->
+  <!-- Daily Learning Goal Card -->
   <section class="learning-dashboard dashboard-hero-banner" id="learningDashboard" aria-labelledby="learningDashboardTitle">
-    <!-- Left Wing: Daily Learning Goals & Progress -->
     <div class="hero-banner-main">
       <div class="learning-dashboard-header">
         <div>
@@ -305,27 +304,6 @@ if ('serviceWorker' in navigator) {
         <span class="learning-total-divider" aria-hidden="true">•</span>
         <span><strong id="totalStudiedCount">0</strong> từ đã học</span>
       </div>
-    </div>
-
-    <!-- Right Wing: Active Course & High-Contrast Continue CTA -->
-    <div class="hero-banner-action" id="continueLearningCard" aria-labelledby="continueLearningTitle">
-      <div class="hero-action-header">
-        <div class="dashboard-kicker">TIẾP TỤC HỌC TẬP</div>
-        <div class="banner-streak-pill" id="bannerStreakPill" title="Chuỗi ngày học liên tục">
-          <span class="banner-streak-icon" aria-hidden="true">🔥</span>
-          <span id="bannerStreakText">0 ngày học</span>
-        </div>
-      </div>
-      <div class="hero-course-copy">
-        <h2 id="continueLearningTitle">Bắt đầu HSK 1</h2>
-        <p id="continueLearningProgress">150 từ nền tảng · Flashcard thông minh</p>
-        <div class="continue-learning-track" role="progressbar" aria-label="Tiến độ khóa học">
-          <div class="continue-learning-fill" id="continueLearningFill"></div>
-        </div>
-      </div>
-      <button class="dashboard-primary-btn hero-cta-btn" type="button" onclick="quickStartLearning()">
-        <span>Học ngay</span> <span aria-hidden="true">➔</span>
-      </button>
     </div>
   </section>
 
@@ -427,9 +405,6 @@ if ('serviceWorker' in navigator) {
 
   <!-- SCREEN 1: Vocab hub (level picker + topic picker sub-tabs) -->
   <div id="screenVocabHub">
-    <!-- Core Upper Cards: Word of the Day & 7-Day Review Forecast -->
-    <div class="dashboard-upper-widgets" id="dashboardUpperWidgets"></div>
-
     <div class="picker-controls" id="pickerControls">
       <div class="view-tabs" role="tablist" aria-label="Loại từ vựng">
         <button id="vocabSubTabLevel" class="view-tab active" role="tab" aria-selected="true"
@@ -616,6 +591,9 @@ if ('serviceWorker' in navigator) {
         </div>
       </section>
     </div>
+
+    <!-- BOTTOM SECTION: Secondary Widgets (Word of the Day & Compact Review Forecast) -->
+    <div class="dashboard-bottom-widgets" id="dashboardBottomWidgets"></div>
 
     <!-- Topic picker sub-tab -->
     <div id="screenTopicPicker" style="display:none">
@@ -1272,7 +1250,7 @@ if ('serviceWorker' in navigator) {
     </div>
     <aside class="workstation-right" id="workstationRight" aria-label="Phòng thực hành tương tác"></aside>
     <footer class="app-footer">
-      <p class="footer-note"><span class="footer-version" title="Phiên bản ứng dụng">v2.1.9</span> · Tiến trình tự lưu trên thiết bị này · Phát triển bởi <a href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer">haunguyenngoc442001</a> · <a href="https://www.facebook.com/haunguyenngoc442001/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+      <p class="footer-note"><span class="footer-version" title="Phiên bản ứng dụng">v2.1.10</span> · Tiến trình tự lưu trên thiết bị này · Phát triển bởi <a href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer">haunguyenngoc442001</a> · <a href="https://www.facebook.com/haunguyenngoc442001/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
     </footer>
   </div>
 </div>
@@ -1449,10 +1427,10 @@ function closeMobileStatsSheet() {
     }
   }
 
-  var upperMount = document.getElementById('dashboardUpperWidgets');
+  var bottomMount = document.getElementById('dashboardBottomWidgets');
   var statsContent = document.getElementById('dashboardStatsContent');
   var widgets = document.getElementById('homeWidgets');
-  var mountTarget = upperMount || statsContent;
+  var mountTarget = bottomMount || statsContent;
   if (mountTarget && widgets && widgets.parentNode !== mountTarget) {
     mountTarget.appendChild(widgets);
   }
@@ -1470,10 +1448,10 @@ function closeMobileStatsSheet() {
       }
     });
     statsDialog.addEventListener('close', function() {
-      var upperMount = document.getElementById('dashboardUpperWidgets');
+      var bottomMount = document.getElementById('dashboardBottomWidgets');
       var statsContent = document.getElementById('dashboardStatsContent');
       var widgets = document.getElementById('homeWidgets');
-      var mountTarget = upperMount || statsContent;
+      var mountTarget = bottomMount || statsContent;
       if (mountTarget && widgets && widgets.parentNode !== mountTarget) {
         mountTarget.appendChild(widgets);
       }

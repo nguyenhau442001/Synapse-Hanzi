@@ -10,7 +10,7 @@ const HOME_WORD_DATA_FIXES = {
 const HOME_WEEKDAY_SHORT = ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7'];
 const HOME_WEEKDAY_LONG = ['Chủ nhật', 'Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7'];
 const HOME_HEATMAP_WEEKS = 12;
-const HOME_FORECAST_BAR_HEIGHT = 68;
+const HOME_FORECAST_BAR_HEIGHT = 42;
 const HOME_SPEAKER_ICON = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>';
 const HOME_FORGOTTEN_LIMIT = 25;
 
@@ -538,9 +538,9 @@ function invalidateHomeWidgets() {
 }
 
 function placeHomeWidgets(container, isDesktop) {
-  const upperMount = document.getElementById('dashboardUpperWidgets');
-  if (upperMount) {
-    upperMount.appendChild(container);
+  const bottomMount = document.getElementById('dashboardBottomWidgets');
+  if (bottomMount) {
+    bottomMount.appendChild(container);
     return;
   }
   const statsContent = document.getElementById('dashboardStatsContent');
