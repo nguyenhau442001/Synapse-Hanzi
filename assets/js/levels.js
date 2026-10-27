@@ -487,27 +487,29 @@ function renderLearningDashboard() {
   const quickButton = document.getElementById('quickStudyButton');
   const dueCount = document.getElementById('todayDueCount');
   const todayReviewButton = document.getElementById('todayReviewButton');
-  if (!dailyCount || !dailyFill || !dailyMessage || !dailyGoalSelect || !knownNode || !studiedNode || !quickButton) return;
+  if (!dailyCount || !dailyFill || !dailyMessage) return;
 
   const activity = readStudyActivity();
   const today = localDateKey(new Date());
   const todayCount = dayWordCount(activity.days[today]);
   const dailyGoal = readDailyStudyGoal();
+  const validGoal = dailyGoal > 0 ? dailyGoal : 50;
   const streak = studyStreak(activity.days);
   const summary = learningProgressSummary();
-  const goalPercent = Math.min(100, todayCount / dailyGoal * 100);
+  const rawPercent = (todayCount / validGoal) * 100;
+  const goalPercent = Math.max(0, Math.min(100, isNaN(rawPercent) ? 0 : rawPercent));
   const roundedPct = Math.round(goalPercent);
 
   dailyCount.textContent = todayCount;
-  dailyGoalSelect.value = String(dailyGoal);
+  if (dailyGoalSelect) dailyGoalSelect.value = String(validGoal);
   dailyFill.style.width = goalPercent + '%';
-  dailyFill.parentElement.setAttribute('aria-valuemax', String(dailyGoal));
-  dailyFill.parentElement.setAttribute('aria-valuenow', String(Math.min(todayCount, dailyGoal)));
-  dailyMessage.textContent = todayCount >= dailyGoal
+  if (dailyFill.parentElement) {
+    dailyFill.parentElement.setAttribute('aria-valuemax', String(validGoal));
+    dailyFill.parentElement.setAttribute('aria-valuenow', String(Math.min(todayCount, validGoal)));
+  }
+  dailyMessage.textContent = todayCount >= validGoal
     ? 'Đã hoàn thành mục tiêu hôm nay — tuyệt lắm!'
-    : todayCount > 0
-      ? `Còn ${dailyGoal - todayCount} từ nữa để hoàn thành mục tiêu.`
-      : `Học ${dailyGoal} từ để hoàn thành mục tiêu hôm nay.`;
+    : 'Học thêm hôm nay để hoàn thành mục tiêu.';
 
   const goalPctNode = document.getElementById('dailyGoalPct');
   if (goalPctNode) {
@@ -516,25 +518,25 @@ function renderLearningDashboard() {
   }
   const targetTextNode = document.getElementById('dailyGoalTargetText');
   if (targetTextNode) {
-    targetTextNode.textContent = String(dailyGoal);
+    targetTextNode.textContent = String(validGoal);
   }
 
   const headerStreak = document.getElementById('headerStreakText');
   if (headerStreak) headerStreak.textContent = `${streak} ngày`;
   const bannerStreak = document.getElementById('bannerStreakText');
-  if (bannerStreak) bannerStreak.textContent = `${streak} ngày học`;
+  if (bannerStreak) bannerStreak.textContent = `${streak} ngày`;
   const bannerStreakBadge = document.getElementById('bannerStreakBadge');
   if (bannerStreakBadge) {
     bannerStreakBadge.classList.toggle('has-streak', streak > 0);
   }
-  knownNode.textContent = summary.totalKnown;
-  studiedNode.textContent = summary.totalStudied;
+  if (knownNode) knownNode.textContent = summary.totalKnown;
+  if (studiedNode) studiedNode.textContent = summary.totalStudied;
   const dueTotal = countDueCardsAcrossLevels(new Date());
   if (dueCount) dueCount.textContent = String(dueTotal);
   if (todayReviewButton) todayReviewButton.hidden = dueTotal === 0;
 
   const target = summary.target;
-  if (target) {
+  if (target && quickButton) {
     const complete = target.known >= LEVELS[target.level].total;
     quickButton.dataset.level = target.level;
     quickButton.innerHTML = `${complete ? 'Ôn lại' : target.studied > 0 ? 'Tiếp tục' : 'Bắt đầu'} ${LEVELS[target.level].label} <span aria-hidden="true">→</span>`;
@@ -545,7 +547,8 @@ function renderLearningDashboard() {
 
 function quickStartLearning() {
   const button = document.getElementById('quickStudyButton');
-  const level = button && button.dataset.level;
+  const continuation = document.getElementById('continueLearningCard');
+  const level = (button && button.dataset.level) || (continuation && continuation.dataset.level) || 'hsk1';
   if (level && LEVELS[level] && LEVELS[level].available) selectLevel(level);
 }
 

@@ -62,31 +62,33 @@
 .learning-dashboard h2 {
   margin: 4px 0 0; font-size: 16px; line-height: 1.3; font-weight: 650;
 }
-.daily-goal {
-  display: flex; flex-direction: column; gap: 14px; margin-top: 14px;
+.daily-goal-streak {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 13px; font-weight: 600; color: var(--text-primary);
 }
-.daily-goal-col-main {
-  display: flex; flex-direction: column; gap: 8px;
+.goal-settings-wrap {
+  position: relative; display: inline-flex; align-items: center; justify-content: center;
 }
-.daily-goal-col-side {
-  display: flex; flex-direction: column; gap: 10px;
+.goal-settings-select {
+  position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer;
 }
-.daily-goal-metric-header {
-  display: flex; align-items: baseline; justify-content: space-between; gap: 8px;
+.daily-goal-progress-section {
+  display: flex; flex-direction: column; gap: 8px; margin-top: 10px;
+}
+.daily-goal-metric-row {
+  display: flex; align-items: baseline; justify-content: space-between; width: 100%;
 }
 .daily-goal-count {
-  display: flex; align-items: baseline; white-space: nowrap; gap: 6px;
+  display: flex; align-items: baseline; white-space: nowrap; gap: 4px;
 }
 .daily-goal-count strong {
   color: var(--text-primary); font-size: 28px; line-height: 1; font-weight: 750;
 }
 .daily-goal-target-sub {
-  color: var(--text-secondary); font-size: 13px; font-weight: 600;
+  color: var(--text-secondary); font-size: 14px; font-weight: 600;
 }
-.goal-pct-badge {
-  display: inline-flex; align-items: center; padding: 2px 8px;
-  border-radius: 999px; font-size: 11.5px; font-weight: 700;
-  color: var(--accent-text); background: var(--accent-light);
+.daily-goal-pct {
+  font-size: 16px; font-weight: 700; color: var(--accent);
 }
 .daily-goal-track {
   height: 8px; overflow: hidden;
@@ -99,7 +101,7 @@
   transition: width 300ms ease;
 }
 .daily-goal-message {
-  margin-top: 3px; color: var(--text-secondary); font-size: 12px; line-height: 1.35;
+  margin-top: 8px; color: var(--text-secondary); font-size: 12.5px; line-height: 1.35;
 }
 .daily-goal-meta-row {
   display: flex; align-items: center; flex-wrap: wrap; gap: 8px;

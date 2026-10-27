@@ -250,79 +250,42 @@ if ('serviceWorker' in navigator) {
   <section class="learning-dashboard dashboard-hero-banner" id="learningDashboard" aria-labelledby="learningDashboardTitle">
     <div class="hero-banner-main">
       <div class="learning-dashboard-header">
-        <div>
-          <div class="learning-dashboard-eyebrow">🎯 MỤC TIÊU HÔM NAY</div>
-          <div class="learning-title-row">
-            <h2 id="learningDashboardTitle">Mỗi ngày một chút, nhớ lâu hơn</h2>
-            <button class="goal-settings-btn" type="button" aria-label="Sửa mục tiêu học mỗi ngày" title="Sửa mục tiêu" onclick="focusDailyGoalSelector()">⚙️</button>
-          </div>
-        </div>
-        <div class="learning-dashboard-header-right">
-          <div class="streak-badge-pill" id="bannerStreakBadge" title="Chuỗi ngày học liên tục">
-            <span class="streak-icon" aria-hidden="true">🔥</span>
-            <span id="bannerStreakText">0 ngày học</span>
-          </div>
-          <button class="history-trigger" type="button" onclick="showHistoryModal()">Lịch sử học tập <span aria-hidden="true">↗</span></button>
+        <div class="learning-dashboard-eyebrow">🎯 MỤC TIÊU HÔM NAY</div>
+        <div class="daily-goal-streak" id="bannerStreakBadge" title="Chuỗi ngày học liên tục">
+          <span class="streak-icon" aria-hidden="true">🔥</span>
+          <span id="bannerStreakText">0 ngày</span>
         </div>
       </div>
 
-      <div class="daily-goal">
-        <!-- Left Wing: Progress & Metrics -->
-        <div class="daily-goal-col-main">
-          <div class="daily-goal-metric-header">
-            <div class="daily-goal-count" aria-label="Tiến độ mục tiêu hôm nay">
-              <strong id="dailyStudyCount" class="goal-count-big">0</strong>
-              <span class="daily-goal-target-sub">/ <span id="dailyGoalTargetText">50</span> từ</span>
-            </div>
-            <span class="goal-pct-badge" id="dailyGoalPct">0%</span>
-          </div>
-
-          <div class="daily-goal-progress">
-            <div class="daily-goal-track" role="progressbar" aria-label="Mục tiêu học hôm nay"
-              aria-valuemin="0" aria-valuemax="50" aria-valuenow="0">
-              <div class="daily-goal-fill" id="dailyGoalFill"></div>
-            </div>
-          </div>
-
-          <div class="daily-goal-message" id="dailyGoalMessage">Học 50 từ để hoàn thành mục tiêu hôm nay.</div>
-        </div>
-
-        <!-- Right Wing: Selector, Stats & Quick Actions -->
-        <div class="daily-goal-col-side">
-          <div class="daily-goal-meta-row">
-            <label class="daily-goal-pill" title="Mục tiêu số từ học mỗi ngày">
-              <span class="daily-goal-pill-label">🎯 Mục tiêu:</span>
-              <select id="dailyGoalSelect" aria-label="Mục tiêu số từ học mỗi ngày"
-                onchange="updateDailyStudyGoal(this.value)">
-                <option value="10">10 từ / ngày</option>
-                <option value="20">20 từ / ngày</option>
-                <option value="30">30 từ / ngày</option>
-                <option value="50" selected>50 từ / ngày</option>
-              </select>
-            </label>
-
-            <div class="learning-totals" aria-label="Tổng quan tiến trình học">
-              <div class="stat-pill stat-pill--known" title="Tổng số từ vựng bạn đã nhớ">
-                <span class="stat-pill-icon" aria-hidden="true">✓</span>
-                <span><strong id="totalKnownCount">0</strong> từ đã nhớ</span>
-              </div>
-              <div class="stat-pill stat-pill--studied" title="Tổng số từ vựng bạn đã học qua">
-                <span class="stat-pill-icon" aria-hidden="true">📚</span>
-                <span><strong id="totalStudiedCount">0</strong> từ đã học</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="daily-goal-actions">
-            <button class="quick-study-btn" id="quickStudyButton" type="button" onclick="quickStartLearning()">
-              Bắt đầu HSK 1 <span aria-hidden="true">→</span>
-            </button>
-            <button class="quick-study-btn quick-study-btn--secondary" id="todayReviewButton" type="button" onclick="openTodayReviews()" hidden>
-              📅 Ôn hôm nay <span class="due-count-badge" id="todayDueCount">0</span>
-            </button>
-          </div>
+      <div class="learning-title-row">
+        <h2 id="learningDashboardTitle">Mỗi ngày một chút, nhớ lâu hơn</h2>
+        <div class="goal-settings-wrap" title="Sửa mục tiêu học mỗi ngày">
+          <button class="goal-settings-btn" type="button" aria-label="Sửa mục tiêu học mỗi ngày" onclick="focusDailyGoalSelector()">⚙️</button>
+          <select id="dailyGoalSelect" class="goal-settings-select" aria-label="Mục tiêu số từ học mỗi ngày" onchange="updateDailyStudyGoal(this.value)">
+            <option value="10">10 từ / ngày</option>
+            <option value="20">20 từ / ngày</option>
+            <option value="30">30 từ / ngày</option>
+            <option value="50" selected>50 từ / ngày</option>
+          </select>
         </div>
       </div>
+
+      <div class="daily-goal-progress-section">
+        <div class="daily-goal-metric-row">
+          <div class="daily-goal-count" aria-label="Tiến độ mục tiêu hôm nay">
+            <strong id="dailyStudyCount" class="goal-count-big">0</strong>
+            <span class="daily-goal-target-sub">/ <span id="dailyGoalTargetText">50</span> từ</span>
+          </div>
+          <span class="daily-goal-pct" id="dailyGoalPct">0%</span>
+        </div>
+
+        <div class="daily-goal-track" role="progressbar" aria-label="Mục tiêu học hôm nay"
+          aria-valuemin="0" aria-valuemax="50" aria-valuenow="0">
+          <div class="daily-goal-fill" id="dailyGoalFill"></div>
+        </div>
+      </div>
+
+      <div class="daily-goal-message" id="dailyGoalMessage">Học thêm hôm nay để hoàn thành mục tiêu.</div>
     </div>
   </section>
 
@@ -1269,7 +1232,7 @@ if ('serviceWorker' in navigator) {
     </div>
     <aside class="workstation-right" id="workstationRight" aria-label="Phòng thực hành tương tác"></aside>
     <footer class="app-footer">
-      <p class="footer-note"><span class="footer-version" title="Phiên bản ứng dụng">v2.3.0</span> · Tiến trình tự lưu trên thiết bị này · Phát triển bởi <a href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer">haunguyenngoc442001</a> · <a href="https://www.facebook.com/haunguyenngoc442001/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+      <p class="footer-note"><span class="footer-version" title="Phiên bản ứng dụng">v2.3.1</span> · Tiến trình tự lưu trên thiết bị này · Phát triển bởi <a href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer">haunguyenngoc442001</a> · <a href="https://www.facebook.com/haunguyenngoc442001/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
     </footer>
   </div>
 </div>

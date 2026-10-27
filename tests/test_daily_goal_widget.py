@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
 """
-Unit tests for the Daily Learning Goal Widget overhaul:
-1. Balanced 2-column layout (Left: Metrics & Gamified Progress, Right: Goal Config Pill, Modern Stat Badges, Quick Actions).
-2. Elimination of awkward '0 / [50] từ' by splitting metric count header and goal config selector.
-3. Elimination of outdated divider line and weird ':' separator in learning stats.
-4. Modern stat pills with distinct semantic status badges (known vs studied).
-5. Gamified motivation: dynamic percentage badge (#dailyGoalPct), streak badge (#bannerStreakBadge).
+Unit tests for the refined Daily Goal Card UI:
+1. Card displays ONLY the 4 specified content sections:
+   - Top row: Left: 🎯 MỤC TIÊU HÔM NAY, Right: 🔥 0 ngày (streak)
+   - Main heading: Mỗi ngày một chút, nhớ lâu hơn ⚙️
+   - Progress section: 0 / 50 từ, 0%, full-width progress bar
+   - Supporting text: Học thêm hôm nay để hoàn thành mục tiêu.
+2. Unrelated stats (total remembered, total studied), secondary actions (study history,
+   quick study button, today review button), and 2-column clutter are removed from this card.
+3. Safe data calculation: handles zero goal safely, clamps percentage 0-100%, keeps progress bar synchronized.
 """
 
 import unittest
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -25,62 +29,66 @@ class TestDailyGoalWidget(unittest.TestCase):
         cls.picker_css = LEVEL_PICKER_CSS.read_text(encoding="utf-8")
         cls.levels_js = LEVELS_JS.read_text(encoding="utf-8")
 
-    def test_essential_dom_ids_preserved(self):
-        """All functional DOM IDs required by the learning dashboard must be preserved."""
-        required_ids = [
-            'learningDashboard',
-            'learningDashboardTitle',
-            'dailyStudyCount',
-            'dailyGoalTargetText',
-            'dailyGoalPct',
-            'dailyGoalFill',
-            'dailyGoalMessage',
-            'dailyGoalSelect',
-            'totalKnownCount',
-            'totalStudiedCount',
-            'quickStudyButton',
-            'todayReviewButton',
-            'todayDueCount',
-            'bannerStreakText',
-            'bannerStreakBadge',
-        ]
-        for dom_id in required_ids:
-            self.assertIn(f'id="{dom_id}"', self.html, f"Missing required DOM id: {dom_id}")
+        # Extract the learningDashboard section html
+        match = re.search(r'(<section[^>]*id="learningDashboard"[^>]*>.*?</section>)', cls.html, re.DOTALL)
+        cls.card_html = match.group(1) if match else ""
 
-    def test_two_column_structure_present(self):
-        """Markup must define main metric column and side configuration/stats column."""
-        self.assertIn('class="daily-goal-col-main"', self.html)
-        self.assertIn('class="daily-goal-col-side"', self.html)
-        self.assertIn('class="daily-goal-metric-header"', self.html)
+    def test_learning_dashboard_present(self):
+        """Card must exist in DOM."""
+        self.assertTrue(self.card_html, "learningDashboard section not found in index.html")
 
-    def test_outdated_divider_and_colon_removed(self):
-        """The old divider dot/colon between known and studied counts must be replaced by modern pills."""
-        self.assertIn('class="stat-pill stat-pill--known"', self.html)
-        self.assertIn('class="stat-pill stat-pill--studied"', self.html)
+    def test_four_content_sections_present(self):
+        """Card must contain only the 4 specified sections."""
+        # 1. Top row
+        self.assertIn("🎯 MỤC TIÊU HÔM NAY", self.card_html)
+        self.assertIn('id="bannerStreakBadge"', self.card_html)
+        self.assertIn('id="bannerStreakText"', self.card_html)
 
-    def test_goal_selector_is_ergonomic_pill(self):
-        """Goal selector must be an intentional pill control with clear label and options."""
-        self.assertIn('class="daily-goal-pill"', self.html)
-        self.assertIn('class="daily-goal-pill-label"', self.html)
-        self.assertIn('<option value="10"', self.html)
-        self.assertIn('<option value="20"', self.html)
-        self.assertIn('<option value="30"', self.html)
-        self.assertIn('<option value="50"', self.html)
+        # 2. Main heading
+        self.assertIn('id="learningDashboardTitle"', self.card_html)
+        self.assertIn("Mỗi ngày một chút, nhớ lâu hơn", self.card_html)
+        self.assertIn("⚙️", self.card_html)
+        self.assertIn('id="dailyGoalSelect"', self.card_html)
 
-    def test_levels_js_updates_percentage_and_target(self):
-        """levels.js renderLearningDashboard must update #dailyGoalPct and #dailyGoalTargetText."""
+        # 3. Progress section
+        self.assertIn('id="dailyStudyCount"', self.card_html)
+        self.assertIn('id="dailyGoalTargetText"', self.card_html)
+        self.assertIn('id="dailyGoalPct"', self.card_html)
+        self.assertIn('id="dailyGoalFill"', self.card_html)
+
+        # 4. Supporting text
+        self.assertIn('id="dailyGoalMessage"', self.card_html)
+        self.assertIn("Học thêm hôm nay để hoàn thành mục tiêu.", self.card_html)
+
+    def test_unrelated_clutter_removed_from_card(self):
+        """Card must not contain unrelated badges, history trigger, stat pills, or secondary action buttons."""
+        self.assertNotIn("history-trigger", self.card_html)
+        self.assertNotIn("stat-pill", self.card_html)
+        self.assertNotIn('id="totalKnownCount"', self.card_html)
+        self.assertNotIn('id="totalStudiedCount"', self.card_html)
+        self.assertNotIn('id="quickStudyButton"', self.card_html)
+        self.assertNotIn('id="todayReviewButton"', self.card_html)
+        self.assertNotIn("daily-goal-col-side", self.card_html)
+
+    def test_levels_js_safe_calculation_and_updates(self):
+        """levels.js must handle zero goal safely, synchronize progress bar, streak and message."""
+        self.assertIn("const validGoal = dailyGoal > 0 ? dailyGoal : 50;", self.levels_js)
         self.assertIn("document.getElementById('dailyGoalPct')", self.levels_js)
         self.assertIn("document.getElementById('dailyGoalTargetText')", self.levels_js)
-        self.assertIn("bannerStreakBadge", self.levels_js)
-        self.assertIn("DAILY_STUDY_GOAL_OPTIONS = [10, 20, 30, 50]", self.levels_js)
+        self.assertIn("document.getElementById('bannerStreakText')", self.levels_js)
+        self.assertIn("Học thêm hôm nay để hoàn thành mục tiêu.", self.levels_js)
+        self.assertIn("`${streak} ngày`", self.levels_js)
 
-    def test_css_defines_modern_widget_styles(self):
-        """CSS must provide styles for the 2-column grid, stat pills, percentage badge, and streak badge."""
-        self.assertIn(".stat-pill--known", self.dash_css)
-        self.assertIn(".stat-pill--studied", self.dash_css)
-        self.assertIn(".goal-pct-badge", self.dash_css)
-        self.assertIn(".streak-badge-pill", self.dash_css)
-        self.assertIn(".daily-goal-pill", self.dash_css)
+    def test_css_styling_and_responsive(self):
+        """CSS must define clean, focused layout styles."""
+        self.assertIn(".learning-dashboard.dashboard-hero-banner", self.dash_css)
+        self.assertIn(".daily-goal-streak", self.dash_css)
+        self.assertIn(".daily-goal-progress-section", self.dash_css)
+        self.assertIn(".daily-goal-metric-row", self.dash_css)
+        self.assertIn(".daily-goal-pct", self.dash_css)
+        self.assertIn(".daily-goal-track", self.dash_css)
+        self.assertIn(".daily-goal-fill", self.dash_css)
+        self.assertIn(".daily-goal-message", self.dash_css)
 
 if __name__ == '__main__':
     unittest.main()
