@@ -1,4 +1,4 @@
-import { useEffect } from 'preact/hooks';
+import { useEffect, useState } from 'preact/hooks';
 import { signal } from '@preact/signals';
 import {
   currentLevelSignal,
@@ -36,6 +36,7 @@ import { SRS_RATINGS } from './services/srsService';
 import { LEVELS_CONFIG } from './services/dataRepository';
 import { playWordAudio, playExampleAudio, isPlayingAudioSignal } from './services/speechService';
 import { CardIllustration } from './components/CardIllustration';
+import { HanziDecomposition } from './components/HanziDecomposition';
 
 // Theme signal
 export const themeSignal = signal(
@@ -49,6 +50,7 @@ themeSignal.subscribe(theme => {
 });
 
 export function App() {
+  const [showDecomp, setShowDecomp] = useState(false);
   const isReviewMode = isDueReviewModeSignal.value;
   const word = isReviewMode ? currentDueWord.value : currentWord.value;
 
@@ -525,6 +527,34 @@ export function App() {
                     )}
                   </div>
                 )}
+
+                {/* Hanzi Radical Decomposition Drawer Button */}
+                <div style={{ marginTop: '16px', textAlign: 'center' }}>
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setShowDecomp(!showDecomp);
+                    }}
+                    style={{
+                      background: 'var(--bg-elevated)',
+                      border: '1px solid var(--border-subtle)',
+                      borderRadius: 'var(--radius-full)',
+                      padding: '6px 14px',
+                      fontSize: '12px',
+                      color: 'var(--text-secondary)',
+                      fontWeight: '600',
+                      cursor: 'pointer'
+                    }}
+                  >
+                    {showDecomp ? '▲ Thu gọn chiết tự' : '🧩 Bóc tách chiết tự & bộ thủ'}
+                  </button>
+
+                  {showDecomp && (
+                    <div onClick={(e) => e.stopPropagation()} style={{ marginTop: '8px' }}>
+                      <HanziDecomposition word={word} />
+                    </div>
+                  )}
+                </div>
               </div>
             )}
           </div>
