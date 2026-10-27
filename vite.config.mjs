@@ -75,5 +75,19 @@ export default defineConfig({
   server: {
     port: 3000,
     open: '/'
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: 'assets/js/app-bundle.js',
+        chunkFileNames: 'assets/js/[name].js',
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name && assetInfo.name.endsWith('.css')) {
+            return 'assets/css/app-bundle.css';
+          }
+          return 'assets/[name][extname]';
+        }
+      }
+    }
   }
 });
