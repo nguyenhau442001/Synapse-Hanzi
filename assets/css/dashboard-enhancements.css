@@ -581,34 +581,56 @@ body:not(.home-screen) .continue-learning-card { display: none; }
   font-size: 12px;
   transition: transform 180ms ease;
 }
-.dashboard-stats-accordion:not([open]) .stats-accordion-chevron {
-  transform: rotate(-90deg);
+/* Core Upper Learning Cards: Word of the Day & 7-Day Review Forecast */
+.dashboard-upper-widgets {
+  width: 100%;
+  margin: 0;
 }
-.dashboard-stats-content {
-  padding: 0 20px 20px;
-  border-top: 1px solid var(--border);
-}
-.dashboard-stats-content .home-widgets {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.dashboard-upper-widgets .home-widgets,
+body.home-screen .dashboard-upper-widgets .home-widgets {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   gap: 20px;
-  margin-top: 18px;
+  width: 100%;
+  margin: 0;
 }
-.dashboard-stats-content .home-widgets > .hw-card {
+.dashboard-upper-widgets .hw-card,
+body.home-screen .dashboard-upper-widgets .hw-card {
   margin: 0;
   background: var(--card-bg);
   border: 1px solid var(--border);
-  border-radius: 14px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-  padding: 18px 20px;
+  border-radius: var(--radius-lg, 20px);
+  box-shadow: var(--card-shadow);
+  padding: 22px 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 180px;
+  transition: transform 160ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 160ms ease, border-color 160ms ease;
 }
-.dashboard-stats-content .home-widgets > #hwDiscovery {
-  grid-column: 1 / -1;
+.dashboard-upper-widgets .hw-card:hover,
+body.home-screen .dashboard-upper-widgets .hw-card:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
+  box-shadow: 0 10px 24px -4px rgba(0, 0, 0, 0.1);
+}
+:root[data-theme="dark"] .dashboard-upper-widgets .hw-card,
+:root[data-theme="dark"] body.home-screen .dashboard-upper-widgets .hw-card {
+  box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.08);
 }
 @media (max-width: 900px) {
-  .dashboard-stats-content .home-widgets {
-    grid-template-columns: 1fr;
+  .dashboard-upper-widgets .home-widgets,
+  body.home-screen .dashboard-upper-widgets .home-widgets {
+    grid-template-columns: 1fr !important;
     gap: 16px;
+  }
+  .dashboard-upper-widgets .hw-card,
+  body.home-screen .dashboard-upper-widgets .hw-card {
+    padding: 18px 20px;
+    border-radius: 16px;
+    min-height: auto;
   }
 }
 

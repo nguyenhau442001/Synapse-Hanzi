@@ -427,6 +427,9 @@ if ('serviceWorker' in navigator) {
 
   <!-- SCREEN 1: Vocab hub (level picker + topic picker sub-tabs) -->
   <div id="screenVocabHub">
+    <!-- Core Upper Cards: Word of the Day & 7-Day Review Forecast -->
+    <div class="dashboard-upper-widgets" id="dashboardUpperWidgets"></div>
+
     <div class="picker-controls" id="pickerControls">
       <div class="view-tabs" role="tablist" aria-label="Loại từ vựng">
         <button id="vocabSubTabLevel" class="view-tab active" role="tab" aria-selected="true"
@@ -613,24 +616,6 @@ if ('serviceWorker' in navigator) {
         </div>
       </section>
     </div>
-
-    <!-- Collapsible Analytics & Activity Section (DevOps charts moved to bottom) -->
-    <details class="dashboard-stats-accordion" id="dashboardStatsAccordion" open>
-      <summary class="dashboard-stats-summary" id="statsSummaryBtn" aria-label="Mở rộng hoặc thu gọn biểu đồ thống kê học tập">
-        <div class="dashboard-stats-summary-title">
-          <span class="stats-summary-icon" aria-hidden="true">📊</span>
-          <div>
-            <h2 class="dashboard-stats-title">Thống kê &amp; Hoạt động học tập</h2>
-            <p class="dashboard-stats-desc">Lịch ôn 7 ngày tới, chuỗi ngày học và tần suất tương tác SRS</p>
-          </div>
-        </div>
-        <span class="dashboard-stats-toggle-badge">
-          <span class="stats-toggle-label">Thu gọn</span>
-          <span class="stats-accordion-chevron" aria-hidden="true">▾</span>
-        </span>
-      </summary>
-      <div class="dashboard-stats-content" id="dashboardStatsContent"></div>
-    </details>
 
     <!-- Topic picker sub-tab -->
     <div id="screenTopicPicker" style="display:none">
@@ -1287,7 +1272,7 @@ if ('serviceWorker' in navigator) {
     </div>
     <aside class="workstation-right" id="workstationRight" aria-label="Phòng thực hành tương tác"></aside>
     <footer class="app-footer">
-      <p class="footer-note"><span class="footer-version" title="Phiên bản ứng dụng">v2.1.8</span> · Tiến trình tự lưu trên thiết bị này · Phát triển bởi <a href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer">haunguyenngoc442001</a> · <a href="https://www.facebook.com/haunguyenngoc442001/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+      <p class="footer-note"><span class="footer-version" title="Phiên bản ứng dụng">v2.1.9</span> · Tiến trình tự lưu trên thiết bị này · Phát triển bởi <a href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer">haunguyenngoc442001</a> · <a href="https://www.facebook.com/haunguyenngoc442001/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
     </footer>
   </div>
 </div>
@@ -1464,10 +1449,12 @@ function closeMobileStatsSheet() {
     }
   }
 
+  var upperMount = document.getElementById('dashboardUpperWidgets');
   var statsContent = document.getElementById('dashboardStatsContent');
   var widgets = document.getElementById('homeWidgets');
-  if (statsContent && widgets && widgets.parentNode !== statsContent) {
-    statsContent.appendChild(widgets);
+  var mountTarget = upperMount || statsContent;
+  if (mountTarget && widgets && widgets.parentNode !== mountTarget) {
+    mountTarget.appendChild(widgets);
   }
 
   var mobProfile = document.getElementById('mobNavProfile');
@@ -1483,10 +1470,12 @@ function closeMobileStatsSheet() {
       }
     });
     statsDialog.addEventListener('close', function() {
+      var upperMount = document.getElementById('dashboardUpperWidgets');
       var statsContent = document.getElementById('dashboardStatsContent');
       var widgets = document.getElementById('homeWidgets');
-      if (statsContent && widgets && widgets.parentNode !== statsContent) {
-        statsContent.appendChild(widgets);
+      var mountTarget = upperMount || statsContent;
+      if (mountTarget && widgets && widgets.parentNode !== mountTarget) {
+        mountTarget.appendChild(widgets);
       }
       var mobProfile = document.getElementById('mobNavProfile');
       if (mobProfile) mobProfile.classList.remove('active');
