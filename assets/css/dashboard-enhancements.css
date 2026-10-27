@@ -1020,35 +1020,43 @@ body.home-screen .featured-topics {
   body.home-screen .app-header p { margin-top: 2px; font-size: 11.5px; color: var(--text-tertiary); font-weight: 500; }
 
   /* ==========================================================================
-     Top Section Layout: Daily Learning Goals (Balanced Hero Card)
+     Classic Unified Hero Banner (.learning-dashboard.dashboard-hero-banner)
+     - ONE single, beautifully padded card container
+     - Left Wing: Daily goals, count, progress bar, message & stats footer
+     - Right Wing: Active course, progress, streak pill & prominent CTA button
+     - Seamless vertical division, equal height, zero floating boxes, zero gaps
      ========================================================================== */
-  body.home-screen .learning-dashboard {
+  body.home-screen .learning-dashboard.dashboard-hero-banner {
     width: 100%;
     margin: 0;
-    padding: 22px 28px;
+    padding: 24px 28px;
     border-radius: var(--radius-lg, 20px);
     background: var(--card-bg);
     border: 1px solid var(--border);
     box-shadow: var(--card-shadow);
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
-    grid-template-areas:
-      "header goal"
-      "totals goal";
-    column-gap: 32px;
-    row-gap: 14px;
-    align-items: center;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    gap: 32px;
+    align-items: stretch;
     transition: box-shadow 180ms ease, border-color 180ms ease;
   }
 
-  :root[data-theme="dark"] body.home-screen .learning-dashboard {
-    box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.4);
+  :root[data-theme="dark"] body.home-screen .learning-dashboard.dashboard-hero-banner {
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.45);
     border-color: rgba(255, 255, 255, 0.08);
   }
 
+  /* Left Wing */
+  body.home-screen .hero-banner-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    min-width: 0;
+  }
+
   body.home-screen .learning-dashboard-header {
-    grid-area: header;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -1120,17 +1128,11 @@ body.home-screen .featured-topics {
     color: var(--brand-primary);
   }
 
-  /* Daily Goal Box (Enclosed tracker on the right side) */
+  /* Daily Goal Tracker in Left Wing */
   body.home-screen .daily-goal {
-    grid-area: goal;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    background: var(--surface-subtle);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 16px 20px;
-    box-sizing: border-box;
+    gap: 8px;
     margin: 0;
   }
 
@@ -1170,7 +1172,7 @@ body.home-screen .featured-topics {
     font-size: 13px;
     font-weight: 700;
     color: var(--text-primary);
-    background: var(--card-bg);
+    background: var(--surface-subtle);
     border: 1px solid var(--border);
     border-radius: 6px;
     padding: 2px 18px 2px 6px;
@@ -1189,7 +1191,7 @@ body.home-screen .featured-topics {
   }
 
   body.home-screen .daily-goal-message {
-    font-size: 12px;
+    font-size: 12.5px;
     color: var(--text-secondary);
     font-weight: 500;
   }
@@ -1213,9 +1215,8 @@ body.home-screen .featured-topics {
     display: none;
   }
 
-  /* Overall Totals (Left bottom) */
+  /* Stats footer in Left Wing */
   body.home-screen .learning-totals {
-    grid-area: totals;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -1232,33 +1233,170 @@ body.home-screen .featured-topics {
   }
 
   body.home-screen .learning-total-divider {
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: var(--border-strong);
+    font-size: 10px;
+    color: var(--text-tertiary);
+    user-select: none;
   }
 
-  /* Responsive adjustments for Learning Dashboard */
-  @media (max-width: 899px) {
-    body.home-screen .learning-dashboard {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      padding: 18px 20px;
+  /* Right Wing: Seamlessly Integrated Inside Same Banner */
+  body.home-screen .hero-banner-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    min-width: 0;
+    border-left: 1px solid var(--border);
+    padding-left: 32px;
+  }
+
+  body.home-screen .hero-action-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  body.home-screen .hero-action-header .dashboard-kicker {
+    font-size: 11px;
+    font-weight: 750;
+    letter-spacing: 0.08em;
+    color: var(--text-secondary);
+  }
+
+  body.home-screen .banner-streak-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    background: rgba(249, 115, 22, 0.08);
+    border: 1px solid rgba(249, 115, 22, 0.22);
+    color: var(--text-primary);
+    white-space: nowrap;
+    user-select: none;
+  }
+
+  :root[data-theme="dark"] body.home-screen .banner-streak-pill {
+    background: rgba(249, 115, 22, 0.12);
+    border-color: rgba(249, 115, 22, 0.32);
+  }
+
+  body.home-screen .banner-streak-icon {
+    font-size: 13px;
+    line-height: 1;
+  }
+
+  body.home-screen .hero-course-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+  }
+
+  body.home-screen .hero-course-copy h2 {
+    font-size: 19px;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin: 2px 0 0;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  body.home-screen .hero-course-copy p {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin: 3px 0 0;
+    font-weight: 500;
+  }
+
+  body.home-screen .continue-learning-track {
+    width: 100%;
+    height: 7px;
+    background: var(--progress-track);
+    border-radius: 999px;
+    overflow: hidden;
+    margin-top: 8px;
+  }
+
+  body.home-screen .continue-learning-fill {
+    height: 100%;
+    width: 0%;
+    background: var(--brand-primary);
+    border-radius: 999px;
+    transition: width 350ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  body.home-screen .hero-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    min-height: 44px;
+    padding: 0 20px;
+    border-radius: 12px;
+    background: var(--brand-primary);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 14.5px;
+    font-weight: 750;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18), 0 1px 2px rgba(0, 0, 0, 0.06);
+    transition: all 160ms cubic-bezier(0.16, 1, 0.3, 1);
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    user-select: none;
+    box-sizing: border-box;
+  }
+
+  body.home-screen .hero-cta-btn:hover {
+    background: var(--brand-primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25), 0 2px 4px rgba(0, 0, 0, 0.08);
+  }
+
+  body.home-screen .hero-cta-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  body.home-screen .hero-cta-btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  /* Responsive Banner Breakpoints */
+  @media (max-width: 900px) {
+    body.home-screen .learning-dashboard.dashboard-hero-banner {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 20px 22px;
+    }
+    body.home-screen .hero-banner-action {
+      border-left: none;
+      padding-left: 0;
+      border-top: 1px solid var(--border);
+      padding-top: 18px;
+      gap: 14px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    body.home-screen .learning-dashboard.dashboard-hero-banner {
+      padding: 16px 18px;
       border-radius: 16px;
     }
-    body.home-screen .daily-goal {
-      padding: 14px 16px;
-    }
-  }
-
-  @media (max-width: 767px) {
-    body.home-screen .learning-dashboard {
-      padding: 16px 18px;
-      border-radius: 14px;
+    body.home-screen .learning-dashboard h2 {
+      font-size: 16px;
     }
     body.home-screen .daily-goal-count strong {
-      font-size: 24px;
+      font-size: 26px;
+    }
+    body.home-screen .hero-course-copy h2 {
+      font-size: 17px;
     }
   }
 

@@ -509,6 +509,8 @@ function renderLearningDashboard() {
       : `Học ${dailyGoal} từ để hoàn thành mục tiêu hôm nay.`;
   const headerStreak = document.getElementById('headerStreakText');
   if (headerStreak) headerStreak.textContent = `${streak} ngày`;
+  const bannerStreak = document.getElementById('bannerStreakText');
+  if (bannerStreak) bannerStreak.textContent = `${streak} ngày học`;
   knownNode.textContent = summary.totalKnown;
   studiedNode.textContent = summary.totalStudied;
   const dueTotal = countDueCardsAcrossLevels(new Date());
