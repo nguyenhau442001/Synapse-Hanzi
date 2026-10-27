@@ -29,7 +29,7 @@ function hasSavedProgress() {
 }
 
 const DEFAULT_DAILY_STUDY_GOAL = 10;
-const DAILY_STUDY_GOAL_OPTIONS = [10, 20, 50];
+const DAILY_STUDY_GOAL_OPTIONS = [10, 20, 30, 50];
 const DAILY_STUDY_GOAL_KEY = 'hsk_daily_study_goal_v1';
 const STUDY_ACTIVITY_KEY = 'hsk_study_activity_v1';
 const LAST_LEVEL_KEY = 'hsk_last_level_v1';
@@ -496,6 +496,7 @@ function renderLearningDashboard() {
   const streak = studyStreak(activity.days);
   const summary = learningProgressSummary();
   const goalPercent = Math.min(100, todayCount / dailyGoal * 100);
+  const roundedPct = Math.round(goalPercent);
 
   dailyCount.textContent = todayCount;
   dailyGoalSelect.value = String(dailyGoal);
@@ -507,10 +508,25 @@ function renderLearningDashboard() {
     : todayCount > 0
       ? `Còn ${dailyGoal - todayCount} từ nữa để hoàn thành mục tiêu.`
       : `Học ${dailyGoal} từ để hoàn thành mục tiêu hôm nay.`;
+
+  const goalPctNode = document.getElementById('dailyGoalPct');
+  if (goalPctNode) {
+    goalPctNode.textContent = `${roundedPct}%`;
+    goalPctNode.classList.toggle('is-completed', roundedPct >= 100);
+  }
+  const targetTextNode = document.getElementById('dailyGoalTargetText');
+  if (targetTextNode) {
+    targetTextNode.textContent = String(dailyGoal);
+  }
+
   const headerStreak = document.getElementById('headerStreakText');
   if (headerStreak) headerStreak.textContent = `${streak} ngày`;
   const bannerStreak = document.getElementById('bannerStreakText');
   if (bannerStreak) bannerStreak.textContent = `${streak} ngày học`;
+  const bannerStreakBadge = document.getElementById('bannerStreakBadge');
+  if (bannerStreakBadge) {
+    bannerStreakBadge.classList.toggle('has-streak', streak > 0);
+  }
   knownNode.textContent = summary.totalKnown;
   studiedNode.textContent = summary.totalStudied;
   const dueTotal = countDueCardsAcrossLevels(new Date());
