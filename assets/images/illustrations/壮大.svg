@@ -1,0 +1,69 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glowing background ambient for growth atmosphere -->
+  <circle cx="140" cy="120" r="70" fill="#00D2FF" opacity="0.05" filter="blur(20px)"/>
+  <circle cx="90" cy="140" r="50" fill="#FFA500" opacity="0.05" filter="blur(15px)"/>
+
+  <!-- Contextual setting: Sleek modern tech startup architecture / server node network growing -->
+  <g opacity="0.15" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="3 3" fill="none">
+    <line x1="40" y1="180" x2="200" y2="180"/>
+    <circle cx="70" cy="180" r="2"/>
+    <circle cx="120" cy="180" r="2"/>
+    <circle cx="170" cy="180" r="2"/>
+  </g>
+
+  <!-- SCALE EXAGGERATION & VISUAL CONTRAST FOR ADJECTIVE (壮大 - Growing strong / Expanding power) -->
+  
+  <!-- Phase 1: Small/Initial state (Left, faded, compact) -->
+  <g transform="translate(60, 130)">
+    <!-- Small tech module base -->
+    <rect x="-16" y="0" width="32" height="24" rx="4" fill="#2A303C" stroke="#485563" stroke-width="1.5"/>
+    <!-- Small server core light -->
+    <circle cx="0" cy="12" r="3" fill="#485563"/>
+    <!-- Small upward growth sprout/signal -->
+    <path d="M0,0 L0,-14" stroke="#485563" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="0" cy="-18" r="2.5" fill="#485563"/>
+  </g>
+
+  <!-- Transition / Expansion vector energy lines -->
+  <g opacity="0.4" stroke="#00D2FF" stroke-width="1.5" stroke-dasharray="4 4" fill="none">
+    <path d="M82,110 C95,95 110,85 130,85"/>
+    <path d="M82,125 C100,120 120,115 135,115"/>
+  </g>
+
+  <!-- Phase 2: Large, powerful, robust state (Right, dominant, vibrant orange/gold & cyan highlights) -->
+  <g transform="translate(145, 95)">
+    <!-- Large structural foundation / expansive tech tower -->
+    <path d="M-32,65 L32,65 L24,0 L-24,0 Z" fill="#222B38" stroke="#00D2FF" stroke-width="2"/>
+    
+    <!-- Tiered robust modules -->
+    <rect x="-28" y="42" width="56" height="18" rx="3" fill="#1F2937" stroke="#00D2FF" stroke-width="1.5"/>
+    <rect x="-24" y="20" width="48" height="18" rx="3" fill="#253245" stroke="#00D2FF" stroke-width="1.5"/>
+    <rect x="-18" y="-2" width="36" height="18" rx="3" fill="#2D3E55" stroke="#00D2FF" stroke-width="1.5"/>
+
+    <!-- Glowing active core indicators (Orange/Gold focus accent) -->
+    <circle cx="0" cy="51" r="3.5" fill="#FFA500"/>
+    <circle cx="-8" cy="29" r="2.5" fill="#00D2FF"/>
+    <circle cx="8" cy="29" r="2.5" fill="#00D2FF"/>
+    <circle cx="0" cy="7" r="3" fill="#FFA500"/>
+
+    <!-- Peak grand antenna / expansive signal representing ultimate strength & development -->
+    <path d="M0,-2 L0,-24" stroke="#00D2FF" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="0" cy="-28" r="4" fill="#FFA500"/>
+
+    <!-- Radiating expansion energy rings around the peak -->
+    <circle cx="0" cy="-28" r="10" fill="none" stroke="#FFA500" stroke-width="1" opacity="0.6"/>
+    <circle cx="0" cy="-28" r="16" fill="none" stroke="#00D2FF" stroke-width="1" opacity="0.3"/>
+  </g>
+
+  <!-- Dynamic upward growth arrow integrating smoothly into the scale contrast -->
+  <g transform="translate(112, 105)">
+    <path d="M0,25 C0,10 10,0 25,-10" fill="none" stroke="#FFA500" stroke-width="3" stroke-linecap="round"/>
+    <path d="M18,-14 L27,-12 L23,-3" fill="none" stroke="#FFA500" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Ground reflection / stability line -->
+  <path d="M35,180 L205,180" stroke="#2D3748" stroke-width="2" stroke-linecap="round"/>
+</svg>

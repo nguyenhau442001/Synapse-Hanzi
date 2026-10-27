@@ -1,0 +1,55 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "贯彻" (To thoroughly carry out/implement from top to bottom) -->
+  <g transform="translate(120, 120)">
+    <!-- Background subtle flow lines representing thorough penetration/execution -->
+    <path d="M-50 -70 L-50 70" stroke="#2A3241" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round"/>
+    <path d="M0 -70 L0 70" stroke="#2A3241" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round"/>
+    <path d="M50 -70 L50 70" stroke="#2A3241" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round"/>
+
+    <!-- Central physical object: A sleek, professional directive scroll/blueprint smoothly passing through layered structural rings, symbolizing top-to-bottom thorough implementation -->
+    
+    <!-- Top source level (Strategy/Directive) -->
+    <rect x="-40" y="-80" width="80" height="20" rx="6" fill="#F59E0B"/>
+    <rect x="-30" y="-75" width="60" height="4" rx="2" fill="#1A1D24" opacity="0.3"/>
+
+    <!-- Intermediary layer rings (Systemic implementation across levels) -->
+    <g transform="translate(0, -20)">
+      <rect x="-56" y="-12" width="112" height="24" rx="8" fill="#2563EB" opacity="0.2"/>
+      <rect x="-50" y="-8" width="100" height="16" rx="6" fill="#3B82F6"/>
+      <circle cx="-38" cy="0" r="3" fill="#FFFFFF"/>
+      <rect x="-26" y="-2" width="56" height="4" rx="2" fill="#FFFFFF"/>
+    </g>
+
+    <g transform="translate(0, 20)">
+      <rect x="-56" y="-12" width="112" height="24" rx="8" fill="#2563EB" opacity="0.3"/>
+      <rect x="-50" y="-8" width="100" height="16" rx="6" fill="#2563EB"/>
+      <circle cx="-38" cy="0" r="3" fill="#FFFFFF"/>
+      <rect x="-26" y="-2" width="56" height="4" rx="2" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Bottom ground/root level (Complete execution/realization) -->
+    <g transform="translate(0, 65)">
+      <rect x="-60" y="-12" width="120" height="26" rx="8" fill="#10B981" opacity="0.2"/>
+      <rect x="-54" y="-8" width="108" height="18" rx="6" fill="#10B981"/>
+      <circle cx="-40" cy="1" r="4" fill="#FFFFFF"/>
+      <path d="M-30 0 L-22 6 L-10 -4" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <rect x="0" y="-2" width="44" height="4" rx="2" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Vertical guiding beam (贯 - piercing through from top to bottom) -->
+    <defs>
+      <linearGradient id="beamGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#F59E0B" stop-opacity="1"/>
+        <stop offset="50%" stop-color="#3B82F6" stop-opacity="1"/>
+        <stop offset="100%" stop-color="#10B981" stop-opacity="1"/>
+      </linearGradient>
+    </defs>
+    <rect x="-4" y="-60" width="8" height="115" rx="4" fill="url(#beamGrad)"/>
+
+    <!-- Directional pulse arrows showing thorough downward action -->
+    <path d="M-12 38 L0 52 L12 38" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

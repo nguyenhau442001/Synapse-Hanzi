@@ -1,0 +1,31 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Elements: Sea and Sky -->
+  <path d="M0 140 Q 120 120 240 140 L 240 240 L 0 240 Z" fill="#2C3E50" opacity="0.6"/>
+  <path d="M0 160 Q 120 140 240 160 L 240 240 L 0 240 Z" fill="#34495E"/>
+  
+  <!-- The Beach (Gold) -->
+  <path d="M0 190 Q 120 170 240 190 L 240 240 L 0 240 Z" fill="#F1C40F"/>
+  
+  <!-- Character representing 'Yiren' (Pleasant/Comfortable) -->
+  <!-- Relaxed posture, arms slightly open, head tilted back slightly to catch the breeze -->
+  <g transform="translate(120, 150)">
+    <!-- Body -->
+    <path d="M-15 40 L-10 80 L10 80 L15 40 Z" fill="#BDC3C7"/>
+    <!-- Head -->
+    <circle cx="0" cy="15" r="18" fill="#ECF0F1"/>
+    <!-- Relaxed Arms -->
+    <path d="M-15 35 L-35 50 M15 35 L35 50" stroke="#ECF0F1" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Breeze/Wind Effect (Subtle lines) -->
+  <path d="M20 80 Q 50 70 80 80" stroke="#F39C12" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+  <path d="M40 95 Q 70 85 100 95" stroke="#F39C12" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+  
+  <!-- Sun (Setting/Soft light) -->
+  <circle cx="200" cy="50" r="25" fill="#F39C12"/>
+  
+  <!-- Palm Tree (Minimalist silhouette) -->
+  <path d="M30 240 L30 140 M30 140 L10 120 M30 140 L50 120 M30 140 L5 140 M30 140 L55 140" stroke="#27AE60" stroke-width="6" stroke-linecap="round"/>
+</svg>

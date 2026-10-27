@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground -->
+  <path d="M40 190 L200 190 L200 195 L40 195 Z" fill="#2D3436"/>
+  
+  <!-- Greenhouse Structure (Plastic Tunnel) -->
+  <!-- Main frame -->
+  <path d="M60 190 L60 140 C60 100 180 100 180 140 L180 190" fill="none" stroke="#F39C12" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Arched ribs -->
+  <path d="M80 190 L80 115" stroke="#F39C12" stroke-width="2" stroke-opacity="0.6"/>
+  <path d="M100 190 L100 110" stroke="#F39C12" stroke-width="2" stroke-opacity="0.6"/>
+  <path d="M120 190 L120 110" stroke="#F39C12" stroke-width="2" stroke-opacity="0.6"/>
+  <path d="M140 190 L140 115" stroke="#F39C12" stroke-width="2" stroke-opacity="0.6"/>
+  <path d="M160 190 L160 130" stroke="#F39C12" stroke-width="2" stroke-opacity="0.6"/>
+  
+  <!-- Plastic covering (semi-transparent) -->
+  <path d="M60 190 L60 140 C60 100 180 100 180 140 L180 190 Z" fill="#3498DB" fill-opacity="0.2"/>
+  
+  <!-- Crops inside -->
+  <circle cx="90" cy="185" r="5" fill="#27AE60"/>
+  <circle cx="110" cy="182" r="6" fill="#2ECC71"/>
+  <circle cx="130" cy="185" r="5" fill="#27AE60"/>
+  <circle cx="150" cy="183" r="6" fill="#2ECC71"/>
+</svg>

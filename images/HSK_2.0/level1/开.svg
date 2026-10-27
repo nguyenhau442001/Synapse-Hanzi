@@ -1,34 +1,7 @@
-<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="240" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0f172a"/>
-      <stop offset="1" stop-color="#1e293b"/>
-    </linearGradient>
-  </defs>
-  <rect width="240" height="240" rx="24" fill="url(#bg)"/>
-  
-  <!-- Door Frame -->
-  <path d="M70 40h100v160H70z" fill="#334155" stroke="#475569" stroke-width="4"/>
-  
-  <!-- Open Door Panel -->
-  <path d="M170 40l40 20v140l-40-20z" fill="#fb923c"/>
-  <path d="M170 40l40 20v140l-40-20z" fill="none" stroke="#ea580c" stroke-width="2"/>
-  
-  <!-- Door Interior/Room -->
-  <rect x="80" y="50" width="80" height="140" fill="#0f172a"/>
-  <circle cx="120" cy="120" r="20" fill="#1e293b"/>
-  <circle cx="120" cy="120" r="10" fill="#38bdf8"/>
-  
-  <!-- Door Handle -->
-  <circle cx="175" cy="130" r="6" fill="#f59e0b"/>
-  
-  <!-- Floor Shadow -->
-  <ellipse cx="140" cy="220" rx="60" ry="10" fill="#0f172a" opacity="0.5"/>
-  
-  <!-- Decorative Light Beam -->
-  <path d="M170 60l40 20v20l-40-20z" fill="#fbbf24" opacity="0.2"/>
-  
-  <!-- Wall Detail -->
-  <rect x="20" y="40" width="40" height="160" fill="#1e293b" stroke="#334155" stroke-width="2"/>
-  <rect x="180" y="40" width="40" height="160" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+  <line x1="20" y1="32" x2="80" y2="32" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round"/>
+  <line x1="16" y1="52" x2="84" y2="52" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round"/>
+  <line x1="36" y1="32" x2="36" y2="78" stroke="#fb923c" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M64 32 Q64 60 58 78" stroke="#fb923c" stroke-width="4.5" stroke-linecap="round"/>
 </svg>

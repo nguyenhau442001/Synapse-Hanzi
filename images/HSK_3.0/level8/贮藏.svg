@@ -1,0 +1,62 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background subterranean atmosphere / cellar arch -->
+  <path d="M60 80 C60 55, 90 40, 120 40 C150 40, 180 55, 180 80 L180 200 L60 200 Z" fill="#222730"/>
+  <path d="M52 80 C52 50, 85 32, 120 32 C155 32, 188 50, 188 80" stroke="#2F3642" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Wooden Storage Shelving Units -->
+  <!-- Left Shelf -->
+  <rect x="68" y="95" width="34" height="95" fill="#2E231B" rx="2"/>
+  <rect x="64" y="90" width="42" height="7" fill="#3D3025" rx="1"/>
+  <rect x="68" y="125" width="34" height="6" fill="#3D3025"/>
+  <rect x="68" y="157" width="34" height="6" fill="#3D3025"/>
+  
+  <!-- Right Shelf -->
+  <rect x="138" y="95" width="34" height="95" fill="#2E231B" rx="2"/>
+  <rect x="134" y="90" width="42" height="7" fill="#3D3025" rx="1"/>
+  <rect x="138" y="125" width="34" height="6" fill="#3D3025"/>
+  <rect x="138" y="157" width="34" height="6" fill="#3D3025"/>
+
+  <!-- Stored Fresh Fruits (Representing long-term preservation/贮藏) -->
+  <!-- Left shelf items -->
+  <circle cx="78" cy="116" r="8" fill="#FF5722"/>
+  <path d="M78 108 Q80 105, 83 107" stroke="#4CAF50" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <circle cx="92" cy="116" r="8" fill="#FFC107"/>
+  
+  <circle cx="85" cy="148" r="9" fill="#E91E63"/>
+  <circle cx="76" cy="149" r="8" fill="#8BC34A"/>
+  
+  <!-- Right shelf items -->
+  <circle cx="150" cy="116" r="9" fill="#FF9800"/>
+  <circle cx="162" cy="116" r="8" fill="#FF5722"/>
+  
+  <circle cx="155" cy="148" r="8" fill="#FFEB3B"/>
+  <path d="M155 140 Q157 137, 160 139" stroke="#4CAF50" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Central Storage Container / Wooden Crate with fresh harvest -->
+  <rect x="90" y="155" width="60" height="35" rx="3" fill="#8D5B34"/>
+  <rect x="94" y="159" width="52" height="27" fill="#A46B43" rx="1"/>
+  <!-- Crate planks & details -->
+  <line x1="120" y1="159" x2="120" y2="186" stroke="#724727" stroke-width="2"/>
+  <circle cx="98" cy="172" r="2" fill="#58351C"/>
+  <circle cx="142" cy="172" r="2" fill="#58351C"/>
+  
+  <!-- Fresh produce overflowing neatly from the central crate -->
+  <circle cx="107" cy="149" r="9" fill="#FF3D00"/>
+  <path d="M107 140 Q109 137, 112 139" stroke="#4CAF50" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <circle cx="123" cy="146" r="10" fill="#FFC107"/>
+  <path d="M123 136 Q125 133, 128 135" stroke="#7CB342" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <circle cx="137" cy="149" r="9" fill="#8BC34A"/>
+  
+  <!-- Temperature/Humidity Stable Glow / Precision Element -->
+  <circle cx="120" cy="70" r="12" fill="#1E293B" stroke="#FFB300" stroke-width="2.5"/>
+  <path d="M120 62 L120 74" stroke="#FF5722" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="120" cy="74" r="2.5" fill="#FF5722"/>
+  
+  <!-- Subtle cool/fresh ambient lighting effect inside the cellar -->
+  <path d="M90 50 Q120 65, 150 50" stroke="#38BDF8" stroke-width="2" fill="none" opacity="0.4" stroke-linecap="round"/>
+  <path d="M75 60 Q120 78, 165 60" stroke="#38BDF8" stroke-width="1.5" fill="none" opacity="0.25" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,42 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Table Surface -->
+  <rect x="20" y="180" width="200" height="15" rx="4" fill="#2D343E"/>
+  
+  <!-- Plate with Food -->
+  <ellipse cx="120" cy="175" rx="45" ry="12" fill="#3D4654"/>
+  <circle cx="120" cy="170" r="25" fill="#E6B422"/>
+  <path d="M105 165 Q120 155 135 165" stroke="#C4961D" stroke-width="3" fill="none"/>
+  
+  <!-- Character 1 (The Diner) -->
+  <g transform="translate(40, 60)">
+    <circle cx="40" cy="40" r="25" fill="#FFD1A9"/>
+    <path d="M30 40 Q40 50 50 40" stroke="#333" stroke-width="2" fill="none"/>
+    <path d="M32 32 Q35 28 38 32" stroke="#333" stroke-width="2" fill="none"/>
+    <path d="M42 32 Q45 28 48 32" stroke="#333" stroke-width="2" fill="none"/>
+    <path d="M25 65 L55 65 L50 120 L30 120 Z" fill="#4A90E2"/>
+  </g>
+  
+  <!-- Character 2 (The Diner) -->
+  <g transform="translate(120, 60)">
+    <circle cx="40" cy="40" r="25" fill="#FFD1A9"/>
+    <path d="M30 40 Q40 50 50 40" stroke="#333" stroke-width="2" fill="none"/>
+    <path d="M32 32 Q35 28 38 32" stroke="#333" stroke-width="2" fill="none"/>
+    <path d="M42 32 Q45 28 48 32" stroke="#333" stroke-width="2" fill="none"/>
+    <path d="M25 65 L55 65 L50 120 L30 120 Z" fill="#E27D60"/>
+  </g>
+
+  <!-- Motion/Speech Lines indicating continuous praise -->
+  <path d="M85 50 Q90 40 95 50" stroke="#FFC107" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M100 45 Q105 35 110 45" stroke="#FFC107" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M165 50 Q170 40 175 50" stroke="#FFC107" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M180 45 Q185 35 190 45" stroke="#FFC107" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <!-- Hand Gesture: Thumbs up -->
+  <path d="M70 100 L75 90 L85 90 L90 100 L85 110 L75 110 Z" fill="#FFD1A9"/>
+  <path d="M85 90 L85 80 L92 75 L95 85 L85 90" fill="#FFD1A9"/>
+  
+  <path d="M150 100 L155 90 L165 90 L170 100 L165 110 L155 110 Z" fill="#FFD1A9"/>
+  <path d="M165 90 L165 80 L172 75 L175 85 L165 90" fill="#FFD1A9"/>
+</svg>

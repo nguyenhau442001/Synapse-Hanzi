@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Plate -->
+  <ellipse cx="120" cy="150" rx="80" ry="20" fill="#2D343E"/>
+  <ellipse cx="120" cy="145" rx="75" ry="18" fill="#F4F4F4"/>
+  
+  <!-- Meat/Fish Elements (Representing '荤') -->
+  <!-- Piece of meat -->
+  <path d="M90 130 C 80 130, 70 110, 85 95 C 100 80, 120 90, 115 105 C 110 120, 100 130, 90 130 Z" fill="#E67E22"/>
+  <path d="M95 105 C 98 102, 102 102, 105 105 L 108 115 L 92 115 Z" fill="#D35400"/>
+  
+  <!-- Fish -->
+  <path d="M130 110 C 140 100, 160 100, 170 110 C 180 120, 170 130, 160 130 C 150 130, 140 120, 130 110 Z" fill="#F39C12"/>
+  <path d="M170 110 L 185 100 L 185 120 Z" fill="#F39C12"/>
+  <circle cx="145" cy="112" r="2" fill="#1A1D24"/>
+  
+  <!-- Garnish/Detail -->
+  <path d="M115 125 L 125 125 L 120 115 Z" fill="#D35400"/>
+  
+  <!-- Steam/Heat lines -->
+  <path d="M100 85 Q 100 75 95 70" stroke="#F1C40F" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M160 95 Q 160 85 165 80" stroke="#F1C40F" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

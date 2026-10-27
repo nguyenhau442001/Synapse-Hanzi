@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background grid/map lines hinting at territory/land -->
+  <g opacity="0.15" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="3 3">
+    <line x1="40" y1="60" x2="200" y2="60" />
+    <line x1="40" y1="120" x2="200" y2="120" />
+    <line x1="40" y1="180" x2="200" y2="180" />
+    <line x1="80" y1="40" x2="80" y2="200" />
+    <line x1="140" y1="40" x2="140" y2="200" />
+    <line x1="180" y1="40" x2="180" y2="200" />
+  </g>
+
+  <!-- Central Physical Object: A stylized landmass/territory shaped like an irregular island/continent -->
+  <g id="territory-landmass">
+    <!-- Base continent shadow -->
+    <path d="M 75,70 Q 110,50 145,65 Q 185,85 175,130 Q 165,185 125,180 Q 80,175 65,135 Q 50,90 75,70 Z" fill="#2D3748" />
+  </g>
+
+  <!-- The Division/Partition Effect: jagged tearing gap across the land -->
+  <g id="fracture-lines">
+    <!-- Glowing split fissures (orange/gold accent for focal meaning) -->
+    <path d="M 120,40 L 110,75 L 135,100 L 100,135 L 125,170 L 115,200" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+    <path d="M 75,100 L 110,75" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+    <path d="M 135,100 L 170,115" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+    <path d="M 100,135 L 70,155" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  </g>
+
+  <!-- Segmented Landmass Pieces (Guafen - being carved up and pulled apart) -->
+  <!-- Top-Left Segment -->
+  <path d="M 75,70 Q 110,50 120,40 L 110,75 L 135,100 L 75,100 Q 60,85 75,70 Z" fill="#3B82F6" opacity="0.85" transform="translate(-8, -6)"/>
+  <!-- Top-Right Segment -->
+  <path d="M 120,40 Q 145,65 185,85 L 170,115 L 135,100 L 110,75 Z" fill="#EF4444" opacity="0.85" transform="translate(10, -6)"/>
+  <!-- Bottom-Left Segment -->
+  <path d="M 75,100 L 100,135 L 70,155 Q 50,130 75,100 Z" fill="#10B981" opacity="0.85" transform="translate(-10, 4)"/>
+  <!-- Bottom-Right Segment -->
+  <path d="M 135,100 L 125,170 L 115,200 Q 125,180 165,185 Q 185,145 170,115 Z" fill="#8B5CF6" opacity="0.85" transform="translate(8, 6)"/>
+
+  <!-- External Pulling Forces (Arrows indicating aggressive partition/scrambling) -->
+  <g id="pulling-arrows" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5">
+    <!-- Top-Left Arrow -->
+    <path d="M 50,45 L 35,30 M 35,30 L 45,30 M 35,30 L 35,40" fill="none" stroke="#F59E0B" />
+    <!-- Top-Right Arrow -->
+    <path d="M 190,45 L 205,30 M 205,30 L 195,30 M 205,30 L 205,40" fill="none" stroke="#F59E0B" />
+    <!-- Bottom-Left Arrow -->
+    <path d="M 45,195 L 30,210 M 30,210 L 40,210 M 30,210 L 30,200" fill="none" stroke="#F59E0B" />
+    <!-- Bottom-Right Arrow -->
+    <path d="M 195,195 L 210,210 M 210,210 L 200,210 M 210,210 L 210,200" fill="none" stroke="#F59E0B" />
+  </g>
+
+  <!-- Central focal sparks / fracture points -->
+  <circle cx="120" cy="100" r="3" fill="#FFFFFF" />
+  <circle cx="110" cy="75" r="2" fill="#F59E0B" />
+  <circle cx="125" cy="170" r="2" fill="#F59E0B" />
+</svg>

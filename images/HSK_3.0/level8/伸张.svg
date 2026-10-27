@@ -1,0 +1,47 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Illustration for "伸张" (Upholding/Executing Justice) -->
+  <!-- Central Physical Object: Scales of Justice mounted on a majestic pillar, elevated high, glowing with golden authority -->
+  
+  <g transform="translate(0, 0)">
+    <!-- Background Glow for Authority / Focus -->
+    <circle cx="120" cy="115" r="65" fill="#2E3548" opacity="0.4"/>
+    <circle cx="120" cy="115" r="45" fill="#FFC107" opacity="0.08"/>
+
+    <!-- Scales of Justice Structure -->
+    <!-- Base -->
+    <path d="M95 190 L145 190 L140 180 L100 180 Z" fill="#6C7A89"/>
+    <!-- Pillar -->
+    <rect x="115" y="85" width="10" height="95" rx="3" fill="#95A5A6"/>
+    <!-- Pillar Capital & Base Collar -->
+    <rect x="107" y="80" width="26" height="8" rx="2" fill="#BDC3C7"/>
+    <rect x="110" y="175" width="20" height="6" rx="1" fill="#BDC3C7"/>
+
+    <!-- Top Crown / Connector -->
+    <circle cx="120" cy="78" r="8" fill="#FFC107"/>
+    <circle cx="120" cy="78" r="5" fill="#E67E22"/>
+
+    <!-- Beam -->
+    <path d="M70 85 L170 85 L165 93 L75 93 Z" fill="#FFC107"/>
+    <circle cx="70" cy="89" r="4" fill="#E67E22"/>
+    <circle cx="170" cy="89" r="4" fill="#E67E22"/>
+
+    <!-- Left Chain & Pan (Balanced/Executing Right) -->
+    <path d="M78 93 L70 130 L86 130 Z" fill="none" stroke="#BDC3C7" stroke-width="2"/>
+    <path d="M70 130 L86 130" stroke="#BDC3C7" stroke-width="2"/>
+    <path d="M62 130 C62 142 94 142 94 130 Z" fill="#FFC107"/>
+    
+    <!-- Right Chain & Pan (Upholding, glowing upward motion accent) -->
+    <path d="M162 93 L154 130 L170 130 Z" fill="none" stroke="#BDC3C7" stroke-width="2"/>
+    <path d="M154 130 L170 130" stroke="#BDC3C7" stroke-width="2"/>
+    <path d="M146 130 C146 142 178 142 178 130 Z" fill="#FFC107"/>
+
+    <!-- Dynamic Upward Motion Spark / Justice Accent -->
+    <path d="M120 40 L125 55 L140 55 L128 65 L133 80 L120 70 L107 80 L112 65 L100 55 L115 55 Z" fill="#FFC107" opacity="0.9"/>
+    
+    <!-- Supporting Base / Gavel handle hint at bottom representing judicial execution -->
+    <rect x="80" y="200" width="80" height="8" rx="4" fill="#3A4454"/>
+  </g>
+</svg>

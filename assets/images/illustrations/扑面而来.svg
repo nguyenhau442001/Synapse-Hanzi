@@ -1,0 +1,18 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Tropical Palm Leaves representing the environment -->
+  <path d="M120 120 L180 60 C190 50 200 50 210 60 C220 70 210 80 200 90 L140 150 Z" fill="#FFB84D" opacity="0.8"/>
+  <path d="M120 120 L160 50 C170 40 180 40 190 50 C200 60 190 70 180 80 L130 130 Z" fill="#FFD180" opacity="0.6"/>
+  
+  <!-- Gust of wind/air representation -->
+  <path d="M20 100 Q60 80 100 120 T180 140" stroke="#E0E0E0" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <path d="M30 130 Q70 110 110 150 T190 170" stroke="#E0E0E0" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.3"/>
+  
+  <!-- Silhouette of a person stepping forward into the air -->
+  <path d="M60 180 C60 150 70 130 90 130 C110 130 120 150 120 180" fill="#F5F5F5"/>
+  <circle cx="90" cy="110" r="15" fill="#F5F5F5"/>
+  
+  <!-- Tropical sun/warmth accent -->
+  <circle cx="190" cy="50" r="20" fill="#FFB84D"/>
+</svg>

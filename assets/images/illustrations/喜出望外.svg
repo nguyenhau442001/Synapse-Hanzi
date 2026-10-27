@@ -1,0 +1,65 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 115)">
+    <!-- Floor shadow -->
+    <ellipse cx="0" cy="85" rx="60" ry="12" fill="#101217"/>
+    
+    <!-- Elderly Mother Character (Representing the person experiencing 喜出望外) -->
+    <!-- Chair / Seating -->
+    <path d="M-45 50 L-40 85 L40 85 L45 50 Z" fill="#2D333F"/>
+    <rect x="-35" y="10" width="70" height="45" rx="8" fill="#363E4D"/>
+    
+    <!-- Mother's Body -->
+    <path d="M-30 85 C-30 65 -15 55 0 55 C15 55 30 65 30 85 Z" fill="#3B5998"/>
+    <!-- Head and Face -->
+    <circle cx="0" cy="20" r="18" fill="#F4D0B3"/>
+    <!-- Hair bun -->
+    <circle cx="0" cy="3" r="8" fill="#8892A0"/>
+    <path d="M-15 18 C-15 10 15 10 15 18" fill="none" stroke="#8892A0" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Expressive Face: Wide open joyful eyes and joyful open mouth -->
+    <circle cx="-6" cy="18" r="2" fill="#2D333F"/>
+    <circle cx="6" cy="18" r="2" fill="#2D333F"/>
+    <!-- Eyebrows raised high in surprise/joy -->
+    <path d="M-9 12 C-7 9 -4 9 -2 11" fill="none" stroke="#2D333F" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M9 12 C7 9 4 9 2 11" fill="none" stroke="#2D333F" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Open wide happy smile -->
+    <path d="M-5 24 C-5 30 5 30 5 24 Z" fill="#2D333F"/>
+    
+    <!-- Arms raised in sudden immense joy (望外 surprise & extreme happiness) -->
+    <path d="M-25 60 C-35 40 -55 30 -65 35" fill="none" stroke="#3B5998" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="-68" cy="36" r="5" fill="#F4D0B3"/>
+    
+    <path d="M25 60 C35 40 55 30 65 35" fill="none" stroke="#3B5998" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="68" cy="36" r="5" fill="#F4D0B3"/>
+
+    <!-- The Unexpected Visitor (The Son arriving at the door) -->
+    <!-- Doorway frame background element -->
+    <path d="M80 -60 L110 -60 L110 85 L80 85 Z" fill="#15171C"/>
+    
+    <!-- Visitor Silhouette/Figure stepping in unexpectedly -->
+    <g transform="translate(95, 20)">
+      <!-- Body -->
+      <path d="M-12 60 C-12 40 -6 30 0 30 C6 30 12 40 12 60 Z" fill="#E67E22"/>
+      <!-- Head -->
+      <circle cx="0" cy="10" r="14" fill="#F4D0B3"/>
+      <!-- Hair -->
+      <path d="M-12 5 C-10 -2 10 -2 12 5 Z" fill="#2D333F"/>
+      <!-- Happy welcoming expression -->
+      <path d="M-3 14 C-1 16 1 16 3 14" fill="none" stroke="#2D333F" stroke-width="1.5" stroke-linecap="round"/>
+      <!-- Arm holding luggage or welcoming -->
+      <path d="M10 40 L25 50" fill="none" stroke="#E67E22" stroke-width="6" stroke-linecap="round"/>
+      <!-- Small travel bag (representing 20 years journey/faraway) -->
+      <rect x="20" y="45" width="16" height="20" rx="3" fill="#D35400"/>
+      <path d="M24 45 V42 C24 40 28 40 28 42 V45" fill="none" stroke="#A04000" stroke-width="2"/>
+    </g>
+
+    <!-- Sparkles / Radiance of pure unexpected joy -->
+    <g fill="#F1C40F">
+      <path d="M-50 -15 L-47 -25 L-44 -15 L-34 -12 L-44 -9 L-47 1 L-50 -9 L-60 -12 Z"/>
+      <path d="M-25 -45 L-23 -52 L-21 -45 L-14 -43 L-21 -41 L-23 -34 L-25 -41 L-32 -43 Z"/>
+      <path d="M40 -20 L42 -27 L44 -20 L51 -18 L44 -16 L42 -9 L40 -16 L33 -18 Z"/>
+    </g>
+  </g>
+</svg>

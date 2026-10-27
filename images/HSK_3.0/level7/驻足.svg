@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground -->
+  <path d="M0 200 L240 200" stroke="#343A46" stroke-width="2"/>
+  
+  <!-- Street Performer (Violin) -->
+  <g transform="translate(160, 140)">
+    <circle cx="0" cy="-40" r="12" fill="#FFC107"/>
+    <path d="M0 -28 L0 -5 M-10 -15 L10 -15" stroke="#FFC107" stroke-width="4" stroke-linecap="round"/>
+    <path d="M-5 5 L-10 25 M5 5 L10 25" stroke="#FFC107" stroke-width="4" stroke-linecap="round"/>
+    <path d="M-15 -20 L15 -20" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Pedestrian "驻足" (Stopping) -->
+  <g transform="translate(80, 140)">
+    <!-- Body -->
+    <circle cx="0" cy="-40" r="12" fill="#4FC3F7"/>
+    <path d="M0 -28 L0 -5 M-10 -15 L10 -15" stroke="#4FC3F7" stroke-width="4" stroke-linecap="round"/>
+    <!-- Legs in stopping stance -->
+    <path d="M-5 5 L-15 25 M5 5 L5 25" stroke="#4FC3F7" stroke-width="4" stroke-linecap="round"/>
+    <!-- Motion lines indicating sudden stop -->
+    <path d="M-25 -10 L-15 -10 M-30 -20 L-20 -20" stroke="#FFC107" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  </g>
+
+  <!-- Musical notes floating to indicate sound -->
+  <path d="M130 110 Q135 100 140 110" stroke="#FFC107" stroke-width="2" fill="none"/>
+  <path d="M145 100 Q150 90 155 100" stroke="#FFC107" stroke-width="2" fill="none"/>
+</svg>

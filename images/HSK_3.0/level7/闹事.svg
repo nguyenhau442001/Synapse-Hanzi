@@ -1,0 +1,71 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for 闹事 (causing trouble, disturbance, commotion) -->
+  <g transform="translate(0, 0)">
+    <!-- Warning/Commotion Background Burst Effect -->
+    <path d="M120 45 L133 75 L165 72 L141 95 L151 125 L120 108 L89 125 L99 95 L75 72 L107 75 Z" fill="#FF5252" opacity="0.15"/>
+    <path d="M120 60 L128 80 L150 78 L133 94 L140 115 L120 102 L100 115 L107 94 L90 78 L112 80 Z" fill="#FF5252" opacity="0.25"/>
+
+    <!-- Dynamic disruption lines / Sound waves / Chaos indicators -->
+    <path d="M45 90 Q60 70 75 90" stroke="#FF5252" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <path d="M165 90 Q180 70 195 90" stroke="#FF5252" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <path d="M55 130 Q70 110 85 130" stroke="#FFA726" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+    <path d="M155 130 Q170 110 185 130" stroke="#FFA726" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+
+    <!-- Central Character 1 (Aggressive / Shouting posture) -->
+    <g transform="translate(85, 110)">
+      <!-- Body/Torso -->
+      <path d="M-15 50 L-10 20 L15 20 L20 50 Z" fill="#37474F"/>
+      <!-- Head -->
+      <circle cx="2" cy="5" r="12" fill="#FFCCBC"/>
+      <!-- Hair -->
+      <path d="M-10 -2 Q2 -8 14 -2 L12 4 L-8 4 Z" fill="#37474F"/>
+      <!-- Raised aggressive arm pointing/shouting -->
+      <path d="M-10 25 L-25 10 L-18 5 L-5 20 Z" fill="#FFCCBC"/>
+      <path d="M15 25 L35 15 L38 22 L20 32 Z" fill="#FFCCBC"/>
+      <!-- Open shouting mouth expression -->
+      <circle cx="8" cy="8" r="2.5" fill="#B71C1C"/>
+    </g>
+
+    <!-- Central Character 2 (Confrontational stance) -->
+    <g transform="translate(145, 110)">
+      <!-- Body/Torso -->
+      <path d="M-15 50 L-10 20 L15 20 L20 50 Z" fill="#455A64"/>
+      <!-- Head -->
+      <circle cx="-2" cy="5" r="12" fill="#FFCCBC"/>
+      <!-- Hair -->
+      <path d="M-12 -2 Q-2 -8 10 -2 L8 4 L-10 4 Z" fill="#263238"/>
+      <!-- Raised arm -->
+      <path d="M-15 25 L-30 15 L-25 8 L-10 20 Z" fill="#FFCCBC"/>
+      <path d="M10 25 L22 15 L28 20 L15 32 Z" fill="#FFCCBC"/>
+    </g>
+
+    <!-- Overturned Object / Chaos Element (Chair flying/tipped over) -->
+    <g transform="translate(120, 150) rotate(-25)">
+      <rect x="-12" y="-12" width="24" height="24" rx="4" fill="none" stroke="#FFA726" stroke-width="4"/>
+      <line x1="-12" y1="-12" x2="-22" y2="-22" stroke="#FFA726" stroke-width="3" stroke-linecap="round"/>
+      <line x1="12" y1="-12" x2="22" y2="-22" stroke="#FFA726" stroke-width="3" stroke-linecap="round"/>
+      <line x1="-12" y1="12" x2="-22" y2="22" stroke="#FFA726" stroke-width="3" stroke-linecap="round"/>
+      <line x1="12" y1="12" x2="22" y2="22" stroke="#FFA726" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Flying Papers / Messy debris representing commotion -->
+    <path d="M70 155 L85 145 L92 158 L77 168 Z" fill="#ECEFF1" opacity="0.9"/>
+    <path d="M160 145 L175 155 L168 168 L153 158 Z" fill="#CFD8DC" opacity="0.9"/>
+
+    <!-- High-impact Focal Warning Symbol (Megaphone / Disturbance symbol) -->
+    <g transform="translate(120, 58)">
+      <!-- Megaphone Body -->
+      <path d="M-10 -8 L10 -4 L10 4 L-10 8 Z" fill="#FFA726"/>
+      <path d="M10 -8 L18 -12 L18 12 L10 8 Z" fill="#FF7043"/>
+      <rect x="-14" y="-6" width="4" height="12" fill="#E65100" rx="1"/>
+      <path d="M-12 0 L-22 0" stroke="#FFA726" stroke-width="3" stroke-linecap="round"/>
+      
+      <!-- Sound waves emanating from megaphone -->
+      <path d="M22 -8 Q27 0 22 8" stroke="#FF5252" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+      <path d="M26 -13 Q33 0 26 13" stroke="#FF5252" stroke-width="2" stroke-linecap="round" fill="none"/>
+    </g>
+  </g>
+</svg>

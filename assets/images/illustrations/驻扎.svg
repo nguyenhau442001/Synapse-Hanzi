@@ -1,0 +1,32 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Mountain Background -->
+  <path d="M0 240 L0 140 L60 80 L120 160 L180 100 L240 160 L240 240 Z" fill="#2D343E"/>
+  <path d="M60 80 L120 160 L100 180 L40 120 Z" fill="#3D4754"/>
+  
+  <!-- Snow/Wind effects -->
+  <path d="M10 100 L30 110 M50 90 L70 100 M150 120 L170 130" stroke="#A0AEC0" stroke-width="1" stroke-linecap="round"/>
+  
+  <!-- The Outpost (Shelter) -->
+  <rect x="140" y="130" width="60" height="50" rx="4" fill="#E67E22"/>
+  <rect x="150" y="140" width="15" height="15" fill="#1A1D24"/>
+  <rect x="175" y="140" width="15" height="15" fill="#1A1D24"/>
+  
+  <!-- Soldier Character -->
+  <g transform="translate(90, 140)">
+    <!-- Body -->
+    <path d="M20 70 L20 40 C20 30 30 25 40 25 C50 25 60 30 60 40 L60 70" fill="#F39C12"/>
+    <!-- Head -->
+    <circle cx="40" cy="20" r="12" fill="#F1C40F"/>
+    <!-- Action: Planting a flag/marker to signify stationing -->
+    <line x1="55" y1="35" x2="80" y2="10" stroke="#BDC3C7" stroke-width="4" stroke-linecap="round"/>
+    <path d="M80 10 L100 20 L80 30 Z" fill="#E74C3C"/>
+    <!-- Legs -->
+    <rect x="25" y="70" width="8" height="30" fill="#D35400"/>
+    <rect x="47" y="70" width="8" height="30" fill="#D35400"/>
+  </g>
+  
+  <!-- Ground -->
+  <rect x="0" y="180" width="240" height="60" fill="#252A34"/>
+</svg>

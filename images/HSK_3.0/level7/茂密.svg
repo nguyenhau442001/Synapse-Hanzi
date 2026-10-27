@@ -1,0 +1,50 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(12, 12)">
+    <!-- Background mountain silhouettes (崇山峻岭) -->
+    <path d="M 12 180 L 50 110 L 80 150 L 130 90 L 180 140 L 216 110 L 216 190 L 12 190 Z" fill="#222831" opacity="0.7"/>
+    <path d="M 12 190 L 60 130 L 100 170 L 160 110 L 216 165 L 216 216 L 12 216 Z" fill="#2A323D"/>
+
+    <!-- Dense interconnected canopy layers representing 茂密 (Lush, thick, dense jungle) -->
+    <!-- Deepest background foliage -->
+    <circle cx="60" cy="110" r="35" fill="#1E3A2F"/>
+    <circle cx="100" cy="95" r="45" fill="#1E3A2F"/>
+    <circle cx="150" cy="100" r="40" fill="#1E3A2F"/>
+    <circle cx="180" cy="120" r="30" fill="#1E3A2F"/>
+    
+    <!-- Mid background foliage -->
+    <circle cx="45" cy="130" r="30" fill="#234E3C"/>
+    <circle cx="85" cy="120" r="35" fill="#234E3C"/>
+    <circle cx="125" cy="115" r="40" fill="#234E3C"/>
+    <circle cx="165" cy="135" r="35" fill="#234E3C"/>
+
+    <!-- Foreground overlapping lush tree crowns (Um tùm, rậm rạp) -->
+    <circle cx="35" cy="145" r="28" fill="#2D6A4F"/>
+    <circle cx="70" cy="135" r="32" fill="#317758"/>
+    <circle cx="110" cy="130" r="38" fill="#388C66"/>
+    <circle cx="150" cy="140" r="35" fill="#317758"/>
+    <circle cx="185" cy="150" r="28" fill="#2D6A4F"/>
+
+    <!-- Overlapping intricate organic canopy details & highlights (Tươi tốt) -->
+    <path d="M 20 160 C 20 140, 45 130, 60 145 C 75 130, 95 140, 100 155 C 115 140, 140 145, 145 160 C 160 145, 190 155, 190 175 Z" fill="#40916C"/>
+    <path d="M 40 170 C 50 155, 75 155, 85 170 C 95 155, 125 155, 135 170 C 145 160, 170 165, 175 175 Z" fill="#52B788"/>
+
+    <!-- Dense overlapping tree trunks (Cổ xưa nguyên sinh) -->
+    <rect x="55" y="150" width="8" height="66" fill="#1B263B" rx="3"/>
+    <rect x="95" y="140" width="10" height="76" fill="#1B263B" rx="3"/>
+    <rect x="135" y="145" width="9" height="71" fill="#1B263B" rx="3"/>
+    <rect x="75" y="160" width="6" height="56" fill="#0D1B2A" rx="2"/>
+    <rect x="120" y="155" width="7" height="61" fill="#0D1B2A" rx="2"/>
+
+    <!-- Vibrant organic highlights / Sunlight peering through (Sinh động / Dạt dào sức sống) -->
+    <circle cx="95" cy="105" r="10" fill="#74C69D" opacity="0.6"/>
+    <circle cx="130" cy="100" r="8" fill="#74C69D" opacity="0.5"/>
+    <circle cx="65" cy="115" r="7" fill="#74C69D" opacity="0.5"/>
+    <circle cx="160" cy="120" r="9" fill="#74C69D" opacity="0.5"/>
+
+    <!-- Focus element: Glowing golden accent light beam cutting through the dense canopy (Chất lượng giáo dục hiện đại, cao cấp) -->
+    <path d="M 100 10 L 70 110 L 90 110 L 120 10 Z" fill="#FFB703" opacity="0.15"/>
+    <path d="M 125 10 L 105 130 L 125 130 L 145 10 Z" fill="#FFB703" opacity="0.1"/>
+  </g>
+</svg>

@@ -271,36 +271,29 @@ function renderMonthGridHtml(grid) {
 function renderMonthView(activity) {
   const { year, month } = historyModalCursor;
   const grid = buildMonthGrid(activity.days, year, month);
-  const now = new Date();
-  const isCurrentMonth = year === now.getFullYear() && month === now.getMonth();
   const studiedDays = grid.filter(c => c.inMonth && c.studied).length;
   const totalMinutes = grid.filter(c => c.inMonth).reduce((sum, c) => sum + c.minutes, 0);
 
   return `
-    <div class="history-month-nav">
-      <button class="history-month-btn" type="button" onclick="changeHistoryCursor(-1)" aria-label="Tháng trước">‹</button>
-      <div class="history-month-title">Tháng ${month + 1} · ${year}</div>
-      <button class="history-month-btn" type="button" onclick="changeHistoryCursor(1)" ${isCurrentMonth ? 'disabled' : ''} aria-label="Tháng sau">›</button>
-    </div>
     ${renderMonthGridHtml(grid)}
-    <div class="history-legend">
-      <span>Ít</span>
-      <span class="history-legend-swatch bucket-0"></span>
-      <span class="history-legend-swatch bucket-1"></span>
-      <span class="history-legend-swatch bucket-2"></span>
-      <span class="history-legend-swatch bucket-3"></span>
-      <span class="history-legend-swatch bucket-4"></span>
-      <span>Nhiều</span>
-    </div>
-    <div class="history-summary">${studiedDays} ngày học · ${formatStudyDuration(totalMinutes)}</div>`;
+    <div class="history-footer">
+      <div class="history-summary">${studiedDays} ngày học · ${formatStudyDuration(totalMinutes)}</div>
+      <div class="history-legend">
+        <span>Ít</span>
+        <span class="history-legend-swatch bucket-0"></span>
+        <span class="history-legend-swatch bucket-1"></span>
+        <span class="history-legend-swatch bucket-2"></span>
+        <span class="history-legend-swatch bucket-3"></span>
+        <span class="history-legend-swatch bucket-4"></span>
+        <span>Nhiều</span>
+      </div>
+    </div>`;
 }
 
 const MINI_MONTH_LABELS = ['Th 1', 'Th 2', 'Th 3', 'Th 4', 'Th 5', 'Th 6', 'Th 7', 'Th 8', 'Th 9', 'Th 10', 'Th 11', 'Th 12'];
 
 function renderYearView(activity) {
   const { year } = historyModalCursor;
-  const now = new Date();
-  const isCurrentYear = year === now.getFullYear();
   const summary = yearSummary(activity.days, year);
 
   const months = Array.from({ length: 12 }, (_, month) => {
@@ -317,13 +310,19 @@ function renderYearView(activity) {
   }).join('');
 
   return `
-    <div class="history-month-nav">
-      <button class="history-month-btn" type="button" onclick="changeHistoryCursor(-1)" aria-label="Năm trước">‹</button>
-      <div class="history-month-title">${year}</div>
-      <button class="history-month-btn" type="button" onclick="changeHistoryCursor(1)" ${isCurrentYear ? 'disabled' : ''} aria-label="Năm sau">›</button>
-    </div>
     <div class="history-year-grid">${months}</div>
-    <div class="history-summary">${summary.studiedDays} ngày học · ${formatStudyDuration(summary.totalMinutes)}</div>`;
+    <div class="history-footer">
+      <div class="history-summary">${summary.studiedDays} ngày học · ${formatStudyDuration(summary.totalMinutes)}</div>
+      <div class="history-legend">
+        <span>Ít</span>
+        <span class="history-legend-swatch bucket-0"></span>
+        <span class="history-legend-swatch bucket-1"></span>
+        <span class="history-legend-swatch bucket-2"></span>
+        <span class="history-legend-swatch bucket-3"></span>
+        <span class="history-legend-swatch bucket-4"></span>
+        <span>Nhiều</span>
+      </div>
+    </div>`;
 }
 
 function renderHistoryModalBody() {
@@ -334,6 +333,23 @@ function renderHistoryModalBody() {
   const stats = streakStats(activity.days);
   const totalMinutesAllTime = Object.values(activity.days).reduce((sum, entry) => sum + daySeconds(entry) / 60, 0);
 
+  const now = new Date();
+  const isMonth = historyModalView === 'month';
+  const isCurrentMonth = historyModalCursor.year === now.getFullYear() && historyModalCursor.month === now.getMonth();
+  const isCurrentYear = historyModalCursor.year === now.getFullYear();
+
+  const navHtml = isMonth ? `
+    <div class="history-month-nav">
+      <button class="history-month-btn" type="button" onclick="changeHistoryCursor(-1)" aria-label="Tháng trước">‹</button>
+      <div class="history-month-title">Tháng ${historyModalCursor.month + 1} · ${historyModalCursor.year}</div>
+      <button class="history-month-btn" type="button" onclick="changeHistoryCursor(1)" ${isCurrentMonth ? 'disabled' : ''} aria-label="Tháng sau">›</button>
+    </div>` : `
+    <div class="history-month-nav">
+      <button class="history-month-btn" type="button" onclick="changeHistoryCursor(-1)" aria-label="Năm trước">‹</button>
+      <div class="history-month-title">${historyModalCursor.year}</div>
+      <button class="history-month-btn" type="button" onclick="changeHistoryCursor(1)" ${isCurrentYear ? 'disabled' : ''} aria-label="Năm sau">›</button>
+    </div>`;
+
   body.innerHTML = `
     <div class="history-kpi-row">
       <div class="history-kpi"><strong>🔥 ${stats.current}</strong><span>Chuỗi hiện tại</span></div>
@@ -341,18 +357,22 @@ function renderHistoryModalBody() {
       <div class="history-kpi"><strong>📅 ${stats.totalDaysStudied}</strong><span>Ngày đã học</span></div>
       <div class="history-kpi"><strong>⏱ ${formatStudyDuration(totalMinutesAllTime)}</strong><span>Tổng thời gian</span></div>
     </div>
-    <div class="history-view-switcher" role="tablist">
-      <button type="button" role="tab" class="history-view-btn ${historyModalView === 'month' ? 'active' : ''}" aria-selected="${historyModalView === 'month'}" onclick="setHistoryView('month')">Tháng</button>
-      <button type="button" role="tab" class="history-view-btn ${historyModalView === 'year' ? 'active' : ''}" aria-selected="${historyModalView === 'year'}" onclick="setHistoryView('year')">Năm</button>
+    <div class="history-toolbar">
+      <div class="history-view-switcher" role="tablist">
+        <button type="button" role="tab" class="history-view-btn ${isMonth ? 'active' : ''}" aria-selected="${isMonth}" onclick="setHistoryView('month')">Tháng</button>
+        <button type="button" role="tab" class="history-view-btn ${!isMonth ? 'active' : ''}" aria-selected="${!isMonth}" onclick="setHistoryView('year')">Năm</button>
+      </div>
+      ${navHtml}
     </div>
     <div class="history-view-body">
-      ${historyModalView === 'month' ? renderMonthView(activity) : renderYearView(activity)}
+      ${isMonth ? renderMonthView(activity) : renderYearView(activity)}
     </div>`;
 }
 
 function closeHistoryModal() {
   const overlay = document.getElementById('historyOverlay');
   if (overlay) overlay.remove();
+  delete document.body.dataset.historyModalOpen;
   document.removeEventListener('keydown', handleHistoryModalKeydown);
 }
 
@@ -377,6 +397,7 @@ function showHistoryModal() {
   overlay.addEventListener('click', e => { if (e.target === overlay) closeHistoryModal(); });
   document.body.appendChild(overlay);
   document.addEventListener('keydown', handleHistoryModalKeydown);
+  document.body.dataset.historyModalOpen = 'true';
   renderHistoryModalBody();
 }
 
@@ -638,10 +659,9 @@ function goBackToPicker() {
   setActiveStudyWord(null);
   document.body.classList.remove('study-mode');
   document.body.classList.remove('flashcard-study-mode');
+  document.documentElement.classList.remove('flashcard-study-mode');
   const wasTopic = currentLevel && LEVELS[currentLevel] && LEVELS[currentLevel].isTopic;
   document.getElementById('screenCards').style.display = 'none';
-  const studyLevelBadge = document.getElementById('studyLevelBadge');
-  if (studyLevelBadge) studyLevelBadge.textContent = '';
   const vocabHub = document.getElementById('screenVocabHub');
   if (vocabHub) vocabHub.style.display = '';
   const auxCol = document.querySelector('.dashboard-aux-column');
@@ -682,6 +702,7 @@ async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal = false
   if (typeof closeAllStudyDrawers === 'function') closeAllStudyDrawers();
   document.body.classList.add('study-mode');
   document.body.classList.add('flashcard-study-mode');
+  document.documentElement.classList.add('flashcard-study-mode');
   window.scrollTo({ top: 0, behavior: 'instant' });
   const wsMid = document.getElementById('workstationMiddle');
   if (wsMid) wsMid.scrollTop = 0;
@@ -696,8 +717,6 @@ async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal = false
   overviewStatus = 'all';
   try { localStorage.setItem(LAST_LEVEL_KEY, level); } catch (e) {}
   document.getElementById('appTitle').textContent = LEVELS[level].label + ' · Synapse Hanzi';
-  const studyLevelBadge = document.getElementById('studyLevelBadge');
-  if (studyLevelBadge && LEVELS[level]) studyLevelBadge.textContent = LEVELS[level].label;
   document.getElementById('primaryTabs').style.display = 'none';
   document.getElementById('pickerControls').style.display = 'none';
   document.getElementById('learningDashboard').style.display = 'none';

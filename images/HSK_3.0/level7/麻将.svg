@@ -1,0 +1,33 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Mahjong Tile 1 (The main focus) -->
+  <g transform="translate(70, 80)">
+    <rect width="60" height="80" rx="6" fill="#F4F4F4"/>
+    <rect x="4" y="4" width="52" height="72" rx="3" fill="#E0E0E0"/>
+    <path d="M20 25h20v10h-20zM20 45h20v10h-20z" fill="#D32F2F"/>
+    <path d="M30 20v40" stroke="#D32F2F" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Mahjong Tile 2 (Stacked) -->
+  <g transform="translate(110, 100)">
+    <rect width="60" height="80" rx="6" fill="#FFFFFF"/>
+    <rect x="4" y="4" width="52" height="72" rx="3" fill="#F0F0F0"/>
+    <circle cx="30" cy="40" r="12" fill="#FFB300"/>
+    <circle cx="30" cy="40" r="6" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Mahjong Tile 3 (Side) -->
+  <g transform="translate(150, 120)">
+    <rect width="60" height="80" rx="6" fill="#D1D1D1"/>
+    <rect x="4" y="4" width="52" height="72" rx="3" fill="#BDBDBD"/>
+    <path d="M15 20h30v5h-30zM15 35h30v5h-30zM15 50h30v5h-30z" fill="#263238"/>
+  </g>
+
+  <!-- Decorative elements: Tea cup -->
+  <g transform="translate(30, 150)">
+    <path d="M10 20h40l-5 30h-30z" fill="#FFB300"/>
+    <path d="M15 15h30v5h-30z" fill="#FFA000"/>
+    <path d="M25 5c0-5 10-5 10 0" stroke="#8BC34A" stroke-width="2" fill="none"/>
+  </g>
+</svg>

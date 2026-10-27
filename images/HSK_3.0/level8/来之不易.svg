@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle glow representing hard-earned victory/achievement -->
+  <circle cx="120" cy="120" r="70" fill="#FFB800" opacity="0.08"/>
+
+  <!-- Physical Object representing "来之不易" (A hard-won prize/trophy/medal earned through intense struggle) -->
+  <!-- We center a distinctive, iconic object: A majestic golden laurel wreath and trophy cup standing firmly on a multi-tiered rock/stone base, symbolizing supreme achievement won through arduous paths. -->
+  
+  <g transform="translate(0, 5)">
+    <!-- Rocky Foundation / Obstacles Overcome (Base) -->
+    <path d="M 70 170 L 90 145 L 110 160 L 130 140 L 150 155 L 170 145 L 185 170 Z" fill="#2C323D"/>
+    <path d="M 80 170 L 100 155 L 120 170 L 140 150 L 160 170 Z" fill="#3A4250"/>
+    <line x1="75" y1="170" x2="165" y2="170" stroke="#FFB800" stroke-width="2" stroke-dasharray="4 2" opacity="0.6"/>
+
+    <!-- Trophy Pedestal -->
+    <rect x="100" y="130" width="40" height="15" rx="3" fill="#4E5D6C"/>
+
+    <!-- Trophy Cup Handles -->
+    <path d="M 95 85 C 75 85 75 115 98 120" fill="none" stroke="#FFB800" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 145 85 C 165 85 165 115 142 120" fill="none" stroke="#FFB800" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Trophy Cup Body -->
+    <path d="M 95 75 L 145 75 C 145 110 135 130 120 130 C 105 130 95 110 95 75 Z" fill="#E5A900"/>
+    <path d="M 95 75 L 145 75 L 142 85 L 98 85 Z" fill="#FFD000"/>
+
+    <!-- Trophy Stem & Base -->
+    <rect x="113" y="125" width="14" height="10" fill="#E5A900"/>
+
+    <!-- Laurel Wreath surrounding the Trophy (Victory) -->
+    <!-- Left Leaves -->
+    <path d="M 90 110 C 70 110 60 90 70 70 C 75 60 85 50 95 45" fill="none" stroke="#2ED573" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 72 95 C 65 92 63 85 68 80" fill="#2ED573"/>
+    <path d="M 78 75 C 72 70 72 63 78 60" fill="#2ED573"/>
+    <path d="M 88 58 C 83 52 86 45 92 44" fill="#2ED573"/>
+
+    <!-- Right Leaves -->
+    <path d="M 150 110 C 170 110 180 90 170 70 C 165 60 155 50 145 45" fill="none" stroke="#2ED573" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 168 95 C 175 92 177 85 172 80" fill="#2ED573"/>
+    <path d="M 162 75 C 168 70 168 63 162 60" fill="#2ED573"/>
+    <path d="M 152 58 C 157 52 154 45 148 44" fill="#2ED573"/>
+
+    <!-- Glowing Star at the Top (Summit / Ultimate Success) -->
+    <polygon points="120,30 123,38 131,39 125,44 127,52 120,48 113,52 115,44 109,39 117,38" fill="#FFD000"/>
+    <circle cx="120" cy="41" r="15" fill="#FFB800" opacity="0.2"/>
+  </g>
+</svg>

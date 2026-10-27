@@ -1,0 +1,65 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative subtle elements (blueprint grid representing professional conduct and deeds) -->
+  <g opacity="0.08" stroke="#FFFFFF" stroke-width="0.5" stroke-dasharray="4 4">
+    <line x1="40" y1="0" x2="40" y2="240"/>
+    <line x1="120" y1="0" x2="120" y2="240"/>
+    <line x1="200" y1="0" x2="200" y2="240"/>
+    <line x1="0" y1="60" x2="240" y2="60"/>
+    <line x1="0" y1="120" x2="240" y2="120"/>
+    <line x1="0" y1="180" x2="240" y2="180"/>
+  </g>
+
+  <!-- Central Character / Figure representing "Actions and Deeds" (所作所为) -->
+  <!-- Radiance / Upright presence (光明磊落) -->
+  <circle cx="120" cy="110" r="55" fill="#FFB703" opacity="0.1" />
+  
+  <!-- Figure Body (Professional, upright stance, leading by example) -->
+  <g>
+    <!-- Suit shoulders / Torso -->
+    <path d="M 85 170 L 95 130 Q 120 125 145 130 L 155 170 Z" fill="#2E4057" />
+    <path d="M 105 130 L 120 150 L 135 130 Z" fill="#1A1D24" /> <!-- Shirt collar V -->
+    <polygon points="117,138 123,138 123,160 120,165 117,160" fill="#FFB703" /> <!-- Tie -->
+
+    <!-- Head & Neck -->
+    <rect x="114" y="94" width="12" height="18" fill="#F0C6A5" rx="3" />
+    <circle cx="120" cy="84" r="16" fill="#F0C6A5" />
+    <!-- Hair -->
+    <path d="M 104 84 C 104 70, 136 70, 136 84 C 136 88, 134 82, 132 80 C 126 76, 114 76, 108 80 C 106 82, 104 88, 104 84 Z" fill="#2E4057" />
+
+    <!-- Uplifted / Active Hands showing deeds and actions -->
+    <!-- Left arm gesturing forward (leading) -->
+    <path d="M 90 140 L 65 125 L 75 115" fill="none" stroke="#2E4057" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="70" cy="120" r="6" fill="#F0C6A5" />
+
+    <!-- Right arm raised holding a glowing checkmark clipboard (representing accomplished, transparent deeds) -->
+    <path d="M 150 140 L 175 115 L 165 105" fill="none" stroke="#2E4057" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="170" cy="110" r="6" fill="#F0C6A5" />
+  </g>
+
+  <!-- Physical Object representing tangible positive actions/deeds floating in front -->
+  <!-- Transparent Clipboard / Document of honorable actions -->
+  <g transform="translate(145, 90) rotate(15)">
+    <rect x="0" y="0" width="36" height="46" rx="4" fill="#FFFFFF" opacity="0.95" />
+    <rect x="10" y="-4" width="16" height="6" rx="2" fill="#FFB703" />
+    <!-- Document lines (deeds recorded) -->
+    <line x1="6" y1="10" x2="30" y2="10" stroke="#2E4057" stroke-width="3" stroke-linecap="round" />
+    <line x1="6" y1="18" x2="24" y2="18" stroke="#2E4057" stroke-width="3" stroke-linecap="round" />
+    <line x1="6" y1="26" x2="28" y2="26" stroke="#2E4057" stroke-width="3" stroke-linecap="round" />
+    <!-- Checkmark icon -->
+    <path d="M 10 36 L 16 41 L 28 32" fill="none" stroke="#2A9D8F" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Ground reflection / Base shadow -->
+  <ellipse cx="120" cy="185" rx="45" ry="8" fill="#111318" />
+
+  <!-- Accent star/sparkle representing "光明" (open, transparent, upright character) -->
+  <g transform="translate(65, 75)">
+    <path d="M 0,-8 C 0,-2 2,0 8,0 C 2,0 0,2 0,8 C 0,2 -2,0 -8,0 C -2,0 0,-2 0,-8 Z" fill="#FFB703" />
+  </g>
+  <g transform="translate(175, 65) scale(0.6)">
+    <path d="M 0,-8 C 0,-2 2,0 8,0 C 2,0 0,2 0,8 C 0,2 -2,0 -8,0 C -2,0 0,-2 0,-8 Z" fill="#FFB703" />
+  </g>
+</svg>

@@ -1,40 +1,6 @@
-<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="240">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#1e293b"/>
-    </linearGradient>
-  </defs>
-  <rect width="240" height="240" rx="24" fill="url(#bg)"/>
-  
-  <!-- Background elements -->
-  <path d="M180 120 L240 120 L240 240 L180 240 Z" fill="#334155" opacity="0.5"/>
-  <circle cx="190" cy="50" r="20" fill="#fbbf24" opacity="0.2"/>
-  
-  <!-- The Gentleman (Mr. Wang) -->
-  <g transform="translate(60, 60)">
-    <!-- Body/Suit -->
-    <path d="M40 180 L80 180 L90 100 L30 100 Z" fill="#38bdf8"/>
-    <path d="M50 100 L60 80 L70 100 Z" fill="#1e293b"/>
-    
-    <!-- Arms -->
-    <path d="M30 110 L10 140 L20 145 L40 115 Z" fill="#38bdf8"/>
-    <path d="M90 110 L110 140 L100 145 L80 115 Z" fill="#38bdf8"/>
-    
-    <!-- Head -->
-    <circle cx="60" cy="60" r="30" fill="#fde68a"/>
-    <path d="M45 55 Q50 50 55 55 M65 55 Q70 50 75 55" stroke="#1e293b" stroke-width="2" fill="none"/>
-    <path d="M50 70 Q60 75 70 70" stroke="#ec4899" stroke-width="2" fill="none"/>
-    
-    <!-- Hair -->
-    <path d="M35 50 Q60 20 85 50 Q80 30 60 30 Q40 30 35 50" fill="#1e293b"/>
-  </g>
-  
-  <!-- Context Prop: Briefcase -->
-  <rect x="150" y="170" width="40" height="30" rx="4" fill="#fb923c"/>
-  <rect x="160" y="165" width="20" height="10" rx="2" fill="#fb923c"/>
-  
-  <!-- Decorative accents -->
-  <circle cx="30" cy="190" r="5" fill="#10b981"/>
-  <circle cx="210" cy="40" r="8" fill="#ec4899"/>
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+  <polygon points="30,40 50,48 30,56" fill="#38bdf8"/>
+  <polygon points="70,40 50,48 70,56" fill="#38bdf8"/>
+  <circle cx="50" cy="48" r="4" fill="#fbbf24"/>
 </svg>

@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambient Glow & Grid details for sleek dark-mode tech vibe -->
+  <circle cx="120" cy="115" r="70" fill="#FF5722" opacity="0.08"/>
+  <path d="M40 180 L200 180" stroke="#2A2F3D" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M40 70 L200 70" stroke="#2A2F3D" stroke-width="1" opacity="0.5"/>
+
+  <!-- Physical Object representing "急功近利" (hám lợi trước mắt, nóng vội trục lợi):
+       A mechanical trap/dispenser featuring a glowing gold coin, instantly snatching at quick rewards,
+       symbolizing impatience for rapid gain over foundational substance. -->
+
+  <!-- Stand / Base of the Apparatus -->
+  <rect x="85" y="170" width="70" height="10" rx="3" fill="#2E3646"/>
+  <path d="M100 170 L100 140 L140 140 L140 170 Z" fill="#3A4458"/>
+  
+  <!-- Mechanical Arm / Trap Mechanism -->
+  <!-- Left Jaw / Clamp (reaching eagerly) -->
+  <path d="M120 135 C100 135 75 110 70 85 C68 75 75 70 82 75 C95 85 110 110 120 120 Z" fill="#E0E6ED"/>
+  <circle cx="75" cy="80" r="5" fill="#FF5722"/>
+
+  <!-- Right Jaw / Clamp (snapping down) -->
+  <path d="M120 135 C140 135 165 110 170 85 C172 75 165 70 158 75 C145 85 130 110 120 120 Z" fill="#B0BEC5"/>
+  <circle cx="165" cy="80" r="5" fill="#FF5722"/>
+
+  <!-- Central Pivot / Gear Box -->
+  <circle cx="120" cy="135" r="16" fill="#2E3646" stroke="#4F5D73" stroke-width="3"/>
+  <circle cx="120" cy="135" r="6" fill="#FF5722"/>
+
+  <!-- The Instant Reward: Glowing Gold Coin suspended in the trap's focal point -->
+  <g transform="translate(120, 75)">
+    <!-- Outer Glow -->
+    <circle cx="0" cy="0" r="20" fill="#FFC107" opacity="0.2"/>
+    <!-- Coin Body -->
+    <circle cx="0" cy="0" r="14" fill="#FFC107"/>
+    <circle cx="0" cy="0" r="11" fill="none" stroke="#FFA000" stroke-width="1.5"/>
+    <!-- Star/Sparkle symbol inside coin -->
+    <path d="M0 -6 L1.5 -1.5 L6 0 L1.5 1.5 L0 6 L-1.5 1.5 L-6 0 L-1.5 -1.5 Z" fill="#FFE082"/>
+  </g>
+
+  <!-- Speed/Impatience Motion Streaks (visualizing "nóng vội", urgency) -->
+  <path d="M95 55 L88 45" stroke="#FF5722" stroke-width="3" stroke-linecap="round"/>
+  <path d="M145 55 L152 45" stroke="#FF5722" stroke-width="3" stroke-linecap="round"/>
+  <path d="M120 42 L120 32" stroke="#FF5722" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Spark / Hazard indicators denoting short-sighted risk -->
+  <polygon points="102,60 106,68 110,60" fill="#FF5722"/>
+  <polygon points="130,60 134,68 138,60" fill="#FF5722"/>
+</svg>

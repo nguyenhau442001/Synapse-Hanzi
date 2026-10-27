@@ -1,0 +1,33 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Road lines -->
+  <path d="M0 160 L240 160" stroke="#333842" stroke-width="4" stroke-dasharray="20 20"/>
+  
+  <!-- The pursued vehicle (simplified car) -->
+  <g transform="translate(140, 110)">
+    <path d="M0 0 L40 0 L35 20 L5 20 Z" fill="#FF4D4D"/>
+    <circle cx="10" cy="20" r="6" fill="#2D3436"/>
+    <circle cx="30" cy="20" r="6" fill="#2D3436"/>
+    <rect x="5" y="5" width="10" height="8" fill="#A0CFFF" opacity="0.6"/>
+  </g>
+  
+  <!-- The pursuing motorcycle (police) -->
+  <g transform="translate(60, 100)">
+    <!-- Motorcycle body -->
+    <path d="M10 20 L40 20 L35 35 L15 35 Z" fill="#FFB800"/>
+    <!-- Wheels -->
+    <circle cx="15" cy="35" r="8" fill="#2D3436"/>
+    <circle cx="35" cy="35" r="8" fill="#2D3436"/>
+    <!-- Police officer silhouette -->
+    <path d="M20 5 L30 5 L28 20 L22 20 Z" fill="#FFFFFF"/>
+    <circle cx="25" cy="5" r="5" fill="#FFFFFF"/>
+    <!-- Motion lines -->
+    <path d="M-10 15 L-25 15" stroke="#FFB800" stroke-width="2" stroke-linecap="round"/>
+    <path d="M-15 25 L-30 25" stroke="#FFB800" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Speed lines for dynamic effect -->
+  <path d="M100 80 L120 80" stroke="#57606F" stroke-width="2" stroke-linecap="round"/>
+  <path d="M110 90 L130 90" stroke="#57606F" stroke-width="2" stroke-linecap="round"/>
+</svg>

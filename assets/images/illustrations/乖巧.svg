@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for warm focus -->
+  <circle cx="120" cy="130" r="70" fill="#2D3139" opacity="0.4"/>
+
+  <!-- Character representing "乖巧" (polite, clever, well-behaved child greeting an elder) -->
+  <g transform="translate(0, 10)">
+    <!-- Floor line -->
+    <line x1="60" y1="185" x2="180" y2="185" stroke="#3A3F4C" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Elder / Neighbor silhouette/representation (Right side, listening/receiving the greeting) -->
+    <g transform="translate(155, 105)">
+      <!-- Elder Body -->
+      <path d="M 0 70 L 25 70 C 25 50 15 35 0 35 C -15 35 -25 50 -25 70 Z" fill="#4A5265"/>
+      <!-- Elder Head -->
+      <circle cx="0" cy="18" r="14" fill="#6C7A9C"/>
+      <!-- Elder Hair (Grey) -->
+      <path d="M -12 14 C -12 8 -6 4 0 4 C 6 4 12 8 12 14 C 12 12 10 8 0 8 C -10 8 -12 12 -12 14 Z" fill="#9DA9C3"/>
+      <!-- Welcoming hand gesture -->
+      <path d="M -15 45 C -25 45 -22 55 -15 52" stroke="#6C7A9C" stroke-width="4" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- Child / Daughter (Left side, smart, neat, bowing slightly with a polite wave/greeting) -->
+    <g transform="translate(85, 95)">
+      <!-- Skirt / Body -->
+      <path d="M -12 55 L 12 55 L 22 90 L -22 90 Z" fill="#3B82F6"/>
+      <path d="M -8 40 L 8 40 L 12 55 L -12 55 Z" fill="#60A5FA"/>
+
+      <!-- Legs -->
+      <rect x="-8" y="90" width="5" height="25" rx="2.5" fill="#E2E8F0"/>
+      <rect x="3" y="90" width="5" height="25" rx="2.5" fill="#E2E8F0"/>
+      <!-- Shoes -->
+      <ellipse cx="-5.5" cy="116" rx="5" ry="3" fill="#1E293B"/>
+      <ellipse cx="5.5" cy="116" rx="5" ry="3" fill="#1E293B"/>
+
+      <!-- Polite Bow Posture (Torso angle) -->
+      <g transform="rotate(12)">
+        <!-- Neck -->
+        <rect x="-3" y="28" width="6" height="8" fill="#F1C27D"/>
+        
+        <!-- Head (Smart, neat hair with bob cut) -->
+        <circle cx="0" cy="16" r="14" fill="#F1C27D"/>
+        <!-- Hair back/base -->
+        <path d="M -13 12 C -13 4 -6 0 0 0 C 6 0 13 4 13 12 L 13 22 L -13 22 Z" fill="#2C2E35"/>
+        <!-- Bob hair cut fringe & sides -->
+        <path d="M -14 10 C -14 3 -7 2 0 3 C 7 2 14 3 14 10 L 14 18 C 10 24 -10 24 -14 18 Z" fill="#2C2E35"/>
+
+        <!-- Polite Smiling Face Features (Clean flat representation) -->
+        <!-- Friendly closed happy eye -->
+        <path d="M -5 14 Q -3 12 -1 14" stroke="#2C2E35" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+        <path d="M 3 14 Q 5 12 7 14" stroke="#2C2E35" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+        <!-- Gentle polite smile -->
+        <path d="M -2 19 Q 0 21 2 19" stroke="#E056FD" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+        <!-- Arm raised gracefully in polite greeting wave -->
+        <g transform="translate(8, 35)">
+          <path d="M 0 0 C 12 -5 18 -15 22 -22" stroke="#F1C27D" stroke-width="5" stroke-linecap="round" fill="none"/>
+          <!-- Hand waving / polite gesture -->
+          <circle cx="23" cy="-24" r="3.5" fill="#F1C27D"/>
+        </g>
+        
+        <!-- Other Arm -->
+        <path d="M -8 38 C -12 45 -10 52 -6 55" stroke="#60A5FA" stroke-width="5" stroke-linecap="round" fill="none"/>
+      </g>
+    </g>
+
+    <!-- Contextual Architectural element: Staircase railing / Step hint -->
+    <g transform="translate(0, 0)" opacity="0.35">
+      <!-- Step levels -->
+      <path d="M 30 185 L 70 185 L 70 200 L 210 200" stroke="#94A3B8" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
+      <!-- Handrail line representing staircase landing -->
+      <path d="M 40 80 L 200 130" stroke="#64748B" stroke-width="3" stroke-linecap="round" fill="none"/>
+      <path d="M 80 105 L 80 185" stroke="#475569" stroke-width="1.5" stroke-dasharray="2 2"/>
+      <path d="M 160 130 L 160 185" stroke="#475569" stroke-width="1.5" stroke-dasharray="2 2"/>
+    </g>
+
+    <!-- Visual Accent: Clean glowing sparkles indicating pleasant demeanor / politeness -->
+    <g transform="translate(110, 75)">
+      <path d="M 0 -6 L 1.5 -1.5 L 6 0 L 1.5 1.5 L 0 6 L -1.5 1.5 L -6 0 L -1.5 -1.5 Z" fill="#F59E0B"/>
+    </g>
+    <g transform="translate(138, 92)" opacity="0.7">
+      <path d="M 0 -4 L 1 -1 L 4 0 L 1 1 L 0 4 L -1 1 L -4 0 L -1 -1 Z" fill="#FBBF24"/>
+    </g>
+  </g>
+</svg>

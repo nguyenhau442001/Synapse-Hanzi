@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background River Path -->
+  <path d="M20,180 C80,180 100,120 140,120 C180,120 220,60 220,60" fill="none" stroke="#2C3E50" stroke-width="20" stroke-linecap="round"/>
+  
+  <!-- Ancient Vessel (Symbolizing Culture/History) -->
+  <path d="M40,190 L60,190 L55,160 L45,160 Z" fill="#F39C12"/>
+  <path d="M42,160 L58,160" stroke="#F39C12" stroke-width="4"/>
+  
+  <!-- Flowing Water/Time Elements -->
+  <path d="M70,170 Q90,160 110,170 T150,170" fill="none" stroke="#3498DB" stroke-width="4" stroke-dasharray="8 8"/>
+  <path d="M120,130 Q140,120 160,130 T200,130" fill="none" stroke="#3498DB" stroke-width="4" stroke-dasharray="8 8"/>
+  
+  <!-- Human Character (Passing the legacy) -->
+  <!-- Arm reaching out -->
+  <path d="M60,165 L90,140" stroke="#ECF0F1" stroke-width="6" stroke-linecap="round"/>
+  <!-- Hand holding a scroll/symbol -->
+  <circle cx="95" cy="135" r="8" fill="#F39C12"/>
+  
+  <!-- Character Body -->
+  <path d="M50,160 C50,130 70,130 70,160" fill="#ECF0F1"/>
+  
+  <!-- Motion lines for flow -->
+  <path d="M180,80 L200,60 M190,90 L210,70" stroke="#3498DB" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Distant mountain silhouette for depth -->
+  <path d="M160,100 L180,70 L200,100" fill="#2C3E50"/>
+</svg>

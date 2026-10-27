@@ -1,0 +1,58 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Grid lines representing measured land plots -->
+  <g opacity="0.15" stroke="#00E5FF" stroke-width="1" stroke-dasharray="4 4">
+    <line x1="40" y1="90" x2="200" y2="90"/>
+    <line x1="40" y1="140" x2="200" y2="140"/>
+    <line x1="90" y1="40" x2="90" y2="190"/>
+    <line x1="150" y1="40" x2="150" y2="190"/>
+  </g>
+
+  <!-- Farmland Plot (Center Physical Object representing area/mu) -->
+  <g transform="translate(45, 75)">
+    <!-- Base Plot Area (Trapezoid for isometric/perspective feel) -->
+    <path d="M 15 80 L 135 80 L 150 115 L 0 115 Z" fill="#2E4A3B"/>
+    
+    <!-- Rich soil texture / rows -->
+    <path d="M 25 90 Q 75 87 125 90" stroke="#3E634D" stroke-width="3" fill="none"/>
+    <path d="M 20 100 Q 75 97 130 100" stroke="#3E634D" stroke-width="3" fill="none"/>
+
+    <!-- Glowing golden crop rows representing organic agricultural yield (hundreds of mu context) -->
+    <path d="M 15 75 Q 75 70 135 75" stroke="#FFB300" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M 25 60 Q 75 55 125 60" stroke="#FFB300" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M 35 45 Q 75 40 115 45" stroke="#FFB300" stroke-width="4" fill="none" stroke-linecap="round"/>
+    
+    <!-- Healthy Green Sprouts on the plot -->
+    <!-- Sprout 1 -->
+    <path d="M 50 60 C 50 45 40 40 35 35 C 45 38 48 48 50 60 Z" fill="#00E5FF"/>
+    <path d="M 50 60 C 50 45 60 40 65 35 C 55 38 52 48 50 60 Z" fill="#00E5FF"/>
+    
+    <!-- Sprout 2 -->
+    <path d="M 90 55 C 90 40 80 35 75 30 C 85 33 88 43 90 55 Z" fill="#00E5FF"/>
+    <path d="M 90 55 C 90 40 100 35 105 30 C 95 33 92 43 90 55 Z" fill="#00E5FF"/>
+
+    <!-- Sprout 3 -->
+    <path d="M 70 70 C 70 58 62 53 58 48 C 66 51 68 58 70 70 Z" fill="#FFB300"/>
+    <path d="M 70 70 C 70 58 78 53 82 48 C 74 51 72 58 70 70 Z" fill="#FFB300"/>
+  </g>
+
+  <!-- Modern Survey / Boundary Corner Markers (Focusing on area measurement) -->
+  <g stroke="#FFB300" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Top-Left Corner -->
+    <path d="M 40 70 L 40 50 L 60 50"/>
+    <!-- Top-Right Corner -->
+    <path d="M 200 70 L 200 50 L 180 50"/>
+    <!-- Bottom-Left Corner -->
+    <path d="M 40 165 L 40 190 L 65 190"/>
+    <!-- Bottom-Right Corner -->
+    <path d="M 200 165 L 200 190 L 175 190"/>
+  </g>
+
+  <!-- Precision Measurement Indicator Nodes -->
+  <circle cx="40" cy="50" r="3" fill="#00E5FF"/>
+  <circle cx="200" cy="50" r="3" fill="#00E5FF"/>
+  <circle cx="40" cy="190" r="3" fill="#00E5FF"/>
+  <circle cx="200" cy="190" r="3" fill="#00E5FF"/>
+</svg>

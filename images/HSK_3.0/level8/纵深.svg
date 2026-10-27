@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Architectural / Layered Depth Object (Physical representation of "zòngshēn" / 纵深) -->
+  <g transform="translate(120, 120)">
+    <!-- Deep background structural layers (Farthest depth) -->
+    <path d="M -50 -50 L 0 -70 L 50 -50 L 50 -30 L 0 -50 L -50 -30 Z" fill="#2A313C"/>
+    <rect x="-50" y="-30" width="100" height="60" fill="#242B35"/>
+    <path d="M -50 30 L 0 50 L 50 30 L 50 50 L 0 70 L -50 50 Z" fill="#2A313C"/>
+
+    <!-- Mid-ground structural layers (Intermediate depth) -->
+    <path d="M -35 -35 L 0 -50 L 35 -35 L 35 -20 L 0 -35 L -35 -20 Z" fill="#364152"/>
+    <rect x="-35" y="-20" width="70" height="40" fill="#2E3748"/>
+    <path d="M -35 20 L 0 35 L 35 20 L 35 35 L 0 50 L -35 35 Z" fill="#364152"/>
+
+    <!-- Foreground focal frame (Closest depth, sharp contrast) -->
+    <path d="M -20 -20 L 0 -30 L 20 -20 L 20 -10 L 0 -20 L -20 -10 Z" fill="#4E5D73"/>
+    <rect x="-20" y="-10" width="40" height="20" fill="#3E4C60"/>
+    <path d="M -20 10 L 0 20 L 20 10 L 20 20 L 0 30 L -20 20 Z" fill="#4E5D73"/>
+
+    <!-- Central perspective penetration axis (Visualizing inward depth/penetration) -->
+    <!-- High-contrast focus element in orange/gold -->
+    <line x1="0" y1="-75" x2="0" y2="75" stroke="#F59E0B" stroke-width="2.5" stroke-dasharray="4 3" opacity="0.4"/>
+    
+    <!-- Focal converging arrow/core representing deep penetration -->
+    <polygon points="0,-12 6,0 0,-4 -6,0" fill="#F59E0B"/>
+    <polygon points="0,12 6,0 0,4 -6,0" fill="#F59E0B"/>
+    
+    <!-- Dimensional depth markers / optical guides -->
+    <path d="M -65 -60 L -50 -50" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 65 -60 L 50 -50" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+    <path d="M -65 60 L -50 50" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 65 60 L 50 50" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Core glowing focal point (Deepest penetration center) -->
+    <circle cx="0" cy="0" r="4" fill="#F59E0B"/>
+    <circle cx="0" cy="0" r="8" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity="0.6"/>
+  </g>
+</svg>

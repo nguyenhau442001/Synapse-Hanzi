@@ -1,0 +1,70 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <defs>
+    <linearGradient id="dnaGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9F43"/>
+      <stop offset="100%" stop-color="#FF6B6B"/>
+    </linearGradient>
+    <linearGradient id="dnaGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#54A0FF"/>
+      <stop offset="100%" stop-color="#00D2D3"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background decorative subtle rings -->
+  <circle cx="120" cy="120" r="85" fill="none" stroke="#2D323C" stroke-width="1.5" stroke-dasharray="4 6"/>
+  <circle cx="120" cy="120" r="65" fill="none" stroke="#2D323C" stroke-width="1"/>
+
+  <!-- Glowing central backdrop for bloodline concept -->
+  <circle cx="120" cy="120" r="45" fill="#FF6B6B" opacity="0.1" filter="url(#glow)"/>
+
+  <!-- Interlocking DNA Helix / Bloodline Strand (Symbolizing 血缘 / Bloodline & Kinship) -->
+  <g transform="translate(120, 120)">
+    <!-- Connecting rungs -->
+    <line x1="-25" y1="-50" x2="25" y2="-50" stroke="#485460" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-18" y1="-25" x2="18" y2="-25" stroke="#485460" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-8" y1="0" x2="8" y2="0" stroke="#485460" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-18" y1="25" x2="18" y2="25" stroke="#485460" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-25" y1="50" x2="25" y2="50" stroke="#485460" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Left strand (Wave 1) -->
+    <path d="M -25,-65 C 25,-40 25,-10 -25,15 C 25,40 25,60 -25,75" fill="none" stroke="url(#dnaGrad1)" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Right strand (Wave 2) -->
+    <path d="M 25,-65 C -25,-40 -25,-10 25,15 C -25,40 -25,60 25,75" fill="none" stroke="url(#dnaGrad2)" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- DNA Nodes (Base pairs / Blood connections) -->
+    <circle cx="-25" cy="-50" r="6" fill="#FF9F43"/>
+    <circle cx="25" cy="-50" r="6" fill="#FF9F43"/>
+    
+    <circle cx="-18" cy="-25" r="5" fill="#FF6B6B"/>
+    <circle cx="18" cy="-25" r="5" fill="#00D2D3"/>
+
+    <circle cx="-8" cy="0" r="6" fill="#FF6B6B"/>
+    <circle cx="8" cy="0" r="6" fill="#54A0FF"/>
+
+    <circle cx="-18" cy="25" r="5" fill="#00D2D3"/>
+    <circle cx="18" cy="25" r="5" fill="#FF6B6B"/>
+
+    <circle cx="-25" cy="50" r="6" fill="#54A0FF"/>
+    <circle cx="25" cy="50" r="6" fill="#FF9F43"/>
+  </g>
+
+  <!-- Abstract silhouette of two embracing profiles facing each other (representing the familial bond / reunion) -->
+  <g opacity="0.15" fill="#FFFFFF">
+    <!-- Left profile -->
+    <path d="M 60,140 C 55,125 55,110 65,100 C 70,95 72,90 70,80 C 65,75 70,65 80,65 C 85,65 90,70 95,75 C 90,85 92,95 98,105 C 105,115 105,130 100,145 Z"/>
+    <!-- Right profile -->
+    <path d="M 180,140 C 185,125 185,110 175,100 C 170,95 168,90 170,80 C 175,75 170,65 160,65 C 155,65 150,70 145,75 C 150,85 148,95 142,105 C 135,115 135,130 140,145 Z"/>
+  </g>
+
+  <!-- Floating genetic sparks / connection nodes -->
+  <circle cx="95" cy="85" r="2.5" fill="#FF9F43"/>
+  <circle cx="145" cy="155" r="2" fill="#54A0FF"/>
+  <circle cx="150" cy="80" r="2" fill="#FF6B6B"/>
+  <circle cx="88" cy="160" r="2.5" fill="#00D2D3"/>
+</svg>

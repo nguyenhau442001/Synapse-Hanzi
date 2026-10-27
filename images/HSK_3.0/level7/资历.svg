@@ -1,0 +1,36 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background grid/accent elements for context -->
+  <path d="M40 180 L200 180" stroke="#2A2F3B" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Physical Object representing "资历" (Seniority / Professional Credential) -->
+  <!-- A sleek, modern professional dossier/badge combined with achievement stars and timeline layers -->
+  
+  <!-- Document / Portfolio Base -->
+  <rect x="75" y="60" width="90" height="120" rx="8" fill="#242B38" stroke="#3A4456" stroke-width="2"/>
+  <rect x="90" y="45" width="60" height="20" rx="4" fill="#3A4456"/>
+  
+  <!-- Inner Content Lines representing experience records -->
+  <line x1="95" y1="90" x2="145" y2="90" stroke="#525F75" stroke-width="4" stroke-linecap="round"/>
+  <line x1="95" y1="110" x2="130" y2="110" stroke="#525F75" stroke-width="4" stroke-linecap="round"/>
+  <line x1="95" y1="130" x2="140" y2="130" stroke="#525F75" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Accent Badge / Seal (Gold/Orange for focus) representing qualification/seniority -->
+  <circle cx="120" cy="155" r="16" fill="#F59E0B"/>
+  <path d="M113 155 L118 160 L128 148" fill="none" stroke="#1A1D24" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Floating Experience Stars/Layers representing accumulated years (thâm niên) -->
+  <g transform="translate(0, -5)">
+    <!-- Top Star -->
+    <path d="M120 22 L124.5 31 L134.5 32.5 L127.2 39.5 L129 49.5 L120 44.8 L111 49.5 L112.8 39.5 L105.5 32.5 L115.5 31 Z" fill="#FBBF24"/>
+  </g>
+  
+  <!-- Left Ribbon / Timeline Marker -->
+  <path d="M65 80 L75 80 L75 140 L65 140 Z" fill="#3B82F6" opacity="0.8"/>
+  <circle cx="70" cy="80" r="4" fill="#60A5FA"/>
+  <circle cx="70" cy="110" r="4" fill="#60A5FA"/>
+  <circle cx="70" cy="140" r="4" fill="#60A5FA"/>
+  
+</svg>

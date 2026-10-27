@@ -1,0 +1,22 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Bank/Financial Building Structure -->
+  <path d="M70 180h100v-60l-50-30-50 30v60z" fill="#2C3440" stroke="#FFB84D" stroke-width="2"/>
+  <rect x="85" y="140" width="20" height="40" fill="#3D4756"/>
+  <rect x="135" y="140" width="20" height="40" fill="#3D4756"/>
+  
+  <!-- The Credit/Loan Object: A stylized document with a gold seal -->
+  <rect x="90" y="90" width="60" height="80" rx="4" fill="#FFFFFF"/>
+  <rect x="100" y="105" width="40" height="6" rx="2" fill="#E0E4E8"/>
+  <rect x="100" y="120" width="40" height="6" rx="2" fill="#E0E4E8"/>
+  <rect x="100" y="135" width="25" height="6" rx="2" fill="#E0E4E8"/>
+  
+  <!-- Gold Seal representing the credit approval -->
+  <circle cx="120" cy="155" r="12" fill="#FFB84D"/>
+  <path d="M120 148v14M113 155h14" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Hand gesture representing the transfer/granting of credit -->
+  <path d="M160 110c10-10 25-10 35 0l10 10c5 5 5 15 0 20l-20 20c-5 5-15 5-20 0l-10-10" fill="#FFB84D"/>
+  <path d="M155 115l15-15c5-5 15-5 20 0l5 5c5 5 5 15 0 20l-15 15" fill="#FF9F1A"/>
+</svg>

@@ -1,0 +1,91 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Definitions for gradients -->
+  <defs>
+    <!-- Water absorption background glow -->
+    <radialGradient id="waterGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00D2FF" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#00D2FF" stop-opacity="0"/>
+    </radialGradient>
+    
+    <!-- Sponge gradient -->
+    <linearGradient id="spongeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD166"/>
+      <stop offset="100%" stop-color="#F4A261"/>
+    </linearGradient>
+    
+    <!-- Water droplet gradient -->
+    <linearGradient id="waterDrop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#48CAE4"/>
+      <stop offset="100%" stop-color="#0077B6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient light for absorption concept -->
+  <circle cx="120" cy="120" r="90" fill="url(#waterGlow)"/>
+
+  <!-- Inward flowing water streams (representing learning/absorbing knowledge) -->
+  <g opacity="0.7">
+    <!-- Top left stream -->
+    <path d="M 60 70 Q 90 90 105 105" fill="none" stroke="#00B4D8" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4">
+      <animate attributeName="stroke-dashoffset" values="16;0" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+    <!-- Bottom left stream -->
+    <path d="M 60 170 Q 90 150 105 135" fill="none" stroke="#00B4D8" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4">
+      <animate attributeName="stroke-dashoffset" values="16;0" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+    <!-- Top right stream -->
+    <path d="M 180 70 Q 150 90 135 105" fill="none" stroke="#00B4D8" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4">
+      <animate attributeName="stroke-dashoffset" values="16;0" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+    <!-- Bottom right stream -->
+    <path d="M 180 170 Q 150 150 135 135" fill="none" stroke="#00B4D8" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4">
+      <animate attributeName="stroke-dashoffset" values="16;0" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Incoming floating water droplets -->
+  <path d="M 45,60 Q 48,55 51,60 A 3,3 0 0,1 45,60 Z" fill="url(#waterDrop)"/>
+  <path d="M 195,75 Q 198,70 201,75 A 3,3 0 0,1 195,75 Z" fill="url(#waterDrop)"/>
+  <path d="M 50,175 Q 53,170 56,175 A 3,3 0 0,1 50,175 Z" fill="url(#waterDrop)"/>
+  <path d="M 190,165 Q 193,160 196,165 A 3,3 0 0,1 190,165 Z" fill="url(#waterDrop)"/>
+
+  <!-- Central Sponge Body (Isometric/3D Flat style) -->
+  <g transform="translate(0, 5)">
+    <!-- Sponge Back/Shadow depth -->
+    <path d="M 80,90 L 160,90 L 180,130 L 100,130 Z" fill="#D97706" opacity="0.6"/>
+    <path d="M 160,90 L 160,145 L 180,130 L 180,75 Z" fill="#B45309" opacity="0.7"/>
+
+    <!-- Sponge Main Front Face -->
+    <rect x="80" y="75" width="100" height="70" rx="12" fill="url(#spongeGrad)" stroke="#D97706" stroke-width="2"/>
+
+    <!-- Sponge Pores & Textures (Organic overlapping circles and cutouts) -->
+    <g fill="#D97706" opacity="0.4">
+      <circle cx="100" cy="95" r="7"/>
+      <circle cx="125" cy="88" r="5"/>
+      <circle cx="150" cy="100" r="8"/>
+      <circle cx="165" cy="120" r="6"/>
+      <circle cx="135" cy="120" r="9"/>
+      <circle cx="105" cy="125" r="6"/>
+      <circle cx="92" cy="110" r="4"/>
+      <circle cx="148" cy="135" r="5"/>
+      <circle cx="118" cy="107" r="4"/>
+    </g>
+
+    <!-- Highlight layer for modern glossy flat look -->
+    <path d="M 86,78 L 174,78 C 177,78 178,80 176,82 L 84,82 C 82,80 83,78 86,78 Z" fill="#FFFFFF" opacity="0.3"/>
+  </g>
+
+  <!-- Absorbed water ripples around base / saturation effect -->
+  <ellipse cx="120" cy="165" rx="45" ry="12" fill="none" stroke="#48CAE4" stroke-width="2" opacity="0.8"/>
+  <ellipse cx="120" cy="165" rx="30" ry="8" fill="none" stroke="#00B4D8" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Sparkles representing "Knowledge / New Insights" -->
+  <g fill="#FFD166">
+    <path d="M 75,55 Q 75,65 65,65 Q 75,65 75,75 Q 75,65 85,65 Q 75,65 75,55 Z"/>
+    <path d="M 165,50 Q 165,57 158,57 Q 165,57 165,64 Q 165,57 172,57 Q 165,57 165,50 Z"/>
+    <path d="M 170,150 Q 170,156 164,156 Q 170,156 170,162 Q 170,156 176,156 Q 170,156 170,150 Z"/>
+  </g>
+
+</svg>

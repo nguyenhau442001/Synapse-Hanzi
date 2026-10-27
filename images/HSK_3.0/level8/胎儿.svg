@@ -1,0 +1,16 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 120)">
+    <!-- Fetus representation in flat vector style -->
+    <path d="M-40,-10 C-60,-10 -70,10 -60,30 C-50,50 -20,60 0,60 C20,60 40,40 30,20 C20,0 0,-10 -40,-10 Z" fill="#FFB74D" opacity="0.9"/>
+    <path d="M-35,-5 C-50,-5 -60,10 -50,25 C-40,40 -20,50 0,50 C15,50 30,35 20,20 C10,5 0,-5 -35,-5 Z" fill="#FFCC80"/>
+    <!-- Head -->
+    <circle cx="-45" cy="0" r="25" fill="#FFB74D"/>
+    <circle cx="-45" cy="0" r="20" fill="#FFCC80"/>
+    <!-- Eye -->
+    <circle cx="-52" cy="-5" r="3" fill="#1A1D24"/>
+    <!-- Umbilical cord -->
+    <path d="M10,30 Q30,50 50,40" stroke="#FFB74D" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M10,30 Q30,50 50,40" stroke="#FFCC80" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

@@ -1,38 +1,7 @@
-<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="240">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#1e293b"/>
-    </linearGradient>
-  </defs>
-  <rect width="240" height="240" rx="24" fill="url(#bg)"/>
-  
-  <!-- Table Surface -->
-  <rect x="0" y="160" width="240" height="80" fill="#334155" opacity="0.4"/>
-  
-  <!-- Coffee Cup (The object being rejected) -->
-  <g transform="translate(140, 120)">
-    <path d="M10 20 C10 10, 50 10, 50 20 L45 80 C45 90, 15 90, 15 80 Z" fill="#fb923c"/>
-    <ellipse cx="30" cy="20" rx="20" ry="8" fill="#f59e0b"/>
-    <path d="M50 30 Q70 30, 70 50 Q70 70, 50 70" fill="none" stroke="#fb923c" stroke-width="8" stroke-linecap="round"/>
-  </g>
-
-  <!-- Character expressing 'No' (Hand gesture) -->
-  <g transform="translate(40, 80)">
-    <!-- Arm -->
-    <path d="M0 100 L60 40" stroke="#38bdf8" stroke-width="20" stroke-linecap="round"/>
-    <!-- Hand -->
-    <circle cx="70" cy="30" r="25" fill="#f8fafc"/>
-    <!-- Fingers making the 'stop' gesture -->
-    <rect x="65" y="5" width="10" height="20" rx="2" fill="#f8fafc"/>
-    <rect x="50" y="10" width="10" height="20" rx="2" fill="#f8fafc"/>
-    <rect x="80" y="10" width="10" height="20" rx="2" fill="#f8fafc"/>
-  </g>
-
-  <!-- Expressive 'No' motion lines -->
-  <path d="M110 50 L130 30 M115 70 L135 50" stroke="#ec4899" stroke-width="4" stroke-linecap="round"/>
-  
-  <!-- Ambient details -->
-  <circle cx="200" cy="40" r="4" fill="#fbbf24" opacity="0.6"/>
-  <circle cx="180" cy="60" r="2" fill="#fbbf24" opacity="0.4"/>
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+  <line x1="18" y1="26" x2="82" y2="26" stroke="#38bdf8" stroke-width="4.8" stroke-linecap="round"/>
+  <path d="M50 26 Q46 54 24 76" stroke="#fb923c" stroke-width="4.5" stroke-linecap="round"/>
+  <line x1="50" y1="26" x2="50" y2="82" stroke="#38bdf8" stroke-width="4.8" stroke-linecap="round"/>
+  <path d="M50 46 Q64 58 76 68" stroke="#fb923c" stroke-width="4.5" stroke-linecap="round"/>
 </svg>

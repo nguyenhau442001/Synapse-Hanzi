@@ -1,0 +1,38 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements (hearing/interrogation atmosphere) -->
+  <path d="M 40,190 L 200,190" stroke="#2A2F3B" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Podium / Desk -->
+  <path d="M 130,150 L 200,150 L 190,190 L 140,190 Z" fill="#2E3648"/>
+  <rect x="155" y="130" width="25" height="25" rx="3" fill="#3B4459"/> <!-- Microphone base -->
+  <path d="M 167,130 L 167,110" stroke="#718096" stroke-width="3" stroke-linecap="round"/> <!-- Mic stand -->
+  <circle cx="167" cy="105" r="7" fill="#E2E8F0"/> <!-- Microphone head -->
+
+   <!-- Corporate Representative (Defensive, speechless pose) -->
+   <!-- Body/Suit -->
+  <path d="M 140,190 L 155,150 L 185,150 L 200,190 Z" fill="#4A5568"/>
+  <!-- Head -->
+  <circle cx="170" cy="115" r="14" fill="#CBD5E0"/>
+  <!-- Speechless hand gesture (hand raised in pause/defense) -->
+  <circle cx="150" cy="140" r="6" fill="#CBD5E0"/>
+  
+  <!-- Questioner / Interrogator (Accusatory, leaning forward, pointing) -->
+  <!-- Body -->
+  <path d="M 40,190 L 60,140 L 95,140 L 110,190 Z" fill="#2B6CB0"/>
+  <!-- Head -->
+  <circle cx="75" cy="105" r="14" fill="#EDF2F7"/>
+  <!-- Arm pointing forward -->
+  <path d="M 75,120 L 115,115" stroke="#EDF2F7" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Sharp interrogation / questioning visual indicator (Direct eye-line/speech beam) -->
+  <polygon points="115,110 145,100 145,120" fill="#F6AD55"/>
+  <polygon points="115,115 155,130 145,140" fill="#F6AD55" opacity="0.6"/>
+
+  <!-- High-contrast focus accent: Question mark integrated dynamically as the visual essence -->
+  <path d="M 95,60 C 95,50 115,50 115,65 C 115,80 95,85 95,100" fill="none" stroke="#F6AD55" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="95" cy="118" r="4" fill="#F6AD55"/>
+
+</svg>

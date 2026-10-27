@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(12, 12)">
+    <!-- Glow/Background ambience -->
+    <ellipse cx="108" cy="108" rx="90" ry="90" fill="#252A34" opacity="0.6"/>
+
+    <!-- Left Screen (Inactive/Source) -->
+    <g transform="translate(20, 52)">
+      <rect x="0" y="0" width="76" height="52" rx="6" fill="#222733" stroke="#3A4254" stroke-width="2"/>
+      <!-- Screen content -->
+      <rect x="10" y="10" width="30" height="6" rx="3" fill="#3A4254"/>
+      <rect x="10" y="22" width="56" height="4" rx="2" fill="#2E3544"/>
+      <rect x="10" y="30" width="44" height="4" rx="2" fill="#2E3544"/>
+      <circle cx="62" cy="13" r="4" fill="#3A4254"/>
+      <!-- Stand -->
+      <path d="M38 52L32 66H44L38 52Z" fill="#3A4254"/>
+      <rect x="24" y="66" width="28" height="4" rx="2" fill="#3A4254"/>
+    </g>
+
+    <!-- Right Screen (Active/Target - Highlighted with Gold/Orange Accent) -->
+    <g transform="translate(112, 36)">
+      <rect x="0" y="0" width="88" height="60" rx="6" fill="#222733" stroke="#F59E0B" stroke-width="2.5"/>
+      <!-- Screen content -->
+      <rect x="12" y="12" width="36" height="6" rx="3" fill="#F59E0B" opacity="0.8"/>
+      <rect x="12" y="26" width="64" height="4" rx="2" fill="#3A4254"/>
+      <rect x="12" y="36" width="52" height="4" rx="2" fill="#3A4254"/>
+      <circle cx="72" cy="15" r="5" fill="#F59E0B" opacity="0.8"/>
+      <!-- Stand -->
+      <path d="M44 60L38 76H50L44 60Z" fill="#3A4254"/>
+      <rect x="28" y="76" width="32" height="4" rx="2" fill="#3A4254"/>
+    </g>
+
+    <!-- Dynamic Switching Arrow / Flow Representation -->
+    <path d="M 64 120 C 64 150, 152 150, 152 120" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 6"/>
+    
+    <!-- Action/Switch Hand/Cursor Gesture Object representing "Switching" -->
+    <g transform="translate(94, 110)">
+      <circle cx="14" cy="14" r="18" fill="#F59E0B" opacity="0.15"/>
+      <circle cx="14" cy="14" r="12" fill="#F59E0B"/>
+      <!-- Cursor Arrow Icon -->
+      <path d="M10 8L18 14L13 15.5L16 20L14 21L11 16.5L8 19V8Z" fill="#1A1D24"/>
+    </g>
+
+    <!-- Sparkles/Focus indicators for transition -->
+    <path d="M168 28L171 34L177 37L171 40L168 46L165 40L159 37L165 34L168 28Z" fill="#F59E0B" opacity="0.7"/>
+    <path d="M52 38L54 42L58 44L54 46L52 50L50 46L46 44L50 42L52 38Z" fill="#3A4254"/>
+  </g>
+</svg>

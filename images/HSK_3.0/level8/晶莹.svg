@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Lotus Leaf -->
+  <path d="M40 160 C 80 120, 160 120, 200 160 C 180 200, 60 200, 40 160 Z" fill="#2D5A27"/>
+  <path d="M120 160 L 120 190" stroke="#1E3D1A" stroke-width="2"/>
+  
+  <!-- Dewdrops (The focus of "晶莹") -->
+  <g>
+    <!-- Large Dewdrop -->
+    <path d="M110 145 C 110 130, 130 130, 130 145 C 130 160, 110 160, 110 145 Z" fill="#E0F7FA" opacity="0.9"/>
+    <ellipse cx="118" cy="140" rx="3" ry="5" fill="#FFFFFF" opacity="0.6"/>
+    
+    <!-- Small Dewdrop 1 -->
+    <circle cx="80" cy="150" r="8" fill="#B2EBF2" opacity="0.8"/>
+    <circle cx="78" cy="148" r="2" fill="#FFFFFF" opacity="0.7"/>
+    
+    <!-- Small Dewdrop 2 -->
+    <circle cx="160" cy="152" r="6" fill="#B2EBF2" opacity="0.8"/>
+    <circle cx="158" cy="150" r="1.5" fill="#FFFFFF" opacity="0.7"/>
+  </g>
+  
+  <!-- Golden light reflection/accent -->
+  <circle cx="125" cy="140" r="2" fill="#FFC107" opacity="0.8"/>
+</svg>

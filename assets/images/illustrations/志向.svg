@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle Background Grid/Atmosphere for Scientific Ambition -->
+  <circle cx="120" cy="120" r="85" fill="none" stroke="#252A34" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <circle cx="120" cy="120" r="60" fill="none" stroke="#252A34" stroke-width="1"/>
+  
+  <!-- Central Physical Object representing "志向" (Grand Ambition in Medical Science) -->
+  <!-- Compound object: A glowing medical caduceus/DNA helix merging into a rising telescope/rocket trajectory, symbolized by an illuminated microscope combined with an ascending star, representing towering ambition -->
+
+  <!-- Base / Platform -->
+  <path d="M 85 185 L 155 185 L 165 195 L 75 195 Z" fill="#3A4256"/>
+  
+  <!-- Microscope Body & Stand (Medical Science Context) -->
+  <path d="M 105 140 L 135 140 L 145 175 L 95 175 Z" fill="#4E5D6C"/>
+  <path d="M 115 90 L 125 90 L 125 140 L 115 140 Z" fill="#6C7A89"/>
+  
+  <!-- Curved Arm -->
+  <path d="M 115 90 C 115 65, 135 60, 145 75 C 150 85, 145 105, 130 115" fill="none" stroke="#6C7A89" stroke-width="10" stroke-linecap="round"/>
+  
+  <!-- Objective Lens & Stage -->
+  <rect x="100" y="125" width="40" height="8" rx="2" fill="#8C9EFF"/>
+  <rect x="110" y="110" width="20" height="15" fill="#3A4256"/>
+  <polygon points="115,133 125,133 128,155 112,155" fill="#A0C4FF"/>
+
+  <!-- Glowing Focus / Ambition Beam (Gold/Orange accent for "远大志向") -->
+  <polygon points="120,155 90,210 150,210" fill="url(#ambitionGlow)" opacity="0.3"/>
+  
+  <!-- Rising Star / Ascending Trajectory symbolizing "远大" (Grand/Far-reaching) -->
+  <g transform="translate(120, 45)">
+    <!-- Glowing Aura -->
+    <circle cx="0" cy="0" r="22" fill="#FFB703" opacity="0.15"/>
+    <circle cx="0" cy="0" r="15" fill="#FFB703" opacity="0.25"/>
+    
+    <!-- Five-pointed Star of Excellence & Ambition -->
+    <path d="M 0 -14 L 3.6 -4.4 L 14 -3.6 L 6.2 3.2 L 8.8 13.4 L 0 8 L -8.8 13.4 L -6.2 3.2 L -14 -3.6 L -3.6 -4.4 Z" fill="#FFB703"/>
+  </g>
+
+  <!-- Floating DNA strands / Medical innovation particles representing the scientific aspiration -->
+  <path d="M 75 80 Q 82 70 89 80 Q 96 90 103 80" fill="none" stroke="#3A86FF" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="75" cy="80" r="3" fill="#3A86FF"/>
+  <circle cx="103" cy="80" r="3" fill="#3A86FF"/>
+
+  <path d="M 137 80 Q 144 70 151 80 Q 158 90 165 80" fill="none" stroke="#3A86FF" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="137" cy="80" r="3" fill="#3A86FF"/>
+  <circle cx="165" cy="80" r="3" fill="#3A86FF"/>
+
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="ambitionGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFB703" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFB703" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>

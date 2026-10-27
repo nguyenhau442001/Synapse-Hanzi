@@ -1,0 +1,1150 @@
+{
+  "exam_id": "H41006",
+  "level": "HSK4",
+  "title": "HSK 4 - Đề thi mẫu H41006 - Phần Nghe (Listening)",
+  "total_questions": 10,
+  "audio_src": "assets/audio/exams/H41006.mp3",
+  "questions": [
+    {
+      "id": "H41006_L_01",
+      "exam_id": "H41006",
+      "question_number": 1,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他今天腿疼。",
+        "pinyin": "tā jīn tiān tuǐ téng 。",
+        "vi": "Hôm nay anh ấy bị đau chân."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Hôm nay anh ấy bị đau chân.'.",
+      "evidence": {
+        "zh": "周末我去打了一下午篮球，很长时间没锻炼了，今天腿疼得厉害，连上楼都困难。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41006.mp3",
+      "alignment": {
+        "status": "verified",
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 133560,
+          "end_ms": 155239
+        },
+        "statement": {
+          "start_ms": 155439,
+          "end_ms": 156890
+        },
+        "full_question": {
+          "start_ms": 133560,
+          "end_ms": 156890
+        }
+      },
+      "transcript": {
+        "full_zh": "周末我去打了一下午篮球，很长时间没锻炼了，今天腿疼得厉害，连上楼都困难。快放暑假了，暑假里要好好锻炼锻炼。",
+        "full_vi": "Cuối tuần tôi đi chơi bóng rổ cả một buổi chiều, lâu lắm rồi không vận động nên hôm nay chân đau dữ dội, đến việc leo cầu thang cũng thấy khó khăn. Sắp nghỉ hè rồi, trong kỳ nghỉ hè phải rèn luyện thật tốt mới được.",
+        "sentences": [
+          {
+            "id": "H41006_L_01_S1",
+            "index": 0,
+            "zh": "周末我去打了一下午篮球，很长时间没锻炼了，今天腿疼得厉害，连上楼都困难。",
+            "pinyin": "zhōu mò wǒ qù dǎ le yī xià wǔ lán qiú ， hěn zhǎng shí jiān méi duàn liàn le ， jīn tiān tuǐ téng dé lì hài ， lián shàng lóu dōu kùn nán 。",
+            "vi": "Cuối tuần tôi đi chơi bóng rổ cả một buổi chiều, lâu lắm rồi không vận động nên hôm nay chân đau dữ dội, đến việc leo cầu thang cũng thấy khó khăn.",
+            "start_ms": 135250,
+            "end_ms": 147335
+          },
+          {
+            "id": "H41006_L_01_S2",
+            "index": 1,
+            "zh": "快放暑假了，暑假里要好好锻炼锻炼。",
+            "pinyin": "kuài fàng shǔ jià le ， shǔ jià lǐ yào hǎo hǎo duàn liàn duàn liàn 。",
+            "vi": "Sắp nghỉ hè rồi, trong kỳ nghỉ hè phải rèn luyện thật tốt mới được.",
+            "start_ms": 147435,
+            "end_ms": 155239
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "放暑假",
+          "pinyin": "fàngshǔjià",
+          "meaning_vi": "nghỉ hè",
+          "vocab_id": 116,
+          "level": "HSK4"
+        },
+        {
+          "word": "今天",
+          "pinyin": "jīntiān",
+          "meaning_vi": "hôm nay",
+          "vocab_id": 47,
+          "level": "HSK1"
+        },
+        {
+          "word": "下午",
+          "pinyin": "xiàwǔ",
+          "meaning_vi": "buổi chiều",
+          "vocab_id": 116,
+          "level": "HSK1"
+        },
+        {
+          "word": "时间",
+          "pinyin": "shíjiān",
+          "meaning_vi": "thời gian",
+          "vocab_id": 94,
+          "level": "HSK2"
+        },
+        {
+          "word": "一下",
+          "pinyin": "yīxià",
+          "meaning_vi": "một chút, thử xem",
+          "vocab_id": 128,
+          "level": "HSK2"
+        },
+        {
+          "word": "锻炼",
+          "pinyin": "duànliàn",
+          "meaning_vi": "rèn luyện, tập thể dục",
+          "vocab_id": 58,
+          "level": "HSK3"
+        },
+        {
+          "word": "周末",
+          "pinyin": "zhōumò",
+          "meaning_vi": "cuối tuần",
+          "vocab_id": 291,
+          "level": "HSK3"
+        },
+        {
+          "word": "困难",
+          "pinyin": "kùnnan",
+          "meaning_vi": "khó khăn",
+          "vocab_id": 265,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41006_L_02",
+      "exam_id": "H41006",
+      "question_number": 2,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他们正在请客。",
+        "pinyin": "tā men zhèng zài qǐng kè 。",
+        "vi": "Họ đang đãi khách (mời cơm)."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Họ đang đãi khách (mời cơm).'.",
+      "evidence": {
+        "zh": "你去推一辆车吧，咱们今天要买的东西挺多的，那样方便一些，否则太累，没有车可受不了。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41006.mp3",
+      "alignment": {
+        "status": "verified",
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 165940,
+          "end_ms": 182739
+        },
+        "statement": {
+          "start_ms": 182939,
+          "end_ms": 184650
+        },
+        "full_question": {
+          "start_ms": 165940,
+          "end_ms": 184650
+        }
+      },
+      "transcript": {
+        "full_zh": "你去推一辆车吧，咱们今天要买的东西挺多的，那样方便一些，否则太累，没有车可受不了。",
+        "full_vi": "Cậu đi đẩy một chiếc xe đẩy đi, đồ hôm nay chúng ta cần mua khá nhiều, như thế tiện hơn chút, chứ không mệt lắm, không có xe đẩy thì chịu không nổi.",
+        "sentences": [
+          {
+            "id": "H41006_L_02_S1",
+            "index": 0,
+            "zh": "你去推一辆车吧，咱们今天要买的东西挺多的，那样方便一些，否则太累，没有车可受不了。",
+            "pinyin": "nǐ qù tuī yī liàng chē ba ， zán men jīn tiān yào mǎi de dōng xī tǐng duō de ， nà yàng fāng biàn yī xiē ， fǒu zé tài lèi ， méi yǒu chē kě shòu bù liǎo 。",
+            "vi": "Cậu đi đẩy một chiếc xe đẩy đi, đồ hôm nay chúng ta cần mua khá nhiều, như thế tiện hơn chút, chứ không mệt lắm, không có xe đẩy thì chịu không nổi.",
+            "start_ms": 167290,
+            "end_ms": 182739
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "受不了",
+          "pinyin": "shòubuliǎo",
+          "meaning_vi": "không chịu được",
+          "vocab_id": 397,
+          "level": "HSK4"
+        },
+        {
+          "word": "东西",
+          "pinyin": "dōngxi",
+          "meaning_vi": "đồ vật",
+          "vocab_id": 20,
+          "level": "HSK1"
+        },
+        {
+          "word": "今天",
+          "pinyin": "jīntiān",
+          "meaning_vi": "hôm nay",
+          "vocab_id": 47,
+          "level": "HSK1"
+        },
+        {
+          "word": "没有",
+          "pinyin": "méiyǒu",
+          "meaning_vi": "không có",
+          "vocab_id": 64,
+          "level": "HSK1"
+        },
+        {
+          "word": "正在",
+          "pinyin": "zhèngzài",
+          "meaning_vi": "đang",
+          "vocab_id": 145,
+          "level": "HSK2"
+        },
+        {
+          "word": "方便",
+          "pinyin": "fāngbiàn",
+          "meaning_vi": "thuận tiện",
+          "vocab_id": 66,
+          "level": "HSK3"
+        },
+        {
+          "word": "否则",
+          "pinyin": "fǒuzé",
+          "meaning_vi": "nếu không thì",
+          "vocab_id": 120,
+          "level": "HSK4"
+        },
+        {
+          "word": "咱们",
+          "pinyin": "zánmen",
+          "meaning_vi": "chúng ta (gồm cả người nghe)",
+          "vocab_id": 548,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41006_L_03",
+      "exam_id": "H41006",
+      "question_number": 3,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "结果比过程更重要。",
+        "pinyin": "jié guǒ bǐ guò chéng gèng zhòng yào 。",
+        "vi": "Kết quả quan trọng hơn quá trình."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Kết quả quan trọng hơn quá trình.'.",
+      "evidence": {
+        "zh": "其实，只要我们真正努力过了，就不需要太关心结果。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41006.mp3",
+      "alignment": {
+        "status": "verified",
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 193940,
+          "end_ms": 215920
+        },
+        "statement": {
+          "start_ms": 216120,
+          "end_ms": 218370
+        },
+        "full_question": {
+          "start_ms": 193940,
+          "end_ms": 218370
+        }
+      },
+      "transcript": {
+        "full_zh": "其实，只要我们真正努力过了，就不需要太关心结果。因为无论最后是成功还是失败，在努力的过程中，我们已经学到了很多东西。",
+        "full_vi": "Thực ra, chỉ cần chúng ta đã thực sự nỗ lực hết mình thì không cần quá bận tâm đến kết quả. Bởi vì bất luận cuối cùng thành công hay thất bại, thì trong quá trình nỗ lực chúng ta đã học hỏi được rất nhiều điều rồi.",
+        "sentences": [
+          {
+            "id": "H41006_L_03_S1",
+            "index": 0,
+            "zh": "其实，只要我们真正努力过了，就不需要太关心结果。",
+            "pinyin": "qí shí ， zhǐ yào wǒ men zhēn zhèng nǔ lì guò le ， jiù bù xū yào tài guān xīn jié guǒ 。",
+            "vi": "Thực ra, chỉ cần chúng ta đã thực sự nỗ lực hết mình thì không cần quá bận tâm đến kết quả.",
+            "start_ms": 195890,
+            "end_ms": 202574
+          },
+          {
+            "id": "H41006_L_03_S2",
+            "index": 1,
+            "zh": "因为无论最后是成功还是失败，在努力的过程中，我们已经学到了很多东西。",
+            "pinyin": "yīn wèi wú lùn zuì hòu shì chéng gōng hái shì shī bài ， zài nǔ lì de guò chéng zhōng ， wǒ men yǐ jīng xué dào le hěn duō dōng xī 。",
+            "vi": "Bởi vì bất luận cuối cùng thành công hay thất bại, thì trong quá trình nỗ lực chúng ta đã học hỏi được rất nhiều điều rồi.",
+            "start_ms": 202674,
+            "end_ms": 215920
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "东西",
+          "pinyin": "dōngxi",
+          "meaning_vi": "đồ vật",
+          "vocab_id": 20,
+          "level": "HSK1"
+        },
+        {
+          "word": "我们",
+          "pinyin": "wǒmen",
+          "meaning_vi": "chúng tôi, chúng ta",
+          "vocab_id": 112,
+          "level": "HSK1"
+        },
+        {
+          "word": "已经",
+          "pinyin": "yǐjīng",
+          "meaning_vi": "đã",
+          "vocab_id": 129,
+          "level": "HSK2"
+        },
+        {
+          "word": "关心",
+          "pinyin": "guānxīn",
+          "meaning_vi": "quan tâm",
+          "vocab_id": 86,
+          "level": "HSK3"
+        },
+        {
+          "word": "还是",
+          "pinyin": "háishì",
+          "meaning_vi": "hay là, vẫn là",
+          "vocab_id": 91,
+          "level": "HSK3"
+        },
+        {
+          "word": "努力",
+          "pinyin": "nǔlì",
+          "meaning_vi": "nỗ lực, cố gắng",
+          "vocab_id": 174,
+          "level": "HSK3"
+        },
+        {
+          "word": "其实",
+          "pinyin": "qíshí",
+          "meaning_vi": "thực ra",
+          "vocab_id": 181,
+          "level": "HSK3"
+        },
+        {
+          "word": "需要",
+          "pinyin": "xūyào",
+          "meaning_vi": "cần thiết, cần",
+          "vocab_id": 250,
+          "level": "HSK3"
+        }
+      ]
+    },
+    {
+      "id": "H41006_L_04",
+      "exam_id": "H41006",
+      "question_number": 4,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他被证明说了假话。",
+        "pinyin": "tā bèi zhèng míng shuō le jiǎ huà 。",
+        "vi": "Anh ấy bị chứng minh là đã nói dối."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Anh ấy bị chứng minh là đã nói dối.'.",
+      "evidence": {
+        "zh": "对不起，他说的是不是符合实际情况，我们现在还无法判断，需要做进一步的调查。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41006.mp3",
+      "alignment": {
+        "status": "verified",
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 227520,
+          "end_ms": 241820
+        },
+        "statement": {
+          "start_ms": 242020,
+          "end_ms": 243870
+        },
+        "full_question": {
+          "start_ms": 227520,
+          "end_ms": 243870
+        }
+      },
+      "transcript": {
+        "full_zh": "对不起，他说的是不是符合实际情况，我们现在还无法判断，需要做进一步的调查。",
+        "full_vi": "Xin lỗi, những lời anh ấy nói có phù hợp với tình hình thực tế hay không thì hiện tại chúng tôi vẫn chưa thể phán đoán, cần phải tiến hành điều tra thêm.",
+        "sentences": [
+          {
+            "id": "H41006_L_04_S1",
+            "index": 0,
+            "zh": "对不起，他说的是不是符合实际情况，我们现在还无法判断，需要做进一步的调查。",
+            "pinyin": "duì bù qǐ ， tā shuō de shì bú shì fú hé shí jì qíng kuàng ， wǒ men xiàn zài hái wú fǎ pàn duàn ， xū yào zuò jìn yí bù de diào chá 。",
+            "vi": "Xin lỗi, những lời anh ấy nói có phù hợp với tình hình thực tế hay không thì hiện tại chúng tôi vẫn chưa thể phán đoán, cần phải tiến hành điều tra thêm.",
+            "start_ms": 229010,
+            "end_ms": 241820
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "对不起",
+          "pinyin": "duìbuqǐ",
+          "meaning_vi": "xin lỗi",
+          "vocab_id": 23,
+          "level": "HSK1"
+        },
+        {
+          "word": "我们",
+          "pinyin": "wǒmen",
+          "meaning_vi": "chúng tôi, chúng ta",
+          "vocab_id": 112,
+          "level": "HSK1"
+        },
+        {
+          "word": "现在",
+          "pinyin": "xiànzài",
+          "meaning_vi": "hiện tại, bây giờ",
+          "vocab_id": 119,
+          "level": "HSK1"
+        },
+        {
+          "word": "需要",
+          "pinyin": "xūyào",
+          "meaning_vi": "cần thiết, cần",
+          "vocab_id": 250,
+          "level": "HSK3"
+        },
+        {
+          "word": "调查",
+          "pinyin": "diàochá",
+          "meaning_vi": "điều tra",
+          "vocab_id": 94,
+          "level": "HSK4"
+        },
+        {
+          "word": "符合",
+          "pinyin": "fúhé",
+          "meaning_vi": "phù hợp, đúng với",
+          "vocab_id": 121,
+          "level": "HSK4"
+        },
+        {
+          "word": "判断",
+          "pinyin": "pànduàn",
+          "meaning_vi": "phán đoán",
+          "vocab_id": 323,
+          "level": "HSK4"
+        },
+        {
+          "word": "情况",
+          "pinyin": "qíngkuàng",
+          "meaning_vi": "tình hình",
+          "vocab_id": 347,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41006_L_05",
+      "exam_id": "H41006",
+      "question_number": 5,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "毕业让人又高兴又难过。",
+        "pinyin": "bì yè ràng rén yòu gāo xìng yòu nán guò 。",
+        "vi": "Tốt nghiệp khiến người ta vừa vui mừng lại vừa buồn bã."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Tốt nghiệp khiến người ta vừa vui mừng lại vừa buồn bã.'.",
+      "evidence": {
+        "zh": "毕业是一件让人高兴的事，因为我们将要开始新的生活。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41006.mp3",
+      "alignment": {
+        "status": "verified",
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 253320,
+          "end_ms": 276760
+        },
+        "statement": {
+          "start_ms": 276960,
+          "end_ms": 280110
+        },
+        "full_question": {
+          "start_ms": 253320,
+          "end_ms": 280110
+        }
+      },
+      "transcript": {
+        "full_zh": "毕业是一件让人高兴的事，因为我们将要开始新的生活。毕业也是一件让人伤心的事，许多平时常在一起的朋友，以后见面的机会将变得很少。",
+        "full_vi": "Tốt nghiệp là một chuyện khiến người ta vui mừng, bởi vì chúng ta chuẩn bị bắt đầu một cuộc sống mới. Tốt nghiệp cũng là một chuyện khiến người ta buồn bã, nhiều bạn bè thường ngày hay ở bên nhau thì sau này cơ hội gặp mặt sẽ ít đi rất nhiều.",
+        "sentences": [
+          {
+            "id": "H41006_L_05_S1",
+            "index": 0,
+            "zh": "毕业是一件让人高兴的事，因为我们将要开始新的生活。",
+            "pinyin": "bì yè shì yī jiàn ràng rén gāo xìng de shì ， yīn wèi wǒ men jiāng yào kāi shǐ xīn de shēng huó 。",
+            "vi": "Tốt nghiệp là một chuyện khiến người ta vui mừng, bởi vì chúng ta chuẩn bị bắt đầu một cuộc sống mới.",
+            "start_ms": 254609,
+            "end_ms": 265175
+          },
+          {
+            "id": "H41006_L_05_S2",
+            "index": 1,
+            "zh": "毕业也是一件让人伤心的事，许多平时常在一起的朋友，以后见面的机会将变得很少。",
+            "pinyin": "bì yè yě shì yī jiàn ràng rén shāng xīn de shì ， xǔ duō píng shí cháng zài yì qǐ de péng yǒu ， yǐ hòu jiàn miàn de jī huì jiāng biàn dé hěn shǎo 。",
+            "vi": "Tốt nghiệp cũng là một chuyện khiến người ta buồn bã, nhiều bạn bè thường ngày hay ở bên nhau thì sau này cơ hội gặp mặt sẽ ít đi rất nhiều.",
+            "start_ms": 265275,
+            "end_ms": 276760
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "高兴",
+          "pinyin": "gāoxìng",
+          "meaning_vi": "vui, vui mừng",
+          "vocab_id": 31,
+          "level": "HSK1"
+        },
+        {
+          "word": "朋友",
+          "pinyin": "péngyou",
+          "meaning_vi": "bạn",
+          "vocab_id": 76,
+          "level": "HSK1"
+        },
+        {
+          "word": "我们",
+          "pinyin": "wǒmen",
+          "meaning_vi": "chúng tôi, chúng ta",
+          "vocab_id": 112,
+          "level": "HSK1"
+        },
+        {
+          "word": "开始",
+          "pinyin": "kāishǐ",
+          "meaning_vi": "bắt đầu",
+          "vocab_id": 54,
+          "level": "HSK2"
+        },
+        {
+          "word": "一起",
+          "pinyin": "yīqǐ",
+          "meaning_vi": "cùng nhau",
+          "vocab_id": 130,
+          "level": "HSK2"
+        },
+        {
+          "word": "机会",
+          "pinyin": "jīhuì",
+          "meaning_vi": "cơ hội",
+          "vocab_id": 109,
+          "level": "HSK3"
+        },
+        {
+          "word": "见面",
+          "pinyin": "jiànmiàn",
+          "meaning_vi": "gặp mặt",
+          "vocab_id": 116,
+          "level": "HSK3"
+        },
+        {
+          "word": "难过",
+          "pinyin": "nánguò",
+          "meaning_vi": "buồn, khó chịu",
+          "vocab_id": 170,
+          "level": "HSK3"
+        }
+      ]
+    },
+    {
+      "id": "H41006_L_06",
+      "exam_id": "H41006",
+      "question_number": 6,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他们准备陪老人去散步。",
+        "pinyin": "tā men zhǔn bèi péi lǎo rén qù sàn bù 。",
+        "vi": "Họ chuẩn bị đi dạo cùng người cao tuổi."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Họ chuẩn bị đi dạo cùng người cao tuổi.'.",
+      "evidence": {
+        "zh": "今年春节他们本来打算出国去逛逛，但是由于家里的老人突然生病了，他们只好放弃了这个计划。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41006.mp3",
+      "alignment": {
+        "status": "verified",
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 289120,
+          "end_ms": 305719
+        },
+        "statement": {
+          "start_ms": 305919,
+          "end_ms": 308830
+        },
+        "full_question": {
+          "start_ms": 289120,
+          "end_ms": 308830
+        }
+      },
+      "transcript": {
+        "full_zh": "今年春节他们本来打算出国去逛逛，但是由于家里的老人突然生病了，他们只好放弃了这个计划。",
+        "full_vi": "Tết năm nay ban đầu họ dự định ra nước ngoài du lịch dạo chơi, nhưng do người già trong nhà đột ngột đổ bệnh, họ đành phải từ bỏ kế hoạch này.",
+        "sentences": [
+          {
+            "id": "H41006_L_06_S1",
+            "index": 0,
+            "zh": "今年春节他们本来打算出国去逛逛，但是由于家里的老人突然生病了，他们只好放弃了这个计划。",
+            "pinyin": "jīn nián chūn jié tā men běn lái dǎ suàn chū guó qù guàng guàng ， dàn shì yóu yú jiā lǐ de lǎo rén tū rán shēng bìng le ， tā men zhǐ hǎo fàng qì le zhè ge jì huà 。",
+            "vi": "Tết năm nay ban đầu họ dự định ra nước ngoài du lịch dạo chơi, nhưng do người già trong nhà đột ngột đổ bệnh, họ đành phải từ bỏ kế hoạch này.",
+            "start_ms": 290750,
+            "end_ms": 305719
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "生病",
+          "pinyin": "shēngbìng",
+          "meaning_vi": "bị bệnh",
+          "vocab_id": 92,
+          "level": "HSK2"
+        },
+        {
+          "word": "准备",
+          "pinyin": "zhǔnbèi",
+          "meaning_vi": "chuẩn bị",
+          "vocab_id": 147,
+          "level": "HSK2"
+        },
+        {
+          "word": "打算",
+          "pinyin": "dǎsuàn",
+          "meaning_vi": "dự định",
+          "vocab_id": 41,
+          "level": "HSK3"
+        },
+        {
+          "word": "突然",
+          "pinyin": "tūrán",
+          "meaning_vi": "bất ngờ, đột nhiên",
+          "vocab_id": 222,
+          "level": "HSK3"
+        },
+        {
+          "word": "本来",
+          "pinyin": "běnlái",
+          "meaning_vi": "ban đầu, vốn dĩ",
+          "vocab_id": 15,
+          "level": "HSK4"
+        },
+        {
+          "word": "放弃",
+          "pinyin": "fàngqì",
+          "meaning_vi": "từ bỏ",
+          "vocab_id": 115,
+          "level": "HSK4"
+        },
+        {
+          "word": "计划",
+          "pinyin": "jìhuà",
+          "meaning_vi": "kế hoạch",
+          "vocab_id": 194,
+          "level": "HSK4"
+        },
+        {
+          "word": "散步",
+          "pinyin": "sànbù",
+          "meaning_vi": "đi bộ, đi dạo",
+          "vocab_id": 364,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41006_L_07",
+      "exam_id": "H41006",
+      "question_number": 7,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "大家明白马经理的意思。",
+        "pinyin": "dà jiā míng bái mǎ jīng lǐ de yì si 。",
+        "vi": "Mọi người đều hiểu ý của Giám đốc Mã."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Mọi người đều hiểu ý của Giám đốc Mã.'.",
+      "evidence": {
+        "zh": "虽然马经理没有直接说，不过，大家都听明白了，他对我们最近的工作不是很满意。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41006.mp3",
+      "alignment": {
+        "status": "verified",
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 317780,
+          "end_ms": 332320
+        },
+        "statement": {
+          "start_ms": 332520,
+          "end_ms": 334790
+        },
+        "full_question": {
+          "start_ms": 317780,
+          "end_ms": 334790
+        }
+      },
+      "transcript": {
+        "full_zh": "虽然马经理没有直接说，不过，大家都听明白了，他对我们最近的工作不是很满意。",
+        "full_vi": "Tuy Giám đốc Mã không nói thẳng, nhưng mọi người đều nghe hiểu cả rồi, ông ấy không mấy hài lòng với công việc gần đây của chúng ta.",
+        "sentences": [
+          {
+            "id": "H41006_L_07_S1",
+            "index": 0,
+            "zh": "虽然马经理没有直接说，不过，大家都听明白了，他对我们最近的工作不是很满意。",
+            "pinyin": "suī rán mǎ jīng lǐ méi yǒu zhí jiē shuō ， bù guò ， dà jiā dōu tīng míng bái le ， tā duì wǒ men zuì jìn de gōng zuò bú shì hěn mǎn yì 。",
+            "vi": "Tuy Giám đốc Mã không nói thẳng, nhưng mọi người đều nghe hiểu cả rồi, ông ấy không mấy hài lòng với công việc gần đây của chúng ta.",
+            "start_ms": 318530,
+            "end_ms": 332320
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "工作",
+          "pinyin": "gōngzuò",
+          "meaning_vi": "công việc, làm việc",
+          "vocab_id": 33,
+          "level": "HSK1"
+        },
+        {
+          "word": "没有",
+          "pinyin": "méiyǒu",
+          "meaning_vi": "không có",
+          "vocab_id": 64,
+          "level": "HSK1"
+        },
+        {
+          "word": "我们",
+          "pinyin": "wǒmen",
+          "meaning_vi": "chúng tôi, chúng ta",
+          "vocab_id": 112,
+          "level": "HSK1"
+        },
+        {
+          "word": "大家",
+          "pinyin": "dàjiā",
+          "meaning_vi": "mọi người",
+          "vocab_id": 17,
+          "level": "HSK2"
+        },
+        {
+          "word": "意思",
+          "pinyin": "yìsi",
+          "meaning_vi": "ý nghĩa",
+          "vocab_id": 131,
+          "level": "HSK2"
+        },
+        {
+          "word": "经理",
+          "pinyin": "jīnglǐ",
+          "meaning_vi": "giám đốc, quản lý",
+          "vocab_id": 131,
+          "level": "HSK3"
+        },
+        {
+          "word": "满意",
+          "pinyin": "mǎnyì",
+          "meaning_vi": "hài lòng",
+          "vocab_id": 161,
+          "level": "HSK3"
+        },
+        {
+          "word": "明白",
+          "pinyin": "míngbai",
+          "meaning_vi": "hiểu rõ, rõ ràng",
+          "vocab_id": 165,
+          "level": "HSK3"
+        }
+      ]
+    },
+    {
+      "id": "H41006_L_08",
+      "exam_id": "H41006",
+      "question_number": 8,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "生活离不开电。",
+        "pinyin": "shēng huó lí bù kāi diàn 。",
+        "vi": "Cuộc sống không thể tách rời điện năng."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Cuộc sống không thể tách rời điện năng.'.",
+      "evidence": {
+        "zh": "电灯、电视、洗衣机、空调、电梯，都需要电。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41006.mp3",
+      "alignment": {
+        "status": "verified",
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 343620,
+          "end_ms": 365300
+        },
+        "statement": {
+          "start_ms": 365500,
+          "end_ms": 366930
+        },
+        "full_question": {
+          "start_ms": 343620,
+          "end_ms": 366930
+        }
+      },
+      "transcript": {
+        "full_zh": "电灯、电视、洗衣机、空调、电梯，都需要电。如果没有电，真不知道我们的生活会变成什么样子。节约用电，和我们每个人都有关系。",
+        "full_vi": "Đèn điện, tivi, máy giặt, điều hòa, thang máy đều cần dùng điện. Nếu không có điện, thật không biết cuộc sống của chúng ta sẽ trở thành thế nào. Tiết kiệm điện có liên quan mật thiết đến mỗi người chúng ta.",
+        "sentences": [
+          {
+            "id": "H41006_L_08_S1",
+            "index": 0,
+            "zh": "电灯、电视、洗衣机、空调、电梯，都需要电。",
+            "pinyin": "diàn dēng 、 diàn shì 、 xǐ yī jī 、 kōng tiáo 、 diàn tī ， dōu xū yào diàn 。",
+            "vi": "Đèn điện, tivi, máy giặt, điều hòa, thang máy đều cần dùng điện.",
+            "start_ms": 345350,
+            "end_ms": 349814
+          },
+          {
+            "id": "H41006_L_08_S2",
+            "index": 1,
+            "zh": "如果没有电，真不知道我们的生活会变成什么样子。",
+            "pinyin": "rú guǒ méi yǒu diàn ， zhēn bù zhī dào wǒ men de shēng huó huì biàn chéng shén me yàng zi 。",
+            "vi": "Nếu không có điện, thật không biết cuộc sống của chúng ta sẽ trở thành thế nào.",
+            "start_ms": 349914,
+            "end_ms": 358135
+          },
+          {
+            "id": "H41006_L_08_S3",
+            "index": 2,
+            "zh": "节约用电，和我们每个人都有关系。",
+            "pinyin": "jié yuē yòng diàn ， hé wǒ men měi gè rén dōu yǒu guān xì 。",
+            "vi": "Tiết kiệm điện có liên quan mật thiết đến mỗi người chúng ta.",
+            "start_ms": 358235,
+            "end_ms": 365300
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "电视",
+          "pinyin": "diànshì",
+          "meaning_vi": "tivi",
+          "vocab_id": 18,
+          "level": "HSK1"
+        },
+        {
+          "word": "没有",
+          "pinyin": "méiyǒu",
+          "meaning_vi": "không có",
+          "vocab_id": 64,
+          "level": "HSK1"
+        },
+        {
+          "word": "什么",
+          "pinyin": "shénme",
+          "meaning_vi": "cái gì",
+          "vocab_id": 93,
+          "level": "HSK1"
+        },
+        {
+          "word": "我们",
+          "pinyin": "wǒmen",
+          "meaning_vi": "chúng tôi, chúng ta",
+          "vocab_id": 112,
+          "level": "HSK1"
+        },
+        {
+          "word": "知道",
+          "pinyin": "zhīdào",
+          "meaning_vi": "biết",
+          "vocab_id": 146,
+          "level": "HSK2"
+        },
+        {
+          "word": "电梯",
+          "pinyin": "diàntī",
+          "meaning_vi": "thang máy",
+          "vocab_id": 51,
+          "level": "HSK3"
+        },
+        {
+          "word": "关系",
+          "pinyin": "guānxì",
+          "meaning_vi": "quan hệ",
+          "vocab_id": 85,
+          "level": "HSK3"
+        },
+        {
+          "word": "空调",
+          "pinyin": "kōngtiáo",
+          "meaning_vi": "máy điều hòa",
+          "vocab_id": 140,
+          "level": "HSK3"
+        }
+      ]
+    },
+    {
+      "id": "H41006_L_09",
+      "exam_id": "H41006",
+      "question_number": 9,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "他熟悉当地民族情况。",
+        "pinyin": "tā shú xī dāng dì mín zú qíng kuàng 。",
+        "vi": "Anh ấy nắm rất rõ tình hình các dân tộc địa phương."
+      },
+      "answer": false,
+      "explanation_vi": "Nhận định sai: Nội dung đoạn nghe không trùng khớp hoặc trái ngược với nhận định 'Anh ấy nắm rất rõ tình hình các dân tộc địa phương.'.",
+      "evidence": {
+        "zh": "那个地方有很多民族，这方面的情况我不太了解，到时候请当地的导游给大家详细介绍吧，今天我就不多讲了。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41006.mp3",
+      "alignment": {
+        "status": "verified",
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 375799,
+          "end_ms": 395320
+        },
+        "statement": {
+          "start_ms": 395520,
+          "end_ms": 397510
+        },
+        "full_question": {
+          "start_ms": 375799,
+          "end_ms": 397510
+        }
+      },
+      "transcript": {
+        "full_zh": "那个地方有很多民族，这方面的情况我不太了解，到时候请当地的导游给大家详细介绍吧，今天我就不多讲了。",
+        "full_vi": "Nơi đó có rất nhiều dân tộc, tình hình phương diện này tôi không hiểu rõ lắm, đến lúc đó hãy nhờ hướng dẫn viên bản địa giới thiệu chi tiết cho mọi người nhé, hôm nay tôi không nói nhiều nữa.",
+        "sentences": [
+          {
+            "id": "H41006_L_09_S1",
+            "index": 0,
+            "zh": "那个地方有很多民族，这方面的情况我不太了解，到时候请当地的导游给大家详细介绍吧，今天我就不多讲了。",
+            "pinyin": "nà ge dì fāng yǒu hěn duō mín zú ， zhè fāng miàn de qíng kuàng wǒ bù tài liǎo jiě ， dào shí hòu qǐng dāng dì de dǎo yóu gěi dà jiā xiáng xì jiè shào ba ， jīn tiān wǒ jiù bù duō jiǎng le 。",
+            "vi": "Nơi đó có rất nhiều dân tộc, tình hình phương diện này tôi không hiểu rõ lắm, đến lúc đó hãy nhờ hướng dẫn viên bản địa giới thiệu chi tiết cho mọi người nhé, hôm nay tôi không nói nhiều nữa.",
+            "start_ms": 377510,
+            "end_ms": 395320
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "今天",
+          "pinyin": "jīntiān",
+          "meaning_vi": "hôm nay",
+          "vocab_id": 47,
+          "level": "HSK1"
+        },
+        {
+          "word": "时候",
+          "pinyin": "shíhou",
+          "meaning_vi": "lúc, thời điểm",
+          "vocab_id": 95,
+          "level": "HSK1"
+        },
+        {
+          "word": "大家",
+          "pinyin": "dàjiā",
+          "meaning_vi": "mọi người",
+          "vocab_id": 17,
+          "level": "HSK2"
+        },
+        {
+          "word": "介绍",
+          "pinyin": "jièshào",
+          "meaning_vi": "giới thiệu",
+          "vocab_id": 48,
+          "level": "HSK2"
+        },
+        {
+          "word": "地方",
+          "pinyin": "dìfang",
+          "meaning_vi": "nơi, địa phương",
+          "vocab_id": 48,
+          "level": "HSK3"
+        },
+        {
+          "word": "了解",
+          "pinyin": "liǎojiě",
+          "meaning_vi": "hiểu rõ, tìm hiểu",
+          "vocab_id": 154,
+          "level": "HSK3"
+        },
+        {
+          "word": "导游",
+          "pinyin": "dǎoyóu",
+          "meaning_vi": "hướng dẫn viên du lịch",
+          "vocab_id": 79,
+          "level": "HSK4"
+        },
+        {
+          "word": "方面",
+          "pinyin": "fāngmiàn",
+          "meaning_vi": "phương diện, mặt",
+          "vocab_id": 112,
+          "level": "HSK4"
+        }
+      ]
+    },
+    {
+      "id": "H41006_L_10",
+      "exam_id": "H41006",
+      "question_number": 10,
+      "part": 1,
+      "type": "true_false",
+      "statement": {
+        "zh": "火车快要到站了。",
+        "pinyin": "huǒ chē kuài yào dào zhàn le 。",
+        "vi": "Tàu hỏa sắp vào ga rồi."
+      },
+      "answer": true,
+      "explanation_vi": "Nhận định đúng: Nội dung đoạn nghe phù hợp với nhận định 'Tàu hỏa sắp vào ga rồi.'.",
+      "evidence": {
+        "zh": "列车还有十分钟就要进站了，请下车的旅客提前整理好自己的行李，准备下车。",
+        "sentence_index": 0
+      },
+      "audio_src": "assets/audio/exams/H41006.mp3",
+      "alignment": {
+        "status": "verified",
+        "method": "whisper_word_level_acoustic_aligned",
+        "notes": "Mốc âm thanh căn chỉnh chuẩn xác theo Whisper word-level timestamps, loại bỏ hoàn toàn hiện tượng ngắt cụt câu và lấn âm."
+      },
+      "segments": {
+        "passage": {
+          "start_ms": 406760,
+          "end_ms": 420760
+        },
+        "statement": {
+          "start_ms": 420960,
+          "end_ms": 422530
+        },
+        "full_question": {
+          "start_ms": 406760,
+          "end_ms": 422530
+        }
+      },
+      "transcript": {
+        "full_zh": "列车还有十分钟就要进站了，请下车的旅客提前整理好自己的行李，准备下车。",
+        "full_vi": "Đoàn tàu còn 10 phút nữa là vào ga, xin mời quý khách xuống ga thu dọn hành lý của mình từ trước để chuẩn bị xuống tàu.",
+        "sentences": [
+          {
+            "id": "H41006_L_10_S1",
+            "index": 0,
+            "zh": "列车还有十分钟就要进站了，请下车的旅客提前整理好自己的行李，准备下车。",
+            "pinyin": "liè chē hái yǒu shí fēn zhōng jiù yào jìn zhàn le ， qǐng xià chē de lǚ kè tí qián zhěng lǐ hǎo zì jǐ de xíng lǐ ， zhǔn bèi xià chē 。",
+            "vi": "Đoàn tàu còn 10 phút nữa là vào ga, xin mời quý khách xuống ga thu dọn hành lý của mình từ trước để chuẩn bị xuống tàu.",
+            "start_ms": 408430,
+            "end_ms": 420760
+          }
+        ]
+      },
+      "vocabulary_matches": [
+        {
+          "word": "分钟",
+          "pinyin": "fēnzhōng",
+          "meaning_vi": "phút",
+          "vocab_id": 30,
+          "level": "HSK1"
+        },
+        {
+          "word": "准备",
+          "pinyin": "zhǔnbèi",
+          "meaning_vi": "chuẩn bị",
+          "vocab_id": 147,
+          "level": "HSK2"
+        },
+        {
+          "word": "自己",
+          "pinyin": "zìjǐ",
+          "meaning_vi": "tự mình, bản thân",
+          "vocab_id": 294,
+          "level": "HSK3"
+        },
+        {
+          "word": "十分",
+          "pinyin": "shífēn",
+          "meaning_vi": "rất, mười phần",
+          "vocab_id": 383,
+          "level": "HSK4"
+        },
+        {
+          "word": "提前",
+          "pinyin": "tíqián",
+          "meaning_vi": "sớm hơn dự định, trước hạn",
+          "vocab_id": 432,
+          "level": "HSK4"
+        },
+        {
+          "word": "整理",
+          "pinyin": "zhěnglǐ",
+          "meaning_vi": "chỉnh lý, sắp xếp",
+          "vocab_id": 557,
+          "level": "HSK4"
+        }
+      ]
+    }
+  ]
+}

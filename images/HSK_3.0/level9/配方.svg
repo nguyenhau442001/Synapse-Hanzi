@@ -1,0 +1,51 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for focus -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.6"/>
+
+  <!-- Conceptual illustration for "配方" (Formula / Recipe / Prescription) -->
+  <g transform="translate(0, 0)">
+    <!-- Scroll / Document (The Formula) -->
+    <path d="M70 70 L170 70 C175.5 70 180 74.5 180 80 L180 170 C180 175.5 175.5 180 170 180 L70 180 C64.5 180 60 175.5 60 170 L60 80 C60 74.5 64.5 70 70 70 Z" fill="#2C3240" stroke="#3E4556" stroke-width="2"/>
+    
+    <!-- Paper sheet on top -->
+    <rect x="75" y="60" width="90" height="110" rx="6" fill="#F4F5F7"/>
+    
+    <!-- Header line / Title representation -->
+    <rect x="90" y="75" width="60" height="8" rx="4" fill="#E5A93B"/>
+
+    <!-- Recipe lines / Formula symbols -->
+    <!-- Ingredient 1 -->
+    <circle cx="92" cy="100" r="4" fill="#4A5568"/>
+    <rect x="104" y="98" width="45" height="4" rx="2" fill="#CBD5E1"/>
+
+    <!-- Ingredient 2 -->
+    <circle cx="92" cy="120" r="4" fill="#4A5568"/>
+    <rect x="104" y="118" width="35" height="4" rx="2" fill="#CBD5E1"/>
+
+    <!-- Ingredient 3 -->
+    <circle cx="92" cy="140" r="4" fill="#4A5568"/>
+    <rect x="104" y="138" width="50" height="4" rx="2" fill="#CBD5E1"/>
+
+    <!-- Decorative Seal / Stamp (representing a secret recipe or official formula) -->
+    <circle cx="145" cy="153" r="10" fill="#E05638"/>
+    <path d="M141 153 L144 156 L150 149" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Mortar and Pestle (Mixing/Compounding elements associated with "配方" / formulation) -->
+    <!-- Mortar Base -->
+    <path d="M35 155 L65 155 L58 195 C57 200 52 204 47 204 L53 204 C48 204 43 200 42 195 Z" fill="#E5A93B"/>
+    <!-- Mortar Bowl -->
+    <path d="M25 140 C25 130 33 122 43 122 L77 122 C87 122 95 130 95 140 C95 147 90 154 83 157 L37 157 C30 154 25 147 25 140 Z" fill="#F4F5F7"/>
+    <!-- Mortar Inner Rim -->
+    <ellipse cx="60" cy="122" rx="35" ry="8" fill="#CBD5E1"/>
+    <!-- Pestle -->
+    <path d="M100 85 L125 110 C128 113 128 118 125 121 L121 125 C118 128 113 128 110 125 L85 100 Z" fill="#E5A93B"/>
+    <circle cx="115" cy="115" r="5" fill="#C68A27"/>
+
+    <!-- Golden Sparkles / Precision Indicator (highlighting the "secret" or "precise" aspect) -->
+    <path d="M185 85 L188 95 L198 98 L188 101 L185 111 L182 101 L172 98 L182 95 Z" fill="#E5A93B"/>
+    <path d="M165 50 L167 55 L172 57 L167 59 L165 64 L163 59 L158 57 L163 55 Z" fill="#E5A93B" opacity="0.8"/>
+  </g>
+</svg>

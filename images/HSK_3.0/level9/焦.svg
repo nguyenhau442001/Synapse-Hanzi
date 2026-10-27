@@ -1,0 +1,63 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle pan shadow -->
+  <ellipse cx="120" cy="180" rx="70" ry="12" fill="#111318"/>
+
+  <!-- Modern Pan (Side/Perspective view) -->
+  <g id="pan">
+    <!-- Pan handle -->
+    <path d="M 185 105 L 225 90 C 228 89 231 92 229 95 L 195 125 Z" fill="#2E3440"/>
+    <path d="M 190 106 L 222 93" stroke="#4C566A" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Pan body outer rim -->
+    <ellipse cx="120" cy="120" rx="75" ry="30" fill="#3B4252"/>
+    
+    <!-- Pan inner base -->
+    <ellipse cx="120" cy="125" rx="65" ry="24" fill="#2E3440"/>
+    
+    <!-- Hot oil shimmer / base glow -->
+    <ellipse cx="120" cy="127" rx="58" ry="20" fill="#D08770" opacity="0.3"/>
+  </g>
+
+  <!-- Fish (Object being burned/charred as per noun context) -->
+  <g id="charred-fish">
+    <!-- Fish Body -->
+    <path d="M 75 125 Q 95 110 135 112 Q 175 114 185 125 Q 175 136 135 134 Q 95 132 75 125 Z" fill="#3B2E2A"/>
+    
+    <!-- Fish Tail -->
+    <path d="M 68 120 L 52 110 L 58 125 L 52 140 L 68 130 Z" fill="#2D221F"/>
+    
+    <!-- Charcoal / Burnt texture patches on fish -->
+    <path d="M 100 118 Q 110 115 125 120 Q 115 128 105 124 Z" fill="#1A1D24"/>
+    <path d="M 140 120 Q 155 118 165 126 Q 145 130 138 124 Z" fill="#1A1D24"/>
+    <circle cx="120" cy="122" r="4" fill="#1A1D24"/>
+    <circle cx="85" cy="124" r="3" fill="#1A1D24"/>
+
+    <!-- Burnt Edges (Crispy/Charred details) -->
+    <path d="M 75 125 Q 95 110 135 112" stroke="#1A1D24" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 135 112 Q 175 114 185 125" stroke="#1A1D24" stroke-width="4" fill="none" stroke-linecap="round"/>
+    
+    <!-- Fish Eye (cooked/dull) -->
+    <circle cx="168" cy="120" r="3" fill="#1A1D24"/>
+  </g>
+
+  <!-- Heat and Smoke (Visualizing '焦' - burned / scorched) -->
+  <g id="heat-and-smoke" opacity="0.85">
+    <!-- Heat glowing embers underneath fish -->
+    <path d="M 90 135 Q 120 142 150 135" stroke="#BF616A" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 105 138 Q 120 144 135 138" stroke="#EBCB8B" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Wisp of smoke 1 -->
+    <path d="M 110 100 Q 100 80 115 65 Q 130 50 120 35" stroke="#88C0D0" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.4"/>
+    
+    <!-- Wisp of smoke 2 -->
+    <path d="M 140 105 Q 155 90 145 75 Q 135 60 150 45" stroke="#88C0D0" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.3"/>
+
+    <!-- Heat shimmer particles -->
+    <circle cx="100" cy="95" r="2" fill="#D08770" opacity="0.7"/>
+    <circle cx="150" cy="98" r="1.5" fill="#D08770" opacity="0.7"/>
+    <circle cx="125" cy="85" r="2.5" fill="#EBCB8B" opacity="0.8"/>
+  </g>
+</svg>

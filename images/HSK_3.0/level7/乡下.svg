@@ -1,0 +1,58 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Sky background -->
+  <path d="M24 40C24 31.7157 30.7157 25 39 25H201C209.284 25 216 31.7157 216 40V135H24V40Z" fill="#222831"/>
+  
+  <!-- Soft glowing moon / peaceful atmosphere -->
+  <circle cx="185" cy="65" r="14" fill="#FFE5A3" opacity="0.8"/>
+  
+  <!-- Distant mountain hills -->
+  <path d="M24 135L75 85L130 135H24Z" fill="#2C3544"/>
+  <path d="M100 135L155 75L216 135H100Z" fill="#323D4E"/>
+  
+  <!-- Ground / fields -->
+  <path d="M24 135H216V205C216 213.284 209.284 220 201 220H39C30.7157 220 24 213.284 24 205V135Z" fill="#1E2922"/>
+  
+  <!-- Farmland furrows / rows -->
+  <path d="M60 220L90 150" stroke="#2B3B2E" stroke-width="3" stroke-linecap="round"/>
+  <path d="M100 220L120 150" stroke="#2B3B2E" stroke-width="3" stroke-linecap="round"/>
+  <path d="M140 220L150 150" stroke="#2B3B2E" stroke-width="3" stroke-linecap="round"/>
+  <path d="M180 220L170 150" stroke="#2B3B2E" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Traditional rural house -->
+  <!-- Base structure -->
+  <rect x="85" y="105" width="70" height="45" fill="#EAEAEA"/>
+  
+  <!-- Side wall shadow -->
+  <path d="M155 105L170 115V150L155 140V105Z" fill="#D0D0D0"/>
+
+  <!-- Roof -->
+  <path d="M75 105L120 75L165 105H75Z" fill="#D97757"/>
+  <path d="M120 75L165 105H175L130 75H120Z" fill="#C25E3E"/>
+
+  <!-- Door & Windows -->
+  <rect x="110" y="125" width="20" height="25" fill="#5D4037" rx="2"/>
+  <rect x="92" y="112" width="12" height="12" fill="#FFE5A3" rx="1"/>
+  <rect x="136" y="112" width="12" height="12" fill="#FFE5A3" rx="1"/>
+
+  <!-- Rural elements: Tree left -->
+  <circle cx="55" cy="115" r="18" fill="#4E7C59"/>
+  <circle cx="45" cy="125" r="14" fill="#3D6347"/>
+  <rect x="52" y="130" width="6" height="20" fill="#795548"/>
+
+  <!-- Rural elements: Tree right -->
+  <circle cx="190" cy="120" r="15" fill="#3D6347"/>
+  <rect x="188" y="130" width="4" height="15" fill="#795548"/>
+
+  <!-- Wooden fence -->
+  <rect x="35" y="145" width="40" height="4" fill="#A1887F"/>
+  <rect x="38" y="142" width="3" height="12" fill="#8D6E63"/>
+  <rect x="53" y="142" width="3" height="12" fill="#8D6E63"/>
+  <rect x="68" y="142" width="3" height="12" fill="#8D6E63"/>
+
+  <!-- Foreground crop details (green sprouts) -->
+  <path d="M75 170C75 165 78 160 80 158C82 160 85 165 85 170" fill="#558B2F"/>
+  <path d="M155 185C155 180 158 175 160 173C162 175 165 180 165 185" fill="#558B2F"/>
+  <path d="M105 195C105 190 108 185 110 183C112 185 115 190 115 195" fill="#558B2F"/>
+</svg>

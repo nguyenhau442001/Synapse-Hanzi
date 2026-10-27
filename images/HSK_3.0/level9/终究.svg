@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- The "Lies" - A complex, intricate, but fragile web structure -->
+  <path d="M60 180 L120 60 L180 180 Z" fill="none" stroke="#4A5568" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M80 140 L160 140 M70 160 L170 160" stroke="#4A5568" stroke-width="2" stroke-dasharray="4 4"/>
+  <circle cx="120" cy="120" r="30" fill="none" stroke="#718096" stroke-width="3"/>
+  
+  <!-- The "Truth" - A sharp, high-contrast, golden magnifying lens focusing on the center -->
+  <g transform="translate(120, 120)">
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#ECC94B" stroke-width="4"/>
+    <line x1="15" y1="15" x2="40" y2="40" stroke="#ECC94B" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="45" cy="45" r="8" fill="#ECC94B"/>
+  </g>
+  
+  <!-- The "Collapse/Exposure" - The web is breaking/shattering -->
+  <path d="M60 180 L40 200" stroke="#F56565" stroke-width="3" stroke-linecap="round"/>
+  <path d="M180 180 L200 200" stroke="#F56565" stroke-width="3" stroke-linecap="round"/>
+  <path d="M120 60 L120 30" stroke="#F56565" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Causality/Progression: A sequence of falling domino-like shards -->
+  <rect x="30" y="190" width="10" height="20" rx="2" fill="#A0AEC0" transform="rotate(-20 35 200)"/>
+  <rect x="50" y="195" width="10" height="25" rx="2" fill="#A0AEC0" transform="rotate(-10 55 200)"/>
+  <rect x="180" y="195" width="10" height="25" rx="2" fill="#A0AEC0" transform="rotate(10 185 200)"/>
+  <rect x="200" y="190" width="10" height="20" rx="2" fill="#A0AEC0" transform="rotate(20 205 200)"/>
+</svg>

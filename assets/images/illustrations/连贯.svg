@@ -1,0 +1,37 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(12, 12)">
+    <!-- Document background sheet -->
+    <path d="M40,24 C40,19.5817 43.5817,16 48,16 L168,16 C172.418,16 176,19.5817 176,24 L176,192 C176,196.418 172.418,200 168,200 L48,200 C43.5817,200 40,196.418 40,192 Z" fill="#222733"/>
+    
+    <!-- Paragraph blocks -->
+    <rect x="56" y="36" width="70" height="8" rx="4" fill="#3E4556"/>
+    <rect x="56" y="52" width="104" height="6" rx="3" fill="#2E3442"/>
+    <rect x="56" y="64" width="90" height="6" rx="3" fill="#2E3442"/>
+
+    <rect x="56" y="96" width="50" height="8" rx="4" fill="#3E4556"/>
+    <rect x="56" y="112" width="104" height="6" rx="3" fill="#2E3442"/>
+    <rect x="56" y="124" width="80" height="6" rx="3" fill="#2E3442"/>
+
+    <rect x="56" y="156" width="60" height="8" rx="4" fill="#3E4556"/>
+    <rect x="56" y="172" width="104" height="6" rx="3" fill="#2E3442"/>
+
+    <!-- Glowing Golden Connection Ribbon (Lianguan - Flowing/Seamless transition) -->
+    <path d="M 56 78 
+             C 80 78, 120 78, 140 100 
+             C 160 122, 100 134, 120 148 
+             C 135 160, 160 156, 160 156" 
+          fill="none" stroke="#FFB020" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Glowing nodes and directional pulse markers -->
+    <circle cx="108" cy="78" r="4" fill="#FFC95C"/>
+    <circle cx="140" cy="100" r="5" fill="#FFC95C"/>
+    <circle cx="120" cy="148" r="4" fill="#FFC95C"/>
+
+    <!-- Sparkles along the path to emphasize smooth continuation -->
+    <path d="M 125 110 L 128 113 L 125 116 L 122 113 Z" fill="#FFE180"/>
+    <path d="M 90 92 L 92 94 L 90 96 L 88 94 Z" fill="#FFE180"/>
+    <path d="M 145 136 L 147 138 L 145 140 L 143 138 Z" fill="#FFE180"/>
+  </g>
+</svg>

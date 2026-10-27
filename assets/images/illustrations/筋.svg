@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Leg anatomy focus -->
+  <g transform="translate(60, 40)">
+    <!-- Calf contour -->
+    <path d="M60 20 C 80 20, 90 50, 90 100 C 90 150, 70 170, 50 170 C 30 170, 10 150, 10 100 C 10 50, 40 20, 60 20 Z" fill="#2C313C" stroke="#4A5568" stroke-width="2"/>
+    
+    <!-- Muscle/Tendon fiber representation -->
+    <path d="M50 40 L 50 140 M40 40 L 40 140 M60 40 L 60 140" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- The "Cramp" or "Tension" visual: Highlighting the muscle fibers pulling/contracting -->
+    <path d="M35 60 C 45 70, 55 70, 65 60" stroke="#FFB84D" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M35 90 C 45 100, 55 100, 65 90" stroke="#FFB84D" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M35 120 C 45 130, 55 130, 65 120" stroke="#FFB84D" stroke-width="4" stroke-linecap="round" fill="none"/>
+    
+    <!-- Tension lines indicating sudden contraction -->
+    <path d="M20 50 L 10 40" stroke="#FFB84D" stroke-width="3" stroke-linecap="round"/>
+    <path d="M80 50 L 90 40" stroke="#FFB84D" stroke-width="3" stroke-linecap="round"/>
+    <path d="M20 130 L 10 140" stroke="#FFB84D" stroke-width="3" stroke-linecap="round"/>
+    <path d="M80 130 L 90 140" stroke="#FFB84D" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

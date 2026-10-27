@@ -1,0 +1,49 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Command Scroll / Official Order Document (Representing "下达" - issuing/transmitting a formal order) -->
+    <!-- Background glow for the downward transmission motion -->
+    <path d="M120 45 L120 145" stroke="#FFA726" stroke-width="2" stroke-dasharray="4,4" opacity="0.4"/>
+    
+    <!-- Motion arrows pointing downwards (transmission/issuing action) -->
+    <g fill="none" stroke="#FFA726" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M105 70 L120 85 L135 70"/>
+      <path d="M105 95 L120 110 L135 95"/>
+    </g>
+
+    <!-- Main Scroll/Document Object -->
+    <g transform="translate(0, 15)">
+      <!-- Document Shadow -->
+      <path d="M75 55 H165 V175 H75 Z" fill="#111318" rx="4"/>
+      
+      <!-- Main Paper Body -->
+      <rect x="72" y="50" width="96" height="120" rx="4" fill="#ECEFF1"/>
+      
+      <!-- Header Bar / Official Seal Accent -->
+      <rect x="88" y="65" width="64" height="6" rx="3" fill="#CFD8DC"/>
+      
+      <!-- Content Lines on Document -->
+      <rect x="88" y="85" width="48" height="4" rx="2" fill="#90A4AE"/>
+      <rect x="88" y="97" width="64" height="4" rx="2" fill="#90A4AE"/>
+      <rect x="88" y="109" width="56" height="4" rx="2" fill="#90A4AE"/>
+      <rect x="88" y="121" width="64" height="4" rx="2" fill="#90A4AE"/>
+      <rect x="88" y="133" width="36" height="4" rx="2" fill="#90A4AE"/>
+
+      <!-- Official Red Wax Seal / Stamp (Indicating authorization/command) -->
+      <circle cx="132" cy="148" r="14" fill="#E53935"/>
+      <path d="M126 148 L130 152 L140 142" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- Scroll Rollers (Top and Bottom) -->
+      <rect x="68" y="44" width="104" height="8" rx="4" fill="#37474F"/>
+      <rect x="68" y="168" width="104" height="8" rx="4" fill="#37474F"/>
+    </g>
+
+    <!-- Radiating Command Focal Point (Top) -->
+    <circle cx="120" cy="45" r="5" fill="#FFA726"/>
+    
+    <!-- Base Platform / Source Base representing Command Headquarters -->
+    <path d="M85 200 H155 L165 210 H75 Z" fill="#37474F"/>
+    <rect x="95" y="194" width="50" height="6" rx="2" fill="#546E7A"/>
+  </g>
+</svg>

@@ -1,0 +1,58 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "通红" (Brightly red / Glowing red from cold) -->
+  <!-- Contextual elements: Cold environment, glowing intense red cheeks -->
+
+  <g id="scene">
+    <!-- Atmospheric cold background elements: subtle falling snowflakes / frost lines -->
+    <path d="M 40,60 L 44,64" stroke="#4A5568" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 190,45 L 186,49" stroke="#4A5568" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 205,120 L 200,125" stroke="#4A5568" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 35,160 L 40,165" stroke="#4A5568" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <!-- Wind streaks indicating freezing weather -->
+    <path d="M 20,80 Q 50,75 80,82" fill="none" stroke="#2D3748" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 150,180 Q 180,175 210,182" fill="none" stroke="#2D3748" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Soldier/Person silhouette / profile showing head and shoulders -->
+    <!-- Dark/slate winter coat -->
+    <path d="M 85,210 L 70,165 Q 90,150 120,150 Q 150,150 170,165 L 155,210 Z" fill="#2D3748"/>
+    <!-- Collar / winter gear -->
+    <path d="M 75,165 Q 120,175 165,165 L 160,150 Q 120,155 80,150 Z" fill="#4A5568"/>
+
+    <!-- Head / Face base -->
+    <circle cx="120" cy="115" r="38" fill="#E2E8F0"/>
+
+    <!-- Ushanka / Winter hat (military/cold weather style) -->
+    <path d="M 82,110 Q 80,75 120,75 Q 160,75 158,110 Z" fill="#2C3E50"/>
+    <!-- Ear flaps folded up -->
+    <path d="M 78,95 Q 68,105 75,120 Q 82,110 82,95 Z" fill="#34495E"/>
+    <path d="M 162,95 Q 172,105 165,120 Q 158,110 158,95 Z" fill="#34495E"/>
+    <!-- Hat badge/detail placeholder (minimalist line) -->
+    <circle cx="120" cy="88" r="4" fill="#D69E2E"/>
+
+    <!-- Eyes (closed tightly against the freezing wind) -->
+    <path d="M 102,112 Q 107,108 112,112" fill="none" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 128,112 Q 133,108 138,112" fill="none" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Nose -->
+    <path d="M 118,116 L 122,123 L 117,125" fill="none" stroke="#CBD5E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Mouth (tense/shivering line) -->
+    <path d="M 112,138 Q 120,135 128,138" fill="none" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- VISUAL EMBODIMENT OF "通红" (ADJECTIVE/STATE):
+         Exaggerated, glowing, intense red flush on cheeks contrasting sharply with cold pale face and dark background -->
+    <ellipse cx="97" cy="125" rx="14" ry="10" fill="#FF3333" opacity="0.85"/>
+    <ellipse cx="143" cy="125" rx="14" ry="10" fill="#FF3333" opacity="0.85"/>
+    
+    <!-- Inner glowing core of the redness -->
+    <ellipse cx="97" cy="125" rx="8" ry="6" fill="#FF6B6B" opacity="0.9"/>
+    <ellipse cx="143" cy="125" rx="8" ry="6" fill="#FF6B6B" opacity="0.9"/>
+
+    <!-- Frost breath / steam vapor wisps indicating extreme cold -->
+    <path d="M 122,142 Q 130,148 126,156 Q 122,164 135,168" fill="none" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  </g>
+</svg>

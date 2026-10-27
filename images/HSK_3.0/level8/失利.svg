@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground -->
+  <path d="M40 190 L200 190" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Defeated Player (Slumped posture) -->
+  <g transform="translate(120, 160)">
+    <!-- Legs -->
+    <path d="M-15 0 L-25 30 M15 0 L25 30" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+    <!-- Torso -->
+    <path d="M0 -50 L0 0" stroke="#E2E8F0" stroke-width="10" stroke-linecap="round"/>
+    <!-- Arms (Hanging down) -->
+    <path d="M-5 -40 L-20 -10 M5 -40 L20 -10" stroke="#E2E8F0" stroke-width="6" stroke-linecap="round"/>
+    <!-- Head (Looking down) -->
+    <circle cx="0" cy="-65" r="15" fill="#E2E8F0"/>
+    <!-- Jersey Color Accent -->
+    <path d="M-8 -45 L8 -45 L5 -10 L-5 -10 Z" fill="#F6AD55"/>
+  </g>
+  
+  <!-- Dropped Ball (Symbolizing loss of the game) -->
+  <circle cx="160" cy="180" r="12" fill="#F6AD55"/>
+  <path d="M152 172 L168 188 M168 172 L152 188" stroke="#1A1D24" stroke-width="2"/>
+  
+  <!-- Scoreboard (Faded/Defeated state) -->
+  <rect x="70" y="40" width="100" height="50" rx="8" fill="#2D3748"/>
+  <rect x="80" y="55" width="30" height="20" fill="#4A5568"/>
+  <rect x="130" y="55" width="30" height="20" fill="#F6AD55"/>
+</svg>

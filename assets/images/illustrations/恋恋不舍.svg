@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle floor shadow / warm dawn horizon ground glow -->
+  <ellipse cx="120" cy="205" rx="80" ry="12" fill="#252A34" opacity="0.8"/>
+
+  <!-- SCENE: Young teacher and a young student holding hands, turning back to look at each other with reluctant farewell -->
+  
+  <!-- Young Teacher (Left character) -->
+  <g id="teacher">
+    <!-- Body / Jacket -->
+    <path d="M 85 160 L 95 200 L 70 200 L 60 160 Z" fill="#3B82F6"/>
+    <!-- Backpack strap -->
+    <path d="M 72 160 L 82 185" stroke="#1E293B" stroke-width="4" stroke-linecap="round"/>
+    <!-- Head -->
+    <circle cx="78" cy="135" r="15" fill="#FDE047"/>
+    <!-- Hair -->
+    <path d="M 63 135 C 63 123 72 120 85 124 C 92 126 93 135 93 135 Z" fill="#334155"/>
+    <!-- Face profile (looking right toward the student) -->
+    <!-- Arm reaching right -->
+    <path d="M 85 155 L 105 160" stroke="#FDE047" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Student (Right character) -->
+  <g id="student">
+    <!-- Body / Red scarf & jacket (typical volunteer school context) -->
+    <path d="M 155 165 L 145 200 L 170 200 L 175 165 Z" fill="#EF4444"/>
+    <!-- Red scarf -->
+    <polygon points="150,158 165,158 157,175" fill="#DC2626"/>
+    <!-- Head -->
+    <circle cx="162" cy="142" r="13" fill="#FDE047"/>
+    <!-- Hair -->
+    <circle cx="162" cy="138" r="13" fill="#334155" clip-path="polygon(0 0, 100% 0, 100% 50%, 0 50%)"/>
+    <!-- Arm reaching left -->
+    <path d="M 155 162 L 135 160" stroke="#FDE047" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Interlocking Hands (Center connection symbolizing reluctance to part) -->
+  <g id="clasped-hands">
+    <circle cx="120" cy="160" r="6" fill="#FDE047"/>
+    <!-- Motion lines / lingering connection -->
+    <path d="M 112 148 C 116 142 124 142 128 148" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8"/>
+  </g>
+
+  <!-- Background mountain silhouettes (representing the remote countryside/支教 village) -->
+  <path d="M 20 200 L 60 140 L 100 180 L 150 120 L 220 200 Z" fill="#222733"/>
+  <path d="M 80 200 L 130 150 L 180 200 Z" fill="#2A303C"/>
+
+  <!-- Morning sun / warm horizon glow (signifying departure at dawn) -->
+  <circle cx="185" cy="80" r="18" fill="#F59E0B" opacity="0.9"/>
+  <path d="M 185 52 L 185 42" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 157 80 L 147 80" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 165 60 L 158 53" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+
+</svg>

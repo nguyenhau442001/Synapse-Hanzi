@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle floor shadow / ground line -->
+  <ellipse cx="120" cy="195" rx="60" ry="6" fill="#121418"/>
+  <line x1="60" y1="195" x2="180" y2="195" stroke="#2A2F3A" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Pregnant woman character (Noun representation for 孕妇) -->
+  <g transform="translate(0, 5)">
+    <!-- Back hair layer -->
+    <path d="M96 65 Q90 95 98 120" stroke="#E29578" stroke-width="12" stroke-linecap="round" fill="none"/>
+    
+    <!-- Body / Torso with distinct pregnant curvature -->
+    <!-- Using a soft warm color palette fitting modern educational flat design -->
+    <path d="M102 110 C96 110 90 125 92 145 C94 165 104 185 116 192 C120 194 136 194 142 188 C155 175 162 135 145 115 C135 105 115 110 102 110 Z" fill="#4A6FA5"/>
+    
+    <!-- Distinct rounded baby bump highlight -->
+    <path d="M125 125 C145 125 162 145 152 172 C146 186 130 190 118 188 C115 150 115 135 125 125 Z" fill="#5C82B5"/>
+    
+    <!-- Gentle protective hand resting on the baby bump -->
+    <path d="M125 142 C132 140 142 145 144 152 C146 158 140 162 135 158 C130 154 122 150 125 142 Z" fill="#F4A261"/>
+    <circle cx="144" cy="152" r="3" fill="#E76F51"/>
+
+    <!-- Neck -->
+    <rect x="114" y="94" ry="3" width="12" height="22" fill="#F4A261"/>
+
+    <!-- Head -->
+    <circle cx="120" cy="80" r="18" fill="#F4A261"/>
+
+    <!-- Hair styling -->
+    <path d="M102 78 C102 65 110 60 120 60 C135 60 138 72 138 82 C138 82 138 88 136 88 C125 88 102 92 102 78 Z" fill="#E29578"/>
+    <path d="M102 76 C102 70 108 63 118 62" stroke="#D87A54" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+    <!-- Peaceful facial profile (facing right) -->
+    <path d="M132 78 Q136 78 135 82" stroke="#C67048" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <circle cx="131" cy="76" r="1.5" fill="#2A2F3A"/>
+    <path d="M133 86 Q135 88 132 89" stroke="#C67048" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Skirt / Lower garment extending down -->
+    <path d="M98 178 C105 178 138 178 148 178 C152 188 146 194 135 194 C115 194 102 190 98 178 Z" fill="#2B3A55"/>
+
+    <!-- Legs -->
+    <rect x="108" y="192" width="7" height="15" rx="3.5" fill="#F4A261"/>
+    <rect x="126" y="192" width="7" height="15" rx="3.5" fill="#F4A261"/>
+    
+    <!-- Shoes -->
+    <ellipse cx="111.5" cy="208" rx="5" ry="2" fill="#2B3A55"/>
+    <ellipse cx="129.5" cy="208" rx="5" ry="2" fill="#2B3A55"/>
+  </g>
+
+  <!-- Focus accent / Modern UI indicator badge (Golden/Orange) -->
+  <circle cx="120" cy="35" r="3" fill="#E9C46A" opacity="0.6"/>
+  <circle cx="100" cy="45" r="2" fill="#E9C46A" opacity="0.4"/>
+  <circle cx="140" cy="45" r="2" fill="#E9C46A" opacity="0.4"/>
+</svg>

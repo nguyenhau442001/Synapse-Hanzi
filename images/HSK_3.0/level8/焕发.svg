@@ -1,0 +1,55 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glowing background aura representing renewed vitality -->
+  <circle cx="120" cy="130" r="70" fill="#FFB703" opacity="0.12"/>
+  <circle cx="120" cy="130" r="50" fill="#FFB703" opacity="0.18"/>
+
+  <!-- Ancient Port City / Pagoda Silhouette representing the millennia-old structure -->
+  <g transform="translate(0, 15)">
+    <!-- Water / Harbor Base -->
+    <path d="M40 165 C90 160, 150 160, 200 165 L205 180 L35 180 Z" fill="#2D3748"/>
+    
+    <!-- Ancient City Wall/Architecture silhouette -->
+    <path d="M60 165 L60 130 L80 130 L80 120 L95 120 L95 105 L105 105 L105 90 L135 90 L135 105 L145 105 L145 120 L160 120 L160 130 L180 130 L180 165 Z" fill="#283142"/>
+    
+    <!-- Ancient Pagoda Structure -->
+    <rect x="112" y="70" width="16" height="20" fill="#283142"/>
+    <path d="M106 70 L134 70 L130 62 L110 62 Z" fill="#3E4C59"/>
+    <rect x="115" y="45" width="10" height="25" fill="#283142"/>
+    <path d="M110 45 L130 45 L126 38 L114 38 Z" fill="#3E4C59"/>
+    <circle cx="120" cy="34" r="3" fill="#FFB703"/>
+  </g>
+
+  <!-- Vibrant Spring Leaves / Youthful Vitality (焕发 - bừng sáng, rạng rỡ, tràn trề) -->
+  <!-- Dynamic upward curving stems and vibrant golden-orange/spring green leaves -->
+  <g transform="translate(120, 130)">
+    <!-- Central upward energy sweep -->
+    <path d="M -30 35 C -20 10, -10 -20, 0 -50 C 10 -20, 20 10, 30 35" fill="none" stroke="#FFB703" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Left vibrant leaf (glowing) -->
+    <path d="M-10 -15 C -35 -20, -55 -5, -60 15 C -45 25, -20 20, -10 -15 Z" fill="#FFB703"/>
+    <path d="M-10 -15 C -25 -5, -40 5, -50 10" fill="none" stroke="#1A1D24" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Right vibrant leaf (glowing) -->
+    <path d="M10 -15 C 35 -20, 55 -5, 60 15 C 45 25, 20 20, 10 -15 Z" fill="#FB8500"/>
+    <path d="M10 -15 C 25 -5, 40 5, 50 10" fill="none" stroke="#1A1D24" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Top central blossoming leaf / sprout -->
+    <path d="M0 -50 C -12 -70, -5 -85, 0 -95 C 5 -85, 12 -70, 0 -50 Z" fill="#FFD166"/>
+
+    <!-- Lower supporting leaves -->
+    <path d="M-20 10 C -45 5, -55 25, -45 40 C -30 40, -15 30, -20 10 Z" fill="#FB8500" opacity="0.85"/>
+    <path d="M20 10 C 45 5, 55 25, 45 40 C 30 40, 15 30, 20 10 Z" fill="#FFB703" opacity="0.85"/>
+  </g>
+
+  <!-- Radiating light particles / Energy sparks (bừng sáng) -->
+  <g fill="#FFD166">
+    <circle cx="85" cy="65" r="3" opacity="0.9"/>
+    <circle cx="155" cy="65" r="2.5" opacity="0.9"/>
+    <circle cx="70" cy="100" r="2" opacity="0.7"/>
+    <circle cx="170" cy="100" r="3" opacity="0.8"/>
+    <circle cx="120" cy="25" r="2" opacity="0.9"/>
+  </g>
+</svg>

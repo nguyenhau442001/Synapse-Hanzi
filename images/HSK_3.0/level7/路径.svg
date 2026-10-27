@@ -1,0 +1,19 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Path/Road representation -->
+  <path d="M40 180 C 80 180, 100 120, 140 120 C 180 120, 200 60, 200 60" stroke="#FFB84D" stroke-width="12" stroke-linecap="round" fill="none"/>
+  
+  <!-- Nodes/Waypoints -->
+  <circle cx="40" cy="180" r="10" fill="#FFB84D"/>
+  <circle cx="140" cy="120" r="10" fill="#FFB84D"/>
+  <circle cx="200" cy="60" r="12" fill="#FFB84D"/>
+  
+  <!-- Secondary branching path (representing the "new" technical path) -->
+  <path d="M140 120 L 140 60 L 180 60" stroke="#4D94FF" stroke-width="8" stroke-linecap="round" stroke-dasharray="8 8" fill="none"/>
+  <circle cx="180" cy="60" r="8" fill="#4D94FF"/>
+  
+  <!-- Stylized Industrial/Research element at the start -->
+  <rect x="25" y="190" width="30" height="20" rx="4" fill="#E0E0E0"/>
+  <rect x="30" y="195" width="20" height="10" fill="#1A1D24"/>
+</svg>

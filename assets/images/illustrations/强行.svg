@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Gate/Barrier -->
+  <rect x="40" y="80" width="160" height="10" rx="2" fill="#4A5568"/>
+  <rect x="40" y="150" width="160" height="10" rx="2" fill="#4A5568"/>
+  <rect x="40" y="80" width="10" height="80" rx="2" fill="#4A5568"/>
+  <rect x="190" y="80" width="10" height="80" rx="2" fill="#4A5568"/>
+  
+  <!-- Person attempting to force entry (The "Qiangxing" action) -->
+  <g transform="translate(80, 90)">
+    <circle cx="20" cy="20" r="15" fill="#E2E8F0"/>
+    <path d="M5 45 L15 80 L25 80 L35 45" fill="#E2E8F0"/>
+    <path d="M5 45 L-10 60" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+    <path d="M35 45 L50 60" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Security Guard blocking -->
+  <g transform="translate(130, 90)">
+    <circle cx="20" cy="20" r="15" fill="#F6AD55"/>
+    <path d="M5 45 L15 80 L25 80 L35 45" fill="#F6AD55"/>
+    <path d="M5 45 L-10 60" stroke="#F6AD55" stroke-width="8" stroke-linecap="round"/>
+    <path d="M35 45 L50 60" stroke="#F6AD55" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Forceful impact lines -->
+  <path d="M110 110 L130 110" stroke="#F6AD55" stroke-width="4" stroke-linecap="round"/>
+  <path d="M120 100 L120 120" stroke="#F6AD55" stroke-width="4" stroke-linecap="round"/>
+</svg>

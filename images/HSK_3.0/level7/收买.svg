@@ -1,0 +1,67 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container & Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background grid/glow to enhance sleek modern flat theme -->
+  <circle cx="120" cy="120" r="90" fill="#222733" opacity="0.5"/>
+
+  <!-- Motion lines for action/dynamic transfer -->
+  <g opacity="0.6">
+    <path d="M 85 130 C 100 115, 120 115, 135 130" stroke="#F59E0B" stroke-width="2.5" stroke-dasharray="4 4" fill="none" stroke-linecap="round"/>
+    <path d="M 90 120 C 105 105, 125 105, 140 120" stroke="#F59E0B" stroke-width="2" stroke-dasharray="3 3" fill="none" stroke-linecap="round"/>
+    <!-- Arrowhead pointing right (bribery transfer) -->
+    <path d="M 132 125 L 140 120 L 133 115" stroke="#F59E0B" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Corrupt Merchant (Left Character) -->
+  <g id="corrupt-merchant">
+    <!-- Body / Suit -->
+    <path d="M 50 190 L 50 165 C 50 155, 60 145, 75 145 C 90 145, 100 155, 100 165 L 100 190 Z" fill="#3B82F6"/>
+    <!-- Suit lapels -->
+    <path d="M 75 145 L 68 175 L 82 175 Z" fill="#1E293B"/>
+    <path d="M 75 155 L 72 165 L 78 165 Z" fill="#F8FAFC"/>
+    
+    <!-- Head & Hair -->
+    <circle cx="75" cy="122" r="16" fill="#FDBA74"/>
+    <path d="M 60 120 C 60 108, 90 108, 90 120 C 90 123, 85 125, 75 123 C 65 125, 60 123, 60 120 Z" fill="#1E293B"/>
+    <!-- Sly Smirk -->
+    <path d="M 78 126 C 81 126, 83 124, 84 122" stroke="#1E293B" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Extending Arm offering money -->
+    <path d="M 85 150 C 95 150, 110 145, 120 140" stroke="#3B82F6" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <circle cx="123" cy="138" r="6" fill="#FDBA74"/>
+  </g>
+
+  <!-- Money Pile / Briefcase with Cash (The Bribe) -->
+  <g id="bribe-money">
+    <!-- Briefcase base open/angled -->
+    <path d="M 105 155 L 135 155 L 140 175 L 100 175 Z" fill="#92400E"/>
+    <!-- Stack of cash / gold accents -->
+    <rect x="110" y="140" width="25" height="15" rx="2" fill="#10B981"/>
+    <rect x="115" y="133" width="25" height="15" rx="2" fill="#34D399"/>
+    <!-- Currency detail symbols (abstract lines, no text) -->
+    <circle cx="127" cy="140" r="3" fill="#F59E0B"/>
+    <circle cx="127" cy="148" r="3" fill="#F59E0B"/>
+  </g>
+
+  <!-- Upright / Refusing Judge (Right Character) - Rejecting Action -->
+  <g id="refusing-judge">
+    <!-- Body / Formal Robe or Suit -->
+    <path d="M 145 190 L 145 160 C 145 150, 155 140, 170 140 C 185 140, 195 150, 195 160 L 195 190 Z" fill="#475569"/>
+    
+    <!-- Head & Hair -->
+    <circle cx="170" cy="120" r="16" fill="#FDBA74"/>
+    <path d="M 154 118 C 154 105, 186 105, 186 118 Z" fill="#334155"/>
+    <!-- Stern facial expression -->
+    <path d="M 164 124 C 168 122, 172 122, 176 124" stroke="#1E293B" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Defensivley raised arm pushing away / Rejecting -->
+    <path d="M 155 145 C 145 145, 135 135, 130 125" stroke="#475569" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <circle cx="127" cy="120" r="5" fill="#FDBA74"/>
+    
+    <!-- Rejection / Stop Hand Gesture overlay (Flat red/gold warning symbol of refusal) -->
+    <circle cx="127" cy="118" r="12" fill="none" stroke="#EF4444" stroke-width="3"/>
+    <path d="M 119 126 L 135 110" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+</svg>

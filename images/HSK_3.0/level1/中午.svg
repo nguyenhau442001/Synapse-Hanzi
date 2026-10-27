@@ -1,35 +1,7 @@
-<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#1e293b"/>
-    </linearGradient>
-  </defs>
-  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
-  
-  <!-- Sun at Zenith -->
-  <circle cx="120" cy="60" r="25" fill="#f59e0b"/>
-  <path d="M120 20 L120 35 M120 85 L120 100 M80 60 L95 60 M145 60 L160 60" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
-  
-  <!-- Table Surface -->
-  <rect x="40" y="150" width="160" height="60" rx="8" fill="#334155"/>
-  <rect x="40" y="210" width="160" height="10" fill="#1e293b" opacity="0.5"/>
-  
-  <!-- Lunch Bowl -->
-  <path d="M80 150 Q80 180 120 180 Q160 180 160 150 Z" fill="#ec4899"/>
-  <ellipse cx="120" cy="150" rx="40" ry="10" fill="#f472b6"/>
-  
-  <!-- Chopsticks -->
-  <rect x="140" y="130" width="4" height="40" rx="2" fill="#fb923c" transform="rotate(20 142 150)"/>
-  <rect x="148" y="130" width="4" height="40" rx="2" fill="#fb923c" transform="rotate(10 150 150)"/>
-  
-  <!-- Steam/Atmosphere -->
-  <path d="M100 140 Q105 120 110 130" stroke="#f8fafc" stroke-width="2" fill="none" opacity="0.6"/>
-  <path d="M120 135 Q125 115 130 125" stroke="#f8fafc" stroke-width="2" fill="none" opacity="0.6"/>
-  
-  <!-- Shadow under table -->
-  <ellipse cx="120" cy="225" rx="70" ry="10" fill="#0f172a" opacity="0.4"/>
-  
-  <!-- Ambient light accent -->
-  <circle cx="200" cy="40" r="40" fill="#10b981" opacity="0.05"/>
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+  <circle cx="50" cy="38" r="18" stroke="#fbbf24" stroke-width="4" fill="#fbbf24" fill-opacity="0.2"/>
+  <line x1="50" y1="14" x2="50" y2="6" stroke="#fbbf24" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="50" y1="62" x2="50" y2="78" stroke="#64748b" stroke-width="4" stroke-linecap="round"/>
+  <line x1="20" y1="78" x2="80" y2="78" stroke="#64748b" stroke-width="4.5" stroke-linecap="round"/>
 </svg>

@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle atmospheric background elements (Mountain curve & water reflection) -->
+  <path d="M20 185C70 160 130 165 220 180V205H20V185Z" fill="#222733"/>
+  <path d="M20 205H220V220H20V205Z" fill="#15181F"/>
+  <!-- Gentle wave lines on water -->
+  <path d="M50 212C70 212 80 210 100 212" stroke="#2B313F" stroke-width="2" stroke-linecap="round"/>
+  <path d="M130 212C150 212 160 210 180 212" stroke="#2B313F" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Ancient Temple (寺) Central Illustration -->
+  <g transform="translate(0, 5)">
+    <!-- Base Platform / Foundation -->
+    <path d="M60 185H180V195H60Z" fill="#3A4252"/>
+    <path d="M70 177H170V185H70Z" fill="#485265"/>
+
+    <!-- Main Hall Walls -->
+    <rect x="80" y="115" width="80" height="62" fill="#2E3544"/>
+    
+    <!-- Wooden Pillars -->
+    <rect x="92" y="115" width="6" height="62" fill="#C0392B"/>
+    <rect x="142" y="115" width="6" height="62" fill="#C0392B"/>
+
+    <!-- Temple Doors & Windows (Warm glowing light representing "香火旺盛") -->
+    <rect x="105" y="130" width="30" height="47" rx="3" fill="#E67E22"/>
+    <rect x="112" y="137" width="16" height="33" fill="#F39C12"/>
+    <!-- Door grill lines -->
+    <line x1="120" y1="137" x2="120" y2="170" stroke="#D35400" stroke-width="1.5"/>
+    <line x1="112" y1="153" x2="128" y2="153" stroke="#D35400" stroke-width="1.5"/>
+
+    <!-- Lower Roof (Curved Traditional Eaves) -->
+    <path d="M68 115C68 115 120 110 172 115C182 116 185 120 180 123C165 127 75 127 60 123C55 120 58 116 68 115Z" fill="#34495E"/>
+    <path d="M65 119C120 115 175 119 175 119V125C175 125 120 128 65 125V119Z" fill="#2C3E50"/>
+
+    <!-- Upper Hall Section -->
+    <rect x="95" y="75" width="50" height="40" fill="#2E3544"/>
+    <rect x="103" y="75" width="5" height="40" fill="#C0392B"/>
+    <rect x="132" y="75" width="5" height="40" fill="#C0392B"/>
+
+    <!-- Upper Roof (Large Traditional Sweeping Pagoda Roof) -->
+    <path d="M55 75C55 75 120 65 185 75C198 77 200 83 190 87C165 95 75 95 50 87C40 83 42 77 55 75Z" fill="#34495E"/>
+    <path d="M52 81C120 73 188 81 188 81V89C188 89 120 93 52 89V81Z" fill="#2C3E50"/>
+
+    <!-- Roof Ridge & Ornamental Finial -->
+    <path d="M90 65H150V72H90Z" fill="#F1C40F"/>
+    <circle cx="120" cy="62" r="5" fill="#F1C40F"/>
+
+    <!-- Incense Smoke / "香火旺盛" Accent (Floating wisps symbolizing serenity and offering) -->
+    <path d="M116 52C112 45 122 38 118 30C114 22 124 15 120 8" fill="none" stroke="#F39C12" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+    <path d="M124 50C128 42 118 36 122 28C126 20 116 13 122 6" fill="none" stroke="#E67E22" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  </g>
+
+  <!-- Focus Accent Elements: Subtle golden glow spots representing warmth and spirituality -->
+  <circle cx="120" cy="115" r="45" fill="#F39C12" opacity="0.08" filter="blur(10px)"/>
+</svg>

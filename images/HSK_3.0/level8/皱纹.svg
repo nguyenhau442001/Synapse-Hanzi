@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(40, 40)">
+    <!-- Face Shape -->
+    <path d="M80 20C40 20 20 40 20 80C20 120 40 160 80 160C120 160 140 120 140 80C140 40 120 20 80 20Z" fill="#E6B89C"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="60" cy="85" rx="6" ry="4" fill="#2D3436"/>
+    <ellipse cx="100" cy="85" rx="6" ry="4" fill="#2D3436"/>
+    
+    <!-- Smile -->
+    <path d="M65 115C75 122 85 122 95 115" stroke="#2D3436" stroke-width="3" stroke-linecap="round" fill="none"/>
+    
+    <!-- Wrinkles (The focus: 皱纹) -->
+    <path d="M60 75 C 65 72, 75 72, 80 75" stroke="#C69C7D" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M55 78 C 60 75, 70 75, 75 78" stroke="#C69C7D" stroke-width="2" fill="none" stroke-linecap="round"/>
+    
+    <path d="M95 75 C 100 72, 110 72, 115 75" stroke="#C69C7D" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M100 78 C 105 75, 115 75, 120 78" stroke="#C69C7D" stroke-width="2" fill="none" stroke-linecap="round"/>
+    
+    <path d="M55 115 C 50 110, 45 100, 50 90" stroke="#C69C7D" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M105 115 C 110 110, 115 100, 110 90" stroke="#C69C7D" stroke-width="2" fill="none" stroke-linecap="round"/>
+    
+    <!-- Hair -->
+    <path d="M40 40 C 40 20, 120 20, 120 40 L120 50 C 120 40, 40 40, 40 50 Z" fill="#F5F5F5"/>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Wrist Anatomy -->
+  <g transform="translate(120, 120)">
+    <!-- Arm/Wrist base -->
+    <path d="M-40,-80 L40,-80 C50,-80 55,-75 55,-65 L55,65 C55,75 50,80 40,80 L-40,80 C-50,80 -55,75 -55,65 L-55,-65 C-55,-75 -50,-80 -40,-80 Z" fill="#2D343E"/>
+    
+    <!-- Wrist joint detail -->
+    <path d="M-55,-10 L55,-10 M-55,10 L55,10" stroke="#3E4756" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Hand emerging from wrist -->
+    <path d="M-45,70 L-45,100 C-45,115 -35,125 -20,125 L20,125 C35,125 45,115 45,100 L45,70 Z" fill="#FFB86C"/>
+    
+    <!-- Fingers suggesting dexterity/manipulation -->
+    <path d="M-45,100 L-55,110 M-25,125 L-30,135 M0,125 L0,135 M25,125 L30,135 M45,100 L55,110" stroke="#FFB86C" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Highlight on wrist for focus -->
+    <path d="M-50,-50 L50,-50" stroke="#FFB86C" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+  </g>
+</svg>

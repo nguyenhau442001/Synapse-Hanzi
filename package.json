@@ -1,13 +1,13 @@
 {
   "name": "synapse-hanzi",
-  "version": "1.0.1",
-  "type": "module",
+  "version": "1.4.1",
   "description": "Trạm học từ vựng chữ Hán đa giác quan, hiện đại, tối giản và 100% Offline (PWA)",
   "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "test": "node tools/test_fast_review_pinyin.js",
     "version:patch": "python3 tools/bump_version.py patch",
     "version:minor": "python3 tools/bump_version.py minor",
     "version:major": "python3 tools/bump_version.py major"

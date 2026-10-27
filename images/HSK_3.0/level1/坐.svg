@@ -1,35 +1,10 @@
-<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#1e293b"/>
-    </linearGradient>
-  </defs>
-  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
-  
-  <!-- Floor -->
-  <path d="M0 180 L240 180 L240 240 L0 240 Z" fill="#0f172a" opacity="0.4"/>
-  
-  <!-- Chair -->
-  <g transform="translate(80, 100)">
-    <path d="M10 80 L70 80 L75 120 L5 120 Z" fill="#fb923c"/>
-    <path d="M15 20 L65 20 L70 80 L10 80 Z" fill="#f59e0b"/>
-    <rect x="5" y="0" width="10" height="80" fill="#fbbf24"/>
-    <rect x="65" y="0" width="10" height="80" fill="#fbbf24"/>
-  </g>
-  
-  <!-- Character -->
-  <g transform="translate(95, 65)">
-    <circle cx="25" cy="20" r="18" fill="#38bdf8"/>
-    <path d="M10 40 Q25 35 40 40 L35 90 L15 90 Z" fill="#38bdf8"/>
-    <rect x="15" y="85" width="20" height="15" rx="5" fill="#10b981"/>
-    <circle cx="18" cy="15" r="3" fill="#0f172a"/>
-    <circle cx="32" cy="15" r="3" fill="#0f172a"/>
-    <path d="M20 25 Q25 28 30 25" stroke="#0f172a" stroke-width="2" fill="none"/>
-  </g>
-  
-  <!-- Decorative elements -->
-  <circle cx="200" cy="50" r="20" fill="#ec4899" opacity="0.2"/>
-  <circle cx="40" cy="180" r="10" fill="#38bdf8" opacity="0.3"/>
-  <path d="M180 150 L195 150 L187 170 Z" fill="#fbbf24" opacity="0.5"/>
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+  <path d="M30 26 Q24 40 18 52" stroke="#38bdf8" stroke-width="3.8" stroke-linecap="round"/>
+  <path d="M26 38 Q34 46 38 52" stroke="#38bdf8" stroke-width="3.8" stroke-linecap="round"/>
+  <path d="M70 26 Q64 40 58 52" stroke="#38bdf8" stroke-width="3.8" stroke-linecap="round"/>
+  <path d="M66 38 Q74 46 78 52" stroke="#38bdf8" stroke-width="3.8" stroke-linecap="round"/>
+  <line x1="48" y1="18" x2="48" y2="78" stroke="#fb923c" stroke-width="4.5" stroke-linecap="round"/>
+  <line x1="28" y1="56" x2="68" y2="56" stroke="#fb923c" stroke-width="4" stroke-linecap="round"/>
+  <line x1="16" y1="78" x2="84" y2="78" stroke="#fb923c" stroke-width="5" stroke-linecap="round"/>
 </svg>

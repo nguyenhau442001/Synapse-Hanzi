@@ -1,0 +1,36 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background atmosphere: cold wind lines -->
+  <path d="M20 60 Q 60 50, 100 60 T 220 60" stroke="#3A404D" stroke-width="2" fill="none"/>
+  <path d="M10 100 Q 80 90, 150 100 T 230 100" stroke="#3A404D" stroke-width="2" fill="none"/>
+  
+  <!-- Elderly Mother Figure -->
+  <g transform="translate(70, 80)">
+    <!-- Body/Coat -->
+    <path d="M40 140 L40 80 Q40 60, 60 60 L80 60 Q100 60, 100 80 L100 140 Z" fill="#7D8597"/>
+    <!-- Head -->
+    <circle cx="70" cy="50" r="20" fill="#B8C0D0"/>
+    <!-- Scarf/Shawl -->
+    <path d="M55 65 L85 65 L80 85 L60 85 Z" fill="#5D6577"/>
+    <!-- Walking Stick -->
+    <path d="M45 140 L45 70" stroke="#A67C52" stroke-width="4" stroke-linecap="round"/>
+    <path d="M35 70 L55 70" stroke="#A67C52" stroke-width="4" stroke-linecap="round"/>
+    <!-- Bag of vegetables -->
+    <path d="M100 110 L120 110 L115 140 L105 140 Z" fill="#4A6741"/>
+  </g>
+  
+  <!-- Observer/Son Figure (Focus on the feeling of "Xinsuan") -->
+  <g transform="translate(140, 100)">
+    <!-- Silhouette of person looking -->
+    <path d="M20 120 L20 60 Q20 40, 40 40 L60 40 Q80 40, 80 60 L80 120 Z" fill="#3A404D"/>
+    <circle cx="50" cy="30" r="15" fill="#B8C0D0"/>
+    <!-- Hand on chest gesture -->
+    <path d="M40 70 L60 70" stroke="#FFB84D" stroke-width="3" stroke-linecap="round"/>
+    <path d="M40 80 L60 80" stroke="#FFB84D" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Golden accent for emotional focus -->
+  <circle cx="160" cy="70" r="4" fill="#FFB84D"/>
+  <circle cx="175" cy="60" r="3" fill="#FFB84D"/>
+</svg>

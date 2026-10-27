@@ -1,0 +1,55 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Room Silhouette -->
+  <path d="M40 180 L200 180 L200 70 L120 40 L40 70 Z" fill="#222730"/>
+  <path d="M40 180 L200 180 L200 190 L40 190 Z" fill="#2C333F"/>
+
+  <!-- Warm Light Glow (Floor & Wall) -->
+  <path d="M80 180 L160 180 L190 200 L50 200 Z" fill="#FFB703" opacity="0.08"/>
+  <circle cx="120" cy="95" r="55" fill="#FFB703" opacity="0.07"/>
+
+  <!-- Window with warm soft light -->
+  <rect x="95" y="65" width="50" height="60" rx="4" fill="#2E3748"/>
+  <rect x="100" y="70" width="19" height="50" rx="2" fill="#FFD166" opacity="0.85"/>
+  <rect x="121" y="70" width="19" height="50" rx="2" fill="#FFD166" opacity="0.85"/>
+
+  <!-- Cozy Plant on a Stand -->
+  <rect x="55" y="130" width="18" height="35" rx="3" fill="#D4A373"/>
+  <path d="M64 130 L64 165" stroke="#BC8A5F" stroke-width="2"/>
+  <!-- Pot -->
+  <path d="M50 165 L78 165 L73 190 L55 190 Z" fill="#E9C46A"/>
+  <!-- Green Leaves -->
+  <circle cx="64" cy="120" r="14" fill="#2A9D8F"/>
+  <circle cx="53" cy="125" r="10" fill="#264653"/>
+  <circle cx="75" cy="125" r="10" fill="#264653"/>
+  <circle cx="64" cy="108" r="11" fill="#2A9D8F"/>
+
+  <!-- Cozy Armchair -->
+  <path d="M140 145 C140 125 180 125 180 145 L185 190 C185 195 180 198 175 198 L145 198 C140 198 135 195 135 190 Z" fill="#E76F51"/>
+  <!-- Armchair Seat & Backrest Softness -->
+  <rect x="143" y="135" width="34" height="45" rx="10" fill="#F4A261"/>
+  <rect x="138" y="165" width="44" height="25" rx="8" fill="#E76F51"/>
+  <!-- Chair Legs -->
+  <rect x="146" y="198" width="4" height="15" rx="2" fill="#2C333F"/>
+  <rect x="170" y="198" width="4" height="15" rx="2" fill="#2C333F"/>
+
+  <!-- Floor Lamp -->
+  <rect x="185" y="100" width="4" height="113" fill="#6C757D"/>
+  <circle cx="187" cy="210" r="8" fill="#495057"/>
+  <!-- Lamp Shade -->
+  <path d="M172 75 L202 75 L208 105 L166 105 Z" fill="#FFD166"/>
+  <!-- Light Beam Downward -->
+  <path d="M172 105 L202 105 L215 170 L159 170 Z" fill="#FFD166" opacity="0.12"/>
+
+  <!-- Soft Coffee Table -->
+  <ellipse cx="105" cy="188" rx="28" ry="8" fill="#3A506B"/>
+  <rect x="90" y="193" width="5" height="12" rx="2" fill="#222730"/>
+  <rect x="115" y="193" width="5" height="12" rx="2" fill="#222730"/>
+  <!-- Mug on Table -->
+  <rect x="97" y="178" width="10" height="10" rx="2" fill="#F4F1DE"/>
+  <path d="M107 180 C110 180 110 186 107 186" stroke="#F4F1DE" stroke-width="2" fill="none"/>
+  <!-- Steam from mug -->
+  <path d="M100 172 C102 170 99 166 101 164" stroke="#FFD166" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+</svg>

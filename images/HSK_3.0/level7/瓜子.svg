@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative subtle background elements for Lunar New Year vibe -->
+  <circle cx="120" cy="120" r="85" fill="#222733" />
+  <circle cx="120" cy="120" r="70" fill="#282E3E" />
+
+  <!-- Tea saucer / plate base -->
+  <ellipse cx="120" cy="165" rx="65" ry="18" fill="#323A4D" />
+  <ellipse cx="120" cy="162" rx="60" ry="15" fill="#3D475C" />
+
+  <!-- Melon seeds (瓜子) arranged nicely on the plate -->
+  <!-- Seed 1 (Center Front, Gold/Roasted) -->
+  <g transform="translate(120, 145) rotate(15)">
+    <path d="M0 -22 C10 -15, 12 5, 0 22 C-12 5, -10 -15, 0 -22 Z" fill="#E6A15C"/>
+    <path d="M0 -18 C6 -12, 8 4, 0 17 C-8 4, -6 -12, 0 -18 Z" fill="#F4B875"/>
+  </g>
+
+  <!-- Seed 2 (Left, Dark roasted/Black) -->
+  <g transform="translate(85, 150) rotate(-35)">
+    <path d="M0 -20 C9 -14, 10 4, 0 20 C-10 4, -9 -14, 0 -20 Z" fill="#3A322C"/>
+    <path d="M0 -16 C6 -10, 7 3, 0 16 C-7 3, -6 -10, 0 -16 Z" fill="#4A4038"/>
+  </g>
+
+  <!-- Seed 3 (Right, Red festive seed) -->
+  <g transform="translate(155, 148) rotate(40)">
+    <path d="M0 -20 C9 -14, 10 4, 0 20 C-10 4, -9 -14, 0 -20 Z" fill="#D94E4E"/>
+    <path d="M0 -16 C6 -10, 7 3, 0 16 C-7 3, -6 -10, 0 -16 Z" fill="#E86565"/>
+  </g>
+
+  <!-- Seed 4 (Back Left, stacked) -->
+  <g transform="translate(100, 130) rotate(-10)">
+    <path d="M0 -20 C9 -14, 10 4, 0 20 C-10 4, -9 -14, 0 -20 Z" fill="#E6A15C"/>
+    <path d="M0 -16 C6 -10, 7 3, 0 16 C-7 3, -6 -10, 0 -16 Z" fill="#F4B875"/>
+  </g>
+
+  <!-- Seed 5 (Back Right, stacked) -->
+  <g transform="translate(140, 132) rotate(20)">
+    <path d="M0 -20 C9 -14, 10 4, 0 20 C-10 4, -9 -14, 0 -20 Z" fill="#3A322C"/>
+    <path d="M0 -16 C6 -10, 7 3, 0 16 C-7 3, -6 -10, 0 -16 Z" fill="#4A4038"/>
+  </g>
+
+  <!-- Seed 6 (Top Center, partially upright) -->
+  <g transform="translate(120, 120) rotate(-5)">
+    <path d="M0 -22 C10 -15, 12 5, 0 22 C-12 5, -10 -15, 0 -22 Z" fill="#D94E4E"/>
+    <path d="M0 -18 C6 -12, 8 4, 0 17 C-8 4, -6 -12, 0 -18 Z" fill="#E86565"/>
+  </g>
+
+  <!-- Festive highlights (sparkles/accents representing New Year atmosphere) -->
+  <path d="M60,85 L63,92 L70,95 L63,98 L60,105 L57,98 L50,95 L57,92 Z" fill="#F3C653" opacity="0.8"/>
+  <path d="M180,95 L182,100 L187,102 L182,104 L180,109 L178,104 L173,102 L178,100 Z" fill="#F3C653" opacity="0.6"/>
+  <circle cx="75" cy="70" r="3" fill="#E6A15C" opacity="0.5"/>
+  <circle cx="165" cy="75" r="2.5" fill="#D94E4E" opacity="0.7"/>
+
+</svg>

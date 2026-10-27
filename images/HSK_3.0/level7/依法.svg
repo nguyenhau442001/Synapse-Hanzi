@@ -1,0 +1,69 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(20, 20)">
+    <!-- Glow/Background emphasis for the central object -->
+    <circle cx="100" cy="100" r="65" fill="#2D3748" opacity="0.4"/>
+    
+    <!-- Central Physical Object: The Law Code / Legal Document (Book/Codex) with Gavel representing "依法" (According to Law) -->
+    
+    <!-- Scale base/shadow -->
+    <ellipse cx="100" cy="175" rx="40" ry="8" fill="#111318"/>
+
+    <!-- Open Legal Codex / Constitution (Physical Object representing the Law) -->
+    <path d="M 60 145 C 75 142, 90 145, 100 152 C 110 145, 125 142, 140 145 C 140 115, 140 85, 140 65 C 125 62, 110 65, 100 72 C 90 65, 75 62, 60 65 C 60 85, 60 115, 60 145 Z" fill="#2D3748"/>
+    <path d="M 140 145 C 155 142, 170 145, 180 152 C 180 122, 180 92, 180 65 C 165 62, 150 65, 140 72 C 140 92, 140 122, 140 145 Z" fill="#3B4659"/>
+    <path d="M 60 145 C 75 142, 90 145, 100 152 C 110 145, 125 142, 140 145 C 140 122, 140 92, 140 72 C 125 65, 110 62, 100 72 C 90 62, 75 65, 60 72 C 60 92, 60 122, 60 145 Z" fill="#E2E8F0"/>
+
+    <!-- Pages lines representing legal text -->
+    <line x1="72" y1="85" x2="90" y2="87" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    <line x1="72" y1="100" x2="88" y2="102" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    <line x1="72" y1="115" x2="85" y2="117" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    
+    <line x1="112" y1="87" x2="128" y2="85" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    <line x1="112" y1="102" x2="128" y2="100" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    <line x1="112" y1="117" x2="125" y2="115" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+
+    <line x1="152" y1="85" x2="168" y2="87" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    <line x1="152" y1="100" x2="165" y2="102" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    <line x1="152" y1="115" x2="168" y2="117" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Center binding spine -->
+    <path d="M 98 68 C 100 68, 101 68, 102 68 C 102 110, 102 135, 102 155 C 101 155, 100 155, 98 155 C 98 135, 98 110, 98 68 Z" fill="#CBD5E1"/>
+
+    <!-- Wooden Gavel (Executing Law / Action) diagonally placed across the book -->
+    <!-- Gavel Head shadow -->
+    <path d="M 62 42 L 112 77 L 105 87 L 55 52 Z" fill="#111318" opacity="0.3"/>
+
+    <!-- Gavel Handle -->
+    <path d="M 45 110 L 132 48" stroke="#78350F" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 45 110 L 132 48" stroke="#B45309" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Handle grip rings -->
+    <line x1="52" y1="102" x2="59" y2="97" stroke="#78350F" stroke-width="3"/>
+    <line x1="60" y1="96" x2="67" y2="91" stroke="#78350F" stroke-width="3"/>
+    
+    <!-- Gavel Head -->
+    <g transform="translate(110, 35) rotate(34)">
+      <rect x="-24" y="-12" width="48" height="24" rx="4" fill="#D97706"/>
+      <rect x="-24" y="-12" width="48" height="6" rx="2" fill="#F59E0B" opacity="0.6"/>
+      <!-- Gold accent band -->
+      <rect x="-4" y="-12" width="8" height="24" fill="#FCD34D"/>
+      <!-- Ends of mallet -->
+      <ellipse cx="-24" cy="0" rx="3" ry="12" fill="#B45309"/>
+      <ellipse cx="24" cy="0" rx="3" ry="12" fill="#B45309"/>
+    </g>
+
+    <!-- Sound block (Striking base) -->
+    <g transform="translate(100, 158)">
+      <ellipse cx="0" cy="0" rx="32" ry="10" fill="#92400E"/>
+      <ellipse cx="0" cy="-3" rx="32" ry="10" fill="#B45309"/>
+      <ellipse cx="0" cy="-6" rx="28" ry="8" fill="#D97706"/>
+    </g>
+
+    <!-- Focal point highlight star/sparkle representing justice/correctness -->
+    <path d="M 165 45 Q 165 55 175 55 Q 165 55 165 65 Q 165 55 155 55 Q 165 55 165 45 Z" fill="#FCD34D"/>
+    <path d="M 45 145 Q 45 152 52 152 Q 45 152 45 159 Q 45 152 38 152 Q 45 152 45 145 Z" fill="#FCD34D"/>
+  </g>
+</svg>

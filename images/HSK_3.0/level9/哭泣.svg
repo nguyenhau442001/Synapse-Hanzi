@@ -1,0 +1,42 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Mother's Body/Shoulder -->
+    <path d="M70 170 C70 145 90 130 120 130 C150 130 170 145 170 170 L195 210 C198 215 194 220 188 220 L52 220 C46 220 42 215 45 210 Z" fill="#2D3748"/>
+    <!-- Mother's Arm embracing -->
+    <path d="M75 160 C75 160 95 195 135 190 C165 186 185 160 185 160 C185 160 160 205 125 205 C90 205 75 160 75 160 Z" fill="#4A5568"/>
+    
+    <!-- Daughter (Leaning into mother, lower head position for "sob/low cry") -->
+    <!-- Daughter's Hair Back -->
+    <path d="M100 85 C80 85 70 100 70 125 C70 150 85 165 95 165 C105 165 110 150 115 135 C120 120 130 110 130 95 C130 88 115 85 100 85 Z" fill="#D69E2E"/>
+    
+    <!-- Daughter's Head -->
+    <circle cx="105" cy="110" r="22" fill="#FEEBC8"/>
+    
+    <!-- Daughter's Face pressed against mother (showing emotional/crying expression subtly through closed tearful eye line) -->
+    <path d="M95 115 Q100 120 105 115" stroke="#744210" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M96 112 L98 118" stroke="#3182CE" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Daughter's Hair Front/Top -->
+    <path d="M85 95 C90 85 110 85 125 95 C120 105 110 110 100 110 C90 110 85 95 85 95 Z" fill="#B7791F"/>
+
+    <!-- Daughter's Back/Body -->
+    <path d="M90 125 C80 135 75 155 85 185 L125 180 C130 160 125 140 110 125 Z" fill="#E53E3E"/>
+
+    <!-- Mother's Head & Face (Warm, comforting expression looking down) -->
+    <circle cx="145" cy="95" r="24" fill="#FEEBC8"/>
+    <!-- Mother's Hair -->
+    <path d="M125 80 C130 70 155 70 168 85 C175 80 185 90 185 105 C185 115 175 120 170 120 C165 120 160 110 150 110 C140 110 130 120 125 110 C120 100 122 85 125 80 Z" fill="#4A5568"/>
+    <!-- Mother's Eye (closed, comforting/empathetic) -->
+    <path d="M142 97 Q147 101 152 97" stroke="#718096" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <!-- Mother's Gentle Smile -->
+    <path d="M138 107 Q144 111 150 107" stroke="#DD6B20" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Falling Tears (Emphasizing the specific semantic meaning: 哭泣 - sobbing / crying) -->
+    <path d="M91 122 C91 122 88 128 88 131 C88 133 90 135 92 135 C94 135 96 133 96 131 C96 128 91 122 91 122 Z" fill="#63B3ED"/>
+    <path d="M84 134 C84 134 82 138 82 140 C82 142 83.5 143 85 143 C86.5 143 88 142 88 140 C88 138 84 134 84 134 Z" fill="#63B3ED" opacity="0.8"/>
+    <path d="M78 145 C78 145 77 148 77 149 C77 150 78 151 79 151 C80 151 81 150 81 149 C81 148 78 145 78 145 Z" fill="#63B3ED" opacity="0.6"/>
+  </g>
+</svg>

@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Head / Person Representation representing "挠" (scratching head when confused) -->
+    <!-- Shoulders & Torso -->
+    <path d="M70,200 C70,165 95,150 120,150 C145,150 170,165 170,200 Z" fill="#2D333B"/>
+    
+    <!-- Neck -->
+    <rect x="106" y="130" width="28" height="30" fill="#E0AC9D"/>
+    
+    <!-- Head/Face -->
+    <circle cx="120" cy="100" r="38" fill="#E0AC9D"/>
+    
+    <!-- Hair -->
+    <path d="M85,95 C83,75 95,60 120,60 C145,60 157,75 155,95 C153,95 150,85 140,82 C130,80 125,75 120,75 C115,75 110,80 100,82 C90,85 85,95 85,95 Z" fill="#3D444E"/>
+    
+    <!-- Confused Facial Expression -->
+    <!-- Eyebrows (asymmetrical, puzzled) -->
+    <path d="M100,92 Q107,87 114,92" fill="none" stroke="#2D333B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M126,90 Q133,94 140,90" fill="none" stroke="#2D333B" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Eyes (closed/thoughtful or squinting) -->
+    <path d="M103,100 Q107,104 111,100" fill="none" stroke="#2D333B" stroke-width="2" stroke-linecap="round"/>
+    <path d="M129,100 Q133,104 137,100" fill="none" stroke="#2D333B" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Mouth (slight uncertainty/grimace) -->
+    <path d="M112,118 Q120,114 128,118" fill="none" stroke="#2D333B" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- The Action: Hand scratching the back of the head (挠) -->
+    <!-- Arm reaching up from below/side -->
+    <path d="M150,155 Q165,130 145,95" fill="none" stroke="#E0AC9D" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Hand / Fingers scratching head -->
+    <circle cx="143" cy="85" r="11" fill="#E0AC9D"/>
+    <!-- Fingers curved slightly -->
+    <path d="M136,80 Q140,75 145,78" fill="none" stroke="#C89687" stroke-width="3" stroke-linecap="round"/>
+    <path d="M141,78 Q145,73 150,76" fill="none" stroke="#C89687" stroke-width="3" stroke-linecap="round"/>
+    <path d="M146,78 Q150,74 154,78" fill="none" stroke="#C89687" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Motion / Scratching effect lines (accent color: gold/orange) -->
+    <path d="M155,70 Q162,65 158,58" fill="none" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+    <path d="M163,77 Q170,72 166,65" fill="none" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="165" cy="55" r="2" fill="#F6AD55"/>
+    <circle cx="174" cy="62" r="1.5" fill="#F6AD55"/>
+    
+    <!-- Confusion question mark accent floating gently -->
+    <path d="M85,55 Q85,45 95,45 C105,45 105,55 95,62 L95,68" fill="none" stroke="#F6AD55" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="95" cy="76" r="2" fill="#F6AD55"/>
+  </g>
+</svg>

@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Object: An ancient book opening up into a radiant, glowing tree of wisdom and life, representing "哲理" (deep philosophy/life principle) -->
+  
+  <g transform="translate(120, 130)">
+    <!-- Glowing aura behind the tree -->
+    <circle cx="0" cy="-20" r="55" fill="#F59E0B" opacity="0.1" filter="blur(8px)"/>
+    <circle cx="0" cy="-20" r="35" fill="#F59E0B" opacity="0.15"/>
+
+    <!-- Open Ancient Book (Base) -->
+    <path d="M -50 30 C -25 20, -5 20, 0 35 C 5 20, 25 20, 50 30 L 50 55 C 25 45, 5 45, 0 60 C -5 45, -25 45, -50 55 Z" fill="#2E3646"/>
+    
+    <!-- Book Pages / Left & Right -->
+    <path d="M -48 33 C -24 24, -4 24, -2 57 C -22 47, -38 48, -48 38 Z" fill="#E2E8F0" opacity="0.9"/>
+    <path d="M 48 33 C 24 24, 4 24, 2 57 C 22 47, 38 48, 48 38 Z" fill="#E2E8F0" opacity="0.9"/>
+    
+    <!-- Book Spine & Center Crease -->
+    <path d="M 0 35 L 0 60" stroke="#1A1D24" stroke-width="2"/>
+    <path d="M -50 30 L -48 33" stroke="#F59E0B" stroke-width="2"/>
+    <path d="M 50 30 L 48 33" stroke="#F59E0B" stroke-width="2"/>
+
+    <!-- Tree Trunk emerging from the book -->
+    <path d="M -6 35 C -8 10, -3 0, 0 -15 C 3 0, 8 10, 6 35 Z" fill="#B45309"/>
+    <path d="M -2 15 C -4 5, -2 0, 0 -5 C 2 0, 4 5, 2 15 Z" fill="#D97706"/>
+
+    <!-- Tree Branches -->
+    <path d="M 0 -5 C -8 -15, -20 -15, -25 -25" stroke="#B45309" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 0 -10 C 10 -20, 22 -20, 28 -30" stroke="#B45309" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 0 -22 C -5 -30, -12 -35, -15 -45" stroke="#B45309" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M 0 -22 C 5 -30, 14 -35, 18 -42" stroke="#B45309" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Glowing Foliage / Wisdom Orbs representing insights and philosophy -->
+    <!-- Outer/Smaller golden leaves -->
+    <circle cx="-27" cy="-28" r="7" fill="#F59E0B"/>
+    <circle cx="30" cy="-33" r="8" fill="#F59E0B"/>
+    <circle cx="-16" cy="-48" r="6" fill="#FBBF24"/>
+    <circle cx="20" cy="-45" r="7" fill="#FBBF24"/>
+    <circle cx="0" cy="-52" r="9" fill="#F59E0B"/>
+
+    <!-- Central Glowing Light Core (The "Insight" Spark) -->
+    <circle cx="0" cy="-35" r="14" fill="#FEF3C7" opacity="0.9"/>
+    <circle cx="0" cy="-35" r="8" fill="#F59E0B"/>
+
+    <!-- Floating Sparkles / Insights rising from the book -->
+    <path d="M -35 -5 L -32 -12 L -35 -19 L -38 -12 Z" fill="#FBBF24" opacity="0.8"/>
+    <path d="M 38 0 L 40 -5 L 45 -7 L 40 -9 L 38 -14 L 36 -9 L 31 -7 L 36 -5 Z" fill="#FBBF24" opacity="0.8"/>
+    <circle cx="-20" cy="5" r="2" fill="#FEF3C7" opacity="0.7"/>
+    <circle cx="25" cy="8" r="2.5" fill="#FEF3C7" opacity="0.9"/>
+    <circle cx="5" cy="-2" r="1.5" fill="#FEF3C7"/>
+  </g>
+</svg>

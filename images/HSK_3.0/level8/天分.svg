@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Background subtle glow representing innate spark -->
+    <circle cx="120" cy="115" r="70" fill="#FFB703" opacity="0.08"/>
+    
+    <!-- Grand Piano Body -->
+    <path d="M70 120 L160 90 Q175 110 165 145 L150 170 Q130 175 110 165 Z" fill="#2D323E" stroke="#3E4556" stroke-width="2" stroke-linejoin="round"/>
+    
+    <!-- Piano Keyboard & Keys section -->
+    <path d="M100 135 L155 116 Q162 125 158 135 L103 154 Z" fill="#FFFFFF"/>
+    <path d="M110 131 L115 147 M125 126 L130 142 M140 121 L145 137" stroke="#1A1D24" stroke-width="2"/>
+
+    <!-- Piano Lid (Opened upward) -->
+    <path d="M72 118 L125 55 L162 88 Z" fill="#363C4D" opacity="0.9"/>
+    <path d="M72 118 L125 55" stroke="#FFB703" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Spark / Innate Gift Element (Golden Musical Notes ascending from piano) -->
+    <g fill="#FFB703">
+      <!-- Note 1 -->
+      <ellipse cx="120" cy="85" rx="5" ry="3.5" transform="rotate(-15 120 85)"/>
+      <path d="M123 85 L123 70 Q129 67 131 63 L131 73 Q129 74 123 76" />
+      
+      <!-- Note 2 (Higher, glowing) -->
+      <ellipse cx="148" cy="65" rx="4.5" ry="3" transform="rotate(-15 148 65)"/>
+      <path d="M151 65 L151 52 Q156 49 158 45 L158 55 Q156 56 151 58" />
+
+      <!-- Radiating Divine/Innate Sparks -->
+      <circle cx="138" cy="50" r="2" fill="#FFB703" opacity="0.9"/>
+      <circle cx="108" cy="68" r="1.5" fill="#FFB703" opacity="0.7"/>
+      <circle cx="158" cy="82" r="2.5" fill="#FFB703" opacity="0.8"/>
+      
+      <!-- Central "Gift of Nature/Talent" Starburst -->
+      <path d="M132 38 L135 44 L141 47 L135 50 L132 56 L129 50 L123 47 L129 44 Z" fill="#FFB703"/>
+    </g>
+
+    <!-- Piano Legs -->
+    <rect x="75" y="150" width="4" height="25" rx="2" fill="#21252D"/>
+    <rect x="145" y="132" width="4" height="25" rx="2" fill="#21252D"/>
+    <rect x="110" y="162" width="4" height="20" rx="2" fill="#21252D"/>
+  </g>
+</svg>

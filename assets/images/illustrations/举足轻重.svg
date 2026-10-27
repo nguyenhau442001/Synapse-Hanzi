@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle grid lines for modern high-tech aesthetic -->
+  <path d="M40 120H200M120 40V200" stroke="#252A34" stroke-width="1" stroke-dasharray="4 4"/>
+  <circle cx="120" cy="120" r="70" stroke="#252A34" stroke-width="1" fill="none"/>
+  
+  <!-- Central Physical Object: Microchip / Semiconductor representing the core critical entity (舉足輕重) -->
+  <!-- Outer golden accent bracket highlighting crucial position -->
+  <path d="M85 75H75V85" stroke="#F39C12" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M155 75H165V85" stroke="#F39C12" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M85 165H75V155" stroke="#F39C12" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M155 165H165V155" stroke="#F39C12" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Chip Body (Dark Slate Blue) -->
+  <rect x="80" y="80" width="80" height="80" rx="12" fill="#222B38" stroke="#3A475C" stroke-width="2"/>
+
+  <!-- Circuit Pins / Connectors (Left & Right) -->
+  <rect x="68" y="92" width="12" height="6" rx="2" fill="#5C7396"/>
+  <rect x="68" y="117" width="12" height="6" rx="2" fill="#5C7396"/>
+  <rect x="68" y="142" width="12" height="6" rx="2" fill="#5C7396"/>
+
+  <rect x="160" y="92" width="12" height="6" rx="2" fill="#5C7396"/>
+  <rect x="160" y="117" width="12" height="6" rx="2" fill="#5C7396"/>
+  <rect x="160" y="142" width="12" height="6" rx="2" fill="#5C7396"/>
+
+  <!-- Circuit Pins / Connectors (Top & Bottom) -->
+  <rect x="92" y="68" width="6" height="12" rx="2" fill="#5C7396"/>
+  <rect x="117" y="68" width="6" height="12" rx="2" fill="#5C7396"/>
+  <rect x="142" y="68" width="6" height="12" rx="2" fill="#5C7396"/>
+
+  <rect x="92" y="160" width="6" height="12" rx="2" fill="#5C7396"/>
+  <rect x="117" y="160" width="6" height="12" rx="2" fill="#5C7396"/>
+  <rect x="142" y="160" width="6" height="12" rx="2" fill="#5C7396"/>
+
+  <!-- Inner Core & Circuit Traces (Gold/Orange Accent for "Decisive Influence / Key Role") -->
+  <rect x="96" y="96" width="48" height="48" rx="8" fill="#151A21" stroke="#F39C12" stroke-width="2"/>
+  
+  <!-- Central Processor Core -->
+  <rect x="106" y="106" width="28" height="28" rx="4" fill="#F39C12" opacity="0.15"/>
+  <rect x="112" y="112" width="16" height="16" rx="2" fill="#F39C12"/>
+
+  <!-- Circuit Lines connecting to center -->
+  <path d="M120 96V80M120 144V160M96 120H80M144 120H160" stroke="#F39C12" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="120" cy="88" r="2" fill="#F39C12"/>
+  <circle cx="120" cy="152" r="2" fill="#F39C12"/>
+  <circle cx="88" cy="120" r="2" fill="#F39C12"/>
+  <circle cx="152" cy="120" r="2" fill="#F39C12"/>
+
+  <!-- Focal indicator: Glowing corner nodes emphasizing absolute importance -->
+  <circle cx="80" cy="80" r="3" fill="#F39C12"/>
+  <circle cx="160" cy="80" r="3" fill="#F39C12"/>
+  <circle cx="80" cy="160" r="3" fill="#F39C12"/>
+  <circle cx="160" cy="160" r="3" fill="#F39C12"/>
+</svg>

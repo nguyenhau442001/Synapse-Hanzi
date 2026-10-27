@@ -1,0 +1,69 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Atmospheric background / flood rescue context elements -->
+  <path d="M 0 170 Q 60 160, 120 175 T 240 170 L 240 240 L 0 240 Z" fill="#1e293b" opacity="0.6"/>
+  <path d="M 0 185 Q 70 175, 140 190 T 240 180 L 240 240 L 0 240 Z" fill="#0f172a" opacity="0.8"/>
+  
+  <!-- Rain streaks -->
+  <g stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" opacity="0.4">
+    <line x1="40" y1="30" x2="25" y2="70"/>
+    <line x1="80" y1="20" x2="65" y2="60"/>
+    <line x1="120" y1="40" x2="105" y2="80"/>
+    <line x1="160" y1="25" x2="145" y2="65"/>
+    <line x1="200" y1="35" x2="185" y2="75"/>
+    <line x1="60" y1="90" x2="45" y2="130"/>
+    <line x1="100" y1="80" x2="85" y2="120"/>
+    <line x1="140" y1="95" x2="125" y2="135"/>
+    <line x1="180" y1="85" x2="165" y2="125"/>
+  </g>
+
+  <!-- Frontline Barrier / Levee Edge -->
+  <rect x="20" y="150" width="200" height="12" rx="4" fill="#334155"/>
+  <rect x="25" y="138" width="190" height="15" rx="3" fill="#475569"/>
+
+  <!-- High-visibility frontline rescue worker character (Front and center - Noun: vật thể, con người, địa điểm) -->
+  <g transform="translate(10, 0)">
+    <!-- Safety Boots -->
+    <path d="M 100 175 L 118 175 L 118 185 L 98 185 Z" fill="#0f172a"/>
+    <path d="M 124 175 L 142 175 L 144 185 L 122 185 Z" fill="#0f172a"/>
+
+    <!-- Rescue Uniform Pants (Dark Blue) -->
+    <rect x="101" y="140" width="17" height="36" rx="4" fill="#1e3a8a"/>
+    <rect x="122" y="140" width="17" height="36" rx="4" fill="#1e3a8a"/>
+
+    <!-- Torso with High-Visibility Orange Rescue Vest & Reflective Tape -->
+    <path d="M 98 90 L 142 90 C 147 90, 150 93, 150 98 L 146 142 C 146 146, 142 148, 138 148 L 102 148 C 98 148, 94 146, 94 142 L 90 98 C 90 93, 93 90, 98 90 Z" fill="#f97316"/>
+    
+    <!-- Reflective Stripes on Vest -->
+    <polygon points="102,90 114,90 102,148 94,148" fill="#f8fafc" opacity="0.9"/>
+    <polygon points="138,90 126,90 138,148 146,148" fill="#f8fafc" opacity="0.9"/>
+    <rect x="91" y="115" width="58" height="6" fill="#f8fafc" opacity="0.9"/>
+
+    <!-- Arms firmly planted / resolute posture (Frontline stance) -->
+    <!-- Left arm -->
+    <path d="M 94 98 L 74 125 L 82 131 L 98 106 Z" fill="#f97316"/>
+    <!-- Right arm extending forward with rescue lifeline/rope -->
+    <path d="M 146 98 L 175 115 L 170 123 L 142 106 Z" fill="#f97316"/>
+
+    <!-- Hands -->
+    <circle cx="78" cy="129" r="6" fill="#fcd34d"/>
+    <circle cx="173" cy="119" r="6" fill="#fcd34d"/>
+
+    <!-- Head and Professional Rescue Helmet -->
+    <circle cx="120" cy="74" r="14" fill="#fcd34d"/>
+    
+    <!-- Red Rescue Helmet with Headlamp -->
+    <path d="M 102 72 C 102 58, 138 58, 138 72 Z" fill="#dc2626"/>
+    <path d="M 99 70 L 141 70 L 143 74 L 97 74 Z" fill="#b91c1c"/>
+    <!-- Helmet Headlamp -->
+    <rect x="114" y="66" width="12" height="6" rx="2" fill="#f8fafc"/>
+  </g>
+
+  <!-- Lifeline / Rescue Rope cutting dynamically across -->
+  <path d="M 30 205 Q 90 160, 173 119 T 220 70" fill="none" stroke="#fbbf24" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 4"/>
+
+  <!-- High-contrast Frontline Focus Indicator (Orange glowing accent base) -->
+  <ellipse cx="130" cy="188" rx="55" ry="8" fill="#f97316" opacity="0.25"/>
+  <ellipse cx="130" cy="188" rx="30" ry="4" fill="#f97316" opacity="0.4"/>
+</svg>

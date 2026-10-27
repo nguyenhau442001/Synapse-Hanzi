@@ -1,0 +1,19 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(40, 40)">
+    <!-- Body -->
+    <ellipse cx="100" cy="100" rx="45" ry="30" fill="#FFFFFF"/>
+    <!-- Neck -->
+    <path d="M130 85 C 160 80, 170 40, 150 30 C 140 25, 135 40, 145 50" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+    <!-- Head -->
+    <circle cx="150" cy="30" r="12" fill="#FFFFFF"/>
+    <circle cx="155" cy="28" r="4" fill="#FF4500"/>
+    <path d="M160 30 L 185 35 L 160 40 Z" fill="#FFD700"/>
+    <!-- Legs -->
+    <path d="M90 125 L 80 180 M110 125 L 120 180" stroke="#FFD700" stroke-width="4" stroke-linecap="round"/>
+    <!-- Wing -->
+    <path d="M90 90 C 60 80, 40 110, 50 130 C 60 140, 80 130, 90 110" fill="#E0E0E0"/>
+    <!-- Tail -->
+    <path d="M60 100 C 30 90, 20 120, 40 140" fill="#2C3E50" stroke="#FFFFFF" stroke-width="4"/>
+  </g>
+</svg>

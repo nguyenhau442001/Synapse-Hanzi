@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ancient Stone Bridge Structure -->
+  <g transform="translate(40, 100)">
+    <!-- Bridge Arches -->
+    <path d="M0,60 Q60,0 120,60 Q180,0 240,60" fill="none" stroke="#7D8590" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Bridge Deck -->
+    <path d="M-10,65 L250,65 L240,80 L0,80 Z" fill="#4A5568"/>
+    
+    <!-- Intact Stone Blocks (Representing '完好') -->
+    <rect x="10" y="68" width="20" height="10" fill="#A0AEC0"/>
+    <rect x="40" y="68" width="20" height="10" fill="#A0AEC0"/>
+    <rect x="70" y="68" width="20" height="10" fill="#A0AEC0"/>
+    <rect x="100" y="68" width="20" height="10" fill="#A0AEC0"/>
+    <rect x="130" y="68" width="20" height="10" fill="#A0AEC0"/>
+    <rect x="160" y="68" width="20" height="10" fill="#A0AEC0"/>
+    <rect x="190" y="68" width="20" height="10" fill="#A0AEC0"/>
+    
+    <!-- Golden Highlight on the Arch to emphasize perfection/preservation -->
+    <path d="M0,60 Q60,0 120,60" fill="none" stroke="#ECC94B" stroke-width="4" stroke-linecap="round" stroke-dasharray="4 4"/>
+  </g>
+  
+  <!-- Ground/Water level -->
+  <rect x="0" y="180" width="240" height="60" fill="#171923"/>
+</svg>

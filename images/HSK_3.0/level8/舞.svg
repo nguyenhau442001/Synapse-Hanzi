@@ -1,0 +1,71 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background festive glowing lanterns / festive atmosphere (subtle) -->
+  <circle cx="50" cy="50" r="20" fill="#FF5722" opacity="0.15"/>
+  <circle cx="190" cy="70" r="15" fill="#FFC107" opacity="0.15"/>
+  
+  <path d="M20 180 Q120 150 220 180" stroke="#FF5722" stroke-width="2" fill="none" opacity="0.3" stroke-dasharray="4,4"/>
+
+  <!-- Motion lines for dragon dance action -->
+  <path d="M40 130 C80 90, 100 160, 140 110 S180 80, 210 120" stroke="#FFC107" stroke-width="3" fill="none" opacity="0.4" stroke-linecap="round" stroke-dasharray="8,6"/>
+  
+  <!-- Dragon Body (Golden/Red dynamic curves) -->
+  <!-- Tail / Mid-body loops -->
+  <path d="M 40 140 Q 60 110, 80 130 T 120 120 T 160 100" fill="none" stroke="#E65100" stroke-width="16" stroke-linecap="round"/>
+  <path d="M 40 140 Q 60 110, 80 130 T 120 120 T 160 100" fill="none" stroke="#FFC107" stroke-width="10" stroke-linecap="round" stroke-dasharray="14,6"/>
+
+  <!-- Dragon Head (Fierce, stylized, facing right/up) -->
+  <g transform="translate(165, 75)">
+    <!-- Head base -->
+    <path d="M0 25 C10 25, 25 15, 30 5 C35 -5, 25 -15, 15 -10 C5 -5, 0 10, -5 15 Z" fill="#FF5722"/>
+    <!-- Horns & Crest -->
+    <path d="M15 -10 L25 -25 M20 -8 L35 -15" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/>
+    <!-- Mane / Beard -->
+    <path d="M-5 15 L-15 25 M0 20 L-10 30" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/>
+    <!-- Eye -->
+    <circle cx="15" cy="0" r="3" fill="#FFEB3B"/>
+    <!-- Open Mouth -->
+    <path d="M20 12 C25 12, 28 8, 32 10" stroke="#FFF" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Dynamic Dancer (Holding the dragon pole) -->
+  <!-- Dancer Body & Pose (Leaning forward, energetic) -->
+  <g transform="translate(75, 120)">
+    <!-- Back Leg -->
+    <path d="M -10 35 L -25 70" stroke="#FFA726" stroke-width="8" stroke-linecap="round"/>
+    <!-- Front Leg (Bended) -->
+    <path d="M 10 35 L 25 70" stroke="#FF5722" stroke-width="8" stroke-linecap="round"/>
+    <!-- Torso -->
+    <path d="M -5 10 C -5 -5, 5 -10, 15 35" stroke="#E65100" stroke-width="14" stroke-linecap="round"/>
+    <!-- Head with festive headband -->
+    <circle cx="20" cy="-18" r="9" fill="#FFCCBC"/>
+    <path d="M10 -22 L30 -16" stroke="#FF5722" stroke-width="4" stroke-linecap="round"/>
+    <!-- Arms holding pole -->
+    <path d="M 10 -5 L 35 -15" stroke="#FF5722" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 5 5 L 35 -15" stroke="#FFA726" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Dragon Pole / Handle -->
+  <line x1="95" y1="95" x2="125" y2="65" stroke="#8D6E63" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Second supporting dancer silhouette in background for rich context -->
+  <g transform="translate(130, 125) scale(0.85)" opacity="0.7">
+    <path d="M 0 35 L -10 70" stroke="#E65100" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 15 35 L 25 70" stroke="#D84315" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 5 10 C 5 -5, 15 -10, 20 35" stroke="#BF360C" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="22" cy="-18" r="8" fill="#FFCCBC"/>
+    <path d="M 15 -5 L 0 -35" stroke="#D84315" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <line x1="135" y1="80" x2="165" y2="60" stroke="#8D6E63" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Ground Line -->
+  <path d="M 20 190 L 220 190" stroke="#374151" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Sparkles / Festivity details -->
+  <circle cx="110" cy="70" r="2" fill="#FFEB3B"/>
+  <circle cx="150" cy="50" r="3" fill="#FFC107"/>
+  <circle cx="180" cy="110" r="2.5" fill="#FF5722"/>
+  <circle cx="70" cy="85" r="2" fill="#FFEB3B"/>
+</svg>

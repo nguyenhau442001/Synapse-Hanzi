@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Glow & Dynamic Shockwaves -->
+  <circle cx="120" cy="120" r="70" fill="none" stroke="#FF5722" stroke-width="1.5" opacity="0.2"/>
+  <circle cx="120" cy="120" r="50" fill="none" stroke="#FF5722" stroke-width="2" opacity="0.4"/>
+  <circle cx="120" cy="120" r="30" fill="none" stroke="#FF5722" stroke-width="3" opacity="0.6"/>
+
+  <!-- Impact Flash / Energy Burst -->
+  <path d="M120 70 L128 100 L158 92 L136 114 L154 140 L124 130 L120 162 L116 130 L86 140 L104 114 L82 92 L112 100 Z" fill="#FFC107" opacity="0.9"/>
+  <circle cx="120" cy="120" r="18" fill="#FFF"/>
+
+  <!-- Earth Surface (Bottom Arc) -->
+  <path d="M 30,195 Q 120,165 210,195 A 120,120 0 0,1 30,195 Z" fill="#2E7D32"/>
+  <path d="M 30,195 Q 120,165 210,195 A 120,120 0 0,1 30,195 Z" fill="none" stroke="#4CAF50" stroke-width="3"/>
+  <!-- Earth Crust Depth -->
+  <path d="M 30,195 A 120,120 0 0,0 210,195 Q 120,230 30,195" fill="#1B5E20"/>
+
+  <!-- Incoming Meteorite (Top-Left trajectory crashing down) -->
+  <g transform="rotate(-35 85 85)">
+    <!-- Motion Trail -->
+    <path d="M 25,25 L 75,75" stroke="#FF5722" stroke-width="10" stroke-linecap="round" opacity="0.3"/>
+    <path d="M 40,40 L 80,80" stroke="#FF9800" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+    
+    <!-- Meteorite Body -->
+    <circle cx="85" cy="85" r="22" fill="#37474F"/>
+    <circle cx="85" cy="85" r="22" fill="url(#meteorGrad)"/>
+    <!-- Craters -->
+    <circle cx="77" cy="77" r="5" fill="#263238"/>
+    <circle cx="95" cy="88" r="4" fill="#263238"/>
+    <circle cx="83" cy="96" r="3" fill="#263238"/>
+  </g>
+
+  <!-- Debris / Fragments flying out from impact -->
+  <circle cx="155" cy="85" r="4" fill="#FF9800"/>
+  <path d="M 165,75 L 172,68" stroke="#FF5722" stroke-width="3" stroke-linecap="round"/>
+  
+  <circle cx="85" cy="140" r="3" fill="#FFC107"/>
+  <path d="M 70,150 L 60,158" stroke="#FF9800" stroke-width="3" stroke-linecap="round"/>
+
+  <circle cx="145" cy="155" r="5" fill="#37474F"/>
+  <path d="M 160,165 L 170,172" stroke="#FF5722" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Gradient definitions -->
+  <defs>
+    <radialGradient id="meteorGrad" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#78909C"/>
+      <stop offset="60%" stop-color="#455A64"/>
+      <stop offset="100%" stop-color="#263238"/>
+    </radialGradient>
+  </defs>
+</svg>

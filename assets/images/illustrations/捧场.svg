@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative restaurant / grand opening background hints -->
+  <path d="M 60 70 L 120 45 L 180 70" fill="none" stroke="#2A303C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="120" cy="45" r="4" fill="#FFB800" opacity="0.6"/>
+
+  <!-- Confetti / Festive atmosphere accents -->
+  <circle cx="55" cy="100" r="3" fill="#FF8A00" opacity="0.7"/>
+  <rect x="180" y="95" width="6" height="4" rx="1" fill="#FFB800" opacity="0.7" transform="rotate(25 183 97)"/>
+  <circle cx="185" cy="140" r="2.5" fill="#00E5FF" opacity="0.6"/>
+  <rect x="50" y="150" width="5" height="5" rx="1" fill="#FF8A00" opacity="0.5" transform="rotate(-15 52 152)"/>
+
+  <!-- Central Character / Supporter (捧场 - person attending and applauding/supporting) -->
+  <!-- Body & Jacket -->
+  <path d="M 90 200 C 90 170 100 160 120 160 C 140 160 150 170 150 200 Z" fill="#2563EB"/>
+  <!-- Inner shirt / collar -->
+  <path d="M 110 160 L 120 175 L 130 160 Z" fill="#F8FAFC"/>
+  
+  <!-- Neck -->
+  <rect x="113" y="145" width="14" height="20" rx="4" fill="#FBBF24"/>
+
+  <!-- Head -->
+  <circle cx="120" cy="125" r="22" fill="#FBBF24"/>
+
+  <!-- Hair (Modern sleek flat style) -->
+  <path d="M 98 120 C 98 105 110 100 120 100 C 130 100 142 105 142 120 C 142 125 139 122 135 115 C 130 108 124 106 120 106 C 115 106 109 108 105 115 C 101 122 98 125 98 120 Z" fill="#1E293B"/>
+
+  <!-- Enthusiastic/Happy Facial Expression -->
+  <!-- Eyes (happy closed arches) -->
+  <path d="M 110 122 Q 114 117 118 122" fill="none" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 122 122 Q 126 117 130 122" fill="none" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Big Warm Smile -->
+  <path d="M 113 131 Q 120 139 127 131" fill="none" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Rosy Cheeks -->
+  <circle cx="107" cy="129" r="3.5" fill="#FF8A00" opacity="0.4"/>
+  <circle cx="133" cy="129" r="3.5" fill="#FF8A00" opacity="0.4"/>
+
+  <!-- Dynamic Applause Hands (Representing '捧场' - cheering, applause, active presence) -->
+  <!-- Left Hand (Moving in) -->
+  <path d="M 75 145 C 70 140 73 130 82 135 C 88 138 95 145 95 145 Z" fill="#FBBF24" stroke="#D97706" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right Hand (Clapping position) -->
+  <path d="M 165 145 C 170 140 167 130 158 135 C 152 138 145 145 145 145 Z" fill="#FBBF24" stroke="#D97706" stroke-width="1.5" stroke-linejoin="round"/>
+
+  <!-- Sound/Energy Waves of Support radiating outwards -->
+  <path d="M 62 130 C 56 135 56 145 62 150" fill="none" stroke="#FFB800" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 54 120 C 46 130 46 145 54 155" fill="none" stroke="#FFB800" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+
+  <path d="M 178 130 C 184 135 184 145 178 150" fill="none" stroke="#FFB800" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 186 120 C 194 130 194 145 186 155" fill="none" stroke="#FFB800" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Golden focus spotlight effect/ground shadow -->
+  <ellipse cx="120" cy="204" rx="45" ry="8" fill="#FFB800" opacity="0.15"/>
+</svg>

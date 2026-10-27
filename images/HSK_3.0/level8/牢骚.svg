@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Desk -->
+  <rect x="40" y="150" width="160" height="15" rx="2" fill="#343A46"/>
+  <rect x="50" y="165" width="10" height="40" fill="#2A2F3A"/>
+  <rect x="180" y="165" width="10" height="40" fill="#2A2F3A"/>
+  
+  <!-- Person (Slumped posture representing dissatisfaction) -->
+  <circle cx="120" cy="90" r="25" fill="#E0E6ED"/>
+  <path d="M105 85 Q110 80 115 85 M125 85 Q130 80 135 85" stroke="#1A1D24" stroke-width="2" fill="none"/>
+  <path d="M110 100 Q120 95 130 100" stroke="#1A1D24" stroke-width="2" fill="none"/>
+  
+  <!-- Body/Arms folded in frustration -->
+  <path d="M95 120 C95 110 145 110 145 120 L140 150 L100 150 Z" fill="#4A5568"/>
+  <path d="M100 125 L120 135 L140 125" stroke="#E0E6ED" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Speech bubble representing "complaint" (visualized as jagged/unpleasant) -->
+  <path d="M150 70 L180 50 L170 80 L200 90 L170 100 L180 130 L150 110" fill="#F6AD55"/>
+  
+  <!-- Accent lines for frustration/noise -->
+  <line x1="185" y1="40" x2="190" y2="30" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+  <line x1="200" y1="60" x2="210" y2="55" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+</svg>

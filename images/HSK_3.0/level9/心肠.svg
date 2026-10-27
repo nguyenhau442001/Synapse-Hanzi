@@ -1,0 +1,32 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Character: The kind elderly woman -->
+  <g transform="translate(60, 60)">
+    <!-- Body/Clothing -->
+    <path d="M40 120 C40 100, 80 90, 120 120 L120 160 C120 170, 40 170, 40 160 Z" fill="#4A5568"/>
+    <!-- Face -->
+    <circle cx="80" cy="70" r="30" fill="#F7D1B6"/>
+    <!-- Hair (Gray/White) -->
+    <path d="M55 75 C55 45, 105 45, 105 75 C105 60, 95 50, 80 50 C65 50, 55 60, 55 75" fill="#E2E8F0"/>
+    <!-- Gentle Smile -->
+    <path d="M70 85 Q80 92, 90 85" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Eyes -->
+    <ellipse cx="70" cy="70" rx="3" ry="4" fill="#333"/>
+    <ellipse cx="90" cy="70" rx="3" ry="4" fill="#333"/>
+  </g>
+
+  <!-- Caring Action: Cupping hands around a small animal -->
+  <g transform="translate(100, 130)">
+    <!-- The small kitten -->
+    <path d="M20 30 C20 10, 40 10, 40 30 L40 40 C40 45, 20 45, 20 40 Z" fill="#D1D5DB"/>
+    <path d="M22 25 L25 15 L28 25 M32 25 L35 15 L38 25" stroke="#D1D5DB" stroke-width="2" fill="none"/>
+    
+    <!-- Hands cupping the kitten -->
+    <path d="M10 45 C5 45, 5 20, 20 20" stroke="#F7D1B6" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M50 45 C55 45, 55 20, 40 20" stroke="#F7D1B6" stroke-width="8" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Accent/Warmth indicator (Gold glow effect) -->
+  <circle cx="120" cy="120" r="90" fill="none" stroke="#F6AD55" stroke-width="1" stroke-dasharray="4 8" opacity="0.4"/>
+</svg>

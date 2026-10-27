@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle ambient lighting for grave/memorial context -->
+  <circle cx="120" cy="110" r="70" fill="#262C38" opacity="0.6"/>
+
+  <!-- Grass / Ground -->
+  <path d="M 40 190 Q 120 185 200 190 L 210 205 Q 120 215 30 205 Z" fill="#2E3944"/>
+  <path d="M 30 205 L 210 205 L 210 215 L 30 215 Z" fill="#1E252E"/>
+
+  <!-- Tombstone (representing "坟墓" from the contextual reference) -->
+  <path d="M 95 100 L 95 185 L 145 185 L 145 100 C 145 78 95 78 95 100 Z" fill="#4B5563"/>
+  <!-- Tombstone highlight/inner border -->
+  <path d="M 103 105 L 103 180 L 137 180 L 137 105 C 137 90 103 90 103 105 Z" fill="#374151"/>
+  <!-- Memorial plaque mark on tombstone -->
+  <line x1="120" y1="115" x2="120" y2="155" stroke="#6B7280" stroke-width="4" stroke-linecap="round"/>
+  <line x1="108" y1="130" x2="132" y2="130" stroke="#6B7280" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Foreground offerings / Respectful tribute (simple white flower) -->
+  <path d="M 120 185 Q 118 170 125 160" fill="none" stroke="#34D399" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="126" cy="157" r="4" fill="#F3F4F6"/>
+
+  <!-- Character / Person representing Grandfather ("祖父" - elder male figure, dignified posture) -->
+  <g transform="translate(0, 5)">
+    <!-- Body / Coat -->
+    <path d="M 72 135 C 72 120 90 115 120 115 C 150 115 168 120 168 135 L 175 190 C 175 195 170 198 165 198 L 75 198 C 70 198 65 195 65 190 Z" fill="#3B82F6"/>
+    <!-- Inner shirt / Collar -->
+    <path d="M 105 115 L 120 130 L 135 115 Z" fill="#F3F4F6"/>
+    <path d="M 112 115 L 120 125 L 128 115 Z" fill="#1E40AF"/>
+
+    <!-- Head and Face (Elderly features: gray hair, gentle expression) -->
+    <circle cx="120" cy="85" r="22" fill="#FCA5A5"/>
+    
+    <!-- Hair (Sides / Gray/White) -->
+    <path d="M 98 85 C 98 70 105 62 120 62 C 135 62 142 70 142 85 C 142 80 138 65 120 65 C 102 65 98 80 98 85 Z" fill="#E5E7EB"/>
+
+    <!-- Glasses (Classic elder feature) -->
+    <circle cx="112" cy="83" r="6" fill="none" stroke="#D97706" stroke-width="2"/>
+    <circle cx="128" cy="83" r="6" fill="none" stroke="#D97706" stroke-width="2"/>
+    <line x1="118" y1="83" x2="122" y2="83" stroke="#D97706" stroke-width="2"/>
+
+    <!-- Gentle closed eyes (reflecting respectful memory/mourning) -->
+    <path d="M 109 91 Q 112 94 115 91" fill="none" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 125 91 Q 128 94 131 91" fill="none" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Gentle subtle smile -->
+    <path d="M 117 99 Q 120 102 123 99" fill="none" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Golden accent lighting / Focus on the character and scene -->
+  <circle cx="120" cy="85" r="35" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity="0.3" stroke-dasharray="4 4"/>
+</svg>

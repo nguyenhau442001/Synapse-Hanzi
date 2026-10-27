@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#12151B" />
+      <stop offset="100%" stop-color="#1A2232" />
+    </linearGradient>
+
+    <!-- Water Gradient -->
+    <linearGradient id="waterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#16384C" />
+      <stop offset="100%" stop-color="#0E2331" />
+    </linearGradient>
+
+    <!-- Wetland Ground/Mud Gradient -->
+    <linearGradient id="mudGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D4A3E" />
+      <stop offset="100%" stop-color="#192A23" />
+    </linearGradient>
+
+    <!-- Glow Effect for Moon/Atmosphere -->
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFE599" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#FFE599" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Full-bleed Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Scene Background Sky -->
+  <rect x="0" y="0" width="240" height="150" fill="url(#skyGrad)" />
+
+  <!-- Moon & Glow -->
+  <circle cx="185" cy="55" r="25" fill="url(#moonGlow)" />
+  <circle cx="185" cy="55" r="14" fill="#FCE8B2" />
+  <circle cx="179" cy="51" r="3" fill="#F4D06F" opacity="0.4" />
+
+  <!-- Distant Reeds / Silhouette -->
+  <path d="M20 120 L22 95 L25 120 M35 120 L38 100 L41 120 M200 125 L203 105 L206 125 M215 125 L218 98 L222 125" stroke="#253545" stroke-width="1.5" stroke-linecap="round" fill="none" />
+
+  <!-- Water Surface Layer -->
+  <path d="M0 125 C 60 115, 140 135, 240 120 L240 240 L0 240 Z" fill="url(#waterGrad)" />
+
+  <!-- Water Ripples / Reflections -->
+  <path d="M60 145 Q 85 143, 110 145" stroke="#26516B" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.8" />
+  <path d="M130 165 Q 155 163, 180 165" stroke="#26516B" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6" />
+  <path d="M40 190 Q 70 188, 100 190" stroke="#26516B" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.4" />
+
+  <!-- Wetland Mudbanks & Islands (Foreground / Midground) -->
+  <path d="M-10 160 C 50 140, 90 170, 160 150 C 200 138, 220 155, 250 145 L250 240 L-10 240 Z" fill="url(#mudGrad)" />
+  
+  <!-- Wet Mud Texture Highlights -->
+  <path d="M20 175 C 60 165, 90 180, 130 170" stroke="#3A5C4E" stroke-width="2" stroke-linecap="round" fill="none" />
+  <path d="M150 195 C 180 185, 200 195, 230 188" stroke="#3A5C4E" stroke-width="2" stroke-linecap="round" fill="none" />
+
+  <!-- Reeds & Cattails (Bulrushes) on Wetland -->
+  <!-- Left Cluster -->
+  <path d="M25 155 L22 90" stroke="#4A7C59" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M32 160 L31 105" stroke="#385E43" stroke-width="2" stroke-linecap="round" />
+  <path d="M18 165 L22 115" stroke="#5B936C" stroke-width="1.5" stroke-linecap="round" />
+  <!-- Cattail Head -->
+  <ellipse cx="21" cy="95" rx="3.5" ry="12" fill="#D97736" />
+  <ellipse cx="31" cy="110" rx="3" ry="10" fill="#B85D23" />
+
+  <!-- Right Cluster -->
+  <path d="M205 150 L208 92" stroke="#4A7C59" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M214 155 L219 100" stroke="#385E43" stroke-width="2" stroke-linecap="round" />
+  <ellipse cx="208" cy="98" rx="3.5" ry="11" fill="#D97736" />
+
+  <!-- Water Lily Pads -->
+  <ellipse cx="80" cy="155" rx="12" ry="6" fill="#2E694E" />
+  <polygon points="80,155 70,152 75,155" fill="#16384C" />
+  
+  <ellipse cx="140" cy="180" rx="9" ry="4.5" fill="#24543E" />
+  <polygon points="140,180 133,178 136,180" fill="#16384C" />
+
+  <!-- Focus / Iconic Object: Migratory Bird (Heron/Egret) resting/standing in Wetland -->
+  <!-- Legs -->
+  <path d="M115 170 L113 210 L108 212" stroke="#C2B280" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <path d="M123 172 L125 208 L128 210" stroke="#C2B280" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+  <!-- Body (Sleek Modern Flat Vector Styling) -->
+  <ellipse cx="120" cy="152" rx="18" ry="12" fill="#F0F4F8" transform="rotate(-15 120 152)" />
+  
+  <!-- Wing overlay -->
+  <path d="M106 148 C 115 145, 128 150, 134 160 C 122 163, 110 158, 106 148 Z" fill="#D9E2EC" />
+
+  <!-- Neck & Head Curve -->
+  <path d="M132 145 C 142 135, 140 115, 135 105 C 133 101, 128 98, 128 98" stroke="#F0F4F8" stroke-width="6" stroke-linecap="round" fill="none" />
+
+  <!-- Beak (Accent Gold/Orange for high contrast focal point) -->
+  <polygon points="128,98 112,94 127,96" fill="#F6AD55" />
+
+  <!-- Bird Eye -->
+  <circle cx="132" cy="97" r="1.5" fill="#1A1D24" />
+
+  <!-- Soft Environmental Lighting / Highlights -->
+  <circle cx="190" cy="110" r="1" fill="#FFF" opacity="0.3" />
+  <circle cx="160" cy="95" r="1.5" fill="#FFF" opacity="0.4" />
+  <circle cx="70" cy="115" r="1" fill="#FFF" opacity="0.3" />
+
+  <!-- Border Frame Accent (Sleek UI touch) -->
+  <rect x="0" y="0" width="240" height="240" rx="24" fill="none" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1" />
+</svg>

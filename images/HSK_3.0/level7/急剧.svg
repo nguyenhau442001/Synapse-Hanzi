@@ -1,0 +1,55 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background grid/ambient elements suggesting atmosphere & drop -->
+  <path d="M40 70 L200 70" stroke="#2A2F3D" stroke-width="1" stroke-dasharray="4 4" />
+  <path d="M40 120 L200 120" stroke="#2A2F3D" stroke-width="1" stroke-dasharray="4 4" />
+  <path d="M40 170 L200 170" stroke="#2A2F3D" stroke-width="1" stroke-dasharray="4 4" />
+
+  <!-- Cold wind lines representing northern cold front -->
+  <path d="M25 55 Q 60 55, 80 75" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <path d="M45 40 Q 80 40, 100 60" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M15 80 Q 50 80, 70 100" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- Thermometer graphic on the left (Scale exaggeration / Contrast: High vs Low) -->
+  <g transform="translate(45, 55)">
+    <!-- Thermometer background tube -->
+    <rect x="0" y="0" width="12" height="110" rx="6" fill="#2A2F3D" />
+    <!-- Empty top space -->
+    <rect x="3" y="3" width="6" height="40" rx="3" fill="#33394A" />
+    <!-- Dropped fluid (bright orange/red contrasting cold blue) -->
+    <rect x="3" y="43" width="6" height="55" rx="1" fill="#F97316" />
+    <!-- Thermometer bulb -->
+    <circle cx="6" cy="104" r="9" fill="#F97316" />
+    <!-- Bulb highlight -->
+    <circle cx="4" cy="102" r="3" fill="#FB923C" opacity="0.6" />
+  </g>
+
+  <!-- Cliff / Steep drop graphic (Visualizing "dốc đứng", "断崖式") -->
+  <g transform="translate(90, 45)">
+    <!-- High plateau on the left -->
+    <path d="M0 25 L 35 25" stroke="#94A3B8" stroke-width="4" stroke-linecap="round" />
+    
+    <!-- Vertical drop cliff face -->
+    <path d="M35 25 L 35 145" stroke="#F97316" stroke-width="4" stroke-linecap="round" />
+    <path d="M35 25 L 35 145" stroke="#EF4444" stroke-width="2" stroke-dasharray="3 3" opacity="0.5" />
+
+    <!-- Low plain on the right -->
+    <path d="M35 145 L 115 145" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Dramatic steep plunge arrow (dữ dội, nhanh chóng) -->
+    <path d="M 65 35 L 65 125" fill="none" stroke="#F97316" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 55 110 L 65 130 L 75 110" fill="none" stroke="#F97316" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Motion blur / speed lines for rapid descent -->
+    <line x1="85" y1="60" x2="85" y2="95" stroke="#F97316" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+    <line x1="95" y1="80" x2="95" y2="115" stroke="#F97316" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  </g>
+
+  <!-- Snowflake accent representing the cold weather trigger -->
+  <g transform="translate(205, 50)" opacity="0.8">
+    <line x1="0" y1="-10" x2="0" y2="10" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-8.66" y1="-5" x2="8.66" y2="5" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-8.66" y1="5" x2="8.66" y2="-5" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

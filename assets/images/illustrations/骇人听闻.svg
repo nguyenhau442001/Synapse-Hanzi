@@ -1,0 +1,57 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative chilling/dread atmosphere lines -->
+  <g opacity="0.15">
+    <path d="M40 70 L200 70" stroke="#FF5722" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <path d="M30 110 L210 110" stroke="#FF5722" stroke-width="1.5" stroke-dasharray="6 4"/>
+    <path d="M50 150 L190 150" stroke="#FF5722" stroke-width="1.5" stroke-dasharray="3 6"/>
+  </g>
+
+  <!-- Sound wave / Shockwaves representing hearing something horrifying ("听闻") -->
+  <g opacity="0.3" transform="translate(120, 115)">
+    <path d="M -40 -40 C -10 -70, 10 -70, 40 -40" fill="none" stroke="#FF5722" stroke-width="2" stroke-linecap="round"/>
+    <path d="M -55 -55 C -15 -95, 15 -95, 55 -55" fill="none" stroke="#FF5722" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round"/>
+    <path d="M -70 -70 C -20 -120, 20 -120, 70 -70" fill="none" stroke="#FF5722" stroke-width="1" stroke-linecap="round"/>
+  </g>
+
+  <!-- Dynamic Human Character Action showing shock, shuddering, horrifying news ("骇人" - rùng mình, kinh hoàng) -->
+  <g>
+    <!-- Shadow / Ground -->
+    <ellipse cx="120" cy="200" rx="45" ry="8" fill="#111318"/>
+
+    <!-- Body / Torso leaning back in sudden shock/horror -->
+    <path d="M100 190 L110 150 L135 155 L145 190 Z" fill="#2C3240"/>
+
+    <!-- Head recoiling backwards -->
+    <circle cx="130" cy="115" r="18" fill="#FFC107"/>
+    <!-- Shocked facial expression (wide eyes, open mouth gasp) -->
+    <circle cx="137" cy="113" r="3" fill="#1A1D24"/>
+    <ellipse cx="143" cy="120" rx="2.5" ry="4" fill="#1A1D24"/>
+
+    <!-- Hair flicking back due to sudden movement -->
+    <path d="M115 105 C120 95, 135 100, 140 105" fill="none" stroke="#FFC107" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Shuddering / Trembling Action Lines (Dynamic motion effect) -->
+    <g stroke="#FF5722" stroke-width="2.5" stroke-linecap="round" fill="none">
+      <path d="M 90 130 L 82 135"/>
+      <path d="M 87 150 L 77 153"/>
+      <path d="M 160 130 L 168 135"/>
+      <path d="M 163 150 L 173 153"/>
+    </g>
+
+    <!-- Arms reacting defensively to horrifying news (hands clutching head/ears) -->
+    <!-- Left Arm -->
+    <path d="M110 150 C95 130, 110 110, 120 115" fill="none" stroke="#2C3240" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="120" cy="115" r="5" fill="#FFC107"/>
+
+    <!-- Right Arm -->
+    <path d="M135 155 C155 135, 145 110, 135 115" fill="none" stroke="#2C3240" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="135" cy="115" r="5" fill="#FFC107"/>
+  </g>
+
+  <!-- Focus Accent Highlights (High contrast orange/gold details) -->
+  <circle cx="120" cy="50" r="3" fill="#FF5722"/>
+  <path d="M116 50 L124 50 M120 46 L120 54" stroke="#FF5722" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "疑点" (Point of suspicion / Clue anomaly) -->
+  <!-- Sleek modern detective investigation scene focusing on an anomaly in a timeline/evidence -->
+
+  <!-- Subtle background grid/radar lines for investigation context -->
+  <circle cx="120" cy="120" r="70" fill="none" stroke="#2A2F3D" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <circle cx="120" cy="120" r="45" fill="none" stroke="#2A2F3D" stroke-width="1"/>
+  
+  <!-- Digital timeline bar representing the alibi -->
+  <rect x="50" y="145" width="140" height="6" rx="3" fill="#2E3648"/>
+  <!-- Timeline progress blocks -->
+  <rect x="55" y="146" width="35" height="4" rx="2" fill="#4B5563"/>
+  <rect x="95" y="146" width="35" height="4" rx="2" fill="#4B5563"/>
+  <rect x="135" y="146" width="50" height="4" rx="2" fill="#4B5563"/>
+
+  <!-- The Anomaly Point (疑点): Highlighted frame/magnified discrepancy on timeline -->
+  <rect x="93" y="137" width="22" height="22" rx="4" fill="none" stroke="#F59E0B" stroke-width="2"/>
+  <!-- Warning pulse dot inside anomaly -->
+  <circle cx="104" cy="148" r="4" fill="#F59E0B"/>
+
+  <!-- Magnifying Glass focusing on the anomaly -->
+  <!-- Glass handle -->
+  <path d="M 135 135 L 165 165" stroke="#9CA3AF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 135 135 L 165 165" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Glass lens circle -->
+  <circle cx="105" cy="105" r="36" fill="#1E2533" fill-opacity="0.85" stroke="#F59E0B" stroke-width="3"/>
+
+  <!-- Magnified fingerprint / trace evidence detail inside lens -->
+  <path d="M 95 98 C 95 93 100 90 105 90 C 110 90 115 93 115 98 C 115 102 110 105 105 108" fill="none" stroke="#60A5FA" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 90 105 C 90 98 96 95 102 95" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 98 113 C 102 113 108 110 112 105" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Question mark symbolizing doubt/suspicion subtly integrated into the lens flare/top -->
+  <path d="M 112 82 C 112 78 108 75 104 75 C 100 75 97 78 97 82 C 97 86 104 88 104 93" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="104" cy="100" r="1.5" fill="#F59E0B"/>
+
+</svg>

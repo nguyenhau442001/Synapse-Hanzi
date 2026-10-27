@@ -1,0 +1,63 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for prestige -->
+  <circle cx="120" cy="115" r="70" fill="#FFC107" opacity="0.05" />
+  
+  <!-- Laurel Wreath -->
+  <g transform="translate(120, 115)">
+    <!-- Left Branch -->
+    <path d="M -25,45 C -60,35 -75,-5 -60,-40 C -55,-50 -45,-55 -35,-55" fill="none" stroke="#2E7D32" stroke-width="4" stroke-linecap="round"/>
+    <path d="M -45,-10 C -60,-15 -65,-30 -55,-40 C -45,-30 -45,-20 -45,-10 Z" fill="#4CAF50"/>
+    <path d="M -30,15 C -48,15 -55,0 -48,-15 C -38,-10 -35,5 -30,15 Z" fill="#4CAF50"/>
+    <path d="M -20,35 C -35,38 -45,25 -42,10 C -32,15 -25,25 -20,35 Z" fill="#4CAF50"/>
+    <path d="M -38,-35 C -52,-42 -55,-52 -45,-58 C -38,-50 -38,-40 -38,-35 Z" fill="#4CAF50"/>
+
+    <!-- Right Branch -->
+    <path d="M 25,45 C 60,35 75,-5 60,-40 C 55,-50 45,-55 35,-55" fill="none" stroke="#2E7D32" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 45,-10 C 60,-15 65,-30 55,-40 C 45,-30 45,-20 45,-10 Z" fill="#4CAF50"/>
+    <path d="M 30,15 C 48,15 55,0 48,-15 C 38,-10 35,5 30,15 Z" fill="#4CAF50"/>
+    <path d="M 20,35 C 35,38 45,25 42,10 C 32,15 25,25 20,35 Z" fill="#4CAF50"/>
+    <path d="M 38,-35 C 52,-42 55,-52 45,-58 C 38,-50 38,-40 38,-35 Z" fill="#4CAF50"/>
+  </g>
+
+  <!-- Trophy Base & Cup -->
+  <g transform="translate(120, 115)">
+    <!-- Base Bottom -->
+    <path d="M -20,55 L 20,55 L 15,65 L -15,65 Z" fill="#37474F"/>
+    <!-- Base Pillar -->
+    <rect x="-8" y="35" width="16" height="20" fill="#CFD8DC"/>
+    <!-- Trophy Body -->
+    <path d="M -25,-25 C -25,15 -15,35 0,35 C 15,35 25,15 25,-25 Z" fill="#FFC107"/>
+    <!-- Trophy Rim -->
+    <ellipse cx="0" cy="-25" rx="25" ry="6" fill="#FFD54F"/>
+    <ellipse cx="0" cy="-25" rx="22" ry="4" fill="#FFA000"/>
+    <!-- Inner Cup Shade -->
+    <path d="M -22,-25 C -22,10 -12,28 0,30 C 12,28 22,10 22,-25 Z" fill="#FFCA28"/>
+    <!-- Trophy Handles -->
+    <path d="M -22,-20 C -40,-20 -40,5 -22,10" fill="none" stroke="#FFC107" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 22,-20 C 40,-20 40,5 22,10" fill="none" stroke="#FFC107" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Star Emblem on Trophy -->
+    <polygon points="0,0 -3,-8 -10,-8 -4,-12 -6,-20 0,-15 6,-20 4,-12 10,-8 3,-8" fill="#FFF" opacity="0.9"/>
+  </g>
+
+  <!-- Sparkles / Prestige Elements -->
+  <g fill="#FFD700">
+    <!-- Top Left Sparkle -->
+    <path d="M 70,50 L 73,60 L 83,63 L 73,66 L 70,76 L 67,66 L 57,63 L 67,60 Z" />
+    <!-- Top Right Sparkle -->
+    <path d="M 170,55 L 172,61 L 178,63 L 172,65 L 170,71 L 168,65 L 162,63 L 168,61 Z" transform="scale(0.8) translate(50, 10)" />
+    <!-- Small Dot Sparkles -->
+    <circle cx="85" cy="95" r="2" opacity="0.8"/>
+    <circle cx="155" cy="95" r="2" opacity="0.8"/>
+    <circle cx="100" cy="35" r="1.5" opacity="0.6"/>
+  </g>
+
+  <!-- Ribbons at the base -->
+  <g transform="translate(120, 185)">
+    <path d="M 0,-5 L -15,15 L 0,25 L 15,15 Z" fill="#E53935"/>
+    <path d="M -10,0 L -25,20 L -12,28 L -2,12 Z" fill="#B71C1C"/>
+    <path d="M 10,0 L 25,20 L 12,28 L 2,12 Z" fill="#B71C1C"/>
+  </g>
+</svg>

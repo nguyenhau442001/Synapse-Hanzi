@@ -1,0 +1,78 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Ambient background glow representing mystery/hidden depth -->
+  <circle cx="120" cy="120" r="85" fill="#252A34" opacity="0.8"/>
+  <circle cx="120" cy="120" r="60" fill="#2D3748" opacity="0.5"/>
+
+  <!-- Ancient Go / Chess Board Base (Perspective view) -->
+  <g transform="translate(120, 140)">
+    <!-- Board outer shadow/edge -->
+    <path d="M-75,0 L75,0 L95,35 L-95,35 Z" fill="#1E232D"/>
+    <!-- Board surface -->
+    <path d="M-70,-15 L70,-15 L85,15 L-85,15 Z" fill="#2A313C" stroke="#3E4857" stroke-width="1.5"/>
+    
+    <!-- Grid lines on the board -->
+    <line x1="-50" y1="-10" x2="-60" y2="10" stroke="#4A5568" stroke-width="1" opacity="0.6"/>
+    <line x1="-25" y1="-12" x2="-30" y2="12" stroke="#4A5568" stroke-width="1" opacity="0.6"/>
+    <line x1="0" y1="-13" x2="0" y2="13" stroke="#4A5568" stroke-width="1" opacity="0.6"/>
+    <line x1="25" y1="-12" x2="30" y2="12" stroke="#4A5568" stroke-width="1" opacity="0.6"/>
+    <line x1="50" y1="-10" x2="60" y2="10" stroke="#4A5568" stroke-width="1" opacity="0.6"/>
+
+    <line x1="-60" y1="-2" x2="60" y2="-2" stroke="#4A5568" stroke-width="1" opacity="0.6"/>
+    <line x1="-70" y1="5" x2="70" y2="5" stroke="#4A5568" stroke-width="1" opacity="0.6"/>
+
+    <!-- Standard visible chess pieces -->
+    <!-- Black pieces -->
+    <ellipse cx="-50" cy="-5" rx="6" ry="4" fill="#111418"/>
+    <ellipse cx="-50" cy="-7" rx="6" ry="4" fill="#222831"/>
+    
+    <ellipse cx="25" cy="-2" rx="6" ry="4" fill="#111418"/>
+    <ellipse cx="25" cy="-4" rx="6" ry="4" fill="#222831"/>
+
+    <!-- White pieces -->
+    <ellipse cx="-25" cy="0" rx="6" ry="4" fill="#CBD5E1"/>
+    <ellipse cx="-25" cy="-2" rx="6" ry="4" fill="#F1F5F9"/>
+
+    <ellipse cx="50" cy="7" rx="6" ry="4" fill="#CBD5E1"/>
+    <ellipse cx="50" cy="5" rx="6" ry="4" fill="#F1F5F9"/>
+  </g>
+
+  <!-- The "Xuánjī" (Hidden mechanism / Secret core) hovering above the center -->
+  <g transform="translate(120, 75)">
+    <!-- Vertical energetic beam from board to hidden mechanism -->
+    <path d="M-12,45 L12,45 L6,0 L-6,0 Z" fill="url(#beamGrad)" opacity="0.3"/>
+    
+    <!-- Outer glowing mystical aura rings -->
+    <circle cx="0" cy="0" r="32" fill="none" stroke="#F6AD55" stroke-width="1" stroke-dasharray="4 4" opacity="0.4"/>
+    <circle cx="0" cy="0" r="26" fill="none" stroke="#ED8936" stroke-width="1.5" opacity="0.6"/>
+
+    <!-- Core floating geometric artifact (representing sophisticated inner workings) -->
+    <g>
+      <!-- Outer rotating square / rhombus -->
+      <polygon points="0,-20 20,0 0,20 -20,0" fill="#2D3748" stroke="#F6AD55" stroke-width="2"/>
+      
+      <!-- Inner glowing mechanical core -->
+      <polygon points="0,-12 12,0 0,12 -12,0" fill="#1A1D24" stroke="#ED8936" stroke-width="1.5"/>
+
+      <!-- Central radiant spark / focal point -->
+      <circle cx="0" cy="0" r="5" fill="#F6AD55"/>
+      <circle cx="0" cy="0" r="2" fill="#FFFFFF"/>
+      
+      <!-- Floating mystical energy dots / sparks -->
+      <circle cx="-24" cy="-14" r="2" fill="#F6AD55" opacity="0.9"/>
+      <circle cx="26" cy="12" r="1.5" fill="#F6AD55" opacity="0.7"/>
+      <circle cx="18" cy="-22" r="2" fill="#ED8936" opacity="0.8"/>
+      <circle cx="-16" cy="20" r="1" fill="#F6AD55" opacity="0.6"/>
+    </g>
+  </g>
+
+  <!-- Gradient definition for the beam -->
+  <defs>
+    <linearGradient id="beamGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F6AD55" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#F6AD55" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+</svg>

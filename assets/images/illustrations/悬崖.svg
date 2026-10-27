@@ -1,0 +1,72 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Atmospheric background elements: distant mountain peaks and glowing moon/wind -->
+  <g opacity="0.3">
+    <path d="M 0 160 L 60 120 L 120 170 L 180 110 L 240 150 L 240 240 L 0 240 Z" fill="#222733"/>
+    <path d="M 40 240 L 100 140 L 160 210 L 220 160 L 240 180 L 240 240 Z" fill="#15181E"/>
+    <!-- Subtle high wind streaks -->
+    <path d="M 30 50 Q 80 40 130 55" stroke="#3A4454" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M 120 30 Q 160 25 200 40" stroke="#3A4454" stroke-width="1" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Deep abyss gradient overlay -->
+  <defs>
+    <linearGradient id="abyssGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A1D24" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0E1014" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="cliffGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#28303D"/>
+      <stop offset="50%" stop-color="#343E4E"/>
+      <stop offset="100%" stop-color="#1E232C"/>
+    </linearGradient>
+    <linearGradient id="pineGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E3A2F"/>
+      <stop offset="100%" stop-color="#2D5A46"/>
+    </linearGradient>
+  </defs>
+
+  <!-- The Vertical Cliff (悬崖绝壁) -->
+  <path d="M 30 20 L 140 20 L 140 240 L 30 240 Z" fill="url(#cliffGrad)"/>
+  <!-- Cliff edge highlights and cracks for texture -->
+  <path d="M 138 20 L 138 240" stroke="#48556A" stroke-width="2"/>
+  <path d="M 140 60 L 110 90 L 130 130" stroke="#1E232C" stroke-width="3" fill="none"/>
+  <path d="M 140 150 L 120 170 L 125 210" stroke="#1E232C" stroke-width="2.5" fill="none"/>
+  <path d="M 60 20 L 70 80 L 50 140" stroke="#1E232C" stroke-width="2" fill="none" opacity="0.5"/>
+
+  <!-- The Void/Abyss on the right -->
+  <rect x="140" y="20" width="100" height="220" fill="url(#abyssGrad)"/>
+  <path d="M 140 240 L 240 240 L 240 20 L 140 20" fill="#121418" opacity="0.6"/>
+
+  <!-- Ancient Pine Tree (苍劲挺拔的古松) clinging to the edge -->
+  <g>
+    <!-- Gnarled Trunk -->
+    <path d="M 125 45 Q 135 38 142 30 C 144 28 148 30 145 35 C 140 42 130 48 128 55 Z" fill="#5C4535"/>
+    <path d="M 130 48 C 135 55 133 65 130 75 C 128 70 126 60 130 48 Z" fill="#423125"/>
+
+    <!-- Twisted Branches extending over the abyss -->
+    <path d="M 138 33 Q 155 25 175 28 C 180 29 179 33 174 32 C 158 29 144 36 138 38 Z" fill="#5C4535"/>
+    <path d="M 134 40 Q 150 45 168 42 C 173 41 174 45 169 46 C 153 49 137 44 134 40 Z" fill="#423125"/>
+    <path d="M 132 52 Q 145 58 160 55" stroke="#423125" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Pine Needles / Foliage Clusters (Stylized flat layered pine tufts) -->
+    <!-- Top tuft -->
+    <path d="M 172 28 C 185 24 195 32 188 40 C 182 46 168 40 172 28 Z" fill="url(#pineGrad)"/>
+    <path d="M 165 22 C 178 18 188 26 181 34 C 175 40 161 34 165 22 Z" fill="#366852" opacity="0.8"/>
+
+    <!-- Middle tuft over the abyss -->
+    <path d="M 166 42 C 182 38 192 48 184 56 C 178 62 162 56 166 42 Z" fill="url(#pineGrad)"/>
+    <path d="M 155 38 C 170 34 180 44 172 52 C 166 58 151 52 155 38 Z" fill="#366852" opacity="0.9"/>
+
+    <!-- Lower tuft -->
+    <path d="M 158 53 C 172 49 182 59 174 67 C 168 73 154 67 158 53 Z" fill="url(#pineGrad)"/>
+  </g>
+
+  <!-- Accent lighting: Focus glow on the pine and cliff edge -->
+  <circle cx="140" cy="35" r="35" fill="#F39C12" opacity="0.08" filter="blur(8px)"/>
+
+  <!-- High-contrast focus accent mark (Gold dot on cliff edge, matching modern flashcard theme) -->
+  <circle cx="140" cy="35" r="3" fill="#F39C12"/>
+</svg>

@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Mother character profile -->
+  <g transform="translate(60, 40)">
+    <!-- Hair -->
+    <path d="M40 20 C 20 20, 10 40, 10 70 C 10 100, 30 120, 60 120 L 110 120 C 140 120, 160 100, 160 70 C 160 40, 140 20, 120 20" fill="#4A5568"/>
+    <!-- Face -->
+    <path d="M40 70 C 40 100, 60 120, 80 120 C 100 120, 120 100, 120 70 C 120 40, 100 30, 80 30 C 60 30, 40 40, 40 70" fill="#FFD1B3"/>
+    <!-- Eye closed in joy -->
+    <path d="M60 65 Q 65 60 70 65" stroke="#2D3748" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- Mouth humming -->
+    <circle cx="85" cy="85" r="5" fill="#2D3748"/>
+    <!-- Musical notes representing humming -->
+    <path d="M110 50 C 115 40, 125 40, 130 50 L 130 70" stroke="#F6AD55" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <circle cx="120" cy="75" r="4" fill="#F6AD55"/>
+    <path d="M135 40 C 140 30, 150 30, 155 40 L 155 60" stroke="#F6AD55" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <circle cx="145" cy="65" r="4" fill="#F6AD55"/>
+  </g>
+
+  <!-- Kitchen element -->
+  <rect x="20" y="170" width="200" height="15" rx="5" fill="#2D3748"/>
+  <path d="M80 170 L 80 140 L 160 140 L 160 170" fill="#4A5568"/>
+  <circle cx="120" cy="155" r="10" fill="#F6AD55"/>
+</svg>

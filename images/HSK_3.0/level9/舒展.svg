@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Character representing the act of stretching (舒展) -->
+  <g transform="translate(120, 120)">
+    <!-- Body -->
+    <path d="M-15,20 L-15,60 M15,20 L15,60" stroke="#FFB347" stroke-width="8" stroke-linecap="round" fill="none"/>
+    
+    <!-- Arms stretching upwards and outwards -->
+    <path d="M-15,20 L-45,-20 L-70,-10" stroke="#FFB347" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M15,20 L45,-20 L70,-10" stroke="#FFB347" stroke-width="8" stroke-linecap="round" fill="none"/>
+    
+    <!-- Legs slightly apart -->
+    <path d="M-15,60 L-30,95" stroke="#FFB347" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M15,60 L30,95" stroke="#FFB347" stroke-width="8" stroke-linecap="round" fill="none"/>
+    
+    <!-- Head -->
+    <circle cx="0" cy="-35" r="20" fill="#FFB347"/>
+    
+    <!-- Motion lines to emphasize the stretch -->
+    <path d="M-80,-30 Q-90,-40 -80,-50" stroke="#4A5568" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M80,-30 Q90,-40 80,-50" stroke="#4A5568" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M-50,80 Q-60,90 -50,100" stroke="#4A5568" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M50,80 Q60,90 50,100" stroke="#4A5568" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

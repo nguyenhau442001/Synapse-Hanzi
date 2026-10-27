@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Bed/Stretcher Base -->
+  <rect x="50" y="150" width="140" height="15" rx="4" fill="#3B4252"/>
+  <rect x="60" y="165" width="10" height="20" fill="#4C566A"/>
+  <rect x="170" y="165" width="10" height="20" fill="#4C566A"/>
+  
+  <!-- Patient Figure -->
+  <path d="M70 145 L170 145 L165 130 L75 130 Z" fill="#D8DEE9"/>
+  <circle cx="120" cy="115" r="15" fill="#D8DEE9"/>
+  
+  <!-- Medical Professional -->
+  <path d="M100 80 L140 80 L135 140 L105 140 Z" fill="#5E81AC"/>
+  <circle cx="120" cy="70" r="12" fill="#E5E9F0"/>
+  
+  <!-- Hands performing medical care -->
+  <path d="M110 120 C105 115 100 125 105 130" stroke="#FFB86C" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M130 120 C135 115 140 125 135 130" stroke="#FFB86C" stroke-width="4" stroke-linecap="round" fill="none"/>
+  
+  <!-- Medical Equipment (IV Stand) -->
+  <line x1="180" y1="150" x2="180" y2="60" stroke="#4C566A" stroke-width="4"/>
+  <line x1="180" y1="60" x2="160" y2="60" stroke="#4C566A" stroke-width="4"/>
+  <ellipse cx="160" cy="70" rx="8" ry="12" fill="#88C0D0" fill-opacity="0.6"/>
+  <path d="M160 82 L160 120" stroke="#88C0D0" stroke-width="2" stroke-linecap="round"/>
+</svg>

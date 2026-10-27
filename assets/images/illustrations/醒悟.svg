@@ -1,0 +1,117 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Definitions for Gradients and Glows -->
+  <defs>
+    <!-- Background Glow -->
+    <radialGradient id="epiphanyGlow" cx="50%" cy="45%" r="55%" fx="50%" fy="45%">
+      <stop offset="0%" stop-color="#FFB703" stop-opacity="0.3"/>
+      <stop offset="60%" stop-color="#FF8500" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#1A1D24" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Brain Core Gradient -->
+    <linearGradient id="brainGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#2D3748"/>
+      <stop offset="100%" stop-color="#1A202C"/>
+    </linearGradient>
+
+    <!-- Light Bulb Filament & Glow -->
+    <linearGradient id="bulbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE600"/>
+      <stop offset="100%" stop-color="#FF9E00"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Light representing Awakening / Realization -->
+  <circle cx="120" cy="115" r="90" fill="url(#epiphanyGlow)"/>
+
+  <!-- Radiating Insight Rays -->
+  <g stroke="#FFB703" stroke-width="2" stroke-linecap="round" opacity="0.4">
+    <line x1="120" y1="35" x2="120" y2="20" />
+    <line x1="65" y1="58" x2="52" y2="45" />
+    <line x1="42" y1="110" x2="25" y2="110" />
+    <line x1="175" y1="58" x2="188" y2="45" />
+    <line x1="198" y1="110" x2="215" y2="110" />
+    <line x1="75" y1="160" x2="60" y2="172" />
+    <line x1="165" y1="160" x2="180" y2="172" />
+  </g>
+
+  <!-- Central Physical Object: A stylized transparent human head profile integrated with a brilliant lightbulb/brain, symbolizing "醒悟" (Sudden Awakening / Epiphany) -->
+  <g transform="translate(0, 5)">
+    
+    <!-- Silhouette / Outline of the thoughtful person looking upward/forward -->
+    <path d="M 90,165 
+             C 85,140 85,120 92,100
+             C 75,95 65,80 70,60
+             C 75,42 95,30 115,35
+             C 135,30 155,42 160,60
+             C 165,80 155,95 138,100
+             C 145,120 145,140 140,165
+             Z" 
+          fill="#212936" 
+          stroke="#3A475B" 
+          stroke-width="2.5" 
+          stroke-linejoin="round"/>
+
+    <!-- Neck and Shoulders base -->
+    <path d="M 75,185 C 85,165 100,160 120,160 C 140,160 155,165 165,185" 
+          fill="none" 
+          stroke="#3A475B" 
+          stroke-width="2.5" 
+          stroke-linecap="round"/>
+
+    <!-- Neural Pathways inside the mind (Connecting to the central idea) -->
+    <g stroke="#4A5568" stroke-width="2" stroke-linecap="round" opacity="0.7">
+      <path d="M 105,90 Q 115,80 120,70" fill="none"/>
+      <path d="M 135,90 Q 125,80 120,70" fill="none"/>
+      <circle cx="105" cy="90" r="2.5" fill="#4A5568"/>
+      <circle cx="135" cy="90" r="2.5" fill="#4A5568"/>
+    </g>
+
+    <!-- The Epiphany Lightbulb (Center of Consciousness) -->
+    <g transform="translate(120, 68)">
+      <!-- Outer glow ring -->
+      <circle cx="0" cy="-5" r="24" fill="#FFB703" opacity="0.15"/>
+      <circle cx="0" cy="-5" r="17" fill="#FFB703" opacity="0.25"/>
+
+      <!-- Bulb Glass Base -->
+      <path d="M -10,-12 
+               C -14,-12 -16,-8 -16,-3 
+               C -16,4 -10,8 -6,11 
+               L -6,16 
+               L 6,16 
+               L 6,11 
+               C 10,8 16,4 16,-3 
+               C 16,-8 14,-12 10,-12 
+               Z" 
+            fill="url(#bulbGrad)" 
+            stroke="#FFE600" 
+            stroke-width="1.5"/>
+
+      <!-- Screw Thread Base -->
+      <rect x="-5" y="16" width="10" height="3" rx="1" fill="#718096"/>
+      <rect x="-4" y="20" width="8" height="3" rx="1" fill="#718096"/>
+
+      <!-- Bright Center Spark (Flash of sudden clarity) -->
+      <path d="M 0,-18 L 3,-7 L 12,-7 L 5,-1 L 8,9 L 0,3 L -8,9 L -5,-1 L -12,-7 L -3,-7 Z" 
+            fill="#FFFFFF" 
+            opacity="0.9"/>
+      
+      <!-- Internal Filament -->
+      <path d="M -3,2 L 0,-4 L 3,2" fill="none" stroke="#D69E2E" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Floating Insight Particles / Breakthrough Sparks -->
+    <g fill="#FFB703">
+      <circle cx="85" cy="45" r="2" opacity="0.8"/>
+      <circle cx="155" cy="40" r="3" opacity="0.9"/>
+      <circle cx="170" cy="85" r="1.5" opacity="0.7"/>
+      <circle cx="70" cy="95" r="2" opacity="0.6"/>
+      <circle cx="120" cy="22" r="2.5" opacity="1"/>
+    </g>
+    
+  </g>
+
+</svg>

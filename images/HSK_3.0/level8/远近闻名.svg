@@ -1,0 +1,22 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Tea House Building (Iconic representation of the famous location) -->
+  <path d="M60 180h120v-60l-60-40-60 40v60z" fill="#2D343E" stroke="#FFB84D" stroke-width="2"/>
+  <path d="M75 180v-40h30v40M135 180v-40h30v40" fill="#FFB84D"/>
+  <rect x="105" y="140" width="30" height="40" fill="#FFB84D"/>
+  
+  <!-- Sound/Reputation Waves radiating outward -->
+  <path d="M120 70c20 0 35 15 35 35" stroke="#FFB84D" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M120 60c30 0 50 20 50 50" stroke="#FFB84D" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M120 50c40 0 65 25 65 65" stroke="#FFB84D" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.4"/>
+  
+  <!-- People arriving from different directions -->
+  <circle cx="40" cy="190" r="8" fill="#A0AEC0"/>
+  <path d="M40 198v15" stroke="#A0AEC0" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="200" cy="190" r="8" fill="#A0AEC0"/>
+  <path d="M200 198v15" stroke="#A0AEC0" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Ground line -->
+  <path d="M20 215h200" stroke="#4A5568" stroke-width="2"/>
+</svg>

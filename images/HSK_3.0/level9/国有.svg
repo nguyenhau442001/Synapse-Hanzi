@@ -1,0 +1,36 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Subtle Grid/Glow for Modern Dark Theme -->
+  <circle cx="120" cy="120" r="80" fill="#222733" opacity="0.5"/>
+
+  <!-- State Building Representing State Property (国有) -->
+  <g transform="translate(0, 10)">
+    <!-- Classical/Modern Official Building Base -->
+    <path d="M70 145 H170 V155 H70 Z" fill="#64748B"/>
+    
+    <!-- Building Pillars -->
+    <rect x="85" y="90" width="10" height="55" rx="2" fill="#E2E8F0"/>
+    <rect x="105" y="90" width="10" height="55" rx="2" fill="#E2E8F0"/>
+    <rect x="125" y="90" width="10" height="55" rx="2" fill="#E2E8F0"/>
+    <rect x="145" y="90" width="10" height="55" rx="2" fill="#E2E8F0"/>
+
+    <!-- Building Floor/Roof Structure -->
+    <rect x="75" y="80" width="90" height="10" rx="2" fill="#94A3B8"/>
+    
+    <!-- Majestic Triangular Pediment (Roof) -->
+    <path d="M65 80 L120 45 L175 80 Z" fill="#3B82F6"/>
+    <path d="M120 52 L160 76 H80 Z" fill="#2563EB"/>
+
+    <!-- Official Emblem / Star Motif (Representing State Ownership) -->
+    <circle cx="120" cy="65" r="9" fill="#F59E0B"/>
+    <polygon points="120,58 122,63 127,63 123,66 125,71 120,68 115,71 117,66 113,63 118,63" fill="#FFFFFF"/>
+
+    <!-- Front Plaza / Ground -->
+    <path d="M50 155 H190 C195 155, 198 158, 198 162 C198 166, 195 169, 190 169 H50 C45 169, 42 166, 42 162 C42 158, 45 155, 50 155 Z" fill="#475569"/>
+
+    <!-- Security / Property Marker (Shield Outline to denote "Owned/Protected") -->
+    <path d="M120 172 C120 172 145 160 145 140 V115 C145 115 120 105 120 105 C120 105 95 115 95 115 V140 C95 160 120 172 120 172 Z" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Table Surface -->
+  <rect x="40" y="160" width="160" height="12" rx="2" fill="#343A46"/>
+  
+  <!-- Bowl -->
+  <path d="M80 160 L160 160 L150 195 C150 205 90 205 90 195 L80 160 Z" fill="#E0E0E0"/>
+  <path d="M90 160 L150 160 L145 185 C145 192 95 192 95 185 L90 160 Z" fill="#FFD54F"/>
+  
+  <!-- Character Head and Shoulders -->
+  <circle cx="120" cy="100" r="35" fill="#FFAB91"/>
+  <path d="M85 135 C85 110 155 110 155 135 L155 160 L85 160 Z" fill="#455A64"/>
+  
+  <!-- Motion Lines for Eating -->
+  <path d="M110 140 L100 120" stroke="#FF9800" stroke-width="3" stroke-linecap="round"/>
+  <path d="M130 140 L140 120" stroke="#FF9800" stroke-width="3" stroke-linecap="round"/>
+  <path d="M120 145 L120 125" stroke="#FF9800" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Chopsticks -->
+  <path d="M105 160 L95 120" stroke="#8D6E63" stroke-width="4" stroke-linecap="round"/>
+  <path d="M115 160 L125 120" stroke="#8D6E63" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Eyes (Intense/Hungry) -->
+  <ellipse cx="105" cy="95" rx="4" ry="6" fill="#1A1D24"/>
+  <ellipse cx="135" cy="95" rx="4" ry="6" fill="#1A1D24"/>
+  
+  <!-- Mouth (Open Wide) -->
+  <path d="M110 115 Q120 125 130 115" stroke="#1A1D24" stroke-width="3" fill="none"/>
+  
+  <!-- Floating Rice Particles -->
+  <circle cx="110" cy="110" r="2" fill="#FFF"/>
+  <circle cx="130" cy="112" r="2" fill="#FFF"/>
+  <circle cx="120" cy="108" r="2" fill="#FFF"/>
+</svg>

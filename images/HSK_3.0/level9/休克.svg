@@ -1,0 +1,31 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Hospital Bed Base -->
+  <rect x="50" y="150" width="140" height="15" rx="2" fill="#3A3F4B"/>
+  <rect x="60" y="165" width="10" height="20" fill="#3A3F4B"/>
+  <rect x="170" y="165" width="10" height="20" fill="#3A3F4B"/>
+  
+  <!-- Patient Body -->
+  <path d="M70 145 C 70 120, 90 110, 120 110 C 150 110, 170 120, 170 145 Z" fill="#E0E0E0"/>
+  
+  <!-- Head -->
+  <circle cx="120" cy="100" r="25" fill="#FFD1B3"/>
+  
+  <!-- Eyes (Closed/Unconscious) -->
+  <path d="M105 95 L 115 100 M 125 95 L 135 100" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Medical Equipment (IV Stand) -->
+  <line x1="190" y1="185" x2="190" y2="60" stroke="#7D8597" stroke-width="4" stroke-linecap="round"/>
+  <path d="M190 60 L 170 70" stroke="#7D8597" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- IV Bag -->
+  <rect x="160" y="70" width="20" height="30" rx="2" fill="#FF9F1C"/>
+  <path d="M170 100 L 170 130 L 120 130" stroke="#FF9F1C" stroke-width="3" fill="none"/>
+  
+  <!-- Medical Monitor Line (Flatline/Low Pulse) -->
+  <path d="M60 50 L 90 50 L 100 40 L 110 60 L 120 50 L 180 50" stroke="#FF9F1C" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Emergency Accent -->
+  <circle cx="120" cy="100" r="28" stroke="#FF9F1C" stroke-width="2" fill="none" stroke-dasharray="4 4" opacity="0.5"/>
+</svg>

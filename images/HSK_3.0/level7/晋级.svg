@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle glow / stage podium background -->
+  <ellipse cx="120" cy="190" rx="70" ry="16" fill="#242B38"/>
+  <ellipse cx="120" cy="190" rx="45" ry="10" fill="#2D3748"/>
+
+  <!-- Trophy Pedestal / Platform -->
+  <path d="M 85 190 L 155 190 L 145 175 L 95 175 Z" fill="#3A4454"/>
+  <path d="M 95 175 L 145 175 L 140 165 L 100 165 Z" fill="#4A5568"/>
+
+  <!-- Trophy Object (Physical object representing '晋级' advancement/winning rank) -->
+  <!-- Cup base -->
+  <path d="M 110 165 L 130 165 L 126 145 L 114 145 Z" fill="#D69E2E"/>
+  
+  <!-- Trophy stem -->
+  <rect x="115" y="130" width="10" height="18" fill="#B7791F"/>
+
+  <!-- Trophy bowl -->
+  <path d="M 90 85 Q 120 70 150 85 L 142 130 Q 120 142 98 130 Z" fill="#ECC94B"/>
+  <path d="M 93 88 Q 120 75 147 88 L 140 126 Q 120 137 100 126 Z" fill="#F6E05E"/>
+
+  <!-- Trophy handles -->
+  <path d="M 91 95 C 75 95 75 118 97 122" fill="none" stroke="#D69E2E" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 149 95 C 165 95 165 118 143 122" fill="none" stroke="#D69E2E" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Star emblem on trophy -->
+  <polygon points="120,97 123,105 131,105 125,110 127,118 120,113 113,118 115,110 109,105 117,105" fill="#FAF089"/>
+
+  <!-- Rising Arrow / Upward Progress indicator emphasizing advancement (晋级) -->
+  <path d="M 120 62 L 120 32" fill="none" stroke="#48BB78" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 108 44 L 120 30 L 132 44" fill="none" stroke="#48BB78" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Floating celebration sparkle elements -->
+  <path d="M 70 65 L 73 72 L 80 75 L 73 78 L 70 85 L 67 78 L 60 75 L 67 72 Z" fill="#4FD1C5" opacity="0.8"/>
+  <path d="M 170 65 L 172 70 L 177 72 L 172 74 L 170 79 L 168 74 L 163 72 L 168 70 Z" fill="#4FD1C5" opacity="0.8"/>
+  <circle cx="145" cy="50" r="3" fill="#ECC94B"/>
+  <circle cx="95" cy="50" r="2.5" fill="#FAF089"/>
+</svg>

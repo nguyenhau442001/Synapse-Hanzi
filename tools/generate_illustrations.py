@@ -45,8 +45,18 @@ def load_hsk_pos_db():
         if m:
             return json.loads(m.group(1))
     except Exception as e:
-        print(f"[!] Warning loading HSK_POS_DB: {e}", flush=True)
+        log_ts(f"[!] Warning loading HSK_POS_DB: {e}")
     return {}
+
+from datetime import datetime
+
+def log_ts(msg):
+    ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    s = str(msg)
+    if s.startswith("\n"):
+        print(f"\n[{ts}] {s[1:]}", flush=True)
+    else:
+        print(f"[{ts}] {s}", flush=True)
 
 HSK_POS_DB = load_hsk_pos_db()
 
@@ -72,7 +82,7 @@ def load_vocabulary():
                         if h and h not in words_by_hanzi:
                             words_by_hanzi[h] = item
         except Exception as e:
-            print(f"[!] Warning reading {f.name}: {e}", flush=True)
+            log_ts(f"[!] Warning reading {f.name}: {e}")
 
     return words_by_hanzi
 
@@ -114,15 +124,16 @@ def classify_pos(meaning):
     return 'noun', 'Noun (Danh từ - vật thể, con người, địa điểm)'
 
 MODELS_TO_TRY = [
-    "gemini-3.5-flash-lite",
-    "gemini-flash-lite-latest",
     "gemini-2.5-flash",
-    "gemini-3.1-flash-lite-preview",
     "gemini-flash-latest",
     "gemini-3.5-flash",
+    "gemini-3.6-flash",
+    "gemini-3.7-flash",
     "gemini-3.8-flash",
-    "gemini-3-flash-preview",
+    "gemini-flash-lite-latest",
+    "gemini-3.5-flash-lite",
     "gemini-3.1-flash-lite",
+    "gemini-3.1-flash-lite-preview",
 ]
 
 def call_gemini_svg_api(word_info, api_key, max_retries=3):
@@ -208,14 +219,14 @@ GENERAL CONSTRAINTS:
                     continue
                 else:
                     err_text = he.read().decode("utf-8", errors="ignore")
-                    print(f"    [!] {model} HTTP {he.code}: {err_text[:120]}", flush=True)
+                    log_ts(f"    [!] {model} HTTP {he.code}: {err_text[:120]}")
             except Exception as e:
                 # Timeout or connection error, try next model
                 continue
         # If all models hit limit/error in this attempt, wait and retry
         if attempt < max_retries - 1:
             wait_sec = 15 * (attempt + 1)
-            print(f"    [!] All models busy/exhausted. Waiting {wait_sec}s before retry {attempt+2}/{max_retries}...", flush=True)
+            log_ts(f"    [!] All models busy/exhausted. Waiting {wait_sec}s before retry {attempt+2}/{max_retries}...")
             time.sleep(wait_sec)
 
     return None
@@ -265,7 +276,12 @@ def main():
 
     api_key = (args.api_key or "").strip()
     if not api_key:
-        print("[!] Error: Google AI Studio API Key is required.", flush=True)
+        key_file = REPO_ROOT / ".api_key"
+        if key_file.exists():
+            api_key = key_file.read_text(encoding="utf-8").strip().splitlines()[0].strip()
+
+    if not api_key:
+        log_ts("[!] Error: Google AI Studio API Key is required.")
         sys.exit(1)
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -293,11 +309,11 @@ def main():
                 else:
                     targets = data
     else:
-        print("[!] Please specify --words or --hsk", flush=True)
+        log_ts("[!] Please specify --words or --hsk")
         sys.exit(1)
 
     total = len(targets)
-    print(f"[*] Starting batch generation for {total} word(s) [Delay: {args.delay}s]...", flush=True)
+    log_ts(f"[*] Starting batch generation for {total} word(s) [Delay: {args.delay}s]...")
 
     success_count = 0
     skip_count = 0
@@ -325,10 +341,10 @@ def main():
                 "caption": meaning
             }
             if idx % 20 == 0:
-                print(f"[{idx}/{total}] ({pct:.1f}%) Progress check: {skip_count} skipped (already exist), {success_count} newly generated.", flush=True)
+                log_ts(f"[{idx}/{total}] ({pct:.1f}%) Progress check: {skip_count} skipped (already exist), {success_count} newly generated.")
             continue
 
-        print(f"[{idx}/{total}] ({pct:.1f}%) Generating '{hanzi}' ({pinyin} - {meaning})...", flush=True)
+        log_ts(f"[{idx}/{total}] ({pct:.1f}%) Generating '{hanzi}' ({pinyin} - {meaning})...")
 
         svg_code = call_gemini_svg_api(item, api_key)
         if svg_code:
@@ -346,10 +362,10 @@ def main():
                 "caption": meaning
             }
             success_count += 1
-            print(f"    ✓ Saved SVG ({len(svg_code)} B)", flush=True)
+            log_ts(f"    ✓ Saved SVG ({len(svg_code)} B)")
         else:
             fail_count += 1
-            print(f"    ✗ Failed to generate SVG for '{hanzi}'", flush=True)
+            log_ts(f"    ✗ Failed to generate SVG for '{hanzi}'")
 
         # Incrementally update manifest every 5 words
         if len(pending_records) >= 5 or idx == total:
@@ -364,7 +380,7 @@ def main():
     if pending_records:
         update_illustrations_manifest(pending_records)
 
-    print(f"\n[*] BATCH COMPLETED: {total} total, {success_count} generated, {skip_count} skipped, {fail_count} failed.", flush=True)
+    log_ts(f"\n[*] BATCH COMPLETED: {total} total, {success_count} generated, {skip_count} skipped, {fail_count} failed.")
 
 if __name__ == "__main__":
     main()

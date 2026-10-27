@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Checkout Counter & Screen (Physical Object representing 结算 / Settlement & Checkout) -->
+    <!-- Cashier Counter Base -->
+    <path d="M50 145 H190 V185 C190 190.5 185.5 195 180 195 H60 C54.5 195 50 190.5 50 185 Z" fill="#2D333F"/>
+    <rect x="50" y="135" width="140" height="15" rx="3" fill="#3E4756"/>
+    
+    <!-- POS Terminal / Register Screen -->
+    <rect x="135" y="85" width="45" height="55" rx="5" fill="#252A34" stroke="#4A5568" stroke-width="2"/>
+    <!-- Screen Display Area -->
+    <rect x="142" y="92" width="31" height="35" rx="2" fill="#0F1115"/>
+    <!-- UI Graph / Receipt lines inside screen -->
+    <line x1="148" y1="100" x2="167" y2="100" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <line x1="148" y1="108" x2="163" y2="108" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+    <line x1="148" y1="116" x2="157" y2="116" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+    <!-- POS Stand -->
+    <path d="M150 140 H170 L175 145 H145 Z" fill="#4A5568"/>
+    
+    <!-- Shopping Goods / Basket Base on Counter -->
+    <rect x="65" y="115" width="55" height="20" rx="4" fill="#3B82F6"/>
+    <path d="M68 115 L75 95 H113 L120 115 Z" fill="#60A5FA" opacity="0.8"/>
+    <!-- Items in basket -->
+    <circle cx="85" cy="105" r="7" fill="#EF4444"/>
+    <rect x="98" y="98" width="12" height="15" rx="2" fill="#10B981"/>
+
+    <!-- Mobile Phone Scanning (Representing the modern payment/settlement method) -->
+    <!-- Hand holding phone -->
+    <path d="M95 165 C95 155 105 145 115 145 C125 145 130 155 130 165 Z" fill="#FCA5A5"/>
+    <!-- Phone Body -->
+    <rect x="90" y="110" width="28" height="52" rx="4" fill="#0F172A" stroke="#E2E8F0" stroke-width="2" transform="rotate(-15 104 136)"/>
+    <!-- Phone Screen (QR Code glowing payment interface) -->
+    <rect x="94" y="116" width="20" height="38" rx="2" fill="#1E293B" transform="rotate(-15 104 136)"/>
+    <!-- QR Code Graphic Placeholder -->
+    <rect x="98" y="122" width="12" height="12" fill="#F59E0B" rx="1" transform="rotate(-15 104 136)"/>
+    
+    <!-- Scanning Beam / Success Indicator -->
+    <path d="M110 100 L135 90" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="137" cy="89" r="4" fill="#10B981"/>
+    
+    <!-- Floating Checkmark / Successful Settlement Icon (Focal accent) -->
+    <circle cx="120" cy="55" r="18" fill="#F59E0B"/>
+    <path d="M111 55 L117 61 L131 46" fill="none" stroke="#1A1D24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Subtle financial/transaction particle accents -->
+    <circle cx="75" cy="70" r="3" fill="#60A5FA" opacity="0.6"/>
+    <circle cx="175" cy="65" r="2" fill="#34D399" opacity="0.7"/>
+    <circle cx="55" cy="95" r="2.5" fill="#F59E0B" opacity="0.5"/>
+  </g>
+</svg>
