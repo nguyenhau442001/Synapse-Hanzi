@@ -15,6 +15,7 @@
 /* In flashcard study mode, completely eliminate vocab hub and aux cards on all screen sizes */
 body.flashcard-study-mode #learningDashboard,
 body.flashcard-study-mode #continueLearningCard,
+body.flashcard-study-mode .dashboard-top-grid,
 body.flashcard-study-mode #primaryTabs,
 body.flashcard-study-mode #screenVocabHub,
 body.flashcard-study-mode .dashboard-aux-column,
@@ -24,6 +25,7 @@ body.reading-view-active .workstation-left,
 body.reading-view-active .workstation-right,
 body.reading-view-active #learningDashboard,
 body.reading-view-active #continueLearningCard,
+body.reading-view-active .dashboard-top-grid,
 body.reading-view-active .dashboard-aux-column,
 body.reading-view-active .quick-quiz-card,
 body.reading-view-active .featured-topics,
@@ -33,6 +35,7 @@ body.graded-reading-active .workstation-left,
 body.graded-reading-active .workstation-right,
 body.graded-reading-active #learningDashboard,
 body.graded-reading-active #continueLearningCard,
+body.graded-reading-active .dashboard-top-grid,
 body.graded-reading-active .dashboard-aux-column,
 body.graded-reading-active .quick-quiz-card,
 body.graded-reading-active .featured-topics,
@@ -41,6 +44,7 @@ body.graded-reading-active .graded-reading-promo-banner,
 body.review-view-active .workstation-right,
 body.review-view-active #learningDashboard,
 body.review-view-active #continueLearningCard,
+body.review-view-active .dashboard-top-grid,
 body.review-view-active .dashboard-aux-column,
 body.review-view-active .quick-quiz-card,
 body.review-view-active .featured-topics,
@@ -52,6 +56,7 @@ body.today-reviews-focus-mode .app-header,
 body.today-reviews-focus-mode #primaryTabs,
 body.today-reviews-focus-mode #learningDashboard,
 body.today-reviews-focus-mode #continueLearningCard,
+body.today-reviews-focus-mode .dashboard-top-grid,
 body.today-reviews-focus-mode .dashboard-aux-column,
 body.today-reviews-focus-mode .quick-quiz-card,
 body.today-reviews-focus-mode .featured-topics,
@@ -86,14 +91,14 @@ body.graded-story-active #primaryTabs {
     display: flex !important;
     flex-direction: column !important;
     align-items: stretch !important;
-    max-width: 1400px !important;
+    max-width: 1200px !important;
     width: 92% !important;
     margin: 0 auto !important;
     grid-template-columns: none !important;
     grid-template-areas: none !important;
   }
   body:not(.flashcard-study-mode):not(.reading-view-active) .app {
-    max-width: 1400px !important;
+    max-width: 1200px !important;
     margin: 0 auto !important;
     width: 92% !important;
   }
@@ -291,7 +296,7 @@ body.graded-story-active #primaryTabs {
   }
   body.home-screen .app {
     height: auto;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     width: 92%;
     padding: 0 16px;
@@ -303,10 +308,10 @@ body.graded-story-active #primaryTabs {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    max-width: 1400px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    gap: 24px;
+    gap: 20px;
     grid-template-areas:
       "middle middle"
       "footer footer";
@@ -322,7 +327,7 @@ body.graded-story-active #primaryTabs {
     min-height: auto;
     height: auto;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
