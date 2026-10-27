@@ -65,7 +65,7 @@ def update_package_json(new_version: str):
         data = {
             "name": "synapse-hanzi",
             "version": new_version,
-            "description": "Trạm học từ vựng chữ Hán đa giác quan, hiện đại, tối giản và 100% Offline (PWA)",
+            "description": "Trạm học từ vựng chữ Hán đa giác quan, hiện đại, tối giản và thông minh (PWA)",
             "private": True,
             "scripts": {
                 "version:patch": "python3 tools/bump_version.py patch",

@@ -1,6 +1,6 @@
 # ⚡ Synapse Hanzi — Cognitive Visual Workstation (HSK 1–9)
 
-> **Trạm học từ vựng chữ Hán đa giác quan, hiện đại, tối giản và 100% Offline (PWA).**  
+> **Trạm học từ vựng chữ Hán đa giác quan, hiện đại, tối giản và thông minh (PWA).**  
 > Kết hợp minh họa câu chuyện trực quan (Visual Mnemonics), thuật toán **Spaced Repetition (SRS)**, phân tích ngữ pháp đọc hiểu **HSK 4 Chuẩn Hanban**, luyện viết thứ tự nét và tra cứu âm Hán - Việt chuyên sâu.
 
 ---

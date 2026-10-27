@@ -144,7 +144,7 @@ export function App() {
             </span>
           </h1>
           <p style={{ margin: '2px 0 0', fontSize: '12px', color: 'var(--text-muted)' }}>
-            Trạm học chữ Hán đa giác quan • 100% Offline
+            Trạm học chữ Hán đa giác quan
           </p>
         </div>
 
@@ -811,7 +811,7 @@ export function App() {
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap', justifyContent: 'center' }}>
           <span>Synapse Hanzi · Trạm học chữ Hán đa giác quan</span>
           <span>·</span>
-          <span className="footer-version" title="Phiên bản ứng dụng">v2.0.3</span>
+          <span className="footer-version" title="Phiên bản ứng dụng">v2.0.5</span>
           <span>·</span>
           <a
             href="./legacy.html"
@@ -829,7 +829,7 @@ export function App() {
           </a>
         </div>
         <p style={{ margin: 0, opacity: 0.8 }}>
-          FSRS Spaced Repetition · 450 Graded Readings · Kangxi Radicals · 100% Offline PWA
+          FSRS Spaced Repetition · 450 Graded Readings · Kangxi Radicals
         </p>
       </footer>
     </div>
