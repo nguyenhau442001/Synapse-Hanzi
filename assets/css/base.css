@@ -357,7 +357,8 @@ body {
 @media (max-width: 1279px) {
   .theme-toggle-btn,
   .header-search-btn,
-  .header-help-btn { width: 40px; height: 40px; padding: 0; }
+  .header-help-btn,
+  .header-profile-btn { width: 40px; height: 40px; padding: 0; }
   .header-help-btn { border-radius: 999px; }
   .header-streak-badge { height: 40px; font-size: 13px; }
 }
