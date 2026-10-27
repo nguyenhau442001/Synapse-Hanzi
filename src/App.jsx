@@ -21,6 +21,18 @@ import {
   markWordProgress,
   setStudyFilter
 } from './signals/studySignals';
+import {
+  srsCardsSignal,
+  isDueReviewModeSignal,
+  dueWordsList,
+  dueCount,
+  currentDueWord,
+  dueReviewIndexSignal,
+  startDueReviewSession,
+  exitDueReviewSession,
+  submitSrsRating
+} from './signals/srsSignals';
+import { SRS_RATINGS } from './services/srsService';
 import { LEVELS_CONFIG } from './services/dataRepository';
 import { playWordAudio, playExampleAudio, isPlayingAudioSignal } from './services/speechService';
 import { CardIllustration } from './components/CardIllustration';
@@ -37,6 +49,9 @@ themeSignal.subscribe(theme => {
 });
 
 export function App() {
+  const isReviewMode = isDueReviewModeSignal.value;
+  const word = isReviewMode ? currentDueWord.value : currentWord.value;
+
   useEffect(() => {
     // Initial level load
     setLevel(currentLevelSignal.value);
@@ -56,13 +71,24 @@ export function App() {
         prevCard();
       } else if (e.code === 'KeyS' || e.code === 'ArrowDown') {
         e.preventDefault();
-        if (currentWord.value) {
-          playWordAudio(currentWord.value, audioManifestSignal.value);
-        }
+        const activeWord = isDueReviewModeSignal.value ? currentDueWord.value : currentWord.value;
+        if (activeWord) playWordAudio(activeWord, audioManifestSignal.value);
       } else if (e.code === 'Digit1') {
-        markWordProgress('learning');
+        if (isDueReviewModeSignal.value) {
+          if (currentDueWord.value) submitSrsRating(currentDueWord.value, 'again');
+        } else {
+          markWordProgress('learning');
+        }
       } else if (e.code === 'Digit2') {
-        markWordProgress('remembered');
+        if (isDueReviewModeSignal.value) {
+          if (currentDueWord.value) submitSrsRating(currentDueWord.value, 'hard');
+        } else {
+          markWordProgress('remembered');
+        }
+      } else if (e.code === 'Digit3' && isDueReviewModeSignal.value) {
+        if (currentDueWord.value) submitSrsRating(currentDueWord.value, 'good');
+      } else if (e.code === 'Digit4' && isDueReviewModeSignal.value) {
+        if (currentDueWord.value) submitSrsRating(currentDueWord.value, 'easy');
       }
     };
 
@@ -74,15 +100,16 @@ export function App() {
     themeSignal.value = themeSignal.value === 'dark' ? 'light' : 'dark';
   };
 
-  const word = currentWord.value;
   const stats = progressStats.value;
   const filteredList = filteredWords.value;
-  const curIdx = currentIndexSignal.value;
+  const curIdx = isReviewMode ? dueReviewIndexSignal.value : currentIndexSignal.value;
+  const totalCards = isReviewMode ? dueWordsList.value.length : filteredList.length;
   const isFlipped = isFlippedSignal.value;
   const curFilter = filterSignal.value;
   const curLevel = currentLevelSignal.value;
   const manifest = audioManifestSignal.value;
   const isPlaying = isPlayingAudioSignal.value;
+  const dueTotal = dueCount.value;
 
   const currentStatus = word && progressSignal.value[word.id] ? progressSignal.value[word.id] : 'unlearned';
 
@@ -108,7 +135,7 @@ export function App() {
             </span>
           </h1>
           <p style={{ margin: '2px 0 0', fontSize: '12px', color: 'var(--text-muted)' }}>
-            Trạm học từ vựng chữ Hán đa giác quan • Audio + Visual Mnemonics
+            Trạm học từ vựng chữ Hán đa giác quan • FSRS Spaced Repetition
           </p>
         </div>
 
@@ -129,89 +156,166 @@ export function App() {
         </button>
       </header>
 
-      {/* Level Selector Chips */}
-      <div style={{ display: 'flex', gap: '8px', overflowX: 'auto', paddingBottom: '8px', marginBottom: '16px', scrollbarWidth: 'none' }}>
-        {Object.entries(LEVELS_CONFIG).map(([key, cfg]) => {
-          const isActive = curLevel === key;
-          return (
-            <button
-              key={key}
-              onClick={() => setLevel(key)}
-              style={{
-                padding: '6px 14px',
-                borderRadius: 'var(--radius-full)',
-                border: isActive ? '1px solid var(--brand-primary)' : '1px solid var(--border-subtle)',
-                background: isActive ? 'var(--brand-primary)' : 'var(--bg-surface)',
-                color: isActive ? '#ffffff' : 'var(--text-secondary)',
-                fontWeight: isActive ? '700' : '500',
-                fontSize: '13px',
-                whiteSpace: 'nowrap',
-                transition: 'all 0.15s ease'
-              }}
-            >
-              {cfg.label}
-            </button>
-          );
-        })}
-      </div>
+      {/* Due Review Callout Banner */}
+      {!isReviewMode && dueTotal > 0 && (
+        <div style={{
+          background: 'linear-gradient(135deg, rgba(192, 86, 36, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%)',
+          border: '1px solid var(--brand-primary)',
+          borderRadius: 'var(--radius-md)',
+          padding: '12px 16px',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          marginBottom: '16px',
+          boxShadow: 'var(--shadow-sm)'
+        }}>
+          <div>
+            <div style={{ fontWeight: '700', fontSize: '14px', color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <span>🎯</span> Có {dueTotal} từ cần ôn tập hôm nay (FSRS)
+            </div>
+            <div style={{ fontSize: '12px', color: 'var(--text-secondary)', marginTop: '2px' }}>
+              Ôn tập đúng lịch để khắc sâu trí nhớ dài hạn
+            </div>
+          </div>
 
-      {/* Stats Bar */}
-      <div style={{
-        background: 'var(--bg-surface)',
-        borderRadius: 'var(--radius-md)',
-        padding: '12px 16px',
-        border: '1px solid var(--border-subtle)',
-        marginBottom: '16px',
-        boxShadow: 'var(--shadow-sm)'
-      }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
-          <span style={{ fontSize: '13px', fontWeight: '700', color: 'var(--text-primary)' }}>
-            Tiến độ {currentLevelConfig.value.label}: {stats.pct}%
-          </span>
-          <span style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
-            Đã thuộc: <strong style={{ color: 'var(--status-success)' }}>{stats.remembered}</strong> / {stats.total} từ
-          </span>
+          <button
+            onClick={startDueReviewSession}
+            style={{
+              padding: '8px 16px',
+              borderRadius: 'var(--radius-full)',
+              border: 'none',
+              background: 'var(--brand-primary)',
+              color: '#ffffff',
+              fontWeight: '700',
+              fontSize: '13px',
+              cursor: 'pointer',
+              boxShadow: 'var(--shadow-sm)'
+            }}
+          >
+            Ôn tập ngay →
+          </button>
         </div>
-        <div style={{ width: '100%', height: '6px', background: 'var(--border-subtle)', borderRadius: '3px', overflow: 'hidden' }}>
+      )}
+
+      {/* Mode Header: Review Mode vs Normal Study Mode */}
+      {isReviewMode ? (
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          background: 'var(--bg-surface)',
+          padding: '10px 16px',
+          borderRadius: 'var(--radius-md)',
+          border: '1px solid var(--border-subtle)',
+          marginBottom: '16px'
+        }}>
+          <div style={{ fontWeight: '700', fontSize: '14px', color: 'var(--brand-primary)', display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <span>🎯</span> Đang ôn tập FSRS ({dueTotal} từ đến hạn)
+          </div>
+
+          <button
+            onClick={exitDueReviewSession}
+            style={{
+              padding: '6px 12px',
+              borderRadius: 'var(--radius-sm)',
+              border: '1px solid var(--border-strong)',
+              background: 'transparent',
+              color: 'var(--text-secondary)',
+              fontSize: '12px',
+              fontWeight: '600',
+              cursor: 'pointer'
+            }}
+          >
+            Thoát ôn tập
+          </button>
+        </div>
+      ) : (
+        <>
+          {/* Level Selector Chips */}
+          <div style={{ display: 'flex', gap: '8px', overflowX: 'auto', paddingBottom: '8px', marginBottom: '16px', scrollbarWidth: 'none' }}>
+            {Object.entries(LEVELS_CONFIG).map(([key, cfg]) => {
+              const isActive = curLevel === key;
+              return (
+                <button
+                  key={key}
+                  onClick={() => setLevel(key)}
+                  style={{
+                    padding: '6px 14px',
+                    borderRadius: 'var(--radius-full)',
+                    border: isActive ? '1px solid var(--brand-primary)' : '1px solid var(--border-subtle)',
+                    background: isActive ? 'var(--brand-primary)' : 'var(--bg-surface)',
+                    color: isActive ? '#ffffff' : 'var(--text-secondary)',
+                    fontWeight: isActive ? '700' : '500',
+                    fontSize: '13px',
+                    whiteSpace: 'nowrap',
+                    transition: 'all 0.15s ease'
+                  }}
+                >
+                  {cfg.label}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Stats Bar */}
           <div style={{
-            width: `${stats.pct}%`,
-            height: '100%',
-            background: 'linear-gradient(90deg, var(--brand-primary) 0%, var(--status-success) 100%)',
-            transition: 'width 0.3s ease'
-          }} />
-        </div>
-      </div>
+            background: 'var(--bg-surface)',
+            borderRadius: 'var(--radius-md)',
+            padding: '12px 16px',
+            border: '1px solid var(--border-subtle)',
+            marginBottom: '16px',
+            boxShadow: 'var(--shadow-sm)'
+          }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
+              <span style={{ fontSize: '13px', fontWeight: '700', color: 'var(--text-primary)' }}>
+                Tiến độ {currentLevelConfig.value.label}: {stats.pct}%
+              </span>
+              <span style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
+                Đã thuộc: <strong style={{ color: 'var(--status-success)' }}>{stats.remembered}</strong> / {stats.total} từ
+              </span>
+            </div>
+            <div style={{ width: '100%', height: '6px', background: 'var(--border-subtle)', borderRadius: '3px', overflow: 'hidden' }}>
+              <div style={{
+                width: `${stats.pct}%`,
+                height: '100%',
+                background: 'linear-gradient(90deg, var(--brand-primary) 0%, var(--status-success) 100%)',
+                transition: 'width 0.3s ease'
+              }} />
+            </div>
+          </div>
 
-      {/* Filter Tabs */}
-      <div style={{ display: 'flex', gap: '6px', marginBottom: '16px' }}>
-        {[
-          { id: 'all', label: `Tất cả (${stats.total})` },
-          { id: 'unlearned', label: `Chưa học (${stats.unlearned})` },
-          { id: 'learning', label: `Đang nhớ (${stats.learning})` },
-          { id: 'remembered', label: `Đã thuộc (${stats.remembered})` }
-        ].map(tab => {
-          const isSelected = curFilter === tab.id;
-          return (
-            <button
-              key={tab.id}
-              onClick={() => setStudyFilter(tab.id)}
-              style={{
-                flex: 1,
-                padding: '8px 4px',
-                borderRadius: 'var(--radius-sm)',
-                border: 'none',
-                background: isSelected ? 'var(--bg-elevated)' : 'transparent',
-                color: isSelected ? 'var(--brand-primary)' : 'var(--text-muted)',
-                fontWeight: isSelected ? '700' : '500',
-                fontSize: '12px',
-                textAlign: 'center'
-              }}
-            >
-              {tab.label}
-            </button>
-          );
-        })}
-      </div>
+          {/* Filter Tabs */}
+          <div style={{ display: 'flex', gap: '6px', marginBottom: '16px' }}>
+            {[
+              { id: 'all', label: `Tất cả (${stats.total})` },
+              { id: 'unlearned', label: `Chưa học (${stats.unlearned})` },
+              { id: 'learning', label: `Đang nhớ (${stats.learning})` },
+              { id: 'remembered', label: `Đã thuộc (${stats.remembered})` }
+            ].map(tab => {
+              const isSelected = curFilter === tab.id;
+              return (
+                <button
+                  key={tab.id}
+                  onClick={() => setStudyFilter(tab.id)}
+                  style={{
+                    flex: 1,
+                    padding: '8px 4px',
+                    borderRadius: 'var(--radius-sm)',
+                    border: 'none',
+                    background: isSelected ? 'var(--bg-elevated)' : 'transparent',
+                    color: isSelected ? 'var(--brand-primary)' : 'var(--text-muted)',
+                    fontWeight: isSelected ? '700' : '500',
+                    fontSize: '12px',
+                    textAlign: 'center'
+                  }}
+                >
+                  {tab.label}
+                </button>
+              );
+            })}
+          </div>
+        </>
+      )}
 
       {/* Main Flashcard Workstation */}
       {isLoadingSignal.value ? (
@@ -231,7 +335,7 @@ export function App() {
           border: '1px solid var(--border-subtle)',
           color: 'var(--text-secondary)'
         }}>
-          🎉 Không có từ vựng nào trong bộ lọc này!
+          {isReviewMode ? '🎉 Xuất sắc! Bạn đã hoàn thành toàn bộ thẻ cần ôn tập hôm nay.' : '🎉 Không có từ vựng nào trong bộ lọc này!'}
         </div>
       ) : (
         <div>
@@ -257,7 +361,7 @@ export function App() {
           >
             {/* Index Counter */}
             <div style={{ position: 'absolute', top: '16px', left: '20px', fontSize: '13px', color: 'var(--text-muted)', fontWeight: '600' }}>
-              {curIdx + 1} / {filteredList.length}
+              {curIdx + 1} / {totalCards}
             </div>
 
             {/* Status Badge */}
@@ -426,79 +530,152 @@ export function App() {
           </div>
 
           {/* Action Navigation Controls */}
-          <div style={{ display: 'flex', gap: '10px', marginTop: '16px', justifyContent: 'center' }}>
-            <button
-              onClick={prevCard}
-              title="Thẻ trước (←)"
-              style={{
-                flex: 1,
-                padding: '12px 16px',
-                borderRadius: 'var(--radius-md)',
-                border: '1px solid var(--border-subtle)',
-                background: 'var(--bg-surface)',
-                color: 'var(--text-primary)',
-                fontWeight: '600',
-                fontSize: '14px'
-              }}
-            >
-              ← Trước
-            </button>
+          {isReviewMode ? (
+            /* 4 FSRS Rating Action Buttons */
+            <div style={{ display: 'flex', gap: '8px', marginTop: '16px', justifyContent: 'center' }}>
+              <button
+                onClick={() => submitSrsRating(word, 'again')}
+                style={{
+                  flex: 1,
+                  padding: '12px 8px',
+                  borderRadius: 'var(--radius-md)',
+                  border: '1px solid #ef4444',
+                  background: '#fef2f2',
+                  color: '#dc2626',
+                  fontWeight: '700',
+                  fontSize: '13px'
+                }}
+              >
+                ❌ Chưa nhớ (1)
+              </button>
+              <button
+                onClick={() => submitSrsRating(word, 'hard')}
+                style={{
+                  flex: 1,
+                  padding: '12px 8px',
+                  borderRadius: 'var(--radius-md)',
+                  border: '1px solid #f59e0b',
+                  background: '#fffbeb',
+                  color: '#b45309',
+                  fontWeight: '700',
+                  fontSize: '13px'
+                }}
+              >
+                ⏳ Khó (2)
+              </button>
+              <button
+                onClick={() => submitSrsRating(word, 'good')}
+                style={{
+                  flex: 1,
+                  padding: '12px 8px',
+                  borderRadius: 'var(--radius-md)',
+                  border: '1px solid #10b981',
+                  background: '#ecfdf5',
+                  color: '#047857',
+                  fontWeight: '700',
+                  fontSize: '13px'
+                }}
+              >
+                ✓ Tốt (3)
+              </button>
+              <button
+                onClick={() => submitSrsRating(word, 'easy')}
+                style={{
+                  flex: 1,
+                  padding: '12px 8px',
+                  borderRadius: 'var(--radius-md)',
+                  border: '1px solid #3b82f6',
+                  background: '#eff6ff',
+                  color: '#1d4ed8',
+                  fontWeight: '700',
+                  fontSize: '13px'
+                }}
+              >
+                ⚡ Rất dễ (4)
+              </button>
+            </div>
+          ) : (
+            /* Regular Study Mode Controls */
+            <div style={{ display: 'flex', gap: '10px', marginTop: '16px', justifyContent: 'center' }}>
+              <button
+                onClick={prevCard}
+                title="Thẻ trước (←)"
+                style={{
+                  flex: 1,
+                  padding: '12px 16px',
+                  borderRadius: 'var(--radius-md)',
+                  border: '1px solid var(--border-subtle)',
+                  background: 'var(--bg-surface)',
+                  color: 'var(--text-primary)',
+                  fontWeight: '600',
+                  fontSize: '14px'
+                }}
+              >
+                ← Trước
+              </button>
 
-            <button
-              onClick={() => markWordProgress('learning')}
-              title="Đang nhớ (phím 1)"
-              style={{
-                flex: 1.2,
-                padding: '12px 16px',
-                borderRadius: 'var(--radius-md)',
-                border: '1px solid #f59e0b',
-                background: 'var(--status-warning)',
-                color: '#ffffff',
-                fontWeight: '700',
-                fontSize: '14px'
-              }}
-            >
-              ⏳ Đang nhớ
-            </button>
+              <button
+                onClick={() => {
+                  markWordProgress('learning');
+                  submitSrsRating(word, 'again');
+                }}
+                title="Đang nhớ (phím 1)"
+                style={{
+                  flex: 1.2,
+                  padding: '12px 16px',
+                  borderRadius: 'var(--radius-md)',
+                  border: '1px solid #f59e0b',
+                  background: 'var(--status-warning)',
+                  color: '#ffffff',
+                  fontWeight: '700',
+                  fontSize: '14px'
+                }}
+              >
+                ⏳ Đang nhớ
+              </button>
 
-            <button
-              onClick={() => markWordProgress('remembered')}
-              title="Đã thuộc (phím 2)"
-              style={{
-                flex: 1.2,
-                padding: '12px 16px',
-                borderRadius: 'var(--radius-md)',
-                border: '1px solid #10b981',
-                background: 'var(--status-success)',
-                color: '#ffffff',
-                fontWeight: '700',
-                fontSize: '14px'
-              }}
-            >
-              ✓ Đã thuộc
-            </button>
+              <button
+                onClick={() => {
+                  markWordProgress('remembered');
+                  submitSrsRating(word, 'good');
+                }}
+                title="Đã thuộc (phím 2)"
+                style={{
+                  flex: 1.2,
+                  padding: '12px 16px',
+                  borderRadius: 'var(--radius-md)',
+                  border: '1px solid #10b981',
+                  background: 'var(--status-success)',
+                  color: '#ffffff',
+                  fontWeight: '700',
+                  fontSize: '14px'
+                }}
+              >
+                ✓ Đã thuộc
+              </button>
 
-            <button
-              onClick={nextCard}
-              title="Thẻ tiếp theo (→)"
-              style={{
-                flex: 1,
-                padding: '12px 16px',
-                borderRadius: 'var(--radius-md)',
-                border: '1px solid var(--border-subtle)',
-                background: 'var(--bg-surface)',
-                color: 'var(--text-primary)',
-                fontWeight: '600',
-                fontSize: '14px'
-              }}
-            >
-              Tiếp →
-            </button>
-          </div>
+              <button
+                onClick={nextCard}
+                title="Thẻ tiếp theo (→)"
+                style={{
+                  flex: 1,
+                  padding: '12px 16px',
+                  borderRadius: 'var(--radius-md)',
+                  border: '1px solid var(--border-subtle)',
+                  background: 'var(--bg-surface)',
+                  color: 'var(--text-primary)',
+                  fontWeight: '600',
+                  fontSize: '14px'
+                }}
+              >
+                Tiếp →
+              </button>
+            </div>
+          )}
 
           {/* Keyboard Shortcuts Hint */}
           <div style={{ marginTop: '16px', textAlign: 'center', fontSize: '12px', color: 'var(--text-muted)' }}>
-            Phím tắt: <kbd style={{ padding: '2px 5px', background: 'var(--bg-elevated)', borderRadius: '4px', border: '1px solid var(--border-subtle)' }}>Space</kbd> Lật thẻ • <kbd style={{ padding: '2px 5px', background: 'var(--bg-elevated)', borderRadius: '4px', border: '1px solid var(--border-subtle)' }}>S</kbd> Phát âm • <kbd style={{ padding: '2px 5px', background: 'var(--bg-elevated)', borderRadius: '4px', border: '1px solid var(--border-subtle)' }}>1</kbd> Đang nhớ • <kbd style={{ padding: '2px 5px', background: 'var(--bg-elevated)', borderRadius: '4px', border: '1px solid var(--border-subtle)' }}>2</kbd> Đã thuộc • <kbd style={{ padding: '2px 5px', background: 'var(--bg-elevated)', borderRadius: '4px', border: '1px solid var(--border-subtle)' }}>← / →</kbd> Chuyển thẻ
+            Phím tắt: <kbd style={{ padding: '2px 5px', background: 'var(--bg-elevated)', borderRadius: '4px', border: '1px solid var(--border-subtle)' }}>Space</kbd> Lật thẻ • <kbd style={{ padding: '2px 5px', background: 'var(--bg-elevated)', borderRadius: '4px', border: '1px solid var(--border-subtle)' }}>S</kbd> Phát âm • {isReviewMode ? <><kbd style={{ padding: '2px 5px', background: 'var(--bg-elevated)', borderRadius: '4px', border: '1px solid var(--border-subtle)' }}>1..4</kbd> Đánh giá FSRS</> : <><kbd style={{ padding: '2px 5px', background: 'var(--bg-elevated)', borderRadius: '4px', border: '1px solid var(--border-subtle)' }}>1</kbd> Đang nhớ • <kbd style={{ padding: '2px 5px', background: 'var(--bg-elevated)', borderRadius: '4px', border: '1px solid var(--border-subtle)' }}>2</kbd> Đã thuộc • <kbd style={{ padding: '2px 5px', background: 'var(--bg-elevated)', borderRadius: '4px', border: '1px solid var(--border-subtle)' }}>← / →</kbd> Chuyển thẻ</>}
           </div>
         </div>
       )}

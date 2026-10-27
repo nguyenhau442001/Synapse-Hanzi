@@ -7,6 +7,7 @@ import { signal, computed } from '@preact/signals';
 import { fetchVocabulary, fetchAudioManifest, LEVELS_CONFIG } from '../services/dataRepository';
 import { loadLevelProgress, saveLevelProgress, loadLastSelectedLevel, saveLastSelectedLevel } from '../services/storageService';
 import { loadLevelIllustrations } from '../services/illustrationService';
+import { initLevelSrs } from './srsSignals';
 
 // Core State Signals
 export const currentLevelSignal = signal(loadLastSelectedLevel());
@@ -82,8 +83,9 @@ export async function setLevel(levelId) {
     currentLevelSignal.value = levelId;
     saveLastSelectedLevel(levelId);
 
-    // Load progress from storage
+    // Load progress and SRS cards from storage
     progressSignal.value = loadLevelProgress(levelId);
+    initLevelSrs(levelId);
 
     // Fetch vocabulary list, audio manifest and illustration pack in parallel
     const [words, manifest] = await Promise.all([
