@@ -1,0 +1,55 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements (subtle urban street hint) -->
+  <path d="M40 180L200 180" stroke="#2A2F3B" stroke-width="2" stroke-linecap="round"/>
+  <rect x="70" y="130" width="30" height="50" fill="#222733"/>
+  <rect x="140" y="110" width="40" height="70" fill="#222733"/>
+
+  <!-- Central Character: Arrogant, aggressive antagonist representing "嚣张" (xiāozhāng) -->
+  <g transform="translate(120, 115)">
+    <!-- Dynamic forward-leaning body / slouch of defiance -->
+    <path d="M-10 25 L-22 55 L-8 65 L-2 40" fill="#E5534B"/>
+    <path d="M10 25 L22 55 L8 65 L2 40" fill="#E5534B"/>
+
+    <!-- Torso (Leather/Street jacket style) -->
+    <path d="M-22 5 C-22 -15 22 -15 22 5 L 26 40 L -26 40 Z" fill="#2B313F"/>
+    
+    <!-- Accent highlights (Aggressive bright orange/gold theme) -->
+    <path d="M-15 10 L0 30 L15 10" fill="none" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="-18" y1="20" x2="18" y2="20" stroke="#F6AD55" stroke-width="2"/>
+
+    <!-- Raised threatening arm / holding a blunt object/weapon silhouette -->
+    <path d="M18 -5 L38 -25 L45 -18 L28 10" fill="#E5534B"/>
+    <!-- Weapon / Club -->
+    <rect x="36" y="-45" width="8" height="35" rx="3" transform="rotate(25 40 -30)" fill="#CBD5E1"/>
+    
+    <!-- Other arm resting on hip in a defiant posture -->
+    <path d="M-18 -5 L-32 15 L-20 30" fill="#E5534B"/>
+
+    <!-- Head / Face tilting upwards with an arrogant expression -->
+    <circle cx="0" cy="-22" r="15" fill="#E5534B"/>
+    <!-- Spiked / Messy defiant hair -->
+    <path d="M-16 -30 L-10 -42 L-2 -32 L6 -44 L14 -32 L18 -38 L16 -24 Z" fill="#F6AD55"/>
+    
+    <!-- Smug, aggressive facial features (angular eyes, sharp smirk) -->
+    <line x1="-7" y1="-24" x2="-1" y2="-22" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="1" y1="-22" x2="7" y2="-24" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M-4 -16 Q 0 -12 5 -17" fill="none" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Aura of arrogance / aggressive energy lines (high-contrast orange/gold accent) -->
+  <g stroke="#F6AD55" stroke-width="3" stroke-linecap="round" opacity="0.85">
+    <!-- Left fierce energy bolts -->
+    <path d="M45 70 L60 85 M40 100 L55 105 M50 130 L65 125"/>
+    <!-- Right fierce energy bolts -->
+    <path d="M195 70 L180 85 M200 100 L185 105 M190 130 L175 125"/>
+    <!-- Top flare -->
+    <path d="M120 35 L120 50" stroke-width="4"/>
+  </g>
+
+  <!-- Ground impact / intimidation shockwave lines -->
+  <path d="M85 185 Q120 195 155 185" fill="none" stroke="#E5534B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M100 192 Q120 198 140 192" fill="none" stroke="#F6AD55" stroke-width="2" stroke-linecap="round"/>
+</svg>

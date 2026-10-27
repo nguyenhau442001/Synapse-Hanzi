@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Railway line path -->
+  <path d="M40 180 C 100 180, 140 120, 200 60" stroke="#4A5568" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <path d="M40 180 C 100 180, 140 120, 200 60" stroke="#F6AD55" stroke-width="4" stroke-dasharray="10 10" fill="none"/>
+  
+  <!-- Nodes along the line (representing cities/locations) -->
+  <circle cx="60" cy="160" r="8" fill="#F6AD55"/>
+  <circle cx="100" cy="140" r="8" fill="#F6AD55"/>
+  <circle cx="140" cy="110" r="8" fill="#F6AD55"/>
+  <circle cx="180" cy="80" r="8" fill="#F6AD55"/>
+  
+  <!-- Stylized train icon on the track -->
+  <rect x="130" y="95" width="20" height="12" rx="2" fill="#E2E8F0"/>
+  <rect x="132" y="97" width="6" height="4" rx="1" fill="#1A1D24"/>
+  <circle cx="135" cy="110" r="3" fill="#A0AEC0"/>
+  <circle cx="145" cy="110" r="3" fill="#A0AEC0"/>
+  
+  <!-- Decorative elements indicating the "along" aspect -->
+  <path d="M60 160 L 60 140" stroke="#718096" stroke-width="2"/>
+  <path d="M100 140 L 100 120" stroke="#718096" stroke-width="2"/>
+  <path d="M180 80 L 180 60" stroke="#718096" stroke-width="2"/>
+</svg>

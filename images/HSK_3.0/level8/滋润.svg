@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative glows / depth -->
+  <circle cx="120" cy="140" r="70" fill="#22303C" opacity="0.5"/>
+
+  <!-- Contextual Reference: A fertile clod of earth receiving life-giving spring rain droplets -->
+  
+  <!-- Soil / Earth Mound (Representing 肥沃田野) -->
+  <path d="M 60,165 Q 120,135 180,165 C 195,172 200,190 185,198 C 150,210 90,210 55,198 C 40,190 45,172 60,165 Z" fill="#2E4033"/>
+  <path d="M 68,172 Q 120,148 172,172 C 183,178 187,190 174,195 C 144,204 96,204 66,195 C 53,190 57,178 68,172 Z" fill="#3D5643"/>
+  
+  <!-- Rich soil texture details -->
+  <circle cx="95" cy="180" r="3" fill="#243328"/>
+  <circle cx="145" cy="185" r="2.5" fill="#243328"/>
+  <circle cx="120" cy="190" r="2" fill="#243328"/>
+  <path d="M 80,186 Q 85,183 90,187" stroke="#243328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <path d="M 150,178 Q 155,175 160,179" stroke="#243328" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Sprouting Green Life (Representing nourishment and revival - 滋润) -->
+  <path d="M 120,180 Q 118,150 120,125" stroke="#52B788" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <!-- Left Leaf -->
+  <path d="M 120,145 C 105,140 95,125 102,115 C 110,105 120,125 120,145 Z" fill="#74C69D"/>
+  <!-- Right Leaf -->
+  <path d="M 120,135 C 135,130 145,115 138,105 C 130,95 120,115 120,135 Z" fill="#95D5B2"/>
+
+  <!-- Spring Rain / Moisture Droplets (Representing 春雨 and 滋润/hydration) -->
+  <!-- Droplet 1 (Falling) -->
+  <path d="M 80,75 C 80,75 73,88 73,95 C 73,99 76,102 80,102 C 84,102 87,99 87,95 C 87,88 80,75 80,75 Z" fill="#4CC9F0" opacity="0.9"/>
+  <!-- Droplet 2 (Falling, angled) -->
+  <path d="M 160,65 C 160,65 154,76 154,82 C 154,86 157,89 160,89 C 163,89 166,86 166,82 C 166,76 160,65 160,65 Z" fill="#4CC9F0" opacity="0.8"/>
+  <!-- Droplet 3 (Smaller background droplet) -->
+  <path d="M 105,50 C 105,50 101,57 101,61 C 101,63 103,65 105,65 C 107,65 109,63 109,61 C 109,57 105,50 105,50 Z" fill="#4CC9F0" opacity="0.6"/>
+
+  <!-- Splash / Absorption ripples on the soil -->
+  <ellipse cx="120" cy="168" rx="8" ry="3" fill="none" stroke="#4CC9F0" stroke-width="1.5" opacity="0.7"/>
+  <ellipse cx="120" cy="168" rx="14" ry="5" fill="none" stroke="#4CC9F0" stroke-width="1" opacity="0.4"/>
+  
+  <ellipse cx="95" cy="173" rx="6" ry="2" fill="none" stroke="#4CC9F0" stroke-width="1.2" opacity="0.6"/>
+  
+  <ellipse cx="150" cy="172" rx="7" ry="2.5" fill="none" stroke="#4CC9F0" stroke-width="1.2" opacity="0.6"/>
+
+  <!-- Glowing accent highlight representing the fresh, saturated vitality -->
+  <circle cx="120" cy="120" r="45" fill="#4CC9F0" opacity="0.08" filter="blur(8px)"/>
+</svg>

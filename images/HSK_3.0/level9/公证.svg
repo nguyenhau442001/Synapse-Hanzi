@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow or desk surface -->
+  <path d="M50 185 L190 185" stroke="#2D333F" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Legal Document / Certificate Object -->
+  <g transform="translate(65, 35)">
+    <!-- Document Base -->
+    <rect x="0" y="0" width="110" height="150" rx="6" fill="#222733" stroke="#3A4254" stroke-width="2"/>
+    <path d="M75 0 L110 35 L110 0 Z" fill="#2D333F"/>
+    <path d="M75 0 L75 35 L110 35" fill="none" stroke="#3A4254" stroke-width="2" stroke-linejoin="round"/>
+    
+    <!-- Document Lines (Abstracted text representation) -->
+    <rect x="18" y="25" width="45" height="6" rx="3" fill="#3A4254"/>
+    <rect x="18" y="45" width="74" height="4" rx="2" fill="#2E3544"/>
+    <rect x="18" y="57" width="60" height="4" rx="2" fill="#2E3544"/>
+    <rect x="18" y="69" width="68" height="4" rx="2" fill="#2E3544"/>
+    
+    <!-- Property/House Stamp/Icon on document -->
+    <path d="M35 105 L55 90 L75 105 L75 130 L35 130 Z" fill="#2D333F"/>
+    <path d="M30 103 L55 83 L80 103" fill="none" stroke="#485367" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="48" y="112" width="14" height="18" fill="#1A1D24"/>
+  </g>
+
+  <!-- Official Seal / Notary Stamp (Golden/Orange accent for legal authority and official certification) -->
+  <g transform="translate(130, 120)">
+    <!-- Ribbon tails -->
+    <path d="M15 45 L5 70 L25 60 L45 70 L35 45" fill="#D97706"/>
+    
+    <!-- Outer gold medallion -->
+    <circle cx="25" cy="25" r="26" fill="#1A1D24" stroke="#F59E0B" stroke-width="3"/>
+    <circle cx="25" cy="25" r="21" fill="#D97706"/>
+    <circle cx="25" cy="25" r="17" fill="#B45309"/>
+    
+    <!-- Star/Checkmark symbol inside seal representing verification -->
+    <path d="M16 25 L22 31 L35 17" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Fountain Pen / Legal Pen (Sleek modern tool for signing/notarizing) -->
+  <g transform="translate(30, 110) rotate(-35)">
+    <!-- Pen body -->
+    <rect x="0" y="0" width="14" height="90" rx="3" fill="#485367"/>
+    <!-- Pen grip -->
+    <rect x="0" y="60" width="14" height="20" fill="#2D333F"/>
+    <!-- Pen nib -->
+    <path d="M0 90 L7 105 L14 90 Z" fill="#F59E0B"/>
+    <path d="M7 90 L7 98" stroke="#B45309" stroke-width="1.5"/>
+    <!-- Clip -->
+    <rect x="5" y="-5" width="4" height="35" rx="2" fill="#F59E0B"/>
+  </g>
+</svg>

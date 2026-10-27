@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Water Waves -->
+  <path d="M0 160 Q 60 140, 120 160 T 240 160 V 240 H 0 Z" fill="#2C3E50" opacity="0.6"/>
+  <path d="M0 180 Q 60 160, 120 180 T 240 180 V 240 H 0 Z" fill="#34495E"/>
+  
+  <!-- Boat -->
+  <g transform="translate(120, 140)">
+    <path d="M-40 0 L 40 0 L 30 20 L -30 20 Z" fill="#E67E22"/>
+    <rect x="-10" y="-30" width="20" height="30" fill="#F39C12"/>
+    <path d="M10 -25 L 35 -10 L 10 5 Z" fill="#F1C40F"/>
+  </g>
+  
+  <!-- Current/Flow Arrows (Representing the 'against' motion) -->
+  <g stroke="#3498DB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M200 150 L 180 140 L 200 130"/>
+    <path d="M170 170 L 150 160 L 170 150"/>
+    <path d="M200 190 L 180 180 L 200 170"/>
+  </g>
+</svg>

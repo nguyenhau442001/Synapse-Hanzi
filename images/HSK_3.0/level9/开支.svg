@@ -1,0 +1,83 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle decorative background grid for corporate/financial context -->
+  <g opacity="0.1" stroke="#4A5568" stroke-width="1" stroke-dasharray="4 4">
+    <line x1="40" y1="60" x2="200" y2="60"/>
+    <line x1="40" y1="100" x2="200" y2="100"/>
+    <line x1="40" y1="140" x2="200" y2="140"/>
+    <line x1="40" y1="180" x2="200" y2="180"/>
+  </g>
+
+  <!-- Central Physical Object: Modern Financial Ledger / Budget Clipboard with Coins & Fountain Pen (Representing Expenses/Expenditure) -->
+  <g transform="translate(0, 5)">
+    <!-- Clipboard Shadow -->
+    <rect x="68" y="48" width="104" height="144" rx="10" fill="#0D0F12" opacity="0.5"/>
+
+    <!-- Clipboard Base (Dark Slate/Navy) -->
+    <rect x="64" y="44" width="104" height="144" rx="10" fill="#2D3748" stroke="#4A5568" stroke-width="2"/>
+
+    <!-- Paper Sheet -->
+    <rect x="76" y="60" width="88" height="120" rx="4" fill="#F7FAFC"/>
+
+    <!-- Clipboard Metal Clip at Top -->
+    <rect x="96" y="38" width="48" height="14" rx="4" fill="#E2E8F0" stroke="#CBD5E0" stroke-width="1"/>
+    <rect x="108" y="42" width="24" height="6" rx="3" fill="#A0AEC0"/>
+
+    <!-- Document Header Lines -->
+    <rect x="92" y="76" width="40" height="6" rx="3" fill="#CBD5E0"/>
+    <rect x="92" y="88" width="56" height="4" rx="2" fill="#E2E8F0"/>
+
+    <!-- Expense Line Items (Simulated financial records) -->
+    <g transform="translate(86, 104)">
+      <!-- Item 1 -->
+      <rect x="0" y="0" width="36" height="4" rx="2" fill="#CBD5E0"/>
+      <rect x="44" y="0" width="28" height="4" rx="2" fill="#FEB2B2"/> <!-- Reddish accent for expense -->
+      
+      <!-- Item 2 -->
+      <rect x="0" y="14" width="28" height="4" rx="2" fill="#CBD5E0"/>
+      <rect x="44" y="14" width="28" height="4" rx="2" fill="#FEB2B2"/>
+
+      <!-- Item 3 -->
+      <rect x="0" y="28" width="32" height="4" rx="2" fill="#CBD5E0"/>
+      <rect x="44" y="28" width="28" height="4" rx="2" fill="#FEB2B2"/>
+      
+      <!-- Total Line -->
+      <line x1="0" y1="42" x2="72" y2="42" stroke="#E2E8F0" stroke-dasharray="2 2"/>
+      <rect x="0" y="50" width="20" height="6" rx="3" fill="#4A5568"/>
+      <rect x="36" y="48" width="36" height="8" rx="3" fill="#E53E3E"/> <!-- Highlighted total expense -->
+    </g>
+
+    <!-- Fountain Pen (Writing/Executing Expenses) -->
+    <g transform="translate(130, 110) rotate(-35)">
+      <!-- Pen Body -->
+      <rect x="0" y="0" width="12" height="70" rx="3" fill="#3182CE"/>
+      <!-- Gold Accent Band -->
+      <rect x="0" y="54" width="12" height="4" fill="#D69E2E"/>
+      <!-- Pen Nib -->
+      <path d="M0 64 L6 80 L12 64 Z" fill="#E2E8F0"/>
+      <!-- Nib slit -->
+      <line x1="6" y1="68" x2="6" y2="76" stroke="#A0AEC0" stroke-width="1"/>
+    </g>
+
+    <!-- Stack of Gold/Copper Coins (Outgoing Capital/Budget) -->
+    <g transform="translate(38, 140)">
+      <!-- Coin 3 (Bottom) -->
+      <ellipse cx="24" cy="30" rx="18" ry="8" fill="#B7791F"/>
+      <path d="M6 30 V38 C6 42 14 45 24 45 C34 45 42 42 42 38 V30 C42 34 34 37 24 37 C14 37 6 34 6 30 Z" fill="#D69E2E"/>
+      
+      <!-- Coin 2 (Middle) -->
+      <ellipse cx="24" cy="20" rx="18" ry="8" fill="#D69E2E"/>
+      <path d="M6 20 V28 C6 32 14 35 24 35 C34 35 42 32 42 28 V20 C42 24 34 27 24 27 C14 27 6 24 6 20 Z" fill="#ECC94B"/>
+      
+      <!-- Coin 1 (Top) -->
+      <ellipse cx="24" cy="10" rx="18" ry="8" fill="#ECC94B"/>
+      <ellipse cx="24" cy="10" rx="11" ry="4" fill="#F6E05E"/>
+    </g>
+
+    <!-- Outflow Motion Arrow (Red/Orange indicating expenditure leaving budget) -->
+    <path d="M 45 125 Q 35 110 45 95 T 60 75" fill="none" stroke="#ED8936" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+    <polygon points="62,70 65,82 53,78" fill="#ED8936"/>
+  </g>
+</svg>

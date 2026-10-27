@@ -1,35 +1,8 @@
-<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="240">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#1e293b"/>
-    </linearGradient>
-  </defs>
-  <rect width="240" height="240" rx="24" fill="url(#bg)"/>
-  
-  <!-- Table Surface -->
-  <path d="M0 180 L240 180 L240 240 L0 240 Z" fill="#0f172a" opacity="0.5"/>
-  
-  <!-- Bowl -->
-  <path d="M60 110 C60 160, 180 160, 180 110 Z" fill="#334155" stroke="#475569" stroke-width="4"/>
-  <path d="M65 115 C65 150, 175 150, 175 115 Z" fill="#1e293b"/>
-  
-  <!-- Rice Pile -->
-  <circle cx="120" cy="115" r="45" fill="#f8fafc"/>
-  <circle cx="95" cy="125" r="25" fill="#f1f5f9"/>
-  <circle cx="145" cy="125" r="25" fill="#f1f5f9"/>
-  <circle cx="120" cy="95" r="30" fill="#ffffff"/>
-  
-  <!-- Steam/Action -->
-  <path d="M100 80 Q90 60, 100 40" stroke="#f59e0b" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
-  <path d="M140 80 Q150 60, 140 40" stroke="#fbbf24" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
-  
-  <!-- Chopsticks -->
-  <rect x="180" y="70" width="8" height="120" rx="4" fill="#fb923c" transform="rotate(20 180 70)"/>
-  <rect x="195" y="75" width="8" height="120" rx="4" fill="#f59e0b" transform="rotate(15 195 75)"/>
-  
-  <!-- Accents -->
-  <circle cx="40" cy="50" r="4" fill="#10b981"/>
-  <circle cx="200" cy="40" r="6" fill="#ec4899"/>
-  <circle cx="20" cy="200" r="5" fill="#38bdf8"/>
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+  <path d="M22 46 Q50 36 78 46 Q74 76 50 78 Q26 76 22 46 Z" stroke="#38bdf8" stroke-width="3.8" fill="none"/>
+  <line x1="38" y1="78" x2="62" y2="78" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M36 34 Q34 24 38 18" stroke="#fb923c" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M50 32 Q48 20 52 14" stroke="#fb923c" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M64 34 Q62 24 66 18" stroke="#fb923c" stroke-width="2.5" stroke-linecap="round"/>
 </svg>

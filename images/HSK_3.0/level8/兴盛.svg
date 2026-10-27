@@ -1,0 +1,110 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <defs>
+    <!-- Gradients for vibrant, prosperous look -->
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#FFA500"/>
+    </linearGradient>
+    <linearGradient id="roofGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF8C00"/>
+      <stop offset="100%" stop-color="#D2691E"/>
+    </linearGradient>
+    <linearGradient id="pillarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E53935"/>
+      <stop offset="100%" stop-color="#C62828"/>
+    </linearGradient>
+    <linearGradient id="baseGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#37474F"/>
+      <stop offset="100%" stop-color="#263238"/>
+    </linearGradient>
+    <linearGradient id="glowBack" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#FF8C00" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Radiance / Prosperity Aura -->
+  <circle cx="120" cy="115" r="75" fill="url(#glowBack)"/>
+
+  <!-- Tang Dynasty Style Architectural Palace (Symbol of 兴盛 - Flourishing State/Era) -->
+  <g id="palace">
+    <!-- Base Platform & Stairs -->
+    <path d="M 60,185 L 180,185 L 195,198 L 45,198 Z" fill="#455A64"/>
+    <path d="M 75,172 L 165,172 L 180,185 L 60,185 Z" fill="#546E7A"/>
+    <!-- Stair details -->
+    <line x1="120" y1="172" x2="120" y2="198" stroke="#37474F" stroke-width="2"/>
+    <line x1="105" y1="185" x2="105" y2="198" stroke="#37474F" stroke-width="1.5"/>
+    <line x1="135" y1="185" x2="135" y2="198" stroke="#37474F" stroke-width="1.5"/>
+
+    <!-- Main Hall Body -->
+    <rect x="75" y="125" width="90" height="47" fill="#B71C1C"/>
+    
+    <!-- Pillars -->
+    <rect x="85" y="125" width="6" height="47" fill="url(#pillarGrad)"/>
+    <rect x="105" y="125" width="6" height="47" fill="url(#pillarGrad)"/>
+    <rect x="129" y="125" width="6" height="47" fill="url(#pillarGrad)"/>
+    <rect x="149" y="125" width="6" height="47" fill="url(#pillarGrad)"/>
+
+    <!-- Doors / Windows -->
+    <rect x="95" y="138" width="50" height="34" rx="4" fill="#3E2723"/>
+    <line x1="120" y1="138" x2="120" y2="172" stroke="#271C19" stroke-width="2"/>
+
+    <!-- First Tier Roof (Curved Traditional Eaves) -->
+    <path d="M 62,125 Q 120,118 178,125 L 188,135 Q 120,128 52,135 Z" fill="url(#roofGrad)"/>
+    <path d="M 52,135 Q 120,140 188,135 L 182,142 Q 120,147 58,142 Z" fill="#BF360C"/>
+
+    <!-- Upper Pavilion / Second Tier -->
+    <path d="M 90,92 L 150,92 L 155,125 L 85,125 Z" fill="#C62828"/>
+    <!-- Upper Pavilion Door/Window -->
+    <circle cx="120" cy="108" r="9" fill="#FFD700" opacity="0.9"/>
+    <circle cx="120" cy="108" r="6" fill="#3E2723"/>
+
+    <!-- Upper Tier Roof (Grand Sweeping Curves) -->
+    <path d="M 72,92 Q 120,82 168,92 L 180,103 Q 120,93 60,103 Z" fill="url(#roofGrad)"/>
+    
+    <!-- Ridge Ornament / Roof Peak -->
+    <path d="M 105,75 L 135,75 L 130,92 L 110,92 Z" fill="#FFD700"/>
+    <circle cx="120" cy="72" r="5" fill="url(#goldGlow)"/>
+    
+    <!-- Eave End Details (Decorative flourishes) -->
+    <path d="M 52,135 Q 46,133 50,128 Q 55,130 52,135 Z" fill="#FFD700"/>
+    <path d="M 188,135 Q 194,133 190,128 Q 185,130 188,135 Z" fill="#FFD700"/>
+    <path d="M 60,103 Q 54,101 58,96 Q 63,98 60,103 Z" fill="#FFD700"/>
+    <path d="M 180,103 Q 186,101 182,96 Q 177,98 180,103 Z" fill="#FFD700"/>
+  </g>
+
+  <!-- Flourishing Nature / Prosperity Elements (Blooming Foliage flanking the palace) -->
+  <g id="flora">
+    <!-- Left Tree / Blossom -->
+    <path d="M 55,172 C 55,155 45,145 35,140 C 45,135 55,135 60,125 C 65,135 75,135 85,140 C 75,145 65,155 65,172 Z" fill="#4CAF50"/>
+    <circle cx="35" cy="138" r="10" fill="url(#goldGlow)"/>
+    <circle cx="60" cy="120" r="12" fill="#FFCA28"/>
+    <circle cx="85" cy="138" r="10" fill="url(#goldGlow)"/>
+    <rect x="62" y="165" width="6" height="15" fill="#5D4037"/>
+
+    <!-- Right Tree / Blossom -->
+    <path d="M 185,172 C 185,155 195,145 205,140 C 195,135 185,135 180,125 C 175,135 165,135 155,140 C 165,145 175,155 175,172 Z" fill="#4CAF50"/>
+    <circle cx="205" cy="138" r="10" fill="url(#goldGlow)"/>
+    <circle cx="180" cy="120" r="12" fill="#FFCA28"/>
+    <circle cx="155" cy="138" r="10" fill="url(#goldGlow)"/>
+    <rect x="172" y="165" width="6" height="15" fill="#5D4037"/>
+  </g>
+
+  <!-- Floating Golden Sparks / Symbols of Prosperity and Vitality -->
+  <g id="sparks" fill="url(#goldGlow)">
+    <circle cx="85" cy="65" r="3" opacity="0.8"/>
+    <circle cx="155" cy="65" r="2.5" opacity="0.8"/>
+    <circle cx="102" cy="50" r="1.5" opacity="0.6"/>
+    <circle cx="138" cy="52" r="2" opacity="0.7"/>
+    <circle cx="42" cy="100" r="2.5" opacity="0.5"/>
+    <circle cx="198" cy="100" r="2" opacity="0.5"/>
+    
+    <!-- Star sparkles -->
+    <path d="M 70,80 L 72,85 L 77,87 L 72,89 L 70,94 L 68,89 L 63,87 L 68,85 Z" opacity="0.9"/>
+    <path d="M 170,80 L 171.5,83.5 L 175,85 L 171.5,86.5 L 170,90 L 168.5,86.5 L 165,85 L 168.5,83.5 Z" opacity="0.9"/>
+    <path d="M 120,40 L 122,46 L 128,48 L 122,50 L 120,56 L 118,50 L 112,48 L 118,46 Z" opacity="1.0"/>
+  </g>
+</svg>

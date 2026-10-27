@@ -1,0 +1,47 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Carnivial / Festival Theme Graphic (Ferris Wheel, Tent, Lights, Confetti) -->
+  <g transform="translate(120, 115)">
+    <!-- Ferris Wheel Outer Ring -->
+    <circle cx="0" cy="-10" r="55" fill="none" stroke="#2D3748" stroke-width="3" stroke-dasharray="6,4"/>
+    <circle cx="0" cy="-10" r="45" fill="none" stroke="#4A5568" stroke-width="2"/>
+
+    <!-- Ferris Wheel Spokes -->
+    <line x1="0" y1="-10" x2="0" y2="-65" stroke="#4A5568" stroke-width="2"/>
+    <line x1="0" y1="-10" x2="0" y2="45" stroke="#4A5568" stroke-width="2"/>
+    <line x1="0" y1="-10" x2="-55" y2="-10" stroke="#4A5568" stroke-width="2"/>
+    <line x1="0" y1="-10" x2="55" y2="-10" stroke="#4A5568" stroke-width="2"/>
+    <line x1="0" y1="-10" x2="-39" y2="-49" stroke="#4A5568" stroke-width="2"/>
+    <line x1="0" y1="-10" x2="39" y2="29" stroke="#4A5568" stroke-width="2"/>
+    <line x1="0" y1="-10" x2="39" y2="-49" stroke="#4A5568" stroke-width="2"/>
+    <line x1="0" y1="-10" x2="-39" y2="29" stroke="#4A5568" stroke-width="2"/>
+
+    <!-- Ferris Wheel Cabins (Glowing/Colorful) -->
+    <circle cx="0" cy="-65" r="6" fill="#F6AD55"/>
+    <circle cx="55" cy="-10" r="6" fill="#ED64A6"/>
+    <circle cx="0" cy="45" r="6" fill="#4FD1C5"/>
+    <circle cx="-55" cy="-10" r="6" fill="#F6E05E"/>
+
+    <!-- Ferris Wheel Base -->
+    <polygon points="-25,50 25,50 15,-10 -15,-10" fill="#2D3748"/>
+    <circle cx="0" cy="-10" r="8" fill="#ECC94B"/>
+
+    <!-- Festive Tent / Canopy at the base -->
+    <path d="M-50,55 L0,25 L50,55 Z" fill="#E53E3E"/>
+    <path d="M-30,55 L0,35 L30,55 Z" fill="#3182CE"/>
+
+    <!-- Party Lights Garland -->
+    <path d="M-85,-25 Q-60,-5 -35,-25 Q-10,-5 15,-25 Q40,-5 65,-25 Q85,-10 95,-20" fill="none" stroke="#ED8936" stroke-width="2" stroke-dasharray="4,4"/>
+
+    <!-- Confetti & Stars -->
+    <circle cx="-75" cy="15" r="3" fill="#F6E05E"/>
+    <rect x="70" y="10" width="6" height="6" rx="1" fill="#4FD1C5" transform="rotate(45 73 13)"/>
+    <circle cx="-60" cy="-55" r="2.5" fill="#ED64A6"/>
+    <circle cx="65" cy="-50" r="3" fill="#F6AD55"/>
+    <polygon points="0,-85 2,-78 9,-78 4,-74 6,-67 0,-71 -6,-67 -4,-74 -9,-78 -2,-78" fill="#F6E05E"/>
+    <polygon points="75,-30 76,-27 79,-27 77,-25 78,-22 75,-24 72,-22 73,-25 71,-27 74,-27" fill="#4FD1C5"/>
+    <polygon points="-70,-35 -69,-32 -66,-32 -68,-30 -67,-27 -70,-29 -73,-27 -72,-30 -74,-32 -71,-32" fill="#ED64A6"/>
+  </g>
+</svg>

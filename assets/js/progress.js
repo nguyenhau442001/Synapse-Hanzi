@@ -45,6 +45,9 @@ function rateCurrentCard(rating) {
   saveProgress();
   recordDailyStudy(word.id, currentLevel);
   updateStats();
+  if (rating === 'again' && typeof showRelatedClusterHint === 'function') {
+    showRelatedClusterHint(word);
+  }
   if (currentView === 'overview') renderOverview();
   checkCelebration(prevDeck);
   if (currentFilter !== 'all') advanceAfterMark(wIdx); else nextCard();

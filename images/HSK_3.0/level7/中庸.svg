@@ -1,0 +1,36 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Conceptual background decorative elements: Subtle balanced pillars representing harmony and equilibrium -->
+  <line x1="60" y1="50" x2="60" y2="190" stroke="#2A2F3D" stroke-width="2" stroke-linecap="round"/>
+  <line x1="180" y1="50" x2="180" y2="190" stroke="#2A2F3D" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Central Physical Object representing "Zhōngyōng" (The golden mean / Balanced vessel / Traditional Bronze Ding or symmetrical balancing vessel) -->
+  <!-- Base platform -->
+  <path d="M 80 185 L 160 185 L 170 195 L 70 195 Z" fill="#2E3648" />
+  <rect x="95" y="175" width="50" height="10" rx="2" fill="#3B4459" />
+
+  <!-- Vessel Body (Tripod Ding / Balanced Urn representing stability, center, and moderation) -->
+  <!-- Outer rim/collar -->
+  <ellipse cx="120" cy="75" rx="45" ry="8" fill="#F39C12" />
+  <ellipse cx="120" cy="73" rx="41" ry="6" fill="#1A1D24" />
+
+  <!-- Handles (Ding ears - symmetrical, perfectly balanced) -->
+  <path d="M 75 75 C 60 75 60 95 76 100" fill="none" stroke="#F39C12" stroke-width="4" stroke-linecap="round" />
+  <path d="M 165 75 C 180 75 180 95 164 100" fill="none" stroke="#F39C12" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Vessel Bowl (Main body, rounded, perfectly centered) -->
+  <path d="M 75 80 C 75 130 90 165 120 165 C 150 165 165 130 165 80 Z" fill="#D35400" />
+  
+  <!-- Highlight on vessel for sleek modern flat design -->
+  <path d="M 90 90 C 90 125 100 150 115 158 C 100 145 95 120 95 90 Z" fill="#E67E22" opacity="0.6" />
+
+  <!-- Central axis line (subtle golden thread representing the "mean" / not leaning left or right) -->
+  <line x1="120" y1="35" x2="120" y2="175" stroke="#F1C40F" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4" />
+
+  <!-- Perfectly balanced pendulum / center marker floating precisely above -->
+  <circle cx="120" cy="45" r="5" fill="#F1C40F" />
+  <path d="M 120 50 L 120 68" stroke="#F1C40F" stroke-width="2" stroke-linecap="round" />
+
+</svg>

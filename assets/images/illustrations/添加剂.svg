@@ -1,0 +1,39 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for 添加剂 (Additive / Chemical Food Additive) -->
+  <g transform="translate(0, 0)">
+    <!-- Flask / Beaker Base (representing chemical/additive) -->
+    <path d="M95 145 L85 190 C84 195, 88 198, 93 198 L147 198 C152 198, 156 195, 155 190 L145 145 Z" fill="#2A313C" stroke="#3E4756" stroke-width="3" stroke-linejoin="round"/>
+    
+    <!-- Flask Neck -->
+    <rect x="106" y="105" width="28" height="40" fill="#2A313C" stroke="#3E4756" stroke-width="3"/>
+    
+    <!-- Flask Lip -->
+    <path d="M100 105 L140 105 C142 105, 143 102, 140 100 L100 100 C97 102, 98 105, 100 105 Z" fill="#3E4756"/>
+
+    <!-- Liquid Inside Flask (Glowing Orange/Gold Accent) -->
+    <path d="M90 165 L95 193 C95 195, 96 195, 98 195 L142 195 C144 195, 145 195, 145 193 L150 165 C150 165, 130 170, 120 170 C110 170, 90 165, 90 165 Z" fill="#F59E0B" opacity="0.9"/>
+    
+    <!-- Liquid Surface Curve -->
+    <path d="M90 165 C100 172, 130 172, 150 165 C130 158, 100 158, 90 165 Z" fill="#FBBF24"/>
+
+    <!-- Droplet Falling Into Flask (Adding action) -->
+    <path d="M120 70 C120 70, 126 80, 126 86 C126 90, 123 93, 120 93 C117 93, 114 90, 114 86 C114 80, 120 70, 120 70 Z" fill="#F59E0B"/>
+    
+    <!-- Droplet Motion Lines -->
+    <path d="M112 60 L110 56" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <path d="M128 60 L130 56" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Plus Sign Emphasizing "Addition" (添加) -->
+    <circle cx="175" cy="95" r="18" fill="#2A313C" stroke="#F59E0B" stroke-width="2.5"/>
+    <path d="M175 87 L175 103 M167 95 L183 95" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Sparkles / Chemical Activity Indicators -->
+    <path d="M72 130 L76 135 L72 140 L67 135 Z" fill="#FBBF24" opacity="0.8"/>
+    <path d="M164 138 L167 142 L164 146 L160 142 Z" fill="#FBBF24" opacity="0.8"/>
+    <circle cx="102" cy="150" r="3" fill="#FDE68A" opacity="0.6"/>
+    <circle cx="138" cy="155" r="2" fill="#FDE68A" opacity="0.6"/>
+  </g>
+</svg>

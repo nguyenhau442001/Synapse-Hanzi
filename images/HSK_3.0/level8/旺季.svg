@@ -1,0 +1,48 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Central Physical Object: Beach Hotel / Resort Building representing Peak Season (旺季) -->
+  <g transform="translate(40, 35)">
+    <!-- Palm Tree Left -->
+    <path d="M25 110 Q25 70 10 50 M25 70 Q15 65 5 60 M25 80 Q35 70 45 65" stroke="#2D3748" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M10 50 C5 45 15 35 25 45 C35 35 45 45 40 50 C30 55 20 55 10 50" fill="#48BB78" opacity="0.8"/>
+    
+    <!-- Beach Umbrella & Sunbed (Symbolizing Resort Vacation) -->
+    <path d="M110 135 L130 135 L120 100 Z" fill="#F6AD55"/>
+    <path d="M95 100 Q120 85 145 100 Z" fill="#ED8936"/>
+    <line x1="120" y1="100" x2="120" y2="145" stroke="#A0AEC0" stroke-width="3" stroke-linecap="round"/>
+    <path d="M105 138 Q120 133 135 138 L138 145 L102 145 Z" fill="#4A5568"/>
+
+    <!-- Resort Hotel Building Structure -->
+    <rect x="50" y="50" width="80" height="95" rx="4" fill="#2D3748"/>
+    
+    <!-- Roof / Awning -->
+    <polygon points="45,50 135,50 140,40 40,40" fill="#ED8936"/>
+
+    <!-- Hotel Windows - All Lit Up (Indicating Fully Booked / High Occupancy) -->
+    <!-- Row 1 -->
+    <rect x="60" y="60" width="14" height="16" rx="2" fill="#F6E05E"/>
+    <rect x="83" y="60" width="14" height="16" rx="2" fill="#F6E05E"/>
+    <rect x="106" y="60" width="14" height="16" rx="2" fill="#F6E05E"/>
+    
+    <!-- Row 2 -->
+    <rect x="60" y="85" width="14" height="16" rx="2" fill="#F6E05E"/>
+    <rect x="83" y="85" width="14" height="16" rx="2" fill="#F6E05E"/>
+    <rect x="106" y="85" width="14" height="16" rx="2" fill="#F6E05E"/>
+
+    <!-- Row 3 (Lobby / Entrance) -->
+    <rect x="60" y="110" width="14" height="35" rx="2" fill="#CBD5E0"/>
+    <rect x="83" y="110" width="34" height="35" rx="4" fill="#4A5568"/>
+    <path d="M90 125 L100 120 L110 125" stroke="#F6E05E" stroke-width="2" fill="none"/>
+    
+    <!-- Fully Booked / Peak Indicator (Glowing Gold Star / Peak Season Badge) -->
+    <g transform="translate(130, 25)">
+      <circle cx="10" cy="10" r="18" fill="#1A1D24" stroke="#ED8936" stroke-width="3"/>
+      <path d="M10 2 L12.5 7.5 L18 8.5 L14 12.5 L15 18 L10 15 L5 18 L6 12.5 L2 8.5 L7.5 7.5 Z" fill="#F6E05E"/>
+    </g>
+
+    <!-- Waves / Sea at the base -->
+    <path d="M-10 155 Q20 145 50 155 T110 155 T170 155 T210 155" fill="none" stroke="#4299E1" stroke-width="4" stroke-linecap="round"/>
+    <path d="M0 165 Q30 155 60 165 T120 165 T180 165 T220 165" fill="none" stroke="#3182CE" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  </g>
+</svg>

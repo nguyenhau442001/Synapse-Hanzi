@@ -1,0 +1,16 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Main object: A stylized gold coin/asset pile -->
+  <g transform="translate(120, 120)">
+    <!-- Original larger size (faded/dashed outline) -->
+    <circle cx="0" cy="0" r="55" fill="none" stroke="#3A3F4B" stroke-width="3" stroke-dasharray="8 8"/>
+    
+    <!-- Shrunken asset pile -->
+    <path d="M-40 40 L40 40 L30 -30 L-30 -30 Z" fill="#FFB800"/>
+    <path d="M-30 -30 L30 -30 L20 -45 L-20 -45 Z" fill="#FFD447"/>
+    
+    <!-- Downward trend indicator (arrow) -->
+    <path d="M60 -20 L85 5 L75 5 L75 30 L45 30 L45 5 L35 5 Z" fill="#FF5252"/>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground -->
+  <path d="M40 190 L200 190" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Character - Collapsed State -->
+  <g transform="translate(120, 180)">
+    <!-- Body/Torso -->
+    <path d="M-30 0 C-30 -20, -10 -30, 0 -30 C10 -30, 30 -20, 30 0" fill="#E2E8F0"/>
+    
+    <!-- Head -->
+    <circle cx="0" cy="-45" r="15" fill="#E2E8F0"/>
+    
+    <!-- Closed Eyes (The "faint" indicator) -->
+    <path d="M-8 -48 L-2 -42 M-2 -48 L-8 -42" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+    <path d="M8 -48 L2 -42 M2 -48 L8 -42" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Arm slumped -->
+    <path d="M-35 -10 L-50 5" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+    <path d="M35 -10 L45 10" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Sun (Contextual heat source) -->
+  <circle cx="190" cy="50" r="25" fill="#F6AD55"/>
+  <path d="M190 15 L190 5 M190 85 L190 95 M155 50 L145 50 M225 50 L235 50" stroke="#F6AD55" stroke-width="4" stroke-linecap="round"/>
+</svg>

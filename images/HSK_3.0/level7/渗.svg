@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Outer Frame / Wall Section (Dark Slate) -->
+  <path d="M40 40H200V200H40V40Z" fill="#222731" stroke="#323846" stroke-width="2" rx="4"/>
+  
+  <!-- Window Frame Structure -->
+  <rect x="70" y="55" width="100" height="135" fill="#1A1D24" stroke="#4A5568" stroke-width="4" rx="2"/>
+  
+  <!-- Window Panes (Dark bluish glass showing heavy rain outside) -->
+  <rect x="76" y="61" width="42" height="123" fill="#1E293B"/>
+  <rect x="122" y="61" width="42" height="123" fill="#1E293B"/>
+  
+  <!-- Rain streaks outside (Vertical slashes) -->
+  <g opacity="0.4" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round">
+    <line x1="84" y1="70" x2="80" y2="90"/>
+    <line x1="98" y1="110" x2="94" y2="130"/>
+    <line x1="88" y1="150" x2="84" y2="170"/>
+    <line x1="134" y1="80" x2="130" y2="100"/>
+    <line x1="148" y1="120" x2="144" y2="140"/>
+    <line x1="138" y1="160" x2="134" y2="180"/>
+  </g>
+
+  <!-- Old Wall Texture / Stain Background -->
+  <path d="M120 180 C110 170 100 175 95 185 C90 195 105 205 120 205 C135 205 150 195 145 185 C140 175 130 170 120 180 Z" fill="#332B22" opacity="0.5"/>
+
+  <!-- The Seeping Water Effect (Vivid Cyan/Teal accent for "渗" - seeping/leaking through a gap) -->
+  <g>
+    <!-- Crack / Seam at window bottom-left corner -->
+    <path d="M76 184 L95 184 L102 189" fill="none" stroke="#0F172A" stroke-width="3"/>
+    
+    <!-- Water droplet forming and seeping through -->
+    <path d="M98 184 C98 184 94 190 94 195 C94 199 97 202 101 202 C105 202 108 199 108 195 C108 190 98 184 98 184 Z" fill="#38BDF8" opacity="0.9"/>
+    
+    <!-- Water trail soaking into the porous wooden/stone sill -->
+    <path d="M94 195 Q 85 205 70 203 Q 65 202 62 206 Q 75 210 90 207 Q 105 204 115 208 Q 130 214 145 206 Q 130 200 115 202 Z" fill="#0EA5E9" opacity="0.7"/>
+    
+    <!-- Secondary smaller seep drop -->
+    <circle cx="120" cy="189" r="2.5" fill="#38BDF8" opacity="0.8"/>
+    <path d="M120 191 C120 194 118 197 122 199 C126 201 124 195 120 191 Z" fill="#0EA5E9" opacity="0.6"/>
+  </g>
+
+  <!-- Highlighting Focus (Warm Amber/Gold ambient light contrasting dark mode) -->
+  <circle cx="98" cy="195" r="16" fill="#38BDF8" opacity="0.15" filter="blur(4px)"/>
+</svg>

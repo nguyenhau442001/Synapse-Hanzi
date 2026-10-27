@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration: A sleek, modern flat vector design representing "缴" (handing over / paying fees / submitting funds), contextualized as payment submission (finance/taxes/social insurance) -->
+
+  <!-- Subtle background glow/card container -->
+  <rect x="36" y="36" width="168" height="168" rx="16" fill="#222733" stroke="#2D3343" stroke-width="2"/>
+
+  <!-- Financial Document / Invoice Base -->
+  <rect x="76" y="60" width="88" height="110" rx="6" fill="#E2E8F0"/>
+  <!-- Document Header -->
+  <rect x="92" y="74" width="56" height="8" rx="4" fill="#3B82F6"/>
+  <!-- Document Lines -->
+  <line x1="92" y1="94" x2="148" y2="94" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+  <line x1="92" y1="110" x2="132" y2="110" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+  <line x1="92" y1="126" x2="120" y2="126" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Secure Stamp / Paid Badge (Gold/Amber accent) -->
+  <circle cx="134" cy="142" r="14" fill="#F59E0B"/>
+  <polyline points="127,142 132,147 143,136" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Submitting Hand (Representing the action of "nộp/đóng" - handing over payment/documents) -->
+  <path d="M 60,185 C 80,185 100,175 115,160 L 125,170 C 105,190 80,202 55,202 Z" fill="#E2E8F0"/>
+  <!-- Cuff / Sleeve -->
+  <path d="M 36,190 L 58,190 L 58,210 L 36,210 Z" fill="#3B82F6" rx="4"/>
+  <!-- Hand Palm & Thumb pushing the document forward -->
+  <circle cx="105" cy="165" r="12" fill="#CBD5E1"/>
+
+  <!-- Floating Coin / Currency symbol indicating payment -->
+  <g transform="translate(160, 75)">
+    <circle cx="0" cy="0" r="14" fill="#FBBF24"/>
+    <circle cx="0" cy="0" r="10" fill="none" stroke="#D97706" stroke-width="2"/>
+    <!-- Abstract coin mark -->
+    <path d="M -3,-5 L 3,-5 M 0,-7 L 0,7 M -3,5 L 3,5" stroke="#D97706" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Motion lines indicating submission/transfer -->
+  <path d="M 120,95 C 135,90 145,85 155,75" fill="none" stroke="#60A5FA" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 4"/>
+</svg>

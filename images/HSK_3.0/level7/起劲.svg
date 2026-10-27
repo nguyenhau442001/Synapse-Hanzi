@@ -1,0 +1,78 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative subtle ground plane for grounding the physical character -->
+  <path d="M50 185 L190 185" stroke="#2A2F3D" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Dynamic energy lines & motion indicators (representing "hăng hái, hào hứng, sôi nổi") -->
+  <g stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.6">
+    <path d="M80 70 C70 65 65 55 60 45"/>
+    <path d="M160 70 C170 65 175 55 180 45"/>
+    <path d="M195 110 C205 110 215 105 220 100"/>
+    <path d="M45 110 C35 110 25 105 20 100"/>
+  </g>
+
+  <!-- Sparkles / High-energy bursts -->
+  <g fill="#FBBF24">
+    <path d="M65 85 L67 92 L74 94 L67 96 L65 103 L63 96 L56 94 L63 92 Z" transform="scale(0.8) translate(15, 10)"/>
+    <path d="M175 85 L177 92 L184 94 L177 96 L175 103 L173 96 L166 94 L173 92 Z" transform="scale(0.7) translate(60, 20)"/>
+    <path d="M120 40 L121.5 45 L126.5 46.5 L121.5 48 L120 53 L118.5 48 L113.5 46.5 L118.5 45 Z"/>
+  </g>
+
+  <!-- Central Character (Vibrant child playing hide-and-seek enthusiastically) -->
+  <g transform="translate(0, 5)">
+    <!-- Shadow -->
+    <ellipse cx="120" cy="183" rx="35" ry="7" fill="#111318"/>
+
+    <!-- Legs in energetic jump/bound posture -->
+    <!-- Left leg (bent back) -->
+    <path d="M105 155 C95 165 90 175 95 180 C98 183 103 181 107 175 C112 168 118 160 120 155" fill="none" stroke="#3B82F6" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Right leg (bent forward/landing) -->
+    <path d="M130 155 C140 165 148 175 145 181 C143 184 138 183 134 178 C128 170 122 160 120 155" fill="none" stroke="#3B82F6" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Shoes -->
+    <circle cx="95" cy="180" r="7" fill="#EF4444"/>
+    <circle cx="145" cy="181" r="7" fill="#EF4444"/>
+
+    <!-- Torso (leaning forward in excitement) -->
+    <path d="M100 115 L140 115 L145 155 L95 155 Z" fill="#3B82F6" rx="6"/>
+    <rect x="98" y="115" width="44" height="40" rx="8" fill="#3B82F6"/>
+
+    <!-- Backpack / Playful detail -->
+    <path d="M88 122 C88 118 92 115 96 115 L96 148 C92 148 88 145 88 141 Z" fill="#F59E0B"/>
+
+    <!-- Arms raised high in excitement ("起劲" expression of boundless energy) -->
+    <!-- Left Arm -->
+    <path d="M100 120 C85 110 70 85 75 70 C78 63 86 63 89 70 C94 83 102 105 110 115" fill="#FB923C" stroke="#FB923C" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Right Arm -->
+    <path d="M140 120 C155 110 170 85 165 70 C162 63 154 63 151 70 C146 83 138 105 130 115" fill="#FB923C" stroke="#FB923C" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Hands -->
+    <circle cx="75" cy="67" r="7" fill="#FBBF24"/>
+    <circle cx="165" cy="67" r="7" fill="#FBBF24"/>
+
+    <!-- Neck -->
+    <rect x="112" y="105" width="16" height="14" fill="#FB923C" rx="4"/>
+
+    <!-- Head (Dynamic tilt) -->
+    <circle cx="120" cy="90" r="24" fill="#FB923C"/>
+
+    <!-- Hair (Messes up playfully) -->
+    <path d="M96 90 C96 75 110 68 123 68 C138 68 146 78 144 92 C135 85 125 80 115 82 C107 83 100 86 96 90 Z" fill="#1E293B"/>
+    <path d="M115 68 C118 60 125 58 132 62 C126 63 120 65 115 68 Z" fill="#1E293B"/>
+
+    <!-- Enthusiastic Face Expression (Big joyful open smile, glowing eyes) -->
+    <!-- Eyes (Happy curves / sparkling crescent eyes) -->
+    <path d="M108 86 C111 82 115 82 118 86" stroke="#1E293B" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M125 86 C128 82 132 82 135 86" stroke="#1E293B" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+    <!-- Rosy Cheeks -->
+    <circle cx="108" cy="92" r="4" fill="#F43F5E" opacity="0.6"/>
+    <circle cx="132" cy="92" r="4" fill="#F43F5E" opacity="0.6"/>
+
+    <!-- Big Open Laughing Mouth -->
+    <path d="M112 95 C112 103 128 103 128 95 Z" fill="#1E293B"/>
+    <path d="M115 97 C115 99 125 99 125 97 Z" fill="#F43F5E"/>
+  </g>
+</svg>

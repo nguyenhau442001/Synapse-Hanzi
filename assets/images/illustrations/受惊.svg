@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground -->
+  <path d="M40 190h160v10H40z" fill="#2D343E"/>
+  
+  <!-- Frightened Animal (Sheep/Goat) -->
+  <g transform="translate(120, 140)">
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="35" ry="25" fill="#E0E6ED"/>
+    <!-- Legs (Scattered/Running) -->
+    <path d="M-20 20l-10 25 M-10 25l-5 20 M10 25l5 20 M20 20l10 25" stroke="#E0E6ED" stroke-width="6" stroke-linecap="round"/>
+    <!-- Head -->
+    <g transform="translate(30, -20)">
+      <ellipse cx="0" cy="0" rx="15" ry="18" fill="#E0E6ED"/>
+      <!-- Eye (Wide/Shocked) -->
+      <circle cx="5" cy="-2" r="4" fill="#1A1D24"/>
+      <!-- Ear -->
+      <path d="M-10 -5l-10 -10" stroke="#E0E6ED" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Lightning Bolt (The cause of shock) -->
+  <path d="M180 40l-20 40h15l-20 50l40-60h-15l20-30z" fill="#FFB84D"/>
+
+  <!-- Motion/Shock Lines -->
+  <path d="M70 120l-15 -15 M170 120l15 -15" stroke="#FFB84D" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 6"/>
+  <path d="M80 160l-20 10 M160 160l20 10" stroke="#FFB84D" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 6"/>
+</svg>

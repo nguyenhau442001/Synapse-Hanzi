@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative tech grid/radar lines -->
+  <circle cx="120" cy="120" r="85" fill="none" stroke="#262B35" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <circle cx="120" cy="120" r="60" fill="none" stroke="#262B35" stroke-width="1"/>
+  <line x1="120" y1="30" x2="120" y2="210" stroke="#262B35" stroke-width="1"/>
+  <line x1="30" y1="120" x2="210" y2="120" stroke="#262B35" stroke-width="1"/>
+
+  <!-- Central Physical Object: Modern Shield & Defensive Tech Symbol (National Defense) -->
+  <g transform="translate(0, 5)">
+    <!-- Outer defensive shield contour -->
+    <path d="M120 45 C155 45, 175 60, 175 95 C175 145, 145 175, 120 190 C95 175, 65 145, 65 95 C65 60, 85 45, 120 45 Z" 
+          fill="#222B38" stroke="#3A475C" stroke-width="3"/>
+
+    <!-- Inner gold/orange accent shield (representing strength and protection) -->
+    <path d="M120 57 C148 57, 163 70, 163 98 C163 138, 138 163, 120 176 C102 163, 77 138, 77 98 C77 70, 92 57, 120 57 Z" 
+          fill="#1E2736" stroke="#F39C12" stroke-width="2"/>
+
+    <!-- Stylized Modern Great Wall element combined with tech/strength pillar -->
+    <path d="M95 110 L95 135 C95 145, 105 152, 120 157 C135 152, 145 145, 145 135 L145 110 Z" 
+          fill="#2C3E50" stroke="#F39C12" stroke-width="1.5"/>
+
+    <!-- National Emblem / Defense Star -->
+    <polygon points="120,78 125,92 140,92 128,101 132,115 120,106 108,115 112,101 100,92 115,92" 
+             fill="#F39C12"/>
+
+    <!-- Modern tech circuit accents on shield -->
+    <path d="M95 90 L85 90 L80 100" fill="none" stroke="#3A475C" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="80" cy="100" r="2.5" fill="#3A475C"/>
+
+    <path d="M145 90 L155 90 L160 100" fill="none" stroke="#3A475C" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="160" cy="100" r="2.5" fill="#3A475C"/>
+
+    <!-- Base foundation blocks representing solid backing (Technology & Military Modernization) -->
+    <rect x="100" y="123" width="40" height="6" rx="2" fill="#F39C12" opacity="0.8"/>
+    <rect x="92" y="133" width="56" height="6" rx="2" fill="#3A475C"/>
+  </g>
+</svg>

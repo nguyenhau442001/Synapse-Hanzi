@@ -1,0 +1,46 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative soft glow representing stage/spotlight warmth -->
+  <circle cx="120" cy="130" r="70" fill="#252A36" opacity="0.6"/>
+
+  <!-- Character Group: "腼腆" (shy, bashful, timid posture) -->
+  <g transform="translate(0, 10)">
+    <!-- Shadow beneath character -->
+    <ellipse cx="120" cy="200" rx="35" ry="6" fill="#111318"/>
+
+    <!-- Body / Torso (Rounded, slightly hunched shoulders) -->
+    <path d="M 95 150 C 90 135, 100 120, 120 120 C 140 120, 150 135, 145 150 L 155 195 C 155 198, 150 200, 145 200 L 95 200 C 90 200, 85 198, 85 195 Z" fill="#3B82F6"/>
+    
+    <!-- Collar details -->
+    <path d="M 105 122 L 120 135 L 135 122" fill="none" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Arms held closely inward (bashful/timid posture) -->
+    <path d="M 98 135 C 85 140, 75 160, 90 175 C 95 180, 100 175, 95 165 C 90 155, 95 145, 105 140 Z" fill="#2563EB"/>
+    <path d="M 142 135 C 155 140, 165 160, 150 175 C 145 180, 140 175, 145 165 C 150 155, 145 145, 135 140 Z" fill="#2563EB"/>
+
+    <!-- Neck -->
+    <rect x="112" y="108" width="16" height="18" rx="4" fill="#FCE7D4"/>
+
+    <!-- Head -->
+    <circle cx="120" cy="95" r="30" fill="#FCE7D4"/>
+
+    <!-- Hair (Bob style framing the shy face) -->
+    <path d="M 90 90 C 90 65, 150 65, 150 90 C 150 105, 148 120, 145 120 C 140 110, 138 95, 130 95 C 122 95, 118 105, 115 120 C 112 120, 92 105, 90 90 Z" fill="#1E293B"/>
+    <!-- Bangs -->
+    <path d="M 93 88 C 105 100, 135 100, 147 88 C 140 75, 100 75, 93 88 Z" fill="#1E293B"/>
+
+    <!-- Shy Blush marks (high contrast orange/coral on cheeks) -->
+    <circle cx="102" cy="102" r="6" fill="#F97316" opacity="0.8"/>
+    <circle cx="138" cy="102" r="6" fill="#F97316" opacity="0.8"/>
+
+    <!-- Shy facial expression -->
+    <!-- Downcast / timid eyes (curved arcs looking down) -->
+    <path d="M 103 93 Q 107 97 111 93" fill="none" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 129 93 Q 133 97 137 93" fill="none" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Shy hesitant small smile -->
+    <path d="M 116 108 Q 120 111 124 108" fill="none" stroke="#1E293B" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

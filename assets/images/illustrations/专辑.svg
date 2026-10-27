@@ -1,0 +1,70 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 120)">
+    <!-- Vinyl Record (Background Layer) -->
+    <g transform="translate(0, 5)">
+      <!-- Outer Vinyl Disk -->
+      <circle cx="0" cy="0" r="82" fill="#222831"/>
+      <circle cx="0" cy="0" r="78" fill="#1A1D24"/>
+      
+      <!-- Vinyl Grooves -->
+      <circle cx="0" cy="0" r="68" fill="none" stroke="#2A313D" stroke-width="1.5" stroke-dasharray="8 4"/>
+      <circle cx="0" cy="0" r="58" fill="none" stroke="#2A313D" stroke-width="1.5" stroke-dasharray="6 3"/>
+      <circle cx="0" cy="0" r="48" fill="none" stroke="#2A313D" stroke-width="1.5" stroke-dasharray="4 2"/>
+      
+      <!-- Vinyl Gloss Reflection -->
+      <path d="M -58 -50 A 78 78 0 0 1 58 -50 A 78 78 0 0 0 -58 -50 Z" fill="#ffffff" opacity="0.04"/>
+      
+      <!-- Record Label -->
+      <circle cx="0" cy="0" r="32" fill="#FF5E62"/>
+      <circle cx="0" cy="0" r="28" fill="#FF9966"/>
+      <circle cx="0" cy="0" r="7" fill="#1A1D24"/>
+    </g>
+
+    <!-- Album Jacket / Cover Art (Foreground Layer, angled/offset slightly) -->
+    <g transform="translate(-22, -15)">
+      <!-- Drop Shadow -->
+      <rect x="-55" y="-55" width="110" height="110" rx="6" fill="#000000" opacity="0.4" transform="translate(8, 12)"/>
+      
+      <!-- Jacket Base -->
+      <rect x="-55" y="-55" width="110" height="110" rx="6" fill="#2C3440"/>
+      
+      <!-- Spine Highlight/Gradient -->
+      <path d="M -55 -49 Q -55 -55 -49 -55 L 49 -55 Q 55 -55 55 -49 L 55 55 L -55 55 Z" fill="#364152"/>
+      <rect x="-53" y="-53" width="104" height="104" rx="4" fill="#222831"/>
+      
+      <!-- Artistic Cover Design (Abstract Music Theme) -->
+      <!-- Background gradient for cover -->
+      <rect x="-53" y="-53" width="104" height="104" rx="4" fill="#1E232B"/>
+      
+      <!-- Geometric artistic shapes -->
+      <circle cx="0" cy="-5" r="30" fill="#FF5E62" opacity="0.85"/>
+      <path d="M -35 25 Q 0 -20 35 25 Z" fill="#FF9966" opacity="0.9"/>
+      
+      <!-- Modern minimalist soundwave graphic on cover -->
+      <rect x="-30" y="32" width="6" height="12" rx="3" fill="#1A1D24"/>
+      <rect x="-18" y="24" width="6" height="20" rx="3" fill="#1A1D24"/>
+      <rect x="-6" y="16" width="6" height="28" rx="3" fill="#1A1D24"/>
+      <rect x="6" y="22" width="6" height="22" rx="3" fill="#1A1D24"/>
+      <rect x="18" y="28" width="6" height="16" rx="3" fill="#1A1D24"/>
+
+      <!-- Subtle cover border -->
+      <rect x="-53" y="-53" width="104" height="104" rx="4" fill="none" stroke="#485563" stroke-width="1.5" opacity="0.5"/>
+    </g>
+
+    <!-- Floating Musical Notes / Accents (Focus on Audio/Music) -->
+    <g transform="translate(75, -55)">
+      <circle cx="0" cy="10" r="4" fill="#FF9966"/>
+      <path d="M 4 10 L 4 -4 L 12 -8 L 12 6" fill="none" stroke="#FF9966" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="8" cy="6" r="4" fill="#FF9966"/>
+    </g>
+
+    <g transform="translate(-85, 45) scale(0.7)">
+      <circle cx="0" cy="10" r="4" fill="#FF5E62"/>
+      <path d="M 4 10 L 4 -4 L 12 -8 L 12 6" fill="none" stroke="#FF5E62" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="8" cy="6" r="4" fill="#FF5E62"/>
+    </g>
+  </g>
+</svg>

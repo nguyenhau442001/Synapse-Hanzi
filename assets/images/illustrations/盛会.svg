@@ -1,0 +1,59 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Ambient background glow representing a grand venue -->
+  <circle cx="120" cy="115" r="70" fill="#252A34" opacity="0.8"/>
+  <path d="M 60 160 Q 120 130 180 160" stroke="#323846" stroke-width="2" fill="none"/>
+  
+  <!-- Central Physical Object: A grand exhibition convention center / hall representing the grand gathering (盛会) -->
+  <g transform="translate(0, 5)">
+    <!-- Convention Center Base / Platform -->
+    <path d="M 50 150 L 70 120 L 170 120 L 190 150 Z" fill="#2D3748"/>
+    <rect x="65" y="150" width="110" height="8" rx="2" fill="#4A5568"/>
+
+    <!-- Main Building Structure -->
+    <path d="M 75 120 L 75 75 L 165 75 L 165 120 Z" fill="#2B6CB0"/>
+    
+    <!-- Grand Entrance Arch / Glass Façade -->
+    <path d="M 95 120 L 95 90 Q 120 75 145 90 L 145 120 Z" fill="#3182CE"/>
+    <rect x="105" y="100" width="30" height="20" rx="4" fill="#63B3ED" opacity="0.4"/>
+
+    <!-- Dramatic Grand Roof (Curved/Modern Expo Architecture) -->
+    <path d="M 65 75 Q 120 50 175 75 L 180 82 L 60 82 Z" fill="#E2E8F0"/>
+    <path d="M 70 75 Q 120 52 170 75" stroke="#CBD5E0" stroke-width="2" fill="none"/>
+
+    <!-- Architectural Pillars / Flags symbolizing international convention -->
+    <rect x="80" y="85" width="3" height="35" fill="#A0AEC0"/>
+    <rect x="157" y="85" width="3" height="35" fill="#A0AEC0"/>
+    
+    <!-- Festive / Global Summit Banners (Gold Accent for Focus) -->
+    <path d="M 83 85 L 95 90 L 83 95 Z" fill="#D69E2E"/>
+    <path d="M 157 85 L 145 90 L 157 95 Z" fill="#D69E2E"/>
+    <path d="M 105 82 L 115 87 L 105 92 Z" fill="#ECC94B"/>
+    <path d="M 135 82 L 125 87 L 135 92 Z" fill="#ECC94B"/>
+
+    <!-- Glowing Spotlight / Celebration Beams (Emphasizing "Grand/Sheng") -->
+    <path d="M 120 55 L 70 20 L 85 20 Z" fill="#D69E2E" opacity="0.25"/>
+    <path d="M 120 55 L 170 20 L 155 20 Z" fill="#D69E2E" opacity="0.25"/>
+    <circle cx="120" cy="50" r="3" fill="#ECC94B"/>
+  </g>
+
+  <!-- Attendees / Silhouettes in front of the grand hall representing the gathering of people -->
+  <g transform="translate(0, 10)">
+    <!-- Left attendee -->
+    <circle cx="95" cy="165" r="7" fill="#CBD5E0"/>
+    <path d="M 87 185 Q 95 172 103 185 Z" fill="#4A5568"/>
+
+    <!-- Center attendee (front, prominent) -->
+    <circle cx="120" cy="160" r="8" fill="#E2E8F0"/>
+    <path d="M 110 182 Q 120 168 130 182 Z" fill="#2B6CB0"/>
+
+    <!-- Right attendee -->
+    <circle cx="145" cy="165" r="7" fill="#CBD5E0"/>
+    <path d="M 137 185 Q 145 172 153 185 Z" fill="#4A5568"/>
+  </g>
+
+  <!-- Ground reflection / Floor line -->
+  <ellipse cx="120" cy="190" rx="75" ry="5" fill="#111318"/>
+</svg>

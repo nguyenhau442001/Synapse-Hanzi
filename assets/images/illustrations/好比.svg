@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration: "好比" (Just like / comparable to) visualized as a striking bridge or scaling a steep peak, representing the core sentence "知识积累的过程好比攀登陡峭高峰" -->
+  <!-- Background subtle mountain contour -->
+  <path d="M 40 200 L 90 130 L 130 160 L 190 70 L 220 200 Z" fill="#222733"/>
+  <path d="M 20 200 L 70 110 L 120 170 L 180 90 L 220 200 Z" fill="#282E3D" opacity="0.6"/>
+
+  <!-- Steep mountain peak representing "高峰" -->
+  <polygon points="120,45 195,195 45,195" fill="#30384B"/>
+  <polygon points="120,45 195,195 120,195" fill="#3A445C"/>
+
+  <!-- Snow cap on peak -->
+  <polygon points="120,45 142,85 98,85" fill="#E6EDF5"/>
+  <path d="M 108 85 Q 120 95 132 85 Q 126 98 120 92 Q 114 98 108 85 Z" fill="#C5D1E0"/>
+
+  <!-- Climbing path / stepping stones (一步一个脚印) -->
+  <circle cx="95" cy="170" r="4" fill="#F59E0B"/>
+  <circle cx="110" cy="145" r="4.5" fill="#F59E0B"/>
+  <circle cx="102" cy="120" r="5" fill="#F59E0B"/>
+  <circle cx="125" cy="100" r="5.5" fill="#F59E0B"/>
+  <circle cx="140" cy="75" r="6" fill="#F59E0B"/>
+
+  <!-- Climber figure (representing the learner/process) -->
+  <circle cx="140" cy="58" r="4.5" fill="#F9FAFB"/>
+  <path d="M 137 66 L 140 73 L 145 68" stroke="#F9FAFB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Glowing comparison symbol/framework (representing "好比" - analogy/mapping) -->
+  <g transform="translate(65, 30)">
+    <circle cx="0" cy="0" r="16" fill="#F59E0B" opacity="0.15"/>
+    <circle cx="0" cy="0" r="12" fill="#F59E0B"/>
+    <!-- Equal/Analogy Bars -->
+    <rect x="-6" y="-3" width="12" height="2.5" rx="1" fill="#1A1D24"/>
+    <rect x="-6" y="1" width="12" height="2.5" rx="1" fill="#1A1D24"/>
+  </g>
+
+  <!-- Base ground line -->
+  <rect x="30" y="195" width="180" height="4" rx="2" fill="#48556A"/>
+</svg>

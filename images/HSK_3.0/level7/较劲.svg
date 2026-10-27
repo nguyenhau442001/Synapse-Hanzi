@@ -1,0 +1,71 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle background glow for focus -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.5"/>
+
+  <!-- Chinese Chess Board Surface (Perspective top-down/isometric element) -->
+  <g transform="translate(0, 15)">
+    <!-- Board Base -->
+    <path d="M 60 70 L 180 70 L 200 160 L 40 160 Z" fill="#2D323E" stroke="#3F4859" stroke-width="1.5"/>
+    
+    <!-- Grid lines representing Xiangqi board -->
+    <!-- Horizontal lines -->
+    <line x1="60" y1="70" x2="180" y2="70" stroke="#4F5D73" stroke-width="1"/>
+    <line x1="55" y1="90" x2="185" y2="90" stroke="#4F5D73" stroke-width="1"/>
+    <line x1="50" y1="115" x2="190" y2="115" stroke="#4F5D73" stroke-width="1" stroke-dasharray="3,3"/> <!-- River -->
+    <line x1="45" y1="140" x2="195" y2="140" stroke="#4F5D73" stroke-width="1"/>
+    <line x1="40" y1="160" x2="200" y2="160" stroke="#4F5D73" stroke-width="1"/>
+
+    <!-- Vertical lines -->
+    <line x1="60" y1="70" x2="40" y2="160" stroke="#4F5D73" stroke-width="1"/>
+    <line x1="90" y1="70" x2="80" y2="160" stroke="#4F5D73" stroke-width="1"/>
+    <line x1="120" y1="70" x2="120" y2="160" stroke="#4F5D73" stroke-width="1"/>
+    <line x1="150" y1="70" x2="160" y2="160" stroke="#4F5D73" stroke-width="1"/>
+    <line x1="180" y1="70" x2="200" y2="160" stroke="#4F5D73" stroke-width="1"/>
+  </g>
+
+  <!-- Rival Chess Pieces (Xiangqi style pieces facing off intensely) -->
+  <!-- Left Side Piece (Dark/Red equivalent side - styled sleekly with gold/orange accent) -->
+  <g transform="translate(90, 115)">
+    <!-- Piece Shadow -->
+    <ellipse cx="0" cy="12" rx="14" ry="6" fill="#111318"/>
+    <!-- Piece Body -->
+    <circle cx="0" cy="0" r="15" fill="#E65100"/>
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#FFB74D" stroke-width="1.5"/>
+    <!-- Inner iconic vector symbol for competitive clash/focus -->
+    <path d="M -4 -6 L 4 6 M -4 6 L 4 -6" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Right Side Piece (Dark/Black equivalent side - sleek slate with gold/orange accent) -->
+  <g transform="translate(150, 115)">
+    <!-- Piece Shadow -->
+    <ellipse cx="0" cy="12" rx="14" ry="6" fill="#111318"/>
+    <!-- Piece Body -->
+    <circle cx="0" cy="0" r="15" fill="#2C3E50"/>
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#FFB74D" stroke-width="1.5"/>
+    <!-- Inner iconic vector symbol for competitive clash/focus -->
+    <circle cx="0" cy="0" r="4" fill="#FFB74D"/>
+  </g>
+
+  <!-- Interactive Tension Visualizers (Ganh Đua / Đọ Sức - Dynamic clash sparks between pieces) -->
+  <g transform="translate(120, 115)">
+    <!-- Central energy/tension spark representing "jiàojìn" (mental standoff) -->
+    <path d="M -12 -2 L -6 -8 L 0 0 L 6 -8 L 12 -2" fill="none" stroke="#FF9800" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="0" cy="-4" r="2" fill="#FFFFFF"/>
+    
+    <!-- Subtle rising tension particles -->
+    <circle cx="-16" cy="-15" r="1" fill="#FFB74D" opacity="0.8"/>
+    <circle cx="14" cy="-18" r="1.5" fill="#FFB74D" opacity="0.6"/>
+    <circle cx="0" cy="-22" r="1" fill="#FF9800" opacity="0.9"/>
+  </g>
+
+  <!-- Two opposing hands / silhouette gestures poised in deep concentration (Framing the bottom) -->
+  <!-- Left Player Hand Hint -->
+  <path d="M 40 185 Q 50 165 75 160 L 85 170 Q 60 175 50 190 Z" fill="#3E4C59" opacity="0.8"/>
+  <!-- Right Player Hand Hint -->
+  <path d="M 200 185 Q 190 165 165 160 L 155 170 Q 180 175 190 190 Z" fill="#3E4C59" opacity="0.8"/>
+
+  <!-- Sleek Focus / Concentration Aura on pieces -->
+  <path d="M 105 100 Q 120 90 135 100" fill="none" stroke="#FFB74D" stroke-width="1.5" stroke-dasharray="2,2" opacity="0.7"/>
+</svg>

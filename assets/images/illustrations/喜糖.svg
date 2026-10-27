@@ -1,0 +1,75 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Decorative background glow / subtle celebration aura -->
+  <circle cx="120" cy="120" r="80" fill="#2E2421" opacity="0.6"/>
+
+  <!-- Central Visual Object Group: Wedding Candy Gift Box (喜糖盒) with traditional festive elements -->
+  <g transform="translate(0, 5)">
+    <!-- Elegant Hexagonal or Octagonal Gift Box Base -->
+    <polygon points="120,55 165,75 165,135 120,155 75,135 75,75" fill="#D93838" stroke="#F5A623" stroke-width="2.5" stroke-linejoin="round"/>
+    
+    <!-- Box Lid / Top Inner Facets for 3D depth -->
+    <polygon points="120,55 165,75 120,95 75,75" fill="#E84848" stroke="#F5A623" stroke-width="1.5" stroke-linejoin="round"/>
+    <polygon points="75,75 120,95 120,155 75,135" fill="#C42A2A" stroke="#F5A623" stroke-width="1.5" stroke-linejoin="round"/>
+    
+    <!-- Gold Ribbon / Decorative Cross-banding -->
+    <path d="M120,55 L120,155" stroke="#F5A623" stroke-width="5" stroke-linecap="round"/>
+    <path d="M75,105 L165,105" stroke="#F5A623" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Traditional Chinese "Double Happiness" (囍) stylized abstract geometric emblem on the box front -->
+    <g transform="translate(103, 112) scale(0.65)" fill="#F5A623">
+      <rect x="0" y="0" width="8" height="24" rx="2"/>
+      <rect x="15" y="0" width="8" height="24" rx="2"/>
+      <rect x="4" y="10" width="17" height="5" rx="1"/>
+      <rect x="0" y="28" width="23" height="6" rx="1"/>
+      <rect x="29" y="0" width="8" height="24" rx="2"/>
+      <rect x="44" y="0" width="8" height="24" rx="2"/>
+      <rect x="33" y="10" width="17" height="5" rx="1"/>
+      <rect x="29" y="28" width="23" height="6" rx="1"/>
+    </g>
+
+    <!-- Exquisite Traditional Bow (Ribbon Knot) on Top of Box -->
+    <g transform="translate(120, 42)">
+      <!-- Left Loop -->
+      <path d="M0,8 C-18,2 -24,-12 -12,-16 C-4,-18 0,0 0,8 Z" fill="#F5A623" stroke="#D93838" stroke-width="1.5"/>
+      <!-- Right Loop -->
+      <path d="M0,8 C18,2 24,-12 12,-16 C4,-18 0,0 0,8 Z" fill="#F5A623" stroke="#D93838" stroke-width="1.5"/>
+      <!-- Center Knot -->
+      <circle cx="0" cy="5" r="6" fill="#FFC857" stroke="#D93838" stroke-width="1.5"/>
+      <!-- Ribbon Tails -->
+      <path d="M-4,10 L-14,25 L-8,28 L0,11 Z" fill="#F5A623"/>
+      <path d="M4,10 L14,25 L8,28 L0,11 Z" fill="#F5A623"/>
+    </g>
+
+    <!-- Spilled/Overflowing Wedding Candies (喜糖) surrounding the base -->
+    <!-- Candy 1 (Left - Wrapped classic toffee) -->
+    <g transform="translate(50, 145) rotate(-15)">
+      <rect x="-14" y="-8" width="28" height="16" rx="4" fill="#FFC857" stroke="#D93838" stroke-width="1.5"/>
+      <path d="M-20,-12 L-14,-8 L-14,8 L-20,12 Z" fill="#F5A623"/>
+      <path d="M20,-12 L14,-8 L14,8 L20,12 Z" fill="#F5A623"/>
+      <circle cx="0" cy="0" r="4" fill="#D93838"/>
+    </g>
+
+    <!-- Candy 2 (Right - Sparkling wrapped hard candy) -->
+    <g transform="translate(190, 135) rotate(25)">
+      <rect x="-16" y="-9" width="32" height="18" rx="6" fill="#FF5757" stroke="#FFC857" stroke-width="1.5"/>
+      <path d="M-22,-14 L-16,-9 L-16,9 L-22,14 Z" fill="#FFC857"/>
+      <path d="M22,-14 L16,-9 L16,9 L22,14 Z" fill="#FFC857"/>
+      <path d="M-6,-3 L6,3 M-6,3 L6,-3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Candy 3 (Bottom Center-Left - Colorful round dragee / chocolate bean) -->
+    <g transform="translate(85, 175)">
+      <circle cx="0" cy="0" r="11" fill="#FF8457" stroke="#FFC857" stroke-width="2"/>
+      <path d="M-5,-3 C-2,-6 5,-5 6,-1" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- Candy 4 (Bottom Center-Right - Golden foil-wrapped nugget) -->
+    <g transform="translate(155, 170) rotate(10)">
+      <rect x="-12" y="-12" width="24" height="24" rx="5" fill="#FFC857" stroke="#D93838" stroke-width="1.5"/>
+      <path d="M-6,-6 L6,6 M-6,6 L6,-6" stroke="#D93838" stroke-width="1.5" opacity="0.6"/>
+    </g>
+  </g>
+</svg>

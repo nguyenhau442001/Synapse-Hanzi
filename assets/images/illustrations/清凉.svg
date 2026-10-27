@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Heat Waves (Chaotic/Oppressive) -->
+  <path d="M180 40 Q 200 20 220 40 T 240 40" stroke="#FF8C00" stroke-width="2" fill="none" opacity="0.3"/>
+  <path d="M190 60 Q 210 40 230 60" stroke="#FF8C00" stroke-width="2" fill="none" opacity="0.2"/>
+  
+  <!-- The Cup (Central Focus) -->
+  <path d="M90 120 L150 120 L140 200 Q 120 210 100 200 L90 120" fill="#2C3E50" stroke="#5DADE2" stroke-width="3"/>
+  <rect x="90" y="110" width="60" height="10" rx="2" fill="#5DADE2"/>
+  
+  <!-- The Liquid (Refreshing/Cool) -->
+  <path d="M93 125 L147 125 L140 195 Q 120 205 100 195 L93 125" fill="#2ECC71"/>
+  
+  <!-- Ice Cubes (Scale Exaggeration for "Cooling" effect) -->
+  <rect x="105" y="135" width="15" height="15" rx="2" fill="#FFFFFF" opacity="0.9"/>
+  <rect x="125" y="145" width="18" height="18" rx="2" fill="#FFFFFF" opacity="0.9"/>
+  
+  <!-- Cooling Effect/Mist (Contrast to heat) -->
+  <circle cx="120" cy="100" r="4" fill="#A9DFBF" opacity="0.6"/>
+  <circle cx="135" cy="90" r="6" fill="#A9DFBF" opacity="0.4"/>
+  <circle cx="105" cy="95" r="5" fill="#A9DFBF" opacity="0.5"/>
+  
+  <!-- Contrast: The "Cool" aura vs the "Hot" environment -->
+  <circle cx="120" cy="150" r="70" stroke="#5DADE2" stroke-width="2" stroke-dasharray="6 6" fill="none" opacity="0.3"/>
+</svg>

@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Hybrid Rice Stalk Illustration -->
+  <g transform="translate(120, 120)">
+    <!-- Main Stem -->
+    <path d="M-5,100 L-5,-40 C-5,-60 5,-60 5,-40 L5,100 Z" fill="#4A5568"/>
+    
+    <!-- Left Grain Cluster (Representing Parent A) -->
+    <path d="M-5,-40 L-30,-70 L-20,-80 L-5,-50 Z" fill="#F6AD55"/>
+    <path d="M-5,-50 L-35,-90 L-25,-100 L-5,-60 Z" fill="#F6AD55"/>
+    
+    <!-- Right Grain Cluster (Representing Parent B) -->
+    <path d="M5,-40 L30,-70 L20,-80 L5,-50 Z" fill="#ECC94B"/>
+    <path d="M5,-50 L35,-90 L25,-100 L5,-60 Z" fill="#ECC94B"/>
+    
+    <!-- Hybrid Grain Cluster (The Resulting Hybrid) -->
+    <path d="M-5,-20 L-40,-20 L-20,-50 Z" fill="#FBD38D"/>
+    <path d="M5,-20 L40,-20 L20,-50 Z" fill="#FBD38D"/>
+    
+    <!-- Central Hybrid Grain (Focus) -->
+    <ellipse cx="0" cy="-30" rx="15" ry="25" fill="#F6E05E"/>
+    <path d="M-8,-30 C-8,-45 8,-45 8,-30 C8,-15 -8,-15 -8,-30" fill="#D69E2E"/>
+  </g>
+</svg>

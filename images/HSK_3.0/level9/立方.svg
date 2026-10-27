@@ -1,0 +1,55 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 120)">
+    <!-- Grid floor or shadow for depth -->
+    <ellipse cx="0" cy="65" rx="50" ry="18" fill="#111318" opacity="0.8"/>
+    
+    <!-- Isometric Cube Construction -->
+    <!-- Back faces for internal dimension lines/volume feel -->
+    <g opacity="0.3" stroke="#4C566A" stroke-width="1.5" stroke-dasharray="3 3" fill="none">
+      <line x1="0" y1="0" x2="-45" y2="-25" />
+      <line x1="0" y1="0" x2="45" y2="-25" />
+      <line x1="0" y1="0" x2="0" y2="52" />
+    </g>
+
+    <!-- Main Cube Faces -->
+    <!-- Left Face -->
+    <polygon points="0,52 -45,26 -45,-26 0,0" fill="#3B82F6"/>
+    
+    <!-- Right Face -->
+    <polygon points="0,52 45,26 45,-26 0,0" fill="#2563EB"/>
+    
+    <!-- Top Face -->
+    <polygon points="0,0 -45,-26 0,-52 45,-26" fill="#60A5FA"/>
+
+    <!-- High-contrast geometric accent lines (Edges) -->
+    <g stroke="#93C5FD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <!-- Outer perimeter -->
+      <path d="M 0,-52 L -45,-26 L -45,26 L 0,52 L 45,26 L 45,-26 Z" />
+      <!-- Center vertical dividing edge -->
+      <line x1="0" y1="0" x2="0" y2="52" />
+      <!-- Top vertex to side vertices -->
+      <line x1="0" y1="0" x2="-45" y2="-26" />
+      <line x1="0" y1="0" x2="45" y2="-26" />
+    </g>
+
+    <!-- Mathematical / Geometric dimension indicators (Orange/Gold accent per guidelines) -->
+    <g stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" opacity="0.9">
+      <!-- Width indicator parallel to bottom-left edge -->
+      <line x1="-48" y1="31" x2="-3" y2="57" />
+      <path d="M -44,32 L -48,31 L -46,35" fill="none"/>
+      <path d="M -7,55 L -3,57 L -5,53" fill="none"/>
+
+      <!-- Height indicator -->
+      <line x1="52" y1="-24" x2="52" y2="28" />
+      <path d="M 50,-20 L 52,-24 L 54,-20" fill="none"/>
+      <path d="M 50,24 L 52,28 L 54,24" fill="none"/>
+    </g>
+
+    <!-- Focus points/vertices accent -->
+    <circle cx="0" cy="-52" r="3" fill="#F59E0B"/>
+    <circle cx="-45" cy="26" r="3" fill="#F59E0B"/>
+    <circle cx="45" cy="26" r="3" fill="#F59E0B"/>
+  </g>
+</svg>

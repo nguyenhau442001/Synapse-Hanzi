@@ -1,0 +1,63 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle lighting effects -->
+  <circle cx="120" cy="120" r="90" fill="#222732" opacity="0.5"/>
+
+  <!-- Motion lines indicating guidance / process -->
+  <path d="M 70 145 C 90 120, 110 120, 130 140" stroke="#3A4356" stroke-width="2" stroke-dasharray="4 4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Adult Figure (Guidance / Care) -->
+  <g id="adult-figure">
+    <!-- Body / Torso -->
+    <path d="M 75 190 L 75 160 C 75 145, 85 135, 100 135 L 115 135" fill="#4B6B94"/>
+    <!-- Head -->
+    <circle cx="95" cy="115" r="14" fill="#E0A96D"/>
+    <!-- Hair -->
+    <path d="M 81 115 C 81 104, 90 101, 102 105 C 109 107, 108 115, 108 115 Z" fill="#3D2817"/>
+    <!-- Guiding / Reaching Arm (Patient, gentle posture) -->
+    <path d="M 95 145 L 125 155" stroke="#4B6B94" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="127" cy="156" r="4" fill="#E0A96D"/>
+  </g>
+
+  <!-- Child Figure (Receptive, learning posture) -->
+  <g id="child-figure">
+    <!-- Body / Torso -->
+    <path d="M 165 190 L 165 170 C 165 160, 155 150, 140 150 L 130 150" fill="#E56B6F"/>
+    <!-- Head -->
+    <circle cx="145" cy="132" r="11" fill="#F4C2A2"/>
+    <!-- Hair -->
+    <path d="M 134 132 C 134 123, 142 120, 152 124 C 156 126, 156 132, 156 132 Z" fill="#2C221E"/>
+    <!-- Arm reflecting calm listening -->
+    <path d="M 145 160 L 130 165" stroke="#E56B6F" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Focal Point: Symbol of structured growth / positive direction (Golden Accent) -->
+  <g id="growth-concept">
+    <!-- Ground / Base -->
+    <ellipse cx="120" cy="190" rx="45" ry="6" fill="#2A313C"/>
+    
+    <!-- Upward guiding beam / light (metaphor for moral/behavioral direction) -->
+    <path d="M 115 175 L 120 70 L 125 175 Z" fill="url(#gold-beam)" opacity="0.15"/>
+
+    <!-- Sapling / Correct growth path -->
+    <path d="M 120 190 L 120 105" stroke="#E6AF2E" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Leaves / Progressive milestones -->
+    <path d="M 120 150 C 100 145, 95 125, 110 120 C 115 118, 120 125, 120 135 Z" fill="#F1C40F"/>
+    <path d="M 120 130 C 135 120, 145 100, 130 95 C 125 93, 120 100, 120 110 Z" fill="#F39C12"/>
+    <path d="M 120 110 C 105 100, 100 80, 115 75 C 120 73, 120 80, 120 90 Z" fill="#F1C40F"/>
+  </g>
+
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="gold-beam" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#E6AF2E" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#E6AF2E" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Framing Accent (Sleek modern UI border) -->
+  <rect x="12" y="12" width="216" height="216" rx="16" fill="none" stroke="#2A313C" stroke-width="2"/>
+</svg>

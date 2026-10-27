@@ -1,0 +1,19 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Inkstone (Yantai) -->
+  <path d="M60 160 L180 160 L170 190 L70 190 Z" fill="#2D3436" stroke="#4A5568" stroke-width="2"/>
+  <ellipse cx="120" cy="165" rx="40" ry="15" fill="#121212"/>
+  
+  <!-- Ink Stick (Mo) -->
+  <rect x="105" y="80" width="30" height="90" rx="2" fill="#3D3D3D" stroke="#FFB347" stroke-width="2"/>
+  
+  <!-- Ink residue/texture on stone -->
+  <path d="M90 165 C100 175, 140 175, 150 165" fill="none" stroke="#000000" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Decorative highlight on ink stick -->
+  <rect x="115" y="90" width="10" height="30" rx="1" fill="#FFB347"/>
+  
+  <!-- Subtle shadow -->
+  <ellipse cx="120" cy="195" rx="50" ry="5" fill="#000000" opacity="0.3"/>
+</svg>

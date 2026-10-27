@@ -1,0 +1,59 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glowing atmospheric aura behind the masterpiece -->
+  <circle cx="120" cy="115" r="70" fill="#FFB703" opacity="0.08" filter="blur(15px)"/>
+
+  <!-- Bookmark / Ribbon cascading down -->
+  <path d="M142 55 L158 55 L158 135 L150 125 L142 135 Z" fill="#E63946"/>
+
+  <!-- BACK COVER -->
+  <path d="M85 55 L155 50 L155 180 L85 185 Z" fill="#2C3544"/>
+
+  <!-- BOOK PAGES BLOCK (Thickness) -->
+  <path d="M88 62 L152 57 L152 173 L88 178 Z" fill="#EAEAEA"/>
+  <path d="M90 65 L150 60 L150 170 L90 175 Z" fill="#F4F4F9"/>
+
+  <!-- FRONT COVER (OPEN / V-SHAPE EFFECT) -->
+  <!-- Left Page Cover -->
+  <path d="M50 70 C70 65, 85 62, 88 62 L88 178 C85 178, 70 175, 50 170 Z" fill="#1D3557"/>
+  <!-- Right Page Cover -->
+  <path d="M152 57 C155 57, 170 60, 190 70 L190 170 C170 175, 155 178, 152 178 Z" fill="#1D3557"/>
+
+  <!-- GOLDEN ORNATE FRAME / BORDER ON COVERS -->
+  <!-- Left Cover Inner Gold Frame -->
+  <path d="M60 78 C73 75, 82 73, 84 73 L84 165 C82 165, 73 163, 60 160 Z" fill="none" stroke="#FFB703" stroke-width="2" opacity="0.6"/>
+  <!-- Right Cover Inner Gold Frame -->
+  <path d="M180 78 C167 75, 158 73, 156 73 L156 165 C158 165, 167 163, 180 160 Z" fill="none" stroke="#FFB703" stroke-width="2" opacity="0.6"/>
+
+  <!-- SPINE -->
+  <path d="M85 55 L90 62 L90 175 L85 185 Z" fill="#14213D"/>
+
+  <!-- PAGES CONTENT (Abstract classical motif / lines) -->
+  <!-- Left Page Content Lines -->
+  <line x1="63" y1="90" x2="76" y2="88" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round"/>
+  <line x1="62" y1="105" x2="78" y2="102" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round"/>
+  <line x1="62" y1="120" x2="75" y2="117" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round"/>
+  <line x1="61" y1="135" x2="77" y2="132" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Right Page Content Lines -->
+  <line x1="164" y1="88" x2="177" y2="90" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round"/>
+  <line x1="162" y1="102" x2="178" y2="105" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round"/>
+  <line x1="165" y1="117" x2="178" y2="120" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round"/>
+  <line x1="163" y1="132" x2="179" y2="135" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- CENTRAL BINDING CREASE SHADOW -->
+  <line x1="88" y1="62" x2="88" y2="178" stroke="#0B131E" stroke-width="3" opacity="0.4"/>
+  <line x1="152" y1="57" x2="152" y2="178" stroke="#0B131E" stroke-width="3" opacity="0.4"/>
+
+  <!-- PRESTIGIOUS MASTERPIECE ACCENTS (Classic Crown / Starburst element above) -->
+  <g transform="translate(120, 36)">
+    <circle cx="0" cy="0" r="14" fill="#FFB703"/>
+    <path d="M0 -8 L3 -2 L9 -1 L4 3 L6 9 L0 6 L-6 9 L-4 3 L-9 -1 L-3 -2 Z" fill="#1A1D24" transform="scale(0.75)"/>
+  </g>
+
+  <!-- Sparkles denoting "Classic / Prestige" -->
+  <path d="M50 45 L52 50 L57 52 L52 54 L50 59 L48 54 L43 52 L48 50 Z" fill="#FFB703" opacity="0.8"/>
+  <path d="M190 45 L192 50 L197 52 L192 54 L190 59 L188 54 L183 52 L188 50 Z" fill="#FFB703" opacity="0.8"/>
+</svg>

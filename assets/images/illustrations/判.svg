@@ -1,0 +1,43 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle background glow/spotlight for central object -->
+  <circle cx="120" cy="115" r="70" fill="#262C3A" opacity="0.6"/>
+
+  <!-- Conceptual illustration: Judge's Gavel (representing phán quyết / phân xử) -->
+  <g transform="translate(0, 5)">
+    <!-- Sound block (Base) -->
+    <path d="M 75 160 L 165 160 L 155 180 L 85 180 Z" fill="#3A4454" />
+    <rect x="70" y="180" width="100" height="12" rx="4" fill="#F59E0B" />
+    <!-- Highlight on base -->
+    <line x1="90" y1="184" x2="150" y2="184" stroke="#FDE68A" stroke-width="2" stroke-linecap="round" />
+
+    <!-- Gavel Head (Horizontal with slight tilt) -->
+    <g transform="rotate(-15 120 100)">
+      <!-- Wooden block cylinder body -->
+      <rect x="85" y="80" width="70" height="38" rx="8" fill="#F59E0B" />
+      
+      <!-- Metallic gold band left -->
+      <rect x="93" y="80" width="8" height="38" fill="#D97706" />
+      
+      <!-- Metallic gold band right -->
+      <rect x="139" y="80" width="8" height="38" fill="#D97706" />
+
+      <!-- Ends of the mallet head (darker wood/shadow) -->
+      <ellipse cx="85" cy="99" rx="4" ry="19" fill="#D97706" />
+      <ellipse cx="155" cy="99" rx="4" ry="19" fill="#D97706" />
+
+      <!-- Handle -->
+      <path d="M 115 118 L 105 165 L 120 168 L 130 118 Z" fill="#4B5563" />
+      <path d="M 116 118 L 110 166 L 115 167 L 122 118 Z" fill="#6B7280" opacity="0.6" /> <!-- handle highlight -->
+      
+      <!-- Handle pommel/grip base -->
+      <ellipse cx="112.5" cy="166" rx="8" ry="3" fill="#374151" />
+    </g>
+  </g>
+
+  <!-- Balance Scales Minimal Accent in background -->
+  <path d="M 50 70 L 190 70" stroke="#334155" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <circle cx="120" cy="70" r="4" fill="#475569" opacity="0.5"/>
+</svg>

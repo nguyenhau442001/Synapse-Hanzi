@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Person A (The stranger) -->
+  <g transform="translate(60, 120)">
+    <circle cx="20" cy="-30" r="15" fill="#A0AEC0"/>
+    <path d="M5 0h30v40H5z" fill="#718096"/>
+    <path d="M5 40l-5 40h15l5-20h10l5 20h15l-5-40z" fill="#4A5568"/>
+  </g>
+
+  <!-- Person B (The other stranger) -->
+  <g transform="translate(140, 120)">
+    <circle cx="20" cy="-30" r="15" fill="#A0AEC0"/>
+    <path d="M5 0h30v40H5z" fill="#E2E8F0"/>
+    <path d="M5 40l-5 40h15l5-20h10l5 20h15l-5-40z" fill="#CBD5E0"/>
+  </g>
+
+  <!-- Visual indicator of "stranger" status: A subtle gap and neutral body language -->
+  <line x1="120" y1="80" x2="120" y2="180" stroke="#2D3748" stroke-width="2" stroke-dasharray="6 6"/>
+  
+  <!-- Question marks to represent "unknown/unacquainted" -->
+  <path d="M90 60c0-10 10-15 20-15s20 5 20 15c0 8-10 12-10 20" stroke="#F6AD55" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <circle cx="120" cy="95" r="3" fill="#F6AD55"/>
+</svg>

@@ -1,0 +1,75 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Ground Plane -->
+  <path d="M30 190 L210 190" stroke="#2D333B" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Motion lines / Action effect representing chasing/driving away (撵) -->
+  <g opacity="0.4" stroke="#F6AD55" stroke-width="2" stroke-linecap="round" fill="none">
+    <path d="M120 170 Q100 160 80 170"/>
+    <path d="M100 160 Q80 150 60 160"/>
+  </g>
+
+  <!-- Fleeing Little Bird (小鸟) -->
+  <g transform="translate(45, 120)">
+    <!-- Bird Body -->
+    <ellipse cx="15" cy="15" rx="12" ry="9" fill="#F6AD55"/>
+    <!-- Bird Head -->
+    <circle cx="24" cy="10" r="7" fill="#F6AD55"/>
+    <!-- Beak -->
+    <polygon points="30,9 36,11 30,13" fill="#ED8936"/>
+    <!-- Wing up in flight -->
+    <path d="M12 12 Q16 2 22 10" fill="none" stroke="#DD6B20" stroke-width="3" stroke-linecap="round"/>
+    <!-- Tail feathers -->
+    <path d="M3 15 L-3 12 L0 18 Z" fill="#DD6B20"/>
+    <!-- Panic eye -->
+    <circle cx="25" cy="9" r="1.5" fill="#1A1D24"/>
+  </g>
+
+  <!-- Second flying bird further away -->
+  <g transform="translate(30, 85) scale(0.6)">
+    <ellipse cx="15" cy="15" rx="12" ry="9" fill="#F6AD55"/>
+    <circle cx="24" cy="10" r="7" fill="#F6AD55"/>
+    <polygon points="30,9 36,11 30,13" fill="#ED8936"/>
+    <path d="M12 12 Q16 2 22 10" fill="none" stroke="#DD6B20" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Playful / Chasing Naughty Cat (调皮的小猫) -->
+  <g transform="translate(100, 110)">
+    <!-- Cat Body (pouncing forward) -->
+    <ellipse cx="45" cy="50" rx="22" ry="15" fill="#E2E8F0" transform="rotate(-15 45 50)"/>
+    
+    <!-- Cat Head -->
+    <circle cx="68" cy="38" r="14" fill="#E2E8F0"/>
+    
+    <!-- Cat Ears -->
+    <polygon points="58,28 62,15 67,27" fill="#CBD5E0"/>
+    <polygon points="70,26 77,14 79,26" fill="#CBD5E0"/>
+    
+    <!-- Cat Eyes (focused, chasing) -->
+    <ellipse cx="64" cy="36" rx="2.5" ry="3.5" fill="#319795"/>
+    <ellipse cx="73" cy="35" rx="2.5" ry="3.5" fill="#319795"/>
+    
+    <!-- Nose & Whiskers -->
+    <polygon points="69,41 71,41 70,43" fill="#4A5568"/>
+    <line x1="57" y1="43" x2="65" y2="42" stroke="#CBD5E0" stroke-width="1"/>
+    <line x1="57" y1="46" x2="65" y2="45" stroke="#CBD5E0" stroke-width="1"/>
+    
+    <!-- Front Paws reaching out (Chasing action) -->
+    <path d="M78 48 L92 52" stroke="#CBD5E0" stroke-width="5" stroke-linecap="round"/>
+    <path d="M73 53 L85 62" stroke="#CBD5E0" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Back Paws springing -->
+    <path d="M30 58 L20 68" stroke="#CBD5E0" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Curved dynamic tail -->
+    <path d="M25 45 Q12 30 18 18" fill="none" stroke="#CBD5E0" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Speed lines behind cat -->
+  <g opacity="0.3" stroke="#CBD5E0" stroke-width="2" stroke-linecap="round">
+    <line x1="90" y1="180" x2="120" y2="180"/>
+    <line x1="100" y1="185" x2="135" y2="185"/>
+  </g>
+</svg>

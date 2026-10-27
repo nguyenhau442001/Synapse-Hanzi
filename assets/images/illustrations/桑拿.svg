@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glowing background atmosphere for steam/heat -->
+  <circle cx="120" cy="120" r="70" fill="#FF8C42" opacity="0.08"/>
+
+  <!-- Wooden Wall Panels of the Sauna Room -->
+  <path d="M60 55 L180 55 L180 185 L60 185 Z" fill="#242933"/>
+  
+  <!-- Horizontal Wooden Planks Texture -->
+  <line x1="60" y1="80" x2="180" y2="80" stroke="#1A1D24" stroke-width="2"/>
+  <line x1="60" y1="105" x2="180" y2="105" stroke="#1A1D24" stroke-width="2"/>
+  <line x1="60" y1="130" x2="180" y2="130" stroke="#1A1D24" stroke-width="2"/>
+  <line x1="60" y1="155" x2="180" y2="155" stroke="#1A1D24" stroke-width="2"/>
+
+  <!-- Wooden Bench (Sauna Benches) -->
+  <rect x="75" y="145" width="90" height="10" rx="3" fill="#A8572A"/>
+  <rect x="90" y="130" width="60" height="10" rx="3" fill="#C26838"/>
+  <rect x="100" y="155" width="12" height="25" rx="2" fill="#804120"/>
+  <rect x="128" y="155" width="12" height="25" rx="2" fill="#804120"/>
+
+  <!-- Sauna Heater (Stove with Rocks) -->
+  <rect x="85" y="100" width="30" height="50" rx="4" fill="#3D4451"/>
+  <!-- Vents/Grills on Heater -->
+  <line x1="93" y1="115" x2="107" y2="115" stroke="#242933" stroke-width="2" stroke-linecap="round"/>
+  <line x1="93" y1="125" x2="107" y2="125" stroke="#242933" stroke-width="2" stroke-linecap="round"/>
+  <line x1="93" y1="135" x2="107" y2="135" stroke="#242933" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Hot Rocks on top of Heater -->
+  <circle cx="94" cy="97" r="5" fill="#6B7280"/>
+  <circle cx="100" cy="94" r="6" fill="#9CA3AF"/>
+  <circle cx="106" cy="97" r="5" fill="#6B7280"/>
+
+  <!-- Wooden Water Bucket & Ladle -->
+  <!-- Bucket -->
+  <path d="M140 135 L145 155 L165 155 L170 135 Z" fill="#A8572A"/>
+  <ellipse cx="155" cy="135" rx="15" ry="4" fill="#C26838"/>
+  <path d="M140 135 C140 120 170 120 170 135" fill="none" stroke="#663319" stroke-width="3" stroke-linecap="round"/>
+  <!-- Ladle -->
+  <line x1="160" y1="130" x2="182" y2="110" stroke="#A8572A" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="182" cy="110" r="5" fill="#C26838"/>
+
+  <!-- Rising Steam Waves (Semantic Core: Vapor/Heat) -->
+  <path d="M95 85 C90 75 105 65 100 50" fill="none" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M107 88 C102 78 117 68 112 53" fill="none" stroke="#FF8C42" stroke-width="3.5" stroke-linecap="round" opacity="0.8"/>
+  <path d="M118 85 C113 75 128 65 123 48" fill="none" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Ambient Glow accent -->
+  <circle cx="100" cy="95" r="18" fill="#FF8C42" opacity="0.25" filter="blur(4px)"/>
+</svg>

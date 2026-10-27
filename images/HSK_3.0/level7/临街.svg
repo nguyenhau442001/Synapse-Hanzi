@@ -1,0 +1,57 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background atmosphere & street layout -->
+  <!-- Street pavement at the bottom -->
+  <path d="M 20 180 L 220 180 L 235 220 L 5 220 Z" fill="#252A34"/>
+  <line x1="20" y1="200" x2="220" y2="200" stroke="#3A4252" stroke-width="2" stroke-dasharray="8 6"/>
+  
+  <!-- Sidewalk -->
+  <path d="M 20 160 L 220 160 L 235 180 L 5 180 Z" fill="#303746"/>
+
+  <!-- Building structure (Shop facing the street - 临街商铺) -->
+  <rect x="50" y="60" width="140" height="100" fill="#2B3240" rx="4"/>
+  
+  <!-- Awning (Canopy) -->
+  <path d="M 40 60 L 200 60 L 190 78 L 50 78 Z" fill="#FF8C42"/>
+  <!-- Awning stripes -->
+  <path d="M 65 60 L 58 78" stroke="#F4F6F9" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 95 60 L 88 78" stroke="#F4F6F9" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 125 60 L 118 78" stroke="#F4F6F9" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 155 60 L 148 78" stroke="#F4F6F9" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 185 60 L 178 78" stroke="#F4F6F9" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Large Glass Display Window (Directly facing the street) -->
+  <rect x="65" y="88" width="110" height="72" fill="#1F242D" stroke="#4A5568" stroke-width="2"/>
+  
+  <!-- Window glow / interior lighting reflection -->
+  <path d="M 75 98 L 130 98 L 110 150 L 75 150 Z" fill="#FFC107" opacity="0.1"/>
+  
+  <!-- Display Items inside shop (Silhouette style) -->
+  <circle cx="100" cy="118" r="12" fill="#4A5568"/>
+  <rect x="125" y="106" width="22" height="44" fill="#4A5568" rx="2"/>
+  
+  <!-- Glass Door entrance facing street -->
+  <rect x="150" y="110" width="25" height="50" fill="#252B36" stroke="#5A657B" stroke-width="1"/>
+  <circle cx="170" cy="135" r="2" fill="#FFC107"/>
+
+  <!-- Architectural details: Building frame / pillars -->
+  <rect x="46" y="60" width="4" height="100" fill="#3E4859"/>
+  <rect x="190" y="60" width="4" height="100" fill="#3E4859"/>
+
+  <!-- Passing pedestrian on the sidewalk (emphasizing the 'street-facing' vibrant context) -->
+  <circle cx="95" cy="170" r="6" fill="#F4F6F9"/>
+  <path d="M 95 176 L 95 192 M 95 182 L 87 190 M 95 182 L 103 190 M 95 192 L 90 205 M 95 192 L 100 205" stroke="#F4F6F9" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Focus Indicator: Direct connection arrow/badge between shop window and street -->
+  <path d="M 120 160 L 120 180" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="120,185 115,175 125,175" fill="#FFC107"/>
+
+  <!-- Street lamp casting warm light downwards -->
+  <path d="M 210 50 L 210 100" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 200 50 L 220 50 L 225 55 L 195 55 Z" fill="#4A5568"/>
+  <path d="M 202 55 L 218 55 L 210 65 Z" fill="#FFC107"/>
+  <!-- Light cone -->
+  <polygon points="210,55 180,170 240,170" fill="#FFC107" opacity="0.08"/>
+
+</svg>

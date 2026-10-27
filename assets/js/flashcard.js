@@ -106,6 +106,9 @@ function buildCardArea() {
               <div class="card-radicals-row card-interactive" id="cardRadicalsRow" onclick="event.stopPropagation()"></div>
             </div>
           </div>
+
+          <!-- Khối Chữ liên quan (Học theo cụm) -->
+          <div class="card-related-wrap" id="cardRelatedWrap" style="display: none;" hidden></div>
         </div>
 
         <!-- Khối ví dụ thực tế -->
@@ -852,6 +855,42 @@ window.addEventListener('resize', () => {
   if (h && h.textContent) fitHanziToContainer(h);
 });
 
+// Lock mouse wheel scrolling on flashcard study stage since there is no extra content below
+window.addEventListener('wheel', (e) => {
+  if (!document.body.classList.contains('flashcard-study-mode')) return;
+
+  // Allow wheel scrolling in Overview list
+  const overviewView = document.getElementById('overviewView');
+  if (overviewView && !overviewView.hidden && overviewView.contains(e.target)) {
+    return;
+  }
+
+  // Allow scrolling inside slide-over study drawer (handwriting canvas, radicals, etc.)
+  if (document.body.classList.contains('study-sidebar-open') && e.target.closest('.workstation-right')) {
+    return;
+  }
+
+  // Allow scrolling in open dialogs/modals (e.g., filter dialog, help modal)
+  const openModal = document.querySelector('dialog[open], .study-modal.open, .study-filter-dialog[open]');
+  if (openModal && openModal.contains(e.target)) {
+    return;
+  }
+
+  // If inside the card and card itself is overflowing and can scroll in that direction, allow it
+  const card = e.target.closest('.card');
+  if (card && card.scrollHeight > card.clientHeight) {
+    const isScrollingDown = e.deltaY > 0;
+    const canScrollDown = card.scrollTop + card.clientHeight < card.scrollHeight - 1;
+    const canScrollUp = card.scrollTop > 1;
+    if ((isScrollingDown && canScrollDown) || (!isScrollingDown && canScrollUp)) {
+      return;
+    }
+  }
+
+  // Prevent wheel scrolling on the study view since there is no extra content below
+  e.preventDefault();
+}, { passive: false });
+
 function toggleStudySidebar(forceOpen) {
   const isOpen = document.body.classList.contains('study-sidebar-open');
   const isTargetTab = document.body.dataset.sidebarTab === 'words';
@@ -1249,6 +1288,8 @@ function render(animate) {
     if (initSupGroup) { initSupGroup.hidden = true; initSupGroup.style.display = 'none'; }
     const initDecompWrap = document.getElementById('cardDecompositionWrap');
     if (initDecompWrap) { initDecompWrap.hidden = true; initDecompWrap.style.display = 'none'; }
+    const initRelatedWrap = document.getElementById('cardRelatedWrap');
+    if (initRelatedWrap) { initRelatedWrap.hidden = true; initRelatedWrap.style.display = 'none'; }
 
     if (filteredOrder.length === 0) {
       if (wordMainBlock) wordMainBlock.style.display = 'none';
@@ -1272,6 +1313,8 @@ function render(animate) {
       if (emptySupporting) { emptySupporting.hidden = true; emptySupporting.style.display = 'none'; }
       const emptyDecompWrap = document.getElementById('cardDecompositionWrap');
       if (emptyDecompWrap) { emptyDecompWrap.hidden = true; emptyDecompWrap.style.display = 'none'; }
+      const emptyRelatedWrap = document.getElementById('cardRelatedWrap');
+      if (emptyRelatedWrap) { emptyRelatedWrap.hidden = true; emptyRelatedWrap.style.display = 'none'; emptyRelatedWrap.innerHTML = ''; }
       const meaningEl = document.getElementById('meaning');
       if (meaningEl) { meaningEl.textContent = ''; meaningEl.classList.remove('show'); }
       const emptyRads = document.getElementById('cardRadicalsRow');
@@ -1313,6 +1356,7 @@ function render(animate) {
     if (!w) return; // deck was swapped out (level change) while this render was pending
     setActiveStudyWord(w);
     if (typeof renderCardRadicals === 'function') renderCardRadicals(w);
+    if (typeof renderCardRelated === 'function') renderCardRelated(w);
     renderStudyWordList();
     const hanziEl = document.getElementById('hanzi');
     if (hanziEl) {

@@ -1,0 +1,31 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- The concept: "尚" (still/yet) visualized as a timeline of progression toward a goal, 
+       with a magnifying glass focusing on an incomplete segment, 
+       representing the state of "not yet concluded/still in progress". -->
+  
+  <!-- Timeline base -->
+  <path d="M40 180 L200 180" stroke="#3A3F4B" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Completed segments -->
+  <path d="M40 180 L120 180" stroke="#FFB800" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- The "Still" segment (dashed/incomplete) -->
+  <path d="M120 180 L160 180" stroke="#5D6679" stroke-width="4" stroke-dasharray="6 6"/>
+  
+  <!-- Magnifying glass focusing on the "Still" area -->
+  <g transform="translate(140, 120)">
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#FFB800" stroke-width="3"/>
+    <path d="M18 18 L30 30" stroke="#FFB800" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- The "Goal" marker at the end -->
+  <path d="M200 160 L200 200" stroke="#5D6679" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="200" cy="180" r="6" fill="#1A1D24" stroke="#FFB800" stroke-width="3"/>
+  
+  <!-- Floating particles representing ongoing research/data -->
+  <circle cx="130" cy="150" r="3" fill="#5D6679"/>
+  <circle cx="150" cy="140" r="2" fill="#5D6679"/>
+  <circle cx="170" cy="155" r="3" fill="#5D6679"/>
+</svg>

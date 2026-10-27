@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Character representing "拘束" (gò bó, ngượng ngùng) -->
+  <!-- Body posture: hunched, arms crossed tightly, legs close together -->
+  <g transform="translate(120, 130)">
+    <!-- Legs -->
+    <path d="M-15 80 L-15 40 M15 80 L15 40" stroke="#E0E0E0" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Torso/Arms -->
+    <path d="M-25 10 L-5 30 L25 10" stroke="#FFB347" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <path d="M-20 40 L20 40" stroke="#FFB347" stroke-width="12" stroke-linecap="round"/>
+    
+    <!-- Head -->
+    <circle cx="0" cy="-25" r="25" fill="#FFB347"/>
+    
+    <!-- Eyes (looking down/sideways, avoiding eye contact) -->
+    <path d="M-10 -25 L-2 -25 M5 -25 L13 -25" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Mouth (tight, thin line) -->
+    <path d="M-8 -10 L8 -10" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Subtle background suggestion of a formal setting (vertical lines/pillars) -->
+  <line x1="40" y1="0" x2="40" y2="240" stroke="#2D343E" stroke-width="2"/>
+  <line x1="200" y1="0" x2="200" y2="240" stroke="#2D343E" stroke-width="2"/>
+</svg>

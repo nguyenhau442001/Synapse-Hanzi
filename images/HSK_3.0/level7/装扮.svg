@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "装扮" (costume/makeup transformation into a wuxia swordsman) -->
+  <g transform="translate(0, 0)">
+    <!-- Vanity table / Mirror base -->
+    <path d="M 60 200 L 180 200 L 170 215 L 70 215 Z" fill="#2D333B" />
+    <rect x="105" y="185" width="30" height="15" fill="#3A414B" />
+
+    <!-- Mirror Frame (Round/Oval antique style) -->
+    <circle cx="120" cy="110" r="55" fill="none" stroke="#D19A66" stroke-width="4" />
+    <circle cx="120" cy="110" r="51" fill="#242B35" />
+
+    <!-- Reflection inside mirror: Wuxia swordsman silhouette & headband -->
+    <!-- Head / Hair -->
+    <path d="M 120 75 C 105 75 98 85 98 95 C 98 105 105 110 120 115 C 135 110 142 105 142 95 C 142 85 135 75 120 75 Z" fill="#61AFEF" opacity="0.8" />
+    <!-- Wuxia Headband / Crown (Guan) -->
+    <path d="M 105 75 L 135 75 L 140 68 L 100 68 Z" fill="#E5C07B" />
+    <circle cx="120" cy="71" r="4" fill="#E06C75" />
+    <!-- Robe collar (crossing over, traditional Chinese style) -->
+    <path d="M 95 130 L 120 110 L 145 130 L 145 150 L 95 150 Z" fill="#98C379" opacity="0.8" />
+    <path d="M 108 118 L 120 145 L 132 118" fill="none" stroke="#E5C07B" stroke-width="2" />
+
+    <!-- Dressing table props (Makeup brush, traditional pouch/accessory) -->
+    <!-- Makeup brush (right) -->
+    <g transform="translate(145, 170) rotate(25)">
+      <rect x="0" y="0" width="4" height="25" rx="2" fill="#D19A66" />
+      <path d="M -2 0 C -2 -8 6 -8 6 0 Z" fill="#ABB2BF" />
+    </g>
+
+    <!-- Traditional jade pendant / tassel (left) -->
+    <g transform="translate(75, 175)">
+      <circle cx="0" cy="0" r="6" fill="#98C379" />
+      <path d="M 0 6 L 0 20" stroke="#E5C07B" stroke-width="1.5" />
+      <path d="M -4 20 L 4 20 L 0 28 Z" fill="#E06C75" />
+    </g>
+
+    <!-- Floating sparkle / transformation magic elements -->
+    <path d="M 55 90 L 58 98 L 66 101 L 58 104 L 55 112 L 52 104 L 44 101 L 52 98 Z" fill="#E5C07B" opacity="0.9" />
+    <path d="M 185 110 L 187 115 L 192 117 L 187 119 L 185 124 L 183 119 L 178 117 L 183 115 Z" fill="#61AFEF" opacity="0.9" />
+    <circle cx="170" cy="75" r="3" fill="#E06C75" />
+    <circle cx="70" cy="135" r="2.5" fill="#98C379" />
+  </g>
+</svg>

@@ -1,0 +1,73 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements for scholar's desk setting -->
+  <path d="M40 180 L200 180" stroke="#2D333F" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Desk surface -->
+  <path d="M30 185 L210 185 L220 200 L20 200 Z" fill="#252A34"/>
+
+  <!-- Old scrolls and ancient literature stacked -->
+  <!-- Scroll 1 (Bottom) -->
+  <rect x="55" y="165" width="90" height="15" rx="3" fill="#D4A373"/>
+  <circle cx="55" cy="172.5" r="8" fill="#BC6C25"/>
+  <circle cx="145" cy="172.5" r="8" fill="#BC6C25"/>
+  
+  <!-- Scroll 2 (Middle) -->
+  <rect x="75" y="150" width="85" height="15" rx="3" fill="#CCD5AE"/>
+  <circle cx="75" cy="157.5" r="7.5" fill="#8A817C"/>
+  <circle cx="160" cy="157.5" r="7.5" fill="#8A817C"/>
+
+  <!-- Open Ancient Book (The Classic Literature) -->
+  <path d="M70 145 C95 138, 120 145, 120 145 L120 120 C120 120, 95 113, 70 120 Z" fill="#EAE2B7"/>
+  <path d="M170 145 C145 138, 120 145, 120 145 L120 120 C120 120, 145 113, 170 120 Z" fill="#EAE2B7"/>
+  <line x1="120" y1="120" x2="120" y2="145" stroke="#D4A373" stroke-width="2"/>
+  
+  <!-- Text lines on open book -->
+  <line x1="80" y1="127" x2="110" y2="129" stroke="#A39171" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="80" y1="133" x2="105" y2="135" stroke="#A39171" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="130" y1="127" x2="160" y2="129" stroke="#A39171" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="130" y1="133" x2="155" y2="135" stroke="#A39171" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Traditional brush holder & brush -->
+  <rect x="180" y="130" width="16" height="35" rx="2" fill="#4A5568"/>
+  <path d="M188 110 L188 135" stroke="#8D6E63" stroke-width="3" stroke-linecap="round"/>
+  <path d="M188 105 C186 110, 190 110, 188 115 Z" fill="#E2E8F0"/>
+
+  <!-- The Scholar (Character representing deep focus and dedication) -->
+  <!-- Body / Robe -->
+  <path d="M90 185 C90 160, 100 145, 120 145 C140 145, 150 160, 150 185 Z" fill="#2B4C7E"/>
+  
+  <!-- Shoulders & Neck -->
+  <path d="M95 155 C95 140, 145 140, 145 155 Z" fill="#E0A96D"/>
+  <rect x="112" y="135" width="16" height="15" fill="#E0A96D"/>
+
+  <!-- Head tilted downward in intense focus -->
+  <circle cx="120" cy="120" r="18" fill="#E0A96D"/>
+
+  <!-- Hair / Scholar bun -->
+  <path d="M102 115 C102 105, 138 105, 138 115 C138 122, 102 122, 102 115 Z" fill="#2C3E50"/>
+  <circle cx="120" cy="100" r="5" fill="#2C3E50"/>
+
+  <!-- Focused closed eyes (concentrating, looking down at texts) -->
+  <path d="M113 118 C115 120, 117 120, 119 118" stroke="#4A3B32" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M121 118 C123 120, 125 120, 127 118" stroke="#4A3B32" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <!-- Concentrated brow -->
+  <line x1="115" y1="115" x2="125" y2="115" stroke="#C68B59" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Hands resting/studying attentively -->
+  <circle cx="105" cy="150" r="6" fill="#E0A96D"/>
+  <circle cx="135" cy="150" r="6" fill="#E0A96D"/>
+
+  <!-- Golden Focus / Mind Aura (Visualizing "心" - Heart/Mind deeply immersed) -->
+  <path d="M120 70 C135 55, 160 70, 145 90 C135 102, 120 115, 120 115 C120 115, 105 102, 95 90 C80 70, 105 55, 120 70 Z" fill="#F4A261" opacity="0.25"/>
+  <path d="M120 78 C130 68, 145 78, 135 90 C128 98, 120 106, 120 106 C120 106, 112 98, 105 90 C95 78, 110 68, 120 78 Z" fill="#E76F51" opacity="0.4"/>
+
+  <!-- Glowing particles of profound thought and dedication -->
+  <circle cx="95" cy="85" r="2" fill="#E9C46A"/>
+  <circle cx="150" cy="80" r="2.5" fill="#E9C46A"/>
+  <circle cx="135" cy="65" r="1.5" fill="#F4A261"/>
+  <circle cx="105" cy="70" r="2" fill="#F4A261"/>
+</svg>

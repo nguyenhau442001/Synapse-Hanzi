@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Central Shopping Basket/Container -->
+  <path d="M60 80h120l-15 100H75L60 80z" fill="#2D343E" stroke="#FFB84D" stroke-width="3"/>
+  <path d="M60 80h120" stroke="#FFB84D" stroke-width="4"/>
+  
+  <!-- Diverse items representing "Everything" -->
+  <!-- Book -->
+  <rect x="75" y="95" width="20" height="30" fill="#5DADE2" rx="2"/>
+  <!-- Apple -->
+  <circle cx="110" cy="110" r="10" fill="#E74C3C"/>
+  <!-- Tool (Wrench) -->
+  <path d="M140 100l15 15" stroke="#BDC3C7" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="155" cy="115" r="5" fill="#BDC3C7"/>
+  <!-- Clothing (Shirt) -->
+  <path d="M80 140l10-10 10 10v20h-20z" fill="#F1C40F"/>
+  <!-- Toy (Cube) -->
+  <rect x="120" y="140" width="15" height="15" fill="#2ECC71" rx="2"/>
+  <!-- Electronic (Phone) -->
+  <rect x="150" y="135" width="12" height="20" fill="#9B59B6" rx="2"/>
+  
+  <!-- Handle -->
+  <path d="M85 80V60a35 35 0 0 1 70 0v20" fill="none" stroke="#FFB84D" stroke-width="6" stroke-linecap="round"/>
+</svg>

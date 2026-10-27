@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background subtle grid/lines for context -->
+  <line x1="40" y1="200" x2="200" y2="200" stroke="#2A2F3D" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Left Side: Distorted, Chaotic Perception (Not factual / illusion) -->
+  <g opacity="0.35">
+    <!-- Wavy/distorted document representing biased or altered facts -->
+    <path d="M 60 80 Q 75 70, 90 80 T 120 80 L 120 150 Q 105 160, 90 150 T 60 150 Z" fill="#3A4255"/>
+    <!-- Jagged lines -->
+    <line x1="70" y1="100" x2="110" y2="95" stroke="#525B73" stroke-width="3" stroke-linecap="round"/>
+    <line x1="70" y1="120" x2="100" y2="125" stroke="#525B73" stroke-width="3" stroke-linecap="round"/>
+    <!-- Warning/X mark overlay -->
+    <circle cx="90" cy="115" r="30" fill="none" stroke="#FF5C5C" stroke-width="3" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Divider indicating contrast / transition -->
+  <line x1="120" y1="50" x2="120" y2="190" stroke="#2A2F3D" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- Right Side: Clear, Straight, Factual Representation (如实 - Truthful, Accurate) -->
+  <g>
+    <!-- Crisp, perfectly straight document representing objective truth -->
+    <rect x="145" y="65" width="55" height="75" rx="4" fill="#222834" stroke="#F6AD55" stroke-width="2"/>
+    
+    <!-- Clean, organized text lines representing exact facts -->
+    <line x1="155" y1="83" x2="185" y2="83" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+    <line x1="155" y1="99" x2="190" y2="99" stroke="#8892B0" stroke-width="3" stroke-linecap="round"/>
+    <line x1="155" y1="115" x2="175" y2="115" stroke="#8892B0" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Magnifying glass / Inspection element highlighting precision -->
+    <circle cx="175" cy="145" r="32" fill="#1A1D24" stroke="#F6AD55" stroke-width="4"/>
+    <!-- Lens reflection -->
+    <path d="M 157 132 A 22 22 0 0 1 193 132" fill="none" stroke="#64FFDA" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <!-- Magnifier handle -->
+    <line x1="196" y1="166" x2="216" y2="186" stroke="#F6AD55" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Checkmark of absolute accuracy emerging from the lens -->
+    <path d="M 164 145 L 172 153 L 188 135" fill="none" stroke="#64FFDA" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Accent glow / Focus Indicator at the top -->
+  <circle cx="172" cy="40" r="4" fill="#F6AD55"/>
+  <circle cx="172" cy="40" r="10" fill="none" stroke="#F6AD55" stroke-width="1.5" opacity="0.5"/>
+</svg>

@@ -1,0 +1,46 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glowing atmospheric backdrop -->
+  <circle cx="120" cy="120" r="90" fill="#252A34" opacity="0.5"/>
+
+  <!-- Conceptual illustration for "流失" (Soil Erosion / Runoff):
+       Depicting a stylized physical cross-section of land with fertile earth layers 
+       and rich brown soil particles washing away downward. -->
+
+  <!-- Top Terrain Layer (Cliff/Plateau edge representing Loess Plateau context) -->
+  <path d="M45 75 L125 75 C145 75, 160 85, 175 105 L195 145 L195 185 L45 185 Z" fill="#2D231E"/>
+
+  <!-- Fertile Topsoil Layer with a green sprout (representing the environmental aspect) -->
+  <path d="M45 75 L125 75 C145 75, 160 85, 175 105 L160 115 C145 95, 130 90, 115 90 L45 90 Z" fill="#D97736"/>
+  
+  <!-- Tiny Sprout on the remaining cliff -->
+  <path d="M70 75 Q70 60 55 55 Q65 65 70 75 Z" fill="#2ECC71"/>
+  <path d="M70 75 Q70 60 85 55 Q75 65 70 75 Z" fill="#2ECC71"/>
+  <path d="M70 75 L70 90" stroke="#2ECC71" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Eroded Slope Cutaway (Exposed earth strata) -->
+  <path d="M125 75 C145 75, 160 85, 175 105 L195 145 L135 145 L115 105 Z" fill="#A85329"/>
+  <path d="M115 105 L135 145 L75 145 L75 90 Z" fill="#8B421F"/>
+
+  <!-- Flowing water stream (Blue-cyan vector representing water runoff causing the erosion) -->
+  <path d="M135 110 C155 125, 165 140, 160 170 C155 195, 140 205, 130 215" fill="none" stroke="#3498DB" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+  <path d="M145 125 C160 140, 170 155, 165 180" fill="none" stroke="#5DADE2" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- Falling / washing away soil particles (Visualizing physical mass slipping away) -->
+  <!-- Soil clumps / particles drifting downward along the water stream -->
+  <circle cx="150" cy="130" r="5" fill="#A85329"/>
+  <circle cx="168" cy="155" r="7" fill="#8B421F"/>
+  <circle cx="145" cy="175" r="4" fill="#D97736"/>
+  <circle cx="158" cy="195" r="6" fill="#8B421F"/>
+  <rect x="135" y="150" width="8" height="6" rx="2" fill="#A85329" transform="rotate(25 139 153)"/>
+  <rect x="160" y="135" width="10" height="7" rx="2" fill="#D97736" transform="rotate(-15 165 138)"/>
+
+  <!-- Directional flow arrows indicating outward/downward loss -->
+  <path d="M175 125 L190 135 L175 145" fill="none" stroke="#E67E22" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M150 165 L165 175 L150 185" fill="none" stroke="#E67E22" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Clean framing border for the dark theme modern card look -->
+  <rect x="12" y="12" width="216" height="216" rx="16" fill="none" stroke="#323846" stroke-width="2"/>
+</svg>

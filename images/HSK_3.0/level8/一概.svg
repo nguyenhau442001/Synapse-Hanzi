@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "一概" (All, without exception, completely uniform):
+       Visualizing a museum-grade archival display case containing identical rare artifacts,
+       emphasizing absolute strictness and sweeping categorical exclusion/inclusion. -->
+
+  <!-- Display Case Base/Pedestal -->
+  <path d="M60 170 L180 170 L195 195 L45 195 Z" fill="#2D333B"/>
+  <rect x="75" y="162" width="90" height="8" rx="2" fill="#3E4551"/>
+
+  <!-- Glass Dome / Showcase Outline -->
+  <path d="M70 162 L70 95 C70 65, 95 45, 120 45 C145 45, 170 65, 170 95 L170 162 Z" fill="#232830" stroke="#3E4551" stroke-width="2"/>
+  
+  <!-- Glass Reflection Highlights -->
+  <path d="M82 100 L82 145" stroke="#4F5665" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+  <path d="M90 85 L90 120" stroke="#4F5665" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- Uniform Priceless Artifacts (Strictly categorized, exactly identical - "一概") -->
+  <!-- Artifact 1 (Left) -->
+  <g transform="translate(85, 105)">
+    <rect x="0" y="25" width="20" height="30" rx="2" fill="#E5C158"/>
+    <polygon points="10,0 22,25 -2,25" fill="#E5C158"/>
+    <circle cx="10" cy="12" r="3" fill="#1A1D24" opacity="0.3"/>
+  </g>
+
+  <!-- Artifact 2 (Center - Focal Point) -->
+  <g transform="translate(110, 95)">
+    <rect x="0" y="25" width="20" height="30" rx="2" fill="#E5C158"/>
+    <polygon points="10,0 22,25 -2,25" fill="#E5C158"/>
+    <circle cx="10" cy="12" r="3" fill="#1A1D24" opacity="0.3"/>
+    <!-- Subtle glow/aura highlighting strict classification -->
+    <circle cx="10" cy="27" r="24" fill="none" stroke="#F6AD55" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.8"/>
+  </g>
+
+  <!-- Artifact 3 (Right) -->
+  <g transform="translate(135, 105)">
+    <rect x="0" y="25" width="20" height="30" rx="2" fill="#E5C158"/>
+    <polygon points="10,0 22,25 -2,25" fill="#E5C158"/>
+    <circle cx="10" cy="12" r="3" fill="#1A1D24" opacity="0.3"/>
+  </g>
+
+  <!-- Absolute/All-Inclusive Indicator (Clean modern categorical bracket framing the items) -->
+  <path d="M55 70 L48 70 L48 135 L55 135" fill="none" stroke="#F6AD55" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M185 70 L192 70 L192 135 L185 135" fill="none" stroke="#F6AD55" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Restriction / Blanket Rule Indicator (Sleek red slash / barrier accent denoting "一概" absolute prohibition context) -->
+  <circle cx="120" cy="120" r="75" fill="none" stroke="#E53E3E" stroke-width="3" opacity="0.8"/>
+  <line x1="67" y1="67" x2="173" y2="173" stroke="#E53E3E" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+</svg>

@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background atmosphere: subtle sunrise gradient -->
+  <path d="M0 120 C 80 80, 160 80, 240 120 L 240 240 L 0 240 Z" fill="#252A34"/>
+  
+  <!-- The Flagpole -->
+  <rect x="118" y="60" width="4" height="150" rx="2" fill="#4B5563"/>
+  
+  <!-- The Flag in progression (Visual Metaphor of "徐徐" - slow, steady, layered ascent) -->
+  <!-- Layer 1: Lowest position -->
+  <path d="M122 180 L 160 180 L 160 200 L 122 200 Z" fill="#FF4D4D" opacity="0.2"/>
+  <!-- Layer 2: Mid position -->
+  <path d="M122 140 L 160 140 L 160 160 L 122 160 Z" fill="#FF4D4D" opacity="0.5"/>
+  <!-- Layer 3: Highest position (The focus) -->
+  <path d="M122 90 L 170 90 L 170 115 L 122 115 Z" fill="#FFD700"/>
+  
+  <!-- Motion lines indicating slow, steady upward movement -->
+  <path d="M140 130 L 140 120" stroke="#FFD700" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M140 170 L 140 160" stroke="#FFD700" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Sun rising at the horizon -->
+  <circle cx="120" cy="240" r="40" fill="#2D3446"/>
+  <circle cx="120" cy="240" r="20" fill="#FFD700" opacity="0.3"/>
+</svg>

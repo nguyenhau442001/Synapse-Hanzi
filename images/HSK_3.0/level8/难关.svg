@@ -1,0 +1,47 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Deep gorge / chasm representing the "Guān" (cửa ải) -->
+    <path d="M 30,170 L 95,170 L 108,125 L 132,125 L 145,170 L 210,170 L 210,185 L 30,185 Z" fill="#2A2F3D" />
+    <path d="M 30,170 L 95,170 L 108,125 L 132,125 L 145,170 L 210,170" fill="none" stroke="#3E4556" stroke-width="2" stroke-linecap="round" />
+    
+    <!-- Abyss depth -->
+    <path d="M 108,125 L 115,160 L 125,160 L 132,125" fill="#111318" />
+
+    <!-- Sturdy Wooden/Stone Bridge spanning the difficulty (representing overcoming the barrier) -->
+    <!-- Bridge supports / pillars -->
+    <rect x="85" y="125" width="12" height="45" fill="#3E4556" rx="2" />
+    <rect x="143" y="125" width="12" height="45" fill="#3E4556" rx="2" />
+    
+    <!-- Bridge deck -->
+    <path d="M 75,118 L 165,118 L 168,126 L 72,126 Z" fill="#8B5CF6" />
+    <rect x="70" y="114" width="100" height="6" rx="2" fill="#A78BFA" />
+
+    <!-- Glowing focal point / Gate arch over the bridge representing the "difficulty" to conquer -->
+    <path d="M 95,114 L 95,75 Q 120,55 145,75 L 145,114" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" />
+    
+    <!-- Glowing beacon at the apex of the gate symbolizing hope/success -->
+    <circle cx="120" cy="62" r="6" fill="#FBBF24" />
+    <circle cx="120" cy="62" r="10" fill="#F59E0B" opacity="0.3" />
+
+    <!-- Multiple stylized figures cooperating / crossing together (齊心協力) -->
+    <!-- Person 1 (Leader/First) -->
+    <circle cx="102" cy="98" r="6" fill="#60A5FA" />
+    <path d="M 96,106 L 108,106 L 110,118 L 94,118 Z" fill="#3B82F6" />
+
+    <!-- Person 2 (Helping / Supporting) -->
+    <circle cx="138" cy="98" r="6" fill="#34D399" />
+    <path d="M 132,106 L 144,106 L 146,118 L 130,118 Z" fill="#10B981" />
+
+    <!-- Joined hands / connection beam between them over the bridge -->
+    <path d="M 108,102 Q 120,94 132,102" fill="none" stroke="#FBBF24" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Atmospheric background lines representing height and wind/challenge -->
+    <path d="M 45,80 L 65,80" stroke="#3E4556" stroke-width="2" stroke-linecap="round" opacity="0.5" />
+    <path d="M 175,80 L 195,80" stroke="#3E4556" stroke-width="2" stroke-linecap="round" opacity="0.5" />
+    <path d="M 55,95 L 70,95" stroke="#3E4556" stroke-width="2" stroke-linecap="round" opacity="0.5" />
+    <path d="M 170,95 L 185,95" stroke="#3E4556" stroke-width="2" stroke-linecap="round" opacity="0.5" />
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Medical gauze roll -->
+  <g transform="translate(60, 80)">
+    <!-- Roll body -->
+    <ellipse cx="60" cy="60" rx="40" ry="20" fill="#E0E0E0" stroke="#B0B0B0" stroke-width="2"/>
+    <rect x="20" y="40" width="80" height="40" fill="#F5F5F5" stroke="#B0B0B0" stroke-width="2"/>
+    <ellipse cx="60" cy="40" rx="40" ry="20" fill="#F5F5F5" stroke="#B0B0B0" stroke-width="2"/>
+    
+    <!-- Gauze texture lines -->
+    <path d="M25 45 L95 75 M30 55 L100 85 M35 65 L105 95" stroke="#D1D1D1" stroke-width="1" stroke-dasharray="4 4"/>
+    
+    <!-- Unrolled gauze strip -->
+    <path d="M100 60 L140 60 L140 80 L100 80 Z" fill="#F5F5F5" stroke="#B0B0B0" stroke-width="2"/>
+    <path d="M140 60 L140 80" stroke="#B0B0B0" stroke-width="2"/>
+    
+    <!-- Highlight accent -->
+    <ellipse cx="60" cy="40" rx="20" ry="10" fill="#FFB74D" opacity="0.3"/>
+  </g>
+  
+  <!-- Focus accent circle -->
+  <circle cx="120" cy="120" r="100" fill="none" stroke="#FFB74D" stroke-width="2" stroke-dasharray="8 8" opacity="0.2"/>
+</svg>

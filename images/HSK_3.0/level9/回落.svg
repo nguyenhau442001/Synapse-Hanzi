@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Grid / Base line representing the market level -->
+  <line x1="40" y1="180" x2="200" y2="180" stroke="#2A2F3B" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- High peak marker guideline -->
+  <line x1="120" y1="70" x2="120" y2="180" stroke="#2A2F3B" stroke-width="1.5" stroke-dasharray="3 3"/>
+  
+  <!-- Trajectory arc showing the descent (huíluò - falling back down from peak) -->
+  <path d="M 70 140 Q 120 60 170 155" fill="none" stroke="#FF9F43" stroke-width="3" stroke-dasharray="4 4" opacity="0.4"/>
+
+  <!-- Physical Object Group: Fresh Cabbage / Vegetables representing the retail produce context -->
+  <!-- Falling/Descending motion lines -->
+  <g opacity="0.6">
+    <line x1="120" y1="90" x2="120" y2="105" stroke="#4CD137" stroke-width="2" stroke-linecap="round"/>
+    <line x1="100" y1="95" x2="108" y2="107" stroke="#4CD137" stroke-width="2" stroke-linecap="round"/>
+    <line x1="140" y1="95" x2="132" y2="107" stroke="#4CD137" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Downward Arrow Indicator integrated cleanly above the object -->
+  <path d="M 120 70 L 120 95 M 112 87 L 120 95 L 128 87" fill="none" stroke="#FF6B6B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Main Object: Fresh Cabbage (Symbolizing retail produce price dropping back to normal) -->
+  <g transform="translate(0, 15)">
+    <!-- Outer leaves -->
+    <path d="M 120 100 C 95 100 85 125 90 145 C 95 165 110 170 120 170 C 130 170 145 165 150 145 C 155 125 145 100 120 100 Z" fill="#2ED573"/>
+    
+    <!-- Inner leaf segments / folds -->
+    <path d="M 105 115 C 98 125 100 145 110 155" fill="none" stroke="#26af5f" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 135 115 C 142 125 140 145 130 155" fill="none" stroke="#26af5f" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 120 110 C 112 125 115 150 120 162 C 125 150 128 125 120 110 Z" fill="#7BED9F"/>
+    
+    <!-- Base stem -->
+    <path d="M 113 167 C 115 174 125 174 127 167 Z" fill="#ced6e0"/>
+  </g>
+
+  <!-- Ground shadow -->
+  <ellipse cx="120" cy="183" rx="35" ry="6" fill="#111318"/>
+
+  <!-- Stable base indicator icon (check/flat stable line) -->
+  <path d="M 95 200 L 110 212 L 145 195" fill="none" stroke="#4CD137" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

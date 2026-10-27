@@ -1,0 +1,36 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Illustration for "畸形" (deformed/distorted physical object structure, referencing economic imbalance) -->
+  <g transform="translate(40, 35)">
+    <!-- Base / Ground Line -->
+    <line x1="20" y1="150" x2="140" y2="150" stroke="#3A4252" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- The Distorted / Lopsided Structure (Symbolizing an abnormal, top-heavy single-pillar economic model) -->
+    <!-- Over-inflated/Bulging upper structure (representing real estate / single focus) -->
+    <path d="M 50,50 Q 110,40 100,90 Q 95,130 80,150 L 45,150 Q 30,110 50,50 Z" fill="#E5673C" opacity="0.15"/>
+    <path d="M 50,50 Q 110,40 100,90 Q 95,130 80,150 L 45,150 Q 30,110 50,50 Z" fill="none" stroke="#E5673C" stroke-width="2.5" stroke-dasharray="6 4"/>
+
+    <!-- Main Central Distorted Column (Twisted & Leaning) -->
+    <path d="M 60,150 C 75,120 40,90 90,50 L 105,65 C 65,100 95,130 75,150 Z" fill="#E5673C"/>
+
+    <!-- Massive Bulging Top-Heavy Section (Distorted proportions) -->
+    <rect x="35" y="30" width="90" height="35" rx="6" fill="#F08043"/>
+    <rect x="50" y="20" width="60" height="15" rx="4" fill="#E5673C"/>
+
+    <!-- Normal baseline comparison framework (ghosted grid for structural context) -->
+    <rect x="125" y="80" width="20" height="70" rx="2" fill="#2E3646" opacity="0.6"/>
+    <rect x="115" y="65" width="40" height="20" rx="3" fill="#3A4252" opacity="0.6"/>
+
+    <!-- Warning / Structural Stress Indicators (Sharp Accent Markers) -->
+    <!-- Stress crack line -->
+    <path d="M 72,90 L 78,98 L 70,105" fill="none" stroke="#FFD166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Imbalance tilt arrows -->
+    <path d="M 35,45 L 20,45 L 27,35 Z" fill="#FFD166"/>
+    <line x1="20" y1="45" x2="20" y2="120" stroke="#FFD166" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 3"/>
+    
+    <circle cx="20" cy="120" r="3" fill="#FFD166"/>
+  </g>
+</svg>

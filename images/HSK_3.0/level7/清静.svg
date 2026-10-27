@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(12, 12)">
+    <!-- Background courtyard setting -->
+    <!-- Moon gate / archway silhouette representing the quiet place -->
+    <path d="M54 36 C86 36 112 62 112 94 C112 126 86 152 54 152 C22 152 -4 126 -4 94 C-4 62 22 36 54 36 Z" fill="#242B38" />
+    
+    <!-- Outer courtyard walls -->
+    <rect x="136" y="56" width="68" height="96" rx="4" fill="#242B38" opacity="0.6"/>
+    
+    <!-- Central iconic physical object/place: A tranquil Zen courtyard pavilion/lantern scene -->
+    <!-- Stone Lantern (Tōrō) as the focal physical entity representing 清静 (quiet, secluded, serene place) -->
+    <g transform="translate(42, 60)">
+      <!-- Lantern base / platform -->
+      <path d="M12 88 L32 88 L38 96 L6 96 Z" fill="#64748B"/>
+      <!-- Lantern stand/pillar -->
+      <rect x="18" y="66" width="8" height="22" fill="#475569"/>
+      <!-- Lantern mid platform -->
+      <path d="M10 60 L34 60 L38 66 L6 66 Z" fill="#64748B"/>
+      <!-- Lantern firebox (glowing gently) -->
+      <path d="M12 40 L32 40 L34 60 L10 60 Z" fill="#334155"/>
+      <!-- Warm light inside lantern -->
+      <circle cx="22" cy="50" r="7" fill="#F59E0B"/>
+      <path d="M16 45 L28 45 L28 55 L16 55 Z" fill="#FBBF24"/>
+      <!-- Lantern roof -->
+      <path d="M22 24 L40 40 L4 40 Z" fill="#64748B"/>
+      <!-- Roof cap/finial -->
+      <rect x="20" y="20" width="4" height="4" fill="#94A3B8"/>
+    </g>
+
+    <!-- Zen landscape elements: Minimalist bamboo stalks for tranquility -->
+    <g transform="translate(148, 70)" stroke="#38BDF8" stroke-width="3" stroke-linecap="round">
+      <line x1="0" y1="70" x2="0" y2="10"/>
+      <line x1="12" y1="80" x2="12" y2="25"/>
+      <line x1="24" y1="75" x2="24" y2="18"/>
+      <!-- Bamboo nodes -->
+      <circle cx="0" cy="40" r="1.5" fill="#1A1D24"/>
+      <circle cx="12" cy="50" r="1.5" fill="#1A1D24"/>
+      <circle cx="24" cy="45" r="1.5" fill="#1A1D24"/>
+    </g>
+
+    <!-- Gentle pond ripples at the bottom (serenity, stillness) -->
+    <g transform="translate(18, 170)" stroke="#334155" stroke-width="2" stroke-linecap="round" fill="none">
+      <path d="M10 10 C50 4 130 4 170 10"/>
+      <path d="M30 18 C70 12 110 12 150 18" opacity="0.6"/>
+    </g>
+
+    <!-- Floating falling leaf (representing timeless stillness and quiet nature) -->
+    <path d="M120 75 C124 73 130 76 128 80 C126 84 120 84 118 80 Z" fill="#34D399" transform="rotate(-30 120 75)"/>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient glow representing release of pressure -->
+  <circle cx="120" cy="115" r="75" fill="#FF7A00" opacity="0.08"/>
+  <circle cx="120" cy="115" r="50" fill="#FF7A00" opacity="0.12"/>
+
+  <!-- Energy / Pressure Core (representing accumulated stress being released upward) -->
+  <!-- Base container / body symbol representing the human internal state -->
+  <path d="M 95 160 C 95 145 100 135 120 135 C 140 135 145 145 145 160 L 155 185 C 157 190 153 195 147 195 L 93 195 C 87 195 83 190 85 185 Z" fill="#2A313C"/>
+  <path d="M 105 150 C 105 142 110 138 120 138 C 130 138 135 142 135 150 L 135 170 L 105 170 Z" fill="#3A4454"/>
+
+  <!-- Upward Venting Streams (Xuānxiè / Release action) -->
+  <!-- Center main jet -->
+  <path d="M 115 135 L 115 65 C 115 55 118 45 120 40 C 122 45 125 55 125 65 L 125 135 Z" fill="#FF7A00"/>
+  
+  <!-- Dynamic radiating release vectors (curved kinetic flow lines) -->
+  <path d="M 100 130 C 90 115 85 95 75 75" stroke="#FF9F43" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M 140 130 C 150 115 155 95 165 75" stroke="#FF9F43" stroke-width="5" stroke-linecap="round" fill="none"/>
+  
+  <path d="M 108 135 C 102 120 98 100 90 85" stroke="#FFAF59" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M 132 135 C 138 120 142 100 150 85" stroke="#FFAF59" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Burst Particles / Released Energy Nodes -->
+  <circle cx="120" cy="35" r="7" fill="#FFB86C"/>
+  <circle cx="70" cy="68" r="5" fill="#FF9F43"/>
+  <circle cx="170" cy="68" r="5" fill="#FF9F43"/>
+  <circle cx="85" cy="80" r="3.5" fill="#FFC98B"/>
+  <circle cx="155" cy="80" r="3.5" fill="#FFC98B"/>
+  <circle cx="120" cy="55" r="4" fill="#FFE5CC"/>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="120" cy="198" rx="42" ry="5" fill="#111317"/>
+</svg>

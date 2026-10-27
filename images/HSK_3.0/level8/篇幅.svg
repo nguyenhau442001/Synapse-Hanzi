@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow to frame the physical object -->
+  <circle cx="120" cy="120" r="80" fill="#2D333F" opacity="0.4"/>
+
+  <!-- Open book representing text length / "piānfú" (篇幅) -->
+  <g transform="translate(0, 10)">
+    <!-- Book shadow/depth -->
+    <path d="M45,150 C80,145 105,155 120,165 C135,155 160,145 195,150 L195,168 C160,163 135,173 120,183 C105,173 80,163 45,168 Z" fill="#0E1015"/>
+    
+    <!-- Left page background -->
+    <path d="M120,55 C100,55 65,65 45,75 L45,155 C65,145 100,135 120,145 Z" fill="#E2E8F0"/>
+    <!-- Right page background -->
+    <path d="M120,55 C140,55 175,65 195,75 L195,155 C175,145 140,135 120,145 Z" fill="#CBD5E1"/>
+
+    <!-- Center spine curve shadow -->
+    <path d="M115,55 C118,100 118,110 120,145 C122,110 122,100 125,55 Z" fill="#94A3B8" opacity="0.5"/>
+
+    <!-- Left Page Content Lines (representing text length) -->
+    <g fill="#64748B">
+      <rect x="60" y="75" width="45" height="4" rx="2"/>
+      <rect x="60" y="87" width="50" height="4" rx="2"/>
+      <rect x="60" y="99" width="38" height="4" rx="2"/>
+      <rect x="60" y="111" width="48" height="4" rx="2"/>
+      <rect x="60" y="123" width="42" height="4" rx="2"/>
+    </g>
+
+    <!-- Right Page Content Lines -->
+    <g fill="#64748B">
+      <rect x="135" y="75" width="48" height="4" rx="2"/>
+      <rect x="135" y="87" width="40" height="4" rx="2"/>
+      <rect x="135" y="99" width="50" height="4" rx="2"/>
+      <rect x="135" y="111" width="45" height="4" rx="2"/>
+      <rect x="135" y="123" width="35" height="4" rx="2"/>
+    </g>
+
+    <!-- Accent/Focus: A professional editing tool (bracket/ruler indicator) highlighting the text span/length -->
+    <!-- Top bracket -->
+    <path d="M 38,65 L 34,65 L 34,135 L 38,135" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Top tick -->
+    <line x1="34" y1="65" x2="42" y2="65" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+    <!-- Bottom tick -->
+    <line x1="34" y1="135" x2="42" y2="135" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Dimension measurement line with subtle dots -->
+    <circle cx="34" cy="100" r="3" fill="#F59E0B"/>
+  </g>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle grid lines to represent economic/market zones (free trade zone context) -->
+  <line x1="30" y1="180" x2="210" y2="180" stroke="#2A303C" stroke-width="2" stroke-linecap="round"/>
+  <line x1="50" y1="150" x2="190" y2="150" stroke="#2A303C" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="50" y1="120" x2="190" y2="120" stroke="#2A303C" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!-- Conceptual Metaphor: Escalation / Capital Inflow (Cross-border financial injection into local market) -->
+  
+  <!-- Gateway/Portal representing Market Access (市场准入放宽) -->
+  <path d="M70 180 L70 90 L170 90 L170 180" fill="none" stroke="#3A4454" stroke-width="3" stroke-dasharray="6 4"/>
+  <path d="M55 180 L185 180" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Incoming Capital Stream (External funds flowing inward & upward) -->
+  <!-- Arrow 1 (External source) -->
+  <path d="M 45 70 Q 80 70 100 110" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="98,105 107,113 95,115" fill="#F59E0B"/>
+
+  <!-- Arrow 2 (Main capital injection flowing dynamically through the gateway) -->
+  <path d="M 60 50 Q 100 50 120 100" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="118,95 127,103 115,105" fill="#F59E0B"/>
+
+  <!-- Upward Growth / Escalation Metaphor (High-quality enterprise integration & expansion) -->
+  <!-- Stepped platform representing structural economic development -->
+  <rect x="90" y="150" width="60" height="30" fill="#242B38" rx="4"/>
+  <rect x="105" y="125" width="30" height="25" fill="#2E3748" rx="4"/>
+
+  <!-- Dynamic Gold Coins / Investment Units flowing and stacking (Capital / 资本) -->
+  <ellipse cx="120" cy="115" rx="14" ry="6" fill="#D97706"/>
+  <path d="M106 115 v8 c0 3.3 6.3 6 14 6 s14-2.7 14-6 v-8" fill="#F59E0B"/>
+  <ellipse cx="120" cy="115" rx="14" ry="6" fill="#FBBF24"/>
+
+  <ellipse cx="120" cy="100" rx="12" ry="5" fill="#D97706"/>
+  <path d="M108 100 v7 c0 2.8 5.4 5 12 5 s12-2.2 12-5 v-7" fill="#F59E0B"/>
+  <ellipse cx="120" cy="100" rx="12" ry="5" fill="#FBBF24"/>
+
+  <ellipse cx="120" cy="85" rx="10" ry="4" fill="#D97706"/>
+  <path d="M110 85 v6 c0 2.2 4.5 4 10 4 s10-1.8 10-4 v-6" fill="#F59E0B"/>
+  <ellipse cx="120" cy="85" rx="10" ry="4" fill="#FBBF24"/>
+
+  <!-- Pinnacle Spark / High-Quality Success Accent -->
+  <path d="M120 62 L122 68 L128 70 L122 72 L120 78 L118 72 L112 70 L118 68 Z" fill="#FBBF24"/>
+  <path d="M155 85 L156 88 L159 89 L156 90 L155 93 L154 90 L151 89 L154 88 Z" fill="#F59E0B" opacity="0.8"/>
+  <path d="M85 95 L86 97 L88 98 L86 99 L85 101 L84 99 L82 98 L84 97 Z" fill="#F59E0B" opacity="0.8"/>
+
+  <!-- Base structure accent lines -->
+  <circle cx="120" cy="165" r="4" fill="#38BDF8"/>
+  <line x1="100" y1="165" x2="112" y2="165" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+  <line x1="128" y1="165" x2="140" y2="165" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+</svg>

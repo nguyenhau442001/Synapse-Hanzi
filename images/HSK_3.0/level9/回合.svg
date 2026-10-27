@@ -1,0 +1,43 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Boxing Ring Ropes -->
+  <path d="M40 80h160M40 160h160" stroke="#3A404D" stroke-width="4" stroke-linecap="round"/>
+  <path d="M40 80v80M200 80v80" stroke="#3A404D" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Boxer 1 (Left) -->
+  <g transform="translate(70, 100)">
+    <circle cx="20" cy="20" r="15" fill="#FFB347"/>
+    <path d="M20 35v40M5 75l15-20 15 20M20 55l-15 15M20 55l15 15" stroke="#FFB347" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="12" cy="15" r="3" fill="#1A1D24"/>
+    <circle cx="28" cy="15" r="3" fill="#1A1D24"/>
+  </g>
+  
+  <!-- Boxer 2 (Right) -->
+  <g transform="translate(140, 100)">
+    <circle cx="20" cy="20" r="15" fill="#E0E0E0"/>
+    <path d="M20 35v40M5 75l15-20 15 20M20 55l-15 15M20 55l15 15" stroke="#E0E0E0" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="12" cy="15" r="3" fill="#1A1D24"/>
+    <circle cx="28" cy="15" r="3" fill="#1A1D24"/>
+  </g>
+  
+  <!-- Boxing Gloves (Focus) -->
+  <path d="M105 130l20-10" stroke="#FFB347" stroke-width="12" stroke-linecap="round"/>
+  <path d="M135 130l-20-10" stroke="#E0E0E0" stroke-width="12" stroke-linecap="round"/>
+  
+  <!-- Round Indicator (The "12" concept represented by 12 small markers) -->
+  <g transform="translate(120, 210)">
+    <circle cx="0" cy="0" r="2" fill="#FFB347"/>
+    <circle cx="15" cy="0" r="2" fill="#FFB347"/>
+    <circle cx="30" cy="0" r="2" fill="#FFB347"/>
+    <circle cx="45" cy="0" r="2" fill="#FFB347"/>
+    <circle cx="-15" cy="0" r="2" fill="#FFB347"/>
+    <circle cx="-30" cy="0" r="2" fill="#FFB347"/>
+    <circle cx="-45" cy="0" r="2" fill="#FFB347"/>
+    <circle cx="7.5" cy="-13" r="2" fill="#FFB347"/>
+    <circle cx="22.5" cy="-13" r="2" fill="#FFB347"/>
+    <circle cx="-7.5" cy="-13" r="2" fill="#FFB347"/>
+    <circle cx="-22.5" cy="-13" r="2" fill="#FFB347"/>
+    <circle cx="0" cy="-13" r="2" fill="#FFB347"/>
+  </g>
+</svg>

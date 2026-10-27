@@ -1,0 +1,85 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements: subtle chaotic tick marks / jitter lines -->
+  <path d="M50 80 L60 70" stroke="#FF5722" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <path d="M190 90 L175 85" stroke="#FF5722" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+  <path d="M45 160 L60 165" stroke="#FF5722" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+  <path d="M180 150 L195 165" stroke="#FF5722" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Contrast Left: Calm / Grounded anchor (Subtle steady element representing what should be) -->
+  <g transform="translate(45, 140)">
+    <!-- Base / Desk -->
+    <rect x="-20" y="50" width="60" height="6" rx="3" fill="#2C313C"/>
+  </g>
+
+  <!-- Main Subject: Character experiencing "焦躁" (jiāozào - restless, anxious, hot-headed impatience) -->
+  <!-- Head & Body Structure -->
+  <g transform="translate(120, 130)">
+    <!-- Body / Torso leaning forward anxiously -->
+    <path d="M-30 70 C-30 35 -15 25 0 20 C15 25 30 35 30 70 Z" fill="#2E384D"/>
+
+    <!-- Neck -->
+    <rect x="-8" y="10" width="16" height="15" fill="#E0AC9D"/>
+
+    <!-- Head tilted forward in agitation -->
+    <g transform="translate(0, -15) rotate(8)">
+      <!-- Hair -->
+      <path d="M-22 -15 C-25 -35 20 -40 25 -15 C28 5 22 15 15 18 C0 22 -15 18 -22 -15 Z" fill="#3D4451"/>
+      
+      <!-- Face Base -->
+      <circle cx="0" cy="0" r="20" fill="#E0AC9D"/>
+
+      <!-- Facial Expression: Tense, anxious eyes, furrowed brow, slightly open mouth breathing heavily -->
+      <!-- Eyebrows angled sharply down in distress/impatience -->
+      <path d="M-10 -7 L-3 -4" stroke="#2B2D35" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M3 -4 L10 -7" stroke="#2B2D35" stroke-width="2.5" stroke-linecap="round"/>
+
+      <!-- Wide/Anxious Eyes -->
+      <circle cx="-6" cy="-1" r="2.5" fill="#2B2D35"/>
+      <circle cx="6" cy="-1" r="2.5" fill="#2B2D35"/>
+
+      <!-- Sweat drops representing agitation / hot-headedness -->
+      <path d="M18 -10 C18 -5 23 -5 23 -10 C23 -15 18 -10 18 -10 Z" fill="#00BCD4" opacity="0.85"/>
+      <path d="M-20 -5 C-20 0 -15 0 -15 -5 C-15 -10 -20 -5 -20 -5 Z" fill="#00BCD4" opacity="0.85"/>
+
+      <!-- Mouth: Tense, panting -->
+      <ellipse cx="0" cy="9" rx="3.5" ry="2" fill="#2B2D35"/>
+    </g>
+
+    <!-- Hands gripping / scratching head or pulling hair in restlessness -->
+    <!-- Left Hand near ear -->
+    <path d="M-25 -15 C-35 -20 -30 -35 -20 -30" stroke="#E0AC9D" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <circle cx="-20" cy="-30" r="4" fill="#E0AC9D"/>
+
+    <!-- Right Hand near forehead -->
+    <path d="M15 -25 C25 -30 25 -15 18 -10" stroke="#E0AC9D" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <circle cx="18" cy="-10" r="4" fill="#E0AC9D"/>
+  </g>
+
+  <!-- Dynamic floating abstract heat/impatience waves around the head -->
+  <g transform="translate(120, 85)" stroke="#FF5722" stroke-width="2.5" stroke-linecap="round" fill="none">
+    <!-- Left heat wisps -->
+    <path d="M-30 -10 C-35 -5 -35 5 -30 10" opacity="0.7"/>
+    <path d="M-40 -5 C-45 0 -45 10 -40 15" opacity="0.4"/>
+
+    <!-- Right heat wisps -->
+    <path d="M30 -10 C35 -5 35 5 30 10" opacity="0.7"/>
+    <path d="M40 -5 C45 0 45 10 40 15" opacity="0.4"/>
+  </g>
+
+  <!-- Restless tapping / fidget motion lines near the feet/base -->
+  <g transform="translate(120, 205)">
+    <!-- Ticking clock concept abstracted into sharp flashing/pulsing warning symbols (orange/gold accent) -->
+    <circle cx="0" cy="0" r="14" fill="none" stroke="#FFB300" stroke-width="2.5" stroke-dasharray="6 4"/>
+    <!-- Exclamation mark of urgency inside -->
+    <line x1="0" y1="-5" x2="0" y2="2" stroke="#FFB300" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="0" cy="6" r="1.5" fill="#FFB300"/>
+
+    <!-- Motion vibration marks -->
+    <path d="M-22 -5 L-18 -2" stroke="#FF5722" stroke-width="2" stroke-linecap="round"/>
+    <path d="M-24 4 L-19 3" stroke="#FF5722" stroke-width="2" stroke-linecap="round"/>
+    <path d="M22 -5 L18 -2" stroke="#FF5722" stroke-width="2" stroke-linecap="round"/>
+    <path d="M24 4 L19 3" stroke="#FF5722" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

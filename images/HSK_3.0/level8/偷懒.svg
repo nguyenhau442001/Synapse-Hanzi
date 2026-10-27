@@ -1,0 +1,60 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background context: High-tech automated assembly line (faint, sleek) -->
+  <line x1="30" y1="180" x2="210" y2="180" stroke="#2A2F3B" stroke-width="6" stroke-linecap="round"/>
+  <!-- Conveyor belt rollers -->
+  <circle cx="50" cy="180" r="4" fill="#3A4150"/>
+  <circle cx="90" cy="180" r="4" fill="#3A4150"/>
+  <circle cx="130" cy="180" r="4" fill="#3A4150"/>
+  <circle cx="170" cy="180" r="4" fill="#3A4150"/>
+
+  <!-- High-precision automated robotic arm working hard (Diligent side / Contrast scale) -->
+  <!-- Robotic arm base -->
+  <path d="M185 180 L195 140 L215 140 L225 180 Z" fill="#2A2F3B"/>
+  <circle cx="205" cy="140" r="10" fill="#E58E26"/>
+  <!-- Robotic arm segment -->
+  <path d="M205 140 L170 100" stroke="#E58E26" stroke-width="8" stroke-linecap="round"/>
+  <!-- Precise laser/assembly tool -->
+  <path d="M170 100 L150 130" stroke="#4B6584" stroke-width="6" stroke-linecap="round"/>
+  <line x1="150" y1="130" x2="150" y2="165" stroke="#E58E26" stroke-width="2" stroke-dasharray="3,3"/>
+
+  <!-- Precision mechanical part on belt (Glowing neatly) -->
+  <rect x="140" y="165" width="20" height="15" rx="2" fill="#00D2D3"/>
+
+  <!-- Adjective Representation: 偷懒 (Slacking off / Loafing) vs Precision Environment -->
+  <!-- A worker leaning back, slacking off instead of matching the precise automated workflow -->
+  <!-- Office/Control chair -->
+  <path d="M70 180 L70 135" stroke="#3A4150" stroke-width="4" stroke-linecap="round"/>
+  <path d="M55 185 L85 185" stroke="#3A4150" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="70" cy="130" r="8" fill="#3A4150"/>
+
+  <!-- Slacking Worker Body (Leaning back lazily, contrasting posture) -->
+  <!-- Torso & Head leaning back comfortably -->
+  <path d="M70 150 L95 125" stroke="#4B6584" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="102" cy="113" r="10" fill="#FFA502"/>
+  <!-- Closed eyes / sleeping expression line -->
+  <path d="M98 111 L102 113" stroke="#1A1D24" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Relaxed arms behind head (classic resting/loafing pose) -->
+  <path d="M85 135 C 95 120, 110 120, 115 125" fill="none" stroke="#FFA502" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Crossed legs resting on the console -->
+  <path d="M70 150 L50 160 L40 150" fill="none" stroke="#4B6584" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Control desk abandoned -->
+  <path d="M30 150 L75 150 L75 180 L30 180 Z" fill="#222632"/>
+  <!-- Inactive / Idle screen -->
+  <rect x="38" y="125" width="24" height="18" rx="2" fill="#2A2F3B"/>
+  <circle cx="50" cy="134" r="4" fill="#FF5252" opacity="0.8"/>
+
+  <!-- Floating Zzz to explicitly denote loafing/sleeping on the job (Adjective state) -->
+  <text x="115" y="95" font-family="sans-serif" font-weight="bold" font-size="14" fill="#FFA502" opacity="0.9">Z</text>
+  <text x="126" y="82" font-family="sans-serif" font-weight="bold" font-size="11" fill="#FFA502" opacity="0.7">z</text>
+  <text x="133" y="72" font-family="sans-serif" font-weight="bold" font-size="8" fill="#FFA502" opacity="0.5">z</text>
+
+  <!-- Visual contrast indicator: Sharp clean precision vs Idle slack -->
+  <line x1="20" y1="200" x2="220" y2="200" stroke="#2A2F3B" stroke-width="2"/>
+  <circle cx="120" cy="200" r="3" fill="#E58E26"/>
+</svg>

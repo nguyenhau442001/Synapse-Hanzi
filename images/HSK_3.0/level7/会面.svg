@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle Background Elements for Diplomatic/Formal Setting -->
+  <path d="M40 190 L200 190" stroke="#2A2F3A" stroke-width="2" stroke-linecap="round"/>
+  <!-- Abstract conference table -->
+  <path d="M70 170 L170 170 L185 195 L55 195 Z" fill="#242933"/>
+  <path d="M60 170 L180 170" stroke="#3A4252" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Motion lines indicating formal meeting/coming together -->
+  <path d="M95 110 C 105 100, 115 100, 120 115" fill="none" stroke="#F5A623" stroke-width="2" stroke-dasharray="3 3" opacity="0.6"/>
+  <path d="M145 110 C 135 100, 125 100, 120 115" fill="none" stroke="#F5A623" stroke-width="2" stroke-dasharray="3 3" opacity="0.6"/>
+
+  <!-- Character 1 (Left - Formal Diplomat/Delegate) -->
+  <g transform="translate(0, 0)">
+    <!-- Body / Suit -->
+    <path d="M75 170 L75 140 C75 130, 85 125, 95 135 L100 170 Z" fill="#313A4D"/>
+    <path d="M65 170 L85 170 L85 140 L65 140 Z" fill="#2B3342"/>
+    <!-- Tie / Shirt -->
+    <polygon points="87,138 91,138 89,155" fill="#F5A623"/>
+    <path d="M85 132 L89 138 L93 132 Z" fill="#E2E8F0"/>
+    <!-- Head & Hair -->
+    <circle cx="89" cy="115" r="14" fill="#D8B49FE0"/>
+    <path d="M75 112 C75 100, 95 100, 103 112 Z" fill="#242933"/>
+    <!-- Arm in Handshake / Meeting Gesture -->
+    <path d="M85 135 Q 105 125, 112 135" fill="none" stroke="#313A4D" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="114" cy="136" r="4.5" fill="#D8B49F"/>
+  </g>
+
+  <!-- Character 2 (Right - Formal Diplomat/Delegate) -->
+  <g transform="translate(0, 0)">
+    <!-- Body / Suit -->
+    <path d="M165 170 L165 140 C165 130, 155 125, 145 135 L140 170 Z" fill="#3B465C"/>
+    <path d="M175 170 L155 170 L155 140 L175 140 Z" fill="#313A4D"/>
+    <!-- Tie / Shirt -->
+    <polygon points="153,138 157,138 155,155" fill="#4A90E2"/>
+    <path d="M151 132 L155 138 L159 132 Z" fill="#E2E8F0"/>
+    <!-- Head & Hair -->
+    <circle cx="151" cy="115" r="14" fill="#D8B49FE0"/>
+    <path d="M137 112 C137 100, 157 100, 165 112 Z" fill="#475569"/>
+    <!-- Arm in Handshake / Meeting Gesture -->
+    <path d="M155 135 Q 135 125, 126 135" fill="none" stroke="#3B465C" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="124" cy="136" r="4.5" fill="#D8B49F"/>
+  </g>
+
+  <!-- Central Interaction (Handshake / Meeting Focal Point) -->
+  <circle cx="120" cy="136" r="6" fill="#F5A623"/>
+
+  <!-- Focus Accent: Subtle glowing badge/indicator above to signify "Formal Official Meeting" -->
+  <circle cx="120" cy="65" r="22" fill="#242933" stroke="#F5A623" stroke-width="2"/>
+  <!-- Briefcase/Document Icon inside focal badge -->
+  <rect x="110" y="57" width="20" height="14" rx="2" fill="#F5A623"/>
+  <path d="M115 57 V 54 C 115 52.5, 125 52.5, 125 54 V 57" fill="none" stroke="#F5A623" stroke-width="2"/>
+  <line x1="110" y1="62" x2="130" y2="62" stroke="#1A1D24" stroke-width="2"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Cliff edge -->
+  <path d="M40 60 L140 60 L140 180 L40 180 Z" fill="#374151"/>
+  <path d="M140 60 L200 120 L200 180 L140 180 Z" fill="#2D3748"/>
+  
+  <!-- Waterfall stream -->
+  <path d="M145 60 C 145 100, 160 120, 160 180 L185 180 C 185 120, 170 100, 170 60 Z" fill="#60A5FA" opacity="0.9"/>
+  
+  <!-- Water splash at bottom -->
+  <ellipse cx="170" cy="180" rx="30" ry="10" fill="#93C5FD"/>
+  
+  <!-- Vertical measurement indicator (visualizing the height difference) -->
+  <line x1="215" y1="60" x2="215" y2="180" stroke="#F59E0B" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M210 60 L215 55 L220 60" fill="none" stroke="#F59E0B" stroke-width="2"/>
+  <path d="M210 180 L215 185 L220 180" fill="none" stroke="#F59E0B" stroke-width="2"/>
+  
+  <!-- Rocks at base -->
+  <circle cx="140" cy="180" r="8" fill="#4B5563"/>
+  <circle cx="200" cy="180" r="12" fill="#4B5563"/>
+</svg>

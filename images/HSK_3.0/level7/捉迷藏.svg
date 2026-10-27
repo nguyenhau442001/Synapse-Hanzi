@@ -1,0 +1,59 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative Contextual Background: Courtyard & Foliage -->
+  <!-- Traditional Chinese window/wall silhouette elements -->
+  <path d="M40 200 H200 V210 H40 Z" fill="#242933"/>
+  <path d="M50 80 H80 V200 H50 Z" fill="#20252E" opacity="0.6"/>
+
+  <!-- Lush Foliage representing '枝繁叶茂的古老院落' -->
+  <path d="M20 90 C10 60, 40 40, 70 50 C90 30, 130 30, 140 60 C170 50, 200 70, 190 100 C220 120, 210 160, 180 170 C160 170, 150 160, 140 160 C130 160, 110 170, 90 160 C60 170, 30 140, 20 90 Z" fill="#22302A" opacity="0.8"/>
+  <!-- Leaf clusters -->
+  <circle cx="50" cy="65" r="22" fill="#2E453A"/>
+  <circle cx="85" cy="45" r="26" fill="#365445"/>
+  <circle cx="125" cy="50" r="28" fill="#2E453A"/>
+  <circle cx="165" cy="70" r="24" fill="#365445"/>
+  <circle cx="185" cy="110" r="20" fill="#263A31"/>
+  <circle cx="35" cy="110" r="22" fill="#2B3E34"/>
+
+  <!-- Tree Trunk -->
+  <path d="M120 70 L115 200 H135 L130 70 Z" fill="#3D322C"/>
+
+  <!-- MAIN SUBJECT: Hide and Seek (捉迷藏) -->
+  <!-- Child 1: The Seeker (Peeking behind a pillar/tree, hands over eyes or looking out playfully) -->
+  <g transform="translate(110, 120)">
+    <!-- Body -->
+    <path d="M-12 30 C-12 15, -5 10, 0 10 C5 10, 12 15, 12 30 V80 H-12 Z" fill="#E65C00"/>
+    <!-- Head -->
+    <circle cx="0" cy="-2" r="14" fill="#FFD1A9"/>
+    <!-- Hair -->
+    <path d="M-14 -5 C-15 -15, -5 -18, 0 -18 C8 -18, 14 -12, 14 -2 C10 -6, 5 -8, 0 -8 C-6 -8, -10 -6, -14 -5 Z" fill="#3E2723"/>
+    <!-- Hands covering eyes (Peek-a-boo gesture) -->
+    <circle cx="-4" cy="-2" r="4" fill="#FFD1A9"/>
+    <circle cx="4" cy="-2" r="4" fill="#FFD1A9"/>
+    <!-- Legs -->
+    <rect x="-9" y="80" width="6" height="25" fill="#334155"/>
+    <rect x="3" y="80" width="6" height="25" fill="#334155"/>
+  </g>
+
+  <!-- Child 2: The Hider ( Crouched playfully behind a large garden rock/pot ) -->
+  <!-- Garden Rock / Structure -->
+  <path d="M20 180 C20 140, 50 130, 70 140 C90 150, 100 180, 100 210 H20 Z" fill="#333B4D"/>
+  
+  <g transform="translate(55, 135)">
+    <!-- Crouched Body -->
+    <ellipse cx="0" cy="20" rx="14" ry="12" fill="#3B82F6"/>
+    <!-- Head peeking out -->
+    <circle cx="12" cy="0" r="12" fill="#FFD1A9"/>
+    <!-- Hair -->
+    <path d="M2 -3 C2 -10, 8 -12, 14 -12 C20 -12, 22 -6, 22 2 C18 0, 14 -2, 10 -2 Z" fill="#1E293B"/>
+    <!-- Curious Eye / Expression indicator (subtle curved line) -->
+    <path d="M16 0 Q18 -2 20 0" stroke="#1E293B" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Focus Accent Elements (Warm golden light filtering through leaves) -->
+  <circle cx="95" cy="95" r="3" fill="#FBBF24" opacity="0.6"/>
+  <circle cx="155" cy="115" r="2" fill="#FBBF24" opacity="0.8"/>
+  <circle cx="75" cy="85" r="1.5" fill="#FBBF24" opacity="0.5"/>
+</svg>

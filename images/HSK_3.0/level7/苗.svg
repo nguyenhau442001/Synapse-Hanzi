@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Soil patch -->
+  <path d="M60 180 C 60 170, 180 170, 180 180 L 180 195 C 180 205, 60 205, 60 195 Z" fill="#3D4451"/>
+  
+  <!-- Wheat sprout (苗) -->
+  <g fill="#FFB84D">
+    <!-- Main stem -->
+    <path d="M120 185 L 120 110" stroke="#FFB84D" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Left leaf -->
+    <path d="M120 160 C 100 150, 90 130, 100 110 C 110 125, 115 140, 120 150 Z"/>
+    
+    <!-- Right leaf -->
+    <path d="M120 140 C 140 130, 150 110, 140 90 C 130 105, 125 120, 120 130 Z"/>
+    
+    <!-- Top sprout tip -->
+    <ellipse cx="120" cy="105" rx="4" ry="8" transform="rotate(-15 120 105)"/>
+  </g>
+  
+  <!-- Decorative soil texture -->
+  <path d="M70 185 L 90 185 M110 190 L 130 190 M150 185 L 170 185" stroke="#5D677A" stroke-width="2" stroke-linecap="round"/>
+</svg>

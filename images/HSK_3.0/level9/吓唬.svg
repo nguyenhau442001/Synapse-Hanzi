@@ -1,0 +1,62 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(12, 12)">
+    <!-- Background subtle shadow/glow for depth -->
+    <circle cx="108" cy="108" r="80" fill="#252A34" opacity="0.6"/>
+
+    <!-- The Monster/Phantom (representing the fake scary story / hù dọa) -->
+    <!-- Floating spooky shape with horns and glowing eyes -->
+    <g transform="translate(110, 65)">
+      <!-- Phantom body -->
+      <path d="M -30,-20 C -30,-45 30,-45 30,-20 C 30,0 20,25 35,45 C 20,40 10,48 0,45 C -10,48 -20,40 -35,45 C -20,25 -30,0 -30,-20 Z" fill="#7C3AED"/>
+      
+      <!-- Horns -->
+      <path d="M -18,-35 L -28,-50 L -10,-40 Z" fill="#9D4EDD"/>
+      <path d="M 18,-35 L 28,-50 L 10,-40 Z" fill="#9D4EDD"/>
+      
+      <!-- Scary glowing eyes -->
+      <circle cx="-10" cy="-20" r="5" fill="#FBBF24"/>
+      <circle cx="10" cy="-20" r="5" fill="#FBBF24"/>
+      <circle cx="-10" cy="-20" r="2" fill="#1A1D24"/>
+      <circle cx="10" cy="-20" r="2" fill="#1A1D24"/>
+      
+      <!-- Spooky jagged mouth -->
+      <path d="M -12,-5 L -6,-1 L 0,-8 L 6,-1 L 12,-5" fill="none" stroke="#FBBF24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- Shadow/Projection lines (representing storytelling/projection) -->
+      <path d="M -45,55 L -75,70" stroke="#7C3AED" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+      <path d="M 45,55 L 75,70" stroke="#7C3AED" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+    </g>
+
+    <!-- The Child (frightened, reacting) -->
+    <g transform="translate(65, 130)">
+      <!-- Child Body / Hoodie -->
+      <path d="M -20,60 C -20,35 -5,30 -5,30 L 5,30 C 5,30 20,35 20,60 L 25,75 C 25,75 -25,75 -20,60 Z" fill="#3B82F6"/>
+      
+      <!-- Child Head -->
+      <circle cx="0" cy="10" r="18" fill="#FCD34D"/>
+      
+      <!-- Hair -->
+      <path d="M -16,5 C -15,-5 -5,-8 0,-8 C 5,-8 15,-5 16,5 C 10,2 0,1 -16,5 Z" fill="#1F2937"/>
+
+      <!-- Surprised/Scared Face -->
+      <circle cx="-6" cy="7" r="2" fill="#1F2937"/>
+      <circle cx="6" cy="7" r="2" fill="#1F2937"/>
+      <!-- Open O-mouth of shock -->
+      <ellipse cx="0" cy="16" rx="3.5" ry="5" fill="#1F2937"/>
+
+      <!-- Arms raised in defense/fear -->
+      <path d="M -15,35 C -25,25 -30,15 -25,10" fill="none" stroke="#FCD34D" stroke-width="5" stroke-linecap="round"/>
+      <path d="M 15,35 C 25,25 30,15 25,10" fill="none" stroke="#FCD34D" stroke-width="5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Action lines / Startled effect -->
+    <path d="M 30,110 L 40,115" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 175,110 L 165,115" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 35,90 L 45,98" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Ground Line -->
+    <line x1="20" y1="205" x2="196" y2="205" stroke="#374151" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

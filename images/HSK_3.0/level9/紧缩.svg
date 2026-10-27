@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 120)">
+    <!-- Outer compression frame -->
+    <rect x="-65" y="-65" width="130" height="130" rx="16" fill="none" stroke="#2D333F" stroke-width="4" stroke-dasharray="8 4"/>
+    
+    <!-- Heavy-duty mechanical vise/clamp representing physical tightening (紧缩) -->
+    <!-- Base / Anvil -->
+    <path d="M-50 45 L50 45 L40 65 L-40 65 Z" fill="#4B5563"/>
+    <rect x="-30" y="35" width="60" height="10" fill="#6B7280" rx="2"/>
+    
+    <!-- Fixed Jaw (Left) -->
+    <path d="M-40 -35 L-20 -35 L-20 35 L-40 35 Z" fill="#9CA3AF"/>
+    <rect x="-44" y="-40" width="8" height="80" rx="2" fill="#E5E7EB"/>
+
+    <!-- Moving Jaw (Right) pushing inward -->
+    <path d="M20 -35 L40 -35 L40 35 L20 35 Z" fill="#9CA3AF"/>
+    <rect x="36" y="-40" width="8" height="80" rx="2" fill="#E5E7EB"/>
+
+    <!-- Threaded Lead Screw -->
+    <rect x="-55" y="-5" width="95" height="10" fill="#D1D5DB"/>
+    
+    <!-- Turn Handle (Left Side) -->
+    <circle cx="-55" cy="0" r="12" fill="#F59E0B"/>
+    <path d="M-67 -12 L-43 12" stroke="#B45309" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Object being squeezed (Central Core in bright accent color, under high pressure) -->
+    <g>
+      <!-- Squished bulbous/spring element -->
+      <path d="M-15 -25 C 5 -35, 5 -15, 15 -25 C 20 -10, 10 0, 15 15 C 5 25, 5 10, -15 15 C -20 0, -10 -10, -15 -25 Z" fill="#F97316"/>
+      <!-- Inner core glow -->
+      <circle cx="0" cy="-5" r="6" fill="#FEF3C7"/>
+    </g>
+
+    <!-- Compression / Inward Directional Force Arrows -->
+    <g fill="#F59E0B">
+      <!-- Left Arrow pointing right -->
+      <path d="M-60 -35 L-48 -43 L-48 -27 Z"/>
+      <!-- Right Arrow pointing left -->
+      <path d="M60 35 L48 43 L48 27 Z"/>
+    </g>
+
+    <!-- Tension / Stress Indicator Marks -->
+    <path d="M-28 -48 L-22 -58" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M28 48 L22 58" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>
