@@ -811,7 +811,7 @@ export function App() {
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap', justifyContent: 'center' }}>
           <span>Synapse Hanzi · Trạm học chữ Hán đa giác quan</span>
           <span>·</span>
-          <span className="footer-version" title="Phiên bản ứng dụng">v2.0.0</span>
+          <span className="footer-version" title="Phiên bản ứng dụng">v2.0.1</span>
           <span>·</span>
           <a
             href="./legacy.html"
