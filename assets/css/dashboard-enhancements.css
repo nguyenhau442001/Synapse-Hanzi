@@ -1015,9 +1015,9 @@ body.home-screen .featured-topics {
     gap: 20px;
     min-width: 0;
   }
-  body.home-screen .app-header { margin: 0 0 4px; }
-  body.home-screen .app-header h1 { font-size: 22px; font-weight: 700; line-height: 1.2; }
-  body.home-screen .app-header p { margin-top: 4px; font-size: 13px; color: var(--text-secondary); }
+  body.home-screen .app-header { margin: 0 0 6px; }
+  body.home-screen .app-header h1 { font-size: 19px; font-weight: 800; line-height: 1.2; letter-spacing: -0.02em; }
+  body.home-screen .app-header p { margin-top: 2px; font-size: 11.5px; color: var(--text-tertiary); font-weight: 500; }
 
   /* ==========================================================================
      Top Section Layout: Daily Learning Goals (Balanced Hero Card)

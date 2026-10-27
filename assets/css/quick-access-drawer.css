@@ -10,9 +10,9 @@
    1. Header Quick Search Pill
    -------------------------------------------------------------------------- */
 .header-search-wrap {
-  flex: 1 1 auto;
-  max-width: 480px;
-  min-width: 220px;
+  flex: 0 1 360px;
+  max-width: 360px;
+  min-width: 180px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -23,17 +23,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 10px;
   width: 100%;
-  max-width: 480px;
-  height: 42px;
-  padding: 0 16px;
+  max-width: 360px;
+  height: 38px;
+  padding: 0 14px;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: var(--surface-subtle);
   color: var(--text-secondary);
   font: inherit;
-  font-size: 13.5px;
+  font-size: 13px;
   cursor: pointer;
   transition: all 180ms cubic-bezier(0.16, 1, 0.3, 1);
   box-sizing: border-box;
@@ -43,7 +43,7 @@
   border-color: var(--brand-primary);
   background: var(--card-bg);
   color: var(--text-primary);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
   transform: translateY(-1px);
 }
 
@@ -74,6 +74,7 @@
   text-overflow: ellipsis;
   color: var(--text-muted);
   font-weight: 500;
+  font-size: 12.5px;
 }
 
 .header-quick-search-btn:hover .hqs-placeholder {
@@ -84,34 +85,86 @@
   display: inline-flex;
   align-items: center;
   gap: 2px;
-  padding: 2px 7px;
-  font-size: 11px;
+  padding: 1.5px 6px;
+  font-size: 10.5px;
   font-weight: 700;
   font-family: inherit;
   color: var(--text-muted);
   background: var(--card-bg);
   border: 1px solid var(--border);
-  border-radius: 6px;
+  border-radius: 5px;
   line-height: 1.2;
   flex-shrink: 0;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 /* --------------------------------------------------------------------------
-   2. Header Action Badges (Saved Words 🔖, Urgent Reviews ⚡)
+   2. Header Clusters & Divided Groupings
    -------------------------------------------------------------------------- */
+.header-cluster {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.header-divider {
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  background: var(--border);
+  flex-shrink: 0;
+  margin: 0 2px;
+}
+
+/* Cluster 1: Streak Badge */
+.header-streak-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  height: 34px;
+  padding: 0 11px;
+  border: 1px solid rgba(249, 115, 22, 0.25);
+  border-radius: 999px;
+  background: rgba(249, 115, 22, 0.08);
+  color: var(--text-primary);
+  font: inherit;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+  transition: all 160ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.header-streak-badge:hover {
+  background: rgba(249, 115, 22, 0.14);
+  border-color: rgba(249, 115, 22, 0.45);
+  transform: translateY(-1px);
+}
+
+:root[data-theme="dark"] .header-streak-badge {
+  background: rgba(249, 115, 22, 0.12);
+  border-color: rgba(249, 115, 22, 0.3);
+}
+
+.header-streak-icon {
+  font-size: 13.5px;
+  line-height: 1;
+}
+
+/* Cluster 2: Header Action Badges (Saved Words 🔖, Urgent Reviews ⚡) */
 .header-action-badge {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  height: 38px;
-  padding: 0 12px;
+  height: 34px;
+  padding: 0 8px 0 10px;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: var(--surface-subtle);
   color: var(--text-primary);
   font: inherit;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 650;
   cursor: pointer;
   transition: all 160ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -123,7 +176,7 @@
   transform: translateY(-1px);
   background: var(--card-bg);
   border-color: var(--border-strong);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .header-action-badge:active {
@@ -142,7 +195,7 @@
 }
 
 .header-badge-icon {
-  font-size: 14px;
+  font-size: 13.5px;
   line-height: 1;
 }
 
@@ -152,7 +205,7 @@
   justify-content: center;
   min-width: 18px;
   height: 18px;
-  padding: 0 6px;
+  padding: 0 5px;
   border-radius: 999px;
   font-size: 11px;
   font-weight: 800;
@@ -177,36 +230,48 @@
   border-color: rgba(251, 191, 36, 0.4);
 }
 
-.header-profile-btn {
+/* Cluster 3: Minimal Ghost Utility Buttons */
+.header-utility-cluster .header-help-btn,
+.header-utility-cluster .theme-toggle-btn,
+.header-utility-cluster .header-profile-btn,
+.header-utility-cluster .header-search-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
+  width: 34px;
+  height: 34px;
   padding: 0;
   border-radius: 999px;
-  border: 1px solid var(--border);
-  background: var(--surface-subtle);
+  border: 1px solid transparent;
+  background: transparent;
   color: var(--text-secondary);
   font-size: 15px;
   cursor: pointer;
-  transition: all 160ms cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 140ms ease;
   user-select: none;
 }
 
-.header-profile-btn:hover {
-  background: var(--card-bg);
-  border-color: var(--brand-primary);
-  color: var(--brand-primary);
+.header-utility-cluster .header-help-btn:hover,
+.header-utility-cluster .theme-toggle-btn:hover,
+.header-utility-cluster .header-profile-btn:hover,
+.header-utility-cluster .header-search-btn:hover {
+  background: var(--surface-subtle);
+  border-color: var(--border);
+  color: var(--text-primary);
   transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.header-profile-btn:active {
+.header-utility-cluster .header-help-btn:active,
+.header-utility-cluster .theme-toggle-btn:active,
+.header-utility-cluster .header-profile-btn:active,
+.header-utility-cluster .header-search-btn:active {
   transform: translateY(0);
 }
 
-.header-profile-btn:focus-visible {
+.header-utility-cluster .header-help-btn:focus-visible,
+.header-utility-cluster .theme-toggle-btn:focus-visible,
+.header-utility-cluster .header-profile-btn:focus-visible,
+.header-utility-cluster .header-search-btn:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
@@ -943,6 +1008,14 @@
    5. Responsive Breakpoints
    -------------------------------------------------------------------------- */
 @media (max-width: 767px) {
+  .header-divider {
+    display: none;
+  }
+
+  .header-cluster {
+    gap: 4px;
+  }
+
   .header-search-wrap {
     order: 3;
     width: 100%;
