@@ -1,27 +1,1376 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <meta name="theme-color" content="#c05624">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="Synapse Hanzi">
-  <meta name="description" content="Trạm học từ vựng chữ Hán đa giác quan, hiện đại, tối giản và 100% Offline (PWA)">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Synapse Hanzi · Trạm học từ vựng chữ Hán thông minh</title>
+<link rel="manifest" href="config/pwa-manifest.json">
+<link rel="icon" href="assets/images/favicon.png"> <!-- favicon: tab/bookmark, simplified for small size -->
+<link rel="apple-touch-icon" href="assets/images/icon-512.png"> <!-- iOS home screen shortcut icon -->
+<meta name="theme-color" content="#c2654a">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Synapse Hanzi">
+<link rel="stylesheet" href="assets/flashcards.css?v=20261017-fix-example-box1">
+<link rel="stylesheet" href="assets/css/fast-review-picker.css?v=20261006-ui-refinement1">
+<link rel="stylesheet" href="assets/css/workstation.css?v=20261017-fix-example-box1">
+<link rel="stylesheet" href="assets/css/sidebar-lab.css?v=20261015-viewport-fix-v7">
+<link rel="stylesheet" href="assets/css/home-widgets.css?v=20261015-dashboard-redesign">
+<link rel="stylesheet" href="assets/css/dashboard-enhancements.css?v=20261017-mobile-clean1">
+<link rel="stylesheet" href="assets/css/reading-analysis.css?v=20261015-mobile-ui-opt">
+<link rel="stylesheet" href="assets/css/graded-reading.css?v=20261010-single-line-read1">
+<link rel="stylesheet" href="assets/css/listening-practice.css?v=1.3.3">
+<link rel="stylesheet" href="assets/css/study-help-modal.css?v=20261016-help-redesign1">
+<script>(function(){try{var p=new URLSearchParams(window.location.search).get('theme');if(p==='dark'||p==='light'){document.documentElement.dataset.theme=p;return;}}catch(e){}var h=new Date().getHours();var d=(h>=6&&h<18)?'light':'dark';var m=localStorage.getItem('hsk_theme_manual');var e=parseInt(localStorage.getItem('hsk_theme_manual_expiry')||'0',10);document.documentElement.dataset.theme=(m&&Date.now()<e)?m:d;if(localStorage.getItem('hsk_show_hanviet')==='false'){document.documentElement.classList.add('hide-hanviet');}})();</script>
+<script>
+if ('serviceWorker' in navigator) {
+  function showUpdateNotification() {
+    if (document.getElementById('pwaUpdateBanner')) return;
+    var banner = document.createElement('div');
+    banner.id = 'pwaUpdateBanner';
+    banner.setAttribute('role', 'status');
+    banner.setAttribute('aria-live', 'polite');
+    banner.style.cssText = 'position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:99999;background:var(--card-bg, #1e293b);color:var(--text-primary, #fff);padding:10px 18px;border-radius:12px;border:1px solid var(--accent, #c05638);box-shadow:0 6px 24px rgba(0,0,0,0.28);display:flex;align-items:center;gap:12px;font-size:13px;font-weight:600;max-width:90vw;animation:welcomeToastIn 0.25s ease;';
+    banner.innerHTML = '<span>🚀 Có phiên bản Synapse Hanzi mới!</span>' +
+      '<button type="button" id="pwaReloadBtn" style="background:var(--accent, #c05638);color:#fff;border:none;padding:5px 12px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;">Tải lại ngay</button>' +
+      '<button type="button" id="pwaDismissBtn" aria-label="Đóng" style="background:none;border:none;color:var(--text-secondary, #94a3b8);font-size:16px;cursor:pointer;padding:0 4px;">✕</button>';
+    document.body.appendChild(banner);
+    document.getElementById('pwaReloadBtn').onclick = function() {
+      window.location.reload();
+    };
+    document.getElementById('pwaDismissBtn').onclick = function() {
+      banner.remove();
+    };
+  }
 
-  <title>Synapse Hanzi — Trạm học chữ Hán đa giác quan</title>
-
-  <link rel="icon" type="image/png" href="./assets/images/favicon.png">
-  <link rel="apple-touch-icon" href="./assets/images/icon-512.png">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Serif+SC:wght@600;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-
-  <script type="module" crossorigin src="./assets/js/app-bundle.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/css/app-bundle.css">
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('sw.js').then(function(reg) {
+      if (reg.waiting) {
+        showUpdateNotification();
+      }
+      reg.addEventListener('updatefound', function() {
+        var newWorker = reg.installing;
+        if (newWorker) {
+          newWorker.addEventListener('statechange', function() {
+            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+              showUpdateNotification();
+            }
+          });
+        }
+      });
+      reg.update();
+    });
+  });
+  var refreshing = false;
+  navigator.serviceWorker.addEventListener('controllerchange', function() {
+    if (!refreshing) {
+      refreshing = true;
+      window.location.reload();
+    }
+  });
+}
+</script>
 </head>
 <body>
-  <div id="app"></div>
+<script>(function(){
+  var mq = window.matchMedia('(min-width: 1280px)');
+  function applyLayoutMode(e){
+    document.body.classList.toggle('is-desktop-dock', e.matches);
+    document.body.classList.toggle('is-mobile-drawer', !e.matches);
+  }
+  applyLayoutMode(mq);
+  mq.addEventListener('change', applyLayoutMode);
+})();</script>
+<div class="app">
+  <div class="workstation">
+    <aside class="workstation-left" id="workstationLeft" aria-label="Tra cứu nhanh"></aside>
+    <dialog id="mobileDockDialog" class="mobile-dock-dialog">
+      <div class="mobile-dock-sheet-handle" aria-hidden="true"></div>
+      <div class="mobile-dock-sheet-header">
+        <div class="mobile-dock-sheet-title">
+          <span class="mobile-dock-sheet-icon" aria-hidden="true">⭐</span>
+          <span>Tra cứu &amp; Sổ từ</span>
+        </div>
+        <button type="button" id="mobileDockClose" class="mobile-dock-close" aria-label="Đóng">✕</button>
+      </div>
+      <div id="mobileDockDialogBody"></div>
+    </dialog>
+    <dialog id="mobileStatsDialog" class="mobile-dock-dialog" aria-labelledby="mobileStatsSheetTitle">
+      <div class="mobile-dock-sheet-handle" aria-hidden="true"></div>
+      <div class="mobile-dock-sheet-header">
+        <div class="mobile-dock-sheet-title" id="mobileStatsSheetTitle">
+          <span class="mobile-dock-sheet-icon" aria-hidden="true">📊</span>
+          <span>Thống kê &amp; Hoạt động học tập</span>
+        </div>
+        <button type="button" id="mobileStatsClose" class="mobile-dock-close" aria-label="Đóng" onclick="closeMobileStatsSheet()">✕</button>
+      </div>
+      <div id="mobileStatsDialogBody" class="mobile-stats-dialog-body"></div>
+    </dialog>
+    <div class="workstation-middle" id="workstationMiddle">
+  <div class="app-header">
+    <div class="app-header-actions">
+      <button type="button" id="headerStreakBadge" class="header-streak-badge" onclick="showHistoryModal()" aria-label="Xem lịch sử học tập" title="Lịch sử học tập">
+        <span class="header-streak-icon" aria-hidden="true">🔥</span>
+        <span class="header-streak-text" id="headerStreakText">0 ngày</span>
+      </button>
+      <button type="button" id="headerSearchBtn" class="header-search-btn" aria-label="Tìm từ vựng" aria-haspopup="dialog">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </button>
+      <button type="button" id="headerHelpBtn" class="header-help-btn" onclick="openStudyHelpModal()" title="Hướng dẫn &amp; Trợ giúp học tập (?)" aria-label="Hướng dẫn học tập và phím tắt">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+      </button>
+      <button id="themeToggle" class="theme-toggle-btn" onclick="toggleTheme()" title="Đổi giao diện Sáng / Tối" aria-label="Đổi giao diện Sáng / Tối">🌙</button>
+    </div>
+    <h1 id="appTitle">Synapse Hanzi</h1>
+    <p id="appSubtitle">Trạm học chữ Hán đa chiều · Minh họa ngữ cảnh · Lặp lại ngắt quãng</p>
+  </div>
+
+  <section class="learning-dashboard" id="learningDashboard" aria-labelledby="learningDashboardTitle">
+    <div class="learning-dashboard-header">
+      <div>
+        <div class="learning-dashboard-eyebrow">🎯 MỤC TIÊU HỌC TẬP</div>
+        <div class="learning-title-row">
+          <h2 id="learningDashboardTitle">Mỗi ngày một chút, nhớ lâu hơn</h2>
+          <button class="goal-settings-btn" type="button" aria-label="Sửa mục tiêu học mỗi ngày" title="Sửa mục tiêu" onclick="focusDailyGoalSelector()">⚙️</button>
+        </div>
+      </div>
+      <div class="learning-dashboard-header-right">
+        <button class="history-trigger" type="button" onclick="showHistoryModal()">Lịch sử học tập <span aria-hidden="true">↗</span></button>
+      </div>
+    </div>
+
+    <div class="daily-goal">
+      <div class="daily-goal-count" aria-label="Tiến độ mục tiêu hôm nay">
+        <strong id="dailyStudyCount">0</strong>
+        <label class="daily-goal-selector">
+          <span class="daily-goal-sep" aria-hidden="true">/</span>
+          <span class="sr-only">Chọn mục tiêu học mỗi ngày</span>
+          <select id="dailyGoalSelect" aria-label="Mục tiêu số từ học mỗi ngày"
+            onchange="updateDailyStudyGoal(this.value)">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+          </select>
+          <span class="daily-goal-unit">từ</span>
+        </label>
+      </div>
+      <div class="daily-goal-progress">
+        <div class="daily-goal-track" role="progressbar" aria-label="Mục tiêu học hôm nay"
+          aria-valuemin="0" aria-valuemax="10" aria-valuenow="0">
+          <div class="daily-goal-fill" id="dailyGoalFill"></div>
+        </div>
+        <div class="daily-goal-message" id="dailyGoalMessage">Học 10 từ để hoàn thành mục tiêu hôm nay.</div>
+      </div>
+      <div class="daily-goal-actions">
+        <button class="quick-study-btn" id="quickStudyButton" type="button" onclick="quickStartLearning()">
+          Bắt đầu HSK1 <span aria-hidden="true">→</span>
+        </button>
+        <button class="quick-study-btn quick-study-btn--secondary" id="todayReviewButton" type="button" onclick="openTodayReviews()" hidden>
+          📅 Ôn hôm nay <span class="due-count-badge" id="todayDueCount">0</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="learning-totals" aria-label="Tổng quan tiến trình học">
+      <span><strong id="totalKnownCount">0</strong> từ đã nhớ</span>
+      <span class="learning-total-divider" aria-hidden="true"></span>
+      <span><strong id="totalStudiedCount">0</strong> từ đã học</span>
+    </div>
+  </section>
+
+  <section class="continue-learning-card" id="continueLearningCard" aria-labelledby="continueLearningTitle">
+    <div class="continue-learning-copy">
+      <h2 id="continueLearningTitle">Bắt đầu HSK 1</h2>
+      <p id="continueLearningProgress">150 từ nền tảng · Flashcard thông minh</p>
+    </div>
+    <button class="dashboard-primary-btn" type="button" onclick="quickStartLearning()">Học ngay <span aria-hidden="true">→</span></button>
+  </section>
+
+  <nav class="primary-tabs" id="primaryTabs" aria-label="Chế độ học">
+    <div class="primary-tabs-group" role="tablist" aria-label="Chế độ học chính">
+      <button id="primaryTabVocab" class="primary-tab active" type="button" role="tab" aria-pressed="true"
+        aria-controls="screenVocabHub" onclick="setPrimaryTab('vocab')">
+        <svg class="nav-tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
+        <span>Từ vựng</span>
+      </button>
+      <button id="primaryTabReview" class="primary-tab" type="button" role="tab" aria-pressed="false"
+        aria-controls="screenReviewPicker" onclick="setPrimaryTab('review')">
+        <svg class="nav-tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        <span>Ôn nhanh</span>
+      </button>
+    </div>
+    <div class="primary-toolbar-cluster" id="primaryToolbarCluster">
+      <label class="picker-version-control" id="pickerVersionControls" for="pickerVersionSelect">
+        <span class="picker-version-label">Chuẩn HSK</span>
+        <div class="picker-version-select-wrap">
+          <select id="pickerVersionSelect" aria-label="Chuẩn HSK" onchange="setPickerVersion(this.value)">
+            <option value="2.0" selected>HSK 2.0</option>
+            <option value="3.0">HSK 3.0</option>
+          </select>
+          <svg class="picker-version-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+      </label>
+      <details class="primary-games-menu" id="primaryGamesMenu">
+        <summary class="primary-menu-trigger" aria-label="Mở công cụ và trò chơi" aria-haspopup="menu" aria-expanded="false">
+          <svg class="nav-tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="7" x="3" y="3" rx="1.5"/><rect width="7" height="7" x="14" y="3" rx="1.5"/><rect width="7" height="7" x="14" y="14" rx="1.5"/><rect width="7" height="7" x="3" y="14" rx="1.5"/></svg>
+          <span>Công cụ</span>
+          <svg class="primary-menu-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </summary>
+        <div class="primary-games-menu-panel" role="menu" aria-label="Công cụ theo kỹ năng">
+          <!-- 1. Nghe -->
+          <div class="primary-menu-section-title" role="presentation">Nghe</div>
+          <button id="primaryTabListening" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
+            aria-controls="screenListeningPractice" onclick="setPrimaryTab('listening')" aria-label="Luyện nghe HSK4">
+            <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+            <span>Luyện nghe HSK4</span>
+          </button>
+
+          <!-- 2. Đọc -->
+          <div class="primary-menu-section-title" role="presentation">Đọc</div>
+          <button id="primaryTabGradedReading" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
+            aria-controls="screenGradedReading" onclick="setPrimaryTab('gradedReading')" aria-label="Bài đọc phân cấp">
+            <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            <span>Bài đọc phân cấp</span>
+          </button>
+          <button id="primaryTabReading" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
+            aria-controls="screenReadingAnalysis" onclick="setPrimaryTab('reading')" aria-label="Đọc hiểu HSK4">
+            <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
+            <span>Đọc hiểu HSK4</span>
+          </button>
+
+          <!-- 3. Viết -->
+          <div class="primary-menu-section-title" role="presentation">Viết</div>
+          <button id="primaryTabSentenceGame" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
+            aria-controls="screenSentenceGame" onclick="setPrimaryTab('sentenceGame')" aria-label="Xếp câu HSK4">
+            <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19.5 14.5A2.5 2.5 0 0 0 22 12a2.5 2.5 0 0 0-2.5-2.5v-4a2 2 0 0 0-2-2h-4a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0-2.5-2.5h-4a2 2 0 0 0-2 2v4A2.5 2.5 0 0 0 2 12a2.5 2.5 0 0 0 2.5 2.5v4a2 2 0 0 0 2 2h4a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0 2.5 2.5h4a2 2 0 0 0 2-2v-4z"/></svg>
+            <span>Xếp câu HSK4</span>
+          </button>
+          <button id="primaryTabSpeedQuiz" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
+            aria-controls="screenSpeedQuiz" onclick="setPrimaryTab('speedQuiz')" aria-label="Điền từ">
+            <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 5-3-3L3 14v4h4L18 5z"/><line x1="14" x2="17" y1="2" y2="5"/></svg>
+            <span>Điền từ</span>
+          </button>
+
+          <!-- 4. Nói (Ẩn vì chưa có tính năng luyện nói dùng được) -->
+
+          <!-- 5. Từ vựng & chữ Hán -->
+          <div class="primary-menu-section-title" role="presentation">Từ vựng &amp; chữ Hán</div>
+          <button id="primaryTabGuessWord" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
+            aria-controls="screenGuessWord" onclick="setPrimaryTab('guessWord')" aria-label="Đuổi hình bắt chữ">
+            <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+            <span>Đuổi hình bắt chữ</span>
+          </button>
+          <button id="primaryTabRadicals" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
+            aria-controls="screenRadicalHub" onclick="setPrimaryTab('radicals')" aria-label="Bộ thủ">
+            <span class="nav-tab-glyph" aria-hidden="true">部</span>
+            <span>Bộ thủ</span>
+          </button>
+          <button class="primary-tab primary-menu-radical-lookup" type="button" role="menuitem"
+            onclick="openRadicalDirectory()" aria-label="Tra cứu 214 bộ thủ">
+            <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <span>Tra cứu 214 bộ thủ</span>
+          </button>
+
+          <!-- 6. Trợ giúp -->
+          <div class="primary-menu-section-title" role="presentation">Trợ giúp</div>
+          <button class="primary-tab" type="button" role="menuitem" onclick="openStudyHelpModal()" aria-label="Hướng dẫn &amp; Phím tắt">
+            <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+            <span>Hướng dẫn &amp; Phím tắt</span>
+          </button>
+        </div>
+      </details>
+    </div>
+  </nav>
+
+  <!-- SCREEN 1: Vocab hub (level picker + topic picker sub-tabs) -->
+  <div id="screenVocabHub">
+    <div class="picker-controls" id="pickerControls">
+      <div class="view-tabs" role="tablist" aria-label="Loại từ vựng">
+        <button id="vocabSubTabLevel" class="view-tab active" role="tab" aria-selected="true"
+          aria-controls="screenPicker" onclick="setVocabSubTab('level')">Theo cấp độ</button>
+        <button id="vocabSubTabTopic" class="view-tab" role="tab" aria-selected="false"
+          aria-controls="screenTopicPicker" onclick="setVocabSubTab('topic')">Theo chủ đề</button>
+      </div>
+    </div>
+    <div id="screenPicker">
+      <div id="welcomeToast" class="welcome-toast" role="status" aria-live="polite" hidden>
+        <span id="welcomeToastMessage"></span>
+      </div>
+
+      <div id="levelGrid20" class="level-grid">
+        <div class="level-card" data-level="hsk1">
+          <div class="level-card-top">
+            <div class="level-card-heading">
+              <div class="lvl-num">HSK1</div>
+              <span class="level-status-badge">Chưa học</span>
+            </div>
+            <div class="level-card-meta">
+              <span class="lvl-label">Sơ cấp</span><span aria-hidden="true">·</span><span class="lvl-count">150 từ</span>
+            </div>
+          </div>
+          <div class="level-card-progress">
+            <div class="level-card-progress-heading">
+              <strong class="lvl-percent-value">0%</strong>
+              <span class="lvl-today-count" id="today-hsk1" style="display:none"></span>
+            </div>
+            <div class="lvl-mastery-track">
+              <div class="lvl-mastery-fill" id="bar-hsk1"></div>
+            </div>
+          </div>
+          <div class="level-card-bottom">
+            <span class="lvl-mastery-text" id="text-hsk1">0 / 150 đã nhớ</span>
+            <span class="lvl-action-hint">Học ngay <span aria-hidden="true">→</span></span>
+          </div>
+        </div>
+        <div class="level-card" data-level="hsk2">
+          <div class="level-card-top">
+            <div class="level-card-heading">
+              <div class="lvl-num">HSK2</div>
+              <span class="level-status-badge">Chưa học</span>
+            </div>
+            <div class="level-card-meta">
+              <span class="lvl-label">Sơ cấp</span><span aria-hidden="true">·</span><span class="lvl-count">150 từ</span>
+            </div>
+          </div>
+          <div class="level-card-progress">
+            <div class="level-card-progress-heading">
+              <strong class="lvl-percent-value">0%</strong>
+              <span class="lvl-today-count" id="today-hsk2" style="display:none"></span>
+            </div>
+            <div class="lvl-mastery-track">
+              <div class="lvl-mastery-fill" id="bar-hsk2"></div>
+            </div>
+          </div>
+          <div class="level-card-bottom">
+            <span class="lvl-mastery-text" id="text-hsk2">0 / 150 đã nhớ</span>
+            <span class="lvl-action-hint">Học ngay <span aria-hidden="true">→</span></span>
+          </div>
+        </div>
+        <div class="level-card" data-level="hsk3">
+          <div class="level-card-top">
+            <div class="level-card-heading">
+              <div class="lvl-num">HSK3</div>
+              <span class="level-status-badge">Chưa học</span>
+            </div>
+            <div class="level-card-meta">
+              <span class="lvl-label">Trung cấp</span><span aria-hidden="true">·</span><span class="lvl-count">300 từ</span>
+            </div>
+          </div>
+          <div class="level-card-progress">
+            <div class="level-card-progress-heading">
+              <strong class="lvl-percent-value">0%</strong>
+              <span class="lvl-today-count" id="today-hsk3" style="display:none"></span>
+            </div>
+            <div class="lvl-mastery-track">
+              <div class="lvl-mastery-fill" id="bar-hsk3"></div>
+            </div>
+          </div>
+          <div class="level-card-bottom">
+            <span class="lvl-mastery-text" id="text-hsk3">0 / 300 đã nhớ</span>
+            <span class="lvl-action-hint">Học ngay <span aria-hidden="true">→</span></span>
+          </div>
+        </div>
+        <div class="level-card" data-level="hsk4">
+          <div class="level-card-top">
+            <div class="level-card-heading">
+              <div class="lvl-num">HSK4</div>
+              <span class="level-status-badge">Chưa học</span>
+            </div>
+            <div class="level-card-meta">
+              <span class="lvl-label">Trung cấp</span><span aria-hidden="true">·</span><span class="lvl-count">600 từ</span>
+            </div>
+          </div>
+          <div class="level-card-progress">
+            <div class="level-card-progress-heading">
+              <strong class="lvl-percent-value">0%</strong>
+              <span class="lvl-today-count" id="today-hsk4" style="display:none"></span>
+            </div>
+            <div class="lvl-mastery-track">
+              <div class="lvl-mastery-fill" id="bar-hsk4"></div>
+            </div>
+          </div>
+          <div class="level-card-bottom">
+            <span class="lvl-mastery-text" id="text-hsk4">0 / 600 đã nhớ</span>
+            <span class="lvl-action-hint">Học ngay <span aria-hidden="true">→</span></span>
+          </div>
+        </div>
+        <div class="level-card" data-level="hsk5">
+          <div class="level-card-top">
+            <div class="level-card-heading">
+              <div class="lvl-num">HSK5</div>
+              <span class="level-status-badge">Chưa học</span>
+            </div>
+            <div class="level-card-meta">
+              <span class="lvl-label">Cao cấp</span><span aria-hidden="true">·</span><span class="lvl-count">1300 từ</span>
+            </div>
+          </div>
+          <div class="level-card-progress">
+            <div class="level-card-progress-heading">
+              <strong class="lvl-percent-value">0%</strong>
+              <span class="lvl-today-count" id="today-hsk5" style="display:none"></span>
+            </div>
+            <div class="lvl-mastery-track">
+              <div class="lvl-mastery-fill" id="bar-hsk5"></div>
+            </div>
+          </div>
+          <div class="level-card-bottom">
+            <span class="lvl-mastery-text" id="text-hsk5">0 / 1.300 đã nhớ</span>
+            <span class="lvl-action-hint">Học ngay <span aria-hidden="true">→</span></span>
+          </div>
+        </div>
+        <div class="level-card" data-level="hsk6">
+          <div class="level-card-top">
+            <div class="level-card-heading">
+              <div class="lvl-num">HSK6</div>
+              <span class="level-status-badge">Chưa học</span>
+            </div>
+            <div class="level-card-meta">
+              <span class="lvl-label">Cao cấp</span><span aria-hidden="true">·</span><span class="lvl-count">2500 từ</span>
+            </div>
+          </div>
+          <div class="level-card-progress">
+            <div class="level-card-progress-heading">
+              <strong class="lvl-percent-value">0%</strong>
+              <span class="lvl-today-count" id="today-hsk6" style="display:none"></span>
+            </div>
+            <div class="lvl-mastery-track">
+              <div class="lvl-mastery-fill" id="bar-hsk6"></div>
+            </div>
+          </div>
+          <div class="level-card-bottom">
+            <span class="lvl-mastery-text" id="text-hsk6">0 / 2.500 đã nhớ</span>
+            <span class="lvl-action-hint">Học ngay <span aria-hidden="true">→</span></span>
+          </div>
+        </div>
+      </div>
+
+      <div id="levelGrid30" class="level-grid" style="display:none"></div>
+    </div>
+
+    <div class="dashboard-aux-column">
+      <section class="quick-quiz-card" aria-labelledby="quickQuizTitle">
+        <div class="quick-quiz-icon" aria-hidden="true">⚡</div>
+        <div class="quick-quiz-copy">
+          <h2 id="quickQuizTitle">Thử thách 1 phút</h2>
+          <p>5 từ ngẫu nhiên trong 1 phút.</p>
+        </div>
+        <button class="dashboard-primary-btn" type="button" onclick="setPrimaryTab('speedQuiz', { roundLimit: 5 })">Kiểm tra ngay <span aria-hidden="true">→</span></button>
+      </section>
+
+      <section class="featured-topics" aria-labelledby="featuredTopicsTitle">
+        <div class="featured-topics-heading">
+          <div><span class="dashboard-kicker">HỌC THEO NGỮ CẢNH</span><h2 id="featuredTopicsTitle">Chủ đề nổi bật</h2></div>
+          <button type="button" class="featured-topic-more" onclick="setVocabSubTab('topic')">Xem chủ đề →</button>
+        </div>
+        <div class="featured-topic-list" aria-label="Một số chủ đề học phổ biến">
+          <button type="button" class="featured-topic-pill" onclick="setVocabSubTab('topic')"><span aria-hidden="true">🍜</span> Ẩm thực</button>
+          <button type="button" class="featured-topic-pill" onclick="setVocabSubTab('topic')"><span aria-hidden="true">✈️</span> Du lịch</button>
+          <button type="button" class="featured-topic-pill" onclick="setVocabSubTab('topic')"><span aria-hidden="true">💼</span> Công sở</button>
+          <button type="button" class="featured-topic-pill" onclick="setVocabSubTab('topic')"><span aria-hidden="true">🛍️</span> Mua sắm</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Collapsible Analytics & Activity Section (DevOps charts moved to bottom) -->
+    <details class="dashboard-stats-accordion" id="dashboardStatsAccordion" open>
+      <summary class="dashboard-stats-summary" id="statsSummaryBtn" aria-label="Mở rộng hoặc thu gọn biểu đồ thống kê học tập">
+        <div class="dashboard-stats-summary-title">
+          <span class="stats-summary-icon" aria-hidden="true">📊</span>
+          <div>
+            <h2 class="dashboard-stats-title">Thống kê &amp; Hoạt động học tập</h2>
+            <p class="dashboard-stats-desc">Lịch ôn 7 ngày tới, chuỗi ngày học và tần suất tương tác SRS</p>
+          </div>
+        </div>
+        <span class="dashboard-stats-toggle-badge">
+          <span class="stats-toggle-label">Thu gọn</span>
+          <span class="stats-accordion-chevron" aria-hidden="true">▾</span>
+        </span>
+      </summary>
+      <div class="dashboard-stats-content" id="dashboardStatsContent"></div>
+    </details>
+
+    <!-- Topic picker sub-tab -->
+    <div id="screenTopicPicker" style="display:none">
+      <div class="topic-grid" id="topicGrid"></div>
+    </div>
+  </div>
+
+  <!-- SCREEN 2: Flashcards -->
+  <div id="screenCards" style="display:none">
+    <div class="study-view-topbar">
+      <div class="study-view-topbar-left">
+        <button class="back-btn study-back-btn" onclick="SpaRouter.navigateBack()" title="Quay về trang chủ (Esc)" aria-label="Quay về trang chủ">
+          <span class="back-arrow" aria-hidden="true">←</span>
+          <span class="study-back-text" id="studyBackBtnText">Quay về trang chủ</span>
+        </button>
+        <!-- Accessible hidden tab references for backward compatibility with router/overview scripts -->
+        <div class="view-tabs" role="tablist" aria-label="Chế độ xem" style="display:none" hidden>
+          <button id="flashcardTab" class="view-tab active" role="tab" aria-selected="true"
+            aria-controls="studyView" onclick="setViewMode('cards')">
+            <span>Thẻ</span>
+          </button>
+          <button id="overviewTab" class="view-tab" role="tab" aria-selected="false"
+            aria-controls="overviewView" onclick="setViewMode('overview')">
+            <span>Tổng quan</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="study-topbar-progress" id="studyTopbarProgress" title="Tiến độ học">
+        <div class="study-topbar-progress-info">
+          <span class="study-progress-numbers" id="progress"><span class="study-progress-label">Đã học</span> 0 / 0</span>
+          <span class="study-progress-pct" id="progressPct">0%</span>
+        </div>
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill" id="progressBar"></div>
+        </div>
+      </div>
+
+      <div class="study-view-topbar-actions">
+        <button type="button" class="study-drawer-btn study-theme-toggle-btn" onclick="toggleTheme()" title="Đổi giao diện Sáng / Tối" aria-label="Đổi giao diện Sáng / Tối">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+        <div class="study-header-menu-wrap" id="studyHeaderMenuWrap">
+          <button type="button" class="study-drawer-btn study-header-more-btn" id="studyHeaderMoreBtn" onclick="toggleStudyHeaderMenu(event)" title="Tùy chọn khác" aria-haspopup="menu" aria-expanded="false" aria-label="Menu tùy chọn">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <circle cx="5" cy="12" r="2.2"/>
+              <circle cx="12" cy="12" r="2.2"/>
+              <circle cx="19" cy="12" r="2.2"/>
+            </svg>
+          </button>
+          <div class="study-header-dropdown" id="studyHeaderDropdown" role="menu" hidden>
+            <button type="button" class="study-dropdown-item" id="headerMenuOverview" onclick="setViewMode('overview'); closeStudyHeaderMenu();" role="menuitem">
+              <span class="dropdown-item-icon">📋</span>
+              <span class="dropdown-item-label">Tổng quan danh sách từ</span>
+            </button>
+            <button type="button" class="study-dropdown-item" id="studyWritingToggleBtn" onclick="toggleStudyWritingPanel(true); closeStudyHeaderMenu();" role="menuitem">
+              <span class="dropdown-item-icon">✍️</span>
+              <span class="dropdown-item-label">Luyện viết chữ Hán</span>
+            </button>
+            <button type="button" class="study-dropdown-item" id="studyHelpToggleBtn" onclick="openStudyHelpModal(); closeStudyHeaderMenu();" role="menuitem">
+              <span class="dropdown-item-icon">❓</span>
+              <span class="dropdown-item-label">Hướng dẫn &amp; phím tắt</span>
+            </button>
+            <button type="button" class="study-dropdown-item" id="headerMenuTransfer" onclick="toggleTransferPanel(true); closeStudyHeaderMenu();" role="menuitem">
+              <span class="dropdown-item-icon">💾</span>
+              <span class="dropdown-item-label">Sao lưu tiến trình</span>
+            </button>
+            <button type="button" class="study-dropdown-item study-dropdown-danger" id="headerMenuReset" onclick="resetProgress(); closeStudyHeaderMenu();" role="menuitem">
+              <span class="dropdown-item-icon">↻</span>
+              <span class="dropdown-item-label">Học lại cấp độ này</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="study-drawer-backdrop" id="studyDrawerBackdrop" onclick="closeAllStudyDrawers()"></div>
+
+    <div id="studyView" role="tabpanel" aria-labelledby="flashcardTab">
+      <div class="filter-row" id="filterRow"></div>
+
+      <dialog id="studyFilterDialog" class="mobile-dock-dialog study-filter-dialog" onclick="if (event.target === this) this.close()">
+        <div class="mobile-dock-sheet-handle" aria-hidden="true"></div>
+        <div class="mobile-dock-sheet-header">
+          <div class="mobile-dock-sheet-title">
+            <span class="mobile-dock-sheet-icon" aria-hidden="true">🏷️</span>
+            <span>Lọc danh sách thẻ</span>
+          </div>
+          <button type="button" class="mobile-dock-close" onclick="closeStudyFilterSheet()" aria-label="Đóng">✕</button>
+        </div>
+        <div class="study-filter-sheet-body" id="studyFilterSheetBody"></div>
+      </dialog>
+
+      <div class="transfer-panel" id="transferPanel" hidden>
+        <div class="transfer-panel-header">
+          <div class="transfer-panel-title">Sao lưu và chuyển thiết bị</div>
+          <button type="button" class="transfer-panel-close-btn" onclick="toggleTransferPanel(false)" aria-label="Đóng bảng sao lưu" title="Đóng (Esc)">✕</button>
+        </div>
+        <div class="transfer-panel-content">
+          <div class="transfer-actions">
+            <button onclick="exportProgress()">💾 Tải bản sao tiến trình</button>
+            <button onclick="document.getElementById('importFile').click()">📂 Khôi phục từ bản sao</button>
+          </div>
+          <label class="retention-setting">
+            <span>Độ ghi nhớ mong muốn: <strong id="desiredRetentionValue">90%</strong></span>
+            <input id="desiredRetentionSlider" type="range" min="0.80" max="0.97" step="0.01" value="0.90"
+              aria-label="Độ ghi nhớ mong muốn" oninput="updateDesiredRetention(this.value)">
+          </label>
+          <p class="transfer-note">Tiến trình đã được tự động lưu trên thiết bị này. Bạn chỉ cần sao lưu khi muốn chuyển sang thiết bị khác.</p>
+        </div>
+      </div>
+      <input type="file" id="importFile" accept="application/json" style="display:none" onchange="importProgress(event)">
+
+      <div id="cardArea">
+        <div class="loading-text" id="loadingText">Đang tải dữ liệu...</div>
+      </div>
+    </div>
+
+    <div id="overviewView" role="tabpanel" aria-labelledby="overviewTab" hidden>
+      <div class="overview-heading">
+        <div>
+          <h2 id="overviewTitle">Toàn bộ từ vựng</h2>
+          <p id="overviewDescription">Xem trước trọn bộ từ của cấp độ này.</p>
+        </div>
+        <span class="overview-total" id="overviewTotal">0 từ</span>
+      </div>
+
+      <div class="overview-controls">
+        <label class="overview-search">
+          <span aria-hidden="true">⌕</span>
+          <input id="overviewSearch" type="search" autocomplete="off"
+            placeholder="Tìm chữ Hán, pinyin hoặc nghĩa..."
+            aria-label="Tìm trong danh sách từ vựng"
+            oninput="updateOverviewSearch(this.value)">
+        </label>
+        <label class="overview-status-label">
+          <span class="sr-only">Lọc theo trạng thái học</span>
+          <select id="overviewStatus" aria-label="Lọc theo trạng thái học"
+            onchange="updateOverviewStatus(this.value)">
+            <option value="all">Tất cả trạng thái</option>
+            <option value="unseen">Chưa học</option>
+            <option value="unknown">Chưa nhớ</option>
+            <option value="known">Đã nhớ</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="overview-result-summary" id="overviewResultSummary" role="status"></div>
+      <div class="vocabulary-list" id="vocabularyList"></div>
+    </div>
+
+  </div>
+
+  <!-- SCREEN 2: Today reviews & quick forgotten reviews (Zen Focus Mode) -->
+  <div id="screenTodayReviews" class="today-reviews-screen" style="display:none">
+    <header class="today-review-topbar">
+      <button class="today-review-back-btn" type="button" onclick="SpaRouter.navigateBack()" aria-label="Quay lại">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <span>Quay lại</span>
+      </button>
+
+      <div class="today-review-title-cluster">
+        <h2 id="todayReviewTitle" class="today-review-title">Ôn nhanh từ hay quên</h2>
+        <span class="today-review-zen-tag" title="Chế độ tập trung (Zen Mode)">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          <span>Tập trung</span>
+        </span>
+      </div>
+
+      <div class="today-review-top-meta">
+        <span id="todayReviewCounterPill" class="today-review-counter-pill">1 / 25</span>
+      </div>
+    </header>
+
+    <div class="today-review-progress-section" aria-label="Tiến độ ôn tập">
+      <div class="today-review-progress-track">
+        <div class="today-review-progress-bar" id="todayReviewProgressBar" style="width: 0%" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+      </div>
+      <div class="today-review-progress-meta">
+        <span id="todayReviewProgress" class="today-review-progress-text" role="status">Đang tải...</span>
+        <span id="todayReviewProgressPct" class="today-review-progress-pct">0%</span>
+      </div>
+    </div>
+
+    <main class="today-review-arena" id="todayReviewCardArea" role="main"></main>
+
+    <footer class="today-review-footer-bar">
+      <div class="today-review-shortcuts">
+        <span class="shortcut-item"><kbd>Space</kbd> Lật thẻ</span>
+        <span class="shortcut-item"><kbd>1</kbd> / <kbd>←</kbd> Chưa nhớ</span>
+        <span class="shortcut-item"><kbd>2</kbd> / <kbd>→</kbd> Đã nhớ</span>
+        <span class="shortcut-item"><kbd>P</kbd> Phát âm</span>
+        <span class="shortcut-item"><kbd>Esc</kbd> Thoát</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- SCREEN 3: Radical hub -->
+  <div id="screenRadicalHub" style="display:none">
+    <div id="radicalHub"></div>
+  </div>
+
+  <!-- SCREEN 4: Radical flashcards -->
+  <div id="screenRadicalCards" style="display:none">
+    <button class="back-btn" onclick="SpaRouter.navigateBack()">← Quay lại Bộ thủ</button>
+
+    <div class="view-tabs" role="tablist" aria-label="Chế độ xem bộ thủ">
+      <button id="radicalFlashcardTab" class="view-tab active" role="tab" aria-selected="true"
+        aria-controls="radicalStudyView" onclick="setRadicalViewMode('cards')">🗂 Học flashcard</button>
+      <button id="radicalOverviewTab" class="view-tab" role="tab" aria-selected="false"
+        aria-controls="radicalOverviewView" onclick="setRadicalViewMode('overview')">📋 Tổng quan bộ thủ</button>
+    </div>
+
+    <div id="radicalStudyView" role="tabpanel" aria-labelledby="radicalFlashcardTab">
+      <div class="stat-grid">
+        <div class="stat-box"><div class="stat-num" id="rs-total">0</div><div class="stat-lbl">tổng số bộ</div></div>
+        <div class="stat-box"><div class="stat-num" id="rs-unknown" style="color:var(--danger-text)">0</div><div class="stat-lbl">chưa nhớ</div></div>
+        <div class="stat-box"><div class="stat-num" id="rs-known" style="color:var(--success-text)">0</div><div class="stat-lbl">đã nhớ</div></div>
+        <div class="stat-box"><div class="stat-num" id="rs-unseen" style="color:var(--text-secondary)">0</div><div class="stat-lbl">chưa học</div></div>
+      </div>
+
+      <div class="filter-row" id="radicalFilterRow"></div>
+
+      <div class="transfer-panel" id="radicalTransferPanel" hidden>
+        <div class="transfer-panel-header">
+          <div class="transfer-panel-title">Sao lưu và chuyển thiết bị</div>
+          <button type="button" class="transfer-panel-close-btn" onclick="toggleRadicalTransferPanel(false)" aria-label="Đóng bảng sao lưu" title="Đóng (Esc)">✕</button>
+        </div>
+        <div class="transfer-panel-content">
+          <div class="transfer-actions">
+            <button onclick="exportRadicalProgress()">💾 Tải bản sao tiến trình</button>
+            <button onclick="document.getElementById('radicalImportFile').click()">📂 Khôi phục từ bản sao</button>
+          </div>
+          <p class="transfer-note">Bản sao Bộ thủ gồm toàn bộ tiến trình 50 bộ cơ bản và 214 bộ Khang Hy.</p>
+        </div>
+      </div>
+      <input type="file" id="radicalImportFile" accept="application/json" style="display:none" onchange="importRadicalProgress(event)">
+
+      <div class="toolbar">
+        <div class="tool-group">
+          <button class="icon-btn" id="radicalShuffleBtn" onclick="shuffleRadicalDeck()">🔀 Xáo trộn</button>
+          <button class="icon-btn" id="radicalPinyinToggle" onclick="toggleRadicalPinyin()">👁 Đang hiện pinyin</button>
+          <button class="icon-btn" id="radicalTransferToggle" onclick="toggleRadicalTransferPanel()" aria-controls="radicalTransferPanel" aria-expanded="false">💾 Sao lưu</button>
+        </div>
+      </div>
+
+      <div id="radicalCardArea">
+        <div class="loading-text">Đang tải dữ liệu...</div>
+      </div>
+    </div>
+
+    <div id="radicalOverviewView" role="tabpanel" aria-labelledby="radicalOverviewTab" hidden>
+      <div class="overview-heading">
+        <div>
+          <h2 id="radicalOverviewTitle">Toàn bộ bộ thủ</h2>
+          <p id="radicalOverviewDescription">Xem trước nhóm bộ thủ này.</p>
+        </div>
+        <span class="overview-total" id="radicalOverviewTotal">0 bộ</span>
+      </div>
+
+      <div class="overview-controls">
+        <label class="overview-search">
+          <span aria-hidden="true">⌕</span>
+          <input id="radicalOverviewSearch" type="search" autocomplete="off"
+            placeholder="Tìm bộ thủ, pinyin hoặc nghĩa..."
+            aria-label="Tìm trong danh sách bộ thủ"
+            oninput="updateRadicalOverviewSearch(this.value)">
+        </label>
+        <label class="overview-status-label">
+          <span class="sr-only">Lọc bộ thủ theo số nét</span>
+          <select id="radicalOverviewStroke" aria-label="Lọc bộ thủ theo số nét"
+            onchange="updateRadicalOverviewStroke(this.value)">
+            <option value="all">Tất cả số nét</option>
+          </select>
+        </label>
+        <label class="overview-status-label">
+          <span class="sr-only">Lọc bộ thủ theo trạng thái học</span>
+          <select id="radicalOverviewStatus" aria-label="Lọc bộ thủ theo trạng thái học"
+            onchange="updateRadicalOverviewStatus(this.value)">
+            <option value="all">Tất cả trạng thái</option>
+            <option value="unseen">Chưa học</option>
+            <option value="unknown">Chưa nhớ</option>
+            <option value="known">Đã nhớ</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="overview-result-summary" id="radicalOverviewResultSummary" role="status"></div>
+      <div class="vocabulary-list radical-overview-list" id="radicalOverviewList"></div>
+    </div>
+  </div>
+
+  <!-- SCREEN 5: Fast-review (⚡ Ôn nhanh) -->
+  <div id="screenReviewPicker" style="display:none">
+    <div class="review-wrapper">
+      <!-- Unified Review Setup Card -->
+      <section class="review-unified-card" id="reviewSetupCard" aria-labelledby="reviewSetupTitle">
+        <div class="review-card-hero">
+          <div class="review-hero-badge">⚡ THỬ THÁCH PHẢN XẠ</div>
+          <h2 class="review-hero-title" id="reviewSetupTitle">Ôn nhanh từ vựng</h2>
+          <p class="review-hero-desc">Kiểm tra khả năng phản xạ chữ Hán dưới áp lực thời gian và giới hạn sinh mệnh.</p>
+        </div>
+
+        <!-- Scope selection with Filter Chips -->
+        <div class="review-scope-box">
+          <div class="review-scope-header">
+            <div class="review-scope-title-group">
+              <span class="review-scope-icon">🎯</span>
+              <span class="review-scope-heading">Phạm vi ôn tập</span>
+            </div>
+            <span class="review-count-pill" id="reviewRangeCount">150 từ</span>
+          </div>
+
+          <div class="review-chip-group" id="reviewLevelChips" role="group" aria-label="Chọn cấp độ HSK cần ôn">
+            <button type="button" class="review-filter-chip active in-range" data-level="1" onclick="selectReviewLevel(1)">HSK 1</button>
+            <button type="button" class="review-filter-chip" data-level="2" onclick="selectReviewLevel(2)">HSK 2</button>
+            <button type="button" class="review-filter-chip" data-level="3" onclick="selectReviewLevel(3)">HSK 3</button>
+            <button type="button" class="review-filter-chip" data-level="4" onclick="selectReviewLevel(4)">HSK 4</button>
+            <button type="button" class="review-filter-chip" data-level="5" onclick="selectReviewLevel(5)">HSK 5</button>
+            <button type="button" class="review-filter-chip" data-level="6" onclick="selectReviewLevel(6)">HSK 6</button>
+          </div>
+
+          <!-- Hidden input preserving backward compatibility for scripts querying reviewRangeSlider -->
+          <input type="hidden" id="reviewRangeSlider" value="1">
+
+          <div class="review-scope-summary">
+            <span class="review-scope-badge" id="reviewRangeLabel">HSK1</span>
+            <span class="review-scope-subtext" id="reviewScopeSubtext">Bao gồm toàn bộ từ vựng cấp độ HSK 1</span>
+          </div>
+        </div>
+
+        <!-- Rules Summary Grid -->
+        <div class="review-rules-container">
+          <div class="review-rule-card">
+            <div class="review-rule-icon">⏱️</div>
+            <div class="review-rule-content">
+              <div class="review-rule-title">20 giây / câu</div>
+              <div class="review-rule-sub">Đồng hồ đếm ngược</div>
+            </div>
+          </div>
+          <div class="review-rule-card">
+            <div class="review-rule-icon">❤️</div>
+            <div class="review-rule-content">
+              <div class="review-rule-title">5 mạng sinh mệnh</div>
+              <div class="review-rule-sub">Sai / hết giờ mất 1 mạng</div>
+            </div>
+          </div>
+          <div class="review-rule-card">
+            <div class="review-rule-icon">🔀</div>
+            <div class="review-rule-content">
+              <div class="review-rule-title">Pinyin &amp; Trắc nghiệm</div>
+              <div class="review-rule-sub">Xen kẽ ngẫu nhiên</div>
+            </div>
+          </div>
+          <div class="review-rule-card">
+            <div class="review-rule-icon">📊</div>
+            <div class="review-rule-content">
+              <div class="review-rule-title" id="reviewPoolStatus">Từ chưa thuộc</div>
+              <div class="review-rule-sub" id="reviewPoolSub">Tự động ưu tiên thẻ cần ôn</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single prominent CTA Button -->
+        <div class="review-cta-wrapper">
+          <button type="button" class="review-cta-btn" id="reviewRangeStart" onclick="startUnifiedReview()">
+            <span class="review-cta-icon">⚡</span>
+            <span class="review-cta-label" id="reviewStartBtnLabel">Bắt đầu ôn ngay</span>
+          </button>
+        </div>
+
+        <!-- Mobile auxiliary trigger (Bottom sheet for weak/forgotten words) -->
+        <div class="review-mobile-drawer-trigger">
+          <button type="button" class="review-drawer-btn" onclick="openReviewBottomSheet()">
+            <span class="drawer-btn-icon">📋</span>
+            <span class="drawer-btn-label">
+              <strong>Từ cần ôn gấp &amp; Từ khó</strong>
+              <span id="reviewMobileAuxLabel">Xem danh sách từ cần chú ý</span>
+            </span>
+            <span class="drawer-btn-arrow">Mở bảng ↑</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Review Body: Session & Results -->
+      <div id="reviewPickerBody">
+        <div id="reviewSession" class="review-session-card" hidden></div>
+        <div id="reviewResult" class="review-result-card" hidden></div>
+        <div id="reviewStart" hidden></div>
+      </div>
+
+      <!-- Mobile Bottom Sheet Dialog -->
+      <dialog id="reviewBottomSheet" class="review-bottom-sheet">
+        <div class="review-bottom-sheet-content">
+          <div class="review-sheet-drag-handle" aria-hidden="true"></div>
+          <div class="review-sheet-topbar">
+            <div class="review-sheet-title-group">
+              <h3>Từ cần chú ý</h3>
+              <p>Danh sách từ hay nhầm lẫn và từ khó đã lưu</p>
+            </div>
+            <button type="button" class="review-sheet-close" onclick="closeReviewBottomSheet()" aria-label="Đóng bảng">✕</button>
+          </div>
+          <div class="review-sheet-nav" role="tablist">
+            <button type="button" class="review-sheet-nav-btn active" id="reviewSheetTabForgot" onclick="switchReviewSheetTab('forgot')">Từ cần ôn gấp</button>
+            <button type="button" class="review-sheet-nav-btn" id="reviewSheetTabWeak" onclick="switchReviewSheetTab('weak')">Từ khó đã đánh dấu</button>
+          </div>
+          <div class="review-sheet-pane" id="reviewSheetForgotPane">
+            <div class="review-sheet-list" id="reviewSheetForgotList"></div>
+            <div class="review-sheet-actions" id="reviewSheetForgotActions"></div>
+          </div>
+          <div class="review-sheet-pane" id="reviewSheetWeakPane" style="display:none">
+            <div class="review-sheet-list" id="reviewSheetWeakList"></div>
+          </div>
+        </div>
+      </dialog>
+    </div>
+  </div>
+
+  <!-- SCREEN 7: Sentence Game (HSK 4 Hanban Mock Exams) -->
+  <div id="screenSentenceGame" style="display:none">
+    <div class="sentence-game">
+      <header class="sentence-game-header">
+        <div class="sentence-game-top-bar">
+          <div class="sentence-game-title-group">
+            <h2 class="sentence-game-title">🧩 Xếp câu HSK4</h2>
+            <span class="sentence-game-counter" id="sentenceGameCounter">Đề 1 (H41001) · Câu 86</span>
+          </div>
+          <div class="sentence-game-tools">
+            <div class="sentence-exam-selector-group">
+              <label for="sentenceGameExamSelect" class="sentence-exam-label">Đề thi:</label>
+              <select id="sentenceGameExamSelect" class="sentence-exam-select" onchange="setSentenceGameExam(this.value)" aria-label="Chọn đề thi HSK 4"></select>
+            </div>
+            <button type="button" class="sentence-tool-btn active" id="sentenceGamePinyinBtn" onclick="toggleSentenceGamePinyin()" title="Bật hoặc tắt Pinyin" aria-label="Bật hoặc tắt Pinyin">
+              <span id="sentenceGamePinyinIcon">👁</span> <span id="sentenceGamePinyinLabel">Pinyin: Bật</span>
+            </button>
+            <button type="button" class="sentence-tool-btn" id="sentenceGameFocusBtn" onclick="toggleSentenceGameFocus()" title="Bật hoặc tắt chế độ tập trung" aria-label="Bật hoặc tắt chế độ tập trung">
+              <span id="sentenceGameFocusIcon">🎯</span> <span id="sentenceGameFocusLabel">Tập trung</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Question Navigator (Q86 - Q95) -->
+        <nav class="sentence-question-nav-container" aria-label="Điều hướng câu hỏi">
+          <span class="sentence-question-nav-label">Câu hỏi:</span>
+          <div class="sentence-question-nav" id="sentenceQuestionNav" role="tablist" aria-label="Danh sách câu hỏi đề thi"></div>
+        </nav>
+      </header>
+
+      <!-- Sentence card board -->
+      <section class="sentence-card-board" aria-label="Bàn sắp xếp câu">
+        <div class="sentence-prompt">
+          <div class="sentence-prompt-header">
+            <span class="sentence-prompt-title">HSK 4 · 书写 第一部分: 完成句子</span>
+            <div class="sentence-card-meta">
+              <span class="sentence-level-tag" id="sentenceLevelTag">HSK 4 · Câu 86</span>
+            </div>
+          </div>
+          <div class="sentence-game-instruction">Sắp xếp các cụm từ bên dưới thành câu hoàn chỉnh theo ngữ pháp tiếng Trung:</div>
+        </div>
+
+        <!-- Target slots area -->
+        <div class="sentence-slots-wrapper">
+          <div class="sentence-slots-label">
+            <span class="sentence-sub-title">Ghép các thẻ từ thành câu hoàn chỉnh:</span>
+            <button type="button" class="sentence-reset-slots-btn" id="sentenceGameResetBtn" onclick="resetSentenceGameSlots()" title="Đặt lại câu để ghép lại từ đầu" disabled>
+              <span class="reset-icon">↺</span> <span>Làm lại</span>
+            </button>
+          </div>
+          <div class="sentence-game-slots is-empty" id="sentenceGameSlots" role="region" aria-label="Khu vực xếp từ"></div>
+        </div>
+
+        <!-- Word bank area -->
+        <div class="sentence-bank-wrapper" id="sentenceBankWrapper">
+          <div class="sentence-bank-label">
+            <span class="sentence-sub-title" id="sentenceBankTitle">Kho cụm từ (Bấm hoặc dùng phím số 1-9):</span>
+          </div>
+          <div class="sentence-game-bank" id="sentenceGameBank" role="group" aria-label="Kho cụm từ để chọn"></div>
+        </div>
+
+        <!-- Dynamic feedback message (errors, warnings, hints) -->
+        <div class="sentence-game-feedback" id="sentenceGameFeedback" role="status" aria-live="polite"></div>
+
+        <!-- Consolidated Result Card (when solved) -->
+        <div class="sentence-result-card" id="sentenceResultCard" hidden>
+          <div class="sentence-result-header">
+            <div class="sentence-result-status">
+              <span class="sentence-result-check-icon">✓</span>
+              <span class="sentence-result-status-text" id="sentenceResultStatusText">Chính xác! Bạn đã hoàn thành câu.</span>
+            </div>
+            <div class="sentence-result-actions">
+              <button type="button" class="sentence-result-speak-btn" id="sentenceResultSpeakBtn" onclick="speakCurrentSentence()" title="Nghe đọc lại câu" aria-label="Nghe đọc câu">
+                <span>🔊</span> <span>Nghe đọc</span>
+              </button>
+              <button type="button" class="sentence-action-btn sentence-action-btn--success" id="sentenceResultNextBtn" onclick="loadNextSentenceGameRound()">
+                <span>Câu tiếp theo →</span>
+              </button>
+            </div>
+          </div>
+          <div class="sentence-result-body">
+            <div class="sentence-result-zh" id="sentenceResultZh"></div>
+            <div class="sentence-result-py" id="sentenceResultPy"></div>
+            <div class="sentence-result-vi" id="sentenceResultVi"></div>
+          </div>
+          <details class="sentence-grammar-disclosure" id="sentenceGrammarDisclosure" hidden>
+            <summary class="sentence-grammar-summary">
+              <span>💡 Phân tích cấu trúc ngữ pháp</span>
+              <span class="disclosure-arrow">▾</span>
+            </summary>
+            <div class="sentence-grammar-content" id="sentenceGrammarContent"></div>
+          </details>
+        </div>
+
+        <!-- Primary in-progress actions -->
+        <div class="sentence-game-actions" id="sentenceGameActions">
+          <button type="button" class="sentence-action-btn sentence-action-btn--secondary" id="sentenceGameHintBtn" onclick="revealSentenceHint()" title="Xem gợi ý câu">💡 Gợi ý</button>
+          <button type="button" class="sentence-action-btn sentence-action-btn--primary" id="sentenceGameCheckBtn" onclick="checkSentenceGameAnswer()">Kiểm tra đáp án</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- SCREEN 8: Guess-the-word (emoji) game -->
+  <div id="screenGuessWord" style="display:none">
+    <div class="guess-word-game">
+      <header class="guess-word-header">
+        <div class="guess-word-header-main">
+          <div class="guess-word-title-group">
+            <h2 class="guess-word-title">🎨 Đuổi hình bắt chữ</h2>
+            <span class="guess-word-level-badge" id="guessWordLevelBadge">HSK 1</span>
+          </div>
+          <div class="guess-word-meta">
+            <span class="guess-word-counter" id="guessWordCounter">Đang tải...</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="guess-word-card" aria-label="Bảng câu hỏi đuổi hình bắt chữ">
+        <div class="guess-word-prompt-box">
+          <div class="guess-word-prompt-label">Gợi ý hình ảnh</div>
+          <div class="guess-word-clue-frame">
+            <span class="guess-word-emoji" id="guessWordEmoji" role="img" aria-label="Gợi ý hình ảnh"></span>
+          </div>
+          <p class="guess-word-question-text">Chọn từ chữ Hán phù hợp nhất với hình ảnh trên:</p>
+        </div>
+
+        <div class="guess-word-options" id="guessWordOptions" role="group" aria-label="Các lựa chọn chữ Hán"></div>
+
+        <div class="guess-word-feedback" id="guessWordFeedback" role="status" aria-live="polite"></div>
+
+        <div class="guess-word-explanation" id="guessWordExplanation" hidden></div>
+
+        <div class="guess-word-actions">
+          <button type="button" class="game-next-btn guess-word-next-btn" id="guessWordNextBtn" onclick="loadNextGuessWordRound()" hidden>
+            <span>Câu tiếp theo</span>
+            <span class="next-btn-arrow">→</span>
+          </button>
+        </div>
+
+        <div class="guess-word-hints-footer">
+          <span class="guess-word-hint-item"><kbd>1</kbd>–<kbd>4</kbd> Chọn đáp án</span>
+          <span class="guess-word-hint-item"><kbd>Enter</kbd> hoặc <kbd>Space</kbd> Sang câu tiếp</span>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- SCREEN 9: Speed quiz game -->
+  <div id="screenSpeedQuiz" style="display:none">
+    <div class="speed-quiz-game">
+      <header class="speed-quiz-header">
+        <div class="speed-quiz-header-main">
+          <div class="speed-quiz-title-group">
+            <h2 class="speed-quiz-title">⚡ Điền từ vào câu</h2>
+            <span class="speed-quiz-badge" id="speedQuizRoundBadge">Thử thách tốc độ</span>
+          </div>
+          <div class="speed-quiz-header-actions">
+            <button type="button" class="speed-quiz-exit-btn" onclick="exitSpeedQuizGame()" title="Thoát trò chơi (Esc)" aria-label="Thoát trò chơi">✕ Thoát</button>
+          </div>
+        </div>
+      </header>
+
+      <section class="speed-quiz-card" aria-label="Bảng câu hỏi điền từ vào câu">
+        <div class="speed-quiz-scoreboard">
+          <span class="speed-quiz-score-badge" id="speedQuizScore">Điểm: 0</span>
+          <span id="speedQuizStreak" class="speed-quiz-streak"></span>
+          <span class="speed-quiz-best-badge" id="speedQuizBest">Kỷ lục: 0</span>
+        </div>
+
+        <div class="speed-quiz-timer-track">
+          <div class="speed-quiz-timer-bar" id="speedQuizTimerBar"></div>
+        </div>
+
+        <div class="speed-quiz-question-box">
+          <div class="speed-quiz-prompt-label">Điền từ thích hợp vào chỗ trống:</div>
+          <div class="speed-quiz-word" id="speedQuizWord"></div>
+          <div class="speed-quiz-meaning" id="speedQuizMeaning"></div>
+        </div>
+
+        <div class="speed-quiz-options" id="speedQuizOptions" role="group" aria-label="Các lựa chọn đáp án"></div>
+
+        <div class="speed-quiz-feedback" id="speedQuizFeedback" role="status" aria-live="polite"></div>
+
+        <div class="speed-quiz-actions">
+          <button type="button" class="speed-quiz-explain-btn" id="speedQuizExplainBtn" onclick="openSpeedQuizExplanationModal()" hidden>
+            <span class="explain-btn-icon" aria-hidden="true">💡</span>
+            <span>Xem giải thích</span>
+          </button>
+          <button type="button" class="game-next-btn speed-quiz-next-btn" id="speedQuizNextBtn" onclick="loadNextSpeedQuizRound()" hidden>
+            <span>Câu tiếp theo</span>
+            <span class="next-btn-arrow">→</span>
+            <kbd class="btn-kbd-hint">Enter ↵</kbd>
+          </button>
+        </div>
+
+        <div class="speed-quiz-hints-footer">
+          <span class="speed-quiz-hint-item"><kbd>1</kbd>–<kbd>4</kbd> Chọn đáp án</span>
+          <span class="speed-quiz-hint-item"><kbd>Enter</kbd> Câu tiếp</span>
+          <span class="speed-quiz-hint-item"><kbd>Esc</kbd> Thoát</span>
+        </div>
+      </section>
+
+      <!-- Detailed Explanation Modal (opens on click 'Xem giải thích') -->
+      <dialog class="speed-quiz-modal" id="speedQuizExplainModal" aria-labelledby="sqmTitle">
+        <div class="sqm-backdrop" onclick="closeSpeedQuizExplanationModal()"></div>
+        <div class="sqm-dialog-content">
+          <header class="sqm-header">
+            <div class="sqm-header-title">
+              <span class="sqm-badge-icon" aria-hidden="true">💡</span>
+              <h3 id="sqmTitle" class="sqm-title">Giải thích đáp án &amp; Ngữ pháp</h3>
+            </div>
+            <button type="button" class="sqm-close-btn" onclick="closeSpeedQuizExplanationModal()" aria-label="Đóng bảng giải thích">✕</button>
+          </header>
+          <div class="sqm-body" id="speedQuizModalBody"></div>
+          <footer class="sqm-footer">
+            <button type="button" class="sqm-btn sqm-btn-secondary" onclick="closeSpeedQuizExplanationModal()">Đóng</button>
+            <button type="button" class="sqm-btn sqm-btn-primary" onclick="closeSpeedQuizExplanationModal(); loadNextSpeedQuizRound();">
+              <span>Câu tiếp theo</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </footer>
+        </div>
+      </dialog>
+    </div>
+  </div>
+
+  <!-- SCREEN 10: Reading & Analysis -->
+  <div id="screenReadingAnalysis" style="display:none"></div>
+
+  <!-- SCREEN 11: Synapse Graded Reading -->
+  <div id="screenGradedReading" style="display:none"></div>
+
+  <!-- SCREEN 12: HSK Listening Practice & Alignment -->
+  <div id="screenListeningPractice" style="display:none"></div>
+
+    </div>
+    <aside class="workstation-right" id="workstationRight" aria-label="Phòng thực hành tương tác"></aside>
+    <footer class="app-footer">
+      <p class="footer-note"><span class="footer-version" title="Phiên bản ứng dụng">v2.0.4</span> · Tiến trình tự lưu trên thiết bị này · Phát triển bởi <a href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer">haunguyenngoc442001</a> · <a href="https://www.facebook.com/haunguyenngoc442001/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+    </footer>
+  </div>
+</div>
+
+<script src="assets/js/state.js?v=20261017-gemini-tts-v2"></script>
+<script src="assets/js/storage.js?v=20261006-srs-sync1"></script>
+<script src="https://cdn.jsdelivr.net/npm/ts-fsrs@5.4.1/dist/index.umd.js" crossorigin="anonymous"></script>
+<script src="assets/js/srs.js?v=20261006-2tier-srs1"></script>
+<script src="assets/js/spa-router.js?v=20261014-router2"></script>
+<script src="assets/js/word-illustrations.js?v=20261017-fix-example-box1"></script>
+<script src="assets/js/levels.js?v=20261017-fix-example-box1"></script>
+<script src="assets/js/topics.js?v=20261006-decimal-pct1"></script>
+<script src="assets/js/hsk30.js?v=20261006-decimal-pct1"></script>
+<script src="assets/js/sentence-game.js?v=20261006-sentence-ux1"></script>
+<script src="assets/js/guess-word-game.js?v=20261006-fix-chair1"></script>
+<script src="assets/js/speed-quiz-game.js?v=20261017-speedquiz-redesign1"></script>
+<script src="assets/js/vocabulary-overview.js?v=20261017-fix-example-box1"></script>
+<script src="assets/js/fast-review.js?v=20261016-fix-l4-review1"></script>
+<script src="assets/js/hanviet-dict.js?v=20261007-pos-visual2"></script>
+<script src="assets/js/flashcard.js?v=20261017-fix-example-box1"></script>
+<script src="assets/js/card-interactions.js?v=20261016-preserve-flip1"></script>
+<script src="assets/js/speechService.js?v=20261010-speech-mvp1"></script>
+<script src="assets/js/speech.js?v=20261017-gemini-tts-v3"></script>
+<script src="assets/js/progress.js?v=20261017-refine-v2"></script>
+<script src="assets/js/due-review.js?v=20261007-router1"></script>
+<script src="assets/js/theme.js?v=20261010-smooth-theme1"></script>
+<script src="assets/js/backup.js?v=20261010-close-backup1"></script>
+<script src="assets/js/memory-curve.js?v=20261008-fix-stroke-drawer2"></script>
+<script src="assets/js/radicals-state.js?v=20261003-hsk20-rich1"></script>
+<script src="assets/js/radicals.js?v=20261015-dashboard-redesign"></script>
+<script src="assets/js/radical-card.js?v=20261010-close-backup1"></script>
+<script src="assets/js/sidebar-search.js?v=20261006-nav-fix1"></script>
+<script src="assets/js/sidebar-radicals-filter.js?v=20261003-hsk20-rich1"></script>
+<script src="assets/js/weak-words.js?v=20261008-redesign-zen-v1"></script>
+<script src="assets/js/hanzi-decomposition.js?v=20261016-fix-hanzi-size1"></script>
+<script src="assets/js/related-words.js?v=20261026-related-v1"></script>
+<script src="assets/js/stroke-canvas.js?v=20261016-fix-hanzi-size1"></script>
+<script src="assets/js/sidebar-tabs.js?v=20261015-viewport-fix-v6"></script>
+<script src="assets/js/word-companion.js?v=20261008-fix-stroke-drawer2"></script>
+<script src="assets/js/grammar-breakdown.js?v=20261008-fix-stroke-drawer2"></script>
+<script src="assets/js/reading-analysis.js?v=20261015-mobile-ui-opt"></script>
+<script src="assets/js/graded-reading.js?v=20261014-fix-render1"></script>
+<script src="assets/js/listening-practice.js?v=1.3.3"></script>
+<script>
+window.addEventListener('load', function() {
+  var prefetchReading = function() {
+    if (typeof ensureReadingAnalysisLoaded === 'function') ensureReadingAnalysisLoaded();
+  };
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(prefetchReading, { timeout: 2500 });
+  } else {
+    setTimeout(prefetchReading, 400);
+  }
+});
+</script>
+<script src="assets/js/home-widgets.js?v=20261015-dashboard-redesign"></script>
+<script src="assets/js/dashboard-enhancements.js?v=20261017-mobile-clean1"></script>
+<script src="assets/js/study-help-modal.js?v=20261016-help-redesign1"></script>
+<script src="assets/flashcards.js?v=20261003-hsk20-rich1"></script>
+<!-- Mobile Bottom Navigation Bar -->
+<nav class="mobile-bottom-nav" id="mobileBottomNav" aria-label="Điều hướng di động">
+  <button type="button" class="mobile-nav-item active" id="mobNavVocab" onclick="setPrimaryTab('vocab')" aria-label="Trang chủ Từ vựng">
+    <svg class="mobile-nav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
+    <span class="mobile-nav-label">Từ vựng</span>
+  </button>
+  <button type="button" class="mobile-nav-item" id="mobNavReview" onclick="setPrimaryTab('review')" aria-label="Ôn nhanh từ vựng">
+    <svg class="mobile-nav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+    <span class="mobile-nav-label">Ôn nhanh</span>
+  </button>
+  <button type="button" class="mobile-nav-item" id="mobNavNotebook" onclick="openMobileNotebookSheet()" aria-label="Mở sổ từ và tra cứu">
+    <div class="mobile-nav-icon-wrap">
+      <svg class="mobile-nav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>
+      <span class="mobile-nav-badge" id="mobNotebookBadge" hidden>0</span>
+    </div>
+    <span class="mobile-nav-label">Sổ từ</span>
+  </button>
+  <button type="button" class="mobile-nav-item" id="mobNavProfile" onclick="openMobileProfileOrStats()" aria-label="Thống kê học tập">
+    <svg class="mobile-nav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+    <span class="mobile-nav-label">Thống kê</span>
+  </button>
+</nav>
+
+<script>
+function openMobileNotebookSheet() {
+  var dialog = document.getElementById('mobileDockDialog');
+  if (dialog) {
+    if (typeof dialog.showModal === 'function') {
+      try { dialog.showModal(); } catch (e) { dialog.setAttribute('open', ''); }
+    } else {
+      dialog.setAttribute('open', '');
+    }
+    var searchInput = document.getElementById('sidebarSearchInput');
+    if (searchInput) {
+      setTimeout(function() { searchInput.focus(); }, 120);
+    }
+  }
+}
+
+function renderMobileStatsHeader(dialogBody) {
+  var header = dialogBody.querySelector('.mobile-stats-kpi-summary');
+  if (!header) {
+    header = document.createElement('div');
+    header.className = 'mobile-stats-kpi-summary';
+    dialogBody.prepend(header);
+  }
+
+  var activity = typeof readStudyActivity === 'function' ? readStudyActivity() : { days: {} };
+  var stats = typeof streakStats === 'function' ? streakStats(activity.days) : { current: 0, longest: 0, totalDaysStudied: 0 };
+  var totalMinutes = Object.values(activity.days || {}).reduce(function(sum, entry) {
+    return sum + (typeof daySeconds === 'function' ? daySeconds(entry) : 0) / 60;
+  }, 0);
+  var timeFormatted = typeof formatStudyDuration === 'function' ? formatStudyDuration(totalMinutes) : Math.round(totalMinutes) + ' phút';
+
+  header.innerHTML =
+    '<div class="history-kpi-row mobile-kpi-grid">' +
+      '<div class="history-kpi"><strong>🔥 ' + stats.current + '</strong><span>Chuỗi hiện tại</span></div>' +
+      '<div class="history-kpi"><strong>🏆 ' + stats.longest + '</strong><span>Chuỗi dài nhất</span></div>' +
+      '<div class="history-kpi"><strong>📅 ' + stats.totalDaysStudied + '</strong><span>Ngày đã học</span></div>' +
+      '<div class="history-kpi"><strong>⏱ ' + timeFormatted + '</strong><span>Tổng thời gian</span></div>' +
+    '</div>' +
+    '<button type="button" class="mobile-stats-history-btn" onclick="openDetailedHistoryFromStatsSheet()">' +
+      '<span>📅 Xem biểu đồ lịch sử học tập (Heatmap)</span>' +
+      '<span aria-hidden="true">→</span>' +
+    '</button>';
+}
+
+function openDetailedHistoryFromStatsSheet() {
+  closeMobileStatsSheet();
+  if (typeof showHistoryModal === 'function') {
+    showHistoryModal();
+  }
+}
+
+function openMobileProfileOrStats() {
+  var dialog = document.getElementById('mobileStatsDialog');
+  var dialogBody = document.getElementById('mobileStatsDialogBody');
+  var widgets = document.getElementById('homeWidgets');
+
+  if (dialog && dialogBody) {
+    renderMobileStatsHeader(dialogBody);
+
+    if (widgets && widgets.parentNode !== dialogBody) {
+      dialogBody.appendChild(widgets);
+    }
+
+    if (typeof refreshHomeWidgets === 'function') {
+      try { refreshHomeWidgets(); } catch (e) {}
+    }
+
+    if (typeof dialog.showModal === 'function') {
+      try { dialog.showModal(); } catch (e) { dialog.setAttribute('open', ''); }
+    } else {
+      dialog.setAttribute('open', '');
+    }
+
+    var mobProfile = document.getElementById('mobNavProfile');
+    if (mobProfile) mobProfile.classList.add('active');
+    return;
+  }
+
+  if (typeof showHistoryModal === 'function') {
+    showHistoryModal();
+  }
+}
+
+function closeMobileStatsSheet() {
+  var dialog = document.getElementById('mobileStatsDialog');
+  if (dialog) {
+    if (typeof dialog.close === 'function') {
+      dialog.close();
+    } else {
+      dialog.removeAttribute('open');
+    }
+  }
+
+  var statsContent = document.getElementById('dashboardStatsContent');
+  var widgets = document.getElementById('homeWidgets');
+  if (statsContent && widgets && widgets.parentNode !== statsContent) {
+    statsContent.appendChild(widgets);
+  }
+
+  var mobProfile = document.getElementById('mobNavProfile');
+  if (mobProfile) mobProfile.classList.remove('active');
+}
+
+(function initMobileNavDialogEvents() {
+  var statsDialog = document.getElementById('mobileStatsDialog');
+  if (statsDialog) {
+    statsDialog.addEventListener('click', function(e) {
+      if (e.target === statsDialog) {
+        closeMobileStatsSheet();
+      }
+    });
+    statsDialog.addEventListener('close', function() {
+      var statsContent = document.getElementById('dashboardStatsContent');
+      var widgets = document.getElementById('homeWidgets');
+      if (statsContent && widgets && widgets.parentNode !== statsContent) {
+        statsContent.appendChild(widgets);
+      }
+      var mobProfile = document.getElementById('mobNavProfile');
+      if (mobProfile) mobProfile.classList.remove('active');
+    });
+  }
+
+  var dockDialog = document.getElementById('mobileDockDialog');
+  if (dockDialog) {
+    dockDialog.addEventListener('click', function(e) {
+      if (e.target === dockDialog) {
+        if (typeof dockDialog.close === 'function') dockDialog.close();
+        else dockDialog.removeAttribute('open');
+      }
+    });
+  }
+
+  var statsAccordion = document.getElementById('dashboardStatsAccordion');
+  if (statsAccordion) {
+    statsAccordion.addEventListener('toggle', function() {
+      var label = statsAccordion.querySelector('.stats-toggle-label');
+      if (label) {
+        label.textContent = statsAccordion.open ? 'Thu gọn' : 'Mở rộng';
+      }
+    });
+  }
+})();
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4568b250a19345538a47a2da396637af"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
