@@ -346,12 +346,19 @@
    */
   async function renderCardRelated(word) {
     const wrap = document.getElementById('cardRelatedWrap');
+    const accordion = document.getElementById('cardRelatedAccordion');
+    const countBadge = document.getElementById('cardRelatedCountBadge');
     if (!wrap) return;
 
     if (!word || !word.hanzi) {
       wrap.style.display = 'none';
       wrap.hidden = true;
       wrap.innerHTML = '';
+      if (accordion) {
+        accordion.style.display = 'none';
+        accordion.hidden = true;
+        accordion.open = false;
+      }
       return;
     }
 
@@ -368,19 +375,33 @@
       wrap.style.display = 'none';
       wrap.hidden = true;
       wrap.innerHTML = '';
+      if (accordion) {
+        accordion.style.display = 'none';
+        accordion.hidden = true;
+        accordion.open = false;
+      }
       return;
     }
 
+    if (accordion) {
+      accordion.hidden = false;
+      accordion.style.display = 'block';
+      accordion.open = false;
+    }
+    if (countBadge) {
+      countBadge.textContent = relatedList.length;
+      countBadge.hidden = false;
+    }
     wrap.hidden = false;
     wrap.style.display = 'flex';
 
     const hasHistory = relatedNavHistory.length > 0;
     const lastItem = hasHistory ? relatedNavHistory[relatedNavHistory.length - 1] : null;
 
-    let html = `
-      <div class="card-related-header">
-        <span class="card-related-title">Chữ liên quan</span>
-        ${hasHistory && lastItem ? `
+    let html = '';
+    if (hasHistory && lastItem) {
+      html += `
+        <div class="card-related-header">
           <button type="button" class="card-related-back-btn"
             onclick="event.stopPropagation(); window.goBackRelatedCard()"
             title="Quay lại thẻ trước: ${lastItem.hanzi}">
@@ -390,10 +411,10 @@
             </svg>
             <span>Quay lại: ${lastItem.hanzi}</span>
           </button>
-        ` : ''}
-      </div>
-      <div class="card-related-chips" role="list" aria-label="Danh sách chữ liên quan">
-    `;
+        </div>
+      `;
+    }
+    html += `<div class="card-related-chips" role="list" aria-label="Danh sách chữ liên quan">`;
 
     relatedList.forEach(item => {
       const w = item.word;

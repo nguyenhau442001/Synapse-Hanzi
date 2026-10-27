@@ -70,12 +70,20 @@ function buildCardArea() {
       <div class="swipe-badge swipe-badge--unknown" id="swipeBadgeUnknown">✗ Chưa nhớ</div>
       <div id="cardContent" class="card-content">
         <div class="word-hero-container" id="wordMainBlock">
-          <!-- Chữ Hán to bản ở trung tâm: vững chãi, thoáng đãng, tinh tế -->
+          <!-- Chữ Hán to bản ở trung tâm: vững chãi, thoáng đãng, tinh tế (Focal Point chính) -->
           <div class="hanzi-stage" id="hanziStage" onclick="event.stopPropagation(); toggleStudyWritingPanel(true);" title="Nhấn để luyện viết chữ Hán (W)">
             <div class="hanzi" id="hanzi"></div>
           </div>
 
-          <!-- Pinyin + Loa phát âm -->
+          <!-- Mỏ neo gợi hình: Hiển thị ngay mặt trước giúp gợi nhớ chủ động (Active Recall) -->
+          <div class="card-visual-col" id="cardVisualCol" style="display: none;">
+            <div class="card-illustration-frame" id="cardIllustrationFrame" title="Minh họa gợi hình">
+              <img class="card-illustration-img" id="cardIllustrationImg" alt="Minh họa gợi hình" style="display: none;">
+              <div class="card-illustration-svg" id="cardIllustrationSvg"></div>
+            </div>
+          </div>
+
+          <!-- Pinyin + Loa phát âm (Chỉ hiển thị sau khi lật đáp án) -->
           <div class="pinyin-row" id="pinyinRow">
             <span class="pinyin" id="pinyin"></span>
             <button class="sound-btn speech-btn" id="soundBtn" type="button"
@@ -85,33 +93,18 @@ function buildCardArea() {
             </button>
           </div>
 
-          <!-- Nghĩa tiếng Việt & Ngữ cảnh từ loại -->
+          <!-- Nghĩa tiếng Việt & Ngữ cảnh từ loại (Chỉ hiển thị sau khi lật đáp án) -->
           <div class="meaning" id="meaning"></div>
           <div class="meta-badges-row" id="metaBadgesRow">
             <span class="pos-badge" id="posBadge" title="Từ loại"></span>
             <span class="hanviet-badge" id="hanvietBadge" title="Âm Hán - Việt"></span>
           </div>
 
-          <!-- Khối thông tin hỗ trợ: Minh họa gợi hình + Cấu tạo chữ (Chỉ hiển thị khi có dữ liệu) -->
-          <div class="card-supporting-group" id="cardSupportingGroup" style="display: none;">
-            <div class="card-visual-col" id="cardVisualCol" style="display: none;">
-              <div class="card-illustration-frame" id="cardIllustrationFrame" title="Minh họa gợi hình">
-                <img class="card-illustration-img" id="cardIllustrationImg" alt="Minh họa gợi hình" style="display: none;">
-                <div class="card-illustration-svg" id="cardIllustrationSvg"></div>
-              </div>
-            </div>
-
-            <div class="card-decomposition-wrap" id="cardDecompositionWrap" style="display: none;" hidden>
-              <div class="card-decomp-title">Cấu tạo chữ</div>
-              <div class="card-radicals-row card-interactive" id="cardRadicalsRow" onclick="event.stopPropagation()"></div>
-            </div>
-          </div>
-
-          <!-- Khối Chữ liên quan (Học theo cụm) -->
-          <div class="card-related-wrap" id="cardRelatedWrap" style="display: none;" hidden></div>
+          <!-- Vùng chứa ẩn tương thích ngược -->
+          <div class="card-supporting-group" id="cardSupportingGroup" style="display: none;"></div>
         </div>
 
-        <!-- Khối ví dụ thực tế -->
+        <!-- Khối ví dụ thực tế (Chỉ hiển thị sau khi lật đáp án) -->
         <div class="example-box" id="exampleBox">
           <div class="ex-header-row">
             <span class="ex-label">Ví dụ</span>
@@ -144,6 +137,41 @@ function buildCardArea() {
           <div class="ex-line ex-py" id="exPy"></div>
           <div class="ex-line ex-vi" id="exVi"></div>
         </div>
+
+        <!-- Khối mở rộng học sâu: Accordion thu gọn mặc định cho Cấu tạo chữ & Chữ liên quan -->
+        <div class="card-expandable-group" id="cardExpandableGroup">
+          <details class="card-accordion" id="cardDecompAccordion" onclick="event.stopPropagation()" style="display: none;">
+            <summary class="card-accordion-summary">
+              <span class="accordion-left">
+                <span class="accordion-icon" aria-hidden="true">🧩</span>
+                <span class="accordion-title">Cấu tạo chữ</span>
+              </span>
+              <span class="accordion-chevron" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </summary>
+            <div class="card-accordion-body" id="cardDecompositionWrap">
+              <div class="card-radicals-row card-interactive" id="cardRadicalsRow" onclick="event.stopPropagation()"></div>
+            </div>
+          </details>
+
+          <details class="card-accordion" id="cardRelatedAccordion" onclick="event.stopPropagation()" style="display: none;">
+            <summary class="card-accordion-summary">
+              <span class="accordion-left">
+                <span class="accordion-icon" aria-hidden="true">🔗</span>
+                <span class="accordion-title">Chữ liên quan</span>
+                <span class="accordion-badge" id="cardRelatedCountBadge" hidden></span>
+              </span>
+              <span class="accordion-chevron" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </summary>
+            <div class="card-accordion-body">
+              <div class="card-related-wrap" id="cardRelatedWrap" onclick="event.stopPropagation()"></div>
+            </div>
+          </details>
+        </div>
+
         <div class="card-flip-prompt" id="cardFlipPrompt" onclick="flip()" role="button" tabindex="0" aria-label="Lật thẻ">
           <span class="card-flip-prompt-icon" aria-hidden="true">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -599,6 +627,11 @@ function ratingButtonsHtml(handlerName, previewIdPrefix, previews) {
       title="${titleText}">
       <span class="rating-icon-wrap" aria-hidden="true">${iconSvg}</span>
       <span class="rating-label">${button.label}</span>
+      <span class="rating-kbd-badge" aria-hidden="true">
+        <kbd>${button.key}</kbd>
+        <span class="rating-kbd-sep">/</span>
+        <kbd>${shortcutArrow}</kbd>
+      </span>
     </button>`;
   }).join('');
 }
@@ -1275,6 +1308,10 @@ function render(animate) {
     if (content) content.className = 'card-content';
     const card = document.getElementById('card');
     if (card) card.classList.remove('is-flipped');
+    const decompAcc = document.getElementById('cardDecompAccordion');
+    if (decompAcc) { decompAcc.open = false; }
+    const relatedAcc = document.getElementById('cardRelatedAccordion');
+    if (relatedAcc) { relatedAcc.open = false; }
     const wordMainBlock = document.getElementById('wordMainBlock');
     const cardEmptyState = document.getElementById('cardEmptyState');
     const exBox = document.getElementById('exampleBox');
@@ -1294,6 +1331,8 @@ function render(animate) {
     if (filteredOrder.length === 0) {
       if (wordMainBlock) wordMainBlock.style.display = 'none';
       if (exBox) { exBox.classList.remove('show'); exBox.style.display = 'none'; }
+      if (decompAcc) { decompAcc.open = false; decompAcc.style.display = 'none'; decompAcc.hidden = true; }
+      if (relatedAcc) { relatedAcc.open = false; relatedAcc.style.display = 'none'; relatedAcc.hidden = true; }
       if (hint) hint.style.display = 'none';
       const emptyHanzi = document.getElementById('hanzi');
       if (emptyHanzi) {

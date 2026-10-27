@@ -145,6 +145,7 @@ const RADICAL_COLOR_PALETTE = ['#38bdf8', '#fb923c', '#34d399', '#f43f5e', '#a78
 function renderCardRadicals(word) {
   const mount = document.getElementById('cardRadicalsRow');
   const wrap = document.getElementById('cardDecompositionWrap');
+  const accordion = document.getElementById('cardDecompAccordion');
   if (!mount) return;
 
   const hideDecomp = () => {
@@ -153,6 +154,11 @@ function renderCardRadicals(word) {
     if (wrap) {
       wrap.hidden = true;
       wrap.style.display = 'none';
+    }
+    if (accordion) {
+      accordion.hidden = true;
+      accordion.style.display = 'none';
+      accordion.open = false;
     }
     if (typeof syncCardSupportingGroup === 'function') syncCardSupportingGroup();
   };
@@ -188,9 +194,14 @@ function renderCardRadicals(word) {
       return;
     }
 
+    if (accordion) {
+      accordion.hidden = false;
+      accordion.style.display = 'block';
+      accordion.open = false;
+    }
     if (wrap) {
       wrap.hidden = false;
-      wrap.style.display = 'flex';
+      wrap.style.display = 'block';
     }
     mount.style.display = 'flex';
 

@@ -177,6 +177,12 @@ function flip() {
   } else if (!willShow && !showPinyin) {
     document.getElementById('pinyin').textContent = '';
   }
+  if (!willShow) {
+    const decompAcc = document.getElementById('cardDecompAccordion');
+    if (decompAcc) decompAcc.open = false;
+    const relatedAcc = document.getElementById('cardRelatedAccordion');
+    if (relatedAcc) relatedAcc.open = false;
+  }
   const hintEl = document.getElementById('hint');
   if (hintEl) {
     hintEl.textContent = typeof getCardHintText === 'function' ? getCardHintText(willShow) : (willShow ? 'Chạm vào thẻ để ẩn' : 'Chạm vào thẻ để xem nghĩa');

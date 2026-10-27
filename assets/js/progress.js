@@ -547,13 +547,13 @@ document.addEventListener('keydown', event => {
     if (typeof speakWord === 'function') speakWord();
     return;
   }
-  if (event.key === ' ') {
+  const revealed = typeof isCardRevealed === 'function' ? isCardRevealed() : false;
+  if (event.key === ' ' || (!revealed && (event.key === 'Enter' || event.key === 'ArrowDown'))) {
     if (document.activeElement && document.activeElement.closest('input, textarea, select')) return;
     event.preventDefault();
     flip();
     return;
   }
-  const revealed = typeof isCardRevealed === 'function' ? isCardRevealed() : false;
   if (event.key === 'ArrowRight') {
     if (document.activeElement && document.activeElement.closest('input, textarea, select')) return;
     event.preventDefault();

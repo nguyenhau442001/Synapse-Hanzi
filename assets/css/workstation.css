@@ -1795,6 +1795,12 @@ body.flashcard-study-mode .card-supporting-group {
   justify-content: center;
   gap: 12px;
 }
+body.flashcard-study-mode .card:not(.is-flipped) .pinyin-row,
+body.flashcard-study-mode .card:not(.is-flipped) .meaning,
+body.flashcard-study-mode .card:not(.is-flipped) .meta-badges-row,
+body.flashcard-study-mode .card:not(.is-flipped) .example-box,
+body.flashcard-study-mode .card:not(.is-flipped) .card-expandable-group,
+body.flashcard-study-mode .card:not(.is-flipped) .card-accordion,
 body.flashcard-study-mode .card:not(.is-flipped) .card-supporting-group,
 body.flashcard-study-mode .card:not(.is-flipped) .card-decomposition-wrap,
 body.flashcard-study-mode .card:not(.is-flipped) .card-related-wrap {
@@ -1821,7 +1827,8 @@ body.flashcard-study-mode .card-visual-col {
 }
 
 body.flashcard-study-mode .card:not(.is-flipped) .card-visual-col {
-  display: none !important;
+  display: flex !important;
+  margin: 10px auto 6px;
 }
 
 body.flashcard-study-mode.hide-illustrations .card-visual-col {
@@ -2111,8 +2118,10 @@ body.flashcard-study-mode #cardArea > .card.is-flipped {
 :root[data-theme="dark"] body.flashcard-study-mode #cardArea > .card.is-flipped {
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
 }
+body.flashcard-study-mode .card.is-flipped .pinyin-row,
 body.flashcard-study-mode .card.is-flipped .meaning,
 body.flashcard-study-mode .card.is-flipped .meta-badges-row,
+body.flashcard-study-mode .card.is-flipped .card-expandable-group,
 body.flashcard-study-mode .card.is-flipped .card-supporting-group,
 body.flashcard-study-mode .card.is-flipped .card-related-wrap,
 body.flashcard-study-mode .card.is-flipped .example-box {
@@ -2130,8 +2139,10 @@ body.flashcard-study-mode .card.is-flipped .example-box {
   }
 }
 @media (prefers-reduced-motion: reduce) {
+  body.flashcard-study-mode .card.is-flipped .pinyin-row,
   body.flashcard-study-mode .card.is-flipped .meaning,
   body.flashcard-study-mode .card.is-flipped .meta-badges-row,
+  body.flashcard-study-mode .card.is-flipped .card-expandable-group,
   body.flashcard-study-mode .card.is-flipped .card-supporting-group,
   body.flashcard-study-mode .card.is-flipped .example-box {
     animation: none;
