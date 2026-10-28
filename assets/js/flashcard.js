@@ -141,7 +141,7 @@ function buildCardArea() {
         <!-- Khối mở rộng học sâu: Accordion thu gọn mặc định cho Cấu tạo chữ & Chữ liên quan -->
         <div class="card-expandable-group" id="cardExpandableGroup">
           <details class="card-accordion" id="cardDecompAccordion" onclick="event.stopPropagation()" style="display: none;">
-            <summary class="card-accordion-summary">
+            <summary class="card-accordion-summary" onclick="event.stopPropagation()">
               <span class="accordion-left">
                 <span class="accordion-icon" aria-hidden="true">🧩</span>
                 <span class="accordion-title">Cấu tạo chữ</span>
@@ -156,7 +156,7 @@ function buildCardArea() {
           </details>
 
           <details class="card-accordion" id="cardRelatedAccordion" onclick="event.stopPropagation()" style="display: none;">
-            <summary class="card-accordion-summary">
+            <summary class="card-accordion-summary" onclick="event.stopPropagation()">
               <span class="accordion-left">
                 <span class="accordion-icon" aria-hidden="true">🔗</span>
                 <span class="accordion-title">Chữ liên quan</span>

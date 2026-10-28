@@ -15,6 +15,8 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
 INDEX_HTML = REPO_ROOT / "index.html"
 SW_JS = REPO_ROOT / "sw.js"
 CSS_DIR = REPO_ROOT / "assets" / "css"
@@ -908,6 +910,11 @@ def run_tests():
     suite.addTests(loader.loadTestsFromTestCase(TestLearningProgressNavigator))
     suite.addTests(loader.loadTestsFromTestCase(TestFlashcardExperienceRefinements))
     suite.addTests(loader.loadTestsFromTestCase(TestFastReviewLivesConfiguration))
+    try:
+        from tests.test_hanzi_flashcard_ux import TestHanziFlashcardUX
+        suite.addTests(loader.loadTestsFromTestCase(TestHanziFlashcardUX))
+    except ImportError:
+        pass
 
     runner = unittest.TextTestRunner(verbosity=2)
     result = runner.run(suite)
