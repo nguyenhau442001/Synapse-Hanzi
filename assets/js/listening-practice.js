@@ -510,26 +510,36 @@ const ListeningPractice = (function() {
     container.innerHTML = `
       <div class="listening-container">
         <!-- Compact Page Header -->
-        <header class="listening-top-nav">
+        <header class="listening-top-nav" aria-label="${progressText}">
           <div class="listening-nav-left">
             <button type="button" class="listening-back-btn" onclick="ListeningPractice.goBack()" title="Quay lại Hub">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
               <span>Trở về</span>
             </button>
-            <span class="listening-nav-breadcrumb">
-              <div class="listening-exam-picker-wrap">
-                <select class="listening-exam-select" onchange="ListeningPractice.switchExam(this.value)" aria-label="Chọn đề thi">
-                  ${AVAILABLE_EXAMS.map(e => `
-                    <option value="${e.id}" ${e.id === currentExamId ? 'selected' : ''}>HSK 4 · ${e.name}</option>
-                  `).join('')}
-                </select>
-              </div>
-              <span class="listening-nav-sep" aria-hidden="true">·</span>
-              <span class="listening-nav-question">${progressText}</span>
-            </span>
+            <div class="listening-exam-picker-wrap">
+              <select class="listening-exam-select" onchange="ListeningPractice.switchExam(this.value)" aria-label="Chọn đề thi">
+                ${AVAILABLE_EXAMS.map(e => `
+                  <option value="${e.id}" ${e.id === currentExamId ? 'selected' : ''}>HSK 4 · ${e.name}</option>
+                `).join('')}
+              </select>
+            </div>
           </div>
 
           <div class="listening-nav-right">
+            <!-- Rules Popover Trigger -->
+            <div class="listening-rules-wrap">
+              <button type="button" class="listening-rules-btn" id="listeningRulesBtn" onclick="ListeningPractice.toggleRulesDialog(event)" title="Xem quy chế thi & hướng dẫn" aria-label="Quy chế bài thi">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                <span>Quy chế</span>
+              </button>
+              <div class="listening-rules-popover" id="listeningRulesPopover" hidden>
+                <div class="listening-rules-popover-content">
+                  <p class="rules-popover-item"><strong>Quy chế thi thực tế:</strong> Mỗi câu nghe đúng 1 lần duy nhất.</p>
+                  <p class="rules-popover-item"><strong>Chế độ luyện tập:</strong> Nghe lại tùy ý, chỉnh tốc độ phát và xem lời thoại chi tiết sau khi trả lời.</p>
+                </div>
+              </div>
+            </div>
+
             <!-- Subtle Auto-Save Indicator -->
             <span class="listening-sync-indicator" title="Tiến trình học tự động lưu an toàn trên thiết bị này">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
@@ -704,19 +714,6 @@ const ListeningPractice = (function() {
               `;
             }).join('')}
           </div>
-
-          <div class="listening-rules-wrap">
-            <button type="button" class="listening-rules-btn" id="listeningRulesBtn" onclick="ListeningPractice.toggleRulesDialog(event)" title="Xem quy chế thi & hướng dẫn" aria-label="Quy chế bài thi">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-              <span>Quy chế</span>
-            </button>
-            <div class="listening-rules-popover" id="listeningRulesPopover" hidden>
-              <div class="listening-rules-popover-content">
-                <p class="rules-popover-item"><strong>Quy chế thi thực tế:</strong> Mỗi câu nghe đúng 1 lần duy nhất.</p>
-                <p class="rules-popover-item"><strong>Chế độ luyện tập:</strong> Nghe lại tùy ý, chỉnh tốc độ phát và xem lời thoại chi tiết sau khi trả lời.</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     `;
@@ -733,7 +730,7 @@ const ListeningPractice = (function() {
 
     return `
       <section class="listening-unified-card" aria-label="Bài tập luyện nghe">
-        <!-- 1. Streamlined Meta Bar (Title + Progress Map + Rules popover) -->
+        <!-- 1. Streamlined Meta Bar (Title + Progress Map) -->
         ${renderMetaBar()}
 
         <!-- 2. Statement Presentation (Immediate, Uncluttered, Front & Center) -->
@@ -774,7 +771,6 @@ const ListeningPractice = (function() {
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
             <span>Câu trước</span>
           </button>
-          <span class="listening-bottom-counter">${currentQuestion.question_number} / ${questions.length}</span>
           <button type="button" class="listening-nav-arrow-btn next ${learnerState.answered ? 'is-answered' : ''}" onclick="ListeningPractice.nextQuestion()" ${!hasNext ? 'disabled' : ''} title="Câu tiếp theo">
             <span>Câu tiếp theo</span>
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
