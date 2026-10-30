@@ -1,0 +1,53 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glowing atmospheric highlight behind subject -->
+  <circle cx="120" cy="120" r="70" fill="#252D3D" opacity="0.6"/>
+
+  <!-- Police K9 / German Shepherd Graphic Group -->
+  <g transform="translate(0, 5)">
+    <!-- Dog Body / Torso -->
+    <path d="M 95 130 L 90 175 L 155 175 L 145 130 Z" fill="#2D3748"/>
+    <path d="M 92 145 L 85 178 L 98 178 L 102 145 Z" fill="#1E2430"/>
+    <path d="M 138 145 L 142 178 L 155 178 L 148 145 Z" fill="#1E2430"/>
+
+    <!-- Dog Neck & Chest (Tan/Brown fur contrast) -->
+    <path d="M 95 105 L 95 135 L 145 135 L 145 105 Z" fill="#D97706"/>
+    <path d="M 100 115 L 140 115 L 145 140 L 95 140 Z" fill="#F59E0B"/>
+
+    <!-- Dog Head -->
+    <path d="M 95 85 L 105 115 L 135 115 L 145 85 L 120 70 Z" fill="#D97706"/>
+
+    <!-- Dog Snout -->
+    <path d="M 108 95 L 132 95 L 125 120 L 115 120 Z" fill="#B45309"/>
+    <!-- Dog Nose -->
+    <ellipse cx="120" cy="116" rx="6" ry="4" fill="#111827"/>
+    <!-- Dog Mouth Line -->
+    <path d="M 115 122 Q 120 126 125 122" stroke="#111827" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <!-- Dog Eyes -->
+    <circle cx="111" cy="90" r="3.5" fill="#111827"/>
+    <circle cx="129" cy="90" r="3.5" fill="#111827"/>
+    <circle cx="112" cy="89" r="1" fill="#FFFFFF"/>
+    <circle cx="130" cy="89" r="1" fill="#FFFFFF"/>
+
+    <!-- Dog Ears (Alert, pointed German Shepherd style) -->
+    <polygon points="97,72 85,42 107,65" fill="#B45309"/>
+    <polygon points="143,72 155,42 133,65" fill="#B45309"/>
+    <polygon points="98,68 90,48 104,63" fill="#D97706"/>
+    <polygon points="142,68 150,48 136,63" fill="#D97706"/>
+
+    <!-- Police K9 Tactical Harness Straps -->
+    <path d="M 95 112 L 145 112 L 142 132 L 98 132 Z" fill="#1E3A8A"/>
+    <path d="M 105 112 L 115 132" stroke="#3B82F6" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 135 112 L 125 132" stroke="#3B82F6" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Police K9 Badge / Emblem on Harness -->
+    <g transform="translate(112, 116)">
+      <polygon points="8,0 16,3 16,10 8,15 0,10 0,3" fill="#FBBF24"/>
+      <polygon points="8,2 14,4 14,9 8,13 2,9 2,4" fill="#1E3A8A"/>
+      <circle cx="8" cy="8" r="2.5" fill="#FBBF24"/>
+    </g>
+  </g>
+</svg>

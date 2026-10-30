@@ -1,0 +1,53 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Atmospheric Background Glow (Golden Autumn vibe) -->
+  <circle cx="120" cy="110" r="70" fill="#E5A93B" opacity="0.12" filter="blur(15px)"/>
+
+  <!-- Central Physical Object: Golden Rice Sheaf / Harvest Motif representing "时节" (seasonal harvest) -->
+  <g transform="translate(0, 10)">
+    <!-- Ground / Field base contour -->
+    <path d="M 60,165 Q 120,150 180,165 L 195,185 Q 120,205 45,185 Z" fill="#242B38"/>
+    <path d="M 75,172 Q 120,160 165,172" stroke="#E5A93B" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.4"/>
+
+    <!-- Rice Stems / Stalks -->
+    <g stroke="#D49431" stroke-width="3" stroke-linecap="round">
+      <line x1="120" y1="170" x2="120" y2="90"/>
+      <line x1="105" y1="172" x2="95" y2="105" transform="rotate(-8, 105, 172)"/>
+      <line x1="135" y1="172" x2="145" y2="105" transform="rotate(8, 135, 172)"/>
+      <line x1="90" y1="175" x2="70" y2="120" transform="rotate(-15, 90, 175)"/>
+      <line x1="150" y1="175" x2="170" y2="120" transform="rotate(15, 150, 175)"/>
+    </g>
+
+    <!-- Golden Rice Grains (Clusters) -->
+    <!-- Center cluster -->
+    <path d="M120,85 C112,85 110,75 120,65 C130,75 128,85 120,85 Z" fill="#F4C453"/>
+    <path d="M117,95 C109,95 107,85 117,75 C127,85 125,95 117,95 Z" fill="#F4C453"/>
+    <path d="M123,95 C115,95 113,85 123,75 C133,85 131,95 123,95 Z" fill="#F9D776"/>
+    <path d="M120,105 C112,105 110,95 120,85 C130,95 128,105 120,105 Z" fill="#F9D776"/>
+    
+    <!-- Left cluster -->
+    <path d="M92,100 C84,100 83,90 91,80 C101,90 100,100 92,100 Z" fill="#F4C453" transform="rotate(-8, 92, 100)"/>
+    <path d="M88,112 C80,112 79,102 87,92 C97,102 96,112 88,112 Z" fill="#F9D776" transform="rotate(-8, 88, 112)"/>
+    <path d="M95,120 C87,120 86,110 94,100 C104,110 103,120 95,120 Z" fill="#E5A93B" transform="rotate(-8, 95, 120)"/>
+
+    <!-- Right cluster -->
+    <path d="M148,100 C140,100 139,90 147,80 C157,90 156,100 148,100 Z" fill="#F9D776" transform="rotate(8, 148, 100)"/>
+    <path d="M152,112 C144,112 143,102 151,92 C161,102 160,112 152,112 Z" fill="#F4C453" transform="rotate(8, 152, 112)"/>
+    <path d="M145,120 C137,120 136,110 144,100 C154,110 153,120 145,120 Z" fill="#E5A93B" transform="rotate(8, 145, 120)"/>
+
+    <!-- Outer low clusters -->
+    <path d="M68,125 C60,125 60,115 68,105 C78,115 76,125 68,125 Z" fill="#E5A93B" transform="rotate(-15, 68, 125)"/>
+    <path d="M172,125 C164,125 164,115 172,105 C182,115 180,125 172,125 Z" fill="#F4C453" transform="rotate(15, 172, 125)"/>
+
+    <!-- Red Ribbon/Tie binding the harvest bundle (representing season/festival significance) -->
+    <path d="M 105,145 Q 120,150 135,145 L 138,155 Q 120,162 102,155 Z" fill="#E05648"/>
+    <path d="M 112,151 L 100,168 L 108,171 L 118,154 Z" fill="#C73E32"/>
+    <path d="M 128,151 L 140,168 L 132,171 L 122,154 Z" fill="#E05648"/>
+  </g>
+
+  <!-- Seasonal Sun / Calendar Motif Accent in sky (subtle minimalist circle badge representing time/season) -->
+  <circle cx="120" cy="45" r="14" fill="none" stroke="#F9D776" stroke-width="2.5" stroke-dasharray="6 4" opacity="0.7"/>
+  <circle cx="120" cy="45" r="7" fill="#F9D776" opacity="0.9"/>
+</svg>

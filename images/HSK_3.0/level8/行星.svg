@@ -1,0 +1,51 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Starry space background elements -->
+  <circle cx="50" cy="60" r="1" fill="#4A5568" opacity="0.6"/>
+  <circle cx="190" cy="40" r="1.5" fill="#E2E8F0" opacity="0.8"/>
+  <circle cx="210" cy="180" r="1" fill="#4A5568" opacity="0.5"/>
+  <circle cx="40" cy="190" r="1.2" fill="#E2E8F0" opacity="0.7"/>
+  <circle cx="90" cy="210" r="0.8" fill="#4A5568" opacity="0.6"/>
+  <circle cx="200" cy="100" r="0.8" fill="#E2E8F0" opacity="0.5"/>
+  <circle cx="60" cy="120" r="1.5" fill="#E2E8F0" opacity="0.4"/>
+
+  <!-- Distant red dwarf star glow -->
+  <circle cx="120" cy="120" r="90" fill="#E53E3E" opacity="0.05"/>
+  <circle cx="120" cy="120" r="60" fill="#E53E3E" opacity="0.08"/>
+
+  <!-- Orbit line -->
+  <ellipse cx="120" cy="120" rx="75" ry="45" fill="none" stroke="#2D3748" stroke-width="1.5" stroke-dasharray="4 4" transform="rotate(-25 120 120)"/>
+
+  <!-- Planet system (The rocky exoplanet and atmosphere) -->
+  <g transform="rotate(-25 120 120)">
+    <!-- Atmosphere glow / Habitable zone indicator -->
+    <circle cx="195" cy="120" r="22" fill="#319795" opacity="0.2"/>
+
+    <!-- Planet Body (Rocky exoplanet) -->
+    <circle cx="195" cy="120" r="18" fill="#2B6CB0"/>
+
+    <!-- Planet Surface details (Continents / Terrain) -->
+    <path d="M 183 112 C 188 108, 196 110, 203 114 C 208 117, 205 125, 200 128 C 193 132, 185 128, 181 122 Z" fill="#2F855A"/>
+    <path d="M 188 130 C 193 132, 198 129, 204 133 C 200 137, 190 136, 188 130 Z" fill="#2F855A"/>
+    <path d="M 185 106 C 190 102, 195 105, 192 109 C 188 111, 183 108, 185 106 Z" fill="#EDF2F7" opacity="0.8"/>
+
+    <!-- Terminator shadow (lighting from center star) -->
+    <path d="M 195 102 A 18 18 0 0 0 195 138 A 12 18 0 0 1 195 102 Z" fill="#000000" opacity="0.45"/>
+  </g>
+
+  <!-- Central Star (Red Dwarf) -->
+  <g>
+    <!-- Outer glow -->
+    <circle cx="120" cy="120" r="28" fill="#DD6B20" opacity="0.2"/>
+    <circle cx="120" cy="120" r="20" fill="#DD6B20" opacity="0.4"/>
+    <!-- Star core -->
+    <circle cx="120" cy="120" r="13" fill="#F6AD55"/>
+    <circle cx="120" cy="120" r="9" fill="#FEEBC8"/>
+  </g>
+
+  <!-- Focus accent / scientific measurement reticle bracket (subtle, non-ui) -->
+  <path d="M 175 95 L 171 95 L 171 99" fill="none" stroke="#F6AD55" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 219 145 L 223 145 L 223 141" fill="none" stroke="#F6AD55" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+</svg>

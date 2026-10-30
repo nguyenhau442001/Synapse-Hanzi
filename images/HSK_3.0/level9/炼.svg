@@ -1,0 +1,42 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambient Glow for the Forge/Heat -->
+  <circle cx="120" cy="120" r="70" fill="#FF5722" opacity="0.08"/>
+
+  <!-- Tongs holding a sword/metal blade being tempered/forged (Physical Object representing "炼" - tôi luyện) -->
+  <g transform="translate(0, 0)">
+    <!-- Anvil Base -->
+    <path d="M75 165 H165 L155 145 H85 Z" fill="#4B5563"/>
+    <path d="M95 145 H145 V125 H95 Z" fill="#6B7280"/>
+    <!-- Anvil Horn -->
+    <path d="M95 125 H65 C65 125 75 120 85 125 H95 Z" fill="#6B7280"/>
+    <!-- Anvil Top Face -->
+    <path d="M90 120 H150 V125 H90 Z" fill="#9CA3AF"/>
+
+    <!-- Sparks / Heat Particles -->
+    <circle cx="105" cy="95" r="2" fill="#FBBF24"/>
+    <circle cx="135" cy="85" r="2.5" fill="#F59E0B"/>
+    <circle cx="145" cy="105" r="1.5" fill="#EF4444"/>
+    <circle cx="95" cy="110" r="2" fill="#FBBF24"/>
+    <path d="M120 70 L122 76 L118 76 Z" fill="#F59E0B"/>
+    <path d="M140 75 L141 79 L138 78 Z" fill="#EF4444"/>
+
+    <!-- Blacksmith Tongs (Left arm) -->
+    <path d="M60 90 L105 118" stroke="#374151" stroke-width="6" stroke-linecap="round"/>
+    <!-- Blacksmith Tongs (Right arm) -->
+    <path d="M80 70 L112 114" stroke="#374151" stroke-width="6" stroke-linecap="round"/>
+    <!-- Tongs Pivot Pin -->
+    <circle cx="71" cy="81" r="3" fill="#111827"/>
+
+    <!-- The Forged Blade (Glowing Hot at the tip) -->
+    <!-- Handle -->
+    <path d="M60 90 L45 99" stroke="#92400E" stroke-width="5" stroke-linecap="round"/>
+    <!-- Blade Body -->
+    <path d="M100 115 L165 75 C175 69 178 72 173 78 L125 125 Z" fill="#E5E7EB"/>
+    <!-- Glowing Hot Edge / Quenched Part -->
+    <path d="M140 95 L165 75 C175 69 178 72 173 78 L152 98 Z" fill="#F97316"/>
+    <path d="M152 86 L165 75 C172 71 174 73 171 77 Z" fill="#FDE047"/>
+  </g>
+</svg>

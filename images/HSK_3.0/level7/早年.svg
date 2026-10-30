@@ -1,0 +1,65 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Atmospheric background glow representing memory/early years -->
+  <circle cx="120" cy="115" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Conceptual Representation of "早年" (Early years / Youth of a scholar/person) -->
+  <!-- We depict a youthful scholar/student silhouette with a glowing pathway of books and an ascending sun/horizon, symbolizing the beginning of life's journey and studies -->
+
+  <!-- Horizon / Path representing early life trajectory -->
+  <path d="M 60 170 L 180 170" stroke="#303642" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Rising sun / dawn accent (symbolizing "早" - early/dawn of life) -->
+  <circle cx="120" cy="110" r="32" fill="#E5A93B" opacity="0.15"/>
+  <circle cx="120" cy="110" r="22" fill="#E5A93B" opacity="0.3"/>
+  <path d="M 100 110 A 20 20 0 0 1 140 110 Z" fill="#F39C12"/>
+
+  <!-- Stack of foundational books (representing early study / 求学深造) -->
+  <g transform="translate(0, 10)">
+    <!-- Bottom book -->
+    <rect x="85" y="150" width="70" height="12" rx="3" fill="#3A4252"/>
+    <rect x="90" y="153" width="60" height="6" fill="#4E5A70"/>
+
+    <!-- Middle book -->
+    <rect x="80" y="139" width="80" height="13" rx="3" fill="#2980B9"/>
+    <rect x="86" y="143" width="68" height="6" fill="#3498DB"/>
+
+    <!-- Top book (open/learning) -->
+    <path d="M 85 130 C 95 125 115 127 120 130 C 125 127 145 125 155 130 L 155 139 C 145 134 125 136 120 139 C 115 136 95 134 85 139 Z" fill="#E74C3C"/>
+    <path d="M 120 130 L 120 139" stroke="#C0392B" stroke-width="2"/>
+  </g>
+
+  <!-- Young character / Student figure looking forward into their early career/studies -->
+  <g transform="translate(0, 4)">
+    <!-- Body / Torso -->
+    <path d="M 96 125 C 96 115 106 110 120 110 C 134 110 144 115 144 125 L 148 135 L 92 135 Z" fill="#34495E"/>
+    <!-- Collar / Academic scarf hint -->
+    <polygon points="113,113 120,123 127,113" fill="#ECF0F1"/>
+
+    <!-- Neck -->
+    <rect x="115" y="100" width="10" height="12" fill="#F1C27D"/>
+
+    <!-- Head (youthful profile/front facing forward and upward) -->
+    <circle cx="120" cy="88" r="15" fill="#F1C27D"/>
+
+    <!-- Hair (youthful modern cut) -->
+    <path d="M 105 88 C 105 76 112 72 120 72 C 128 72 135 76 135 88 C 135 90 134 91 133 91 C 110 93 107 90 105 88 Z" fill="#2C3E50"/>
+    <path d="M 106 83 C 108 78 114 74 121 73 C 113 74 107 79 106 83 Z" fill="#34495E"/>
+
+    <!-- Graduation cap / Academic symbol floating subtly to represent the scholarly pursuit in early years -->
+    <polygon points="120,52 142,60 120,68 98,60" fill="#2C3E50"/>
+    <polygon points="120,53 140,60 120,67 100,60" fill="#34495E"/>
+    <rect x="117" y="66" width="6" height="5" fill="#2C3E50"/>
+    <!-- Tassel -->
+    <path d="M 131 63 Q 138 68 136 74" fill="none" stroke="#F1C27D" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="136" cy="75" r="1.5" fill="#F1C27D"/>
+  </g>
+
+  <!-- Subtle glowing accent marks framing the concept of "early years / youth" -->
+  <circle cx="70" cy="110" r="2.5" fill="#F39C12" opacity="0.8"/>
+  <circle cx="170" cy="110" r="2.5" fill="#F39C12" opacity="0.8"/>
+  <circle cx="145" cy="85" r="1.5" fill="#F39C12" opacity="0.6"/>
+  <circle cx="95" cy="85" r="1.5" fill="#F39C12" opacity="0.6"/>
+</svg>

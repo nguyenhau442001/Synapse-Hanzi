@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative glow representing celebration/tradition -->
+  <circle cx="120" cy="115" r="70" fill="#252A34"/>
+  <circle cx="120" cy="115" r="55" fill="#2D3446"/>
+
+  <!-- Birthday Cake for "周岁" (Turning 1 year old) -->
+  <!-- Cake Base Tier -->
+  <path d="M 85,150 L 155,150 C 160,150 160,180 155,185 L 85,185 C 80,180 80,150 85,150 Z" fill="#E0A96D"/>
+  <!-- Cake Base Frosting / Decoration -->
+  <path d="M 84,152 C 92,159 100,148 108,155 C 116,162 124,148 132,155 C 140,162 148,148 156,152 L 155,165 L 85,165 Z" fill="#F4D35E"/>
+  
+  <!-- Cake Top Tier -->
+  <path d="M 95,120 L 145,120 C 148,120 148,148 145,150 L 95,150 C 92,148 92,120 95,120 Z" fill="#EE6C4D"/>
+  <!-- Cake Top Frosting -->
+  <path d="M 94,122 C 101,128 107,118 114,125 C 120,132 127,118 134,125 C 140,132 147,122 146,122 L 145,135 L 95,135 Z" fill="#FAF0CA"/>
+
+  <!-- The "1" Candle in the center -->
+  <!-- Candle Body -->
+  <rect x="113" y="80" width="14" height="42" rx="3" fill="#EAEAEA"/>
+  <!-- Candle Stripes -->
+  <path d="M 113,90 L 127,96 L 127,102 L 113,96 Z" fill="#EE6C4D" opacity="0.8"/>
+  <path d="M 113,106 L 127,112 L 127,118 L 113,112 Z" fill="#EE6C4D" opacity="0.8"/>
+
+  <!-- Flame -->
+  <path d="M 120,72 C 125,65 125,56 120,50 C 115,56 115,65 120,72 Z" fill="#F4D35E"/>
+  <!-- Inner Flame Brightness -->
+  <path d="M 120,68 C 122,63 122,58 120,54 C 118,58 118,63 120,68 Z" fill="#FAF0CA"/>
+
+  <!-- Festive Confetti / Stars around -->
+  <circle cx="70" cy="90" r="3" fill="#F4D35E"/>
+  <circle cx="170" cy="100" r="2.5" fill="#EE6C4D"/>
+  <circle cx="85" cy="65" r="2" fill="#E0A96D"/>
+  <circle cx="155" cy="75" r="3" fill="#FAF0CA"/>
+  <circle cx="65" cy="140" r="2" fill="#FAF0CA"/>
+  <circle cx="175" cy="145" r="2.5" fill="#F4D35E"/>
+
+  <!-- Base Plate / Tray -->
+  <ellipse cx="120" cy="188" rx="55" ry="8" fill="#3A404D"/>
+  <ellipse cx="120" cy="186" rx="50" ry="6" fill="#4F5665"/>
+</svg>

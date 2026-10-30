@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Table -->
+  <path d="M60 170 L180 170 L170 190 L70 190 Z" fill="#343A46"/>
+  <path d="M70 190 L80 210 L160 210 L170 190 Z" fill="#262A33"/>
+  
+  <!-- Chairs -->
+  <rect x="75" y="175" width="20" height="30" rx="4" fill="#4A5568"/>
+  <rect x="145" y="175" width="20" height="30" rx="4" fill="#4A5568"/>
+  
+  <!-- Characters -->
+  <circle cx="85" cy="140" r="15" fill="#FFB86C"/>
+  <path d="M70 155 Q85 170 100 155" fill="#FFB86C"/>
+  
+  <circle cx="155" cy="140" r="15" fill="#FFB86C"/>
+  <path d="M140 155 Q155 170 170 155" fill="#FFB86C"/>
+  
+  <!-- Books/Literary items on table -->
+  <rect x="90" y="160" width="25" height="10" rx="1" fill="#FF79C6"/>
+  <rect x="120" y="162" width="20" height="8" rx="1" fill="#8BE9FD"/>
+  
+  <!-- Coffee cup -->
+  <rect x="110" y="150" width="12" height="12" rx="2" fill="#F8F8F2"/>
+  <path d="M122 152 h4 a2 2 0 0 1 2 2 v4 a2 2 0 0 1 -2 2 h-4" fill="none" stroke="#F8F8F2" stroke-width="2"/>
+  
+  <!-- Ambient light/atmosphere -->
+  <circle cx="120" cy="100" r="40" fill="none" stroke="#343A46" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>

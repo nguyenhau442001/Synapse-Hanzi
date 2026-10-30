@@ -1,0 +1,30 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Floor -->
+  <path d="M40 190 L200 190" stroke="#343A46" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Host Character (Sitting on a chair) -->
+  <g transform="translate(140, 140)">
+    <path d="M-10 45 L10 45 L10 20 L-10 20 Z" fill="#FFB86C"/> <!-- Chair leg/base -->
+    <circle cx="0" cy="0" r="15" fill="#FFB86C"/> <!-- Head -->
+    <path d="M-15 15 L15 15 L10 40 L-10 40 Z" fill="#FFB86C"/> <!-- Body -->
+    <path d="M-20 20 L-35 35" stroke="#FFB86C" stroke-width="6" stroke-linecap="round"/> <!-- Arm gesturing -->
+  </g>
+  
+  <!-- Guest Character (Standing/Arriving) -->
+  <g transform="translate(80, 140)">
+    <circle cx="0" cy="-10" r="15" fill="#8BE9FD"/> <!-- Head -->
+    <path d="M-15 5 L15 5 L10 45 L-10 45 Z" fill="#8BE9FD"/> <!-- Body -->
+    <path d="M-25 15 L-40 25" stroke="#8BE9FD" stroke-width="6" stroke-linecap="round"/> <!-- Arm waving -->
+    <path d="M15 15 L30 25" stroke="#8BE9FD" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Motion lines indicating arrival/interaction -->
+  <path d="M50 120 Q65 110 80 120" stroke="#44475A" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
+  <path d="M40 110 Q60 95 80 110" stroke="#44475A" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
+  
+  <!-- Doorway/Home indicator -->
+  <path d="M180 180 L180 80 L210 80 L210 180" stroke="#6272A4" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M195 130 L195 180" stroke="#6272A4" stroke-width="2"/>
+</svg>

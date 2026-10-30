@@ -1,0 +1,31 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Stage Spotlight Effect -->
+  <ellipse cx="120" cy="120" rx="90" ry="90" fill="#252932"/>
+  
+  <!-- Actor Character -->
+  <g transform="translate(60, 50)">
+    <!-- Body -->
+    <path d="M60 140 C60 120, 80 110, 120 110 C160 110, 180 120, 180 140 L180 180 L60 180 Z" fill="#3D4451"/>
+    
+    <!-- Head -->
+    <circle cx="120" cy="80" r="30" fill="#FFC107"/>
+    
+    <!-- Expression: Focused/Deeply engaged -->
+    <path d="M105 75 Q110 70 115 75" stroke="#1A1D24" stroke-width="2" fill="none"/>
+    <path d="M125 75 Q130 70 135 75" stroke="#1A1D24" stroke-width="2" fill="none"/>
+    <path d="M110 90 Q120 95 130 90" stroke="#1A1D24" stroke-width="2" fill="none"/>
+    
+    <!-- Arms gesturing "Interpretation" -->
+    <path d="M90 120 L70 150" stroke="#FFC107" stroke-width="12" stroke-linecap="round"/>
+    <path d="M150 120 L170 150" stroke="#FFC107" stroke-width="12" stroke-linecap="round"/>
+  </g>
+
+  <!-- The "Inner World" Projection (The interpretation) -->
+  <g transform="translate(120, 120)">
+    <path d="M-40 -20 L40 -20 L20 40 L-20 40 Z" fill="#FF9800" opacity="0.8"/>
+    <circle cx="0" cy="0" r="15" fill="#FFFFFF" opacity="0.2"/>
+    <path d="M-20 -10 L20 -10 M-15 0 L15 0 M-10 10 L10 10" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

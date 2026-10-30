@@ -1,27 +1,8 @@
-<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#1e293b"/>
-    </linearGradient>
-  </defs>
-  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
-  
-  <g transform="translate(60, 40)">
-    <path d="M40 160 L80 160 L75 40 L45 40 Z" fill="#38bdf8" opacity="0.3"/>
-    <path d="M40 160 L80 160 C85 160 90 155 90 150 L70 40 L50 40 L30 150 C30 155 35 160 40 160" fill="#38bdf8"/>
-    <path d="M50 50 L70 50 L65 150 L55 150 Z" fill="#e0f2fe" opacity="0.2"/>
-    <ellipse cx="60" cy="160" rx="20" ry="6" fill="#0f172a" opacity="0.4"/>
-    <circle cx="50" cy="80" r="4" fill="#ffffff" opacity="0.6"/>
-    <circle cx="65" cy="110" r="3" fill="#ffffff" opacity="0.4"/>
-  </g>
-
-  <path d="M120 180 L200 180 L190 195 L130 195 Z" fill="#fb923c"/>
-  <path d="M130 195 L190 195 L185 205 L135 205 Z" fill="#f59e0b"/>
-  
-  <circle cx="180" cy="60" r="15" fill="#fbbf24" opacity="0.2"/>
-  <circle cx="180" cy="60" r="8" fill="#fbbf24" opacity="0.4"/>
-  
-  <path d="M30 190 Q60 170 90 190 T150 190" stroke="#10b981" stroke-width="4" fill="none" stroke-linecap="round"/>
-  <path d="M20 210 Q50 190 80 210 T140 210" stroke="#10b981" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+  <path d="M50 16 Q36 40 36 54 A14 14 0 0 0 64 54 Q64 40 50 16 Z" fill="#38bdf8" opacity="0.14"/>
+  <path d="M50 18 V78 Q50 84 42 80" stroke="#38bdf8" stroke-width="4.8" stroke-linecap="round" fill="none"/>
+  <path d="M22 42 H38 L24 64" stroke="#0ea5e9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M74 34 Q62 46 52 50" stroke="#0ea5e9" stroke-width="4" stroke-linecap="round"/>
+  <path d="M54 54 Q66 70 78 78" stroke="#0ea5e9" stroke-width="4.2" stroke-linecap="round"/>
 </svg>

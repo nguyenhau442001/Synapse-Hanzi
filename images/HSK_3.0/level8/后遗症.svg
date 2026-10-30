@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Head silhouette representing the patient -->
+  <path d="M120 60c-33.1 0-60 26.9-60 60s26.9 60 60 60 60-26.9 60-60-26.9-60-60-60z" fill="#2C3440"/>
+  
+  <!-- Brain area with a highlighted "after-effect" zone -->
+  <path d="M100 90c-5-10-15-15-25-10-10 5-15 20-5 30l10 5" stroke="#FFB84D" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M140 100c10-5 20 0 25 10s5 20-5 25" stroke="#FFB84D" stroke-width="4" stroke-linecap="round" fill="none"/>
+  
+  <!-- Persistent mark/shadow representing the lingering "after-effect" (di chứng) -->
+  <path d="M90 130c10 10 30 10 40 0" stroke="#FF9F1A" stroke-width="6" stroke-linecap="round" fill="none"/>
+  
+  <!-- Subtle ripple/echo lines indicating the lingering nature of the condition -->
+  <circle cx="120" cy="120" r="40" stroke="#3E4A59" stroke-width="2" stroke-dasharray="4 8" fill="none"/>
+  <circle cx="120" cy="120" r="55" stroke="#3E4A59" stroke-width="2" stroke-dasharray="4 12" fill="none"/>
+  
+  <!-- Focal point: A stylized medical cross marker indicating the origin of the trauma -->
+  <rect x="115" y="115" width="10" height="10" fill="#FFB84D" rx="2"/>
+</svg>

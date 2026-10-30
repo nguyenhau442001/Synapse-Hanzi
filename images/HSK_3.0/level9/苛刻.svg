@@ -1,0 +1,36 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for focus -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.5"/>
+
+  <!-- Central Physical Object representing "苛刻" (Strict, harsh, exacting standards/filter) -->
+  <!-- A high-precision mechanical magnifying glass and micro-filter mechanism inspecting a single document/credential, representing severe harsh scrutiny. -->
+
+  <g transform="translate(0, 0)">
+    <!-- Document background (Applicant's academic record) -->
+    <rect x="75" y="75" width="90" height="110" rx="4" fill="#2D333B" stroke="#4F5660" stroke-width="2"/>
+    <!-- Document lines representing text -->
+    <line x1="90" y1="95" x2="135" y2="95" stroke="#636E7B" stroke-width="4" stroke-linecap="round"/>
+    <line x1="90" y1="115" x2="150" y2="115" stroke="#636E7B" stroke-width="4" stroke-linecap="round"/>
+    <line x1="90" y1="135" x2="120" y2="135" stroke="#636E7B" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Red rejection stamp overlay angled sharply, symbolizing the harsh "苛刻" filtering -->
+    <g transform="rotate(-15 120 130)">
+      <rect x="92" y="115" width="56" height="24" rx="3" fill="none" stroke="#FF5C5C" stroke-width="3"/>
+      <path d="M 98 122 L 142 132 M 142 122 L 98 132" stroke="#FF5C5C" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Magnifying Glass / Precision Instrument hovering over, with high-contrast accent color (Gold/Orange) -->
+    <circle cx="130" cy="110" r="45" fill="none" stroke="#F59E0B" stroke-width="6" opacity="0.9"/>
+    <circle cx="130" cy="110" r="42" fill="#1A1D24" fill-opacity="0.3"/>
+    
+    <!-- Handle of the magnifying glass -->
+    <path d="M 160 140 L 195 175" stroke="#F59E0B" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="198" cy="178" r="4" fill="#F59E0B"/>
+
+    <!-- Sharp focus crosshairs inside the lens -->
+    <line x1="130" y1="95" x2="130" y2="125" stroke="#FF5C5C" stroke-width="2"/>
+    <line x1="115" y1="110" x2="145" y2="110" stroke="#FF5C5C" stroke-width="2"/>
+  </g>
+</svg>

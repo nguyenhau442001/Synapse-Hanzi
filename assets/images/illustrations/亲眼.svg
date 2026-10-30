@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Face/Head Profile -->
+  <path d="M120 60c-33.1 0-60 26.9-60 60s26.9 60 60 60 60-26.9 60-60-26.9-60-60-60z" fill="#2D343E"/>
+  
+  <!-- Eye Focus Area -->
+  <g transform="translate(120, 120)">
+    <!-- Eye Socket -->
+    <circle cx="0" cy="0" r="35" fill="#1A1D24" stroke="#FFB347" stroke-width="3"/>
+    
+    <!-- Pupil/Iris -->
+    <circle cx="0" cy="0" r="12" fill="#FFB347"/>
+    
+    <!-- Focus Lines (Visualizing the act of seeing) -->
+    <path d="M40 0 L80 0" stroke="#FFB347" stroke-width="4" stroke-linecap="round"/>
+    <path d="M48 -15 L75 -35" stroke="#FFB347" stroke-width="3" stroke-linecap="round"/>
+    <path d="M48 15 L75 35" stroke="#FFB347" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- The "Object" being seen - A stylized star/event -->
+    <path d="M100 0 L110 20 L130 20 L115 35 L120 55 L100 45 L80 55 L85 35 L70 20 L90 20 Z" fill="#FFB347"/>
+  </g>
+  
+  <!-- Subtle facial features -->
+  <path d="M95 140 Q120 155 145 140" stroke="#4A5568" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

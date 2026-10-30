@@ -1,0 +1,77 @@
+/* tokens.css - Core Design Tokens for Synapse Hanzi */
+:root {
+  /* Surfaces */
+  --bg-canvas: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-elevated: #f1f5f9;
+
+  /* Typography Colors */
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-tertiary: #475569;
+  --text-muted: #64748b;
+
+  /* Borders & Dividers */
+  --border-subtle: #e2e8f0;
+  --border-strong: #cbd5e1;
+
+  /* Brand & Accent (Terracotta Zen) */
+  --brand-primary: #c05624;
+  --brand-primary-hover: #aa4b1e;
+  --accent: #c05624;
+  --accent-hover: #aa4b1e;
+  --accent-light: #fff7ed;
+  --on-accent: #ffffff;
+
+  /* Semantic Status */
+  --status-success: #2e7d5a;
+  --status-warning: #996e1e;
+  --status-danger: #dc2626;
+  --status-info: #2563eb;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px 0 rgba(15, 23, 42, 0.08), 0 1px 2px -1px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Fonts */
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-hanzi: 'Noto Sans SC', 'PingFang SC', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+:root[data-theme="dark"] {
+  --bg-canvas: #141719;
+  --bg-surface: #1C2022;
+  --bg-elevated: #252A2C;
+
+  --text-primary: #E4E5E2;
+  --text-secondary: #A5AAA7;
+  --text-tertiary: #828A86;
+  --text-muted: #828A86;
+
+  --border-subtle: #343A3C;
+  --border-strong: #454D50;
+
+  --brand-primary: #DB8957;
+  --brand-primary-hover: #E5A075;
+  --accent: #DB8957;
+  --accent-hover: #E5A075;
+  --accent-light: #2A2421;
+  --on-accent: #ffffff;
+
+  --status-success: #72B99A;
+  --status-warning: #D2AD6E;
+  --status-danger: #F87171;
+  --status-info: #60A5FA;
+
+  --shadow-sm: 0 2px 6px -1px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 4px 12px -2px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 8px 24px -4px rgba(0, 0, 0, 0.45);
+}

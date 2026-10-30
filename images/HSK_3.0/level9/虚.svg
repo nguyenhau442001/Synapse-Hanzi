@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative technical/scholarly grid lines (faint, subtle background) -->
+  <line x1="40" y1="120" x2="200" y2="120" stroke="#2A2F3D" stroke-width="1" stroke-dasharray="4 4" opacity="0.5"/>
+  <line x1="120" y1="40" x2="120" y2="200" stroke="#2A2F3D" stroke-width="1" stroke-dasharray="4 4" opacity="0.5"/>
+
+  <!-- Conceptual Object: A decorative, ornate structural frame (架子) that looks impressive on the outside, but is completely hollow, flimsy, and empty on the inside (華而不實 / 空花架子) -->
+  
+  <!-- Outer glowing aura / deceptive facade (gold/orange accent for 'show' / 作秀) -->
+  <polygon points="120,45 180,85 180,155 120,195 60,155 60,85" fill="none" stroke="#FFB703" stroke-width="2" opacity="0.3" stroke-dasharray="6 3"/>
+
+  <!-- The "Facade" - An elaborate, flashy geometric structure (ornate outward appearance) -->
+  <path d="M120,55 L170,88 L170,152 L120,185 L70,152 L70,88 Z" fill="#252A37" stroke="#3A4255" stroke-width="3"/>
+  
+  <!-- Decorative front pillars / facade elements that look substantial from afar -->
+  <line x1="95" y1="72" x2="95" y2="168" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+  <line x1="145" y1="72" x2="145" y2="168" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+  <path d="M95,100 L145,100" stroke="#4A5568" stroke-width="3"/>
+  <path d="M95,140 L145,140" stroke="#4A5568" stroke-width="3"/>
+
+  <!-- THE CORE MEANING: Hollow, empty interior (虚 - Trống rỗng, giả tạo, không có thực chất) -->
+  <!-- A stark, illuminated empty void in the center showing nothing inside -->
+  <circle cx="120" cy="120" r="32" fill="#14171E" stroke="#FFB703" stroke-width="2" stroke-dasharray="5 3"/>
+  
+  <!-- Subtle void cross-section lines indicating absolute emptiness/hollowness -->
+  <line x1="102" y1="120" x2="138" y2="120" stroke="#FFB703" stroke-width="1.5" opacity="0.6"/>
+  <line x1="120" y1="102" x2="120" y2="138" stroke="#FFB703" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Floating illusory debris / superficial sparkles (华而不实 - flashy surface with zero substance) -->
+  <circle cx="155" cy="75" r="3" fill="#FFB703"/>
+  <circle cx="85" cy="165" r="2" fill="#FFB703"/>
+  <polygon points="75,80 78,85 73,85" fill="#FFB703" opacity="0.8"/>
+  <polygon points="165,160 168,165 163,165" fill="#FFB703" opacity="0.8"/>
+
+  <!-- Subtle warning / contrast indicators (Ground truth: solid base missing) -->
+  <path d="M90,195 L150,195" stroke="#E63946" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <line x1="120" y1="190" x2="120" y2="200" stroke="#E63946" stroke-width="2" opacity="0.7"/>
+</svg>

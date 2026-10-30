@@ -1,0 +1,36 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Monument base/steps -->
+    <path d="M70,185 L170,185 L160,195 L80,195 Z" fill="#4B5563"/>
+    <path d="M80,172 L160,172 L150,185 L90,185 Z" fill="#6B7280"/>
+    
+    <!-- Main Monument Pillar (Stele representing Revolutionary Martyrs) -->
+    <path d="M95,65 L145,65 L140,172 L100,172 Z" fill="#374151"/>
+    <!-- Subtle gradient reflection on monument -->
+    <path d="M115,65 L135,65 L130,172 L110,172 Z" fill="#4B5563" opacity="0.5"/>
+    
+    <!-- Red Star Emblem at top of monument (Traditional symbol for revolutionary martyrs in China) -->
+    <polygon points="120,40 123.5,48.5 132.5,49 125.5,54.5 128,63 120,58 112,63 114.5,54.5 107.5,49 116.5,48.5" fill="#EF4444"/>
+    
+    <!-- Golden decorative trim on monument -->
+    <line x1="97" y1="65" x2="143" y2="65" stroke="#F59E0B" stroke-width="2"/>
+    
+    <!-- White Chrysanthemum Memorial Wreath / Flowers at base (Qingming Festival tribute context) -->
+    <ellipse cx="120" cy="168" rx="25" ry="6" fill="#1F2937"/>
+    
+    <!-- Stylized White Memorial Flowers -->
+    <circle cx="108" cy="165" r="5" fill="#F3F4F6"/>
+    <circle cx="120" cy="163" r="6" fill="#FFFFFF"/>
+    <circle cx="132" cy="165" r="5" fill="#F3F4F6"/>
+    
+    <!-- Center yellow pistil dots -->
+    <circle cx="108" cy="165" r="1.5" fill="#F59E0B"/>
+    <circle cx="120" cy="163" r="2" fill="#F59E0B"/>
+    <circle cx="132" cy="165" r="1.5" fill="#F59E0B"/>
+    
+    <!-- Ground glow / ambient lighting -->
+    <ellipse cx="120" cy="198" rx="60" ry="4" fill="#111827" opacity="0.8"/>
+  </g>
+</svg>

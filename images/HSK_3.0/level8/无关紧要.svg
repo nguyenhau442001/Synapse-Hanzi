@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle floor shadow/surface -->
+  <ellipse cx="120" cy="180" rx="70" ry="12" fill="#111318" opacity="0.8"/>
+
+  <!-- Main Object: A physical desk paper shredder/waste bin containing trivial chatter/paper scraps, representing 'insignificant/trivial matters' -->
+  
+  <!-- Waste Paper Basket Body -->
+  <path d="M 85 95 L 95 175 L 145 175 L 155 95 Z" fill="#2A303C"/>
+  
+  <!-- Bin Rim -->
+  <ellipse cx="120" cy="95" rx="36" ry="7" fill="#3B4252"/>
+  <ellipse cx="120" cy="95" rx="31" ry="5" fill="#1A1D24"/>
+
+  <!-- Shredded paper scraps falling out / sitting inside (trivial comments) -->
+  <!-- Back layer scraps -->
+  <path d="M 100 90 L 105 115 L 112 110 Z" fill="#6C7A89" opacity="0.6"/>
+  <path d="M 130 88 L 125 112 L 135 115 Z" fill="#4E5D6C" opacity="0.7"/>
+
+  <!-- Document / Speech bubble shaped scrap representing "trivial remarks" cast aside -->
+  <g transform="translate(120, 115) rotate(-15)">
+    <rect x="-22" y="-18" width="44" height="32" rx="4" fill="#E5E9F0"/>
+    <line x1="-14" y1="-8" x2="6" y2="-8" stroke="#4C566A" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-14" y1="0" x2="14" y2="0" stroke="#4C566A" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-14" y1="8" x2="2" y2="8" stroke="#4C566A" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(100, 135) rotate(20)">
+    <rect x="-18" y="-14" width="36" height="26" rx="3" fill="#D8DEE9"/>
+    <line x1="-10" y1="-6" x2="10" y2="-6" stroke="#4C566A" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="-10" y1="2" x2="4" y2="2" stroke="#4C566A" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Front overlapping rim part for depth -->
+  <path d="M 85 95 Q 120 102 155 95 Q 155 102 120 102 Q 85 102 85 95 Z" fill="#434C5E"/>
+
+  <!-- Focus / Accent overlay: High-contrast gold/orange marker indicating dismissal/triviality -->
+  <circle cx="120" cy="120" r="85" fill="none" stroke="#D08770" stroke-width="2" stroke-dasharray="8 6" opacity="0.4"/>
+  
+  <!-- Small subtle 'dismissed' cross icon badge in gold/orange -->
+  <circle cx="170" cy="75" r="16" fill="#2E3440" stroke="#D08770" stroke-width="2.5"/>
+  <path d="M 163 68 L 177 82 M 177 68 L 163 82" stroke="#D08770" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

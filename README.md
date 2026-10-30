@@ -1,23 +1,22 @@
 # ⚡ Synapse Hanzi — Cognitive Visual Workstation (HSK 1–9)
 
-> **Trạm học từ vựng chữ Hán đa giác quan, hiện đại, tối giản và 100% Offline (PWA).**  
-> Kết hợp minh họa câu chuyện trực quan (Visual Mnemonics), thuật toán **Spaced Repetition (SRS)**, phân tích ngữ pháp đọc hiểu **HSK 4 Chuẩn Hanban**, luyện viết thứ tự nét và tra cứu âm Hán - Việt chuyên sâu.
+> **Công cụ học Flashcard từ vựng chữ Hán chuyên sâu, tối ưu phản xạ ghi nhớ và tích hợp trọn bộ tính năng ôn thi HSK bổ ích.**  
+> Kết hợp phương pháp lặp lại ngắt quãng **Spaced Repetition (FSRS)**, minh họa ngữ cảnh sinh động (Visual Mnemonics), phân tích đọc hiểu chuyên sâu **HSK 4 Chuẩn Hanban**, luyện nghe đề thi thực tế, mô phỏng viết nét bút thuận và tra cứu âm Hán - Việt.
 
 ---
 
 ### 🌐 Trải nghiệm trực tuyến ngay (Live Demo):
 👉 **Website chính thức:** [**https://nguyenhau442001.github.io/Synapse-Hanzi/**](https://nguyenhau442001.github.io/Synapse-Hanzi/)
 
-*(Không cần cài đặt, hoạt động mượt mà trên cả máy tính & điện thoại, hỗ trợ cài làm App Offline PWA)*
+*(Không cần cài đặt, hoạt động mượt mà và tối ưu trên cả máy tính lẫn điện thoại)*
 
 <p align="center">
   <a href="https://nguyenhau442001.github.io/Synapse-Hanzi/">
     <img src="https://img.shields.io/badge/🌐_Mở_Trực_Tuyến_Ngay-https%3A%2F%2Fnguyenhau442001.github.io%2FSynapse--Hanzi-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo">
   </a>
-  <img src="https://img.shields.io/badge/Chế_độ-100%25_Offline_(PWA)-22c55e?style=for-the-badge&logo=pwa&logoColor=white" alt="PWA">
-  <img src="https://img.shields.io/badge/Phiên_bản-v1.0.0-blue?style=for-the-badge&logo=semver&logoColor=white" alt="Version v1.0.0">
-  <img src="https://img.shields.io/badge/Build-Zero_Config-3b82f6?style=for-the-badge&logo=javascript&logoColor=white" alt="Zero Build">
+  <img src="https://img.shields.io/badge/Phương_pháp-Flashcard_&_SRS-22c55e?style=for-the-badge&logo=anki&logoColor=white" alt="Flashcards">
   <img src="https://img.shields.io/badge/HSK-HSK_2.0_&_3.0_(1--9)-f59e0b?style=for-the-badge" alt="HSK 1-9">
+  <img src="https://img.shields.io/badge/Ôn_thi-Luyện_nghe_&_Đọc_hiểu-3b82f6?style=for-the-badge" alt="HSK Prep">
 </p>
 
 ---
@@ -92,7 +91,11 @@ Tra cứu và học bộ thủ theo số nét, ý nghĩa, ví dụ và thống k
 - **Tự động gắn âm Hán - Việt:** Giúp người Việt hiểu nghĩa gốc sâu sắc và ghi nhớ từ vựng nhanh gấp đôi.
 - **Âm thanh giọng thật & Web Speech API:** Nghe phát âm từ vựng và câu ví dụ, tùy chỉnh tốc độ đọc từ 0.25x đến 2.0x.
 - **SPA Router thông minh:** Hỗ trợ nút Back/Forward vật lý của trình duyệt và chia sẻ liên kết trực tiếp (Deep Linking) mà không tải lại trang.
-- **Offline 100% (PWA):** Cài đặt làm ứng dụng độc lập trên điện thoại (iOS, Android) và máy tính, học mọi lúc mọi nơi không cần Internet.
+- **Bộ công cụ bổ trợ ôn thi HSK toàn diện:**
+  - **Luyện đề Nghe HSK 4 thực chiến:** Tích hợp audio chuẩn bài thi, script đối thoại và giải thích đáp án.
+  - **Phân tích ngữ pháp & Đọc hiểu (Reading Analysis):** Đọc truyện phân cấp HSK 1–9, giải mã từng cấu trúc ngữ pháp khó.
+  - **Luyện viết nét bút thuận:** Mô phỏng quy tắc viết chữ Hán và bảng vẽ tương tác.
+- **Tiến trình tự động lưu:** Toàn bộ lịch sử học tập và tiến trình SRS được đồng bộ an toàn ngay trên trình duyệt máy bạn.
 
 ---
 

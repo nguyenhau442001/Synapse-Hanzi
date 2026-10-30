@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background grid or atmosphere lines for modern flat vector look -->
+  <line x1="40" y1="120" x2="200" y2="120" stroke="#252A34" stroke-width="2" stroke-dasharray="4,4"/>
+
+  <!-- First cut log segment (left) -->
+  <g transform="translate(40, 95)">
+    <rect x="0" y="0" width="38" height="50" rx="4" fill="#A86B32"/>
+    <ellipse cx="0" cy="25" rx="5" ry="25" fill="#C68B59"/>
+    <!-- Wood grain ring -->
+    <path d="M0,10 Q15,25 0,40" fill="none" stroke="#8D521B" stroke-width="2" opacity="0.6"/>
+  </g>
+
+  <!-- Second cut log segment (middle - offset to show "截" / section/segment) -->
+  <g transform="translate(86, 95)">
+    <rect x="0" y="0" width="38" height="50" rx="4" fill="#A86B32"/>
+    <ellipse cx="0" cy="25" rx="5" ry="25" fill="#C68B59"/>
+    <ellipse cx="38" cy="25" rx="5" ry="25" fill="#6E4018"/>
+    <!-- Wood grain ring -->
+    <path d="M0,10 Q15,25 0,40" fill="none" stroke="#8D521B" stroke-width="2" opacity="0.6"/>
+    <path d="M38,10 Q23,25 38,40" fill="none" stroke="#533010" stroke-width="2" opacity="0.6"/>
+  </g>
+
+  <!-- Third cut log segment (right) -->
+  <g transform="translate(132, 95)">
+    <rect x="0" y="0" width="38" height="50" rx="4" fill="#A86B32"/>
+    <ellipse cx="0" cy="25" rx="5" ry="25" fill="#C68B59"/>
+    <ellipse cx="38" cy="25" rx="5" ry="25" fill="#6E4018"/>
+    <!-- Wood grain ring -->
+    <path d="M0,10 Q15,25 0,40" fill="none" stroke="#8D521B" stroke-width="2" opacity="0.6"/>
+    <path d="M38,10 Q23,25 38,40" fill="none" stroke="#533010" stroke-width="2" opacity="0.6"/>
+  </g>
+
+  <!-- Saw blade or cutting indicator highlighting the segment action -->
+  <g transform="translate(178, 85)">
+    <path d="M0,0 L20,35 L0,70 Z" fill="#F39C12" opacity="0.15"/>
+    <!-- Modern stylish accent brackets indicating "A section/duan/mẩu" -->
+    <path d="M-130,75 L-130,85 L-5,85" fill="none" stroke="#F39C12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M-5,78 L0,85 L-5,92" fill="none" stroke="#F39C12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Floating accent / focus dot -->
+  <circle cx="105" cy="120" r="4" fill="#F39C12"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Street Ground -->
+  <path d="M0 180 L240 180 L240 240 L0 240 Z" fill="#2D343E"/>
+  <path d="M0 180 L240 180" stroke="#4A5568" stroke-width="2" stroke-dasharray="10 10"/>
+  
+  <!-- Person A (Left) -->
+  <g transform="translate(60, 100)">
+    <circle cx="20" cy="20" r="15" fill="#FFB347"/>
+    <path d="M5 40 Q20 35 35 40 L30 90 L10 90 Z" fill="#FFB347"/>
+    <rect x="15" y="90" width="10" height="40" fill="#FFB347"/>
+  </g>
+  
+  <!-- Person B (Right) -->
+  <g transform="translate(150, 100)">
+    <circle cx="20" cy="20" r="15" fill="#FFD700"/>
+    <path d="M5 40 Q20 35 35 40 L30 90 L10 90 Z" fill="#FFD700"/>
+    <rect x="15" y="90" width="10" height="40" fill="#FFD700"/>
+  </g>
+  
+  <!-- Surprise/Meeting Effect -->
+  <circle cx="120" cy="120" r="4" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="120" cy="120" r="8" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Street Lamp (Setting the scene) -->
+  <rect x="210" y="60" width="4" height="120" fill="#4A5568"/>
+  <path d="M200 60 L220 60 L215 40 L205 40 Z" fill="#FFB347"/>
+</svg>

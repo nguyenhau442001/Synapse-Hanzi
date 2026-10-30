@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Book representing the scholarly work -->
+  <rect x="70" y="60" width="100" height="120" rx="4" fill="#2D343E" stroke="#FFB84D" stroke-width="2"/>
+  <rect x="75" y="65" width="90" height="110" rx="2" fill="#3D4754"/>
+  
+  <!-- The "Preface" page being written/highlighted -->
+  <path d="M85 75h70v15h-70z" fill="#FFB84D"/>
+  <path d="M85 100h70v5h-70z" fill="#5A6675"/>
+  <path d="M85 115h70v5h-70z" fill="#5A6675"/>
+  <path d="M85 130h70v5h-70z" fill="#5A6675"/>
+  
+  <!-- Fountain pen representing the act of writing the preface -->
+  <path d="M160 170l25-25c5-5 10-5 15 0l5 5c5 5 5 10 0 15l-25 25z" fill="#FFB84D"/>
+  <path d="M155 175l10-10" stroke="#1A1D24" stroke-width="3"/>
+  <path d="M180 150l15-15" stroke="#FFB84D" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Decorative lines for the preface content -->
+  <path d="M85 145h40v5h-40z" fill="#5A6675"/>
+</svg>

@@ -1,0 +1,43 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Decorative background glow/aura for the peony -->
+    <circle cx="120" cy="115" r="55" fill="#C53030" opacity="0.15" filter="blur(8px)"/>
+    
+    <!-- Stem and leaves -->
+    <!-- Main stem -->
+    <path d="M120 120 Q125 155 120 185" fill="none" stroke="#2F855A" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Left leaf -->
+    <path d="M120 150 C100 145 80 155 70 170 C90 175 105 170 120 150 Z" fill="#38A169" opacity="0.9"/>
+    <path d="M120 150 C105 155 90 165 70 170" fill="none" stroke="#234E52" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <!-- Right leaf -->
+    <path d="M122 165 C140 160 155 170 165 185 C145 190 135 185 122 165 Z" fill="#38A169" opacity="0.9"/>
+    <path d="M122 165 C135 170 145 180 165 185" fill="none" stroke="#234E52" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Peony Flower (MuDan) - Layered overlapping petals in rich pinks and reds -->
+    <!-- Outer layer petals -->
+    <path d="M120 60 C85 60 65 90 75 120 C85 145 110 150 120 140 C130 150 155 145 165 120 C175 90 155 60 120 60 Z" fill="#9B2C2C"/>
+    
+    <!-- Back large petals -->
+    <path d="M75 105 C60 90 70 65 95 65 C110 65 115 80 120 90 C125 80 130 65 145 65 C170 65 180 90 165 105 C185 120 170 150 145 145 C130 142 125 130 120 120 C115 130 110 142 95 145 C70 150 55 120 75 105 Z" fill="#C53030"/>
+
+    <!-- Mid layer petals -->
+    <path d="M85 100 C75 80 95 70 115 85 C120 90 120 100 120 110 C120 100 120 90 125 85 C145 70 165 80 155 100 C145 120 155 135 135 135 C125 135 122 125 120 115 C118 125 115 135 105 135 C85 135 95 120 85 100 Z" fill="#E53E3E"/>
+
+    <!-- Inner ruffled petals -->
+    <path d="M95 95 C90 85 105 80 115 95 C118 100 120 105 120 112 C120 105 122 100 125 95 C135 80 150 85 145 95 C140 105 145 125 130 125 C125 125 122 118 120 115 C118 118 115 125 110 125 C95 125 100 105 95 95 Z" fill="#F56565"/>
+
+    <!-- Center core petals / bud folds -->
+    <path d="M105 100 C105 90 115 90 120 100 C125 90 135 90 135 100 C135 110 125 120 120 120 C115 120 105 110 105 100 Z" fill="#FEB2B2"/>
+    <path d="M112 105 C110 98 118 98 120 105 C122 98 130 98 128 105 C125 112 122 115 120 115 C118 115 115 112 112 105 Z" fill="#FFF5F5"/>
+    
+    <!-- Golden stamen accents (subtle details near center) -->
+    <circle cx="116" cy="108" r="1.5" fill="#ECC94B"/>
+    <circle cx="124" cy="108" r="1.5" fill="#ECC94B"/>
+    <circle cx="120" cy="105" r="1.5" fill="#ECC94B"/>
+  </g>
+</svg>

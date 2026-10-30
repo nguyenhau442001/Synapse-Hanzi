@@ -1,0 +1,62 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background elements: Soft warm sunset glow and lawn hint -->
+  <circle cx="120" cy="140" r="70" fill="#2C2422" opacity="0.6"/>
+  <path d="M 40,205 Q 120,195 200,205 L 200,240 L 40,240 Z" fill="#15201B"/>
+
+  <!-- Old Scholar Tree (槐树) trunk and thick branches -->
+  <!-- Main thick trunk leaning slightly left to support the figure -->
+  <path d="M 140,210 Q 135,160 145,110 L 175,110 Q 165,160 170,210 Z" fill="#3D2E26"/>
+  <!-- Bark texture details -->
+  <path d="M 148,130 Q 155,150 146,180" stroke="#2B1F1A" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 160,120 Q 167,160 158,200" stroke="#2B1F1A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Tree canopy (stylized dark foliage with warm golden sunset rim) -->
+  <circle cx="155" cy="70" r="45" fill="#223328"/>
+  <circle cx="125" cy="85" r="35" fill="#1B2B21"/>
+  <circle cx="180" cy="90" r="30" fill="#1B2B21"/>
+  <!-- Sunset rim light on leaves -->
+  <path d="M 130,40 Q 155,30 185,55" stroke="#E6A15C" stroke-width="3" fill="none" opacity="0.4" stroke-linecap="round"/>
+
+  <!-- Elderly Grandmother (老奶奶) sitting/leaning against the tree -->
+  <!-- Body leaning back (倚 - leaning/resting against an object) -->
+  <g transform="translate(0, 5)">
+    <!-- Legs extended gently on the ground -->
+    <path d="M 105,185 L 140,195 L 138,202 L 95,195 Z" fill="#4B5563"/>
+    
+    <!-- Torso leaning back against the trunk at an angle -->
+    <path d="M 112,150 L 138,155 L 145,185 L 105,180 Z" fill="#60A5FA"/>
+    
+    <!-- Head with silver hair (满头银发) -->
+    <circle cx="102" cy="138" r="14" fill="#F3F4F6"/>
+    <!-- Gentle peaceful face profile -->
+    <path d="M 94,135 Q 98,142 104,138" stroke="#D1D5DB" stroke-width="2" fill="none"/>
+    <circle cx="100" cy="136" r="1.5" fill="#9CA3AF"/>
+    
+    <!-- Back leaning firmly against the tree trunk (Visualizing 倚) -->
+    <!-- Arms relaxed -->
+    <path d="M 120,160 L 105,175" stroke="#60A5FA" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Walking cane resting nearby -->
+    <path d="M 85,160 Q 82,185 80,205" stroke="#9A3412" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 85,160 Q 88,157 84,154" stroke="#9A3412" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Great-grandchild (重孙子) playing happily on the lawn -->
+  <g transform="translate(-15, 10)">
+    <!-- Little body crouching/playing -->
+    <circle cx="75" cy="175" r="9" fill="#FBBF24"/>
+    <path d="M 68,190 Q 75,180 82,190" stroke="#EF4444" stroke-width="8" stroke-linecap="round"/>
+    <!-- Small outstretched arm reaching out -->
+    <path d="M 82,185 L 95,180" stroke="#FBBF24" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Warm atmospheric glow representing sunset (夕阳西下) -->
+  <circle cx="50" cy="70" r="18" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="50" cy="70" r="26" fill="#F59E0B" opacity="0.2"/>
+
+  <!-- Subtle focal highlight framing the leaning action (倚) -->
+  <path d="M 135,145 Q 142,165 142,185" stroke="#FBBF24" stroke-width="1.5" fill="none" opacity="0.4" stroke-dasharray="3,3"/>
+</svg>

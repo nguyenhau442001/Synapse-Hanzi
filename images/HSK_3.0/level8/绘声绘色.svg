@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Ambient background glow for storytelling atmosphere -->
+  <circle cx="120" cy="115" r="75" fill="#252A36" opacity="0.6"/>
+
+  <!-- Grandfather (Storyteller) Character -->
+  <g id="grandfather">
+    <!-- Body/Chair -->
+    <path d="M75,175 L115,175 L110,140 L80,140 Z" fill="#2D3748"/>
+    <!-- Torso (Blue traditional tunic) -->
+    <path d="M75,145 C75,120 90,115 105,115 C120,115 135,120 135,145 L135,175 L75,175 Z" fill="#3182CE"/>
+    <!-- Collar & Details -->
+    <path d="M105,115 L105,135" stroke="#2B6CB0" stroke-width="2"/>
+    
+    <!-- Head -->
+    <circle cx="105" cy="95" r="16" fill="#F6AD55"/>
+    <!-- Hair & Beard (Wise elder) -->
+    <path d="M91,92 C91,83 97,79 105,79 C113,79 119,83 119,92 C119,96 117,101 117,105 C113,111 97,111 93,105 C93,101 91,96 91,92 Z" fill="#CBD5E0"/>
+    <path d="M97,104 C100,108 110,108 113,104 C115,108 110,113 105,113 C100,113 95,108 97,104 Z" fill="#EDF2F7"/>
+
+    <!-- Expressive storytelling gesture (Raised animated hand) -->
+    <circle cx="132" cy="110" r="5" fill="#F6AD55"/>
+    <path d="M125,125 C130,120 135,115 138,110" stroke="#F6AD55" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Vivid Imagery / Story Emanating (Vibrant animation waves & icons representing vivid vivid storytelling) -->
+  <g id="vivid_story_manifestation">
+    <!-- Flowing magical/vivid sound waves and cinematic elements curving upward -->
+    <path d="M 140,95 Q 165,80 185,95 T 215,85" fill="none" stroke="#ED8936" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 145,110 Q 170,95 190,110 T 210,100" fill="none" stroke="#ECC94B" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Mini vivid visual symbols floating out (Heroic star / peak / banner representing the Long March tales) -->
+    <g transform="translate(170, 55)">
+      <!-- Glowing star -->
+      <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" fill="#ECC94B"/>
+    </g>
+    <g transform="translate(195, 80)">
+      <!-- Mini mountain peak / journey symbol -->
+      <path d="M2,18 L10,5 L18,18 Z" fill="#ED8936"/>
+      <path d="M8,18 L13,10 L18,18 Z" fill="#DD6B20"/>
+    </g>
+  </g>
+
+  <!-- Children (Listeners) captivated -->
+  <g id="children">
+    <!-- Child 1 (Sitting close, looking up wide-eyed) -->
+    <circle cx="140" cy="155" r="11" fill="#F6AD55"/>
+    <path d="M130,175 C130,160 135,155 140,155 C145,155 150,160 150,175 Z" fill="#E53E3E"/>
+    <!-- Child hair -->
+    <path d="M129,153 C131,146 149,146 151,153 C145,150 135,150 129,153 Z" fill="#2D3748"/>
+
+    <!-- Child 2 (Slightly behind, leaning forward) -->
+    <circle cx="165" cy="160" r="10" fill="#F6AD55"/>
+    <path d="M156,178 C156,166 160,162 165,162 C170,162 174,166 174,178 Z" fill="#319795"/>
+    <!-- Child hair -->
+    <path d="M155,158 C157,152 173,152 175,158 C170,155 160,155 155,158 Z" fill="#2D3748"/>
+  </g>
+
+  <!-- Ground Line & Tree Trunk (Context anchor) -->
+  <path d="M30,175 L210,175" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+  <!-- Tree trunk on the left framing the scene -->
+  <path d="M30,175 C30,130 45,100 45,60 L60,60 C60,100 45,130 45,175 Z" fill="#718096"/>
+  <!-- Canopy hint -->
+  <circle cx="45" cy="50" r="30" fill="#2F855A" opacity="0.4"/>
+</svg>

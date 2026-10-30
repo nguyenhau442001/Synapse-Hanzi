@@ -1,0 +1,60 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements (Modern office/lab architectural hint) -->
+  <path d="M50 180 L190 180" stroke="#2A2F3A" stroke-width="2" stroke-linecap="round"/>
+  <rect x="70" y="90" width="100" height="70" rx="4" fill="none" stroke="#2A2F3A" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <!-- Central Physical Object: Modern Office Building / Facility representing "租赁" (Leased Property/Asset) -->
+  
+  <!-- Main Building Structure -->
+  <rect x="80" y="70" width="80" height="110" rx="6" fill="#222733"/>
+  <rect x="90" y="55" width="60" height="20" rx="3" fill="#2A303C"/>
+
+  <!-- Building Glass Panels / Windows (Grid) -->
+  <!-- Row 1 -->
+  <rect x="92" y="85" width="16" height="20" rx="2" fill="#3A4454"/>
+  <rect x="112" y="85" width="16" height="20" rx="2" fill="#3A4454"/>
+  <rect x="132" y="85" width="16" height="20" rx="2" fill="#3A4454"/>
+
+  <!-- Row 2 -->
+  <rect x="92" y="115" width="16" height="20" rx="2" fill="#3A4454"/>
+  <rect x="112" y="115" width="16" height="20" rx="2" fill="#F59E0B" opacity="0.8"/> <!-- Highlighted leased window -->
+  <rect x="132" y="115" width="16" height="20" rx="2" fill="#3A4454"/>
+
+  <!-- Row 3 -->
+  <rect x="92" y="145" width="16" height="20" rx="2" fill="#3A4454"/>
+  <rect x="112" y="145" width="16" height="20" rx="2" fill="#3A4454"/>
+  <rect x="132" y="145" width="16" height="20" rx="2" fill="#3A4454"/>
+
+  <!-- Entrance Door -->
+  <path d="M108 180 L108 170 C108 167 110 165 112 165 L128 165 C130 165 132 167 132 170 L132 180 Z" fill="#F59E0B"/>
+
+  <!-- Overlay/Badge element representing Lease agreement / Transaction (Keys/Contract concept subtly integrated) -->
+  <!-- Glowing golden accent frame / Lease Tag -->
+  <circle cx="120" cy="125" r="55" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-dasharray="8 6" opacity="0.6"/>
+
+  <!-- Key Icon overlaying bottom right of building to signify "Rental / Lease agreement" -->
+  <g transform="translate(135, 135)">
+    <circle cx="20" cy="20" r="14" fill="#1A1D24" stroke="#F59E0B" stroke-width="3"/>
+    <circle cx="20" cy="20" r="5" fill="#F59E0B"/>
+    <path d="M28 28 L42 42" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M37 37 L41 33" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M33 41 L37 37" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Contract / Document outline floating on left -->
+  <g transform="translate(45, 95)">
+    <rect x="0" y="0" width="30" height="40" rx="3" fill="#28303D" stroke="#3A4454" stroke-width="1.5"/>
+    <line x1="7" y1="10" x2="23" y2="10" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <line x1="7" y1="18" x2="20" y2="18" stroke="#7A8B9E" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="7" y1="24" x2="16" y2="24" stroke="#7A8B9E" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Checkmark on document -->
+    <circle cx="21" cy="30" r="5" fill="#F59E0B"/>
+    <path d="M19 30 L20.5 31.5 L23.5 28.5" fill="none" stroke="#1A1D24" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Connecting exchange arrows -->
+  <path d="M78 110 C83 100 90 95 98 92" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 3"/>
+</svg>

@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle floor shadow / alignment baseline -->
+  <ellipse cx="120" cy="205" rx="55" ry="6" fill="#14161B"/>
+
+  <!-- Aesthetic posture guides (ballet/yoga elegance lines) -->
+  <path d="M120 40 L120 200" stroke="#2A2F3A" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round"/>
+  <path d="M95 70 C 110 70, 115 130, 120 200" stroke="#FF9F43" stroke-width="1" stroke-opacity="0.25" fill="none"/>
+
+  <!-- Human silhouette in an elegant, upright posture (体态 - graceful posture/vóc dáng) -->
+  <!-- Head -->
+  <circle cx="120" cy="55" r="14" fill="#E2E8F0"/>
+
+  <!-- Neck -->
+  <path d="M116 68 L124 68 L125 78 L115 78 Z" fill="#E2E8F0"/>
+
+  <!-- Torso (Open chest, upright spine - contrasting with hunched posture) -->
+  <path d="M104 78 C 104 78, 112 76, 120 76 C 128 76, 136 78, 138 105 C 140 120, 134 140, 130 145 C 126 150, 114 150, 110 145 C 106 140, 100 120, 102 105 Z" fill="#38BDF8"/>
+
+  <!-- Graceful arms extended in a ballet/yoga line -->
+  <!-- Left arm (extended fluidly upward/outward) -->
+  <path d="M108 82 C 90 85, 70 75, 55 60" stroke="#38BDF8" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <!-- Right arm (extended fluidly downward/outward) -->
+  <path d="M132 82 C 150 90, 170 100, 185 115" stroke="#38BDF8" stroke-width="10" stroke-linecap="round" fill="none"/>
+
+  <!-- Legs in graceful alignment -->
+  <!-- Left leg -->
+  <path d="M112 145 C 110 165, 108 185, 105 200" stroke="#38BDF8" stroke-width="11" stroke-linecap="round" fill="none"/>
+  <!-- Right leg (slight elegant bend) -->
+  <path d="M128 145 C 132 165, 135 185, 140 200" stroke="#38BDF8" stroke-width="11" stroke-linecap="round" fill="none"/>
+
+  <!-- Focal Accent Highlights (Golden ratio / Alignment points) -->
+  <!-- Crown indicator -->
+  <circle cx="120" cy="38" r="3" fill="#FF9F43"/>
+  
+  <!-- Chest alignment accent (open posture) -->
+  <circle cx="120" cy="95" r="4" fill="#FF9F43"/>
+
+  <!-- Posture balance point -->
+  <circle cx="120" cy="135" r="3" fill="#FF9F43"/>
+
+</svg>

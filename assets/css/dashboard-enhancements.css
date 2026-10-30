@@ -263,7 +263,7 @@ body:not(.home-screen) .continue-learning-card { display: none; }
 
 .dashboard-sidebar-card,
 .workstation-left > .hw-card {
-  min-width: 0; padding: 18px 20px; border: 1px solid var(--border);
+  min-width: 0; padding: 18px 20px 22px; border: 1px solid var(--border);
   border-radius: var(--radius-lg); background: var(--card-bg); box-shadow: var(--card-shadow); color: var(--text-primary);
 }
 :root[data-theme="dark"] .workstation-left .dashboard-sidebar-card,
@@ -468,8 +468,9 @@ body:not(.home-screen) .continue-learning-card { display: none; }
   align-items: center !important;
   justify-content: center !important;
   width: 100% !important;
-  min-height: 44px !important;
-  margin-top: 14px !important;
+  min-height: 46px !important;
+  margin-top: 16px !important;
+  margin-bottom: 2px !important;
   font-size: 13.5px !important;
   font-weight: 700 !important;
   border-radius: 12px !important;
@@ -580,33 +581,168 @@ body:not(.home-screen) .continue-learning-card { display: none; }
   font-size: 12px;
   transition: transform 180ms ease;
 }
-.dashboard-stats-accordion:not([open]) .stats-accordion-chevron {
-  transform: rotate(-90deg);
+/* Bottom Secondary Widgets (Word of the Day & Compact 7-Day Forecast) */
+.dashboard-bottom-widgets {
+  width: 100%;
+  margin-top: 10px;
 }
-.dashboard-stats-content {
-  padding: 0 20px 20px;
-  border-top: 1px solid var(--border);
-}
-.dashboard-stats-content .home-widgets {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.dashboard-bottom-widgets .home-widgets,
+body.home-screen .dashboard-bottom-widgets .home-widgets {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   gap: 20px;
-  margin-top: 18px;
+  width: 100%;
+  margin: 0;
 }
-.dashboard-stats-content .home-widgets > .hw-card {
+.dashboard-bottom-widgets .hw-card,
+body.home-screen .dashboard-bottom-widgets .hw-card {
   margin: 0;
   background: var(--card-bg);
   border: 1px solid var(--border);
-  border-radius: 14px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  border-radius: var(--radius-lg, 20px);
+  box-shadow: var(--card-shadow);
   padding: 18px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+  min-height: auto;
+  transition: transform 160ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 160ms ease, border-color 160ms ease;
 }
-.dashboard-stats-content .home-widgets > #hwDiscovery {
-  grid-column: 1 / -1;
+.dashboard-bottom-widgets .hw-card:hover,
+body.home-screen .dashboard-bottom-widgets .hw-card:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
+  box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.08);
 }
+:root[data-theme="dark"] .dashboard-bottom-widgets .hw-card,
+:root[data-theme="dark"] body.home-screen .dashboard-bottom-widgets .hw-card {
+  box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Streamlined Compact Forecast Widget */
+.dashboard-bottom-widgets .hw-forecast {
+  justify-content: space-between;
+}
+.dashboard-bottom-widgets .hw-forecast .hw-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.dashboard-bottom-widgets .hw-forecast .hw-sub {
+  margin: 2px 0 0;
+  font-size: 11.5px;
+  color: var(--text-secondary);
+}
+.dashboard-bottom-widgets .hw-forecast .hw-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  margin-top: 10px;
+  padding-top: 4px;
+}
+.dashboard-bottom-widgets .hw-forecast .hw-bar-col {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+.dashboard-bottom-widgets .hw-forecast .hw-bar-value {
+  font-size: 10.5px;
+  color: var(--text-tertiary);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+.dashboard-bottom-widgets .hw-forecast .hw-bar {
+  display: block;
+  width: 100%;
+  max-width: 22px;
+  border-radius: 4px;
+  background: var(--border);
+  transition: height 200ms ease;
+}
+.dashboard-bottom-widgets .hw-forecast .hw-bar-label {
+  font-size: 10.5px;
+  color: var(--text-secondary);
+  line-height: 1;
+}
+.dashboard-bottom-widgets .hw-forecast .hw-bar-col.is-today .hw-bar {
+  background: var(--accent-gradient, var(--brand-primary));
+}
+.dashboard-bottom-widgets .hw-forecast .hw-bar-col.is-today .hw-bar-value,
+.dashboard-bottom-widgets .hw-forecast .hw-bar-col.is-today .hw-bar-label {
+  color: var(--brand-primary);
+  font-weight: 700;
+}
+
+/* Compact Word of the Day Widget */
+.dashboard-bottom-widgets .hw-wotd-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  text-align: left;
+  margin-top: 0;
+}
+.dashboard-bottom-widgets .hw-wotd-hanzi {
+  font-size: 38px;
+  line-height: 1.1;
+  flex: 0 0 auto;
+}
+.dashboard-bottom-widgets .hw-wotd-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.dashboard-bottom-widgets .hw-wotd-pinyin {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--text-secondary);
+}
+.dashboard-bottom-widgets .hw-wotd-meaning {
+  margin: 0;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.dashboard-bottom-widgets .hw-example {
+  margin-top: 0;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+.dashboard-bottom-widgets .hw-example-zh {
+  font-size: 13px;
+}
+.dashboard-bottom-widgets .hw-example-vi {
+  font-size: 11.5px;
+}
+.dashboard-bottom-widgets .hw-actions {
+  margin-top: 0;
+  display: flex;
+  gap: 8px;
+}
+.dashboard-bottom-widgets .hw-actions .hw-primary-btn {
+  min-height: 38px;
+  font-size: 13px;
+}
+.dashboard-bottom-widgets .hw-actions .hw-icon-btn {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+}
+
 @media (max-width: 900px) {
-  .dashboard-stats-content .home-widgets {
-    grid-template-columns: 1fr;
+  .dashboard-bottom-widgets .home-widgets,
+  body.home-screen .dashboard-bottom-widgets .home-widgets {
+    grid-template-columns: 1fr !important;
     gap: 16px;
   }
 }
@@ -647,10 +783,32 @@ body:not(.home-screen) .continue-learning-card { display: none; }
   .quick-quiz-card .dashboard-primary-btn { margin-left: 56px; }
 }
 @media (max-width: 767px) {
-  /* Mobile: Eliminate bulky redundant dashboard card to prevent visual suffocation;
-     Streak and progress are cleanly integrated in the header and hero card */
+  /* Mobile: Clean, compact learning dashboard goal & progress */
   .learning-dashboard {
-    display: none !important;
+    display: block;
+    padding: 14px 16px;
+    border-radius: 14px;
+    margin: 4px 0 8px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+  .learning-dashboard-header {
+    margin-bottom: 8px;
+  }
+  .learning-dashboard h2 {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .daily-goal {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+  }
+  .daily-goal-count strong {
+    font-size: 24px;
+    font-weight: 800;
   }
 
   /* Single Hero Card Above the Fold - Clean, soft elevation & compact ergonomics */
@@ -988,154 +1146,238 @@ body.home-screen .featured-topics {
     gap: 20px;
     min-width: 0;
   }
-  body.home-screen .app-header { margin: 0 0 4px; }
-  body.home-screen .app-header h1 { font-size: 22px; font-weight: 700; line-height: 1.2; }
-  body.home-screen .app-header p { margin-top: 4px; font-size: 13px; color: var(--text-secondary); }
+  body.home-screen .app-header { margin: 0 0 6px; }
+  body.home-screen .app-header h1 { font-size: 19px; font-weight: 800; line-height: 1.2; letter-spacing: -0.02em; }
+  body.home-screen .app-header p { margin-top: 2px; font-size: 11.5px; color: var(--text-tertiary); font-weight: 500; }
 
-  /* Goal & Streak Card */
-  body.home-screen .learning-dashboard {
+  /* ==========================================================================
+     Top Daily Goal Card (.learning-dashboard.dashboard-hero-banner)
+     - Clean, focused, compact layout
+     - Top row: Eyebrow (left) & Streak (right)
+     - Heading: Motivation text + Goal config trigger (⚙️)
+     - Progress: Big count/goal + completion %, sleek progress bar
+     - Supporting text
+     ========================================================================== */
+  body.home-screen .learning-dashboard.dashboard-hero-banner {
+    width: 100%;
     margin: 0;
     padding: 20px 24px;
-    border-radius: var(--radius-lg);
-    border: 1px solid var(--border);
+    border-radius: var(--radius-lg, 16px);
     background: var(--card-bg);
+    border: 1px solid var(--border);
     box-shadow: var(--card-shadow);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+    transition: box-shadow 180ms ease, border-color 180ms ease;
   }
+
+  :root[data-theme="dark"] body.home-screen .learning-dashboard.dashboard-hero-banner {
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.45);
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+
+  /* Daily Goal Main Column */
+  body.home-screen .hero-banner-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 12px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  body.home-screen .learning-dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
   body.home-screen .learning-dashboard-eyebrow {
     font-size: 11px;
-    font-weight: 700;
+    font-weight: 750;
     letter-spacing: 0.08em;
     color: var(--accent-text);
   }
+
+  body.home-screen .daily-goal-streak {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1;
+  }
+
+  body.home-screen .daily-goal-streak .streak-icon {
+    font-size: 13.5px;
+    line-height: 1;
+  }
+
+  body.home-screen .learning-title-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: -2px;
+  }
+
   body.home-screen .learning-dashboard h2 {
-    margin-top: 4px;
-    font-size: 17px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 750;
+    color: var(--text-primary);
+    line-height: 1.25;
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+
+  body.home-screen .goal-settings-wrap {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body.home-screen .goal-settings-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: var(--text-tertiary);
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 140ms ease;
+  }
+
+  body.home-screen .goal-settings-btn:hover {
+    background: var(--surface-subtle);
     color: var(--text-primary);
   }
-  body.home-screen .daily-goal {
-    display: grid;
-    grid-template-columns: auto minmax(0, 1fr);
-    align-items: center;
-    gap: 16px;
-    margin-top: 14px;
+
+  body.home-screen .goal-settings-select {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    z-index: 1;
   }
-  body.home-screen .daily-goal-actions { display: none; }
+
+  /* Progress Section: Metric row, progress track & fill */
+  body.home-screen .daily-goal-progress-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 4px;
+  }
+
+  body.home-screen .daily-goal-metric-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   body.home-screen .daily-goal-count {
     display: flex;
     align-items: baseline;
     gap: 4px;
-    white-space: nowrap;
-    flex-shrink: 0;
   }
-  body.home-screen .daily-goal-count strong { font-size: 28px; font-weight: 800; color: var(--text-primary); }
-  body.home-screen .daily-goal-selector {
-    display: inline-flex;
-    align-items: baseline;
-    gap: 4px;
-    margin-left: 2px;
-    color: var(--text-secondary);
-    font-size: 13px;
-    white-space: nowrap;
-  }
-  body.home-screen .daily-goal-selector select {
-    width: auto;
-    max-width: none;
-    min-width: 44px;
-    padding: 2px 18px 2px 6px;
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 1.2;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    background: var(--surface-subtle);
-    color: var(--text-primary);
-    cursor: pointer;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 5px center;
-  }
-  body.home-screen .daily-goal-selector select:hover {
-    background-color: var(--card-bg);
-    border-color: var(--accent);
-    color: var(--accent-text);
-  }
-  body.home-screen .daily-goal-selector select:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
-  }
-  body.home-screen .daily-goal-unit {
-    color: var(--text-secondary);
-    font-size: 13px;
-    font-weight: 600;
-    margin-left: 1px;
-  }
-  body.home-screen .daily-goal-track { height: 8px; border-radius: 999px; }
-  body.home-screen .daily-goal-message { font-size: 12px; color: var(--text-tertiary); margin-top: 5px; }
-  body.home-screen .learning-totals {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 14px;
-    padding-top: 12px;
-    border-top: 1px solid var(--border);
-    font-size: 12.5px;
-    color: var(--text-secondary);
-  }
-  body.home-screen .learning-totals strong { font-size: 13px; color: var(--text-primary); }
 
-  /* Single Hero CTA: Continue Learning */
-  body.home-screen .continue-learning-card {
-    margin: 0;
-    padding: 18px 22px;
-    border-radius: var(--radius-lg);
-    border: 1px solid var(--border);
-    background: var(--card-bg);
-    box-shadow: var(--card-shadow);
+  body.home-screen .daily-goal-count strong.goal-count-big,
+  body.home-screen .daily-goal-count strong {
+    font-size: 28px;
+    font-weight: 850;
+    line-height: 1;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums;
   }
-  body.home-screen .continue-learning-card .dashboard-kicker {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
+
+  body.home-screen .daily-goal-target-sub {
+    font-size: 15px;
+    font-weight: 600;
     color: var(--text-secondary);
+    margin-left: 2px;
   }
-  body.home-screen .continue-learning-card h2 {
-    margin-top: 4px;
+
+  body.home-screen .daily-goal-pct {
     font-size: 17px;
     font-weight: 700;
-    color: var(--text-primary);
+    color: var(--accent);
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
   }
-  body.home-screen .continue-learning-card p {
-    margin-top: 4px;
+
+  body.home-screen .daily-goal-track {
+    width: 100%;
+    height: 8px;
+    background: var(--progress-track);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+
+  :root[data-theme="dark"] body.home-screen .daily-goal-track,
+  body.dark-mode.home-screen .daily-goal-track {
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  body.home-screen .daily-goal-fill {
+    height: 100%;
+    background: var(--brand-primary);
+    border-radius: 999px;
+    transition: width 350ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  body.home-screen .daily-goal-message {
     font-size: 13px;
     color: var(--text-secondary);
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
   }
-  body.home-screen .continue-learning-card .dashboard-primary-btn {
-    min-height: 44px;
-    padding: 0 24px;
-    font-size: 14px;
-    font-weight: 750;
-    border-radius: 12px;
-    background: var(--brand-primary);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    color: var(--on-accent, #ffffff);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    letter-spacing: 0.02em;
-    transition: transform 140ms ease, box-shadow 140ms ease, filter 140ms ease;
+
+  /* Responsive Banner Breakpoints */
+  @media (max-width: 960px) {
+    body.home-screen .learning-dashboard.dashboard-hero-banner {
+      padding: 18px 20px;
+    }
   }
-  body.home-screen .continue-learning-card .dashboard-primary-btn:hover {
-    background: var(--brand-primary-hover);
-    filter: brightness(1.05);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
-  }
-  body.home-screen .continue-learning-card .dashboard-primary-btn:active {
-    transform: translateY(0);
-    filter: brightness(0.96);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 640px) {
+    body.home-screen .learning-dashboard.dashboard-hero-banner {
+      padding: 16px;
+      border-radius: 14px;
+      gap: 10px;
+    }
+    body.home-screen .learning-dashboard h2 {
+      font-size: 16px;
+    }
+    body.home-screen .daily-goal-count strong.goal-count-big,
+    body.home-screen .daily-goal-count strong {
+      font-size: 24px;
+    }
+    body.home-screen .daily-goal-target-sub {
+      font-size: 14px;
+    }
+    body.home-screen .daily-goal-pct {
+      font-size: 15px;
+    }
+    body.home-screen .daily-goal-message {
+      font-size: 12px;
+    }
   }
 
   /* Navigation Tabs */
@@ -1202,16 +1444,16 @@ body.home-screen .featured-topics {
   body.home-screen #screenPicker .level-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 16px;
+    gap: 20px;
     margin: 0;
   }
   body.home-screen #screenPicker #levelGrid20 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 16px;
+    gap: 20px;
   }
   body.home-screen #screenPicker #levelGrid30 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 14px;
+    gap: 18px;
   }
 
   /* Clean, Calm Level Cards */
@@ -1219,25 +1461,25 @@ body.home-screen .featured-topics {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 154px;
-    padding: 18px 20px;
-    border-radius: 16px;
+    min-height: 160px;
+    padding: 22px 24px;
+    border-radius: 20px;
     background: var(--card-bg);
     border: 1px solid var(--border);
     box-shadow: var(--card-shadow);
     text-align: left;
     cursor: pointer;
-    transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease, background-color 160ms ease;
+    transition: transform 160ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 160ms ease, border-color 160ms ease, background-color 160ms ease;
   }
   body.home-screen #screenPicker .level-card:hover {
-    transform: translateY(-2px);
-    border-color: var(--border-strong);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
+    box-shadow: 0 10px 28px -4px rgba(0, 0, 0, 0.1);
     background: var(--card-bg);
   }
   body.home-screen #screenPicker .level-card.is-active-level {
     border-color: var(--brand-primary);
-    box-shadow: 0 0 0 1px var(--brand-primary), 0 4px 14px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 0 1.5px var(--brand-primary), 0 6px 18px rgba(0, 0, 0, 0.12);
   }
 
   body.home-screen #screenPicker .level-card-top {
@@ -1440,7 +1682,7 @@ body.home-screen .featured-topics {
   body.home-screen .workstation-left > .sidebar-search { flex: 0 0 auto; }
   body.home-screen .workstation-left > .common-radicals-card { flex: 0 0 auto; }
   body.home-screen .workstation-left > .radical-tip-card { flex: 0 0 auto; }
-  body.home-screen .workstation-left > #hwForgotten { flex: 0 0 auto; }
+  body.home-screen .workstation-left > #hwForgotten { flex: 0 0 auto; margin-bottom: 8px; }
   body.home-screen .workstation-left > #hwForgotten .hw-forgot-empty {
     display: flex;
     flex-direction: column;

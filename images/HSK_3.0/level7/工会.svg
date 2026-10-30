@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Group of diverse workers standing together -->
+  <g transform="translate(60, 80)">
+    <!-- Worker 1 (Left) -->
+    <circle cx="20" cy="20" r="12" fill="#FFC107"/>
+    <path d="M8 35c0-10 24-10 24 0v30H8z" fill="#FFC107"/>
+    
+    <!-- Worker 2 (Center) -->
+    <circle cx="60" cy="15" r="14" fill="#FF9800"/>
+    <path d="M46 30c0-12 28-12 28 0v35H46z" fill="#FF9800"/>
+    
+    <!-- Worker 3 (Right) -->
+    <circle cx="100" cy="20" r="12" fill="#FFC107"/>
+    <path d="M88 35c0-10 24-10 24 0v30H88z" fill="#FFC107"/>
+  </g>
+
+  <!-- Representing the "Union/Support" aspect: A sturdy, stylized handshake/supportive gesture -->
+  <g transform="translate(70, 150)">
+    <path d="M20 40 L80 40" stroke="#FFC107" stroke-width="6" stroke-linecap="round"/>
+    <path d="M50 40 L50 15" stroke="#FFC107" stroke-width="6" stroke-linecap="round"/>
+    <path d="M35 25 L50 40 L65 25" stroke="#FFC107" stroke-width="6" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

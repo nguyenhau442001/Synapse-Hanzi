@@ -1,0 +1,59 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Grid lines for modern industrial/inspection vibe -->
+  <g stroke="#262B35" stroke-width="1" stroke-dasharray="4 4" opacity="0.6">
+    <line x1="40" y1="40" x2="200" y2="40"/>
+    <line x1="40" y1="120" x2="200" y2="120"/>
+    <line x1="40" y1="200" x2="200" y2="200"/>
+    <line x1="120" y1="40" x2="120" y2="200"/>
+  </g>
+
+  <!-- Conveyor Belt / Base Structure representing manufacturing/factory context -->
+  <g fill="#2C323E">
+    <rect x="30" y="170" width="180" height="16" rx="8"/>
+    <!-- Rollers -->
+    <circle cx="50" cy="178" r="6" fill="#4B5563"/>
+    <circle cx="90" cy="178" r="6" fill="#4B5563"/>
+    <circle cx="130" cy="178" r="6" fill="#4B5563"/>
+    <circle cx="170" cy="178" r="6" fill="#4B5563"/>
+  </g>
+
+  <!-- Security Gate / Inspection Arch (representing the '关' / checkpoint) -->
+  <g>
+    <!-- Left Pillar -->
+    <rect x="55" y="60" width="16" height="110" rx="4" fill="#374151"/>
+    <!-- Right Pillar -->
+    <rect x="169" y="60" width="16" height="110" rx="4" fill="#374151"/>
+    <!-- Top Scanner Housing -->
+    <rect x="45" y="48" width="150" height="20" rx="6" fill="#4B5563"/>
+    <!-- Scanner Core Accent -->
+    <rect x="75" y="54" width="90" height="8" rx="2" fill="#1F2937"/>
+  </g>
+
+  <!-- The Product (Physical Object passing quality check: 达标产品) -->
+  <g transform="translate(0, 0)">
+    <!-- Sleek Industrial Product Box -->
+    <rect x="92" y="115" width="56" height="48" rx="6" fill="#0D9488"/>
+    <!-- Product Screen/Interface Detail -->
+    <rect x="104" y="127" width="32" height="16" rx="3" fill="#115E59"/>
+    <!-- Product Handle / Top Detail -->
+    <path d="M108 115 L108 109 C108 107 110 105 112 105 L128 105 C130 105 132 107 132 109 L132 115" fill="none" stroke="#0F766E" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- PASS / APPROVED Indicator (Glowing Gold/Green Checkmark symbolizing '过关' & '达到要求') -->
+  <g>
+    <!-- Glowing background aura for success -->
+    <circle cx="120" cy="40" r="18" fill="#F59E0B" opacity="0.2"/>
+    <!-- Badge Circle -->
+    <circle cx="120" cy="40" r="14" fill="#F59E0B"/>
+    <!-- Checkmark icon -->
+    <path d="M112 40 L117 45 L129 33" fill="none" stroke="#1A1D24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Scanner Light Beam (Passing through the object cleanly) -->
+  <polygon points="71,68 169,68 185,170 55,170" fill="#14B8A6" opacity="0.12"/>
+  <line x1="71" y1="68" x2="169" y2="68" stroke="#2DD4BF" stroke-width="2" opacity="0.8"/>
+
+</svg>

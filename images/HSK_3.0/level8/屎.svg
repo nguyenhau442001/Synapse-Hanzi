@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ground shadow / platform -->
+  <ellipse cx="120" cy="185" rx="55" ry="12" fill="#121418"/>
+
+  <!-- Main Object: Stylized clean flat vector pile of feces (dog waste representation) -->
+  <g transform="translate(0, 5)">
+    <!-- Base tier -->
+    <path d="M 80,160 
+             C 70,160 62,152 65,140 
+             C 67,130 75,125 90,125 
+             L 150,125 
+             C 165,125 173,130 175,140 
+             C 178,152 170,160 160,160 
+             Z" 
+          fill="#8C5C33"/>
+    
+    <!-- Second tier -->
+    <path d="M 92,125 
+             C 84,125 78,118 80,108 
+             C 82,98 90,92 105,92 
+             L 135,92 
+             C 150,92 158,98 160,108 
+             C 162,118 156,125 148,125 
+             Z" 
+          fill="#A06B3E"/>
+
+    <!-- Top tier -->
+    <path d="M 104,92 
+             C 98,92 94,86 96,78 
+             C 98,70 106,62 120,62 
+             C 134,62 142,70 144,78 
+             C 146,86 142,92 136,92 
+             Z" 
+          fill="#B57946"/>
+
+    <!-- Peak swirl / tip -->
+    <path d="M 120,62 
+             C 116,62 113,58 115,52 
+             C 117,46 123,42 128,45 
+             C 133,48 132,56 128,60 
+             C 126,62 123,63 120,62 
+             Z" 
+          fill="#C68852"/>
+
+    <!-- Modern flat highlights for depth -->
+    <!-- Base highlight -->
+    <path d="M 85,142 C 90,138 105,137 120,137" stroke="#A06B3E" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <!-- Second tier highlight -->
+    <path d="M 98,108 C 105,105 115,104 125,104" stroke="#B57946" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <!-- Top tier highlight -->
+    <path d="M 108,78 C 112,76 118,75 125,75" stroke="#C68852" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Focus accent: Subtle clean amber rim light framing the subject -->
+  <circle cx="120" cy="120" r="88" fill="none" stroke="#F5A623" stroke-width="2" stroke-dasharray="8 12" opacity="0.4"/>
+</svg>

@@ -1,0 +1,34 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle background glow/spotlight centered on the subject -->
+  <circle cx="120" cy="120" r="80" fill="#222834" opacity="0.6"/>
+
+  <!-- Conceptual illustration: A business professional silhouette under a subtle question mark / suspicion aura (representing "涉嫌" - being suspected / implicated) -->
+  
+  <!-- Desk/Podium Base -->
+  <path d="M70 180 L170 180 L160 200 L80 200 Z" fill="#2D3748" opacity="0.8"/>
+  <rect x="75" y="198" width="90" height="4" rx="2" fill="#4A5568"/>
+
+  <!-- Person (Corporate Executive / Individual in Question) -->
+  <!-- Shoulders & Suit Jacket -->
+  <path d="M85 180 C85 155 100 145 120 145 C140 145 155 155 155 180 Z" fill="#2B6CB0"/>
+  <!-- Suit Lapels -->
+  <path d="M105 145 L120 170 L135 145 Z" fill="#1A365D"/>
+  <!-- Shirt & Tie -->
+  <polygon points="120,150 125,175 120,180 115,175" fill="#E2E8F0"/>
+  <polygon points="118,155 122,155 121,170 119,170" fill="#DD6B20"/>
+
+  <!-- Head & Hair -->
+  <circle cx="120" cy="118" r="18" fill="#CBD5E0"/>
+  <path d="M102 115 C102 102 110 98 120 98 C130 98 138 102 138 115 C138 118 135 116 135 112 C135 103 128 101 120 101 C112 101 105 103 105 112 C105 116 102 118 102 115 Z" fill="#4A5568"/>
+
+  <!-- Suspicion / Investigation Element: Sleek, prominent amber/gold question mark hovering above, symbolizing "suspected / under inquiry" -->
+  <path d="M108 72 C108 58 132 58 132 72 C132 82 120 84 120 94" fill="none" stroke="#D69E2E" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="120" cy="110" r="3.5" fill="#D69E2E"/>
+
+  <!-- Subtle document / file with data graph on the desk (representing the corporate/market context) -->
+  <rect x="135" y="162" width="26" height="32" rx="2" fill="#E2E8F0" transform="rotate(15 135 162)"/>
+  <polyline points="140,178 145,172 150,175 156,168" fill="none" stroke="#E53E3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

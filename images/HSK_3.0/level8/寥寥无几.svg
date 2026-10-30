@@ -1,0 +1,63 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background elements: Vast desert dunes at night in dark mode -->
+  <path d="M0 160 Q 60 140, 120 165 T 240 155 L 240 240 L 0 240 Z" fill="#222733"/>
+  <path d="M0 185 Q 90 170, 160 190 T 240 180 L 240 240 L 0 240 Z" fill="#161920"/>
+
+  <!-- Distant subtle stars representing emptiness/vastness -->
+  <circle cx="45" cy="50" r="1" fill="#4B5563"/>
+  <circle cx="95" cy="35" r="1.5" fill="#4B5563"/>
+  <circle cx="180" cy="45" r="1" fill="#4B5563"/>
+  <circle cx="210" cy="75" r="1.5" fill="#4B5563"/>
+  <circle cx="70" cy="85" r="1" fill="#4B5563"/>
+
+  <!-- Central iconic physical object representing "寥寥无几" (very few / countable on hand):
+       A sparse, solitary desert ecosystem with exactly three focal elements (one twisted desert tree, one small cactus, one tiny animal silhouette),
+       emphasizing extreme scarcity in the vast expanse. -->
+  
+  <!-- Single Poplar / Desert Tree (Hu杨) on the left -->
+  <g transform="translate(65, 115)">
+    <!-- Roots / trunk -->
+    <path d="M15 50 C 15 35, 10 25, 12 15 C 13 10, 16 5, 15 0" stroke="#4A5568" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M13 22 C 8 18, 5 12, 2 8" stroke="#4A5568" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M14 30 C 20 24, 23 18, 25 12" stroke="#4A5568" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <!-- Sparse foliage (Gold/Orange accent color for focus) -->
+    <circle cx="12" cy="2" r="7" fill="#F59E0B" opacity="0.9"/>
+    <circle cx="2" cy="7" r="5" fill="#D97706" opacity="0.8"/>
+    <circle cx="26" cy="11" r="5" fill="#D97706" opacity="0.8"/>
+  </g>
+
+  <!-- Single small cactus on the right -->
+  <g transform="translate(160, 140)">
+    <!-- Cactus body -->
+    <path d="M10 25 L 10 8 C 10 4, 6 4, 6 8 L 6 25 Z" fill="#10B981" rx="2"/>
+    <!-- Left arm -->
+    <path d="M6 14 C 2 14, 2 10, 2 10 L 2 8 C 2 6, 5 6, 6 9" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+    <!-- Right arm -->
+    <path d="M10 18 C 14 18, 14 13, 14 13 L 14 11 C 14 9, 11 9, 10 12" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+    <!-- Highlight/Flower -->
+    <circle cx="10" cy="6" r="2.5" fill="#F59E0B"/>
+  </g>
+
+  <!-- Single tiny desert fox / animal silhouette (representing rare wildlife) -->
+  <g transform="translate(105, 158)">
+    <!-- Body -->
+    <ellipse cx="8" cy="7" rx="6" ry="4" fill="#E2E8F0"/>
+    <!-- Head & Ears -->
+    <circle cx="14" cy="5" r="3.5" fill="#E2E8F0"/>
+    <polygon points="15,2 17,-2 13,2" fill="#E2E8F0"/>
+    <polygon points="12,2 13,-1 10,2" fill="#E2E8F0"/>
+    <!-- Tail -->
+    <path d="M2 7 C -2 6, -5 2, -4 0 C -3 3, -1 5, 2 7" fill="#E2E8F0"/>
+  </g>
+
+  <!-- Hand/Finger-count framing element subtly reinforcing "đếm trên đầu ngón tay" (countable on fingers) -->
+  <g transform="translate(100, 195)" opacity="0.25">
+    <!-- Stylized minimalist hand contour at bottom edge pointing upward -->
+    <path d="M10 20 C 10 10, 15 5, 20 5 C 25 5, 28 10, 28 20" fill="none" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+    <path d="M25 20 C 25 8, 30 2, 35 2 C 40 2, 43 8, 43 20" fill="none" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+    <path d="M40 20 C 40 6, 45 0, 50 0 C 55 0, 58 6, 58 20" fill="none" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

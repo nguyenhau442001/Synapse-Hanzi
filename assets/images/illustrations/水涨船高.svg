@@ -1,0 +1,18 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Water Level -->
+  <path d="M0 160 Q 60 145, 120 160 T 240 160 L 240 240 L 0 240 Z" fill="#2A4B7C"/>
+  <path d="M0 170 Q 60 155, 120 170 T 240 170 L 240 240 L 0 170 Z" fill="#3B6CA8" opacity="0.6"/>
+  
+  <!-- Boat -->
+  <g transform="translate(60, 125)">
+    <path d="M10 30 L 110 30 L 95 55 L 25 55 Z" fill="#D4AF37"/>
+    <path d="M25 55 L 95 55 L 105 65 L 15 65 Z" fill="#B8860B"/>
+    <rect x="55" y="10" width="10" height="20" fill="#E0E0E0"/>
+    <path d="M65 10 L 90 20 L 65 30 Z" fill="#F4F4F4"/>
+  </g>
+  
+  <!-- Rising Motion Lines -->
+  <path d="M180 120 L 190 110 M185 130 L 195 120 M190 140 L 200 130" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
+</svg>

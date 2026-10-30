@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Glossy floor line indicating impact context -->
+  <path d="M 40 180 L 200 180" stroke="#2C323D" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Character / Boy Head representing physical impact "磕" (kē) -->
+  <g transform="translate(120, 115)">
+    <!-- Boy's Hair (Dark/Amber styled) -->
+    <path d="M -32 -25 C -35 -48 15 -52 32 -25 C 42 -10 38 10 35 15 C 25 10 20 0 10 -15 C 0 -22 -20 -15 -32 -25 Z" fill="#E59836"/>
+    
+    <!-- Head Base Shape -->
+    <circle cx="0" cy="5" r="42" fill="#FCE5CD"/>
+    
+    <!-- Boy's Face Features (Expression of surprise/pain, squinted eye, open mouth) -->
+    <!-- Eyebrows -->
+    <path d="M -16 -4 L -6 -8" stroke="#5A3E2B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 6 -10 L 16 -4" stroke="#5A3E2B" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Eyes (Squinted shut from bump) -->
+    <path d="M -16 2 C -13 6 -10 6 -7 2" stroke="#5A3E2B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M 7 0 C 10 4 13 4 16 0" stroke="#5A3E2B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    
+    <!-- Rosy Cheek -->
+    <circle cx="-20" cy="12" r="6" fill="#F4A261" opacity="0.5"/>
+
+    <!-- Open Mouth (Ouch expression) -->
+    <ellipse cx="4" cy="16" rx="5" ry="7" fill="#5A3E2B"/>
+
+    <!-- The Bump (Conspicuous purple-blue swollen bruise on forehead, core semantic element) -->
+    <g transform="translate(4, -30)">
+      <!-- Impact shockwaves / vibration lines -->
+      <path d="M -12 -12 L -6 -6" stroke="#9B51E0" stroke-width="2" stroke-linecap="round"/>
+      <path d="M 12 -12 L 6 -6" stroke="#9B51E0" stroke-width="2" stroke-linecap="round"/>
+      <line x1="0" y1="-16" x2="0" y2="-8" stroke="#9B51E0" stroke-width="2" stroke-linecap="round"/>
+      
+      <!-- Swollen Bump Body -->
+      <ellipse cx="0" cy="-2" rx="15" ry="12" fill="#9B51E0"/>
+      <ellipse cx="-4" cy="-5" rx="7" ry="5" fill="#BB6BD9" opacity="0.7"/>
+    </g>
+  </g>
+
+  <!-- Accent Focus Glow -->
+  <circle cx="124" cy="75" r="22" fill="#9B51E0" opacity="0.15" filter="blur(4px)"/>
+</svg>

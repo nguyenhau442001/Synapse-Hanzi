@@ -1,0 +1,30 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Broken Ancient Pillar/Relic -->
+  <g transform="translate(120, 120)">
+    <!-- Base Fragment -->
+    <path d="M-60 80 L60 80 L50 40 L-50 40 Z" fill="#4A5568"/>
+    <path d="M-50 40 L50 40 L40 10 L-40 10 Z" fill="#718096"/>
+    
+    <!-- Broken Upper Section -->
+    <path d="M-30 10 L30 10 L20 -60 L-20 -60 Z" fill="#A0AEC0"/>
+    
+    <!-- Debris/Rubble -->
+    <path d="M-70 70 L-50 70 L-55 50 Z" fill="#E53E3E"/>
+    <path d="M40 75 L65 75 L55 55 Z" fill="#E53E3E"/>
+    <path d="M-10 0 L10 0 L0 -20 Z" fill="#E53E3E"/>
+    
+    <!-- Cracks -->
+    <path d="M-20 -50 L-10 -30 L-25 -10" stroke="#1A1D24" stroke-width="3" fill="none"/>
+    <path d="M15 -40 L5 -20 L15 0" stroke="#1A1D24" stroke-width="3" fill="none"/>
+  </g>
+
+  <!-- Sorrowful Human Silhouette (Representing the observer) -->
+  <g transform="translate(120, 180)">
+    <circle cx="0" cy="-10" r="15" fill="#CBD5E0"/>
+    <path d="M-25 0 L25 0 C25 20, -25 20, -25 0" fill="#CBD5E0"/>
+    <!-- Head bowed gesture -->
+    <path d="M-5 -5 L5 -5" stroke="#1A1D24" stroke-width="2" fill="none"/>
+  </g>
+</svg>

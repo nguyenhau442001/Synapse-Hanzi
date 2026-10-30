@@ -1,0 +1,62 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle background graphical context representing complex thoughts/weights being cast aside -->
+  <g opacity="0.3">
+    <!-- Fading abstract nodes / mental knots dissolving -->
+    <path d="M70 90 C 80 70, 100 70, 110 90" stroke="#64748B" stroke-width="2" stroke-dasharray="4,4" fill="none"/>
+    <path d="M130 90 C 140 70, 160 70, 170 90" stroke="#64748B" stroke-width="2" stroke-dasharray="4,4" fill="none"/>
+  </g>
+
+  <!-- Motion lines indicating the action of releasing/putting down mental burden (顾虑) -->
+  <g opacity="0.8">
+    <path d="M 85 130 C 70 120, 60 100, 65 80" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" fill="none" stroke-dasharray="6,6"/>
+    <path d="M 155 130 C 170 120, 180 100, 175 80" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" fill="none" stroke-dasharray="6,6"/>
+  </g>
+
+  <!-- Floating abstract "weight/hesitation" symbols being cast off upward and outward -->
+  <g transform="translate(0, -10)">
+    <!-- Left floating knot/burden -->
+    <path d="M 75 75 Q 85 65 95 75 T 115 75" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <!-- Right floating knot/burden -->
+    <path d="M 125 75 Q 135 65 145 75 T 165 75" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Character Head & Upper Body -->
+  <g id="character">
+    <!-- Torso / Shoulders with professional modern apparel -->
+    <path d="M 90 200 L 90 175 C 90 160, 105 150, 120 150 C 135 150, 150 160, 150 175 L 150 200 Z" fill="#334155"/>
+    <path d="M 98 200 L 98 178 C 98 168, 107 160, 120 160 C 133 160, 142 168, 142 178 L 142 200 Z" fill="#1E293B"/> <!-- Inner shirt/collar -->
+
+    <!-- Neck -->
+    <rect x="112" y="132" width="16" height="24" fill="#CBD5E1" rx="4"/>
+
+    <!-- Head -->
+    <circle cx="120" cy="112" r="22" fill="#CBD5E1"/>
+
+    <!-- Hair -->
+    <path d="M 98 112 C 98 96, 108 90, 120 90 C 132 90, 142 96, 142 112 C 142 115, 140 112, 140 104 C 140 94, 131 92, 120 92 C 109 92, 100 94, 100 104 C 100 112, 98 115, 98 112 Z" fill="#475569"/>
+
+    <!-- Face details (calm, resolved expression - post-release of 顾虑) -->
+    <!-- Closed relaxed eyes / confident expression -->
+    <path d="M 110 110 Q 114 114 118 110" stroke="#334155" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M 122 110 Q 126 114 130 110" stroke="#334155" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <!-- Gentle confident smile -->
+    <path d="M 115 122 Q 120 126 125 122" stroke="#334155" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Dynamic Arms performing the action of "putting down / letting go" (放下包袱) -->
+  <g id="arms-and-action">
+    <!-- Left Arm reaching out and down, releasing -->
+    <path d="M 95 165 Q 75 160 65 140" stroke="#334155" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <circle cx="63" cy="136" r="6" fill="#CBD5E1"/> <!-- Left Hand -->
+
+    <!-- Right Arm reaching out and down, releasing -->
+    <path d="M 145 165 Q 165 160 175 140" stroke="#334155" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <circle cx="177" cy="136" r="6" fill="#CBD5E1"/> <!-- Right Hand -->
+  </g>
+
+  <!-- Accent Focus Glow / Highlights representing clarity and scientific validation achieved -->
+  <circle cx="120" cy="112" r="50" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="8,12" fill="none" opacity="0.4"/>
+</svg>

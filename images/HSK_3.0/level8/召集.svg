@@ -1,0 +1,57 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Central Visual Representation for "召集" (召唤汇聚 - Summoning/Gathering people) -->
+  <!-- Contextual reference: Leader convening team members -->
+
+  <!-- Radiating summoning waves / signal -->
+  <g fill="none" stroke-linecap="round" stroke-width="2">
+    <path d="M120,60 C145,60 165,80 165,105" stroke="#FFA726" opacity="0.3"/>
+    <path d="M120,45 C158,45 190,77 190,115" stroke="#FFA726" opacity="0.2"/>
+    <path d="M120,30 C170,30 215,75 215,125" stroke="#FFA726" opacity="0.1"/>
+    
+    <path d="M120,60 C95,60 75,80 75,105" stroke="#FFA726" opacity="0.3"/>
+    <path d="M120,45 C82,45 50,77 50,115" stroke="#FFA726" opacity="0.2"/>
+    <path d="M120,30 C70,30 25,75 25,125" stroke="#FFA726" opacity="0.1"/>
+  </g>
+
+  <!-- Central Leader (Signaling/Summoning) -->
+  <!-- Leader body -->
+  <circle cx="120" cy="85" r="18" fill="#FFC107"/>
+  <path d="M92,130 C92,108 104,102 120,102 C136,102 148,108 148,130 Z" fill="#FFA726"/>
+  <!-- Raised arm commanding/summoning -->
+  <path d="M148,112 L168,90" stroke="#FFA726" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Gathered Team Members (Left, Right, Lower) -->
+  <!-- Member 1 (Left) -->
+  <g transform="translate(-40, 25)">
+    <circle cx="105" cy="115" r="14" fill="#4DB6AC"/>
+    <path d="M85,150 C85,133 94,128 105,128 C116,128 125,133 125,150 Z" fill="#26A69A"/>
+  </g>
+
+  <!-- Member 2 (Right) -->
+  <g transform="translate(40, 25)">
+    <circle cx="135" cy="115" r="14" fill="#4DB6AC"/>
+    <path d="M115,150 C115,133 124,128 135,128 C146,128 155,133 155,150 Z" fill="#26A69A"/>
+  </g>
+
+  <!-- Member 3 (Foreground Center-Left) -->
+  <g transform="translate(-18, 55)">
+    <circle cx="100" cy="120" r="15" fill="#29B6F6"/>
+    <path d="M78,160 C78,140 88,135 100,135 C112,135 122,140 122,160 Z" fill="#0288D1"/>
+  </g>
+
+  <!-- Member 4 (Foreground Center-Right) -->
+  <g transform="translate(18, 55)">
+    <circle cx="140" cy="120" r="15" fill="#29B6F6"/>
+    <path d="M118,160 C118,140 128,135 140,135 C152,135 162,140 162,160 Z" fill="#0288D1"/>
+  </g>
+
+  <!-- Convergence Indicator (Subtle circular flow / ground platform) -->
+  <ellipse cx="120" cy="195" rx="75" ry="16" fill="none" stroke="#37474F" stroke-width="3" stroke-dasharray="6 4"/>
+  <path d="M120,175 L120,190 M115,185 L120,190 L125,185" stroke="#FFA726" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Accent Focus Glow behind leader -->
+  <circle cx="120" cy="85" r="30" fill="#FFA726" opacity="0.15" filter="blur(8px)"/>
+</svg>

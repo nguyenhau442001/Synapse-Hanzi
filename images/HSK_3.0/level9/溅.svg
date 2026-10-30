@@ -1,0 +1,32 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Road Surface -->
+  <rect x="0" y="180" width="240" height="60" fill="#2D3436"/>
+  
+  <!-- Puddle -->
+  <path d="M40 190 C 60 180, 100 180, 120 195 C 140 210, 180 205, 200 195" fill="#4A90E2" opacity="0.6"/>
+  
+  <!-- Pedestrian (simplified silhouette) -->
+  <g transform="translate(180, 120)">
+    <circle cx="10" cy="15" r="10" fill="#E0E0E0"/>
+    <rect x="5" y="25" width="10" height="40" rx="2" fill="#E0E0E0"/>
+    <rect x="2" y="30" width="16" height="5" rx="1" fill="#E0E0E0"/>
+  </g>
+  
+  <!-- Car (simplified side profile) -->
+  <g transform="translate(20, 130)">
+    <path d="M0 30 L80 30 L70 10 L20 10 Z" fill="#F39C12"/>
+    <circle cx="20" cy="35" r="8" fill="#333"/>
+    <circle cx="60" cy="35" r="8" fill="#333"/>
+  </g>
+  
+  <!-- Splashes (The visual representation of 溅) -->
+  <g fill="#F39C12" opacity="0.9">
+    <path d="M100 190 Q 120 140 150 130 Q 130 150 120 180 Z"/>
+    <path d="M110 185 Q 130 135 160 125 Q 140 145 130 175 Z"/>
+    <circle cx="155" cy="125" r="4"/>
+    <circle cx="165" cy="135" r="3"/>
+    <circle cx="145" cy="140" r="2"/>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Stormy Wind/Typhoon Representation -->
+  <g transform="translate(120, 120)">
+    <!-- Main swirling wind vortex -->
+    <path d="M-60,-20 C-40,-60 40,-60 60,-20 C80,20 40,60 0,60 C-40,60 -80,20 -60,-20 Z" fill="#2C3E50" opacity="0.6"/>
+    
+    <!-- Sharp, aggressive wind streaks (representing 'kuang' - violent/furious) -->
+    <path d="M-80,-40 L-30,-20 L-80,0 M80,40 L30,20 L80,0" stroke="#F39C12" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M-40,-70 L-20,-30 L0,-70 M40,70 L20,30 L0,70" stroke="#F39C12" stroke-width="6" stroke-linecap="round" fill="none"/>
+    
+    <!-- Central violent vortex core -->
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#F39C12" stroke-width="8" stroke-dasharray="10 10"/>
+    
+    <!-- Lightning bolt accent -->
+    <path d="M10,-30 L-10,0 L10,0 L-10,30" fill="#F1C40F"/>
+  </g>
+</svg>

@@ -1,0 +1,59 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 120)">
+    <!-- Background subtle magnifying glass lens circle -->
+    <circle cx="0" cy="0" r="88" fill="#222733" stroke="#2D3446" stroke-width="3"/>
+    
+    <!-- Microscopic Grid / Background details -->
+    <path d="M-60 -60 L60 -60 M-60 -20 L60 -20 M-60 20 L60 20 M-60 60 L60 60" stroke="#2A3142" stroke-width="1" stroke-dasharray="4 4"/>
+    <path d="M-60 -60 L-60 60 M-20 -60 L-20 60 M20 -60 20 60 M60 -60 60 60" stroke="#2A3142" stroke-width="1" stroke-dasharray="4 4"/>
+
+    <!-- Nano-structure left cluster -->
+    <g transform="translate(-32, 0)">
+      <!-- Bond lines -->
+      <line x1="0" y1="-24" x2="-20" y2="10" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+      <line x1="0" y1="24" x2="-20" y2="10" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+      <line x1="0" y1="-24" x2="0" y2="24" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+      
+      <!-- Atoms -->
+      <circle cx="0" cy="-24" r="10" fill="#64748B"/>
+      <circle cx="0" cy="24" r="10" fill="#475569"/>
+      <circle cx="-20" cy="10" r="14" fill="#94A3B8"/>
+    </g>
+
+    <!-- Nano-structure right cluster -->
+    <g transform="translate(32, 0)">
+      <!-- Bond lines -->
+      <line x1="0" y1="-24" x2="20" y2="-10" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+      <line x1="0" y1="24" x2="20" y2="-10" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+      <line x1="0" y1="-24" x2="0" y2="24" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+      
+      <!-- Atoms -->
+      <circle cx="0" cy="-24" r="10" fill="#64748B"/>
+      <circle cx="0" cy="24" r="10" fill="#475569"/>
+      <circle cx="20" cy="-10" r="14" fill="#94A3B8"/>
+    </g>
+
+    <!-- FOCUS / GAP HIGHLIGHT (间隙) -->
+    <g>
+      <!-- Glowing aperture/gap indicator brackets -->
+      <path d="M-8 -18 L-14 -18 L-14 18 L-8 18" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M8 -18 L14 -18 L14 18 L8 18" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- Center gap photons / energy pulse indicating precise empty space -->
+      <line x1="-5" y1="0" x2="5" y2="0" stroke="#FBBF24" stroke-width="2.5" stroke-dasharray="2 2"/>
+      <circle cx="0" cy="-32" r="2.5" fill="#F59E0B"/>
+      <circle cx="0" cy="32" r="2.5" fill="#F59E0B"/>
+    </g>
+    
+    <!-- Magnifying Glass Rim & Handle (Overlay) -->
+    <!-- Lens outer glow -->
+    <circle cx="0" cy="0" r="88" fill="none" stroke="#3B82F6" stroke-width="2" opacity="0.6"/>
+    
+    <!-- Handle -->
+    <path d="M62 62 L95 95" stroke="#475569" stroke-width="12" stroke-linecap="round"/>
+    <path d="M62 62 L95 95" stroke="#64748B" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>

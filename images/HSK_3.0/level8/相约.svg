@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient background glow representing golden autumn context -->
+  <circle cx="120" cy="120" r="70" fill="#2D2820" opacity="0.6"/>
+
+  <!-- Iconic Object: Traditional/Modern Invitation Calendar & Meeting Clock representing "相约" (Appointment/Agreement to meet) -->
+  <g transform="translate(0, 5)">
+    <!-- Calendar Body -->
+    <rect x="70" y="55" width="100" height="110" rx="12" fill="#252A34" stroke="#394150" stroke-width="2"/>
+    
+    <!-- Calendar Top Binding Header -->
+    <path d="M 70 67 L 170 67 L 170 80 C 170 85.5 165.5 90 160 90 L 80 90 C 74.5 90 70 85.5 70 80 Z" fill="#F5A623"/>
+    
+    <!-- Binding Rings -->
+    <rect x="92" y="47" width="8" height="14" rx="4" fill="#A0AAB8"/>
+    <rect x="140" y="47" width="8" height="14" rx="4" fill="#A0AAB8"/>
+
+    <!-- Calendar Grid / Date Marks -->
+    <rect x="88" y="105" width="16" height="12" rx="3" fill="#394150"/>
+    <rect x="112" y="105" width="16" height="12" rx="3" fill="#394150"/>
+    <rect x="136" y="105" width="16" height="12" rx="3" fill="#394150"/>
+    
+    <rect x="88" y="125" width="16" height="12" rx="3" fill="#394150"/>
+    <rect x="112" y="125" width="16" height="12" rx="3" fill="#F5A623" opacity="0.2"/>
+    <rect x="136" y="125" width="16" height="12" rx="3" fill="#394150"/>
+
+    <!-- Highlighted Golden Date (The agreed meeting day) -->
+    <rect x="110" y="123" width="20" height="16" rx="4" fill="#F5A623"/>
+    
+    <!-- Clock / Appointment Overlay Element signifying meeting time -->
+    <circle cx="155" cy="140" r="32" fill="#1E232D" stroke="#F5A623" stroke-width="3"/>
+    <!-- Clock Hands -->
+    <line x1="155" y1="140" x2="155" y2="124" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="155" y1="140" x2="167" y2="140" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="155" cy="140" r="3" fill="#F5A623"/>
+
+    <!-- Handshake / Agreement Icon overlaying the calendar to denote mutual appointment -->
+    <g transform="translate(72, 125)">
+      <!-- Left Cuff/Arm -->
+      <path d="M 10 30 L 25 22 L 32 30 L 17 38 Z" fill="#4A90E2"/>
+      <!-- Right Cuff/Arm -->
+      <path d="M 54 30 L 39 22 L 32 30 L 47 38 Z" fill="#50E3C2"/>
+      <!-- Interlocked Hands -->
+      <circle cx="32" cy="27" r="8" fill="#F5A623"/>
+    </g>
+  </g>
+</svg>

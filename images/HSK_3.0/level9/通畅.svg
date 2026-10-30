@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Road Base -->
+    <path d="M 40 180 L 100 80 L 140 80 L 200 180 Z" fill="#2C3542"/>
+    
+    <!-- Road Surface -->
+    <path d="M 48 180 L 104 84 L 136 84 L 192 180 Z" fill="#222831"/>
+    
+    <!-- Smooth Flowing Glowing Lines (representing 通畅 - unimpeded, fluent traffic) -->
+    <path d="M 112 84 L 56 180" stroke="#00E676" stroke-width="3" stroke-dasharray="8 6" fill="none" opacity="0.8"/>
+    <path d="M 120 84 L 100 180" stroke="#00E676" stroke-width="3" stroke-dasharray="8 6" fill="none" opacity="0.8"/>
+    <path d="M 128 84 L 144 180" stroke="#00E676" stroke-width="3" stroke-dasharray="8 6" fill="none" opacity="0.8"/>
+    
+    <!-- Sleek Modern Car 1 (Lower Right, moving fast/smoothly) -->
+    <g transform="translate(135, 130) scale(0.7)">
+      <path d="M 10 20 L 30 5 L 70 5 L 90 20 L 95 35 L 5 35 Z" fill="#FF5252"/>
+      <path d="M 25 8 L 40 8 L 55 20 L 20 20 Z" fill="#1A1D24" opacity="0.4"/>
+      <circle cx="25" cy="35" r="8" fill="#37474F"/>
+      <circle cx="75" cy="35" r="8" fill="#37474F"/>
+      <circle cx="25" cy="35" r="4" fill="#CFD8DC"/>
+      <circle cx="75" cy="35" r="4" fill="#CFD8DC"/>
+      <!-- Motion lines -->
+      <line x1="-15" y1="20" x2="-5" y2="20" stroke="#FF5252" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+      <line x1="-20" y1="28" x2="-8" y2="28" stroke="#FF5252" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    </g>
+
+    <!-- Sleek Modern Car 2 (Mid Left, unblocked) -->
+    <g transform="translate(70, 110) scale(0.55)">
+      <path d="M 10 20 L 30 5 L 70 5 L 90 20 L 95 35 L 5 35 Z" fill="#00B0FF"/>
+      <path d="M 25 8 L 40 8 L 55 20 L 20 20 Z" fill="#1A1D24" opacity="0.4"/>
+      <circle cx="25" cy="35" r="8" fill="#37474F"/>
+      <circle cx="75" cy="35" r="8" fill="#37474F"/>
+      <circle cx="25" cy="35" r="4" fill="#CFD8DC"/>
+      <circle cx="75" cy="35" r="4" fill="#CFD8DC"/>
+    </g>
+
+    <!-- Green Traffic Signal (Top element indicating clear/go) -->
+    <rect x="110" y="35" width="20" height="40" rx="4" fill="#222831"/>
+    <circle cx="120" cy="45" r="4" fill="#CFD8DC" opacity="0.2"/>
+    <circle cx="120" cy="55" r="4" fill="#CFD8DC" opacity="0.2"/>
+    <circle cx="120" cy="65" r="5" fill="#00E676"/>
+    <!-- Signal Glow -->
+    <circle cx="120" cy="65" r="9" fill="#00E676" opacity="0.3"/>
+    
+    <!-- Traffic Light Pole -->
+    <rect x="118" y="75" width="4" height="15" fill="#37474F"/>
+  </g>
+</svg>

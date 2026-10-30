@@ -1,0 +1,39 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Group of Chickens -->
+  <g transform="translate(40, 140)">
+    <ellipse cx="20" cy="40" rx="12" ry="10" fill="#4A5568"/>
+    <circle cx="20" cy="30" r="8" fill="#4A5568"/>
+    <path d="M28 30 L32 28 L28 26 Z" fill="#E2E8F0"/>
+    
+    <ellipse cx="60" cy="40" rx="12" ry="10" fill="#4A5568"/>
+    <circle cx="60" cy="30" r="8" fill="#4A5568"/>
+    <path d="M68 30 L72 28 L68 26 Z" fill="#E2E8F0"/>
+    
+    <ellipse cx="180" cy="40" rx="12" ry="10" fill="#4A5568"/>
+    <circle cx="180" cy="30" r="8" fill="#4A5568"/>
+    <path d="M188 30 L192 28 L188 26 Z" fill="#E2E8F0"/>
+    
+    <ellipse cx="220" cy="40" rx="12" ry="10" fill="#4A5568"/>
+    <circle cx="220" cy="30" r="8" fill="#4A5568"/>
+    <path d="M228 30 L232 28 L228 26 Z" fill="#E2E8F0"/>
+  </g>
+  
+  <!-- The Crane (The standout figure) -->
+  <g transform="translate(120, 120)">
+    <!-- Legs -->
+    <line x1="-5" y1="20" x2="-5" y2="60" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+    <line x1="5" y1="20" x2="5" y2="60" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="20" ry="25" fill="#F7FAFC"/>
+    <!-- Neck -->
+    <path d="M10 -10 C 20 -30, 20 -50, 10 -60" stroke="#F7FAFC" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <!-- Head -->
+    <circle cx="10" cy="-65" r="10" fill="#F7FAFC"/>
+    <!-- Beak -->
+    <path d="M18 -68 L30 -65 L18 -62 Z" fill="#F6AD55"/>
+    <!-- Eye -->
+    <circle cx="14" cy="-68" r="1.5" fill="#1A1D24"/>
+  </g>
+</svg>

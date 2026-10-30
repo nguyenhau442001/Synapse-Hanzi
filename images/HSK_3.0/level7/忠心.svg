@@ -1,0 +1,27 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient background glow representing dedication/steadfastness -->
+  <circle cx="120" cy="115" r="70" fill="#FFB703" opacity="0.06"/>
+
+  <!-- Conceptual Object: A solid, stylized ancient Chinese bronze vessel/medal combined with a steadfast pillar/shield shape, symbolizing unwavering loyalty ("赤诚的忠心") -->
+  <!-- Base platform -->
+  <path d="M85 180H155V190C155 193.314 152.314 196 149 196H91C87.6863 196 85 193.314 85 190V180Z" fill="#3A404D"/>
+  
+  <!-- Main Emblem/Shield (Steadfast core) -->
+  <path d="M120 42C120 42 162 58 162 102C162 143.5 137 172 120 178C103 172 78 143.5 78 102C78 58 120 42 120 42Z" fill="#212631" stroke="#3A404D" stroke-width="3"/>
+
+  <!-- Inner Gold Core / Flame of Devotion (Representing "赤诚" - sincere/red dedication) -->
+  <path d="M120 62C120 62 148 80 148 112C148 138 131 156 120 162C109 156 92 138 92 112C92 80 120 62 120 62Z" fill="#FFB703" opacity="0.15"/>
+  <path d="M120 74C120 74 140 88 140 114C140 135 127 150 120 154C113 150 100 135 100 114C100 88 120 74 120 74Z" fill="#F77F00"/>
+
+  <!-- Central Anchor Pillar (Symbolizing unwavering firmness - "铁石心肠/坚定") -->
+  <rect x="114" y="86" width="12" height="48" rx="3" fill="#FFFFFF"/>
+  <!-- Crossbar of the pillar -->
+  <rect x="104" y="96" width="32" height="10" rx="3" fill="#FFFFFF"/>
+  
+  <!-- Radiating Star/Spark detail at the top center -->
+  <path d="M120 54L122.5 60.5L129 63L122.5 65.5L120 72L117.5 65.5L111 63L117.5 60.5L120 54Z" fill="#FFB703"/>
+
+</svg>

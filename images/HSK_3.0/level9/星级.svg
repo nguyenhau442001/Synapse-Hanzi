@@ -1,0 +1,79 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient background glow representing hotel/hospitality setting -->
+  <circle cx="120" cy="120" r="85" fill="#252A34" opacity="0.6"/>
+
+  <!-- Hotel Building Silhouette (Object/Place context for 星级) -->
+  <g transform="translate(65, 45)">
+    <!-- Hotel Body -->
+    <rect x="25" y="45" width="60" height="105" rx="4" fill="#2D3748" stroke="#4A5568" stroke-width="2"/>
+    
+    <!-- Entrance Awning / Canopy -->
+    <path d="M 40 150 L 70 150 L 75 160 L 35 160 Z" fill="#F6AD55"/>
+    <rect x="52" y="140" width="6" height="10" fill="#E2E8F0"/>
+
+    <!-- Windows Grid -->
+    <!-- Row 1 -->
+    <rect x="35" y="55" width="10" height="12" rx="2" fill="#4A5568"/>
+    <rect x="55" y="55" width="10" height="12" rx="2" fill="#4A5568"/>
+    <rect x="75" y="55" width="10" height="12" rx="2" fill="#4A5568"/>
+    
+    <!-- Row 2 -->
+    <rect x="35" y="75" width="10" height="12" rx="2" fill="#4A5568"/>
+    <rect x="55" y="75" width="10" height="12" rx="2" fill="#4A5568"/>
+    <rect x="75" y="75" width="10" height="12" rx="2" fill="#4A5568"/>
+
+    <!-- Row 3 -->
+    <rect x="35" y="95" width="10" height="12" rx="2" fill="#4A5568"/>
+    <rect x="55" y="95" width="10" height="12" rx="2" fill="#4A5568"/>
+    <rect x="75" y="95" width="10" height="12" rx="2" fill="#4A5568"/>
+
+    <!-- Row 4 -->
+    <rect x="35" y="115" width="10" height="12" rx="2" fill="#4A5568"/>
+    <rect x="55" y="115" width="10" height="12" rx="2" fill="#4A5568"/>
+    <rect x="75" y="115" width="10" height="12" rx="2" fill="#4A5568"/>
+  </g>
+
+  <!-- High-End Star Rating Arch (Representing "星级" - Star Rating/Standard) -->
+  <g transform="translate(120, 52)">
+    <!-- Arc guide for stars -->
+    <path d="M -70 20 C -70 -10 -30 -30 0 -30 C 30 -30 70 -10 70 20" fill="none" stroke="#CBD5E0" stroke-width="2" stroke-dasharray="3 4" opacity="0.4"/>
+
+    <!-- Left Star (3) -->
+    <g transform="translate(-48, -5) scale(0.65)">
+      <polygon points="0,-18 5,-5 18,-5 8,3 12,16 0,8 -12,16 -8,3 -18,-5 -5,-5" fill="#E2E8F0"/>
+    </g>
+
+    <!-- Far Left Star (2) -->
+    <g transform="translate(-75, 20) scale(0.5)">
+      <polygon points="0,-18 5,-5 18,-5 8,3 12,16 0,8 -12,16 -8,3 -18,-5 -5,-5" fill="#CBD5E0"/>
+    </g>
+
+    <!-- Center/Top Star (Highest Focus - 5 stars) -->
+    <g transform="translate(0, -26) scale(1.0)">
+      <polygon points="0,-18 5,-5 18,-5 8,3 12,16 0,8 -12,16 -8,3 -18,-5 -5,-5" fill="#F6AD55" stroke="#DD6B20" stroke-width="1.5"/>
+    </g>
+
+    <!-- Right Star (4) -->
+    <g transform="translate(48, -5) scale(0.65)">
+      <polygon points="0,-18 5,-5 18,-5 8,3 12,16 0,8 -12,16 -8,3 -18,-5 -5,-5" fill="#E2E8F0"/>
+    </g>
+
+    <!-- Far Right Star (1) -->
+    <g transform="translate(75, 20) scale(0.5)">
+      <polygon points="0,-18 5,-5 18,-5 8,3 12,16 0,8 -12,16 -8,3 -18,-5 -5,-5" fill="#CBD5E0"/>
+    </g>
+  </g>
+
+  <!-- Foreground Quality / Official Inspection Badge Base -->
+  <g transform="translate(120, 200)">
+    <rect x="-45" y="-14" width="90" height="26" rx="13" fill="#2D3748" stroke="#4A5568" stroke-width="1.5"/>
+    <!-- Small indicator dot -->
+    <circle cx="-28" cy="-1" r="5" fill="#48BB78"/>
+    <!-- Simulated text lines (clean vector representations, no actual text) -->
+    <rect x="-16" y="-4" width="38" height="4" rx="2" fill="#E2E8F0"/>
+    <rect x="-16" y="3" width="24" height="3" rx="1.5" fill="#A0AEC0"/>
+  </g>
+</svg>

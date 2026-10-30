@@ -1,0 +1,51 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Character / Semantic Icon: 哽咽 (Choked with sobs / sobbing with a choked voice) -->
+  <g transform="translate(120, 115)">
+    <!-- Shoulders and Torso -->
+    <path d="M-60 85 C-60 60 -35 50 0 50 C35 50 60 60 60 85 L60 85 L-60 85 Z" fill="#2A313C"/>
+    <path d="M-40 85 C-40 68 -20 62 0 62 C20 62 40 68 40 85 Z" fill="#3B4454"/>
+    
+    <!-- Neck -->
+    <rect x="-10" y="28" width="20" height="30" rx="6" fill="#E6C5B8"/>
+
+    <!-- Head -->
+    <circle cx="0" cy="-8" r="38" fill="#F4D3C4"/>
+
+    <!-- Hair (Simplified modern neat styling) -->
+    <path d="M-38 -10 C-38 -32 -18 -44 0 -44 C18 -44 38 -32 38 -10 C38 4 35 15 35 15 C35 15 28 -2 15 -8 C2 -14 -12 -12 -25 -5 C-32 -2 -38 4 -38 4 Z" fill="#3D2817"/>
+
+    <!-- Closed, strained eyes (conveying emotional pain/choking) -->
+    <path d="M-18 -12 C-15 -16 -9 -16 -6 -12" stroke="#5A3E36" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M6 -12 C9 -16 15 -16 18 -12" stroke="#5A3E36" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Eyebrows angled in grief/suppressed emotion -->
+    <path d="M-20 -20 C-15 -23 -10 -21 -6 -18" stroke="#3D2817" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M6 -18 C10 -21 15 -23 20 -20" stroke="#3D2817" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Tense, tight mouth suppressing a sob -->
+    <path d="M-8 4 C-4 2 4 2 8 4" stroke="#A85A48" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Tears dropping down -->
+    <circle cx="-13" cy="-2" r="3" fill="#64B5F6"/>
+    <path d="M-13 -6 L-13 1 C-14 3 -12 3 -13 4" stroke="#64B5F6" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <circle cx="15" cy="-2" r="3" fill="#64B5F6"/>
+    <path d="M15 -6 L15 1 C14 3 16 3 15 4" stroke="#64B5F6" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Hand gently touching the throat (visualizing "nghẹn ngào" / choked up in the throat) -->
+    <g transform="translate(0, 32)">
+      <!-- Wrist -->
+      <path d="M-6 20 L-15 35 L-5 40 L3 25 Z" fill="#E6C5B8"/>
+      <!-- Fingers wrapped around neck -->
+      <path d="M-10 18 C-15 14 -14 8 -8 6 C-2 4 4 6 8 10 C12 14 10 20 6 22" fill="#F4D3C4" stroke="#D8B1A0" stroke-width="1.5"/>
+      <circle cx="-6" cy="11" r="2.5" fill="#D8B1A0"/>
+    </g>
+
+    <!-- Throat pulsation / choked wave accent lines -->
+    <path d="M-5 25 C-8 27 -8 31 -5 33" stroke="#64B5F6" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <path d="M5 25 C8 27 8 31 5 33" stroke="#64B5F6" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8"/>
+  </g>
+</svg>

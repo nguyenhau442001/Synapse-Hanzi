@@ -1,42 +1,8 @@
-<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#1e293b"/>
-    </linearGradient>
-  </defs>
-  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
-  
-  <!-- Kitchen Counter -->
-  <path d="M0 160h240v60c0 11-9 20-20 20H20c-11 0-20-9-20-20V160z" fill="#334155"/>
-  <rect x="0" y="150" width="240" height="10" fill="#475569"/>
-  
-  <!-- Pot with Steam -->
-  <circle cx="180" cy="170" r="35" fill="#f59e0b"/>
-  <path d="M155 170h50v10c0 15-11 25-25 25s-25-10-25-25z" fill="#fbbf24"/>
-  <path d="M170 135h20v15h-20z" fill="#94a3b8"/>
-  <path d="M175 125h10v10h-10z" fill="#64748b"/>
-  <path d="M172 115c-5-10 0-20 8-25 8 5 13 15 8 25" fill="none" stroke="#e2e8f0" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
-  <path d="M188 110c-5-10 0-20 8-25 8 5 13 15 8 25" fill="none" stroke="#e2e8f0" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
-
-  <!-- Mother Figure (Upper body) -->
-  <g transform="translate(60, 80)">
-    <!-- Apron -->
-    <path d="M10 50h80v80c0 10-10 20-20 20H30c-10 0-20-10-20-20V50z" fill="#ec4899"/>
-    <!-- Arms -->
-    <path d="M0 70l-20 40M100 70l20 40" stroke="#fcd34d" stroke-width="12" stroke-linecap="round"/>
-    <!-- Face -->
-    <circle cx="50" cy="30" r="30" fill="#fcd34d"/>
-    <!-- Hair -->
-    <path d="M25 30c0-20 15-35 25-35s25 15 25 35" fill="none" stroke="#78350f" stroke-width="8" stroke-linecap="round"/>
-    <!-- Eyes -->
-    <circle cx="40" cy="25" r="3" fill="#0f172a"/>
-    <circle cx="60" cy="25" r="3" fill="#0f172a"/>
-    <!-- Smile -->
-    <path d="M40 35c5 5 15 5 20 0" stroke="#0f172a" stroke-width="2" fill="none" stroke-linecap="round"/>
-  </g>
-
-  <!-- Kitchen Utensil -->
-  <path d="M130 180l20-20" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="130" cy="180" r="5" fill="#94a3b8"/>
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+  <path d="M32 24 L22 46 Q32 52 36 78" stroke="#f43f5e" stroke-width="3.8" stroke-linecap="round" fill="none"/>
+  <path d="M36 34 Q28 54 18 68" stroke="#f43f5e" stroke-width="3.8" stroke-linecap="round"/>
+  <line x1="14" y1="46" x2="44" y2="44" stroke="#f43f5e" stroke-width="3.8" stroke-linecap="round"/>
+  <circle cx="66" cy="34" r="10" stroke="#fb923c" stroke-width="3" fill="none"/>
+  <path d="M56 68 Q56 52 66 52 Q76 52 76 68" stroke="#fb923c" stroke-width="3" fill="none"/>
 </svg>

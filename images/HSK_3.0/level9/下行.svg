@@ -1,0 +1,36 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Isometric platform or ground base -->
+    <path d="M48 180 L120 204 L192 180 L120 156 Z" fill="#252A34" stroke="#3A4150" stroke-width="2"/>
+    
+    <!-- Vertical structural pillars representing economic framework -->
+    <rect x="56" y="90" width="8" height="80" rx="2" fill="#3A4150"/>
+    <rect x="176" y="90" width="8" height="80" rx="2" fill="#3A4150"/>
+    
+    <!-- Physical Heavy Object (Concrete/Steel Block) representing economic burden/pressure -->
+    <g>
+      <!-- Top face -->
+      <polygon points="120,70 176,92 120,114 64,92" fill="#E5E9F0"/>
+      <!-- Left face -->
+      <polygon points="64,92 120,114 120,164 64,142" fill="#D8DEE9"/>
+      <!-- Right face -->
+      <polygon points="120,114 176,92 176,142 120,164" fill="#4C566A"/>
+      
+      <!-- Inner industrial cutouts on the block for physical object realism -->
+      <path d="M92,103 L120,114 L148,103" fill="none" stroke="#2E3440" stroke-width="2"/>
+    </g>
+
+    <!-- Prominent Downward Motion / Descent Indicators (Physical arrows wrapping the descent) -->
+    <g stroke-linecap="round" stroke-linejoin="round">
+      <!-- Main downward trajectory path with high-contrast accent orange -->
+      <path d="M120,20 L120,140" fill="none" stroke="#D08770" stroke-width="6" stroke-dasharray="8 6"/>
+      <!-- Large bold arrowhead pointing straight down onto the object/ground -->
+      <path d="M100,125 L120,150 L140,125" fill="none" stroke="#D08770" stroke-width="6"/>
+    </g>
+    
+    <!-- Accent subtle side motion vectors -->
+    <path d="M85,60 L65,75 M155,60 L175,75" fill="none" stroke="#D08770" stroke-width="3" opacity="0.6"/>
+  </g>
+</svg>

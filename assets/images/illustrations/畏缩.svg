@@ -1,0 +1,46 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle atmospheric background elements (storm/wind implied abstractly without abstract badges) -->
+  <path d="M20 70 L90 70" stroke="#2A2F3D" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M150 40 L210 40" stroke="#2A2F3D" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <path d="M30 190 L110 190" stroke="#2A2F3D" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Character representing "畏缩" (cringing/shrinking back in fear) -->
+  <g transform="translate(120, 135)">
+    <!-- Dropped/recoiling shadow -->
+    <ellipse cx="0" cy="72" rx="35" ry="8" fill="#111318"/>
+
+    <!-- Slouched Body & Back (Crouching, pulling inward) -->
+    <path d="M-12 15 C-25 0 -22 -35 0 -45 C22 -35 30 -5 20 25 L35 60 L15 65 L5 30 L-5 60 L-25 60 Z" fill="#3B4252"/>
+
+    <!-- Head tucked down and forward (fearful posture) -->
+    <circle cx="2" cy="-50" r="16" fill="#E5E9F0"/>
+    
+    <!-- Hair -->
+    <path d="M-14 -56 C-14 -65 10 -68 15 -52 C8 -56 -4 -56 -14 -56 Z" fill="#4C566A"/>
+
+    <!-- Hunched Shoulders & Arms wrapped tightly in defense -->
+    <!-- Back/Upper arm -->
+    <path d="M-10 -35 C-25 -25 -30 -5 -15 5 C-22 -5 -20 -20 -10 -35 Z" fill="#4C566A"/>
+    <!-- Hands clutching/guarding chest -->
+    <circle cx="-12" cy="0" r="6" fill="#E5E9F0"/>
+    <circle cx="8" cy="10" r="6" fill="#E5E9F0"/>
+    <path d="M-15 -25 C-5 -15 0 -5 8 10" stroke="#4C566A" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- Bent Legs (Shrinking down close to the ground) -->
+    <path d="M-15 58 L-30 40 L-20 30" fill="none" stroke="#2E3440" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M10 58 L30 45 L25 32" fill="none" stroke="#2E3440" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- High-contrast focus accent: Stormy pressure wave indicating threat/fear catalyst -->
+  <path d="M40 95 Q 60 80, 80 95 T 120 95 T 160 95 T 200 95" fill="none" stroke="#D08770" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <path d="M60 110 Q 80 95, 100 110 T 140 110 T 180 110" fill="none" stroke="#D08770" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Directional wind/force lines pressing in -->
+  <path d="M20 120 L45 125" stroke="#EBCB8B" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+  <path d="M15 140 L35 138" stroke="#EBCB8B" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <path d="M195 120 L220 125" stroke="#EBCB8B" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+  <path d="M205 140 L225 138" stroke="#EBCB8B" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+</svg>

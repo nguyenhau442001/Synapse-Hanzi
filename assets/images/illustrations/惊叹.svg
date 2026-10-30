@@ -1,0 +1,66 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient glow representing discovery/revelation -->
+  <circle cx="120" cy="110" r="70" fill="#FFB703" opacity="0.08"/>
+  
+  <!-- Archaeological Ruin / Ancient Underground Palace Structure -->
+  <g transform="translate(0, 15)">
+    <!-- Base pillars and foundation -->
+    <rect x="70" y="115" width="100" height="15" rx="2" fill="#2D3340"/>
+    <rect x="85" y="65" width="70" height="50" fill="#252A34"/>
+    
+    <!-- Ruined pillars -->
+    <rect x="75" y="70" width="12" height="45" fill="#3A4254"/>
+    <rect x="153" y="70" width="12" height="45" fill="#3A4254"/>
+    
+    <!-- Ancient architectural detail (pediment/roof outline emerging) -->
+    <polygon points="120,40 175,65 65,65" fill="#313846"/>
+    <polygon points="120,45 165,65 75,65" fill="#252A34"/>
+
+    <!-- Glowing artifact / light beam from excavation -->
+    <path d="M95,65 L120,25 L145,65 Z" fill="#FFB703" opacity="0.2"/>
+    <circle cx="120" cy="55" r="8" fill="#FFB703"/>
+  </g>
+
+  <!-- Astounded Archaeologist Character (Focus on Awe/Expression) -->
+  <g transform="translate(0, 15)">
+    <!-- Body / Torso -->
+    <path d="M100,165 L140,165 L150,210 L90,210 Z" fill="#2D4356"/>
+    <!-- Vest / Field jacket -->
+    <path d="M100,165 L120,165 L120,210 L90,210 Z" fill="#1E2E3C"/>
+    <path d="M140,165 L120,165 L120,210 L150,210 Z" fill="#1E2E3C"/>
+    
+    <!-- Neck -->
+    <rect x="112" y="148" width="16" height="20" fill="#E0AC69"/>
+    
+    <!-- Head (仰视 - tilted back slightly in awe) -->
+    <circle cx="120" cy="135" r="22" fill="#E0AC69"/>
+    
+    <!-- Hair -->
+    <path d="M98,130 C98,115 110,112 120,112 C130,112 142,115 142,130 L142,138 L98,138 Z" fill="#4A3525"/>
+    
+    <!-- Glasses pushed up slightly / Wide astonished eyes -->
+    <circle cx="112" cy="134" r="5" fill="#FFFFFF"/>
+    <circle cx="128" cy="134" r="5" fill="#FFFFFF"/>
+    <circle cx="113" cy="134" r="2" fill="#1A1D24"/>
+    <circle cx="129" cy="134" r="2" fill="#1A1D24"/>
+    
+    <!-- Gasping / Open Mouth (Astonishment) -->
+    <ellipse cx="120" cy="147" rx="4" ry="6" fill="#7A1C1C"/>
+
+    <!-- Hands raised to face in profound amazement -->
+    <!-- Left Hand -->
+    <circle cx="98" cy="142" r="7" fill="#E0AC69"/>
+    <!-- Right Hand -->
+    <circle cx="142" cy="142" r="7" fill="#E0AC69"/>
+  </g>
+
+  <!-- Sparkles / Emphasis of "惊叹" (Awe & Wonder) -->
+  <g fill="#FFB703">
+    <path d="M55,60 L57,68 L65,70 L57,72 L55,80 L53,72 L45,70 L53,68 Z"/>
+    <path d="M185,45 L186,50 L191,51 L186,52 L185,57 L184,52 L179,51 L184,50 Z"/>
+    <path d="M175,95 L176,98 L179,99 L176,100 L175,103 L174,100 L171,99 L174,98 Z"/>
+  </g>
+</svg>

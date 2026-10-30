@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Mountain Peaks -->
+  <path d="M0 240 L60 140 L120 200 L180 120 L240 240 Z" fill="#2C333F"/>
+  <path d="M40 240 L100 160 L160 210 L220 150 L240 240 Z" fill="#3A4352"/>
+  
+  <!-- Clouds -->
+  <path d="M0 180 Q30 160 60 180 T120 180 T180 180 T240 180" fill="#252A34" opacity="0.6"/>
+  
+  <!-- Character on Peak -->
+  <g transform="translate(120, 110)">
+    <!-- Body -->
+    <path d="M-10 40 L10 40 L5 80 L-5 80 Z" fill="#FFB84D"/>
+    <!-- Head -->
+    <circle cx="0" cy="25" r="12" fill="#FFB84D"/>
+    <!-- Hand pointing/looking -->
+    <path d="M10 35 L30 25" stroke="#FFB84D" stroke-width="4" stroke-linecap="round"/>
+    <!-- Sight Line -->
+    <line x1="30" y1="25" x2="100" y2="25" stroke="#FFD700" stroke-width="2" stroke-dasharray="4 4" opacity="0.8"/>
+  </g>
+  
+  <!-- Distant Mountain Silhouette -->
+  <path d="M150 120 L180 90 L210 110 L240 80" stroke="#4A5568" stroke-width="2" fill="none"/>
+</svg>

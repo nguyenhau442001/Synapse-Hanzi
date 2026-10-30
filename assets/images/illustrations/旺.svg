@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background glow for warmth in dark mode -->
+  <circle cx="120" cy="140" r="70" fill="#FF5722" opacity="0.1" filter="blur(20px)"/>
+  <circle cx="120" cy="120" r="45" fill="#FFC107" opacity="0.15" filter="blur(15px)"/>
+
+  <!-- Brazier / Stove Object (Representing the physical noun of intense fire/prosperity) -->
+  <!-- Brazier stand / legs -->
+  <path d="M90 185 L80 205 M150 185 L160 205" stroke="#4F5D75" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Brazier Body (Dark cast iron bowl) -->
+  <path d="M75 140 C75 175, 165 175, 165 140 Z" fill="#2E384D"/>
+  <ellipse cx="120" cy="140" rx="45" ry="12" fill="#3B475E"/>
+  <ellipse cx="120" cy="138" rx="40" ry="9" fill="#1A1D24"/>
+
+  <!-- Glowing embers inside -->
+  <ellipse cx="120" cy="138" rx="35" ry="7" fill="#E65100"/>
+  <circle cx="110" cy="138" r="4" fill="#FFC107"/>
+  <circle cx="130" cy="137" r="5" fill="#FF5722"/>
+  <circle cx="120" cy="139" r="3" fill="#FFEB3B"/>
+
+  <!-- Fierce, roaring bright flames (旺 - blazing/thriving) -->
+  <!-- Outer large flame -->
+  <path d="M120 60 C105 90, 85 105, 85 125 C85 145, 100 150, 120 135 C140 150, 155 145, 155 125 C155 105, 135 90, 120 60 Z" fill="#FF5722"/>
+  
+  <!-- Inner bright flame -->
+  <path d="M120 75 C108 100, 95 110, 95 126 C95 138, 106 142, 120 130 C134 142, 145 138, 145 126 C145 110, 132 100, 120 75 Z" fill="#FF9800"/>
+
+  <!-- Core white-hot flame tip -->
+  <path d="M120 95 C112 112, 105 118, 105 127 C105 134, 112 136, 120 128 C128 136, 135 134, 135 127 C135 118, 128 112, 120 95 Z" fill="#FFEB3B"/>
+
+  <!-- Rising sparks / embers for vivid thriving atmosphere -->
+  <circle cx="105" cy="50" r="2.5" fill="#FFC107" opacity="0.9"/>
+  <circle cx="135" cy="45" r="2" fill="#FF5722" opacity="0.8"/>
+  <circle cx="125" cy="30" r="1.5" fill="#FFEB3B" opacity="0.9"/>
+  <circle cx="95" cy="65" r="1.5" fill="#FF9800" opacity="0.7"/>
+  <circle cx="148" cy="60" r="2" fill="#FFC107" opacity="0.8"/>
+
+  <!-- Subtle heat shimmer lines flanking the flame -->
+  <path d="M72 105 C68 95, 68 85, 72 75" stroke="#FF9800" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <path d="M168 105 C172 95, 172 85, 168 75" stroke="#FF9800" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.4"/>
+</svg>

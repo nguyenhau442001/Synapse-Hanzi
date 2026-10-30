@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow/backdrop for focus -->
+  <circle cx="120" cy="120" r="80" fill="#222733" opacity="0.6"/>
+
+  <!-- Physical Object / Character Representation: Review/Assessment Document & Expert Stamp (评审) -->
+  <g transform="translate(0, 5)">
+    <!-- Document Base -->
+    <rect x="70" y="45" width="100" height="130" rx="6" fill="#2A303C" stroke="#3A4252" stroke-width="2"/>
+    <rect x="85" y="65" width="70" height="8" rx="4" fill="#4E5D6C"/>
+    <rect x="85" y="83" width="50" height="6" rx="3" fill="#3A4252"/>
+    <rect x="85" y="97" width="65" height="6" rx="3" fill="#3A4252"/>
+    <rect x="85" y="111" width="40" height="6" rx="3" fill="#3A4252"/>
+
+    <!-- Evaluation lines / Checkmarks -->
+    <path d="M87 132 L93 138 L105 126" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="115" y="130" width="45" height="6" rx="3" fill="#3A4252"/>
+
+    <path d="M87 150 L93 156 L105 144" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="115" y="148" width="35" height="6" rx="3" fill="#3A4252"/>
+
+    <!-- Magnifying Glass (Inspection / Thẩm định) overlapping the document -->
+    <g transform="translate(100, 95)">
+      <!-- Glass Handle -->
+      <path d="M28 28 L52 52" stroke="#D97706" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="52" cy="52" r="5" fill="#B45309"/>
+      
+      <!-- Lens Frame -->
+      <circle cx="0" cy="0" r="32" fill="#1A1D24" opacity="0.85"/>
+      <circle cx="0" cy="0" r="32" fill="none" stroke="#FBBF24" stroke-width="5"/>
+      
+      <!-- Inner lens highlight -->
+      <path d="M-18 -12 A 22 22 0 0 1 12 -18" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+      
+      <!-- Focus star/checkmark inside lens -->
+      <path d="M-8 0 L-2 6 L10 -6" fill="none" stroke="#34D399" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>

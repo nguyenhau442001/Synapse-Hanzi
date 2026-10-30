@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient glow/background highlights -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.5"/>
+  
+  <!-- International Treaty / Convention Document (公约) -->
+  <g transform="translate(0, 0)">
+    <!-- Document shadow -->
+    <rect x="68" y="44" width="104" height="152" rx="6" fill="#101217" opacity="0.6"/>
+    
+    <!-- Base parchment / official document sheet -->
+    <rect x="64" y="40" width="104" height="152" rx="6" fill="#F4F5F7"/>
+    
+    <!-- Document Header Accent -->
+    <path d="M64 46C64 42.6863 66.6863 40 70 40H162C165.314 40 168 42.6863 168 46V60H64V46Z" fill="#3B82F6"/>
+    
+    <!-- Environmental / International motif lines on top -->
+    <circle cx="84" cy="50" r="3" fill="#FFFFFF" opacity="0.8"/>
+    <circle cx="94" cy="50" r="3" fill="#FFFFFF" opacity="0.8"/>
+    
+    <!-- Text lines representing formal clauses -->
+    <rect x="80" y="76" width="72" height="6" rx="3" fill="#D1D5DB"/>
+    <rect x="80" y="90" width="60" height="5" rx="2.5" fill="#E5E7EB"/>
+    <rect x="80" y="102" width="68" height="5" rx="2.5" fill="#E5E7EB"/>
+    
+    <rect x="80" y="120" width="50" height="5" rx="2.5" fill="#E5E7EB"/>
+    <rect x="80" y="132" width="64" height="5" rx="2.5" fill="#E5E7EB"/>
+
+    <!-- Official Red Wax Seal (Signifying formal agreement / convention) -->
+    <circle cx="138" cy="160" r="16" fill="#EF4444"/>
+    <circle cx="138" cy="160" r="12" fill="#DC2626"/>
+    <!-- Star/Emblem inside seal -->
+    <path d="M138 152L140 157H145L141 160L142 165L138 162L134 165L135 160L131 157H136L138 152Z" fill="#FEE2E2"/>
+
+    <!-- Fountain Pen / Quill representing the signing of the treaty -->
+    <g transform="translate(10, 10)">
+      <path d="M115 130L155 90C157.761 87.2386 162.239 87.2386 165 90C167.761 92.7614 167.761 97.2386 165 100L125 140L115 130Z" fill="#F59E0B"/>
+      <!-- Pen Nib -->
+      <path d="M115 130L120 135L110 145L105 140L115 130Z" fill="#1F2937"/>
+      <!-- Gold Clip / Accent -->
+      <path d="M150 95L160 105" stroke="#D97706" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    
+    <!-- Ribbon / Bookmark hanging at bottom -->
+    <path d="M84 192L84 208L89 202L94 208L94 192" fill="#3B82F6"/>
+  </g>
+</svg>

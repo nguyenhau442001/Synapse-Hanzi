@@ -1,0 +1,37 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 120)">
+    <!-- Subtle warning glow / atmosphere representing anxiety and racing pulse -->
+    <circle cx="0" cy="0" r="85" fill="#FF5252" opacity="0.08"/>
+    <circle cx="0" cy="0" r="65" fill="#FF5252" opacity="0.12"/>
+
+    <!-- Dynamic pulse radiating lines behind the heart -->
+    <path d="M-60 -30 L-75 -35" stroke="#FF7675" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M60 -30 L75 -35" stroke="#FF7675" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M-65 20 L-80 25" stroke="#FF7675" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M65 20 L80 25" stroke="#FF7675" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Central Anatomical/Stylized Heart Symbol representing 心 (Heart) -->
+    <!-- Drop shadow for depth -->
+    <path d="M0,52 C-20,38 -65,10 -65,-22 C-65,-46 -45,-62 -21,-62 C-7,-62 5,-54 0,-42 C-5,-54 7,-62 21,-62 C45,-62 65,-46 65,-22 C65,10 20,38 0,52 Z" fill="#D63031" opacity="0.25" transform="translate(0, 4)"/>
+    
+    <!-- Main Heart Body -->
+    <path d="M0,48 C-18,35 -60,8 -60,-22 C-60,-44 -42,-58 -20,-58 C-7,-58 4,-50 0,-38 C-4,-50 7,-58 20,-58 C42,-58 60,-44 60,-22 C60,8 18,35 0,48 Z" fill="#FF5252"/>
+
+    <!-- Highlights on Heart for sleek flat modern style -->
+    <path d="M-38,-30 C-46,-40 -35,-52 -23,-50" stroke="#FF8A8A" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+    <!-- Prominent EKG / Pulse Line crossing the heart representing 慌 (Palpitations / Racing Heartbeat) -->
+    <path d="M-75,5 L-42,5 L-28,-22 L-10,32 L10,-45 L26,18 L40,-5 L75,-5" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Pulse glowing core overlay -->
+    <path d="M-75,5 L-42,5 L-28,-22 L-10,32 L10,-45 L26,18 L40,-5 L75,-5" fill="none" stroke="#FFEAA7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Concentrated energy pulse nodes / dots -->
+    <circle cx="-28" cy="-22" r="3.5" fill="#FFEAA7"/>
+    <circle cx="-10" cy="32" r="3.5" fill="#FFEAA7"/>
+    <circle cx="10" cy="-45" r="4.5" fill="#FFEAA7"/>
+    <circle cx="26" cy="18" r="3.5" fill="#FFEAA7"/>
+  </g>
+</svg>

@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 115)">
+    <!-- Base podium / desk pedestal -->
+    <path d="M-60 65 L60 65 L45 80 L-45 80 Z" fill="#2A303C"/>
+    <ellipse cx="0" cy="65" rx="60" ry="12" fill="#363E4F"/>
+    
+    <!-- Central Beam / Spotlight Cone representing focus -->
+    <path d="M-40 -90 L40 -90 L70 50 L-70 50 Z" fill="url(#lightBeam)" opacity="0.15"/>
+
+    <!-- Main Object: A precision-crafted mechanical gear intersecting with a glowing golden fountain pen nib, symbolizing specialized expertise and technical mastery -->
+    
+    <!-- Outer Gear (Dark Slate and Accent Orange) -->
+    <g transform="rotate(15)">
+      <circle cx="0" cy="-5" r="42" fill="none" stroke="#2E3748" stroke-width="8"/>
+      <!-- Gear Teeth -->
+      <path d="M-12 -52 L12 -52 L10 -42 L-10 -42 Z" fill="#FF9F43"/>
+      <path d="M-12 42 L12 42 L10 32 L-10 32 Z" fill="#2E3748"/>
+      <path d="M42 -12 L42 12 L32 10 L32 -10 Z" fill="#2E3748"/>
+      <path d="M-42 -12 L-42 12 L-32 10 L-32 -10 Z" fill="#2E3748"/>
+      
+      <path d="M28 -34 L36 -26 L29 -19 L21 -27 Z" fill="#FF9F43"/>
+      <path d="M-36 26 L-28 34 L-21 27 L-29 19 Z" fill="#2E3748"/>
+      <path d="M28 26 L36 34 L29 41 L21 33 Z" fill="#2E3748"/>
+      <path d="M-36 -26 L-28 -34 L-21 -27 L-29 -19 Z" fill="#FF9F43"/>
+    </g>
+
+    <!-- Center Emblem / Golden Expertise Nib -->
+    <circle cx="0" cy="-5" r="28" fill="#1E2430" stroke="#FF9F43" stroke-width="3"/>
+    
+    <!-- Professional Fountain Pen Nib Icon centered -->
+    <g transform="translate(0, -7) scale(0.9)">
+      <path d="M0 -22 C8 -10 14 2 14 14 C14 18 10 24 0 28 C-10 24 -14 18 -14 14 C-14 2 -8 -10 0 -22 Z" fill="#FF9F43"/>
+      <!-- Nib slit and breather hole -->
+      <path d="M0 -12 L0 12" stroke="#1E2430" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="0" cy="5" r="2.5" fill="#1E2430"/>
+    </g>
+
+    <!-- Floating Sparkles / Precision Highlights -->
+    <path d="M55 -35 L58 -45 L68 -48 L58 -51 L55 -61 L52 -51 L42 -48 L52 -45 Z" fill="#FF9F43" opacity="0.8"/>
+    <path d="M-60 10 L-58 3 L-51 0 L-58 -3 L-60 -10 L-62 -3 L-69 0 L-62 3 Z" fill="#3B82F6" opacity="0.8"/>
+  </g>
+
+  <defs>
+    <linearGradient id="lightBeam" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF9F43" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FF9F43" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Garden Setting -->
+  <path d="M40 180 C 40 150, 200 150, 200 180 L 200 210 L 40 210 Z" fill="#2D3436"/>
+  
+  <!-- Chair -->
+  <path d="M70 180 L 100 180 L 105 140 L 65 140 Z" fill="#4A5568"/>
+  <path d="M75 140 L 75 120 L 95 120 L 95 140" stroke="#4A5568" stroke-width="4" fill="none"/>
+  
+  <!-- Character (Retired Expert) -->
+  <circle cx="85" cy="110" r="15" fill="#FBD38D"/>
+  <path d="M75 105 L 80 108 L 85 105" stroke="#1A1D24" stroke-width="2" fill="none"/>
+  <path d="M90 105 L 95 108 L 100 105" stroke="#1A1D24" stroke-width="2" fill="none"/>
+  <path d="M80 115 Q 85 118 90 115" stroke="#1A1D24" stroke-width="2" fill="none"/>
+  <rect x="70" y="125" width="30" height="30" rx="5" fill="#E2E8F0"/>
+  
+  <!-- Tea Table -->
+  <rect x="130" y="160" width="40" height="20" fill="#D69E2E"/>
+  <rect x="145" y="145" width="10" height="15" fill="#F6E05E"/>
+  
+  <!-- Plant -->
+  <path d="M180 180 L 180 130" stroke="#48BB78" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="190" cy="140" rx="10" ry="6" fill="#48BB78"/>
+  <ellipse cx="170" cy="150" rx="10" ry="6" fill="#48BB78"/>
+  
+  <!-- Book -->
+  <rect x="135" y="165" width="30" height="5" fill="#FC8181"/>
+</svg>

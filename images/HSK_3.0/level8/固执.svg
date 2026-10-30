@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Illustration for 固执 (Stubborn / Obstinate) -->
+  <g transform="translate(0, 0)">
+    <!-- Ground Line -->
+    <path d="M 60 175 L 180 175" stroke="#2A2F3D" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Character Body & Crossed Arms (Showing stubborn stance) -->
+    <!-- Head -->
+    <circle cx="120" cy="85" r="18" fill="#3E465B"/>
+    <path d="M 104 82 Q 120 70 136 82" fill="#E67E22" /> <!-- Stubborn angled hair/brow feel -->
+
+    <!-- Torso -->
+    <path d="M 102 105 L 138 105 L 144 150 L 96 150 Z" fill="#2E3544"/>
+
+    <!-- Stubborn Crossed Arms -->
+    <path d="M 98 120 L 142 125 L 138 140 L 102 135 Z" fill="#3E465B"/>
+    <!-- Hands gripping upper arms -->
+    <circle cx="102" cy="127" r="6" fill="#D4AC0D"/>
+    <circle cx="138" cy="132" r="6" fill="#D4AC0D"/>
+
+    <!-- Legs planted firmly -->
+    <path d="M 106 150 L 100 175 L 114 175 L 118 150 Z" fill="#242936"/>
+    <path d="M 134 150 L 140 175 L 126 175 L 122 150 Z" fill="#242936"/>
+
+    <!-- Stubborn Facial Expression Profile/Details -->
+    <!-- Headband or stubborn frown line -->
+    <path d="M 112 88 L 128 88" stroke="#E67E22" stroke-width="3" stroke-linecap="round"/>
+    <line x1="110" y1="81" x2="118" y2="83" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round"/> <!-- Firm furrowed brow -->
+
+    <!-- Directional opposing force arrows representing "refusing to budge" -->
+    <!-- Left push arrow (blocked) -->
+    <g transform="translate(0, 0)">
+      <path d="M 35 127 L 70 127" stroke="#E67E22" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 55 117 L 70 127 L 55 137" fill="none" stroke="#E67E22" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Right push arrow (blocked) -->
+    <g transform="translate(0, 0)">
+      <path d="M 205 127 L 170 127" stroke="#E67E22" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 185 117 L 170 127 L 185 137" fill="none" stroke="#E67E22" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Impact / Resistance ripples or anchor blocks at feet -->
+    <rect x="94" y="172" width="26" height="6" rx="3" fill="#E67E22"/>
+    <rect x="120" y="172" width="26" height="6" rx="3" fill="#E67E22"/>
+  </g>
+</svg>

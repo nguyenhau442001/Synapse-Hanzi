@@ -1,0 +1,39 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle ambient glow representing medical context / clinical examination setting -->
+  <circle cx="120" cy="115" r="75" fill="#252D3D" opacity="0.5"/>
+
+  <!-- Human profile representation focusing on the eye area -->
+  <!-- Neck and shoulders -->
+  <path d="M 80 180 C 80 160 100 155 120 155 C 140 155 160 160 160 180" fill="#2E384D" opacity="0.8"/>
+  
+  <!-- Head silhouette -->
+  <path d="M 90 155 C 85 140 85 110 95 90 C 105 70 135 70 145 90 C 155 110 155 140 150 155 Z" fill="#364156"/>
+
+  <!-- Eyebrow -->
+  <path d="M 105 102 C 115 99 125 99 135 102" stroke="#5C6C8A" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Eye structure - Outer eyelids -->
+  <path d="M 98 116 C 110 110 130 110 142 116 C 130 122 110 122 98 116 Z" fill="#1A1D24" stroke="#5C6C8A" stroke-width="2.5"/>
+
+  <!-- Dim/Darkened Iris & Pupil to represent vision loss / blindness -->
+  <circle cx="120" cy="116" r="11" fill="#13151A"/>
+  <circle cx="120" cy="116" r="5" fill="#0A0B0E"/>
+
+  <!-- Eyelashes -->
+  <line x1="102" y1="113" x2="98" y2="108" stroke="#5C6C8A" stroke-width="2" stroke-linecap="round"/>
+  <line x1="110" y1="111" x2="108" y2="105" stroke="#5C6C8A" stroke-width="2" stroke-linecap="round"/>
+  <line x1="120" y1="111" x2="120" y2="104" stroke="#5C6C8A" stroke-width="2" stroke-linecap="round"/>
+  <line x1="130" y1="111" x2="132" y2="105" stroke="#5C6C8A" stroke-width="2" stroke-linecap="round"/>
+  <line x1="138" y1="113" x2="142" y2="108" stroke="#5C6C8A" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Semantic indicator: Modern sleek minimalist minimalist lens/occlusion overlay indicating vision impairment -->
+  <circle cx="120" cy="116" r="26" stroke="#F59E0B" stroke-width="2.5" stroke-dasharray="6 4" fill="none" opacity="0.85"/>
+  <circle cx="120" cy="116" r="32" stroke="#F59E0B" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Medical cross / clinical context icon badge in corner -->
+  <rect x="25" y="25" width="28" height="28" rx="8" fill="#252D3D" stroke="#364156" stroke-width="1"/>
+  <path d="M 39 33 V 43 M 34 38 H 44" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(60, 40)">
+    <!-- Person representing the intellectual -->
+    <path d="M60 160c-15 0-25-10-25-25v-30c0-15 10-25 25-25s25 10 25 25v30c0 15-10 25-25 25z" fill="#FFB84D"/>
+    <path d="M60 70c-12 0-20 8-20 20v25h40v-25c0-12-8-20-20-20z" fill="#E0A030"/>
+    <path d="M45 160h30v40H45z" fill="#FFB84D"/>
+    <!-- Glasses -->
+    <path d="M45 85h12v8h-12zM68 85h12v8h-12zM57 89h11" stroke="#1A1D24" stroke-width="2" fill="none"/>
+    <!-- Book held by the intellectual -->
+    <rect x="85" y="110" width="40" height="50" rx="2" fill="#4A90E2"/>
+    <path d="M85 115h40M85 125h40M85 135h40M85 145h40" stroke="#1A1D24" stroke-width="1"/>
+    <!-- Academic Cap (Mortarboard) -->
+    <path d="M35 75l25-10 25 10-25 10z" fill="#FFB84D"/>
+    <path d="M60 65l0-15" stroke="#FFB84D" stroke-width="3"/>
+    <circle cx="60" cy="50" r="3" fill="#FFB84D"/>
+  </g>
+</svg>

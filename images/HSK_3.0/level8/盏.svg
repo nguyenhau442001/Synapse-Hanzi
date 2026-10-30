@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 120)">
+    <!-- Desk surface -->
+    <rect x="-100" y="60" width="200" height="10" fill="#2C313C" rx="2"/>
+    
+    <!-- Lamp base -->
+    <path d="M-30 60 L30 60 L20 40 L-20 40 Z" fill="#4A5568"/>
+    
+    <!-- Lamp stand -->
+    <rect x="-5" y="0" width="10" height="40" fill="#4A5568"/>
+    
+    <!-- Lamp neck -->
+    <path d="M-5 0 L5 0 L15 -30 L-15 -30 Z" fill="#4A5568"/>
+    
+    <!-- Lamp shade -->
+    <path d="M-50 -30 L50 -30 L35 -80 L-35 -80 Z" fill="#E67E22"/>
+    
+    <!-- Light glow effect -->
+    <path d="M-60 -30 L60 -30 L120 80 L-120 80 Z" fill="#E67E22" opacity="0.15"/>
+    
+    <!-- Inner light source -->
+    <path d="M-30 -30 L30 -30 L20 -45 L-20 -45 Z" fill="#F39C12"/>
+  </g>
+</svg>

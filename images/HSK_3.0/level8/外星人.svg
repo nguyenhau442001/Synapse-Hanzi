@@ -1,0 +1,61 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed dark mode container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle space elements (stars and orbit ring) -->
+  <g fill="#3B4252">
+    <circle cx="50" cy="50" r="1.5" />
+    <circle cx="190" cy="45" r="1" />
+    <circle cx="205" cy="180" r="1.5" />
+    <circle cx="45" cy="195" r="1" />
+    <circle cx="115" cy="35" r="0.8" />
+  </g>
+  <path d="M 40,160 A 100,40 0 0,1 200,160" fill="none" stroke="#2E3440" stroke-width="1.5" stroke-dasharray="3,6"/>
+
+  <!-- Alien Character (Noun - object/character representation) -->
+  <g transform="translate(0, 5)">
+    <!-- Floating Aura / Glow -->
+    <ellipse cx="120" cy="135" rx="55" ry="12" fill="#5E81AC" opacity="0.15"/>
+
+    <!-- Body / Torso -->
+    <path d="M 90,140 C 90,115 150,115 150,140 C 150,165 140,175 120,175 C 100,175 90,165 90,140 Z" fill="#88C0D0"/>
+    <path d="M 102,145 C 102,130 138,130 138,145 C 138,158 130,165 120,165 C 110,165 102,158 102,145 Z" fill="#8FBCBB"/>
+
+    <!-- Neck -->
+    <rect x="112" y="95" width="16" height="25" rx="8" fill="#88C0D0"/>
+
+    <!-- Head (Classic iconic grey/teal alien head shape) -->
+    <path d="M 120,35 C 85,35 75,75 82,95 C 87,108 102,112 120,112 C 138,112 153,108 158,95 C 165,75 155,35 120,35 Z" fill="#88C0D0"/>
+
+    <!-- Highlight on head -->
+    <path d="M 105,45 C 95,50 90,65 92,75 C 93,73 97,55 110,48 C 115,45 118,44 120,44 C 114,44 108,45 105,45 Z" fill="#ECEFF4" opacity="0.3"/>
+
+    <!-- Eyes (Large, slanted, dark iconic alien eyes) -->
+    <g transform="rotate(-10 102 78)">
+      <ellipse cx="102" cy="78" rx="14" ry="8" fill="#2E3440"/>
+      <ellipse cx="99" cy="76" rx="4" ry="2.5" fill="#FFFFFF" opacity="0.8"/>
+    </g>
+    <g transform="rotate(10 138 78)">
+      <ellipse cx="138" cy="78" rx="14" ry="8" fill="#2E3440"/>
+      <ellipse cx="135" cy="76" rx="4" ry="2.5" fill="#FFFFFF" opacity="0.8"/>
+    </g>
+
+    <!-- Subtle friendly smile -->
+    <path d="M 113,92 Q 120,97 127,92" fill="none" stroke="#2E3440" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Antenna -->
+    <path d="M 120,36 C 120,25 115,20 110,15" fill="none" stroke="#88C0D0" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="108" cy="13" r="5" fill="#EBCB8B"/>
+    <circle cx="108" cy="13" r="2" fill="#FFFFFF" opacity="0.8"/>
+
+    <!-- Arms -->
+    <path d="M 92,130 C 75,135 65,120 60,110" fill="none" stroke="#88C0D0" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 148,130 C 165,135 175,120 180,110" fill="none" stroke="#88C0D0" stroke-width="8" stroke-linecap="round"/>
+    <!-- Hands / Fingers -->
+    <circle cx="58" cy="107" r="4" fill="#88C0D0"/>
+    <circle cx="182" cy="107" r="4" fill="#88C0D0"/>
+  </g>
+
+  <!-- Focus / Accent Ring (Modern UI badge frame) -->
+  <circle cx="120" cy="120" r="102" fill="none" stroke="#EBCB8B" stroke-width="2" opacity="0.4" stroke-dasharray="12,6"/>
+</svg>

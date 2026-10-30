@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Central Icon: Ceramic Tea Caddy / Piggy Bank motif representing frugality/saving, cleanly designed -->
+    <!-- Subtle background glow for focus -->
+    <circle cx="120" cy="120" r="65" fill="#252A34" opacity="0.6"/>
+
+    <!-- Ceramic Jar Body -->
+    <path d="M 85 100 
+             C 85 90, 95 82, 120 82 
+             C 145 82, 155 90, 155 100 
+             L 168 170 
+             C 170 178, 163 184, 155 184 
+             L 85 184 
+             C 77 184, 70 178, 72 170 Z" 
+          fill="#3B4252" stroke="#4C566A" stroke-width="3" stroke-linejoin="round"/>
+
+    <!-- Jar Lid -->
+    <ellipse cx="120" cy="82" rx="30" ry="8" fill="#4C566A" stroke="#5E687D" stroke-width="2"/>
+    <circle cx="120" cy="71" r="6" fill="#D08770"/>
+
+    <!-- Coin Slot on Lid -->
+    <rect x="113" y="79" width="14" height="3" rx="1.5" fill="#1A1D24"/>
+
+    <!-- Decorative Traditional Frugality / Heritage Motif (Simple cloud/knot line) in Golden/Orange Accent -->
+    <path d="M 105 130 Q 120 115 135 130 T 150 145" fill="none" stroke="#EBCB8B" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="120" cy="148" r="4" fill="#EBCB8B"/>
+
+    <!-- Dropped Gold Coin Entering Slot -->
+    <g transform="translate(120, 48)">
+      <ellipse cx="0" cy="0" rx="12" ry="6" fill="#EBCB8B" stroke="#D08770" stroke-width="2"/>
+      <rect x="-3" y="-2" width="6" height="4" fill="#D08770"/>
+    </g>
+    
+    <!-- Motion lines for the coin -->
+    <path d="M 112 58 L 116 68" fill="none" stroke="#EBCB8B" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+    <path d="M 128 58 L 124 68" fill="none" stroke="#EBCB8B" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Map Grid & Subtle Glow -->
+  <g opacity="0.15">
+    <path d="M40 80 H200 M40 120 H200 M40 160 H200 M80 40 V200 M120 40 V200 M160 40 V200" stroke="#38BDF8" stroke-width="1" stroke-dasharray="2 4"/>
+  </g>
+
+  <!-- Globe / Territory Sphere Base -->
+  <circle cx="120" cy="120" r="76" fill="#0F172A" stroke="#334155" stroke-width="2"/>
+  
+  <!-- Continents / Domestic Territory -->
+  <path d="M90 75 Q110 70 125 90 Q140 110 120 135 Q100 160 85 140 Q70 120 80 95 Z" fill="#1E293B" stroke="#475569" stroke-width="1.5"/>
+  <path d="M140 100 Q160 90 170 115 Q180 140 160 155 Q140 170 135 145 Q130 120 140 100 Z" fill="#1E293B" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- Border Line (Dotted Red/Orange Arc representing national boundary) -->
+  <path d="M60 120 Q90 100 120 120 Q150 140 180 110" fill="none" stroke="#F59E0B" stroke-width="3" stroke-dasharray="5 5"/>
+
+  <!-- Outer Territory Location Pin (境外 - Outside the border) -->
+  <g transform="translate(170, 75)">
+    <circle cx="0" cy="0" r="16" fill="#EF4444" opacity="0.2"/>
+    <circle cx="0" cy="0" r="10" fill="#EF4444"/>
+    <path d="M0 16 L-5 6 C-7 3 -3 -3 0 -5 C3 -3 7 3 5 6 Z" fill="#EF4444"/>
+    <circle cx="0" cy="-1" r="3.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Domestic Location Pin (Within the border) -->
+  <g transform="translate(90, 135)">
+    <circle cx="0" cy="0" r="12" fill="#38BDF8" opacity="0.2"/>
+    <circle cx="0" cy="0" r="7" fill="#38BDF8"/>
+  </g>
+
+  <!-- Distance / Cross-Border Connection Arc -->
+  <path d="M90 135 Q130 80 170 75" fill="none" stroke="#EF4444" stroke-width="2.5" stroke-dasharray="4 4"/>
+
+  <!-- Focus / Target Indicator (Sleek modern brackets) -->
+  <path d="M152 55 H166 V69" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M188 95 V81 H174" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

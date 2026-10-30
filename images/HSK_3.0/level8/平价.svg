@@ -1,0 +1,61 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle background glow for focus -->
+  <circle cx="120" cy="125" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Physical Object Group: A sturdy wooden market crate representing stable/affordable daily goods (lương thực, dầu ăn) -->
+  
+  <!-- Crate shadow -->
+  <ellipse cx="120" cy="182" rx="64" ry="12" fill="#0D0F12"/>
+
+  <!-- Crate Back Wall / Inner -->
+  <path d="M64 120 L76 170 H164 L176 120 Z" fill="#2A2218"/>
+
+  <!-- Crate Body (Trapezoidal basket/crate) -->
+  <path d="M56 110 L68 174 H172 L184 110 Z" fill="#8E653F"/>
+  
+  <!-- Wooden Planks Texture on Crate -->
+  <path d="M60 130 H180 M64 152 H176" stroke="#6F4E2D" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Crate Front Rim -->
+  <path d="M52 110 H188 V120 H52 Z" fill="#A4774B"/>
+  <rect x="52" y="110" width="136" height="4" rx="2" fill="#C4925D"/>
+
+  <!-- Goods inside: Cooking Oil Bottle (representing 粮油) -->
+  <path d="M96 68 H114 V84 C116 88 118 92 118 96 V150 H92 V96 C92 92 94 88 96 84 Z" fill="#E59832"/>
+  <path d="M101 62 H109 V68 H101 Z" fill="#D0D3D4"/>
+  <circle cx="105" cy="115" r="10" fill="#FFFFFF" opacity="0.9"/>
+  <path d="M102 115 H108 M105 112 V118" stroke="#E59832" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Goods inside: Sack of Grain / Rice (representing 粮油) -->
+  <path d="M124 156 C122 135 130 115 146 112 C162 115 170 135 168 156 Z" fill="#D7CCC8"/>
+  <!-- Sack tie / fold -->
+  <path d="M136 116 C140 112 152 112 156 116 C152 120 140 120 136 116 Z" fill="#A1887F"/>
+  <path d="M142 108 H150 V114 H142 Z" fill="#8D6E63"/>
+
+  <!-- Price Stability Indicator: Sleek, modern flat balance scale/equal sign merged seamlessly over the object to denote "平" (Ping / stable/equal) and price -->
+  <!-- Scale beam background circle -->
+  <circle cx="120" cy="52" r="30" fill="#252A34" stroke="#323846" stroke-width="2"/>
+
+  <!-- Balance Beam & Pans icon -->
+  <!-- Pivot -->
+  <circle cx="120" cy="46" r="4" fill="#E59832"/>
+  <!-- Beam -->
+  <path d="M90 52 H150" stroke="#E59832" stroke-width="4" stroke-linecap="round"/>
+  <!-- Left chain & pan -->
+  <path d="M94 52 L90 68 H98 Z" fill="#C4925D"/>
+  <ellipse cx="94" cy="68" rx="10" ry="3" fill="#E59832"/>
+  <!-- Right chain & pan -->
+  <path d="M146 52 L142 68 H150 Z" fill="#C4925D"/>
+  <ellipse cx="146" cy="68" rx="10" ry="3" fill="#E59832"/>
+  <!-- Vertical support stand -->
+  <path d="M120 46 V64" stroke="#E59832" stroke-width="3" stroke-linecap="round"/>
+  <path d="M112 64 H128" stroke="#E59832" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Stable Equal Indicator underneath scale -->
+  <rect x="108" y="78" width="24" height="4" rx="2" fill="#4ECCA3"/>
+  <rect x="108" y="86" width="24" height="4" rx="2" fill="#4ECCA3"/>
+
+</svg>

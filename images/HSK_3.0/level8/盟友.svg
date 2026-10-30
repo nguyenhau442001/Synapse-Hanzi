@@ -1,0 +1,56 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow to highlight the central subject -->
+  <circle cx="120" cy="120" r="70" fill="#222831" opacity="0.6"/>
+
+  <!-- Decorative strategic connection arc in the background -->
+  <path d="M 70 140 Q 120 90 170 140" fill="none" stroke="#F39C12" stroke-width="2" stroke-dasharray="4,4" opacity="0.4"/>
+
+  <!-- Character 1 (Left) -->
+  <g transform="translate(65, 90)">
+    <!-- Body / Suit (Modern diplomatic / strategic attire) -->
+    <path d="M 15 70 L 35 70 L 40 100 L 0 100 Z" fill="#2C3E50"/>
+    <path d="M 20 70 L 20 90 L 30 90 L 30 70 Z" fill="#ECF0F1"/> <!-- Shirt/Tie area -->
+    <!-- Head -->
+    <circle cx="20" cy="40" r="16" fill="#E0AC69"/>
+    <!-- Hair -->
+    <path d="M 4 36 Q 20 20 36 36 Q 30 24 20 24 Q 10 24 4 36 Z" fill="#34495E"/>
+    <!-- Confident upright posture, facing center -->
+  </g>
+
+  <!-- Character 2 (Right) -->
+  <g transform="translate(135, 90)">
+    <!-- Body / Suit -->
+    <path d="M 5 70 L 25 70 L 40 100 L 0 100 Z" fill="#2C3E50"/>
+    <path d="M 10 70 L 10 90 L 20 90 L 20 70 Z" fill="#ECF0F1"/>
+    <!-- Head -->
+    <circle cx="20" cy="40" r="16" fill="#F1C27D"/>
+    <!-- Hair -->
+    <path d="M 4 36 Q 20 20 36 36 Q 30 24 20 24 Q 10 24 4 36 Z" fill="#2C3E50"/>
+  </g>
+
+  <!-- Solid Handshake at the Center (Symbolizing Allies / 盟友) -->
+  <g transform="translate(100, 130)">
+    <!-- Arm Left -->
+    <path d="M 0 15 L 22 15" stroke="#2C3E50" stroke-width="10" stroke-linecap="round"/>
+    <!-- Arm Right -->
+    <path d="M 40 15 L 18 15" stroke="#34495E" stroke-width="10" stroke-linecap="round"/>
+    <!-- Interlocked Hands with Gold Accent for focus -->
+    <circle cx="20" cy="15" r="9" fill="#F39C12"/>
+    <path d="M 14 12 Q 20 8 26 12 Q 22 20 14 12 Z" fill="#E67E22"/>
+  </g>
+
+  <!-- Strategic Alliance Globe / Earth Orbit Motif above -->
+  <g transform="translate(120, 55)">
+    <!-- Globe Circle -->
+    <circle cx="0" cy="0" r="18" fill="none" stroke="#3498DB" stroke-width="3"/>
+    <!-- Meridian / Latitude lines -->
+    <path d="M -18 0 Q 0 -6 18 0 Q 0 6 -18 0 Z" fill="none" stroke="#3498DB" stroke-width="1.5" opacity="0.6"/>
+    <path d="M 0 -18 Q 6 0 0 18 Q -6 0 0 -18 Z" fill="none" stroke="#3498DB" stroke-width="1.5" opacity="0.6"/>
+    
+    <!-- Orbit Ring -->
+    <ellipse cx="0" cy="0" rx="26" ry="10" fill="none" stroke="#F39C12" stroke-width="2" transform="rotate(-20)" stroke-dasharray="3,3"/>
+  </g>
+
+</svg>

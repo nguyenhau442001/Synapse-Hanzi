@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Cliff edge -->
+  <path d="M20 180 L120 180 L120 240 L20 240 Z" fill="#2D3436"/>
+  <path d="M120 180 L220 220 L220 240 L120 240 Z" fill="#3D4448"/>
+  
+  <!-- The rickety wooden structure (The Noun) -->
+  <g transform="translate(60, 100)">
+    <!-- Main support beam tilting -->
+    <rect x="20" y="0" width="10" height="80" rx="2" fill="#D35400" transform="rotate(-15 25 80)"/>
+    
+    <!-- Broken planks -->
+    <rect x="0" y="0" width="80" height="8" rx="2" fill="#E67E22"/>
+    <rect x="10" y="12" width="70" height="8" rx="2" fill="#E67E22"/>
+    
+    <!-- Hanging/Broken segment -->
+    <rect x="70" y="20" width="40" height="8" rx="2" fill="#E67E22" transform="rotate(30 90 20)"/>
+    
+    <!-- Support post snapping -->
+    <rect x="75" y="25" width="6" height="30" rx="2" fill="#A04000" transform="rotate(30 78 25)"/>
+  </g>
+  
+  <!-- Visual cues of instability (cracks) -->
+  <path d="M110 180 L115 190 L105 200" stroke="#F39C12" stroke-width="2" fill="none"/>
+  <path d="M125 185 L135 195" stroke="#F39C12" stroke-width="2" fill="none"/>
+</svg>

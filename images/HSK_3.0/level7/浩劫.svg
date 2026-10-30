@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background glowing devastation embers -->
+  <circle cx="120" cy="140" r="70" fill="#E65100" opacity="0.15" filter="blur(10px)"/>
+  
+  <!-- Ground wreckage layer -->
+  <path d="M40 180 L70 160 L90 175 L130 150 L160 170 L200 160 L200 200 L40 200 Z" fill="#2C313C"/>
+  <polygon points="60,180 85,145 95,180" fill="#1A1D24"/>
+  <polygon points="140,175 165,130 185,175" fill="#1A1D24"/>
+  
+  <!-- Shattered architectural monument/pillar (The physical object representing catastrophe/浩劫) -->
+  <g>
+    <!-- Left falling column fragment -->
+    <path d="M75 90 L105 80 L110 130 L80 140 Z" fill="#4E5D6C" transform="rotate(-15 95 110)"/>
+    <!-- Right leaning/broken pillar -->
+    <path d="M140 85 L180 95 L170 165 L135 155 Z" fill="#627D98"/>
+    <!-- Pillar fluting details -->
+    <line x1="148" y1="95" x2="143" y2="155" stroke="#334E68" stroke-width="3"/>
+    <line x1="162" y1="99" x2="157" y2="160" stroke="#334E68" stroke-width="3"/>
+    
+    <!-- Capital fragment on ground -->
+    <rect x="155" y="150" width="55" height="20" rx="2" fill="#4E5D6C" transform="rotate(10 180 160)"/>
+    <path d="M130 85 L185 85 L190 75 L125 75 Z" fill="#627D98"/>
+  </g>
+
+  <!-- Central catastrophic impact and fissure -->
+  <path d="M120 165 L115 195 L130 205 L125 215" stroke="#FF8A65" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M125 180 L150 190" stroke="#FF8A65" stroke-width="2" fill="none"/>
+  <path d="M115 190 L95 200" stroke="#FF8A65" stroke-width="2" fill="none"/>
+
+  <!-- Flames and catastrophic energy bursting from ruins -->
+  <path d="M110 145 C110 130 120 120 125 105 C130 120 140 130 140 145 C140 155 132 165 125 165 C118 165 110 155 110 145 Z" fill="#FF6D00"/>
+  <path d="M120 150 C120 138 125 130 127 120 C130 130 135 138 135 150 C135 156 130 160 127 160 C124 160 120 156 120 150 Z" fill="#FFEA00"/>
+
+  <!-- Floating debris / ash particles -->
+  <circle cx="75" cy="70" r="3" fill="#FF8A65" opacity="0.8"/>
+  <circle cx="165" cy="65" r="4" fill="#FF6D00" opacity="0.8"/>
+  <circle cx="95" cy="50" r="2" fill="#FFEA00" opacity="0.9"/>
+  <circle cx="145" cy="45" r="3" fill="#FF8A65" opacity="0.7"/>
+  <polygon points="180,110 185,118 175,118" fill="#4E5D6C"/>
+  <polygon points="65,125 72,130 68,135" fill="#4E5D6C"/>
+</svg>

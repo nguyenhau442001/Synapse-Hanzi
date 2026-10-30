@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Mountain Base -->
+  <path d="M40 240 L120 80 L200 240 Z" fill="#2C3E50"/>
+  <path d="M80 160 L120 80 L160 160 Z" fill="#34495E"/>
+  
+  <!-- Temple Structure -->
+  <g transform="translate(95, 70)">
+    <!-- Roof -->
+    <path d="M-25 20 L25 20 L0 0 Z" fill="#E67E22"/>
+    <path d="M-30 25 L30 25 L25 20 L-25 20 Z" fill="#D35400"/>
+    
+    <!-- Main Body -->
+    <rect x="-20" y="25" width="40" height="30" fill="#F39C12"/>
+    <rect x="-10" y="35" width="20" height="20" fill="#2C3E50"/>
+    
+    <!-- Decorative Peak -->
+    <circle cx="0" cy="0" r="4" fill="#F1C40F"/>
+  </g>
+  
+  <!-- Ground/Atmosphere details -->
+  <path d="M40 240 Q120 220 200 240" fill="none" stroke="#34495E" stroke-width="2"/>
+  <circle cx="180" cy="100" r="15" fill="#F1C40F" opacity="0.2"/>
+</svg>

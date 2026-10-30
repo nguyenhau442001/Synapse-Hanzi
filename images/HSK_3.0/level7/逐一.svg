@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Conveyor belt base -->
+  <rect x="20" y="140" width="200" height="15" rx="4" fill="#374151"/>
+  <circle cx="35" cy="147.5" r="8" fill="#4B5563"/>
+  <circle cx="205" cy="147.5" r="8" fill="#4B5563"/>
+  
+  <!-- Items on the belt -->
+  <rect x="40" y="110" width="30" height="30" rx="4" fill="#F59E0B"/>
+  <rect x="105" y="110" width="30" height="30" rx="4" fill="#F59E0B"/>
+  <rect x="170" y="110" width="30" height="30" rx="4" fill="#F59E0B"/>
+  
+  <!-- Magnifying glass inspecting one item -->
+  <g transform="translate(105, 110)">
+    <circle cx="15" cy="15" r="12" fill="none" stroke="#E5E7EB" stroke-width="4"/>
+    <line x1="24" y1="24" x2="40" y2="40" stroke="#E5E7EB" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Checkmark indicating inspection -->
+  <path d="M115 120 L120 125 L130 115" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Motion indicators -->
+  <path d="M75 125 L85 125 M80 120 L80 130" stroke="#6B7280" stroke-width="2" stroke-linecap="round"/>
+  <path d="M140 125 L150 125 M145 120 L145 130" stroke="#6B7280" stroke-width="2" stroke-linecap="round"/>
+</svg>

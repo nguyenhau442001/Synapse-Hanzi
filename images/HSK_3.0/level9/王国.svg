@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Atmospheric background glow representing the "Natural Kingdom/World" ecosystem -->
+  <circle cx="120" cy="120" r="85" fill="#252A34" opacity="0.8"/>
+  <circle cx="120" cy="120" r="60" fill="#2E3846" opacity="0.5"/>
+
+  <!-- Stylized Royal Crown floating subtly above the natural kingdom to represent "Kingdom/王" -->
+  <path d="M92 78L106 96L120 74L134 96L148 78L143 104H97Z" fill="#F59E0B"/>
+  <circle cx="92" cy="74" r="3" fill="#F59E0B"/>
+  <circle cx="120" cy="70" r="3.5" fill="#F59E0B"/>
+  <circle cx="148" cy="74" r="3" fill="#F59E0B"/>
+  <rect x="95" y="107" width="50" height="5" rx="2" fill="#D97706"/>
+
+  <!-- Central Physical Object: Majestic Rainforest Canopy and Wildlife representing "王国" (Natural Kingdom ecosystem) -->
+  <!-- Distant mountain peaks / hills -->
+  <path d="M60 160L90 125L120 150L155 115L185 160Z" fill="#3B82F6" opacity="0.15"/>
+
+  <!-- Layered Rainforest Foliage (Dense Tropical Ecosystem) -->
+  <path d="M70 165C70 145 85 130 105 130C112 130 119 133 124 138C130 132 138 128 147 128C168 128 185 145 185 165H70Z" fill="#065F46"/>
+  <path d="M55 180C55 155 75 135 100 135C110 135 119 139 126 146C134 139 144 135 154 135C180 135 200 155 200 180H55Z" fill="#047857"/>
+
+  <!-- Central Majestic Tree Trunk (The Anchor of the Kingdom) -->
+  <rect x="110" y="145" width="20" height="45" fill="#78350F" rx="3"/>
+  <path d="M100 180C100 174 105 170 110 170H130C135 170 140 174 140 180V190H100V180Z" fill="#451A03"/>
+
+  <!-- Rich Tropical Flora (Monstera / Fan Leaves) -->
+  <path d="M85 175C70 175 60 160 70 150C75 160 82 168 90 172Z" fill="#10B981"/>
+  <path d="M155 175C170 175 180 160 170 150C165 160 158 168 150 172Z" fill="#10B981"/>
+
+  <!-- Wildlife Element: Exotic Bird / Parrot representing the animal kingdom -->
+  <path d="M96 145C96 140 101 137 106 140C110 142 112 147 109 152L102 160L96 145Z" fill="#F59E0B"/>
+  <circle cx="103" cy="142" r="1.5" fill="#1A1D24"/>
+  <!-- Sleek tail feathers -->
+  <path d="M100 158L92 168L96 162L93 160Z" fill="#EF4444"/>
+
+  <!-- Wildlife Element: Rare spotted wildcat/leopard silhouette resting in the ecosystem -->
+  <path d="M135 168C135 162 143 158 149 162C153 165 155 170 152 174C148 178 135 178 135 168Z" fill="#FBBF24"/>
+  <circle cx="149" cy="160" r="3.5" fill="#FBBF24"/>
+  <path d="M152 170L162 173L156 177Z" fill="#FBBF24"/>
+
+  <!-- Foreground ground line framing the scene -->
+  <rect x="45" y="190" width="150" height="4" rx="2" fill="#374151"/>
+</svg>

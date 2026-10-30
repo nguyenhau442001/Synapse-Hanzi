@@ -1,0 +1,82 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Atmospheric background glow representing festive warmth -->
+  <circle cx="120" cy="120" r="80" fill="#E65100" opacity="0.15" filter="blur(20px)"/>
+
+  <!-- Architectural Frame (Traditional gate silhouette implying the contextual scene) -->
+  <path d="M70 185 L70 95 Q120 70 170 95 L170 185 Z" fill="#252A34"/>
+  <path d="M60 185 L180 185 L180 195 L60 195 Z" fill="#2E3646"/>
+
+  <!-- Hanging Red Lanterns (Scale exaggeration for visual contrast/adjective state) -->
+  <!-- Left Lantern (Smaller, background) -->
+  <g transform="translate(85, 105) scale(0.6)">
+    <rect x="-3" y="-25" width="6" height="10" fill="#B0BEC5"/>
+    <ellipse cx="0" cy="0" rx="22" ry="18" fill="#D32F2F"/>
+    <path d="M-15 12 Q0 20 15 12" fill="none" stroke="#FFC107" stroke-width="2"/>
+    <rect x="-14" y="-18" width="28" height="6" rx="2" fill="#FFC107"/>
+    <rect x="-14" y="12" width="28" height="6" rx="2" fill="#FFC107"/>
+    <line x1="0" y1="18" x2="0" y2="35" stroke="#FFC107" stroke-width="2"/>
+  </g>
+
+  <!-- Right Lantern (Smaller, background) -->
+  <g transform="translate(155, 105) scale(0.6)">
+    <rect x="-3" y="-25" width="6" height="10" fill="#B0BEC5"/>
+    <ellipse cx="0" cy="0" rx="22" ry="18" fill="#D32F2F"/>
+    <path d="M-15 12 Q0 20 15 12" fill="none" stroke="#FFC107" stroke-width="2"/>
+    <rect x="-14" y="-18" width="28" height="6" rx="2" fill="#FFC107"/>
+    <rect x="-14" y="12" width="28" height="6" rx="2" fill="#FFC107"/>
+    <line x1="0" y1="18" x2="0" y2="35" stroke="#FFC107" stroke-width="2"/>
+  </g>
+
+  <!-- Center Main Lantern (Large scale exaggeration highlighting the "Xiqing" joyful atmosphere) -->
+  <g transform="translate(120, 95)">
+    <!-- Hanging string -->
+    <line x1="0" y1="-65" x2="0" y2="-40" stroke="#FFC107" stroke-width="2"/>
+    <rect x="-4" y="-40" width="8" height="10" fill="#FFC107"/>
+    
+    <!-- Lantern Body -->
+    <ellipse cx="0" cy="0" rx="42" ry="34" fill="#E53935"/>
+    <ellipse cx="0" cy="0" rx="42" ry="34" fill="url(#lanternGrad)" opacity="0.4"/>
+    
+    <!-- Ribs / Segments -->
+    <path d="M0 -34 C 18 -15, 18 15, 0 34" fill="none" stroke="#FFC107" stroke-width="2" opacity="0.8"/>
+    <path d="M0 -34 C -18 -15, -18 15, 0 34" fill="none" stroke="#FFC107" stroke-width="2" opacity="0.8"/>
+    <line x1="-42" y1="0" x2="42" y2="0" stroke="#FFC107" stroke-width="2" opacity="0.6"/>
+
+    <!-- Caps -->
+    <path d="M-26 -28 Q0 -34 26 -28 L20 -20 Q0 -25 -20 -20 Z" fill="#FFC107"/>
+    <path d="M-26 28 Q0 34 26 28 L20 20 Q0 25 -20 20 Z" fill="#FFC107"/>
+
+    <!-- Tassel -->
+    <rect x="-6" y="34" width="12" height="8" rx="2" fill="#FFC107"/>
+    <line x1="0" y1="42" x2="0" y2="62" stroke="#FFC107" stroke-width="3"/>
+    <path d="M-8 62 L0 75 L8 62 Z" fill="#FFC107"/>
+  </g>
+
+  <!-- Red Spring Festival Couplets flanking the scene (Visual context for festive liveliness) -->
+  <rect x="36" y="85" width="14" height="90" rx="3" fill="#D32F2F"/>
+  <line x1="43" y1="95" x2="43" y2="165" stroke="#FFC107" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <rect x="190" y="85" width="14" height="90" rx="3" fill="#D32F2F"/>
+  <line x1="197" y1="95" x2="197" y2="165" stroke="#FFC107" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <!-- Dynamic confetti / festive sparks representing "热烈、欢快" (Joyful, bustling atmosphere) -->
+  <circle cx="65" cy="65" r="3" fill="#FFC107"/>
+  <circle cx="175" cy="55" r="4" fill="#FF9800"/>
+  <circle cx="95" cy="50" r="2" fill="#E53935"/>
+  <circle cx="145" cy="45" r="3" fill="#FFC107"/>
+  <rect x="50" y="130" width="5" height="5" rx="1" fill="#FF9800" transform="rotate(15 52 132)"/>
+  <rect x="180" y="120" width="6" height="4" rx="1" fill="#FFC107" transform="rotate(-25 183 122)"/>
+  <rect x="110" y="35" width="4" height="6" rx="1" fill="#E53935" transform="rotate(45 112 38)"/>
+
+  <!-- Gradient definitions for depth -->
+  <defs>
+    <radialGradient id="lanternGrad" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFEB3b" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#FF9800" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#B71C1C" stop-opacity="0.9"/>
+    </radialGradient>
+  </defs>
+</svg>

@@ -1,0 +1,31 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Conceptual Illustration for "没准儿" (uncertainty/possibility of rain/weather turn) -->
+  <!-- Central physical focal point: A classic weather vane / uncertainty compass orb representing unpredictable possibility -->
+  <g transform="translate(120, 115)">
+    <!-- Outer ambient glow / possibility ring -->
+    <circle cx="0" cy="0" r="64" fill="none" stroke="#2D3748" stroke-width="2" stroke-dasharray="6 6"/>
+    
+    <!-- Dark storm cloud element at top representing the context -->
+    <path d="M-35,-40 C-35,-55 -15,-60 0,-50 C15,-65 40,-55 40,-35 C52,-35 60,-22 55,-10 C62,0 55,15 42,15 L-40,15 C-52,15 -58,2 -50,-8 C-58,-22 -45,-40 -35,-40 Z" fill="#3B4758" opacity="0.85"/>
+    <path d="M-25,-30 C-25,-42 -10,-45 0,-38 C10,-48 30,-40 30,-25 C39,-25 45,-15 41,-7 C46,0 41,10 31,10 L-30,10 C-39,10 -43,2 -37,-5 C-43,-15 -33,-30 -25,-30 Z" fill="#4E5D73"/>
+
+    <!-- Rain drops & question mark duality representing "méizhǔnr" (maybe/uncertain) -->
+    <!-- Rain drops -->
+    <path d="M-20,28 C-20,28 -26,38 -26,42 C-26,45.3 -23.3,48 -20,48 C-16.7,48 -14,45.3 -14,42 C-14,38 -20,28 -20,28 Z" fill="#38BDF8"/>
+    <path d="M20,28 C20,28 14,38 14,42 C14,45.3 16.7,48 20,48 C23.3,48 26,45.3 26,42 C26,38 20,28 20,28 Z" fill="#38BDF8" opacity="0.6"/>
+
+    <!-- Central Gold Uncertainty/Possibility Core (Stylized Question Mark / Pendulum Node) -->
+    <circle cx="0" cy="5" r="28" fill="#F59E0B" opacity="0.15"/>
+    <circle cx="0" cy="5" r="20" fill="#1A1D24" stroke="#F59E0B" stroke-width="3"/>
+    
+    <!-- Stylized dynamic indicator (Pendulum/Arrow pointing to a midpoint - undecided) -->
+    <path d="M0,-3 L10,-15 L14,-11 Z" fill="#F59E0B"/>
+    <circle cx="0" cy="5" r="5" fill="#F59E0B"/>
+    
+    <!-- Dynamic dashed orbit representing probability -->
+    <path d="M-45,25 C-30,45 30,45 45,25" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 4"/>
+  </g>
+</svg>

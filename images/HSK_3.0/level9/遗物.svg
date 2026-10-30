@@ -1,0 +1,31 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Wooden Table Surface -->
+  <rect x="20" y="180" width="200" height="15" fill="#2D343E" rx="2"/>
+  
+  <!-- The Relic (Pocket Watch) -->
+  <g transform="translate(120, 120)">
+    <!-- Watch Chain -->
+    <path d="M-40,-20 C-20,-40 20,-40 40,-20" fill="none" stroke="#FFB84D" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Watch Body -->
+    <circle cx="0" cy="0" r="45" fill="#2D343E" stroke="#FFB84D" stroke-width="4"/>
+    <circle cx="0" cy="0" r="38" fill="#1A1D24" stroke="#FFB84D" stroke-width="2"/>
+    
+    <!-- Watch Details -->
+    <line x1="0" y1="0" x2="0" y2="-25" stroke="#FFB84D" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="20" y2="10" stroke="#FFB84D" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="4" fill="#FFB84D"/>
+    
+    <!-- Watch Stem -->
+    <rect x="-8" y="-55" width="16" height="10" fill="#FFB84D" rx="2"/>
+    <circle cx="0" cy="-58" r="5" fill="#FFB84D"/>
+  </g>
+  
+  <!-- Faded Manuscript Paper -->
+  <path d="M60,140 L180,140 L170,200 L70,200 Z" fill="#3D4450" opacity="0.6"/>
+  <line x1="80" y1="155" x2="160" y2="155" stroke="#5D6675" stroke-width="2"/>
+  <line x1="80" y1="170" x2="160" y2="170" stroke="#5D6675" stroke-width="2"/>
+  <line x1="80" y1="185" x2="140" y2="185" stroke="#5D6675" stroke-width="2"/>
+</svg>

@@ -1,0 +1,36 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Owl (Predator) -->
+  <g transform="translate(120, 100)">
+    <!-- Body -->
+    <path d="M-30 0 C-30 -40 30 -40 30 0 L 20 60 L -20 60 Z" fill="#FFB84D"/>
+    <!-- Eyes -->
+    <circle cx="-12" cy="-10" r="10" fill="#1A1D24"/>
+    <circle cx="12" cy="-10" r="10" fill="#1A1D24"/>
+    <circle cx="-12" cy="-10" r="4" fill="#FFFFFF"/>
+    <circle cx="12" cy="-10" r="4" fill="#FFFFFF"/>
+    <!-- Beak -->
+    <path d="M-5 0 L 5 0 L 0 8 Z" fill="#1A1D24"/>
+    <!-- Wings -->
+    <path d="M-30 10 C-50 10 -50 50 -30 40 Z" fill="#E69F2E"/>
+    <path d="M30 10 C50 10 50 50 30 40 Z" fill="#E69F2E"/>
+  </g>
+
+  <!-- Mouse (Prey) -->
+  <g transform="translate(120, 180)">
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="25" ry="15" fill="#94A3B8"/>
+    <!-- Ears -->
+    <circle cx="-15" cy="-15" r="8" fill="#94A3B8"/>
+    <circle cx="15" cy="-15" r="8" fill="#94A3B8"/>
+    <!-- Eyes -->
+    <circle cx="-8" cy="-5" r="2" fill="#1A1D24"/>
+    <circle cx="8" cy="-5" r="2" fill="#1A1D24"/>
+    <!-- Tail -->
+    <path d="M25 0 C40 0 40 -20 30 -20" stroke="#94A3B8" stroke-width="3" fill="none"/>
+  </g>
+
+  <!-- Visual indicator of predator-prey relationship (Focus) -->
+  <path d="M120 70 L120 150" stroke="#FFB84D" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>

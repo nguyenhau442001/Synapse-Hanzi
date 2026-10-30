@@ -1,0 +1,30 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Deep foundation blocks under the ground -->
+    <rect x="40" y="165" width="160" height="18" rx="3" fill="#2A2F3D" stroke="#3A4255" stroke-width="2"/>
+    <rect x="50" y="145" width="140" height="18" rx="3" fill="#323846" stroke="#434D63" stroke-width="2"/>
+    <rect x="60" y="125" width="120" height="18" rx="3" fill="#3B4254" stroke="#4C566D" stroke-width="2"/>
+    
+    <!-- Ground line -->
+    <line x1="25" y1="110" x2="215" y2="110" stroke="#FFA726" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Sturdy main pillar / monolith representing solid foundation & structure (扎实) -->
+    <rect x="85" y="45" width="70" height="65" rx="6" fill="#FFB74D" stroke="#FFA726" stroke-width="3"/>
+    
+    <!-- Internal structural reinforcement grid lines inside the pillar -->
+    <line x1="120" y1="45" x2="120" y2="110" stroke="#F57C00" stroke-width="2" stroke-dasharray="4 4"/>
+    <line x1="85" y1="77" x2="155" y2="77" stroke="#F57C00" stroke-width="2" stroke-dasharray="4 4"/>
+    
+    <!-- Architectural corner reinforcement brackets -->
+    <path d="M 85 57 L 85 49 L 93 49" fill="none" stroke="#E65100" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 155 57 L 155 49 L 147 49" fill="none" stroke="#E65100" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 85 98 L 85 106 L 93 106" fill="none" stroke="#E65100" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 155 98 L 155 106 L 147 106" fill="none" stroke="#E65100" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Center stability node/anchor -->
+    <circle cx="120" cy="77" r="8" fill="#E65100"/>
+    <circle cx="120" cy="77" r="4" fill="#FFE0B2"/>
+  </g>
+</svg>

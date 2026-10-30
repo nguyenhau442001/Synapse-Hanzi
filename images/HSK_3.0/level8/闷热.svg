@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Atmospheric background layers (Heavy, oppressive clouds and heat haze) -->
+  <path d="M40 70 C50 50, 80 50, 95 70 C110 50, 150 50, 165 70 C180 55, 210 65, 215 85 C225 90, 225 110, 215 115 L35 115 C25 110, 25 90, 40 70 Z" fill="#2E3642" opacity="0.8"/>
+  <path d="M25 88 C35 72, 65 72, 80 88 C95 72, 135 72, 150 88 C165 75, 195 83, 200 100 C210 105, 210 120, 200 125 L30 125 C20 120, 15 105, 25 88 Z" fill="#3A4454" opacity="0.6"/>
+
+  <!-- Heat waves / Stagnant heavy air lines -->
+  <path d="M70 145 Q80 140 90 145 T110 145 T130 145 T150 145 T170 145" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+  <path d="M60 155 Q70 150 80 155 T100 155 T120 155 T140 155 T160 155 T180 155" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.2"/>
+
+  <!-- Central Physical Subject: Character overwhelmed by sticky, stifling heat -->
+  <!-- Shoulders & Torso -->
+  <path d="M80 205 C80 180, 100 170, 120 170 C140 170, 160 180, 160 205 Z" fill="#2563EB"/>
+  
+  <!-- Collar / Shirt Detail -->
+  <path d="M105 170 L120 188 L135 170 Z" fill="#1E40AF"/>
+
+  <!-- Neck -->
+  <rect x="110" y="150" width="20" height="25" rx="6" fill="#FBBF24"/>
+
+  <!-- Head -->
+  <circle cx="120" cy="125" r="30" fill="#FBBF24"/>
+
+  <!-- Sweaty Gloss on Forehead -->
+  <path d="M110 108 C115 104, 125 104, 130 108" fill="none" stroke="#60A5FA" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Sweat Droplets (Sticky/Stifling humidity indicator) -->
+  <path d="M100 115 Q98 122 100 124 Q102 124 102 122 Z" fill="#60A5FA"/>
+  <path d="M140 120 Q138 127 140 129 Q142 129 142 127 Z" fill="#60A5FA"/>
+  <path d="M127 140 Q125 147 127 149 Q129 149 129 147 Z" fill="#60A5FA"/>
+
+  <!-- Closed, strained eyes showing discomfort/exhaustion -->
+  <path d="M105 123 Q110 127 115 123" fill="none" stroke="#1F2937" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M125 123 Q130 127 135 123" fill="none" stroke="#1F2937" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Stifled / Heavy breathing mouth (slight open pant) -->
+  <ellipse cx="120" cy="138" rx="5" ry="3.5" fill="#1F2937"/>
+
+  <!-- Heavy Hand wiping sweat from forehead (Physical gesture of oppression) -->
+  <path d="M95 125 C90 120, 105 105, 115 110 C120 112, 122 118, 120 120 Z" fill="#FBBF24"/>
+  <rect x="85" y="122" width="16" height="10" rx="4" fill="#FBBF24" transform="rotate(-25 85 122)"/>
+</svg>

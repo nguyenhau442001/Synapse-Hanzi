@@ -28,7 +28,7 @@
   border: 1.5px solid var(--border, rgba(255, 255, 255, 0.12));
   border-radius: 20px;
   width: 100%;
-  max-width: 660px;
+  max-width: min(720px, calc(100vw - 32px));
   max-height: min(88vh, 740px);
   max-height: min(88dvh, 740px);
   display: flex;
@@ -129,10 +129,13 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 8px 18px;
+  padding: 8px 16px;
   background: var(--surface-subtle);
   border-bottom: 1px solid var(--border);
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  scroll-padding: 0 16px;
   scrollbar-width: none;
   flex-shrink: 0;
 }
@@ -145,7 +148,7 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 6px 14px;
+  padding: 6px 12px;
   border-radius: 999px;
   border: 1px solid transparent;
   background: transparent;
@@ -154,6 +157,7 @@
   font-weight: 600;
   white-space: nowrap;
   cursor: pointer;
+  flex-shrink: 0;
   transition: all 0.15s ease;
 }
 
@@ -427,6 +431,7 @@ kbd.study-kbd {
   }
   .study-help-nav {
     padding: 8px 14px;
+    scroll-padding: 0 14px;
   }
   .study-help-body {
     padding: 16px 18px;

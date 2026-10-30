@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle floor shadow / ambient glow -->
+  <ellipse cx="120" cy="200" rx="60" ry="8" fill="#111318"/>
+  <ellipse cx="120" cy="180" rx="80" ry="16" fill="#222733" opacity="0.4"/>
+
+  <!-- Athlete Character (Stylized Flat Vector) -->
+  <!-- Head & Face -->
+  <circle cx="120" cy="68" r="14" fill="#E2E8F0"/>
+  <path d="M108 62 C108 55 132 55 132 62 Z" fill="#3B82F6"/>
+
+  <!-- Torso & Arms (Lifting overhead) -->
+  <path d="M102 110 L106 82 L134 82 L138 110 C138 125 102 125 102 110 Z" fill="#3B82F6"/>
+  
+  <!-- Arms holding barbell -->
+  <path d="M106 82 L82 52" stroke="#E2E8F0" stroke-width="6" stroke-linecap="round"/>
+  <path d="M134 82 L158 52" stroke="#E2E8F0" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Legs (Stance) -->
+  <path d="M110 120 L96 175 C94 180 98 184 103 182 L115 140 Z" fill="#2563EB"/>
+  <path d="M130 120 L144 175 C146 180 142 184 137 182 L125 140 Z" fill="#2563EB"/>
+  
+  <!-- Shoes -->
+  <path d="M92 182 L106 182 L104 189 C104 191 100 191 94 189 Z" fill="#64748B"/>
+  <path d="M148 182 L134 182 L136 189 C136 191 140 191 146 189 Z" fill="#64748B"/>
+
+  <!-- Heavy Barbell (舉重 - The core object) -->
+  <!-- Bar -->
+  <rect x="40" y="48" width="160" height="8" rx="4" fill="#94A3B8"/>
+  
+  <!-- Center Gold Accent (Champion/Competition theme) -->
+  <rect x="114" y="46" width="12" height="12" rx="2" fill="#F59E0B"/>
+
+  <!-- Left Heavy Plates -->
+  <rect x="62" y="32" width="10" height="40" rx="3" fill="#EF4444"/>
+  <rect x="50" y="24" width="8" height="56" rx="3" fill="#F59E0B"/>
+  <rect x="42" y="20" width="5" height="64" rx="2" fill="#334155"/>
+
+  <!-- Right Heavy Plates -->
+  <rect x="168" y="32" width="10" height="40" rx="3" fill="#EF4444"/>
+  <rect x="182" y="24" width="8" height="56" rx="3" fill="#F59E0B"/>
+  <rect x="193" y="20" width="5" height="64" rx="2" fill="#334155"/>
+</svg>

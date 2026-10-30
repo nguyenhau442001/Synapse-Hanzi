@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Atmospheric Background Elements -->
+  <circle cx="180" cy="70" r="28" fill="#F39C12" opacity="0.15"/>
+  <path d="M40 160 L90 110 L150 140 L210 95 L210 200 L40 200 Z" fill="#242B35" opacity="0.7"/>
+  <path d="M20 180 L70 130 L130 160 L190 120 L220 145 L220 200 L20 200 Z" fill="#2C3542" opacity="0.8"/>
+
+  <!-- Central Physical Object (Road / Route / Journey) -->
+  <g>
+    <!-- Distant mountain silhouette -->
+    <polygon points="120,70 155,115 85,115" fill="#364152"/>
+    <polygon points="145,85 170,120 120,120" fill="#2E3846"/>
+
+    <!-- Winding Road / Path (Lùtú) -->
+    <path d="M120 115 C120 135, 150 145, 140 165 C130 185, 90 180, 85 200" fill="none" stroke="#2C3542" stroke-width="26" stroke-linecap="round"/>
+    <path d="M120 115 C120 135, 150 145, 140 165 C130 185, 90 180, 85 200" fill="none" stroke="#E67E22" stroke-width="16" stroke-linecap="round"/>
+    <!-- Road center dashes -->
+    <path d="M120 125 C120 138, 144 146, 139 160 C134 174, 98 171, 91 190" fill="none" stroke="#F39C12" stroke-width="2" stroke-dasharray="4,6" stroke-linecap="round"/>
+
+    <!-- Journey Marker / Destination Pin -->
+    <g transform="translate(85, 190)">
+      <circle cx="0" cy="-12" r="10" fill="#E74C3C"/>
+      <circle cx="0" cy="-12" r="4" fill="#FFFFFF"/>
+      <path d="M0 -2 L0 4" stroke="#C0392B" stroke-width="3" stroke-linecap="round"/>
+      <ellipse cx="0" cy="5" rx="5" ry="2" fill="#111418" opacity="0.6"/>
+    </g>
+
+    <!-- Starting Point Marker -->
+    <g transform="translate(120, 115)">
+      <circle cx="0" cy="-10" r="8" fill="#3498DB"/>
+      <circle cx="0" cy="-10" r="3" fill="#FFFFFF"/>
+      <path d="M0 -2 L0 3" stroke="#2980B9" stroke-width="2" stroke-linecap="round"/>
+      <ellipse cx="0" cy="4" rx="4" ry="1.5" fill="#111418" opacity="0.6"/>
+    </g>
+  </g>
+
+  <!-- Decorative Compass / Navigation Accent Top-Left -->
+  <g transform="translate(45, 55)">
+    <circle cx="0" cy="0" r="16" fill="#242B35" stroke="#364152" stroke-width="2"/>
+    <polygon points="0,-10 3,-1 0,3" fill="#E74C3C"/>
+    <polygon points="0,10 -3,1 0,-3" fill="#A6ACAF"/>
+    <circle cx="0" cy="0" r="2" fill="#F39C12"/>
+  </g>
+
+  <!-- Distance Indicator Elements (Dots and subtle path nodes) -->
+  <circle cx="132" cy="140" r="3" fill="#F39C12" opacity="0.8"/>
+  <circle cx="143" cy="160" r="3" fill="#F39C12" opacity="0.8"/>
+  <circle cx="112" cy="173" r="3" fill="#F39C12" opacity="0.8"/>
+</svg>

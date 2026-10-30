@@ -1,0 +1,32 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for ancestral tablet -->
+  <circle cx="120" cy="115" r="70" fill="#F59E0B" opacity="0.05"/>
+  
+  <!-- Ancestral Tablet (Shenwei / Páiwèi) Design -->
+  <!-- Base/Pedestal -->
+  <path d="M85 190 H155 L165 205 H75 Z" fill="#334155"/>
+  <rect x="80" y="180" width="80" height="10" rx="2" fill="#475569"/>
+  
+  <!-- Main Tablet Structure (Outer Frame) -->
+  <rect x="90" y="45" width="60" height="135" rx="6" fill="#1E293B" stroke="#F59E0B" stroke-width="3"/>
+  <rect x="98" y="53" width="44" height="119" rx="3" fill="#0F172A"/>
+  
+  <!-- Decorative Arch at top of tablet -->
+  <path d="M90 60 C90 45 150 45 150 60 Z" fill="#D97706" opacity="0.8"/>
+  
+  <!-- Gold Inscription Symbolism (Abstracted ancestral tablet text lines in flat design) -->
+  <rect x="114" y="72" width="12" height="60" rx="2" fill="#FBBF24"/>
+  <rect x="103" y="85" width="8" height="20" rx="1" fill="#FBBF24" opacity="0.7"/>
+  <rect x="129" y="85" width="8" height="20" rx="1" fill="#FBBF24" opacity="0.7"/>
+  
+  <!-- Offering Incense Burner at the base -->
+  <path d="M95 212 C95 208 145 208 145 212 L140 225 H100 Z" fill="#64748B"/>
+  <ellipse cx="120" cy="212" rx="25" ry="4" fill="#94A3B8"/>
+  
+  <!-- Incense Smoke / Reverence wisps -->
+  <path d="M115 200 C110 190 125 180 120 170" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <path d="M125 200 C130 192 115 182 122 172" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+</svg>

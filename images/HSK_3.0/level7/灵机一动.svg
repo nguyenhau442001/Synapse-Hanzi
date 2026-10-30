@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Head of the student -->
+  <circle cx="120" cy="110" r="45" fill="#2D343E"/>
+  
+  <!-- Hair -->
+  <path d="M85 110 C 85 75, 155 75, 155 110 L 155 100 C 155 70, 85 70, 85 100 Z" fill="#4A5568"/>
+  
+  <!-- Eyes -->
+  <circle cx="105" cy="105" r="5" fill="#A0AEC0"/>
+  <circle cx="135" cy="105" r="5" fill="#A0AEC0"/>
+  
+  <!-- The "Spark" (Lightbulb concept represented as a physical glowing object) -->
+  <path d="M120 50 L 120 70 M 110 60 L 130 60" stroke="#F6AD55" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="120" cy="50" r="12" fill="#F6AD55"/>
+  <path d="M112 50 A 8 8 0 0 1 128 50" fill="none" stroke="#1A1D24" stroke-width="2"/>
+  
+  <!-- Geometric context: The pencil and the line -->
+  <rect x="70" y="160" width="100" height="10" rx="2" fill="#4A5568"/>
+  <path d="M170 165 L 200 140" stroke="#F6AD55" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="200" cy="140" r="4" fill="#F6AD55"/>
+  
+  <!-- Hand holding pencil -->
+  <path d="M150 160 L 160 150 L 170 160" fill="#718096"/>
+</svg>

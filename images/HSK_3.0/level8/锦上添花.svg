@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(40, 35)">
+    <!-- Brocade fabric base (锦 - Rich traditional pattern background) -->
+    <path d="M25 40 L135 40 C145 40, 150 50, 145 60 L125 105 C120 115, 110 120, 100 120 L20 120 C10 120, 0 110, 5 100 L20 50 C22 43, 23 40, 25 40 Z" fill="#243049"/>
+    <path d="M30 50 L130 50 L115 110 L15 110 Z" fill="#2D3B59"/>
+    
+    <!-- Brocade gold pattern lines (Traditional diagonal weave look) -->
+    <path d="M40 50 L120 110 M60 50 L140 110 M20 70 L100 130 M20 90 L80 135" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.3" fill="none"/>
+    <path d="M120 50 L40 110 M100 50 L20 110 M140 70 L60 130" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.3" fill="none"/>
+    
+    <!-- Fabric folds & shading -->
+    <path d="M25 40 C35 40, 45 45, 55 55 L40 110 C30 110, 20 100, 15 90 L25 40 Z" fill="#1E273A" opacity="0.6"/>
+
+    <!-- Stem and leaves (Adding flower to the brocade) -->
+    <path d="M75 115 Q70 85 90 65" stroke="#4ADE80" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M80 85 Q70 80 65 70 Q75 75 80 85 Z" fill="#22C55E"/>
+    <path d="M85 75 Q95 70 100 60 Q90 68 85 75 Z" fill="#22C55E"/>
+
+    <!-- Vibrant Flower Blossoming (添花 - Adding beauty to beauty) -->
+    <!-- Outer petals (Gold/Orange accent) -->
+    <circle cx="90" cy="55" r="14" fill="#F59E0B" opacity="0.8"/>
+    <circle cx="78" cy="62" r="12" fill="#F97316"/>
+    <circle cx="102" cy="62" r="12" fill="#F97316"/>
+    <circle cx="83" cy="46" r="12" fill="#FB923C"/>
+    <circle cx="97" cy="46" r="12" fill="#FB923C"/>
+    <circle cx="90" cy="40" r="12" fill="#F97316"/>
+
+    <!-- Inner petals (Bright contrasting color) -->
+    <circle cx="90" cy="51" r="9" fill="#EC4899"/>
+    <circle cx="84" cy="55" r="8" fill="#F43F5E"/>
+    <circle cx="96" cy="55" r="8" fill="#F43F5E"/>
+    <circle cx="90" cy="59" r="8" fill="#E11D48"/>
+    
+    <!-- Flower center -->
+    <circle cx="90" cy="53" r="4" fill="#FEF08A"/>
+    <circle cx="89" cy="52" r="1.5" fill="#CA8A04"/>
+    <circle cx="92" cy="54" r="1" fill="#CA8A04"/>
+    
+    <!-- Floating sparkling enhancement elements (representing perfection/extra brilliance) -->
+    <path d="M125 30 L128 38 L136 41 L128 44 L125 52 L122 44 L114 41 L122 38 Z" fill="#FCD34D"/>
+    <path d="M45 25 L47 30 L52 32 L47 34 L45 39 L43 34 L38 32 L43 30 Z" fill="#FCD34D" transform="scale(0.7) translate(20, -10)"/>
+    <path d="M110 95 L111.5 99 L115.5 100.5 L111.5 102 L110 106 L108.5 102 L104.5 100.5 L108.5 99 Z" fill="#FCD34D"/>
+  </g>
+</svg>

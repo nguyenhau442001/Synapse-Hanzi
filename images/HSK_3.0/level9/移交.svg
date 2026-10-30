@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Glow & Platform -->
+  <ellipse cx="120" cy="180" rx="70" ry="15" fill="#121418" opacity="0.8"/>
+  <path d="M 80,140 L 160,140 L 170,175 L 70,175 Z" fill="#222733" opacity="0.5"/>
+
+  <!-- Official Handover / Transfer Illustration -->
+  <g transform="translate(0, 15)">
+    <!-- Person A (Left - Sender / Coast Guard official) -->
+    <g transform="translate(55, 60)">
+      <!-- Body -->
+      <path d="M 10,65 L 35,65 L 40,110 L 5,110 Z" fill="#2E4057"/>
+      <!-- Head -->
+      <circle cx="22" cy="35" r="12" fill="#E0E6ED"/>
+      <!-- Cap -->
+      <path d="M 8,30 C 8,24 36,24 36,30 L 38,32 C 38,32 5,32 8,30 Z" fill="#1B4965"/>
+      <rect x="18" y="22" width="8" height="3" fill="#E9C46A" rx="1"/>
+      <!-- Arm extending right (Handover action) -->
+      <path d="M 30,55 Q 50,55 65,68" stroke="#2E4057" stroke-width="10" stroke-linecap="round" fill="none"/>
+      <!-- Hand -->
+      <circle cx="67" cy="70" r="5" fill="#E0E6ED"/>
+    </g>
+
+    <!-- Person B (Right - Receiver) -->
+    <g transform="translate(130, 60)">
+      <!-- Body -->
+      <path d="M 10,65 L 35,65 L 40,110 L 5,110 Z" fill="#3D5A80"/>
+      <!-- Head -->
+      <circle cx="22" cy="35" r="12" fill="#E0E6ED"/>
+      <!-- Hair -->
+      <path d="M 12,30 C 12,24 32,24 32,32 L 12,32 Z" fill="#1D3557"/>
+      <!-- Arm extending left (Receiving action) -->
+      <path d="M 15,55 Q 0,55 -15,68" stroke="#3D5A80" stroke-width="10" stroke-linecap="round" fill="none"/>
+      <!-- Hand -->
+      <circle cx="-17" cy="70" r="5" fill="#E0E6ED"/>
+    </g>
+
+    <!-- The Transferred Item / Official Case File / Cargo Container -->
+    <g transform="translate(95, 115)">
+      <!-- Folder / Briefcase / Official Object -->
+      <rect x="-12" y="-12" width="50" height="36" rx="4" fill="#E9C46A" stroke="#F4A261" stroke-width="2"/>
+      <!-- Folder tab -->
+      <path d="M -12,-12 L 8,-12 L 14,-4 L -12,-4 Z" fill="#F4A261"/>
+      <!-- Document detail lines -->
+      <line x1="-6" y1="4" x2="26" y2="4" stroke="#DDA15E" stroke-width="3" stroke-linecap="round"/>
+      <line x1="-6" y1="12" x2="18" y2="12" stroke="#DDA15E" stroke-width="3" stroke-linecap="round"/>
+      <!-- Security Seal / Accent -->
+      <circle cx="24" cy="18" r="4" fill="#E76F51"/>
+    </g>
+
+    <!-- Transfer Motion Arrows -->
+    <path d="M 85,115 C 95,100 125,100 135,115" stroke="#E9C46A" stroke-width="3" stroke-dasharray="4,4" fill="none" stroke-linecap="round"/>
+    <polygon points="138,110 143,118 133,118" fill="#E9C46A"/>
+  </g>
+</svg>

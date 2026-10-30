@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Doorway frame -->
+  <path d="M70 40h100v160H70z" fill="#2D343E" stroke="#4A5568" stroke-width="4"/>
+  
+  <!-- Person silhouette walking out -->
+  <g transform="translate(95, 60)">
+    <circle cx="25" cy="25" r="12" fill="#F6AD55"/>
+    <path d="M25 37v40M15 100l10-23 10 23M25 60l-15 15M25 60l15 15" stroke="#F6AD55" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Light switch panel on wall -->
+  <rect x="180" y="100" width="20" height="40" rx="2" fill="#2D343E" stroke="#4A5568" stroke-width="2"/>
+  <rect x="185" y="105" width="10" height="15" rx="1" fill="#F6AD55"/>
+  
+  <!-- The "Shunshou" action: Hand reaching back while walking -->
+  <g transform="translate(140, 110)">
+    <path d="M0 0c10-10 20-10 30 0" stroke="#F6AD55" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <circle cx="35" cy="0" r="8" fill="#F6AD55"/>
+  </g>
+  
+  <!-- Motion lines indicating the fluid, effortless nature of the action -->
+  <path d="M160 90c5-5 10-5 15 0" stroke="#4A5568" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+  <path d="M165 80c8-8 15-8 23 0" stroke="#4A5568" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+</svg>

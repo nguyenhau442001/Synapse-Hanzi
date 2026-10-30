@@ -1,0 +1,45 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle floor shadow -->
+  <ellipse cx="120" cy="205" rx="70" ry="10" fill="#111318"/>
+
+  <!-- Character representing "女婿" (Son-in-law) in a polite, respectful, and diligent posture -->
+  <g transform="translate(0, 5)">
+    <!-- Body / Suit Jacket -->
+    <path d="M95 125 L120 150 L145 125 L155 195 L85 195 Z" fill="#2D3748"/>
+    <!-- Shirt inner -->
+    <path d="M105 125 L120 145 L135 125 L120 195 Z" fill="#E2E8F0"/>
+    <!-- Tie -->
+    <polygon points="117,125 123,125 126,160 120,175 114,160" fill="#E53E3E"/>
+
+    <!-- Neck -->
+    <rect x="112" y="105" width="16" height="22" rx="4" fill="#F6AD55"/>
+
+    <!-- Head -->
+    <circle cx="120" cy="85" r="24" fill="#F6AD55"/>
+
+    <!-- Hair (Modern neat hairstyle) -->
+    <path d="M96 85 C96 68 104 60 120 60 C136 60 144 68 144 85 C144 88 143 90 142 90 C138 75 128 70 120 70 C110 70 102 75 98 90 C97 90 96 88 96 85 Z" fill="#2D3748"/>
+
+    <!-- Friendly, respectful facial expression -->
+    <!-- Eyes (happy/respectful curves) -->
+    <path d="M110 83 Q114 80 118 83" stroke="#2D3748" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M122 83 Q126 80 130 83" stroke="#2D3748" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <!-- Warm smile -->
+    <path d="M115 94 Q120 99 125 94" stroke="#2D3748" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Arms in a polite greeting/welcoming or respectful gesture -->
+    <!-- Left arm -->
+    <path d="M95 130 C80 140 75 160 80 175" stroke="#2D3748" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <circle cx="80" cy="175" r="7" fill="#F6AD55"/>
+
+    <!-- Right arm -->
+    <path d="M145 130 C160 140 165 160 160 175" stroke="#2D3748" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <circle cx="160" cy="175" r="7" fill="#F6AD55"/>
+  </g>
+
+  <!-- Golden accent glow representing family harmony and satisfaction (老两口对这位...感到十分满意) -->
+  <circle cx="120" cy="120" r="95" fill="none" stroke="#ECC94B" stroke-width="2" stroke-dasharray="6 8" opacity="0.4"/>
+</svg>
