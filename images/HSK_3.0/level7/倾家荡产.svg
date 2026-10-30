@@ -1,0 +1,62 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambience: Subtle falling gold coins indicating loss of wealth -->
+  <g opacity="0.25">
+    <circle cx="60" cy="50" r="4" fill="#FFC107"/>
+    <circle cx="180" cy="70" r="5" fill="#FFC107"/>
+    <circle cx="90" cy="110" r="3" fill="#FFC107"/>
+    <circle cx="150" cy="130" r="4" fill="#FFC107"/>
+    <path d="M50 40 L55 45 M55 40 L50 45" stroke="#FFC107" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M190 85 L195 90 M195 85 L190 90" stroke="#FFC107" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Central Physical Object: An overturned, empty traditional treasure chest (representing bankrupted family fortune) -->
+  <g transform="translate(40, 75)">
+    <!-- Shadow / Ground Base -->
+    <ellipse cx="80" cy="115" rx="75" ry="12" fill="#111317"/>
+
+    <!-- Overturned Chest Body (Perspective tilt to the right) -->
+    <!-- Chest Back/Bottom Inner Wall -->
+    <path d="M35 45 L95 25 L125 65 L65 85 Z" fill="#3E2723"/>
+
+    <!-- Chest Outer Shell (Wooden Planks style) -->
+    <path d="M25 55 L85 35 L115 75 L55 95 Z" fill="#5D4037"/>
+    
+    <!-- Chest Side Panel -->
+    <path d="M115 75 L145 55 L145 75 L115 95 Z" fill="#3E2723"/>
+
+    <!-- Metal Reinforcements / Bands -->
+    <!-- Band 1 -->
+    <path d="M45 51 L55 44 L63 56 L53 63 Z" fill="#B0BEC5"/>
+    <!-- Band 2 -->
+    <path d="M75 41 L85 34 L93 46 L83 53 Z" fill="#B0BEC5"/>
+
+    <!-- Chest Lid (Hinged open awkwardly, tilted back and left) -->
+    <path d="M15 45 Q 30 10, 60 20 L 80 45 Z" fill="#6D4C41"/>
+    <!-- Lid Metal Trim -->
+    <path d="M15 45 Q 30 10, 60 20" stroke="#B0BEC5" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M15 45 L 80 45" stroke="#4E342E" stroke-width="3" fill="none"/>
+
+    <!-- Empty Interior (Pitch Dark Void) -->
+    <path d="M40 60 L85 45 L105 70 L60 85 Z" fill="#1A1D24"/>
+
+    <!-- A single rolling, abandoned stray coin and broken necklace outside the chest -->
+    <!-- Scattered Coin -->
+    <ellipse cx="115" cy="105" rx="8" ry="5" fill="#FFC107" transform="rotate(-15 115 105)"/>
+    <ellipse cx="115" cy="104" rx="5" ry="3" fill="#FFA000" transform="rotate(-15 115 105)"/>
+
+    <!-- Empty broken jewelry chain -->
+    <path d="M 12 85 Q 25 100, 45 95" stroke="#FFD54F" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <circle cx="12" cy="85" r="3" fill="#E53935"/>
+  </g>
+
+  <!-- Foreground Atmospheric Elements: Cobwebs or cracks signifying utter ruin -->
+  <g stroke="#374151" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6">
+    <!-- Floor crack left -->
+    <path d="M20 185 L50 175 L70 190 L95 180"/>
+    <!-- Floor crack right -->
+    <path d="M160 185 L180 170 L210 185 L225 178"/>
+  </g>
+</svg>

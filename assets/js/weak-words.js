@@ -219,6 +219,8 @@ function renderWeakWordsList() {
   }).join('');
 
   enrichMissingWeakWordMetadata(list);
+  if (typeof renderQuickSavedWords === 'function') renderQuickSavedWords();
+  if (typeof updateSavedBadgeCounts === 'function') updateSavedBadgeCounts(list.length);
   if (typeof updateReviewMobileAuxBadge === 'function') updateReviewMobileAuxBadge();
 }
 

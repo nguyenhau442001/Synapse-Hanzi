@@ -1,0 +1,32 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Global / Earth base elements representing worldwide appeal -->
+    <circle cx="120" cy="130" r="56" fill="#252A34" />
+    
+    <!-- Continents silhouette abstraction -->
+    <path d="M100 110 C 110 95, 130 95, 145 105 C 150 115, 135 130, 120 125 Z" fill="#2F3646" />
+    <path d="M90 140 C 105 135, 115 150, 110 165 C 95 160, 85 145, 90 140 Z" fill="#2F3646" />
+    
+    <!-- Megaphone / Call to Action (The core iconic physical object for "呼吁") -->
+    <!-- Sound waves radiating outward -->
+    <path d="M145 80 Q 155 95, 155 120 Q 155 145, 145 160" fill="none" stroke="#FF9F43" stroke-width="4" stroke-linecap="round" opacity="0.4"/>
+    <path d="M157 70 Q 172 95, 172 120 Q 172 145, 157 170" fill="none" stroke="#FF9F43" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+    <path d="M169 60 Q 189 90, 189 120 Q 189 150, 169 180" fill="none" stroke="#FF9F43" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Megaphone body -->
+    <!-- Handle -->
+    <rect x="75" y="125" width="16" height="30" rx="6" fill="#E58E26" transform="rotate(-20 83 140)" />
+    <!-- Base cone -->
+    <path d="M85 100 L140 75 L140 165 L85 140 Z" fill="#FF9F43" />
+    <!-- Speaker rim -->
+    <ellipse cx="140" cy="120" rx="8" ry="45" fill="#FFA502" />
+    
+    <!-- Grip and accent details -->
+    <rect x="80" y="112" width="12" height="16" rx="4" fill="#E58E26" transform="rotate(-20 86 120)" />
+    
+    <!-- Nature conservation hint (Leaf emblem on megaphone body) -->
+    <path d="M105 115 Q 115 110, 120 120 Q 110 130, 105 115 Z" fill="#2ECC71" transform="rotate(-20 110 120)" />
+  </g>
+</svg>

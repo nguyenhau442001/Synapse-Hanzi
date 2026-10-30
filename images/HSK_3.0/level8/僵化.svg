@@ -1,0 +1,55 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container & Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle grid/structure lines indicating rigid corporate framework -->
+  <path d="M40 70 L200 70 M40 120 L200 120 M40 170 L200 170" stroke="#252A34" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <path d="M75 40 L75 200 M120 40 L120 200 M165 40 L165 200" stroke="#252A34" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <!-- Left/Top Side: The Flowing, Adaptable State (Faded/Contrast) -->
+  <g opacity="0.3">
+    <path d="M50 85 Q75 60 100 85 T150 85" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="100" cy="85" r="6" fill="#38BDF8"/>
+  </g>
+
+  <!-- Right/Main Focus: The Rigid, Crystalline, "Jianghua" (僵化) Enterprise/Structure -->
+  <!-- Main vertical block structure symbolizing bureaucratic or inflexible management -->
+  <g transform="translate(0, 0)">
+    <!-- Base block shadow / outer contour -->
+    <rect x="70" y="70" width="100" height="100" rx="4" fill="#2D3748" stroke="#4A5568" stroke-width="2"/>
+    
+    <!-- Internal rigid subdivisions (frozen grid) -->
+    <line x1="120" y1="70" x2="120" y2="170" stroke="#4A5568" stroke-width="2"/>
+    <line x1="70" y1="120" x2="170" y2="120" stroke="#4A5568" stroke-width="2"/>
+
+    <!-- Geometric, identical, lifeless nodes inside each quadrant -->
+    <!-- Top-Left Node -->
+    <rect x="85" y="85" width="20" height="20" rx="2" fill="#E2E8F0"/>
+    <!-- Top-Right Node -->
+    <rect x="135" y="85" width="20" height="20" rx="2" fill="#E2E8F0"/>
+    <!-- Bottom-Left Node -->
+    <rect x="85" y="135" width="20" height="20" rx="2" fill="#E2E8F0"/>
+    <!-- Bottom-Right Node -->
+    <rect x="135" y="135" width="20" height="20" rx="2" fill="#E2E8F0"/>
+
+    <!-- Cracks/Fractures representing brittleness and inability to adapt (Xianhua/Jianghua theme) -->
+    <path d="M120 70 L110 90 L130 110 L115 130" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M170 120 L150 125 L140 145" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- External Warning/Contrast Accents (Orange/Gold focus) -->
+  <!-- Padlock/Stagnation indicator symbol integrated into design, avoiding forbidden UI elements -->
+  <path d="M110 52 L110 44 C110 38.5 114.5 34 120 34 C125.5 34 130 38.5 130 44 L130 52" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  <rect x="104" y="52" width="32" height="24" rx="3" fill="#1A1D24" stroke="#F59E0B" stroke-width="3"/>
+  <circle cx="120" cy="62" r="3" fill="#F59E0B"/>
+
+  <!-- Conceptual constraint indicators: Scale exaggeration and structural rigidity -->
+  <!-- Outer unyielding brackets -->
+  <path d="M55 60 L55 180" fill="none" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M50 60 L60 60" fill="none" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M50 180 L60 180" fill="none" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+
+  <path d="M185 60 L185 180" fill="none" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M180 60 L190 60" fill="none" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M180 180 L190 180" fill="none" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+</svg>

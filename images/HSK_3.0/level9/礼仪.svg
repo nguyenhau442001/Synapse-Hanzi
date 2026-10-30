@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <defs>
+    <!-- Background glow / spotlight -->
+    <radialGradient id="spotlight" cx="50%" cy="45%" r="60%" fx="50%" fy="45%">
+      <stop offset="0%" stop-color="#2D3748" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#1A1D24" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Professional Gold Accent Gradients -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6E05E"/>
+      <stop offset="100%" stop-color="#D69E2E"/>
+    </linearGradient>
+
+    <linearGradient id="goldLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FAF089"/>
+      <stop offset="100%" stop-color="#ECC94B"/>
+    </linearGradient>
+
+    <!-- Professional Suit Gradients (Navy / Slate Blue) -->
+    <linearGradient id="suitLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3182CE"/>
+      <stop offset="100%" stop-color="#2B6CB0"/>
+    </linearGradient>
+    <linearGradient id="suitRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2B6CB0"/>
+      <stop offset="100%" stop-color="#1A365D"/>
+    </linearGradient>
+    
+    <!-- Skin tones -->
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEEBC8"/>
+      <stop offset="100%" stop-color="#CBD5E0"/>
+    </linearGradient>
+
+    <!-- Drop Shadow -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient background glow -->
+  <circle cx="120" cy="110" r="90" fill="url(#spotlight)"/>
+
+  <!-- Decorative subtle ceremonial arch/elements -->
+  <path d="M70,195 L170,195" stroke="#2D3748" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="120" cy="195" r="3" fill="#D69E2E"/>
+
+  <!-- CENTRAL SUBJECT: Two figures engaged in a polite, respectful greeting / bowing gesture (礼仪 - Etiquette / Protocol) -->
+  <g filter="url(#shadow)">
+    
+    <!-- LEFT FIGURE (Representative performing welcoming gesture / bow) -->
+    <g transform="translate(72, 110)">
+      <!-- Body / Torso (Bowing angle) -->
+      <path d="M-15,65 C-15,45 -5,25 15,10 L30,25 C15,35 5,50 10,75 Z" fill="url(#suitLeft)"/>
+      <!-- White Shirt Collar / Tie -->
+      <polygon points="12,12 22,20 18,25" fill="#FFFFFF"/>
+      <polygon points="17,21 19,21 20,32 18,34 16,32" fill="url(#goldGrad)"/>
+      
+      <!-- Head -->
+      <circle cx="28" cy="2" r="10" fill="url(#skinGrad)"/>
+      <!-- Hair -->
+      <path d="M19,0 C20,-6 28,-7 35,-3 C33,-6 25,-7 19,0 Z" fill="#2D3748"/>
+
+      <!-- Arm extending forward in welcoming gesture -->
+      <path d="M22,30 C35,25 50,28 62,35 C65,37 63,42 59,40 C48,32 35,32 25,38 Z" fill="url(#suitLeft)"/>
+      <!-- Hand palm up welcoming -->
+      <circle cx="63" cy="37" r="4" fill="url(#skinGrad)"/>
+    </g>
+
+    <!-- RIGHT FIGURE (Receiving guest / reciprocal polite posture) -->
+    <g transform="translate(148, 110) scale(-1, 1)">
+      <!-- Body / Torso -->
+      <path d="M-15,65 C-15,45 -5,25 15,10 L30,25 C15,35 5,50 10,75 Z" fill="url(#suitRight)"/>
+      <!-- White Shirt Collar / Scarf or Tie detail -->
+      <polygon points="12,12 22,20 18,25" fill="#FFFFFF"/>
+      <polygon points="17,21 19,21 20,32 18,34 16,32" fill="#E2E8F0"/>
+      
+      <!-- Head -->
+      <circle cx="28" cy="2" r="10" fill="url(#skinGrad)"/>
+      <!-- Hair -->
+      <path d="M18,-2 C22,-7 32,-5 36,2 C34,-4 25,-5 18,-2 Z" fill="#1A202C"/>
+
+      <!-- Arm held politely across waist / hand gesture -->
+      <path d="M22,30 C32,32 45,38 52,48 C55,52 50,56 47,51 C40,42 30,38 20,36 Z" fill="url(#suitRight)"/>
+      <!-- Hand -->
+      <circle cx="53" cy="50" r="3.5" fill="url(#skinGrad)"/>
+    </g>
+
+  </g>
+
+  <!-- Professional Protocol / Honor Elements (Golden laurel / accent sparks floating delicately) -->
+  <g opacity="0.85">
+    <!-- Left Laurel Leaf Branch -->
+    <path d="M55,90 C50,80 55,70 65,65" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M60,78 C65,77 67,73 65,70 C62,73 60,76 60,78 Z" fill="url(#goldLight)"/>
+    <path d="M53,85 C57,83 58,80 56,77 C54,80 53,83 53,85 Z" fill="url(#goldLight)"/>
+
+    <!-- Right Laurel Leaf Branch -->
+    <path d="M185,90 C190,80 185,70 175,65" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M180,78 C175,77 173,73 175,70 C178,73 180,76 180,78 Z" fill="url(#goldLight)"/>
+    <path d="M187,85 C183,83 182,80 184,77 C186,80 187,83 187,85 Z" fill="url(#goldLight)"/>
+
+    <!-- Focal golden star / spark of excellence (representing high standard / international protocol) -->
+    <path d="M120,40 L122.5,46 L128.5,48.5 L122.5,51 L120,57 L117.5,51 L111.5,48.5 L117.5,46 Z" fill="url(#goldGrad)"/>
+    <circle cx="120" cy="48.5" r="1.5" fill="#FFFFFF"/>
+    
+    <!-- Subtle secondary accent sparkles -->
+    <circle cx="95" cy="55" r="1.5" fill="url(#goldLight)" opacity="0.7"/>
+    <circle cx="145" cy="55" r="1.5" fill="url(#goldLight)" opacity="0.7"/>
+  </g>
+
+</svg>

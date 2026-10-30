@@ -1,0 +1,69 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle background ambient glow representing consideration/thought network -->
+  <circle cx="120" cy="120" r="85" fill="none" stroke="#2A303C" stroke-width="1.5" stroke-dasharray="4 6"/>
+  <circle cx="120" cy="120" r="65" fill="none" stroke="#2A303C" stroke-width="1"/>
+
+  <!-- Diverse social strata representation elements (multiple interconnected nodes/personas at the bottom) -->
+  <g transform="translate(0, 10)">
+    <!-- Person 1 (Left) -->
+    <circle cx="75" cy="165" r="10" fill="#3A4454"/>
+    <path d="M 60 192 C 60 180, 66 177, 75 177 C 84 177, 90 180, 90 192 Z" fill="#3A4454"/>
+
+    <!-- Person 2 (Center) -->
+    <circle cx="120" cy="160" r="12" fill="#4C5A70"/>
+    <path d="M 102 190 C 102 177, 110 174, 120 174 C 130 174, 138 177, 138 190 Z" fill="#4C5A70"/>
+
+    <!-- Person 3 (Right) -->
+    <circle cx="165" cy="165" r="10" fill="#3A4454"/>
+    <path d="M 150 192 C 150 180, 156 177, 165 177 C 174 177, 180 180, 180 192 Z" fill="#3A4454"/>
+
+    <!-- Connection lines representing their needs/voices rising up -->
+    <path d="M 75 155 Q 85 135, 105 125" fill="none" stroke="#4C5A70" stroke-width="2" stroke-dasharray="3 3"/>
+    <path d="M 120 148 Q 120 130, 120 115" fill="none" stroke="#F59E0B" stroke-width="2" opacity="0.6"/>
+    <path d="M 165 155 Q 155 135, 135 125" fill="none" stroke="#4C5A70" stroke-width="2" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- Decision Maker (Central focus: thoughtful action, leaning forward, hands gesturing inclusively) -->
+  <g transform="translate(0, 0)">
+    <!-- Head & Thoughtful expression/pose -->
+    <circle cx="120" cy="72" r="14" fill="#E2E8F0"/>
+    <!-- Hair -->
+    <path d="M 107 68 C 108 58, 132 58, 133 68 Z" fill="#64748B"/>
+
+    <!-- Torso in modern attire -->
+    <path d="M 98 115 L 102 90 C 110 87, 130 87, 138 90 L 142 115 C 142 122, 98 122, 98 115 Z" fill="#3B82F6"/>
+    <!-- Collar -->
+    <path d="M 113 90 L 120 100 L 127 90 Z" fill="#E2E8F0"/>
+
+    <!-- Arms reaching out / taking into account (顾及 - taking all perspectives into view) -->
+    <!-- Left arm extending out and curved -->
+    <path d="M 102 96 C 85 100, 75 115, 82 122" fill="none" stroke="#3B82F6" stroke-width="8" stroke-linecap="round"/>
+    <!-- Right arm extending out and curved -->
+    <path d="M 138 96 C 155 100, 165 115, 158 122" fill="none" stroke="#3B82F6" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Open, encompassing hands gesturing consideration -->
+    <circle cx="79" cy="123" r="5" fill="#E2E8F0"/>
+    <circle cx="161" cy="123" r="5" fill="#E2E8F0"/>
+  </g>
+
+  <!-- Dynamic/Focus Elements: Warm glowing arcs representing comprehensive consideration and care (顾及) -->
+  <g>
+    <!-- Top overarching strategic arc -->
+    <path d="M 70 85 C 70 50, 170 50, 170 85" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+    <!-- Accent glowing nodes on the arc -->
+    <circle cx="120" cy="52" r="4" fill="#F59E0B"/>
+    <circle cx="90" cy="61" r="3" fill="#F59E0B" opacity="0.8"/>
+    <circle cx="150" cy="61" r="3" fill="#F59E0B" opacity="0.8"/>
+
+    <!-- Empathy / Care rays pointing down toward the societal needs -->
+    <line x1="100" y1="110" x2="105" y2="125" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+    <line x1="140" y1="110" x2="135" y2="125" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  </g>
+
+  <!-- Subtle indicator of focus/attention (Gold accent focal point) -->
+  <circle cx="120" cy="35" r="2" fill="#F59E0B"/>
+  <path d="M 120 38 L 120 44" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+</svg>

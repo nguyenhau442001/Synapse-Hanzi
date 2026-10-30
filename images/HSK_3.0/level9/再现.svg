@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Museum Display Case Frame -->
+  <path d="M60 60h120v120H60z" fill="#2A2E38" stroke="#4A5568" stroke-width="4"/>
+  
+  <!-- The "Re-emerging" Object: A glowing golden Silk Road caravan silhouette -->
+  <g transform="translate(75, 100)">
+    <!-- Camel silhouette -->
+    <path d="M10 40c5-10 15-15 25-10s10 10 5 20c-5 10-15 15-25 10s-10-10-5-20z" fill="#FFB84D"/>
+    <path d="M15 45l-2 20m10-20l2 20" stroke="#FFB84D" stroke-width="3" stroke-linecap="round"/>
+    <!-- Caravan line -->
+    <path d="M40 45h50" stroke="#FFB84D" stroke-width="2" stroke-dasharray="4 4"/>
+    <path d="M95 40c5-10 15-15 25-10s10 10 5 20c-5 10-15 15-25 10s-10-10-5-20z" fill="#FFB84D"/>
+  </g>
+
+  <!-- Spotlight effect representing "re-appearance/re-enactment" -->
+  <path d="M120 40l-40 120h80z" fill="url(#grad1)" opacity="0.3"/>
+  
+  <defs>
+    <linearGradient id="grad1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFB84D" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1A1D24" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Museum pedestal base -->
+  <rect x="80" y="180" width="80" height="10" fill="#4A5568"/>
+</svg>

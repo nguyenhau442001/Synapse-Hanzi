@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Sun/Light Source representing vitality -->
+  <circle cx="120" cy="70" r="25" fill="#FFB347"/>
+  <path d="M120 35 L120 25 M120 115 L120 125 M155 70 L165 70 M75 70 L65 70 M145 45 L152 38 M95 45 L88 38 M145 95 L152 102 M95 95 L88 102" stroke="#FFB347" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Character: A young person leaping/running with dynamic posture -->
+  <!-- Body -->
+  <path d="M120 120 C 110 120, 100 130, 100 150 L 140 150 C 140 130, 130 120, 120 120" fill="#FFD700"/>
+  
+  <!-- Head -->
+  <circle cx="120" cy="105" r="15" fill="#FFD700"/>
+  
+  <!-- Arms in motion -->
+  <path d="M105 130 L90 110" stroke="#FFD700" stroke-width="8" stroke-linecap="round"/>
+  <path d="M135 130 L150 110" stroke="#FFD700" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Legs in motion -->
+  <path d="M110 150 L100 190" stroke="#FFD700" stroke-width="8" stroke-linecap="round"/>
+  <path d="M130 150 L140 190" stroke="#FFD700" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Motion lines -->
+  <path d="M80 160 Q 60 170 80 180" stroke="#5D6D7E" stroke-width="2" fill="none"/>
+  <path d="M70 170 Q 50 180 70 190" stroke="#5D6D7E" stroke-width="2" fill="none"/>
+</svg>

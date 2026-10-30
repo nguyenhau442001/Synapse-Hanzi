@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Atmospheric background details: clouds and sky gradient/stars -->
+  <g opacity="0.6">
+    <!-- Star accents -->
+    <circle cx="50" cy="50" r="1" fill="#88A0C0"/>
+    <circle cx="190" cy="40" r="1.5" fill="#88A0C0"/>
+    <circle cx="210" cy="90" r="1" fill="#88A0C0"/>
+    <circle cx="35" cy="110" r="1.2" fill="#88A0C0"/>
+
+    <!-- Cloud layers (dark theme vector clouds) -->
+    <path d="M 20 180 Q 30 165 50 170 Q 65 155 90 165 Q 110 150 140 165 Q 165 155 190 170 Q 210 160 220 180 Z" fill="#252A34" opacity="0.7"/>
+    <path d="M 0 205 Q 20 190 45 195 Q 70 185 100 195 Q 130 185 160 195 Q 190 185 210 195 Q 230 190 240 205 Z" fill="#2D3544" opacity="0.9"/>
+  </g>
+
+  <!-- Dynamic flight trails / Speed lines -->
+  <g opacity="0.4">
+    <line x1="30" y1="160" x2="90" y2="100" stroke="#FF9F43" stroke-width="1.5" stroke-dasharray="6 4" stroke-linecap="round"/>
+    <line x1="50" y1="180" x2="120" y2="110" stroke="#48DBFB" stroke-width="2" stroke-dasharray="8 6" stroke-linecap="round"/>
+    <line x1="20" y1="140" x2="70" y2="90" stroke="#FFFFFF" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- Central Jet Fighter Icon (Sleek, Modern Flat Vector Design representing 空军 - Air Force) -->
+  <g transform="translate(120, 115) rotate(-35)">
+    <!-- Exhaust Plume / Afterburner Glow -->
+    <polygon points="-45,0 -75,-6 -65,0 -75,6" fill="#FF6B6B" opacity="0.8"/>
+    <polygon points="-40,0 -55,-3 -50,0 -55,3" fill="#FF9F43"/>
+
+    <!-- Main Fuselage -->
+    <path d="M -45 0 L -15 -8 L 45 -2 L 55 0 L 45 2 L -15 8 Z" fill="#E0E6ED"/>
+
+    <!-- Cockpit Canopy (Glowing Cyan/Blue) -->
+    <path d="M -10 -4 L 5 -5 L 12 -2 L 5 0 L -10 0 Z" fill="#48DBFB"/>
+    <path d="M -8 -3 L 3 -4 L 8 -2 L 3 -1 Z" fill="#FFFFFF" opacity="0.7"/>
+
+    <!-- Swept-back Wings -->
+    <path d="M -5 -6 L 15 -35 L 25 -35 L 15 -2 L 5 -2 Z" fill="#CFD8DC"/>
+    <path d="M -5 6 L 15 35 L 25 35 L 15 2 L 5 2 Z" fill="#B0BEC5"/>
+
+    <!-- Wing Details / Accents -->
+    <polygon points="5,-15 12,-28 17,-28 10,-10" fill="#FF9F43"/>
+    <polygon points="5,15 12,28 17,28 10,10" fill="#FF9F43"/>
+
+    <!-- Vertical Stabilizers / Tail Fins -->
+    <path d="M -30 -3 L -45 -22 L -35 -24 L -20 -4 Z" fill="#B0BEC5"/>
+    <path d="M -30 3 L -45 22 L -35 24 L -20 4 Z" fill="#90A4AE"/>
+
+    <!-- Highlight side of fuselage -->
+    <path d="M -15 -8 L 45 -2 L 55 0 L -15 0 Z" fill="#FFFFFF" opacity="0.2"/>
+  </g>
+
+  <!-- High-altitude glowing cloud / accent element -->
+  <path d="M 160 70 Q 170 60 185 65 Q 195 55 210 65 Q 225 60 230 75 Z" fill="#FFFFFF" opacity="0.15"/>
+</svg>

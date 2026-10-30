@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative Stage Floor & Background Elements -->
+  <path d="M40 185 L200 185" stroke="#2A303C" stroke-width="3" stroke-linecap="round"/>
+  <path d="M60 195 L180 195" stroke="#2A303C" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Dramatic Curtain / Valance (Top) -->
+  <path d="M 0 0 L 240 0 L 240 45 Q 210 25 180 45 Q 150 25 120 45 Q 90 25 60 45 Q 30 25 0 45 Z" fill="#9E2A2B"/>
+  <path d="M 0 0 L 240 0 L 240 25 Q 210 10 180 25 Q 150 10 120 25 Q 90 10 60 25 Q 30 10 0 25 Z" fill="#781F20"/>
+
+  <!-- Side Curtains -->
+  <path d="M 0 45 Q 25 110 0 190 L 0 45 Z" fill="#781F20"/>
+  <path d="M 240 45 Q 215 110 240 190 L 240 45 Z" fill="#781F20"/>
+
+  <!-- Center Stage Object: Traditional Chinese Opera Mask (Peking Opera Mask representing "剧目" / theatrical performance) -->
+  <g transform="translate(120, 110)">
+    <!-- Mask Base (White/Silver facial makeup base) -->
+    <path d="M -32 -45 C -45 -45 -55 -25 -55 0 C -55 35 -35 60 0 70 C 35 60 55 35 55 0 C 55 -25 45 -45 32 -45 Z" fill="#F4F4F6"/>
+    
+    <!-- Red Facial Markings (Guan Yu style or classic heroic facial paint) -->
+    <!-- Forehead pattern -->
+    <path d="M 0 -40 C -15 -40 -20 -30 -15 -20 C -5 -25 5 -25 15 -20 C 20 -30 15 -40 0 -40 Z" fill="#D32F2F"/>
+    <circle cx="0" cy="-28" r="5" fill="#FFC107"/>
+    
+    <!-- Eyebrows (Dynamic sweeping theatrical brows) -->
+    <path d="M -8 -18 C -22 -15 -38 -25 -42 -30 C -35 -12 -18 -8 -8 -12 Z" fill="#212121"/>
+    <path d="M 8 -18 C 22 -15 38 -25 42 -30 C 35 -12 18 -8 8 -12 Z" fill="#212121"/>
+
+    <!-- Eyes -->
+    <ellipse cx="-22" cy="-5" rx="7" ry="4" fill="#212121" transform="rotate(-15 -22 -5)"/>
+    <ellipse cx="22" cy="-5" rx="7" ry="4" fill="#212121" transform="rotate(15 22 -5)"/>
+
+    <!-- Nose & Cheeks Red Markings -->
+    <path d="M 0 -15 L -6 10 C -6 20 6 20 6 10 Z" fill="#D32F2F"/>
+    <path d="M -30 10 C -40 10 -42 25 -32 30 C -22 30 -22 15 -30 10 Z" fill="#D32F2F" opacity="0.8"/>
+    <path d="M 30 10 C 40 10 42 25 32 30 C 22 30 22 15 30 10 Z" fill="#D32F2F" opacity="0.8"/>
+
+    <!-- Mouth -->
+    <path d="M -12 38 C -5 44 5 44 12 38 C 8 48 -8 48 -12 38 Z" fill="#D32F2F"/>
+  </g>
+
+  <!-- Theatrical Elements / Streamers flanking the center -->
+  <path d="M 65 85 Q 75 110 65 145" fill="none" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 175 85 Q 165 110 175 145" fill="none" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Spotlight Glow Effect (Subtle overhead illumination) -->
+  <path d="M 120 0 L 70 185 L 170 185 Z" fill="#FFFFFF" opacity="0.04"/>
+</svg>

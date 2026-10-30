@@ -1,0 +1,30 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Stormy/Danger Background Elements (Subtle) -->
+  <path d="M40 80 L80 40 L120 80 L160 40 L200 80" stroke="#374151" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- The Airplane (The central object) -->
+  <g transform="translate(120, 130)">
+    <!-- Main Body -->
+    <path d="M-60 0 C-60 -20 60 -20 60 0 C60 20 -60 20 -60 0 Z" fill="#9CA3AF"/>
+    <!-- Cockpit -->
+    <path d="M30 -5 L50 0 L30 5 Z" fill="#FBBF24"/>
+    <!-- Tail -->
+    <path d="M-50 0 L-70 -20 L-70 10 Z" fill="#9CA3AF"/>
+    <!-- Wing -->
+    <path d="M-10 0 L-20 30 L10 30 L0 0 Z" fill="#6B7280"/>
+    <!-- Engine (The source of danger, now stabilized) -->
+    <circle cx="-10" cy="15" r="8" fill="#FBBF24"/>
+    <circle cx="-10" cy="15" r="3" fill="#1A1D24"/>
+  </g>
+
+  <!-- Calm/Safe Path (The "Yi" - Peace) -->
+  <path d="M20 180 C80 180 160 180 220 180" stroke="#FBBF24" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 10"/>
+  
+  <!-- Pilot Hands (Representing the skill/control) -->
+  <g transform="translate(120, 130)">
+    <path d="M-5 -10 L5 -10 L2 -25 L-2 -25 Z" fill="#D1D5DB"/>
+    <path d="M-15 -10 L-25 -10 L-22 -25 L-18 -25 Z" fill="#D1D5DB"/>
+  </g>
+</svg>

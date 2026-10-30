@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Person representing the Taxpayer -->
+  <g transform="translate(120, 120)">
+    <!-- Body -->
+    <path d="M-30 80 C-30 50, -15 40, 0 40 C15 40, 30 50, 30 80 L30 110 L-30 110 Z" fill="#7D8590"/>
+    <!-- Head -->
+    <circle cx="0" cy="10" r="25" fill="#E0E6ED"/>
+    <!-- Suit/Professional Attire detail -->
+    <path d="M-15 40 L0 60 L15 40" fill="#1A1D24" opacity="0.2"/>
+  </g>
+
+  <!-- Tax Payment Action: Hand placing a gold coin into a stylized slot -->
+  <g transform="translate(120, 120)">
+    <!-- Hand -->
+    <path d="M20 0 L50 0 L55 20 L25 20 Z" fill="#FFC107"/>
+    <path d="M40 -10 L60 -10 L65 10 L45 10 Z" fill="#FFB300"/>
+    
+    <!-- Gold Coin -->
+    <circle cx="55" cy="5" r="12" fill="#FFD700" stroke="#B8860B" stroke-width="2"/>
+    <circle cx="55" cy="5" r="6" fill="none" stroke="#B8860B" stroke-width="2"/>
+    
+    <!-- Tax Box/Container -->
+    <rect x="40" y="30" width="30" height="40" rx="4" fill="#4A90E2"/>
+    <rect x="45" y="35" width="20" height="5" rx="2" fill="#1A1D24"/>
+  </g>
+</svg>

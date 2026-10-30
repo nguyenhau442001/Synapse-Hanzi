@@ -1,0 +1,55 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Stadium upper tier curve / atmospheric lighting -->
+    <path d="M 40,70 Q 120,40 200,70" fill="none" stroke="#2A2F3D" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Megaphone / Cheering horn body (Central iconic object for 助威) -->
+    <!-- Sound waves radiating from megaphone -->
+    <path d="M 160,85 Q 185,110 185,135 Q 185,160 160,185" fill="none" stroke="#FF9F43" stroke-width="4" stroke-linecap="round" opacity="0.4"/>
+    <path d="M 172,97 Q 192,120 192,135 Q 192,150 172,173" fill="none" stroke="#FF9F43" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+    <path d="M 184,109 Q 200,125 200,135 Q 200,145 184,161" fill="none" stroke="#FF9F43" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Megaphone angled diagonally -->
+    <g transform="rotate(-25 120 135)">
+      <!-- Handle -->
+      <path d="M 90,145 L 80,175 C 79,178 81,181 84,181 L 96,181 C 99,181 101,178 100,175 L 90,145 Z" fill="#3E4C59"/>
+      <rect x="85" y="145" width="10" height="15" rx="3" fill="#2C3540"/>
+      
+      <!-- Main cone body -->
+      <path d="M 90,120 L 145,95 C 150,93 155,97 155,102 L 155,168 C 155,173 150,177 145,175 L 90,150 Z" fill="#FF7043"/>
+      <path d="M 90,120 L 145,95 C 150,93 155,97 155,102 L 155,135 L 90,135 Z" fill="#FF9F43"/> <!-- Highlight half -->
+
+      <!-- Mouthpiece (rear) -->
+      <ellipse cx="90" cy="135" rx="5" ry="15" fill="#D84315"/>
+      <ellipse cx="90" cy="135" rx="2" ry="10" fill="#BF360C"/>
+
+      <!-- Speaker rim (front) -->
+      <path d="M 150,96 C 157,96 157,174 150,174 Z" fill="#F4511E"/>
+      <ellipse cx="150" cy="135" rx="4" ry="39" fill="none" stroke="#FF8A65" stroke-width="3"/>
+    </g>
+
+    <!-- Vibrant Team Flags (representing the context of fans waving flags) -->
+    <!-- Flag 1 (Left) -->
+    <g transform="translate(50, 110) rotate(-15)">
+      <line x1="0" y1="0" x2="0" y2="70" stroke="#78909C" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 0,5 C 20,-5 35,15 50,5 L 50,45 C 35,55 20,35 0,45 Z" fill="#00E676"/>
+      <circle cx="25" cy="23" r="8" fill="#1A1D24" opacity="0.2"/>
+    </g>
+
+    <!-- Flag 2 (Right background) -->
+    <g transform="translate(180, 80) rotate(20)">
+      <line x1="0" y1="0" x2="0" y2="60" stroke="#78909C" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 0,5 C 15,-5 25,15 40,5 L 40,35 C 25,45 15,25 0,35 Z" fill="#29B6F6"/>
+    </g>
+
+    <!-- Dynamic Sparkles / Energy Bursts -->
+    <circle cx="110" cy="65" r="4" fill="#FFD54F"/>
+    <circle cx="170" cy="80" r="3" fill="#FFD54F"/>
+    <circle cx="140" cy="190" r="3.5" fill="#FFD54F"/>
+    
+    <path d="M 125,50 L 128,58 L 136,61 L 128,64 L 125,72 L 122,64 L 114,61 L 122,58 Z" fill="#FFD54F" opacity="0.8"/>
+    <path d="M 75,175 L 77,180 L 82,182 L 77,184 L 75,189 L 73,184 L 68,182 L 73,180 Z" fill="#FFD54F" opacity="0.6"/>
+  </g>
+</svg>

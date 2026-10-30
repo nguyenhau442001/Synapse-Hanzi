@@ -1,0 +1,48 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle global warming / environmental context in background (faint globe & temperature arc) -->
+  <circle cx="120" cy="120" r="70" fill="none" stroke="#2A303C" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M 70 150 Q 120 180 170 150" fill="none" stroke="#E056FD" stroke-width="1.5" opacity="0.3"/>
+  
+  <!-- Motion lines indicating mental burden / deep weight -->
+  <path d="M 85 85 Q 120 70 155 85" fill="none" stroke="#F6B93B" stroke-width="1" stroke-dasharray="2 3" opacity="0.4"/>
+  <path d="M 75 100 Q 120 85 165 100" fill="none" stroke="#F6B93B" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.6"/>
+
+  <!-- Character Head & Shoulders (Modern Flat Design) -->
+  <!-- Body/Shoulders -->
+  <path d="M 75 210 C 75 175 95 155 120 155 C 145 155 165 175 165 210 Z" fill="#2C3545"/>
+  
+  <!-- Neck -->
+  <rect x="110" y="135" width="20" height="25" fill="#E5B299"/>
+
+  <!-- Head -->
+  <circle cx="120" cy="115" r="32" fill="#E5B299"/>
+
+  <!-- Hair -->
+  <path d="M 89 110 C 88 90 100 80 120 80 C 140 80 152 90 151 115 C 151 115 145 100 135 97 C 125 94 115 97 105 100 C 95 103 89 110 89 110 Z" fill="#3E4C59"/>
+
+  <!-- Thoughtful / Anxious Expression (Brow furrowed, hand touching head) -->
+  <!-- Eyebrows (Slanted inward/downward showing worry) -->
+  <line x1="102" y1="107" x2="114" y2="111" stroke="#3E4C59" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="138" y1="107" x2="126" y2="111" stroke="#3E4C59" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Eyes (Closed / focused inward in deep thought) -->
+  <path d="M 104 116 Q 109 119 114 116" fill="none" stroke="#3E4C59" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 126 116 Q 131 119 136 116" fill="none" stroke="#3E4C59" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Mouth (Slightly pressed / troubled line) -->
+  <path d="M 113 130 Q 120 128 127 130" fill="none" stroke="#3E4C59" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Hand touching forehead (Action showing concern/worry) -->
+  <path d="M 95 140 C 90 120 100 105 110 105 C 115 105 120 108 122 112" fill="none" stroke="#E5B299" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="112" cy="106" r="6" fill="#E5B299"/>
+
+  <!-- Floating global/environmental concern icons to complete the semantic context -->
+  <!-- Mini fragile earth / warning element hovered near the hand -->
+  <circle cx="160" cy="85" r="14" fill="#0984E3" opacity="0.8"/>
+  <path d="M 153 82 Q 157 78 165 85 Q 163 92 156 90 Z" fill="#00B894" opacity="0.9"/>
+  <!-- Warning pulse / concern aura -->
+  <circle cx="160" cy="85" r="18" fill="none" stroke="#E17055" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+</svg>

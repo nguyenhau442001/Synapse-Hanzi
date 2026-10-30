@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 120)">
+    <!-- Thought Bubble Outline -->
+    <path d="M-60,-40 C-80,-40 -90,-30 -90,-10 C-90,10 -80,20 -60,20 L-20,20 L-10,40 L0,20 L60,20 C80,20 90,10 90,-10 C90,-30 80,-40 60,-40 Z" fill="#2C313C" stroke="#FFB84D" stroke-width="3"/>
+    
+    <!-- The "Thought" (A University Graduation Cap) -->
+    <g transform="translate(0, -10)">
+      <polygon points="-40,0 0,20 40,0 0,-20" fill="#FFB84D"/>
+      <rect x="-5" y="0" width="10" height="25" fill="#FFB84D"/>
+      <circle cx="0" cy="-20" r="5" fill="#FFB84D"/>
+      <path d="M0,-20 L15,-10" stroke="#FFB84D" stroke-width="3"/>
+    </g>
+
+    <!-- The "Result" (A Diploma Scroll) -->
+    <g transform="translate(0, 60)">
+      <rect x="-50" y="-15" width="100" height="30" rx="5" fill="#FFB84D"/>
+      <rect x="-10" y="-20" width="20" height="40" fill="#E69F2E"/>
+      <circle cx="0" cy="0" r="8" fill="#1A1D24"/>
+    </g>
+    
+    <!-- Connecting Sparkle/Star -->
+    <path d="M0,30 L5,40 L0,50 L-5,40 Z" fill="#FFB84D"/>
+  </g>
+</svg>

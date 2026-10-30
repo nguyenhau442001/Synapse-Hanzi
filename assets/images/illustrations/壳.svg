@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Egg Shell Fragments -->
+  <path d="M80 120 L100 180 L140 170 L130 110 Z" fill="#E0E0E0" stroke="#1A1D24" stroke-width="2"/>
+  <path d="M160 130 L150 190 L190 180 L180 120 Z" fill="#F5F5F5" stroke="#1A1D24" stroke-width="2"/>
+  
+  <!-- Main Egg Shell -->
+  <path d="M120 60 C 80 60, 70 100, 70 130 C 70 160, 90 180, 120 180 C 150 180, 170 160, 170 130 C 170 100, 160 60, 120 60 Z" fill="#FFFFFF"/>
+  
+  <!-- Crack -->
+  <path d="M120 70 L110 100 L130 110 L120 140" stroke="#1A1D24" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Chick Head -->
+  <circle cx="120" cy="110" r="25" fill="#FFD54F"/>
+  
+  <!-- Eye -->
+  <circle cx="112" cy="105" r="3" fill="#1A1D24"/>
+  
+  <!-- Beak -->
+  <path d="M120 110 L135 115 L120 120 Z" fill="#FF8F00"/>
+  
+  <!-- Wing -->
+  <path d="M95 115 C 85 115, 80 125, 90 130" stroke="#FFD54F" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>

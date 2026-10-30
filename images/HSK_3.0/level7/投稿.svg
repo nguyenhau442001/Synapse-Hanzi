@@ -1,0 +1,85 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <defs>
+    <!-- Gradients for depth and modern look -->
+    <linearGradient id="bgGlow" x1="120" y1="40" x2="120" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2A2F3D" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#1A1D24" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFB703"/>
+      <stop offset="100%" stop-color="#FB8500"/>
+    </linearGradient>
+    <linearGradient id="paperGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <linearGradient id="mailboxGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background glow for focal point -->
+  <circle cx="130" cy="120" r="80" fill="url(#bgGlow)"/>
+
+  <!-- Mailbox / Submission Target (Right side) -->
+  <g id="mailbox">
+    <!-- Post stand -->
+    <rect x="165" y="140" width="10" height="60" fill="#475569" rx="3"/>
+    <!-- Mailbox body -->
+    <path d="M 145 95 L 195 95 A 18 18 0 0 1 213 113 L 213 140 L 127 140 L 127 113 A 18 18 0 0 1 145 95 Z" fill="url(#mailboxGrad)"/>
+    <!-- Mail slot (angled) -->
+    <path d="M 152 108 L 180 108" stroke="#93C5FD" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 155 116 L 175 116" stroke="#93C5FD" stroke-width="2" stroke-linecap="round"/>
+    <!-- Flag (indicates submission ready) -->
+    <path d="M 213 115 L 230 120 L 213 125 Z" fill="url(#accentGrad)"/>
+    <rect x="211" y="125" width="4" height="20" fill="#CBD5E1"/>
+  </g>
+
+  <!-- Dynamic Flying Manuscript / Article (Action component) -->
+  <g id="manuscript-motion">
+    <!-- Motion lines showing trajectory -->
+    <path d="M 65 105 Q 85 95 105 105" stroke="#FFB703" stroke-width="2" stroke-dasharray="3 3" fill="none" opacity="0.6"/>
+    <path d="M 70 115 Q 90 105 110 115" stroke="#FFB703" stroke-width="2" stroke-dasharray="3 3" fill="none" opacity="0.8"/>
+
+    <!-- Paper sheet being submitted -->
+    <g transform="translate(90, 85) rotate(-15)">
+      <rect width="45" height="58" rx="4" fill="url(#paperGrad)" stroke="#CBD5E1" stroke-width="1.5"/>
+      <!-- Abstract text lines representing writing -->
+      <line x1="8" y1="12" x2="32" y2="12" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+      <line x1="8" y1="20" x2="37" y2="20" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+      <line x1="8" y1="28" x2="28" y2="28" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+      <line x1="8" y1="36" x2="35" y2="36" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+      <!-- Small accent star/badge on manuscript -->
+      <circle cx="33" cy="48" r="4" fill="#FFB703"/>
+    </g>
+  </g>
+
+  <!-- Human Character (Left side, showing active throwing/submitting motion) -->
+  <g id="character">
+    <!-- Body / Torso -->
+    <path d="M 45 160 C 45 140, 55 130, 70 130 C 85 130, 95 140, 95 160 Z" fill="#38BDF8"/>
+    
+    <!-- Head -->
+    <circle cx="70" cy="105" r="16" fill="#FDE047"/>
+    <!-- Hair -->
+    <path d="M 54 105 C 54 94, 62 88, 72 88 C 83 88, 87 96, 86 102 C 80 97, 65 98, 54 105 Z" fill="#334155"/>
+
+    <!-- Back Arm (resting) -->
+    <path d="M 55 138 L 45 160" stroke="#38BDF8" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Front Arm (Dynamic action forward towards mailbox) -->
+    <path d="M 85 135 C 95 125, 110 115, 120 110" stroke="#FDE047" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="121" cy="109" r="5" fill="#FDE047"/>
+  </g>
+
+  <!-- Desk / Surface Ground Plane -->
+  <path d="M 20 200 L 130 200" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Focus Accent Particles -->
+  <circle cx="142" cy="85" r="3" fill="#FFB703" opacity="0.8"/>
+  <circle cx="115" cy="70" r="2" fill="#38BDF8" opacity="0.7"/>
+</svg>

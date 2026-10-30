@@ -1,0 +1,47 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Stage/Podium Structure (The "Tai" / 台) -->
+    <!-- Back drop / wall -->
+    <rect x="50" y="40" width="140" height="70" fill="#222730" rx="4"/>
+    
+    <!-- Microphone on podium -->
+    <rect x="115" y="70" width="10" height="25" fill="#4A5568"/>
+    <ellipse cx="120" cy="68" rx="8" ry="6" fill="#718096"/>
+    <path d="M120 74 L120 95" stroke="#718096" stroke-width="2"/>
+
+    <!-- Elevated Platform Structure -->
+    <path d="M30 110 L210 110 L195 135 L45 135 Z" fill="#2D3748"/>
+    <rect x="45" y="135" width="150" height="15" fill="#4A5568"/>
+
+    <!-- Motion/Descent visual indicators (Downward trajectory lines) -->
+    <path d="M80 145 L70 175" stroke="#F6AD55" stroke-width="2" stroke-dasharray="4,4" opacity="0.6"/>
+    <path d="M160 145 L170 175" stroke="#F6AD55" stroke-width="2" stroke-dasharray="4,4" opacity="0.6"/>
+
+    <!-- Stepping Down Figure (Stepping off the stage) -->
+    <g transform="translate(10, 10)">
+      <!-- Head -->
+      <circle cx="110" cy="115" r="10" fill="#E2E8F0"/>
+      <!-- Body / Suit (Stepping down pose, angled) -->
+      <path d="M102 130 L118 130 L122 155 L106 155 Z" fill="#3182CE"/>
+      <!-- Briefcase dropped / left behind or in hand -->
+      <rect x="135" y="145" width="14" height="10" rx="2" fill="#D69E2E"/>
+      <path d="M140 145 v-3 a2 2 0 0 1 4 0 v3" stroke="#D69E2E" stroke-width="1.5" fill="none"/>
+      <!-- Legs moving down -->
+      <!-- Back leg still on platform -->
+      <path d="M106 150 L95 150 L95 138" stroke="#2B6CB0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <!-- Front leg stepping down to the floor level -->
+      <path d="M118 152 L128 178 L136 178" stroke="#2B6CB0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <!-- Arms -->
+      <path d="M104 135 L90 145" stroke="#3182CE" stroke-width="4" stroke-linecap="round"/>
+      <path d="M116 135 L130 145" stroke="#3182CE" stroke-width="4" stroke-linecap="round"/>
+    </g>
+
+    <!-- Floor Level (Ground) -->
+    <rect x="20" y="195" width="200" height="4" fill="#E2E8F0" rx="2"/>
+    
+    <!-- Focus Accent Glow / Highlight -->
+    <circle cx="120" cy="120" r="95" stroke="#F6AD55" stroke-width="1.5" fill="none" opacity="0.15"/>
+  </g>
+</svg>

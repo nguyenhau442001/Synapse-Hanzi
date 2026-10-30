@@ -1,0 +1,33 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative glows / structure -->
+  <circle cx="120" cy="120" r="70" fill="none" stroke="#252A34" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Central Physical Object: Police Officer Badge / Authority Emblem (representing "执法" / law enforcement officer character/object) -->
+  <g transform="translate(120, 112)">
+    <!-- Shield Base -->
+    <path d="M0 -55 L40 -35 L40 10 C40 35, 20 52, 0 65 C-20 52, -40 35, -40 10 L-40 -35 Z" fill="#2A303C" stroke="#3A4252" stroke-width="3"/>
+    <path d="M0 -48 L34 -30 L34 8 C34 29, 17 45, 0 57 C-17 45, -34 29, -34 8 L-34 -30 Z" fill="#1E232D" stroke="#4A5568" stroke-width="2"/>
+
+    <!-- Gold Star (Authority / Justice) -->
+    <polygon points="0,-22 5,-8 19,-8 8,1 12,15 0,7 -12,15 -8,1 -19,-8 -5,-8" fill="#F59E0B"/>
+
+    <!-- Scales of Justice (Fairness / 公正) integrated onto the badge -->
+    <path d="M-18 22 L18 22" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M0 22 L0 32" stroke="#F59E0B" stroke-width="2"/>
+    <circle cx="0" cy="32" r="3" fill="#F59E0B"/>
+
+    <!-- Left Scale Pan -->
+    <path d="M-18 22 L-26 35 L-10 35 Z" fill="none" stroke="#F59E0B" stroke-width="1.5"/>
+    <line x1="-18" y1="22" x2="-18" y2="22" stroke="#F59E0B" stroke-width="1.5"/>
+
+    <!-- Right Scale Pan -->
+    <path d="M18 22 L10 35 L26 35 Z" fill="none" stroke="#F59E0B" stroke-width="1.5"/>
+    <line x1="18" y1="22" x2="18" y2="22" stroke="#F59E0B" stroke-width="1.5"/>
+  </g>
+
+  <!-- Ground / Base support for stability and grounded theme -->
+  <path d="M70 195 L170 195" stroke="#3A4252" stroke-width="3" stroke-linecap="round"/>
+</svg>

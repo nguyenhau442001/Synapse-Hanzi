@@ -1,0 +1,51 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Bed frame & Mattress -->
+    <path d="M40 140 L200 140 L200 170 L40 170 Z" fill="#2D333B"/>
+    <rect x="50" y="115" width="140" height="30" rx="6" fill="#4E5D6C"/>
+    <path d="M45 110 L65 110 L65 145 L45 145 Z" fill="#3B4754"/>
+    
+    <!-- Mother lying in bed (elderly profile under blanket) -->
+    <path d="M65 125 C85 125 110 120 140 120 C160 120 180 125 180 125 L180 140 L65 140 Z" fill="#FFC085"/>
+    <!-- Pillow -->
+    <rect x="52" y="105" width="30" height="22" rx="6" fill="#8899A6"/>
+    <!-- Mother Head -->
+    <circle cx="68" cy="116" r="10" fill="#E0A96D"/>
+    <!-- Blanket -->
+    <path d="M75 128 C110 125 140 128 185 130 L185 145 L75 145 Z" fill="#3498DB"/>
+
+    <!-- Bedside table -->
+    <rect x="185" y="125" width="35" height="45" rx="4" fill="#22272E"/>
+    <!-- Medicine bowl / cup on table -->
+    <path d="M195 118 Q202 110 210 118 Z" fill="#F1C40F"/>
+    <rect x="198" y="118" width="12" height="7" rx="2" fill="#E67E22"/>
+
+    <!-- Daughter sitting / attending (filial care) -->
+    <!-- Chair -->
+    <rect x="105" y="120" width="22" height="50" rx="4" fill="#5A6E7F"/>
+    <rect x="100" y="155" width="32" height="6" rx="2" fill="#445361"/>
+    
+    <!-- Daughter Torso -->
+    <path d="M110 100 C110 90 125 90 125 100 L128 140 L108 140 Z" fill="#E74C3C"/>
+    <!-- Daughter Head -->
+    <circle cx="118" cy="80" r="11" fill="#E0A96D"/>
+    <!-- Hair -->
+    <path d="M107 75 C107 65 129 65 129 75 C129 82 125 85 125 85 L111 85 Z" fill="#2C3E50"/>
+    
+    <!-- Daughter Arms reaching out with medicine bowl -->
+    <path d="M115 108 C130 112 145 112 155 115" stroke="#E74C3C" stroke-width="8" stroke-linecap="round" fill="none"/>
+    
+    <!-- Medicine bowl held in hands -->
+    <circle cx="155" cy="115" r="9" fill="#F1C40F"/>
+    <path d="M149 113 L161 113 L159 119 L151 119 Z" fill="#E67E22"/>
+    
+    <!-- Steam rising (care/warmth indicator) -->
+    <path d="M152 100 Q155 94 152 88" stroke="#A6B9C7" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M158 98 Q161 92 158 86" stroke="#A6B9C7" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Ground Line -->
+    <rect x="30" y="170" width="180" height="4" rx="2" fill="#2C3847"/>
+  </g>
+</svg>

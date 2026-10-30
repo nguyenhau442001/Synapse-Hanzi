@@ -1,0 +1,22 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Bed frame -->
+  <rect x="40" y="160" width="160" height="20" rx="4" fill="#374151"/>
+  <rect x="45" y="140" width="150" height="20" rx="4" fill="#4B5563"/>
+  
+  <!-- Character lying down -->
+  <path d="M60 145 L180 145 L175 130 L65 130 Z" fill="#9CA3AF"/>
+  <circle cx="75" cy="120" r="15" fill="#D1D5DB"/>
+  
+  <!-- Motion lines for "wandering thoughts" -->
+  <path d="M100 110 Q 120 80 150 90" stroke="#F59E0B" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="4 4"/>
+  <path d="M110 100 Q 140 70 170 85" stroke="#F59E0B" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="4 4"/>
+  <path d="M120 90 Q 160 60 190 80" stroke="#F59E0B" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="4 4"/>
+  
+  <!-- Tangled thought shapes -->
+  <circle cx="160" cy="80" r="8" fill="none" stroke="#F59E0B" stroke-width="2"/>
+  <path d="M170 70 L185 60" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+  <path d="M140 95 L130 110" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+  <rect x="180" y="90" width="10" height="10" rx="2" stroke="#F59E0B" stroke-width="2" fill="none"/>
+</svg>

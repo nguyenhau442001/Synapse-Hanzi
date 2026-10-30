@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle stage spotlight effect -->
+  <path d="M120 20 L40 220 L200 220 Z" fill="#242B38" opacity="0.6"/>
+  
+  <!-- Central Musical Group / Band representation (乐队) -->
+  
+  <!-- Electric Guitarist (Left) -->
+  <g transform="translate(65, 95)">
+    <!-- Body & Limbs -->
+    <circle cx="0" cy="-25" r="9" fill="#FFB703"/> <!-- Head -->
+    <path d="M-6 -15 L-12 15 L12 15 L6 -15 Z" fill="#3A86FF"/> <!-- Torso -->
+    <!-- Guitar -->
+    <ellipse cx="8" cy="12" rx="10" ry="7" fill="#E63946" transform="rotate(-30 8 12)"/>
+    <rect x="5" y="-15" width="3" height="30" fill="#F1FAEE" transform="rotate(-30 5 -15)"/>
+  </g>
+  
+  <!-- Drummer (Center Back) -->
+  <g transform="translate(120, 85)">
+    <!-- Head -->
+    <circle cx="0" cy="-22" r="9" fill="#FFB703"/>
+    <!-- Torso -->
+    <rect x="-8" y="-13" width="16" height="25" rx="4" fill="#8338EC"/>
+    <!-- Drum Kit -->
+    <!-- Snare -->
+    <ellipse cx="-16" cy="12" rx="10" ry="5" fill="#E5E5E5"/>
+    <rect x="-20" y="12" width="8" height="12" fill="#333"/>
+    <!-- Bass Drum -->
+    <circle cx="0" cy="8" r="14" fill="#FB8500"/>
+    <circle cx="0" cy="8" r="10" fill="#1A1D24"/>
+    <!-- Tom -->
+    <ellipse cx="16" cy="12" rx="10" ry="5" fill="#E5E5E5"/>
+    <rect x="12" y="12" width="8" height="12" fill="#333"/>
+    <!-- Drumsticks -->
+    <line x1="-12" y1="-5" x2="-22" y2="-18" stroke="#F1FAEE" stroke-width="2" stroke-linecap="round"/>
+    <line x1="12" y1="-5" x2="22" y2="-18" stroke="#F1FAEE" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Keyboardist / Vocalist (Right) -->
+  <g transform="translate(175, 95)">
+    <!-- Head -->
+    <circle cx="0" cy="-25" r="9" fill="#FFB703"/>
+    <!-- Torso -->
+    <path d="M-6 -15 L-12 15 L12 15 L6 -15 Z" fill="#FF006E"/>
+    <!-- Keyboard Stand & Keys -->
+    <rect x="-20" y="12" width="40" height="8" rx="2" fill="#F1FAEE"/>
+    <rect x="-18" y="10" width="36" height="3" fill="#2B2D42"/>
+    <line x1="-10" y1="10" x2="-10" y2="13" stroke="#F1FAEE" stroke-width="1"/>
+    <line x1="-2" y1="10" x2="-2" y2="13" stroke="#F1FAEE" stroke-width="1"/>
+    <line x1="6" y1="10" x2="6" y2="13" stroke="#F1FAEE" stroke-width="1"/>
+  </g>
+  
+  <!-- Stage Floor & Amplifiers / Speakers -->
+  <rect x="30" y="170" width="180" height="4" rx="2" fill="#3A4454"/>
+  
+  <!-- Left Speaker Cabinet -->
+  <g transform="translate(35, 130)">
+    <rect x="0" y="0" width="26" height="40" rx="3" fill="#2B313B" stroke="#485565" stroke-width="1.5"/>
+    <circle cx="13" cy="15" r="8" fill="#1A1D24" stroke="#485565" stroke-width="1"/>
+    <circle cx="13" cy="32" r="5" fill="#1A1D24" stroke="#485565" stroke-width="1"/>
+  </g>
+  
+  <!-- Right Speaker Cabinet -->
+  <g transform="translate(179, 130)">
+    <rect x="0" y="0" width="26" height="40" rx="3" fill="#2B313B" stroke="#485565" stroke-width="1.5"/>
+    <circle cx="13" cy="15" r="8" fill="#1A1D24" stroke="#485565" stroke-width="1"/>
+    <circle cx="13" cy="32" r="5" fill="#1A1D24" stroke="#485565" stroke-width="1"/>
+  </g>
+  
+  <!-- Dynamic Sound Waves / Notes floating in the upper atmosphere -->
+  <path d="M75 55 Q85 45 95 55 T115 55" fill="none" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+  <path d="M125 45 Q135 35 145 45 T165 45" fill="none" stroke="#3A86FF" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+  
+  <!-- Stylized Music Notes -->
+  <g fill="#FF006E" opacity="0.9">
+    <ellipse cx="95" cy="72" rx="3.5" ry="2.5" transform="rotate(-20 95 72)"/>
+    <path d="M97.5 72 L97.5 58 L105 60 L105 62 L99.5 60.5 L99.5 72 Z"/>
+  </g>
+  
+  <g fill="#FFB703" opacity="0.9">
+    <ellipse cx="148" cy="68" rx="3.5" ry="2.5" transform="rotate(-20 148 68)"/>
+    <path d="M150.5 68 L150.5 52 L158 54 L158 56 L152.5 54.5 L152.5 68 Z"/>
+  </g>
+</svg>

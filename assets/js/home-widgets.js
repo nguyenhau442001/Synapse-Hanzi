@@ -10,7 +10,7 @@ const HOME_WORD_DATA_FIXES = {
 const HOME_WEEKDAY_SHORT = ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7'];
 const HOME_WEEKDAY_LONG = ['Chủ nhật', 'Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7'];
 const HOME_HEATMAP_WEEKS = 12;
-const HOME_FORECAST_BAR_HEIGHT = 68;
+const HOME_FORECAST_BAR_HEIGHT = 42;
 const HOME_SPEAKER_ICON = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>';
 const HOME_FORGOTTEN_LIMIT = 25;
 
@@ -311,65 +311,7 @@ function homeHeatLevel(count, max) {
 }
 
 function renderActivity(snapshot) {
-  const section = document.getElementById('hwActivity');
-  if (!section) return;
-  const stats = streakStats(snapshot.activity.days);
-  section.replaceChildren();
-  section.appendChild(homeCardHead('Hoạt động', HOME_HEATMAP_WEEKS + ' tuần gần nhất'));
-
-  const statRow = homeElement('div', 'hw-stats');
-  [[stats.current, 'Chuỗi hiện tại'], [stats.longest, 'Chuỗi dài nhất']].forEach(([value, label]) => {
-    const box = homeElement('div', 'hw-stat');
-    box.appendChild(homeElement('strong', '', value + ' ngày'));
-    box.appendChild(homeElement('span', '', label));
-    statRow.appendChild(box);
-  });
-  section.appendChild(statRow);
-
-  // Columns are Monday-first weeks; the last column is the current week.
-  const today = new Date(snapshot.now.getFullYear(), snapshot.now.getMonth(), snapshot.now.getDate());
-  const start = new Date(today);
-  start.setDate(start.getDate() - mondayFirstIndex(today.getDay()) - (HOME_HEATMAP_WEEKS - 1) * 7);
-  const cells = [];
-  for (let i = 0; i < HOME_HEATMAP_WEEKS * 7; i++) {
-    const date = new Date(start.getFullYear(), start.getMonth(), start.getDate() + i);
-    const future = date > today;
-    const key = localDateKey(date);
-    cells.push({ date, future, count: future ? 0 : homeActivityCount(snapshot, key) });
-  }
-  const max = Math.max(1, ...cells.map(cell => cell.count));
-  const activeDays = cells.filter(cell => cell.count > 0).length;
-
-  const grid = homeElement('div', 'hw-heatmap');
-  grid.setAttribute('role', 'group');
-  grid.setAttribute('aria-label', 'Hoạt động ' + HOME_HEATMAP_WEEKS + ' tuần gần nhất: ' + activeDays + ' ngày có ôn tập');
-  cells.forEach(cell => {
-    const node = homeElement('span', 'hw-cell');
-    if (cell.future) {
-      node.classList.add('is-future');
-      node.setAttribute('aria-hidden', 'true');
-    } else {
-      node.dataset.level = String(homeHeatLevel(cell.count, max));
-      const label = String(cell.date.getDate()).padStart(2, '0') + '/' + String(cell.date.getMonth() + 1).padStart(2, '0')
-        + ': ' + cell.count + ' lượt ôn';
-      node.title = label;
-      node.setAttribute('role', 'img');
-      node.setAttribute('aria-label', label);
-    }
-    grid.appendChild(node);
-  });
-  section.appendChild(grid);
-
-  const legend = homeElement('div', 'hw-legend');
-  legend.setAttribute('aria-hidden', 'true');
-  legend.appendChild(homeElement('span', '', 'Ít'));
-  for (let level = 0; level <= 4; level++) {
-    const swatch = homeElement('span', 'hw-cell');
-    swatch.dataset.level = String(level);
-    legend.appendChild(swatch);
-  }
-  legend.appendChild(homeElement('span', '', 'Nhiều'));
-  section.appendChild(legend);
+  // Activity heatmap removed from dashboard per UI update
 }
 
 // ---- Từ hay quên -------------------------------------------------------------
@@ -408,8 +350,6 @@ function topForgottenCards(snapshot, limit = HOME_FORGOTTEN_LIMIT) {
 }
 
 async function renderForgotten(snapshot, renderId) {
-  const section = document.getElementById('hwForgotten');
-  if (!section) return;
   const top = topForgottenCards(snapshot, HOME_FORGOTTEN_LIMIT);
 
   let items = [];
@@ -427,6 +367,13 @@ async function renderForgotten(snapshot, renderId) {
     }
   }
   if (renderId !== homeWidgetsRenderId) return;
+
+  if (typeof updateQuickUrgentWords === 'function') {
+    updateQuickUrgentWords(failed ? [] : items);
+  }
+
+  const section = document.getElementById('hwForgotten');
+  if (!section) return;
 
   section.replaceChildren();
   section.appendChild(homeCardHead('Từ cần ôn gấp', items.length ? 'Hay nhầm lẫn' : ''));
@@ -569,10 +516,8 @@ function refreshHomeWidgets() {
   const renderId = ++homeWidgetsRenderId;
   const snapshot = collectHomeSnapshot(new Date());
   renderReviewForecast(snapshot);
-  renderActivity(snapshot);
   renderWordOfDay(snapshot, renderId);
   renderForgotten(snapshot, renderId);
-  renderDiscovery();
 }
 
 // Deferred one frame so callers that change screens right after (selectLevel, openTodayReviews)
@@ -593,6 +538,11 @@ function invalidateHomeWidgets() {
 }
 
 function placeHomeWidgets(container, isDesktop) {
+  const bottomMount = document.getElementById('dashboardBottomWidgets');
+  if (bottomMount) {
+    bottomMount.appendChild(container);
+    return;
+  }
   const statsContent = document.getElementById('dashboardStatsContent');
   if (statsContent) {
     statsContent.appendChild(container);
@@ -612,9 +562,6 @@ function initHomeWidgets() {
   [
     ['hwWordOfDay', 'hw-wotd'],
     ['hwForecast', 'hw-forecast'],
-    ['hwActivity', 'hw-activity'],
-    ['hwForgotten', 'hw-forgotten'],
-    ['hwDiscovery', 'hw-discovery'],
   ].forEach(([id, className]) => {
     const section = homeElement('section', 'hw-card ' + className);
     section.id = id;

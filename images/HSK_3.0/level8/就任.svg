@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <defs>
+    <!-- Podium gradient -->
+    <linearGradient id="podiumGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2D3748"/>
+      <stop offset="50%" stop-color="#4A5568"/>
+      <stop offset="100%" stop-color="#2D3748"/>
+    </linearGradient>
+    
+    <!-- Accent gold gradient for official tone -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F6AD55"/>
+      <stop offset="100%" stop-color="#D69E2E"/>
+    </linearGradient>
+
+    <!-- Suit gradient -->
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2B6CB0"/>
+      <stop offset="100%" stop-color="#2C5282"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background subtle ambient lighting -->
+  <circle cx="120" cy="110" r="70" fill="#2D3748" opacity="0.3"/>
+
+  <!-- Official Backdrop / Banner (University / Inauguration setting) -->
+  <rect x="70" y="50" width="100" height="45" rx="4" fill="#2A4365"/>
+  <!-- Gold trim on emblem/banner -->
+  <rect x="75" y="55" width="90" height="35" rx="2" fill="none" stroke="#D69E2E" stroke-width="1.5" stroke-opacity="0.6"/>
+  <!-- Emblem star/crest inside backdrop -->
+  <polygon points="120,63 123,71 131,71 125,76 127,84 120,79 113,84 115,76 109,71 117,71" fill="#D69E2E"/>
+
+  <!-- Podium -->
+  <path d="M 100,165 L 140,165 L 145,210 L 95,210 Z" fill="url(#podiumGrad)"/>
+  <!-- Podium front panel detail (Gold crest) -->
+  <path d="M 114,175 L 126,175 L 128,190 L 120,195 L 112,190 Z" fill="url(#goldGrad)" opacity="0.8"/>
+  <rect x="92" y="160" width="56" height="7" rx="2" fill="#4A5568"/>
+
+  <!-- Microphone on Podium -->
+  <path d="M 120,160 L 120,148" stroke="#A0AEC0" stroke-width="2" stroke-linecap="round"/>
+  <rect x="117" y="140" width="6" height="9" rx="3" fill="#CBD5E0"/>
+
+  <!-- Character (The official taking office / 宣誓就任) -->
+  <!-- Head -->
+  <circle cx="120" cy="95" r="14" fill="#FEEBC8"/>
+  <!-- Hair -->
+  <path d="M 106,93 C 106,83 114,80 120,80 C 126,80 134,83 134,93 C 132,90 128,88 120,88 C 112,88 108,90 106,93 Z" fill="#2D3748"/>
+
+  <!-- Torso & Suit -->
+  <path d="M 98,125 L 104,165 L 136,165 L 142,125 C 142,112 133,110 120,110 C 107,110 98,112 98,125 Z" fill="url(#suitGrad)"/>
+  <!-- Shirt collar -->
+  <polygon points="120,118 113,110 127,110" fill="#FFFFFF"/>
+  <!-- Tie -->
+  <polygon points="120,116 117,140 120,146 123,140" fill="#E53E3E"/>
+
+  <!-- Right Arm (Raised taking oath / 宣誓) -->
+  <path d="M 138,122 C 148,115 156,105 160,95 C 163,88 165,82 165,82" stroke="#2C5282" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <!-- Right Hand open gesture (Oath-taking pose) -->
+  <circle cx="166" cy="80" r="5" fill="#FEEBC8"/>
+
+  <!-- Left Arm (Resting near podium) -->
+  <path d="M 102,122 C 96,132 94,142 96,155" stroke="#2C5282" stroke-width="9" stroke-linecap="round" fill="none"/>
+  <circle cx="96" cy="158" r="4.5" fill="#FEEBC8"/>
+
+  <!-- Official Document / Certificate of Appointment (Representing '就任' appointment) -->
+  <g transform="translate(142, 115) rotate(15)">
+    <rect x="0" y="0" width="22" height="28" rx="2" fill="#F7FAFC" stroke="#CBD5E0" stroke-width="1"/>
+    <!-- Document text lines -->
+    <line x1="4" y1="6" x2="14" y2="6" stroke="#4A5568" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="4" y1="10" x2="18" y2="10" stroke="#CBD5E0" stroke-width="1"/>
+    <line x1="4" y1="14" x2="16" y2="14" stroke="#CBD5E0" stroke-width="1"/>
+    <!-- Wax seal / official stamp -->
+    <circle cx="15" cy="21" r="3" fill="#E53E3E"/>
+  </g>
+
+  <!-- Focus / Authority Accent (Subtle glowing highlight around head and oath hand) -->
+  <circle cx="166" cy="80" r="10" fill="none" stroke="#F6AD55" stroke-width="1.5" opacity="0.6"/>
+</svg>

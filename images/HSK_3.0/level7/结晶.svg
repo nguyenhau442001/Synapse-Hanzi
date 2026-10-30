@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Ambient Glow / Backdrop -->
+  <circle cx="120" cy="115" r="70" fill="#1E2636" opacity="0.6"/>
+  <circle cx="120" cy="115" r="45" fill="#25304A" opacity="0.4"/>
+
+  <!-- Geometric Crystal Structure representing "结晶" (Crystallization / Product of Wisdom) -->
+  <g transform="translate(120, 110)">
+    <!-- Back / Inner Facets -->
+    <polygon points="0,-60 -35,-15 0,-10" fill="#3B82F6" opacity="0.7"/>
+    <polygon points="0,-60 35,-15 0,-10" fill="#60A5FA" opacity="0.9"/>
+    <polygon points="-35,-15 0,-10 -25,35" fill="#2563EB" opacity="0.6"/>
+    <polygon points="35,-15 0,-10 25,35" fill="#3B82F6" opacity="0.8"/>
+
+    <!-- Front Prominent Facets (Gold / Amber Accent representing "Wisdom & Effort") -->
+    <polygon points="0,-60 0,-10 -35,-15" fill="#D97706" opacity="0.8"/>
+    <polygon points="0,-60 0,-10 35,-15" fill="#F59E0B" opacity="0.95"/>
+    <polygon points="0,-10 -25,35 -35,-15" fill="#B45309" opacity="0.7"/>
+    <polygon points="0,-10 25,35 35,-15" fill="#FBBF24" opacity="0.9"/>
+
+    <!-- Lower Pyramidal Facets -->
+    <polygon points="0,55 -25,35 0,-10" fill="#D97706" opacity="0.85"/>
+    <polygon points="0,55 25,35 0,-10" fill="#F59E0B" opacity="0.95"/>
+
+    <!-- Sharp Highlight Edges -->
+    <polyline points="0,-60 0,-10 0,55" fill="none" stroke="#FEF3C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="-35,-15 0,-10 35,-15" fill="none" stroke="#FDE68A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="0" y1="-60" x2="-35" y2="-15" stroke="#92400E" stroke-width="1"/>
+    <line x1="0" y1="-60" x2="35" y2="-15" stroke="#FDE68A" stroke-width="1.5"/>
+  </g>
+
+  <!-- Floating Sparkles / Energy Particles representing "Wisdom and Hard Work" -->
+  <g fill="#FBBF24">
+    <!-- Top Left Sparkle -->
+    <path d="M 70,60 Q 70,70 60,70 Q 70,70 70,80 Q 70,70 80,70 Q 70,70 70,60 Z" opacity="0.9"/>
+    <!-- Top Right Sparkle -->
+    <path d="M 175,75 Q 175,82 168,82 Q 175,82 175,89 Q 175,82 182,82 Q 175,82 175,75 Z" opacity="0.8"/>
+    <!-- Bottom Right Sparkle -->
+    <path d="M 160,155 Q 160,162 153,162 Q 160,162 160,169 Q 160,162 167,162 Q 160,162 160,155 Z" opacity="0.7"/>
+    <!-- Small Dots -->
+    <circle cx="85" cy="140" r="2.5" opacity="0.6"/>
+    <circle cx="145" cy="55" r="2" opacity="0.8"/>
+    <circle cx="95" cy="45" r="1.5" opacity="0.5"/>
+  </g>
+
+  <!-- Ground Reflection / Base Shadow -->
+  <ellipse cx="120" cy="180" rx="35" ry="6" fill="#0B0D10" opacity="0.6"/>
+</svg>

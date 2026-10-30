@@ -1,0 +1,92 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="cliffGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D3748"/>
+      <stop offset="100%" stop-color="#1A202C"/>
+    </linearGradient>
+    
+    <linearGradient id="rockFace" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3A475C"/>
+      <stop offset="100%" stop-color="#222B38"/>
+    </linearGradient>
+
+    <linearGradient id="accentOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9F43"/>
+      <stop offset="100%" stop-color="#FF6B6B"/>
+    </linearGradient>
+    
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF9F43" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#FF9F43" stop-opacity="0"/>
+    </linearGradient>
+    
+    <!-- Motion lines filter / style -->
+  </defs>
+
+  <!-- Background Ambience -->
+  <circle cx="120" cy="120" r="90" fill="url(#glowGrad)"/>
+
+  <!-- Steep Cliff / Mountain Side (Symbolizing 陡峭的悬崖) -->
+  <path d="M 20 220 L 20 20 L 70 50 L 50 110 L 90 150 L 60 220 Z" fill="url(#cliffGrad)" opacity="0.6"/>
+  
+  <!-- Main Vertical Rock Face -->
+  <path d="M 180 220 L 175 140 L 200 90 L 165 40 L 185 20 L 220 220 Z" fill="url(#rockFace)"/>
+  
+  <!-- Cliff details / cracks -->
+  <path d="M 185 70 L 192 85 L 188 95" stroke="#151A21" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 178 120 L 190 135" stroke="#151A21" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 182 170 L 170 190 L 185 200" stroke="#151A21" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Motion / Upward Energy Lines (Dynamic Action) -->
+  <g stroke="#FF9F43" stroke-width="1.5" stroke-linecap="round" opacity="0.4">
+    <line x1="110" y1="150" x2="110" y2="120" stroke-dasharray="3 3"/>
+    <line x1="125" y1="110" x2="125" y2="80" stroke-dasharray="3 3"/>
+    <line x1="100" y1="70" x2="100" y2="45" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- Climbing Human Character (Action: 攀爬) -->
+  <g id="climber" transform="translate(10, -5)">
+    
+    <!-- Backpack -->
+    <rect x="112" y="102" width="16" height="22" rx="4" fill="#E17055"/>
+    <path d="M 115 102 L 125 102" stroke="#DFE6E9" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Left Leg (Reaching / Dynamic Step) -->
+    <path d="M 115 124 L 100 150 L 112 155" stroke="#2D3436" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M 100 150 L 112 155" stroke="#FF9F43" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/> <!-- Boot -->
+
+    <!-- Right Leg (Pushing off rock) -->
+    <path d="M 122 124 L 138 105 L 148 115" stroke="#2D3436" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M 138 105 L 148 115" stroke="#FF9F43" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/> <!-- Boot -->
+
+    <!-- Torso (Dynamic lean against wall) -->
+    <path d="M 112 95 C 115 110, 120 115, 122 124" stroke="#0984E3" stroke-width="14" stroke-linecap="round" fill="none"/>
+
+    <!-- Left Arm (Reaching up to grip) -->
+    <path d="M 115 90 L 105 60 L 122 52" stroke="#0984E3" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <circle cx="122" cy="52" r="3.5" fill="#FF9F43"/> <!-- Hand gripping -->
+
+    <!-- Right Arm (Pulling body close) -->
+    <path d="M 125 95 L 140 85 L 155 90" stroke="#0984E3" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <circle cx="155" cy="90" r="3.5" fill="#FF9F43"/> <!-- Hand gripping cliff edge -->
+
+    <!-- Head & Helmet -->
+    <circle cx="123" cy="74" r="9" fill="#FFD32A"/>
+    <!-- Helmet strap / visor detail -->
+    <path d="M 116 73 C 118 78, 128 78, 130 73" stroke="#FFA502" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Cliff Edge Handholds / FootHolds -->
+  <path d="M 152 93 L 158 93" stroke="#FFEAA7" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 119 55 L 126 53" stroke="#FFEAA7" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 145 118 L 152 116" stroke="#FFEAA7" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Summit Goal Indicator (Subtle glowing peak at top) -->
+  <path d="M 175 40 L 185 20 L 195 45 Z" fill="#4A5568"/>
+  <circle cx="185" cy="20" r="4" fill="url(#accentOrange)"/>
+
+</svg>

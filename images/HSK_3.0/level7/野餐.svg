@@ -1,0 +1,59 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Elements (Lake, Grass, Sun) -->
+  <path d="M 0 160 Q 60 140, 120 160 T 240 150 L 240 240 L 0 240 Z" fill="#2E4033"/>
+  <path d="M 0 140 Q 80 125, 160 145 T 240 135 L 240 160 L 0 160 Z" fill="#3B533E"/>
+  
+  <!-- Sparkling Lake in background -->
+  <path d="M 0 100 Q 60 90, 120 105 T 240 95 L 240 135 Q 160 145, 80 125 T 0 140 Z" fill="#1E3342"/>
+  <circle cx="60" cy="115" r="1.5" fill="#64B5F6" opacity="0.8"/>
+  <circle cx="100" cy="110" r="1" fill="#64B5F6" opacity="0.6"/>
+  <circle cx="160" cy="120" r="2" fill="#64B5F6" opacity="0.7"/>
+  <circle cx="190" cy="110" r="1.5" fill="#64B5F6" opacity="0.9"/>
+
+  <!-- Warm spring sun -->
+  <circle cx="195" cy="55" r="22" fill="#FFB74D" opacity="0.2"/>
+  <circle cx="195" cy="55" r="14" fill="#FFB74D" opacity="0.9"/>
+
+  <!-- Picnic Basket & Blanket (Central Iconic Object for 野餐) -->
+  <!-- Blanket -->
+  <path d="M 50 160 L 190 160 L 210 200 L 30 200 Z" fill="#E53935"/>
+  <!-- Blanket Pattern (White stripes) -->
+  <path d="M 75 160 L 95 200 L 115 200 L 95 160 Z" fill="#FFFFFF" opacity="0.9"/>
+  <path d="M 125 160 L 145 200 L 165 200 L 145 160 Z" fill="#FFFFFF" opacity="0.9"/>
+
+  <!-- Picnic Basket -->
+  <!-- Basket Base -->
+  <path d="M 100 155 L 140 155 L 148 190 L 92 190 Z" fill="#D7CCC8"/>
+  <!-- Basket Weave Lines -->
+  <line x1="96" y1="172" x2="144" y2="172" stroke="#8D6E63" stroke-width="2"/>
+  <line x1="93" y1="181" x2="147" y2="181" stroke="#8D6E63" stroke-width="2"/>
+  <line x1="108" y1="155" x2="102" y2="190" stroke="#8D6E63" stroke-width="1.5"/>
+  <line x1="120" y1="155" x2="120" y2="190" stroke="#8D6E63" stroke-width="1.5"/>
+  <line x1="132" y1="155" x2="138" y2="190" stroke="#8D6E63" stroke-width="1.5"/>
+  <!-- Basket Rim -->
+  <rect x="96" y="148" width="48" height="8" rx="2" fill="#BCAAA4"/>
+  <!-- Basket Handle -->
+  <path d="M 106 148 C 106 125, 134 125, 134 148" fill="none" stroke="#6D4C41" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Food Items on Blanket -->
+  <!-- Plate -->
+  <ellipse cx="75" cy="175" rx="14" ry="7" fill="#FAFAFA"/>
+  <!-- Sandwich / Bread on plate -->
+  <path d="M 66 174 L 74 169 L 83 173 L 75 178 Z" fill="#FFCA28"/>
+  <path d="M 68 174 L 74 171 L 81 174 L 74 176 Z" fill="#66BB6A"/>
+
+  <!-- Water Bottle / Thermos -->
+  <rect x="165" y="162" width="12" height="28" rx="3" fill="#42A5F5"/>
+  <rect x="167" y="158" width="8" height="5" rx="1" fill="#FFFFFF"/>
+
+  <!-- Apple -->
+  <circle cx="155" cy="180" r="7" fill="#EF5350"/>
+  <path d="M 155 173 Q 157 170, 159 173" fill="none" stroke="#33691E" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Floating Spring Elements / Leaves -->
+  <path d="M 35 70 Q 42 65, 45 72 Q 38 77, 35 70 Z" fill="#81C784" opacity="0.8"/>
+  <path d="M 85 50 Q 92 45, 95 52 Q 88 57, 85 50 Z" fill="#A5D6A7" opacity="0.8"/>
+  <path d="M 145 80 Q 152 75, 155 82 Q 148 87, 145 80 Z" fill="#66BB6A" opacity="0.7"/>
+</svg>

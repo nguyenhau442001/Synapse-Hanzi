@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient background glow for warmth -->
+  <circle cx="120" cy="120" r="80" fill="#3D2C20" opacity="0.3" filter="blur(20px)"/>
+
+  <!-- Conceptual Scene: Step-mother (jìmǔ) showing genuine care/warmth to a child -->
+  <g transform="translate(0, 15)">
+    <!-- Adult Figure (Stepmother) -->
+    <g id="stepmother">
+      <!-- Body/Torso -->
+      <path d="M 85 155 L 65 195 L 125 195 L 105 155 Z" fill="#3B5998"/>
+      <!-- Neck -->
+      <rect x="90" y="85" width="15" height="15" fill="#E0AC69"/>
+      <!-- Head -->
+      <circle cx="97" cy="75" r="22" fill="#E0AC69"/>
+      <!-- Hair (Modern sleek style) -->
+      <path d="M 75 70 Q 75 50 97 50 Q 119 50 119 70 L 119 90 Q 110 95 97 90 Q 80 95 75 80 Z" fill="#2C2C2C"/>
+      <!-- Warm, kind facial expression - eyes and smile -->
+      <circle cx="91" cy="74" r="2" fill="#2C2C2C"/>
+      <circle cx="103" cy="74" r="2" fill="#2C2C2C"/>
+      <path d="M 94 82 Q 97 86 100 82" stroke="#2C2C2C" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      
+      <!-- Gentle hand reaching out to touch child's shoulder / warm gesture -->
+      <path d="M 105 140 Q 120 145 132 135" stroke="#E0AC69" stroke-width="6" stroke-linecap="round" fill="none"/>
+      <circle cx="132" cy="135" r="4" fill="#E0AC69"/>
+    </g>
+
+    <!-- Child Figure -->
+    <g id="child">
+      <!-- Body/Torso -->
+      <path d="M 145 165 L 130 195 L 175 195 L 165 165 Z" fill="#E06C75"/>
+      <!-- Neck -->
+      <rect x="150" y="95" width="12" height="12" fill="#E0AC69"/>
+      <!-- Head -->
+      <circle cx="156" cy="85" r="17" fill="#E0AC69"/>
+      <!-- Hair -->
+      <path d="M 139 82 Q 139 65 156 65 Q 173 65 173 82 Q 170 92 156 90 Q 142 92 139 82 Z" fill="#4A3B32"/>
+      <!-- Happy expression -->
+      <circle cx="151" cy="84" r="1.5" fill="#2C2C2C"/>
+      <circle cx="161" cy="84" r="1.5" fill="#2C2C2C"/>
+      <path d="M 154 90 Q 156 93 158 90" stroke="#2C2C2C" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Warm uniting accent elements (Soft glowing light/bond, NO abstract hearts) -->
+    <g opacity="0.8">
+      <circle cx="120" cy="110" r="3" fill="#E5C158"/>
+      <circle cx="128" cy="95" r="2" fill="#E5C158"/>
+      <circle cx="112" cy="98" r="1.5" fill="#E5C158"/>
+    </g>
+  </g>
+
+  <!-- Sleek framing detail (Bottom accent bar representing stability/family foundation) -->
+  <rect x="60" y="215" width="120" height="3" rx="1.5" fill="#E5C158" opacity="0.8"/>
+</svg>

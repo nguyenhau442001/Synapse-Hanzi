@@ -1,0 +1,62 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <g id="jujube-tree-and-fruit" transform="translate(0, 0)">
+    <!-- Autumn wind motion lines (subtle context from sentence) -->
+    <path d="M45 75 Q60 70 75 75" fill="none" stroke="#4A5568" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+    <path d="M165 115 Q180 110 195 115" fill="none" stroke="#4A5568" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+    <path d="M60 160 Q75 155 90 160" fill="none" stroke="#4A5568" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+
+    <!-- Tree branches (Bark) -->
+    <path d="M120 200 L120 120 C120 100 100 85 80 80" fill="none" stroke="#5C4033" stroke-width="12" stroke-linecap="round"/>
+    <path d="M120 130 C120 100 145 85 170 80" fill="none" stroke="#5C4033" stroke-width="10" stroke-linecap="round"/>
+    <path d="M100 105 C90 90 70 85 55 90" fill="none" stroke="#5C4033" stroke-width="6" stroke-linecap="round"/>
+    <path d="M145 95 C160 85 180 85 195 95" fill="none" stroke="#5C4033" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Autumn Foliage (Golden/Warm Orange leaves to match autumn theme) -->
+    <circle cx="70" cy="75" r="28" fill="#D97706" opacity="0.8"/>
+    <circle cx="50" cy="95" r="22" fill="#F59E0B" opacity="0.85"/>
+    <circle cx="95" cy="65" r="32" fill="#D97706" opacity="0.9"/>
+    
+    <circle cx="170" cy="70" r="30" fill="#D97706" opacity="0.9"/>
+    <circle cx="195" cy="85" r="24" fill="#F59E0B" opacity="0.85"/>
+    <circle cx="145" cy="60" r="26" fill="#D97706" opacity="0.8"/>
+
+    <circle cx="120" cy="55" r="35" fill="#B45309" opacity="0.85"/>
+
+    <!-- Hanging Ripe Red Jujubes (Quả táo tàu đỏ chín mọng) -->
+    <!-- Jujube 1 (Left branch) -->
+    <line x1="68" y1="92" x2="68" y2="105" stroke="#5C4033" stroke-width="2"/>
+    <ellipse cx="68" cy="113" rx="10" ry="13" fill="#DC2626" transform="rotate(-15 68 113)"/>
+    <path d="M64 107 C66 106 70 106 72 107" fill="none" stroke="#991B1B" stroke-width="1.5" stroke-linecap="round"/>
+    <ellipse cx="66" cy="110" rx="3" ry="5" fill="#EF4444" opacity="0.7" transform="rotate(-15 66 110)"/>
+
+    <!-- Jujube 2 (Center upper) -->
+    <line x1="105" y1="95" x2="107" y2="108" stroke="#5C4033" stroke-width="2"/>
+    <ellipse cx="108" cy="117" rx="11" ry="14" fill="#B91C1C" transform="rotate(10 108 117)"/>
+    <path d="M104 111 C107 110 111 111 113 113" fill="none" stroke="#7F1D1D" stroke-width="1.5" stroke-linecap="round"/>
+    <ellipse cx="105" cy="114" rx="3.5" ry="6" fill="#DC2626" opacity="0.7" transform="rotate(10 105 114)"/>
+
+    <!-- Jujube 3 (Right branch) -->
+    <line x1="160" y1="88" x2="158" y2="102" stroke="#5C4033" stroke-width="2"/>
+    <ellipse cx="157" cy="110" rx="10" ry="13" fill="#EF4444" transform="rotate(-5 157 110)"/>
+    <path d="M153 104 C156 103 160 104 162 106" fill="none" stroke="#991B1B" stroke-width="1.5" stroke-linecap="round"/>
+    <ellipse cx="155" cy="107" rx="3" ry="5" fill="#F87171" opacity="0.7" transform="rotate(-5 155 107)"/>
+
+    <!-- Jujube 4 (Center lower main focus) -->
+    <line x1="135" y1="125" x2="138" y2="140" stroke="#5C4033" stroke-width="2.5"/>
+    <ellipse cx="140" cy="150" rx="13" ry="17" fill="#DC2626" transform="rotate(15 140 150)"/>
+    <path d="M135 143 C139 141 144 143 147 146" fill="none" stroke="#7F1D1D" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="136" cy="146" rx="4" ry="7" fill="#EF4444" opacity="0.75" transform="rotate(15 136 146)"/>
+
+    <!-- Jujube 5 (Lower left) -->
+    <line x1="90" y1="130" x2="87" y2="144" stroke="#5C4033" stroke-width="2"/>
+    <ellipse cx="85" cy="153" rx="11" ry="14" fill="#B91C1C" transform="rotate(-20 85 153)"/>
+    <path d="M81 147 C84 146 88 147 90 150" fill="none" stroke="#7F1D1D" stroke-width="1.5" stroke-linecap="round"/>
+    <ellipse cx="82" cy="150" rx="3.5" ry="6" fill="#DC2626" opacity="0.7" transform="rotate(-20 82 150)"/>
+
+    <!-- Ground indication -->
+    <ellipse cx="120" cy="205" rx="55" ry="6" fill="#2D3748" opacity="0.6"/>
+  </g>
+</svg>

@@ -1,0 +1,92 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A1D24"/>
+      <stop offset="100%" stop-color="#242832"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background decorative elements representing flow of time -->
+  <g opacity="0.15">
+    <path d="M 30,120 Q 90,60 150,120 T 270,120" fill="none" stroke="#60A5FA" stroke-width="2" stroke-dasharray="6 6"/>
+    <path d="M 10,160 Q 70,100 130,160 T 250,160" fill="none" stroke="#F59E0B" stroke-width="1.5"/>
+  </g>
+
+  <!-- Clock/Time Element in background (Abstracting "时" - Time) -->
+  <circle cx="120" cy="110" r="75" fill="none" stroke="#2D333B" stroke-width="3" stroke-dasharray="4 8"/>
+  <circle cx="120" cy="110" r="65" fill="none" stroke="#3A424E" stroke-width="1.5" opacity="0.5"/>
+  
+  <!-- Time markers -->
+  <line x1="120" y1="40" x2="120" y2="46" stroke="#4B5563" stroke-width="2" stroke-linecap="round"/>
+  <line x1="120" y1="174" x2="120" y2="180" stroke="#4B5563" stroke-width="2" stroke-linecap="round"/>
+  <line x1="50" y1="110" x2="56" y2="110" stroke="#4B5563" stroke-width="2" stroke-linecap="round"/>
+  <line x1="184" y1="110" x2="190" y2="110" stroke="#4B5563" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Motion lines indicating progression / "进" (Moving forward) -->
+  <g stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.8">
+    <path d="M 175,85 L 195,75" filter="url(#glow)"/>
+    <path d="M 185,110 L 210,110" filter="url(#glow)"/>
+    <path d="M 175,135 L 195,145" filter="url(#glow)"/>
+  </g>
+
+  <!-- Central Character (Modern professional stepping forward) -->
+  <!-- Body/Torso -->
+  <path d="M 105,135 L 115,100 L 135,105 L 140,135 Z" fill="#3B82F6"/>
+  
+  <!-- Head -->
+  <circle cx="125" cy="82" r="12" fill="#E2E8F0"/>
+  <!-- Hair -->
+  <path d="M 113,80 Q 120,68 135,74 L 137,80 Z" fill="#1E293B"/>
+
+  <!-- Legs walking/stepping forward (Action pose) -->
+  <!-- Back leg -->
+  <path d="M 110,135 L 95,165 L 85,162" fill="none" stroke="#1D4ED8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Front leg -->
+  <path d="M 135,135 L 150,165 L 165,168" fill="none" stroke="#3B82F6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Arms interacting with modern holographic futuristic display / progression interface -->
+  <!-- Back arm -->
+  <path d="M 110,105 L 95,120 L 105,130" fill="none" stroke="#2563EB" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Front arm reaching out dynamically to push/interact with innovation -->
+  <path d="M 130,105 L 155,115 L 175,105" fill="none" stroke="#60A5FA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Hand -->
+  <circle cx="178" cy="103" r="4" fill="#E2E8F0"/>
+
+  <!-- Innovative Object / Modern Hologram (Representing staying current & advancing) -->
+  <g transform="translate(170, 75)">
+    <!-- Glowing Node -->
+    <circle cx="0" cy="0" r="10" fill="url(#goldGrad)" filter="url(#glow)"/>
+    <circle cx="0" cy="0" r="4" fill="#FFFFFF"/>
+    
+    <!-- Orbiting design element -->
+    <ellipse cx="0" cy="0" rx="18" ry="8" fill="none" stroke="#F59E0B" stroke-width="1.5" transform="rotate(-30)" opacity="0.7"/>
+  </g>
+
+  <!-- Floating upward trend / growth elements (Innovation / Progress) -->
+  <path d="M 140,55 L 155,40 L 175,45" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  <polyline points="167,40 175,45 170,53" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Base Ground Line -->
+  <path d="M 60,175 L 180,175" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+  <!-- Ground shadow under footsteps -->
+  <ellipse cx="155" cy="175" rx="20" ry="3" fill="#0F172A" opacity="0.6"/>
+  <ellipse cx="90" cy="175" rx="15" ry="2.5" fill="#0F172A" opacity="0.6"/>
+
+</svg>

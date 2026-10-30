@@ -1,0 +1,49 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Outer glow/aura representing sudden burst of anger (chéngnù) -->
+  <circle cx="120" cy="125" r="75" fill="#FF453A" opacity="0.15"/>
+  <circle cx="120" cy="125" r="55" fill="#FF453A" opacity="0.25"/>
+
+  <!-- Character / Person showing "Thẹn quá hóa giận" (Caught lying, embarrassed + turning to anger) -->
+  <g id="character">
+    <!-- Body & Shoulders -->
+    <path d="M 75 195 C 75 165, 95 155, 120 155 C 145 155, 165 165, 165 195 Z" fill="#2C3E50"/>
+    
+    <!-- Raised fists in anger -->
+    <circle cx="82" cy="145" r="12" fill="#F39C12"/>
+    <circle cx="158" cy="145" r="12" fill="#F39C12"/>
+    
+    <!-- Neck -->
+    <rect x="108" y="135" width="24" height="25" fill="#F39C12"/>
+
+    <!-- Head (Red with embarrassment / xiū) -->
+    <circle cx="120" cy="115" r="42" fill="#E74C3C"/>
+
+    <!-- Angry Eyebrows (Slanted inwards and downwards) -->
+    <polygon points="90,95 110,103 92,108" fill="#1A1D24"/>
+    <polygon points="150,95 130,103 148,108" fill="#1A1D24"/>
+
+    <!-- Eyes (Squinted, furious) -->
+    <line x1="94" y1="112" x2="110" y2="112" stroke="#1A1D24" stroke-width="4" stroke-linecap="round"/>
+    <line x1="130" y1="112" x2="146" y2="112" stroke="#1A1D24" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Gritted teeth / Mouth shouting in anger -->
+    <path d="M 104 130 Q 120 148 136 130 Z" fill="#1A1D24"/>
+    <rect x="108" y="130" width="24" height="6" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Dramatic exposure element: Shattered mask or broken truth indicator floating above -->
+  <g id="shattered-mask-fragments">
+    <!-- Floating broken shards representing the exposed lie -->
+    <polygon points="120,40 132,55 108,55" fill="#576574"/>
+    <polygon points="90,45 102,60 85,55" fill="#8395A7"/>
+    <polygon points="150,45 155,60 138,50" fill="#8395A7"/>
+    
+    <!-- Little motion lines for sudden reaction -->
+    <path d="M 60 90 L 72 95" stroke="#F1C40F" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 180 90 L 168 95" stroke="#F1C40F" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 70 70 L 80 78" stroke="#F1C40F" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 170 70 L 160 78" stroke="#F1C40F" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

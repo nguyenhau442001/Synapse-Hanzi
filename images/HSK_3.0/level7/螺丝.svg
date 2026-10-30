@@ -1,0 +1,35 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 120) rotate(-35)">
+    <!-- Screw Thread Base (Shadow/Inner Layer) -->
+    <path d="M-18,-60 L18,-60 L14,60 L-14,60 Z" fill="#2E3440"/>
+    
+    <!-- Screw Threads (Ridges) -->
+    <path d="M-22,-52 L22,-52 L20,-40 L-20,-40 Z" fill="#D8DEE9"/>
+    <path d="M-20,-40 L20,-40 L18,-28 L-18,-28 Z" fill="#E5E9F0"/>
+    <path d="M-18,-28 L18,-28 L16,-16 L-16,-16 Z" fill="#D8DEE9"/>
+    <path d="M-16,-16 L16,-16 L14,-4 L-14,-4 Z" fill="#E5E9F0"/>
+    <path d="M-14,-4 L14,-4 L12,8 L-12,8 Z" fill="#D8DEE9"/>
+    <path d="M-12,8 L12,8 L10,20 L-10,20 Z" fill="#E5E9F0"/>
+    <path d="M-10,20 L10,20 L8,32 L-8,32 Z" fill="#D8DEE9"/>
+    <path d="M-8,32 L8,32 L6,44 L-6,44 Z" fill="#E5E9F0"/>
+    <path d="M-6,44 L6,44 L4,56 L-4,56 Z" fill="#D8DEE9"/>
+
+    <!-- Thread Highlights for Metallic Sheen -->
+    <rect x="-3" y="-55" width="6" height="110" rx="3" fill="#FFFFFF" opacity="0.25"/>
+
+    <!-- Screw Head (Hexagonal Socket Head Bolt representation) -->
+    <path d="M-32,-60 L32,-60 L38,-78 L-38,-78 Z" fill="#ECEFF4"/>
+    <path d="M-38,-78 L38,-78 L32,-92 L-32,-92 Z" fill="#D8DEE9"/>
+    <rect x="-35" y="-78" width="70" height="18" rx="2" fill="#E5E9F0"/>
+    
+    <!-- Hexagon Socket Recess (Center) -->
+    <polygon points="0,-89 -10,-84 -10,-76 0,-71 10,-76 10,-84" fill="#3B4252"/>
+    <polygon points="0,-87 -7,-83 -7,-77 0,-73 7,-77 7,-83" fill="#2E3440"/>
+  </g>
+
+  <!-- Accent Sparkles / Precision Focus indicators -->
+  <path d="M185,60 L189,68 L197,72 L189,76 L185,84 L181,76 L173,72 L181,68 Z" fill="#D08770" opacity="0.9"/>
+  <path d="M55,160 L58,165 L63,168 L58,171 L55,176 L52,171 L47,168 L52,165 Z" fill="#D08770" opacity="0.6"/>
+</svg>

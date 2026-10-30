@@ -1,0 +1,72 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative background grid/dots for dark modern UI -->
+  <g fill="#2A2F3D" opacity="0.5">
+    <circle cx="40" cy="40" r="1.5"/>
+    <circle cx="80" cy="40" r="1.5"/>
+    <circle cx="120" cy="40" r="1.5"/>
+    <circle cx="160" cy="40" r="1.5"/>
+    <circle cx="200" cy="40" r="1.5"/>
+    
+    <circle cx="40" cy="200" r="1.5"/>
+    <circle cx="80" cy="200" r="1.5"/>
+    <circle cx="120" cy="200" r="1.5"/>
+    <circle cx="160" cy="200" r="1.5"/>
+    <circle cx="200" cy="200" r="1.5"/>
+  </g>
+
+  <!-- Central physical object / scene representing "追溯" (tracing back to origins) -->
+  <!-- Concept: An ancient Chinese bronze vessel (Ding/Guang - symbolizing deep history and roots) being examined and traced backward along an illuminated timeline path into antiquity. -->
+  
+  <g transform="translate(0, 5)">
+    <!-- Timeline /溯 path curving backwards -->
+    <path d="M 120 180 C 70 180 50 130 80 90 C 105 55 170 60 190 35" 
+          fill="none" stroke="#2D3548" stroke-width="6" stroke-linecap="round"/>
+          
+    <path d="M 120 180 C 70 180 50 130 80 90 C 105 55 170 60 190 35" 
+          fill="none" stroke="#F5A623" stroke-width="4" stroke-linecap="round" 
+          stroke-dasharray="8 8" opacity="0.8"/>
+
+    <!-- Origin point nodes on the timeline (past eras) -->
+    <circle cx="80" cy="90" r="5" fill="#1A1D24" stroke="#F5A623" stroke-width="3"/>
+    <circle cx="135" cy="53" r="5" fill="#1A1D24" stroke="#F5A623" stroke-width="3"/>
+
+    <!-- Glowing historical origin node at the very top -->
+    <circle cx="190" cy="35" r="8" fill="#F5A623" opacity="0.3"/>
+    <circle cx="190" cy="35" r="5" fill="#F5A623"/>
+
+    <!-- Magnifying glass / Tracing tool focusing on the ancient artifact -->
+    <!-- Handle -->
+    <line x1="88" y1="162" x2="60" y2="190" stroke="#8C9BAE" stroke-width="6" stroke-linecap="round"/>
+    <!-- Glass Rim -->
+    <circle cx="108" cy="142" r="32" fill="#15181F" stroke="#F5A623" stroke-width="4"/>
+    
+    <!-- Light beam effect from magnifying glass -->
+    <path d="M 90 124 L 60 94" stroke="#F5A623" stroke-width="1.5" opacity="0.4"/>
+    <path d="M 126 124 L 156 94" stroke="#F5A623" stroke-width="1.5" opacity="0.4"/>
+
+    <!-- Ancient Chinese Artifact (Bronze Ding / Vessel symbolizing deep historical roots) inside the focus -->
+    <g transform="translate(108, 142) scale(0.75)">
+      <!-- Vessel body -->
+      <path d="M -22 -10 C -22 14 -12 22 0 22 C 12 22 22 14 22 -10 Z" fill="#D4AF37"/>
+      <!-- Vessel rim -->
+      <ellipse cx="0" cy="-12" rx="25" ry="5" fill="#E6C657"/>
+      <!-- Handles -->
+      <path d="M -23 -16 C -28 -16 -28 -4 -22 -2" fill="none" stroke="#D4AF37" stroke-width="3" stroke-linecap="round"/>
+      <path d="M 23 -16 C 28 -16 28 -4 22 -2" fill="none" stroke="#D4AF37" stroke-width="3" stroke-linecap="round"/>
+      <!-- Legs (3 legs of Ding) -->
+      <path d="M -14 18 L -18 32 C -18 34 -14 34 -12 30 L -8 18" fill="#B38F27"/>
+      <path d="M 14 18 L 18 32 C 18 34 14 34 12 30 L 8 18" fill="#B38F27"/>
+      <path d="M 0 20 L 0 35 C 0 37 3 37 3 35 L 2 20" fill="#B38F27"/>
+      <!-- Ancient decorative pattern line -->
+      <path d="M -16 2 C -8 8 8 8 16 2" fill="none" stroke="#99781B" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    
+    <!-- Floating historical particle/spark hints -->
+    <circle cx="155" cy="80" r="2" fill="#F5A623" opacity="0.7"/>
+    <circle cx="170" cy="50" r="1.5" fill="#F5A623" opacity="0.5"/>
+    <circle cx="105" cy="70" r="2" fill="#F5A623" opacity="0.6"/>
+  </g>
+</svg>

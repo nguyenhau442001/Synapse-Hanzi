@@ -1,40 +1,6 @@
-<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="240">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#1e293b"/>
-    </linearGradient>
-  </defs>
-  <rect width="240" height="240" rx="24" fill="url(#bg)"/>
-  
-  <!-- Table Surface -->
-  <rect x="0" y="160" width="240" height="80" fill="#334155" opacity="0.4"/>
-  
-  <!-- The "What" Mystery: A Cloche/Food Cover -->
-  <g transform="translate(120, 140)">
-    <!-- Plate -->
-    <ellipse cx="0" cy="0" rx="60" ry="15" fill="#475569"/>
-    <!-- Cloche -->
-    <path d="M-50 0 C-50 -40 -30 -60 0 -60 C30 -60 50 -40 50 0 Z" fill="#fbbf24"/>
-    <circle cx="0" cy="-60" r="8" fill="#f59e0b"/>
-    <!-- Steam/Action lines -->
-    <path d="M-20 -70 Q-10 -80 -20 -90" stroke="#38bdf8" stroke-width="3" fill="none" stroke-linecap="round"/>
-    <path d="M10 -75 Q20 -85 10 -95" stroke="#10b981" stroke-width="3" fill="none" stroke-linecap="round"/>
-  </g>
-  
-  <!-- Character/Observer -->
-  <g transform="translate(60, 180)">
-    <circle cx="0" cy="-20" r="25" fill="#fb923c"/>
-    <circle cx="-8" cy="-25" r="4" fill="#0f172a"/>
-    <circle cx="8" cy="-25" r="4" fill="#0f172a"/>
-    <path d="M-10 -15 Q0 -8 10 -15" stroke="#0f172a" stroke-width="3" fill="none"/>
-  </g>
-  
-  <!-- Question Mark implied by shape/expression -->
-  <path d="M180 60 Q210 60 210 90 Q210 110 190 120 L190 130" stroke="#ec4899" stroke-width="8" fill="none" stroke-linecap="round"/>
-  <circle cx="190" cy="145" r="5" fill="#ec4899"/>
-  
-  <!-- Background Accents -->
-  <circle cx="40" cy="50" r="10" fill="#38bdf8" opacity="0.3"/>
-  <circle cx="200" cy="40" r="15" fill="#10b981" opacity="0.2"/>
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+  <rect x="24" y="24" width="52" height="52" rx="8" stroke="#38bdf8" stroke-width="3.8" fill="none"/>
+  <path d="M44 42 C44 36 50 34 54 36 C58 38 58 42 54 46 C52 48 52 52 52 56" stroke="#fb923c" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <circle cx="52" cy="64" r="2.5" fill="#fb923c"/>
 </svg>

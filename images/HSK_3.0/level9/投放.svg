@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient glow for digital ecosystem context -->
+  <circle cx="120" cy="115" r="75" fill="#222733" opacity="0.8"/>
+  <circle cx="120" cy="115" r="50" fill="#2A303C" opacity="0.5"/>
+
+  <!-- Target Platform / Social Media Hub (Central Object) -->
+  <g transform="translate(120, 115)">
+    <!-- Outer radar/broadcast waves -->
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#FF9F43" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4"/>
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#FF9F43" stroke-width="1.5" opacity="0.6"/>
+    
+    <!-- Device / Hub Body -->
+    <rect x="-22" y="-22" width="44" height="44" rx="10" fill="#2D3748" stroke="#FF9F43" stroke-width="2.5"/>
+    
+    <!-- Screen / Digital Core -->
+    <rect x="-14" y="-14" width="28" height="28" rx="6" fill="#1A1D24"/>
+    
+    <!-- Focused Target / Crosshair inside Hub -->
+    <circle cx="0" cy="0" r="8" fill="none" stroke="#FF9F43" stroke-width="2"/>
+    <circle cx="0" cy="0" r="2.5" fill="#FF9F43"/>
+  </g>
+
+  <!-- Dynamic "Tóufàng" Vectors / Precision Deployment Action -->
+  <g>
+    <!-- Top-Left Ad Asset -->
+    <g transform="translate(55, 65)">
+      <rect x="-14" y="-10" width="28" height="20" rx="4" fill="#3B82F6" stroke="#FFFFFF" stroke-width="1.5"/>
+      <circle cx="-5" cy="0" r="3" fill="#FFFFFF"/>
+      <line x1="1" y1="-3" x2="8" y2="-3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+      <line x1="1" y1="3" x2="6" y2="3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <!-- Trajectory from Top-Left to Center -->
+    <path d="M 68 73 Q 94 94 102 104" fill="none" stroke="#3B82F6" stroke-width="2" stroke-dasharray="3 3"/>
+
+    <!-- Top-Right Ad Asset -->
+    <g transform="translate(185, 65)">
+      <rect x="-14" y="-10" width="28" height="20" rx="4" fill="#10B981" stroke="#FFFFFF" stroke-width="1.5"/>
+      <polygon points="-6,-4 -6,4 2,0" fill="#FFFFFF"/>
+      <line x1="4" y1="-3" x2="8" y2="-3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+      <line x1="4" y1="3" x2="8" y2="3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <!-- Trajectory from Top-Right to Center -->
+    <path d="M 172 73 Q 146 94 138 104" fill="none" stroke="#10B981" stroke-width="2" stroke-dasharray="3 3"/>
+
+    <!-- Bottom-Left Ad Asset (Investment/Capital context) -->
+    <g transform="translate(65, 170)">
+      <circle cx="0" cy="0" r="12" fill="#F59E0B" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="0" y="4" font-family="sans-serif" font-weight="bold" font-size="12" fill="#FFFFFF" text-anchor="middle">$</text>
+    </g>
+    <!-- Trajectory from Bottom-Left to Center -->
+    <path d="M 75 160 Q 98 138 106 128" fill="none" stroke="#F59E0B" stroke-width="2" stroke-dasharray="3 3"/>
+
+    <!-- Bottom-Right Ad Asset -->
+    <g transform="translate(175, 170)">
+      <rect x="-12" y="-12" width="24" height="24" rx="5" fill="#EC4899" stroke="#FFFFFF" stroke-width="1.5"/>
+      <path d="M-5 2 L-1 -2 L3 2 L7 -4" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <!-- Trajectory from Bottom-Right to Center -->
+    <path d="M 163 160 Q 142 138 134 128" fill="none" stroke="#EC4899" stroke-width="2" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- Impact / Deployment Sparkles at Center -->
+  <g transform="translate(120, 115)">
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#FF9F43" stroke-width="1.5" opacity="0.8"/>
+    <!-- Cardinal Sparkles -->
+    <path d="M 0 -34 L 0 -28" stroke="#FF9F43" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 0 28 L 0 34" stroke="#FF9F43" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M -34 0 L -28 0" stroke="#FF9F43" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 28 0 L 34 0" stroke="#FF9F43" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>

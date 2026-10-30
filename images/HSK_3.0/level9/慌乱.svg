@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Person in a state of panic/confusion -->
+  <g transform="translate(120, 120)">
+    <!-- Body -->
+    <path d="M-30 80 L-30 20 Q-30 -10 0 -10 Q30 -10 30 20 L30 80 Z" fill="#4A5568"/>
+    
+    <!-- Arms in flailing/panicked motion -->
+    <path d="M-30 20 L-60 0 M30 20 L60 40" stroke="#A0AEC0" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Head -->
+    <circle cx="0" cy="-30" r="25" fill="#E2E8F0"/>
+    
+    <!-- Panicked facial expression -->
+    <path d="M-10 -35 L-5 -30 M-5 -35 L-10 -30" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+    <path d="M10 -35 L5 -30 M5 -35 L10 -30" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+    <path d="M-8 -15 Q0 -22 8 -15" stroke="#1A1D24" stroke-width="3" stroke-linecap="round" fill="none"/>
+    
+    <!-- Disarray elements: scattered papers/objects -->
+    <rect x="40" y="-20" width="20" height="25" rx="2" fill="#F6AD55" transform="rotate(20)"/>
+    <rect x="-60" y="20" width="25" height="15" rx="2" fill="#F6AD55" transform="rotate(-30)"/>
+    <rect x="10" y="60" width="30" height="20" rx="2" fill="#F6AD55" transform="rotate(10)"/>
+    
+    <!-- Motion lines indicating chaos -->
+    <path d="M-50 -50 L-35 -35" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+    <path d="M50 -50 L35 -35" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

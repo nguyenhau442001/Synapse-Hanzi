@@ -1,0 +1,54 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 15)">
+    <!-- Sky & Background glow -->
+    <circle cx="180" cy="70" r="30" fill="#FFB74D" opacity="0.15"/>
+    
+    <!-- Distant mountain range (Background layer) -->
+    <path d="M10 130 L50 85 L95 135 L145 75 L190 120 L230 80 L230 160 L10 160 Z" fill="#263238" opacity="0.7"/>
+    <path d="M50 85 L95 135 L145 75" fill="none" stroke="#4DB6AC" stroke-width="1.5" stroke-opacity="0.3"/>
+
+    <!-- Mid-ground mountain range (Primary layer - 山岭) -->
+    <path d="M-10 160 L35 95 L85 150 L135 85 L185 140 L225 100 L250 160 Z" fill="#2E4053"/>
+    
+    <!-- Mountain ridge highlights (Crisp vector geometric facets) -->
+    <path d="M35 95 L50 120 L85 150 L65 125 Z" fill="#37474F"/>
+    <path d="M135 85 L150 115 L185 140 L160 110 Z" fill="#37474F"/>
+
+    <!-- Lush green slopes (翠绿山岭) -->
+    <path d="M15 150 L35 95 L65 130 Z" fill="#2E7D32" opacity="0.8"/>
+    <path d="M110 150 L135 85 L165 120 Z" fill="#388E3C" opacity="0.9"/>
+    <path d="M175 145 L185 140 L210 165 Z" fill="#2E7D32" opacity="0.85"/>
+    
+    <!-- Peaks snow/sun caps -->
+    <path d="M35 95 L43 110 L28 115 Z" fill="#E0F2F1" opacity="0.9"/>
+    <path d="M135 85 L143 100 L128 105 Z" fill="#E0F2F1" opacity="0.9"/>
+
+    <!-- Winding High-speed Railway (高速铁路蜿蜒穿行) -->
+    <!-- Railway track glow/shadow -->
+    <path d="M 20 165 Q 60 135, 95 155 T 180 135 Q 210 120, 225 130" fill="none" stroke="#1A1D24" stroke-width="6" stroke-linecap="round"/>
+    <!-- Railway main line -->
+    <path d="M 20 165 Q 60 135, 95 155 T 180 135 Q 210 120, 225 130" fill="none" stroke="#FFA726" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Train crossing through the mountains -->
+    <g transform="translate(115, 138)">
+      <rect x="-12" y="-4" width="24" height="8" rx="3" fill="#ECEFF1"/>
+      <!-- Train windows -->
+      <rect x="-8" y="-3" width="4" height="4" rx="1" fill="#263238"/>
+      <rect x="-2" y="-3" width="4" height="4" rx="1" fill="#263238"/>
+      <rect x="4" y="-3" width="4" height="4" rx="1" fill="#263238"/>
+      <!-- Motion light beam -->
+      <path d="M 12 0 L 20 0" stroke="#FFB74D" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Foreground terrain base -->
+    <path d="M0 160 L240 160 L240 210 L0 210 Z" fill="#1A1D24"/>
+    
+    <!-- Atmospheric trees/dots for scale -->
+    <circle cx="75" cy="153" r="2" fill="#4DB6AC"/>
+    <circle cx="82" cy="156" r="2.5" fill="#2E7D32"/>
+    <circle cx="160" cy="142" r="2" fill="#4DB6AC"/>
+    <circle cx="166" cy="145" r="3" fill="#388E3C"/>
+  </g>
+</svg>

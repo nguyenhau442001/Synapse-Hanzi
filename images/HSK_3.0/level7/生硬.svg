@@ -1,0 +1,30 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Representing "生硬" (stiff/mechanical/unnatural) through a wooden marionette puppet -->
+  <!-- The puppet is posed in an awkward, rigid, and unnatural posture to convey "gượng gạo" -->
+  
+  <g transform="translate(120, 120)">
+    <!-- Puppet Body -->
+    <path d="M-15 -40 L15 -40 L10 20 L-10 20 Z" fill="#FFB347"/>
+    
+    <!-- Stiff Arms -->
+    <path d="M-15 -30 L-45 -10" stroke="#FFB347" stroke-width="8" stroke-linecap="round"/>
+    <path d="M15 -30 L45 -10" stroke="#FFB347" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Stiff Legs -->
+    <path d="M-8 20 L-20 60" stroke="#FFB347" stroke-width="8" stroke-linecap="round"/>
+    <path d="M8 20 L20 60" stroke="#FFB347" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Head -->
+    <circle cx="0" cy="-60" r="20" fill="#FFB347"/>
+    
+    <!-- Control Strings (Representing the forced, mechanical nature) -->
+    <path d="M-30 -80 L-15 -40" stroke="#7D8590" stroke-width="2"/>
+    <path d="M30 -80 L15 -40" stroke="#7D8590" stroke-width="2"/>
+    <path d="M0 -90 L0 -60" stroke="#7D8590" stroke-width="2"/>
+    
+    <!-- Control Bar -->
+    <path d="M-40 -85 L40 -85" stroke="#E0E0E0" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

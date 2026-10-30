@@ -1,0 +1,48 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient glow representing sound waves -->
+  <path d="M70 120 Q60 100 70 80" stroke="#3A4454" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M55 130 Q40 100 55 70" stroke="#3A4454" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <path d="M170 120 Q180 100 170 80" stroke="#3A4454" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M185 130 Q200 100 185 70" stroke="#3A4454" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.4"/>
+
+  <!-- Focused Sound Waves (Magnetic, penetrating voice concept) -->
+  <path d="M85 105 Q75 120 85 135" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M155 105 Q165 120 155 135" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- Neck/Throat Base and Shoulders -->
+  <path d="M75 210 C75 170 95 160 120 160 C145 160 165 170 165 210 Z" fill="#2B3240"/>
+  
+  <!-- Neck Column -->
+  <path d="M92 165 C92 135 100 115 120 115 C140 115 148 135 148 165 Z" fill="#3B4659"/>
+
+  <!-- Vocal Cords / Throat Anatomy Focus (Glowing gold accent representing "magnetic/penetrating voice") -->
+  <g>
+    <!-- Thyroid cartilage shape -->
+    <path d="M105 130 L135 130 L140 148 L100 148 Z" fill="#242B35"/>
+    <path d="M112 134 L128 134 L132 144 L108 144 Z" fill="#1A1D24"/>
+    <!-- Glowing Vibe / Vocal Vibration Source -->
+    <ellipse cx="120" cy="139" rx="8" ry="4" fill="#F59E0B"/>
+    <ellipse cx="120" cy="139" rx="14" ry="7" fill="#F59E0B" opacity="0.3"/>
+  </g>
+
+  <!-- Stylized Microphone representing singing/voice -->
+  <!-- Stand / Base rod -->
+  <rect x="117" y="145" width="6" height="65" rx="3" fill="#64748B"/>
+  
+  <!-- Microphone Head U-bracket -->
+  <path d="M106 68 V85 C106 97 134 97 134 85 V68" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" fill="none"/>
+  
+  <!-- Microphone Capsule (Modern Flat Style) -->
+  <rect x="108" y="52" width="24" height="38" rx="12" fill="#38BDF8"/>
+  <!-- Highlights on mic -->
+  <path d="M112 58 H128" stroke="#E0F2FE" stroke-width="3" stroke-linecap="round"/>
+  <path d="M112 66 H124" stroke="#E0F2FE" stroke-width="3" stroke-linecap="round"/>
+  <path d="M112 74 H128" stroke="#E0F2FE" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Sound emission upward from mic -->
+  <path d="M120 40 V30" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  <path d="M105 38 L98 30" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  <path d="M135 38 L142 30" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+</svg>

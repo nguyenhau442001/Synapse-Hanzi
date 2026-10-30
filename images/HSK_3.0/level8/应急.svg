@@ -1,0 +1,39 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for emergency context -->
+  <circle cx="120" cy="120" r="70" fill="#FF5722" opacity="0.08"/>
+
+  <!-- Central Physical Object: Emergency Response Beacon / Alarm Light -->
+  <g transform="translate(0, 5)">
+    <!-- Base stand -->
+    <path d="M90 175 L150 175 L140 155 L100 155 Z" fill="#4B5563"/>
+    <rect x="105" y="145" width="30" height="12" rx="3" fill="#374151"/>
+    
+    <!-- Main Body Housing -->
+    <path d="M95 95 L145 95 C150 95, 155 100, 155 105 L155 145 C155 150, 150 155, 145 155 L95 155 C90 155, 85 150, 85 145 L85 105 C85 100, 90 95, 95 95 Z" fill="#2D3748"/>
+    
+    <!-- Metallic trim/vents -->
+    <line x1="95" y1="110" x2="145" y2="110" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+    <line x1="95" y1="125" x2="145" y2="125" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+    <line x1="95" y1="140" x2="145" y2="140" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Dome Light (High-visibility orange/red emergency strobe) -->
+    <path d="M92 95 C92 70, 148 70, 148 95 Z" fill="#FF5722"/>
+    
+    <!-- Dome specular highlight -->
+    <path d="M110 77 C115 75, 122 75, 127 77 C125 76, 115 76, 110 77 Z" fill="#FFE0B2" opacity="0.8"/>
+    <ellipse cx="120" cy="82" rx="14" ry="7" fill="#FF8A65" opacity="0.6"/>
+
+    <!-- Action signal waves (Indicating active emergency response / alert) -->
+    <path d="M68 68 C76 58, 88 52, 100 48" stroke="#FF5722" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <path d="M172 68 C164 58, 152 52, 140 48" stroke="#FF5722" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <path d="M52 95 C62 85, 78 78, 92 75" stroke="#FF5722" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+    <path d="M188 95 C178 85, 162 78, 148 75" stroke="#FF5722" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+    
+    <!-- Top central signal emission point -->
+    <circle cx="120" cy="42" r="3" fill="#FF5722"/>
+    <path d="M120 48 L120 36" stroke="#FF5722" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

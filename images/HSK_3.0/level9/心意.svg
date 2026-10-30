@@ -1,0 +1,89 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Definitions for shadows and gradients -->
+  <defs>
+    <linearGradient id="scarfGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF7A00"/>
+      <stop offset="100%" stop-color="#E55A00"/>
+    </linearGradient>
+    <linearGradient id="scarfGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFA834"/>
+      <stop offset="100%" stop-color="#FF7A00"/>
+    </linearGradient>
+    <linearGradient id="bgGlow" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#2D333F" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#1A1D24" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient background lighting representing care/warmth -->
+  <circle cx="120" cy="120" r="80" fill="url(#bgGlow)"/>
+
+  <!-- Main Object Group with drop shadow -->
+  <g filter="url(#dropShadow)">
+    
+    <!-- Woven Scarf Base (Coiled/Draped layout forming a thoughtful heart-like organic shape without using abstract heart symbols) -->
+    <!-- Hanging fringe left -->
+    <path d="M 75 140 L 70 185 L 82 187 L 88 142 Z" fill="#E55A00"/>
+    <path d="M 82 187 L 85 194 M 78 186 L 80 193 M 73 185 L 75 192" stroke="#FFA834" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Hanging fringe right -->
+    <path d="M 165 140 L 170 185 L 158 187 L 152 142 Z" fill="#D54A00"/>
+    <path d="M 158 187 L 155 194 M 162 186 L 160 193 M 167 185 L 165 192" stroke="#FFA834" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Main Loop / Body of the scarf -->
+    <!-- Back loop fold -->
+    <path d="M 85 85 C 85 65 155 65 155 85 C 155 105 130 115 120 125 C 110 115 85 105 85 85 Z" fill="url(#scarfGrad2)"/>
+    
+    <!-- Detailed handmade knit texture lines (cross-hatch/V-stitches) -->
+    <g stroke="#FFA834" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.6">
+      <!-- Left loop strand -->
+      <path d="M 85 100 Q 80 120 95 145"/>
+      <path d="M 93 105 Q 90 122 102 143"/>
+      <!-- Right loop strand -->
+      <path d="M 155 100 Q 160 120 145 145"/>
+      <path d="M 147 105 Q 150 122 138 143"/>
+    </g>
+
+    <!-- Front overlapping drape -->
+    <path d="M 80 115 C 75 140 100 165 120 168 C 140 165 165 140 160 115 C 145 125 135 130 120 130 C 105 130 95 125 80 115 Z" fill="url(#scarfGrad)"/>
+
+    <!-- Detailed knit stitch patterns on the front fold (representing handmade care/patience) -->
+    <g stroke="#FFC078" stroke-width="2" stroke-linecap="round" fill="none">
+      <!-- Row of V-stitches -->
+      <path d="M 92 125 l 4 5 l 4 -5 M 100 125 l 4 5 l 4 -5 M 108 125 l 4 5 l 4 -5 M 116 125 l 4 5 l 4 -5 M 124 125 l 4 5 l 4 -5 M 132 125 l 4 5 l 4 -5 M 140 125 l 4 5 l 4 -5"/>
+      <path d="M 96 135 l 4 5 l 4 -5 M 104 135 l 4 5 l 4 -5 M 112 135 l 4 5 l 4 -5 M 120 135 l 4 5 l 4 -5 M 128 135 l 4 5 l 4 -5 M 136 135 l 4 5 l 4 -5"/>
+    </g>
+
+    <!-- Knitting Needles crossing behind/through the scarf to emphasize "hand-woven / handmade sincerity" (亲手编织) -->
+    <!-- Needle 1 (Top-Left to Bottom-Right) -->
+    <g>
+      <line x1="55" y1="55" x2="185" y2="165" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+      <!-- Needle Point -->
+      <path d="M 180 161 L 189 169 L 185 173 Z" fill="#A0AEC0"/>
+      <!-- Needle Knob -->
+      <circle cx="55" cy="55" r="5" fill="#FFA834"/>
+    </g>
+
+    <!-- Needle 2 (Top-Right to Bottom-Left) -->
+    <g>
+      <line x1="185" y1="55" x2="55" y2="165" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+      <!-- Needle Point -->
+      <path d="M 60 161 L 51 169 L 55 173 Z" fill="#A0AEC0"/>
+      <!-- Needle Knob -->
+      <circle cx="185" cy="55" r="5" fill="#FFA834"/>
+    </g>
+
+  </g>
+
+  <!-- Subtle glowing warmth highlights representing sincerity/thoughtfulness (心意) -->
+  <circle cx="120" cy="95" r="3" fill="#FFE0B2" opacity="0.8"/>
+  <circle cx="105" cy="110" r="2" fill="#FFE0B2" opacity="0.6"/>
+  <circle cx="135" cy="110" r="2" fill="#FFE0B2" opacity="0.6"/>
+
+</svg>

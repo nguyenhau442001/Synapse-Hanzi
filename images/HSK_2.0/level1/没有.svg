@@ -1,32 +1,5 @@
-<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#1e293b"/>
-    </linearGradient>
-  </defs>
-  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
-  
-  <!-- Table Surface -->
-  <rect x="20" y="160" width="200" height="15" rx="4" fill="#334155"/>
-  
-  <!-- Open Wallet -->
-  <path d="M70 160 L170 160 L165 110 L75 110 Z" fill="#fb923c"/>
-  <path d="M70 160 L170 160 L160 145 L80 145 Z" fill="#ea580c"/>
-  <path d="M75 110 L80 145 L160 145 L165 110 Z" fill="#f59e0b"/>
-  
-  <!-- Empty Interior Detail -->
-  <rect x="85" y="115" width="70" height="25" rx="2" fill="#0f172a" opacity="0.3"/>
-  
-  <!-- Character Hands (Expressing "None") -->
-  <path d="M40 180 C30 150 50 130 70 140" stroke="#fcd34d" stroke-width="8" stroke-linecap="round" fill="none"/>
-  <path d="M200 180 C210 150 190 130 170 140" stroke="#fcd34d" stroke-width="8" stroke-linecap="round" fill="none"/>
-  
-  <!-- Floating Sparkles/Atmosphere -->
-  <circle cx="50" cy="90" r="3" fill="#38bdf8"/>
-  <circle cx="190" cy="80" r="2" fill="#10b981"/>
-  <circle cx="120" cy="70" r="4" fill="#ec4899"/>
-  
-  <!-- Wallet Stitching Detail -->
-  <path d="M75 110 L165 110" stroke="#fbbf24" stroke-width="2" stroke-dasharray="4 4"/>
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+  <circle cx="50" cy="50" r="28" stroke="#f43f5e" stroke-width="4" fill="none"/>
+  <line x1="30" y1="70" x2="70" y2="30" stroke="#f43f5e" stroke-width="4" stroke-linecap="round"/>
 </svg>

@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient background glow representing heavy internal emotion -->
+  <circle cx="120" cy="120" r="70" fill="#2D2235" opacity="0.6"/>
+
+  <!-- Character representing self-blame/remorse (zìzé) -->
+  <g transform="translate(0, 10)">
+    <!-- Drooped shoulders / slumped posture body base -->
+    <!-- Torso and jacket/shirt -->
+    <path d="M 80 160 Q 120 135 160 160 L 175 205 Q 120 215 65 205 Z" fill="#2A3445"/>
+    
+    <!-- Neck -->
+    <rect x="110" y="90" width="20" height="25" rx="5" fill="#E8B89D"/>
+    
+    <!-- Head in bowed, hands-covering-face remorseful pose -->
+    <g transform="translate(120, 85)">
+      <!-- Head/Hair -->
+      <circle cx="0" cy="0" r="28" fill="#364156"/>
+      <!-- Face profile/skin showing underneath -->
+      <path d="M -10 5 Q 0 15 12 5 Q 15 -10 5 -15 Q -5 -15 -10 5 Z" fill="#E8B89D"/>
+
+      <!-- Overlapping hands covering the face (classic gesture of deep regret/shame) -->
+      <path d="M -18 -5 C -15 15 15 15 18 -5 C 10 -2 5 2 0 -2 C -5 2 -10 -2 -18 -5 Z" fill="#E8B89D"/>
+      <!-- Fingers detail -->
+      <path d="M -12 2 C -5 8 5 8 12 2" stroke="#D19A7A" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <path d="M -8 -2 C -3 3 3 3 8 -2" stroke="#D19A7A" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- Slumped arms wrapping inward -->
+    <path d="M 85 130 C 95 155 110 145 120 120 C 130 145 145 155 155 130" fill="none" stroke="#2A3445" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Visual metaphors of internal heavy burden / weight above -->
+  <g transform="translate(0, -5)">
+    <!-- Heavy emotional cloud/weight pressing down -->
+    <path d="M 90 45 C 90 35 110 35 120 40 C 130 35 150 35 150 45 C 160 45 165 55 155 65 C 160 75 145 85 135 75 C 125 85 115 85 105 75 C 95 85 80 75 85 65 C 75 55 80 45 90 45 Z" fill="#3E4C63" opacity="0.5"/>
+    
+    <!-- Focus accent: Subtle golden/amber emotional distress aura / teardrop or heavy thoughts -->
+    <path d="M 120 50 Q 125 60 120 68 Q 115 60 120 50 Z" fill="#F39C12" opacity="0.9"/>
+  </g>
+
+  <!-- Ground shadow -->
+  <ellipse cx="120" cy="210" rx="45" ry="6" fill="#111317"/>
+</svg>

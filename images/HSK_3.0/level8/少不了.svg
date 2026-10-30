@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative festive table runner / warm glow background -->
+  <circle cx="120" cy="130" r="70" fill="#252A34"/>
+  <ellipse cx="120" cy="170" rx="75" ry="25" fill="#E65100" opacity="0.15"/>
+
+  <!-- Traditional Bamboo Steamer (Zhengli) Base/Body -->
+  <!-- Steamer Rim Back -->
+  <ellipse cx="120" cy="115" rx="64" ry="18" fill="#B26A2D"/>
+  <ellipse cx="120" cy="113" rx="60" ry="15" fill="#3E2723"/>
+
+  <!-- Steamer Body -->
+  <path d="M56 115 C56 145, 65 160, 120 160 C175 160, 184 145, 184 115 Z" fill="#D78F42"/>
+  
+  <!-- Bamboo slats/lines -->
+  <path d="M56 125 C80 140, 160 140, 184 125" stroke="#B26A2D" stroke-width="2" fill="none"/>
+  <path d="M57 138 C80 152, 160 152, 183 138" stroke="#B26A2D" stroke-width="2" fill="none"/>
+  <line x1="90" y1="120" x2="87" y2="152" stroke="#B26A2D" stroke-width="1.5"/>
+  <line x1="120" y1="120" x2="120" y2="155" stroke="#B26A2D" stroke-width="1.5"/>
+  <line x1="150" y1="120" x2="153" y2="152" stroke="#B26A2D" stroke-width="1.5"/>
+
+  <!-- Steamer Rim Front -->
+  <ellipse cx="120" cy="115" rx="64" ry="16" fill="#F4A261"/>
+  <ellipse cx="120" cy="113" rx="60" ry="13" fill="#FFE0B2"/>
+
+  <!-- Steam/Aroma Wisps -->
+  <path d="M95 85 C90 75, 105 65, 100 50" stroke="#FFE0B2" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <path d="M120 80 C125 70, 115 60, 122 45" stroke="#FFE0B2" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M145 85 C150 75, 135 65, 140 50" stroke="#FFE0B2" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.4"/>
+
+  <!-- Traditional Chinese Dumplings (Jiaozi) inside the steamer -->
+  <!-- Background Dumplings -->
+  <path d="M85 112 C80 100, 95 90, 105 105 Z" fill="#FDF6E2"/>
+  <path d="M135 112 C140 100, 125 90, 115 105 Z" fill="#FDF6E2"/>
+
+  <!-- Central Highlight Dumpling -->
+  <path d="M90 115 C90 92, 150 92, 150 115 C140 120, 100 120, 90 115 Z" fill="#FFFDF9"/>
+  <!-- Dumpling Pleats (Crimp details) -->
+  <path d="M102 108 C107 106, 112 108, 115 105" stroke="#E0C39E" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M115 105 C120 103, 125 105, 128 102" stroke="#E0C39E" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M128 102 C133 100, 138 102, 141 99" stroke="#E0C39E" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- Dumpling Base Shadow -->
+  <path d="M90 115 C100 120, 140 120, 150 115 C145 118, 95 118, 90 115 Z" fill="#E6D5B8"/>
+
+  <!-- Focus / Accent Glow (Golden warmth) -->
+  <circle cx="120" cy="110" r="3" fill="#FFC107"/>
+</svg>

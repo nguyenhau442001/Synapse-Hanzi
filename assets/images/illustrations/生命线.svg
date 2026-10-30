@@ -1,0 +1,22 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Mountain landscape background -->
+  <path d="M0 240 L0 120 L60 80 L120 140 L180 90 L240 130 L240 240 Z" fill="#2C313C"/>
+  <path d="M0 240 L40 150 L90 190 L150 160 L210 200 L240 180 L240 240 Z" fill="#363C4A"/>
+  
+  <!-- The winding road (Life line) -->
+  <path d="M10 220 C 40 220, 60 180, 80 170 C 100 160, 120 180, 140 170 C 160 160, 180 120, 230 110" stroke="#FFB84D" stroke-width="8" stroke-linecap="round" fill="none"/>
+  
+  <!-- Supply truck on the road -->
+  <g transform="translate(110, 155) rotate(-15)">
+    <rect x="-12" y="-8" width="24" height="16" rx="2" fill="#FFB84D"/>
+    <rect x="-14" y="-10" width="8" height="12" rx="1" fill="#E0A030"/>
+    <circle cx="-8" cy="10" r="4" fill="#1A1D24" stroke="#FFB84D" stroke-width="2"/>
+    <circle cx="8" cy="10" r="4" fill="#1A1D24" stroke="#FFB84D" stroke-width="2"/>
+  </g>
+  
+  <!-- Supply crates -->
+  <rect x="40" y="190" width="12" height="12" rx="1" fill="#FFB84D" opacity="0.8"/>
+  <rect x="55" y="195" width="10" height="10" rx="1" fill="#FFB84D" opacity="0.6"/>
+</svg>

@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground -->
+  <path d="M40 190 L200 190" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Collapsing Figure (The Body) -->
+  <g transform="translate(120, 185)">
+    <!-- Legs (Buckling) -->
+    <path d="M-15 0 L-25 -40" stroke="#FFB74D" stroke-width="8" stroke-linecap="round"/>
+    <path d="M15 0 L5 -40" stroke="#FFB74D" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Torso (Slumping forward) -->
+    <path d="M-20 -40 L20 -40" stroke="#FFB74D" stroke-width="8" stroke-linecap="round" transform="rotate(-15)"/>
+    
+    <!-- Head (Drooping) -->
+    <circle cx="0" cy="-70" r="15" fill="#FFB74D"/>
+    
+    <!-- Arms (Hanging limp) -->
+    <path d="M-20 -40 L-35 -10" stroke="#FFB74D" stroke-width="6" stroke-linecap="round"/>
+    <path d="M20 -40 L35 -10" stroke="#FFB74D" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Visual motion/impact lines indicating collapse -->
+  <path d="M90 150 L100 160" stroke="#718096" stroke-width="3" stroke-linecap="round"/>
+  <path d="M150 150 L140 160" stroke="#718096" stroke-width="3" stroke-linecap="round"/>
+</svg>

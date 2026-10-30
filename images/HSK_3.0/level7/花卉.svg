@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 120)">
+    <!-- Elegant Modern Planter / Botanical Display Base -->
+    <path d="M-45,60 L45,60 L35,85 L-35,85 Z" fill="#2D333F"/>
+    <ellipse cx="0" cy="60" rx="45" ry="8" fill="#3B4252"/>
+    <rect x="-55" y="85" width="110" height="8" rx="4" fill="#E5C07B"/>
+
+    <!-- Decorative Stems and Foliage -->
+    <path d="M-20,60 C-30,20 -50,-10 -70,-30" fill="none" stroke="#98C379" stroke-width="4" stroke-linecap="round"/>
+    <path d="M20,60 C30,20 50,-10 70,-30" fill="none" stroke="#98C379" stroke-width="4" stroke-linecap="round"/>
+    <path d="M0,60 C0,10 0,-30 0,-60" fill="none" stroke="#98C379" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Leaves -->
+    <path d="M-15,30 C-35,25 -45,5 -35,-5 C-25,-15 -5,15 -15,30 Z" fill="#98C379"/>
+    <path d="M15,30 C35,25 45,5 35,-5 C25,-15 5,15 15,30 Z" fill="#98C379"/>
+    
+    <!-- Central Main Flower (Orchid / Exotic Bloom motif) -->
+    <g transform="translate(0, -65)">
+      <!-- Outer Petals -->
+      <ellipse cx="0" cy="-25" rx="16" ry="25" fill="#E06C75" transform="rotate(0 0 -25)"/>
+      <ellipse cx="0" cy="-25" rx="16" ry="25" fill="#C678DD" transform="rotate(72 0 -25)"/>
+      <ellipse cx="0" cy="-25" rx="16" ry="25" fill="#E06C75" transform="rotate(144 0 -25)"/>
+      <ellipse cx="0" cy="-25" rx="16" ry="25" fill="#C678DD" transform="rotate(216 0 -25)"/>
+      <ellipse cx="0" cy="-25" rx="16" ry="25" fill="#E06C75" transform="rotate(288 0 -25)"/>
+      
+      <!-- Inner Core / Stamen -->
+      <circle cx="0" cy="0" r="12" fill="#E5C07B"/>
+      <circle cx="0" cy="0" r="6" fill="#D19A66"/>
+    </g>
+
+    <!-- Left Secondary Flower -->
+    <g transform="translate(-60, -40) scale(0.65)">
+      <ellipse cx="0" cy="-20" rx="14" ry="22" fill="#61AFEF" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-20" rx="14" ry="22" fill="#56B6C2" transform="rotate(72)"/>
+      <ellipse cx="0" cy="-20" rx="14" ry="22" fill="#61AFEF" transform="rotate(144)"/>
+      <ellipse cx="0" cy="-20" rx="14" ry="22" fill="#56B6C2" transform="rotate(216)"/>
+      <ellipse cx="0" cy="-20" rx="14" ry="22" fill="#61AFEF" transform="rotate(288)"/>
+      <circle cx="0" cy="0" r="10" fill="#E5C07B"/>
+    </g>
+
+    <!-- Right Secondary Flower -->
+    <g transform="translate(60, -40) scale(0.65)">
+      <ellipse cx="0" cy="-20" rx="14" ry="22" fill="#D19A66" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-20" rx="14" ry="22" fill="#E5C07B" transform="rotate(72)"/>
+      <ellipse cx="0" cy="-20" rx="14" ry="22" fill="#D19A66" transform="rotate(144)"/>
+      <ellipse cx="0" cy="-20" rx="14" ry="22" fill="#E5C07B" transform="rotate(216)"/>
+      <ellipse cx="0" cy="-20" rx="14" ry="22" fill="#D19A66" transform="rotate(288)"/>
+      <circle cx="0" cy="0" r="10" fill="#E06C75"/>
+    </g>
+  </g>
+</svg>

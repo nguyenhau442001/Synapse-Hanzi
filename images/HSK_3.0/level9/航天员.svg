@@ -1,0 +1,75 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle Space Background Elements (Stars) -->
+  <circle cx="50" cy="60" r="1" fill="#FFFFFF" opacity="0.4"/>
+  <circle cx="190" cy="50" r="1.5" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="210" cy="180" r="1" fill="#FFFFFF" opacity="0.5"/>
+  <circle cx="40" cy="190" r="1.2" fill="#FFFFFF" opacity="0.7"/>
+  <circle cx="100" cy="40" r="0.8" fill="#FFFFFF" opacity="0.3"/>
+  <circle cx="200" cy="110" r="1" fill="#FFFFFF" opacity="0.5"/>
+  
+  <!-- Distant Planet / Celestial Body -->
+  <circle cx="195" cy="140" r="35" fill="#242B38"/>
+  <path d="M 162 125 Q 195 145 228 125" stroke="#323C4E" stroke-width="3" fill="none" opacity="0.6"/>
+  
+  <!-- Astronaut (Main Subject) -->
+  <g transform="translate(120, 125)">
+    <!-- Backpack / Life Support System -->
+    <rect x="-24" y="-22" width="48" height="42" rx="8" fill="#2E3748"/>
+    <rect x="-18" y="-16" width="36" height="30" rx="4" fill="#222A36"/>
+    
+    <!-- Torso / Spacesuit -->
+    <path d="M -22 15 C -22 8, -15 0, 0 0 C 15 0, 22 8, 22 15 L 26 50 C 26 54, 22 58, 18 58 L -18 58 C -22 58, -26 54, -26 50 Z" fill="#E8EDF2"/>
+    <path d="M -16 22 L 16 22 L 14 42 L -14 42 Z" fill="#CCD4DF"/>
+    
+    <!-- Chest Control Unit / Details -->
+    <rect x="-10" y="26" width="20" height="12" rx="3" fill="#364152"/>
+    <circle cx="-5" cy="32" r="2" fill="#FF8C42"/>
+    <circle cx="5" cy="32" r="2" fill="#4CD964"/>
+
+    <!-- Arms -->
+    <!-- Left Arm -->
+    <g transform="translate(-22, 10) rotate(15)">
+      <rect x="-12" y="0" width="14" height="32" rx="7" fill="#E8EDF2"/>
+      <circle cx="-5" cy="16" r="3" fill="#CCD4DF"/>
+      <!-- Gloved Hand -->
+      <path d="M -9 28 C -9 24, -1 24, -1 28 L -1 36 C -1 39, -9 39, -9 36 Z" fill="#2E3748"/>
+    </g>
+    
+    <!-- Right Arm (Slightly Raised) -->
+    <g transform="translate(22, 10) rotate(-25)">
+      <rect x="-2" y="0" width="14" height="32" rx="7" fill="#E8EDF2"/>
+      <circle cx="5" cy="16" r="3" fill="#CCD4DF"/>
+      <!-- Gloved Hand -->
+      <path d="M 1 28 C 1 24, 9 24, 9 28 L 9 36 C 9 39, 1 39, 1 36 Z" fill="#2E3748"/>
+    </g>
+
+    <!-- Helmet Ring / Neck Guard -->
+    <path d="M -14 -12 L 14 -12 L 16 -4 L -16 -4 Z" fill="#BCC6D4"/>
+
+    <!-- Helmet & Visor -->
+    <g transform="translate(0, -32)">
+      <!-- Outer Helmet Dome -->
+      <circle cx="0" cy="0" r="26" fill="#E8EDF2"/>
+      
+      <!-- Golden Visor -->
+      <circle cx="0" cy="2" r="20" fill="#222A36"/>
+      <path d="M -16 -4 C -16 -14, 16 -14, 16 -4 C 16 10, -16 10, -16 -4 Z" fill="url(#goldGradient)" opacity="0.9"/>
+      
+      <!-- Visor Reflection / Shine -->
+      <path d="M -12 -8 Q -4 -15 6 -8 Q 10 -4 4 1 Q -8 -2 -12 -8 Z" fill="#FFFFFF" opacity="0.4"/>
+      <circle cx="-9" cy="6" r="1.5" fill="#FFFFFF" opacity="0.6"/>
+    </g>
+  </g>
+
+  <!-- Definition Gradient for Visor -->
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB347"/>
+      <stop offset="50%" stop-color="#FF8C42"/>
+      <stop offset="100%" stop-color="#E06D12"/>
+    </linearGradient>
+  </defs>
+</svg>

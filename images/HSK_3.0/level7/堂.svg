@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "堂" (táng - hall / classroom / grand room) -->
+  <!-- Background/Architecture of a grand lecture hall -->
+  <path d="M48 80 L192 80 L208 176 L32 176 Z" fill="#222733"/>
+  
+  <!-- Ceiling arch / upper structure -->
+  <path d="M32 80 L120 48 L208 80 L192 80 L120 56 L48 80 Z" fill="#323846"/>
+
+  <!-- Back wall -->
+  <rect x="56" y="80" width="128" height="96" fill="#1E232F"/>
+
+  <!-- Large Academic Board / Screen -->
+  <rect x="72" y="92" width="96" height="56" rx="4" fill="#12151C"/>
+  <!-- Abstract lecture graphics on screen (glowing gold accent for physics/nobel context) -->
+  <circle cx="120" cy="120" r="16" fill="none" stroke="#F59E0B" stroke-width="3" stroke-dasharray="6 4"/>
+  <ellipse cx="120" cy="120" rx="28" ry="10" fill="none" stroke="#38BDF8" stroke-width="2" transform="rotate(-30 120 120)"/>
+  <ellipse cx="120" cy="120" rx="28" ry="10" fill="none" stroke="#38BDF8" stroke-width="2" transform="rotate(30 120 120)"/>
+
+  <!-- Lecture Podium -->
+  <path d="M104 148 L136 148 L140 176 L100 176 Z" fill="#3B82F6"/>
+  <rect x="108" y="152" width="24" height="6" rx="2" fill="#60A5FA"/>
+
+  <!-- Rows of seating (階梯教室 / Lecture Hall seating tiers) -->
+  <!-- Tier 1 (Front) -->
+  <path d="M40 184 L200 184 L208 196 L32 196 Z" fill="#2E3646"/>
+  <rect x="52" y="172" width="16" height="12" rx="2" fill="#475569"/> <!-- Student 1 -->
+  <rect x="100" y="172" width="16" height="12" rx="2" fill="#475569"/> <!-- Student 2 -->
+  <rect x="148" y="172" width="16" height="12" rx="2" fill="#475569"/> <!-- Student 3 -->
+  <rect x="172" y="172" width="16" height="12" rx="2" fill="#475569"/> <!-- Student 4 -->
+
+  <!-- Tier 2 (Back) -->
+  <path d="M24 204 L216 204 L224 218 L16 218 Z" fill="#3B4456"/>
+  <rect x="68" y="192" width="16" height="12" rx="2" fill="#64748B"/> <!-- Student 5 -->
+  <rect x="116" y="192" width="16" height="12" rx="2" fill="#64748B"/> <!-- Student 6 -->
+  <rect x="156" y="192" width="16" height="12" rx="2" fill="#64748B"/> <!-- Student 7 -->
+
+  <!-- Grand Pillars (Highlighting the "大堂/高大的厅堂" physical structure meaning) -->
+  <rect x="36" y="80" width="8" height="96" fill="#2A313E"/>
+  <rect x="196" y="80" width="8" height="96" fill="#2A313E"/>
+  
+  <!-- Pillar bases and tops -->
+  <rect x="34" y="76" width="12" height="6" fill="#384152"/>
+  <rect x="34" y="174" width="12" height="6" fill="#384152"/>
+  <rect x="194" y="76" width="12" height="6" fill="#384152"/>
+  <rect x="194" y="174" width="12" height="6" fill="#384152"/>
+
+  <!-- Accent lighting (Warm professional ambiance) -->
+  <circle cx="120" cy="76" r="4" fill="#F59E0B"/>
+  <path d="M112 76 L128 76 L134 84 L106 84 Z" fill="#F59E0B" opacity="0.3"/>
+</svg>

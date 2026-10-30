@@ -1,0 +1,56 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative subtle lines representing structural order / societal framework -->
+  <g opacity="0.15" stroke="#4A5568" stroke-width="1.5" stroke-dasharray="4 4" fill="none">
+    <circle cx="120" cy="120" r="85"/>
+    <circle cx="120" cy="120" r="60"/>
+    <line x1="120" y1="20" x2="120" y2="220"/>
+    <line x1="20" y1="120" x2="220" y2="120"/>
+  </g>
+
+  <!-- Central Visual Representation for "伦理" (Social Order, Moral & Ethical Framework) -->
+  <!-- A classical balance scale combined with interconnected human structural elements, symbolizing moral equilibrium, human connection, and ethical order -->
+  
+  <g transform="translate(0, 5)">
+    <!-- Base / Stand of the scale/framework -->
+    <path d="M100 190 L140 190 L130 165 L110 165 Z" fill="#4A5568"/>
+    <rect x="116" y="90" width="8" height="80" rx="2" fill="#E2E8F0"/>
+    
+    <!-- Top ornamental cap -->
+    <circle cx="120" cy="85" r="7" fill="#F6AD55"/>
+
+    <!-- Beam of the scale -->
+    <path d="M70 95 L170 95 L165 89 L75 89 Z" fill="#E2E8F0"/>
+
+    <!-- Left side connection (Human figure 1 - representing individual/tech/science) -->
+    <line x1="75" y1="92" x2="75" y2="135" stroke="#CBD5E0" stroke-width="2.5"/>
+    
+    <!-- Right side connection (Human figure 2 - representing society/tradition/ethics) -->
+    <line x1="165" y1="92" x2="165" y2="135" stroke="#CBD5E0" stroke-width="2.5"/>
+
+    <!-- Left Scale Pan / Human Silhouette representing scientific/individual element -->
+    <path d="M55 135 C55 130 95 130 95 135 L87 165 C87 167 63 167 63 165 Z" fill="#2B6CB0" opacity="0.8"/>
+    <!-- Abstract head / connection node -->
+    <circle cx="75" cy="120" r="9" fill="#63B3ED"/>
+
+    <!-- Right Scale Pan / Human Silhouette representing moral/social order element -->
+    <path d="M145 135 C145 130 185 130 185 135 L177 165 C177 167 153 167 153 165 Z" fill="#C05621" opacity="0.8"/>
+    <!-- Abstract head / connection node -->
+    <circle cx="165" cy="120" r="9" fill="#F6AD55"/>
+
+    <!-- Central Balancing Core / DNA & Code motif intersecting with moral compass (Ethical Equilibrium) -->
+    <!-- Representing the intersection of modern biotech/AI and timeless human ethics -->
+    <g transform="translate(120, 115)">
+      <!-- Outer glowing ring of harmony -->
+      <circle cx="0" cy="0" r="28" fill="none" stroke="#F6AD55" stroke-width="2.5" stroke-dasharray="8 5" opacity="0.9"/>
+      
+      <!-- Inner core symbol: Interlocking abstract human bonds forming a stable knot/shield -->
+      <path d="M -8 -12 C -2 -16, 2 -16, 8 -12 C 12 -4, 12 4, 8 12 C 2 16, -2 16, -8 12 C -12 4, -12 -4, -8 -12 Z" fill="none" stroke="#63B3ED" stroke-width="3"/>
+      
+      <!-- Center focal point (Balance and Life core) -->
+      <circle cx="0" cy="0" r="6" fill="#F6AD55"/>
+    </g>
+  </g>
+
+</svg>

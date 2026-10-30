@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient background glow representing authority/official context -->
+  <circle cx="120" cy="110" r="70" fill="#2A324B" opacity="0.4"/>
+
+  <!-- Official Terminal / Drop Box Structure -->
+  <!-- Base pillar -->
+  <rect x="90" y="130" width="60" height="70" rx="4" fill="#2E384D"/>
+  <rect x="75" y="195" width="90" height="8" rx="3" fill="#1E2533"/>
+
+  <!-- Terminal main body -->
+  <rect x="70" y="60" width="100" height="80" rx="10" fill="#242D3D"/>
+  <rect x="80" y="70" width="80" height="50" rx="6" fill="#1A212D"/>
+
+  <!-- Screen interface details (abstracted data/receipt icon) -->
+  <rect x="95" y="82" width="50" height="6" rx="3" fill="#3B82F6"/>
+  <rect x="95" y="94" width="35" height="4" rx="2" fill="#4B5563"/>
+  <rect x="95" y="102" width="42" height="4" rx="2" fill="#4B5563"/>
+
+  <!-- Secure Slot -->
+  <rect x="90" y="130" width="60" height="6" rx="3" fill="#111827"/>
+  <rect x="105" y="132" width="30" height="2" rx="1" fill="#3B82F6" opacity="0.8"/>
+
+  <!-- Dynamic Character Hand Action (Verb: Paying / Submitting) -->
+  <!-- Motion lines indicating downward action into slot -->
+  <path d="M120,30 L120,52" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 3"/>
+  <path d="M115,26 L120,32 L125,26" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Financial Document / Tax Form being inserted -->
+  <g transform="translate(0, -5)">
+    <rect x="100" y="32" width="40" height="52" rx="4" fill="#F3F4F6"/>
+    <!-- Document lines -->
+    <rect x="108" y="42" width="24" height="3" rx="1.5" fill="#9CA3AF"/>
+    <rect x="108" y="49" width="18" height="3" rx="1.5" fill="#9CA3AF"/>
+    
+    <!-- Gold Coin / Fee element on document (Tax/Payment context) -->
+    <circle cx="120" cy="67" r="9" fill="#F59E0B"/>
+    <circle cx="120" cy="67" r="6" fill="#D97706"/>
+    <!-- Abstract coin symbol -->
+    <text x="120" y="70.5" font-family="sans-serif" font-weight="bold" font-size="10" fill="#FEF3C7" text-anchor="middle">$</text>
+  </g>
+
+  <!-- Human Hand guiding the document -->
+  <path d="M95,85 C95,78 102,74 110,76 L130,80 C138,82 142,88 140,94 C138,98 130,95 125,93 L105,89 C98,87 95,92 95,85 Z" fill="#E5E7EB"/>
+  <!-- Sleeve cuff -->
+  <path d="M85,88 L100,92 L98,102 L83,98 Z" fill="#3B82F6"/>
+
+  <!-- Success status indicator light on terminal -->
+  <circle cx="150" cy="80" r="4" fill="#10B981"/>
+</svg>

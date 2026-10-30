@@ -1,0 +1,36 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background elements: Distant mountain silhouette and fading sunset -->
+  <path d="M0 160 L80 100 L160 140 L240 110 L240 240 L0 240 Z" fill="#252A33"/>
+  <circle cx="180" cy="60" r="25" fill="#FFB347" opacity="0.6"/>
+  
+  <!-- Ground path -->
+  <path d="M0 220 C60 210, 180 230, 240 215" stroke="#3A404D" stroke-width="4" fill="none"/>
+  
+  <!-- The Explorer Character (Action: Arriving/Stepping forward) -->
+  <g transform="translate(140, 120)">
+    <!-- Motion lines indicating arrival/movement -->
+    <path d="M-40 40 L-20 40 M-45 60 L-25 60" stroke="#FFB347" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+    
+    <!-- Body -->
+    <path d="M0 0 L10 80 L-10 80 Z" fill="#FFB347"/>
+    <circle cx="0" cy="-15" r="15" fill="#FFB347"/>
+    
+    <!-- Backpack -->
+    <rect x="-15" y="5" width="15" height="30" rx="4" fill="#E69138"/>
+    
+    <!-- Legs in motion -->
+    <path d="M5 80 L15 110 M-5 80 L-20 105" stroke="#FFB347" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Arm reaching forward -->
+    <path d="M5 20 L30 40" stroke="#FFB347" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Destination Marker (The campsite) -->
+  <g transform="translate(60, 180)">
+    <!-- Tent -->
+    <path d="M-20 0 L20 0 L0 -35 Z" fill="#FFB347"/>
+    <path d="M0 -35 L20 0 L30 10 L-10 10 Z" fill="#E69138"/>
+  </g>
+</svg>

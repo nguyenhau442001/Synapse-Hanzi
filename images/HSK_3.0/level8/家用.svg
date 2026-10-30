@@ -1,0 +1,62 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Subtle Glow for Central Object -->
+  <circle cx="120" cy="120" r="70" fill="#252A36" opacity="0.6"/>
+
+  <!-- Household Appliances Group (Representing "家用" - household appliances / domestic items) -->
+  <g transform="translate(0, 0)">
+    
+    <!-- Smart Refrigerator (Left Appliance) -->
+    <g transform="translate(52, 75)">
+      <!-- Main Body -->
+      <rect x="0" y="0" width="36" height="90" rx="6" fill="#2F3646"/>
+      <!-- Upper Door Outline -->
+      <rect x="3" y="3" width="30" height="40" rx="4" fill="#3B4459"/>
+      <!-- Lower Door Outline -->
+      <rect x="3" y="46" width="30" height="41" rx="4" fill="#3B4459"/>
+      <!-- Handle Upper -->
+      <rect x="25" y="15" width="4" height="16" rx="2" fill="#FFA500"/>
+      <!-- Handle Lower -->
+      <rect x="25" y="58" width="4" height="16" rx="2" fill="#FFA500"/>
+      <!-- Smart Display Dot -->
+      <circle cx="8" cy="12" r="2" fill="#00E5FF"/>
+    </g>
+
+    <!-- Smart Washing Machine (Right Appliance) -->
+    <g transform="translate(98, 90)">
+      <!-- Main Body -->
+      <rect x="0" y="0" width="46" height="75" rx="8" fill="#2F3646"/>
+      <!-- Control Panel -->
+      <rect x="6" y="8" width="34" height="12" rx="3" fill="#3B4459"/>
+      <circle cx="14" cy="14" r="3" fill="#00E5FF"/>
+      <rect x="24" y="12" width="12" height="4" rx="2" fill="#FFA500"/>
+      <!-- Glass Door Outer -->
+      <circle cx="23" cy="46" r="18" fill="#3B4459"/>
+      <!-- Glass Door Inner -->
+      <circle cx="23" cy="46" r="13" fill="#1A1D24"/>
+      <!-- Water/Bubble detail -->
+      <circle cx="19" cy="48" r="3" fill="#00E5FF" opacity="0.5"/>
+      <circle cx="27" cy="43" r="2" fill="#00E5FF" opacity="0.4"/>
+    </g>
+
+    <!-- Smart Robotic Vacuum (Foreground Center) -->
+    <g transform="translate(142, 128)">
+      <ellipse cx="24" cy="20" rx="22" ry="14" fill="#3B4459"/>
+      <ellipse cx="24" cy="18" rx="18" ry="11" fill="#2F3646"/>
+      <!-- Lidar Dome -->
+      <circle cx="24" cy="16" r="4" fill="#1A1D24"/>
+      <circle cx="24" cy="16" r="2" fill="#FFA500"/>
+      <!-- Status Light -->
+      <rect x="36" y="15" width="3" height="3" rx="1.5" fill="#00E5FF"/>
+    </g>
+
+    <!-- Ambient Smart Home Accent (Energy/Eco Wave or Signal) -->
+    <path d="M 38 65 Q 60 50 90 60" fill="none" stroke="#FFA500" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 125 55 Q 150 40 180 65" fill="none" stroke="#00E5FF" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+    <circle cx="90" cy="60" r="3" fill="#FFA500"/>
+    <circle cx="125" cy="55" r="3" fill="#00E5FF"/>
+  </g>
+
+</svg>

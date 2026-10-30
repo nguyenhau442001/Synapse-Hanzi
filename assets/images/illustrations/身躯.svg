@@ -1,0 +1,61 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Atmospheric background elements representing biting wind/snow in dark mode -->
+  <g opacity="0.3">
+    <!-- Wind streaks -->
+    <path d="M20 70 L90 70" stroke="#8A99AD" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="10 5"/>
+    <path d="M140 50 L210 50" stroke="#8A99AD" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="15 8"/>
+    <path d="M30 170 L110 170" stroke="#8A99AD" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="8 6"/>
+    <path d="M130 190 L220 190" stroke="#8A99AD" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="12 4"/>
+    
+    <!-- Snowflakes -->
+    <circle cx="50" cy="40" r="1.5" fill="#FFFFFF"/>
+    <circle cx="100" cy="30" r="1" fill="#FFFFFF"/>
+    <circle cx="190" cy="80" r="1.5" fill="#FFFFFF"/>
+    <circle cx="210" cy="140" r="2" fill="#FFFFFF"/>
+    <circle cx="40" cy="130" r="1.5" fill="#FFFFFF"/>
+    <circle cx="70" cy="200" r="1" fill="#FFFFFF"/>
+    <circle cx="170" cy="210" r="1.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Central Visual Representation: "身躯" (The steadfast physical body/human torso and posture) -->
+  <g transform="translate(0, 5)">
+    <!-- Ground / Terrain -->
+    <path d="M60 185 L180 185 L200 200 L40 200 Z" fill="#2A2F3D"/>
+    
+    <!-- Boundary marker / Border post hint subtly in background -->
+    <rect x="155" y="130" width="12" height="55" fill="#3A4454" rx="2"/>
+    <rect x="153" y="125" width="16" height="8" fill="#E65C00" rx="1"/>
+
+    <!-- The Steadfast Figure (身躯 - Sturdy, upright physical body standing firm) -->
+    <!-- Legs / Lower stance -->
+    <path d="M102 185 L108 140 L118 140 L124 185 Z" fill="#2E4A62"/>
+    
+    <!-- Torso (Strong, upright physical body / 坚毅挺拔的身躯) -->
+    <path d="M96 95 L144 95 L138 142 L102 142 Z" fill="#3D5A80"/>
+    
+    <!-- Uniform/Coat details (Border guard motif) -->
+    <!-- Coat lapels / chest structure -->
+    <path d="M120 95 L120 142" stroke="#2E4A62" stroke-width="2"/>
+    <path d="M108 105 L132 105" stroke="#E65C00" stroke-width="1.5" opacity="0.8"/>
+    
+    <!-- Broad Shoulders -->
+    <path d="M88 98 C88 93 94 92 98 95 L142 95 C146 92 152 93 152 98 L148 115 C148 115 120 118 92 115 Z" fill="#344E6F"/>
+
+    <!-- Head and Cap -->
+    <circle cx="120" cy="74" r="14" fill="#F4A261"/>
+    <!-- Guard Cap -->
+    <path d="M104 68 L136 68 L134 58 L106 58 Z" fill="#243447"/>
+    <path d="M100 66 C105 64 135 64 140 66 L138 69 L102 69 Z" fill="#E65C00"/>
+
+    <!-- Firm Posture / Arms crossed or firmly held at sides to show determination -->
+    <path d="M90 98 L82 130 L94 133 L100 110 Z" fill="#344E6F"/>
+    <path d="M150 98 L158 130 L146 133 L140 110 Z" fill="#344E6F"/>
+
+    <!-- Focus Accent: Subtle glowing edge/rim light representing resilience against harsh elements -->
+    <path d="M88 98 C88 93 94 92 98 95 L142 95 C146 92 152 93 152 98 L148 115" fill="none" stroke="#E65C00" stroke-width="1.5" opacity="0.7"/>
+    <path d="M102 142 L138 142" fill="none" stroke="#E65C00" stroke-width="1" opacity="0.5"/>
+  </g>
+</svg>

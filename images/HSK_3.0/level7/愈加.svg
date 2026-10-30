@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background atmosphere: Valley night and cooling progression -->
+  <g opacity="0.4">
+    <!-- Mountain ranges overlapping to show depth -->
+    <path d="M20 180 L80 120 L130 150 L200 90 L220 200 L20 200 Z" fill="#242B38"/>
+    <path d="M0 190 L50 140 L100 170 L170 110 L240 160 L240 220 L0 220 Z" fill="#1E2430"/>
+  </g>
+
+  <!-- Visual Metaphor for "愈加" (Escalation / Progressive intensification) -->
+  <!-- A central natural pillar / stepped rocky element or thermometer-like progression of mist/cold nodes -->
+  
+  <!-- Progression steps / Escalation levels -->
+  <g transform="translate(0, 10)">
+    <!-- Level 1 (Base/Initial state) -->
+    <circle cx="120" cy="155" r="8" fill="#3B4252" stroke="#4C566A" stroke-width="2"/>
+    
+    <!-- Level 2 (Increasing intensity) -->
+    <circle cx="120" cy="115" r="12" fill="#434C5E" stroke="#5E81AC" stroke-width="2"/>
+    
+    <!-- Level 3 (Peak / Extreme outcome - glowing cyan/cold accent) -->
+    <circle cx="120" cy="65" r="18" fill="#2E3440" stroke="#88C0D0" stroke-width="3"/>
+    
+    <!-- Connecting escalation path with an upward sweeping gradient arrow/line -->
+    <path d="M120 155 L120 127 M120 103 L120 83" stroke="#88C0D0" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 6"/>
+    
+    <!-- Upward momentum chevrons -->
+    <path d="M113 138 L120 128 L127 138" fill="none" stroke="#88C0D0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M113 95 L120 85 L127 95" fill="none" stroke="#88C0D0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Radiating crisp/cold atmospheric elements (representing "清冷湿润" becoming increasingly intense) -->
+  <g stroke="#88C0D0" stroke-width="2" stroke-linecap="round" opacity="0.8">
+    <!-- Dynamic crystal / frost shards expanding outward at the top peak -->
+    <line x1="120" y1="45" x2="120" y2="33" />
+    <line x1="104" y1="57" x2="94" y2="52" />
+    <line x1="136" y1="57" x2="146" y2="52" />
+    <line x1="108" y1="75" x2="98" y2="80" />
+    <line x1="132" y1="75" x2="142" y2="80" />
+  </g>
+
+  <!-- Floating moisture/cold droplets indicating progression of humidity & chill -->
+  <g fill="#88C0D0" opacity="0.7">
+    <path d="M85 110 C85 106 90 100 90 100 C90 100 95 106 95 110 C95 112.761 92.7614 115 90 115 C87.2386 115 85 112.761 85 110 Z"/>
+    <path d="M145 130 C145 126 150 120 150 120 C150 120 155 126 155 130 C155 132.761 152.761 135 150 135 C147.238 135 145 132.761 145 130 Z"/>
+    <path d="M95 150 C95 147 98 143 98 143 C98 143 101 147 101 150 C101 151.657 99.6569 153 98 153 C96.3431 153 95 151.657 95 150 Z"/>
+  </g>
+
+  <!-- Focal Accent Ring for Escalation Core -->
+  <circle cx="120" cy="75" r="36" fill="none" stroke="#D08770" stroke-width="1.5" stroke-dasharray="4 8" opacity="0.5"/>
+
+</svg>

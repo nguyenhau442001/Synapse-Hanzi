@@ -1,0 +1,69 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle stage spotlight background -->
+  <path d="M70 0 L170 0 L210 240 L30 240 Z" fill="#252A34" opacity="0.4"/>
+
+  <!-- Jester / Clown Character representing "滑稽" (humorous, comical, funny) -->
+  <g transform="translate(0, 10)">
+    <!-- Collar (Two-tone ruffled collar) -->
+    <path d="M120 100 L90 120 L120 115 L150 120 Z" fill="#FF5722"/>
+    <path d="M120 105 L80 140 L120 125 L160 140 Z" fill="#FFC107"/>
+
+    <!-- Oversized Suit Body (Colorful, funny proportions) -->
+    <path d="M90 130 C70 130 50 160 60 210 L180 210 C190 160 170 130 150 130 Z" fill="#9C27B0"/>
+    <!-- Suit pattern - diamond stripes -->
+    <path d="M120 130 L100 170 L120 210 L140 170 Z" fill="#E040FB" opacity="0.6"/>
+
+    <!-- Bow Tie (Comically large) -->
+    <path d="M120 115 L95 100 L95 130 Z" fill="#00E676"/>
+    <path d="M120 115 L145 100 L145 130 Z" fill="#00E676"/>
+    <circle cx="120" cy="115" r="8" fill="#FFEB3B"/>
+
+    <!-- Head & Face -->
+    <circle cx="120" cy="75" r="32" fill="#FFE0B2"/>
+
+    <!-- Funny Hair (Puff tufts on sides) -->
+    <circle cx="92" cy="70" r="10" fill="#00BCD4"/>
+    <circle cx="86" cy="78" r="9" fill="#00BCD4"/>
+    <circle cx="148" cy="70" r="10" fill="#00BCD4"/>
+    <circle cx="154" cy="78" r="9" fill="#00BCD4"/>
+
+    <!-- Jester Hat (Flop-sided with bells) -->
+    <path d="M90 60 C90 30 150 30 150 60 Z" fill="#FF5722"/>
+    <!-- Hat tips -->
+    <path d="M95 50 C70 30 60 50 75 60 Z" fill="#FFC107"/>
+    <circle cx="68" cy="52" r="5" fill="#FFFFFF"/>
+    <path d="M145 50 C170 30 180 50 165 60 Z" fill="#FFC107"/>
+    <circle cx="172" cy="52" r="5" fill="#FFFFFF"/>
+    <circle cx="120" cy="35" r="6" fill="#FFFFFF"/>
+
+    <!-- Comical Face Expression (Squinting happy eyes, big open smile) -->
+    <!-- Eyebrows (Arched playfully) -->
+    <path d="M100 62 Q108 55 114 62" stroke="#3E2723" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M126 62 Q132 55 140 62" stroke="#3E2723" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+    <!-- Eyes (Winking / happy arcs) -->
+    <path d="M102 68 Q108 74 114 68" stroke="#3E2723" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <circle cx="134" cy="68" r="3" fill="#3E2723"/>
+
+    <!-- Red Clown Nose (Big and prominent) -->
+    <circle cx="120" cy="76" r="9" fill="#F44336"/>
+    <circle cx="118" cy="74" r="3" fill="#FFCDD2" opacity="0.8"/>
+
+    <!-- Big Silly Smile -->
+    <path d="M102 85 Q120 108 138 85 Z" fill="#D32F2F"/>
+    <path d="M108 89 Q120 100 132 89" fill="#FFFFFF"/> <!-- teeth -->
+
+    <!-- Dynamic Motion Lines / Comical Sparkles -->
+    <path d="M45 100 L55 108" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="40" cy="96" r="2" fill="#FFC107"/>
+
+    <path d="M195 110 L185 118" stroke="#00E676" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="200" cy="106" r="2" fill="#00E676"/>
+
+    <path d="M180 60 L192 55" stroke="#FF5722" stroke-width="3" stroke-linecap="round"/>
+    <path d="M50 55 L60 62" stroke="#9C27B0" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Escalation/Progression Metaphor: A thermal gradient scale representing the shift from heat to extreme relief -->
+  
+  <!-- Baseline: The heat (represented by a stylized sun/heat wave line) -->
+  <path d="M40 60 L60 40 L80 60 L100 40" stroke="#FF9F43" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- The Progression: A sharp, upward-breaking line representing the transition to "Shuang" -->
+  <path d="M40 180 Q 120 180 120 120 T 200 60" stroke="#54A0FF" stroke-width="6" fill="none" stroke-linecap="round"/>
+  
+  <!-- The Peak: A stylized, exaggerated "cooling" effect breaking the limit -->
+  <circle cx="200" cy="60" r="15" fill="#54A0FF"/>
+  <path d="M200 45 L200 30 M215 60 L230 60 M200 75 L200 90 M185 60 L170 60" stroke="#54A0FF" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- The Contrast: A sharp transition point from orange (heat) to blue (relief) -->
+  <circle cx="120" cy="120" r="8" fill="#FF9F43"/>
+  <circle cx="120" cy="120" r="4" fill="#1A1D24"/>
+  
+  <!-- Supporting visual: A stylized slice of fruit transitioning from warm to cool colors -->
+  <path d="M60 180 C 60 140, 100 140, 100 180 Z" fill="#FF9F43"/>
+  <path d="M100 180 C 100 140, 140 140, 140 180 Z" fill="#54A0FF"/>
+</svg>

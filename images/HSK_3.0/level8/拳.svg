@@ -1,0 +1,42 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient glow representing morning park/tai chi energy -->
+  <circle cx="120" cy="120" r="70" fill="#252A36" opacity="0.6"/>
+  
+  <!-- Sleek Modern Flat Design Fist (拳 - Quán) -->
+  <g transform="translate(120, 120)">
+    <!-- Main clenched fist mass -->
+    <path d="M-38 -15 
+             C-38 -42, -18 -52, 0 -52 
+             C20 -52, 38 -42, 38 -15 
+             C45 -10, 52 2, 52 18 
+             C52 38, 38 52, 12 55 
+             C-12 55, -42 42, -45 15 
+             C-46 5, -42 -5, -38 -15 Z" 
+          fill="#3A4454"/>
+          
+    <!-- Finger phalanges / knuckles (Curled segments) -->
+    <!-- Top Row (Index & Middle Knuckles) -->
+    <path d="M-32 -22 C-32 -32, -18 -38, -2 -38 C14 -38, 28 -32, 30 -22 C28 -12, 14 -16, -2 -16 C-18 -16, -30 -12, -32 -22 Z" fill="#4E5D73"/>
+    
+    <!-- Middle Row / Main gripping fingers -->
+    <path d="M-36 -5 C-36 -18, -18 -22, 0 -22 C18 -22, 36 -18, 36 -5 C36 8, 18 15, 0 15 C-18 15, -36 8, -36 -5 Z" fill="#5E708B"/>
+    
+    <!-- Bottom Row (Lower finger wraps) -->
+    <path d="M-40 12 C-40 0, -22 -4, 0 -4 C22 -4, 40 0, 40 12 C40 25, 22 35, 0 35 C-22 35, -40 25, -40 12 Z" fill="#4E5D73"/>
+    
+    <!-- Thumb tucked neatly across the front -->
+    <path d="M-22 18 C-12 15, 12 18, 25 32 C15 42, -8 40, -22 30 C-30 25, -28 20, -22 18 Z" fill="#6C82A2"/>
+    <path d="M-18 22 C-8 20, 10 22, 18 29 C10 35, -5 34, -15 27 C-18 25, -18 23, -18 22 Z" fill="#849DBE"/>
+
+    <!-- High-contrast focus accent lines / styling (Golden/Orange accent matching requirements) -->
+    <path d="M-30 -30 C-15 -35, 15 -35, 28 -30" stroke="#F39C12" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M-34 -8 C-18 -12, 18 -12, 34 -8" stroke="#F39C12" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M-38 12 C-18 8, 18 8, 38 12" stroke="#F39C12" stroke-width="3" stroke-linecap="round" fill="none"/>
+    
+    <!-- Dynamic energy / focus highlight spot -->
+    <circle cx="2" cy="-4" r="5" fill="#F39C12"/>
+  </g>
+</svg>

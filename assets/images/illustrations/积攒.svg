@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Shadow/Base of the Jar -->
+    <ellipse cx="120" cy="200" rx="45" ry="10" fill="#111318"/>
+
+    <!-- Glass Jar Back/Interior -->
+    <path d="M 85,85 L 155,85 L 165,115 C 165,185 155,195 120,195 C 85,195 75,185 75,115 Z" fill="#222834"/>
+    
+    <!-- Accumulated Coins inside the jar (Layered for depth) -->
+    <!-- Bottom layer -->
+    <ellipse cx="120" cy="180" rx="36" ry="7" fill="#E69500"/>
+    <path d="M 84,180 L 84,186 C 84,190 100,193 120,193 C 140,193 156,190 156,186 L 156,180 Z" fill="#C57A00"/>
+    
+    <ellipse cx="120" cy="165" rx="38" ry="7" fill="#F5A623"/>
+    <path d="M 82,165 L 82,171 C 82,175 100,178 120,178 C 140,178 158,175 158,171 L 158,165 Z" fill="#D48806"/>
+
+    <ellipse cx="120" cy="150" rx="37" ry="7" fill="#F5A623"/>
+    <path d="M 83,150 L 83,156 C 83,160 100,163 120,163 C 140,163 157,160 157,156 L 157,150 Z" fill="#D48806"/>
+
+    <ellipse cx="120" cy="135" rx="35" ry="6" fill="#FFC107"/>
+    <path d="M 85,135 L 85,141 C 85,145 100,148 120,148 C 140,148 155,145 155,141 L 155,135 Z" fill="#E69500"/>
+
+    <ellipse cx="120" cy="120" rx="33" ry="6" fill="#FFC107"/>
+    <path d="M 87,120 L 87,126 C 87,130 102,133 120,133 C 138,133 153,130 153,126 L 153,120 Z" fill="#E69500"/>
+
+    <!-- Glass Jar Front Body & Highlights -->
+    <path d="M 85,85 L 155,85 C 162,110 164,150 162,185 C 161,192 155,196 120,196 C 85,196 79,192 78,185 C 76,150 78,110 85,85 Z" fill="none" stroke="#3A4454" stroke-width="4"/>
+    
+    <!-- Jar Neck -->
+    <rect x="92" y="65" width="56" height="20" rx="3" fill="#2A3241" stroke="#3A4454" stroke-width="4"/>
+    
+    <!-- Jar Rim -->
+    <rect x="87" y="55" width="66" height="12" rx="4" fill="#3A4454"/>
+    
+    <!-- Glass Shine Effect -->
+    <path d="M 88,95 C 88,95 83,135 87,175" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.15"/>
+    <path d="M 94,68 L 94,80" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.2"/>
+
+    <!-- Falling Coin (representing the act of accumulating/saving) -->
+    <g transform="translate(120, 25)">
+      <ellipse cx="0" cy="0" rx="14" ry="5" fill="#FFD54F" stroke="#E69500" stroke-width="2"/>
+      <ellipse cx="0" cy="0" rx="8" ry="2.5" fill="none" stroke="#E69500" stroke-width="1"/>
+    </g>
+
+    <!-- Motion/Direction lines for the falling coin -->
+    <line x1="113" y1="36" x2="110" y2="44" stroke="#FFC107" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+    <line x1="127" y1="36" x2="130" y2="44" stroke="#FFC107" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  </g>
+</svg>

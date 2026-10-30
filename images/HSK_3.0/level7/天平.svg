@@ -1,0 +1,57 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow to create depth for the scale -->
+  <circle cx="120" cy="120" r="80" fill="#222733" opacity="0.6"/>
+
+  <!-- Scale / 天平 Graphic Elements -->
+  <!-- Central Pillar -->
+  <path d="M115,50 L125,50 L125,185 L135,195 L105,195 L115,185 Z" fill="#64748B"/>
+  
+  <!-- Base Stand -->
+  <path d="M90,195 L150,195 C155,195 155,205 150,205 L90,205 C85,205 85,195 90,195 Z" fill="#94A3B8"/>
+  <rect x="100" y="40" width="40" height="12" rx="4" fill="#F59E0B"/>
+  <circle cx="120" cy="46" r="4" fill="#D97706"/>
+
+  <!-- Balance Beam (Perfectly leveled/端平 for justice) -->
+  <g transform="translate(120, 52)">
+    <!-- Beam bar -->
+    <path d="M-75,-3 L75,-3 L80,5 L-80,5 Z" fill="#F59E0B"/>
+    <circle cx="0" cy="1" r="5" fill="#D97706"/>
+
+    <!-- Left Arm & Pan Assembly -->
+    <g transform="translate(-75, 0)">
+      <!-- Suspension chains/strings -->
+      <line x1="0" y1="0" x2="-25" y2="75" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="25" y2="75" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="0" y2="78" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+      
+      <!-- Scale Pan (Balanced) -->
+      <path d="M-35,75 C-35,70 35,70 35,75 C35,88 -35,88 -35,75 Z" fill="#38BDF8"/>
+      <ellipse cx="0" cy="75" rx="35" ry="6" fill="#0EA5E9"/>
+      
+      <!-- Small gold weight on left pan to show function -->
+      <rect x="-10" y="62" width="20" height="13" rx="2" fill="#F59E0B"/>
+    </g>
+
+    <!-- Right Arm & Pan Assembly -->
+    <g transform="translate(75, 0)">
+      <!-- Suspension chains/strings -->
+      <line x1="0" y1="0" x2="-25" y2="75" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="25" y2="75" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="0" y2="78" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+      
+      <!-- Scale Pan (Balanced) -->
+      <path d="M-35,75 C-35,70 35,70 35,75 C35,88 -35,88 -35,75 Z" fill="#38BDF8"/>
+      <ellipse cx="0" cy="75" rx="35" ry="6" fill="#0EA5E9"/>
+      
+      <!-- Small gold weight on right pan to show exact balance -->
+      <rect x="-10" y="62" width="20" height="13" rx="2" fill="#F59E0B"/>
+    </g>
+  </g>
+
+  <!-- Accent glow spots for modern clean aesthetic -->
+  <circle cx="120" cy="18" r="2" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="120" cy="10" r="1" fill="#F59E0B" opacity="0.5"/>
+</svg>

@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Vector Illustration for "支流" (River Tributary) -->
+  <g transform="translate(20, 25)">
+    <!-- Landscape base/banks -->
+    <path d="M 15 35 Q 80 45 105 100 Q 130 155 185 170" fill="none" stroke="#2D3748" stroke-width="28" stroke-linecap="round"/>
+    
+    <!-- Main River Stream -->
+    <!-- Main flow coming from top/left and continuing down -->
+    <path d="M 15 30 Q 80 42 105 100 Q 130 158 185 175" fill="none" stroke="#3182CE" stroke-width="18" stroke-linecap="round"/>
+    
+    <!-- Tributary River Stream (支流) flowing into the main river -->
+    <!-- Originating from the right, branching into the main stem -->
+    <path d="M 175 45 Q 140 75 105 100" fill="none" stroke="#4299E1" stroke-width="9" stroke-linecap="round"/>
+    
+    <!-- Water ripples / flow directional lines -->
+    <!-- Main river ripples -->
+    <path d="M 45 42 Q 65 48 85 45" fill="none" stroke="#63B3ED" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+    <path d="M 120 120 Q 135 135 150 145" fill="none" stroke="#63B3ED" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+    
+    <!-- Tributary ripples (focus indicator) -->
+    <path d="M 155 60 Q 142 70 130 80" fill="none" stroke="#90CDF4" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+    
+    <!-- Glowing convergence point / focal accent (gold/orange) to highlight the branch junction -->
+    <circle cx="105" cy="100" r="5" fill="#ED8936"/>
+    <circle cx="105" cy="100" r="10" fill="none" stroke="#F6AD55" stroke-width="2" opacity="0.6"/>
+
+    <!-- Green fertile land patches (contextual reference: 滋养着沿岸广袤肥沃) -->
+    <!-- Top-left land -->
+    <path d="M 10 15 Q 45 10 70 25 Q 40 35 10 25 Z" fill="#2F855A" opacity="0.85"/>
+    <circle cx="35" cy="20" r="2" fill="#68D391"/>
+    <circle cx="50" cy="18" r="1.5" fill="#68D391"/>
+
+    <!-- Center island / delta land between main and tributary -->
+    <path d="M 115 75 Q 135 65 150 70 Q 135 90 115 95 Z" fill="#2F855A" opacity="0.9"/>
+    <circle cx="130" cy="78" r="2" fill="#68D391"/>
+
+    <!-- Bottom-right fertile bank -->
+    <path d="M 120 155 Q 150 140 180 150 Q 165 180 130 185 Z" fill="#2F855A" opacity="0.85"/>
+    <circle cx="150" cy="160" r="2" fill="#68D391"/>
+    <circle cx="165" cy="170" r="1.5" fill="#68D391"/>
+    
+    <!-- Tiny stylized sprout on the fertile bank (representing nourishment) -->
+    <path d="M 155 152 Q 155 146 158 142 M 155 146 Q 152 143 149 144" fill="none" stroke="#68D391" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+</svg>

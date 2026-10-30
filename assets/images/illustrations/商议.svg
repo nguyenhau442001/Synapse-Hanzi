@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Illustration: 商议 (Consultation/Discussion around a table) -->
+  <!-- Table -->
+  <ellipse cx="120" cy="165" rx="65" ry="22" fill="#2E3440" stroke="#4C566A" stroke-width="2"/>
+  <path d="M75 165 L75 185 C75 190, 85 195, 95 195 L145 195 C155 195, 165 190, 165 185 L165 165" fill="none" stroke="#3B4252" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Documents / Investment papers on table -->
+  <g transform="translate(100, 145) rotate(-10)">
+    <rect width="32" height="40" rx="3" fill="#ECEFF4"/>
+    <line x1="6" y1="8" x2="20" y2="8" stroke="#D8DEE9" stroke-width="3" stroke-linecap="round"/>
+    <line x1="6" y1="16" x2="26" y2="16" stroke="#D8DEE9" stroke-width="3" stroke-linecap="round"/>
+    <line x1="6" y1="24" x2="16" y2="24" stroke="#D8DEE9" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="24" cy="30" r="4" fill="#D08770"/>
+  </g>
+
+  <!-- Person Left (Family member / Participant 1) -->
+  <g transform="translate(50, 75)">
+    <!-- Body & Shoulders -->
+    <path d="M 0 75 C 0 55, 20 45, 40 45 C 60 45, 80 55, 80 75 Z" fill="#5E81AC"/>
+    <!-- Head -->
+    <circle cx="40" cy="22" r="16" fill="#ECEFF4"/>
+    <!-- Hair -->
+    <path d="M24 22 C24 12, 32 6, 40 6 C48 6, 56 12, 56 22 C56 22, 52 16, 40 16 C28 16, 24 22, 24 22 Z" fill="#4C566A"/>
+    <!-- Hand gesturing toward center -->
+    <circle cx="58" cy="55" r="7" fill="#ECEFF4"/>
+  </g>
+
+  <!-- Person Right (Family member / Participant 2) -->
+  <g transform="translate(110, 75)">
+    <!-- Body & Shoulders -->
+    <path d="M 0 75 C 0 55, 20 45, 40 45 C 60 45, 80 55, 80 75 Z" fill="#88C0D0"/>
+    <!-- Head -->
+    <circle cx="40" cy="22" r="16" fill="#ECEFF4"/>
+    <!-- Hair -->
+    <path d="M23 20 C25 10, 33 6, 40 6 C50 6, 55 12, 57 20 C50 14, 30 14, 23 20 Z" fill="#2E3440"/>
+    <!-- Hand gesturing toward center -->
+    <circle cx="22" cy="55" r="7" fill="#ECEFF4"/>
+  </g>
+
+  <!-- Central Speech / Thought Bubbles intersecting (representing discussion/agreement) -->
+  <g transform="translate(120, 50)">
+    <path d="M-15 -10 C-15 -20, 0 -25, 15 -25 C30 -25, 45 -20, 45 -10 C45 0, 30 5, 15 5 L5 15 L2 5 C-8 3, -15 -2, -15 -10 Z" fill="#EBCB8B"/>
+    <!-- Checkmark inside dialogue bubble representing consensus/decision -->
+    <path d="M3 -10 L9 -4 L23 -18" fill="none" stroke="#2E3440" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -1,0 +1,34 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Person figure (Elderly person) -->
+  <g transform="translate(120, 120)">
+    <!-- Body -->
+    <path d="M-25 40 L-25 80 L25 80 L25 40 Z" fill="#7D8590"/>
+    <!-- Head -->
+    <circle cx="0" cy="0" r="35" fill="#FFD59E"/>
+    <!-- Hair (White/Grey) -->
+    <path d="M-30 -10 A35 35 0 0 1 30 -10" fill="#E0E0E0" stroke="#B0B0B0" stroke-width="4"/>
+    
+    <!-- Action: Self-care (Buttoning a shirt) -->
+    <g transform="translate(0, 30)">
+      <!-- Arms -->
+      <path d="M-25 10 L-50 40" stroke="#7D8590" stroke-width="12" stroke-linecap="round"/>
+      <path d="M25 10 L45 35" stroke="#7D8590" stroke-width="12" stroke-linecap="round"/>
+      
+      <!-- Hands interacting with shirt -->
+      <circle cx="-50" cy="45" r="10" fill="#FFD59E"/>
+      <circle cx="45" cy="40" r="10" fill="#FFD59E"/>
+      
+      <!-- Shirt details (Gold buttons) -->
+      <circle cx="0" cy="15" r="4" fill="#FFC107"/>
+      <circle cx="0" cy="35" r="4" fill="#FFC107"/>
+      <circle cx="0" cy="55" r="4" fill="#FFC107"/>
+    </g>
+    
+    <!-- Facial features -->
+    <path d="M-12 -5 A5 5 0 0 0 -2 -5" stroke="#5C6370" stroke-width="2" fill="none"/>
+    <path d="M2 -5 A5 5 0 0 0 12 -5" stroke="#5C6370" stroke-width="2" fill="none"/>
+    <path d="M-8 15 A8 8 0 0 0 8 15" stroke="#5C6370" stroke-width="2" fill="none"/>
+  </g>
+</svg>

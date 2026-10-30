@@ -1,0 +1,57 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "片段" (Clip / Excerpt / Fragment of film or history) -->
+  <g transform="translate(0, 0)">
+    <!-- Ambient glow / backdrop for cinematic feel -->
+    <circle cx="120" cy="120" r="80" fill="#252B36" opacity="0.6"/>
+
+    <!-- Film strip segments weaving diagonally to represent excerpts/fragments -->
+    <!-- Film Strip Back / Shadow layer -->
+    <path d="M 60 70 L 170 50 L 190 130 L 80 150 Z" fill="#2D3544" opacity="0.5"/>
+
+    <!-- Main Film Strip Segment (Centerpiece) -->
+    <g transform="rotate(-12, 120, 120)">
+      <!-- Film body -->
+      <rect x="55" y="85" width="130" height="70" rx="6" fill="#12151B" stroke="#F59E0B" stroke-width="2.5"/>
+
+      <!-- Inner frame / screen area showing a historical/scenic snippet -->
+      <rect x="70" y="93" width="100" height="54" rx="3" fill="#1E2530"/>
+      
+      <!-- Abstract snippet graphics inside the frame (sun/landscape representing historical footage) -->
+      <path d="M 70 135 L 95 115 L 115 130 L 140 105 L 170 135 Z" fill="#3B82F6" opacity="0.6"/>
+      <circle cx="145" cy="115" r="8" fill="#FBBF24"/>
+
+      <!-- Sprocket holes (Perforations) top and bottom -->
+      <!-- Top row -->
+      <rect x="62" y="90" width="6" height="8" rx="1.5" fill="#F59E0B"/>
+      <rect x="78" y="90" width="6" height="8" rx="1.5" fill="#F59E0B"/>
+      <rect x="94" y="90" width="6" height="8" rx="1.5" fill="#F59E0B"/>
+      <rect x="110" y="90" width="6" height="8" rx="1.5" fill="#F59E0B"/>
+      <rect x="126" y="90" width="6" height="8" rx="1.5" fill="#F59E0B"/>
+      <rect x="142" y="90" width="6" height="8" rx="1.5" fill="#F59E0B"/>
+      <rect x="158" y="90" width="6" height="8" rx="1.5" fill="#F59E0B"/>
+      <rect x="174" y="90" width="6" height="8" rx="1.5" fill="#F59E0B"/>
+
+      <!-- Bottom row -->
+      <rect x="62" y="142" width="6" height="8" rx="1.5" fill="#F59E0B"/>
+      <rect x="78" y="142" width="6" height="8" rx="1.5" fill="#F59E0B"/>
+      <rect x="94" y="142" width="6" height="8" rx="1.5" fill="#F59E0B"/>
+      <rect x="110" y="142" width="6" height="8" rx="1.5" fill="#F59E0B"/>
+      <rect x="126" y="142" width="6" height="8" rx="1.5" fill="#F59E0B"/>
+      <rect x="142" y="142" width="6" height="8" rx="1.5" fill="#F59E0B"/>
+      <rect x="158" y="142" width="6" height="8" rx="1.5" fill="#F59E0B"/>
+      <rect x="174" y="142" width="6" height="8" rx="1.5" fill="#F59E0B"/>
+    </g>
+
+    <!-- Cutting / Fragment accent (Scissors or separation marks indicating a "segment/clip") -->
+    <!-- Stylized minimalist cut lines / focus brackets -->
+    <path d="M 50 110 L 40 110 L 40 85 L 65 85" fill="none" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 190 130 L 200 130 L 200 155 L 175 155" fill="none" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Sparkles / Highlight accents denoting "precious excerpt" -->
+    <path d="M 175 75 L 178 82 L 185 85 L 178 88 L 175 95 L 172 88 L 165 85 L 172 82 Z" fill="#F59E0B"/>
+    <path d="M 65 155 L 67 160 L 72 162 L 67 164 L 65 169 L 63 164 L 58 162 L 63 160 Z" fill="#F59E0B" opacity="0.7"/>
+  </g>
+</svg>

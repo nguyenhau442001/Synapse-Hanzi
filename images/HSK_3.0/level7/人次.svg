@@ -1,0 +1,30 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Entrance Gate Structure -->
+  <path d="M60 180 L60 80 L80 80 L80 160 L160 160 L160 80 L180 80 L180 180 Z" fill="#374151"/>
+  <rect x="70" y="70" width="100" height="10" rx="2" fill="#F59E0B"/>
+  
+  <!-- Stylized People representing "Lượt người" (Multiple instances) -->
+  <!-- Person 1 -->
+  <g transform="translate(90, 140)">
+    <circle cx="10" cy="10" r="8" fill="#F59E0B"/>
+    <path d="M2 22 L18 22 L15 35 L5 35 Z" fill="#F59E0B"/>
+  </g>
+  
+  <!-- Person 2 -->
+  <g transform="translate(115, 120)">
+    <circle cx="10" cy="10" r="8" fill="#F59E0B" opacity="0.7"/>
+    <path d="M2 22 L18 22 L15 35 L5 35 Z" fill="#F59E0B" opacity="0.7"/>
+  </g>
+  
+  <!-- Person 3 -->
+  <g transform="translate(140, 100)">
+    <circle cx="10" cy="10" r="8" fill="#F59E0B" opacity="0.4"/>
+    <path d="M2 22 L18 22 L15 35 L5 35 Z" fill="#F59E0B" opacity="0.4"/>
+  </g>
+
+  <!-- Turnstile/Counter indicator -->
+  <rect x="160" y="140" width="10" height="20" fill="#4B5563"/>
+  <circle cx="165" cy="130" r="4" fill="#F59E0B"/>
+</svg>

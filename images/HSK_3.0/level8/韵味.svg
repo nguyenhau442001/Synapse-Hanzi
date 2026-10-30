@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Object: Traditional Chinese folding fan combined with flowing ink/mist lines representing "yùnwèi" (韵味 - lingering charm, classic elegance) -->
+  <g transform="translate(120, 115)">
+    <!-- Subtle glowing background aura for "depth / lingering resonance" -->
+    <circle cx="0" cy="0" r="70" fill="#2E3544" opacity="0.4"/>
+    <circle cx="0" cy="0" r="50" fill="#E6A15C" opacity="0.08"/>
+
+    <!-- Flowing elegant ink ribbon / mist (representing the subtle charm & lingering taste) -->
+    <path d="M-75 35 C-45 50, -15 20, 0 35 C15 50, 45 45, 75 25" fill="none" stroke="#E6A15C" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+    <path d="M-60 50 C-30 65, 0 35, 15 50 C30 65, 60 55, 85 40" fill="none" stroke="#E6A15C" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
+
+    <!-- Traditional Folding Fan (Closed/Semi-open profile showcasing classic oriental aesthetic) -->
+    <!-- Fan Guard / Outer Rib -->
+    <path d="M0 65 L-42 -45 L-38 -48 Z" fill="#C27830"/>
+    <path d="M0 65 L42 -45 L38 -48 Z" fill="#D4863C"/>
+
+    <!-- Fan Body / Folds (Semi-circle arc pointing upwards) -->
+    <path d="M-65 -35 C-55 -70, -25 -82, 0 -85 C25 -82, 55 -70, 65 -35 Z" fill="#2A313C" stroke="#E6A15C" stroke-width="2"/>
+
+    <!-- Inner fan rib lines radiating from the pivot point (0, 65) -->
+    <line x1="0" y1="65" x2="-65" y2="-35" stroke="#3E4756" stroke-width="1.5"/>
+    <line x1="0" y1="65" x2="-40" y2="-65" stroke="#3E4756" stroke-width="1.5"/>
+    <line x1="0" y1="65" x2="-15" y2="-80" stroke="#3E4756" stroke-width="1.5"/>
+    <line x1="0" y1="65" x2="15" y2="-80" stroke="#3E4756" stroke-width="1.5"/>
+    <line x1="0" y1="65" x2="40" y2="-65" stroke="#3E4756" stroke-width="1.5"/>
+    <line x1="0" y1="65" x2="65" y2="-35" stroke="#3E4756" stroke-width="1.5"/>
+
+    <!-- Decorative minimalist oriental plum blossom branch motif on the fan face -->
+    <path d="M-25 -45 C-15 -55, 5 -45, 20 -60" fill="none" stroke="#9DA8B8" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Plum petals -->
+    <circle cx="-18" cy="-50" r="3" fill="#E6A15C"/>
+    <circle cx="12" cy="-55" r="2.5" fill="#E6A15C"/>
+    <circle cx="18" cy="-62" r="2.5" fill="#E6A15C"/>
+
+    <!-- Pivot Pin / Rivet at bottom -->
+    <circle cx="0" cy="65" r="5" fill="#E6A15C" stroke="#1A1D24" stroke-width="1.5"/>
+
+    <!-- Hanging tassel attached to the fan base -->
+    <path d="M0 70 C0 85, -5 90, -5 105" fill="none" stroke="#E6A15C" stroke-width="2"/>
+    <path d="M-5 102 C-5 98, 5 98, 5 102 L3 118 C3 120, -3 120, -3 118 Z" fill="#C27830"/>
+    <line x1="-3" y1="120" x2="-3" y2="128" stroke="#E6A15C" stroke-width="1.5"/>
+    <line x1="0" y1="120" x2="0" y2="130" stroke="#E6A15C" stroke-width="1.5"/>
+    <line x1="3" y1="120" x2="3" y2="128" stroke="#E6A15C" stroke-width="1.5"/>
+  </g>
+</svg>

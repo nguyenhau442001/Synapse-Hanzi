@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Spirit Level (Water Level Tool) representing "Standard/Level" -->
+  <!-- Main body of the tool -->
+  <rect x="60" y="105" width="120" height="30" rx="4" fill="#3A3F4B" stroke="#FFB800" stroke-width="2"/>
+  
+  <!-- Central vial housing -->
+  <rect x="105" y="95" width="30" height="50" rx="6" fill="#2C313C" stroke="#FFB800" stroke-width="2"/>
+  
+  <!-- The liquid vial inside -->
+  <rect x="112" y="105" width="16" height="30" rx="8" fill="#222831" stroke="#FFB800" stroke-width="1"/>
+  
+  <!-- The bubble inside the liquid -->
+  <circle cx="120" cy="120" r="5" fill="#FFB800"/>
+  
+  <!-- Reference lines on the vial -->
+  <line x1="112" y1="112" x2="128" y2="112" stroke="#FFB800" stroke-width="1"/>
+  <line x1="112" y1="128" x2="128" y2="128" stroke="#FFB800" stroke-width="1"/>
+  
+  <!-- Decorative highlights for sleek flat look -->
+  <rect x="65" y="110" width="10" height="20" rx="2" fill="#4B5263"/>
+  <rect x="165" y="110" width="10" height="20" rx="2" fill="#4B5263"/>
+</svg>

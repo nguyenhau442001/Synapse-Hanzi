@@ -1,0 +1,58 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Deep water environment -->
+  <path d="M 0 100 Q 60 90, 120 105 T 240 95 L 240 240 L 0 240 Z" fill="#122438"/>
+  <path d="M 0 140 Q 70 155, 140 135 T 240 145 L 240 240 L 0 240 Z" fill="#0D1A2A"/>
+
+  <!-- Mysterious underwater cave opening (representing 深不见底的神秘水下洞穴) -->
+  <path d="M 40 240 C 40 170, 70 130, 110 130 C 150 130, 200 160, 200 240 Z" fill="#0A0F17"/>
+  <!-- Inner cave shadow -->
+  <path d="M 65 240 C 65 185, 85 150, 115 150 C 145 150, 175 180, 175 240 Z" fill="#05080C"/>
+
+  <!-- Diver entering the cave (Representing "潜入" - infiltrating/diving into) -->
+  <g transform="translate(115, 110) rotate(-25)">
+    <!-- Dive oxygen tank -->
+    <rect x="-8" y="10" width="10" height="26" rx="5" fill="#4B5563"/>
+    <rect x="5" y="12" width="8" height="22" rx="4" fill="#374151"/>
+
+    <!-- Flippers -->
+    <path d="M -15 65 L -22 80 L -8 77 Z" fill="#F59E0B"/>
+    <path d="M 5 65 L 12 82 L -1 77 Z" fill="#F59E0B"/>
+
+    <!-- Diver legs (Wetsuit) -->
+    <path d="M -12 35 L -14 62 L -6 62 L -5 35 Z" fill="#1F2937"/>
+    <path d="M 2 35 L 3 62 L 10 62 L 8 35 Z" fill="#1F2937"/>
+
+    <!-- Diver torso & arms -->
+    <path d="M -15 12 C -15 8, 10 8, 12 12 L 10 38 C 10 40, -13 40, -15 38 Z" fill="#111827"/>
+    <!-- Orange accent vest / gear -->
+    <path d="M -12 15 L 8 15 L 7 35 L -11 35 Z" fill="#D97706"/>
+
+    <!-- Arms -->
+    <path d="M -15 14 C -22 20, -25 32, -22 35" stroke="#1F2937" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M 12 14 C 20 22, 22 32, 19 36" stroke="#1F2937" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+    <!-- Diver helmet / head -->
+    <circle cx="-1" cy="2" r="9" fill="#111827"/>
+    <!-- Glowing faceplate/mask -->
+    <circle cx="-1" cy="2" r="6" fill="#60A5FA" opacity="0.9"/>
+    <!-- Helmet highlight -->
+    <path d="M -4 -1 A 4 4 0 0 1 2 -1" stroke="#E0F2FE" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Focus illumination / Beam from diver or exploration light -->
+  <path d="M 110 100 L 70 40 L 140 20 Z" fill="#60A5FA" opacity="0.08"/>
+
+  <!-- Ambient underwater bubbles -->
+  <circle cx="85" cy="85" r="2.5" fill="#93C5FD" opacity="0.6"/>
+  <circle cx="75" cy="70" r="1.5" fill="#93C5FD" opacity="0.5"/>
+  <circle cx="140" cy="115" r="2" fill="#93C5FD" opacity="0.7"/>
+  <circle cx="150" cy="95" r="3" fill="#93C5FD" opacity="0.4"/>
+  <circle cx="100" cy="55" r="1" fill="#93C5FD" opacity="0.8"/>
+
+  <!-- Glowing accent light inside dark cave -->
+  <circle cx="120" cy="200" r="18" fill="#F59E0B" opacity="0.15" filter="blur(4px)"/>
+  <circle cx="120" cy="200" r="4" fill="#FCD34D" opacity="0.8"/>
+</svg>

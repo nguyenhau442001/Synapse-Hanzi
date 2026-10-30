@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for future/time concept -->
+  <circle cx="120" cy="115" r="70" fill="#242B38" opacity="0.6"/>
+
+  <!-- Calendar Base (Representing "Year") -->
+  <g transform="translate(65, 55)">
+    <!-- Calendar Body -->
+    <rect x="0" y="25" width="110" height="95" rx="12" fill="#2B313C"/>
+    <!-- Calendar Header/Top -->
+    <path d="M 0 37 C 0 30 5 25 12 25 L 98 25 C 105 25 110 30 110 37 L 110 50 L 0 50 Z" fill="#E58E26"/>
+    <!-- Binding Rings -->
+    <rect x="25" y="15" width="8" height="16" rx="4" fill="#8B949E"/>
+    <rect x="77" y="15" width="8" height="16" rx="4" fill="#8B949E"/>
+    
+    <!-- Grid Dots / Date indicators -->
+    <circle cx="28" cy="70" r="5" fill="#484F58"/>
+    <circle cx="55" cy="70" r="5" fill="#484F58"/>
+    <circle cx="82" cy="70" r="5" fill="#484F58"/>
+    <circle cx="28" cy="95" r="5" fill="#484F58"/>
+    <circle cx="55" cy="95" r="5" fill="#484F58"/>
+    <!-- Highlighted date for "Next Year" -->
+    <circle cx="82" cy="95" r="7" fill="#E58E26"/>
+  </g>
+
+  <!-- Forward Arrow / Transition Arc (Representing "Coming / Next") -->
+  <g>
+    <path d="M 60 160 C 80 185, 160 185, 180 160" fill="none" stroke="#E58E26" stroke-width="5" stroke-linecap="round"/>
+    <!-- Arrowhead -->
+    <path d="M 168 150 L 182 161 L 167 170" fill="none" stroke="#E58E26" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Sprout / Spring element (Tied to context: spring plowing / new beginning) -->
+  <g transform="translate(112, 125)">
+    <!-- Soil mound -->
+    <ellipse cx="8" cy="30" rx="22" ry="7" fill="#484F58"/>
+    <!-- Stem and leaves -->
+    <path d="M 8 30 Q 8 10 20 2" fill="none" stroke="#2ECC71" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 8 18 Q -2 12 -4 4 Q 6 4 8 18 Z" fill="#2ECC71"/>
+    <path d="M 13 10 Q 22 4 25 -2 Q 22 10 13 10 Z" fill="#2ECC71"/>
+  </g>
+
+</svg>

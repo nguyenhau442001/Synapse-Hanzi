@@ -1,0 +1,57 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative subtle elements -->
+  <circle cx="120" cy="120" r="88" fill="none" stroke="#262B35" stroke-width="2"/>
+  <path d="M 60,180 L 180,180" stroke="#2A303C" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Postbox / Post Office Object (Central Visual for 邮政) -->
+  <g transform="translate(0, 5)">
+    <!-- Postbox Base/Stand -->
+    <rect x="108" y="150" width="24" height="26" fill="#3A4354" rx="4"/>
+    <ellipse cx="120" cy="176" rx="20" ry="5" fill="#2E3542"/>
+
+    <!-- Main Body of Postbox (Cylindrical modern pillar style) -->
+    <rect x="88" y="70" width="64" height="84" rx="14" fill="#E65100"/>
+    <!-- Highlight depth for 3D/Flat balance -->
+    <rect x="88" y="70" width="14" height="84" rx="7" fill="#F57C00"/>
+
+    <!-- Top Rounded Cap -->
+    <path d="M 88,80 C 88,70 98,62 120,62 C 142,62 152,70 152,80 L 152,88 L 88,88 Z" fill="#FF8F00"/>
+
+    <!-- Mail Slot -->
+    <rect x="100" y="98" width="40" height="8" rx="4" fill="#1A1D24"/>
+    <rect x="104" y="100" width="32" height="4" rx="2" fill="#0D0E12"/>
+
+    <!-- Emblem / Post Horn Symbol on Postbox -->
+    <circle cx="120" cy="126" r="16" fill="#FFA726"/>
+    <path d="M 112,122 C 112,120 114,118 116,118 L 124,118 C 126,118 128,120 128,122 L 128,130 C 128,132 126,134 124,134 L 116,134 C 114,134 112,132 112,130 Z" fill="#E65100"/>
+    <path d="M 116,121 L 124,121 M 116,125 L 124,125 M 116,129 L 122,129" stroke="#FFA726" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Keyhole -->
+    <circle cx="120" cy="144" r="3" fill="#1A1D24"/>
+    <path d="M 119,144 L 121,144 L 121.5,148 L 118.5,148 Z" fill="#1A1D24"/>
+  </g>
+
+  <!-- Floating Mail / Letters (emphasizing delivery/postal service) -->
+  <!-- Letter 1 (Left floating) -->
+  <g transform="translate(42, 85) rotate(-15)">
+    <rect x="0" y="0" width="32" height="22" rx="4" fill="#FFFFFF"/>
+    <path d="M 0,2 L 16,13 L 32,2" fill="none" stroke="#CFD8DC" stroke-width="2" stroke-linejoin="round"/>
+    <rect x="4" y="6" width="8" height="6" rx="1" fill="#FF5722"/>
+  </g>
+
+  <!-- Letter 2 (Right floating with stamp) -->
+  <g transform="translate(164, 110) rotate(12)">
+    <rect x="0" y="0" width="36" height="24" rx="4" fill="#F4F6F8"/>
+    <path d="M 0,2 L 18,14 L 36,2" fill="none" stroke="#B0BEC5" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Stamp accent -->
+    <rect x="25" y="4" width="7" height="9" fill="#E53935"/>
+  </g>
+
+  <!-- Small sparkling accent/focus dots -->
+  <circle cx="56" cy="72" r="2.5" fill="#FFC107"/>
+  <circle cx="184" cy="98" r="2" fill="#FFC107"/>
+  <circle cx="72" cy="148" r="1.5" fill="#64B5F6"/>
+</svg>

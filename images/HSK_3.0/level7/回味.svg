@@ -1,0 +1,65 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle ambient glow representing lingering thought/memory -->
+  <circle cx="120" cy="110" r="75" fill="#2A303C" opacity="0.5"/>
+  <circle cx="120" cy="110" r="55" fill="#363E4D" opacity="0.4"/>
+
+  <!-- Open Philosophical Book (Representing the novel/reading context) -->
+  <g transform="translate(0, 15)">
+    <!-- Book shadow/spine -->
+    <path d="M120,155 L120,178 C120,178 105,172 65,175 C40,177 25,185 25,185 L25,160 C25,160 40,152 65,150 C105,147 120,155 120,155 Z" fill="#222733"/>
+    <path d="M120,155 L120,178 C120,178 135,172 175,175 C200,177 215,185 215,185 L215,160 C215,160 200,152 175,150 C135,147 120,155 120,155 Z" fill="#222733"/>
+
+    <!-- Left Book Page -->
+    <path d="M118,153 C100,147 65,148 30,158 L30,183 C65,173 100,172 118,178 Z" fill="#E2E8F0"/>
+    <!-- Right Book Page -->
+    <path d="M122,153 C140,147 175,148 210,158 L210,183 C175,173 140,172 122,178 Z" fill="#EDF2F7"/>
+
+    <!-- Abstract text lines on pages -->
+    <line x1="42" y1="162" x2="80" y2="159" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="42" y1="168" x2="95" y2="164" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="42" y1="174" x2="70" y2="171" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+
+    <line x1="150" y1="159" x2="198" y2="162" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="135" y1="164" x2="198" y2="168" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="160" y1="171" x2="198" y2="174" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Central Physical Object: Elegant Ceramic Teacup (Visualizing the physical metaphor of "Hui Wei" / lingering aftertaste) -->
+  <g transform="translate(0, 10)">
+    <!-- Tea / Liquid surface inside cup -->
+    <ellipse cx="120" cy="95" rx="32" ry="10" fill="#D97706"/>
+
+    <!-- Saucer -->
+    <ellipse cx="120" cy="120" rx="50" ry="14" fill="#334155"/>
+    <ellipse cx="120" cy="118" rx="42" ry="10" fill="#475569"/>
+
+    <!-- Teacup Body -->
+    <path d="M 88 95 C 88 120, 95 125, 120 125 C 145 125, 152 120, 152 95 Z" fill="#F8FAFC"/>
+    <!-- Teacup Inner Shadow/Rim -->
+    <ellipse cx="120" cy="95" rx="32" ry="8" fill="#CBD5E1"/>
+    <ellipse cx="120" cy="95" rx="28" ry="6" fill="#F8FAFC"/>
+
+    <!-- Teacup Handle -->
+    <path d="M 150 100 C 165 100, 165 118, 150 118" fill="none" stroke="#F8FAFC" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Lingering Aftertaste / Evaporation Waves (Golden/Orange accent lines drifting upward to signify contemplation, depth, and lasting flavor) -->
+  <g fill="none" stroke-linecap="round">
+    <!-- Center rising wisp -->
+    <path d="M 120 75 Q 128 55, 112 35 Q 96 15, 120 5" stroke="#F59E0B" stroke-width="3" opacity="0.9"/>
+    
+    <!-- Left rising wisp -->
+    <path d="M 108 80 Q 98 62, 108 45 Q 118 28, 105 15" stroke="#FBBF24" stroke-width="2.5" opacity="0.6"/>
+
+    <!-- Right rising wisp -->
+    <path d="M 132 80 Q 142 62, 132 45 Q 122 28, 135 15" stroke="#FBBF24" stroke-width="2.5" opacity="0.6"/>
+  </g>
+
+  <!-- Subtle glowing nodes representing philosophical depth and lingering resonance -->
+  <circle cx="120" cy="8" r="3" fill="#FDE68A"/>
+  <circle cx="103" cy="18" r="2" fill="#FDE68A" opacity="0.8"/>
+  <circle cx="137" cy="18" r="2" fill="#FDE68A" opacity="0.8"/>
+</svg>

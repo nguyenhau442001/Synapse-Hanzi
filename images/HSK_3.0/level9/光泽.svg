@@ -1,0 +1,65 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative subtle elements -->
+  <circle cx="120" cy="120" r="85" fill="none" stroke="#232733" stroke-width="2" stroke-dasharray="4 8"/>
+
+  <!-- Pearl Necklace String/Curve -->
+  <path d="M 60,150 Q 120,200 180,150" fill="none" stroke="#323846" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Individual Pearls with subtle depth -->
+  <!-- Left background pearls -->
+  <circle cx="75" cy="158" r="8" fill="#D8E2E6"/>
+  <circle cx="95" cy="168" r="9" fill="#E4ECEF"/>
+
+  <!-- Right background pearls -->
+  <circle cx="165" cy="158" r="8" fill="#D8E2E6"/>
+  <circle cx="145" cy="168" r="9" fill="#E4ECEF"/>
+
+  <!-- CENTRAL HERO OBJECT: The Lustrous Pearl -->
+  <g transform="translate(120, 115)">
+    <!-- Outer glow representing "guangze" (luster/gloss) -->
+    <circle cx="0" cy="0" r="38" fill="#FFD700" opacity="0.12"/>
+    <circle cx="0" cy="0" r="32" fill="#FFD700" opacity="0.2"/>
+
+    <!-- Pearl Base Gradient (Simulated via layered flat vectors) -->
+    <circle cx="0" cy="0" r="28" fill="#EAF0F4"/>
+    
+    <!-- Pearl Inner Shading for spherical depth -->
+    <path d="M 0,-28 A 28 28 0 0,1 28,0 A 28 28 0 0,1 0,28 A 28 28 0 0,1 -28,0 A 28 28 0 0,1 0,-28 Z" fill="url(#pearlGrad)" opacity="0.8"/>
+    
+    <!-- Soft iridescent ambient reflections (characteristic of pearl luster) -->
+    <ellipse cx="-8" cy="8" rx="14" ry="8" fill="#FFF" opacity="0.2" transform="rotate(-30 -8 8)"/>
+    <ellipse cx="6" cy="-10" rx="10" ry="5" fill="#FFE5A3" opacity="0.4" transform="rotate(25 6 -10)"/>
+
+    <!-- Primary Specular Highlight (The sharp gloss of "guangze") -->
+    <ellipse cx="-10" cy="-10" rx="8" ry="4.5" fill="#FFFFFF" opacity="0.9" transform="rotate(-35 -10 -10)"/>
+    <circle cx="-12" cy="-12" r="2" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Connected Pearls flanking the center -->
+  <circle cx="111" cy="173" r="10" fill="#F0F4F7"/>
+  <circle cx="129" cy="173" r="10" fill="#F0F4F7"/>
+
+  <!-- Floating Luster Sparkles / Light Rays highlighting the gloss property -->
+  <g fill="#FFD700">
+    <!-- Top-left sparkle -->
+    <path d="M 75 70 Q 75 78 67 78 Q 75 78 75 86 Q 75 78 83 78 Q 75 78 75 70 Z" opacity="0.8"/>
+    <!-- Top-right sparkle (larger) -->
+    <path d="M 165 85 Q 165 96 154 96 Q 165 96 165 107 Q 165 96 176 96 Q 165 96 165 85 Z" opacity="0.9"/>
+    <!-- Small accent sparkle -->
+    <circle cx="152" cy="72" r="2.5" opacity="0.7"/>
+    <circle cx="88" cy="110" r="1.5" opacity="0.5"/>
+  </g>
+
+  <!-- Gradients Definition -->
+  <defs>
+    <radialGradient id="pearlGrad" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="45%" stop-color="#E2EDF2"/>
+      <stop offset="85%" stop-color="#A5B8C2"/>
+      <stop offset="100%" stop-color="#7B93A0"/>
+    </radialGradient>
+  </defs>
+</svg>

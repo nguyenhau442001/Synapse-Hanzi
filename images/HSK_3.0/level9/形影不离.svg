@@ -1,0 +1,73 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <defs>
+    <!-- Background glowing effect -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3A4660" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#1A1D24" stop-opacity="0"/>
+    </radialGradient>
+    
+    <!-- Shadow for depth -->
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+
+    <!-- Warm accent gradient -->
+    <linearGradient id="goldAcc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB703"/>
+      <stop offset="100%" stop-color="#FB8500"/>
+    </linearGradient>
+    
+    <!-- Character A gradient (Front) -->
+    <linearGradient id="charA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#219EBC"/>
+      <stop offset="100%" stop-color="#023047"/>
+    </linearGradient>
+
+    <!-- Character B gradient (Shadow/Twin) -->
+    <linearGradient id="charB" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8ECAE6"/>
+      <stop offset="100%" stop-color="#219EBC"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient light -->
+  <circle cx="120" cy="120" r="90" fill="url(#bgGlow)"/>
+
+  <!-- Ground plane / connection floor -->
+  <ellipse cx="120" cy="185" rx="70" ry="12" fill="#12141A"/>
+  <ellipse cx="120" cy="185" rx="50" ry="8" fill="none" stroke="#FFB703" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 4"/>
+
+  <!-- The "Shadow / Silhouette" figure (representing the "影" - shadow/inseparable twin) -->
+  <g transform="translate(-15, 0)" filter="url(#softShadow)">
+    <!-- Body -->
+    <path d="M 105 110 C 105 95 115 85 125 85 C 135 85 145 95 145 110 L 150 175 C 150 180 145 185 140 185 L 110 185 C 105 185 100 180 100 175 Z" fill="url(#charB)" opacity="0.85"/>
+    <!-- Head -->
+    <circle cx="125" cy="65" r="14" fill="url(#charB)" opacity="0.85"/>
+    <!-- Hair style twin -->
+    <path d="M 111 62 C 113 52 137 52 139 62 C 135 58 115 58 111 62 Z" fill="#1A1D24" opacity="0.4"/>
+  </g>
+
+  <!-- The Main figure (representing the "形" - form/person) -->
+  <g transform="translate(15, 0)" filter="url(#softShadow)">
+    <!-- Body -->
+    <path d="M 105 110 C 105 95 115 85 125 85 C 135 85 145 95 145 110 L 150 175 C 150 180 145 185 140 185 L 110 185 C 105 185 100 180 100 175 Z" fill="url(#charA)"/>
+    <!-- Accent scarf / detail -->
+    <path d="M 115 105 C 120 112 130 112 135 105 L 138 115 C 130 120 120 120 112 115 Z" fill="url(#goldAcc)"/>
+    <!-- Head -->
+    <circle cx="125" cy="65" r="14" fill="url(#charA)"/>
+    <!-- Hair style main -->
+    <path d="M 111 60 C 113 48 137 48 139 60 C 135 55 115 55 111 60 Z" fill="#1A1D24" opacity="0.6"/>
+  </g>
+
+  <!-- Interlocking hands / tight bond indicator -->
+  <circle cx="120" cy="145" r="8" fill="url(#goldAcc)" filter="url(#softShadow)"/>
+  <circle cx="120" cy="145" r="4" fill="#FFFFFF" opacity="0.8"/>
+
+  <!-- Minimalist connection wave lines symbolizing "心意相通" / "如影随形" -->
+  <path d="M 95 130 C 105 125 135 125 145 130" fill="none" stroke="#FFB703" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 100 138 C 108 134 132 134 140 138" fill="none" stroke="#FFB703" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+
+</svg>

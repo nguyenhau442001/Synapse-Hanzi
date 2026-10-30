@@ -1,0 +1,36 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Central Illustration: Currency Conversion / Conversion Scale Object (Noun: physical entity representing 'equivalent value / conversion') -->
+  <g transform="translate(0, 0)">
+    <!-- Scale Base / Stand -->
+    <path d="M120 170 L145 195 L95 195 Z" fill="#4A5568"/>
+    <rect x="114" y="115" width="12" height="60" rx="4" fill="#718096"/>
+    <circle cx="120" cy="115" r="8" fill="#E2E8F0"/>
+
+    <!-- Balance Beam -->
+    <rect x="60" y="110" width="120" height="6" rx="3" fill="#CBD5E0"/>
+
+    <!-- Left Pan (Foreign Currency Symbol represented by crisp gold coin/token) -->
+    <line x1="75" y1="116" x2="75" y2="145" stroke="#A0AEC0" stroke-width="2"/>
+    <path d="M55 145 C55 140 95 140 95 145" fill="none" stroke="#A0AEC0" stroke-width="2"/>
+    <circle cx="75" cy="135" r="18" fill="#F6AD55"/>
+    <circle cx="75" cy="135" r="14" fill="#ED8936"/>
+    <text x="75" y="141" font-family="sans-serif" font-weight="bold" font-size="16" fill="#FFFFFF" text-anchor="middle">$</text>
+
+    <!-- Right Pan (Equivalent Local Currency Symbol represented by matching gold coin/token) -->
+    <line x1="165" y1="116" x2="165" y2="135" stroke="#A0AEC0" stroke-width="2"/>
+    <path d="M145 135 C145 130 185 130 185 135" fill="none" stroke="#A0AEC0" stroke-width="2"/>
+    <circle cx="165" cy="125" r="18" fill="#ECC94B"/>
+    <circle cx="165" cy="125" r="14" fill="#D69E2E"/>
+    <text x="165" y="131" font-family="sans-serif" font-weight="bold" font-size="16" fill="#1A1D24" text-anchor="middle">¥</text>
+
+    <!-- Glowing Conversion Arrow Arcing Above -->
+    <path d="M 85 85 Q 120 50 155 85" fill="none" stroke="#4FD1C5" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 4"/>
+    <polygon points="155,75 165,88 150,90" fill="#4FD1C5"/>
+
+    <!-- Sparkle / Precision Indicator -->
+    <path d="M120 40 L123 48 L131 51 L123 54 L120 62 L117 54 L109 51 L117 48 Z" fill="#F6AD55"/>
+  </g>
+</svg>
