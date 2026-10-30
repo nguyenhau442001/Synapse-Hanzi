@@ -574,6 +574,10 @@ class TestFlashcardIllustrationIntegration(unittest.TestCase):
         self.assertIn('hsk_show_illustrations', self.flashcard_js)
         self.assertIn('hsk_show_illustrations', self.state_js)
 
+    def test_default_show_illustration_is_false(self):
+        """Default value for showIllustration must be false unless explicitly enabled by user."""
+        self.assertIn("return saved !== null ? saved === 'true' : false;", self.state_js)
+
     def test_svg_viewbox_normalization_handles_malformed_viewbox(self):
         """normalizeSvgViewBox must correctly fix malformed 3-number viewBox='0 0 240'."""
         malformed = '<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">'

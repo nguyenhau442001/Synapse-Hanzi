@@ -191,6 +191,8 @@ function buildCardArea() {
     <div id="dailyNewLimitMessage" class="daily-new-limit-message" role="status"></div>
     <div class="unknown-words-list" id="unknownWordsList"></div>
   `;
+  document.body.classList.toggle('hide-illustrations', !showIllustration);
+  document.documentElement.classList.toggle('hide-illustrations', !showIllustration);
   updateCardMoreMenuState();
   if (typeof updateWeakWordToggleButton === 'function') updateWeakWordToggleButton();
   updateProgress();
