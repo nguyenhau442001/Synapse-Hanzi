@@ -96,6 +96,17 @@ try {
 function setPrimaryTab(tab, options) {
   const previousTab = primaryTab;
   primaryTab = tab;
+  // Ensure non-tab study screens are hidden when switching primary tabs
+  const screenCards = document.getElementById('screenCards');
+  if (screenCards) screenCards.style.display = 'none';
+  const screenRadicalCards = document.getElementById('screenRadicalCards');
+  if (screenRadicalCards) screenRadicalCards.style.display = 'none';
+  const screenTodayReviews = document.getElementById('screenTodayReviews');
+  if (screenTodayReviews) screenTodayReviews.style.display = 'none';
+  document.body.classList.remove('study-mode', 'flashcard-study-mode', 'today-reviews-focus-mode');
+  if (tab !== 'vocab') {
+    currentLevel = null;
+  }
   Object.entries(PRIMARY_TAB_SCREENS).forEach(([key, { tabId, screenId }]) => {
     const isActive = key === tab;
     const tabEl = document.getElementById(tabId);
@@ -305,6 +316,13 @@ function startRadicalStudy(mode, groupIndex, options) {
   document.getElementById('primaryTabs').style.display = 'none';
   document.getElementById('learningDashboard').style.display = 'none';
   document.getElementById('screenRadicalHub').style.display = 'none';
+  const screenCards = document.getElementById('screenCards');
+  if (screenCards) screenCards.style.display = 'none';
+  const screenTodayReviews = document.getElementById('screenTodayReviews');
+  if (screenTodayReviews) screenTodayReviews.style.display = 'none';
+  const screenVocabHub = document.getElementById('screenVocabHub');
+  if (screenVocabHub) screenVocabHub.style.display = 'none';
+  document.body.classList.remove('flashcard-study-mode', 'today-reviews-focus-mode');
   document.getElementById('screenRadicalCards').style.display = '';
   document.getElementById('radicalTransferPanel').hidden = true;
   document.body.classList.add('study-mode');
@@ -322,8 +340,10 @@ function openRadicalOverviewFromHub(mode) {
 }
 
 function goBackToRadicalHub() {
-  document.body.classList.remove('study-mode');
+  document.body.classList.remove('study-mode', 'flashcard-study-mode', 'today-reviews-focus-mode');
   document.getElementById('screenRadicalCards').style.display = 'none';
+  const screenCards = document.getElementById('screenCards');
+  if (screenCards) screenCards.style.display = 'none';
   document.getElementById('screenRadicalHub').style.display = '';
   document.getElementById('primaryTabs').style.display = '';
   document.getElementById('learningDashboard').style.display = '';

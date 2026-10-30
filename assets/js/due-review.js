@@ -241,9 +241,13 @@ async function openReviewQueue(title, loadQueue, doneMessage) {
   todayReviewDoneMessage = doneMessage;
   const hub = document.getElementById('screenVocabHub');
   const cards = document.getElementById('screenCards');
+  const radicalCards = document.getElementById('screenRadicalCards');
+  const radicalHub = document.getElementById('screenRadicalHub');
   const reviewScreen = document.getElementById('screenTodayReviews');
   if (hub) hub.style.display = 'none';
   if (cards) cards.style.display = 'none';
+  if (radicalCards) radicalCards.style.display = 'none';
+  if (radicalHub) radicalHub.style.display = 'none';
   if (reviewScreen) reviewScreen.style.display = '';
   const primaryTabs = document.getElementById('primaryTabs');
   if (primaryTabs) primaryTabs.style.display = 'none';
@@ -283,6 +287,10 @@ function closeTodayReviews() {
   document.body.classList.remove('today-reviews-focus-mode');
   const reviewScreen = document.getElementById('screenTodayReviews');
   if (reviewScreen) reviewScreen.style.display = 'none';
+  const cards = document.getElementById('screenCards');
+  if (cards) cards.style.display = 'none';
+  const radicalCards = document.getElementById('screenRadicalCards');
+  if (radicalCards) radicalCards.style.display = 'none';
   const hub = document.getElementById('screenVocabHub');
   if (hub) hub.style.display = '';
   const primaryTabs = document.getElementById('primaryTabs');

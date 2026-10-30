@@ -638,8 +638,15 @@ function goBackToPicker() {
   setActiveStudyWord(null);
   document.body.classList.remove('study-mode');
   document.body.classList.remove('flashcard-study-mode');
+  document.body.classList.remove('today-reviews-focus-mode');
   const wasTopic = currentLevel && LEVELS[currentLevel] && LEVELS[currentLevel].isTopic;
   document.getElementById('screenCards').style.display = 'none';
+  const radicalCards = document.getElementById('screenRadicalCards');
+  if (radicalCards) radicalCards.style.display = 'none';
+  const radicalHub = document.getElementById('screenRadicalHub');
+  if (radicalHub) radicalHub.style.display = 'none';
+  const todayScreen = document.getElementById('screenTodayReviews');
+  if (todayScreen) todayScreen.style.display = 'none';
   const studyLevelBadge = document.getElementById('studyLevelBadge');
   if (studyLevelBadge) studyLevelBadge.textContent = '';
   const vocabHub = document.getElementById('screenVocabHub');
@@ -680,6 +687,7 @@ async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal = false
     SpaRouter.pushView({ view: 'cards', level: level });
   }
   if (typeof closeAllStudyDrawers === 'function') closeAllStudyDrawers();
+  document.body.classList.remove('today-reviews-focus-mode');
   document.body.classList.add('study-mode');
   document.body.classList.add('flashcard-study-mode');
   window.scrollTo({ top: 0, behavior: 'instant' });
@@ -710,6 +718,12 @@ async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal = false
   document.getElementById('transferPanel').hidden = true;
   document.getElementById('screenPicker').style.display = 'none';
   document.getElementById('screenTopicPicker').style.display = 'none';
+  const screenRadicalCards = document.getElementById('screenRadicalCards');
+  if (screenRadicalCards) screenRadicalCards.style.display = 'none';
+  const screenRadicalHub = document.getElementById('screenRadicalHub');
+  if (screenRadicalHub) screenRadicalHub.style.display = 'none';
+  const screenTodayReviews = document.getElementById('screenTodayReviews');
+  if (screenTodayReviews) screenTodayReviews.style.display = 'none';
   document.getElementById('screenCards').style.display = '';
   document.getElementById('overviewTab').disabled = true;
   document.getElementById('cardArea').innerHTML = `

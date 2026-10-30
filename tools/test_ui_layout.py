@@ -736,6 +736,41 @@ class TestFlashcardExperienceRefinements(unittest.TestCase):
                          "studyNavRow must not be forcibly hidden when card is flipped")
 
 
+class TestScreenMutualExclusion(unittest.TestCase):
+    """Ensure study screens (screenCards, screenRadicalCards, screenTodayReviews) never overlap or remain simultaneously visible."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.levels_js = (REPO_ROOT / "assets" / "js" / "levels.js").read_text(encoding="utf-8")
+        cls.radicals_js = (REPO_ROOT / "assets" / "js" / "radicals.js").read_text(encoding="utf-8")
+        cls.due_review_js = (REPO_ROOT / "assets" / "js" / "due-review.js").read_text(encoding="utf-8")
+        cls.spa_router_js = (REPO_ROOT / "assets" / "js" / "spa-router.js").read_text(encoding="utf-8")
+
+    def test_select_level_hides_radical_and_review_screens(self):
+        """selectLevel must hide screenRadicalCards, screenRadicalHub, and screenTodayReviews."""
+        self.assertIn("screenRadicalCards", self.levels_js)
+        self.assertIn("screenRadicalCards.style.display = 'none'", self.levels_js)
+        self.assertIn("screenTodayReviews.style.display = 'none'", self.levels_js)
+
+    def test_start_radical_study_hides_cards_and_vocab_screens(self):
+        """startRadicalStudy must hide screenCards, screenTodayReviews, and screenVocabHub."""
+        self.assertIn("screenCards.style.display = 'none'", self.radicals_js)
+        self.assertIn("screenTodayReviews.style.display = 'none'", self.radicals_js)
+        self.assertIn("screenVocabHub.style.display = 'none'", self.radicals_js)
+
+    def test_set_primary_tab_hides_all_active_study_overlays(self):
+        """setPrimaryTab must ensure screenCards, screenRadicalCards, and screenTodayReviews are hidden."""
+        self.assertIn("function setPrimaryTab(", self.radicals_js)
+        self.assertIn("screenCards.style.display = 'none'", self.radicals_js)
+        self.assertIn("screenRadicalCards.style.display = 'none'", self.radicals_js)
+
+    def test_spa_router_enforces_screen_mutual_exclusion(self):
+        """SpaRouter.applyState must enforce mutual exclusion between radicalCards, cards, and todayReviews."""
+        self.assertIn("state.view !== 'radicalCards'", self.spa_router_js)
+        self.assertIn("state.view !== 'cards'", self.spa_router_js)
+        self.assertIn("screenRadicalCards", self.spa_router_js)
+
+
 
 def run_tests():
     suite = unittest.TestSuite()
@@ -756,6 +791,7 @@ def run_tests():
     suite.addTests(loader.loadTestsFromTestCase(TestFlashcardIllustrationIntegration))
     suite.addTests(loader.loadTestsFromTestCase(TestLearningProgressNavigator))
     suite.addTests(loader.loadTestsFromTestCase(TestFlashcardExperienceRefinements))
+    suite.addTests(loader.loadTestsFromTestCase(TestScreenMutualExclusion))
 
     runner = unittest.TextTestRunner(verbosity=2)
     result = runner.run(suite)
