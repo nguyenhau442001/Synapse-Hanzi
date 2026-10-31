@@ -182,7 +182,7 @@ else:
 
 # 3. Output results
 print("\n" + "=" * 60)
-print("  SYNAPSE GRADED READING - DATA VALIDATION REPORT")
+print("  汉字思维 (HANZI MIND) GRADED READING - DATA VALIDATION REPORT")
 print("=" * 60)
 print(f"  Total Story Files:     {total_readings}")
 print(f"  Total Sentences:       {total_sentences}")

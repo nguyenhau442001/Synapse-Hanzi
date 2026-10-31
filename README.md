@@ -1,6 +1,7 @@
-# ⚡ Synapse Hanzi — Cognitive Visual Workstation (HSK 1–9)
+# ⚡ 汉字思维 (Hànzì Sīwéi) — Hanzi Mind
 
-> **Trạm học từ vựng chữ Hán đa giác quan, hiện đại, tối giản và 100% Offline (PWA).**  
+> **Think in Characters. Master Chinese.**  
+> Trạm học từ vựng chữ Hán qua tư duy bản chất, liên kết ngữ cảnh, đa giác quan và 100% Offline (PWA).  
 > Kết hợp minh họa câu chuyện trực quan (Visual Mnemonics), thuật toán **Spaced Repetition (SRS)**, phân tích ngữ pháp đọc hiểu **HSK 4 Chuẩn Hanban**, luyện viết thứ tự nét và tra cứu âm Hán - Việt chuyên sâu.
 
 ---
@@ -15,7 +16,7 @@
     <img src="https://img.shields.io/badge/🌐_Mở_Trực_Tuyến_Ngay-https%3A%2F%2Fnguyenhau442001.github.io%2FSynapse--Hanzi-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo">
   </a>
   <img src="https://img.shields.io/badge/Chế_độ-100%25_Offline_(PWA)-22c55e?style=for-the-badge&logo=pwa&logoColor=white" alt="PWA">
-  <img src="https://img.shields.io/badge/Phiên_bản-v1.0.0-blue?style=for-the-badge&logo=semver&logoColor=white" alt="Version v1.0.0">
+  <img src="https://img.shields.io/badge/Phiên_bản-v1.1.0-blue?style=for-the-badge&logo=semver&logoColor=white" alt="Version v1.1.0">
   <img src="https://img.shields.io/badge/Build-Zero_Config-3b82f6?style=for-the-badge&logo=javascript&logoColor=white" alt="Zero Build">
   <img src="https://img.shields.io/badge/HSK-HSK_2.0_&_3.0_(1--9)-f59e0b?style=for-the-badge" alt="HSK 1-9">
 </p>
@@ -28,7 +29,7 @@
 Theo dõi mục tiêu học tập hàng ngày, chuỗi ngày học (Streak 🔥), từ vựng của ngày và biểu đồ đóng góp (Heatmap).
 
 <p align="center">
-  <img src="assets/images/screenshots/01_dashboard.png" alt="Bảng điều khiển học tập Synapse Hanzi" width="95%">
+  <img src="assets/images/screenshots/01_dashboard.png" alt="Bảng điều khiển học tập 汉字思维 (Hanzi Mind)" width="95%">
 </p>
 
 ---

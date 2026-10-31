@@ -4,7 +4,7 @@
 tools/test_ui_layout.py
 Automated test suite verifying responsive balance, layout integrity,
 proportions, typography floors, theme contrast, touch targets, and
-mobile/desktop parity across Synapse Hanzi.
+mobile/desktop parity across 汉字思维 (Hanzi Mind).
 """
 
 import json
@@ -603,7 +603,7 @@ class TestFlashcardIllustrationIntegration(unittest.TestCase):
 
 
 class TestLearningProgressNavigator(unittest.TestCase):
-    """Test suite for the redesigned Learning Progress Navigator in Synapse Hanzi."""
+    """Test suite for the redesigned Learning Progress Navigator in 汉字思维 (Hanzi Mind)."""
 
     @classmethod
     def setUpClass(cls):
@@ -685,7 +685,7 @@ class TestLearningProgressNavigator(unittest.TestCase):
 
 
 class TestFlashcardExperienceRefinements(unittest.TestCase):
-    """Test suite for the comprehensive visual and usability refinements in Synapse Hanzi Flashcard experience."""
+    """Test suite for the comprehensive visual and usability refinements in 汉字思维 (Hanzi Mind) Flashcard experience."""
 
     @classmethod
     def setUpClass(cls):

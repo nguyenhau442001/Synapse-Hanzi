@@ -1,4 +1,4 @@
-// Study Help & Shortcuts Modal for Synapse Hanzi
+// Study Help & Shortcuts Modal for 汉字思维 (Hanzi Mind)
 (function () {
   'use strict';
 
@@ -167,7 +167,7 @@
                   <h3 class="study-info-card-title">Thuật toán Lặp lại ngắt quãng (SRS)</h3>
                 </div>
                 <p class="study-info-card-desc">
-                  Synapse Hanzi áp dụng thuật toán giãn cách thông minh (FSRS &amp; Ebbinghaus). Các từ bạn đánh giá "Chưa nhớ" sẽ xuất hiện lại ngay, còn các từ "Đã thuộc" sẽ được tự động dời lịch ôn sang 3 ngày, 7 ngày hoặc 1 tháng tới để đưa vào vùng trí nhớ dài hạn.
+                  汉字思维 (Hanzi Mind) áp dụng thuật toán giãn cách thông minh (FSRS &amp; Ebbinghaus). Các từ bạn đánh giá "Chưa nhớ" sẽ xuất hiện lại ngay, còn các từ "Đã thuộc" sẽ được tự động dời lịch ôn sang 3 ngày, 7 ngày hoặc 1 tháng tới để đưa vào vùng trí nhớ dài hạn.
                 </p>
               </div>
 
@@ -251,7 +251,7 @@
               <details class="study-faq-item">
                 <summary class="study-faq-summary">Làm sao để dùng ứng dụng khi không có mạng (Offline)?</summary>
                 <div class="study-faq-content">
-                  Synapse Hanzi được thiết kế chuẩn PWA (Progressive Web App). Trên trình duyệt Chrome, Safari hoặc Edge, bạn hãy nhấn nút <strong>"Thêm vào Màn hình chính"</strong> hoặc <strong>"Cài đặt ứng dụng"</strong> để học ngoại tuyến mọi lúc mọi nơi.
+                  汉字思维 (Hanzi Mind) được thiết kế chuẩn PWA (Progressive Web App). Trên trình duyệt Chrome, Safari hoặc Edge, bạn hãy nhấn nút <strong>"Thêm vào Màn hình chính"</strong> hoặc <strong>"Cài đặt ứng dụng"</strong> để học ngoại tuyến mọi lúc mọi nơi.
                 </div>
               </details>
 
