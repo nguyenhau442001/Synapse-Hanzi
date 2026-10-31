@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle falling snow flakes for contextual blizzard atmosphere -->
+  <g fill="#A0AAB8" opacity="0.4">
+    <circle cx="50" cy="50" r="1.5" />
+    <circle cx="190" cy="70" r="1" />
+    <circle cx="180" cy="180" r="1.5" />
+    <circle cx="60" cy="160" r="1" />
+    <path d="M40 90 L43 93 M43 90 L40 93" stroke="#A0AAB8" stroke-width="0.8" stroke-linecap="round"/>
+    <path d="M200 130 L203 133 M203 130 L200 133" stroke="#A0AAB8" stroke-width="0.8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Central Character Head/Face illustrating the action of 捂 (covering tightly/protecting ears) -->
+  <g transform="translate(0, 5)">
+    <!-- Scarf / Winter collar -->
+    <path d="M85 165 C85 150 95 140 120 140 C145 140 155 150 155 165 L165 190 C165 195 160 200 155 200 L85 200 C80 200 75 195 75 190 Z" fill="#2E4057"/>
+    <path d="M100 155 L140 155 L145 190 L95 190 Z" fill="#3D5A80"/>
+
+    <!-- Neck -->
+    <rect x="105" y="130" width="30" height="20" rx="5" fill="#E5B299"/>
+
+    <!-- Head / Face -->
+    <circle cx="120" cy="100" r="45" fill="#F4C2A3"/>
+
+    <!-- Closed Eyes (squinting from cold) -->
+    <path d="M98 95 C102 98 108 98 112 95" stroke="#4A3525" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M128 95 C132 98 138 98 142 95" stroke="#4A3525" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Rosy cold cheeks -->
+    <circle cx="95" cy="108" r="6" fill="#E07A5F" opacity="0.6"/>
+    <circle cx="145" cy="108" r="6" fill="#E07A5F" opacity="0.6"/>
+
+    <!-- Mouth (grimacing from cold) -->
+    <path d="M112 118 C116 122 124 122 128 118" stroke="#4A3525" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Ear Muffs / Thick Winter Mittens/Gloves tightly covering the ears (Visualizing 捂) -->
+    <!-- Left Hand / Mitten covering left ear -->
+    <g transform="translate(10, 0)">
+      <!-- Arm/Cuff -->
+      <path d="M65 90 L85 95 L85 115 L65 110 Z" fill="#E07A5F"/>
+      <rect x="80" y="92" width="8" height="25" rx="3" fill="#F4F1DE"/>
+      <!-- Thick Mitten Hand -->
+      <path d="M75 80 C60 80 55 100 65 120 C72 130 85 120 85 105 Z" fill="#E07A5F"/>
+      <!-- Mitten Thumb -->
+      <path d="M75 115 C70 120 65 115 68 108 Z" fill="#D65A31"/>
+    </g>
+
+    <!-- Right Hand / Mitten covering right ear -->
+    <g transform="translate(140, 0) scale(-1, 1) translate(-240, 0)">
+      <!-- Arm/Cuff -->
+      <path d="M65 90 L85 95 L85 115 L65 110 Z" fill="#E07A5F"/>
+      <rect x="80" y="92" width="8" height="25" rx="3" fill="#F4F1DE"/>
+      <!-- Thick Mitten Hand -->
+      <path d="M75 80 C60 80 55 100 65 120 C72 130 85 120 85 105 Z" fill="#E07A5F"/>
+      <!-- Mitten Thumb -->
+      <path d="M75 115 C70 120 65 115 68 108 Z" fill="#D65A31"/>
+    </g>
+
+    <!-- Hat / Beanie -->
+    <path d="M76 90 C76 60 95 50 120 50 C145 50 164 60 164 90 C150 85 130 85 120 85 C110 85 90 85 76 90 Z" fill="#3D5A80"/>
+    <!-- Hat Brim/Fold -->
+    <path d="M74 88 C95 82 145 82 166 88 L165 98 C145 92 95 92 75 98 Z" fill="#2E4057"/>
+    <!-- Pom-pom -->
+    <circle cx="120" cy="42" r="10" fill="#E07A5F"/>
+  </g>
+</svg>

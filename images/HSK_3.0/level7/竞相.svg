@@ -1,0 +1,59 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle decorative background rays/atmosphere for blossoming -->
+  <path d="M120 120 L120 60" stroke="#2A303C" stroke-width="2" stroke-linecap="round"/>
+  <path d="M120 120 L162 78" stroke="#2A303C" stroke-width="2" stroke-linecap="round"/>
+  <path d="M120 120 L180 120" stroke="#2A303C" stroke-width="2" stroke-linecap="round"/>
+  <path d="M120 120 L78 78" stroke="#2A303C" stroke-width="2" stroke-linecap="round"/>
+  <path d="M120 120 L60 120" stroke="#2A303C" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Soil mound -->
+  <path d="M 70 190 Q 120 175 170 190 Q 185 200 185 210 Q 120 215 55 210 Q 55 200 70 190 Z" fill="#2E384D"/>
+  <ellipse cx="120" cy="195" rx="55" ry="12" fill="#222B36"/>
+
+  <!-- Left Flower (Tulip - representing "竞" / competing to bloom) -->
+  <g transform="translate(85, 145)">
+    <!-- Stem & Leaves -->
+    <path d="M 0 50 Q -10 25 -25 10" fill="none" stroke="#4CD39B" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 0 45 Q 15 25 25 15" fill="none" stroke="#4CD39B" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 0 60 Q 0 20 0 0" fill="none" stroke="#2ECC71" stroke-width="5" stroke-linecap="round"/>
+    <!-- Petals (Tulip blooming upward) -->
+    <path d="M -12 -15 C -25 -25 -20 -45 -5 -40 C -2 -39 0 -25 0 -15 Z" fill="#FF5E7E"/>
+    <path d="M 12 -15 C 25 -25 20 -45 5 -40 C 2 -39 0 -25 0 -15 Z" fill="#FF5E7E"/>
+    <path d="M 0 -15 C -12 -50 12 -50 0 -15 Z" fill="#FF7893"/>
+    <ellipse cx="0" cy="-15" rx="12" ry="4" fill="#FF4063"/>
+  </g>
+
+  <!-- Right Flower (Peony - representing "相" / competing vibrantly) -->
+  <g transform="translate(155, 140)">
+    <!-- Stem & Leaves -->
+    <path d="M 0 65 Q 15 40 30 25" fill="none" stroke="#4CD39B" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 0 55 Q -15 35 -25 25" fill="none" stroke="#4CD39B" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 0 70 Q 0 35 0 0" fill="none" stroke="#2ECC71" stroke-width="5" stroke-linecap="round"/>
+    <!-- Multi-layered Peony Bloom (Gold/Orange accent for high focus) -->
+    <circle cx="0" cy="0" r="22" fill="#FFA500"/>
+    <circle cx="0" cy="-3" r="18" fill="#FFB732"/>
+    <!-- Petal layers -->
+    <path d="M -15 -10 C -25 -20 -15 -35 0 -30 C 15 -35 25 -20 15 -10 C 25 0 15 15 0 10 C -15 15 -25 0 -15 -10 Z" fill="#FF8C00"/>
+    <path d="M -10 -5 C -20 -12 -10 -25 0 -20 C 10 -25 20 -12 10 -5 C 20 5 10 15 0 10 C -10 15 -20 5 -10 -5 Z" fill="#FFA500"/>
+    <circle cx="0" cy="0" r="7" fill="#FFD700"/>
+  </g>
+
+  <!-- Center Flower (Peeking through, representing dynamic growth and rivalry in blooming) -->
+  <g transform="translate(120, 125)">
+    <path d="M 0 85 Q 0 50 0 20" fill="none" stroke="#2ECC71" stroke-width="4" stroke-linecap="round"/>
+    <!-- Blooming bud -->
+    <path d="M -8 5 C -15 -5 -10 -20 0 -15 C 10 -20 15 -5 8 5 Z" fill="#FF70A6"/>
+    <path d="M 0 -15 C -6 -25 6 -25 0 -15 Z" fill="#FF99C8"/>
+  </g>
+
+  <!-- Glowing energy sparks / upward motion lines indicating bursting forth / "竞相" (competing to open) -->
+  <circle cx="120" cy="45" r="3" fill="#FFD700"/>
+  <circle cx="80" cy="70" r="2" fill="#FFA500"/>
+  <circle cx="165" cy="65" r="2.5" fill="#FF5E7E"/>
+  
+  <path d="M 120 40 L 120 30" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 75 65 L 68 58" stroke="#FFA500" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 165 60 L 172 53" stroke="#FF5E7E" stroke-width="2" stroke-linecap="round"/>
+</svg>

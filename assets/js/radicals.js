@@ -39,6 +39,7 @@ const PRIMARY_TAB_SCREENS = {
   review: { tabId: 'primaryTabReview', screenId: 'screenReviewPicker' },
   reading: { tabId: 'primaryTabReading', screenId: 'screenReadingAnalysis' },
   gradedReading: { tabId: 'primaryTabGradedReading', screenId: 'screenGradedReading' },
+  listening: { tabId: 'primaryTabListening', screenId: 'screenListeningPractice' },
   sentenceGame: { tabId: 'primaryTabSentenceGame', screenId: 'screenSentenceGame' },
   guessWord: { tabId: 'primaryTabGuessWord', screenId: 'screenGuessWord' },
   speedQuiz: { tabId: 'primaryTabSpeedQuiz', screenId: 'screenSpeedQuiz' },
@@ -96,6 +97,17 @@ try {
 function setPrimaryTab(tab, options) {
   const previousTab = primaryTab;
   primaryTab = tab;
+  // Ensure non-tab study screens are hidden when switching primary tabs
+  const screenCards = document.getElementById('screenCards');
+  if (screenCards) screenCards.style.display = 'none';
+  const screenRadicalCards = document.getElementById('screenRadicalCards');
+  if (screenRadicalCards) screenRadicalCards.style.display = 'none';
+  const screenTodayReviews = document.getElementById('screenTodayReviews');
+  if (screenTodayReviews) screenTodayReviews.style.display = 'none';
+  document.body.classList.remove('study-mode', 'flashcard-study-mode', 'today-reviews-focus-mode');
+  if (tab !== 'vocab') {
+    currentLevel = null;
+  }
   Object.entries(PRIMARY_TAB_SCREENS).forEach(([key, { tabId, screenId }]) => {
     const isActive = key === tab;
     const tabEl = document.getElementById(tabId);
@@ -115,12 +127,16 @@ function setPrimaryTab(tab, options) {
   if (mobReview) mobReview.classList.toggle('active', tab === 'review');
   if (mobProfile) mobProfile.classList.remove('active');
   if (typeof closeMobileStatsSheet === 'function') closeMobileStatsSheet();
-  const isTool = ['radicals', 'sentenceGame', 'guessWord', 'speedQuiz', 'reading', 'gradedReading'].includes(tab);
+  const isTool = ['radicals', 'sentenceGame', 'guessWord', 'speedQuiz', 'reading', 'gradedReading', 'listening'].includes(tab);
   const isGame = ['sentenceGame', 'guessWord', 'speedQuiz'].includes(tab);
   document.body.classList.toggle('is-game-view', isGame);
   document.body.classList.toggle('reading-view-active', tab === 'reading');
   document.body.classList.toggle('graded-reading-active', tab === 'gradedReading');
+  document.body.classList.toggle('listening-view-active', tab === 'listening');
   document.body.classList.toggle('review-view-active', tab === 'review');
+  if (previousTab === 'listening' && tab !== 'listening') {
+    if (typeof ListeningPractice !== 'undefined') ListeningPractice.stopAudio();
+  }
   if (tab !== 'reading') {
     document.body.classList.remove('reading-zen-active');
   }
@@ -147,6 +163,22 @@ function setPrimaryTab(tab, options) {
   }
   if (tab === 'gradedReading') {
     if (typeof GradedReading !== 'undefined') GradedReading.init();
+  }
+  if (tab === 'listening') {
+    if (typeof ListeningPractice !== 'undefined') {
+      ListeningPractice.init();
+    } else {
+      const screenEl = document.getElementById('screenListeningPractice');
+      if (screenEl) {
+        screenEl.innerHTML = `
+          <div class="listening-container" style="text-align:center; padding: 48px 20px;">
+            <div style="font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:12px;">Đang khởi tạo Luyện nghe HSK...</div>
+            <p style="font-size:14px; color:var(--text-secondary); margin-bottom:16px;">Vui lòng thử lại sau vài giây hoặc tải lại trang.</p>
+            <button class="listening-back-btn" onclick="setPrimaryTab('vocab')" style="align-self:center; margin: 0 auto;">Quay lại Trang chính</button>
+          </div>
+        `;
+      }
+    }
   }
   if (tab === 'review') {
     if (typeof showReviewSetup === 'function') {
@@ -305,6 +337,13 @@ function startRadicalStudy(mode, groupIndex, options) {
   document.getElementById('primaryTabs').style.display = 'none';
   document.getElementById('learningDashboard').style.display = 'none';
   document.getElementById('screenRadicalHub').style.display = 'none';
+  const screenCards = document.getElementById('screenCards');
+  if (screenCards) screenCards.style.display = 'none';
+  const screenTodayReviews = document.getElementById('screenTodayReviews');
+  if (screenTodayReviews) screenTodayReviews.style.display = 'none';
+  const screenVocabHub = document.getElementById('screenVocabHub');
+  if (screenVocabHub) screenVocabHub.style.display = 'none';
+  document.body.classList.remove('flashcard-study-mode', 'today-reviews-focus-mode');
   document.getElementById('screenRadicalCards').style.display = '';
   document.getElementById('radicalTransferPanel').hidden = true;
   document.body.classList.add('study-mode');
@@ -322,8 +361,10 @@ function openRadicalOverviewFromHub(mode) {
 }
 
 function goBackToRadicalHub() {
-  document.body.classList.remove('study-mode');
+  document.body.classList.remove('study-mode', 'flashcard-study-mode', 'today-reviews-focus-mode');
   document.getElementById('screenRadicalCards').style.display = 'none';
+  const screenCards = document.getElementById('screenCards');
+  if (screenCards) screenCards.style.display = 'none';
   document.getElementById('screenRadicalHub').style.display = '';
   document.getElementById('primaryTabs').style.display = '';
   document.getElementById('learningDashboard').style.display = '';
@@ -336,25 +377,82 @@ function goBackToRadicalHub() {
   }
 }
 
-// Close primary tools & games menu on click outside
+// Close primary tools & skills menu on click outside or item selection
 document.addEventListener('click', event => {
   const menu = document.getElementById('primaryGamesMenu');
-  if (menu && menu.open && !menu.contains(event.target)) {
+  if (!menu || !menu.open) return;
+  if (!menu.contains(event.target) || event.target.closest('.primary-games-menu-panel button')) {
     menu.open = false;
   }
 });
 
-// Close primary tools & games menu on Escape and return focus to trigger
+// Close primary tools & skills menu on Escape and return focus to trigger
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape' || event.key === 'Esc') {
     const menu = document.getElementById('primaryGamesMenu');
     if (menu && menu.open) {
+      event.preventDefault();
       menu.open = false;
       const trigger = menu.querySelector('.primary-menu-trigger');
       if (trigger) trigger.focus();
     }
   }
 });
+
+// Keyboard arrow navigation for primary skills menu
+(function initPrimaryMenuKeyboard() {
+  function handleMenuKeydown(event) {
+    const menu = document.getElementById('primaryGamesMenu');
+    if (!menu) return;
+    const trigger = menu.querySelector('.primary-menu-trigger');
+    const items = Array.from(menu.querySelectorAll('.primary-games-menu-panel [role="menuitem"]:not([disabled])'));
+    if (!items.length) return;
+
+    if (event.target === trigger) {
+      if (event.key === 'ArrowDown' || event.key === 'Down') {
+        event.preventDefault();
+        menu.open = true;
+        items[0].focus();
+        return;
+      }
+      if (event.key === 'ArrowUp' || event.key === 'Up') {
+        event.preventDefault();
+        menu.open = true;
+        items[items.length - 1].focus();
+        return;
+      }
+    }
+
+    const currentIndex = items.indexOf(document.activeElement);
+    if (currentIndex !== -1) {
+      if (event.key === 'ArrowDown' || event.key === 'Down') {
+        event.preventDefault();
+        const nextIndex = (currentIndex + 1) % items.length;
+        items[nextIndex].focus();
+      } else if (event.key === 'ArrowUp' || event.key === 'Up') {
+        event.preventDefault();
+        const prevIndex = (currentIndex - 1 + items.length) % items.length;
+        items[prevIndex].focus();
+      } else if (event.key === 'Home') {
+        event.preventDefault();
+        items[0].focus();
+      } else if (event.key === 'End') {
+        event.preventDefault();
+        items[items.length - 1].focus();
+      }
+    }
+  }
+
+  const menu = document.getElementById('primaryGamesMenu');
+  if (menu) {
+    menu.addEventListener('keydown', handleMenuKeydown);
+  } else if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+      const el = document.getElementById('primaryGamesMenu');
+      if (el) el.addEventListener('keydown', handleMenuKeydown);
+    });
+  }
+})();
 
 // Sync aria-expanded state on toggle
 (function initPrimaryMenuAria() {

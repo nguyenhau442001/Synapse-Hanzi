@@ -1,0 +1,55 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Contextual environment: Urban river and bank -->
+  <!-- River water channel at bottom right -->
+  <path d="M120 180 C150 175, 180 185, 240 170 L240 220 L120 220 Z" fill="#243447"/>
+  <path d="M140 190 Q170 185, 210 192" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="4 3" fill="none" opacity="0.6"/>
+  
+  <!-- Ground / Riverbank -->
+  <path d="M0 180 L120 180 L120 220 L0 220 Z" fill="#2D3748"/>
+  <path d="M0 180 C40 175, 80 182, 120 180" stroke="#4A5568" stroke-width="2" fill="none"/>
+
+  <!-- Prohibition / Warning indicator line (subtle context cue) -->
+  <path d="M140 160 L200 130" stroke="#ef4444" stroke-width="2" stroke-dasharray="3 3" opacity="0.4"/>
+
+  <!-- Falling debris / trash items (indicating 'dumping / xả, trút rác') -->
+  <!-- Trash bag -->
+  <path d="M115 110 C110 100, 125 90, 130 95 C135 90, 150 100, 145 110 C148 120, 112 120, 115 110 Z" fill="#64748b"/>
+  <path d="M125 95 Q130 90, 135 95" stroke="#94a3b8" stroke-width="2" fill="none"/>
+  <!-- Motion lines for dumping action -->
+  <path d="M100 95 Q115 100, 125 105" stroke="#f59e0b" stroke-width="2" stroke-dasharray="2 2" fill="none"/>
+  <path d="M90 85 Q110 95, 120 100" stroke="#f59e0b" stroke-width="1.5" fill="none"/>
+
+  <!-- Secondary falling item (bottle/can) -->
+  <rect x="155" y="115" width="10" height="18" rx="3" fill="#38bdf8" transform="rotate(30 160 124)"/>
+
+  <!-- Dynamic Human Character (Action: Tipping / Dumping) -->
+  <!-- Torso leaning forward dynamically -->
+  <path d="M65 140 L85 100 L105 115 L90 155 Z" fill="#3b82f6"/>
+  
+  <!-- Head -->
+  <circle cx="75" cy="85" r="12" fill="#cbd5e1"/>
+  <path d="M68 80 Q75 73, 84 82" fill="#1e293b"/> <!-- Hair -->
+
+  <!-- Legs firmly planted -->
+  <path d="M75 155 L60 180" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+  <path d="M90 155 L105 180" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Arms holding and tilting container / trash bin -->
+  <path d="M85 110 L105 100" stroke="#3b82f6" stroke-width="6" stroke-linecap="round"/>
+  <path d="M95 125 L115 110" stroke="#3b82f6" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- The tipped container (dustbin / bucket being emptied) -->
+  <path d="M105 100 L125 90 L135 115 L115 125 Z" fill="#f59e0b"/>
+  <path d="M107 98 L113 85" stroke="#d97706" stroke-width="3" stroke-linecap="round"/> <!-- Handle -->
+
+  <!-- Dynamic action splash effects in the river where waste lands -->
+  <path d="M150 170 Q160 160, 170 170" stroke="#38bdf8" stroke-width="2" fill="none"/>
+  <circle cx="160" cy="165" r="2" fill="#38bdf8"/>
+  <circle cx="172" cy="168" r="1.5" fill="#38bdf8"/>
+
+  <!-- Focus accent highlight -->
+  <circle cx="130" cy="105" r="45" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="6 6" fill="none" opacity="0.3"/>
+</svg>

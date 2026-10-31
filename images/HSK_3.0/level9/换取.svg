@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Object: Balanced Scale / Trade-off (Physical Object for "换取" - Exchange/Trade-off) -->
+  <g transform="translate(0, 0)">
+    <!-- Base and Stand -->
+    <path d="M120 185 L145 195 L95 195 Z" fill="#64748B" />
+    <rect x="117" y="90" width="6" height="100" rx="3" fill="#94A3B8" />
+    <circle cx="120" cy="90" r="10" fill="#E2E8F0" />
+    <circle cx="120" cy="90" r="5" fill="#3B82F6" />
+
+    <!-- Beam -->
+    <path d="M70 85 L170 95 L170 102 L70 92 Z" fill="#E2E8F0" />
+
+    <!-- Left side (Heavy/Sacrificed: Environment/Nature - Represented by a vibrant green sprout) -->
+    <line x1="75" y1="90" x2="55" y2="145" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+    <line x1="75" y1="90" x2="95" y2="145" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+    <line x1="75" y1="90" x2="75" y2="145" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+    
+    <!-- Left Plate -->
+    <ellipse cx="75" cy="145" rx="30" ry="10" fill="#334155" stroke="#475569" stroke-width="2" />
+    
+    <!-- Nature element on left plate (Representing the precious environment) -->
+    <path d="M75 145 C75 130 65 120 55 125 C55 135 65 145 75 145 Z" fill="#22C55E" />
+    <path d="M75 145 C75 130 85 120 95 125 C95 135 85 145 75 145 Z" fill="#16A34A" />
+    <path d="M75 145 L75 120" stroke="#15803D" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Right side (Traded item: Short-term economic benefit - Represented by gold coins/wealth) -->
+    <line x1="165" y1="94" x2="145" y2="125" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+    <line x1="165" y1="94" x2="185" y2="125" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+    <line x1="165" y1="94" x2="165" y2="125" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+    
+    <!-- Right Plate -->
+    <ellipse cx="165" cy="125" rx="30" ry="10" fill="#334155" stroke="#475569" stroke-width="2" />
+    
+    <!-- Wealth elements on right plate -->
+    <circle cx="155" cy="115" r="8" fill="#FBBF24" />
+    <circle cx="155" cy="115" r="5" fill="#F59E0B" />
+    <circle cx="175" cy="113" r="10" fill="#FBBF24" />
+    <circle cx="175" cy="113" r="7" fill="#F59E0B" />
+    <circle cx="165" cy="110" r="9" fill="#FCD34D" />
+    <circle cx="165" cy="110" r="6" fill="#F59E0B" />
+
+    <!-- Dynamic Exchange Action Arrows -->
+    <path d="M95 70 C105 60 135 60 145 70" fill="none" stroke="#F97316" stroke-width="4" stroke-linecap="round" />
+    <polygon points="145,63 152,71 140,75" fill="#F97316" />
+
+    <path d="M145 165 C135 175 105 175 95 165" fill="none" stroke="#F97316" stroke-width="4" stroke-linecap="round" />
+    <polygon points="95,172 88,164 100,160" fill="#F97316" />
+  </g>
+</svg>

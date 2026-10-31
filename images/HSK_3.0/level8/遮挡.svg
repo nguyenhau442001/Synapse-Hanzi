@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background details -->
+  <path d="M40 180 L200 180" stroke="#2A2F3A" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Sun rays (blocked by canopy) -->
+  <g opacity="0.3">
+    <line x1="30" y1="40" x2="60" y2="70" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4"/>
+    <line x1="60" y1="30" x2="80" y2="60" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4"/>
+    <line x1="90" y1="25" x2="100" y2="55" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4"/>
+  </g>
+  
+  <!-- Bright Sun icon (partial, upper left) -->
+  <circle cx="50" cy="50" r="16" fill="#F59E0B" opacity="0.9"/>
+  <path d="M50 24 L50 18" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M28 46 L22 46" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M34 30 L30 26" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Tree Trunk -->
+  <path d="M120 180 L120 100 C120 95 125 90 130 90 L135 90 C140 90 145 95 145 100 L145 180 Z" fill="#8B5CF6" opacity="0.4"/>
+  <path d="M125 180 L125 105 C125 102 127 100 130 100 L135 100 C138 100 140 102 140 105 L140 180 Z" fill="#A78BFA"/>
+
+  <!-- Lush Tree Canopy (The "遮挡" physical object / barrier) -->
+  <circle cx="132" cy="85" r="50" fill="#10B981"/>
+  <circle cx="95" cy="95" r="38" fill="#059669"/>
+  <circle cx="165" cy="95" r="38" fill="#059669"/>
+  <circle cx="130" cy="55" r="35" fill="#34D399"/>
+  
+  <!-- Shadow / Protected Area beneath the tree -->
+  <path d="M70 180 Q130 170 190 180 Z" fill="#0F172A" opacity="0.6"/>
+
+  <!-- Pedestrian (Protected person walking under the shade) -->
+  <g transform="translate(155, 130)">
+    <!-- Person body -->
+    <path d="M15 15 C15 10 20 5 25 5 C30 5 35 10 35 15 L35 50 L30 50 L30 30 L20 30 L20 50 L15 50 Z" fill="#F43F5E"/>
+    <!-- Head -->
+    <circle cx="25" cy="-2" r="7" fill="#FCD34D"/>
+    <!-- Walking legs -->
+    <path d="M20 50 L12 50" stroke="#F43F5E" stroke-width="4" stroke-linecap="round"/>
+    <path d="M30 50 L38 50" stroke="#F43F5E" stroke-width="4" stroke-linecap="round"/>
+    <!-- Cool/Protected expression (relaxed arm) -->
+    <path d="M15 18 L10 28" stroke="#F43F5E" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Cool breeze / shadow effect lines under tree -->
+  <path d="M85 150 Q110 145 135 150" stroke="#34D399" stroke-width="2" stroke-linecap="round" opacity="0.4" fill="none"/>
+  <path d="M95 160 Q120 155 145 160" stroke="#34D399" stroke-width="2" stroke-linecap="round" opacity="0.4" fill="none"/>
+</svg>

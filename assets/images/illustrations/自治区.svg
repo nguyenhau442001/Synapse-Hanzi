@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background grid/glow representing a geographical map area -->
+  <circle cx="120" cy="120" r="75" fill="#222733" stroke="#2D3342" stroke-width="1.5" stroke-dasharray="4 4"/>
+  
+  <!-- Stylized Map/Territory Base (Representing an Autonomous Region map outline with location pin) -->
+  <g transform="translate(0, 5)">
+    <!-- Outer regional border glow -->
+    <path d="M75,115 C75,95 95,85 120,85 C145,85 170,95 170,120 C170,145 150,170 120,170 C90,170 75,135 75,115 Z" fill="#252D3D" stroke="#3A445C" stroke-width="2"/>
+    
+    <!-- Inner territory fill with modern flat style -->
+    <path d="M82,115 C82,98 98,90 120,90 C142,90 163,98 163,120 C163,142 145,163 120,163 C95,163 82,132 82,115 Z" fill="#2D384D"/>
+
+    <!-- Decorative contour lines inside the region -->
+    <path d="M95,120 Q120,105 145,125" fill="none" stroke="#3E4C66" stroke-width="2" stroke-linecap="round"/>
+    <path d="M100,135 Q120,120 140,140" fill="none" stroke="#3E4C66" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Autonomous Emblem/Star Marker at the center of the region (representing self-governance/autonomy) -->
+  <g transform="translate(120, 105)">
+    <!-- Pulsing ring behind the pin -->
+    <circle cx="0" cy="0" r="22" fill="#E67E22" opacity="0.15"/>
+    <circle cx="0" cy="0" r="15" fill="#E67E22" opacity="0.25"/>
+    
+    <!-- Location Pin body -->
+    <path d="M0,-18 C-9,-18 -16,-11 -16,-2 C-16,8 0,22 0,22 C0,22 16,8 16,-2 C16,-11 9,-18 0,-18 Z" fill="#E67E22"/>
+    
+    <!-- Inner white star symbolizing official administrative status -->
+    <polygon points="0,-10 2.5,-3 9.5,-3 4,1 6,8 0,4 -6,8 -4,1 -9.5,-3 -2.5,-3" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Traditional architectural roof silhouette overlapping the map (symbolizing cultural heritage and regional identity) -->
+  <g transform="translate(120, 145)">
+    <!-- Roof base -->
+    <path d="M-25,12 L25,12 L20,22 L-20,22 Z" fill="#F1C40F"/>
+    <!-- Overhanging tiered roof structure -->
+    <path d="M-32,6 L32,6 L26,12 L-26,12 Z" fill="#F39C12"/>
+    <path d="M-18,0 L18,0 L14,6 L-14,6 Z" fill="#F1C40F"/>
+    <!-- Center decorative peak -->
+    <circle cx="0" cy="-3" r="3" fill="#E67E22"/>
+  </g>
+
+</svg>

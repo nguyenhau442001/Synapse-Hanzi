@@ -1,0 +1,58 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background/Environment atmosphere -->
+  <path d="M40 180 L200 180" stroke="#2A2F3D" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Modern Boutique Counter (专柜) Structure -->
+  <!-- Back wall panel / branding backdrop -->
+  <rect x="55" y="65" width="130" height="95" rx="4" fill="#222736"/>
+  <rect x="65" y="75" width="110" height="50" rx="2" fill="#151821"/>
+
+  <!-- Luxury display shelving inside backdrop -->
+  <rect x="75" y="90" width="40" height="4" rx="2" fill="#4CD3C2" opacity="0.8"/>
+  <rect x="125" y="90" width="40" height="4" rx="2" fill="#4CD3C2" opacity="0.8"/>
+
+  <!-- Skincare / Luxury bottles representing the brand's products -->
+  <path d="M85 76 L95 76 L97 90 L83 90 Z" fill="#F0C265"/>
+  <circle cx="90" cy="73" r="3" fill="#F0C265"/>
+
+  <rect x="103" y="78" width="10" height="12" rx="2" fill="#4CD3C2"/>
+  <rect x="135" y="75" width="14" height="15" rx="3" fill="#E06D53"/>
+  
+  <!-- Counter Base (Glass & Wood/Metal Design) -->
+  <!-- Counter body -->
+  <rect x="45" y="130" width="150" height="50" rx="4" fill="#2E3547"/>
+  <!-- Front sleek metal accent trim -->
+  <rect x="45" y="130" width="150" height="6" fill="#F0C265" opacity="0.9"/>
+
+  <!-- Glass Display Top Showcase (Transparent look with light reflections) -->
+  <path d="M45 110 L55 130 L185 130 L195 110 Z" fill="#384158" opacity="0.6"/>
+  <path d="M49 112 L57 128 L183 128 L191 112 Z" fill="#22293A" opacity="0.8"/>
+  
+  <!-- Highlight reflections on glass showcase -->
+  <path d="M70 116 L90 124" stroke="#7E8BA3" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <path d="M100 116 L115 124" stroke="#7E8BA3" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Premium cosmetic items neatly arranged inside the glass counter -->
+  <rect x="70" y="115" width="8" height="12" rx="1" fill="#F0C265"/>
+  <circle cx="95" cy="120" r="5" fill="#4CD3C2"/>
+  <rect x="115" y="114" width="10" height="13" rx="2" fill="#E06D53"/>
+  <rect x="140" y="117" width="12" height="10" rx="2" fill="#F0C265"/>
+  <circle cx="165" cy="121" r="4" fill="#E06D53"/>
+
+  <!-- Floor reflection / shadow -->
+  <ellipse cx="120" cy="186" rx="75" ry="5" fill="#111318"/>
+
+  <!-- Focus / Accent lighting from above -->
+  <path d="M90 65 L70 30 L170 30 L150 65 Z" fill="url(#lightBeam)" opacity="0.1"/>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="lightBeam" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Medical cross background glow -->
+    <circle cx="120" cy="115" r="70" fill="#252B3B" opacity="0.6"/>
+    
+    <!-- Stylized modern medical clipboard / chart representing clinical trial data verification -->
+    <rect x="80" y="55" width="80" height="105" rx="10" fill="#2D3748" stroke="#4A5568" stroke-width="2"/>
+    
+    <!-- Clip -->
+    <path d="M100,55 L140,55 L140,63 C140,67.4 136.4,71 132,71 L108,71 C103.6,71 100,67.4 100,63 Z" fill="#63B3ED"/>
+    <circle cx="120" cy="63" r="3" fill="#1A1D24"/>
+    
+    <!-- Data chart lines (Trial data verification) -->
+    <rect x="95" y="85" width="25" height="6" rx="3" fill="#4FD1C5" opacity="0.8"/>
+    <rect x="95" y="100" width="50" height="4" rx="2" fill="#E2E8F0" opacity="0.4"/>
+    <rect x="95" y="112" width="40" height="4" rx="2" fill="#E2E8F0" opacity="0.4"/>
+
+    <!-- Upward success trend graph (Clinical efficacy / liáoxiào) -->
+    <path d="M95,142 L110,132 L125,137 L145,115" fill="none" stroke="#F6AD55" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Trend data points -->
+    <circle cx="95" cy="142" r="3" fill="#F6AD55"/>
+    <circle cx="110" cy="132" r="3" fill="#F6AD55"/>
+    <circle cx="125" cy="137" r="3" fill="#F6AD55"/>
+    <circle cx="145" cy="115" r="4" fill="#F6AD55"/>
+
+    <!-- Target icon representing targeted therapy medication efficacy -->
+    <g transform="translate(145, 90)">
+      <circle cx="0" cy="0" r="22" fill="#2B6CB0" opacity="0.9"/>
+      <circle cx="0" cy="0" r="22" fill="none" stroke="#63B3ED" stroke-width="2" stroke-dasharray="4 2"/>
+      <circle cx="0" cy="0" r="14" fill="#1A202C"/>
+      <circle cx="0" cy="0" r="6" fill="#F56565"/>
+      <!-- Crosshairs -->
+      <line x1="-26" y1="0" x2="-20" y2="0" stroke="#63B3ED" stroke-width="2" stroke-linecap="round"/>
+      <line x1="20" y1="0" x2="26" y2="0" stroke="#63B3ED" stroke-width="2" stroke-linecap="round"/>
+      <line x1="0" y1="-26" x2="0" y2="-20" stroke="#63B3ED" stroke-width="2" stroke-linecap="round"/>
+      <line x1="0" y1="20" x2="0" y2="26" stroke="#63B3ED" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Glowing checkmark badge indicating verified superior therapeutic outcome -->
+    <g transform="translate(120, 178)">
+      <circle cx="0" cy="0" r="22" fill="#38A169" stroke="#1A1D24" stroke-width="4"/>
+      <path d="M-7,-1 L-2,4 L9,-7" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    
+    <!-- Subtle accent particles indicating precision medicine/science -->
+    <circle cx="65" cy="95" r="3" fill="#63B3ED" opacity="0.7"/>
+    <circle cx="75" cy="130" r="2" fill="#F6AD55" opacity="0.8"/>
+    <circle cx="180" cy="155" r="3.5" fill="#4FD1C5" opacity="0.7"/>
+  </g>
+</svg>

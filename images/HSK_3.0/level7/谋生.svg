@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background city skyline silhouettes for context -->
+  <path d="M30 190 L30 150 L45 150 L45 190 Z" fill="#222733"/>
+  <path d="M50 190 L50 120 L75 120 L75 190 Z" fill="#222733"/>
+  <path d="M80 190 L80 140 L95 140 L95 190 Z" fill="#222733"/>
+  <path d="M145 190 L145 130 L170 130 L170 190 Z" fill="#222733"/>
+  <path d="M175 190 L175 110 L205 110 L205 190 Z" fill="#222733"/>
+  <path d="M210 190 L210 145 L225 145 L225 190 Z" fill="#222733"/>
+
+  <!-- Ground Line -->
+  <line x1="20" y1="190" x2="220" y2="190" stroke="#323846" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Central Character representing a working migrant / earner (谋生 - making a living) -->
+  <!-- Legs -->
+  <path d="M105 155 L100 190 L115 190" fill="none" stroke="#2B313E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M135 155 L140 190 L125 190" fill="none" stroke="#2B313E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Body/Torso -->
+  <path d="M105 120 L135 120 L140 160 L100 160 Z" fill="#3B82F6"/>
+  
+  <!-- Head & Hat -->
+  <circle cx="120" cy="98" r="14" fill="#FDE047"/>
+  <path d="M102 92 C102 82 138 82 138 92 Z" fill="#F97316"/>
+
+  <!-- Arms carrying a heavy tool/briefcase symbolizing labor and earning a living -->
+  <!-- Left arm -->
+  <path d="M108 125 L90 145" fill="none" stroke="#3B82F6" stroke-width="7" stroke-linecap="round"/>
+  <!-- Right arm holding luggage/tools -->
+  <path d="M132 125 L150 145" fill="none" stroke="#3B82F6" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Suitcase / Toolbox (The instrument of livelihood) -->
+  <rect x="138" y="140" m="0" width="30" height="22" rx="4" fill="#F97316"/>
+  <path d="M148 140 L148 136 C148 134 158 134 158 136 L158 140" fill="none" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round"/>
+  <line x1="138" y1="148" x2="168" y2="148" stroke="#EA580C" stroke-width="2"/>
+
+  <!-- Traveling Bag slung over shoulder -->
+  <path d="M108 110 L130 135" fill="none" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <rect x="125" y="125" width="14" height="18" rx="3" fill="#64748B"/>
+
+  <!-- Focal Accent: Glowing coin/earnings indicator above symbolizing economic sustenance -->
+  <circle cx="120" cy="55" r="14" fill="#10B981" opacity="0.2"/>
+  <circle cx="120" cy="55" r="10" fill="#F59E0B"/>
+  <text x="120" y="59" font-family="sans-serif" font-weight="bold" font-size="12" fill="#1A1D24" text-anchor="middle">$</text>
+</svg>

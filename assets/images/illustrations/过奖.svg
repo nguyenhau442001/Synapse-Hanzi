@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient glow representing polite interaction environment -->
+  <circle cx="120" cy="120" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Character / Physical Object representing "Guojiang" (Polite dismissal of praise/Modesty gesture) -->
+  <!-- Upper body of a professional person (colleague/leader receiving or deflecting over-praise with humility) -->
+  
+  <!-- Suit / Body -->
+  <path d="M75 195 L75 165 C75 145, 95 130, 120 130 C145 130, 165 145, 165 165 L165 195 Z" fill="#2D3748"/>
+  
+  <!-- Shirt & Tie -->
+  <polygon points="120,130 105,155 135,155" fill="#E2E8F0"/>
+  <polygon points="117,155 123,155 125,185 120,192 115,185" fill="#F6AD55"/>
+
+  <!-- Head & Neck -->
+  <rect x="112" y="105" width="16" height="30" fill="#ED8936" opacity="0.2"/>
+  <circle cx="120" cy="95" r="22" fill="#F6AD55"/>
+  
+  <!-- Hair -->
+  <path d="M98 90 C98 75, 108 72, 120 72 C132 72, 142 75, 142 90 C142 93, 138 92, 138 88 C138 78, 130 76, 120 76 C110 76, 102 78, 102 88 C102 92, 98 93, 98 90 Z" fill="#2D3748"/>
+
+  <!-- Waving hands gesture (谦逊地摆摆手 - Modestly waving hands to reject excessive praise) -->
+  <!-- Left arm & waving hand (bent upward across the chest/face level) -->
+  <path d="M85 155 C70 145, 65 125, 75 110 C80 105, 88 110, 85 118 C80 128, 90 138, 100 145 Z" fill="#F6AD55"/>
+  <!-- Motion lines for waving -->
+  <path d="M62 105 C65 100, 68 108, 65 115" stroke="#E2E8F0" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M55 112 C58 108, 61 115, 58 122" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round" opacity="0.6" fill="none"/>
+
+  <!-- Right arm & hand (relaxed or subtle matching gesture) -->
+  <path d="M155 155 C165 145, 175 135, 170 125 C167 120, 160 123, 162 130 C165 138, 155 145, 145 150 Z" fill="#ED8936"/>
+
+  <!-- Subtle golden accent floating spark/star symbolizing praise/compliment being deflected -->
+  <g transform="translate(165, 70)">
+    <path d="M0 -8 L2 -2 L8 0 L2 2 L0 8 L-2 2 L-8 0 L-2 -2 Z" fill="#F6AD55"/>
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+  </g>
+  <g transform="translate(70, 75) scale(0.6)">
+    <path d="M0 -8 L2 -2 L8 0 L2 2 L0 8 L-2 2 L-8 0 L-2 -2 Z" fill="#F6AD55"/>
+  </g>
+
+</svg>

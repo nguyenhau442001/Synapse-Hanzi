@@ -1,0 +1,54 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Ambient spotlight/glow effect representing popularity and focus -->
+  <circle cx="120" cy="110" r="70" fill="#FFB703" opacity="0.08"/>
+  <ellipse cx="120" cy="190" rx="60" ry="12" fill="#000000" opacity="0.4"/>
+
+  <!-- Central Object: The sleek, innovative smartphone (representing "这款独具匠心的新型智能手机") -->
+  <!-- Phone shadow / base -->
+  <rect x="96" y="52" width="48" height="96" rx="8" fill="#2B3240" stroke="#3A4454" stroke-width="2"/>
+  
+  <!-- Phone screen with dynamic modern glowing UI -->
+  <rect x="100" y="58" width="40" height="84" rx="4" fill="#0F1115"/>
+  <circle cx="120" cy="63" r="1.5" fill="#3A4454"/>
+  
+  <!-- Abstract brilliant UI elements on screen -->
+  <rect x="106" y="70" width="28" height="22" rx="3" fill="#3B82F6" opacity="0.8"/>
+  <rect x="106" y="98" width="18" height="5" rx="1.5" fill="#FFB703"/>
+  <rect x="106" y="107" width="28" height="4" rx="1" fill="#4B5563"/>
+  <rect x="106" y="115" width="22" height="4" rx="1" fill="#4B5563"/>
+
+  <!-- Dramatic upward dynamic golden light rays / fan shape representing enthusiastic pursuit and adulation ("追捧") -->
+  <!-- Left rays -->
+  <path d="M120 100 L75 45 L85 40 Z" fill="#FFB703" opacity="0.85"/>
+  <path d="M120 100 L55 70 L62 62 Z" fill="#FFB703" opacity="0.6"/>
+  <path d="M120 100 L48 105 L52 96 Z" fill="#FFB703" opacity="0.4"/>
+  
+  <!-- Right rays -->
+  <path d="M120 100 L165 45 L155 40 Z" fill="#FFB703" opacity="0.85"/>
+  <path d="M120 100 L185 70 L178 62 Z" fill="#FFB703" opacity="0.6"/>
+  <path d="M120 100 L192 105 L188 96 Z" fill="#FFB703" opacity="0.4"/>
+
+  <!-- Additional upward sparkle/star accents -->
+  <path d="M85 30 L87 37 L94 39 L87 41 L85 48 L83 41 L76 39 L83 37 Z" fill="#FFB703"/>
+  <path d="M155 30 L157 37 L164 39 L157 41 L155 48 L153 41 L146 39 L153 37 Z" fill="#FFB703"/>
+  <circle cx="105" cy="35" r="2" fill="#FFD166"/>
+  <circle cx="135" cy="35" r="2" fill="#FFD166"/>
+
+  <!-- Dynamic multiple reaching hands/silhouettes below/sides symbolizing crowds eagerly reaching out ("年轻消费群体的极大追捧") -->
+  <!-- Left reaching hand -->
+  <path d="M70 180 C80 175 90 165 96 150 L100 155 C92 172 80 184 68 190 Z" fill="#3B82F6"/>
+  <circle cx="96" cy="147" r="4" fill="#60A5FA"/>
+
+  <!-- Right reaching hand -->
+  <path d="M170 180 C160 175 150 165 144 150 L140 155 C148 172 160 184 172 190 Z" fill="#3B82F6"/>
+  <circle cx="144" cy="147" r="4" fill="#60A5FA"/>
+
+  <!-- Center supporting hands / base gesture -->
+  <path d="M85 195 C95 180 110 172 120 172 C130 172 145 180 155 195 C140 202 100 202 85 195 Z" fill="#2563EB"/>
+  
+  <!-- Sleek floor reflection / stand -->
+  <ellipse cx="120" cy="148" rx="24" ry="4" fill="#FFB703" opacity="0.4"/>
+</svg>

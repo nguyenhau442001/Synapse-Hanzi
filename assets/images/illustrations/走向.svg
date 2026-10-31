@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background grid/path suggesting direction -->
+  <path d="M40 180 Q 120 180, 200 80" fill="none" stroke="#2A303C" stroke-width="3" stroke-dasharray="6,6"/>
+  <path d="M40 190 Q 130 190, 205 90" fill="none" stroke="#252A34" stroke-width="2"/>
+
+  <!-- Majestic ancient imperial palace/dynasty silhouette representing the context -->
+  <g opacity="0.35">
+    <path d="M140 130 L200 130 L200 170 L140 170 Z" fill="#4A5568"/>
+    <path d="M130 115 L210 115 L200 130 L140 130 Z" fill="#718096"/>
+    <path d="M155 95 L185 95 L190 115 L150 115 Z" fill="#4A5568"/>
+    <!-- Pillars -->
+    <rect x="150" y="140" width="6" height="30" fill="#2A303C"/>
+    <rect x="167" y="140" width="6" height="30" fill="#2A303C"/>
+    <rect x="184" y="140" width="6" height="30" fill="#2A303C"/>
+  </g>
+
+  <!-- Setting sun / decline motif -->
+  <circle cx="185" cy="80" r="22" fill="#E28743" opacity="0.8"/>
+  <path d="M163 80 L207 80" stroke="#1A1D24" stroke-width="2"/>
+
+  <!-- Main Path (走向 - moving forward/toward a destination) -->
+  <path d="M35 185 C 90 185, 120 140, 165 110" fill="none" stroke="#F6AD55" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Directional Arrowhead -->
+  <path d="M152 104 L170 108 L160 124" fill="#F6AD55"/>
+
+  <!-- Physical Traveler/Character walking toward the destination (Noun: physical person) -->
+  <g transform="translate(105, 110)">
+    <!-- Shadow -->
+    <ellipse cx="0" cy="72" rx="14" ry="4" fill="#111318"/>
+    
+    <!-- Traveler body / robes -->
+    <path d="M-6 40 L-10 68 L6 68 L10 40 Z" fill="#4A5568"/>
+    <path d="M-8 30 L8 30 L12 42 L-12 42 Z" fill="#E28743"/>
+    
+    <!-- Head & hat -->
+    <circle cx="0" cy="18" r="9" fill="#FEEBC8"/>
+    <path d="M-11 13 Q 0 8, 11 13 L8 16 Q 0 12, -8 16 Z" fill="#2D3748"/>
+    
+    <!-- Walking posture limbs -->
+    <path d="M-4 40 L-14 56" stroke="#CBD5E0" stroke-width="5" stroke-linecap="round"/>
+    <path d="M4 40 L16 52" stroke="#CBD5E0" stroke-width="5" stroke-linecap="round"/>
+    <path d="M-2 64 L-18 64" stroke="#A0AEC0" stroke-width="4" stroke-linecap="round"/>
+    <path d="M8 50 L18 56" stroke="#A0AEC0" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Starting point marker -->
+  <circle cx="35" cy="185" r="5" fill="#E28743"/>
+  <circle cx="35" cy="185" r="9" fill="none" stroke="#E28743" stroke-width="2" opacity="0.5"/>
+</svg>

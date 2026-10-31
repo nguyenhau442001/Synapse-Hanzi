@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambient Glow (Representing the overwhelming challenge/darkness) -->
+  <circle cx="120" cy="120" r="90" fill="#252A34" opacity="0.5"/>
+
+  <!-- Dramatic Lighting / Shadow Details -->
+  <path d="M40 200 L200 200 L180 180 L60 180 Z" fill="#15181E" opacity="0.7"/>
+
+  <!-- Massive, Towering Obstacle (Visualizing the '困难' / Difficulty) -->
+  <!-- Dark, sharp, angular cliff/monolith representing an intimidating challenge -->
+  <path d="M130 180 L190 70 L210 180 Z" fill="#2F3640"/>
+  <path d="M120 180 L190 70 L130 50 L90 180 Z" fill="#353B48"/>
+  <path d="M190 70 L210 180 L195 180 L175 85 Z" fill="#4B6584" opacity="0.3"/> <!-- Edge highlight -->
+
+  <!-- Crack / Menacing line on the monolith -->
+  <path d="M150 130 L160 145 L155 160" stroke="#1A1D24" stroke-width="2" fill="none"/>
+
+  <!-- ADJECTIVE VISUAL CONTRAST & SCALE EXAGGERATION:
+       Small, shrinking figure ("软弱" - fragile, shrinking back, bending under pressure)
+       vs. Massive towering challenge. -->
+  
+  <g transform="translate(0, 0)">
+    <!-- Drooping body posture (Slouched, shrinking, knees bending, arms pulled inward) -->
+    
+    <!-- Head (bowed low) -->
+    <circle cx="85" cy="135" r="11" fill="#E4E7EB"/>
+    <!-- Hair -->
+    <path d="M74 133 C75 125 85 123 94 130 C90 127 80 127 74 133 Z" fill="#8899A6"/>
+
+    <!-- Slumped Torso (leaning backward/away from the monolith) -->
+    <path d="M82 145 C80 155 75 165 70 175 L95 178 C98 165 102 155 105 145 Z" fill="#E06C75" opacity="0.8"/> <!-- Muted red/coral for vulnerability/strain -->
+
+    <!-- Bent Legs (Trembling/Giving way) -->
+    <path d="M73 175 L60 180" stroke="#E4E7EB" stroke-width="6" stroke-linecap="round"/>
+    <path d="M60 180 L52 173" stroke="#E4E7EB" stroke-width="5" stroke-linecap="round"/> <!-- Trembling foot back -->
+
+    <path d="M90 177 L85 180" stroke="#E4E7EB" stroke-width="6" stroke-linecap="round"/>
+    <path d="M85 180 L80 175" stroke="#E4E7EB" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Guarding/Defensive Arms (Pulled in close to the chest, helpless pose) -->
+    <path d="M87 148 C80 152 75 160 80 165" stroke="#E4E7EB" stroke-width="5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Accent Elements: Sweeping wind/pressure lines emphasizing emotional weight -->
+  <path d="M50 110 C70 108 90 115 110 110" stroke="#4B6584" stroke-width="2" stroke-linecap="round" opacity="0.4" fill="none"/>
+  <path d="M40 125 C65 123 85 130 100 125" stroke="#4B6584" stroke-width="1.5" stroke-linecap="round" opacity="0.3" fill="none"/>
+  <path d="M60 95 C75 93 90 98 105 95" stroke="#4B6584" stroke-width="1" stroke-linecap="round" opacity="0.2" fill="none"/>
+
+  <!-- Ground plane -->
+  <rect x="30" y="180" width="180" height="4" rx="2" fill="#2C323B"/>
+
+  <!-- Subtle Focus Accent (Golden/Orange highlight on the towering edge of the monolith to show what must be faced) -->
+  <path d="M190 70 L192 120" stroke="#E5C07B" stroke-width="1.5" opacity="0.6"/>
+</svg>

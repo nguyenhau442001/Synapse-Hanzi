@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient background glow representing transformation/revelation -->
+  <circle cx="120" cy="120" r="80" fill="#2D3748" opacity="0.4"/>
+  
+  <!-- Spotlight / Focus cone descending from above -->
+  <path d="M120 20 L70 200 L170 200 Z" fill="#F6AD55" opacity="0.08"/>
+  
+  <!-- Central Character: A transformed person (Champion holding a trophy) representing "guamuxiangkan" -->
+  <!-- Person Body/Torso -->
+  <path d="M95 180 C95 155 105 145 120 145 C135 145 145 155 145 180 Z" fill="#4299E1"/>
+  
+  <!-- Person Neck & Head -->
+  <rect x="113" y="120" width="14" height="28" fill="#ED8936"/>
+  <circle cx="120" cy="105" r="20" fill="#ED8936"/>
+  
+  <!-- Hair (Neat, modern flat style) -->
+  <path d="M100 102 C100 90 110 83 120 83 C130 83 140 90 140 102 C140 105 138 105 138 102 C138 92 130 86 120 86 C110 86 102 92 102 102 Z" fill="#2D3748"/>
+
+  <!-- Golden Trophy (representing the national competition victory) -->
+  <path d="M105 135 L135 135 L142 165 L98 165 Z" fill="#ECC94B"/>
+  <path d="M120 165 L120 185" stroke="#ECC94B" stroke-width="6" stroke-linecap="round"/>
+  <rect x="105" y="185" width="30" height="8" rx="2" fill="#D69E2E"/>
+  <path d="M105 140 C95 140 92 148 95 153 C98 158 105 155 105 155" fill="none" stroke="#ECC94B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M135 140 C145 140 148 148 145 153 C142 158 135 155 135 155" fill="none" stroke="#ECC94B" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Star on Trophy -->
+  <polygon points="120,143 122,148 127,148 123,151 125,156 120,153 115,156 117,151 113,148 118,148" fill="#FEFCBF"/>
+
+  <!-- Observing magnifying glass / "Looking with new eyes" (Lu mu xiang kan) -->
+  <!-- Magnifying Glass handle -->
+  <line x1="85" y1="95" x2="60" y2="70" stroke="#CBD5E0" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Magnifying Glass lens ring -->
+  <circle cx="98" cy="82" r="22" fill="none" stroke="#ED8936" stroke-width="5"/>
+  <circle cx="98" cy="82" r="22" fill="#4FD1C5" fill-opacity="0.2"/>
+
+  <!-- Sparkle indicating realization / looking with new eyes -->
+  <g fill="#F6AD55">
+    <path d="M175 75 L178 85 L188 88 L178 91 L175 101 L172 91 L162 88 L172 85 Z"/>
+    <path d="M60 140 L62 145 L67 147 L62 149 L60 154 L58 149 L53 147 L58 145 Z" opacity="0.8"/>
+  </g>
+</svg>

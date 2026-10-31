@@ -29,7 +29,7 @@ function hasSavedProgress() {
 }
 
 const DEFAULT_DAILY_STUDY_GOAL = 10;
-const DAILY_STUDY_GOAL_OPTIONS = [10, 20, 50];
+const DAILY_STUDY_GOAL_OPTIONS = [10, 20, 30, 50];
 const DAILY_STUDY_GOAL_KEY = 'hsk_daily_study_goal_v1';
 const STUDY_ACTIVITY_KEY = 'hsk_study_activity_v1';
 const LAST_LEVEL_KEY = 'hsk_last_level_v1';
@@ -271,36 +271,29 @@ function renderMonthGridHtml(grid) {
 function renderMonthView(activity) {
   const { year, month } = historyModalCursor;
   const grid = buildMonthGrid(activity.days, year, month);
-  const now = new Date();
-  const isCurrentMonth = year === now.getFullYear() && month === now.getMonth();
   const studiedDays = grid.filter(c => c.inMonth && c.studied).length;
   const totalMinutes = grid.filter(c => c.inMonth).reduce((sum, c) => sum + c.minutes, 0);
 
   return `
-    <div class="history-month-nav">
-      <button class="history-month-btn" type="button" onclick="changeHistoryCursor(-1)" aria-label="Tháng trước">‹</button>
-      <div class="history-month-title">Tháng ${month + 1} · ${year}</div>
-      <button class="history-month-btn" type="button" onclick="changeHistoryCursor(1)" ${isCurrentMonth ? 'disabled' : ''} aria-label="Tháng sau">›</button>
-    </div>
     ${renderMonthGridHtml(grid)}
-    <div class="history-legend">
-      <span>Ít</span>
-      <span class="history-legend-swatch bucket-0"></span>
-      <span class="history-legend-swatch bucket-1"></span>
-      <span class="history-legend-swatch bucket-2"></span>
-      <span class="history-legend-swatch bucket-3"></span>
-      <span class="history-legend-swatch bucket-4"></span>
-      <span>Nhiều</span>
-    </div>
-    <div class="history-summary">${studiedDays} ngày học · ${formatStudyDuration(totalMinutes)}</div>`;
+    <div class="history-footer">
+      <div class="history-summary">${studiedDays} ngày học · ${formatStudyDuration(totalMinutes)}</div>
+      <div class="history-legend">
+        <span>Ít</span>
+        <span class="history-legend-swatch bucket-0"></span>
+        <span class="history-legend-swatch bucket-1"></span>
+        <span class="history-legend-swatch bucket-2"></span>
+        <span class="history-legend-swatch bucket-3"></span>
+        <span class="history-legend-swatch bucket-4"></span>
+        <span>Nhiều</span>
+      </div>
+    </div>`;
 }
 
 const MINI_MONTH_LABELS = ['Th 1', 'Th 2', 'Th 3', 'Th 4', 'Th 5', 'Th 6', 'Th 7', 'Th 8', 'Th 9', 'Th 10', 'Th 11', 'Th 12'];
 
 function renderYearView(activity) {
   const { year } = historyModalCursor;
-  const now = new Date();
-  const isCurrentYear = year === now.getFullYear();
   const summary = yearSummary(activity.days, year);
 
   const months = Array.from({ length: 12 }, (_, month) => {
@@ -317,13 +310,19 @@ function renderYearView(activity) {
   }).join('');
 
   return `
-    <div class="history-month-nav">
-      <button class="history-month-btn" type="button" onclick="changeHistoryCursor(-1)" aria-label="Năm trước">‹</button>
-      <div class="history-month-title">${year}</div>
-      <button class="history-month-btn" type="button" onclick="changeHistoryCursor(1)" ${isCurrentYear ? 'disabled' : ''} aria-label="Năm sau">›</button>
-    </div>
     <div class="history-year-grid">${months}</div>
-    <div class="history-summary">${summary.studiedDays} ngày học · ${formatStudyDuration(summary.totalMinutes)}</div>`;
+    <div class="history-footer">
+      <div class="history-summary">${summary.studiedDays} ngày học · ${formatStudyDuration(summary.totalMinutes)}</div>
+      <div class="history-legend">
+        <span>Ít</span>
+        <span class="history-legend-swatch bucket-0"></span>
+        <span class="history-legend-swatch bucket-1"></span>
+        <span class="history-legend-swatch bucket-2"></span>
+        <span class="history-legend-swatch bucket-3"></span>
+        <span class="history-legend-swatch bucket-4"></span>
+        <span>Nhiều</span>
+      </div>
+    </div>`;
 }
 
 function renderHistoryModalBody() {
@@ -334,6 +333,23 @@ function renderHistoryModalBody() {
   const stats = streakStats(activity.days);
   const totalMinutesAllTime = Object.values(activity.days).reduce((sum, entry) => sum + daySeconds(entry) / 60, 0);
 
+  const now = new Date();
+  const isMonth = historyModalView === 'month';
+  const isCurrentMonth = historyModalCursor.year === now.getFullYear() && historyModalCursor.month === now.getMonth();
+  const isCurrentYear = historyModalCursor.year === now.getFullYear();
+
+  const navHtml = isMonth ? `
+    <div class="history-month-nav">
+      <button class="history-month-btn" type="button" onclick="changeHistoryCursor(-1)" aria-label="Tháng trước">‹</button>
+      <div class="history-month-title">Tháng ${historyModalCursor.month + 1} · ${historyModalCursor.year}</div>
+      <button class="history-month-btn" type="button" onclick="changeHistoryCursor(1)" ${isCurrentMonth ? 'disabled' : ''} aria-label="Tháng sau">›</button>
+    </div>` : `
+    <div class="history-month-nav">
+      <button class="history-month-btn" type="button" onclick="changeHistoryCursor(-1)" aria-label="Năm trước">‹</button>
+      <div class="history-month-title">${historyModalCursor.year}</div>
+      <button class="history-month-btn" type="button" onclick="changeHistoryCursor(1)" ${isCurrentYear ? 'disabled' : ''} aria-label="Năm sau">›</button>
+    </div>`;
+
   body.innerHTML = `
     <div class="history-kpi-row">
       <div class="history-kpi"><strong>🔥 ${stats.current}</strong><span>Chuỗi hiện tại</span></div>
@@ -341,18 +357,22 @@ function renderHistoryModalBody() {
       <div class="history-kpi"><strong>📅 ${stats.totalDaysStudied}</strong><span>Ngày đã học</span></div>
       <div class="history-kpi"><strong>⏱ ${formatStudyDuration(totalMinutesAllTime)}</strong><span>Tổng thời gian</span></div>
     </div>
-    <div class="history-view-switcher" role="tablist">
-      <button type="button" role="tab" class="history-view-btn ${historyModalView === 'month' ? 'active' : ''}" aria-selected="${historyModalView === 'month'}" onclick="setHistoryView('month')">Tháng</button>
-      <button type="button" role="tab" class="history-view-btn ${historyModalView === 'year' ? 'active' : ''}" aria-selected="${historyModalView === 'year'}" onclick="setHistoryView('year')">Năm</button>
+    <div class="history-toolbar">
+      <div class="history-view-switcher" role="tablist">
+        <button type="button" role="tab" class="history-view-btn ${isMonth ? 'active' : ''}" aria-selected="${isMonth}" onclick="setHistoryView('month')">Tháng</button>
+        <button type="button" role="tab" class="history-view-btn ${!isMonth ? 'active' : ''}" aria-selected="${!isMonth}" onclick="setHistoryView('year')">Năm</button>
+      </div>
+      ${navHtml}
     </div>
     <div class="history-view-body">
-      ${historyModalView === 'month' ? renderMonthView(activity) : renderYearView(activity)}
+      ${isMonth ? renderMonthView(activity) : renderYearView(activity)}
     </div>`;
 }
 
 function closeHistoryModal() {
   const overlay = document.getElementById('historyOverlay');
   if (overlay) overlay.remove();
+  delete document.body.dataset.historyModalOpen;
   document.removeEventListener('keydown', handleHistoryModalKeydown);
 }
 
@@ -377,6 +397,7 @@ function showHistoryModal() {
   overlay.addEventListener('click', e => { if (e.target === overlay) closeHistoryModal(); });
   document.body.appendChild(overlay);
   document.addEventListener('keydown', handleHistoryModalKeydown);
+  document.body.dataset.historyModalOpen = 'true';
   renderHistoryModalBody();
 }
 
@@ -466,36 +487,56 @@ function renderLearningDashboard() {
   const quickButton = document.getElementById('quickStudyButton');
   const dueCount = document.getElementById('todayDueCount');
   const todayReviewButton = document.getElementById('todayReviewButton');
-  if (!dailyCount || !dailyFill || !dailyMessage || !dailyGoalSelect || !knownNode || !studiedNode || !quickButton) return;
+  if (!dailyCount || !dailyFill || !dailyMessage) return;
 
   const activity = readStudyActivity();
   const today = localDateKey(new Date());
   const todayCount = dayWordCount(activity.days[today]);
   const dailyGoal = readDailyStudyGoal();
+  const validGoal = dailyGoal > 0 ? dailyGoal : 50;
   const streak = studyStreak(activity.days);
   const summary = learningProgressSummary();
-  const goalPercent = Math.min(100, todayCount / dailyGoal * 100);
+  const rawPercent = (todayCount / validGoal) * 100;
+  const goalPercent = Math.max(0, Math.min(100, isNaN(rawPercent) ? 0 : rawPercent));
+  const roundedPct = Math.round(goalPercent);
 
   dailyCount.textContent = todayCount;
-  dailyGoalSelect.value = String(dailyGoal);
+  if (dailyGoalSelect) dailyGoalSelect.value = String(validGoal);
   dailyFill.style.width = goalPercent + '%';
-  dailyFill.parentElement.setAttribute('aria-valuemax', String(dailyGoal));
-  dailyFill.parentElement.setAttribute('aria-valuenow', String(Math.min(todayCount, dailyGoal)));
-  dailyMessage.textContent = todayCount >= dailyGoal
+  if (dailyFill.parentElement) {
+    dailyFill.parentElement.setAttribute('aria-valuemax', String(validGoal));
+    dailyFill.parentElement.setAttribute('aria-valuenow', String(Math.min(todayCount, validGoal)));
+  }
+  dailyMessage.textContent = todayCount >= validGoal
     ? 'Đã hoàn thành mục tiêu hôm nay — tuyệt lắm!'
-    : todayCount > 0
-      ? `Còn ${dailyGoal - todayCount} từ nữa để hoàn thành mục tiêu.`
-      : `Học ${dailyGoal} từ để hoàn thành mục tiêu hôm nay.`;
+    : 'Học thêm hôm nay để hoàn thành mục tiêu.';
+
+  const goalPctNode = document.getElementById('dailyGoalPct');
+  if (goalPctNode) {
+    goalPctNode.textContent = `${roundedPct}%`;
+    goalPctNode.classList.toggle('is-completed', roundedPct >= 100);
+  }
+  const targetTextNode = document.getElementById('dailyGoalTargetText');
+  if (targetTextNode) {
+    targetTextNode.textContent = String(validGoal);
+  }
+
   const headerStreak = document.getElementById('headerStreakText');
   if (headerStreak) headerStreak.textContent = `${streak} ngày`;
-  knownNode.textContent = summary.totalKnown;
-  studiedNode.textContent = summary.totalStudied;
+  const bannerStreak = document.getElementById('bannerStreakText');
+  if (bannerStreak) bannerStreak.textContent = `${streak} ngày`;
+  const bannerStreakBadge = document.getElementById('bannerStreakBadge');
+  if (bannerStreakBadge) {
+    bannerStreakBadge.classList.toggle('has-streak', streak > 0);
+  }
+  if (knownNode) knownNode.textContent = summary.totalKnown;
+  if (studiedNode) studiedNode.textContent = summary.totalStudied;
   const dueTotal = countDueCardsAcrossLevels(new Date());
   if (dueCount) dueCount.textContent = String(dueTotal);
   if (todayReviewButton) todayReviewButton.hidden = dueTotal === 0;
 
   const target = summary.target;
-  if (target) {
+  if (target && quickButton) {
     const complete = target.known >= LEVELS[target.level].total;
     quickButton.dataset.level = target.level;
     quickButton.innerHTML = `${complete ? 'Ôn lại' : target.studied > 0 ? 'Tiếp tục' : 'Bắt đầu'} ${LEVELS[target.level].label} <span aria-hidden="true">→</span>`;
@@ -506,7 +547,8 @@ function renderLearningDashboard() {
 
 function quickStartLearning() {
   const button = document.getElementById('quickStudyButton');
-  const level = button && button.dataset.level;
+  const continuation = document.getElementById('continueLearningCard');
+  const level = (button && button.dataset.level) || (continuation && continuation.dataset.level) || 'hsk1';
   if (level && LEVELS[level] && LEVELS[level].available) selectLevel(level);
 }
 
@@ -638,10 +680,16 @@ function goBackToPicker() {
   setActiveStudyWord(null);
   document.body.classList.remove('study-mode');
   document.body.classList.remove('flashcard-study-mode');
+  document.documentElement.classList.remove('flashcard-study-mode');
+  document.body.classList.remove('today-reviews-focus-mode');
   const wasTopic = currentLevel && LEVELS[currentLevel] && LEVELS[currentLevel].isTopic;
   document.getElementById('screenCards').style.display = 'none';
-  const studyLevelBadge = document.getElementById('studyLevelBadge');
-  if (studyLevelBadge) studyLevelBadge.textContent = '';
+  const radicalCards = document.getElementById('screenRadicalCards');
+  if (radicalCards) radicalCards.style.display = 'none';
+  const radicalHub = document.getElementById('screenRadicalHub');
+  if (radicalHub) radicalHub.style.display = 'none';
+  const todayScreen = document.getElementById('screenTodayReviews');
+  if (todayScreen) todayScreen.style.display = 'none';
   const vocabHub = document.getElementById('screenVocabHub');
   if (vocabHub) vocabHub.style.display = '';
   const auxCol = document.querySelector('.dashboard-aux-column');
@@ -680,8 +728,10 @@ async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal = false
     SpaRouter.pushView({ view: 'cards', level: level });
   }
   if (typeof closeAllStudyDrawers === 'function') closeAllStudyDrawers();
+  document.body.classList.remove('today-reviews-focus-mode');
   document.body.classList.add('study-mode');
   document.body.classList.add('flashcard-study-mode');
+  document.documentElement.classList.add('flashcard-study-mode');
   window.scrollTo({ top: 0, behavior: 'instant' });
   const wsMid = document.getElementById('workstationMiddle');
   if (wsMid) wsMid.scrollTop = 0;
@@ -696,8 +746,6 @@ async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal = false
   overviewStatus = 'all';
   try { localStorage.setItem(LAST_LEVEL_KEY, level); } catch (e) {}
   document.getElementById('appTitle').textContent = LEVELS[level].label + ' · 汉字思维';
-  const studyLevelBadge = document.getElementById('studyLevelBadge');
-  if (studyLevelBadge && LEVELS[level]) studyLevelBadge.textContent = LEVELS[level].label;
   document.getElementById('primaryTabs').style.display = 'none';
   document.getElementById('pickerControls').style.display = 'none';
   document.getElementById('learningDashboard').style.display = 'none';
@@ -710,6 +758,12 @@ async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal = false
   document.getElementById('transferPanel').hidden = true;
   document.getElementById('screenPicker').style.display = 'none';
   document.getElementById('screenTopicPicker').style.display = 'none';
+  const screenRadicalCards = document.getElementById('screenRadicalCards');
+  if (screenRadicalCards) screenRadicalCards.style.display = 'none';
+  const screenRadicalHub = document.getElementById('screenRadicalHub');
+  if (screenRadicalHub) screenRadicalHub.style.display = 'none';
+  const screenTodayReviews = document.getElementById('screenTodayReviews');
+  if (screenTodayReviews) screenTodayReviews.style.display = 'none';
   document.getElementById('screenCards').style.display = '';
   document.getElementById('overviewTab').disabled = true;
   document.getElementById('cardArea').innerHTML = `

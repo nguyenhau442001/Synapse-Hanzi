@@ -1,0 +1,36 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow to highlight the subject -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.5"/>
+
+  <!-- Visual contrast representing "硬朗" (sturdy, robust, vigorous despite age) -->
+  <!-- Left side / background cue: Subtle arched silhouette of age/time (smooth mountain line or gentle curve) -->
+  <path d="M 60,180 Q 120,130 180,180" fill="none" stroke="#2C3440" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 6"/>
+
+  <!-- Main subject: Upright, robust, energetic posture (Elderly figure with strong, confident silhouette and glowing vitality) -->
+  <g transform="translate(0, 5)">
+    <!-- Head and facial profile (determined, strong jawline, white/silver hair styled neatly) -->
+    <circle cx="120" cy="72" r="22" fill="#E2E8F0"/>
+    <path d="M 110,68 Q 120,74 130,68" fill="none" stroke="#64748B" stroke-width="2" stroke-linecap="round"/> <!-- Eyes: calm & resolute -->
+    
+    <!-- Robust Torso / Broad shoulders indicating strength and vitality -->
+    <path d="M 90,110 L 150,110 L 160,165 L 80,165 Z" fill="#3B82F6"/>
+    
+    <!-- Dynamic posture accent: Strong, crossed arms (classic pose denoting vigor, sturdiness, resilience) -->
+    <path d="M 95,120 L 145,120 L 155,140 L 120,150 L 85,140 Z" fill="#60A5FA"/>
+    
+    <!-- Grounded stance / legs -->
+    <rect x="100" y="165" width="16" height="35" rx="4" fill="#1E293B"/>
+    <rect x="124" y="165" width="16" height="35" rx="4" fill="#1E293B"/>
+  </g>
+
+  <!-- Accent visual elements (Gold/Orange high-contrast sparks of vitality and resilience surrounding the figure) -->
+  <circle cx="75" cy="95" r="3" fill="#F59E0B"/>
+  <circle cx="165" cy="95" r="3" fill="#F59E0B"/>
+  <path d="M 120,38 L 122,44 L 128,46 L 122,48 L 120,54 L 118,48 L 112,46 L 118,44 Z" fill="#F59E0B"/>
+  
+  <!-- Scale contrast / structural strength lines framing the sturdy figure -->
+  <path d="M 72,130 L 62,130 L 62,170 L 72,170" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <path d="M 168,130 L 178,130 L 178,170 L 168,170" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+</svg>

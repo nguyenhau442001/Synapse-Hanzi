@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle floor shadow -->
+  <ellipse cx="120" cy="190" rx="70" ry="10" fill="#111318"/>
+
+  <!-- Group of identical standard/gray figures representing the crowd (与众不同 context) -->
+  <!-- Left background figure 1 -->
+  <circle cx="70" cy="100" r="12" fill="#3A4150"/>
+  <path d="M52 145 C52 125, 88 125, 88 145 Z" fill="#3A4150"/>
+
+  <!-- Left background figure 2 -->
+  <circle cx="95" cy="90" r="12" fill="#3A4150"/>
+  <path d="M77 135 C77 115, 113 115, 113 135 Z" fill="#3A4150"/>
+
+  <!-- Right background figure 1 -->
+  <circle cx="145" cy="90" r="12" fill="#3A4150"/>
+  <path d="M127 135 C127 115, 163 115, 163 135 Z" fill="#3A4150"/>
+
+  <!-- Right background figure 2 -->
+  <circle cx="170" cy="100" r="12" fill="#3A4150"/>
+  <path d="M152 145 C152 125, 188 125, 188 145 Z" fill="#3A4150"/>
+
+  <!-- Connection lines representing the uniform crowd pattern -->
+  <path d="M70 100 L95 90 L120 110 L145 90 L170 100" stroke="#2B303B" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Central distinct character (The "Yǔzhòng-bùtóng" / Unique Individual) -->
+  <!-- Floating/elevated slightly to show distinction -->
+  <g transform="translate(0, -6)">
+    <!-- Head with unique stylish angle/hair element -->
+    <circle cx="120" cy="74" r="14" fill="#FFB703"/>
+    <path d="M112 66 Q120 58 130 65" stroke="#1A1D24" stroke-width="3" stroke-linecap="round" fill="none"/>
+    
+    <!-- Body with vibrant contrasting color (orange/gold accent theme) -->
+    <path d="M98 130 C98 105, 142 105, 142 130 Z" fill="#FF9F1C"/>
+    
+    <!-- Distinctive geometric artistic shape held or worn (representing creative design/artistic style) -->
+    <polygon points="120,88 135,115 105,115" fill="#E71D36"/>
+    <circle cx="120" cy="104" r="5" fill="#FFB703"/>
+  </g>
+
+  <!-- Foreground dynamic highlight / distinct pedestal effect -->
+  <path d="M90 170 L150 170 L140 162 L100 162 Z" fill="#FFB703" opacity="0.8"/>
+  <ellipse cx="120" cy="166" rx="30" ry="5" fill="#FF9F1C" opacity="0.5"/>
+</svg>

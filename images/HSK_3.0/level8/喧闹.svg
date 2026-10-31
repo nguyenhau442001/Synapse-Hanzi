@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Left side: The chaotic, loud urban environment (The "喧闹" state) -->
+  <g transform="translate(20, 60)">
+    <!-- Abstract representation of dense, overlapping urban noise -->
+    <path d="M20 120 L20 40 L40 30 L60 40 L60 120 Z" fill="#FF9F1C" opacity="0.8"/>
+    <path d="M70 120 L70 60 L90 50 L110 60 L110 120 Z" fill="#FFD670" opacity="0.9"/>
+    <path d="M40 80 L50 70 L60 80 L50 90 Z" fill="#1A1D24"/>
+    <path d="M80 100 L90 90 L100 100 L90 110 Z" fill="#1A1D24"/>
+    <!-- Sound wave indicators -->
+    <path d="M15 30 A 20 20 0 0 1 15 10" stroke="#FF9F1C" stroke-width="3" fill="none"/>
+    <path d="M10 35 A 30 30 0 0 1 10 5" stroke="#FF9F1C" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Right side: The calm, quiet mountain environment (The contrast) -->
+  <g transform="translate(140, 60)">
+    <!-- Simple, clean mountain silhouette -->
+    <path d="M0 120 L30 40 L60 120 Z" fill="#4A5568"/>
+    <path d="M30 120 L50 70 L80 120 Z" fill="#2D3748"/>
+    <!-- A single, still, peaceful element -->
+    <circle cx="40" cy="90" r="5" fill="#E2E8F0"/>
+  </g>
+
+  <!-- Divider/Transition -->
+  <line x1="120" y1="40" x2="120" y2="200" stroke="#2D3748" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>

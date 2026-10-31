@@ -1,0 +1,64 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Architectural grid background lines representing scale and structure -->
+  <g stroke="#262B35" stroke-width="1" opacity="0.6">
+    <line x1="40" y1="200" x2="200" y2="200" />
+    <line x1="40" y1="160" x2="200" y2="160" />
+    <line x1="40" y1="120" x2="200" y2="120" />
+    <line x1="40" y1="80" x2="200" y2="80" />
+    <line x1="40" y1="40" x2="200" y2="40" />
+    
+    <line x1="80" y1="200" x2="80" y2="40" />
+    <line x1="120" y1="200" x2="120" y2="40" />
+    <line x1="160" y1="200" x2="160" y2="40" />
+  </g>
+
+  <!-- Ground foundation line -->
+  <line x1="30" y1="200" x2="210" y2="200" stroke="#3A4250" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Tower structure (Visualizing "tòa" - high-rise building classifier unit) -->
+  <g transform="translate(85, 45)">
+    <!-- Main skyscraper body -->
+    <rect x="0" y="0" width="70" height="155" rx="4" fill="#222733" stroke="#3A4250" stroke-width="2"/>
+    
+    <!-- Modern glass curtain wall grid / Windows pattern -->
+    <!-- Column 1 -->
+    <rect x="10" y="12" width="14" height="20" rx="2" fill="#2F3644" />
+    <rect x="10" y="38" width="14" height="20" rx="2" fill="#2F3644" />
+    <rect x="10" y="64" width="14" height="20" rx="2" fill="#2F3644" />
+    <rect x="10" y="90" width="14" height="20" rx="2" fill="#2F3644" />
+    <rect x="10" y="116" width="14" height="20" rx="2" fill="#2F3644" />
+    
+    <!-- Column 2 -->
+    <rect x="28" y="12" width="14" height="20" rx="2" fill="#2F3644" />
+    <rect x="28" y="38" width="14" height="20" rx="2" fill="#3D4759" /> <!-- Highlighted floor segment -->
+    <rect x="28" y="64" width="14" height="20" rx="2" fill="#2F3644" />
+    <rect x="28" y="90" width="14" height="20" rx="2" fill="#2F3644" />
+    <rect x="28" y="116" width="14" height="20" rx="2" fill="#2F3644" />
+
+    <!-- Column 3 -->
+    <rect x="46" y="12" width="14" height="20" rx="2" fill="#2F3644" />
+    <rect x="46" y="38" width="14" height="20" rx="2" fill="#2F3644" />
+    <rect x="46" y="64" width="14" height="20" rx="2" fill="#2F3644" />
+    <rect x="46" y="90" width="14" height="20" rx="2" fill="#2F3644" />
+    <rect x="46" y="116" width="14" height="20" rx="2" fill="#2F3644" />
+
+    <!-- Accent lighting / Modern architectural beam -->
+    <line x1="35" y1="0" x2="35" y2="155" stroke="#F59E0B" stroke-width="1.5" opacity="0.4"/>
+  </g>
+
+  <!-- Vertical upward progression and elevation indicator (Escalation / Height metaphor) -->
+  <g transform="translate(30, 0)">
+    <!-- Upward arrow line -->
+    <line x1="30" y1="195" x2="30" y2="55" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 4"/>
+    <!-- Arrow head pointing UP -->
+    <polyline points="23,63 30,52 37,63" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Scale markers indicating multi-story height -->
+    <line x1="26" y1="150" x2="34" y2="150" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <line x1="26" y1="105" x2="34" y2="105" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <line x1="26" y1="60" x2="34" y2="60" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+</svg>

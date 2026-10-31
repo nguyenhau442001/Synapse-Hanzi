@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Representing "俗" (vulgar/tacky) as a person wearing an excessively loud, mismatched, and gaudy outfit, 
+       clashing with a refined environment, emphasizing the lack of aesthetic taste. -->
+  
+  <!-- Person's body -->
+  <path d="M80 200 C80 160, 160 160, 160 200 L160 220 L80 220 Z" fill="#3D4451"/>
+  
+  <!-- Gaudy, mismatched clothing elements -->
+  <path d="M90 150 L150 150 L145 190 L95 190 Z" fill="#FF9F1C"/> <!-- Bright orange tacky vest -->
+  <rect x="100" y="160" width="40" height="10" fill="#FFD700"/> <!-- Gold stripe -->
+  <rect x="100" y="175" width="40" height="10" fill="#FFD700"/> <!-- Gold stripe -->
+  
+  <!-- Head -->
+  <circle cx="120" cy="110" r="35" fill="#E0E6ED"/>
+  
+  <!-- Tacky accessories: Oversized, clashing sunglasses -->
+  <ellipse cx="105" cy="105" rx="15" ry="10" fill="#2C3E50"/>
+  <ellipse cx="135" cy="105" rx="15" ry="10" fill="#2C3E50"/>
+  <rect x="118" y="102" width="4" height="4" fill="#FF9F1C"/>
+  
+  <!-- Expression: Smug/gaudy grin -->
+  <path d="M105 130 Q120 140 135 130" stroke="#2C3E50" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Hair: Messy/over-styled -->
+  <path d="M95 90 C95 70, 145 70, 145 90 C145 80, 155 80, 155 95 C155 100, 145 100, 145 105" fill="#FF9F1C"/>
+</svg>

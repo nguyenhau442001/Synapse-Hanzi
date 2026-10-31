@@ -1,0 +1,80 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background water ripples representing Victoria Harbour -->
+  <path d="M20 200 C70 195, 120 205, 170 195 C200 189, 220 198, 240 195" stroke="#2A303C" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M10 215 C60 210, 110 220, 160 210 C190 204, 215 212, 230 210" stroke="#2A303C" stroke-width="1.5" fill="none" opacity="0.4"/>
+
+  <!-- Glowing Fireworks Burst (Central Object) -->
+  <g transform="translate(120, 110)">
+    <!-- Outer Glow / Soft Aura -->
+    <circle cx="0" cy="0" r="65" fill="#FF5722" opacity="0.1" filter="blur(8px)"/>
+    <circle cx="0" cy="0" r="45" fill="#FFC107" opacity="0.15" filter="blur(6px)"/>
+
+    <!-- Main Spark Rays -->
+    <g stroke-linecap="round" stroke-width="3">
+      <!-- Gold primary rays -->
+      <line x1="0" y1="0" x2="0" y2="-65" stroke="#FFD700" />
+      <line x1="0" y1="0" x2="0" y2="65" stroke="#FFD700" />
+      <line x1="0" y1="0" x2="-65" y2="0" stroke="#FFD700" />
+      <line x1="0" y1="0" x2="65" y2="0" stroke="#FFD700" />
+      <line x1="0" y1="0" x2="-46" y2="-46" stroke="#FFD700" />
+      <line x1="0" y1="0" x2="46" y2="46" stroke="#FFD700" />
+      <line x1="0" y1="0" x2="-46" y2="46" stroke="#FFD700" />
+      <line x1="0" y1="0" x2="46" y2="-46" stroke="#FFD700" />
+    </g>
+
+    <!-- Orange secondary rays and sparks -->
+    <g stroke-linecap="round" stroke-width="2" stroke="#FF7043">
+      <line x1="0" y1="0" x2="-25" y2="-55" />
+      <line x1="0" y1="0" x2="25" y2="-55" />
+      <line x1="0" y1="0" x2="-55" y2="-25" />
+      <line x1="0" y1="0" x2="-55" y2="25" />
+      <line x1="0" y1="0" x2="-25" y2="55" />
+      <line x1="0" y1="0" x2="25" y2="55" />
+      <line x1="0" y1="0" x2="55" y2="-25" />
+      <line x1="0" y1="0" x2="55" y2="25" />
+    </g>
+
+    <!-- Glowing Spark Dots / Particles -->
+    <circle cx="0" cy="-72" r="3" fill="#FFF"/>
+    <circle cx="0" cy="72" r="3" fill="#FFF"/>
+    <circle cx="-72" cy="0" r="3" fill="#FFF"/>
+    <circle cx="72" cy="0" r="3" fill="#FFF"/>
+    
+    <circle cx="-52" cy="-52" r="2.5" fill="#FFEB3B"/>
+    <circle cx="52" cy="52" r="2.5" fill="#FFEB3B"/>
+    <circle cx="-52" cy="52" r="2.5" fill="#FFEB3B"/>
+    <circle cx="52" cy="-52" r="2.5" fill="#FFEB3B"/>
+
+    <circle cx="-30" cy="-62" r="2" fill="#FF7043"/>
+    <circle cx="30" cy="-62" r="2" fill="#FF7043"/>
+    <circle cx="-62" cy="-30" r="2" fill="#FF7043"/>
+    <circle cx="-62" cy="30" r="2" fill="#FF7043"/>
+    <circle cx="-30" cy="62" r="2" fill="#FF7043"/>
+    <circle cx="30" cy="62" r="2" fill="#FF7043"/>
+    <circle cx="62" cy="-30" r="2" fill="#FF7043"/>
+    <circle cx="62" cy="30" r="2" fill="#FF7043"/>
+
+    <!-- Center Core Flare -->
+    <circle cx="0" cy="0" r="8" fill="#FFF"/>
+    <circle cx="0" cy="0" r="4" fill="#FFD700"/>
+  </g>
+
+  <!-- Distant smaller fireworks for depth -->
+  <g transform="translate(65, 75)" opacity="0.6">
+    <line x1="0" y1="0" x2="0" y2="-20" stroke="#FF7043" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="0" y2="20" stroke="#FF7043" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="-20" y2="0" stroke="#FF7043" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="20" y2="0" stroke="#FF7043" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="2" fill="#FFF"/>
+  </g>
+
+  <g transform="translate(175, 85)" opacity="0.5">
+    <line x1="0" y1="0" x2="-15" y2="-15" stroke="#FFD700" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="15" y2="15" stroke="#FFD700" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="-15" y2="15" stroke="#FFD700" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="15" y2="-15" stroke="#FFD700" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="2" fill="#FFF"/>
+  </g>
+</svg>

@@ -1,0 +1,56 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Environment / Table Setup -->
+  <!-- Circular Meeting Table -->
+  <ellipse cx="120" cy="150" rx="65" ry="32" fill="#2D323E" stroke="#3E4556" stroke-width="3"/>
+  <ellipse cx="120" cy="142" rx="65" ry="32" fill="#242933" />
+  
+  <!-- Laptop/Notes on table to indicate formal yet intimate discussion -->
+  <path d="M100 135 L120 130 L140 135 L135 145 L105 145 Z" fill="#3E4556" opacity="0.6"/>
+  
+  <!-- Figures seated around the table (representing 座谈 - sitting and talking) -->
+  
+  <!-- Person 1: Top (Leader/Speaker) -->
+  <g transform="translate(120, 78)">
+    <!-- Body/Shoulders -->
+    <path d="M-18 35 C-18 20 18 20 18 35 Z" fill="#E67E22"/>
+    <!-- Head -->
+    <circle cx="0" cy="5" r="12" fill="#FFD166"/>
+    <!-- Friendly gesture/arm -->
+    <path d="M-12 25 L-5 28" stroke="#FFD166" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Person 2: Bottom-Left -->
+  <g transform="translate(70, 145)">
+    <!-- Body/Shoulders -->
+    <path d="M-22 35 C-22 18 10 20 18 32 Z" fill="#3B82F6"/>
+    <!-- Head -->
+    <circle cx="2" cy="2" r="11" fill="#FFD166"/>
+    <!-- Arm gesturing in conversation -->
+    <path d="M5 20 L15 15" stroke="#FFD166" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Person 3: Bottom-Right -->
+  <g transform="translate(170, 145)">
+    <!-- Body/Shoulders -->
+    <path d="M-18 32 C-10 20 22 18 22 35 Z" fill="#10B981"/>
+    <!-- Head -->
+    <circle cx="-2" cy="2" r="11" fill="#FFD166"/>
+    <!-- Arm leaning listening/talking -->
+    <path d="M-5 20 L-15 16" stroke="#FFD166" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Speech/Dialogue Indicator (Clean modern floating abstract communication nodes, no text) -->
+  <g transform="translate(120, 105)" opacity="0.9">
+    <circle cx="0" cy="0" r="4" fill="#E67E22"/>
+    <circle cx="-14" cy="-8" r="3" fill="#3B82F6"/>
+    <circle cx="14" cy="-8" r="3" fill="#10B981"/>
+    <!-- Connecting lines -->
+    <line x1="-11" y1="-7" x2="-3" y2="-2" stroke="#4B5563" stroke-width="1.5" stroke-dasharray="2 2"/>
+    <line x1="11" y1="-7" x2="3" y2="-2" stroke="#4B5563" stroke-width="1.5" stroke-dasharray="2 2"/>
+  </g>
+
+  <!-- Warm ambient accent lighting above table -->
+  <ellipse cx="120" cy="138" rx="45" ry="18" fill="#FFD166" opacity="0.08"/>
+</svg>

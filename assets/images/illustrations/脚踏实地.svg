@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Visual Metaphor: Progression / Escalation stairway showing steady, grounded progress -->
+  <!-- Background subtle architectural progression lines -->
+  <path d="M40 180 L200 180" stroke="#2A2F3B" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M40 140 L200 140" stroke="#2A2F3B" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M40 100 L200 100" stroke="#2A2F3B" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <!-- Solid Staircase / Progression Blocks (representing "一步一个脚印" - step by step, grounded) -->
+  <g fill="#242B38">
+    <rect x="40" y="150" width="45" height="30" rx="4"/>
+    <rect x="95" y="120" width="45" height="60" rx="4"/>
+    <rect x="150" y="90" width="50" height="90" rx="4"/>
+  </g>
+
+  <!-- Top Active Progression Tier Highlight -->
+  <rect x="150" y="90" width="50" height="6" rx="3" fill="#F59E0B"/>
+
+  <!-- Grounded Footsteps / Contact Metaphor ("脚踏实地" - feet firmly on solid ground/steps) -->
+  <!-- Step 1 Footprint -->
+  <ellipse cx="62" cy="165" rx="10" ry="5" fill="#38BDF8" opacity="0.6"/>
+  <!-- Step 2 Footprint -->
+  <ellipse cx="117" cy="135" rx="10" ry="5" fill="#38BDF8" opacity="0.8"/>
+  <!-- Step 3 Final Solid Footprint with Golden Accent (Achievement/Grounded Success) -->
+  <ellipse cx="175" cy="105" rx="12" ry="6" fill="#F59E0B"/>
+  <circle cx="175" cy="105" r="4" fill="#1A1D24"/>
+
+  <!-- Upward Trajectory / Growth Vector (Abstract Adverbial Progression) -->
+  <path d="M62 160 C 90 140, 120 130, 175 100" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Solid Foundation Base -->
+  <path d="M30 183 L210 183" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Structural Anchor Dots (representing stability and reality) -->
+  <circle cx="62" cy="183" r="3" fill="#38BDF8"/>
+  <circle cx="117" cy="183" r="3" fill="#38BDF8"/>
+  <circle cx="175" cy="183" r="3" fill="#F59E0B"/>
+</svg>

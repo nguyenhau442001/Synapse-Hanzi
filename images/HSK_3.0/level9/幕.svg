@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www3.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Stage floor / lighting reflection -->
+  <path d="M40 200 L200 200 L215 218 L25 218 Z" fill="#252A34"/>
+  <ellipse cx="120" cy="200" rx="80" ry="8" fill="#323846"/>
+
+  <!-- Left curtain, drawn back -->
+  <path d="M25 22 C25 22 45 80 40 120 C35 160 15 200 15 200 L0 200 L0 22 Z" fill="#A83232"/>
+  <path d="M25 22 C30 60 55 100 50 140 C45 180 25 200 25 200 L12 200 L12 22 Z" fill="#D32F2F"/>
+  <path d="M12 22 C18 70 38 110 33 150 C28 190 12 200 12 200 L0 200 L0 22 Z" fill="#821D1D"/>
+
+  <!-- Right curtain, drawn back -->
+  <path d="M215 22 C215 22 195 80 200 120 C205 160 225 200 225 200 L240 200 L240 22 Z" fill="#A83232"/>
+  <path d="M215 22 C210 60 185 100 190 140 C195 180 215 200 215 200 L228 200 L228 22 Z" fill="#D32F2F"/>
+  <path d="M228 22 C222 70 202 110 207 150 C212 190 228 200 228 200 L240 200 L240 22 Z" fill="#821D1D"/>
+
+  <!-- Curtain Valance (Top Drapery) -->
+  <path d="M0 22 L240 22 L240 45 C240 45 200 65 120 65 C40 65 0 45 0 45 Z" fill="#B71C1C"/>
+  <path d="M0 22 L240 22 L240 35 C240 35 200 50 120 50 C40 50 0 35 0 35 Z" fill="#821D1D"/>
+  
+  <!-- Golden tiebacks / ropes -->
+  <path d="M40 120 Q65 110 40 100" fill="none" stroke="#FBC02D" stroke-width="4"/>
+  <circle cx="40" cy="110" r="5" fill="#FBC02D"/>
+  
+  <path d="M200 120 Q175 110 200 100" fill="none" stroke="#FBC02D" stroke-width="4"/>
+  <circle cx="200" cy="110" r="5" fill="#FBC02D"/>
+
+  <!-- Dramatic stage lighting (Spotlight beam) -->
+  <polygon points="120,40 60,200 180,200" fill="#FFF" opacity="0.04"/>
+
+  <!-- Revealed subtle stage element (Classical drama mask icon representing the 'play/act') -->
+  <g transform="translate(120, 115) scale(0.9)">
+    <path d="M-22 -15 C-22 -28 -12 -33 0 -33 C12 -33 22 -28 22 -15 C22 2 15 22 0 25 C-15 22 -22 2 -22 -15 Z" fill="#FFD54F"/>
+    <!-- Eyes -->
+    <path d="M-12 -15 Q-6 -22 0 -15 Q-6 -8 -12 -15 Z" fill="#1A1D24"/>
+    <path d="M12 -15 Q6 -22 0 -15 Q6 -8 12 -15 Z" fill="#1A1D24"/>
+    <!-- Smile -->
+    <path d="M-10 5 Q0 18 10 5 Q0 12 -10 5 Z" fill="#1A1D24"/>
+  </g>
+</svg>

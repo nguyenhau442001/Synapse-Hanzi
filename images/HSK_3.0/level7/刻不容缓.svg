@@ -1,0 +1,62 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle high-water mark waves -->
+  <path d="M 0 190 Q 60 170 120 190 T 240 190 L 240 240 L 0 240 Z" fill="#242A38" opacity="0.5"/>
+  <path d="M 0 205 Q 60 185 120 205 T 240 205 L 240 240 L 0 240 Z" fill="#2D3548" opacity="0.6"/>
+
+  <!-- Levee / Dike embankment -->
+  <path d="M 20 220 L 140 130 L 240 130 L 240 240 L 20 240 Z" fill="#363F54"/>
+
+  <!-- Sandbags reinforcement wall (representing emergency action) -->
+  <!-- Bottom row -->
+  <rect x="75" y="145" width="28" height="14" rx="6" fill="#D97706"/>
+  <rect x="105" y="145" width="28" height="14" rx="6" fill="#F59E0B"/>
+  <rect x="135" y="145" width="28" height="14" rx="6" fill="#D97706"/>
+  <rect x="165" y="145" width="28" height="14" rx="6" fill="#F59E0B"/>
+  
+  <!-- Second row -->
+  <rect x="90" y="132" width="28" height="14" rx="6" fill="#F59E0B"/>
+  <rect x="120" y="132" width="28" height="14" rx="6" fill="#D97706"/>
+  <rect x="150" y="132" width="28" height="14" rx="6" fill="#F59E0B"/>
+
+  <!-- Top critical sandbag (being placed right now) -->
+  <rect x="132" y="117" width="28" height="14" rx="6" fill="#FBBF24"/>
+  
+  <!-- Human hands frantically placing the sandbag -->
+  <!-- Left hand -->
+  <path d="M 110 120 C 110 115 120 110 130 115" stroke="#E2E8F0" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <!-- Right hand -->
+  <path d="M 170 120 C 170 115 160 110 150 115" stroke="#E2E8F0" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+  <!-- Raging Water Threat on the left -->
+  <path d="M 0 150 Q 30 135 60 160 T 110 150 L 110 240 L 0 240 Z" fill="#0284C7" opacity="0.8"/>
+  <path d="M 0 170 Q 40 155 75 180 T 125 170 L 125 240 L 0 240 Z" fill="#0369A1" opacity="0.9"/>
+  <!-- Splash waves -->
+  <path d="M 60 155 C 70 145 75 140 85 150" stroke="#E0F2FE" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M 80 148 C 88 138 92 135 100 143" stroke="#E0F2FE" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Centered Iconic Object representing "刻" (Time / Clock) fused with urgency -->
+  <!-- Sleek Modern Clock Face floating above, showing critical impending time -->
+  <circle cx="120" cy="70" r="34" fill="#111827" stroke="#EF4444" stroke-width="4"/>
+  
+  <!-- Clock ticks -->
+  <line x1="120" y1="40" x2="120" y2="44" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+  <line x1="120" y1="96" x2="120" y2="100" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+  <line x1="90" y1="70" x2="94" y2="70" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+  <line x1="146" y1="70" x2="150" y2="70" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Clock hands pointing urgently to the limit -->
+  <line x1="120" y1="70" x2="120" y2="52" stroke="#F87171" stroke-width="3" stroke-linecap="round"/>
+  <line x1="120" y1="70" x2="138" y2="70" stroke="#F87171" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="120" cy="70" r="4" fill="#EF4444"/>
+
+  <!-- Flashing Urgent Indicator / Accent -->
+  <circle cx="120" cy="22" r="6" fill="#EF4444"/>
+  <circle cx="120" cy="22" r="10" stroke="#EF4444" stroke-width="2" fill="none" opacity="0.6">
+    <animate attributeName="r" values="6;14;6" dur="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0;0.8" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+
+</svg>

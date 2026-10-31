@@ -1,0 +1,62 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background ambient lighting for depth -->
+  <circle cx="120" cy="120" r="90" fill="#222733" opacity="0.6"/>
+
+  <!-- Conceptual Scales of Balance in the Background (representing reason, logic, fairness) -->
+  <g opacity="0.25">
+    <line x1="120" y1="55" x2="120" y2="130" stroke="#8EA4C8" stroke-width="2" stroke-linecap="round"/>
+    <path d="M90 70 L150 70" stroke="#8EA4C8" stroke-width="3" stroke-linecap="round"/>
+    <!-- Left pan -->
+    <path d="M90 70 L80 95 L100 95 Z" fill="none" stroke="#8EA4C8" stroke-width="2"/>
+    <line x1="80" y1="95" x2="100" y2="95" stroke="#8EA4C8" stroke-width="2"/>
+    <!-- Right pan -->
+    <path d="M150 70 L140 95 L160 95 Z" fill="none" stroke="#8EA4C8" stroke-width="2"/>
+    <line x1="140" y1="95" x2="160" y2="95" stroke="#8EA4C8" stroke-width="2"/>
+  </g>
+
+  <!-- Dynamic Interaction / Action: Two profiles facing each other, calmly and reasonably discussing ("讲理" - talking sense) -->
+  <!-- Left Character (Calm, listening/explaining with open gesture) -->
+  <g transform="translate(0, 5)">
+    <!-- Body/Shoulders -->
+    <path d="M60 165 C60 145 75 130 95 130 C100 130 105 131 110 133 L110 175 L55 175 Z" fill="#3A445C"/>
+    <!-- Head -->
+    <circle cx="85" cy="105" r="18" fill="#E0B1CB"/>
+    <!-- Hair Left -->
+    <path d="M68 105 C68 93 75 87 88 87 C96 87 102 91 103 98 C98 96 92 96 86 99 C80 102 75 106 68 105 Z" fill="#4A5568"/>
+    <!-- Open, calm hand gesturing outward thoughtfully -->
+    <path d="M98 135 C102 135 112 142 112 148 C112 153 105 156 102 154" fill="none" stroke="#E0B1CB" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Right Character (Listening attentively, nodding, open-minded) -->
+  <g transform="translate(0, 5)">
+    <!-- Body/Shoulders -->
+    <path d="M180 165 C180 145 165 130 145 130 C140 130 135 131 130 133 L130 175 L185 175 Z" fill="#2B3748"/>
+    <!-- Head -->
+    <circle cx="155" cy="105" r="18" fill="#F6BD60"/>
+    <!-- Hair Right -->
+    <path d="M172 105 C172 93 165 87 152 87 C144 87 138 91 137 98 C142 96 148 96 154 99 C160 102 165 106 172 105 Z" fill="#3D4A5C"/>
+    <!-- Reassuring / Open hand gesture -->
+    <path d="M136 138 C132 138 126 144 128 150 C130 155 138 156 141 152" fill="none" stroke="#F6BD60" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Central Dialogue / Rational Exchange Symbol (Clean speech bubble with clear balance/equality indicator) -->
+  <g transform="translate(0, -5)">
+    <!-- Speech Bubble Main Container -->
+    <path d="M92 72 L148 72 C159 72 168 81 168 92 C168 103 159 112 148 112 L130 112 L120 124 L110 112 L92 112 C81 112 72 103 72 92 C72 81 81 72 92 72 Z" fill="#2D3748" stroke="#F4A261" stroke-width="3"/>
+    
+    <!-- Clear logical dialogue markers inside the bubble (Representing structured thoughts/fairness) -->
+    <line x1="88" y1="87" x2="132" y2="87" stroke="#F4A261" stroke-width="4" stroke-linecap="round"/>
+    <line x1="88" y1="99" x2="116" y2="99" stroke="#8EA4C8" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Focus Accent Dot (Gold/Orange accent for reason and clarity) -->
+    <circle cx="146" cy="99" r="4" fill="#F4A261"/>
+  </g>
+
+  <!-- Motion Lines / Calm communication waves linking the two individuals -->
+  <g stroke="#F4A261" stroke-width="2" stroke-linecap="round" opacity="0.6">
+    <path d="M112 118 Q120 112 128 118" fill="none"/>
+  </g>
+
+</svg>

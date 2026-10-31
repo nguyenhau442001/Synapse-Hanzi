@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow/ambience for modern dark mode app aesthetic -->
+  <circle cx="120" cy="115" r="70" fill="#222B38" opacity="0.6"/>
+
+  <!-- Conceptual illustration for "求学" (Going abroad / studying afar):
+       Represented as an open book combined with a classic globe arc/horizon and a traveling compass/path,
+       signifying journeying far for education. -->
+  
+  <g transform="translate(0, 5)">
+    <!-- Globe / Horizon arc background element -->
+    <path d="M 60 120 A 70 70 0 0 1 180 120" fill="none" stroke="#2D3748" stroke-width="2" stroke-dasharray="4 4"/>
+    <path d="M 80 135 A 50 50 0 0 1 160 135" fill="none" stroke="#2D3748" stroke-width="1.5" opacity="0.5"/>
+    
+    <!-- Travel / Journey Arc (dotted trajectory crossing oceans) -->
+    <path d="M 75 140 Q 120 80 165 140" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-dasharray="5 5" opacity="0.8"/>
+    <!-- Destination marker -->
+    <circle cx="165" cy="140" r="4" fill="#F59E0B"/>
+
+    <!-- Open Book (Core Object for Study / Education) -->
+    <!-- Left Page -->
+    <path d="M 120 150 L 70 130 C 65 128 60 132 60 137 L 60 175 C 60 179 64 182 68 181 L 120 157 Z" fill="#3B82F6"/>
+    <path d="M 75 142 L 110 157" stroke="#93C5FD" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <path d="M 75 150 L 105 163" stroke="#93C5FD" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    
+    <!-- Right Page -->
+    <path d="M 120 150 L 170 130 C 175 128 180 132 180 137 L 180 175 C 180 179 176 182 172 181 L 120 157 Z" fill="#60A5FA"/>
+    <path d="M 165 142 L 130 157" stroke="#BFDBFE" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <path d="M 165 150 L 135 163" stroke="#BFDBFE" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Book Spine / Center Shadow -->
+    <line x1="120" y1="150" x2="120" y2="183" stroke="#1E3A8A" stroke-width="3"/>
+
+    <!-- Graduation Cap (Mortarboard) floating above the book, representing academic pursuit -->
+    <g transform="translate(120, 85)">
+      <!-- Cap top diamond -->
+      <polygon points="0,-18 35,0 0,18 -35,0" fill="#F59E0B"/>
+      <!-- Cap top inner highlight for sleek flat look -->
+      <polygon points="0,-14 27,0 0,14 -27,0" fill="#FBBF24"/>
+      
+      <!-- Skullcap base -->
+      <path d="M -16 6 L -16 16 C -16 22 16 22 16 16 L 16 6 Z" fill="#D97706"/>
+      
+      <!-- Tassel hanging to the right -->
+      <path d="M 25 5 Q 32 12 28 22" fill="none" stroke="#FEE2E2" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="28" cy="23" r="2.5" fill="#EF4444"/>
+    </g>
+
+    <!-- Academic Star / Spark of Knowledge -->
+    <path d="M 120 50 L 123 58 L 131 61 L 123 64 L 120 72 L 117 64 L 109 61 L 117 58 Z" fill="#FDE047" opacity="0.9"/>
+  </g>
+</svg>

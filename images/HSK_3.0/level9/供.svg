@@ -1,0 +1,78 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Ambient lighting / temple altar backdrop glow -->
+  <radialGradient id="altarGlow" cx="50%T" cy="45%" r="60%">
+    <stop offset="0%" stop-color="#3A3020" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#1A1D24" stop-opacity="0"/>
+  </radialGradient>
+  <circle cx="120" cy="110" r="90" fill="url(#altarGlow)"/>
+
+  <!-- Architectural Shrine / Altar Elements -->
+  <!-- Back wall / alcove structure -->
+  <path d="M70 190 L70 95 Q120 75 170 95 L170 190 Z" fill="#222630"/>
+  <!-- Altar table -->
+  <rect x="75" y="165" width="90" height="12" rx="3" fill="#323846"/>
+  <rect x="65" y="175" width="110" height="8" rx="2" fill="#2A2F3D"/>
+
+  <!-- Buddha Statue (Tượng Phật) representing "供着佛像" -->
+  <g transform="translate(120, 115)">
+    <!-- Halo / Mandorla behind Buddha -->
+    <circle cx="0" cy="-5" r="32" fill="#F59E0B" opacity="0.15"/>
+    <circle cx="0" cy="-5" r="26" fill="#F59E0B" opacity="0.25"/>
+
+    <!-- Lotus Base -->
+    <path d="M-20 22 C-10 15 10 15 20 22 C10 28 -10 28 -20 22 Z" fill="#D97706"/>
+    <path d="M-15 22 C-5 18 5 18 15 22 C8 26 -8 26 -15 22 Z" fill="#F59E0B"/>
+
+    <!-- Buddha Body & Robe -->
+    <path d="M-18 18 Q-22 -5 -12 -12 Q-5 -16 0 -16 Q5 -16 12 -12 Q22 -5 18 18 Z" fill="#FBBF24"/>
+    <!-- Ushnisha / Head -->
+    <circle cx="0" cy="-21" r="9" fill="#FBBF24"/>
+    <path d="M-3 -30 C0 -33 0 -33 3 -30" stroke="#FBBF24" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Serene face features (minimalist dots/lines) -->
+    <circle cx="-3" cy="-22" r="1" fill="#92400E"/>
+    <circle cx="3" cy="-22" r="1" fill="#92400E"/>
+    <path d="M-2 -18 Q0 -16 2 -18" fill="none" stroke="#92400E" stroke-width="1" stroke-linecap="round"/>
+
+    <!-- Meditative Hands (Dhyana Mudra) -->
+    <path d="M-6 2 Q0 6 6 2" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Offerings (供品 - fruit, incense, candles) placed on the altar -->
+  <!-- Incense Burner & Smoke (Action of honoring/offering) -->
+  <path d="M112 165 L128 165 L126 157 L114 157 Z" fill="#94A3B8"/>
+  <path d="M120 157 C122 145 116 135 120 120" fill="none" stroke="#94A3B8" stroke-width="2" stroke-opacity="0.4" stroke-linecap="round"/>
+  <path d="M120 157 C118 148 123 138 119 125" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-opacity="0.3" stroke-linecap="round"/>
+
+  <!-- Offerings Tray with Fruit (Mandarin/Peach) -->
+  <ellipse cx="90" cy="162" rx="12" ry="4" fill="#94A3B8"/>
+  <circle cx="90" cy="155" r="8" fill="#EF4444"/>
+  <path d="M90 147 Q92 145 94 147" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Offerings Tray with Pastry/Bowl -->
+  <ellipse cx="150" cy="162" rx="12" ry="4" fill="#94A3B8"/>
+  <circle cx="150" cy="156" r="7" fill="#F97316"/>
+  <circle cx="146" cy="158" r="5" fill="#FB923C"/>
+
+  <!-- Human Action / Interaction (Devotee placing offerings or tending to the shrine) -->
+  <!-- Hands gently placing an offering with care and reverence -->
+  <g transform="translate(0, 0)">
+    <!-- Right Sleeve and Hand -->
+    <path d="M185 210 L155 180 Q145 173 140 170" fill="none" stroke="#3B82F6" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="137" cy="168" r="7" fill="#FCD34D"/>
+    <!-- Motion lines showing respectful placement / offering action -->
+    <path d="M150 178 Q145 174 138 170" fill="none" stroke="#60A5FA" stroke-width="2" stroke-dasharray="3,3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Left Supporting Hand -->
+  <g transform="translate(0, 0)">
+    <path d="M55 210 L85 180 Q95 173 100 170" fill="none" stroke="#3B82F6" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="103" cy="168" r="7" fill="#FCD34D"/>
+  </g>
+
+  <!-- Warm Focus Lighting on Altar -->
+  <ellipse cx="120" cy="165" rx="55" ry="8" fill="#F59E0B" opacity="0.12"/>
+</svg>

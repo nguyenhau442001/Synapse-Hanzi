@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle warm glow to focus on character -->
+  <circle cx="120" cy="120" r="80" fill="#2D2838" opacity="0.6"/>
+
+  <!-- Character / Scene Group representing "guǎfu" (widow, resilient rural woman) -->
+  <g transform="translate(0, 5)">
+    <!-- Ground Line -->
+    <path d="M 60 190 L 180 190" stroke="#3A3F4B" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Figure: Mother/Widow -->
+    <!-- Torso and Dress (muted, dignified rural tones: dark slate blue & warm ochre accents) -->
+    <path d="M 95 190 L 95 145 C 95 130, 105 115, 120 115 C 135 115, 145 130, 145 145 L 145 190 Z" fill="#3B4860"/>
+    
+    <!-- Gentle posture lean (showing resilience and weight of responsibility) -->
+    <!-- Head -->
+    <circle cx="120" cy="85" r="18" fill="#F4D0B2"/>
+    
+    <!-- Hair (neatly tied back, modest rural style) -->
+    <path d="M 102 85 C 102 73, 110 67, 120 67 C 132 67, 138 75, 138 88 C 132 85, 128 83, 120 83 C 110 83, 105 84, 102 85 Z" fill="#242933"/>
+    <circle cx="137" cy="88" r="5" fill="#242933"/> <!-- Hair bun -->
+
+    <!-- Scarf / Shawl (adding warmth and traditional hardworking aesthetic) -->
+    <path d="M 100 118 C 110 125, 130 125, 140 118 L 148 150 C 148 150, 120 160, 92 150 Z" fill="#D48C46"/>
+
+    <!-- Arms protecting/guiding (symbolizing sole care for children) -->
+    <path d="M 98 135 C 85 145, 85 165, 95 175" stroke="#3B4860" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M 142 135 C 155 145, 155 165, 145 175" stroke="#3B4860" stroke-width="8" stroke-linecap="round" fill="none"/>
+
+    <!-- Three Children representing "三个年幼的孩子" -->
+    <!-- Child 1 (Left) -->
+    <circle cx="72" cy="155" r="10" fill="#F4D0B2"/>
+    <path d="M 64 190 L 64 165 C 64 160, 70 155, 72 155 C 74 155, 80 160, 80 165 L 80 190 Z" fill="#52668C"/>
+    <path d="M 62 153 C 65 148, 79 148, 82 153" fill="#3D312A"/>
+
+    <!-- Child 2 (Right, slightly taller) -->
+    <circle cx="168" cy="145" r="11" fill="#F4D0B2"/>
+    <path d="M 158 190 L 158 155 C 158 150, 164 145, 168 145 C 172 145, 178 150, 178 155 L 178 190 Z" fill="#6B5B95"/>
+    <path d="M 157 143 C 160 138, 176 138, 179 143" fill="#2C2430"/>
+
+    <!-- Child 3 (Center foreground, leaning against mother) -->
+    <circle cx="102" cy="168" r="9" fill="#F4D0B2"/>
+    <path d="M 94 190 L 94 175 C 94 170, 98 168, 102 168 C 106 168, 110 170, 110 175 L 110 190 Z" fill="#E8B96C"/>
+    <path d="M 93 166 C 96 162, 108 162, 111 166" fill="#4A3B32"/>
+  </g>
+
+  <!-- Focal Accent Lighting / Warm Aura (representing resilience and dedication) -->
+  <path d="M 120 40 C 145 40, 160 60, 160 85 C 160 110, 120 140, 120 140 C 120 140, 80 110, 80 85 C 80 60, 95 40, 120 40 Z" fill="none" stroke="#F5A623" stroke-width="2" stroke-dasharray="4 6" opacity="0.3"/>
+</svg>

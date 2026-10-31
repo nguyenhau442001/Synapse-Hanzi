@@ -1,0 +1,59 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background landscape representing mountain valley -->
+  <path d="M20 180 L80 120 L140 160 L200 100 L220 180 Z" fill="#222733"/>
+  <path d="M0 160 L50 110 L110 150 L180 90 L240 140 L240 200 L0 200 Z" fill="#282E3D"/>
+
+  <!-- Visual Contrast for Adjective: Complex vs Simple / Elaborate vs Basic -->
+  <!-- Left Side: Complex/Heavy Structure (Faded/Muted) for contrast -->
+  <g opacity="0.3" transform="translate(25, 60)">
+    <!-- Elaborate multi-room heavy tent/cabin structure -->
+    <polygon points="30,50 60,10 90,50" fill="#4A5568"/>
+    <rect x="25" y="50" width="70" height="40" fill="#323B4C"/>
+    <rect x="40" y="65" width="15" height="25" fill="#1A1D24"/>
+    <rect x="65" y="65" width="15" height="25" fill="#1A1D24"/>
+    <line x1="15" y1="90" x2="105" y2="90" stroke="#4A5568" stroke-width="4"/>
+  </g>
+
+  <!-- Right Side (Focus): "简易" (Simple, quick setup tent in flat vector modern style) -->
+  <g transform="translate(120, 55)">
+    <!-- Ground line -->
+    <line x1="-20" y1="85" x2="90" y2="85" stroke="#3A4454" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Main Simple Tent Body (A-frame, clean lines, orange accent) -->
+    <!-- Back triangle flap -->
+    <polygon points="20,25 5,85 60,85" fill="#E06D38"/>
+    
+    <!-- Front opening flap (Left side) -->
+    <polygon points="20,25 -10,85 20,85" fill="#F2793D"/>
+    
+    <!-- Front opening flap (Right side) -->
+    <polygon points="20,25 20,85 65,85" fill="#D45B26"/>
+
+    <!-- Tent interior dark opening / shadow -->
+    <polygon points="20,35 12,85 38,85" fill="#111317"/>
+
+    <!-- Support Pole / Ridge line -->
+    <line x1="20" y1="15" x2="20" y2="85" stroke="#A0AEC0" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Simple ground pegs & guy lines -->
+    <line x1="20" y1="25" x2="-25" y2="75" stroke="#718096" stroke-width="1.5" stroke-dasharray="2 2"/>
+    <circle cx="-25" cy="75" r="2.5" fill="#E2E8F0"/>
+
+    <line x1="20" y1="25" x2="75" y2="75" stroke="#718096" stroke-width="1.5" stroke-dasharray="2 2"/>
+    <circle cx="75" cy="75" r="2.5" fill="#E2E8F0"/>
+
+    <!-- Minimalist Nature Accents: Small low-profile rocks & simplified pine tuft -->
+    <circle cx="-12" cy="80" r="5" fill="#4A5568"/>
+    <circle cx="-6" cy="82" r="3" fill="#4A5568"/>
+    
+    <!-- Quick sleeping roll inside / nearby -->
+    <rect x="35" y="70" width="22" height="10" rx="3" fill="#48BB78" transform="rotate(-15 35 70)"/>
+  </g>
+
+  <!-- Visual contrast indicator: Clean check mark / simple clarity anchor -->
+  <circle cx="65" cy="170" r="14" fill="#2E3846"/>
+  <path d="M58 170 L63 175 L73 163" fill="none" stroke="#F2793D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg>

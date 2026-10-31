@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Speed lines / Motion streaks in background -->
+  <g opacity="0.4" stroke-linecap="round" stroke-width="2">
+    <line x1="40" y1="90" x2="90" y2="90" stroke="#FF5722" />
+    <line x1="30" y1="120" x2="80" y2="120" stroke="#FFC107" />
+    <line x1="50" y1="150" x2="100" y2="150" stroke="#FF5722" />
+  </g>
+
+  <!-- Stylized Emergency Speed Boat (representing 火速 / Rapid Rescue Vehicle) -->
+  <g transform="translate(15, 20)">
+    <!-- Water wake below boat -->
+    <path d="M10 160 Q 60 170 110 160 T 210 160" fill="none" stroke="#29B6F6" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+    <path d="M25 170 Q 75 178 125 170 T 205 170" fill="none" stroke="#29B6F6" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- High-speed hull (Dark slate & Orange rescue styling) -->
+    <path d="M 30 145 L 180 145 C 195 145 205 138 210 130 L 170 120 L 40 120 Z" fill="#37474F"/>
+    <path d="M 30 145 L 180 145 C 195 145 205 138 210 130 L 190 130 L 35 130 Z" fill="#FF5722"/>
+
+    <!-- Boat cabin / Windshield -->
+    <path d="M 80 120 L 100 95 L 140 95 L 155 120 Z" fill="#90CAF9" opacity="0.8"/>
+    <path d="M 83 120 L 101 98 L 139 98 L 152 120 Z" fill="#1E88E5"/>
+
+    <!-- Emergency Beacon / Flashing Light (Symbolizing urgency) -->
+    <circle cx="115" cy="89" r="6" fill="#FFC107"/>
+    <path d="M 115 80 L 115 83" stroke="#FFC107" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 108 83 L 110 85" stroke="#FFC107" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 122 83 L 120 85" stroke="#FFC107" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Propelling dynamic flame/speed exhaust at the rear -->
+    <path d="M 30 132 C 10 132 5 137 0 140 C 5 143 10 148 30 148 Z" fill="#FF5722"/>
+    <path d="M 25 135 C 15 135 10 138 5 140 C 10 142 15 145 25 145 Z" fill="#FFC107"/>
+  </g>
+
+  <!-- Flame / Fire motif integrated smoothly to signify "火" (Huǒ - Fire/Urgent) -->
+  <g transform="translate(130, 40)">
+    <path d="M25 45 C25 25 45 10 45 0 C45 10 65 25 65 45 C65 60 52 75 45 75 C38 75 25 60 25 45 Z" fill="#FF5722" opacity="0.9"/>
+    <path d="M35 52 C35 40 45 30 45 20 C45 30 55 40 55 52 C55 60 48 68 45 68 C42 68 35 60 35 52 Z" fill="#FFC107"/>
+  </g>
+
+  <!-- Speed trails / Arrow vectors pointing forward -->
+  <g fill="none" stroke="#FFC107" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 175 75 L 195 95 L 175 115" opacity="0.8"/>
+    <path d="M 195 75 L 215 95 L 195 115" opacity="0.4"/>
+  </g>
+</svg>

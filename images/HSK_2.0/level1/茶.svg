@@ -1,34 +1,11 @@
-<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#1e293b"/>
-    </linearGradient>
-  </defs>
-  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
-  
-  <!-- Table Surface -->
-  <path d="M0 180 L240 180 L240 240 L0 240 Z" fill="#334155"/>
-  
-  <!-- Tea Pot -->
-  <path d="M140 160 C140 130 170 120 190 120 C210 120 220 130 220 160 C220 180 200 190 180 190 C160 190 140 180 140 160 Z" fill="#fbbf24"/>
-  <path d="M190 110 L210 130 L190 130 Z" fill="#fb923c"/>
-  <path d="M145 150 L120 140 L120 170 L145 160 Z" fill="#fbbf24"/>
-  
-  <!-- Tea Cup -->
-  <path d="M60 170 L110 170 L105 200 L65 200 Z" fill="#38bdf8"/>
-  <ellipse cx="85" cy="170" rx="25" ry="8" fill="#bae6fd"/>
-  <path d="M85 170 C85 185 95 190 100 185" stroke="#0ea5e9" stroke-width="2" fill="none"/>
-  
-  <!-- Steam -->
-  <path d="M90 160 Q95 140 90 120" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
-  <path d="M100 160 Q105 140 100 120" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.4"/>
-  
-  <!-- Decorative Leaves -->
-  <path d="M40 190 C40 170 50 170 50 180 C50 190 40 190 40 190" fill="#10b981"/>
-  <path d="M30 200 C30 180 40 180 40 190 C40 200 30 200 30 200" fill="#10b981"/>
-  
-  <!-- Background Accents -->
-  <circle cx="200" cy="50" r="30" fill="#ec4899" opacity="0.1"/>
-  <circle cx="40" cy="60" r="20" fill="#38bdf8" opacity="0.1"/>
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+  <line x1="20" y1="24" x2="80" y2="24" stroke="#34d399" stroke-width="4" stroke-linecap="round"/>
+  <line x1="36" y1="16" x2="36" y2="28" stroke="#34d399" stroke-width="4" stroke-linecap="round"/>
+  <line x1="64" y1="16" x2="64" y2="28" stroke="#34d399" stroke-width="4" stroke-linecap="round"/>
+  <path d="M50 28 Q40 44 24 50" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M48 34 Q60 44 76 50" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+  <line x1="50" y1="46" x2="50" y2="82" stroke="#fb923c" stroke-width="4.2" stroke-linecap="round"/>
+  <path d="M50 56 Q36 68 26 78" stroke="#fb923c" stroke-width="4" stroke-linecap="round"/>
+  <path d="M50 56 Q64 68 74 78" stroke="#fb923c" stroke-width="4" stroke-linecap="round"/>
 </svg>

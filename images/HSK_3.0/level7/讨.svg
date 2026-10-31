@@ -1,0 +1,47 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "讨" (demanding/retrieving justice and fairness, based on the legal rights / wage recovery context) -->
+  <g transform="translate(0, 0)">
+    <!-- Background subtle legal balance motif -->
+    <path d="M120 40 L120 160" stroke="#2A303C" stroke-width="3" stroke-linecap="round"/>
+    <path d="M85 70 L155 70" stroke="#2A303C" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Scale pans hanging -->
+    <path d="M85 70 L65 110 L105 110 Z" fill="none" stroke="#2A303C" stroke-width="2"/>
+    <path d="M155 70 L135 110 L175 110 Z" fill="none" stroke="#2A303C" stroke-width="2"/>
+
+    <!-- Central Object / Character element representing a formal demand / petition / retrieval of what is rightfully owed -->
+    <!-- Document / Legal Decree with an official seal (representing justice/rights) -->
+    <g transform="translate(80, 75)">
+      <!-- Document base -->
+      <rect x="0" y="0" width="80" height="100" rx="6" fill="#2E3544" stroke="#3E4756" stroke-width="2"/>
+      
+      <!-- Text lines on document -->
+      <line x1="16" y1="24" x2="64" y2="24" stroke="#6C7A9C" stroke-width="3" stroke-linecap="round"/>
+      <line x1="16" y1="42" x2="52" y2="42" stroke="#6C7A9C" stroke-width="3" stroke-linecap="round"/>
+      <line x1="16" y1="60" x2="60" y2="60" stroke="#6C7A9C" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- Official Red/Gold Stamp of Justice / Claiming Right -->
+      <circle cx="56" cy="76" r="14" fill="#E55B3C"/>
+      <path d="M50 76 L54 80 L63 71" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Outstretched hands / Gavel or directional emphasis representing "demanding/taking back" -->
+    <!-- Action dynamic arrows or hands reaching out -->
+    <g transform="translate(0, 0)">
+      <!-- Left dynamic bracket / hand gesture representing demand/pursuit -->
+      <path d="M50 130 C40 130 35 140 35 150 C35 160 40 170 50 170" fill="none" stroke="#F5A623" stroke-width="4" stroke-linecap="round"/>
+      <polygon points="52,164 62,170 52,176" fill="#F5A623"/>
+
+      <!-- Right dynamic bracket / reclaiming gesture -->
+      <path d="M190 130 C200 130 205 140 205 150 C205 160 200 170 190 170" fill="none" stroke="#F5A623" stroke-width="4" stroke-linecap="round"/>
+      <polygon points="188,164 178,170 188,176" fill="#F5A623"/>
+    </g>
+
+    <!-- Focal point badge / highlight element at the base representing the outcome (justice/fairness) -->
+    <circle cx="120" cy="195" r="16" fill="#F5A623"/>
+    <path d="M112 195 L118 201 L129 189" fill="none" stroke="#1A1D24" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

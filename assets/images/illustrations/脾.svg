@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle design elements (internal body context glow) -->
+  <circle cx="120" cy="120" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Abstract Human Abdomen Silhouette (Subtle context) -->
+  <path d="M90 60 C110 50, 130 50, 150 60 C170 80, 175 140, 150 180 C130 200, 110 200, 90 180 C65 140, 70 80, 90 60 Z" fill="none" stroke="#2F3643" stroke-width="3" stroke-dasharray="6 6"/>
+
+  <!-- Stomach Outline (Secondary anatomical context) -->
+  <path d="M110 85 C130 80, 145 95, 135 120 C125 140, 95 135, 105 105 Z" fill="#2F3643" opacity="0.5"/>
+
+  <!-- Spleen (Tạng Tỳ) - Central Object -->
+  <!-- Sleek, modern flat vector representation of the spleen with warm orange/gold accent -->
+  <g transform="translate(125, 100)">
+    <!-- Main Spleen Body -->
+    <path d="M 0 -25 
+             C 25 -30, 45 -10, 40 15 
+             C 35 40, 15 50, -10 40 
+             C -35 30, -40 5, -25 -15 
+             Z" 
+          fill="#FF8C42" 
+          stroke="#FFA86B" 
+          stroke-width="3" 
+          stroke-linejoin="round"/>
+          
+    <!-- Anatomical detailing / Vena/Artery flow lines (representing 'Yunhua' / vận hóa - digestion/absorption) -->
+    <path d="M -10 -5 C 0 -10, 15 -5, 25 5" fill="none" stroke="#FFE0D1" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 5 10 C 15 15, 20 25, 30 30" fill="none" stroke="#FFE0D1" stroke-width="2" stroke-linecap="round"/>
+    <path d="M -15 10 C -5 20, 0 30, -5 35" fill="none" stroke="#FFE0D1" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Highlight core for modern UI flat style -->
+    <circle cx="-5" cy="-5" r="4" fill="#FFE0D1" opacity="0.8"/>
+  </g>
+
+  <!-- Nutrient Absorption / Digestion Energy Particles (Visualizing the function: 消化和吸收) -->
+  <g fill="#4ECCA3">
+    <!-- Glowing circles representing purified nutrients from digestion -->
+    <circle cx="80" cy="150" r="5"/>
+    <circle cx="65" cy="130" r="3"/>
+    <circle cx="95" cy="170" r="4"/>
+    
+    <!-- Motion / Flow path upwards to the spleen -->
+    <path d="M 80 145 Q 90 130, 105 120" fill="none" stroke="#4ECCA3" stroke-width="2" stroke-dasharray="3 3" opacity="0.8"/>
+    <path d="M 68 132 Q 80 120, 95 110" fill="none" stroke="#4ECCA3" stroke-width="2" stroke-dasharray="3 3" opacity="0.8"/>
+  </g>
+
+</svg>

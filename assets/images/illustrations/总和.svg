@@ -1,0 +1,60 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glowing background effect for aggregation/sum theme -->
+  <circle cx="120" cy="120" r="70" fill="#00D2FF" opacity="0.05"/>
+  <circle cx="120" cy="120" r="45" fill="#3B82F6" opacity="0.08"/>
+
+  <!-- Incoming smaller physical elements (components converging) -->
+  <g opacity="0.75">
+    <!-- Top-Left Component -->
+    <circle cx="65" cy="70" r="14" fill="#64748B"/>
+    <path d="M78 83 L96 98" stroke="#3B82F6" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 3"/>
+    
+    <!-- Top-Right Component -->
+    <rect x="155" y="58" width="24" height="24" rx="6" fill="#64748B"/>
+    <path d="M155 82 L138 98" stroke="#3B82F6" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 3"/>
+
+    <!-- Bottom-Left Component -->
+    <polygon points="75,155 55,175 95,175" fill="#64748B"/>
+    <path d="M88 152 L104 135" stroke="#3B82F6" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 3"/>
+
+    <!-- Bottom-Right Component -->
+    <circle cx="170" cy="160" r="12" fill="#64748B"/>
+    <path d="M158 148 L138 132" stroke="#3B82F6" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- Central Unified Object (The "Total Sum" / Master Entity) -->
+  <g>
+    <!-- Outer Glow Ring -->
+    <circle cx="120" cy="118" r="38" fill="none" stroke="#38BDF8" stroke-width="2" opacity="0.4"/>
+    
+    <!-- Base Core Vessel / Aggregate Globe -->
+    <circle cx="120" cy="118" r="30" fill="#1E293B" stroke="#00D2FF" stroke-width="3"/>
+
+    <!-- Interconnected nodes and facets inside the central object symbolizing "total sum" -->
+    <circle cx="110" cy="110" r="6" fill="#38BDF8"/>
+    <circle cx="132" cy="112" r="5" fill="#F59E0B"/>
+    <circle cx="120" cy="132" r="7" fill="#10B981"/>
+
+    <!-- Connection lines inside -->
+    <line x1="110" y1="110" x2="132" y2="112" stroke="#94A3B8" stroke-width="2"/>
+    <line x1="110" y1="110" x2="120" y2="132" stroke="#94A3B8" stroke-width="2"/>
+    <line x1="132" y1="112" x2="120" y2="132" stroke="#94A3B8" stroke-width="2"/>
+  </g>
+
+  <!-- Mathematical / Structural Convergence Indicator (Clean modern plus/sum symbol integrated subtly) -->
+  <circle cx="120" cy="118" r="14" fill="#0F172A" stroke="#F59E0B" stroke-width="2"/>
+  <path d="M114 118 H126 M120 112 V124" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Base platform representing foundation -->
+  <ellipse cx="120" cy="182" rx="55" ry="8" fill="#0F172A" opacity="0.8"/>
+  <ellipse cx="120" cy="180" rx="40" ry="5" fill="#334155" opacity="0.5"/>
+
+  <!-- Subtle directional flow indicators pointing inward -->
+  <path d="M92 98 L98 103" stroke="#00D2FF" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M148 98 L142 103" stroke="#00D2FF" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M102 138 L108 133" stroke="#00D2FF" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M138 138 L132 133" stroke="#00D2FF" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Group of diverse professionals representing "诸位" (distinguished guests/experts) -->
+  <!-- Person 1: Center-Left -->
+  <g transform="translate(50, 120)">
+    <circle cx="20" cy="-30" r="12" fill="#FFB86C"/>
+    <path d="M5 0c0-8 7-15 15-15s15 7 15 15v20H5V0z" fill="#E0E0E0"/>
+    <path d="M10 20h20v15H10z" fill="#FFB86C"/>
+  </g>
+
+  <!-- Person 2: Center -->
+  <g transform="translate(100, 110)">
+    <circle cx="20" cy="-30" r="14" fill="#FFB86C"/>
+    <path d="M5 0c0-10 7-18 15-18s15 8 15 18v25H5V0z" fill="#A0A0A0"/>
+    <path d="M10 25h20v20H10z" fill="#FFB86C"/>
+  </g>
+
+  <!-- Person 3: Center-Right -->
+  <g transform="translate(160, 120)">
+    <circle cx="20" cy="-30" r="12" fill="#FFB86C"/>
+    <path d="M5 0c0-8 7-15 15-15s15 7 15 15v20H5V0z" fill="#E0E0E0"/>
+    <path d="M10 20h20v15H10z" fill="#FFB86C"/>
+  </g>
+
+  <!-- Subtle gesture of respect/welcoming (a slight bow/hand gesture) -->
+  <path d="M85 140 L95 130 L105 140" stroke="#FFB86C" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M145 140 L155 130 L165 140" stroke="#FFB86C" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <!-- Podium/Table base to ground the "experts" -->
+  <rect x="30" y="180" width="180" height="15" rx="4" fill="#343944"/>
+  <rect x="40" y="195" width="160" height="10" rx="2" fill="#282D38"/>
+</svg>

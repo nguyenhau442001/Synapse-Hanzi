@@ -1,0 +1,60 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Conceptual graphic representing "lìzhēng" (striving/reaching upward with maximum effort and grit) -->
+  <g transform="translate(0, 0)">
+    <!-- Atmospheric glow / ascent trail -->
+    <path d="M120 200 L120 50" stroke="#2D3748" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round"/>
+    
+    <!-- Rising trajectory paths -->
+    <path d="M95 160 C95 120 120 90 120 60" fill="none" stroke="#F6AD55" stroke-width="4" stroke-linecap="round" opacity="0.4"/>
+    <path d="M145 160 C145 120 120 90 120 60" fill="none" stroke="#F6AD55" stroke-width="4" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Dynamic upward force arrows -->
+    <g fill="none" stroke="#ED8936" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M100 180 L120 155 L140 180"/>
+      <path d="M105 150 L120 130 L135 150"/>
+      <path d="M110 120 L120 105 L130 120"/>
+    </g>
+
+    <!-- Core Physical Object / Monument of Achievement at the Peak -->
+    <g transform="translate(120, 60)">
+      <!-- Peak platform / summit base -->
+      <polygon points="-30,12 0,22 30,12 0,2" fill="#4A5568" stroke="#718096" stroke-width="1.5"/>
+      <polygon points="-30,12 0,22 0,30 -30,20" fill="#2D3748"/>
+      <polygon points="30,12 0,22 0,30 30,20" fill="#1A202C"/>
+
+      <!-- Central high-tech core/trophy element representing breakthrough (cutting-edge technology/chip summit) -->
+      <path d="M-12,-15 L0,-25 L12,-15 L12,5 L0,15 L-12,5 Z" fill="#2B6CB0" stroke="#63B3ED" stroke-width="2"/>
+      
+      <!-- Inner glowing circuit/energy lines -->
+      <path d="M0,-18 L0,8" stroke="#9DECF9" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M-6,-8 L6,-2" stroke="#9DECF9" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M-6,0 L6,6" stroke="#9DECF9" stroke-width="1.5" stroke-linecap="round"/>
+      
+      <!-- Pinnacle star / success marker -->
+      <polygon points="0,-36 3,-28 11,-28 5,-23 7,-15 0,-20 -7,-15 -5,-23 -11,-28 -3,-28" fill="#F6E05E"/>
+    </g>
+
+    <!-- Base anchor representing the firm foundation of collaborative effort -->
+    <g transform="translate(120, 195)">
+      <path d="M-50,15 C-20,25 20,25 50,15 L40,0 C20,8 -20,8 -40,0 Z" fill="#3182CE" stroke="#63B3ED" stroke-width="1.5" stroke-linejoin="round"/>
+      <!-- Grip texture / human teamwork nodes -->
+      <circle cx="-25" cy="12" r="3" fill="#E2E8F0"/>
+      <circle cx="-8" cy="15" r="3" fill="#E2E8F0"/>
+      <circle cx="8" cy="15" r="3" fill="#E2E8F0"/>
+      <circle cx="25" cy="12" r="3" fill="#E2E8F0"/>
+    </g>
+
+    <!-- Action lines / sweat / grit particles emphasizing intense effort (力争) -->
+    <g fill="#F6AD55">
+      <circle cx="85" cy="100" r="2"/>
+      <circle cx="155" cy="100" r="2"/>
+      <circle cx="92" cy="80" r="1.5"/>
+      <circle cx="148" cy="80" r="1.5"/>
+      <path d="M75 130 Q80 125 78 120" stroke="#F6AD55" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+      <path d="M165 130 Q160 125 162 120" stroke="#F6AD55" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    </g>
+  </g>
+</svg>

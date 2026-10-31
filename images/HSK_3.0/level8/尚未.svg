@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Timeline Progression -->
+  <path d="M40 180 L200 180" stroke="#374151" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Progression Points -->
+  <circle cx="60" cy="180" r="6" fill="#4B5563"/>
+  <circle cx="100" cy="180" r="6" fill="#4B5563"/>
+  <circle cx="140" cy="180" r="6" fill="#4B5563"/>
+  
+  <!-- The "Yet to be" focus: A magnifying glass hovering over an empty, unfinished space -->
+  <g transform="translate(160, 100)">
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#F59E0B" stroke-width="4"/>
+    <line x1="18" y1="18" x2="35" y2="35" stroke="#F59E0B" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Unfinished document/data representation -->
+  <rect x="40" y="80" width="80" height="60" rx="4" fill="#2D3748"/>
+  <rect x="50" y="95" width="60" height="6" rx="2" fill="#4A5568"/>
+  <rect x="50" y="110" width="40" height="6" rx="2" fill="#4A5568"/>
+  
+  <!-- Dotted line indicating continuation -->
+  <path d="M120 110 L150 110" stroke="#4A5568" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Highlight accent on the "Pending" state -->
+  <path d="M160 75 L160 60" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M152 68 L168 68" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+</svg>

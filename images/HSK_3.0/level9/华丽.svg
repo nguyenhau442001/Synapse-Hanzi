@@ -1,0 +1,74 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Architectural grandeur: Majestic palace ballroom pillar & ornate arch representing "华丽" (lộng lẫy, nguy nga, tráng lệ) -->
+  <g transform="translate(0, 0)">
+    <!-- Ambient background glow behind the arch -->
+    <path d="M70 200 L70 90 Q120 40 170 90 L170 200 Z" fill="#252A34"/>
+    <path d="M85 200 L85 100 Q120 65 155 100 L155 200 Z" fill="#2F3644"/>
+
+    <!-- Luxurious Golden Archway (Grandeur / Tráng lệ, Nguy nga) -->
+    <!-- Outer decorative trim -->
+    <path d="M55 210 L55 85 Q120 20 185 85 L185 210" fill="none" stroke="#D4AF37" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Inner ornate arch -->
+    <path d="M70 210 L70 90 Q120 40 170 90 L170 210" fill="none" stroke="#FFD700" stroke-width="2"/>
+
+    <!-- Ornate Keystones & Decorative Filigree -->
+    <circle cx="120" cy="45" r="8" fill="#FFD700"/>
+    <circle cx="120" cy="45" r="5" fill="#FFA500"/>
+    <path d="M112 45 L128 45 M120 37 L120 53" stroke="#1A1D24" stroke-width="2"/>
+
+    <!-- Left Majestic Pillar -->
+    <rect x="55" y="85" width="20" height="125" fill="#323846"/>
+    <rect x="50" y="80" width="30" height="12" rx="2" fill="#D4AF37"/>
+    <rect x="50" y="200" width="30" height="15" rx="2" fill="#D4AF37"/>
+    <!-- Pillar fluting lines -->
+    <line x1="61" y1="95" x2="61" y2="195" stroke="#252A34" stroke-width="2"/>
+    <line x1="69" y1="95" x2="69" y2="195" stroke="#252A34" stroke-width="2"/>
+
+    <!-- Right Majestic Pillar -->
+    <rect x="165" y="85" width="20" height="125" fill="#323846"/>
+    <rect x="160" y="80" width="30" height="12" rx="2" fill="#D4AF37"/>
+    <rect x="160" y="200" width="30" height="15" rx="2" fill="#D4AF37"/>
+    <!-- Pillar fluting lines -->
+    <line x1="171" y1="95" x2="171" y2="195" stroke="#252A34" stroke-width="2"/>
+    <line x1="179" y1="95" x2="179" y2="195" stroke="#252A34" stroke-width="2"/>
+
+    <!-- Hanging Grand Crystal Chandelier (Lộng lẫy / Splendid) -->
+    <!-- Chain -->
+    <line x1="120" y1="20" x2="120" y2="55" stroke="#D4AF37" stroke-width="2"/>
+    
+    <!-- Chandelier fixture body -->
+    <path d="M95 65 Q120 55 145 65 L135 85 Q120 90 105 85 Z" fill="#D4AF37"/>
+    
+    <!-- Tiered crystal arms and drops -->
+    <path d="M85 75 Q120 100 155 75" fill="none" stroke="#FFD700" stroke-width="2"/>
+    <path d="M95 90 Q120 115 145 90" fill="none" stroke="#FFD700" stroke-width="2"/>
+
+    <!-- Sparkling crystal pendants (representing dazzling luxury) -->
+    <polygon points="120,95 124,110 120,115 116,110" fill="#E0F7FA"/>
+    <polygon points="100,82 103,94 100,98 97,94" fill="#E0F7FA"/>
+    <polygon points="140,82 143,94 140,98 137,94" fill="#E0F7FA"/>
+    <polygon points="88,78 90,88 88,91 86,88" fill="#E0F7FA"/>
+    <polygon points="152,78 154,88 152,91 150,88" fill="#E0F7FA"/>
+
+    <!-- Radiant glowing sparkles around the chandelier -->
+    <g fill="#FFD700">
+      <!-- Top star sparkle -->
+      <path d="M120 10 L122 17 L129 19 L122 21 L120 28 L118 21 L111 19 L118 17 Z" transform="scale(0.6) translate(80, -5)"/>
+      <!-- Side sparkles -->
+      <path d="M120 10 L122 17 L129 19 L122 21 L120 28 L118 21 L111 19 L118 17 Z" transform="scale(0.4) translate(145, 100)" fill="#FFA500"/>
+      <path d="M120 10 L122 17 L129 19 L122 21 L120 28 L118 21 L111 19 L118 17 Z" transform="scale(0.4) translate(110, 140)" fill="#E0F7FA"/>
+      <path d="M120 10 L122 17 L129 19 L122 21 L120 28 L118 21 L111 19 L118 17 Z" transform="scale(0.4) translate(215, 100)" fill="#FFA500"/>
+    </g>
+
+    <!-- Polished reflective marble floor -->
+    <path d="M40 210 L200 210 L210 225 L30 225 Z" fill="#252A34"/>
+    <path d="M30 225 L210 225 L220 235 L20 235 Z" fill="#1A1D24"/>
+    <!-- Floor golden inlay accents -->
+    <line x1="55" y1="210" x2="40" y2="225" stroke="#D4AF37" stroke-width="1.5" opacity="0.6"/>
+    <line x1="185" y1="210" x2="200" y2="225" stroke="#D4AF37" stroke-width="1.5" opacity="0.6"/>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Stylized Airport/Terminal Window & Radar Arch background elements -->
+  <circle cx="120" cy="120" r="85" fill="none" stroke="#262B35" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M 60 180 Q 120 140 180 180" fill="none" stroke="#262B35" stroke-width="2"/>
+  
+  <!-- Stylized Airport Terminal / Hub structure representing a transit point -->
+  <path d="M 80 160 L 120 90 L 160 160 Z" fill="#222834" stroke="#313946" stroke-width="2"/>
+  <rect x="105" y="130" width="30" height="30" fill="#2A3241"/>
+  
+  <!-- Runway / Transit path representing crossing borders/hubs -->
+  <path d="M 40 185 L 200 185" stroke="#3A4454" stroke-width="6" stroke-linecap="round"/>
+  <line x1="70" y1="185" x2="90" y2="185" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  <line x1="110" y1="185" x2="130" y2="185" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  <line x1="150" y1="185" x2="170" y2="185" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Dynamic Transit/Crossing Arrow arc (Guojing / Transit concept) -->
+  <path d="M 50 130 Q 120 50 190 130" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+  
+  <!-- Airplane icon representing international transit / flight connection -->
+  <g transform="translate(120, 78) rotate(15)">
+    <!-- Airplane Body -->
+    <path d="M 0 -18 C 3 -18 5 -12 5 -4 L 18 4 C 20 5 20 7 18 8 L 5 6 L 3 18 C 3 19 1 19 0 18 L -3 18 C -3 19 -5 19 -5 18 L -3 6 L -18 8 C -20 7 -20 5 -18 4 L -5 -4 C -5 -12 -3 -18 0 -18 Z" fill="#F59E0B"/>
+    <!-- Wing detail highlights -->
+    <path d="M 0 -10 L 0 10" stroke="#1A1D24" stroke-width="1.5"/>
+  </g>
+
+  <!-- Passport / Boarding Pass Document symbolizing border crossing / transit clearance -->
+  <g transform="translate(85, 120)">
+    <!-- Passport Cover -->
+    <rect x="0" y="0" width="40" height="52" rx="4" fill="#3B82F6"/>
+    <!-- Passport pages edge -->
+    <rect x="4" y="-3" width="35" height="48" rx="2" fill="#E2E8F0"/>
+    <!-- Passport cover body back over -->
+    <rect x="0" y="0" width="38" height="52" rx="4" fill="#2563EB"/>
+    <!-- Gold emblem seal on passport -->
+    <circle cx="19" cy="22" r="7" fill="#F59E0B"/>
+    <rect x="10" y="36" width="18" height="3" rx="1.5" fill="#93C5FD"/>
+  </g>
+
+  <!-- Location Pin / Hub indicator -->
+  <g transform="translate(165, 140)">
+    <path d="M 0 0 C -7 0 -12 -5 -12 -12 C -12 -20 0 -32 0 -32 C 0 -32 12 -20 12 -12 C 12 -5 7 0 0 0 Z" fill="#EF4444"/>
+    <circle cx="0" cy="-12" r="4" fill="#FFFFFF"/>
+  </g>
+
+</svg>

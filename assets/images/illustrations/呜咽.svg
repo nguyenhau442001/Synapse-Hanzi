@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Mountain silhouette in the background -->
+  <path d="M0 240 L80 120 L160 200 L240 140 L240 240 Z" fill="#2C313C"/>
+  
+  <!-- The person representing "呜咽" (sobbing/choking sound) -->
+  <!-- Shoulders hunched, head bowed, hands near face/chest to signify the act of sobbing -->
+  <g transform="translate(120, 160)">
+    <!-- Body/Shoulders -->
+    <path d="M-50 60 C-50 20, -20 0, 0 0 C20 0, 50 20, 50 60 L-50 60 Z" fill="#4A5568"/>
+    
+    <!-- Head -->
+    <circle cx="0" cy="-50" r="30" fill="#A0AEC0"/>
+    
+    <!-- Hair -->
+    <path d="M-30 -50 C-30 -80, 30 -80, 30 -50 L30 -40 C30 -20, -30 -20, -30 -40 Z" fill="#2D3748"/>
+    
+    <!-- Hands near face/chest -->
+    <circle cx="-25" cy="-20" r="12" fill="#A0AEC0"/>
+    <circle cx="25" cy="-20" r="12" fill="#A0AEC0"/>
+  </g>
+  
+  <!-- Visualizing the "wind" or "sound" aspect from the context -->
+  <path d="M20 80 Q60 60, 100 80 T180 80" stroke="#F6AD55" stroke-width="3" fill="none" stroke-dasharray="8 8" opacity="0.6"/>
+  <path d="M40 100 Q80 80, 120 100 T200 100" stroke="#F6AD55" stroke-width="2" fill="none" stroke-dasharray="6 6" opacity="0.4"/>
+  
+</svg>

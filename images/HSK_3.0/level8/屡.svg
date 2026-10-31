@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Mountain Peak -->
+  <path d="M120 60 L180 180 L60 180 Z" fill="#374151"/>
+  <path d="M120 60 L150 120 L120 100 L90 120 Z" fill="#4B5563"/>
+  
+  <!-- Climber (Representing the subject of the sentence) -->
+  <g transform="translate(105, 140)">
+    <circle cx="15" cy="10" r="6" fill="#F59E0B"/>
+    <path d="M15 16 L15 30 M15 20 L5 25 M15 20 L25 25 M15 30 L10 40 M15 30 L20 40" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Repeated Obstacles (The "屡" - multiple times/phenomena) -->
+  <!-- Snowflakes/Storm markers representing the "repeated" nature -->
+  <g fill="#9CA3AF">
+    <path d="M70 80 L74 88 M78 84 L70 84 M74 80 L74 88" stroke="#9CA3AF" stroke-width="2"/>
+    <path d="M160 90 L164 98 M168 94 L160 94 M164 90 L164 98" stroke="#9CA3AF" stroke-width="2"/>
+    <path d="M110 110 L114 118 M118 114 L110 114 M114 110 L114 118" stroke="#9CA3AF" stroke-width="2"/>
+    <path d="M140 70 L144 78 M148 74 L140 74 M144 70 L144 78" stroke="#9CA3AF" stroke-width="2"/>
+    <path d="M90 130 L94 138 M98 134 L90 134 M94 130 L94 138" stroke="#9CA3AF" stroke-width="2"/>
+  </g>
+</svg>

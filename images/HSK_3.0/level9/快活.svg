@@ -1,0 +1,39 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Water stream -->
+  <path d="M0 140 C 60 120, 180 160, 240 140 L 240 240 L 0 240 Z" fill="#1E3A5F" opacity="0.6"/>
+  
+  <!-- Green aquatic plants -->
+  <path d="M40 240 Q 45 180 30 160 M60 240 Q 65 190 50 170 M80 240 Q 85 185 70 165" stroke="#2D8A5A" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Sunbeams (Gold accents) -->
+  <path d="M120 0 L 140 60 M160 0 L 170 50 M180 0 L 185 40" stroke="#FFC107" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  
+  <!-- Fish 1 (Large, dynamic, expressive) -->
+  <g transform="translate(150, 180) scale(1.2)">
+    <ellipse cx="0" cy="0" rx="20" ry="10" fill="#FF9800"/>
+    <path d="M-20 0 L -35 10 L -35 -10 Z" fill="#FF9800"/>
+    <circle cx="10" cy="-3" r="2" fill="#1A1D24"/>
+    <path d="M5 5 Q 10 8 15 5" stroke="#1A1D24" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- Fish 2 (Smaller, trailing, sense of movement) -->
+  <g transform="translate(90, 200) rotate(-15)">
+    <ellipse cx="0" cy="0" rx="15" ry="8" fill="#FFC107"/>
+    <path d="M-15 0 L -25 7 L -25 -7 Z" fill="#FFC107"/>
+    <circle cx="8" cy="-2" r="1.5" fill="#1A1D24"/>
+  </g>
+  
+  <!-- Fish 3 (Small, leaping) -->
+  <g transform="translate(40, 150) rotate(20)">
+    <ellipse cx="0" cy="0" rx="12" ry="6" fill="#FF9800"/>
+    <path d="M-12 0 L -20 5 L -20 -5 Z" fill="#FF9800"/>
+    <circle cx="6" cy="-2" r="1" fill="#1A1D24"/>
+  </g>
+  
+  <!-- Bubbles for liveliness -->
+  <circle cx="170" cy="160" r="3" fill="#FFFFFF" opacity="0.3"/>
+  <circle cx="180" cy="150" r="2" fill="#FFFFFF" opacity="0.3"/>
+  <circle cx="50" cy="140" r="2" fill="#FFFFFF" opacity="0.3"/>
+</svg>

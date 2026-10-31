@@ -1,0 +1,60 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g id="sluice-gate">
+    <!-- Background water storage (Reservoir) -->
+    <path d="M 40 100 L 40 200 C 40 206 44 210 50 210 L 95 210 L 95 100 Z" fill="#1B365D" opacity="0.6"/>
+    <path d="M 40 120 Q 60 115 80 120 T 100 120 L 100 210 L 40 210 Z" fill="#205081" opacity="0.7"/>
+
+    <!-- Downstream riverbed -->
+    <path d="M 145 150 L 200 150 C 206 150 210 154 210 160 L 210 210 L 145 210 Z" fill="#1B365D" opacity="0.4"/>
+    <path d="M 145 165 Q 170 160 195 165 L 210 165 L 210 210 L 145 210 Z" fill="#205081" opacity="0.5"/>
+
+    <!-- Concrete Structure / Dam Piers -->
+    <!-- Left pier -->
+    <rect x="75" y="70" width="20" height="140" rx="2" fill="#4A5568"/>
+    <rect x="70" y="60" width="30" height="15" rx="2" fill="#718096"/>
+    
+    <!-- Right pier -->
+    <rect x="125" y="70" width="20" height="140" rx="2" fill="#4A5568"/>
+    <rect x="120" y="60" width="30" height="15" rx="2" fill="#718096"/>
+
+    <!-- Channel wall / base foundation -->
+    <rect x="30" y="200" width="180" height="12" rx="3" fill="#2D3748"/>
+
+    <!-- Water flowing against upstream side -->
+    <path d="M 40 140 C 60 140 70 145 80 140 L 80 200 L 40 200 Z" fill="#3182CE" opacity="0.7"/>
+    <!-- Water ripples -->
+    <path d="M 50 155 Q 60 150 70 155" stroke="#63B3ED" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 55 175 Q 65 170 75 175" stroke="#63B3ED" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <!-- Sluice Gate (The Gate / 闸) - Slightly raised or closed fitting precisely in slot -->
+    <!-- Main Metal Panel -->
+    <rect x="92" y="85" width="36" height="85" rx="3" fill="#E2E8F0"/>
+    <!-- Horizontal reinforcement ribs on the gate -->
+    <rect x="90" y="95" width="40" height="6" rx="1" fill="#CBD5E0"/>
+    <rect x="90" y="115" width="40" height="6" rx="1" fill="#CBD5E0"/>
+    <rect x="90" y="135" width="40" height="6" rx="1" fill="#CBD5E0"/>
+    <rect x="90" y="155" width="40" height="6" rx="1" fill="#CBD5E0"/>
+    <!-- Vertical center beam -->
+    <rect x="107" y="85" width="6" height="85" fill="#A0AEC0"/>
+
+    <!-- Hoisting mechanism / Control tower on top -->
+    <rect x="95" y="30" width="30" height="35" rx="2" fill="#2D3748"/>
+    <rect x="100" y="25" width="20" height="8" rx="1" fill="#4A5568"/>
+    
+    <!-- Heavy-duty Pulley / Gear Box -->
+    <circle cx="110" cy="42" r="8" fill="#F6AD55"/>
+    <circle cx="110" cy="42" r="3" fill="#1A1D24"/>
+
+    <!-- Lifting Rod / Stem connecting gear to gate -->
+    <rect x="108" y="50" width="4" height="38" fill="#718096"/>
+
+    <!-- Flow control / Splash indicator downstream (minimal, controlled trickle showing closed/regulated state) -->
+    <path d="M 145 185 Q 160 183 175 185" stroke="#63B3ED" stroke-width="1.5" fill="none" stroke-dasharray="3,3" opacity="0.6"/>
+
+    <!-- Accent Highlights (Modern flat aesthetic) -->
+    <path d="M 75 70 L 95 70 L 95 210 L 75 210 Z" fill="#FFFFFF" opacity="0.05"/>
+  </g>
+</svg>

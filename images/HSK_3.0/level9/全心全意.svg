@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Central Physical Object: A stylized modern porcelain sculpture of interlocking hands forming a protective, supportive gesture, representing "全心全意" (wholehearted dedication/service) -->
+  <g transform="translate(120, 115)">
+    <!-- Base pedestal -->
+    <ellipse cx="0" cy="70" rx="45" ry="10" fill="#2A2F3D"/>
+    
+    <!-- Outer supportive hands (warm gold/amber accent representing devotion) -->
+    <path d="M-60 40 C-60 10 -40 -20 -15 -45 C-10 -50 0 -45 -5 -35 C-25 -15 -40 10 -45 40 Z" fill="#E5A93B" opacity="0.9"/>
+    <path d="M60 40 C60 10 40 -20 15 -45 C10 -50 0 -45 5 -35 C25 -15 40 10 45 40 Z" fill="#E5A93B" opacity="0.9"/>
+    
+    <!-- Core central element: A luminous golden-amber stylized heart-shape merged naturally with human hands (representing dedication, not romance) -->
+    <path d="M0 -15 C-20 -40 -55 -20 -40 15 C-25 45 0 65 0 65 C0 65 25 45 40 15 C55 -20 20 -40 0 -15 Z" fill="url(#coreGradient)" stroke="#F5C055" stroke-width="2"/>
+    
+    <!-- Inner polished highlight reflecting modern flat design -->
+    <path d="M-12 0 C-22 -15 -35 -5 -25 15 C-18 28 0 45 0 45 C0 45 0 10 -12 0 Z" fill="#FFFFFF" opacity="0.15"/>
+  </g>
+  
+  <!-- Subtle background ambient lighting for depth -->
+  <circle cx="120" cy="115" r="75" fill="none" stroke="#2A2F3D" stroke-width="1.5" stroke-dasharray="4 8" opacity="0.6"/>
+  
+  <defs>
+    <linearGradient id="coreGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFC107"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+</svg>

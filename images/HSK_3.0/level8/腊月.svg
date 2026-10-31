@@ -1,0 +1,36 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Lunar Calendar representation for the 12th month -->
+  <g transform="translate(60, 40)">
+    <!-- Calendar Body -->
+    <rect x="0" y="0" width="120" height="160" rx="8" fill="#2D343E" stroke="#FFB84D" stroke-width="2"/>
+    <rect x="0" y="0" width="120" height="40" rx="8" fill="#FFB84D"/>
+    
+    <!-- Calendar Header (Visualizing the end of the year) -->
+    <circle cx="60" cy="20" r="10" fill="#1A1D24"/>
+    
+    <!-- Calendar Grid representing the 12th month -->
+    <g fill="#A0A0A0">
+      <rect x="20" y="60" width="15" height="15" rx="2"/>
+      <rect x="40" y="60" width="15" height="15" rx="2"/>
+      <rect x="60" y="60" width="15" height="15" rx="2"/>
+      <rect x="80" y="60" width="15" height="15" rx="2"/>
+      
+      <rect x="20" y="85" width="15" height="15" rx="2"/>
+      <rect x="40" y="85" width="15" height="15" rx="2"/>
+      <rect x="60" y="85" width="15" height="15" rx="2"/>
+      <rect x="80" y="85" width="15" height="15" rx="2"/>
+      
+      <rect x="20" y="110" width="15" height="15" rx="2"/>
+      <rect x="40" y="110" width="15" height="15" rx="2"/>
+      <rect x="60" y="110" width="15" height="15" rx="2" fill="#FFB84D"/>
+      <rect x="80" y="110" width="15" height="15" rx="2" fill="#FFB84D"/>
+    </g>
+    
+    <!-- Decorative element: Winter plum branch indicating the season -->
+    <path d="M10,140 Q30,130 50,145" stroke="#FFB84D" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="30" cy="138" r="4" fill="#FFB84D"/>
+    <circle cx="45" cy="148" r="4" fill="#FFB84D"/>
+  </g>
+</svg>

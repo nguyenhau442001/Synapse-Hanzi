@@ -1,0 +1,34 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 115)">
+    <!-- Base podium/foundation -->
+    <path d="M-60 45 L60 45 L45 75 L-45 75 Z" fill="#2A303C"/>
+    <rect x="-35" y="75" width="70" height="8" rx="2" fill="#3A4252"/>
+    
+    <!-- Central pillar representing core essence/character -->
+    <rect x="-24" y="-35" width="48" height="85" rx="6" fill="#242B36"/>
+    <rect x="-18" y="-28" width="36" height="71" rx="4" fill="#1A1D24"/>
+    
+    <!-- Glowing core / Inner quality (特质) symbolizing strength, leadership, resilience -->
+    <path d="M 0 -55 L 28 -15 L 14 35 L -14 35 L -28 -15 Z" fill="#FF9F43" opacity="0.15"/>
+    
+    <!-- Diamond/Gem core representing the distinct, precious trait (phẩm chất đặc trưng) -->
+    <path d="M 0 -45 L 22 -12 L 0 28 L -22 -12 Z" fill="url(#coreGradient)"/>
+    
+    <!-- Internal facets for modern sleek vector look -->
+    <path d="M 0 -45 L 22 -12 L 0 28 Z" fill="#FFA502" opacity="0.8"/>
+    <path d="M 0 -45 L -22 -12 L 0 28 Z" fill="#FF7F50" opacity="0.9"/>
+    
+    <!-- Highlight shine -->
+    <path d="M 0 -45 L 8 -20 L 0 5 Z" fill="#FFF" opacity="0.4"/>
+  </g>
+
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="coreGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFB142"/>
+      <stop offset="100%" stop-color="#FF5252"/>
+    </linearGradient>
+  </defs>
+</svg>

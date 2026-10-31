@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "区区" (tiny, meager, trivial amount) -->
+  <!-- We visualize a large, elegant open palm holding a drastically disproportionate, tiny coin/gem, -->
+  <!-- vividly contrasting scale to represent "仅有一点点" (a mere trifle / very little). -->
+
+  <!-- Subtle glow/backdrop for focus -->
+  <circle cx="120" cy="130" r="65" fill="#222732" />
+
+  <!-- Arm/Hand holding upwards -->
+  <!-- Sleek modern flat vector arm -->
+  <path d="M70 210 L100 160 L140 160 L170 210 Z" fill="#2E3646" />
+  
+  <!-- Palm and fingers -->
+  <!-- Base of palm -->
+  <path d="M85 160 C85 140 155 140 155 160 C155 168 145 175 120 175 C95 175 85 168 85 160 Z" fill="#3B4459" />
+
+  <!-- Open flat palm surface -->
+  <ellipse cx="120" cy="155" rx="32" ry="14" fill="#47526D" />
+
+  <!-- Fingers resting below/curved -->
+  <path d="M88 150 C80 155 85 165 95 165 C105 165 110 155 105 150 Z" fill="#3B4459" />
+  <path d="M106 148 C100 155 106 166 116 166 C126 166 130 155 125 148 Z" fill="#3B4459" />
+  <path d="M125 148 C120 155 126 166 136 166 C146 166 150 155 144 148 Z" fill="#3B4459" />
+  <path d="M143 150 C140 155 146 164 153 162 C160 160 160 153 152 149 Z" fill="#3B4459" />
+
+  <!-- Thumb resting on side -->
+  <path d="M86 152 C76 150 78 138 90 142 C94 143 93 148 86 152 Z" fill="#47526D" />
+
+  <!-- THE TRIVIAL THING ("区区" - tiny insignificant coin/token) -->
+  <!-- Placed precisely in the center of the open palm, emphasizing its absurdly tiny size -->
+  <g transform="translate(120, 145)">
+    <!-- Outer tiny ring -->
+    <circle cx="0" cy="0" r="6" fill="#1A1D24" />
+    <circle cx="0" cy="0" r="5" fill="#F59E0B" />
+    <!-- Inner square cutout (traditional coin style emphasizing value/currency metaphor) -->
+    <rect x="-1.5" y="-1.5" width="3" height="3" fill="#1A1D24" />
+    <!-- Tiny sparkle / highlight to draw the eye to the microscopic object -->
+    <path d="M0 -9 L1 -6 L4 -5 L1 -4 L0 -1 L-1 -4 L-4 -5 L-1 -6 Z" fill="#FCD34D" opacity="0.9" />
+  </g>
+
+  <!-- Scale comparison / emphasis markers (subtle dotted magnifying/comparison frame or minimal accent dots) -->
+  <!-- Minimalist framing dots to enhance the graphic design quality -->
+  <circle cx="120" cy="70" r="3" fill="#F59E0B" opacity="0.4" />
+  <circle cx="105" cy="75" r="1.5" fill="#47526D" />
+  <circle cx="135" cy="75" r="1.5" fill="#47526D" />
+
+</svg>

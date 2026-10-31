@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(40, 40)">
+    <!-- Mountain silhouette -->
+    <path d="M20 160 L80 40 L140 160 Z" fill="#2C3E50"/>
+    <path d="M60 160 L120 60 L180 160 Z" fill="#34495E"/>
+    
+    <!-- Cross-section of the mine -->
+    <path d="M80 100 L110 100 L120 130 L70 130 Z" fill="#1A1D24"/>
+    
+    <!-- Copper ore deposits (The focus) -->
+    <circle cx="95" cy="115" r="12" fill="#D35400"/>
+    <circle cx="82" cy="122" r="8" fill="#E67E22"/>
+    <circle cx="108" cy="120" r="10" fill="#E67E22"/>
+    
+    <!-- Pickaxe tool icon -->
+    <path d="M140 140 L170 170 M135 135 L150 120 L160 130 L145 145 Z" stroke="#BDC3C7" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Ore chunks -->
+    <path d="M30 140 L45 140 L40 155 L25 150 Z" fill="#D35400"/>
+    <path d="M170 145 L185 145 L180 160 L165 155 Z" fill="#E67E22"/>
+  </g>
+</svg>

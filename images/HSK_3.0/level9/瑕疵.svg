@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Optical Lens / Inspection Context (Physical Object: Precision Optical Lens with a tiny flaw/scratch) -->
+  <g transform="translate(0, 0)">
+    <!-- Microscope field / illumination base -->
+    <circle cx="120" cy="115" r="75" fill="#222730" stroke="#2F3642" stroke-width="3"/>
+    
+    <!-- Focused strong light beam effect -->
+    <path d="M70 45 L170 45 L190 185 L50 185 Z" fill="#2D3748" opacity="0.3"/>
+    <ellipse cx="120" cy="115" rx="55" ry="55" fill="#2E3846" opacity="0.6"/>
+
+    <!-- Precision Optical Lens (Circular Object) -->
+    <circle cx="120" cy="115" r="50" fill="#3B82F6" opacity="0.25" stroke="#60A5FA" stroke-width="2.5"/>
+    <circle cx="120" cy="115" r="40" fill="#60A5FA" opacity="0.15"/>
+    
+    <!-- Lens reflection highlight -->
+    <path d="M 95 90 Q 120 75 145 90" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.4"/>
+
+    <!-- High-intensity focus crosshairs -->
+    <line x1="120" y1="75" x2="120" y2="155" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.7"/>
+    <line x1="80" y1="115" x2="160" y2="115" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.7"/>
+
+    <!-- THE FLAW / SCRATCH (瑕疵) - Highlighted with high-contrast accent color -->
+    <g transform="translate(132, 103)">
+      <!-- Micro crack / defect line -->
+      <path d="M0 0 L6 -4 L10 2" stroke="#EF4444" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <!-- Focus indicator ring around the flaw -->
+      <circle cx="5" cy="-1" r="9" stroke="#F59E0B" stroke-width="2" fill="none" stroke-dasharray="3 2"/>
+    </g>
+
+    <!-- Microscope lens border / metallic rim -->
+    <circle cx="120" cy="115" r="53" fill="none" stroke="#94A3B8" stroke-width="2"/>
+    
+    <!-- Magnifying glass handle projecting downwards -->
+    <path d="M157 152 L185 180" stroke="#64748B" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="188" cy="183" r="5" fill="#475569"/>
+  </g>
+</svg>

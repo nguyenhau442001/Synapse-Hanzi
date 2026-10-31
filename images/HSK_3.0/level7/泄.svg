@@ -1,0 +1,60 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Ambient glow for data leak / focus -->
+    <circle cx="120" cy="115" r="70" fill="#3B82F6" opacity="0.08"/>
+
+    <!-- Secure Document (Base object) -->
+    <path d="M 85 55 
+             L 135 55 
+             L 160 80 
+             L 160 185 
+             L 85 185 
+             Z" 
+          fill="#2A2F3D" 
+          stroke="#475569" 
+          stroke-width="3" 
+          stroke-linejoin="round"/>
+          
+    <!-- Document fold corner -->
+    <path d="M 135 55 L 135 80 L 160 80 Z" 
+          fill="#1A1D24" 
+          stroke="#475569" 
+          stroke-width="3" 
+          stroke-linejoin="round"/>
+
+    <!-- Confidential Stamp / Header inside document -->
+    <rect x="98" y="70" width="35" height="8" rx="2" fill="#EF4444" opacity="0.8"/>
+
+    <!-- Document lines (classified data) -->
+    <rect x="98" y="90" width="45" height="5" rx="1.5" fill="#64748B"/>
+    <rect x="98" y="105" width="30" height="5" rx="1.5" fill="#64748B"/>
+
+    <!-- Breach point: Container Crack / Opening in the document body -->
+    <path d="M 120 120 L 128 135 L 115 150 L 125 165" 
+          fill="none" 
+          stroke="#F59E0B" 
+          stroke-width="4" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+
+    <!-- Leaking/escaping data streams (Glowing orange-gold particles & digital fragments) -->
+    <!-- Particle 1 -->
+    <circle cx="145" cy="135" r="5" fill="#F59E0B"/>
+    <path d="M 135 130 Q 145 130 155 125" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Particle 2 (Binary/Digital bit escaping) -->
+    <rect x="158" y="152" width="10" height="10" rx="2" fill="#F59E0B" transform="rotate(15 163 157)"/>
+    <path d="M 125 145 Q 145 155 160 155" fill="none" stroke="#F59E0B" stroke-width="2" stroke-dasharray="3 3" stroke-linecap="round"/>
+
+    <!-- Particle 3 -->
+    <circle cx="138" cy="175" r="3.5" fill="#F59E0B"/>
+    <path d="M 120 155 Q 130 170 138 175" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Top rising leak vector -->
+    <circle cx="165" cy="100" r="4" fill="#3B82F6"/>
+    <path d="M 140 115 Q 155 105 165 100" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

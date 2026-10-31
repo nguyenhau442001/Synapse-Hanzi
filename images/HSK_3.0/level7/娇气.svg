@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Representing "娇气" (fragile/delicate/spoiled) through a character who is physically overwhelmed by a minor, trivial task (a single feather or a light breeze) -->
+  
+  <!-- Character Body -->
+  <path d="M90 180c0-20 15-35 30-35s30 15 30 35v50H90v-50z" fill="#FFD700"/>
+  
+  <!-- Head -->
+  <circle cx="120" cy="100" r="25" fill="#FFD700"/>
+  
+  <!-- Expression: Exaggerated pout/whining face -->
+  <path d="M110 105h20" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="112" cy="95" r="3" fill="#1A1D24"/>
+  <circle cx="128" cy="95" r="3" fill="#1A1D24"/>
+  <path d="M115 112c5 5 10 5 15 0" stroke="#1A1D24" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- The "heavy" burden: A single, oversized feather representing the inability to handle minor hardship -->
+  <path d="M150 120c10-20 30-20 40 0s-10 30-40 0z" fill="#E0E0E0"/>
+  <path d="M170 120l10 30" stroke="#BDBDBD" stroke-width="2"/>
+  
+  <!-- Arms raised in a dramatic, helpless gesture -->
+  <path d="M95 130l-20-20" stroke="#FFD700" stroke-width="8" stroke-linecap="round"/>
+  <path d="M145 130l20-20" stroke="#FFD700" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Ground line -->
+  <path d="M60 230h120" stroke="#4A4A4A" stroke-width="4" stroke-linecap="round"/>
+</svg>

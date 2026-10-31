@@ -1,0 +1,62 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow/ambience -->
+  <circle cx="120" cy="115" r="70" fill="#FF5252" opacity="0.08"/>
+
+  <!-- Romantic Couple Character Illustration -->
+  <g transform="translate(0, 10)">
+    <!-- Person on the Left (Partner A - Feminine silhouette) -->
+    <g transform="translate(82, 95)">
+      <!-- Body / Coat -->
+      <path d="M -16 65 C -16 45 -22 35 -26 28 C -18 22 -8 20 0 20 C 8 20 18 22 26 28 C 22 35 16 45 16 65 Z" fill="#E056FD"/>
+      <!-- Head & Hair -->
+      <circle cx="0" cy="8" r="14" fill="#FFD3B6"/>
+      <path d="M -15 8 C -15 -4 -6 -8 0 -8 C 6 -8 15 -4 15 8 C 15 16 12 24 10 28 C 4 25 -4 25 -10 28 C -12 24 -15 16 -15 8 Z" fill="#3D3D3D"/>
+      <!-- Gentle smiling eye & cheek -->
+      <path d="M 2 6 Q 5 9 8 6" stroke="#4A3525" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+      <circle cx="9" cy="11" r="3" fill="#FF8585" opacity="0.6"/>
+    </g>
+
+    <!-- Person on the Right (Partner B - Masculine silhouette) -->
+    <g transform="translate(158, 95)">
+      <!-- Body / Coat -->
+      <path d="M -16 65 C -16 45 -22 35 -26 28 C -18 22 -8 20 0 20 C 8 20 18 22 26 28 C 22 35 16 45 16 65 Z" fill="#48DBFB"/>
+      <!-- Head & Hair -->
+      <circle cx="0" cy="8" r="14" fill="#FFD3B6"/>
+      <path d="M -14 8 C -14 -4 -5 -10 1 -10 C 10 -10 14 -2 15 10 C 10 8 4 6 -2 8 C -8 10 -12 8 -14 8 Z" fill="#2C3A47"/>
+      <!-- Gentle smiling eye & cheek -->
+      <path d="M -8 6 Q -5 9 -2 6" stroke="#4A3525" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+      <circle cx="-9" cy="11" r="3" fill="#FF8585" opacity="0.6"/>
+    </g>
+
+    <!-- Interlocking Arms & Closeness in Center -->
+    <g transform="translate(120, 115)">
+      <!-- Unified upper body overlap suggesting intimacy -->
+      <path d="M -30 25 C -20 10 -10 5 0 5 C 10 5 20 10 30 25 C 35 40 38 55 40 75 C 20 75 -20 75 -40 75 C -38 55 -35 40 -30 25 Z" fill="#FF6B81"/>
+    </g>
+
+    <!-- Single Rose being held / presented contextually -->
+    <g transform="translate(120, 110)">
+      <!-- Stem and Leaf -->
+      <path d="M 0 35 C -5 20 -2 10 0 0" stroke="#2ED573" stroke-width="3" stroke-linecap="round" fill="none"/>
+      <path d="M -4 18 C -10 15 -12 8 -8 5 C -6 12 -4 18 -4 18 Z" fill="#2ED573"/>
+      <!-- Rose Blossom -->
+      <path d="M 0 -3 C -7 -3 -10 -9 0 -15 C 10 -9 7 -3 0 -3 Z" fill="#FF4757"/>
+      <path d="M -3 -6 C -6 -11 -3 -15 0 -14 C 3 -15 6 -11 3 -6 Z" fill="#FF6B81"/>
+      <circle cx="0" cy="-9" r="2.5" fill="#FFA502"/>
+    </g>
+  </g>
+
+  <!-- Decorative Contextual Elements (Minimalist Clean Sparks/Dots) -->
+  <g fill="#FFD700" opacity="0.8">
+    <circle cx="70" cy="70" r="2"/>
+    <circle cx="170" cy="60" r="1.5"/>
+    <circle cx="190" cy="130" r="2"/>
+    <circle cx="50" cy="140" r="1.5"/>
+  </g>
+
+  <!-- Focus Accent Frame / Border subtle styling -->
+  <rect x="12" y="12" width="216" height="216" rx="16" fill="none" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="2"/>
+</svg>

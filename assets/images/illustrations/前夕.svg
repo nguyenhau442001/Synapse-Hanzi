@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "前夕" (Eve / The night before):
+       Represented by a dark evening/night sky with stars, a calendar page showing 
+       the transition of time, and traditional red lanterns hanging, capturing the 
+       atmosphere of "the eve before a major festival" (e.g., Chinese New Year Eve). -->
+
+  <!-- Night Sky & Background Elements -->
+  <circle cx="185" cy="65" r="3" fill="#E2E8F0" opacity="0.6"/>
+  <circle cx="55" cy="75" r="2" fill="#E2E8F0" opacity="0.4"/>
+  <circle cx="95" cy="50" r="2.5" fill="#E2E8F0" opacity="0.5"/>
+  <circle cx="140" cy="85" r="1.5" fill="#E2E8F0" opacity="0.3"/>
+
+  <!-- Crescent Moon (representing evening/night) -->
+  <path d="M 180 50 A 22 22 0 1 1 155 75 A 18 18 0 1 0 180 50 Z" fill="#F6AD55" opacity="0.9"/>
+
+  <!-- Hanging Red Lanterns (Visualizing the festive eve context) -->
+  <!-- Left Lantern Wire & Cap -->
+  <line x1="75" y1="24" x2="75" y2="55" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 68 55 L 82 55 L 80 60 L 70 60 Z" fill="#ECC94B"/>
+  <!-- Left Lantern Body -->
+  <ellipse cx="75" cy="78" rx="18" ry="15" fill="#E53E3E"/>
+  <!-- Left Lantern Ribs -->
+  <path d="M 75 63 C 65 68 65 88 75 93 C 85 88 85 68 75 63 Z" fill="none" stroke="#FEB2B2" stroke-width="1.5" opacity="0.7"/>
+  <!-- Left Lantern Tassel -->
+  <path d="M 72 93 L 78 93 L 75 106 Z" fill="#ECC94B"/>
+  <line x1="75" y1="93" x2="75" y2="105" stroke="#ECC94B" stroke-width="1"/>
+
+  <!-- Right Lantern Wire & Cap -->
+  <line x1="165" y1="24" x2="165" y2="45" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 158 45 L 172 45 L 170 50 L 160 50 Z" fill="#ECC94B"/>
+  <!-- Right Lantern Body -->
+  <ellipse cx="165" cy="68" rx="14" ry="12" fill="#E53E3E"/>
+  <!-- Right Lantern Ribs -->
+  <path d="M 165 56 C 157 60 157 76 165 80 C 173 76 173 60 165 56 Z" fill="none" stroke="#FEB2B2" stroke-width="1.2" opacity="0.7"/>
+  <!-- Right Lantern Tassel -->
+  <path d="M 162 80 L 168 80 L 165 92 Z" fill="#ECC94B"/>
+
+  <!-- Central Object: The Calendar / Countdown Page (Physical Object representing "Eve") -->
+  <!-- Calendar Shadow / Backing -->
+  <rect x="70" y="102" width="100" height="105" rx="12" fill="#2D3748"/>
+  
+  <!-- Calendar Main Body -->
+  <rect x="70" y="96" width="100" height="105" rx="12" fill="#F7FAFC"/>
+  
+  <!-- Calendar Header (Red Banner for Eve/Special Day) -->
+  <path d="M 70 108 A 12 12 0 0 1 82 96 L 158 96 A 12 12 0 0 1 170 108 L 170 128 L 70 128 Z" fill="#E53E3E"/>
+  
+  <!-- Calendar Binding Rings -->
+  <rect x="92" y="90" width="8" height="12" rx="4" fill="#CBD5E0"/>
+  <rect x="140" y="90" width="8" height="12" rx="4" fill="#CBD5E0"/>
+
+  <!-- Calendar Grid / Page Content (Abstract date representation) -->
+  <rect x="85" y="142" width="20" height="12" rx="3" fill="#E2E8F0"/>
+  <rect x="110" y="142" width="20" height="12" rx="3" fill="#E2E8F0"/>
+  <rect x="135" y="142" width="20" height="12" rx="3" fill="#FEB2B2"/> <!-- Highlighted 'Eve' Day -->
+
+  <rect x="85" y="160" width="20" height="12" rx="3" fill="#E2E8F0"/>
+  <rect x="110" y="160" width="20" height="12" rx="3" fill="#E2E8F0"/>
+  <rect x="135" y="160" width="20" height="12" rx="3" fill="#E2E8F0"/>
+
+  <!-- Subtle Horizon Glow representing the dawn of the upcoming day -->
+  <path d="M 40 205 Q 120 185 200 205" fill="none" stroke="#F6AD55" stroke-width="2" opacity="0.3"/>
+</svg>

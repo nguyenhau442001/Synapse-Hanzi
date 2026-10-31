@@ -14,7 +14,9 @@ const SpaRouter = (function() {
       const tab = params.get('tab');
       const story = params.get('story');
       const q = params.get('q');
-      return { view: 'tab', tab, story, q };
+      const mode = params.get('mode');
+      const exam = params.get('exam');
+      return { view: 'tab', tab, story, q, mode, exam };
     }
     if (params.get('screen') === 'today-reviews') {
       return { view: 'todayReviews' };
@@ -45,6 +47,15 @@ const SpaRouter = (function() {
       }
       if (state.tab === 'reading' && state.q) {
         return `${base}?tab=reading&q=${encodeURIComponent(state.q)}${themeParam}`;
+      }
+      if (state.tab === 'listening' && state.mode) {
+        return `${base}?tab=listening&mode=${encodeURIComponent(state.mode)}${themeParam}`;
+      }
+      if (state.tab === 'sentenceGame') {
+        let extra = '';
+        if (state.exam) extra += `&exam=${encodeURIComponent(state.exam)}`;
+        if (state.q) extra += `&q=${encodeURIComponent(state.q)}`;
+        return `${base}?tab=sentenceGame${extra}${themeParam}`;
       }
       return `${base}?tab=${encodeURIComponent(state.tab)}${themeParam}`;
     }
@@ -155,8 +166,25 @@ const SpaRouter = (function() {
         todayScreen.style.display = 'none';
       }
     }
+    if (state.view !== 'radicalCards') {
+      const radicalScreen = document.getElementById('screenRadicalCards');
+      if (radicalScreen && radicalScreen.style.display !== 'none') {
+        radicalScreen.style.display = 'none';
+      }
+    }
+    if (state.view !== 'cards') {
+      const screenCards = document.getElementById('screenCards');
+      if (screenCards && screenCards.style.display !== 'none') {
+        screenCards.style.display = 'none';
+      }
+    }
 
     if (state.view === 'vocab') {
+      document.body.classList.remove('study-mode');
+      const radicalScreen = document.getElementById('screenRadicalCards');
+      if (radicalScreen && radicalScreen.style.display !== 'none') {
+        radicalScreen.style.display = 'none';
+      }
       const isStudy = document.body.classList.contains('flashcard-study-mode') ||
         (typeof currentLevel !== 'undefined' && currentLevel && document.getElementById('screenCards') && document.getElementById('screenCards').style.display !== 'none');
       if (isStudy) {
@@ -169,6 +197,11 @@ const SpaRouter = (function() {
         if (typeof closeTodayReviews === 'function') closeTodayReviews();
       }
     } else if (state.view === 'cards') {
+      document.body.classList.remove('study-mode');
+      const radicalScreen = document.getElementById('screenRadicalCards');
+      if (radicalScreen && radicalScreen.style.display !== 'none') {
+        radicalScreen.style.display = 'none';
+      }
       if (state.level) {
         if (typeof currentLevel === 'undefined' || currentLevel !== state.level) {
           if (typeof selectLevel === 'function') selectLevel(state.level);
@@ -183,6 +216,15 @@ const SpaRouter = (function() {
         if (typeof toggleStudyWritingPanel === 'function') toggleStudyWritingPanel(true);
       }
     } else if (state.view === 'tab') {
+      document.body.classList.remove('study-mode');
+      const radicalScreen = document.getElementById('screenRadicalCards');
+      if (radicalScreen && radicalScreen.style.display !== 'none') {
+        radicalScreen.style.display = 'none';
+      }
+      const screenCards = document.getElementById('screenCards');
+      if (screenCards && screenCards.style.display !== 'none') {
+        screenCards.style.display = 'none';
+      }
       if (state.tab && typeof setPrimaryTab === 'function') {
         if (document.body.classList.contains('flashcard-study-mode')) {
           if (typeof goBackToPicker === 'function') goBackToPicker();
@@ -191,10 +233,37 @@ const SpaRouter = (function() {
         if (state.tab === 'gradedReading' && state.story && typeof GradedReading !== 'undefined') {
           GradedReading.openStory(state.story, false);
         }
+        if (state.tab === 'listening' && state.mode && typeof ListeningPractice !== 'undefined') {
+          ListeningPractice.setMode(state.mode);
+        }
+        if (state.tab === 'sentenceGame') {
+          if (typeof setSentenceGameExam === 'function' && state.exam) {
+            setSentenceGameExam(state.exam);
+          }
+          if (typeof goToSentenceGameQuestion === 'function' && state.q) {
+            const qNum = parseInt(state.q, 10);
+            if (qNum >= 86 && qNum <= 95) {
+              goToSentenceGameQuestion(qNum - 86);
+            }
+          }
+        }
       }
     } else if (state.view === 'todayReviews') {
+      const radicalScreen = document.getElementById('screenRadicalCards');
+      if (radicalScreen && radicalScreen.style.display !== 'none') {
+        radicalScreen.style.display = 'none';
+      }
+      const screenCards = document.getElementById('screenCards');
+      if (screenCards && screenCards.style.display !== 'none') {
+        screenCards.style.display = 'none';
+      }
       if (typeof openTodayReviews === 'function') openTodayReviews();
     } else if (state.view === 'radicalCards') {
+      const screenCards = document.getElementById('screenCards');
+      if (screenCards && screenCards.style.display !== 'none') {
+        screenCards.style.display = 'none';
+      }
+      document.body.classList.remove('flashcard-study-mode');
       if (typeof startRadicalStudy === 'function') {
         startRadicalStudy(state.mode || 'basic50', 0);
       }
@@ -217,6 +286,20 @@ const SpaRouter = (function() {
           setPrimaryTab(initialState.tab);
           if (initialState.tab === 'gradedReading' && initialState.story && typeof GradedReading !== 'undefined') {
             GradedReading.openStory(initialState.story, false);
+          }
+          if (initialState.tab === 'listening' && initialState.mode && typeof ListeningPractice !== 'undefined') {
+            ListeningPractice.setMode(initialState.mode);
+          }
+          if (initialState.tab === 'sentenceGame') {
+            if (typeof setSentenceGameExam === 'function' && initialState.exam) {
+              setSentenceGameExam(initialState.exam);
+            }
+            if (typeof goToSentenceGameQuestion === 'function' && initialState.q) {
+              const qNum = parseInt(initialState.q, 10);
+              if (qNum >= 86 && qNum <= 95) {
+                goToSentenceGameQuestion(qNum - 86);
+              }
+            }
           }
         }
       } else if (initialState.view === 'todayReviews') {

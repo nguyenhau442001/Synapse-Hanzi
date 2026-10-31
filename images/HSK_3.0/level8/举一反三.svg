@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Central Puzzle Piece (The Core Concept) -->
+  <path d="M120 80 L145 80 L145 105 L160 105 L160 130 L145 130 L145 155 L120 155 L120 130 L95 130 L95 105 L120 105 Z" fill="#FFB84D"/>
+  
+  <!-- The Three Derived Pieces (The "San" - Three) -->
+  <!-- Piece 1 (Top Left) -->
+  <path d="M60 60 L75 60 L75 75 L85 75 L85 90 L75 90 L75 105 L60 105 L60 90 L45 90 L45 75 L60 75 Z" fill="#4D94FF" opacity="0.8"/>
+  
+  <!-- Piece 2 (Top Right) -->
+  <path d="M180 60 L195 60 L195 75 L205 75 L205 90 L195 90 L195 105 L180 105 L180 90 L165 90 L165 75 L180 75 Z" fill="#4D94FF" opacity="0.8"/>
+  
+  <!-- Piece 3 (Bottom) -->
+  <path d="M120 170 L135 170 L135 185 L145 185 L145 200 L135 200 L135 215 L120 215 L120 200 L105 200 L105 185 L120 185 Z" fill="#4D94FF" opacity="0.8"/>
+  
+  <!-- Connecting lines -->
+  <path d="M120 105 L85 90" stroke="#5D6D7E" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M145 105 L180 90" stroke="#5D6D7E" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M133 155 L133 185" stroke="#5D6D7E" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>

@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Accent Elements (Subtle ground shadow and atmosphere) -->
+  <ellipse cx="120" cy="200" rx="60" ry="10" fill="#111318"/>
+
+  <!-- Character / Object representing "倔" (Stubborn, unyielding person standing firm against resistance) -->
+  <g transform="translate(0, 0)">
+    <!-- Ground Line -->
+    <path d="M 60 190 L 180 190" stroke="#2A2F3A" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Resistant Force / Wind Lines (Pushing from right to left) -->
+    <path d="M 185 100 L 145 100" stroke="#FF6B6B" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M 195 125 L 135 125" stroke="#FF6B6B" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 170 150 L 125 150" stroke="#FF6B6B" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Stubborn Character (Firmly planted, leaning slightly forward into the wind, arms crossed) -->
+    <!-- Legs (Planted wide and firm) -->
+    <path d="M 105 190 L 95 145 L 115 145" fill="none" stroke="#5271FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 135 190 L 145 145 L 125 145" fill="none" stroke="#5271FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Torso (Leaning forward with determination) -->
+    <path d="M 105 148 L 135 148 L 128 100 L 100 100 Z" fill="#4B65FF"/>
+
+    <!-- Head (Determined expression, chin tilted up) -->
+    <circle cx="118" cy="72" r="18" fill="#FFD166"/>
+    <!-- Hair -->
+    <path d="M 100 72 C 100 58 136 58 136 72 C 136 72 130 65 118 65 C 106 65 100 72 100 72 Z" fill="#2E3440"/>
+
+    <!-- Arms (Crossed firmly over chest) -->
+    <!-- Back arm -->
+    <path d="M 105 105 L 130 115 L 120 130" fill="none" stroke="#3B54EE" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Front arm (Strong cross) -->
+    <path d="M 132 102 L 102 122 L 115 132" fill="none" stroke="#5271FF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Focused/Stubborn Eyebrow Detail -->
+    <line x1="110" y1="68" x2="124" y2="71" stroke="#2E3440" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Highlight accent on top for modern flat UI feel -->
+  <circle cx="120" cy="120" r="108" fill="none" stroke="#2E3440" stroke-width="1.5" opacity="0.3"/>
+</svg>

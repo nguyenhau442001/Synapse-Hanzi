@@ -1,0 +1,73 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <defs>
+    <!-- Gradients for sleek modern tech look -->
+    <linearGradient id="streamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#EF4444"/>
+    </linearGradient>
+
+    <linearGradient id="vaultGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background subtle tech grid lines representing data/monitoring -->
+  <g opacity="0.1" stroke="#94A3B8" stroke-width="0.5" stroke-dasharray="4 4">
+    <line x1="30" y1="60" x2="210" y2="60"/>
+    <line x1="30" y1="120" x2="210" y2="120"/>
+    <line x1="30" y1="180" x2="210" y2="180"/>
+    <line x1="60" y1="30" x2="60" y2="210"/>
+    <line x1="120" y1="30" x2="120" y2="210"/>
+    <line x1="180" y1="30" x2="180" y2="210"/>
+  </g>
+
+  <!-- Central Physical Object: Financial Conduit / Pipeline representing "Direction of Flow" (流向) -->
+  
+  <!-- Starting Point (Source Vault) -->
+  <rect x="35" y="90" width="45" height="60" rx="6" fill="url(#vaultGrad)" stroke="#475569" stroke-width="2"/>
+  <circle cx="57" cy="115" r="8" fill="#F59E0B"/>
+  <circle cx="57" cy="115" r="4" fill="#1E293B"/>
+  <line x1="45" y1="135" x2="70" y2="135" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Destination Point (Target Sector / Market) -->
+  <rect x="160" y="90" width="45" height="60" rx="6" fill="url(#vaultGrad)" stroke="#475569" stroke-width="2"/>
+  <path d="M175 110 L195 110 M175 120 L195 120 M175 130 L185 130" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Directional Flow Channels (Main physical paths representing "流向") -->
+  <!-- Top curved stream -->
+  <path d="M 80 105 C 110 105, 130 90, 160 100" fill="none" stroke="url(#streamGrad)" stroke-width="6" stroke-linecap="round"/>
+  <!-- Middle direct stream (highlighted focus) -->
+  <path d="M 80 120 C 110 120, 130 120, 160 120" fill="none" stroke="url(#accentGrad)" stroke-width="8" stroke-linecap="round"/>
+  <!-- Bottom curved stream -->
+  <path d="M 80 135 C 110 135, 130 150, 160 140" fill="none" stroke="url(#streamGrad)" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Directional Flow Arrowheads / Motion Indicators -->
+  <polygon points="152,114 162,120 152,126" fill="#FFFFFF"/>
+  <polygon points="122,112 130,120 122,128" fill="#FFFFFF" opacity="0.8"/>
+
+  <!-- Monitoring / Tracking Node (Visualizing transparent tracking of the flow) -->
+  <g transform="translate(120, 120)">
+    <!-- Radar/Sensor ring -->
+    <circle cx="0" cy="0" r="18" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <!-- Center scanning dot -->
+    <circle cx="0" cy="0" r="4" fill="#F59E0B"/>
+    <!-- Connecting bracket to main stream -->
+    <line x1="0" y1="-18" x2="0" y2="-28" stroke="#38BDF8" stroke-width="1.5"/>
+    <circle cx="0" cy="-28" r="2" fill="#38BDF8"/>
+  </g>
+
+  <!-- Floating Data Particles / Currency Units in transit -->
+  <circle cx="100" cy="100" r="3" fill="#38BDF8"/>
+  <circle cx="140" cy="140" r="2.5" fill="#F59E0B"/>
+  <circle cx="135" cy="103" r="2" fill="#FFFFFF"/>
+</svg>

@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background conversational elements (Warm/Enthusiastic crowd offering advice - muted) -->
+  <g opacity="0.35">
+    <!-- Left person speaking/reaching out -->
+    <circle cx="65" cy="110" r="14" fill="#5A6578"/>
+    <path d="M45 150 C45 132 54 126 65 126 C76 126 85 132 85 150 Z" fill="#5A6578"/>
+    <!-- Speech bubble 1 (warm tones, ignored) -->
+    <path d="M40 75 Q40 65 50 65 H85 Q95 65 95 75 V85 Q95 95 85 95 H70 L55 110 L60 95 H50 Q40 95 40 85 Z" fill="#F39C12" opacity="0.8"/>
+    <circle cx="57" cy="80" r="3" fill="#1A1D24"/>
+    <circle cx="67" cy="80" r="3" fill="#1A1D24"/>
+    <circle cx="77" cy="80" r="3" fill="#1A1D24"/>
+
+    <!-- Right person speaking/reaching out -->
+    <circle cx="175" cy="110" r="14" fill="#5A6578"/>
+    <path d="M155 150 C155 132 164 126 175 126 C186 126 195 132 195 150 Z" fill="#5A6578"/>
+    <!-- Speech bubble 2 -->
+    <path d="M145 75 Q145 65 155 65 H190 Q200 65 200 75 V85 Q200 95 190 95 H180 L185 110 L170 95 H155 Q145 95 145 85 Z" fill="#F39C12" opacity="0.8"/>
+    <line x1="160" y1="80" x2="185" y2="80" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Central Character (Person embodying 漠然 - unbothered, blank stare, turned slightly away or completely neutral/detached) -->
+  <g transform="translate(0, 5)">
+    <!-- Person's Body/Torso -->
+    <path d="M90 165 C90 145 102 138 120 138 C138 138 150 145 150 165 Z" fill="#2C3542"/>
+    
+    <!-- Neck -->
+    <rect x="112" y="125" width="16" height="20" fill="#E0B192"/>
+
+    <!-- Head -->
+    <circle cx="120" cy="105" r="24" fill="#E0B192"/>
+
+    <!-- Hair (Slate/Dark blue-grey, modern cut) -->
+    <path d="M96 102 C96 85 106 80 120 80 C134 80 144 85 144 102 C144 108 142 114 142 114 L140 92 C140 85 132 83 120 83 C108 83 100 85 100 92 L98 114 C98 114 96 108 96 102 Z" fill="#3E4C59"/>
+
+    <!-- Blank, Detached Face Features (Straight flat mouth, half-closed or flat vacant eyes - indicating apathy/thờ ơ) -->
+    <!-- Flat/Blank Eyes (horizontal thin lines, no emotion) -->
+    <line x1="108" y1="104" x2="116" y2="104" stroke="#4A5568" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="124" y1="104" x2="132" y2="104" stroke="#4A5568" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Flat, unexpressive mouth -->
+    <line x1="113" y1="116" x2="127" y2="116" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Divider / Apathy barrier lines (subtle visual separation highlighting emotional detachment) -->
+  <path d="M92 60 L80 40" stroke="#5A6578" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <path d="M148 60 L160 40" stroke="#5A6578" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+</svg>

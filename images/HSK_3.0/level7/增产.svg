@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative Subtle Grid / Atmosphere -->
+  <path d="M40 190 L200 190" stroke="#2A2F3D" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Central Physical Object: Plump Golden Rice Stalks (Tăng sản lượng / High Crop Yield) -->
+  <g transform="translate(120, 115)">
+    <!-- Soil mound / Base -->
+    <path d="M-50 75 C-50 65 50 65 50 75 C50 85 -50 85 -50 75 Z" fill="#2E3646"/>
+    <path d="M-35 70 C-35 62 35 62 35 70 C35 78 -35 78 -35 70 Z" fill="#3A445A"/>
+
+    <!-- Left Rice Stalk (Background) -->
+    <g transform="translate(-25, 60) rotate(-15)">
+      <path d="M0 0 C0 -40 -10 -80 -25 -110" fill="none" stroke="#68D391" stroke-width="3.5" stroke-linecap="round"/>
+      <!-- Grains -->
+      <path d="M-22 -80 C-12 -85 -12 -75 -22 -75" fill="#F6AD55"/>
+      <path d="M-20 -95 C-30 -100 -30 -90 -20 -90" fill="#F6AD55"/>
+      <path d="M-25 -65 C-15 -70 -15 -60 -25 -60" fill="#F6AD55"/>
+      <path d="M-17 -110 C-27 -115 -27 -105 -17 -105" fill="#F6AD55"/>
+    </g>
+
+    <!-- Right Rice Stalk (Background) -->
+    <g transform="translate(25, 60) rotate(15)">
+      <path d="M0 0 C0 -40 10 -80 25 -110" fill="none" stroke="#68D391" stroke-width="3.5" stroke-linecap="round"/>
+      <!-- Grains -->
+      <path d="M22 -80 C12 -85 12 -75 22 -75" fill="#F6AD55"/>
+      <path d="M20 -95 C30 -100 30 -90 20 -90" fill="#F6AD55"/>
+      <path d="M25 -65 C15 -70 15 -60 25 -60" fill="#F6AD55"/>
+      <path d="M17 -110 C27 -115 27 -105 17 -105" fill="#F6AD55"/>
+    </g>
+
+    <!-- Main Center-Left Rice Stalk (Foreground - Larger, Bending gracefully with heavy yield) -->
+    <g transform="translate(-8, 65) rotate(-6)">
+      <!-- Stem -->
+      <path d="M0 0 C2 -50 -5 -90 -12 -125" fill="none" stroke="#48BB78" stroke-width="4.5" stroke-linecap="round"/>
+      
+      <!-- Plump Golden Rice Kernels (Rich Harvest) -->
+      <!-- Bottom pair -->
+      <path d="M-2 -80 C-14 -84 -10 -68 0 -72" fill="#ECC94B"/>
+      <path d="M-4 -80 C8 -84 4 -68 -6 -72" fill="#F6AD55"/>
+      
+      <!-- Mid pair -->
+      <path d="M-6 -95 C-18 -99 -14 -83 -4 -87" fill="#ECC94B"/>
+      <path d="M-8 -95 C4 -99 0 -83 -10 -87" fill="#F6AD55"/>
+      
+      <!-- Upper-mid pair -->
+      <path d="M-9 -110 C-21 -114 -17 -98 -7 -102" fill="#ECC94B"/>
+      <path d="M-11 -110 C1 -114 -3 -98 -13 -102" fill="#F6AD55"/>
+
+      <!-- Top cluster -->
+      <path d="M-12 -125 C-22 -130 -18 -114 -8 -118" fill="#ECC94B"/>
+      <path d="M-12 -125 C-2 -130 -6 -114 -16 -118" fill="#F6AD55"/>
+      <circle cx="-12" cy="-130" r="3.5" fill="#D69E2E"/>
+    </g>
+
+    <!-- Main Center-Right Rice Stalk (Foreground - Even fuller yield) -->
+    <g transform="translate(8, 65) rotate(6)">
+      <!-- Stem -->
+      <path d="M0 0 C-2 -50 5 -90 12 -125" fill="none" stroke="#48BB78" stroke-width="4.5" stroke-linecap="round"/>
+      
+      <!-- Plump Golden Rice Kernels -->
+      <!-- Bottom pair -->
+      <path d="M2 -80 C14 -84 10 -68 0 -72" fill="#F6AD55"/>
+      <path d="M4 -80 C-8 -84 -4 -68 6 -72" fill="#ECC94B"/>
+      
+      <!-- Mid pair -->
+      <path d="M6 -95 C18 -99 14 -83 4 -87" fill="#F6AD55"/>
+      <path d="M8 -95 C-4 -99 0 -83 10 -87" fill="#ECC94B"/>
+      
+      <!-- Upper-mid pair -->
+      <path d="M9 -110 C21 -114 17 -98 7 -102" fill="#F6AD55"/>
+      <path d="M11 -110 C-1 -114 3 -98 13 -102" fill="#ECC94B"/>
+
+      <!-- Top cluster -->
+      <path d="M12 -125 C22 -130 18 -114 8 -118" fill="#F6AD55"/>
+      <path d="M12 -125 C2 -130 6 -114 16 -118" fill="#ECC94B"/>
+      <circle cx="12" cy="-130" r="3.5" fill="#D69E2E"/>
+    </g>
+  </g>
+
+  <!-- Upward Growth / Yield Increase Indicator (Sleek minimalist upward arrows integrated cleanly) -->
+  <g transform="translate(120, 38)">
+    <!-- Central Upward Arrow representing "Increase / 增" -->
+    <path d="M0 16 L0 -10 M-7 -3 L0 -10 L7 -3" fill="none" stroke="#F6AD55" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Outer flanking smaller arrows for emphasis on abundance -->
+    <path d="M-30 22 L-30 6 M-35 11 L-30 6 L-25 11" fill="none" stroke="#48BB78" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+    <path d="M30 22 L30 6 M25 11 L30 6 L35 11" fill="none" stroke="#48BB78" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+  </g>
+</svg>

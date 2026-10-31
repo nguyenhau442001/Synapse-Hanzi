@@ -1,0 +1,42 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for focus -->
+  <circle cx="120" cy="120" r="70" fill="#2D3340" opacity="0.4"/>
+
+  <!-- Physical Object: A stylized, modern medical/health badge integrated with a human silhouette, symbolizing "tiết thân" (closely bound, deeply personal, directly relevant to one's core well-being) -->
+  <g transform="translate(0, 0)">
+    <!-- Outer shield / physical badge frame representing direct connection -->
+    <path d="M120 45 C150 45, 175 60, 175 90 C175 135, 140 165, 120 195 C100 165, 65 135, 65 90 C65 60, 90 45, 120 45 Z" 
+          fill="#252A36" stroke="#3A4254" stroke-width="3" stroke-linejoin="round"/>
+          
+    <!-- Inner warm core representing "vital personal interest / life-blood" -->
+    <path d="M120 62 C142 62, 160 76, 160 98 C160 130, 133 153, 120 176 C107 153, 80 130, 80 98 C80 76, 98 62, 120 62 Z" 
+          fill="#FFA726" opacity="0.15"/>
+
+    <!-- Human profile / torso integrated directly at the center (representing individual life/citizen) -->
+    <!-- Head -->
+    <circle cx="120" cy="88" r="18" fill="#FFA726"/>
+    <!-- Shoulders / Torso -->
+    <path d="M88 142 C88 122, 102 116, 120 116 C138 116, 152 122, 152 142 L152 148 C152 151, 149 154, 146 154 L94 154 C91 154, 88 151, 88 148 Z" 
+          fill="#FFA726"/>
+
+    <!-- Medical cross / health welfare emblem seamlessly merged into the chest, reflecting the contextual reference (医疗卫生体制改革) -->
+    <rect x="113" y="126" width="14" height="30" rx="3" fill="#1A1D24"/>
+    <rect x="105" y="134" width="30" height="14" rx="3" fill="#1A1D24"/>
+
+    <!-- Direct connection indicators (arrows / close embrace brackets) -->
+    <!-- Left bracket -->
+    <path d="M54 90 L46 90 C42 90, 40 92, 40 96 L40 144 C40 148, 42 150, 46 150 L54 150" 
+          fill="none" stroke="#FF7043" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          
+    <!-- Right bracket -->
+    <path d="M186 90 L194 90 C198 90, 200 92, 200 96 L200 144 C200 148, 198 150, 194 150 L186 150" 
+          fill="none" stroke="#FF7043" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Focal highlight dots -->
+    <circle cx="40" cy="120" r="4" fill="#FF7043"/>
+    <circle cx="200" cy="120" r="4" fill="#FF7043"/>
+  </g>
+</svg>

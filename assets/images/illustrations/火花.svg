@@ -1,0 +1,47 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glowing background aura for the sparks -->
+  <circle cx="120" cy="115" r="70" fill="#FF7A00" opacity="0.08"/>
+  <circle cx="120" cy="115" r="45" fill="#FFB700" opacity="0.12"/>
+
+  <!-- Electric wires (Context: 火花从电线中迸发出来) -->
+  <!-- Left Wire -->
+  <path d="M 30,135 Q 75,135 105,122" fill="none" stroke="#64748B" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 30,135 Q 75,135 105,122" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Right Wire -->
+  <path d="M 135,122 Q 165,110 210,110" fill="none" stroke="#64748B" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 135,122 Q 165,110 210,110" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Exposed electric terminals / spark point -->
+  <circle cx="112" cy="120" r="4" fill="#38BDF8"/>
+  <circle cx="128" cy="122" r="4" fill="#38BDF8"/>
+
+  <!-- Tiny electrical arcs snapping across -->
+  <path d="M 112,120 L 118,114 L 122,126 L 128,122" fill="none" stroke="#38BDF8" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Sparks (Huǒhuā) - Dynamic geometric vector bursts -->
+  <!-- Upper Large Spark -->
+  <polygon points="120,55 124,78 135,70 128,85 145,88 128,95 132,112 120,100 108,112 112,95 95,88 112,85 105,70 116,78" fill="#FFB700"/>
+  <polygon points="120,65 122,79 130,73 125,86 138,88 126,93 129,106 120,96 111,106 114,93 102,88 115,86 110,73 118,79" fill="#FFFBEB"/>
+
+  <!-- Secondary Burst Sparks & Fragments -->
+  <path d="M 82,90 L 98,96" stroke="#FF7A00" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 152,85 L 140,94" stroke="#FF7A00" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 90,125 L 105,120" stroke="#FFB700" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 150,115 L 138,118" stroke="#FF7A00" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 120,40 L 120,52" stroke="#FF7A00" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 132,138 L 138,150" stroke="#FF7A00" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 105,142 L 110,132" stroke="#FFB700" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Floating Ember Dots -->
+  <circle cx="75" cy="75" r="3" fill="#FF7A00"/>
+  <circle cx="168" cy="70" r="2" fill="#FFB700"/>
+  <circle cx="160" cy="135" r="2.5" fill="#FF7A00"/>
+  <circle cx="85" cy="140" r="1.5" fill="#FFFBEB"/>
+  <circle cx="130" cy="35" r="2" fill="#FFFBEB"/>
+  <circle cx="100" cy="55" r="2.5" fill="#FFB700"/>
+  <circle cx="145" cy="60" r="1.5" fill="#FF7A00"/>
+</svg>

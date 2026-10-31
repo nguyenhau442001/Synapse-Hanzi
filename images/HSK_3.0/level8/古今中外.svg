@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative Globe / Spatial-Temporal Grid (representing "Zhong-Wai" / All places) -->
+  <circle cx="120" cy="120" r="76" fill="none" stroke="#2A303C" stroke-width="2"/>
+  <ellipse cx="120" cy="120" rx="76" ry="30" fill="none" stroke="#2A303C" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="120" y1="44" x2="120" y2="196" stroke="#2A303C" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <!-- Central Orbital Loop (representing "Gu-Jin" / All times) -->
+  <g transform="rotate(-25 120 120)">
+    <ellipse cx="120" cy="120" rx="84" ry="36" fill="none" stroke="#3A4252" stroke-width="2"/>
+  </g>
+
+  <!-- Ancient Pillar / Monument (Left icon representing Past / Gu 古) -->
+  <g transform="translate(68, 92)">
+    <!-- Base -->
+    <rect x="0" y="52" width="24" height="6" rx="1" fill="#FFB703"/>
+    <!-- Column body -->
+    <rect x="4" y="16" width="16" height="36" fill="#D7DADC"/>
+    <line x1="8" y1="16" x2="8" y2="52" stroke="#1A1D24" stroke-width="1.5"/>
+    <line x1="16" y1="16" x2="16" y2="52" stroke="#1A1D24" stroke-width="1.5"/>
+    <!-- Capital / Scroll top -->
+    <path d="M2 12C2 10.3431 3.34315 9 5 9H19C20.6569 9 22 10.3431 22 12V16H2V12Z" fill="#FFB703"/>
+    <path d="M4 6C4 4.89543 4.89543 4 6 4H18C19.1046 4 20 4.89543 20 6V9H4V6Z" fill="#D7DADC"/>
+  </g>
+
+  <!-- Modern Tower / Skyline (Right icon representing Present/Future / Jin 今) -->
+  <g transform="translate(148, 76)">
+    <!-- Base platform -->
+    <rect x="-4" y="66" width="32" height="6" rx="1" fill="#FFB703"/>
+    <!-- Sleek skyscraper body -->
+    <path d="M8 8L20 22V66H4V22L8 8Z" fill="#D7DADC"/>
+    <!-- Windows / Details -->
+    <line x1="12" y1="16" x2="12" y2="60" stroke="#1A1D24" stroke-width="1.5"/>
+    <line x1="7" y1="30" x2="17" y2="30" stroke="#1A1D24" stroke-width="1"/>
+    <line x1="7" y1="42" x2="17" y2="42" stroke="#1A1D24" stroke-width="1"/>
+    <line x1="7" y1="54" x2="17" y2="54" stroke="#1A1D24" stroke-width="1"/>
+    <!-- Spire / Antenna -->
+    <line x1="12" y1="8" x2="12" y2="1" stroke="#FFB703" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Compass / Navigation Pin (Center top representing Everywhere / Zhong-Wai 中外) -->
+  <g transform="translate(120, 38)">
+    <circle cx="0" cy="0" r="10" fill="#FFB703"/>
+    <circle cx="0" cy="0" r="5" fill="#1A1D24"/>
+    <path d="M0 -14L4 -22L0 -20L-4 -22L0 -14Z" fill="#FFB703"/>
+  </g>
+
+  <!-- Connecting Horizon Arc (Unified All-Encompassing Concept) -->
+  <path d="M 40 160 Q 120 195 200 160" fill="none" stroke="#FFB703" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 6"/>
+
+</svg>

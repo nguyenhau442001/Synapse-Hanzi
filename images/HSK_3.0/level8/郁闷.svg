@@ -1,0 +1,42 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient background mood (heavy, oppressive atmosphere) -->
+  <path d="M40 70 C80 50, 160 50, 200 70" stroke="#252A34" stroke-width="40" stroke-linecap="round" fill="none" opacity="0.4"/>
+  
+  <!-- External pressure/gloomy cloud element representing the heavy heart context -->
+  <path d="M70 75 Q90 60 120 70 Q150 60 170 75 Q190 90 170 105 Q150 120 120 105 Q90 120 70 105 Q50 90 70 75 Z" fill="#2A303C" opacity="0.8"/>
+  
+  <!-- Downward stifling vectors (representing suppressed frustration "bực bội trong lòng") -->
+  <path d="M110 85 L110 100 M120 82 L120 103 M130 85 L130 100" stroke="#3A4454" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Character / Bust representing the person feeling "郁闷" -->
+  <!-- Shoulders and Body -->
+  <path d="M75 195 C75 165, 95 150, 120 150 C145 150, 165 165, 165 195 Z" fill="#2C3340"/>
+  
+  <!-- Head (slumped posture/tilted slightly forward) -->
+  <circle cx="120" cy="115" r="28" fill="#3E4756"/>
+  
+  <!-- Hair (Messy, flat style) -->
+  <path d="M93 115 C92 98, 105 87, 120 87 C135 87, 148 98, 147 115 Z" fill="#242933"/>
+
+  <!-- Downcast Face Features (adjective contrast: heavy, closed off, muted expression) -->
+  <!-- Heavy closed eyes / furrowed brow -->
+  <path d="M106 114 L114 117" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M126 117 L134 114" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Slight flat/frown mouth -->
+  <path d="M113 131 C117 129, 123 129, 127 131" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Focal Point: Exaggerated scale of heavy swirling gloom directly inside the chest area (buồn bực trong lòng) -->
+  <circle cx="120" cy="168" r="18" fill="#15181E"/>
+  
+  <!-- Vibrant high-contrast accent to show internal turmoil/frustration against dark mode -->
+  <path d="M112 163 C115 158, 125 158, 128 163 C131 168, 125 174, 120 176 C115 174, 109 168, 112 163 Z" fill="#F59E0B" opacity="0.9"/>
+  <circle cx="120" cy="167" r="4" fill="#1A1D24"/>
+  
+  <!-- Swirling tension lines emanating from the chest core -->
+  <path d="M100 160 Q110 150 120 155" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M140 160 Q130 150 120 155" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+</svg>

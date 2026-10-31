@@ -1,0 +1,67 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambient Glow for Focus -->
+  <circle cx="120" cy="130" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Dumpling Plate -->
+  <!-- Plate shadow -->
+  <ellipse cx="120" cy="182" rx="75" ry="16" fill="#111317"/>
+  <!-- Plate base -->
+  <ellipse cx="120" cy="178" rx="70" ry="14" fill="#E2E8F0"/>
+  <!-- Plate inner rim -->
+  <ellipse cx="120" cy="176" rx="58" ry="10" fill="#F8FAFC"/>
+
+  <!-- Dumplings (Jiaozi) on the plate -->
+  <!-- Dumpling 1 (Back left) -->
+  <path d="M75 168 C70 152, 85 142, 98 152 C108 160, 112 172, 105 174 C90 178, 80 178, 75 168 Z" fill="#F1F5F9"/>
+  <!-- Pleats 1 -->
+  <path d="M85 150 C88 154, 91 157, 95 160" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Dumpling 2 (Back right) -->
+  <path d="M140 168 C135 150, 155 142, 168 152 C178 160, 172 174, 160 175 C148 176, 142 174, 140 168 Z" fill="#F1F5F9"/>
+  <!-- Pleats 2 -->
+  <path d="M152 150 C155 154, 158 157, 163 160" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Dumpling 3 (Front center) -->
+  <path d="M95 174 C90 155, 115 142, 132 155 C145 165, 138 180, 120 181 C105 182, 98 180, 95 174 Z" fill="#FFFFFF"/>
+  <!-- Pleats 3 -->
+  <path d="M110 153 C113 158, 117 162, 122 166" stroke="#CBD5E1" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Small Dipping Sauce Dish (Xiaodie) -->
+  <!-- Dish shadow -->
+  <ellipse cx="120" cy="102" rx="42" ry="12" fill="#111317"/>
+  <!-- Dish rim -->
+  <ellipse cx="120" cy="98" rx="38" ry="10" fill="#E2E8F0"/>
+  <!-- Dish inner base -->
+  <ellipse cx="120" cy="96" rx="30" ry="7" fill="#CBD5E1"/>
+
+  <!-- Sauce pool -->
+  <ellipse cx="120" cy="96" rx="27" ry="5" fill="#78350F"/>
+  <!-- Chili oil speck in sauce -->
+  <circle cx="112" cy="95" r="2" fill="#EF4444"/>
+  <circle cx="128" cy="97" r="1.5" fill="#EF4444"/>
+  <circle cx="120" cy="94" r="1" fill="#F59E0B"/>
+
+  <!-- Chopsticks and the Act of Dipping ("Zhàn") -->
+  <!-- Chopstick 1 -->
+  <line x1="50" y1="30" x2="108" y2="82" stroke="#B45309" stroke-width="4" stroke-linecap="round"/>
+  <!-- Chopstick 2 -->
+  <line x1="62" y1="20" x2="112" y2="80" stroke="#D97706" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Held Dumpling being dipped into the sauce -->
+  <g transform="translate(95, 62) rotate(-25)">
+    <!-- Dumpling body -->
+    <path d="M10 20 C5 2, 30 -5, 45 10 C58 22, 45 38, 28 37 C15 36, 12 30, 10 20 Z" fill="#FFFFFF"/>
+    <!-- Pleats -->
+    <path d="M25 5 C28 10, 32 14, 38 18" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Sauce dripping / touching effect (The core meaning of 蘸) -->
+    <path d="M22 37 C22 42, 26 46, 28 48 C30 46, 34 42, 34 37" fill="#78350F"/>
+    <ellipse cx="28" cy="49" rx="1.5" ry="2" fill="#78350F"/>
+  </g>
+
+  <!-- Focus Accent Rings (modern educational flat UI touch) -->
+  <circle cx="120" cy="96" r="34" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.8"/>
+</svg>

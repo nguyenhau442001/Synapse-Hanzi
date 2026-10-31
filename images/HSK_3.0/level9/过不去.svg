@@ -1,0 +1,48 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Motion lines indicating frustration / blocking action -->
+  <path d="M 60 80 Q 90 60 120 80" stroke="#FF5722" stroke-width="2" stroke-dasharray="4,4" fill="none" opacity="0.6"/>
+  <path d="M 180 80 Q 150 60 120 80" stroke="#FF5722" stroke-width="2" stroke-dasharray="4,4" fill="none" opacity="0.6"/>
+
+  <!-- Character representing internal conflict / making things hard for oneself and others (过不去) -->
+  <g transform="translate(0, 10)">
+    <!-- Head -->
+    <circle cx="120" cy="75" r="18" fill="#FFB74D"/>
+    <!-- Worried / Tense Face Details -->
+    <path d="M 112 70 Q 120 66 128 70" stroke="#263238" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <circle cx="115" cy="76" r="2" fill="#263238"/>
+    <circle cx="125" cy="76" r="2" fill="#263238"/>
+    <path d="M 116 86 Q 120 82 124 86" stroke="#263238" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Torso / Upper Body -->
+    <path d="M 95 130 C 95 105, 145 105, 145 130 Z" fill="#37474F"/>
+    
+    <!-- Tangled / Blocked Arms (Action of "making it difficult" / twisting oneself into a knot) -->
+    <!-- Left Arm crossing tightly over chest -->
+    <path d="M 100 115 L 140 135" stroke="#FFB74D" stroke-width="8" stroke-linecap="round"/>
+    <!-- Right Arm crossing over the other -->
+    <path d="M 140 115 L 100 135" stroke="#FFB74D" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Hands clenching / creating an impasse (Obstacle concept) -->
+    <circle cx="140" cy="135" r="5" fill="#FFA726"/>
+    <circle cx="100" cy="135" r="5" fill="#FFA726"/>
+
+    <!-- Lower Body / Sitting or tense stance -->
+    <path d="M 105 130 L 105 165" stroke="#37474F" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 135 130 L 135 165" stroke="#37474F" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <!-- Obstacle / Barrier symbols (representing the self-imposed difficulty / nitpicking over trivial matters) -->
+  <g transform="translate(120, 175)">
+    <!-- Small trivial obstacles/knots at the base -->
+    <circle cx="-40" cy="15" r="6" fill="#CFD8DC" opacity="0.3"/>
+    <path d="M -45 10 L -35 20 M -35 10 L -45 20" stroke="#FF5722" stroke-width="2" stroke-linecap="round"/>
+
+    <circle cx="40" cy="15" r="6" fill="#CFD8DC" opacity="0.3"/>
+    <path d="M 35 10 L 45 20 M 45 10 L 35 20" stroke="#FF5722" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Accent glow / Focus on the tension point -->
+  <circle cx="120" cy="125" r="25" stroke="#FF5722" stroke-width="2" fill="none" opacity="0.4" stroke-dasharray="6,6"/>
+</svg>
