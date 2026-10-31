@@ -117,7 +117,7 @@ function renderTodayReviewCard() {
           <div class="today-card-flip-cue" id="todayFlipCue">
             <button type="button" class="today-flip-btn" onclick="revealTodayReview(); event.stopPropagation();" aria-label="Lật thẻ xem đáp án">
               <svg class="flip-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 12 4-4v3h11a2 2 0 0 1 2 2v2"/><path d="m21 12-4 4v-3H6a2 2 0 0 1-2-2v-2"/></svg>
-              <span class="flip-label">Chạm thẻ hoặc nhấn <kbd>Space</kbd> để lật</span>
+              <span class="flip-label">Chạm thẻ <span class="today-shortcut-inline">hoặc nhấn <kbd>Space</kbd> </span>để lật</span>
             </button>
           </div>
 

@@ -529,6 +529,19 @@ class TestTodayReviewZenMode(unittest.TestCase):
         self.assertIn(".today-btn-reveal", self.flashcard_css)
         self.assertIn(".today-review-celebration-card", self.flashcard_css)
 
+    def test_mobile_hides_today_review_shortcut_and_arrow_indicators(self):
+        """Today review mobile and touch styles must hide desktop shortcut numbers and arrows."""
+        self.assertRegex(
+            self.flashcard_css,
+            r"\.today-rating-sub\s*\{[^}]*display:\s*none\s*!important",
+            "today-rating-sub (containing arrows and numbers 1/2) must be hidden on mobile",
+        )
+        self.assertRegex(
+            self.flashcard_css,
+            r"\.today-review-footer-bar\s*\{[^}]*display:\s*none\s*!important",
+            "today-review-footer-bar must be hidden on mobile",
+        )
+
 
 class TestFlashcardIllustrationIntegration(unittest.TestCase):
     """Test Flashcard SVG illustration integration, responsive sizing, contrast, and toggle preferences."""

@@ -1185,6 +1185,14 @@ body.is-game-view .featured-topics {
   }
 }
 
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+  .guess-word-hints-footer,
+  .speed-quiz-hints-footer,
+  .btn-kbd-hint {
+    display: none !important;
+  }
+}
+
 /* ==========================================================================
    SPEED-QUIZ GAME: Modern High-Pacing Tactile Architecture
    ========================================================================== */

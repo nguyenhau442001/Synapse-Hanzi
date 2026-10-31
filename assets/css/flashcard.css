@@ -1618,15 +1618,51 @@
     min-height: 52px;
     padding: 8px 10px;
     gap: 8px;
+    justify-content: center;
+  }
+  .today-rating-body {
+    align-items: center;
+    text-align: center;
   }
   .today-rating-main {
-    font-size: 0.95rem;
+    font-size: 0.98rem;
+    white-space: nowrap;
   }
+  /* Hide desktop shortcut numbers and arrow indicators on mobile */
   .today-rating-sub {
-    font-size: 0.72rem;
+    display: none !important;
+  }
+  .today-key-hint {
+    display: none !important;
+  }
+  .today-shortcut-inline {
+    display: none !important;
   }
   .today-review-footer-bar {
-    display: none;
+    display: none !important;
+  }
+}
+
+/* Touch devices & tablet viewports: suppress desktop keyboard shortcut hints */
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+  .today-rating-sub {
+    display: none !important;
+  }
+  .today-key-hint {
+    display: none !important;
+  }
+  .today-shortcut-inline {
+    display: none !important;
+  }
+  .today-review-footer-bar {
+    display: none !important;
+  }
+  .today-rating-body {
+    align-items: center;
+    text-align: center;
+  }
+  .today-rating-btn {
+    justify-content: center;
   }
 }
 .memory-curve-overlay { position: fixed; z-index: 3000; inset: 0; display: grid; place-items: center; padding: 16px; background: rgb(0 0 0 / 55%); }
