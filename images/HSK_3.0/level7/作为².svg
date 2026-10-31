@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle background glow for focus -->
+  <circle cx="120" cy="115" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Conceptual illustration: "作为" (Capacity, Achievement, Role/Status) -->
+  <!-- Represented by a professional figure (Teacher/Role) stepping forward onto a pedestal of achievement, holding a book/knowledge, embodying status and accomplishment. -->
+  <g transform="translate(0, 5)">
+    <!-- Pedestal / Foundation representing accomplishment/status -->
+    <path d="M70 170 L170 170 L155 185 L85 185 Z" fill="#3A4252"/>
+    <rect x="60" y="185" width="120" height="8" rx="4" fill="#F5A623"/>
+
+    <!-- Teacher / Professional Character Body -->
+    <!-- Torso (Suit jacket / Professional attire) -->
+    <path d="M100 135 L120 115 L140 135 L145 170 L95 170 Z" fill="#2E5BFF"/>
+    <!-- Lapels -->
+    <path d="M120 115 L112 145 L120 145 Z" fill="#1E3FA9"/>
+    <path d="M120 115 L128 145 L120 145 Z" fill="#1E3FA9"/>
+    <path d="M116 145 L124 145 L122 170 L118 170 Z" fill="#FFFFFF"/> <!-- Shirt & tie -->
+
+    <!-- Head & Hair -->
+    <circle cx="120" cy="85" r="18" fill="#FFD166"/>
+    <!-- Hair style -->
+    <path d="M102 85 C102 72, 138 72, 138 85 C138 82, 135 70, 120 70 C105 70, 102 82, 102 85 Z" fill="#4A3B32"/>
+
+    <!-- Arms & Gestures -->
+    <!-- Left arm holding a book -->
+    <path d="M100 130 Q85 140 90 155" stroke="#2E5BFF" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <!-- Right arm gesturing forward (confident authority / responsibility) -->
+    <path d="M140 130 Q155 135 150 150" stroke="#2E5BFF" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <circle cx="150" cy="152" r="5" fill="#FFD166"/>
+
+    <!-- Book of Knowledge (representing role & expertise) -->
+    <path d="M78 145 L95 135 L95 155 L78 165 Z" fill="#FFFFFF"/>
+    <path d="M95 135 L112 145 L112 165 L95 155 Z" fill="#E2E8F0"/>
+    <line x1="95" y1="135" x2="95" y2="155" stroke="#CBD5E1" stroke-width="2"/>
+
+    <!-- Achievement / Status Star Element floating gently above -->
+    <g transform="translate(120, 38) scale(0.9)">
+      <polygon points="0,-12 3.5,-3 12,-2.5 5.5,3.5 7.5,12 0,7.5 -7.5,12 -5.5,3.5 -12,-2.5 -3.5,-3" fill="#F5A623"/>
+    </g>
+    
+    <!-- Supporting secondary small stars representing capability/accomplishment -->
+    <polygon points="75,55 81,68 95,70 85,80 88,94 75,87 62,94 65,80 55,70 69,68" fill="#F5A623" opacity="0.4" transform="scale(0.5) translate(60, 40)"/>
+    <polygon points="75,55 81,68 95,70 85,80 88,94 75,87 62,94 65,80 55,70 69,68" fill="#F5A623" opacity="0.4" transform="scale(0.4) translate(305, 50)"/>
+  </g>
+</svg>

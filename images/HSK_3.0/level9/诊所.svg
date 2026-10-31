@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Building Structure -->
+  <path d="M70 180h100v-70l-50-30-50 30v70z" fill="#2C3440" stroke="#FFB347" stroke-width="2"/>
+  
+  <!-- Roof -->
+  <path d="M65 110l55-35 55 35" fill="none" stroke="#FFB347" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Medical Cross Symbol -->
+  <rect x="110" y="115" width="20" height="20" rx="2" fill="#FFB347"/>
+  <rect x="117" y="118" width="6" height="14" fill="#1A1D24"/>
+  <rect x="113" y="122" width="14" height="6" fill="#1A1D24"/>
+  
+  <!-- Door -->
+  <rect x="105" y="145" width="30" height="35" rx="4" fill="#1A1D24" stroke="#FFB347" stroke-width="2"/>
+  
+  <!-- Window -->
+  <rect x="80" y="120" width="15" height="15" rx="2" fill="#2C3440" stroke="#FFB347" stroke-width="1"/>
+  <rect x="145" y="120" width="15" height="15" rx="2" fill="#2C3440" stroke="#FFB347" stroke-width="1"/>
+  
+  <!-- Ground/Sidewalk -->
+  <path d="M50 180h140" stroke="#FFB347" stroke-width="4" stroke-linecap="round"/>
+</svg>

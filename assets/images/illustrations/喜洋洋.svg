@@ -1,0 +1,78 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background festive confetti & musical notes for 'rộn ràng niềm vui' -->
+  <g opacity="0.6">
+    <circle cx="55" cy="65" r="3" fill="#FFB74D"/>
+    <circle cx="185" cy="75" r="2.5" fill="#FF7043"/>
+    <circle cx="75" cy="180" r="2" fill="#FFD54F"/>
+    <circle cx="170" cy="165" r="3" fill="#FFB74D"/>
+    <path d="M195 110 L200 100 L205 110 Z" fill="#FF7043" transform="rotate(25 200 105)"/>
+    <path d="M40 120 L45 112 L50 120 Z" fill="#FFD54F" transform="rotate(-15 45 116)"/>
+    <path d="M90 45 Q95 38 100 45" stroke="#FFB74D" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M145 195 Q150 188 155 195" stroke="#FF7043" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Traditional festive suona/horn silhouette in background -->
+  <g transform="translate(120, 115) rotate(-30)" opacity="0.2">
+    <path d="M-60 -15 L20 -5 L20 5 L-60 15 Z" fill="#FFD54F"/>
+    <path d="M20 -12 C35 -15 50 -8 60 0 C50 8 35 15 20 12 Z" fill="#FFD54F"/>
+    <circle cx="-65" cy="0" r="8" fill="#FFA726"/>
+  </g>
+  <g transform="translate(120, 115) rotate(210)" opacity="0.2">
+    <path d="M-60 -15 L20 -5 L20 5 L-60 15 Z" fill="#FFD54F"/>
+    <path d="M20 -12 C35 -15 50 -8 60 0 C50 8 35 15 20 12 Z" fill="#FFD54F"/>
+    <circle cx="-65" cy="0" r="8" fill="#FFA726"/>
+  </g>
+
+  <!-- Central Character (Noun): Joyful, beaming person embodying 'hớn hở tươi vui' -->
+  <g id="joyful-character">
+    <!-- Torso / Festive Attire (Modern flat design) -->
+    <path d="M90 190 C90 165 102 155 120 155 C138 155 150 165 150 190 Z" fill="#D32F2F"/>
+    <!-- Collar / Inner layer -->
+    <path d="M106 155 L120 170 L134 155 Z" fill="#FFD54F"/>
+    
+    <!-- Neck -->
+    <rect x="112" y="138" width="16" height="22" rx="6" fill="#FFCCBC"/>
+
+    <!-- Head -->
+    <circle cx="120" cy="115" r="32" fill="#FFCCBC"/>
+
+    <!-- Hair -->
+    <path d="M88 110 C88 88 100 80 120 80 C140 80 152 88 152 110 C152 118 150 125 150 125 C150 125 142 112 120 112 C98 112 90 125 90 125 C90 125 88 118 88 110 Z" fill="#263238"/>
+
+    <!-- Joyful Expression: Radiant smiling face -->
+    <!-- Eyes: Happy crescent/closed arches -->
+    <path d="M103 112 Q108 106 113 112" stroke="#263238" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M127 112 Q132 106 137 112" stroke="#263238" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Rosy Cheeks -->
+    <circle cx="101" cy="122" r="6" fill="#FF8A80" opacity="0.6"/>
+    <circle cx="139" cy="122" r="6" fill="#FF8A80" opacity="0.6"/>
+
+    <!-- Wide beaming open smile -->
+    <path d="M108 123 C108 136 132 136 132 123 Z" fill="#D32F2F"/>
+    <path d="M113 125 C113 131 127 131 127 125 Z" fill="#FF8A80"/>
+
+    <!-- Dynamic Gestures (Arms raised in jubilation / 喜洋洋 vibe) -->
+    <!-- Left arm -->
+    <path d="M95 160 Q75 145 65 125" stroke="#D32F2F" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <circle cx="61" cy="120" r="8" fill="#FFCCBC"/>
+
+    <!-- Right arm -->
+    <path d="M145 160 Q165 145 175 125" stroke="#D32F2F" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <circle cx="179" cy="120" r="8" fill="#FFCCBC"/>
+  </g>
+
+  <!-- Festive Golden Elements & Joy Sparks framing the character -->
+  <g fill="#FFD54F">
+    <!-- Top center star/sparkle -->
+    <path d="M120 40 L123 50 L133 53 L123 56 L120 66 L117 56 L107 53 L117 50 Z"/>
+    
+    <!-- Left upper sparkle -->
+    <path d="M70 70 L72 76 L78 78 L72 80 L70 86 L68 80 L62 78 L68 76 Z" transform="scale(0.8) translate(15, 0)"/>
+
+    <!-- Right upper sparkle -->
+    <path d="M170 70 L172 76 L178 78 L172 80 L170 86 L168 80 L162 78 L168 76 Z" transform="scale(0.8) translate(30, 0)"/>
+  </g>
+</svg>

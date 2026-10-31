@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Conveyor Belt Mechanism -->
+  <rect x="40" y="140" width="160" height="20" rx="4" fill="#374151"/>
+  <circle cx="55" cy="150" r="8" fill="#4B5563"/>
+  <circle cx="185" cy="150" r="8" fill="#4B5563"/>
+  
+  <!-- Package on Conveyor -->
+  <rect x="100" y="100" width="40" height="40" rx="4" fill="#F59E0B"/>
+  <path d="M100 110h40M110 100v40M130 100v40" stroke="#B45309" stroke-width="2"/>
+  
+  <!-- Automated Sorting Arm -->
+  <path d="M150 100 L150 70 L180 70" stroke="#D1D5DB" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="150" cy="100" r="6" fill="#D1D5DB"/>
+  
+  <!-- Background Logistics Path (Simplified) -->
+  <path d="M20 180 L220 180" stroke="#374151" stroke-width="2" stroke-dasharray="8 8"/>
+  <path d="M20 180 Q120 160 220 180" stroke="#F59E0B" stroke-width="3" fill="none"/>
+  
+  <!-- Delivery Truck Silhouette -->
+  <path d="M30 190 L60 190 L60 210 L30 210 Z" fill="#9CA3AF"/>
+  <circle cx="38" cy="215" r="5" fill="#4B5563"/>
+  <circle cx="52" cy="215" r="5" fill="#4B5563"/>
+</svg>

@@ -1,0 +1,76 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Tent Interior / Command Center Elements -->
+  <g opacity="0.3">
+    <!-- Tent structural poles/fabric background -->
+    <path d="M120 20 L220 180 L20 180 Z" fill="#242933"/>
+    <path d="M120 20 L120 180" stroke="#2F3642" stroke-width="2" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Hanging Tent Curtains (帷幄 - Wéiwò) -->
+  <g>
+    <!-- Left Curtain -->
+    <path d="M0 40 Q40 90 20 180 L0 180 Z" fill="#2E384D"/>
+    <path d="M0 60 Q30 110 15 180" stroke="#3E4C66" stroke-width="2" fill="none"/>
+    <path d="M0 90 Q20 130 10 180" stroke="#3E4C66" stroke-width="1.5" fill="none"/>
+    
+    <!-- Right Curtain -->
+    <path d="M240 40 Q200 90 220 180 L240 180 Z" fill="#2E384D"/>
+    <path d="M240 60 Q210 110 225 180" stroke="#3E4C66" stroke-width="2" fill="none"/>
+    <path d="M240 90 Q220 130 230 180" stroke="#3E4C66" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Strategic Command Table (The focal platform) -->
+  <g>
+    <!-- Table Base / Stand -->
+    <path d="M80 165 L160 165 L175 190 L65 190 Z" fill="#222733"/>
+    <!-- Tabletop (Oval/Perspective) -->
+    <ellipse cx="120" cy="155" rx="65" ry="18" fill="#323B4D"/>
+    <ellipse cx="120" cy="152" rx="60" ry="15" fill="#3D4A61"/>
+  </g>
+
+  <!-- Tactical Map & Miniatures (运筹 - Yùnchóu) -->
+  <g>
+    <!-- Map Surface Details -->
+    <path d="M80 150 Q100 145 120 152 Q140 158 160 148" stroke="#4E5D78" stroke-width="1.5" fill="none"/>
+    
+    <!-- Strategic Miniatures (Tokens/Chess-like markers representing troops) -->
+    <!-- Allied Gold Markers -->
+    <circle cx="95" cy="148" r="4" fill="#F59E0B"/>
+    <circle cx="110" cy="142" r="5" fill="#F59E0B"/>
+    <path d="M110 132 L110 142" stroke="#F59E0B" stroke-width="2"/> <!-- Indicator pin -->
+    
+    <!-- Enemy Red Markers -->
+    <circle cx="145" cy="158" r="4" fill="#EF4444"/>
+    <circle cx="155" cy="150" r="4" fill="#EF4444"/>
+  </g>
+
+  <!-- Central Character (Commander leaning over the table) -->
+  <g>
+    <!-- Commander Torso & Robes (traditional silhouette styled modern flat) -->
+    <path d="M90 140 Q120 110 150 140 L165 185 L75 185 Z" fill="#1E293B"/>
+    <!-- Armor / Shoulder Guards -->
+    <path d="M90 135 Q120 120 150 135 L155 145 Q120 130 85 145 Z" fill="#3B82F6"/>
+
+    <!-- Head & Helm -->
+    <circle cx="120" cy="100" r="16" fill="#CBD5E1"/>
+    <!-- Traditional Commander Helmet -->
+    <path d="M104 96 Q120 75 136 96 L130 92 L120 85 L110 92 Z" fill="#F59E0B"/>
+    <!-- Helmet Tassel -->
+    <path d="M120 85 Q130 70 125 60" stroke="#EF4444" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Focused Arms / Hands over the map -->
+    <path d="M90 135 L105 148" stroke="#1E293B" stroke-width="8" stroke-linecap="round"/>
+    <path d="M150 135 L135 148" stroke="#1E293B" stroke-width="8" stroke-linecap="round"/>
+    <!-- Hands -->
+    <circle cx="107" cy="150" r="4" fill="#CBD5E1"/>
+    <circle cx="133" cy="150" r="4" fill="#CBD5E1"/>
+  </g>
+
+  <!-- Strategic Vision / Glow Indicator (Golden Accent) -->
+  <g>
+    <circle cx="120" cy="142" r="22" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="3 3" fill="none" opacity="0.6"/>
+  </g>
+</svg>

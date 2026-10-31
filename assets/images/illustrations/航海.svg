@@ -1,0 +1,32 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ocean Waves -->
+  <path d="M0 180 Q 60 160, 120 180 T 240 180 V 240 H 0 Z" fill="#2C3E50"/>
+  <path d="M0 195 Q 60 175, 120 195 T 240 195 V 240 H 0 Z" fill="#34495E"/>
+  
+  <!-- Ship (Zheng He style junk ship silhouette) -->
+  <g transform="translate(60, 100)">
+    <!-- Hull -->
+    <path d="M20 70 L 100 70 L 110 90 L 10 90 Z" fill="#D35400"/>
+    <!-- Mast -->
+    <rect x="55" y="20" width="4" height="50" fill="#E67E22"/>
+    <!-- Sail -->
+    <path d="M57 25 L 95 35 L 95 60 L 57 65 Z" fill="#F39C12"/>
+    <!-- Motion Lines -->
+    <path d="M-10 75 L -30 70" stroke="#F39C12" stroke-width="2" stroke-linecap="round"/>
+    <path d="M-15 85 L -35 80" stroke="#F39C12" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Navigator Character (Simplified) -->
+  <g transform="translate(140, 110)">
+    <circle cx="10" cy="10" r="8" fill="#F1C40F"/>
+    <path d="M10 18 L 10 35 M10 25 L 2 20 M10 25 L 18 20 M10 35 L 5 50 M10 35 L 15 50" stroke="#F1C40F" stroke-width="4" stroke-linecap="round"/>
+    <!-- Pointing Gesture -->
+    <path d="M10 25 L 25 20" stroke="#F1C40F" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Compass/Navigation accent -->
+  <circle cx="200" cy="40" r="20" fill="none" stroke="#F39C12" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M200 25 L 200 55 M185 40 L 215 40" stroke="#F39C12" stroke-width="2"/>
+</svg>

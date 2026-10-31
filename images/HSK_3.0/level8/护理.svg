@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Subtle Glow for Focus -->
+  <circle cx="120" cy="120" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Medical Cross Accent (Subtle backdrop) -->
+  <g transform="translate(120, 120)">
+    <rect x="-35" y="-12" width="70" height="24" rx="4" fill="#2E3648"/>
+    <rect x="-12" y="-35" width="24" height="70" rx="4" fill="#2E3648"/>
+  </g>
+
+  <!-- Central Physical Object: Professional Nursing Care Interaction -->
+  <g id="nursing-care-icon">
+    <!-- Patient Bed / Cushion Element -->
+    <path d="M 60 160 C 60 150, 180 150, 180 160 L 190 185 C 190 190, 185 195, 180 195 L 60 195 C 55 195, 50 190, 50 185 Z" fill="#2D3748"/>
+    <path d="M 70 145 Q 120 135 170 145 L 175 160 Q 120 150 65 160 Z" fill="#4A5568"/>
+
+    <!-- Caregiver / Nurse Arm & Hands (Gentle, professional support) -->
+    <!-- Supporting Hand (Left) -->
+    <path d="M 85 155 Q 95 130 115 125 Q 110 140 100 155 Z" fill="#F6AD55"/>
+    <circle cx="112" cy="124" r="5" fill="#DD6B20"/>
+
+    <!-- Patient Hand / Cared-for Arm (Right, resting safely) -->
+    <path d="M 155 155 Q 140 130 125 128 Q 130 140 140 155 Z" fill="#CBD5E0"/>
+    <circle cx="127" cy="128" r="4" fill="#A0AEC0"/>
+
+    <!-- Medical Care Symbol / Clipboard with cross -->
+    <g transform="translate(120, 75)">
+      <!-- Clipboard Back -->
+      <rect x="-22" y="-28" width="44" height="56" rx="6" fill="#EDF2F7"/>
+      <!-- Clip at top -->
+      <rect x="-10" y="-34" width="20" height="8" rx="3" fill="#F6AD55"/>
+      <!-- Paper lines -->
+      <line x1="-14" y1="-14" x2="10" y2="-14" stroke="#CBD5E0" stroke-width="3" stroke-linecap="round"/>
+      <line x1="-14" y1="-2" x2="14" y2="-2" stroke="#CBD5E0" stroke-width="3" stroke-linecap="round"/>
+      <line x1="-14" y1="10" x2="4" y2="10" stroke="#CBD5E0" stroke-width="3" stroke-linecap="round"/>
+      <!-- Medical cross on clipboard -->
+      <g transform="translate(6, 12) scale(0.45)">
+        <rect x="-10" y="-3" width="20" height="6" fill="#319795"/>
+        <rect x="-3" y="-10" width="6" height="20" fill="#319795"/>
+      </g>
+    </g>
+
+    <!-- Caring Touch / Supportive Warmth Glow -->
+    <path d="M 105 115 Q 120 105 135 115" fill="none" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  </g>
+</svg>

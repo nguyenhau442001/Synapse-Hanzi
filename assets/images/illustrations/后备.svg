@@ -1,0 +1,62 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background stadium lighting grid/glow -->
+  <path d="M60 40 L180 40" stroke="#2A303C" stroke-width="2" stroke-dasharray="4 4"/>
+  <circle cx="120" cy="40" r="60" fill="#2E384D" opacity="0.3"/>
+
+  <!-- Main iconic physical representation: A sequence/pyramid of athlete figures representing "talent pipeline/reserve force" (后备力量) -->
+  <!-- Base layer: youth/reserve silhouettes waiting in stance -->
+  <g transform="translate(0, 15)">
+    <!-- Left backup athlete (smaller, representing youth reserve) -->
+    <g transform="translate(65, 115)">
+      <!-- Body/Torso -->
+      <path d="M15 45 L25 25 L35 45 Z" fill="#4B5563"/>
+      <!-- Head -->
+      <circle cx="25" cy="16" r="6" fill="#6B7280"/>
+      <!-- Running limbs / dynamic posture -->
+      <path d="M25 25 L12 35 M25 25 L38 35" stroke="#4B5563" stroke-width="4" stroke-linecap="round"/>
+      <path d="M25 45 L18 65 M25 45 L32 60" stroke="#4B5563" stroke-width="4" stroke-linecap="round"/>
+    </g>
+
+    <!-- Right backup athlete -->
+    <g transform="translate(135, 115)">
+      <!-- Body/Torso -->
+      <path d="M15 45 L25 25 L35 45 Z" fill="#4B5563"/>
+      <!-- Head -->
+      <circle cx="25" cy="16" r="6" fill="#6B7280"/>
+      <!-- Running limbs / dynamic posture -->
+      <path d="M25 25 L12 35 M25 25 L38 35" stroke="#4B5563" stroke-width="4" stroke-linecap="round"/>
+      <path d="M25 45 L18 60 M25 45 L32 65" stroke="#4B5563" stroke-width="4" stroke-linecap="round"/>
+    </g>
+
+    <!-- Connecting arrow/path upwards representing pipeline / stepping up -->
+    <path d="M85 110 Q120 85 105 70" fill="none" stroke="#F59E0B" stroke-width="3" stroke-dasharray="5 3" opacity="0.6"/>
+    <path d="M155 110 Q120 85 135 70" fill="none" stroke="#F59E0B" stroke-width="3" stroke-dasharray="5 3" opacity="0.6"/>
+
+    <!-- Central main elite athlete (representing the primary/promoted force or active team) -->
+    <g transform="translate(95, 75)">
+      <!-- Glowing aura ring for focus -->
+      <circle cx="25" cy="30" r="28" fill="#F59E0B" opacity="0.15"/>
+      <!-- Torso with prominent high-contrast gear -->
+      <path d="M13 45 L25 20 L37 45 Z" fill="#F59E0B"/>
+      <!-- Head -->
+      <circle cx="25" cy="10" r="7" fill="#FBBF24"/>
+      <!-- Dynamic arms -->
+      <path d="M25 25 L8 20 M25 25 L42 20" stroke="#F59E0B" stroke-width="5" stroke-linecap="round"/>
+      <!-- Dynamic legs -->
+      <path d="M25 45 L15 65 M25 45 L35 65" stroke="#F59E0B" stroke-width="5" stroke-linecap="round"/>
+      <!-- Victory star / core badge above -->
+      <path d="M25 -3 L27 2 L32 3 L28 7 L29 12 L25 10 L21 12 L22 7 L18 3 L23 2 Z" fill="#FBBF24"/>
+    </g>
+  </g>
+
+  <!-- Base podium / structure indicating foundation -->
+  <path d="M40 190 L200 190 L185 205 L55 205 Z" fill="#374151"/>
+  <rect x="75" y="175" width="90" height="15" rx="3" fill="#4B5563"/>
+  <rect x="95" y="160" width="50" height="15" rx="3" fill="#6B7280"/>
+
+  <!-- Focus accent highlight on the reserve tier base -->
+  <line x1="60" y1="205" x2="180" y2="205" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+</svg>

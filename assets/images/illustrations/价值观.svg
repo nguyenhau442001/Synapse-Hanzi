@@ -1,0 +1,62 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.5"/>
+
+  <!-- Central Physical Object representing "Values System" (价值观): A classic brass and gold balance scale, representing evaluation, principles, and moral/core weight -->
+  
+  <!-- Base stand & pillar -->
+  <g id="scale-stand">
+    <!-- Weighted base platform -->
+    <path d="M 85 195 L 155 195 L 145 185 L 95 185 Z" fill="#4E5D6C"/>
+    <rect x="115" y="90" width="10" height="95" rx="3" fill="#E0A96D"/>
+    <!-- Top decorative cap -->
+    <circle cx="120" cy="90" r="7" fill="#F4D06F"/>
+  </g>
+
+  <!-- Balance Beam -->
+  <g id="balance-beam" transform="rotate(0, 120, 90)">
+    <path d="M 60 88 L 180 88 L 175 96 L 65 96 Z" fill="#F4D06F"/>
+    <!-- Center pivot joint -->
+    <circle cx="120" cy="92" r="6" fill="#C59B27"/>
+  </g>
+
+  <!-- Left Pan Assembly (Slightly higher/balanced) -->
+  <g id="left-scale">
+    <!-- Chains/Strings -->
+    <line x1="68" y1="92" x2="50" y2="135" stroke="#A6B0B5" stroke-width="2" stroke-linecap="round"/>
+    <line x1="68" y1="92" x2="86" y2="135" stroke="#A6B0B5" stroke-width="2" stroke-linecap="round"/>
+    <!-- Hook/Connector -->
+    <circle cx="68" cy="92" r="3" fill="#E0A96D"/>
+    <!-- Dish -->
+    <path d="M 40 135 C 40 145, 96 145, 96 135 Z" fill="#E0A96D"/>
+    <ellipse cx="68" cy="135" rx="28" ry="5" fill="#F4D06F"/>
+    
+    <!-- Items on left pan representing core human principles / positive choices -->
+    <rect x="58" y="118" width="20" height="18" rx="2" fill="#E74C3C"/> <!-- Integrity/Ethics block -->
+    <circle cx="68" cy="115" r="7" fill="#3498DB"/> <!-- Wisdom/Knowledge sphere -->
+  </g>
+
+  <!-- Right Pan Assembly -->
+  <g id="right-scale">
+    <!-- Chains/Strings -->
+    <line x1="172" y1="92" x2="154" y2="135" stroke="#A6B0B5" stroke-width="2" stroke-linecap="round"/>
+    <line x1="172" y1="92" x2="190" y2="135" stroke="#A6B0B5" stroke-width="2" stroke-linecap="round"/>
+    <!-- Hook/Connector -->
+    <circle cx="172" cy="92" r="3" fill="#E0A96D"/>
+    <!-- Dish -->
+    <path d="M 144 135 C 144 145, 200 145, 200 135 Z" fill="#E0A96D"/>
+    <ellipse cx="172" cy="135" rx="28" ry="5" fill="#F4D06F"/>
+    
+    <!-- Items on right pan representing character / balanced judgment -->
+    <rect x="162" y="120" width="20" height="16" rx="2" fill="#2ECC71"/> <!-- Growth/Action block -->
+    <polygon points="172,106 182,120 162,120" fill="#F1C40F"/> <!-- Achievement/Goal marker -->
+  </g>
+
+  <!-- Focus highlights / Ambient modern UI clean touches -->
+  <circle cx="120" cy="50" r="3" fill="#F4D06F" opacity="0.6"/>
+  <circle cx="95" cy="58" r="2" fill="#F4D06F" opacity="0.4"/>
+  <circle cx="145" cy="58" r="2" fill="#F4D06F" opacity="0.4"/>
+</svg>

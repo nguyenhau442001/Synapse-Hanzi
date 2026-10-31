@@ -1,0 +1,61 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle floor shadow / market stall base -->
+  <ellipse cx="120" cy="195" rx="85" ry="12" fill="#111318"/>
+
+  <!-- Stall wooden/structure backdrop -->
+  <path d="M60 185 L60 110 L180 110 L180 185 Z" fill="#252A34"/>
+  
+  <!-- Striped awning (Classic vendor market look) -->
+  <path d="M45 110 L55 80 L185 80 L195 110 Z" fill="#E54B4B"/>
+  <path d="M75 110 L80 80 L105 80 L100 110 Z" fill="#F7B500"/>
+  <path d="M135 110 L135 80 L160 80 L165 110 Z" fill="#F7B500"/>
+
+  <!-- Stall Counter Table -->
+  <rect x="45" y="175" rx="4" width="150" height="20" fill="#3E4553"/>
+  <rect x="52" y="195" rx="2" width="12" height="25" fill="#2D323E"/>
+  <rect x="176" y="195" rx="2" width="12" height="25" fill="#2D323E"/>
+
+  <!-- Display crates on counter -->
+  <rect x="58" y="150" width="55" height="25" rx="3" fill="#8D5524"/>
+  <rect x="125" y="150" width="55" height="25" rx="3" fill="#8D5524"/>
+
+  <!-- Fresh vegetables & fruit (Cabbages and tomatoes/peppers) -->
+  <!-- Cabbage left -->
+  <circle cx="75" cy="148" r="12" fill="#4CAF50"/>
+  <circle cx="88" cy="150" r="11" fill="#66BB6A"/>
+  <circle cx="82" cy="138" r="10" fill="#81C784"/>
+
+  <!-- Tomatoes right -->
+  <circle cx="143" cy="147" r="9" fill="#FF5722"/>
+  <circle cx="160" cy="148" r="9" fill="#F44336"/>
+  <circle cx="152" cy="139" r="8" fill="#FF7043"/>
+
+  <!-- Vendor Character Body & Apron -->
+  <!-- Shoulders / Torso -->
+  <path d="M95 150 C95 130 145 130 145 150 L155 180 L85 180 Z" fill="#2D68C4"/>
+  <!-- White Apron -->
+  <path d="M102 145 L138 145 L143 180 L97 180 Z" fill="#EAEAEA"/>
+  <path d="M112 145 L112 165 L128 165 L128 145" fill="none" stroke="#B0B0B0" stroke-width="2"/>
+
+  <!-- Head & Face -->
+  <circle cx="120" cy="108" r="18" fill="#F5D0B1"/>
+  <!-- Hair -->
+  <path d="M102 108 C102 92 138 92 138 108 C138 98 102 98 102 108 Z" fill="#2C2C2C"/>
+  <!-- Friendly smiling features -->
+  <circle cx="113" cy="108" r="2" fill="#2C2C2C"/>
+  <circle cx="127" cy="108" r="2" fill="#2C2C2C"/>
+  <path d="M116 116 Q120 120 124 116" fill="none" stroke="#2C2C2C" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Vendor Arms gesturing welcomingly towards produce -->
+  <path d="M95 155 C80 155 75 168 70 175" fill="none" stroke="#2D68C4" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="68" cy="177" r="6" fill="#F5D0B1"/>
+
+  <path d="M145 155 C160 155 165 168 170 175" fill="none" stroke="#2D68C4" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="172" cy="177" r="6" fill="#F5D0B1"/>
+
+  <!-- Focus accent glow / Ring behind vendor -->
+  <circle cx="120" cy="135" r="75" fill="none" stroke="#F7B500" stroke-width="2" stroke-dasharray="8 8" opacity="0.4"/>
+</svg>

@@ -1,0 +1,73 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration: A sleek, perfectly organized office desk representing "整洁" (clean, neat, tidy) -->
+  
+  <!-- Desk surface (deep slate tone) -->
+  <path d="M 30,165 L 210,165 L 225,195 L 15,195 Z" fill="#242832" />
+  <path d="M 30,165 L 210,165 L 210,169 L 30,169 Z" fill="#323846" />
+
+  <!-- Laptop (Centered, closed/neatly docked or open cleanly) -->
+  <g transform="translate(75, 125)">
+    <!-- Laptop base -->
+    <path d="M 10,35 L 80,35 L 90,43 L 0,43 Z" fill="#718096" />
+    <path d="M 25,35 L 65,35 L 63,40 L 27,40 Z" fill="#4A5568" />
+    <!-- Laptop screen -->
+    <path d="M 12,5 L 78,5 L 80,35 L 10,35 Z" fill="#A0AEC0" />
+    <path d="M 16,9 L 74,9 L 75,31 L 15,31 Z" fill="#1A1D24" />
+    <!-- Screen content: Clean minimalist UI lines -->
+    <rect x="22" y="14" width="25" height="3" rx="1.5" fill="#38B2AC" />
+    <rect x="22" y="20" width="36" height="2" rx="1" fill="#4A5568" />
+    <rect x="22" y="24" width="20" height="2" rx="1" fill="#4A5568" />
+  </g>
+
+  <!-- Neat stack of books/papers on the left -->
+  <g transform="translate(42, 142)">
+    <!-- Bottom book -->
+    <rect x="0" y="14" width="26" height="5" rx="1" fill="#3182CE" />
+    <rect x="1" y="15" width="24" height="1" fill="#63B3ED" />
+    <!-- Middle book -->
+    <rect x="2" y="8" width="22" height="5" rx="1" fill="#DD6B20" />
+    <rect x="3" y="9" width="20" height="1" fill="#FBD38D" />
+    <!-- Top book -->
+    <rect x="1" y="3" width="24" height="4" rx="1" fill="#38A169" />
+    <rect x="2" y="4" width="22" height="1" fill="#9AE6B4" />
+  </g>
+
+  <!-- Standing pen holder with perfectly aligned pens on the right -->
+  <g transform="translate(170, 130)">
+    <!-- Holder cup -->
+    <path d="M 3,5 L 17,5 L 20,32 L 0,32 Z" fill="#4A5568" />
+    <path d="M 10,5 C 15,5 17,7 17,7 L 3,7 C 3,7 5,5 10,5 Z" fill="#718096" />
+    <!-- Perfectly upright pens/pencils -->
+    <rect x="5" y="-8" width="2" height="16" fill="#F6AD55" />
+    <polygon points="5,-8 6,-11 7,-8" fill="#E2E8F0" />
+    
+    <rect x="9" y="-12" width="2" height="20" fill="#63B3ED" />
+    <polygon points="9,-12 10,-15 11,-12" fill="#E2E8F0" />
+    
+    <rect x="13" y="-6" width="2" height="14" fill="#FC8181" />
+    <polygon points="13,-6 14,-9 15,-6" fill="#E2E8F0" />
+  </g>
+
+  <!-- Potted succulent plant (adds touch of freshness, indicating clean/tidy care) -->
+  <g transform="translate(142, 138)">
+    <!-- Pot -->
+    <path d="M 4,14 L 16,14 L 18,24 L 2,24 Z" fill="#E2E8F0" />
+    <ellipse cx="10" cy="14" rx="6" ry="2" fill="#CBD5E0" />
+    <!-- Succulent leaves (symmetrical and neat) -->
+    <path d="M 10,14 C 7,10 5,6 10,2 C 15,6 13,10 10,14 Z" fill="#48BB78" />
+    <path d="M 10,14 C 13,11 16,8 19,10 C 19,13 14,14 10,14 Z" fill="#38A169" />
+    <path d="M 10,14 C 7,11 4,8 1,10 C 1,13 6,14 10,14 Z" fill="#38A169" />
+  </g>
+
+  <!-- Subtle glowing checkmark / highlight aura above the clean desk to emphasize perfection/order -->
+  <g transform="translate(120, 58)">
+    <circle cx="0" cy="0" r="22" fill="#2D3748" opacity="0.8" />
+    <circle cx="0" cy="0" r="22" fill="none" stroke="#F6AD55" stroke-width="2" stroke-dasharray="100" stroke-dashoffset="0" />
+    <!-- Neat checkmark icon -->
+    <path d="M -7,-1 L -2,5 L 8,-6" fill="none" stroke="#F6AD55" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+</svg>

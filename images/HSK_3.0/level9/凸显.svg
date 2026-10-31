@@ -1,0 +1,62 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container & Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glowing spotlight to represent "highlighting/standing out" -->
+  <circle cx="120" cy="120" r="80" fill="#252A36" opacity="0.6"/>
+  <circle cx="120" cy="110" r="50" fill="#FFB703" opacity="0.08"/>
+
+  <!-- Motion lines / Focus rays radiating outward to show action and emphasis -->
+  <g stroke="#FFB703" stroke-width="2" stroke-linecap="round" opacity="0.4">
+    <line x1="120" y1="35" x2="120" y2="48" />
+    <line x1="68" y1="68" x2="78" y2="78" />
+    <line x1="172" y1="68" x2="162" y2="78" />
+    <line x1="45" y1="120" x2="58" y2="120" />
+    <line x1="195" y1="120" x2="182" y2="120" />
+  </g>
+
+  <!-- Central Platform / Ground -->
+  <path d="M 70 175 L 170 175 L 185 190 L 55 190 Z" fill="#2A303C"/>
+  <rect x="80" y="165" width="80" height="10" rx="3" fill="#3A4254"/>
+
+  <!-- Dynamic Human Character pointing/interacting to show cause and effect ("tūxiǎn" - making it prominent) -->
+  <!-- Body / Torso -->
+  <path d="M 120 120 L 140 165 L 100 165 Z" fill="#3B82F6"/>
+  <!-- Head -->
+  <circle cx="120" cy="98" r="14" fill="#FDE047"/>
+  <!-- Neck -->
+  <rect x="116" y="110" width="8" height="12" fill="#EAB308"/>
+
+  <!-- Back Arm (resting) -->
+  <path d="M 110 125 L 95 145" stroke="#3B82F6" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Front Arm (pointing dynamically at the focal point) -->
+  <path d="M 130 125 L 155 110 L 165 115" stroke="#3B82F6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Hand -->
+  <circle cx="167" cy="116" r="4" fill="#FDE047"/>
+
+  <!-- Legs -->
+  <rect x="105" y="165" width="10" height="15" rx="3" fill="#1E40AF"/>
+  <rect x="125" y="165" width="10" height="15" rx="3" fill="#1E40AF"/>
+
+  <!-- The Core Object Being Highlighted (Prominent, glowing element) -->
+  <!-- Floating/Elevated target element casting a warm glow -->
+  <g transform="translate(0, -5)">
+    <!-- Outer Glow ring -->
+    <circle cx="85" cy="115" r="22" fill="#FFB703" opacity="0.2"/>
+    <!-- Main Focus Node (Representing the vital element/crisis management core) -->
+    <circle cx="85" cy="115" r="16" fill="#FF8800"/>
+    <circle cx="85" cy="115" r="10" fill="#FFB703"/>
+    
+    <!-- Inner geometric icon representing structure/system -->
+    <rect x="81" y="111" width="8" height="8" rx="2" fill="#1A1D24"/>
+  </g>
+
+  <!-- Magnifying / Highlighting Indicator Arc (emphasizing the action of bringing to light) -->
+  <path d="M 60 95 A 35 35 0 0 1 110 80" stroke="#FFB703" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <!-- Arrowhead for the arc -->
+  <polygon points="110,75 118,80 110,85" fill="#FFB703"/>
+
+  <!-- Ground shadow under character -->
+  <ellipse cx="120" cy="190" rx="45" ry="4" fill="#111318"/>
+</svg>

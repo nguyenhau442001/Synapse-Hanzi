@@ -1,0 +1,45 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glowing background aura representing baby's gentle curiosity -->
+  <circle cx="120" cy="120" r="70" fill="#252D3D" opacity="0.6"/>
+
+  <!-- Character / Baby Face representing "chớp mắt" (blinking / wink) -->
+  <g transform="translate(0, 10)">
+    <!-- Head / Face base -->
+    <path d="M 80,90 Q 80,60 120,60 Q 160,60 160,90 Q 160,130 120,130 Q 80,130 80,90 Z" fill="#FFD1A9"/>
+
+    <!-- Hair tuft (cute baby hair) -->
+    <path d="M 115,62 Q 110,48 125,50 Q 130,55 125,62" fill="#E8985C"/>
+
+    <!-- Left Eye (Open and curious, looking at the toy) -->
+    <circle cx="100" cy="90" r="12" fill="#FFFFFF"/>
+    <circle cx="102" cy="90" r="6" fill="#2D3748"/>
+    <circle cx="104" cy="88" r="2" fill="#FFFFFF"/>
+
+    <!-- Right Eye (Blinking / Winking - curved line showing the blink action) -->
+    <path d="M 130,90 Q 140,98 150,90" fill="none" stroke="#2D3748" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Blinking motion speed lines/sparkles near the winking eye -->
+    <path d="M 154,82 L 164,80" fill="none" stroke="#63B3ED" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 156,92 L 166,95" fill="none" stroke="#63B3ED" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Cute Cheeks -->
+    <circle cx="92" cy="102" r="7" fill="#FEB2B2" opacity="0.6"/>
+    <circle cx="148" cy="102" r="7" fill="#FEB2B2" opacity="0.6"/>
+
+    <!-- Happy curved smile -->
+    <path d="M 112,108 Q 120,116 128,108" fill="none" stroke="#2D3748" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Object of focus: A cute floating toy (referencing the context: "đồ chơi trước mặt") -->
+  <g transform="translate(0, 10)">
+    <!-- Toy body (star/block) -->
+    <path d="M 120,140 L 126,152 L 139,154 L 130,163 L 132,176 L 120,170 L 108,176 L 110,163 L 101,154 L 114,152 Z" fill="#F6E05E"/>
+    
+    <!-- Gentle glow around toy -->
+    <circle cx="120" cy="160" r="28" fill="none" stroke="#F6E05E" stroke-width="2" stroke-dasharray="4 4" opacity="0.4"/>
+  </g>
+
+</svg>

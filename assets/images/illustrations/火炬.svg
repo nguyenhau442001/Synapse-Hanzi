@@ -1,0 +1,46 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glow effect around the flame -->
+  <circle cx="120" cy="85" r="45" fill="#FF7700" opacity="0.15" filter="blur(8px)"/>
+  <circle cx="120" cy="75" r="30" fill="#FFB700" opacity="0.25" filter="blur(4px)"/>
+
+  <!-- Olympic Torch Illustration -->
+  <g transform="translate(0, 5)">
+    
+    <!-- Flame / Fire (Dynamic flat vector shapes) -->
+    <!-- Outer orange flame -->
+    <path d="M120 30 C120 30, 100 55, 100 75 C100 90, 109 100, 120 100 C131 100, 140 90, 140 75 C140 55, 120 30, 120 30 Z" fill="#FF6D00"/>
+    
+    <!-- Middle golden flame -->
+    <path d="M120 42 C120 42, 108 60, 108 76 C108 86, 113 93, 120 93 C127 93, 132 86, 132 76 C132 60, 120 42, 120 42 Z" fill="#FFAB00"/>
+    
+    <!-- Inner bright yellow core -->
+    <path d="M120 56 C120 56, 114 67, 114 77 C114 83, 117 87, 120 87 C123 87, 126 83, 126 77 C126 67, 120 56, 120 56 Z" fill="#FFEA00"/>
+
+    <!-- Torch Head (Vase/Cup structure holding the flame) -->
+    <!-- Back inner bowl shadow -->
+    <path d="M96 98 L144 98 L138 114 L102 114 Z" fill="#3E4C59"/>
+    
+    <!-- Main golden upper bowl -->
+    <path d="M92 94 L148 94 L144 98 L96 98 Z" fill="#E5A93B"/>
+    <path d="M96 98 L144 98 L136 116 L104 116 Z" fill="#F1C40F"/>
+    
+    <!-- Torch Body / Handle -->
+    <!-- Tapered modern handle design -->
+    <polygon points="104,116 136,116 130,186 110,186" fill="#2C3E50"/>
+    
+    <!-- Sleek decorative grip cutouts/accents on the handle -->
+    <line x1="113" y1="126" x2="127" y2="126" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="112" y1="138" x2="128" y2="138" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="111" y1="150" x2="129" y2="150" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="110" y1="162" x2="130" y2="162" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="109" y1="174" x2="131" y2="174" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Torch Base / Bottom ring -->
+    <path d="M108 186 L132 186 L134 194 L106 194 Z" fill="#E5A93B"/>
+    <ellipse cx="120" cy="194" rx="14" ry="3" fill="#F1C40F"/>
+  </g>
+
+</svg>

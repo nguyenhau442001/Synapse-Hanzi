@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle grid / environmental lines to give depth -->
+  <path d="M40 200 H200" stroke="#2A2F3B" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Modern Medical Center Building (Destination) on the right -->
+  <g transform="translate(135, 80)">
+    <!-- Building body -->
+    <rect x="0" y="20" width="70" height="100" rx="4" fill="#252A37"/>
+    <!-- Roof accent -->
+    <path d="M -5 20 H 75 V 25 H -5 Z" fill="#323846"/>
+    <!-- Cross Symbol (Medical) -->
+    <rect x="27" y="38" width="16" height="6" rx="1" fill="#FF5C5C"/>
+    <rect x="32" y="33" width="6" height="16" rx="1" fill="#FF5C5C"/>
+    <!-- Windows -->
+    <rect x="12" y="60" width="14" height="16" rx="2" fill="#3B4252"/>
+    <rect x="44" y="60" width="14" height="16" rx="2" fill="#3B4252"/>
+    <rect x="12" y="88" width="14" height="16" rx="2" fill="#3B4252"/>
+    <rect x="44" y="88" width="14" height="16" rx="2" fill="#3B4252"/>
+  </g>
+
+  <!-- House / Home (Starting Point) on the left -->
+  <g transform="translate(35, 95)">
+    <!-- House body -->
+    <rect x="0" y="25" width="50" height="80" rx="3" fill="#252A37"/>
+    <!-- Roof -->
+    <path d="M -5 25 L 25 2 L 55 25 Z" fill="#4B5563"/>
+    <!-- Door -->
+    <rect x="18" y="65" width="14" height="40" rx="2" fill="#1A1D24"/>
+    <!-- Window -->
+    <rect x="12" y="38" width="12" height="12" rx="2" fill="#F6AD55"/>
+  </g>
+
+  <!-- Short, Direct Path / Proximity Indicator (Visualizing "就近" - Close by, right next door) -->
+  <g transform="translate(0, 0)">
+    <!-- Dotted short arc connecting home to clinic -->
+    <path d="M 87 140 Q 111 115 135 140" fill="none" stroke="#F6AD55" stroke-width="3" stroke-dasharray="4 4" stroke-linecap="round"/>
+    
+    <!-- Location Pin directly linking the short distance -->
+    <path d="M 111 112 C 105 112 100 117 100 123 C 100 131 111 142 111 142 C 111 142 122 131 122 123 C 122 117 117 112 111 112 Z" fill="#FF8C42"/>
+    <circle cx="111" cy="123" r="3.5" fill="#1A1D24"/>
+  </g>
+
+  <!-- Senior Resident character standing close to the facility (Representing the elder utilizing nearby care) -->
+  <g transform="translate(90, 140)">
+    <!-- Body / Coat -->
+    <path d="M 12 35 C 12 25 22 20 28 20 C 34 20 44 25 44 35 L 48 60 H 8 L 12 35 Z" fill="#3B82F6"/>
+    <!-- Head -->
+    <circle cx="28" cy="12" r="9" fill="#E5E7EB"/>
+    <!-- Hair (gray/white for senior) -->
+    <path d="M 19 12 C 19 7 23 4 28 4 C 33 4 37 7 37 12 Z" fill="#9CA3AF"/>
+    <!-- Cane -->
+    <line x1="44" y1="28" x2="52" y2="60" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 43 28 Q 45 25 48 27" fill="none" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,58 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glowing aura representing anxiety/heat -->
+  <circle cx="120" cy="130" r="60" fill="#FF5722" opacity="0.1" filter="blur(15px)"/>
+  
+  <!-- Stylized Flames representing "如焚" (burning like fire) centered around the chest area -->
+  <g transform="translate(0, 15)">
+    <!-- Outer orange flames -->
+    <path d="M120 60 C120 60 102 85 102 102 C102 112 110 120 120 120 C130 120 138 112 138 102 C138 85 120 60 120 60 Z" fill="#FF7043" opacity="0.9"/>
+    <!-- Inner bright yellow flames -->
+    <path d="M120 78 C120 78 109 95 109 106 C109 112 114 117 120 117 C126 117 131 112 131 106 C131 95 120 78 120 78 Z" fill="#FFCA28"/>
+  </g>
+
+  <!-- Character silhouette (Focused bust/person experiencing deep anxiety - "心急") -->
+  <g transform="translate(0, 15)">
+    <!-- Shoulders and Body (Dark slate/blue with modern jacket lines) -->
+    <path d="M70 190 C70 155 92 135 120 135 C148 135 170 155 170 190 Z" fill="#2C3542"/>
+    
+    <!-- Inner collar/shirt -->
+    <path d="M100 135 L120 155 L140 135 Z" fill="#1A1D24"/>
+
+    <!-- Neck -->
+    <rect x="110" y="115" width="20" height="25" rx="6" fill="#E0AC69"/>
+
+    <!-- Head -->
+    <circle cx="120" cy="95" r="22" fill="#E0AC69"/>
+
+    <!-- Hair -->
+    <path d="M98 90 C98 75 110 70 120 70 C130 70 142 75 142 90 C142 95 140 90 140 85 C140 78 130 73 120 73 C110 73 100 78 100 85 C100 90 98 95 98 90 Z" fill="#2C3542"/>
+
+    <!-- Anxious facial expression details -->
+    <!-- Furrowed brow / worried eyebrows -->
+    <path d="M108 87 L115 90" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M132 87 L125 90" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Tense eyes (closed tight in overwhelming worry/anguish) -->
+    <path d="M110 95 Q114 98 118 95" stroke="#1A1D24" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M122 95 Q126 98 130 95" stroke="#1A1D24" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <!-- Tense/worried mouth -->
+    <path d="M114 108 Q120 105 126 108" stroke="#1A1D24" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <!-- Hands clutching chest (emphasizing the heart area "心" burning with urgency) -->
+    <!-- Left hand clutching chest -->
+    <path d="M100 125 C105 118 115 118 120 123 C122 125 120 130 115 130 C110 130 102 128 100 125 Z" fill="#E0AC69"/>
+    <!-- Right hand overlapping -->
+    <path d="M140 125 C135 118 125 118 120 123 C118 125 120 130 125 130 C130 130 138 128 140 125 Z" fill="#E0AC69"/>
+  </g>
+
+  <!-- Floating heat/spark particles signifying intense agitation ("如焚") -->
+  <circle cx="85" cy="100" r="2.5" fill="#FF7043" opacity="0.8"/>
+  <circle cx="155" cy="110" r="3" fill="#FFCA28" opacity="0.9"/>
+  <circle cx="95" cy="70" r="2" fill="#FF7043" opacity="0.7"/>
+  <circle cx="145" cy="75" r="3.5" fill="#FF5722" opacity="0.8"/>
+  <circle cx="120" cy="50" r="2" fill="#FFCA28" opacity="0.9"/>
+</svg>

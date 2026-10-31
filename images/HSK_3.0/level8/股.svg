@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Representing "一股" (a stream/waft of scent) as a distinct, flowing, physical plume of floral essence -->
+  <g transform="translate(120, 120)">
+    <!-- Main flowing stream of scent -->
+    <path d="M-40,60 C-60,20 -20,-20 0,-40 C20,-60 60,-40 40,0 C20,40 60,80 80,60" 
+          fill="none" stroke="#FFD700" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+    
+    <!-- Floral elements representing the source of the scent -->
+    <circle cx="-50" cy="70" r="12" fill="#FF8C00"/>
+    <circle cx="-65" cy="85" r="8" fill="#FFD700"/>
+    <circle cx="-35" cy="85" r="8" fill="#FFD700"/>
+    
+    <!-- Secondary flow lines to emphasize the 'stream' (luồng) aspect -->
+    <path d="M-30,50 C-45,20 -15,-10 5,-30" 
+          fill="none" stroke="#FF8C00" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+    <path d="M-50,50 C-65,20 -35,-10 -15,-30" 
+          fill="none" stroke="#FF8C00" stroke-width="4" stroke-linecap="round" opacity="0.4"/>
+  </g>
+</svg>

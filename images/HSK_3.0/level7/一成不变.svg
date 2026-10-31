@@ -1,0 +1,28 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(40, 40)">
+    <!-- Equal sign / Parallel rigid bars representing unchanging structure -->
+    <!-- Top Bar -->
+    <rect x="20" y="55" width="120" height="20" rx="4" fill="#2A303C" stroke="#3A4454" stroke-width="2"/>
+    <rect x="35" y="60" width="90" height="10" rx="2" fill="#4E5D78"/>
+
+    <!-- Bottom Bar (Identical parallel copy) -->
+    <rect x="20" y="85" width="120" height="20" rx="4" fill="#2A303C" stroke="#3A4454" stroke-width="2"/>
+    <rect x="35" y="90" width="90" height="10" rx="2" fill="#4E5D78"/>
+
+    <!-- Rigid mechanical bolts on ends to emphasize being fixed/locked in place -->
+    <circle cx="30" cy="65" r="4" fill="#F39C12"/>
+    <circle cx="130" cy="65" r="4" fill="#F39C12"/>
+    <circle cx="30" cy="95" r="4" fill="#F39C12"/>
+    <circle cx="130" cy="95" r="4" fill="#F39C12"/>
+
+    <!-- Rigid structural lock bracket encapsulating the blocks -->
+    <path d="M 10 40 L 10 120 L 20 120 L 20 130 L 140 130 L 140 120 L 150 120 L 150 40 L 140 40 L 140 30 L 20 30 L 20 40 Z" fill="none" stroke="#F39C12" stroke-width="3" stroke-linejoin="round"/>
+    
+    <!-- Lock mechanism at top center -->
+    <path d="M 70 30 L 70 18 C 70 10 80 10 85 10 C 90 10 100 10 100 18 L 100 30" fill="none" stroke="#F39C12" stroke-width="3" stroke-linecap="round"/>
+    <rect x="68" y="26" width="34" height="18" rx="3" fill="#F39C12"/>
+    <circle cx="85" cy="35" r="3" fill="#1A1D24"/>
+  </g>
+</svg>

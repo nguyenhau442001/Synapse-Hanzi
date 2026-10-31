@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Desk -->
+  <rect x="40" y="150" width="160" height="15" rx="2" fill="#374151"/>
+  <rect x="60" y="165" width="10" height="40" fill="#2D3748"/>
+  <rect x="170" y="165" width="10" height="40" fill="#2D3748"/>
+  
+  <!-- Person 1 (Recruiter) -->
+  <circle cx="70" cy="100" r="20" fill="#F3F4F6"/>
+  <path d="M50 120 C50 140, 90 140, 90 120 L85 150 L55 150 Z" fill="#3B82F6"/>
+  
+  <!-- Person 2 (Candidate) -->
+  <circle cx="170" cy="100" r="20" fill="#F3F4F6"/>
+  <path d="M150 120 C150 140, 190 140, 190 120 L185 150 L155 150 Z" fill="#6B7280"/>
+  
+  <!-- Handshake/Contract Interaction -->
+  <rect x="100" y="125" width="40" height="25" rx="4" fill="#F59E0B"/>
+  <path d="M110 132 L130 132 M110 138 L125 138 M110 144 L120 144" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Stylized Pen/Signature gesture -->
+  <path d="M135 120 L145 110 L155 120" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

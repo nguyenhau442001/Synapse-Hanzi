@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Causality/Progression Metaphor: Domino Effect leading to a resolution -->
+  <!-- Base/Floor -->
+  <path d="M40 180 L200 180" stroke="#3A404D" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Domino 1: The Cause (Negotiation) -->
+  <rect x="60" y="140" width="20" height="40" rx="2" fill="#4A5568"/>
+  
+  <!-- Domino 2: The Transition (The "Gù" / Therefore) -->
+  <rect x="100" y="140" width="20" height="40" rx="2" fill="#718096"/>
+  
+  <!-- Domino 3: The Result (Resolution/Peace) -->
+  <rect x="140" y="140" width="20" height="40" rx="2" fill="#E67E22"/>
+  
+  <!-- The Resolution Symbol: A handshake icon stylized as flat vector geometry representing the outcome of the causality -->
+  <g transform="translate(160, 120)">
+    <path d="M-10 20 L10 20" stroke="#FBD38D" stroke-width="4" stroke-linecap="round"/>
+    <path d="M-5 15 L5 25" stroke="#FBD38D" stroke-width="4" stroke-linecap="round"/>
+    <path d="M-5 25 L5 15" stroke="#FBD38D" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Arrow indicating progression of causality -->
+  <path d="M70 120 L170 120 L165 115 M170 120 L165 125" stroke="#E67E22" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

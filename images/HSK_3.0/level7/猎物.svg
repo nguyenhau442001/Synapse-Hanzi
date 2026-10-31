@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ground/environment line -->
+  <path d="M 60 180 L 190 180" stroke="#2B303C" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Crosshair/Aiming indicator (representing the context "hunter aims at prey") -->
+  <g opacity="0.4">
+    <circle cx="120" cy="125" r="50" fill="none" stroke="#FF5722" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <line x1="120" y1="65" x2="120" y2="80" stroke="#FF5722" stroke-width="2" stroke-linecap="round"/>
+    <line x1="120" y1="170" x2="120" y2="185" stroke="#FF5722" stroke-width="2" stroke-linecap="round"/>
+    <line x1="60" y1="125" x2="75" y2="125" stroke="#FF5722" stroke-width="2" stroke-linecap="round"/>
+    <line x1="165" y1="125" x2="180" y2="125" stroke="#FF5722" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Central Noun: "猎物" (Prey - e.g., a graceful deer as the iconic target) -->
+  <g transform="translate(0, 5)">
+    <!-- Back legs -->
+    <path d="M 100 135 L 95 175" stroke="#D18941" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 140 135 L 145 175" stroke="#D18941" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Front legs -->
+    <path d="M 108 135 L 105 175" stroke="#E5984A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 132 135 L 135 175" stroke="#E5984A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Body -->
+    <ellipse cx="120" cy="125" rx="26" ry="18" fill="#E5984A"/>
+
+    <!-- Neck -->
+    <path d="M 132 118 Q 142 95 145 85" stroke="#E5984A" stroke-width="12" stroke-linecap="round"/>
+
+    <!-- Head -->
+    <path d="M 138 82 Q 152 78 158 86 Q 160 94 148 98 Z" fill="#E5984A"/>
+
+    <!-- Ears -->
+    <path d="M 141 78 L 137 68" stroke="#E5984A" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 147 77 L 151 68" stroke="#E5984A" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Antlers (Stag) -->
+    <path d="M 144 70 Q 140 50 128 42" fill="none" stroke="#F4A261" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 136 55 L 126 50" fill="none" stroke="#F4A261" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 148 70 Q 152 50 164 42" fill="none" stroke="#F4A261" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 156 55 L 166 50" fill="none" stroke="#F4A261" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Tail -->
+    <path d="M 94 116 Q 88 112 90 120" stroke="#E5984A" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Focal highlight ring -->
+  <circle cx="120" cy="125" r="65" fill="none" stroke="#FFB703" stroke-width="2" opacity="0.8"/>
+</svg>

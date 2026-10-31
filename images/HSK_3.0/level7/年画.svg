@@ -1,0 +1,52 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle glow background for focus -->
+  <circle cx="120" cy="120" r="80" fill="#E28743" opacity="0.08"/>
+
+  <!-- Wooden door frame background hints -->
+  <rect x="55" y="30" width="130" height="180" rx="6" fill="#222733" stroke="#2D3446" stroke-width="3"/>
+
+  <!-- The "Nianhua" (Chinese New Year Woodblock Print) hanging on the door -->
+  <!-- Main scroll/paper backing -->
+  <rect x="75" y="45" width="90" height="150" rx="4" fill="#EAE5D9" stroke="#E28743" stroke-width="2"/>
+  
+  <!-- Decorative border inside print -->
+  <rect x="81" y="51" width="78" height="138" fill="none" stroke="#D1493B" stroke-width="1.5" stroke-dasharray="4 2"/>
+
+  <!-- Traditional top and bottom scroll rods -->
+  <rect x="70" y="40" width="100" height="7" rx="3.5" fill="#C26A32"/>
+  <rect x="70" y="193" width="100" height="7" rx="3.5" fill="#C26A32"/>
+
+  <!-- Hanging cord -->
+  <path d="M 120 40 L 120 22" fill="none" stroke="#C26A32" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Flat vector illustration INSIDE the print: Chubby auspicious child (Nianhua classic motif) -->
+  <!-- Head/face -->
+  <circle cx="120" cy="95" r="22" fill="#FCE5CD"/>
+  
+  <!-- Rosy cheeks -->
+  <circle cx="108" cy="100" r="5" fill="#E06D53" opacity="0.7"/>
+  <circle cx="132" cy="100" r="5" fill="#E06D53" opacity="0.7"/>
+
+  <!-- Hair buns (traditional Chinese child hairstyle - 总角) -->
+  <circle cx="106" cy="78" r="7" fill="#2C221E"/>
+  <circle cx="134" cy="78" r="7" fill="#2C221E"/>
+
+  <!-- Smiling face elements -->
+  <path d="M 116 102 Q 120 106 124 102" fill="none" stroke="#2C221E" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Festive red bellyband / clothing (Dudou) -->
+  <path d="M 104 115 L 136 115 L 140 160 L 100 160 Z" fill="#D1493B"/>
+  <circle cx="120" cy="135" rect="true" r="4" fill="#F4D03F"/>
+
+  <!-- Holding a golden auspicious fish (common Nianhua symbol - 年年有余) -->
+  <path d="M 138 130 C 145 125 158 135 152 145 C 158 150 148 160 138 150 Z" fill="#F4D03F"/>
+  <circle cx="148" cy="138" r="1.5" fill="#2C221E"/>
+  <path d="M 152 137 L 158 132 M 152 143 L 158 148" stroke="#F4D03F" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Festive cloud motifs in background of the print -->
+  <path d="M 88 168 Q 93 162 98 168 Q 103 162 108 168" fill="none" stroke="#3B82F6" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 132 168 Q 137 162 142 168 Q 147 162 152 168" fill="none" stroke="#3B82F6" stroke-width="1.5" opacity="0.6"/>
+</svg>

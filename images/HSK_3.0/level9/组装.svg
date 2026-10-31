@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle tech grid background -->
+  <g opacity="0.15">
+    <line x1="30" y1="60" x2="210" y2="60" stroke="#00E5FF" stroke-width="0.5" stroke-dasharray="2,4"/>
+    <line x1="30" y1="120" x2="210" y2="120" stroke="#00E5FF" stroke-width="0.5" stroke-dasharray="2,4"/>
+    <line x1="30" y1="180" x2="210" y2="180" stroke="#00E5FF" stroke-width="0.5" stroke-dasharray="2,4"/>
+    <line x1="60" y1="30" x2="60" y2="210" stroke="#00E5FF" stroke-width="0.5" stroke-dasharray="2,4"/>
+    <line x1="120" y1="30" x2="120" y2="210" stroke="#00E5FF" stroke-width="0.5" stroke-dasharray="2,4"/>
+    <line x1="180" y1="30" x2="180" y2="210" stroke="#00E5FF" stroke-width="0.5" stroke-dasharray="2,4"/>
+  </g>
+
+  <!-- Assembly Action: Central Device / Smartphone being assembled -->
+  <g transform="translate(120, 115)">
+    <!-- Holographic/Tech workbench base -->
+    <ellipse cx="0" cy="55" rx="75" ry="20" fill="#293042" opacity="0.8"/>
+    <ellipse cx="0" cy="55" rx="65" ry="15" fill="none" stroke="#00E5FF" stroke-width="1.5" opacity="0.4"/>
+    
+    <!-- Precision Robotic/Mechanical Assembly Arms (Left and Right) -->
+    <!-- Left Arm -->
+    <path d="M -90 -30 L -55 -15 L -40 10" fill="none" stroke="#636F88" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="-90" cy="-30" r="5" fill="#FFB703"/>
+    <circle cx="-55" cy="-15" r="4" fill="#636F88"/>
+    <!-- Left Gripper Tool with Laser Guide -->
+    <path d="M -40 10 L -28 18" fill="none" stroke="#FFB703" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-28" y1="18" x2="-15" y2="25" stroke="#00E5FF" stroke-width="1" stroke-dasharray="2,1"/>
+    
+    <!-- Right Arm -->
+    <path d="M 90 -30 L 55 -15 L 40 10" fill="none" stroke="#636F88" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="90" cy="-30" r="5" fill="#FFB703"/>
+    <circle cx="55" cy="-15" r="4" fill="#636F88"/>
+    <!-- Right Gripper Tool -->
+    <path d="M 40 10 L 28 18" fill="none" stroke="#FFB703" stroke-width="3" stroke-linecap="round"/>
+    <line x1="28" y1="18" x2="15" y2="25" stroke="#00E5FF" stroke-width="1" stroke-dasharray="2,1"/>
+
+    <!-- Exploded / Assembling Smartphone Components (The physical object of assembly) -->
+    
+    <!-- Top Component: Camera Module / Sensors (Floating down) -->
+    <g transform="translate(0, -55)">
+      <rect x="-18" y="-8" width="36" height="16" rx="4" fill="#3A445D" stroke="#00E5FF" stroke-width="1.5"/>
+      <circle cx="-8" cy="0" r="4" fill="#1A1D24"/>
+      <circle cx="8" cy="0" r="2.5" fill="#FFB703"/>
+      <!-- Motion assembly lines -->
+      <line x1="-10" y1="15" x2="-10" y2="22" stroke="#FFB703" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="10" y1="15" x2="10" y2="22" stroke="#FFB703" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Middle Component: Precision Circuit Board / Chip (Floating) -->
+    <g transform="translate(0, -10)">
+      <rect x="-26" y="-12" width="52" height="24" rx="3" fill="#1E2533" stroke="#FFB703" stroke-width="1.5"/>
+      <rect x="-12" y="-6" width="24" height="12" rx="2" fill="#00E5FF" opacity="0.7"/>
+      <line x1="-20" y1="0" x2="-14" y2="0" stroke="#636F88" stroke-width="1.5"/>
+      <line x1="14" y1="0" x2="20" y2="0" stroke="#636F88" stroke-width="1.5"/>
+      <!-- Motion assembly lines -->
+      <line x1="-15" y1="18" x2="-15" y2="25" stroke="#FFB703" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="15" y1="18" x2="15" y2="25" stroke="#FFB703" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Bottom Component: Smartphone Chassis / Main Body (Stationary on base) -->
+    <g transform="translate(0, 32)">
+      <rect x="-32" y="-18" width="64" height="36" rx="8" fill="#252D3D" stroke="#636F88" stroke-width="2"/>
+      <rect x="-28" y="-14" width="56" height="28" rx="6" fill="#11141B"/>
+      <!-- Screen glowing element inside -->
+      <rect x="-24" y="-10" width="48" height="20" rx="4" fill="#00E5FF" opacity="0.15"/>
+      <line x1="-10" y1="0" x2="10" y2="0" stroke="#00E5FF" stroke-width="1.5" opacity="0.6"/>
+    </g>
+
+    <!-- Assembly Sparks / Precision Focus Indicators -->
+    <circle cx="-12" cy="-28" r="2" fill="#FFB703"/>
+    <circle cx="15" cy="-28" r="1.5" fill="#00E5FF"/>
+    <circle cx="0" cy="5" r="2" fill="#FFB703"/>
+    
+    <!-- Alignment crosshairs / precision brackets -->
+    <path d="M -38 -45 L -42 -45 L -42 -41" fill="none" stroke="#00E5FF" stroke-width="1.5"/>
+    <path d="M 38 -45 L 42 -45 L 42 -41" fill="none" stroke="#00E5FF" stroke-width="1.5"/>
+    <path d="M -38 45 L -42 45 L -42 41" fill="none" stroke="#00E5FF" stroke-width="1.5"/>
+    <path d="M 38 45 L 42 45 L 42 41" fill="none" stroke="#00E5FF" stroke-width="1.5"/>
+  </g>
+</svg>

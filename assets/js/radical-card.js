@@ -66,7 +66,7 @@ function setRadicalViewMode(mode) {
   overviewTab.setAttribute('aria-selected', String(showOverview));
   document.getElementById('appTitle').textContent = showOverview
     ? `Bộ thủ ${radicalSetLabel()} · Tổng quan`
-    : `Bộ thủ ${radicalGroupIndex + 1} nét · Synapse Hanzi`;
+    : `Bộ thủ ${radicalGroupIndex + 1} nét · 汉字思维`;
 
   if (showOverview) {
     document.getElementById('radicalOverviewSearch').value = radicalOverviewQuery;

@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Desert ground landscape representing Gobi desert context -->
+  <path d="M 0 190 Q 60 175 120 185 T 240 180 L 240 240 L 0 240 Z" fill="#2D2820"/>
+  <path d="M 0 205 Q 90 195 180 205 T 240 200 L 240 240 L 0 240 Z" fill="#201C17"/>
+
+  <!-- Scorching Sun (烈日 - Intense Blazing Sun) in the center-top -->
+  <g transform="translate(120, 85)">
+    <!-- Outer heat shimmer / corona rays -->
+    <circle cx="0" cy="0" r="54" fill="#FFB703" opacity="0.15"/>
+    <circle cx="0" cy="0" r="44" fill="#FF9F1C" opacity="0.25"/>
+    
+    <!-- Sunburst geometric sharp rays -->
+    <path d="M 0 -58 L 4 -42 L -4 -42 Z" fill="#FFB703"/>
+    <path d="M 41 -41 L 30 -30 L 26 -36 Z" fill="#FFB703"/>
+    <path d="M 58 0 L 42 4 L 42 -4 Z" fill="#FFB703"/>
+    <path d="M 41 41 L 30 30 L 36 26 Z" fill="#FFB703"/>
+    <path d="M 0 58 L 4 42 L -4 42 Z" fill="#FFB703"/>
+    <path d="M -41 41 L -30 30 L -26 36 Z" fill="#FFB703"/>
+    <path d="M -58 0 L -42 4 L -42 -4 Z" fill="#FFB703"/>
+    <path d="M -41 -41 L -30 -30 L -36 -26 Z" fill="#FFB703"/>
+
+    <!-- Main Intense Solar Disc -->
+    <circle cx="0" cy="0" r="32" fill="#FFB703"/>
+    <circle cx="0" cy="0" r="26" fill="#FB8500"/>
+    <circle cx="0" cy="0" r="19" fill="#F77F00"/>
+  </g>
+
+  <!-- Geological explorer silhouette under the blazing sun -->
+  <g transform="translate(120, 155)">
+    <!-- Explorer Body / Suit -->
+    <path d="M-8 35 L-12 10 L-6 0 L6 0 L12 10 L8 35 Z" fill="#C57B57"/>
+    <!-- Hardhat / Sun helmet -->
+    <ellipse cx="0" cy="-3" rx="14" ry="5" fill="#E9C46A"/>
+    <path d="M-10 -3 C-10 -11 10 -11 10 -3 Z" fill="#F4A261"/>
+    <!-- Raised arm wiping sweat / holding tool context -->
+    <path d="M8 5 L16 -5 L19 -3 L10 12 Z" fill="#C57B57"/>
+    <!-- Geological hammer / pick tool -->
+    <path d="M17 -7 L22 -14 L25 -12 L19 -3 Z" fill="#90E0EF"/>
+    <line x1="16" y1="-5" x2="11" y2="2" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Subtle heat wave distortion lines in the air -->
+  <path d="M 95 125 Q 100 120 105 125 T 115 125" fill="none" stroke="#FFB703" stroke-width="1.5" opacity="0.4" stroke-linecap="round"/>
+  <path d="M 130 120 Q 135 115 140 120 T 150 120" fill="none" stroke="#FFB703" stroke-width="1.5" opacity="0.4" stroke-linecap="round"/>
+  <path d="M 105 135 Q 110 130 115 135 T 125 135" fill="none" stroke="#FFB703" stroke-width="1.5" opacity="0.3" stroke-linecap="round"/>
+  <path d="M 125 133 Q 130 128 135 133 T 145 133" fill="none" stroke="#FFB703" stroke-width="1.5" opacity="0.3" stroke-linecap="round"/>
+</svg>

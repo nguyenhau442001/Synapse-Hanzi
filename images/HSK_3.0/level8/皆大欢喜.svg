@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Central Composition: Three figures representing the buyer, seller, and intermediary -->
+  <!-- Intermediary (Center) -->
+  <circle cx="120" cy="110" r="25" fill="#FFB84D"/>
+  <path d="M95 110h50v60c0 10-10 20-25 20s-25-10-25-20V110z" fill="#FFB84D"/>
+  
+  <!-- Buyer (Left) -->
+  <circle cx="60" cy="120" r="22" fill="#4D94FF"/>
+  <path d="M38 120h44v50c0 8-8 15-22 15s-22-7-22-15V120z" fill="#4D94FF"/>
+  
+  <!-- Seller (Right) -->
+  <circle cx="180" cy="120" r="22" fill="#4D94FF"/>
+  <path d="M158 120h44v50c0 8-8 15-22 15s-22-7-22-15V120z" fill="#4D94FF"/>
+  
+  <!-- Handshake gesture in the center -->
+  <path d="M105 145l30-10" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Smiling faces (simplified) -->
+  <path d="M112 115h16" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+  <path d="M52 125h16" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+  <path d="M172 125h16" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Document/Agreement icon held by the group -->
+  <rect x="105" y="155" width="30" height="40" rx="2" fill="#E0E0E0"/>
+  <path d="M110 165h20M110 175h20M110 185h10" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+</svg>

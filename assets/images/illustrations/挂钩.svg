@@ -1,0 +1,36 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Connection beam/link in the background -->
+    <path d="M70 120 L170 120" stroke="#2D3748" stroke-width="12" stroke-linecap="round"/>
+    
+    <!-- Left C-shaped hook -->
+    <path d="M 100 85 
+             C 70 85, 70 155, 100 155 
+             C 115 155, 125 145, 125 135" 
+          fill="none" 
+          stroke="#38BDF8" 
+          stroke-width="16" 
+          stroke-linecap="round"/>
+          
+    <!-- Right C-shaped hook interlocked -->
+    <path d="M 140 85 
+             C 170 85, 170 155, 140 155 
+             C 125 155, 115 145, 115 135" 
+          fill="none" 
+          stroke="#F59E0B" 
+          stroke-width="16" 
+          stroke-linecap="round"/>
+          
+    <!-- Fastening pin/bolt in the center to emphasize connection -->
+    <circle cx="120" cy="120" r="10" fill="#E2E8F0"/>
+    <circle cx="120" cy="120" r="4" fill="#1A1D24"/>
+    
+    <!-- Focus sparkle top right -->
+    <path d="M175 65 L178 75 L188 78 L178 81 L175 91 L172 81 L162 78 L172 75 Z" fill="#F59E0B" opacity="0.8"/>
+    
+    <!-- Focus sparkle bottom left -->
+    <path d="M65 155 L67 161 L73 163 L67 165 L65 171 L63 165 L57 163 L63 161 Z" fill="#38BDF8" opacity="0.8"/>
+  </g>
+</svg>

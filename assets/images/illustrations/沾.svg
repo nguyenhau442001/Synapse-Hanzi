@@ -1,0 +1,16 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Leg of trousers -->
+  <path d="M80 60 L110 60 L125 200 L65 200 Z" fill="#4A5568"/>
+  
+  <!-- Mud splatter/stains -->
+  <path d="M70 160 Q75 150 85 155 T100 165 T115 175 T105 190 T85 185 T70 170 Z" fill="#D69E2E"/>
+  <circle cx="95" cy="155" r="4" fill="#D69E2E"/>
+  <circle cx="80" cy="180" r="6" fill="#D69E2E"/>
+  <circle cx="110" cy="170" r="5" fill="#D69E2E"/>
+  <path d="M90 195 Q95 190 105 195 T115 200" stroke="#D69E2E" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Ground reference -->
+  <path d="M40 200 L200 200" stroke="#2D3748" stroke-width="4" stroke-linecap="round"/>
+</svg>

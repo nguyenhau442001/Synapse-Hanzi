@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background cinematic atmosphere (soft ambient glow from projector) -->
+  <path d="M 120 40 L 25 180 L 215 180 Z" fill="#F59E0B" opacity="0.05" />
+
+  <!-- Film Projector / Big Screen Cinematic Concept ("再度" - Once again, classic movie on big screen) -->
+  <!-- Big Screen Frame -->
+  <rect x="50" y="55" width="140" height="95" rx="6" fill="#252A34" stroke="#374151" stroke-width="2"/>
+  <rect x="56" y="61" width="128" height="83" rx="3" fill="#0F1117"/>
+
+  <!-- Screen Content: Classic Movie Scene (Stylized Mountain & Rising Sun / Film Aesthetic) -->
+  <circle cx="120" cy="92" r="18" fill="#F59E0B" opacity="0.9"/>
+  <path d="M 56 125 L 90 95 L 115 118 L 150 88 L 184 144 Z" fill="#1F2937"/>
+  <path d="M 85 144 L 120 108 L 155 144 Z" fill="#374151"/>
+
+  <!-- Film Reel / "Repeat/Again" Circular Motion Overlay -->
+  <!-- Projector Reel Top Left -->
+  <circle cx="45" cy="50" r="14" fill="#252A34" stroke="#F59E0B" stroke-width="2"/>
+  <circle cx="45" cy="50" r="4" fill="#F59E0B"/>
+  <line x1="35" y1="50" x2="55" y2="50" stroke="#F59E0B" stroke-width="2"/>
+  <line x1="45" y1="40" x2="45" y2="60" stroke="#F59E0B" stroke-width="2"/>
+
+  <!-- Projector Reel Top Right -->
+  <circle cx="195" cy="50" r="14" fill="#252A34" stroke="#F59E0B" stroke-width="2"/>
+  <circle cx="195" cy="50" r="4" fill="#F59E0B"/>
+  <line x1="185" y1="50" x2="205" y2="50" stroke="#F59E0B" stroke-width="2"/>
+  <line x1="195" y1="40" x2="195" y2="60" stroke="#F59E0B" stroke-width="2"/>
+
+  <!-- Cinematic Stand / Base -->
+  <rect x="105" y="150" width="30" height="28" rx="3" fill="#374151"/>
+  <path d="M 85 178 L 155 178 L 165" stroke="#4B5563" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="120" cy="178" rx="45" ry="6" fill="#374151"/>
+
+  <!-- Sleek "Loop / Again" Refresh Arrow gracefully wrapping around the screen -->
+  <path d="M 95 192 C 75 192 55 180 42 162 C 30 144 26 122 30 100" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  <!-- Arrowhead pointing upwards/back to start -->
+  <path d="M 24 112 L 30 96 L 42 104" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Secondary subtle balance indicator / glowing focus dot -->
+  <circle cx="120" cy="178" r="2" fill="#F59E0B"/>
+</svg>

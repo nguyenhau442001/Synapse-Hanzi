@@ -1,0 +1,58 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient background glow for triumphant return -->
+  <circle cx="120" cy="115" r="70" fill="#FFB703" opacity="0.08"/>
+  <circle cx="120" cy="115" r="45" fill="#FFB703" opacity="0.12"/>
+
+  <!-- Olympic Podium -->
+  <!-- 3rd Place (Left) -->
+  <rect x="52" y="145" width="32" height="40" rx="2" fill="#2D323E"/>
+  <!-- 2nd Place (Right) -->
+  <rect x="156" y="130" width="32" height="55" rx="2" fill="#2D323E"/>
+  <!-- 1st Place Center - Tallest (The Victor returning) -->
+  <rect x="92" y="100" width="56" height="85" rx="3" fill="#2D323E"/>
+  
+  <!-- Podium floor shadow -->
+  <ellipse cx="120" cy="187" rx="90" ry="6" fill="#101217"/>
+
+  <!-- Laurel Wreath (Khải hoàn - Victory symbol) -->
+  <g transform="translate(120, 72)">
+    <!-- Left branch -->
+    <path d="M 0,20 C -22,20 -32,2 -30,-18 C -29,-24 -24,-28 -24,-28" fill="none" stroke="#FFB703" stroke-width="4" stroke-linecap="round"/>
+    <path d="M -10,10 C -18,12 -24,4 -22,-2" fill="#FFB703"/>
+    <path d="M -18,0 C -26,2 -30,-6 -26,-14" fill="#FFB703"/>
+    <path d="M -22,-12 C -28,-14 -30,-22 -24,-26" fill="#FFB703"/>
+    
+    <!-- Right branch -->
+    <path d="M 0,20 C 22,20 32,2 30,-18 C 29,-24 24,-28 24,-28" fill="none" stroke="#FFB703" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 10,10 C 18,12 24,4 22,-2" fill="#FFB703"/>
+    <path d="M 18,0 C 26,2 30,-6 26,-14" fill="#FFB703"/>
+    <path d="M 22,-12 C 28,-14 30,-22 24,-26" fill="#FFB703"/>
+    
+    <!-- Ribbon tie at bottom -->
+    <path d="M -6,18 L 6,18 L 10,28 L 0,23 L -10,28 Z" fill="#E63946"/>
+  </g>
+
+  <!-- Gold Medal & Ribbon (Representing the Olympic Champion returning home victorious) -->
+  <!-- Ribbon -->
+  <path d="M 104,36 L 120,55 L 136,36" fill="none" stroke="#E63946" stroke-width="8" stroke-linejoin="round"/>
+  
+  <!-- Medal body -->
+  <circle cx="120" cy="62" r="16" fill="#FFB703"/>
+  <circle cx="120" cy="62" r="12" fill="#F49D0C"/>
+  <!-- Star on medal -->
+  <polygon points="120,54 122.2,59 127.6,59.5 123.5,63 124.8,68.2 120,65.5 115.2,68.2 116.5,63 112.4,59.5 117.8,59" fill="#FFD166"/>
+
+  <!-- Decorative sparkling confetti celebrating return -->
+  <circle cx="65" cy="80" r="3" fill="#FFB703" opacity="0.8"/>
+  <circle cx="175" cy="85" r="2.5" fill="#4CC9F0" opacity="0.8"/>
+  <rect x="50" y="115" width="4" height="4" rx="1" fill="#E63946" transform="rotate(45 52 117)"/>
+  <rect x="185" y="110" width="5" height="5" rx="1" fill="#FFB703" transform="rotate(15 187 112)"/>
+  <circle cx="85" cy="55" r="2" fill="#FFD166" opacity="0.7"/>
+  <circle cx="155" cy="50" r="3" fill="#E63946" opacity="0.7"/>
+
+  <!-- Minimalist baseline representing ground/airport tarmac level -->
+  <line x1="30" y1="185" x2="210" y2="185" stroke="#323846" stroke-width="3" stroke-linecap="round"/>
+</svg>

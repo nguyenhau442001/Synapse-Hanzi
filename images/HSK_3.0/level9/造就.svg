@@ -1,0 +1,47 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background ambient glow for anvil/forge focus -->
+  <circle cx="120" cy="120" r="80" fill="#242B38" opacity="0.6"/>
+  <circle cx="120" cy="140" r="40" fill="#FF8C00" opacity="0.08" filter="blur(10px)"/>
+
+  <!-- Sparks / Transformation particles representing "造就" (Forging / Shaping character) -->
+  <g fill="#FFC107">
+    <circle cx="85" cy="85" r="2" opacity="0.8"/>
+    <circle cx="155" cy="75" r="3" opacity="0.9"/>
+    <circle cx="168" cy="95" r="1.5" opacity="0.6"/>
+    <circle cx="72" cy="105" r="2.5" opacity="0.7"/>
+    <path d="M140 60 L143 66 L139 65 Z" fill="#FF8C00"/>
+    <path d="M95 55 L98 58 L94 60 Z" fill="#FF8C00"/>
+  </g>
+
+  <!-- Central Physical Object (Anvil & Hammer - representing shaping/forging human character and achievement) -->
+  <g transform="translate(0, 10)">
+    <!-- Anvil Base / Horn -->
+    <path d="M80 135 L160 135 L150 120 L135 120 L125 105 L95 105 Z" fill="#4E5D6C"/>
+    
+    <!-- Anvil Face (Highlight) -->
+    <path d="M95 105 L135 105 L145 120 L85 120 Z" fill="#788B9C"/>
+    
+    <!-- Anvil Body / Base -->
+    <path d="M95 135 L85 165 L155 165 L145 135 Z" fill="#3B4654"/>
+    <rect x="75" y="165" width="90" height="12" rx="4" fill="#2C3540"/>
+
+    <!-- Hammer descending to forge (Action of shaping) -->
+    <g transform="rotate(-25 120 75)">
+      <!-- Hammer Handle -->
+      <rect x="114" y="45" width="12" height="60" rx="4" fill="#A77B53"/>
+      <rect x="116" y="45" width="4" height="60" rx="2" fill="#C29B75" opacity="0.5"/>
+      
+      <!-- Hammer Head -->
+      <path d="M100 35 L140 35 L145 50 L95 50 Z" fill="#FF8C00"/>
+      <rect x="98" y="32" width="44" height="6" rx="2" fill="#FFA726"/>
+    </g>
+
+    <!-- Glowing Hot Ingot / Core Symbol of Achievement on Anvil -->
+    <path d="M102 114 Q120 110 138 114 L136 120 Q120 116 104 120 Z" fill="#FFD54F"/>
+    <path d="M106 112 Q120 108 134 112 Z" fill="#FFF"/>
+  </g>
+
+</svg>

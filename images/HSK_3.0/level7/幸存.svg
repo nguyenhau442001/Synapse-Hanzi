@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Collapsed structure / debris context (dark slate angular shapes) -->
+  <path d="M30 200 L70 140 L110 200 Z" fill="#252A34" opacity="0.6"/>
+  <path d="M150 200 L190 120 L220 200 Z" fill="#252A34" opacity="0.8"/>
+  <rect x="50" y="190" width="140" height="15" fill="#2F3640" rx="4"/>
+
+  <!-- Structural Triangle Support (Bearing load safely) -->
+  <path d="M80 190 L120 110 L160 190 Z" fill="none" stroke="#FFA726" stroke-width="4" stroke-dasharray="4 2" opacity="0.4"/>
+  <path d="M70 190 L120 95 L170 190" fill="none" stroke="#3A4454" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Beam debris leaning on the triangle -->
+  <path d="M95 105 L40 70 L55 55 L115 90 Z" fill="#2F3640"/>
+  <line x1="45" y1="65" x2="105" y2="98" stroke="#3A4454" stroke-width="3"/>
+
+  <!-- Saved Survivor (Person emerging safe inside the pocket) -->
+  <!-- Head & Face -->
+  <circle cx="120" cy="140" r="14" fill="#FFCCBC"/>
+  <!-- Hair -->
+  <path d="M106 138 C106 128 134 128 134 138 C134 134 126 124 120 124 C114 124 106 134 106 138 Z" fill="#4E342E"/>
+  
+  <!-- Torso & Clothing (Bright/High-contrast accent color for focus) -->
+  <path d="M100 190 C100 165 140 165 140 190 Z" fill="#FF7043"/>
+  
+  <!-- Reassuring Upward Pose (Arms slightly raised, safe) -->
+  <path d="M104 168 L92 155" stroke="#FFCCBC" stroke-width="5" stroke-linecap="round"/>
+  <path d="M136 168 L148 155" stroke="#FFCCBC" stroke-width="5" stroke-linecap="round"/>
+  
+  <!-- Beam of Hope / Rescue Light shining from above -->
+  <polygon points="95,0 145,0 170,140 70,140" fill="url(#lightBeam)" opacity="0.15"/>
+  <polygon points="110,0 130,0 140,140 100,140" fill="url(#lightBeam)" opacity="0.3"/>
+
+  <!-- Focal Highlight Glow -->
+  <circle cx="120" cy="140" r="35" fill="none" stroke="#FFA726" stroke-width="1.5" opacity="0.6"/>
+
+  <defs>
+    <linearGradient id="lightBeam" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FFE082" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>

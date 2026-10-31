@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle running track texture/perspective lines -->
+  <path d="M 60 190 L 100 130" stroke="#252A34" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 120 190 L 135 130" stroke="#252A34" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 180 190 L 170 130" stroke="#252A34" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Track surface -->
+  <path d="M 30 190 L 210 190 L 220 210 L 20 210 Z" fill="#222730"/>
+
+  <!-- The Starting Line (起跑线) - Glowing high-contrast orange/gold accent -->
+  <line x1="120" y1="130" x2="120" y2="202" stroke="#FF9F43" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Secondary track lane markings crossing the start line -->
+  <line x1="75" y1="165" x2="165" y2="165" stroke="#323846" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- Starting blocks (起跑器) -->
+  <g transform="translate(100, 185)">
+    <!-- Main rail -->
+    <rect x="-2" y="-1" width="35" height="4" rx="1" fill="#718096"/>
+    <!-- Block 1 -->
+    <path d="M 5 3 L 12 -7 L 18 -7 L 15 3 Z" fill="#E2E8F0"/>
+    <!-- Block 2 -->
+    <path d="M 20 3 L 26 -7 L 32 -7 L 29 3 Z" fill="#E2E8F0"/>
+  </g>
+
+  <!-- Athlete crouched in ready position (各就各位) -->
+  <g transform="translate(85, 145)">
+    <!-- Head -->
+    <circle cx="12" cy="12" r="6" fill="#F6AD55"/>
+    <!-- Torso -->
+    <path d="M 16 16 C 20 18, 25 25, 30 32" stroke="#4FD1C5" stroke-width="7" stroke-linecap="round"/>
+    <!-- Back/Arm supporting -->
+    <path d="M 14 14 L 6 25" stroke="#F6AD55" stroke-width="4" stroke-linecap="round"/>
+    <!-- Hand on ground (behind the start line) -->
+    <circle cx="4" cy="27" r="2.5" fill="#F6AD55"/>
+    <!-- Front leg bent -->
+    <path d="M 27 30 L 20 22 L 35 25" stroke="#4FD1C5" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+    <!-- Back leg on starting block -->
+    <path d="M 28 32 L 15 35" stroke="#2B6CB0" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Focus / Anticipation accent: Speed lines / energy near the start line -->
+  <path d="M 112 145 L 105 142" stroke="#FF9F43" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 112 170 L 104 167" stroke="#FF9F43" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 112 195 L 105 192" stroke="#FF9F43" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+</svg>

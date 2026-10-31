@@ -1,0 +1,32 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Mirror Frame -->
+  <rect x="70" y="50" width="100" height="120" rx="4" fill="#2D343E" stroke="#4A5568" stroke-width="4"/>
+  
+  <!-- Mirror Surface -->
+  <rect x="78" y="58" width="84" height="104" fill="#3B4252"/>
+  
+  <!-- Person looking directly into the mirror -->
+  <g>
+    <!-- Shoulders -->
+    <path d="M78 162 C78 145, 162 145, 162 162" fill="#F6AD55"/>
+    <!-- Head -->
+    <circle cx="120" cy="100" r="22" fill="#F6AD55"/>
+    <!-- Eyes looking straight -->
+    <circle cx="112" cy="96" r="3" fill="#1A1D24"/>
+    <circle cx="128" cy="96" r="3" fill="#1A1D24"/>
+  </g>
+  
+  <!-- Reflection in Mirror -->
+  <g transform="translate(0, 0)">
+    <!-- Reflection Head -->
+    <circle cx="120" cy="100" r="18" fill="#D69E2E" opacity="0.6"/>
+    <!-- Reflection Eyes -->
+    <circle cx="112" cy="96" r="2" fill="#1A1D24"/>
+    <circle cx="128" cy="96" r="2" fill="#1A1D24"/>
+  </g>
+  
+  <!-- Focus highlight/accent -->
+  <path d="M120 40 L125 50 L115 50 Z" fill="#F6AD55"/>
+</svg>

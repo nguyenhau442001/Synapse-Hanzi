@@ -1,0 +1,39 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background subtle electric field lines (representing high voltage environment) -->
+  <path d="M40 70 L70 70 L90 50 L110 90 L130 50 L150 90 L170 70 L200 70" stroke="#252A34" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M40 170 L70 170 L90 190 L110 150 L130 190 L150 150 L170 170 L200 170" stroke="#252A34" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- High Voltage Spark / Danger Element (Background Accent) -->
+  <path d="M120 40 L110 85 L135 85 L115 125" fill="none" stroke="#FF5722" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+  
+  <!-- Main Physical Object: Heavy Industrial Insulation Glove (Thick, Protective Construction) -->
+  <!-- Cuff / Forearm Opening -->
+  <path d="M90 180 L150 180 L145 140 L95 140 Z" fill="#2C3440" stroke="#3A4454" stroke-width="2"/>
+  <rect x="98" y="148" width="44" height="6" rx="3" fill="#1A1D24"/>
+
+  <!-- Heavy Glove Body (Safety Orange representing high grade electrical insulation) -->
+  <path d="M95 140 C85 130 80 110 85 85 C88 70 98 60 110 65 C115 67 118 72 120 78 C125 70 132 63 142 67 C152 71 155 85 152 110 C150 125 145 140 145 140 Z" fill="#FF8C00" stroke="#FFA733" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Thumb (Distinct, robust industrial shape) -->
+  <path d="M90 115 C75 118 70 135 82 142 C90 146 96 138 98 130 Z" fill="#E67E22" stroke="#FFA733" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Glove Seams and Reinforcement Ridges (Technical Details) -->
+  <path d="M102 90 C108 85 116 85 122 92" stroke="#D35400" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M110 102 C116 98 124 98 130 104" stroke="#D35400" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M116 114 C122 110 130 110 136 116" stroke="#D35400" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Safety Shield / Certification Symbol (Subtle high-grade badge on the glove cuff) -->
+  <path d="M120 156 L130 160 L130 170 C130 176 120 181 120 181 C120 181 110 176 110 170 L110 160 Z" fill="#1A1D24" stroke="#4CAF50" stroke-width="2"/>
+  <path d="M115 168 L118 171 L125 163" fill="none" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Blocked Energy / Spark Repel Effect (Showing absolute isolation/blocking of electric hazard) -->
+  <path d="M60 100 L75 105" stroke="#FF5722" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="55" cy="98" r="2" fill="#FF5722"/>
+  
+  <path d="M165 95 L180 100" stroke="#FF5722" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="185" cy="102" r="2" fill="#FF5722"/>
+
+</svg>

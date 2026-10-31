@@ -1,0 +1,30 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Conceptual Illustration: A precision-crafted mechanical puzzle piece or a perfectly balanced artisan key fitting seamlessly into a lock slot, symbolizing "恰如其分" (just right, perfect fit, appropriate). -->
+  
+  <!-- Subtle ambient background glow -->
+  <circle cx="120" cy="120" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Outer framework / Slot base -->
+  <path d="M 70 85 L 140 85 C 145 85, 148 88, 148 93 L 148 110 C 148 115, 152 118, 157 118 C 162 118, 166 122, 166 127 L 166 165 C 166 170, 162 173, 157 173 L 70 173 C 65 173, 62 170, 62 165 L 62 93 C 62 88, 65 85, 70 85 Z" fill="#2D3545" stroke="#3A445C" stroke-width="2"/>
+
+  <!-- Perfectly fitting central component (Gold/Orange accent representing "just right") -->
+  <g transform="translate(62, 85)">
+    <!-- Main block of the matching piece -->
+    <path d="M 8 0 L 78 0 C 83 0, 86 3, 86 8 L 86 25 C 86 30, 90 33, 95 33 C 100 33, 104 37, 104 42 L 104 80 C 104 85, 100 88, 95 88 L 8 88 C 3 88, 0 85, 0 80 L 0 8 C 0 3, 3 0, 8 0 Z" fill="#F59E0B"/>
+    
+    <!-- Internal detail lines for sleek modern design -->
+    <line x1="20" y1="20" x2="60" y2="20" stroke="#D97706" stroke-width="4" stroke-linecap="round"/>
+    <line x1="20" y1="44" x2="75" y2="44" stroke="#D97706" stroke-width="4" stroke-linecap="round"/>
+    <line x1="20" y1="68" x2="50" y2="68" stroke="#D97706" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Precision alignment indicator sparks/dots -->
+  <circle cx="120" cy="55" r="3" fill="#60A5FA"/>
+  <circle cx="120" cy="195" r="3" fill="#60A5FA"/>
+  
+  <path d="M 116 55 L 124 55" stroke="#60A5FA" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 116 195 L 124 195" stroke="#60A5FA" stroke-width="2" stroke-linecap="round"/>
+
+</svg>

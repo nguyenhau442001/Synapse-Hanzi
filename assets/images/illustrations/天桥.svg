@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Road surface -->
+  <rect x="0" y="160" width="240" height="80" fill="#2D3436"/>
+  <line x1="0" y1="200" x2="240" y2="200" stroke="#4A5568" stroke-width="2" stroke-dasharray="10,10"/>
+  
+  <!-- Bridge structure -->
+  <path d="M20 150 L220 150 L210 130 L30 130 Z" fill="#F39C12"/>
+  <path d="M20 150 L20 170" stroke="#F39C12" stroke-width="8" stroke-linecap="round"/>
+  <path d="M220 150 L220 170" stroke="#F39C12" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Bridge railing -->
+  <line x1="30" y1="130" x2="210" y2="130" stroke="#F1C40F" stroke-width="4"/>
+  <line x1="40" y1="130" x2="40" y2="120" stroke="#F1C40F" stroke-width="2"/>
+  <line x1="80" y1="130" x2="80" y2="120" stroke="#F1C40F" stroke-width="2"/>
+  <line x1="120" y1="130" x2="120" y2="120" stroke="#F1C40F" stroke-width="2"/>
+  <line x1="160" y1="130" x2="160" y2="120" stroke="#F1C40F" stroke-width="2"/>
+  <line x1="200" y1="130" x2="200" y2="120" stroke="#F1C40F" stroke-width="2"/>
+  
+  <!-- Pedestrian figure -->
+  <circle cx="100" cy="115" r="8" fill="#ECF0F1"/>
+  <path d="M100 123 L100 140 M100 128 L90 135 M100 128 L110 135 M100 140 L95 150 M100 140 L105 150" stroke="#ECF0F1" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Cars below -->
+  <rect x="20" y="210" width="30" height="15" rx="2" fill="#E74C3C"/>
+  <rect x="150" y="215" width="30" height="15" rx="2" fill="#3498DB"/>
+</svg>

@@ -1,0 +1,99 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <defs>
+    <!-- Glow effects -->
+    <filter id="gold-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#FFA500"/>
+    </linearGradient>
+
+    <linearGradient id="slate-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D3748"/>
+      <stop offset="100%" stop-color="#1A202C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background grid for modern tech-education feel -->
+  <g opacity="0.1">
+    <line x1="0" y1="60" x2="240" y2="60" stroke="#A0AEC0" stroke-width="0.5" stroke-dasharray="4 4"/>
+    <line x1="0" y1="120" x2="240" y2="120" stroke="#A0AEC0" stroke-width="0.5" stroke-dasharray="4 4"/>
+    <line x1="0" y1="180" x2="240" y2="180" stroke="#A0AEC0" stroke-width="0.5" stroke-dasharray="4 4"/>
+    <line x1="60" y1="0" x2="60" y2="240" stroke="#A0AEC0" stroke-width="0.5" stroke-dasharray="4 4"/>
+    <line x1="120" y1="0" x2="120" y2="240" stroke="#A0AEC0" stroke-width="0.5" stroke-dasharray="4 4"/>
+    <line x1="180" y1="0" x2="180" y2="240" stroke="#A0AEC0" stroke-width="0.5" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- 
+    CONCEPTUAL DESIGN FOR "寻常" (Ordinary / Usual vs Extraordinary):
+    Adjective rule: Visual contrast/scale exaggeration.
+    Left side: A plain, muted, ordinary herbal medicine mortar/pestle or routine jar (寻常 - ordinary, flat grey/blue tones).
+    Right side: Bursting out of an ordinary wooden container/grind-bowl is a magnificent, glowing golden elixir/herbal energy representing the extraordinary underlying capacity ("非同寻常").
+    Let's use a split comparison layout standard for flat vector flashcards to show the contrast of quality.
+  -->
+
+  <!-- Divider Line -->
+  <line x1="120" y1="40" x2="120" y2="200" stroke="#2D3748" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- LEFT SIDE: "寻常" (Ordinary, Plain, Standard) -->
+  <g transform="translate(25, 0)">
+    <!-- Label subtle indicator / baseline -->
+    <text x="35" y="45" fill="#718096" font-family="system-ui, sans-serif" font-size="10" font-weight="600" letter-spacing="1" text-anchor="middle">ORDINARY</text>
+    
+    <!-- Simple grey mortar and pestle -->
+    <path d="M 15 130 L 25 175 C 25 178, 28 180, 31 180 L 59 180 C 62 180, 65 178, 65 175 L 75 130 Z" fill="#4A5568"/>
+    <ellipse cx="45" cy="130" rx="30" ry="8" fill="#718096"/>
+    <ellipse cx="45" cy="130" rx="26" ry="6" fill="#2D3748"/>
+    
+    <!-- Plain simple herb leaf inside -->
+    <path d="M 40 132 Q 45 125, 52 135 Q 45 137, 40 132 Z" fill="#A0AEC0"/>
+    
+    <!-- Simple pestle resting -->
+    <rect x="52" y="95" width="10" height="45" rx="3" fill="#718096" transform="rotate(20 57 115)"/>
+  </g>
+
+
+  <!-- RIGHT SIDE: "非同寻常" (Extraordinary, Exceptional Quality emerging from the ordinary) -->
+  <g transform="translate(125, 0)">
+    <!-- Label subtle indicator / baseline -->
+    <text x="55" y="45" fill="#D69E2E" font-family="system-ui, sans-serif" font-size="10" font-weight="600" letter-spacing="1" text-anchor="middle">EXTRAORDINARY</text>
+
+    <!-- Glowing magical herbal aura / Energy burst -->
+    <g filter="url(#gold-glow)">
+      <!-- Radiating energy lines -->
+      <path d="M 55 110 L 55 75" stroke="url(#gold-grad)" stroke-width="3" stroke-linecap="round"/>
+      <path d="M 35 120 L 15 105" stroke="url(#gold-grad)" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M 75 120 L 95 105" stroke="url(#gold-grad)" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M 28 135 L 5 135" stroke="url(#gold-grad)" stroke-width="2" stroke-linecap="round"/>
+      <path d="M 82 135 L 105 135" stroke="url(#gold-grad)" stroke-width="2" stroke-linecap="round"/>
+      
+      <!-- Glowing core elements / golden herbs floating upward -->
+      <circle cx="55" cy="95" r="16" fill="url(#gold-grad)" opacity="0.3"/>
+      <circle cx="55" cy="95" r="8" fill="#FFF" opacity="0.9"/>
+    </g>
+
+    <!-- Ornate golden vessel / upgraded mortar -->
+    <path d="M 25 130 L 33 175 C 33 178, 36 180, 39 180 L 71 180 C 74 180, 77 178, 77 175 L 85 130 Z" fill="url(#slate-grad)" stroke="#D69E2E" stroke-width="1.5"/>
+    <ellipse cx="55" cy="130" rx="30" ry="8" fill="#4A5568" stroke="#D69E2E" stroke-width="1.5"/>
+    <ellipse cx="55" cy="130" rx="26" ry="6" fill="#1A202C"/>
+
+    <!-- Brilliant glowing herb sprouting from inside -->
+    <path d="M 55 130 Q 55 110, 65 95 Q 55 95, 45 115 Q 50 125, 55 130 Z" fill="url(#gold-grad)"/>
+    <path d="M 55 130 Q 55 115, 40 105 Q 48 118, 55 130 Z" fill="#F6E05E"/>
+
+    <!-- Floating sparkle particles for contrast scale -->
+    <circle cx="30" cy="75" r="3" fill="#FFEE52"/>
+    <circle cx="80" cy="85" r="2" fill="#FFEE52"/>
+    <circle cx="95" cy="120" r="2.5" fill="#F6AD55"/>
+    <circle cx="15" cy="155" r="2" fill="#F6AD55"/>
+  </g>
+
+  <!-- Bottom Accent / Flashcard Anchor -->
+  <rect x="96" y="210" width="48" height="4" rx="2" fill="#4A5568"/>
+</svg>

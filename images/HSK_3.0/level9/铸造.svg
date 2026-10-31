@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Industrial Casting Mold -->
+  <g transform="translate(60, 60)">
+    <!-- Mold Base -->
+    <path d="M20 140 L100 140 L110 120 L10 120 Z" fill="#3A404D"/>
+    <path d="M10 120 L110 120 L100 40 L20 40 Z" fill="#2A2F3A"/>
+    
+    <!-- Molten Metal Pouring into Mold -->
+    <path d="M60 0 C60 20, 50 30, 60 40 C70 50, 60 60, 65 80" stroke="#FF9F1C" stroke-width="8" stroke-linecap="round" fill="none"/>
+    
+    <!-- Glowing Metal inside Mold -->
+    <rect x="35" y="70" width="50" height="40" rx="4" fill="#FF9F1C"/>
+    <rect x="40" y="75" width="40" height="30" rx="2" fill="#FFB74D"/>
+    
+    <!-- Mechanical Clamp/Side support -->
+    <rect x="0" y="40" width="10" height="80" fill="#5D677D"/>
+    <rect x="110" y="40" width="10" height="80" fill="#5D677D"/>
+  </g>
+</svg>

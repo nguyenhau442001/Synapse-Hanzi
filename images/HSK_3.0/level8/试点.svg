@@ -1,0 +1,35 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative map grid lines (representing city scale) -->
+  <path d="M 40 80 L 200 80 M 40 140 L 200 140 M 90 40 L 90 200 M 150 40 L 150 200" stroke="#262B36" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <!-- Secondary city nodes in dark slate -->
+  <circle cx="90" cy="80" r="8" fill="#2E3646"/>
+  <circle cx="150" cy="140" r="8" fill="#2E3646"/>
+
+  <!-- Main highlighted pilot city node (试点) -->
+  <!-- Outer pulse ring -->
+  <circle cx="120" cy="110" r="32" fill="#F59E0B" fill-opacity="0.15"/>
+  <circle cx="120" cy="110" r="24" fill="#F59E0B" fill-opacity="0.25"/>
+
+  <!-- Inner glowing core -->
+  <circle cx="120" cy="110" r="16" fill="#F59E0B"/>
+
+  <!-- Location Pin icon centered on the pilot node -->
+  <path d="M 120 92 C 113.4 92 108 97.4 108 104 C 108 113 120 124 120 124 C 120 124 132 113 132 104 C 132 97.4 126.6 92 120 92 Z" fill="#FFFFFF"/>
+  <circle cx="120" cy="104" r="4" fill="#F59E0B"/>
+
+  <!-- Connection beam expanding outward (representing scaling up to the province/wider network) -->
+  <path d="M 120 110 L 90 80 M 120 110 L 150 140 M 120 110 L 150 70" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 4"/>
+  <circle cx="150" cy="70" r="6" fill="#3B82F6"/>
+
+  <!-- Base platform / Foundation representing the solid testbed -->
+  <path d="M 70 175 Q 120 160 170 175 L 180 190 Q 120 205 60 190 Z" fill="#2E3646"/>
+  <path d="M 70 175 L 60 190 Q 120 205 180 190 L 170 175 Q 120 190 70 175 Z" fill="#3B4252"/>
+  
+  <!-- Focus highlight tick on the base -->
+  <path d="M 100 185 L 120 190 L 140 185" stroke="#F59E0B" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+</svg>

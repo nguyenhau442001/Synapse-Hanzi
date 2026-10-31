@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Industrial Wall/Background Elements -->
+  <path d="M40 70 L200 70" stroke="#2A2F3B" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M40 170 L200 170" stroke="#2A2F3B" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <!-- Valve Wheel -->
+  <g transform="translate(120, 70)">
+    <circle cx="0" cy="0" r="14" fill="#2E3646" stroke="#4A5568" stroke-width="3"/>
+    <circle cx="0" cy="0" r="4" fill="#1A1D24"/>
+    <path d="M 0 -14 L 0 -22 M 10 10 L 16 16 M -10 10 L -16 16 M -10 -10 L -16 -16 M 10 -10 L 16 -16" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Industrial Pipe (Main horizontal section) -->
+  <rect x="50" y="85" width="140" height="40" rx="6" fill="#3E4756"/>
+  <!-- Pipe Joint Flanges -->
+  <rect x="95" y="80" width="12" height="50" rx="3" fill="#525E75"/>
+  <rect x="133" y="80" width="12" height="50" rx="3" fill="#525E75"/>
+
+  <!-- Crack / Rupture Zone on Pipe -->
+  <path d="M 116 95 L 122 105 L 115 110 L 124 118" stroke="#1A1D24" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Glow from crack indicating pressure/hazard -->
+  <path d="M 118 102 L 121 112" stroke="#FF9F43" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Toxic Gas / Liquid Leak (Leaking droplets and vapor plumes) -->
+  <!-- Vapor Cloud 1 -->
+  <path d="M 120 125 C 110 125 105 135 110 145 C 102 150 105 162 115 165 C 120 175 135 175 140 165 C 150 162 152 150 145 142 C 150 135 140 125 130 125 Z" fill="#FF9F43" opacity="0.15"/>
+
+  <!-- Vapor Cloud 2 (Dense Core) -->
+  <path d="M 117 122 C 112 122 108 128 112 135 C 106 138 108 148 115 150 C 118 158 130 158 133 150 C 140 148 142 138 137 133 C 141 128 135 122 127 122 Z" fill="#FF9F43" opacity="0.3"/>
+
+  <!-- Dripping Hazard Droplets -->
+  <circle cx="120" cy="132" r="3.5" fill="#FF9F43"/>
+  <path d="M 118.5 138 Q 120 143 120 146 Q 120 143 121.5 138 Z" fill="#FF9F43"/>
+  
+  <circle cx="112" cy="155" r="2.5" fill="#FF9F43" opacity="0.8"/>
+  <circle cx="130" cy="162" r="2" fill="#FF9F43" opacity="0.6"/>
+
+  <!-- Hazard Indicator Glow underneath -->
+  <ellipse cx="120" cy="185" rx="35" ry="8" fill="#FF9F43" opacity="0.12"/>
+</svg>

@@ -1,0 +1,35 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background atmosphere: subtle cold blue lines -->
+  <path d="M0 0h240v240H0z" fill="#1A1D24"/>
+  <path d="M20 20h200v200H20z" stroke="#2D343E" stroke-width="1" fill="none" stroke-dasharray="4 4"/>
+  
+  <!-- Person: Upper body, dark theme style -->
+  <g transform="translate(60, 80)">
+    <!-- Shoulders/Body -->
+    <path d="M20 120 C 20 80, 100 80, 100 120 L 100 160 L 20 160 Z" fill="#3D4654"/>
+    
+    <!-- Hands rubbing together (The core action) -->
+    <g fill="#FFB347">
+      <path d="M40 100 C 30 100, 30 120, 40 120 C 50 120, 50 100, 40 100" />
+      <path d="M80 100 C 90 100, 90 120, 80 120 C 70 120, 70 100, 80 100" />
+      <!-- Motion lines for rubbing -->
+      <path d="M55 105 L 65 115" stroke="#FFB347" stroke-width="3" stroke-linecap="round"/>
+      <path d="M65 105 L 55 115" stroke="#FFB347" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    
+    <!-- Face (Calm, focused) -->
+    <circle cx="60" cy="60" r="30" fill="#2D343E"/>
+    <circle cx="50" cy="55" r="3" fill="#A0AEC0"/>
+    <circle cx="70" cy="55" r="3" fill="#A0AEC0"/>
+    <path d="M50 70 Q 60 75, 70 70" stroke="#A0AEC0" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Warmth effect: Radiating glow from hands -->
+  <circle cx="120" cy="180" r="15" fill="#FFB347" opacity="0.3"/>
+  <circle cx="120" cy="180" r="30" fill="none" stroke="#FFB347" stroke-width="2" opacity="0.2"/>
+  
+  <!-- Contrast: Cold environment indicators (subtle) -->
+  <path d="M20 20 L 30 30 M220 20 L 210 30 M20 220 L 30 210 M220 220 L 210 210" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+</svg>

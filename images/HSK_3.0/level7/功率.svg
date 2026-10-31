@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Air Conditioner Unit (Main Object) -->
+  <g transform="translate(60, 80)">
+    <!-- Main Body -->
+    <rect x="0" y="0" width="120" height="40" rx="4" fill="#E0E0E0"/>
+    <!-- Front Panel Detail -->
+    <rect x="5" y="5" width="110" height="30" rx="2" fill="#B0B0B0"/>
+    <!-- Air Vent Slats -->
+    <rect x="10" y="25" width="100" height="3" fill="#1A1D24"/>
+    <rect x="10" y="30" width="100" height="3" fill="#1A1D24"/>
+  </g>
+
+  <!-- Electrical Plug and Cord (Representing Power/Gonglv) -->
+  <path d="M120 120 L120 160" stroke="#FFB300" stroke-width="6" stroke-linecap="round"/>
+  <rect x="105" y="160" width="30" height="20" rx="2" fill="#FFB300"/>
+  <rect x="110" y="180" width="5" height="10" fill="#FFB300"/>
+  <rect x="125" y="180" width="5" height="10" fill="#FFB300"/>
+
+  <!-- Emphasizing the "Power" aspect with a subtle glow effect behind the plug -->
+  <circle cx="120" cy="170" r="25" fill="#FFB300" opacity="0.15"/>
+</svg>

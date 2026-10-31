@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Character: Young Scholar -->
+  <g transform="translate(120, 140)">
+    <!-- Body -->
+    <path d="M-30 80 L30 80 L20 20 L-20 20 Z" fill="#3D4451"/>
+    
+    <!-- Head (Bowed down) -->
+    <circle cx="0" cy="-10" r="25" fill="#F4C2A5"/>
+    
+    <!-- Hair -->
+    <path d="M-25 -15 A 25 25 0 0 1 25 -15 L 25 -25 A 30 30 0 0 0 -25 -25 Z" fill="#2D3436"/>
+    
+    <!-- Eyes (Closed, looking down) -->
+    <path d="M-12 -5 L-4 -5 M4 -5 L12 -5" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Neck -->
+    <rect x="-8" y="15" width="16" height="10" fill="#F4C2A5"/>
+  </g>
+
+  <!-- Visual Metaphor: Shadow/Weight of Shame -->
+  <path d="M80 180 C100 160, 140 160, 160 180" stroke="#FFB347" stroke-width="3" stroke-dasharray="6 6" fill="none" opacity="0.6"/>
+  
+  <!-- Accent: Subtle blush on cheeks to convey embarrassment -->
+  <circle cx="108" cy="135" r="3" fill="#E74C3C" opacity="0.4"/>
+  <circle cx="132" cy="135" r="3" fill="#E74C3C" opacity="0.4"/>
+</svg>

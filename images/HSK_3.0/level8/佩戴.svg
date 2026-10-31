@@ -1,0 +1,68 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background grid/glow elements for depth -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.5"/>
+  <path d="M120 50 V190 M50 120 H190" stroke="#2D3342" stroke-width="1" stroke-dasharray="4 4" opacity="0.3"/>
+
+  <!-- Motion lines indicating the action of wearing/putting on -->
+  <path d="M70 90 C 85 70, 110 70, 125 85" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M65 100 C 80 82, 105 82, 120 95" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" fill="none" stroke-dasharray="3 3" opacity="0.6"/>
+  <path d="M110 80 L118 88" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+  <path d="M115 78 L118 88 L108 85" fill="#F59E0B"/>
+
+  <!-- Medical Character Profile (Focus on Head, Mask, and Goggles - 佩戴) -->
+  <!-- Scrubs / Uniform Body -->
+  <path d="M70 200 C70 170, 90 155, 120 155 C150 155, 170 170, 170 200 Z" fill="#2E4A62"/>
+  <path d="M95 155 L120 180 L145 155" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Neck -->
+  <path d="M105 140 H135 V160 H105 Z" fill="#FDE047" opacity="0.85"/>
+
+  <!-- Head Base & Ear -->
+  <circle cx="120" cy="115" r="35" fill="#FDE047" opacity="0.9"/>
+  <circle cx="92" cy="118" r="5" fill="#EAB308"/> <!-- Ear -->
+
+  <!-- Medical Cap -->
+  <path d="M88 100 C88 80, 100 75, 120 75 C140 75, 152 80, 152 100 Z" fill="#38BDF8"/>
+  <path d="M85 98 H155 V106 H85 Z" fill="#0284C7"/>
+
+  <!-- Protective Goggles (Being put on) -->
+  <g transform="translate(0, -2)">
+    <!-- Strap -->
+    <path d="M92 105 C85 100, 80 105, 75 110" stroke="#334155" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M148 105 C155 100, 160 105, 165 110" stroke="#334155" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- Goggle Frames & Lenses -->
+    <rect x="98" y="98" width="22" height="15" rx="5" fill="#1E293B" stroke="#94A3B8" stroke-width="2"/>
+    <rect x="120" y="98" width="22" height="15" rx="5" fill="#1E293B" stroke="#94A3B8" stroke-width="2"/>
+    <!-- Glass reflection -->
+    <path d="M102 102 L108 108 M124 102 L130 108" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  </g>
+
+  <!-- Face / Eyes underneath (peek through) -->
+  <circle cx="109" cy="106" r="3" fill="#1E293B"/>
+  <circle cx="131" cy="106" r="3" fill="#1E293B"/>
+
+  <!-- Face Mask (Surgical Mask - correctly worn/佩戴) -->
+  <g>
+    <!-- Mask Body -->
+    <path d="M98 116 C98 116, 120 128, 142 116 C148 126, 142 138, 120 140 C98 138, 92 126, 98 116 Z" fill="#E0F2FE" stroke="#BAE6FD" stroke-width="1.5"/>
+    <!-- Mask Pleats -->
+    <path d="M100 121 C120 125, 140 121, 140 121" stroke="#7DD3FC" stroke-width="1.5" fill="none"/>
+    <path d="M99 127 C120 131, 141 127, 141 127" stroke="#7DD3FC" stroke-width="1.5" fill="none"/>
+    <!-- Ear loops -->
+    <path d="M98 120 C90 120, 88 112, 92 108" stroke="#94A3B8" stroke-width="2" fill="none"/>
+    <path d="M142 120 C150 120, 152 112, 148 108" stroke="#94A3B8" stroke-width="2" fill="none"/>
+    <!-- Nose bridge strip -->
+    <path d="M115 116 H125" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Hands actively adjusting/wearing the equipment -->
+  <!-- Left Hand -->
+  <path d="M85 110 C80 115, 78 125, 85 130 C88 132, 92 128, 90 122 Z" fill="#FDE047"/>
+  <!-- Right Hand -->
+  <path d="M155 110 C160 115, 162 125, 155 130 C152 132, 148 128, 150 122 Z" fill="#FDE047"/>
+
+  <!-- Focus / Accent Glow (Highlighting the action) -->
+  <circle cx="120" cy="115" r="70" stroke="#F59E0B" stroke-width="1.5" fill="none" opacity="0.3" stroke-dasharray="8 6"/>
+</svg>

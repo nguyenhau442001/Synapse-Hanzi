@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle decorative background glow representing official authority/rules -->
+  <circle cx="120" cy="120" r="70" fill="#222834" opacity="0.6"/>
+
+  <!-- Document / Charter Base (Representing 章程 - Regulations/Statutes) -->
+  <g transform="translate(64, 45)">
+    <!-- Document shadow -->
+    <rect x="4" y="6" width="104" height="138" rx="6" fill="#12141A" opacity="0.5"/>
+    
+    <!-- Main Paper Sheet -->
+    <rect x="0" y="0" width="104" height="138" rx="6" fill="#E6EDF3"/>
+    
+    <!-- Top colored binding accent (representing official status) -->
+    <path d="M 0 6 C 0 2.686 2.686 0 6 0 L 98 0 C 101.314 0 104 2.686 104 6 L 104 22 L 0 22 Z" fill="#F0B429"/>
+    
+    <!-- Header lines inside the banner -->
+    <rect x="16" y="8" width="40" height="6" rx="3" fill="#1A1D24" opacity="0.8"/>
+    
+    <!-- Paragraph lines (Representing articles and rules) -->
+    <rect x="16" y="38" width="56" height="5" rx="2.5" fill="#9FB3C8"/>
+    <rect x="16" y="52" width="72" height="4" rx="2" fill="#BCCCDC"/>
+    <rect x="16" y="64" width="64" height="4" rx="2" fill="#BCCCDC"/>
+    
+    <rect x="16" y="84" width="56" height="5" rx="2.5" fill="#9FB3C8"/>
+    <rect x="16" y="98" width="72" height="4" rx="2" fill="#BCCCDC"/>
+    <rect x="16" y="110" width="50" height="4" rx="2" fill="#BCCCDC"/>
+    
+    <!-- Paragraph bullet points / checkmarks representing compliance -->
+    <circle cx="9" cy="40" r="2.5" fill="#F0B429"/>
+    <circle cx="9" cy="86" r="2.5" fill="#F0B429"/>
+  </g>
+
+  <!-- Official Seal / Stamp (Representing official regulation & bylaws) -->
+  <g transform="translate(142, 126)">
+    <!-- Seal shadow -->
+    <circle cx="2" cy="2" r="24" fill="#000000" opacity="0.3"/>
+    <!-- Outer red ring -->
+    <circle cx="0" cy="0" r="24" fill="#E11D48"/>
+    <!-- Inner white space -->
+    <circle cx="0" cy="0" r="20" fill="#E11D48"/>
+    <circle cx="0" cy="0" r="19" fill="#FFFFFF"/>
+    <!-- Star icon inside seal -->
+    <path d="M 0 -9 L 2.6 -2.8 L 9.4 -2.8 L 3.9 1.2 L 6 7.8 L 0 3.8 L -6 7.8 L -3.9 1.2 L -9.4 -2.8 L -2.6 -2.8 Z" fill="#E11D48" transform="scale(0.85)"/>
+  </g>
+
+</svg>

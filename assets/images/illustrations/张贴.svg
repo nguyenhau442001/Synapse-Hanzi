@@ -1,0 +1,77 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for focus -->
+  <circle cx="120" cy="120" r="90" fill="#252A34" opacity="0.5"/>
+
+  <!-- Bulletin Board Frame (Object/Địa điểm representing 张贴 context) -->
+  <rect x="52" y="42" width="136" height="156" rx="8" fill="#2D3748" stroke="#4A5568" stroke-width="3"/>
+  <rect x="60" y="50" width="120" height="140" rx="4" fill="#1E2530"/>
+
+  <!-- Cork texture lines/dots subtly inside board -->
+  <circle cx="75" cy="70" r="1.5" fill="#3E4C59"/>
+  <circle cx="105" cy="65" r="1.5" fill="#3E4C59"/>
+  <circle cx="165" cy="85" r="1.5" fill="#3E4C59"/>
+  <circle cx="85" cy="120" r="1.5" fill="#3E4C59"/>
+  <circle cx="145" cy="150" r="1.5" fill="#3E4C59"/>
+  <circle cx="110" cy="175" r="1.5" fill="#3E4C59"/>
+
+  <!-- Background Poster pinned on the board -->
+  <rect x="85" y="65" width="70" height="95" rx="3" fill="#E2E8F0"/>
+  <!-- Poster header/lines (abstract graphic representing public notice/haibao) -->
+  <rect x="95" y="77" width="50" height="8" rx="2" fill="#CBD5E0"/>
+  <rect x="95" y="93" width="35" height="4" rx="1" fill="#A0AEC0"/>
+  <rect x="95" y="103" width="50" height="4" rx="1" fill="#A0AEC0"/>
+  <rect x="95" y="113" width="42" height="4" rx="1" fill="#A0AEC0"/>
+  <!-- Graphic placeholder on poster -->
+  <circle cx="120" cy="140" r="14" fill="#CBD5E0"/>
+
+  <!-- Pin holding the background poster -->
+  <circle cx="120" cy="58" r="3.5" fill="#E53E3E"/>
+  <circle cx="120" cy="57" r="1.5" fill="#FEB2B2"/>
+
+  <!-- Foreground Poster being actively posted (张贴 action frozen in place) -->
+  <!-- Tilted slightly to show dynamic action of pasting -->
+  <g transform="rotate(6, 120, 130)">
+    <!-- Poster shadow -->
+    <rect x="73" y="83" width="84" height="105" rx="4" fill="#000000" opacity="0.3"/>
+    
+    <!-- Poster body -->
+    <rect x="70" y="80" width="84" height="105" rx="4" fill="#FFF5F5"/>
+    
+    <!-- Accent header block on poster (eco/notice theme color) -->
+    <rect x="80" y="92" width="64" height="24" rx="3" fill="#319795"/>
+    
+    <!-- Graphic icon on active poster (Recycle/Notice symbol representation) -->
+    <circle cx="112" cy="142" r="18" fill="#EDF2F7"/>
+    <path d="M106 142 L118 142 M112 136 L112 148" stroke="#319795" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Content lines on poster -->
+    <rect x="86" y="123" width="52" height="5" rx="2" fill="#E2E8F0"/>
+    <rect x="86" y="166" width="40" height="4" rx="2" fill="#CBD5E0"/>
+    <rect x="86" y="174" width="28" height="4" rx="2" fill="#CBD5E0"/>
+
+    <!-- Bright Gold Push Pin / Thumbtack fixing the poster top -->
+    <circle cx="112" cy="85" r="5" fill="#ECC94B"/>
+    <circle cx="112" cy="84" r="2" fill="#FEFCBF"/>
+  </g>
+
+  <!-- Human Hand smoothly smoothing/pasting the poster (representing 张贴 action) -->
+  <g transform="translate(10, 10)">
+    <!-- Hand Palm & Wrist -->
+    <path d="M 140 135 C 145 130, 160 135, 175 145 C 190 155, 200 170, 205 185 L 175 195 C 165 180, 155 165, 140 155 Z" fill="#D69E2E" opacity="0.2"/> <!-- shadow -->
+    <path d="M 135 125 C 142 120, 158 128, 172 138 C 187 148, 198 162, 203 178 L 170 188 C 160 173, 150 158, 135 145 Z" fill="#E0A96D"/>
+    
+    <!-- Fingers pressing gently on the poster surface -->
+    <path d="M 115 110 C 122 105, 135 112, 145 122 C 150 127, 142 138, 135 135 C 125 130, 115 120, 115 110 Z" fill="#E0A96D"/>
+    <path d="M 100 118 C 108 114, 120 122, 128 132 C 132 137, 125 143, 118 139 C 110 134, 102 125, 100 118 Z" fill="#EDBA85"/>
+    <path d="M 90 130 C 97 127, 108 135, 114 144 C 118 149, 111 154, 105 150 C 98 145, 91 137, 90 130 Z" fill="#E0A96D"/>
+    
+    <!-- Sleeve cuff -->
+    <path d="M 185 175 L 205 165 L 215 185 L 195 195 Z" fill="#3182CE"/>
+  </g>
+
+  <!-- Sparkle/Action Indicator for precise pasting motion -->
+  <path d="M 85 95 L 88 100 L 93 103 L 88 106 L 85 111 L 82 106 L 77 103 L 82 100 Z" fill="#ECC94B"/>
+</svg>

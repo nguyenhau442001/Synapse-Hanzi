@@ -1,0 +1,78 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements: subtle tech-diplomacy grid lines -->
+  <g opacity="0.1" stroke="#ffffff" stroke-width="0.5" stroke-dasharray="2 4">
+    <line x1="40" y1="120" x2="200" y2="120" />
+    <line x1="120" y1="40" x2="120" y2="200" />
+    <circle cx="120" cy="120" r="70" fill="none" />
+  </g>
+
+  <!-- Motion lines indicating dynamic diplomatic interaction -->
+  <g opacity="0.3" stroke="#F39C12" stroke-width="2" stroke-linecap="round" fill="none">
+    <path d="M 85 85 C 100 70, 140 70, 155 85" stroke-dasharray="3 3"/>
+    <path d="M 85 155 C 100 170, 140 170, 155 155"/>
+  </g>
+
+  <!-- Left Character (Diplomat A) -->
+  <g transform="translate(60, 130)">
+    <!-- Body / Suit -->
+    <path d="M -15 50 L -25 75 L 25 75 L 15 50 Z" fill="#2C3E50"/>
+    <polygon points="0,35 -8,55 8,55" fill="#ECF0F1"/> <!-- Shirt collar & tie -->
+    <!-- Head -->
+    <circle cx="0" cy="20" r="14" fill="#F5CBA7"/>
+    <!-- Hair -->
+    <path d="M -12 15 C -15 5, 10 5, 12 15 Z" fill="#34495E"/>
+    <!-- Arm reaching forward with open gesture -->
+    <path d="M 10 40 L 35 45 L 45 35" fill="none" stroke="#2C3E50" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="45" cy="35" r="4" fill="#F5CBA7"/>
+  </g>
+
+  <!-- Right Character (Diplomat B) -->
+  <g transform="translate(180, 130)">
+    <!-- Body / Suit -->
+    <path d="M -15 50 L -25 75 L 25 75 L 15 50 Z" fill="#34495E"/>
+    <polygon points="0,35 -8,55 8,55" fill="#ECF0F1"/>
+    <!-- Head -->
+    <circle cx="0" cy="20" r="14" fill="#F5CBA7"/>
+    <!-- Hair -->
+    <path d="M -12 15 C -10 5, 15 5, 12 15 Z" fill="#2C3E50"/>
+    <!-- Arm reaching forward -->
+    <path d="M -10 40 L -35 45 L -45 35" fill="none" stroke="#34495E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="-45" cy="35" r="4" fill="#F5CBA7"/>
+  </g>
+
+  <!-- CENTRAL CONCEPT: "求同" (Seeking Common Ground) - Glowing Shared Core -->
+  <g transform="translate(120, 105)">
+    <!-- Soft background glow for common ground -->
+    <circle cx="0" cy="0" r="28" fill="#F39C12" opacity="0.15"/>
+    <circle cx="0" cy="0" r="20" fill="#F39C12" opacity="0.3"/>
+    
+    <!-- Central interlocking connection icon representing shared agreements -->
+    <circle cx="0" cy="0" r="14" fill="#F39C12"/>
+    <path d="M -6 0 L 6 0 M 0 -6 L 0 6" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- CENTRAL CONCEPT: "存异" (Preserving Differences) - Distinct Perspectives safely set aside/integrated -->
+  <!-- Left distinct element (Blue accent) -->
+  <g transform="translate(85, 105)">
+    <circle cx="0" cy="0" r="8" fill="#3498DB" opacity="0.8"/>
+    <!-- Subtle containment ring showing it's acknowledged, not destroyed -->
+    <circle cx="0" cy="0" r="13" fill="none" stroke="#3498DB" stroke-width="1.5" stroke-dasharray="3 2" opacity="0.7"/>
+  </g>
+
+  <!-- Right distinct element (Coral/Red accent) -->
+  <g transform="translate(155, 105)">
+    <rect x="-7" y="-7" width="14" height="14" rx="3" fill="#E74C3C" opacity="0.8" transform="rotate(45)" />
+    <!-- Subtle containment ring -->
+    <circle cx="0" cy="0" r="13" fill="none" stroke="#E74C3C" stroke-width="1.5" stroke-dasharray="3 2" opacity="0.7"/>
+  </g>
+
+  <!-- Connection / Dialogue Table Base -->
+  <g transform="translate(120, 175)">
+    <path d="M -60 0 L 60 0 L 50 12 L -50 12 Z" fill="#2C3E50"/>
+    <rect x="-30" y="12" width="60" height="8" fill="#1ABC9C" rx="2"/>
+  </g>
+
+</svg>

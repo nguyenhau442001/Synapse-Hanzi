@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambient Glow for Concept of "Vague/Blurry" -->
+  <circle cx="120" cy="115" r="70" fill="#3B4252" opacity="0.3" filter="blur(16px)"/>
+
+  <!-- Central Physical Object: A Wireframe Cage containing a blurred, formless glowing core (Representing "笼" - Cage + "统" - General/Blurry) -->
+  <g transform="translate(120, 115)">
+    <!-- Outer Cage Structure (Isometric/3D Flat Wireframe) -->
+    <!-- Back vertical bars -->
+    <line x1="-30" y1="-45" x2="-30" y2="45" stroke="#4C566A" stroke-width="2" stroke-dasharray="3 3"/>
+    <line x1="30" y1="-45" x2="30" y2="45" stroke="#4C566A" stroke-width="2" stroke-dasharray="3 3"/>
+    
+    <!-- Top & Bottom Rings / Framework -->
+    <ellipse cx="0" cy="-45" rx="45" ry="16" fill="none" stroke="#616E88" stroke-width="2.5"/>
+    <ellipse cx="0" cy="45" rx="45" ry="16" fill="none" stroke="#616E88" stroke-width="2.5"/>
+
+    <!-- Front Vertical Bars (Solid) -->
+    <line x1="-45" y1="-45" x2="-45" y2="45" stroke="#88C0D0" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="-48" x2="0" y2="48" stroke="#88C0D0" stroke-width="3" stroke-linecap="round"/>
+    <line x1="45" y1="-45" x2="45" y2="45" stroke="#88C0D0" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Middle Horizontal Connecting Arc/Stripe -->
+    <path d="M -45 0 Q 0 10 45 0" fill="none" stroke="#88C0D0" stroke-width="2" opacity="0.6"/>
+    <path d="M -45 0 Q 0 -10 45 0" fill="none" stroke="#88C0D0" stroke-width="2" opacity="0.6"/>
+
+    <!-- The Vague, Undefined Object Inside (Cloudy, Blurred Shape replacing a distinct item) -->
+    <g filter="blur(6px)" opacity="0.8">
+      <ellipse cx="0" cy="0" rx="24" ry="24" fill="#EBCB8B"/>
+    </g>
+    <!-- Inner Sharp Core (Fading out into blur) -->
+    <circle cx="0" cy="0" r="16" fill="#D08770" opacity="0.9"/>
+    <circle cx="-4" cy="-4" r="6" fill="#ECEFF4" opacity="0.6"/>
+
+    <!-- Top Cage Ring Front Edge -->
+    <path d="M -45 -45 C -45 -30, 45 -30, 45 -45" fill="none" stroke="#88C0D0" stroke-width="3"/>
+    <!-- Bottom Cage Ring Front Edge -->
+    <path d="M -45 45 C -45 30, 45 30, 45 45" fill="none" stroke="#88C0D0" stroke-width="3"/>
+  </g>
+
+  <!-- Accent Focus Indicator / Modern UI framing element -->
+  <circle cx="120" cy="115" r="82" fill="none" stroke="#D08770" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.4"/>
+</svg>

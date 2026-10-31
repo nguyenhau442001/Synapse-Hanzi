@@ -1,0 +1,19 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(40, 60)">
+    <!-- Calendar base -->
+    <rect x="0" y="0" width="160" height="120" rx="8" fill="#2D343E" stroke="#FFB84D" stroke-width="2"/>
+    <rect x="0" y="0" width="160" height="30" rx="8" fill="#FFB84D"/>
+    
+    <!-- Calendar pages representing years -->
+    <rect x="10" y="40" width="140" height="20" rx="2" fill="#3D4451"/>
+    <rect x="10" y="70" width="140" height="20" rx="2" fill="#4A5363"/>
+    <rect x="10" y="100" width="140" height="20" rx="2" fill="#5D687D"/>
+    
+    <!-- Binding rings -->
+    <circle cx="40" cy="0" r="4" fill="#1A1D24"/>
+    <circle cx="80" cy="0" r="4" fill="#1A1D24"/>
+    <circle cx="120" cy="0" r="4" fill="#1A1D24"/>
+  </g>
+</svg>

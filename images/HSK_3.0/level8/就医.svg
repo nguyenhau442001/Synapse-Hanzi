@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glowing background ambient for focus -->
+  <circle cx="120" cy="120" r="80" fill="#223048" opacity="0.5"/>
+
+  <!-- Conceptual Central Illustration: The Medical Consultation / Hospital Visit ("就医") -->
+  <!-- Represents a physical medical setting with a doctor and patient interaction/stethoscope/medical cross -->
+  
+  <g transform="translate(0, 5)">
+    <!-- Hospital cross background plate (subtle structural element) -->
+    <rect x="100" y="55" width="40" height="90" rx="8" fill="#2A3B55"/>
+    <rect x="75" y="80" width="90" height="40" rx="8" fill="#2A3B55"/>
+
+    <!-- Patient silhouette / head & shoulders (Left side) -->
+    <circle cx="75" cy="115" r="18" fill="#64B5F6"/>
+    <path d="M50 160 C50 138 62 135 75 135 C88 135 100 138 100 160 Z" fill="#42A5F5"/>
+
+    <!-- Doctor / Medical professional silhouette (Right side) -->
+    <circle cx="165" cy="115" r="18" fill="#81C784"/>
+    <path d="M140 160 C140 138 152 135 165 135 C178 135 190 138 190 160 Z" fill="#66BB6A"/>
+
+    <!-- Central Medical Cross (Iconic symbol for medical care / jiùyī) -->
+    <rect x="110" y="85" width="20" height="60" rx="4" fill="#FFB74D"/>
+    <rect x="90" y="105" width="60" height="20" rx="4" fill="#FFB74D"/>
+
+    <!-- Stethoscope curving around the medical cross, symbolizing examination / consultation -->
+    <path d="M95 85 C95 70 110 65 120 65 C130 65 145 70 145 85" fill="none" stroke="#E0E0E0" stroke-width="4" stroke-linecap="round"/>
+    <!-- Stethoscope earpieces -->
+    <circle cx="93" cy="83" r="3" fill="#E0E0E0"/>
+    <circle cx="147" cy="83" r="3" fill="#E0E0E0"/>
+    <!-- Stethoscope tubing leading down to chest piece -->
+    <path d="M120 65 L120 120 C120 130 130 135 135 135" fill="none" stroke="#E0E0E0" stroke-width="4" stroke-linecap="round"/>
+    <!-- Chest piece / bell -->
+    <circle cx="138" cy="138" r="6" fill="#FFA726"/>
+  </g>
+
+  <!-- Ground reflection / base platform -->
+  <ellipse cx="120" cy="180" r="70" fill="#243044" opacity="0.8"/>
+  <ellipse cx="120" cy="180" r="50" fill="#2E3E59" opacity="0.5"/>
+
+</svg>

@@ -1,0 +1,33 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background elements: Soft ambient glow and distant window representing being away from home -->
+  <circle cx="120" cy="120" r="90" fill="#222733" opacity="0.6"/>
+  
+  <!-- Window frame symbolizing distance/homesickness -->
+  <rect x="75" y="55" width="90" height="110" rx="4" fill="none" stroke="#2D3446" stroke-width="3"/>
+  <line x1="120" y1="55" x2="120" y2="165" stroke="#2D3446" stroke-width="2"/>
+  <line x1="75" y1="110" x2="165" y2="110" stroke="#2D3446" stroke-width="2"/>
+  
+  <!-- Distant moon outside the window (referencing the Mid-Autumn festival context) -->
+  <circle cx="145" cy="80" r="10" fill="#F39C12" opacity="0.8"/>
+
+  <!-- Main Character (Noun: Person sitting alone, curled up, gazing downward) -->
+  <!-- Body/Hoodie in modern flat style with high-contrast accent (gold/orange) -->
+  <path d="M100 155 C90 155 85 145 85 135 L85 115 C85 100 95 90 110 90 L130 90 C145 90 155 100 155 115 L155 135 C155 145 150 155 140 155 Z" fill="#E67E22"/>
+  
+  <!-- Head lowered -->
+  <circle cx="120" cy="98" r="16" fill="#FAD7A0"/>
+  
+  <!-- Hair -->
+  <path d="M105 95 C105 85 115 82 125 82 C135 82 135 92 135 98 Z" fill="#2C3E50"/>
+
+  <!-- Folded legs sitting on a low modern stool/bench -->
+  <rect x="95" y="155" width="50" height="10" rx="3" fill="#34495E"/>
+  <rect x="105" y="165" width="8" height="20" fill="#2C3E50"/>
+  <rect x="127" y="165" width="8" height="20" fill="#2C3E50"/>
+
+  <!-- Subtle shadow underneath -->
+  <ellipse cx="120" cy="188" rx="40" ry="4" fill="#111418"/>
+</svg>

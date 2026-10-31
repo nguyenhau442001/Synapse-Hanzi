@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle Racetrack Curve Background -->
+  <path d="M 20 180 Q 120 180 220 120" stroke="#2A2F3D" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <path d="M 20 180 Q 120 180 220 120" stroke="#3A4256" stroke-width="2" stroke-dasharray="6 6" fill="none"/>
+
+  <!-- Car A: Sleek Modern Supercar (Left/Behind in scale context, but representing equal dynamic speed) -->
+  <g transform="translate(40, 120)">
+    <!-- Motion lines -->
+    <path d="M -15 25 L -35 25" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+    <path d="M -10 32 L -25 32" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Car Body -->
+    <path d="M 0 30 L 15 25 L 35 20 L 65 20 L 80 30 L 85 40 L 0 40 Z" fill="#64748B"/>
+    <path d="M 25 20 L 40 8 L 55 8 L 65 20 Z" fill="#475569"/>
+    <!-- Wheels -->
+    <circle cx="20" cy="40" r="9" fill="#0F172A"/>
+    <circle cx="20" cy="40" r="4" fill="#94A3B8"/>
+    <circle cx="70" cy="40" r="9" fill="#0F172A"/>
+    <circle cx="70" cy="40" r="4" fill="#94A3B8"/>
+    <!-- Headlight -->
+    <path d="M 82 32 L 85 35" stroke="#E2E8F0" stroke-width="2"/>
+  </g>
+
+  <!-- Car B: High-Performance Supercar (Right, emphasizing "not inferior / equally matched" in acceleration) -->
+  <g transform="translate(110, 110)">
+    <!-- Dynamic Motion Lines (Intense) -->
+    <path d="M -25 25 L -55 25" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M -20 33 L -45 33" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <path d="M -30 17 L -45 17" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Spark / Energy burst at rear to show powerful acceleration -->
+    <polygon points="-25,29 -35,24 -30,29 -35,34" fill="#FBBF24"/>
+
+    <!-- Modern Supercar Body (Domestic EV Supercar concept) -->
+    <path d="M -5 32 L 15 26 L 40 20 L 75 20 L 95 32 L 100 42 L -5 42 Z" fill="#3B82F6"/>
+    <path d="M 30 20 L 45 8 L 65 8 L 75 20 Z" fill="#1D4ED8"/>
+    <!-- Windshield Reflection -->
+    <path d="M 35 15 L 45 9 L 60 9 L 68 18 Z" fill="#60A5FA" opacity="0.6"/>
+    
+    <!-- Wheels -->
+    <circle cx="20" cy="42" r="10" fill="#0F172A"/>
+    <circle cx="20" cy="42" r="4" fill="#94A3B8"/>
+    <circle cx="80" cy="42" r="10" fill="#0F172A"/>
+    <circle cx="80" cy="42" r="4" fill="#94A3B8"/>
+
+    <!-- Headlight & Accent -->
+    <path d="M 96 34 L 100 37" stroke="#93C5FD" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 15 42 L 85 42" stroke="#60A5FA" stroke-width="2"/>
+  </g>
+
+  <!-- Equal / Matching Performance Indicator (Parallel alignment markers showing "not inferior") -->
+  <g transform="translate(120, 65)">
+    <!-- Bracket or level indicator showing matching height/tier -->
+    <path d="M -20 15 L -20 5 L 80 5 L 80 15" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="30" cy="5" r="4" fill="#F59E0B"/>
+  </g>
+
+</svg>

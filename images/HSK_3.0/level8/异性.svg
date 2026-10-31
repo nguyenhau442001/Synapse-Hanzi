@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle background glow/divider to signify two distinct individuals meeting -->
+  <line x1="120" y1="50" x2="120" y2="190" stroke="#2A2F3B" stroke-width="2" stroke-dasharray="4 4" opacity="0.6"/>
+
+  <!-- Left Character (Person A: e.g., Male representation in modern flat vector) -->
+  <g transform="translate(65, 120)">
+    <!-- Body/Torso -->
+    <path d="M-25,70 C-25,50 -15,40 0,40 C15,40 25,50 25,70 Z" fill="#3B82F6"/>
+    <!-- Neck -->
+    <rect x="-6" y="28" width="12" height="15" fill="#E2B899"/>
+    <!-- Head -->
+    <circle cx="0" cy="10" r="20" fill="#E2B899"/>
+    <!-- Hair -->
+    <path d="M-20,5 C-20,-8 -10,-12 0,-12 C10,-12 20,-8 20,5 C20,10 18,12 18,12 C18,12 10,2 0,2 C-10,2 -18,12 -18,12 C-18,12 -20,10 -20,5 Z" fill="#2C3E50"/>
+    <!-- Friendly expression -->
+    <circle cx="-6" cy="8" r="2" fill="#1A1D24"/>
+    <circle cx="6" cy="8" r="2" fill="#1A1D24"/>
+    <path d="M-4,16 C-2,19 2,19 4,16" stroke="#1A1D24" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Right Character (Person B: e.g., Female representation in modern flat vector, distinct silhouette & style) -->
+  <g transform="translate(175, 120)">
+    <!-- Body/Torso -->
+    <path d="M-25,70 C-25,48 -15,40 0,40 C15,40 25,48 25,70 Z" fill="#F43F5E"/>
+    <!-- Neck -->
+    <rect x="-6" y="28" width="12" height="15" fill="#E2B899"/>
+    <!-- Head -->
+    <circle cx="0" cy="10" r="20" fill="#E2B899"/>
+    <!-- Hair (Longer style) -->
+    <path d="M-21,5 C-21,-8 -12,-13 0,-13 C12,-13 21,-8 21,5 C21,22 17,32 17,32 C17,32 19,8 19,5 C19,-4 10,-9 0,-9 C-10,-9 -19,-4 -19,5 C-19,8 -17,32 -17,32 C-17,32 -21,22 -21,5 Z" fill="#D97706"/>
+    <!-- Friendly expression -->
+    <circle cx="-6" cy="8" r="2" fill="#1A1D24"/>
+    <circle cx="6" cy="8" r="2" fill="#1A1D24"/>
+    <path d="M-4,16 C-2,19 2,19 4,16" stroke="#1A1D24" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Focus / Accent Indicator (Clean, modern floating interaction cue, perfectly neutral yet expressive of social engagement) -->
+  <g transform="translate(120, 75)">
+    <circle cx="0" cy="0" r="16" fill="#F59E0B" opacity="0.15"/>
+    <path d="M-5,-3 L0,3 L5,-3" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background grid/target rings for context -->
+  <circle cx="120" cy="120" r="80" fill="none" stroke="#2A2F3A" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <circle cx="120" cy="120" r="50" fill="none" stroke="#2A2F3A" stroke-width="1.5"/>
+  <circle cx="120" cy="120" r="20" fill="none" stroke="#2A2F3A" stroke-width="1.5"/>
+
+  <!-- Target Object (The Goal / 矢の的) -->
+  <g transform="translate(120, 120)">
+    <!-- Outer target ring -->
+    <circle cx="0" cy="0" r="42" fill="#2E3846"/>
+    <!-- Middle target ring -->
+    <circle cx="0" cy="0" r="30" fill="#E2E8F0"/>
+    <!-- Inner target ring -->
+    <circle cx="0" cy="0" r="18" fill="#EF4444"/>
+    <!-- Bullseye -->
+    <circle cx="0" cy="0" r="8" fill="#F59E0B"/>
+  </g>
+
+  <!-- Arrow Object (The Action / 放矢) -->
+  <g transform="translate(120, 120)">
+    <!-- Arrow shaft coming from bottom-left directly to the center -->
+    <line x1="-70" y1="70" x2="-2" y2="2" stroke="#94A3B8" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Arrow fletching (feathers) at the tail -->
+    <path d="M -62 62 L -78 58 L -74 74 Z" fill="#64748B"/>
+    <path d="M -62 62 L -66 78 L -58 74 Z" fill="#475569"/>
+
+    <!-- Arrowhead piercing precisely into the bullseye -->
+    <polygon points="0,0 -12,4 -4,-12" fill="#F8FAFC"/>
+    <polygon points="0,0 -12,4 -8,-8" fill="#CBD5E1"/>
+  </g>
+
+  <!-- Impact / Focus Glow Effect -->
+  <circle cx="120" cy="120" r="12" fill="none" stroke="#F59E0B" stroke-width="2" opacity="0.8">
+    <animate attributeName="r" values="8;20" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

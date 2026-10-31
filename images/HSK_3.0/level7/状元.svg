@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Scholar's Hat (Futou/Zhuangyuan hat) -->
+  <g transform="translate(120, 120)">
+    <!-- Main Hat Body -->
+    <path d="M-60 -20 L60 -20 L50 -60 L-50 -60 Z" fill="#FFB81C"/>
+    <path d="M-70 -20 L70 -20 L60 -5 L-60 -5 Z" fill="#E6A000"/>
+    
+    <!-- Side Wings -->
+    <path d="M-70 -12 L-110 -30 L-110 5 L-70 -12 Z" fill="#FFB81C"/>
+    <path d="M70 -12 L110 -30 L110 5 L70 -12 Z" fill="#E6A000"/>
+    
+    <!-- Top Detail -->
+    <rect x="-20" y="-80" width="40" height="20" rx="4" fill="#FFD700"/>
+    
+    <!-- Decorative Tassel/Ornament -->
+    <circle cx="0" cy="-70" r="8" fill="#FF4500"/>
+    <rect x="-2" y="-62" width="4" height="15" fill="#FF4500"/>
+  </g>
+  
+  <!-- Laurel Wreath (Symbolizing the 'Guiguan' / Victory) -->
+  <path d="M70 160 C 50 190, 190 190, 170 160" stroke="#FFB81C" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M70 160 L60 150 M80 155 L70 145 M90 150 L80 140 M100 148 L90 138 M110 148 L100 138 M120 148 L110 138 M130 148 L120 138 M140 150 L130 140 M150 155 L140 145 M160 160 L150 150" stroke="#FFB81C" stroke-width="3" stroke-linecap="round"/>
+</svg>

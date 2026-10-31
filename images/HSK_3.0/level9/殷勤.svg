@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Table Surface -->
+  <rect x="40" y="160" width="160" height="15" rx="2" fill="#2D343E"/>
+  
+  <!-- Waiter Character (Torso and Arm) -->
+  <path d="M140 100 L140 160 L180 160 L180 120 Z" fill="#3D4756"/>
+  <path d="M140 120 L170 120 L170 135 L140 135 Z" fill="#FFB84D"/> <!-- Sleeve -->
+  
+  <!-- Tea Pot -->
+  <path d="M150 110 C150 100 165 100 165 110 L165 130 C165 140 150 140 150 130 Z" fill="#FFB84D"/>
+  <path d="M165 120 L180 125 L175 135 Z" fill="#FFB84D"/>
+  
+  <!-- Guest Character (Seated) -->
+  <circle cx="80" cy="110" r="20" fill="#A0AEC0"/>
+  <rect x="65" y="130" width="30" height="40" rx="5" fill="#4A5568"/>
+  
+  <!-- Tea Cup -->
+  <rect x="70" y="145" width="20" height="15" rx="2" fill="#FFB84D"/>
+  
+  <!-- Action: Pouring Stream -->
+  <path d="M160 125 Q120 125 90 145" stroke="#FFB84D" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Waiter's Head (Polite Bow) -->
+  <circle cx="160" cy="90" r="15" fill="#A0AEC0"/>
+  <path d="M155 85 L165 85" stroke="#1A1D24" stroke-width="2"/>
+  <path d="M155 95 L165 95" stroke="#1A1D24" stroke-width="2"/>
+</svg>

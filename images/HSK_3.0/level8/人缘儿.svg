@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Central figure: A person standing in the middle, radiating approachability -->
+  <circle cx="120" cy="90" r="25" fill="#FFC107"/>
+  <path d="M85 130 C85 110, 155 110, 155 130 L150 200 C150 210, 90 210, 90 200 Z" fill="#FFC107"/>
+  
+  <!-- Surrounding figures: Three people leaning in towards the center figure with friendly, respectful gestures -->
+  <!-- Left figure -->
+  <circle cx="50" cy="120" r="15" fill="#81C784"/>
+  <path d="M35 140 C35 130, 65 130, 65 140 L60 180 Z" fill="#81C784"/>
+  
+  <!-- Right figure -->
+  <circle cx="190" cy="120" r="15" fill="#64B5F6"/>
+  <path d="M175 140 C175 130, 205 130, 205 140 L200 180 Z" fill="#64B5F6"/>
+  
+  <!-- Bottom figure -->
+  <circle cx="120" cy="170" r="15" fill="#E57373"/>
+  <path d="M105 190 C105 180, 135 180, 135 190 L130 230 Z" fill="#E57373"/>
+  
+  <!-- Gestures: Simple lines indicating open, welcoming posture -->
+  <path d="M145 140 L165 130" stroke="#FFC107" stroke-width="4" stroke-linecap="round"/>
+  <path d="M95 140 L75 130" stroke="#FFC107" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Connecting lines to show social connection/rapport -->
+  <line x1="120" y1="115" x2="65" y2="120" stroke="#454A54" stroke-width="2" stroke-dasharray="4 4"/>
+  <line x1="120" y1="115" x2="175" y2="120" stroke="#454A54" stroke-width="2" stroke-dasharray="4 4"/>
+  <line x1="120" y1="135" x2="120" y2="155" stroke="#454A54" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>

@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient glow/grid for screen/media context -->
+  <circle cx="120" cy="110" r="70" fill="#252A34" opacity="0.5"/>
+
+  <!-- Television Frame -->
+  <rect x="52" y="60" width="136" height="92" rx="12" fill="#2D3342" stroke="#3A4254" stroke-width="3"/>
+  <rect x="62" y="70" width="116" height="72" rx="6" fill="#0F1217"/>
+  
+  <!-- TV Stand -->
+  <path d="M100 152H140L148 162H92L100 152Z" fill="#3A4254"/>
+  <rect x="108" y="162" width="24" height="6" rx="3" fill="#4E5970"/>
+
+  <!-- Screen Content: Broadcast Graph / Rating Visualization -->
+  <!-- Grid lines inside screen -->
+  <line x1="74" y1="126" x2="166" y2="126" stroke="#1F2633" stroke-width="1" stroke-dasharray="2 2"/>
+  <line x1="74" y1="106" x2="166" y2="106" stroke="#1F2633" stroke-width="1" stroke-dasharray="2 2"/>
+  <line x1="74" y1="86" x2="166" y2="86" stroke="#1F2633" stroke-width="1" stroke-dasharray="2 2"/>
+
+  <!-- Glowing Trend Line (High Ratings) -->
+  <path d="M74 122 L96 114 L118 120 L140 94 L162 78" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Area under trend line -->
+  <path d="M74 122 L96 114 L118 120 L140 94 L162 78 V136 H74 Z" fill="#F59E0B" opacity="0.12"/>
+
+  <!-- Data Points -->
+  <circle cx="96" cy="114" r="3" fill="#F59E0B"/>
+  <circle cx="118" cy="120" r="3" fill="#F59E0B"/>
+  <circle cx="140" cy="94" r="3" fill="#F59E0B"/>
+  <!-- Peak point -->
+  <circle cx="162" cy="78" r="4.5" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2"/>
+
+  <!-- Audience / Viewers Symbol (Group of stylized viewers below the TV) -->
+  <g transform="translate(0, 5)">
+    <!-- Left Viewer -->
+    <circle cx="85" cy="178" r="6" fill="#64748B"/>
+    <path d="M73 194 C73 186 78 184 85 184 C92 184 97 186 97 194 Z" fill="#64748B"/>
+
+    <!-- Center/Main Viewer (Highlight) -->
+    <circle cx="120" cy="174" r="7" fill="#F59E0B"/>
+    <path d="M106 194 C106 185 112 182 120 182 C128 182 134 185 134 194 Z" fill="#F59E0B"/>
+
+    <!-- Right Viewer -->
+    <circle cx="155" cy="178" r="6" fill="#64748B"/>
+    <path d="M143 194 C143 186 148 184 155 184 C162 184 167 186 167 194 Z" fill="#64748B"/>
+  </g>
+
+  <!-- Live/Signal Indicator on TV -->
+  <circle cx="70" cy="66" r="2.5" fill="#EF4444"/>
+</svg>

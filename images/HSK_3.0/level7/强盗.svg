@@ -1,0 +1,39 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Elements: Mountain terrain hinting at ancient merchant road -->
+  <path d="M20 200 L90 120 L150 180 L220 100 L220 200 Z" fill="#252A34"/>
+  <path d="M70 200 L130 140 L190 200 Z" fill="#2E3440"/>
+  
+  <!-- Pine trees on mountains -->
+  <path d="M40 170 L50 150 L60 170 Z" fill="#3B4252"/>
+  <path d="M190 150 L200 130 L210 150 Z" fill="#3B4252"/>
+
+  <!-- Road / Path -->
+  <path d="M0 210 Q80 180 240 190 L240 240 L0 240 Z" fill="#111318"/>
+
+  <!-- Bandit Figure (強盜) Centerpiece -->
+  <!-- Body / Cloak -->
+  <path d="M90 210 L100 140 L140 140 L150 210 Z" fill="#2E3440"/>
+  
+  <!-- Bandit Mask & Hood (Face hidden, villainous silhouette) -->
+  <path d="M105 130 L135 130 L140 155 L100 155 Z" fill="#111318"/>
+  <path d="M100 110 L140 110 L145 135 L95 135 Z" fill="#3B4252"/>
+  
+  <!-- Sinister Glowing Eyes -->
+  <circle cx="115" cy="122" r="3" fill="#FFB703"/>
+  <circle cx="125" cy="122" r="3" fill="#FFB703"/>
+
+  <!-- Crossed Swords / Weapon (Axe / Dao on back or held) -->
+  <!-- Raised arm holding a curved blade (Dao) -->
+  <path d="M135 145 L175 110 L180 115 L145 155 Z" fill="#E5E9F0"/>
+  <path d="M170 105 L190 90 L185 85 L165 100 Z" fill="#FFB703"/> <!-- blade glint -->
+
+  <!-- Loot / Chest Symbolizing Robbery -->
+  <rect x="70" y="180" width="30" height="20" rx="3" fill="#D08770"/>
+  <rect x="75" y="175" width="20" height="8" rx="2" fill="#EBCB8B"/>
+  <!-- Gold Coins spilling out -->
+  <circle cx="65" cy="195" r="4" fill="#FFB703"/>
+  <circle cx="60" cy="190" r="3" fill="#FFB703"/>
+</svg>

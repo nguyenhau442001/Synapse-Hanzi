@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Senior Figure (Left) -->
+  <g transform="translate(60, 80)">
+    <circle cx="30" cy="25" r="15" fill="#A0AEC0"/>
+    <path d="M15 45 Q30 60 45 45 L45 90 L15 90 Z" fill="#4A5568"/>
+    <rect x="25" y="85" width="10" height="40" fill="#4A5568"/>
+  </g>
+
+  <!-- Junior Figure (Right) -->
+  <g transform="translate(130, 80)">
+    <circle cx="30" cy="25" r="15" fill="#F6AD55"/>
+    <path d="M15 45 Q30 60 45 45 L45 90 L15 90 Z" fill="#DD6B20"/>
+    <rect x="25" y="85" width="10" height="40" fill="#DD6B20"/>
+  </g>
+
+  <!-- The Passing of the Tool (The Core Task) -->
+  <g transform="translate(100, 130)">
+    <path d="M10 10 L30 10 L35 20 L25 30 L5 20 Z" fill="#ECC94B"/>
+    <rect x="20" y="15" width="20" height="5" fill="#B7791F" transform="rotate(25 20 15)"/>
+  </g>
+
+  <!-- Interaction Lines -->
+  <path d="M90 140 L120 140" stroke="#E2E8F0" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>

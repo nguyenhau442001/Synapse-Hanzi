@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "通通" (all, completely, everything gathered together) -->
+  <!-- Central Physical Object representation: A neat, organized storage container/chest completely filled with diverse collected items, representing "everything/all" gathered in one place -->
+  
+  <!-- Shadow/Glow -->
+  <ellipse cx="120" cy="195" rx="70" ry="8" fill="#0E1015" opacity="0.6"/>
+
+  <!-- Open Chest / Container Base -->
+  <path d="M55 125 L70 175 L170 175 L185 125 Z" fill="#2D333F"/>
+  <path d="M55 125 L185 125 L180 135 L60 135 Z" fill="#3D4455"/>
+
+  <!-- Chest Interior Depth -->
+  <rect x="65" y="135" width="110" height="40" fill="#222630"/>
+
+  <!-- Items inside representing "everything / all" (통통 - toàn bộ, hết thảy) -->
+  <!-- Item 1: Document/File (Work) -->
+  <rect x="80" y="115" width="22" height="30" rx="2" fill="#4DA8DA"/>
+  <line x1="85" y1="122" x2="97" y2="122" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  <line x1="85" y1="128" x2="97" y2="128" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Item 2: Golden Star/Achievement -->
+  <polygon points="120,105 124,115 135,116 127,123 129,133 120,128 111,133 113,123 105,116 116,115" fill="#F4D06F"/>
+
+  <!-- Item 3: Key/Tool -->
+  <circle cx="150" cy="120" r="6" fill="none" stroke="#E07A5F" stroke-width="3"/>
+  <path d="M150 126 L150 145 M146 135 L154 135" stroke="#E07A5F" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Item 4: Book/Knowledge -->
+  <rect x="95" y="125" width="28" height="25" rx="2" fill="#81B29A"/>
+  <path d="M109 125 L109 150" fill="none" stroke="#5E8A73" stroke-width="2"/>
+
+  <!-- Item 5: Gear/Mechanism -->
+  <circle cx="138" cy="135" r="9" fill="#F2CC8F"/>
+  <circle cx="138" cy="135" r="4" fill="#222630"/>
+
+  <!-- Chest Lid (Opening upwards, revealing everything inside) -->
+  <path d="M55 125 C55 105 75 75 120 75 C165 75 185 105 185 125 Z" fill="#3B4252"/>
+  <path d="M58 123 C58 106 76 80 120 80 C164 80 182 106 182 123 Z" fill="#4C566A"/>
+  <!-- Lid Metal Rim & Clasp -->
+  <rect x="113" y="118" width="14" height="12" rx="2" fill="#F4D06F"/>
+
+  <!-- Outward streaming action lines emphasizing "All / Completely gathered" -->
+  <path d="M40 95 Q50 90 60 95" fill="none" stroke="#4DA8DA" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M200 95 Q190 90 180 95" fill="none" stroke="#F4D06F" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M35 140 Q45 138 50 145" fill="none" stroke="#81B29A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M205 140 Q195 138 190 145" fill="none" stroke="#E07A5F" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Floating particles representing totality / inclusion of all elements -->
+  <circle cx="75" cy="70" r="3" fill="#4DA8DA" opacity="0.8"/>
+  <circle cx="165" cy="65" r="3.5" fill="#F4D06F" opacity="0.8"/>
+  <circle cx="105" cy="55" r="2" fill="#81B29A" opacity="0.8"/>
+  <circle cx="135" cy="58" r="2.5" fill="#E07A5F" opacity="0.8"/>
+</svg>

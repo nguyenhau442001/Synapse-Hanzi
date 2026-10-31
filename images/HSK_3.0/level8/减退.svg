@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 112)">
+    <circle r="68" fill="#242B38" />
+    <!-- Battery body, standing vertically, tilted slightly backward representing decline/depletion -->
+    <g transform="rotate(-15)">
+      <!-- Battery terminal -->
+      <rect x="-14" y="-72" width="28" height="8" rx="2" fill="#8B9BB4"/>
+      <!-- Main battery shell -->
+      <rect x="-36" y="-64" width="72" height="120" rx="10" fill="#2E384A" stroke="#46556F" stroke-width="3"/>
+      <!-- Internal liquid/energy level - reduced to very low -->
+      <rect x="-28" y="16" width="56" height="32" rx="4" fill="#F39C12"/>
+      <!-- Lightning bolt icon inside battery showing drop/loss -->
+      <path d="M4 -4L-4 12H6L-2 28" fill="none" stroke="#1A1D24" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Fading energy bars/segments at the top inside battery -->
+      <rect x="-24" y="-52" width="48" height="12" rx="3" fill="#3E4C63" opacity="0.4"/>
+      <rect x="-24" y="-36" width="48" height="12" rx="3" fill="#3E4C63" opacity="0.4"/>
+      <rect x="-24" y="-20" width="48" height="12" rx="3" fill="#3E4C63" opacity="0.4"/>
+    </g>
+    <!-- Downward motion / reduction indicator arrows curving around the object -->
+    <path d="M -54 -24 C -68 -4 -64 26 -44 48" fill="none" stroke="#E74C3C" stroke-width="4" stroke-linecap="round"/>
+    <path d="M -44 48 L -52 42 M -44 48 L -36 44" fill="none" stroke="#E74C3C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <path d="M 54 -24 C 68 -4 64 26 44 48" fill="none" stroke="#E74C3C" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 44 48 L 36 44 M 44 48 L 52 42" fill="none" stroke="#E74C3C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background / Night Sky Window View -->
+  <path d="M40 50h160v140H40z" fill="#14171F" rx="4"/>
+  <circle cx="80" cy="80" r="1.5" fill="#525B75"/>
+  <circle cx="120" cy="70" r="1" fill="#525B75"/>
+  <circle cx="160" cy="90" r="1.5" fill="#525B75"/>
+  <circle cx="180" cy="110" r="1" fill="#525B75"/>
+  <circle cx="60" cy="115" r="1" fill="#525B75"/>
+  
+  <!-- Glowing Crescent Moon shining through -->
+  <path d="M175 68a18 18 0 1 1-18-18 14 14 0 1 0 18 18z" fill="#F4B41A" opacity="0.85"/>
+
+  <!-- Desk Surface -->
+  <rect x="25" y="165" width="190" height="12" fill="#2D323E" rx="3"/>
+  <rect x="35" y="177" width="170" height="8" fill="#222630"/>
+
+  <!-- Computer Monitor (Late Night Coding Setup) -->
+  <rect x="75" y="85" width="90" height="62" rx="4" fill="#2E3440"/>
+  <rect x="80" y="90" width="80" height="52" fill="#0F1117"/>
+  
+  <!-- Code lines on screen (abstract flat representation) -->
+  <rect x="86" y="98" width="35" height="3" rx="1.5" fill="#E5C07B"/>
+  <rect x="125" y="98" width="20" height="3" rx="1.5" fill="#61AFEF"/>
+  <rect x="86" y="106" width="50" height="3" rx="1.5" fill="#98C379"/>
+  <rect x="86" y="114" width="25" height="3" rx="1.5" fill="#C678DD"/>
+  <rect x="114" y="114" width="30" height="3" rx="1.5" fill="#E5C07B"/>
+  <rect x="86" y="122" width="40" height="3" rx="1.5" fill="#61AFEF"/>
+  <rect x="86" y="130" width="18" height="3" rx="1.5" fill="#98C379"/>
+
+  <!-- Monitor Stand & Base -->
+  <rect x="115" y="147" width="10" height="18" fill="#434C5E"/>
+  <rect x="95" y="161" width="50" height="4" rx="2" fill="#434C5E"/>
+
+  <!-- Glowing Desk Lamp (Illuminating the late night) -->
+  <path d="M185 165l-12-55 8-3z" fill="#D08770"/>
+  <ellipse cx="182" cy="108" rx="8" ry="4" fill="#E5C07B"/>
+  <!-- Light cone gradient / beam -->
+  <path d="M178 110l-45 55h85z" fill="#F4B41A" opacity="0.12"/>
+  
+  <!-- Coffee Mug (Symbol of staying awake) -->
+  <rect x="52" y="145" width="14" height="20" rx="3" fill="#E06C75"/>
+  <path d="M66 150h3a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3h-3z" fill="none" stroke="#E06C75" stroke-width="2.5"/>
+  <!-- Steam rising -->
+  <path d="M56 139c0-3 3-4 3-7s3-4 3-7" fill="none" stroke="#ABB2BF" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Clock showing late hour (e.g. 3:00 AM) -->
+  <circle cx="120" cy="45" r="14" fill="#2E3440" stroke="#434C5E" stroke-width="2"/>
+  <circle cx="120" cy="45" r="1.5" fill="#E5C07B"/>
+  <!-- Clock hands pointing to late night -->
+  <line x1="120" y1="45" x2="120" y2="37" stroke="#E5C07B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="120" y1="45" x2="126" y2="48" stroke="#E5C07B" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

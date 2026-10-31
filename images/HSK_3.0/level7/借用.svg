@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Table Surface -->
+  <rect x="40" y="160" width="160" height="10" rx="2" fill="#343A46"/>
+  
+  <!-- The Antique Prop (Vase) -->
+  <path d="M100 160 L105 100 Q105 80 120 80 Q135 80 135 100 L140 160 Z" fill="#FFB84D"/>
+  <path d="M105 100 Q120 105 135 100" stroke="#1A1D24" stroke-width="2" fill="none"/>
+  
+  <!-- Handover Action: Person A (Lender) to Person B (Borrower) -->
+  <!-- Lender Arm (Left) -->
+  <path d="M40 120 L80 140" stroke="#A0AEC0" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="85" cy="142" r="8" fill="#E2E8F0"/>
+  
+  <!-- Borrower Arm (Right) -->
+  <path d="M200 120 L160 140" stroke="#4FD1C5" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="155" cy="142" r="8" fill="#E2E8F0"/>
+  
+  <!-- Exchange Symbol (Arrows indicating temporary transfer) -->
+  <path d="M100 60 L140 60 M120 50 L140 60 L120 70" stroke="#FFB84D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M140 60 L100 60 M120 50 L100 60 L120 70" stroke="#FFB84D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.5"/>
+</svg>

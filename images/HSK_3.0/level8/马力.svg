@@ -1,0 +1,18 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(40, 60)">
+    <!-- Horse Body -->
+    <path d="M120 40C120 40 130 30 145 30C160 30 170 40 170 60C170 80 160 90 145 90C130 90 120 80 120 60Z" fill="#FFB84D"/>
+    <!-- Horse Neck/Head -->
+    <path d="M145 30C145 10 155 5 165 5C170 5 175 10 175 20L170 40" fill="#FFB84D"/>
+    <!-- Horse Legs -->
+    <rect x="130" y="85" width="8" height="30" rx="4" fill="#FFB84D"/>
+    <rect x="155" y="85" width="8" height="30" rx="4" fill="#FFB84D"/>
+    <!-- Engine Piston/Mechanical Integration -->
+    <rect x="30" y="50" width="80" height="40" rx="8" fill="#4A5568"/>
+    <rect x="40" y="60" width="60" height="20" rx="4" fill="#2D3748"/>
+    <circle cx="70" cy="70" r="8" fill="#FFB84D"/>
+    <!-- Mechanical Gear/Crankshaft detail -->
+    <path d="M110 70L120 70" stroke="#FFB84D" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>

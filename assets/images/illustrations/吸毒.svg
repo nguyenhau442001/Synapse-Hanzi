@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambient Glow (Warning/Danger context) -->
+  <circle cx="120" cy="120" r="80" fill="#E74C3C" opacity="0.08"/>
+
+  <!-- Conceptual Graphic: A dark syringe / drug hazard iconography rendered cleanly in flat vector -->
+  <g transform="translate(0, 0)">
+    <!-- Warning Red Circular Hazard Aura -->
+    <circle cx="120" cy="120" r="64" fill="none" stroke="#E74C3C" stroke-width="2" stroke-dasharray="6 6" opacity="0.4"/>
+
+    <!-- Syringe Body (Tilted diagonal) -->
+    <g transform="rotate(-45 120 120)">
+      <!-- Plunger Rod -->
+      <rect x="114" y="45" width="12" height="30" rx="3" fill="#95A5A6"/>
+      <!-- Plunger Top Handle -->
+      <rect x="105" y="45" width="30" height="6" rx="2" fill="#BDC3C7"/>
+
+      <!-- Barrel Outer Glass (Semi-transparent look with dark background) -->
+      <rect x="108" y="75" width="24" height="90" rx="4" fill="#2C3E50" stroke="#BDC3C7" stroke-width="3"/>
+      
+      <!-- Liquid Inside (Toxic Red/Orange) -->
+      <rect x="111" y="95" width="18" height="68" rx="2" fill="#E74C3C"/>
+
+      <!-- Measurement Ticks -->
+      <line x1="108" y1="105" x2="114" y2="105" stroke="#BDC3C7" stroke-width="2"/>
+      <line x1="108" y1="120" x2="114" y2="120" stroke="#BDC3C7" stroke-width="2"/>
+      <line x1="108" y1="135" x2="114" y2="135" stroke="#BDC3C7" stroke-width="2"/>
+      <line x1="108" y1="150" x2="114" y2="150" stroke="#BDC3C7" stroke-width="2"/>
+
+      <!-- Needle Hub -->
+      <rect x="114" y="165" width="12" height="10" rx="2" fill="#7F8C8D"/>
+
+      <!-- Metal Needle -->
+      <line x1="120" y1="175" x2="120" y2="205" stroke="#ECF0F1" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Skull / Hazard accent silhouette subtly integrated or clean destructive symbolism -->
+    <!-- Broken/Warning particle effect -->
+    <circle cx="70" cy="80" r="4" fill="#E74C3C" opacity="0.8"/>
+    <circle cx="175" cy="150" r="5" fill="#E74C3C" opacity="0.8"/>
+    <circle cx="160" cy="75" r="3" fill="#E74C3C" opacity="0.6"/>
+    <circle cx="75" cy="165" r="3" fill="#E74C3C" opacity="0.6"/>
+  </g>
+</svg>

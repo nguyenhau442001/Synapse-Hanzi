@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Computer Monitor Base -->
+  <rect x="80" y="140" width="80" height="60" rx="4" fill="#374151"/>
+  <rect x="115" y="200" width="10" height="15" fill="#4B5563"/>
+  <rect x="100" y="215" width="40" height="4" rx="2" fill="#4B5563"/>
+  
+  <!-- Screen Content -->
+  <rect x="85" y="145" width="70" height="50" rx="2" fill="#111827"/>
+  <rect x="95" y="155" width="50" height="5" rx="1" fill="#F59E0B"/>
+  <rect x="95" y="165" width="40" height="5" rx="1" fill="#374151"/>
+  <rect x="95" y="175" width="45" height="5" rx="1" fill="#374151"/>
+  
+  <!-- The Covering Cloth (罩) -->
+  <path d="M70 130 L170 130 L175 200 L65 200 Z" fill="#F59E0B" fill-opacity="0.9"/>
+  <path d="M70 130 L170 130 L175 200 L65 200 Z" stroke="#D97706" stroke-width="2" fill="none"/>
+  
+  <!-- Cloth Folds/Texture -->
+  <path d="M75 130 L85 200" stroke="#D97706" stroke-width="1" opacity="0.5"/>
+  <path d="M120 130 L120 200" stroke="#D97706" stroke-width="1" opacity="0.5"/>
+  <path d="M165 130 L155 200" stroke="#D97706" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Top Edge of Cloth -->
+  <rect x="70" y="125" width="100" height="5" rx="2" fill="#F59E0B"/>
+</svg>

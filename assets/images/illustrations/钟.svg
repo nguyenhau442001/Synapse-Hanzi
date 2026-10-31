@@ -1,0 +1,47 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative subtle background ring/glow for focus -->
+  <circle cx="120" cy="115" r="70" fill="none" stroke="#252A34" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 6"/>
+
+  <!-- Clock / Bell ("钟") Body: Sleek Modern Wall Clock / Pendulum Clock Style -->
+  <!-- Outer Frame -->
+  <circle cx="120" cy="105" r="54" fill="#2E3544"/>
+  <circle cx="120" cy="105" r="48" fill="#1E232E"/>
+
+  <!-- Clock Face Details -->
+  <!-- Hour ticks -->
+  <line x1="120" y1="63" x2="120" y2="67" stroke="#4B5563" stroke-width="2" stroke-linecap="round"/>
+  <line x1="120" y1="143" x2="120" y2="147" stroke="#4B5563" stroke-width="2" stroke-linecap="round"/>
+  <line x1="78" y1="105" x2="82" y2="105" stroke="#4B5563" stroke-width="2" stroke-linecap="round"/>
+  <line x1="158" y1="105" x2="162" y2="105" stroke="#4B5563" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Clock Hands -->
+  <!-- Hour hand -->
+  <line x1="120" y1="105" x2="104" y2="95" stroke="#E5E7EB" stroke-width="3" stroke-linecap="round"/>
+  <!-- Minute hand -->
+  <line x1="120" y1="105" x2="120" y2="81" stroke="#E5E7EB" stroke-width="2" stroke-linecap="round"/>
+  <!-- Center Pin -->
+  <circle cx="120" cy="105" r="3.5" fill="#F59E0B"/>
+
+  <!-- Pendulum Mechanism ("钟的摆在动") -->
+  <!-- Top mount of pendulum behind face -->
+  <rect x="117" y="150" width="6" height="15" fill="#374151" rx="2"/>
+
+  <!-- Swinging Pendulum Rod & Bob (Angled slightly to show motion) -->
+  <g transform="rotate(16, 120, 150)">
+    <!-- Rod -->
+    <line x1="120" y1="150" x2="120" y2="198" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Bob (Weight) -->
+    <circle cx="120" cy="200" r="10" fill="#F59E0B"/>
+    <circle cx="120" cy="200" r="6" fill="#FBBF24"/>
+  </g>
+
+  <!-- Motion Lines (Visualizing the movement: "钟的摆在动") -->
+  <path d="M 98 190 C 103 198, 110 203, 118 206" fill="none" stroke="#FBBF24" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 142 190 C 137 198, 130 203, 122 206" fill="none" stroke="#FBBF24" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Top hanging ring for the clock -->
+  <path d="M 112 51 C 112 47, 128 47, 128 51" fill="none" stroke="#374151" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 125)">
+    <!-- Shadow beneath the container -->
+    <ellipse cx="0" cy="55" rx="65" ry="16" fill="#111317" opacity="0.6"/>
+    
+    <!-- Modern Sleek Glass/Ceramic Bowl (Back outline & inside) -->
+    <path d="M-75 -15 C-75 35 -45 55 0 55 C45 55 75 35 75 -15 Z" fill="#252A34" stroke="#3A4252" stroke-width="3"/>
+    <ellipse cx="0" cy="-15" rx="75" ry="22" fill="#2D3442" stroke="#485266" stroke-width="3"/>
+    
+    <!-- Soy Milk / Liquid level -->
+    <ellipse cx="0" cy="-10" rx="67" ry="17" fill="#F4D06F" opacity="0.3"/>
+    
+    <!-- Organic Soybean Pulp Heap (Bã đậu nành - "渣") -->
+    <!-- Base crumb layers (textured flat vector shapes) -->
+    <path d="M-55 -10 C-65 -25 -40 -45 -15 -40 C5 -45 35 -35 50 -20 C65 -10 65 10 50 20 C35 30 -35 30 -55 -10 Z" fill="#E2E7EC"/>
+    
+    <!-- Detailed crumb clusters and textured particles representing "chaff/dregs" -->
+    <path d="M-45 -20 C-35 -35 -15 -30 -5 -25 C15 -35 35 -25 40 -15 C48 -5 45 15 30 20 C10 25 -30 25 -45 10 C-55 0 -50 -10 -45 -20 Z" fill="#F4F7F9"/>
+    
+    <!-- Individual organic textured lumps & crumbs -->
+    <circle cx="-25" cy="-22" r="12" fill="#D4DCE4"/>
+    <circle cx="15" cy="-18" r="15" fill="#E8EDF2"/>
+    <circle cx="-5" cy="-5" r="14" fill="#D8DFE6"/>
+    <circle cx="25" cy="5" r="12" fill="#E2E7EC"/>
+    <circle cx="-35" cy="5" r="10" fill="#D0D8E2"/>
+    
+    <!-- Highlighting individual fine bits/residue flakes -->
+    <circle cx="-12" cy="-32" r="6" fill="#F7FAFC"/>
+    <circle cx="32" cy="-12" r="7" fill="#F7FAFC"/>
+    <circle cx="-38" cy="-8" r="5" fill="#FFFFFF"/>
+    <circle cx="5" cy="12" r="6" fill="#FFFFFF"/>
+    <circle cx="-20" cy="15" r="5" fill="#EDF2F7"/>
+    <circle cx="38" cy="2" r="5" fill="#EDF2F7"/>
+
+    <!-- Bowl Front Rim (creates 3D depth) -->
+    <path d="M-75 -15 C-75 35 -45 55 0 55 C45 55 75 35 75 -15" fill="none" stroke="#525E75" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Steam / Fresh essence rising subtly -->
+    <path d="M-15 -65 C-20 -80 -5 -90 -10 -105" fill="none" stroke="#F4D06F" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+    <path d="M15 -60 C20 -75 5 -85 10 -100" fill="none" stroke="#F4D06F" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+  </g>
+</svg>

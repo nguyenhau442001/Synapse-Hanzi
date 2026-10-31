@@ -1,0 +1,38 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Conceptual Graphic: Physical Balance Scale / Vessel representing moderation (节制) -->
+  <g transform="translate(0, 0)">
+    <!-- Base stand -->
+    <path d="M 120 185 L 100 200 L 140 200 Z" fill="#64748B"/>
+    <rect x="114" y="145" width="12" height="42" rx="3" fill="#94A3B8"/>
+    
+    <!-- Central pivot pillar -->
+    <circle cx="120" cy="140" r="8" fill="#F59E0B"/>
+    
+    <!-- Balance Beam -->
+    <path d="M 65 98 L 175 98 L 170 106 L 70 106 Z" fill="#CBD5E1"/>
+    
+    <!-- Left Hanger & Balanced Plate (Representing measured intake/restraint) -->
+    <path d="M 75 106 L 75 135" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 55 135 C 55 130 95 130 95 135 C 95 142 55 142 55 135 Z" fill="#38BDF8"/>
+    <!-- Moderate items on left (e.g., a neat water droplet and wholesome leaf) -->
+    <circle cx="75" cy="124" r="6" fill="#38BDF8"/>
+    <path d="M 75 116 Q 78 122 75 125 Q 72 122 75 116 Z" fill="#34D399"/>
+    
+    <!-- Right Hanger & Balanced Plate (Representing controlled output/energy) -->
+    <path d="M 165 106 L 165 135" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 145 135 C 145 130 185 130 185 135 C 185 142 145 142 145 135 Z" fill="#38BDF8"/>
+    <!-- Moderate items on right -->
+    <circle cx="165" cy="124" r="6" fill="#F59E0B"/>
+
+    <!-- Caliper / Regulator Arc element symbolizing self-control and limits -->
+    <path d="M 90 75 A 35 35 0 0 1 150 75" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="120" cy="40" r="5" fill="#F59E0B"/>
+    <line x1="120" y1="45" x2="120" y2="70" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Accent glow / focus rings (Subtle) -->
+    <circle cx="120" cy="140" r="28" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4"/>
+  </g>
+</svg>

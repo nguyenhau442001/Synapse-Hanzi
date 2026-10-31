@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(60, 60)">
+    <!-- Face Shape -->
+    <path d="M60 120C60 153.137 86.8629 180 120 180C153.137 180 180 153.137 180 120V60C180 26.8629 153.137 0 120 0C86.8629 0 60 26.8629 60 60V120Z" fill="#2D343E"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="90" cy="70" rx="8" ry="8" fill="#F39C12"/>
+    <ellipse cx="150" cy="70" rx="8" ry="8" fill="#F39C12"/>
+    
+    <!-- Furrowed Brows (The core "皱" action) -->
+    <path d="M75 55L95 65" stroke="#F39C12" stroke-width="4" stroke-linecap="round"/>
+    <path d="M165 55L145 65" stroke="#F39C12" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Wrinkles between brows -->
+    <path d="M120 50L120 65" stroke="#F39C12" stroke-width="3" stroke-linecap="round"/>
+    <path d="M115 52L115 62" stroke="#F39C12" stroke-width="2" stroke-linecap="round"/>
+    <path d="M125 52L125 62" stroke="#F39C12" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Mouth -->
+    <path d="M95 130C105 125 135 125 145 130" stroke="#F39C12" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow to create depth for the medical device -->
+  <circle cx="120" cy="115" r="70" fill="#242B38" opacity="0.6"/>
+
+  <!-- Diagnostic Test Cassette / Medical Testing Device (Physical Object) -->
+  <g transform="translate(60, 45)">
+    <!-- Main Device Body (White/Light Slate) -->
+    <rect x="0" y="0" width="120" height="150" rx="12" fill="#2C3545" stroke="#3D4A61" stroke-width="2"/>
+    
+    <!-- Sample Well (Top circle) -->
+    <circle cx="60" cy="30" r="12" fill="#1A1D24" stroke="#3D4A61" stroke-width="2"/>
+    <circle cx="60" cy="30" r="6" fill="#4E5D78"/>
+
+    <!-- Display Window Frame -->
+    <rect x="20" y="60" width="80" height="70" rx="8" fill="#1A1D24" stroke="#3D4A61" stroke-width="2"/>
+    
+    <!-- Control Line (C) - Always present in valid test -->
+    <line x1="75" y1="75" x2="75" y2="115" stroke="#4E5D78" stroke-width="3" stroke-linecap="round"/>
+    <!-- Control Line Indicator Text Area (Abstract lines instead of text) -->
+    <rect x="85" y="90" width="10" height="3" rx="1.5" fill="#4E5D78"/>
+
+    <!-- Test / Positive Line (T) - High contrast orange/gold accent representing "阳性" -->
+    <line x1="45" y1="75" x2="45" y2="115" stroke="#F59E0B" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="45" cy="95" r="8" fill="#F59E0B" opacity="0.2"/>
+    <!-- Positive Line Indicator Area -->
+    <rect x="25" y="90" width="14" height="3" rx="1.5" fill="#F59E0B"/>
+  </g>
+
+  <!-- Floating Spark / Focus Accent (Highlighting the positive result clearly) -->
+  <path d="M 175 60 L 178 70 L 188 73 L 178 76 L 175 86 L 172 76 L 162 73 L 172 70 Z" fill="#F59E0B"/>
+  <path d="M 65 145 L 67 151 L 73 153 L 67 155 L 65 161 L 63 155 L 57 153 L 63 151 Z" fill="#F59E0B" opacity="0.7"/>
+
+</svg>

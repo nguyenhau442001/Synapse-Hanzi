@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background grid/glow elements for depth -->
+  <circle cx="120" cy="120" r="70" fill="#222733" opacity="0.6"/>
+  <path d="M70 120 L170 120" stroke="#2A303C" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <!-- Left Option (Advance/Strategy A - Sleek glowing blue aesthetic) -->
+  <g transform="translate(65, 120)">
+    <!-- Arm / Hand pointing forward/up -->
+    <path d="M-25 30 L-5 10 L15 10 L25 -10" fill="none" stroke="#38BDF8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Hand Palm / Fingers -->
+    <circle cx="20" cy="-15" r="10" fill="#38BDF8"/>
+    <!-- Forward Indicator / Arrow -->
+    <path d="M35 -30 L50 -30 L50 -15" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M30 -35 L50 -35 L50 -15" fill="none" stroke="#38BDF8" stroke-opacity="0.3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Right Option (Retreat/Strategy B - Vibrant orange/gold aesthetic) -->
+  <g transform="translate(175, 120)">
+    <!-- Arm / Hand curving back or holding alternate path -->
+    <path d="M25 30 L5 10 L-15 10 L-25 -10" fill="none" stroke="#F59E0B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Hand Palm / Fingers -->
+    <circle cx="-20" cy="-15" r="10" fill="#F59E0B"/>
+    <!-- Alternative / Backup Indicator (Curved fallback arrow) -->
+    <path d="M-35 -30 C-45 -30 -50 -20 -50 -10 C-50 0 -35 10 -35 10" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+    <path d="M-42 -22 L-35 -30 L-27 -25" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Central Core / Decision Pivot (Symbolizing the decision-maker balancing two plans) -->
+  <g transform="translate(120, 120)">
+    <!-- Central node circle -->
+    <circle cx="0" cy="0" r="22" fill="#1A1D24" stroke="#E2E8F0" stroke-width="4"/>
+    <circle cx="0" cy="0" r="10" fill="#E2E8F0"/>
+    
+    <!-- Vertical balancing stem -->
+    <path d="M0 -50 L0 -30" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round"/>
+    <path d="M0 30 L0 50" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

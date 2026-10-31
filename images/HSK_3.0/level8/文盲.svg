@@ -1,0 +1,53 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow to create focus -->
+  <circle cx="120" cy="115" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Open book representing literacy / text -->
+  <g transform="translate(48, 85)">
+    <!-- Book shadow -->
+    <path d="M12 70 C 40 75, 72 70, 72 70 L 72 110 C 72 110, 40 115, 12 110 Z" fill="#111317" opacity="0.4"/>
+    <path d="M72 70 C 100 70, 132 75, 132 110 L 132 110 C 132 110, 100 115, 72 110 Z" fill="#111317" opacity="0.4"/>
+    
+    <!-- Left page -->
+    <path d="M12 65 C 40 70, 72 65, 72 65 L 72 105 C 72 105, 40 110, 12 105 Z" fill="#E2E8F0"/>
+    <!-- Right page -->
+    <path d="M72 65 C 100 65, 132 70, 132 105 L 132 105 C 100 110, 72 105, 72 105 Z" fill="#CBD5E1"/>
+    
+    <!-- Abstract text lines on pages representing written words -->
+    <rect x="22" y="75" width="38" height="3" rx="1.5" fill="#94A3B8"/>
+    <rect x="22" y="83" width="30" height="3" rx="1.5" fill="#94A3B8"/>
+    <rect x="22" y="91" width="35" height="3" rx="1.5" fill="#94A3B8"/>
+
+    <rect x="82" y="75" width="34" height="3" rx="1.5" fill="#94A3B8"/>
+    <rect x="82" y="83" width="38" height="3" rx="1.5" fill="#94A3B8"/>
+    <rect x="82" y="91" width="28" height="3" rx="1.5" fill="#94A3B8"/>
+
+    <!-- Bookmark ribbon hanging down -->
+    <path d="M92 65 L92 115 L97 110 L102 115 L102 65 Z" fill="#F59E0B"/>
+  </g>
+
+  <!-- Prominent "Eye with Slash" overlay representing inability to read / illiteracy -->
+  <g transform="translate(120, 105)">
+    <!-- Outer glow / backing for contrast -->
+    <circle cx="0" cy="0" r="42" fill="#1A1D24" stroke="#1A1D24" stroke-width="6"/>
+    
+    <!-- Eye white / background -->
+    <path d="M -38 0 C -20 -24, 20 -24, 38 0 C 20 24, -20 24, -38 0 Z" fill="#334155"/>
+    
+    <!-- Iris -->
+    <circle cx="0" cy="0" r="16" fill="#1E293B"/>
+    <circle cx="0" cy="0" r="8" fill="#F59E0B"/>
+    <!-- Iris shine -->
+    <circle cx="3" cy="-3" r="3" fill="#FFFFFF" opacity="0.8"/>
+
+    <!-- Eye eyelids contour -->
+    <path d="M -38 0 C -20 -24, 20 -24, 38 0 C 20 24, -20 24, -38 0 Z" fill="none" stroke="#64748B" stroke-width="4" stroke-linejoin="round"/>
+
+    <!-- Prohibition slash (Red/Orange accent) -->
+    <line x1="-30" y1="-30" x2="30" y2="30" stroke="#EF4444" stroke-width="8" stroke-linecap="round"/>
+    <line x1="-30" y1="-30" x2="30" y2="30" stroke="#F87171" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+</svg>

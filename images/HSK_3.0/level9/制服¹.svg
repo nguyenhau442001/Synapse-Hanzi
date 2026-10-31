@@ -1,0 +1,59 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative subtle background elements -->
+  <circle cx="120" cy="120" r="80" fill="none" stroke="#2A2F3D" stroke-width="2" stroke-dasharray="4 6"/>
+  <path d="M120 30 L120 45" stroke="#3A4254" stroke-width="3" stroke-linecap="round"/>
+  <path d="M120 195 L120 210" stroke="#3A4254" stroke-width="3" stroke-linecap="round"/>
+  <path d="M30 120 L45 120" stroke="#3A4254" stroke-width="3" stroke-linecap="round"/>
+  <path d="M195 120 L210 120" stroke="#3A4254" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Central Icon: Uniform (Airline Uniform / 制服) -->
+  <g transform="translate(0, 5)">
+    <!-- Hanger -->
+    <path d="M90 55 L120 38 L150 55 C150 55 155 58 150 60 C145 62 135 56 120 56 C105 56 95 62 90 60 C85 58 90 55 90 55 Z" fill="#64748B"/>
+    <circle cx="120" cy="35" r="4" fill="none" stroke="#64748B" stroke-width="2.5"/>
+
+    <!-- Jacket Base (Dark Navy Blue for professional aviation look) -->
+    <path d="M85 75 L155 75 L165 145 L145 155 L120 125 L95 155 L75 145 Z" fill="#1E3A8A"/>
+
+    <!-- Lapels -->
+    <path d="M120 75 L102 110 L115 110 Z" fill="#0F172A"/>
+    <path d="M120 75 L138 110 L125 110 Z" fill="#0F172A"/>
+
+    <!-- Crisp White Shirt Collar & Tie -->
+    <polygon points="120,75 110,95 130,95" fill="#F8FAFC"/>
+    <polygon points="117,93 123,93 126,135 120,142 114,135" fill="#EF4444"/> <!-- Accent gold/red tie -->
+
+    <!-- Jacket Buttons -->
+    <circle cx="120" cy="120" r="3" fill="#F59E0B"/>
+    <circle cx="120" cy="138" r="3" fill="#F59E0B"/>
+
+    <!-- Pocket Details with Gold Accents -->
+    <rect x="92" y="115" width="14" height="8" rx="2" fill="#172554"/>
+    <line x1="92" y1="115" x2="106" y2="115" stroke="#F59E0B" stroke-width="1.5"/>
+
+    <rect x="134" y="115" width="14" height="8" rx="2" fill="#172554"/>
+    <line x1="134" y1="115" x2="148" y2="115" stroke="#F59E0B" stroke-width="1.5"/>
+
+    <!-- Sleeve stripes (Aviation rank indicator) -->
+    <g stroke="#F59E0B" stroke-width="2" stroke-linecap="round">
+      <!-- Left sleeve stripes -->
+      <line x1="79" y1="120" x2="87" y2="124"/>
+      <line x1="77" y1="125" x2="85" y2="129"/>
+      <line x1="75" y1="130" x2="83" y2="134"/>
+      
+      <!-- Right sleeve stripes -->
+      <line x1="161" y1="120" x2="153" y2="124"/>
+      <line x1="163" y1="125" x2="155" y2="129"/>
+      <line x1="165" y1="130" x2="157" y2="134"/>
+    </g>
+  </g>
+
+  <!-- Accent aviation wings badge on chest -->
+  <g transform="translate(133, 98) scale(0.6)">
+    <path d="M0 5 Q10 0 20 5 Q10 10 0 5 Z" fill="#F59E0B"/>
+    <circle cx="10" cy="5" r="3" fill="#FEF3C7"/>
+  </g>
+</svg>

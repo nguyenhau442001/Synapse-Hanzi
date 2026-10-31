@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Pottery shards -->
+  <path d="M80 120 L100 80 L120 100 L90 130 Z" fill="#E67E22" opacity="0.6"/>
+  <path d="M140 110 L160 70 L180 90 L150 120 Z" fill="#E67E22" opacity="0.6"/>
+  <path d="M100 160 L120 120 L140 140 L110 170 Z" fill="#E67E22" opacity="0.6"/>
+  
+  <!-- Main assembled pot -->
+  <path d="M100 100 C 100 80, 140 80, 140 100 L 145 150 C 145 165, 95 165, 95 150 Z" fill="#F39C12"/>
+  <path d="M95 150 C 95 165, 145 165, 145 150" stroke="#1A1D24" stroke-width="2" fill="none"/>
+  
+  <!-- Connection lines/cracks -->
+  <path d="M120 100 L120 150" stroke="#1A1D24" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M100 125 L140 125" stroke="#1A1D24" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Hands assembling -->
+  <path d="M70 140 C 60 140, 50 150, 50 160 L 50 180 C 50 190, 60 200, 70 200 L 90 200 C 100 200, 110 190, 110 180 L 110 160 C 110 150, 100 140, 90 140 Z" fill="#D35400"/>
+  <path d="M170 140 C 180 140, 190 150, 190 160 L 190 180 C 190 190, 180 200, 170 200 L 150 200 C 140 200, 130 190, 130 180 L 130 160 C 130 150, 140 140, 150 140 Z" fill="#D35400"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Airplane body -->
+  <path d="M70 120 L170 120 L160 135 L80 135 Z" fill="#F39C12"/>
+  <path d="M100 120 L90 100 L110 100 L105 120 Z" fill="#F39C12"/>
+  <circle cx="150" cy="127" r="5" fill="#1A1D24"/>
+  
+  <!-- Airflow lines (representing 气流) -->
+  <path d="M30 80 Q60 70 90 100 T150 80 T210 100" stroke="#3498DB" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M30 140 Q60 130 90 160 T150 140 T210 160" stroke="#3498DB" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M30 110 Q60 100 90 130 T150 110 T210 130" stroke="#5DADE2" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Turbulence indicators -->
+  <path d="M120 90 L130 80 M130 90 L120 80" stroke="#E74C3C" stroke-width="3" stroke-linecap="round"/>
+  <path d="M140 150 L150 140 M150 150 L140 140" stroke="#E74C3C" stroke-width="3" stroke-linecap="round"/>
+</svg>

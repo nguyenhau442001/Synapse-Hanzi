@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Person representing the individual -->
+  <g transform="translate(120, 150)">
+    <!-- Body -->
+    <path d="M-40 80 C-40 50, -20 30, 0 30 C20 30, 40 50, 40 80 L-40 80" fill="#4A5568"/>
+    <!-- Head -->
+    <circle cx="0" cy="0" r="30" fill="#E2E8F0"/>
+    <!-- Neck -->
+    <rect x="-8" y="25" width="16" height="10" fill="#E2E8F0"/>
+  </g>
+
+  <!-- Stack of books representing cultural depth/literary foundation -->
+  <g transform="translate(120, 180)">
+    <rect x="-50" y="-10" width="100" height="15" fill="#D69E2E" rx="2"/>
+    <rect x="-45" y="-25" width="90" height="15" fill="#ECC94B" rx="2"/>
+    <rect x="-40" y="-40" width="80" height="15" fill="#F6E05E" rx="2"/>
+  </g>
+
+  <!-- Glowing aura/light representing moral character/enlightenment -->
+  <circle cx="120" cy="100" r="45" fill="none" stroke="#D69E2E" stroke-width="2" stroke-dasharray="6 6" opacity="0.6"/>
+  
+  <!-- Open book held by the person -->
+  <path d="M90 130 L150 130 L140 150 L100 150 Z" fill="#E2E8F0"/>
+  <path d="M120 130 L120 150" stroke="#1A1D24" stroke-width="2"/>
+</svg>

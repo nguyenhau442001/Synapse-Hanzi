@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for focus -->
+  <circle cx="120" cy="115" r="70" fill="#2D3748" opacity="0.4"/>
+
+  <!-- Official Building / Tax Office (Representing "税务" - Tax Affairs / Tax Authority) -->
+  <g transform="translate(0, 0)">
+    <!-- Base Platform / Steps -->
+    <rect x="70" y="165" width="100" height="8" rx="2" fill="#4A5568"/>
+    <rect x="80" y="157" width="80" height="8" rx="2" fill="#718096"/>
+
+    <!-- Building Body -->
+    <rect x="85" y="85" width="70" height="72" fill="#2B6CB0"/>
+    
+    <!-- Windows - Left Column -->
+    <rect x="97" y="97" width="14" height="18" rx="2" fill="#E2E8F0" opacity="0.9"/>
+    <rect x="97" y="125" width="14" height="18" rx="2" fill="#E2E8F0" opacity="0.9"/>
+
+    <!-- Windows - Right Column -->
+    <rect x="129" y="97" width="14" height="18" rx="2" fill="#E2E8F0" opacity="0.9"/>
+    <rect x="129" y="125" width="14" height="18" rx="2" fill="#E2E8F0" opacity="0.9"/>
+
+    <!-- Classic Greek-style Columns/Facade Accent -->
+    <rect x="115" y="90" width="10" height="67" fill="#3182CE"/>
+
+    <!-- Entrance Door -->
+    <path d="M 110 157 L 110 142 A 10 10 0 0 1 130 142 L 130 157 Z" fill="#1A365D"/>
+
+    <!-- Roof / Pediment (Classical Tax Bureau Architecture) -->
+    <polygon points="120,50 65,85 175,85" fill="#4A5568"/>
+    <polygon points="120,53 72,85 168,85" fill="#2C3E50"/>
+    
+    <!-- Roof Accent Trim -->
+    <rect x="65" y="83" width="110" height="4" rx="1" fill="#CBD5E0"/>
+  </g>
+
+  <!-- Golden Scale / Coin Element (Representing Revenue / Taxes) -->
+  <g transform="translate(0, -5)">
+    <!-- Scale Beam & Support -->
+    <path d="M 120 45 L 120 32" stroke="#ECC94B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 95 38 L 145 38" stroke="#ECC94B" stroke-width="3.5" stroke-linecap="round"/>
+    
+    <!-- Left Chain & Pan -->
+    <path d="M 95 38 L 82 56" stroke="#CBD5E0" stroke-width="1.5"/>
+    <path d="M 95 38 L 108 56" stroke="#CBD5E0" stroke-width="1.5"/>
+    <path d="M 77 56 Q 95 68 113 56 Z" fill="#D69E2E"/>
+
+    <!-- Right Chain & Pan -->
+    <path d="M 145 38 L 132 56" stroke="#CBD5E0" stroke-width="1.5"/>
+    <path d="M 145 38 L 158 56" stroke="#CBD5E0" stroke-width="1.5"/>
+    <path d="M 127 56 Q 145 68 163 56 Z" fill="#D69E2E"/>
+
+    <!-- Glowing Tax Coin in Right Pan -->
+    <circle cx="145" cy="52" r="7" fill="#F6E05E"/>
+    <circle cx="145" cy="52" r="4.5" fill="none" stroke="#D69E2E" stroke-width="1.5"/>
+  </g>
+
+  <!-- Document / Declaration Check (Digital Tax Filing context) -->
+  <g transform="translate(142, 130)">
+    <!-- Clipboard Background -->
+    <rect x="0" y="0" width="36" height="46" rx="4" fill="#EDF2F7"/>
+    <!-- Clipboard Clip -->
+    <path d="M 11 0 L 25 0 L 25 5 L 11 5 Z" fill="#718096" rx="1"/>
+    <!-- Form Lines -->
+    <rect x="7" y="10" width="14" height="3" rx="1" fill="#A0AEC0"/>
+    <rect x="7" y="18" width="22" height="2.5" rx="1" fill="#CBD5E0"/>
+    <rect x="7" y="24" width="18" height="2.5" rx="1" fill="#CBD5E0"/>
+    <!-- Checkmark Badge -->
+    <circle cx="24" cy="35" r="8" fill="#48BB78"/>
+    <path d="M 20.5 35 L 23 37.5 L 28 32" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

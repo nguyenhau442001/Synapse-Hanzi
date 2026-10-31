@@ -1,0 +1,35 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements (Clock dial context, subtle) -->
+  <circle cx="120" cy="120" r="88" fill="none" stroke="#2A2F3D" stroke-width="2" stroke-dasharray="4 8"/>
+  
+  <line x1="120" y1="36" x2="120" y2="44" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+  <line x1="120" y1="196" x2="120" y2="204" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+  <line x1="36" y1="120" x2="44" y2="120" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+  <line x1="196" y1="120" x2="204" y2="120" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Clock Outer Ring -->
+  <circle cx="120" cy="120" r="76" fill="#222733" stroke="#3A4254" stroke-width="4"/>
+
+  <!-- Center Pivot Base -->
+  <circle cx="120" cy="120" r="76" fill="#1E232F"/>
+
+  <!-- Clock Hands (Pointing precisely to 12 o'clock) -->
+  <!-- Minute hand (pointing slightly offset to show dynamic design, but hour hand pointing straight at 12) -->
+  <polygon points="117,120 123,120 125,75 120,65 115,75" fill="#8892B0" transform="rotate(30, 120, 120)"/>
+  
+  <!-- Hour hand pointing precisely UP to 12 o'clock, highlighted in accent gold/orange -->
+  <g filter="drop-shadow(0px 4px 6px rgba(0,0,0,0.4))">
+    <polygon points="116,124 124,124 123,55 120,45 117,55" fill="#F59E0B"/>
+    <polygon points="120,45 123,55 120,60 117,55" fill="#FCD34D"/>
+  </g>
+
+  <!-- Highlight Indicator (Pointing Arrow/Focus at 12 o'clock position) -->
+  <path d="M 120,28 L 114,38 L 126,38 Z" fill="#F59E0B"/>
+
+  <!-- Center Cap -->
+  <circle cx="120" cy="120" r="8" fill="#11141B" stroke="#F59E0B" stroke-width="3"/>
+  <circle cx="120" cy="120" r="3" fill="#FCD34D"/>
+</svg>

@@ -1,0 +1,67 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Atmosphere: Soft Spring Rain / Mist -->
+  <g opacity="0.3">
+    <line x1="60" y1="40" x2="50" y2="70" stroke="#64B5F6" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="90" y1="30" x2="80" y2="60" stroke="#64B5F6" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="160" y1="35" x2="150" y2="65" stroke="#64B5F6" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="190" y1="45" x2="180" y2="75" stroke="#64B5F6" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Ground Layer / Earth Mound (泥土) -->
+  <!-- Deep Earth Base -->
+  <path d="M40 170 C40 170 60 135 120 135 C180 135 200 170 200 170 C200 195 180 200 120 200 C60 200 40 195 40 170 Z" fill="#4E342E"/>
+  
+  <!-- Mid Earth Layer (Rich Soil Texture) -->
+  <path d="M48 165 C48 165 70 142 120 142 C170 142 192 165 192 165 C192 185 170 192 120 192 C70 192 48 185 48 165 Z" fill="#6D4C41"/>
+
+  <!-- Top Rich Soil Mound with Texture Details -->
+  <path d="M60 160 C60 160 85 150 120 150 C155 150 180 160 180 160 C180 175 155 182 120 182 C85 182 60 175 60 160 Z" fill="#8D6E63"/>
+
+  <!-- Soil Clods / Texture Marks -->
+  <ellipse cx="90" cy="164" rx="6" ry="4" fill="#5D4037" opacity="0.6"/>
+  <ellipse cx="145" cy="167" rx="8" ry="4" fill="#5D4037" opacity="0.6"/>
+  <ellipse cx="120" cy="172" rx="10" ry="5" fill="#5D4037" opacity="0.5"/>
+  <circle cx="75" cy="172" r="3" fill="#A1887F"/>
+  <circle cx="160" cy="160" r="2.5" fill="#A1887F"/>
+  <circle cx="105" cy="158" r="3.5" fill="#A1887F"/>
+
+  <!-- Fresh Raindrops on Soil -->
+  <circle cx="95" cy="153" r="2" fill="#E1F5FE" opacity="0.8"/>
+  <circle cx="138" cy="155" r="1.5" fill="#E1F5FE" opacity="0.8"/>
+  <circle cx="112" cy="163" r="2" fill="#E1F5FE" opacity="0.7"/>
+
+  <!-- Vibrant Sprout / Life emerging from the Earth (Spring Vibe) -->
+  <!-- Stem -->
+  <path d="M120 150 C120 130 115 110 108 95" fill="none" stroke="#81C784" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Left Leaf -->
+  <path d="M109 115 C95 115 80 105 85 95 C90 85 107 98 109 115 Z" fill="#A5D6A7"/>
+  <path d="M109 115 C102 108 93 103 89 97" fill="none" stroke="#66BB6A" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Right Leaf (Main Focus, High Contrast Accent) -->
+  <path d="M112 105 C125 100 140 105 138 115 C135 125 118 118 112 105 Z" fill="#FFB74D"/>
+  <path d="M112 105 C120 109 130 111 135 113" fill="none" stroke="#F57C00" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Top Tender Bud -->
+  <path d="M108 95 C108 90 112 85 115 82 C115 88 112 92 108 95 Z" fill="#81C784"/>
+
+  <!-- Rising Fragrance / Aroma Waves (Representing "清新的泥土芳香") -->
+  <g opacity="0.7" stroke-linecap="round" stroke-width="2" fill="none">
+    <!-- Left Aroma Swirl -->
+    <path d="M85 85 C75 75 75 60 85 50 C95 40 90 30 80 25" stroke="#FFE082"/>
+    <!-- Right Aroma Swirl -->
+    <path d="M155 90 C165 75 160 60 150 45 C140 30 145 20 155 15" stroke="#FFE082"/>
+    <!-- Center Subtle Mist -->
+    <path d="M120 75 C120 65 125 55 120 45" stroke="#81C784" opacity="0.5"/>
+  </g>
+
+  <!-- Tiny Sparkling Aroma Particles -->
+  <circle cx="80" cy="40" r="1.5" fill="#FFE082"/>
+  <circle cx="92" cy="30" r="1" fill="#FFE082"/>
+  <circle cx="150" cy="35" r="1.5" fill="#FFE082"/>
+  <circle cx="138" cy="22" r="1" fill="#FFE082"/>
+
+</svg>

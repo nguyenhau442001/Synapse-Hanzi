@@ -1,0 +1,91 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <defs>
+    <!-- Gradients for atmospheric depth -->
+    <linearGradient id="bgGlow" x1="120" y1="40" x2="120" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D3748" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#1A1D24" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Water reflection gradient -->
+    <linearGradient id="waterGrad" x1="120" y1="160" x2="120" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#319795" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#1A1D24" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Fog / Mist progression gradients (showing "increasing" serenity) -->
+    <linearGradient id="mistLeft" x1="20" y1="120" x2="110" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4A5568" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#81E6D9" stop-opacity="0.35"/>
+    </linearGradient>
+
+    <linearGradient id="mistRight" x1="130" y1="120" x2="220" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#81E6D9" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#4A5568" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Ambient glow -->
+  <circle cx="120" cy="110" r="70" fill="url(#bgGlow)"/>
+
+  <!-- Ancient Bridge Motif (Contextual Reference: Old stone bridge & town) -->
+  <g transform="translate(0, 15)">
+    <!-- Distant mountains / town silhouettes (fading into the background) -->
+    <path d="M40 135 L70 105 L95 125 L130 95 L170 120 L200 100 L205 135 Z" fill="#252D3D" opacity="0.7"/>
+    
+    <!-- Traditional roof outlines -->
+    <path d="M75 105 L82 100 L90 105 Z" fill="#2D3748"/>
+    <path d="M125 95 L133 88 L142 95 Z" fill="#2D3748"/>
+    <path d="M165 118 L172 113 L180 118 Z" fill="#2D3748"/>
+
+    <!-- Water Body -->
+    <path d="M20 155 Q120 145 220 155 L220 200 Q120 215 20 200 Z" fill="#171A21"/>
+    <path d="M20 155 Q120 145 220 155 L220 200 Q120 215 20 200 Z" fill="url(#waterGrad)"/>
+
+    <!-- Stone Bridge Arch -->
+    <path d="M60 160 Q120 120 180 160 L170 168 Q120 132 70 168 Z" fill="#2D3748"/>
+    <path d="M85 162 Q120 138 155 162" stroke="#4A5568" stroke-width="2" fill="none"/>
+    <!-- Bridge Reflection -->
+    <ellipse cx="120" cy="175" rx="35" ry="6" fill="#232A36" opacity="0.6"/>
+
+    <!-- Ripple lines (Progression of serenity outward) -->
+    <path d="M95 185 Q120 180 145 185" stroke="#319795" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+    <path d="M75 195 Q120 189 165 195" stroke="#319795" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.2"/>
+  </g>
+
+  <!-- Visual Metaphor of "Escalation / Intensification" (越发): 
+       Stacked luminous concentric glowing tiers showing depth/growth/intensity 
+       without breaking standard flat vector rules. -->
+  <g transform="translate(120, 75)">
+    <!-- Outer faint halo (Baseline) -->
+    <circle cx="0" cy="0" r="48" fill="none" stroke="#4A5568" stroke-width="1" stroke-dasharray="3 6" opacity="0.4"/>
+    
+    <!-- Mid-level ring (Progressive intensification) -->
+    <circle cx="0" cy="0" r="36" fill="none" stroke="#319795" stroke-width="2" opacity="0.6"/>
+    
+    <!-- Inner bright focused core (Extreme/Peak state) -->
+    <circle cx="0" cy="0" r="24" fill="none" stroke="#F6AD55" stroke-width="2.5" opacity="0.9"/>
+    <circle cx="0" cy="0" r="12" fill="#F6AD55" opacity="0.2"/>
+
+    <!-- Upward Escalation Arrows integrated symmetrically (Visualizing 'More and More') -->
+    <path d="M -3 -12 L 0 -18 L 3 -12" fill="none" stroke="#F6AD55" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M -3 -4 L 0 -10 L 3 -4" fill="none" stroke="#319795" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+  </g>
+
+  <!-- Atmospheric mist/light gradients washing over from left to right (Deepening effect) -->
+  <rect x="20" y="110" width="90" height="40" fill="url(#mistLeft)" rx="8" style="mix-blend-mode: screen;"/>
+  <rect x="130" y="110" width="90" height="40" fill="url(#mistRight)" rx="8" style="mix-blend-mode: screen;"/>
+
+  <!-- Focal Glowing Accent Sparkles (Highlighting clarity & high contrast) -->
+  <g fill="#F6AD55">
+    <circle cx="120" cy="57" r="2.5"/>
+    <circle cx="155" cy="85" r="1.5" opacity="0.7"/>
+    <circle cx="85" cy="85" r="1.5" opacity="0.7"/>
+  </g>
+  <g fill="#81E6D9">
+    <circle cx="105" cy="65" r="2"/>
+    <circle cx="135" cy="65" r="2"/>
+  </g>
+</svg>

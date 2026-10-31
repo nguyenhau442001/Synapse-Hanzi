@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background glow for fire/danger context -->
+  <radialGradient id="fireGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#FF5722" stop-opacity="0.25"/>
+    <stop offset="100%" stop-color="#1A1D24" stop-opacity="0"/>
+  </radialGradient>
+  <circle cx="120" cy="120" r="100" fill="url(#fireGlow)"/>
+
+  <!-- High-rise building silhouette in background -->
+  <rect x="70" y="80" width="100" height="130" fill="#222733" rx="4"/>
+  <rect x="85" y="95" width="20" height="25" fill="#2E3646" rx="2"/>
+  <rect x="135" y="95" width="20" height="25" fill="#2E3646" rx="2"/>
+  <rect x="85" y="135" width="20" height="25" fill="#2E3646" rx="2"/>
+  <rect x="135" y="135" width="20" height="25" fill="#2E3646" rx="2"/>
+
+  <!-- Intense Fire engulfing the building structure -->
+  <path d="M 60 170 Q 75 140 85 150 Q 100 110 120 135 Q 140 100 155 130 Q 175 120 185 160 Q 195 190 180 210 L 60 210 Z" fill="#FF3D00" opacity="0.85"/>
+  <path d="M 75 180 Q 90 150 105 165 Q 120 130 135 155 Q 150 130 165 170 Q 175 190 165 210 L 75 210 Z" fill="#FFC107"/>
+
+  <!-- Dramatic upward rescue ladder angle -->
+  <line x1="30" y1="210" x2="160" y2="100" stroke="#CFD8DC" stroke-width="6" stroke-linecap="round"/>
+  <line x1="45" y1="220" x2="175" y2="110" stroke="#CFD8DC" stroke-width="6" stroke-linecap="round"/>
+  <!-- Ladder rungs -->
+  <line x1="42" y1="210" x2="54" y2="218" stroke="#90A4AE" stroke-width="4"/>
+  <line x1="68" y1="190" x2="80" y2="198" stroke="#90A4AE" stroke-width="4"/>
+  <line x1="94" y1="170" x2="106" y2="178" stroke="#90A4AE" stroke-width="4"/>
+  <line x1="120" y1="150" x2="132" y2="158" stroke="#90A4AE" stroke-width="4"/>
+  <line x1="146" y1="130" x2="158" y2="138" stroke="#90A4AE" stroke-width="4"/>
+
+  <!-- Firefighter heroic figure holding rescued child (center iconic physical scene representing "jingxin dongpo" / breathtaking rescue) -->
+  <!-- Firefighter body/gear (Orange/Navy uniform) -->
+  <path d="M 115 130 Q 125 115 140 125 L 155 155 L 135 175 L 110 145 Z" fill="#FF7043"/>
+  <!-- Firefighter helmet -->
+  <circle cx="125" cy="112" r="11" fill="#FFC107"/>
+  <path d="M 112 112 Q 125 106 138 112" stroke="#FFA000" stroke-width="3" fill="none"/>
+
+  <!-- Rescued child safely clutched -->
+  <circle cx="145" cy="138" r="8" fill="#FFCC80"/>
+  <path d="M 138 142 Q 148 142 155 152 L 145 162 Z" fill="#4CAF50"/>
+
+  <!-- Firefighter arms firmly securing the rescue -->
+  <path d="M 125 125 Q 138 135 148 132" stroke="#FF7043" stroke-width="7" stroke-linecap="round" fill="none"/>
+
+  <!-- Floating embers / sparks adding to the breathtaking atmosphere -->
+  <circle cx="95" cy="85" r="3" fill="#FFD54F"/>
+  <circle cx="165" cy="75" r="2" fill="#FF7043"/>
+  <circle cx="140" cy="65" r="2.5" fill="#FFD54F"/>
+  <circle cx="75" cy="120" r="2" fill="#FF5722"/>
+  <circle cx="175" cy="140" r="3" fill="#FFC107"/>
+</svg>

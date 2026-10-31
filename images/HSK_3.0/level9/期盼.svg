@@ -1,0 +1,57 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Ambient background glow representing anticipation/hope -->
+  <circle cx="120" cy="115" r="70" fill="#2D2838" opacity="0.6"/>
+  <circle cx="120" cy="100" r="45" fill="#3B2E3E" opacity="0.4"/>
+
+  <!-- Window frame symbolizing looking out/waiting for someone to return from afar -->
+  <rect x="55" y="45" width="130" height="140" rx="6" fill="none" stroke="#303642" stroke-width="6"/>
+  
+  <!-- Window Glass Gradient/Background -->
+  <rect x="61" y="51" width="118" height="128" fill="#1E232F"/>
+  
+  <!-- Window Panes (Cross) -->
+  <line x1="120" y1="51" x2="120" y2="179" stroke="#303642" stroke-width="4"/>
+  <line x1="61" y1="115" x2="179" y2="115" stroke="#303642" stroke-width="4"/>
+
+  <!-- Distant horizon / pathway outside the window -->
+  <path d="M 61 145 L 120 115 L 179 145 L 179 179 L 61 179 Z" fill="#222834"/>
+  
+  <!-- Warm welcoming light path from the distance -->
+  <polygon points="112,115 128,115 145,179 95,179" fill="#FFB74D" opacity="0.12"/>
+
+  <!-- Sill at the bottom -->
+  <rect x="45" y="179" width="150" height="10" rx="3" fill="#3A4252"/>
+
+  <!-- Physical Object representing "期盼": A lit traditional lantern placed on the windowsill, representing waiting/hoping for a safe return home -->
+  <!-- Lantern Hanging/Standing Base -->
+  <rect x="108" y="125" width="24" height="4" rx="2" fill="#E0A96D"/>
+  <rect x="114" y="115" width="12" height="10" fill="#E0A96D"/>
+
+  <!-- Lantern Body (Glowing Warm Orange) -->
+  <path d="M 102 129 C 96 129, 96 161, 102 161 L 138 161 C 144 161, 144 129, 138 129 Z" fill="#FF8F00"/>
+  
+  <!-- Lantern Ribs (Stylized) -->
+  <path d="M 120 129 C 112 129, 112 161, 120 161" fill="none" stroke="#E65100" stroke-width="1.5"/>
+  <path d="M 120 129 C 128 129, 128 161, 120 161" fill="none" stroke="#E65100" stroke-width="1.5"/>
+  <line x1="99" y1="145" x2="141" y2="145" stroke="#E65100" stroke-width="1.5"/>
+
+  <!-- Lantern Bottom Cap and Tassel -->
+  <rect x="111" y="161" width="18" height="4" rx="1" fill="#E0A96D"/>
+  <line x1="120" y1="165" x2="120" y2="175" stroke="#FFA726" stroke-width="2"/>
+  <circle cx="120" cy="177" r="2" fill="#FFA726"/>
+
+  <!-- Glowing Aura around the lantern -->
+  <circle cx="120" cy="145" r="25" fill="#FFA726" opacity="0.2" filter="blur(4px)"/>
+
+  <!-- Focus / Anticipation accent elements: Starry night sky outside -->
+  <circle cx="85" cy="75" r="1.5" fill="#E2E8F0" opacity="0.8"/>
+  <circle cx="155" cy="70" r="2" fill="#E2E8F0" opacity="0.9"/>
+  <circle cx="145" cy="95" r="1" fill="#E2E8F0" opacity="0.6"/>
+  <circle cx="95" cy="90" r="1.5" fill="#E2E8F0" opacity="0.7"/>
+
+  <!-- Warm guiding star / distant light -->
+  <path d="M 120 65 L 122.5 70 L 128 72.5 L 122.5 75 L 120 80 L 117.5 75 L 112 72.5 L 117.5 70 Z" fill="#FFB74D"/>
+</svg>

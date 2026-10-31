@@ -1,0 +1,58 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle floor platform for spatial grounding -->
+  <ellipse cx="120" cy="180" rx="70" ry="12" fill="#252A34"/>
+  <path d="M50 180 Q120 190 190 180" stroke="#323846" stroke-width="2" fill="none"/>
+
+  <!-- Red Carpet symbolizing honor, arrival, and VIP presence (quang lâm / đến dự) -->
+  <path d="M100 180 L75 220 H165 L140 180 Z" fill="#D93838" opacity="0.9"/>
+  <path d="M103 180 L80 217 H160 L137 180 Z" fill="#E64A4A" opacity="0.9"/>
+  <path d="M108 180 L90 210 H150 L132 180 Z" stroke="#F2B705" stroke-width="1.5" fill="none" stroke-dasharray="3 3"/>
+
+  <!-- VIP Guest Character (Representing the person arriving / "việc quang lâm, hiện diện") -->
+  <!-- Body/Suit -->
+  <path d="M100 135 L108 175 H132 L140 135 Z" fill="#2B3748"/>
+  <path d="M108 135 L120 155 L132 135 Z" fill="#E2E8F0"/> <!-- Shirt -->
+  <polygon points="120,142 116,165 124,165" fill="#D93838"/> <!-- Tie -->
+  
+  <!-- Shoulders / Jacket -->
+  <path d="M92 135 C92 120 105 118 120 118 C135 118 148 120 148 135 L140 175 H100 Z" fill="#1E2530"/>
+
+  <!-- Head & Hair -->
+  <circle cx="120" cy="98" r="16" fill="#FAD0C4"/>
+  <path d="M104 96 C104 84 110 80 120 80 C130 80 136 84 136 96 C136 98 134 98 134 94 C134 88 128 83 120 83 C112 83 106 88 106 94 C106 98 104 98 104 96 Z" fill="#2C221E"/>
+
+  <!-- Gesturing arms welcoming/arriving -->
+  <!-- Left arm waving/approaching -->
+  <path d="M92 128 L72 115 L78 105 L96 120 Z" fill="#1E2530"/>
+  <circle cx="70" cy="103" r="5" fill="#FAD0C4"/>
+  
+  <!-- Right arm holding a polished golden invitation/folder -->
+  <path d="M148 128 L165 138 L158 148 L142 135 Z" fill="#1E2530"/>
+  <circle cx="168" cy="140" r="5" fill="#FAD0C4"/>
+  
+  <!-- Golden Folder / VIP Document representing formal attendance/event -->
+  <rect x="155" y="130" width="22" height="18" rx="2" fill="#F2B705" transform="rotate(15 155 130)"/>
+  <rect x="158" y="133" width="16" height="12" rx="1" fill="#FFF" transform="rotate(15 155 130)"/>
+
+  <!-- Formal Arch / Entrance Gateway (Symbolizing the venue/địa điểm being graced by presence) -->
+  <path d="M60 170 V85 C60 55 90 40 120 40 C150 40 180 55 180 85 V170" fill="none" stroke="#3E495E" stroke-width="4"/>
+  <path d="M66 170 V87 C66 60 92 46 120 46 C148 46 174 60 174 87 V170" fill="none" stroke="#2D3748" stroke-width="2"/>
+
+  <!-- Spotlight beam from above emphasizing the honorable presence (Quang lâm) -->
+  <path d="M90 40 L40 180 H80 L110 40 Z" fill="#F2B705" opacity="0.08"/>
+  <path d="M150 40 L200 180 H160 L130 40 Z" fill="#F2B705" opacity="0.08"/>
+  
+  <!-- Focus highlight star/sparkle denoting high-status arrival & importance -->
+  <g transform="translate(120, 28)">
+    <path d="M0 -8 L2 -2 L8 0 L2 2 L0 8 L-2 2 L-8 0 L-2 -2 Z" fill="#F2B705"/>
+  </g>
+  <g transform="translate(85, 35) scale(0.6)">
+    <path d="M0 -8 L2 -2 L8 0 L2 2 L0 8 L-2 2 L-8 0 L-2 -2 Z" fill="#F2B705" opacity="0.7"/>
+  </g>
+  <g transform="translate(155, 35) scale(0.6)">
+    <path d="M0 -8 L2 -2 L8 0 L2 2 L0 8 L-2 2 L-8 0 L-2 -2 Z" fill="#F2B705" opacity="0.7"/>
+  </g>
+</svg>

@@ -1,0 +1,109 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background elements - night sky with subtle glowing mist -->
+  <circle cx="180" cy="60" r="1.5" fill="#5A6E85" opacity="0.6"/>
+  <circle cx="50" cy="50" r="1" fill="#5A6E85" opacity="0.4"/>
+  <circle cx="90" cy="35" r="1.5" fill="#5A6E85" opacity="0.5"/>
+  <circle cx="205" cy="100" r="1" fill="#5A6E85" opacity="0.3"/>
+  
+  <!-- Atmospheric glow over the swamp -->
+  <ellipse cx="120" cy="140" rx="90" ry="25" fill="#2E4A43" opacity="0.3"/>
+
+  <!-- Distant background silhouettes of dead/mossy swamp trees -->
+  <g fill="#253833">
+    <!-- Tree 1 -->
+    <path d="M55,145 L52,110 L48,105 L44,115 L40,110 L43,90 L48,80 L50,65 L52,80 L56,95 L60,85 L64,100 L58,110 L60,145 Z"/>
+    <!-- Tree 2 -->
+    <path d="M190,150 L187,120 L182,105 L175,100 L178,85 L182,70 L185,55 L188,70 L193,85 L198,80 L203,95 L195,110 L198,150 Z"/>
+    <!-- Tree 3 (smaller) -->
+    <path d="M145,135 L143,115 L140,105 L136,100 L138,90 L140,80 L142,70 L144,80 L148,90 L152,85 L155,95 L149,105 L150,135 Z"/>
+  </g>
+
+  <!-- Reeds and cattails in the foreground/midground -->
+  <g stroke="#3A5C50" stroke-width="1.5" stroke-linecap="round">
+    <line x1="35" y1="165" x2="30" y2="105"/>
+    <line x1="42" y1="170" x2="40" y2="115"/>
+    <line x1="48" y1="168" x2="52" y2="120"/>
+    
+    <line x1="195" y1="165" x2="200" y2="110"/>
+    <line x1="202" y1="170" x2="210" y2="120"/>
+    <line x1="188" y1="168" x2="185" y2="125"/>
+  </g>
+  
+  <!-- Cattail heads (brown cylindrical parts) -->
+  <ellipse cx="38" cy="115" rx="3" ry="10" fill="#8C5830"/>
+  <ellipse cx="204" cy="122" rx="2.5" ry="8" fill="#8C5830"/>
+
+  <!-- Main Swamp Terrain: Muddy ground with pools of water reflecting light -->
+  <!-- Dark mud bank left -->
+  <path d="M20,170 C40,160 80,165 120,170 C160,175 200,165 220,175 L225,200 L15,200 Z" fill="#222B28"/>
+  
+  <!-- Muddy bank right/center foreground -->
+  <path d="M0,190 C60,180 140,195 240,185 L240,215 L0,215 Z" fill="#1B2421"/>
+
+  <!-- Water pools (murky reflective surfaces) -->
+  <!-- Pool 1 -->
+  <path d="M60,165 C90,160 140,162 170,170 C140,182 90,180 60,165 Z" fill="#2E4C53"/>
+  <ellipse cx="115" cy="170" rx="35" ry="4" fill="#3D6870" opacity="0.8"/>
+  <!-- Water shimmer -->
+  <path d="M95,169 Q115,167 135,171" stroke="#68A3AF" stroke-width="1" fill="none" opacity="0.6"/>
+
+  <!-- Pool 2 (Foreground left) -->
+  <path d="M30,185 C50,180 90,183 110,190 C85,198 50,197 30,185 Z" fill="#264147"/>
+  <path d="M55,188 Q75,186 90,191" stroke="#52828C" stroke-width="1" fill="none" opacity="0.5"/>
+
+  <!-- Bubbles rising from the marsh gas (classic swamp indicator) -->
+  <circle cx="100" cy="168" r="2" fill="#75B3B8" opacity="0.7"/>
+  <circle cx="103" cy="161" r="1.2" fill="#75B3B8" opacity="0.6"/>
+  <circle cx="102" cy="156" r="0.8" fill="#75B3B8" opacity="0.5"/>
+  
+  <circle cx="145" cy="175" r="1.5" fill="#75B3B8" opacity="0.6"/>
+  <circle cx="147" cy="170" r="1" fill="#75B3B8" opacity="0.5"/>
+
+  <!-- Prominent central feature: A majestic ancient mangrove/swamp tree trunk with hanging moss -->
+  <!-- Root structure sprawling in mud -->
+  <path d="M120,160 C110,160 90,168 75,178 L70,185 L85,183 C95,175 110,170 120,170 Z" fill="#2F2B26"/>
+  <path d="M130,160 C140,160 160,167 175,177 L180,184 L165,182 C155,175 140,170 130,170 Z" fill="#2F2B26"/>
+  
+  <!-- Main Trunk -->
+  <path d="M110,160 L115,100 C115,90 125,90 130,100 L135,160 Z" fill="#3D3630"/>
+  <path d="M120,160 L122,105 C122,95 128,95 130,105 L132,160 Z" fill="#332E29"/>
+
+  <!-- Spreading branches with dense foliage / Spanish moss -->
+  <path d="M118,105 C95,95 80,80 75,65 C90,75 105,85 118,100 Z" fill="#2B3D35"/>
+  <path d="M128,105 C150,95 165,80 170,65 C155,75 140,85 128,100 Z" fill="#2B3D35"/>
+  
+  <!-- Hanging moss accents -->
+  <path d="M78,70 Q82,85 80,95" stroke="#4A6157" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M95,78 Q98,92 94,102" stroke="#4A6157" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M152,78 Q149,92 153,102" stroke="#4A6157" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M167,70 Q163,85 165,95" stroke="#4A6157" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Focal Point Wildlife (Protected rare bird as hinted in context) - Elegant Heron wading -->
+  <g transform="translate(145, 135)">
+    <!-- Legs -->
+    <line x1="12" y1="20" x2="8" y2="40" stroke="#C8D6D8" stroke-width="1"/>
+    <line x1="14" y1="20" x2="18" y2="40" stroke="#C8D6D8" stroke-width="1"/>
+    <!-- Body -->
+    <ellipse cx="10" cy="15" rx="8" ry="12" fill="#EAEFF0" transform="rotate(-20 10 15)"/>
+    <!-- Neck & Head -->
+    <path d="M6,8 C2,0 12,-10 18,-8" stroke="#EAEFF0" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- Beak -->
+    <path d="M18,-8 L26,-10 L18,-6 Z" fill="#E6A15C"/>
+    <!-- Eye -->
+    <circle cx="12" cy="-7" r="1" fill="#1A1D24"/>
+  </g>
+
+  <!-- Fireflies / Mists to add magical wetland atmosphere with high-contrast accent color (gold/orange) -->
+  <circle cx="75" cy="130" r="2" fill="#E6A15C" opacity="0.9"/>
+  <circle cx="76" cy="129" r="4" fill="#E6A15C" opacity="0.3"/>
+
+  <circle cx="165" cy="120" r="1.5" fill="#E6A15C" opacity="0.8"/>
+  <circle cx="165" cy="120" r="3" fill="#E6A15C" opacity="0.25"/>
+
+  <circle cx="110" cy="140" r="2.5" fill="#E6A15C" opacity="0.95"/>
+  <circle cx="110" cy="140" r="5" fill="#E6A15C" opacity="0.3"/>
+
+  <circle cx="135" cy="125" r="1" fill="#E6A15C" opacity="0.7"/>
+</svg>

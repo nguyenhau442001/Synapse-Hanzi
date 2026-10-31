@@ -1,0 +1,18 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Document stack representing the first phase -->
+  <rect x="70" y="140" width="60" height="40" rx="4" fill="#3D4451" stroke="#5D677A" stroke-width="2"/>
+  <rect x="75" y="135" width="60" height="40" rx="4" fill="#4B5563" stroke="#5D677A" stroke-width="2"/>
+  <rect x="80" y="130" width="60" height="40" rx="4" fill="#F59E0B" stroke="#D97706" stroke-width="2"/>
+  
+  <!-- Arrow indicating progression -->
+  <path d="M150 120 L180 120 M170 110 L180 120 L170 130" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- Future project folder representing "后续" -->
+  <path d="M190 100 L215 100 C217 100 218 101 218 103 L218 145 C218 147 217 148 215 148 L185 148 C183 148 182 147 182 145 L182 108 C182 106 183 105 185 105 L195 105 L198 100 Z" fill="#F59E0B"/>
+  <rect x="185" y="115" width="28" height="25" rx="2" fill="#D97706"/>
+  <rect x="190" y="120" width="18" height="3" rx="1" fill="#FFFBEB"/>
+  <rect x="190" y="127" width="18" height="3" rx="1" fill="#FFFBEB"/>
+  <rect x="190" y="134" width="10" height="3" rx="1" fill="#FFFBEB"/>
+</svg>

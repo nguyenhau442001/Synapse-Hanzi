@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Platform edge -->
+  <rect x="0" y="180" width="240" height="60" fill="#2D343E"/>
+  
+  <!-- Train silhouette -->
+  <rect x="140" y="120" width="90" height="60" rx="4" fill="#4A5568"/>
+  <rect x="150" y="135" width="20" height="20" rx="2" fill="#F6AD55"/>
+  <rect x="180" y="135" width="20" height="20" rx="2" fill="#F6AD55"/>
+  
+  <!-- Mother figure -->
+  <g transform="translate(60, 100)">
+    <!-- Body -->
+    <path d="M20 120 L50 120 L45 80 L25 80 Z" fill="#718096"/>
+    <!-- Head -->
+    <circle cx="35" cy="60" r="20" fill="#CBD5E0"/>
+    <!-- Focus line (The "Gaze") -->
+    <line x1="55" y1="60" x2="140" y2="140" stroke="#F6AD55" stroke-width="2" stroke-dasharray="4 4"/>
+    <!-- Eye detail -->
+    <circle cx="45" cy="58" r="3" fill="#1A1D24"/>
+  </g>
+  
+  <!-- Decorative track lines -->
+  <line x1="0" y1="180" x2="240" y2="180" stroke="#4A5568" stroke-width="2"/>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative subtle background glow representing timeless tradition/radiance -->
+  <circle cx="120" cy="115" r="70" fill="#252A34" opacity="0.6"/>
+  <circle cx="120" cy="115" r="50" fill="#2D3544" opacity="0.4"/>
+
+  <!-- Central Visual Representation for "美德" (Měidé / Virtues of respecting elders, helping others, honesty) -->
+  <!-- We depict a compassionate, respectful generational interaction (helping/guiding an elder or child with an open, honest gesture) -->
+  
+  <!-- Elder figure on the left -->
+  <g id="elder">
+    <!-- Body / Torso -->
+    <path d="M70,165 C70,145 80,135 95,135 C110,135 120,145 120,165 Z" fill="#3B82F6"/>
+    <!-- Head -->
+    <circle cx="95" cy="115" r="16" fill="#FDE047"/>
+    <!-- Hair (gray/white subtle detail) -->
+    <path d="M82,112 C83,104 88,100 95,100 C102,100 107,104 108,112 Z" fill="#9CA3AF"/>
+  </g>
+
+  <!-- Younger / Helping figure on the right with a warm, welcoming posture -->
+  <g id="helper">
+    <!-- Body / Torso -->
+    <path d="M120,165 C120,145 130,135 145,135 C160,135 170,145 170,165 Z" fill="#F59E0B"/>
+    <!-- Head -->
+    <circle cx="145" cy="115" r="16" fill="#FDE047"/>
+    <!-- Hair -->
+    <path d="M132,110 C133,101 138,98 145,98 C152,98 157,101 158,110 Z" fill="#4B5563"/>
+  </g>
+
+  <!-- Connected hands in the center symbolizing mutual respect, kindness, and virtue (助人为乐 / 尊老爱幼) -->
+  <g id="handshake_support">
+    <!-- Supporting arm / hands bridge -->
+    <path d="M105,145 Q120,130 135,145" fill="none" stroke="#FDE047" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Radiant star/spark above them representing "优良传统美德" (time-honored virtue shining bright) -->
+  <g id="virtue_sparkle" transform="translate(120, 58)">
+    <path d="M0,-14 C2,-5 5,-2 14,0 C5,2 2,5 0,14 C-2,5 -5,2 -14,0 C-5,-2 -2,-5 0,-14 Z" fill="#FBBF24"/>
+    <circle cx="0" cy="0" r="3" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Secondary small sparkle accents -->
+  <circle cx="80" cy="75" r="2" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="165" cy="85" r="2.5" fill="#F59E0B" opacity="0.6"/>
+  <circle cx="100" cy="45" r="1.5" fill="#FDE047" opacity="0.7"/>
+
+  <!-- Ground line representing stability and foundation -->
+  <path d="M50,185 L190,185" stroke="#374151" stroke-width="3" stroke-linecap="round"/>
+</svg>

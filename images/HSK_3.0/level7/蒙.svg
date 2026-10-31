@@ -1,0 +1,78 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Definitions for gradients and clipping -->
+  <defs>
+    <!-- Background lake gradient -->
+    <linearGradient id="lakeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#243447"/>
+      <stop offset="100%" stop-color="#16202A"/>
+    </linearGradient>
+
+    <!-- Morning sky gradient -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E2330"/>
+      <stop offset="100%" stop-color="#243447"/>
+    </linearGradient>
+
+    <!-- Dawn sun glow -->
+    <radialGradient id="sunGlow" cx="75%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="#FFB74D" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FFB74D" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Veil / Mist layers for "蒙" (covering, shroud of mist) -->
+    <linearGradient id="veilGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E0F2FE" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#E0F2FE" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#E0F2FE" stop-opacity="0.15"/>
+    </linearGradient>
+
+    <linearGradient id="veilGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F1F5F9" stop-opacity="0.2"/>
+      <stop offset="60%" stop-color="#E2E8F0" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#F1F5F9" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <clipPath id="lakeClip">
+      <path d="M 30 135 C 70 125, 170 125, 210 135 C 215 170, 215 190, 210 200 C 170 210, 70 210, 30 200 C 25 190, 25 170, 30 135 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Sky Area -->
+  <path d="M 0 0 H 240 V 140 H 0 Z" fill="url(#skyGrad)"/>
+  
+  <!-- Sun / Dawn light -->
+  <circle cx="170" cy="70" r="45" fill="url(#sunGlow)"/>
+  <circle cx="170" cy="70" r="14" fill="#FFB74D" opacity="0.8"/>
+
+  <!-- Distant Mountains (partially covered/faded) -->
+  <path d="M 20 135 L 70 95 L 120 125 L 165 90 L 220 135 Z" fill="#2C3E50" opacity="0.6"/>
+
+  <!-- Lake Body -->
+  <path d="M 30 135 C 70 125, 170 125, 210 135 C 215 170, 215 190, 210 200 C 170 210, 70 210, 30 200 C 25 190, 25 170, 30 135 Z" fill="url(#lakeGrad)"/>
+
+  <!-- Reflections in lake -->
+  <ellipse cx="170" cy="155" rx="10" ry="2" fill="#FFB74D" opacity="0.4"/>
+  <ellipse cx="95" cy="165" rx="25" ry="3" fill="#3E5C76" opacity="0.5"/>
+
+  <!-- A solitary minimalist reed / element on the shore -->
+  <path d="M 50 145 C 48 130, 46 115, 42 105" stroke="#475569" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M 42 105 C 40 115, 38 130, 35 142" stroke="#475569" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+  <!-- MIST / VEIL LAYERS (Visualizing "蒙" - completely covered/veiled in mist) -->
+  <g clip-path="url(#lakeClip)">
+    <!-- Lower thick mist wave -->
+    <path d="M 10 170 C 60 150, 110 190, 160 160 C 190 140, 220 165, 230 175 L 230 220 L 10 220 Z" fill="url(#veilGrad1)"/>
+    
+    <!-- Upper flowing mist veil -->
+    <path d="M 10 145 C 50 165, 90 135, 140 150 C 180 160, 210 145, 230 150 L 230 220 L 10 220 Z" fill="url(#veilGrad2)"/>
+    
+    <!-- Soft glowing horizontal haze -->
+    <ellipse cx="120" cy="155" rx="85" ry="12" fill="#F8FAFC" opacity="0.3" filter="blur(4px)"/>
+  </g>
+
+  <!-- Foreground framing / aesthetic border line -->
+  <rect x="24" y="24" width="192" height="192" rx="16" fill="none" stroke="#334155" stroke-width="1.5" opacity="0.4"/>
+</svg>

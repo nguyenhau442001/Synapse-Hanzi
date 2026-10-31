@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Road/Path -->
+  <rect x="0" y="140" width="240" height="40" fill="#2D343E"/>
+  
+  <!-- The Barrier (The physical object representing "阻拦") -->
+  <g transform="translate(120, 160)">
+    <rect x="-60" y="-10" width="120" height="12" fill="#FFB84D" rx="2"/>
+    <rect x="-50" y="-25" width="8" height="15" fill="#FFB84D"/>
+    <rect x="42" y="-25" width="8" height="15" fill="#FFB84D"/>
+  </g>
+  
+  <!-- Character attempting to move forward -->
+  <g transform="translate(60, 160)">
+    <circle cx="0" cy="-40" r="12" fill="#A0AEC0"/>
+    <path d="M-10 -28 L-10 -5 L-20 20 M10 -28 L10 -5 L20 20" stroke="#A0AEC0" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-10 -20 L10 -20" stroke="#A0AEC0" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Character acting as the "阻拦" (The person blocking) -->
+  <g transform="translate(180, 160)">
+    <circle cx="0" cy="-40" r="12" fill="#FFB84D"/>
+    <path d="M-10 -28 L-10 20 M10 -28 L10 20" stroke="#FFB84D" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-25 -35 L-10 -25 L0 -30" stroke="#FFB84D" stroke-width="8" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

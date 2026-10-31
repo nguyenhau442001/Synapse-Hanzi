@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Donation Box -->
+  <path d="M80 100h80v80c0 5.5-4.5 10-10 10H90c-5.5 0-10-4.5-10-10V100z" fill="#3A3F4B"/>
+  <path d="M80 90h80v15H80z" fill="#4B5162"/>
+  <path d="M100 85h40v10h-40z" fill="#2C313C"/>
+  
+  <!-- Coin Slot -->
+  <rect x="110" y="90" width="20" height="4" rx="2" fill="#1A1D24"/>
+  
+  <!-- Hand placing coin -->
+  <g fill="#FFB347">
+    <path d="M130 110c-5-5-10-5-15 0l-5 5c-2 2-2 5 0 7l10 10c2 2 5 2 7 0l5-5c2-2 2-5 0-7l-2-5z"/>
+    <circle cx="125" cy="115" r="8" fill="#FFD700" stroke="#E6AC00" stroke-width="2"/>
+  </g>
+  
+  <!-- Decorative highlights on box -->
+  <path d="M90 110h60v5H90zM90 125h60v5H90zM90 140h60v5H90z" fill="#2C313C"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="120" cy="195" rx="50" ry="8" fill="#000" opacity="0.3"/>
+</svg>

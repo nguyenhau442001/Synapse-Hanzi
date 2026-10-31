@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Mountain Pass / Gorge representing the "Strategic Throat" -->
+  <path d="M40 200 L40 120 C40 80, 80 60, 120 60 C160 60, 200 80, 200 120 L200 200 Z" fill="#2D343E"/>
+  <path d="M40 200 L100 120 L140 120 L200 200 Z" fill="#3D4654"/>
+  
+  <!-- The "Throat" / Narrow Passage -->
+  <path d="M100 120 L120 160 L140 120 Z" fill="#FFB84D"/>
+  
+  <!-- Road / Path leading through the throat -->
+  <path d="M110 160 L110 240 M130 160 L130 240" stroke="#FFB84D" stroke-width="4" stroke-dasharray="8 8"/>
+  
+  <!-- Strategic Gate structure -->
+  <path d="M80 120 L80 80 L160 80 L160 120" stroke="#FFB84D" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M120 80 L120 60" stroke="#FFB84D" stroke-width="4"/>
+  
+  <!-- Decorative mountain silhouettes -->
+  <path d="M20 240 L60 160 L100 240 Z" fill="#252A33"/>
+  <path d="M140 240 L180 160 L220 240 Z" fill="#252A33"/>
+</svg>

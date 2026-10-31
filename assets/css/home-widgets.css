@@ -48,7 +48,7 @@ body:not(.home-screen) .home-widgets { display: none; }
 .hw-icon-btn:hover { border-color: var(--accent); color: var(--accent); }
 .hw-icon-btn.is-playing { border-color: var(--accent); color: var(--accent); background: var(--accent-light); }
 .hw-primary-btn {
-  flex: 1 1 auto; min-height: 44px; padding: 0 18px;
+  flex: 1 1 auto; min-height: 46px; padding: 0 18px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 12px;
   background: var(--brand-primary);
@@ -244,6 +244,10 @@ body:not(.home-screen) .home-widgets { display: none; }
 }
 .hw-review-speak.hw-icon-btn:hover {
   background: var(--surface-hover); color: var(--text-primary); border-color: var(--border);
+}
+.hw-forgotten > .hw-primary-btn {
+  margin-top: 16px;
+  margin-bottom: 2px;
 }
 
 /* Khám phá nâng cao (Relocated Discovery Section) */

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Contextual decorative background element (Flagpole base & subtle flag wave) -->
+  <g opacity="0.3">
+    <!-- Flagpole -->
+    <rect x="165" y="45" width="4" height="155" fill="#4A5568" rx="2"/>
+    <!-- Flag -->
+    <path d="M165 50 C185 45, 200 55, 215 50 C215 70, 200 80, 165 75 Z" fill="#E53E3E"/>
+  </g>
+
+  <!-- Ground Line -->
+  <path d="M40 200 L200 200" stroke="#3A4256" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Standing Person (Honor Guard / Straight posture representation of 站立) -->
+  <g id="standing-figure">
+    <!-- Head / Cap (Honor Guard style) -->
+    <ellipse cx="120" cy="72" rx="12" ry="13" fill="#F6AD55"/>
+    <path d="M106 68 Q120 62 134 68 L136 73 Q120 70 104 73 Z" fill="#2B6CB0"/>
+    <ellipse cx="120" cy="65" rx="14" ry="4" fill="#2B6CB0"/>
+
+    <!-- Torso / Uniform -->
+    <path d="M104 88 L136 88 L142 145 L98 145 Z" fill="#2B6CB0"/>
+    
+    <!-- Uniform Details (Belt, Buttons) -->
+    <rect x="104" y="112" width="32" height="6" fill="#1A365D"/>
+    <circle cx="120" cy="98" rx="2" ry="2" fill="#ECC94B"/>
+    <circle cx="120" cy="106" rx="2" ry="2" fill="#ECC94B"/>
+    <circle cx="120" cy="115" rx="2" ry="2" fill="#ECC94B"/>
+
+    <!-- Arms (Straight at sides) -->
+    <path d="M101 90 L92 138 C91 142 94 144 97 142 L103 118 Z" fill="#2B6CB0"/>
+    <path d="M139 90 L148 138 C149 142 146 144 143 142 L137 118 Z" fill="#2B6CB0"/>
+
+    <!-- Hands -->
+    <circle cx="95" cy="144" rx="4" ry="4" fill="#F6AD55"/>
+    <circle cx="145" cy="144" rx="4" ry="4" fill="#F6AD55"/>
+
+    <!-- Legs (Straight / 笔直) -->
+    <path d="M104 145 L108 198 L116 198 L114 145 Z" fill="#1A365D"/>
+    <path d="M136 145 L132 198 L124 198 L126 145 Z" fill="#1A365D"/>
+
+    <!-- Boots -->
+    <path d="M102 196 L118 196 L118 200 L100 200 C98 200 98 196 102 196 Z" fill="#1A202C"/>
+    <path d="M138 196 L122 196 L122 200 L140 200 C142 200 142 196 138 196 Z" fill="#1A202C"/>
+  </g>
+
+  <!-- Posture Indicator / Alignment Guides (Visualizing straightness "笔直地站立") -->
+  <g opacity="0.4" stroke="#ECC94B" stroke-dasharray="3,3" stroke-width="1.5">
+    <!-- Plumb line from head to floor -->
+    <line x1="120" y1="55" x2="120" y2="200" />
+    <!-- Shoulder level reference -->
+    <line x1="90" y1="90" x2="150" y2="90" />
+  </g>
+</svg>

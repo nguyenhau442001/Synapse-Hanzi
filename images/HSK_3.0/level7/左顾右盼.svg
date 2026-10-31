@@ -1,0 +1,55 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Subtle Grid & Ground -->
+  <line x1="30" y1="180" x2="210" y2="180" stroke="#2A2F3B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="80" y1="180" x2="160" y2="180" stroke="#F59E0B" stroke-width="4" stroke-dasharray="8 6" opacity="0.6"/>
+
+  <!-- Pedestrian Character representing 左顾右盼 (looking around restlessly) -->
+  <g transform="translate(120, 115)">
+    <!-- Body / Torso -->
+    <path d="M-16,65 L-20,32 L20,32 L16,65 Z" fill="#3B82F6"/>
+    
+    <!-- Legs -->
+    <path d="M-12,65 L-16,105 L-6,105 L-2,65" fill="#1E293B"/>
+    <path d="M12,65 L18,105 L8,105 L2,65" fill="#1E293B"/>
+    
+    <!-- Backpack -->
+    <rect x="-24" y="36" width="8" height="24" rx="3" fill="#64748B"/>
+
+    <!-- Neck -->
+    <rect x="-4" y="24" width="8" height="12" fill="#E2B29A"/>
+
+    <!-- Head (Rotated slightly, looking back-and-forth concept) -->
+    <circle cx="0" cy="14" r="16" fill="#F5D0B1"/>
+    
+    <!-- Hair -->
+    <path d="M-16,10 C-16,2 -10,0 0,0 C10,0 16,2 16,10 L16,14 L-16,14 Z" fill="#334155"/>
+
+    <!-- Arms in distracted pose (holding phone) -->
+    <!-- Left arm holding phone down -->
+    <path d="M-16,36 L-30,55 L-22,58" fill="none" stroke="#3B82F6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="-28" y="52" width="10" height="16" rx="2" fill="#94A3B8" transform="rotate(-15 -23 60)"/>
+
+    <!-- Right arm bent upward -->
+    <path d="M16,36 L26,50 L18,60" fill="none" stroke="#3B82F6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Directional Gaze Arcs (Visualizing 左顾右盼 - looking left and right) -->
+  <!-- Left looking arc -->
+  <path d="M75,100 C60,105 55,120 65,130" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="62,133 70,132 66,126" fill="#F59E0B"/>
+
+  <!-- Right looking arc -->
+  <path d="M165,100 C180,105 185,120 175,130" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="178,133 170,132 174,126" fill="#F59E0B"/>
+
+  <!-- Traffic Signal Context Indicator (Top corners) -->
+  <g transform="translate(195, 30)">
+    <rect x="-8" y="-18" width="16" height="36" rx="4" fill="#0F172A" stroke="#334155" stroke-width="2"/>
+    <circle cx="0" cy="-9" r="4" fill="#EF4444"/>
+    <circle cx="0" cy="0" r="4" fill="#334155"/>
+    <circle cx="0" cy="9" r="4" fill="#334155"/>
+  </g>
+</svg>

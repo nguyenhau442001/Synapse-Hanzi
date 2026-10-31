@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Ambient Glow / Background elements -->
+    <path d="M 30,120 Q 90,60 210,120" stroke="#2D3340" stroke-width="2" fill="none" stroke-dasharray="4,4"/>
+    
+    <!-- Optical Fiber Cable cross-section / housing -->
+    <path d="M 30,120 C 80,80 140,80 210,120" stroke="#3A4256" stroke-width="16" fill="none" stroke-linecap="round"/>
+    
+    <!-- Signal Path (Fading from bright to dim) -->
+    <!-- High intensity segment (Left) -->
+    <path d="M 35,120 C 80,85 120,85 150,120" stroke="url(#signalGradient)" stroke-width="8" fill="none" stroke-linecap="round"/>
+    
+    <!-- Attenuated / Fading segment (Right) -->
+    <path d="M 150,120 C 175,145 195,145 205,120" stroke="#F97316" stroke-width="4" fill="none" stroke-opacity="0.3" stroke-linecap="round"/>
+    
+    <!-- Light pulses showing degradation -->
+    <circle cx="50" cy="107" r="5" fill="#FBBF24"/>
+    <circle cx="50" cy="107" r="10" fill="#FBBF24" opacity="0.3"/>
+    
+    <circle cx="100" cy="99" r="4.5" fill="#F97316"/>
+    <circle cx="100" cy="99" r="8" fill="#F97316" opacity="0.25"/>
+
+    <circle cx="145" cy="113" r="3" fill="#F97316" opacity="0.7"/>
+    <circle cx="145" cy="113" r="5" fill="#F97316" opacity="0.15"/>
+
+    <circle cx="180" cy="127" r="2" fill="#F97316" opacity="0.3"/>
+    
+    <!-- Physical optical fiber connector end (Left) -->
+    <rect x="22" y="104" width="16" height="32" rx="4" fill="#4B5563" stroke="#6B7280" stroke-width="2"/>
+    <rect x="18" y="112" width="4" height="16" rx="1" fill="#9CA3AF"/>
+    
+    <!-- Physical optical fiber connector end (Right) -->
+    <rect x="202" y="104" width="16" height="32" rx="4" fill="#4B5563" stroke="#6B7280" stroke-width="2"/>
+    <rect x="218" y="112" width="4" height="16" rx="1" fill="#9CA3AF"/>
+
+    <!-- Downward trend indicator representing reduction/loss -->
+    <path d="M 140,165 L 175,165 L 175,150" stroke="#EF4444" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 145,172 L 175,165" stroke="#EF4444" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="signalGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FBBF24" />
+      <stop offset="50%" stop-color="#F97316" />
+      <stop offset="100%" stop-color="#EF4444" stop-opacity="0.4" />
+    </linearGradient>
+  </defs>
+</svg>

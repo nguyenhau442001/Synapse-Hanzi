@@ -1,0 +1,57 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container & Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle floor line/glow inside the house -->
+  <ellipse cx="120" cy="195" rx="75" ry="10" fill="#242933"/>
+
+  <!-- House Structure (Open frame representing "hù" - door/home) -->
+  <path d="M70 100 L120 60 L170 100 L170 190 L70 190 Z" fill="none" stroke="#2F3643" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Warm home interior background glow -->
+  <path d="M72 101 L120 62 L168 101 L168 188 L72 188 Z" fill="#222834"/>
+  
+  <!-- Doorway/Threshold Frame -->
+  <path d="M95 190 L95 125 C95 115 145 115 145 125 L145 190" fill="none" stroke="#3A4252" stroke-width="2"/>
+
+  <!-- Character (Sitting comfortably inside at home, representing "zú bù chū" - staying indoors) -->
+  <!-- Chair / Couch -->
+  <rect x="90" y="145" width="60" height="35" rx="6" fill="#323B4C"/>
+  <rect x="85" y="140" width="70" height="12" rx="4" fill="#3E495E"/>
+  
+  <!-- Person sitting -->
+  <!-- Head & Hair -->
+  <circle cx="120" cy="120" r="14" fill="#FFC899"/>
+  <path d="M106 118 C106 108 134 108 134 118 C134 122 130 125 120 125 C110 125 106 122 106 118 Z" fill="#3D322C"/>
+  
+  <!-- Torso & Clothing -->
+  <path d="M104 134 C104 128 136 128 136 134 L142 165 C142 168 138 170 134 170 L106 170 C102 170 98 168 98 165 Z" fill="#4C78B3"/>
+  
+  <!-- Relaxed Legs (Stays inside, doesn't step out) -->
+  <rect x="105" y="165" width="12" height="22" rx="4" fill="#2F4F75"/>
+  <rect x="123" y="165" width="12" height="22" rx="4" fill="#2F4F75"/>
+  <rect x="101" y="184" width="18" height="6" rx="3" fill="#E6AF2E"/>
+  <rect x="121" y="184" width="18" height="6" rx="3" fill="#E6AF2E"/>
+
+  <!-- Holding a global purchase / Delivery package context (E-commerce arriving at the door) -->
+  <!-- Small delivery box on lap -->
+  <rect x="110" y="142" width="20" height="16" rx="2" fill="#D9822B"/>
+  <path d="M110 148 L130 148" stroke="#B86619" stroke-width="1.5"/>
+  <path d="M120 142 L120 158" stroke="#B86619" stroke-width="1.5"/>
+
+  <!-- Digital connectivity / Global logistics accent (Globe & connection waves near the house) -->
+  <!-- Floating connection node / Global shopping icon element -->
+  <circle cx="185" cy="85" r="16" fill="#222E3C" stroke="#3E4D63" stroke-width="1.5"/>
+  <circle cx="185" cy="85" r="6" fill="none" stroke="#5192E2" stroke-width="1.5"/>
+  <path d="M173 85 C173 78 197 78 197 85" fill="none" stroke="#5192E2" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <path d="M179 73 C185 75 185 95 179 97" fill="none" stroke="#5192E2" stroke-width="1.5"/>
+  <path d="M191 73 C185 75 185 95 191 97" fill="none" stroke="#5192E2" stroke-width="1.5"/>
+
+  <!-- Signal wave connecting to the house -->
+  <path d="M165 92 Q172 88 165 82" fill="none" stroke="#E6AF2E" stroke-width="2" stroke-linecap="round"/>
+  <path d="M168 96 Q178 88 168 78" fill="none" stroke="#E6AF2E" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Focus / Accent on the threshold boundary (emphasizing staying strictly inside) -->
+  <!-- Clean dividing line at the door sill -->
+  <rect x="95" y="189" width="50" height="3" rx="1.5" fill="#E6AF2E"/>
+</svg>

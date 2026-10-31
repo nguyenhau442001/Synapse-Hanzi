@@ -1,0 +1,40 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Atmospheric Glow & Background Elements -->
+  <circle cx="120" cy="110" r="70" fill="#252A34" opacity="0.6"/>
+  
+  <!-- Glowing Golden Sun / Horizon -->
+  <circle cx="120" cy="120" r="45" fill="#E5A93B" opacity="0.15"/>
+  <circle cx="120" cy="120" r="30" fill="#E5A93B" opacity="0.3"/>
+
+  <!-- Flowing River (江 - Jiāng) -->
+  <path d="M 40,165 Q 80,150 120,165 T 200,155 L 200,185 C 160,195 120,180 80,195 L 40,185 Z" fill="#2A6F97" opacity="0.8"/>
+  <path d="M 60,173 Q 90,165 120,173 T 180,167" stroke="#48CAE4" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 50,180 Q 85,172 120,180 T 190,175" stroke="#48CAE4" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Majestic Mountains (山 - Shān) -->
+  <!-- Background Mountain Range (Left) -->
+  <polygon points="40,160 85,90 130,160" fill="#2C3545"/>
+  <!-- Background Mountain Range (Right) -->
+  <polygon points="110,160 155,95 200,160" fill="#242B38"/>
+  
+  <!-- Foreground Central Peak (Golden-tipped representing "Jiangshan") -->
+  <polygon points="75,160 120,65 165,160" fill="#323D52"/>
+  
+  <!-- Snow Cap / Sunlight on Central Peak -->
+  <polygon points="120,65 102,100 138,100" fill="#E5A93B" opacity="0.9"/>
+  <polygon points="120,65 110,85 130,85" fill="#FFF" opacity="0.95"/>
+
+  <!-- Secondary Mountain Highlights -->
+  <polygon points="85,90 70,120 105,120" fill="#E5A93B" opacity="0.4"/>
+  <polygon points="155,95 135,125 170,125" fill="#E5A93B" opacity="0.3"/>
+
+  <!-- Decorative Clouds -->
+  <path d="M 55,100 Q 65,92 75,100 Q 85,95 90,105 L 50,105 Z" fill="#A4B0BE" opacity="0.2"/>
+  <path d="M 150,110 Q 160,102 170,110 Q 180,105 185,115 L 145,115 Z" fill="#A4B0BE" opacity="0.2"/>
+
+  <!-- Framing / Focus Accent (Golden Ring Hint) -->
+  <circle cx="120" cy="120" r="92" stroke="#E5A93B" stroke-width="1.5" fill="none" opacity="0.25" stroke-dasharray="6 4"/>
+</svg>

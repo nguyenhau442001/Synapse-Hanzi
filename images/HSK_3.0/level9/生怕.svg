@@ -1,0 +1,31 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Visual Metaphor: Escalation of caution (The "tipping point" of anxiety) -->
+  <!-- Representing the "fear of a small action causing a big disturbance" -->
+  
+  <!-- The fragile subject (The baby/the delicate state) -->
+  <circle cx="120" cy="160" r="25" fill="#FFD54F" opacity="0.8"/>
+  <path d="M105 155c0-8 6-15 15-15s15 7 15 15" stroke="#1A1D24" stroke-width="2" fill="none"/>
+  
+  <!-- The "Causality/Escalation" mechanism: A delicate balance scale -->
+  <!-- The left side is the "slight movement", the right side is the "consequence" -->
+  <path d="M60 120 L180 120" stroke="#455A64" stroke-width="4" stroke-linecap="round"/>
+  <path d="M120 120 L120 80" stroke="#455A64" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- The "Slight movement" (The trigger) -->
+  <circle cx="70" cy="110" r="8" fill="#FF8A65"/>
+  <path d="M65 105 L75 115 M75 105 L65 115" stroke="#1A1D24" stroke-width="2"/>
+  
+  <!-- The "Extreme Outcome" (The fear of the fall) -->
+  <!-- Representing the "nơm nớp lo" - the tension of the weight -->
+  <path d="M170 120 L170 60" stroke="#FF8A65" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+  <circle cx="170" cy="50" r="12" fill="#FF8A65"/>
+  
+  <!-- The "Caution" lines (Representing the intense focus/holding breath) -->
+  <path d="M100 180 L140 180" stroke="#CFD8DC" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M110 190 L130 190" stroke="#CFD8DC" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- The "Magnifying" focus on the tension -->
+  <circle cx="170" cy="50" r="20" stroke="#FFD54F" stroke-width="2" fill="none" stroke-dasharray="6 4"/>
+</svg>

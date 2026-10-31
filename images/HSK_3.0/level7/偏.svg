@@ -1,0 +1,31 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Wall background with subtle texture lines -->
+  <line x1="30" y1="40" x2="210" y2="40" stroke="#222630" stroke-width="2"/>
+  <line x1="30" y1="200" x2="210" y2="200" stroke="#222630" stroke-width="2"/>
+  
+  <!-- Centered physical object: Landscape painting hanging crookedly on a wall (Visualizing "偏" - biased/off-center) -->
+  <!-- Nail on the wall -->
+  <circle cx="120" cy="55" r="3" fill="#8B949E"/>
+  
+  <!-- Tilted hanging string -->
+  <line x1="120" y1="55" x2="95" y2="85" stroke="#484F58" stroke-width="1.5"/>
+  <line x1="120" y1="55" x2="155" y2="75" stroke="#484F58" stroke-width="1.5"/>
+  
+  <!-- Tilted Picture Frame (Rotated to clearly show "偏" - deviation) -->
+  <g transform="rotate(12, 120, 115)">
+    <!-- Outer Frame -->
+    <rect x="75" y="75" width="90" height="80" rx="4" fill="#30363D" stroke="#484F58" stroke-width="2"/>
+    <!-- Inner Matting / Canvas -->
+    <rect x="83" y="83" width="74" height="64" fill="#0D1117"/>
+    <!-- Abstract landscape inside: Sun/Moon -->
+    <circle cx="105" cy="103" r="8" fill="#F0883E"/>
+    <!-- Mountain ranges -->
+    <polygon points="83,147 110,115 135,147" fill="#21262D"/>
+    <polygon points="115,147 142,125 157,147" fill="#161B22"/>
+  </g>
+
+  <!-- Directional adjustment indicator (Rightward arrow showing correction) -->
+  <path d="M 160 178 L 180 178 M 174 172 L 180 178 L 174 184" stroke="#F0883E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Hospital Bed Base -->
+  <rect x="60" y="150" width="120" height="15" rx="4" fill="#3B4252"/>
+  <rect x="70" y="165" width="10" height="20" fill="#3B4252"/>
+  <rect x="160" y="165" width="10" height="20" fill="#3B4252"/>
+  
+  <!-- Patient Body (Recovering) -->
+  <path d="M80 145 C 80 120, 100 110, 120 110 C 140 110, 160 120, 160 145 Z" fill="#E5E9F0"/>
+  <circle cx="120" cy="100" r="20" fill="#E5E9F0"/>
+  
+  <!-- Blanket -->
+  <path d="M75 145 L 165 145 L 160 160 L 80 160 Z" fill="#4C566A"/>
+  
+  <!-- Recovery Indicator: Warm Golden Glow/Light representing life force returning -->
+  <circle cx="120" cy="100" r="25" fill="none" stroke="#EBCB8B" stroke-width="2" stroke-dasharray="4 4" opacity="0.6"/>
+  
+  <!-- Vitality/Life Accent -->
+  <path d="M110 95 C 115 90, 125 90, 130 95" stroke="#EBCB8B" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <circle cx="113" cy="98" r="2" fill="#EBCB8B"/>
+  <circle cx="127" cy="98" r="2" fill="#EBCB8B"/>
+  
+  <!-- Medical Support (IV Stand) -->
+  <line x1="180" y1="185" x2="180" y2="80" stroke="#4C566A" stroke-width="4" stroke-linecap="round"/>
+  <line x1="180" y1="80" x2="160" y2="80" stroke="#4C566A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M160 80 L 160 100" stroke="#EBCB8B" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="160" cy="105" r="5" fill="#EBCB8B"/>
+</svg>

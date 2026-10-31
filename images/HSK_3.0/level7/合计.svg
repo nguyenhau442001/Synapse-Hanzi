@@ -1,0 +1,58 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient background glow representing calculation/totalling -->
+  <circle cx="120" cy="120" r="70" fill="#2D333B" opacity="0.5"/>
+
+  <!-- Main Object: Sleek Modern Calculator with receipts/summing items -->
+  <g transform="translate(68, 52)">
+    <!-- Calculator Body -->
+    <rect x="0" y="0" width="104" height="136" rx="16" fill="#252A34" stroke="#3A4250" stroke-width="2"/>
+    
+    <!-- Screen Area -->
+    <rect x="12" y="16" width="80" height="32" rx="6" fill="#12151B"/>
+    <!-- Screen Content (Abstract Total Lines) -->
+    <line x1="22" y1="26" x2="52" y2="26" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+    <line x1="22" y1="38" x2="82" y2="38" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Keypad Grid (Abstracted sleek buttons) -->
+    <!-- Row 1 -->
+    <rect x="16" y="64" width="16" height="14" rx="4" fill="#323846"/>
+    <rect x="44" y="64" width="16" height="14" rx="4" fill="#323846"/>
+    <rect x="72" y="64" width="16" height="14" rx="4" fill="#323846"/>
+    
+    <!-- Row 2 -->
+    <rect x="16" y="86" width="16" height="14" rx="4" fill="#323846"/>
+    <rect x="44" y="86" width="16" height="14" rx="4" fill="#323846"/>
+    <rect x="72" y="86" width="16" height="14" rx="4" fill="#323846"/>
+
+    <!-- Row 3 -->
+    <rect x="16" y="108" width="16" height="14" rx="4" fill="#323846"/>
+    <rect x="44" y="108" width="16" height="14" rx="4" fill="#323846"/>
+    <!-- Equals / Total Button (Highlighted in Accent Orange/Gold) -->
+    <rect x="72" y="108" width="16" height="36" rx="4" fill="#D69E2E"/>
+    
+    <!-- Row 4 (remaining left buttons) -->
+    <rect x="16" y="130" width="44" height="14" rx="4" fill="#323846"/>
+  </g>
+
+  <!-- Floating Receipt / Itemized List Symbolizing "Summing up / 合计" -->
+  <g transform="translate(38, 72)">
+    <path d="M 0,0 L 24,0 L 24,80 L 12,88 L 0,80 Z" fill="#E2E8F0" opacity="0.9"/>
+    <!-- Item lines -->
+    <line x1="5" y1="12" x2="19" y2="12" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+    <line x1="5" y1="22" x2="15" y2="22" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+    <line x1="5" y1="32" x2="19" y2="32" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+    <line x1="5" y1="42" x2="12" y2="42" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+    <!-- Total line -->
+    <line x1="5" y1="58" x2="19" y2="58" stroke="#D69E2E" stroke-width="2" stroke-linecap="round"/>
+    <line x1="5" y1="66" x2="19" y2="66" stroke="#D69E2E" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Accent plus / total indicator floating icons -->
+  <g transform="translate(182, 85)">
+    <circle cx="12" cy="12" r="14" fill="#252A34" stroke="#D69E2E" stroke-width="2"/>
+    <path d="M 12,6 L 12,18 M 6,12 L 18,12" stroke="#D69E2E" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>

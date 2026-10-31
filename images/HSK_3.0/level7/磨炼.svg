@@ -1,0 +1,38 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 120)">
+    <!-- Glowing background aura representing harsh environment / intense trial -->
+    <path d="M-60 -60 L60 -60 L80 60 L-80 60 Z" fill="#2D323F" opacity="0.4"/>
+    
+    <!-- Anvil Base (represents trial and tempering) -->
+    <path d="M-45 55 L45 55 L35 30 L-35 30 Z" fill="#64748B"/>
+    <path d="M-25 30 L25 30 L20 15 L-20 15 Z" fill="#94A3B8"/>
+    <rect x="-55" y="55" width="110" height="12" rx="4" fill="#475569"/>
+
+    <!-- Sparks flying from the impact (representing hardship and perseverance) -->
+    <path d="M 0 -25 L 20 -45" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 0 -25 L -25 -40" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 0 -25 L 35 -20" stroke="#EF4444" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 0 -25 L -35 -15" stroke="#EF4444" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="28" cy="-52" r="2.5" fill="#FBBF24"/>
+    <circle cx="-32" cy="-45" r="2" fill="#FBBF24"/>
+    <circle cx="45" cy="-28" r="2" fill="#EF4444"/>
+
+    <!-- Hot glowing metal blade/sword being forged -->
+    <path d="M-6 -25 L6 -25 L3 15 L-3 15 Z" fill="#EA580C"/>
+    <path d="M-3 -25 L3 -25 L1 15 L-1 15 Z" fill="#F97316"/>
+
+    <!-- Heavy Hammer striking down -->
+    <g transform="translate(0, -35)">
+      <!-- Hammer Handle -->
+      <path d="M-4 -30 L4 -30 L6 15 L-6 15 Z" fill="#B45309" transform="rotate(25)" transform-origin="0 15"/>
+      <!-- Hammer Head -->
+      <rect x="-26" y="-38" width="52" height="22" rx="4" fill="#334155" transform="rotate(25)" transform-origin="0 -27"/>
+      <rect x="-28" y="-38" width="10" height="22" rx="2" fill="#64748B" transform="rotate(25)" transform-origin="0 -27"/>
+    </g>
+
+    <!-- Intense central glow at point of impact -->
+    <circle cx="0" cy="-25" r="10" fill="#FEF08A" opacity="0.8"/>
+  </g>
+</svg>

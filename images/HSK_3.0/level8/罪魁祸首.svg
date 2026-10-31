@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground/Base -->
+  <path d="M40 190 L200 190 L190 210 L50 210 Z" fill="#2D343E"/>
+  
+  <!-- The "Culprit": A stylized, sharp-edged industrial chainsaw -->
+  <!-- Body of chainsaw -->
+  <path d="M80 130 L140 130 L145 150 L75 150 Z" fill="#FF9F1C"/>
+  <rect x="90" y="110" width="30" height="20" rx="5" fill="#FF9F1C"/>
+  
+  <!-- The Blade (The "Source of destruction") -->
+  <path d="M140 140 L210 140 L210 148 L140 148 Z" fill="#B0B3B8"/>
+  <path d="M210 135 L225 144 L210 153 Z" fill="#E63946"/>
+  
+  <!-- Teeth of the blade -->
+  <path d="M145 138 L145 142 L150 140 Z" fill="#5D6269"/>
+  <path d="M160 138 L160 142 L165 140 Z" fill="#5D6269"/>
+  <path d="M175 138 L175 142 L180 140 Z" fill="#5D6269"/>
+  <path d="M190 138 L190 142 L195 140 Z" fill="#5D6269"/>
+  
+  <!-- Environmental context: A fallen, severed tree stump -->
+  <path d="M40 190 L70 190 L65 140 L45 140 Z" fill="#8D6E63"/>
+  <ellipse cx="55" cy="140" rx="10" ry="4" fill="#A1887F"/>
+  
+  <!-- Soil erosion effect -->
+  <path d="M70 190 Q90 170 110 190 T150 190" stroke="#4A5568" stroke-width="3" fill="none" stroke-dasharray="4 4"/>
+  <path d="M160 190 L190 190 L185 200 L165 200 Z" fill="#4A5568"/>
+</svg>

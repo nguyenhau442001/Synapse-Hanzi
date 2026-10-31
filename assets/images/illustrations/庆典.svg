@@ -1,0 +1,62 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Confetti and festive background elements -->
+    <circle cx="50" cy="60" r="3" fill="#FFB703" opacity="0.6"/>
+    <circle cx="190" cy="70" r="4" fill="#FFB703" opacity="0.6"/>
+    <circle cx="210" cy="140" r="2.5" fill="#E63946" opacity="0.7"/>
+    <circle cx="35" cy="160" r="3" fill="#E63946" opacity="0.5"/>
+    
+    <polygon points="70,40 74,48 82,50 76,56 78,64 70,60 62,64 64,56 58,50 66,48" fill="#FFB703" opacity="0.4" transform="scale(0.6) translate(60, 20)"/>
+    <polygon points="70,40 74,48 82,50 76,56 78,64 70,60 62,64 64,56 58,50 66,48" fill="#4EA8DE" opacity="0.4" transform="scale(0.5) translate(280, 120)"/>
+
+    <!-- Ribbons / Streamers -->
+    <path d="M 30,90 Q 45,70 60,95 T 90,100" fill="none" stroke="#E63946" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 180,85 Q 195,65 210,90 T 235,80" fill="none" stroke="#FFB703" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Stage / Podium Base -->
+    <path d="M 60,185 L 180,185 L 195,200 L 45,200 Z" fill="#2B303C"/>
+    <rect x="75" y="170" width="90" height="15" rx="2" fill="#3A4252"/>
+    <line x1="75" y1="177" x2="165" y2="177" stroke="#1A1D24" stroke-width="2"/>
+
+    <!-- Central Anniversary Monument / Trophy Pillar -->
+    <rect x="95" y="105" width="50" height="65" rx="4" fill="#2B303C"/>
+    <rect x="100" y="110" width="40" height="55" fill="#FFB703" opacity="0.15"/>
+    <!-- Decorative vertical line on pillar -->
+    <line x1="120" y1="110" x2="120" y2="165" stroke="#FFB703" stroke-width="1.5" opacity="0.4"/>
+
+    <!-- Large '100' Golden Emblem representing the centenary celebration (大 lễ mừng / kỷ niệm 100 năm) -->
+    <g transform="translate(120, 95)">
+      <!-- Outer laurel wreath -->
+      <path d="M -42,-15 C -42,10 -25,28 0,32 C 25,28 42,10 42,-15" fill="none" stroke="#FFB703" stroke-width="3" stroke-linecap="round"/>
+      <!-- Wreath leaves -->
+      <path d="M -42,-12 C -45,-15 -48,-10 -45,-6" fill="#FFB703"/>
+      <path d="M -38,2 C -42,1 -43,7 -39,9" fill="#FFB703"/>
+      <path d="M -28,15 C -33,16 -32,23 -27,22" fill="#FFB703"/>
+      
+      <path d="M 42,-12 C 45,-15 48,-10 45,-6" fill="#FFB703"/>
+      <path d="M 38,2 C 42,1 43,7 39,9" fill="#FFB703"/>
+      <path d="M 28,15 C 33,16 32,23 27,22" fill="#FFB703"/>
+
+      <!-- Number '100' stylized -->
+      <text x="0" y="5" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="34" fill="#FFB703" text-anchor="middle" letter-spacing="1">100</text>
+    </g>
+
+    <!-- Festoon / Bunting / Garland across top -->
+    <path d="M 20,40 Q 60,65 100,40 Q 140,65 180,40 Q 210,55 220,50" fill="none" stroke="#4EA8DE" stroke-width="2" opacity="0.4"/>
+    
+    <!-- Pennants hanging from string -->
+    <polygon points="50,47 60,63 70,47" fill="#E63946"/>
+    <polygon points="90,44 100,60 110,44" fill="#FFB703"/>
+    <polygon points="130,44 140,60 150,44" fill="#4EA8DE"/>
+    <polygon points="170,47 180,63 190,47" fill="#2A9D8F"/>
+
+    <!-- Foreground floating festive elements -->
+    <circle cx="120" cy="45" r="3.5" fill="#FFB703"/>
+    
+    <!-- Spotlight beams framing the celebration -->
+    <path d="M 0,0 L 70,185 L 50,185 L 0,30 Z" fill="#FFFFFF" opacity="0.03"/>
+    <path d="M 240,0 L 170,185 L 190,185 L 240,30 Z" fill="#FFFFFF" opacity="0.03"/>
+  </g>
+</svg>

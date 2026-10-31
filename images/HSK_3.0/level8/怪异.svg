@@ -1,0 +1,60 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Atmospheric background glow representing an eerie old mansion interior -->
+  <circle cx="120" cy="115" r="75" fill="#252A34" opacity="0.8"/>
+  <path d="M70 185 L120 155 L170 185" fill="none" stroke="#2D3340" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Sound wave ripples representing the strange noise -->
+  <path d="M72 105 C65 115 65 125 72 135" fill="none" stroke="#6C7A9C" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+  <path d="M60 95 C50 110 50 130 60 145" fill="none" stroke="#6C7A9C" stroke-width="2" stroke-linecap="round" opacity="0.25"/>
+  <path d="M168 105 C175 115 175 125 168 135" fill="none" stroke="#6C7A9C" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+  <path d="M180 95 C190 110 190 130 180 145" fill="none" stroke="#6C7A9C" stroke-width="2" stroke-linecap="round" opacity="0.25"/>
+
+  <!-- Old Victorian/Gothic Mirror Frame (The uncanny object) -->
+  <!-- Outer ornate arch frame -->
+  <path d="M90 70 
+           C90 45 150 45 150 70 
+           L150 155 
+           C150 168 138 175 120 175 
+           C102 175 90 168 90 155 Z" 
+        fill="#2A303C" stroke="#3D4659" stroke-width="3"/>
+  
+  <!-- Inner mirror glass -->
+  <path d="M96 73 
+           C96 52 144 52 144 73 
+           L144 152 
+           C144 161 134 167 120 167 
+           C106 167 96 161 96 152 Z" 
+        fill="#14171E"/>
+  
+  <!-- Mirror reflection: A surreal, twisted, floating entity (guàiyì / uncanny anomaly) -->
+  <!-- Glowing eerie aura behind the entity -->
+  <ellipse cx="120" cy="115" rx="22" ry="28" fill="#F59E0B" opacity="0.15"/>
+  <circle cx="120" cy="105" r="14" fill="#F59E0B" opacity="0.25"/>
+
+  <!-- Floating surreal entity (impossible geometry/shape representing bizarre/anomalous entity) -->
+  <!-- Upper floating crown/halo element -->
+  <ellipse cx="120" cy="85" rx="16" ry="6" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-dasharray="6 3"/>
+  
+  <!-- Main asymmetrical floating body -->
+  <path d="M105 105 
+           C100 95 112 90 120 98 
+           C128 90 140 95 135 105 
+           C142 120 135 140 120 145 
+           C105 140 98 120 105 105 Z" 
+        fill="#1F242D" stroke="#F59E0B" stroke-width="2.5"/>
+
+  <!-- Surreal floating geometric eyes / uncanny focal points -->
+  <circle cx="112" cy="112" r="3.5" fill="#F59E0B"/>
+  <circle cx="128" cy="112" r="2" fill="#F59E0B"/>
+  <polygon points="120,120 117,127 123,127" fill="#F59E0B"/>
+
+  <!-- Extra floating fragment (defying gravity, adding to the bizarre nature) -->
+  <circle cx="92" cy="135" r="4" fill="#3D4659" stroke="#F59E0B" stroke-width="1.5"/>
+  <path d="M142 92 L148 88" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Floor shadow/grounding for the whole mirror concept -->
+  <ellipse cx="120" cy="182" rx="35" ry="5" fill="#111318"/>
+</svg>

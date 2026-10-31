@@ -1,0 +1,32 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow/environment grid for depth -->
+  <circle cx="120" cy="120" r="85" fill="#222733" opacity="0.6"/>
+  <circle cx="120" cy="120" r="60" fill="#2A3142" opacity="0.4"/>
+  
+  <!-- Shield outline representing Security/Order (Zhì'ān) -->
+  <path d="M120 45 C150 45, 175 55, 185 70 C185 110, 170 155, 120 195 C70 155, 55 110, 55 70 C65 55, 90 45, 120 45 Z" 
+        fill="#1E2533" stroke="#3A4660" stroke-width="3" stroke-linejoin="round"/>
+  
+  <!-- Modern stylized Police Shield Emblem in the center -->
+  <path d="M120 62 C142 62, 160 69, 168 80 C168 112, 155 144, 120 172 C85 144, 72 112, 72 80 C80 69, 98 62, 120 62 Z" 
+        fill="#233554" stroke="#4C82FB" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Star of Safety/Order -->
+  <polygon points="120,82 125,95 139,95 127,103 131,117 120,108 109,117 113,103 101,95 115,95" 
+           fill="#FFC107" stroke="#FFA000" stroke-width="1" stroke-linejoin="round"/>
+
+  <!-- Stylized Shield Checkmark / Protection Indicator -->
+  <path d="M102 128 L114 140 L140 114" 
+        fill="none" stroke="#2ED573" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Decorative Orbit ring representing 24/7 patrol/vigilance -->
+  <ellipse cx="120" cy="120" rx="98" ry="38" fill="none" stroke="#4C82FB" stroke-width="1.5" stroke-dasharray="6 8" opacity="0.4" transform="rotate(-20 120 120)"/>
+  
+  <!-- Accent focal light dots -->
+  <circle cx="120" cy="38" r="3" fill="#FFC107"/>
+  <circle cx="198" cy="105" r="2.5" fill="#4C82FB"/>
+  <circle cx="42" cy="135" r="2.5" fill="#2ED573"/>
+</svg>

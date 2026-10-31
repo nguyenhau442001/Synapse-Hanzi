@@ -1,0 +1,60 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Sandy beach ground at the bottom -->
+    <path d="M 0 180 Q 60 170 120 180 T 240 180 L 240 240 L 0 240 Z" fill="#2D323D" />
+    <path d="M 0 195 Q 80 185 160 195 T 240 190 L 240 240 L 0 240 Z" fill="#242832" opacity="0.6" />
+    
+    <!-- Subtle sand texture dots -->
+    <circle cx="40" cy="200" r="1.5" fill="#404654" />
+    <circle cx="85" cy="210" r="1" fill="#404654" />
+    <circle cx="130" cy="198" r="1.5" fill="#404654" />
+    <circle cx="185" cy="215" r="1" fill="#404654" />
+    <circle cx="210" cy="202" r="2" fill="#404654" />
+    
+    <!-- Motion lines / crawling path behind the turtle -->
+    <path d="M 50 175 C 65 172 75 175 90 172" stroke="#3A4150" stroke-width="2" stroke-dasharray="3,3" stroke-linecap="round" fill="none" />
+    <path d="M 45 182 C 60 179 70 182 85 179" stroke="#3A4150" stroke-width="2" stroke-dasharray="3,3" stroke-linecap="round" fill="none" />
+
+    <!-- Turtle (Guī) - Central iconic physical object -->
+    <g transform="translate(85, 120)">
+      <!-- Back flippers -->
+      <ellipse cx="-15" cy="32" rx="7" ry="14" fill="#1E824C" transform="rotate(30 -15 32)" />
+      <ellipse cx="35" cy="32" rx="7" ry="14" fill="#1E824C" transform="rotate(-30 35 32)" />
+      
+      <!-- Front flippers (extended forward in motion) -->
+      <ellipse cx="-35" cy="10" rx="9" ry="18" fill="#2ECC71" transform="rotate(45 -35 10)" />
+      <ellipse cx="55" cy="10" rx="9" ry="18" fill="#2ECC71" transform="rotate(-45 55 10)" />
+      
+      <!-- Head and Neck -->
+      <path d="M 5 2 Q 10 -15 22 -22" stroke="#2ECC71" stroke-width="10" stroke-linecap="round" fill="none" />
+      <circle cx="23" cy="-24" r="7" fill="#2ECC71" />
+      <!-- Eye -->
+      <circle cx="26" cy="-26" r="1.5" fill="#1A1D24" />
+
+      <!-- Turtle Shell (Carapace) Base -->
+      <ellipse cx="10" cy="15" rx="38" ry="30" fill="#D35400" />
+      <ellipse cx="10" cy="15" rx="34" ry="26" fill="#E67E22" />
+
+      <!-- Shell Scutes (Geometric pattern) -->
+      <!-- Central scute -->
+      <polygon points="10,-3 22,7 10,17 -2,7" fill="#F39C12" stroke="#D35400" stroke-width="1.5" />
+      <!-- Upper/Forward scutes -->
+      <polygon points="10,-19 22,-8 10,-3 -2,-8" fill="#F39C12" stroke="#D35400" stroke-width="1.5" />
+      <!-- Lower/Back scutes -->
+      <polygon points="10,17 22,27 10,32 -2,27" fill="#F39C12" stroke="#D35400" stroke-width="1.5" />
+      <!-- Left scutes -->
+      <polygon points="-2,-8 10,-3 10,17 -2,7 -12,2" fill="#F39C12" stroke="#D35400" stroke-width="1.5" />
+      <!-- Right scutes -->
+      <polygon points="22,-8 32,2 22,7 10,17 10,-3" fill="#F39C12" stroke="#D35400" stroke-width="1.5" />
+      
+      <!-- Outer Rim of Shell -->
+      <ellipse cx="10" cy="15" rx="34" ry="26" fill="none" stroke="#D35400" stroke-width="2.5" />
+    </g>
+
+    <!-- Ambient nature details: Tiny sea wave crest in the background -->
+    <path d="M 170 150 Q 185 145 200 152 T 230 148" stroke="#3498DB" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.4" />
+    <path d="M 190 158 Q 205 153 220 160" stroke="#3498DB" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.3" />
+  </g>
+</svg>

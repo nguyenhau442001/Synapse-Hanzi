@@ -1,0 +1,90 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Definitions for gradients and effects -->
+  <defs>
+    <linearGradient id="metal-beam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A5568"/>
+      <stop offset="50%" stop-color="#2D3748"/>
+      <stop offset="100%" stop-color="#1A202C"/>
+    </linearGradient>
+    <linearGradient id="flame-grad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#DD6B20"/>
+      <stop offset="50%" stop-color="#ED8936"/>
+      <stop offset="100%" stop-color="#F6AD55"/>
+    </linearGradient>
+    <linearGradient id="shield-core" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3182CE"/>
+      <stop offset="100%" stop-color="#2B6CB0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background decorative tech grid (subtle) -->
+  <path d="M40 120 H200" stroke="#2A3441" stroke-width="1" stroke-dasharray="4 4" opacity="0.4"/>
+  <path d="M120 40 V200" stroke="#2A3441" stroke-width="1" stroke-dasharray="4 4" opacity="0.4"/>
+
+  <!-- Contextual setting: Industrial testing environment representing "耐" (durability / resilience against heat & stress) -->
+  <!-- Heavy duty structural girder holding firm under stress -->
+  <g transform="translate(0, 10)">
+    <!-- Base mount left -->
+    <path d="M50 170 L70 140 H90 L110 170 Z" fill="#2D3748"/>
+    <rect x="65" y="135" width="30" height="8" rx="2" fill="#4A5568"/>
+    
+    <!-- Base mount right -->
+    <path d="M130 170 L150 140 H170 L190 170 Z" fill="#2D3748"/>
+    <rect x="145" y="135" width="30" height="8" rx="2" fill="#4A5568"/>
+
+    <!-- Main robust beam withstanding intense pressure/heat -->
+    <rect x="70" y="100" width="100" height="40" rx="4" fill="url(#metal-beam)" stroke="#718096" stroke-width="1.5"/>
+    <circle cx="85" cy="120" r="4" fill="#1A202C" stroke="#718096" stroke-width="1"/>
+    <circle cx="155" cy="120" r="4" fill="#1A202C" stroke="#718096" stroke-width="1"/>
+    
+    <!-- Rivet details -->
+    <circle cx="100" cy="110" r="2" fill="#CBD5E0"/>
+    <circle cx="120" cy="110" r="2" fill="#CBD5E0"/>
+    <circle cx="140" cy="110" r="2" fill="#CBD5E0"/>
+    <circle cx="100" cy="130" r="2" fill="#CBD5E0"/>
+    <circle cx="120" cy="130" r="2" fill="#CBD5E0"/>
+    <circle cx="140" cy="130" r="2" fill="#CBD5E0"/>
+  </g>
+
+  <!-- Intense Heat Source (Flames wrapping around the resistant structure below) -->
+  <g transform="translate(0, 10)">
+    <path d="M85 160 C85 140, 100 135, 100 120 C100 135, 115 140, 115 160 Z" fill="url(#flame-grad)" opacity="0.9"/>
+    <path d="M120 165 C120 145, 135 140, 135 125 C135 140, 150 145, 150 165 Z" fill="url(#flame-grad)" opacity="0.9"/>
+    <path d="M100 175 C100 155, 120 150, 120 130 C120 150, 140 155, 140 175 Z" fill="#FF8C00" opacity="0.8"/>
+  </g>
+
+  <!-- Dynamic human character demonstrating active resilience/control -->
+  <!-- Engineer character leaning firmly, holding and sustaining the load/condition -->
+  <g transform="translate(0, 10)">
+    <!-- Character Torso & Head -->
+    <path d="M105 75 L120 45 L135 75 Z" fill="#3182CE"/>
+    <circle cx="120" cy="32" r="10" fill="#FEEBC8"/>
+    <!-- Safety Hard Hat -->
+    <path d="M108 30 C108 22, 132 22, 132 30 Z" fill="#ECC94B"/>
+    <rect x="105" y="28" width="30" height="3" rx="1.5" fill="#D69E2E"/>
+
+    <!-- Arms braced firmly against the beam, showing active endurance (耐) -->
+    <!-- Left Arm -->
+    <path d="M110 60 L85 95 L95 100" fill="none" stroke="#3182CE" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Right Arm -->
+    <path d="M130 60 L155 95 L145 100" fill="none" stroke="#3182CE" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Hands -->
+    <circle cx="93" cy="98" r="4" fill="#FEEBC8"/>
+    <circle cx="147" cy="98" r="4" fill="#FEEBC8"/>
+  </g>
+
+  <!-- Action / Resilience Motion Lines (Highlighting durability & steadfastness under duress) -->
+  <g stroke="#ED8936" stroke-width="2.5" stroke-linecap="round" opacity="0.8">
+    <path d="M70 70 L80 80"/>
+    <path d="M170 70 L160 80"/>
+    <path d="M60 95 L75 100"/>
+    <path d="M180 95 L165 100"/>
+  </g>
+
+  <!-- Focus Accent: Glowing core stability indicator (Gold/Orange for focus) -->
+  <circle cx="120" cy="130" r="6" fill="#F6AD55" stroke="#1A1D24" stroke-width="2"/>
+  <circle cx="120" cy="130" r="2" fill="#FFFFFF"/>
+
+</svg>

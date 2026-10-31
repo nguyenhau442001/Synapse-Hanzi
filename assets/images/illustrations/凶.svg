@@ -1,0 +1,46 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle glow/background accent for fierce context -->
+  <circle cx="120" cy="120" r="70" fill="#E65100" opacity="0.12"/>
+
+  <!-- Character body/shoulders -->
+  <path d="M 75 190 L 70 155 C 70 142, 85 135, 120 135 C 155 135, 170 142, 170 155 L 165 190 Z" fill="#2C323D"/>
+  
+  <!-- Collar/Tie detail representing the strict class monitor / disciplined person -->
+  <polygon points="120,135 110,160 130,160" fill="#1A1D24"/>
+  <polygon points="120,155 115,185 125,185" fill="#E0E6ED"/>
+
+  <!-- Neck -->
+  <rect x="105" y="122" width="30" height="25" rx="6" fill="#F4A261"/>
+
+  <!-- Head shape -->
+  <rect x="85" y="60" width="70" height="75" rx="25" fill="#F4A261"/>
+
+  <!-- Ears -->
+  <circle cx="79" cy="95" r="8" fill="#E76F51"/>
+  <circle cx="161" cy="95" r="8" fill="#E76F51"/>
+
+  <!-- Hair (Neat, stern style) -->
+  <path d="M 85 85 C 85 60, 100 52, 120 52 C 140 52, 155 60, 155 85 C 155 85, 145 62, 120 62 C 95 62, 85 85, 85 85 Z" fill="#263238"/>
+
+  <!-- Fierce Eyebrows (Slanted down sharply toward the center) -->
+  <polygon points="96,88 120,96 120,102 96,94" fill="#263238"/>
+  <polygon points="144,88 120,96 120,102 144,94" fill="#263238"/>
+
+  <!-- Intense Eyes -->
+  <circle cx="108" cy="104" r="5" fill="#111827"/>
+  <circle cx="132" cy="104" r="5" fill="#111827"/>
+
+  <!-- Stern / Fierce / Angry Mouth (Downward curve/frown) -->
+  <path d="M 106 124 Q 120 114 134 124" fill="none" stroke="#263238" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Action lines / Intensity aura accents -->
+  <path d="M 55 85 L 70 92" stroke="#FFB703" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 52 110 L 68 112" stroke="#FFB703" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 185 85 L 170 92" stroke="#FFB703" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 188 110 L 172 112" stroke="#FFB703" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 120 38 L 120 48" stroke="#FFB703" stroke-width="3" stroke-linecap="round"/>
+
+</svg>

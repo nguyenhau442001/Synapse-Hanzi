@@ -1,0 +1,57 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Desk surface -->
+  <path d="M 30 180 L 210 180 L 220 205 L 20 205 Z" fill="#252A34"/>
+  
+  <!-- Open Ledger / Budget Book representing "盘算" (planning/calculating expenses) -->
+  <path d="M 65 140 L 120 120 L 175 140 L 175 175 L 120 155 L 65 175 Z" fill="#2D3342"/>
+  <!-- Left Page -->
+  <path d="M 68 142 L 118 123 L 118 152 L 68 172 Z" fill="#ECEFF4"/>
+  <!-- Right Page -->
+  <path d="M 122 123 L 172 142 L 172 172 L 122 152 Z" fill="#ECEFF4"/>
+  
+  <!-- Content lines on book (simulating numbers/budget items) -->
+  <line x1="75" y1="138" x2="100" y2="132" stroke="#B0BEC5" stroke-width="2" stroke-linecap="round"/>
+  <line x1="75" y1="147" x2="105" y2="141" stroke="#B0BEC5" stroke-width="2" stroke-linecap="round"/>
+  <line x1="75" y1="156" x2="95" y2="150" stroke="#B0BEC5" stroke-width="2" stroke-linecap="round"/>
+  
+  <line x1="135" y1="135" x2="160" y2="141" stroke="#B0BEC5" stroke-width="2" stroke-linecap="round"/>
+  <line x1="135" y1="144" x2="165" y2="150" stroke="#E57373" stroke-width="2" stroke-linecap="round"/>
+  <line x1="135" y1="153" x2="155" y2="159" stroke="#81C784" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Calculator (Modern sleek flat style, sharp accent color for calculation) -->
+  <rect x="85" y="80" width="70" height="90" rx="6" fill="#111318"/>
+  <!-- Calculator Screen -->
+  <rect x="95" y="90" width="50" height="20" rx="3" fill="#2D3342"/>
+  <!-- Screen numbers (abstracted flat design) -->
+  <rect x="125" y="96" width="14" height="8" rx="1" fill="#FFB74D"/>
+  
+  <!-- Keypad buttons -->
+  <rect x="95" y="118" width="12" height="10" rx="2" fill="#3B4252"/>
+  <rect x="113" y="118" width="12" height="10" rx="2" fill="#3B4252"/>
+  <rect x="131" y="118" width="14" height="10" rx="2" fill="#FFB74D"/>
+
+  <rect x="95" y="132" width="12" height="10" rx="2" fill="#3B4252"/>
+  <rect x="113" y="132" width="12" height="10" rx="2" fill="#3B4252"/>
+  <rect x="131" y="132" width="14" height="10" rx="2" fill="#FFB74D"/>
+
+  <rect x="95" y="146" width="12" height="16" rx="2" fill="#3B4252"/>
+  <rect x="113" y="146" width="12" height="16" rx="2" fill="#3B4252"/>
+  <rect x="131" y="146" width="14" height="16" rx="2" fill="#E57373"/>
+
+  <!-- Conceptual thought/planning elements hovering above (representing "盘算" - mental calculation and scheming) -->
+  <circle cx="120" cy="50" r="16" fill="#2D3342" opacity="0.9"/>
+  <circle cx="120" cy="50" r="12" fill="#FFB74D"/>
+  
+  <!-- Abstract mathematical/planning icons inside the thought circle -->
+  <path d="M 115 46 L 125 54 M 125 46 L 115 54" stroke="#111318" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Smaller thought bubbles -->
+  <circle cx="95" cy="65" r="8" fill="#2D3342" opacity="0.9"/>
+  <path d="M 93 63 L 97 67 M 97 63 L 93 67" stroke="#FFB74D" stroke-width="2" stroke-linecap="round"/>
+
+  <circle cx="145" cy="65" r="6" fill="#2D3342" opacity="0.9"/>
+  <circle cx="145" cy="65" r="2.5" fill="#FFB74D"/>
+
+</svg>

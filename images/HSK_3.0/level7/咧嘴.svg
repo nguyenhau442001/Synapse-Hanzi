@@ -1,0 +1,40 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Soft glow / background aura for baby/joy context -->
+    <circle cx="120" cy="115" r="70" fill="#252B3B" opacity="0.6"/>
+
+    <!-- Baby's Body / Clothing -->
+    <path d="M 85,160 Q 120,140 155,160 L 165,195 Q 120,205 75,195 Z" fill="#3B82F6"/>
+    <!-- Collar / Bib detail -->
+    <path d="M 95,160 Q 120,180 145,160 Q 135,150 120,150 Q 105,150 95,160 Z" fill="#F3F4F6"/>
+
+    <!-- Chubby Baby Head / Face base -->
+    <circle cx="120" cy="110" r="50" fill="#FDE047"/>
+
+    <!-- Rosy Cheeks -->
+    <ellipse cx="92" cy="122" rx="10" ry="7" fill="#FB7185" opacity="0.6"/>
+    <ellipse cx="148" cy="122" rx="10" ry="7" fill="#FB7185" opacity="0.6"/>
+
+    <!-- Happy Squinting Eyes (Upturned Arcs indicating big smile) -->
+    <path d="M 95,102 Q 102,94 110,102" fill="none" stroke="#1F2937" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 130,102 Q 138,94 145,102" fill="none" stroke="#1F2937" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Eyebrows -->
+    <path d="M 94,93 Q 102,89 110,95" fill="none" stroke="#D97706" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 130,95 Q 138,89 146,93" fill="none" stroke="#D97706" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- WIDE SMILE ("咧嘴" - liězuǐ: wide, toothy grin / breaking into a wide smile) -->
+    <path d="M 92,118 Q 120,155 148,118 Z" fill="#1F2937"/>
+    <!-- Cute little tongue showing inside the grin -->
+    <path d="M 108,135 Q 120,123 132,135 Z" fill="#FB7185"/>
+
+    <!-- Cute baby hair tuft -->
+    <path d="M 115,60 Q 120,45 130,52 Q 125,58 120,60" fill="#D97706"/>
+
+    <!-- Tiny raised hands expressing excitement -->
+    <circle cx="70" cy="140" r="12" fill="#FDE047"/>
+    <circle cx="170" cy="140" r="12" fill="#FDE047"/>
+  </g>
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <defs>
+    <!-- Sky Gradient -->
+    <linearGradient id="skyGrad" x1="120" y1="20" x2="120" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#161B26"/>
+      <stop offset="50%" stop-color="#221C2B"/>
+      <stop offset="100%" stop-color="#3D2028"/>
+    </linearGradient>
+
+    <!-- Sun Glow Gradient -->
+    <radialGradient id="sunGlow" cx="120" cy="135" r="70" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF5722" stop-opacity="0.6"/>
+      <stop offset="40%" stop-color="#FF8A00" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FF5722" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Sun Core Gradient -->
+    <linearGradient id="sunCore" x1="120" y1="105" x2="120" y2="165" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFD54F"/>
+      <stop offset="50%" stop-color="#FF7043"/>
+      <stop offset="100%" stop-color="#E64A19"/>
+    </linearGradient>
+
+    <!-- Ocean Gradient -->
+    <linearGradient id="oceanGrad" x1="120" y1="145" x2="120" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F2027"/>
+      <stop offset="50%" stop-color="#203A43"/>
+      <stop offset="100%" stop-color="#2C5364"/>
+    </linearGradient>
+
+    <!-- Wave Golden Reflection -->
+    <linearGradient id="goldReflection" x1="120" y1="145" x2="120" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFB300" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#FF8F00" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FF6F00" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky Area -->
+  <rect x="0" y="0" width="240" height="150" fill="url(#skyGrad)"/>
+
+  <!-- Radiance / Glow behind Sun -->
+  <circle cx="120" cy="135" r="65" fill="url(#sunGlow)"/>
+
+  <!-- Rising Sun (旭日) -->
+  <circle cx="120" cy="135" r="32" fill="url(#sunCore)"/>
+
+  <!-- Ocean Area -->
+  <rect x="0" y="145" width="240" height="95" fill="url(#oceanGrad)"/>
+
+  <!-- Golden Reflection Path on Water -->
+  <path d="M105 145 C108 165, 95 185, 100 200 C102 208, 138 208, 140 200 C145 185, 132 165, 135 145 Z" fill="url(#goldReflection)"/>
+
+  <!-- Horizon Line -->
+  <line x1="0" y1="145" x2="240" y2="145" stroke="#37474F" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Dynamic Waves (Stylized Flat Vector Layers) -->
+  <!-- Wave Layer 1 (Back) -->
+  <path d="M-10 160 Q 40 150, 90 160 T 190 160 T 250 160 L 250 240 L -10 240 Z" fill="#1C313B" opacity="0.8"/>
+  <path d="M-10 160 Q 40 150, 90 160 T 190 160 T 250 160" fill="none" stroke="#FFB300" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Wave Layer 2 (Middle) -->
+  <path d="M-10 178 Q 50 168, 110 178 T 220 178 T 260 178 L 260 240 L -10 240 Z" fill="#162A33" opacity="0.9"/>
+  <path d="M-10 178 Q 50 168, 110 178 T 220 178 T 260 178" fill="none" stroke="#FFA726" stroke-width="2" opacity="0.6"/>
+
+  <!-- Wave Layer 3 (Foreground) -->
+  <path d="M-10 200 Q 30 190, 95 200 T 200 200 T 250 200 L 250 240 L -10 240 Z" fill="#11222C"/>
+  <path d="M-10 200 Q 30 190, 95 200 T 200 200 T 250 200" fill="none" stroke="#FFD54F" stroke-width="2.5" opacity="0.8"/>
+
+  <!-- Additional Foam / Accent Highlights -->
+  <path d="M60 203 C70 201, 80 201, 88 203" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+  <path d="M150 202 C160 200, 175 200, 185 202" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+</svg>

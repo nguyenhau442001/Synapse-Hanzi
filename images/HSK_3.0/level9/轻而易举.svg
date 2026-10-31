@@ -1,0 +1,50 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle glowing background accent to denote effortless focus -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.6"/>
+
+  <!-- Complex/Heavy Exam Paper (representing the difficult test from context) -->
+  <g transform="translate(60, 45)">
+    <!-- Paper background -->
+    <rect x="0" y="0" width="120" height="150" rx="4" fill="#2D333B" stroke="#3E4451" stroke-width="2"/>
+    <!-- Folded top-right corner -->
+    <polygon points="100,0 120,20 120,0" fill="#3E4451"/>
+    <!-- Difficult puzzle/math symbols and messy tangled lines (representing the hard problems) -->
+    <path d="M15 30 L45 30 M60 30 L105 30" stroke="#5C6370" stroke-width="3" stroke-linecap="round"/>
+    <!-- Tangled difficult path/equation -->
+    <path d="M15 55 Q 30 75, 45 55 T 75 55 T 105 55" fill="none" stroke="#E06C75" stroke-width="3" stroke-dasharray="4 2"/>
+    <!-- Complex geometric intersecting lines -->
+    <circle cx="35" cy="95" r="15" fill="none" stroke="#E06C75" stroke-width="2"/>
+    <line x1="60" y1="80" x2="95" y2="110" stroke="#E06C75" stroke-width="2"/>
+    <line x1="60" y1="110" x2="95" y2="80" stroke="#E06C75" stroke-width="2"/>
+    <!-- Additional tiny problem lines -->
+    <line x1="15" y1="130" x2="70" y2="130" stroke="#5C6370" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Scale Exaggeration / Contrast: A glowing, effortlessly light golden brush/pen smoothly gliding through and dissolving the chaos with a brilliant checkmark -->
+  <!-- Golden light trail / resolution beam -->
+  <path d="M50 170 Q 120 70, 190 60" fill="none" stroke="#F1C40F" stroke-width="4" opacity="0.4" stroke-linecap="round"/>
+
+  <!-- Glowing checkmark floating seamlessly over the paper (representing '轻而易举' - effortlessly solved) -->
+  <path d="M95 125 L115 145 L155 95" fill="none" stroke="#2ECC71" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M95 125 L115 145 L155 95" fill="none" stroke="#A3E4D7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Sleek Modern Pen / Wand representing the foundation/mastery -->
+  <g transform="translate(140, 100) rotate(-45)">
+    <!-- Pen body -->
+    <rect x="-6" y="-50" width="12" height="70" rx="3" fill="#61AFEF"/>
+    <!-- Pen tip -->
+    <polygon points="-6,20 6,20 0,35" fill="#E5C07B"/>
+    <!-- Metallic grip rings -->
+    <line x1="-6" y1="-30" x2="6" y2="-30" stroke="#1A1D24" stroke-width="2"/>
+    <line x1="-6" y1="-20" x2="6" y2="-20" stroke="#1A1D24" stroke-width="2"/>
+  </g>
+  
+  <!-- Sparkles indicating absolute ease and precision -->
+  <g fill="#F1C40F">
+    <circle cx="165" cy="75" r="3"/>
+    <circle cx="85" cy="155" r="2"/>
+    <circle cx="130" cy="70" r="2.5"/>
+  </g>
+</svg>

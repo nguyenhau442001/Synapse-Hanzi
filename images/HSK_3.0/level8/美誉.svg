@@ -1,0 +1,36 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Traditional Architectural Roof & Heritage Structure representing the Historic City/Place -->
+    <!-- Roof Base / Eaves -->
+    <path d="M 60,95 Q 120,80 180,95 L 195,115 Q 120,105 45,115 Z" fill="#2E384D" />
+    <path d="M 50,115 Q 120,102 190,115 L 200,125 Q 120,115 40,125 Z" fill="#3E4C66" />
+    
+    <!-- Water Reflection / Jiangnan Canal base -->
+    <path d="M 40,190 C 70,185 100,195 130,190 C 160,185 190,195 200,190 L 200,200 C 180,205 150,195 120,200 C 90,205 60,195 40,200 Z" fill="#1f364d" opacity="0.6"/>
+    <path d="M 50,205 C 80,200 110,210 140,205 C 170,200 190,210 195,205 L 195,212 C 180,217 150,207 120,212 C 90,217 60,207 45,212 Z" fill="#1f364d" opacity="0.3"/>
+
+    <!-- Building pillars -->
+    <rect x="75" y="125" width="12" height="65" fill="#2E384D"/>
+    <rect x="114" y="125" width="12" height="65" fill="#2E384D"/>
+    <rect x="153" y="125" width="12" height="65" fill="#2E384D"/>
+    
+    <rect x="65" y="185" width="110" height="8" fill="#4E5D78" rx="2"/>
+
+    <!-- Glowing Golden Laurel Wreath and Star Emblem representing "Měiyù" (Fame / High Praise / Global Reputation) -->
+    <!-- Wreath Leaves Left -->
+    <path d="M 95,80 C 75,70 70,40 95,30 C 85,45 85,65 95,80 Z" fill="#F5A623"/>
+    <path d="M 100,65 C 85,55 83,35 100,25" fill="none" stroke="#F5A623" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Wreath Leaves Right -->
+    <path d="M 145,80 C 165,70 170,40 145,30 C 155,45 155,65 145,80 Z" fill="#F5A623"/>
+    <path d="M 140,65 C 155,55 157,35 140,25" fill="none" stroke="#F5A623" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Central Glowing Star (Excellence / Reputation) -->
+    <polygon points="120,20 126,35 142,37 130,48 134,64 120,55 106,64 110,48 98,37 114,35" fill="#FFD700" filter="drop-shadow(0px 0px 8px rgba(255, 215, 0, 0.6))"/>
+    
+    <!-- Ribbon at the base of the wreath -->
+    <path d="M 105,75 Q 120,85 135,75 L 132,88 Q 120,95 108,88 Z" fill="#E09612"/>
+  </g>
+</svg>

@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements (Subtle gears/sync lines to imply collaboration) -->
+  <g opacity="0.15" stroke="#64748B" stroke-width="1.5" stroke-dasharray="4 4" fill="none">
+    <circle cx="120" cy="120" r="75"/>
+    <circle cx="120" cy="120" r="95"/>
+  </g>
+
+  <!-- Central Action: Two human characters demonstrating "mòqì" (smooth coordination/tacit understanding) -->
+  <!-- Character Left (Teammate A) -->
+  <g transform="translate(0, 0)">
+    <!-- Body & Arm reaching/passing in sync -->
+    <path d="M75,160 L75,130 C75,115 85,105 100,105 L115,105" fill="none" stroke="#38BDF8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Head -->
+    <circle cx="75" cy="90" r="14" fill="#38BDF8"/>
+    <!-- Torso -->
+    <path d="M55,165 C55,140 75,140 75,140 C75,140 95,140 95,165" fill="#0EA5E9"/>
+    <!-- Hand meeting in the center -->
+    <circle cx="115" cy="105" r="6" fill="#F59E0B"/>
+  </g>
+
+  <!-- Character Right (Teammate B) -->
+  <g transform="translate(0, 0)">
+    <!-- Body & Arm reaching/passing in sync from opposite direction -->
+    <path d="M165,160 L165,130 C165,115 155,105 140,105 L125,105" fill="none" stroke="#818CF8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Head -->
+    <circle cx="165" cy="90" r="14" fill="#818CF8"/>
+    <!-- Torso -->
+    <path d="M145,165 C145,140 165,140 165,140 C165,140 185,140 185,165" fill="#6366F1"/>
+    <!-- Hand meeting in the center -->
+    <circle cx="125" cy="105" r="6" fill="#F59E0B"/>
+  </g>
+
+  <!-- Dynamic Interaction Object / Focal Point (Floating puzzle or synchronized spark of idea) -->
+  <g transform="translate(120, 75)">
+    <!-- Motion lines representing mental connection / synergy -->
+    <path d="M-30,10 C-15,0 15,0 30,10" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <path d="M-20,20 C-10,12 10,12 20,20" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+    
+    <!-- Central glowing/gold synchronized puzzle piece / lightbulb concept representing tacit understanding -->
+    <circle cx="0" cy="-5" r="18" fill="#1E293B" stroke="#F59E0B" stroke-width="3"/>
+    <!-- Spark icon inside -->
+    <path d="M0,-15 L3,-8 L10,-8 L5,-3 L7,4 L0,1 L-7,4 L-5,-3 L-10,-8 L-3,-8 Z" fill="#F59E0B"/>
+  </g>
+
+  <!-- Motion lines indicating seamless dynamic action -->
+  <path d="M50,115 C60,100 70,95 85,95" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <path d="M190,115 C180,100 170,95 155,95" fill="none" stroke="#818CF8" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+</svg>

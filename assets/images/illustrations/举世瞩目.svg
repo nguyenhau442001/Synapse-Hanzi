@@ -1,0 +1,43 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Globe representing the world -->
+  <circle cx="120" cy="130" r="50" fill="#2C3E50" stroke="#34495E" stroke-width="2"/>
+  <path d="M70 130 A50 50 0 0 1 170 130 A50 50 0 0 1 70 130 Z" fill="#34495E"/>
+  <path d="M120 80 A50 50 0 0 1 120 180 A50 50 0 0 1 120 80 Z" fill="none" stroke="#455A64" stroke-width="2"/>
+  
+  <!-- Central achievement/monument representing the focus of attention -->
+  <rect x="112" y="90" width="16" height="40" fill="#F39C12"/>
+  <polygon points="108,90 132,90 120,70" fill="#F1C40F"/>
+  
+  <!-- Multiple eyes/gazes directed toward the center -->
+  <g fill="#BDC3C7">
+    <!-- Top -->
+    <ellipse cx="120" cy="50" rx="8" ry="5"/>
+    <circle cx="120" cy="50" r="2" fill="#1A1D24"/>
+    
+    <!-- Top Right -->
+    <ellipse cx="160" cy="70" rx="8" ry="5" transform="rotate(45 160 70)"/>
+    <circle cx="160" cy="70" r="2" fill="#1A1D24" transform="rotate(45 160 70)"/>
+    
+    <!-- Right -->
+    <ellipse cx="180" cy="110" rx="8" ry="5" transform="rotate(90 180 110)"/>
+    <circle cx="180" cy="110" r="2" fill="#1A1D24" transform="rotate(90 180 110)"/>
+    
+    <!-- Bottom Right -->
+    <ellipse cx="160" cy="150" rx="8" ry="5" transform="rotate(135 160 150)"/>
+    <circle cx="160" cy="150" r="2" fill="#1A1D24" transform="rotate(135 160 150)"/>
+    
+    <!-- Bottom Left -->
+    <ellipse cx="80" cy="150" rx="8" ry="5" transform="rotate(45 80 150)"/>
+    <circle cx="80" cy="150" r="2" fill="#1A1D24" transform="rotate(45 80 150)"/>
+    
+    <!-- Left -->
+    <ellipse cx="60" cy="110" rx="8" ry="5" transform="rotate(90 60 110)"/>
+    <circle cx="60" cy="110" r="2" fill="#1A1D24" transform="rotate(90 60 110)"/>
+    
+    <!-- Top Left -->
+    <ellipse cx="80" cy="70" rx="8" ry="5" transform="rotate(135 80 70)"/>
+    <circle cx="80" cy="70" r="2" fill="#1A1D24" transform="rotate(135 80 70)"/>
+  </g>
+</svg>

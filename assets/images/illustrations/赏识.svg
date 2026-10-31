@@ -1,0 +1,62 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative subtle background glow for focus -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.6"/>
+
+  <!-- Conceptual illustration for "赏识" (Appreciation, recognition of talent/value) -->
+  <!-- Represented as a distinguished senior figure acknowledging/valuing a rising professional (symbolized by a glowing award/star/blueprint element held up) -->
+
+  <!-- Leader / Evaluator silhouette (Left profile / semi-front) -->
+  <g transform="translate(65, 80)">
+    <!-- Body / Suit -->
+    <path d="M-15 110 C-15 90, 5 80, 25 80 C45 80, 65 90, 65 110 L65 130 L-15 130 Z" fill="#2E3646"/>
+    <!-- Tie / lapel accent -->
+    <polygon points="25,80 30,110 20,110" fill="#4C566A"/>
+    <!-- Head -->
+    <circle cx="25" cy="50" r="18" fill="#D8DEE9"/>
+    <!-- Hair -->
+    <path d="M10 45 C10 35, 25 32, 40 40 C35 32, 20 32, 10 45 Z" fill="#4C566A"/>
+    <!-- Approving hand gesture (pointing/welcoming upward toward achievement) -->
+    <path d="M45 85 Q65 75, 75 80" stroke="#D8DEE9" stroke-width="6" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Recipient / Professional being recognized (Right side, slightly lower/modest posture) -->
+  <g transform="translate(130, 85)">
+    <!-- Body -->
+    <path d="M-10 105 C-10 90, 10 85, 25 85 C40 85, 60 90, 60 105 L60 125 L-10 125 Z" fill="#3B4252"/>
+    <!-- Head -->
+    <circle cx="25" cy="55" r="16" fill="#E5E9F0"/>
+    <!-- Hair -->
+    <path d="M12 50 C12 40, 25 38, 38 45 Z" fill="#81A1C1"/>
+    <!-- Confident, respectful posture -->
+  </g>
+
+  <!-- Central Symbol of "Appreciation / High Value Recognition": A glowing star/crest emerging from an upward path -->
+  <g transform="translate(120, 75)">
+    <!-- Subtle pedestal / foundation -->
+    <ellipse cx="0" cy="45" rx="24" ry="6" fill="#434C5E"/>
+    
+    <!-- Vertical beam of recognition / spotlight -->
+    <polygon points="-12,45 12,45 20,-20 -20,-20" fill="url(#goldGlow)" opacity="0.15"/>
+
+    <!-- Gold Star / Excellence Icon (representing talent being recognized) -->
+    <g transform="translate(0, -5)">
+      <circle cx="0" cy="0" r="22" fill="#EBCB8B" opacity="0.2"/>
+      <circle cx="0" cy="0" r="16" fill="#D08770"/>
+      <path d="M0 -11 L3 -3 L11 -3 L5 2 L7 10 L0 6 L-7 10 L-5 2 L-11 -3 L-3 -3 Z" fill="#EBCB8B"/>
+    </g>
+  </g-group>
+
+  <!-- Subtle connecting gaze / energy arc between leader and recognition -->
+  <path d="M95 110 Q120 95, 140 110" stroke="#EBCB8B" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6" stroke-dasharray="4 4"/>
+
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="goldGlow" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#EBCB8B" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#EBCB8B" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+</svg>

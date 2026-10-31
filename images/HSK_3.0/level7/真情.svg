@@ -1,0 +1,36 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Background subtle warmth glow for sincerity -->
+    <circle cx="120" cy="115" r="70" fill="#FFB703" opacity="0.06"/>
+
+    <!-- Letter/Envelope base (referencing "感谢信" / thank you letter context) -->
+    <path d="M 68 85 L 172 85 C 177.5 85 182 89.5 182 95 L 182 155 C 182 160.5 177.5 165 172 165 L 68 165 C 62.5 165 58 160.5 58 155 L 58 95 C 58 89.5 62.5 85 68 85 Z" fill="#242B38"/>
+    
+    <!-- Envelope inner flap shadow -->
+    <path d="M 60 90 L 120 128 L 180 90" fill="none" stroke="#323C4E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Letter paper emerging, containing clean text lines representing genuine words/expressions -->
+    <path d="M 76 85 L 76 58 C 76 52.5 80.5 48 86 48 L 154 48 C 159.5 48 164 52.5 164 58 L 164 85 Z" fill="#2E3848"/>
+    
+    <!-- Written text lines (abstracted cleanly) -->
+    <rect x="90" y="60" width="60" height="4" rx="2" fill="#52607A"/>
+    <rect x="90" y="70" width="45" height="4" rx="2" fill="#52607A"/>
+
+    <!-- The physical object of "真情" (Warm, honest expression: a glowing, golden fountain pen resting diagonally, symbolizing sincere writing from the heart) -->
+    <!-- Pen Body -->
+    <path d="M 72 168 L 164 76 C 167 73 171 73 174 76 L 178 80 C 181 83 181 87 178 90 L 86 182 C 83 185 79 185 76 182 L 72 178 C 69 175 69 171 72 168 Z" fill="#FFB703"/>
+    
+    <!-- Pen Grip / Details -->
+    <path d="M 76 178 L 86 168 L 90 172 L 80 182 Z" fill="#E59E00"/>
+    
+    <!-- Pen Nib -->
+    <path d="M 164 76 L 178 90 L 170 94 L 160 84 Z" fill="#EBEBEB"/>
+    <line x1="167" y1="83" x2="173" y2="89" stroke="#A0AAB8" stroke-width="1.5"/>
+
+    <!-- Focal warm aura emanating from the pen nib, representing sincerity & genuine feeling -->
+    <circle cx="170" cy="85" r="16" fill="#FFB703" opacity="0.25"/>
+    <circle cx="170" cy="85" r="8" fill="#FFB703" opacity="0.4"/>
+  </g>
+</svg>

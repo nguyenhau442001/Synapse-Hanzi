@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle blackboard/chalkboard texture hint -->
+  <path d="M40 70 L200 70 M40 120 L200 120 M40 170 L200 170" stroke="#222731" stroke-width="1" stroke-dasharray="4 8"/>
+
+  <!-- Soft glow behind the teacher (representing silent dedication/impact) -->
+  <circle cx="120" cy="115" r="55" fill="#2E384D" opacity="0.4"/>
+
+  <!-- Chalkboard background element (rural school context) -->
+  <rect x="65" y="45" width="110" height="70" rx="4" fill="#222B38" stroke="#323D4D" stroke-width="2"/>
+  <!-- Faint geometric shapes on chalkboard representing teaching -->
+  <line x1="80" y1="65" x2="110" y2="65" stroke="#3A4659" stroke-width="3" stroke-linecap="round"/>
+  <line x1="80" y1="80" x2="140" y2="80" stroke="#3A4659" stroke-width="3" stroke-linecap="round"/>
+  <line x1="80" y1="95" x2="100" y2="95" stroke="#3A4659" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="150" cy="80" r="12" fill="none" stroke="#3A4659" stroke-width="2"/>
+
+  <!-- The Dedicated Teacher (Faceless/Anonymous representing "wúwén" - unknown, unassuming) -->
+  <!-- Body / Torso -->
+  <path d="M90 185 L90 155 C90 142 102 135 120 135 C138 135 150 142 150 155 L150 185 Z" fill="#3B82F6"/>
+  <!-- Collar / Shirt details -->
+  <polygon points="120,143 112,152 128,152" fill="#E2E8F0"/>
+
+  <!-- Head (Blank/Faceless silhouette representing anonymity) -->
+  <circle cx="120" cy="112" r="18" fill="#CBD5E1"/>
+  <!-- Simple hair silhouette -->
+  <path d="M102 112 C102 100 110 94 120 94 C130 94 138 100 138 112 C134 107 127 105 120 105 C113 105 106 107 102 112 Z" fill="#64748B"/>
+
+  <!-- Arms / Hands holding chalk and grading/writing quietly -->
+  <path d="M90 155 L75 168 L85 175 L98 160" fill="#3B82F6"/>
+  <!-- Hand -->
+  <circle cx="73" cy="170" r="5" fill="#CBD5E1"/>
+
+  <!-- Desk / Lectern -->
+  <rect x="60" y="175" width="120" height="15" rx="3" fill="#475569"/>
+  <rect x="95" y="190" width="50" height="25" fill="#334155"/>
+
+  <!-- Open book on desk (knowledge being passed silently) -->
+  <path d="M100 172 Q120 167 140 172 L140 182 Q120 177 100 182 Z" fill="#F8FAFC"/>
+  <line x1="120" y1="170" x2="120" y2="180" stroke="#CBD5E1" stroke-width="1.5"/>
+
+  <!-- Soft warm lamp/light casting downward (dedication illuminating others, remaining in modest shadow) -->
+  <path d="M120 20 L105 45 L135 45 Z" fill="#64748B"/>
+  <path d="M95 45 L145 45 L165 145 L75 145 Z" fill="#F59E0B" opacity="0.08"/>
+
+  <!-- Subtle glowing light rays (representing quiet, persistent contribution) -->
+  <line x1="120" y1="45" x2="120" y2="90" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="3 6" opacity="0.6"/>
+</svg>

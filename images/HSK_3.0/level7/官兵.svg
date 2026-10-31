@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background subtle dynamic water/flood element (representing context: emergency rescue) -->
+  <path d="M0 190 Q60 175 120 190 T240 190 L240 240 L0 240 Z" fill="#1F3A5F" opacity="0.6"/>
+  <path d="M0 205 Q70 195 140 210 T240 205 L240 240 L0 240 Z" fill="#152B47" opacity="0.8"/>
+
+  <!-- Dramatic floodlight beam from top corner -->
+  <polygon points="240,0 140,0 70,240 120,240" fill="#38BDF8" opacity="0.08"/>
+
+  <!-- Character 1: Officer / Armed Police Leader (Standing firm, directing rescue) -->
+  <!-- Body/Uniform -->
+  <path d="M75 125 L95 125 L105 170 L85 170 Z" fill="#1E3A8A"/>
+  <rect x="78" y="125" width="24" height="48" rx="4" fill="#2563EB"/>
+  <!-- Head -->
+  <circle cx="90" cy="104" r="11" fill="#FDE68A"/>
+  <!-- Cap -->
+  <path d="M77 96 L103 96 L107 101 L73 101 Z" fill="#1D4ED8"/>
+  <rect x="85" y="94" width="10" height="3" rx="1.5" fill="#FBBF24"/>
+  <!-- Arm pointing forward -->
+  <path d="M95 130 L125 138 L123 145 L95 136 Z" fill="#2563EB"/>
+  <!-- Legs -->
+  <rect x="80" y="168" width="8" height="35" rx="3" fill="#1E293B"/>
+  <rect x="92" y="168" width="8" height="35" rx="3" fill="#1E293B"/>
+
+  <!-- Character 2: Soldier / Team Member (Pulling/Holding rescue equipment rope) -->
+  <!-- Body/Uniform -->
+  <path d="M140 120 L160 125 L150 170 L130 165 Z" fill="#1E3A8A"/>
+  <rect x="135" y="120" width="24" height="48" rx="4" fill="#2563EB"/>
+  <!-- Head & Helmet -->
+  <circle cx="145" cy="98" r="11" fill="#FDE68A"/>
+  <path d="M132 93 C132 85 158 85 158 93 Z" fill="#3B82F6"/>
+  <!-- Arms pulling -->
+  <path d="M142 130 L115 145 L120 152 L147 136 Z" fill="#2563EB"/>
+  <!-- Legs braced -->
+  <rect x="132" y="165" width="9" height="38" rx="3" fill="#1E293B"/>
+  <rect x="146" y="163" width="9" height="40" rx="3" fill="#1E293B"/>
+
+  <!-- Rescue Equipment: Lifebuoy / Safety Ring (Symbolizing disaster relief mission) -->
+  <circle cx="115" cy="155" r="16" fill="none" stroke="#EF4444" stroke-width="7"/>
+  <circle cx="115" cy="155" r="16" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-dasharray="10 91"/>
+
+  <!-- Accent star badge on uniforms/cap representing "官兵" (Military/Police personnel) -->
+  <polygon points="90,87 91.5,90.5 95,91 92.5,93.5 93,97 90,95.5 87,97 87.5,93.5 85,91 88.5,90.5" fill="#FBBF24"/>
+</svg>

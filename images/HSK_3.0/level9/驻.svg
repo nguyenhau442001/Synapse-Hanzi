@@ -1,0 +1,43 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Map / Grid Lines representing location/territory -->
+  <path d="M40 180 L200 180" stroke="#2A2F3B" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M70 120 L170 120" stroke="#2A2F3B" stroke-width="1.5" stroke-dasharray="3 3"/>
+  
+  <!-- Embassy / Station Building (Representing "đóng quân, đồn trú, đóng tại") -->
+  <path d="M80 180 L80 120 L160 120 L160 180 Z" fill="#242936"/>
+  
+  <!-- Building Roof -->
+  <path d="M70 120 L120 90 L170 120 Z" fill="#323846"/>
+
+  <!-- Door & Windows -->
+  <rect x="105" y="145" width="30" height="35" rx="4" fill="#1A1D24"/>
+  <rect x="90" y="130" width="16" height="16" rx="2" fill="#3D4659"/>
+  <rect x="134" y="130" width="16" height="16" rx="2" fill="#3D4659"/>
+
+  <!-- Flag representing diplomatic mission / stationing -->
+  <line x1="120" y1="90" x2="120" y2="60" stroke="#8C9BAB" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="120,60 148,70 120,80" fill="#F59E0B"/>
+
+  <!-- Action Character (Ambassador / Official stationed abroad) -->
+  <!-- Body -->
+  <path d="M185 180 C185 165 175 155 165 150 L155 180 Z" fill="#F59E0B"/>
+  <!-- Head -->
+  <circle cx="170" cy="138" r="11" fill="#FFD166"/>
+  <!-- Briefcase (Diplomat accessory) -->
+  <rect x="190" y="162" width="14" height="10" rx="2" fill="#3D4659"/>
+  <path d="M195 162 V160 H201 V162" stroke="#8C9BAB" stroke-width="1.5" fill="none"/>
+
+  <!-- Ground Line -->
+  <path d="M30 180 H210" stroke="#3D4659" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Motion lines indicating arrival and settling/stationing -->
+  <path d="M45 150 C55 145 65 155 75 150" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 3" fill="none"/>
+  <path d="M35 165 C45 160 55 170 65 165" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 3" fill="none"/>
+
+  <!-- Focus Pin Marker over the stationed location -->
+  <path d="M120 45 C112 45 106 51 106 59 C106 70 120 82 120 82 C120 82 134 70 134 59 C134 51 128 45 120 45 Z" fill="#F59E0B"/>
+  <circle cx="120" cy="58" r="4" fill="#1A1D24"/>
+</svg>

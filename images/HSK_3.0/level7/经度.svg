@@ -1,0 +1,22 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Globe structure -->
+  <circle cx="120" cy="120" r="70" fill="#2C3440" stroke="#4A5568" stroke-width="2"/>
+  
+  <!-- Longitude lines (Meridians) -->
+  <path d="M120 50 C 145 50, 165 80, 165 120 C 165 160, 145 190, 120 190" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+  <path d="M120 50 C 95 50, 75 80, 75 120 C 75 160, 95 190, 120 190" fill="none" stroke="#4A5568" stroke-width="1.5"/>
+  <path d="M120 50 C 175 50, 190 80, 190 120 C 190 160, 175 190, 120 190" fill="none" stroke="#4A5568" stroke-width="1.5"/>
+  <path d="M120 50 C 65 50, 50 80, 50 120 C 50 160, 65 190, 120 190" fill="none" stroke="#4A5568" stroke-width="1.5"/>
+  
+  <!-- Equator line -->
+  <ellipse cx="120" cy="120" rx="70" ry="20" fill="none" stroke="#4A5568" stroke-width="1.5"/>
+  
+  <!-- Highlighted Meridian (Longitude focus) -->
+  <line x1="120" y1="50" x2="120" y2="190" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Pin marker on the meridian -->
+  <path d="M120 100 C 115 100, 110 105, 110 110 C 110 118, 120 125, 120 125 C 120 125, 130 118, 130 110 C 130 105, 125 100, 120 100 Z" fill="#F59E0B"/>
+  <circle cx="120" cy="110" r="3" fill="#1A1D24"/>
+</svg>

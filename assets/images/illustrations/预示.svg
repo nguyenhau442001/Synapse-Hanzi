@@ -1,0 +1,53 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <defs>
+    <!-- Background Horizon Sky Gradient -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D2342"/>
+      <stop offset="50%" stop-color="#4E2B44"/>
+      <stop offset="100%" stop-color="#8C4133"/>
+    </linearGradient>
+
+    <!-- Glowing Sun/Dawn Gradient -->
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD166" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#FF9F1C" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FF9F1C" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Cloud Morning Glow -->
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB5A7"/>
+      <stop offset="100%" stop-color="#E56B6F"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Circular Scene Frame representing the "Omen/Portent" focus -->
+  <circle cx="120" cy="120" r="84" fill="url(#skyGrad)" stroke="#303642" stroke-width="4"/>
+
+  <!-- Glowing Sun Rising/Peeking -->
+  <circle cx="120" cy="135" r="45" fill="url(#sunGlow)"/>
+  <circle cx="120" cy="135" r="28" fill="#FFE17D"/>
+
+  <!-- Layered Horizon Clouds (Morning Glow / 朝霞 - representing the portent) -->
+  <path d="M 65 145 C 55 145 45 135 50 125 C 55 115 70 115 75 125 C 80 115 95 115 100 125 C 105 118 120 118 125 128 C 135 120 150 125 150 135 C 155 135 160 142 155 148 C 150 155 60 155 65 145 Z" fill="url(#cloudGrad)" opacity="0.9"/>
+  <path d="M 85 160 C 75 160 70 150 78 142 C 86 134 100 138 108 145 C 116 138 132 140 138 148 C 144 142 158 146 155 156 C 152 165 88 165 85 160 Z" fill="#FFA69E" opacity="0.8"/>
+
+  <!-- Emitting Rays / Portent Indicator (Subtle upward sleek aesthetic lines) -->
+  <path d="M 120 85 L 120 68" stroke="#FFE17D" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <path d="M 92 95 L 80 82" stroke="#FFE17D" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 148 95 L 160 82" stroke="#FFE17D" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Silhouette Foreground Landscape (Ground scale for context) -->
+  <path d="M 36 175 Q 120 165 204 175 L 204 204 Q 120 204 36 204 Z" fill="#1A1D24"/>
+  <!-- Distant mountain silhouette -->
+  <path d="M 50 175 L 90 145 L 125 170 L 170 138 L 200 175 Z" fill="#281C28" opacity="0.7"/>
+
+  <!-- Sleek Focus / Omen Pointer Icon (Modern Flat Marker overlaying the physical portent) -->
+  <g transform="translate(120, 42)">
+    <circle cx="0" cy="0" r="14" fill="#FF9F1C"/>
+    <circle cx="0" cy="0" r="8" fill="#1A1D24"/>
+    <path d="M -5 3 L 0 -4 L 5 3 Z" fill="#FF9F1C"/>
+  </g>
+</svg>

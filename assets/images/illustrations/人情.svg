@@ -1,0 +1,34 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Scene: Two neighbors exchanging a bowl of food over a low fence, representing "renqing" as social reciprocity and warmth -->
+  
+  <!-- Fence -->
+  <rect x="40" y="160" width="160" height="10" fill="#4A5568"/>
+  <rect x="50" y="140" width="10" height="30" fill="#4A5568"/>
+  <rect x="80" y="140" width="10" height="30" fill="#4A5568"/>
+  <rect x="110" y="140" width="10" height="30" fill="#4A5568"/>
+  <rect x="140" y="140" width="10" height="30" fill="#4A5568"/>
+  <rect x="170" y="140" width="10" height="30" fill="#4A5568"/>
+  
+  <!-- Neighbor 1 (Left) -->
+  <circle cx="80" cy="110" r="20" fill="#FBD38D"/>
+  <path d="M60 130 C60 160, 100 160, 100 130" fill="#63B3ED"/>
+  <rect x="75" y="125" width="10" height="40" fill="#63B3ED"/>
+  
+  <!-- Neighbor 2 (Right) -->
+  <circle cx="160" cy="110" r="20" fill="#FBD38D"/>
+  <path d="M140 130 C140 160, 180 160, 180 130" fill="#F6AD55"/>
+  <rect x="155" y="125" width="10" height="40" fill="#F6AD55"/>
+  
+  <!-- The Exchange: A bowl being passed -->
+  <ellipse cx="120" cy="120" rx="15" ry="8" fill="#ED8936"/>
+  <ellipse cx="120" cy="118" rx="12" ry="5" fill="#FBD38D"/>
+  
+  <!-- Hands -->
+  <rect x="95" y="120" width="15" height="8" rx="2" fill="#FBD38D"/>
+  <rect x="130" y="120" width="15" height="8" rx="2" fill="#F6AD55"/>
+  
+  <!-- Subtle background warmth/lighting -->
+  <circle cx="120" cy="120" r="80" fill="none" stroke="#2D3748" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>

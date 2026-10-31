@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Pedestal -->
+  <path d="M70 180 L170 180 L160 200 L80 200 Z" fill="#3E4451"/>
+  <rect x="90" y="150" width="60" height="30" fill="#2D333B"/>
+  
+  <!-- Porcelain Vase (The iconic object) -->
+  <path d="M120 60 C 100 60, 90 80, 90 100 C 90 130, 100 140, 105 150 L 135 150 C 140 140, 150 130, 150 100 C 150 80, 140 60, 120 60 Z" fill="#F4F4F4"/>
+  <path d="M110 60 L 130 60 L 125 70 L 115 70 Z" fill="#F4F4F4"/>
+  
+  <!-- Decorative patterns (Gold/Orange accent) -->
+  <path d="M105 80 C 110 75, 130 75, 135 80" stroke="#FFB84D" stroke-width="2" fill="none"/>
+  <path d="M100 100 C 105 95, 135 95, 140 100" stroke="#FFB84D" stroke-width="2" fill="none"/>
+  <path d="M105 120 C 110 115, 130 115, 135 120" stroke="#FFB84D" stroke-width="2" fill="none"/>
+  
+  <!-- Spotlight/Highlight effect -->
+  <ellipse cx="120" cy="105" rx="35" ry="50" fill="url(#grad1)" opacity="0.1"/>
+  <defs>
+    <radialGradient id="grad1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#1A1D24"/>
+    </radialGradient>
+  </defs>
+</svg>

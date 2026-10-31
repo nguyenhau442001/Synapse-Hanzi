@@ -1,0 +1,32 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Character: Elderly person sitting comfortably -->
+  <g transform="translate(60, 100)">
+    <!-- Body -->
+    <path d="M40 100 L80 100 L75 50 L45 50 Z" fill="#4A5568"/>
+    <!-- Head -->
+    <circle cx="60" cy="35" r="20" fill="#E2E8F0"/>
+    <!-- Smile -->
+    <path d="M50 40 Q60 48 70 40" stroke="#1A1D24" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Eyes (Closed in contentment) -->
+    <path d="M52 32 L58 35 M62 35 L68 32" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+    <!-- Arm -->
+    <path d="M45 60 L20 80" stroke="#E2E8F0" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <!-- Object: A simple wooden bowl with a small portion of rice (representing 'enough') -->
+  <g transform="translate(140, 150)">
+    <path d="M0 0 L40 0 L35 20 L5 20 Z" fill="#D69E2E"/>
+    <ellipse cx="20" cy="0" rx="20" ry="6" fill="#F6E05E"/>
+    <circle cx="20" cy="-2" r="12" fill="#F7FAFC"/>
+  </g>
+
+  <!-- Motion lines indicating gentle laughter/contentment -->
+  <path d="M100 80 Q110 70 120 80" stroke="#F6E05E" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M105 70 Q115 60 125 70" stroke="#F6E05E" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Decorative element: A small, simple tea cup -->
+  <path d="M160 110 L180 110 L175 130 L165 130 Z" fill="#4A5568"/>
+  <path d="M170 110 L170 100" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Table Surface -->
+  <path d="M40 180 L200 180 L210 200 L30 200 Z" fill="#2C313C"/>
+  
+  <!-- Wine Bottle -->
+  <path d="M105 80 L135 80 L132 160 L108 160 Z" fill="#D4AF37"/>
+  <rect x="115" y="70" width="10" height="10" fill="#D4AF37"/>
+  
+  <!-- Wine Glass 1 -->
+  <path d="M60 120 L90 120 L85 160 L65 160 Z" fill="#FFD700" opacity="0.8"/>
+  <rect x="72" y="160" width="6" height="20" fill="#D4AF37"/>
+  <ellipse cx="75" cy="180" rx="15" ry="4" fill="#D4AF37"/>
+  
+  <!-- Wine Glass 2 -->
+  <path d="M150 120 L180 120 L175 160 L155 160 Z" fill="#FFD700" opacity="0.8"/>
+  <rect x="162" y="160" width="6" height="20" fill="#D4AF37"/>
+  <ellipse cx="165" cy="180" rx="15" ry="4" fill="#D4AF37"/>
+  
+  <!-- Decorative elements (Wedding/Celebration context) -->
+  <circle cx="120" cy="120" r="50" fill="none" stroke="#D4AF37" stroke-width="2" stroke-dasharray="4 4" opacity="0.3"/>
+  
+  <!-- Liquid in glasses -->
+  <path d="M62 125 L88 125 L86 155 L64 155 Z" fill="#E67E22"/>
+  <path d="M152 125 L178 125 L176 155 L154 155 Z" fill="#E67E22"/>
+</svg>

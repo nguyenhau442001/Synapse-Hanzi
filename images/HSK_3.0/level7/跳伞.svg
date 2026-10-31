@@ -1,0 +1,18 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 120)">
+    <!-- Parachute Canopy -->
+    <path d="M-50 -40 C -50 -80, 50 -80, 50 -40 L 50 -30 C 50 -10, -50 -10, -50 -30 Z" fill="#FFB800"/>
+    <!-- Parachute Lines -->
+    <line x1="-45" y1="-35" x2="-20" y2="20" stroke="#E0E0E0" stroke-width="2"/>
+    <line x1="-15" y1="-38" x2="-10" y2="20" stroke="#E0E0E0" stroke-width="2"/>
+    <line x1="15" y1="-38" x2="10" y2="20" stroke="#E0E0E0" stroke-width="2"/>
+    <line x1="45" y1="-35" x2="20" y2="20" stroke="#E0E0E0" stroke-width="2"/>
+    <!-- Skydiver Figure -->
+    <g transform="translate(0, 40)">
+      <circle cx="0" cy="-15" r="8" fill="#FFFFFF"/>
+      <path d="M-12 0 L 12 0 L 8 25 L -8 25 Z" fill="#FFFFFF"/>
+      <path d="M-12 0 L -18 15 M 12 0 L 18 15 M -8 25 L -12 40 M 8 25 L 12 40" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

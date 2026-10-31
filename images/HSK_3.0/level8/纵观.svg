@@ -1,0 +1,56 @@
+<svg width="240" height="240" rx="24" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 115)">
+    <!-- Telescope Body (representing overview, looking through time/space) -->
+    <!-- Main outer cone -->
+    <path d="M-85,-25 L65,-45 L75,-25 L-75,-5 Z" fill="#3A4454"/>
+    <path d="M-75,-5 L75,-25 L85,-5 L-65,15 Z" fill="#4E5D73"/>
+    <path d="M-65,15 L85,-5 L90,15 L-55,35 Z" fill="#637592"/>
+
+    <!-- Segment rings -->
+    <rect x="-76" y="-7" width="4" height="24" rx="1" fill="#FFA800"/>
+    <rect x="-10" y="-23" width="4" height="24" rx="1" fill="#FFA800"/>
+    <rect x="55" y="-35" width="4" height="24" rx="1" fill="#FFA800"/>
+
+    <!-- Eyepiece -->
+    <path d="M-95,-35 L-75,-25 L-75,-5 L-95,-15 Z" fill="#2A323D"/>
+    <rect x="-100" y="-30" width="8" height="20" rx="2" fill="#FFA800"/>
+    <rect x="-104" y="-27" width="4" height="14" rx="1" fill="#E09400"/>
+
+    <!-- Objective lens front -->
+    <ellipse cx="87" cy="5" rx="5" ry="10" fill="#22D3EE" opacity="0.8"/>
+    <ellipse cx="87" cy="5" rx="3" ry="7" fill="#E0F2FE" opacity="0.6"/>
+
+    <!-- Mount / Tripod Head -->
+    <path d="M-5,35 L5,35 L10,50 L-10,50 Z" fill="#2A323D"/>
+    <circle cx="0" cy="42" r="6" fill="#FFA800"/>
+
+    <!-- Tripod Legs -->
+    <path d="M-3,48 L-35,100 L-28,103 L1,48 Z" fill="#3A4454"/>
+    <path d="M3,48 L35,100 L28,103 L-1,48 Z" fill="#2A323D"/>
+    <path d="M0,48 L2,110 L8,110 L2,48 Z" fill="#4E5D73"/>
+
+    <!-- Ground line -->
+    <line x1="-50" y1="105" x2="50" y2="105" stroke="#2A323D" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Panoramic Arc / Timeline Sweep (Visualizing "nhìn bao quát suốt chiều dài") -->
+    <path d="M-80,-55 C-30,-80 30,-80 80,-55" fill="none" stroke="#FFA800" stroke-width="2.5" stroke-dasharray="4,4" opacity="0.8"/>
+    
+    <!-- Historical Milestone Nodes along the arc -->
+    <circle cx="-50" cy="-68" r="4" fill="#22D3EE"/>
+    <circle cx="0" cy="-73" r="5" fill="#FFA800"/>
+    <circle cx="50" cy="-68" r="4" fill="#22D3EE"/>
+    
+    <!-- Vision beam / sweep effect -->
+    <polygon points="90,5 130,-45 130,55" fill="url(#beamGrad)" opacity="0.15"/>
+  </g>
+
+  <!-- Gradient for vision cone -->
+  <defs>
+    <linearGradient id="beamGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#FFA800"/>
+    </linearGradient>
+  </defs>
+</svg>

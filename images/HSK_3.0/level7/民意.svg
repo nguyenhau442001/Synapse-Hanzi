@@ -1,0 +1,54 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Central Visual Representation for "民意" (Public Will/Opinion): 
+       A group of diverse stylized people figures gathered together, 
+       with their speech bubbles/thoughts merging into a central golden core of collective voice. -->
+  <g transform="translate(0, 0)">
+    <!-- Connection lines/base representing community foundation -->
+    <path d="M 60 170 L 180 170" stroke="#2D3748" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+    <!-- Left Person -->
+    <g transform="translate(65, 110)">
+      <!-- Body -->
+      <path d="M 0 50 C 0 35 15 30 25 30 C 35 30 50 35 50 50 Z" fill="#4A5568"/>
+      <!-- Head -->
+      <circle cx="25" cy="12" r="12" fill="#E2E8F0"/>
+    </g>
+
+    <!-- Right Person -->
+    <g transform="translate(125, 110)">
+      <!-- Body -->
+      <path d="M 0 50 C 0 35 15 30 25 30 C 35 30 50 35 50 50 Z" fill="#4A5568"/>
+      <!-- Head -->
+      <circle cx="25" cy="12" r="12" fill="#E2E8F0"/>
+    </g>
+
+    <!-- Center/Front Main Person (Focus of Public Will) -->
+    <g transform="translate(95, 95)">
+      <!-- Body -->
+      <path d="M -5 65 C -5 45 15 40 25 40 C 35 40 55 45 55 65 Z" fill="#3182CE"/>
+      <!-- Head -->
+      <circle cx="25" cy="16" r="15" fill="#F7FAFC"/>
+    </g>
+
+    <!-- Unified Voice / Collective Will Bubble & Core Symbol (Golden Accent) -->
+    <g transform="translate(120, 48)">
+      <!-- Outer Speech Bubble / Consensus Form -->
+      <path d="M -25 -20 C -25 -32 -10 -35 0 -35 C 10 -35 25 -32 25 -20 C 25 -10 10 -5 0 -5 C -10 -5 -25 -10 -25 -20 Z" fill="#2D3748"/>
+      <path d="M -8 2 L 0 12 L 8 2 Z" fill="#2D3748"/>
+      
+      <!-- Glowing Golden Core representing the unified public opinion / will -->
+      <circle cx="0" cy="-20" r="10" fill="#D69E2E"/>
+      <circle cx="0" cy="-20" r="5" fill="#FEEBC8"/>
+    </g>
+
+    <!-- Secondary floating opinion nodes representing broad consensus -->
+    <circle cx="65" cy="65" r="5" fill="#D69E2E" opacity="0.8"/>
+    <path d="M 65 72 L 67 78 L 62 76 Z" fill="#D69E2E" opacity="0.8"/>
+
+    <circle cx="175" cy="65" r="5" fill="#D69E2E" opacity="0.8"/>
+    <path d="M 175 72 L 173 78 L 178 76 Z" fill="#D69E2E" opacity="0.8"/>
+  </g>
+</svg>

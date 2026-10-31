@@ -1,0 +1,40 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Atmospheric entry trail / glow behind meteorite -->
+  <path d="M70 50 L160 140" stroke="#FF5722" stroke-width="24" stroke-linecap="round" opacity="0.15"/>
+  <path d="M80 60 L150 130" stroke="#FF9800" stroke-width="12" stroke-linecap="round" opacity="0.3"/>
+  
+  <!-- Sparks / cosmic debris -->
+  <circle cx="165" cy="145" r="3" fill="#FFC107"/>
+  <circle cx="180" cy="130" r="2" fill="#FF5722"/>
+  <circle cx="140" cy="165" r="2.5" fill="#FF9800"/>
+  <circle cx="130" cy="175" r="1.5" fill="#FFC107"/>
+  <circle cx="195" cy="115" r="2" fill="#FFC107"/>
+  
+  <!-- Central Meteorite (陨石) - Irregular, rocky body with fusion crust and impact craters -->
+  <g transform="translate(10, 10)">
+    <!-- Outer dark fusion crust -->
+    <path d="M80 75 C95 65, 115 68, 130 80 C145 92, 155 110, 150 128 C145 146, 125 158, 105 160 C85 162, 68 152, 58 135 C48 118, 52 95, 65 82 Z" fill="#2D323C" stroke="#3D4452" stroke-width="2.5"/>
+    
+    <!-- Glowing hot fissures / atmospheric heat accents -->
+    <path d="M72 105 C78 115, 88 120, 95 115" fill="none" stroke="#FF5722" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M115 90 C122 95, 128 102, 125 112" fill="none" stroke="#FF9800" stroke-width="2" stroke-linecap="round"/>
+    <path d="M90 142 C100 145, 110 140, 118 132" fill="none" stroke="#FF5722" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Craters and textural indentations -->
+    <ellipse cx="95" cy="100" rx="14" ry="10" transform="rotate(-25 95 100)" fill="#1E222A" stroke="#3D4452" stroke-width="1.5"/>
+    <ellipse cx="92" cy="103" rx="9" ry="6" transform="rotate(-25 92 103)" fill="#161920"/>
+    
+    <ellipse cx="125" cy="125" rx="12" ry="9" transform="rotate(15 125 125)" fill="#1E222A" stroke="#3D4452" stroke-width="1.5"/>
+    <ellipse cx="123" cy="127" rx="7" ry="5" transform="rotate(15 123 127)" fill="#161920"/>
+
+    <ellipse cx="85" cy="132" rx="8" ry="6" transform="rotate(-40 85 132)" fill="#1E222A" stroke="#3D4452" stroke-width="1.2"/>
+    
+    <!-- Metallic crystal glints (representing extraterrestrial composition) -->
+    <polygon points="112,78 115,84 110,83" fill="#FFC107"/>
+    <polygon points="138,108 141,112 136,113" fill="#FFC107"/>
+    <polygon points="68,118 71,122 66,120" fill="#FFC107"/>
+  </g>
+</svg>

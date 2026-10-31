@@ -1,0 +1,44 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements: Mountain range and railway context (representing the contextual sentence) -->
+  <path d="M20 180 L60 130 L100 160 L150 110 L220 180 Z" fill="#222730"/>
+  <path d="M10 180 L50 145 L90 170 L140 125 L230 180 Z" fill="#282D38"/>
+  
+  <!-- Railway track cutting through representing long construction -->
+  <path d="M10 185 Q 120 160 230 190" stroke="#3A4250" stroke-width="4" fill="none"/>
+  <path d="M10 188 Q 120 163 230 193" stroke="#F5A623" stroke-width="2" stroke-dasharray="4,6" fill="none"/>
+
+  <!-- Large central clock/time elapsed representation combined with dynamic worker action (Verb/Action rule) -->
+  <!-- Outer subtle time-lapse arc/motion lines -->
+  <circle cx="120" cy="115" r="55" fill="none" stroke="#2F3642" stroke-width="6"/>
+  <path d="M 120 60 A 55 55 0 0 1 175 115" fill="none" stroke="#F5A623" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 165 75 L 175 65" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 140 60 L 145 48" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Clock hands pointing to a span of time -->
+  <circle cx="120" cy="115" r="45" fill="#1E232D"/>
+  <line x1="120" y1="115" x2="120" y2="85" stroke="#8C96A5" stroke-width="3" stroke-linecap="round"/>
+  <line x1="120" y1="115" x2="145" y2="125" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="120" cy="115" r="4" fill="#F5A623"/>
+
+  <!-- Dynamic human character action (Engineer actively working/building over time with motion/hammer action) -->
+  <!-- Body/Torso -->
+  <path d="M 95 195 L 105 160 L 130 160 L 140 195 Z" fill="#E67E22"/>
+  <!-- Head & Hardhat -->
+  <circle cx="118" cy="140" r="11" fill="#FAD7A0"/>
+  <path d="M 103 135 Q 118 126 133 135 Z" fill="#F1C40F"/>
+  <rect x="109" y="132" width="18" height="3" rx="1.5" fill="#F39C12"/>
+  
+  <!-- Dynamic arms and tool (Hammering/Constructing action) -->
+  <path d="M 105 165 L 85 145" stroke="#E67E22" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 130 165 L 145 135" stroke="#E67E22" stroke-width="6" stroke-linecap="round"/>
+  <!-- Hammer -->
+  <path d="M 145 135 L 155 120" stroke="#7F8C8D" stroke-width="4" stroke-linecap="round"/>
+  <rect x="150" y="112" width="14" height="8" rx="2" fill="#BDC3C7"/>
+
+  <!-- Motion lines indicating persistent effort over time -->
+  <path d="M 75 135 Q 85 130 95 140" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 70 145 Q 80 140 88 150" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+</svg>

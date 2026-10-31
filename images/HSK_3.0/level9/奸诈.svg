@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(20, 20)">
+    <!-- Subtle background elements: falling contract papers -->
+    <g opacity="0.15">
+      <rect x="20" y="20" width="36" height="48" rx="3" fill="#64748B" transform="rotate(-15 38 44)"/>
+      <line x1="26" y1="32" x2="44" y2="32" stroke="#94A3B8" stroke-width="2" transform="rotate(-15 38 44)"/>
+      <line x1="26" y1="40" x2="40" y2="40" stroke="#94A3B8" stroke-width="2" transform="rotate(-15 38 44)"/>
+      
+      <rect x="144" y="130" width="36" height="48" rx="3" fill="#64748B" transform="rotate(20 162 154)"/>
+      <line x1="150" y1="142" x2="168" y2="142" stroke="#94A3B8" stroke-width="2" transform="rotate(20 162 154)"/>
+      <line x1="150" y1="150" x2="164" y2="150" stroke="#94A3B8" stroke-width="2" transform="rotate(20 162 154)"/>
+    </g>
+
+    <!-- Main Character / Person representing the crafty con artist (奸诈之人) -->
+    <!-- Torso and Suit -->
+    <path d="M70 180 L70 145 C70 130 82 120 97 120 L103 120 C118 120 130 130 130 145 L130 180 Z" fill="#0F172A"/>
+    
+    <!-- Suit lapels & shirt -->
+    <polygon points="100,120 120,120 110,150" fill="#F8FAFC"/>
+    <polygon points="85,125 100,120 95,150" fill="#334155"/>
+    <polygon points="135,125 120,120 125,150" fill="#334155"/>
+    <polygon points="107,135 113,135 110,165" fill="#EF4444"/> <!-- Red tie -->
+
+    <!-- Head and Neck -->
+    <path d="M96 110 L104 110 L104 125 L96 125 Z" fill="#E2E8F0"/>
+    <path d="M75 75 C75 52 90 40 100 40 C110 40 125 52 125 75 C125 98 110 112 100 112 C90 112 75 98 75 75 Z" fill="#CBD5E1"/>
+
+    <!-- Slick Hair (Comb-over, modern sharp style) -->
+    <path d="M78 68 C78 50 90 42 103 42 C116 42 122 55 122 68 C122 60 115 45 102 45 C88 45 78 58 78 68 Z" fill="#0F172A"/>
+    <path d="M76 72 C74 60 82 48 95 45 C86 48 78 58 76 72 Z" fill="#0F172A"/>
+
+    <!-- Sly/Cunning Facial Features -->
+    <!-- Slanted, half-closed crafty eyes with smug expression -->
+    <path d="M84 72 C88 75 94 75 98 71" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M102 71 C106 75 112 75 116 72" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    
+    <!-- Smirking, crooked asymmetric mouth -->
+    <path d="M88 92 C94 97 106 91 112 87" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M110 86 L113 89" stroke="#0F172A" stroke-width="2" stroke-linecap="round"/> <!-- Smirk crease -->
+
+    <!-- Raised cunning eyebrow -->
+    <path d="M83 66 C87 63 93 64 97 67" stroke="#0F172A" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M103 67 C107 64 113 63 117 66" stroke="#0F172A" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Hand holding a concealed/deceptive false contract (Trap / 设局) -->
+    <!-- Arm reaching out to hold the glowing deceptive contract -->
+    <path d="M125 135 C135 140 145 145 155 140" stroke="#0F172A" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <circle cx="155" cy="138" r="7" fill="#CBD5E1"/> <!-- Hand -->
+
+    <!-- Deceptive Contract floating / held forward -->
+    <g transform="translate(130, 80) rotate(12)">
+      <!-- Document Base -->
+      <rect x="0" y="0" width="55" height="70" rx="4" fill="#F8FAFC" stroke="#F59E0B" stroke-width="2"/>
+      
+      <!-- Fake Gold Seal / Stamp (Symbol of deceitful official appearance) -->
+      <circle cx="42" cy="55" r="9" fill="#EF4444" opacity="0.9"/>
+      <circle cx="42" cy="55" r="6" fill="none" stroke="#F8FAFC" stroke-width="1.5"/>
+      
+      <!-- Fake text lines on contract -->
+      <line x1="8" y1="12" x2="35" y2="12" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+      <line x1="8" y1="22" x2="45" y2="22" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+      <line x1="8" y1="32" x2="30" y2="32" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+      <line x1="8" y1="42" x2="40" y2="42" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Ominous / Cunning Aura Accents (Sharp glowing orange/gold motif for duplicity) -->
+    <path d="M40 90 L50 95 L40 100" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <circle cx="170" cy="60" r="3" fill="#F59E0B"/>
+    <path d="M165 40 L170 50 L175 40" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

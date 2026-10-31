@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Digital Broadcast / Announcement Object (Representing "宣称" as a formal public declaration/claim) -->
+  <!-- Background glowing aura representing broadcast wave -->
+  <circle cx="120" cy="115" r="55" fill="#242B38" opacity="0.8"/>
+  <circle cx="120" cy="115" r="75" fill="#242B38" opacity="0.4"/>
+  
+  <!-- Modern Megaphone / Speaker Body (Iconic physical object for official declaration) -->
+  <!-- Sound Waves (Emitting outward to the right) -->
+  <path d="M165 95C171 101 175 108 175 115C175 122 171 129 165 135" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M182 82C191 92 196 103 196 115C196 127 191 138 182 148" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" stroke-opacity="0.6" fill="none"/>
+  <path d="M199 70C211 84 217 99 217 115C217 131 211 146 199 160" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" stroke-opacity="0.3" fill="none"/>
+
+  <!-- Speaker Cone & Handle -->
+  <!-- Handle -->
+  <path d="M95 145L80 175C78 179 81 183 85 183H95C99 183 102 179 100 175L90 145" fill="#4B5563"/>
+  
+  <!-- Main Cone Back -->
+  <path d="M75 95L110 80V150L75 135V95Z" fill="#374151"/>
+  
+  <!-- Main Cone Front (Accent Orange/Gold for focus) -->
+  <path d="M110 80L160 60V170L110 150V80Z" fill="#F59E0B"/>
+  
+  <!-- Inner dark cutout of megaphone -->
+  <path d="M120 90L150 78V152L120 140V90Z" fill="#D97706"/>
+  
+  <!-- Speaker Base Grip -->
+  <rect x="83" y="180" width="20" height="8" rx="4" fill="#6B7280"/>
+
+  <!-- Decorative Official Document / Verified Seal (representing the "Claim/Declaration" attribute) -->
+  <rect x="55" y="65" width="28" height="36" rx="4" fill="#E5E7EB"/>
+  <line x1="61" y1="75" x2="77" y2="75" stroke="#9CA3AF" stroke-width="3" stroke-linecap="round"/>
+  <line x1="61" y1="83" x2="74" y2="83" stroke="#9CA3AF" stroke-width="3" stroke-linecap="round"/>
+  <line x1="61" y1="91" x2="69" y2="91" stroke="#9CA3AF" stroke-width="3" stroke-linecap="round"/>
+  <!-- Checkmark seal on document -->
+  <circle cx="73" cy="91" r="8" fill="#10B981"/>
+  <path d="M70 91L72 93L77 88" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

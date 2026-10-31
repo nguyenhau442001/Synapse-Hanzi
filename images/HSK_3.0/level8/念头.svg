@@ -1,0 +1,33 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 112)">
+    <!-- Outer ambient glowing spark representing a sudden mental flash -->
+    <circle cx="0" cy="-10" r="64" fill="#F39C12" opacity="0.08" />
+    <circle cx="0" cy="-10" r="50" fill="#F39C12" opacity="0.12" />
+
+    <!-- Head silhouette representing the mind/inner thoughts -->
+    <path d="M-22,38 C-22,22 -32,10 -35,-4 C-38,-20 -28,-36 -8,-44 C2,-48 18,-46 26,-36 C34,-26 35,-12 30,2 C25,16 26,30 26,38 C26,46 -22,46 -22,38 Z" fill="#2C3240" />
+
+    <!-- Glowing bulb / idea spark representing '念头' (thought/idea) -->
+    <!-- Lightbulb glowing rays -->
+    <line x1="0" y1="-74" x2="0" y2="-62" stroke="#F39C12" stroke-width="3" stroke-linecap="round" />
+    <line x1="-24" y1="-60" x2="-16" y2="-52" stroke="#F39C12" stroke-width="3" stroke-linecap="round" />
+    <line x1="24" y1="-60" x2="16" y2="-52" stroke="#F39C12" stroke-width="3" stroke-linecap="round" />
+    <line x1="-34" y1="-38" x2="-22" y2="-38" stroke="#F39C12" stroke-width="3" stroke-linecap="round" />
+    <line x1="34" y1="-38" x2="22" y2="-38" stroke="#F39C12" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Lightbulb glass -->
+    <path d="M-14,-38 C-14,-52 14,-52 14,-38 C14,-28 7,-24 7,-16 L-7,-16 C-7,-24 -14,-28 -14,-38 Z" fill="#F39C12" />
+    
+    <!-- Lightbulb base / filament elements -->
+    <rect x="-5" y="-16" width="10" height="4" rx="1" fill="#718096" />
+    <rect x="-4" y="-11" width="8" height="3" rx="1" fill="#4A5568" />
+    
+    <!-- Inner glowing core -->
+    <circle cx="0" cy="-38" r="5" fill="#FDE68A" />
+
+    <!-- Subtle flash/spark element accentuating the 'flashing through' context -->
+    <path d="M 44,-20 L 58,-28 L 52,-14 L 66,-10 L 52,-4 L 44,6 L 46,-10 Z" fill="#F39C12" opacity="0.9"/>
+  </g>
+</svg>

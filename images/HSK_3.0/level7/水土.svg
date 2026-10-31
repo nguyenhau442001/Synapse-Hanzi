@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Soil/Earth Layer -->
+  <path d="M40 180 C 80 160, 160 160, 200 180 L 200 210 C 160 190, 80 190, 40 210 Z" fill="#8B5A2B"/>
+  <path d="M40 180 C 80 170, 160 170, 200 180" fill="#A06A35"/>
+  
+  <!-- Water Source (Spring/Pond) -->
+  <path d="M120 185 C 100 185, 90 195, 90 205 C 90 215, 100 220, 120 220 C 140 220, 150 215, 150 205 C 150 195, 140 185, 120 185 Z" fill="#3498DB"/>
+  <ellipse cx="120" cy="195" rx="15" ry="5" fill="#5DADE2" opacity="0.6"/>
+  
+  <!-- Plant Life (Representing local environment/soil health) -->
+  <path d="M120 180 L 120 140 M 120 160 L 105 145 M 120 160 L 135 145" stroke="#27AE60" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="105" cy="145" r="5" fill="#27AE60"/>
+  <circle cx="135" cy="145" r="5" fill="#27AE60"/>
+  <circle cx="120" cy="140" r="5" fill="#27AE60"/>
+  
+  <!-- Water droplets falling into the soil -->
+  <path d="M80 80 C 80 90, 85 95, 90 95 C 95 95, 100 90, 100 80 C 100 70, 90 60, 90 60 C 90 60, 80 70, 80 80 Z" fill="#3498DB"/>
+  <path d="M150 100 C 150 110, 155 115, 160 115 C 165 115, 170 110, 170 100 C 170 90, 160 80, 160 80 C 160 80, 150 90, 150 100 Z" fill="#3498DB"/>
+  
+  <!-- Accent highlight for "Shuitu" concept -->
+  <circle cx="120" cy="120" r="80" stroke="#F39C12" stroke-width="2" stroke-dasharray="10 10" fill="none" opacity="0.3"/>
+</svg>

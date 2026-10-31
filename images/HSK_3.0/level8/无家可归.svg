@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Rubble/Debris base -->
+  <path d="M40 200 L80 160 L110 185 L140 150 L180 190 L200 200 Z" fill="#3A3F4B"/>
+  <path d="M50 210 L70 190 L90 210 Z" fill="#4B5162"/>
+  <path d="M150 210 L170 190 L190 210 Z" fill="#4B5162"/>
+  
+  <!-- Silhouette of a person sitting, hunched, representing homelessness -->
+  <g transform="translate(105, 130)">
+    <circle cx="15" cy="15" r="12" fill="#FFB84D"/>
+    <path d="M5 30 C5 25, 25 25, 25 30 L22 60 C22 70, 8 70, 8 60 Z" fill="#FFB84D"/>
+    <path d="M10 60 L5 85 L15 85 L20 60 Z" fill="#FFB84D"/>
+  </g>
+  
+  <!-- Broken house frame silhouette in background -->
+  <path d="M60 140 L120 90 L180 140 M90 140 L90 115 M150 140 L150 115" stroke="#4B5162" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Distant cold moon/star -->
+  <circle cx="200" cy="40" r="10" fill="#E0E0E0" opacity="0.3"/>
+</svg>

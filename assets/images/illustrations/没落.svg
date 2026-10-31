@@ -1,0 +1,47 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background elements: setting sun / fading atmosphere -->
+  <circle cx="120" cy="110" r="40" fill="#2E2522" opacity="0.6"/>
+  <circle cx="120" cy="110" r="28" fill="#D97736" opacity="0.2"/>
+
+  <!-- The Mining Town (Physical Object / Place representing 没落) -->
+  <!-- Ground foundation -->
+  <path d="M 40 180 L 200 180 L 210 195 L 30 195 Z" fill="#2A2F3B"/>
+
+  <!-- Dilapidated Mining Headframe / Derelict Industrial Structure -->
+  <!-- Main wooden/metal framework leaning slightly to show decay -->
+  <path d="M 95 180 L 105 100 L 135 100 L 145 180 Z" fill="#3D4451"/>
+  <!-- Structural trusses (ruined/broken) -->
+  <line x1="100" y1="130" x2="130" y2="150" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+  <line x1="105" y1="110" x2="135" y2="125" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+  <line x1="115" y1="160" x2="138" y2="175" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Broken pulley wheel at the top -->
+  <circle cx="120" cy="92" r="10" fill="none" stroke="#5C6577" stroke-width="4"/>
+  <circle cx="120" cy="92" r="3" fill="#5C6577"/>
+  <line x1="120" y1="82" x2="120" y2="102" stroke="#1A1D24" stroke-width="2"/>
+
+  <!-- Abandoned Mine Shaft House / Factory Building with broken roof -->
+  <path d="M 130 140 L 130 180 L 185 180 L 185 150 L 160 135 Z" fill="#353B48"/>
+  <!-- Collapsed roof section -->
+  <path d="M 125 138 L 157 132 L 165 142 Z" fill="#22262F"/>
+
+  <!-- Empty, dark mine entrance (darkness/abandonment) -->
+  <path d="M 60 180 L 60 155 C 60 145 80 145 80 155 L 80 180 Z" fill="#111317"/>
+
+  <!-- Overgrown / neglected elements (cracks, weeds) -->
+  <path d="M 50 185 Q 53 175 58 185" stroke="#4A6B5B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 68 188 Q 72 178 77 188" stroke="#4A6B5B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 170 185 Q 173 176 178 185" stroke="#4A6B5B" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Rusted / decaying pipe angled down -->
+  <path d="M 85 140 L 65 150" stroke="#8C4A32" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 65 150 L 55 165" stroke="#703A26" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Fading sunset rays / twilight atmosphere -->
+  <line x1="120" y1="70" x2="120" y2="45" stroke="#D97736" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <line x1="90" y1="75" x2="72" y2="57" stroke="#D97736" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+  <line x1="150" y1="75" x2="168" y2="57" stroke="#D97736" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+</svg>

@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Yellow River waves -->
+  <path d="M0 180 C 60 150, 120 210, 240 170 L 240 240 L 0 240 Z" fill="#2C3E50"/>
+  <path d="M0 190 C 80 160, 160 220, 240 180 L 240 240 L 0 240 Z" fill="#34495E"/>
+  
+  <!-- Warrior silhouette -->
+  <g transform="translate(120, 120)">
+    <!-- Body -->
+    <path d="M-20 80 L-25 20 L0 0 L25 20 L20 80 Z" fill="#FFB74D"/>
+    <!-- Head -->
+    <circle cx="0" cy="-10" r="15" fill="#FFB74D"/>
+    <!-- Cape/Cloak blowing in wind -->
+    <path d="M-20 20 L-60 40 L-50 80 L-20 60 Z" fill="#E67E22"/>
+    <!-- Raised arm -->
+    <path d="M15 20 L40 -10 L50 0 L25 30 Z" fill="#FFB74D"/>
+    <!-- Sword/Banner pole -->
+    <rect x="42" y="-40" width="4" height="60" rx="2" fill="#F1C40F"/>
+    <path d="M44 -35 L70 -25 L44 -15 Z" fill="#E74C3C"/>
+  </g>
+  
+  <!-- Stylized sun/horizon glow -->
+  <circle cx="120" cy="80" r="30" fill="none" stroke="#F39C12" stroke-width="2" opacity="0.3"/>
+  <circle cx="120" cy="80" r="40" fill="none" stroke="#F39C12" stroke-width="1" opacity="0.2"/>
+</svg>

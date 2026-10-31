@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "幸好" (may mà / provision in extreme cold/survival context) -->
+  <!-- Sleek, modern flat vector style combining a high-altitude mountaineering tent and emergency survival gear, representing the object that brings relief/fortune in a crisis. -->
+
+  <!-- Atmospheric background peaks (subtle dark mountain silhouettes) -->
+  <path d="M 20 180 L 70 120 L 120 190 L 170 110 L 220 190 Z" fill="#222733"/>
+  
+  <!-- Snow particles / Blizzard backdrop (subtle muted white dots/lines) -->
+  <g fill="#4A5568" opacity="0.6">
+    <circle cx="45" cy="70" r="1.5"/>
+    <circle cx="90" cy="50" r="1"/>
+    <circle cx="160" cy="65" r="1.5"/>
+    <circle cx="205" cy="45" r="1"/>
+    <circle cx="30" cy="110" r="1"/>
+    <circle cx="210" cy="120" r="1.5"/>
+    <path d="M 120 70 L 117 76" stroke="#4A5568" stroke-width="1" stroke-linecap="round"/>
+    <path d="M 180 90 L 177 96" stroke="#4A5568" stroke-width="1" stroke-linecap="round"/>
+    <path d="M 60 40 L 57 46" stroke="#4A5568" stroke-width="1" stroke-linecap="round"/>
+  </g>
+
+  <!-- Central Physical Object: The Emergency Tent (防寒帐篷) & Survival Pack (应急口粮) -->
+  <g transform="translate(0, 10)">
+    <!-- Snow mound / Ground -->
+    <path d="M 30 170 Q 120 150 210 170 Q 220 195 210 200 Q 120 205 30 200 Q 20 195 30 170 Z" fill="#2E3748"/>
+    <path d="M 50 174 Q 120 160 190 174 C 185 182 55 182 50 174 Z" fill="#404B60"/>
+
+    <!-- High-visibility Orange/Gold Tent (Core Icon for '幸好' relief/protection) -->
+    <path d="M 120 85 L 175 165 C 175 165 140 175 120 175 C 100 175 65 165 65 165 Z" fill="#E67E22"/>
+    <!-- Tent Facet (Shadow side) -->
+    <path d="M 120 85 L 175 165 L 120 175 Z" fill="#D35400"/>
+    
+    <!-- Tent Entrance Flap (Warm interior glow hinting at safety) -->
+    <path d="M 120 125 L 138 171 C 129 173 120 173 120 173 Z" fill="#F1C40F"/>
+    <path d="M 120 125 L 102 171 C 111 173 120 173 120 173 Z" fill="#F39C12"/>
+
+    <!-- Tent Poles Structure / Reinforcement Accent -->
+    <path d="M 120 85 L 120 175" stroke="#2C3E50" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 65 165 L 120 85 L 175 165" fill="none" stroke="#FDFEFE" stroke-width="2" stroke-linejoin="round" opacity="0.9"/>
+
+    <!-- Emergency Rations / Supplies Box (应急高热量口粮 - physical object) -->
+    <g transform="translate(150, 155)">
+      <rect x="0" y="0" width="22" height="14" rx="2" fill="#E74C3C"/>
+      <rect x="3" y="3" width="16" height="3" fill="#FDFEFE" opacity="0.8"/>
+      <rect x="3" y="8" width="16" height="3" fill="#FDFEFE" opacity="0.8"/>
+    </g>
+    <!-- Second ration pack stacked -->
+    <g transform="translate(68, 158)">
+      <rect x="0" y="0" width="20" height="12" rx="2" fill="#3498DB"/>
+      <circle cx="10" cy="6" r="3" fill="#FDFEFE" opacity="0.8"/>
+    </g>
+  </g>
+
+  <!-- Focus / Relief Aura: Sleek subtle highlight framing the safe object -->
+  <circle cx="120" cy="130" r="65" fill="none" stroke="#F1C40F" stroke-width="1.5" stroke-dasharray="6 8" opacity="0.4"/>
+</svg>

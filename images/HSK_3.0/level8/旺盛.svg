@@ -1,0 +1,65 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glowing background aura representing vitality and energy -->
+  <circle cx="120" cy="120" r="70" fill="#FF8C00" opacity="0.1" />
+  <circle cx="120" cy="120" r="50" fill="#FFA500" opacity="0.15" />
+
+  <!-- Radiating energy sparks / dynamic accents -->
+  <g stroke="#FFA500" stroke-width="3" stroke-linecap="round" opacity="0.8">
+    <line x1="120" y1="35" x2="120" y2="20" />
+    <line x1="120" y1="205" x2="120" y2="220" />
+    <line x1="35" y1="120" x2="20" y2="120" />
+    <line x1="205" y1="120" x2="220" y2="120" />
+    <line x1="60" y1="60" x2="48" y2="48" />
+    <line x1="180" y1="60" x2="192" y2="48" />
+    <line x1="60" y1="180" x2="48" y2="192" />
+    <line x1="180" y1="180" x2="192" y2="192" />
+  </g>
+
+  <!-- Young energetic character core (Upper body, focused and dynamic) -->
+  <!-- Shoulders and Torso -->
+  <path d="M 75 190 C 75 160, 95 145, 120 145 C 145 145, 165 160, 165 190 Z" fill="#2E384D" />
+
+  <!-- Neck -->
+  <rect x="110" y="125" width="20" height="25" fill="#E0AC69" />
+
+  <!-- Head -->
+  <circle cx="120" cy="100" r="28" fill="#E0AC69" />
+
+  <!-- Hair (Stylish modern young researcher cut) -->
+  <path d="M 92 100 C 92 78, 105 70, 120 70 C 135 70, 148 78, 148 100 C 148 105, 146 100, 144 90 C 140 78, 130 75, 120 75 C 110 75, 100 78, 96 90 C 94 100, 92 105, 92 100 Z" fill="#2C3038" />
+  <path d="M 112 73 C 118 70, 128 72, 136 78 C 130 76, 118 76, 112 73 Z" fill="#434955" />
+
+  <!-- Confident, energetic facial expression (Eyes open, bright, slight determined smile) -->
+  <circle cx="110" cy="98" r="3" fill="#1A1D24" />
+  <circle cx="130" cy="98" r="3" fill="#1A1D24" />
+  <path d="M 114 110 Q 120 115, 126 110" fill="none" stroke="#1A1D24" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Energetic upward rising elements (Vibrant plant sprouting vigorously = "旺盛" life force / thriving growth) -->
+  <g transform="translate(120, 135)">
+    <!-- Stem -->
+    <path d="M 0 10 C 0 -10, -5 -30, -15 -45" fill="none" stroke="#2ECC71" stroke-width="4" stroke-linecap="round" />
+    <path d="M -5 -20 C 5 -30, 10 -40, 15 -55" fill="none" stroke="#2ECC71" stroke-width="3.5" stroke-linecap="round" />
+    
+    <!-- Thriving Leaves -->
+    <path d="M -15 -45 C -25 -55, -35 -40, -25 -30 C -20 -25, -15 -35, -15 -45 Z" fill="#2ECC71" />
+    <path d="M 15 -55 C 25 -65, 35 -50, 25 -40 C 20 -35, 15 -45, 15 -55 Z" fill="#2ECC71" />
+    <path d="M -5 -25 C -15 -30, -20 -20, -12 -15 C -8 -12, -5 -18, -5 -25 Z" fill="#2ECC71" />
+    
+    <!-- Center glowing bulb / spark at the peak of growth -->
+    <circle cx="-15" cy="-45" r="4" fill="#FFA500" />
+    <circle cx="15" cy="-55" r="4" fill="#FFA500" />
+  </g>
+
+  <!-- Glowing Spark/Idea Symbol above head (representing boundless energy & intellect) -->
+  <g transform="translate(120, 42)">
+    <circle cx="0" cy="0" r="8" fill="#FFA500" />
+    <path d="M 0 -14 L 0 -18" stroke="#FFA500" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M -10 -10 L -13 -13" stroke="#FFA500" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M 10 -10 L 13 -13" stroke="#FFA500" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M -14 0 L -18 0" stroke="#FFA500" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M 14 0 L 18 0" stroke="#FFA500" stroke-width="2.5" stroke-linecap="round" />
+  </g>
+</svg>

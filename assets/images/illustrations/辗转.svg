@@ -1,0 +1,32 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Bed frame / Mattress -->
+    <path d="M40 135 L200 135 L200 165 L40 165 Z" fill="#2C313C" rx="4"/>
+    <rect x="35" y="125" width="25" height="45" rx="6" fill="#3A4150"/>
+    
+    <!-- Pillow -->
+    <rect x="48" y="102" width="38" height="26" rx="8" fill="#E2E8F0"/>
+    
+    <!-- Blanket / Sheet curve indicating lying down -->
+    <path d="M80 135 Q140 145 200 125 L200 165 L80 165 Z" fill="#3B82F6"/>
+
+    <!-- Person tossing and turning (lying horizontally) -->
+    <!-- Head -->
+    <circle cx="67" cy="115" r="11" fill="#FBBF24"/>
+    
+    <!-- Body / Back arched or shifting -->
+    <path d="M78 112 Q120 100 155 118" stroke="#FBBF24" stroke-width="14" stroke-linecap="round" fill="none"/>
+
+    <!-- Motion / Toss and turn arc indicators (golden/orange accent for insomnia/restlessness) -->
+    <path d="M 60 78 Q 120 58 180 82" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" fill="none" stroke-dasharray="6 6"/>
+    <path d="M 182 75 L 175 83 L 186 86" fill="#F59E0B"/>
+    <path d="M 58 85 L 65 77 L 54 74" fill="#F59E0B"/>
+
+    <!-- Zzz / Sleeplessness symbols -->
+    <path d="M 110 65 L 122 65 L 110 80 L 122 80" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M 130 50 L 140 50 L 130 62 L 140 62" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M 148 38 L 154 38 L 148 46 L 154 46" stroke="#475569" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

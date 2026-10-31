@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Table Surface -->
+    <path d="M 40,160 L 200,160 L 210,185 L 30,185 Z" fill="#2A2F3A" />
+    <rect x="35" y="160" width="170" height="6" rx="3" fill="#3A4250" />
+    
+    <!-- Table Legs -->
+    <rect x="55" y="185" width="12" height="30" rx="3" fill="#1F232B" />
+    <rect x="173" y="185" width="12" height="30" rx="3" fill="#1F232B" />
+
+    <!-- Plate 1 (Left) - Completely Empty -->
+    <g transform="translate(75, 135)">
+      <ellipse cx="0" cy="0" rx="32" ry="12" fill="#363C4A" />
+      <ellipse cx="0" cy="-2" rx="26" ry="9" fill="#14171E" />
+      <ellipse cx="0" cy="-4" rx="20" ry="6" fill="#1A1D24" />
+    </g>
+
+    <!-- Plate 2 (Right) - Completely Empty with subtle shine to show it's clean -->
+    <g transform="translate(165, 135)">
+      <ellipse cx="0" cy="0" rx="32" ry="12" fill="#363C4A" />
+      <ellipse cx="0" cy="-2" rx="26" ry="9" fill="#14171E" />
+      <ellipse cx="0" cy="-4" rx="20" ry="6" fill="#1A1D24" />
+      <!-- Clean highlight streak -->
+      <path d="M -8,-5 Q 0,-7 8,-3" stroke="#4A5568" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+    </g>
+
+    <!-- Crumb / Absolute nothingness indicator: Tiny speck, emphasizing "completely gone" -->
+    <circle cx="120" cy="150" r="1.5" fill="#4A5568" opacity="0.4"/>
+
+    <!-- Sparkles indicating immaculate cleanliness (Adjective/State contrast) -->
+    <g fill="#F59E0B">
+      <!-- Left plate sparkles -->
+      <path d="M 70,110 Q 72,110 72,108 Q 72,110 74,110 Q 72,110 72,112 Q 72,110 70,110 Z" />
+      <path d="M 85,118 Q 86,118 86,117 Q 86,118 87,118 Q 86,118 86,119 Q 86,118 85,118 Z" />
+      
+      <!-- Right plate sparkles -->
+      <path d="M 155,112 Q 157,112 157,110 Q 157,112 159,112 Q 157,112 157,114 Q 157,112 155,112 Z" />
+      <path d="M 175,108 Q 177,108 177,106 Q 177,108 179,108 Q 177,108 177,110 Q 177,108 175,108 Z" />
+      <path d="M 168,122 Q 169,122 169,121 Q 169,122 170,122 Q 169,122 169,123 Q 169,122 168,122 Z" />
+    </g>
+
+    <!-- Floating Motion / Sweep Effect indicating "all gone in one go" -->
+    <path d="M 40,95 Q 120,65 200,95" stroke="#3A4250" stroke-width="2" stroke-dasharray="4,4" fill="none" opacity="0.5"/>
+    
+    <!-- Little swoosh lines representing eating up completely -->
+    <path d="M 95,125 Q 105,115 115,125" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <path d="M 125,125 Q 135,115 145,125" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8"/>
+  </g>
+</svg>

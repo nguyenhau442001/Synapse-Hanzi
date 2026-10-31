@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Railway track -->
+  <path d="M40 160 L200 160" stroke="#4A5568" stroke-width="8" stroke-linecap="round"/>
+  <path d="M50 175 L50 145 M80 175 L80 145 M110 175 L110 145 M140 175 L140 145 M170 175 L170 145 M200 175 L200 145" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Flooded area/Debris -->
+  <path d="M40 165 Q70 185 100 165 Q130 145 160 165 Q190 185 200 165" fill="#2D3748" opacity="0.8"/>
+  <path d="M60 180 L75 165 M90 185 L105 170" stroke="#718096" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- High speed train (Stopped) -->
+  <g fill="#F6AD55">
+    <path d="M120 110 L180 110 L195 130 L120 130 Z" />
+    <path d="M120 110 L100 120 L120 130 Z" />
+    <rect x="130" y="115" width="15" height="10" rx="2" fill="#1A1D24"/>
+    <rect x="155" y="115" width="15" height="10" rx="2" fill="#1A1D24"/>
+  </g>
+  
+  <!-- Warning/Delay indicator (Static) -->
+  <circle cx="180" cy="90" r="12" fill="#E53E3E"/>
+  <path d="M180 85 L180 92 M180 95 L180 96" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+</svg>

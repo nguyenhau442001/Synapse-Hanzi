@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Silhouette of a person representing the "life" mentioned in the context -->
+  <g transform="translate(120, 120)">
+    <!-- The person's body -->
+    <path d="M-20,80 Q-20,40 0,20 Q20,40 20,80 Z" fill="#4A5568"/>
+    <circle cx="0" cy="-10" r="25" fill="#4A5568"/>
+    
+    <!-- The "hollow" or "lost" aspect: a void in the chest area -->
+    <circle cx="0" cy="25" r="12" fill="#1A1D24"/>
+    
+    <!-- The "pursuit of vanity": golden coins/trophies floating away, out of reach -->
+    <circle cx="60" cy="-40" r="10" fill="#D69E2E"/>
+    <rect x="55" y="-30" width="10" height="15" fill="#B7791F"/>
+    
+    <circle cx="70" cy="-10" r="8" fill="#D69E2E"/>
+    <rect x="66" y="-2" width="8" height="12" fill="#B7791F"/>
+    
+    <!-- The "lost conscience/light": a dim, fading spark inside the chest void -->
+    <circle cx="0" cy="25" r="4" fill="#2D3748" opacity="0.5"/>
+    
+    <!-- Visual representation of the "tragic" state: slumped posture, looking down -->
+    <path d="M-10,5 L-5,10 M10,5 L5,10" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

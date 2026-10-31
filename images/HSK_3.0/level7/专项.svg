@@ -1,0 +1,41 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "专项" (Special fund/Category item) -->
+  <g transform="translate(0, 0)">
+    <!-- Main vault/safe container representing a designated financial pool -->
+    <rect x="55" y="70" width="130" height="100" rx="14" fill="#242B38" stroke="#323D4E" stroke-width="3"/>
+    
+    <!-- Vault door detail -->
+    <rect x="65" y="80" width="110" height="80" rx="10" fill="#1E2430" stroke="#2B3544" stroke-width="2"/>
+
+    <!-- Vault Dial / Lock -->
+    <circle cx="120" cy="120" r="18" fill="#F59E0B" opacity="0.15"/>
+    <circle cx="120" cy="120" r="14" fill="#242B38" stroke="#F59E0B" stroke-width="3"/>
+    <circle cx="120" cy="120" r="4" fill="#F59E0B"/>
+
+    <!-- Distinct Partition Indicator (Targeted/Special Category) -->
+    <!-- Highlighted secure coin / specific fund slot -->
+    <rect x="80" y="45" width="80" height="18" rx="6" fill="#F59E0B"/>
+    <circle cx="92" cy="54" r="5" fill="#1A1D24"/>
+    <line x1="104" y1="54" x2="148" y2="54" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Slot opening on top of vault -->
+    <rect x="90" y="63" width="60" height="4" rx="2" fill="#14171E"/>
+
+    <!-- Targeted spotlight / beam effect indicating "specific/designated" (专项) -->
+    <path d="M120 15 L85 45 H155 Z" fill="#F59E0B" opacity="0.12"/>
+    
+    <!-- Focus markers (corners emphasizing exact allocation) -->
+    <path d="M42 90 V75 H57" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M198 90 V75 H183" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M42 150 V165 H57" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M198 150 V165 H183" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Secure checkmark emblem for designated compliance -->
+    <circle cx="158" cy="142" r="12" fill="#10B981" opacity="0.2"/>
+    <circle cx="158" cy="142" r="9" fill="#10B981"/>
+    <path d="M153 142 L156 145 L163 138" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

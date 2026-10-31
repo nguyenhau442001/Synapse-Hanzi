@@ -1,35 +1,132 @@
 <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
-      <stop offset="0%" stop-color="#0f172a"/>
+    <linearGradient id="outdoorBg" x1="0" y1="0" x2="0" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0c1929"/>
       <stop offset="100%" stop-color="#1e293b"/>
     </linearGradient>
+    <linearGradient id="trackSurface" x1="0" y1="160" x2="0" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#991b1b"/>
+      <stop offset="100%" stop-color="#7f1d1d"/>
+    </linearGradient>
+    <linearGradient id="athleticShirt" x1="0" y1="70" x2="0" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <linearGradient id="runningShorts" x1="0" y1="130" x2="0" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="skinRunner" x1="0" y1="30" x2="0" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fed7aa"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
   </defs>
-  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
-  
-  <!-- Park Background Elements -->
-  <path d="M0 180 Q 60 160 120 180 T 240 180 L 240 240 L 0 240 Z" fill="#1e3a8a" opacity="0.3"/>
-  <circle cx="200" cy="50" r="25" fill="#fbbf24" opacity="0.2"/>
-  <path d="M20 190 L 40 130 L 60 190 Z" fill="#10b981" opacity="0.4"/>
-  <path d="M180 190 L 210 120 L 240 190 Z" fill="#10b981" opacity="0.4"/>
-  
-  <!-- Runner Character -->
-  <g transform="translate(80, 80)">
-    <!-- Legs -->
-    <path d="M40 110 L 55 70 L 65 110" stroke="#fb923c" stroke-width="8" stroke-linecap="round" fill="none"/>
-    <path d="M20 110 L 35 60 L 45 100" stroke="#fb923c" stroke-width="8" stroke-linecap="round" fill="none"/>
-    <!-- Body -->
-    <path d="M35 30 L 40 80" stroke="#38bdf8" stroke-width="12" stroke-linecap="round"/>
-    <!-- Arms -->
-    <path d="M35 35 L 55 55" stroke="#38bdf8" stroke-width="8" stroke-linecap="round"/>
-    <path d="M35 35 L 15 55" stroke="#38bdf8" stroke-width="8" stroke-linecap="round"/>
-    <!-- Head -->
-    <circle cx="40" cy="20" r="12" fill="#fde68a"/>
-    <!-- Motion Lines -->
-    <path d="M5 100 L -10 90" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
-    <path d="M0 110 L -15 105" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="url(#outdoorBg)"/>
+
+  <!-- Morning Sunrise Glow on Horizon -->
+  <circle cx="190" cy="80" r="38" fill="#f59e0b" opacity="0.15"/>
+  <circle cx="190" cy="80" r="22" fill="#fde047" opacity="0.25"/>
+
+  <!-- Distant Park Trees Silhouette -->
+  <path d="M0 165 Q30 145 60 165 Q90 140 120 165 Q150 145 180 165 Q210 138 240 165 L240 178 L0 178 Z" fill="#132435"/>
+  <circle cx="45" cy="150" r="16" fill="#10b981" opacity="0.2"/>
+  <circle cx="140" cy="148" r="18" fill="#10b981" opacity="0.2"/>
+
+  <!-- Tartan Running Track (All-weather running lane) -->
+  <polygon points="0,172 240,172 240,240 0,240" fill="url(#trackSurface)"/>
+  <!-- Track Lane Lines (Curving perspective conveying forward speed, zero text) -->
+  <path d="M0 192 C80 192, 160 190, 240 188" stroke="#fecaca" stroke-width="2.5" opacity="0.75" fill="none"/>
+  <path d="M0 218 C80 216, 160 212, 240 208" stroke="#fecaca" stroke-width="3" opacity="0.75" fill="none"/>
+
+  <!-- Runner's Natural Dynamic Motion Shadow -->
+  <ellipse cx="125" cy="222" rx="42" ry="7" fill="#450a0a" opacity="0.65"/>
+
+  <!-- Runner Figure (Dynamic athletic anatomy in mid-stride) -->
+  <!-- Trailing/Back Leg (Extending with authentic calf and hamstring anatomy) -->
+  <g id="back-leg">
+    <!-- Thigh extending backwards -->
+    <path d="M102 145 L74 172 L62 165 L88 138 Z" fill="url(#skinRunner)"/>
+    <!-- Lower leg / Calf angled backwards -->
+    <path d="M72 170 L42 195 L34 190 L60 166 Z" fill="url(#skinRunner)"/>
+    <!-- Ankle & Foot extending in push-off -->
+    <path d="M38 192 L24 206 L34 212 L48 198 Z" fill="#0284c7"/>
+    <!-- Shoe white sole -->
+    <path d="M22 208 L32 214" stroke="#f8fafc" stroke-width="3" stroke-linecap="round"/>
   </g>
-  
-  <!-- Foreground Detail -->
-  <path d="M0 210 Q 120 200 240 210" stroke="#334155" stroke-width="4" fill="none"/>
+
+  <!-- Trailing Arm (Right Arm swinging back at ~90 degree bend) -->
+  <g id="back-arm">
+    <!-- Shoulder to elbow swinging back -->
+    <path d="M125 96 L98 116 L92 108 L116 88 Z" fill="url(#skinRunner)"/>
+    <!-- Forearm extending backwards/down -->
+    <path d="M96 114 L78 98 L84 92 L102 108 Z" fill="url(#skinRunner)"/>
+    <!-- Relaxed running fist -->
+    <ellipse cx="78" cy="94" rx="5" ry="4" fill="url(#skinRunner)"/>
+  </g>
+
+  <!-- Running Torso (Angled naturally forward with running velocity) -->
+  <!-- Athletic Tank Top / Shirt -->
+  <path d="M112 88 L142 84 L134 145 L96 142 Z" fill="url(#athleticShirt)"/>
+  <!-- Sporty chest accent stripe -->
+  <path d="M118 108 L140 105" stroke="#fde047" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- V-neck collar -->
+  <polygon points="126,86 134,85 130,95" fill="#c2410c"/>
+
+  <!-- Running Shorts -->
+  <path d="M96 138 L136 138 L142 166 L120 168 L112 152 L94 156 Z" fill="url(#runningShorts)"/>
+  <!-- Side slit on running shorts -->
+  <line x1="130" y1="144" x2="136" y2="164" stroke="#f97316" stroke-width="1.8"/>
+
+  <!-- Leading Forward Leg (Knee driven dynamically forward in running stride) -->
+  <g id="lead-leg">
+    <!-- Thigh driving forward and up -->
+    <path d="M124 150 L166 156 L164 168 L118 162 Z" fill="url(#skinRunner)"/>
+    <!-- Quad muscle curve -->
+    <ellipse cx="144" cy="157" rx="18" ry="8" fill="url(#skinRunner)" transform="rotate(8 144 157)"/>
+    <!-- Knee joint -->
+    <circle cx="166" cy="162" r="6.5" fill="url(#skinRunner)"/>
+    <!-- Lower leg / shin angled downward toward stride landing -->
+    <path d="M164 164 L162 208 L152 206 L156 164 Z" fill="url(#skinRunner)"/>
+    <!-- Calf muscle definition -->
+    <ellipse cx="160" cy="182" rx="6" ry="12" fill="url(#skinRunner)"/>
+    <!-- Leading Running Shoe (Modern cushioned running shoe about to plant) -->
+    <path d="M152 206 L158 222 L178 222 L168 206 Z" fill="#0284c7"/>
+    <!-- High-rebound white foam sole -->
+    <path d="M154 223 L182 223" stroke="#f8fafc" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- Bright neon shoe accent -->
+    <path d="M162 214 L170 214" stroke="#facc15" stroke-width="2"/>
+  </g>
+
+  <!-- Leading Forward Arm (Left Arm bent at 90 degrees driving forward) -->
+  <g id="lead-arm">
+    <!-- Shoulder and bicep driving forward -->
+    <path d="M136 92 L158 114 L150 122 L128 100 Z" fill="url(#skinRunner)"/>
+    <!-- Forearm pumping upward -->
+    <path d="M154 118 L170 96 L162 90 L146 112 Z" fill="url(#skinRunner)"/>
+    <!-- Smart fitness watch on wrist -->
+    <rect x="156" y="96" width="7" height="6" rx="1.5" fill="#0f172a"/>
+    <rect x="158" y="97" width="3" height="4" rx="0.5" fill="#38bdf8"/>
+    <!-- Relaxed natural running fist -->
+    <circle cx="168" cy="92" r="5" fill="url(#skinRunner)"/>
+  </g>
+
+  <!-- Neck and Athletic Head Positioned with Forward Focus -->
+  <rect x="124" y="74" width="12" height="16" fill="url(#skinRunner)" transform="rotate(12 130 82)"/>
+  <ellipse cx="138" cy="64" rx="13" ry="15" fill="url(#skinRunner)"/>
+  <!-- Wind-swept athletic hair -->
+  <path d="M125 64 C122 48, 146 44, 150 56 C145 52, 134 52, 128 58 Z" fill="#1e293b"/>
+  <!-- Sweatband / Sport headband -->
+  <path d="M127 58 L149 61" stroke="#f8fafc" stroke-width="3" stroke-linecap="round"/>
+  <!-- Determined, focused eye and breath -->
+  <circle cx="144" cy="64" r="1.3" fill="#0f172a"/>
+  <path d="M141 71 Q144 73 147 71" fill="none" stroke="#b45309" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- Subtle Speed & Kinetic Motion Whisp (Zero arrows, just clean atmospheric dust) -->
+  <line x1="28" y1="216" x2="48" y2="216" stroke="#f8fafc" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+  <line x1="38" y1="220" x2="62" y2="220" stroke="#f8fafc" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
+
+  <!-- Soft Vignette / Ambient Focus -->
+  <circle cx="120" cy="120" r="70" fill="none" stroke="#f97316" stroke-width="0.8" opacity="0.12"/>
 </svg>

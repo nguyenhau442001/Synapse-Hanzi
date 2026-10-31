@@ -1,0 +1,43 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background warmth glow -->
+  <circle cx="120" cy="135" r="70" fill="#FF5722" opacity="0.08" filter="blur(15px)"/>
+
+  <!-- Stove chimney / pipe -->
+  <rect x="110" y="35" width="20" height="35" fill="#374151" rx="2"/>
+  <rect x="108" y="32" width="24" height="6" fill="#4B5563" rx="2"/>
+
+  <!-- Main Cast Iron Body (Bếp lò gang) -->
+  <!-- Legs -->
+  <path d="M 85 180 L 70 200 M 155 180 L 170 200" stroke="#374151" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Stove body cylinder -->
+  <path d="M 75 100 L 165 100 L 175 175 C 175 185, 65 185, 65 175 Z" fill="#2D3748"/>
+  <ellipse cx="120" cy="100" rx="45" ry="10" fill="#4A5568"/>
+
+  <!-- Glowing Fire Chamber (Bên trong cháy đỏ rực) -->
+  <ellipse cx="120" cy="135" rx="30" ry="12" fill="#1A1D24"/>
+  <ellipse cx="120" cy="138" rx="24" ry="8" fill="#FF4500"/>
+  <ellipse cx="120" cy="139" rx="16" ry="5" fill="#FFD700"/>
+
+  <!-- Flickering Flames -->
+  <path d="M 105 135 C 105 120, 115 110, 120 100 C 125 110, 135 120, 135 135 Z" fill="#FF5722"/>
+  <path d="M 112 135 C 112 125, 118 118, 120 110 C 122 118, 128 125, 128 135 Z" fill="#FFC107"/>
+
+  <!-- Stove Door / Vent Detail -->
+  <rect x="105" y="152" width="30" height="18" rx="3" fill="#1F2937" stroke="#4B5563" stroke-width="2"/>
+  <line x1="112" y1="161" x2="128" y2="161" stroke="#FF5722" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="128" cy="161" r="1.5" fill="#E5E7EB"/>
+
+  <!-- Heat Radiation Waves (Glow & warmth) -->
+  <path d="M 90 85 C 80 75, 80 60, 90 50" stroke="#FFB74D" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M 150 85 C 160 75, 160 60, 150 50" stroke="#FFB74D" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M 120 80 C 120 70, 120 55, 120 45" stroke="#FFB74D" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.9"/>
+
+  <!-- Floating Warm Sparks -->
+  <circle cx="95" cy="70" r="1.5" fill="#FFD700"/>
+  <circle cx="148" cy="65" r="2" fill="#FF5722"/>
+  <circle cx="102" cy="50" r="1" fill="#FFD700"/>
+  <circle cx="138" cy="48" r="1.5" fill="#FFC107"/>
+</svg>

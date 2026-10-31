@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Central Physical Object: Modern Television / Broadcast Screen representing "转播" (relay/rebroadcast/live telecast) -->
+  
+  <!-- Studio Stand / Base -->
+  <path d="M96 186H144L152 196H88L96 186Z" fill="#3A4252"/>
+  <rect x="112" y="152" width="16" height="36" fill="#2C3240"/>
+  <ellipse cx="120" cy="196" rx="36" ry="6" fill="#2C3240"/>
+
+  <!-- TV Outer Frame -->
+  <rect x="44" y="60" width="152" height="96" rx="12" fill="#2C3240"/>
+  <!-- Inner Screen Background -->
+  <rect x="52" y="68" width="136" height="80" rx="6" fill="#0D1017"/>
+
+  <!-- Broadcast Content: Global transmission / satellite wave visual -->
+  <g clip-path="url(#screen-clip)">
+    <clipPath id="screen-clip">
+      <rect x="52" y="68" width="136" height="80" rx="6"/>
+    </clipPath>
+    
+    <!-- Abstract Globe / Waves inside screen representing transmission -->
+    <circle cx="120" cy="108" r="28" fill="none" stroke="#F59E0B" stroke-width="2" opacity="0.3"/>
+    <circle cx="120" cy="108" r="42" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4"/>
+    
+    <!-- Live Indicator dot (Red) -->
+    <circle cx="68" cy="82" r="4" fill="#EF4444"/>
+    
+    <!-- Central Transmission / Camera Node Icon -->
+    <circle cx="120" cy="108" r="16" fill="#F59E0B"/>
+    <path d="M112 108L126 98V118L112 108Z" fill="#0D1017"/>
+  </g>
+
+  <!-- Dual Signal Relay Arrows (Visualizing the '转' - redirecting / forwarding the broadcast) -->
+  <!-- Left incoming wave -->
+  <path d="M28 92C36 92 40 96 40 108C40 120 36 124 28 124" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M34 100L28 108L34 116" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Right outgoing relayed wave -->
+  <path d="M212 92C204 92 200 96 200 108C200 120 204 124 212 124" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M206 100L212 108L206 116" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Top Satellite Dish element mounted on TV -->
+  <path d="M120 60V44" stroke="#8A99AD" stroke-width="3" stroke-linecap="round"/>
+  <path d="M108 40C108 33.3726 113.373 28 120 28C126.627 28 132 33.3726 132 40" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="120" cy="40" r="3" fill="#F59E0B"/>
+
+</svg>

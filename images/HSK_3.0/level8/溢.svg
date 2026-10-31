@@ -1,0 +1,89 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="basketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+    <linearGradient id="appleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F87171"/>
+      <stop offset="100%" stop-color="#DC2626"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Atmospheric background glow for overflowing abundance -->
+  <circle cx="120" cy="115" r="85" fill="url(#glowGrad)"/>
+
+  <!-- Overflowing energy/radiance lines representing "yì" (tràn ngập/dạt dào) -->
+  <path d="M120 40 L120 20" stroke="#FBBF24" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <path d="M75 55 L60 40" stroke="#FBBF24" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M165 55 L180 40" stroke="#FBBF24" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M55 90 L35 85" stroke="#FBBF24" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+  <path d="M185 90 L205 85" stroke="#FBBF24" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Wooden/Wicker Harvest Basket -->
+  <!-- Basket base/back -->
+  <ellipse cx="120" cy="170" rx="60" ry="15" fill="#92400E"/>
+  
+  <!-- Basket body -->
+  <path d="M60 140 C60 170 70 185 120 185 C170 185 180 170 180 140 L168 105 C168 105 150 110 120 110 C90 110 72 105 72 105 Z" fill="url(#basketGrad)"/>
+  
+  <!-- Basket weave texture lines -->
+  <path d="M70 120 C95 130 145 130 170 120" stroke="#92400E" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M65 138 C95 148 145 148 175 138" stroke="#92400E" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M62 156 C95 166 145 166 178 156" stroke="#92400E" stroke-width="2" fill="none" opacity="0.6"/>
+  
+  <line x1="90" y1="108" x2="80" y2="180" stroke="#92400E" stroke-width="2" opacity="0.5"/>
+  <line x1="120" y1="110" x2="120" y2="185" stroke="#92400E" stroke-width="2" opacity="0.5"/>
+  <line x1="150" y1="108" x2="160" y2="180" stroke="#92400E" stroke-width="2" opacity="0.5"/>
+
+  <!-- Basket rim -->
+  <ellipse cx="120" cy="105" rx="50" ry="10" fill="#B45309" stroke="#D97706" stroke-width="2"/>
+
+  <!-- Abundant Harvest Fruits (Overflowing / Tràn ngập) -->
+  <!-- Lower layer inside basket -->
+  <circle cx="100" cy="102" r="14" fill="url(#orangeGrad)"/>
+  <circle cx="130" cy="100" r="15" fill="url(#appleGrad)"/>
+  <circle cx="145" cy="105" r="13" fill="url(#orangeGrad)"/>
+
+  <!-- Overflowing top layer (Spilling over the rim - 溢) -->
+  <circle cx="115" cy="85" r="16" fill="url(#appleGrad)"/>
+  <circle cx="90" cy="90" r="15" fill="url(#orangeGrad)"/>
+  <circle cx="140" cy="88" r="16" fill="url(#orangeGrad)"/>
+  <circle cx="120" cy="68" r="17" fill="url(#appleGrad)"/>
+  <circle cx="98" cy="72" r="14" fill="url(#appleGrad)"/>
+  <circle cx="142" cy="70" r="14" fill="url(#appleGrad)"/>
+  
+  <!-- Peak golden harvest fruit (Centerpiece of abundance) -->
+  <circle cx="120" cy="48" r="15" fill="url(#orangeGrad)"/>
+  <!-- Leaf accents -->
+  <path d="M120 33 C125 25 132 25 135 28 C135 32 128 35 120 33 Z" fill="#34D399"/>
+  <path d="M108 58 C100 53 96 47 99 44 C103 44 107 50 108 58 Z" fill="#34D399"/>
+  <path d="M132 58 C140 53 144 47 141 44 C137 44 133 50 132 58 Z" fill="#34D399"/>
+
+  <!-- Falling/Overflowing loose golden fruits (Dynamic element of overflowing) -->
+  <circle cx="70" cy="125" r="11" fill="url(#orangeGrad)"/>
+  <path d="M70 114 C72 110 75 110 77 112" stroke="#34D399" stroke-width="2" fill="none"/>
+  
+  <circle cx="170" cy="120" r="12" fill="url(#appleGrad)"/>
+  <path d="M170 108 C172 104 175 104 177 106" stroke="#34D399" stroke-width="2" fill="none"/>
+
+  <!-- Sparkling highlight dots indicating rich vitality and joy -->
+  <circle cx="85" cy="45" r="2.5" fill="#FDE047"/>
+  <circle cx="155" cy="45" r="2.5" fill="#FDE047"/>
+  <circle cx="50" cy="70" r="2" fill="#FDE047"/>
+  <circle cx="190" cy="70" r="2" fill="#FDE047"/>
+  <circle cx="120" cy="18" r="3" fill="#FDE047"/>
+
+</svg>

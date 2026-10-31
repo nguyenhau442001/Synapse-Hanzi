@@ -1,0 +1,31 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- The "Mistaken Path" (The Trap) -->
+  <path d="M60 180 L120 120 L180 180 Z" fill="#2D343E" stroke="#FF9F1C" stroke-width="3" stroke-dasharray="6 4"/>
+  
+  <!-- The Character -->
+  <g transform="translate(120, 150)">
+    <!-- Body -->
+    <path d="M-15 0 L-15 -40 Q-15 -60 0 -60 Q15 -60 15 -40 L15 0" fill="#E0E0E0"/>
+    <!-- Head -->
+    <circle cx="0" cy="-75" r="15" fill="#E0E0E0"/>
+    <!-- Arms reaching for the "wrong" choice -->
+    <path d="M-15 -30 L-40 -10" stroke="#E0E0E0" stroke-width="8" stroke-linecap="round"/>
+    <path d="M15 -30 L40 -10" stroke="#E0E0E0" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  
+  <!-- The "Wrong" Object (Bread/Carb crossed out) -->
+  <g transform="translate(120, 100)">
+    <rect x="-20" y="-10" width="40" height="20" rx="4" fill="#FF9F1C"/>
+    <line x1="-25" y1="-15" x2="25" y2="15" stroke="#FF4D4D" stroke-width="4" stroke-linecap="round"/>
+    <line x1="25" y1="-15" x2="-25" y2="15" stroke="#FF4D4D" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Motion lines indicating falling into the trap -->
+  <path d="M100 80 Q120 90 140 80" stroke="#FF9F1C" stroke-width="2" fill="none"/>
+  <path d="M105 70 Q120 80 135 70" stroke="#FF9F1C" stroke-width="2" fill="none"/>
+  
+  <!-- Ground -->
+  <path d="M20 200 L220 200" stroke="#3E4552" stroke-width="4" stroke-linecap="round"/>
+</svg>

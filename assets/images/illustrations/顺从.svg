@@ -1,0 +1,18 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(60, 60)">
+    <!-- Main character: A person standing in a submissive, passive posture -->
+    <path d="M60 120 C60 100 70 80 80 80 C90 80 100 100 100 120 L100 160 L60 160 Z" fill="#5D6D7E"/>
+    <circle cx="80" cy="65" r="15" fill="#BDC3C7"/>
+    <!-- The "Puppet" strings representing passive compliance -->
+    <path d="M80 50 L80 20" stroke="#F39C12" stroke-width="3" stroke-linecap="round"/>
+    <path d="M65 20 L95 20" stroke="#F39C12" stroke-width="3" stroke-linecap="round"/>
+    <path d="M80 20 L80 50" stroke="#F39C12" stroke-width="3"/>
+    <path d="M80 20 L60 5" stroke="#F39C12" stroke-width="2"/>
+    <path d="M80 20 L100 5" stroke="#F39C12" stroke-width="2"/>
+    <!-- The hand above controlling the strings -->
+    <path d="M50 0 L110 0 L110 10 L50 10 Z" fill="#F39C12"/>
+    <path d="M60 10 L60 20" stroke="#F39C12" stroke-width="4" stroke-linecap="round"/>
+    <path d="M100 10 L100 20" stroke="#F39C12" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

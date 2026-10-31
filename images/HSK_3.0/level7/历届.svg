@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative academic arch / subtle pillars -->
+  <path d="M70 185V105C70 87.3269 84.3269 73 102 73H138C155.673 73 170 87.3269 170 105V185" stroke="#2A2F3D" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <line x1="50" y1="185" x2="190" y2="185" stroke="#2A2F3D" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Multiple overlapping graduation caps representing successive cohorts (历届 - past terms/generations) -->
+  <!-- Cohort 3 (Background/Oldest) -->
+  <g transform="translate(0, -22)">
+    <polygon points="120,82 155,95 120,108 85,95" fill="#3E475E"/>
+    <path d="M98,102.5V118C98,124 142,124 142,118V102.5" fill="none" stroke="#3E475E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Cohort 2 (Middle) -->
+  <g transform="translate(0, -11)">
+    <polygon points="120,95 158,109 120,123 82,109" fill="#525F7A"/>
+    <path d="M96,116.5V132C96,138 144,138 144,132V116.5" fill="none" stroke="#525F7A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Cohort 1 (Foreground/Current & Gold Accent for Focus) -->
+  <g transform="translate(0, 0)">
+    <!-- Cap Diamond / Board -->
+    <polygon points="120,108 162,123 120,138 78,123" fill="#F5A623"/>
+    <polygon points="120,108 162,123 120,126 78,123" fill="#D48806"/>
+
+    <!-- Skull Cap Base -->
+    <path d="M94,130.5V148C94,155 146,155 146,148V130.5" fill="#E69500"/>
+    <path d="M94,130.5C94,142 146,142 146,130.5" fill="none" stroke="#F5A623" stroke-width="4"/>
+
+    <!-- Tassel -->
+    <path d="M120,123C132,123 145,130 148,145" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="149" cy="148" r="3.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Timeline / Sequential continuity base line -->
+  <path d="M60,195H180" stroke="#F5A623" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 6" opacity="0.6"/>
+
+  <!-- Historical milestones dots -->
+  <circle cx="80" cy="195" r="4" fill="#525F7A"/>
+  <circle cx="120" cy="195" r="5" fill="#F5A623"/>
+  <circle cx="160" cy="195" r="4" fill="#3E475E"/>
+</svg>

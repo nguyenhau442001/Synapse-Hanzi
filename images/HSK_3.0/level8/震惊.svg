@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Shocked Character Representation -->
+  <g transform="translate(120, 130)">
+    <!-- Body -->
+    <path d="M-40 80 C-40 40, -20 20, 0 20 C 20 20, 40 40, 40 80" fill="#3D4451"/>
+    
+    <!-- Head -->
+    <circle cx="0" cy="-20" r="45" fill="#F4F4F4"/>
+    
+    <!-- Eyes (Wide/Shocked) -->
+    <circle cx="-18" cy="-25" r="8" fill="#1A1D24"/>
+    <circle cx="18" cy="-25" r="8" fill="#1A1D24"/>
+    
+    <!-- Mouth (O-shape/Shocked) -->
+    <ellipse cx="0" cy="15" rx="12" ry="18" fill="#1A1D24"/>
+    
+    <!-- Hands (Raised in shock) -->
+    <path d="M-50 -10 L-75 -40" stroke="#F4F4F4" stroke-width="12" stroke-linecap="round"/>
+    <path d="M50 -10 L75 -40" stroke="#F4F4F4" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="-75" cy="-40" r="10" fill="#F4F4F4"/>
+    <circle cx="75" cy="-40" r="10" fill="#F4F4F4"/>
+  </g>
+  
+  <!-- Impact/Shock Wave Effect (Subtle) -->
+  <path d="M120 40 L135 10 L150 40 L180 30 L160 60 L190 70 L160 80 L180 110 L150 100 L135 130 L120 100 L105 130 L90 100 L60 110 L80 80 L50 70 L80 60 L60 30 L90 40 L105 10 Z" fill="#FFB84D" opacity="0.8"/>
+</svg>

@@ -1,0 +1,31 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Stage Floor -->
+  <path d="M40 180 L200 180 L220 210 L20 210 Z" fill="#2D343E"/>
+  
+  <!-- Spotlight Beams -->
+  <path d="M80 180 L110 60 L140 180 Z" fill="#FFD700" opacity="0.15"/>
+  <path d="M120 180 L150 60 L180 180 Z" fill="#FF9F1C" opacity="0.15"/>
+  
+  <!-- Central Performance Elements: A variety of artistic icons representing "精彩纷呈" -->
+  
+  <!-- Mask (Drama) -->
+  <path d="M60 120 C60 100 75 90 90 90 C105 90 120 100 120 120 C120 140 105 150 90 150 C75 150 60 140 60 120 Z" fill="#FFD700"/>
+  <circle cx="75" cy="115" r="5" fill="#1A1D24"/>
+  <circle cx="105" cy="115" r="5" fill="#1A1D24"/>
+  <path d="M75 135 Q90 145 105 135" stroke="#1A1D24" stroke-width="3" fill="none"/>
+  
+  <!-- Musical Note (Music) -->
+  <path d="M160 90 L160 140 C160 150 175 155 185 150 C195 145 195 130 185 125 C175 120 160 125 160 125" fill="#FF9F1C"/>
+  <circle cx="150" cy="140" r="10" fill="#FF9F1C"/>
+  
+  <!-- Ribbon/Streamer (Dance) -->
+  <path d="M110 160 C130 140 150 180 170 160 C190 140 210 180 220 170" stroke="#FFD700" stroke-width="6" stroke-linecap="round" fill="none"/>
+  
+  <!-- Confetti/Sparkles -->
+  <rect x="70" y="70" width="6" height="6" fill="#FF9F1C" transform="rotate(20)"/>
+  <rect x="180" y="80" width="6" height="6" fill="#FFD700" transform="rotate(-15)"/>
+  <rect x="140" y="110" width="6" height="6" fill="#FF9F1C" transform="rotate(45)"/>
+  <rect x="200" y="130" width="6" height="6" fill="#FFD700" transform="rotate(-30)"/>
+</svg>

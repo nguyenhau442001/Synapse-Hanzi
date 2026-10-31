@@ -1,0 +1,46 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Cause: Computer Monitor / Coding Environment -->
+    <rect x="25" y="45" width="90" height="65" rx="4" fill="#2D333B" stroke="#484F58" stroke-width="2"/>
+    <!-- Screen content: complex code blocks -->
+    <rect x="33" y="53" width="74" height="49" fill="#161B22"/>
+    <path d="M38 61 h25 M38 69 h40 M38 77 h30 M38 85 h50 M38 93 h20" stroke="#FF7B72" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M68 61 h20 M81 77 h22 M71 93 h35" stroke="#79C0FF" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Monitor stand -->
+    <path d="M70 110 v15 M50 125 h40" stroke="#484F58" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Desk surface -->
+    <path d="M15 140 h210" stroke="#30363D" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Connecting Arrow indicating consequence (以至于) -->
+    <path d="M115 80 Q130 65 145 80" fill="none" stroke="#F0883E" stroke-width="2.5" stroke-dasharray="4 3" stroke-linecap="round"/>
+    <polygon points="145,76 153,80 145,84" fill="#F0883E"/>
+
+    <!-- Effect: Exhausted Character sleeping at desk -->
+    <g transform="translate(130, 75)">
+      <!-- Office Chair Backrest -->
+      <rect x="75" y="15" width="22" height="50" rx="4" fill="#21262D"/>
+      
+      <!-- Character Head resting on arms -->
+      <circle cx="45" cy="40" r="14" fill="#F0C674"/>
+      <!-- Closed peaceful eyes / sleep lines -->
+      <path d="M39 40 c2 2 4 2 6 0" fill="none" stroke="#373B41" stroke-width="1.5" stroke-linecap="round"/>
+      
+      <!-- Body leaning forward -->
+      <path d="M35 50 c-5 10 -10 20 -15 30 l45 15 c5 -5 10 -15 15 -25 z" fill="#58A6FF"/>
+      
+      <!-- Arms crossed on desk -->
+      <path d="M30 65 l35 -12 l10 12 l-35 12 z" fill="#388BFd"/>
+      
+      <!-- Zzz floating up showing deep sleep -->
+      <path d="M60 18 h10 l-10 10 h10" fill="none" stroke="#8B949E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M72 8 h7 l-7 7 h7" fill="none" stroke="#8B949E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Ambient glowing light from monitor casting on desk -->
+    <path d="M35 140 q35 -20 70 0" fill="none" stroke="#79C0FF" stroke-opacity="0.15" stroke-width="12" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,63 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for 任期 (Term of Office / Tenure) -->
+  <!-- We visualize this through an official podium/lectern with a ceremonial gavel or plaque, 
+       and a calendar/clock element indicating a defined period of time (e.g. years), 
+       symbolizing an official term in office. -->
+
+  <!-- Background subtle architectural element (columns / office backdrop) -->
+  <g opacity="0.15">
+    <rect x="70" y="60" width="100" height="120" rx="4" fill="#64748B"/>
+    <rect x="90" y="80" width="60" height="20" rx="2" fill="#94A3B8"/>
+    <rect x="90" y="110" width="60" height="20" rx="2" fill="#94A3B8"/>
+  </g>
+
+  <!-- Central Physical Object: Official Podium / Desk -->
+  <g transform="translate(0, 10)">
+    <!-- Podium base -->
+    <path d="M75 160 L165 160 L155 120 L85 120 Z" fill="#334155"/>
+    <rect x="70" y="155" width="100" height="15" rx="3" fill="#475569"/>
+    
+    <!-- Podium top surface / desk -->
+    <path d="M65 115 L175 115 L165 125 L75 125 Z" fill="#64748B"/>
+    <rect x="75" y="125" width="90" height="8" rx="2" fill="#0F172A"/>
+
+    <!-- Emblem on podium (official governance/term symbol) -->
+    <circle cx="120" cy="142" r="10" fill="#F59E0B"/>
+    <path d="M115 142 L119 146 L126 138" stroke="#1E293B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- Calendar / Clock representing the "Period/Term" (期限) -->
+  <g transform="translate(0, -10)">
+    <!-- Calendar base board -->
+    <rect x="85" y="45" width="70" height="65" rx="8" fill="#F8FAFC"/>
+    <!-- Calendar header (Orange/Gold accent for focus) -->
+    <path d="M 85 53 A 8 8 0 0 1 93 45 L 147 45 A 8 8 0 0 1 155 53 L 155 65 L 85 65 Z" fill="#F59E0B"/>
+    <!-- Binding rings -->
+    <rect x="100" y="40" width="6" height="8" rx="3" fill="#334155"/>
+    <rect x="134" y="40" width="6" height="8" rx="3" fill="#334155"/>
+
+    <!-- Calendar grid dots / lines representing duration -->
+    <circle cx="102" cy="80" r="3" fill="#64748B"/>
+    <circle cx="120" cy="80" r="3" fill="#64748B"/>
+    <circle cx="138" cy="80" r="3" fill="#64748B"/>
+    <circle cx="102" cy="95" r="3" fill="#E2E8F0"/>
+    <circle cx="120" cy="95" r="3" fill="#E2E8F0"/>
+    <circle cx="138" cy="95" r="3" fill="#E2E8F0"/>
+    
+    <!-- Highlight checkmark on current active term date -->
+    <path d="M97 80 L101 84 L108 76" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- Official Gavel (representing authority during the term) placed beside -->
+  <g transform="translate(10, 10)">
+    <!-- Sound block -->
+    <rect x="145" y="135" width="30" height="10" rx="3" fill="#475569"/>
+    <!-- Gavel head -->
+    <rect x="140" y="115" width="22" height="14" rx="3" fill="#D97706"/>
+    <!-- Gavel handle -->
+    <path d="M125 105 L150 120" stroke="#B45309" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>

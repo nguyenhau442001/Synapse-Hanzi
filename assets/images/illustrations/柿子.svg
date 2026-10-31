@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glowing atmospheric aura behind the persimmon -->
+  <circle cx="120" cy="130" r="60" fill="#FF7A00" opacity="0.1" filter="blur(8px)"/>
+
+  <!-- Twig and Leaves (Late Autumn Context) -->
+  <path d="M120 70 C120 50, 135 38, 160 30" fill="none" stroke="#4A3B32" stroke-width="5" stroke-linecap="round"/>
+  <path d="M135 48 C120 40, 105 45, 95 60 C105 65, 120 60, 135 48 Z" fill="#2E4C33"/>
+  <path d="M135 48 C145 35, 165 35, 175 45 C165 55, 145 55, 135 48 Z" fill="#3A603E"/>
+  <path d="M120 54 L120 43" fill="none" stroke="#1F3322" stroke-width="1.5"/>
+
+  <!-- Persimmon Calyx (Green Sepals) -->
+  <path d="M120 76 L108 64 L96 78 L114 84 Z" fill="#3A603E"/>
+  <path d="M120 76 L132 64 L144 78 L126 84 Z" fill="#3A603E"/>
+  <path d="M120 76 L110 90 L120 100 L130 90 Z" fill="#2E4C33"/>
+  <path d="M120 76 C115 70, 125 70, 120 76 Z" fill="#4E7C54"/>
+
+  <!-- Main Persimmon Body (Lantern-like shape, vibrant orange) -->
+  <path d="M120 84 C165 84, 185 115, 175 145 C165 175, 135 190, 120 190 C105 190, 75 175, 65 145 C55 115, 75 84, 120 84 Z" fill="url(#persimmonGrad)"/>
+
+  <!-- Indentations / Lobes of the Persimmon -->
+  <path d="M120 84 C130 110, 135 150, 120 190" fill="none" stroke="#E05500" stroke-width="2" opacity="0.3"/>
+  <path d="M120 84 C100 110, 90 150, 120 190" fill="none" stroke="#E05500" stroke-width="1.5" opacity="0.2"/>
+  <path d="M120 84 C140 110, 150 150, 120 190" fill="none" stroke="#E05500" stroke-width="1.5" opacity="0.2"/>
+
+  <!-- Highlights for glossy, ripe texture -->
+  <path d="M85 120 C80 135, 88 155, 95 165 C91 150, 88 135, 93 123 Z" fill="#FFB074" opacity="0.6"/>
+  <ellipse cx="142" cy="115" rx="12" ry="7" transform="rotate(-25 142 115)" fill="#FFB074" opacity="0.5"/>
+
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="persimmonGrad" x1="55%" y1="0%" x2="55%" y2="100%">
+      <stop offset="0%" stop-color="#FF7A00"/>
+      <stop offset="40%" stop-color="#FF5500"/>
+      <stop offset="100%" stop-color="#D63600"/>
+    </linearGradient>
+  </defs>
+</svg>

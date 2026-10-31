@@ -1,0 +1,32 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Cabin Interior Structure -->
+  <path d="M40 60 L200 60 L190 180 L50 180 Z" fill="#2C313C" stroke="#4A5568" stroke-width="2"/>
+  <path d="M40 60 L50 180" fill="none" stroke="#4A5568" stroke-width="2"/>
+  <path d="M200 60 L190 180" fill="none" stroke="#4A5568" stroke-width="2"/>
+  
+  <!-- Windows -->
+  <rect x="60" y="80" width="20" height="20" rx="4" fill="#3B4252"/>
+  <rect x="100" y="80" width="20" height="20" rx="4" fill="#3B4252"/>
+  <rect x="140" y="80" width="20" height="20" rx="4" fill="#3B4252"/>
+  
+  <!-- Passenger Seat -->
+  <rect x="60" y="120" width="40" height="40" rx="4" fill="#FBBF24"/>
+  <rect x="65" y="110" width="30" height="10" rx="2" fill="#D97706"/>
+  
+  <!-- Flight Attendant Figure -->
+  <g transform="translate(140, 110)">
+    <circle cx="15" cy="15" r="8" fill="#FBBF24"/>
+    <rect x="10" y="25" width="10" height="25" rx="2" fill="#FBBF24"/>
+    <!-- Serving Tray -->
+    <rect x="-10" y="30" width="20" height="4" rx="1" fill="#E5E7EB"/>
+    <circle cx="0" cy="25" r="3" fill="#60A5FA"/>
+  </g>
+  
+  <!-- Overhead Bin -->
+  <rect x="40" y="60" width="160" height="15" fill="#374151"/>
+  
+  <!-- Floor Detail -->
+  <line x1="50" y1="180" x2="190" y2="180" stroke="#4A5568" stroke-width="2"/>
+</svg>

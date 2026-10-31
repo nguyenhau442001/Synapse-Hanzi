@@ -1,0 +1,59 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Layer: Weather / Time elements -->
+  <path d="M40 80 Q50 70 70 75 Q90 60 120 75 Q150 65 170 75 Q190 70 200 85" stroke="#2D333F" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
+  
+  <!-- Rain lines (slanting to show speed/action) -->
+  <line x1="50" y1="40" x2="35" y2="70" stroke="#3A4454" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="90" y1="30" x2="75" y2="60" stroke="#3A4454" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="150" y1="35" x2="135" y2="65" stroke="#3A4454" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="190" y1="45" x2="175" y2="75" stroke="#3A4454" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Motion Lines / Speed effect trails -->
+  <path d="M30 160 Q80 155 110 160" stroke="#FFA726" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <path d="M45 175 Q90 170 125 175" stroke="#FFA726" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.3"/>
+  <path d="M60 190 Q100 185 140 190" stroke="#FFA726" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.2"/>
+
+  <!-- Ground Plane -->
+  <path d="M10 195 L230 195" stroke="#2E3748" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Dynamic Character (Rescue worker running urgently) -->
+  <g transform="translate(100, 105)">
+    <!-- Back Leg (extended backward) -->
+    <path d="M15 50 L-10 75 L-20 70" stroke="#FF8F00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    
+    <!-- Back Arm (swinging back) -->
+    <path d="M10 25 L-15 35" stroke="#FFB300" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+    <!-- Torso (leaning forward for speed) -->
+    <path d="M22 15 C18 30 15 45 15 55" stroke="#FF8F00" stroke-width="14" stroke-linecap="round"/>
+
+    <!-- Helmet / Head -->
+    <circle cx="32" cy="5" r="9" fill="#FFB300"/>
+    <!-- Helmet brim -->
+    <path d="M22 3 C30 1 38 3 42 5" stroke="#FFA726" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Front Leg (striding forward, bent knee) -->
+    <path d="M15 55 L35 70 L55 60" stroke="#FFC107" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+    <!-- Front Arm (reaching forward dynamically) -->
+    <path d="M20 20 L50 25" stroke="#FFC107" stroke-width="7" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Giant Clock / Time element on the right (representing "competing against time") -->
+  <g transform="translate(185, 110)">
+    <!-- Clock Outer Ring -->
+    <circle cx="0" cy="0" r="26" fill="#1A1D24" stroke="#FFB300" stroke-width="3"/>
+    <!-- Clock Hands (frozen in urgency, pointing dynamically) -->
+    <line x1="0" y1="0" x2="0" y2="-14" stroke="#FF7043" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="12" y2="6" stroke="#FFB300" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Center Dot -->
+    <circle cx="0" cy="0" r="3" fill="#FF7043"/>
+    
+    <!-- Speed accent marks around clock -->
+    <path d="M -32 -10 L -38 -12" stroke="#FFB300" stroke-width="2" stroke-linecap="round"/>
+    <path d="M -34 5 L -42 7" stroke="#FFB300" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+</svg>

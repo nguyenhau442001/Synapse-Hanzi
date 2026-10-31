@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background subtle glow representing the lullaby melody -->
+  <path d="M120 120 C 160 80, 200 100, 200 140 C 200 180, 160 200, 120 200 C 80 200, 40 180, 40 140 C 40 100, 80 80, 120 120 Z" fill="#2C333F" opacity="0.6"/>
+  
+  <!-- Baby's face - focus on the "sweet/gentle" expression -->
+  <g transform="translate(120, 130)">
+    <!-- Head -->
+    <circle cx="0" cy="0" r="45" fill="#F4D0A8"/>
+    
+    <!-- Closed eyes (gentle curve) -->
+    <path d="M-20 -5 Q -10 -15 0 -5 T 20 -5" stroke="#5D4037" stroke-width="3" fill="none" stroke-linecap="round"/>
+    
+    <!-- Sweet smile (exaggerated curve for "tiánměi") -->
+    <path d="M-15 15 Q 0 30 15 15" stroke="#D84315" stroke-width="4" fill="none" stroke-linecap="round"/>
+    
+    <!-- Rosy cheeks (visual indicator of "sweetness") -->
+    <circle cx="-25" cy="5" r="8" fill="#FFAB91" opacity="0.8"/>
+    <circle cx="25" cy="5" r="8" fill="#FFAB91" opacity="0.8"/>
+  </g>
+  
+  <!-- Musical note/rhythm lines to represent the lullaby context -->
+  <path d="M60 80 Q 80 60 100 80 T 140 80" stroke="#FFC107" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M160 100 Q 180 80 200 100" stroke="#FFC107" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+  
+  <!-- Gentle hand cradling (caring context) -->
+  <path d="M80 210 Q 120 170 160 210" stroke="#F4D0A8" stroke-width="8" fill="none" stroke-linecap="round"/>
+</svg>

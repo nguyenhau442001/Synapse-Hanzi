@@ -1,0 +1,27 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Architectural Monument representing "Doctrine / Core Pillar / System of Thought" (主义) -->
+    <!-- Base Platform -->
+    <rect x="50" y="180" width="140" height="12" rx="3" fill="#2D333B" />
+    <rect x="65" y="168" width="110" height="12" rx="2" fill="#3A424E" />
+
+    <!-- Core Structural Pillars (The Doctrine/System) -->
+    <rect x="80" y="80" width="18" height="88" rx="2" fill="#E67E22" />
+    <rect x="111" y="80" width="18" height="88" rx="2" fill="#F39C12" />
+    <rect x="142" y="80" width="18" height="88" rx="2" fill="#E67E22" />
+
+    <!-- Entablature / Roof (System Foundation) -->
+    <path d="M 70 80 L 120 48 L 170 80 Z" fill="#D35400" />
+    <rect x="70" y="72" width="100" height="8" rx="2" fill="#F1C40F" />
+
+    <!-- Central Focus Emblem (Core Principle / Ideology) -->
+    <circle cx="120" cy="118" r="16" fill="#1A1D24" />
+    <circle cx="120" cy="118" r="10" fill="#F1C40F" />
+
+    <!-- Ground Ambient Glow & Spark Detail -->
+    <circle cx="120" cy="40" r="3" fill="#F1C40F" opacity="0.8" />
+    <path d="M 120 32 L 122 38 L 128 40 L 122 42 L 120 48 L 118 42 L 112 40 L 118 38 Z" fill="#F1C40F" />
+  </g>
+</svg>

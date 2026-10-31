@@ -1,0 +1,71 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <defs>
+    <!-- Canopy Shadow Gradient -->
+    <linearGradient id="canopyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2E7D32"/>
+      <stop offset="100%" stop-color="#1B5E20"/>
+    </linearGradient>
+    
+    <!-- Trunk Gradient -->
+    <linearGradient id="trunkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5D4037"/>
+      <stop offset="100%" stop-color="#3E2723"/>
+    </linearGradient>
+
+    <!-- Ground Shadow Gradient (Shùyīn - The Shaded Area) -->
+    <linearGradient id="shadeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0F172A" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#1E293B" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.8"/>
+    </linearGradient>
+    
+    <!-- Sun Ray Glow -->
+    <linearGradient id="sunGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#1A1D24" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Ambient Sunlight on the Left (Hot Summer Sun) -->
+  <circle cx="50" cy="50" r="30" fill="#F59E0B" opacity="0.15"/>
+  <path d="M 0 160 L 240 160" stroke="#334155" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <!-- Tree Trunk -->
+  <path d="M 110 160 L 115 100 L 125 100 L 130 160 Z" fill="url(#trunkGrad)"/>
+  <path d="M 105 155 Q 120 165 135 155" stroke="#271C19" stroke-width="3" fill="none"/>
+
+  <!-- Lush Tree Canopy -->
+  <circle cx="120" cy="75" r="45" fill="url(#canopyGrad)"/>
+  <circle cx="90" cy="85" r="35" fill="#388E3C"/>
+  <circle cx="150" cy="85" r="35" fill="#388E3C"/>
+  <circle cx="120" cy="50" r="30" fill="#4CAF50"/>
+
+  <!-- SHùyīn (The Shade / Shadow cast on the ground under the tree) -->
+  <ellipse cx="120" cy="165" rx="75" ry="14" fill="url(#shadeGrad)"/>
+  
+  <!-- Cool Shaded Zone Indicator (Visualizing the semantic meaning of "Shùyīn" / Cool Shade) -->
+  <path d="M 70 165 Q 120 152 170 165 Q 120 178 70 165 Z" fill="#0EA5E9" opacity="0.12"/>
+
+  <!-- Bench under the tree -->
+  <rect x="85" y="152" width="70" height="5" rx="2" fill="#795548"/>
+  <rect x="95" y="157" width="8" height="8" fill="#5D4037"/>
+  <rect x="137" y="157" width="8" height="8" fill="#5D4037"/>
+
+  <!-- Elderly Person Resting in the Shade (Representing contextual use) -->
+  <!-- Body / Torso -->
+  <path d="M 105 152 C 105 140 115 138 120 138 C 125 138 135 140 135 152 Z" fill="#3B82F6"/>
+  <!-- Head -->
+  <circle cx="120" cy="130" r="8" fill="#E2E8F0"/>
+  <!-- Holding Fan / Relaxing arm -->
+  <path d="M 112 144 L 104 150" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Cool Breeze / Refreshing Air visual accents inside the shade -->
+  <path d="M 85 160 Q 92 156 98 160" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M 135 159 Q 142 155 148 159" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+  <!-- Focal Accent Frame/Border subtle touch -->
+  <rect x="12" y="12" width="216" height="216" rx="16" fill="none" stroke="#334155" stroke-width="1.5" opacity="0.5"/>
+</svg>

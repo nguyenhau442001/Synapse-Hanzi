@@ -1,0 +1,47 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Background subtle divider representing envy looking across -->
+    <line x1="120" y1="40" x2="120" y2="190" stroke="#2A2F3B" stroke-width="2" stroke-dasharray="4 4" />
+
+    <!-- Person A (Successful/Celebrated, warm golden glow) -->
+    <g transform="translate(150, 75)">
+      <!-- Success aura -->
+      <circle cx="20" cy="45" r="32" fill="#FFB703" opacity="0.12"/>
+      
+      <!-- Trophy / Achievement indicator floating slightly -->
+      <path d="M12 12 L28 12 L24 26 L16 26 Z" fill="#FFB703"/>
+      <path d="M20 26 L20 32" stroke="#FFB703" stroke-width="3" stroke-linecap="round"/>
+      <path d="M15 32 L25 32" stroke="#FFB703" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- Head & Body -->
+      <circle cx="20" cy="48" r="14" fill="#E0E6ED"/>
+      <path d="M5 85 C5 68 35 68 35 85" fill="#3B82F6"/>
+      <!-- Happy smiling face profile -->
+      <circle cx="24" cy="46" r="1.5" fill="#1A1D24"/>
+      <path d="M23 52 Q26 55 28 52" stroke="#1A1D24" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- Person B (The Envious observer - narrow-minded, peering from the shadows with green hue) -->
+    <g transform="translate(50, 75)">
+      <!-- Dark/Envious aura -->
+      <circle cx="20" cy="45" r="32" fill="#10B981" opacity="0.1"/>
+
+      <!-- Slanted posture / leaning forward peeking -->
+      <circle cx="20" cy="48" r="14" fill="#94A3B8"/>
+      <path d="M5 85 C5 68 35 68 35 85" fill="#334155"/>
+      
+      <!-- Narrow, suspicious eye squinting -->
+      <path d="M22 45 L27 47" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+      <!-- Frown / bitter mouth -->
+      <path d="M22 54 Q25 51 28 54" stroke="#1A1D24" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- Central dramatic tension: Sharp thorny barrier / bitter emotional wall at bottom -->
+    <path d="M 90 150 Q 120 135 150 150" fill="none" stroke="#EF4444" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    
+    <!-- Thorny vines symbolizing '心怀狭隘' (narrow-minded bitterness) -->
+    <path d="M95 147 L90 142 M105 144 L102 138 M135 144 L138 138 M145 147 L150 142" stroke="#EF4444" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

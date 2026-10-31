@@ -1,0 +1,30 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Contextual Visualisierung: Stählerner Deich / Flutschutz-Bollwerk (Befestigung) -->
+  <!-- Hintergrund-Elemente (Hochwasser-Welle im Hintergrund) -->
+  <path d="M20 180 Q80 140 140 170 T240 160 L240 220 L20 220 Z" fill="#242933" opacity="0.6"/>
+
+  <!-- Massive Beton- und Stahlbarriere (symbolisiert "无论如何" - unerschütterliche Schutzmauer/Bollwerk) -->
+  <rect x="50" y="90" width="140" height="100" rx="6" fill="#2E3642"/>
+  <rect x="40" y="80" width="160" height="20" rx="4" fill="#3E4859"/>
+
+  <!-- Verstärkte Stahlträger (H-Träger) für absolute Robustheit -->
+  <rect x="70" y="100" width="12" height="90" fill="#4E5D73"/>
+  <rect x="114" y="100" width="12" height="90" fill="#4E5D73"/>
+  <rect x="158" y="100" width="12" height="90" fill="#4E5D73"/>
+
+  <!-- Horizontale Verstrebungen -->
+  <rect x="50" y="125" width="140" height="8" fill="#1A1D24"/>
+  <rect x="50" y="160" width="140" height="8" fill="#1A1D24"/>
+
+  <!-- Starkes, fokussiertes Warn- und Sicherheitssymbol (Akzentfarbe Orange/Gold) -->
+  <circle cx="120" cy="50" r="22" fill="#FF9F43" opacity="0.2"/>
+  <circle cx="120" cy="50" r="14" fill="#FF9F43"/>
+  <!-- Schild-/Festungsemblem im Zentrum -->
+  <path d="M120 40 L128 46 L128 54 C128 59 124 63 120 65 C116 63 112 59 112 54 L112 46 Z" fill="#1A1D24"/>
+
+  <!-- Zusätzliche Bodenverankerung -->
+  <path d="M30 190 L210 190 L220 200 L20 200 Z" fill="#15181E"/>
+</svg>

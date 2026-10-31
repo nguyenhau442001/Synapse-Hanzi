@@ -1,0 +1,57 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glowing horizon/path grid -->
+  <path d="M120 140 L30 210 M120 140 L210 210 M120 140 L120 210 M120 140 L75 210 M120 140 L165 210" stroke="#2A303C" stroke-width="1.5" stroke-dasharray="3 3"/>
+  
+  <!-- Horizon glow -->
+  <circle cx="120" cy="140" r="40" fill="#FFB703" opacity="0.08"/>
+  
+  <!-- Distant radiant sun/future dawn -->
+  <circle cx="120" cy="130" r="22" fill="url(#sunGlow)"/>
+  <defs>
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD166"/>
+      <stop offset="100%" stop-color="#F77F00"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Stepping Stones / Path leading forward (representing 'Qiancheng' / Future Path) -->
+  <ellipse cx="120" cy="205" rx="24" ry="10" fill="#2E3846"/>
+  <ellipse cx="120" cy="180" rx="20" ry="8" fill="#3A4659"/>
+  <ellipse cx="120" cy="158" rx="15" ry="6" fill="#4B5D73"/>
+  
+  <!-- Glowing golden steps highlights -->
+  <ellipse cx="120" cy="203" rx="18" ry="4" fill="#FFB703" opacity="0.4"/>
+  <ellipse cx="120" cy="178" rx="14" ry="3" fill="#FFB703" opacity="0.6"/>
+  <ellipse cx="120" cy="156" rx="10" ry="2.5" fill="#FFD166" opacity="0.8"/>
+
+  <!-- Iconic Physical Object/Character: An ambitious traveler/climber at the start looking up at a bright open horizon -->
+  <!-- Traveler Body / Torso (Modern flat vector style) -->
+  <path d="M106 185 L114 155 L126 155 L134 185 Z" fill="#219EBC"/>
+  
+  <!-- Traveler Head -->
+  <circle cx="120" cy="142" r="8" fill="#FFB703"/>
+  
+  <!-- Traveler Back Pack (Journey/Future context) -->
+  <rect x="113" y="152" width="14" height="22" rx="4" fill="#D62828"/>
+  
+  <!-- Dynamic upward arms/gesture reaching toward the bright future -->
+  <path d="M112 162 L98 145" stroke="#FFB703" stroke-width="4" stroke-linecap="round"/>
+  <path d="M128 162 L142 145" stroke="#FFB703" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Forward guiding light rays from top center -->
+  <path d="M120 110 L120 85" stroke="#FFD166" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+  <path d="M105 115 L92 98" stroke="#FFD166" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+  <path d="M135 115 L148 98" stroke="#FFD166" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Floating accent particles of success/aspirations -->
+  <circle cx="95" cy="120" r="2" fill="#FFD166"/>
+  <circle cx="148" cy="125" r="1.5" fill="#FFD166"/>
+  <circle cx="102" cy="95" r="1.5" fill="#FFB703"/>
+  <circle cx="138" cy="90" r="2" fill="#FFB703"/>
+  
+  <!-- Clean framing border accent -->
+  <rect x="1" y="1" width="238" height="238" rx="23" fill="none" stroke="#2E3846" stroke-width="2"/>
+</svg>

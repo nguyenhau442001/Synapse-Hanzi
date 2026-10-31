@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Background subtle grid lines representing professional workplace structure -->
+    <line x1="40" y1="180" x2="200" y2="180" stroke="#2A2F3D" stroke-width="2" stroke-linecap="round"/>
+    <line x1="40" y1="140" x2="200" y2="140" stroke="#2A2F3D" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="40" y1="100" x2="200" y2="100" stroke="#2A2F3D" stroke-width="1" stroke-dasharray="3 3"/>
+
+    <!-- Escalation / Progression Metaphor: Ascending multi-step architectural staircase -->
+    <!-- Step 1 (Base level) -->
+    <path d="M50 180 L80 180 L80 170 L50 170 Z" fill="#3A4255"/>
+    
+    <!-- Step 2 (Mid level) -->
+    <path d="M80 180 L120 180 L120 155 L80 155 Z" fill="#4B556D"/>
+    
+    <!-- Step 3 (High level / Pinnacle of EQ success) -->
+    <path d="M120 180 L170 180 L170 130 L120 130 Z" fill="#3B5998"/>
+
+    <!-- Dynamic connection arc / Bridge showing smooth professional transition and high interpersonal rapport -->
+    <path d="M 65 170 Q 100 120 145 130" fill="none" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Focal point: Golden node of emotional resonance at the peak -->
+    <circle cx="145" cy="130" r="10" fill="#F5A623"/>
+    <circle cx="145" cy="130" r="15" fill="none" stroke="#F5A623" stroke-width="1.5" opacity="0.4"/>
+    <circle cx="145" cy="130" r="20" fill="none" stroke="#F5A623" stroke-width="1" opacity="0.2"/>
+
+    <!-- Minimalist stylized figures demonstrating harmonic interaction and empathy -->
+    <!-- Person A (Left - Expressing/Communicating) -->
+    <circle cx="75" cy="140" r="8" fill="#E0E6ED"/>
+    <path d="M65 170 C65 155 85 155 85 170" fill="#61728F"/>
+
+    <!-- Person B (Right - Responding/Connecting at the peak) -->
+    <circle cx="165" cy="95" r="8" fill="#F5A623"/>
+    <path d="M155 130 C155 115 175 115 175 130" fill="#D48806"/>
+
+    <!-- Interactive bridge/signal waves between the two individuals -->
+    <path d="M 87 135 Q 110 110 153 95" fill="none" stroke="#61728F" stroke-width="2" stroke-dasharray="4 4" opacity="0.6"/>
+
+    <!-- Accentuation sparks representing clarity and understanding -->
+    <path d="M 125 105 L 130 110 L 125 115 L 120 110 Z" fill="#F5A623"/>
+    <path d="M 100 145 L 103 148 L 100 151 L 97 148 Z" fill="#E0E6ED" opacity="0.8"/>
+  </g>
+</svg>

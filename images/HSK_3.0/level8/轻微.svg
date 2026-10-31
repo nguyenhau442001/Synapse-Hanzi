@@ -1,0 +1,15 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(60, 60)">
+    <!-- Arm/Skin surface -->
+    <path d="M20,120 Q60,80 100,120" stroke="#E0A860" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <!-- Minor scratch marks (3 small, thin, light-colored lines) -->
+    <path d="M50,105 L65,100" stroke="#FFC107" stroke-width="2" stroke-linecap="round"/>
+    <path d="M70,102 L80,98" stroke="#FFC107" stroke-width="2" stroke-linecap="round"/>
+    <path d="M85,100 L95,96" stroke="#FFC107" stroke-width="2" stroke-linecap="round"/>
+    <!-- Magnifying glass focusing on the minor scratch -->
+    <circle cx="70" cy="100" r="30" stroke="#FFFFFF" stroke-width="4" fill="none" opacity="0.3"/>
+    <path d="M92,122 L115,145" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="115" cy="145" r="12" stroke="#FFFFFF" stroke-width="4" fill="none"/>
+  </g>
+</svg>

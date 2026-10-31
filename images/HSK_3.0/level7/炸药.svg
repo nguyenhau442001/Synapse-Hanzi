@@ -1,0 +1,72 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for 炸药 (Explosive/Dynamite) -->
+  <g transform="translate(0, 0)">
+    <!-- Ambient glow / hazard aura -->
+    <circle cx="120" cy="120" r="75" fill="#FF5722" opacity="0.08"/>
+
+    <!-- Sparks and dynamic danger elements -->
+    <path d="M 165 70 L 175 60" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 175 80 L 190 75" stroke="#FFC107" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 160 85 L 172 92" stroke="#FFC107" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Spark / Fire flame top -->
+    <path d="M 152 76 C 152 76 162 70 160 62 C 158 54 148 64 152 76 Z" fill="#FFC107"/>
+    <path d="M 154 72 C 154 72 159 68 158 63 C 157 59 151 65 154 72 Z" fill="#FF5722"/>
+
+    <!-- Stick 3 (Back left) -->
+    <g transform="rotate(-20 100 130)">
+      <rect x="85" y="100" width="30" height="70" rx="6" fill="#D32F2F"/>
+      <!-- Highlights -->
+      <rect x="90" y="100" width="6" height="70" fill="#EF5350" opacity="0.6"/>
+      <!-- End caps -->
+      <ellipse cx="100" cy="100" rx="15" ry="5" fill="#B71C1C"/>
+      <ellipse cx="100" cy="170" rx="15" ry="5" fill="#B71C1C"/>
+      <!-- Label band -->
+      <rect x="85" y="125" width="30" height="15" fill="#FFF" opacity="0.9"/>
+      <line x1="90" y1="132" x2="110" y2="132" stroke="#D32F2F" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Stick 2 (Back right) -->
+    <g transform="rotate(20 140 130)">
+      <rect x="125" y="100" width="30" height="70" rx="6" fill="#C62828"/>
+      <!-- Highlights -->
+      <rect x="130" y="100" width="6" height="70" fill="#EF5350" opacity="0.6"/>
+      <!-- End caps -->
+      <ellipse cx="140" cy="100" rx="15" ry="5" fill="#B71C1C"/>
+      <ellipse cx="140" cy="170" rx="15" ry="5" fill="#B71C1C"/>
+      <!-- Label band -->
+      <rect x="125" y="125" width="30" height="15" fill="#FFF" opacity="0.9"/>
+      <line x1="130" y1="132" x2="150" y2="132" stroke="#C62828" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Stick 1 (Center foreground) -->
+    <g>
+      <rect x="105" y="90" width="30" height="80" rx="6" fill="#E53935"/>
+      <!-- Highlights -->
+      <rect x="111" y="90" width="7" height="80" fill="#EF5350"/>
+      <!-- End caps -->
+      <ellipse cx="120" cy="90" rx="15" ry="5" fill="#C62828"/>
+      <ellipse cx="120" cy="170" rx="15" ry="5" fill="#B71C1C"/>
+      <!-- Label band -->
+      <rect x="105" y="120" width="30" height="18" fill="#FFF"/>
+      <!-- Hazard stripes icon on label -->
+      <path d="M 112 129 L 115 120 L 118 129 Z M 121 129 L 124 120 L 127 129 Z" fill="#F57C00"/>
+    </g>
+
+    <!-- Fuse rope (Burning wick) -->
+    <path d="M 120 85 C 120 70 140 70 152 76" fill="none" stroke="#795548" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 120 85 C 120 70 140 70 152 76" fill="none" stroke="#A1887F" stroke-width="1.5" stroke-dasharray="2 3" stroke-linecap="round"/>
+
+    <!-- Yellow Binding Strap holding them together -->
+    <g>
+      <rect x="92" y="108" width="56" height="8" rx="2" fill="#FFC107"/>
+      <rect x="90" y="152" width="60" height="8" rx="2" fill="#FFC107"/>
+      <!-- Buckles/Details -->
+      <rect x="115" y="107" width="10" height="10" fill="#FFA000"/>
+      <rect x="115" y="151" width="10" height="10" fill="#FFA000"/>
+    </g>
+  </g>
+</svg>

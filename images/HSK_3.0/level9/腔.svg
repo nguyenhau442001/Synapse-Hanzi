@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle ambient glow to focus on the central subject -->
+  <circle cx="120" cy="120" r="80" fill="#242B38" opacity="0.6"/>
+
+  <!-- Conceptual illustration for "腔" (Chest cavity / Khoang ngực based on the medical context) -->
+  <g transform="translate(0, 5)">
+    <!-- Human Torso Silhouette / Ribcage Structure -->
+    <!-- Outer shoulders/body contour (subtle, dark slate) -->
+    <path d="M 80,60 Q 120,40 160,60 L 175,170 Q 175,185 160,185 L 80,185 Q 65,185 65,170 Z" fill="#222733" opacity="0.5"/>
+
+    <!-- Spinal Column (Center back) -->
+    <rect x="116" y="65" width="8" height="110" rx="4" fill="#323B4D"/>
+    <circle cx="120" cy="75" r="3" fill="#4F5D75"/>
+    <circle cx="120" cy="95" r="3" fill="#4F5D75"/>
+    <circle cx="120" cy="115" r="3" fill="#4F5D75"/>
+    <circle cx="120" cy="135" r="3" fill="#4F5D75"/>
+    <circle cx="120" cy="155" r="3" fill="#4F5D75"/>
+
+    <!-- Ribs - Left Side (Vibrant Medical Accent: Orange/Gold) -->
+    <path d="M 116,75 Q 85,80 75,100 Q 70,110 82,118 Q 100,120 116,110 Z" fill="none" stroke="#FF9F43" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 116,95 Q 80,105 72,125 Q 68,135 80,143 Q 100,145 116,130 Z" fill="none" stroke="#FF9F43" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 116,115 Q 85,125 78,145 Q 74,155 86,163 Q 102,160 116,145 Z" fill="none" stroke="#FF9F43" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Ribs - Right Side (Symmetrical, matching accent) -->
+    <path d="M 124,75 Q 155,80 165,100 Q 170,110 158,118 Q 140,120 124,110 Z" fill="none" stroke="#FF9F43" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 124,95 Q 160,105 168,125 Q 172,135 160,143 Q 140,145 124,130 Z" fill="none" stroke="#FF9F43" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 124,115 Q 155,125 162,145 Q 166,155 154,163 Q 138,160 124,145 Z" fill="none" stroke="#FF9F43" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Internal Space / Cavity Indicator (The "Khoang" / Xoang) -->
+    <!-- Soft glowing lungs inside the cavity representing the medical context -->
+    <path d="M 114,85 Q 95,90 92,115 Q 90,135 105,145 Q 115,140 114,120 Z" fill="#2E4C6D" opacity="0.8"/>
+    <path d="M 126,85 Q 145,90 148,115 Q 150,135 135,145 Q 125,140 126,120 Z" fill="#2E4C6D" opacity="0.8"/>
+
+    <!-- Focal Medical Cross / Scan Indicator (Reinforcing precise anatomical examination) -->
+    <circle cx="120" cy="115" r="16" fill="#1A1D24" stroke="#FF9F43" stroke-width="2"/>
+    <line x1="120" y1="109" x2="120" y2="121" stroke="#FF9F43" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="114" y1="115" x2="126" y2="115" stroke="#FF9F43" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Clean scanning brackets framing the thoracic cavity -->
+    <path d="M 60,65 L 60,55 L 70,55" fill="none" stroke="#4F5D75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 180,65 L 180,55 L 170,55" fill="none" stroke="#4F5D75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 60,175 L 60,185 L 70,185" fill="none" stroke="#4F5D75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 180,175 L 180,185 L 170,185" fill="none" stroke="#4F5D75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

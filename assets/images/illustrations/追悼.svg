@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Wreath base -->
+  <circle cx="120" cy="120" r="65" fill="none" stroke="#FFD700" stroke-width="8" stroke-dasharray="10 6"/>
+  
+  <!-- Leaves on wreath -->
+  <path d="M120 55 L130 70 L110 70 Z" fill="#FFD700"/>
+  <path d="M185 120 L170 110 L170 130 Z" fill="#FFD700"/>
+  <path d="M120 185 L110 170 L130 170 Z" fill="#FFD700"/>
+  <path d="M55 120 L70 110 L70 130 Z" fill="#FFD700"/>
+  
+  <!-- Ribbon -->
+  <path d="M90 190 L150 190 L160 210 L80 210 Z" fill="#E6A800"/>
+  <path d="M100 190 L100 210 M140 190 L140 210" stroke="#1A1D24" stroke-width="2"/>
+  
+  <!-- Central Candle -->
+  <rect x="114" y="95" width="12" height="50" rx="2" fill="#F4F4F4"/>
+  <path d="M120 85 C125 85 130 90 120 75 C110 90 115 85 120 85" fill="#FF9500"/>
+  
+  <!-- Subtle shadow for depth -->
+  <ellipse cx="120" cy="215" rx="40" ry="5" fill="#000000" opacity="0.3"/>
+</svg>

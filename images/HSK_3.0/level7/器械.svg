@@ -1,0 +1,55 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle glowing medical background ring -->
+  <circle cx="120" cy="115" r="70" fill="none" stroke="#252D3D" stroke-width="2" stroke-dasharray="6 4"/>
+  
+  <!-- Surgical Tray Base -->
+  <path d="M 70,165 L 170,165 C 178,165 184,159 184,151 C 184,151 175,135 120,135 C 65,135 56,151 56,151 C 56,159 62,165 70,165 Z" fill="#2A3245" stroke="#3A445D" stroke-width="2"/>
+  <ellipse cx="120" cy="151" rx="60" ry="10" fill="#323B50" stroke="#434F6A" stroke-width="2"/>
+  
+  <!-- Medical Instruments (Precision Medical Tools / 器械) -->
+  
+  <!-- Scalpel -->
+  <g transform="translate(15, 5) rotate(15 120 120)">
+    <!-- Handle -->
+    <path d="M 105,115 L 135,55 C 137,51 133,47 129,49 L 101,109 Z" fill="#94A3B8" stroke="#64748B" stroke-width="1.5"/>
+    <!-- Blade -->
+    <path d="M 101,109 L 91,127 C 90,129 93,131 95,129 L 105,111 Z" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+    <!-- Grip details -->
+    <line x1="125" y1="70" x2="131" y2="73" stroke="#475569" stroke-width="1.5"/>
+    <line x1="121" y1="78" x2="127" y2="81" stroke="#475569" stroke-width="1.5"/>
+    <line x1="117" y1="86" x2="123" y2="89" stroke="#475569" stroke-width="1.5"/>
+  </g>
+
+  <!-- Surgical Forceps / Tweezers -->
+  <g transform="translate(-5, 10) rotate(-25 120 120)">
+    <path d="M 116,130 L 108,45 C 108,42 112,42 113,45 L 120,130 Z" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1"/>
+    <path d="M 124,130 L 132,45 C 132,42 128,42 127,45 L 120,130 Z" fill="#94A3B8" stroke="#64748B" stroke-width="1"/>
+    <!-- Connecting spring top -->
+    <ellipse cx="120" cy="132" rx="4" ry="2" fill="#64748B"/>
+  </g>
+
+  <!-- Surgical Scissors with Gold/Orange Accent Handles -->
+  <g transform="translate(0, 0)">
+    <!-- Blades -->
+    <path d="M 118,125 L 100,75 C 99,72 102,70 104,73 L 120,115 Z" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"/>
+    <path d="M 122,125 L 140,75 C 141,72 138,70 136,73 L 120,115 Z" fill="#CBD5E1" stroke="#64748B" stroke-width="1"/>
+    
+    <!-- Screw pivot -->
+    <circle cx="120" cy="120" r="3" stroke="#475569" stroke-width="1.5" fill="#E2E8F0"/>
+    
+    <!-- Handles (Scissor loops) with high-contrast Orange/Gold Accent -->
+    <path d="M 118,125 C 105,128 95,140 98,155 C 101,168 118,165 118,150" fill="none" stroke="#F59E0B" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 122,125 C 135,128 145,140 142,155 C 139,168 122,165 122,150" fill="none" stroke="#F59E0B" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Subtle sterilization/precision sparkle highlight -->
+  <g transform="translate(145, 65)">
+    <path d="M 0,-8 C 0,-2 2,0 8,0 C 2,0 0,2 0,8 C 0,2 -2,0 -8,0 C -2,0 0,-2 0,-8 Z" fill="#F59E0B" opacity="0.9"/>
+  </g>
+  <g transform="translate(75, 105) scale(0.6)">
+    <path d="M 0,-8 C 0,-2 2,0 8,0 C 2,0 0,2 0,8 C 0,2 -2,0 -8,0 C -2,0 0,-2 0,-8 Z" fill="#38BDF8" opacity="0.8"/>
+  </g>
+</svg>

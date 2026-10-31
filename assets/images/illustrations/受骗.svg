@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Shadow/Ground -->
+  <ellipse cx="120" cy="195" rx="70" ry="15" fill="#000" opacity="0.2"/>
+  
+  <!-- The Deceptive Object (The "Golden" Bait) -->
+  <circle cx="120" cy="130" r="45" fill="#FFB800"/>
+  <circle cx="120" cy="130" r="35" fill="#FFD700"/>
+  <path d="M120 100 L125 120 L145 120 L130 135 L135 155 L120 145 L105 155 L110 135 L95 120 L115 120 Z" fill="#FFF"/>
+  
+  <!-- The Trap (The "Hook" or "Snare") -->
+  <path d="M80 130 C 80 180, 160 180, 160 130" stroke="#FF5252" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <path d="M160 130 L175 115" stroke="#FF5252" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <path d="M80 130 L65 115" stroke="#FF5252" stroke-width="8" stroke-linecap="round" fill="none"/>
+  
+  <!-- The "Victim" (Represented by a hand reaching for the bait) -->
+  <path d="M110 180 L110 150 C110 140, 130 140, 130 150 L130 180" fill="#E0E0E0"/>
+  <path d="M105 180 L105 155 C105 145, 115 145, 115 155 L115 180" fill="#E0E0E0"/>
+  <path d="M135 180 L135 155 C135 145, 125 145, 125 155 L125 180" fill="#E0E0E0"/>
+</svg>

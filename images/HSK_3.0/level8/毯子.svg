@@ -1,0 +1,16 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Blanket -->
+  <!-- Bottom layer of the folded blanket, representing the deepest fold/shadow -->
+  <rect x="50" y="80" width="140" height="90" fill="#FBC02D" rx="8"/>
+
+  <!-- Middle layer of the folded blanket, representing the main body -->
+  <rect x="55" y="75" width="130" height="80" fill="#FFA726" rx="6"/>
+
+  <!-- Top layer of the folded blanket, representing the visible top fold -->
+  <rect x="60" y="70" width="120" height="70" fill="#FFD700" rx="4"/>
+
+  <!-- A subtle line to suggest a hem, texture, or slight ripple on the top layer -->
+  <rect x="60" y="130" width="120" height="5" fill="#FBC02D" opacity="0.4" rx="2"/>
+</svg>

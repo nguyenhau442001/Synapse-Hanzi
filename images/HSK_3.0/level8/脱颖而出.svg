@@ -1,0 +1,56 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glowing pedestal / stage effect to ground the character -->
+  <ellipse cx="120" cy="190" rx="60" ry="12" fill="#252A34"/>
+  <ellipse cx="120" cy="190" rx="35" ry="7" fill="#323846"/>
+
+  <!-- Character representing "She" (representing human talent & competition) -->
+  <!-- Body/Suit -->
+  <path d="M95 180 L95 155 C95 145 105 135 120 135 C135 135 145 145 145 155 L145 180 Z" fill="#2D3748"/>
+  <path d="M120 135 L120 165" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Neck and Head -->
+  <rect x="114" y="122" width="12" height="15" rx="4" fill="#FEEBC8"/>
+  <circle cx="120" cy="110" r="15" fill="#FEEBC8"/>
+  <!-- Hair (Modern sleek flat style) -->
+  <path d="M105 108 C105 95 112 92 120 92 C128 92 135 95 135 108 L135 115 C135 115 125 113 120 113 C115 113 105 115 105 115 Z" fill="#4A3525"/>
+  <path d="M104 105 C102 112 103 122 108 126" stroke="#4A3525" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Confident upward posture: One arm raised holding the trophy/project representation -->
+  <!-- Left arm resting -->
+  <path d="M97 145 L85 165 L90 168" fill="none" stroke="#2D3748" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Right arm raised high ("Standing out") -->
+  <path d="M143 145 L155 115 L148 110" fill="none" stroke="#2D3748" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Green Eco-Project Representation (Glowing Leaf/Sprout symbolizing the green innovation) -->
+  <path d="M148 110 C160 100 165 80 155 70 C145 60 130 70 135 85 C138 95 144 105 148 110 Z" fill="#48BB78"/>
+  <path d="M139 88 C144 85 150 82 154 74" stroke="#22543D" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <!-- The Crown / Laurel Wreath (Winning the championship/chúc quán quân) -->
+  <path d="M107 72 C114 66 126 66 133 72 C131 77 109 77 107 72 Z" fill="#ECC94B"/>
+  <circle cx="120" cy="65" r="3" fill="#D69E2E"/>
+  <circle cx="110" cy="67" r="2.5" fill="#D69E2E"/>
+  <circle cx="130" cy="67" r="2.5" fill="#D69E2E"/>
+
+  <!-- Visualizing "Tuō Yǐng" (Awakening / Emerging / Surpassing): Dynamic golden upward beams breaking through -->
+  <g opacity="0.85">
+    <!-- Center upward beam behind character -->
+    <polygon points="120,40 108,120 132,120" fill="url(#goldBeam)"/>
+    <!-- Radiance / Spotlight effect -->
+    <path d="M85 85 L60 60" stroke="#ECC94B" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    <path d="M155 85 L180 60" stroke="#ECC94B" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    <circle cx="120" cy="45" r="2" fill="#F6E05E"/>
+    <circle cx="95" cy="55" r="1.5" fill="#F6E05E"/>
+    <circle cx="145" cy="55" r="1.5" fill="#F6E05E"/>
+  </g>
+
+  <!-- Definitions for gradients -->
+  <defs>
+    <linearGradient id="goldBeam" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#ECC94B" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#ECC94B" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+</svg>

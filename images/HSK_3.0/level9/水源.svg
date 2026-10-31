@@ -1,0 +1,22 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Mountain landscape representing the origin -->
+  <path d="M40 200 L100 100 L160 200 Z" fill="#2D3436"/>
+  <path d="M80 200 L140 80 L200 200 Z" fill="#3B4247"/>
+  
+  <!-- The Water Source (Spring) -->
+  <path d="M120 160 C120 140 140 140 140 160 C140 180 120 180 120 160" fill="#4FC3F7"/>
+  <circle cx="130" cy="155" r="8" fill="#81D4FA"/>
+  
+  <!-- Flowing stream -->
+  <path d="M130 165 Q150 170 180 160" stroke="#4FC3F7" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M130 175 Q160 185 200 170" stroke="#4FC3F7" stroke-width="4" stroke-linecap="round" fill="none"/>
+  
+  <!-- Protecting hands (Symbolizing the protection of the source) -->
+  <path d="M90 220 C80 180 100 150 120 150" stroke="#FFB74D" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <path d="M170 220 C180 180 160 150 140 150" stroke="#FFB74D" stroke-width="8" stroke-linecap="round" fill="none"/>
+  
+  <!-- Small plant sprout near the source -->
+  <path d="M125 155 L125 145 M125 145 L120 140 M125 145 L130 140" stroke="#81C784" stroke-width="3" stroke-linecap="round"/>
+</svg>

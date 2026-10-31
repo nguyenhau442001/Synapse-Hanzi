@@ -1,0 +1,57 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Conceptual illustration for 卸任 (stepping down / leaving office) -->
+  <!-- A sleek modern office desk with an executive chair being stepped away from, a traditional stamp/seal resting on the desk, symbolizing relinquishing official post/authority -->
+  
+  <!-- Desk Background / Floor -->
+  <path d="M40 185 L200 185 L220 210 L20 210 Z" fill="#222730" opacity="0.6"/>
+  
+  <!-- Executive Desk -->
+  <rect x="50" y="140" width="140" height="12" rx="3" fill="#2E3642"/>
+  <rect x="65" y="152" width="10" height="35" rx="2" fill="#242B35"/>
+  <rect x="165" y="152" width="10" height="35" rx="2" fill="#242B35"/>
+  
+  <!-- Official Stamp / Seal (Sign of Authority being left behind) -->
+  <g transform="translate(100, 110)">
+    <!-- Stamp Handle -->
+    <path d="M15 12 C15 6, 25 6, 25 12 L28 28 C28 30, 26 31, 24 31 L16 31 C14 31, 12 30, 12 28 Z" fill="#D4AF37"/>
+    <rect x="10" y="31" width="20" height="8" rx="2" fill="#B38F27"/>
+    <!-- Stamp Base / Ink pad glow -->
+    <rect x="8" y="39" width="24" height="4" rx="1" fill="#FF5C5C"/>
+  </g>
+  
+  <!-- Empty Executive Chair (Slid back, symbolizing departure) -->
+  <g transform="translate(125, 80)">
+    <!-- Chair Base Wheels -->
+    <circle cx="20" cy="115" r="4" fill="#3E4857"/>
+    <circle cx="50" cy="115" r="4" fill="#3E4857"/>
+    <line x1="20" y1="115" x2="35" y2="105" stroke="#3E4857" stroke-width="3" stroke-linecap="round"/>
+    <line x1="50" y1="115" x2="35" y2="105" stroke="#3E4857" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Central Piston -->
+    <rect x="32" y="95" width="6" height="15" fill="#4E5D73"/>
+    
+    <!-- Seat Cushion -->
+    <rect x="15" y="80" width="40" height="18" rx="5" fill="#3B4758"/>
+    <rect x="18" y="83" width="34" height="12" rx="3" fill="#4E5D73"/>
+    
+    <!-- Backrest (Angled slightly to show absence) -->
+    <path d="M18 78 C18 45, 22 30, 35 30 C48 30, 52 45, 52 78 Z" fill="#3B4758"/>
+    <path d="M21 75 C21 48, 24 34, 35 34 C46 34, 49 48, 49 75 Z" fill="#4E5D73"/>
+  </g>
+
+  <!-- Outgoing motion/transition indicator (Subtle modern arrows or stepping away vector) -->
+  <g transform="translate(60, 95)" opacity="0.8">
+    <path d="M 0 15 Q 15 5, 30 15" fill="none" stroke="#FFA726" stroke-width="2.5" stroke-dasharray="4 4" stroke-linecap="round"/>
+    <path d="M 24 10 L 31 15 L 24 20" fill="none" stroke="#FFA726" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Subtle document on desk -->
+  <rect x="75" y="125" width="22" height="15" rx="1.5" fill="#E6EDF5" opacity="0.8"/>
+  <line x1="79" y1="130" x2="93" y2="130" stroke="#8CA0B3" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="79" y1="135" x2="88" y2="135" stroke="#8CA0B3" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Pen resting beside -->
+  <line x1="135" y1="128" x2="155" y2="134" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground/Surface -->
+  <rect x="40" y="180" width="160" height="4" rx="2" fill="#3E4451"/>
+  
+  <!-- Left Side: Representing Party A -->
+  <rect x="50" y="100" width="60" height="80" rx="4" fill="#4A90E2"/>
+  <circle cx="80" cy="80" r="15" fill="#4A90E2"/>
+  
+  <!-- Right Side: Representing Party B -->
+  <rect x="130" y="100" width="60" height="80" rx="4" fill="#F5A623"/>
+  <circle cx="160" cy="80" r="15" fill="#F5A623"/>
+  
+  <!-- The Boundary/Definition Line -->
+  <line x1="120" y1="60" x2="120" y2="180" stroke="#FF5722" stroke-width="4" stroke-dasharray="8 4"/>
+  
+  <!-- Divider Marker -->
+  <path d="M110 60 L130 60 L120 45 Z" fill="#FF5722"/>
+</svg>

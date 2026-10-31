@@ -1,0 +1,32 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle elements for depth -->
+  <circle cx="120" cy="120" r="80" fill="none" stroke="#252A34" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <!-- Character 1 (Bowing/Apologizing Person on the left) -->
+  <g transform="translate(65, 80)">
+    <!-- Head -->
+    <circle cx="20" cy="20" r="14" fill="#E0E6ED"/>
+    <!-- Body bent in a bow -->
+    <path d="M10,38 C15,35 25,35 35,45 C45,55 50,75 50,75 L35,80 C35,80 32,65 25,55 C18,48 10,45 10,45 Z" fill="#4C8BF5"/>
+    <!-- Arm bowing out -->
+    <path d="M28,42 L48,55 L52,48 L35,38 Z" fill="#4C8BF5"/>
+  </g>
+
+  <!-- Character 2 (Surprised/Standing Person on the right) -->
+  <g transform="translate(135, 75)">
+    <!-- Head -->
+    <circle cx="20" cy="16" r="14" fill="#E0E6ED"/>
+    <!-- Body upright -->
+    <path d="M10,32 C10,32 10,55 10,75 L30,75 C30,55 30,32 30,32 Z" fill="#9AA5B1"/>
+    <!-- Raised hand expressing sudden awkward realization / awkward pause -->
+    <path d="M25,35 L40,25 L43,32 L28,42 Z" fill="#9AA5B1"/>
+  </g>
+
+  <!-- Sweat drop / Embarrassment indicator above character 1 -->
+  <path d="M85,68 C85,65 88,60 90,57 C92,60 95,65 95,68 C95,71 92,73 90,73 C88,73 85,71 85,68 Z" fill="#339AF0" opacity="0.8"/>
+
+  <!-- Focal Accent: Subtle social awkwardness motion lines or gesture lines -->
+  <path d="M110,65 Q120,55 130,65" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+</svg>

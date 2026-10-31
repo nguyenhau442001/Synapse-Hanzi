@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Calendar Page Concept -->
+  <g transform="translate(60, 50)">
+    <!-- Base Calendar -->
+    <rect x="0" y="0" width="120" height="140" rx="8" fill="#2D343E" stroke="#4A5568" stroke-width="2"/>
+    <rect x="0" y="0" width="120" height="30" rx="8" fill="#E67E22"/>
+    
+    <!-- Calendar Holes -->
+    <circle cx="30" cy="15" r="4" fill="#1A1D24"/>
+    <circle cx="90" cy="15" r="4" fill="#1A1D24"/>
+    
+    <!-- Calendar Grid -->
+    <rect x="15" y="50" width="90" height="70" rx="4" fill="#1A1D24"/>
+    <line x1="15" y1="75" x2="105" y2="75" stroke="#2D343E" stroke-width="2"/>
+    <line x1="15" y1="100" x2="105" y2="100" stroke="#2D343E" stroke-width="2"/>
+    
+    <!-- The "Shifted" Day -->
+    <rect x="65" y="85" width="25" height="25" rx="4" fill="#E67E22"/>
+    
+    <!-- Arrow indicating shift -->
+    <path d="M 95 97 L 135 97 M 125 87 L 135 97 L 125 107" stroke="#E67E22" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    
+    <!-- New Position -->
+    <rect x="140" y="85" width="25" height="25" rx="4" fill="#F39C12" opacity="0.6"/>
+  </g>
+</svg>

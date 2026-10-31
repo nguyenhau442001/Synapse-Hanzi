@@ -1,0 +1,33 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Hospital Door Background -->
+  <rect x="80" y="40" width="80" height="160" rx="4" fill="#2D343E" stroke="#4A5568" stroke-width="2"/>
+  <rect x="118" y="40" width="4" height="160" fill="#1A1D24"/>
+  <circle cx="120" cy="120" r="6" fill="#4A5568"/>
+  
+  <!-- Mother Character -->
+  <!-- Body -->
+  <path d="M60 120 C60 100, 70 90, 80 90 L100 90 C110 90, 120 100, 120 120 L120 200 L60 200 Z" fill="#F39C12"/>
+  
+  <!-- Head -->
+  <circle cx="90" cy="80" r="15" fill="#FFD1A9"/>
+  
+  <!-- Hair -->
+  <path d="M75 80 C75 60, 105 60, 105 80 L105 90 L75 90 Z" fill="#2D343E"/>
+  
+  <!-- Facial Expression: Brows furrowed, eyes wide, mouth tight -->
+  <line x1="82" y1="72" x2="88" y2="76" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+  <line x1="98" y1="72" x2="92" y2="76" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="85" cy="78" r="2" fill="#1A1D24"/>
+  <circle cx="95" cy="78" r="2" fill="#1A1D24"/>
+  <path d="M85 86 Q90 84 95 86" stroke="#1A1D24" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Hands clasped in anxiety -->
+  <circle cx="105" cy="110" r="8" fill="#FFD1A9"/>
+  <circle cx="112" cy="115" r="8" fill="#FFD1A9"/>
+  
+  <!-- Motion lines to indicate pacing -->
+  <path d="M50 150 Q40 140 50 130" stroke="#F39C12" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M45 160 Q35 150 45 140" stroke="#F39C12" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

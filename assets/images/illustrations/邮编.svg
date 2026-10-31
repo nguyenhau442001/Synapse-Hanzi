@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle depth elements -->
+  <g opacity="0.15">
+    <line x1="40" y1="120" x2="200" y2="120" stroke="#60A5FA" stroke-width="1" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Mail Envelope Body (Physical Object for "邮编" / Postal Code) -->
+  <g transform="translate(36, 68)">
+    <!-- Envelope Back Shadow / Base -->
+    <rect x="0" y="20" width="168" height="104" rx="12" fill="#2563EB"/>
+    
+    <!-- Envelope Main Body -->
+    <rect x="0" y="24" width="168" height="104" rx="12" fill="#3B82F6"/>
+
+    <!-- Envelope Flap (Open/Closed styling) -->
+    <path d="M0 36L84 88L168 36" fill="none" stroke="#60A5FA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M0 24L84 76L168 24V20C168 13.3726 162.627 8 156 8H12C5.37258 8 0 13.3726 0 20V24Z" fill="#1D4ED8"/>
+
+    <!-- Postal Code Target / High-contrast Accent Area (Focusing on 'Bian' / Code digits) -->
+    <g transform="translate(92, 72)">
+      <!-- Background plate for postal code representation -->
+      <rect x="0" y="0" width="64" height="40" rx="6" fill="#1E293B"/>
+      
+      <!-- Accent border for focus -->
+      <rect x="0" y="0" width="64" height="40" rx="6" fill="none" stroke="#F59E0B" stroke-width="2"/>
+
+      <!-- Stylized Abstract Digit Slots representing the 6-digit Zip Code blocks -->
+      <rect x="8" y="10" width="6" height="20" rx="2" fill="#F59E0B"/>
+      <rect x="18" y="10" width="6" height="20" rx="2" fill="#F59E0B"/>
+      <rect x="28" y="10" width="6" height="20" rx="2" fill="#F59E0B"/>
+      <rect x="38" y="10" width="6" height="20" rx="2" fill="#F59E0B"/>
+      <rect x="48" y="10" width="6" height="20" rx="2" fill="#F59E0B"/>
+    </g>
+
+    <!-- Address Lines on Envelope (Left side) -->
+    <g transform="translate(16, 76)">
+      <rect x="0" y="0" width="56" height="6" rx="3" fill="#93C5FD" opacity="0.8"/>
+      <rect x="0" y="14" width="40" height="6" rx="3" fill="#93C5FD" opacity="0.6"/>
+    </g>
+  </g>
+
+  <!-- Location Pin Floating Above (Indicating Geographic Delivery / Code location) -->
+  <g transform="translate(120, 36)">
+    <!-- Pin shadow -->
+    <ellipse cx="0" cy="56" rx="8" ry="3" fill="#0F172A" opacity="0.6"/>
+    
+    <!-- Pin Body -->
+    <path d="M0 0C-11.0457 0 -20 8.9543 -20 20C-20 33.75 -0.000192308 52 0 52C0.000192308 52 20 33.75 20 20C20 8.9543 11.0457 0 0 0Z" fill="#F59E0B"/>
+    
+    <!-- Pin Inner Circle (White core) -->
+    <circle cx="0" cy="20" r="7" fill="#1E293B"/>
+  </g>
+</svg>

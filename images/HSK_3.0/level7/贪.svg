@@ -1,0 +1,18 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Hand reaching for gold -->
+  <path d="M120 180 C 100 180, 80 160, 80 130 L 80 100 C 80 80, 100 70, 120 70 C 140 70, 160 80, 160 100 L 160 130 C 160 160, 140 180, 120 180 Z" fill="#FFD700"/>
+  <path d="M110 170 L 110 140 M 120 175 L 120 140 M 130 170 L 130 140" stroke="#B8860B" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Pile of Gold Coins -->
+  <ellipse cx="120" cy="190" rx="40" ry="15" fill="#B8860B"/>
+  <ellipse cx="120" cy="180" rx="35" ry="12" fill="#FFD700"/>
+  <ellipse cx="120" cy="170" rx="30" ry="10" fill="#FFC107"/>
+  
+  <!-- Reaching fingers -->
+  <path d="M100 90 L 90 60 M 115 80 L 110 50 M 130 80 L 135 50 M 145 90 L 155 60" stroke="#FFD700" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Shadow/Depth -->
+  <ellipse cx="120" cy="205" rx="50" ry="8" fill="#000000" opacity="0.3"/>
+</svg>

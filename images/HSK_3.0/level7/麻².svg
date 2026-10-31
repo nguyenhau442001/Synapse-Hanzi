@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow to highlight the central object -->
+  <circle cx="120" cy="120" r="70" fill="#262D3D" opacity="0.5"/>
+
+  <!-- Ramie / Hemp Plant and Natural Fibers (Noun Representation) -->
+  <g transform="translate(0, 0)">
+    <!-- Natural sun-dried fiber strands (Hemp/Ramie fibers / 夏布原料) -->
+    <path d="M75 140 C 60 170, 70 190, 85 205" fill="none" stroke="#D4A373" stroke-width="3.5" stroke-linecap="round" opacity="0.8"/>
+    <path d="M90 135 C 80 165, 95 190, 110 208" fill="none" stroke="#E9EDC9" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+    <path d="M120 130 C 110 165, 125 195, 140 210" fill="none" stroke="#CCD5AE" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+    <path d="M150 135 C 160 165, 145 190, 130 205" fill="none" stroke="#D4A373" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+    <path d="M165 140 C 180 170, 165 195, 155 208" fill="none" stroke="#E9EDC9" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Central Ramie Stalk / Plant Stem -->
+    <rect x="116" y="70" width="8" height="90" rx="4" fill="#588157"/>
+    <rect x="117" y="75" width="2" height="80" rx="1" fill="#A3B18A" opacity="0.6"/>
+
+    <!-- Distinctive Ramie Leaves (Opposite pairing, serrated edges, heart-shaped base with pointed tips) -->
+    <!-- Left Leaf Pair 1 -->
+    <path d="M116 85 C 90 75, 75 90, 65 110 C 80 115, 95 110, 116 100 Z" fill="#3A5A40"/>
+    <path d="M116 85 C 100 80, 85 95, 65 110" fill="none" stroke="#588157" stroke-width="1"/>
+    
+    <!-- Right Leaf Pair 1 -->
+    <path d="M124 85 C 150 75, 165 90, 175 110 C 160 115, 145 110, 124 100 Z" fill="#3A5A40"/>
+    <path d="M124 85 C 140 80, 155 95, 175 110" fill="none" stroke="#588157" stroke-width="1"/>
+
+    <!-- Left Leaf Pair 2 -->
+    <path d="M116 115 C 95 105, 80 120, 72 138 C 88 142, 100 138, 116 128 Z" fill="#4A7C59"/>
+    <path d="M116 115 C 102 110, 90 125, 72 138" fill="none" stroke="#588157" stroke-width="1"/>
+
+    <!-- Right Leaf Pair 2 -->
+    <path d="M124 115 C 145 105, 160 120, 168 138 C 152 142, 140 138, 124 128 Z" fill="#4A7C59"/>
+    <path d="M124 115 C 138 110, 150 125, 168 138" fill="none" stroke="#588157" stroke-width="1"/>
+
+    <!-- Top Crown Leaves -->
+    <path d="M120 70 C 105 55, 115 40, 120 32 C 125 40, 135 55, 120 70 Z" fill="#588157"/>
+    <path d="M120 70 C 112 55, 116 45, 120 32" fill="none" stroke="#A3B18A" stroke-width="1"/>
+
+    <!-- Focus Accent / Golden Highlight spool of processed fiber thread -->
+    <g transform="translate(120, 165)">
+      <ellipse cx="0" cy="0" rx="32" ry="12" fill="#E9C46A"/>
+      <ellipse cx="0" cy="-4" rx="32" ry="12" fill="#F4A261"/>
+      <!-- Thread strands wrapped -->
+      <path d="M-28 -2 C -15 6, 15 6, 28 -2" fill="none" stroke="#E76F51" stroke-width="1.5" opacity="0.6"/>
+      <path d="M-25 -6 C -12 2, 12 2, 25 -6" fill="none" stroke="#E76F51" stroke-width="1.5" opacity="0.6"/>
+    </g>
+  </g>
+</svg>

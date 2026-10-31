@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative glowing elements (Subtle business/financial atmosphere) -->
+  <circle cx="120" cy="120" r="80" fill="none" stroke="#2A303C" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <!-- Central Physical Object: A sleek, modern mechanical cash register combined with golden coin stack and upward growth chart representing "营利" (profit-making / commercial enterprise) -->
+  
+  <!-- Base platform -->
+  <rect x="70" y="165" width="100" height="12" rx="6" fill="#2E3544"/>
+  <rect x="85" y="155" width="70" height="12" rx="4" fill="#3A4454"/>
+
+  <!-- Cash Register Body -->
+  <path d="M 80 155 L 95 105 L 145 105 L 160 155 Z" fill="#4A5568"/>
+  
+  <!-- Register Screen / Display -->
+  <rect x="100" y="115" width="40" height="25" rx="3" fill="#1E222B"/>
+  <!-- Green financial indicator line on screen -->
+  <path d="M 108 130 L 118 123 L 126 128 L 134 119" fill="none" stroke="#00E676" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Cash Drawer (Slightly open at the bottom) -->
+  <rect x="75" y="145" width="90" height="16" rx="3" fill="#2D3748"/>
+  <rect x="110" y="151" width="20" height="4" rx="2" fill="#718096"/>
+
+  <!-- Golden Coins Stack representing profit/gain -->
+  <g transform="translate(135, 75)">
+    <!-- Coin 3 (Bottom) -->
+    <ellipse cx="25" cy="45" rx="18" ry="8" fill="#D69E2E"/>
+    <path d="M 7 45 V 53 C 7 57, 43 57, 43 53 V 45" fill="#B7791F"/>
+    <ellipse cx="25" cy="53" rx="18" ry="8" fill="#B7791F"/>
+    
+    <!-- Coin 2 (Middle) -->
+    <ellipse cx="25" cy="32" rx="18" ry="8" fill="#ECC94B"/>
+    <path d="M 7 32 V 40 C 7 44, 43 44, 43 40 V 32" fill="#D69E2E"/>
+    <ellipse cx="25" cy="40" rx="18" ry="8" fill="#D69E2E"/>
+
+    <!-- Coin 1 (Top) -->
+    <ellipse cx="25" cy="18" rx="18" ry="8" fill="#F6E05E"/>
+    <path d="M 7 18 V 26 C 7 30, 43 30, 43 26 V 18" fill="#ECC94B"/>
+    <ellipse cx="25" cy="26" rx="18" ry="8" fill="#ECC94B"/>
+    <ellipse cx="25" cy="18" rx="18" ry="8" fill="#F6E05E"/>
+  </g>
+
+  <!-- Upward Trend Arrow weaving through the objects -->
+  <path d="M 50 135 C 70 135, 80 95, 105 75" fill="none" stroke="#FFB703" stroke-width="4" stroke-linecap="round"/>
+  <!-- Arrowhead -->
+  <path d="M 98 70 L 112 72 L 105 84 Z" fill="#FFB703"/>
+
+</svg>

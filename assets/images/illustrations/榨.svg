@@ -1,0 +1,55 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Juicer base / body -->
+    <path d="M90 170 L150 170 L140 205 L100 205 Z" fill="#3A4252" />
+    <rect x="105" y="180" width="30" height="15" rx="3" fill="#FF9F43" />
+    <circle cx="120" cy="187.5" r="4" fill="#1A1D24" />
+
+    <!-- Glass pitcher / Carafe -->
+    <path d="M85 110 L155 110 L145 170 L95 170 Z" fill="#2E3646" opacity="0.6"/>
+    <!-- Fresh orange juice level -->
+    <path d="M98 135 L142 135 L145 170 L95 170 Z" fill="#FF9F43" />
+    
+    <!-- Glass highlights -->
+    <path d="M92 115 L97 165" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+    
+    <!-- Fresh juice drops -->
+    <circle cx="120" cy="123" r="3" fill="#FF9F43" opacity="0.8"/>
+    
+    <!-- Juicer top funnel / cone mechanism -->
+    <path d="M70 95 L170 95 L155 110 L85 110 Z" fill="#4E5D6C" />
+    
+    <!-- Reamer / Press Head -->
+    <path d="M120 70 Q140 85 140 100 L100 100 Q100 85 120 70 Z" fill="#FFB84D" />
+    <path d="M120 65 L125 100 L115 100 Z" fill="#E08E2D" />
+    <path d="M105 85 L135 85" stroke="#E08E2D" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Halved Orange on top / being pressed -->
+    <g transform="translate(120, 50)">
+      <!-- Orange Peel Outer -->
+      <path d="M-30 15 Q0 -25 30 15 Z" fill="#FF7675" />
+      <path d="M-32 12 Q0 -30 32 12 C25 22 -25 22 -32 12 Z" fill="#FF9F43" />
+      
+      <!-- Orange segments pattern -->
+      <path d="M0 -5 L-12 12" stroke="#FFEAA7" stroke-width="2" stroke-linecap="round" />
+      <path d="M0 -5 L12 12" stroke="#FFEAA7" stroke-width="2" stroke-linecap="round" />
+      <path d="M0 -5 L0 15" stroke="#FFEAA7" stroke-width="2" stroke-linecap="round" />
+      <circle cx="0" cy="-5" r="3" fill="#FFEAA7" />
+    </g>
+
+    <!-- Action motion lines (pressing/squeezing effect) -->
+    <path d="M75 50 L65 55" stroke="#FF9F43" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <path d="M165 50 L175 55" stroke="#FF9F43" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <path d="M70 70 L60 75" stroke="#FF9F43" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+    <path d="M170 70 L180 75" stroke="#FF9F43" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+    
+    <!-- Splash / Freshness spark particles -->
+    <circle cx="85" cy="100" r="2" fill="#FFEAA7" />
+    <circle cx="155" cy="100" r="2" fill="#FFEAA7" />
+    <circle cx="100" cy="60" r="1.5" fill="#FFEAA7" />
+    <circle cx="140" cy="60" r="1.5" fill="#FFEAA7" />
+  </g>
+</svg>

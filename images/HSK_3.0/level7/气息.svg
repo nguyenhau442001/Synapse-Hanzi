@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative Contextual Background (Ancient alleyway / historical vibe) -->
+  <path d="M40 180 L40 100 L70 90 L70 180 Z" fill="#242933"/>
+  <path d="M200 180 L200 80 L170 70 L170 180 Z" fill="#242933"/>
+  
+  <!-- Traditional Chinese eaves silhouette -->
+  <path d="M25 100 Q40 92 70 90 L75 95 L25 100 Z" fill="#2F3644"/>
+  <path d="M215 80 Q200 72 170 70 L165 75 L215 80 Z" fill="#2F3644"/>
+
+  <!-- Cobblestone ground -->
+  <ellipse cx="120" cy="180" rx="90" ry="15" fill="#222731"/>
+
+  <!-- Main Central Object: Antique Incense Burner / Urn releasing elegant flowing vapor (representing 'qìxī' - breath/atmosphere/essence) -->
+  
+  <!-- Stand / Base -->
+  <rect x="105" y="160" width="30" height="12" rx="3" fill="#D4AF37"/>
+  <rect x="95" y="152" width="50" height="8" rx="2" fill="#E6C657"/>
+
+  <!-- Vessel Body -->
+  <path d="M85 110 C85 100 95 95 120 95 C145 95 155 100 155 110 C155 130 148 148 120 150 C92 148 85 130 85 110 Z" fill="#2E3544" stroke="#D4AF37" stroke-width="2"/>
+  
+  <!-- Vessel Rim / Handles -->
+  <path d="M80 105 Q70 105 72 115 Q75 120 85 118" fill="none" stroke="#D4AF37" stroke-width="3" stroke-linecap="round"/>
+  <path d="M160 105 Q170 105 168 115 Q165 120 155 118" fill="none" stroke="#D4AF37" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="120" cy="98" rx="22" ry="4" fill="#D4AF37"/>
+
+  <!-- Flowing Qì / Breath / Atmosphere (Elegant swirling tendrils representing historical essence & breath) -->
+  <path d="M120 94 C120 70 100 65 105 45 C110 30 130 35 125 20" fill="none" stroke="#64B5F6" stroke-width="3.5" stroke-linecap="round" opacity="0.85"/>
+  <path d="M112 94 C95 75 80 75 75 55 C70 40 85 30 90 18" fill="none" stroke="#81C784" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M128 94 C145 75 160 70 165 52 C170 35 150 28 145 15" fill="none" stroke="#FFD54F" stroke-width="2.5" stroke-linecap="round" opacity="0.75"/>
+
+  <!-- Floating particles / cultural essence sparks -->
+  <circle cx="100" cy="35" r="2" fill="#FFD54F" opacity="0.9"/>
+  <circle cx="138" cy="42" r="1.5" fill="#64B5F6" opacity="0.8"/>
+  <circle cx="85" cy="50" r="2" fill="#81C784" opacity="0.7"/>
+  <circle cx="155" cy="30" r="1.5" fill="#FFD54F" opacity="0.85"/>
+
+  <!-- Subtle glow at the source of breath -->
+  <circle cx="120" cy="92" r="6" fill="#FFD54F" opacity="0.4"/>
+</svg>

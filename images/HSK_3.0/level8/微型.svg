@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Human skin layer (cross-section) -->
+  <path d="M0 160 Q120 140 240 160 L240 240 L0 240 Z" fill="#2D343E"/>
+  <path d="M0 160 Q120 140 240 160" stroke="#4A5568" stroke-width="2" fill="none"/>
+  
+  <!-- The Micro-sensor (The Noun) -->
+  <g transform="translate(120, 150)">
+    <!-- Main sensor body -->
+    <rect x="-10" y="-15" width="20" height="30" rx="4" fill="#F59E0B"/>
+    <!-- Micro-circuitry details -->
+    <rect x="-6" y="-8" width="12" height="2" fill="#1A1D24"/>
+    <rect x="-6" y="-2" width="12" height="2" fill="#1A1D24"/>
+    <rect x="-6" y="4" width="12" height="2" fill="#1A1D24"/>
+    <!-- Sensor probe tip -->
+    <rect x="-3" y="15" width="6" height="12" fill="#D97706"/>
+    <!-- Connection points -->
+    <circle cx="0" cy="-18" r="3" fill="#FBBF24"/>
+  </g>
+  
+  <!-- Magnifying glass effect to emphasize "Micro" scale -->
+  <circle cx="120" cy="120" r="50" stroke="#374151" stroke-width="4" fill="none" stroke-dasharray="8 8"/>
+  <path d="M155 155 L180 180" stroke="#374151" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="185" cy="185" r="10" stroke="#374151" stroke-width="4" fill="none"/>
+</svg>

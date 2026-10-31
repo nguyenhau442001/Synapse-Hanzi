@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative subtle background elements -->
+  <circle cx="120" cy="120" r="90" fill="none" stroke="#262B35" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- Meeting / Hội đàm Illustration Group -->
+  <g transform="translate(0, 10)">
+    <!-- Table representing formal discussion -->
+    <path d="M 80 145 L 160 145 L 175 165 L 65 165 Z" fill="#2E3646"/>
+    <rect x="75" y="165" width="90" height="6" rx="3" fill="#3B4455"/>
+    <path d="M 90 171 L 100 195" stroke="#3B4455" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 150 171 L 140 195" stroke="#3B4455" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Left Person (Head of State / Official A) -->
+    <g>
+      <!-- Body / Suit -->
+      <path d="M 50 140 C 50 120 70 120 85 140 L 90 165 L 45 165 Z" fill="#38BDF8"/>
+      <!-- Tie -->
+      <polygon points="67,125 70,125 71,145 68,150 66,145" fill="#F59E0B"/>
+      <!-- Head -->
+      <circle cx="68" cy="98" r="14" fill="#FBBF24"/>
+      <!-- Hair -->
+      <path d="M 54 95 C 54 85 82 85 82 95 C 82 98 80 96 78 94 C 74 91 62 91 58 94 C 56 96 54 98 54 95 Z" fill="#1E293B"/>
+    </g>
+
+    <!-- Right Person (Head of State / Official B) -->
+    <g>
+      <!-- Body / Suit -->
+      <path d="M 190 140 C 190 120 170 120 155 140 L 150 165 L 195 165 Z" fill="#818CF8"/>
+      <!-- Tie -->
+      <polygon points="173,125 170,125 169,145 172,150 174,145" fill="#F59E0B"/>
+      <!-- Head -->
+      <circle cx="172" cy="98" r="14" fill="#FBBF24"/>
+      <!-- Hair -->
+      <path d="M 158 95 C 158 85 186 85 186 95 C 186 98 184 96 182 94 C 178 91 166 91 162 94 C 160 96 158 98 158 95 Z" fill="#334155"/>
+    </g>
+
+    <!-- Dynamic Action: Speech Bubbles / Dialogue Interaction (Motion/Action Lines) -->
+    <g fill="none" stroke-linecap="round">
+      <!-- Left speech energy -->
+      <path d="M 88 95 C 96 90 100 85 104 75" stroke="#38BDF8" stroke-width="3" stroke-dasharray="3 3"/>
+      <!-- Right speech energy -->
+      <path d="M 152 95 C 144 90 140 85 136 75" stroke="#818CF8" stroke-width="3" stroke-dasharray="3 3"/>
+      
+      <!-- Central meeting interaction waves (speech/talk action) -->
+      <path d="M 112 85 C 116 80 124 80 128 85" stroke="#F59E0B" stroke-width="3"/>
+      <path d="M 108 77 C 114 70 126 70 132 77" stroke="#F59E0B" stroke-width="2.5" opacity="0.7"/>
+    </g>
+
+    <!-- Document / Official Agreement on Table (Action Object) -->
+    <rect x="108" y="135" width="24" height="16" rx="2" fill="#F8FAFC"/>
+    <line x1="113" y1="140" x2="127" y2="140" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="113" y1="145" x2="122" y2="145" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+</svg>

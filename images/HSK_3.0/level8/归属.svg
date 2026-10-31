@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Document/Property Deed Base -->
+    <rect x="75" y="45" width="90" height="115" rx="8" fill="#242B35" stroke="#3A4454" stroke-width="2"/>
+    
+    <!-- Document Header lines -->
+    <rect x="95" y="65" width="50" height="6" rx="3" fill="#4E5D73"/>
+    <rect x="95" y="80" width="35" height="4" rx="2" fill="#3A4454"/>
+    <rect x="95" y="90" width="40" height="4" rx="2" fill="#3A4454"/>
+
+    <!-- Legal Seal / Stamp (Gold Accent) -->
+    <circle cx="120" cy="122" r="14" fill="#FFB800" opacity="0.2"/>
+    <circle cx="120" cy="122" r="10" fill="#FFB800"/>
+    <path d="M115 122 L118 125 L125 118" stroke="#1A1D24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+    <!-- Scale of Justice (Legal/Ownership Symbol) atop the document -->
+    <g transform="translate(120, 28)">
+      <!-- Stand/Pillar -->
+      <path d="M-12 18 L12 18 L10 22 L-10 22 Z" fill="#E2E8F0"/>
+      <rect x="-2" y="2" width="4" height="16" fill="#E2E8F0"/>
+      <circle cx="0" cy="2" r="3" fill="#FFB800"/>
+      
+      <!-- Beam -->
+      <path d="M-22 2 L22 2 L20 6 L-20 6 Z" fill="#FFB800"/>
+      
+      <!-- Left Pan -->
+      <path d="M-22 6 L-28 16 L-16 16 Z" fill="none" stroke="#E2E8F0" stroke-width="1.5"/>
+      <path d="M-22 16 C-22 19 -18 19 -22 19" fill="#E2E8F0"/>
+      <ellipse cx="-22" cy="16" rx="8" ry="3" fill="#3A4454" stroke="#E2E8F0" stroke-width="1.5"/>
+      
+      <!-- Right Pan -->
+      <path d="M22 6 L16 16 L28 16 Z" fill="none" stroke="#E2E8F0" stroke-width="1.5"/>
+      <ellipse cx="22" cy="16" rx="8" ry="3" fill="#3A4454" stroke="#E2E8F0" stroke-width="1.5"/>
+    </g>
+
+    <!-- Key Symbol of Ownership/Belonging -->
+    <g transform="translate(120, 178)">
+      <!-- Key Ring -->
+      <circle cx="0" cy="0" r="12" fill="none" stroke="#FFB800" stroke-width="5"/>
+      <!-- Key Shaft -->
+      <rect x="-4" y="10" width="8" height="28" rx="2" fill="#FFB800"/>
+      <!-- Key Teeth -->
+      <rect x="4" y="24" width="8" height="6" rx="1" fill="#FFB800"/>
+      <rect x="4" y="32" width="6" height="6" rx="1" fill="#FFB800"/>
+    </g>
+  </g>
+</svg>

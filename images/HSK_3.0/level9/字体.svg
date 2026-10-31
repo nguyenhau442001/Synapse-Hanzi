@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Subtle Grid for Design Context -->
+  <path d="M40 60 H200 M40 100 H200 M40 140 H200 M40 180 H200" stroke="#262B35" stroke-width="1" stroke-dasharray="4 4"/>
+  <path d="M60 40 V200 M100 40 V200 M140 40 V200 M180 40 V200" stroke="#262B35" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- Main Object: Sleek Modern Monitor / Design Workspace representing digital typography -->
+  <g transform="translate(0, 5)">
+    <!-- Monitor Stand Base -->
+    <path d="M90 175 L150 175 L160 185 L80 185 Z" fill="#3A4250" />
+    <rect x="112" y="145" width="16" height="32" fill="#2E3440" />
+
+    <!-- Monitor Outer Frame -->
+    <rect x="45" y="45" width="150" height="105" rx="10" fill="#2E3440" stroke="#434C5E" stroke-width="3"/>
+    
+    <!-- Monitor Screen -->
+    <rect x="53" y="53" width="134" height="89" rx="6" fill="#111318"/>
+
+    <!-- UI Header Bar inside Screen -->
+    <line x1="53" y1="69" x2="187" y2="69" stroke="#262B35" stroke-width="1"/>
+    <circle cx="63" cy="61" r="2" fill="#FF5F56"/>
+    <circle cx="71" cy="61" r="2" fill="#FFBD2E"/>
+    <circle cx="79" cy="61" r="2" fill="#27C93F"/>
+
+    <!-- Typography Elements / Letterforms (Vector glyphs representing 'Font/Typeface') -->
+    <!-- Stylized Letter 'A' -->
+    <path d="M85 115 L95 85 L105 115 Z M88 107 H102" fill="none" stroke="#F59E0B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Stylized Letter 'g' / Glyph curves -->
+    <path d="M125 90 C120 90 117 93 117 97 C117 101 120 103 125 103 H130 V113 C130 117 127 120 123 120 C119 120 117 117 117 115" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="130" cy="97" r="1.5" fill="#38BDF8"/>
+
+    <!-- Design Grid Lines & Alignment Guides on Screen -->
+    <line x1="70" y1="125" x2="170" y2="125" stroke="#374151" stroke-width="2" stroke-dasharray="3 3"/>
+    <line x1="115" y1="75" x2="115" y2="120" stroke="#F59E0B" stroke-width="1" opacity="0.4"/>
+    <line x1="75" y1="100" x2="165" y2="100" stroke="#38BDF8" stroke-width="1" opacity="0.4"/>
+
+    <!-- Floating Design Tool / Cursor -->
+    <g transform="translate(145, 95)">
+      <path d="M0 0 L12 16 L7 17 L4 22 L1 20 L4 15 Z" fill="#F3F4F6" stroke="#1E293B" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

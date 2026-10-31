@@ -1,0 +1,34 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground/Airport Floor -->
+  <path d="M20 200 L220 200 L220 205 L20 205 Z" fill="#333842"/>
+  
+  <!-- The Returning Scientist/Professional -->
+  <g transform="translate(120, 180)">
+    <!-- Body -->
+    <path d="M-15 0 L15 0 L10 -60 L-10 -60 Z" fill="#FFB84D"/>
+    <!-- Head -->
+    <circle cx="0" cy="-75" r="15" fill="#FFD580"/>
+    <!-- Suitcase -->
+    <rect x="20" y="-30" width="25" height="30" rx="3" fill="#5DADE2"/>
+    <path d="M25 -30 L25 -35 A5 5 0 0 1 35 -35 L35 -30" fill="none" stroke="#5DADE2" stroke-width="3"/>
+  </g>
+  
+  <!-- Welcoming Crowd (Simplified silhouettes) -->
+  <g transform="translate(40, 180)">
+    <circle cx="0" cy="-60" r="10" fill="#A0A0A0"/>
+    <path d="M-10 -50 L10 -50 L5 0 L-5 0 Z" fill="#A0A0A0"/>
+  </g>
+  <g transform="translate(70, 180)">
+    <circle cx="0" cy="-60" r="10" fill="#A0A0A0"/>
+    <path d="M-10 -50 L10 -50 L5 0 L-5 0 Z" fill="#A0A0A0"/>
+  </g>
+  
+  <!-- Laurel Wreath/Honor Symbol (Abstracted as a gold arc) -->
+  <path d="M90 80 A40 40 0 0 1 150 80" fill="none" stroke="#FFD700" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="120" cy="70" r="5" fill="#FFD700"/>
+  
+  <!-- Background Airport Terminal Arch -->
+  <path d="M60 180 L60 100 A60 60 0 0 1 180 100 L180 180" fill="none" stroke="#2C333F" stroke-width="8"/>
+</svg>

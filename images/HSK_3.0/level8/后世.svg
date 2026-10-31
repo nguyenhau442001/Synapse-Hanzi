@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ancient Scroll representing the legacy -->
+  <path d="M70 70h100v20H70z" fill="#D4AF37"/>
+  <path d="M70 90h100v80H70z" fill="#E6C25E"/>
+  <path d="M70 170h100v20H70z" fill="#B8860B"/>
+  
+  <!-- Person representing the future generation (Houshi) -->
+  <g transform="translate(120, 150)">
+    <circle cx="0" cy="-40" r="15" fill="#A0AEC0"/>
+    <path d="M-20 -25h40l-5 40h-30z" fill="#A0AEC0"/>
+    <path d="M-15 15l-5 30M15 15l5 30" stroke="#A0AEC0" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Light rays emanating from the scroll to the person -->
+  <path d="M120 90 L120 110" stroke="#F6E05E" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M100 90 L105 110" stroke="#F6E05E" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M140 90 L135 110" stroke="#F6E05E" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>

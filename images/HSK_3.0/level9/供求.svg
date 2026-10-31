@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background grid/glow elements for market context -->
+  <circle cx="120" cy="120" r="85" fill="none" stroke="#2A2F3B" stroke-width="1.5" stroke-dasharray="4 4"/>
+  
+  <!-- Central Physical Object representing Supply & Demand (Physical Scale/Balance) -->
+  <!-- Base Stand -->
+  <path d="M105 190 L135 190 L130 150 L110 150 Z" fill="#4B5563"/>
+  <rect x="95" y="190" width="50" height="8" rx="4" fill="#6B7280"/>
+  
+  <!-- Vertical Pillar -->
+  <rect x="117" y="65" width="6" height="85" rx="3" fill="#9CA3AF"/>
+  
+  <!-- Top Finial -->
+  <circle cx="120" cy="62" r="5" fill="#F59E0B"/>
+  
+  <!-- Scale Beam (Balanced Pivot) -->
+  <path d="M70 85 L170 85 L165 92 L75 92 Z" fill="#D1D5DB"/>
+  <circle cx="120" cy="88" r="4" fill="#4B5563"/>
+  
+  <!-- Left Pan (Supply / Goods) -->
+  <path d="M60 115 L95 115 L88 140 C85 144 70 144 67 140 Z" fill="#3B82F6" opacity="0.9"/>
+  <!-- Left Chains -->
+  <line x1="70" y1="88" x2="68" y2="115" stroke="#9CA3AF" stroke-width="2"/>
+  <line x1="85" y1="88" x2="87" y2="115" stroke="#9CA3AF" stroke-width="2"/>
+  
+  <!-- Goods on Left Pan (Cubes representing commodities/supply) -->
+  <rect x="71" y="98" width="14" height="14" rx="2" fill="#60A5FA"/>
+  <rect x="63" y="104" width="12" height="12" rx="2" fill="#93C5FD"/>
+  <rect x="80" y="102" width="13" height="13" rx="2" fill="#2563EB"/>
+
+  <!-- Right Pan (Demand / Shopping Cart or Consumer Goods) -->
+  <path d="M145 115 L180 115 L173 140 C170 144 155 144 152 140 Z" fill="#F59E0B" opacity="0.9"/>
+  <!-- Right Chains -->
+  <line x1="155" y1="88" x2="153" y2="115" stroke="#9CA3AF" stroke-width="2"/>
+  <line x1="170" y1="88" x2="172" y2="115" stroke="#9CA3AF" stroke-width="2"/>
+
+  <!-- Items on Right Pan (Shopping Bags/Boxes representing demand) -->
+  <path d="M157 108 L169 108 L167 98 L159 98 Z" fill="#FDE68A"/>
+  <path d="M160 98 C160 95 166 95 166 98" fill="none" stroke="#D97706" stroke-width="1.5"/>
+  <rect x="154" y="106" width="18" height="10" rx="2" fill="#FBBF24"/>
+  
+  <rect x="169" y="102" width="10" height="14" rx="2" fill="#FCD34D"/>
+</svg>

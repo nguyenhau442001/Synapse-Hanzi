@@ -1,0 +1,55 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle background grid/ambient glow -->
+  <circle cx="120" cy="115" r="70" fill="#222B38" opacity="0.6"/>
+
+  <!-- Legal Document / Constitution Base -->
+  <g transform="translate(68, 50)">
+    <!-- Document shadow/back page -->
+    <rect x="6" y="6" width="92" height="116" rx="6" fill="#12151B"/>
+    <!-- Document main body -->
+    <rect x="0" y="0" width="92" height="116" rx="6" fill="#F0F3F8"/>
+    
+    <!-- Document Header Accent -->
+    <path d="M 0 6 C 0 2.686 2.686 0 6 0 L 86 0 C 89.314 0 92 2.686 92 6 L 92 24 L 0 24 Z" fill="#3B82F6"/>
+    <circle cx="16" cy="12" r="3" fill="#FFFFFF" opacity="0.8"/>
+    <rect x="25" y="10" width="30" height="4" rx="2" fill="#FFFFFF" opacity="0.8"/>
+
+    <!-- Document Text Lines -->
+    <rect x="14" y="38" width="64" height="4" rx="2" fill="#CBD5E1"/>
+    <rect x="14" y="50" width="50" height="4" rx="2" fill="#CBD5E1"/>
+    <rect x="14" y="62" width="64" height="4" rx="2" fill="#CBD5E1"/>
+    <rect x="14" y="74" width="40" height="4" rx="2" fill="#CBD5E1"/>
+
+    <!-- Official Red Seal / Stamp (Symbol of Enactment/Enforcement) -->
+    <g transform="translate(54, 76)">
+      <circle cx="14" cy="14" r="14" fill="#EF4444" opacity="0.9"/>
+      <circle cx="14" cy="14" r="11" fill="none" stroke="#FEE2E2" stroke-width="1.5" stroke-dasharray="3 1.5"/>
+      <path d="M 9 14 L 12 17 L 19 10" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- Golden Official Seal / Gavel / Enactment Tool overlaying the document -->
+  <!-- Fountain pen / Official Seal dynamic stroke representing "Putting into practice / Enforcement" -->
+  <g transform="translate(145, 115) rotate(-30)">
+    <!-- Pen shadow -->
+    <rect x="2" y="-48" width="16" height="96" rx="8" fill="#0F172A" opacity="0.4"/>
+    <!-- Pen body -->
+    <rect x="0" y="-50" width="16" height="100" rx="8" fill="#F59E0B"/>
+    <!-- Pen grip details -->
+    <rect x="0" y="-10" width="16" height="6" fill="#D97706"/>
+    <rect x="0" y="0" width="16" height="6" fill="#D97706"/>
+    <!-- Pen nib -->
+    <path d="M 0 50 L 8 66 L 16 50 Z" fill="#E2E8F0"/>
+    <line x1="8" y1="52" x2="8" y2="62" stroke="#64748B" stroke-width="1.5"/>
+  </g>
+
+  <!-- Sparkles / Action effect indicating activation/enforcement -->
+  <g fill="#F59E0B">
+    <path d="M 45 95 L 48 102 L 55 105 L 48 108 L 45 115 L 42 108 L 35 105 L 42 102 Z" opacity="0.9"/>
+    <path d="M 185 80 L 187 85 L 192 87 L 187 89 L 185 94 L 183 89 L 178 87 L 183 85 Z" opacity="0.7"/>
+    <circle cx="130" cy="55" r="3" fill="#3B82F6"/>
+  </g>
+</svg>

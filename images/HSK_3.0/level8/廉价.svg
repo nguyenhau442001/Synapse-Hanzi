@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(0, 0)">
+    <!-- Background subtle glow representing industrial/commercial context -->
+    <circle cx="120" cy="120" r="80" fill="#2A313C" opacity="0.4"/>
+    
+    <!-- Giant Price Tag (Symbolizing "Jià" - Price/Cost) -->
+    <path d="M 60,90 L 130,90 L 190,150 L 130,210 L 60,210 Z" fill="#2E384D"/>
+    <!-- Main Tag Body (Lower value indication: worn, patched, or stripped down) -->
+    <path d="M 65,95 L 128,95 L 184,150 L 128,205 L 65,205 Z" fill="#E06C75"/>
+    
+    <!-- Tag Hole -->
+    <circle cx="85" cy="115" r="8" fill="#1A1D24"/>
+
+    <!-- Downward Trend Arrow & Low Value Symbol embedded on the tag -->
+    <path d="M 110,135 L 140,165 M 140,165 L 120,165 M 140,165 L 140,145" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="100" y1="180" x2="160" y2="180" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Industrial barrel/chemical element hinting at the contextual reference (劣质工业化学添加剂) -->
+    <g transform="translate(130, 40) scale(0.6)">
+      <rect x="0" y="0" width="70" height="90" rx="8" fill="#D19A66"/>
+      <!-- Barrel ridges -->
+      <line x1="0" y1="25" x2="70" y2="25" stroke="#986801" stroke-width="6"/>
+      <line x1="0" y1="65" x2="70" y2="65" stroke="#986801" stroke-width="6"/>
+      <!-- Hazard / Low Quality Cross mark -->
+      <path d="M 25,35 L 45,55 M 45,35 L 25,55" stroke="#1A1D24" stroke-width="6" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

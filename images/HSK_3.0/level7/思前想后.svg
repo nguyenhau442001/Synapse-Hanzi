@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Desk surface -->
+  <path d="M40 180L200 180" stroke="#2D333F" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Desk lamp casting light onto the person -->
+  <path d="M190 70L150 110" stroke="#3A4252" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="195" cy="65" r="12" fill="#3A4252"/>
+  <path d="M135 125L155 105" stroke="#FFA726" stroke-width="2" opacity="0.6"/>
+  <path d="M130 140L150 115" stroke="#FFA726" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Central Character (Sitting at desk, pondering) -->
+  <!-- Body/Chair -->
+  <path d="M95 180V145C95 135 105 125 120 125C135 125 145 135 145 145V180" fill="#2E384D"/>
+  
+  <!-- Head -->
+  <circle cx="120" cy="95" r="18" fill="#FFCC80"/>
+  
+  <!-- Hair -->
+  <path d="M102 95C102 82 110 77 120 77C130 77 138 82 138 95C138 92 135 75 120 75C105 75 102 92 102 95Z" fill="#3E2723"/>
+
+  <!-- Posture: Hand on chin (thinking) -->
+  <path d="M110 130C110 130 115 110 125 110C135 110 135 120 135 125" stroke="#FFCC80" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M100 135L115 125" stroke="#2E384D" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Two contrasting paths / choices hovering above (representing "思前" - think before, "想后" - think after/future) -->
+  <!-- Left Path Document (Past/Option A) -->
+  <g transform="translate(65, 45)">
+    <rect x="0" y="0" width="30" height="38" rx="3" fill="#263238" stroke="#455A64" stroke-width="2"/>
+    <path d="M7 8H23" stroke="#90CAF9" stroke-width="2" stroke-linecap="round"/>
+    <path d="M7 14H19" stroke="#90CAF9" stroke-width="2" stroke-linecap="round"/>
+    <path d="M7 20H15" stroke="#90CAF9" stroke-width="2" stroke-linecap="round"/>
+    <!-- Directional Arrow pointing left/back -->
+    <path d="M-10 19H-3M-3 19L1 15M-3 19L1 23" stroke="#FFA726" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Right Path Document (Future/Option B) -->
+  <g transform="translate(145, 45)">
+    <rect x="0" y="0" width="30" height="38" rx="3" fill="#263238" stroke="#455A64" stroke-width="2"/>
+    <path d="M7 8H23" stroke="#CE93D8" stroke-width="2" stroke-linecap="round"/>
+    <path d="M7 14H19" stroke="#CE93D8" stroke-width="2" stroke-linecap="round"/>
+    <path d="M7 20H15" stroke="#CE93D8" stroke-width="2" stroke-linecap="round"/>
+    <!-- Directional Arrow pointing right/forward -->
+    <path d="M33 19H40M40 19L36 15M40 19L36 23" stroke="#FFA726" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Thought flow connecting head to choices -->
+  <path d="M105 80C95 65 85 60 85 60" stroke="#FFA726" stroke-width="2" stroke-dasharray="3 3" fill="none"/>
+  <path d="M135 80C145 65 155 60 155 60" stroke="#FFA726" stroke-width="2" stroke-dasharray="3 3" fill="none"/>
+
+</svg>

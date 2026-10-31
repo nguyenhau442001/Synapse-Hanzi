@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Professor's face profile -->
+  <g transform="translate(60, 60)">
+    <!-- Head shape -->
+    <path d="M60 20C30 20 10 40 10 70C10 100 30 120 60 120C90 120 110 100 110 70C110 40 90 20 60 20Z" fill="#E0E0E0"/>
+    
+    <!-- Hair (Gray) -->
+    <path d="M20 60C20 30 40 10 60 10C80 10 100 30 100 60L100 70C100 50 80 30 60 30C40 30 20 50 20 70L20 60Z" fill="#A0A0A0"/>
+    
+    <!-- Eye -->
+    <ellipse cx="75" cy="65" rx="8" ry="5" fill="#1A1D24"/>
+    
+    <!-- Glasses -->
+    <circle cx="75" cy="65" r="12" stroke="#FFD700" stroke-width="3" fill="none"/>
+    <path d="M87 65L105 65" stroke="#FFD700" stroke-width="2"/>
+    
+    <!-- The "Weiwei" smile: subtle curve at the corner of the mouth -->
+    <path d="M70 95C75 92 85 92 90 95" stroke="#1A1D24" stroke-width="3" stroke-linecap="round" fill="none"/>
+    
+    <!-- Wheelchair armrest hint -->
+    <rect x="-10" y="110" width="140" height="15" rx="5" fill="#4A5568"/>
+  </g>
+</svg>

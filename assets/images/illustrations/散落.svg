@@ -1,0 +1,100 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative atmosphere (Night wind, subtle motion lines) -->
+  <g opacity="0.3">
+    <path d="M30 70 C50 65, 70 75, 90 70" stroke="#8E99A8" stroke-width="1.5" stroke-dasharray="4 4" fill="none"/>
+    <path d="M120 40 C140 35, 160 45, 180 40" stroke="#8E99A8" stroke-width="1.5" stroke-dasharray="4 4" fill="none"/>
+    <path d="M15 110 C40 100, 60 115, 85 105" stroke="#F59E0B" stroke-width="1" stroke-dasharray="6 6" fill="none" opacity="0.5"/>
+  </g>
+
+  <!-- Blue Stone Steps (青石台阶) -->
+  <g>
+    <!-- Step 3 (Lowest, deepest) -->
+    <path d="M20 185 L220 185 L210 215 L30 215 Z" fill="#242B35"/>
+    <path d="M20 185 L220 185" stroke="#323D4E" stroke-width="2"/>
+    
+    <!-- Step 2 (Middle) -->
+    <path d="M30 155 L210 155 L200 185 L40 185 Z" fill="#2C3542"/>
+    <path d="M30 155 L210 155" stroke="#3A475A" stroke-width="2"/>
+
+    <!-- Step 1 (Upper) -->
+    <path d="M45 125 L195 125 L185 155 L55 155 Z" fill="#344153"/>
+    <path d="M45 125 L195 125" stroke="#46576E" stroke-width="2"/>
+  </g>
+
+  <!-- Dynamic Wind Action & Cause (Tree branch off-screen scattering leaves) -->
+  <g>
+    <!-- Gust of wind swooping down -->
+    <path d="M210 50 C170 60, 110 80, 70 120" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.4"/>
+    <path d="M190 75 C160 85, 120 100, 95 130" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.5"/>
+  </g>
+
+  <!-- Scattered Falling/Fallen Leaves (散落 - sàn luò: rớt rớt, vương vãi) -->
+  <!-- Leaf 1 (Mid-air swirling down) -->
+  <g transform="translate(85, 95) rotate(-35)">
+    <path d="M0 12 C-6 6, -6 -6, 0 -12 C6 -6, 6 6, 0 12 Z" fill="#F59E0B"/>
+    <path d="M0 -12 L0 12" stroke="#B45309" stroke-width="1.5"/>
+  </g>
+
+  <!-- Leaf 2 (Mid-air tumbling) -->
+  <g transform="translate(140, 105) rotate(45)">
+    <path d="M0 10 C-5 5, -5 -5, 0 -10 C5 -5, 5 5, 0 10 Z" fill="#D97706"/>
+    <path d="M0 -10 L0 10" stroke="#92400E" stroke-width="1.2"/>
+  </g>
+
+  <!-- Leaf 3 (Mid-air near step) -->
+  <g transform="translate(60, 135) rotate(-15)">
+    <path d="M0 9 C-4 4, -4 -4, 0 -9 C4 -4, 4 4, 0 9 Z" fill="#FBBF24"/>
+    <path d="M0 -9 L0 9" stroke="#B45309" stroke-width="1"/>
+  </g>
+
+  <!-- Fallen Leaves on Step 1 -->
+  <g transform="translate(80, 145) rotate(12)">
+    <ellipse cx="0" cy="0" rx="9" ry="4" fill="#F59E0B"/>
+    <path d="M-8 0 L8 0" stroke="#B45309" stroke-width="1"/>
+  </g>
+  <g transform="translate(130, 140) rotate(-40)">
+    <ellipse cx="0" cy="0" rx="8" ry="3.5" fill="#D97706"/>
+    <path d="M-7 0 L7 0" stroke="#92400E" stroke-width="1"/>
+  </g>
+
+  <!-- Fallen Leaves on Step 2 -->
+  <g transform="translate(70, 172) rotate(25)">
+    <ellipse cx="0" cy="0" rx="10" ry="4.5" fill="#FBBF24"/>
+    <path d="M-9 0 L9 0" stroke="#B45309" stroke-width="1.2"/>
+  </g>
+  <g transform="translate(115, 170) rotate(-10)">
+    <ellipse cx="0" cy="0" rx="9" ry="4" fill="#E08214"/>
+    <path d="M-8 0 L8 0" stroke="#92400E" stroke-width="1"/>
+  </g>
+  <g transform="translate(165, 175) rotate(60)">
+    <ellipse cx="0" cy="0" rx="8.5" ry="3.5" fill="#D97706"/>
+    <path d="M-7.5 0 L7.5 0" stroke="#92400E" stroke-width="1"/>
+  </g>
+
+  <!-- Fallen Leaves on Step 3 (Ground) -->
+  <g transform="translate(95, 202) rotate(-5)">
+    <ellipse cx="0" cy="0" rx="11" ry="5" fill="#F59E0B"/>
+    <path d="M-10 0 L10 0" stroke="#B45309" stroke-width="1.2"/>
+  </g>
+  <g transform="translate(145, 198) rotate(35)">
+    <ellipse cx="0" cy="0" rx="10" ry="4.5" fill="#FBBF24"/>
+    <path d="M-9 0 L9 0" stroke="#B45309" stroke-width="1.2"/>
+  </g>
+  <g transform="translate(185, 205) rotate(-20)">
+    <ellipse cx="0" cy="0" rx="8" ry="3.5" fill="#D97706"/>
+    <path d="M-7 0 L7 0" stroke="#92400E" stroke-width="1"/>
+  </g>
+  <g transform="translate(60, 200) rotate(15)">
+    <ellipse cx="0" cy="0" rx="9" ry="4" fill="#E08214"/>
+    <path d="M-8 0 L8 0" stroke="#92400E" stroke-width="1"/>
+  </g>
+
+  <!-- Motion & Action Emphasis (Wind sweep lines near leaves) -->
+  <path d="M100 85 L115 90" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M125 95 L135 98" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M50 125 L65 128" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+
+</svg>

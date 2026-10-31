@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Crown Base -->
+  <path d="M60 180 L180 180 L170 130 L150 150 L130 110 L110 150 L90 130 L70 180 Z" fill="#FFC107" stroke="#D4A017" stroke-width="4" stroke-linejoin="round"/>
+  
+  <!-- Crown Detail Lines -->
+  <path d="M70 180 L70 160 M90 180 L90 140 M110 180 L110 160 M130 180 L130 160 M150 180 L150 140 M170 180 L170 160" stroke="#D4A017" stroke-width="2"/>
+  
+  <!-- Setting/Bezel for the Gem -->
+  <circle cx="120" cy="155" r="22" fill="#2C3E50" stroke="#FFC107" stroke-width="3"/>
+  
+  <!-- The Gem (Sapphire) -->
+  <path d="M120 138 L135 155 L120 172 L105 155 Z" fill="#2196F3" stroke="#1565C0" stroke-width="2"/>
+  
+  <!-- Highlight on Gem -->
+  <path d="M112 148 L120 148 L120 155 Z" fill="#BBDEFB" opacity="0.6"/>
+  
+  <!-- Artisan Hand Tool (Chisel/Setting tool) -->
+  <path d="M160 80 L175 95 L185 85 L170 70 Z" fill="#9E9E9E"/>
+  <path d="M170 90 L190 110" stroke="#757575" stroke-width="4" stroke-linecap="round"/>
+  <path d="M185 105 L200 120" fill="#5D4037"/>
+</svg>

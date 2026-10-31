@@ -91,11 +91,15 @@ let showHanViet = (function() {
 let showIllustration = (function() {
   try {
     const saved = localStorage.getItem('hsk_show_illustrations');
-    return saved !== null ? saved === 'true' : true;
+    return saved !== null ? saved === 'true' : false;
   } catch (e) {
-    return true;
+    return false;
   }
 })();
+if (typeof document !== 'undefined') {
+  if (document.documentElement) document.documentElement.classList.toggle('hide-illustrations', !showIllustration);
+  if (document.body) document.body.classList.toggle('hide-illustrations', !showIllustration);
+}
 let currentFilter = 'all';
 let transitionTimer = null;
 let celebrationShown = false;
@@ -110,7 +114,7 @@ let overviewQuery = '';
 let overviewStatus = 'all';
 let reviewPool = [];
 let reviewIndex = 0;
-let reviewLives = 3;
+let reviewLives = 5;
 let reviewScore = 0;
 let reviewStreak = 0;
 let reviewBestStreak = 0;

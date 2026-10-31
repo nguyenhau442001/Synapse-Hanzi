@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Map/Territory Boundary Representation -->
+  <path d="M60 60 L180 60 L180 180 L60 180 Z" fill="none" stroke="#4A5568" stroke-width="4" stroke-dasharray="8 8"/>
+  
+  <!-- Landscape inside the territory -->
+  <path d="M70 170 L100 130 L130 160 L160 120 L170 170 Z" fill="#2D3748"/>
+  
+  <!-- Bird representing the wildlife inside the territory -->
+  <path d="M110 100 C115 90 125 90 130 100 C135 110 125 115 120 115 C115 115 105 110 110 100 Z" fill="#F6AD55"/>
+  <path d="M105 100 L95 95 M135 100 L145 95" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Tree representing the nature reserve -->
+  <circle cx="150" cy="140" r="15" fill="#48BB78"/>
+  <rect x="148" y="150" width="4" height="20" fill="#744210"/>
+  
+  <!-- Focus marker indicating "within" -->
+  <circle cx="120" cy="120" r="50" fill="none" stroke="#F6AD55" stroke-width="2" stroke-opacity="0.5"/>
+</svg>

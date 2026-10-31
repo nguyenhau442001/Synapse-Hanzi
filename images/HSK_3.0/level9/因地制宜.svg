@@ -1,0 +1,72 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background grid/glow elements for context -->
+  <circle cx="120" cy="120" r="90" fill="none" stroke="#252A34" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Central Physical Object representing "因地制宜" (Adapting to local conditions) -->
+  <!-- A dynamic split landscape globe/device showing two distinct tailored environments side-by-side: Terraced farming mountain vs. Modern windmill plain -->
+  
+  <!-- Outer circular frame -->
+  <circle cx="120" cy="120" r="72" fill="#212630" stroke="#303846" stroke-width="4"/>
+  
+  <!-- Clip path to keep landscape inside the globe -->
+  <clipPath id="globeClip">
+    <circle cx="120" cy="120" r="70"/>
+  </clipPath>
+  
+  <g clip-path="url(#globeClip)">
+    <!-- Background sky split -->
+    <!-- Left side: Mountain region (Sunset/Warm orange tones) -->
+    <rect x="50" y="50" width="70" height="140" fill="#23211B"/>
+    <!-- Right side: Plain/Tech region (Cool slate/teal tones) -->
+    <rect x="120" y="50" width="70" height="140" fill="#1A242B"/>
+    
+    <!-- Divider line reflecting adaptation -->
+    <line x1="120" y1="50" x2="120" y2="190" stroke="#E59834" stroke-width="2" stroke-dasharray="3 3"/>
+
+    <!-- LEFT SIDE: Mountainous Terraced Fields (Mountain Adaptation) -->
+    <g>
+      <!-- Sun -->
+      <circle cx="85" cy="85" r="14" fill="#E59834" opacity="0.9"/>
+      
+      <!-- Mountain base -->
+      <polygon points="50,190 50,130 90,100 130,190" fill="#3D3226"/>
+      
+      <!-- Terraced steps (Customized to terrain) -->
+      <path d="M60 145 L95 135 L105 142" fill="none" stroke="#638C40" stroke-width="4" stroke-linecap="round"/>
+      <path d="M55 160 L90 148 L100 156" fill="none" stroke="#638C40" stroke-width="4" stroke-linecap="round"/>
+      <path d="M50 178 L85 165 L98 172" fill="none" stroke="#638C40" stroke-width="4" stroke-linecap="round"/>
+      
+      <!-- Tiny crop shoots on terraces -->
+      <circle cx="75" cy="141" r="2" fill="#A8D672"/>
+      <circle cx="85" cy="144" r="2" fill="#A8D672"/>
+      <circle cx="70" cy="155" r="2" fill="#A8D672"/>
+    </g>
+
+    <!-- RIGHT SIDE: Windmill / Plain (Open Field Adaptation) -->
+    <g>
+      <!-- Flat terrain baseline -->
+      <rect x="120" y="160" width="70" height="30" fill="#1E302A"/>
+      
+      <!-- Modern Windmill Tower -->
+      <polygon points="155,160 158,110 162,110 165,160" fill="#A0B2C6"/>
+      
+      <!-- Windmill blades (Rotating symbol of local resource use) -->
+      <g transform="translate(160, 105)">
+        <circle cx="0" cy="0" r="4" fill="#E59834"/>
+        <path d="M0,0 L0,-25 M0,0 L22,12 M0,0 L-22,12" stroke="#E59834" stroke-width="3" stroke-linecap="round"/>
+      </g>
+      
+      <!-- Local green crops / flat field -->
+      <line x1="130" y1="165" x2="190" y2="165" stroke="#4B7956" stroke-width="3"/>
+      <line x1="135" y1="173" x2="185" y2="173" stroke="#4B7956" stroke-width="3"/>
+    </g>
+  </g>
+
+  <!-- Foreground Fitting Tool / Compass-style Indicator (Symbolizing "Customized/Tailored" Action) -->
+  <!-- A sleek wrench/gear compass hovering over the globe border, emphasizing 'tailoring/shaping' -->
+  <circle cx="120" cy="50" r="16" fill="#1A1D24" stroke="#E59834" stroke-width="3"/>
+  <path d="M113 50 L127 50 M120 43 L120 57" stroke="#E59834" stroke-width="3" stroke-linecap="round"/>
+</svg>

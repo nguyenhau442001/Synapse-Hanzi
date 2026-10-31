@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Definition Context: Stone Arch Bridge (石拱桥) representing "拱" (vòm / arch structure) -->
+  
+  <!-- Sky & Background elements -->
+  <path d="M 0,110 Q 120,70 240,110 L 240,140 L 0,140 Z" fill="#222733"/>
+
+  <!-- Clear River spanning underneath -->
+  <path d="M 0,140 L 240,140 L 240,210 L 0,210 Z" fill="#14171F"/>
+  <!-- River water ripple lines -->
+  <path d="M 30,160 Q 50,155 70,160" stroke="#2B313F" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M 140,175 Q 170,170 200,175" stroke="#2B313F" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M 70,195 Q 100,190 130,195" stroke="#2B313F" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <!-- Bridge Reflection -->
+  <path d="M 75,140 Q 120,175 165,140 Z" fill="#252B38" opacity="0.4"/>
+
+  <!-- Bridge Structure (The physical Arch "拱") -->
+  <!-- Main bridge body -->
+  <path d="M 30,140 Q 120,100 210,140 L 215,150 L 25,150 Z" fill="#4B5563"/>
+  
+  <!-- Bridge roadway/top line -->
+  <path d="M 20,142 L 220,142" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- The distinct Arch opening (拱门 - The core visual semantic of "拱") -->
+  <path d="M 75,140 Q 120,80 165,140 Z" fill="#14171F"/>
+
+  <!-- Stone block patterns on the arch ring (high-contrast orange/gold accent for focus) -->
+  <path d="M 75,140 Q 120,80 165,140" stroke="#F59E0B" stroke-width="5" fill="none"/>
+  
+  <!-- Individual stone brick lines radiating along the arch -->
+  <line x1="90" y1="135" x2="93" y2="120" stroke="#14171F" stroke-width="2"/>
+  <line x1="105" y1="126" x2="110" y2="108" stroke="#14171F" stroke-width="2"/>
+  <line x1="120" y1="122" x2="120" y2="102" stroke="#14171F" stroke-width="2"/>
+  <line x1="135" y1="126" x2="130" y2="108" stroke="#14171F" stroke-width="2"/>
+  <line x1="150" y1="135" x2="147" y2="120" stroke="#14171F" stroke-width="2"/>
+
+  <!-- Bridge Piers / Foundation blocks -->
+  <rect x="25" y="138" width="12" height="15" fill="#374151" rx="2"/>
+  <rect x="203" y="138" width="12" height="15" fill="#374151" rx="2"/>
+
+  <!-- Traditional stone texture details on bridge surface -->
+  <rect x="45" y="132" width="14" height="6" fill="#3E4551" rx="1"/>
+  <rect x="180" y="132" width="14" height="6" fill="#3E4551" rx="1"/>
+  <rect x="105" y="112" width="12" height="6" fill="#3E4551" rx="1"/>
+
+  <!-- Subtle glowing accent to highlight the structural arch curve -->
+  <path d="M 72,142 Q 120,77 168,142" stroke="#FBBF24" stroke-width="1.5" stroke-dasharray="4 4" fill="none" opacity="0.8"/>
+
+</svg>

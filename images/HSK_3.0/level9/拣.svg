@@ -1,0 +1,59 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Wooden surface / tray background -->
+  <rect x="36" y="44" width="168" height="152" rx="16" fill="#222730" stroke="#2D333F" stroke-width="2"/>
+  
+  <!-- Subtle wood grain lines -->
+  <path d="M56 70H184M60 120H180M52 170H188" stroke="#282E3A" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Pile of rice grains (background scatter) -->
+  <g fill="#4E5668">
+    <ellipse cx="80" cy="90" rx="4" ry="2.5" transform="rotate(25 80 90)"/>
+    <ellipse cx="100" cy="75" rx="3.5" ry="2" transform="rotate(-15 100 75)"/>
+    <ellipse cx="125" cy="85" rx="4" ry="2" transform="rotate(45 125 85)"/>
+    <ellipse cx="90" cy="115" rx="3.5" ry="2" transform="rotate(-30 90 115)"/>
+    <ellipse cx="140" cy="110" rx="4" ry="2.5" transform="rotate(10 140 110)"/>
+    <ellipse cx="165" cy="95" rx="3.5" ry="2" transform="rotate(-45 165 95)"/>
+    <ellipse cx="75" cy="140" rx="4" ry="2" transform="rotate(60 75 140)"/>
+    <ellipse cx="115" cy="145" rx="3.5" ry="2.5" transform="rotate(-10 115 145)"/>
+    <ellipse cx="155" cy="135" rx="4" ry="2" transform="rotate(35 155 135)"/>
+    <ellipse cx="100" cy="165" rx="3.5" ry="2" transform="rotate(15 100 165)"/>
+    <ellipse cx="135" cy="170" rx="4" ry="2.5" transform="rotate(-20 135 170)"/>
+    <ellipse cx="170" cy="155" rx="3.5" ry="2" transform="rotate(50 170 155)"/>
+  </g>
+
+  <!-- Lighter rice grains for depth -->
+  <g fill="#7A8499">
+    <ellipse cx="88" cy="82" rx="4" ry="2.5" transform="rotate(-10 88 82)"/>
+    <ellipse cx="112" cy="95" rx="3.5" ry="2" transform="rotate(30 112 95)"/>
+    <ellipse cx="150" cy="80" rx="4" ry="2" transform="rotate(-25 150 80)"/>
+    <ellipse cx="105" cy="130" rx="4" ry="2.5" transform="rotate(15 105 130)"/>
+    <ellipse cx="145" cy="125" rx="3.5" ry="2" transform="rotate(-40 145 125)"/>
+    <ellipse cx="80" cy="160" rx="3.5" ry="2" transform="rotate(20 80 160)"/>
+    <ellipse cx="160" cy="170" rx="4" ry="2.5" transform="rotate(-10 160 170)"/>
+  </g>
+
+  <!-- Impurity / Dark pebble being picked out -->
+  <circle cx="120" cy="115" r="3.5" fill="#E67E22"/>
+  <circle cx="119" cy="114" r="1.5" fill="#F39C12"/>
+
+  <!-- Action: Precision tweezers / fingers picking up the impurity -->
+  <!-- Tweezers shadow -->
+  <path d="M165 40L121.5 111.5" stroke="#101217" stroke-width="4" stroke-linecap="round" opacity="0.4"/>
+  
+  <!-- Tweezer arm 1 -->
+  <path d="M160 35L120 112" fill="none" stroke="#A6B0C3" stroke-width="5" stroke-linecap="round"/>
+  <!-- Tweezer arm 2 -->
+  <path d="M175 42L122 113" fill="none" stroke="#8A95A8" stroke-width="5" stroke-linecap="round"/>
+  
+  <!-- Highlight on tweezers -->
+  <path d="M162 37L121 111" fill="none" stroke="#D1D8E5" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Motion lines indicating lifting / picking (拣) -->
+  <path d="M113 98C110 93 110 88 113 83" fill="none" stroke="#E67E22" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 3"/>
+  <path d="M127 98C130 93 130 88 127 83" fill="none" stroke="#E67E22" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 3"/>
+  
+  <!-- Focus accent dot -->
+  <circle cx="120" cy="115" r="7" fill="none" stroke="#E67E22" stroke-width="1.5" opacity="0.8"/>
+</svg>

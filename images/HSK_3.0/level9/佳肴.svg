@@ -1,0 +1,42 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 125)">
+    <!-- Steam / Aroma effects -->
+    <path d="M-30 -50 C-40 -65 -20 -80 -30 -95" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.4"/>
+    <path d="M0 -55 C-10 -70 10 -85 0 -100" stroke="#E2E8F0" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+    <path d="M30 -50 C20 -65 40 -80 30 -95" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.4"/>
+
+    <!-- Serving Platter / Dome Stand -->
+    <ellipse cx="0" cy="50" rx="85" ry="16" fill="#334155"/>
+    <ellipse cx="0" cy="46" rx="80" ry="14" fill="#475569"/>
+    
+    <!-- Large Gourmet Dome (Cloche) -->
+    <path d="M-65 46 C-65 -15 -35 -45 0 -45 C35 -45 65 -15 65 46 Z" fill="#64748B"/>
+    <path d="M-60 46 C-60 -12 -32 -40 0 -40 C32 -40 60 -12 60 46 Z" fill="#94A3B8"/>
+    <!-- Dome highlight -->
+    <path d="M-25 -25 C-15 -35 15 -35 25 -25" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round" fill="none"/>
+    
+    <!-- Dome Handle -->
+    <circle cx="0" cy="-52" r="9" fill="#F59E0B"/>
+    <circle cx="0" cy="-52" r="5" fill="#FBBF24"/>
+
+    <!-- Exquisite Gourmet Dish Revealed (Half open foreground plate/food) -->
+    <!-- Large round serving base -->
+    <ellipse cx="0" cy="46" rx="72" ry="12" fill="#E2E8F0"/>
+    <ellipse cx="0" cy="44" rx="66" ry="10" fill="#F8FAFC"/>
+    
+    <!-- Fancy Roast/Delicacy Main Dish -->
+    <path d="M-35 40 C-35 20 -20 10 0 10 C20 10 35 20 35 40 Z" fill="#B45309"/>
+    <path d="M-30 38 C-30 22 -18 14 0 14 C18 14 30 22 30 38 Z" fill="#D97706"/>
+    <!-- Glaze / Sauce details -->
+    <path d="M-20 25 C-10 20 10 30 20 22 C15 35 -15 35 -20 25 Z" fill="#F59E0B"/>
+    
+    <!-- Garnishes (Broccoli florets / carrots) -->
+    <circle cx="-42" cy="40" r="8" fill="#15803D"/>
+    <circle cx="-47" cy="44" r="6" fill="#16A34A"/>
+    <circle cx="42" cy="41" r="7" fill="#15803D"/>
+    <circle cx="48" cy="38" r="5" fill="#16A34A"/>
+    <ellipse cx="0" cy="45" rx="10" ry="4" fill="#EF4444"/>
+  </g>
+</svg>

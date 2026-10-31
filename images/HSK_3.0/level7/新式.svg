@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient glow representing advanced technology -->
+  <circle cx="120" cy="120" r="80" fill="#2563EB" opacity="0.08"/>
+
+  <!-- Central Futuristic Autonomous Agricultural Machine (新式 - New Style / Advanced Machinery) -->
+  <g transform="translate(120, 120)">
+    
+    <!-- Ground / Field line -->
+    <path d="M-80 50 L80 50" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
+    <path d="M-70 60 L70 60" stroke="#1E293B" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Left Wheel (Modern tread design) -->
+    <g transform="translate(-45, 30)">
+      <rect x="-16" y="-16" width="32" height="32" rx="8" fill="#3B82F6"/>
+      <circle cx="0" cy="0" r="8" fill="#1E293B"/>
+      <circle cx="0" cy="0" r="3" fill="#60A5FA"/>
+    </g>
+
+    <!-- Right Wheel -->
+    <g transform="translate(45, 30)">
+      <rect x="-16" y="-16" width="32" height="32" rx="8" fill="#3B82F6"/>
+      <circle cx="0" cy="0" r="8" fill="#1E293B"/>
+      <circle cx="0" cy="0" r="3" fill="#60A5FA"/>
+    </g>
+
+    <!-- Main Chassis (Sleek, futuristic flat design) -->
+    <path d="M-55 20 L-45 -10 L45 -10 L55 20 Z" fill="#0F172A" stroke="#3B82F6" stroke-width="2"/>
+    
+    <!-- Upper Body / Cabin (Autonomous core) -->
+    <path d="M-30 -10 L-20 -35 L20 -35 L30 -10 Z" fill="#1E293B" stroke="#60A5FA" stroke-width="2"/>
+    
+    <!-- Glowing Sensor / HUD Array (Advanced Tech Accent) -->
+    <rect x="-12" y="-28" width="24" height="8" rx="2" fill="#F59E0B"/>
+    <circle cx="0" cy="-24" r="2" fill="#FFFFFF"/>
+
+    <!-- High-Precision Satellite Navigation Dish / Antenna (Beidou reference) -->
+    <g transform="translate(0, -35)">
+      <line x1="0" y1="0" x2="0" y2="-18" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="0" cy="-20" r="5" fill="#F59E0B"/>
+      <path d="M-8 -26 C-4 -30 4 -30 8 -26" stroke="#60A5FA" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <path d="M-12 -30 C-6 -35 6 -35 12 -30" stroke="#3B82F6" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Front Advanced Agricultural Tool / Cultivator Array -->
+    <path d="M-65 25 L-55 25 L-60 38 Z" fill="#F59E0B"/>
+    <path d="M-40 25 L-30 25 L-35 38 Z" fill="#F59E0B"/>
+    <path d="M30 25 L40 25 L35 38 Z" fill="#F59E0B"/>
+    <path d="M55 25 L65 25 L60 38 Z" fill="#F59E0B"/>
+
+    <!-- Symbolizing "New/Innovation" - Sleek energy accent lines -->
+    <path d="M-75 -5 L-60 -5" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <path d="M-70 2 L-60 2" stroke="#60A5FA" stroke-width="2" stroke-linecap="round"/>
+    <path d="M60 -5 L75 -5" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <path d="M60 2 L70 2" stroke="#60A5FA" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Representing Modern Agriculture (Stylized clean crop sprout growing efficiently behind) -->
+    <g transform="translate(0, 10)">
+      <path d="M0 10 C0 -2 -8 -5 -12 -10 C-12 -2 -5 5 0 10 Z" fill="#10B981"/>
+      <path d="M0 10 C0 -2 8 -5 12 -10 C12 -2 5 5 0 10 Z" fill="#34D399"/>
+      <line x1="0" y1="15" x2="0" y2="5" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

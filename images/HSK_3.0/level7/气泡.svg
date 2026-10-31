@@ -1,0 +1,64 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glowing Beverage Cup -->
+  <defs>
+    <linearGradient id="liquidGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00D2FF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3A7BD5" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="glassGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="bubbleHighlight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Cup Rim (Back) -->
+  <ellipse cx="120" cy="75" rx="36" ry="10" fill="#2E3440" stroke="#4C566A" stroke-width="2"/>
+
+  <!-- Liquid inside cup -->
+  <path d="M 85 75 C 85 75 90 170 95 180 C 98 186 103 190 110 190 L 130 190 C 137 190 142 186 145 180 C 150 170 155 75 155 75 Z" fill="url(#liquidGrad)"/>
+
+  <!-- Tiny Effervescent Bubbles rising up -->
+  <!-- Column 1 -->
+  <circle cx="102" cy="160" r="3.5" fill="url(#bubbleHighlight)" stroke="#00D2FF" stroke-width="0.8"/>
+  <circle cx="100" cy="130" r="4.5" fill="url(#bubbleHighlight)" stroke="#00D2FF" stroke-width="0.8"/>
+  <circle cx="104" cy="100" r="3" fill="url(#bubbleHighlight)" stroke="#00D2FF" stroke-width="0.8"/>
+
+  <!-- Column 2 (Center Focus) -->
+  <circle cx="120" cy="170" r="5" fill="url(#bubbleHighlight)" stroke="#00D2FF" stroke-width="0.8"/>
+  <circle cx="118" cy="140" r="6" fill="url(#bubbleHighlight)" stroke="#00D2FF" stroke-width="0.8"/>
+  <circle cx="122" cy="115" r="4" fill="url(#bubbleHighlight)" stroke="#00D2FF" stroke-width="0.8"/>
+  <circle cx="119" cy="88" r="5" fill="url(#bubbleHighlight)" stroke="#00D2FF" stroke-width="0.8"/>
+
+  <!-- Column 3 -->
+  <circle cx="138" cy="155" r="4" fill="url(#bubbleHighlight)" stroke="#00D2FF" stroke-width="0.8"/>
+  <circle cx="136" cy="125" r="3.5" fill="url(#bubbleHighlight)" stroke="#00D2FF" stroke-width="0.8"/>
+  <circle cx="140" cy="95" r="4.5" fill="url(#bubbleHighlight)" stroke="#00D2FF" stroke-width="0.8"/>
+
+  <!-- Escaping Pop Bubbles near top -->
+  <circle cx="112" cy="65" r="3" fill="none" stroke="#00D2FF" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <circle cx="130" cy="60" r="4" fill="none" stroke="#00D2FF" stroke-width="1.5"/>
+  <circle cx="126" cy="48" r="2" fill="url(#bubbleHighlight)"/>
+
+  <!-- Glass Body (Front Layer) -->
+  <path d="M 84 75 C 84 75 90 174 95 182 C 99 189 105 192 112 192 L 128 192 C 135 192 141 189 145 182 C 150 174 156 75 156 75 Z" fill="none" stroke="url(#glassGrad)" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Glass Base -->
+  <ellipse cx="120" cy="192" rx="18" ry="5" fill="#4C566A" opacity="0.6"/>
+
+  <!-- Cup Rim (Front) -->
+  <path d="M 84 75 C 84 81 100 85 120 85 C 140 85 156 81 156 75" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Condensation Droplets on Glass Outside -->
+  <circle cx="82" cy="110" r="2" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="80" cy="140" r="2.5" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="158" cy="120" r="2" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="160" cy="150" r="1.5" fill="#FFFFFF" opacity="0.6"/>
+</svg>

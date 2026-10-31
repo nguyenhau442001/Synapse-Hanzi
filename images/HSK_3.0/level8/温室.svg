@@ -1,0 +1,57 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle glowing ground / eco base -->
+  <ellipse cx="120" cy="195" rx="85" ry="12" fill="#16202B"/>
+  <rect x="50" y="193" width="140" height="3" rx="1.5" fill="#2E4057"/>
+
+  <!-- Greenhouse Structure (温室) -->
+  <!-- Back glass panes / internal glow -->
+  <path d="M75 105 L120 70 L165 105 L165 190 L75 190 Z" fill="#1E323A" opacity="0.6"/>
+  
+  <!-- Agricultural automated roof rails / framework -->
+  <line x1="120" y1="70" x2="120" y2="190" stroke="#3A506B" stroke-width="2"/>
+  
+  <!-- Glass panels with high-tech cyan tint -->
+  <polygon points="120,74 158,104 158,145 120,145" fill="#48BFE3" opacity="0.12"/>
+  <polygon points="120,74 82,104 82,145 120,145" fill="#48BFE3" opacity="0.2"/>
+  <polygon points="120,74 158,104 158,145 120,145" fill="none" stroke="#64DFDF" stroke-width="1.5" opacity="0.6"/>
+  <polygon points="120,74 82,104 82,145 120,145" fill="none" stroke="#64DFDF" stroke-width="1.5" opacity="0.6"/>
+
+  <polygon points="82,150 120,150 120,190 78,190" fill="#48BFE3" opacity="0.15"/>
+  <polygon points="122,150 158,150 162,190 122,190" fill="#48BFE3" opacity="0.1"/>
+  <polygon points="82,150 120,150 120,190 78,190" fill="none" stroke="#64DFDF" stroke-width="1.5" opacity="0.5"/>
+  <polygon points="122,150 158,150 162,190 122,190" fill="none" stroke="#64DFDF" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Structural frame lines -->
+  <path d="M70 100 L120 62 L170 100 L170 195 L70 195 Z" fill="none" stroke="#7097C2" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- High-tech automated climate sensor / projector atop roof -->
+  <rect x="117" y="52" width="6" height="12" rx="2" fill="#F77F00"/>
+  <circle cx="120" cy="50" r="3" fill="#FCBF49"/>
+  <path d="M112 55 Q120 48 128 55" fill="none" stroke="#FCBF49" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Thriving High-Quality Out-of-Season Crops (反季节瓜果 / 绿色植物) inside -->
+  <!-- Plant 1 (Left - Leafy greens) -->
+  <path d="M95 185 C95 165 105 160 105 150 C105 165 115 170 115 185 Z" fill="#52B788"/>
+  <path d="M90 185 C90 170 98 165 100 155 C102 165 110 170 110 185 Z" fill="#74C69D"/>
+
+  <!-- Plant 2 (Center - Glowing premium eco-fruit plant) -->
+  <path d="M120 190 L120 155" stroke="#52B788" stroke-width="3" stroke-linecap="round"/>
+  <path d="M120 175 C110 170 105 160 110 150 C115 160 120 165 120 175 Z" fill="#40916C"/>
+  <path d="M120 165 C130 160 135 150 130 140 C125 150 120 155 120 165 Z" fill="#52B788"/>
+  
+  <!-- High-quality orange fruit / smart agriculture highlight -->
+  <circle cx="120" cy="142" r="7" fill="#F77F00"/>
+  <circle cx="118" cy="140" r="2" fill="#FCBF49" opacity="0.8"/>
+
+  <!-- Plant 3 (Right) -->
+  <path d="M135 185 C135 170 142 165 145 155 C148 165 155 170 155 185 Z" fill="#74C69D"/>
+
+  <!-- Soil bed -->
+  <ellipse cx="120" cy="188" rx="45" ry="5" fill="#2D3748"/>
+  <rect x="75" y="185" width="90" height="4" rx="2" fill="#3D5266"/>
+
+  <!-- Sleek Focus / Modern Accent Lighting (Smart Tech Vibe) -->
+  <circle cx="120" cy="120" r="55" fill="none" stroke="#48BFE3" stroke-width="1" stroke-dasharray="4 8" opacity="0.4"/>
+</svg>

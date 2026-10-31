@@ -1,0 +1,35 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 120)">
+    <!-- Scale Beam (Imbalance representing illicit/selfish gain) -->
+    <line x1="-70" y1="-25" x2="70" y2="-5" stroke="#4A5568" stroke-width="6" stroke-linecap="round" />
+    
+    <!-- Fulcrum / Base -->
+    <polygon points="0,-15 -25,50 25,50" fill="#2D3748" />
+    <circle cx="0" cy="-15" r="8" fill="#718096" />
+    
+    <!-- Left Pan (Empty / Official Duty) -->
+    <line x1="-70" y1="-25" x2="-70" y2="20" stroke="#4A5568" stroke-width="3" />
+    <path d="M -90,20 Q -70,35 -50,20 Z" fill="#2D3748" />
+    
+    <!-- Right Pan (Heavy with self-interest / gold coins) -->
+    <line x1="70" y1="-5" x2="70" y2="40" stroke="#4A5568" stroke-width="3" />
+    <path d="M 50,40 Q 70,55 90,40 Z" fill="#2D3748" />
+    
+    <!-- Stack of illicit gold coins in the right pan -->
+    <ellipse cx="70" cy="35" rx="16" ry="6" fill="#D69E2E" />
+    <path d="M 54,35 V 27 C 54,30 86,30 86,27 V 35 Z" fill="#B7791F" />
+    <ellipse cx="70" cy="27" rx="16" ry="6" fill="#ECC94B" />
+    <path d="M 54,27 V 19 C 54,22 86,22 86,19 V 27 Z" fill="#D69E2E" />
+    <ellipse cx="70" cy="19" rx="16" ry="6" fill="#F6E05E" />
+
+    <!-- Official Stamp / Seal (Symbol of power/office being misused) -->
+    <rect x="-20" y="-85" width="40" height="35" rx="4" fill="#E53E3E" />
+    <rect x="-15" y="-95" width="30" height="10" rx="2" fill="#C53030" />
+    <rect x="-24" y="-80" width="48" height="5" rx="2" fill="#FEB2B2" />
+    
+    <!-- Red glowing illicit beam connecting power to personal gain -->
+    <path d="M 0,-50 Q 35,-20 70,10" fill="none" stroke="#F56565" stroke-width="3" stroke-dasharray="4 4" opacity="0.8" />
+  </g>
+</svg>

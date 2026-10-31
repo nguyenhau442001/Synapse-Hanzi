@@ -1,0 +1,65 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Meeting Table & Ambience -->
+  <path d="M40 180 L200 180 L180 205 L60 205 Z" fill="#2A2F3D" />
+  <ellipse cx="120" cy="180" rx="80" ry="14" fill="#353D52" />
+
+  <!-- Multiple overlapping speech bubbles representing "qīzuǐ-bāshé" (mồm năm miệng mười) -->
+  <!-- Left Side Bubbles -->
+  <g transform="translate(15, 25)">
+    <path d="M20 50 Q20 35 40 35 L75 35 Q95 35 95 50 L95 70 Q95 85 75 85 L50 85 L35 105 L42 85 L40 85 Q20 85 20 70 Z" fill="#FF5722" opacity="0.9"/>
+    <!-- Abstract wave/sound lines inside bubble -->
+    <path d="M35 60 Q45 50 55 60 T75 60" stroke="#FFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(30, 95)">
+    <path d="M15 35 Q15 22 32 22 L68 22 Q85 22 85 35 L85 52 Q85 65 68 65 L45 65 L30 82 L37 65 L32 65 Q15 65 15 52 Z" fill="#FFC107" opacity="0.9"/>
+    <path d="M30 43 Q42 33 54 43 T70 43" stroke="#1A1D24" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Right Side Bubbles -->
+  <g transform="translate(130, 20)">
+    <path d="M25 40 Q25 25 45 25 L85 25 Q105 25 105 40 L105 60 Q105 75 85 75 L75 75 L60 95 L65 75 L45 75 Q25 75 25 60 Z" fill="#00BCD4" opacity="0.9"/>
+    <path d="M40 50 L90 50" stroke="#FFF" stroke-width="3" stroke-linecap="round"/>
+    <path d="M40 40 L70 40" stroke="#FFF" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(125, 90)">
+    <path d="M20 30 Q20 18 38 18 L82 18 Q100 18 100 30 L100 48 Q100 60 82 60 L65 60 L50 80 L55 60 L38 60 Q20 60 20 48 Z" fill="#E91E63" opacity="0.9"/>
+    <circle cx="45" cy="39" r="4" fill="#FFF"/>
+    <circle cx="60" cy="39" r="4" fill="#FFF"/>
+    <circle cx="75" cy="39" r="4" fill="#FFF"/>
+  </g>
+
+  <!-- Top Center Small Interjecting Bubble -->
+  <g transform="translate(95, 10)">
+    <path d="M10 20 Q10 12 22 12 L38 12 Q50 12 50 20 L50 30 Q50 38 38 38 L30 38 L22 48 L25 38 L22 38 Q10 38 10 30 Z" fill="#4CAF50" opacity="0.9"/>
+  </g>
+
+  <!-- Central Character Silhouettes / Communicating Profiles -->
+  <!-- Left Speaker Head -->
+  <g transform="translate(55, 115)">
+    <circle cx="20" cy="25" r="16" fill="#8E9AAF"/>
+    <path d="M4 60 C4 45 12 40 20 40 C28 40 36 45 36 60 Z" fill="#5C677D"/>
+    <!-- Talking mouth motion indicator -->
+    <path d="M33 28 Q39 31 33 34" stroke="#FF5722" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Right Speaker Head -->
+  <g transform="translate(150, 115)">
+    <circle cx="16" cy="25" r="16" fill="#8E9AAF"/>
+    <path d="M0 60 C0 45 8 40 16 40 C24 40 32 45 32 60 Z" fill="#5C677D"/>
+    <!-- Talking mouth motion indicator -->
+    <path d="M3 28 Q-3 31 3 34" stroke="#00BCD4" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Foreground Speaker Head (Center-ish, overlapping) -->
+  <g transform="translate(100, 125)">
+    <circle cx="20" cy="20" r="18" fill="#A5B4FC"/>
+    <path d="M0 58 C0 42 10 38 20 38 C30 38 40 42 40 58 Z" fill="#6366F1"/>
+    <!-- Open animated mouth showing active debate -->
+    <ellipse cx="30" cy="23" rx="4" ry="5" fill="#1A1D24"/>
+  </g>
+
+</svg>

@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Theater Entrance Archway -->
+  <path d="M60 180 L60 80 C60 60 80 40 120 40 C160 40 180 60 180 80 L180 180" fill="none" stroke="#3A3F4B" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Red Carpet Path -->
+  <path d="M120 180 L120 80" stroke="#FF8C00" stroke-width="12" stroke-linecap="round" stroke-dasharray="10 10"/>
+  
+  <!-- Person walking in -->
+  <g transform="translate(120, 140)">
+    <circle cx="0" cy="-30" r="12" fill="#FFD700"/>
+    <path d="M-15 0 L-5 0 L-8 30 L-15 30 Z" fill="#FFD700"/>
+    <path d="M15 0 L5 0 L8 30 L15 30 Z" fill="#FFD700"/>
+    <path d="M-5 0 L5 0 L2 35 L-2 35 Z" fill="#FFD700"/>
+  </g>
+  
+  <!-- Ticket/Pass icon held by person -->
+  <rect x="135" y="110" width="15" height="20" rx="2" fill="#FFFFFF"/>
+  <circle cx="142.5" cy="120" r="4" fill="#1A1D24"/>
+  
+  <!-- Decorative Stage Curtains -->
+  <path d="M60 80 Q60 40 80 40 L60 40 Z" fill="#3A3F4B"/>
+  <path d="M180 80 Q180 40 160 40 L180 40 Z" fill="#3A3F4B"/>
+</svg>

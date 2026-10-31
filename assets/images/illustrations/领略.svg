@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Water surface ripples -->
+  <path d="M40 180 Q80 170 120 180 T200 180" stroke="#3A4A5D" stroke-width="2" fill="none"/>
+  <path d="M40 195 Q80 185 120 195 T200 195" stroke="#3A4A5D" stroke-width="2" fill="none"/>
+  
+  <!-- Traditional stone bridge arch -->
+  <path d="M60 170 C60 120 180 120 180 170" stroke="#FFB84D" stroke-width="6" fill="none" stroke-linecap="round"/>
+  
+  <!-- Person silhouette (The observer) -->
+  <g transform="translate(120, 140)">
+    <circle cx="0" cy="-30" r="12" fill="#E0E0E0"/>
+    <path d="M-15 -15 C-15 -25, 15 -25, 15 -15 L10 20 L-10 20 Z" fill="#E0E0E0"/>
+    <!-- Hand gesture: pointing/appreciating -->
+    <path d="M12 -5 L25 -10" stroke="#E0E0E0" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Stylized ink-wash mountain silhouette in background -->
+  <path d="M30 140 L60 90 L90 120 L120 80 L150 110 L180 70 L210 140 Z" fill="#2C3E50" opacity="0.6"/>
+  
+  <!-- Decorative willow branch -->
+  <path d="M180 80 Q190 110 185 150" stroke="#FFB84D" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="185" cy="150" rx="4" ry="6" fill="#FFB84D"/>
+</svg>

@@ -1,0 +1,30 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Character Body -->
+  <path d="M120 100 C 145 100, 160 115, 160 140 L 160 220 L 80 220 L 80 140 C 80 115, 95 100, 120 100 Z" fill="#3D4451"/>
+  
+  <!-- Head -->
+  <circle cx="120" cy="85" r="35" fill="#E0E6ED"/>
+  
+  <!-- Hair -->
+  <path d="M90 75 C 90 50, 110 45, 120 45 C 130 45, 150 50, 150 75 L 150 85 L 90 85 Z" fill="#2C313A"/>
+  
+  <!-- Eyes (Closed/Squinting in helplessness) -->
+  <path d="M100 80 L 110 85 M 130 85 L 140 80" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Mouth (The "Bitter Smile" - asymmetrical, slightly downturned corner) -->
+  <path d="M105 105 C 115 100, 125 100, 135 105" stroke="#1A1D24" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M135 105 L 138 102" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Motion lines for head shake -->
+  <path d="M70 70 C 60 75, 60 95, 70 100" stroke="#5D677A" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+  <path d="M170 70 C 180 75, 180 95, 170 100" stroke="#5D677A" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+  
+  <!-- Hand gesture (Slightly raised, palm open in "what can I do" gesture) -->
+  <path d="M160 150 L 180 140" stroke="#E0E6ED" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="185" cy="138" r="6" fill="#E0E6ED"/>
+  
+  <!-- Accent color for focus -->
+  <circle cx="120" cy="85" r="3" fill="#FFB86C"/>
+</svg>

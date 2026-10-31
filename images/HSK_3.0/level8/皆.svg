@@ -1,0 +1,67 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background grid/nodes representing distributed branch offices / parallel outcomes -->
+  <g opacity="0.15">
+    <line x1="60" y1="90" x2="120" y2="70" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3 3"/>
+    <line x1="180" y1="90" x2="120" y2="70" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3 3"/>
+    <line x1="120" y1="70" x2="120" y2="130" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- Visual Metaphor for "皆" (All / Universally / In unison) -->
+  <!-- Three parallel branches / pillars converging on a uniformly high standard of success -->
+
+  <!-- Base Platform -->
+  <path d="M40 185H200" stroke="#2D323E" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Left Branch / Pillar -->
+  <g transform="translate(60, 0)">
+    <!-- Upward arrow / growth indicator -->
+    <path d="M0 160V95" stroke="#3A4252" stroke-width="6" stroke-linecap="round"/>
+    <!-- Target node reaching the top ideal level -->
+    <circle cx="0" cy="95" r="12" fill="#252A34"/>
+    <circle cx="0" cy="95" r="7" fill="#F59E0B"/>
+  </g>
+
+  <!-- Center Branch / Pillar -->
+  <g transform="translate(120, 0)">
+    <!-- Upward arrow / growth indicator -->
+    <path d="M0 160V95" stroke="#3A4252" stroke-width="6" stroke-linecap="round"/>
+    <!-- Target node reaching the top ideal level -->
+    <circle cx="0" cy="95" r="12" fill="#252A34"/>
+    <circle cx="0" cy="95" r="7" fill="#F59E0B"/>
+  </g>
+
+  <!-- Right Branch / Pillar -->
+  <g transform="translate(180, 0)">
+    <!-- Upward arrow / growth indicator -->
+    <path d="M0 160V95" stroke="#3A4252" stroke-width="6" stroke-linecap="round"/>
+    <!-- Target node reaching the top ideal level -->
+    <circle cx="0" cy="95" r="12" fill="#252A34"/>
+    <circle cx="0" cy="95" r="7" fill="#F59E0B"/>
+  </g>
+
+  <!-- Universal Benchmark / Ideal Level Line (Connecting all outputs to show uniformity: "đều thảy") -->
+  <line x1="45" y1="95" x2="195" y2="95" stroke="#F59E0B" stroke-width="3" stroke-dasharray="6 4" opacity="0.8"/>
+
+  <!-- Focal Achievement Markers (Shining upward to signify "vô cùng lý tưởng") -->
+  <!-- Left star/peak indicator -->
+  <path d="M60 65L63 73H71L65 78L67 86L60 81L53 86L55 78L49 73H57L60 65Z" fill="#F59E0B" transform="translate(0, 0) scale(0.6)" transform-origin="60 75"/>
+
+  <!-- Center star/peak indicator -->
+  <path d="M60 65L63 73H71L65 78L67 86L60 81L53 86L55 78L49 73H57L60 65Z" fill="#F59E0B" transform="translate(60, 0) scale(0.6)" transform-origin="120 75"/>
+
+  <!-- Right star/peak indicator -->
+  <path d="M60 65L63 73H71L65 78L67 86L60 81L53 86L55 78L49 73H57L60 65Z" fill="#F59E0B" transform="translate(120, 0) scale(0.6)" transform-origin="180 75"/>
+
+  <!-- Baseline System Icons (Representing distributed entities / branches all aligning identically) -->
+  <rect x="50" y="165" width="20" height="15" rx="3" fill="#3B82F6"/>
+  <rect x="110" y="165" width="20" height="15" rx="3" fill="#3B82F6"/>
+  <rect x="170" y="165" width="20" height="15" rx="3" fill="#3B82F6"/>
+
+  <!-- Converging upward energy pulses (Grammatical sense of comprehensive coverage) -->
+  <path d="M60 150L60 120" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M120 150L120 120" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M180 150L180 120" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+</svg>

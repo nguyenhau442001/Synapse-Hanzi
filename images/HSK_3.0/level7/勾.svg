@@ -1,0 +1,66 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle ambient background glow for focus -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.5"/>
+
+  <!-- Survey Questionnaire Document Base -->
+  <g transform="translate(60, 45)">
+    <!-- Document background shadow -->
+    <rect x="4" y="6" width="112" height="150" rx="10" fill="#111317" opacity="0.6"/>
+    
+    <!-- Document main body -->
+    <rect x="0" y="0" width="112" height="150" rx="10" fill="#2D333B"/>
+    
+    <!-- Document header accent line -->
+    <rect x="16" y="20" width="40" height="6" rx="3" fill="#4E5D6C"/>
+
+    <!-- Survey question rows -->
+    <!-- Row 1 -->
+    <rect x="16" y="44" width="70" height="5" rx="2.5" fill="#4E5D6C" opacity="0.6"/>
+    <!-- Checkbox 1 (Unchecked) -->
+    <rect x="92" y="40" width="12" height="12" rx="3" fill="none" stroke="#4E5D6C" stroke-width="2"/>
+
+    <!-- Row 2 -->
+    <rect x="16" y="70" width="60" height="5" rx="2.5" fill="#4E5D6C" opacity="0.6"/>
+    <!-- Checkbox 2 (Unchecked) -->
+    <rect x="92" y="66" width="12" height="12" rx="3" fill="none" stroke="#4E5D6C" stroke-width="2"/>
+
+    <!-- Row 3 (Highlighted target row) -->
+    <rect x="12" y="90" width="96" height="30" rx="6" fill="#3A4454"/>
+    <rect x="20" y="102" width="55" height="5" rx="2.5" fill="#8AB4F8"/>
+    
+    <!-- Target Checkbox Container -->
+    <rect x="88" y="99" width="16" height="16" rx="4" fill="#1A73E8"/>
+    
+    <!-- The Checkmark / Gou (勾) -->
+    <path d="M91.5 107 L95.5 111 L101.5 102" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Row 4 -->
+    <rect x="16" y="136" width="65" height="5" rx="2.5" fill="#4E5D6C" opacity="0.6"/>
+    <!-- Checkbox 4 (Unchecked) -->
+    <rect x="92" y="132" width="12" height="12" rx="3" fill="none" stroke="#4E5D6C" stroke-width="2"/>
+  </g>
+
+  <!-- Floating Pen / Stylus tool emphasizing the marking action -->
+  <g transform="translate(130, 20) rotate(25)">
+    <!-- Pen shadow -->
+    <path d="M 50,85 L 56,85 L 53,135 Z" fill="#000000" opacity="0.3"/>
+    
+    <!-- Pen Body -->
+    <path d="M 48,15 L 58,15 L 61,85 L 45,85 Z" fill="#F2994A"/>
+    
+    <!-- Pen Grip / Detail -->
+    <rect x="46" y="30" width="14" height="8" fill="#E08631"/>
+    
+    <!-- Pen Tip -->
+    <path d="M 45,85 L 61,85 L 53,115 Z" fill="#E0E0E0"/>
+    
+    <!-- Pen Nib Point -->
+    <circle cx="53" cy="115" r="1.5" fill="#333333"/>
+  </g>
+
+  <!-- Interactive Focus Indicator (Gold/Orange accent ring) -->
+  <circle cx="151" cy="144" r="22" fill="none" stroke="#F2994A" stroke-width="2.5" stroke-dasharray="6 4" opacity="0.8"/>
+</svg>

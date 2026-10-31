@@ -1,0 +1,47 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle Background Grid/Path for "Đường đi nước bước" concept -->
+  <path d="M 50 190 L 120 190 Q 150 190 150 160 L 150 110 Q 150 80 180 80 L 195 80" fill="none" stroke="#2A303C" stroke-width="6" stroke-linecap="round" stroke-dasharray="6 6"/>
+  
+  <!-- Glowing Path Highlight (Mối quan hệ / Đường đi) -->
+  <path d="M 50 190 L 110 190 Q 135 190 142 165 L 148 120 Q 150 95 175 95 L 195 95" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+  <circle cx="120" cy="190" r="4" fill="#F59E0B"/>
+  <circle cx="150" cy="135" r="4" fill="#F59E0B"/>
+  <circle cx="175" cy="95" r="4" fill="#F59E0B"/>
+
+  <!-- Main Object: A stylized modern smart-doorway / portal entrance (Physical object: 门 - Door/Gateway) with directional guides (路 - Path/Method) -->
+  
+  <!-- Door Frame Outer Structure -->
+  <path d="M 85 45 L 155 45 L 155 195 L 85 195 Z" fill="none" stroke="#3A4252" stroke-width="3" rx="4"/>
+  
+  <!-- Door Frame Glow/Lighting Interior -->
+  <path d="M 92 52 L 148 52 L 148 195 L 92 195 Z" fill="#222834"/>
+  
+  <!-- Open Door Panels (Creating perspective of entering/finding a way) -->
+  <path d="M 92 52 L 65 70 L 65 195 L 92 195 Z" fill="#2E3646" stroke="#48556A" stroke-width="1.5"/>
+  <path d="M 148 52 L 175 70 L 175 195 L 148 195 Z" fill="#2E3646" stroke="#48556A" stroke-width="1.5"/>
+  
+  <!-- Threshold / Step (Đường đi) -->
+  <ellipse cx="120" cy="195" rx="35" ry="6" fill="#3A4252"/>
+  
+  <!-- Golden Keyhole / Access Point (Iconizing 'phương hướng, mối quan hệ') -->
+  <circle cx="120" cy="115" r="14" fill="#1A1D24" stroke="#F59E0B" stroke-width="3"/>
+  <path d="M 115 125 L 125 125 L 127 150 L 113 150 Z" fill="#F59E0B"/>
+  
+  <!-- Key Details (Connected nodes representing network/mối quan hệ) -->
+  <circle cx="120" cy="75" r="5" fill="#3B82F6"/>
+  <line x1="120" y1="80" x2="120" y2="101" stroke="#3B82F6" stroke-width="2"/>
+  
+  <circle cx="95" cy="135" r="4" fill="#10B981"/>
+  <line x1="99" y1="130" x2="109" y2="120" stroke="#10B981" stroke-width="2"/>
+
+  <circle cx="145" cy="135" r="4" fill="#10B981"/>
+  <line x1="141" y1="130" x2="131" y2="120" stroke="#10B981" stroke-width="2"/>
+  
+  <!-- Sparkle / Breakthrough Accent (Nắm bắt được đường đi nước bước) -->
+  <path d="M 185 55 L 188 65 L 198 68 L 188 71 L 185 81 L 182 71 L 172 68 L 182 65 Z" fill="#F59E0B"/>
+  <path d="M 55 105 L 57 110 L 62 112 L 57 114 L 55 119 L 53 114 L 48 112 L 53 110 Z" fill="#3B82F6" opacity="0.7"/>
+
+</svg>

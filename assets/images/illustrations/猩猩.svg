@@ -1,0 +1,63 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow/jungle atmosphere representation -->
+  <circle cx="120" cy="120" r="85" fill="#252A34" opacity="0.6"/>
+  
+  <!-- Anthropoid / Great Ape (Chimpanzee / Orangutan representation) -->
+  <g transform="translate(0, 5)">
+    <!-- Body / Shoulders -->
+    <path d="M75,190 C75,150 90,135 120,135 C150,135 165,150 165,190 Z" fill="#2E231D"/>
+    <path d="M85,190 C85,155 95,142 120,142 C145,142 155,155 155,190 Z" fill="#3D3028"/>
+
+    <!-- Head & Hair outline (Dark fur) -->
+    <circle cx="120" cy="98" r="48" fill="#3D3028"/>
+    
+    <!-- Ears -->
+    <circle cx="74" cy="95" r="10" fill="#E5A97D"/>
+    <circle cx="74" cy="95" r="6" fill="#D29367"/>
+    <circle cx="166" cy="95" r="10" fill="#E5A97D"/>
+    <circle cx="166" cy="95" r="6" fill="#D29367"/>
+
+    <!-- Face Mask (lighter skin tone) -->
+    <path d="M85,82 C85,65 102,58 120,58 C138,58 155,65 155,82 C155,115 142,128 120,128 C98,128 85,115 85,82 Z" fill="#E5A97D"/>
+
+    <!-- Brow ridge -->
+    <path d="M92,80 Q120,68 148,80 Q145,72 120,70 Q95,72 92,80 Z" fill="#D29367"/>
+
+    <!-- Eyes -->
+    <ellipse cx="103" cy="88" rx="6" ry="4" fill="#252A34"/>
+    <ellipse cx="137" cy="88" rx="6" ry="4" fill="#252A34"/>
+    <circle cx="105" cy="87" r="1.5" fill="#FFFFFF"/>
+    <circle cx="139" cy="87" r="1.5" fill="#FFFFFF"/>
+
+    <!-- Nose -->
+    <path d="M115,102 Q120,95 125,102 Q123,108 120,107 Q117,108 115,102 Z" fill="#C48255"/>
+    <circle cx="117" cy="104" r="1.5" fill="#8C5332"/>
+    <circle cx="123" cy="104" r="1.5" fill="#8C5332"/>
+
+    <!-- Mouth / Warm intelligent expression -->
+    <path d="M106,115 Q120,124 134,115" stroke="#8C5332" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M110,118 Q120,123 130,118" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Contextual element: Simple tool representation (stick/twig held neatly referencing tool use) -->
+  <g transform="rotate(-25, 155, 145)">
+    <rect x="145" y="100" width="6" height="75" rx="3" fill="#D48E42"/>
+    <rect x="147" y="100" width="2" height="75" fill="#F4AD62" opacity="0.5"/>
+  </g>
+
+  <!-- Foreground hands interacting with the tool -->
+  <g>
+    <!-- Left Hand -->
+    <path d="M75,150 C75,140 85,138 92,145 C98,150 100,160 92,165 C85,170 75,160 75,150 Z" fill="#E5A97D"/>
+    <path d="M78,148 C78,144 84,142 88,147" stroke="#C48255" stroke-width="2" stroke-linecap="round" fill="none"/>
+    
+    <!-- Right Hand gripping the tool -->
+    <path d="M135,145 C145,138 158,145 155,155 C152,165 140,165 135,155 Z" fill="#E5A97D"/>
+  </g>
+
+  <!-- Accent highlight (modern educational flashcard focus ring) -->
+  <circle cx="120" cy="120" r="105" fill="none" stroke="#F4AD62" stroke-width="2" stroke-dasharray="8 6" opacity="0.4"/>
+</svg>

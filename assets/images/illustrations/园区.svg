@@ -1,0 +1,32 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground Plane -->
+  <path d="M20 190 L220 190 L200 210 L40 210 Z" fill="#2D343E"/>
+  
+  <!-- Building 1 (Main Tech Hub) -->
+  <rect x="50" y="80" width="40" height="110" rx="2" fill="#FFB84D"/>
+  <rect x="55" y="90" width="30" height="15" fill="#1A1D24"/>
+  <rect x="55" y="115" width="30" height="15" fill="#1A1D24"/>
+  <rect x="55" y="140" width="30" height="15" fill="#1A1D24"/>
+  <rect x="55" y="165" width="30" height="15" fill="#1A1D24"/>
+  
+  <!-- Building 2 (Modern Office) -->
+  <rect x="100" y="110" width="50" height="80" rx="2" fill="#4DA6FF"/>
+  <rect x="110" y="120" width="12" height="20" fill="#1A1D24"/>
+  <rect x="128" y="120" width="12" height="20" fill="#1A1D24"/>
+  <rect x="110" y="150" width="12" height="20" fill="#1A1D24"/>
+  <rect x="128" y="150" width="12" height="20" fill="#1A1D24"/>
+  
+  <!-- Building 3 (Data Center/Lab) -->
+  <rect x="160" y="130" width="35" height="60" rx="2" fill="#FFB84D"/>
+  <rect x="168" y="140" width="20" height="40" fill="#1A1D24"/>
+  
+  <!-- Landscaping/Greenery -->
+  <circle cx="195" cy="185" r="8" fill="#4CAF50"/>
+  <circle cx="40" cy="185" r="6" fill="#4CAF50"/>
+  
+  <!-- Decorative Tech Elements -->
+  <path d="M180 90 L195 90 M187.5 82.5 L187.5 97.5" stroke="#4DA6FF" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="150" cy="70" r="5" fill="#FFB84D"/>
+</svg>

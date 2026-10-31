@@ -1,0 +1,27 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 115)">
+    <!-- Wrench Tool representing physical object / tool that is effective (管用) -->
+    <!-- Handle -->
+    <path d="M-12,50 L12,20 L35,43 L20,67 C15,75 5,75 -2,67 Z" fill="#3A4454" />
+    <path d="M-9,45 L9,23 L26,40 L16,57 C12,63 6,63 2,57 Z" fill="#2E3744" />
+    
+    <!-- Main Wrench Body (Glowing Gold/Orange Accent for high effectiveness) -->
+    <path d="M-55,-65 C-75,-45 -75,-15 -55,5 L-12,50 L20,18 L-5,-25 C-25,-45 -40,-55 -55,-65 Z" fill="#4B566D" />
+    
+    <!-- Wrench Head (Open End) -->
+    <path d="M-62,-72 C-45,-90 -18,-85 -2,-68 L-15,-55 C-25,-65 -42,-65 -52,-55 C-62,-45 -62,-28 -52,-18 L-65,-5 C-82,-22 -80,-50 -62,-72 Z" fill="#F39C12" />
+    
+    <!-- Glow / Effectiveness Sparks -->
+    <circle cx="45" cy="-35" r="4" fill="#F1C40F" />
+    <path d="M45,-45 L45,-25 M35,-35 L55,-35" stroke="#F1C40F" stroke-width="2" stroke-linecap="round" />
+    
+    <circle cx="-50" cy="45" r="3" fill="#F1C40F" />
+    <path d="M-50,38 L-50,52 M-57,45 L-43,45" stroke="#F1C40F" stroke-width="2" stroke-linecap="round" />
+    
+    <!-- Checkmark Badge integrated into the tool concept for 'effective/works' -->
+    <circle cx="28" cy="-12" r="22" fill="#2ECC71" />
+    <path d="M18,-12 L25,-5 L40,-22" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>

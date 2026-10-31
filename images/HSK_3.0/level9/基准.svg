@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Architectural Survey / Benchmark Monument (Physical Object representing 基准 - standard reference milestone) -->
+  <g transform="translate(120, 115)">
+    <!-- Ground / Base platform -->
+    <ellipse cx="0" cy="55" rx="65" ry="16" fill="#2A303C"/>
+    <ellipse cx="0" cy="55" rx="55" ry="12" fill="#363E4F"/>
+    
+    <!-- Stone pedestal / Monument base -->
+    <path d="M-35,55 L-25,30 L25,30 L35,55 Z" fill="#475267"/>
+    <rect x="-28" y="25" width="56" height="8" rx="2" fill="#5A677D"/>
+
+    <!-- Main pillar body (The benchmark monolith) -->
+    <rect x="-20" y="-45" width="40" height="70" rx="4" fill="#2E3748"/>
+    <rect x="-16" y="-40" width="32" height="60" rx="2" fill="#232A36"/>
+
+    <!-- Precision markings / Horizontal baseline indicators (representing standard level/benchmark) -->
+    <rect x="-12" y="-25" width="24" height="3" rx="1.5" fill="#F59E0B"/>
+    <rect x="-8" y="-10" width="16" height="2" rx="1" fill="#94A3B8"/>
+    <rect x="-12" y="5" width="24" height="3" rx="1.5" fill="#F59E0B"/>
+    <rect x="-8" y="20" width="16" height="2" rx="1" fill="#94A3B8"/>
+
+    <!-- Top surveying benchmark plate/cap -->
+    <path d="M-26,-45 L26,-45 L20,-55 L-20,-55 Z" fill="#64748B"/>
+    <circle cx="0" cy="-50" r="4" fill="#F59E0B"/>
+
+    <!-- Optical/Laser Level Sight (Physical surveying instrument mounted on top) -->
+    <rect x="-30" y="-72" width="60" height="14" rx="4" fill="#3B82F6"/>
+    <circle cx="0" cy="-65" r="5" fill="#93C5FD"/>
+    <rect x="-22" y="-78" width="44" height="6" rx="2" fill="#1D4ED8"/>
+
+    <!-- Projected baseline / Reference horizon beam -->
+    <path d="M-85,-65 L-45,-65" stroke="#3B82F6" stroke-width="2.5" stroke-dasharray="4 2" opacity="0.8"/>
+    <path d="M45,-65 L85,-65" stroke="#3B82F6" stroke-width="2.5" stroke-dasharray="4 2" opacity="0.8"/>
+    
+    <!-- Golden Reference Level Arrow / Indicator -->
+    <path d="M-55,-65 L-45,-70 L-45,-60 Z" fill="#F59E0B"/>
+    <path d="M55,-65 L45,-70 L45,-60 Z" fill="#F59E0B"/>
+    
+    <line x1="-80" y1="-65" x2="80" y2="-65" stroke="#F59E0B" stroke-width="1.5" opacity="0.4"/>
+  </g>
+</svg>

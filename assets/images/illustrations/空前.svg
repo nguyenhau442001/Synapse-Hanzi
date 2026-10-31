@@ -1,0 +1,22 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Representing "空前" (Unprecedented/Record-breaking) as a physical trophy/monument -->
+  <!-- Base of the monument -->
+  <rect x="70" y="180" width="100" height="10" rx="2" fill="#3D4451"/>
+  <rect x="85" y="170" width="70" height="10" rx="2" fill="#4B5563"/>
+  
+  <!-- The central pillar representing the peak/record -->
+  <rect x="105" y="80" width="30" height="90" fill="#F59E0B"/>
+  
+  <!-- The "Peak" marker (the record-breaking point) -->
+  <path d="M120 50 L145 90 L95 90 Z" fill="#FBBF24"/>
+  
+  <!-- Decorative lines indicating height/scale -->
+  <line x1="150" y1="170" x2="150" y2="90" stroke="#374151" stroke-width="2" stroke-dasharray="4 4"/>
+  <line x1="160" y1="170" x2="160" y2="70" stroke="#374151" stroke-width="2" stroke-dasharray="4 4"/>
+  <line x1="170" y1="170" x2="170" y2="50" stroke="#F59E0B" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- A star icon at the very top to signify the "unprecedented" success -->
+  <path d="M120 35 L124 43 L133 44 L127 50 L129 59 L120 54 L111 59 L113 50 L107 44 L116 43 Z" fill="#FBBF24"/>
+</svg>

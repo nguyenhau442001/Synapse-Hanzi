@@ -1,0 +1,82 @@
+<svg width="240" height="240" rx="24" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow/halo to focus on the character -->
+  <circle cx="120" cy="125" r="75" fill="#252A34" opacity="0.6"/>
+
+  <!-- Rocking Chair Base -->
+  <g fill="none" stroke="#F0A500" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Rockers -->
+    <path d="M 60,195 Q 120,210 185,195"/>
+    <!-- Chair Legs & Supports -->
+    <line x1="85" y1="155" x2="70" y2="192"/>
+    <line x1="155" y1="155" x2="170" y2="192"/>
+    <line x1="100" y1="120" x2="85" y2="160"/>
+    <line x1="140" y1="120" x2="155" y2="160"/>
+  </g>
+
+  <!-- Rocking Chair Back and Seat -->
+  <g fill="none" stroke="#E6AF2E" stroke-width="2.5" stroke-linecap="round">
+    <!-- Spindles -->
+    <line x1="105" y1="75" x2="90" y2="140"/>
+    <line x1="120" y1="70" x2="120" y2="145"/>
+    <line x1="135" y1="75" x2="150" y2="140"/>
+    <!-- Seat -->
+    <path d="M 80,140 Q 120,145 160,140"/>
+    <!-- Curved Backrest Top -->
+    <path d="M 95,75 Q 120,60 145,75"/>
+  </g>
+
+  <!-- Grandmother Character -->
+  <g>
+    <!-- Body / Outfit -->
+    <path d="M 95,130 Q 120,125 145,130 L 155,175 Q 120,185 85,175 Z" fill="#3F5EFB" opacity="0.8"/>
+    <path d="M 100,132 L 140,132 L 145,170 Q 120,178 95,170 Z" fill="#2A439E"/>
+
+    <!-- Head & Face -->
+    <circle cx="120" cy="95" r="22" fill="#FCEADE"/>
+    
+    <!-- Gentle Facial Features -->
+    <!-- Smiling Eyes (closed gentle crescents) -->
+    <path d="M 110,92 Q 113,95 116,92" fill="none" stroke="#5A4A42" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 124,92 Q 127,95 130,92" fill="none" stroke="#5A4A42" stroke-width="2" stroke-linecap="round"/>
+    <!-- Gentle Smile -->
+    <path d="M 115,103 Q 120,107 125,103" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round"/>
+    <!-- Rosy Cheeks -->
+    <circle cx="108" cy="99" r="3" fill="#F472B6" opacity="0.6"/>
+    <circle cx="132" cy="99" r="3" fill="#F472B6" opacity="0.6"/>
+
+    <!-- Neat Silver/White Hair Bun -->
+    <path d="M 98,92 Q 95,75 120,75 Q 145,75 142,92 Z" fill="#E2E8F0"/>
+    <circle cx="120" cy="65" r="10" fill="#CBD5E1"/>
+    <!-- Glasses (Warm Gold Accent) -->
+    <circle cx="113" cy="92" r="5" fill="none" stroke="#F59E0B" stroke-width="1.5"/>
+    <circle cx="127" cy="92" r="5" fill="none" stroke="#F59E0B" stroke-width="1.5"/>
+    <line x1="118" y1="92" x2="122" y2="92" stroke="#F59E0B" stroke-width="1.5"/>
+
+    <!-- Arms & Hands -->
+    <!-- Left Arm (Holding yarn) -->
+    <path d="M 100,135 Q 85,145 95,155" fill="none" stroke="#3F5EFB" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="95" cy="155" r="4" fill="#FCEADE"/>
+
+    <!-- Right Arm (Knitting) -->
+    <path d="M 140,135 Q 155,145 135,155" fill="none" stroke="#3F5EFB" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="135" cy="155" r="4" fill="#FCEADE"/>
+  </g>
+
+  <!-- Knitting Details (Yarn & Needles) -->
+  <g>
+    <!-- Ball of Yarn on lap -->
+    <circle cx="115" cy="158" r="9" fill="#EC4899"/>
+    <path d="M 107,155 Q 115,150 123,155" fill="none" stroke="#FBCFE8" stroke-width="1.5"/>
+    <path d="M 108,161 Q 115,165 122,161" fill="none" stroke="#FBCFE8" stroke-width="1.5"/>
+
+    <!-- Knitting Needles -->
+    <line x1="80" y1="140" x2="150" y2="165" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="90" y1="165" x2="155" y2="140" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Hanging Yarn Thread -->
+    <path d="M 120,166 Q 130,180 115,190" fill="none" stroke="#EC4899" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

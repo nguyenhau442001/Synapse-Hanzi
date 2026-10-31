@@ -1,0 +1,22 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Document/Report Representation -->
+  <g transform="translate(70, 50)">
+    <rect x="0" y="0" width="100" height="140" rx="4" fill="#343A46" stroke="#5D677A" stroke-width="2"/>
+    
+    <!-- Lines of text -->
+    <rect x="15" y="20" width="70" height="6" rx="2" fill="#5D677A"/>
+    <rect x="15" y="35" width="70" height="6" rx="2" fill="#5D677A"/>
+    <rect x="15" y="50" width="70" height="6" rx="2" fill="#5D677A"/>
+    <rect x="15" y="65" width="70" height="6" rx="2" fill="#5D677A"/>
+    
+    <!-- The "Missing" Hole/Gap -->
+    <rect x="15" y="85" width="70" height="35" rx="4" fill="#1A1D24"/>
+    <path d="M 15 85 L 85 120 M 15 120 L 85 85" stroke="#FFB84D" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Highlight/Focus Accent -->
+  <circle cx="170" cy="190" r="10" fill="#FFB84D"/>
+  <path d="M 170 185 L 170 192 M 170 195 L 170 196" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+</svg>

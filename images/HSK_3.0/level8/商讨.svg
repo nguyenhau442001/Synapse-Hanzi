@@ -1,0 +1,88 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient illumination behind the table -->
+  <ellipse cx="120" cy="155" rx="75" ry="25" fill="#111317" opacity="0.6"/>
+
+  <!-- Conference Table (Oval / Perspective view) -->
+  <g>
+    <!-- Table base/legs shadow -->
+    <ellipse cx="120" cy="162" rx="55" ry="14" fill="#0E1013"/>
+    <!-- Table body (Side thickness) -->
+    <path d="M 65 145 Q 120 160 175 145 L 175 153 Q 120 168 65 153 Z" fill="#283042"/>
+    <!-- Table top surface -->
+    <ellipse cx="120" cy="145" rx="55" ry="16" fill="#3B465E"/>
+    <!-- Table rim highlight -->
+    <ellipse cx="120" cy="144" rx="53" ry="14" fill="none" stroke="#4F5D7A" stroke-width="1.5"/>
+  </g>
+
+  <!-- Documents / Negotiation Papers on Table -->
+  <g transform="translate(0, 2)">
+    <!-- Document 1 (Left) -->
+    <path d="M 95 138 L 115 133 L 120 142 L 100 147 Z" fill="#E2E8F0" opacity="0.9"/>
+    <line x1="100" y1="139" x2="110" y2="137" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="102" y1="143" x2="113" y2="140" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <!-- Document 2 (Right / Overlapping) -->
+    <path d="M 125 135 L 148 140 L 143 150 L 120 145 Z" fill="#FFFFFF" opacity="0.95"/>
+    <line x1="130" y1="139" x2="142" y2="141" stroke="#64748B" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="128" y1="144" x2="137" y2="146" stroke="#64748B" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="140" cy="147" r="1.5" fill="#F59E0B"/>
+  </g>
+
+  <!-- Person Left (Representative 1) -->
+  <g>
+    <!-- Shoulders / Torso -->
+    <path d="M 50 195 Q 52 165 78 152 L 95 175 L 95 195 Z" fill="#2563EB"/>
+    <path d="M 55 195 Q 65 175 80 165 L 75 195 Z" fill="#1D4ED8"/>
+    <!-- Collar & Tie -->
+    <polygon points="73,153 82,163 91,153" fill="#F8FAFC"/>
+    <polygon points="80,163 83,163 84,180 82,185 80,180" fill="#F59E0B"/>
+
+    <!-- Neck -->
+    <rect x="73" y="142" width="14" height="15" rx="4" fill="#E2B290"/>
+
+    <!-- Head -->
+    <circle cx="80" cy="126" r="15" fill="#E2B290"/>
+    <!-- Hair -->
+    <path d="M 66 123 C 65 110, 75 108, 83 108 C 93 108, 96 116, 95 125 C 92 120, 88 113, 80 113 C 71 113, 68 118, 66 123 Z" fill="#1E293B"/>
+
+    <!-- Left Arm / Hand gesturing inward -->
+    <path d="M 75 168 Q 95 160 102 148" fill="none" stroke="#2563EB" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="104" cy="146" r="4.5" fill="#E2B290"/>
+  </g>
+
+  <!-- Person Right (Representative 2) -->
+  <g>
+    <!-- Shoulders / Torso -->
+    <path d="M 190 195 Q 188 165 162 152 L 145 175 L 145 195 Z" fill="#0D9488"/>
+    <path d="M 185 195 Q 175 175 160 165 L 165 195 Z" fill="#0F766E"/>
+    <!-- Collar & Tie -->
+    <polygon points="167,153 158,163 149,153" fill="#F8FAFC"/>
+    <polygon points="159,163 162,163 161,180 159,185 157,180" fill="#F59E0B"/>
+
+    <!-- Neck -->
+    <rect x="153" y="142" width="14" height="15" rx="4" fill="#E2B290"/>
+
+    <!-- Head -->
+    <circle cx="160" cy="126" r="15" fill="#E2B290"/>
+    <!-- Hair -->
+    <path d="M 148 126 C 148 113, 156 109, 164 109 C 173 109, 175 116, 175 125 C 171 119, 168 114, 160 114 C 153 114, 150 120, 148 126 Z" fill="#334155"/>
+
+    <!-- Right Arm / Hand gesturing inward -->
+    <path d="M 165 168 Q 145 160 138 148" fill="none" stroke="#0D9488" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="136" cy="146" r="4.5" fill="#E2B290"/>
+  </g>
+
+  <!-- Focus / Central Dialogue Element (Abstract communication vectors) -->
+  <g opacity="0.85">
+    <!-- Dialogue Thought/Speech Node Center -->
+    <circle cx="120" cy="105" r="16" fill="#F59E0B"/>
+    <path d="M 113 105 L 127 105 M 120 98 L 120 112" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Connection Arcs / Waves showing active exchange -->
+    <path d="M 102 105 C 102 92, 110 88, 120 88 C 130 88, 138 92, 138 105" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="3 3"/>
+    <path d="M 94 105 C 94 82, 105 78, 120 78 C 135 78, 146 82, 146 105" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  </g>
+</svg>

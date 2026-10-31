@@ -1,0 +1,30 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle street background element -->
+  <path d="M40 180 L200 180" stroke="#2A2F3A" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Beggar character (sitting hunched over, wearing simple cloak) -->
+  <!-- Body/Cloak -->
+  <path d="M90 170 C85 145 100 125 120 120 C140 125 155 145 150 170 Z" fill="#4A5568"/>
+  <path d="M100 170 C95 150 110 135 120 130 C130 135 145 150 140 170 Z" fill="#2D3748"/>
+  
+  <!-- Head bowed down -->
+  <circle cx="120" cy="115" r="14" fill="#D6BCFA"/>
+  <!-- Hood/Hat -->
+  <path d="M104 112 C104 100 136 100 136 112 C132 108 108 108 104 112 Z" fill="#4A5568"/>
+
+  <!-- Reaching arm and open palm begging -->
+  <path d="M130 135 L165 145" stroke="#4A5568" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="170" cy="146" r="5" fill="#D6BCFA"/>
+
+  <!-- Alms bowl / cup placed on the ground -->
+  <ellipse cx="185" cy="172" rx="16" ry="6" fill="#2D3748"/>
+  <path d="M169 172 C169 184 201 184 201 172 Z" fill="#718096"/>
+  <ellipse cx="185" cy="172" rx="13" ry="4" fill="#1A1D24"/>
+
+  <!-- Coins dropping / offered into the bowl (Gold/Orange accent color) -->
+  <circle cx="185" cy="145" r="4" fill="#ECC94B"/>
+  <ellipse cx="185" cy="162" rx="5" ry="2" fill="#D69E2E"/>
+  <ellipse cx="180" cy="167" rx="4" ry="1.5" fill="#ECC94B"/>
+</svg>

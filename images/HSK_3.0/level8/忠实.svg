@@ -1,0 +1,70 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative glow representing steadfastness -->
+  <circle cx="120" cy="120" r="70" fill="#242B38" />
+
+  <!-- The Faithful Reader Character (Representing "the most loyal reader" from the context) -->
+  <g id="loyal-reader">
+    <!-- Body/Coat -->
+    <path d="M 80 185 L 80 160 Q 80 145 100 140 L 140 140 Q 160 145 160 160 L 160 185 Z" fill="#2E4057" />
+    
+    <!-- Scarf for elderly/distinguished reader look -->
+    <path d="M 100 120 Q 120 135 140 120 L 145 135 Q 120 145 95 135 Z" fill="#E07A5F" />
+
+    <!-- Neck -->
+    <rect x="110" y="112" width="20" height="15" fill="#E8C39E" />
+
+    <!-- Head -->
+    <circle cx="120" cy="95" r="22" fill="#E8C39E" />
+
+    <!-- Gray Hair (representing the decades of reading - "几十年来") -->
+    <path d="M 98 95 Q 98 70 120 70 Q 142 70 142 95 Q 135 88 120 88 Q 105 88 98 95 Z" fill="#A0ABBA" />
+
+    <!-- Gentle expression (smile) -->
+    <path d="M 113 103 Q 120 108 127 103" stroke="#4A5568" stroke-width="2" stroke-linecap="round" fill="none" />
+    <!-- Glasses -->
+    <circle cx="112" cy="93" r="6" fill="none" stroke="#E9C46A" stroke-width="2" />
+    <circle cx="128" cy="93" r="6" fill="none" stroke="#E9C46A" stroke-width="2" />
+    <line x1="118" y1="93" x2="122" y2="93" stroke="#E9C46A" stroke-width="2" />
+
+    <!-- Hands holding the open book firmly and attentively -->
+    <path d="M 90 155 Q 95 145 105 148 L 110 155 Z" fill="#E8C39E" />
+    <path d="M 150 155 Q 145 145 135 148 L 130 155 Z" fill="#E8C39E" />
+  </g>
+
+  <!-- The Open Literary Magazine / Book (Representing the "文学月刊") -->
+  <g id="open-book">
+    <!-- Book Shadow -->
+    <ellipse cx="120" cy="180" rx="55" ry="8" fill="#111418" opacity="0.6"/>
+
+    <!-- Left Page -->
+    <path d="M 65 150 Q 95 140 120 152 L 120 190 Q 95 178 65 188 Z" fill="#F4F1DE" />
+    <!-- Right Page -->
+    <path d="M 175 150 Q 145 140 120 152 L 120 190 Q 145 178 175 188 Z" fill="#F4F1DE" />
+
+    <!-- Center Binding -->
+    <line x1="120" y1="152" x2="120" y2="190" stroke="#D0CBC7" stroke-width="2" />
+
+    <!-- Abstract Text Lines (Left Page) -->
+    <line x1="75" y1="160" x2="105" y2="157" stroke="#D0CBC7" stroke-width="2" stroke-linecap="round" />
+    <line x1="75" y1="168" x2="110" y2="165" stroke="#D0CBC7" stroke-width="2" stroke-linecap="round" />
+    <line x1="75" y1="176" x2="100" y2="173" stroke="#D0CBC7" stroke-width="2" stroke-linecap="round" />
+
+    <!-- Abstract Text Lines (Right Page) -->
+    <line x1="135" y1="157" x2="165" y2="160" stroke="#D0CBC7" stroke-width="2" stroke-linecap="round" />
+    <line x1="130" y1="165" x2="165" y2="168" stroke="#D0CBC7" stroke-width="2" stroke-linecap="round" />
+    <line x1="140" y1="173" x2="165" y2="176" stroke="#D0CBC7" stroke-width="2" stroke-linecap="round" />
+    
+    <!-- Accent Bookmark (Gold/Orange representing high value/loyalty) -->
+    <path d="M 120 190 L 125 205 L 120 200 L 115 205 Z" fill="#E9C46A" />
+  </g>
+
+  <!-- Symbol of Steadfastness/Loyalty (Subtle glowing gold star/badge above, indicating unwavering dedication) -->
+  <g id="loyalty-badge" transform="translate(120, 38)">
+    <circle cx="0" cy="0" r="16" fill="#2E3748" stroke="#E9C46A" stroke-width="2" />
+    <!-- Checkmark/Star hybrid for truth/faithfulness -->
+    <path d="M -5 -1 L -1 4 L 6 -5" fill="none" stroke="#E9C46A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>

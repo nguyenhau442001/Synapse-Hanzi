@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Representation: A physical luggage/backpack on a winding path, representing life's journey (人生道路) with variable amounts of baggage/experiences (huòduō-huòshǎo - ít nhiều/nhiều hay ít những thử thách) -->
+  
+  <!-- Winding Path -->
+  <path d="M40 180 C 80 180, 100 130, 140 130 C 180 130, 180 90, 200 70" fill="none" stroke="#2A2F3D" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Path highlights -->
+  <path d="M40 180 C 80 180, 100 130, 140 130" fill="none" stroke="#3E4556" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 8"/>
+
+  <!-- Milestone markers along the path -->
+  <circle cx="70" cy="165" r="4" fill="#F39C12"/>
+  <circle cx="115" cy="130" r="4" fill="#F39C12"/>
+  <circle cx="165" cy="100" r="4" fill="#F39C12"/>
+
+  <!-- Central Physical Object: A traveler's backpack with assorted items sticking out, symbolizing varied experiences/challenges gathered along the journey -->
+  <g transform="translate(100, 75)">
+    <!-- Main Backpack Body -->
+    <rect x="15" y="25" width="40" height="50" rx="10" fill="#3B82F6"/>
+    <!-- Backpack Flap/Pocket -->
+    <path d="M15 35 Q 35 20 55 35 L 55 55 Q 35 65 15 55 Z" fill="#2563EB"/>
+    <!-- Straps -->
+    <path d="M22 25 L 15 15 M48 25 L 55 15" stroke="#1D4ED8" stroke-width="4" stroke-linecap="round"/>
+    <!-- Side pocket -->
+    <rect x="8" y="40" width="7" height="20" rx="3.5" fill="#2563EB"/>
+    
+    <!-- Variable items representing "some more, some less" challenges/elements -->
+    <!-- Rolled sleeping pad / item on top -->
+    <rect x="20" y="10" width="30" height="10" rx="5" fill="#F59E0B"/>
+    <!-- Small flag/marker sticking out -->
+    <line x1="35" y1="10" x2="35" y2="-2" stroke="#94A3B8" stroke-width="2"/>
+    <polygon points="35,-2 45,3 35,8" fill="#EF4444"/>
+  </g>
+
+  <!-- Foreground ground details -->
+  <circle cx="50" cy="183" r="2" fill="#475569"/>
+  <circle cx="190" cy="73" r="2" fill="#475569"/>
+
+</svg>

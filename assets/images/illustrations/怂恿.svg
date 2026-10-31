@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Shadow/Dark Figure (The Instigator) -->
+  <path d="M160 100c0-22.09-17.91-40-40-40s-40 17.91-40 40c0 16.54 10.15 30.7 24.5 36.85L90 180h20l10-40 10 40h20l-14.5-43.15C149.85 130.7 160 116.54 160 100z" fill="#4A5568"/>
+  
+  <!-- The Victim (The Young Person) -->
+  <g transform="translate(40, 60)">
+    <circle cx="60" cy="40" r="25" fill="#A0AEC0"/>
+    <path d="M40 80h40l-5 60h-30l-5-60z" fill="#718096"/>
+    <path d="M45 140l-5 40h15l5-40" fill="#4A5568"/>
+    <path d="M75 140l5 40h-15l-5-40" fill="#4A5568"/>
+  </g>
+
+  <!-- The Whispering/Inciting Action -->
+  <path d="M120 90 L145 75 L125 70 Z" fill="#ECC94B"/>
+  <circle cx="150" cy="70" r="6" fill="#ECC94B"/>
+  
+  <!-- Directional/Manipulation Line -->
+  <path d="M150 70 Q 160 50 180 60" stroke="#ECC94B" stroke-width="3" fill="none" stroke-dasharray="4 4"/>
+  
+  <!-- The Path/Directional Indicator (Misleading) -->
+  <path d="M100 190 L180 190 L170 170" stroke="#F6AD55" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

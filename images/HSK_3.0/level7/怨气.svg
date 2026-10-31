@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Object Representation for "怨气" (Grievance, resentment, bottled-up frustration) -->
+  <!-- A modern, sleek stylized office worker silhouette with an inner dense, turbulent dark-amber and smoky pressure core -->
+  
+  <g transform="translate(0, 5)">
+    <!-- Ambient subtle pressure aura -->
+    <circle cx="120" cy="115" r="65" fill="#2A1B22" opacity="0.6"/>
+
+    <!-- Office worker minimalist head and shoulders -->
+    <path d="M 85 165 C 85 145 100 135 120 135 C 140 135 155 145 155 165 L 175 185 C 175 190 170 195 165 195 L 75 195 C 70 195 65 190 65 185 Z" fill="#283244"/>
+    
+    <!-- Neck -->
+    <rect x="110" y="115" width="20" height="30" rx="4" fill="#283244"/>
+
+    <!-- Head -->
+    <circle cx="120" cy="95" r="24" fill="#283244"/>
+    
+    <!-- Slumped, tense posture lines (shoulders) -->
+    <path d="M 80 145 L 120 135 L 160 145" stroke="#3A4A60" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+    <!-- Central core of "怨气" (Upset/Resentment energy trapped inside chest/mind) -->
+    <!-- Turbulent sharp internal pressure shapes in high-contrast amber/red-orange -->
+    <g transform="translate(120, 115)">
+      <!-- Jagged suppressed energy rising upward -->
+      <path d="M -8 15 L -12 -5 L -4 -10 L -10 -25 L 2 -18 L 8 -30 L 12 -12 L 6 -5 L 10 15 Z" fill="#FF5722" opacity="0.9"/>
+      <path d="M -4 10 L -8 -8 L 0 -15 L 4 -22 L 8 -10 L 4 5 Z" fill="#FFC107" opacity="0.8"/>
+      
+      <!-- Rising smoky wisps escaping from the chest/mind -->
+      <path d="M -15 -35 Q -25 -45 -18 -55" stroke="#FF5722" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+      <path d="M 0 -38 Q 5 -50 -2 -60" stroke="#FFC107" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8"/>
+      <path d="M 15 -32 Q 22 -42 16 -52" stroke="#FF5722" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+    </g>
+
+    <!-- Head profile detail - frowning expression lines -->
+    <path d="M 126 92 L 134 94" stroke="#52637D" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 128 102 Q 132 100 136 102" stroke="#52637D" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

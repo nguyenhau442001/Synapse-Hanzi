@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Conceptual representation of "死心" (giving up hope/letting go): 
+       A person sitting at a desk, gently pushing away a glowing, 
+       ambitious blueprint/dream icon, signifying the act of 
+       letting go of a persistent hope. -->
+  
+  <!-- Desk -->
+  <rect x="40" y="160" width="160" height="15" rx="2" fill="#3A404D"/>
+  
+  <!-- Person (Silhouette/Flat) -->
+  <circle cx="120" cy="100" r="25" fill="#7D8597"/>
+  <path d="M80 160h80v-20c0-22-18-40-40-40s-40 18-40 40v20z" fill="#7D8597"/>
+  
+  <!-- The Dream/Hope Object (A glowing document/blueprint) -->
+  <rect x="140" y="120" width="40" height="50" rx="4" fill="#FFB84D"/>
+  <line x1="150" y1="135" x2="170" y2="135" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+  <line x1="150" y1="145" x2="170" y2="145" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+  <line x1="150" y1="155" x2="160" y2="155" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Hand pushing the object away -->
+  <path d="M130 140c-5 0-10 5-10 10s5 10 10 10" fill="#9CA3AF"/>
+  <rect x="125" y="140" width="10" height="20" rx="2" fill="#9CA3AF"/>
+  
+  <!-- Motion lines indicating the act of letting go -->
+  <path d="M185 145 l15 0 M190 140 l10 5 l-10 5" stroke="#FFB84D" stroke-width="3" stroke-linecap="round" fill="none"/>
+</svg>

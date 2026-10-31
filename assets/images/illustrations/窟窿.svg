@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Ceiling/Roof structure background context -->
+    <!-- Wooden/Dark ceiling panels -->
+    <rect x="30" y="40" width="180" height="130" rx="4" fill="#252A34" stroke="#323846" stroke-width="2"/>
+    
+    <!-- Ceiling planks lines -->
+    <line x1="30" y1="72" x2="210" y2="72" stroke="#1A1D24" stroke-width="2"/>
+    <line x1="30" y1="104" x2="210" y2="104" stroke="#1A1D24" stroke-width="2"/>
+    <line x1="30" y1="136" x2="210" y2="136" stroke="#1A1D24" stroke-width="2"/>
+
+    <!-- THE "窟窿" (Hole in the ceiling revealing glowing outer space/sky or light) -->
+    <!-- Hole jagged cutout shadow & depth -->
+    <path d="M 95,75 Q 120,65 145,78 Q 170,72 165,100 Q 175,125 150,138 Q 120,145 95,130 Q 75,120 80,95 Q 70,80 95,75 Z" fill="#111318"/>
+    
+    <!-- Broken ceiling inner edge (thickness showing damage) -->
+    <path d="M 97,77 Q 120,68 143,80 Q 166,75 161,98 Q 170,121 148,134 Q 120,141 97,127 Q 79,118 83,95 Q 75,81 97,77 Z" fill="#2D3446" stroke="#E65F2B" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+    <!-- Inside the hole: Dramatic contrasting light beam shining through (representing the open gap to outside) -->
+    <path d="M 90,85 L 60,195 L 180,195 L 150,85 Z" fill="url(#lightBeam)" opacity="0.15"/>
+
+    <!-- Debris/Broken tile fragments falling or near the hole -->
+    <polygon points="85,68 95,72 90,78" fill="#4A5568"/>
+    <polygon points="155,65 168,70 160,75" fill="#4A5568"/>
+    <polygon points="172,110 180,120 168,118" fill="#4A5568"/>
+    
+    <!-- Floating dust/light particles in the beam -->
+    <circle cx="110" cy="120" r="1.5" fill="#F6AD55"/>
+    <circle cx="130" cy="140" r="2" fill="#F6AD55"/>
+    <circle cx="100" cy="160" r="1" fill="#F6AD55"/>
+    <circle cx="140" cy="170" r="1.5" fill="#F6AD55"/>
+
+    <!-- Focus ring/indicator framing the exact semantic concept (sleek modern vector highlight) -->
+    <path d="M 70,60 L 60,60 L 60,70" fill="none" stroke="#E65F2B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 170,60 L 180,60 L 180,70" fill="none" stroke="#E65F2B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 70,150 L 60,150 L 60,140" fill="none" stroke="#E65F2B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 170,150 L 180,150 L 180,140" fill="none" stroke="#E65F2B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="lightBeam" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#1A1D24" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>

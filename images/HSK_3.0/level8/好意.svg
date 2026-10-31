@@ -1,0 +1,51 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements / subtle depth -->
+  <circle cx="120" cy="120" r="80" fill="#222732" opacity="0.5"/>
+
+  <!-- Conceptual illustration for "好意" (Good intention, goodwill, kind gesture) -->
+  <!-- Contextual reference: Refusing an expensive gift while warmly appreciating the sender's goodwill -->
+  <!-- We depict two figures engaging in a polite, respectful social interaction: one offering a gift box respectfully with both hands and a warm posture, the other gently declining with a polite gesture of gratitude, emphasizing mutual respect and genuine goodwill rather than commercial transaction or romance. -->
+
+  <!-- Figure 1 (Left - Offering/Goodwill) -->
+  <!-- Body/Torso -->
+  <path d="M 65 170 L 65 140 C 65 125, 75 115, 90 115 L 95 115 L 95 170 Z" fill="#3A4A6B"/>
+  <!-- Head -->
+  <circle cx="80" cy="95" r="14" fill="#E8B89D"/>
+  <!-- Hair -->
+  <path d="M 67 93 C 67 85, 75 80, 85 82 C 93 84, 93 92, 93 92 Z" fill="#2C3E50"/>
+  <!-- Arm offering gift -->
+  <path d="M 85 130 C 100 130, 115 135, 125 135" stroke="#3A4A6B" stroke-width="8" stroke-linecap="round" fill="none"/>
+
+  <!-- The Gift Box (Representing the polite gesture mentioned in context) -->
+  <g transform="translate(110, 120)">
+    <!-- Box base -->
+    <rect x="-12" y="5" width="24" height="20" rx="2" fill="#E67E22"/>
+    <!-- Box ribbon vertical -->
+    <rect x="-3" y="5" width="6" height="20" fill="#F1C40F"/>
+    <!-- Box lid -->
+    <rect x="-14" y="0" width="28" height="7" rx="1.5" fill="#D35400"/>
+    <!-- Ribbon bow -->
+    <path d="M -6 -2 C -10 -8, -2 -8, 0 -2 C 2 -8, 10 -8, 6 -2 Z" fill="#F1C40F"/>
+  </g>
+
+  <!-- Figure 2 (Right - Appreciating/Politely declining with goodwill) -->
+  <!-- Body/Torso -->
+  <path d="M 175 170 L 175 140 C 175 125, 165 115, 150 115 L 145 115 L 145 170 Z" fill="#4A6B5D"/>
+  <!-- Head -->
+  <circle cx="160" cy="95" r="14" fill="#E8B89D"/>
+  <!-- Hair -->
+  <path d="M 147 92 C 147 84, 155 80, 165 82 C 173 84, 173 92, 173 92 Z" fill="#34495E"/>
+  <!-- Warm welcoming/declining gesture hand (open palm, respectful) -->
+  <path d="M 145 135 C 130 135, 120 130, 115 125" stroke="#4A6B5D" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <circle cx="112" cy="124" r="4" fill="#E8B89D"/>
+
+  <!-- Focal highlight aura representing "good intention / warmth" (non-romantic, abstractly glowing warm lines) -->
+  <path d="M 100 65 Q 120 50 140 65" stroke="#F39C12" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M 108 57 Q 120 45 132 57" stroke="#F1C40F" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+  <!-- Ground shadow -->
+  <ellipse cx="120" cy="175" rx="70" ry="6" fill="#111418" opacity="0.7"/>
+</svg>

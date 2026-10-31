@@ -1,0 +1,67 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Grid lines representing digital infrastructure / modern network -->
+  <path d="M30 180 L210 180" stroke="#2A2F3B" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M30 140 L210 140" stroke="#2A2F3B" stroke-width="1.5" stroke-dasharray="3 3"/>
+  
+  <!-- Contrast / Scale Exaggeration: Slow, tiny starting point turning into a massive surge -->
+  <!-- Subtle past/small state (Scale exaggeration context) -->
+  <circle cx="50" cy="180" r="4" fill="#4B5563"/>
+  <path d="M50 180 Q 70 170, 90 150" fill="none" stroke="#4B5563" stroke-width="2" stroke-dasharray="2 2"/>
+
+  <!-- The "迅猛" (Rapid, violent storm-like surge) visual representation -->
+  <!-- Dynamic massive energy beam / lightning-fast trajectory shooting upwards and forwards -->
+  <defs>
+    <linearGradient id="surgeGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#EF4444"/>
+    </linearGradient>
+    <linearGradient id="trailGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1A1D24" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Motion blur trail (representing lightning speed and immense momentum) -->
+  <path d="M 80 180 L 200 60 L 170 60 L 60 170 Z" fill="url(#trailGrad)"/>
+
+  <!-- Secondary lightning/shockwave streaks representing "nhanh chóng như vũ bão" -->
+  <path d="M90 190 L160 90" stroke="#F59E0B" stroke-width="1.5" stroke-opacity="0.3" stroke-linecap="round"/>
+  <path d="M70 170 L190 50" stroke="#EF4444" stroke-width="1" stroke-opacity="0.2" stroke-linecap="round"/>
+
+  <!-- Main Dynamic Arrow / Rocket-like trajectory breaking barriers -->
+  <path d="M 70 190 Q 110 160, 135 125 L 185 75" fill="none" stroke="url(#surgeGrad)" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- High-impact forward thrust head (Explosive burst representing "dũng mãnh mau lẹ") -->
+  <g transform="translate(185, 75)">
+    <!-- Outer shockwave rings -->
+    <circle cx="0" cy="0" r="18" fill="none" stroke="#EF4444" stroke-width="1.5" opacity="0.4"/>
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#F59E0B" stroke-width="2" opacity="0.7"/>
+    <!-- Core burst -->
+    <circle cx="0" cy="0" r="6" fill="#F59E0B"/>
+    <!-- Sharp directional arrows pointing out -->
+    <path d="M 0 -12 L 6 -6 L 0 0 L -6 -6 Z" fill="#EF4444" transform="rotate(45)" />
+  </g>
+
+  <!-- Industrial / Logistics modern nodes representing the contextual reference (Smart logistics / Industrial internet surge) -->
+  <!-- Starting node (small, left) -->
+  <rect x="62" y="168" width="16" height="16" rx="4" fill="#374151"/>
+  <circle cx="70" cy="176" r="3" fill="#9CA3AF"/>
+
+  <!-- Destination node (large, dynamic, illuminated, right) -->
+  <g transform="translate(170, 45)">
+    <rect x="-14" y="-14" width="28" height="28" rx="6" fill="#1F2937" stroke="#F59E0B" stroke-width="2"/>
+    <path d="M-6 2 L0 -6 L6 2" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M-6 7 L0 -1 L6 7" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Speed lines (horizontal dashes indicating raw velocity across the scene) -->
+  <line x1="35" y1="95" x2="55" y2="95" stroke="#4B5563" stroke-width="2" stroke-linecap="round"/>
+  <line x1="25" y1="110" x2="50" y2="110" stroke="#374151" stroke-width="2" stroke-linecap="round"/>
+  <line x1="185" y1="140" x2="210" y2="140" stroke="#4B5563" stroke-width="2" stroke-linecap="round"/>
+  <line x1="195" y1="155" x2="215" y2="155" stroke="#374151" stroke-width="2" stroke-linecap="round"/>
+
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <circle cx="120" cy="120" r="90" fill="#222732" opacity="0.6"/>
+  
+  <g transform="translate(120, 115)">
+    <!-- Base boulder/debris representation -->
+    <path d="M-60,50 L60,50 L50,15 L30,-10 L-20,-25 L-55,10 Z" fill="#2E3646"/>
+    
+    <!-- Heavy structural beam symbolizing danger/barrier -->
+    <path d="M-75,5 L75,5 L70,-15 L-70,-15 Z" fill="#D97706" opacity="0.3"/>
+    
+    <!-- Rescuer Figure (Left) - Exerting maximum physical effort, lifting/pushing -->
+    <g transform="translate(-35, -15)">
+      <!-- Body leaning forward at deep angle -->
+      <path d="M0,45 L15,10 L30,-5 L15,-25" stroke="#F59E0B" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <!-- Head -->
+      <circle cx="20" cy="-35" r="8" fill="#F59E0B"/>
+      <!-- Arms pushing upward/forward with intense force lines -->
+      <path d="M22,-10 L50,-15" stroke="#F59E0B" stroke-width="10" stroke-linecap="round"/>
+      <path d="M12,5 L35,-5" stroke="#F59E0B" stroke-width="9" stroke-linecap="round"/>
+      <!-- Legs anchored deeply -->
+      <path d="M0,45 L-20,70" stroke="#D97706" stroke-width="11" stroke-linecap="round"/>
+      <path d="M0,45 L25,65" stroke="#F59E0B" stroke-width="11" stroke-linecap="round"/>
+    </g>
+
+    <!-- Rescuer Figure (Right) - Supporting from underneath/side -->
+    <g transform="translate(25, -15) scale(-1, 1)">
+      <!-- Body leaning -->
+      <path d="M0,45 L15,10 L30,-5 L15,-25" stroke="#3B82F6" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <!-- Head -->
+      <circle cx="20" cy="-35" r="8" fill="#3B82F6"/>
+      <!-- Arms pushing -->
+      <path d="M22,-10 L50,-15" stroke="#3B82F6" stroke-width="10" stroke-linecap="round"/>
+      <!-- Legs anchored -->
+      <path d="M0,45 L-20,70" stroke="#1D4ED8" stroke-width="11" stroke-linecap="round"/>
+      <path d="M0,45 L25,65" stroke="#3B82F6" stroke-width="11" stroke-linecap="round"/>
+    </g>
+
+    <!-- Heavy lifted element / barrier shifting under absolute effort -->
+    <path d="M-55,-25 L55,-35 L45,-55 L-45,-45 Z" fill="#EF4444"/>
+    
+    <!-- Dynamic energy / strain sparks representing "all-out" effort -->
+    <circle cx="0" cy="-30" r="3" fill="#FBBF24"/>
+    <circle cx="-15" cy="-45" r="2" fill="#FBBF24"/>
+    <circle cx="20" cy="-40" r="2.5" fill="#FBBF24"/>
+    <path d="M-25,-15 L-35,-25" stroke="#FBBF24" stroke-width="2" stroke-linecap="round"/>
+    <path d="M25,-15 L35,-25" stroke="#FBBF24" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

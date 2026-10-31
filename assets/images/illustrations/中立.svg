@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Scale Base -->
+  <path d="M70 190 L170 190 L160 170 L80 170 Z" fill="#4A5568"/>
+  <rect x="115" y="100" width="10" height="70" fill="#718096"/>
+  
+  <!-- Balance Beam -->
+  <rect x="60" y="95" width="120" height="6" rx="3" fill="#E2E8F0"/>
+  
+  <!-- Left Scale Pan -->
+  <line x1="80" y1="101" x2="80" y2="130" stroke="#A0AEC0" stroke-width="2"/>
+  <circle cx="80" cy="145" r="15" fill="#F6AD55"/>
+  
+  <!-- Right Scale Pan -->
+  <line x1="160" y1="101" x2="160" y2="130" stroke="#A0AEC0" stroke-width="2"/>
+  <circle cx="160" cy="145" r="15" fill="#F6AD55"/>
+  
+  <!-- Center Indicator (The "Neutral" point) -->
+  <path d="M120 95 L120 70" stroke="#F6AD55" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Judge's Gavel (Symbolizing the legal context of the prompt) -->
+  <rect x="105" y="155" width="30" height="8" rx="2" fill="#CBD5E0"/>
+  <rect x="116" y="135" width="8" height="30" rx="2" fill="#CBD5E0"/>
+</svg>

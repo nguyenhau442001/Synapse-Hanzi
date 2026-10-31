@@ -1,0 +1,28 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative background/landscape elements representing "named place / scenery" -->
+  <path d="M40 180 L100 110 L160 160 L200 130 L200 190 L40 190 Z" fill="#252A34"/>
+  <path d="M20 185 L80 130 L130 170 L220 120 L220 195 L20 195 Z" fill="#2F3645"/>
+
+  <!-- Glowing/Focus elements indicating renown/reputation (A landmark/pagoda rising, crowned with light) -->
+  <!-- Mountain base -->
+  <path d="M120 70 L170 170 H70 Z" fill="#3A4454"/>
+  <path d="M120 70 L145 170 H95 Z" fill="#4B566D"/>
+
+  <!-- Ancient architectural landmark pinnacle (pagoda/historic building roof structure) -->
+  <path d="M100 110 H140 L135 95 H105 Z" fill="#F39C12"/>
+  <rect x="112" y="80" width="16" height="15" fill="#E67E22"/>
+  <polygon points="120,60 130,80 110,80" fill="#F1C40F"/>
+  <rect x="118" y="52" width="4" height="10" fill="#F39C12"/>
+
+  <!-- Radiating golden renown aura (sparkles / starburst points) -->
+  <circle cx="120" cy="85" r="45" fill="none" stroke="#F39C12" stroke-width="1.5" stroke-dasharray="4,6" opacity="0.6"/>
+  <circle cx="120" cy="85" r="60" fill="none" stroke="#F1C40F" stroke-width="1" stroke-dasharray="2,8" opacity="0.4"/>
+
+  <!-- Glowing stars/sparkles representing "fame / well-known" -->
+  <path d="M75 90 L78 98 L86 101 L78 104 L75 112 L72 104 L64 101 L72 98 Z" fill="#F1C40F"/>
+  <path d="M165 100 L167 105 L172 107 L167 109 L165 114 L163 109 L158 107 L163 105 Z" fill="#F1C40F"/>
+  <path d="M145 60 L146.5 64 L150.5 65.5 L146.5 67 L145 71 L143.5 67 L139.5 65.5 L143.5 64 Z" fill="#F39C12"/>
+</svg>

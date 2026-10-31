@@ -1,0 +1,34 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Background subtle elements (friendly academic/friendship theme) -->
+    <circle cx="120" cy="110" r="70" fill="#242B35" opacity="0.6"/>
+    
+    <!-- Scale exaggeration contrast representing 'easy/flexible' vs rigid -->
+    <!-- Left rigid barrier / locked obstacle (faded to show it's overcome) -->
+    <path d="M50 110 L70 90 L90 110" stroke="#3A4454" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.4"/>
+    <line x1="70" y1="90" x2="70" y2="140" stroke="#3A4454" stroke-width="4" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Central dynamic flow & open gesture (hǎoshuō: open, accommodating, easygoing) -->
+    <!-- Person A (Warm, accommodating posture) -->
+    <circle cx="85" cy="95" r="14" fill="#FFA500"/>
+    <path d="M65 140 C65 118 75 110 85 110 C95 110 105 118 105 140 Z" fill="#FFA500"/>
+    <!-- Open welcoming arm gesture -->
+    <path d="M85 125 Q110 120 120 100" stroke="#FFA500" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+    <!-- Person B (Relieved, agreeing posture - scale contrast showing ease) -->
+    <circle cx="155" cy="95" r="14" fill="#4A90E2"/>
+    <path d="M135 140 C135 118 145 110 155 110 C165 110 175 118 175 140 Z" fill="#4A90E2"/>
+    <!-- Relaxed returning gesture / handshake implication -->
+    <path d="M155 125 Q130 120 120 100" stroke="#4A90E2" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+    <!-- Spark/connection of mutual understanding and agreement -->
+    <circle cx="120" cy="98" r="8" fill="#F1C40F"/>
+    <path d="M120 84 L122 92 L130 94 L122 96 L120 104 L118 96 L110 94 L118 92 Z" fill="#FFFFFF"/>
+
+    <!-- Secondary dynamic floating checkmark / smoothness indicators (no text) -->
+    <path d="M95 65 Q120 45 145 65" stroke="#FFA500" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <path d="M138 58 L146 66 L158 52" stroke="#2ECC71" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

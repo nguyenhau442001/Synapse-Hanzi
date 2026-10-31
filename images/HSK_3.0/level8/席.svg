@@ -1,0 +1,41 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient background glow representing deep wisdom/enlightenment -->
+  <circle cx="120" cy="110" r="80" fill="#2D323E" opacity="0.3"/>
+  
+  <!-- Escalation / Progression Visual Metaphor: Multi-step staircase rising from confusion to clarity -->
+  <!-- Step 1 (Starting low, baseline level - confusion) -->
+  <rect x="40" y="150" width="35" height="12" rx="3" fill="#3A4150"/>
+  
+  <!-- Step 2 (Midway progression) -->
+  <rect x="85" y="130" width="35" height="32" rx="3" fill="#474E60"/>
+  
+  <!-- Step 3 (High level - wisdom / "一席" breakthrough moment) -->
+  <rect x="130" y="105" width="35" height="57" rx="3" fill="#586278"/>
+  
+  <!-- Peak Escalation / Sharp breakthrough line representing wisdom and sudden realization (豁然开朗) -->
+  <path d="M 57 150 L 102 130 L 147 105 L 190 60" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Radiating beacon of insight / sudden enlightenment at the peak -->
+  <circle cx="190" cy="60" r="14" fill="#F59E0B" opacity="0.2"/>
+  <circle cx="190" cy="60" r="8" fill="#F59E0B"/>
+  
+  <!-- Rays of golden light bursting from the peak of insight -->
+  <line x1="190" y1="42" x2="190" y2="34" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="208" y1="60" x2="216" y2="60" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="203" y1="47" x2="209" y2="41" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Ground reference baseline -->
+  <line x1="30" y1="162" x2="210" y2="162" stroke="#2D323E" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Abstract human silhouette at the baseline shifting upward toward clarity -->
+  <circle cx="57" cy="132" r="6" fill="#94A3B8"/>
+  <path d="M 57 140 C 53 140 50 144 50 148 L 64 148 C 64 144 61 140 57 140 Z" fill="#94A3B8"/>
+  
+  <!-- Elevated silhouette at the peak of wisdom -->
+  <circle cx="190" cy="115" r="7" fill="#F59E0B"/>
+  <path d="M 190 124 C 185 124 181 128 181 133 L 199 133 C 199 128 195 124 190 124 Z" fill="#F59E0B"/>
+  
+</svg>

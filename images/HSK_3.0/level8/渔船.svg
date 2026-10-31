@@ -1,0 +1,75 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Dock / Pier structure -->
+  <path d="M0 195 L240 195" stroke="#3A4454" stroke-width="4" stroke-linecap="round"/>
+  <rect x="180" y="195" width="45" height="30" fill="#2C3544"/>
+  <rect x="25" y="195" width="45" height="30" fill="#2C3544"/>
+  <!-- Wooden planks texture lines -->
+  <line x1="10" y1="195" x2="10" y2="225" stroke="#1A1D24" stroke-width="3"/>
+  <line x1="50" y1="195" x2="50" y2="225" stroke="#1A1D24" stroke-width="3"/>
+  <line x1="200" y1="195" x2="200" y2="225" stroke="#1A1D24" stroke-width="3"/>
+
+  <!-- Bollard on the dock -->
+  <path d="M55 180 L65 180 L63 195 L57 195 Z" fill="#6B7C96"/>
+  <circle cx="60" cy="178" r="6" fill="#8899A6"/>
+
+  <!-- Water Layer -->
+  <path d="M0 185 Q60 178 120 185 T240 185 L240 240 L0 240 Z" fill="#152238" opacity="0.8"/>
+  
+  <!-- Gentle Water Waves -->
+  <path d="M15 200 Q35 195 55 200" stroke="#223653" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M85 210 Q105 205 125 210" stroke="#223653" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M165 202 Q185 197 205 202" stroke="#223653" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  
+  <path d="M45 220 Q60 216 75 220" stroke="#1B2D46" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M130 222 Q150 218 170 222" stroke="#1B2D46" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Fishing Boat (渔船) -->
+  <g transform="translate(65, 115)">
+    <!-- Mooring Rope tied to bollard -->
+    <path d="M -15 30 C -25 35 -35 50 -5 63" stroke="#8899A6" stroke-width="2" fill="none" stroke-dasharray="3,2"/>
+
+    <!-- Hull Reflection/Bottom shadow -->
+    <path d="M-10 44 L110 44 L100 52 L0 52 Z" fill="#131C2A"/>
+
+    <!-- Main Hull -->
+    <path d="M-15 35 C-5 35 10 35 15 35 L90 35 C100 35 108 42 105 45 C90 52 5 52 -10 45 C-15 42 -15 38 -15 35 Z" fill="#E65100"/>
+    
+    <!-- Hull Trim / Accent Line -->
+    <path d="M-12 38 L95 38 C99 38 102 41 101 42 C90 46 5 46 -6 42 C-9 41 -10 39 -12 38 Z" fill="#FFA726"/>
+
+    <!-- Cabin / Wheelhouse -->
+    <rect x="25" y="10" width="40" height="25" rx="3" fill="#ECEFF1"/>
+    <!-- Cabin Roof -->
+    <path d="M22 10 L68 10 C70 10 70 7 66 7 L24 7 C20 7 20 10 22 10 Z" fill="#37474F"/>
+    
+    <!-- Cabin Windows -->
+    <rect x="30" y="14" width="12" height="10" rx="1.5" fill="#1A1D24"/>
+    <rect x="48" y="14" width="12" height="10" rx="1.5" fill="#1A1D24"/>
+
+    <!-- Mast & Rigging -->
+    <rect x="42" y="-18" width="4" height="28" fill="#546E7A"/>
+    <!-- Navigation Light / Antenna -->
+    <circle cx="44" cy="-21" r="3" fill="#FF5252"/>
+    
+    <!-- Rigging lines -->
+    <line x1="44" y1="-15" x2="-5" y2="35" stroke="#78909C" stroke-width="1.5"/>
+    <line x1="44" y1="-15" x2="85" y2="35" stroke="#78909C" stroke-width="1.5"/>
+
+    <!-- Fishing Nets / Equipment details at the stern -->
+    <path d="M72 35 C75 30 82 30 85 35 Z" fill="#78909C"/>
+    <path d="M75 33 L82 33 L80 38 L77 38 Z" fill="#37474F"/>
+
+    <!-- Life Ring on Cabin Side -->
+    <circle cx="35" cy="28" r="4" fill="#FF5252"/>
+    <circle cx="35" cy="28" r="2" fill="#ECEFF1"/>
+  </g>
+
+  <!-- Distant background subtle elements -->
+  <circle cx="195" cy="95" r="2" fill="#3A4454"/>
+  <circle cx="210" cy="105" r="1.5" fill="#3A4454"/>
+  <circle cx="185" cy="115" r="1" fill="#3A4454"/>
+
+</svg>

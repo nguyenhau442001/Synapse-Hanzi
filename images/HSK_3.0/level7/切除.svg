@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Surgical lighting effect in background -->
+  <circle cx="120" cy="110" r="70" fill="#222831" opacity="0.6"/>
+  <circle cx="120" cy="110" r="45" fill="#2D3748" opacity="0.4"/>
+
+  <!-- Patient body / operating table base outline -->
+  <path d="M70 155 L170 155" stroke="#3A4454" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="120" cy="155" rx="45" ry="12" fill="#28303D"/>
+
+  <!-- Target mass / tumor being excised (glowing accent) -->
+  <path d="M108 140 C100 135 105 125 115 125 C125 125 132 133 128 142 C124 150 115 145 108 140 Z" fill="#F6AD55"/>
+  <circle cx="118" cy="134" r="3" fill="#DD6B20"/>
+
+  <!-- Surgical scissors / scalpel action (Dynamic cutting interaction) -->
+  <g transform="translate(120, 115) rotate(-25)">
+    <!-- Motion lines indicating cutting action -->
+    <path d="M-30 -20 L -10 -5" stroke="#63B3ED" stroke-width="2" stroke-dasharray="3,3" stroke-linecap="round"/>
+    <path d="M30 20 L 10 5" stroke="#63B3ED" stroke-width="2" stroke-dasharray="3,3" stroke-linecap="round"/>
+    
+    <!-- Scalpel blade & handle -->
+    <path d="M-5 -25 L 35 15 L 30 20 L -8 -22 Z" fill="#E2E8F0"/>
+    <path d="M-8 -22 L -25 -35" stroke="#4A5568" stroke-width="6" stroke-linecap="round"/>
+    <!-- Scalpel handle grips -->
+    <line x1="-15" y1="-27" x2="-22" y2="-34" stroke="#A0AEC0" stroke-width="2"/>
+  </g>
+
+  <!-- Physician hands / gloves performing the precise action -->
+  <g>
+    <!-- Left hand (holding/pinching) -->
+    <path d="M85 130 C90 125 95 135 102 138 C105 140 100 145 92 142 C85 138 82 135 85 130 Z" fill="#CBD5E0"/>
+    <!-- Right hand (guiding instrument) -->
+    <path d="M145 110 C140 105 130 115 125 122 C122 126 128 130 135 125 C142 120 148 115 145 110 Z" fill="#CBD5E0"/>
+  </g>
+
+  <!-- Modern UI style accent badge for action focus -->
+  <circle cx="120" cy="110" r="85" fill="none" stroke="#ED8936" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.4"/>
+</svg>

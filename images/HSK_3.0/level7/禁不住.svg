@@ -1,0 +1,79 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Stage floor -->
+    <path d="M 40,165 L 200,165 L 210,185 L 30,185 Z" fill="#2C323D" />
+    <path d="M 30,185 L 210,185 L 210,190 L 30,190 Z" fill="#3A4250" />
+
+    <!-- Jester Character (Clown on stage) -->
+    <g transform="translate(120, 130)">
+      <!-- Body/Torso -->
+      <path d="M -15,15 L 15,15 L 20,35 L -20,35 Z" fill="#3B82F6" />
+      <!-- Collar -->
+      <path d="M -20,15 L 0,22 L 20,15 L 0,5 Z" fill="#F59E0B" />
+      <!-- Head -->
+      <circle cx="0" cy="-5" r="14" fill="#FDE68A" />
+      <!-- Red Nose -->
+      <circle cx="0" cy="-4" r="4.5" fill="#EF4444" />
+      <!-- Smiling Eyes -->
+      <path d="M -6,-9 Q -4,-12 -2,-9" stroke="#1F2937" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <path d="M 2,-9 Q 4,-12 6,-9" stroke="#1F2937" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <!-- Jester Hat -->
+      <path d="M -12,-15 Q 0,-22 12,-15 Q 0,-12 -12,-15 Z" fill="#EF4444" />
+      <circle cx="-14" cy="-18" r="3" fill="#F59E0B" />
+      <circle cx="14" cy="-18" r="3" fill="#F59E0B" />
+      <circle cx="0" cy="-24" r="3.5" fill="#F59E0B" />
+      
+      <!-- Juggling Balls (Motion) -->
+      <circle cx="-35" cy="-25" r="4" fill="#10B981" />
+      <circle cx="35" cy="-35" r="4" fill="#8B5CF6" />
+      <circle cx="0" cy="-45" r="4" fill="#EC4899" />
+    </g>
+
+    <!-- Audience silhouettes in foreground holding bellies (unable to hold laughter) -->
+    <!-- Left Audience Member -->
+    <g transform="translate(65, 160)">
+      <circle cx="0" cy="-25" r="10" fill="#4B5563" />
+      <!-- Body leaning forward -->
+      <path d="M -12,-10 Q -5,-15 10,-5 L 15,25 L -10,25 Z" fill="#374151" />
+      <!-- Hands holding belly -->
+      <circle cx="4" cy="5" r="5" fill="#4B5563" />
+      <!-- Motion lines / laughter vibration -->
+      <path d="M -18,-25 Q -22,-20 -18,-15" stroke="#9CA3AF" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Center Audience Member (Bursting with laughter, main focus) -->
+    <g transform="translate(120, 155)">
+      <circle cx="0" cy="-30" r="11" fill="#6B7280" />
+      <!-- Body bent over from laughing too hard -->
+      <path d="M -15,-12 Q 0,-20 15,-12 L 18,30 L -18,30 Z" fill="#1F2937" />
+      <!-- Arms clutching stomach -->
+      <path d="M -12,0 Q 0,-5 12,0 L 10,12 Q 0,8 -10,12 Z" fill="#6B7280" />
+      <!-- Head tilted back laughing -->
+      <circle cx="5" cy="-32" r="10" fill="#9CA3AF" />
+      <!-- Laughter action lines -->
+      <path d="M 18,-42 Q 24,-38 18,-34" stroke="#F59E0B" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M -12,-45 Q -18,-40 -12,-35" stroke="#F59E0B" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Right Audience Member -->
+    <g transform="translate(175, 160)">
+      <circle cx="0" cy="-25" r="10" fill="#4B5563" />
+      <!-- Body leaning -->
+      <path d="M 12,-10 Q 5,-15 -10,-5 L -15,25 L 10,25 Z" fill="#374151" />
+      <!-- Hands holding belly -->
+      <circle cx="-4" cy="5" r="5" fill="#4B5563" />
+      <!-- Motion lines -->
+      <path d="M 18,-25 Q 22,-20 18,-15" stroke="#9CA3AF" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Uncontrollable Laughter/Burst Effect Sparkles -->
+    <g fill="#F59E0B">
+      <circle cx="95" cy="115" r="2.5" />
+      <circle cx="145" cy="110" r="3" />
+      <circle cx="108" cy="95" r="2" />
+      <circle cx="132" cy="125" r="2" />
+    </g>
+  </g>
+</svg>

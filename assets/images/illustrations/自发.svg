@@ -1,0 +1,64 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background street environment (dark mode, minimalist night street) -->
+  <path d="M0 190 L240 190" stroke="#2A2F3A" stroke-width="2"/>
+  <path d="M100 190 L50 240" stroke="#222732" stroke-width="2"/>
+  <path d="M140 190 L190 240" stroke="#222732" stroke-width="2"/>
+  
+  <!-- Subtle glowing street light casting downwards -->
+  <path d="M120 10 L120 40" stroke="#3A4252" stroke-width="3"/>
+  <circle cx="120" cy="40" r="4" fill="#F1C40F"/>
+  <polygon points="120,44 60,190 180,190" fill="#F1C40F" opacity="0.04"/>
+
+  <!-- Central iconic representation for "自发" (spontaneous public gathering/action: silhouettes of citizens walking together holding white tribute flowers under a warm glowing light) -->
+  
+  <!-- Person 1 (Left) -->
+  <g transform="translate(65, 110)">
+    <!-- Body -->
+    <path d="M12 35 C12 25 22 25 25 35 L30 80 L0 80 Z" fill="#3B82F6"/>
+    <!-- Head -->
+    <circle cx="15" cy="14" r="9" fill="#93C5FD"/>
+    <!-- Arm holding flower upward -->
+    <path d="M22 38 L38 28" stroke="#93C5FD" stroke-width="5" stroke-linecap="round"/>
+    <!-- White flower -->
+    <circle cx="41" cy="24" r="6" fill="#FFFFFF"/>
+    <circle cx="41" cy="24" r="2" fill="#F1C40F"/>
+  </g>
+
+  <!-- Person 2 (Center - Main focal point, taller silhouette) -->
+  <g transform="translate(100, 95)">
+    <!-- Body -->
+    <path d="M12 30 C12 20 28 20 28 30 L35 95 L5 95 Z" fill="#60A5FA"/>
+    <!-- Head -->
+    <circle cx="20" cy="12" r="10" fill="#BFDBFE"/>
+    <!-- Arm holding flower upward -->
+    <path d="M28 35 L45 22" stroke="#BFDBFE" stroke-width="6" stroke-linecap="round"/>
+    <!-- White flower -->
+    <circle cx="49" cy="18" r="7" fill="#FFFFFF"/>
+    <circle cx="49" cy="18" r="2.5" fill="#F1C40F"/>
+  </g>
+
+  <!-- Person 3 (Right) -->
+  <g transform="translate(145, 115)">
+    <!-- Body -->
+    <path d="M15 35 C15 25 25 25 28 35 L32 75 L2 75 Z" fill="#3B82F6"/>
+    <!-- Head -->
+    <circle cx="16" cy="14" r="9" fill="#93C5FD"/>
+    <!-- Arm holding flower upward -->
+    <path d="M10 38 L-2 28" stroke="#93C5FD" stroke-width="5" stroke-linecap="round"/>
+    <!-- White flower -->
+    <circle cx="-5" cy="25" r="6" fill="#FFFFFF"/>
+    <circle cx="-5" cy="25" r="2" fill="#F1C40F"/>
+  </g>
+
+  <!-- Spontaneous upward energy indicator: delicate golden upward directional particles/sparks representing spontaneous unified movement -->
+  <g fill="#F1C40F" opacity="0.8">
+    <circle cx="120" cy="70" r="2"/>
+    <circle cx="95" cy="85" r="1.5"/>
+    <circle cx="148" cy="80" r="1.5"/>
+    <circle cx="110" cy="55" r="1"/>
+    <circle cx="135" cy="60" r="1"/>
+  </g>
+</svg>

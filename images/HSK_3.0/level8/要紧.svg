@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Main object: A high-priority, urgent document/file folder representing "The Essential/Crucial Matter" -->
+  <!-- The folder is highlighted with a gold/orange accent to signify "importance/urgency" -->
+  
+  <!-- Folder Back -->
+  <path d="M60 70h120v110a10 10 0 0 1-10 10H70a10 10 0 0 1-10-10V70z" fill="#3B4252"/>
+  
+  <!-- Folder Front -->
+  <path d="M50 90h140v100a10 10 0 0 1-10 10H60a10 10 0 0 1-10-10V90z" fill="#4C566A"/>
+  
+  <!-- Folder Tab -->
+  <path d="M70 70h40v20H70z" fill="#FFB86C"/>
+  
+  <!-- Urgent Mark (Exclamation point style simplified as a physical object/marker) -->
+  <rect x="110" y="115" width="20" height="45" rx="10" fill="#FFB86C"/>
+  <circle cx="120" cy="175" r="10" fill="#FFB86C"/>
+  
+  <!-- Decorative lines for professional document feel -->
+  <rect x="70" y="110" width="100" height="6" rx="2" fill="#2E3440"/>
+  <rect x="70" y="125" width="100" height="6" rx="2" fill="#2E3440"/>
+  <rect x="70" y="140" width="60" height="6" rx="2" fill="#2E3440"/>
+</svg>

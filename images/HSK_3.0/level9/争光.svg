@@ -1,0 +1,33 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Motion lines for dynamic movement -->
+  <path d="M140 80 Q160 70 180 80" stroke="#FFC107" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M145 70 Q170 60 195 70" stroke="#FFC107" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Athlete character -->
+  <g transform="translate(40, 60)">
+    <!-- Body -->
+    <path d="M60 120 L80 120 L85 160 L55 160 Z" fill="#4A90E2"/>
+    <!-- Head -->
+    <circle cx="70" cy="90" r="15" fill="#FFD180"/>
+    <!-- Arm reaching up -->
+    <path d="M80 110 L110 70" stroke="#FFD180" stroke-width="12" stroke-linecap="round"/>
+    <!-- Leg -->
+    <path d="M65 160 L60 190" stroke="#4A90E2" stroke-width="10" stroke-linecap="round"/>
+    <path d="M75 160 L80 190" stroke="#4A90E2" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <!-- The Trophy (Symbol of Glory) -->
+  <g transform="translate(140, 80)">
+    <path d="M0 0 L40 0 L35 40 L5 40 Z" fill="#FFC107"/>
+    <path d="M20 40 L20 60" stroke="#FFC107" stroke-width="6" stroke-linecap="round"/>
+    <path d="M5 60 L35 60" stroke="#FFC107" stroke-width="6" stroke-linecap="round"/>
+    <!-- Handles -->
+    <path d="M0 10 C-15 10 -15 30 0 30" stroke="#FFC107" stroke-width="4" fill="none"/>
+    <path d="M40 10 C55 10 55 30 40 30" stroke="#FFC107" stroke-width="4" fill="none"/>
+  </g>
+
+  <!-- Ground line -->
+  <line x1="40" y1="220" x2="200" y2="220" stroke="#37474F" stroke-width="4" stroke-linecap="round"/>
+</svg>

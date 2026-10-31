@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle Background Grid/Network representing global complexity/context -->
+  <g opacity="0.15">
+    <line x1="40" y1="60" x2="100" y2="100" stroke="#8EA2FF" stroke-dasharray="3 3"/>
+    <line x1="200" y1="80" x2="150" y2="120" stroke="#8EA2FF" stroke-dasharray="3 3"/>
+    <line x1="70" y1="180" x2="120" y2="140" stroke="#8EA2FF" stroke-dasharray="3 3"/>
+    <circle cx="100" cy="100" r="3" fill="#8EA2FF"/>
+    <circle cx="150" cy="120" r="3" fill="#8EA2FF"/>
+    <circle cx="120" cy="140" r="3" fill="#8EA2FF"/>
+  </g>
+
+  <!-- Visual Metaphor: Escalation / Elevated Focal Point (Escalating steps breaking into prominence) -->
+  <!-- Base standard progression steps -->
+  <g transform="translate(0, 10)">
+    <!-- Step 1 -->
+    <path d="M48 150 L80 135 L80 165 L48 180 Z" fill="#2A2F3D" stroke="#3A4255" stroke-width="2"/>
+    <path d="M80 135 L112 120 L112 150 L80 165 Z" fill="#323846" stroke="#3A4255" stroke-width="2"/>
+    
+    <!-- Step 2 -->
+    <path d="M112 120 L144 105 L144 135 L112 150 Z" fill="#3A4255" stroke="#485268" stroke-width="2"/>
+
+    <!-- Escalated Peak / Focal Element (Representing "尤为" - exceptionally elevated/critical) -->
+    <g transform="translate(144, 45)">
+      <!-- Vertical pillar lifting the core element -->
+      <path d="M0 60 L32 45 L32 105 L0 120 Z" fill="#D97706" opacity="0.7"/>
+      <path d="M32 45 L64 30 L64 90 L32 105 Z" fill="#F59E0B"/>
+      
+      <!-- Glowing Focal Platform / Spotlight cone -->
+      <polygon points="16,37 48,22 80,110 48,125" fill="#FBBF24" opacity="0.2"/>
+      
+      <!-- Central Core Focus Symbol (Abstract representation of key importance/unity) -->
+      <circle cx="48" cy="67" r="18" fill="#1A1D24" stroke="#F59E0B" stroke-width="3"/>
+      
+      <!-- Interlocking nodes inside the core representing strength/cohesion -->
+      <circle cx="42" cy="67" r="5" fill="#60A5FA"/>
+      <circle cx="54" cy="67" r="5" fill="#34D399"/>
+      <path d="M42 67 L54 67" stroke="#F59E0B" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- Accent upward energy beam / escalation marker -->
+  <g transform="translate(176, 50)" opacity="0.9">
+    <path d="M 0 40 L 12 10 L 24 40 Z" fill="#FBBF24"/>
+    <circle cx="12" cy="0" r="4" fill="#FBBF24"/>
+    <line x1="12" y1="4" x2="12" y2="30" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Contextual Base Foundation Line -->
+  <path d="M30 195 Q 120 205 210 195" fill="none" stroke="#3A4255" stroke-width="3" stroke-linecap="round"/>
+</svg>

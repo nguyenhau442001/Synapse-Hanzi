@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- The Dream/Goal: An iconic acceptance letter/diploma -->
+  <g transform="translate(60, 60)">
+    <!-- Paper base -->
+    <rect x="20" y="20" width="120" height="160" rx="4" fill="#E0E6ED"/>
+    <!-- Seal/Stamp -->
+    <circle cx="110" cy="150" r="15" fill="#F39C12"/>
+    <!-- Lines representing text -->
+    <rect x="35" y="40" width="90" height="8" rx="2" fill="#2C3E50"/>
+    <rect x="35" y="60" width="90" height="8" rx="2" fill="#2C3E50"/>
+    <rect x="35" y="80" width="60" height="8" rx="2" fill="#2C3E50"/>
+    
+    <!-- The "Dream" element: A stylized glowing star/sparkle emanating from the document -->
+    <path d="M140 20 L155 10 L170 20 L160 35 L170 50 L155 40 L140 50 L150 35 Z" fill="#F1C40F"/>
+  </g>
+  
+  <!-- The "Dreaming" element: A stylized cloud/thought bubble silhouette behind the object -->
+  <path d="M40 180 C 20 180, 20 150, 40 150 C 40 130, 70 130, 70 140 C 90 120, 150 120, 150 140 C 180 140, 180 170, 160 180 Z" fill="#2C3E50" opacity="0.6"/>
+</svg>

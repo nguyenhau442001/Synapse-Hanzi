@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Airplane Cabin Floor Structure -->
+  <path d="M60 240 L100 80 L140 80 L180 240 Z" fill="#2C313C"/>
+  
+  <!-- Aisle Floor Details -->
+  <rect x="100" y="80" width="40" height="160" fill="#3A414F"/>
+  
+  <!-- Seat Rows (Left and Right) -->
+  <rect x="20" y="90" width="70" height="30" rx="4" fill="#4A5568"/>
+  <rect x="20" y="140" width="70" height="30" rx="4" fill="#4A5568"/>
+  <rect x="20" y="190" width="70" height="30" rx="4" fill="#4A5568"/>
+  
+  <rect x="150" y="90" width="70" height="30" rx="4" fill="#4A5568"/>
+  <rect x="150" y="140" width="70" height="30" rx="4" fill="#4A5568"/>
+  <rect x="150" y="190" width="70" height="30" rx="4" fill="#4A5568"/>
+  
+  <!-- Floor Lighting/Guidance Strips -->
+  <rect x="105" y="80" width="2" height="160" fill="#FFB347"/>
+  <rect x="133" y="80" width="2" height="160" fill="#FFB347"/>
+  
+  <!-- Clear Aisle Indicator (Focus) -->
+  <path d="M120 110 L120 210 M110 200 L120 210 L130 200" stroke="#FFB347" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

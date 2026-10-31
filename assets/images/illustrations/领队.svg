@@ -1,0 +1,57 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background expedition map grid/contours -->
+  <path d="M 40 180 Q 80 140, 120 160 T 200 130" fill="none" stroke="#2A303C" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M 30 140 Q 90 100, 150 120 T 210 90" fill="none" stroke="#2A303C" stroke-width="2" stroke-opacity="0.6"/>
+
+  <!-- Mountain peak in the background (高原科考 context) -->
+  <polygon points="120,65 175,130 65,130" fill="#242B38"/>
+  <polygon points="120,65 147,130 120,130" fill="#2C3545"/>
+  <!-- Snow cap -->
+  <polygon points="120,65 135,88 120,85 105,88" fill="#4B5563"/>
+
+  <!-- Leader character (领队 - front and center, guiding gesture) -->
+  <!-- Body/Torso in heavy expedition gear -->
+  <path d="M 95 190 L 90 140 L 120 130 L 150 140 L 145 190 Z" fill="#2E4A62"/>
+  <path d="M 120 130 L 120 190" stroke="#1E3243" stroke-width="2"/>
+  <!-- Jacket zipper & collar -->
+  <line x1="120" y1="130" x2="120" y2="175" stroke="#E5E7EB" stroke-width="2"/>
+  <path d="M 110 130 L 120 142 L 130 130" fill="none" stroke="#F97316" stroke-width="3"/>
+
+  <!-- Head & Backpack straps -->
+  <circle cx="120" cy="108" r="16" fill="#FBBF24"/>
+  <!-- Sunglasses/Goggles on head -->
+  <path d="M 108 104 Q 120 100, 132 104" fill="none" stroke="#1F2937" stroke-width="3"/>
+  
+  <!-- Backpack (科考背包) visible behind shoulders -->
+  <path d="M 90 125 L 82 155 L 95 160 Z" fill="#D97706"/>
+  <path d="M 150 125 L 158 155 L 145 160 Z" fill="#D97706"/>
+
+  <!-- Raised arm pointing forward/leading (核心动作：统筹、带头) -->
+  <path d="M 145 145 L 175 125 L 185 130" fill="none" stroke="#FBBF24" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Hand -->
+  <circle cx="185" cy="130" r="5" fill="#FBBF24"/>
+
+  <!-- Other arm holding compass/map or steadying -->
+  <path d="M 95 145 L 75 165 L 85 175" fill="none" stroke="#E5E7EB" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Directional/Leadership Indicator (Golden beacon / path marker, NO abstract UI bars) -->
+  <polygon points="185,90 193,105 177,105" fill="#F97316"/>
+  <line x1="185" y1="105" x2="185" y2="120" stroke="#F97316" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Team follower silhouettes in background (showing "队" - group/team) -->
+  <!-- Follower 1 -->
+  <circle cx="75" cy="135" r="10" fill="#374151"/>
+  <path d="M 65 170 L 68 145 L 82 145 L 85 170 Z" fill="#374151"/>
+
+  <!-- Follower 2 -->
+  <circle cx="50" cy="145" r="9" fill="#2A3441"/>
+  <path d="M 41 175 L 43 152 L 57 152 L 59 175 Z" fill="#2A3441"/>
+
+  <!-- Foreground accent: Professional compass/navigation icon integrated subtly near base -->
+  <circle cx="120" cy="205" r="14" fill="#111827" stroke="#F97316" stroke-width="2.5"/>
+  <polygon points="120,195 123,205 120,215 117,205" fill="#F97316"/>
+  <polygon points="120,215 123,205 120,195 123,205" fill="#9CA3AF"/>
+</svg>

@@ -1,0 +1,46 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Moving Box / Relocation Theme representing "迁" (moving location) -->
+    
+    <!-- Floor shadow -->
+    <ellipse cx="120" cy="180" rx="60" ry="10" fill="#111317" opacity="0.6"/>
+    
+    <!-- Main Moving Cardboard Box (Isometric/Flat hybrid view) -->
+    <!-- Back flaps (open upward) -->
+    <path d="M75,100 L95,80 L145,80 L165,100 Z" fill="#C28B53" opacity="0.8"/>
+    <path d="M75,100 L95,80 L120,95 L95,115 Z" fill="#A4723E" opacity="0.9"/>
+    <path d="M165,100 L145,80 L120,95 L145,115 Z" fill="#8E6032" opacity="0.9"/>
+    
+    <!-- Box Left Side -->
+    <path d="M75,100 L120,125 L120,175 L75,150 Z" fill="#D49B5B"/>
+    
+    <!-- Box Right Side -->
+    <path d="M165,100 L120,125 L120,175 L165,150 Z" fill="#E8B06F"/>
+    
+    <!-- Open Top Edge highlighting depth -->
+    <path d="M75,100 L120,125 L165,100 L120,75 Z" fill="#F1C283"/>
+
+    <!-- Dynamic Motion / Directional Arc Arrows sweeping from left to right over the box -->
+    <path d="M 60,110 Q 120,40 180,110" fill="none" stroke="#FFA726" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+    
+    <!-- Arrow Head at right end of arc -->
+    <path d="M172,98 L183,111 L168,114 Z" fill="#FFA726"/>
+    
+    <!-- Location Pin icon hovering above to signify "New Address" (新址) -->
+    <g transform="translate(120, 25)">
+      <path d="M0,-12 C-7,-12 -12,-7 -12,0 C-12,7 0,18 0,18 C0,18 12,7 12,0 C12,-7 7,-12 0,-12 Z" fill="#FF5722"/>
+      <circle cx="0" cy="-2" r="4.5" fill="#1A1D24"/>
+    </g>
+    
+    <!-- Small accent items inside/peeking out of the box (representing belongings being moved) -->
+    <!-- Green plant leaf -->
+    <path d="M115,85 Q110,65 125,55 Q130,75 115,85 Z" fill="#4CAF50"/>
+    <path d="M120,80 Q122,70 123,60" fill="none" stroke="#2E7D32" stroke-width="1.5"/>
+
+    <!-- Stack of books -->
+    <rect x="90" y="105" width="25" height="8" rx="2" fill="#3F51B5" transform="rotate(-10 102 109)"/>
+    <rect x="88" y="113" width="28" height="7" rx="2" fill="#E91E63" transform="rotate(-10 102 116)"/>
+  </g>
+</svg>

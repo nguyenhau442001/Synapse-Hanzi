@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Mountain/Terrain background symbolizing geological exploration context -->
+    <path d="M 20 185 L 75 140 L 125 170 L 190 115 L 220 145 L 220 185 Z" fill="#252A34"/>
+    <path d="M 75 140 L 125 170 L 190 115 L 220 145 L 220 185 L 20 185 Z" fill="#1E232D" opacity="0.5"/>
+    <path d="M 50 185 L 90 155 L 145 190 L 220 135 L 220 185 Z" fill="#2D3340" opacity="0.8"/>
+    
+    <!-- Geological strata lines -->
+    <path d="M 35 160 Q 75 145 115 165 T 205 130" fill="none" stroke="#3A4252" stroke-width="2" stroke-dasharray="4,4"/>
+    <path d="M 45 175 Q 85 160 125 180 T 215 145" fill="none" stroke="#3A4252" stroke-width="2" stroke-dasharray="4,4"/>
+
+    <!-- Walking path/trail -->
+    <path d="M 20 195 C 60 195 90 170 130 170 C 160 170 185 150 220 140" fill="none" stroke="#E58C34" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Character 1 (Leader / Mentor) ahead -->
+    <g transform="translate(145, 95)">
+      <!-- Motion/Footsteps behind leader -->
+      <ellipse cx="-15" cy="52" rx="4" ry="2" fill="#E58C34" opacity="0.4"/>
+      <ellipse cx="-35" cy="58" rx="4" ry="2" fill="#E58C34" opacity="0.2"/>
+      
+      <!-- Body parts -->
+      <path d="M 5 22 L 15 48 L 5 55" fill="none" stroke="#8E99A8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 12 35 L 25 45 L 22 55" fill="none" stroke="#A3AFC1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Torso -->
+      <path d="M 2 12 Q 12 10 15 25 L 8 40 L -2 38 Z" fill="#4C78A8"/>
+      <!-- Head -->
+      <circle cx="5" cy="4" r="5" fill="#EAD5BC"/>
+      <!-- Backpack / Geological tool -->
+      <rect x="-4" y="14" width="8" height="15" rx="2" fill="#E58C34"/>
+      <!-- Walking stick -->
+      <line x1="22" y1="20" x2="8" y2="52" stroke="#A3AFC1" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Character 2 (Follower / "追随" - stepping in exact footsteps) -->
+    <g transform="translate(90, 115)">
+      <!-- Direct Footstep Alignment / Action Effect -->
+      <path d="M 25 15 Q 15 35 5 35" fill="none" stroke="#E58C34" stroke-width="2" stroke-dasharray="3,3" opacity="0.8"/>
+      
+      <!-- Back leg (stepping forward) -->
+      <path d="M 0 20 L -8 42 L -15 40" fill="none" stroke="#A3AFC1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Front leg -->
+      <path d="M 5 22 L 18 42 L 25 40" fill="none" stroke="#8E99A8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- Torso with leaning forward posture showing dynamic pursuit/action -->
+      <path d="M -2 10 Q 8 8 10 25 L 5 38 L -5 35 Z" fill="#E58C34"/>
+      
+      <!-- Head -->
+      <circle cx="2" cy="2" r="5" fill="#EAD5BC"/>
+      
+      <!-- Backpack -->
+      <rect x="-8" y="12" width="8" height="15" rx="2" fill="#4C78A8"/>
+      
+      <!-- Geological hammer in hand -->
+      <path d="M 12 25 L 22 28" stroke="#A3AFC1" stroke-width="2" stroke-linecap="round"/>
+      <rect x="20" y="25" width="4" height="6" rx="1" fill="#E58C34"/>
+    </g>
+
+    <!-- Foreground compass / exploration icon subtly integrated -->
+    <g transform="translate(35, 185)">
+      <circle cx="0" cy="0" r="14" fill="#252A34" stroke="#E58C34" stroke-width="2"/>
+      <polygon points="0,-9 3,0 0,6 -3,0" fill="#E58C34"/>
+      <polygon points="0,9 3,0 0,-6 -3,0" fill="#8E99A8"/>
+      <circle cx="0" cy="0" r="2" fill="#1A1D24"/>
+    </g>
+  </g>
+</svg>

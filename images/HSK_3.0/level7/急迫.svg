@@ -1,0 +1,39 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 115)">
+    <!-- Hourglass Frame Outer Glow / Alert Indicator -->
+    <circle cx="0" cy="0" r="75" fill="none" stroke="#FF5722" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.4"/>
+    
+    <!-- Hourglass Structure -->
+    <!-- Top bulb -->
+    <path d="M-45 -65 L45 -65 C45 -35 25 -15 0 0 C-25 -15 -45 -35 -45 -65 Z" fill="#2D3748" opacity="0.8"/>
+    <!-- Bottom bulb -->
+    <path d="M-45 65 L45 65 C45 35 25 15 0 0 C-25 15 -45 35 -45 65 Z" fill="#2D3748" opacity="0.8"/>
+    
+    <!-- Glass Highlights & Outlines -->
+    <path d="M-45 -65 L45 -65 M-45 65 L45 65" stroke="#A0AEC0" stroke-width="4" stroke-linecap="round"/>
+    <path d="M-42 -63 C-42 -35 -22 -15 0 0 C22 -15 42 -35 42 -63" fill="none" stroke="#E2E8F0" stroke-width="2"/>
+    <path d="M-42 63 C-42 35 -22 15 0 0 C22 15 42 35 42 63" fill="none" stroke="#E2E8F0" stroke-width="2"/>
+    
+    <!-- Wooden / Modern Frame Supports -->
+    <rect x="-55" y="-73" width="110" height="8" rx="4" fill="#4A5568"/>
+    <rect x="-55" y="65" width="110" height="8" rx="4" fill="#4A5568"/>
+    
+    <!-- Sand in Bottom (Accumulated) -->
+    <path d="M-38 58 C-18 62 18 62 38 58 L32 40 C15 45 -15 45 -32 40 Z" fill="#FFB74D"/>
+    <path d="M-32 40 C-15 45 15 45 32 40 C12 55 -12 55 -32 40 Z" fill="#FFA726"/>
+
+    <!-- Falling Sand Stream -->
+    <line x1="0" y1="0" x2="0" y2="40" stroke="#FFB74D" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Sand in Top (Draining rapidly, almost empty) -->
+    <path d="M-12 -20 C-5 -25 5 -25 12 -20 L28 -55 C12 -58 -12 -58 -28 -55 Z" fill="#FFB74D"/>
+
+    <!-- Urgent Glowing Action Elements (Sparks/Warning Pulse) -->
+    <circle cx="0" cy="0" r="6" fill="#FF5722"/>
+    <circle cx="0" cy="0" r="14" fill="none" stroke="#FF5722" stroke-width="2" opacity="0.8"/>
+    
+    <path d="M 0 -38 L 4 -30 L 12 -30 L 6 -24 L 8 -16 L 0 -20 L -8 -16 L -6 -24 L -12 -30 L -4 -30 Z" fill="#FF5722" transform="translate(0, -45) scale(0.6)"/>
+  </g>
+</svg>

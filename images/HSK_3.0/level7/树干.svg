@@ -1,0 +1,19 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 120)">
+    <path d="M-25 80 L-25 -60 C-25 -90, -10 -100, 0 -100 C10 -100, 25 -90, 25 -60 L25 80 Z" fill="#5D4037"/>
+    <path d="M-25 80 L-25 -60 C-25 -90, -10 -100, 0 -100 C10 -100, 25 -90, 25 -60 L25 80 Z" fill="url(#grad)" opacity="0.3"/>
+    <path d="M-25 -20 L-35 -30 M-25 10 L-35 0 M25 -40 L35 -50 M25 30 L35 20" stroke="#3E2723" stroke-width="4" stroke-linecap="round"/>
+    <path d="M-20 -70 C-10 -75, 10 -75, 20 -70" stroke="#8D6E63" stroke-width="2" fill="none"/>
+    <path d="M-22 -40 C-12 -45, 12 -45, 22 -40" stroke="#8D6E63" stroke-width="2" fill="none"/>
+    <path d="M-24 10 C-14 5, 14 5, 24 10" stroke="#8D6E63" stroke-width="2" fill="none"/>
+    <path d="M-25 50 C-15 45, 15 45, 25 50" stroke="#8D6E63" stroke-width="2" fill="none"/>
+  </g>
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#FFF" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+</svg>

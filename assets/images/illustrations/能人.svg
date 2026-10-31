@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Person representing the "Néngrén" (Talented Person) -->
+  <!-- Body -->
+  <path d="M120 110C100 110 85 125 85 145V210H155V145C155 125 140 110 120 110Z" fill="#4A5568"/>
+  
+  <!-- Head -->
+  <circle cx="120" cy="85" r="25" fill="#E2E8F0"/>
+  
+  <!-- Arms gesturing towards the plant -->
+  <path d="M85 140L60 160" stroke="#E2E8F0" stroke-width="12" stroke-linecap="round"/>
+  <path d="M155 140L180 160" stroke="#E2E8F0" stroke-width="12" stroke-linecap="round"/>
+  
+  <!-- The "Talent" aspect: A thriving plant being held/tended -->
+  <g transform="translate(105, 150)">
+    <!-- Pot -->
+    <path d="M-10 0H30L25 25H-5L-10 0Z" fill="#D69E2E"/>
+    <!-- Plant -->
+    <path d="M10 0V-30" stroke="#48BB78" stroke-width="4" stroke-linecap="round"/>
+    <path d="M10 -15L25 -25" stroke="#48BB78" stroke-width="4" stroke-linecap="round"/>
+    <path d="M10 -20L-5 -30" stroke="#48BB78" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="25" cy="-25" r="6" fill="#F6AD55"/>
+    <circle cx="-5" cy="-30" r="6" fill="#F6AD55"/>
+  </g>
+  
+  <!-- Golden Aura/Focus highlight behind the person -->
+  <circle cx="120" cy="120" r="70" fill="none" stroke="#D69E2E" stroke-width="2" stroke-dasharray="8 8" opacity="0.4"/>
+</svg>

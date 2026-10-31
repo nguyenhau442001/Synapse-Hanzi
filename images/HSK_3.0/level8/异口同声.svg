@@ -1,0 +1,63 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glowing sound waves / unison acoustic convergence background accent -->
+  <g opacity="0.15">
+    <path d="M70 100 C90 80, 150 80, 170 100" fill="none" stroke="#FF9F43" stroke-width="2" stroke-linecap="round"/>
+    <path d="M55 110 C85 70, 155 70, 185 110" fill="none" stroke="#FF9F43" stroke-width="2" stroke-linecap="round"/>
+    <path d="M40 120 C80 60, 160 60, 200 120" fill="none" stroke="#FF9F43" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Central Visualizing Character Group (3 stylized people speaking in unison) -->
+  <!-- Left Character -->
+  <g transform="translate(45, 110)">
+    <!-- Body/Shoulders -->
+    <path d="M -25 50 C -25 35, -10 30, 0 30 C 10 30, 25 35, 25 50 Z" fill="#3A3F4B"/>
+    <!-- Head -->
+    <circle cx="0" cy="10" r="16" fill="#D1D5DB"/>
+    <!-- Open Mouth (Speaking) -->
+    <ellipse cx="6" cy="13" rx="4" ry="5" fill="#1A1D24"/>
+    <!-- Sound Waves Emanating -->
+    <path d="M 16 7 C 20 9, 20 13, 16 15" fill="none" stroke="#FF9F43" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Right Character -->
+  <g transform="translate(195, 110)">
+    <!-- Body/Shoulders -->
+    <path d="M -25 50 C -25 35, -10 30, 0 30 C 10 30, 25 35, 25 50 Z" fill="#3A3F4B"/>
+    <!-- Head -->
+    <circle cx="0" cy="10" r="16" fill="#D1D5DB"/>
+    <!-- Open Mouth (Speaking) -->
+    <ellipse cx="-6" cy="13" rx="4" ry="5" fill="#1A1D24"/>
+    <!-- Sound Waves Emanating -->
+    <path d="M -16 7 C -20 9, -20 13, -16 15" fill="none" stroke="#FF9F43" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Center Main Character (Focal Point) -->
+  <g transform="translate(120, 95)">
+    <!-- Body/Shoulders with accent color -->
+    <path d="M -35 70 C -35 48, -18 40, 0 40 C 18 40, 35 48, 35 70 Z" fill="#FF9F43"/>
+    <!-- Head -->
+    <circle cx="0" cy="14" r="22" fill="#F3F4F6"/>
+    <!-- Open Mouth (Speaking in Unison) -->
+    <ellipse cx="0" cy="20" rx="6" ry="7" fill="#1A1D24"/>
+    <!-- Concentrated/Expressive Eyes -->
+    <circle cx="-7" cy="9" r="2.5" fill="#1A1D24"/>
+    <circle cx="7" cy="9" r="2.5" fill="#1A1D24"/>
+  </g>
+
+  <!-- Unified Voice/Speech Symbol Object (Amplified Central Megaphone / Sound Pulse) -->
+  <g transform="translate(120, 160)">
+    <!-- Base podium/marker -->
+    <rect x="-30" y="25" width="60" height="6" rx="3" fill="#4B5563"/>
+    
+    <!-- Unified Sound Output Waves converging/radiating upward -->
+    <path d="M -25 -5 C -15 -15, 15 -15, 25 -5" fill="none" stroke="#FF9F43" stroke-width="4" stroke-linecap="round"/>
+    <path d="M -15 -15 C -8 -22, 8 -22, 15 -15" fill="none" stroke="#FF9F43" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Central speech integration node -->
+    <circle cx="0" cy="5" r="10" fill="#FF9F43"/>
+    <circle cx="0" cy="5" r="4" fill="#1A1D24"/>
+  </g>
+</svg>

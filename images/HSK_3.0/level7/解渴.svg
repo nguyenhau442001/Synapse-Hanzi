@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient glow representing refreshing coolness -->
+  <circle cx="120" cy="125" r="70" fill="#22303C" opacity="0.6"/>
+
+  <!-- Mountain Spring Water Bowl (Physical Object representing 解渴) -->
+  <g transform="translate(0, 10)">
+    <!-- Water surface ripples / highlights -->
+    <ellipse cx="120" cy="100" rx="42" ry="14" fill="#38BDF8" opacity="0.3"/>
+    
+    <!-- Bowl body (outer back rim) -->
+    <path d="M 72 100 C 72 135, 92 155, 120 155 C 148 155, 168 135, 168 100 Z" fill="#E2E8F0"/>
+    
+    <!-- Bowl inner depth -->
+    <path d="M 76 100 C 76 132, 94 150, 120 150 C 146 150, 164 132, 164 100 Z" fill="#CBD5E1"/>
+    
+    <!-- Cool refreshing mountain spring water inside the bowl -->
+    <ellipse cx="120" cy="102" rx="40" ry="13" fill="#0EA5E9"/>
+    <ellipse cx="116" cy="103" rx="32" ry="9" fill="#38BDF8"/>
+    
+    <!-- Water sparkle / refreshment glints -->
+    <path d="M 105 100 Q 110 97 115 100 Q 110 103 105 100 Z" fill="#FFFFFF" opacity="0.8"/>
+    <circle cx="132" cy="104" r="2" fill="#FFFFFF" opacity="0.9"/>
+    
+    <!-- Bowl front rim -->
+    <ellipse cx="120" cy="100" rx="48" ry="15" fill="none" stroke="#F8FAFC" stroke-width="4"/>
+    
+    <!-- Bowl base/foot -->
+    <path d="M 100 155 L 140 155 L 136 163 L 104 163 Z" fill="#94A3B8"/>
+  </g>
+
+  <!-- Cool rising vapor / refreshing chill particles (High-contrast gold/orange focus accent & cyan) -->
+  <g opacity="0.9">
+    <!-- Left rising chill droplet -->
+    <path d="M 90 70 C 90 62, 96 55, 96 55 C 96 55, 102 62, 102 70 C 102 73, 99 76, 96 76 C 93 76, 90 73, 90 70 Z" fill="#38BDF8"/>
+    <circle cx="94" cy="68" r="1" fill="#FFFFFF" opacity="0.7"/>
+
+    <!-- Right rising chill droplet -->
+    <path d="M 140 60 C 140 52, 146 45, 146 45 C 146 45, 152 52, 152 60 C 152 63, 149 66, 146 66 C 143 66, 140 63, 140 60 Z" fill="#38BDF8"/>
+    <circle cx="144" cy="58" r="1" fill="#FFFFFF" opacity="0.7"/>
+
+    <!-- Center high-contrast gold accent star/sparkle for premium refreshing quality -->
+    <path d="M 120 32 L 123 42 L 133 45 L 123 48 L 120 58 L 117 48 L 107 45 L 117 42 Z" fill="#F59E0B"/>
+    
+    <!-- Small accent sparkles -->
+    <circle cx="75" cy="85" r="2" fill="#F59E0B" opacity="0.8"/>
+    <circle cx="165" cy="95" r="1.5" fill="#38BDF8" opacity="0.8"/>
+  </g>
+</svg>

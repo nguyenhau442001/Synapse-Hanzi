@@ -1,0 +1,32 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground/Base -->
+  <path d="M40 190 L200 190" stroke="#3A404D" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Supporting Figure (The Rescuer/Support) -->
+  <g transform="translate(140, 100)">
+    <circle cx="0" cy="0" r="12" fill="#FFB84D"/>
+    <path d="M-15 15 L-5 15 L-5 50 L-15 50 Z" fill="#FFB84D"/>
+    <path d="M5 15 L15 15 L15 50 L5 50 Z" fill="#FFB84D"/>
+    <path d="M-20 20 L20 20 L15 60 L-15 60 Z" fill="#FFB84D"/>
+    <path d="M-10 60 L-10 85 L-20 85 Z" fill="#FFB84D"/>
+    <path d="M10 60 L10 85 L20 85 Z" fill="#FFB84D"/>
+  </g>
+  
+  <!-- The Recipient/Person being supported -->
+  <g transform="translate(100, 120)">
+    <circle cx="0" cy="0" r="10" fill="#E0E0E0"/>
+    <path d="M-12 10 L12 10 L8 40 L-8 40 Z" fill="#E0E0E0"/>
+    <path d="M-15 40 L15 40 L10 70 L-10 70 Z" fill="#E0E0E0"/>
+  </g>
+  
+  <!-- Support Gesture: Hands reaching out to stabilize/assist -->
+  <path d="M115 130 C 125 120, 135 120, 140 130" stroke="#FFB84D" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M110 140 C 120 130, 130 130, 135 140" stroke="#FFB84D" stroke-width="6" stroke-linecap="round" fill="none"/>
+  
+  <!-- Medical/Aid Symbol (Simplified, non-abstract) -->
+  <rect x="155" y="70" width="20" height="20" rx="2" fill="#FFB84D"/>
+  <rect x="162" y="74" width="6" height="12" fill="#1A1D24"/>
+  <rect x="159" y="77" width="12" height="6" fill="#1A1D24"/>
+</svg>

@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Podium/Base -->
+  <path d="M70 190 L170 190 L160 210 L80 210 Z" fill="#333842"/>
+  <path d="M80 210 L160 210 L155 220 L85 220 Z" fill="#252932"/>
+  
+  <!-- The Outstanding Individual (Iconic character representing '卓越' - The peak/leader) -->
+  <g transform="translate(120, 160)">
+    <!-- Body -->
+    <path d="M-20 0 L20 0 L15 30 L-15 30 Z" fill="#4B5563"/>
+    <!-- Head -->
+    <circle cx="0" cy="-25" r="20" fill="#E5E7EB"/>
+    <!-- Gold Laurel/Crown element representing 'Excellence' -->
+    <path d="M-25 -40 L-15 -55 M25 -40 L15 -55 M0 -50 L0 -65" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="0" cy="-65" r="6" fill="#F59E0B"/>
+  </g>
+  
+  <!-- Golden Star/Peak element behind the figure -->
+  <path d="M120 60 L135 105 L180 105 L145 130 L160 175 L120 145 L80 175 L95 130 L60 105 L105 105 Z" fill="#F59E0B" opacity="0.3"/>
+  
+  <!-- Highlight on the figure -->
+  <circle cx="120" cy="135" r="35" fill="none" stroke="#F59E0B" stroke-width="2" stroke-dasharray="4 4" opacity="0.5"/>
+</svg>

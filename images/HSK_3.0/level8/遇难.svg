@@ -1,0 +1,72 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background rubble / fallen structures depicting the context of disaster -->
+  <g fill="#2B313D">
+    <!-- Concrete slabs and debris -->
+    <polygon points="30,200 80,180 90,210 20,220"/>
+    <polygon points="150,190 220,170 230,220 140,210"/>
+    <polygon points="70,165 120,150 130,185 80,195"/>
+    <!-- Broken steel beam / rebar silhouette -->
+    <path d="M45,190 L95,145 L102,152 L52,197 Z" fill="#3A4252"/>
+    <path d="M180,180 L135,135 L142,128 L187,173 Z" fill="#3A4252"/>
+    <!-- Structural blocks -->
+    <rect x="95" y="120" width="50" height="30" rx="4" transform="rotate(-15 95 120)" fill="#252A34"/>
+    <rect x="40" y="140" width="40" height="25" rx="3" transform="rotate(20 40 140)" fill="#252A34"/>
+  </g>
+
+  <!-- Ground plane shadow gradient -->
+  <ellipse cx="120" cy="205" rx="90" ry="15" fill="#111318" opacity="0.6"/>
+
+  <!-- Action / Dynamic element: Searchlight beam cutting through darkness (representing search & discovery) -->
+  <path d="M120,10 L30,210 L80,210 L135,90 Z" fill="url(#lightBeam)" opacity="0.15"/>
+  <path d="M120,10 L160,210 L210,210 L130,70 Z" fill="url(#lightBeam)" opacity="0.1"/>
+
+  <defs>
+    <linearGradient id="lightBeam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFB703" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FFB703" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glowGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFB703" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FF5454" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient glow around the tragic event discovery -->
+  <ellipse cx="120" cy="165" rx="45" ry="25" fill="url(#glowGradient)"/>
+
+  <!-- Fallen human character depiction (illustrating loss / 遇难) -->
+  <g transform="translate(120, 165)">
+    <!-- Motion / impact lines indicating sudden cessation or fallen state -->
+    <line x1="-50" y1="-15" x2="-35" y2="-5" stroke="#FF5454" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <line x1="40" y1="-10" x2="55" y2="0" stroke="#FF5454" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Body posture: lying down horizontally / slumped under wreckage -->
+    <!-- Legs -->
+    <path d="M -35,5 L -10,10 L -5,2" fill="none" stroke="#606F85" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Torso -->
+    <path d="M -10,10 L 20,5" fill="none" stroke="#2B6CB0" stroke-width="10" stroke-linecap="round"/>
+    <!-- Head -->
+    <circle cx="-38" cy="-2" r="7" fill="#A0AEC0"/>
+    <!-- Arm (resting/fallen) -->
+    <path d="M -5,8 L 15,18 L 25,12" fill="none" stroke="#606F85" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Hard hat / safety helmet fallen nearby (contextual to mining/disaster) -->
+    <path d="M 28,15 Q 35,10 42,15 Z" fill="#FFB703"/>
+    <ellipse cx="35" cy="15" rx="7" ry="2" fill="#F59E0B"/>
+  </g>
+
+  <!-- Heavy collapsed debris piece directly above the scene (visualizing cause/environment) -->
+  <path d="M 75,115 L 165,110 L 175,135 L 65,130 Z" fill="#252A34" stroke="#3A4252" stroke-width="2"/>
+  <rect x="90" y="118" width="15" height="8" rx="2" fill="#1A1D24"/>
+  <rect x="120" y="116" width="25" height="8" rx="2" fill="#1A1D24"/>
+
+  <!-- Focus accent: Search/Discovery marker (subtle reticle or bracket framing the tragic finding) -->
+  <path d="M 70,135 L 70,125 L 80,125" fill="none" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 170,135 L 170,125 L 160,125" fill="none" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 70,185 L 70,195 L 80,195" fill="none" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 170,185 L 170,195 L 160,195" fill="none" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg>

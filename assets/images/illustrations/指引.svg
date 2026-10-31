@@ -1,0 +1,64 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Elements (Dark night sky and sea) -->
+  <!-- Deep ocean base -->
+  <path d="M0 180 Q60 175 120 180 T240 180 L240 240 L0 240 Z" fill="#15181F"/>
+  <!-- Sea wave highlight -->
+  <path d="M0 190 Q80 185 160 192 T240 188 L240 240 L0 240 Z" fill="#12151B"/>
+  
+  <!-- Distant mountains/horizon -->
+  <path d="M0 180 L40 165 L80 172 L130 155 L180 170 L240 160 L240 180 Z" fill="#222630"/>
+
+  <!-- Beacon Light Beams (指引 - Guiding light sweeping across the night) -->
+  <!-- Wide soft glow beam -->
+  <polygon points="120,65 10,215 230,215" fill="url(#lightBeam)" opacity="0.15"/>
+  <!-- Bright core beam -->
+  <polygon points="120,65 50,210 190,210" fill="url(#lightBeam)" opacity="0.35"/>
+  
+  <!-- Lighthouse Structure -->
+  <!-- Rocky base / island -->
+  <path d="M95 180 Q120 170 145 180 L155 195 C140 200 100 200 85 195 Z" fill="#2C323D"/>
+  
+  <!-- Lighthouse Tower (Tapered) -->
+  <polygon points="105,75 135,75 140,180 100,180" fill="#E2E8F0"/>
+  
+  <!-- Red stripes on lighthouse -->
+  <polygon points="108,95 132,95 133,115 107,115" fill="#EF4444"/>
+  <polygon points="106,135 134,135 136,155 104,155" fill="#EF4444"/>
+  
+  <!-- Lighthouse Door and Windows -->
+  <rect x="114" y="160" width="12" height="20" rx="2" fill="#1A1D24"/>
+  <circle cx="120" cy="115" r="4" fill="#1A1D24"/>
+  
+  <!-- Lighthouse Top / Lantern Room -->
+  <rect x="102" y="60" width="36" height="15" rx="2" fill="#333A48"/>
+  <rect x="105" y="65" width="30" height="8" fill="#F59E0B" opacity="0.8"/>
+  
+  <!-- Roof -->
+  <path d="M100 60 L120 42 L140 60 Z" fill="#EF4444"/>
+  <circle cx="120" cy="40" r="3" fill="#E2E8F0"/>
+  
+  <!-- Bright Light Source at top -->
+  <circle cx="120" cy="69" r="8" fill="#FEF3C7"/>
+
+  <!-- Small Guided Ship (Representing the recipient of guidance) -->
+  <g transform="translate(170, 195)">
+    <!-- Hull -->
+    <path d="M-12 8 C-12 8 -8 18 0 18 C8 18 12 8 12 8 Z" fill="#64748B"/>
+    <!-- Cabin -->
+    <rect x="-5" y="1" width="10" height="7" fill="#94A3B8"/>
+    <!-- Mast & Sail -->
+    <line x1="0" y1="1" x2="0" y2="-12" stroke="#CBD5E1" stroke-width="1.5"/>
+    <path d="M0 -12 L8 -4 L0 2 Z" fill="#F8FAFC"/>
+  </g>
+
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="lightBeam" x1="120" y1="65" x2="120" y2="215" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FEF08A" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FEF08A" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>

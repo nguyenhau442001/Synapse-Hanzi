@@ -1,0 +1,72 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Back Canned Item (Fruit/Slightly offset) -->
+    <g transform="translate(145, 105)">
+      <!-- Can Body -->
+      <path d="M 12 15 L 12 80 C 12 88, 30 94, 52 94 C 74 94, 92 88, 92 80 L 92 15 Z" fill="#2C323E"/>
+      <path d="M 12 15 L 12 80 C 12 88, 30 94, 52 94 C 74 94, 92 88, 92 80 L 92 15 Z" fill="none" stroke="#3A4252" stroke-width="2"/>
+      
+      <!-- Label Wrapper -->
+      <path d="M 12 32 L 12 72 C 12 78, 30 83, 52 83 C 74 83, 92 78, 92 72 L 92 32 Z" fill="#F4A261"/>
+      <path d="M 22 45 Q 52 38 82 45" stroke="#E76F51" stroke-width="4" stroke-linecap="round" fill="none"/>
+      <path d="M 28 60 Q 52 53 76 60" stroke="#E76F51" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+      <!-- Can Rim & Lid -->
+      <ellipse cx="52" cy="15" rx="40" ry="9" fill="#8C96A5"/>
+      <ellipse cx="52" cy="12" rx="37" ry="7" fill="#A4B0C1"/>
+      <ellipse cx="52" cy="9" rx="34" ry="5" fill="#C5D1E0"/>
+    </g>
+
+    <!-- Main Front Canned Item (Meat/Featured) -->
+    <g transform="translate(45, 75)">
+      <!-- Can Body Shadow/Base -->
+      <ellipse cx="62" cy="125" rx="50" ry="12" fill="#0D0F13" opacity="0.4"/>
+
+      <!-- Can Cylinder Body -->
+      <path d="M 12 25 L 12 110 C 12 121, 34 130, 62 130 C 90 130, 112 121, 112 110 L 112 25 Z" fill="#4B5563"/>
+      <!-- Metallic gradient reflection effect -->
+      <path d="M 12 25 L 12 110 C 12 121, 34 130, 62 130 C 90 130, 112 121, 112 110 L 112 25 Z" fill="url(#metalGrad)" opacity="0.6"/>
+      <path d="M 12 25 L 12 110 C 12 121, 34 130, 62 130 C 90 130, 112 121, 112 110 L 112 25 Z" fill="none" stroke="#6B7280" stroke-width="2"/>
+
+      <!-- Can Label -->
+      <path d="M 12 45 L 12 100 C 12 108, 34 114, 62 114 C 90 114, 112 108, 112 100 L 112 45 Z" fill="#E76F51"/>
+      
+      <!-- Label Graphic Details (Modern abstract food icon on label) -->
+      <circle cx="62" cy="78" r="18" fill="#F4A261" opacity="0.5"/>
+      <path d="M 50 78 L 74 78 M 62 66 L 62 90" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+      <path d="M 24 55 Q 62 48 100 55" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.4"/>
+      <path d="M 24 92 Q 62 98 100 92" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.4"/>
+
+      <!-- Can Bottom Rim Line -->
+      <ellipse cx="62" cy="110" rx="50" ry="9" fill="none" stroke="#374151" stroke-width="2"/>
+
+      <!-- Can Top Rim and Pull-tab Lid -->
+      <ellipse cx="62" cy="25" rx="50" ry="12" fill="#9CA3AF"/>
+      <ellipse cx="62" cy="21" rx="46" ry="10" fill="#D1D5DB"/>
+      <ellipse cx="62" cy="17" rx="42" ry="8" fill="#E5E7EB"/>
+      
+      <!-- Pull Tab Mechanism -->
+      <path d="M 62 14 C 62 14, 68 8, 74 11 C 80 14, 76 20, 68 18 Z" fill="#6B7280" stroke="#4B5563" stroke-width="1.5"/>
+      <circle cx="72" cy="12" r="3" fill="#E5E7EB"/>
+    </g>
+
+    <!-- Ambient highlight dots/sparkles for fresh modern UI look -->
+    <circle cx="35" cy="65" r="2" fill="#F4A261" opacity="0.6"/>
+    <circle cx="195" cy="85" r="3" fill="#2A9D8F" opacity="0.8"/>
+    <circle cx="180" cy="180" r="2" fill="#F4A261" opacity="0.5"/>
+  </g>
+
+  <!-- Definitions for gradients -->
+  <defs>
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1F2937" stop-opacity="0.7"/>
+      <stop offset="30%" stop-color="#9CA3AF" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#9CA3AF" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#1F2937" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+</svg>

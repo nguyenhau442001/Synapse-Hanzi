@@ -1,0 +1,34 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Road Background -->
+  <path d="M0 160 L240 160 L240 240 L0 240 Z" fill="#2D3436"/>
+  <path d="M0 160 L240 160" stroke="#4A5568" stroke-width="2" stroke-dasharray="10 10"/>
+  
+  <!-- Old Inn Building (The object being neglected) -->
+  <g transform="translate(60, 70)">
+    <!-- Building Body -->
+    <rect x="0" y="20" width="120" height="70" fill="#4A5568" rx="4"/>
+    <!-- Roof -->
+    <path d="M-10 20 L60 -10 L130 20 Z" fill="#2D3436"/>
+    <!-- Windows (Dark/Unlit) -->
+    <rect x="15" y="35" width="25" height="25" fill="#1A1D24"/>
+    <rect x="80" y="35" width="25" height="25" fill="#1A1D24"/>
+    <!-- Door -->
+    <rect x="45" y="50" width="30" height="40" fill="#1A1D24"/>
+    <!-- Signboard hanging crookedly -->
+    <rect x="10" y="10" width="40" height="10" fill="#D69E2E"/>
+  </g>
+  
+  <!-- Dust/Neglect elements -->
+  <circle cx="140" cy="110" r="2" fill="#718096" opacity="0.6"/>
+  <circle cx="150" cy="125" r="3" fill="#718096" opacity="0.4"/>
+  <circle cx="160" cy="115" r="2" fill="#718096" opacity="0.5"/>
+  
+  <!-- Cobweb detail -->
+  <path d="M180 70 L190 90 M180 70 L200 80 M180 70 L195 75" stroke="#718096" stroke-width="1" opacity="0.5"/>
+  
+  <!-- High Speed Road (Blurred/Distant) -->
+  <path d="M0 180 L240 180" stroke="#D69E2E" stroke-width="4"/>
+  <circle cx="220" cy="180" r="6" fill="#D69E2E"/>
+</svg>

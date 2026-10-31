@@ -1,0 +1,77 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB703" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FB8500" stop-opacity="0.0"/>
+    </linearGradient>
+    
+    <linearGradient id="lensGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#219EBC"/>
+      <stop offset="100%" stop-color="#023047"/>
+    </linearGradient>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD166"/>
+      <stop offset="100%" stop-color="#F3722C"/>
+    </linearGradient>
+
+    <!-- Clip Path for Eyepiece -->
+    <clipPath id="lensClip">
+      <circle cx="120" cy="115" r="55"/>
+    </clipPath>
+  </defs>
+
+  <!-- Ambient Light / Future Projection Background Effect -->
+  <circle cx="120" cy="115" r="80" fill="url(#glowGrad)"/>
+
+  <!-- Futuristic Telescope / Vision Scope Body (The Physical Object representing Foresight/预见) -->
+  <g>
+    <!-- Back Stand/Mount -->
+    <path d="M100 170 L120 130 L140 170 Z" fill="#2B303C"/>
+    <rect x="112" y="165" width="16" height="20" rx="3" fill="#3A4252"/>
+
+    <!-- Main Telescopic Barrel (Angled upwards to the future) -->
+    <g transform="rotate(-30 120 115)">
+      <!-- Outer Tube -->
+      <rect x="75" y="95" width="90" height="40" rx="6" fill="#343D4E" stroke="#4A5568" stroke-width="2"/>
+      <!-- Barrel Accent Rings -->
+      <rect x="85" y="95" width="6" height="40" fill="#4A5568"/>
+      <rect x="145" y="95" width="6" height="40" fill="#4A5568"/>
+      
+      <!-- Extending Front Section -->
+      <rect x="45" y="100" width="32" height="30" rx="4" fill="#2B3444" stroke="#3A4252" stroke-width="1.5"/>
+    </g>
+
+    <!-- Large Objective Lens (Front) - Rotated coordinates or group -->
+    <!-- Eyepiece / Main Viewing Glass (Center-focused) -->
+    <circle cx="120" cy="115" r="58" fill="#111827" stroke="#FFB703" stroke-width="4"/>
+    <circle cx="120" cy="115" r="52" fill="url(#lensGrad)"/>
+  </g>
+
+  <!-- Inside the Lens: Abstract Vision of the Future (Glowing Trendlines & Horizon) -->
+  <g clip-path="url(#lensClip)">
+    <!-- Grid lines inside lens representing strategic foresight/planning -->
+    <line x1="80" y1="135" x2="160" y2="135" stroke="#8ECAE6" stroke-width="1" stroke-dasharray="3 3" opacity="0.4"/>
+    <line x1="80" y1="115" x2="160" y2="115" stroke="#8ECAE6" stroke-width="1" stroke-dasharray="3 3" opacity="0.4"/>
+    <line x1="120" y1="75" x2="120" y2="155" stroke="#8ECAE6" stroke-width="1" stroke-dasharray="3 3" opacity="0.4"/>
+
+    <!-- Rising Trend Graph / Future Insight -->
+    <path d="M 85 130 Q 105 130, 120 110 T 155 85" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Milestone / Future Target Node -->
+    <circle cx="155" cy="85" r="6" fill="#FFB703"/>
+    <circle cx="155" cy="85" r="10" fill="none" stroke="#FFB703" stroke-width="1.5" opacity="0.6"/>
+
+    <!-- Lens Glass Reflection Highlights -->
+    <path d="M 90 85 Q 120 70, 150 90" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.25"/>
+  </g>
+
+  <!-- External Focus/Adjustment Knobs -->
+  <rect x="114" y="65" width="12" height="10" rx="2" fill="#FFB703"/>
+  <rect x="105" y="150" width="30" height="8" rx="3" fill="#FFB703"/>
+
+</svg>

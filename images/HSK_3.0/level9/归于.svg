@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Conceptual Background / Environment: Sleek Modern Conference Room Window / Space -->
+  <path d="M40 50h160v140H40z" fill="#222730" rx="12"/>
+  
+  <!-- Subtle convergence lines representing "归于" (converging/flowing into calm) -->
+  <path d="M60 80C100 120 140 120 180 80" stroke="#3A4252" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <path d="M60 120C100 135 140 135 180 120" stroke="#3A4252" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <path d="M60 160C100 110 140 110 180 160" stroke="#3A4252" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.4"/>
+
+  <!-- Central Physical Object: A sleek, modern architectural meeting room table & chairs settling into absolute stillness -->
+  <!-- Table surface -->
+  <ellipse cx="120" cy="140" rx="70" ry="24" fill="#2E3646"/>
+  <ellipse cx="120" cy="136" rx="70" ry="24" fill="#363E50"/>
+  
+  <!-- Central focal point: A serene acoustic sound-diffuser sculpture on the table, representing the convergence of noise into tranquility -->
+  <g transform="translate(120, 115)">
+    <!-- Base -->
+    <ellipse cx="0" cy="15" rx="18" ry="6" fill="#4E5D78"/>
+    <!-- Center pillar -->
+    <rect x="-4" y="-5" width="8" height="20" rx="2" fill="#6B7C9D"/>
+    <!-- Concentric calm ripples / acoustic rings -->
+    <ellipse cx="0" cy="0" rx="22" ry="8" fill="none" stroke="#63B3ED" stroke-width="2" opacity="0.8"/>
+    <ellipse cx="0" cy="-8" rx="16" ry="6" fill="none" stroke="#63B3ED" stroke-width="2" opacity="0.6"/>
+    <ellipse cx="0" cy="-16" rx="10" ry="4" fill="none" stroke="#63B3ED" stroke-width="2" opacity="0.4"/>
+  </g>
+
+  <!-- Empty surrounding chairs showing order and quietness -->
+  <!-- Chair Left -->
+  <g transform="translate(50, 130)">
+    <rect x="-8" y="-15" width="16" height="24" rx="4" fill="#28303D" transform="rotate(-15)"/>
+    <ellipse cx="0" cy="10" rx="12" ry="6" fill="#363E50"/>
+  </g>
+  <!-- Chair Right -->
+  <g transform="translate(190, 130)">
+    <rect x="-8" y="-15" width="16" height="24" rx="4" fill="#28303D" transform="rotate(15)"/>
+    <ellipse cx="0" cy="10" rx="12" ry="6" fill="#363E50"/>
+  </g>
+  <!-- Chair Bottom -->
+  <g transform="translate(120, 175)">
+    <rect x="-10" y="-10" width="20" height="18" rx="4" fill="#28303D"/>
+    <ellipse cx="0" cy="6" rx="14" ry="7" fill="#363E50"/>
+  </g>
+
+  <!-- Glowing accent particles settling down (representing noise dissolving into peace) -->
+  <circle cx="90" cy="85" r="2" fill="#F6AD55" opacity="0.9"/>
+  <circle cx="150" cy="90" r="1.5" fill="#F6AD55" opacity="0.7"/>
+  <circle cx="105" cy="70" r="2.5" fill="#63B3ED" opacity="0.8"/>
+  <circle cx="135" cy="75" r="2" fill="#63B3ED" opacity="0.9"/>
+  <circle cx="120" cy="60" r="3" fill="#F6AD55" opacity="0.9"/>
+
+  <!-- Soft ambient glow behind the central calm element -->
+  <circle cx="120" cy="115" r="35" fill="#63B3ED" opacity="0.08" filter="blur(8px)"/>
+</svg>

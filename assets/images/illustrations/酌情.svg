@@ -1,0 +1,38 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 115)">
+    <!-- Document/Application Board representing a formal institutional case -->
+    <rect x="-65" y="-75" width="130" height="150" rx="10" fill="#2D333B" stroke="#4A5568" stroke-width="2"/>
+    
+    <!-- Header bar of document -->
+    <path d="M -55 -60 L 55 -60" stroke="#60A5FA" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Text/Data lines representing circumstances (状況) -->
+    <rect x="-45" y="-35" width="70" height="6" rx="3" fill="#4B5563"/>
+    <rect x="-45" y="-18" width="90" height="6" rx="3" fill="#4B5563"/>
+    
+    <!-- Highlighted flexible adjustment zone (酌情 - contextual discretion) -->
+    <rect x="-55" y="0" width="110" height="65" rx="6" fill="#1E293B" stroke="#F59E0B" stroke-width="2"/>
+    
+    <!-- Document content adjustment lines -->
+    <rect x="-40" y="15" width="80" height="6" rx="3" fill="#9CA3AF"/>
+    <rect x="-40" y="30" width="50" height="6" rx="3" fill="#9CA3AF"/>
+    
+    <!-- Scales/Balance beam integrated subtly over the case representing fair, situational judgment -->
+    <path d="M -30 45 L 30 45" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="0" cy="45" r="4" fill="#F59E0B"/>
+    <circle cx="-30" cy="45" r="5" fill="#60A5FA"/>
+    <circle cx="30" cy="45" r="5" fill="#60A5FA"/>
+    
+    <!-- Dynamic adjustment pointer / Hand of discretion (Human-centric flexibility) -->
+    <g transform="translate(48, 12)">
+      <!-- Stylized hand gesture adjusting or tipping the balance -->
+      <circle cx="0" cy="0" r="14" fill="#F59E0B" opacity="0.2"/>
+      <circle cx="0" cy="0" r="8" fill="#F59E0B"/>
+      <!-- Small pointer arrow indicating adaptable action -->
+      <path d="M -3 -12 L 0 -18 L 3 -12 Z" fill="#F59E0B"/>
+    </g>
+  </g>
+</svg>

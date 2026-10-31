@@ -18,24 +18,25 @@ TEST10_ENTRIES = [
         "hanviet": "Hẩn Đa Khốn Nan Thị Khả Dĩ Khắc Phục Đích 。",
         "meaning": "Rất nhiều khó khăn là hoàn toàn có thể khắc phục được.",
         "tokens": [
-            { "text": "很多", "type": "normal", "role": "Định ngữ số lượng" },
-            { "text": "困难", "type": "core", "role": "Chủ ngữ danh từ (khó khăn, trở ngại)" },
-            { "text": "是", "type": "grammar", "role": "Thành phần khẳng định trong cấu trúc 是...的" },
-            { "text": "可以", "type": "normal", "role": "Động từ năng nguyện (có thể)" },
-            { "text": "克服", "type": "core", "role": "Động từ chính (vượt qua, khắc phục)" },
-            { "text": "的", "type": "grammar", "role": "Trợ từ kết thúc cấu trúc nhấn mạnh bản chất" }
+            { "text": "很多", "type": "normal", "role": "Định ngữ chỉ số lượng, bổ nghĩa cho 困难" },
+            { "text": "困难", "type": "core", "role": "Trung tâm ngữ của chủ ngữ (khó khăn, trở ngại)" },
+            { "text": "是", "type": "grammar", "role": "Thành phần mở đầu khung khẳng định 是...的" },
+            { "text": "可以", "type": "normal", "role": "Động từ năng nguyện biểu thị khả năng (có thể)" },
+            { "text": "克服", "type": "core", "role": "Động từ chính làm vị ngữ (vượt qua, khắc phục)" },
+            { "text": "的", "type": "grammar", "role": "Trợ từ kết thúc khung khẳng định 是...的" }
         ],
         "grammar_point": {
-            "name": "Cấu trúc khẳng định tính khả thi: 是可以...的",
-            "pattern": "Chủ ngữ + 是 + 可以 / 能够 + Động từ + 的",
+            "name": "Cấu trúc khẳng định: 是……的",
+            "pattern": "Chủ ngữ + 是 + 可以 + Động từ + 的",
+            "pattern_applied": "很多困难 + 是 + 可以 + 克服 + 的",
             "level": "HSK 4 Trọng điểm",
-            "trap_note": "BẪY CẤU TRÚC: Cấu trúc '是可以...的' dùng để khẳng định mạnh mẽ tính khả thi hoặc bản chất tất yếu có thể giải quyết được của vấn đề.",
-            "explanation": "Câu truyền cảm hứng và sự tự tin đối diện với những nghịch cảnh trong cuộc sống."
+            "trap_note": "Lưu ý vị trí: Cấu trúc '是……的' ở đây dùng để khẳng định khả năng giải quyết của vấn đề. Động từ năng nguyện '可以' phải đứng sau '是' và đứng trước động từ chính '克服'.",
+            "explanation": "Trong câu này, '很多' bổ nghĩa cho '困难' làm chủ ngữ ('nhiều khó khăn'). Cấu trúc '是……的' dùng để khẳng định và nhấn mạnh khả năng, kẹp giữa là động từ năng nguyện '可以' và động từ '克服' ('có thể khắc phục')."
         },
         "breakdown": [
-            { "role": "Chủ ngữ định-trung", "text": "很多困难", "type": "subject", "desc": "Các thách thức đa dạng trong thực tế" },
-            { "role": "Cấu trúc nhấn mạnh", "text": "是...的", "type": "grammar", "desc": "Khẳng định thuộc tính có thể giải quyết" },
-            { "role": "Năng lực giải quyết", "text": "可以克服", "type": "verb", "desc": "Có đủ khả năng vượt qua trở ngại" }
+            { "role": "Chủ ngữ", "text": "很多困难", "type": "subject", "desc": "Nhiều khó khăn (很多 bổ nghĩa cho 困难)" },
+            { "role": "Khung khẳng định", "text": "是……的", "type": "grammar", "desc": "Khung khẳng định, nhấn mạnh trong câu này" },
+            { "role": "Vị ngữ", "text": "可以克服", "type": "verb", "desc": "Có thể khắc phục (động từ năng nguyện 可以 + động từ 克服)" }
         ],
         "practice": {
             "type": "sentence_building",

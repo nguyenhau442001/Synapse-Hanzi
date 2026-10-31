@@ -1,0 +1,41 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background document grid representing knowledge/test -->
+  <g opacity="0.15" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="4 4" fill="none">
+    <line x1="60" y1="50" x2="180" y2="50"/>
+    <line x1="60" y1="80" x2="180" y2="80"/>
+    <line x1="60" y1="110" x2="140" y2="110"/>
+  </g>
+
+  <!-- Central Physical Object: A sturdy document/link chain with ONE distinct weak/cracked link representing "弱项" (the weak point) -->
+  <g transform="translate(0, 5)">
+    <!-- Top solid chain link -->
+    <rect x="92" y="45" width="56" height="36" rx="18" fill="none" stroke="#60A5FA" stroke-width="6"/>
+    
+    <!-- Middle-Top solid chain link -->
+    <rect x="92" y="73" width="56" height="36" rx="18" fill="none" stroke="#60A5FA" stroke-width="6"/>
+    
+    <!-- THE WEAK LINK (Cracked, accented in warning orange/gold) -->
+    <g transform="translate(120, 119)">
+      <!-- Link body -->
+      <rect x="-28" y="-18" width="56" height="36" rx="18" fill="#1A1D24" stroke="#F59E0B" stroke-width="6"/>
+      <!-- Crack details breaking the link -->
+      <path d="M-6 -18 L-2 -6 L-10 0 L2 10 L-2 18" fill="none" stroke="#EF4444" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="-6" cy="-2" r="2" fill="#EF4444"/>
+      <circle cx="0" cy="8" r="2" fill="#EF4444"/>
+    </g>
+
+    <!-- Middle-Bottom solid chain link -->
+    <rect x="92" y="131" width="56" height="36" rx="18" fill="none" stroke="#60A5FA" stroke-width="6"/>
+    
+    <!-- Bottom solid chain link -->
+    <rect x="92" y="159" width="56" height="36" rx="18" fill="none" stroke="#60A5FA" stroke-width="6"/>
+
+    <!-- Focus / Target indicator: Precision spotlight/brackets highlighting the exact weak link -->
+    <path d="M 68 105 L 68 119 L 82 119" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 172 105 L 172 119 L 158 119" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 68 133 L 68 119 L 82 119" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 172 133 L 172 119 L 158 119" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

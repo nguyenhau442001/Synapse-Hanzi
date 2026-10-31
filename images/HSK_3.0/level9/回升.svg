@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background graph grid/lines for context -->
+  <path d="M 40 180 L 200 180" stroke="#2B313D" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 40 60 L 40 200" stroke="#2B313D" stroke-width="2" stroke-linecap="round"/>
+  <line x1="40" y1="130" x2="200" y2="130" stroke="#252A35" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="40" y1="80" x2="200" y2="80" stroke="#252A35" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!-- Area under the curve -->
+  <path d="M 40 160 C 80 160, 110 170, 140 130 C 160 100, 180 80, 200 60 L 200 180 L 40 180 Z" fill="url(#recoveryGradient)" opacity="0.15"/>
+
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="recoveryGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFB020"/>
+      <stop offset="100%" stop-color="#FFB020" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#FFB020"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Trend Curve (Dipping down then sharply rebounding upward) -->
+  <path d="M 40 100 C 60 100, 80 120, 100 160 C 120 180, 150 130, 200 55" fill="none" stroke="url(#lineGradient)" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Physical Object representing "回升" (Huíshēng - Rebound/Recovery): A stylized industrial manufacturing gear lifting upward with energetic momentum -->
+  <g transform="translate(160, 55)">
+    <!-- Glow effect -->
+    <circle cx="0" cy="0" r="22" fill="#FFB020" opacity="0.2"/>
+    <!-- Outer ring -->
+    <circle cx="0" cy="0" r="16" fill="#1A1D24" stroke="#FFB020" stroke-width="3"/>
+    <!-- Center core -->
+    <circle cx="0" cy="0" r="6" fill="#FFB020"/>
+  </g>
+
+  <!-- Secondary data points / node markers -->
+  <circle cx="40" cy="100" r="4" fill="#38BDF8"/>
+  <circle cx="100" cy="160" r="4" fill="#38BDF8"/>
+  
+  <!-- Rebound peak arrow indicator -->
+  <g transform="translate(200, 55)">
+    <circle cx="0" cy="0" r="8" fill="#FFB020"/>
+    <!-- Upward arrow symbol inside main focal point -->
+    <path d="M -3 2 L 0 -2 L 3 2" fill="none" stroke="#1A1D24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+</svg>

@@ -1,0 +1,54 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle floor shadow -->
+  <ellipse cx="120" cy="180" rx="60" ry="10" fill="#111318"/>
+
+  <!-- Character / Figure (representing "tự mình" / independent person making decisions) -->
+  <g transform="translate(0, 0)">
+    <!-- Body / Suit (Modern flat style, slate blue & teal accent) -->
+    <path d="M 120 125 C 100 125 85 145 80 170 L 160 170 C 155 145 140 125 120 125 Z" fill="#2E384D"/>
+    
+    <!-- Collar / Shirt -->
+    <path d="M 112 125 L 120 140 L 128 125 Z" fill="#8E9EAB"/>
+    
+    <!-- Neck -->
+    <rect x="114" y="112" width="12" height="15" rx="4" fill="#E0AC69"/>
+
+    <!-- Head -->
+    <circle cx="120" cy="92" r="22" fill="#E0AC69"/>
+
+    <!-- Hair (Stylish modern cut) -->
+    <path d="M 98 92 C 98 75 110 70 120 70 C 132 70 142 78 142 92 C 142 95 140 93 140 88 C 140 78 132 73 120 73 C 108 73 100 78 100 88 C 100 93 98 95 98 92 Z" fill="#3D291D"/>
+
+    <!-- Confident expression / Head tilt indicator -->
+    <!-- Eyes closed in thoughtful/autonomous decision making -->
+    <path d="M 112 92 Q 116 95 120 92" stroke="#3D291D" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M 124 92 Q 128 95 132 92" stroke="#3D291D" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <!-- Gentle confident smile -->
+    <path d="M 117 103 Q 120 106 123 103" stroke="#3D291D" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Arms bent autonomously - hands pointing inward to self ("tự mình quyết định") -->
+    <!-- Left Arm -->
+    <path d="M 85 135 Q 70 145 80 160" stroke="#2E384D" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <circle cx="80" cy="162" r="6" fill="#E0AC69"/>
+
+    <!-- Right Arm (Hand touching chest / self-direction) -->
+    <path d="M 155 135 Q 170 145 135 155" stroke="#2E384D" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <circle cx="132" cy="155" r="6" fill="#E0AC69"/>
+  </g>
+
+  <!-- Autonomous Direction Indicator / Floating Decision Symbol (Gold/Orange accent) -->
+  <g transform="translate(120, 48)">
+    <!-- Glowing background aura -->
+    <circle cx="0" cy="0" r="18" fill="#FFB703" opacity="0.15"/>
+    
+    <!-- Sleek directional routing arrows forming a self-contained autonomous loop/choice -->
+    <path d="M -8 -4 L 0 -12 L 8 -4" stroke="#FFB703" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M 0 -12 L 0 6" stroke="#FFB703" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    
+    <!-- Curved path indicating personal itinerary choice ("tự xử lý / tự mình") -->
+    <path d="M -10 6 C -10 12 10 12 10 6" stroke="#FFB703" stroke-width="3" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

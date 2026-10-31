@@ -1,0 +1,19 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 120)">
+    <!-- Upright Figure representing Zhengqi -->
+    <path d="M-30 80 L30 80 L25 40 L-25 40 Z" fill="#34495E"/>
+    <path d="M-25 40 L25 40 L20 0 L-20 0 Z" fill="#5D6D7E"/>
+    <circle cx="0" cy="-25" r="25" fill="#F39C12"/>
+    
+    <!-- Straight posture line/axis -->
+    <line x1="0" y1="-50" x2="0" y2="80" stroke="#F39C12" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Upward pointing arrow/beam representing integrity -->
+    <path d="M0 -60 L-15 -35 L15 -35 Z" fill="#F39C12"/>
+    
+    <!-- Clean, upright posture indication -->
+    <path d="M-10 -10 L10 -10" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+    <path d="M-5 5 L5 5" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Arm and Hand -->
+  <path d="M80 200 C 80 160, 90 140, 110 130 C 130 120, 150 120, 160 130" stroke="#FFD700" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <circle cx="165" cy="130" r="10" fill="#FFD700"/>
+  
+  <!-- Flag Pole -->
+  <path d="M165 130 L 190 80" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Flag -->
+  <path d="M190 80 L 215 65 L 200 100 L 190 80 Z" fill="#FFD700"/>
+  
+  <!-- Motion Lines -->
+  <path d="M170 70 C 180 60, 190 60, 200 70" stroke="#555B66" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M180 55 C 190 45, 200 45, 210 55" stroke="#555B66" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <!-- Sleeve -->
+  <path d="M70 240 L 90 190 L 110 200 L 90 240 Z" fill="#3D4451"/>
+</svg>

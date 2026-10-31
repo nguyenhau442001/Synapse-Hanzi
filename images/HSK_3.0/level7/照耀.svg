@@ -1,0 +1,76 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <defs>
+    <!-- Radiant glow gradient for the sun -->
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD166" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#F48C06" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#F48C06" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Ray gradient -->
+    <linearGradient id="rayGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD166" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFD166" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Ground gradient -->
+    <linearGradient id="groundGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#06D6A0" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#06D6A0" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background decorative ambient light -->
+  <circle cx="120" cy="90" r="70" fill="url(#sunGlow)"/>
+
+  <!-- Light Rays illuminating downward (照耀 - shining/illuminating) -->
+  <g>
+    <!-- Ray 1 (Left) -->
+    <polygon points="120,90 60,200 80,200" fill="url(#rayGradient)" />
+    <!-- Ray 2 (Center-Left) -->
+    <polygon points="120,90 90,200 110,200" fill="url(#rayGradient)" />
+    <!-- Ray 3 (Center-Right) -->
+    <polygon points="120,90 130,200 150,200" fill="url(#rayGradient)" />
+    <!-- Ray 4 (Right) -->
+    <polygon points="120,90 160,200 180,200" fill="url(#rayGradient)" />
+  </g>
+
+  <!-- Central Radiant Sun (The light source) -->
+  <circle cx="120" cy="90" r="26" fill="#F48C06"/>
+  <circle cx="120" cy="90" r="20" fill="#FFD166"/>
+
+  <!-- Landscape / Ground representing "大地" -->
+  <path d="M 30,190 Q 120,165 210,190 L 220,210 Q 120,225 20,210 Z" fill="#2D3748" opacity="0.8"/>
+  <path d="M 20,200 Q 120,175 220,200 L 230,240 Q 120,240 10,240 Z" fill="#111318"/>
+
+  <!-- Flourishing Nature (万物展现生机 - vital plants thriving under the light) -->
+  <g>
+    <!-- Left Plant (Sprout) -->
+    <path d="M 75,200 Q 75,185 65,175" stroke="#06D6A0" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 75,200 Q 75,185 85,178" stroke="#06D6A0" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 65,175 C 60,170 55,175 60,182 C 65,185 70,182 65,175 Z" fill="#06D6A0"/>
+    <path d="M 85,178 C 92,175 95,182 90,188 C 85,190 82,185 85,178 Z" fill="#06D6A0"/>
+
+    <!-- Center Plant (Taller Flower/Stem) -->
+    <path d="M 120,205 Q 120,175 120,150" stroke="#06D6A0" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <!-- Leaves -->
+    <path d="M 120,190 C 105,185 105,195 120,200 Z" fill="#06D6A0"/>
+    <path d="M 120,180 C 135,175 135,185 120,190 Z" fill="#06D6A0"/>
+    <!-- Blossoming flower head illuminated by the sun -->
+    <circle cx="120" cy="145" r="7" fill="#FFD166"/>
+    <circle cx="120" cy="133" r="4" fill="#06D6A0"/>
+    <circle cx="110" cy="143" r="4" fill="#06D6A0"/>
+    <circle cx="130" cy="143" r="4" fill="#06D6A0"/>
+    <circle cx="120" cy="155" r="4" fill="#06D6A0"/>
+
+    <!-- Right Plant (Sprout) -->
+    <path d="M 165,202 Q 165,188 155,180" stroke="#06D6A0" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 155,180 C 150,175 145,180 150,187 C 155,190 160,187 155,180 Z" fill="#06D6A0"/>
+  </g>
+
+  <!-- Foreground Atmospheric Highlight (Light diffusion) -->
+  <ellipse cx="120" cy="195" rx="80" ry="12" fill="#FFD166" opacity="0.15"/>
+</svg>

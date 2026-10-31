@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background cliff edge silhouette to reflect context -->
+  <path d="M20 200 L120 180 L220 205 L220 220 L20 220 Z" fill="#252A34"/>
+  <path d="M120 180 L180 190 L220 205 L220 220 L120 220 Z" fill="#1E232D"/>
+
+  <!-- Safety Railing (栏杆 - lángān) -->
+  <!-- Left post -->
+  <rect x="50" y="110" width="12" height="85" rx="3" fill="#E2E8F0"/>
+  <rect x="52" y="115" width="8" height="75" fill="#CBD5E1"/>
+
+  <!-- Right post -->
+  <rect x="178" y="100" width="12" height="95" rx="3" fill="#E2E8F0"/>
+  <rect x="180" y="105" width="8" height="85" fill="#CBD5E1"/>
+
+  <!-- Center post (taller for perspective) -->
+  <rect x="114" y="105" width="12" height="90" rx="3" fill="#E2E8F0"/>
+  <rect x="116" y="110" width="8" height="80" fill="#CBD5E1"/>
+
+  <!-- Top rail (slanted to match terrain) -->
+  <path d="M48 116 L120 110 L182 104" stroke="#F59E0B" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <path d="M48 113 L120 107 L182 101" stroke="#FBBF24" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- Middle rail -->
+  <path d="M48 145 L120 140 L182 134" stroke="#D97706" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M48 143 L120 138 L182 132" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Bottom rail -->
+  <path d="M48 175 L120 170 L182 164" stroke="#B45309" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- Vertical balusters (spacers) -->
+  <rect x="75" y="126" width="6" height="46" rx="1.5" fill="#94A3B8"/>
+  <rect x="98" y="124" width="6" height="46" rx="1.5" fill="#94A3B8"/>
+  <rect x="140" y="120" width="6" height="46" rx="1.5" fill="#94A3B8"/>
+  <rect x="160" y="118" width="6" height="46" rx="1.5" fill="#94A3B8"/>
+
+  <!-- Ambient glow highlighting the safety structure -->
+  <path d="M48 116 L120 110 L182 104" stroke="#FBBF24" stroke-width="16" stroke-linecap="round" fill="none" opacity="0.15"/>
+</svg>

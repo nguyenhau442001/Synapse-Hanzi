@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for warmth and focus -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.6"/>
+
+  <!-- Motion lines indicating the action of bringing home / welcoming into the family -->
+  <g opacity="0.4" stroke="#F39C12" stroke-width="2" stroke-linecap="round" fill="none">
+    <path d="M 60 90 C 75 75, 90 70, 110 75" stroke-dasharray="4 4"/>
+    <path d="M 50 110 C 65 95, 85 90, 100 95" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Adult Figure (Protective, welcoming posture) -->
+  <g id="adult-figure">
+    <!-- Body/Torso -->
+    <path d="M 105 130 C 105 115, 115 105, 130 105 L 155 105 C 170 105, 180 115, 180 130 L 190 200 L 95 200 Z" fill="#3498DB"/>
+    <!-- Head -->
+    <circle cx="140" cy="80" r="16" fill="#FAD7A0"/>
+    <!-- Hair -->
+    <path d="M 125 78 C 125 68, 135 62, 148 64 C 155 65, 158 72, 155 80 Z" fill="#D35400"/>
+    <!-- Welcoming / Protective Arms embracing the child -->
+    <path d="M 130 115 C 130 115, 110 120, 100 135 C 90 150, 100 165, 115 160 C 125 157, 135 140, 135 140" fill="none" stroke="#2980B9" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Child Figure (Being lifted / embraced / sheltered) -->
+  <g id="child-figure">
+    <!-- Body -->
+    <path d="M 75 145 C 75 135, 85 130, 95 130 L 115 130 C 125 130, 135 135, 135 145 L 140 195 L 70 195 Z" fill="#E67E22"/>
+    <!-- Head -->
+    <circle cx="100" cy="110" r="13" fill="#FAD7A0"/>
+    <!-- Hair -->
+    <path d="M 88 108 C 88 100, 98 95, 108 98 C 112 100, 113 106, 110 112 Z" fill="#5D4037"/>
+    <!-- Child's arms reaching up happily / trustingly -->
+    <path d="M 90 135 C 80 125, 75 115, 75 115" fill="none" stroke="#D35400" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 115 135 C 125 125, 130 115, 130 115" fill="none" stroke="#D35400" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Warm accent glow between them symbolizing care, legal bond, and unconditional love -->
+  <circle cx="120" cy="130" r="6" fill="#F1C40F" opacity="0.9"/>
+</svg>

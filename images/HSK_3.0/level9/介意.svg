@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Person A (The one who bumped) -->
+  <g transform="translate(60, 100)">
+    <circle cx="20" cy="20" r="20" fill="#FFB347"/>
+    <path d="M5 45 C5 35, 35 35, 35 45 L35 80 C35 90, 5 90, 5 80 Z" fill="#FFB347"/>
+    <path d="M10 55 L20 65 L30 55" stroke="#1A1D24" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Person B (The one being asked not to mind/take to heart) -->
+  <g transform="translate(140, 100)">
+    <circle cx="20" cy="20" r="20" fill="#E0E0E0"/>
+    <path d="M5 45 C5 35, 35 35, 35 45 L35 80 C35 90, 5 90, 5 80 Z" fill="#E0E0E0"/>
+    <!-- Gesture of waving off/dismissing the concern -->
+    <path d="M40 50 L60 40" stroke="#E0E0E0" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="65" cy="37" r="5" fill="#E0E0E0"/>
+  </g>
+
+  <!-- Visualizing the "letting go" of the bump/concern -->
+  <g transform="translate(120, 140)">
+    <path d="M-20 0 Q 0 -20 20 0" stroke="#FFB347" stroke-width="3" stroke-dasharray="6 6" fill="none"/>
+    <path d="M-10 10 Q 0 -10 10 10" stroke="#FFB347" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
+  </g>
+</svg>

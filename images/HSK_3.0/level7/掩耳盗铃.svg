@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Bell -->
+  <path d="M120 70 C100 70 85 85 85 105 L85 140 C85 155 95 165 110 165 L130 165 C145 165 155 155 155 140 L155 105 C155 85 140 70 120 70 Z" fill="#FFB84D"/>
+  <path d="M110 165 L130 165 L135 175 L105 175 Z" fill="#E69F2E"/>
+  <circle cx="120" cy="155" r="8" fill="#D1891E"/>
+  
+  <!-- Hands covering ears -->
+  <path d="M70 110 C60 110 55 120 55 130 C55 140 60 150 70 150 L75 150 L75 110 Z" fill="#FFD1A9"/>
+  <path d="M170 110 C180 110 185 120 185 130 C185 140 180 150 170 150 L165 150 L165 110 Z" fill="#FFD1A9"/>
+  
+  <!-- Arms connecting to body -->
+  <path d="M75 130 L90 130" stroke="#FFD1A9" stroke-width="12" stroke-linecap="round"/>
+  <path d="M165 130 L150 130" stroke="#FFD1A9" stroke-width="12" stroke-linecap="round"/>
+  
+  <!-- Person's head -->
+  <circle cx="120" cy="120" r="30" fill="#FFD1A9"/>
+  
+  <!-- Eyes closed -->
+  <path d="M105 115 L115 120 L105 125" stroke="#1A1D24" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M135 115 L125 120 L135 125" stroke="#1A1D24" stroke-width="3" stroke-linecap="round" fill="none"/>
+</svg>

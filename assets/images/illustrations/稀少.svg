@@ -1,0 +1,54 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- High-altitude mountain landscape representing the Qinghai-Tibet plateau context -->
+  <!-- Distant mountain peaks -->
+  <path d="M20 170 L60 110 L100 155 L150 95 L200 160 L220 140 L220 190 L20 190 Z" fill="#222733"/>
+  <path d="M40 145 L60 110 L80 135 Z" fill="#2E3646" opacity="0.6"/>
+  <path d="M120 130 L150 95 L180 135 Z" fill="#2E3646" opacity="0.6"/>
+
+  <!-- Ground plane -->
+  <path d="M0 190 Q120 185 240 190 L240 240 L0 240 Z" fill="#15181F"/>
+
+  <!-- Vast empty space/horizon line glows subtly -->
+  <line x1="20" y1="190" x2="220" y2="190" stroke="#3A4454" stroke-width="1.5" stroke-dasharray="3 6"/>
+
+  <!-- Central concept: A single, tiny, isolated human figure symbolizing "人烟稀少" (sparse population/few people) -->
+  <g transform="translate(112, 160)">
+    <!-- Tiny figure shadow -->
+    <ellipse cx="8" cy="30" rx="6" ry="2" fill="#0D0F13"/>
+    
+    <!-- Backpack / traveler silhouette -->
+    <rect x="5" y="15" fx="" fy="" width="6" height="8" rx="1" fill="#FF8C42"/>
+    
+    <!-- Body / coat -->
+    <path d="M4 14 L12 14 L13 26 L3 26 Z" fill="#4E6778"/>
+    
+    <!-- Head -->
+    <circle cx="8" cy="9" r="3" fill="#E2E8F0"/>
+    
+    <!-- Legs -->
+    <line x1="6" y1="26" x2="5" y2="30" stroke="#4E6778" stroke-width="2" stroke-linecap="round"/>
+    <line x1="10" y1="26" x2="11" y2="30" stroke="#4E6778" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Vastness indicators: Massive negative space emphasizing isolation -->
+  <!-- Distant solitary tent or marker, tiny -->
+  <polygon points="180,178 185,170 190,178" fill="#FF8C42" opacity="0.5"/>
+  <ellipse cx="185" cy="179" rx="5" ry="1.5" fill="#0D0F13" opacity="0.4"/>
+
+  <!-- Starry/Cold atmospheric upper sky -->
+  <circle cx="50" cy="50" r="1" fill="#E2E8F0" opacity="0.4"/>
+  <circle cx="85" cy="35" r="1.5" fill="#E2E8F0" opacity="0.6"/>
+  <circle cx="160" cy="45" r="1" fill="#E2E8F0" opacity="0.3"/>
+  <circle cx="195" cy="65" r="1.2" fill="#E2E8F0" opacity="0.5"/>
+  <circle cx="70" cy="75" r="0.8" fill="#E2E8F0" opacity="0.4"/>
+
+  <!-- Subtle glowing cold moon -->
+  <circle cx="190" cy="45" r="12" fill="#2E3646" opacity="0.5"/>
+  <circle cx="187" cy="42" r="10" fill="#E2E8F0" opacity="0.15"/>
+
+  <!-- Focus frame / subtle accent -->
+  <rect x="16" y="16" width="208" height="208" rx="18" fill="none" stroke="#FF8C42" stroke-width="1.5" opacity="0.25"/>
+</svg>

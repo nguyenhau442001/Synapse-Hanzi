@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Rock base -->
+  <path d="M60 180 C 60 140, 180 140, 180 180 L 180 200 L 60 200 Z" fill="#4A5568"/>
+  <path d="M70 180 C 80 150, 160 150, 170 180" stroke="#718096" stroke-width="2" fill="none"/>
+  
+  <!-- Indentation in rock -->
+  <ellipse cx="120" cy="175" rx="25" ry="10" fill="#2D3748"/>
+  
+  <!-- Water drop -->
+  <path d="M120 80 C 110 80, 105 95, 120 115 C 135 95, 130 80, 120 80" fill="#63B3ED"/>
+  
+  <!-- Ripple effect in the indentation -->
+  <ellipse cx="120" cy="178" rx="15" ry="4" stroke="#63B3ED" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <ellipse cx="120" cy="178" rx="8" ry="2" stroke="#63B3ED" stroke-width="1" fill="none" opacity="0.4"/>
+  
+  <!-- Falling motion lines -->
+  <line x1="120" y1="120" x2="120" y2="140" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+  <line x1="120" y1="150" x2="120" y2="165" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+</svg>

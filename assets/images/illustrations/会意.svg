@@ -1,0 +1,55 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Ambient Glow representing silent mutual understanding / connection -->
+  <circle cx="120" cy="120" r="75" fill="#2D323E" opacity="0.4"/>
+  <path d="M 85 95 Q 120 70 155 95" stroke="#F59E0B" stroke-width="2" stroke-dasharray="3 3" fill="none" opacity="0.4"/>
+
+  <!-- Left Character (Initiating the subtle look/signal) -->
+  <g>
+    <!-- Body/Torso -->
+    <path d="M 60 180 C 60 155 75 140 95 140 L 95 180 Z" fill="#3B82F6" opacity="0.8"/>
+    <!-- Head -->
+    <circle cx="77" cy="118" r="14" fill="#FDE047"/>
+    <!-- Hair -->
+    <path d="M 63 115 C 65 105 85 105 91 115 Z" fill="#1E293B"/>
+    <!-- Subtle warning/communicating eye line (facing right) -->
+    <circle cx="82" cy="117" r="1.5" fill="#1E293B"/>
+    <!-- Dynamic action line pointing towards right character -->
+    <path d="M 94 112 L 125 112" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 2"/>
+    <polygon points="128,112 123,110 123,114" fill="#F59E0B"/>
+  </g>
+
+  <!-- Right Character (Receiving and instantly understanding - "心领神会") -->
+  <g>
+    <!-- Body/Torso -->
+    <path d="M 145 180 C 145 155 160 140 180 140 L 180 180 Z" fill="#10B981" opacity="0.8"/>
+    <!-- Head (slightly nodded down/forward) -->
+    <circle cx="163" cy="122" r="14" fill="#FDE047"/>
+    <!-- Hair -->
+    <path d="M 149 119 C 151 109 171 109 177 119 Z" fill="#1E293B"/>
+    <!-- Eye showing knowing gaze -->
+    <circle cx="160" cy="121" r="1.5" fill="#1E293B"/>
+
+    <!-- Dynamic Action: Subtle nod and knowing smile -->
+    <!-- Motion lines for nodding -->
+    <path d="M 163 100 C 167 100 170 104 170 108" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M 166 96 C 172 96 175 101 175 107" stroke="#F59E0B" stroke-width="1.5" opacity="0.6" stroke-linecap="round" fill="none"/>
+
+    <!-- Hand raised slightly in a gesture of acknowledgment/understanding -->
+    <path d="M 155 145 C 150 145 145 150 148 155" stroke="#FDE047" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Spark of mutual comprehension (The "Aha!" / 会意 moment above them) -->
+  <g transform="translate(120, 75)">
+    <circle cx="0" cy="0" r="12" fill="#1E293B" stroke="#F59E0B" stroke-width="2"/>
+    <!-- Lightbulb/Insight spark vector -->
+    <path d="M -3 4 L 3 4 M -2 7 L 2 7 M -4 0 C -4 -4 4 -4 4 0 C 4 3 2 4 2 6 L -2 6 C -2 4 -4 3 -4 0 Z" fill="#F59E0B"/>
+    <!-- Radiant gleams -->
+    <line x1="0" y1="-9" x2="0" y2="-13" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-9" y1="-3" x2="-12" y2="-5" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <line x1="9" y1="-3" x2="12" y2="-5" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+</svg>

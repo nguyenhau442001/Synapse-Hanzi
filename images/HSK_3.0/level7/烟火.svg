@@ -1,0 +1,54 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Atmospheric Background Glow -->
+  <circle cx="120" cy="140" r="70" fill="#FF8C42" opacity="0.08" filter="blur(20px)"/>
+
+  <!-- Street Food Stall / Hearth Base (Bếp núc & Khói lửa nhân gian) -->
+  <g>
+    <!-- Counter / Cart Body -->
+    <path d="M70 170 H170 V195 C170 200.5 165.5 205 160 205 H80 C74.5 205 70 200.5 70 195 Z" fill="#2D333F"/>
+    
+    <!-- Warm Stove Opening (Fire Glow) -->
+    <path d="M100 175 H140 V195 H100 Z" fill="#15181E"/>
+    <path d="M105 180 H135 V195 H105 Z" fill="#FF5E00"/>
+    <path d="M112 182 Q120 174 128 182 Z" fill="#FFC542"/>
+    <path d="M116 186 Q120 180 124 186 Z" fill="#FFF275"/>
+
+    <!-- Steaming Cooking Pot / Wok -->
+    <path d="M85 145 H155 L145 170 H95 Z" fill="#4B5563"/>
+    <ellipse cx="120" cy="145" rx="35" ry="8" fill="#6B7280"/>
+    <ellipse cx="120" cy="145" rx="31" ry="6" fill="#1F2937"/>
+    
+    <!-- Handles -->
+    <path d="M75 150 C70 150 68 158 75 160" stroke="#6B7280" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M165 150 C170 150 172 158 165 160" stroke="#6B7280" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Rising Steam & Vitality (Khói lửa) -->
+  <g fill="none" stroke-linecap="round">
+    <!-- Left Steam Wisps -->
+    <path d="M105 130 C95 115 115 100 105 85 C95 70 110 55 102 42" stroke="#FF8C42" stroke-width="4" opacity="0.4"/>
+    <path d="M105 130 C95 115 115 100 105 85 C95 70 110 55 102 42" stroke="#FFFFFF" stroke-width="1.5" opacity="0.8"/>
+
+    <!-- Center Steam Wisps (Primary Warmth) -->
+    <path d="M120 137 C130 120 110 105 125 90 C140 75 115 60 122 40" stroke="#FF5E00" stroke-width="5" opacity="0.6"/>
+    <path d="M120 137 C130 120 110 105 125 90 C140 75 115 60 122 40" stroke="#FFC542" stroke-width="2" opacity="0.9"/>
+
+    <!-- Right Steam Wisps -->
+    <path d="M135 130 C145 118 130 102 142 88 C154 74 138 60 145 45" stroke="#FF8C42" stroke-width="4" opacity="0.4"/>
+    <path d="M135 130 C145 118 130 102 142 88 C154 74 138 60 145 45" stroke="#FFFFFF" stroke-width="1.5" opacity="0.8"/>
+  </g>
+
+  <!-- Ambient Sparks / Glowing Embers (人间烟火气的溫馨感) -->
+  <g fill="#FFC542">
+    <circle cx="92" cy="78" r="2" opacity="0.8"/>
+    <circle cx="148" cy="95" r="2.5" opacity="0.9"/>
+    <circle cx="112" cy="62" r="1.5" opacity="0.7"/>
+    <circle cx="132" cy="55" r="2" opacity="0.8"/>
+    <circle cx="100" cy="48" r="1" opacity="0.5"/>
+    <circle cx="125" cy="35" r="2.5" opacity="0.9"/>
+  </g>
+
+</svg>

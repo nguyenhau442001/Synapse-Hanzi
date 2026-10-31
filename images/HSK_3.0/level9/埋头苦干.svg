@@ -1,0 +1,70 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Ambient lighting/glow for intense focus -->
+  <circle cx="120" cy="115" r="70" fill="#FFB703" opacity="0.05"/>
+
+  <!-- Desk Surface -->
+  <path d="M40 175 L200 175 L215 195 L25 195 Z" fill="#242B35"/>
+  <rect x="35" y="172" width="170" height="4" rx="2" fill="#323B48"/>
+
+  <!-- Character: Bent down deeply, working hard (埋头苦干) -->
+  <g id="hard-working-researcher">
+    <!-- Body / Back (slumped forward intensely over work) -->
+    <path d="M 95 155 C 85 145 80 125 95 110 C 105 100 115 105 120 115 C 125 125 135 140 145 155 Z" fill="#2E6BFF"/>
+    
+    <!-- Lab Coat shoulders & back -->
+    <path d="M 92 156 C 83 145 78 126 93 111 C 98 106 106 109 111 115 C 117 122 128 140 142 156 Z" fill="#EAEFF8"/>
+    <!-- Lab coat fold line -->
+    <path d="M 111 115 C 117 130 125 142 135 156" stroke="#D1DBED" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <!-- Head bowed down completely over the desk/blueprint -->
+    <circle cx="95" cy="103" r="14" fill="#FFD166"/>
+    <!-- Hair -->
+    <path d="M 83 103 C 83 93 92 90 102 93 C 107 95 108 99 107 104 Z" fill="#2C3540"/>
+
+    <!-- Arms reaching down into the work -->
+    <!-- Left arm -->
+    <path d="M 110 118 C 100 130 95 140 105 150 C 110 155 115 150 112 145 C 110 140 113 133 120 125 Z" fill="#EAEFF8"/>
+    <!-- Left Hand / Tool holding -->
+    <circle cx="112" cy="152" r="4" fill="#FFD166"/>
+
+    <!-- Right arm bent intently -->
+    <path d="M 125 122 C 135 130 140 142 132 153 C 128 158 124 153 127 148 C 130 143 128 135 122 128 Z" fill="#EAEFF8"/>
+    <!-- Right Hand -->
+    <circle cx="132" cy="155" r="4" fill="#FFD166"/>
+  </g>
+
+  <!-- Work Area / Complex Blueprint / Precision Instrument being crafted -->
+  <g id="work-project">
+    <!-- Desk blueprint paper -->
+    <polygon points="105,148 175,142 185,172 115,178" fill="#13385E"/>
+    <!-- Blueprint grid lines -->
+    <line x1="120" y1="155" x2="170" y2="151" stroke="#235284" stroke-width="1.5" stroke-dasharray="3,2"/>
+    <line x1="125" y1="163" x2="175" y2="159" stroke="#235284" stroke-width="1.5"/>
+    <line x1="140" y1="149" x2="135" y2="173" stroke="#235284" stroke-width="1.5" stroke-dasharray="2,2"/>
+
+    <!-- Precision instrument / Device components being assembled -->
+    <!-- Metal chassis -->
+    <rect x="135" y="145" width="28" height="18" rx="3" fill="#8D99AE" stroke="#2B2D42" stroke-width="1"/>
+    <!-- Glowing core / precision element -->
+    <circle cx="149" cy="154" r="5" fill="#FFB703"/>
+    <circle cx="149" cy="154" r="2" fill="#FFFFFF"/>
+
+    <!-- Tools: Precision Caliper / Pen -->
+    <line x1="165" y1="135" x2="155" y2="162" stroke="#FF5964" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="166" cy="133" r="2.5" stroke="#FF5964" stroke-width="1.5" fill="#1A1D24"/>
+
+    <!-- Technical Light / Desk Lamp illuminating the work -->
+    <path d="M 185 110 L 195 170" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 175 95 L 200 115 L 185 118 Z" fill="#FFB703"/>
+    <!-- Light cone down to the desk -->
+    <polygon points="175,115 155,175 195,175" fill="#FFB703" opacity="0.12"/>
+  </g>
+
+  <!-- Sparks of intense focus / productivity (subtle, clean) -->
+  <circle cx="145" cy="140" r="1.5" fill="#FFB703"/>
+  <circle cx="125" cy="138" r="1" fill="#FFB703"/>
+  <circle cx="160" cy="148" r="1.5" fill="#FFB703"/>
+</svg>

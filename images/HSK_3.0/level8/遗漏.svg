@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Document stack representing the audit trail -->
+  <g transform="translate(60, 80)">
+    <rect x="0" y="0" width="80" height="100" rx="4" fill="#2D343E" stroke="#4A5568" stroke-width="2"/>
+    <rect x="5" y="10" width="70" height="6" rx="2" fill="#4A5568"/>
+    <rect x="5" y="25" width="70" height="6" rx="2" fill="#4A5568"/>
+    <rect x="5" y="40" width="70" height="6" rx="2" fill="#4A5568"/>
+    <rect x="5" y="55" width="70" height="6" rx="2" fill="#4A5568"/>
+    <rect x="5" y="70" width="70" height="6" rx="2" fill="#4A5568"/>
+  </g>
+
+  <!-- The "Omission" - a single document sliding out/missing from the stack -->
+  <rect x="150" y="100" width="30" height="40" rx="4" fill="#FFB86C" stroke="#1A1D24" stroke-width="2"/>
+  <path d="M155 110 L175 110 M155 120 L175 120" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Motion lines indicating the act of slipping through/omission -->
+  <path d="M145 120 L130 120" stroke="#FFB86C" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4"/>
+  
+  <!-- Auditor's hand reaching but missing the document -->
+  <g transform="translate(100, 130)">
+    <path d="M0 0 C10 -20 30 -20 40 0" fill="none" stroke="#8BE9FD" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="45" cy="5" r="8" fill="#8BE9FD"/>
+  </g>
+</svg>

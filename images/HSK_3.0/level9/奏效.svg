@@ -1,0 +1,47 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Conceptual Illustration: Medical Treatment Taking Effect ("奏效") -->
+  <!-- Central Physical Object: A medical IV drip bottle with glowing active medicine flowing downward, successfully healing a stylized human silhouette / cellular regeneration symbol -->
+  
+  <g transform="translate(0, 0)">
+    <!-- Background subtle glow representing efficacy/success -->
+    <circle cx="120" cy="120" r="70" fill="#00D26A" opacity="0.08"/>
+    
+    <!-- Medical IV Stand Top Hook -->
+    <path d="M120 40 L120 56" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+    <path d="M100 40 C100 35 140 35 140 40" stroke="#4A5568" stroke-width="4" fill="none" stroke-linecap="round"/>
+    
+    <!-- IV Bag / Bottle -->
+    <rect x="96" y="56" width="48" height="72" rx="10" fill="#2D3748" stroke="#4A5568" stroke-width="3"/>
+    
+    <!-- Liquid inside IV bag (glowing cyan/emerald for healing effect) -->
+    <path d="M99 76 L141 76 L141 118 C141 121 138 124 135 124 L105 124 C102 124 99 121 99 118 Z" fill="#00D26A" opacity="0.85"/>
+    
+    <!-- Level indicator lines inside bottle -->
+    <line x1="108" y1="90" x2="132" y2="90" stroke="#1A1D24" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+    <line x1="108" y1="106" x2="132" y2="106" stroke="#1A1D24" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Tubing dropping down -->
+    <path d="M120 128 L120 160" stroke="#00D26A" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4">
+      <animate attributeName="stroke-dashoffset" values="8;0" dur="1s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Target / Result representation: A thriving glowing medical cross / cellular recovery icon -->
+    <g transform="translate(120, 185)">
+      <!-- Outer ripple / success pulse -->
+      <circle cx="0" cy="0" r="22" fill="none" stroke="#00D26A" stroke-width="2" opacity="0.4"/>
+      
+      <!-- Base circular badge -->
+      <circle cx="0" cy="0" r="16" fill="#1E3A2F" stroke="#00D26A" stroke-width="2"/>
+      
+      <!-- Medical cross (representing positive health outcome) -->
+      <path d="M-6 -2 L-2 -2 L-2 -6 L2 -6 L2 -2 L6 -2 L6 2 L2 2 L2 6 L-2 6 L-2 2 L-6 2 Z" fill="#00D26A"/>
+    </g>
+    
+    <!-- Sparkles indicating immediate and successful effect -->
+    <path d="M72 90 L76 96 L72 102 L68 96 Z" fill="#38BDF8"/>
+    <path d="M168 110 L171 114 L168 118 L165 114 Z" fill="#00D26A"/>
+    <path d="M160 70 L163 74 L160 78 L157 74 Z" fill="#38BDF8"/>
+  </g>
+</svg>

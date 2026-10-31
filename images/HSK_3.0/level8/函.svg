@@ -1,0 +1,36 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(40, 45)">
+    <!-- Envelope Base (Official Document / Invitation Letter) -->
+    <rect x="10" y="30" width="140" height="100" rx="6" fill="#2E3544" stroke="#4A5568" stroke-width="2"/>
+    
+    <!-- Inner Document / Letter Paper -->
+    <g transform="translate(20, 10)">
+      <rect x="10" y="10" width="100" height="90" fill="#F8FAFC" rx="3"/>
+      <!-- Text lines placeholder on document -->
+      <line x1="22" y1="28" x2="88" y2="28" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
+      <line x1="22" y1="42" x2="75" y2="42" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round"/>
+      <line x1="22" y1="56" x2="82" y2="56" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round"/>
+      <line x1="22" y1="70" x2="60" y2="70" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Envelope Flap (Back) / Open Effect -->
+    <path d="M 10 30 L 80 85 L 150 30" fill="none" stroke="#4A5568" stroke-width="2"/>
+
+    <!-- Front Triangular Flap -->
+    <path d="M 10 30 L 80 85 L 150 30 L 150 130 L 10 130 Z" fill="#3B4252" stroke="#4A5568" stroke-width="2" opacity="0.9"/>
+    <path d="M 10 30 L 80 88 L 150 30" fill="#2E3544" stroke="#5C677D" stroke-width="2"/>
+
+    <!-- Wax Seal / Official Stamp (Gold/Orange Accent for Focus) -->
+    <g transform="translate(80, 95)">
+      <circle cx="0" cy="0" r="16" fill="#D97706"/>
+      <circle cx="0" cy="0" r="12" fill="#F59E0B"/>
+      <!-- Star/Emblem inside seal -->
+      <path d="M 0 -6 L 1.5 -2 L 5 -2 L 2 0.5 L 3 4 L 0 2 L -3 4 L -2 0.5 L -5 -2 L -1.5 -2 Z" fill="#D97706"/>
+    </g>
+
+    <!-- Sparkle / Professional Detail -->
+    <path d="M 135 15 L 138 22 L 145 25 L 138 28 L 135 35 L 132 28 L 125 25 L 132 22 Z" fill="#F59E0B" opacity="0.8"/>
+  </g>
+</svg>

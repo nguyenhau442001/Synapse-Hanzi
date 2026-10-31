@@ -1,0 +1,35 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Pedestal / Display Stand -->
+  <path d="M70 190 L170 190 L160 160 L80 160 Z" fill="#2D3748"/>
+  <rect x="90" y="150" width="60" height="15" rx="3" fill="#4A5568"/>
+  
+  <!-- Mysterious Object on Pedestal (Glowing Star / Gem) -->
+  <circle cx="120" cy="130" r="18" fill="#1A1D24"/>
+  <path d="M120 112 L125 125 L138 130 L125 135 L120 148 L115 135 L102 130 L115 125 Z" fill="#F6E05E"/>
+  <circle cx="120" cy="130" r="6" fill="#FFF"/>
+
+  <!-- Red Curtain Being Lifted (Action: 揭 - Unveiling / Bọc, mở, vạch trần) -->
+  <!-- Curtain draping and folding with dynamic motion lines -->
+  <path d="M30 40 Q 75 70 120 95 L 140 160 L 105 160 Q 80 110 30 90 Z" fill="#E53E3E"/>
+  <path d="M210 40 Q 165 70 120 95 L 140 160 L 175 160 Q 190 110 210 90 Z" fill="#C53030"/>
+  
+  <!-- Dynamic upward swoosh of the red curtain being pulled away -->
+  <path d="M 120 95 Q 120 40 140 20" stroke="#FC8181" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M 100 105 Q 110 50 135 30" stroke="#FEB2B2" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="4 4"/>
+
+  <!-- Character Hands Pulling the Curtain -->
+  <!-- Left hand -->
+  <path d="M50 110 C 60 105 75 110 85 125 C 80 130 70 125 60 120 Z" fill="#F6AD55"/>
+  <!-- Right hand -->
+  <path d="M190 110 C 180 105 165 110 155 125 C 160 130 170 125 180 120 Z" fill="#F6AD55"/>
+  <rect x="30" y="30" width="180" height="15" rx="4" fill="#CBD5E0"/>
+  <circle cx="35" cy="37.5" r="3" fill="#718096"/>
+  <circle cx="205" cy="37.5" r="3" fill="#718096"/>
+
+  <!-- Sparkles / Focus Highlights -->
+  <path d="M 120 70 L 122 78 L 130 80 L 122 82 L 120 90 L 118 82 L 110 80 L 118 78 Z" fill="#F6E05E"/>
+  <path d="M 85 85 L 86 89 L 90 90 L 86 91 L 85 95 L 84 91 L 80 90 L 84 89 Z" fill="#FAF089"/>
+  <path d="M 155 85 L 156 89 L 160 90 L 156 91 L 155 95 L 154 91 L 150 90 L 154 89 Z" fill="#FAF089"/>
+</svg>

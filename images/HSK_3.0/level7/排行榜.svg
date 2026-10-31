@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Podium Base -->
+  <rect x="50" y="180" width="140" height="15" rx="2" fill="#374151"/>
+  
+  <!-- Rank 2 -->
+  <rect x="55" y="130" width="35" height="50" rx="2" fill="#4B5563"/>
+  <circle cx="72.5" cy="110" r="8" fill="#9CA3AF"/>
+  
+  <!-- Rank 1 (Gold) -->
+  <rect x="100" y="90" width="40" height="90" rx="2" fill="#F59E0B"/>
+  <circle cx="120" cy="70" r="10" fill="#FBBF24"/>
+  <path d="M115 75 L120 70 L125 75" stroke="#F59E0B" stroke-width="2" fill="none"/>
+  
+  <!-- Rank 3 -->
+  <rect x="150" y="145" width="35" height="35" rx="2" fill="#78350F"/>
+  <circle cx="167.5" cy="125" r="8" fill="#D97706"/>
+  
+  <!-- Decorative elements (Musical notes to represent the context) -->
+  <path d="M190 60 C 195 55, 200 55, 205 60 L 205 80 C 200 85, 195 85, 190 80 Z" fill="#F59E0B"/>
+  <rect x="205" y="55" width="3" height="25" fill="#F59E0B"/>
+  <circle cx="190" cy="80" r="4" fill="#F59E0B"/>
+</svg>
