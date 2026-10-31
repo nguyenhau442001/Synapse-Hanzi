@@ -1827,13 +1827,23 @@ body.flashcard-study-mode .card-visual-col {
 }
 
 body.flashcard-study-mode .card:not(.is-flipped) .card-visual-col {
+  display: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body.flashcard-study-mode .card.is-flipped .card-visual-col {
   display: flex !important;
   margin: 10px auto 6px;
 }
 
-body.flashcard-study-mode.hide-illustrations .card-visual-col {
+body.flashcard-study-mode.hide-illustrations .card-visual-col,
+body.flashcard-study-mode.hide-illustrations .card .card-visual-col {
   display: none !important;
-  height: 0;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 body.flashcard-study-mode .card-illustration-frame {
@@ -3427,9 +3437,12 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
     height: 76px;
     margin: 0;
   }
-  body.flashcard-study-mode.hide-illustrations .card-visual-col {
+  body.flashcard-study-mode.hide-illustrations .card-visual-col,
+  body.flashcard-study-mode.hide-illustrations .card .card-visual-col {
     display: none !important;
-    height: 0;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   body.flashcard-study-mode .card-supporting-group {
     border-top: none !important;
@@ -4191,9 +4204,10 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
     font-size: clamp(34px, 5.2vh, 44px) !important;
   }
   body.flashcard-study-mode .card:not(.is-flipped) .card-visual-col {
-    flex: 0 0 clamp(80px, 15vh, 110px) !important;
-    width: clamp(80px, 15vh, 110px) !important;
-    height: clamp(80px, 15vh, 110px) !important;
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   body.flashcard-study-mode .card.is-flipped .card-visual-col {
     flex: 0 0 60px !important;

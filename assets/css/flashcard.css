@@ -349,7 +349,7 @@
 .card-content.is-empty .hint { display: none !important; }
 .card-content.is-empty .meaning { margin-top: 0; }
 
-/* Pure Zen Active Recall: hide answer clues (Pinyin, Nghĩa, Cấu tạo, Liên quan, Ví dụ) on front until flipped */
+/* Pure Zen Active Recall: hide answer clues (Pinyin, Nghĩa, Cấu tạo, Liên quan, Ví dụ, Minh họa) on front until flipped */
 .card:not(.is-flipped) .pinyin-row,
 .card:not(.is-flipped) .meaning,
 .card:not(.is-flipped) .hanviet-badge,
@@ -361,19 +361,23 @@
 .card:not(.is-flipped) .card-supporting-group,
 .card:not(.is-flipped) .card-decomposition-wrap,
 .card:not(.is-flipped) .card-radicals-row,
-.card:not(.is-flipped) .card-related-wrap {
+.card:not(.is-flipped) .card-related-wrap,
+.card:not(.is-flipped) .card-visual-col {
   display: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 .hide-hanviet .hanviet-badge {
   display: none !important;
 }
 
-/* Front state focal points: Hanzi + Visual mnemonic hint */
+/* Front state focal points: Hanzi */
 .card:not(.is-flipped) .hanzi-stage {
   margin-top: 4px;
   margin-bottom: 2px;
 }
-.card:not(.is-flipped) .card-visual-col {
+.card.is-flipped .card-visual-col {
   display: flex !important;
   margin: 10px auto 6px;
   justify-content: center;
@@ -411,9 +415,14 @@
   margin: 0;
   flex-shrink: 0;
 }
-.hide-illustrations .card-visual-col {
+.hide-illustrations .card-visual-col,
+.hide-illustrations .card .card-visual-col,
+body.hide-illustrations .card-visual-col,
+body.hide-illustrations .card .card-visual-col {
   display: none !important;
-  height: 0;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* Card Decomposition: Cấu tạo chữ */

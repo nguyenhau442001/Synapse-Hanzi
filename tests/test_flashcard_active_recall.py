@@ -28,16 +28,18 @@ class TestFlashcardActiveRecall(unittest.TestCase):
         cls.prog_js = PROGRESS_JS.read_text(encoding="utf-8")
 
     def test_active_recall_front_hides_spoilers(self):
-        """Front of card (.card:not(.is-flipped)) must hide pinyin, meaning, example, and accordions."""
+        """Front of card (.card:not(.is-flipped)) must hide pinyin, meaning, example, visual illustration, and accordions."""
         self.assertIn(".card:not(.is-flipped) .pinyin-row", self.fc_css)
         self.assertIn(".card:not(.is-flipped) .meaning", self.fc_css)
         self.assertIn(".card:not(.is-flipped) .example-box", self.fc_css)
         self.assertIn(".card:not(.is-flipped) .card-expandable-group", self.fc_css)
-
-    def test_active_recall_front_displays_visual_anchor(self):
-        """Front of card must display visual illustration when available as a mnemonic cue."""
         self.assertIn(".card:not(.is-flipped) .card-visual-col", self.fc_css)
-        self.assertIn("display: flex !important", self.fc_css)
+
+    def test_active_recall_front_hides_visual_anchor(self):
+        """Front of card must hide visual illustration by default to prevent giving away the meaning."""
+        self.assertIn(".card:not(.is-flipped) .card-visual-col", self.fc_css)
+        self.assertIn(".card.is-flipped .card-visual-col", self.fc_css)
+        self.assertIn("body.flashcard-study-mode .card:not(.is-flipped) .card-visual-col", self.ws_css)
 
     def test_accordions_present_in_template(self):
         """Flashcard template must contain both decomposition and related words accordions."""
