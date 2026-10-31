@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Festive Night Background Elements -->
+  <circle cx="120" cy="115" r="85" fill="#252A34" opacity="0.6"/>
+  
+  <!-- Red Lanterns (Temple Fair Atmosphere) -->
+  <g>
+    <!-- Left Lantern -->
+    <path d="M55 75 h20 v8 h-20 z" fill="#D4AF37"/>
+    <path d="M65 83 v12" stroke="#D4AF37" stroke-width="2"/>
+    <ellipse cx="65" cy="110" rx="18" ry="15" fill="#E63946"/>
+    <path d="M65 125 v10" stroke="#D4AF37" stroke-width="1.5"/>
+    <path d="M60 70 q5 -5 10 0" stroke="#D4AF37" stroke-width="2" fill="none"/>
+    <line x1="65" y1="50" x2="65" y2="70" stroke="#D4AF37" stroke-width="1.5"/>
+
+    <!-- Right Lantern -->
+    <path d="M165 75 h20 v8 h-20 z" fill="#D4AF37"/>
+    <path d="M175 83 v12" stroke="#D4AF37" stroke-width="2"/>
+    <ellipse cx="175" cy="110" rx="18" ry="15" fill="#E63946"/>
+    <path d="M175 125 v10" stroke="#D4AF37" stroke-width="1.5"/>
+    <path d="M170 70 q5 -5 10 0" stroke="#D4AF37" stroke-width="2" fill="none"/>
+    <line x1="175" y1="50" x2="175" y2="70" stroke="#D4AF37" stroke-width="1.5"/>
+  </g>
+
+  <!-- Traditional Temple Gate (Paifang / Miaohui focal point) -->
+  <g>
+    <!-- Roof Base Structure -->
+    <path d="M70 120 L120 100 L170 120 L160 127 L120 110 L80 127 Z" fill="#E63946"/>
+    <!-- Main Roof Tier -->
+    <path d="M55 127 L120 103 L185 127 C190 127 193 130 190 134 L180 138 C177 140 174 138 172 135 L120 118 L68 135 C66 138 63 140 60 138 L50 134 C47 130 50 127 55 127 Z" fill="#D4AF37"/>
+    
+    <!-- Upper Small Roof -->
+    <path d="M95 100 L120 88 L145 100 L140 104 L120 94 L100 104 Z" fill="#D4AF37"/>
+
+    <!-- Pillars -->
+    <rect x="75" y="138" width="12" height="62" fill="#E63946"/>
+    <rect x="153" y="138" width="12" height="62" fill="#E63946"/>
+    
+    <!-- Gate Opening / Interior Glow -->
+    <rect x="95" y="145" width="50" height="55" rx="25" fill="#FFB703" opacity="0.15"/>
+    
+    <!-- Center Door / Lantern stand details -->
+    <rect x="117" y="160" width="6" height="40" fill="#D4AF37"/>
+  </g>
+
+  <!-- Festive Ground Base / Stall Counter Symbol -->
+  <path d="M40 200 H200 V205 C200 210 195 212 190 212 H50 C45 212 40 210 40 205 Z" fill="#D4AF37"/>
+  <rect x="55" y="212" width="130" height="8" fill="#E63946" rx="2"/>
+
+</svg>

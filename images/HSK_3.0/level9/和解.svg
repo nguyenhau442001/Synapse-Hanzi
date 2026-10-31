@@ -1,0 +1,59 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient lighting/shadow for depth -->
+  <circle cx="120" cy="120" r="80" fill="#222732" opacity="0.6"/>
+
+  <!-- Document / Agreement Scroll Background behind the handshake -->
+  <g opacity="0.85">
+    <!-- Document base -->
+    <rect x="75" y="70" width="90" height="115" rx="6" fill="#2C3545"/>
+    <rect x="75" y="70" width="90" height="18" rx="6" fill="#3B465C"/>
+    
+    <!-- Document lines representing text -->
+    <rect x="90" y="100" width="60" height="4" rx="2" fill="#4E5D78"/>
+    <rect x="90" y="112" width="45" height="4" rx="2" fill="#4E5D78"/>
+    <rect x="90" y="124" width="55" height="4" rx="2" fill="#4E5D78"/>
+    
+    <!-- Legal stamp / seal accent -->
+    <circle cx="135" cy="155" r="14" fill="#E67E22" opacity="0.2"/>
+    <circle cx="135" cy="155" r="10" fill="none" stroke="#E67E22" stroke-width="2"/>
+    <path d="M130 155 L133 158 L141 150" fill="none" stroke="#E67E22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Central Physical Object representing "和解" (Settlement / Reconciliation Agreement) -->
+  <!-- We showcase a firm, friendly handshake symbolizing the successful resolution and agreement between two parties -->
+  <g id="handshake">
+    <!-- Left Arm & Cuff (Party A - Slate Blue Suit) -->
+    <path d="M25 155 L75 140 L75 165 L25 180 Z" fill="#34495E"/>
+    <path d="M65 143 L75 140 L75 165 L67 167 Z" fill="#2C3E50"/>
+    <!-- Left Cuffs -->
+    <rect x="68" y="141" width="8" height="25" rx="2" fill="#ECF0F1"/>
+
+    <!-- Right Arm & Cuff (Party B - Dark Charcoal Suit) -->
+    <path d="M215 155 L165 140 L165 165 L215 180 Z" fill="#2C3E50"/>
+    <path d="M175 143 L165 140 L165 165 L173 167 Z" fill="#1A252F"/>
+    <!-- Right Cuffs -->
+    <rect x="164" y="141" width="8" height="25" rx="2" fill="#ECF0F1"/>
+
+    <!-- Left Hand (Warm Skin Tone) -->
+    <path d="M72 145 C85 142 98 142 110 148 C115 150 115 156 110 158 C98 152 85 152 72 155 Z" fill="#D9A066"/>
+    <!-- Left Thumb -->
+    <path d="M85 144 C90 135 100 132 105 136 C105 138 100 142 95 145 Z" fill="#C68B52"/>
+
+    <!-- Right Hand (Warm Skin Tone - Interlocking) -->
+    <path d="M168 145 C155 142 142 142 130 148 C125 150 125 156 130 158 C142 152 155 152 168 155 Z" fill="#E5B078"/>
+    <!-- Right Thumb -->
+    <path d="M155 144 C150 135 140 132 135 136 C135 138 140 142 145 145 Z" fill="#D39D63"/>
+    
+    <!-- Overlapping Grip Highlight (Golden Accent for Success/Harmony) -->
+    <ellipse cx="120" cy="151" rx="12" ry="6" fill="#F39C12" opacity="0.4"/>
+  </g>
+
+  <!-- Golden Seal Ribbon hanging off the document base for extra legal clarity -->
+  <g transform="translate(0, 10)">
+    <path d="M125 150 L125 175 L130 170 L135 175 L135 150 Z" fill="#E67E22"/>
+  </g>
+
+</svg>

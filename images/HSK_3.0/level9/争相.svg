@@ -1,0 +1,33 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Bookshelf -->
+  <rect x="40" y="60" width="160" height="10" fill="#3E4451" rx="2"/>
+  <rect x="40" y="110" width="160" height="10" fill="#3E4451" rx="2"/>
+  
+  <!-- Books on shelf -->
+  <rect x="50" y="30" width="15" height="30" fill="#FFB84D" rx="2"/>
+  <rect x="70" y="35" width="15" height="25" fill="#FF8C42" rx="2"/>
+  <rect x="90" y="25" width="15" height="35" fill="#FFB84D" rx="2"/>
+  
+  <!-- People rushing/reaching -->
+  <!-- Person 1 -->
+  <circle cx="70" cy="180" r="12" fill="#FFD699"/>
+  <path d="M70 192 L70 220 M70 200 L55 215 M70 200 L85 215" stroke="#FFD699" stroke-width="6" stroke-linecap="round"/>
+  <path d="M65 170 L75 160" stroke="#FFD699" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Person 2 -->
+  <circle cx="120" cy="180" r="12" fill="#FFB84D"/>
+  <path d="M120 192 L120 220 M120 200 L105 215 M120 200 L135 215" stroke="#FFB84D" stroke-width="6" stroke-linecap="round"/>
+  <path d="M115 170 L125 160" stroke="#FFB84D" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Person 3 -->
+  <circle cx="170" cy="180" r="12" fill="#FF8C42"/>
+  <path d="M170 192 L170 220 M170 200 L155 215 M170 200 L185 215" stroke="#FF8C42" stroke-width="6" stroke-linecap="round"/>
+  <path d="M165 170 L175 160" stroke="#FF8C42" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Motion lines -->
+  <path d="M50 170 Q60 160 70 150" stroke="#4A5568" stroke-width="2" fill="none"/>
+  <path d="M100 170 Q110 160 120 150" stroke="#4A5568" stroke-width="2" fill="none"/>
+  <path d="M150 170 Q160 160 170 150" stroke="#4A5568" stroke-width="2" fill="none"/>
+</svg>

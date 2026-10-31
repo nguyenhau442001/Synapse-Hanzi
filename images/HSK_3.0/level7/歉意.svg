@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle ambient lighting -->
+  <circle cx="120" cy="110" r="70" fill="#222733" opacity="0.6"/>
+
+  <!-- Conceptual Object: A formal, elegant formal apology letter/card with an origami crane (symbolizing sincerity, peace, and regret) -->
+  <g transform="translate(0, 5)">
+    <!-- Shadow for depth -->
+    <ellipse cx="120" cy="180" rx="55" ry="10" fill="#111318" opacity="0.8"/>
+
+    <!-- Open Envelope / Base Document -->
+    <path d="M 65 105 L 120 145 L 175 105 L 175 165 C 175 170 170 175 165 175 L 75 175 C 70 175 65 170 65 165 Z" fill="#2A303C"/>
+    
+    <!-- Envelope Interior Flap -->
+    <path d="M 65 105 L 120 80 L 175 105 L 120 145 Z" fill="#323A4B"/>
+
+    <!-- Letter Paper Peeking Out -->
+    <rect x="75" y="85" width="90" height="70" rx="4" fill="#EAECEF"/>
+    
+    <!-- Text Lines on Letter (Abstract representation) -->
+    <rect x="88" y="102" width="50" height="5" rx="2.5" fill="#A0AAB8"/>
+    <rect x="88" y="115" width="64" height="4" rx="2" fill="#CBD5E1"/>
+    <rect x="88" y="126" width="40" height="4" rx="2" fill="#CBD5E1"/>
+
+    <!-- Origami Crane (representing sincere apology / regret / heart-felt message) resting gracefully on the envelope -->
+    <g transform="translate(120, 82) scale(0.9)">
+      <!-- Crane Body & Wings - Modern Flat Vector Style with Orange/Gold Accent -->
+      <!-- Back wing -->
+      <polygon points="0,-15 -25,-30 -5,-5" fill="#D97706" opacity="0.8"/>
+      <!-- Front wing -->
+      <polygon points="0,-15 35,-25 10,-2" fill="#F59E0B"/>
+      <!-- Head and neck -->
+      <path d="M 0,-15 L -20,-45 C -22,-48 -18,-52 -15,-50 L -10,-45 L 0,-25 Z" fill="#FBBF24"/>
+      <!-- Tail -->
+      <polygon points="0,-15 30,5 15,-10" fill="#D97706"/>
+      <!-- Chest / Lower body -->
+      <polygon points="0,-15 10,-2 -10,-5" fill="#FB923C"/>
+    </g>
+
+    <!-- Subtle Bow / Polite Gesture Indicator (Hands outline minimalist framing) -->
+    <path d="M 52 145 C 45 135 45 120 52 110" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.7"/>
+    <path d="M 188 145 C 195 135 195 120 188 110" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.7"/>
+  </g>
+</svg>

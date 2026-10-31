@@ -1,0 +1,73 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Ambient Glow representing attention/focus -->
+  <circle cx="120" cy="115" r="70" fill="#2A3241" opacity="0.6"/>
+
+  <!-- Conceptual Focus Rings (Camera viewfinder / spotlight framing every single movement) -->
+  <g opacity="0.8">
+    <!-- Outer dashed tracking circle -->
+    <circle cx="120" cy="115" r="78" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.4"/>
+    
+    <!-- Viewfinder corners -->
+    <!-- Top-Left -->
+    <path d="M 52 80 L 52 64 L 68 64" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Top-Right -->
+    <path d="M 188 80 L 188 64 L 172 64" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Bottom-Left -->
+    <path d="M 52 150 L 52 166 L 68 166" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Bottom-Right -->
+    <path d="M 188 150 L 188 166 L 172 166" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Motion Trails / Gesture lines (Representing 'every single move and action' / 一举一动) -->
+  <g opacity="0.7">
+    <!-- Left arm motion arc -->
+    <path d="M 75 100 Q 60 115 75 130" fill="none" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 4"/>
+    <!-- Head tilt motion arc -->
+    <path d="M 105 52 Q 120 46 135 52" fill="none" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 4"/>
+    <!-- Right hand motion arc -->
+    <path d="M 165 110 Q 180 125 165 140" fill="none" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Central Character (representing a person whose every move is observed) -->
+  <g>
+    <!-- Suit / Shoulders -->
+    <path d="M 85 185 L 90 150 C 90 142 98 138 106 138 L 134 138 C 142 138 150 142 150 150 L 155 185 Z" fill="#3B82F6"/>
+    <!-- Collar / Tie -->
+    <polygon points="120,138 112,155 128,155" fill="#1E293B"/>
+    <polygon points="120,152 117,175 120,185 123,175" fill="#F59E0B"/>
+
+    <!-- Neck -->
+    <rect x="113" y="124" width="14" height="18" fill="#FDE047" rx="4"/>
+
+    <!-- Head -->
+    <circle cx="120" cy="100" r="26" fill="#FDE047"/>
+
+    <!-- Hair (Stylish modern look) -->
+    <path d="M 94 96 C 94 80 106 72 120 72 C 134 72 146 80 146 96 C 144 96 142 88 136 84 C 126 78 114 80 104 86 C 98 90 94 96 94 96 Z" fill="#1E293B"/>
+
+    <!-- Eyes (Focused, confident expression) -->
+    <circle cx="111" cy="98" r="3" fill="#1E293B"/>
+    <circle cx="129" cy="98" r="3" fill="#1E293B"/>
+    <!-- Smile -->
+    <path d="M 115 110 Q 120 114 125 110" fill="none" stroke="#1E293B" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Focused Hand Gestures (Highlighting detailed actions) -->
+  <!-- Left Hand / Arm -->
+  <g>
+    <path d="M 90 145 L 75 120 C 73 116 77 112 81 114 L 92 125 Z" fill="#FDE047"/>
+    <circle cx="75" cy="116" r="5" fill="#FDE047"/>
+  </g>
+
+  <!-- Right Hand / Arm -->
+  <g>
+    <path d="M 150 145 L 165 125 C 168 121 163 117 159 119 L 148 132 Z" fill="#FDE047"/>
+    <circle cx="164" cy="122" r="5" fill="#FDE047"/>
+  </g>
+
+  <!-- Observation Spotlight Elements (Camera focus reticle in center chest) -->
+  <circle cx="120" cy="162" r="4" fill="#F59E0B" opacity="0.9"/>
+</svg>

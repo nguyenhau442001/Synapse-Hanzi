@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 115)">
+    <!-- Dark menacing shadow / aura representing destruction and plague -->
+    <path d="M-60,-30 C-60,-70 0,-90 50,-60 C90,-30 80,30 60,60 C30,90 -40,80 -60,40 C-75,10 -60,-10 -60,-30 Z" fill="#2A1B22" opacity="0.8"/>
+    
+    <!-- Toxic smoke / corrosive plague tendrils spreading outward -->
+    <path d="M-70,20 C-90,10 -100,-20 -80,-40 C-60,-60 -30,-40 -40,-20 C-50,0 -30,30 -70,20 Z" fill="#E65100" opacity="0.25"/>
+    <path d="M50,-30 C70,-50 95,-30 85,-10 C75,10 60,30 45,10 C35,-10 30,-10 50,-30 Z" fill="#E65100" opacity="0.25"/>
+
+    <!-- Central Object/Character: The Marauder / Parasitic Force (Symbolizing "祸害" - personified destructive threat) -->
+    <!-- Cloaked Hood (Menacing dark figure with sharp, aggressive silhouette) -->
+    <path d="M-35,-20 C-35,-60 0,-75 35,-20 C50,10 45,55 35,70 C25,85 -25,85 -35,70 C-45,55 -50,10 -35,-20 Z" fill="#2D323E"/>
+    <path d="M-30,-15 C-30,-50 0,-62 30,-15 C42,10 38,45 30,60 C20,75 -20,75 -30,60 C-38,45 -42,10 -30,-15 Z" fill="#1E222B"/>
+
+    <!-- Hood Opening & Sinister Glowing Eyes -->
+    <path d="M-20,-10 C-20,-35 0,-42 20,-10 C25,5 15,20 0,15 C-15,20 -25,5 -20,-10 Z" fill="#111318"/>
+    <!-- Piercing aggressive eyes (Amber/Gold focus) -->
+    <circle cx="-9" cy="-5" r="4" fill="#FFB703"/>
+    <circle cx="9" cy="-5" r="4" fill="#FFB703"/>
+    <circle cx="-9" cy="-5" r="1.5" fill="#111318"/>
+    <circle cx="9" cy="-5" r="1.5" fill="#111318"/>
+
+    <!-- Destructive Claw / Hand reaching out to corrupt/harm -->
+    <path d="M30,30 C50,25 65,40 75,30 C80,25 75,20 70,22 C60,25 50,10 35,15 Z" fill="#E65100"/>
+    <path d="M72,27 L82,24 M75,32 L85,32 M73,38 L81,42" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Target of destruction: Withered, fragile element representing peaceful livelihood being ruined -->
+    <!-- Cracked foundation / fading peaceful symbol underneath -->
+    <path d="M-55,75 L55,75 C60,75 60,65 50,65 L-50,65 C-60,65 -60,75 -55,75 Z" fill="#3A3F4B"/>
+    <path d="M-20,65 L-10,75 M10,65 L0,75" stroke="#1E222B" stroke-width="2"/>
+
+    <!-- Decaying/Crushed plant element (Symbolizing ruined peaceful life/harvest) -->
+    <path d="M-10,65 C-10,45 -25,35 -35,30 C-30,45 -20,55 -10,65 Z" fill="#E65100" opacity="0.6"/>
+    <path d="M0,65 C5,45 20,35 30,30 C20,45 10,55 0,65 Z" fill="#D32F2F" opacity="0.5"/>
+    <path d="M-5,65 C-2,50 2,50 5,65 Z" fill="#FFB703" opacity="0.8"/>
+
+    <!-- Sharp hazard / corruption sparks floating upward -->
+    <polygon points="0,-75 3,-68 10,-65 3,-62 0,-55 -3,-62 -10,-65 -3,-68" fill="#FFB703"/>
+    <polygon points="45,-45 47,-40 52,-38 47,-36 45,-31 43,-36 38,-38 43,-40" fill="#E65100"/>
+    <polygon points="-45,-35 -43,-30 -38,-28 -43,-26 -45,-21 -47,-26 -52,-28 -47,-30" fill="#E65100"/>
+  </g>
+</svg>

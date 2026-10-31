@@ -1,0 +1,27 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Conceptual Illustration for "自始至终" (From beginning to end / Complete continuous timeline object) -->
+  <!-- We visualize a continuous, elegant unbroken golden ribbon/path looping from a distinct START (Alpha/Start node) across to the END (Omega/End node), representing the unbroken entirety from start to finish. -->
+
+  <!-- Background decorative subtle timeline grid/track -->
+  <path d="M 45 120 C 45 75, 195 75, 195 120 C 195 165, 45 165, 45 120 Z" fill="none" stroke="#262B36" stroke-width="24" stroke-linecap="round"/>
+
+  <!-- Main continuous glowing path (From start to end) -->
+  <path d="M 50 120 C 50 85, 190 85, 190 120 C 190 155, 50 155, 50 120 Z" fill="none" stroke="#3A4454" stroke-width="8" stroke-dasharray="4 4"/>
+  
+  <!-- Solid luminous continuity band representing 'trọn vẹn từ trước tới sau' -->
+  <path d="M 50 120 C 50 85, 190 85, 190 120 C 190 155, 50 155, 50 120 Z" fill="none" stroke="#F59E0B" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- START node marker (始) -->
+  <circle cx="50" cy="120" r="16" fill="#1A1D24" stroke="#F59E0B" stroke-width="4"/>
+  <circle cx="50" cy="120" r="6" fill="#F59E0B"/>
+  
+  <!-- END node marker (终) -->
+  <circle cx="190" cy="120" r="16" fill="#1A1D24" stroke="#10B981" stroke-width="4"/>
+  <circle cx="190" cy="120" r="6" fill="#10B981"/>
+
+  <!-- Central cohesive focal object (The unbroken core essence) -->
+  <circle cx="120" cy="120" r="28" fill="#212631" stroke="#3B82F6" stroke-width="3"/>
+  <path d="M 108 120 L 116 128 L 134 110" fill="none" stroke="#3B82F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

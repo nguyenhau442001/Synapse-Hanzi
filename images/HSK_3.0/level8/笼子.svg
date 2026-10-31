@@ -1,0 +1,33 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(40, 30)">
+    <!-- Cage Base Platform -->
+    <rect x="20" y="150" width="120" height="12" rx="4" fill="#3A3F4B"/>
+    <rect x="30" y="162" width="100" height="6" rx="3" fill="#2C3038"/>
+    
+    <!-- Cage Roof -->
+    <path d="M 80 15 L 140 45 L 20 45 Z" fill="#4B5263"/>
+    <rect x="25" y="45" width="110" height="8" rx="2" fill="#5C6478"/>
+    
+    <!-- Cage Bars (Vertical) -->
+    <rect x="35" y="53" width="4" height="97" fill="#6C758D"/>
+    <rect x="55" y="53" width="4" height="97" fill="#6C758D"/>
+    <rect x="75" y="53" width="4" height="97" fill="#6C758D"/>
+    <rect x="95" y="53" width="4" height="97" fill="#6C758D"/>
+    <rect x="115" y="53" width="4" height="97" fill="#6C758D"/>
+
+    <!-- Cage Bars (Horizontal - Back layer simulation) -->
+    <rect x="35" y="75" width="90" height="3" fill="#4B5263"/>
+    <rect x="35" y="110" width="90" height="3" fill="#4B5263"/>
+
+    <!-- Open Door/Hinges indicating freedom/context -->
+    <rect x="125" y="53" width="3" height="97" fill="#8892B0"/>
+    
+    <!-- Freedom/Flight Accent (Bird flying out to the right, referencing the white stork prompt context) -->
+    <path d="M 145 80 Q 160 65 180 70 Q 165 78 155 90 Z" fill="#F59E0B"/>
+    <path d="M 160 85 Q 175 95 190 90 Q 175 92 165 85 Z" fill="#F59E0B"/>
+    
+    <!-- Focus ring/glow on the cage structure -->
+    <rect x="18" y="13" width="124" height="157" rx="6" fill="none" stroke="#F59E0B" stroke-width="2" stroke-opacity="0.6" stroke-dasharray="8 6"/>
+  </g>
+</svg>

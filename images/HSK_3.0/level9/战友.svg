@@ -1,0 +1,83 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background tactical grid lines & subtle terrain elements -->
+  <g opacity="0.15">
+    <line x1="30" y1="180" x2="210" y2="180" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <path d="M 20 190 Q 70 150 120 180 T 220 170" fill="none" stroke="#64748B" stroke-width="1.5"/>
+    <path d="M 40 210 Q 100 170 180 200" fill="none" stroke="#64748B" stroke-width="1"/>
+  </g>
+
+  <!-- Atmospheric directional elements (covering/withdrawing motion) -->
+  <g opacity="0.3">
+    <path d="M190 70 L140 70" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+    <path d="M170 90 L110 90" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+    <path d="M200 110 L150 110" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+  </g>
+
+  <!-- Central Character 1 (Comrade covering/reaching back to assist) -->
+  <g transform="translate(-10, 0)">
+    <!-- Body/Torso in tactical gear -->
+    <path d="M 90 120 L 115 120 L 125 170 L 95 170 Z" fill="#334155"/>
+    <path d="M 95 120 L 115 120 L 110 150 L 100 150 Z" fill="#475569"/>
+    
+    <!-- Helmet & Head -->
+    <path d="M 92 85 C 92 75 108 75 115 82 L 118 92 C 105 95 92 90 92 85 Z" fill="#475569"/>
+    <circle cx="104" cy="90" r="8" fill="#CBD5E1"/>
+    
+    <!-- Back leg -->
+    <path d="M 97 165 L 85 200 L 95 205 L 105 170 Z" fill="#1E293B"/>
+    
+    <!-- Front leg (stepping back) -->
+    <path d="M 115 165 L 130 195 L 120 200 L 105 170 Z" fill="#334155"/>
+
+    <!-- Left Arm holding gear -->
+    <path d="M 95 120 L 75 140 L 80 150 L 100 130 Z" fill="#334155"/>
+
+    <!-- Right Arm reaching back dynamically to grab/support comrade -->
+    <path d="M 115 125 L 140 120 L 145 130 L 120 135 Z" fill="#475569"/>
+    <circle cx="145" cy="125" r="4" fill="#CBD5E1"/>
+  </g>
+
+  <!-- Central Character 2 (Comrade being supported/pulled along) -->
+  <g transform="translate(15, 0)">
+    <!-- Torso leaning forward -->
+    <path d="M 100 125 L 125 115 L 135 165 L 110 175 Z" fill="#475569"/>
+    
+    <!-- Helmet & Head -->
+    <path d="M 115 85 C 115 75 130 78 135 88 L 132 98 C 122 98 115 92 115 85 Z" fill="#334155"/>
+    <circle cx="125" cy="92" r="8" fill="#CBD5E1"/>
+
+    <!-- Back leg (lunging) -->
+    <path d="M 115 170 L 100 200 L 112 205 L 122 175 Z" fill="#1E293B"/>
+    
+    <!-- Front leg -->
+    <path d="M 130 165 L 145 195 L 135 200 L 120 170 Z" fill="#334155"/>
+
+    <!-- Left Arm reaching forward to clasp hand -->
+    <path d="M 105 125 L 80 125 L 80 135 L 105 135 Z" fill="#334155"/>
+    
+    <!-- Right Arm back -->
+    <path d="M 125 120 L 140 140 L 130 145 L 120 125 Z" fill="#334155"/>
+  </g>
+
+  <!-- Focal Point: Clasped Hands / Mutual Support (The core bond of "战友") -->
+  <g>
+    <circle cx="107" cy="127" r="6" fill="#F59E0B"/>
+    <path d="M 102 125 L 112 125 L 110 130 L 104 130 Z" fill="#D97706"/>
+  </g>
+
+  <!-- Tactical gear accents / visual indicators (Orange focus highlights) -->
+  <g>
+    <!-- Strap / Equipment highlights -->
+    <path d="M 97 122 L 120 165" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 120 118 L 130 160" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+    
+    <!-- Dynamic motion dust/debris particles at the base -->
+    <circle cx="95" cy="202" r="2.5" fill="#F59E0B" opacity="0.7"/>
+    <circle cx="140" cy="197" r="2" fill="#F59E0B" opacity="0.6"/>
+    <circle cx="115" cy="206" r="1.5" fill="#F59E0B" opacity="0.5"/>
+  </g>
+
+</svg>

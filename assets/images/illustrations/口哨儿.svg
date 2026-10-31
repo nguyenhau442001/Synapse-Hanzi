@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 120)">
+    <!-- Head silhouette -->
+    <path d="M-50 -20 C-50 -60 -20 -80 0 -80 C20 -80 50 -60 50 -20 L50 40 C50 70 20 80 0 80 C-20 80 -50 70 -50 40 Z" fill="#2C3E50"/>
+    
+    <!-- Mouth area -->
+    <circle cx="0" cy="10" r="12" fill="#F39C12"/>
+    <circle cx="0" cy="10" r="6" fill="#1A1D24"/>
+    
+    <!-- Sound waves representing whistling -->
+    <path d="M20 5 A20 20 0 0 1 40 25" stroke="#F39C12" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M25 -5 A30 30 0 0 1 55 25" stroke="#F39C12" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+    <path d="M30 -15 A40 40 0 0 1 70 25" stroke="#F39C12" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.3"/>
+    
+    <!-- Eyes -->
+    <circle cx="-15" cy="-20" r="5" fill="#BDC3C7"/>
+    <circle cx="15" cy="-20" r="5" fill="#BDC3C7"/>
+  </g>
+</svg>

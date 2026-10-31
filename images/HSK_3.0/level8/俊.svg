@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(60, 40)">
+    <!-- Head and Hair -->
+    <path d="M60 20C40 20 30 35 30 55c0 25 15 40 30 40s30-15 30-40c0-20-10-35-30-35z" fill="#FFD700"/>
+    <path d="M35 50c-5 10 0 30 10 35 15 5 25-5 25-15 0-10-10-20-20-20z" fill="#E6C200"/>
+    
+    <!-- Face -->
+    <path d="M40 60c0 20 15 35 20 35s20-15 20-35c0-15-10-25-20-25s-20 10-20 25z" fill="#FFC87C"/>
+    
+    <!-- Facial Features -->
+    <path d="M48 65h8M64 65h8" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+    <path d="M60 75l-5 5h10z" fill="#1A1D24"/>
+    <path d="M50 85c5 5 15 5 20 0" stroke="#1A1D24" stroke-width="2" fill="none" stroke-linecap="round"/>
+    
+    <!-- Torso / Suit -->
+    <path d="M20 160c0-20 20-30 40-30s40 10 40 30v40H20z" fill="#2C3E50"/>
+    <path d="M45 130l15 20 15-20" fill="none" stroke="#FFD700" stroke-width="4" stroke-linecap="round"/>
+    <path d="M60 130v30" stroke="#FFD700" stroke-width="4"/>
+  </g>
+</svg>

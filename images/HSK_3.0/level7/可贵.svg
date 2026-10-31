@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Representing "可贵" (Precious/Valuable character) through the metaphor of a polished, glowing gemstone being held in a steady, determined hand. -->
+  
+  <!-- Hand holding the object -->
+  <path d="M100 180 C 100 150, 110 140, 120 140 C 130 140, 140 150, 140 180" fill="#E0E0E0" opacity="0.8"/>
+  <path d="M110 180 C 110 160, 115 155, 120 155 C 125 155, 130 160, 130 180" fill="#C0C0C0"/>
+  
+  <!-- The Gemstone (The "Precious" object) -->
+  <path d="M120 130 L 145 110 L 120 80 L 95 110 Z" fill="#FFC107"/>
+  <path d="M120 130 L 145 110 L 120 100 Z" fill="#FF8F00"/>
+  <path d="M120 80 L 145 110 L 120 100 Z" fill="#FFD54F"/>
+  
+  <!-- Subtle glow effect -->
+  <circle cx="120" cy="105" r="40" fill="#FFC107" opacity="0.05"/>
+  
+  <!-- Supporting structure representing the "Resilience" aspect -->
+  <path d="M80 200 L 160 200" stroke="#455A64" stroke-width="4" stroke-linecap="round"/>
+</svg>

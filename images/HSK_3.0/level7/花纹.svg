@@ -1,0 +1,60 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Decorative background glow for the vase -->
+    <ellipse cx="120" cy="130" rx="45" ry="60" fill="#243b55" opacity="0.4"/>
+    
+    <!-- Ancient Blue-and-White Porcelain Vase (青花瓷瓶) representing 花纹 -->
+    <!-- Vase Body & Silhouette -->
+    <path d="M102 68 Q105 58 120 58 Q135 58 138 68 L142 80 Q158 92 162 115 Q166 145 152 175 Q140 200 120 200 Q100 200 88 175 Q74 145 78 115 Q82 92 98 80 Z" 
+          fill="#E2E8F0" stroke="#38BDF8" stroke-width="2.5" stroke-linejoin="round"/>
+          
+    <!-- Vase Rim -->
+    <ellipse cx="120" cy="58" rx="18" ry="4" fill="#CBD5E1" stroke="#38BDF8" stroke-width="2"/>
+    
+    <!-- Porcelain Inner Neck Shade -->
+    <ellipse cx="120" cy="58" rx="14" ry="2.5" fill="#475569"/>
+
+    <!-- Intricate Blue Lotus Scroll Patterns (缠枝莲花纹) -->
+    <g fill="none" stroke="#1E40AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Upper neck pattern ring -->
+      <path d="M 106 72 Q 113 77 120 72 Q 127 77 134 72"/>
+      
+      <!-- Main body swirling vine and lotus motif -->
+      <path d="M 95 110 Q 110 95 130 110 Q 150 125 135 145 Q 120 165 100 150 Q 85 135 105 120" />
+      
+      <!-- Lotus Flower 1 (Center) -->
+      <path d="M 120 128 C 115 118 125 118 120 128 Z" fill="#3B82F6" stroke="none"/>
+      <path d="M 114 130 C 108 125 112 118 120 128" />
+      <path d="M 126 130 C 132 125 128 118 120 128" />
+      <path d="M 117 135 Q 120 120 123 135" />
+      
+      <!-- Lotus Flower 2 (Left side curl) -->
+      <path d="M 98 150 Q 90 142 98 135 Q 102 142 98 150 Z" fill="#3B82F6" stroke="none"/>
+      
+      <!-- Lotus Flower 3 (Right side curl) -->
+      <path d="M 142 120 Q 150 112 142 105 Q 138 112 142 120 Z" fill="#3B82F6" stroke="none"/>
+      
+      <!-- Leaf details -->
+      <path d="M 130 110 Q 140 100 135 90 Q 125 100 130 110 Z" fill="#60A5FA" opacity="0.6"/>
+      <path d="M 110 155 Q 100 165 110 172 Q 120 165 110 155 Z" fill="#60A5FA" opacity="0.6"/>
+    </g>
+
+    <!-- Highlight layer on vase for glossy porcelain look -->
+    <path d="M 93 95 Q 87 120 90 150" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.25"/>
+
+    <!-- Focus / Analysis magnifying frame highlighting the exquisite pattern craftsmanship -->
+    <g transform="translate(132, 105)">
+      <!-- Magnifying Glass Circle -->
+      <circle cx="0" cy="0" r="22" fill="#1A1D24" fill-opacity="0.6" stroke="#F59E0B" stroke-width="3"/>
+      
+      <!-- Magnifying Glass Handle -->
+      <line x1="15" y1="15" x2="32" y2="32" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+      
+      <!-- Accent Sparkle for detail precision -->
+      <path d="M -15 -18 L -12 -12 L -18 -12 Z" fill="#F59E0B"/>
+      <circle cx="12" cy="-12" r="1.5" fill="#F59E0B"/>
+    </g>
+  </g>
+</svg>

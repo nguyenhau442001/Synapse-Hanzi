@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Foundation/Building Base -->
+  <path d="M60 180h120v10H60z" fill="#FFB84D"/>
+  <path d="M70 120h100v60H70z" fill="#3D4451"/>
+  
+  <!-- Architectural Pillars -->
+  <rect x="85" y="130" width="10" height="40" fill="#FFB84D"/>
+  <rect x="115" y="130" width="10" height="40" fill="#FFB84D"/>
+  <rect x="145" y="130" width="10" height="40" fill="#FFB84D"/>
+  
+  <!-- Roof Structure -->
+  <path d="M60 120l60-30 60 30H60z" fill="#FFB84D"/>
+  
+  <!-- Helping Hand / Support Gesture -->
+  <path d="M120 150c-15 0-25 10-25 25h50c0-15-10-25-25-25z" fill="#FFB84D" opacity="0.3"/>
+  <path d="M110 165c0-5 5-10 10-10s10 5 10 10" stroke="#FFB84D" stroke-width="4" stroke-linecap="round" fill="none"/>
+  
+  <!-- Document/Grant Paper -->
+  <rect x="100" y="140" width="40" height="50" rx="2" fill="#E0E0E0"/>
+  <rect x="105" y="145" width="30" height="4" rx="1" fill="#1A1D24"/>
+  <rect x="105" y="153" width="30" height="4" rx="1" fill="#1A1D24"/>
+  <rect x="105" y="161" width="20" height="4" rx="1" fill="#1A1D24"/>
+  
+  <!-- Decorative Accent -->
+  <circle cx="120" cy="105" r="8" fill="#1A1D24"/>
+  <circle cx="120" cy="105" r="4" fill="#FFB84D"/>
+</svg>

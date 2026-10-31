@@ -1,0 +1,62 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glowing atmospheric background elements representing broad intellectual space -->
+  <circle cx="120" cy="120" r="90" fill="#252A34" opacity="0.6"/>
+  <circle cx="120" cy="120" r="60" fill="#2D3544" opacity="0.4"/>
+
+  <!-- Orbiting dynamic motion lines and pathways showing 'wide exploration' (广泛涉猎) -->
+  <path d="M 45,150 C 60,90 100,60 170,75" fill="none" stroke="#FFA500" stroke-width="2" stroke-dasharray="4,4" opacity="0.5"/>
+  <path d="M 65,180 C 120,200 180,160 195,100" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.4"/>
+  <path d="M 50,90 C 90,40 160,50 190,130" fill="none" stroke="#F43F5E" stroke-width="1.5" stroke-dasharray="5,5" opacity="0.3"/>
+
+  <!-- Floating multi-disciplinary knowledge icons (History, Literature, Philosophy, Science) -->
+  <!-- Philosophy/Pillar icon -->
+  <rect x="42" y="82" width="16" height="20" rx="2" fill="#E2E8F0" opacity="0.9"/>
+  <rect x="40" y="78" width="20" height="4" rx="1" fill="#F43F5E"/>
+  <rect x="40" y="102" width="20" height="4" rx="1" fill="#F43F5E"/>
+
+  <!-- Science/Atom icon -->
+  <ellipse cx="185" cy="85" rx="14" ry="6" fill="none" stroke="#38BDF8" stroke-width="1.5" transform="rotate(30 185 85)"/>
+  <ellipse cx="185" cy="85" rx="14" ry="6" fill="none" stroke="#38BDF8" stroke-width="1.5" transform="rotate(-30 185 85)"/>
+  <circle cx="185" cy="85" r="3" fill="#38BDF8"/>
+
+  <!-- Literature/Book icon -->
+  <path d="M 175,155 L 195,150 L 195,170 L 175,175 Z" fill="#FFA500"/>
+  <path d="M 155,155 L 175,150 L 175,175 L 155,175 Z" fill="#FFB733"/>
+
+  <!-- Arts/Palette icon -->
+  <circle cx="55" cy="155" r="10" fill="#A855F7"/>
+  <circle cx="58" cy="150" r="2" fill="#FFFFFF"/>
+  <circle cx="50" cy="158" r="2" fill="#38BDF8"/>
+
+  <!-- Central Dynamic Character Action (Reading / Reaching across fields) -->
+  <!-- Character Body / Torso -->
+  <path d="M 95,180 C 95,155 105,140 120,140 C 135,140 145,155 145,180 Z" fill="#334155"/>
+  
+  <!-- Character Head -->
+  <circle cx="120" cy="115" r="16" fill="#CBD5E1"/>
+  
+  <!-- Hair -->
+  <path d="M 104,112 C 104,102 112,98 120,98 C 128,98 136,102 136,112 Z" fill="#1E293B"/>
+
+  <!-- Dynamic Active Arm reaching out to touch/browse multiple books/disciplines -->
+  <path d="M 130,150 C 150,145 165,130 178,115" fill="none" stroke="#CBD5E1" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="180" cy="112" r="5" fill="#FFA500"/> <!-- Interactive focus point -->
+
+  <!-- Other arm resting -->
+  <path d="M 110,150 C 100,160 95,170 95,180" fill="none" stroke="#CBD5E1" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Open Book in Center (Core action of reading widely) -->
+  <path d="M 95,175 C 105,170 115,168 120,168 C 125,168 135,170 145,175 L 145,198 C 135,193 125,191 120,191 C 115,191 105,193 95,198 Z" fill="#F8FAFC"/>
+  <path d="M 120,168 L 120,191" stroke="#CBD5E1" stroke-width="1.5"/>
+  <path d="M 102,175 L 114,177 M 102,181 L 114,183 M 126,177 L 138,175 M 126,183 L 138,181" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Accent Focus Glow behind the central character/book -->
+  <circle cx="120" cy="160" r="40" fill="#FFA500" opacity="0.12" filter="blur(8px)"/>
+  
+  <!-- Dynamic scanning / reading motion arcs -->
+  <path d="M 85,100 C 95,90 110,85 120,85" fill="none" stroke="#FFA500" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="84" cy="101" r="2.5" fill="#FFA500"/>
+</svg>

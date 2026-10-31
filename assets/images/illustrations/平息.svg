@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for 平息 (dẹp yên, lắng xuống, dịu đi) -->
+  <!-- Centered physical object: A traditional oriental ceramic tea bowl/vessel acting as a tranquil calming pool where turbulent waves settle into peaceful ripples, symbolizing quieting a storm/conflict -->
+
+  <g transform="translate(120, 115)">
+    <!-- Soft ambient glow representing calming energy -->
+    <circle cx="0" cy="10" r="75" fill="#38BDF8" opacity="0.08"/>
+    <circle cx="0" cy="10" r="55" fill="#38BDF8" opacity="0.12"/>
+
+    <!-- Tea bowl base and body (Physical object representing the vessel of calm) -->
+    <!-- Shadow beneath bowl -->
+    <ellipse cx="0" cy="65" rx="36" ry="8" fill="#0F1115" opacity="0.6"/>
+
+    <!-- Bowl Outer Body -->
+    <path d="M -50 20 C -50 48, -30 60, 0 60 C 30 60, 50 48, 50 20 Z" fill="#2D3748"/>
+    <!-- Bowl Rim -->
+    <ellipse cx="0" cy="20" rx="50" ry="12" fill="#4A5568"/>
+    <!-- Bowl Inner Depth -->
+    <ellipse cx="0" cy="22" rx="43" ry="9" fill="#1A202C"/>
+
+    <!-- Liquid surface transitioning from ripples to calm -->
+    <ellipse cx="0" cy="22" rx="41" ry="8" fill="#0EA5E9" opacity="0.4"/>
+
+    <!-- Concentric calming ripples settling down -->
+    <!-- Outer fading ripple -->
+    <ellipse cx="0" cy="22" rx="32" ry="6" fill="none" stroke="#38BDF8" stroke-width="1.5" opacity="0.3"/>
+    <!-- Middle ripple -->
+    <ellipse cx="0" cy="22" rx="22" ry="4" fill="none" stroke="#38BDF8" stroke-width="1.5" opacity="0.6"/>
+    <!-- Inner settling ripple -->
+    <ellipse cx="0" cy="22" rx="12" ry="2.5" fill="none" stroke="#7DD3FC" stroke-width="1.5" opacity="0.9"/>
+    <!-- Center calm point -->
+    <circle cx="0" cy="22" r="3" fill="#BAE6FD"/>
+
+    <!-- Calm rising steam / gentle settling lines above the vessel -->
+    <path d="M -12 -5 C -15 -18, -5 -25, -8 -38" fill="none" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+    <path d="M 12 -5 C 15 -18, 5 -25, 8 -38" fill="none" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+    <path d="M 0 -2 C 0 -15, -4 -22, 0 -34" fill="none" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Golden accent highlights indicating harmony and resolution -->
+    <circle cx="-35" cy="30" r="1.5" fill="#F59E0B" opacity="0.8"/>
+    <circle cx="38" cy="25" r="2" fill="#F59E0B" opacity="0.9"/>
+    <circle cx="-25" cy="45" r="1" fill="#F59E0B" opacity="0.7"/>
+    <circle cx="28" cy="42" r="1.5" fill="#F59E0B" opacity="0.8"/>
+  </g>
+</svg>

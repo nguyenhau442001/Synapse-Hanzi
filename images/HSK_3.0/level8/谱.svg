@@ -1,0 +1,75 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Central Physical Object: Musical Score / Sheet Music (谱 - pǔ) -->
+  <g transform="translate(40, 35)">
+    <!-- Paper Sheet Background -->
+    <rect x="0" y="0" width="160" height="170" rx="8" fill="#F4F4F6" filter="drop-shadow(0px 8px 16px rgba(0,0,0,0.3))"/>
+    
+    <!-- Gold/Amber Accent Clip at Top -->
+    <rect x="64" y="-8" width="32" height="14" rx="4" fill="#F59E0B"/>
+    
+    <!-- Musical Staves (5 lines per staff, 2 staves) -->
+    <!-- Staff 1 -->
+    <g stroke="#374151" stroke-width="1.5" stroke-linecap="round">
+      <line x1="20" y1="35" x2="140" y2="35"/>
+      <line x1="20" y1="42" x2="140" y2="42"/>
+      <line x1="20" y1="49" x2="140" y2="49"/>
+      <line x1="20" y1="56" x2="140" y2="56"/>
+      <line x1="20" y1="63" x2="140" y2="63"/>
+    </g>
+    
+    <!-- Staff 2 -->
+    <g stroke="#374151" stroke-width="1.5" stroke-linecap="round">
+      <line x1="20" y1="105" x2="140" y2="105"/>
+      <line x1="20" y1="112" x2="140" y2="112"/>
+      <line x1="20" y1="119" x2="140" y2="119"/>
+      <line x1="20" y1="126" x2="140" y2="126"/>
+      <line x1="20" y1="133" x2="140" y2="133"/>
+    </g>
+
+    <!-- Treble Clef (Simplified Stylized Flat Vector) -->
+    <path d="M36 72 C36 60 44 54 44 45 C44 38 38 35 34 40 C31 43 32 48 35 48 C37 48 39 46 39 44 C39 42 36 39 36 34 C36 26 44 24 44 24 C44 24 47 48 44 65 C43 73 38 78 35 83 C32 87 34 92 39 92 C45 92 48 87 45 81 C44 79 41 78 41 75 C41 71 45 71 46 75 C48 81 43 87 39 87 C37 87 36 84 38 81 C40 78 43 74 44 68 C45 61 41 53 41 46" fill="none" stroke="#1F2937" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Musical Notes (Melody Composition Representation) -->
+    <!-- Note 1 -->
+    <ellipse cx="65" cy="56" rx="4.5" ry="3.5" fill="#F59E0B" transform="rotate(-15 65 56)"/>
+    <path d="M68.5 54 L68.5 38" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M68.5 38 C75 36 78 39 82 35" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Note 2 -->
+    <ellipse cx="90" cy="49" rx="4.5" ry="3.5" fill="#1F2937" transform="rotate(-15 90 49)"/>
+    <path d="M93.5 47 L93.5 31" stroke="#1F2937" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Note 3 -->
+    <ellipse cx="115" cy="42" rx="4.5" ry="3.5" fill="#F59E0B" transform="rotate(-15 115 42)"/>
+    <path d="M118.5 40 L118.5 24" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Second Staff Notes (Chords / Melodic Flow) -->
+    <!-- Note 4 -->
+    <ellipse cx="62" cy="119" rx="4.5" ry="3.5" fill="#1F2937" transform="rotate(-15 62 119)"/>
+    <path d="M58.5 121 L58.5 137" stroke="#1F2937" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Note 5 -->
+    <ellipse cx="85" cy="112" rx="4.5" ry="3.5" fill="#F59E0B" transform="rotate(-15 85 112)"/>
+    <path d="M88.5 110 L88.5 94" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Note 6 -->
+    <ellipse cx="110" cy="126" rx="4.5" ry="3.5" fill="#1F2937" transform="rotate(-15 110 126)"/>
+    <path d="M106.5 128 L106.5 144" stroke="#1F2937" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Note 7 -->
+    <ellipse cx="130" cy="119" rx="4.5" ry="3.5" fill="#F59E0B" transform="rotate(-15 130 119)"/>
+    <path d="M133.5 117 L133.5 101" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Stylized Pen / Quill overlaying the sheet (representing "composed by") -->
+    <g transform="translate(100, 75) rotate(-35)">
+      <!-- Pen Body -->
+      <path d="M0 0 L8 0 L6 50 L2 50 Z" fill="#6366F1"/>
+      <!-- Pen Tip -->
+      <path d="M2 50 L6 50 L4 58 Z" fill="#E0E7FF"/>
+      <!-- Pen Clip -->
+      <rect x="3" y="4" width="2" height="15" rx="1" fill="#F59E0B"/>
+    </g>
+  </g>
+</svg>

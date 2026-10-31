@@ -1,0 +1,36 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Outer Window Frame representing the closed room context -->
+  <rect x="40" y="35" width="160" height="170" rx="6" fill="#222731" stroke="#323846" stroke-width="4"/>
+  <rect x="52" y="47" width="136" height="146" rx="3" fill="#161920"/>
+  
+  <!-- Window Panes (Closed tightly) -->
+  <line x1="120" y1="47" x2="120" y2="193" stroke="#323846" stroke-width="4"/>
+  <line x1="52" y1="120" x2="188" y2="120" stroke="#323846" stroke-width="4"/>
+  
+  <!-- Heavy, trapped stagnant air waves inside the room (Om kín / Ngột ngạt) -->
+  <path d="M 65 75 Q 85 65 105 75 T 145 75 T 175 75" fill="none" stroke="#FFA726" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+  <path d="M 60 95 Q 80 85 100 95 T 140 95 T 180 95" fill="none" stroke="#FFA726" stroke-width="3.5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 65 145 Q 85 135 105 145 T 145 145 T 175 145" fill="none" stroke="#FFA726" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+  <path d="M 60 165 Q 80 155 100 165 T 140 165 T 180 165" fill="none" stroke="#FFA726" stroke-width="3.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Center physical object: A classic school desk / chair setup enclosed by the heavy atmosphere (Noun focus) -->
+  <rect x="90" y="140" width="60" height="8" rx="2" fill="#E0E6ED"/>
+  <rect x="100" y="148" width="8" height="42" fill="#9AA5B1"/>
+  <rect x="132" y="148" width="8" height="42" fill="#9AA5B1"/>
+  
+  <!-- Focus accent: Concentrated heat and trapped moisture glow in the center -->
+  <circle cx="120" cy="115" r="28" fill="#FF7043" opacity="0.2"/>
+  <circle cx="120" cy="115" r="16" fill="#FF7043" opacity="0.4"/>
+  
+  <!-- Small condensation droplets on glass indicating extreme humidity (潮湿) -->
+  <circle cx="68" cy="65" r="3" fill="#64B5F6" opacity="0.7"/>
+  <circle cx="102" cy="58" r="2" fill="#64B5F6" opacity="0.7"/>
+  <circle cx="160" cy="70" r="2.5" fill="#64B5F6" opacity="0.7"/>
+  <circle cx="75" cy="105" r="2" fill="#64B5F6" opacity="0.7"/>
+  <circle cx="168" cy="110" r="3" fill="#64B5F6" opacity="0.7"/>
+
+  <!-- Latch securely locking the window shut (Tight enclosure) -->
+  <rect x="114" y="114" width="12" height="12" rx="2" fill="#FFA726"/>
+</svg>

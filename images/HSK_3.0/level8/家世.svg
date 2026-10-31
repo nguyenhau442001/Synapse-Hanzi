@@ -1,0 +1,39 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Conceptual Illustration for "家世" (Family background / Lineage) -->
+  <!-- Combining a classic dignified manor/estate roof structure with cascading generational pedigree nodes or ancestry pillar -->
+  
+  <g transform="translate(120, 120)">
+    <!-- Ancestral background glow/pillar -->
+    <rect x="-40" y="-70" width="80" height="130" rx="4" fill="#262C38" opacity="0.6"/>
+    <path d="M-50 -70 L0 -100 L50 -70 Z" fill="#323B4D"/>
+    
+    <!-- Foundation pillars representing heritage -->
+    <rect x="-30" y="-50" width="10" height="100" fill="#E6AF2E" opacity="0.9"/>
+    <rect x="20" y="-50" width="10" height="100" fill="#E6AF2E" opacity="0.9"/>
+    
+    <!-- Generational nodes / pedigree connection lines -->
+    <line x1="-25" y1="-30" x2="25" y2="-30" stroke="#4A5568" stroke-width="2" stroke-dasharray="3,3"/>
+    <line x1="-25" y1="0" x2="25" y2="0" stroke="#4A5568" stroke-width="2" stroke-dasharray="3,3"/>
+    <line x1="-25" y1="30" x2="25" y2="30" stroke="#4A5568" stroke-width="2" stroke-dasharray="3,3"/>
+    
+    <!-- Elite lineage markers (representing prominent family roots) -->
+    <circle cx="-25" cy="-30" r="6" fill="#F6AD55"/>
+    <circle cx="25" cy="-30" r="6" fill="#F6AD55"/>
+    
+    <circle cx="-25" cy="0" r="6" fill="#F6AD55"/>
+    <circle cx="25" cy="0" r="6" fill="#F6AD55"/>
+    
+    <!-- Current generation / Descendant focal point at the base -->
+    <circle cx="0" cy="45" r="10" fill="#E6AF2E"/>
+    <path d="M-14 70 C-14 58 14 58 14 70 Z" fill="#E6AF2E"/>
+
+    <!-- Roof / Estate gable representing "家" (Family/House) -->
+    <path d="M-65 -65 L0 -105 L65 -65 Z" fill="#E6AF2E"/>
+    <path d="M-55 -60 L0 -95 L55 -60 Z" fill="#1A1D24"/>
+    
+    <!-- Crest / Emblem on the roof representing distinguished background (显赫) -->
+    <polygon points="0,-78 5,-68 15,-65 8,-58 10,-48 0,-53 -10,-48 -8,-58 -15,-65 -5,-68" fill="#F6AD55"/>
+  </g>
+</svg>

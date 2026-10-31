@@ -1,0 +1,24 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 115)">
+    <!-- Endless loop symbol integrated into a sleek physical mechanical gear/hourglass abstraction representing unending repetition -->
+    <path d="M-45,-30 C-70,-30 -70,30 -45,30 C-20,30 -20,-30 0,-30 C20,-30 20,30 45,30 C70,30 70,-30 45,-30 C20,-30 20,30 0,30 C-20,30 -20,-30 -45,-30 Z" fill="none" stroke="#3A4252" stroke-width="12" stroke-linecap="round"/>
+    
+    <!-- Dynamic glowing loops showing never-ending motion -->
+    <path d="M-45,-30 C-70,-30 -70,30 -45,30 C-20,30 -20,-30 0,-30 C20,-30 20,30 45,30 C70,30 70,-30 45,-30 C20,-30 20,30 0,30 C-20,30 -20,-30 -45,-30 Z" fill="none" stroke="#F59E0B" stroke-width="6" stroke-linecap="round" stroke-dasharray="80 280">
+      <animate attributeName="stroke-dashoffset" values="360;0" dur="4s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Central interlocking argument / chatter nodes representing endless dispute (鸡毛蒜皮琐事) -->
+    <circle cx="-35" cy="-2" r="10" fill="#EF4444" opacity="0.9"/>
+    <path d="M-42,-2 L-28,-2 M-35,-9 L-35,5" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+    
+    <circle cx="35" cy="-2" r="10" fill="#3B82F6" opacity="0.9"/>
+    <path d="M28,-2 L42,-2" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Arrows indicating perpetual cycle -->
+    <path d="M-5,-42 L5,-35 L-5,-28 Z" fill="#F59E0B"/>
+    <path d="M5,42 L-5,35 L5,28 Z" fill="#F59E0B"/>
+  </g>
+</svg>

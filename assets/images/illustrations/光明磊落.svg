@@ -1,0 +1,38 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow representing openness and brilliance -->
+  <circle cx="120" cy="115" r="70" fill="#FFB703" opacity="0.06"/>
+  
+  <!-- The Character / Physical Subject (Open, upright, transparent posture) -->
+  <g transform="translate(0, 5)">
+    <!-- Head -->
+    <circle cx="120" cy="62" r="16" fill="#F3F4F6"/>
+    
+    <!-- Torso representing uprightness and open heart (no hidden or closed elements) -->
+    <path d="M 92 140 L 98 90 C 98 80, 142 80, 142 90 L 148 140 Z" fill="#3B82F6"/>
+    
+    <!-- Open gesture arms (confident, welcoming, straightforward) -->
+    <path d="M 104 95 L 68 120 L 76 128 L 108 102 Z" fill="#60A5FA"/>
+    <path d="M 136 95 L 172 120 L 164 128 L 132 102 Z" fill="#60A5FA"/>
+    
+    <!-- Clear glowing core / chest emblem representing "光明" (Brilliant & Bright) and "磊落" (Open & Upright) -->
+    <circle cx="120" cy="108" r="11" fill="#FFB703"/>
+    <circle cx="120" cy="108" r="6" fill="#FFFBEB"/>
+  </g>
+
+  <!-- Radiating beams of light/integrity framing the figure (Guangming - Bright and clear) -->
+  <g stroke="#FFB703" stroke-width="3" stroke-linecap="round" opacity="0.85">
+    <!-- Top upward ray -->
+    <line x1="120" y1="26" x2="120" y2="38" />
+    <!-- Upper right ray -->
+    <line x1="165" y1="50" x2="156" y2="58" />
+    <!-- Upper left ray -->
+    <line x1="75" y1="50" x2="84" y2="58" />
+  </g>
+
+  <!-- Stable, solid base representing "磊落" (steadfast, honorable foundation) -->
+  <path d="M 70 170 L 170 170 L 182 186 L 58 186 Z" fill="#374151" rx="4"/>
+  <rect x="80" y="156" width="80" height="14" rx="3" fill="#4B5563"/>
+</svg>

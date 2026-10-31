@@ -1,0 +1,53 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle glowing background grid / sterile medical ambient lighting -->
+  <circle cx="120" cy="120" r="85" fill="#222831" opacity="0.6"/>
+  <path d="M120 40 V200 M40 120 H200" stroke="#2A323D" stroke-width="1" stroke-dasharray="4 4" opacity="0.5"/>
+
+  <!-- Surgical lighting ring / Shadowless lamp effect -->
+  <circle cx="120" cy="120" r="70" fill="none" stroke="#3A4750" stroke-width="2" opacity="0.4"/>
+  <circle cx="120" cy="120" r="62" fill="none" stroke="#00ADB5" stroke-width="1" stroke-dasharray="8 6" opacity="0.3"/>
+
+  <!-- Central Organ (Heart/Medical Transplant Representation) in a Sleek Modern Flat Style -->
+  <g transform="translate(120, 118)">
+    <!-- Surgical / Transfer Tray / Platform -->
+    <ellipse cx="0" cy="45" rx="55" ry="14" fill="#2E3944" opacity="0.8"/>
+    <ellipse cx="0" cy="42" rx="50" ry="11" fill="#3A4750"/>
+
+    <!-- Transplant Action Arrows (Curved trajectory indicating moving/grafting) -->
+    <path d="M -65 15 C -65 -20, -35 -45, 0 -45 C 35 -45, 65 -20, 65 15" fill="none" stroke="#FF5722" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 6" opacity="0.8"/>
+    
+    <!-- Arrow heads -->
+    <polygon points="62,10 72,16 64,22" fill="#FF5722"/>
+    
+    <!-- Organic/Botanical & Organ dual theme (representing both organ transplant & plant grafting/di thực) -->
+    <!-- Heart / Organ Base -->
+    <path d="M 0 28 C -25 15, -35 -5, -25 -22 C -18 -32, -5 -28, 0 -18 C 5 -28, 18 -32, 25 -22 C 35 -5, 25 15, 0 28 Z" fill="#FF5722"/>
+    
+    <!-- Modern stylized internal vessel accents -->
+    <path d="M -8 -15 C -4 -22, 4 -22, 8 -15" fill="none" stroke="#FFF" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 0 -12 V 12" fill="none" stroke="#FFF" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Emerging fresh sprout (symbolizing life/di thực cây) seamlessly integrating with the medical heart -->
+    <path d="M 0 -18 C 0 -35, -15 -48, -25 -52 C -15 -42, -5 -35, 0 -18 Z" fill="#4ECCA3"/>
+    <path d="M 0 -18 C 0 -35, 15 -48, 25 -52 C 15 -42, 5 -35, 0 -18 Z" fill="#39AEA9"/>
+    <path d="M 0 -15 V -45" fill="none" stroke="#EAEAEA" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Precision Surgical / Bio-tech Scalpel/Tool Accents in the corners -->
+  <g transform="translate(45, 45) rotate(-45)">
+    <rect x="-2" y="-18" width="4" height="26" rx="2" fill="#00ADB5"/>
+    <polygon points="-2,8 2,8 0,18" fill="#EEEEEE"/>
+  </g>
+  <g transform="translate(195, 45) rotate(45)">
+    <circle cx="0" cy="0" r="10" fill="none" stroke="#00ADB5" stroke-width="2"/>
+    <circle cx="0" cy="0" r="3" fill="#00ADB5"/>
+  </g>
+
+  <!-- Focus / Target Crosshairs -->
+  <path d="M 120 28 V 36" stroke="#00ADB5" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 120 204 V 212" stroke="#00ADB5" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 28 120 H 36" stroke="#00ADB5" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 204 120 H 212" stroke="#00ADB5" stroke-width="3" stroke-linecap="round"/>
+</svg>

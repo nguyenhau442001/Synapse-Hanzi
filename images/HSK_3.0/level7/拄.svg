@@ -1,0 +1,39 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle Ground/Path Indicator -->
+  <path d="M 60 190 L 180 190" stroke="#2C313C" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="150" cy="190" r="2" fill="#3A4150"/>
+  <circle cx="90" cy="190" r="1.5" fill="#3A4150"/>
+
+  <!-- Elderly Man's Hand and Upper/Lower Body segments depicting the act of leaning/supporting on a cane -->
+  <!-- Back/Arm/Hand -->
+  <path d="M 105 100 Q 115 130 125 155" stroke="#E2E8F0" stroke-width="12" stroke-linecap="round" fill="none"/>
+  
+  <!-- Sleeve & Clothing (Sleek Modern Flat Style) -->
+  <path d="M 85 90 L 120 100 L 135 155 L 100 155 Z" fill="#3B82F6"/>
+  
+  <!-- Hand gripping the cane handle -->
+  <circle cx="126" cy="157" r="8" fill="#F6AD55"/>
+
+  <!-- The Cane (拐杖) - Central Focused Object -->
+  <!-- Shaft -->
+  <line x1="128" y1="65" x2="145" y2="200" stroke="#D97706" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Curved Handle (Classic Derby/Cane Handle) -->
+  <path d="M 110 65 Q 135 50 145 70" stroke="#D97706" stroke-width="6" stroke-linecap="round" fill="none"/>
+  
+  <!-- Metallic/Gold Accent Ring on Cane -->
+  <rect x="123" y="105" width="10" height="4" rx="2" fill="#FBBF24"/>
+
+  <!-- Cane Tip (Ferrule at the bottom touching ground) -->
+  <rect x="142" y="194" width="7" height="8" rx="2" fill="#94A3B8"/>
+
+  <!-- Focus/Action Accent (Subtle golden glow/highlight around the contact point to emphasize "zhǔ" / propping up) -->
+  <ellipse cx="145" cy="198" rx="16" ry="6" fill="#FBBF24" opacity="0.25"/>
+
+  <!-- Motion/Support Indicator (Minimalist upward supporting force arrows) -->
+  <path d="M 134 135 L 126 127 L 134 119" stroke="#FBBF24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M 138 175 L 130 167 L 138 159" stroke="#FBBF24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative subtle grid/tech lines in background -->
+  <path d="M40 120 H200" stroke="#252A34" stroke-width="1" stroke-dasharray="3 3"/>
+  <path d="M120 40 V200" stroke="#252A34" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!-- Motion lines / Synergy aura representing collaboration -->
+  <circle cx="120" cy="120" r="70" fill="none" stroke="#2D3748" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <circle cx="120" cy="120" r="50" fill="none" stroke="#3182CE" stroke-width="1" opacity="0.3"/>
+
+  <!-- Left Character (Hardware / Tech Domain) -->
+  <g id="character-left">
+    <!-- Body / Torso -->
+    <path d="M 60 165 C 60 145, 75 140, 95 140 C 95 160, 95 180, 95 195 L 60 195 Z" fill="#2B6CB0"/>
+    <!-- Head -->
+    <circle cx="77.5" cy="115" r="14" fill="#CBD5E0"/>
+    <!-- Hair -->
+    <path d="M 63 115 C 63 105, 92 105, 92 115 Z" fill="#4A5568"/>
+    <!-- Arm reaching right to shake hands -->
+    <path d="M 85 145 Q 105 140, 115 140" fill="none" stroke="#2B6CB0" stroke-width="8" stroke-linecap="round"/>
+    <!-- Hand -->
+    <circle cx="117" cy="140" r="5" fill="#CBD5E0"/>
+  </g>
+
+  <!-- Right Character (AI / Software Domain) -->
+  <g id="character-right">
+    <!-- Body / Torso -->
+    <path d="M 180 165 C 180 145, 165 140, 145 140 C 145 160, 145 180, 145 195 L 180 195 Z" fill="#D69E2E"/>
+    <!-- Head -->
+    <circle cx="162.5" cy="115" r="14" fill="#CBD5E0"/>
+    <!-- Hair -->
+    <path d="M 148 115 C 148 105, 177 105, 177 115 Z" fill="#744210"/>
+    <!-- Arm reaching left to shake hands -->
+    <path d="M 155 145 Q 135 140, 125 140" fill="none" stroke="#D69E2E" stroke-width="8" stroke-linecap="round"/>
+    <!-- Hand -->
+    <circle cx="123" cy="140" r="5" fill="#CBD5E0"/>
+  </g>
+
+  <!-- Central Handshake Intersection (Focal Point) -->
+  <circle cx="120" cy="140" r="8" fill="#F6AD55"/>
+
+  <!-- Dynamic floating conceptual elements above representing innovation/partnership -->
+  <!-- Gear (Hardware) -->
+  <g transform="translate(85, 75)">
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#63B3ED" stroke-width="4"/>
+    <path d="M-15 0 H15 M0 -15 V15" stroke="#63B3ED" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Connection Line / Spark between concepts -->
+  <path d="M 100 75 Q 120 60, 140 75" fill="none" stroke="#ED8936" stroke-width="2" stroke-dasharray="3 3"/>
+
+  <!-- AI Spark / Node (Software) -->
+  <g transform="translate(155, 75)">
+    <circle cx="0" cy="0" r="4" fill="#F6E05E"/>
+    <circle cx="0" cy="0" r="10" fill="none" stroke="#F6E05E" stroke-width="1.5" opacity="0.6"/>
+    <path d="M-12 -6 L-8 -10 M12 6 L8 10" stroke="#F6E05E" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Ground / Base platform -->
+  <rect x="50" y="195" width="140" height="4" rx="2" fill="#4A5568"/>
+</svg>

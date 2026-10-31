@@ -1,0 +1,42 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Main physical object: A structural wooden/metal framework (representing a plan/schedule grid) with a distinct, deliberate physical gap and a movable sliding spacer piece, perfectly visualizing "margin/room for maneuver" (余地) -->
+    
+    <!-- Background grid lines for structural/planning context -->
+    <line x1="50" y1="80" x2="190" y2="80" stroke="#2A2F3D" stroke-width="2" stroke-dasharray="4 4"/>
+    <line x1="50" y1="120" x2="190" y2="120" stroke="#2A2F3D" stroke-width="2" stroke-dasharray="4 4"/>
+    <line x1="50" y1="160" x2="190" y2="160" stroke="#2A2F3D" stroke-width="2" stroke-dasharray="4 4"/>
+
+    <!-- Fixed Structure Left Part -->
+    <path d="M 50 70 L 110 70 L 110 170 L 50 170 Z" fill="#2D3748" rx="4"/>
+    <rect x="65" y="85" width="30" height="70" rx="4" fill="#1A1D24"/>
+    <circle cx="80" cy="120" r="4" fill="#4A5568"/>
+
+    <!-- Fixed Structure Right Part -->
+    <path d="M 150 70 L 190 70 L 190 170 L 150 170 Z" fill="#2D3748" rx="4"/>
+    <rect x="160" y="85" width="20" height="70" rx="4" fill="#1A1D24"/>
+    <circle cx="170" cy="120" r="4" fill="#4A5568"/>
+
+    <!-- The "Yúdì" (Margin / Room): The physical flexible sliding spacer element in energetic orange/gold -->
+    <g transform="translate(115, 75)">
+      <!-- Main mobile block -->
+      <rect x="0" y="0" width="30" height="90" rx="6" fill="#F6AD55"/>
+      
+      <!-- Grip texture lines -->
+      <line x1="10" y1="30" x2="20" y2="30" stroke="#DD6B20" stroke-width="3" stroke-linecap="round"/>
+      <line x1="10" y1="45" x2="20" y2="45" stroke="#DD6B20" stroke-width="3" stroke-linecap="round"/>
+      <line x1="10" y1="60" x2="20" y2="60" stroke="#DD6B20" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- Mechanical adjustment arrows indicating flexibility/room to move -->
+      <path d="M -8 45 L -16 45 M -12 41 L -16 45 L -12 49" stroke="#F6AD55" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 38 45 L 46 45 M 42 41 L 46 45 L 42 49" stroke="#F6AD55" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Highlight indicator brackets showing the clearance / buffer space -->
+    <path d="M 110 55 L 110 50 L 145 50 L 145 55" fill="none" stroke="#63B3ED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="127" cy="50" r="2" fill="#63B3ED"/>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 120)">
+    <!-- Chain links -->
+    <path d="M-40 -10 L-20 -10 A 10 10 0 0 1 -20 10 L-40 10 A 10 10 0 0 1 -40 -10" fill="none" stroke="#7D8590" stroke-width="8" stroke-linecap="round"/>
+    <path d="M20 -10 L40 -10 A 10 10 0 0 1 40 10 L20 10 A 10 10 0 0 1 20 -10" fill="none" stroke="#7D8590" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Sword blade slicing through the center -->
+    <path d="M-15 -80 L15 80" stroke="#FFB84D" stroke-width="10" stroke-linecap="round"/>
+    <path d="M-25 -70 L5 90" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+    
+    <!-- Spark/Impact effect at the cut -->
+    <g fill="#FFB84D">
+      <circle cx="0" cy="0" r="6"/>
+      <path d="M0 -15 L5 -5 L15 0 L5 5 L0 15 L-5 5 L-15 0 L-5 -5 Z"/>
+    </g>
+  </g>
+</svg>

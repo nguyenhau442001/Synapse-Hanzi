@@ -1,0 +1,19 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(60, 60)">
+    <!-- Smartphone body -->
+    <rect x="30" y="10" width="60" height="100" rx="8" fill="#3B4252" stroke="#FFB86C" stroke-width="2"/>
+    <!-- Screen -->
+    <rect x="35" y="20" width="50" height="80" rx="4" fill="#2E3440"/>
+    <!-- Speech bubble representing the 'tucao' (complaint) -->
+    <path d="M95 30 L130 10 L130 50 L105 50 Z" fill="#FFB86C"/>
+    <!-- Lightning bolt icon inside bubble (representing battery issue) -->
+    <path d="M110 20 L120 20 L112 35 L122 35 L110 45 L115 30 L105 30 Z" fill="#1A1D24"/>
+    <!-- Hand holding the phone -->
+    <path d="M20 100 Q10 100 10 110 L10 120 Q10 130 20 130 L40 130" fill="#E5E9F0"/>
+    <!-- Lines indicating social media post/activity -->
+    <line x1="40" y1="30" x2="75" y2="30" stroke="#88C0D0" stroke-width="4" stroke-linecap="round"/>
+    <line x1="40" y1="45" x2="70" y2="45" stroke="#88C0D0" stroke-width="4" stroke-linecap="round"/>
+    <line x1="40" y1="60" x2="80" y2="60" stroke="#88C0D0" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

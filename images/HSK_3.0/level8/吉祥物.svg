@@ -1,0 +1,35 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Mascot Body -->
+  <circle cx="120" cy="135" r="55" fill="#FFFFFF"/>
+  
+  <!-- Ears -->
+  <circle cx="80" cy="90" r="18" fill="#2D3436"/>
+  <circle cx="160" cy="90" r="18" fill="#2D3436"/>
+  
+  <!-- Eye Patches -->
+  <ellipse cx="100" cy="125" rx="15" ry="20" fill="#2D3436" transform="rotate(-15 100 125)"/>
+  <ellipse cx="140" cy="125" rx="15" ry="20" fill="#2D3436" transform="rotate(15 140 125)"/>
+  
+  <!-- Eyes -->
+  <circle cx="98" cy="125" r="4" fill="#FFFFFF"/>
+  <circle cx="142" cy="125" r="4" fill="#FFFFFF"/>
+  
+  <!-- Nose -->
+  <path d="M115 140 L125 140 L120 146 Z" fill="#2D3436"/>
+  
+  <!-- Arms -->
+  <path d="M70 140 Q50 140 55 170" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" fill="none"/>
+  <path d="M170 140 Q190 140 185 170" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" fill="none"/>
+  
+  <!-- Legs -->
+  <ellipse cx="95" cy="195" rx="15" ry="10" fill="#2D3436"/>
+  <ellipse cx="145" cy="195" rx="15" ry="10" fill="#2D3436"/>
+  
+  <!-- Gold Scarf/Accent -->
+  <path d="M90 155 Q120 165 150 155" stroke="#FFB800" stroke-width="8" stroke-linecap="round" fill="none"/>
+  
+  <!-- Decorative Sparkle -->
+  <path d="M180 80 L185 70 L190 80 L200 85 L190 90 L185 100 L180 90 L170 85 Z" fill="#FFB800"/>
+</svg>

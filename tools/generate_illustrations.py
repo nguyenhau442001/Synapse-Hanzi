@@ -45,8 +45,18 @@ def load_hsk_pos_db():
         if m:
             return json.loads(m.group(1))
     except Exception as e:
-        print(f"[!] Warning loading HSK_POS_DB: {e}", flush=True)
+        log_ts(f"[!] Warning loading HSK_POS_DB: {e}")
     return {}
+
+from datetime import datetime
+
+def log_ts(msg):
+    ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    s = str(msg)
+    if s.startswith("\n"):
+        print(f"\n[{ts}] {s[1:]}", flush=True)
+    else:
+        print(f"[{ts}] {s}", flush=True)
 
 HSK_POS_DB = load_hsk_pos_db()
 
@@ -78,7 +88,7 @@ def load_vocabulary():
                         if h and h not in words_by_hanzi:
                             words_by_hanzi[h] = item
         except Exception as e:
-            print(f"[!] Warning reading {f.name}: {e}", flush=True)
+            log_ts(f"[!] Warning reading {f.name}: {e}")
 
     return words_by_hanzi
 
@@ -392,15 +402,16 @@ def validate_semantic_illustration(word_info, plan, svg_code, api_key=None):
     return True, "Valid"
 
 MODELS_TO_TRY = [
-    "gemini-3.5-flash-lite",
-    "gemini-flash-lite-latest",
     "gemini-2.5-flash",
-    "gemini-3.1-flash-lite-preview",
     "gemini-flash-latest",
     "gemini-3.5-flash",
+    "gemini-3.6-flash",
+    "gemini-3.7-flash",
     "gemini-3.8-flash",
-    "gemini-3-flash-preview",
+    "gemini-flash-lite-latest",
+    "gemini-3.5-flash-lite",
     "gemini-3.1-flash-lite",
+    "gemini-3.1-flash-lite-preview",
 ]
 
 def call_gemini_svg_api(word_info, api_key, max_retries=3):
@@ -450,47 +461,35 @@ def call_gemini_svg_api(word_info, api_key, max_retries=3):
                     continue
                 else:
                     err_text = he.read().decode("utf-8", errors="ignore")
-                    print(f"    [!] {model} HTTP {he.code}: {err_text[:120]}", flush=True)
+                    log_ts(f"    [!] {model} HTTP {he.code}: {err_text[:120]}")
             except Exception as e:
                 # Timeout or connection error, try next model
                 continue
         # If all models hit limit/error in this attempt, wait and retry
         if attempt < max_retries - 1:
             wait_sec = 15 * (attempt + 1)
-            print(f"    [!] All models busy/exhausted. Waiting {wait_sec}s before retry {attempt+2}/{max_retries}...", flush=True)
+            log_ts(f"    [!] All models busy/exhausted. Waiting {wait_sec}s before retry {attempt+2}/{max_retries}...")
             time.sleep(wait_sec)
 
     return None
 
 def update_illustrations_manifest(records):
-    """Updates STATIC_ILLUSTRATIONS_INDEX in word-illustrations.js."""
-    if not WORD_ILLUSTRATIONS_JS.exists():
-        return
-
-    content = WORD_ILLUSTRATIONS_JS.read_text(encoding="utf-8")
-
-    match = re.search(r"const STATIC_ILLUSTRATIONS_INDEX = (\{[\s\S]*?\});", content)
-    if match:
+    """Updates illustrations_index.json in database/illustrations/."""
+    out_file = REPO_ROOT / "database" / "illustrations" / "illustrations_index.json"
+    existing = {}
+    if out_file.exists():
         try:
-            existing = json.loads(match.group(1))
+            existing = json.loads(out_file.read_text(encoding="utf-8"))
         except Exception:
             existing = {}
-        existing.update(records)
-        new_block = f"const STATIC_ILLUSTRATIONS_INDEX = {json.dumps(existing, ensure_ascii=False, indent=2)};"
-        content = content[:match.start()] + new_block + content[match.end():]
-    else:
-        new_block = f"\n// Pre-generated static illustration assets stored in assets/images/illustrations/\nconst STATIC_ILLUSTRATIONS_INDEX = {json.dumps(records, ensure_ascii=False, indent=2)};\n\n"
-        target = "function getWordIllustration"
-        if target in content:
-            content = content.replace(target, new_block + target, 1)
-
-    WORD_ILLUSTRATIONS_JS.write_text(content, encoding="utf-8")
+    existing.update(records)
+    out_file.write_text(json.dumps(existing, ensure_ascii=False, indent=2), encoding="utf-8")
 
     # Sync to worktree if available
     if WORKTREE_DIR.exists():
         try:
-            dest = WORKTREE_DIR / "assets" / "js" / "word-illustrations.js"
-            dest.write_text(content, encoding="utf-8")
+            dest = WORKTREE_DIR / "database" / "illustrations" / "illustrations_index.json"
+            dest.write_text(json.dumps(existing, ensure_ascii=False, indent=2), encoding="utf-8")
         except Exception:
             pass
 
@@ -532,11 +531,10 @@ def main():
                 else:
                     targets = data
     else:
-        print("[!] Please specify --words or --hsk", flush=True)
+        log_ts("[!] Please specify --words or --hsk")
         sys.exit(1)
 
     total = len(targets)
-
     # 1. Plan-only mode
     if args.plan_only:
         print(f"[*] Semantic Scene Blueprints for {total} word(s):\n", flush=True)
@@ -581,10 +579,18 @@ def main():
 
     api_key = (args.api_key or "").strip()
     if not api_key:
-        print("[!] Error: Google AI Studio API Key is required for generation (--api-key or GOOGLE_AI_KEY).", flush=True)
+        key_file = REPO_ROOT / ".api_key"
+        if key_file.exists():
+            api_key = key_file.read_text(encoding="utf-8").strip().splitlines()[0].strip()
+
+    if not api_key:
+        api_key = os.environ.get("GOOGLE_AI_KEY", "").strip()
+
+    if not api_key:
+        log_ts("[!] Error: Google AI Studio API Key is required for generation (--api-key, GOOGLE_AI_KEY or .api_key).")
         sys.exit(1)
 
-    print(f"[*] Starting semantic batch generation for {total} word(s) [Delay: {args.delay}s]...", flush=True)
+    log_ts(f"[*] Starting semantic batch generation for {total} word(s) [Delay: {args.delay}s]...")
 
     success_count = 0
     skip_count = 0
@@ -617,10 +623,10 @@ def main():
                     "caption": meaning
                 }
                 if idx % 20 == 0:
-                    print(f"[{idx}/{total}] ({pct:.1f}%) Progress check: {skip_count} skipped (valid), {success_count} newly generated.", flush=True)
+                    log_ts(f"[{idx}/{total}] ({pct:.1f}%) Progress check: {skip_count} skipped (valid), {success_count} newly generated.")
                 continue
 
-        print(f"[{idx}/{total}] ({pct:.1f}%) Generating '{hanzi}' ({pinyin} - {meaning}) [{plan['category']['code']}]...", flush=True)
+        log_ts(f"[{idx}/{total}] ({pct:.1f}%) Generating '{hanzi}' ({pinyin} - {meaning}) [{plan['category']['code']}]...")
 
         svg_code = call_gemini_svg_api(item, api_key)
         if svg_code:
@@ -638,10 +644,10 @@ def main():
                 "caption": meaning
             }
             success_count += 1
-            print(f"    ✓ Validated & Saved SVG ({len(svg_code)} B)", flush=True)
+            log_ts(f"    ✓ Validated & Saved SVG ({len(svg_code)} B)")
         else:
             fail_count += 1
-            print(f"    ✗ Failed to generate validated SVG for '{hanzi}'", flush=True)
+            log_ts(f"    ✗ Failed to generate validated SVG for '{hanzi}'")
 
         # Incrementally update manifest every 5 words
         if len(pending_records) >= 5 or idx == total:
@@ -656,7 +662,7 @@ def main():
     if pending_records:
         update_illustrations_manifest(pending_records)
 
-    print(f"\n[*] BATCH COMPLETED: {total} total, {success_count} generated, {skip_count} skipped, {fail_count} failed.", flush=True)
+    log_ts(f"\n[*] BATCH COMPLETED: {total} total, {success_count} generated, {skip_count} skipped, {fail_count} failed.")
 
 if __name__ == "__main__":
     main()

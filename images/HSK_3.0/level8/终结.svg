@@ -1,0 +1,62 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative glowing impact / horizon line -->
+  <line x1="40" y1="180" x2="200" y2="180" stroke="#2D333F" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Motion lines indicating sweeping decisive action (ending) -->
+  <path d="M 60 110 Q 120 70 180 110" fill="none" stroke="#3A4454" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round"/>
+  <path d="M 50 130 Q 120 90 190 130" fill="none" stroke="#3A4454" stroke-width="1.5" stroke-dasharray="3 3" stroke-linecap="round"/>
+
+  <!-- Impact Flash / Final Point visual representation -->
+  <g transform="translate(120, 115)">
+    <!-- Outer energy burst -->
+    <circle cx="0" cy="0" r="28" fill="#FFB703" opacity="0.15"/>
+    <circle cx="0" cy="0" r="18" fill="#FFB703" opacity="0.3"/>
+    
+    <!-- Central bold definitive dot / period (representing "putting an end to / 终结") -->
+    <circle cx="0" cy="0" r="10" fill="#FFB703"/>
+    
+    <!-- Sharp directional impact shards -->
+    <path d="M -16 0 L -24 -4 L -20 4 Z" fill="#FFB703"/>
+    <path d="M 16 0 L 24 4 L 20 -4 Z" fill="#FFB703"/>
+    <path d="M 0 -16 L 4 -24 L -4 -20 Z" fill="#FFB703"/>
+  </g>
+
+  <!-- Dynamic Human Character Action (Decisive downward striking / concluding action) -->
+  <g transform="translate(120, 155)">
+    <!-- Character Torso & Legs in stable, powerful stance -->
+    <path d="M -12 -35 L 12 -35 L 18 5 L 8 45 L -2 45 L -12 5 Z" fill="#3B82F6"/>
+    
+    <!-- Belt / Waist detail -->
+    <rect x="-13" y="-5" width="26" height="4" fill="#1E40AF"/>
+
+    <!-- Head -->
+    <circle cx="0" cy="-48" r="9" fill="#E2E8F0"/>
+    
+    <!-- Dynamic Arms bringing down the definitive closure -->
+    <!-- Rear arm (motion blur effect) -->
+    <path d="M -8 -40 C -25 -50 -35 -20 -30 -5" fill="none" stroke="#60A5FA" stroke-width="5" stroke-linecap="round" opacity="0.4"/>
+    
+    <!-- Front active arm and hand striking down to set the final dot -->
+    <path d="M 8 -40 C 25 -30 25 -10 12 -4" fill="none" stroke="#3B82F6" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Fist/Hand making contact or executing the action -->
+    <circle cx="10" cy="-2" r="5" fill="#E2E8F0"/>
+  </g>
+
+  <!-- Secondary opposing crumbling element representing the chaos/war being ended -->
+  <g transform="translate(65, 150)">
+    <!-- Falling / breaking debris particles -->
+    <path d="M -10 15 L -5 5 L 0 12 Z" fill="#64748B"/>
+    <path d="M 15 20 L 22 10 L 18 25 Z" fill="#475569"/>
+    <rect x="-5" y="10" width="10" height="8" rx="2" fill="#64748B" transform="rotate(-25)"/>
+  </g>
+
+  <!-- Right side breaking debris -->
+  <g transform="translate(175, 150)">
+    <path d="M 5 15 L 12 5 L 15 18 Z" fill="#64748B"/>
+    <rect x="-8" y="12" width="12" height="10" rx="2" fill="#475569" transform="rotate(15)"/>
+  </g>
+</svg>

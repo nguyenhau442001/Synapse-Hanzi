@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Bamboo Steamer Base -->
+  <ellipse cx="120" cy="165" rx="70" ry="20" fill="#4A3728"/>
+  <ellipse cx="120" cy="165" rx="65" ry="17" fill="#5D4633"/>
+  
+  <!-- Steamer Body -->
+  <path d="M55 165 L55 110 A65 17 0 0 1 185 110 L185 165 Z" fill="#6B523E"/>
+  <ellipse cx="120" cy="110" rx="65" ry="17" fill="#7D624B"/>
+  
+  <!-- Steamer Lid -->
+  <ellipse cx="120" cy="105" rx="70" ry="20" fill="#8C6E56"/>
+  <circle cx="120" cy="105" r="10" fill="#A6856B"/>
+  
+  <!-- Fish -->
+  <path d="M80 135 C 80 120, 160 120, 160 135 C 160 150, 80 150, 80 135" fill="#FFB347"/>
+  <path d="M160 135 L180 125 L180 145 Z" fill="#FFB347"/>
+  <circle cx="95" cy="132" r="3" fill="#1A1D24"/>
+  
+  <!-- Steam -->
+  <path d="M100 90 Q 90 70, 100 50" stroke="#E0E0E0" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M120 85 Q 110 65, 120 45" stroke="#E0E0E0" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M140 90 Q 150 70, 140 50" stroke="#E0E0E0" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.6"/>
+</svg>

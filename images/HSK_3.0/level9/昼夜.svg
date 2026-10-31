@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Sun side (Day) -->
+  <path d="M120 120 L120 40 A80 80 0 0 1 200 120 Z" fill="#FFB347"/>
+  <circle cx="160" cy="80" r="15" fill="#FFD700"/>
+  
+  <!-- Moon side (Night) -->
+  <path d="M120 120 L120 200 A80 80 0 0 0 40 120 Z" fill="#4A90E2"/>
+  <path d="M70 160 A20 20 0 1 0 70 120 A25 25 0 1 1 70 160 Z" fill="#E0E0E0"/>
+  
+  <!-- Central dividing line -->
+  <line x1="120" y1="40" x2="120" y2="200" stroke="#1A1D24" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Human figure representing the 'duty/watch' aspect -->
+  <g transform="translate(105, 105)">
+    <circle cx="15" cy="15" r="12" fill="#FFFFFF"/>
+    <path d="M15 27 L15 45 M15 35 L5 40 M15 35 L25 40 M15 45 L10 60 M15 45 L20 60" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

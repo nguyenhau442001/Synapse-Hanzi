@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- The "Force" of History/Time represented by a massive, unstoppable stone gear -->
+  <path d="M120 60 C 153.1 60 180 86.9 180 120 C 180 153.1 153.1 180 120 180 C 86.9 180 60 153.1 60 120 C 60 86.9 86.9 60 120 60 Z" fill="#2C3440" stroke="#FFB84D" stroke-width="4"/>
+  <path d="M120 40 L 120 60 M120 180 L 120 200 M200 120 L 180 120 M40 120 L 60 120" stroke="#FFB84D" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- The "Resistance" represented by a strong, determined human figure pushing against the gear -->
+  <!-- Legs -->
+  <path d="M90 190 L 105 150 M110 190 L 115 150" stroke="#E0E6ED" stroke-width="8" stroke-linecap="round"/>
+  <!-- Torso -->
+  <path d="M100 150 L 100 110" stroke="#E0E6ED" stroke-width="10" stroke-linecap="round"/>
+  <!-- Arms pushing -->
+  <path d="M100 120 L 70 100 M100 125 L 70 110" stroke="#E0E6ED" stroke-width="6" stroke-linecap="round"/>
+  <!-- Head -->
+  <circle cx="100" cy="100" r="10" fill="#E0E6ED"/>
+  
+  <!-- Visualizing the futility/resistance: A crack forming on the gear where the person pushes -->
+  <path d="M75 105 L 85 115" stroke="#FF5252" stroke-width="3" stroke-linecap="round"/>
+</svg>

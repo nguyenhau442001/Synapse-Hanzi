@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Semiconductor Cleanroom Background Grid Elements -->
+  <g opacity="0.15">
+    <path d="M40 60 H200 M40 100 H200 M40 140 H200 M40 180 H200" stroke="#60A5FA" stroke-width="1" stroke-dasharray="4 4"/>
+    <path d="M60 40 V200 M100 40 V200 M140 40 V200 M180 40 V200" stroke="#60A5FA" stroke-width="1" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Glowing Wafer/Technology Accent Ring -->
+  <circle cx="120" cy="120" r="75" fill="none" stroke="#334155" stroke-width="2"/>
+  <circle cx="120" cy="120" r="75" fill="none" stroke="#F59E0B" stroke-width="3" stroke-dasharray="120 350" stroke-linecap="round" transform="rotate(-45 120 120)"/>
+
+  <!-- Semiconductor Silicon Wafer (Physical Object Representing "须" Context) -->
+  <!-- Wafer Outer Edge -->
+  <circle cx="120" cy="120" r="58" fill="#0F172A" stroke="#38BDF8" stroke-width="2"/>
+  <!-- Wafer Flat Edge (orientation flat) -->
+  <path d="M 100 175 L 140 175" stroke="#F59E0B" stroke-width="3"/>
+
+  <!-- Microprocessor / Silicon Die Grid Pattern -->
+  <g opacity="0.85">
+    <!-- Center Die -->
+    <rect x="102" y="102" width="36" height="36" rx="4" fill="#1E293B" stroke="#60A5FA" stroke-width="1.5"/>
+    <!-- Die Circuits -->
+    <circle cx="120" cy="120" r="6" fill="#F59E0B"/>
+    <path d="M120 102 V90 M120 138 V150 M102 120 H90 M138 120 H150" stroke="#60A5FA" stroke-width="1.5"/>
+    
+    <!-- Surrounding Circuit Blocks -->
+    <rect x="65" y="65" width="28" height="28" rx="3" fill="#1E293B" stroke="#38BDF8" stroke-width="1"/>
+    <rect x="147" y="65" width="28" height="28" rx="3" fill="#1E293B" stroke="#38BDF8" stroke-width="1"/>
+    <rect x="65" y="147" width="28" height="28" rx="3" fill="#1E293B" stroke="#38BDF8" stroke-width="1"/>
+    <rect x="147" y="147" width="28" height="28" rx="3" fill="#1E293B" stroke="#38BDF8" stroke-width="1"/>
+
+    <!-- Circuit Trace Lines -->
+    <path d="M93 79 H102 M147 79 H138 M93 161 H102 M147 161 H138" stroke="#38BDF8" stroke-width="1"/>
+    <path d="M79 93 V102 M79 147 V138 M161 93 V102 M161 147 V138" stroke="#38BDF8" stroke-width="1"/>
+  </g>
+
+  <!-- Mandatory / Essential Focus Indicator (Subtle professional callout ring) -->
+  <circle cx="120" cy="120" r="66" fill="none" stroke="#F59E0B" stroke-width="2" stroke-dasharray="6 6" opacity="0.6"/>
+
+</svg>

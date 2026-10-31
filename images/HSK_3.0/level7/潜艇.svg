@@ -1,0 +1,166 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background / Ocean Depth Elements -->
+  <g opacity="0.4">
+    <!-- Deep sea light rays from surface -->
+    <polygon points="40,0 80,240 60,240 20,0" fill="#2E4A62" opacity="0.15"/>
+    <polygon points="120,0 180,240 150,240 100,0" fill="#2E4A62" opacity="0.2"/>
+    <polygon points="180,0 230,240 210,240 160,0" fill="#2E4A62" opacity="0.1"/>
+    
+    <!-- Ambient glowing particles / bubbles -->
+    <circle cx="50" cy="80" r="1.5" fill="#64B5F6" opacity="0.3"/>
+    <circle cx="190" cy="60" r="2" fill="#64B5F6" opacity="0.4"/>
+    <circle cx="210" cy="180" r="1" fill="#64B5F6" opacity="0.3"/>
+    <circle cx="40" cy="190" r="2" fill="#64B5F6" opacity="0.2"/>
+    <circle cx="85" cy="150" r="1.5" fill="#64B5F6" opacity="0.5"/>
+    <circle cx="150" cy="110" r="1" fill="#64B5F6" opacity="0.4"/>
+  </g>
+
+  <!-- Sonar wave arcs (Subtle background emphasis for stealth patrol) -->
+  <g opacity="0.25" fill="none" stroke="#00E5FF" stroke-width="1.5" stroke-dasharray="4 4">
+    <path d="M 120 120 A 70 70 0 0 1 170 170"/>
+    <path d="M 120 120 A 100 100 0 0 1 190 190"/>
+  </g>
+
+  <!-- Nuclear Submarine (潜艇) -->
+  <g transform="translate(15, 20)">
+    <!-- Main Hull (Streamlined cigar shape) -->
+    <path d="M 35 100 
+             C 35 85, 60 75, 110 75 
+             L 165 75 
+             C 195 75, 210 85, 210 100 
+             C 210 115, 195 125, 165 125 
+             L 110 125 
+             C 60 125, 35 115, 35 100 Z" 
+          fill="#37474F"/>
+
+    <!-- Hull Upper Highlight / Metallic Gradient Layer -->
+    <path d="M 50 82 
+             C 70 77, 100 75.5, 130 75.5 
+             L 165 75.5 
+             C 190 75.5, 202 81, 207 88 
+             C 195 80, 175 78, 150 78 
+             L 90 78 
+             C 65 78, 55 80, 50 82 Z" 
+          fill="#546E7A" opacity="0.8"/>
+
+    <!-- Keel / Underbelly Shadow -->
+    <path d="M 50 118 
+             C 70 123, 100 124.5, 130 124.5 
+             L 165 124.5 
+             C 190 124.5, 202 119, 207 112 
+             C 195 120, 175 122, 150 122 
+             L 90 122 
+             C 65 122, 55 120, 50 118 Z" 
+          fill="#263238"/>
+
+    <!-- Sail / Conning Tower -->
+    <path d="M 95 75 
+             L 102 45 
+             C 103 42, 106 40, 110 40 
+             L 125 40 
+             C 129 40, 132 42, 133 45 
+             L 138 75 Z" 
+          fill="#37474F"/>
+    
+    <!-- Sail Front highlight -->
+    <path d="M 98 75 L 103 46 C 104 43, 106 41, 110 41 L 113 41 L 105 75 Z" fill="#546E7A" opacity="0.6"/>
+
+    <!-- Periscopes / Masts -->
+    <!-- Attack Periscope -->
+    <rect x="110" y="26" width="3" height="16" fill="#78909C"/>
+    <path d="M 110 26 L 106 26" stroke="#78909C" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Search Periscope / Radar Mast -->
+    <rect x="120" y="30" width="2.5" height="12" fill="#78909C"/>
+    <circle cx="121.25" cy="29" r="1.5" fill="#FFC107"/>
+
+    <!-- Control Surface / Stern Dive Planes (Horizontal Tail Fins) -->
+    <path d="M 185 92 
+             L 215 82 
+             L 215 88 
+             L 185 96 Z" 
+          fill="#37474F"/>
+    <path d="M 185 108 
+             L 215 118 
+             L 215 112 
+             L 185 104 Z" 
+          fill="#263238"/>
+
+    <!-- Vertical Rudder & Stern Stabilizers -->
+    <path d="M 190 85 
+             L 212 70 
+             L 212 76 
+             L 190 95 Z" 
+          fill="#37474F"/>
+    <path d="M 190 115 
+             L 212 130 
+             L 212 124 
+             L 190 105 Z" 
+          fill="#263238"/>
+
+    <!-- Propeller / Screw (Aft) -->
+    <g transform="translate(212, 100)">
+      <!-- Hub -->
+      <ellipse cx="2" cy="0" rx="3" ry="8" fill="#FFC107"/>
+      <!-- Blades -->
+      <path d="M 2 -8 C 8 -12, 10 -4, 2 0 Z" fill="#FFA000" opacity="0.9"/>
+      <path d="M 2 8 C 8 12, 10 4, 2 0 Z" fill="#FFA000" opacity="0.9"/>
+      <path d="M 2 0 C 6 -3, 6 3, 2 0 Z" fill="#FF8F00"/>
+    </g>
+
+    <!-- Hull Panel Lines / Architectural Details -->
+    <!-- Bow Dome Seam -->
+    <path d="M 55 83 C 48 90, 48 110, 55 117" fill="none" stroke="#263238" stroke-width="1.5" opacity="0.6"/>
+    
+    <!-- Hull Segments -->
+    <line x1="85" y1="76" x2="85" y2="124" stroke="#263238" stroke-width="1.5" opacity="0.6"/>
+    <line x1="155" y1="76" x2="155" y2="124" stroke="#263238" stroke-width="1.5" opacity="0.6"/>
+
+    <!-- Escape Hatch / Details on Deck -->
+    <rect x="70" y="75" width="8" height="2" rx="1" fill="#78909C"/>
+    <rect x="145" y="75" width="8" height="2" rx="1" fill="#78909C"/>
+
+    <!-- Navigation / Operational Lights -->
+    <!-- Glowing Command Room / Port Window Accent -->
+    <circle cx="116" cy="55" r="2.5" fill="#00E5FF" opacity="0.9"/>
+    <circle cx="116" cy="55" r="4" fill="#00E5FF" opacity="0.3"/>
+
+    <!-- Subtle Bow Sonar Array indicator -->
+    <circle cx="42" cy="100" r="3" fill="#FFC107" opacity="0.8"/>
+    <circle cx="42" cy="100" r="5.5" fill="none" stroke="#FFC107" stroke-width="1" opacity="0.4"/>
+
+    <!-- Active Propulsion Wake / Water Flow Lines -->
+    <path d="M 218 97 C 225 96, 230 94, 235 92" fill="none" stroke="#64B5F6" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <path d="M 218 103 C 225 104, 230 106, 235 108" fill="none" stroke="#64B5F6" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <path d="M 220 100 C 228 100, 234 100, 240 100" fill="none" stroke="#64B5F6" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+  </g>
+
+  <!-- Ascending Bubbles from Submarine Hull -->
+  <g fill="#64B5F6" opacity="0.6">
+    <circle cx="120" cy="55" r="1.5"/>
+    <circle cx="123" cy="46" r="2"/>
+    <circle cx="121" cy="38" r="1"/>
+    <circle cx="125" cy="28" r="2.5"/>
+    
+    <circle cx="155" cy="65" r="1.2"/>
+    <circle cx="157" cy="58" r="1.8"/>
+  </g>
+
+  <!-- Ocean Floor Silhouette (Bottom context anchor) -->
+  <path d="M 0 225 
+           C 40 215, 80 230, 130 220 
+           C 170 212, 200 228, 240 220 
+           L 240 240 
+           L 0 240 Z" 
+        fill="#12151A"/>
+        
+  <!-- Small glowing deep-sea flora/detail on ocean floor -->
+  <path d="M 180 223 C 182 210, 185 205, 188 200 C 191 205, 194 210, 196 223" fill="none" stroke="#00E5FF" stroke-width="1.5" opacity="0.3" stroke-linecap="round"/>
+  <circle cx="188" cy="198" r="1.5" fill="#00E5FF" opacity="0.5"/>
+  
+  <path d="M 60 227 C 62 218, 64 214, 66 210 C 68 214, 70 218, 72 227" fill="none" stroke="#FFC107" stroke-width="1.5" opacity="0.3" stroke-linecap="round"/>
+  <circle cx="66" cy="208" r="1.5" fill="#FFC107" opacity="0.5"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Opponent's face (The source of contempt) -->
+  <g transform="translate(120, 120)">
+    <!-- Head shape -->
+    <circle cx="0" cy="0" r="60" fill="#2D343E"/>
+    
+    <!-- Eyes - One looking down, one squinting -->
+    <path d="M-30 -10 Q-15 -20 0 -10 T 30 -10" stroke="#FFB84D" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M-30 15 L-10 15 M10 15 L30 15" stroke="#FFB84D" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- The sneer (asymmetric mouth) -->
+    <path d="M-20 35 Q0 30 20 45" stroke="#FFB84D" stroke-width="6" fill="none" stroke-linecap="round"/>
+    
+    <!-- Hand gesture (Dismissive wave) -->
+    <path d="M60 20 L90 0 L100 20 L80 40 Z" fill="#FFB84D"/>
+    <path d="M80 40 L85 60" stroke="#FFB84D" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow to create focal depth -->
+  <circle cx="120" cy="115" r="70" fill="#2563EB" opacity="0.08"/>
+
+  <!-- Medical Test Cassette / Device -->
+  <g transform="translate(45, 50)">
+    <!-- Main device body -->
+    <rect x="0" y="0" width="150" height="130" rx="16" fill="#2A303C" stroke="#3A4252" stroke-width="2"/>
+    
+    <!-- Inner screen/recess area -->
+    <rect x="15" y="18" width="120" height="94" rx="10" fill="#1E232D" stroke="#252B36" stroke-width="1.5"/>
+    
+    <!-- Sample well (top circle) -->
+    <circle cx="75" cy="42" r="10" fill="#171A21" stroke="#3A4252" stroke-width="2"/>
+    <circle cx="75" cy="42" r="5" fill="#2A303C"/>
+
+    <!-- Result window (elongated oval/rectangle below well) -->
+    <rect x="35" y="66" width="80" height="32" rx="6" fill="#171A21" stroke="#3A4252" stroke-width="2"/>
+    
+    <!-- Control Line 'C' Marker & Line -->
+    <text x="53" y="86" fill="#6B7280" font-family="Arial, sans-serif" font-weight="bold" font-size="12">C</text>
+    <line x1="68" y1="74" x2="68" y2="90" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Test Line 'T' Marker (Single Line = Negative / 阴性) -->
+    <text x="93" y="86" fill="#6B7280" font-family="Arial, sans-serif" font-weight="bold" font-size="12">T</text>
+    <!-- ONLY ONE LINE PRESENT AT C, NO LINE AT T (Indicating Negative / 阴性) -->
+    <!-- (Blank space at T ensures semantic accuracy for negative medical test result) -->
+
+    <!-- Subtle branding notch at bottom -->
+    <rect x="70" y="120" width="10" height="4" rx="2" fill="#3A4252"/>
+  </g>
+
+  <!-- Accent Focus Badge (Orange/Gold for semantic emphasis, matching instructions) -->
+  <circle cx="188" cy="62" r="14" fill="#F59E0B" opacity="0.15"/>
+  <circle cx="188" cy="62" r="8" fill="#F59E0B"/>
+  <path d="M184 62 L187 65 L193 58" fill="none" stroke="#1A1D24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

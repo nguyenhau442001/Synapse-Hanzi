@@ -1,0 +1,73 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for 议 (Meeting/Discussion/Council Table) -->
+  <g transform="translate(0, 5)">
+    <!-- Conference Table (Elliptical / Perspective) -->
+    <ellipse cx="120" cy="140" rx="75" ry="32" fill="#2D3748"/>
+    <ellipse cx="120" cy="136" rx="75" ry="32" fill="#1E2530"/>
+    
+    <!-- Table Surface Details / Documents on Table -->
+    <rect x="95" y="124" width="22" height="15" rx="2" fill="#E2E8F0" transform="rotate(-10 106 131)"/>
+    <rect x="123" y="128" width="20" height="14" rx="2" fill="#CBD5E1" transform="rotate(15 133 135)"/>
+    <circle cx="120" cy="130" r="4" fill="#F6AD55"/>
+
+    <!-- Chair Backs (Background layer for depth) -->
+    <!-- Top-left Chair -->
+    <path d="M 75 90 C 75 80, 85 75, 95 80 L 98 105 C 88 108, 75 102, 75 90 Z" fill="#4A5568"/>
+    <!-- Top-right Chair -->
+    <path d="M 165 90 C 165 80, 155 75, 145 80 L 142 105 C 152 108, 165 102, 165 90 Z" fill="#4A5568"/>
+
+    <!-- Participants / People (Upper Body & Heads) -->
+    <!-- Person 1 (Left - Speaking/Gesturing) -->
+    <g transform="translate(65, 80)">
+      <!-- Body/Suit -->
+      <path d="M 10 50 C 10 38, 20 30, 35 30 C 50 30, 60 38, 60 50 L 70 75 L 0 75 Z" fill="#3182CE"/>
+      <!-- Shirt/Tie -->
+      <polygon points="35,35 40,55 30,55" fill="#E2E8F0"/>
+      <polygon points="35,42 37,58 35,62 33,58" fill="#DD6B20"/>
+      <!-- Head -->
+      <circle cx="35" cy="18" r="14" fill="#ED8936"/>
+      <!-- Hair -->
+      <path d="M 21 16 C 21 10, 26 4, 35 4 C 44 4, 49 10, 49 16 C 47 13, 42 10, 35 10 C 28 10, 23 13, 21 16 Z" fill="#2D3748"/>
+      <!-- Gesture Arm -->
+      <path d="M 50 40 C 60 45, 65 55, 60 65" fill="none" stroke="#ED8936" stroke-width="6" stroke-linecap="round"/>
+    </g>
+
+    <!-- Person 2 (Right - Listening attentively) -->
+    <g transform="translate(135, 80)">
+      <!-- Body/Suit -->
+      <path d="M 10 50 C 10 38, 20 30, 35 30 C 50 30, 60 38, 60 50 L 70 75 L 0 75 Z" fill="#2B6CB0"/>
+      <!-- Shirt/Tie -->
+      <polygon points="35,35 40,55 30,55" fill="#E2E8F0"/>
+      <polygon points="35,42 37,58 35,62 33,58" fill="#4A5568"/>
+      <!-- Head -->
+      <circle cx="35" cy="18" r="14" fill="#F6AD55"/>
+      <!-- Hair -->
+      <path d="M 21 18 C 23 10, 28 8, 35 8 C 42 8, 47 10, 49 18 C 44 14, 26 14, 21 18 Z" fill="#1A202C"/>
+    </g>
+
+    <!-- Person 3 (Foreground Center - Back/Shoulders, providing immersive perspective) -->
+    <g transform="translate(90, 155)">
+      <path d="M 10 40 C 10 25, 25 15, 30 15 C 35 15, 50 25, 50 40 L 60 65 L 0 65 Z" fill="#4A5568"/>
+      <!-- Head showing back of head -->
+      <circle cx="30" cy="10" r="12" fill="#DD6B20"/>
+      <path d="M 18 10 C 18 3, 23 0, 30 0 C 37 0, 42 3, 42 10 C 42 12, 18 12, 18 10 Z" fill="#2D3748"/>
+    </g>
+
+    <!-- Speech / Discussion Bubbles (Symbolizing agenda, ideas, communication) -->
+    <g transform="translate(0, -5)">
+      <!-- Main glowing idea bubble -->
+      <path d="M 105 52 C 105 44, 111 38, 120 38 C 129 38, 135 44, 135 52 C 135 58, 130 63, 124 65 L 120 72 L 116 65 C 110 63, 105 58, 105 52 Z" fill="#ED8936"/>
+      <!-- Inner dot in speech bubble -->
+      <circle cx="120" cy="52" r="3" fill="#1A1D24"/>
+      
+      <!-- Secondary smaller thought dots representing active dialogue -->
+      <circle cx="93" cy="58" r="4" fill="#CBD5E1" opacity="0.8"/>
+      <circle cx="83" cy="65" r="3" fill="#A0AEC0" opacity="0.6"/>
+      <circle cx="147" cy="58" r="4" fill="#CBD5E1" opacity="0.8"/>
+      <circle cx="157" cy="65" r="3" fill="#A0AEC0" opacity="0.6"/>
+    </g>
+  </g>
+</svg>

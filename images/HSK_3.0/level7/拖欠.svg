@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Object: A worker's safety helmet resting on top of an unpaid, delayed payment ledger/envelope with a clock symbol of delay -->
+  
+  <!-- Subtle background glow/surface -->
+  <ellipse cx="120" cy="180" rx="80" ry="16" fill="#101217" opacity="0.8"/>
+
+  <!-- Unpaid Ledger / Document representing wages/debt -->
+  <g transform="translate(60, 85)">
+    <!-- Document shadow -->
+    <rect x="5" y="5" width="100" height="110" rx="6" fill="#111317"/>
+    <!-- Document base -->
+    <rect x="0" y="0" width="100" height="110" rx="6" fill="#2A2F3D"/>
+    <!-- Document header stripe -->
+    <path d="M 0 6 A 6 6 0 0 1 6 0 L 94 0 A 6 6 0 0 1 100 6 L 100 28 L 0 28 Z" fill="#E05638"/>
+    
+    <!-- Text lines placeholder (delayed/unpaid rows) -->
+    <rect x="15" y="42" width="70" height="6" rx="3" fill="#3D4457"/>
+    <rect x="15" y="58" width="50" height="6" rx="3" fill="#3D4457"/>
+    <rect x="15" y="74" width="60" height="6" rx="3" fill="#3D4457"/>
+
+    <!-- Red overdue stamp / delayed cross -->
+    <circle cx="75" cy="85" r="14" fill="#1A1D24"/>
+    <circle cx="75" cy="85" r="11" fill="none" stroke="#E05638" stroke-width="2.5"/>
+    <path d="M 68 78 L 82 92 M 82 78 L 68 92" stroke="#E05638" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Construction Safety Helmet (representing the worker's earned wages being delayed) -->
+  <g transform="translate(70, 50)">
+    <!-- Helmet shadow -->
+    <ellipse cx="50" cy="45" rx="46" ry="12" fill="#0D0E12" opacity="0.6"/>
+    <!-- Helmet Brim -->
+    <path d="M 4 40 C 4 35, 96 35, 96 40 C 96 47, 4 47, 4 40 Z" fill="#D97706"/>
+    <path d="M 12 39 C 12 37, 88 37, 88 39 C 88 41, 12 41, 12 39 Z" fill="#F59E0B"/>
+    <!-- Helmet Dome -->
+    <path d="M 20 40 C 20 16, 80 16, 80 40 Z" fill="#F59E0B"/>
+    <!-- Helmet Ridge -->
+    <path d="M 50 16 L 50 40" stroke="#D97706" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Clock element overlapping, symbolizing delay/waiting (拖欠 - delayed payment) -->
+  <g transform="translate(135, 115)">
+    <!-- Clock circle shadow -->
+    <circle cx="24" cy="24" r="23" fill="#111317"/>
+    <!-- Clock body -->
+    <circle cx="24" cy="24" r="21" fill="#1A1D24" stroke="#F59E0B" stroke-width="3"/>
+    <!-- Clock hands pointing to delay -->
+    <path d="M 24 14 L 24 24 L 32 28" fill="none" stroke="#E05638" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="24" cy="24" r="2.5" fill="#E05638"/>
+  </g>
+
+  <!-- Coins rolling off/withheld (wages) -->
+  <g transform="translate(45, 150)">
+    <!-- Coin 1 -->
+    <ellipse cx="15" cy="15" rx="10" ry="6" fill="#D97706"/>
+    <ellipse cx="15" cy="13" rx="10" ry="6" fill="#F59E0B"/>
+    <text x="15" y="16" font-size="8" font-family="sans-serif" font-weight="bold" fill="#B45309" text-anchor="middle">$</text>
+  </g>
+
+  <g transform="translate(170, 140)">
+    <!-- Coin 2 -->
+    <ellipse cx="12" cy="12" rx="8" ry="5" fill="#D97706"/>
+    <ellipse cx="12" cy="10" rx="8" ry="5" fill="#F59E0B"/>
+  </g>
+</svg>

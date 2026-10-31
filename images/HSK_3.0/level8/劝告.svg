@@ -1,0 +1,50 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Character 1 (Speaker giving friendly advice) -->
+    <g transform="translate(65, 90)">
+      <!-- Body -->
+      <path d="M-15 65 C-15 45, -5 35, 5 35 C15 35, 25 45, 25 65 Z" fill="#2E4A62"/>
+      <!-- Head -->
+      <circle cx="5" cy="20" r="14" fill="#E0A96D"/>
+      <!-- Hair -->
+      <path d="M-9 16 C-9 10, -3 6, 5 6 C13 6, 19 10, 19 16 C19 14, 15 8, 5 8 C-5 8, -9 14, -9 16 Z" fill="#3D291D"/>
+      <!-- Friendly gesture arm pointing gently forward -->
+      <path d="M12 45 Q28 42, 38 48" stroke="#E0A96D" stroke-width="5" stroke-linecap="round" fill="none"/>
+      <!-- Torso/Jacket -->
+      <path d="M-12 35 L22 35 L18 65 L-8 65 Z" fill="#345B7A"/>
+    </g>
+
+    <!-- Character 2 (Listener humbly receiving the advice, matching context) -->
+    <g transform="translate(160, 90)">
+      <!-- Body -->
+      <path d="M-20 65 C-20 45, -10 35, 0 35 C10 35, 20 45, 20 65 Z" fill="#2E4A62"/>
+      <!-- Head (slightly nodding/tilted down) -->
+      <circle cx="-2" cy="23" r="14" fill="#E2B180"/>
+      <!-- Hair -->
+      <path d="M-16 19 C-16 12, -10 8, -2 8 C6 8, 12 12, 12 19 C10 16, 4 10, -2 10 C-10 10, -15 15, -16 19 Z" fill="#4A3525"/>
+      <!-- Listening posture arm -->
+      <path d="M-12 45 Q-22 52, -15 60" stroke="#E2B180" stroke-width="5" stroke-linecap="round" fill="none"/>
+      <!-- Torso -->
+      <path d="M-15 35 L18 35 L15 65 L-12 65 Z" fill="#435B70"/>
+    </g>
+
+    <!-- Visualized Advice/Counsel (Tangible physical token of sincere words passing between them, matching Noun rule) -->
+    <g transform="translate(112, 110)">
+      <!-- Gentle glowing dialogue scroll / advice token -->
+      <rect x="-12" y="-14" width="24" height="28" rx="6" fill="#F4A261" />
+      <!-- Inner lines representing sincere words -->
+      <line x1="-6" y1="-5" x2="6" y2="-5" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="-6" y1="1" x2="6" y2="1" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="-6" y1="7" x2="2" y2="7" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+      
+      <!-- Subtle motion trail indicating advice being shared -->
+      <path d="M-22 5 C-18 2, -18 2, -15 2" stroke="#F4A261" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+      <path d="M15 2 C18 2, 18 2, 22 -1" stroke="#F4A261" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+    </g>
+
+    <!-- Floor shadow/base line to ground the interaction -->
+    <ellipse cx="120" cy="160" rx="75" ry="6" fill="#14161B"/>
+  </g>
+</svg>

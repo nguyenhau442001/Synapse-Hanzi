@@ -1,0 +1,54 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle glow / backdrop for the face model -->
+  <circle cx="120" cy="115" r="70" fill="#222733" opacity="0.6"/>
+
+  <!-- Facial Structure (Sleek Modern Flat Vector Art) -->
+  <g transform="translate(120, 115)">
+    <!-- Head / Jawline outline -->
+    <path d="M -42 -40 C -42 -5, -32 45, 0 62 C 32 45, 42 -5, 42 -40 C 42 -70, 25 -78, 0 -78 C -25 -78, -42 -70, -42 -40 Z" 
+          fill="#2C3344" stroke="#3E4A61" stroke-width="2"/>
+
+    <!-- Ears -->
+    <path d="M -42 -25 C -49 -25, -49 -5, -42 -2" fill="none" stroke="#3E4A61" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 42 -25 C 49 -25, 49 -5, 42 -2" fill="none" stroke="#3E4A61" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Hair contour -->
+    <path d="M -43 -45 C -43 -75, -22 -82, 0 -82 C 22 -82, 43 -75, 43 -45 C 30 -62, -30 -62, -43 -45 Z" fill="#475569"/>
+
+    <!-- Focus Highlights (Gold/Orange accent representing 'wuguan' features detail) -->
+    
+    <!-- Eyebrows (眉 - méi) -->
+    <path d="M -30 -32 C -20 -38, -10 -35, -5 -33" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 30 -32 C 20 -38, 10 -35, 5 -33" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Eyes (眼 - yǎn) -->
+    <g transform="translate(-18, -20)">
+      <ellipse cx="0" cy="0" rx="10" ry="6" fill="#1A1D24" stroke="#F59E0B" stroke-width="2"/>
+      <circle cx="0" cy="0" r="3.5" fill="#F59E0B"/>
+      <!-- Eyelashes / detail -->
+      <path d="M -11 -4 C -5 -9, 5 -9, 11 -4" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(18, -20)">
+      <ellipse cx="0" cy="0" rx="10" ry="6" fill="#1A1D24" stroke="#F59E0B" stroke-width="2"/>
+      <circle cx="0" cy="0" r="3.5" fill="#F59E0B"/>
+      <!-- Eyelashes / detail -->
+      <path d="M -11 -4 C -5 -9, 5 -9, 11 -4" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Nose (鼻 - bí) -->
+    <path d="M 0 -14 L -4 10 C -4 13, 4 13, 4 10 Z" fill="#3E4A61" stroke="#F59E0B" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M -3 10 C -1 13, 1 13, 3 10" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Mouth (口 - kǒu) -->
+    <path d="M -14 26 C -6 23, 6 23, 14 26 C 6 32, -6 32, -14 26 Z" fill="#F59E0B" opacity="0.9"/>
+    <path d="M -12 26 C -5 24, 5 24, 12 26" fill="none" stroke="#1A1D24" stroke-width="1.5"/>
+
+  </g>
+
+  <!-- Instructional UI Accent / Framing Markers (Minimal modern tech aesthetic, no text) -->
+  <circle cx="120" cy="115" r="92" fill="none" stroke="#2C3344" stroke-width="1.5" stroke-dasharray="4 8"/>
+  <circle cx="120" cy="115" r="102" fill="none" stroke="#3E4A61" stroke-width="1" opacity="0.4"/>
+</svg>

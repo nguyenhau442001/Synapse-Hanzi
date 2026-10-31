@@ -1,0 +1,68 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Conceptual Illustration for "况且" (Moreover / Furthermore / Let alone) -->
+  <!-- Contextual elements: Severe weather, flooding, and an impending mountain landslide risk. -->
+  
+  <g transform="translate(0, 0)">
+    <!-- Background Mountain Silhouette -->
+    <path d="M20 180 L100 100 L140 130 L220 180 Z" fill="#222733"/>
+    
+    <!-- Mountain Road / Cliff Edge -->
+    <path d="M30 190 L120 135 L210 195 Z" fill="#2A303C"/>
+    
+    <!-- Heavy Rain Effect (Slanted dashed lines) -->
+    <g stroke="#3E4C66" stroke-width="2" stroke-linecap="round" opacity="0.6">
+      <line x1="40" y1="30" x2="20" y2="70"/>
+      <line x1="70" y1="20" x2="50" y2="60"/>
+      <line x1="100" y1="40" x2="80" y2="80"/>
+      <line x1="130" y1="25" x2="110" y2="65"/>
+      <line x1="160" y1="35" x2="140" y2="75"/>
+      <line x1="190" y1="20" x2="170" y2="60"/>
+      
+      <line x1="50" y1="90" x2="30" y2="130"/>
+      <line x1="90" y1="100" x2="70" y2="140"/>
+      <line x1="140" y1="95" x2="120" y2="135"/>
+      <line x1="180" y1="85" x2="160" y2="125"/>
+    </g>
+
+    <!-- Danger Element: Rockfall / Landslide hazard (Accumulated unstable rocks on cliff) -->
+    <g fill="#E65100">
+      <path d="M110 115 Q120 110 130 120 Q125 130 115 125 Z"/>
+      <path d="M125 108 Q132 105 138 112 Q134 118 127 115 Z"/>
+      <path d="M100 122 Q110 118 115 128 Q108 132 102 126 Z"/>
+    </g>
+
+    <!-- Warning / Alert Focal Point (Orange/Gold accent for high-risk factor: 况且 / moreover) -->
+    <!-- Represents the compounding severe danger layered on top of the bad weather -->
+    <circle cx="120" cy="115" r="28" fill="none" stroke="#FFA726" stroke-width="3" stroke-dasharray="6,4"/>
+    
+    <!-- Warning Triangle Icon -->
+    <g transform="translate(120, 115)">
+      <polygon points="0,-14 13,9 -13,9" fill="#FFA726"/>
+      <rect x="-1.5" y="-3" width="3" height="7" rx="1.5" fill="#1A1D24"/>
+      <circle cx="0" cy="5" r="1.5" fill="#1A1D24"/>
+    </g>
+
+    <!-- Flooded Road / Standing Water at the bottom -->
+    <path d="M15 185 C70 180, 170 180, 225 185 L225 210 C170 215, 70 215, 15 210 Z" fill="#1E88E5" opacity="0.8"/>
+    <!-- Water ripples -->
+    <path d="M40 195 Q55 192 70 195" stroke="#90CAF9" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M100 198 Q120 195 140 198" stroke="#90CAF9" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M170 194 Q185 192 200 194" stroke="#90CAF9" stroke-width="2" fill="none" stroke-linecap="round"/>
+    
+    <!-- Barrier / Prohibition symbol indicating "Cannot proceed" -->
+    <g transform="translate(120, 165)">
+      <rect x="-22" y="-6" width="44" height="12" rx="3" fill="#D32F2F"/>
+      <rect x="-18" y="-4" width="36" height="8" rx="2" fill="#FFCDD2"/>
+      <!-- Diagonal stripes on barrier -->
+      <line x1="-14" y1="-4" x2="-8" y2="4" stroke="#D32F2F" stroke-width="3"/>
+      <line x1="-4" y1="-4" x2="2" y2="4" stroke="#D32F2F" stroke-width="3"/>
+      <line x1="6" y1="-4" x2="12" y2="4" stroke="#D32F2F" stroke-width="3"/>
+      
+      <!-- Supports -->
+      <path d="M-12 6 L-16 18 M12 6 L16 18" stroke="#B0BEC5" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

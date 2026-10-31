@@ -1,0 +1,38 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(12, 12)">
+    <!-- Floor Line representing home/stability -->
+    <path d="M 20 196 L 196 196" stroke="#2D323E" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Elderly Parent Sitting (Right) -->
+    <g transform="translate(132, 106)">
+      <!-- Chair / Armchair -->
+      <path d="M -16 64 L 40 64 L 40 84 L -16 84 Z" fill="#2A303C"/>
+      <path d="M 28 10 L 28 64 L 40 64 L 40 10 Z" fill="#363C4A"/>
+      <path d="M -16 10 L 12 10 L 12 64 L -16 64 Z" fill="#242933"/>
+      <rect x="2" y="30" width="14" height="42" rx="4" fill="#D29034"/> <!-- Warm blanket/shawl -->
+
+      <!-- Elderly Body & Head -->
+      <circle cx="-2" cy="-4" r="13" fill="#EAD5C3"/> <!-- Head -->
+      <path d="M -15 -4 C -15 -14 11 -14 11 -4 Z" fill="#8C95A5"/> <!-- Grey Hair -->
+      <path d="M -14 10 L 10 10 L 16 60 L -20 60 Z" fill="#3B5278"/> <!-- Senior clothing -->
+      <circle cx="-16" cy="24" r="4" fill="#EAD5C3"/> <!-- Hand resting -->
+    </g>
+
+    <!-- Adult Child Caring/Supporting (Left) -->
+    <g transform="translate(74, 96)">
+      <!-- Standing Body -->
+      <path d="M -8 18 L 12 18 L 16 104 L -12 104 Z" fill="#2F6690"/> <!-- Torso & Pants -->
+      <circle cx="2" cy="-6" r="13" fill="#EAD5C3"/> <!-- Head -->
+      <path d="M -11 -10 C -5 -18 9 -14 11 -6 C 5 -10 -5 -10 -11 -10 Z" fill="#332723"/> <!-- Hair -->
+
+      <!-- Supporting arm gently touching/holding parent's shoulder -->
+      <path d="M 2 12 Q 35 15 58 26" stroke="#EAD5C3" stroke-width="7" stroke-linecap="round" fill="none"/>
+      <circle cx="60" cy="27" r="4" fill="#EAD5C3"/> <!-- Hand -->
+    </g>
+
+    <!-- Warm ambient lighting/care halo (subtle, non-magical, representing warmth and respect) -->
+    <path d="M 106 32 C 140 32 165 55 165 85 C 165 110 145 130 120 135" stroke="#F4A261" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6" fill="none" opacity="0.4"/>
+  </g>
+</svg>

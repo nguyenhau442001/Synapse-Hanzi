@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background museum wall gradient/lines for depth -->
+  <line x1="30" y1="200" x2="210" y2="200" stroke="#2A2F3D" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Masterpiece Artwork (Sculpture / Bust representing "great artwork") -->
+  <g transform="translate(60, 40)">
+    <!-- Pedestal / Base -->
+    <path d="M45,150 L75,150 L85,165 L35,165 Z" fill="#3A4254"/>
+    <rect x="40" y="140" width="40" height="10" rx="2" fill="#4E586E"/>
+
+    <!-- Bust Silhouette representing classical art -->
+    <!-- Shoulders and Torso -->
+    <path d="M20,140 C20,115 35,110 60,110 C85,110 100,115 100,140 Z" fill="#2E3646"/>
+    
+    <!-- Neck -->
+    <rect x="50" y="85" width="20" height="30" fill="#3A4254"/>
+
+    <!-- Head profile/silhouette with clean modern cut -->
+    <path d="M45,85 C45,55 55,45 65,45 C78,45 82,60 82,85 Z" fill="#3A4254"/>
+
+    <!-- Golden accent: Crown / Laurel wreath representing excellence and history (the masterpiece) -->
+    <path d="M50,48 C55,42 75,42 80,48" stroke="#F5A623" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M48,53 C52,47 62,47 65,51" stroke="#F5A623" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M78,53 C74,47 68,47 65,51" stroke="#F5A623" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+    <!-- Core glowing spark of direct emotional impact (representing "direct impact on soul" without flashy words) -->
+    <circle cx="65" cy="80" r="4" fill="#F5A623"/>
+    <circle cx="65" cy="80" r="10" stroke="#F5A623" stroke-width="1.5" stroke-dasharray="3,3" fill="none" opacity="0.6"/>
+  </g>
+
+  <!-- Clean minimalist frame representing the context of pure, unadorned art (无须 - unnecessary ornamentation crossed out or omitted cleanly) -->
+  <!-- We showcase clean, essential focus: No heavy ornate fluff, just direct powerful art -->
+  <rect x="40" y="25" width="160" height="155" rx="8" fill="none" stroke="#3A4254" stroke-width="2"/>
+  
+  <!-- Subtle minimalist corner accents for high-end gallery feel -->
+  <path d="M40,35 L40,29 L46,29" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+  <path d="M200,35 L200,29 L194,29" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+  <path d="M40,172 L40,178 L46,178" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+  <path d="M200,172 L200,178 L194,178" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+
+</svg>

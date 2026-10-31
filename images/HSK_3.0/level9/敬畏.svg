@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle atmosphere -->
+  <circle cx="120" cy="110" r="75" fill="#252A34" opacity="0.6"/>
+
+  <g transform="translate(0, 0)">
+    <!-- Central Physical Object: A delicate, glowing double helix (DNA/Life) intertwined with a subtle leaf stem, representing Science and Nature -->
+    <!-- Supporting Hands at the base (symbolizing reverence, safeguarding, awe-struck holding) -->
+    
+    <!-- Outer hands cupping gently -->
+    <!-- Left Hand -->
+    <path d="M 75 160 C 65 150 60 135 65 120 C 68 112 75 105 85 105 C 90 105 93 108 92 113 C 90 125 93 138 102 148 Z" fill="#3E4C59"/>
+    
+    <!-- Right Hand -->
+    <path d="M 165 160 C 175 150 180 135 175 120 C 172 112 165 105 155 105 C 150 105 147 108 148 113 C 150 125 147 138 138 148 Z" fill="#3E4C59"/>
+
+    <!-- Inner glowing palms supporting -->
+    <path d="M 90 165 C 80 155 75 140 85 130 C 95 120 110 120 120 130 C 130 120 145 120 155 130 C 165 140 160 155 150 165 C 135 175 105 175 90 165 Z" fill="#4E5D6C"/>
+
+    <!-- The Object of Awe: DNA Strand intertwined with a natural green sprout -->
+    <!-- DNA Backbone (Left) -->
+    <path d="M 105 60 Q 90 85 120 110 Q 150 135 135 160" fill="none" stroke="#52B788" stroke-width="4" stroke-linecap="round"/>
+    <!-- DNA Backbone (Right) -->
+    <path d="M 135 60 Q 150 85 120 110 Q 90 135 105 160" fill="none" stroke="#F4A261" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- DNA Rungs / Connection nodes -->
+    <line x1="110" y1="72" x2="130" y2="72" stroke="#E9C46A" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="97" y1="95" x2="143" y2="95" stroke="#E9C46A" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="105" y1="125" x2="135" y2="125" stroke="#E9C46A" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="118" y1="148" x2="122" y2="148" stroke="#E9C46A" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Central Glowing Focal Leaf (Nature & Life) -->
+    <path d="M 120 105 C 120 90 135 75 135 65 C 135 75 120 90 120 105 Z" fill="#2D6A4F"/>
+    <path d="M 120 105 C 120 90 105 75 105 65 C 105 75 120 90 120 105 Z" fill="#52B788"/>
+
+    <!-- Aura of Awe / Radiance (Gold/Amber focal accent) -->
+    <circle cx="120" cy="110" r="48" fill="none" stroke="#F4A261" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.6"/>
+    <circle cx="120" cy="110" r="58" fill="none" stroke="#E9C46A" stroke-width="1" opacity="0.3"/>
+
+    <!-- Floating Sparkles of Reverence (Top area) -->
+    <circle cx="120" cy="38" r="2.5" fill="#F4A261"/>
+    <circle cx="95" cy="48" r="1.5" fill="#E9C46A"/>
+    <circle cx="145" cy="48" r="1.5" fill="#E9C46A"/>
+    <path d="M 120 32 L 122 36 L 126 38 L 122 40 L 120 44 L 118 40 L 114 38 L 118 36 Z" fill="#F4A261" opacity="0.8"/>
+  </g>
+</svg>

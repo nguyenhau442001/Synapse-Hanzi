@@ -1,0 +1,53 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Graphic: Focused Head/Face Profile highlighting the Cheeks (脸颊) -->
+  <g transform="translate(0, 0)">
+    <!-- Background subtle glow representing warmth/blush context -->
+    <circle cx="120" cy="120" r="70" fill="#252A34" opacity="0.6"/>
+
+    <!-- Neck and Shoulders -->
+    <path d="M 90,195 Q 120,175 150,195 L 165,220 Q 120,225 75,220 Z" fill="#2D323E"/>
+
+    <!-- Head Base / Silhouette -->
+    <path d="M 90,100 C 85,70 100,50 120,50 C 140,50 155,70 150,100 C 150,130 155,160 145,180 C 135,195 105,195 95,180 C 85,160 90,130 90,100 Z" fill="#3E4452"/>
+
+    <!-- Stylized Face Profile / Front-Three Quarter -->
+    <path d="M 95,90 C 95,90 105,45 125,45 C 145,45 150,85 150,120 C 150,155 135,185 120,185 C 105,185 95,155 95,120 Z" fill="#E6EDF5"/>
+
+    <!-- Hair Overlay -->
+    <path d="M 95,90 C 90,65 105,45 125,45 C 148,45 155,65 150,95 C 145,75 135,60 120,60 C 105,60 97,75 95,90 Z" fill="#FFA500"/>
+    <path d="M 93,85 C 88,110 90,140 95,170 C 92,140 91,110 93,85 Z" fill="#FFA500"/>
+    <path d="M 152,85 C 157,110 155,140 148,170 C 152,140 154,110 152,85 Z" fill="#FFA500"/>
+
+    <!-- Facial Features (Minimalist & Clean) -->
+    <!-- Eyes -->
+    <ellipse cx="108" cy="115" rx="4" ry="2" fill="#1A1D24"/>
+    <ellipse cx="132" cy="115" rx="4" ry="2" fill="#1A1D24"/>
+
+    <!-- Eyebrows -->
+    <path d="M 103,108 Q 108,105 113,109" stroke="#1A1D24" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M 127,109 Q 132,105 137,108" stroke="#1A1D24" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Nose -->
+    <path d="M 120,120 L 118,133 Q 120,135 122,133 Z" fill="#D0D7DE"/>
+
+    <!-- Mouth (Gentle Smile) -->
+    <path d="M 113,148 Q 120,154 127,148" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- THE CHEEKS (脸颊) - Highlighted with warm blush/accent color -->
+    <g id="cheeks" opacity="0.9">
+      <!-- Left Cheek -->
+      <ellipse cx="101" cy="133" rx="10" ry="7" fill="#FF5722"/>
+      <!-- Right Cheek -->
+      <ellipse cx="139" cy="133" rx="10" ry="7" fill="#FF5722"/>
+    </g>
+
+    <!-- Focus / Semantic Indicator Brackets pointing to the cheeks -->
+    <!-- Left Bracket -->
+    <path d="M 82,126 L 86,126 L 86,140 L 82,140" stroke="#FFA500" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <!-- Right Bracket -->
+    <path d="M 158,126 L 154,126 L 154,140 L 158,140" stroke="#FFA500" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background grid/glow to fit the high-tech alert context -->
+  <circle cx="120" cy="115" r="70" fill="#242B38" opacity="0.6"/>
+  <circle cx="120" cy="115" r="50" fill="#2A3444" opacity="0.4"/>
+
+  <!-- Central Physical Object: Modern Alarm Bell / Siren System being disarmed/deactivated -->
+  <!-- Base mount -->
+  <path d="M95 160 L145 160 L150 175 L90 175 Z" fill="#4E5D78"/>
+  <rect x="105" y="145" width="30" height="15" fill="#687A9A"/>
+
+  <!-- Dome bell (Siren) - styled in warning orange/amber transitioning to safe blue-grey -->
+  <path d="M 80 120 A 40 40 0 0 1 160 120 L 160 145 L 80 145 Z" fill="#E67E22"/>
+  <path d="M 80 120 A 40 40 0 0 1 160 120 L 160 132 L 80 132 Z" fill="#F39C12"/>
+  
+  <!-- Top bolt/indicator -->
+  <circle cx="120" cy="75" r="8" fill="#F1C40F"/>
+
+  <!-- Sound waves / Alert beams being cut/dismissed -->
+  <path d="M 65 95 Q 50 115 65 135" stroke="#E74C3C" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M 175 95 Q 190 115 175 135" stroke="#E74C3C" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- The "Deactivation / Removal" Action: Sleek clean hands or metallic locking/unlocking shackle lifting off -->
+  <!-- Open Shackle /解除 mechanism floating upward -->
+  <path d="M 95 90 L 95 65 A 25 25 0 0 1 145 65 L 145 80" stroke="#3498DB" stroke-width="6" stroke-linecap="round" fill="none"/>
+  
+  <!-- Glowing release checkmark / success indicator hovering clearly above -->
+  <circle cx="120" cy="45" r="14" fill="#2ECC71"/>
+  <path d="M 112 45 L 117 50 L 128 39" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Dynamic cross-out /解除 slash representing the removal of the alert status -->
+  <line x1="60" y1="170" x2="180" y2="60" stroke="#E74C3C" stroke-width="6" stroke-linecap="round" opacity="0.85"/>
+  <line x1="60" y1="170" x2="180" y2="60" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+</svg>

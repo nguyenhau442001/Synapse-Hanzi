@@ -1,48 +1,8 @@
-<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#1e293b"/>
-    </linearGradient>
-  </defs>
-  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
-  
-  <!-- Floor/Ground -->
-  <path d="M0 180 L240 180 L240 240 L0 240 Z" fill="#334155"/>
-  
-  <!-- Toy Box -->
-  <rect x="160" y="150" width="60" height="50" rx="4" fill="#fb923c"/>
-  <rect x="165" y="155" width="50" height="40" rx="2" fill="#ea580c"/>
-  
-  <!-- The Son (Subject) -->
-  <!-- Legs -->
-  <rect x="95" y="160" width="15" height="40" rx="5" fill="#38bdf8"/>
-  <rect x="125" y="160" width="15" height="40" rx="5" fill="#38bdf8"/>
-  
-  <!-- Torso -->
-  <path d="M90 100 Q90 80 120 80 Q150 80 150 100 L145 160 L95 160 Z" fill="#ec4899"/>
-  
-  <!-- Arms -->
-  <path d="M90 110 L70 140" stroke="#ec4899" stroke-width="12" stroke-linecap="round"/>
-  <path d="M150 110 L170 130" stroke="#ec4899" stroke-width="12" stroke-linecap="round"/>
-  
-  <!-- Head -->
-  <circle cx="120" cy="80" r="35" fill="#fde68a"/>
-  
-  <!-- Face Details -->
-  <circle cx="105" cy="75" r="4" fill="#0f172a"/>
-  <circle cx="135" cy="75" r="4" fill="#0f172a"/>
-  <path d="M110 95 Q120 105 130 95" stroke="#0f172a" stroke-width="3" fill="none" stroke-linecap="round"/>
-  
-  <!-- Hair -->
-  <path d="M90 65 Q120 40 150 65 Q130 50 120 50 Q110 50 90 65" fill="#78350f"/>
-  
-  <!-- Action Prop: Paper Airplane -->
-  <path d="M170 120 L210 110 L180 140 Z" fill="#f59e0b"/>
-  <path d="M170 120 L190 130 L180 140 Z" fill="#fbbf24"/>
-  
-  <!-- Decorative Elements -->
-  <circle cx="40" cy="50" r="5" fill="#10b981"/>
-  <circle cx="200" cy="40" r="8" fill="#38bdf8"/>
-  <circle cx="50" cy="120" r="3" fill="#ec4899"/>
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+  <circle cx="50" cy="34" r="14" stroke="#38bdf8" stroke-width="3.8" fill="none"/>
+  <path d="M36 28 Q50 20 64 28" stroke="#fb923c" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M34 68 Q34 52 50 52 Q66 52 66 68" stroke="#38bdf8" stroke-width="3.8" stroke-linecap="round" fill="none"/>
+  <line x1="42" y1="68" x2="42" y2="82" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="58" y1="68" x2="58" y2="82" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round"/>
 </svg>

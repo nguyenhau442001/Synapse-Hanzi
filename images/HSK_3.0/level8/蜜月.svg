@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Island Landscape -->
+  <path d="M40 180 C 80 140, 160 140, 200 180 L 200 200 L 40 200 Z" fill="#2C3E50"/>
+  <circle cx="180" cy="80" r="25" fill="#FFC107"/>
+  
+  <!-- Palm Tree -->
+  <path d="M160 180 L 160 130" stroke="#8D6E63" stroke-width="6" stroke-linecap="round"/>
+  <path d="M160 130 L 140 110 M160 130 L 180 110 M160 130 L 135 125 M160 130 L 185 125" stroke="#4CAF50" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Couple -->
+  <g transform="translate(80, 140)">
+    <!-- Person 1 -->
+    <circle cx="15" cy="20" r="8" fill="#FFD54F"/>
+    <path d="M15 28 L 15 50 M15 35 L 5 45 M15 35 L 25 45 M15 50 L 10 65 M15 50 L 20 65" stroke="#FFD54F" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Person 2 -->
+    <circle cx="45" cy="20" r="8" fill="#FFD54F"/>
+    <path d="M45 28 L 45 50 M45 35 L 35 45 M45 35 L 55 45 M45 50 L 40 65 M45 50 L 50 65" stroke="#FFD54F" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Holding hands -->
+    <path d="M23 40 L 37 40" stroke="#FFD54F" stroke-width="3"/>
+  </g>
+  
+  <!-- Water -->
+  <path d="M40 185 Q 120 175 200 185" stroke="#3498DB" stroke-width="2" fill="none"/>
+  <path d="M40 192 Q 120 182 200 192" stroke="#3498DB" stroke-width="2" fill="none"/>
+</svg>

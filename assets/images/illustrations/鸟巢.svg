@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background / Context Tree Branch -->
+  <path d="M40 180 C80 180, 150 175, 210 160 C190 155, 140 165, 40 170 Z" fill="#3E2723" opacity="0.6"/>
+  <path d="M70 180 C90 200, 120 220, 140 240" stroke="#3E2723" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.5"/>
+  <path d="M160 167 C170 140, 185 110, 200 90" stroke="#4E342E" stroke-width="8" stroke-linecap="round" fill="none"/>
+  
+  <!-- Foliage details -->
+  <circle cx="195" cy="85" r="12" fill="#2E7D32" opacity="0.8"/>
+  <circle cx="210" cy="95" r="10" fill="#388E3C" opacity="0.9"/>
+  <circle cx="185" cy="98" r="9" fill="#1B5E20" opacity="0.8"/>
+
+  <!-- Main Tree Branch holding the Nest -->
+  <path d="M20 145 C80 150, 150 150, 220 135" stroke="#5D4037" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <path d="M80 148 C110 170, 130 190, 140 210" stroke="#4E342E" stroke-width="10" stroke-linecap="round" fill="none"/>
+
+  <!-- Bird's Nest (鸟巢) - Interwoven Twigs and Structure -->
+  <!-- Inner shadow/depth -->
+  <ellipse cx="120" cy="130" rx="55" ry="25" fill="#2C1D11"/>
+
+  <!-- Back twigs -->
+  <path d="M70 130 C80 110, 160 110, 170 130" stroke="#6D4C41" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M85 120 C105 105, 135 105, 155 120" stroke="#8D6E63" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- Nest Interior Cup -->
+  <ellipse cx="120" cy="132" rx="42" ry="18" fill="#3E2723"/>
+  <ellipse cx="120" cy="134" rx="35" ry="14" fill="#1A1D24"/>
+
+  <!-- Eggs inside the nest -->
+  <!-- Egg 1 -->
+  <ellipse cx="110" cy="133" rx="8" ry="11" fill="#E0F2F1" transform="rotate(-15 110 133)"/>
+  <circle cx="108" cy="130" r="1.5" fill="#B2DFDB" opacity="0.7"/>
+  <circle cx="113" cy="136" r="1" fill="#B2DFDB" opacity="0.7"/>
+
+  <!-- Egg 2 -->
+  <ellipse cx="130" cy="134" rx="8" ry="11" fill="#E0F2F1" transform="rotate(10 130 134)"/>
+  <circle cx="132" cy="131" r="1.5" fill="#B2DFDB" opacity="0.7"/>
+
+  <!-- Front overlapping woven twigs -->
+  <path d="M65 135 C75 160, 165 160, 175 135" stroke="#795548" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M75 142 C100 168, 140 168, 165 142" stroke="#5D4037" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M90 148 C110 158, 130 158, 150 148" stroke="#8D6E63" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- Random sticking out twigs for natural texture -->
+  <path d="M68 140 C55 145, 45 135, 40 130" stroke="#6D4C41" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M172 138 C185 145, 195 135, 200 125" stroke="#6D4C41" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M145 152 C155 170, 170 175, 180 180" stroke="#5D4037" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M95 150 C85 170, 70 175, 60 185" stroke="#4E342E" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M115 115 C110 100, 100 95, 95 90" stroke="#795548" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M135 116 C140 100, 150 95, 155 90" stroke="#6D4C41" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Atmospheric warm accent glow representing life/nature -->
+  <circle cx="120" cy="130" r="45" fill="#FFB74D" opacity="0.05" filter="blur(8px)"/>
+</svg>

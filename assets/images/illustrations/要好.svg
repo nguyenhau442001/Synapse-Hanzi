@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Two figures representing long-term friendship (childhood friends) -->
+  <!-- Figure 1 (Left) -->
+  <g transform="translate(70, 100)">
+    <circle cx="25" cy="25" r="25" fill="#FFB84D"/>
+    <path d="M10 70 C10 50, 40 50, 40 70 L40 130 C40 140, 10 140, 10 130 Z" fill="#A0AEC0"/>
+    <path d="M15 80 L25 95 L35 80" stroke="#1A1D24" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Figure 2 (Right) -->
+  <g transform="translate(120, 100)">
+    <circle cx="25" cy="25" r="25" fill="#FFB84D"/>
+    <path d="M10 70 C10 50, 40 50, 40 70 L40 130 C40 140, 10 140, 10 130 Z" fill="#718096"/>
+    <path d="M15 80 L25 95 L35 80" stroke="#1A1D24" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Interaction: Walking together, arms linked or shoulder-to-shoulder -->
+  <path d="M95 130 L145 130" stroke="#E2E8F0" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Ground line -->
+  <line x1="60" y1="200" x2="180" y2="200" stroke="#4A5568" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>

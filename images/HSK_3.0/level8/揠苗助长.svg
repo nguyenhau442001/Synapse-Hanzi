@@ -1,0 +1,59 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background grid/glow effects for modern dark theme -->
+  <circle cx="120" cy="140" r="80" fill="#252A34" opacity="0.5"/>
+
+  <!-- Soil / Ground -->
+  <path d="M 60 180 L 180 180 L 190 200 L 50 200 Z" fill="#2D3748"/>
+  <rect x="50" y="175" width="140" height="10" rx="4" fill="#4A5568"/>
+
+  <!-- Stressed Sprout / Plant being pulled -->
+  <!-- Stem bending unnaturally under upward force -->
+  <path d="M 120 175 C 120 150, 135 120, 125 90" fill="none" stroke="#F6AD55" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Sprout leaves stretching upward -->
+  <path d="M 125 90 C 135 80, 145 85, 140 95 C 135 100, 125 90, 125 90 Z" fill="#68D391"/>
+  <path d="M 125 90 C 115 80, 105 85, 110 95 C 115 100, 125 90, 125 90 Z" fill="#68D391"/>
+
+  <!-- Roots straining and lifting from the soil -->
+  <path d="M 115 175 C 110 185, 100 180, 95 190" fill="none" stroke="#D69E2E" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 125 175 C 130 185, 140 180, 145 190" fill="none" stroke="#D69E2E" stroke-width="3" stroke-linecap="round"/>
+  <!-- Soil debris flying up (cause and effect / action) -->
+  <circle cx="100" cy="170" r="2.5" fill="#A0AEC0"/>
+  <circle cx="145" cy="168" r="2" fill="#A0AEC0"/>
+  <circle cx="110" cy="160" r="1.5" fill="#A0AEC0"/>
+
+  <!-- Human Character (Action: Pulling up too hard, dynamic pose) -->
+  <!-- Body / Torso -->
+  <path d="M 105 130 L 135 130 L 140 170 L 100 170 Z" fill="#3182CE"/>
+  <!-- Head -->
+  <circle cx="120" cy="105" r="12" fill="#FEEBC8"/>
+  <!-- Face expression (straining/anxious eyes) -->
+  <line x1="115" y1="104" x2="119" y2="106" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+  <line x1="121" y1="106" x2="125" y2="104" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Arms reaching down and gripping the stem -->
+  <path d="M 105 130 L 122 95" fill="none" stroke="#3182CE" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 135 130 L 122 95" fill="none" stroke="#3182CE" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="122" cy="95" r="5" fill="#FEEBC8"/>
+
+  <!-- Legs braced on the ground -->
+  <path d="M 105 170 L 90 200" fill="none" stroke="#2B6CB0" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 135 170 L 150 200" fill="none" stroke="#2B6CB0" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Motion lines indicating upward force / rushing -->
+  <g stroke="#F6AD55" stroke-width="2.5" stroke-linecap="round" opacity="0.8">
+    <line x1="95" y1="110" x2="95" y2="90"/>
+    <path d="M 91 96 L 95 89 L 99 96"/>
+    
+    <line x1="145" y1="110" x2="145" y2="90"/>
+    <path d="M 141 96 L 145 89 L 149 96"/>
+  </g>
+
+  <!-- Warning / Danger Accent (Deticating "forced/premature" mistake) -->
+  <circle cx="120" cy="55" r="16" fill="#2D3748" stroke="#E53E3E" stroke-width="2"/>
+  <path d="M 120 45 L 120 57" stroke="#E53E3E" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="120" cy="63" r="1.5" fill="#E53E3E"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Shipping Container representing Exports (Larger stack) -->
+  <rect x="130" y="100" width="60" height="70" rx="4" fill="#F39C12"/>
+  <rect x="135" y="110" width="50" height="15" fill="#E67E22"/>
+  <rect x="135" y="135" width="50" height="15" fill="#E67E22"/>
+  
+  <!-- Shipping Container representing Imports (Smaller stack) -->
+  <rect x="50" y="135" width="50" height="35" rx="4" fill="#3498DB"/>
+  <rect x="55" y="145" width="40" height="15" fill="#2980B9"/>
+  
+  <!-- Balance Scale Beam -->
+  <path d="M40 185 L200 185" stroke="#BDC3C7" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Upward Arrow indicating Surplus -->
+  <path d="M160 80 L160 40 M160 40 L145 55 M160 40 L175 55" stroke="#2ECC71" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Ground line -->
+  <line x1="30" y1="185" x2="210" y2="185" stroke="#34495E" stroke-width="2"/>
+</svg>

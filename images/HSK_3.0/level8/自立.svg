@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground -->
+  <path d="M40 190 H200" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Person (Child standing confidently) -->
+  <g transform="translate(120, 185)">
+    <!-- Legs -->
+    <path d="M-15 0 L-15 -60 M15 0 L15 -60" stroke="#F6AD55" stroke-width="12" stroke-linecap="round"/>
+    <!-- Body -->
+    <path d="M0 -60 L0 -110" stroke="#F6AD55" stroke-width="14" stroke-linecap="round"/>
+    <!-- Arms -->
+    <path d="M-25 -90 L0 -70 L25 -90" stroke="#F6AD55" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <!-- Head -->
+    <circle cx="0" cy="-135" r="25" fill="#F6AD55"/>
+  </g>
+  
+  <!-- Supporting elements (Backpack to imply self-reliance/schooling) -->
+  <path d="M100 -100" fill="#F6AD55"/>
+  <rect x="105" y="85" width="30" height="35" rx="5" fill="#F6AD55"/>
+  <rect x="110" y="80" width="20" height="10" rx="2" fill="#F6AD55"/>
+</svg>

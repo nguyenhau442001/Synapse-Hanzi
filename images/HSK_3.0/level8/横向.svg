@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Horizontal Beam/Object representing "横向" (Lateral/Horizontal) -->
+  <g transform="translate(120, 120)">
+    <!-- Main horizontal structural beam -->
+    <rect x="-80" y="-15" width="160" height="30" rx="4" fill="#F39C12"/>
+    
+    <!-- Supporting vertical elements to emphasize the horizontal orientation -->
+    <rect x="-70" y="-40" width="10" height="25" fill="#5D6D7E"/>
+    <rect x="-30" y="-40" width="10" height="25" fill="#5D6D7E"/>
+    <rect x="20" y="-40" width="10" height="25" fill="#5D6D7E"/>
+    <rect x="60" y="-40" width="10" height="25" fill="#5D6D7E"/>
+    
+    <rect x="-70" y="15" width="10" height="25" fill="#5D6D7E"/>
+    <rect x="-30" y="15" width="10" height="25" fill="#5D6D7E"/>
+    <rect x="20" y="15" width="10" height="25" fill="#5D6D7E"/>
+    <rect x="60" y="15" width="10" height="25" fill="#5D6D7E"/>
+    
+    <!-- Directional indicators -->
+    <path d="M-90 0 L-100 10 L-100 -10 Z" fill="#BDC3C7"/>
+    <path d="M90 0 L100 10 L100 -10 Z" fill="#BDC3C7"/>
+  </g>
+</svg>

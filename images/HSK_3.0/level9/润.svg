@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed dark mode container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle ambient glow for warmth -->
+  <circle cx="120" cy="120" r="80" fill="#FFB703" opacity="0.05" filter="blur(20px)"/>
+
+  <!-- Graphic Elements: Visualizing "润" (rùn - to moisten / soothe a dry throat) -->
+  <g transform="translate(0, 0)">
+    
+    <!-- Motion lines representing warmth/relief -->
+    <path d="M 95 65 Q 120 50 145 65" fill="none" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round" opacity="0.6">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 105 55 Q 120 42 135 55" fill="none" stroke="#FFB703" stroke-width="2" stroke-linecap="round" opacity="0.4">
+      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Warm Honey Mug / Cup -->
+    <!-- Mug Body -->
+    <path d="M 90 100 L 98 170 C 98 178, 142 178, 142 170 L 150 100 Z" fill="#2B303C"/>
+    <!-- Mug Rim -->
+    <ellipse cx="120" cy="100" rx="30" ry="8" fill="#3A4150"/>
+    <!-- Liquid Surface (Golden Honey Water) -->
+    <ellipse cx="120" cy="102" rx="26" ry="6" fill="#FFB703"/>
+    <!-- Mug Handle -->
+    <path d="M 150 112 C 170 112, 170 155, 150 158" fill="none" stroke="#2B303C" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- Human Action / Interaction (Profile silhouette of head drinking/soothing throat) -->
+    <g transform="translate(0, 5)">
+      <!-- Neck and Chin profile leaning forward slightly to drink -->
+      <path d="M 50 135 C 55 125, 70 120, 80 130 C 85 135, 90 150, 85 175" fill="none" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- Throat / Chest area with soothing glowing effect representing "滋润" (moisturizing relief) -->
+      <path d="M 72 142 C 82 142, 88 152, 85 168" fill="none" stroke="#FFB703" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+      
+      <!-- Radiating soothing warmth waves inside the throat area -->
+      <circle cx="77" cy="155" r="12" fill="#FFB703" opacity="0.25" filter="blur(4px)"/>
+    </g>
+
+    <!-- Floating droplets indicating hydration / moisture -->
+    <path d="M 75 120 C 75 120, 70 112, 70 108 C 70 103, 74 100, 78 100 C 82 100, 86 103, 86 108 C 86 112, 75 120, 75 120 Z" fill="#00B4D8" opacity="0.8"/>
+    <path d="M 165 95 C 165 95, 161 89, 161 86 C 161 82, 164 80, 167 80 C 170 80, 173 82, 173 86 C 173 89, 165 95, 165 95 Z" fill="#00B4D8" opacity="0.6"/>
+
+  </g>
+</svg>

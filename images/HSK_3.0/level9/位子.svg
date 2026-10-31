@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subway interior context lines -->
+  <path d="M40 40 L200 40" stroke="#2A2E3D" stroke-width="2" stroke-linecap="round"/>
+  <path d="M40 200 L200 200" stroke="#2A2E3D" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="120" cy="40" r="12" fill="none" stroke="#2A2E3D" stroke-width="2"/>
+  
+  <!-- Subway pole -->
+  <rect x="180" y="60" width="6" height="140" rx="3" fill="#3A4155"/>
+  <path d="M165 60 L195 60" stroke="#3A4155" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- The "位子" (Seat/Priority Chair) as central physical object -->
+  <g transform="translate(65, 75)">
+    <!-- Seat Backrest -->
+    <rect x="15" y="10" width="55" height="55" rx="12" fill="#2D3343"/>
+    <rect x="22" y="18" width="41" height="39" rx="8" fill="#3B445B"/>
+    
+    <!-- Priority / Spot Accent (Gold/Orange for focus, indicating "位子") -->
+    <circle cx="42.5" cy="37.5" r="12" fill="#E6A15C" opacity="0.2"/>
+    <path d="M42.5 30 L45.5 36 L52 37 L47 42 L48.5 48.5 L42.5 45 L36.5 48.5 L38 42 L33 37 L39.5 36 Z" fill="#E6A15C" transform="scale(0.6) translate(30, 25)"/>
+
+    <!-- Seat Cushion -->
+    <rect x="10" y="62" width="68" height="20" rx="6" fill="#434D66"/>
+    <rect x="12" y="65" width="64" height="12" rx="4" fill="#4E5A78"/>
+
+    <!-- Seat Legs/Base -->
+    <rect x="20" y="82" width="8" height="15" rx="3" fill="#2D3343"/>
+    <rect x="62" y="82" width="8" height="15" rx="3" fill="#2D3343"/>
+  </g>
+
+  <!-- Interactive gesture hint: yielding a seat (respectful polite hand gesture indicating "please sit") -->
+  <g transform="translate(115, 115)">
+    <!-- Arm reaching out to offer the seat -->
+    <path d="M -10 25 C -5 20, 15 15, 30 18" stroke="#5D6B8C" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <circle cx="33" cy="18" r="7" fill="#E0B18B"/>
+  </g>
+
+  <!-- Subtle floor shadow -->
+  <ellipse cx="100" cy="185" rx="45" ry="6" fill="#13151A"/>
+</svg>

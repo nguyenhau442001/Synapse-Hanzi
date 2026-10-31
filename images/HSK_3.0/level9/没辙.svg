@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle ambient background glow representing complexity/machinery -->
+  <circle cx="120" cy="115" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Complex Machinery Background Elements (The broken imported machine) -->
+  <g transform="translate(60, 65)">
+    <!-- Machine body -->
+    <rect x="0" y="20" width="120" height="70" rx="6" fill="#2D333B" stroke="#3F4853" stroke-width="2"/>
+    <!-- Control panel details -->
+    <rect x="15" y="32" width="40" height="25" rx="3" fill="#1E2229"/>
+    <circle cx="28" cy="44" r="5" fill="#E06C75"/>
+    <circle cx="45" cy="44" r="3" fill="#61AFEF"/>
+    <!-- Warning glitch sparks / smoke -->
+    <path d="M75,20 L80,5 L85,15 L92,2" fill="none" stroke="#E06C75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+    <path d="M95,25 L102,12 L108,18 L115,8" fill="none" stroke="#E5C07B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+    <!-- Gears inside/outside -->
+    <circle cx="95" cy="60" r="14" fill="none" stroke="#4B5263" stroke-width="4" stroke-dasharray="6 3"/>
+  </g>
+
+  <!-- Central Character (The experienced mechanic/worker expressing "méizhé" / helplessness) -->
+  <g transform="translate(0, 0)">
+    <!-- Body / Shoulders -->
+    <path d="M 75 190 C 75 160, 95 145, 120 145 C 145 145, 165 160, 165 190 Z" fill="#3B4252"/>
+    
+    <!-- Overall straps / Work clothes detail -->
+    <path d="M95,145 L85,190" stroke="#4C566A" stroke-width="6" stroke-linecap="round"/>
+    <path d="M145,145 L155,190" stroke="#4C566A" stroke-width="6" stroke-linecap="round"/>
+    <rect x="105" y="165" width="30" height="25" rx="4" fill="#2E3440"/>
+
+    <!-- Neck -->
+    <rect x="110" y="130" width="20" height="20" fill="#D8DEE9"/>
+
+    <!-- Head -->
+    <circle cx="120" cy="105" r="28" fill="#E5C07B"/>
+
+    <!-- Hair (Experienced worker / older with gray temples) -->
+    <path d="M 93 105 C 93 85, 147 85, 147 105 C 147 95, 140 80, 120 80 C 100 80, 93 95, 93 105 Z" fill="#ABB2BF"/>
+
+    <!-- Facial Expression: Furrowed brows of concern/helplessness -->
+    <line x1="105" y1="98" x2="115" y2="101" stroke="#3B4252" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="135" y1="98" x2="125" y2="101" stroke="#3B4252" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Eyes (tired, looking down at the machine) -->
+    <circle cx="110" cy="106" r="2" fill="#3B4252"/>
+    <circle cx="130" cy="106" r="2" fill="#3B4252"/>
+
+    <!-- Mouth (straight/frown line showing defeat) -->
+    <path d="M 112 120 Q 120 116 128 120" fill="none" stroke="#3B4252" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Gestures: Two empty/helpless hands raised upward/outward (classic "bó tay" pose) -->
+    <!-- Left Hand -->
+    <circle cx="78" cy="135" r="9" fill="#E5C07B"/>
+    <!-- Right Hand -->
+    <circle cx="162" cy="135" r="9" fill="#E5C07B"/>
+
+    <!-- Arms bent outward -->
+    <path d="M 95 155 Q 75 150, 78 135" fill="none" stroke="#3B4252" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 145 155 Q 165 150, 162 135" fill="none" stroke="#3B4252" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <!-- Visual Accent: Floating question marks or hesitation indicators above head (subtle, clean flat vector) -->
+  <g transform="translate(138, 62)" opacity="0.8">
+    <path d="M0,8 C0,3 4,0 10,0 C16,0 20,3 20,8 C20,12 15,15 11,17 L11,21" fill="none" stroke="#E5C07B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="11" cy="27" r="1.5" fill="#E5C07B"/>
+  </g>
+</svg>

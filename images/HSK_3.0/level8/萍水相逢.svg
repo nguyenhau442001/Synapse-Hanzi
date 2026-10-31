@@ -1,0 +1,55 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient ripple waves representing water (píngshuǐ) -->
+  <path d="M40 150 C70 140, 90 160, 120 150 C150 140, 170 160, 200 150" stroke="#2D3748" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M60 175 C85 165, 105 185, 130 175 C155 165, 175 185, 200 175" stroke="#2D3748" stroke-width="1.5" fill="none" opacity="0.4"/>
+
+  <!-- Duckweed leaves drifting and meeting (bèo nước) -->
+  <!-- Leaf 1 (Left traveler) -->
+  <g transform="translate(75, 135) rotate(-15)">
+    <path d="M0 0 C-15 -10, -25 5, -15 15 C-5 25, 10 15, 0 0 Z" fill="#38B2AC"/>
+    <path d="M-15 8 C-10 8, -5 5, 0 0" stroke="#E6FFFA" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- Leaf 2 (Right traveler) -->
+  <g transform="translate(165, 135) rotate(25)">
+    <path d="M0 0 C15 -10, 25 5, 15 15 C5 25, -10 15, 0 0 Z" fill="#319795"/>
+    <path d="M15 8 C10 8, 5 5, 0 0" stroke="#E6FFFA" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Central convergence ripples -->
+  <ellipse cx="120" cy="145" rx="45" ry="12" fill="none" stroke="#4FD1C5" stroke-width="1" opacity="0.2"/>
+  <ellipse cx="120" cy="145" rx="25" ry="7" fill="none" stroke="#4FD1C5" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Two travelers crossing paths / nodding (xiangfeng - meeting by chance) -->
+  <!-- Left Traveler (Backpack/Traveler silhouette) -->
+  <g transform="translate(85, 95)">
+    <!-- Backpack -->
+    <rect x="-14" y="10" width="10" height="18" rx="3" fill="#D69E2E"/>
+    <!-- Body / Torso -->
+    <path d="M-8 8 C-8 4, -4 2, 0 2 C4 2, 8 4, 8 8 L10 32 C10 34, 8 36, 6 36 L-6 36 C-8 36, -10 34, -10 32 Z" fill="#4A5568"/>
+    <!-- Head -->
+    <circle cx="0" cy="-6" r="8" fill="#F7FAFC"/>
+    <!-- Hat / Travel Cap -->
+    <path d="M-10 -10 C-10 -14, 10 -14, 10 -10 L14 -9 C14 -9, -14 -9, -14 -9 Z" fill="#DD6B20"/>
+  </g>
+
+  <!-- Right Traveler -->
+  <g transform="translate(155, 95)">
+    <!-- Backpack -->
+    <rect x="4" y="10" width="10" height="18" rx="3" fill="#ECC94B"/>
+    <!-- Body / Torso -->
+    <path d="M-8 8 C-8 4, -4 2, 0 2 C4 2, 8 4, 8 8 L10 32 C10 34, 8 36, 6 36 L-6 36 C-8 36, -10 34, -10 32 Z" fill="#718096"/>
+    <!-- Head -->
+    <circle cx="0" cy="-6" r="8" fill="#F7FAFC"/>
+    <!-- Scarf / Travel detail -->
+    <path d="M-7 1 C0 6, 7 1, 7 1 L5 6 C5 6, 0 9, -5 6 Z" fill="#DD6B20"/>
+  </g>
+
+  <!-- Spark / Connection point above them indicating chance encounter / dialogue -->
+  <g transform="translate(120, 65)">
+    <circle cx="0" cy="0" r="14" fill="#F6AD55" opacity="0.15"/>
+    <path d="M0 -8 L2 -2 L8 0 L2 2 L0 8 L-2 2 L-8 0 L-2 -2 Z" fill="#F6AD55"/>
+  </g>
+
+</svg>

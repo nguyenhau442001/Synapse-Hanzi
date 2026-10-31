@@ -1,0 +1,35 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Outer Cosmic/Astronomical Ring -->
+  <circle cx="120" cy="120" r="82" fill="none" stroke="#2A3241" stroke-width="2" stroke-dasharray="4 4"/>
+  <circle cx="120" cy="120" r="70" fill="none" stroke="#3A465C" stroke-width="3"/>
+  
+  <!-- Cardinal points / Solar nodes markers -->
+  <circle cx="120" cy="50" r="3" fill="#E5A93B"/>
+  <circle cx="190" cy="120" r="3" fill="#E5A93B"/>
+  <circle cx="120" cy="190" r="3" fill="#E5A93B"/>
+  <circle cx="50" cy="120" r="3" fill="#E5A93B"/>
+
+  <!-- Central Sundial / Astronomical Disk Base -->
+  <circle cx="120" cy="120" r="54" fill="#222B38"/>
+  
+  <!-- Stylized Earth & Plant Growth (Phenology/Agriculture) -->
+  <path d="M75 140 C 75 120, 165 120, 165 140" fill="none" stroke="#2F3C4F" stroke-width="4"/>
+  <path d="M120 148 L120 92" stroke="#E5A93B" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Sprout leaves representing seasons/solar terms -->
+  <path d="M120 106 C 105 102, 98 112, 105 122 C 112 122, 118 115, 120 106 Z" fill="#4ECCA3"/>
+  <path d="M120 98 C 135 94, 142 104, 135 114 C 128 114, 122 107, 120 98 Z" fill="#4ECCA3"/>
+
+  <!-- Sundial Gnomon (Pointer) casting shadow -->
+  <polygon points="120,70 125,135 115,135" fill="#E5A93B" opacity="0.9"/>
+  <polygon points="120,70 138,135 125,135" fill="#C28929" opacity="0.6"/>
+
+  <!-- Decorative Orbit Arc -->
+  <path d="M60 90 A 70 70 0 0 1 180 90" fill="none" stroke="#4ECCA3" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  
+  <!-- Sun Icon on Orbit -->
+  <circle cx="158" cy="72" r="7" fill="#E5A93B"/>
+  <path d="M158 60 L158 64 M158 80 L158 84 M146 72 L150 72 M166 72 L170 72" stroke="#E5A93B" stroke-width="2" stroke-linecap="round"/>
+</svg>

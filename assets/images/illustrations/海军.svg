@@ -1,0 +1,42 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Ocean Waves background elements -->
+  <path d="M 0 190 Q 60 175, 120 190 T 240 190 L 240 240 L 0 240 Z" fill="#162536"/>
+  <path d="M 0 205 Q 60 190, 120 205 T 240 205 L 240 240 L 0 240 Z" fill="#0E1A26"/>
+
+  <!-- Modern Aircraft Carrier / Naval Ship Silhouette -->
+  <!-- Hull -->
+  <path d="M 40 165 L 70 185 L 190 185 C 200 185, 205 180, 200 175 L 180 165 Z" fill="#4B6584"/>
+  
+  <!-- Flight Deck / Superstructure -->
+  <path d="M 55 165 L 75 140 L 175 140 L 195 165 Z" fill="#2C3A47"/>
+  
+  <!-- Island / Bridge -->
+  <rect x="120" y="115" width="25" height="25" rx="3" fill="#84817A"/>
+  <rect x="123" y="105" width="4" height="10" fill="#84817A"/>
+  <!-- Radar mast -->
+  <line x1="135" y1="105" x2="135" y2="90" stroke="#DFE6E9" stroke-width="2"/>
+  <line x1="130" y1="95" x2="140" y2="95" stroke="#DFE6E9" stroke-width="2"/>
+
+  <!-- Runways / Markings -->
+  <line x1="85" y1="152" x2="165" y2="152" stroke="#F1C40F" stroke-dasharray="6,4" stroke-width="2"/>
+  <polygon points="175,145 190,155 175,165" fill="#E74C3C" opacity="0.8"/>
+
+  <!-- Bow wave foam -->
+  <path d="M 40 165 Q 30 170, 35 180 C 45 180, 50 175, 55 170 Z" fill="#E2E8F0" opacity="0.6"/>
+
+  <!-- Modern jet on deck (stylized minimalist) -->
+  <polygon points="100,147 110,143 105,153" fill="#E2E8F0"/>
+
+  <!-- Anchor Accent Symbol (Semantic grounding) -->
+  <g transform="translate(120, 58) scale(0.8)" opacity="0.9">
+    <circle cx="0" cy="-15" r="5" fill="none" stroke="#F1C40F" stroke-width="3"/>
+    <line x1="0" y1="-10" x2="0" y2="25" stroke="#F1C40F" stroke-width="4" stroke-linecap="round"/>
+    <line x1="-12" y1="0" x2="12" y2="0" stroke="#F1C40F" stroke-width="3" stroke-linecap="round"/>
+    <path d="M -16 18 C -16 28, 16 28, 16 18" fill="none" stroke="#F1C40F" stroke-width="4" stroke-linecap="round"/>
+    <polygon points="-17,14 -13,20 -20,20" fill="#F1C40F"/>
+    <polygon points="17,14 13,20 20,20" fill="#F1C40F"/>
+  </g>
+</svg>

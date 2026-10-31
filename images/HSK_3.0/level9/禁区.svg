@@ -1,0 +1,62 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background security grid / subtle lines -->
+  <g opacity="0.15">
+    <line x1="30" y1="120" x2="210" y2="120" stroke="#64748B" stroke-width="1" stroke-dasharray="4,4"/>
+    <line x1="120" y1="30" x2="120" y2="210" stroke="#64748B" stroke-width="1" stroke-dasharray="4,4"/>
+  </g>
+
+  <!-- Ground / Base Structure -->
+  <path d="M 40 185 L 200 185" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Barbed Wire Fence Posts -->
+  <g fill="#475569">
+    <!-- Left Post -->
+    <rect x="55" y="70" width="6" height="115" rx="1"/>
+    <!-- Right Post -->
+    <rect x="179" y="70" width="6" height="115" rx="1"/>
+  </g>
+
+  <!-- Wire Mesh & Barbed Wires -->
+  <g stroke="#94A3B8" stroke-width="1.5" fill="none" opacity="0.8">
+    <!-- Horizontal wires -->
+    <line x1="58" y1="90" x2="182" y2="90"/>
+    <line x1="58" y1="120" x2="182" y2="120"/>
+    <line x1="58" y1="150" x2="182" y2="150"/>
+    
+    <!-- Diagonal mesh pattern -->
+    <path d="M 58 90 L 88 120 M 88 90 L 58 120" opacity="0.5"/>
+    <path d="M 88 90 L 118 120 M 118 90 L 88 120" opacity="0.5"/>
+    <path d="M 118 90 L 148 120 M 148 90 L 118 120" opacity="0.5"/>
+    <path d="M 148 90 L 182 120 M 182 90 L 148 120" opacity="0.5"/>
+
+    <path d="M 58 120 L 88 150 M 88 120 L 58 150" opacity="0.5"/>
+    <path d="M 88 120 L 118 150 M 118 120 L 88 150" opacity="0.5"/>
+    <path d="M 118 120 L 148 150 M 148 120 L 118 150" opacity="0.5"/>
+    <path d="M 148 120 L 182 150 M 182 120 L 148 150" opacity="0.5"/>
+
+    <!-- Barbed wire top coils -->
+    <path d="M 58 75 Q 70 65 82 75 T 106 75 T 130 75 T 154 75 T 182 75" stroke-width="2"/>
+  </g>
+
+  <!-- Central Warning Sign (Focal Point) -->
+  <g>
+    <!-- Sign Pole -->
+    <rect x="117" y="115" width="6" height="70" fill="#64748B"/>
+    
+    <!-- Triangle Sign Board -->
+    <polygon points="120,48 162,112 78,112" fill="#F59E0B" stroke="#B45309" stroke-width="2" stroke-linejoin="round"/>
+    
+    <!-- Inner Hazard Symbol / Prohibition Icon -->
+    <circle cx="120" cy="92" r="14" fill="#1A1D24"/>
+    <!-- Slash and Hand/Figure representing restricted entry -->
+    <line x1="110" y1="82" x2="130" y2="102" stroke="#EF4444" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="120" cy="88" r="4" fill="#EF4444"/>
+    <path d="M 114 98 C 114 94 126 94 126 98" stroke="#EF4444" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Accent Glow / Focus Elements -->
+  <circle cx="120" cy="48" r="3" fill="#FBBF24"/>
+</svg>

@@ -1,0 +1,34 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Room Interior Structure representing "天花板" (Ceiling) -->
+  <path d="M20 50 L120 20 L220 50 L220 70 L120 40 L20 70 Z" fill="#2E3440" />
+  <path d="M20 70 L120 40 L220 70 L220 200 L20 200 Z" fill="#222730" opacity="0.6"/>
+
+  <!-- Ceiling Surface -->
+  <path d="M20 50 L120 20 L220 50 L120 80 Z" fill="#3B4252" stroke="#4C566A" stroke-width="2"/>
+
+  <!-- Ceiling Molding / Detail -->
+  <path d="M35 55 L120 28 L205 55 L120 72 Z" fill="none" stroke="#434C5E" stroke-width="1.5" stroke-dasharray="4 2"/>
+
+  <!-- Contextual Element: "灯吊在天花板上" (Lamp hanging from the ceiling) -->
+  <!-- Wire/Cord -->
+  <line x1="120" y1="50" x2="120" y2="110" stroke="#88C0D0" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Lamp Fixture / Base on Ceiling -->
+  <ellipse cx="120" cy="50" rx="10" ry="4" fill="#E5C07B"/>
+
+  <!-- Lampshade -->
+  <path d="M95 110 L145 110 L160 140 L80 140 Z" fill="#E5C07B"/>
+
+  <!-- Light Bulb -->
+  <circle cx="120" cy="143" r="8" fill="#FEE180" />
+
+  <!-- Radiating Light Glow (Soft Accent) -->
+  <path d="M100 155 L70 190 M140 155 L170 190 M120 157 L120 200" stroke="#FEE180" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <circle cx="120" cy="150" r="30" fill="#FEE180" opacity="0.1"/>
+
+  <!-- Ambient Light Reflection on Floor/Walls -->
+  <ellipse cx="120" cy="205" rx="50" ry="12" fill="#FEE180" opacity="0.15"/>
+</svg>

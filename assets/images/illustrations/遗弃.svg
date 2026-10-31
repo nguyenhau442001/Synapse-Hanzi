@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground -->
+  <path d="M40 190 L200 190" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Person (The Abandoner) -->
+  <g transform="translate(140, 100)">
+    <path d="M0 0 C-10 0 -20 10 -20 20 L-20 80 L-10 80 L-10 40 L0 40 L10 40 L10 80 L20 80 L20 20 C20 10 10 0 0 0" fill="#E2E8F0"/>
+    <circle cx="0" cy="-15" r="15" fill="#E2E8F0"/>
+    <!-- Motion lines for walking away -->
+    <path d="M-30 50 L-50 50 M-35 60 L-55 60" stroke="#718096" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Abandoned Pet (Small Dog) -->
+  <g transform="translate(70, 150)">
+    <path d="M-15 0 L15 0 C20 0 20 -10 15 -15 L5 -15 L5 -20 L-5 -20 L-5 -15 L-15 -15 C-20 -15 -20 -5 -15 0" fill="#D69E2E"/>
+    <path d="M-10 -15 L-15 -25 M10 -15 L15 -25" stroke="#D69E2E" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="8" cy="-8" r="2" fill="#1A1D24"/>
+  </g>
+  
+  <!-- Action Indicator (The suitcase left behind) -->
+  <rect x="95" y="165" width="20" height="15" rx="2" fill="#F6AD55"/>
+  <path d="M100 165 L100 160 C100 155 110 155 110 160 L110 165" stroke="#F6AD55" stroke-width="3" fill="none"/>
+  
+  <!-- Motion lines for the person moving away -->
+  <path d="M130 120 L110 120 M125 130 L105 130" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+</svg>

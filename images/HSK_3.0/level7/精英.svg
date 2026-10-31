@@ -1,0 +1,34 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Central figure representing the Elite/Elite Scholar -->
+  <g transform="translate(120, 120)">
+    <!-- Head -->
+    <circle cx="0" cy="-40" r="25" fill="#E0E0E0"/>
+    <!-- Torso/Suit -->
+    <path d="M-35 15 L35 15 L25 80 L-25 80 Z" fill="#3D5AFE"/>
+    <!-- Lapels -->
+    <path d="M-10 15 L-25 80 L-5 80 Z" fill="#283593"/>
+    <path d="M10 15 L25 80 L5 80 Z" fill="#283593"/>
+    
+    <!-- Academic Cap (Mortarboard) -->
+    <path d="M-45 -55 L0 -70 L45 -55 L0 -40 Z" fill="#FFC107"/>
+    <path d="M-45 -55 L0 -40 L45 -55" fill="#FFB300"/>
+    <rect x="-2" y="-45" width="4" height="20" fill="#FFC107"/>
+    
+    <!-- Glowing Aura/Focus (Subtle highlight for "Elite") -->
+    <circle cx="0" cy="-40" r="35" fill="none" stroke="#FFC107" stroke-width="2" stroke-dasharray="4 4" opacity="0.6"/>
+    
+    <!-- Holding a book/document -->
+    <rect x="25" y="0" width="30" height="40" rx="2" fill="#FFFFFF"/>
+    <line x1="30" y1="10" x2="50" y2="10" stroke="#1A1D24" stroke-width="2"/>
+    <line x1="30" y1="20" x2="50" y2="20" stroke="#1A1D24" stroke-width="2"/>
+    <line x1="30" y1="30" x2="45" y2="30" stroke="#1A1D24" stroke-width="2"/>
+  </g>
+  
+  <!-- Background subtle geometric nodes to imply "Academic Network/Elite Group" -->
+  <circle cx="60" cy="60" r="4" fill="#FFC107" opacity="0.3"/>
+  <circle cx="180" cy="180" r="4" fill="#FFC107" opacity="0.3"/>
+  <circle cx="180" cy="60" r="4" fill="#FFC107" opacity="0.3"/>
+  <circle cx="60" cy="180" r="4" fill="#FFC107" opacity="0.3"/>
+</svg>

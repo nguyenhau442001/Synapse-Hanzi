@@ -1,0 +1,61 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Base ground / Land area representation (Hectare / 10,000 square meters concept) -->
+    <!-- Distant mountain range & forest silhouette for scale and nature context (referencing forest park) -->
+    <path d="M30 150 L60 120 L90 145 L130 110 L170 135 L210 100 L210 170 L30 170 Z" fill="#222831"/>
+    
+    <!-- Isometric large plot grid / land boundary indicating measurement (1 Hectare square plot) -->
+    <path d="M120 95 L190 130 L120 165 L50 130 Z" fill="#2E4033" stroke="#4E9F3D" stroke-width="2" stroke-linejoin="round"/>
+    
+    <!-- Internal grid lines to show vast measured area -->
+    <path d="M120 130 L190 130 M120 95 L120 165 M85 112 L155 147 M155 112 L85 147" stroke="#3D5A45" stroke-width="1" stroke-dasharray="3,3"/>
+    
+    <!-- Glowing corner markers for precise land measurement -->
+    <circle cx="120" cy="95" r="3" fill="#FFB703"/>
+    <circle cx="190" cy="130" r="3" fill="#FFB703"/>
+    <circle cx="120" cy="165" r="3" fill="#FFB703"/>
+    <circle cx="50" cy="130" r="3" fill="#FFB703"/>
+    
+    <!-- Detailed forestry elements inside and around the plot to ground the forest park context -->
+    <!-- Pine trees (Low poly / flat vector style) -->
+    <g fill="#1E5128">
+      <!-- Tree cluster left -->
+      <polygon points="65,130 55,145 75,145" />
+      <polygon points="65,120 57,133 73,133" />
+      <rect x="63" y="145" width="4" height="6" fill="#8D5B4C"/>
+
+      <polygon points="85,140 75,155 95,155" />
+      <polygon points="85,130 78,142 92,142" />
+      <rect x="83" y="155" width="4" height="6" fill="#8D5B4C"/>
+
+      <!-- Tree cluster right -->
+      <polygon points="175,125 165,140 185,140" />
+      <polygon points="175,115 168,128 182,128" />
+      <rect x="173" y="140" width="4" height="6" fill="#8D5B4C"/>
+
+      <!-- Main prominent tree foreground center-right -->
+      <polygon points="145,100 130,125 160,125" fill="#286638"/>
+      <polygon points="145,85 133,105 157,105" fill="#388E3C"/>
+      <rect x="143" y="125" width="4" height="10" fill="#8D5B4C"/>
+    </g>
+
+    <!-- Scale / Dimension indicator brackets -->
+    <path d="M45 135 L38 135 L38 165 L45 165" fill="none" stroke="#FFB703" stroke-width="1.5"/>
+    <path d="M195 135 L202 135 L202 165 L195 165" fill="none" stroke="#FFB703" stroke-width="1.5"/>
+    
+    <!-- Central visual focus: Survey / Measurement Marker Icon floating above the land plot -->
+    <g transform="translate(120, 65)">
+      <!-- Marker Pin body -->
+      <path d="M0 -22 C-10 -22 -18 -14 -18 -4 C-18 8 0 22 0 22 C0 22 18 8 18 -4 C18 -14 10 -22 0 -22 Z" fill="#FFB703"/>
+      <!-- Inner core -->
+      <circle cx="0" cy="-4" r="7" fill="#1A1D24"/>
+      <!-- Small indicator dot -->
+      <circle cx="0" cy="-4" r="3" fill="#FFB703"/>
+    </g>
+    
+    <!-- Dotted sight line from marker to center of plot -->
+    <line x1="120" y1="87" x2="120" y2="95" stroke="#FFB703" stroke-width="2" stroke-dasharray="2,2"/>
+  </g>
+</svg>

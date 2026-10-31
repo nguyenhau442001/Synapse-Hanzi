@@ -1,0 +1,33 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Launch Pad Base -->
+  <path d="M90 200 L150 200 L160 215 L80 215 Z" fill="#3A4252"/>
+  <rect x="105" y="185" width="30" height="15" fill="#4E5D6C"/>
+  <line x1="95" y1="200" x2="80" y2="170" stroke="#4E5D6C" stroke-width="4" stroke-linecap="round"/>
+  <line x1="145" y1="200" x2="160" y2="170" stroke="#4E5D6C" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Rocket Exhaust / Fire -->
+  <path d="M105 170 Q120 215 120 225 Q120 215 135 170 Z" fill="#FF5722"/>
+  <path d="M112 170 Q120 195 120 205 Q120 195 128 170 Z" fill="#FFC107"/>
+
+  <!-- Rocket Body (Center) -->
+  <path d="M120 35 C135 55 135 140 135 170 L105 170 C105 140 105 55 120 35 Z" fill="#F0F3F6"/>
+  
+  <!-- Rocket Nosecone -->
+  <path d="M120 35 C120 35 105 60 105 75 L135 75 C135 60 120 35 120 35 Z" fill="#FF5722"/>
+
+  <!-- Rocket Fins -->
+  <path d="M105 140 L85 170 L105 170 Z" fill="#FF5722"/>
+  <path d="M135 140 L155 170 L135 170 Z" fill="#FF5722"/>
+
+  <!-- Window / Porthole -->
+  <circle cx="120" cy="95" r="10" fill="#3A4252"/>
+  <circle cx="120" cy="95" r="7" fill="#64B5F6"/>
+  
+  <!-- Motion Lines / Speed Trails -->
+  <line x1="85" y1="50" x2="70" y2="40" stroke="#4E5D6C" stroke-width="2" stroke-linecap="round"/>
+  <line x1="155" y1="80" x2="170" y2="70" stroke="#4E5D6C" stroke-width="2" stroke-linecap="round"/>
+  <line x1="90" y1="120" x2="75" y2="110" stroke="#4E5D6C" stroke-width="2" stroke-linecap="round"/>
+  <line x1="150" y1="140" x2="165" y2="130" stroke="#4E5D6C" stroke-width="2" stroke-linecap="round"/>
+</svg>

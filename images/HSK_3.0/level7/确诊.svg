@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle clinical grid/glow -->
+  <circle cx="120" cy="120" r="80" fill="#222834" opacity="0.5"/>
+  
+  <!-- Medical Clipboard / Diagnostic Report (Object representation of "Confirmed Diagnosis") -->
+  <!-- Clipboard Shadow -->
+  <rect x="75" y="45" width="90" height="150" rx="12" fill="#111418"/>
+  <!-- Clipboard Base -->
+  <rect x="70" y="40" width="90" height="150" rx="12" fill="#2E384D"/>
+  
+  <!-- Clip at the top -->
+  <rect x="95" y="32" width="50" height="16" rx="4" fill="#64748B"/>
+  <rect x="105" y="28" width="30" height="8" rx="2" fill="#94A3B8"/>
+
+  <!-- Paper on clipboard -->
+  <rect x="80" y="60" width="70" height="120" rx="6" fill="#F8FAFC"/>
+
+  <!-- Lungs Icon (representing the medical condition/pneumonia context) -->
+  <path d="M110 85 C110 80 102 75 95 80 C88 85 85 95 87 105 C89 115 95 120 105 125 C110 127 112 120 110 115 C105 110 100 100 100 95 C100 90 105 88 110 85 Z" fill="#94A3B8" opacity="0.6"/>
+  <path d="M130 85 C130 80 138 75 145 80 C152 85 155 95 153 105 C151 115 145 120 135 125 C130 127 128 120 130 115 C135 110 140 100 140 95 C140 90 135 88 130 85 Z" fill="#94A3B8" opacity="0.6"/>
+  <!-- Trachea -->
+  <rect x="117" y="78" width="6" height="15" rx="2" fill="#94A3B8" opacity="0.6"/>
+
+  <!-- Document text lines -->
+  <rect x="92" y="138" width="46" height="4" rx="2" fill="#CBD5E1"/>
+  <rect x="92" y="148" width="36" height="4" rx="2" fill="#CBD5E1"/>
+  <rect x="92" y="158" width="40" height="4" rx="2" fill="#CBD5E1"/>
+
+  <!-- Official Stamp / Checkmark overlay indicating "Confirmed Diagnosis" (确诊) -->
+  <g transform="translate(125, 135)">
+    <!-- Stamp Glow/Circle -->
+    <circle cx="0" cy="0" r="26" fill="#1A1D24"/>
+    <circle cx="0" cy="0" r="24" fill="#0F172A" stroke="#F59E0B" stroke-width="3" stroke-dasharray="4 2"/>
+    
+    <!-- Bold Checkmark (Confirmation) -->
+    <path d="M-9 0 L-3 6 L10 -7" fill="none" stroke="#F59E0B" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Horizon line and distant silhouette of a research facility -->
+  <path d="M0 180 L240 180 L240 240 L0 240 Z" fill="#252A33"/>
+  <path d="M40 180 L70 140 L100 180 Z" fill="#323842"/>
+  <path d="M110 180 L140 130 L170 180 Z" fill="#323842"/>
+  <path d="M180 180 L210 150 L240 180 Z" fill="#323842"/>
+
+  <!-- The Dawn Light (曙光) -->
+  <circle cx="120" cy="180" r="45" fill="url(#grad1)" opacity="0.8"/>
+  <defs>
+    <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8C00;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Sun rays emerging -->
+  <path d="M120 170 L120 100" stroke="#FFD700" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M120 170 L160 120" stroke="#FFD700" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M120 170 L80 120" stroke="#FFD700" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  
+  <!-- Central focus: A glowing orb of light representing the breakthrough -->
+  <circle cx="120" cy="170" r="15" fill="#FFFACD"/>
+  <circle cx="120" cy="170" r="8" fill="#FFFFFF"/>
+</svg>

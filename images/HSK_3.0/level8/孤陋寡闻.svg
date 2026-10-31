@@ -1,0 +1,54 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle dark background atmosphere (tiny closed box/circle theme) -->
+  <circle cx="120" cy="120" r="75" fill="#222730" stroke="#2F3642" stroke-width="2"/>
+
+  <!-- The "Narrow Circle" / Barrier blocking the outside world -->
+  <circle cx="120" cy="120" r="58" fill="none" stroke="#D14D41" stroke-width="3" stroke-dasharray="6 4" opacity="0.6"/>
+
+  <!-- Character representing limited perspective inside the narrow circle -->
+  <g transform="translate(0, 5)">
+    <!-- Body -->
+    <path d="M 95 135 Q 120 120 145 135 L 145 155 L 95 155 Z" fill="#4C566A"/>
+    <!-- Head -->
+    <circle cx="120" cy="105" r="18" fill="#D8DEE9"/>
+    
+    <!-- Looking through a small tube or hands cupped tightly over eyes (narrow vision) -->
+    <!-- Left arm holding tube -->
+    <path d="M 105 125 L 120 115" stroke="#4C566A" stroke-width="6" stroke-linecap="round"/>
+    <!-- Right arm holding tube -->
+    <path d="M 135 125 L 120 115" stroke="#4C566A" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Monocular / Tiny viewing cylinder emphasizing narrow perspective -->
+    <rect x="115" y="105" width="22" height="10" rx="3" fill="#EBCB8B" transform="rotate(15 120 110)"/>
+  </g>
+
+  <!-- Outside the barrier: Vast, rich world hidden/ignored (stars, books, wider knowledge symbols fading in dark) -->
+  <!-- Tiny distant knowledge icons outside the circle -->
+  <!-- Scroll/Book icon top left -->
+  <g transform="translate(52, 65) scale(0.7)" opacity="0.3">
+    <rect x="0" y="0" width="16" height="20" rx="2" fill="#88C0D0"/>
+    <line x1="4" y1="5" x2="12" y2="5" stroke="#2E3440" stroke-width="2"/>
+    <line x1="4" y1="10" x2="12" y2="10" stroke="#2E3440" stroke-width="2"/>
+  </g>
+
+  <!-- Globe icon top right -->
+  <g transform="translate(172, 70) scale(0.7)" opacity="0.3">
+    <circle cx="10" cy="10" r="10" fill="none" stroke="#A3BE8C" stroke-width="2"/>
+    <path d="M 2 10 Q 10 5 18 10 Q 10 15 2 10" fill="none" stroke="#A3BE8C" stroke-width="1.5"/>
+    <line x1="10" y1="0" x2="10" y2="20" stroke="#A3BE8C" stroke-width="1.5"/>
+  </g>
+
+  <!-- Star/Insight symbol bottom right -->
+  <g transform="translate(165, 155) scale(0.7)" opacity="0.3">
+    <polygon points="10,2 12,8 18,10 12,12 10,18 8,12 2,10 8,8" fill="#EBCB8B"/>
+  </g>
+
+  <!-- Focus / Accent overlay highlighting the isolation -->
+  <!-- Small glowing question mark or lack of awareness indicator above head -->
+  <path d="M 116 70 Q 120 62 124 68 Q 127 73 120 78 L 120 83" fill="none" stroke="#D14D41" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="120" cy="90" r="1.5" fill="#D14D41"/>
+
+</svg>

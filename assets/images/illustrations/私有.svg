@@ -1,0 +1,54 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Drop Shadow for Safe Box -->
+  <rect x="72" y="78" width="96" height="96" rx="16" fill="#111318"/>
+
+  <!-- Safe Box Outer Body -->
+  <rect x="70" y="72" width="96" height="96" rx="16" fill="#2C323D"/>
+  <rect x="70" y="72" width="96" height="96" rx="16" fill="none" stroke="#3E4756" stroke-width="2"/>
+
+  <!-- Safe Box Door -->
+  <rect x="78" y="80" width="80" height="80" rx="12" fill="#222731"/>
+
+  <!-- Door Hinge Details -->
+  <rect x="74" y="96" width="4" height="12" rx="2" fill="#3E4756"/>
+  <rect x="74" y="132" width="4" height="12" rx="2" fill="#3E4756"/>
+
+  <!-- Safe Dial / Lock Mechanism -->
+  <circle cx="118" cy="120" r="18" fill="#1A1D24"/>
+  <circle cx="118" cy="120" r="18" fill="none" stroke="#F59E0B" stroke-width="3"/>
+  <circle cx="118" cy="120" r="12" fill="#222731"/>
+  <!-- Dial Handle/Marker -->
+  <line x1="118" y1="120" x2="118" y2="108" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="118" cy="108" r="2" fill="#FFFFFF"/>
+
+  <!-- Safe Handle -->
+  <rect x="138" y="112" width="12" height="16" rx="3" fill="#F59E0B"/>
+  <rect x="142" y="106" width="4" height="28" rx="2" fill="#D97706"/>
+
+  <!-- Golden Shield (Symbolizing Legal Private Property Protection) -->
+  <path d="M120 44 
+           C135 44 148 48 148 48 
+           C148 70 144 92 120 102 
+           C96 92 92 70 92 48 
+           C92 48 105 44 120 44 Z" 
+        fill="#F59E0B"/>
+  
+  <!-- Shield Inner Highlight -->
+  <path d="M120 48 
+           C133 48 144 51 144 51 
+           C144 69 140 88 120 97 
+           C100 88 96 69 96 51 
+           C96 51 107 48 120 48 Z" 
+        fill="#FBBF24"/>
+
+  <!-- Checkmark on Shield -->
+  <path d="M109 72 L116 79 L131 63" 
+        fill="none" 
+        stroke="#1A1D24" 
+        stroke-width="5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+</svg>

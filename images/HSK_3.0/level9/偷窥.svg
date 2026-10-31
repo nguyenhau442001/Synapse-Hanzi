@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Ambient Glow from Hidden Peephole -->
+  <circle cx="120" cy="120" r="60" fill="#2D2235" opacity="0.6"/>
+
+  <!-- Wall structure indicating a partition/wall -->
+  <rect x="40" y="40" width="160" height="160" rx="6" fill="#242933" stroke="#2E3642" stroke-width="2"/>
+  <line x1="40" y1="120" x2="200" y2="120" stroke="#1A1D24" stroke-width="4"/>
+
+  <!-- The Central Object: A concealed micro-camera lens embedded in a wall/panel (Noun representation) -->
+  <g transform="translate(120, 120)">
+    <!-- Outer casing / mounting ring -->
+    <circle cx="0" cy="0" r="32" fill="#2E3642" stroke="#3E4A5B" stroke-width="2"/>
+    
+    <!-- Metallic bezel -->
+    <circle cx="0" cy="0" r="24" fill="#15181E"/>
+
+    <!-- Inner mechanical ring -->
+    <circle cx="0" cy="0" r="18" fill="#222831" stroke="#FF5722" stroke-width="1.5" stroke-dasharray="6 3"/>
+
+    <!-- Glass lens body -->
+    <circle cx="0" cy="0" r="12" fill="#0A0D12"/>
+
+    <!-- High-contrast surveillance glowing lens / sinister red recording dot (focal accent) -->
+    <circle cx="-3" cy="-3" r="5" fill="#FF3D00"/>
+    <circle cx="-4" cy="-4" r="2" fill="#FF8A65"/>
+
+    <!-- Lens reflection flare -->
+    <path d="M 4 2 L 8 -2" stroke="#4DB6AC" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Suspicious sweeping observation cone (peeking angle) -->
+  <path d="M 120 120 L 200 60 L 200 180 Z" fill="#FF5722" opacity="0.08"/>
+  <path d="M 120 120 L 200 60" stroke="#FF5722" stroke-width="1" stroke-dasharray="3 3" opacity="0.4"/>
+  <path d="M 120 120 L 200 180" stroke="#FF5722" stroke-width="1" stroke-dasharray="3 3" opacity="0.4"/>
+
+  <!-- Corner mounting screws for realism -->
+  <circle cx="56" cy="56" r="3" fill="#3E4A5B"/>
+  <circle cx="184" cy="56" r="3" fill="#3E4A5B"/>
+  <circle cx="56" cy="184" r="3" fill="#3E4A5B"/>
+  <circle cx="184" cy="184" r="3" fill="#3E4A5B"/>
+</svg>

@@ -1,0 +1,31 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground Path -->
+  <path d="M40 180 L200 180" stroke="#4A5568" stroke-width="4" stroke-dasharray="8 8"/>
+  
+  <!-- Character -->
+  <g transform="translate(60, 100)">
+    <!-- Body -->
+    <path d="M20 80 L20 40 L40 40 L40 80 Z" fill="#F6AD55"/>
+    <!-- Head -->
+    <circle cx="30" cy="30" r="12" fill="#F6AD55"/>
+    <!-- Arm reaching forward -->
+    <path d="M40 45 L70 60" stroke="#F6AD55" stroke-width="8" stroke-linecap="round"/>
+    <!-- Leg -->
+    <path d="M25 80 L25 100" stroke="#F6AD55" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Paving Stones being placed -->
+  <rect x="130" y="170" width="20" height="20" rx="2" fill="#ECC94B"/>
+  <rect x="155" y="170" width="20" height="20" rx="2" fill="#ECC94B"/>
+  <rect x="180" y="170" width="20" height="20" rx="2" fill="#ECC94B"/>
+  
+  <!-- Motion Lines -->
+  <path d="M80 50 Q100 40 120 50" stroke="#A0AEC0" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M80 60 Q100 50 120 60" stroke="#A0AEC0" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Destination/Goal Indicator (Subtle) -->
+  <path d="M210 160 L210 190" stroke="#ED8936" stroke-width="4" stroke-linecap="round"/>
+  <path d="M200 160 L220 160" stroke="#ED8936" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,39 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Object: Two ancient traditional roof structures / lanterns / architectural profiles merging/paralleling to represent cultural proximity, shared traditions, and close resemblance ("相近") -->
+  <!-- Architectural silhouette left -->
+  <g transform="translate(48, 65)">
+    <!-- Roof eaves (traditional curved style) -->
+    <path d="M 15 40 L 45 40 L 52 25 L 8 25 Z" fill="#3A4454"/>
+    <path d="M 5 65 L 55 65 L 60 50 L 0 50 Z" fill="#E8A838"/>
+    <path d="M -5 95 L 65 95 L 70 80 L -10 80 Z" fill="#3A4454"/>
+    <!-- Building body -->
+    <rect x="10" y="95" width="40" height="70" fill="#242B35"/>
+    <!-- Traditional window grid -->
+    <rect x="20" y="110" width="20" height="30" rx="2" fill="#E8A838" opacity="0.8"/>
+    <line x1="30" y1="110" x2="30" y2="140" stroke="#242B35" stroke-width="2"/>
+    <line x1="20" y1="125" x2="40" y2="125" stroke="#242B35" stroke-width="2"/>
+  </g>
+
+  <!-- Architectural silhouette right (nearly identical, symbolizing "相近" - close similarity) -->
+  <g transform="translate(122, 65)">
+    <!-- Roof eaves -->
+    <path d="M 15 40 L 45 40 L 52 25 L 8 25 Z" fill="#3A4454"/>
+    <path d="M 5 65 L 55 65 L 60 50 L 0 50 Z" fill="#E8A838"/>
+    <path d="M -5 95 L 65 95 L 70 80 L -10 80 Z" fill="#3A4454"/>
+    <!-- Building body -->
+    <rect x="10" y="95" width="40" height="70" fill="#242B35"/>
+    <!-- Traditional window grid -->
+    <rect x="20" y="110" width="20" height="30" rx="2" fill="#E8A838" opacity="0.8"/>
+    <line x1="30" y1="110" x2="30" y2="140" stroke="#242B35" stroke-width="2"/>
+    <line x1="20" y1="125" x2="40" y2="125" stroke="#242B35" stroke-width="2"/>
+  </g>
+
+  <!-- Subtle alignment / proximity indicator lines at the bottom connecting them -->
+  <path d="M 58 178 L 182 178" stroke="#E8A838" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 6" opacity="0.7"/>
+  
+  <!-- Overlapping glowing resonance arc above to show close similarity -->
+  <path d="M 80 50 Q 120 25 160 50" fill="none" stroke="#E8A838" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+</svg>

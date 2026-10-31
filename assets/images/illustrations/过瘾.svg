@@ -1,0 +1,45 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle background cinematic light rays / progression lines -->
+  <path d="M40 120 L200 120" stroke="#2A2F3D" stroke-width="1" stroke-dasharray="4 4"/>
+  <path d="M70 70 L190 170" stroke="#2A2F3D" stroke-width="1"/>
+  
+  <!-- Visual Metaphor: Escalation / Progression & Extreme Satisfaction (Bursting past limit) -->
+  <!-- Baseline steps / progression rising from left to right -->
+  <g transform="translate(0, 20)">
+    <!-- Step 1 -->
+    <rect x="40" y="140" width="30" height="15" rx="3" fill="#2E364F"/>
+    <!-- Step 2 -->
+    <rect x="75" y="125" width="30" height="30" rx="3" fill="#363E59"/>
+    <!-- Step 3 -->
+    <rect x="110" y="110" width="30" height="45" rx="3" fill="#434D6E"/>
+
+    <!-- Sharp breakthrough / Escalation rocket or energy beam bursting past normal limit into extreme outcome -->
+    <!-- Explosion / Energy Surge representing "Guòyǐn" (đã đời, thỏa thích) -->
+    <g transform="translate(165, 95)">
+      <!-- Outer energy burst (Gold/Orange accent) -->
+      <path d="M0 -35 L12 -12 L35 0 L12 12 L0 35 L-12 12 L-35 0 L-12 -12 Z" fill="#F59E0B" opacity="0.3"/>
+      
+      <!-- Core dynamic star/burst shape -->
+      <path d="M0 -25 L8 -8 L25 0 L8 8 L0 25 L-8 8 L-25 0 L-8 -8 Z" fill="#F59E0B"/>
+      
+      <!-- Center bright spark -->
+      <circle cx="0" cy="0" r="8" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Trail / Energy wave showing progression and sudden high-intensity climax -->
+    <path d="M140 125 C 150 125, 155 105, 165 95" stroke="#F59E0B" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Sparkles / Exaggerated extreme satisfaction accents -->
+    <circle cx="195" cy="65" r="3" fill="#F59E0B"/>
+    <circle cx="210" cy="115" r="2" fill="#38BDF8"/>
+    <circle cx="150" cy="55" r="2" fill="#38BDF8"/>
+    <path d="M190 145 L195 150 L190 155 L185 150 Z" fill="#F59E0B"/>
+    <path d="M130 75 L133 78 L130 81 L127 78 Z" fill="#38BDF8"/>
+  </g>
+
+  <!-- Ground line -->
+  <line x1="30" y1="175" x2="210" y2="175" stroke="#333B52" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambient / Glow representing mental focus/distance -->
+  <circle cx="120" cy="110" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Left Side: The Mother (Calm, steadfast silhouette at home) -->
+  <g transform="translate(0, 0)">
+    <!-- Mother body/chair -->
+    <path d="M55 175 L85 175 L80 130 L60 130 Z" fill="#2D3748"/>
+    <!-- Mother torso -->
+    <path d="M50 170 C50 145 70 140 75 140 C80 140 100 145 100 170 Z" fill="#4A5568"/>
+    <!-- Mother head -->
+    <circle cx="75" cy="122" r="12" fill="#CBD5E0"/>
+    <!-- Mother posture - gentle leaning forward, hands holding a warm teacup or resting -->
+    <path d="M68 155 Q75 150 82 155" stroke="#A0AEC0" stroke-width="3" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Visualizing "挂念" (Long-distance mental tether / emotional weight) -->
+  <!-- Dotted/Pulsing connection line spanning from home out to the distance -->
+  <path d="M 90 115 Q 120 70 160 100" fill="none" stroke="#ED8936" stroke-width="2.5" stroke-dasharray="4 4" opacity="0.8"/>
+  <path d="M 125 85 Q 140 90 155 98" fill="none" stroke="#F6AD55" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Right Side (The Child/Distant person - smaller, scaled for perspective & emotional distance) -->
+  <g transform="translate(90, 15)">
+    <!-- Desk / Work environment in distance -->
+    <rect x="65" y="115" width="30" height="4" rx="2" fill="#2D3748"/>
+    <rect x="73" y="119" width="14" height="21" fill="#2D3748"/>
+    
+    <!-- Child figure -->
+    <circle cx="80" cy="90" r="8" fill="#CBD5E0"/>
+    <path d="M70 115 C70 102 90 102 90 115 Z" fill="#4A5568"/>
+    
+    <!-- Desk lamp casting a small focused glow -->
+    <path d="M60 100 L65 115" stroke="#718096" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="60" cy="98" r="4" fill="#F6AD55" opacity="0.8"/>
+  </g>
+
+  <!-- Scale exaggeration / Emotional weight representation: A glowing warm thought bubble/focus radiating from the mother toward the child -->
+  <g transform="translate(110, 50)">
+    <circle cx="0" cy="0" r="18" fill="#ED8936" opacity="0.15"/>
+    <circle cx="0" cy="0" r="10" fill="#ED8936" opacity="0.3"/>
+    <!-- Abstract representation of care/mindfulness: glowing warm pulse -->
+    <path d="M-4 -2 C-4 -6 4 -6 4 -2 C4 3 0 6 0 8 C0 6 -4 3 -4 -2 Z" fill="#F6AD55"/>
+  </g>
+
+  <!-- UI / Flashcard Minimal Accent (Bottom subtle anchor) -->
+  <rect x="95" y="210" width="50" height="3" rx="1.5" fill="#2D3748"/>
+</svg>

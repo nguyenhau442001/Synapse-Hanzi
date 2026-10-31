@@ -1,0 +1,53 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient glow behind medal -->
+  <circle cx="120" cy="115" r="55" fill="#FFC107" opacity="0.08" filter="blur(8px)"/>
+
+  <!-- Ribbon -->
+  <path d="M96 44 L144 44 L156 96 L120 110 L84 96 Z" fill="#B71C1C"/>
+  <path d="M104 44 L136 44 L144 96 L120 106 L96 96 Z" fill="#D32F2F"/>
+  
+  <!-- Ribbon Gold Trim/Center Accent -->
+  <polygon points="120,44 126,96 120,106 114,96" fill="#FFD54F" opacity="0.4"/>
+
+  <!-- Medal Mounting Ring -->
+  <circle cx="120" cy="107" r="10" fill="none" stroke="#FFD700" stroke-width="4"/>
+  <circle cx="120" cy="107" r="6" fill="#FFA000"/>
+
+  <!-- Starfish/Multi-pointed Star Base -->
+  <g fill="#FFD700">
+    <!-- Diagonal rays -->
+    <polygon points="120,115 145,80 155,115 145,150" opacity="0.85"/>
+    <polygon points="120,115 95,80 85,115 95,150" opacity="0.85"/>
+    <polygon points="120,115 85,135 120,175 155,135" opacity="0.85"/>
+    <polygon points="120,115 85,95 120,55 155,95" opacity="0.85"/>
+  </g>
+
+  <!-- Main 5-Pointed Star Layer -->
+  <polygon points="120,62 133,96 169,96 140,118 151,152 120,132 89,152 100,118 71,96 107,96" fill="#FFDF00"/>
+  
+  <!-- Star Facets for 3D appearance -->
+  <polygon points="120,115 120,62 133,96" fill="#FFF176"/>
+  <polygon points="120,115 133,96 169,96" fill="#FFC107"/>
+  <polygon points="120,115 169,96 140,118" fill="#FFB300"/>
+  <polygon points="120,115 140,118 151,152" fill="#FFA000"/>
+  <polygon points="120,115 151,152 120,132" fill="#FF8F00"/>
+
+  <!-- Central Circular Emblem -->
+  <circle cx="120" cy="115" r="22" fill="#D32F2F"/>
+  <circle cx="120" cy="115" r="18" fill="#B71C1C"/>
+  
+  <!-- Laurel Wreath Inside Emblem -->
+  <path d="M110 120 C110 110 115 107 120 107 C125 107 130 110 130 120" fill="none" stroke="#FFD700" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Tiny Central Star -->
+  <polygon points="120,105 123,112 130,113 125,118 126,125 120,121 114,125 115,118 110,113 117,112" fill="#FFD700"/>
+
+  <!-- Sparkles / Highlights -->
+  <path d="M72 70 L75 76 L81 79 L75 82 L72 88 L69 82 L63 79 L69 76 Z" fill="#FFFFFF" opacity="0.8"/>
+  <path d="M168 70 L170.5: 75 L176 77.5 L170.5 80 L168 85 L165.5 80 L160 77.5 L165.5 75 Z" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="158" cy="142" r="2" fill="#FFFFFF" opacity="0.7"/>
+  <circle cx="84" cy="138" r="1.5" fill="#FFFFFF" opacity="0.7"/>
+</svg>

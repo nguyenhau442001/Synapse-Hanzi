@@ -1,0 +1,28 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "劣势" (Disadvantage / Outnumbered state based on context) -->
+  <!-- We depict a single silhouette figure facing against a cluster of opposing figures to visually represent "thế yếu" (disadvantage / being outnumbered). -->
+  
+  <g transform="translate(0, 10)">
+    <!-- Opposing group (Left / Multiple figures representing the stronger side) -->
+    <!-- Figure 1 (Back) -->
+    <circle cx="65" cy="85" r="10" fill="#4A5568"/>
+    <path d="M53 130 C53 105, 77 105, 77 130 Z" fill="#4A5568"/>
+
+    <!-- Figure 2 (Front) -->
+    <circle cx="85" cy="95" r="11" fill="#718096"/>
+    <path d="M72 145 C72 118, 98 118, 98 145 Z" fill="#718096"/>
+
+    <!-- Single protagonist (Right / Representing "劣势" - disadvantage/outnumbered but standing firm) -->
+    <circle cx="165" cy="95" r="12" fill="#E2E8F0"/>
+    <path d="M150 145 C150 115, 180 115, 180 145 Z" fill="#CBD5E0"/>
+
+    <!-- Ground Line -->
+    <line x1="40" y1="145" x2="200" y2="145" stroke="#2D3748" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Focal Accent: Subtle glowing/warm indicator of challenge/focus on the single character without using forbidden gauges/badges -->
+    <circle cx="165" cy="95" r="18" fill="none" stroke="#F6AD55" stroke-width="2.5" stroke-dasharray="6 4" opacity="0.8"/>
+  </g>
+</svg>
