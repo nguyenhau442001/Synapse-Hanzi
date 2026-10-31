@@ -1,6 +1,7 @@
-# ⚡ Synapse Hanzi — Cognitive Visual Workstation (HSK 1–9)
+# ⚡ 汉字思维 (Hànzì Sīwéi) — Hanzi Mind
 
-> **Công cụ học Flashcard từ vựng chữ Hán chuyên sâu, tối ưu phản xạ ghi nhớ và tích hợp trọn bộ tính năng ôn thi HSK bổ ích.**  
+> **Think in Characters. Master Chinese.**  
+> Trạm học từ vựng chữ Hán qua tư duy bản chất, liên kết ngữ cảnh, đa giác quan và 100% Offline (PWA).  
 > Kết hợp phương pháp lặp lại ngắt quãng **Spaced Repetition (FSRS)**, minh họa ngữ cảnh sinh động (Visual Mnemonics), phân tích đọc hiểu chuyên sâu **HSK 4 Chuẩn Hanban**, luyện nghe đề thi thực tế, mô phỏng viết nét bút thuận và tra cứu âm Hán - Việt.
 
 ---
@@ -14,6 +15,8 @@
   <a href="https://nguyenhau442001.github.io/Synapse-Hanzi/">
     <img src="https://img.shields.io/badge/🌐_Mở_Trực_Tuyến_Ngay-https%3A%2F%2Fnguyenhau442001.github.io%2FSynapse--Hanzi-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo">
   </a>
+  <img src="https://img.shields.io/badge/Chế_độ-100%25_Offline_(PWA)-22c55e?style=for-the-badge&logo=pwa&logoColor=white" alt="PWA">
+  <img src="https://img.shields.io/badge/Phiên_bản-v2.4.0-blue?style=for-the-badge&logo=semver&logoColor=white" alt="Version v2.4.0">
   <img src="https://img.shields.io/badge/Phương_pháp-Flashcard_&_SRS-22c55e?style=for-the-badge&logo=anki&logoColor=white" alt="Flashcards">
   <img src="https://img.shields.io/badge/HSK-HSK_2.0_&_3.0_(1--9)-f59e0b?style=for-the-badge" alt="HSK 1-9">
   <img src="https://img.shields.io/badge/Ôn_thi-Luyện_nghe_&_Đọc_hiểu-3b82f6?style=for-the-badge" alt="HSK Prep">
@@ -27,7 +30,7 @@
 Theo dõi mục tiêu học tập hàng ngày, chuỗi ngày học (Streak 🔥), từ vựng của ngày và biểu đồ đóng góp (Heatmap).
 
 <p align="center">
-  <img src="assets/images/screenshots/01_dashboard.png" alt="Bảng điều khiển học tập Synapse Hanzi" width="95%">
+  <img src="assets/images/screenshots/01_dashboard.png" alt="Bảng điều khiển học tập 汉字思维 (Hanzi Mind)" width="95%">
 </p>
 
 ---

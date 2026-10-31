@@ -470,7 +470,7 @@ function renderDiscovery() {
   const gradedItem = homeElement('div', 'hw-discovery-item');
   gradedItem.setAttribute('role', 'button');
   gradedItem.setAttribute('tabindex', '0');
-  gradedItem.setAttribute('aria-label', 'Mở Synapse Graded Reading HSK 1–9');
+  gradedItem.setAttribute('aria-label', 'Mở Graded Reading HSK 1–9 · 汉字思维');
   gradedItem.innerHTML = `
     <span class="hw-discovery-icon" aria-hidden="true">📚</span>
     <div class="hw-discovery-info">

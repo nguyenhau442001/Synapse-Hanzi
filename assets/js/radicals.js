@@ -368,7 +368,7 @@ function goBackToRadicalHub() {
   document.getElementById('screenRadicalHub').style.display = '';
   document.getElementById('primaryTabs').style.display = '';
   document.getElementById('learningDashboard').style.display = '';
-  document.getElementById('appTitle').textContent = 'Synapse Hanzi';
+  document.getElementById('appTitle').textContent = '汉字思维';
   radicalTab = radicalReturnTab;
   radicalCurrentView = 'cards';
   renderRadicalHub();

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 tools/hanviet_qa_audit.py
-Audit and fix suspicious Sino-Vietnamese (Hán - Việt) readings in Synapse Hanzi dataset.
+Audit and fix suspicious Sino-Vietnamese (Hán - Việt) readings in 汉字思维 (Hanzi Mind) dataset.
 
 Reviewed & corrected suspicious cases:
 - 听: [Dẫn] -> [Thính]
@@ -220,7 +220,7 @@ def audit_and_fix_hsk4_reading(hsk4_reading_path, apply_changes=False):
 
 def main():
     apply_mode = "--apply" in sys.argv
-    print(f"=== Synapse Hanzi Sino-Vietnamese (Hán - Việt) QA Audit (apply={apply_mode}) ===")
+    print(f"=== 汉字思维 (Hanzi Mind) Sino-Vietnamese (Hán - Việt) QA Audit (apply={apply_mode}) ===")
 
     dict_path = "assets/js/hanviet-dict.js"
     vocab_files = glob.glob("database/vocabs/*.json") + glob.glob("database/vocabs/topics/*.json")

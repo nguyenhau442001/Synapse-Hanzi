@@ -3,7 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Synapse Hanzi · Trạm học từ vựng chữ Hán thông minh</title>
+<title>汉字思维 – Hanzi Mind | Learn Chinese Characters</title>
+<meta name="description" content="Learn Chinese characters through smart flashcards, HSK vocabulary, Pinyin, pronunciation, radicals, and spaced repetition.">
+<meta name="keywords" content="汉字思维, Hànzì Sīwéi, Hanzi Mind, Learn Chinese, Chinese Characters, HSK, Flashcards, Spaced Repetition">
+<meta property="og:type" content="website">
+<meta property="og:title" content="汉字思维 – Hanzi Mind | Learn Chinese Characters">
+<meta property="og:description" content="Learn Chinese characters through smart flashcards, HSK vocabulary, Pinyin, pronunciation, radicals, and spaced repetition.">
+<meta property="og:image" content="assets/images/icon-512.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="汉字思维 – Hanzi Mind | Learn Chinese Characters">
+<meta name="twitter:description" content="Learn Chinese characters through smart flashcards, HSK vocabulary, Pinyin, pronunciation, radicals, and spaced repetition.">
+<meta name="twitter:image" content="assets/images/icon-512.png">
 <link rel="manifest" href="config/pwa-manifest.json">
 <link rel="icon" href="assets/images/favicon.png"> <!-- favicon: tab/bookmark, simplified for small size -->
 <link rel="apple-touch-icon" href="assets/images/icon-512.png"> <!-- iOS home screen shortcut icon -->
@@ -11,7 +21,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Synapse Hanzi">
+<meta name="apple-mobile-web-app-title" content="汉字思维">
 <link rel="stylesheet" href="assets/flashcards.css?v=20261017-fix-example-box1">
 <link rel="stylesheet" href="assets/css/fast-review-picker.css?v=20261006-ui-refinement1">
 <link rel="stylesheet" href="assets/css/workstation.css?v=20261017-fix-example-box1">
@@ -33,7 +43,7 @@ if ('serviceWorker' in navigator) {
     banner.setAttribute('role', 'status');
     banner.setAttribute('aria-live', 'polite');
     banner.style.cssText = 'position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:99999;background:var(--card-bg, #1e293b);color:var(--text-primary, #fff);padding:10px 18px;border-radius:12px;border:1px solid var(--accent, #c05638);box-shadow:0 6px 24px rgba(0,0,0,0.28);display:flex;align-items:center;gap:12px;font-size:13px;font-weight:600;max-width:90vw;animation:welcomeToastIn 0.25s ease;';
-    banner.innerHTML = '<span>🚀 Có phiên bản Synapse Hanzi mới!</span>' +
+    banner.innerHTML = '<span>🚀 Có phiên bản 汉字思维 mới!</span>' +
       '<button type="button" id="pwaReloadBtn" style="background:var(--accent, #c05638);color:#fff;border:none;padding:5px 12px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;">Tải lại ngay</button>' +
       '<button type="button" id="pwaDismissBtn" aria-label="Đóng" style="background:none;border:none;color:var(--text-secondary, #94a3b8);font-size:16px;cursor:pointer;padding:0 4px;">✕</button>';
     document.body.appendChild(banner);
@@ -196,8 +206,13 @@ if ('serviceWorker' in navigator) {
     <div class="workstation-middle" id="workstationMiddle">
   <header class="app-header" id="appHeader">
     <div class="app-header-brand">
-      <h1 id="appTitle">Synapse Hanzi</h1>
-      <p id="appSubtitle">Trạm học chữ Hán đa chiều · Lặp lại ngắt quãng</p>
+      <div class="app-brand-badge">
+        <img src="assets/images/logo.svg" alt="汉字思维 Logo" class="app-brand-logo-img" width="34" height="34" />
+        <div class="app-brand-text-block">
+          <h1 id="appTitle">汉字思维</h1>
+          <p id="appSubtitle"><span class="brand-pinyin">Hànzì Sīwéi</span> <span class="brand-sep" aria-hidden="true">·</span> <span class="brand-en">Hanzi Mind</span> <span class="brand-sep" aria-hidden="true">·</span> <span class="brand-tagline">Think in Characters. Master Chinese.</span></p>
+        </div>
+      </div>
     </div>
 
     <div class="header-search-wrap">
@@ -1223,7 +1238,7 @@ if ('serviceWorker' in navigator) {
   <!-- SCREEN 10: Reading & Analysis -->
   <div id="screenReadingAnalysis" style="display:none"></div>
 
-  <!-- SCREEN 11: Synapse Graded Reading -->
+  <!-- SCREEN 11: 汉字思维 Graded Reading -->
   <div id="screenGradedReading" style="display:none"></div>
 
   <!-- SCREEN 12: HSK Listening Practice & Alignment -->
@@ -1232,7 +1247,7 @@ if ('serviceWorker' in navigator) {
     </div>
     <aside class="workstation-right" id="workstationRight" aria-label="Phòng thực hành tương tác"></aside>
     <footer class="app-footer">
-      <p class="footer-note"><span class="footer-version" title="Phiên bản ứng dụng">v2.4.0</span> · Tiến trình tự lưu trên thiết bị này · Phát triển bởi <a href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer">haunguyenngoc442001</a> · <a href="https://www.facebook.com/haunguyenngoc442001/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+      <p class="footer-note"><span class="footer-version" title="Phiên bản ứng dụng">v2.5.0</span> · <strong>汉字思维</strong> (Hànzì Sīwéi · Hanzi Mind) · Think in Characters. Master Chinese. · Tiến trình tự lưu trên thiết bị này · Phát triển bởi <a href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer">haunguyenngoc442001</a> · <a href="https://www.facebook.com/haunguyenngoc442001/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
     </footer>
   </div>
 </div>

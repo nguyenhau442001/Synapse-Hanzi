@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Semantic Versioning (SemVer) helper script for Synapse Hanzi.
+Semantic Versioning (SemVer) helper script for 汉字思维 (Hanzi Mind).
 Usage:
     python3 tools/bump_version.py patch     # e.g., 1.0.0 -> 1.0.1 (Bug fixes, UI polish)
     python3 tools/bump_version.py minor     # e.g., 1.0.0 -> 1.1.0 (New features)
@@ -63,9 +63,9 @@ def update_package_json(new_version: str):
         data = json.loads(PACKAGE_JSON.read_text(encoding="utf-8"))
     else:
         data = {
-            "name": "synapse-hanzi",
+            "name": "hanzi-mind",
             "version": new_version,
-            "description": "Công cụ học từ vựng Flashcard chữ Hán đa giác quan, kết hợp các tính năng ôn thi HSK toàn diện",
+            "description": "汉字思维 (Hànzì Sīwéi) · Hanzi Mind — Trạm học từ vựng chữ Hán đa giác quan, hiện đại, tối giản và 100% Offline (PWA)",
             "private": True,
             "scripts": {
                 "version:patch": "python3 tools/bump_version.py patch",
