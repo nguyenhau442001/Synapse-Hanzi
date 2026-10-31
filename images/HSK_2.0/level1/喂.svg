@@ -1,5 +1,26 @@
-<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
-  <rect x="16" y="36" width="20" height="22" rx="2" stroke="#38bdf8" stroke-width="3.5" fill="none"/>
-  <path d="M48 34 C48 28 54 26 60 30 L66 36 C68 40 66 44 62 46 C64 52 68 56 74 58 C76 54 80 52 84 54 L90 60 C94 66 92 72 86 72 C68 72 48 52 48 34 Z" stroke="#fb923c" stroke-width="3.5" fill="none"/>
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="240">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="24" fill="url(#bg)"/>
+  
+  <g transform="translate(60, 60)">
+    <path d="M40 100h40c10 0 20 10 20 20v60c0 10-10 20-20 20H40c-10 0-20-10-20-20v-60c0-10 10-20 20-20z" fill="#334155" stroke="#475569" stroke-width="4"/>
+    <rect x="45" y="110" width="30" height="5" rx="2" fill="#475569"/>
+    <circle cx="60" cy="165" r="8" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+    
+    <path d="M100 120l40-20v80l-40-20z" fill="#fbbf24"/>
+    <path d="M140 100h30c10 0 20 10 20 20v40c0 10-10 20-20 20h-30z" fill="#fb923c"/>
+    <rect x="150" y="115" width="20" height="30" rx="4" fill="#1e293b"/>
+    
+    <path d="M160 145l20 20M170 140l20 20M180 135l20 20" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+    
+    <circle cx="180" cy="80" r="15" fill="#ec4899" opacity="0.6">
+      <animate attributeName="r" values="10;20;10" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="190" cy="70" r="8" fill="#ec4899" opacity="0.4"/>
+  </g>
 </svg>

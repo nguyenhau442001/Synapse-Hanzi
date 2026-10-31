@@ -1,6 +1,39 @@
-<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
-  <path d="M26 62 Q34 44 48 44 Q56 44 62 52 L72 38" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" fill="none"/>
-  <circle cx="76" cy="34" r="6" fill="#fb923c"/>
-  <path d="M24 74 H64" stroke="#34d399" stroke-width="4" stroke-linecap="round"/>
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
+  
+  <!-- Table Surface -->
+  <path d="M0 180 L240 180 L240 240 L0 240 Z" fill="#334155"/>
+  
+  <!-- Character: A helpful person reaching out -->
+  <g transform="translate(120, 120)">
+    <!-- Body -->
+    <path d="M-40 80 C-40 40, -20 20, 0 20 C20 20, 40 40, 40 80" fill="#fbbf24"/>
+    <!-- Head -->
+    <circle cx="0" cy="-10" r="30" fill="#fbbf24"/>
+    <!-- Helpful Hand reaching forward -->
+    <path d="M40 30 L80 10 L85 25 L45 45 Z" fill="#f59e0b"/>
+    <circle cx="85" cy="15" r="8" fill="#f59e0b"/>
+  </g>
+  
+  <!-- Contextual Object: A heavy box being lifted -->
+  <g transform="translate(40, 140)">
+    <rect x="0" y="0" width="60" height="60" rx="4" fill="#38bdf8"/>
+    <rect x="10" y="10" width="40" height="40" rx="2" fill="#0ea5e9"/>
+    <path d="M10 10 L50 10 L50 50 L10 50 Z" stroke="#e0f2fe" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Action Lines/Glow -->
+  <circle cx="160" cy="130" r="40" stroke="#10b981" stroke-width="2" stroke-dasharray="6 6" fill="none" opacity="0.4"/>
+  <path d="M130 100 L150 80" stroke="#fb923c" stroke-width="4" stroke-linecap="round"/>
+  <path d="M140 90 L160 70" stroke="#fb923c" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="200" cy="50" r="15" fill="#ec4899" opacity="0.3"/>
+  <circle cx="30" cy="40" r="10" fill="#38bdf8" opacity="0.2"/>
 </svg>

@@ -1,9 +1,36 @@
-<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
-  <path d="M30 22 Q22 42 16 62" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
-  <line x1="24" y1="44" x2="24" y2="80" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
-  <line x1="42" y1="36" x2="78" y2="36" stroke="#fb923c" stroke-width="3.8" stroke-linecap="round"/>
-  <line x1="60" y1="24" x2="60" y2="78" stroke="#fb923c" stroke-width="4" stroke-linecap="round"/>
-  <line x1="44" y1="56" x2="76" y2="56" stroke="#fb923c" stroke-width="3.8" stroke-linecap="round"/>
-  <line x1="36" y1="78" x2="84" y2="78" stroke="#fb923c" stroke-width="4.5" stroke-linecap="round"/>
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
+  
+  <!-- Building Silhouette -->
+  <path d="M60 240V120h40v-30h60v150H60z" fill="#334155"/>
+  <path d="M160 240V90h40v150h-40z" fill="#475569"/>
+  
+  <!-- Windows -->
+  <rect x="75" y="135" width="10" height="15" fill="#f59e0b" opacity="0.8"/>
+  <rect x="90" y="135" width="10" height="15" fill="#f59e0b" opacity="0.6"/>
+  <rect x="75" y="165" width="10" height="15" fill="#f59e0b" opacity="0.9"/>
+  <rect x="90" y="165" width="10" height="15" fill="#f59e0b" opacity="0.7"/>
+  <rect x="170" y="110" width="20" height="20" fill="#f59e0b" opacity="0.9"/>
+  <rect x="170" y="150" width="20" height="20" fill="#f59e0b" opacity="0.5"/>
+  
+  <!-- Character -->
+  <circle cx="130" cy="180" r="15" fill="#fbbf24"/>
+  <path d="M115 195h30v45h-30z" fill="#38bdf8"/>
+  <path d="M115 240l-5-20h40l-5 20z" fill="#10b981"/>
+  
+  <!-- Street/Context -->
+  <path d="M0 220h240v20H0z" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  <circle cx="40" cy="80" r="20" fill="#fb923c" opacity="0.3"/>
+  <circle cx="45" cy="85" r="15" fill="#fb923c" opacity="0.5"/>
+  
+  <!-- Details -->
+  <path d="M145 195l15-10v10z" fill="#38bdf8"/>
+  <path d="M115 195l-15-10v10z" fill="#38bdf8"/>
+  <rect x="125" y="175" width="10" height="5" rx="2" fill="#0f172a"/>
 </svg>

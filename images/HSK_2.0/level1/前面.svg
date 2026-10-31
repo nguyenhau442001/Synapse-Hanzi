@@ -1,6 +1,32 @@
-<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
-  <line x1="50" y1="78" x2="50" y2="28" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round"/>
-  <path d="M34 44 L50 26 L66 44" stroke="#fb923c" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <circle cx="50" cy="80" r="3" fill="#94a3b8"/>
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
+  
+  <g transform="translate(0, 40)">
+    <!-- Road Perspective -->
+    <path d="M80 200 L160 200 L220 120 L20 120 Z" fill="#334155"/>
+    <path d="M115 120 L125 120 L135 200 L105 200 Z" fill="#475569"/>
+    
+    <!-- School Building (The Subject in front) -->
+    <rect x="70" y="40" width="100" height="80" rx="4" fill="#fbbf24"/>
+    <rect x="80" y="55" width="25" height="25" rx="2" fill="#0f172a"/>
+    <rect x="135" y="55" width="25" height="25" rx="2" fill="#0f172a"/>
+    <rect x="105" y="85" width="30" height="35" rx="2" fill="#92400e"/>
+    <path d="M60 40 L120 10 L180 40 Z" fill="#ec4899"/>
+    
+    <!-- Character walking towards the school -->
+    <circle cx="120" cy="150" r="12" fill="#38bdf8"/>
+    <rect x="114" y="162" width="12" height="20" rx="2" fill="#38bdf8"/>
+    <line x1="114" y1="170" x2="105" y2="185" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+    <line x1="126" y1="170" x2="135" y2="185" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Decorative elements -->
+    <circle cx="40" cy="60" r="5" fill="#10b981"/>
+    <circle cx="200" cy="70" r="8" fill="#fb923c"/>
+  </g>
 </svg>

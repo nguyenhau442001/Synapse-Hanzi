@@ -1,7 +1,40 @@
-<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
-  <line x1="16" y1="64" x2="84" y2="64" stroke="#64748b" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="50" cy="46" r="16" stroke="#fb923c" stroke-width="3.8" fill="none"/>
-  <path d="M50 64 V78" stroke="#fb923c" stroke-width="3" stroke-linecap="round"/>
-  <polygon points="46,72 50,78 54,72" fill="#fb923c"/>
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
+  
+  <!-- Afternoon Sun Glow -->
+  <circle cx="180" cy="60" r="35" fill="#f59e0b" opacity="0.3"/>
+  <circle cx="180" cy="60" r="20" fill="#fbbf24"/>
+  
+  <!-- Desk Surface -->
+  <rect x="20" y="160" width="200" height="80" rx="10" fill="#334155"/>
+  
+  <!-- Coffee Cup -->
+  <path d="M160 160h40l-5 30h-30z" fill="#ec4899"/>
+  <ellipse cx="180" cy="160" rx="20" ry="6" fill="#f472b6"/>
+  
+  <!-- Open Book -->
+  <path d="M50 140l60 20v40l-60-20z" fill="#f8fafc"/>
+  <path d="M110 160l60-20v40l-60 20z" fill="#e2e8f0"/>
+  <path d="M80 150v30M140 150v30" stroke="#94a3b8" stroke-width="2"/>
+  
+  <!-- Plant -->
+  <path d="M40 160v-30c0-10 10-10 10-10s10 0 10 10v30" fill="#10b981"/>
+  <ellipse cx="50" cy="120" rx="8" ry="12" fill="#10b981"/>
+  <ellipse cx="40" cy="135" rx="8" ry="12" fill="#10b981"/>
+  <ellipse cx="60" cy="135" rx="8" ry="12" fill="#10b981"/>
+  
+  <!-- Window Frame -->
+  <path d="M150 20h60v60h-60z" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M180 20v60M150 50h60" stroke="#38bdf8" stroke-width="2"/>
+  
+  <!-- Ambient Particles -->
+  <circle cx="100" cy="80" r="2" fill="#fb923c"/>
+  <circle cx="120" cy="100" r="1.5" fill="#fb923c"/>
+  <circle cx="80" cy="90" r="2" fill="#fb923c"/>
 </svg>
