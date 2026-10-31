@@ -1,5 +1,50 @@
-<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
-  <path d="M42 30 Q34 52 20 74" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
-  <path d="M58 24 Q68 50 82 74" stroke="#fb923c" stroke-width="5" stroke-linecap="round"/>
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
+  
+  <g transform="translate(20, 40)">
+    <rect x="0" y="100" width="200" height="10" rx="2" fill="#475569"/>
+    <rect x="10" y="110" width="180" height="5" rx="2" fill="#334155"/>
+    
+    <g transform="translate(10, 20)">
+      <rect x="0" y="0" width="22" height="80" rx="2" fill="#f59e0b"/>
+      <rect x="2" y="5" width="18" height="70" fill="#fbbf24"/>
+    </g>
+    <g transform="translate(33, 25)">
+      <rect x="0" y="0" width="22" height="75" rx="2" fill="#38bdf8"/>
+      <rect x="2" y="5" width="18" height="65" fill="#0ea5e9"/>
+    </g>
+    <g transform="translate(56, 15)">
+      <rect x="0" y="0" width="22" height="85" rx="2" fill="#10b981"/>
+      <rect x="2" y="5" width="18" height="75" fill="#059669"/>
+    </g>
+    <g transform="translate(79, 30)">
+      <rect x="0" y="0" width="22" height="70" rx="2" fill="#ec4899"/>
+      <rect x="2" y="5" width="18" height="60" fill="#db2777"/>
+    </g>
+    <g transform="translate(102, 10)">
+      <rect x="0" y="0" width="22" height="90" rx="2" fill="#fb923c"/>
+      <rect x="2" y="5" width="18" height="80" fill="#f97316"/>
+    </g>
+    <g transform="translate(125, 25)">
+      <rect x="0" y="0" width="22" height="75" rx="2" fill="#818cf8"/>
+      <rect x="2" y="5" width="18" height="65" fill="#6366f1"/>
+    </g>
+    <g transform="translate(148, 5)">
+      <rect x="0" y="0" width="22" height="95" rx="2" fill="#facc15"/>
+      <rect x="2" y="5" width="18" height="85" fill="#eab308"/>
+    </g>
+    <g transform="translate(171, 35)">
+      <rect x="0" y="0" width="22" height="65" rx="2" fill="#94a3b8"/>
+      <rect x="2" y="5" width="18" height="55" fill="#64748b"/>
+    </g>
+  </g>
+  
+  <circle cx="180" cy="50" r="15" fill="#fbbf24" opacity="0.2"/>
+  <circle cx="180" cy="50" r="8" fill="#fbbf24" opacity="0.3"/>
 </svg>

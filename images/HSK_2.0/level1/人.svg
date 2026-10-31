@@ -1,6 +1,44 @@
-<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
-  <circle cx="50" cy="22" r="9" fill="#38bdf8" opacity="0.2"/>
-  <path d="M50 28 Q44 54 22 80" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
-  <path d="M42 46 Q58 64 78 80" stroke="#fb923c" stroke-width="5" stroke-linecap="round"/>
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
+  
+  <!-- Park Ground -->
+  <path d="M0 180 C 80 160, 160 160, 240 180 L 240 240 L 0 240 Z" fill="#0f172a" opacity="0.4"/>
+  <ellipse cx="120" cy="200" rx="100" ry="20" fill="#1e293b" opacity="0.6"/>
+
+  <!-- Park Bench -->
+  <rect x="40" y="140" width="160" height="10" rx="2" fill="#fb923c"/>
+  <rect x="50" y="150" width="10" height="40" fill="#fb923c"/>
+  <rect x="180" y="150" width="10" height="40" fill="#fb923c"/>
+
+  <!-- Person 1 (Sitting) -->
+  <circle cx="80" cy="120" r="15" fill="#f59e0b"/>
+  <rect x="65" y="135" width="30" height="20" rx="5" fill="#38bdf8"/>
+  <rect x="70" y="155" width="8" height="20" fill="#38bdf8"/>
+  <rect x="82" y="155" width="8" height="20" fill="#38bdf8"/>
+
+  <!-- Person 2 (Standing) -->
+  <circle cx="150" cy="100" r="18" fill="#f59e0b"/>
+  <rect x="135" y="118" width="30" height="40" rx="5" fill="#10b981"/>
+  <rect x="138" y="158" width="10" height="30" fill="#10b981"/>
+  <rect x="152" y="158" width="10" height="30" fill="#10b981"/>
+  <path d="M135 125 L 120 140" stroke="#10b981" stroke-width="6" stroke-linecap="round"/>
+  <path d="M165 125 L 180 135" stroke="#10b981" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Person 3 (Walking) -->
+  <circle cx="40" cy="110" r="12" fill="#f59e0b"/>
+  <rect x="30" y="122" width="20" height="30" rx="5" fill="#ec4899"/>
+  <rect x="32" y="152" width="7" height="25" fill="#ec4899"/>
+  <rect x="41" y="152" width="7" height="25" fill="#ec4899"/>
+
+  <!-- Decorative Park Elements -->
+  <circle cx="200" cy="50" r="30" fill="#fbbf24" opacity="0.1"/>
+  <circle cx="210" cy="40" r="20" fill="#fbbf24" opacity="0.1"/>
+  <path d="M20 50 L 25 30 L 30 50 Z" fill="#10b981" opacity="0.3"/>
+  <path d="M210 180 L 220 150 L 230 180 Z" fill="#38bdf8" opacity="0.2"/>
 </svg>

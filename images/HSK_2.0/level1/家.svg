@@ -1,10 +1,30 @@
-<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
-  <circle cx="50" cy="16" r="3" fill="#38bdf8"/>
-  <path d="M20 26 V32 M20 26 H80 V32" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <line x1="30" y1="36" x2="70" y2="36" stroke="#fb923c" stroke-width="3.8" stroke-linecap="round"/>
-  <path d="M48 36 Q42 56 34 76" stroke="#fb923c" stroke-width="4" stroke-linecap="round"/>
-  <path d="M48 44 Q58 54 66 60" stroke="#fb923c" stroke-width="3.8" stroke-linecap="round"/>
-  <path d="M38 52 Q30 64 22 72" stroke="#fb923c" stroke-width="3.8" stroke-linecap="round"/>
-  <path d="M50 56 Q66 70 78 80" stroke="#fb923c" stroke-width="4" stroke-linecap="round"/>
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
+  
+  <g transform="translate(40, 60)">
+    <path d="M80 0 L160 60 L160 160 L0 160 L0 60 Z" fill="#334155" stroke="#fb923c" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M80 0 L160 60 L0 60 Z" fill="#fb923c"/>
+    <rect x="25" y="90" width="40" height="70" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+    <rect x="90" y="90" width="40" height="40" fill="#f59e0b" stroke="#fbbf24" stroke-width="3"/>
+    <line x1="110" y1="90" x2="110" y2="130" stroke="#1e293b" stroke-width="2"/>
+    <line x1="90" y1="110" x2="130" y2="110" stroke="#1e293b" stroke-width="2"/>
+  </g>
+  
+  <circle cx="180" cy="50" r="25" fill="#fbbf24" opacity="0.8"/>
+  <path d="M30 200 Q120 180 210 200 L210 240 L30 240 Z" fill="#10b981" opacity="0.3"/>
+  <path d="M10 210 Q60 190 110 210 T210 210" stroke="#10b981" stroke-width="4" fill="none"/>
+  
+  <g transform="translate(160, 150)">
+    <circle cx="10" cy="10" r="8" fill="#ec4899"/>
+    <circle cx="35" cy="10" r="8" fill="#ec4899"/>
+    <circle cx="60" cy="10" r="8" fill="#ec4899"/>
+    <circle cx="22" cy="30" r="8" fill="#ec4899"/>
+    <circle cx="48" cy="30" r="8" fill="#ec4899"/>
+  </g>
 </svg>

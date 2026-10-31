@@ -1,9 +1,28 @@
-<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
-  <path d="M20 32 Q50 38 50 74 Q24 70 20 32 Z" stroke="#38bdf8" stroke-width="3.5" stroke-linejoin="round" fill="none"/>
-  <path d="M80 32 Q50 38 50 74 Q76 70 80 32 Z" stroke="#38bdf8" stroke-width="3.5" stroke-linejoin="round" fill="none"/>
-  <line x1="28" y1="44" x2="44" y2="46" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="28" y1="54" x2="44" y2="56" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="56" y1="46" x2="72" y2="44" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="56" y1="56" x2="72" y2="54" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
+  
+  <g transform="translate(40, 60)">
+    <path d="M140 160h20v20h-20z" fill="#38bdf8" opacity="0.3"/>
+    <path d="M10 140h140v20H10z" fill="#334155"/>
+    <path d="M20 100h120v40H20z" fill="#f8fafc"/>
+    <path d="M25 105h110v5H25zM25 115h110v5H25zM25 125h110v5H25zM25 135h60v5H25z" fill="#cbd5e1"/>
+    
+    <path d="M100 80c0-20 15-35 35-35s35 15 35 35v20c0 10-5 20-15 25l-10 10-10-10c-10-5-15-15-15-25V80z" fill="#fbbf24"/>
+    <path d="M115 75c0 0 5-5 15-5s15 5 15 5" stroke="#0f172a" stroke-width="2" fill="none"/>
+    <path d="M125 85c0 0 2 2 5 2s5-2 5-2" stroke="#0f172a" stroke-width="2" fill="none"/>
+    
+    <path d="M90 140l-20 30M150 140l20 30" stroke="#fb923c" stroke-width="8" stroke-linecap="round"/>
+    <path d="M80 170l-10 40M160 170l10 40" stroke="#fb923c" stroke-width="8" stroke-linecap="round"/>
+    
+    <circle cx="135" cy="40" r="15" fill="#f59e0b" opacity="0.2"/>
+    <circle cx="135" cy="40" r="8" fill="#fbbf24"/>
+  </g>
+  
+  <path d="M30 200c40 10 140 10 180 0" stroke="#10b981" stroke-width="4" stroke-dasharray="10 10" opacity="0.5"/>
 </svg>

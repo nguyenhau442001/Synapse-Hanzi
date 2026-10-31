@@ -1,11 +1,38 @@
-<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
-  <circle cx="32" cy="50" r="16" fill="#fbbf24" opacity="0.12"/>
-  <rect x="18" y="32" width="22" height="36" rx="2" stroke="#fbbf24" stroke-width="3.5" fill="none"/>
-  <line x1="18" y1="50" x2="40" y2="50" stroke="#fbbf24" stroke-width="3"/>
-  <circle cx="70" cy="50" r="16" fill="#38bdf8" opacity="0.12"/>
-  <path d="M56 26 V76" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round"/>
-  <path d="M56 30 H78 C80 30 82 32 82 35 V74 C82 77 79 78 75 76" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round" fill="none"/>
-  <line x1="56" y1="46" x2="80" y2="46" stroke="#38bdf8" stroke-width="3"/>
-  <line x1="56" y1="60" x2="80" y2="60" stroke="#38bdf8" stroke-width="3"/>
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="240">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="24" fill="url(#bg)"/>
+  
+  <!-- Window Frame -->
+  <rect x="40" y="40" width="160" height="160" rx="12" fill="#334155" stroke="#475569" stroke-width="4"/>
+  
+  <!-- Night Sky Outside -->
+  <circle cx="180" cy="70" r="20" fill="#fbbf24"/>
+  <path d="M120 120 C 140 100, 160 100, 180 120 S 200 140, 220 120" stroke="#f59e0b" stroke-width="2" fill="none" opacity="0.3"/>
+  
+  <!-- Desk/Foreground -->
+  <rect x="0" y="180" width="240" height="60" fill="#1e293b"/>
+  <rect x="20" y="190" width="200" height="10" rx="5" fill="#334155"/>
+  
+  <!-- Calendar/Planner Subject -->
+  <rect x="70" y="80" width="100" height="120" rx="8" fill="#f8fafc"/>
+  <rect x="70" y="80" width="100" height="30" rx="8" fill="#ec4899"/>
+  <circle cx="90" cy="95" r="4" fill="#f8fafc"/>
+  <circle cx="150" cy="95" r="4" fill="#f8fafc"/>
+  
+  <!-- Planner Details -->
+  <rect x="85" y="125" width="70" height="8" rx="2" fill="#cbd5e1"/>
+  <rect x="85" y="145" width="70" height="8" rx="2" fill="#cbd5e1"/>
+  <rect x="85" y="165" width="40" height="8" rx="2" fill="#cbd5e1"/>
+  
+  <!-- Action Element: Pencil pointing to tomorrow -->
+  <path d="M170 190 L190 170 L200 180 L180 200 Z" fill="#38bdf8"/>
+  <path d="M195 175 L205 165" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Decorative Star -->
+  <path d="M30 50 L35 65 L50 70 L35 75 L30 90 L25 75 L10 70 L25 65 Z" fill="#fb923c"/>
 </svg>

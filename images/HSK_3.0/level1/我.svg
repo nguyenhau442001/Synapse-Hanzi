@@ -1,6 +1,29 @@
-<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
-  <circle cx="50" cy="32" r="12" stroke="#38bdf8" stroke-width="3.8" fill="none"/>
-  <path d="M30 76 Q30 54 50 54 Q70 54 70 76" stroke="#38bdf8" stroke-width="3.8" stroke-linecap="round" fill="none"/>
-  <polygon points="50,46 54,54 50,62 46,54" fill="#fb923c"/>
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
+  
+  <g transform="translate(40, 60)">
+    <path d="M80 140 C 80 100, 100 80, 120 80 C 140 80, 160 100, 160 140 L 160 170 L 80 170 Z" fill="#38bdf8"/>
+    <circle cx="120" cy="60" r="30" fill="#fde68a"/>
+    <path d="M105 55 Q 110 50 115 55 M 125 55 Q 130 50 135 55" stroke="#0f172a" stroke-width="3" fill="none"/>
+    <path d="M110 70 Q 120 75 130 70" stroke="#ec4899" stroke-width="3" fill="none"/>
+    
+    <rect x="50" y="150" width="20" height="40" rx="5" fill="#fb923c"/>
+    <rect x="170" y="150" width="20" height="40" rx="5" fill="#fb923c"/>
+    
+    <path d="M120 170 L 100 210 M 120 170 L 140 210" stroke="#fb923c" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(20, 180)">
+    <ellipse cx="100" cy="30" rx="80" ry="15" fill="#0f172a" opacity="0.3"/>
+  </g>
+
+  <circle cx="180" cy="50" r="10" fill="#10b981"/>
+  <circle cx="40" cy="80" r="6" fill="#f59e0b"/>
+  <path d="M200 120 L 210 110 M 205 115 L 215 105" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
 </svg>

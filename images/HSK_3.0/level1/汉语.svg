@@ -1,8 +1,35 @@
-<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
-  <rect x="24" y="22" width="52" height="60" rx="4" stroke="#38bdf8" stroke-width="3.8" fill="none"/>
-  <line x1="34" y1="22" x2="34" y2="82" stroke="#fb923c" stroke-width="3"/>
-  <line x1="44" y1="36" x2="66" y2="36" stroke="#34d399" stroke-width="3" stroke-linecap="round"/>
-  <line x1="44" y1="48" x2="66" y2="48" stroke="#34d399" stroke-width="3" stroke-linecap="round"/>
-  <line x1="44" y1="60" x2="58" y2="60" stroke="#34d399" stroke-width="3" stroke-linecap="round"/>
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
+  
+  <!-- Desk Surface -->
+  <path d="M0 160 L240 160 L240 240 L0 240 Z" fill="#334155"/>
+  
+  <!-- Open Book -->
+  <path d="M50 180 L190 180 L180 120 L60 120 Z" fill="#f8fafc"/>
+  <path d="M120 120 L120 180" stroke="#cbd5e1" stroke-width="2"/>
+  <path d="M70 135 L110 135 M70 145 L110 145 M70 155 L110 155" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M130 135 L170 135 M130 145 L170 145 M130 155 L170 155" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Tea Cup -->
+  <circle cx="195" cy="150" r="25" fill="#fbbf24"/>
+  <path d="M180 140 C180 165, 210 165, 210 140" fill="none" stroke="#f59e0b" stroke-width="4"/>
+  <ellipse cx="195" cy="135" rx="15" ry="5" fill="#fcd34d"/>
+  
+  <!-- Fountain Pen -->
+  <path d="M40 190 L70 160 L80 170 L50 200 Z" fill="#38bdf8"/>
+  <path d="M35 195 L45 205" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="210" cy="50" r="8" fill="#ec4899" opacity="0.6"/>
+  <path d="M30 60 L45 45" stroke="#10b981" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="150" cy="70" r="12" fill="#fb923c" opacity="0.4"/>
+  
+  <!-- Lamp Glow -->
+  <path d="M100 20 L140 20 L150 120 L90 120 Z" fill="#fbbf24" opacity="0.05"/>
 </svg>

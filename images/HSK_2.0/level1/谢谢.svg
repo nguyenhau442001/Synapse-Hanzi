@@ -1,6 +1,40 @@
-<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
-  <circle cx="50" cy="50" r="32" fill="#f43f5e" opacity="0.1"/>
-  <path d="M34 68 L50 36 L66 68 Z" stroke="#38bdf8" stroke-width="3.5" stroke-linejoin="round" fill="none"/>
-  <circle cx="50" cy="48" r="5" fill="#f43f5e"/>
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
+  
+  <!-- Background Environment -->
+  <rect x="20" y="140" width="200" height="80" rx="10" fill="#334155"/>
+  <circle cx="180" cy="80" r="30" fill="#f59e0b" opacity="0.15"/>
+  <rect x="160" y="100" width="40" height="40" rx="5" fill="#475569"/>
+  
+  <!-- Person 1 (The Helper) -->
+  <g transform="translate(40, 80)">
+    <circle cx="30" cy="30" r="15" fill="#fbbf24"/>
+    <path d="M15 60 Q30 40 45 60 L45 120 L15 120 Z" fill="#38bdf8"/>
+    <path d="M20 70 L10 100" stroke="#38bdf8" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Person 2 (The Receiver expressing thanks) -->
+  <g transform="translate(120, 70)">
+    <circle cx="30" cy="30" r="15" fill="#fb923c"/>
+    <path d="M30 45 L30 70 M20 60 L40 60" stroke="#fb923c" stroke-width="4" stroke-linecap="round"/>
+    <path d="M10 80 Q30 60 50 80 L50 130 L10 130 Z" fill="#ec4899"/>
+    <!-- Bowing posture -->
+    <path d="M20 90 L5 110" stroke="#ec4899" stroke-width="6" stroke-linecap="round"/>
+    <path d="M40 90 L55 110" stroke="#ec4899" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Props: Gift Box -->
+  <rect x="80" y="160" width="30" height="30" rx="4" fill="#10b981"/>
+  <rect x="93" y="160" width="4" height="30" fill="#ffffff" opacity="0.3"/>
+  <rect x="80" y="173" width="30" height="4" fill="#ffffff" opacity="0.3"/>
+  
+  <!-- Decorative highlights -->
+  <circle cx="150" cy="50" r="3" fill="#f59e0b"/>
+  <circle cx="60" cy="40" r="2" fill="#38bdf8"/>
 </svg>

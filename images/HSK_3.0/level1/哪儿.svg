@@ -1,5 +1,37 @@
-<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
-  <path d="M50 20 C38 20 28 30 28 42 C28 58 50 80 50 80 C50 80 72 58 72 42 C72 30 62 20 50 20 Z" stroke="#f43f5e" stroke-width="3.8" fill="none"/>
-  <circle cx="50" cy="40" r="8" fill="#f43f5e"/>
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
+  
+  <!-- Street Scene -->
+  <path d="M0 180h240v60H0z" fill="#334155"/>
+  <path d="M20 200h40v10H20zM80 200h40v10H80zM140 200h40v10H140zM200 200h40v10H200z" fill="#475569"/>
+  
+  <!-- Lost Character -->
+  <g transform="translate(60, 110)">
+    <circle cx="30" cy="20" r="15" fill="#fbbf24"/>
+    <path d="M15 40h30l-5 60h-20z" fill="#38bdf8"/>
+    <path d="M15 60l-10 20M45 60l10 20" stroke="#38bdf8" stroke-width="6" stroke-linecap="round"/>
+    <path d="M20 120l-5 20M40 120l5 20" stroke="#38bdf8" stroke-width="6" stroke-linecap="round"/>
+    <path d="M25 35c0 10 10 10 10 0" stroke="#0f172a" stroke-width="2"/>
+  </g>
+
+  <!-- Signpost -->
+  <g transform="translate(160, 80)">
+    <rect x="-4" y="0" width="8" height="100" fill="#64748b"/>
+    <path d="M-40 20h80v30H-40z" fill="#ec4899" rx="5"/>
+    <path d="M-30 35l-10-10 10-10" stroke="#fff" stroke-width="4" fill="none"/>
+    <path d="M30 35l10-10-10-10" stroke="#fff" stroke-width="4" fill="none"/>
+    <circle cx="0" cy="10" r="15" fill="#f59e0b"/>
+    <path d="M0 5v10M-5 10h10" stroke="#0f172a" stroke-width="4"/>
+  </g>
+
+  <!-- Decorative Elements -->
+  <circle cx="190" cy="180" r="3" fill="#10b981"/>
+  <circle cx="210" cy="160" r="2" fill="#fb923c"/>
+  <path d="M30 150q20-20 40 0" stroke="#475569" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
 </svg>

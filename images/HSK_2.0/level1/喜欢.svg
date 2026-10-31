@@ -1,5 +1,37 @@
-<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
-  <path d="M50 74 C32 60 22 48 22 36 A12 12 0 0 1 48 28 A12 12 0 0 1 78 36 C78 48 68 60 50 74 Z" stroke="#f43f5e" stroke-width="3.8" fill="#f43f5e" fill-opacity="0.15"/>
-  <path d="M42 46 Q50 54 58 46" stroke="#f43f5e" stroke-width="3" stroke-linecap="round"/>
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
+  
+  <g transform="translate(40, 60)">
+    <path d="M120 160c-10 0-20-5-25-15l-10-30c-5-15 5-30 20-30h30c15 0 25 15 20 30l-10 30c-5 10-15 15-25 15z" fill="#fb923c"/>
+    <circle cx="120" cy="50" r="25" fill="#fde68a"/>
+    <path d="M105 45c0-5 5-10 10-10s10 5 10 10" stroke="#0f172a" stroke-width="2" fill="none"/>
+    <path d="M135 45c0-5 5-10 10-10s10 5 10 10" stroke="#0f172a" stroke-width="2" fill="none"/>
+    <path d="M125 65c5 5 15 5 20 0" stroke="#ec4899" stroke-width="3" stroke-linecap="round"/>
+    
+    <path d="M90 120l-20 40M150 120l20 40" stroke="#fb923c" stroke-width="8" stroke-linecap="round"/>
+    <path d="M100 160l-10 50M140 160l10 50" stroke="#fb923c" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(160, 140)">
+    <path d="M0 0h50v40h-50z" fill="#334155" rx="5"/>
+    <path d="M10 10h30v20h-30z" fill="#f59e0b"/>
+    <circle cx="25" cy="20" r="8" fill="#1e293b"/>
+    <path d="M5 5l40 30M45 5l-40 30" stroke="#f59e0b" stroke-width="2"/>
+  </g>
+
+  <g transform="translate(20, 150)">
+    <path d="M0 0h60v50h-60z" fill="#334155" rx="5"/>
+    <path d="M10 10h40v30h-40z" fill="#10b981"/>
+    <path d="M20 20h20v10h-20z" fill="#ec4899"/>
+  </g>
+
+  <path d="M120 100c20-20 50-20 70 0M120 100c-20-20-50-20-70 0" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 4" opacity="0.6"/>
+  <circle cx="190" cy="80" r="5" fill="#f59e0b"/>
+  <circle cx="50" cy="80" r="5" fill="#f59e0b"/>
 </svg>

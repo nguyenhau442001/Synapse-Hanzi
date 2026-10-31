@@ -1,6 +1,36 @@
-<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
-  <rect x="18" y="34" width="22" height="26" rx="2" stroke="#38bdf8" stroke-width="3.8" fill="none"/>
-  <path d="M54 36 C54 28 64 24 70 28 C76 32 74 40 68 44 C64 48 64 54 64 58" stroke="#fb923c" stroke-width="3.8" stroke-linecap="round" fill="none"/>
-  <circle cx="64" cy="72" r="3" fill="#fb923c"/>
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="240">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="24" fill="url(#bg)"/>
+  
+  <!-- Desk Surface -->
+  <path d="M0 180 L240 180 L240 240 L0 240 Z" fill="#334155"/>
+  
+  <!-- Character: Student leaning forward -->
+  <g transform="translate(60, 80)">
+    <circle cx="40" cy="30" r="25" fill="#fde68a"/>
+    <path d="M25 30 Q40 45 55 30" stroke="#475569" stroke-width="3" fill="none"/>
+    <circle cx="32" cy="25" r="3" fill="#475569"/>
+    <circle cx="48" cy="25" r="3" fill="#475569"/>
+    <path d="M20 60 L60 60 L55 120 L25 120 Z" fill="#38bdf8"/>
+  </g>
+
+  <!-- Question Mark Concept: The "Ma" particle interaction -->
+  <!-- A speech bubble pointing to the student, containing a floating, stylized question mark shape -->
+  <path d="M140 60 L200 60 L210 80 L200 100 L150 100 L140 120 L140 60" fill="#fbbf24"/>
+  <path d="M170 70 C185 70 190 80 180 85 C175 88 175 90 175 95" stroke="#0f172a" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <circle cx="175" cy="105" r="3" fill="#0f172a"/>
+
+  <!-- Context Props: Books and Pen -->
+  <rect x="160" y="150" width="50" height="60" rx="4" fill="#ec4899"/>
+  <rect x="165" y="155" width="40" height="50" rx="2" fill="#fbcfe8"/>
+  <rect x="170" y="160" width="30" height="2" fill="#ec4899"/>
+  <rect x="170" y="170" width="30" height="2" fill="#ec4899"/>
+  
+  <path d="M120 210 L150 180" stroke="#10b981" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="150" cy="180" r="4" fill="#10b981"/>
 </svg>
