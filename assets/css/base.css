@@ -304,7 +304,7 @@ body {
   justify-content: center;
 }
 .app-header-brand h1 { font-size: 19px; font-weight: 800; margin: 0; color: var(--text-primary); letter-spacing: -0.02em; line-height: 1.2; }
-.app-header-brand p { font-size: 11.5px; color: var(--text-tertiary); margin: 2px 0 0; line-height: 1.25; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 320px; }
+.app-header-brand p { font-size: 11.5px; color: var(--text-tertiary); margin: 2px 0 0; line-height: 1.25; font-weight: 500; white-space: nowrap; }
 .app-brand-badge {
   display: inline-flex;
   align-items: center;
@@ -434,7 +434,9 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 200px;
+  }
+  .brand-tagline-wrap {
+    display: none;
   }
   .app-header-actions {
     flex: 0 0 auto;
