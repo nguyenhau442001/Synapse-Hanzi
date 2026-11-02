@@ -80,7 +80,7 @@
 
 /* Dark palette — Deep nocturnal ink wash (松烟黛墨) with subtle gold ornaments & cinnabar accents */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg-canvas: #17191D;
     --bg-surface: #22252B;
     --bg-elevated: #2A2F38;
@@ -285,6 +285,13 @@
   transition: opacity 300ms ease, background-image 300ms ease;
   opacity: 0.95;
   overflow: hidden;
+  background-image: url("../images/chinese_landscape_light.svg");
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .chinese-aesthetic-bg {
+    background-image: url("../images/chinese_landscape_dark.svg");
+  }
+}
 }
 :root[data-theme="light"] .chinese-aesthetic-bg {
   background-image: url("../images/chinese_landscape_light.svg");

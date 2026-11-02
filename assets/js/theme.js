@@ -26,15 +26,19 @@ try {
 } catch (e) {}
 
 function getEffectiveTheme() {
+  const manual = localStorage.getItem('hsk_theme_manual');
+  const expiry = parseInt(localStorage.getItem('hsk_theme_manual_expiry') || '0', 10);
+  if (manual && (manual === 'dark' || manual === 'light') && Date.now() < expiry) {
+    return manual;
+  }
   if (initialUrlTheme) return initialUrlTheme;
   try {
     const urlParam = new URLSearchParams(window.location.search).get('theme');
     if (urlParam === 'dark' || urlParam === 'light') return urlParam;
   } catch (e) {}
-  const manual = localStorage.getItem('hsk_theme_manual');
-  const expiry = parseInt(localStorage.getItem('hsk_theme_manual_expiry') || '0', 10);
-  if (manual && Date.now() < expiry) {
-    return manual;
+  const fallback = localStorage.getItem('hsk_theme');
+  if (fallback === 'dark' || fallback === 'light') {
+    return fallback;
   }
   return getTimeBasedTheme();
 }
@@ -54,6 +58,9 @@ function applyTheme(theme, animate) {
     }, 280);
   }
   document.documentElement.dataset.theme = theme;
+  if (document.body) {
+    document.body.classList.toggle('dark-mode', theme === 'dark');
+  }
   const toggleBtn = document.getElementById('themeToggle');
   if (toggleBtn) {
     toggleBtn.textContent = theme === 'dark' ? '☀️' : '🌙';
@@ -70,9 +77,19 @@ function applyTheme(theme, animate) {
 function toggleTheme() {
   const current = document.documentElement.dataset.theme || getEffectiveTheme();
   const next = current === 'dark' ? 'light' : 'dark';
+  initialUrlTheme = next;
   localStorage.setItem('hsk_theme_manual', next);
   localStorage.setItem('hsk_theme_manual_expiry', String(getNextPeriodExpiry()));
   localStorage.setItem('hsk_theme', next);
+
+  try {
+    const url = new URL(window.location.href);
+    if (url.searchParams.has('theme')) {
+      url.searchParams.set('theme', next);
+      window.history.replaceState(null, '', url.toString());
+    }
+  } catch (e) {}
+
   applyTheme(next, true);
 }
 

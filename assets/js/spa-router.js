@@ -31,7 +31,7 @@ const SpaRouter = (function() {
     const base = window.location.pathname;
     let themeParam = '';
     try {
-      const t = new URLSearchParams(window.location.search).get('theme');
+      const t = document.documentElement.dataset.theme || (new URLSearchParams(window.location.search).get('theme'));
       if (t === 'light' || t === 'dark') themeParam = `&theme=${t}`;
     } catch (e) {}
 
