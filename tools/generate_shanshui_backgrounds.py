@@ -18,8 +18,8 @@ def build_light_shanshui_svg() -> str:
   <defs>
     <!-- Paper Canvas Wash: Warm Ivory to Aged Xuan Paper -->
     <linearGradient id="ls_paper_bg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#F7F3E9"/>
-      <stop offset="45%" stop-color="#F4EFE5"/>
+      <stop offset="0%" stop-color="#FDFBF7"/>
+      <stop offset="45%" stop-color="#F7F3E9"/>
       <stop offset="100%" stop-color="#EFE7D8"/>
     </linearGradient>
 
@@ -70,22 +70,14 @@ def build_light_shanshui_svg() -> str:
       <stop offset="100%" stop-color="#F7F3E9" stop-opacity="0.75"/>
     </linearGradient>
 
-    <!-- Delicate Xuan Paper Grain Texture Filter -->
-    <filter id="ls_paper_texture" x="0%" y="0%" width="100%" height="100%">
-      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/>
-      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.035 0" in="noise" result="coloredNoise"/>
-      <feBlend mode="multiply" in="SourceGraphic" in2="coloredNoise"/>
-    </filter>
-
     <!-- Soft Mist Gaussian Blur -->
     <filter id="ls_mist_diffuse" x="-10%" y="-10%" width="120%" height="120%">
       <feGaussianBlur stdDeviation="14"/>
     </filter>
   </defs>
 
-  <!-- 1. Xuan Paper Canvas Base with Subtle Grain Texture -->
+  <!-- 1. Xuan Paper Canvas Base -->
   <rect width="100%" height="100%" fill="url(#ls_paper_bg)"/>
-  <rect width="100%" height="100%" fill="#EFE7D8" opacity="0.4" filter="url(#ls_paper_texture)"/>
 
   <!-- ======================================================================
        LAYER 1: DISTANT LANDSCAPE (远山与云海 - 高远与深远)
