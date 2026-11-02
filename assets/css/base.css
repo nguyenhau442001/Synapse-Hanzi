@@ -26,7 +26,7 @@
 
   --text-primary: #292B30;
   --text-secondary: #5A564F;
-  --text-tertiary: #847E74;
+  --text-tertiary: #A6A096;
   --text-muted: #8E877C;
   --text-progress-detail: #5A564F;
 
@@ -81,9 +81,9 @@
 /* Dark palette — Deep nocturnal ink wash (松烟黛墨) with subtle gold ornaments & cinnabar accents */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-canvas: #131518;
-    --bg-surface: #1C2026;
-    --bg-elevated: #242932;
+    --bg-canvas: #17191D;
+    --bg-surface: #22252B;
+    --bg-elevated: #2A2F38;
 
     --text-primary: #EDE6D8;
     --text-secondary: #B0A99C;
@@ -91,46 +91,46 @@
     --text-muted: #8A8376;
     --text-progress-detail: #B0A99C;
 
-    --border-subtle: #242A33;
-    --border-strong: rgba(197, 164, 109, 0.45);
+    --border-subtle: #2D333D;
+    --border-strong: rgba(184, 155, 104, 0.45);
 
-    --brand-primary: #C8463B;
-    --brand-primary-hover: #D6554A;
+    --brand-primary: #A8322A;
+    --brand-primary-hover: #BF3B32;
 
     --status-success: #629988;
     --status-warning: #D4B37F;
 
-    --bg: #131518;
-    --card-bg: #1C2026;
-    --bg-card: #1C2026;
-    --border: #2D343F;
-    --card-shadow: 0 6px 20px -3px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(197, 164, 109, 0.16);
-    --surface-subtle: #242932;
-    --surface-chip: #2B323D;
+    --bg: #17191D;
+    --card-bg: #22252B;
+    --bg-card: #22252B;
+    --border: #333945;
+    --card-shadow: 0 6px 20px -3px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(184, 155, 104, 0.16);
+    --surface-subtle: #22252B;
+    --surface-chip: #2A303A;
     --progress-track: #282E38;
     --heatmap-empty: #282E38;
 
-    --accent: #C8463B;
-    --accent-hover: #D6554A;
-    --accent-gold: #D4B37F;
-    --accent-gold-hover: #E2C28E;
-    --accent-gradient: linear-gradient(135deg, #C8463B 0%, #A8322A 100%);
-    --accent-gradient-hover: linear-gradient(135deg, #D6554A 0%, #C8463B 100%);
-    --accent-light: rgba(200, 70, 59, 0.15);
-    --on-accent: #131518;
-    --accent-text: #D6554A;
+    --accent: #A8322A;
+    --accent-hover: #BF3B32;
+    --accent-gold: #B89B68;
+    --accent-gold-hover: #C5A46D;
+    --accent-gradient: linear-gradient(135deg, #A8322A 0%, #8F2525 100%);
+    --accent-gradient-hover: linear-gradient(135deg, #BF3B32 0%, #A8322A 100%);
+    --accent-light: rgba(168, 50, 42, 0.15);
+    --on-accent: #EDE6D8;
+    --accent-text: #E06D63;
 
     --success-bg: rgba(98, 153, 136, 0.16);
     --success-text: #7FB8A7;
-    --danger-bg: rgba(200, 70, 59, 0.16);
+    --danger-bg: rgba(168, 50, 42, 0.16);
     --danger-text: #F0786E;
-    --danger-solid: #C8463B;
+    --danger-solid: #A8322A;
     --info-bg: rgba(82, 125, 112, 0.16);
     --info-text: #76B4A3;
-    --warning-bg: rgba(212, 179, 127, 0.16);
+    --warning-bg: rgba(184, 155, 104, 0.16);
     --warning-text: #D4B37F;
-    --example-bg: #181B20;
-    --example-border: #282E38;
+    --example-bg: #1B1E24;
+    --example-border: #2D333D;
     --radius-lg: 16px;
     --radius-md: 10px;
     --radius-pill: 999px;
@@ -139,9 +139,9 @@
 
 /* Manual theme overrides */
 :root[data-theme="dark"] {
-  --bg-canvas: #131518;
-  --bg-surface: #1C2026;
-  --bg-elevated: #242932;
+  --bg-canvas: #17191D;
+  --bg-surface: #22252B;
+  --bg-elevated: #2A2F38;
 
   --text-primary: #EDE6D8;
   --text-secondary: #B0A99C;
@@ -149,34 +149,50 @@
   --text-muted: #8A8376;
   --text-progress-detail: #B0A99C;
 
-  --border-subtle: #242A33;
-  --border-strong: rgba(197, 164, 109, 0.45);
+  --border-subtle: #2D333D;
+  --border-strong: rgba(184, 155, 104, 0.45);
 
-  --brand-primary: #C8463B;
-  --brand-primary-hover: #D6554A;
+  --brand-primary: #A8322A;
+  --brand-primary-hover: #BF3B32;
 
   --status-success: #629988;
   --status-warning: #D4B37F;
 
-  --bg: #131518;
-  --card-bg: #1C2026;
-  --bg-card: #1C2026;
-  --border: #2D343F;
-  --card-shadow: 0 6px 20px -3px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(197, 164, 109, 0.16);
-  --surface-subtle: #242932;
-  --surface-chip: #2B323D;
+  --bg: #17191D;
+  --card-bg: #22252B;
+  --bg-card: #22252B;
+  --border: #333945;
+  --card-shadow: 0 6px 20px -3px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(184, 155, 104, 0.16);
+  --surface-subtle: #22252B;
+  --surface-chip: #2A303A;
   --progress-track: #282E38;
   --heatmap-empty: #282E38;
 
-  --accent: #C8463B;
-  --accent-hover: #D6554A;
-  --accent-gold: #D4B37F;
-  --accent-gold-hover: #E2C28E;
-  --accent-gradient: linear-gradient(135deg, #C8463B 0%, #A8322A 100%);
-  --accent-gradient-hover: linear-gradient(135deg, #D6554A 0%, #C8463B 100%);
-  --accent-light: rgba(200, 70, 59, 0.15);
-  --on-accent: #131518;
-  --accent-text: #D6554A;
+  --accent: #A8322A;
+  --accent-hover: #BF3B32;
+  --accent-gold: #B89B68;
+  --accent-gold-hover: #C5A46D;
+  --accent-gradient: linear-gradient(135deg, #A8322A 0%, #8F2525 100%);
+  --accent-gradient-hover: linear-gradient(135deg, #BF3B32 0%, #A8322A 100%);
+  --accent-light: rgba(168, 50, 42, 0.15);
+  --on-accent: #EDE6D8;
+  --accent-text: #E06D63;
+
+  --success-bg: rgba(98, 153, 136, 0.16);
+  --success-text: #7FB8A7;
+  --danger-bg: rgba(168, 50, 42, 0.16);
+  --danger-text: #F0786E;
+  --danger-solid: #A8322A;
+  --info-bg: rgba(82, 125, 112, 0.16);
+  --info-text: #76B4A3;
+  --warning-bg: rgba(184, 155, 104, 0.16);
+  --warning-text: #D4B37F;
+  --example-bg: #1B1E24;
+  --example-border: #2D333D;
+  --radius-lg: 16px;
+  --radius-md: 10px;
+  --radius-pill: 999px;
+}
 
   --success-bg: rgba(98, 153, 136, 0.16);
   --success-text: #7FB8A7;
@@ -201,7 +217,7 @@
 
   --text-primary: #292B30;
   --text-secondary: #5A564F;
-  --text-tertiary: #847E74;
+  --text-tertiary: #A6A096;
   --text-muted: #8E877C;
   --text-progress-detail: #5A564F;
 
@@ -252,7 +268,7 @@
   --radius-pill: 999px;
 }
 
-/* Chinese Classical Landscape Canvas (山水画意境背景) */
+/* Chinese Classical Landscape Canvas (梅花与水墨意境背景) */
 .chinese-aesthetic-bg {
   position: fixed;
   top: 0;
@@ -268,12 +284,24 @@
   background-size: cover;
   transition: opacity 300ms ease, background-image 300ms ease;
   opacity: 0.95;
+  overflow: hidden;
 }
 :root[data-theme="light"] .chinese-aesthetic-bg {
   background-image: url("../images/chinese_landscape_light.svg");
 }
 :root[data-theme="dark"] .chinese-aesthetic-bg {
   background-image: url("../images/chinese_landscape_dark.svg");
+}
+
+/* Layer 3-5: Animated Falling Chinese Plum Blossoms, Mist & Gold Particles Canvas */
+.plum-blossom-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
 }
 
 /* Smooth theme switch — applied during user-initiated toggles; transitions colors, backgrounds, borders, and shadows without touching complex SVGs/canvas/media */
