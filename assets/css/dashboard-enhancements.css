@@ -6,6 +6,7 @@
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   background: var(--card-bg);
+  background-image: radial-gradient(circle at 100% 0%, rgba(197, 164, 109, 0.05) 0%, transparent 60%);
   box-shadow: var(--card-shadow);
 }
 body:not(.home-screen) .continue-learning-card { display: none; }
@@ -65,23 +66,25 @@ body:not(.home-screen) .continue-learning-card { display: none; }
   padding: 18px 16px;
   border-radius: 18px;
   background: var(--card-bg);
+  background-image: radial-gradient(circle at 100% 0%, rgba(197, 164, 109, 0.05) 0%, transparent 60%);
   border: 1px solid var(--border);
-  box-shadow: 0 2px 8px -2px rgba(15, 23, 42, 0.04);
+  box-shadow: 0 2px 8px -2px rgba(41, 43, 48, 0.04);
   text-align: left;
   cursor: pointer;
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease, background 180ms ease;
   user-select: none;
 }
 :root[data-theme="dark"] .level-card {
-  border-color: rgba(255, 255, 255, 0.07);
+  border-color: rgba(197, 164, 109, 0.18);
   box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.35);
 }
 .level-card:hover {
   transform: translateY(-2px);
-  border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
-  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.08);
+  border-color: var(--accent-gold, #C5A46D);
+  box-shadow: 0 8px 24px -4px rgba(197, 164, 109, 0.18);
 }
 :root[data-theme="dark"] .level-card:hover {
+  border-color: rgba(212, 179, 127, 0.45);
   box-shadow: 0 10px 28px -4px rgba(0, 0, 0, 0.55);
 }
 .level-card:active {
@@ -89,7 +92,7 @@ body:not(.home-screen) .continue-learning-card { display: none; }
 }
 .level-card.is-active-level {
   border-color: var(--brand-primary);
-  box-shadow: 0 0 0 1px var(--brand-primary), 0 4px 14px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 0 1px var(--brand-primary), 0 4px 14px rgba(168, 50, 42, 0.25);
 }
 .level-card-top {
   display: flex;

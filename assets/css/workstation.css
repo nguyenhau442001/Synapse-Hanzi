@@ -956,23 +956,25 @@ body.flashcard-study-mode .filter-row {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 11px;
+  font-family: var(--font-classical);
+  font-size: 11.5px;
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 2px 7px;
+  padding: 3px 9px;
   border-radius: 6px;
-  background: var(--surface-subtle, rgba(0, 0, 0, 0.04));
-  color: var(--text-primary);
-  border: 1px solid var(--border);
+  background: var(--surface-subtle);
+  color: var(--accent);
+  border: 1px solid var(--border-strong);
   line-height: 1.4;
   flex-shrink: 0;
+  box-shadow: 0 1px 3px rgba(41, 43, 48, 0.04);
 }
 
 :root[data-theme="dark"] .progress-nav-level-tag {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(255, 255, 255, 0.1);
-  color: var(--text-primary);
+  background: rgba(212, 179, 127, 0.1);
+  border-color: rgba(212, 179, 127, 0.35);
+  color: var(--accent-gold);
 }
 
 .progress-nav-metric-main {
@@ -1004,12 +1006,12 @@ body.flashcard-study-mode .filter-row {
   font-size: 12px;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
-  color: var(--accent-sage, #10b981);
+  color: var(--status-success, #527D70);
 }
 
 .progress-nav-metric-pct.is-completed {
   cursor: pointer;
-  color: #ea580c;
+  color: var(--accent, #A8322A);
 }
 
 /* Secondary Summary Pills (Right side) */
@@ -1043,11 +1045,11 @@ body.flashcard-study-mode .filter-row {
 }
 
 .progress-nav-stat--known .progress-nav-stat-dot {
-  background: #10b981;
+  background: var(--status-success, #527D70);
 }
 
 .progress-nav-stat--unknown .progress-nav-stat-dot {
-  background: #f59e0b;
+  background: var(--accent-gold, #C5A46D);
 }
 
 /* Segmented Progress Bar Track */
@@ -1060,7 +1062,7 @@ body.flashcard-study-mode .filter-row {
   width: 100%;
   height: 6px;
   border-radius: 999px;
-  background: rgba(0, 0, 0, 0.06);
+  background: var(--progress-track, rgba(41, 43, 48, 0.08));
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -1076,19 +1078,19 @@ body.flashcard-study-mode .filter-row {
 }
 
 .progress-nav-seg--known {
-  background: #10b981;
+  background: #527D70;
 }
 
 :root[data-theme="dark"] .progress-nav-seg--known {
-  background: #34d399;
+  background: #629988;
 }
 
 .progress-nav-seg--unknown {
-  background: #f59e0b;
+  background: #C5A46D;
 }
 
 :root[data-theme="dark"] .progress-nav-seg--unknown {
-  background: #fbbf24;
+  background: #D4B37F;
 }
 
 /* Four Interactive Status Cards Grid */
@@ -1109,11 +1111,11 @@ body.flashcard-study-mode .filter-row {
   padding: 8px 12px;
   border-radius: 12px;
   border: 1px solid var(--border);
-  background: var(--card-bg, #ffffff);
+  background: var(--card-bg, #FAF6EE);
   color: var(--text-primary);
   cursor: pointer;
   text-align: left;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 1px 3px rgba(41, 43, 48, 0.04);
   transition: all 0.16s ease;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
@@ -1121,74 +1123,75 @@ body.flashcard-study-mode .filter-row {
 }
 
 :root[data-theme="dark"] .progress-nav-card {
-  background: #1c2128;
-  border-color: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  background: #20242A;
+  border-color: rgba(197, 164, 109, 0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
 }
 
 .progress-nav-card:hover {
-  border-color: rgba(0, 0, 0, 0.18);
+  border-color: var(--accent-gold, #C5A46D);
   background: var(--surface-subtle);
   transform: translateY(-0.5px);
+  box-shadow: 0 3px 8px rgba(197, 164, 109, 0.15);
 }
 
 :root[data-theme="dark"] .progress-nav-card:hover {
-  border-color: rgba(255, 255, 255, 0.18);
-  background: #242b35;
+  border-color: rgba(212, 179, 127, 0.4);
+  background: #282E36;
 }
 
 .progress-nav-card:focus-visible {
-  outline: 2px solid var(--accent, #ea580c);
+  outline: 2px solid var(--accent, #A8322A);
   outline-offset: 2px;
 }
 
-/* Card Selection States */
+/* Card Selection States with Chinese Classical Harmonies */
 .progress-nav-card.is-active {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 3px 12px rgba(41, 43, 48, 0.08);
 }
 
 :root[data-theme="dark"] .progress-nav-card.is-active {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
 }
 
 .progress-nav-card--all.is-active {
-  border-color: #3b82f6;
-  background: rgba(59, 130, 246, 0.05);
+  border-color: var(--c-antique-gold, #C5A46D);
+  background: rgba(197, 164, 109, 0.09);
 }
 
 :root[data-theme="dark"] .progress-nav-card--all.is-active {
-  border-color: #60a5fa;
-  background: rgba(96, 165, 250, 0.1);
+  border-color: #D4B37F;
+  background: rgba(212, 179, 127, 0.14);
 }
 
 .progress-nav-card--known.is-active {
-  border-color: #10b981;
-  background: rgba(16, 185, 129, 0.06);
+  border-color: var(--c-jade-green, #527D70);
+  background: rgba(82, 125, 112, 0.09);
 }
 
 :root[data-theme="dark"] .progress-nav-card--known.is-active {
-  border-color: #34d399;
-  background: rgba(52, 211, 153, 0.1);
+  border-color: #629988;
+  background: rgba(98, 153, 136, 0.15);
 }
 
 .progress-nav-card--unknown.is-active {
-  border-color: #f59e0b;
-  background: rgba(245, 158, 11, 0.06);
+  border-color: var(--c-vermilion, #A8322A);
+  background: rgba(168, 50, 42, 0.08);
 }
 
 :root[data-theme="dark"] .progress-nav-card--unknown.is-active {
-  border-color: #fbbf24;
-  background: rgba(251, 191, 36, 0.1);
+  border-color: #C8463B;
+  background: rgba(200, 70, 59, 0.15);
 }
 
 .progress-nav-card--unseen.is-active {
-  border-color: #6366f1;
-  background: rgba(99, 102, 241, 0.05);
+  border-color: var(--c-muted-bronze, #A88B62);
+  background: rgba(168, 139, 98, 0.08);
 }
 
 :root[data-theme="dark"] .progress-nav-card--unseen.is-active {
-  border-color: #818cf8;
-  background: rgba(129, 140, 248, 0.1);
+  border-color: #D4B37F;
+  background: rgba(212, 179, 127, 0.12);
 }
 
 /* Empty Card State */
@@ -1218,27 +1221,27 @@ body.flashcard-study-mode .filter-row {
 }
 
 .progress-nav-card--known .progress-nav-card-icon {
-  color: #10b981;
+  color: #527D70;
 }
 
 :root[data-theme="dark"] .progress-nav-card--known .progress-nav-card-icon {
-  color: #34d399;
+  color: #629988;
 }
 
 .progress-nav-card--unknown .progress-nav-card-icon {
-  color: #f59e0b;
+  color: #A8322A;
 }
 
 :root[data-theme="dark"] .progress-nav-card--unknown .progress-nav-card-icon {
-  color: #fbbf24;
+  color: #C8463B;
 }
 
 .progress-nav-card--unseen .progress-nav-card-icon {
-  color: #6366f1;
+  color: #A88B62;
 }
 
 :root[data-theme="dark"] .progress-nav-card--unseen .progress-nav-card-icon {
-  color: #818cf8;
+  color: #D4B37F;
 }
 
 .progress-nav-card-label {
@@ -1381,10 +1384,41 @@ body.flashcard-study-mode #cardArea > .card {
   overflow-x: hidden;
   scrollbar-width: none !important;
   -ms-overflow-style: none !important;
-  background: var(--surface-bg, #ffffff);
-  border: 1px solid var(--border-color, #E6E8E5);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  background: var(--card-bg, #FAF6EE);
+  background-image: radial-gradient(circle at 50% 0%, rgba(197, 164, 109, 0.07) 0%, transparent 75%);
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 24px -2px rgba(41, 43, 48, 0.08), 0 1px 4px rgba(197, 164, 109, 0.12);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+body.flashcard-study-mode #cardArea > .card::before,
+body.flashcard-study-mode #cardArea > .card::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  z-index: 4;
+  opacity: 0.45;
+  transition: opacity 0.2s ease, border-color 0.2s ease;
+}
+/* Classical Chinese Fretwork / Corner Accent (如意云纹角花) */
+body.flashcard-study-mode #cardArea > .card::before {
+  top: 10px;
+  left: 10px;
+  border-top: 2px solid var(--accent-gold, #C5A46D);
+  border-left: 2px solid var(--accent-gold, #C5A46D);
+  border-top-left-radius: 4px;
+}
+body.flashcard-study-mode #cardArea > .card::after {
+  bottom: 10px;
+  right: 10px;
+  border-bottom: 2px solid var(--accent-gold, #C5A46D);
+  border-right: 2px solid var(--accent-gold, #C5A46D);
+  border-bottom-right-radius: 4px;
+}
+body.flashcard-study-mode #cardArea > .card:hover::before,
+body.flashcard-study-mode #cardArea > .card:hover::after {
+  opacity: 0.85;
 }
 body.flashcard-study-mode #cardArea > .card::-webkit-scrollbar {
   display: none !important;
@@ -1392,9 +1426,19 @@ body.flashcard-study-mode #cardArea > .card::-webkit-scrollbar {
   height: 0 !important;
 }
 :root[data-theme="dark"] body.flashcard-study-mode #cardArea > .card {
-  background-color: var(--surface-bg, #161b22);
-  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.09));
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+  background-color: var(--card-bg, #20242A);
+  background-image: radial-gradient(circle at 50% 0%, rgba(212, 179, 127, 0.06) 0%, transparent 75%);
+  border: 1px solid rgba(197, 164, 109, 0.22);
+  box-shadow: 0 12px 36px -4px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(197, 164, 109, 0.14);
+}
+:root[data-theme="dark"] body.flashcard-study-mode #cardArea > .card::before,
+:root[data-theme="dark"] body.flashcard-study-mode #cardArea > .card::after {
+  border-color: var(--accent-gold, #D4B37F);
+  opacity: 0.55;
+}
+:root[data-theme="dark"] body.flashcard-study-mode #cardArea > .card:hover::before,
+:root[data-theme="dark"] body.flashcard-study-mode #cardArea > .card:hover::after {
+  opacity: 0.95;
 }
 
 body.flashcard-study-mode .card-header-bar {
@@ -1599,7 +1643,7 @@ body.flashcard-study-mode .hanzi-stage {
   box-sizing: border-box;
 }
 body.flashcard-study-mode .hanzi-stage:hover {
-  background: rgba(249, 115, 22, 0.04);
+  background: rgba(168, 50, 42, 0.03);
 }
 body.flashcard-study-mode .hanzi-stage:hover .hanzi-write-hint {
   opacity: 1;
@@ -1627,17 +1671,19 @@ body.flashcard-study-mode .hanzi-write-hint {
   margin-top: 8px;
   font-size: 12.5px;
   font-weight: 600;
-  color: #ea580c;
-  background: rgba(234, 88, 12, 0.09);
+  color: var(--accent);
+  background: var(--accent-light);
+  border: 1px solid rgba(168, 50, 42, 0.18);
   padding: 3.5px 12px;
   border-radius: 999px;
-  opacity: 0.75;
+  opacity: 0.8;
   transform: translateY(2px);
   transition: all 0.2s ease;
 }
 :root[data-theme="dark"] body.flashcard-study-mode .hanzi-write-hint {
-  color: #fb923c;
-  background: rgba(251, 146, 60, 0.15);
+  color: var(--accent-gold);
+  background: rgba(212, 179, 127, 0.12);
+  border-color: rgba(212, 179, 127, 0.25);
 }
 
 /* Pinyin & Sound */
@@ -1651,11 +1697,11 @@ body.flashcard-study-mode .pinyin-row {
 body.flashcard-study-mode .pinyin {
   font-size: clamp(1.3rem, 2.4vw, 1.6rem);
   font-weight: 700;
-  color: #ea580c;
+  color: var(--accent, #A8322A);
   letter-spacing: 0.025em;
 }
 :root[data-theme="dark"] body.flashcard-study-mode .pinyin {
-  color: #fb923c;
+  color: var(--accent, #C8463B);
 }
 
 /* Meta badges: Han-Viet & POS - Clean Editorial Context */
@@ -1961,9 +2007,9 @@ body.flashcard-study-mode .hanviet-badge {
 .pos-tag--particle, .pos-badge--particle,
 .pos-tag--phrase, .pos-badge--phrase,
 .pos-tag--idiom, .pos-badge--idiom {
-  color: #2563eb;
-  background: rgba(37, 99, 235, 0.08);
-  border: none;
+  color: var(--c-jade-text, #375F53);
+  background: rgba(82, 125, 112, 0.1);
+  border: 1px solid rgba(82, 125, 112, 0.18);
   font-size: 12px;
   font-weight: 600;
   padding: 2.5px 8px;
@@ -1984,15 +2030,13 @@ body.flashcard-study-mode .hanviet-badge {
 :root[data-theme="dark"] .pos-tag--particle, :root[data-theme="dark"] .pos-badge--particle,
 :root[data-theme="dark"] .pos-tag--phrase, :root[data-theme="dark"] .pos-badge--phrase,
 :root[data-theme="dark"] .pos-tag--idiom, :root[data-theme="dark"] .pos-badge--idiom {
-  color: #60a5fa;
-  background: rgba(59, 130, 246, 0.14);
-  border: none;
+  color: #7FB8A7;
+  background: rgba(82, 125, 112, 0.2);
+  border: 1px solid rgba(82, 125, 112, 0.3);
 }
 
-
-
 body.flashcard-study-mode .hanzi {
-  font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+  font-family: "PingFang SC", "Songti SC", "SimSun", "STSong", "Noto Serif SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", serif, sans-serif;
   font-size: clamp(84px, 8.5vw, 104px);
   font-weight: 600;
   line-height: 1.05;
