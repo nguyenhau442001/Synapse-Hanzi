@@ -20,9 +20,9 @@
   --font-classical: "Songti SC", "Noto Serif SC", "STSong", "SimSun", serif;
 
   /* Theme semantic mappings - Light Mode */
-  --bg-canvas: #F2EDE3;
+  --bg-canvas: #F5F0E6;
   --bg-surface: #FFFFFF;
-  --bg-elevated: #EDE5D8;
+  --bg-elevated: #EFE7D8;
 
   --text-primary: #292B30;
   --text-secondary: #5A564F;
@@ -40,7 +40,7 @@
   --status-warning: #A88B62;
 
   /* Aliases & unified token architecture */
-  --bg: #F2EDE3;
+  --bg: #F5F0E6;
   --card-bg: #FFFFFF;
   --bg-card: #FFFFFF;
   --border: #DDD4C4;
@@ -195,9 +195,9 @@
 }
 
 :root[data-theme="light"] {
-  --bg-canvas: #F2EDE3;
+  --bg-canvas: #F5F0E6;
   --bg-surface: #FFFFFF;
-  --bg-elevated: #EDE5D8;
+  --bg-elevated: #EFE7D8;
 
   --text-primary: #292B30;
   --text-secondary: #5A564F;
@@ -214,7 +214,7 @@
   --status-success: #527D70;
   --status-warning: #A88B62;
 
-  --bg: #F2EDE3;
+  --bg: #F5F0E6;
   --card-bg: #FFFFFF;
   --bg-card: #FFFFFF;
   --border: #DDD4C4;
@@ -267,7 +267,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   transition: opacity 300ms ease, background-image 300ms ease;
-  opacity: 0.88;
+  opacity: 0.95;
 }
 :root[data-theme="light"] .chinese-aesthetic-bg {
   background-image: url("../images/chinese_landscape_light.svg");

@@ -1,0 +1,643 @@
+#!/usr/bin/env python3
+"""
+Generate high-aesthetic Traditional Chinese Shanshui Landscape SVGs
+(中国传统山水长卷 - 东方古典美学)
+for 汉字思维 (Hanzi Mind) Light & Dark themes.
+"""
+
+import xml.etree.ElementTree as ET
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+LIGHT_SVG_PATH = ROOT / "assets/images/chinese_landscape_light.svg"
+DARK_SVG_PATH = ROOT / "assets/images/chinese_landscape_dark.svg"
+
+
+def build_light_shanshui_svg() -> str:
+    return """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <!-- Paper Canvas Wash: Warm Ivory to Aged Xuan Paper -->
+    <linearGradient id="ls_paper_bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F7F3E9"/>
+      <stop offset="45%" stop-color="#F4EFE5"/>
+      <stop offset="100%" stop-color="#EFE7D8"/>
+    </linearGradient>
+
+    <!-- Farthest Atmospheric Mountain Wash (Soft Ink Mist) -->
+    <linearGradient id="ls_far_peak_grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8C8980" stop-opacity="0.16"/>
+      <stop offset="60%" stop-color="#B8B3A8" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#F4EFE5" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Middle Mountain Ink Wash (Soft Mineral Ink) -->
+    <linearGradient id="ls_mid_peak_grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5C5B54" stop-opacity="0.22"/>
+      <stop offset="55%" stop-color="#8C8980" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#F4EFE5" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Left Promontory Ridge (Framing Cliff) -->
+    <linearGradient id="ls_left_cliff_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34342F" stop-opacity="0.28"/>
+      <stop offset="45%" stop-color="#5C5B54" stop-opacity="0.16"/>
+      <stop offset="85%" stop-color="#8C8980" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#F4EFE5" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Right Shore & Foothills -->
+    <linearGradient id="ls_right_cliff_grad" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#34342F" stop-opacity="0.25"/>
+      <stop offset="40%" stop-color="#5C5B54" stop-opacity="0.14"/>
+      <stop offset="80%" stop-color="#8C8980" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#F4EFE5" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Water Surface Sheen & Reflection -->
+    <linearGradient id="ls_water_wash" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F4EFE5" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#D8D3C8" stop-opacity="0.08"/>
+      <stop offset="70%" stop-color="#B8B3A8" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#8C8980" stop-opacity="0.18"/>
+    </linearGradient>
+
+    <!-- Atmospheric Horizontal Mist Band -->
+    <linearGradient id="ls_mist_horizontal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F7F3E9" stop-opacity="0.75"/>
+      <stop offset="18%" stop-color="#F7F3E9" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#F7F3E9" stop-opacity="0.88"/>
+      <stop offset="82%" stop-color="#F7F3E9" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#F7F3E9" stop-opacity="0.75"/>
+    </linearGradient>
+
+    <!-- Delicate Xuan Paper Grain Texture Filter -->
+    <filter id="ls_paper_texture" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.035 0" in="noise" result="coloredNoise"/>
+      <feBlend mode="multiply" in="SourceGraphic" in2="coloredNoise"/>
+    </filter>
+
+    <!-- Soft Mist Gaussian Blur -->
+    <filter id="ls_mist_diffuse" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+
+  <!-- 1. Xuan Paper Canvas Base with Subtle Grain Texture -->
+  <rect width="100%" height="100%" fill="url(#ls_paper_bg)"/>
+  <rect width="100%" height="100%" fill="#EFE7D8" opacity="0.4" filter="url(#ls_paper_texture)"/>
+
+  <!-- ======================================================================
+       LAYER 1: DISTANT LANDSCAPE (远山与云海 - 高远与深远)
+       Soft, atmospheric Song dynasty mountain silhouettes fading into mist.
+       ====================================================================== -->
+  <g class="distant-landscape" opacity="0.9">
+    <!-- Farthest Ethereal Range Across the Horizon (Very soft ink wash) -->
+    <path d="M-50,340 
+             C120,290 260,310 400,260 
+             C520,218 640,270 780,240 
+             C920,210 1060,265 1200,225 
+             C1340,185 1460,245 1600,205 
+             C1720,170 1850,220 2000,235 
+             L2000,560 L-50,560 Z" 
+          fill="url(#ls_far_peak_grad)"/>
+
+    <!-- Secondary Misty Peaks (Graceful crags & mountain shoulders) -->
+    <path d="M-50,410 
+             C140,360 280,395 440,335 
+             C580,280 720,350 890,315 
+             C1040,285 1180,340 1340,295 
+             C1480,255 1620,320 1780,280 
+             C1880,255 1950,285 2000,300 
+             L2000,640 L-50,640 Z" 
+          fill="url(#ls_mid_peak_grad)"/>
+
+    <!-- Mid-Valley Mist Layers (Soft floating clouds between mountain ridges) -->
+    <ellipse cx="480" cy="380" rx="420" ry="60" fill="#F4EFE5" opacity="0.65" filter="url(#ls_mist_diffuse)"/>
+    <ellipse cx="1460" cy="350" rx="460" ry="65" fill="#F4EFE5" opacity="0.6" filter="url(#ls_mist_diffuse)"/>
+  </g>
+
+  <!-- ======================================================================
+       LAYER 2: MIDDLE LANDSCAPE (中景：亭台楼阁、苍松、石桥与孤舟)
+       Authentic Song Dynasty architecture and pine silhouettes framing margins.
+       ====================================================================== -->
+
+  <!-- Left Shore: Rocky Headland with Waterside Pavilion & Ancient Scholar Pines -->
+  <g class="middle-left-realm" opacity="0.95">
+    <!-- Craggy headland rock mass sloping into misty water -->
+    <path d="M-60,320 
+             C60,350 140,430 200,530 
+             C250,610 210,700 290,780 
+             C350,840 430,890 390,1080 
+             L-60,1080 Z" 
+          fill="url(#ls_left_cliff_grad)"/>
+
+    <!-- Fine rock contour brushwork (皴法 - 雨点皴/披麻皴) -->
+    <g stroke="#34342F" stroke-width="0.8" fill="none" opacity="0.18">
+      <path d="M110,480 C140,510 160,570 190,620"/>
+      <path d="M140,560 C170,600 180,660 220,710"/>
+      <path d="M190,660 C230,710 240,760 270,810"/>
+      <path d="M220,750 C260,800 280,850 310,910"/>
+    </g>
+
+    <!-- Traditional Waterside Pavilion (六角飞檐水榭) at (x: 210, y: 560) -->
+    <g class="chinese-pavilion" transform="translate(180, 520)">
+      <!-- Stone / Wooden Foundation Platform over Water -->
+      <path d="M10,88 L70,88 L65,96 L15,96 Z" fill="#8C8980" opacity="0.35"/>
+      <line x1="20" y1="96" x2="20" y2="108" stroke="#34342F" stroke-width="2" opacity="0.4"/>
+      <line x1="40" y1="96" x2="40" y2="110" stroke="#34342F" stroke-width="2" opacity="0.4"/>
+      <line x1="60" y1="96" x2="60" y2="108" stroke="#34342F" stroke-width="2" opacity="0.4"/>
+
+      <!-- Pavilion Pillars (柱) -->
+      <line x1="22" y1="52" x2="22" y2="88" stroke="#34342F" stroke-width="1.6" opacity="0.6"/>
+      <line x1="34" y1="50" x2="34" y2="88" stroke="#34342F" stroke-width="1.3" opacity="0.5"/>
+      <line x1="46" y1="50" x2="46" y2="88" stroke="#34342F" stroke-width="1.3" opacity="0.5"/>
+      <line x1="58" y1="52" x2="58" y2="88" stroke="#34342F" stroke-width="1.6" opacity="0.6"/>
+
+      <!-- Wooden Railing (欞星栏杆) -->
+      <rect x="22" y="74" width="36" height="4" fill="#B89B68" opacity="0.4"/>
+      <line x1="22" y1="78" x2="58" y2="78" stroke="#34342F" stroke-width="0.8" opacity="0.4"/>
+      <line x1="22" y1="84" x2="58" y2="84" stroke="#34342F" stroke-width="0.8" opacity="0.4"/>
+
+      <!-- Crossbeam & Lintel (额枋/斗拱) -->
+      <rect x="18" y="48" width="44" height="4" fill="#34342F" opacity="0.55"/>
+
+      <!-- Flying Eaves - Curved Classical Roof (飞檐翘角) -->
+      <!-- Lower eave contour -->
+      <path d="M8,50 
+               Q26,52 40,49 
+               Q54,52 72,50 
+               Q77,44 80,38 
+               Q68,43 56,38 
+               L40,16 
+               L24,38 
+               Q12,43 0,38 
+               Q3,44 8,50 Z" 
+            fill="#34342F" opacity="0.65"/>
+      <!-- Roof Ridge Lines (垂脊) -->
+      <path d="M40,16 L12,46" stroke="#B89B68" stroke-width="1.1" opacity="0.6" fill="none"/>
+      <path d="M40,16 L68,46" stroke="#B89B68" stroke-width="1.1" opacity="0.6" fill="none"/>
+      <!-- Roof Peak Pearl Finial (宝顶) -->
+      <path d="M40,16 L40,8 M38,10 Q40,6 42,10 Z" stroke="#B89B68" stroke-width="1.4" fill="#B89B68" opacity="0.8"/>
+    </g>
+
+    <!-- Classical Scholar Pines (苍劲古松) Sheltering the Pavilion -->
+    <g class="ancient-pines" stroke-linecap="round">
+      <!-- Main Pine Trunk -->
+      <path d="M120,680 
+               C145,630 150,580 180,540 
+               C200,510 225,490 260,475" 
+            stroke="#34342F" stroke-width="4.5" fill="none" opacity="0.55"/>
+      <path d="M180,540 C195,515 210,480 230,450" 
+            stroke="#34342F" stroke-width="2.8" fill="none" opacity="0.5"/>
+      <path d="M195,515 C175,495 150,485 130,480" 
+            stroke="#34342F" stroke-width="2.2" fill="none" opacity="0.45"/>
+
+      <!-- Pine Needle Clusters (松针层簇 - 轮廓层叠) -->
+      <g fill="#34342F" opacity="0.32">
+        <path d="M240,475 Q265,460 290,475 Q265,482 240,475 Z"/>
+        <path d="M255,465 Q275,450 295,465 Q275,472 255,465 Z"/>
+        <path d="M215,445 Q240,430 265,445 Q240,452 215,445 Z"/>
+        <path d="M225,435 Q245,420 265,435 Q245,442 225,435 Z"/>
+        <path d="M115,480 Q140,465 165,480 Q140,488 115,480 Z"/>
+        <path d="M130,470 Q150,455 170,470 Q150,478 130,470 Z"/>
+        <path d="M150,535 Q180,520 210,535 Q180,544 150,535 Z"/>
+      </g>
+    </g>
+
+    <!-- Graceful Arched Stone Bridge (单孔石拱桥) at (x: 270-390, y: 780-840) -->
+    <g class="stone-bridge" transform="translate(260, 770)">
+      <!-- Stone Arch Underbelly -->
+      <path d="M10,40 Q60,-2 110,40 L120,44 Q60,4 0,44 Z" fill="#8C8980" opacity="0.25"/>
+      <!-- Bridge Pathway Deck -->
+      <path d="M0,38 Q60,-6 120,38 L122,44 Q60,0 -2,44 Z" fill="#5C5B54" opacity="0.4"/>
+      <!-- Stone Balustrade (石栏杆) & Posts -->
+      <path d="M4,34 Q60,-10 116,34" stroke="#B89B68" stroke-width="1.2" fill="none" opacity="0.5"/>
+      <line x1="20" y1="26" x2="20" y2="38" stroke="#34342F" stroke-width="1.2" opacity="0.4"/>
+      <line x1="40" y1="18" x2="40" y2="33" stroke="#34342F" stroke-width="1.2" opacity="0.4"/>
+      <line x1="60" y1="13" x2="60" y2="30" stroke="#34342F" stroke-width="1.2" opacity="0.4"/>
+      <line x1="80" y1="18" x2="80" y2="33" stroke="#34342F" stroke-width="1.2" opacity="0.4"/>
+      <line x1="100" y1="26" x2="100" y2="38" stroke="#34342F" stroke-width="1.2" opacity="0.4"/>
+      <!-- Water Reflection of Arch -->
+      <ellipse cx="60" cy="46" rx="42" ry="10" fill="#34342F" opacity="0.08" filter="url(#ls_mist_diffuse)"/>
+    </g>
+  </g>
+
+  <!-- Right Shore: Distant Mountain Temple Pagoda & Misty Bamboo Groves -->
+  <g class="middle-right-realm" opacity="0.95">
+    <!-- Mountain mass on right side -->
+    <path d="M1980,260 
+             C1860,300 1790,390 1740,490 
+             C1680,590 1730,700 1620,800 
+             C1550,860 1480,920 1520,1080 
+             L1980,1080 Z" 
+          fill="url(#ls_right_cliff_grad)"/>
+
+    <!-- Delicate Distant Multi-Tier Pagoda (云中佛塔) at (x: 1750, y: 390) -->
+    <g class="chinese-pagoda" transform="translate(1730, 360)">
+      <!-- Tier 1 (Base tier) -->
+      <path d="M10,80 Q24,82 38,80 Q43,76 46,72 Q36,75 24,72 Q12,75 2,72 Q5,76 10,80 Z" fill="#34342F" opacity="0.45"/>
+      <rect x="14" y="80" width="20" height="12" fill="#34342F" opacity="0.35"/>
+      <!-- Tier 2 -->
+      <path d="M12,68 Q24,70 36,68 Q40,64 43,61 Q34,63 24,61 Q14,63 5,61 Q8,64 12,68 Z" fill="#34342F" opacity="0.45"/>
+      <rect x="15" y="68" width="18" height="10" fill="#34342F" opacity="0.35"/>
+      <!-- Tier 3 -->
+      <path d="M14,58 Q24,60 34,58 Q38,55 40,52 Q32,54 24,52 Q16,54 8,52 Q10,55 14,58 Z" fill="#34342F" opacity="0.45"/>
+      <rect x="17" y="58" width="14" height="8" fill="#34342F" opacity="0.35"/>
+      <!-- Tier 4 -->
+      <path d="M16,49 Q24,51 32,49 Q35,46 37,44 Q30,46 24,44 Q18,46 11,44 Q13,46 16,49 Z" fill="#34342F" opacity="0.45"/>
+      <rect x="18" y="49" width="12" height="7" fill="#34342F" opacity="0.35"/>
+      <!-- Pagoda Spire & Finial (相轮刹顶) -->
+      <line x1="24" y1="44" x2="24" y2="28" stroke="#B89B68" stroke-width="1.3" opacity="0.7"/>
+      <circle cx="24" cy="27" r="1.8" fill="#B89B68" opacity="0.75"/>
+    </g>
+
+    <!-- Right Side Pines & Bamboo Silhouettes -->
+    <g class="right-pines" stroke-linecap="round">
+      <path d="M1840,580 C1810,540 1780,510 1730,490" stroke="#34342F" stroke-width="3" fill="none" opacity="0.45"/>
+      <path d="M1780,510 C1750,480 1710,470 1670,465" stroke="#34342F" stroke-width="2" fill="none" opacity="0.4"/>
+      <!-- Pine needle pads -->
+      <g fill="#34342F" opacity="0.28">
+        <path d="M1710,490 Q1735,475 1760,490 Q1735,497 1710,490 Z"/>
+        <path d="M1650,465 Q1675,450 1700,465 Q1675,472 1650,465 Z"/>
+        <path d="M1760,530 Q1785,515 1810,530 Q1785,538 1760,530 Z"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- ======================================================================
+       LAYER 3: FOREGROUND, WATER REALM & TRANQUIL NEGATIVE SPACE (留白圣境)
+       Center sanctuary is 100% quiet, bright Xuan paper for UI cards and text.
+       Lower background has misty water sheen, gentle ripples, and solitary skiff.
+       ====================================================================== -->
+
+  <!-- Vast Central 留白 (Liu Bai) Veil -->
+  <!-- Ensures header, daily goal, and all 6 HSK cards enjoy pure, high-contrast clarity -->
+  <rect x="360" y="0" width="1200" height="1080" fill="url(#ls_mist_horizontal)" opacity="0.82" filter="url(#ls_mist_diffuse)"/>
+
+  <!-- Lower River Realm (水天一色) Below Content -->
+  <g class="river-realm">
+    <rect x="0" y="760" width="1920" height="320" fill="url(#ls_water_wash)"/>
+
+    <!-- Soft Horizontal Water Currents (平水墨韵 - 自然舒缓) -->
+    <g stroke="#8C8980" stroke-width="0.8" fill="none" opacity="0.2">
+      <path d="M140,890 Q380,885 620,890 T1100,892"/>
+      <path d="M320,935 Q600,930 880,935 T1440,937"/>
+      <path d="M820,965 Q1120,960 1420,965 T1860,967"/>
+      <path d="M220,995 Q560,990 900,995 T1580,997"/>
+      <path d="M680,1030 Q1040,1025 1400,1030 T1900,1032"/>
+    </g>
+
+    <!-- Poetic Solitary Skiff (烟波孤舟) at (x: 1360, y: 840) -->
+    <g class="solitary-skiff" transform="translate(1340, 835)" opacity="0.45">
+      <!-- Boat Hull (轻舟) -->
+      <path d="M0,14 C12,14 18,17 38,17 C56,17 68,13 78,8 C65,19 45,21 22,20 C10,19 2,16 0,14 Z" fill="#34342F"/>
+      <!-- Arched Bamboo Canopy (乌篷) -->
+      <path d="M26,17 C26,9 44,9 44,17 Z" fill="#5C5B54" stroke="#34342F" stroke-width="0.8"/>
+      <!-- Solitary Fisherman / Oar (一竿风月) -->
+      <line x1="48" y1="7" x2="62" y2="22" stroke="#34342F" stroke-width="1"/>
+      <circle cx="46" cy="6" r="2.2" fill="#34342F"/>
+      <!-- Subtle Water Wake Ripple -->
+      <ellipse cx="38" cy="22" rx="36" ry="3" fill="#8C8980" opacity="0.25"/>
+    </g>
+  </g>
+
+  <!-- ======================================================================
+       CLASSICAL POETIC DETAILS: SOARING CRANES & AUSPICIOUS CLOUDS
+       ====================================================================== -->
+
+  <!-- Auspicious Cloud Scrolls (祥云纹) - Drifting high in top corners with antique gold hairline -->
+  <g class="cloud-scrolls" stroke="#B89B68" stroke-width="1.1" fill="none" opacity="0.22">
+    <!-- Top-Left Cloud Motif -->
+    <g transform="translate(200, 70) scale(0.65)">
+      <path d="M0,20 C10,10 25,10 35,20 C45,10 60,10 70,20 C85,20 95,32 90,45 C85,58 70,60 55,58 L10,58 C-5,58 -15,45 -10,32 C-7,25 -2,22 0,20 Z"/>
+      <path d="M25,38 C32,32 42,32 48,38 C54,44 50,52 42,52 C35,52 32,46 36,42"/>
+    </g>
+    <!-- Top-Right Cloud Motif -->
+    <g transform="translate(1640, 65) scale(0.6)">
+      <path d="M0,20 C10,10 25,10 35,20 C45,10 60,10 70,20 C85,20 95,32 90,45 C85,58 70,60 55,58 L10,58 C-5,58 -15,45 -10,32 C-7,25 -2,22 0,20 Z"/>
+      <path d="M25,38 C32,32 42,32 48,38 C54,44 50,52 42,52 C35,52 32,46 36,42"/>
+    </g>
+  </g>
+
+  <!-- Poetic Wild Cranes Ascending (闲云晴鹤 - 晴空一鹤排云上) -->
+  <g class="soaring-cranes" stroke="#34342F" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.4">
+    <!-- Lead Crane -->
+    <g transform="translate(520, 130) scale(0.85)">
+      <path d="M0,0 Q12,-8 24,-2 Q14,8 0,0"/>
+      <path d="M12,-5 L16,-16 Q20,-18 24,-14"/>
+      <path d="M24,-2 Q32,0 40,-4"/>
+    </g>
+    <!-- Second Crane -->
+    <g transform="translate(565, 155) scale(0.68)">
+      <path d="M0,0 Q12,-8 24,-2 Q14,8 0,0"/>
+      <path d="M12,-5 L16,-16 Q20,-18 24,-14"/>
+      <path d="M24,-2 Q32,0 40,-4"/>
+    </g>
+    <!-- Third Distant Crane -->
+    <g transform="translate(600, 140) scale(0.52)">
+      <path d="M0,0 Q12,-8 24,-2 Q14,8 0,0"/>
+      <path d="M12,-5 L16,-16 Q20,-18 24,-14"/>
+    </g>
+  </g>
+</svg>"""
+
+
+def build_dark_shanshui_svg() -> str:
+    return """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <!-- Nocturnal Paper Canvas Base: Deep Pine Ink Wash (松烟黛墨) -->
+    <linearGradient id="ds_paper_bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#111316"/>
+      <stop offset="45%" stop-color="#14171B"/>
+      <stop offset="100%" stop-color="#1B1F26"/>
+    </linearGradient>
+
+    <!-- Farthest Moonlight Mist Peak Wash -->
+    <linearGradient id="ds_far_peak_grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3A4350" stop-opacity="0.32"/>
+      <stop offset="60%" stop-color="#242B35" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#14171B" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Middle Mountain Ink Wash -->
+    <linearGradient id="ds_mid_peak_grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4E5A6A" stop-opacity="0.28"/>
+      <stop offset="55%" stop-color="#2E3744" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#14171B" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Left Nocturnal Promontory Ridge -->
+    <linearGradient id="ds_left_cliff_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#28303C" stop-opacity="0.55"/>
+      <stop offset="45%" stop-color="#1E242E" stop-opacity="0.32"/>
+      <stop offset="85%" stop-color="#161B22" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#14171B" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Right Shore & Foothills -->
+    <linearGradient id="ds_right_cliff_grad" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#28303C" stop-opacity="0.5"/>
+      <stop offset="40%" stop-color="#1E242E" stop-opacity="0.28"/>
+      <stop offset="80%" stop-color="#161B22" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#14171B" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Water Surface Sheen (Night Water Reflection) -->
+    <linearGradient id="ds_water_wash" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#14171B" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#222A36" stop-opacity="0.15"/>
+      <stop offset="70%" stop-color="#2B3544" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#344052" stop-opacity="0.28"/>
+    </linearGradient>
+
+    <!-- Atmospheric Horizontal Mist Band (Nocturnal Moonlight Veil) -->
+    <linearGradient id="ds_mist_horizontal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14171B" stop-opacity="0.75"/>
+      <stop offset="18%" stop-color="#14171B" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#14171B" stop-opacity="0.88"/>
+      <stop offset="82%" stop-color="#14171B" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#14171B" stop-opacity="0.75"/>
+    </linearGradient>
+
+    <!-- Soft Mist Gaussian Blur -->
+    <filter id="ds_mist_diffuse" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="15"/>
+    </filter>
+  </defs>
+
+  <!-- 1. Deep Nocturnal Base Canvas -->
+  <rect width="100%" height="100%" fill="url(#ds_paper_bg)"/>
+
+  <!-- ======================================================================
+       LAYER 1: DISTANT NOCTURNAL LANDSCAPE (夜色远山与银汉烟岚)
+       ====================================================================== -->
+  <g class="distant-landscape" opacity="0.85">
+    <!-- Farthest Moonlit Mountain Silhouettes -->
+    <path d="M-50,340 
+             C120,290 260,310 400,260 
+             C520,218 640,270 780,240 
+             C920,210 1060,265 1200,225 
+             C1340,185 1460,245 1600,205 
+             C1720,170 1850,220 2000,235 
+             L2000,560 L-50,560 Z" 
+          fill="url(#ds_far_peak_grad)"/>
+
+    <!-- Secondary Nocturnal Ridges -->
+    <path d="M-50,410 
+             C140,360 280,395 440,335 
+             C580,280 720,350 890,315 
+             C1040,285 1180,340 1340,295 
+             C1480,255 1620,320 1780,280 
+             C1880,255 1950,285 2000,300 
+             L2000,640 L-50,640 Z" 
+          fill="url(#ds_mid_peak_grad)"/>
+
+    <!-- Gentle Mountain Valley Mist -->
+    <ellipse cx="480" cy="380" rx="420" ry="60" fill="#1B2028" opacity="0.55" filter="url(#ds_mist_diffuse)"/>
+    <ellipse cx="1460" cy="350" rx="460" ry="65" fill="#1B2028" opacity="0.5" filter="url(#ds_mist_diffuse)"/>
+  </g>
+
+  <!-- ======================================================================
+       LAYER 2: MIDDLE NOCTURNAL LANDSCAPE (水榭亭台、古松、石桥与古塔)
+       ====================================================================== -->
+
+  <!-- Left Shore: Headland with Pavilion with Antique Gold Roofline Accents -->
+  <g class="middle-left-realm" opacity="0.95">
+    <path d="M-60,320 
+             C60,350 140,430 200,530 
+             C250,610 210,700 290,780 
+             C350,840 430,890 390,1080 
+             L-60,1080 Z" 
+          fill="url(#ds_left_cliff_grad)"/>
+
+    <!-- Subtle rock contours in silver-slate -->
+    <g stroke="#4E5A6A" stroke-width="0.8" fill="none" opacity="0.25">
+      <path d="M110,480 C140,510 160,570 190,620"/>
+      <path d="M140,560 C170,600 180,660 220,710"/>
+      <path d="M190,660 C230,710 240,760 270,810"/>
+      <path d="M220,750 C260,800 280,850 310,910"/>
+    </g>
+
+    <!-- Classical Waterside Pavilion with Subtle Gold Luminescence -->
+    <g class="chinese-pavilion" transform="translate(180, 520)">
+      <path d="M10,88 L70,88 L65,96 L15,96 Z" fill="#2E3744" opacity="0.5"/>
+      <line x1="20" y1="96" x2="20" y2="108" stroke="#1B2028" stroke-width="2" opacity="0.6"/>
+      <line x1="40" y1="96" x2="40" y2="110" stroke="#1B2028" stroke-width="2" opacity="0.6"/>
+      <line x1="60" y1="96" x2="60" y2="108" stroke="#1B2028" stroke-width="2" opacity="0.6"/>
+
+      <!-- Pillars -->
+      <line x1="22" y1="52" x2="22" y2="88" stroke="#D4B37F" stroke-width="1.4" opacity="0.5"/>
+      <line x1="34" y1="50" x2="34" y2="88" stroke="#D4B37F" stroke-width="1.2" opacity="0.4"/>
+      <line x1="46" y1="50" x2="46" y2="88" stroke="#D4B37F" stroke-width="1.2" opacity="0.4"/>
+      <line x1="58" y1="52" x2="58" y2="88" stroke="#D4B37F" stroke-width="1.4" opacity="0.5"/>
+
+      <!-- Railing -->
+      <rect x="22" y="74" width="36" height="4" fill="#C5A46D" opacity="0.3"/>
+      <line x1="22" y1="78" x2="58" y2="78" stroke="#D4B37F" stroke-width="0.8" opacity="0.5"/>
+
+      <!-- Lintel & Roof Eaves -->
+      <rect x="18" y="48" width="44" height="4" fill="#2E3744" opacity="0.7"/>
+      <path d="M8,50 
+               Q26,52 40,49 
+               Q54,52 72,50 
+               Q77,44 80,38 
+               Q68,43 56,38 
+               L40,16 
+               L24,38 
+               Q12,43 0,38 
+               Q3,44 8,50 Z" 
+            fill="#1E252E" stroke="#C5A46D" stroke-width="0.8" opacity="0.8"/>
+      <!-- Ridge Lines -->
+      <path d="M40,16 L12,46" stroke="#D4B37F" stroke-width="1.2" opacity="0.65" fill="none"/>
+      <path d="M40,16 L68,46" stroke="#D4B37F" stroke-width="1.2" opacity="0.65" fill="none"/>
+      <path d="M40,16 L40,8 M38,10 Q40,6 42,10 Z" stroke="#D4B37F" stroke-width="1.4" fill="#D4B37F" opacity="0.85"/>
+    </g>
+
+    <!-- Ancient Pines in Nocturnal Silhouette -->
+    <g class="ancient-pines" stroke-linecap="round">
+      <path d="M120,680 C145,630 150,580 180,540 C200,510 225,490 260,475" stroke="#161B22" stroke-width="4.5" fill="none" opacity="0.75"/>
+      <path d="M180,540 C195,515 210,480 230,450" stroke="#161B22" stroke-width="2.8" fill="none" opacity="0.7"/>
+      <path d="M195,515 C175,495 150,485 130,480" stroke="#161B22" stroke-width="2.2" fill="none" opacity="0.65"/>
+
+      <!-- Pine Needle Clusters with Soft Moonlit Edges -->
+      <g fill="#252D37" opacity="0.45">
+        <path d="M240,475 Q265,460 290,475 Q265,482 240,475 Z"/>
+        <path d="M255,465 Q275,450 295,465 Q275,472 255,465 Z"/>
+        <path d="M215,445 Q240,430 265,445 Q240,452 215,445 Z"/>
+        <path d="M115,480 Q140,465 165,480 Q140,488 115,480 Z"/>
+        <path d="M150,535 Q180,520 210,535 Q180,544 150,535 Z"/>
+      </g>
+    </g>
+
+    <!-- Stone Arch Bridge (单孔石拱桥) -->
+    <g class="stone-bridge" transform="translate(260, 770)">
+      <path d="M10,40 Q60,-2 110,40 L120,44 Q60,4 0,44 Z" fill="#242B35" opacity="0.4"/>
+      <path d="M0,38 Q60,-6 120,38 L122,44 Q60,0 -2,44 Z" fill="#1C222A" opacity="0.6"/>
+      <path d="M4,34 Q60,-10 116,34" stroke="#C5A46D" stroke-width="1.2" fill="none" opacity="0.45"/>
+      <line x1="20" y1="26" x2="20" y2="38" stroke="#D4B37F" stroke-width="1.1" opacity="0.4"/>
+      <line x1="60" y1="13" x2="60" y2="30" stroke="#D4B37F" stroke-width="1.1" opacity="0.4"/>
+      <line x1="100" y1="26" x2="100" y2="38" stroke="#D4B37F" stroke-width="1.1" opacity="0.4"/>
+      <ellipse cx="60" cy="46" rx="42" ry="10" fill="#2B3544" opacity="0.15" filter="url(#ds_mist_diffuse)"/>
+    </g>
+  </g>
+
+  <!-- Right Shore: Nocturnal Pagoda and Secluded Pines -->
+  <g class="middle-right-realm" opacity="0.95">
+    <path d="M1980,260 
+             C1860,300 1790,390 1740,490 
+             C1680,590 1730,700 1620,800 
+             C1550,860 1480,920 1520,1080 
+             L1980,1080 Z" 
+          fill="url(#ds_right_cliff_grad)"/>
+
+    <!-- Nocturnal Temple Pagoda -->
+    <g class="chinese-pagoda" transform="translate(1730, 360)">
+      <path d="M10,80 Q24,82 38,80 Q43,76 46,72 Q36,75 24,72 Q12,75 2,72 Q5,76 10,80 Z" fill="#1E252E" stroke="#C5A46D" stroke-width="0.6" opacity="0.6"/>
+      <rect x="14" y="80" width="20" height="12" fill="#1A2027" opacity="0.5"/>
+      <!-- Tier 2 -->
+      <path d="M12,68 Q24,70 36,68 Q40,64 43,61 Q34,63 24,61 Q14,63 5,61 Q8,64 12,68 Z" fill="#1E252E" stroke="#C5A46D" stroke-width="0.6" opacity="0.6"/>
+      <rect x="15" y="68" width="18" height="10" fill="#1A2027" opacity="0.5"/>
+      <!-- Tier 3 -->
+      <path d="M14,58 Q24,60 34,58 Q38,55 40,52 Q32,54 24,52 Q16,54 8,52 Q10,55 14,58 Z" fill="#1E252E" stroke="#C5A46D" stroke-width="0.6" opacity="0.6"/>
+      <rect x="17" y="58" width="14" height="8" fill="#1A2027" opacity="0.5"/>
+      <!-- Tier 4 -->
+      <path d="M16,49 Q24,51 32,49 Q35,46 37,44 Q30,46 24,44 Q18,46 11,44 Q13,46 16,49 Z" fill="#1E252E" stroke="#C5A46D" stroke-width="0.6" opacity="0.6"/>
+      <rect x="18" y="49" width="12" height="7" fill="#1A2027" opacity="0.5"/>
+      <!-- Spire -->
+      <line x1="24" y1="44" x2="24" y2="28" stroke="#D4B37F" stroke-width="1.3" opacity="0.8"/>
+      <circle cx="24" cy="27" r="1.8" fill="#D4B37F" opacity="0.85"/>
+    </g>
+
+    <!-- Right Pines -->
+    <g class="right-pines" stroke-linecap="round">
+      <path d="M1840,580 C1810,540 1780,510 1730,490" stroke="#161B22" stroke-width="3" fill="none" opacity="0.6"/>
+      <path d="M1780,510 C1750,480 1710,470 1670,465" stroke="#161B22" stroke-width="2" fill="none" opacity="0.55"/>
+      <g fill="#252D37" opacity="0.38">
+        <path d="M1710,490 Q1735,475 1760,490 Q1735,497 1710,490 Z"/>
+        <path d="M1650,465 Q1675,450 1700,465 Q1675,472 1650,465 Z"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- ======================================================================
+       LAYER 3: FOREGROUND, WATER REALM & TRANQUIL NEGATIVE SPACE (留白圣境)
+       ====================================================================== -->
+
+  <!-- Vast Central Nocturnal Veil -->
+  <rect x="360" y="0" width="1200" height="1080" fill="url(#ds_mist_horizontal)" opacity="0.82" filter="url(#ds_mist_diffuse)"/>
+
+  <!-- Lower Nocturnal River Realm -->
+  <g class="river-realm">
+    <rect x="0" y="760" width="1920" height="320" fill="url(#ds_water_wash)"/>
+
+    <g stroke="#3A4656" stroke-width="0.8" fill="none" opacity="0.3">
+      <path d="M140,890 Q380,885 620,890 T1100,892"/>
+      <path d="M320,935 Q600,930 880,935 T1440,937"/>
+      <path d="M820,965 Q1120,960 1420,965 T1860,967"/>
+      <path d="M220,995 Q560,990 900,995 T1580,997"/>
+    </g>
+
+    <!-- Solitary Night Skiff with Faint Lantern Glow -->
+    <g class="solitary-skiff" transform="translate(1340, 835)" opacity="0.55">
+      <path d="M0,14 C12,14 18,17 38,17 C56,17 68,13 78,8 C65,19 45,21 22,20 C10,19 2,16 0,14 Z" fill="#181D24"/>
+      <path d="M26,17 C26,9 44,9 44,17 Z" fill="#222933" stroke="#181D24" stroke-width="0.8"/>
+      <line x1="48" y1="7" x2="62" y2="22" stroke="#181D24" stroke-width="1"/>
+      <circle cx="46" cy="6" r="2.2" fill="#181D24"/>
+      <!-- Soft Warm Golden Lantern Glow -->
+      <circle cx="24" cy="14" r="3" fill="#D4B37F" opacity="0.6"/>
+      <ellipse cx="38" cy="22" rx="36" ry="3" fill="#2B3544" opacity="0.35"/>
+    </g>
+  </g>
+
+  <!-- ======================================================================
+       CLASSICAL POETIC DETAILS: SOARING CRANES & GOLDEN CLOUDS
+       ====================================================================== -->
+
+  <!-- Auspicious Cloud Scrolls in Antique Gold Hairline -->
+  <g class="cloud-scrolls" stroke="#C5A46D" stroke-width="1.1" fill="none" opacity="0.25">
+    <g transform="translate(200, 70) scale(0.65)">
+      <path d="M0,20 C10,10 25,10 35,20 C45,10 60,10 70,20 C85,20 95,32 90,45 C85,58 70,60 55,58 L10,58 C-5,58 -15,45 -10,32 C-7,25 -2,22 0,20 Z"/>
+      <path d="M25,38 C32,32 42,32 48,38 C54,44 50,52 42,52 C35,52 32,46 36,42"/>
+    </g>
+    <g transform="translate(1640, 65) scale(0.6)">
+      <path d="M0,20 C10,10 25,10 35,20 C45,10 60,10 70,20 C85,20 95,32 90,45 C85,58 70,60 55,58 L10,58 C-5,58 -15,45 -10,32 C-7,25 -2,22 0,20 Z"/>
+      <path d="M25,38 C32,32 42,32 48,38 C54,44 50,52 42,52 C35,52 32,46 36,42"/>
+    </g>
+  </g>
+
+  <!-- Nocturnal Cranes -->
+  <g class="soaring-cranes" stroke="#D4B37F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.4">
+    <g transform="translate(520, 130) scale(0.85)">
+      <path d="M0,0 Q12,-8 24,-2 Q14,8 0,0"/>
+      <path d="M12,-5 L16,-16 Q20,-18 24,-14"/>
+      <path d="M24,-2 Q32,0 40,-4"/>
+    </g>
+    <g transform="translate(565, 155) scale(0.68)">
+      <path d="M0,0 Q12,-8 24,-2 Q14,8 0,0"/>
+      <path d="M12,-5 L16,-16 Q20,-18 24,-14"/>
+      <path d="M24,-2 Q32,0 40,-4"/>
+    </g>
+  </g>
+</svg>"""
+
+
+def main():
+    light_content = build_light_shanshui_svg()
+    dark_content = build_dark_shanshui_svg()
+
+    # Validate XML parsing
+    ET.fromstring(light_content)
+    print("✓ Light SVG XML parsed successfully!")
+    ET.fromstring(dark_content)
+    print("✓ Dark SVG XML parsed successfully!")
+
+    LIGHT_SVG_PATH.write_text(light_content, encoding="utf-8")
+    print(f"✓ Written {LIGHT_SVG_PATH}")
+
+    DARK_SVG_PATH.write_text(dark_content, encoding="utf-8")
+    print(f"✓ Written {DARK_SVG_PATH}")
+
+
+if __name__ == "__main__":
+    main()
