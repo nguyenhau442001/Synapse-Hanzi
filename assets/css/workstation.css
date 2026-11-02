@@ -1159,29 +1159,30 @@ body.flashcard-study-mode .filter-row {
   background: #D4B37F;
 }
 
-/* Four Interactive Status Cards Grid */
+/* Four Interactive Status Cards Grid - Quiet Editorial Horizontal Strip */
 .progress-nav-cards {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 8px;
+  gap: 6px;
   width: 100%;
   box-sizing: border-box;
 }
 
 .progress-nav-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  align-items: flex-start;
-  min-height: 58px;
-  padding: 10px 14px;
-  border-radius: 12px;
-  border: 1px solid var(--border);
-  background: var(--card-bg, #FAF6EE);
+  min-height: 38px;
+  height: 38px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(221, 212, 196, 0.55);
+  background: rgba(255, 255, 255, 0.55);
   color: var(--text-primary);
   cursor: pointer;
   text-align: left;
-  box-shadow: 0 1px 3px rgba(41, 43, 48, 0.04);
+  box-shadow: none;
   transition: all 0.16s ease;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
@@ -1189,21 +1190,20 @@ body.flashcard-study-mode .filter-row {
 }
 
 :root[data-theme="dark"] .progress-nav-card {
-  background: #20242A;
-  border-color: rgba(197, 164, 109, 0.2);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  background: rgba(32, 36, 42, 0.65);
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: none;
 }
 
 .progress-nav-card:hover {
-  border-color: var(--accent-gold, #C5A46D);
-  background: var(--surface-subtle);
+  border-color: var(--border-strong, #C5A46D);
+  background: rgba(255, 255, 255, 0.85);
   transform: translateY(-0.5px);
-  box-shadow: 0 3px 8px rgba(197, 164, 109, 0.15);
 }
 
 :root[data-theme="dark"] .progress-nav-card:hover {
-  border-color: rgba(212, 179, 127, 0.4);
-  background: #282E36;
+  border-color: rgba(212, 179, 127, 0.35);
+  background: #242932;
 }
 
 .progress-nav-card:focus-visible {
@@ -1213,74 +1213,68 @@ body.flashcard-study-mode .filter-row {
 
 /* Card Selection States with Chinese Classical Harmonies */
 .progress-nav-card.is-active {
-  box-shadow: 0 3px 12px rgba(41, 43, 48, 0.08);
+  box-shadow: 0 1px 4px rgba(41, 43, 48, 0.04);
 }
 
 :root[data-theme="dark"] .progress-nav-card.is-active {
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .progress-nav-card--all.is-active {
   border-color: var(--c-antique-gold, #C5A46D);
-  background: rgba(197, 164, 109, 0.09);
+  background: rgba(197, 164, 109, 0.1);
 }
 
 :root[data-theme="dark"] .progress-nav-card--all.is-active {
-  border-color: #D4B37F;
-  background: rgba(212, 179, 127, 0.14);
+  border-color: rgba(212, 179, 127, 0.45);
+  background: rgba(212, 179, 127, 0.12);
 }
 
 .progress-nav-card--known.is-active {
   border-color: var(--c-jade-green, #527D70);
-  background: rgba(82, 125, 112, 0.09);
+  background: rgba(82, 125, 112, 0.08);
 }
 
 :root[data-theme="dark"] .progress-nav-card--known.is-active {
-  border-color: #629988;
-  background: rgba(98, 153, 136, 0.15);
+  border-color: rgba(98, 153, 136, 0.45);
+  background: rgba(98, 153, 136, 0.12);
 }
 
 .progress-nav-card--unknown.is-active {
-  border-color: var(--c-vermilion, #A8322A);
-  background: rgba(168, 50, 42, 0.08);
+  border-color: var(--brand-primary, #A8322A);
+  background: rgba(168, 50, 42, 0.07);
 }
 
 :root[data-theme="dark"] .progress-nav-card--unknown.is-active {
-  border-color: #C8463B;
-  background: rgba(200, 70, 59, 0.15);
+  border-color: rgba(200, 70, 59, 0.45);
+  background: rgba(200, 70, 59, 0.12);
 }
 
 .progress-nav-card--unseen.is-active {
-  border-color: var(--c-muted-bronze, #A88B62);
-  background: rgba(168, 139, 98, 0.08);
+  border-color: var(--text-tertiary);
+  background: rgba(0, 0, 0, 0.04);
 }
 
 :root[data-theme="dark"] .progress-nav-card--unseen.is-active {
-  border-color: #D4B37F;
-  background: rgba(212, 179, 127, 0.12);
-=======
-  border-color: color-mix(in srgb, var(--brand-primary) 40%, var(--border));
-  background: var(--surface-subtle, #252A2C);
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .progress-nav-card:active {
-  transform: scale(0.985);
+  transform: translateY(0.5px);
 }
 
 .progress-nav-card:focus-visible {
-  outline: 2px solid var(--brand-primary);
+  outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
 
-/* Card Selection States - Brand Orange Selection Treatment */
 .progress-nav-card.is-active,
 .progress-nav-card--all.is-active,
 .progress-nav-card--known.is-active,
 .progress-nav-card--unknown.is-active,
 .progress-nav-card--unseen.is-active {
-  border-color: var(--brand-primary);
-  background: var(--accent-light);
-  box-shadow: 0 2px 8px color-mix(in srgb, var(--brand-primary) 12%, transparent);
+  font-weight: 500;
 }
 
 :root[data-theme="dark"] .progress-nav-card.is-active,
@@ -1288,49 +1282,30 @@ body.flashcard-study-mode .filter-row {
 :root[data-theme="dark"] .progress-nav-card--known.is-active,
 :root[data-theme="dark"] .progress-nav-card--unknown.is-active,
 :root[data-theme="dark"] .progress-nav-card--unseen.is-active {
-  border-color: var(--brand-primary);
-  background: var(--accent-light);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
 }
 
-.progress-nav-card.is-active:hover,
-.progress-nav-card--all.is-active:hover,
-.progress-nav-card--known.is-active:hover,
-.progress-nav-card--unknown.is-active:hover,
-.progress-nav-card--unseen.is-active:hover {
-  border-color: var(--brand-primary-hover, var(--brand-primary));
-  background: var(--accent-light);
-}
-
-:root[data-theme="dark"] .progress-nav-card.is-active:hover,
-:root[data-theme="dark"] .progress-nav-card--all.is-active:hover,
-:root[data-theme="dark"] .progress-nav-card--known.is-active:hover,
-:root[data-theme="dark"] .progress-nav-card--unknown.is-active:hover,
-:root[data-theme="dark"] .progress-nav-card--unseen.is-active:hover {
-  border-color: var(--brand-primary-hover, var(--brand-primary));
-  background: var(--accent-light);
->>>>>>> origin/main
-}
-
-/* Empty Card State */
 .progress-nav-card.is-empty:not(.is-active) {
   opacity: 0.55;
+  cursor: default;
 }
 
 /* Card Inner Content */
 .progress-nav-card-head {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 7px;
-  width: 100%;
+  gap: 6px;
+  width: auto;
+  min-width: 0;
 }
 
 .progress-nav-card-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
+  font-size: 11px;
   flex-shrink: 0;
 }
 
@@ -1363,8 +1338,8 @@ body.flashcard-study-mode .filter-row {
 }
 
 .progress-nav-card-label {
-  font-size: 13.2px;
-  line-height: 1.35;
+  font-size: 11.5px;
+  line-height: 1.2;
   font-weight: 500;
   color: var(--text-secondary);
   white-space: nowrap;
@@ -1375,22 +1350,24 @@ body.flashcard-study-mode .filter-row {
 
 .progress-nav-card.is-active .progress-nav-card-label {
   color: var(--text-primary);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .progress-nav-card-body {
-  display: flex;
+  display: inline-flex;
   align-items: baseline;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 3px;
+  justify-content: flex-end;
+  width: auto;
+  margin-top: 0;
+  margin-left: 6px;
+  flex-shrink: 0;
 }
 
 .progress-nav-card-count {
-  font-size: 19.5px;
-  font-weight: 700;
+  font-size: 13.5px;
+  font-weight: 600;
   font-variant-numeric: tabular-nums;
-  line-height: 1.15;
+  line-height: 1;
   color: var(--text-primary);
   letter-spacing: -0.01em;
 }
@@ -1951,53 +1928,53 @@ body.flashcard-study-mode.hide-illustrations .card .card-visual-col {
 }
 
 body.flashcard-study-mode .card-illustration-frame {
-  width: 76px;
-  height: 76px;
-  max-width: 80px;
-  max-height: 80px;
-  border-radius: 12px;
+  width: 64px;
+  height: 64px;
+  max-width: 70px;
+  max-height: 70px;
+  border-radius: 10px;
   background-color: transparent;
   border: none;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.04);
+  box-shadow: none;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   padding: 0;
   position: relative;
-  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   user-select: none;
   flex-shrink: 0;
 }
 :root[data-theme="dark"] body.flashcard-study-mode .card-illustration-frame {
   background-color: transparent;
   border: none;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.07);
+  box-shadow: none;
 }
 body.flashcard-study-mode .card-illustration-frame:hover {
-  transform: translateY(-1px);
+  transform: translateY(-0.5px);
 }
 
 @media (min-width: 1024px) {
   body.flashcard-study-mode .card-illustration-frame {
-    width: 96px;
-    height: 96px;
-    max-width: 100px;
-    max-height: 100px;
-    border-radius: 14px;
+    width: 68px;
+    height: 68px;
+    max-width: 72px;
+    max-height: 72px;
+    border-radius: 10px;
   }
   body.flashcard-study-mode .card-illustration-svg svg,
   body.flashcard-study-mode .card-illustration-img {
-    border-radius: 14px;
+    border-radius: 10px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 1023px) {
   body.flashcard-study-mode .card-illustration-frame {
-    width: 86px;
-    height: 86px;
-    max-width: 90px;
-    max-height: 90px;
+    width: 60px;
+    height: 60px;
+    max-width: 64px;
+    max-height: 64px;
   }
 }
 
@@ -2495,15 +2472,15 @@ body.flashcard-study-mode .card-decomp-target-char {
   margin-right: 2px;
 }
 
-/* Khối ví dụ thực tế: Tối ưu nhịp khoảng cách (Vertical Rhythm) và phân cấp màu sắc */
+/* Khối ví dụ thực tế: Phong cách từ điển Đông phương tao nhã (Editorial Dictionary Entry) */
 body.flashcard-study-mode .example-box {
   width: 100%;
   max-width: 560px;
-  margin: 12px auto 0;
-  padding: 13px 18px;
-  border-radius: 12px;
-  background: rgba(0, 0, 0, 0.015);
-  border: 1px solid var(--border-subtle);
+  margin: 14px auto 0;
+  padding: 14px 18px;
+  border-radius: 10px;
+  background: var(--surface-subtle, #FAF7F0);
+  border: 1px solid rgba(221, 212, 196, 0.45);
   max-height: none !important;
   overflow-y: visible !important;
   box-shadow: none;
@@ -2511,8 +2488,8 @@ body.flashcard-study-mode .example-box {
   min-height: min-content !important;
 }
 :root[data-theme="dark"] body.flashcard-study-mode .example-box {
-  background: rgba(255, 255, 255, 0.02);
-  border-color: rgba(255, 255, 255, 0.06);
+  background: rgba(32, 37, 44, 0.7);
+  border-color: rgba(255, 255, 255, 0.08);
 }
 body.flashcard-study-mode .example-box .ex-header-row {
   display: flex;
@@ -2755,10 +2732,10 @@ body.flashcard-study-mode .rating-btn {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  min-height: 52px;
-  height: 52px;
-  padding: 0 24px;
-  border-radius: 12px;
+  min-height: 44px;
+  height: 44px;
+  padding: 0 20px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
   position: relative;

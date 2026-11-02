@@ -1,77 +1,52 @@
 /**
- * 汉字思维 (Hànzì Sīwéi) - Chinese Classical Animated Background: 梅花飘落 · 水墨云雾 · 金色微光
+ * 汉字思维 (Hànzì Sīwéi) · Synapse Hanzi
+ * Modern Chinese Learning × Contemporary Oriental Aesthetics
  * 
- * Layered Composition:
- * - Layer 1 & 2: Base Xuan paper & distant ink-wash mountain silhouettes (SVG background)
- * - Layer 3: Subtle horizontal Chinese ink-wash mist (水墨烟岚)
- * - Layer 4: Falling Chinese plum blossom petals & occasional 5-petal flowers (红梅飘落)
- * - Layer 5: Sparse warm golden floating particles (金色微光)
- * 
- * Performance & Accessibility:
- * - Single lightweight <canvas> element using requestAnimationFrame
- * - 8–14 petals on desktop, 5–7 on mobile
- * - Pauses automatically when tab is inactive (Page Visibility API)
- * - Respects prefers-reduced-motion
- * - Completely non-interactive (pointer-events: none)
+ * Subtle Chinese Ink Ambient Effect (水墨微尘 · 墨韵烟岚):
+ * - Extremely subtle floating ink & tea-dust particles (微墨细粒)
+ * - Gentle, ultra-slow ink-wash diffusion (淡淡墨晕)
+ * - Low opacity, non-distracting, completely secondary to learning content
+ * - Full accessibility: prefers-reduced-motion, page visibility pause
+ * - Zero interaction blocking: pointer-events: none
  */
 
 (function () {
   'use strict';
 
-  // Configuration Constants
   const CONFIG = {
-    // Petal counts
-    desktopPetals: 12,
-    mobilePetals: 6,
-    // Gold particles
-    desktopGold: 10,
-    mobileGold: 5,
-    // Mist layers
-    mistLayersCount: 3,
-    // Breakpoints
+    desktopParticles: 12,
+    mobileParticles: 6,
     mobileBreakpoint: 768,
+    mistLayers: 2,
   };
 
-  // Chinese Classical Palette for Plum Blossoms
-  // Authentic rounded Chinese plum petals (梅花瓣), deep vermilion and muted crimson
-  const PALETTES = {
+  const THEMES = {
     light: {
-      petals: [
-        { main: '#A8322A', shadow: '#8F2525', highlight: '#C23B32' }, // Vermilion / 朱砂
-        { main: '#B83A31', shadow: '#942621', highlight: '#D9534F' }, // Muted crimson / 绛红
-        { main: '#8F2525', shadow: '#6B1717', highlight: '#A8322A' }, // Deep imperial red / 宫墙红
-        { main: '#C23B32', shadow: '#9E2A2B', highlight: '#F4C2BC' }, // Rose highlight / 丹红带粉
+      particles: [
+        { fill: '#5C5549', glow: 'rgba(92, 85, 73, 0.15)' }, // Pine-soot ink (松烟墨)
+        { fill: '#8C7A65', glow: 'rgba(140, 122, 101, 0.15)' }, // Tea-dust brown (茶褐)
+        { fill: '#A85A48', glow: 'rgba(168, 90, 72, 0.15)' }, // Muted terracotta (赭石)
+        { fill: '#B5945B', glow: 'rgba(181, 148, 91, 0.2)' }, // Antique gold dust (泥金微粒)
       ],
-      gold: {
-        fill: '#C5A46D', // Antique gold / 泥金
-        glow: 'rgba(197, 164, 109, 0.35)',
-      },
       mist: [
-        { color: 'rgba(239, 231, 216, 0.16)', yRatio: 0.62, speed: 0.12, height: 160 },
-        { color: 'rgba(245, 240, 230, 0.22)', yRatio: 0.74, speed: 0.18, height: 190 },
-        { color: 'rgba(235, 226, 210, 0.14)', yRatio: 0.86, speed: 0.08, height: 220 },
+        { color: 'rgba(235, 227, 212, 0.12)', yRatio: 0.75, speed: 0.08, height: 180 },
+        { color: 'rgba(242, 235, 222, 0.16)', yRatio: 0.88, speed: 0.12, height: 210 },
       ],
     },
     dark: {
-      petals: [
-        { main: '#BA3930', shadow: '#7A1D1A', highlight: '#D44C42' }, // Moonlit vermilion
-        { main: '#A8322A', shadow: '#691513', highlight: '#C53E35' }, // Nocturnal crimson
-        { main: '#8F2525', shadow: '#591111', highlight: '#B8322A' }, // Deep ink red
-        { main: '#C53E35', shadow: '#821B17', highlight: '#E5A59E' }, // Moonlit highlight
+      particles: [
+        { fill: '#B89B68', glow: 'rgba(184, 155, 104, 0.25)' }, // Luminous antique gold
+        { fill: '#8A8376', glow: 'rgba(138, 131, 118, 0.18)' }, // Warm moonlight ink
+        { fill: '#C86A56', glow: 'rgba(200, 106, 86, 0.2)' }, // Muted cinnabar dust
       ],
-      gold: {
-        fill: '#D4B37F', // Luminous gold / 浮金
-        glow: 'rgba(212, 179, 127, 0.4)',
-      },
       mist: [
-        { color: 'rgba(32, 38, 48, 0.18)', yRatio: 0.62, speed: 0.12, height: 160 },
-        { color: 'rgba(25, 30, 38, 0.24)', yRatio: 0.74, speed: 0.18, height: 190 },
-        { color: 'rgba(35, 42, 54, 0.16)', yRatio: 0.86, speed: 0.08, height: 220 },
+        { color: 'rgba(28, 33, 42, 0.15)', yRatio: 0.75, speed: 0.08, height: 180 },
+        { color: 'rgba(22, 26, 33, 0.20)', yRatio: 0.88, speed: 0.12, height: 210 },
       ],
     },
   };
 
-  class PlumBlossomEngine {
+  class ChineseInkAmbientEngine {
     constructor(canvas) {
       this.canvas = canvas;
       this.ctx = canvas.getContext('2d', { alpha: true });
@@ -79,8 +54,7 @@
       this.height = 0;
       this.dpr = Math.min(window.devicePixelRatio || 1, 2);
 
-      this.petals = [];
-      this.goldParticles = [];
+      this.particles = [];
       this.mistBands = [];
 
       this.animationFrameId = null;
@@ -130,7 +104,6 @@
     }
 
     bindEvents() {
-      // Debounced resize
       let resizeTimer = null;
       window.addEventListener('resize', () => {
         if (resizeTimer) clearTimeout(resizeTimer);
@@ -141,7 +114,6 @@
         }, 150);
       }, { passive: true });
 
-      // Page Visibility handling (pause when tab is inactive)
       document.addEventListener('visibilitychange', () => {
         if (document.hidden) {
           this.stop();
@@ -151,7 +123,6 @@
         }
       });
 
-      // Observer for theme attribute changes on <html>
       const observer = new MutationObserver((mutations) => {
         for (const mutation of mutations) {
           if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
@@ -178,8 +149,7 @@
     }
 
     updatePaletteStyles() {
-      // Re-assign active theme colors to mist and particles
-      const palette = PALETTES[this.currentTheme];
+      const palette = THEMES[this.currentTheme];
       this.mistBands.forEach((mist, idx) => {
         if (palette.mist[idx]) {
           mist.color = palette.mist[idx].color;
@@ -188,7 +158,7 @@
     }
 
     initMist() {
-      const palette = PALETTES[this.currentTheme];
+      const palette = THEMES[this.currentTheme];
       this.mistBands = palette.mist.map((conf) => ({
         x: Math.random() * this.width,
         y: this.height * conf.yRatio,
@@ -201,128 +171,68 @@
 
     initParticles() {
       const isMobile = this.width < CONFIG.mobileBreakpoint;
-      const petalCount = isMobile ? CONFIG.mobilePetals : CONFIG.desktopPetals;
-      const goldCount = isMobile ? CONFIG.mobileGold : CONFIG.desktopGold;
+      const count = isMobile ? CONFIG.mobileParticles : CONFIG.desktopParticles;
 
-      // Initialize Falling Plum Blossoms
-      this.petals = [];
-      for (let i = 0; i < petalCount; i++) {
-        this.petals.push(this.createPetal(true));
-      }
-
-      // Initialize Golden Floating Particles
-      this.goldParticles = [];
-      for (let i = 0; i < goldCount; i++) {
-        this.goldParticles.push(this.createGoldParticle(true));
+      this.particles = [];
+      for (let i = 0; i < count; i++) {
+        this.particles.push(this.createParticle(true));
       }
     }
 
-    createPetal(initial = false) {
-      const palette = PALETTES[this.currentTheme];
-      const colorScheme = palette.petals[Math.floor(Math.random() * palette.petals.length)];
-      
-      // 1 in 7 petals is a full 5-petal plum flower (五瓣梅花)
-      const isFullFlower = Math.random() < 0.14;
+    createParticle(initial = false) {
+      const palette = THEMES[this.currentTheme];
+      const colorConf = palette.particles[Math.floor(Math.random() * palette.particles.length)];
 
-      const size = isFullFlower ? (11 + Math.random() * 5) : (7 + Math.random() * 6);
-      const x = Math.random() * (this.width + 100) - 50;
-      const y = initial ? Math.random() * (this.height + 60) - 40 : -30 - Math.random() * 40;
-
-      return {
-        x,
-        y,
-        size,
-        isFullFlower,
-        colorScheme,
-        // Motion properties
-        vy: 24 + Math.random() * 26,             // Gentle fall: 24 - 50 px/s
-        vxWind: -8 - Math.random() * 12,          // Natural breeze drifting slightly right-to-left
-        swayAmp: 16 + Math.random() * 22,         // Sine sway amplitude
-        swayFreq: 0.8 + Math.random() * 1.0,      // Sine sway frequency
-        swayPhase: Math.random() * Math.PI * 2,
-        // 2D Rotation & 3D Tumbling
-        rotation: Math.random() * Math.PI * 2,
-        rotSpeed: (Math.random() - 0.5) * 1.2,
-        rollPhase: Math.random() * Math.PI * 2,
-        rollSpeed: 1.2 + Math.random() * 1.5,
-        opacity: 0.75 + Math.random() * 0.2,
-      };
-    }
-
-    createGoldParticle(initial = false) {
       return {
         x: Math.random() * this.width,
-        y: initial ? Math.random() * this.height : this.height + 10,
-        radius: 1.0 + Math.random() * 1.2,
-        vy: -8 - Math.random() * 12,              // Slow upward or hovering drift
-        vx: (Math.random() - 0.5) * 6,
+        y: initial ? Math.random() * this.height : this.height + 15,
+        radius: 1.1 + Math.random() * 1.3,
+        color: colorConf.fill,
+        glow: colorConf.glow,
+        vy: -7 - Math.random() * 10, // Gentle upward float (7-17 px/s)
+        vx: (Math.random() - 0.5) * 5,
         pulsePhase: Math.random() * Math.PI * 2,
-        pulseSpeed: 1.2 + Math.random() * 1.5,
-        baseOpacity: 0.18 + Math.random() * 0.22,
+        pulseSpeed: 0.9 + Math.random() * 1.2,
+        baseOpacity: 0.08 + Math.random() * 0.12, // Extremely low opacity (0.08 - 0.2)
       };
     }
 
     update(dt) {
-      const sec = Math.min(dt / 1000, 0.1); // Cap delta to avoid teleportation
+      const sec = Math.min(dt / 1000, 0.1);
 
-      // 1. Update Mist Bands
+      // Subtle horizontal mist drift
       this.mistBands.forEach((mist) => {
         mist.x += mist.speed * (sec * 60);
-        mist.wavePhase += 0.2 * sec;
+        mist.wavePhase += 0.15 * sec;
         if (mist.x > this.width) {
           mist.x = -this.width * 0.5;
         }
       });
 
-      // 2. Update Falling Plum Petals
-      this.petals.forEach((p, idx) => {
-        p.swayPhase += p.swayFreq * sec;
-        p.rollPhase += p.rollSpeed * sec;
-        p.rotation += p.rotSpeed * sec;
-
-        // Position changes
-        const swayX = Math.sin(p.swayPhase) * p.swayAmp;
-        p.x += (p.vxWind + swayX * 0.3) * sec;
+      // Subtle ink dust drift
+      this.particles.forEach((p, idx) => {
+        p.pulsePhase += p.pulseSpeed * sec;
         p.y += p.vy * sec;
+        p.x += (p.vx + Math.sin(p.pulsePhase) * 3) * sec;
 
-        // Reset when out of viewport
-        if (p.y > this.height + 40 || p.x < -120 || p.x > this.width + 120) {
-          this.petals[idx] = this.createPetal(false);
-        }
-      });
-
-      // 3. Update Golden Floating Particles
-      this.goldParticles.forEach((g, idx) => {
-        g.pulsePhase += g.pulseSpeed * sec;
-        g.y += g.vy * sec;
-        g.x += (g.vx + Math.sin(g.pulsePhase) * 4) * sec;
-
-        if (g.y < -20 || g.x < -20 || g.x > this.width + 20) {
-          this.goldParticles[idx] = this.createGoldParticle(false);
+        if (p.y < -20 || p.x < -30 || p.x > this.width + 30) {
+          this.particles[idx] = this.createParticle(false);
         }
       });
     }
 
     render() {
       this.ctx.clearRect(0, 0, this.width, this.height);
-
-      // Layer 3: Animated Chinese Ink-Wash Mist (水墨云雾)
       this.renderMist();
-
-      // Layer 4: Falling Plum Blossoms (红梅飘落)
-      this.renderPetals();
-
-      // Layer 5: Sparse Golden Floating Particles (金色微光)
-      this.renderGoldParticles();
+      this.renderParticles();
     }
 
     renderMist() {
       const ctx = this.ctx;
       this.mistBands.forEach((mist) => {
         ctx.save();
-        const mistY = mist.y + Math.sin(mist.wavePhase) * 12;
+        const mistY = mist.y + Math.sin(mist.wavePhase) * 8;
 
-        // Soft linear gradient feathering top & bottom of mist band
         const grad = ctx.createLinearGradient(0, mistY - mist.height * 0.5, 0, mistY + mist.height * 0.5);
         grad.addColorStop(0, 'rgba(0,0,0,0)');
         grad.addColorStop(0.5, mist.color);
@@ -330,151 +240,34 @@
 
         ctx.fillStyle = grad;
 
-        // Draw soft elongated mist cloud band stretching across view
         ctx.beginPath();
         const xOffset = mist.x;
-        ctx.ellipse(xOffset, mistY, this.width * 0.8, mist.height * 0.45, 0, 0, Math.PI * 2);
+        ctx.ellipse(xOffset, mistY, this.width * 0.85, mist.height * 0.45, 0, 0, Math.PI * 2);
         ctx.fill();
 
-        // Wrap around seamlessly
         ctx.beginPath();
-        ctx.ellipse(xOffset - this.width * 1.2, mistY, this.width * 0.8, mist.height * 0.45, 0, 0, Math.PI * 2);
+        ctx.ellipse(xOffset - this.width * 1.2, mistY, this.width * 0.85, mist.height * 0.45, 0, 0, Math.PI * 2);
         ctx.fill();
 
         ctx.restore();
       });
     }
 
-    renderPetals() {
+    renderParticles() {
       const ctx = this.ctx;
 
-      this.petals.forEach((p) => {
-        ctx.save();
-        ctx.translate(p.x, p.y);
-        ctx.rotate(p.rotation);
-
-        // 3D Tumbling simulation (rolling scale)
-        const rollScale = Math.cos(p.rollPhase);
-        ctx.scale(1, Math.max(Math.abs(rollScale), 0.25));
-
-        // Fade in near top, fade out near bottom
-        let alpha = p.opacity;
-        if (p.y < 80) {
-          alpha *= Math.max(0, p.y / 80);
-        } else if (p.y > this.height - 120) {
-          alpha *= Math.max(0, (this.height - p.y) / 120);
-        }
-        ctx.globalAlpha = Math.max(0, Math.min(1, alpha));
-
-        if (p.isFullFlower) {
-          this.drawFullPlumBlossom(ctx, p.size, p.colorScheme);
-        } else {
-          this.drawPlumPetal(ctx, p.size, p.colorScheme);
-        }
-
-        ctx.restore();
-      });
-    }
-
-    /**
-     * Draw authentic Chinese Plum Blossom Petal (梅花瓣)
-     * Distinct from Japanese Sakura: smooth rounded ovate contour without notched tip
-     */
-    drawPlumPetal(ctx, size, color) {
-      const w = size * 0.72;
-      const h = size * 1.15;
-
-      ctx.beginPath();
-      // Organic cup-shaped / obovate rounded petal
-      ctx.moveTo(0, h * 0.45);
-      // Left curve
-      ctx.bezierCurveTo(-w * 1.05, h * 0.15, -w * 0.95, -h * 0.4, 0, -h * 0.55);
-      // Right curve
-      ctx.bezierCurveTo(w * 0.95, -h * 0.4, w * 1.05, h * 0.15, 0, h * 0.45);
-      ctx.closePath();
-
-      // Shaded petal gradient
-      const grad = ctx.createRadialGradient(0, -h * 0.1, 0, 0, 0, h * 0.65);
-      grad.addColorStop(0, color.highlight);
-      grad.addColorStop(0.55, color.main);
-      grad.addColorStop(1, color.shadow);
-
-      ctx.fillStyle = grad;
-      ctx.fill();
-
-      // Delicate subtle central petal rib
-      ctx.beginPath();
-      ctx.moveTo(0, h * 0.4);
-      ctx.quadraticCurveTo(0, 0, 0, -h * 0.35);
-      ctx.strokeStyle = color.shadow;
-      ctx.lineWidth = 0.6;
-      ctx.stroke();
-    }
-
-    /**
-     * Draw Miniature 5-Petal Chinese Plum Blossom (五瓣红梅)
-     */
-    drawFullPlumBlossom(ctx, size, color) {
-      const petalRadius = size * 0.48;
-
-      for (let i = 0; i < 5; i++) {
-        const angle = (i * Math.PI * 2) / 5;
-        ctx.save();
-        ctx.rotate(angle);
-        ctx.translate(0, -size * 0.42);
-
-        ctx.beginPath();
-        ctx.moveTo(0, petalRadius * 0.85);
-        ctx.bezierCurveTo(-petalRadius * 0.9, petalRadius * 0.4, -petalRadius * 0.8, -petalRadius * 0.7, 0, -petalRadius);
-        ctx.bezierCurveTo(petalRadius * 0.8, -petalRadius * 0.7, petalRadius * 0.9, petalRadius * 0.4, 0, petalRadius * 0.85);
-        ctx.closePath();
-
-        const grad = ctx.createRadialGradient(0, 0, 0, 0, 0, petalRadius);
-        grad.addColorStop(0, color.highlight);
-        grad.addColorStop(0.6, color.main);
-        grad.addColorStop(1, color.shadow);
-
-        ctx.fillStyle = grad;
-        ctx.fill();
-        ctx.restore();
-      }
-
-      // Antique Gold Stamen Center
-      const goldColor = PALETTES[this.currentTheme].gold.fill;
-      ctx.beginPath();
-      ctx.arc(0, 0, size * 0.22, 0, Math.PI * 2);
-      ctx.fillStyle = goldColor;
-      ctx.fill();
-
-      // Stamen dots (花蕊)
-      ctx.fillStyle = color.shadow;
-      const dotCount = 5;
-      for (let j = 0; j < dotCount; j++) {
-        const a = (j * Math.PI * 2) / dotCount;
-        const dx = Math.cos(a) * (size * 0.12);
-        const dy = Math.sin(a) * (size * 0.12);
-        ctx.beginPath();
-        ctx.arc(dx, dy, 0.7, 0, Math.PI * 2);
-        ctx.fill();
-      }
-    }
-
-    renderGoldParticles() {
-      const ctx = this.ctx;
-      const gold = PALETTES[this.currentTheme].gold;
-
-      this.goldParticles.forEach((g) => {
-        const pulse = 0.5 + 0.5 * Math.sin(g.pulsePhase);
-        const alpha = g.baseOpacity * (0.6 + 0.4 * pulse);
+      this.particles.forEach((p) => {
+        const pulse = 0.5 + 0.5 * Math.sin(p.pulsePhase);
+        const alpha = p.baseOpacity * (0.65 + 0.35 * pulse);
 
         ctx.save();
         ctx.globalAlpha = Math.max(0, Math.min(1, alpha));
-        ctx.fillStyle = gold.fill;
-        ctx.shadowColor = gold.glow;
-        ctx.shadowBlur = 4;
+        ctx.fillStyle = p.color;
+        ctx.shadowColor = p.glow;
+        ctx.shadowBlur = 3;
 
         ctx.beginPath();
-        ctx.arc(g.x, g.y, g.radius, 0, Math.PI * 2);
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
         ctx.fill();
 
         ctx.restore();
@@ -484,9 +277,7 @@
     renderStaticFrame() {
       this.ctx.clearRect(0, 0, this.width, this.height);
       this.renderMist();
-      // Draw a few resting / poised petals for peaceful static composition
-      this.renderPetals();
-      this.renderGoldParticles();
+      this.renderParticles();
     }
 
     start() {
@@ -517,8 +308,7 @@
     }
   }
 
-  // Initialize once DOM is ready
-  function initPlumBlossomBackground() {
+  function initChineseAmbientBackground() {
     let canvas = document.getElementById('plumBlossomCanvas');
     if (!canvas) {
       const bgContainer = document.querySelector('.chinese-aesthetic-bg');
@@ -532,13 +322,13 @@
     }
 
     if (canvas) {
-      window.__plumBlossomEngine = new PlumBlossomEngine(canvas);
+      window.__chineseAmbientEngine = new ChineseInkAmbientEngine(canvas);
     }
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initPlumBlossomBackground);
+    document.addEventListener('DOMContentLoaded', initChineseAmbientBackground);
   } else {
-    initPlumBlossomBackground();
+    initChineseAmbientBackground();
   }
 })();

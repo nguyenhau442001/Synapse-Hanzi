@@ -20,13 +20,13 @@
   --font-classical: "Songti SC", "Noto Serif SC", "STSong", "SimSun", serif;
 
   /* Theme semantic mappings - Light Mode */
-  --bg-canvas: #F5F0E6;
+  --bg-canvas: #F7F3EA;
   --bg-surface: #FFFFFF;
-  --bg-elevated: #EFE7D8;
+  --bg-elevated: #F1EBDD;
 
-  --text-primary: #292B30;
+  --text-primary: #1F2228;
   --text-secondary: #5A564F;
-  --text-tertiary: #A6A096;
+  --text-tertiary: #8C857B;
   --text-muted: #8E877C;
   --text-progress-detail: #5A564F;
 
@@ -40,14 +40,14 @@
   --status-warning: #A88B62;
 
   /* Aliases & unified token architecture */
-  --bg: #F5F0E6;
+  --bg: #F7F3EA;
   --card-bg: #FFFFFF;
   --bg-card: #FFFFFF;
   --border: #DDD4C4;
   --card-shadow: 0 2px 10px -2px rgba(41, 43, 48, 0.05), 0 1px 3px 0 rgba(41, 43, 48, 0.03);
   --card-shadow-hover: 0 8px 24px -4px rgba(41, 43, 48, 0.08), 0 0 0 1px rgba(197, 164, 109, 0.35);
-  --surface-subtle: #F6F1E8;
-  --surface-chip: #EBE2D2;
+  --surface-subtle: #FAF6EE;
+  --surface-chip: #F1EBDD;
   --progress-track: #E4DACE;
   --heatmap-empty: #E4DACE;
 
@@ -211,13 +211,13 @@
 }
 
 :root[data-theme="light"] {
-  --bg-canvas: #F5F0E6;
+  --bg-canvas: #F7F3EA;
   --bg-surface: #FFFFFF;
-  --bg-elevated: #EFE7D8;
+  --bg-elevated: #F1EBDD;
 
-  --text-primary: #292B30;
+  --text-primary: #1F2228;
   --text-secondary: #5A564F;
-  --text-tertiary: #A6A096;
+  --text-tertiary: #8C857B;
   --text-muted: #8E877C;
   --text-progress-detail: #5A564F;
 
@@ -230,14 +230,14 @@
   --status-success: #527D70;
   --status-warning: #A88B62;
 
-  --bg: #F5F0E6;
+  --bg: #F7F3EA;
   --card-bg: #FFFFFF;
   --bg-card: #FFFFFF;
   --border: #DDD4C4;
   --card-shadow: 0 2px 10px -2px rgba(41, 43, 48, 0.05), 0 1px 3px 0 rgba(41, 43, 48, 0.03);
   --card-shadow-hover: 0 8px 24px -4px rgba(41, 43, 48, 0.08), 0 0 0 1px rgba(197, 164, 109, 0.35);
-  --surface-subtle: #F6F1E8;
-  --surface-chip: #EBE2D2;
+  --surface-subtle: #FAF6EE;
+  --surface-chip: #F1EBDD;
   --progress-track: #E4DACE;
   --heatmap-empty: #E4DACE;
 

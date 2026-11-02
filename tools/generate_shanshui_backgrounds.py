@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Generate Authentic Chinese Classical Background SVGs – 梅花与水墨意境
-(Chinese Classical Plum Blossom & Ink Wash Aesthetics)
+Generate Clean Chinese Rice Paper Background SVGs (宣纸温润底色 · 无杂饰东方美学)
 for 汉字思维 (Hànzì Sīwéi) Light & Dark themes.
+Eliminates all oversized branches, flowers, and landscape waves.
 """
 
 from pathlib import Path
@@ -12,300 +12,85 @@ LIGHT_SVG_PATH = ROOT / "assets/images/chinese_landscape_light.svg"
 DARK_SVG_PATH = ROOT / "assets/images/chinese_landscape_dark.svg"
 
 
-def build_light_plum_background_svg() -> str:
+def build_light_xuan_paper_svg() -> str:
     return """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%" preserveAspectRatio="xMidYMax slice">
   <defs>
-    <!-- Base Xuan Paper Canvas Wash (Light: Warm Ivory #F5F0E6 to Xuan Paper #EFE7D8) -->
-    <linearGradient id="ls_paper_bg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#F5F0E6"/>
-      <stop offset="50%" stop-color="#F2EBE0"/>
-      <stop offset="100%" stop-color="#EFE7D8"/>
+    <!-- Authentic Xuan Paper Canvas Gradient (Warm Ivory #F7F3EA to #F1EBDD) -->
+    <linearGradient id="xuan_paper_light" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F7F3EA"/>
+      <stop offset="50%" stop-color="#F4EFE5"/>
+      <stop offset="100%" stop-color="#F1EBDD"/>
     </linearGradient>
 
-    <!-- Farthest Ink Mountain Silhouette Wash (Soft Ink Gray #A6A096) -->
-    <linearGradient id="ls_far_mountain" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#A6A096" stop-opacity="0.18"/>
-      <stop offset="55%" stop-color="#B8B2A6" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#EFE7D8" stop-opacity="0"/>
-    </linearGradient>
-
-    <!-- Mid-distance Ink Hill Wash -->
-    <linearGradient id="ls_mid_mountain" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#7A756D" stop-opacity="0.14"/>
-      <stop offset="50%" stop-color="#9C968D" stop-opacity="0.06"/>
-      <stop offset="100%" stop-color="#EFE7D8" stop-opacity="0"/>
-    </linearGradient>
-
-    <!-- Subtle Xuan Paper Fiber Grain Texture -->
-    <filter id="ls_paper_grain" x="0%" y="0%" width="100%" height="100%">
+    <!-- Microscopic Xuan Paper Fiber Texture Filter -->
+    <filter id="xuan_fiber_grain" x="0%" y="0%" width="100%" height="100%">
       <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/>
-      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.022 0" in="noise" result="coloredNoise"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.02 0" in="noise" result="coloredNoise"/>
       <feBlend mode="multiply" in="SourceGraphic" in2="coloredNoise"/>
     </filter>
 
-    <!-- Plum Blossom Petal Gradients (Deep Vermilion #A8322A & Crimson #8F2525) -->
-    <radialGradient id="ls_petal_grad" cx="40%" cy="35%" r="65%">
-      <stop offset="0%" stop-color="#C23B32"/>
-      <stop offset="55%" stop-color="#A8322A"/>
-      <stop offset="100%" stop-color="#8F2525"/>
-    </radialGradient>
-
-    <radialGradient id="ls_petal_light" cx="35%" cy="30%" r="70%">
-      <stop offset="0%" stop-color="#D9534F"/>
-      <stop offset="60%" stop-color="#B83A31"/>
-      <stop offset="100%" stop-color="#8F2525"/>
-    </radialGradient>
+    <!-- Faint, Ethereal Atmospheric Ink Mist Wash at Horizon (Very Subtle) -->
+    <linearGradient id="ethereal_mist_wash" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F7F3EA" stop-opacity="0"/>
+      <stop offset="70%" stop-color="#EBE3D3" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#E2D8C5" stop-opacity="0.14"/>
+    </linearGradient>
   </defs>
 
-  <!-- Layer 1: Warm Xuan Paper Base Canvas with Subtle Grain -->
-  <rect width="100%" height="100%" fill="url(#ls_paper_bg)"/>
-  <rect width="100%" height="100%" fill="#EFE7D8" opacity="0.35" filter="url(#ls_paper_grain)"/>
+  <!-- Layer 1: Pristine Warm Xuan Paper Base -->
+  <rect width="100%" height="100%" fill="url(#xuan_paper_light)"/>
+  <rect width="100%" height="100%" fill="#F1EBDD" opacity="0.4" filter="url(#xuan_fiber_grain)"/>
 
-  <!-- Layer 2: Distant Chinese Ink-Wash Mountain Scenery (Song Dynasty Shanshui Spirit) -->
-  <g class="distant-ink-mountains" opacity="0.95">
-    <!-- Farthest Serene Mountain Peaks Across the Lower Horizon -->
-    <path d="M-60,780 
-             C120,730 260,755 420,705 
-             C560,660 700,725 860,685 
-             C1020,645 1160,710 1320,665 
-             C1480,620 1620,690 1780,650 
-             C1880,625 1960,660 2040,670 
-             L2040,980 L-60,980 Z" 
-          fill="url(#ls_far_mountain)"/>
-
-    <!-- Gentle Rolling Foothills (Mid-distance) -->
-    <path d="M-40,840 
-             C180,810 320,850 480,800 
-             C640,755 780,820 960,775 
-             C1120,735 1280,805 1440,760 
-             C1600,720 1760,780 1960,740 
-             L2020,1040 L-40,1040 Z" 
-          fill="url(#ls_mid_mountain)"/>
-  </g>
-
-  <!-- Corner Calligraphic Plum Branch (折枝红梅 - 东方画意) -->
-  <g class="corner-plum-branch" opacity="0.88">
-    <!-- Main Calligraphic Ink Branch Sweeping from Top-Right Margin -->
-    <path d="M1940,-20 
-             C1860,35 1780,75 1710,135 
-             C1650,185 1600,240 1520,285 
-             C1460,320 1390,345 1320,360 
-             C1355,348 1425,325 1475,295 
-             C1550,250 1605,190 1665,140 
-             C1740,78 1830,30 1940,-10 Z" 
-          fill="#4A453E" opacity="0.55"/>
-
-    <!-- Upper Secondary Twig -->
-    <path d="M1720,128 
-             C1680,105 1620,80 1560,75 
-             C1510,70 1460,85 1410,105 
-             C1445,95 1495,85 1545,88 
-             C1600,92 1655,115 1695,135 Z" 
-          fill="#4A453E" opacity="0.5"/>
-
-    <!-- Descending Delicate Twig -->
-    <path d="M1535,275 
-             C1510,310 1480,345 1435,370 
-             C1400,390 1360,405 1315,415 
-             C1350,405 1385,392 1415,375 
-             C1455,350 1485,320 1515,285 Z" 
-          fill="#4A453E" opacity="0.45"/>
-
-    <!-- Plum Blossom 1 (Recognizable 5-Petal Form at x: 1515, y: 275) -->
-    <g transform="translate(1515, 275) scale(0.95)">
-      <!-- Petal 1 (Top) -->
-      <path d="M0,0 C-10,-15 -6,-28 0,-34 C6,-28 10,-15 0,0 Z" fill="url(#ls_petal_grad)"/>
-      <!-- Petal 2 (Top Right) -->
-      <path d="M0,0 C8,-16 22,-20 28,-14 C28,-6 18,4 0,0 Z" fill="url(#ls_petal_grad)"/>
-      <!-- Petal 3 (Bottom Right) -->
-      <path d="M0,0 C16,4 26,16 22,24 C14,26 4,16 0,0 Z" fill="url(#ls_petal_light)"/>
-      <!-- Petal 4 (Bottom Left) -->
-      <path d="M0,0 C2,16 -8,26 -16,24 C-22,18 -14,6 0,0 Z" fill="url(#ls_petal_grad)"/>
-      <!-- Petal 5 (Top Left) -->
-      <path d="M0,0 C-16,4 -26,-6 -24,-14 C-18,-20 -6,-12 0,0 Z" fill="url(#ls_petal_light)"/>
-      <!-- Antique Gold Stamen Center -->
-      <circle cx="0" cy="0" r="3.2" fill="#C5A46D"/>
-      <circle cx="-2" cy="-2" r="1" fill="#8F2525"/>
-      <circle cx="2" cy="-1.5" r="1" fill="#8F2525"/>
-      <circle cx="1" cy="2" r="1" fill="#8F2525"/>
-    </g>
-
-    <!-- Plum Blossom 2 (Full Flower at x: 1675, y: 140) -->
-    <g transform="translate(1675, 140) rotate(24) scale(0.85)">
-      <path d="M0,0 C-9,-14 -5,-26 0,-31 C5,-26 9,-14 0,0 Z" fill="url(#ls_petal_grad)"/>
-      <path d="M0,0 C7,-15 20,-18 25,-13 C25,-5 16,4 0,0 Z" fill="url(#ls_petal_light)"/>
-      <path d="M0,0 C15,4 24,15 20,22 C13,24 4,15 0,0 Z" fill="url(#ls_petal_grad)"/>
-      <path d="M0,0 C2,15 -7,24 -15,22 C-20,16 -13,6 0,0 Z" fill="url(#ls_petal_grad)"/>
-      <path d="M0,0 C-15,4 -24,-6 -22,-13 C-16,-18 -6,-11 0,0 Z" fill="url(#ls_petal_light)"/>
-      <circle cx="0" cy="0" r="2.8" fill="#C5A46D"/>
-    </g>
-
-    <!-- Plum Blossom 3 (Profile / Side View at x: 1410, y: 105) -->
-    <g transform="translate(1410, 105) rotate(-35) scale(0.75)">
-      <path d="M0,0 C-12,-8 -18,-20 -12,-26 C-4,-24 4,-12 0,0 Z" fill="url(#ls_petal_grad)"/>
-      <path d="M0,0 C-6,-14 4,-24 12,-22 C16,-14 8,-4 0,0 Z" fill="url(#ls_petal_light)"/>
-      <path d="M0,0 C8,-8 18,-14 22,-8 C18,-2 10,2 0,0 Z" fill="url(#ls_petal_grad)"/>
-      <circle cx="0" cy="-2" r="2" fill="#C5A46D"/>
-    </g>
-
-    <!-- Delicate Crimson Buds (含苞红梅) along twigs -->
-    <ellipse cx="1320" cy="360" rx="4.5" ry="3.5" fill="#A8322A" transform="rotate(-15, 1320, 360)"/>
-    <ellipse cx="1435" cy="370" rx="5" ry="4" fill="#C23B32" transform="rotate(20, 1435, 370)"/>
-    <ellipse cx="1560" cy="75" rx="5.5" ry="4" fill="#A8322A" transform="rotate(-25, 1560, 75)"/>
-    <ellipse cx="1780" cy="75" rx="4.5" ry="3.5" fill="#8F2525" transform="rotate(15, 1780, 75)"/>
-  </g>
+  <!-- Layer 2: Ultra-subtle Lower Mist Diffusion (Distraction-Free) -->
+  <rect y="720" width="100%" height="360" fill="url(#ethereal_mist_wash)"/>
 </svg>
 """
 
 
-def build_dark_plum_background_svg() -> str:
+def build_dark_xuan_paper_svg() -> str:
     return """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%" preserveAspectRatio="xMidYMax slice">
   <defs>
-    <!-- Base Nocturnal Canvas Wash (Dark: Deep Ink Black #17191D to Dark Charcoal #22252B) -->
-    <linearGradient id="ds_paper_bg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#17191D"/>
-      <stop offset="50%" stop-color="#1C2026"/>
-      <stop offset="100%" stop-color="#22252B"/>
+    <!-- Deep Pine-Soot Ink Canvas Gradient (#16181C to #1F2329) -->
+    <linearGradient id="xuan_paper_dark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#16181C"/>
+      <stop offset="55%" stop-color="#1A1D23"/>
+      <stop offset="100%" stop-color="#1F2329"/>
     </linearGradient>
 
-    <!-- Farthest Nocturnal Ink Mountain Wash -->
-    <linearGradient id="ds_far_mountain" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#313742" stop-opacity="0.32"/>
-      <stop offset="60%" stop-color="#222730" stop-opacity="0.14"/>
-      <stop offset="100%" stop-color="#17191D" stop-opacity="0"/>
-    </linearGradient>
-
-    <!-- Mid-distance Nocturnal Ink Hill Wash -->
-    <linearGradient id="ds_mid_mountain" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#29303B" stop-opacity="0.25"/>
-      <stop offset="55%" stop-color="#1C2129" stop-opacity="0.10"/>
-      <stop offset="100%" stop-color="#17191D" stop-opacity="0"/>
-    </linearGradient>
-
-    <!-- Subtle Grain Texture -->
-    <filter id="ds_paper_grain" x="0%" y="0%" width="100%" height="100%">
+    <!-- Microscopic Grain Filter for Dark Canvas -->
+    <filter id="dark_fiber_grain" x="0%" y="0%" width="100%" height="100%">
       <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/>
-      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.025 0" in="noise" result="coloredNoise"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.02 0" in="noise" result="coloredNoise"/>
       <feBlend mode="screen" in="SourceGraphic" in2="coloredNoise"/>
     </filter>
 
-    <!-- Nocturnal Plum Blossom Gradients -->
-    <radialGradient id="ds_petal_grad" cx="40%" cy="35%" r="65%">
-      <stop offset="0%" stop-color="#BA3930"/>
-      <stop offset="60%" stop-color="#A8322A"/>
-      <stop offset="100%" stop-color="#781D1A"/>
-    </radialGradient>
-
-    <radialGradient id="ds_petal_light" cx="35%" cy="30%" r="70%">
-      <stop offset="0%" stop-color="#CF4A40"/>
-      <stop offset="60%" stop-color="#A8322A"/>
-      <stop offset="100%" stop-color="#781D1A"/>
-    </radialGradient>
+    <!-- Faint Lower Nocturnal Ink Mist -->
+    <linearGradient id="dark_mist_wash" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#16181C" stop-opacity="0"/>
+      <stop offset="70%" stop-color="#242A33" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#282F3A" stop-opacity="0.2"/>
+    </linearGradient>
   </defs>
 
-  <!-- Layer 1: Comfortable Deep Nocturnal Ink Canvas (No harsh black, visually comfortable) -->
-  <rect width="100%" height="100%" fill="url(#ds_paper_bg)"/>
-  <rect width="100%" height="100%" fill="#22252B" opacity="0.3" filter="url(#ds_paper_grain)"/>
+  <!-- Layer 1: Comfortable Deep Nocturnal Paper Base -->
+  <rect width="100%" height="100%" fill="url(#xuan_paper_dark)"/>
+  <rect width="100%" height="100%" fill="#1F2329" opacity="0.3" filter="url(#dark_fiber_grain)"/>
 
-  <!-- Layer 2: Distant Nocturnal Ink-Wash Mountain Scenery -->
-  <g class="distant-ink-mountains" opacity="0.85">
-    <path d="M-60,780 
-             C120,730 260,755 420,705 
-             C560,660 700,725 860,685 
-             C1020,645 1160,710 1320,665 
-             C1480,620 1620,690 1780,650 
-             C1880,625 1960,660 2040,670 
-             L2040,980 L-60,980 Z" 
-          fill="url(#ds_far_mountain)"/>
-
-    <path d="M-40,840 
-             C180,810 320,850 480,800 
-             C640,755 780,820 960,775 
-             C1120,735 1280,805 1440,760 
-             C1600,720 1760,780 1960,740 
-             L2020,1040 L-40,1040 Z" 
-          fill="url(#ds_mid_mountain)"/>
-  </g>
-
-  <!-- Corner Calligraphic Plum Branch in Moonlight (月下墨梅) -->
-  <g class="corner-plum-branch" opacity="0.82">
-    <!-- Main Nocturnal Ink Branch -->
-    <path d="M1940,-20 
-             C1860,35 1780,75 1710,135 
-             C1650,185 1600,240 1520,285 
-             C1460,320 1390,345 1320,360 
-             C1355,348 1425,325 1475,295 
-             C1550,250 1605,190 1665,140 
-             C1740,78 1830,30 1940,-10 Z" 
-          fill="#353B47" opacity="0.6"/>
-
-    <!-- Upper Secondary Twig -->
-    <path d="M1720,128 
-             C1680,105 1620,80 1560,75 
-             C1510,70 1460,85 1410,105 
-             C1445,95 1495,85 1545,88 
-             C1600,92 1655,115 1695,135 Z" 
-          fill="#353B47" opacity="0.55"/>
-
-    <!-- Descending Delicate Twig -->
-    <path d="M1535,275 
-             C1510,310 1480,345 1435,370 
-             C1400,390 1360,405 1315,415 
-             C1350,405 1385,392 1415,375 
-             C1455,350 1485,320 1515,285 Z" 
-          fill="#353B47" opacity="0.5"/>
-
-    <!-- Plum Blossom 1 (5-Petal Form at x: 1515, y: 275) -->
-    <g transform="translate(1515, 275) scale(0.95)">
-      <path d="M0,0 C-10,-15 -6,-28 0,-34 C6,-28 10,-15 0,0 Z" fill="url(#ds_petal_grad)"/>
-      <path d="M0,0 C8,-16 22,-20 28,-14 C28,-6 18,4 0,0 Z" fill="url(#ds_petal_grad)"/>
-      <path d="M0,0 C16,4 26,16 22,24 C14,26 4,16 0,0 Z" fill="url(#ds_petal_light)"/>
-      <path d="M0,0 C2,16 -8,26 -16,24 C-22,18 -14,6 0,0 Z" fill="url(#ds_petal_grad)"/>
-      <path d="M0,0 C-16,4 -26,-6 -24,-14 C-18,-20 -6,-12 0,0 Z" fill="url(#ds_petal_light)"/>
-      <!-- Antique Gold Stamen Center #B89B68 -->
-      <circle cx="0" cy="0" r="3.2" fill="#B89B68"/>
-      <circle cx="-2" cy="-2" r="1" fill="#781D1A"/>
-      <circle cx="2" cy="-1.5" r="1" fill="#781D1A"/>
-      <circle cx="1" cy="2" r="1" fill="#781D1A"/>
-    </g>
-
-    <!-- Plum Blossom 2 at x: 1675, y: 140 -->
-    <g transform="translate(1675, 140) rotate(24) scale(0.85)">
-      <path d="M0,0 C-9,-14 -5,-26 0,-31 C5,-26 9,-14 0,0 Z" fill="url(#ds_petal_grad)"/>
-      <path d="M0,0 C7,-15 20,-18 25,-13 C25,-5 16,4 0,0 Z" fill="url(#ds_petal_light)"/>
-      <path d="M0,0 C15,4 24,15 20,22 C13,24 4,15 0,0 Z" fill="url(#ds_petal_grad)"/>
-      <path d="M0,0 C2,15 -7,24 -15,22 C-20,16 -13,6 0,0 Z" fill="url(#ds_petal_grad)"/>
-      <path d="M0,0 C-15,4 -24,-6 -22,-13 C-16,-18 -6,-11 0,0 Z" fill="url(#ds_petal_light)"/>
-      <circle cx="0" cy="0" r="2.8" fill="#B89B68"/>
-    </g>
-
-    <!-- Plum Blossom 3 at x: 1410, y: 105 -->
-    <g transform="translate(1410, 105) rotate(-35) scale(0.75)">
-      <path d="M0,0 C-12,-8 -18,-20 -12,-26 C-4,-24 4,-12 0,0 Z" fill="url(#ds_petal_grad)"/>
-      <path d="M0,0 C-6,-14 4,-24 12,-22 C16,-14 8,-4 0,0 Z" fill="url(#ds_petal_light)"/>
-      <path d="M0,0 C8,-8 18,-14 22,-8 C18,-2 10,2 0,0 Z" fill="url(#ds_petal_grad)"/>
-      <circle cx="0" cy="-2" r="2" fill="#B89B68"/>
-    </g>
-
-    <!-- Moonlit Red Plum Buds -->
-    <ellipse cx="1320" cy="360" rx="4.5" ry="3.5" fill="#A8322A" transform="rotate(-15, 1320, 360)"/>
-    <ellipse cx="1435" cy="370" rx="5" ry="4" fill="#CF4A40" transform="rotate(20, 1435, 370)"/>
-    <ellipse cx="1560" cy="75" rx="5.5" ry="4" fill="#A8322A" transform="rotate(-25, 1560, 75)"/>
-    <ellipse cx="1780" cy="75" rx="4.5" ry="3.5" fill="#781D1A" transform="rotate(15, 1780, 75)"/>
-  </g>
+  <!-- Layer 2: Ultra-subtle Lower Nocturnal Mist Diffusion -->
+  <rect y="720" width="100%" height="360" fill="url(#dark_mist_wash)"/>
 </svg>
 """
 
 
 def main():
-    light_content = build_light_plum_background_svg().strip()
-    dark_content = build_dark_plum_background_svg().strip()
+    light_content = build_light_xuan_paper_svg().strip()
+    dark_content = build_dark_xuan_paper_svg().strip()
 
     LIGHT_SVG_PATH.write_text(light_content, encoding="utf-8")
     DARK_SVG_PATH.write_text(dark_content, encoding="utf-8")
 
-    print(f"Generated light plum SVG: {LIGHT_SVG_PATH} ({len(light_content)} bytes)")
-    print(f"Generated dark plum SVG: {DARK_SVG_PATH} ({len(dark_content)} bytes)")
+    print(f"Generated clean light Xuan paper SVG: {LIGHT_SVG_PATH} ({len(light_content)} bytes)")
+    print(f"Generated clean dark Xuan paper SVG: {DARK_SVG_PATH} ({len(dark_content)} bytes)")
 
 
 if __name__ == "__main__":

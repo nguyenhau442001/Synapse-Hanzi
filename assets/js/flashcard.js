@@ -75,14 +75,6 @@ function buildCardArea() {
             <div class="hanzi" id="hanzi"></div>
           </div>
 
-          <!-- Mỏ neo gợi hình: Hiển thị sau khi lật thẻ để hỗ trợ liên tưởng hình ảnh (Ẩn mặc định ở mặt trước) -->
-          <div class="card-visual-col" id="cardVisualCol" style="display: none;">
-            <div class="card-illustration-frame" id="cardIllustrationFrame" title="Minh họa gợi hình">
-              <img class="card-illustration-img" id="cardIllustrationImg" alt="Minh họa gợi hình" style="display: none;">
-              <div class="card-illustration-svg" id="cardIllustrationSvg"></div>
-            </div>
-          </div>
-
           <!-- Pinyin + Loa phát âm (Chỉ hiển thị sau khi lật đáp án) -->
           <div class="pinyin-row" id="pinyinRow">
             <span class="pinyin" id="pinyin"></span>
@@ -98,6 +90,14 @@ function buildCardArea() {
           <div class="meta-badges-row" id="metaBadgesRow">
             <span class="pos-badge" id="posBadge" title="Từ loại"></span>
             <span class="hanviet-badge" id="hanvietBadge" title="Âm Hán - Việt"></span>
+          </div>
+
+          <!-- Minh họa bổ trợ tinh gọn (Chỉ hiển thị khi có ảnh minh họa thực sự ý nghĩa) -->
+          <div class="card-visual-col" id="cardVisualCol" style="display: none;">
+            <div class="card-illustration-frame" id="cardIllustrationFrame" title="Minh họa gợi hình">
+              <img class="card-illustration-img" id="cardIllustrationImg" alt="Minh họa gợi hình" style="display: none;">
+              <div class="card-illustration-svg" id="cardIllustrationSvg"></div>
+            </div>
           </div>
 
           <!-- Vùng chứa ẩn tương thích ngược -->
