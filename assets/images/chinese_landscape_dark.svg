@@ -1,275 +1,148 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%" preserveAspectRatio="xMidYMax slice">
   <defs>
-    <!-- Background Wash -->
-    <linearGradient id="skyGrad_dark" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#101215" stop-opacity="1"/>
-      <stop offset="65%" stop-color="#16191D" stop-opacity="0.95"/>
-      <stop offset="100%" stop-color="#16191D" stop-opacity="1"/>
+    <!-- Paper Canvas Wash -->
+    <linearGradient id="canvasGrad_dark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#131518" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#1B1F25" stop-opacity="0.96"/>
+      <stop offset="100%" stop-color="#1B1F25" stop-opacity="1"/>
     </linearGradient>
 
-    <!-- Faint Mountain Gradient -->
-    <linearGradient id="faintMtnGrad_dark" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#2A303A" stop-opacity="0.144"/>
-      <stop offset="70%" stop-color="#2A303A" stop-opacity="0.036"/>
-      <stop offset="100%" stop-color="#16191D" stop-opacity="0"/>
+    <!-- Faint Atmospheric Wash -->
+    <linearGradient id="faintInk_dark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3A424E" stop-opacity="0.22"/>
+      <stop offset="65%" stop-color="#3A424E" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#131518" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Mid Mountain Gradient -->
-    <linearGradient id="midMtnGrad_dark" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#323946" stop-opacity="0.216"/>
-      <stop offset="75%" stop-color="#323946" stop-opacity="0.048"/>
-      <stop offset="100%" stop-color="#16191D" stop-opacity="0"/>
+    <!-- Mid Mountain Wash -->
+    <linearGradient id="midInk_dark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#282F3A" stop-opacity="0.35"/>
+      <stop offset="70%" stop-color="#282F3A" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#131518" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Near Cliff Gradient -->
-    <linearGradient id="nearCliffGrad_dark" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#1D2128" stop-opacity="0.288"/>
-      <stop offset="80%" stop-color="#1D2128" stop-opacity="0.072"/>
-      <stop offset="100%" stop-color="#16191D" stop-opacity="0"/>
+    <!-- Flank Ridge Ink Wash (Framing left & right, leaving center 留白) -->
+    <linearGradient id="flankInkLeft_dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#151920" stop-opacity="0.45"/>
+      <stop offset="50%" stop-color="#282F3A" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#131518" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Mist Flow -->
+    <linearGradient id="flankInkRight_dark" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#151920" stop-opacity="0.42"/>
+      <stop offset="50%" stop-color="#282F3A" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#131518" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Atmospheric Horizontal Mist Streams -->
     <linearGradient id="mistFlow_dark" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#16191D" stop-opacity="0"/>
-      <stop offset="35%" stop-color="#16191D" stop-opacity="0.5"/>
-      <stop offset="65%" stop-color="#16191D" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#16191D" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#131518" stop-opacity="0.8"/>
+      <stop offset="20%" stop-color="#131518" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#131518" stop-opacity="0.95"/>
+      <stop offset="80%" stop-color="#131518" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#131518" stop-opacity="0.8"/>
     </linearGradient>
 
-    <!-- Gold Accent Mist -->
-    <linearGradient id="goldMist_dark" x1="0%" y1="100%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#D4B37F" stop-opacity="0.144"/>
-      <stop offset="100%" stop-color="#D4B37F" stop-opacity="0"/>
+    <!-- Water Surface Sheen (Bottom) -->
+    <linearGradient id="waterSheen_dark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#131518" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#282F3A" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#282F3A" stop-opacity="0.18"/>
     </linearGradient>
 
-    <!-- Water Reflection -->
-    <linearGradient id="waterGrad_dark" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#16191D" stop-opacity="0"/>
-      <stop offset="30%" stop-color="#2A303A" stop-opacity="0.06"/>
-      <stop offset="70%" stop-color="#323946" stop-opacity="0.096"/>
-      <stop offset="100%" stop-color="#1D2128" stop-opacity="0.18"/>
-    </linearGradient>
+    <!-- Soft Mist Diffuse Filter -->
+    <filter id="softMist_dark" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <filter id="fineMist_dark" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
   </defs>
 
-  <!-- Sky Canvas -->
-  <rect width="1920" height="1080" fill="url(#skyGrad_dark)"/>
+  <!-- 1. Paper / Nocturnal Base -->
+  <rect width="100%" height="100%" fill="url(#canvasGrad_dark)"/>
 
-  <!-- LAYER 1: Distant Misty Peaks (远山含黛) -->
-  <g class="distant-mountains">
-    <!-- Far Range Left -->
-    <path d="M-80,480 C120,400 240,420 380,490 C500,430 640,410 780,510 C920,460 1020,470 1120,530 C1280,450 1440,430 1600,500 C1720,440 1860,420 2000,470 L2000,750 L-80,750 Z"
-          fill="url(#faintMtnGrad_dark)"/>
+  <!-- 2. Distant Horizon Mountain Silhouettes (Upper atmosphere) -->
+  <g class="distant-peaks" opacity="0.85">
+    <!-- Layer A: Farthest jagged karst silhouette across upper background -->
+    <path d="M-50,380 C120,310 240,330 380,270 C520,210 680,290 840,240 C980,195 1100,270 1280,220 C1440,175 1600,260 1760,210 C1860,180 1940,220 2000,240 L2000,560 L-50,560 Z" fill="url(#faintInk_dark)"/>
 
-    <!-- High Far Peaks Center-Left -->
-    <path d="M140,420 C260,330 360,320 480,410 C560,350 680,310 820,430 L820,680 L140,680 Z"
-          fill="url(#faintMtnGrad_dark)" opacity="0.8"/>
-
-    <!-- High Far Peaks Center-Right -->
-    <path d="M1200,440 C1320,320 1440,300 1580,420 C1680,340 1780,350 1950,450 L1950,700 L1200,700 Z"
-          fill="url(#faintMtnGrad_dark)" opacity="0.8"/>
+    <!-- Layer B: Secondary graceful ridges -->
+    <path d="M-50,440 C140,390 320,430 480,360 C640,290 760,380 960,340 C1120,300 1280,370 1480,320 C1660,270 1820,350 2000,310 L2000,620 L-50,620 Z" fill="url(#midInk_dark)"/>
   </g>
 
-  <!-- LAYER 2: Mid-Range Jagged Peaks (奇峰叠嶂) with ink wash striations -->
-  <g class="mid-mountains">
-    <!-- Left Mountain Flank (Dramatic karst cliff) -->
-    <path d="M-50,620 C40,540 120,480 200,530 C280,470 360,410 440,480 C500,430 580,470 650,560 C710,500 780,550 820,630 C860,710 840,780 820,830 L-50,830 Z"
-          fill="url(#midMtnGrad_dark)"/>
-    
-    <!-- Left Mountain Subtle Ridge Lines (皴法) -->
-    <path d="M360,410 Q380,460 410,520 Q440,580 430,640" stroke="#323946" stroke-width="1.5" stroke-opacity="0.144" fill="none"/>
-    <path d="M200,530 Q240,580 270,660" stroke="#323946" stroke-width="1.2" stroke-opacity="0.12" fill="none"/>
-    <path d="M500,430 Q530,500 550,580" stroke="#323946" stroke-width="1.2" stroke-opacity="0.12" fill="none"/>
-
-    <!-- Right Mountain Flank (Layered peaks) -->
-    <path d="M1180,640 C1250,560 1340,470 1440,530 C1510,460 1600,400 1700,470 C1780,420 1860,450 1970,550 L1970,850 L1180,850 Z"
-          fill="url(#midMtnGrad_dark)"/>
-
-    <!-- Right Ridge Lines -->
-    <path d="M1600,400 Q1580,470 1560,550 Q1540,620 1560,700" stroke="#323946" stroke-width="1.5" stroke-opacity="0.144" fill="none"/>
-    <path d="M1440,530 Q1420,590 1400,670" stroke="#323946" stroke-width="1.2" stroke-opacity="0.12" fill="none"/>
-    <path d="M1780,420 Q1760,480 1740,560" stroke="#323946" stroke-width="1.2" stroke-opacity="0.12" fill="none"/>
-  </g>
-
-  <!-- LAYER 3: Flowing Horizontal Mist Across Mountains (云海苍茫) -->
-  <rect x="0" y="520" width="1920" height="90" fill="url(#mistFlow_dark)"/>
-  <rect x="100" y="610" width="1720" height="70" fill="url(#mistFlow_dark)" opacity="0.8"/>
-
-  <!-- LAYER 4: Traditional Chinese Architecture - Left Multi-tiered Pavilion (飞檐歇山顶楼阁) -->
-  <g class="left-architecture" transform="translate(40, 480)">
-    <!-- Base Rock Formation -->
-    <path d="M-40,240 C20,200 80,180 160,200 C220,180 290,210 320,270 L-40,270 Z"
-          fill="url(#nearCliffGrad_dark)"/>
-
-    <!-- Distant Pine Tree beside pavilion (黄山古松) -->
-    <g class="ancient-pine" opacity="0.264">
-      <!-- Trunk -->
-      <path d="M40,210 Q60,160 50,110 Q70,90 90,70 Q100,50 110,40" stroke="#1D2128" stroke-width="5" stroke-linecap="round" fill="none"/>
-      <path d="M60,130 Q100,120 130,125" stroke="#1D2128" stroke-width="3" stroke-linecap="round" fill="none"/>
-      <path d="M70,95 Q40,85 20,90" stroke="#1D2128" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-      <!-- Pine needle tufts (松针盘) -->
-      <path d="M100,35 C80,30 75,45 95,50 C115,55 125,40 100,35 Z" fill="#1D2128"/>
-      <path d="M125,65 C105,60 100,75 120,80 C140,85 150,70 125,65 Z" fill="#1D2128"/>
-      <path d="M130,120 C110,115 105,130 125,135 C145,140 155,125 130,120 Z" fill="#1D2128"/>
-      <path d="M15,85 C-5,80 -10,95 10,100 C30,105 40,90 15,85 Z" fill="#1D2128"/>
-    </g>
-
-    <!-- Traditional Chinese Pavilion (中国古典重檐亭台) -->
-    <g class="chinese-pavilion" opacity="0.312">
-      <!-- Lower Foundation Platform -->
-      <path d="M140,215 L260,215 L255,225 L145,225 Z" fill="#1D2128"/>
-
-      <!-- Lower Pillars (立柱) -->
-      <rect x="155" y="175" width="4.5" height="40" fill="#1D2128"/>
-      <rect x="195" y="175" width="4" height="40" fill="#1D2128"/>
-      <rect x="240" y="175" width="4.5" height="40" fill="#1D2128"/>
-
-      <!-- Lower Railing (中式回字栏杆) -->
-      <line x1="150" y1="200" x2="245" y2="200" stroke="#1D2128" stroke-width="1.5"/>
-      <line x1="150" y1="208" x2="245" y2="208" stroke="#1D2128" stroke-width="1"/>
-
-      <!-- Lower Eaves (下层飞檐 - Curved eaves with distinctive upturned ends) -->
-      <path d="M125,178 Q195,170 270,178 Q282,174 278,168 C255,166 215,163 195,163 C175,163 138,166 118,168 Q114,174 125,178 Z"
-            fill="#1D2128"/>
-
-      <!-- Upper Tier Structure -->
-      <rect x="168" y="145" width="60" height="20" fill="#1D2128" opacity="0.6"/>
-      <rect x="175" y="145" width="3.5" height="20" fill="#1D2128"/>
-      <rect x="218" y="145" width="3.5" height="20" fill="#1D2128"/>
-
-      <!-- Upper Eaves (上层歇山顶飞檐 - Majestic swept eaves) -->
-      <path d="M135,148 Q198,138 262,148 Q274,142 270,136 C248,134 212,130 198,130 C182,130 148,134 126,136 Q122,142 135,148 Z"
-            fill="#1D2128"/>
-
-      <!-- Roof Ridge & Finial (宝顶 / 正脊与鸱吻) -->
-      <path d="M198,108 L198,130" stroke="#1D2128" stroke-width="3"/>
-      <circle cx="198" cy="106" r="3.5" fill="#D4B37F"/>
-      <path d="M198,112 Q193,122 188,130" stroke="#1D2128" stroke-width="2" fill="none"/>
-      <path d="M198,112 Q203,122 208,130" stroke="#1D2128" stroke-width="2" fill="none"/>
-      <!-- Eave Ornaments (吻兽) -->
-      <circle cx="127" cy="137" r="1.5" fill="#D4B37F"/>
-      <circle cx="269" cy="137" r="1.5" fill="#D4B37F"/>
-
-      <!-- Discreet Vermilion Lantern hanging under eave (中国红灯笼) -->
-      <g class="eave-lantern">
-        <line x1="264" y1="150" x2="264" y2="158" stroke="#1D2128" stroke-width="0.8"/>
-        <ellipse cx="264" cy="162" rx="4" ry="5.5" fill="#C8463B" opacity="0.75"/>
-        <line x1="264" y1="167.5" x2="264" y2="173" stroke="#D4B37F" stroke-width="0.8" opacity="0.8"/>
-      </g>
+  <!-- 3. Left Flank: Huangshan Mountain Shoulder & Pine Silhouette (Framing left margin) -->
+  <g class="left-flank" opacity="0.9">
+    <!-- Deep mountain body on left side -->
+    <path d="M-60,180 C80,220 160,320 220,440 C280,560 210,680 340,780 C400,820 460,890 420,1080 L-60,1080 Z" fill="url(#flankInkLeft_dark)"/>
+    <!-- Delicate pine branch silhouettes on mountain edge -->
+    <g stroke="#151920" stroke-width="1.4" stroke-linecap="round" opacity="0.5">
+      <path d="M120,420 Q170,405 210,410 M170,405 Q205,395 235,400 M180,415 Q220,420 250,428" fill="none"/>
+      <path d="M160,540 Q220,520 270,530 M220,520 Q265,510 305,515 M230,532 Q280,538 315,548" fill="none"/>
+      <path d="M240,680 Q310,660 365,670 M310,660 Q360,650 405,656" fill="none"/>
     </g>
   </g>
 
-  <!-- LAYER 5: Traditional Chinese Architecture - Right Waterside Pavilion (临水轩榭) -->
-  <g class="right-architecture" transform="translate(1600, 520)">
-    <!-- Waterside Rock Foundation -->
-    <path d="M-60,250 C0,210 80,200 180,220 C240,195 320,230 380,270 L-60,270 Z"
-          fill="url(#nearCliffGrad_dark)"/>
-
-    <!-- Classical Waterside Pavilion (水榭) -->
-    <g class="waterside-pavilion" opacity="0.288">
-      <!-- Platform -->
-      <rect x="60" y="195" width="160" height="8" fill="#1D2128"/>
-      <!-- Piles into water -->
-      <rect x="75" y="203" width="4" height="25" fill="#1D2128"/>
-      <rect x="135" y="203" width="4" height="25" fill="#1D2128"/>
-      <rect x="200" y="203" width="4" height="25" fill="#1D2128"/>
-
-      <!-- Railings -->
-      <line x1="60" y1="183" x2="220" y2="183" stroke="#1D2128" stroke-width="1.2"/>
-      <line x1="60" y1="190" x2="220" y2="190" stroke="#1D2128" stroke-width="0.8"/>
-
-      <!-- Pillars -->
-      <rect x="70" y="145" width="4" height="50" fill="#1D2128"/>
-      <rect x="110" y="145" width="3.5" height="50" fill="#1D2128"/>
-      <rect x="165" y="145" width="3.5" height="50" fill="#1D2128"/>
-      <rect x="210" y="145" width="4" height="50" fill="#1D2128"/>
-
-      <!-- Traditional Slanted Roof with Upturned Flying Wings (中式水榭卷棚顶/歇山顶) -->
-      <path d="M40,150 Q140,136 240,150 Q252,144 248,138 C224,136 175,130 140,130 C105,130 55,136 32,138 Q28,144 40,150 Z"
-            fill="#1D2128"/>
-      <!-- Finials -->
-      <circle cx="34" cy="139" r="1.5" fill="#D4B37F"/>
-      <circle cx="246" cy="139" r="1.5" fill="#D4B37F"/>
-
-      <!-- Lantern hanging under right pavilion eave -->
-      <g class="eave-lantern">
-        <line x1="45" y1="151" x2="45" y2="159" stroke="#1D2128" stroke-width="0.8"/>
-        <ellipse cx="45" cy="163" rx="3.8" ry="5.2" fill="#C8463B" opacity="0.75"/>
-        <line x1="45" y1="168.2" x2="45" y2="174" stroke="#D4B37F" stroke-width="0.8" opacity="0.8"/>
-      </g>
-    </g>
-
-    <!-- Pine Branch Overhanging Water (苍松探水) -->
-    <g class="pine-branch" opacity="0.24">
-      <path d="M260,200 Q200,160 160,110 Q120,100 80,105 Q50,110 20,115" stroke="#1D2128" stroke-width="4" stroke-linecap="round" fill="none"/>
-      <path d="M130,105 Q100,85 70,80" stroke="#1D2128" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-      <!-- Tufts -->
-      <path d="M15,115 C0,110 -5,125 15,130 C35,135 40,120 15,115 Z" fill="#1D2128"/>
-      <path d="M65,80 C45,75 40,90 60,95 C80,100 90,85 65,80 Z" fill="#1D2128"/>
-      <path d="M110,95 C90,90 85,105 105,110 C125,115 130,100 110,95 Z" fill="#1D2128"/>
+  <!-- 4. Right Flank: Layered Karst Cliff & Misty Shore (Framing right margin) -->
+  <g class="right-flank" opacity="0.9">
+    <!-- Mountain mass on right side -->
+    <path d="M1980,160 C1840,220 1760,330 1710,450 C1650,580 1720,700 1590,810 C1530,860 1460,930 1500,1080 L1980,1080 Z" fill="url(#flankInkRight_dark)"/>
+    <!-- Subtle mountain pines on right edge -->
+    <g stroke="#151920" stroke-width="1.4" stroke-linecap="round" opacity="0.45">
+      <path d="M1800,430 Q1750,415 1705,420 M1750,415 Q1710,405 1675,410 M1740,425 Q1695,432 1660,438" fill="none"/>
+      <path d="M1740,570 Q1680,550 1625,560 M1680,550 Q1630,540 1585,546" fill="none"/>
     </g>
   </g>
 
-  <!-- LAYER 6: Auspicious Chinese Cloud Scrolls (祥云纹 / 如意云) -->
-  <g class="auspicious-clouds" opacity="0.216">
-    <!-- Cloud Cluster Left -->
-    <g transform="translate(180, 220)">
-      <path d="M0,40 C15,20 45,20 60,35 C75,15 110,15 125,35 C145,25 170,35 170,55 C170,75 140,85 110,80 C95,95 65,95 50,80 C30,90 5,80 0,60 C-5,50 -5,45 0,40 Z"
-            fill="#D4B37F" opacity="0.3"/>
-      <!-- Classical Chinese Cloud Spiral Accent (如意云头纹) -->
-      <path d="M40,55 Q55,40 70,55 Q80,65 70,75 Q55,85 45,70 Q38,58 50,50 Q60,42 72,50"
-            stroke="#D4B37F" stroke-width="1.8" fill="none"/>
-    </g>
+  <!-- 5. Central 留白 (Liu Bai) Negative Space Sanctuary -->
+  <!-- A gentle vertical veil ensuring the card area has ultra-clean, legible contrast -->
+  <rect x="360" y="0" width="1200" height="1080" fill="url(#mistFlow_dark)" opacity="0.7" filter="url(#softMist_dark)"/>
 
-    <!-- Cloud Cluster Right -->
-    <g transform="translate(1550, 180)">
-      <path d="M0,35 C20,15 50,15 70,30 C90,10 125,10 145,30 C165,20 190,30 190,50 C190,70 160,80 130,75 C115,90 85,90 70,75 C50,85 25,75 20,55 Z"
-            fill="#D4B37F" opacity="0.25"/>
-      <!-- Spiral -->
-      <path d="M120,50 Q105,38 90,50 Q80,60 90,70 Q105,80 115,65 Q120,55 110,48 Q100,40 88,48"
-            stroke="#D4B37F" stroke-width="1.8" fill="none"/>
+  <!-- 6. Bottom Misty Waterscape & River Reflection (Below card content) -->
+  <g class="water-realm">
+    <rect x="0" y="780" width="1920" height="300" fill="url(#waterSheen_dark)"/>
+    <!-- Delicate rippling ink lines (water currents) -->
+    <g stroke="#282F3A" stroke-width="0.75" fill="none" opacity="0.3">
+      <path d="M120,920 Q320,915 540,920 T960,922"/>
+      <path d="M240,960 Q480,955 720,960 T1200,962"/>
+      <path d="M980,940 Q1240,935 1500,940 T1820,942"/>
+      <path d="M840,980 Q1120,975 1400,980 T1780,982"/>
+      <path d="M400,1020 Q700,1015 1000,1020 T1600,1022"/>
     </g>
   </g>
 
-  <!-- LAYER 7: Wild Cranes in Flight (远鹤排云 / 晴空一鹤) -->
-  <g class="cranes" opacity="0.288">
-    <!-- Crane 1 -->
-    <g transform="translate(740, 260) scale(0.85)">
-      <!-- Body & Wings -->
-      <path d="M0,0 Q12,-10 24,-18 Q16,-6 8,0 Q18,6 26,14 Q14,8 0,0 Z" fill="#323946"/>
-      <line x1="0" y1="0" x2="-14" y2="4" stroke="#323946" stroke-width="1.2"/>
+  <!-- 7. Auspicious Cloud Spirals (祥云纹) - Drifting high in the upper corners -->
+  <g class="cloud-motifs" stroke="#D4B37F" stroke-width="1.3" fill="none" opacity="0.38">
+    <!-- Top-Left Cloud Swirl -->
+    <g transform="translate(220, 80) scale(0.7)">
+      <path d="M0,20 C10,10 25,10 35,20 C45,10 60,10 70,20 C85,20 95,32 90,45 C85,58 70,60 55,58 L10,58 C-5,58 -15,45 -10,32 C-7,25 -2,22 0,20 Z"/>
+      <path d="M25,38 C32,32 42,32 48,38 C54,44 50,52 42,52 C35,52 32,46 36,42"/>
     </g>
-    <!-- Crane 2 -->
-    <g transform="translate(775, 240) scale(0.68)">
-      <path d="M0,0 Q12,-10 24,-18 Q16,-6 8,0 Q18,6 26,14 Q14,8 0,0 Z" fill="#323946"/>
-      <line x1="0" y1="0" x2="-12" y2="3.5" stroke="#323946" stroke-width="1"/>
-    </g>
-    <!-- Crane 3 -->
-    <g transform="translate(805, 270) scale(0.55)">
-      <path d="M0,0 Q12,-10 24,-18 Q16,-6 8,0 Q18,6 26,14 Q14,8 0,0 Z" fill="#323946"/>
-      <line x1="0" y1="0" x2="-10" y2="3" stroke="#323946" stroke-width="0.8"/>
+    <!-- Top-Right Cloud Swirl -->
+    <g transform="translate(1620, 75) scale(0.65)">
+      <path d="M0,20 C10,10 25,10 35,20 C45,10 60,10 70,20 C85,20 95,32 90,45 C85,58 70,60 55,58 L10,58 C-5,58 -15,45 -10,32 C-7,25 -2,22 0,20 Z"/>
+      <path d="M25,38 C32,32 42,32 48,38 C54,44 50,52 42,52 C35,52 32,46 36,42"/>
     </g>
   </g>
 
-  <!-- LAYER 8: Water Surface & Reflections (平湖烟水) -->
-  <rect x="0" y="760" width="1920" height="320" fill="url(#waterGrad_dark)"/>
-
-  <!-- Subtle Water Ripples (微波荡漾) -->
-  <g class="water-ripples" opacity="0.18">
-    <path d="M120,830 Q280,825 440,830" stroke="#323946" stroke-width="1" fill="none"/>
-    <path d="M260,860 Q480,855 700,860" stroke="#323946" stroke-width="1.2" fill="none"/>
-    <path d="M60,890 Q220,885 380,890" stroke="#323946" stroke-width="0.8" fill="none"/>
-    <path d="M1200,840 Q1440,835 1680,840" stroke="#323946" stroke-width="1.2" fill="none"/>
-    <path d="M1420,880 Q1600,875 1780,880" stroke="#323946" stroke-width="0.9" fill="none"/>
-    <path d="M1100,910 Q1300,905 1500,910" stroke="#323946" stroke-width="0.8" fill="none"/>
-  </g>
-
-  <!-- LAYER 9: Delicate Vertical Chinese Seal Accent in Background Top-Right Corner (诗书画印) -->
-  <g class="corner-seal" transform="translate(1820, 60)" opacity="0.264">
-    <!-- Vermilion Seal Body -->
-    <rect x="0" y="0" width="42" height="74" rx="4" fill="none" stroke="#C8463B" stroke-width="2.5"/>
-    <rect x="3" y="3" width="36" height="68" rx="2" fill="#C8463B" opacity="0.12"/>
-    <!-- Classical Seal Characters: "格物致知" or "修身悟道" in seal script aesthetic -->
-    <text x="21" y="34" font-family="'Songti SC', 'SimSun', serif" font-size="18" font-weight="700" fill="#C8463B" text-anchor="middle">悟</text>
-    <text x="21" y="60" font-family="'Songti SC', 'SimSun', serif" font-size="18" font-weight="700" fill="#C8463B" text-anchor="middle">道</text>
+  <!-- 8. Soaring Cranes (闲云孤鹤) - Classical poetic aspiration -->
+  <g class="soaring-cranes" stroke="#D4B37F" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.55">
+    <!-- Crane 1 (Leading) -->
+    <g transform="translate(440, 140) scale(0.9)">
+      <path d="M0,0 Q12,-8 24,-2 Q14,8 0,0"/>
+      <path d="M12,-5 L16,-16 Q20,-18 24,-14"/>
+      <path d="M24,-2 Q32,0 40,-4"/>
+    </g>
+    <!-- Crane 2 (Following) -->
+    <g transform="translate(485, 170) scale(0.72)">
+      <path d="M0,0 Q12,-8 24,-2 Q14,8 0,0"/>
+      <path d="M12,-5 L16,-16 Q20,-18 24,-14"/>
+      <path d="M24,-2 Q32,0 40,-4"/>
+    </g>
+    <!-- Crane 3 (Distant) -->
+    <g transform="translate(520, 150) scale(0.55)">
+      <path d="M0,0 Q12,-8 24,-2 Q14,8 0,0"/>
+      <path d="M12,-5 L16,-16 Q20,-18 24,-14"/>
+    </g>
   </g>
 </svg>

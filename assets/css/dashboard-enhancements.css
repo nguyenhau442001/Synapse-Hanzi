@@ -62,25 +62,54 @@ body:not(.home-screen) .continue-learning-card { display: none; }
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 146px;
-  padding: 18px 16px;
-  border-radius: 18px;
+  min-height: 136px;
+  padding: 16px 16px;
+  border-radius: 14px;
   background: var(--card-bg);
-  background-image: radial-gradient(circle at 100% 0%, rgba(197, 164, 109, 0.05) 0%, transparent 60%);
   border: 1px solid var(--border);
   box-shadow: 0 2px 8px -2px rgba(41, 43, 48, 0.04);
   text-align: left;
   cursor: pointer;
+  overflow: hidden;
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease, background 180ms ease;
   user-select: none;
 }
+.level-card::after {
+  position: absolute;
+  top: 6px;
+  right: 14px;
+  font-family: var(--font-classical);
+  font-size: 54px;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--text-primary);
+  opacity: 0.04;
+  pointer-events: none;
+  user-select: none;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+.level-card:hover::after {
+  opacity: 0.07;
+  transform: scale(1.04);
+}
+:root[data-theme="dark"] .level-card::after {
+  color: var(--c-antique-gold, #D4B37F);
+  opacity: 0.06;
+}
+.level-card[data-level="hsk1"]::after { content: "一"; }
+.level-card[data-level="hsk2"]::after { content: "二"; }
+.level-card[data-level="hsk3"]::after { content: "三"; }
+.level-card[data-level="hsk4"]::after { content: "四"; }
+.level-card[data-level="hsk5"]::after { content: "五"; }
+.level-card[data-level="hsk6"]::after { content: "六"; }
+
 :root[data-theme="dark"] .level-card {
   border-color: rgba(197, 164, 109, 0.18);
   box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.35);
 }
 .level-card:hover {
   transform: translateY(-2px);
-  border-color: var(--accent-gold, #C5A46D);
+  border-color: var(--border-strong, #C5A46D);
   box-shadow: 0 8px 24px -4px rgba(197, 164, 109, 0.18);
 }
 :root[data-theme="dark"] .level-card:hover {
@@ -91,13 +120,20 @@ body:not(.home-screen) .continue-learning-card { display: none; }
   transform: scale(0.985);
 }
 .level-card.is-active-level {
-  border-color: var(--brand-primary);
-  box-shadow: 0 0 0 1px var(--brand-primary), 0 4px 14px rgba(168, 50, 42, 0.25);
+  border: 1.5px solid var(--brand-primary);
+  box-shadow: 0 0 0 1px var(--brand-primary), 0 6px 20px -3px rgba(168, 50, 42, 0.22);
+}
+:root[data-theme="dark"] .level-card.is-active-level {
+  border-color: #D6554A;
+  box-shadow: 0 0 0 1px #D6554A, 0 8px 28px -4px rgba(200, 70, 59, 0.35);
+}
+.level-card.is-complete-level {
+  border-color: rgba(82, 125, 112, 0.35);
 }
 .level-card-top {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 2px;
 }
 .level-card-heading {
   display: flex;
@@ -106,8 +142,13 @@ body:not(.home-screen) .continue-learning-card { display: none; }
   gap: 6px;
 }
 .level-card .lvl-num {
-  font-size: 24px;
+  font-family: var(--font-classical);
+  font-size: 21px;
   font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
   color: var(--text-primary);
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -1019,13 +1060,28 @@ body.home-screen .dashboard-bottom-widgets .hw-card:hover {
   gap: 18px; padding: 0; border: 0; border-radius: 0; background: transparent;
 }
 .picker-controls .view-tab {
-  min-height: 34px; padding: 6px 2px; border: 0; border-bottom: 2px solid transparent;
-  border-radius: 0; background: transparent; color: var(--text-secondary); font-weight: 600;
+  min-height: 32px;
+  padding: 6px 4px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: all 160ms ease;
 }
 .picker-controls .view-tab.active {
-  border-bottom-color: var(--accent); background: transparent; color: var(--text-primary);
+  border-bottom-color: var(--brand-primary);
+  background: transparent;
+  color: var(--brand-primary);
+  font-weight: 700;
 }
-.picker-controls .view-tab:hover:not(.active) { color: var(--text-primary); }
+.picker-controls .view-tab:hover:not(.active) {
+  color: var(--text-primary);
+  border-bottom-color: var(--border-strong);
+}
 .picker-version-control {
   display: inline-flex;
   align-items: center;
@@ -1089,8 +1145,8 @@ body.home-screen .dashboard-bottom-widgets .hw-card:hover {
 }
 :root[data-theme="dark"] .picker-version-control select option,
 body.dark-mode .picker-version-control select option {
-  background: #1d1e28;
-  color: #f3f4f6;
+  background: var(--card-bg, #1C2026);
+  color: var(--text-primary, #EDE6D8);
 }
 .picker-version-chevron {
   position: absolute;
@@ -1164,22 +1220,22 @@ body.home-screen .featured-topics {
   body.home-screen .learning-dashboard.dashboard-hero-banner {
     width: 100%;
     margin: 0;
-    padding: 20px 24px;
-    border-radius: var(--radius-lg, 16px);
+    padding: 13px 18px;
+    border-radius: 14px;
     background: var(--card-bg);
     border: 1px solid var(--border);
     box-shadow: var(--card-shadow);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
     align-items: stretch;
     transition: box-shadow 180ms ease, border-color 180ms ease;
   }
 
   :root[data-theme="dark"] body.home-screen .learning-dashboard.dashboard-hero-banner {
-    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.45);
-    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 18px -2px rgba(0, 0, 0, 0.45);
+    border-color: rgba(197, 164, 109, 0.16);
   }
 
   /* Daily Goal Main Column */
@@ -1187,7 +1243,7 @@ body.home-screen .featured-topics {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 12px;
+    gap: 7px;
     width: 100%;
     min-width: 0;
   }
@@ -1196,41 +1252,45 @@ body.home-screen .featured-topics {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 12px;
+    gap: 10px;
   }
 
   body.home-screen .learning-dashboard-eyebrow {
-    font-size: 11px;
+    font-size: 10.5px;
     font-weight: 750;
     letter-spacing: 0.08em;
-    color: var(--accent-text);
+    color: var(--accent);
   }
 
   body.home-screen .daily-goal-streak {
     display: inline-flex;
     align-items: center;
-    gap: 5px;
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--text-primary);
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--brand-primary);
+    background: rgba(168, 50, 42, 0.06);
+    border: 1px solid rgba(168, 50, 42, 0.22);
+    padding: 2px 8px;
+    border-radius: 999px;
     line-height: 1;
   }
 
   body.home-screen .daily-goal-streak .streak-icon {
-    font-size: 13.5px;
+    font-size: 12px;
     line-height: 1;
   }
 
   body.home-screen .learning-title-row {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 7px;
     margin-top: -2px;
   }
 
   body.home-screen .learning-dashboard h2 {
-    font-size: 18px;
-    font-weight: 750;
+    font-size: 15px;
+    font-weight: 700;
     color: var(--text-primary);
     line-height: 1.25;
     margin: 0;
@@ -1248,13 +1308,13 @@ body.home-screen .featured-topics {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     padding: 0;
     border: none;
     background: transparent;
     color: var(--text-tertiary);
-    font-size: 14px;
+    font-size: 13px;
     cursor: pointer;
     border-radius: 6px;
     transition: all 140ms ease;
@@ -1281,9 +1341,9 @@ body.home-screen .featured-topics {
   body.home-screen .daily-goal-progress-section {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     width: 100%;
-    margin-top: 4px;
+    margin-top: 1px;
   }
 
   body.home-screen .daily-goal-metric-row {
@@ -1301,7 +1361,7 @@ body.home-screen .featured-topics {
 
   body.home-screen .daily-goal-count strong.goal-count-big,
   body.home-screen .daily-goal-count strong {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 850;
     line-height: 1;
     color: var(--text-primary);
@@ -1310,15 +1370,15 @@ body.home-screen .featured-topics {
   }
 
   body.home-screen .daily-goal-target-sub {
-    font-size: 15px;
+    font-size: 12.5px;
     font-weight: 600;
     color: var(--text-secondary);
     margin-left: 2px;
   }
 
   body.home-screen .daily-goal-pct {
-    font-size: 17px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 750;
     color: var(--accent);
     line-height: 1;
     font-variant-numeric: tabular-nums;
@@ -1326,7 +1386,7 @@ body.home-screen .featured-topics {
 
   body.home-screen .daily-goal-track {
     width: 100%;
-    height: 8px;
+    height: 5px;
     background: var(--progress-track);
     border-radius: 999px;
     overflow: hidden;
@@ -1345,10 +1405,10 @@ body.home-screen .featured-topics {
   }
 
   body.home-screen .daily-goal-message {
-    font-size: 13px;
-    color: var(--text-secondary);
+    font-size: 11.5px;
+    color: var(--text-tertiary);
     font-weight: 400;
-    line-height: 1.4;
+    line-height: 1.35;
     margin: 0;
   }
 
@@ -1444,51 +1504,98 @@ body.home-screen .featured-topics {
     position: relative;
     width: 100%;
   }
+  /* Modern Chinese Editorial Level Cards */
   body.home-screen #screenPicker .level-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px;
+    gap: 14px;
     margin: 0;
   }
   body.home-screen #screenPicker #levelGrid20 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px;
+    gap: 14px;
   }
   body.home-screen #screenPicker #levelGrid30 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 18px;
+    gap: 14px;
   }
 
-  /* Clean, Calm Level Cards */
   body.home-screen #screenPicker .level-card {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 160px;
-    padding: 22px 24px;
-    border-radius: 20px;
+    min-height: 132px;
+    padding: 16px 18px;
+    border-radius: 14px;
     background: var(--card-bg);
     border: 1px solid var(--border);
     box-shadow: var(--card-shadow);
     text-align: left;
     cursor: pointer;
-    transition: transform 160ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 160ms ease, border-color 160ms ease, background-color 160ms ease;
+    overflow: hidden;
+    transition: transform 160ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 160ms ease, border-color 160ms ease;
   }
   body.home-screen #screenPicker .level-card:hover {
-    transform: translateY(-3px);
-    border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
-    box-shadow: 0 10px 28px -4px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    border-color: var(--border-strong);
+    box-shadow: 0 8px 24px -4px rgba(197, 164, 109, 0.2);
     background: var(--card-bg);
   }
+
+  /* Cultural Chinese Numeral Watermark in Songti */
+  body.home-screen #screenPicker .level-card::after {
+    position: absolute;
+    top: 6px;
+    right: 14px;
+    font-family: var(--font-classical);
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 1;
+    color: var(--text-primary);
+    opacity: 0.04;
+    pointer-events: none;
+    user-select: none;
+    transition: opacity 180ms ease, transform 180ms ease;
+  }
+  body.home-screen #screenPicker .level-card:hover::after {
+    opacity: 0.07;
+    transform: scale(1.04);
+  }
+  :root[data-theme="dark"] body.home-screen #screenPicker .level-card::after {
+    color: var(--c-antique-gold, #D4B37F);
+    opacity: 0.06;
+  }
+  body.home-screen #screenPicker .level-card[data-level="hsk1"]::after { content: "一"; }
+  body.home-screen #screenPicker .level-card[data-level="hsk2"]::after { content: "二"; }
+  body.home-screen #screenPicker .level-card[data-level="hsk3"]::after { content: "三"; }
+  body.home-screen #screenPicker .level-card[data-level="hsk4"]::after { content: "四"; }
+  body.home-screen #screenPicker .level-card[data-level="hsk5"]::after { content: "五"; }
+  body.home-screen #screenPicker .level-card[data-level="hsk6"]::after { content: "六"; }
+
+  /* Active / Currently In-Progress Level Highlight */
   body.home-screen #screenPicker .level-card.is-active-level {
-    border-color: var(--brand-primary);
-    box-shadow: 0 0 0 1.5px var(--brand-primary), 0 6px 18px rgba(0, 0, 0, 0.12);
+    border: 1.5px solid var(--brand-primary);
+    box-shadow: 0 0 0 1px var(--brand-primary), 0 8px 24px -4px rgba(168, 50, 42, 0.22);
+  }
+  :root[data-theme="dark"] body.home-screen #screenPicker .level-card.is-active-level {
+    border-color: #D6554A;
+    box-shadow: 0 0 0 1px #D6554A, 0 8px 28px -4px rgba(200, 70, 59, 0.35);
+  }
+
+  /* Completed Level Polish */
+  body.home-screen #screenPicker .level-card.is-complete-level {
+    border-color: rgba(82, 125, 112, 0.35);
+  }
+  body.home-screen #screenPicker .level-card.is-complete-level:hover {
+    border-color: var(--status-success);
+    box-shadow: 0 8px 24px -4px rgba(82, 125, 112, 0.2);
   }
 
   body.home-screen #screenPicker .level-card-top {
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 2px;
   }
   body.home-screen #screenPicker .level-card-heading {
     display: flex;
@@ -1497,11 +1604,12 @@ body.home-screen .featured-topics {
     gap: 8px;
   }
   body.home-screen #screenPicker .lvl-num {
-    font-size: 22px;
+    font-family: var(--font-classical);
+    font-size: 21px;
     font-weight: 800;
     color: var(--text-primary);
     line-height: 1.1;
-    letter-spacing: -0.01em;
+    letter-spacing: 0.02em;
   }
   body.home-screen #screenPicker .level-status-badge {
     font-size: 11px;
@@ -1512,24 +1620,36 @@ body.home-screen .featured-topics {
     padding: 2.5px 8px;
     border-radius: 999px;
     white-space: nowrap;
+    letter-spacing: 0.01em;
   }
   body.home-screen #screenPicker .level-status-badge.is-learning {
-    color: var(--status-warning, #D2AD6E);
-    background: var(--warning-bg, rgba(210, 173, 110, 0.12));
-    border-color: color-mix(in srgb, var(--status-warning, #D2AD6E) 28%, transparent);
+    color: var(--brand-primary);
+    background: rgba(168, 50, 42, 0.07);
+    border-color: rgba(168, 50, 42, 0.25);
+  }
+  :root[data-theme="dark"] body.home-screen #screenPicker .level-status-badge.is-learning {
+    color: #F0786E;
+    background: rgba(200, 70, 59, 0.15);
+    border-color: rgba(200, 70, 59, 0.35);
   }
   body.home-screen #screenPicker .level-status-badge.is-complete {
-    color: var(--status-success, #72B99A);
-    background: var(--success-bg, rgba(114, 185, 154, 0.12));
-    border-color: color-mix(in srgb, var(--status-success, #72B99A) 28%, transparent);
+    color: var(--status-success, #527D70);
+    background: rgba(82, 125, 112, 0.09);
+    border-color: rgba(82, 125, 112, 0.28);
+  }
+  :root[data-theme="dark"] body.home-screen #screenPicker .level-status-badge.is-complete {
+    color: #7FB8A7;
+    background: rgba(98, 153, 136, 0.15);
+    border-color: rgba(98, 153, 136, 0.35);
   }
   body.home-screen #screenPicker .level-card-meta {
     display: flex;
     align-items: center;
-    gap: 6px;
-    font-size: 12.5px;
+    gap: 5px;
+    font-size: 12px;
     color: var(--text-secondary);
     margin: 2px 0 0;
+    font-weight: 500;
   }
   body.home-screen #screenPicker .lvl-label {
     font-weight: 600;
@@ -1542,8 +1662,8 @@ body.home-screen .featured-topics {
   body.home-screen #screenPicker .level-card-progress {
     display: flex;
     flex-direction: column;
-    gap: 6px;
-    margin: 12px 0 8px;
+    gap: 5px;
+    margin: 8px 0 4px;
   }
   body.home-screen #screenPicker .level-card-progress-heading {
     display: flex !important;
@@ -1552,8 +1672,8 @@ body.home-screen .featured-topics {
     gap: 8px;
   }
   body.home-screen #screenPicker .lvl-percent-value {
-    font-size: 22px;
-    font-weight: 800;
+    font-size: 19px;
+    font-weight: 850;
     line-height: 1;
     color: var(--text-primary);
     font-variant-numeric: tabular-nums;
@@ -1562,29 +1682,26 @@ body.home-screen .featured-topics {
     color: var(--brand-primary);
   }
   body.home-screen #screenPicker .level-card.is-complete-level .lvl-percent-value {
-    color: var(--status-success);
+    color: var(--status-success, #527D70);
   }
   body.home-screen #screenPicker .lvl-today-count {
     display: none;
     align-items: center;
     font-size: 11px;
     font-weight: 700;
-    color: var(--text-tertiary);
-    background: var(--surface-subtle);
-    border: 1px solid var(--border);
+    color: var(--brand-primary);
+    background: rgba(168, 50, 42, 0.08);
+    border: 1px solid rgba(168, 50, 42, 0.25);
     padding: 2px 8px;
     border-radius: 999px;
     white-space: nowrap;
   }
   body.home-screen #screenPicker .lvl-today-count.has-activity {
     display: inline-flex;
-    color: var(--text-primary);
-    background: var(--surface-subtle);
-    border-color: var(--border-strong);
   }
   body.home-screen #screenPicker .lvl-mastery-track {
     width: 100%;
-    height: 6px;
+    height: 5px;
     background: var(--progress-track);
     border-radius: 999px;
     overflow: hidden;
@@ -1596,7 +1713,7 @@ body.home-screen .featured-topics {
     transition: width 240ms ease;
   }
   body.home-screen #screenPicker .level-card.is-complete-level .lvl-mastery-fill {
-    background: var(--status-success);
+    background: var(--status-success, #527D70);
   }
 
   body.home-screen #screenPicker .level-card-bottom {
@@ -1604,15 +1721,30 @@ body.home-screen .featured-topics {
     align-items: center;
     justify-content: space-between;
     gap: 8px;
-    padding-top: 8px;
-    border-top: 1px solid var(--border);
-    margin-top: 4px;
+    padding-top: 4px;
+    border-top: none;
+    margin-top: 2px;
   }
   body.home-screen #screenPicker .lvl-mastery-text {
-    color: var(--text-secondary);
-    font-size: 12px;
+    color: var(--text-tertiary);
+    font-size: 11.5px;
     font-weight: 500;
     line-height: 1.2;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+  body.home-screen #screenPicker .lvl-action-hint {
+    font-size: 11.5px;
+    font-weight: 650;
+    color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    transition: transform 0.15s ease;
+  }
+  body.home-screen #screenPicker .level-card:hover .lvl-action-hint {
+    transform: translateX(2px);
+  }
     white-space: nowrap;
     font-variant-numeric: tabular-nums;
   }
