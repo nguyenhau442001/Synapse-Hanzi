@@ -1,0 +1,33 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Landscape background elements -->
+  <path d="M0 180 C 60 150, 180 150, 240 180 L 240 240 L 0 240 Z" fill="#2A2F38"/>
+  <circle cx="180" cy="60" r="25" fill="#FFB84D"/>
+  
+  <!-- Character: Person walking with a backpack -->
+  <g transform="translate(80, 110)">
+    <!-- Backpack -->
+    <path d="M15 40 L 35 40 L 38 70 L 12 70 Z" fill="#E67E22"/>
+    <!-- Body -->
+    <path d="M25 35 L 25 85" stroke="#F4F4F4" stroke-width="8" stroke-linecap="round"/>
+    <!-- Legs in motion -->
+    <path d="M25 85 L 15 110" stroke="#F4F4F4" stroke-width="8" stroke-linecap="round"/>
+    <path d="M25 85 L 35 110" stroke="#F4F4F4" stroke-width="8" stroke-linecap="round"/>
+    <!-- Arms in motion -->
+    <path d="M25 45 L 10 70" stroke="#F4F4F4" stroke-width="8" stroke-linecap="round"/>
+    <path d="M25 45 L 40 60" stroke="#F4F4F4" stroke-width="8" stroke-linecap="round"/>
+    <!-- Head -->
+    <circle cx="25" cy="25" r="12" fill="#F4F4F4"/>
+  </g>
+  
+  <!-- Motion lines -->
+  <path d="M50 120 Q 40 110, 30 120" stroke="#5D6D7E" stroke-width="2" fill="none"/>
+  <path d="M45 130 Q 35 120, 25 130" stroke="#5D6D7E" stroke-width="2" fill="none"/>
+  
+  <!-- Nature element: Tree -->
+  <path d="M180 180 L 180 120 M 180 130 L 160 100 M 180 130 L 200 100" stroke="#2ECC71" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="160" cy="100" r="15" fill="#2ECC71"/>
+  <circle cx="200" cy="100" r="15" fill="#2ECC71"/>
+  <circle cx="180" cy="85" r="15" fill="#2ECC71"/>
+</svg>

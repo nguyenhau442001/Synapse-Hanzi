@@ -1,0 +1,61 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "一心" (wholehearted dedication/focus): 
+       A focused researcher at a glowing lab bench, deeply immersed, with a brilliant golden beam of concentration linking eyes, mind, and a scientific model, capturing total single-minded devotion. -->
+
+  <!-- Subtle background laboratory grid and ambient glow -->
+  <g opacity="0.15">
+    <line x1="30" y1="200" x2="210" y2="200" stroke="#64748B" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <circle cx="120" cy="110" r="70" fill="none" stroke="#F59E0B" stroke-width="1" stroke-dasharray="2 6"/>
+  </g>
+
+  <!-- Glowing background focus aura -->
+  <circle cx="120" cy="115" r="45" fill="#F59E0B" opacity="0.12"/>
+
+  <!-- Lab Desk / Surface -->
+  <path d="M 40 185 L 200 185 C 205 185, 208 188, 208 193 C 208 198, 205 201, 200 201 L 40 201 C 35 201, 32 198, 32 193 C 32 188, 35 185, 40 185 Z" fill="#2E3646"/>
+  <rect x="60" y="201" width="120" height="8" rx="2" fill="#1E2430"/>
+
+  <!-- Scientific Equipment on Desk (Microscope / Model) -->
+  <!-- Base stand -->
+  <path d="M 165 185 L 185 185 L 180 155 L 170 155 Z" fill="#64748B"/>
+  <circle cx="175" cy="150" r="12" fill="#3B82F6"/>
+  <path d="M 175 138 L 165 170" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+  <!-- Glowing scientific molecule/structure model representing research focus -->
+  <circle cx="175" cy="115" r="8" fill="#F59E0B"/>
+  <circle cx="155" cy="100" r="5" fill="#38BDF8"/>
+  <circle cx="195" cy="105" r="5" fill="#38BDF8"/>
+  <line x1="175" y1="115" x2="155" y2="100" stroke="#CBD5E1" stroke-width="2"/>
+  <line x1="175" y1="115" x2="195" y2="105" stroke="#CBD5E1" stroke-width="2"/>
+
+  <!-- Human Character (Researcher upper body) -->
+  <!-- Torso & Lab Coat -->
+  <path d="M 85 185 L 85 150 C 85 135, 95 125, 110 125 L 130 125 C 145 125, 155 135, 155 150 L 155 185 Z" fill="#3B82F6"/>
+  <!-- Lab coat lapels -->
+  <path d="M 100 125 L 115 160 L 120 185" fill="#F8FAFC"/>
+  <path d="M 140 125 L 125 160 L 120 185" fill="#F8FAFC"/>
+  <rect x="116" y="125" width="8" height="60" fill="#E2E8F0"/>
+
+  <!-- Neck & Head -->
+  <rect x="112" y="108" width="16" height="22" fill="#F87171" rx="6"/>
+  <!-- Hair -->
+  <path d="M 102 96 C 102 80, 120 78, 138 92 C 142 95, 142 104, 138 108 L 102 108 Z" fill="#1E293B"/>
+
+  <!-- Head / Face Profile (tilted forward, deeply concentrated) -->
+  <circle cx="120" cy="100" r="18" fill="#FBBF24"/>
+  <!-- Focused Eye (closed/intense line) -->
+  <path d="M 128 98 L 134 100" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Concentrated Mind Beam / Golden Focus Light (Symbolizing "一心" - wholeheartedness) -->
+  <path d="M 136 98 L 167 112" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 138 104 L 167 115" stroke="#FBBF24" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <!-- Glowing particle at focus point -->
+  <circle cx="175" cy="115" r="14" fill="none" stroke="#F59E0B" stroke-width="2" opacity="0.6"/>
+
+  <!-- Scientific notes / papers floating or resting on desk -->
+  <rect x="55" y="168" width="30" height="20" rx="2" fill="#E2E8F0" transform="rotate(-10 55 168)"/>
+  <line x1="60" y1="174" x2="78" y2="174" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+  <line x1="60" y1="180" x2="72" y2="180" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glow effect for breathability / air flow -->
+  <circle cx="120" cy="120" r="85" fill="#222B38" opacity="0.6"/>
+
+  <!-- Air current waves passing through (Background layer) -->
+  <g fill="none" stroke="#4DAAF8" stroke-width="2.5" stroke-linecap="round" opacity="0.4">
+    <path d="M45 90 C 65 90, 70 80, 95 90" />
+    <path d="M35 125 C 55 125, 65 115, 85 125" />
+    <path d="M45 160 C 65 160, 75 150, 95 160" />
+  </g>
+
+  <!-- Technical mesh background pattern inside shoe sole/upper zone -->
+  <!-- Running Shoe Illustration representing "这款专业马拉松跑步鞋...透气性能" -->
+  <g transform="translate(15, 20)">
+    <!-- Shoe Sole (Modern Orange/Coral Accent) -->
+    <path d="M 30 135 
+             C 40 148, 70 152, 105 150 
+             C 140 148, 175 142, 195 130 
+             C 202 125, 205 120, 200 118 
+             C 185 118, 140 126, 100 126 
+             C 65 126, 38 128, 30 135 Z" 
+          fill="#FF6B35"/>
+
+    <!-- Shoe Tread Details -->
+    <path d="M 50 142 L 58 147 M 80 145 L 88 150 M 110 144 L 118 149 M 140 141 L 148 146 M 170 136 L 178 141" 
+          stroke="#E55322" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Shoe Upper Body (Sleek Dark Slate Blue) -->
+    <path d="M 30 135 
+             C 32 120, 45 95, 75 85 
+             C 105 75, 155 70, 185 85 
+             C 200 92, 205 110, 200 118 
+             C 175 142, 140 148, 105 150 
+             C 70 152, 40 148, 30 135 Z" 
+          fill="#2B3648"/>
+
+    <!-- High-tech Mesh / Perforated Upper Zone (The core "透气" visual) -->
+    <g fill="#4DAAF8" opacity="0.85">
+      <!-- Mesh Dot Grid representing breathable fabric -->
+      <circle cx="85" cy="100" r="2.5"/><circle cx="95" cy="98" r="2.5"/><circle cx="105" cy="96" r="2.5"/><circle cx="115" cy="95" r="2.5"/>
+      <circle cx="90" cy="110" r="2.5"/><circle cx="100" cy="108" r="2.5"/><circle cx="110" cy="106" r="2.5"/><circle cx="120" cy="104" r="2.5"/>
+      <circle cx="95" cy="120" r="2.5"/><circle cx="105" cy="118" r="2.5"/><circle cx="115" cy="116" r="2.5"/><circle cx="125" cy="114" r="2.5"/>
+
+      <circle cx="130" cy="94" r="2.5"/><circle cx="140" cy="94" r="2.5"/><circle cx="150" cy="95" r="2.5"/><circle cx="160" cy="98" r="2.5"/>
+      <circle cx="135" cy="104" r="2.5"/><circle cx="145" cy="104" r="2.5"/><circle cx="155" cy="106" r="2.5"/><circle cx="165" cy="109" r="2.5"/>
+      <circle cx="140" cy="114" r="2.5"/><circle cx="150" cy="114" r="2.5"/><circle cx="160" cy="116" r="2.5"/>
+    </g>
+
+    <!-- Heel counter & ankle collar -->
+    <path d="M 30 135 C 32 120, 45 95, 75 85 C 65 95, 55 115, 52 133 Z" fill="#3B485E"/>
+    
+    <!-- Laces -->
+    <path d="M 130 80 L 145 92 M 142 75 L 157 88 M 154 71 L 169 84" 
+          stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+          
+    <!-- Toe cap reinforcement -->
+    <path d="M 185 85 C 200 92, 205 110, 200 118 C 195 118, 185 110, 185 85 Z" fill="#3B485E" opacity="0.5"/>
+  </g>
+
+  <!-- Airflow Arrows Passing Through the Mesh (Demonstrating "透气" / Ventilation) -->
+  <g>
+    <!-- Arrow 1 (Entering/Passing through lower mesh) -->
+    <path d="M 90 155 C 105 155, 115 135, 125 125" fill="none" stroke="#4DAAF8" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 118 123 L 127 124 L 123 131" fill="#4DAAF8"/>
+
+    <!-- Arrow 2 (Exiting / Flowing upward through upper mesh) -->
+    <path d="M 125 110 C 135 90, 140 75, 150 55" fill="none" stroke="#4DAAF8" stroke-width="3.5" stroke-linecap="round"/>
+    <polygon points="146,54 153,46 156,56" fill="#4DAAF8"/>
+
+    <!-- Arrow 3 (Another ventilation stream) -->
+    <path d="M 150 115 C 165 95, 175 80, 188 62" fill="none" stroke="#4DAAF8" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="184,60 192,54 191,64" fill="#4DAAF8"/>
+  </g>
+
+  <!-- Fresh Air Vapor / Breeze Particles -->
+  <g fill="#4DAAF8">
+    <circle cx="160" cy="40" r="3" opacity="0.9"/>
+    <circle cx="172" cy="48" r="2" opacity="0.7"/>
+    <circle cx="195" cy="55" r="2.5" opacity="0.8"/>
+    <circle cx="140" cy="45" r="1.5" opacity="0.6"/>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- The "Fixed/Inherent" structure (The Box) -->
+  <path d="M70 120 L170 120 L160 170 L80 170 Z" fill="#3B4252" stroke="#4C566A" stroke-width="2"/>
+  <path d="M70 120 L80 170 M170 120 L160 170" stroke="#4C566A" stroke-width="2"/>
+  
+  <!-- The "Breaking Out" concept (Contrast/Progression) -->
+  <!-- A glowing, vibrant orange spark/arrow breaking through the top of the rigid box -->
+  <path d="M120 120 L120 70 M120 70 L105 85 M120 70 L135 85" stroke="#FFB86C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- The "Traditional/Inherent" static elements inside -->
+  <circle cx="100" cy="145" r="8" fill="#4C566A"/>
+  <rect x="125" y="140" width="15" height="10" fill="#4C566A"/>
+  <path d="M145 145 L155 145" stroke="#4C566A" stroke-width="3"/>
+  
+  <!-- The "Innovation/Breaking" element -->
+  <circle cx="120" cy="60" r="12" fill="#FFB86C" fill-opacity="0.2"/>
+  <circle cx="120" cy="60" r="6" fill="#FFB86C"/>
+  
+  <!-- Visualizing the contrast: The rigid box vs the dynamic upward movement -->
+  <path d="M60 180 L180 180" stroke="#2E3440" stroke-width="4" stroke-dasharray="4 4"/>
+</svg>

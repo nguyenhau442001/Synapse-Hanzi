@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background architectural hint (Consulate building pillars/facade) -->
+  <path d="M70 170 H170 V180 H70 Z" fill="#2A303C"/>
+  <rect x="75" y="85" width="16" height="85" fill="#242B35"/>
+  <rect x="149" y="85" width="16" height="85" fill="#242B35"/>
+
+  <!-- Diplomatic Official (Consul) Character -->
+  <!-- Suit / Body -->
+  <path d="M100 135 C100 120 120 115 120 115 C120 115 140 120 140 135 V170 H100 Z" fill="#2E4A70"/>
+  <!-- Shirt & Tie -->
+  <polygon points="120,123 115,145 125,145" fill="#F0F4F8"/>
+  <polygon points="120,130 118,155 122,155" fill="#E74C3C"/>
+  <!-- Suit Jacket Lapels -->
+  <path d="M100 135 L115 145 L120 123 L125 145 L140 135" fill="none" stroke="#1E334D" stroke-width="2"/>
+
+  <!-- Neck & Head -->
+  <rect x="114" y="102" width="12" height="15" fill="#E8BEAC"/>
+  <circle cx="120" cy="90" r="16" fill="#E8BEAC"/>
+  <!-- Hair -->
+  <path d="M104 88 C104 78 112 74 120 74 C128 74 136 78 136 88 C136 90 135 90 135 88 C135 81 128 77 120 77 C112 77 105 81 105 88 C105 90 104 90 104 88 Z" fill="#3D3024"/>
+
+  <!-- Official Consulate Passport / Document in hand -->
+  <!-- Hand -->
+  <circle cx="95" cy="148" r="6" fill="#E8BEAC"/>
+  <!-- Passport Cover (Deep Blue/Gold official document representing Consular affairs) -->
+  <rect x="74" y="132" width="22" height="28" rx="2" fill="#1C3144" transform="rotate(-15 85 146)"/>
+  <rect x="77" y="136" width="16" height="20" rx="1" fill="#2A4365" transform="rotate(-15 85 146)"/>
+  <!-- Gold Emblem on Passport -->
+  <circle cx="85" cy="143" r="3" fill="#F1C40F" transform="rotate(-15 85 143)"/>
+  <line x1="81" y1="150" x2="89" y2="150" stroke="#F1C40F" stroke-width="1.5" transform="rotate(-15 85 143)"/>
+
+  <!-- Diplomatic Shield / Official Emblem element floating subtly -->
+  <g transform="translate(120, 38)">
+    <path d="M0 -14 C10 -14 18 -10 18 -2 C18 10 0 20 0 20 C0 20 -18 10 -18 -2 C-18 -10 -10 -14 0 -14 Z" fill="#F1C40F" stroke="#F39C12" stroke-width="2"/>
+    <!-- Star on Shield -->
+    <path d="M0 -7 L1.8 -2.5 L6.5 -2.5 L2.7 0.5 L4.2 5 L0 2.2 L-4.2 5 L-2.7 0.5 L-6.5 -2.5 L-1.8 -2.5 Z" fill="#1A1D24"/>
+  </g>
+
+  <!-- Accent glow / Professional highlights -->
+  <circle cx="120" cy="120" r="95" fill="none" stroke="#F1C40F" stroke-width="1.5" stroke-opacity="0.2" stroke-dasharray="6 6"/>
+</svg>

@@ -1,0 +1,55 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow/halo to focus on the central subject -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.6"/>
+
+  <g transform="translate(0, 5)">
+    <!-- Base / Stand for the Shield Emblem -->
+    <path d="M 95 195 L 145 195 L 140 205 L 100 205 Z" fill="#4B5563"/>
+    <rect x="110" y="180" width="20" height="15" fill="#6B7280"/>
+
+    <!-- Main Shield (Symbol of steadfastness and defense) -->
+    <!-- Outer gold trim/border -->
+    <path d="M 120 40 
+             C 150 40, 185 55, 185 90 
+             C 185 140, 150 170, 120 185 
+             C 90 170, 55 140, 55 90 
+             C 55 55, 90 40, 120 40 Z" 
+          fill="#D97706"/>
+          
+    <!-- Inner dark shield body -->
+    <path d="M 120 48 
+             C 145 48, 175 61, 175 90 
+             C 175 133, 145 160, 120 173 
+             C 95 160, 65 133, 65 90 
+             C 65 61, 95 48, 120 48 Z" 
+          fill="#1F2937"/>
+
+    <!-- Structural metallic highlight on the shield -->
+    <path d="M 120 54 
+             C 141 54, 167 65, 167 90 
+             C 167 127, 141 151, 120 163 
+             C 99 151, 73 127, 73 90 
+             C 73 65, 99 54, 120 54 Z" 
+          fill="#111827"/>
+
+    <!-- Central Emblem: A stylized stalwart figure / sentinel standing firm (representing the devoted soldier guarding the post) -->
+    <!-- Torso and shoulders -->
+    <path d="M 100 135 L 95 110 C 95 95, 105 85, 120 85 C 135 85, 145 95, 145 110 L 140 135 Z" fill="#F59E0B"/>
+    
+    <!-- Head/Helmet -->
+    <circle cx="120" cy="73" r="11" fill="#F59E0B"/>
+    <path d="M 109 72 L 131 72 L 128 65 L 112 65 Z" fill="#D97706"/> <!-- Helmet visor detail -->
+
+    <!-- Shield core star / anchor of unwavering loyalty -->
+    <polygon points="120,98 123,106 131,107 125,113 127,121 120,117 113,121 115,113 109,107 117,106" fill="#111827"/>
+    
+    <!-- Crossed elements / Pillar lines for steadfast support -->
+    <line x1="120" y1="48" x2="120" y2="173" stroke="#F59E0B" stroke-width="2" stroke-dasharray="4 4" opacity="0.4"/>
+  </g>
+
+  <!-- High-contrast light accents on top edges for sleek modern finish -->
+  <path d="M 120 40 C 145 40, 175 52, 183 75" stroke="#FBBF24" stroke-width="3" stroke-linecap="round" fill="none"/>
+</svg>

@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Hall Interior Architecture -->
+  <path d="M48 180 L192 180 L204 196 L36 196 Z" fill="#252A34"/>
+  <path d="M36 44 L204 44 L192 180 L48 180 Z" fill="#212630"/>
+
+  <!-- Wall Paneling & Lighting Lines -->
+  <line x1="48" y1="44" x2="24" y2="196" stroke="#2C3240" stroke-width="2"/>
+  <line x1="192" y1="44" x2="216" y2="196" stroke="#2C3240" stroke-width="2"/>
+  <line x1="120" y1="44" x2="120" y2="180" stroke="#2C3240" stroke-width="2"/>
+
+  <!-- Stage / Podium Area -->
+  <rect x="72" y="110" width="96" height="40" rx="4" fill="#2E3646"/>
+  <rect x="88" y="130" width="64" height="50" fill="#363E50"/>
+  <polygon points="80,130 160,130 152,110 88,110" fill="#3B4457"/>
+  <!-- Focus Accent on Podium -->
+  <path d="M110 115 L130 115 L132 125 L108 125 Z" fill="#E5A93B"/>
+
+  <!-- Seating Rows (Perspective) -->
+  <!-- Row 3 (Back) -->
+  <rect x="56" y="156" width="128" height="6" rx="2" fill="#3B4457"/>
+  <rect x="62" y="148" width="12" height="10" fill="#2B313D"/>
+  <rect x="84" y="148" width="12" height="10" fill="#2B313D"/>
+  <rect x="106" y="148" width="12" height="10" fill="#2B313D"/>
+  <rect x="122" y="148" width="12" height="10" fill="#2B313D"/>
+  <rect x="144" y="148" width="12" height="10" fill="#2B313D"/>
+  <rect x="166" y="148" width="12" height="10" fill="#2B313D"/>
+
+  <!-- Row 2 (Middle) -->
+  <rect x="48" y="172" width="144" height="8" rx="2" fill="#475267"/>
+  <rect x="56" y="162" width="14" height="12" fill="#313845"/>
+  <rect x="82" y="162" width="14" height="12" fill="#313845"/>
+  <rect x="108" y="162" width="14" height="12" fill="#313845"/>
+  <rect x="118" y="162" width="14" height="12" fill="#313845"/>
+  <rect x="144" y="162" width="14" height="12" fill="#313845"/>
+  <rect x="170" y="162" width="14" height="12" fill="#313845"/>
+
+  <!-- Grand Screen / Display on Back Wall -->
+  <rect x="68" y="56" width="104" height="48" rx="3" fill="#171A21" stroke="#363E50" stroke-width="2"/>
+  <!-- Graphic inside screen (Abstract presentation charts) -->
+  <polyline points="80,88 94,76 108,82 122,68 136,78 150,64 160,70" fill="none" stroke="#E5A93B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="150" cy="64" r="3" fill="#E5A93B"/>
+
+  <!-- Ambient Conference Hall Lighting / Spotlights -->
+  <polygon points="120,0 60,44 180,44" fill="#E5A93B" opacity="0.06"/>
+  <circle cx="120" cy="44" r="8" fill="#E5A93B" opacity="0.8"/>
+  <circle cx="120" cy="44" r="4" fill="#FFFFFF"/>
+
+  <!-- Foreground Frame / Subtle Vignette -->
+  <rect x="12" y="12" width="216" height="216" rx="16" fill="none" stroke="#2C3240" stroke-width="2" opacity="0.5"/>
+</svg>

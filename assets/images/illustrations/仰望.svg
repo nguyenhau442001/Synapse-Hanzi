@@ -1,0 +1,68 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Starry Sky Background -->
+  <g fill="#FFFFFF" opacity="0.8">
+    <circle cx="40" cy="35" r="1" />
+    <circle cx="70" cy="50" r="1.5" opacity="0.5" />
+    <circle cx="105" cy="25" r="1" />
+    <circle cx="140" cy="45" r="2" opacity="0.9" />
+    <circle cx="185" cy="30" r="1" />
+    <circle cx="210" cy="60" r="1.5" />
+    <circle cx="30" cy="85" r="1.5" />
+    <circle cx="65" cy="100" r="1" opacity="0.4" />
+    <circle cx="200" cy="95" r="2" />
+    <circle cx="225" cy="80" r="1" />
+  </g>
+
+  <!-- Milky Way / Cosmic Dust (Curved Band) -->
+  <path d="M-10,120 Q80,70 250,20 L250,50 Q100,100 -10,140 Z" fill="#3D4F7C" opacity="0.3"/>
+  <path d="M-10,105 Q90,55 250,10 L250,30 Q90,75 -10,120 Z" fill="#6C5CE7" opacity="0.2"/>
+
+  <!-- Distant Glowing Stars / Constellation Points -->
+  <g fill="#FFD700">
+    <circle cx="150" cy="35" r="1.5" />
+    <circle cx="165" cy="25" r="2" />
+    <circle cx="180" cy="40" r="1.2" />
+  </g>
+
+  <!-- Snow Mountain Peaks (Background) -->
+  <polygon points="10,180 60,110 110,180" fill="#2C3545" />
+  <polygon points="50,180 120,80 190,180" fill="#323D4E" />
+  <polygon points="140,180 190,120 240,180" fill="#28303D" />
+
+  <!-- Snow Caps -->
+  <path d="M60,110 L75,135 L68,140 L60,130 L53,137 L48,125 Z" fill="#E2E8F0" opacity="0.9"/>
+  <path d="M120,80 L140,115 L130,120 L120,105 L110,118 L100,100 Z" fill="#F1F5F9" />
+  <path d="M190,120 L205,145 L195,150 L190,140 L180,146 Z" fill="#E2E8F0" opacity="0.9"/>
+
+  <!-- Foreground Snowy Ground / Hill -->
+  <path d="M-10,180 Q60,165 120,175 Q180,185 250,170 L250,240 L-10,240 Z" fill="#1E2530"/>
+  <path d="M-10,180 Q60,165 120,175 Q180,185 250,170 L250,185 Q180,200 120,190 Q60,180 -10,195 Z" fill="#E2E8F0" opacity="0.15"/>
+
+  <!-- Central Character (Standing and Gazing Up) -->
+  <!-- Body / Coat -->
+  <path d="M112,145 L128,145 L132,190 L108,190 Z" fill="#4A5568" />
+  <path d="M110,145 L130,145 L135,175 L105,175 Z" fill="#2D3748" />
+
+  <!-- Scarf -->
+  <path d="M112,142 C115,148 125,148 128,142 L125,155 C120,157 115,157 112,155 Z" fill="#FF7675" />
+  <path d="M125,148 L132,165 L125,168 L120,152 Z" fill="#FF7675" />
+
+  <!-- Head (Tilted Upward) -->
+  <circle cx="121" cy="132" r="10" fill="#EDF2F7" />
+  <!-- Hair -->
+  <path d="M111,130 C111,122 120,121 127,125 C130,127 131,132 131,132 C131,132 125,126 117,127 C113,128 111,130 111,130 Z" fill="#2D3748" />
+
+  <!-- Focus / Vision Line (Subtle upward glowing cone towards the stars) -->
+  <path d="M121,125 L155,40 L85,40 Z" fill="url(#gazeGlow)" opacity="0.15"/>
+
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="gazeGlow" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,19 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Water/Ocean base -->
+  <path d="M0 160 Q 60 140, 120 160 T 240 160 L 240 240 L 0 240 Z" fill="#2C3E50" opacity="0.8"/>
+  
+  <!-- Reef structure (The "礁石") -->
+  <path d="M70 200 L 90 100 L 110 130 L 130 80 L 160 110 L 180 200 Z" fill="#4A5568" stroke="#718096" stroke-width="2"/>
+  <path d="M80 190 L 100 120 L 120 140 L 140 100 L 170 190 Z" fill="#2D3748"/>
+  
+  <!-- Sea foam/waves crashing -->
+  <path d="M60 160 C 70 140, 90 140, 100 160 C 110 140, 130 140, 140 160 C 150 140, 170 140, 180 160" fill="none" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="80" cy="150" r="6" fill="#E2E8F0"/>
+  <circle cx="120" cy="155" r="8" fill="#E2E8F0"/>
+  <circle cx="160" cy="150" r="5" fill="#E2E8F0"/>
+  
+  <!-- Highlight on reef -->
+  <path d="M130 80 L 135 95 L 160 110 L 130 80" fill="#F6AD55" opacity="0.6"/>
+</svg>

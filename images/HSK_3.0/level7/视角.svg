@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(40, 40)">
+    <!-- Camera Body -->
+    <rect x="20" y="60" width="120" height="80" rx="8" fill="#3D4451"/>
+    <rect x="140" y="75" width="10" height="50" rx="2" fill="#2A2E38"/>
+    
+    <!-- Lens -->
+    <circle cx="80" cy="100" r="35" fill="#2A2E38"/>
+    <circle cx="80" cy="100" r="25" fill="#1A1D24"/>
+    <circle cx="80" cy="100" r="15" fill="#FFB84D"/>
+    
+    <!-- Viewfinder/Top -->
+    <rect x="40" y="40" width="30" height="20" rx="4" fill="#3D4451"/>
+    
+    <!-- Perspective Lines (Representing the "Angle/View") -->
+    <path d="M160 100 L220 40 M160 100 L220 160" stroke="#FFB84D" stroke-width="4" stroke-linecap="round"/>
+    <path d="M220 40 L220 160" stroke="#FFB84D" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Hand holding camera -->
+    <path d="M10 140 C10 160, 30 170, 40 170 L60 170 C70 170, 80 160, 80 140" fill="#E0E0E0"/>
+  </g>
+</svg>

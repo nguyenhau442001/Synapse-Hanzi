@@ -1,0 +1,59 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background winter atmosphere / snowflakes -->
+  <g opacity="0.3" fill="#A4C2F4">
+    <circle cx="45" cy="50" r="2" />
+    <circle cx="195" cy="40" r="1.5" />
+    <circle cx="210" cy="110" r="2" />
+    <circle cx="30" cy="130" r="1.5" />
+    <circle cx="60" cy="190" r="2" />
+    <circle cx="180" cy="200" r="2" />
+  </g>
+
+  <!-- Ground snow mound -->
+  <path d="M 0 210 Q 60 200, 120 208 Q 180 216, 240 205 L 240 240 L 0 240 Z" fill="#2E384D"/>
+
+  <!-- Character Head & Winter Gear -->
+  <!-- Winter scarf base (wrapped around neck) -->
+  <path d="M 85 155 Q 120 175, 155 155 L 160 175 Q 120 200, 80 175 Z" fill="#E056FD"/>
+  <path d="M 125 170 L 135 210 L 115 212 L 110 172 Z" fill="#E056FD"/>
+
+  <!-- Winter hat (Beanie) -->
+  <path d="M 80 95 Q 120 35, 160 95 Z" fill="#48DBFB"/>
+  <!-- Beanie rim/fold -->
+  <rect x="76" y="90" width="88" height="18" rx="6" fill="#0ABDE3"/>
+  <!-- Pompom on hat -->
+  <circle cx="120" cy="38" r="12" fill="#FF9F43"/>
+
+  <!-- Face / Head shape -->
+  <rect x="85" y="85" width="70" height="85" rx="35" fill="#FFEAA7"/>
+
+  <!-- Ears -->
+  <circle cx="82" cy="125" r="8" fill="#FFEAA7"/>
+  <circle cx="158" cy="125" r="8" fill="#FFEAA7"/>
+
+  <!-- Chubby flushed cheeks (VISUAL CONTRAST/EXAGGERATION for "红扑扑" - glowing vibrant pink/red circles) -->
+  <circle cx="100" cy="138" r="15" fill="#FF6B6B" opacity="0.85"/>
+  <circle cx="140" cy="138" r="15" fill="#FF6B6B" opacity="0.85"/>
+  <circle cx="100" cy="138" r="8" fill="#FF4757" opacity="0.5"/>
+  <circle cx="140" cy="138" r="8" fill="#FF4757" opacity="0.5"/>
+
+  <!-- Eyes (Happy closed arcs) -->
+  <path d="M 100 115 Q 107 108, 114 115" stroke="#2D3436" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M 126 115 Q 133 108, 140 115" stroke="#2D3436" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Nose -->
+  <circle cx="120" cy="127" r="3" fill="#E1B12C"/>
+
+  <!-- Mouth (Happy open smile) -->
+  <path d="M 110 144 Q 120 156, 130 144" fill="#2D3436"/>
+
+  <!-- Snowflakes gently resting on hat/shoulders -->
+  <g fill="#FFFFFF" opacity="0.9">
+    <circle cx="105" cy="55" r="3"/>
+    <circle cx="145" cy="70" r="2.5"/>
+    <circle cx="70" cy="115" r="2"/>
+  </g>
+</svg>

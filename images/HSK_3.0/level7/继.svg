@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative Contextual Background Elements (Olympic/Success theme representation) -->
+  <circle cx="120" cy="120" r="85" fill="none" stroke="#2A2F3D" stroke-width="2" stroke-dasharray="4 4" opacity="0.6"/>
+
+  <!-- Olympic Rings / Success Continuation Motif -->
+  <!-- First Torch / Event 1 (Summer - Gold/Orange vibe) -->
+  <g transform="translate(65, 80)">
+    <!-- Flame -->
+    <path d="M 15 0 C 15 -12 22 -20 20 -30 C 18 -40 5 -35 10 -20 C 12 -13 0 -5 15 0 Z" fill="#F5A623"/>
+    <path d="M 15 -5 C 15 -12 20 -18 18 -24 C 16 -30 10 -26 12 -16 C 14 -11 8 -7 15 -5 Z" fill="#FFD166"/>
+    <!-- Torch Handle -->
+    <path d="M 10 0 L 20 0 L 18 35 L 12 35 Z" fill="#D0D7DE"/>
+    <rect x="9" y="35" width="12" height="6" rx="2" fill="#8C95A1"/>
+  </g>
+
+  <!-- Continuation Arrow / Baton Pass -->
+  <path d="M 95 105 Q 120 85 145 105" fill="none" stroke="#00F2FE" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 6"/>
+  <polygon points="142,100 152,107 142,114" fill="#00F2FE"/>
+
+  <!-- Second Torch / Event 2 (Winter - Blue/Cyan glowing succession) -->
+  <g transform="translate(145, 80)">
+    <!-- Flame -->
+    <path d="M 15 0 C 15 -12 22 -20 20 -30 C 18 -40 5 -35 10 -20 C 12 -13 0 -5 15 0 Z" fill="#00F2FE"/>
+    <path d="M 15 -5 C 15 -12 20 -18 18 -24 C 16 -30 10 -26 12 -16 C 14 -11 8 -7 15 -5 Z" fill="#E0FBFC"/>
+    <!-- Torch Handle -->
+    <path d="M 10 0 L 20 0 L 18 35 L 12 35 Z" fill="#D0D7DE"/>
+    <rect x="9" y="35" width="12" height="6" rx="2" fill="#8C95A1"/>
+  </g>
+
+  <!-- Central Physical Object: The Relay Baton (继 - Continuing / Passing the torch) -->
+  <g transform="translate(0, 30)">
+    <!-- Dynamic angled relay baton representing seamless continuation -->
+    <rect x="75" y="115" width="90" height="22" rx="11" fill="#F5A623" transform="rotate(-15 120 126)" stroke="#1A1D24" stroke-width="2"/>
+    <!-- Metallic Grip Details on Baton -->
+    <rect x="110" y="115" width="20" height="22" fill="#E67E22" transform="rotate(-15 120 126)" opacity="0.5"/>
+    <line x1="90" y1="110" x2="100" y2="137" stroke="#FFF" stroke-width="2" opacity="0.4" stroke-linecap="round"/>
+    <line x1="140" y1="97" x2="150" y2="124" stroke="#FFF" stroke-width="2" opacity="0.4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Ground / Base Anchor Line -->
+  <path d="M 70 190 L 170 190" stroke="#374151" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="120" cy="190" r="4" fill="#00F2FE"/>
+</svg>

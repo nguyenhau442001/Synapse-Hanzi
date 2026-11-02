@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Water/River Flow -->
+  <path d="M0 160 C 60 140, 120 180, 240 160 L 240 240 L 0 240 Z" fill="#2C3E50"/>
+  <path d="M0 180 C 80 160, 160 200, 240 180 L 240 240 L 0 240 Z" fill="#34495E"/>
+  
+  <!-- Raft -->
+  <path d="M80 150 L 160 150 L 170 175 L 70 175 Z" fill="#E67E22"/>
+  <path d="M85 155 L 155 155 L 162 170 L 78 170 Z" fill="#D35400"/>
+  
+  <!-- Person -->
+  <circle cx="120" cy="135" r="12" fill="#F1C40F"/>
+  <path d="M108 145 L 132 145 L 135 165 L 105 165 Z" fill="#3498DB"/>
+  
+  <!-- Oar -->
+  <path d="M140 140 L 180 120" stroke="#BDC3C7" stroke-width="4" stroke-linecap="round"/>
+  <path d="M180 120 L 195 115 L 190 135 Z" fill="#BDC3C7"/>
+  
+  <!-- Splash/Motion -->
+  <path d="M160 170 Q 170 160 180 170" stroke="#5DADE2" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M60 170 Q 70 160 80 170" stroke="#5DADE2" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

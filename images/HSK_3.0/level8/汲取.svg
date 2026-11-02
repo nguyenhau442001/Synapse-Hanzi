@@ -1,0 +1,51 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Deep strata / experiences (stacked flat layers representing past work and experiences) -->
+    <path d="M 60,180 L 180,180 L 170,200 L 70,200 Z" fill="#2A303C" opacity="0.6"/>
+    <path d="M 50,155 L 190,155 L 180,175 L 60,175 Z" fill="#313A48" opacity="0.8"/>
+    <path d="M 40,130 L 200,130 L 190,150 L 50,150 Z" fill="#3A4454"/>
+    
+    <!-- Highlights within strata (representing lessons/wisdom embedded in experience) -->
+    <circle cx="85" cy="140" r="3" fill="#F59E0B" opacity="0.6"/>
+    <circle cx="110" cy="165" r="3" fill="#3B82F6" opacity="0.6"/>
+    <circle cx="150" cy="140" r="3" fill="#F59E0B" opacity="0.6"/>
+    <circle cx="130" cy="190" r="3" fill="#3B82F6" opacity="0.6"/>
+    <circle cx="165" cy="165" r="3" fill="#F59E0B" opacity="0.6"/>
+    
+    <!-- Central extraction vessel / filter / alembic core (Physical object representing the distillation of wisdom/strength) -->
+    <!-- Glass/flask body -->
+    <path d="M 95,85 L 145,85 L 165,130 C 170,140 165,150 150,150 L 90,150 C 75,150 70,140 75,130 Z" fill="#242B35" stroke="#4B5563" stroke-width="2.5" stroke-linejoin="round"/>
+    
+    <!-- Flask neck and opening -->
+    <rect x="106" y="60" width="28" height="25" rx="3" fill="#242B35" stroke="#4B5563" stroke-width="2.5"/>
+    <ellipse cx="120" cy="60" rx="14" ry="4" fill="#313A48" stroke="#4B5563" stroke-width="2"/>
+    
+    <!-- Glowing extracted essence inside the vessel (Wisdom & Strength) -->
+    <path d="M 83,132 C 83,125 90,120 98,120 L 142,120 C 150,120 157,125 157,132 L 150,145 C 145,148 135,148 120,148 C 105,148 95,148 90,145 Z" fill="#F59E0B"/>
+    <ellipse cx="120" cy="134" rx="22" ry="6" fill="#FBBF24"/>
+    
+    <!-- Glowing core bubble -->
+    <circle cx="120" cy="132" r="5" fill="#FEF3C7"/>
+    
+    <!-- Extraction siphon / conduit tube drawing up the essence from the ground layers -->
+    <path d="M 120,120 L 120,175" stroke="#3B82F6" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 120,120 L 120,175" stroke="#60A5FA" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Upward rising energy droplets / distilled wisdom flowing into the vessel -->
+    <circle cx="120" cy="103" r="3.5" fill="#F59E0B"/>
+    <circle cx="120" cy="90" r="2.5" fill="#FBBF24"/>
+    
+    <!-- Ambient glowing aura representing dynamic "汲取" (absorbing/drawing out) action -->
+    <path d="M 100,45 C 100,38 110,30 120,30 C 130,30 140,38 140,45" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 108,38 L 120,25 L 132,38" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Radiating energetic sparks representing vitality and strength gained -->
+    <path d="M 75,75 L 85,82" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 165,75 L 155,82" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 68,110 L 80,113" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 172,110 L 160,113" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

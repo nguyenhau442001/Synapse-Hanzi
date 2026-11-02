@@ -1,0 +1,24 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(60, 45)">
+    <!-- Medicine Bottle / Prescription Drug context -->
+    <rect x="22" y="25" width="76" height="95" rx="10" fill="#2E384D"/>
+    <rect x="34" y="10" width="52" height="20" rx="4" fill="#64748B"/>
+    <path d="M 37 55 L 83 55 L 83 95 L 37 95 Z" fill="#F8FAFC"/>
+    <!-- Prescription Cross -->
+    <rect x="53" y="66" width="14" height="6" rx="2" fill="#3B82F6"/>
+    <rect x="57" y="62" width="6" height="14" rx="2" fill="#3B82F6"/>
+
+    <!-- Wine Glass representing alcohol (Drinking prohibited) -->
+    <path d="M 10 90 L 40 90 L 32 125 L 18 125 Z" fill="#94A3B8"/>
+    <rect x="22" y="125" width="8" height="15" fill="#64748B"/>
+    <rect x="12" y="140" width="28" height="5" rx="2.5" fill="#64748B"/>
+    <!-- Wine Liquid -->
+    <path d="M 13 97 L 37 97 L 33 118 L 17 118 Z" fill="#881337"/>
+
+    <!-- Large Prohibition / "忌" (Avoid) Red Universal Stop Sign over the wine -->
+    <circle cx="25" cy="115" r="42" fill="none" stroke="#EF4444" stroke-width="12"/>
+    <line x1="5" y1="95" x2="45" y2="135" stroke="#EF4444" stroke-width="12" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background elements: Global map silhouette -->
+  <path d="M60 120 C 60 90, 180 90, 180 120 C 180 150, 60 150, 60 120" fill="#2A2F38" opacity="0.5"/>
+  
+  <!-- The "Searcher" (Recruiter/Headhunter) -->
+  <g transform="translate(120, 120)">
+    <!-- Magnifying glass focus -->
+    <circle cx="20" cy="-20" r="25" fill="none" stroke="#FFB84D" stroke-width="3" stroke-dasharray="6 4"/>
+    
+    <!-- Human hand holding the glass -->
+    <path d="M5 5 L 35 35" stroke="#E0E0E0" stroke-width="6" stroke-linecap="round"/>
+    <path d="M35 35 L 45 45" stroke="#E0E0E0" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- The "Talent" (Candidate silhouette being selected) -->
+    <circle cx="20" cy="-20" r="12" fill="#FFB84D"/>
+    <path d="M12 -10 L 28 -10 C 28 -5, 12 -5, 12 -10" fill="#1A1D24"/>
+  </g>
+  
+  <!-- Motion lines indicating scanning/searching -->
+  <path d="M80 80 Q 120 60 160 80" fill="none" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+  <path d="M80 160 Q 120 180 160 160" fill="none" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Selection markers -->
+  <circle cx="180" cy="60" r="4" fill="#FFB84D"/>
+  <circle cx="60" cy="180" r="4" fill="#FFB84D"/>
+  <circle cx="190" cy="170" r="4" fill="#FFB84D"/>
+</svg>

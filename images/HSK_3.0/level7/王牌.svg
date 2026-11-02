@@ -1,0 +1,57 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle glowing background accent behind the ace card -->
+  <circle cx="120" cy="120" r="75" fill="#FFB703" opacity="0.08"/>
+  <circle cx="120" cy="120" r="45" fill="#FFB703" opacity="0.12"/>
+
+  <!-- Playing Card Background (Sleek Dark Mode Card) -->
+  <g transform="rotate(-6 120 120)">
+    <!-- Card Shadow/Back -->
+    <rect x="72" y="44" width="96" height="152" rx="12" fill="#111318" stroke="#2A2F3D" stroke-width="2"/>
+    <!-- Card Main Surface -->
+    <rect x="70" y="42" width="96" height="152" rx="12" fill="#222733" stroke="#3A4255" stroke-width="2"/>
+  </g>
+
+  <!-- Main Foreground Card (The Ace Trump) -->
+  <g transform="rotate(3 120 120)">
+    <!-- Main Card Body -->
+    <rect x="70" y="42" width="96" height="152" rx="12" fill="#2A303C" stroke="#FFB703" stroke-width="3"/>
+    
+    <!-- Inner subtle border line -->
+    <rect x="76" y="48" width="84" height="140" rx="8" fill="none" stroke="#3A445C" stroke-width="1" opacity="0.5"/>
+
+    <!-- Corner Symbols (Top-Left 'A') -->
+    <text x="83" y="65" font-family="Arial, sans-serif" font-weight="900" font-size="16" fill="#FFB703">A</text>
+    <path d="M86 73 L89 77 L83 77 Z" fill="#FFB703"/>
+
+    <!-- Corner Symbols (Bottom-Right 'A' - Rotated) -->
+    <g transform="rotate(180 118 118)">
+      <text x="83" y="65" font-family="Arial, sans-serif" font-weight="900" font-size="16" fill="#FFB703">A</text>
+      <path d="M86 73 L89 77 L83 77 Z" fill="#FFB703"/>
+    </g>
+
+    <!-- Central Elite Graphic: Crown & Star representing "Trump / Ace" (王牌) -->
+    <!-- Central Shield / Backdrop -->
+    <path d="M120 72 L144 86 V118 C144 136 120 152 120 152 C120 152 96 136 96 118 V86 Z" fill="#1C212B" stroke="#FFB703" stroke-width="2"/>
+    
+    <!-- Central Crown -->
+    <path d="M106 102 L110 116 L120 108 L130 116 L134 102 L138 118 H102 Z" fill="#FFB703"/>
+    <circle cx="106" cy="99" r="2.5" fill="#FFB703"/>
+    <circle cx="120" cy="96" r="2.5" fill="#FFB703"/>
+    <circle cx="134" cy="99" r="2.5" fill="#FFB703"/>
+
+    <!-- Central Star (Core Competence / High Tech Ace Symbol) -->
+    <path d="M120 118 L123.5 125.5 L131.5 126.5 L125.5 132 L127 140 L120 136 L113 140 L114.5 132 L108.5 126.5 L116.5 125.5 Z" fill="#FFD166"/>
+  </g>
+
+  <!-- High-tech circuit accents floating around the card (linking to high-tech core competitiveness context) -->
+  <circle cx="48" cy="80" r="3" fill="#FFB703" opacity="0.8"/>
+  <path d="M48 83 V95 H64" fill="none" stroke="#FFB703" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="64" cy="95" r="1.5" fill="#FFB703" opacity="0.8"/>
+
+  <circle cx="192" cy="155" r="3" fill="#FFB703" opacity="0.8"/>
+  <path d="M192 152 V140 H176" fill="none" stroke="#FFB703" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="176" cy="140" r="1.5" fill="#FFB703" opacity="0.8"/>
+</svg>

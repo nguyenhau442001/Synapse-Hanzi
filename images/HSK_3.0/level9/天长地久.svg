@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Graphic: A grand, everlasting archway/gate merging Heaven and Earth (representing 天长地久 - eternity of heaven and earth, enduring vows) -->
+  <g transform="translate(0, 0)">
+    <!-- Atmospheric glow / eternal horizon line -->
+    <path d="M 30,160 L 210,160" stroke="#2D323E" stroke-width="2" stroke-dasharray="4 4" />
+    
+    <!-- Foundation (Earth - 地) -->
+    <path d="M 50,180 L 190,180 L 175,160 L 65,160 Z" fill="#2E3544" />
+    <rect x="70" y="150" width="100" height="10" rx="2" fill="#E5A93B" opacity="0.8"/>
+
+    <!-- Pillars (Time - 长) -->
+    <!-- Left Pillar -->
+    <path d="M 75,70 L 95,70 L 95,150 L 75,150 Z" fill="#363E52" />
+    <path d="M 78,80 L 92,80 L 92,140 L 78,140 Z" fill="#E5A93B" opacity="0.3" />
+    
+    <!-- Right Pillar -->
+    <path d="M 145,70 L 165,70 L 165,150 L 145,150 Z" fill="#363E52" />
+    <path d="M 148,80 L 162,80 L 162,140 L 148,140 Z" fill="#E5A93B" opacity="0.3" />
+
+    <!-- Eternal Arch (Heaven - 天) -->
+    <path d="M 60,70 Q 120,20 180,70 L 175,80 Q 120,35 65,80 Z" fill="#E5A93B" />
+    
+    <!-- Celestial / Eternal Symbol at the peak (Infinity / Sun & Mountain integration) -->
+    <circle cx="120" cy="55" r="16" fill="#1A1D24" />
+    <circle cx="120" cy="55" r="10" fill="#E5A93B" />
+    <path d="M 112,55 L 128,55" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Central physical object of enduring commitment: Two intertwined classic wedding rings resting on a ceremonial pedestal -->
+    <ellipse cx="120" cy="155" rx="35" ry="6" fill="#15181E" />
+    
+    <!-- Ring 1 (Left) -->
+    <circle cx="112" cy="140" r="14" fill="none" stroke="#E5A93B" stroke-width="4" />
+    <!-- Ring 2 (Right) -->
+    <circle cx="128" cy="140" r="14" fill="none" stroke="#F4C46A" stroke-width="4" />
+    <!-- Gem sparkle on rings -->
+    <circle cx="120" cy="124" r="2.5" fill="#FFFFFF" />
+
+    <!-- Subtle supporting elements: Everlasting laurel leaves framing the base -->
+    <path d="M 90,170 Q 75,160 85,150" fill="none" stroke="#4E9F3D" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 150,170 Q 165,160 155,150" fill="none" stroke="#4E9F3D" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>

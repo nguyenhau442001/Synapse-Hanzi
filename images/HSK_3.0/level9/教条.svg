@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Central Icon: Rigid, identical, stamped mechanical books (representing Dogma / 教条) -->
+  <g transform="translate(0, 5)">
+    <!-- Book 3 (Back-most layer for depth) -->
+    <g transform="translate(62, 55)">
+      <rect x="0" y="0" width="80" height="110" rx="6" fill="#2A303C"/>
+      <rect x="12" y="15" width="56" height="6" rx="3" fill="#3E4756"/>
+      <rect x="12" y="30" width="40" height="6" rx="3" fill="#3E4756"/>
+      <!-- Lock/Rigid Stamp Icon -->
+      <circle cx="95" cy="55" r="16" fill="#D97706"/>
+      <path d="M91 55 L99 55 M95 51 L95 59" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Book 2 (Middle layer) -->
+    <g transform="translate(72, 60)">
+      <rect x="0" y="0" width="80" height="110" rx="6" fill="#333D4F"/>
+      <rect x="12" y="15" width="56" height="6" rx="3" fill="#4B566D"/>
+      <rect x="12" y="30" width="40" height="6" rx="3" fill="#4B566D"/>
+      <rect x="12" y="45" width="48" height="6" rx="3" fill="#4B566D"/>
+    </g>
+
+    <!-- Book 1 (Front-most layer, sharp mechanical stiffness) -->
+    <g transform="translate(82, 65)">
+      <!-- Main Cover -->
+      <rect x="0" y="0" width="80" height="110" rx="6" fill="#F59E0B"/>
+      <!-- Spine shadow effect -->
+      <rect x="0" y="0" width="10" height="110" fill="#D97706" rx="3"/>
+      <!-- Rigid text/line block placeholders -->
+      <rect x="20" y="18" width="44" height="6" rx="3" fill="#1A1D24" opacity="0.8"/>
+      <rect x="20" y="34" width="34" height="5" rx="2.5" fill="#1A1D24" opacity="0.6"/>
+      <rect x="20" y="47" width="40" height="5" rx="2.5" fill="#1A1D24" opacity="0.6"/>
+      <rect x="20" y="60" width="28" height="5" rx="2.5" fill="#1A1D24" opacity="0.6"/>
+      
+      <!-- Stamp / Rigid Seal overlay symbolizing rigid doctrine -->
+      <circle cx="56" cy="85" r="16" fill="#1A1D24"/>
+      <path d="M48 85 L53 90 L64 78" fill="none" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Mechanical / Rigid bracket framing to emphasize inflexibility -->
+    <path d="M 52,50 L 42,50 L 42,190 L 52,190" fill="none" stroke="#4B566D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 188,50 L 198,50 L 198,190 L 188,190" fill="none" stroke="#4B566D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

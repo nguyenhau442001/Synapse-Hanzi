@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Horizon Line -->
+  <path d="M0 160 L240 160" stroke="#2D343E" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- The "Old Era" (Left side, fading) -->
+  <path d="M40 160 L80 160 L60 120 Z" fill="#3A404D"/>
+  <circle cx="60" cy="100" r="15" fill="#3A404D"/>
+  
+  <!-- The "New Era" (Right side, vibrant) -->
+  <path d="M160 160 L200 160 L180 80 Z" fill="#FFB800"/>
+  <circle cx="180" cy="60" r="25" fill="#FFB800"/>
+  
+  <!-- The Action: A human hand "cutting" or "opening" the timeline -->
+  <g transform="translate(100, 140)">
+    <!-- Arm -->
+    <path d="M0 0 L40 -40" stroke="#E0E0E0" stroke-width="8" stroke-linecap="round"/>
+    <!-- Hand -->
+    <path d="M40 -40 L55 -55 L45 -65 L30 -50 Z" fill="#E0E0E0"/>
+    <!-- Motion Lines indicating the "break" -->
+    <path d="M80 -20 L110 -50" stroke="#FFB800" stroke-width="3" stroke-linecap="round"/>
+    <path d="M85 -10 L115 -40" stroke="#FFB800" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- The "New Era" light burst effect -->
+  <path d="M180 60 L180 40 M180 60 L200 60 M180 60 L160 60" stroke="#FFB800" stroke-width="4" stroke-linecap="round"/>
+</svg>

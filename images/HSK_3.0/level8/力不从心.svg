@@ -1,0 +1,39 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle lighting / floor shadow -->
+  <ellipse cx="120" cy="205" rx="70" ry="8" fill="#111318"/>
+
+  <!-- Character / Athlete Body representing "力不从心" (Willing, but physically unable) -->
+  <!-- Legs / Stance -->
+  <path d="M95 160 L85 200 L72 200" stroke="#3A4252" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M145 160 L155 200 L168 200" stroke="#3A4252" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- Torso leaning forward slightly -->
+  <path d="M110 115 L120 160 L95 160 Z" fill="#2E384A"/>
+  
+  <!-- Head -->
+  <circle cx="102" cy="95" r="14" fill="#E0A96D"/>
+  
+  <!-- Back Arm (Drooping, tired) -->
+  <path d="M105 125 L90 155 L75 150" stroke="#E0A96D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Heavy Glowing/Glowing-Edge Object (The "Mind/Desire" - Bright Gold/Orange) representing intention -->
+  <circle cx="155" cy="95" r="22" fill="#FF8C42" opacity="0.15"/>
+  <circle cx="155" cy="95" r="16" fill="#FF8C42"/>
+  <path d="M147 95 L153 101 L165 89" stroke="#1A1D24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Front Arm reaching desperately forward/up toward the goal, but falling short -->
+  <!-- Shoulder to elbow extending forward -->
+  <path d="M125 120 L140 110" stroke="#E0A96D" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <!-- Forearm dangling down powerless, unable to reach -->
+  <path d="M140 110 L144 135" stroke="#E0A96D" stroke-width="7" stroke-linecap="round" fill="none"/>
+
+  <!-- Exhaustion / Fatigue indicators (Modern flat sweat drops) -->
+  <path d="M85 85 C85 85 80 92 80 96 C80 98.2 81.8 100 84 100 C86.2 100 88 98.2 88 96 C88 92 85 85 85 85 Z" fill="#4DA8DA"/>
+  
+  <!-- Subtle falling dotted line showing the struggle/disconnect -->
+  <line x1="144" y1="120" x2="149" y2="90" stroke="#FF8C42" stroke-width="2" stroke-dasharray="3,3" opacity="0.6"/>
+
+</svg>

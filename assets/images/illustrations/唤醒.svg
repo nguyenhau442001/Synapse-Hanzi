@@ -1,0 +1,54 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Glow representing morning light breaking through darkness -->
+  <circle cx="120" cy="110" r="70" fill="#FFB703" opacity="0.08"/>
+  <circle cx="120" cy="110" r="45" fill="#FFB703" opacity="0.15"/>
+
+  <!-- Window Frame representing "清晨窗外" -->
+  <rect x="50" y="45" width="140" height="130" rx="6" fill="none" stroke="#2D323F" stroke-width="6"/>
+  <!-- Window Glass subtle gradient/sheen -->
+  <rect x="56" y="51" width="128" height="118" fill="#212630" opacity="0.5"/>
+  <!-- Window Pane Cross -->
+  <line x1="120" y1="51" x2="120" y2="169" stroke="#2D323F" stroke-width="4"/>
+  <line x1="56" y1="110" x2="184" y2="110" stroke="#2D323F" stroke-width="4"/>
+
+  <!-- Sunrise / Morning Ray entering window -->
+  <path d="M56 169 L120 110 L184 169 Z" fill="#FFB703" opacity="0.06"/>
+
+  <!-- The "唤醒" physical object: A sleek, modern Alarm Clock / Bell ringing sound representing awakening -->
+  <!-- Clock Body -->
+  <circle cx="120" cy="115" r="32" fill="#2E384D"/>
+  <circle cx="120" cy="115" r="26" fill="#F8FAFC"/>
+  
+  <!-- Clock Face details -->
+  <circle cx="120" cy="115" r="2" fill="#2E384D"/>
+  <polyline points="120,103 120,115 128,118" fill="none" stroke="#2E384D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Clock Legs -->
+  <line x1="106" y1="145" x2="100" y2="155" stroke="#8C9BAE" stroke-width="3" stroke-linecap="round"/>
+  <line x1="134" y1="145" x2="140" y2="155" stroke="#8C9BAE" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Clock Top Hammers and Bell -->
+  <path d="M108 85 Q120 75 132 85" fill="none" stroke="#8C9BAE" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="120" cy="79" r="4" fill="#8C9BAE"/>
+
+  <!-- Sound Waves / Ringing Action (Visualizing the crisp awakening sound/call) -->
+  <!-- Left sound waves -->
+  <path d="M84 98 Q78 105 84 112" fill="none" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M76 90 Q68 102 76 114" fill="none" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Right sound waves -->
+  <path d="M156 98 Q162 105 156 112" fill="none" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M164 90 Q172 102 164 114" fill="none" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Sleeping Zzz elements floating away / dissipating (transition from sleep to wake) -->
+  <g transform="translate(145, 70)" opacity="0.7">
+    <text x="0" y="0" font-family="sans-serif" font-weight="bold" font-size="12" fill="#8C9BAE">Z</text>
+    <text x="8" y="-8" font-family="sans-serif" font-weight="bold" font-size="9" fill="#8C9BAE" opacity="0.7">z</text>
+  </g>
+
+  <!-- Surface/Desk line -->
+  <line x1="40" y1="180" x2="200" y2="180" stroke="#2D323F" stroke-width="4" stroke-linecap="round"/>
+</svg>

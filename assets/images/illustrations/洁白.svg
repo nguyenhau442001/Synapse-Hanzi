@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background distant mountains -->
+  <path d="M0 160 L60 100 L120 140 L180 90 L240 130 L240 240 L0 240 Z" fill="#2C3440"/>
+  
+  <!-- The "洁白" snow layer - high contrast white against dark background -->
+  <path d="M0 180 C40 160, 80 190, 120 170 C160 150, 200 180, 240 160 L240 240 L0 240 Z" fill="#FFFFFF"/>
+  
+  <!-- Mountain peaks covered in snow (contrast exaggeration) -->
+  <path d="M60 100 L85 75 L110 100 Z" fill="#FFFFFF"/>
+  <path d="M180 90 L210 60 L240 90 Z" fill="#FFFFFF"/>
+  
+  <!-- Foreground detail: A single pristine, untouched snow surface -->
+  <path d="M20 210 C80 200, 160 220, 220 210 L220 235 C160 245, 80 225, 20 235 Z" fill="#E0E6ED"/>
+  
+  <!-- Accent: A small golden morning sun reflection on the snow to emphasize purity -->
+  <circle cx="190" cy="80" r="8" fill="#FFC107" opacity="0.8"/>
+  <path d="M190 65 L190 72 M190 88 L190 95 M175 80 L182 80 M198 80 L205 80" stroke="#FFC107" stroke-width="2" stroke-linecap="round"/>
+</svg>

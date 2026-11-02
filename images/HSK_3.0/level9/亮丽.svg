@@ -1,0 +1,74 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background subtle city skyline silhouette and road context -->
+  <path d="M 30 180 L 210 180" stroke="#2A303C" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M 40 180 L 70 130 L 85 130 L 105 180 Z" fill="#222732"/>
+  <path d="M 130 180 L 160 110 L 180 110 L 205 180 Z" fill="#222732"/>
+
+  <!-- Adjective Rule: Visual contrast & scale exaggeration (Dull/monochrome background vs Brilliant/vibrant foreground) -->
+  
+  <!-- Left side: Dull, muted evergreen foliage (Ordinary state) -->
+  <g opacity="0.4">
+    <path d="M 50 180 L 50 140 C 50 135 55 130 60 130 C 65 130 70 135 70 140 L 70 180 Z" fill="#3B4654"/>
+    <circle cx="60" cy="125" r="14" fill="#4B5664"/>
+    <circle cx="50" cy="135" r="10" fill="#4B5664"/>
+    <circle cx="70" cy="135" r="10" fill="#4B5664"/>
+  </g>
+
+  <!-- Right side: "亮丽" (Liànglì) - Exaggerated vibrant, brilliant, eye-catching floral landscape -->
+  <!-- Radiance / Glow effect behind the brilliant flowers -->
+  <circle cx="150" cy="130" r="45" fill="#FFC107" opacity="0.12" filter="blur(8px)"/>
+  <circle cx="150" cy="130" r="30" fill="#FF5722" opacity="0.15" filter="blur(6px)"/>
+
+  <!-- Rich green foliage base -->
+  <path d="M 130 180 L 130 145 C 130 138 138 132 145 132 C 152 132 160 138 160 145 L 160 180 Z" fill="#2E7D32"/>
+  <path d="M 155 180 L 155 150 C 155 144 161 138 168 138 C 175 138 181 144 181 150 L 181 180 Z" fill="#388E3C"/>
+
+  <!-- Magnified, vibrant, multicolored blossoms (竞相绽放的五彩鲜花) -->
+  <!-- Giant Vibrant Pink/Magenta Flower (Centerpiece) -->
+  <g transform="translate(150, 115)">
+    <circle cx="0" cy="-14" r="8" fill="#FF4081"/>
+    <circle cx="13" cy="-7" r="8" fill="#FF4081"/>
+    <circle cx="13" cy="7" r="8" fill="#FF4081"/>
+    <circle cx="0" cy="14" r="8" fill="#FF4081"/>
+    <circle cx="-13" cy="7" r="8" fill="#FF4081"/>
+    <circle cx="-13" cy="-7" r="8" fill="#FF4081"/>
+    <circle cx="0" cy="0" r="7" fill="#FFEB3B"/>
+  </g>
+
+  <!-- Vibrant Orange Accent Flower -->
+  <g transform="translate(118, 130)">
+    <circle cx="0" cy="-11" r="6" fill="#FF9800"/>
+    <circle cx="10" cy="-3" r="6" fill="#FF9800"/>
+    <circle cx="7" cy="9" r="6" fill="#FF9800"/>
+    <circle cx="-7" cy="9" r="6" fill="#FF9800"/>
+    <circle cx="-10" cy="-3" r="6" fill="#FF9800"/>
+    <circle cx="0" cy="0" r="5" fill="#FFF59D"/>
+  </g>
+
+  <!-- Vibrant Cyan/Blue Accent Flower -->
+  <g transform="translate(182, 135)">
+    <circle cx="0" cy="-10" r="5" fill="#00BCD4"/>
+    <circle cx="9" cy="-3" r="5" fill="#00BCD4"/>
+    <circle cx="6" cy="8" r="5" fill="#00BCD4"/>
+    <circle cx="-6" cy="8" r="5" fill="#00BCD4"/>
+    <circle cx="-9" cy="-3" r="5" fill="#00BCD4"/>
+    <circle cx="0" cy="0" r="4" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Sparkles / Eye-catching brilliance indicators (引人注目, 亮丽) -->
+  <path d="M 185 85 L 188 95 L 198 98 L 188 101 L 185 111 L 182 101 L 172 98 L 182 95 Z" fill="#FFD54F"/>
+  <path d="M 110 90 L 112 95 L 117 97 L 112 99 L 110 104 L 108 99 L 103 97 L 108 95 Z" fill="#FFD54F" transform="scale(0.8) translate(30, 0)"/>
+  <circle cx="135" cy="80" r="2.5" fill="#FFEB3B"/>
+  <circle cx="168" cy="95" r="2" fill="#FFEB3B"/>
+  <circle cx="100" cy="115" r="2" fill="#FFEB3B"/>
+
+  <!-- Ground Line -->
+  <rect x="20" y="180" width="200" height="4" rx="2" fill="#374151"/>
+
+  <!-- Focused contrast indicator: Arrow/bracket framing the striking vivid beauty -->
+  <path d="M 105 160 L 95 160 L 95 100 L 105 100" fill="none" stroke="#FFB300" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  <path d="M 195 160 L 205 160 L 205 100 L 195 100" fill="none" stroke="#FFB300" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  <circle cx="150" cy="95" r="3" fill="#FFB300" opacity="0.8"/>
+</svg>

@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Central Physical Object: Escalating bonfire/flame stove representing escalating intensity (愈演愈烈) -->
+  <g transform="translate(120, 135)">
+    <!-- Metal Brazier / Fire Pit Base -->
+    <path d="M-40 20 L40 20 L30 55 L-30 55 Z" fill="#2E3440" stroke="#4C566A" stroke-width="3" stroke-linejoin="round"/>
+    <ellipse cx="0" cy="20" rx="40" ry="8" fill="#3B4252" stroke="#4C566A" stroke-width="3"/>
+    
+    <!-- Logs -->
+    <rect x="-30" y="25" width="60" height="10" rx="5" transform="rotate(15)" fill="#5E412F"/>
+    <rect x="-30" y="25" width="60" height="10" rx="5" transform="rotate(-15)" fill="#8A5A36"/>
+
+    <!-- Escalating Flame Layers (from small to fierce/raging) -->
+    <!-- Outer/Background Fierce Flames -->
+    <path d="M0 -15 C -35 -40, -45 -70, -25 -95 C -15 -110, -5 -115, 0 -125 C 5 -115, 15 -110, 25 -95 C 45 -70, 35 -40, 0 -15 Z" fill="#D08770" opacity="0.8"/>
+    
+    <!-- Middle Bright Flame -->
+    <path d="M0 -5 C -25 -25, -30 -50, -15 -70 C -8 -80, -2 -85, 0 -95 C 2 -85, 8 -80, 15 -70 C 30 -50, 25 -25, 0 -5 Z" fill="#EBCB8B"/>
+
+    <!-- Inner Core Intense Flame -->
+    <path d="M0 5 C -12 -10, -15 -25, -8 -38 C -4 -44, -1 -48, 0 -55 C 1 -48, 4 -44, 8 -38 C 15 -25, 12 -10, 0 5 Z" fill="#BF616A"/>
+  </g>
+
+  <!-- Upward Escalation Motion Arrows (representing "愈演愈烈" - growing increasingly intense/escalating) -->
+  <g stroke="#EBCB8B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Left upward spark/arrow 1 -->
+    <path d="M60 100 L60 70 M50 80 L60 70 L70 80" opacity="0.6"/>
+    <!-- Right upward spark/arrow 2 -->
+    <path d="M180 100 L180 70 M170 80 L180 70 L190 80" opacity="0.6"/>
+    <!-- Outer high escalation arrows -->
+    <path d="M40 75 L40 40 M30 50 L40 40 L50 50" opacity="0.9"/>
+    <path d="M200 75 L200 40 M190 50 L200 40 L210 50" opacity="0.9"/>
+  </g>
+
+  <!-- Floating heat/intensity sparks -->
+  <circle cx="85" cy="55" r="3" fill="#EBCB8B"/>
+  <circle cx="155" cy="55" r="3" fill="#EBCB8B"/>
+  <circle cx="120" cy="30" r="4" fill="#D08770"/>
+  <circle cx="95" cy="35" r="2" fill="#BF616A"/>
+  <circle cx="145" cy="35" r="2" fill="#BF616A"/>
+</svg>

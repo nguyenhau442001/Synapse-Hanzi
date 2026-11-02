@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient glow/background highlights -->
+  <circle cx="120" cy="130" r="70" fill="#2D3748" opacity="0.3"/>
+  
+  <!-- Water and river bank context inspired by the context sentence -->
+  <path d="M 0 170 Q 70 160 120 170 T 240 165 L 240 240 L 0 240 Z" fill="#1E293B"/>
+  <path d="M 0 175 Q 80 165 140 178 T 240 170" fill="none" stroke="#38BDF8" stroke-width="2" opacity="0.4"/>
+  <path d="M 20 190 Q 90 180 160 192 T 240 185" fill="none" stroke="#38BDF8" stroke-width="1.5" opacity="0.2"/>
+
+  <!-- Water splashing / dynamic action -->
+  <path d="M 85 160 Q 95 140 110 165" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 100 155 Q 105 130 120 158" fill="none" stroke="#38BDF8" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="95" cy="145" r="2" fill="#38BDF8"/>
+  <circle cx="115" cy="138" r="3" fill="#38BDF8"/>
+
+  <!-- Person in distress (reaching hand out from water) -->
+  <circle cx="105" cy="148" r="8" fill="#F1F5F9"/>
+  <path d="M 98 155 L 112 155 L 115 170 L 95 170 Z" fill="#64748B"/>
+  <!-- Reaching arm upward -->
+  <path d="M 110 148 Q 118 138 122 132" fill="none" stroke="#F1F5F9" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Heroic rescuer leaning down (见义勇为 - stepping forward with courage to help) -->
+  <!-- Rescuer body & dynamic posture -->
+  <path d="M 130 115 L 150 145 L 135 165" fill="none" stroke="#F59E0B" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 138 118 L 125 150 L 140 165" fill="none" stroke="#D97706" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Rescuer Torso & Cape/Jacket dynamic flow -->
+  <path d="M 125 100 C 135 95 145 105 140 120 L 130 140 Z" fill="#F59E0B"/>
+  
+  <!-- Rescuer Head -->
+  <circle cx="118" cy="92" r="9" fill="#FDE68A"/>
+  <path d="M 111 88 C 113 84 122 84 125 88 Z" fill="#92400E"/>
+
+  <!-- Rescuer's strong grasping arm reaching down to pull -->
+  <path d="M 130 110 Q 125 125 124 133" fill="none" stroke="#F59E0B" stroke-width="6" stroke-linecap="round"/>
+  <!-- Hand gripping hand -->
+  <circle cx="124" cy="133" r="4.5" fill="#FDE68A"/>
+
+  <!-- Focus / Heroic action highlight aura around the grip -->
+  <circle cx="124" cy="133" r="16" fill="none" stroke="#FBBF24" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.8"/>
+
+  <!-- Secondary stabilizing arm -->
+  <path d="M 135 108 L 150 120" fill="none" stroke="#D97706" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Action lines indicating speed, resolve, and bravery -->
+  <path d="M 80 110 L 105 118" fill="none" stroke="#FBBF24" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 90 98 L 112 105" fill="none" stroke="#FBBF24" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+  <path d="M 100 85 L 115 90" fill="none" stroke="#FBBF24" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+</svg>

@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Shadow/Ground -->
+  <ellipse cx="120" cy="200" rx="80" ry="10" fill="#000" opacity="0.2"/>
+  
+  <!-- Hostage (Person) -->
+  <g transform="translate(140, 100)">
+    <circle cx="0" cy="-30" r="15" fill="#E0E0E0"/>
+    <rect x="-10" y="-15" width="20" height="40" rx="5" fill="#E0E0E0"/>
+    <rect x="-15" y="-10" width="30" height="10" rx="2" fill="#E0E0E0"/>
+  </g>
+  
+  <!-- Captor (Criminal) -->
+  <g transform="translate(90, 90)">
+    <circle cx="0" cy="-30" r="18" fill="#FF9F1C"/>
+    <path d="M-15 -15 L15 -15 L10 50 L-10 50 Z" fill="#FF9F1C"/>
+    <!-- Arm reaching out to hold hostage -->
+    <rect x="5" y="-5" width="40" height="8" rx="4" fill="#FF9F1C" transform="rotate(-10 5 -5)"/>
+    <!-- Mask/Bandana detail -->
+    <rect x="-18" y="-35" width="36" height="10" fill="#1A1D24"/>
+  </g>
+  
+  <!-- Restraint/Force Indicator -->
+  <path d="M125 95 L140 95" stroke="#FF9F1C" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="140" cy="95" r="6" fill="#FF9F1C"/>
+</svg>

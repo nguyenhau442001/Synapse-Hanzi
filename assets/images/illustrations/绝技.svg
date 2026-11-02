@@ -1,0 +1,54 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glowing atmospheric aura behind the carving scene -->
+  <circle cx="120" cy="120" r="70" fill="#E5A93B" opacity="0.08" filter="blur(15px)"/>
+
+  <!-- Workbench / Base block -->
+  <path d="M 60 170 L 180 170 L 195 190 L 45 190 Z" fill="#2D333F"/>
+  <rect x="55" y="185" width="130" height="6" rx="3" fill="#3D4454"/>
+
+  <!-- Wooden sculpture / block being carved -->
+  <path d="M 95 145 L 145 145 L 155 170 L 85 170 Z" fill="#C17A38"/>
+  <path d="M 95 145 L 145 145 L 140 135 L 100 135 Z" fill="#D99B52"/>
+  
+  <!-- Wood grain details -->
+  <path d="M 110 145 L 115 170" stroke="#A7662B" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 130 145 L 125 170" stroke="#A7662B" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Flying wood chips (Precision/Mastery effect) -->
+  <path d="M 115 130 C 110 120, 120 115, 125 120 Z" fill="#E5A93B" opacity="0.9"/>
+  <path d="M 128 128 C 132 122, 138 126, 135 132 Z" fill="#D99B52" opacity="0.8"/>
+  <circle cx="105" cy="125" r="2" fill="#E5A93B"/>
+  <circle cx="145" cy="135" r="1.5" fill="#E5A93B"/>
+
+  <!-- Left Hand & Tool (Dual-wield micro-carving mastery) -->
+  <g transform="translate(0, 0)">
+    <!-- Left arm/hand -->
+    <path d="M 30 120 C 50 120, 60 135, 80 140" stroke="#E0C2A8" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <!-- Left carving knife -->
+    <path d="M 65 142 L 105 142" stroke="#8B95A5" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="105,140 115,142 105,144" fill="#F0F4F8"/>
+    <!-- Left hand fingers -->
+    <circle cx="80" cy="140" r="7" fill="#E0C2A8"/>
+  </g>
+
+  <!-- Right Hand & Tool (Dual-wield micro-carving mastery) -->
+  <g transform="translate(0, 0)">
+    <!-- Right arm/hand -->
+    <path d="M 210 120 C 190 120, 180 135, 160 140" stroke="#E0C2A8" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <!-- Right carving knife -->
+    <path d="M 175 142 L 135 142" stroke="#8B95A5" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="135,140 125,142 135,144" fill="#F0F4F8"/>
+    <!-- Right hand fingers -->
+    <circle cx="160" cy="140" r="7" fill="#E0C2A8"/>
+  </g>
+
+  <!-- Focus / Concentration Sparks (Golden highlights indicating "Juéjì" / exquisite craftsmanship) -->
+  <path d="M 120 115 L 120 105 M 120 130 L 120 135 M 110 120 L 102 120 M 130 120 L 138 120" stroke="#E5A93B" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 113 113 L 108 108 M 127 113 L 132 108" stroke="#E5A93B" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Central Master Spark (Exquisite skill pinnacle) -->
+  <circle cx="120" cy="120" r="3" fill="#FFFFFF"/>
+</svg>

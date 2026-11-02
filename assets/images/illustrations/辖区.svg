@@ -1,0 +1,57 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- District Grid Base -->
+    <path d="M 60 140 L 120 110 L 180 140 L 120 170 Z" fill="#252A34" stroke="#303846" stroke-width="2"/>
+    <path d="M 120 110 L 120 70 L 180 100 L 180 140 Z" fill="#212630" stroke="#303846" stroke-width="2"/>
+    <path d="M 60 140 L 60 100 L 120 70 L 120 110 Z" fill="#2C3240" stroke="#303846" stroke-width="2"/>
+
+    <!-- Map boundary highlight (Jurisdiction outline) -->
+    <path d="M 60 100 L 120 70 L 180 100 L 180 140 L 120 170 L 60 140 Z" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-dasharray="4 4" opacity="0.8"/>
+
+    <!-- Building 1 (Top Left) -->
+    <path d="M 80 90 L 100 80 L 100 115 L 80 125 Z" fill="#3B4252"/>
+    <path d="M 100 80 L 115 88 L 115 123 L 100 115 Z" fill="#4C566A"/>
+    <!-- Building 1 Windows -->
+    <rect x="86" y="95" width="6" height="8" fill="#F39C12" opacity="0.8"/>
+    <rect x="105" y="93" width="6" height="8" fill="#F39C12" opacity="0.8"/>
+    <rect x="105" y="105" width="6" height="8" fill="#F39C12" opacity="0.8"/>
+
+    <!-- Building 2 (Top Right) -->
+    <path d="M 135 85 L 155 75 L 155 105 L 135 115 Z" fill="#4C566A"/>
+    <path d="M 155 75 L 170 82 L 170 112 L 155 105 Z" fill="#3B4252"/>
+    <!-- Building 2 Windows -->
+    <rect x="142" y="90" width="6" height="7" fill="#88C0D0" opacity="0.8"/>
+    <rect x="160" y="87" width="6" height="7" fill="#88C0D0" opacity="0.8"/>
+
+    <!-- Building 3 (Foreground Residential) -->
+    <path d="M 85 125 L 115 110 L 115 150 L 85 165 Z" fill="#3B4252"/>
+    <path d="M 115 110 L 145 125 L 145 165 L 115 150 Z" fill="#2E3440"/>
+    <!-- Roof -->
+    <path d="M 85 125 L 115 110 L 145 125 L 115 130 Z" fill="#F59E0B"/>
+    <!-- Building 3 Windows & Door -->
+    <rect x="93" y="132" width="6" height="8" fill="#F39C12" opacity="0.7"/>
+    <rect x="103" y="132" width="6" height="8" fill="#F39C12" opacity="0.7"/>
+    <rect x="123" y="135" width="6" height="8" fill="#88C0D0" opacity="0.7"/>
+    <rect x="133" y="135" width="6" height="8" fill="#88C0D0" opacity="0.7"/>
+    <path d="M 110 145 L 120 140 L 120 158 L 110 163 Z" fill="#212630"/>
+
+    <!-- Focus / Radar Scope Effect centered on jurisdiction -->
+    <circle cx="120" cy="120" r="75" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity="0.4"/>
+    <circle cx="120" cy="120" r="60" fill="none" stroke="#F59E0B" stroke-width="1" opacity="0.2"/>
+
+    <!-- Location Pin Icon floating above -->
+    <g transform="translate(120, 45)">
+      <path d="M 0 -12 C -7 -12 -12 -7 -12 0 C -12 8 0 18 0 18 C 0 18 12 8 12 0 C 12 -7 7 -12 0 -12 Z" fill="#F59E0B"/>
+      <circle cx="0" cy="-1" r="4.5" fill="#1A1D24"/>
+    </g>
+
+    <!-- Corner map grid markers for sleek tech-UI feel -->
+    <path d="M 30 50 L 30 35 L 45 35" fill="none" stroke="#4C566A" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 210 50 L 210 35 L 195 35" fill="none" stroke="#4C566A" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 30 190 L 30 205 L 45 205" fill="none" stroke="#4C566A" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 210 190 L 210 205 L 195 205" fill="none" stroke="#4C566A" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

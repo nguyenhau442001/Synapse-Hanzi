@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- IV Bag -->
+  <path d="M85 60h70v100c0 10-5 15-15 15h-40c-10 0-15-5-15-15V60z" fill="#374151" stroke="#F59E0B" stroke-width="3"/>
+  <path d="M95 70h50v60h-50z" fill="#EF4444" opacity="0.8"/>
+  
+  <!-- IV Tube -->
+  <path d="M120 175v30c0 5 5 10 10 10h40" fill="none" stroke="#9CA3AF" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Needle/Catheter connection -->
+  <circle cx="170" cy="215" r="6" fill="#F59E0B"/>
+  
+  <!-- Arm representation -->
+  <path d="M160 215h50c5 0 10 5 10 10v10c0 5-5 10-10 10h-50" fill="#374151" stroke="#F59E0B" stroke-width="2"/>
+  <ellipse cx="185" cy="230" rx="25" ry="10" fill="#D1D5DB" opacity="0.2"/>
+  
+  <!-- Drip regulator -->
+  <rect x="115" y="170" width="10" height="20" rx="2" fill="#F59E0B"/>
+  
+  <!-- Highlights -->
+  <path d="M95 70h50v10h-50z" fill="#FFFFFF" opacity="0.1"/>
+</svg>

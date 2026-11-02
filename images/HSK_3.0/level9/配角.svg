@@ -1,0 +1,22 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(40, 40)">
+    <!-- Stage Floor -->
+    <path d="M0 160 L160 160 L140 180 L-20 180 Z" fill="#2D343E"/>
+    
+    <!-- Main Actor (Blurred/Out of focus style) -->
+    <circle cx="110" cy="90" r="25" fill="#3D4756"/>
+    <rect x="95" y="115" width="30" height="60" rx="5" fill="#3D4756"/>
+    
+    <!-- Supporting Actor (The Focus) -->
+    <circle cx="50" cy="100" r="20" fill="#FFB84D"/>
+    <path d="M35 120 L65 120 L60 170 L40 170 Z" fill="#FFB84D"/>
+    <path d="M35 120 L45 150 L55 150 L65 120" fill="#E69E3D"/>
+    
+    <!-- Spotlight effect on Supporting Actor -->
+    <path d="M50 0 L80 160 L20 160 Z" fill="white" opacity="0.05"/>
+    
+    <!-- Stage Curtain -->
+    <path d="M0 0 L0 180 L160 180 L160 0 Z" fill="none" stroke="#2D343E" stroke-width="2"/>
+  </g>
+</svg>

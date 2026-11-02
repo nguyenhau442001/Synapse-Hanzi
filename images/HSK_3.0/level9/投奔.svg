@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Environment Elements (Journey/Destination context) -->
+  <path d="M20 185 Q 70 160, 130 175 T 220 165 L 220 210 L 20 210 Z" fill="#222733"/>
+  <path d="M40 170 L 60 130 L 80 170 Z" fill="#282E3D" opacity="0.6"/>
+  <path d="M150 175 L 180 115 L 210 175 Z" fill="#282E3D" opacity="0.6"/>
+
+  <!-- Warm welcoming house/shelter in the background -->
+  <path d="M155 115 L 180 90 L 205 115 Z" fill="#E59836"/>
+  <rect x="163" y="115" width="34" height="40" fill="#2C3342"/>
+  <rect x="175" y="130" width="10" height="25" fill="#E59836" rx="2"/>
+
+  <!-- Motion lines indicating long journey arriving -->
+  <path d="M30 145 C 50 145, 60 135, 75 140" stroke="#E59836" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 3" fill="none" opacity="0.7"/>
+  <path d="M20 155 C 40 155, 55 145, 65 150" stroke="#E59836" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 3" fill="none" opacity="0.5"/>
+
+  <!-- Character 1: Weary Traveler arriving (Left) -->
+  <g transform="translate(65, 115)">
+    <!-- Body/Posture leaning forward into the destination -->
+    <path d="M12 25 Q 18 40, 15 60 L 25 60 Q 22 40, 20 25 Z" fill="#60A5FA"/>
+    <!-- Head -->
+    <circle cx="10" cy="15" r="8" fill="#FDE68A"/>
+    <!-- Travel pack / bundle on back -->
+    <ellipse cx="2" cy="28" rx="8" ry="11" fill="#D97706" transform="rotate(-15 2 28)"/>
+    <path d="M -3 33 L 7 23" stroke="#B45309" stroke-width="2"/>
+    <!-- Legs in motion -->
+    <path d="M15 60 L 25 75" stroke="#60A5FA" stroke-width="5" stroke-linecap="round"/>
+    <path d="M15 60 L 5 73" stroke="#3B82F6" stroke-width="5" stroke-linecap="round"/>
+    <!-- Reaching out arm -->
+    <path d="M15 28 Q 28 25, 35 32" stroke="#FDE68A" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Character 2: Welcoming Relative/Protector (Right) -->
+  <g transform="translate(130, 105)">
+    <!-- Standing upright, welcoming posture -->
+    <path d="M20 25 Q 20 40, 22 65 L 10 65 Q 12 40, 12 25 Z" fill="#34D399"/>
+    <!-- Head -->
+    <circle cx="16" cy="15" r="8" fill="#FDE68A"/>
+    <!-- Welcoming open arms -->
+    <path d="M18 28 Q 5 30, -2 24" stroke="#FDE68A" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <!-- Legs -->
+    <path d="M14 65 L 10 85" stroke="#059669" stroke-width="5" stroke-linecap="round"/>
+    <path d="M20 65 L 24 85" stroke="#059669" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Warm connecting glow/handshake area signifying reliance/shelter (投奔) -->
+  <circle cx="115" cy="138" r="4" fill="#FDE68A" opacity="0.9"/>
+  <path d="M105 135 Q 115 130, 125 135" stroke="#E59836" stroke-width="2" stroke-linecap="round" fill="none"/>
+</svg>

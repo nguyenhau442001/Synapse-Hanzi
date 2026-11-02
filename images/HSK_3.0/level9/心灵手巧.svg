@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Educational Illustration: "心灵手巧" (Clever mind & skillful hands)
+       Depicting a glowing, artistic mind/brain merging into elegant hands crafting a vibrant peony flower. -->
+
+  <g transform="translate(120, 120)">
+    <!-- Ambient Glow for Mind/Creativity -->
+    <circle cx="0" cy="-35" r="30" fill="#FFB74D" opacity="0.15"/>
+    <path d="M-20 -50 C-35 -50 -45 -35 -35 -20 C-25 -5 -35 10 -20 20 C-5 30 5 30 20 20 C35 10 25 -5 35 -20 C45 -35 35 -50 20 -50 C10 -50 0 -40 0 -40 C0 -40 -10 -50 -20 -50 Z" fill="#2E3440" stroke="#FFB74D" stroke-width="2.5" stroke-linejoin="round"/>
+
+    <!-- Neural / Artistic Sparks inside the mind -->
+    <path d="M-10 -30 L0 -20 L15 -35" stroke="#FFD54F" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <circle cx="-10" cy="-30" r="2.5" fill="#FFD54F"/>
+    <circle cx="0" cy="-20" r="2.5" fill="#FFD54F"/>
+    <circle cx="15" cy="-35" r="2.5" fill="#FFD54F"/>
+    <path d="M-12 -15 C-5 -10 5 -10 12 -15" stroke="#FFD54F" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Skillful Hands crafting -->
+    <g transform="translate(0, 30)">
+      <!-- Left Hand -->
+      <path d="M-60 20 C-40 25 -25 15 -15 5 C-10 0 -15 -10 -20 -5 C-30 5 -45 10 -60 5 Z" fill="#E0E6ED"/>
+      <path d="M-30 12 L-15 25 L-5 15 L-12 5" fill="#CFD8DC"/>
+      
+      <!-- Right Hand -->
+      <path d="M60 20 C40 25 25 15 15 5 C10 0 15 -10 20 -5 C30 5 45 10 60 5 Z" fill="#E0E6ED"/>
+      <path d="M30 12 L15 25 L5 15 L12 5" fill="#CFD8DC"/>
+
+      <!-- Fingertips delicately shaping/holding embroidery or glowing petals -->
+      <circle cx="-12" cy="0" r="3" fill="#B0BEC5"/>
+      <circle cx="12" cy="0" r="3" fill="#B0BEC5"/>
+    </g>
+
+    <!-- Vibrant Peony / Craft output blossoming from the center -->
+    <g transform="translate(0, 10)">
+      <!-- Outer Petals (Gold/Orange gradient theme for skill and brilliance) -->
+      <path d="M0 -15 C-20 -25 -30 -5 -15 5 C-25 15 -5 20 0 10 C5 20 25 15 15 5 C30 -5 20 -25 0 -15 Z" fill="#FF7043" opacity="0.9"/>
+      <path d="M0 -10 C-15 -18 -22 -2 -10 8 C-18 12 -2 15 0 5 C2 15 18 12 10 8 C22 -2 15 -18 0 -10 Z" fill="#FFA726" opacity="0.95"/>
+      <!-- Inner Blossom Core -->
+      <circle cx="0" cy="0" r="6" fill="#FFD54F"/>
+      <circle cx="-3" cy="-2" r="1.5" fill="#FF5722"/>
+      <circle cx="3" cy="-2" r="1.5" fill="#FF5722"/>
+      <circle cx="0" cy="3" r="1.5" fill="#FF5722"/>
+    </g>
+
+    <!-- Flowing colorful silk threads representing craftsmanship -->
+    <path d="M-40 45 C-20 60 -10 20 0 35 C10 50 20 60 45 40" stroke="#FF4081" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M-35 55 C-15 65 5 40 20 50 C35 60 50 45 55 30" stroke="#00E676" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M-50 35 C-30 40 -15 50 15 45 C30 40 40 55 50 45" stroke="#00B0FF" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

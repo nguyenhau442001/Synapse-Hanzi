@@ -117,7 +117,7 @@ function renderTodayReviewCard() {
           <div class="today-card-flip-cue" id="todayFlipCue">
             <button type="button" class="today-flip-btn" onclick="revealTodayReview(); event.stopPropagation();" aria-label="Lật thẻ xem đáp án">
               <svg class="flip-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 12 4-4v3h11a2 2 0 0 1 2 2v2"/><path d="m21 12-4 4v-3H6a2 2 0 0 1-2-2v-2"/></svg>
-              <span class="flip-label">Chạm thẻ hoặc nhấn <kbd>Space</kbd> để lật</span>
+              <span class="flip-label">Chạm thẻ <span class="today-shortcut-inline">hoặc nhấn <kbd>Space</kbd> </span>để lật</span>
             </button>
           </div>
 
@@ -133,8 +133,8 @@ function renderTodayReviewCard() {
 
             ${item.word.example_zh ? `
               <div class="today-card-example">
-                <p class="today-example-zh hw-cjk">${escapeHtml(item.word.example_zh)}</p>
-                ${item.word.example_vi ? `<p class="today-example-vi">${escapeHtml(item.word.example_vi)}</p>` : ''}
+                <p class="today-example-zh hw-cjk">${formatTodayExample(item.word.example_zh)}</p>
+                ${item.word.example_vi ? `<p class="today-example-vi">${formatTodayExample(item.word.example_vi)}</p>` : ''}
               </div>
             ` : ''}
           </div>
@@ -214,6 +214,13 @@ function escapeHtml(value) {
   })[character]);
 }
 
+function formatTodayExample(text) {
+  if (!text) return '';
+  return escapeHtml(text)
+    .replace(/&lt;u&gt;/gi, '<u>')
+    .replace(/&lt;\/u&gt;/gi, '</u>');
+}
+
 function rateTodayReview(rating) {
   const item = todayReviewQueue[todayReviewIndex];
   if (!item || !todayReviewRevealed) return;
@@ -241,9 +248,13 @@ async function openReviewQueue(title, loadQueue, doneMessage) {
   todayReviewDoneMessage = doneMessage;
   const hub = document.getElementById('screenVocabHub');
   const cards = document.getElementById('screenCards');
+  const radicalCards = document.getElementById('screenRadicalCards');
+  const radicalHub = document.getElementById('screenRadicalHub');
   const reviewScreen = document.getElementById('screenTodayReviews');
   if (hub) hub.style.display = 'none';
   if (cards) cards.style.display = 'none';
+  if (radicalCards) radicalCards.style.display = 'none';
+  if (radicalHub) radicalHub.style.display = 'none';
   if (reviewScreen) reviewScreen.style.display = '';
   const primaryTabs = document.getElementById('primaryTabs');
   if (primaryTabs) primaryTabs.style.display = 'none';
@@ -283,6 +294,10 @@ function closeTodayReviews() {
   document.body.classList.remove('today-reviews-focus-mode');
   const reviewScreen = document.getElementById('screenTodayReviews');
   if (reviewScreen) reviewScreen.style.display = 'none';
+  const cards = document.getElementById('screenCards');
+  if (cards) cards.style.display = 'none';
+  const radicalCards = document.getElementById('screenRadicalCards');
+  if (radicalCards) radicalCards.style.display = 'none';
   const hub = document.getElementById('screenVocabHub');
   if (hub) hub.style.display = '';
   const primaryTabs = document.getElementById('primaryTabs');

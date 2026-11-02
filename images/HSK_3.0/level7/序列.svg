@@ -1,0 +1,70 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glowing nodes / tech grid -->
+  <g opacity="0.15">
+    <line x1="30" y1="120" x2="210" y2="120" stroke="#38BDF8" stroke-width="1" stroke-dasharray="4 4"/>
+    <circle cx="60" cy="120" r="3" fill="#38BDF8"/>
+    <circle cx="100" cy="120" r="3" fill="#38BDF8"/>
+    <circle cx="140" cy="120" r="3" fill="#38BDF8"/>
+    <circle cx="180" cy="120" r="3" fill="#38BDF8"/>
+  </g>
+
+  <!-- Central Noun: Physical DNA Sequence / Genetic Strand (representing 序列) -->
+  <!-- Horizontal central DNA double-helix sequence -->
+  <g transform="translate(0, 0)">
+    <!-- Base pair connector rungs -->
+    <line x1="45" y1="100" x2="45" y2="140" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+    <line x1="75" y1="92" x2="75" y2="148" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+    <line x1="105" y1="100" x2="105" y2="140" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+    <line x1="135" y1="112" x2="135" y2="128" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+    <line x1="165" y1="100" x2="165" y2="140" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+    <line x1="195" y1="92" x2="195" y2="148" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Strand 1 (Top Wave) -->
+    <path d="M 30 120 C 45 80, 60 80, 75 120 C 90 160, 105 160, 120 120 C 135 80, 150 80, 165 120 C 180 160, 195 160, 210 120" 
+          fill="none" stroke="#38BDF8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Strand 2 (Bottom Wave, interlaced) -->
+    <path d="M 30 120 C 45 160, 60 160, 75 120 C 90 80, 105 80, 120 120 C 135 160, 150 160, 165 120 C 180 80, 195 80, 210 120" 
+          fill="none" stroke="#F59E0B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Nucleotide Nodes / Base Pair Spheres with focus highlight -->
+    <!-- Group 1 -->
+    <circle cx="45" cy="100" r="6" fill="#38BDF8"/>
+    <circle cx="45" cy="140" r="6" fill="#F59E0B"/>
+    
+    <!-- Group 2 (Highlighted focus node) -->
+    <circle cx="75" cy="92" r="7" fill="#38BDF8"/>
+    <circle cx="75" cy="148" r="7" fill="#F59E0B"/>
+    <!-- Focus ring -->
+    <circle cx="75" cy="92" r="11" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity="0.8"/>
+
+    <!-- Group 3 -->
+    <circle cx="105" cy="100" r="6" fill="#38BDF8"/>
+    <circle cx="105" cy="140" r="6" fill="#F59E0B"/>
+
+    <!-- Group 4 -->
+    <circle cx="135" cy="112" r="5" fill="#38BDF8"/>
+    <circle cx="135" cy="128" r="5" fill="#F59E0B"/>
+
+    <!-- Group 5 -->
+    <circle cx="165" cy="100" r="6" fill="#38BDF8"/>
+    <circle cx="165" cy="140" r="6" fill="#F59E0B"/>
+
+    <!-- Group 6 -->
+    <circle cx="195" cy="92" r="6" fill="#38BDF8"/>
+    <circle cx="195" cy="148" r="6" fill="#F59E0B"/>
+  </g>
+
+  <!-- Scanning / Parsing Indicator Bracket (Contextual reference to bioinformatics supercomputer analysis) -->
+  <g transform="translate(0, 0)" opacity="0.9">
+    <!-- Top-left bracket -->
+    <path d="M 65 65 L 65 55 L 75 55" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Top-right bracket -->
+    <path d="M 85 55 L 95 55 L 95 65" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Scanner line pointing down -->
+    <line x1="80" y1="58" x2="80" y2="82" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="2 2"/>
+  </g>
+</svg>

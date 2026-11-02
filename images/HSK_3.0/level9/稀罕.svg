@@ -1,0 +1,66 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow to highlight the rare object -->
+  <circle cx="120" cy="120" r="70" fill="#FFB703" opacity="0.08"/>
+  <circle cx="120" cy="120" r="50" fill="#FFB703" opacity="0.12"/>
+  
+  <!-- Soft shadow under the glass jar -->
+  <ellipse cx="120" cy="180" rx="35" ry="10" fill="#111318"/>
+
+  <!-- Glass Jar representing a precious collected item -->
+  <!-- Jar body back glass -->
+  <path d="M 90 95 L 90 165 C 90 175, 150 175, 150 165 L 150 95 Z" fill="#2E3542" opacity="0.6"/>
+  
+  <!-- The Precious Object inside: A single glowing vintage-wrapped candy (symbolizing the rare fruit candy from the context) -->
+  <g transform="translate(120, 135)">
+    <!-- Candy wrapper side twists -->
+    <path d="M -30 0 L -16 -5 L -16 5 Z" fill="#FB8500"/>
+    <path d="M 30 0 L 16 -5 L 16 5 Z" fill="#FB8500"/>
+    
+    <!-- Candy wrapper glow/shadow -->
+    <circle cx="0" cy="0" r="16" fill="#FFB703" opacity="0.3"/>
+    
+    <!-- Main candy body (striped retro hard candy) -->
+    <rect x="-16" y="-12" width="32" height="24" rx="12" fill="#FFB703"/>
+    <path d="M -6 -12 L 2 -12 L -2 12 L -10 12 Z" fill="#FB8500" opacity="0.5"/>
+    <path d="M 4 -12 L 12 -12 L 8 12 L 0 12 Z" fill="#FB8500" opacity="0.5"/>
+    
+    <!-- Highlight on candy -->
+    <path d="M -10 -7 C -6 -9, 0 -9, 4 -7" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.7"/>
+  </g>
+
+  <!-- Jar body front glass -->
+  <path d="M 88 90 L 152 90 L 150 165 C 150 176, 90 176, 90 165 Z" fill="none" stroke="#485567" stroke-width="3" stroke-linejoin="round"/>
+  
+  <!-- Glass reflection streaks -->
+  <path d="M 98 105 L 98 145" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.2"/>
+  <path d="M 104 100 L 104 115" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.15"/>
+
+  <!-- Jar Neck -->
+  <rect x="98" y="75" width="44" height="15" rx="3" fill="none" stroke="#485567" stroke-width="3"/>
+  <path d="M 100 78 L 140 78" stroke="#FFFFFF" stroke-width="2" opacity="0.2"/>
+
+  <!-- Jar Cork / Lid (Vintage style) -->
+  <path d="M 94 65 L 146 65 C 148 65, 148 73, 146 73 L 94 73 C 92 73, 92 65, 94 65 Z" fill="#8D6E63"/>
+  <ellipse cx="120" cy="65" rx="26" ry="5" fill="#A1887F"/>
+
+  <!-- Sparkles / Focus indicators denoting "Rare / Precious" (稀罕) -->
+  <!-- Top Right Sparkle -->
+  <g transform="translate(165, 75)">
+    <path d="M 0 -10 C 0 0, 0 0, 10 0 C 0 0, 0 0, 0 10 C 0 0, 0 0, -10 0 C 0 0, 0 0, 0 -10 Z" fill="#FFB703"/>
+    <circle cx="0" cy="0" r="2" fill="#FFFFFF"/>
+  </g>
+  
+  <!-- Top Left Sparkle (smaller) -->
+  <g transform="translate(72, 105) scale(0.6)">
+    <path d="M 0 -10 C 0 0, 0 0, 10 0 C 0 0, 0 0, 0 10 C 0 0, 0 0, -10 0 C 0 0, 0 0, 0 -10 Z" fill="#FFB703"/>
+    <circle cx="0" cy="0" r="2" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Bottom Right Sparkle -->
+  <g transform="translate(160, 145) scale(0.8)">
+    <path d="M 0 -10 C 0 0, 0 0, 10 0 C 0 0, 0 0, 0 10 C 0 0, 0 0, -10 0 C 0 0, 0 0, 0 -10 Z" fill="#FFB703"/>
+  </g>
+</svg>

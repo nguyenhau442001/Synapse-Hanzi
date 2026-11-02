@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow behind the focal point -->
+  <circle cx="120" cy="115" r="70" fill="#242B38" opacity="0.6"/>
+
+  <!-- Conceptual Illustration: "解救" (Rescue / Delivering from danger)
+       Visual metaphor: Strong, protective hands firmly grasping and lifting a smaller, vulnerable figure/hand safely upward out of a dark, restrictive barrier or abyss. -->
+
+  <g id="rescue-scene">
+    <!-- The Rescue / Uplifting Hands -->
+    <!-- Strong supporting hands (golden-orange accent color for focus/rescue action) -->
+    <path d="M75 160 C85 160, 95 145, 105 135 C112 128, 118 122, 125 122 C132 122, 138 128, 145 135 C155 145, 165 160, 175 160" fill="none" stroke="#F59E0B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Left Rescuing Arm/Hand -->
+    <path d="M70 175 L95 145 C98 141, 102 138, 106 135 L96 120 C90 125, 82 132, 75 138 L60 160 C55 168, 62 178, 70 175 Z" fill="#F59E0B"/>
+    
+    <!-- Right Rescuing Arm/Hand -->
+    <path d="M170 175 L145 145 C142 141, 138 138, 134 135 L144 120 C150 125, 158 132, 165 138 L180 160 C185 168, 178 178, 170 175 Z" fill="#F59E0B"/>
+
+    <!-- Overlapping wrists / sleeves representing authority/helpers (Slate blue/dark teal uniform vibe) -->
+    <path d="M60 170 L80 205 L45 215 L35 185 Z" fill="#3B82F6" opacity="0.9"/>
+    <path d="M180 170 L160 205 L195 215 L205 185 Z" fill="#3B82F6" opacity="0.9"/>
+
+    <!-- The Saved Person / Child Symbol (Safely lifted upward into the light) -->
+    <!-- Head -->
+    <circle cx="120" cy="78" r="14" fill="#E2E8F0"/>
+    
+    <!-- Body/Torso reaching upward -->
+    <path d="M110 98 C110 94, 130 94, 130 98 L136 128 C136 132, 132 136, 128 136 L112 136 C108 136, 104 132, 104 128 Z" fill="#E2E8F0"/>
+    
+    <!-- Arms reaching upward in relief/safety -->
+    <path d="M110 102 L96 82 C93 78, 97 73, 102 76 L112 92" fill="none" stroke="#E2E8F0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M130 102 L144 82 C147 78, 143 73, 138 76 L128 92" fill="none" stroke="#E2E8F0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Safety / Freedom Light Rays shining down from top -->
+    <g opacity="0.3">
+      <line x1="120" y1="35" x2="120" y2="70" stroke="#60A5FA" stroke-width="3" stroke-linecap="round"/>
+      <line x1="95" y1="40" x2="105" y2="65" stroke="#60A5FA" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="145" y1="40" x2="135" y2="65" stroke="#60A5FA" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    
+    <!-- Breaking/Parting Obstacle lines at the bottom (representing breaking free from danger/confinement) -->
+    <path d="M85 148 L65 140" stroke="#4B5563" stroke-width="4" stroke-linecap="round"/>
+    <path d="M155 148 L175 140" stroke="#4B5563" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

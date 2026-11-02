@@ -1,0 +1,37 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Sound waves representing the lingering sound -->
+  <path d="M120 120 C 140 80, 160 80, 180 120" stroke="#FFB84D" stroke-width="3" fill="none" opacity="0.3"/>
+  <path d="M110 120 C 140 60, 170 60, 200 120" stroke="#FFB84D" stroke-width="3" fill="none" opacity="0.5"/>
+  <path d="M100 120 C 140 40, 180 40, 220 120" stroke="#FFB84D" stroke-width="3" fill="none" opacity="0.7"/>
+  
+  <!-- Character clapping (Action) -->
+  <g transform="translate(60, 140)">
+    <!-- Body -->
+    <path d="M20 80 L60 80 L55 40 L25 40 Z" fill="#4A90E2"/>
+    <!-- Head -->
+    <circle cx="40" cy="30" r="15" fill="#FFD1A9"/>
+    <!-- Arms and Hands in clapping motion -->
+    <path d="M20 50 L5 70" stroke="#FFD1A9" stroke-width="8" stroke-linecap="round"/>
+    <path d="M60 50 L75 70" stroke="#FFD1A9" stroke-width="8" stroke-linecap="round"/>
+    <!-- Hands -->
+    <circle cx="5" cy="70" r="8" fill="#FFD1A9"/>
+    <circle cx="75" cy="70" r="8" fill="#FFD1A9"/>
+    <!-- Motion lines for clapping -->
+    <path d="M15 60 L25 70" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    <path d="M65 60 L55 70" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Second character clapping -->
+  <g transform="translate(120, 140)">
+    <path d="M20 80 L60 80 L55 40 L25 40 Z" fill="#50E3C2"/>
+    <circle cx="40" cy="30" r="15" fill="#FFD1A9"/>
+    <path d="M20 50 L5 70" stroke="#FFD1A9" stroke-width="8" stroke-linecap="round"/>
+    <path d="M60 50 L75 70" stroke="#FFD1A9" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="5" cy="70" r="8" fill="#FFD1A9"/>
+    <circle cx="75" cy="70" r="8" fill="#FFD1A9"/>
+    <path d="M15 60 L25 70" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    <path d="M65 60 L55 70" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

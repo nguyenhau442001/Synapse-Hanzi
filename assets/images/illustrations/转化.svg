@@ -1,0 +1,58 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle glowing background effect for transformation pathway -->
+  <path d="M 65 130 C 95 130, 105 105, 120 105 C 135 105, 145 130, 175 130" stroke="#2563EB" stroke-width="24" stroke-linecap="round" fill="none" opacity="0.15"/>
+  <path d="M 65 130 C 95 130, 105 105, 120 105 C 135 105, 145 130, 175 130" stroke="#60A5FA" stroke-width="4" stroke-dasharray="6 6" stroke-linecap="round" fill="none" opacity="0.4"/>
+
+  <!-- Left Object: Abstract Research/Blueprints (Raw Concept) -->
+  <g transform="translate(35, 95)">
+    <!-- Document base -->
+    <rect x="0" y="0" width="45" height="55" rx="6" fill="#1E293B" stroke="#475569" stroke-width="2"/>
+    <!-- Blueprint lines -->
+    <line x1="8" y1="12" x2="30" y2="12" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+    <line x1="8" y1="22" x2="37" y2="22" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+    <!-- Geometric abstract shape representing basic research -->
+    <circle cx="15" cy="38" r="6" fill="none" stroke="#F59E0B" stroke-width="2.5"/>
+    <line x1="21" y1="38" x2="35" y2="38" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="28" y1="32" x2="28" y2="44" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Central Transformation Arrow (Action of Conversion) -->
+  <g transform="translate(100, 110)">
+    <!-- Main dynamic conversion chevron -->
+    <path d="M 10 -15 L 30 5 L 10 25" stroke="#F59E0B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M 0 -15 L 20 5 L 0 25" stroke="#FBBF24" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.5"/>
+    
+    <!-- Energy spark dots -->
+    <circle cx="-5" cy="-25" r="2.5" fill="#38BDF8"/>
+    <circle cx="20" cy="-20" r="3" fill="#F59E0B"/>
+    <circle cx="35" cy="15" r="2" fill="#38BDF8"/>
+  </g>
+
+  <!-- Right Object: Real-world Product / Output (Productivity / Practical Application) -->
+  <g transform="translate(155, 85)">
+    <!-- Outer isometric/solid gear representing applied productivity/machinery -->
+    <circle cx="25" cy="35" r="22" fill="#0F172A" stroke="#10B981" stroke-width="3"/>
+    
+    <!-- Gear teeth -->
+    <rect x="23" y="10" width="4" height="6" rx="1" fill="#10B981"/>
+    <rect x="23" y="54" width="4" height="6" rx="1" fill="#10B981"/>
+    <rect x="10" y="23" width="6" height="4" rx="1" fill="#10B981"/>
+    <rect x="54" y="23" width="6" height="4" rx="1" fill="#10B981"/>
+    
+    <rect x="13.5" y="14" width="5" height="5" rx="1" transform="rotate(45 16 16.5)" fill="#10B981"/>
+    <rect x="36.5" y="37" width="5" height="5" rx="1" transform="rotate(45 39 39.5)" fill="#10B981"/>
+    <rect x="36.5" y="14" width="5" height="5" rx="1" transform="rotate(45 39 16.5)" fill="#10B981"/>
+    <rect x="13.5" y="37" width="5" height="5" rx="1" transform="rotate(45 16 39.5)" fill="#10B981"/>
+
+    <!-- Center core representing tangible output -->
+    <circle cx="25" cy="35" r="9" fill="#047857"/>
+    <path d="M 21 35 L 24 38 L 29 32" stroke="#ECFDF5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- Base platform line to ground the physical objects -->
+  <path d="M 45 165 L 195 165" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 70 172 L 170 172" stroke="#1E293B" stroke-width="2" stroke-linecap="round"/>
+</svg>

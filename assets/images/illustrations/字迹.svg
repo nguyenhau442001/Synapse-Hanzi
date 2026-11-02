@@ -1,0 +1,43 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Atmospheric background glow representing weathering/age -->
+  <circle cx="120" cy="120" r="90" fill="#252A34" opacity="0.6"/>
+
+  <!-- Ancient stone stele (representing the context: 石碑) -->
+  <path d="M70,75 L170,75 C176,75 180,79 180,85 L180,195 C180,200 176,205 170,205 L70,205 C64,205 60,200 60,195 L60,85 C60,79 64,75 70,75 Z" fill="#2C3240" stroke="#3A4252" stroke-width="2"/>
+  
+  <!-- Stone texture cracks and weathering details -->
+  <path d="M140,75 L130,110 L145,130" stroke="#1A1D24" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <path d="M80,160 L95,175 L90,205" stroke="#1A1D24" stroke-width="1.5" fill="none" opacity="0.6"/>
+
+  <!-- Fading handwritten script strokes (字迹) carved into the stone, transitioning from clear to blurred/faded -->
+  <!-- Crisp top/left strokes -->
+  <path d="M85,95 Q105,90 120,105" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.9"/>
+  <path d="M135,90 Q150,95 155,115" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.85"/>
+  
+  <!-- Middle fading strokes -->
+  <path d="M80,125 Q110,120 130,135" stroke="#D69E2E" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.5"/>
+  <path d="M140,130 Q155,140 160,160" stroke="#D69E2E" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+
+  <!-- Heavily blurred/eroded bottom strokes (渐渐模糊不清) -->
+  <path d="M85,165 Q105,170 125,165" stroke="#718096" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 4" fill="none" opacity="0.25"/>
+  <path d="M135,175 Q150,170 155,190" stroke="#718096" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 5" fill="none" opacity="0.2"/>
+
+  <!-- Weathering dust particles / erosion effect -->
+  <circle cx="100" cy="185" r="1.5" fill="#718096" opacity="0.4"/>
+  <circle cx="115" cy="190" r="1" fill="#718096" opacity="0.3"/>
+  <circle cx="130" cy="180" r="1.5" fill="#718096" opacity="0.35"/>
+
+  <!-- Magnifying glass highlighting the hand-carved detail (focusing on the concept of handwriting/script) -->
+  <g transform="translate(45, 45)">
+    <!-- Glass lens circle -->
+    <circle cx="65" cy="65" r="30" fill="#1A1D24" fill-opacity="0.3" stroke="#F6AD55" stroke-width="3"/>
+    <circle cx="65" cy="65" r="28" stroke="#FFFFFF" stroke-width="0.75" stroke-dasharray="4 2" fill="none" opacity="0.4"/>
+    
+    <!-- Magnifier handle -->
+    <path d="M44,86 L22,108 C19,111 19,116 22,119 L25,122 C28,125 33,125 36,122 L58,100 Z" fill="#E2E8F0" stroke="#CBD5E0" stroke-width="1.5"/>
+    <path d="M26,112 L48,90" stroke="#A0AEC0" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+</svg>

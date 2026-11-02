@@ -1,0 +1,66 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient background glow representing memory/nostalgia -->
+  <circle cx="120" cy="115" r="70" fill="#3D3629" opacity="0.4"/>
+  
+  <!-- Outer decorative glowing orbit lines representing past time / nostalgia -->
+  <circle cx="120" cy="115" r="85" fill="none" stroke="#D4AF37" stroke-width="1" stroke-dasharray="4 6" opacity="0.3"/>
+
+  <!-- Open Vintage Photo Album / Scrapbook representing "Days gone by" -->
+  <g transform="translate(120, 125)">
+    <!-- Album shadow -->
+    <ellipse cx="0" cy="65" rx="75" ry="12" fill="#0A0C10" opacity="0.6"/>
+    
+    <!-- Album Cover Base (Open) -->
+    <path d="M -85,50 L -95,-30 Q -95,-45 -80,-45 L -5,-35 L -5,60 Z" fill="#2C3440"/>
+    <path d="M 85,50 L 95,-30 Q 95,-45 80,-45 L 5,-35 L 5,60 Z" fill="#2C3440"/>
+    
+    <!-- Left Page -->
+    <path d="M -80,-40 Q -45,-48 -5,-38 L -5,55 Q -45,45 -80,50 Z" fill="#F4F0EA"/>
+    <!-- Right Page -->
+    <path d="M 80,-40 Q 45,-48 5,-38 L 5,55 Q 45,45 80,50 Z" fill="#EAE5DC"/>
+    
+    <!-- Center Binding / Spine shadow -->
+    <line x1="-5" y1="-38" x2="-5" y2="55" stroke="#C8C0B5" stroke-width="3"/>
+    <line x1="0" y1="-38" x2="0" y2="55" stroke="#23272E" stroke-width="1.5"/>
+
+    <!-- Left Page Content: Sepia tone nostalgic photo of tree/campus -->
+    <rect x="-65" y="-28" width="50" height="40" rx="2" fill="#D9C3A1" stroke="#C2A882" stroke-width="1"/>
+    <!-- Tiny stylized tree & bench inside photo -->
+    <path d="M -40,2 L -40,-8 M -45,-3 L -35,-3" stroke="#8C6D4F" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="-40" cy="-14" r="10" fill="#768C69" opacity="0.8"/>
+    <rect x="-50" y="2" width="20" height="3" rx="1" fill="#8C6D4F"/>
+
+    <!-- Right Page Content: Sepia silhouette of friends / figures -->
+    <rect x="15" y="-28" width="50" height="40" rx="2" fill="#D9C3A1" stroke="#C2A882" stroke-width="1"/>
+    <circle cx="35" cy="-12" r="5" fill="#735C41"/>
+    <path d="M 30,3 Q 35,-3 40,3" stroke="#735C41" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="50" cy="-10" r="4.5" fill="#735C41"/>
+    <path d="M 46,3 Q 50,-2 54,3" stroke="#735C41" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Elegant Clock Hands / Time motif floating above, golden accent -->
+  <g transform="translate(120, 52)">
+    <!-- Circular gold frame -->
+    <circle cx="0" cy="0" r="26" fill="#1A1D24" stroke="#D4AF37" stroke-width="2.5"/>
+    <circle cx="0" cy="0" r="22" fill="#242933"/>
+    
+    <!-- Clock ticks -->
+    <line x1="0" y1="-20" x2="0" y2="-17" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="0" y1="17" x2="0" y2="20" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="-20" y1="0" x2="-17" y2="0" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="17" y1="0" x2="20" y2="0" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Clock Hands pointing to the past (counter-clockwise/left) -->
+    <line x1="0" y1="0" x2="-10" y2="-10" stroke="#E5C158" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="12" y2="4" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="2" fill="#E5C158"/>
+  </g>
+
+  <!-- Soft glowing sparkle effects indicating cherished memories -->
+  <path d="M 55,75 Q 55,70 60,70 Q 55,70 55,65 Q 55,70 50,70 Q 55,70 55,75 Z" fill="#E5C158" opacity="0.8"/>
+  <path d="M 185,85 Q 185,80 190,80 Q 185,80 185,75 Q 185,80 180,80 Q 185,80 185,85 Z" fill="#E5C158" opacity="0.6"/>
+  <path d="M 85,35 Q 85,32 88,32 Q 85,32 85,29 Q 85,32 82,32 Q 85,32 85,35 Z" fill="#E5C158" opacity="0.9"/>
+</svg>

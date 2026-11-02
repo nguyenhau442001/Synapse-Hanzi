@@ -1,0 +1,58 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background atmosphere/glow for the meeting scene -->
+  <circle cx="120" cy="120" r="70" fill="#252A34" opacity="0.6"/>
+  
+  <!-- Formal Handshake Scene Depicting "Jiǔyǎng" (Respectful Meeting / Long-awaited acquaintance) -->
+  
+  <!-- Person Left (Business Professional in Dark Suit) -->
+  <g id="person-left">
+    <!-- Body/Suit -->
+    <path d="M 65 175 L 85 130 L 105 175 Z" fill="#2C3440"/>
+    <path d="M 75 130 L 85 145 L 95 130 Z" fill="#3B4654"/> <!-- Shirt & Tie -->
+    <!-- Head -->
+    <circle cx="85" cy="105" r="16" fill="#E0A96D"/>
+    <!-- Hair -->
+    <path d="M 69 103 C 69 92, 77 90, 85 90 C 93 90, 101 92, 101 103 Z" fill="#2D231E"/>
+    <!-- Left Arm & Hand reaching for handshake -->
+    <path d="M 85 140 Q 100 145, 115 135" fill="none" stroke="#2C3440" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="116" cy="133" r="5" fill="#E0A96D"/>
+  </g>
+
+  <!-- Person Right (Respected Scholar/Senior in Distinctive Attire) -->
+  <g id="person-right">
+    <!-- Body/Attire -->
+    <path d="M 175 175 L 155 130 L 135 175 Z" fill="#364152"/>
+    <path d="M 165 130 L 155 145 L 145 130 Z" fill="#4A5A6E"/> <!-- Collar -->
+    <!-- Head -->
+    <circle cx="155" cy="105" r="16" fill="#D9A066"/>
+    <!-- Hair (Slightly distinguished/graying at temples) -->
+    <path d="M 139 103 C 139 92, 147 90, 155 90 C 163 90, 171 92, 171 103 Z" fill="#4F5660"/>
+    <!-- Right Arm & Hand meeting in handshake -->
+    <path d="M 155 140 Q 140 145, 125 135" fill="none" stroke="#364152" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="124" cy="133" r="5" fill="#D9A066"/>
+  </g>
+
+  <!-- Interlocking Hands Centerpiece (Focus of respect/greeting) -->
+  <ellipse cx="120" cy="134" rx="7" ry="5" fill="#C68B52"/>
+
+  <!-- Respect / Reverence Indicator: Elegant Politeness Bow Tilt & Warm Expression (Simplified modern flat eyes/mouth) -->
+  <!-- Left person smiling eye -->
+  <path d="M 88 102 Q 91 105, 94 102" fill="none" stroke="#5A4033" stroke-width="2" stroke-linecap="round"/>
+  <!-- Right person smiling eye -->
+  <path d="M 152 102 Q 155 105, 158 102" fill="none" stroke="#5A4033" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Golden Accent Sparkles / Aura denoting high esteem and formal politeness ("大名", deep admiration) -->
+  <g fill="#F59E0B">
+    <!-- Top center sparkle -->
+    <path d="M 120 65 L 122.5 73 L 130.5 75.5 L 122.5 78 L 120 86 L 117.5 78 L 109.5 75.5 L 117.5 73 Z" opacity="0.9"/>
+    <!-- Upper left small star -->
+    <path d="M 85 75 L 86 78 L 89 79 L 86 80 L 85 83 L 84 80 L 81 79 L 84 78 Z" opacity="0.6"/>
+    <!-- Upper right small star -->
+    <path d="M 155 75 L 156 78 L 159 79 L 156 80 L 155 83 L 154 80 L 151 79 L 154 78 Z" opacity="0.6"/>
+  </g>
+
+  <!-- Floor/Ground shadow anchor -->
+  <ellipse cx="120" cy="180" r="65" fill="#12151B"/>
+</svg>

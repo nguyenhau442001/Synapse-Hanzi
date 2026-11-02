@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Table -->
+  <rect x="40" y="170" width="160" height="10" rx="2" fill="#4A5568"/>
+  <rect x="60" y="180" width="10" height="30" fill="#2D3748"/>
+  <rect x="170" y="180" width="10" height="30" fill="#2D3748"/>
+  
+  <!-- Human Anatomy Representation (Simplified) -->
+  <path d="M100 160 C 100 130, 140 130, 140 160 L 140 170 L 100 170 Z" fill="#E2E8F0"/>
+  <path d="M105 145 L 135 145 M 105 150 L 135 150" stroke="#CBD5E0" stroke-width="2"/>
+  
+  <!-- Scalpel -->
+  <path d="M150 120 L 180 150 L 175 155 L 145 125 Z" fill="#F6AD55"/>
+  <path d="M145 125 L 130 140" stroke="#A0AEC0" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Magnifying Glass / Focus -->
+  <circle cx="120" cy="140" r="25" fill="none" stroke="#F6AD55" stroke-width="3" stroke-dasharray="4 4"/>
+  
+  <!-- Hand holding tool -->
+  <path d="M130 140 L 145 125" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="130" cy="140" r="8" fill="#E2E8F0"/>
+</svg>

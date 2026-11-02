@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Shop Front Structure -->
+  <rect x="60" y="80" width="120" height="100" rx="4" fill="#2D343E"/>
+  <rect x="75" y="100" width="40" height="60" rx="2" fill="#3D4754"/>
+  <rect x="125" y="100" width="40" height="60" rx="2" fill="#3D4754"/>
+  
+  <!-- Shop Signage/Awning -->
+  <rect x="60" y="70" width="120" height="10" fill="#FFB84D"/>
+  
+  <!-- Shopkeeper Character (The "Attractor") -->
+  <circle cx="150" cy="140" r="15" fill="#FFB84D"/>
+  <path d="M140 155h20v40h-20z" fill="#FFB84D"/>
+  
+  <!-- Hand Gesture: Welcoming/Inviting -->
+  <path d="M165 135c5 -5 10 -5 15 0" stroke="#FFB84D" stroke-width="4" stroke-linecap="round" fill="none"/>
+  
+  <!-- Customer Character (The "Attracted") -->
+  <circle cx="90" cy="140" r="15" fill="#A0AEC0"/>
+  <path d="M80 155h20v40h-20z" fill="#A0AEC0"/>
+  
+  <!-- Path/Motion Lines -->
+  <path d="M105 140h35" stroke="#FFB84D" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
+  
+  <!-- Decorative Item (Dim Sum Basket) -->
+  <circle cx="115" cy="170" r="8" fill="#E2E8F0"/>
+  <circle cx="115" cy="170" r="4" fill="#FFB84D"/>
+</svg>

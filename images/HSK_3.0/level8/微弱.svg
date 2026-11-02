@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Dark rubble/debris background elements -->
+  <path d="M20 220 L60 160 L100 200 L140 150 L180 220 Z" fill="#2C313C"/>
+  <path d="M150 240 L200 180 L240 240 Z" fill="#363C4A"/>
+  
+  <!-- The "weak/faint" light source (The life sign) -->
+  <!-- Using a small, flickering, isolated point of light to represent "微弱" -->
+  <circle cx="120" cy="120" r="2" fill="#FFD700">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Subtle halo effect to emphasize the faintness -->
+  <circle cx="120" cy="120" r="8" fill="#FFD700" opacity="0.1"/>
+  
+  <!-- Large scale contrast: The vast, dark, heavy environment vs the tiny light -->
+  <!-- Representing the "deep" and "faint" nature of the sign -->
+  <path d="M80 100 L160 100 L140 140 L100 140 Z" fill="#252933" opacity="0.8"/>
+  
+  <!-- Stylized silhouette of a search dog's nose/snout approaching the light -->
+  <path d="M40 180 C 60 140, 90 130, 115 125" stroke="#4A5568" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M115 125 L110 120 L115 115" stroke="#4A5568" stroke-width="3" stroke-linecap="round" fill="none"/>
+</svg>

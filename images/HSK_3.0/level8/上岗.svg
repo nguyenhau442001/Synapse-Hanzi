@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background industrial floor lines -->
+  <path d="M0 180 L240 180" stroke="#2D343E" stroke-width="2"/>
+  
+  <!-- Character: Professional worker stepping into position -->
+  <!-- Legs -->
+  <path d="M105 180 L105 140 M135 180 L135 140" stroke="#FFB84D" stroke-width="8" stroke-linecap="round"/>
+  <!-- Torso -->
+  <rect x="95" y="90" width="50" height="50" rx="5" fill="#FFB84D"/>
+  <!-- Head -->
+  <circle cx="120" cy="75" r="15" fill="#FFB84D"/>
+  <!-- Hard hat -->
+  <path d="M105 65 A15 15 0 0 1 135 65" fill="#E67E22"/>
+  
+  <!-- Motion lines indicating forward movement to the workstation -->
+  <path d="M160 120 L185 120 M165 110 L180 110 M165 130 L180 130" stroke="#5D6D7E" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Workstation/Control Panel -->
+  <rect x="190" y="100" width="30" height="80" rx="4" fill="#34495E"/>
+  <rect x="195" y="110" width="20" height="20" rx="2" fill="#2ECC71"/>
+  
+  <!-- Hand gesture: Placing hand on control panel (Action of starting work) -->
+  <path d="M145 115 L190 115" stroke="#FFB84D" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="190" cy="115" r="8" fill="#FFB84D"/>
+</svg>

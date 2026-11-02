@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Object: Outrageously overpriced noodle bowl representing "离谱儿" -->
+  <g transform="translate(0, 0)">
+    <!-- Shadow / Ground -->
+    <ellipse cx="120" cy="195" rx="55" ry="10" fill="#101217"/>
+
+    <!-- Restaurant Bowl (Sleek modern bowl) -->
+    <path d="M70,125 C70,165 90,185 120,185 C150,185 170,165 170,125 Z" fill="#2A2F3B"/>
+    <path d="M65,115 L175,115 L170,125 C170,125 150,135 120,135 C90,135 70,125 70,125 Z" fill="#3E4556"/>
+
+    <!-- Noodle Broth & Noodles -->
+    <ellipse cx="120" cy="118" rx="50" ry="14" fill="#D97706"/>
+    <!-- Noodle strands -->
+    <path d="M85,118 Q100,110 115,122 T155,116" fill="none" stroke="#FDE68A" stroke-width="4" stroke-linecap="round"/>
+    <path d="M90,122 Q105,128 125,116 T150,120" fill="none" stroke="#FDE68A" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Chopsticks holding up a disproportionately extravagant/absurd item (e.g., a glowing golden ingot/luxury tag, symbolizing outrageous price/absurdity) -->
+    <g transform="rotate(-15 120 110)">
+      <!-- Golden Ingot (Yuanbao) - Symbolizing exorbitant price -->
+      <path d="M95,80 Q120,60 145,80 L155,95 Q120,105 85,95 Z" fill="#F59E0B"/>
+      <path d="M100,83 Q120,70 140,83 L145,91 Q120,98 95,91 Z" fill="#FBBF24"/>
+      <!-- Sparkle/Highlight on Ingot -->
+      <path d="M120,72 L122,82 L132,80 L122,78 Z" fill="#FEF3C7"/>
+    </g>
+
+    <!-- Chopsticks -->
+    <line x1="160" y1="40" x2="110" y2="105" stroke="#B45309" stroke-width="4" stroke-linecap="round"/>
+    <line x1="168" y1="44" x2="118" y2="109" stroke="#92400E" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Price tag floating next to it, indicating "too much/absurd" with exclamation -->
+    <g transform="translate(155, 75)">
+      <rect x="0" y="0" width="36" height="26" rx="6" fill="#EF4444" stroke="#FFFFFF" stroke-width="2"/>
+      <!-- Exclamation mark symbolizing shock/absurdity -->
+      <line x1="18" y1="7" x2="18" y2="15" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="18" cy="20" r="1.5" fill="#FFFFFF"/>
+    </g>
+  </g>
+</svg>

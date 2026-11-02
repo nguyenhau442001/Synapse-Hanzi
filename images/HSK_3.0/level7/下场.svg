@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- The concept of "下场" (a tragic end/downfall) represented by a character losing their footing/status -->
+  <!-- A stylized, flat-design silhouette of a person falling backward from a pedestal -->
+  
+  <!-- Pedestal -->
+  <rect x="60" y="180" width="120" height="20" fill="#3D4451" rx="4"/>
+  <rect x="80" y="140" width="80" height="40" fill="#4A5568" rx="4"/>
+  
+  <!-- Falling Figure -->
+  <g transform="rotate(-30 120 120)">
+    <!-- Body -->
+    <path d="M110 120 L130 120 L125 160 L115 160 Z" fill="#E2E8F0"/>
+    <!-- Head -->
+    <circle cx="120" cy="110" r="15" fill="#E2E8F0"/>
+    <!-- Arms flailing -->
+    <path d="M100 130 L80 110" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+    <path d="M140 130 L160 110" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+    <!-- Legs flailing -->
+    <path d="M115 160 L105 190" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+    <path d="M125 160 L135 190" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Accent: Gold/Orange glow indicating the finality/impact -->
+  <circle cx="120" cy="190" r="10" fill="#F59E0B" opacity="0.6"/>
+  <circle cx="120" cy="190" r="20" fill="#F59E0B" opacity="0.2"/>
+</svg>

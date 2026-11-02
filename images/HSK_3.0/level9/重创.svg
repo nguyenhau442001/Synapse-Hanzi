@@ -1,0 +1,62 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for 重创 (Heavy devastation / Severe blow to agriculture/forestry/fishing) -->
+  <g transform="translate(0, 0)">
+    <!-- Ground / Riverbank terrain -->
+    <path d="M 30,190 L 210,190 L 210,210 L 30,210 Z" fill="#2A2E3D"/>
+    
+    <!-- Flooded water level covering lower part -->
+    <path d="M 30,175 Q 70,165 110,175 T 190,175 L 210,190 L 30,190 Z" fill="#3B82F6" opacity="0.4"/>
+    <path d="M 30,182 Q 80,172 130,182 T 210,182 L 210,190 L 30,190 Z" fill="#1D4ED8" opacity="0.6"/>
+
+    <!-- Damaged tree (Forestry / Agriculture impact) -->
+    <g transform="translate(70, 110)">
+      <!-- Main trunk snapped/bent -->
+      <path d="M 15,80 L 10,40 L 25,20 L 5,10" stroke="#8B5A2B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <!-- Fallen top part -->
+      <path d="M 20,25 Q 40,30 60,50" stroke="#654321" stroke-width="6" stroke-linecap="round" fill="none"/>
+      <!-- Withered leaves / sparse foliage -->
+      <circle cx="5" cy="5" r="10" fill="#EF4444" opacity="0.7"/>
+      <circle cx="28" cy="15" r="8" fill="#EF4444" opacity="0.7"/>
+      <!-- Broken branch stump -->
+      <path d="M 13,50 L 3,43" stroke="#8B5A2B" stroke-width="5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Damaged structure / greenhouse / farmland marker -->
+    <g transform="translate(130, 125)">
+      <!-- Collapsed frame -->
+      <path d="M 10,65 L 10,35 L 35,20 L 60,35 L 60,65" stroke="#9CA3AF" stroke-width="4" fill="none" stroke-linejoin="round"/>
+      <!-- Broken roof beam -->
+      <path d="M 10,35 L 45,50 L 60,35" stroke="#6B7280" stroke-width="4" fill="none"/>
+      <!-- Debris / Ruin lines -->
+      <line x1="20" y1="65" x2="50" y2="45" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+      <line x1="30" y1="65" x2="15" y2="50" stroke="#6B7280" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Heavy impact / devastation shockwave symbol (Giant strike) -->
+    <g transform="translate(120, 90)">
+      <!-- Impact epicenter radiating force lines -->
+      <circle cx="0" cy="0" r="35" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-dasharray="6,4" opacity="0.8"/>
+      <circle cx="0" cy="0" r="50" fill="none" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="4,6" opacity="0.6"/>
+      
+      <!-- Central crushing impact flash/star -->
+      <path d="M 0,-25 L 5,-5 L 25,0 L 5,5 L 0,25 L -5,5 L -25,0 L -5,-5 Z" fill="#F59E0B"/>
+      <circle cx="0" cy="0" r="8" fill="#EF4444"/>
+    </g>
+
+    <!-- Rain / Torrential downpour lines -->
+    <g stroke="#60A5FA" stroke-width="2" stroke-linecap="round" opacity="0.5">
+      <line x1="45" y1="50" x2="35" y2="70"/>
+      <line x1="75" y1="40" x2="65" y2="60"/>
+      <line x1="105" y1="60" x2="95" y2="80"/>
+      <line x1="165" y1="45" x2="155" y2="65"/>
+      <line x1="195" y1="65" x2="185" y2="85"/>
+      
+      <line x1="60" y1="80" x2="50" y2="100"/>
+      <line x1="140" y1="75" x2="130" y2="95"/>
+      <line x1="170" y1="90" x2="160" y2="110"/>
+    </g>
+  </g>
+</svg>

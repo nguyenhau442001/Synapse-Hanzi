@@ -1,0 +1,66 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient storm effect background -->
+  <path d="M40 70 L200 40" stroke="#FF5722" stroke-width="1.5" stroke-dasharray="4 8" opacity="0.3"/>
+  <path d="M20 110 L220 90" stroke="#FF5722" stroke-width="2" stroke-dasharray="6 12" opacity="0.4"/>
+  
+  <!-- Raging Sea Waves -->
+  <path d="M0 170 Q30 150 60 170 T120 170 T180 170 T240 170 L240 240 L0 240 Z" fill="#102030"/>
+  <path d="M0 185 Q40 165 80 185 T160 185 T240 185 L240 240 L0 240 Z" fill="#152c42"/>
+  <path d="M0 200 Q35 180 70 200 T140 200 T210 200 L240 200 L240 240 L0 240 Z" fill="#1d3b59"/>
+
+  <!-- Sinking Passenger Ship Hull (The Physical Object representing 危急) -->
+  <g transform="translate(45, 115) rotate(12)">
+    <!-- Hull base -->
+    <path d="M 15 50 L 135 50 C 142 50 145 55 140 65 L 115 95 C 110 100 100 105 90 105 L 35 105 C 25 105 15 100 10 95 L 5 65 C 0 55 5 50 15 50 Z" fill="#E0E0E0"/>
+    <!-- Hull red bottom -->
+    <path d="M 8 72 L 132 72 C 137 72 140 77 135 85 L 115 95 C 110 100 100 105 90 105 L 35 105 C 25 105 15 100 10 95 L 5 85 C 0 77 3 72 8 72 Z" fill="#D32F2F"/>
+    
+    <!-- Waterline overlap (half submerged) -->
+    <path d="M -20 60 Q 60 40 160 65 L 160 95 L -20 95 Z" fill="#0A0E14" opacity="0.7"/>
+
+    <!-- Cabins & Details -->
+    <rect x="30" y="30" width="80" height="20" rx="3" fill="#F5F5F5"/>
+    <rect x="45" y="15" width="50" height="15" rx="2" fill="#F5F5F5"/>
+    <rect x="65" y="5" width="10" height="10" fill="#B0BEC5"/>
+    
+    <!-- Windows -->
+    <circle cx="45" cy="40" r="3" fill="#1A1D24"/>
+    <circle cx="60" cy="40" r="3" fill="#1A1D24"/>
+    <circle cx="75" cy="40" r="3" fill="#1A1D24"/>
+    <circle cx="90" cy="40" r="3" fill="#1A1D24"/>
+
+    <!-- Danger Alert / SOS Beams (Orange/Gold Accent) -->
+    <circle cx="70" cy="10" r="18" fill="none" stroke="#FF9800" stroke-width="2" stroke-dasharray="4 3"/>
+  </g>
+
+  <!-- Rescue Helicopter (Hovering above in high-contrast orange/gold) -->
+  <g transform="translate(130, 45)">
+    <!-- Main Rotor Blur -->
+    <ellipse cx="25" cy="-5" rx="55" ry="4" fill="#90A4AE" opacity="0.6"/>
+    
+    <!-- Helicopter Body -->
+    <path d="M -5 10 C -5 0 10 -5 30 -5 C 50 -5 65 2 65 12 C 65 20 50 25 25 25 C -2 25 -5 18 -5 10 Z" fill="#FF9800"/>
+    
+    <!-- Cockpit Glass -->
+    <path d="M 35 0 C 45 0 58 3 62 12 L 35 12 Z" fill="#263238"/>
+    
+    <!-- Tail -->
+    <path d="M -5 10 L -35 3 C -38 2 -38 7 -35 8 L -5 15 Z" fill="#E65100"/>
+    <path d="M -38 0 L -32 0 L -35 12 Z" fill="#E65100"/>
+
+    <!-- Landing Skids -->
+    <line x1="5" y1="25" x2="10" y2="33" stroke="#37474F" stroke-width="2"/>
+    <line x1="40" y1="25" x2="45" y2="33" stroke="#37474F" stroke-width="2"/>
+    <line x1="0" y1="33" x2="50" y2="33" stroke="#37474F" stroke-width="2"/>
+
+    <!-- Rescue Hoist Cable & Hook -->
+    <line x1="25" y1="25" x2="25" y2="75" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="2 2"/>
+    <path d="M 21 75 L 29 75 L 25 82 Z" fill="#FFC107"/>
+  </g>
+
+  <!-- Dramatic Lighting / Alert Vignette -->
+  <circle cx="120" cy="120" r="110" fill="none" stroke="#FF5722" stroke-width="1" opacity="0.2"/>
+</svg>

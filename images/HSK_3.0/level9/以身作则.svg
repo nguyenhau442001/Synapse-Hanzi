@@ -1,0 +1,63 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative classroom glow/grid hints -->
+  <path d="M40 200 L200 200" stroke="#2A2F3D" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Shadow cast on floor -->
+  <ellipse cx="120" cy="200" rx="60" ry="8" fill="#12151B"/>
+
+  <!-- LEADER / TEACHER (Leading figure on the left, stepping forward with confidence) -->
+  <g id="leader">
+    <!-- Body/Torso -->
+    <path d="M95 130 L115 130 L120 185 L90 185 Z" fill="#3B82F6"/>
+    <!-- Suit lapels -->
+    <path d="M105 130 L115 155 L105 170 L95 155 Z" fill="#2563EB"/>
+    <!-- Head -->
+    <circle cx="105" cy="105" r="16" fill="#FDE047"/>
+    <!-- Hair -->
+    <path d="M89 105 C89 94, 97 90, 105 90 C113 90, 121 94, 121 103 L115 103 C115 97, 110 94, 105 94 C100 94, 95 97, 95 105 Z" fill="#1E293B"/>
+    <!-- Leading Arm (reaching forward/guiding) -->
+    <path d="M115 135 L145 145 L145 152 L115 142 Z" fill="#3B82F6"/>
+    <circle cx="147" cy="148" r="6" fill="#FDE047"/>
+    <!-- Back Arm -->
+    <path d="M95 135 L85 160 L92 163 L100 140 Z" fill="#2563EB"/>
+    <!-- Legs -->
+    <path d="M98 185 L98 200 L108 200 L108 185 Z" fill="#1E293B"/>
+    <path d="M112 185 L125 198 L133 195 L120 185 Z" fill="#1E293B"/>
+  </g>
+
+  <!-- FOLLOWER / STUDENT (Stepping in exact alignment, mirroring posture to show "setting an example") -->
+  <g id="follower" transform="translate(45, 0)">
+    <!-- Body/Torso -->
+    <path d="M95 135 L115 135 L118 185 L92 185 Z" fill="#10B981"/>
+    <!-- Head -->
+    <circle cx="105" cy="112" r="14" fill="#FDE047"/>
+    <!-- Hair -->
+    <path d="M91 112 C91 102, 98 98, 105 98 C112 98, 119 102, 119 110 Z" fill="#334155"/>
+    <!-- Arm mirroring leader -->
+    <path d="M112 140 L135 150 L132 157 L110 147 Z" fill="#10B981"/>
+    <circle cx="137" cy="153" r="5" fill="#FDE047"/>
+    <!-- Legs -->
+    <path d="M98 185 L95 200 L105 200 L106 185 Z" fill="#1E293B"/>
+    <path d="M110 185 L122 198 L130 195 L118 185 Z" fill="#1E293B"/>
+  </g>
+
+  <!-- GUIDING/PATH ELEMENT (Visualizing footsteps/path of action) -->
+  <g id="footsteps" opacity="0.6">
+    <ellipse cx="145" cy="204" rx="8" ry="3" fill="#3B82F6"/>
+    <ellipse cx="115" cy="204" rx="8" ry="3" fill="#10B981"/>
+    <ellipse cx="85" cy="204" rx="8" ry="3" fill="#2A2F3D"/>
+  </g>
+
+  <!-- CONCEPTUAL "EXAMPLE/BEACON" SYMBOL (Subtle glowing arrow/marker above the leader) -->
+  <g id="beacon">
+    <path d="M105 60 L115 75 L95 75 Z" fill="#F59E0B"/>
+    <rect x="103" y="75" width="4" height="10" fill="#F59E0B"/>
+    <!-- Subtle ray indicating guidance -->
+    <path d="M105 45 L105 52" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M92 50 L97 55" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <path d="M118 50 L113 55" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,89 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background ambient light representing summer evening glow -->
+  <circle cx="120" cy="140" r="80" fill="#FFB703" opacity="0.06"/>
+
+  <!-- Stylized water fountain base & ground elements in the background -->
+  <path d="M80 190 L160 190 L170 205 L70 205 Z" fill="#2C323D" opacity="0.8"/>
+  <rect x="112" y="150" width="16" height="40" fill="#3A4250"/>
+  <ellipse cx="120" cy="150" rx="24" ry="8" fill="#4B5563"/>
+  
+  <!-- Dynamic water arc motion lines (fountain spray) -->
+  <path d="M 120 142 Q 95 100 75 125" fill="none" stroke="#64DFDF" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 120 142 Q 145 100 165 125" fill="none" stroke="#64DFDF" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <circle cx="72" cy="122" r="3" fill="#64DFDF" opacity="0.8"/>
+  <circle cx="168" cy="122" r="3" fill="#64DFDF" opacity="0.8"/>
+  <circle cx="65" cy="135" r="2" fill="#64DFDF" opacity="0.6"/>
+  <circle cx="175" cy="135" r="2" fill="#64DFDF" opacity="0.6"/>
+
+  <!-- Character 1 (Left - Dynamic action, playing/laughing) -->
+  <g transform="translate(0, 0)">
+    <!-- Motion lines for jumping/playing -->
+    <path d="M 75 145 Q 65 135 60 120" fill="none" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 4" opacity="0.8"/>
+    
+    <!-- Body & Limbs (Dynamic pose: arms raised, laughing) -->
+    <path d="M 85 160 L 95 185 L 90 205" fill="none" stroke="#3A86FF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 85 160 L 75 185 L 65 200" fill="none" stroke="#3A86FF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Torso -->
+    <path d="M 75 135 L 95 135 L 90 170 L 80 170 Z" fill="#3A86FF"/>
+    
+    <!-- Arms raised joyfully -->
+    <path d="M 78 140 L 62 125 L 55 135" fill="none" stroke="#3A86FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 92 140 L 108 125 L 115 115" fill="none" stroke="#3A86FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Head -->
+    <circle cx="85" cy="115" r="14" fill="#FFD166"/>
+    <!-- Hair -->
+    <path d="M 71 115 Q 85 95 99 110 Z" fill="#E0A96D"/>
+    
+    <!-- Joyful expression: open laughing mouth & closed happy eyes -->
+    <path d="M 79 113 Q 83 110 87 113" fill="none" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 89 113 Q 93 110 97 113" fill="none" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 85 118 Q 88 124 91 118 Z" fill="#EF476F"/>
+  </g>
+
+  <!-- Character 2 (Right - Action of running/frolicking, laughing) -->
+  <g transform="translate(0, 0)">
+    <!-- Motion lines -->
+    <path d="M 165 145 Q 175 135 180 120" fill="none" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 4" opacity="0.8"/>
+    
+    <!-- Limbs in motion -->
+    <path d="M 155 160 L 145 185 L 135 200" fill="none" stroke="#FF006E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 155 160 L 165 185 L 175 205" fill="none" stroke="#FF006E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Torso -->
+    <path d="M 145 135 L 165 135 L 160 170 L 150 170 Z" fill="#FF006E"/>
+    
+    <!-- Arms waving in delight -->
+    <path d="M 148 140 L 132 130 L 122 138" fill="none" stroke="#FF006E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 162 140 L 178 128 L 185 118" fill="none" stroke="#FF006E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Head -->
+    <circle cx="155" cy="115" r="14" fill="#FFD166"/>
+    <!-- Hair -->
+    <path d="M 141 115 Q 155 95 169 110 Z" fill="#8338EC"/>
+    
+    <!-- Joyful expression -->
+    <path d="M 149 113 Q 153 110 157 113" fill="none" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 159 113 Q 163 110 167 113" fill="none" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 155 118 Q 158 124 161 118 Z" fill="#EF476F"/>
+  </g>
+
+  <!-- Dynamic sound/laughter ripples & sparkle accents (showing playful noise & happiness) -->
+  <g fill="#FFB703" opacity="0.9">
+    <!-- Sound wave arcs -->
+    <path d="M 105 95 Q 110 90 105 85" fill="none" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 135 95 Q 130 90 135 85" fill="none" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Playful sparkles -->
+    <path d="M 120 70 L 122 78 L 130 80 L 122 82 L 120 90 L 118 82 L 110 80 L 118 78 Z" transform="scale(0.6) translate(110, 30)"/>
+    <path d="M 60 90 L 61 94 L 65 95 L 61 96 L 60 100 L 59 96 L 55 95 L 59 94 Z"/>
+    <path d="M 180 90 L 181 94 L 185 95 L 181 96 L 180 100 L 179 96 L 175 95 L 179 94 Z"/>
+  </g>
+
+  <!-- Soft ground shadow connecting characters -->
+  <ellipse cx="120" cy="204" rx="65" ry="6" fill="#111318" opacity="0.6"/>
+</svg>

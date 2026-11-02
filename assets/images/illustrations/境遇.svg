@@ -1,0 +1,41 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Background path representing rugged, winding life journey (坎坷) -->
+    <path d="M 30 180 Q 70 140, 100 160 T 170 110 T 210 60" fill="none" stroke="#2A2F3D" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+    
+    <!-- Milestone rocks / obstacles -->
+    <path d="M 65 162 L 75 145 L 85 162 Z" fill="#2E3646"/>
+    <path d="M 140 132 L 152 110 L 165 132 Z" fill="#2E3646"/>
+
+    <!-- Central Character representing "身处人生境遇之中" (Person standing firm in adverse circumstances) -->
+    <!-- Shadow -->
+    <ellipse cx="120" cy="183" rx="25" ry="6" fill="#111317"/>
+
+    <!-- Body / Posture (Self-reliant, determined) -->
+    <path d="M 105 180 L 112 135 L 128 135 L 135 180 Z" fill="#3B82F6"/>
+    
+    <!-- Head -->
+    <circle cx="120" cy="115" r="14" fill="#E2E8F0"/>
+    
+    <!-- Sturdy torso/shoulders -->
+    <path d="M 102 135 C 102 125, 138 125, 138 135 L 143 165 L 97 165 Z" fill="#1D4ED8"/>
+
+    <!-- Arms firmly planted / self-reliant gesture -->
+    <path d="M 105 140 L 90 160 L 98 165 L 110 148" fill="#E2E8F0"/>
+    <path d="M 135 140 L 150 160 L 142 165 L 130 148" fill="#E2E8F0"/>
+
+    <!-- Legs rooted strongly -->
+    <path d="M 110 180 L 110 195 L 117 195 L 118 180 Z" fill="#1E293B"/>
+    <path d="M 130 180 L 130 195 L 123 195 L 122 180 Z" fill="#1E293B"/>
+
+    <!-- Focal point / Growth representing overcoming circumstances (自立自强) -->
+    <!-- Glowing warm accent beam from above breaking through -->
+    <path d="M 120 40 L 90 100 L 150 100 Z" fill="#F59E0B" opacity="0.1"/>
+    
+    <!-- The upward spark of resilience / destiny changing -->
+    <circle cx="120" cy="85" r="5" fill="#F59E0B"/>
+    <path d="M 120 70 L 120 95 M 107 82 L 133 88" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>

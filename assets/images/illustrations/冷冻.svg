@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Freezer/Cold Storage Unit -->
+  <rect x="70" y="60" width="100" height="120" rx="8" fill="#2D343E" stroke="#4A5568" stroke-width="2"/>
+  <rect x="75" y="65" width="90" height="110" rx="4" fill="#1A1D24"/>
+  
+  <!-- Frost/Ice Effect -->
+  <path d="M75 65 L85 65 L75 75 Z" fill="#E2E8F0" opacity="0.6"/>
+  <path d="M165 165 L165 175 L155 175 Z" fill="#E2E8F0" opacity="0.6"/>
+  
+  <!-- Fish inside -->
+  <path d="M95 100 C 110 90, 130 90, 145 100 C 150 110, 150 130, 145 140 C 130 150, 110 150, 95 140 C 90 130, 90 110, 95 100 Z" fill="#63B3ED"/>
+  <path d="M140 115 L155 105 L155 125 Z" fill="#63B3ED"/>
+  <circle cx="105" cy="115" r="3" fill="#1A1D24"/>
+  
+  <!-- Handle -->
+  <rect x="155" y="90" width="8" height="60" rx="4" fill="#F6AD55"/>
+  
+  <!-- Cold Vapor/Ice Crystals -->
+  <circle cx="85" cy="80" r="2" fill="#E2E8F0"/>
+  <circle cx="150" cy="160" r="2" fill="#E2E8F0"/>
+  <path d="M120 70 L120 80 M115 75 L125 75" stroke="#E2E8F0" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

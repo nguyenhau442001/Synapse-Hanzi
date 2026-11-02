@@ -1,0 +1,44 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Representation of "无理" (Absurdity/Irrationality/Lawless behavior in context) -->
+  <!-- We visualize this as an overturned, chaotic legal gavel breaking away into disordered, nonsensical geometric paths, representing irrationality and chaotic defiance of rules. -->
+
+  <!-- Subtle background courtroom grid / framing element -->
+  <line x1="40" y1="200" x2="200" y2="200" stroke="#2A2F3A" stroke-width="2" stroke-linecap="round"/>
+  <rect x="105" y="165" width="30" height="35" fill="#2E3646" rx="2"/>
+
+  <!-- Chaotic floating/fracturing elements (Absurdity/无理) -->
+  <g transform="translate(120, 110) rotate(-15)">
+    <!-- Gavel Head - Disjointed/Floating apart -->
+    <!-- Left block part -->
+    <path d="M-55,-25 L-20,-25 L-20,15 L-55,15 Z" fill="#E5534B" />
+    <!-- Right block part (shifted out of place) -->
+    <path d="M-15,-20 L25,-30 L25,10 L-15,20 Z" fill="#E5534B" />
+    
+    <!-- Gold accent rings on gavel -->
+    <rect x="-42" y="-25" width="6" height="40" fill="#F0B429" />
+    <rect x="0" y="-23" width="6" height="38" fill="#F0B429" />
+
+    <!-- Broken/Absurd Handle angled crazily -->
+    <path d="M5,0 L55,-40 L65,-25 L15,15 Z" fill="#D1D5DB" />
+    <circle cx="60" cy="-32" r="5" fill="#F0B429" />
+
+    <!-- Impact shockwaves / irrational disruption lines -->
+    <path d="M-75,35 Q -30,55 10,40 T 70,50" fill="none" stroke="#E5534B" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 6"/>
+    <path d="M-45,-55 Q -10,-75 30,-60" fill="none" stroke="#F0B429" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Secondary floating icons representing irrational chaos/disorder -->
+  <g transform="translate(0,0)">
+    <!-- Nonsensical question mark breaking apart -->
+    <path d="M 60 70 C 60 50, 90 50, 90 75 C 90 95, 65 95, 65 115" fill="none" stroke="#627D98" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="65" cy="135" r="4" fill="#627D98"/>
+    
+    <!-- Crossed out logic/order symbol on the right -->
+    <circle cx="185" cy="75" r="18" fill="none" stroke="#E5534B" stroke-width="3"/>
+    <line x1="172" y1="62" x2="198" y2="88" stroke="#E5534B" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+</svg>

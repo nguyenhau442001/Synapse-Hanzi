@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements for motion/nickname context -->
+  <g opacity="0.3">
+    <path d="M40 120 L80 120" stroke="#4A5568" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 6"/>
+    <path d="M160 120 L200 120" stroke="#4A5568" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 6"/>
+  </g>
+
+  <!-- Central Character Object: A sleek identification badge / name tag floating gracefully, representing "Nickname / 外号" -->
+  <g transform="translate(0, 0)">
+    <!-- Badge Lanyard / Ribbon -->
+    <path d="M90 55 C90 40, 150 40, 150 55" fill="none" stroke="#374151" stroke-width="6" stroke-linecap="round"/>
+    <path d="M100 50 L120 70 L140 50" fill="none" stroke="#4B5563" stroke-width="4" stroke-linejoin="round"/>
+
+    <!-- Main Badge Card Body -->
+    <rect x="65" y="70" width="110" height="110" rx="16" fill="#2D3748" stroke="#4A5568" stroke-width="3"/>
+    
+    <!-- Badge Header Accent (Gold/Orange for focus) -->
+    <path d="M 65 86 A 16 16 0 0 1 81 70 L 159 70 A 16 16 0 0 1 175 86 L 175 96 L 65 96 Z" fill="#D97706"/>
+
+    <!-- Avatar / Silhouette inside badge (representing a person receiving a nickname) -->
+    <circle cx="120" cy="115" r="14" fill="#9CA3AF"/>
+    <path d="M98 152 C98 138, 108 132, 120 132 C132 132, 142 138, 142 152 Z" fill="#9CA3AF"/>
+
+    <!-- Dynamic "Nickname" label lines (abstract representation of text lines, strictly NO letters) -->
+    <rect x="90" y="160" width="60" height="6" rx="3" fill="#F59E0B"/>
+    <rect x="100" y="172" width="40" height="4" rx="2" fill="#6B7280"/>
+
+    <!-- Motion/Speed graphic elements hinting at the "Fei Maotui" / Flash example context -->
+    <g transform="translate(0, 5)">
+      <!-- Left action spark -->
+      <path d="M45 105 L55 110 L45 115" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="38" cy="110" r="2" fill="#F59E0B"/>
+
+      <!-- Right action spark -->
+      <path d="M195 105 L185 110 L195 115" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="202" cy="110" r="2" fill="#F59E0B"/>
+    </g>
+
+    <!-- Floating tag indicators -->
+    <circle cx="170" cy="70" r="5" fill="#3B82F6"/>
+    <circle cx="70" cy="165" r="4" fill="#10B981"/>
+  </g>
+</svg>

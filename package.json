@@ -1,9 +1,13 @@
 {
-  "name": "synapse-hanzi",
+  "name": "hanzi-mind",
   "version": "3.0.0",
-  "description": "Trạm học từ vựng chữ Hán đa giác quan, hiện đại, tối giản và 100% Offline (PWA)",
+  "description": "汉字思维 (Hànzì Sīwéi) · Hanzi Mind — Trạm học từ vựng chữ Hán đa giác quan, hiện đại, mỹ học truyền thống Đông phương và 100% Offline (PWA)",
   "private": true,
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node tools/test_fast_review_pinyin.js",
     "version:patch": "python3 tools/bump_version.py patch",
     "version:minor": "python3 tools/bump_version.py minor",
     "version:major": "python3 tools/bump_version.py major"

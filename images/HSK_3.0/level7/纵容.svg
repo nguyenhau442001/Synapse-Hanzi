@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Representing "纵容" (indulgence/spoiling): An adult figure handing a large, oversized, heavy bag of sweets/toys to a child who is misbehaving (depicted with a defiant posture), showing the lack of discipline. -->
+  
+  <!-- Child figure -->
+  <path d="M140 160c0-15 10-25 25-25s25 10 25 25v50h-50z" fill="#FFD700"/>
+  <circle cx="165" cy="130" r="15" fill="#FFD700"/>
+  <path d="M155 125h5m10 0h5m-12 5l-2 2m15 0l-2-2" stroke="#1A1D24" stroke-width="2"/>
+  
+  <!-- Adult figure (the enabler) -->
+  <path d="M60 100c0-20 15-35 35-35s35 15 35 35v110H60z" fill="#4A90E2"/>
+  <circle cx="95" cy="80" r="20" fill="#4A90E2"/>
+  
+  <!-- The act of indulgence: Handing over a large, excessive gift bag -->
+  <rect x="100" y="140" width="40" height="50" rx="4" fill="#E67E22"/>
+  <path d="M110 140v-10c0-5 5-10 10-10h0c5 0 10 5 10 10v10" fill="none" stroke="#E67E22" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Arm reaching out -->
+  <path d="M95 120l30 20" stroke="#4A90E2" stroke-width="12" stroke-linecap="round"/>
+  
+  <!-- Ground line -->
+  <path d="M40 210h160" stroke="#34495E" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,38 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Bed / Patient Environment (Subtle background context) -->
+    <path d="M50 160 L190 160 L190 175 L50 175 Z" fill="#2A303C" rx="4"/>
+    <rect x="55" y="130" width="35" height="30" rx="6" fill="#3A4454"/>
+    <path d="M70 135 C70 120 110 120 110 135 Z" fill="#64748B"/>
+
+    <!-- Patient (Elderly person resting in bed) -->
+    <circle cx="78" cy="138" r="11" fill="#E2E8F0"/>
+    <path d="M67 150 Q78 143 89 150 L85 160 L71 160 Z" fill="#3B82F6"/>
+
+    <!-- Nurse (Caregiver representing '照料') -->
+    <!-- Nurse Torso & Uniform -->
+    <path d="M125 180 L125 145 C125 135 135 125 147 125 L163 125 C175 125 185 135 185 145 L185 180 Z" fill="#F8FAFC"/>
+    <!-- Nurse Collar / Red Cross accent -->
+    <polygon points="155,125 147,135 163,135" fill="#EF4444"/>
+
+    <!-- Nurse Head & Hair -->
+    <circle cx="155" cy="105" r="14" fill="#FEE2E7"/>
+    <path d="M141 105 C141 93 169 93 169 105 C169 110 165 110 155 112 C145 110 141 110 141 105 Z" fill="#334155"/>
+
+    <!-- Nurse Cap -->
+    <path d="M145 93 L165 93 L162 86 L148 86 Z" fill="#FFFFFF"/>
+    <polygon points="153,90 157,90 157,88 153,88" fill="#EF4444"/>
+
+    <!-- Caring Gesture: Hands attentively adjusting blanket / tending to patient -->
+    <path d="M110 140 C110 135 118 132 124 136 C130 140 126 148 120 148 C114 148 110 145 110 140 Z" fill="#FEE2E7"/>
+    <path d="M95 143 C95 139 103 137 108 141 C113 145 109 151 103 151 C98 151 95 147 95 143 Z" fill="#FEE2E7"/>
+
+    <!-- Blanket covering patient -->
+    <path d="M65 145 Q115 140 130 160 L50 160 Z" fill="#38BDF8" opacity="0.9"/>
+
+    <!-- Warm ambient lighting / focal glow representing attentive care -->
+    <circle cx="115" cy="120" r="45" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4,6" opacity="0.5"/>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 120)">
+    <!-- Main object: A metal rod being twisted -->
+    <path d="M-60 -10 L60 -10 L60 10 L-60 10 Z" fill="#4A5568" transform="rotate(-15)"/>
+    <path d="M-60 -10 L60 -10 L60 10 L-60 10 Z" fill="#F6AD55" transform="rotate(15)"/>
+    
+    <!-- The twisting point in the center -->
+    <path d="M-15 -25 C -5 -5, 5 -5, 15 25" stroke="#F6AD55" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M-15 25 C -5 5, 5 5, 15 -25" stroke="#4A5568" stroke-width="8" stroke-linecap="round" fill="none"/>
+    
+    <!-- Highlights for the twist effect -->
+    <circle cx="0" cy="0" r="12" fill="#F6AD55" opacity="0.3"/>
+  </g>
+</svg>

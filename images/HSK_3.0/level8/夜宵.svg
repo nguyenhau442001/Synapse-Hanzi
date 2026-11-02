@@ -1,0 +1,54 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Atmospheric Night Background Elements -->
+  <!-- Glowing city lights / street lamp glow -->
+  <path d="M120 20 L140 100 L100 100 Z" fill="#FFB703" opacity="0.05"/>
+  <circle cx="120" cy="20" r="15" fill="#FFB703" opacity="0.15" filter="blur(4px)"/>
+  
+  <!-- Moon / Night sky ambiance -->
+  <circle cx="195" cy="45" r="12" fill="#3A4454" opacity="0.4"/>
+  
+  <!-- Table Surface -->
+  <path d="M40 185 C40 175 50 170 120 170 C190 170 200 175 200 185 C200 195 190 200 120 200 C50 200 40 195 40 185 Z" fill="#2C323D"/>
+  <ellipse cx="120" cy="183" rx="75" ry="12" fill="#222730"/>
+
+  <!-- Main Object: Night Snack (Noodle Bowl / Steaming Late-Night Delicacy) -->
+  <!-- Bowl Outer -->
+  <path d="M75 140 C75 170 165 170 165 140 Z" fill="#D64527"/>
+  <!-- Bowl Rim -->
+  <ellipse cx="120" cy="140" rx="45" ry="10" fill="#E85D35"/>
+  <!-- Bowl Inner / Broth -->
+  <ellipse cx="120" cy="141" rx="41" ry="8" fill="#F4A261"/>
+
+  <!-- Noodles -->
+  <path d="M95 140 Q105 136 115 141 T135 140 T145 142" stroke="#FEE440" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M100 143 Q110 139 120 144 T140 141" stroke="#FEE440" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Toppings (Chopsticks, Egg, Scallions) -->
+  <!-- Halved Soft-boiled Egg -->
+  <circle cx="135" cy="139" r="7" fill="#FFF"/>
+  <circle cx="135" cy="139" r="3.5" fill="#FFB703"/>
+
+  <!-- Meat slice / Char siu -->
+  <path d="M95 137 C100 134 110 136 108 142 C105 145 95 142 95 137 Z" fill="#A83232"/>
+
+  <!-- Chopsticks -->
+  <line x1="85" y1="105" x2="160" y2="155" stroke="#E9C46A" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="90" y1="102" x2="165" y2="152" stroke="#E9C46A" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Steam / Heat Vapors (Indicating hot late-night food) -->
+  <path d="M105 120 Q110 110 102 100 T110 80" stroke="#8D99AE" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M125 122 Q120 112 128 102 T122 82" stroke="#8D99AE" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+  <path d="M140 120 Q145 110 137 98 T142 84" stroke="#8D99AE" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+
+  <!-- Small side dish plate -->
+  <ellipse cx="65" cy="165" rx="16" ry="6" fill="#3A4454"/>
+  <ellipse cx="65" cy="164" rx="13" ry="4.5" fill="#E76F51"/>
+  <circle cx="63" cy="164" r="2.5" fill="#264653"/>
+  <circle cx="68" cy="165" r="2" fill="#264653"/>
+
+  <!-- Glowing focus accent (Warmth in the dark) -->
+  <circle cx="120" cy="140" r="60" fill="#FFB703" opacity="0.04" filter="blur(8px)"/>
+</svg>

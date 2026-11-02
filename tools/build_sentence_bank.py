@@ -40,6 +40,10 @@ GRAMMAR_PATTERNS = [
     (r"得", "Bổ ngữ trạng thái / khả năng với 得"),
     (r"地", "Trạng ngữ chỉ phương thức với 地"),
     (r"让|叫|使|请", "Câu kiêm ngữ (Cho phép / Sai khiến / Yêu cầu)"),
+    (r"(很|非常|十分|特别|真|挺)[^，。！？]+", "Cấu trúc vị ngữ miêu tả trạng thái"),
+    (r"(应该|必须|需要|能够|愿意|敢|肯)", "Cấu trúc động từ năng nguyện (Trợ động từ)"),
+    (r"(向|往|朝|替|为|给|关于).+?[^，。！？]+", "Cấu trúc trạng ngữ giới từ"),
+    (r"(完|见|懂|开|错|清楚|到|上|下|进|出|回|过|起|来|去)[，。！？]", "Cấu trúc bổ ngữ kết quả / xu hướng"),
 ]
 
 DISTRACTOR_RULES = [
@@ -155,12 +159,10 @@ def build_entries(vocab_path: Path, source: str, level_num: int) -> list[dict]:
         distractors = generate_distractors(tokens, level_num)
         grammar = detect_grammar_point(sentence)
         if not grammar:
-            if level_num <= 2:
-                grammar = "Cấu trúc S + V + O cơ bản"
-            elif level_num == 3:
-                grammar = "Ngữ đoạn liên kết / Bổ ngữ"
+            if "，" in sentence or "," in sentence:
+                grammar = "Câu ghép / Liên kết mệnh đề"
             else:
-                grammar = "Mệnh đề ghép & trật tự ngữ pháp nâng cao"
+                grammar = "Cấu trúc câu đơn S + V + O"
 
         entries.append({
             "id": f"s_{source}_{idx:04d}",

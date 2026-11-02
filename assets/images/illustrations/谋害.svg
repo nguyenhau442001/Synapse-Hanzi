@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background spotlight representing crime/investigation context -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.6"/>
+  
+  <!-- Central Physical Object: A sleek, dark modern silhouette representing a hidden threat / assassination plot (謀害) -->
+  <g transform="translate(120, 120)">
+    <!-- Target crosshair / magnifying glass element representing the police investigation of the plot -->
+    <circle cx="0" cy="0" r="54" fill="none" stroke="#2F3646" stroke-width="3" stroke-dasharray="6 4"/>
+    
+    <!-- Shadow beneath the weapon -->
+    <ellipse cx="0" cy="50" rx="35" ry="8" fill="#111317" opacity="0.8"/>
+    
+    <!-- Stylized modern dagger/stiletto (representing the physical assassination intent) angled dynamically -->
+    <g transform="rotate(-35)">
+      <!-- Blade -->
+      <path d="M 0 -65 L 7 -15 L 0 55 L -7 -15 Z" fill="#E2E8F0"/>
+      <!-- Sharp center fuller groove -->
+      <path d="M 0 -55 L 2 -15 L 0 40 L -2 -15 Z" fill="#94A3B8"/>
+      <!-- Blade edge highlight -->
+      <path d="M 0 -65 L 7 -15 L 0 55 Z" fill="#F8FAFC" opacity="0.4"/>
+      
+      <!-- Crossguard / Hilt guard -->
+      <rect x="-18" y="-15" width="36" height="6" rx="3" fill="#F59E0B"/>
+      <circle cx="-16" cy="-12" r="2" fill="#D97706"/>
+      <circle cx="16" cy="-12" r="2" fill="#D97706"/>
+      
+      <!-- Grip / Handle -->
+      <rect x="-6" y="-35" width="12" height="22" rx="2" fill="#334155"/>
+      <line x1="-6" y1="-29" x2="6" y2="-29" stroke="#1E293B" stroke-width="2"/>
+      <line x1="-6" y1="-23" x2="6" y2="-23" stroke="#1E293B" stroke-width="2"/>
+      
+      <!-- Pommel -->
+      <circle cx="0" cy="-37" r="5" fill="#F59E0B"/>
+    </g>
+    
+    <!-- Ominous high-contrast danger accent (orange/gold glow beam crossing) -->
+    <path d="M -40 -40 L -25 -25" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 35 35 L 50 50" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Subtle warning aura -->
+    <circle cx="0" cy="0" r="64" fill="none" stroke="#EF4444" stroke-width="2" opacity="0.3"/>
+  </g>
+</svg>

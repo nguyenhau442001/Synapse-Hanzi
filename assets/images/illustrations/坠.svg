@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background elements: Distant mountains -->
+  <path d="M20 200 L70 150 L120 180 L180 130 L220 170 L220 200 Z" fill="#242B38"/>
+  <path d="M0 200 L50 160 L100 190 L160 145 L200 180 L240 175 L240 240 L0 240 Z" fill="#2C3544"/>
+
+  <!-- Night Sky Backdrop / Atmosphere -->
+  <circle cx="180" cy="50" r="1.5" fill="#5A6982" opacity="0.6"/>
+  <circle cx="60" cy="40" r="1" fill="#5A6982" opacity="0.4"/>
+  <circle cx="40" cy="90" r="1.5" fill="#5A6982" opacity="0.5"/>
+  <circle cx="200" cy="100" r="1" fill="#5A6982" opacity="0.7"/>
+
+  <!-- Motion Trail for the Falling Meteor (坠 - falling action) -->
+  <path d="M 40 40 L 140 140" stroke="url(#trailGradient)" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 4" opacity="0.5"/>
+  <path d="M 50 35 L 155 140" stroke="#FFB703" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- Linear Gradient for Meteor Trail -->
+  <defs>
+    <linearGradient id="trailGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB703" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFB703" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FB8500" stop-opacity="1"/>
+    </linearGradient>
+    
+    <radialGradient id="meteorGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="30%" stop-color="#FFB703" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#FB8500" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#FB8500" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Meteor Head / Glowing Core -->
+  <circle cx="150" cy="150" r="14" fill="url(#meteorGlow)"/>
+  <circle cx="150" cy="150" r="6" fill="#FFFFFF"/>
+
+  <!-- Impact / Spark particles indicating downward motion -->
+  <path d="M 145 158 L 135 170" stroke="#FFB703" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 155 155 L 168 165" stroke="#FFB703" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 152 160 L 148 175" stroke="#FB8500" stroke-width="1.5" stroke-linecap="round"/>
+
+</svg>

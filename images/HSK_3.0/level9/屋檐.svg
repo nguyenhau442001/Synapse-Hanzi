@@ -1,0 +1,31 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Architectural Roof Eave Structure -->
+  <g transform="translate(40, 80)">
+    <!-- Main Roof Slope -->
+    <path d="M0,40 L160,40 L140,80 L20,80 Z" fill="#2D343E" stroke="#FFB347" stroke-width="2"/>
+    
+    <!-- Eave Detail (The "Wuyan" focus) -->
+    <path d="M10,80 L150,80 L160,100 L0,100 Z" fill="#3D4654" stroke="#FFB347" stroke-width="2"/>
+    
+    <!-- Decorative Carving/Bracket -->
+    <path d="M30,100 L30,130 M130,100 L130,130" stroke="#FFB347" stroke-width="4" stroke-linecap="round"/>
+    <path d="M20,130 L140,130" stroke="#FFB347" stroke-width="3"/>
+    
+    <!-- Hanging Lantern -->
+    <circle cx="80" cy="145" r="15" fill="#E63946"/>
+    <rect x="75" y="130" width="10" height="5" fill="#FFB347"/>
+    <path d="M80,160 L80,175" stroke="#FFB347" stroke-width="2"/>
+    <path d="M75,175 L85,175" stroke="#FFB347" stroke-width="2"/>
+  </g>
+  
+  <!-- Rain Effect -->
+  <g opacity="0.4">
+    <line x1="30" y1="20" x2="20" y2="60" stroke="#A8B3C0" stroke-width="1"/>
+    <line x1="70" y1="10" x2="60" y2="50" stroke="#A8B3C0" stroke-width="1"/>
+    <line x1="120" y1="20" x2="110" y2="60" stroke="#A8B3C0" stroke-width="1"/>
+    <line x1="180" y1="10" x2="170" y2="50" stroke="#A8B3C0" stroke-width="1"/>
+    <line x1="210" y1="20" x2="200" y2="60" stroke="#A8B3C0" stroke-width="1"/>
+  </g>
+</svg>

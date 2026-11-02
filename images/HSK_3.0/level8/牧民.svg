@@ -1,0 +1,38 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Grassland background -->
+  <path d="M0 160 Q 120 130 240 160 L 240 240 L 0 240 Z" fill="#2A3528"/>
+  
+  <!-- Nomadic Herdsman -->
+  <g transform="translate(120, 140)">
+    <!-- Body -->
+    <path d="M-20 60 L 20 60 L 15 0 L -15 0 Z" fill="#E67E22"/>
+    <!-- Head -->
+    <circle cx="0" cy="-20" r="18" fill="#F39C12"/>
+    <!-- Hat -->
+    <path d="M-25 -30 L 25 -30 L 15 -45 L -15 -45 Z" fill="#D35400"/>
+    <!-- Arm holding staff -->
+    <path d="M-20 10 L -40 30" stroke="#E67E22" stroke-width="8" stroke-linecap="round"/>
+    <!-- Staff -->
+    <path d="M-45 10 L -35 80" stroke="#8E44AD" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Sheep -->
+  <g transform="translate(60, 180)">
+    <ellipse cx="0" cy="0" rx="20" ry="15" fill="#BDC3C7"/>
+    <circle cx="15" cy="-10" r="8" fill="#BDC3C7"/>
+    <rect x="-15" y="5" width="4" height="15" fill="#95A5A6"/>
+    <rect x="10" y="5" width="4" height="15" fill="#95A5A6"/>
+  </g>
+  
+  <g transform="translate(180, 190)">
+    <ellipse cx="0" cy="0" rx="18" ry="13" fill="#ECF0F1"/>
+    <circle cx="12" cy="-8" r="7" fill="#ECF0F1"/>
+    <rect x="-10" y="5" width="3" height="12" fill="#BDC3C7"/>
+    <rect x="8" y="5" width="3" height="12" fill="#BDC3C7"/>
+  </g>
+  
+  <!-- Distant Mountains -->
+  <path d="M0 160 L 60 80 L 120 130 L 180 70 L 240 120 L 240 160 Z" fill="#2C3E50"/>
+</svg>

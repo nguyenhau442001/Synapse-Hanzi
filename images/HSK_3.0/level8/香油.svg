@@ -1,0 +1,33 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 115)">
+    {/* Steam / Aroma indicators */}
+    <path d="M-35 -65 C-35 -75, -25 -80, -30 -95" stroke="#F6AD55" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <path d="M0 -70 C5 -82, -5 -90, 0 -105" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.9"/>
+    <path d="M35 -65 C35 -75, 25 -80, 30 -95" stroke="#F6AD55" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8"/>
+
+    {/* Droplet icon representing sesame oil */}
+    <path d="M0 -55 C0 -55, -22 -15, -22 8 C-22 25, -9 38, 0 38 C9 38, 22 25, 22 8 C22 -15, 0 -55, 0 -55 Z" fill="#DD6B20"/>
+    <path d="M-6 0 C-10 6, -14 14, -13 22" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.7"/>
+
+    {/* Elegant Bowl Base */}
+    <path d="M-75 25 C-75 68, -45 88, 0 88 C45 88, 75 68, 75 25 Z" fill="#2D3748"/>
+    <path d="M-72 25 C-72 65, -43 83, 0 83 C43 83, 72 65, 72 25 Z" fill="#4A5568"/>
+    
+    {/* Soup surface inside bowl */}
+    <ellipse cx="0" cy="25" rx="72" ry="18" fill="#D69E2E"/>
+    <ellipse cx="0" cy="26" rx="66" ry="15" fill="#ED8936"/>
+
+    {/* Sesame oil ripples on the surface */}
+    <ellipse cx="0" cy="26" rx="35" ry="8" fill="none" stroke="#F6AD55" stroke-width="3" opacity="0.9"/>
+    <ellipse cx="0" cy="26" rx="18" ry="4" fill="none" stroke="#FEEBC8" stroke-width="2.5" opacity="0.95"/>
+
+    {/* Floating Wonton / Garnish Details */}
+    <path d="M-25 22 C-20 20, -15 28, -22 30 C-28 32, -30 25, -25 22 Z" fill="#FEFCBF" opacity="0.9"/>
+    <path d="M30 28 C35 25, 42 30, 38 35 C34 40, 26 32, 30 28 Z" fill="#FEFCBF" opacity="0.9"/>
+    <circle cx="-45" cy="23" r="1.5" fill="#38A169"/>
+    <circle cx="48" cy="25" r="1.5" fill="#38A169"/>
+    <circle cx="12" cy="33" r="1.5" fill="#38A169"/>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Background subtle connecting lines representing structured thought -->
+    <path d="M 60 120 L 100 120 L 120 90 L 160 90 L 180 120" stroke="#2B313D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M 120 90 L 140 150 L 180 150" stroke="#2B313D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    
+    <!-- Nodes representing clear, logical points -->
+    <circle cx="60" cy="120" r="5" fill="#3A4252"/>
+    <circle cx="100" cy="120" r="5" fill="#3A4252"/>
+    <circle cx="120" cy="90" r="5" fill="#3A4252"/>
+    <circle cx="160" cy="90" r="5" fill="#3A4252"/>
+    <circle cx="140" cy="150" r="5" fill="#3A4252"/>
+    <circle cx="180" cy="150" r="5" fill="#3A4252"/>
+
+    <!-- Main Symbolic Object: A glowing, crystal-clear pathway / structured logical beacon -->
+    <!-- Central Pillar of Clarity -->
+    <path d="M 112 50 L 128 50 L 132 190 L 108 190 Z" fill="#252A35"/>
+    
+    <!-- Glowing sequential glowing segments (representing "头头是道" - clear, step-by-step logic) -->
+    <!-- Segment 1 (Top) -->
+    <path d="M 106 70 L 134 70 L 136 95 L 104 95 Z" fill="#FFB703" opacity="0.9"/>
+    
+    <!-- Segment 2 (Middle) -->
+    <path d="M 103 105 L 137 105 L 139 130 L 101 130 Z" fill="#FF8800" opacity="0.9"/>
+    
+    <!-- Segment 3 (Lower) -->
+    <path d="M 100 140 L 140 140 L 143 165 L 97 165 Z" fill="#FFB703" opacity="0.9"/>
+
+    <!-- Accent connecting light core -->
+    <line x1="120" y1="50" x2="120" y2="190" stroke="#FFFFFF" stroke-width="2" opacity="0.4"/>
+
+    <!-- Focal point: Bright polished crystal/diamond at the top representing eloquent, brilliant articulation -->
+    <polygon points="120,30 138,50 120,62 102,50" fill="#FFD166"/>
+    <polygon points="120,30 138,50 120,50" fill="#FFEE88" opacity="0.6"/>
+    <polygon points="120,50 138,50 120,62" fill="#F48C06"/>
+
+    <!-- Radiating clarity beams -->
+    <line x1="80" y1="75" x2="95" y2="85" stroke="#FFD166" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="160" y1="75" x2="145" y2="85" stroke="#FFD166" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="75" y1="115" x2="92" y2="115" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="165" y1="115" x2="148" y2="115" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Base platform -->
+    <ellipse cx="120" cy="195" rx="36" ry="8" fill="#2B313D"/>
+    <ellipse cx="120" cy="195" rx="24" ry="5" fill="#3A4252"/>
+  </g>
+</svg>

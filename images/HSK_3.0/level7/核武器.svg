@@ -1,0 +1,33 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 115)">
+    <!-- Radioactive Hazard Symbol Background Glow/Rays -->
+    <path d="M0,-85 L15,-60 L-15,-60 Z" fill="#FF5722" opacity="0.3"/>
+    <path d="M73,42 L52,28 L67,3 Z" fill="#FF5722" opacity="0.3"/>
+    <path d="M-73,42 L-67,3 L-52,28 Z" fill="#FF5722" opacity="0.3"/>
+
+    <!-- Central Atomic/Radioactive Symbol -->
+    <circle cx="0" cy="0" r="16" fill="#1A1D24"/>
+    <circle cx="0" cy="0" r="12" fill="#FFA726"/>
+    
+    <!-- Shielding Blades -->
+    <path d="M 0 -22 C 20 -22 32 -42 42 -55 C 25 -65 -25 -65 -42 -55 C -32 -42 -20 -22 0 -22 Z" fill="#FFA726"/>
+    <path d="M 22 11 C 36 6 52 23 62 38 C 53 52 28 65 15 55 C 22 42 22 26 22 11 Z" fill="#FFA726"/>
+    <path d="M -22 11 C -22 26 -22 42 -15 55 C -28 65 -53 52 -62 38 C -52 23 -36 6 -22 11 Z" fill="#FFA726"/>
+
+    <!-- Missile/Warhead Silhouette (Sleek Modern Design) -->
+    <path d="M-8 25 L8 25 L12 -30 L0 -55 L-12 -30 Z" fill="#78909C"/>
+    <!-- Warhead Tip -->
+    <path d="M0 -55 L6 -38 L-6 -38 Z" fill="#CFD8DC"/>
+    <!-- Fins -->
+    <path d="M-8 10 L-18 28 L-8 28 Z" fill="#546E7A"/>
+    <path d="M8 10 L18 28 L8 28 Z" fill="#546E7A"/>
+    <!-- Body detail / Energy Core Ring -->
+    <rect x="-6" y="-12" width="12" height="4" fill="#FF5722"/>
+    <rect x="-6" y="-2" width="12" height="4" fill="#FF5722"/>
+    
+    <!-- Exhaust / Flame at base -->
+    <path d="M-6 25 L0 42 L6 25 Z" fill="#FF5722"/>
+    <path d="M-3 25 L0 34 L3 25 Z" fill="#FFD54F"/>
+  </g>
+</svg>

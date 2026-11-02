@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Shipping Container -->
+  <rect x="60" y="100" width="120" height="80" rx="4" fill="#3D4451" stroke="#FFB84D" stroke-width="3"/>
+  <rect x="65" y="105" width="110" height="15" fill="#2A2E38"/>
+  <rect x="65" y="125" width="110" height="15" fill="#2A2E38"/>
+  <rect x="65" y="145" width="110" height="15" fill="#2A2E38"/>
+  <rect x="65" y="165" width="110" height="10" fill="#2A2E38"/>
+  
+  <!-- Seal/Lock Mechanism -->
+  <rect x="105" y="120" width="30" height="40" rx="2" fill="#FFB84D"/>
+  <path d="M115 120 v-15 a5 5 0 0 1 10 0 v15" fill="none" stroke="#FFB84D" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Customs/Official Stamp Symbol (Simplified) -->
+  <circle cx="120" cy="140" r="8" fill="#1A1D24"/>
+  <path d="M115 140 l3 3 l7 -7" stroke="#FFB84D" stroke-width="2" fill="none"/>
+  
+  <!-- Ground Shadow -->
+  <ellipse cx="120" cy="190" rx="70" ry="10" fill="#000" opacity="0.3"/>
+</svg>

@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Medical Bandage Roll / Object representing 伸缩 (co giãn / đàn hồi) -->
+    <!-- Shadow / Base elements -->
+    <ellipse cx="120" cy="180" rx="55" ry="12" fill="#111318" opacity="0.6"/>
+
+    <!-- Stretched Fabric / Elastic Section (Middle) -->
+    <path d="M 85,95 L 155,95 C 168,95 168,145 155,145 L 85,145 C 72,145 72,95 85,95 Z" fill="#2E3440"/>
+    
+    <!-- Elastic mesh pattern / weave lines -->
+    <g stroke="#E5C07B" stroke-width="2" stroke-dasharray="6,4" opacity="0.8" fill="none">
+      <path d="M 85,107 L 155,107"/>
+      <path d="M 85,120 L 155,120"/>
+      <path d="M 85,133 L 155,133"/>
+    </g>
+
+    <!-- Directional Expansion Arrows (Indicating stretching / shēnsuō) -->
+    <g fill="#61AFEF">
+      <!-- Left Arrow -->
+      <path d="M 52,120 L 68,112 L 64,120 L 68,128 Z"/>
+      <rect x="68" y="117" width="16" height="6" rx="2"/>
+      
+      <!-- Right Arrow -->
+      <path d="M 188,120 L 172,112 L 176,120 L 172,128 Z"/>
+      <rect x="156" y="117" width="16" height="6" rx="2"/>
+    </g>
+
+    <!-- Left Roll Cylinder -->
+    <g>
+      <!-- Roll body -->
+      <path d="M 85,80 L 85,160 C 96,160 102,140 102,120 C 102,100 96,80 85,80 Z" fill="#ABB2BF"/>
+      <ellipse cx="85" cy="120" rx="4" ry="40" fill="#88C0D0"/>
+      <!-- Inner core hole -->
+      <ellipse cx="85" cy="120" rx="1.5" ry="15" fill="#1A1D24"/>
+    </g>
+
+    <!-- Right Roll Cylinder -->
+    <g>
+      <!-- Roll body -->
+      <path d="M 155,80 L 155,160 C 144,160 138,140 138,120 C 138,100 144,80 155,80 Z" fill="#ABB2BF"/>
+      <ellipse cx="155" cy="120" rx="4" ry="40" fill="#88C0D0"/>
+      <!-- Inner core hole -->
+      <ellipse cx="155" cy="120" rx="1.5" ry="15" fill="#1A1D24"/>
+    </g>
+
+    <!-- Top & Bottom Fabric Edges -->
+    <path d="M 85,80 C 120,76 120,76 155,80 C 155,90 85,90 85,80 Z" fill="#D8DEE9"/>
+    <path d="M 85,160 C 120,164 120,164 155,160 C 155,150 85,150 85,160 Z" fill="#4C566A"/>
+
+    <!-- Tension Accent Lines (Subtle glow) -->
+    <line x1="120" y1="88" x2="120" y2="152" stroke="#E5C07B" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.4"/>
+  </g>
+</svg>

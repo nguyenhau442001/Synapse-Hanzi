@@ -1,0 +1,61 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle grid / nodes to represent resources/tech -->
+  <g opacity="0.15" stroke="#64748B" stroke-width="1" stroke-dasharray="2 2">
+    <line x1="60" y1="120" x2="180" y2="120" />
+    <line x1="120" y1="60" x2="120" y2="180" />
+    <circle cx="60" cy="120" r="3" fill="#64748B"/>
+    <circle cx="180" cy="120" r="3" fill="#64748B"/>
+    <circle cx="120" cy="60" r="3" fill="#64748B"/>
+    <circle cx="120" cy="180" r="3" fill="#64748B"/>
+  </g>
+
+  <!-- Left Source Element (Tech Module A) -->
+  <g transform="translate(45, 95)">
+    <rect x="0" y="0" width="50" height="50" rx="10" fill="#2D3748" stroke="#3B82F6" stroke-width="2"/>
+    <!-- Circuit lines inside A -->
+    <path d="M12 25 H25 M25 15 V35 M25 25 H38" stroke="#60A5FA" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="12" cy="25" r="3" fill="#3B82F6"/>
+    <circle cx="38" cy="25" r="3" fill="#3B82F6"/>
+  </g>
+
+  <!-- Right Source Element (Tech Module B) -->
+  <g transform="translate(145, 95)">
+    <rect x="0" y="0" width="50" height="50" rx="10" fill="#2D3748" stroke="#F59E0B" stroke-width="2"/>
+    <!-- Circuit lines inside B -->
+    <path d="M15 15 L35 35 M35 15 L15 35" stroke="#FBBF24" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="25" cy="25" r="4" fill="#F59E0B"/>
+  </g>
+
+  <!-- Flow / Integration Direction Arrows -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- From left to center -->
+    <path d="M102 120 L114 120" stroke="#3B82F6" stroke-width="3"/>
+    <path d="M110 114 L116 120 L110 126" stroke="#3B82F6" stroke-width="3"/>
+    
+    <!-- From right to center -->
+    <path d="M138 120 L126 120" stroke="#F59E0B" stroke-width="3"/>
+    <path d="M130 114 L124 120 L130 126" stroke="#F59E0B" stroke-width="3"/>
+  </g>
+
+  <!-- Central Integrated Core (Noun Object: The Unified System / Resource Hub) -->
+  <g transform="translate(100, 84)">
+    <rect x="0" y="0" width="40" height="72" rx="12" fill="#1E293B" stroke="#10B981" stroke-width="3"/>
+    
+    <!-- Integrated Tech Core Details -->
+    <circle cx="20" cy="22" r="7" fill="#10B981"/>
+    <path d="M20 36 V52" stroke="#34D399" stroke-width="3" stroke-linecap="round"/>
+    <path d="M12 46 H28" stroke="#34D399" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Glowing accent ring representing successful integration/fusion -->
+    <rect x="-4" y="-4" width="48" height="80" rx="16" fill="none" stroke="#10B981" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.6"/>
+  </g>
+
+  <!-- Floating energy/resource particles converging -->
+  <circle cx="85" cy="85" r="3" fill="#3B82F6" opacity="0.8"/>
+  <circle cx="155" cy="155" r="3" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="155" cy="85" r="2.5" fill="#10B981" opacity="0.8"/>
+  <circle cx="85" cy="155" r="2.5" fill="#10B981" opacity="0.8"/>
+
+</svg>

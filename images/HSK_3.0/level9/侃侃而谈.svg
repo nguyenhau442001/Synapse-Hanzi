@@ -1,0 +1,32 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Spotlight Beam -->
+  <path d="M120 0 L180 240 L60 240 Z" fill="#2A2F3A" opacity="0.6"/>
+  
+  <!-- Character: The Speaker -->
+  <g transform="translate(120, 140)">
+    <!-- Body -->
+    <path d="M-30 80 L30 80 L20 20 L-20 20 Z" fill="#3D4556"/>
+    <!-- Head -->
+    <circle cx="0" cy="-20" r="25" fill="#FFD59E"/>
+    <!-- Hair -->
+    <path d="M-25 -25 C-25 -45 -10 -50 0 -50 C10 -50 25 -45 25 -25 Z" fill="#2A2F3A"/>
+    
+    <!-- Dynamic Hand Gesture (侃侃而谈 - Confident speaking) -->
+    <path d="M25 0 L50 -20" stroke="#FFD59E" stroke-width="8" stroke-linecap="round"/>
+    <path d="M45 -25 L60 -15" stroke="#FFD59E" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Motion Lines for Speech -->
+    <path d="M65 -20 Q85 -20 95 -10" stroke="#FFB84D" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M65 -10 Q85 -10 95 0" stroke="#FFB84D" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M65 0 Q85 0 95 10" stroke="#FFB84D" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Podium/Stage element -->
+  <rect x="80" y="210" width="80" height="30" rx="5" fill="#FFB84D"/>
+  
+  <!-- Audience silhouettes (abstract suggestion of investors) -->
+  <path d="M10 240 L30 200 L50 240 Z" fill="#2A2F3A"/>
+  <path d="M190 240 L210 200 L230 240 Z" fill="#2A2F3A"/>
+</svg>

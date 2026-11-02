@@ -1,0 +1,38 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Construction Mixer Drum / Concrete Mixer (Representing 搅拌 - physical object for mixing concrete, sand, water) -->
+  <g transform="translate(120, 115)">
+    <!-- Stand Frame & Base -->
+    <path d="M-30 65 L30 65 L45 85 L-45 85 Z" fill="#3A3F4B"/>
+    <rect x="-6" y="25" width="12" height="45" fill="#4E5668"/>
+    <!-- Support Arm -->
+    <path d="M-6 25 L-35 -15 L-25 -25 L0 10 Z" fill="#4E5668"/>
+
+    <!-- Mixing Drum (Tilted) -->
+    <g transform="rotate(-25)">
+      <!-- Main Drum Body -->
+      <path d="M-45 -35 C-45 -35 -55 -5 -40 25 C-30 40 -10 45 10 35 C35 20 45 -10 40 -35 Z" fill="#F39C12"/>
+      <!-- Drum Opening (Inner Rim) -->
+      <ellipse cx="-40" cy="-5" rx="8" ry="15" fill="#D68910"/>
+      <!-- Inner Mixture swirling (cement, sand, water blend) -->
+      <path d="M-38 -12 C-35 5 -20 15 0 10 C15 5 25 -10 30 -20 C20 -25 -10 -25 -38 -12 Z" fill="#7F8C8D"/>
+      <path d="M-30 -2 C-20 8 -5 10 10 2 C18 -2 25 -12 25 -12 C10 -5 -10 0 -30 -2 Z" fill="#95A5A6"/>
+
+      <!-- Drum Center Band / Fin Details -->
+      <path d="M-10 -38 C-5 -15 -5 15 -15 38" stroke="#D68910" stroke-width="4" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Motor Housing (Back of drum) -->
+    <rect x="25" y="-5" width="22" height="25" rx="4" transform="rotate(-25 25 -5)" fill="#2C3E50"/>
+
+    <!-- Mixing Paddles / Swirling Motion Lines (Indicating the action of mixing) -->
+    <path d="M-75 5 C-65 -5 -60 -20 -45 -25" stroke="#3498DB" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <path d="M-65 30 C-50 20 -40 0 -55 -15" stroke="#3498DB" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+    <path d="M50 -20 C65 -10 70 10 55 25" stroke="#3498DB" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+  </g>
+
+  <!-- Ground Line -->
+  <rect x="50" y="200" width="140" height="4" rx="2" fill="#2C3E50"/>
+</svg>

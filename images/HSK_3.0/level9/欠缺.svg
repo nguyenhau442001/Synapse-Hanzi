@@ -1,0 +1,33 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Main gear / Mechanism representing experience/system -->
+    <circle cx="120" cy="115" r="54" fill="#252A34" stroke="#3A4252" stroke-width="3"/>
+    
+    <!-- Gear teeth -->
+    <path d="M120 53V59 M120 171V177 M53 115H59 M171 115H177 M72 67L76 71 M164 159L168 163 M72 163L76 159 M164 71L168 67" stroke="#3A4252" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Central missing piece socket / cutout background -->
+    <circle cx="120" cy="115" r="32" fill="#1A1D24"/>
+    
+    <!-- The missing puzzle/gear segment (floating slightly out to show "deficiency" / 欠缺) -->
+    <g transform="translate(14, -12)">
+      <path d="M110 85C115 82 125 82 130 85C135 88 142 98 140 104C138 110 130 115 120 115C110 115 102 110 100 104C98 98 105 88 110 85Z" fill="#F59E0B" stroke="#D97706" stroke-width="2"/>
+      <!-- Inner detail of the missing part -->
+      <circle cx="120" cy="100" r="4" fill="#1A1D24"/>
+    </g>
+
+    <!-- Glowing accent sparks indicating incompleteness / flaw -->
+    <circle cx="85" cy="85" r="3" fill="#F59E0B" opacity="0.8"/>
+    <path d="M78 135L82 138" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <path d="M155 135L150 138" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Dashed outline showing where the piece belongs -->
+    <path d="M124 83C124 83 128 85 131 88" stroke="#64748B" stroke-width="2" stroke-dasharray="3 3" fill="none" stroke-linecap="round"/>
+    <path d="M109 88C112 85 116 83 116 83" stroke="#64748B" stroke-width="2" stroke-dasharray="3 3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Base platform / shadow -->
+  <ellipse cx="120" cy="190" rx="60" ry="8" fill="#111318"/>
+</svg>

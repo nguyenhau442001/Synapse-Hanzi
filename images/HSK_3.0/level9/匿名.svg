@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for focus -->
+  <circle cx="120" cy="115" r="70" fill="#2D3340" opacity="0.4"/>
+
+  <!-- Conceptual illustration for 匿名 (Anonymity / Nameless Person) -->
+  <!-- Contextual elements representing anonymous contribution/help -->
+  
+  <!-- Supporting base / Document or Letter representing the act of giving/funding -->
+  <g transform="translate(0, 10)">
+    <!-- Envelope base -->
+    <rect x="70" y="90" width="100" height="70" rx="6" fill="#283044" stroke="#3A4660" stroke-width="2"/>
+    <!-- Envelope flap lines -->
+    <path d="M70 96 L120 130 L170 96" fill="none" stroke="#3A4660" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Gold coin / aid token emerging from envelope -->
+    <circle cx="120" cy="70" r="16" fill="#F59E0B"/>
+    <circle cx="120" cy="70" r="11" fill="none" stroke="#D97706" stroke-width="2"/>
+  </g>
+
+  <!-- Central Character (Anonymous Figure) -->
+  <g>
+    <!-- Shoulders and Body (Professional / Donor attire) -->
+    <path d="M75 185 C75 155, 95 145, 120 145 C145 145, 165 155, 165 185 Z" fill="#3B82F6"/>
+    <path d="M100 145 L120 170 L140 145 Z" fill="#1E293B"/> <!-- Collar/Tie accent -->
+    
+    <!-- Neck -->
+    <rect x="110" y="128" width="20" height="22" fill="#E2E8F0"/>
+
+    <!-- Head - Blank / Anonymous Silhouette (Key semantic feature) -->
+    <circle cx="120" cy="95" r="32" fill="#E2E8F0"/>
+    
+    <!-- Question Mark / Mask Overlay replacing facial features to denote "Nameless / Anonymous" -->
+    <circle cx="120" cy="95" r="22" fill="#1A1D24"/>
+    
+    <!-- Sleek Question Mark / Identity concealment symbol -->
+    <path d="M113 85 C113 80, 116 77, 120 77 C125 77, 128 80, 128 85 C128 90, 120 92, 120 98" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="120" cy="107" r="2.5" fill="#38BDF8"/>
+  </g>
+
+  <!-- Accent elements indicating privacy / hidden identity -->
+  <g opacity="0.7">
+    <!-- Glowing privacy nodes -->
+    <circle cx="65" cy="70" r="3" fill="#38BDF8"/>
+    <circle cx="175" cy="70" r="3" fill="#38BDF8"/>
+    <path d="M73 70 L90 70" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="2 2"/>
+    <path d="M150 70 L167 70" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="2 2"/>
+  </g>
+</svg>

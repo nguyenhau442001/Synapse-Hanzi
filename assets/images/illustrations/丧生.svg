@@ -1,0 +1,29 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Glow (subtle fiery tragedy context) -->
+  <circle cx="120" cy="120" r="80" fill="#FF5722" opacity="0.08"/>
+
+  <!-- Dramatic Silhouette / Concept Representation of "丧生" (Loss of Life) -->
+  <!-- Falling/Descending Leaf metaphor integrated with human silhouette or memorial candle/ember motif -->
+  
+  <!-- Stylized Monolith / Monument Base (representing life/memorial context cleanly and respectfully) -->
+  <rect x="100" y="165" width="40" height="15" rx="3" fill="#2E3440"/>
+  <rect x="108" y="75" width="24" height="90" rx="4" fill="#3B4252"/>
+  
+  <!-- Glowing Ember / Fading Light (representing extinguished life) -->
+  <circle cx="120" cy="95" r="14" fill="#1A1D24"/>
+  <path d="M120 75 C120 75 110 88 110 98 C110 103.5 114.5 108 120 108 C125.5 108 130 103.5 130 98 C130 88 120 75 120 75 Z" fill="#FF5722" opacity="0.9"/>
+  <circle cx="120" cy="99" r="5" fill="#FFC107"/>
+
+  <!-- Fading upward particles / wisps (loss/passing) -->
+  <path d="M105 60 C103 52 108 45 115 42" stroke="#FF5722" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+  <path d="M135 62 C137 54 132 47 125 44" stroke="#FF5722" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+  <circle cx="120" cy="34" r="2" fill="#FFC107" opacity="0.6"/>
+
+  <!-- Silhouette of a person gently bowed in grief / commemoration at the base -->
+  <path d="M100 165 C100 155 105 145 120 145 C135 145 140 155 140 165 Z" fill="#4C566A"/>
+  <circle cx="120" cy="135" r="7" fill="#4C566A"/>
+
+</svg>

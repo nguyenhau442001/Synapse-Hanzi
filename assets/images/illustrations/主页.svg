@@ -1,0 +1,52 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient glow representing a digital screen environment -->
+  <circle cx="120" cy="115" r="75" fill="#242B38" opacity="0.6"/>
+
+  <!-- Browser Window (Website Homepage / Trang chủ) -->
+  <g transform="translate(42, 55)">
+    <!-- Browser Window Frame -->
+    <rect x="0" y="0" width="156" height="120" rx="8" fill="#222733" stroke="#2D3648" stroke-width="2"/>
+    
+    <!-- Title Bar -->
+    <path d="M 0 8 A 8 8 0 0 1 8 0 L 148 0 A 8 8 0 0 1 156 8 L 156 22 L 0 22 Z" fill="#1E232E"/>
+    
+    <!-- Window Control Dots -->
+    <circle cx="12" cy="11" r="3" fill="#FF5F56"/>
+    <circle cx="22" cy="11" r="3" fill="#FFBD2E"/>
+    <circle cx="32" cy="11" r="3" fill="#27C93F"/>
+    
+    <!-- URL / Address Bar -->
+    <rect x="48" y="5" width="80" height="12" rx="3" fill="#161A22"/>
+    <!-- Home / Main Indicator (Small House Icon inside URL bar) -->
+    <path d="M 83 11 L 88 7 L 93 11 L 91 11 L 91 14 L 85 14 L 85 11 Z" fill="#F59E0B"/>
+
+    <!-- Website Content Layout (Modern Flat UI) -->
+    <!-- Hero Banner / Main Content Box -->
+    <rect x="14" y="32" width="128" height="48" rx="6" fill="#2A3446"/>
+    
+    <!-- Focus Accent (Orange/Gold representing 'Main / Principal' - 主) -->
+    <rect x="24" y="44" width="45" height="6" rx="3" fill="#F59E0B"/>
+    <rect x="24" y="56" width="70" height="4" rx="2" fill="#525F7A"/>
+    <rect x="24" y="64" width="55" height="4" rx="2" fill="#525F7A"/>
+    
+    <!-- Hero Illustration Graphic Placeholder on right of banner -->
+    <circle cx="118" cy="56" r="14" fill="#3B465C"/>
+    <path d="M 112 63 L 112 59 A 6 6 0 0 1 124 59 L 124 63 Z" fill="#525F7A"/>
+    <circle cx="118" cy="50" r="4" fill="#525F7A"/>
+
+    <!-- Content Cards Below (Grid layout typical of an official university homepage) -->
+    <rect x="14" y="88" width="60" height="22" rx="4" fill="#2A3446"/>
+    <rect x="20" y="94" width="30" height="4" rx="2" fill="#F59E0B"/>
+    <rect x="20" y="102" width="45" height="3" rx="1.5" fill="#404B60"/>
+
+    <rect x="82" y="88" width="60" height="22" rx="4" fill="#2A3446"/>
+    <rect x="88" y="94" width="30" height="4" rx="2" fill="#3B465C"/>
+    <rect x="88" y="102" width="45" height="3" rx="1.5" fill="#404B60"/>
+  </g>
+
+  <!-- Grounding shadow / Base plate to anchor the object -->
+  <ellipse cx="120" cy="188" rx="70" ry="6" fill="#111317"/>
+</svg>

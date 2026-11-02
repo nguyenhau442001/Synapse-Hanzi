@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <g transform="translate(120, 115)">
+    <!-- Deep background glow / atmosphere -->
+    <circle cx="0" cy="0" r="82" fill="#222834" opacity="0.8"/>
+    
+    <!-- Central Icon: Ecosystem Globe representing 自然界 (The Natural World) -->
+    <!-- Outer thin orbit ring -->
+    <circle cx="0" cy="0" r="72" fill="none" stroke="#3A4454" stroke-width="1.5" stroke-dasharray="4 4"/>
+    
+    <!-- Globe Base (Solid Dark Slate) -->
+    <circle cx="0" cy="0" r="62" fill="#2A3241"/>
+
+    <!-- Topographic / Land mass details representing nature -->
+    <path d="M-45 15 C-35 5 -15 0 -5 15 C5 30 25 35 35 20 C45 5 55 15 50 35 C40 55 -30 55 -45 15 Z" fill="#323D4E"/>
+    <path d="M-25 -25 C-10 -35 10 -35 25 -25 C35 -15 25 -5 10 -10 C-5 -15 -15 -5 -25 -25 Z" fill="#323D4E"/>
+
+    <!-- High-contrast Accent: Rising Sun / Horizon (Gold/Orange) -->
+    <circle cx="20" cy="-10" r="14" fill="#F39C12"/>
+    <path d="M-62 0 H62" stroke="#1A1D24" stroke-width="2"/>
+
+    <!-- Central Nature Elements: Tree of Life / Harmony symbol -->
+    <!-- Tree Trunk -->
+    <path d="M-3 20 L-2 42 H2 L3 20 Z" fill="#D35400"/>
+    
+    <!-- Tree Canopy Layers (Organic overlapping shapes) -->
+    <circle cx="0" cy="5" r="22" fill="#2ECC71"/>
+    <circle cx="-12" cy="12" r="14" fill="#27AE60"/>
+    <circle cx="12" cy="12" r="14" fill="#27AE60"/>
+    <circle cx="0" cy="-6" r="16" fill="#2ECC71"/>
+
+    <!-- Water wave / Ecology element at the base -->
+    <path d="M-40 42 C-20 48 -10 38 0 42 C10 46 25 42 40 46" fill="none" stroke="#3498DB" stroke-width="3" stroke-linecap="round"/>
+    <path d="M-30 52 C-15 56 -5 48 5 52 C15 56 25 50 32 54" fill="none" stroke="#3498DB" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Floating Biota / Birds (Symbolizing living harmony in nature) -->
+    <path d="M-32 -32 Q-27 -40 -22 -32 Q-17 -40 -12 -32" fill="none" stroke="#F1C40F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M25 -42 Q29 -48 33 -42 Q37 -48 41 -42" fill="none" stroke="#F1C40F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Globe Frame Ring (Focus accent in Gold/Orange) -->
+    <circle cx="0" cy="0" r="62" fill="none" stroke="#F39C12" stroke-width="3" opacity="0.85"/>
+  </g>
+</svg>

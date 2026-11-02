@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Representing "磨难" (Hardship/Trial) as a person climbing a steep, jagged, rocky mountain path -->
+  <!-- The mountain path -->
+  <path d="M40 200 L120 120 L160 160 L200 80" stroke="#4A5568" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- The person (character) struggling upward -->
+  <g transform="translate(110, 110)">
+    <circle cx="0" cy="-10" r="8" fill="#F6AD55"/>
+    <path d="M-5 5 L0 0 L5 5" stroke="#F6AD55" stroke-width="4" fill="none"/>
+    <path d="M-2 5 L-2 15" stroke="#F6AD55" stroke-width="4" fill="none"/>
+    <path d="M2 5 L2 15" stroke="#F6AD55" stroke-width="4" fill="none"/>
+  </g>
+  
+  <!-- Jagged obstacles/rocks representing trials -->
+  <path d="M60 180 L70 160 L80 180 Z" fill="#718096"/>
+  <path d="M140 140 L150 120 L160 140 Z" fill="#718096"/>
+  <path d="M180 100 L190 80 L200 100 Z" fill="#718096"/>
+  
+  <!-- A faint, glowing star/light at the peak representing the dream/goal -->
+  <circle cx="200" cy="70" r="6" fill="#F6AD55" filter="blur(2px)"/>
+  <circle cx="200" cy="70" r="3" fill="#FFF"/>
+</svg>

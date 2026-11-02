@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Sieve Frame -->
+  <circle cx="120" cy="110" r="60" fill="none" stroke="#FFB84D" stroke-width="6"/>
+  
+  <!-- Sieve Mesh -->
+  <path d="M65 110 H175 M70 85 H170 M70 135 H170 M85 65 V155 M110 60 V160 M135 65 V155" stroke="#FFB84D" stroke-width="1.5" stroke-opacity="0.6"/>
+  
+  <!-- Flour Particles -->
+  <circle cx="100" cy="160" r="2" fill="#FFFFFF"/>
+  <circle cx="115" cy="175" r="3" fill="#FFFFFF"/>
+  <circle cx="130" cy="165" r="2" fill="#FFFFFF"/>
+  <circle cx="145" cy="180" r="2.5" fill="#FFFFFF"/>
+  <circle cx="105" cy="190" r="2" fill="#FFFFFF"/>
+  <circle cx="125" cy="195" r="3" fill="#FFFFFF"/>
+  <circle cx="140" cy="190" r="2" fill="#FFFFFF"/>
+  
+  <!-- Flour inside the sieve -->
+  <path d="M75 100 Q120 120 165 100" fill="#FFFFFF" opacity="0.8"/>
+  
+  <!-- Hands holding the sieve -->
+  <path d="M60 110 C50 110 40 100 40 90 L50 80 C50 85 55 90 60 90" fill="#E0A975"/>
+  <path d="M180 110 C190 110 200 100 200 90 L190 80 C190 85 185 90 180 90" fill="#E0A975"/>
+</svg>

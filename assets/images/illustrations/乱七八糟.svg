@@ -1,0 +1,69 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Floor Shadow/Surface -->
+  <ellipse cx="120" cy="195" rx="90" ry="20" fill="#14171D"/>
+
+  <!-- Chaotic Mess of Toys (乱七八糟) -->
+  <g id="messy-room-objects">
+    <!-- Blue Block 1 -->
+    <rect x="55" y="160" width="22" height="22" rx="4" fill="#3B82F6" transform="rotate(15 66 171)"/>
+    
+    <!-- Red Cylinder Block -->
+    <rect x="160" y="165" width="18" height="25" rx="3" fill="#EF4444" transform="rotate(-25 169 1775)"/>
+    
+    <!-- Yellow Triangle Block -->
+    <polygon points="100,140 85,175 125,170" fill="#F59E0B" transform="rotate(40 105 155)"/>
+
+    <!-- Open Picture Book 1 (Scattered/Flipped) -->
+    <g transform="translate(65, 110) rotate(-18)">
+      <path d="M0,25 Q25,10 50,25 L50,60 Q25,45 0,60 Z" fill="#E2E8F0"/>
+      <path d="M50,25 Q75,10 100,25 L100,60 Q75,45 50,60 Z" fill="#CBD5E1"/>
+      <line x1="50" y1="25" x2="50" y2="60" stroke="#94A3B8" stroke-width="2"/>
+      <!-- Colorful abstract pages doodles -->
+      <line x1="15" y1="35" x2="35" y2="35" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+      <line x1="15" y1="45" x2="25" y2="45" stroke="#3B82F6" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="75" cy="40" r="6" fill="#10B981"/>
+    </g>
+
+    <!-- Stacking Rings Toy (Toppled Over) -->
+    <g transform="translate(145, 120) rotate(65)">
+      <!-- Base/Cone -->
+      <polygon points="35,5 30,50 40,50" fill="#64748B"/>
+      <!-- Rings scattered -->
+      <ellipse cx="15" cy="20" rx="8" ry="12" fill="#EC4899"/>
+      <ellipse cx="55" cy="40" rx="9" ry="14" fill="#8B5CF6"/>
+      <ellipse cx="25" cy="60" rx="10" ry="12" fill="#F97316"/>
+    </g>
+
+    <!-- Green Toy Car (Upside Down) -->
+    <g transform="translate(100, 165) rotate(-35)">
+      <rect x="0" y="0" width="36" height="20" rx="6" fill="#10B981"/>
+      <rect x="8" y="-6" width="20" height="8" rx="3" fill="#059669"/>
+      <circle cx="8" cy="22" r="5" fill="#334155"/>
+      <circle cx="28" cy="22" r="5" fill="#334155"/>
+    </g>
+
+    <!-- Extra scattered blocks & puzzle pieces -->
+    <rect x="135" y="175" width="16" height="16" rx="3" fill="#6366F1" transform="rotate(12 143 183)"/>
+    <circle cx="75" cy="150" r="7" fill="#F43F5E"/>
+    <circle cx="170" cy="140" r="6" fill="#38BDF8"/>
+    
+    <!-- Another scattered book -->
+    <g transform="translate(35, 135) rotate(45)">
+      <rect x="0" y="0" width="30" height="40" rx="2" fill="#FCD34D"/>
+      <line x1="15" y1="0" x2="15" y2="40" stroke="#D97706" stroke-width="2"/>
+    </g>
+    
+    <!-- Tangled jump rope / ribbon -->
+    <path d="M 45,95 Q 60,130 90,115 T 145,135 T 190,105" fill="none" stroke="#EC4899" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- More loose small blocks -->
+    <polygon points="120,95 130,110 110,110" fill="#A855F7" transform="rotate(-15 120 105)"/>
+    <rect x="110" y="75" width="14" height="14" rx="2" fill="#FB923C" transform="rotate(22 117 82)"/>
+  </g>
+
+  <!-- Focal Center Accent / Highlight Glow (Subtle focus on the chaos) -->
+  <circle cx="120" cy="135" r="70" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="6 8" opacity="0.4"/>
+</svg>

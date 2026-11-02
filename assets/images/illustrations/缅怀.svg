@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Monument Base & Structure (Representing the revolutionary martyrs' memorial/tribute) -->
+    <path d="M90 170 L150 170 L140 90 L100 90 Z" fill="#2E384D"/>
+    <rect x="85" y="170" width="70" height="12" rx="2" fill="#3E4C66"/>
+    <rect x="75" y="182" width="90" height="8" rx="2" fill="#2E384D"/>
+
+    <!-- Central Glowing Monument Obelisk / Pillar -->
+    <rect x="108" y="60" width="24" height="110" fill="#3E4C66"/>
+    <polygon points="120,40 108,60 132,60" fill="#F1C40F"/>
+
+    <!-- Glowing Tribute Flame / Eternal Light at the top -->
+    <path d="M120 32 C120 32 113 42 113 48 C113 52 116 55 120 55 C124 55 127 52 127 48 C127 42 120 32 120 32 Z" fill="#F39C12"/>
+    <path d="M120 38 C120 38 116 44 116 48 C116 50 118 52 120 52 C122 52 124 50 124 48 C124 44 120 38 120 38 Z" fill="#FFEAA7"/>
+
+    <!-- Golden Star Emblem on Monument -->
+    <polygon points="120,95 122.5,101.5 129.5,101.5 123.5,105.5 126,112 120,108 114,112 116.5,105.5 110.5,101.5 117.5,101.5" fill="#F1C40F"/>
+
+    <!-- Chrysanthemum / Respectful Floral Tribute at the base -->
+    <g transform="translate(120, 160)">
+      <circle cx="0" cy="5" r="14" fill="#D35400"/>
+      <!-- Flower petals pattern -->
+      <circle cx="-6" cy="0" r="5" fill="#E67E22"/>
+      <circle cx="6" cy="0" r="5" fill="#E67E22"/>
+      <circle cx="0" cy="-6" r="5" fill="#E67E22"/>
+      <circle cx="-4" cy="-4" r="5" fill="#E67E22"/>
+      <circle cx="4" cy="-4" r="5" fill="#E67E22"/>
+      <circle cx="0" cy="5" r="5" fill="#F39C12"/>
+    </g>
+
+    <!-- Silhouette of respectful person bowing/standing in remembrance -->
+    <g transform="translate(55, 125)">
+      <!-- Head -->
+      <circle cx="15" cy="18" r="7" fill="#8E9AAF"/>
+      <!-- Body (slight respectful tilt/bow posture) -->
+      <path d="M10 28 C10 26 14 25 18 27 C22 29 25 35 27 45 L32 65 L22 65 L17 45 L12 55 L6 55 L10 28 Z" fill="#4A5568"/>
+    </g>
+
+    <!-- Silhouette of second person on the right -->
+    <g transform="translate(145, 125)">
+      <!-- Head -->
+      <circle cx="15" cy="18" r="7" fill="#8E9AAF"/>
+      <!-- Body -->
+      <path d="M20 28 C20 26 16 25 12 27 C8 29 5 35 3 45 L-2 65 L8 65 L13 45 L18 55 L24 55 L20 28 Z" fill="#4A5568"/>
+    </g>
+
+    <!-- Ground Floor Line -->
+    <line x1="30" y1="190" x2="210" y2="190" stroke="#3E4C66" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

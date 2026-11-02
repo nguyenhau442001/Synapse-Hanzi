@@ -1,0 +1,30 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Floor/Ground -->
+  <path d="M40 180 L200 180" stroke="#374151" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- The Suspect (The one being 'disturbed') -->
+  <g transform="translate(140, 140)">
+    <circle cx="0" cy="-40" r="15" fill="#F3F4F6"/>
+    <path d="M-5 -35 L-2 -35 M2 -35 L5 -35" stroke="#1A1D24" stroke-width="2"/>
+    <path d="M-5 -45 L-2 -45 M2 -45 L5 -45" stroke="#1A1D24" stroke-width="2"/>
+    <rect x="-12" y="-25" width="24" height="35" rx="4" fill="#6B7280"/>
+    <!-- Alert lines indicating disturbance -->
+    <path d="M0 -60 L0 -75" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M10 -55 L20 -65" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- The Investigator (The source of the disturbance) -->
+  <g transform="translate(80, 160)">
+    <circle cx="0" cy="-20" r="10" fill="#9CA3AF"/>
+    <rect x="-8" y="-10" width="16" height="20" rx="2" fill="#4B5563"/>
+    <!-- Motion lines -->
+    <path d="M-15 0 L-25 0" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <path d="M-12 -5 L-20 -10" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Sound/Disturbance Waves -->
+  <path d="M110 120 Q120 110 130 120" stroke="#F59E0B" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M115 110 Q130 95 145 110" stroke="#F59E0B" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

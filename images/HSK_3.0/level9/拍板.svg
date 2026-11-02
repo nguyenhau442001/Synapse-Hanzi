@@ -1,0 +1,31 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Desk -->
+  <rect x="40" y="150" width="160" height="15" rx="4" fill="#343A46"/>
+  
+  <!-- Document -->
+  <rect x="70" y="120" width="100" height="30" rx="2" fill="#E9ECEF"/>
+  <line x1="80" y1="130" x2="160" y2="130" stroke="#CED4DA" stroke-width="2"/>
+  <line x1="80" y1="140" x2="130" y2="140" stroke="#CED4DA" stroke-width="2"/>
+  
+  <!-- Hand Character -->
+  <g>
+    <!-- Motion lines -->
+    <path d="M120 70 L120 90" stroke="#FFC107" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4"/>
+    <path d="M110 75 L110 95" stroke="#FFC107" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4"/>
+    
+    <!-- Arm -->
+    <path d="M120 40 L120 80" stroke="#F8F9FA" stroke-width="12" stroke-linecap="round"/>
+    
+    <!-- Palm -->
+    <ellipse cx="120" cy="100" rx="20" ry="15" fill="#F8F9FA"/>
+    
+    <!-- Fingers -->
+    <rect x="105" y="105" width="30" height="10" rx="3" fill="#F8F9FA"/>
+  </g>
+  
+  <!-- Impact Effect -->
+  <circle cx="120" cy="145" r="8" fill="none" stroke="#FFC107" stroke-width="2"/>
+  <circle cx="120" cy="145" r="15" fill="none" stroke="#FFC107" stroke-width="1" opacity="0.5"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 130)">
+    <!-- Shoulders and Torso -->
+    <path d="M-60,40 C-60,10 -20,0 0,0 C20,0 60,10 60,40 L60,80 L-60,80 Z" fill="#3A404D"/>
+    
+    <!-- Neck -->
+    <rect x="-15" y="-30" width="30" height="30" fill="#FFD1A9"/>
+    
+    <!-- Head (Turning) -->
+    <ellipse cx="0" cy="-60" rx="45" ry="50" fill="#FFD1A9"/>
+    
+    <!-- Hair -->
+    <path d="M-45,-60 C-45,-90 -20,-110 0,-110 C20,-110 45,-90 45,-60 L45,-70 C45,-100 20,-120 0,-120 C-20,-120 -45,-100 -45,-70 Z" fill="#2D3436"/>
+    
+    <!-- Eye (Looking back) -->
+    <ellipse cx="25" cy="-65" rx="6" ry="8" fill="#1A1D24"/>
+    
+    <!-- Ear -->
+    <ellipse cx="45" cy="-60" rx="8" ry="12" fill="#FFD1A9"/>
+    
+    <!-- Nose/Mouth hint -->
+    <path d="M30,-55 Q35,-50 30,-45" stroke="#E6A875" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Motion lines indicating the turn -->
+  <path d="M180,100 Q200,120 180,140" stroke="#FFB84D" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M190,105 Q210,125 190,145" stroke="#FFB84D" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.3"/>
+</svg>

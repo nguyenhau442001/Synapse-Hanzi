@@ -1,0 +1,31 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Stall structure -->
+  <path d="M60 180 L180 180 L170 120 L70 120 Z" fill="#2C333F"/>
+  <path d="M70 120 L120 90 L170 120 Z" fill="#E67E22"/>
+  
+  <!-- Produce baskets -->
+  <ellipse cx="90" cy="160" rx="15" ry="10" fill="#D35400"/>
+  <circle cx="90" cy="155" r="6" fill="#F1C40F"/>
+  <circle cx="85" cy="158" r="5" fill="#F1C40F"/>
+  
+  <ellipse cx="150" cy="160" rx="15" ry="10" fill="#D35400"/>
+  <circle cx="150" cy="155" r="7" fill="#27AE60"/>
+  <circle cx="145" cy="158" r="5" fill="#27AE60"/>
+  
+  <!-- Merchant figure -->
+  <circle cx="120" cy="135" r="12" fill="#F39C12"/>
+  <path d="M108 145 L132 145 L128 175 L112 175 Z" fill="#34495E"/>
+  
+  <!-- Customer figure -->
+  <circle cx="185" cy="145" r="10" fill="#BDC3C7"/>
+  <path d="M175 155 L195 155 L192 180 L178 180 Z" fill="#2980B9"/>
+  
+  <!-- Interaction gesture -->
+  <path d="M165 145 L175 145" stroke="#BDC3C7" stroke-width="2" stroke-linecap="round"/>
+  <path d="M135 145 L145 145" stroke="#F39C12" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Ground -->
+  <path d="M40 180 L200 180" stroke="#34495E" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,67 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+    <!-- Container -->
+    <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+    <!-- Defs for shadows and gradients -->
+    <defs>
+        <linearGradient id="metalGear" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#4E5D6C"/>
+            <stop offset="100%" stop-color="#2C3E50"/>
+        </linearGradient>
+        <linearGradient id="accentGold" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#F39C12"/>
+            <stop offset="100%" stop-color="#D35400"/>
+        </linearGradient>
+        <linearGradient id="clockFace" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#34495E"/>
+            <stop offset="100%" stop-color="#22313F"/>
+        </linearGradient>
+    </defs>
+
+    <!-- Background subtle grid / technical lines -->
+    <g opacity="0.15">
+        <circle cx="120" cy="120" r="85" fill="none" stroke="#F39C12" stroke-dasharray="4,6" stroke-width="1.5"/>
+        <line x1="35" y1="120" x2="205" y2="120" stroke="#FFFFFF" stroke-width="0.5"/>
+        <line x1="120" y1="35" x2="120" y2="205" stroke="#FFFFFF" stroke-width="0.5"/>
+    </g>
+
+    <!-- Physical Object: Mechanical Equipment / Heavy-Duty Gear representing lifespan/service life (年限) -->
+    <g transform="translate(120, 120)">
+        <!-- Outer casing/bracket -->
+        <path d="M-65 -45 L-45 -65 L45 -65 L65 -45 L65 45 L45 65 L-45 65 L-65 45 Z" fill="#2E4053" stroke="#5D6D7E" stroke-width="2"/>
+        
+        <!-- Large mechanical gear -->
+        <circle cx="0" cy="0" r="52" fill="url(#metalGear)" stroke="#85929E" stroke-width="3"/>
+        
+        <!-- Gear teeth cutouts (decorative flat segments) -->
+        <circle cx="0" cy="0" r="42" fill="#1A1D24"/>
+        
+        <!-- Internal Clock / Time Element seamlessly integrated into the machine (Lifespan / 年限) -->
+        <circle cx="0" cy="0" r="36" fill="url(#clockFace)" stroke="#F39C12" stroke-width="2"/>
+
+        <!-- Clock ticks -->
+        <line x1="0" y1="-30" x2="0" y2="-25" stroke="#F39C12" stroke-width="2" stroke-linecap="round"/>
+        <line x1="0" y1="25" x2="0" y2="30" stroke="#F39C12" stroke-width="2" stroke-linecap="round"/>
+        <line x1="-30" y1="0" x2="-25" y2="0" stroke="#F39C12" stroke-width="2" stroke-linecap="round"/>
+        <line x1="25" y1="0" x2="30" y2="0" stroke="#F39C12" stroke-width="2" stroke-linecap="round"/>
+
+        <!-- Clock hands showing duration/time limit -->
+        <line x1="0" y1="0" x2="0" y2="-18" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+        <line x1="0" y1="0" x2="15" y2="10" stroke="#F39C12" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="0" cy="0" r="4" fill="#F39C12"/>
+
+        <!-- Central core bolt -->
+        <circle cx="0" cy="0" r="12" fill="none" stroke="#F39C12" stroke-width="2" stroke-dasharray="3,3"/>
+    </g>
+
+    <!-- Accent Highlights (Maintenance/Status indicators) -->
+    <circle cx="55" cy="65" r="5" fill="#F39C12"/>
+    <circle cx="185" cy="65" r="5" fill="#F39C12"/>
+    <path d="M55 175 L185 175" stroke="#F39C12" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    
+    <!-- Focus indicator brackets -->
+    <path d="M25 50 L25 35 L40 35" fill="none" stroke="#F39C12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M215 50 L215 35 L200 35" fill="none" stroke="#F39C12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M25 190 L25 205 L40 205" fill="none" stroke="#F39C12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M215 190 L215 205 L200 205" fill="none" stroke="#F39C12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

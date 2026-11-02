@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ocean/Horizon line -->
+  <path d="M0 160 L240 160" stroke="#2C3E50" stroke-width="2"/>
+  
+  <!-- The wide highway -->
+  <path d="M60 240 L100 120 L140 120 L180 240 Z" fill="#2D3436"/>
+  
+  <!-- Road markings -->
+  <path d="M115 130 L115 150 M125 130 L125 150 M115 170 L115 190 M125 170 L125 190 M115 210 L115 230 M125 210 L125 230" stroke="#F1C40F" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Car -->
+  <path d="M105 180 L135 180 L130 195 L110 195 Z" fill="#E67E22"/>
+  <circle cx="112" cy="195" r="5" fill="#34495E"/>
+  <circle cx="128" cy="195" r="5" fill="#34495E"/>
+  
+  <!-- Vast open sky/horizon accent -->
+  <path d="M20 120 Q120 80 220 120" stroke="#3498DB" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M40 130 Q120 90 200 130" stroke="#3498DB" stroke-width="1" fill="none" opacity="0.3"/>
+  
+  <!-- Sun/Light accent -->
+  <circle cx="120" cy="100" r="15" fill="#F39C12" opacity="0.2"/>
+</svg>

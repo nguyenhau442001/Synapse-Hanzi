@@ -1,0 +1,74 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient background glow for architectural focal point -->
+  <circle cx="120" cy="130" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Traditional Folk House (民居 - Mínjū) Illustration -->
+  <g transform="translate(0, 8)">
+    <!-- Stone foundation / base platform -->
+    <path d="M 60,165 L 180,165 L 185,178 L 55,178 Z" fill="#3A4150"/>
+    <rect x="58" y="168" width="124" height="3" fill="#4E5668" opacity="0.6"/>
+
+    <!-- Main building walls (Warm earth/clay tone common in traditional vernacular architecture) -->
+    <rect x="72" y="105" width="96" height="60" fill="#D47A43"/>
+    <!-- Wall texture / timber framing hints -->
+    <rect x="72" y="105" width="96" height="8" fill="#B85D28"/>
+    <line x1="120" y1="105" x2="120" y2="165" stroke="#B85D28" stroke-width="3" opacity="0.5"/>
+
+    <!-- Traditional Wooden Double Doors (Center) -->
+    <rect x="104" y="125" width="32" height="40" fill="#2C221E"/>
+    <rect x="107" y="128" width="12" height="34" fill="#3D302B"/>
+    <rect x="121" y="128" width="12" height="34" fill="#3D302B"/>
+    <!-- Door studs / rings -->
+    <circle cx="113" cy="145" rx="1.5" fill="#E6AF2E"/>
+    <circle cx="127" cy="145" rx="1.5" fill="#E6AF2E"/>
+
+    <!-- Side lattice windows -->
+    <rect x="82" y="122" width="14" height="20" fill="#2C221E"/>
+    <path d="M 82,132 L 96,132 M 89,122 L 89,142" stroke="#E6AF2E" stroke-width="1.5" opacity="0.6"/>
+    <rect x="144" y="122" width="14" height="20" fill="#2C221E"/>
+    <path d="M 144,132 L 158,132 M 151,122 L 151,142" stroke="#E6AF2E" stroke-width="1.5" opacity="0.6"/>
+
+    <!-- Overhanging Eaves (Lower Roof structure) -->
+    <path d="M 64,105 L 176,105 L 182,114 L 58,114 Z" fill="#2C323D"/>
+    
+    <!-- Gable walls upper section (White plastered wall style with dark timber beams) -->
+    <path d="M 72,105 L 120,68 L 168,105 Z" fill="#EAE6DF"/>
+    <line x1="120" y1="68" x2="120" y2="105" stroke="#2C323D" stroke-width="3"/>
+
+    <!-- Main Curved Tile Roof (Traditional East Asian Vernacular Style) -->
+    <path d="M 50,72 C 80,63 100,60 120,60 C 140,60 160,63 190,72 L 198,88 C 160,78 140,76 120,76 C 100,76 80,78 42,88 Z" fill="#333B4A"/>
+    
+    <!-- Roof Ridge and Tiles detail -->
+    <line x1="52" y1="72" x2="188" y2="72" stroke="#E6AF2E" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 68,75 L 63,86" stroke="#4E5668" stroke-width="2"/>
+    <path d="M 88,73 L 85,86" stroke="#4E5668" stroke-width="2"/>
+    <path d="M 108,72 L 107,86" stroke="#4E5668" stroke-width="2"/>
+    <path d="M 132,72 L 133,86" stroke="#4E5668" stroke-width="2"/>
+    <path d="M 152,73 L 155,86" stroke="#4E5668" stroke-width="2"/>
+    <path d="M 172,75 L 177,86" stroke="#4E5668" stroke-width="2"/>
+
+    <!-- Warm glowing window light (symbolizing inhabited home / 民居) -->
+    <rect x="106" y="127" width="28" height="2" fill="#FFE5A3" opacity="0.8"/>
+  </g>
+
+  <!-- Ground context / cobblestone path hinting at traditional old town (古镇) -->
+  <ellipse cx="120" cy="188" rx="75" ry="8" fill="#252A34"/>
+  <path d="M 85,185 Q 120,183 155,188" stroke="#3A4150" stroke-width="2" stroke-dasharray="6,4" fill="none"/>
+  <path d="M 95,191 Q 120,189 145,192" stroke="#3A4150" stroke-width="1.5" stroke-dasharray="4,6" fill="none"/>
+
+  <!-- Subtle architectural accent lanterns for cultural context -->
+  <g transform="translate(0, 2)">
+    <!-- Left Lantern -->
+    <line x1="55" y1="95" x2="55" y2="112" stroke="#4E5668" stroke-width="1.5"/>
+    <rect x="52" y="112" width="6" height="10" rx="2" fill="#E6AF2E"/>
+    <path d="M 52,112 L 58,112 L 56,124 L 54,124 Z" fill="#D47A43"/>
+    
+    <!-- Right Lantern -->
+    <line x1="185" y1="95" x2="185" y2="112" stroke="#4E5668" stroke-width="1.5"/>
+    <rect x="182" y="112" width="6" height="10" rx="2" fill="#E6AF2E"/>
+    <path d="M 182,112 L 188,112 L 186,124 L 184,124 Z" fill="#D47A43"/>
+  </g>
+</svg>

@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glowing background effect for growth -->
+  <path d="M40 180 L120 120 L200 180 Z" fill="#252A34" opacity="0.4"/>
+
+  <!-- Grid lines / Chart background -->
+  <line x1="45" y1="185" x2="195" y2="185" stroke="#2E3544" stroke-width="2" stroke-linecap="round"/>
+  <line x1="45" y1="60" x2="45" y2="185" stroke="#2E3544" stroke-width="2" stroke-linecap="round"/>
+  
+  <line x1="45" y1="145" x2="195" y2="145" stroke="#252A34" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="45" y1="105" x2="195" y2="105" stroke="#252A34" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- Physical Objects representing "业绩" (Business performance / Achievement trophies & glowing upward metrics) -->
+  
+  <!-- Bar chart rising columns -->
+  <rect x="60" y="130" width="22" height="55" rx="3" fill="#2E3544"/>
+  <rect x="94" y="100" width="22" height="85" rx="3" fill="#363F54"/>
+  <rect x="128" y="75" width="22" height="110" rx="3" fill="#F59E0B" opacity="0.3"/>
+  <rect x="162" y="45" width="22" height="140" rx="3" fill="#F59E0B"/>
+
+  <!-- Upward Trend Line -->
+  <path d="M 71 135 L 105 105 L 139 75 L 173 45" fill="none" stroke="#FBBF24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Trend Data Nodes -->
+  <circle cx="71" cy="135" r="4" fill="#1A1D24" stroke="#FBBF24" stroke-width="3"/>
+  <circle cx="105" cy="105" r="4" fill="#1A1D24" stroke="#FBBF24" stroke-width="3"/>
+  <circle cx="139" cy="75" r="4" fill="#1A1D24" stroke="#FBBF24" stroke-width="3"/>
+  <circle cx="173" cy="45" r="5" fill="#FBBF24"/>
+
+  <!-- Golden Achievement Trophy resting atop the highest peak -->
+  <g transform="translate(153, 10)">
+    <!-- Trophy Base -->
+    <rect x="14" y="30" width="12" height="4" rx="1" fill="#E5E7EB"/>
+    <rect x="10" y="34" width="20" height="4" rx="1" fill="#D1D5DB"/>
+    <rect x="14" y="22" width="12" height="8" fill="#9CA3AF"/>
+    
+    <!-- Trophy Cup -->
+    <path d="M 10 6 C 10 6, 8 18, 20 18 C 32 18, 30 6, 30 6 Z" fill="#FBBF24"/>
+    <path d="M 10 6 L 30 6 L 28 20 C 28 20, 26 23, 20 23 C 14 23, 12 20, 12 20 Z" fill="#F59E0B"/>
+    
+    <!-- Trophy Handles -->
+    <path d="M 10 9 C 5 9, 4 14, 8 16" fill="none" stroke="#FBBF24" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 30 9 C 35 9, 36 14, 32 16" fill="none" stroke="#FBBF24" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Star Emblem on Trophy -->
+    <polygon points="20,10 21.5,13 24.5,13.5 22.2,15.5 22.8,18.5 20,17 17.2,18.5 17.8,15.5 15.5,13.5 18.5,13" fill="#FEF3C7"/>
+  </g>
+
+</svg>

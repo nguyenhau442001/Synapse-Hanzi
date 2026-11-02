@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Desk -->
+  <rect x="40" y="150" width="160" height="15" rx="2" fill="#343A46"/>
+  <rect x="50" y="165" width="10" height="30" fill="#2A2F3A"/>
+  <rect x="180" y="165" width="10" height="30" fill="#2A2F3A"/>
+  
+  <!-- Document / Contract -->
+  <rect x="90" y="110" width="60" height="40" rx="2" fill="#E0E6ED"/>
+  <line x1="100" y1="120" x2="140" y2="120" stroke="#94A3B8" stroke-width="2"/>
+  <line x1="100" y1="130" x2="140" y2="130" stroke="#94A3B8" stroke-width="2"/>
+  <line x1="100" y1="140" x2="120" y2="140" stroke="#94A3B8" stroke-width="2"/>
+  
+  <!-- Handshake -->
+  <g transform="translate(120, 100)">
+    <!-- Left Hand (Employer) -->
+    <path d="M-40 20 L-20 40 L-10 30 L-30 10 Z" fill="#FFB86C"/>
+    <!-- Right Hand (Appointee) -->
+    <path d="M40 20 L20 40 L10 30 L30 10 Z" fill="#FFD700"/>
+    <!-- Cuff -->
+    <rect x="-45" y="15" width="15" height="10" fill="#44475A"/>
+    <rect x="30" y="15" width="15" height="10" fill="#44475A"/>
+  </g>
+  
+  <!-- Pen -->
+  <path d="M150 120 L170 100 L175 105 L155 125 Z" fill="#FFD700"/>
+  <rect x="168" y="98" width="4" height="10" fill="#FFB86C" transform="rotate(45 170 100)"/>
+</svg>

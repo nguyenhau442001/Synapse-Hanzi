@@ -1,0 +1,59 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle glowing habitat atmosphere -->
+  <circle cx="120" cy="115" r="70" fill="#222B38" opacity="0.6"/>
+
+  <!-- Floor/Terrain representing the natural environment -->
+  <path d="M 50 165 Q 120 150 190 165 L 195 185 Q 120 195 45 185 Z" fill="#283342" rx="4"/>
+  <path d="M 60 172 C 90 168, 150 168, 180 172" stroke="#344256" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <!-- Thriving nature element (grass shoots) -->
+  <path d="M 75 168 C 75 155, 78 145, 82 135 C 80 145, 78 155, 75 168 Z" fill="#34D399" opacity="0.7"/>
+  <path d="M 165 170 C 165 158, 162 148, 158 138 C 160 148, 162 158, 165 170 Z" fill="#34D399" opacity="0.7"/>
+
+  <!-- Majestic Wild Animal (Panda / Rare Wildlife Symbol) - Centered iconic physical object -->
+  <g transform="translate(0, -2)">
+    <!-- Body -->
+    <ellipse cx="120" cy="130" rx="36" ry="32" fill="#F3F4F6"/>
+    
+    <!-- Back Legs -->
+    <ellipse cx="96" cy="150" rx="12" ry="16" fill="#1F2937"/>
+    <ellipse cx="144" cy="150" rx="12" ry="16" fill="#1F2937"/>
+
+    <!-- Arms -->
+    <path d="M 92 110 C 82 120, 84 135, 94 138 C 98 139, 102 125, 102 115 Z" fill="#1F2937"/>
+    <path d="M 148 110 C 158 120, 156 135, 146 138 C 142 139, 138 125, 138 115 Z" fill="#1F2937"/>
+
+    <!-- Head -->
+    <circle cx="120" cy="92" r="28" fill="#F3F4F6"/>
+
+    <!-- Ears -->
+    <circle cx="100" cy="74" r="9" fill="#1F2937"/>
+    <circle cx="140" cy="74" r="9" fill="#1F2937"/>
+
+    <!-- Eye Patches -->
+    <ellipse cx="108" cy="90" rx="7" ry="10" transform="rotate(-15 108 90)" fill="#1F2937"/>
+    <ellipse cx="132" cy="90" rx="7" ry="10" transform="rotate(15 132 90)" fill="#1F2937"/>
+
+    <!-- Eyes (sparkling life) -->
+    <circle cx="109" cy="88" r="2.5" fill="#FFFFFF"/>
+    <circle cx="131" cy="88" r="2.5" fill="#FFFFFF"/>
+
+    <!-- Nose & Muzzle -->
+    <ellipse cx="120" cy="98" rx="4" ry="3" fill="#1F2937"/>
+    <path d="M 120 101 Q 117 106 114 104" stroke="#1F2937" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M 120 101 Q 123 106 126 104" stroke="#1F2937" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Belly patch -->
+    <ellipse cx="120" cy="134" rx="22" ry="18" fill="#F3F4F6"/>
+  </g>
+
+  <!-- Focus/Protection Aura (Subtle warm golden glow framing the thriving wildlife, denoting preservation) -->
+  <circle cx="120" cy="110" r="62" stroke="#F59E0B" stroke-width="2.5" stroke-dasharray="8 6" opacity="0.6" fill="none"/>
+
+  <!-- Top-tier vibrant accent details (Leaf sprouting safely above) -->
+  <path d="M 120 44 C 120 32, 128 26, 135 24 C 130 32, 125 38, 120 44 Z" fill="#34D399"/>
+  <path d="M 120 44 C 120 32, 112 26, 105 24 C 110 32, 115 38, 120 44 Z" fill="#10B981"/>
+</svg>

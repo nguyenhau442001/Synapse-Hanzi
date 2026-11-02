@@ -1,0 +1,55 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Details / Workshop Atmosphere -->
+  <path d="M40 180 L200 180" stroke="#2A2F3D" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Traditional Charcoal Kiln / Oven Structure (Background) -->
+  <path d="M80 180 L80 120 C80 100 100 80 120 80 C140 80 160 100 160 120 L160 180 Z" fill="#242936"/>
+  <path d="M100 180 L100 130 C100 120 110 110 120 110 C130 110 140 120 140 130 L140 180 Z" fill="#1A1D24"/>
+  <rect x="110" y="150" width="20" height="30" fill="#E88235" opacity="0.8"/>
+  
+  <!-- Wisps of Smoke (Hun / Xông khói) -->
+  <path d="M120 100 C110 80 130 60 120 40 C110 20 130 10 120 0" fill="none" stroke="#4A5265" stroke-width="8" stroke-linecap="round" opacity="0.4"/>
+  <path d="M140 110 C155 90 135 70 145 50 C155 30 135 15 145 0" fill="none" stroke="#2E3442" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+  
+  <!-- Central Character (Worker with soot-darkened cheeks representing 熏) -->
+  <!-- Worker Shoulders/Body -->
+  <path d="M80 210 C80 190 95 180 120 180 C145 180 160 190 160 210 Z" fill="#3E4658"/>
+  <rect x="110" y="175" width="20" height="15" fill="#C7CBD6"/>
+
+  <!-- Neck -->
+  <rect x="105" y="145" width="30" height="40" fill="#D29873"/>
+
+  <!-- Head / Face -->
+  <circle cx="120" cy="120" r="32" fill="#E0A882"/>
+  
+  <!-- Hair / Cap -->
+  <path d="M88 115 C88 95 102 85 120 85 C138 85 152 95 152 115 L152 125 L88 125 Z" fill="#2C3240"/>
+  
+  <!-- Heavy Soot / Smoke Stains on Cheeks (Visualizing "熏得黢黑") -->
+  <!-- Left Cheek Soot -->
+  <ellipse cx="102" cy="125" rx="10" ry="7" fill="#1F232D" opacity="0.9"/>
+  <!-- Right Cheek Soot -->
+  <ellipse cx="138" cy="125" rx="10" ry="7" fill="#1F232D" opacity="0.9"/>
+  <!-- Nose Soot Smudge -->
+  <ellipse cx="120" cy="130" rx="5" ry="3" fill="#1F232D" opacity="0.7"/>
+
+  <!-- Facial Features -->
+  <!-- Eyes (closed in hard labor / intense focus) -->
+  <path d="M96 115 Q102 110 108 115" fill="none" stroke="#1F232D" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M132 115 Q138 110 144 115" fill="none" stroke="#1F232D" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Mouth (Determined / strained line) -->
+  <path d="M112 142 Q120 146 128 142" fill="none" stroke="#1F232D" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Floating Dense Smoke Wafting Across the Face -->
+  <path d="M70 135 C90 140 100 120 120 130 C140 140 160 120 180 130" fill="none" stroke="#2E3442" stroke-width="12" stroke-linecap="round" opacity="0.5"/>
+  <path d="M60 115 C85 110 95 130 125 120 C145 110 165 125 190 115" fill="none" stroke="#1F232D" stroke-width="8" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Accent Glow for Focus (Amber/Orange highlight for high contrast modern flat design) -->
+  <circle cx="120" cy="65" r="3" fill="#E88235" opacity="0.8"/>
+  <circle cx="95" cy="55" r="2" fill="#E88235" opacity="0.5"/>
+  <circle cx="145" cy="58" r="2.5" fill="#E88235" opacity="0.6"/>
+</svg>

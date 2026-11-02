@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Central Source Object (Original IP / Core Statue) -->
+    <rect x="100" y="85" width="40" height="60" rx="8" fill="#2E3440" stroke="#FFB86C" stroke-width="2"/>
+    <circle cx="120" cy="105" r="10" fill="#FFB86C"/>
+    <path d="M 112 125 L 128 125 L 125 145 L 115 145 Z" fill="#FFB86C"/>
+    
+    <!-- Derivative Branch 1: Top-Left (e.g. Action Figure / Boxed toy) -->
+    <path d="M 105 95 C 80 90, 60 75, 45 60" fill="none" stroke="#6272A4" stroke-width="2" stroke-dasharray="4 4"/>
+    <rect x="30" y="35" width="26" height="34" rx="4" fill="#2E3440" stroke="#8BE9FD" stroke-width="2"/>
+    <circle cx="43" cy="47" r="5" fill="#8BE9FD"/>
+    <rect x="36" y="58" width="14" height="4" rx="2" fill="#8BE9FD"/>
+
+    <!-- Derivative Branch 2: Top-Right (e.g. Theme Park / Ferris Wheel Icon) -->
+    <path d="M 135 95 C 160 90, 180 75, 195 60" fill="none" stroke="#6272A4" stroke-width="2" stroke-dasharray="4 4"/>
+    <circle cx="195" cy="52" r="16" fill="none" stroke="#50FA7B" stroke-width="2"/>
+    <circle cx="195" cy="52" r="3" fill="#50FA7B"/>
+    <line x1="195" y1="36" x2="195" y2="68" stroke="#50FA7B" stroke-width="1.5"/>
+    <line x1="179" y1="52" x2="211" y2="52" stroke="#50FA7B" stroke-width="1.5"/>
+
+    <!-- Derivative Branch 3: Bottom-Left (e.g. Merchandise / Mug) -->
+    <path d="M 105 135 C 80 140, 60 155, 45 170" fill="none" stroke="#6272A4" stroke-width="2" stroke-dasharray="4 4"/>
+    <rect x="32" y="165" width="22" height="26" rx="4" fill="#2E3440" stroke="#FF79C6" stroke-width="2"/>
+    <path d="M 54 171 C 60 171, 60 185, 54 185" fill="none" stroke="#FF79C6" stroke-width="2"/>
+
+    <!-- Derivative Branch 4: Bottom-Right (e.g. Game Controller / Media) -->
+    <path d="M 135 135 C 160 140, 180 155, 195 170" fill="none" stroke="#6272A4" stroke-width="2" stroke-dasharray="4 4"/>
+    <rect x="178" y="166" width="34" height="22" rx="6" fill="#2E3440" stroke="#BD93F9" stroke-width="2"/>
+    <circle cx="189" cy="177" r="3" fill="#BD93F9"/>
+    <circle cx="201" cy="177" r="2" fill="#BD93F9"/>
+
+    <!-- Connection nodes / Sparks of derivation -->
+    <circle cx="120" cy="85" r="3" fill="#FFB86C"/>
+    <circle cx="45" cy="60" r="3" fill="#8BE9FD"/>
+    <circle cx="195" cy="60" r="3" fill="#50FA7B"/>
+    <circle cx="45" cy="170" r="3" fill="#FF79C6"/>
+    <circle cx="195" cy="170" r="3" fill="#BD93F9"/>
+  </g>
+</svg>

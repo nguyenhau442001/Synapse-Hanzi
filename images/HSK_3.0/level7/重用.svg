@@ -1,0 +1,31 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Desk/Surface -->
+  <rect x="40" y="170" width="160" height="10" rx="2" fill="#343A46"/>
+  
+  <!-- Leader Figure (Left) -->
+  <g transform="translate(60, 80)">
+    <circle cx="20" cy="20" r="15" fill="#FFB86C"/>
+    <path d="M5 40c0-10 15-15 15-15s15 5 15 15v40H5z" fill="#44475A"/>
+    <path d="M20 60l15 20M20 60l-15 20" stroke="#FFB86C" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Young Talent Figure (Right) -->
+  <g transform="translate(140, 100)">
+    <circle cx="20" cy="20" r="15" fill="#8BE9FD"/>
+    <path d="M5 40c0-10 15-15 15-15s15 5 15 15v40H5z" fill="#6272A4"/>
+  </g>
+  
+  <!-- The Act of "Zhongyong" (Promoting/Placing in important position) -->
+  <!-- Leader handing a golden key/badge to the young talent -->
+  <g transform="translate(110, 120)">
+    <path d="M0 0l20 5" stroke="#FFB86C" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="25" cy="5" r="8" fill="#FFB86C"/>
+    <path d="M25 5l-5 5" stroke="#FFB86C" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Chair/Position Symbol (Behind the young talent) -->
+  <rect x="150" y="140" width="30" height="30" rx="4" fill="#FFB86C" opacity="0.3"/>
+  <rect x="155" y="145" width="20" height="20" rx="2" fill="#1A1D24"/>
+</svg>

@@ -1,0 +1,60 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "议程" (Agenda/Schedule) -->
+  <g transform="translate(40, 32)">
+    <!-- Clipboard Background -->
+    <rect x="25" y="10" width="110" height="145" rx="10" fill="#2A313C" stroke="#3A4454" stroke-width="2"/>
+    
+    <!-- Clipboard Clip -->
+    <path d="M57 10h26c2 0 4-2 4-4V5c0-2-2-4-4-4H57c-2 0-4 2-4 4v1c0 2 2 4 4 4z" fill="#F39C12"/>
+    <rect x="52" y="10" width="36" height="5" rx="2" fill="#E67E22"/>
+
+    <!-- Document Header / Date Badge -->
+    <circle cx="45" cy="32" r="8" fill="#3498DB"/>
+    <rect x="58" y="28" width="55" height="8" rx="4" fill="#6C7A89"/>
+
+    <!-- Agenda Item 1 (Completed / Checked) -->
+    <g transform="translate(38, 52)">
+      <rect x="0" y="2" width="10" height="10" rx="2" fill="#2ECC71"/>
+      <path d="M3 7l2 2 4-5" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="18" y="2" width="60" height="6" rx="3" fill="#E2E8F0"/>
+    </g>
+
+    <!-- Agenda Item 2 (Active / Highlighted) -->
+    <g transform="translate(38, 76)">
+      <rect x="0" y="2" width="10" height="10" rx="2" fill="#F39C12"/>
+      <circle cx="5" cy="7" r="2" fill="#FFFFFF"/>
+      <rect x="18" y="2" width="70" height="6" rx="3" fill="#FFFFFF"/>
+      <rect x="18" y="13" width="45" height="4" rx="2" fill="#6C7A89"/>
+    </g>
+
+    <!-- Agenda Item 3 (Pending) -->
+    <g transform="translate(38, 104)">
+      <rect x="0" y="2" width="10" height="10" rx="2" fill="#3A4454"/>
+      <rect x="18" y="2" width="55" height="6" rx="3" fill="#4A5568"/>
+    </g>
+
+    <!-- Agenda Item 4 (Pending) -->
+    <g transform="translate(38, 126)">
+      <rect x="0" y="2" width="10" height="10" rx="2" fill="#3A4454"/>
+      <rect x="18" y="2" width="65" height="6" rx="3" fill="#4A5568"/>
+    </g>
+
+    <!-- Floating Accent / Focus Elements -->
+    <!-- Clock/Time Symbol hinting at schedule -->
+    <g transform="translate(130, 115)">
+      <circle cx="20" cy="20" r="22" fill="#1A1D24" stroke="#F39C12" stroke-width="4"/>
+      <circle cx="20" cy="20" r="18" fill="#2A313C"/>
+      <path d="M20 9v11l8 5" fill="none" stroke="#F39C12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Pen / Stylus marking the agenda -->
+    <g transform="translate(100, 70) rotate(45)">
+      <path d="M0 0l6-6 15 15-6 6z" fill="#E74C3C"/>
+      <path d="M-6 6l6-6 6 6-6 6z" fill="#C0392B"/>
+      <path d="M-9 9l3-3 6 6-3 3z" fill="#F1C40F"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle ambient glow to focus on the central subject -->
+  <circle cx="120" cy="115" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Conceptual Illustration for "意愿" (Desire / Will / Aspiration): 
+       Represented as a person confidently shaping/holding their own bright career/pathway star or illuminated aspiration, 
+       reflecting professional autonomy and career choice context. -->
+  
+  <g transform="translate(0, 10)">
+    <!-- Career Pathway / Road of Choice -->
+    <path d="M70,155 L170,155" stroke="#2E3646" stroke-width="4" stroke-linecap="round"/>
+    <!-- Stepping stones of progress -->
+    <circle cx="95" cy="155" r="3" fill="#4B5563"/>
+    <circle cx="120" cy="155" r="3" fill="#4B5563"/>
+    <circle cx="145" cy="155" r="3" fill="#4B5563"/>
+
+    <!-- Central Character (Professional human figure representing individual will/choice) -->
+    <!-- Body / Suit Torso -->
+    <path d="M100,145 L105,115 L135,115 L140,145 Z" fill="#3B82F6"/>
+    <!-- Collar / Shirt -->
+    <polygon points="115,115 125,115 120,123" fill="#E5E7EB"/>
+    <!-- Head -->
+    <circle cx="120" cy="100" r="11" fill="#FBBF24"/>
+    <path d="M110,97 C110,91 130,91 130,97 C130,99 125,100 120,100 C115,100 110,99 110,97 Z" fill="#D97706"/>
+
+    <!-- Arms reaching upward with personal volition -->
+    <path d="M105,118 L90,95" stroke="#3B82F6" stroke-width="5" stroke-linecap="round"/>
+    <path d="M135,118 L150,95" stroke="#3B82F6" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Glowing Aspiration / Goal (The "意愿" / Inner Vision brought to reality) -->
+    <circle cx="120" cy="70" r="18" fill="#1E293B" stroke="#F59E0B" stroke-width="3"/>
+    <!-- Star core inside the aspiration symbol -->
+    <path d="M120,58 L123,65 L130,66 L125,71 L126,78 L120,74 L114,78 L115,71 L110,66 L117,65 Z" fill="#F59E0B"/>
+
+    <!-- Radiating focus lines (Willpower/Intent) -->
+    <line x1="120" y1="46" x2="120" y2="40" stroke="#FBBF24" stroke-width="2" stroke-linecap="round"/>
+    <line x1="100" y1="52" x2="95" y2="47" stroke="#FBBF24" stroke-width="2" stroke-linecap="round"/>
+    <line x1="140" y1="52" x2="145" y2="47" stroke="#FBBF24" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Decorative baseline representing grounded autonomy -->
+  <ellipse cx="120" cy="175" rx="55" ry="4" fill="#111827"/>
+</svg>

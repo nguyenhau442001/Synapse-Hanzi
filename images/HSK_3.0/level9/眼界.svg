@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(20, 20)">
+    <!-- Background glow / atmosphere representing vast horizon -->
+    <circle cx="100" cy="100" r="85" fill="#222834" />
+    
+    <!-- Stars / cosmic vastness in upper background -->
+    <circle cx="50" cy="45" r="1.5" fill="#4E6178" opacity="0.6"/>
+    <circle cx="150" cy="35" r="2" fill="#F39C12" opacity="0.8"/>
+    <circle cx="170" cy="70" r="1.5" fill="#4E6178" opacity="0.5"/>
+    <circle cx="40" cy="80" r="1" fill="#F39C12" opacity="0.7"/>
+
+    <!-- Expanding horizons / layers of landscape (Strategic view) -->
+    <path d="M 15 130 Q 100 115 185 130 L 195 160 Q 100 165 5 160 Z" fill="#2A3442" opacity="0.8"/>
+    <path d="M 5 150 Q 100 135 195 150 L 200 175 Q 100 185 0 175 Z" fill="#323F52"/>
+
+    <!-- Central Icon: Stylized modern telescope / surveyor instrument looking outward -->
+    <!-- Tripod Base -->
+    <line x1="100" y1="120" x2="70" y2="180" stroke="#52637D" stroke-width="4" stroke-linecap="round"/>
+    <line x1="100" y1="120" x2="130" y2="180" stroke="#52637D" stroke-width="4" stroke-linecap="round"/>
+    <line x1="100" y1="120" x2="100" y2="185" stroke="#3E4C62" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Telescope Body (Angled upward towards the horizon/future) -->
+    <g transform="rotate(-25 100 110)">
+      <!-- Main tube -->
+      <rect x="75" y="90" width="60" height="26" rx="6" fill="#3B82F6"/>
+      <!-- Lens hood / front aperture -->
+      <rect x="125" y="87" width="14" height="32" rx="4" fill="#2563EB"/>
+      <!-- Eyepiece -->
+      <rect x="65" y="96" width="12" height="14" rx="3" fill="#60A5FA"/>
+      <!-- Focus dial -->
+      <rect x="95" y="83" width="10" height="7" rx="2" fill="#F39C12"/>
+    </g>
+
+    <!-- Focal point / Golden vision beam expanding into the distance -->
+    <path d="M 145 92 L 210 50 L 205 95 Z" fill="#F39C12" opacity="0.15"/>
+    <path d="M 145 92 L 225 65 L 210 110 Z" fill="#F39C12" opacity="0.08"/>
+    
+    <!-- Bright star of insight / strategic vision -->
+    <path d="M 200 65 L 204 73 L 212 75 L 204 77 L 200 85 L 196 77 L 188 75 L 196 73 Z" fill="#F39C12"/>
+    
+    <!-- Small auxiliary bright node -->
+    <circle cx="175" cy="55" r="2.5" fill="#F39C12" opacity="0.9"/>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Hospital Bed / Patient Context -->
+  <rect x="40" y="140" width="160" height="40" rx="4" fill="#2D343E"/>
+  <circle cx="70" cy="180" r="8" fill="#4A5568"/>
+  <circle cx="170" cy="180" r="8" fill="#4A5568"/>
+  
+  <!-- Patient figure -->
+  <path d="M60 140 L180 140 L170 110 L70 110 Z" fill="#E2E8F0"/>
+  <circle cx="120" cy="90" r="25" fill="#E2E8F0"/>
+  
+  <!-- Forbidden Food Items (The "Jikou" focus) -->
+  <!-- Spicy chili (Red) -->
+  <path d="M180 60 C 190 50, 200 50, 200 70 C 200 80, 190 80, 180 60" fill="#E53E3E"/>
+  <!-- Greasy/Fried item (Yellow) -->
+  <rect x="160" y="80" width="30" height="20" rx="2" fill="#D69E2E"/>
+  
+  <!-- "No" / Forbidden Symbol (The core semantic action) -->
+  <circle cx="180" cy="70" r="45" fill="none" stroke="#E53E3E" stroke-width="8" stroke-dasharray="280"/>
+  <line x1="150" y1="100" x2="210" y2="40" stroke="#E53E3E" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Healthy food alternative (Bowl of porridge/light meal) -->
+  <path d="M50 80 C 50 100, 90 100, 90 80" fill="#CBD5E0"/>
+  <ellipse cx="70" cy="80" rx="20" ry="5" fill="#A0AEC0"/>
+</svg>

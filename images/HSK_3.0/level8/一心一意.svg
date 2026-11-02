@@ -1,0 +1,28 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Conceptual Illustration for 一心一意 (Wholeheartedly / One mind, one intent) -->
+  <!-- Represented as a singular, luminous golden gear/core focused intensely, directed by a single bright vector arrow, minimalist physical object -->
+  
+  <g transform="translate(120, 115)">
+    <!-- Outer ambient focus ring -->
+    <circle cx="0" cy="0" r="64" fill="none" stroke="#2A303C" stroke-width="3" stroke-dasharray="6 4"/>
+    
+    <!-- Concentric focus target -->
+    <circle cx="0" cy="0" r="48" fill="#222733"/>
+    <circle cx="0" cy="0" r="32" fill="#1A1D24"/>
+    
+    <!-- Central Glowing Core representing "One Heart / One Mind" (一心) -->
+    <circle cx="0" cy="0" r="20" fill="#FFA500"/>
+    <circle cx="0" cy="0" r="12" fill="#FFD700"/>
+    
+    <!-- Single directional focus beam representing "One Intent" (一意) -->
+    <path d="M 0 -20 L 0 -72" stroke="#FFA500" stroke-width="4" stroke-linecap="round"/>
+    <polygon points="-6,-64 0,-76 6,-64" fill="#FFA500"/>
+    
+    <!-- Small accent alignment dots -->
+    <circle cx="0" cy="48" r="3" fill="#FFA500"/>
+    <circle cx="48" cy="0" r="3" fill="#FFA500"/>
+    <circle cx="-48" cy="0" r="3" fill="#FFA500"/>
+  </g>
+</svg>

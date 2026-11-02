@@ -1,0 +1,31 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle background grid/glow representing market/dominance -->
+  <circle cx="120" cy="120" r="75" fill="#252A34" opacity="0.6"/>
+  <path d="M120 45 L120 195 M45 120 L195 120" stroke="#2F3644" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4"/>
+
+  <!-- Central Physical Object: A majestic, towering metallic trophy/monument representing "Thế mạnh / Vượt trội" (dominant strength) -->
+  <g transform="translate(0, 10)">
+    <!-- Base platform -->
+    <path d="M80 165 L160 165 L170 180 L70 180 Z" fill="#2F3644"/>
+    <path d="M85 170 L155 170 L160 176 L80 176 Z" fill="#3E4756"/>
+    
+    <!-- Pedestal pillar -->
+    <rect x="105" y="125" width="30" height="40" fill="#2F3644" rx="2"/>
+    <rect x="108" y="125" width="8" height="40" fill="#3E4756" opacity="0.6"/>
+
+    <!-- Crown / Apex Element (Dominant Crest) -->
+    <path d="M120 50 L145 75 L135 125 L105 125 L95 75 Z" fill="#D4AF37"/>
+    <!-- Facet shading for 3D solid look -->
+    <path d="M120 50 L145 75 L120 125 Z" fill="#F1C40F"/>
+    <path d="M120 50 L95 75 L120 125 Z" fill="#D4AF37"/>
+
+    <!-- Sharp upward soaring arrow / pinnacle representing peak superiority (vượt trội) -->
+    <path d="M120 30 L138 58 L127 58 L127 85 L113 85 L113 58 L102 58 Z" fill="#FFB703"/>
+    
+    <!-- Glowing highlights for market leader impact -->
+    <circle cx="120" cy="30" r="4" fill="#FFFFFF"/>
+  </g>
+</svg>

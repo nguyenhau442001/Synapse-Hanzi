@@ -1,0 +1,42 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Desk / Base Surface -->
+    <path d="M 40,165 L 200,165" stroke="#2D323E" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Outgoing Figure (Leaving/Stepping aside - slightly faded/cooler tone) -->
+    <g transform="translate(70, 95)">
+      <!-- Body -->
+      <path d="M 0,50 L 0,25 C 0,12 12,0 25,0 C 38,0 50,12 50,25 L 50,50 Z" fill="#3B4252"/>
+      <!-- Head -->
+      <circle cx="25" cy="-12" r="12" fill="#4C566A"/>
+      <!-- Arm passing baton/blueprint -->
+      <path d="M 45,20 L 65,25" stroke="#4C566A" stroke-width="8" stroke-linecap="round"/>
+    </g>
+
+    <!-- Incoming Figure (Taking over - active focus color) -->
+    <g transform="translate(120, 95)">
+      <!-- Body -->
+      <path d="M 0,50 L 0,25 C 0,12 12,0 25,0 C 38,0 50,12 50,25 L 50,50 Z" fill="#2E4057"/>
+      <!-- Head -->
+      <circle cx="25" cy="-12" r="12" fill="#E5C158"/>
+      <!-- Arm receiving -->
+      <path d="M -5,22 L 15,22" stroke="#E5C158" stroke-width="8" stroke-linecap="round"/>
+    </g>
+
+    <!-- Central Object of Handover: Blueprint / Project File (Engineering context) -->
+    <g transform="translate(97, 107)">
+      <rect x="0" y="0" width="46" height="34" rx="3" fill="#D08770"/>
+      <!-- Blueprint details -->
+      <line x1="8" y1="10" x2="38" y2="10" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+      <line x1="8" y1="18" x2="28" y2="18" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="35" cy="24" r="3" fill="#EBCB8B"/>
+    </g>
+
+    <!-- Smooth Transition / Handover Motion Arc -->
+    <path d="M 98,90 Q 120,70 142,90" fill="none" stroke="#E5C158" stroke-width="3" stroke-dasharray="4,4" stroke-linecap="round"/>
+    <!-- Arrow indicating continuation/succession -->
+    <path d="M 137,84 L 143,90 L 137,96" fill="none" stroke="#E5C158" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

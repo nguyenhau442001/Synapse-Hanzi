@@ -1,0 +1,65 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Deep ocean ambient glow & subtle water strata -->
+  <path d="M0 160 Q60 145, 120 165 T240 155 L240 240 L0 240 Z" fill="#14171E"/>
+  <path d="M0 190 Q80 205, 160 185 T240 195 L240 240 L0 240 Z" fill="#0F1218"/>
+
+  <!-- Bioluminescent / Strange Ocean Creatures (representing 奇特 - unique/peculiar marine life) -->
+  
+  <!-- Bizarre Jellyfish / Cosmic Creature (Left) -->
+  <g transform="translate(65, 110)">
+    <!-- Bell -->
+    <path d="M -22 -5 C -22 -22, 22 -22, 22 -5 C 22 5, 12 12, 0 15 C -12 12, -22 5, -22 -5 Z" fill="#FF5C8A" opacity="0.9"/>
+    <path d="M -15 -10 C -15 -18, 15 -18, 15 -10 C 15 -4, 8 -2, 0 -1 C -8 -2, -15 -4, -15 -10 Z" fill="#FF8DA8" opacity="0.7"/>
+    <!-- Glowing Spots -->
+    <circle cx="-7" cy="-5" r="2" fill="#FFFFFF" opacity="0.8"/>
+    <circle cx="7" cy="-5" r="2" fill="#FFFFFF" opacity="0.8"/>
+    <circle cx="0" cy="3" r="1.5" fill="#FFFFFF" opacity="0.8"/>
+    <!-- Wavy Tentacles -->
+    <path d="M-10 15 Q-15 35, -5 55 T-12 75" fill="none" stroke="#FF5C8A" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M-3 15 Q3 40, -3 60 T3 85" fill="none" stroke="#FF8DA8" stroke-width="2" stroke-linecap="round"/>
+    <path d="M10 15 Q18 35, 8 55 T15 75" fill="none" stroke="#FF5C8A" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Peculiar Deep-Sea Angler-like Geometric Organism (Center-Right) -->
+  <g transform="translate(160, 105)">
+    <!-- Main Body - asymmetric & unusual -->
+    <ellipse cx="0" cy="5" rx="32" ry="24" fill="#00E5FF" opacity="0.85"/>
+    <ellipse cx="-5" cy="5" rx="24" ry="18" fill="#1A1D24" opacity="0.2"/>
+    
+    <!-- Unusual Pattern / Stripes -->
+    <path d="M-15 -15 L-5 25" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+    <path d="M5 -18 L15 22" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Glowing Antenna & Lure -->
+    <path d="M-15 -17 Q-25 -40, -10 -48" fill="none" stroke="#FFD700" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="-10" cy="-48" r="7" fill="#FFD700"/>
+    <circle cx="-10" cy="-48" r="3" fill="#FFFFFF"/>
+    <path d="M-17 -48 L-3 -48" stroke="#FFD700" stroke-width="2" opacity="0.6"/>
+
+    <!-- Eye (Distinctive) -->
+    <circle cx="12" cy="-2" r="7" fill="#FFFFFF"/>
+    <circle cx="14" cy="-2" r="3.5" fill="#1A1D24"/>
+    <circle cx="15.5" cy="-3.5" r="1.5" fill="#FFFFFF"/>
+
+    <!-- Fins (Unconventional shape) -->
+    <path d="M-30 5 L-42 -5 L-35 15 Z" fill="#00B8D4"/>
+    <path d="M0 29 L-8 42 L8 38 Z" fill="#00B8D4"/>
+  </g>
+
+  <!-- Tiny Curious Floating Orbs / Bubbles (Adding depth and wonder) -->
+  <circle cx="110" cy="65" r="4" fill="#FFD700" opacity="0.8"/>
+  <circle cx="118" cy="55" r="2" fill="#FFD700" opacity="0.5"/>
+  <circle cx="95" cy="75" r="2.5" fill="#00E5FF" opacity="0.6"/>
+  <circle cx="45" cy="165" r="3" fill="#FF5C8A" opacity="0.7"/>
+  <circle cx="195" cy="170" r="3.5" fill="#00E5FF" opacity="0.8"/>
+  
+  <!-- Ambient Seafloor Flora / Coral silhouettes (Stylized & Modern) -->
+  <path d="M 20 240 L 20 200 Q 25 190, 35 195 T 40 240 Z" fill="#222834"/>
+  <path d="M 35 240 L 35 185 Q 42 170, 50 180 T 55 240 Z" fill="#2A3140"/>
+  <path d="M 205 240 L 205 195 Q 212 180, 220 190 T 225 240 Z" fill="#222834"/>
+
+  <!-- Subtle Focus Rings around the central exotic creature -->
+  <circle cx="160" cy="105" r="44" fill="none" stroke="#00E5FF" stroke-width="1" stroke-dasharray="6 6" opacity="0.3"/>
+</svg>

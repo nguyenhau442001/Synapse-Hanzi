@@ -1,0 +1,61 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Illustration for "过剩" (Surplus/Overproduction) -->
+  <!-- A modern industrial warehouse/storage container overflowing with stacked boxes/goods -->
+  
+  <g transform="translate(0, 0)">
+    <!-- Storage Shelf / Warehouse Frame (Slate/Blue-Grey structure) -->
+    <!-- Vertical supports -->
+    <rect x="52" y="70" width="8" height="130" rx="2" fill="#2E3440" />
+    <rect x="180" y="70" width="8" height="130" rx="2" fill="#2E3440" />
+    
+    <!-- Shelf Levels -->
+    <!-- Bottom Shelf -->
+    <rect x="40" y="190" width="160" height="8" rx="2" fill="#3B4252" />
+    <!-- Middle Shelf -->
+    <rect x="40" y="140" width="160" height="8" rx="2" fill="#3B4252" />
+    <!-- Top Shelf -->
+    <rect x="40" y="90" width="160" height="8" rx="2" fill="#3B4252" />
+
+    <!-- Stored Goods (Crates & Containers) in vibrant contrasting colors (Orange/Gold focus) -->
+    <!-- Bottom shelf goods (Stacked neatly) -->
+    <rect x="55" y="155" width="35" height="35" rx="4" fill="#4C566A" />
+    <rect x="95" y="155" width="35" height="35" rx="4" fill="#D08770" />
+    <rect x="135" y="155" width="35" height="35" rx="4" fill="#4C566A" />
+
+    <!-- Middle shelf goods -->
+    <rect x="55" y="105" width="35" height="35" rx="4" fill="#D08770" />
+    <rect x="95" y="105" width="35" height="35" rx="4" fill="#4C566A" />
+    <rect x="135" y="105" width="35" height="35" rx="4" fill="#D08770" />
+
+    <!-- OVERFLOW / EXCESS (过剩) - Spilling out dramatically at the top and sides -->
+    <!-- Unstable stack on top shelf, overflowing upwards and spilling off -->
+    <rect x="60" y="50" width="35" height="35" rx="4" fill="#EBCB8B" />
+    <rect x="100" y="45" width="35" height="40" rx="4" fill="#D08770" />
+    
+    <!-- Falling / Overflowing boxes (Tipping over to emphasize excess and surplus) -->
+    <g transform="rotate(18 165 75)">
+      <rect x="145" y="55" width="35" height="35" rx="4" fill="#EBCB8B" />
+    </g>
+
+    <g transform="rotate(-25 80 40)">
+      <rect x="60" y="20" width="32" height="32" rx="4" fill="#D08770" />
+    </g>
+
+    <!-- Floor overflow items (Too much production, spilling completely out) -->
+    <rect x="105" y="202" width="38" height="28" rx="4" fill="#EBCB8B" />
+    <g transform="rotate(12 155 210)">
+      <rect x="145" y="198" width="32" height="32" rx="4" fill="#D08770" />
+    </g>
+    <g transform="rotate(-15 45 210)">
+      <rect x="30" y="200" width="30" height="30" rx="4" fill="#EBCB8B" />
+    </g>
+
+    <!-- Upward directional indicator lines (Subtle, professional accent showing accumulation/excess) -->
+    <path d="M 120 25 L 120 10" stroke="#EBCB8B" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 4" opacity="0.8"/>
+    <path d="M 105 30 L 105 18" stroke="#EBCB8B" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 4" opacity="0.6"/>
+    <path d="M 135 30 L 135 18" stroke="#EBCB8B" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 4" opacity="0.6"/>
+  </g>
+</svg>

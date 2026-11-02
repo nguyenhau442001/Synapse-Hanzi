@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Central Concept: A stylized, modern building entrance (The Park/Organization) -->
+  <path d="M60 180 L180 180 L180 100 L120 70 L60 100 Z" fill="#2D343E" stroke="#4A5568" stroke-width="2"/>
+  <rect x="100" y="130" width="40" height="50" fill="#1A1D24" stroke="#FFB84D" stroke-width="2"/>
+  
+  <!-- The "Absorption" action: Stylized figures (Talent) moving towards the center -->
+  <!-- Figure 1 -->
+  <circle cx="40" cy="140" r="8" fill="#FFB84D"/>
+  <path d="M40 148 L40 170 M40 155 L30 165 M40 155 L50 165" stroke="#FFB84D" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Figure 2 -->
+  <circle cx="200" cy="140" r="8" fill="#FFB84D"/>
+  <path d="M200 148 L200 170 M200 155 L190 165 M200 155 L210 165" stroke="#FFB84D" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Directional flow lines indicating "Absorption" (Inward movement) -->
+  <path d="M55 140 L85 140" stroke="#FFB84D" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M185 140 L155 140" stroke="#FFB84D" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Arrowheads for flow -->
+  <path d="M80 135 L85 140 L80 145" fill="none" stroke="#FFB84D" stroke-width="2"/>
+  <path d="M160 135 L155 140 L160 145" fill="none" stroke="#FFB84D" stroke-width="2"/>
+</svg>

@@ -1,0 +1,39 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 112)">
+    <!-- Stage / Podium base representing importance and prominence -->
+    <ellipse cx="0" cy="72" rx="70" ry="16" fill="#252A34"/>
+    <path d="M-55 52 L55 52 L45 72 L-45 72 Z" fill="#2E3646"/>
+    <path d="M-70 52 L70 52 L60 56 L-60 56 Z" fill="#3A4454"/>
+    
+    <!-- Central figure: "Heavyweight" / "Tầm cỡ trọng lượng" leader on stage -->
+    <!-- Head and shoulders silhouette with professional tech-leader styling -->
+    <circle cx="0" cy="-10" r="22" fill="#3A4454"/>
+    <path d="M-36 52 C-36 24 -18 16 0 16 C18 16 36 24 36 52 Z" fill="#4F5D73"/>
+    
+    <!-- Lapels / Suit Jacket -->
+    <path d="M-14 26 L-24 52 L0 42 L24 52 L14 26 Z" fill="#2E3646"/>
+    <path d="M-14 26 L0 42 L14 26 L0 18 Z" fill="#64748B"/>
+
+    <!-- Subtle golden focus aura behind the leader (representing high-status / 重量级) -->
+    <circle cx="0" cy="10" r="48" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-dasharray="8 6" opacity="0.6"/>
+    
+    <!-- Glowing spotlight accent from above -->
+    <path d="M-28 -72 L28 -72 L64 52 L-64 52 Z" fill="url(#spotlight)" opacity="0.15"/>
+
+    <!-- Microphones in front, indicating keynote presentation -->
+    <rect x="-4" y="24" width="2" height="28" fill="#94A3B8"/>
+    <circle cx="-3" cy="23" r="4" fill="#F59E0B"/>
+    
+    <rect x="18" y="28" width="2" height="24" fill="#94A3B8"/>
+    <circle cx="19" cy="27" r="3.5" fill="#F59E0B"/>
+  </g>
+
+  <defs>
+    <linearGradient id="spotlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>

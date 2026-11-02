@@ -1,0 +1,92 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle glowing background effect for magic/auspicious winter feel -->
+  <circle cx="120" cy="115" r="70" fill="#243044" opacity="0.6"/>
+  
+  <!-- Stylized ground/crop mounds underneath covered in snow, signifying the harvest (丰年) -->
+  <path d="M40 185 Q120 165 200 185 L200 200 L40 200 Z" fill="#2A3950"/>
+  <path d="M70 195 Q120 180 170 195 L200 200 L40 200 Z" fill="#3B4D6C"/>
+  
+  <!-- Snow layer on ground -->
+  <path d="M38 185 C60 180 90 187 120 183 C150 179 180 186 202 185 C202 185 202 188 202 190 C180 191 150 184 120 188 C90 192 60 185 38 190 C38 188 38 185 38 185 Z" fill="#E2EDF8"/>
+
+  <!-- Golden/Orange Wheat Stalks emerging/buried under the snow (Bountiful Harvest symbol) -->
+  <g transform="translate(0, 5)">
+    <!-- Left Stalk -->
+    <path d="M95 185 Q90 150 80 130" fill="none" stroke="#E5A93B" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="77" cy="128" rx="4" ry="7" fill="#F4C458" transform="rotate(-30 77 128)"/>
+    <ellipse cx="85" cy="138" rx="4" ry="7" fill="#F4C458" transform="rotate(20 85 138)"/>
+    <ellipse cx="82" cy="153" rx="4" ry="7" fill="#F4C458" transform="rotate(-20 82 153)"/>
+    
+    <!-- Right Stalk -->
+    <path d="M145 185 Q150 150 160 130" fill="none" stroke="#E5A93B" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="163" cy="128" rx="4" ry="7" fill="#F4C458" transform="rotate(30 163 128)"/>
+    <ellipse cx="155" cy="138" rx="4" ry="7" fill="#F4C458" transform="rotate(-20 155 138)"/>
+    <ellipse cx="158" cy="153" rx="4" ry="7" fill="#F4C458" transform="rotate(20 158 153)"/>
+    
+    <!-- Center Stalk -->
+    <path d="M120 188 Q120 155 120 125" fill="none" stroke="#E5A93B" stroke-width="3.5" stroke-linecap="round"/>
+    <ellipse cx="120" cy="122" rx="4.5" ry="8" fill="#F4C458"/>
+    <ellipse cx="113" cy="134" rx="4" ry="7" fill="#F4C458" transform="rotate(-25 113 134)"/>
+    <ellipse cx="127" cy="134" rx="4" ry="7" fill="#F4C458" transform="rotate(25 127 134)"/>
+    <ellipse cx="113" cy="150" rx="4" ry="7" fill="#F4C458" transform="rotate(-25 113 150)"/>
+    <ellipse cx="127" cy="150" rx="4" ry="7" fill="#F4C458" transform="rotate(25 127 150)"/>
+  </g>
+
+  <!-- Large Central Detailed Snowflake (representing "瑞雪" - auspicious snow) -->
+  <g transform="translate(120, 95)" stroke="#60A5FA" stroke-linecap="round" stroke-width="4">
+    <!-- Vertical axis -->
+    <line x1="0" y1="-55" x2="0" y2="55" stroke="#93C5FD"/>
+    <!-- Diagonal axis 1 -->
+    <line x1="-47.6" y1="-27.5" x2="47.6" y2="27.5" stroke="#93C5FD"/>
+    <!-- Diagonal axis 2 -->
+    <line x1="-47.6" y1="27.5" x2="47.6" y2="-27.5" stroke="#93C5FD"/>
+    
+    <!-- Center glowing core -->
+    <circle cx="0" cy="0" r="10" fill="#1A1D24" stroke="#60A5FA" stroke-width="3"/>
+    <circle cx="0" cy="0" r="4" fill="#F4C458"/>
+
+    <!-- Branch details - Top -->
+    <path d="M0 -38 L-12 -50 M0 -38 L12 -50" stroke-width="3"/>
+    <path d="M0 -22 L-9 -31 M0 -22 L9 -31" stroke-width="3"/>
+
+    <!-- Branch details - Bottom -->
+    <path d="M0 38 L-12 50 M0 38 L12 50" stroke-width="3"/>
+    <path d="M0 22 L-9 31 M0 22 L9 31" stroke-width="3"/>
+
+    <!-- Branch details - Top Left -->
+    <path d="M-32.9 -19 L-43 -30.5 M-32.9 -19 L-47 -20" stroke-width="3"/>
+    <path d="M-19 -11 L-27 -20 M-19 -11 L-29 -9" stroke-width="3"/>
+
+    <!-- Branch details - Top Right -->
+    <path d="M32.9 -19 L43 -30.5 M32.9 -19 L47 -20" stroke-width="3"/>
+    <path d="M19 -11 L27 -20 M19 -11 L29 -9" stroke-width="3"/>
+
+    <!-- Branch details - Bottom Left -->
+    <path d="M-32.9 19 L-43 30.5 M-32.9 19 L-47 20" stroke-width="3"/>
+    <path d="M-19 11 L-27 20 M-19 11 L-29 9" stroke-width="3"/>
+
+    <!-- Branch details - Bottom Right -->
+    <path d="M32.9 19 L43 30.5 M32.9 19 L47 20" stroke-width="3"/>
+    <path d="M19 11 L27 20 M19 11 L29 9" stroke-width="3"/>
+  </g>
+
+  <!-- Floating smaller auspicious snow crystals / sparkles -->
+  <g fill="#E2EDF8">
+    <circle cx="65" cy="70" r="3" opacity="0.9"/>
+    <circle cx="180" cy="75" r="2.5" opacity="0.8"/>
+    <circle cx="50" cy="130" r="2" opacity="0.7"/>
+    <circle cx="195" cy="140" r="3" opacity="0.9"/>
+    <circle cx="95" cy="45" r="2" opacity="0.8"/>
+    <circle cx="150" cy="40" r="3.5" opacity="0.9"/>
+  </g>
+  
+  <!-- Warm golden sparkles (symbolizing the auspicious "瑞" and future harvest) -->
+  <g fill="#F4C458">
+    <path d="M80 58 L82 64 L88 66 L82 68 L80 74 L78 68 L72 66 L78 64 Z" transform="scale(0.7) translate(40, 10)" opacity="0.9"/>
+    <path d="M80 58 L82 64 L88 66 L82 68 L80 74 L78 68 L72 66 L78 64 Z" transform="scale(0.5) translate(280, 70)" opacity="0.8"/>
+    <path d="M80 58 L82 64 L88 66 L82 68 L80 74 L78 68 L72 66 L78 64 Z" transform="scale(0.6) translate(140, 170)" opacity="0.9"/>
+  </g>
+</svg>

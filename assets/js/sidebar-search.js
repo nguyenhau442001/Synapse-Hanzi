@@ -304,7 +304,12 @@ function initMobileDockDialog() {
   const dialog = document.getElementById('mobileDockDialog');
   const closeBtn = document.getElementById('mobileDockClose');
   if (!trigger || !dialog || !closeBtn) return;
-  trigger.addEventListener('click', () => {
+  trigger.addEventListener('click', (e) => {
+    if (typeof openQuickSearchModal === 'function') {
+      e.preventDefault();
+      openQuickSearchModal();
+      return;
+    }
     dialog.showModal();
     const input = document.getElementById('sidebarSearchInput');
     if (input) {

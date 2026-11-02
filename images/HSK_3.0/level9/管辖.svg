@@ -1,0 +1,55 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Conceptual Illustration: "管辖" (Jurisdiction / Territory under control) -->
+  <g transform="translate(0, 0)">
+    <!-- Deep Sea / Maritime Base Layer -->
+    <path d="M 30,170 Q 120,150 210,170 L 210,210 Q 120,220 30,210 Z" fill="#16202B"/>
+    
+    <!-- Ocean Waves (Curved Authority Boundary Zone) -->
+    <path d="M 40,185 Q 80,175 120,185 T 200,185" fill="none" stroke="#2B4365" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 50,198 Q 90,188 130,198 T 190,198" fill="none" stroke="#2B4365" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Island (Territory Representing Jurisdiction) -->
+    <!-- Island Base / Cliff -->
+    <path d="M 140,165 L 195,165 L 180,140 L 155,140 Z" fill="#2E3B4E"/>
+    <!-- Land Top with Greenery -->
+    <path d="M 145,140 Q 167,130 190,140 L 180,140 L 155,140 Z" fill="#2E7D62"/>
+    <!-- Palm Tree / Beacon on Island -->
+    <rect x="165" y="115" width="4" height="25" fill="#5A4A32"/>
+    <circle cx="167" cy="113" r="10" fill="#2E7D62"/>
+
+    <!-- Radar / Jurisdiction Dome (Semantic representation of management & control over territory) -->
+    <!-- Scanning Sector / Area of Control (Semi-transparent overlay) -->
+    <path d="M 90,175 L 45,95 A 110,110 0 0,1 195,95 Z" fill="#3B82F6" opacity="0.12"/>
+    
+    <!-- Radar Arc Lines (Boundaries) -->
+    <path d="M 60,115 A 80,80 0 0,1 180,115" fill="none" stroke="#60A5FA" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6"/>
+    <path d="M 75,135 A 60,60 0 0,1 165,135" fill="none" stroke="#60A5FA" stroke-width="1.5" opacity="0.8"/>
+
+    <!-- Control Vessel (Maritime Law Enforcement / Patrol ship representing active jurisdiction) -->
+    <!-- Hull -->
+    <path d="M 70,162 L 125,162 L 115,178 L 78,178 Z" fill="#E2E8F0"/>
+    <!-- Hull stripe (Accent Color) -->
+    <path d="M 73,166 L 122,166 L 120,170 L 75,170 Z" fill="#F59E0B"/>
+    <!-- Superstructure / Cabin -->
+    <path d="M 85,148 L 108,148 L 112,162 L 82,162 Z" fill="#CBD5E1"/>
+    <!-- Mast / Radar equipment on ship -->
+    <line x1="95" y1="148" x2="95" y2="136" stroke="#64748B" stroke-width="2"/>
+    <line x1="91" y1="140" x2="99" y2="140" stroke="#64748B" stroke-width="2"/>
+
+    <!-- Active Target / Focus Reticle (Denoting authority/jurisdiction over the maritime area) -->
+    <!-- Reticle brackets around island -->
+    <path d="M 135,115 L 135,108 L 142,108" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 195,115 L 195,108 L 188,108" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 135,160 L 135,167 L 142,167" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 195,160 L 195,167 L 188,167" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Central Control Tower / Command Symbol (Minimal structural representation at the bottom focus) -->
+    <circle cx="90" cy="170" r="2" fill="#F59E0B"/>
+    <path d="M 90,136 L 90,126" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="90" cy="124" r="3" fill="#F59E0B"/>
+
+  </g>
+</svg>

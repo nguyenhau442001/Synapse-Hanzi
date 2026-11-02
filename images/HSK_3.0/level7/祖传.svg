@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Glowing aura representing ancestry / heritage -->
+    <circle cx="120" cy="115" r="55" fill="#E6A15C" opacity="0.12"/>
+    <circle cx="120" cy="115" r="42" fill="#E6A15C" opacity="0.18"/>
+
+    <!-- Traditional Chinese Medicine Jar / Herb Container -->
+    <!-- Base shadow -->
+    <ellipse cx="120" cy="180" rx="30" ry="8" fill="#111318"/>
+    
+    <!-- Jar Body -->
+    <path d="M 90 120 C 85 150 90 170 120 175 C 150 170 155 150 150 120 Z" fill="#2E3544"/>
+    <path d="M 92 120 C 88 148 93 167 120 172 C 147 167 152 148 148 120 Z" fill="#363E52"/>
+    
+    <!-- Highlight on jar -->
+    <path d="M 98 130 C 95 145 98 160 106 168 C 102 155 101 140 104 130 Z" fill="#434D63" opacity="0.6"/>
+
+    <!-- Jar Neck -->
+    <rect x="104" y="98" width="32" height="22" rx="3" fill="#2E3544"/>
+    <rect x="106" y="98" width="28" height="22" rx="2" fill="#363E52"/>
+
+    <!-- Jar Lid -->
+    <ellipse cx="120" cy="94" rx="20" ry="6" fill="#E6A15C"/>
+    <path d="M 116 82 L 124 82 L 126 88 L 114 88 Z" fill="#C27D38"/>
+    <circle cx="120" cy="80" r="5" fill="#E6A15C"/>
+
+    <!-- Heritage seal/badge on jar (representing ancestral recipe) -->
+    <rect x="106" y="132" width="28" height="30" rx="4" fill="#8B2626"/>
+    <rect x="110" y="136" width="20" height="22" rx="2" fill="none" stroke="#E6A15C" stroke-width="1.5"/>
+    <circle cx="120" cy="147" r="5" fill="#E6A15C"/>
+
+    <!-- Flowing golden lineage particles (representing generations passing down) -->
+    <path d="M 60 70 Q 90 50 120 75 T 180 60" fill="none" stroke="#E6A15C" stroke-width="2" stroke-dasharray="4 4" opacity="0.6"/>
+    <path d="M 50 95 Q 85 80 120 100 T 190 90" fill="none" stroke="#E6A15C" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.4"/>
+
+    <!-- Golden ancestral sparkles -->
+    <circle cx="75" cy="65" r="2.5" fill="#E6A15C"/>
+    <circle cx="165" cy="75" r="2" fill="#E6A15C"/>
+    <circle cx="55" cy="115" r="1.5" fill="#E6A15C"/>
+    <circle cx="185" cy="110" r="2.5" fill="#E6A15C"/>
+
+    <!-- Connecting glowing beam from top -->
+    <polygon points="120,25 105,75 135,75" fill="url(#goldGrad)" opacity="0.15"/>
+    <defs>
+      <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#E6A15C" stop-opacity="1"/>
+        <stop offset="100%" stop-color="#E6A15C" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+  </g>
+</svg>

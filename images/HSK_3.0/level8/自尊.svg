@@ -1,0 +1,36 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative subtle elements -->
+  <circle cx="120" cy="120" r="85" fill="none" stroke="#2A2F3D" stroke-width="1.5" stroke-dasharray="4 6"/>
+  <circle cx="120" cy="120" r="70" fill="none" stroke="#2A2F3D" stroke-width="1"/>
+
+  <!-- Central Physical Object: A stately, upright golden crown/shield hybrid representing self-respect, dignity, and inner worth (自尊) -->
+  <g transform="translate(120, 115)">
+    <!-- Shield/Pillar Base -->
+    <path d="M-38 -50 C-38 -50, -45 -10, 0 55 C45 -10, 38 -50, 38 -50 Z" fill="#252A37" stroke="#3A4255" stroke-width="2"/>
+    
+    <!-- Inner Polished Shield -->
+    <path d="M-30 -44 C-30 -44, -36 -8, 0 46 C36 -8, 30 -44, 30 -44 Z" fill="#1F2430"/>
+
+    <!-- Glowing Core / Inner Worth Representation (Golden Upright Pillar of Dignity) -->
+    <path d="M-14 -35 C-14 -35, -20 -5, 0 32 C20 -5, 14 -35, 14 -35 Z" fill="url(#goldGrad)" opacity="0.9"/>
+
+    <!-- Stylized Crown Points at Top -->
+    <path d="M-38 -50 L-22 -35 L0 -55 L22 -35 L38 -50 L25 -25 L-25 -25 Z" fill="url(#goldGrad)"/>
+
+    <!-- Floating Spark / Focus Accent -->
+    <circle cx="0" cy="-15" r="4" fill="#FFFFFF"/>
+    <path d="M0 -25 L0 -5 M0 5 L0 25 M-10 0 L-25 0 M10 0 L25 0" stroke="#F5A623" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  </g>
+
+  <!-- Ground reflection / pedestal glow -->
+  <ellipse cx="120" cy="190" rx="40" ry="6" fill="#F5A623" opacity="0.15"/>
+
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD166"/>
+      <stop offset="100%" stop-color="#F5A623"/>
+    </linearGradient>
+  </defs>
+</svg>

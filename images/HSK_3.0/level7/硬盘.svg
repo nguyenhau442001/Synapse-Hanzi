@@ -1,0 +1,39 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle glowing background effect to emphasize tech object -->
+  <circle cx="120" cy="120" r="70" fill="#2563EB" opacity="0.1" filter="blur(20px)"/>
+
+  <!-- External Portable Hard Drive (硬盘) Illustration -->
+  <g transform="translate(0, 0)">
+    <!-- USB Cable / Port connection element -->
+    <path d="M100 68 L100 55 C100 50, 105 46, 110 46 L130 46 C135 46, 140 50, 140 55 L140 68" fill="none" stroke="#64748B" stroke-width="6" stroke-linecap="round"/>
+    <rect x="112" y="42" width="16" height="6" rx="2" fill="#94A3B8"/>
+
+    <!-- Main Outer Casing (Sleek dark metallic blue body) -->
+    <rect x="68" y="68" width="104" height="124" rx="14" fill="#0F172A" stroke="#334155" stroke-width="3"/>
+    
+    <!-- Inner Brushed Plate Insert -->
+    <rect x="78" y="78" width="84" height="104" rx="8" fill="#1E293B"/>
+
+    <!-- Accent branding line / decorative technical notch -->
+    <line x1="92" y1="92" x2="148" y2="92" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Status Indicator LED (Glowing Orange/Gold for focus) -->
+    <circle cx="92" cy="112" r="4" fill="#F59E0B"/>
+    <circle cx="92" cy="112" r="7" fill="#F59E0B" opacity="0.3"/>
+
+    <!-- Stylized Internal Data Disk/Platter Graphic Window -->
+    <circle cx="120" cy="146" r="28" fill="#0F172A" stroke="#334155" stroke-width="2"/>
+    <circle cx="120" cy="146" r="18" fill="none" stroke="#3B82F6" stroke-width="2" stroke-dasharray="6 4" opacity="0.8"/>
+    <circle cx="120" cy="146" r="8" fill="#3B82F6" opacity="0.6"/>
+    
+    <!-- Read/Write Head arm indicator -->
+    <path d="M136 130 L120 146" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="136" cy="130" r="3" fill="#64748B"/>
+
+    <!-- Abstract data flow lines etched on surface -->
+    <line x1="104" y1="184" x2="136" y2="184" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

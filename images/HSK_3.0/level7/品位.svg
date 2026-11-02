@@ -1,0 +1,57 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative wall and floor for interior context -->
+  <path d="M30 180 L210 180" stroke="#2A2E39" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Minimalist Wall Art Frame representing high aesthetic taste (gu thẩm mỹ / nghệ thuật) -->
+  <g transform="translate(0, 0)">
+    <!-- Outer thin gold frame -->
+    <rect x="90" y="45" width="60" height="75" rx="2" fill="none" stroke="#D4AF37" stroke-width="1.5"/>
+    <!-- Inner artwork background -->
+    <rect x="93" y="48" width="54" height="69" fill="#13151A"/>
+    <!-- Abstract refined art composition inside (representing taste & elegance) -->
+    <circle cx="120" cy="73" r="16" fill="none" stroke="#E5C158" stroke-width="1.5" opacity="0.8"/>
+    <path d="M105 92 Q120 70 135 92" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="120" cy="85" r="3" fill="#FB7185"/>
+  </g>
+
+  <!-- Sleek Designer Lounge Chair (representing interior design & lifestyle taste) -->
+  <g transform="translate(0, 0)">
+    <!-- Chair Legs (thin brass/gold modern style) -->
+    <path d="M85 165 L75 185" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M155 165 L165 185" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M100 168 L95 183" stroke="#9A7B2C" stroke-width="2" stroke-linecap="round"/>
+    <path d="M140 168 L145 183" stroke="#9A7B2C" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Chair Seat Cushion -->
+    <path d="M75 145 C75 140, 165 140, 165 145 L160 165 C160 168, 80 168, 80 165 Z" fill="#2563EB"/>
+    <!-- Seat Cushion Highlight -->
+    <path d="M80 148 C100 146, 140 146, 160 148" fill="none" stroke="#60A5FA" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Chair Backrest (curved, elegant contemporary silhouette) -->
+    <path d="M82 142 C70 130, 72 95, 95 90 C105 88, 135 88, 145 90 C168 95, 170 130, 158 142 Z" fill="#1E40AF"/>
+    <!-- Backrest Inner Tufting/Seam for refined texture -->
+    <path d="M120 95 L120 138" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- Side Accent Table with a sophisticated ceramic vase -->
+  <g transform="translate(0, 0)">
+    <!-- Table Leg -->
+    <path d="M45 155 L45 180" stroke="#94A3B8" stroke-width="2"/>
+    <!-- Table Top -->
+    <ellipse cx="45" cy="155" rx="18" ry="5" fill="#334155" stroke="#64748B" stroke-width="1"/>
+    
+    <!-- Elegant Ceramic Vase -->
+    <path d="M42 142 C38 135, 40 125, 45 120 C50 125, 52 135, 48 142 Z" fill="#E2E8F0"/>
+    <!-- Vase neck accent -->
+    <path d="M43.5 123 L46.5 123" stroke="#64748B" stroke-width="1"/>
+    <!-- Single minimalist branch/stem inside vase (representing refined taste) -->
+    <path d="M45 120 C45 110, 48 105, 53 100" fill="none" stroke="#34D399" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="53" cy="99" r="2.5" fill="#34D399"/>
+  </g>
+
+  <!-- Ambient Golden Glow / Focal Point representing "Gu thẩm mỹ / Đẳng cấp" -->
+  <circle cx="120" cy="125" r="75" fill="none" stroke="#D4AF37" stroke-width="0.5" opacity="0.2"/>
+</svg>

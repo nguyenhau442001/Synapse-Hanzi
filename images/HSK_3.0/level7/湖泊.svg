@@ -1,0 +1,36 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Distant snow-capped mountains (Qinghai-Tibet plateau context) -->
+  <path d="M 30,120 L 70,75 L 105,115 L 145,65 L 195,120 Z" fill="#2D3748" opacity="0.7"/>
+  <path d="M 70,75 L 88,97 L 78,102 L 70,90 Z" fill="#E2E8F0"/>
+  <path d="M 145,65 L 165,90 L 155,96 L 145,82 L 132,98 Z" fill="#E2E8F0"/>
+  
+  <!-- Meltwater streams flowing down -->
+  <path d="M 78,102 Q 82,112 85,125" fill="none" stroke="#63B3ED" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <path d="M 145,82 Q 138,100 130,123" fill="none" stroke="#63B3ED" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- High-altitude Lake (湖泊) - central physical object -->
+  <ellipse cx="120" cy="150" rx="85" ry="35" fill="#3182CE"/>
+  <ellipse cx="120" cy="150" rx="78" ry="30" fill="#4299E1"/>
+  
+  <!-- Crystal clear water inner shimmer -->
+  <ellipse cx="110" cy="147" rx="55" ry="18" fill="#63B3ED" opacity="0.4"/>
+  
+  <!-- Mountain reflection in the lake -->
+  <path d="M 75,150 L 90,135 L 105,150 Z" fill="#2D3748" opacity="0.25"/>
+  <path d="M 130,150 L 148,130 L 165,150 Z" fill="#2D3748" opacity="0.25"/>
+
+  <!-- Water ripple details -->
+  <path d="M 85,160 Q 95,156 105,160" fill="none" stroke="#EBF8FF" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 140,140 Q 150,136 160,140" fill="none" stroke="#EBF8FF" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 100,145 Q 112,142 125,145" fill="none" stroke="#EBF8FF" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Scenic shoreline touches (rocky alpine accents) -->
+  <path d="M 35,145 C 35,145 42,138 48,142 C 54,146 50,155 40,155 Z" fill="#4A5568"/>
+  <path d="M 195,140 C 195,140 205,138 208,145 C 211,152 200,160 190,155 Z" fill="#4A5568"/>
+
+  <!-- Focus highlight (gold accent per guidelines) -->
+  <circle cx="155" cy="135" r="3" fill="#F6AD55" opacity="0.9"/>
+  <circle cx="85" cy="155" r="2" fill="#F6AD55" opacity="0.8"/>
+</svg>

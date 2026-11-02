@@ -1,0 +1,40 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Sky / background elements (dark slate subtle gradient feel) -->
+    <path d="M0 0h240v240H0z" fill="#1A1D24"/>
+    
+    <!-- Distant muted mountains -->
+    <path d="M20 160L80 100l50 35 60-50 30 75H20z" fill="#252A34"/>
+
+    <!-- Main Subject: Exposed, barren steep mountain slope (裸岩与黄土碎石) -->
+    <!-- Base mountain shape -->
+    <path d="M45 200L100 85l15 15 20-10 25 35 35 75H45z" fill="#2E3544"/>
+
+    <!-- Striated raw rock face (reddish-brown & grey barren rock) -->
+    <path d="M95 95l12 18-5 42 18 15-8 30H65l30-105z" fill="#D35400" opacity="0.85"/>
+    <path d="M125 110l20 30-10 40 15 20h-45l20-90z" fill="#E67E22" opacity="0.8"/>
+    <path d="M110 130l8 45-22 25h50l-12-30 4-40z" fill="#C0392B" opacity="0.9"/>
+
+    <!-- Yellowish soil / loose gravel patches (黄土碎石) -->
+    <path d="M55 175l25-15 15 25-35 15H55v-25z" fill="#D4AC0D" opacity="0.8"/>
+    <path d="M150 140l35 25-10 35H135l15-60z" fill="#F39C12" opacity="0.75"/>
+    <path d="M100 115l15 12-8 20-12-8 5-24z" fill="#B7950B" opacity="0.85"/>
+
+    <!-- Debris / scattered rocks (碎石细节) -->
+    <circle cx="85" cy="190" r="3" fill="#A04000"/>
+    <circle cx="115" cy="185" r="2.5" fill="#BA4A00"/>
+    <circle cx="130" cy="195" r="4" fill="#D4AC0D"/>
+    <circle cx="165" cy="170" r="3" fill="#CA6F1E"/>
+    <circle cx="70" cy="165" r="2" fill="#BA4A00"/>
+    <circle cx="145" cy="155" r="2.5" fill="#B7950B"/>
+
+    <!-- Ground / Foreground baseline -->
+    <path d="M20 200h200v8H20z" fill="#15181E"/>
+
+    <!-- Dramatic harsh lighting accent (highlighting the exposed nature) -->
+    <path d="M100 85l15 15-12 50-8-12 5-53z" fill="#F5B041" opacity="0.25"/>
+  </g>
+</svg>

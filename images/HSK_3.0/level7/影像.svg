@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Film Reel -->
+  <circle cx="120" cy="120" r="60" fill="#2D343E" stroke="#FFB84D" stroke-width="4"/>
+  <circle cx="120" cy="120" r="15" fill="#1A1D24"/>
+  
+  <!-- Film Sprocket Holes -->
+  <rect x="115" y="65" width="10" height="10" fill="#FFB84D"/>
+  <rect x="115" y="165" width="10" height="10" fill="#FFB84D"/>
+  <rect x="65" y="115" width="10" height="10" fill="#FFB84D"/>
+  <rect x="165" y="115" width="10" height="10" fill="#FFB84D"/>
+  
+  <!-- Film Strip Frame -->
+  <rect x="85" y="85" width="70" height="70" rx="8" fill="none" stroke="#FFB84D" stroke-width="4"/>
+  
+  <!-- Abstract Image representation inside frame -->
+  <path d="M95 145 L120 110 L135 125 L145 115 L155 145 Z" fill="#FFB84D" opacity="0.6"/>
+  <circle cx="135" cy="105" r="8" fill="#FFB84D" opacity="0.6"/>
+</svg>

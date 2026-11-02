@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle architectural heritage background arch implying the "百年名校" tradition -->
+  <path d="M70 120 V85 C70 65 87 48 107 48 H133 C153 48 170 65 170 85 V120" fill="none" stroke="#2A313C" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Ground line -->
+  <line x1="50" y1="185" x2="190" y2="185" stroke="#2A313C" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Elder/Mentor figure on the left (representing tradition/guidance) -->
+  <g transform="translate(0, 0)">
+    <!-- Body/Suit -->
+    <path d="M75 185 V145 C75 135 83 127 93 127 H105 C115 127 123 135 123 145 V185" fill="#2E3846"/>
+    <!-- Head -->
+    <circle cx="99" cy="108" r="14" fill="#E6EDF3"/>
+    <!-- Gentle encouraging pose (hand gesture) -->
+    <circle cx="112" cy="148" r="5" fill="#E6EDF3"/>
+  </g>
+
+  <!-- Younger generation figure / "子弟" in the center-right (representing the rising youth/descendants) -->
+  <g transform="translate(15, 0)">
+    <!-- Body/Jacket with accent color (gold/orange for bright future/focus) -->
+    <path d="M85 185 V138 C85 128 93 120 103 120 H117 C127 120 135 128 135 138 V185" fill="#F59E0B"/>
+    <!-- Head -->
+    <circle cx="110" cy="98" r="15" fill="#E6EDF3"/>
+    <!-- Hair -->
+    <path d="M96 95 C98 87 103 84 110 84 C118 84 122 87 124 95 Z" fill="#3D4A5C"/>
+    <!-- Forward-looking confident posture -->
+    <path d="M95 145 L115 135" stroke="#D97706" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Laurel/Growth motif representing nurturing and flourishing generations -->
+  <g transform="translate(110, 45)">
+    <path d="M10 65 Q 20 40 5 20" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+    <path d="M10 50 L 18 45" stroke="#10B981" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M8 35 L 2 30" stroke="#10B981" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="4" cy="18" r="4" fill="#10B981"/>
+  </g>
+
+  <!-- Additional decorative modern education/growth indicator nodes -->
+  <circle cx="65" cy="85" r="4" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="175" cy="70" r="5" fill="#10B981" opacity="0.8"/>
+  <circle cx="160" cy="120" r="3" fill="#60A5FA" opacity="0.8"/>
+</svg>

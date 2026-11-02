@@ -1,0 +1,33 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Representing "急躁" (Impatience/Hot-headedness) -->
+  <!-- The character is hunched, surrounded by chaotic, jagged motion lines, contrasting with a static, complex puzzle piece -->
+  
+  <!-- Complex Puzzle Piece (The "Problem") -->
+  <path d="M160 80h40v40h-20v10h-20v-50z" fill="#3D4451" stroke="#5D677A" stroke-width="2"/>
+  <path d="M180 120h20v20h-20v-20z" fill="#3D4451" stroke="#5D677A" stroke-width="2"/>
+  
+  <!-- The Impatient Person -->
+  <!-- Head -->
+  <circle cx="80" cy="120" r="20" fill="#FFB347"/>
+  <!-- Eyes (Wide, frantic) -->
+  <ellipse cx="72" cy="115" rx="3" ry="4" fill="#1A1D24"/>
+  <ellipse cx="88" cy="115" rx="3" ry="4" fill="#1A1D24"/>
+  <!-- Mouth (Agitated, open) -->
+  <path d="M75 130 Q80 135 85 130" stroke="#1A1D24" stroke-width="2" fill="none"/>
+  
+  <!-- Body (Leaning forward, tense) -->
+  <path d="M60 140 L100 140 L90 180 L70 180 Z" fill="#FFB347"/>
+  
+  <!-- Chaotic Motion Lines (Representing "急躁" - hot-headedness/haste) -->
+  <path d="M50 100 L30 80 M40 110 L20 110 M50 120 L30 140" stroke="#FF8C00" stroke-width="3" stroke-linecap="round"/>
+  <path d="M110 100 L130 80 M120 110 L140 110 M110 120 L130 140" stroke="#FF8C00" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Tense, clenched hands -->
+  <circle cx="65" cy="150" r="6" fill="#FFB347"/>
+  <circle cx="95" cy="150" r="6" fill="#FFB347"/>
+  
+  <!-- Sharp, jagged aura lines around the head to signify "heat" and "impatience" -->
+  <path d="M70 95 L75 85 L80 95 L85 85 L90 95" stroke="#FF4500" stroke-width="2" fill="none"/>
+</svg>

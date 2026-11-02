@@ -1,0 +1,50 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Desk/Table Background Layer -->
+  <path d="M40 180 L200 180 L210 205 L30 205 Z" fill="#2D323E"/>
+  <path d="M30 180 L210 180 L210 185 L30 185 Z" fill="#404656"/>
+
+  <!-- Center Judge Character (Main Focus) -->
+  <!-- Body/Suit -->
+  <path d="M100 135 L120 120 L140 135 L145 180 L95 180 Z" fill="#2563EB"/>
+  <path d="M120 125 L108 150 L132 150 Z" fill="#F3F4F6"/> <!-- Shirt -->
+  <path d="M116 142 L124 142 L122 158 L118 158 Z" fill="#EF4444"/> <!-- Tie -->
+  
+  <!-- Shoulders/Jacket -->
+  <path d="M85 180 L95 135 L110 130 L120 145 L130 130 L145 135 L155 180 Z" fill="#1E3A8A"/>
+
+  <!-- Neck & Head -->
+  <rect x="114" y="112" width="12" height="15" fill="#FBBF24"/>
+  <circle cx="120" cy="95" r="18" fill="#FBBF24"/>
+  <!-- Hair -->
+  <path d="M102 92 C102 80 110 75 120 75 C130 75 138 80 138 92 C138 96 135 90 120 88 C105 90 102 96 102 92 Z" fill="#1F2937"/>
+
+  <!-- Left Judge (Partial) -->
+  <path d="M50 180 L60 145 L80 155 L85 180 Z" fill="#1E3A8A"/>
+  <circle cx="70" cy="115" r="14" fill="#E5E7EB"/>
+  <path d="M60 115 C60 105 65 100 70 100 C75 100 80 105 80 115 Z" fill="#374151"/>
+
+  <!-- Right Judge (Partial) -->
+  <path d="M190 180 L180 145 L160 155 L155 180 Z" fill="#1E3A8A"/>
+  <circle cx="170" cy="115" r="14" fill="#E5E7EB"/>
+  <path d="M160 115 C160 105 165 100 170 100 C175 100 180 105 180 115 Z" fill="#374151"/>
+
+  <!-- Evaluation Paddle / Score Card held by center judge -->
+  <g transform="translate(120, 130)">
+    <!-- Paddle handle -->
+    <rect x="-3" y="10" width="6" height="25" rx="3" fill="#9CA3AF"/>
+    <!-- Paddle board -->
+    <rect x="-22" y="-18" width="44" height="30" rx="6" fill="#F9FAFB"/>
+    <rect x="-19" y="-15" width="38" height="24" rx="4" fill="#10B981"/>
+    <!-- Checkmark representing score/approval -->
+    <path d="M-8 -2 L-3 4 L9 -6" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- Microphone on Desk -->
+  <rect x="118" y="165" width="4" height="20" fill="#9CA3AF"/>
+  <circle cx="120" cy="163" r="5" fill="#4B5563"/>
+
+  <!-- Ambient/Accent Details: Gold Star Badge on Center Judge -->
+  <polygon points="107,142 110,148 116,149 111,153 113,159 107,156 102,159 103,153 99,149 104,148" fill="#F59E0B"/>
+</svg>

@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background landscape elements (stylized mountains/trees) -->
+  <path d="M 30 190 L 80 140 L 130 190 Z" fill="#222733"/>
+  <path d="M 110 190 L 170 120 L 220 190 Z" fill="#252B3B"/>
+  
+  <!-- Hunter Character (Stylized Flat Vector) -->
+  <!-- Body/Cloak -->
+  <path d="M 75 160 C 75 140, 85 125, 105 115 L 120 170 L 80 190 Z" fill="#2E4033"/>
+  <path d="M 85 115 L 110 115 L 115 150 L 90 150 Z" fill="#3B5343"/>
+  
+  <!-- Head & Hood -->
+  <path d="M 90 90 C 90 75, 100 65, 115 65 C 130 65, 140 75, 140 90 L 135 115 L 95 115 Z" fill="#2E4033"/>
+  <!-- Face shadow / visor -->
+  <path d="M 105 85 L 125 85 L 120 100 L 105 100 Z" fill="#1A1D24"/>
+  <!-- Focused eye glow -->
+  <circle cx="118" cy="92" r="2.5" fill="#FFB703"/>
+
+  <!-- Bow and Aiming Pose -->
+  <!-- Back arm -->
+  <path d="M 100 110 L 125 125 L 140 115" stroke="#3B5343" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- Compound/Recurve Bow (Amber/Gold Accent) -->
+  <path d="M 150 70 C 170 95, 170 145, 150 170" fill="none" stroke="#FFB703" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Bowstring -->
+  <line x1="150" y1="70" x2="135" y2="120" stroke="#8D99AE" stroke-width="1.5"/>
+  <line x1="135" y1="120" x2="150" y2="170" stroke="#8D99AE" stroke-width="1.5"/>
+  
+  <!-- Front Arm pulling string -->
+  <path d="M 115 120 L 135 120" stroke="#3B5343" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="135" cy="120" r="4" fill="#D8F3DC"/>
+
+  <!-- Arrow -->
+  <line x1="110" y1="120" x2="175" y2="120" stroke="#F7F7F7" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Arrow head -->
+  <polygon points="175,117 185,120 175,123" fill="#FFB703"/>
+  <!-- Target line/sight visualization (subtle dashed vector) -->
+  <line x1="185" y1="120" x2="215" y2="120" stroke="#FFB703" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>
+
+  <!-- Legs -->
+  <path d="M 85 185 L 85 210 L 95 210" stroke="#1F2923" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M 110 185 L 120 210 L 130 210" stroke="#1F2923" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- Quiver on back -->
+  <rect x="70" y="95" width="12" height="35" rx="3" transform="rotate(15 76 112)" fill="#582F0E"/>
+  <line x1="72" y1="90" x2="80" y2="85" stroke="#FFB703" stroke-width="2"/>
+  <line x1="76" y1="91" x2="84" y2="86" stroke="#FFB703" stroke-width="2"/>
+</svg>

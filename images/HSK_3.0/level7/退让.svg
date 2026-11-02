@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(12, 12)">
+    <!-- Floor Line -->
+    <line x1="20" y1="180" x2="196" y2="180" stroke="#3A3F4B" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Central Boundary / Line of Principle (Vertical glowing red line indicating firmness/territory) -->
+    <line x1="108" y1="40" x2="108" y2="180" stroke="#FF5252" stroke-width="3" stroke-dasharray="6 4" opacity="0.8"/>
+
+    <!-- Left Figure (Stepping back / Tuì - withdrawing) -->
+    <g transform="translate(45, 80)">
+      <!-- Motion lines showing stepping backward -->
+      <path d="M25 70 L10 70" stroke="#4A90E2" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+      <path d="M20 85 L5 85" stroke="#4A90E2" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+      
+      <!-- Body leaning back / yielding pose -->
+      <path d="M35 50 Q30 35 40 25" fill="none" stroke="#4A90E2" stroke-width="12" stroke-linecap="round"/>
+      <!-- Head -->
+      <circle cx="43" cy="14" r="10" fill="#4A90E2"/>
+      <!-- Torso -->
+      <path d="M37 24 L31 60" stroke="#4A90E2" stroke-width="14" stroke-linecap="round"/>
+      <!-- Legs (stepping back) -->
+      <path d="M31 60 L18 95" stroke="#4A90E2" stroke-width="8" stroke-linecap="round"/>
+      <path d="M31 60 L42 95" stroke="#4A90E2" stroke-width="8" stroke-linecap="round"/>
+      <!-- Arm raised in concession / open palm -->
+      <path d="M35 32 L55 38" stroke="#4A90E2" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="58" cy="38" r="4" fill="#4A90E2"/>
+    </g>
+
+    <!-- Right Figure (Firm, immovable stance respecting boundary / Ràng - yielding space) -->
+    <g transform="translate(115, 80)">
+      <!-- Firm rooted body -->
+      <!-- Head -->
+      <circle cx="35" cy="14" r="10" fill="#FFC107"/>
+      <!-- Torso (Straight, unmoving) -->
+      <path d="M35 24 L35 60" stroke="#FFC107" stroke-width="14" stroke-linecap="round"/>
+      <!-- Legs (planted firmly) -->
+      <path d="M35 60 L24 95" stroke="#FFC107" stroke-width="8" stroke-linecap="round"/>
+      <path d="M35 60 L46 95" stroke="#FFC107" stroke-width="8" stroke-linecap="round"/>
+      <!-- Arms crossed or held back in steadfastness -->
+      <path d="M32 35 L18 45" stroke="#FFC107" stroke-width="7" stroke-linecap="round"/>
+      <path d="M32 35 L48 45" stroke="#FFC107" stroke-width="7" stroke-linecap="round"/>
+    </g>
+
+    <!-- Focus Indicator: Arrow pointing left, demonstrating concession/retreat -->
+    <g transform="translate(80, 45)">
+      <path d="M25 0 L10 10 L25 20" fill="none" stroke="#FFA726" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="10" y1="10" x2="35" y2="10" stroke="#FFA726" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

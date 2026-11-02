@@ -1,0 +1,22 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background atmosphere: dark stormy sky with subtle clouds -->
+  <path d="M40 70 C50 50, 90 50, 110 70 C130 55, 170 60, 185 80 C205 85, 215 110, 200 125 C215 140, 195 165, 175 165 C150 165, 60 165, 45 165 C25 165, 15 135, 30 115 C15 95, 25 75, 40 70 Z" fill="#252A34" opacity="0.6"/>
+
+  <!-- Dramatic Dark Storm Cloud -->
+  <path d="M50 85 C60 65, 100 65, 120 85 C140 70, 180 75, 195 95 C215 100, 225 125, 210 140 C225 155, 205 180, 185 180 C160 180, 70 180, 55 180 C35 180, 25 150, 40 130 C25 110, 35 90, 50 85 Z" fill="#3A4256"/>
+
+  <!-- Lightning Bolt (Representing the forecast/expectation becoming reality) -->
+  <polygon points="125,75 105,130 135,130 115,185 165,115 135,115" fill="#FFC107"/>
+
+  <!-- Heavy Raindrops -->
+  <line x1="70" y1="170" x2="62" y2="195" stroke="#4FC3F7" stroke-width="3" stroke-linecap="round"/>
+  <line x1="100" y1="180" x2="92" y2="205" stroke="#4FC3F7" stroke-width="3" stroke-linecap="round"/>
+  <line x1="140" y1="175" x2="132" y2="200" stroke="#4FC3F7" stroke-width="3" stroke-linecap="round"/>
+  <line x1="175" y1="185" x2="167" y2="210" stroke="#4FC3F7" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Foreground physical object: A classic weather vane / forecast station pointer highlighting accuracy ("as expected / sure enough") -->
+  <circle cx="120" cy="120" r="95" fill="none" stroke="#FFC107" stroke-width="3" opacity="0.25"/>
+  <circle cx="120" cy="120" r="85" fill="none" stroke="#FFC107" stroke-width="4" stroke-dasharray="8 6" opacity="0.6"/>
+</svg>

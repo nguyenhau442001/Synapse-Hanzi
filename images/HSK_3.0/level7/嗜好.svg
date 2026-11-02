@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "嗜好" (Vices/Bad habits like smoking/drinking in the context):
+       Center an iconic, unmistakable physical object representing a bad vice/habit: 
+       A smoking cigarette with ash and a liquor/wine bottle with a prohibition marker, 
+       styled cleanly as a modern flat vector educational icon. -->
+
+  <g transform="translate(0, 0)">
+    <!-- Central Glow/Background Accent -->
+    <circle cx="120" cy="120" r="70" fill="#252A34" opacity="0.8"/>
+
+    <!-- Wine Bottle (representing alcohol/drinking vice) -->
+    <path d="M 85 80 L 85 65 L 95 65 L 95 80 Q 75 90 75 140 L 75 185 Q 75 195 85 195 L 115 195 Q 125 195 125 185 L 125 140 Q 125 90 105 80 Z" fill="#3E4C59"/>
+    <rect x="90" y="60" width="10" height="7" fill="#8899A6" rx="2"/>
+    <path d="M 80 110 L 120 110 L 120 160 L 80 160 Z" fill="#D97706" opacity="0.8"/>
+    <!-- Bottle label icon -->
+    <circle cx="100" cy="135" r="10" fill="#1A1D24"/>
+    <path d="M 96 135 L 104 135 M 100 131 L 100 139" stroke="#E6EDF3" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Cigarette (representing smoking vice) -->
+    <g transform="translate(45, 130) rotate(-25)">
+      <!-- Filter -->
+      <rect x="0" y="0" width="25" height="12" rx="3" fill="#D97706"/>
+      <!-- Paper Body -->
+      <rect x="25" y="0" width="60" height="12" rx="2" fill="#E6EDF3"/>
+      <!-- Ash & Ember -->
+      <rect x="85" y="0" width="10" height="12" rx="2" fill="#4E5D6C"/>
+      <path d="M 90 3 L 93 6 L 90 9" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <!-- Smoke wisps -->
+      <path d="M 95 -2 C 98 -8 92 -14 98 -20" stroke="#8899A6" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+      <path d="M 90 -6 C 85 -12 90 -18 85 -24" stroke="#8899A6" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.4"/>
+    </g>
+
+    <!-- Red Prohibition / Warning Slash overlaying the vices to signify "不良" (bad/undesirable habits) -->
+    <circle cx="120" cy="120" r="82" fill="none" stroke="#EF4444" stroke-width="6" opacity="0.9"/>
+    <line x1="62" y1="62" x2="178" y2="178" stroke="#EF4444" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>

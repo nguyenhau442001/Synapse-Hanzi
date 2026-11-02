@@ -1,0 +1,84 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Blueprint Grid Pattern in Background -->
+  <g opacity="0.15">
+    <line x1="30" y1="40" x2="210" y2="40" stroke="#00C49F" stroke-width="0.5" stroke-dasharray="2 2"/>
+    <line x1="30" y1="80" x2="210" y2="80" stroke="#00C49F" stroke-width="0.5" stroke-dasharray="2 2"/>
+    <line x1="30" y1="120" x2="210" y2="120" stroke="#00C49F" stroke-width="0.5" stroke-dasharray="2 2"/>
+    <line x1="30" y1="160" x2="210" y2="160" stroke="#00C49F" stroke-width="0.5" stroke-dasharray="2 2"/>
+    <line x1="30" y1="200" x2="210" y2="200" stroke="#00C49F" stroke-width="0.5" stroke-dasharray="2 2"/>
+    
+    <line x1="60" y1="20" x2="60" y2="220" stroke="#00C49F" stroke-width="0.5" stroke-dasharray="2 2"/>
+    <line x1="100" y1="20" x2="100" y2="220" stroke="#00C49F" stroke-width="0.5" stroke-dasharray="2 2"/>
+    <line x1="140" y1="20" x2="140" y2="220" stroke="#00C49F" stroke-width="0.5" stroke-dasharray="2 2"/>
+    <line x1="180" y1="20" x2="180" y2="220" stroke="#00C49F" stroke-width="0.5" stroke-dasharray="2 2"/>
+  </g>
+
+  <!-- Modern Real Estate Development Illustration (Developer / Building Project) -->
+  <g transform="translate(0, 5)">
+    <!-- Tall Modern Skyscraper (Background Right) -->
+    <path d="M145 75 L185 85 L185 200 L145 200 Z" fill="#2A313C"/>
+    <path d="M145 75 L165 65 L185 75 L185 85 L145 75 Z" fill="#3E4756"/>
+    <!-- Skyscraper Windows -->
+    <g fill="#4A5568" opacity="0.8">
+      <rect x="153" y="90" width="10" height="14"/>
+      <rect x="169" y="90" width="10" height="14"/>
+      <rect x="153" y="115" width="10" height="14"/>
+      <rect x="169" y="115" width="10" height="14"/>
+      <rect x="153" y="140" width="10" height="14"/>
+      <rect x="169" y="140" width="10" height="14"/>
+      <rect x="153" y="165" width="10" height="14"/>
+      <rect x="169" y="165" width="10" height="14"/>
+    </g>
+
+    <!-- Mid-rise Modern Apartment Complex (Center-Left) -->
+    <path d="M85 95 L135 110 L135 200 L85 200 Z" fill="#364152"/>
+    <path d="M85 95 L110 82 L135 95 L135 110 L85 95 Z" fill="#4F5D73"/>
+    <!-- Apartment Windows (Illuminated / Accent) -->
+    <g fill="#F6AD55" opacity="0.9">
+      <rect x="95" y="110" width="12" height="16"/>
+      <rect x="115" y="115" width="12" height="16"/>
+      <rect x="95" y="140" width="12" height="16"/>
+      <rect x="115" y="145" width="12" height="16"/>
+      <rect x="95" y="170" width="12" height="16"/>
+      <rect x="115" y="175" width="12" height="16"/>
+    </g>
+
+    <!-- Construction Crane (Left foreground/top) -->
+    <!-- Mast -->
+    <line x1="60" y1="50" x2="60" y2="200" stroke="#E2E8F0" stroke-width="2.5"/>
+    <path d="M57 60 L63 70 M57 80 L63 90 M57 100 L63 110 M57 120 L63 130 M57 140 L63 150 M57 160 L63 170 M57 180 L63 190" stroke="#CBD5E0" stroke-width="1.5"/>
+    
+    <!-- Crane Jib & Counter-jib -->
+    <line x1="25" y1="50" x2="115" y2="50" stroke="#E2E8F0" stroke-width="3"/>
+    <line x1="25" y1="50" x2="115" y2="50" stroke="#ED8936" stroke-width="1.5"/>
+    <!-- Cable & Hook -->
+    <line x1="100" y1="50" x2="100" y2="100" stroke="#CBD5E0" stroke-width="1.5"/>
+    <rect x="96" y="100" width="8" height="6" fill="#ED8936"/>
+
+    <!-- Foreground Base / Ground Line -->
+    <path d="M30 200 L210 200" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Developer Professional / Architect Character (Right foreground, holding blueprint/tablet) -->
+    <!-- Body / Suit -->
+    <path d="M185 160 C185 150 195 140 205 140 C215 140 225 150 225 160 L225 200 L185 200 Z" fill="#2B6CB0"/>
+    <!-- Head -->
+    <circle cx="205" cy="125" r="11" fill="#FEEBC8"/>
+    <!-- Hard Hat (Safety Helmet - iconic for developer/builder) -->
+    <path d="M192 122 C192 114 218 114 218 122 Z" fill="#ED8936"/>
+    <path d="M190 122 L220 122 L223 125 L187 125 Z" fill="#DD6B20"/>
+
+    <!-- Architectural Blueprint/Tablet in Hands -->
+    <rect x="175" y="150" width="22" height="16" rx="2" fill="#EBF8FF" transform="rotate(-15 175 150)" stroke="#3182CE" stroke-width="1.5"/>
+    <line x1="180" y1="156" x2="190" y2="153" stroke="#3182CE" stroke-width="1"/>
+    <line x1="181" y1="160" x2="193" y2="157" stroke="#3182CE" stroke-width="1"/>
+
+    <!-- Greenery element (representing the green residential project context) -->
+    <circle cx="72" cy="192" r="8" fill="#48BB78"/>
+    <path d="M72 195 L72 200" stroke="#2F855A" stroke-width="2"/>
+    <circle cx="138" cy="190" r="10" fill="#38A169"/>
+    <path d="M138 195 L138 200" stroke="#276749" stroke-width="2"/>
+  </g>
+</svg>

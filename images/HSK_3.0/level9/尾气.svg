@@ -1,0 +1,54 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for 尾气 (Vehicle Exhaust): Sleek modern flat design, dark mode theme -->
+  <!-- Context elements: Rear section of a modern car emitting exhaust fumes -->
+  
+  <g transform="translate(0, 10)">
+    <!-- Road surface -->
+    <rect x="20" y="175" width="200" height="4" rx="2" fill="#2E3440"/>
+    
+    <!-- Car Body (Rear side profile, right-aligned moving left) -->
+    <path d="M 120 120 L 140 100 L 195 100 Q 205 100 205 110 L 205 155 L 45 155 L 45 140 Q 45 130 55 125 L 90 120 Z" fill="#3B4252"/>
+    
+    <!-- Car Roof and Window -->
+    <path d="M 115 120 L 130 95 L 175 95 L 190 120 Z" fill="#2E3440"/>
+    <path d="M 122 118 L 134 98 L 171 98 L 183 118 Z" fill="#4C566A"/>
+
+    <!-- Tail Light (Glowing accent) -->
+    <path d="M 203 118 L 206 118 L 206 132 L 203 132 Q 200 132 200 125 L 200 125 Q 200 118 203 118 Z" fill="#FF5555"/>
+    <path d="M 201 120 L 205 120 L 205 130 L 201 130 Z" fill="#FF6E6E"/>
+
+    <!-- Rear Bumper & Underbody -->
+    <rect x="45" y="145" width="160" height="10" rx="2" fill="#2E3440"/>
+
+    <!-- Wheels -->
+    <circle cx="80" cy="155" r="18" fill="#2E3440"/>
+    <circle cx="80" cy="155" r="9" fill="#4C566A"/>
+    
+    <circle cx="170" cy="155" r="18" fill="#2E3440"/>
+    <circle cx="170" cy="155" r="9" fill="#4C566A"/>
+
+    <!-- Exhaust Pipe (Tailpipe) -->
+    <rect x="35" y="147" width="14" height="6" rx="3" fill="#D8DEE9"/>
+    <ellipse cx="35" cy="150" rx="2" ry="3" fill="#2E3440"/>
+
+    <!-- Exhaust Fumes (尾气 - Focus point of the semantic meaning) -->
+    <!-- Expanding organic smoke/gas clouds billowing from the exhaust pipe -->
+    <path d="M 32 150 Q 20 148 15 138 Q 10 128 20 120 Q 15 110 25 102 Q 35 94 48 102 Q 60 90 75 98 Q 90 106 82 118 Q 95 125 90 138 Q 85 150 70 148 Q 55 155 40 152 Z" fill="#434C5E" opacity="0.6"/>
+    
+    <path d="M 33 148 Q 24 143 20 135 Q 16 127 24 121 Q 20 113 28 107 Q 36 101 45 108 Q 55 99 68 105 Q 81 111 74 121 Q 84 127 80 137 Q 76 147 63 145 Q 50 150 38 147 Z" fill="#E5E9F0" opacity="0.25"/>
+
+    <!-- Core warning / pollution indicator styling inside the exhaust plume (Orange/Gold accent for focus) -->
+    <circle cx="48" cy="125" r="12" fill="#D08770" opacity="0.85"/>
+    <path d="M 43 125 L 53 125 M 48 120 L 48 130" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+    
+    <circle cx="28" cy="112" r="7" fill="#D08770" opacity="0.6"/>
+    <circle cx="68" cy="115" r="9" fill="#D08770" opacity="0.7"/>
+
+    <!-- Dynamic emission swirls -->
+    <path d="M 55 135 Q 65 140 75 132" stroke="#E5E9F0" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.4"/>
+    <path d="M 25 130 Q 30 122 25 115" stroke="#E5E9F0" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.4"/>
+  </g>
+</svg>

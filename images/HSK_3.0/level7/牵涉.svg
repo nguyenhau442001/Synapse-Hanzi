@@ -1,0 +1,42 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Central Physical Object representing "牵涉" (Entanglement / Interlocking ties - represented as physical interconnected wooden/metallic gears or nodes symbolizing involvement and shared stakes) -->
+    
+    <!-- Background subtle connecting network lines -->
+    <path d="M70,120 L120,80 L170,120 L140,170 L100,170 Z" fill="none" stroke="#2A303C" stroke-width="3" stroke-dasharray="4 4"/>
+
+    <!-- Central Node / Core entity -->
+    <circle cx="120" cy="120" r="28" fill="#222733" stroke="#F5A623" stroke-width="3"/>
+    <circle cx="120" cy="120" r="10" fill="#F5A623"/>
+
+    <!-- Surrounding interconnected entities (representing involved parties/interests) -->
+    <!-- Node Top -->
+    <g transform="translate(120, 65)">
+      <rect x="-18" y="-18" width="36" height="36" rx="8" fill="#283040" stroke="#4A5568" stroke-width="2"/>
+      <circle cx="0" cy="0" r="6" fill="#00D2FF"/>
+    </g>
+
+    <!-- Node Bottom Right -->
+    <g transform="translate(165, 155)">
+      <rect x="-18" y="-18" width="36" height="36" rx="8" fill="#283040" stroke="#4A5568" stroke-width="2"/>
+      <circle cx="0" cy="0" r="6" fill="#00D2FF"/>
+    </g>
+
+    <!-- Node Bottom Left -->
+    <g transform="translate(75, 155)">
+      <rect x="-18" y="-18" width="36" height="36" rx="8" fill="#283040" stroke="#4A5568" stroke-width="2"/>
+      <circle cx="0" cy="0" r="6" fill="#00D2FF"/>
+    </g>
+
+    <!-- Direct Solid Linking Bands (Visualizing involvement / binding impact) -->
+    <path d="M120,93 L120,83" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+    <path d="M142,133 L152,143" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+    <path d="M98,133 L88,143" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Dynamic accent tether rings showing deep connection -->
+    <ellipse cx="120" cy="120" rx="48" ry="20" fill="none" stroke="#F5A623" stroke-width="2" stroke-dasharray="6 6" transform="rotate(-30 120 120)" opacity="0.6"/>
+    <ellipse cx="120" cy="120" rx="55" ry="22" fill="none" stroke="#00D2FF" stroke-width="1.5" stroke-dasharray="4 8" transform="rotate(45 120 120)" opacity="0.5"/>
+  </g>
+</svg>

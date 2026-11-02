@@ -1,0 +1,35 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Character: Young Scholar -->
+  <g transform="translate(120, 140)">
+    <!-- Body -->
+    <path d="M-30 80 L30 80 L25 20 L-25 20 Z" fill="#3A404D"/>
+    <!-- Head -->
+    <circle cx="0" cy="-20" r="35" fill="#FFD1A9"/>
+    <!-- Hair -->
+    <path d="M-35 -20 C-35 -50 -10 -60 0 -60 C10 -60 35 -50 35 -20 Z" fill="#2D3436"/>
+    
+    <!-- Stunned Expression (The "愣" state) -->
+    <!-- Wide, fixed eyes -->
+    <circle cx="-12" cy="-25" r="4" fill="#1A1D24"/>
+    <circle cx="12" cy="-25" r="4" fill="#1A1D24"/>
+    <!-- Open, frozen mouth -->
+    <ellipse cx="0" cy="-5" rx="6" ry="8" fill="#1A1D24"/>
+    
+    <!-- Arms in frozen pose -->
+    <path d="M-30 30 L-50 60" stroke="#FFD1A9" stroke-width="12" stroke-linecap="round"/>
+    <path d="M30 30 L50 60" stroke="#FFD1A9" stroke-width="12" stroke-linecap="round"/>
+  </g>
+
+  <!-- Award/Trophy (Contextual hint) -->
+  <g transform="translate(180, 160)">
+    <path d="M-15 0 L15 0 L10 -30 L-10 -30 Z" fill="#FFB800"/>
+    <rect x="-5" y="0" width="10" height="10" fill="#E6A800"/>
+    <circle cx="0" cy="-35" r="12" fill="#FFD700"/>
+  </g>
+
+  <!-- Subtle 'Frozen' effect lines -->
+  <path d="M80 80 L100 60" stroke="#4A5568" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M160 80 L140 60" stroke="#4A5568" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>

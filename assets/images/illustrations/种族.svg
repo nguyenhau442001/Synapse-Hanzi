@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative globe grid subtle lines -->
+  <circle cx="120" cy="120" r="70" fill="none" stroke="#252A34" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <ellipse cx="120" cy="120" rx="70" ry="25" fill="none" stroke="#252A34" stroke-width="1.5"/>
+  <ellipse cx="120" cy="120" rx="25" ry="70" fill="none" stroke="#252A34" stroke-width="1.5"/>
+
+  <!-- Central Visual Representation for "种族" (Chủng tộc / Sắc tộc): Three diverse human figures standing side-by-side in unity and equality -->
+  <!-- Left Figure -->
+  <g transform="translate(70, 95)">
+    <!-- Body -->
+    <path d="M 0 65 C 0 45, 10 40, 15 40 C 20 40, 30 45, 30 65 Z" fill="#E0A96D"/>
+    <!-- Head -->
+    <circle cx="15" cy="20" r="13" fill="#E0A96D"/>
+    <!-- Hair -->
+    <path d="M 3 15 C 5 8, 25 8, 27 15 C 27 12, 23 7, 15 7 C 7 7, 3 12, 3 15 Z" fill="#3E2723"/>
+  </g>
+
+  <!-- Center Figure (Main Focus, elevated slightly for composition) -->
+  <g transform="translate(105, 85)">
+    <!-- Body -->
+    <path d="M 0 75 C 0 55, 10 50, 15 50 C 20 50, 30 55, 30 75 Z" fill="#4E342E"/>
+    <!-- Head -->
+    <circle cx="15" cy="18" r="14" fill="#8D5524"/>
+    <!-- Hair -->
+    <path d="M 2 12 C 5 4, 25 4, 28 12 C 26 6, 4 6, 2 12 Z" fill="#1A1A1A"/>
+  </g>
+
+  <!-- Right Figure -->
+  <g transform="translate(140, 95)">
+    <!-- Body -->
+    <path d="M 0 65 C 0 45, 10 40, 15 40 C 20 40, 30 45, 30 65 Z" fill="#FFCC80"/>
+    <!-- Head -->
+    <circle cx="15" cy="20" r="13" fill="#FFCC80"/>
+    <!-- Hair -->
+    <path d="M 3 17 C 5 7, 25 7, 27 17 C 22 5, 8 5, 3 17 Z" fill="#D81B60"/>
+  </g>
+
+  <!-- Connection / Equality baseline arch -->
+  <path d="M 60 175 Q 120 185 180 175" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Accent star / harmony symbol above -->
+  <path d="M 120 42 L 123 50 L 131 50 L 125 55 L 127 63 L 120 58 L 113 63 L 115 55 L 109 50 L 117 50 Z" fill="#F59E0B"/>
+</svg>

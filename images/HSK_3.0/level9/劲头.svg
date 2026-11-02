@@ -1,0 +1,65 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Subtle Glow for Energy -->
+  <circle cx="120" cy="120" r="70" fill="#FF8C00" opacity="0.08"/>
+
+  <!-- Researcher Character Centerpiece (Upper body leaning forward enthusiastically) -->
+  <g>
+    <!-- Lab Coat Body -->
+    <path d="M 85,190 L 95,145 L 120,155 L 145,145 L 155,190 Z" fill="#E2E8F0"/>
+    <path d="M 120,155 L 120,190" stroke="#CBD5E1" stroke-width="2"/>
+    
+    <!-- Inner Shirt / Lab Top -->
+    <path d="M 105,145 L 120,165 L 135,145 Z" fill="#0284C7"/>
+
+    <!-- Neck -->
+    <rect x="112" y="128" width="16" height="20" rx="4" fill="#FDE047"/>
+
+    <!-- Head / Face (Focused, Determined Expression) -->
+    <circle cx="120" cy="115" r="20" fill="#FDE047"/>
+    <!-- Hair -->
+    <path d="M 100,115 C 100,100 110,95 120,95 C 130,95 140,100 140,115 L 140,105 C 140,98 130,92 120,92 C 110,92 100,98 100,105 Z" fill="#334155"/>
+    
+    <!-- Protective Safety Goggles on Forehead/Eyes -->
+    <rect x="106" y="106" width="28" height="10" rx="3" fill="#0EA5E9" opacity="0.8"/>
+    <path d="M 100,111 L 106,111" stroke="#334155" stroke-width="2"/>
+    <path d="M 134,111 L 140,111" stroke="#334155" stroke-width="2"/>
+
+    <!-- Determined Eyebrows & Eyes -->
+    <path d="M 110,121 L 116,123" stroke="#1E293B" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 124,123 L 130,121" stroke="#1E293B" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Dynamic Energetic Arms (Leaning into work) -->
+    <!-- Left Arm holding flask/beaker -->
+    <path d="M 95,150 L 70,140 L 60,120" fill="none" stroke="#E2E8F0" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Right Arm reaching/pipetting -->
+    <path d="M 145,150 L 170,135 L 180,115" fill="none" stroke="#E2E8F0" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Scientific Equipment (Flask and glowing energy/reaction representing "劲头" - vigor/enthusiasm) -->
+  <g transform="translate(120, 145)">
+    <!-- Erlenmeyer Flask Base -->
+    <path d="M -15,35 L 15,35 L 8,10 L -8,10 Z" fill="#F8FAFC" opacity="0.9"/>
+    <!-- Flask Neck -->
+    <rect x="-4" y="2" width="8" height="8" fill="#F8FAFC" opacity="0.9"/>
+    <!-- Liquid inside with vibrant orange glow -->
+    <path d="M -13,32 L 13,32 L 6,15 L -6,15 Z" fill="#FF8C00"/>
+    
+    <!-- Bubbles / Energy bursts rising (Visualizing "气势" / vigor) -->
+    <circle cx="0" cy="5" r="4" fill="#F59E0B"/>
+    <circle cx="-6" cy="-4" r="3" fill="#F97316"/>
+    <circle cx="5" cy="-10" r="2.5" fill="#FB923C"/>
+    
+    <!-- Action / Energy Sparks Bursting Outward -->
+    <path d="M -22,0 L -12,5" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 22,2 L 14,7" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 0,-18 L 0,-10" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Dynamic Motion / Vigor Speed Lines (Subtle, sleek) -->
+  <path d="M 50,90 Q 70,85 85,95" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 190,95 Q 170,85 155,95" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 45,130 Q 60,125 75,135" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+</svg>

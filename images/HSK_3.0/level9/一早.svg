@@ -1,0 +1,67 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background elements: Early morning atmosphere -->
+  <!-- Subtle sunrise horizon / gradient glow -->
+  <circle cx="180" cy="90" r="60" fill="#FFB703" opacity="0.08"/>
+  
+  <!-- Tiny sparkling morning star transitioning out -->
+  <g transform="translate(60, 50)" opacity="0.6">
+    <path d="M0 -4 L1 -1 L4 0 L1 1 L0 4 L-1 1 L-4 0 L-1 -1 Z" fill="#E0FBFC"/>
+  </g>
+  <g transform="translate(85, 75)" opacity="0.3">
+    <path d="M0 -3 L0.7 -0.7 L3 0 L0.7 0.7 L0 3 L-0.7 0.7 L-3 0 L-0.7 -0.7 Z" fill="#E0FBFC"/>
+  </g>
+
+  <!-- Sun rising over city skyline silhouette (Minimalist flat) -->
+  <!-- Distant buildings / background skyline -->
+  <rect x="25" y="110" width="22" height="90" fill="#252A34" opacity="0.5"/>
+  <rect x="49" y="90" width="30" height="110" fill="#252A34" opacity="0.5"/>
+  <rect x="155" y="100" width="35" height="100" fill="#252A34" opacity="0.5"/>
+  <rect x="192" y="120" width="24" height="80" fill="#252A34" opacity="0.5"/>
+
+  <!-- Rising Sun (Bright Orange/Gold focal accent) -->
+  <circle cx="150" cy="115" r="22" fill="#FB8500"/>
+  <path d="M110 170 L210 170" stroke="#252A34" stroke-width="2"/>
+
+  <!-- ADJECTIVE / STATE VISUAL CONTRAST & DYNAMICS -->
+  <!-- Expressing "Early Morning / Breaking Dawn" action: Rushing out early with suitcase/bag -->
+  
+  <!-- Motion lines indicating swift, early-hour movement -->
+  <path d="M65 145 L95 145" stroke="#FFB703" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 4" opacity="0.8"/>
+  <path d="M55 160 L85 160" stroke="#FFB703" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 6" opacity="0.5"/>
+
+  <!-- Person rushing / dynamic pose -->
+  <g transform="translate(95, 110)">
+    <!-- Suitcase -->
+    <rect x="28" y="32" width="16" height="20" rx="3" fill="#FB8500"/>
+    <path d="M33 32 V 29 C 33 27.5 39 27.5 39 29 V 32" stroke="#FFFFFF" stroke-width="1.5" fill="none"/>
+    
+    <!-- Body leaning forward (expressing urgency/early start) -->
+    <!-- Legs in stride -->
+    <path d="M15 45 L5 60" stroke="#E0FBFC" stroke-width="5" stroke-linecap="round"/>
+    <path d="M22 45 L30 58" stroke="#9DB4C0" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Torso -->
+    <path d="M12 22 C 12 22 18 35 20 44" stroke="#E0FBFC" stroke-width="10" stroke-linecap="round"/>
+    
+    <!-- Arm carrying bag -->
+    <path d="M18 26 L32 36" stroke="#E0FBFC" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Head -->
+    <circle cx="10" cy="13" r="7" fill="#E0FBFC"/>
+  </g>
+
+  <!-- Large structural clock element subtly integrated to reinforce time concept (Morning) -->
+  <g transform="translate(45, 65)">
+    <circle cx="0" cy="0" r="16" fill="#1A1D24" stroke="#FFB703" stroke-width="2.5"/>
+    <!-- Clock hands pointing to early hour (e.g., 6:00) -->
+    <line x1="0" y1="0" x2="0" y2="-8" stroke="#FFB703" stroke-width="2" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="6" y2="-2" stroke="#FFB703" stroke-width="2" stroke-linecap="round"/>
+    <!-- Morning sun rays on clock -->
+    <path d="M0 -20 L0 -17" stroke="#FFB703" stroke-width="2" stroke-linecap="round"/>
+    <path d="M14 -14 L12 -12" stroke="#FFB703" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+</svg>

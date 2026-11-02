@@ -1,0 +1,50 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Object: A stylized, asymmetrical seesaw/balance scale representing the selfish trade-off (Hại người lợi mình) -->
+  <g transform="translate(120, 125)">
+    <!-- Fulcrum / Base -->
+    <polygon points="-15,50 15,50 0,25" fill="#4A5568"/>
+    <rect x="-25" y="50" width="50" height="6" rx="3" fill="#718096"/>
+
+    <!-- Tilted Beam (representing selfish imbalance) -->
+    <!-- Rotated ~-12 degrees around center (0,25) -->
+    <g transform="rotate(-12)">
+      <rect x="-85" y="21" width="170" height="8" rx="4" fill="#E2E8F0"/>
+    </g>
+
+    <!-- Left Side (Plunging Down / Taking away from others) -->
+    <!-- At x = -80, y offset by rotation ~ +16 -->
+    <g transform="translate(-80, 42)">
+      <!-- Suspension strings -->
+      <line x1="0" y1="0" x2="-14" y2="25" stroke="#A0AEC0" stroke-width="2" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="14" y2="25" stroke="#A0AEC0" stroke-width="2" stroke-linecap="round"/>
+      <!-- Pan -->
+      <path d="M -18 25 Q 0 35 18 25 Z" fill="#718096"/>
+      <!-- Icon representing "Hại người" (Depleted/Stolen resources, broken/deflated shape, cool grey/blue) -->
+      <circle cx="0" cy="10" r="10" fill="#4FD1C5" opacity="0.4"/>
+      <path d="M -5 5 L 5 15 M 5 5 L -5 15" stroke="#CBD5E0" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Right Side (Ringing Up / Accumulating for oneself - Highlighting selfishness with warm accent color) -->
+    <!-- At x = 80, y offset by rotation ~ -18 -->
+    <g transform="translate(80, 8)">
+      <!-- Suspension strings -->
+      <line x1="0" y1="0" x2="-14" y2="25" stroke="#A0AEC0" stroke-width="2" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="14" y2="25" stroke="#A0AEC0" stroke-width="2" stroke-linecap="round"/>
+      <!-- Pan -->
+      <path d="M -18 25 Q 0 35 18 25 Z" fill="#718096"/>
+      <!-- Icon representing "Lợi mình" (Accumulated wealth/gain, glowing gold/orange accent) -->
+      <circle cx="0" cy="12" r="13" fill="#F6AD55"/>
+      <circle cx="0" cy="12" r="8" fill="#DD6B20"/>
+    </g>
+  </g>
+
+  <!-- Central metaphorical hands/transaction motif framing the selfishness -->
+  <!-- Sleek modern flat aesthetic touches -->
+  <circle cx="120" cy="125" r="75" fill="none" stroke="#2D3748" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- Top accent dot -->
+  <circle cx="120" cy="35" r="4" fill="#F6AD55"/>
+</svg>

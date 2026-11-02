@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Car Rear Window Frame -->
+  <path d="M60 70h120v100c0 11-9 20-20 20H80c-11 0-20-9-20-20V70z" fill="#2D343E" stroke="#4A5568" stroke-width="4"/>
+  
+  <!-- "Novice" Sticker (The iconic yellow diamond shape) -->
+  <path d="M120 90l40 30-40 30-40-30z" fill="#FFB800"/>
+  
+  <!-- Steering Wheel Icon inside the sticker -->
+  <circle cx="120" cy="120" r="12" fill="none" stroke="#1A1D24" stroke-width="4"/>
+  <path d="M120 108v12M120 132v-12M108 120h12M132 120h-12" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Rear Wiper -->
+  <path d="M120 70v30" stroke="#718096" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Decorative highlights for "New" context -->
+  <circle cx="180" cy="170" r="8" fill="#FFB800" opacity="0.3"/>
+  <circle cx="60" cy="170" r="5" fill="#FFB800" opacity="0.3"/>
+</svg>

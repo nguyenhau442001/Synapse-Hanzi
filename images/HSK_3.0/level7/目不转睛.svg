@@ -1,0 +1,55 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle stage light beam background -->
+  <polygon points="120,40 50,200 190,200" fill="#252A34" opacity="0.5"/>
+  
+  <!-- Magician's top hat on a minimalist stage pedestal -->
+  <rect x="95" y="155" width="50" height="8" rx="4" fill="#3A4252"/>
+  <ellipse cx="120" cy="155" rx="35" ry="5" fill="#4E5D6C"/>
+  <path d="M 100 155 L 105 125 C 105 120 135 120 135 125 L 140 155 Z" fill="#2B313C"/>
+  <ellipse cx="120" cy="125" rx="15" ry="3" fill="#1A1D24"/>
+  
+  <!-- Magic sparkles floating upward -->
+  <path d="M 120 100 L 122 108 L 130 110 L 122 112 L 120 120 L 118 112 L 110 110 L 118 108 Z" fill="#FFB703" opacity="0.9"/>
+  <path d="M 95 110 L 96 114 L 100 115 L 96 116 L 95 120 L 94 116 L 90 115 L 94 114 Z" fill="#FFB703" opacity="0.6"/>
+  <path d="M 145 105 L 146 109 L 150 110 L 146 111 L 145 115 L 144 111 L 140 110 L 144 109 Z" fill="#FFB703" opacity="0.7"/>
+
+  <!-- Character Head & Hair (Viewing intently) -->
+  <!-- Body/Shoulders -->
+  <path d="M 85 210 C 85 185 155 185 155 210 Z" fill="#2E3846"/>
+  
+  <!-- Neck -->
+  <rect x="110" y="170" width="20" height="20" fill="#FCEFE3"/>
+  
+  <!-- Head -->
+  <circle cx="120" cy="140" r="32" fill="#FCEFE3"/>
+  
+  <!-- Hair (Neat modern flat style hair) -->
+  <path d="M 88 135 C 88 115 102 105 120 105 C 138 105 152 115 152 135 C 152 145 148 145 148 138 C 148 120 136 110 120 110 C 104 110 92 120 92 138 C 92 145 88 145 88 135 Z" fill="#2B313C"/>
+
+  <!-- Focused Wide-Open Eyes (The core semantic representation of "目不转睛" - fixed, unwavering gaze) -->
+  <!-- Left Eye -->
+  <circle cx="108" cy="138" r="9" fill="#FFFFFF"/>
+  <circle cx="109" cy="138" r="4.5" fill="#FFB703"/>
+  <circle cx="109" cy="138" r="2" fill="#1A1D24"/>
+  <circle cx="111" cy="136" r="1" fill="#FFFFFF"/>
+  
+  <!-- Right Eye -->
+  <circle cx="132" cy="138" r="9" fill="#FFFFFF"/>
+  <circle cx="133" cy="138" r="4.5" fill="#FFB703"/>
+  <circle cx="133" cy="138" r="2" fill="#1A1D24"/>
+  <circle cx="135" cy="136" r="1" fill="#FFFFFF"/>
+
+  <!-- Focused Eyebrows (Raised slightly higher in concentrated attention) -->
+  <path d="M 100 123 C 105 120 115 120 118 123" stroke="#2B313C" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M 122 123 C 125 120 135 120 140 123" stroke="#2B313C" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Small focused mouth -->
+  <rect x="116" y="156" width="8" height="3" rx="1.5" fill="#D08C60"/>
+
+  <!-- Concentrated gaze connection lines (Faint, sleek indicator of fixed visual focus towards the magic show) -->
+  <line x1="108" y1="138" x2="114" y2="128" stroke="#FFB703" stroke-width="1.5" stroke-dasharray="2,2" opacity="0.4"/>
+  <line x1="132" y1="138" x2="126" y2="128" stroke="#FFB703" stroke-width="1.5" stroke-dasharray="2,2" opacity="0.4"/>
+</svg>

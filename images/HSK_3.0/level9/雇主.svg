@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background subtle office architectural lines -->
+  <line x1="40" y1="200" x2="200" y2="200" stroke="#2A2F3D" stroke-width="2" stroke-linecap="round"/>
+  <rect x="60" y="110" width="120" height="80" rx="4" fill="none" stroke="#2A2F3D" stroke-width="2"/>
+  
+  <!-- Desk -->
+  <path d="M40 160 L200 160 L210 190 L30 190 Z" fill="#242936"/>
+  <rect x="30" y="190" width="180" height="6" rx="3" fill="#323846"/>
+  
+  <!-- Laptop on Desk (Symbolizing work/employment) -->
+  <path d="M95 152 L145 152 L152 160 L88 160 Z" fill="#4F566B"/>
+  <rect x="100" y="130" width="40" height="23" rx="2" fill="#2E3440" stroke="#61AFEF" stroke-width="1"/>
+  
+  <!-- Employer Character (Main focus: Professional, confident, business attire) -->
+  <!-- Body/Suit -->
+  <path d="M120 100 C135 100 150 115 155 135 L85 135 C90 115 105 100 120 100 Z" fill="#3B4252"/>
+  <!-- Shirt & Tie -->
+  <polygon points="120,110 127,125 120,140 113,125" fill="#E5C07B"/>
+  <polygon points="120,110 124,120 120,125 116,120" fill="#ABB2BF"/>
+  
+  <!-- Neck -->
+  <rect x="113" y="92" width="14" height="12" fill="#E06C75" opacity="0.9"/>
+  
+  <!-- Head -->
+  <circle cx="120" cy="76" r="18" fill="#E06C75" opacity="0.9"/>
+  
+  <!-- Hair (Modern sleek style) -->
+  <path d="M102 76 C102 62 110 56 120 56 C130 56 138 62 138 76 C138 78 139 80 139 80 C139 80 134 70 120 68 C106 70 101 80 101 80 C101 80 102 78 102 76 Z" fill="#4B5263"/>
+
+  <!-- Confident/Authoritative Posture: Raised Hand / Direct Stance representing the Employer -->
+  <!-- Left Arm (Bent at elbow, hand gesturing contract/agreement or leadership) -->
+  <path d="M92 110 L72 125 L80 135 L98 120 Z" fill="#3B4252"/>
+  <circle cx="70" cy="127" r="6" fill="#E06C75" opacity="0.9"/>
+
+  <!-- Right Arm -->
+  <path d="M148 110 L168 125 L160 135 L142 120 Z" fill="#3B4252"/>
+  <circle cx="170" cy="127" r="6" fill="#E06C75" opacity="0.9"/>
+
+  <!-- Accent Focus Badge (Golden/Orange highlight representing professional status/employer role) -->
+  <circle cx="120" cy="36" r="14" fill="#E5C07B" opacity="0.15"/>
+  <path d="M120 26 L123.5 33 L131 34 L125.5 39.5 L127 47 L120 43.5 L113 47 L114.5 39.5 L109 34 L116.5 33 Z" fill="#E5C07B"/>
+</svg>

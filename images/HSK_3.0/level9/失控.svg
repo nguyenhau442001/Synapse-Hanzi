@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Road Surface -->
+  <path d="M0 160 L240 160 L240 240 L0 240 Z" fill="#2D3436"/>
+  <path d="M0 160 L240 160" stroke="#4A5568" stroke-width="2" stroke-dasharray="10 10"/>
+  
+  <!-- Guardrail -->
+  <rect x="180" y="120" width="60" height="80" fill="#718096"/>
+  <rect x="190" y="130" width="40" height="60" fill="#A0AEC0"/>
+  
+  <!-- Truck (The physical object representing loss of control) -->
+  <g transform="translate(60, 140) rotate(-25)">
+    <!-- Truck Body -->
+    <rect x="0" y="0" width="80" height="40" rx="4" fill="#E53E3E"/>
+    <!-- Cab -->
+    <rect x="70" y="5" width="20" height="30" rx="2" fill="#C53030"/>
+    <!-- Wheels -->
+    <circle cx="15" cy="45" r="8" fill="#2D3748"/>
+    <circle cx="65" cy="45" r="8" fill="#2D3748"/>
+    <!-- Motion/Skid lines -->
+    <path d="M-20 40 L-50 30" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+    <path d="M-25 50 L-55 45" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Impact Effect -->
+  <path d="M170 140 L200 110 L190 150 L220 130 L200 170" stroke="#F6AD55" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Shop Counter -->
+  <path d="M40 180h160v20H40z" fill="#3D4451"/>
+  <path d="M50 140h140v40H50z" fill="#2C313C"/>
+  
+  <!-- Shopkeeper (Polite gesture) -->
+  <circle cx="160" cy="110" r="20" fill="#FFB86C"/>
+  <path d="M145 130h30v40h-30z" fill="#FFB86C"/>
+  <path d="M150 140l-15 10" stroke="#FFB86C" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Customer (Visiting/Approaching) -->
+  <circle cx="80" cy="110" r="20" fill="#8BE9FD"/>
+  <path d="M65 130h30v40h-30z" fill="#8BE9FD"/>
+  <path d="M95 140l15 10" stroke="#8BE9FD" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Goods on counter -->
+  <circle cx="120" cy="160" r="10" fill="#FF5555"/>
+  <circle cx="140" cy="165" r="8" fill="#50FA7B"/>
+  
+  <!-- Floor -->
+  <rect x="0" y="200" width="240" height="40" fill="#15181E"/>
+</svg>

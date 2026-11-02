@@ -1,0 +1,16 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 120) rotate(-45)">
+    <!-- Thermometer Body -->
+    <rect x="-15" y="-70" width="30" height="140" rx="15" fill="#3A404D" stroke="#5D677D" stroke-width="2"/>
+    <!-- Liquid Reservoir -->
+    <circle cx="0" cy="70" r="20" fill="#FFB84D"/>
+    <!-- Liquid Column -->
+    <rect x="-6" y="-50" width="12" height="120" rx="6" fill="#FFB84D"/>
+    <!-- Digital Screen Area -->
+    <rect x="-10" y="-40" width="20" height="30" rx="4" fill="#252A36"/>
+    <!-- Digital Segment Simulation -->
+    <rect x="-6" y="-35" width="4" height="20" fill="#FFB84D"/>
+    <rect x="2" y="-35" width="4" height="20" fill="#FFB84D"/>
+  </g>
+</svg>

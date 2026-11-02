@@ -1,0 +1,54 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glow effect for high-tech core -->
+  <circle cx="120" cy="115" r="65" fill="#2563EB" opacity="0.15" filter="blur(12px)"/>
+  <circle cx="120" cy="115" r="45" fill="#F59E0B" opacity="0.1" filter="blur(8px)"/>
+
+  <!-- Orbital rings representing self-control / sovereignty -->
+  <ellipse cx="120" cy="115" rx="75" ry="32" fill="none" stroke="#334155" stroke-width="1.5" stroke-dasharray="6 4" transform="rotate(-15 120 115)"/>
+  <ellipse cx="120" cy="115" rx="75" ry="32" fill="none" stroke="#2563EB" stroke-width="2" transform="rotate(35 120 115)"/>
+
+  <!-- Core Technological Object representing "自" (Self/Internal) & "主" (Mastery/Sovereignty) -->
+  <!-- Outer metallic housing -->
+  <path d="M120 65 L155 85 L155 145 L120 165 L85 145 L85 85 Z" fill="#2A3441" stroke="#475569" stroke-width="2"/>
+  <path d="M120 70 L150 87 L150 143 L120 160 L90 143 L90 87 Z" fill="#1E293B"/>
+
+  <!-- Internal Circuitry & Core -->
+  <path d="M120 90 L135 99 L135 117 L120 126 L105 117 L105 99 Z" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5"/>
+  
+  <!-- Central Energy Source (Mastery / Control) -->
+  <circle cx="120" cy="108" r="12" fill="#1E293B" stroke="#F59E0B" stroke-width="2"/>
+  <circle cx="120" cy="108" r="5" fill="#F59E0B"/>
+
+  <!-- Circuit nodes -->
+  <line x1="120" y1="120" x2="120" y2="150" stroke="#38BDF8" stroke-width="2"/>
+  <circle cx="120" cy="150" r="3" fill="#38BDF8"/>
+
+  <line x1="105" y1="117" x2="80" y2="130" stroke="#2563EB" stroke-width="2"/>
+  <circle cx="80" cy="130" r="3" fill="#2563EB"/>
+
+  <line x1="135" y1="117" x2="160" y2="130" stroke="#2563EB" stroke-width="2"/>
+  <circle cx="160" cy="130" r="3" fill="#2563EB"/>
+
+  <line x1="105" y1="99" x2="85" y2="88" stroke="#38BDF8" stroke-width="2"/>
+  <circle cx="85" cy="88" r="3" fill="#38BDF8"/>
+
+  <line x1="135" y1="99" x2="155" y2="88" stroke="#38BDF8" stroke-width="2"/>
+  <circle cx="155" cy="88" r="3" fill="#38BDF8"/>
+
+  <!-- Accent control brackets (framing the core object to signify independence/mastery) -->
+  <path d="M70 100 L60 100 L60 140 L70 140" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M170 100 L180 100 L180 140 L170 140" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Floating energy particles -->
+  <circle cx="65" cy="75" r="2" fill="#F59E0B"/>
+  <circle cx="175" cy="155" r="2.5" fill="#38BDF8"/>
+  <circle cx="145" cy="55" r="1.5" fill="#F59E0B"/>
+  <circle cx="95" cy="170" r="2" fill="#38BDF8"/>
+
+  <!-- Base platform symbolizing solid foundation -->
+  <ellipse cx="120" cy="185" rx="55" ry="8" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <ellipse cx="120" cy="185" rx="35" ry="5" fill="none" stroke="#F59E0B" stroke-width="1" opacity="0.6"/>
+</svg>

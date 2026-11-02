@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Bed frame and mattress (Toss and turn concept) -->
+    <rect x="45" y="110" width="150" height="70" rx="12" fill="#2D323E" />
+    <rect x="50" y="125" width="140" height="45" rx="8" fill="#3A4256" />
+    
+    <!-- Pillow -->
+    <rect x="58" y="120" width="35" height="40" rx="8" fill="#525D78" />
+    
+    <!-- Tossing and turning human figure (representing 180-degree turbulent motion) -->
+    <!-- Curved motion path trails -->
+    <path d="M 90 90 Q 120 70 150 90" fill="none" stroke="#FF6B4A" stroke-width="3" stroke-dasharray="4,4" opacity="0.6"/>
+    <path d="M 80 160 Q 120 185 160 160" fill="none" stroke="#FF6B4A" stroke-width="3" stroke-dasharray="4,4" opacity="0.6"/>
+
+    <!-- Restless Person (Head to the right, limbs tangled) -->
+    <circle cx="140" cy="138" r="14" fill="#FFA07A" />
+    <!-- Disheveled hair -->
+    <path d="M 128 132 Q 135 120 148 130" fill="none" stroke="#3A4256" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Body wrapped in blanket -->
+    <path d="M 95 125 L 140 135 L 130 160 L 90 150 Z" fill="#4A709C" />
+    
+    <!-- Restless arms/legs sticking out -->
+    <path d="M 110 130 L 95 112" stroke="#FFA07A" stroke-width="6" stroke-linecap="round" />
+    <path d="M 125 155 L 115 175" stroke="#FFA07A" stroke-width="6" stroke-linecap="round" />
+
+    <!-- Headboard -->
+    <rect x="40" y="95" width="12" height="85" rx="6" fill="#1F2430" />
+    
+    <!-- Toothache visual elements (sharp glowing pain sparks near the head) -->
+    <g transform="translate(148, 125)">
+      <path d="M 0 0 L 10 -10 M 10 0 L 0 -10" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(125, 110)">
+      <path d="M 0 0 L 8 -8 M 8 0 L 0 -8" stroke="#FF6B4A" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    
+    <!-- Sleep deprivation / Exhaustion marks (Zzz or swirling stress lines) -->
+    <path d="M 155 105 Q 162 100 158 95 Q 155 90 162 85" fill="none" stroke="#8C9BB2" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 166 92 Q 171 88 168 84 Q 165 80 170 76" fill="none" stroke="#8C9BB2" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

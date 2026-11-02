@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- The "Problem" (The responsibility/task) -->
+  <rect x="140" y="80" width="60" height="80" rx="4" fill="#E67E22" />
+  <path d="M155 100h30v10h-30zM155 120h30v10h-30zM155 140h20v10h-20z" fill="#1A1D24" opacity="0.3"/>
+  
+  <!-- The Person (Avoiding) -->
+  <g transform="translate(40, 80)">
+    <!-- Body -->
+    <path d="M20 120h40v-40c0-10-10-20-20-20s-20 10-20 20z" fill="#3498DB"/>
+    <!-- Head -->
+    <circle cx="40" cy="40" r="20" fill="#BDC3C7"/>
+    <!-- Turning away gesture -->
+    <path d="M60 60 L90 50" stroke="#BDC3C7" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Visual indicator of avoidance (The path curving away) -->
+  <path d="M80 160 Q 120 160 130 130" stroke="#5D6D7E" stroke-width="4" stroke-dasharray="8 8" fill="none"/>
+  <path d="M130 130 L125 140 L135 140 Z" fill="#5D6D7E"/>
+</svg>

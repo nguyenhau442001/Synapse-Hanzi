@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Left Object: Subtropical/Warm Climate representation (Sun/Leaf) -->
+  <g transform="translate(50, 120)">
+    <circle cx="0" cy="0" r="25" fill="#FFB347"/>
+    <path d="M0 -35 L0 -45 M0 35 L0 45 M35 0 L45 0 M-35 0 L-45 0" stroke="#FFB347" stroke-width="4" stroke-linecap="round"/>
+    <path d="M-15 10 C-15 25, 0 30, 15 15 C0 15, -15 10, -15 10" fill="#FFB347"/>
+  </g>
+
+  <!-- Right Object: Temperate/Oceanic Climate representation (Cloud/Rain) -->
+  <g transform="translate(190, 120)">
+    <path d="M-25 0 A 20 20 0 1 0 25 0 A 15 15 0 1 0 -25 0" fill="#87CEEB"/>
+    <path d="M-10 15 L-10 25 M0 20 L0 30 M10 15 L10 25" stroke="#87CEEB" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Central Object: The "In-Between" (A bridge or platform connecting the two) -->
+  <g transform="translate(120, 120)">
+    <rect x="-30" y="-5" width="60" height="10" rx="2" fill="#E0E0E0"/>
+    <path d="M-30 5 L-40 20 M0 5 L0 25 M30 5 L40 20" stroke="#555" stroke-width="4" stroke-linecap="round"/>
+    <rect x="-10" y="-25" width="20" height="20" rx="4" fill="#FFD700"/>
+  </g>
+</svg>

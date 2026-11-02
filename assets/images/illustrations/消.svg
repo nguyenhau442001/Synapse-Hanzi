@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Definitions -->
+  <defs>
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3A4A6B"/>
+      <stop offset="100%" stop-color="#222B3E"/>
+    </linearGradient>
+    <linearGradient id="fadeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF9F43" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FF9F43" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background decorative atmosphere (Summer heat haze transitioning to cool rain) -->
+  <circle cx="120" cy="110" r="70" fill="#2E241E" opacity="0.4"/>
+
+  <!-- Raincloud at the top -->
+  <path d="M75 75 C75 60 90 50 105 52 C113 42 130 42 138 52 C155 50 170 63 170 80 C170 95 155 105 140 105 L80 105 C67 105 58 95 62 83 C66 76 72 75 75 75 Z" fill="url(#cloudGrad)"/>
+
+  <!-- Rain streaks -->
+  <line x1="95" y1="115" x2="85" y2="140" stroke="#54A0FF" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="120" y1="115" x2="110" y2="145" stroke="#54A0FF" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+  <line x1="145" y1="115" x2="135" y2="140" stroke="#54A0FF" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- The Dissipating Heat / Fog Entity (消 - Physical manifestation of heat haze melting away) -->
+  <!-- Solid core base, dissolving into upward wisps -->
+  <path d="M 90 170 C 90 150 100 140 120 140 C 140 140 150 150 150 170 C 150 190 90 190 90 170 Z" fill="#FF9F43" opacity="0.8"/>
+  
+  <!-- Rising dissolving wisps (Showing 'fading / disappearing') -->
+  <path d="M100 135 C100 120 110 110 105 95" stroke="#FF9F43" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M120 130 C120 110 135 100 125 80" stroke="#FF9F43" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.5"/>
+  <path d="M140 135 C140 120 145 110 155 90" stroke="#FF9F43" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.4"/>
+
+  <!-- Highest fading particles (completely dissipating) -->
+  <circle cx="102" cy="78" r="2.5" fill="#FF9F43" opacity="0.3"/>
+  <circle cx="127" cy="62" r="3" fill="#FF9F43" opacity="0.2"/>
+  <circle cx="158" cy="72" r="2" fill="#FF9F43" opacity="0.15"/>
+
+  <!-- Ground surface -->
+  <rect x="60" y="190" width="120" height="3" rx="1.5" fill="#3A4250"/>
+
+</svg>

@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background pattern representing time/repetition -->
+  <g opacity="0.15" stroke="#4A5568" stroke-width="1.5" fill="none" stroke-dasharray="2 6">
+    <circle cx="120" cy="115" r="75"/>
+    <circle cx="120" cy="115" r="90"/>
+  </g>
+
+  <!-- Central Physical Object: An artisan's workbench with repeated chisel strokes / layers of time -->
+  <!-- Workbench Surface -->
+  <path d="M 60 165 L 180 165 L 190 180 L 50 180 Z" fill="#2D3748"/>
+  <rect x="70" y="180" width="12" height="35" rx="3" fill="#4A5568"/>
+  <rect x="158" y="180" width="12" height="35" rx="3" fill="#4A5568"/>
+
+  <!-- Wood block being carved (representing the crafted object) -->
+  <path d="M 85 135 L 155 135 L 165 160 L 75 160 Z" fill="#D69E2E"/>
+  <path d="M 155 135 L 175 145 L 165 160 Z" fill="#B7791F"/>
+
+  <!-- Carving Chisel (Tool of daily repetition) -->
+  <g transform="translate(100, 85) rotate(-25)">
+    <!-- Handle -->
+    <rect x="0" y="0" width="16" height="50" rx="4" fill="#E2E8F0"/>
+    <rect x="2" y="10" width="12" height="30" fill="#CBD5E0"/>
+    <!-- Ferrule -->
+    <rect x="-1" y="50" width="18" height="6" fill="#718096"/>
+    <!-- Blade -->
+    <path d="M 2 56 L 14 56 L 11 85 L 5 85 Z" fill="#A0AEC0"/>
+  </g>
+
+  <!-- Layers of wood shavings curling up, symbolizing day-after-day accumulation (日复一日) -->
+  <path d="M 130 145 C 145 135, 140 120, 125 125 C 115 128, 115 140, 125 142" stroke="#ED8936" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M 105 150 C 90 140, 95 125, 110 128 C 120 130, 120 142, 110 145" stroke="#F6AD55" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M 95 155 C 80 150, 75 135, 90 135 C 100 135, 100 147, 90 148" stroke="#DD6B20" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Spark / Precision highlight -->
+  <path d="M 120 132 L 122 138 L 128 140 L 122 142 L 120 148 L 118 142 L 112 140 L 118 138 Z" fill="#F6E05E"/>
+
+  <!-- Conceptual time rings subtly integrated as stacked carved lines -->
+  <path d="M 70 120 C 70 110, 170 110, 170 120" stroke="#4A5568" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
+</svg>

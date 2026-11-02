@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Soft background glow for tranquility -->
+    <circle cx="120" cy="115" r="70" fill="#242B38" opacity="0.6"/>
+
+    <!-- Rural / Nature Elements (Subtle rolling hills and distant bamboo/tree silhouette) -->
+    <path d="M 40 160 Q 80 145 120 160 Q 160 175 200 160 L 200 190 L 40 190 Z" fill="#222A35"/>
+    <path d="M 30 175 Q 90 160 150 175 Q 190 185 210 175 L 210 190 L 30 190 Z" fill="#1E2530"/>
+
+    <!-- Minimalist Bamboo/Tree hints on the sides representing peaceful countryside -->
+    <g fill="#2D3748" opacity="0.7">
+      <rect x="45" y="100" width="4" height="60" rx="2"/>
+      <rect x="55" y="110" width="3" height="50" rx="1.5"/>
+      <rect x="190" y="105" width="4" height="55" rx="2"/>
+    </g>
+
+    <!-- Sitting Figure Character in Relaxed, Carefree (自在) Pose -->
+    <g>
+      <!-- Relaxed crossed legs / seated body -->
+      <!-- Legs -->
+      <path d="M 95 145 Q 120 165 145 145" fill="none" stroke="#4A5568" stroke-width="8" stroke-linecap="round"/>
+      <!-- Torso -->
+      <path d="M 100 115 Q 105 135 120 135 Q 135 135 140 115 Z" fill="#3182CE"/>
+      
+      <!-- Head -->
+      <circle cx="120" cy="95" r="14" fill="#FEEBC8"/>
+      
+      <!-- Relaxed Arms/Hands resting behind head -->
+      <path d="M 100 115 L 110 95" fill="none" stroke="#3182CE" stroke-width="6" stroke-linecap="round"/>
+      <path d="M 140 115 L 130 95" fill="none" stroke="#3182CE" stroke-width="6" stroke-linecap="round"/>
+      
+      <!-- Straw hat or relaxed tilt (Hat resting next to person) -->
+      <ellipse cx="148" cy="148" rx="14" ry="4" fill="#D69E2E"/>
+      <path d="M 144 146 Q 148 138 152 146 Z" fill="#ECC94B"/>
+    </g>
+
+    <!-- Gentle soaring bird symbolizing freedom and "逍遥自在" -->
+    <g transform="translate(0, -5)">
+      <path d="M 75 75 Q 83 67 90 75 Q 97 67 105 75 Q 97 80 90 75 Q 83 80 75 75 Z" fill="#E2E8F0" opacity="0.85"/>
+      <path d="M 150 60 Q 156 53 162 60 Q 168 53 174 60 Q 168 64 162 60 Q 156 64 150 60 Z" fill="#E2E8F0" opacity="0.6"/>
+    </g>
+
+    <!-- Warm accent sun/glow representing serene countryside morning/evening -->
+    <circle cx="120" cy="55" r="18" fill="#D69E2E" opacity="0.2"/>
+    <circle cx="120" cy="55" r="12" fill="#ECC94B" opacity="0.3"/>
+  </g>
+</svg>

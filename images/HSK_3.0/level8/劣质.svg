@@ -1,0 +1,29 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(60, 50)">
+    <!-- Phone body representing device being charged -->
+    <rect x="25" y="10" width="70" height="120" rx="10" fill="#2D333B" stroke="#484F58" stroke-width="3"/>
+    <rect x="35" y="25" width="50" height="90" rx="4" fill="#161B22"/>
+    
+    <!-- Cable leading to charger -->
+    <path d="M 60 130 L 60 150" stroke="#E6EDF3" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Faulty/Defective Charger Block (Focus: 劣质 - low quality, dangerous) -->
+    <path d="M 40 150 L 80 150 L 85 185 L 35 185 Z" fill="#30363D" stroke="#F85149" stroke-width="3" stroke-linejoin="round"/>
+    
+    <!-- Prongs -->
+    <rect x="50" y="138" width="5" height="12" fill="#8B949E"/>
+    <rect x="65" y="138" width="5" height="12" fill="#8B949E"/>
+    
+    <!-- Warning symbol on charger -->
+    <polygon points="60,157 70,175 50,175" fill="#F85149"/>
+    <rect x="58" y="162" width="4" height="6" rx="2" fill="#161B22"/>
+    <circle cx="60" cy="171" r="2" fill="#161B22"/>
+    
+    <!-- Spark / Hazard effects indicating danger & poor quality -->
+    <path d="M 32 145 L 20 135 M 88 145 L 100 135" stroke="#F0883E" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="75,130 82,120 78,115 88,105 77,112 80,105 72,120" fill="#F0883E"/>
+    <polygon points="45,130 38,120 42,115 32,105 43,112 40,105 48,120" fill="#F0883E"/>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative subtle elements -->
+  <circle cx="120" cy="115" r="75" fill="#242933" opacity="0.6"/>
+  <path d="M70 170 Q120 145 170 170" stroke="#313846" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Character Bust / Dung nhan (Facial features, dignified & gentle expression representing "容颜") -->
+  <g id="facial-features">
+    <!-- Neck and Shoulders/Clothing -->
+    <path d="M95 165 C95 150 105 142 120 142 C135 142 145 150 145 165 L165 190 C165 195 160 198 155 198 L85 198 C80 198 75 195 75 190 Z" fill="#2B3240"/>
+    <path d="M100 165 L120 180 L140 165" stroke="#F6C90E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.8"/>
+
+    <!-- Head / Face Silhouette -->
+    <path d="M85 105 C85 78 100 65 120 65 C140 65 155 78 155 105 C155 135 142 152 120 152 C98 152 85 135 85 105 Z" fill="#FAD1B4"/>
+
+    <!-- Hair styling (Graceful framing, hint of timeless elegance) -->
+    <path d="M84 100 C83 75 98 58 120 57 C142 58 157 75 156 100 C156 100 159 70 120 52 C81 70 84 100 84 100 Z" fill="#2A2F3D"/>
+    <!-- Gentle side hair strands -->
+    <path d="M86 95 C82 115 88 135 94 148 C91 135 89 115 90 95 Z" fill="#2A2F3D"/>
+    <path d="M154 95 C158 115 152 135 146 148 C149 135 151 115 150 95 Z" fill="#2A2F3D"/>
+
+    <!-- Facial Features: Eyes (Serene, gentle gaze) -->
+    <path d="M100 102 Q106 97 112 102" stroke="#3E2723" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M128 102 Q134 97 140 102" stroke="#3E2723" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <!-- Eyelashes / Soft Expression Details -->
+    <path d="M98 100 L96 97" stroke="#3E2723" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M142 100 L144 97" stroke="#3E2723" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Nose -->
+    <path d="M120 110 L117 122 C117 123 118 124 120 124 C122 124 123 123 123 122 Z" fill="#E8B493"/>
+
+    <!-- Gentle Smile (Warm, dignified) -->
+    <path d="M110 134 Q120 142 130 134" stroke="#C97A6B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Subtle Rosy Cheeks -->
+    <circle cx="103" cy="118" r="7" fill="#F48FB1" opacity="0.3"/>
+    <circle cx="137" cy="118" r="7" fill="#F48FB1" opacity="0.3"/>
+  </g>
+
+  <!-- Golden Accent / Glow representing time's grace & radiance ("秀丽容颜") -->
+  <circle cx="120" cy="105" r="62" stroke="#F6C90E" stroke-width="1.5" stroke-dasharray="6 8" fill="none" opacity="0.4"/>
+</svg>

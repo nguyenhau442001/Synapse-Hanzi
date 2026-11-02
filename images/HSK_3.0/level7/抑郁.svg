@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle ambient shadow/glow representing heaviness -->
+  <ellipse cx="120" cy="180" rx="60" ry="12" fill="#111317" opacity="0.6"/>
+
+  <!-- Character depicting "抑郁" (Noun/Person experiencing melancholy/depression) -->
+  <g transform="translate(0, 10)">
+    <!-- Overhanging cloud/weight motif symbolizing pressure/u uất -->
+    <path d="M 80 65 Q 90 50 110 52 Q 125 42 145 50 Q 165 48 175 65 Q 190 75 180 95 Q 185 110 165 115 L 75 115 Q 60 110 65 95 Q 55 75 80 65 Z" fill="#2D3748" opacity="0.7"/>
+    
+    <!-- Droplets / Rain of heaviness -->
+    <line x1="95" y1="125" x2="90" y2="138" stroke="#4A5568" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+    <line x1="120" y1="123" x2="117" y2="140" stroke="#4A5568" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+    <line x1="145" y1="125" x2="148" y2="138" stroke="#4A5568" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Hunched Back / Body (Flat vector styling) -->
+    <!-- Torso and shoulders slumped forward -->
+    <path d="M 95 185 C 90 165 100 135 120 135 C 145 135 155 160 150 185 Z" fill="#3182CE"/>
+
+    <!-- Head bowed down -->
+    <circle cx="120" cy="122" r="18" fill="#FBD38D"/>
+
+    <!-- Hair (dark/muted) -->
+    <path d="M 102 118 Q 120 102 138 118 Q 135 110 120 108 Q 105 110 102 118 Z" fill="#4A5568"/>
+
+    <!-- Head posture indicator: closed eyes / downward gaze -->
+    <path d="M 124 124 L 130 125" stroke="#718096" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Arms wrapped/hugged around knees or lowered -->
+    <path d="M 102 145 Q 115 150 125 165" stroke="#2B6CB0" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <path d="M 138 145 Q 125 150 115 165" stroke="#2B6CB0" stroke-width="12" stroke-linecap="round" fill="none"/>
+
+    <!-- Base seat/ground -->
+    <rect x="85" y="185" width="70" height="8" rx="4" fill="#4A5568"/>
+  </g>
+</svg>

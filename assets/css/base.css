@@ -75,6 +75,7 @@
   --example-border: #E0D5C3;
   --radius-lg: 16px;
   --radius-md: 10px;
+  --radius-pill: 999px;
 }
 
 /* Dark palette — Deep nocturnal ink wash (松烟黛墨) with subtle gold ornaments & cinnabar accents */
@@ -130,6 +131,9 @@
     --warning-text: #D4B37F;
     --example-bg: #191D23;
     --example-border: #2D333D;
+    --radius-lg: 16px;
+    --radius-md: 10px;
+    --radius-pill: 999px;
   }
 }
 
@@ -185,6 +189,9 @@
   --warning-text: #D4B37F;
   --example-bg: #191D23;
   --example-border: #2D333D;
+  --radius-lg: 16px;
+  --radius-md: 10px;
+  --radius-pill: 999px;
 }
 
 :root[data-theme="light"] {
@@ -240,6 +247,9 @@
 
   --example-bg: #F5EFE4;
   --example-border: #E0D5C3;
+  --radius-lg: 16px;
+  --radius-md: 10px;
+  --radius-pill: 999px;
 }
 
 /* Chinese Classical Landscape Canvas (山水画意境背景) */
@@ -394,13 +404,67 @@ body {
 .author-credit a:hover, .contact-credit a:hover {
   text-decoration: underline;
 }
+.app { width: 100%; max-width: none; margin: 0 auto; }
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding: 12px 0 16px;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+.app-header-brand {
+  flex: 0 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.app-header-brand h1 { font-size: 19px; font-weight: 800; margin: 0; color: var(--text-primary); letter-spacing: -0.02em; line-height: 1.2; }
+.app-header-brand p { font-size: 11.5px; color: var(--text-tertiary); margin: 2px 0 0; line-height: 1.25; font-weight: 500; white-space: nowrap; }
+.app-brand-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+}
+.app-brand-logo-img {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  display: block;
+}
+.app-brand-text-block {
+  min-width: 0;
+}
+.brand-pinyin {
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+.brand-en {
+  font-weight: 500;
+  color: var(--text-primary);
+  opacity: 0.85;
+}
+.brand-tagline {
+  color: var(--text-secondary);
+}
+.brand-sep {
+  color: var(--text-tertiary, #94a3b8);
+  margin: 0 1px;
+}
 .app-header-actions {
-  position: absolute;
-  top: 0;
-  right: 0;
   display: flex;
   align-items: center;
   gap: 8px;
+  flex: 0 0 auto;
+  position: static;
 }
 .header-streak-badge {
   display: inline-flex;
@@ -468,20 +532,63 @@ body {
 .header-search-btn:focus-visible,
 .header-help-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-/* Below the desktop dock the left sidebar is gone: search becomes a header icon. */
 @media (max-width: 1279px) {
-  .header-search-btn { display: inline-flex; align-items: center; justify-content: center; }
   .theme-toggle-btn,
   .header-search-btn,
-  .header-help-btn { width: 40px; height: 40px; padding: 0; }
+  .header-help-btn,
+  .header-profile-btn { width: 40px; height: 40px; padding: 0; }
   .header-help-btn { border-radius: 999px; }
   .header-streak-badge { height: 40px; font-size: 13px; }
 }
+
+/* Mobile header styling */
 @media (max-width: 767px) {
-  .app-header { text-align: left; min-height: 44px; padding-right: 210px; }
-  .app-header h1 { font-size: 18px; line-height: 44px; margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .app-header p { display: none; }
-  .header-streak-badge { padding: 0 10px; font-size: 12.5px; }
+  .app-header {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0 14px;
+    min-height: auto;
+  }
+  .app-header-brand {
+    flex: 1 1 auto;
+  }
+  .app-brand-badge {
+    height: auto;
+    gap: 8px;
+    max-width: 100%;
+  }
+  .app-brand-logo-img {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+  }
+  .app-brand-text-block {
+    min-width: 0;
+    overflow: hidden;
+  }
+  .app-header-brand h1 {
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 0;
+  }
+  .app-header-brand p {
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .brand-tagline-wrap {
+    display: none;
+  }
+  .app-header-actions {
+    flex: 0 0 auto;
+    gap: 6px;
+  }
+  .header-streak-badge { padding: 0 8px; font-size: 12px; height: 38px; }
+  .header-action-badge { padding: 0 8px; font-size: 12px; height: 38px; }
+  .theme-toggle-btn,
+  .header-search-btn,
+  .header-help-btn { width: 40px; height: 40px; padding: 0; }
 }
 
 /* Keep the complete study controls visible at 100% zoom on shorter desktop viewports. */

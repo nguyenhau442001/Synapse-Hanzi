@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Book as the carrier (vật mang) -->
+  <g transform="translate(60, 70)">
+    <!-- Book cover -->
+    <path d="M120 100 L120 20 L40 0 L40 80 Z" fill="#FFB347"/>
+    <path d="M40 80 L120 100 L120 20 L40 0 Z" fill="#E69A30"/>
+    
+    <!-- Pages -->
+    <path d="M42 5 L118 23 L118 95 L42 77 Z" fill="#F0F0F0"/>
+    <path d="M44 10 L116 26 L116 90 L44 74 Z" fill="#D1D1D1"/>
+    
+    <!-- Lines representing text/content being carried -->
+    <line x1="55" y1="25" x2="105" y2="35" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+    <line x1="55" y1="40" x2="105" y2="50" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+    <line x1="55" y1="55" x2="105" y2="65" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+    <line x1="55" y1="70" x2="90" y2="78" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Stylized light rays/flow indicating transmission -->
+  <path d="M180 120 C 200 120, 210 100, 210 80" stroke="#FFB347" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M180 140 C 220 140, 230 100, 230 60" stroke="#FFB347" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="210" cy="80" r="3" fill="#FFB347"/>
+  <circle cx="230" cy="60" r="4" fill="#FFB347"/>
+</svg>

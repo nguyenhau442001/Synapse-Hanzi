@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Teacher figure (left) -->
+  <g transform="translate(40, 80)">
+    <circle cx="40" cy="30" r="12" fill="#FFB86C"/>
+    <path d="M28 50h24c5 0 8 4 8 8v30H20V58c0-4 3-8 8-8z" fill="#FFB86C"/>
+    <path d="M30 88v30h8v-30M44 88v30h8v-30" fill="#FFB86C"/>
+    <!-- Speech bubble pointing right -->
+    <path d="M65 30h30v20h-15l-10 10v-10h-5z" fill="#FFB86C"/>
+  </g>
+
+  <!-- Student figure (right) -->
+  <g transform="translate(120, 80)">
+    <circle cx="40" cy="30" r="12" fill="#8BE9FD"/>
+    <path d="M28 50h24c5 0 8 4 8 8v30H20V58c0-4 3-8 8-8z" fill="#8BE9FD"/>
+    <path d="M30 88v30h8v-30M44 88v30h8v-30" fill="#8BE9FD"/>
+    <!-- Speech bubble pointing left -->
+    <path d="M15 30h30v20h15l10 10v-10h-5z" fill="#8BE9FD"/>
+  </g>
+
+  <!-- Interaction Arrows -->
+  <g stroke="#F8F8F2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M90 120 h60" />
+    <path d="M100 110 l-10 10 l10 10" />
+    <path d="M140 110 l10 10 l-10 10" />
+  </g>
+</svg>

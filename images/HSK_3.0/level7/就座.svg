@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Table -->
+  <rect x="40" y="150" width="160" height="12" rx="2" fill="#34495E"/>
+  <rect x="50" y="162" width="8" height="30" fill="#2C3E50"/>
+  <rect x="182" y="162" width="8" height="30" fill="#2C3E50"/>
+  
+  <!-- Chair -->
+  <rect x="100" y="160" width="40" height="10" rx="2" fill="#F39C12"/>
+  <rect x="105" y="170" width="30" height="30" rx="4" fill="#F39C12"/>
+  <rect x="105" y="135" width="30" height="10" rx="2" fill="#F39C12"/>
+  
+  <!-- Person sitting -->
+  <circle cx="120" cy="115" r="15" fill="#BDC3C7"/>
+  <path d="M105 130 C 105 120, 135 120, 135 130 L 130 160 L 110 160 Z" fill="#BDC3C7"/>
+  
+  <!-- Arm gesture (polite invitation) -->
+  <path d="M135 125 L 155 135" stroke="#BDC3C7" stroke-width="6" stroke-linecap="round"/>
+  <path d="M155 135 L 165 120" stroke="#BDC3C7" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Decorative accent for professional setting -->
+  <circle cx="120" cy="156" r="3" fill="#1A1D24"/>
+</svg>

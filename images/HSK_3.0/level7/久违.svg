@@ -1,0 +1,54 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Layer: Transition from heavy dark-blue clouds/rain to clear warm sky -->
+  <!-- Dark/Cold left side (the long wait / gray winter) -->
+  <path d="M 0 0 L 120 0 L 90 240 L 0 240 Z" fill="#222834" opacity="0.7"/>
+  <!-- Light/Warm right side (the returning warmth / 久违) -->
+  <path d="M 120 0 L 240 0 L 240 240 L 90 240 Z" fill="#1E232F"/>
+
+  <!-- Contrast Metaphor: Timeline / Progression from dark overcast to sudden golden sunlight -->
+  <!-- Raindrops representing the long elapsed gloomy period -->
+  <g stroke="#3A4454" stroke-width="2" stroke-linecap="round" opacity="0.6">
+    <line x1="40" y1="60" x2="35" y2="80"/>
+    <line x1="70" y1="40" x2="65" y2="60"/>
+    <line x1="55" y1="100" x2="50" y2="120"/>
+  </g>
+
+  <!-- Heavy Cloud dissolving into light -->
+  <path d="M 25 70 C 25 55 45 50 55 60 C 65 45 90 50 95 70 C 105 75 105 95 95 100 L 30 100 C 20 95 20 75 25 70 Z" fill="#2E3846" opacity="0.5"/>
+
+  <!-- Progression Arrow / Timeline breaking through -->
+  <path d="M 60 170 C 90 170, 120 140, 150 100 C 170 73, 190 50, 210 35" fill="none" stroke="#F5A623" stroke-width="3" stroke-dasharray="6 4" opacity="0.4"/>
+
+  <!-- Central Visual Metaphor: The sudden golden warmth breaking back through (Sun & Blooming Growth) -->
+  <!-- Radiant Sun (Golden Warmth) -->
+  <circle cx="170" cy="75" r="28" fill="#F5A623" opacity="0.15"/>
+  <circle cx="170" cy="75" r="20" fill="#F5A623"/>
+  
+  <!-- Sun Rays bursting out -->
+  <g stroke="#F5A623" stroke-width="2.5" stroke-linecap="round">
+    <line x1="170" y1="40" x2="170" y2="30"/>
+    <line x1="170" y1="110" x2="170" y2="120"/>
+    <line x1="135" y1="75" x2="125" y2="75"/>
+    <line x1="205" y1="75" x2="215" y2="75"/>
+    <line x1="145" y1="50" x2="138" y2="43"/>
+    <line x1="195" y1="100" x2="202" y2="107"/>
+  </g>
+
+  <!-- Ground Landscape -->
+  <rect x="0" y="200" width="240" height="40" fill="#14171E"/>
+  <path d="M 0 200 Q 60 190 120 200 T 240 200 L 240 240 L 0 240 Z" fill="#171B22"/>
+
+  <!-- Plant Sprout reaching up toward the returning warm light (Causality / Growth after a long wait) -->
+  <!-- Stem -->
+  <path d="M 120 205 C 120 185, 125 170, 130 155" fill="none" stroke="#2ECC71" stroke-width="3" stroke-linecap="round"/>
+  <!-- Leaves catching the golden light -->
+  <path d="M 125 180 C 110 175, 105 160, 115 150 C 122 150, 126 165, 125 180 Z" fill="#2ECC71"/>
+  <path d="M 128 165 C 143 158, 150 145, 142 135 C 135 137, 130 150, 128 165 Z" fill="#2ECC71"/>
+  <path d="M 130 155 C 130 140, 135 130, 130 120 C 126 130, 128 142, 130 155 Z" fill="#27AE60"/>
+
+  <!-- Highlight accents representing the preciousness of "long-awaited" return -->
+  <circle cx="170" cy="75" r="8" fill="#FFF" opacity="0.6"/>
+</svg>

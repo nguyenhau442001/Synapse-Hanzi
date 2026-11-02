@@ -1,0 +1,31 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Table surface -->
+  <rect x="20" y="180" width="200" height="10" fill="#2D343E" rx="2"/>
+  
+  <!-- Ancient Book -->
+  <g transform="translate(60, 70)">
+    <!-- Book cover -->
+    <path d="M10 0 L110 0 L120 20 L120 100 L20 100 L10 80 Z" fill="#4A4E58"/>
+    <!-- Pages -->
+    <path d="M15 5 L115 5 L115 95 L15 95 Z" fill="#D1C7B7"/>
+    <!-- Damage/Tear -->
+    <path d="M40 20 L70 20 L75 40 L45 40 Z" fill="#1A1D24"/>
+    <!-- Patch being applied -->
+    <path d="M35 15 L80 15 L80 45 L35 45 Z" fill="#E6B450" opacity="0.8"/>
+  </g>
+  
+  <!-- Hands working -->
+  <g transform="translate(100, 110)">
+    <!-- Left hand holding brush/tool -->
+    <path d="M20 20 C10 20 0 30 0 40 L0 60 C0 70 10 80 20 80 L30 80 L30 20 Z" fill="#FFD1A9"/>
+    <rect x="25" y="10" width="4" height="40" fill="#A88B65" transform="rotate(-15 27 30)"/>
+    <!-- Right hand pressing paper -->
+    <path d="M40 30 C50 30 60 40 60 50 L60 70 C60 80 50 90 40 90 L30 90 L30 30 Z" fill="#FFD1A9"/>
+  </g>
+  
+  <!-- Tool: Glue pot -->
+  <circle cx="180" cy="150" r="20" fill="#3A3F4B"/>
+  <path d="M170 135 L190 135 L185 125 L175 125 Z" fill="#E6B450"/>
+</svg>

@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Elements: Distant tranquil bamboo / soft night atmosphere -->
+  <g opacity="0.3">
+    <line x1="60" y1="50" x2="60" y2="190" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+    <line x1="180" y1="40" x2="180" y2="180" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+    <line x1="200" y1="70" x2="200" y2="170" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Central Physical Location: A secluded small tea pavilion / teahouse (僻静的茶馆小景) -->
+  <g>
+    <!-- Roof Structure -->
+    <path d="M70 95 L120 70 L170 95 L180 105 L60 105 Z" fill="#2D3748"/>
+    <path d="M60 105 L120 78 L180 105 Z" fill="#4A5568"/>
+    
+    <!-- Warm interior glow (indicating quiet, cozy atmosphere) -->
+    <rect x="85" y="105" width="70" height="75" fill="#252D3D"/>
+    <rect x="95" y="115" width="22" height="45" rx="2" fill="#D69E2E" opacity="0.85"/>
+    <rect x="123" y="115" width="22" height="45" rx="2" fill="#D69E2E" opacity="0.85"/>
+    
+    <!-- Window frame grid -->
+    <line x1="106" y1="115" x2="106" y2="160" stroke="#1A1D24" stroke-width="2"/>
+    <line x1="134" y1="115" x2="134" y2="160" stroke="#1A1D24" stroke-width="2"/>
+    <line x1="95" y1="137" x2="117" y2="137" stroke="#1A1D24" stroke-width="2"/>
+    <line x1="123" y1="137" x2="145" y2="137" stroke="#1A1D24" stroke-width="2"/>
+
+    <!-- Building Base / Walls -->
+    <path d="M75 160 L165 160 L170 180 L70 180 Z" fill="#283142"/>
+
+    <!-- Lantern emitting soft, secluded golden light -->
+    <path d="M117 92 L123 92 L125 102 L115 102 Z" fill="#ECC94B"/>
+    <circle cx="120" cy="107" r="5" fill="#F6AD55"/>
+    <!-- Soft light aura -->
+    <circle cx="120" cy="107" r="14" fill="#F6AD55" opacity="0.2"/>
+
+    <!-- Foreground quiet details: A small bonsai plant / stone lantern representing solitude -->
+    <path d="M85 178 L95 178 L93 185 L87 185 Z" fill="#718096"/>
+    <path d="M82 173 C82 170 98 170 98 173 Z" fill="#4A5568"/>
+    <!-- Green foliage -->
+    <circle cx="90" cy="167" r="6" fill="#38A169"/>
+    <circle cx="86" cy="165" r="4" fill="#48BB78"/>
+  </g>
+
+  <!-- Peaceful night ambient touches -->
+  <g opacity="0.6">
+    <circle cx="45" cy="70" r="1" fill="#E2E8F0"/>
+    <circle cx="195" cy="65" r="1.5" fill="#E2E8F0"/>
+    <circle cx="210" cy="110" r="1" fill="#E2E8F0"/>
+    <circle cx="35" cy="140" r="1.2" fill="#E2E8F0"/>
+  </g>
+</svg>

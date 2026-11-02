@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Atmospheric Hazard Background (Dense toxic smoke layers) -->
+  <path d="M 20 180 Q 50 160 80 185 T 140 175 T 200 185 T 220 170 L 220 220 L 20 220 Z" fill="#2D3748" opacity="0.6"/>
+  <path d="M 10 150 Q 45 130 90 155 T 160 145 T 210 160 L 230 220 L 10 220 Z" fill="#3A2E39" opacity="0.8"/>
+  
+  <!-- Toxic Smoke Swirls (Amber/Orange toxic tint) -->
+  <path d="M 30 110 Q 60 90 90 120 T 150 110 T 210 130" stroke="#FF6B35" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.3"/>
+  <path d="M 50 80 Q 80 60 110 90 T 170 85" stroke="#FF8C42" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.4"/>
+
+  <!-- Central Character (Human figure experiencing suffocation in smoky environment) -->
+  <!-- Shoulders & Torso -->
+  <path d="M 80 200 C 80 175 100 160 120 160 C 140 160 160 175 160 200 Z" fill="#252D3D"/>
+  
+  <!-- Neck -->
+  <rect x="108" y="138" width="24" height="30" rx="6" fill="#D8A47F"/>
+
+  <!-- Head (Tilted backward / struggling for air) -->
+  <circle cx="120" cy="115" r="30" fill="#E5B28C"/>
+
+  <!-- Hair -->
+  <path d="M 92 110 C 90 90 105 82 120 82 C 135 82 150 90 148 115 C 140 105 130 100 120 100 C 110 100 98 105 92 110 Z" fill="#4A3B32"/>
+
+  <!-- Hands clutching the throat (Signifying severe asphyxia / 窒息) -->
+  <!-- Left Hand / Arm -->
+  <path d="M 90 170 C 80 160 95 140 112 145" fill="none" stroke="#D8A47F" stroke-width="12" stroke-linecap="round"/>
+  <!-- Left Fingers clutching neck -->
+  <circle cx="112" cy="142" r="5" fill="#C6936E"/>
+  <circle cx="122" cy="142" r="5" fill="#C6936E"/>
+
+  <!-- Right Hand / Arm -->
+  <path d="M 150 170 C 160 160 145 140 128 145" fill="none" stroke="#D8A47F" stroke-width="12" stroke-linecap="round"/>
+  <!-- Right Fingers clutching neck -->
+  <circle cx="128" cy="142" r="5" fill="#C6936E"/>
+
+  <!-- Facial Expression (Eyes closed tightly in distress, open gasping mouth) -->
+  <!-- Eyebrows (stressed angle) -->
+  <line x1="104" y1="106" x2="114" y2="110" stroke="#4A3B32" stroke-width="3" stroke-linecap="round"/>
+  <line x1="136" y1="106" x2="126" y2="110" stroke="#4A3B32" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Closed Eyes (Straining) -->
+  <path d="M 104 115 Q 110 119 116 115" stroke="#4A3B32" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M 124 115 Q 130 119 136 115" stroke="#4A3B32" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Gasping Open Mouth (Air starvation) -->
+  <ellipse cx="120" cy="132" rx="7" ry="9" fill="#1A1D24"/>
+
+  <!-- Oxygen Deprivation Indicator (Glow / Warning Accents) -->
+  <circle cx="120" cy="115" r="46" stroke="#FF4D4D" stroke-width="2" stroke-dasharray="6 6" fill="none" opacity="0.5"/>
+</svg>

@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle background glow/target hint representing the contextual archery shot -->
+  <circle cx="120" cy="120" r="85" fill="none" stroke="#2A313C" stroke-width="1" stroke-dasharray="4 4"/>
+  <circle cx="120" cy="120" r="55" fill="none" stroke="#2A313C" stroke-width="1"/>
+  
+  <!-- Target center accent (red center reference) -->
+  <circle cx="120" cy="120" r="8" fill="#E63946" opacity="0.2"/>
+  <circle cx="120" cy="120" r="3" fill="#E63946"/>
+
+  <!-- The Bow (Cây cung) - Sleek, modern flat vector representation of "弓" -->
+  <!-- Bow limbs curving gracefully -->
+  <path d="M 85,50 C 70,85 70,155 85,190 C 130,175 145,120 145,120 C 145,120 130,65 85,50 Z" fill="#212630" />
+  
+  <!-- Outer golden/orange rim of the bow -->
+  <path d="M 83,45 C 65,82 65,158 83,195" fill="none" stroke="#F4A261" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Bow grip / handle wrap -->
+  <path d="M 78,110 L 92,110 L 92,130 L 78,130 Z" fill="#E76F51" rx="2"/>
+  <line x1="81" y1="115" x2="89" y2="115" stroke="#1A1D24" stroke-width="2"/>
+  <line x1="81" y1="120" x2="89" y2="120" stroke="#1A1D24" stroke-width="2"/>
+  <line x1="81" y1="125" x2="89" y2="125" stroke="#1A1D24" stroke-width="2"/>
+
+  <!-- Bowstring (Dây cung) drawn back tautly -->
+  <line x1="83" y1="45" x2="165" y2="120" stroke="#E0E6ED" stroke-width="2"/>
+  <line x1="165" y1="120" x2="83" y2="195" stroke="#E0E6ED" stroke-width="2"/>
+
+  <!-- Arrow nocked and ready (Mũi tên) -->
+  <!-- Arrow shaft -->
+  <line x1="55" y1="120" x2="185" y2="120" stroke="#E0E6ED" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Arrow head (pointing towards the target/right) -->
+  <polygon points="185,120 170,113 170,127" fill="#F4A261"/>
+  
+  <!-- Arrow fletching / feathers -->
+  <path d="M 60,120 L 50,110 L 68,116 Z" fill="#E76F51"/>
+  <path d="M 60,120 L 50,130 L 68,124 Z" fill="#E76F51"/>
+
+  <!-- Focus accent / energy glint on the bow limb -->
+  <circle cx="72" cy="70" r="3" fill="#F4A261"/>
+  <circle cx="72" cy="170" r="3" fill="#F4A261"/>
+</svg>

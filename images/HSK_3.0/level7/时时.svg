@@ -1,0 +1,71 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container & Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Definitions for Gradients & Glows -->
+  <defs>
+    <linearGradient id="orbitGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#F97316"/>
+    </linearGradient>
+  </defs>
+
+  <!-- BACKGROUND: Progression / Continuity Theme (Timeline / Orbit Metaphor for "Shíshí" - Always/Constantly) -->
+  <g opacity="0.6">
+    <!-- Continuous Timeline Ring -->
+    <circle cx="120" cy="120" r="72" fill="none" stroke="#2D3748" stroke-width="2" stroke-dasharray="4 4"/>
+    <circle cx="120" cy="120" r="72" fill="none" stroke="url(#accentGrad)" stroke-width="3" stroke-dasharray="113 226" stroke-linecap="round"/>
+  </g>
+
+  <!-- CENTRAL METAPHOR: Progression, Vigilance & Continuity (Multi-step watchful focus representing continuous awareness) -->
+  
+  <!-- Radar / Scanning Waves (Representing "Constantly Monitoring / Always") -->
+  <circle cx="120" cy="120" r="48" fill="none" stroke="#3B82F6" stroke-width="1.5" opacity="0.2"/>
+  <circle cx="120" cy="120" r="28" fill="none" stroke="#3B82F6" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Step-by-Step Progression Nodes along the timeline (Showing constant state across time) -->
+  <!-- Node 1: Past/Ongoing -->
+  <circle cx="60" cy="120" r="6" fill="#2D3748" stroke="#4F46E5" stroke-width="2"/>
+  <path d="M57 120L59 122L63 118" fill="none" stroke="#6366F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Node 2: Present/Peak Focus (Golden Accent) -->
+  <circle cx="120" cy="48" r="8" fill="#1A1D24" stroke="url(#accentGrad)" stroke-width="3"/>
+  <circle cx="120" cy="48" r="3" fill="#F59E0B"/>
+
+  <!-- Node 3: Future/Ongoing -->
+  <circle cx="180" cy="120" r="6" fill="#2D3748" stroke="#4F46E5" stroke-width="2"/>
+  <path d="M177 120L179 122L183 118" fill="none" stroke="#6366F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- CORE ICONOGRAPHY: Magnifying Lens / Shield of Attention (Traveler's Safety & Constant Vigilance Context) -->
+  <!-- Sleek Modern Shield Base -->
+  <path d="M120 75C120 75 145 83 145 112C145 138 120 156 120 156C120 156 95 138 95 112C95 83 120 75 120 75Z" fill="#252A34" stroke="#374151" stroke-width="2"/>
+
+  <!-- Inner Shield Glow/Fill -->
+  <path d="M120 81C120 81 140 88 140 112C140 133 120 148 120 148C120 148 100 133 100 112C100 88 120 81 120 81Z" fill="#1E293B"/>
+
+  <!-- Magnifying Glass / Scanning Focus Symbol (Active 'Always On' Attention) -->
+  <circle cx="120" cy="112" r="16" fill="none" stroke="url(#accentGrad)" stroke-width="3"/>
+  <!-- Lens reflection -->
+  <path d="M110 104C112 102 115 101 118 101" stroke="#FBBF24" stroke-width="2" stroke-linecap="round"/>
+  <!-- Handle -->
+  <path d="M131 123L144 136" stroke="url(#accentGrad)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Checkmark of Safety/Readiness inside lens -->
+  <path d="M113 112L118 117L127 107" fill="none" stroke="#34D399" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Dynamic Continuity Markers (Pulsing indicators showing "At all times / 时时") -->
+  <circle cx="120" cy="190" r="3" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="108" cy="190" r="2" fill="#4F46E5" opacity="0.6"/>
+  <circle cx="132" cy="190" r="2" fill="#4F46E5" opacity="0.6"/>
+  <circle cx="96" cy="190" r="1.5" fill="#2D3748"/>
+  <circle cx="144" cy="190" r="1.5" fill="#2D3748"/>
+
+  <!-- Flow Arrows indicating unbroken cycle/repetition -->
+  <path d="M72 90C66 100 64 110 64 120" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 4"/>
+  <path d="M168 90C174 100 176 110 176 120" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 4"/>
+
+</svg>

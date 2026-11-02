@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Representing "冗长" (long-winded/tedious) via a contrast between a concise, focused point and an excessively long, winding document -->
+  
+  <!-- The "Concise" ideal: A sharp, bright gold arrow pointing directly to a small, clear target -->
+  <circle cx="180" cy="60" r="12" fill="#FFB84D"/>
+  <path d="M180 80 L180 110" stroke="#FFB84D" stroke-width="4" stroke-linecap="round"/>
+  <path d="M170 100 L180 110 L190 100" stroke="#FFB84D" stroke-width="4" stroke-linecap="round" fill="none"/>
+  
+  <!-- The "冗长" (Tedious) reality: A document that snakes endlessly across the frame, visually overwhelming the space -->
+  <path d="M40 140 L160 140 C180 140 180 160 160 160 L60 160 C40 160 40 180 60 180 L180 180 C200 180 200 200 180 200 L40 200" 
+        stroke="#7D8590" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- Visual contrast: The document is grey/dull, the target is bright gold -->
+  <rect x="40" y="130" width="20" height="80" rx="4" fill="#4B515D"/>
+  <rect x="200" y="130" width="20" height="80" rx="4" fill="#4B515D"/>
+  
+  <!-- Exaggerated Scale: The document is clearly too long for the frame, implying tediousness -->
+</svg>

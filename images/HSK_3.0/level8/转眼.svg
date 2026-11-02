@@ -1,0 +1,36 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Minimalist sleek modern hourglass representing time passing quickly in a blink -->
+    <!-- Top glass triangle -->
+    <polygon points="80,68 160,68 120,116" fill="#2E3440" opacity="0.6"/>
+    <!-- Bottom glass triangle -->
+    <polygon points="80,172 160,172 120,124" fill="#2E3440" opacity="0.6"/>
+    
+    <!-- Sand dropping / motion lines representing "zhuǎnyǎn" (in the blink of an eye) -->
+    <line x1="120" y1="116" x2="120" y2="124" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Top sand pile -->
+    <path d="M 92,80 L 148,80 C 138,104 130,110 120,115 C 110,110 102,104 92,80 Z" fill="#F6AD55"/>
+    
+    <!-- Bottom sand pile -->
+    <path d="M 96,160 L 144,160 C 136,135 128,128 120,125 C 112,128 104,135 96,160 Z" fill="#F6AD55"/>
+
+    <!-- Hourglass frame (modern sleek flat gold/orange accent) -->
+    <rect x="72" y="60" width="96" height="8" rx="4" fill="#F6AD55"/>
+    <rect x="72" y="172" width="96" height="8" rx="4" fill="#F6AD55"/>
+    
+    <!-- Side pillars -->
+    <rect x="78" y="68" width="5" height="104" rx="2" fill="#E2E8F0" opacity="0.9"/>
+    <rect x="157" y="68" width="5" height="104" rx="2" fill="#E2E8F0" opacity="0.9"/>
+
+    <!-- Dynamic motion/blink arcs wrapping the hourglass -->
+    <path d="M 64,100 C 56,120 56,140 64,150" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <path d="M 176,100 C 184,120 184,140 176,150" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+    
+    <!-- Speed indicator arrows -->
+    <path d="M 58,110 L 64,100 L 70,110" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M 182,110 L 176,100 L 170,110" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

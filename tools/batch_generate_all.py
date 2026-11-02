@@ -68,26 +68,68 @@ def get_api_keys(cli_arg=""):
     return keys
 
 MODELS_TO_TRY = [
-    "gemini-flash-lite-latest",
     "gemini-2.5-flash",
-    "gemini-3.5-flash-lite",
-    "gemini-3.1-flash-lite-preview",
-    "gemini-3.1-flash-lite",
-    "gemini-3.6-flash",
-    "gemini-3.5-flash",
-    "gemini-3.8-flash",
-    "gemini-3-flash-preview",
     "gemini-flash-latest",
+    "gemini-3.5-flash",
+    "gemini-3.6-flash",
+    "gemini-3.7-flash",
+    "gemini-3.8-flash",
+    "gemini-flash-lite-latest",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite",
+    "gemini-3.1-flash-lite-preview",
 ]
 
 
+def log_ts(msg):
+    ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    s = str(msg)
+    if s.startswith("\n"):
+        print(f"\n[{ts}] {s[1:]}", flush=True)
+    else:
+        print(f"[{ts}] {s}", flush=True)
+
 MODEL_COOLDOWNS = {}      # (k_idx, model) -> float timestamp when cooldown expires
 PERMANENT_EXHAUSTED = set() # (k_idx, model) -> only for daily quota or 404/400
+RENEW_TIMESTAMPS = []       # list of float timestamps when quota renews
+ABORT_EVENT = threading.Event() # Set when all models are exhausted to immediately stop all workers
+
+def extract_retry_delay(err_body):
+    try:
+        data = json.loads(err_body)
+        for d in data.get("error", {}).get("details", []):
+            if "retryDelay" in d:
+                m = re.match(r"^(\d+)", str(d["retryDelay"]))
+                if m:
+                    return int(m.group(1))
+    except Exception:
+        pass
+    m = re.search(r"retry in\s+(?:(\d+)h)?\s*(?:(\d+)m)?\s*(?:([0-9.]+)s)?", err_body, re.IGNORECASE)
+    if m:
+        h = int(m.group(1) or 0)
+        minutes = int(m.group(2) or 0)
+        secs = float(m.group(3) or 0)
+        return int(h * 3600 + minutes * 60 + secs)
+    return None
 
 def all_models_permanently_exhausted(api_keys):
     with exhausted_lock:
         total_possible = len(api_keys) * len(MODELS_TO_TRY)
         return len(PERMANENT_EXHAUSTED) >= total_possible
+
+def report_exhausted_and_renew():
+    with exhausted_lock:
+        best_renew = min(RENEW_TIMESTAMPS) if RENEW_TIMESTAMPS else (time.time() + 20 * 3600)
+    renew_dt = datetime.fromtimestamp(best_renew).strftime("%Y-%m-%d %H:%M:%S")
+    diff_secs = max(0, int(best_renew - time.time()))
+    h = diff_secs // 3600
+    m = (diff_secs % 3600) // 60
+    s = diff_secs % 60
+    log_ts("==================================================================")
+    log_ts("[!] TẤT CẢ CÁC MODEL FLASH ĐÃ CHẠM TRẦN DAILY QUOTA CỦA GOOGLE.")
+    log_ts(f"[*] THỜI GIAN DỰ KIẾN GOOGLE RENEW QUOTA: {renew_dt} (sau {h}h {m}m {s}s).")
+    log_ts("[*] Đã lưu manifest & dừng tiến trình an toàn.")
+    log_ts("==================================================================")
 
 def is_model_available(k_idx, model):
     with exhausted_lock:
@@ -96,13 +138,23 @@ def is_model_available(k_idx, model):
         cooldown = MODEL_COOLDOWNS.get((k_idx, model), 0)
         return time.time() >= cooldown
 
-def mark_model_throttled(k_idx, model, is_daily=False, seconds=6):
+def mark_model_throttled(k_idx, model, is_daily=False, seconds=6, retry_delay=None, api_keys=None):
     with exhausted_lock:
         if is_daily:
             PERMANENT_EXHAUSTED.add((k_idx, model))
-            print(f"        [>>> PERMANENT DAILY LIMIT] Key #{k_idx+1} on {model} reached daily quota.", flush=True)
+            if retry_delay and retry_delay > 0:
+                renew_ts = time.time() + retry_delay
+                RENEW_TIMESTAMPS.append(renew_ts)
+                dt_str = datetime.fromtimestamp(renew_ts).strftime("%Y-%m-%d %H:%M:%S")
+                rem_h = retry_delay / 3600
+                log_ts(f"        [>>> DAILY LIMIT] Key #{k_idx+1} on {model} chạm trần ngày. Renew lúc: {dt_str} (~{rem_h:.1f}h nữa)")
+            else:
+                log_ts(f"        [>>> DAILY LIMIT] Key #{k_idx+1} on {model} chạm trần ngày.")
         else:
             MODEL_COOLDOWNS[(k_idx, model)] = time.time() + seconds
+
+        if api_keys and len(PERMANENT_EXHAUSTED) >= len(api_keys) * len(MODELS_TO_TRY):
+            ABORT_EVENT.set()
 
 def load_hsk_pos_db():
     """Loads exact part of speech dictionary from word-illustrations.js."""
@@ -119,53 +171,307 @@ def load_hsk_pos_db():
 
 HSK_POS_DB = load_hsk_pos_db()
 
-def classify_pos(meaning, hanzi=""):
-    """
-    Classifies word into one of 4 categories matching user rules:
-    - 'noun': NOUN (Danh từ - vật thể, con người, địa điểm)
-    - 'verb': VERB / ACTION (Động từ)
-    - 'adj': ADJECTIVE / DESCRIBING WORD (Tính từ / Trạng thái)
-    - 'abstract': ABSTRACT / GRAMMAR / ADVERB / CONJUNCTION (Từ trừu tượng, phó từ, liên từ...)
-    """
-    if hanzi and hanzi in HSK_POS_DB:
-        raw_pos = HSK_POS_DB[hanzi]
-        if raw_pos in ('adv', 'conj', 'prep', 'pron', 'measure'):
-            return 'abstract', 'Abstract / Grammar / Adverb / Conjunction (Từ trừu tượng, phó từ, liên từ)'
-        elif raw_pos == 'adj':
-            return 'adj', 'Adjective / Describing Word (Tính từ / Trạng thái)'
-        elif raw_pos == 'verb':
-            return 'verb', 'Verb / Action (Động từ)'
-        elif raw_pos == 'noun':
-            return 'noun', 'Noun (Danh từ - vật thể, con người, địa điểm)'
+SEMANTIC_CATEGORIES = {
+    'profession': {
+        'code': 'profession',
+        'label': '人物 / Professions',
+        'name_vi': 'Nhân vật / Nghề nghiệp',
+        'rule': 'Show the actual person performing their professional role in authentic work attire with realistic anatomy, natural body proportions, and believable tools in an appropriate real-world workplace. Clear visual distinction from students, clients, or recipients.'
+    },
+    'animal': {
+        'code': 'animal',
+        'label': '动物 / Animals',
+        'name_vi': 'Động vật',
+        'rule': 'Show the actual animal with recognizable, realistic anatomy, natural body proportions, authentic fur/scales/feathers, in a subtle natural habitat setting.'
+    },
+    'food': {
+        'code': 'food',
+        'label': '食物 / Food',
+        'name_vi': 'Thức ăn / Đồ uống',
+        'rule': 'Show the actual food or beverage clearly and appetizingly, preferably in a realistic culinary setting (clean plate, bowl, cutting board, or dining table) with authentic textures and colors.'
+    },
+    'object': {
+        'code': 'object',
+        'label': '物品 / Objects',
+        'name_vi': 'Đồ vật / Phương tiện',
+        'rule': 'Show the actual object, tool, vehicle, or item clearly and accurately with authentic physical materials, textures, and clean contextual surfaces.'
+    },
+    'verb': {
+        'code': 'verb',
+        'label': '动词 / Verbs',
+        'name_vi': 'Động từ / Hành động',
+        'rule': 'Show a person or subject visibly performing the exact physical action with natural biomechanics, believable body posture, and cause-and-effect interaction with real objects.'
+    },
+    'adj': {
+        'code': 'adj',
+        'label': '形容词 / Adjectives',
+        'name_vi': 'Tính từ / Trạng thái',
+        'rule': 'Show a clear, visually recognizable real-world situation or distinct visual comparison demonstrating the adjective characteristic.'
+    },
+    'place': {
+        'code': 'place',
+        'label': '地点 / Places',
+        'name_vi': 'Địa điểm / Nơi chốn',
+        'rule': 'Show a recognizable real-world environment and architecture with characteristic architectural features and ambient lighting.'
+    },
+    'abstract': {
+        'code': 'abstract',
+        'label': '抽象概念 / Abstract concepts',
+        'name_vi': 'Khái niệm trừu tượng / Ngữ pháp',
+        'rule': 'Use a simple, intuitive contextual real-world scene directly grounded in the example sentence. Absolutely NO abstract geometric diagrams, dials, meters, or misleading metaphors.'
+    }
+}
 
+def match_vietnamese_phrase(text, phrases):
+    """Matches Vietnamese phrases with boundary safety for non-ASCII characters."""
+    if not text:
+        return False
+    pattern = r'(^|[^a-zà-ỹ0-9_])(' + phrases + r')([^a-zà-ỹ0-9_]|$)'
+    return bool(re.search(pattern, text, re.I))
+
+def classify_semantic_category(meaning, hanzi="", pos=""):
+    """
+    Classifies vocabulary into one of 8 semantic categories:
+    profession, animal, food, object, verb, adj, place, abstract.
+    Treats Vietnamese meaning and Hanzi patterns as authoritative semantic references.
+    """
     m = (meaning or "").lower().strip()
+    h = (hanzi or "").strip()
+    p = (pos or "").lower().strip()
 
-    # 0. Check explicit tag in meaning
-    if re.search(r'\b(tính từ)\b', m):
-        return 'adj', 'Adjective / Describing Word (Tính từ / Trạng thái)'
-    if re.search(r'\b(động từ)\b', m):
-        return 'verb', 'Verb / Action (Động từ)'
-    if re.search(r'\b(danh từ)\b', m):
-        return 'noun', 'Noun (Danh từ - vật thể, con người, địa điểm)'
-    if re.search(r'\b(phó từ|liên từ|trợ từ|thán từ|giới từ|lượng từ|đại từ)\b', m):
-        return 'abstract', 'Abstract / Grammar / Adverb / Conjunction (Từ trừu tượng, phó từ, liên từ)'
+    # 0. Grammar / conjunctions / prepositions / adverbs / pronouns / numerals -> abstract
+    if p in ('adv', 'conj', 'prep', 'pron', 'measure', 'particle', 'interj', 'num') or \
+       match_vietnamese_phrase(m, r'phó từ|liên từ|giới từ|đại từ|lượng từ|trợ từ|thán từ|số từ|mặc dù|tuy rằng|cho nên|bởi vì|thậm chí'):
+        return SEMANTIC_CATEGORIES['abstract']
 
-    clean_m = re.sub(r'^(rất|quá|vô cùng|hết sức|cực kỳ|tương đối|đặc biệt)\s+', '', m)
+    # 0b. Time & temporal concepts -> abstract
+    time_hanzi = r'^(今天|明天|昨天|早上|上午|中午|下午|晚上|以前|以后|现在|刚才|最近|星期|月|年|春天|夏天|秋天|冬天|节日|生日|时间|小时|分钟|秒|时候|什么时候)$'
+    time_vi = r'hôm nay|ngày mai|hôm qua|sáng sớm|buổi sáng|buổi trưa|buổi chiều|buổi tối|ban ngày|ban đêm|thời gian|hiện tại|quá khứ|tương lai|vừa nãy|dạo này|gần đây|tháng|tuần|mùa xuân|mùa hè|mùa thu|mùa đông|ngày lễ|sinh nhật'
+    if re.search(time_hanzi, h) or match_vietnamese_phrase(m, time_vi):
+        return SEMANTIC_CATEGORIES['abstract']
 
-    # 1. Adjective check
-    if re.search(r'^(đẹp|tốt|xấu|to|nhỏ|lớn|cao|thấp|nhanh|chậm|dài|ngắn|nóng|lạnh|mới|cũ|đắt|rẻ|khó|dễ|buồn|vui|sạch|bẩn|ngon|ngọt|đắng|cay|mặn|chua|mệt|đói|no|bận|rảnh|đúng|sai|tiện|phức tạp|đơn giản|quan trọng|an toàn|nguy hiểm|nghiêm túc|cẩn thận|nhiệt tình|tự tin|hạnh phúc|khỏe|yếu|trắng|đen|đỏ|vàng|xanh|gầy|béo|sáng|tối|ấm|mát|sâu|nông|rộng|hẹp|yên tĩnh|ồn ào|tươi|héo|cứng|mềm|khô|ướt|giàu|nghèo|thông minh|ngốc|lười|chăm chỉ|thân thiện|lịch sự|độc ác|hiền lành|dũng cảm|nhút nhát|tuyệt vời|hoàn hảo|kỳ lạ|bình thường|phi thường|ổn định|rõ ràng|mơ hồ)\b', clean_m):
-        return 'adj', 'Adjective / Describing Word (Tính từ / Trạng thái)'
+    # 1. Food / Beverage check (check before animal so eggs/meat are food)
+    food_hanzi = r'(米饭|面条|菜|水果|苹果|香蕉|西瓜|葡萄|桔子|橙子|桃|梨|草莓|蔬菜|土豆|西红柿|番茄|鸡蛋|蛋|羊肉|牛肉|猪肉|鱼肉|鸡肉|肉|汤|蛋糕|面包|饼干|包子|饺子|烤鸭|小吃|零食|糖|巧克力|盐|醋|酱油|辣椒|豆腐|冰激凌|牛奶|茶|咖啡|啤酒|饮料|果汁|矿泉水|葡萄酒|白酒|酒|粮食|玉米|花生)'
+    food_vi = r'cơm|mì|bún|phở|món ăn|thức ăn|đồ ăn|hoa quả|trái cây|quả táo|táo|chuối|dưa hấu|nho|quýt|cam|đào|lê|dâu tây|rau|khoai tây|cà chua|trứng gà|trứng vịt|trứng|thịt cừu|thịt bò|thịt lợn|thịt heo|thịt gà|thịt vịt|thịt|súp|canh|bánh ngọt|bánh gato|bánh mì|bánh quy|bánh bao|sủi cảo|bánh chẻo|vịt quay|đồ ăn vặt|kẹo|đường|sô cô la|sôcôla|muối|giấm|nước tương|xì dầu|ớt|đậu phụ|tàu hũ|kem|sữa|sữa bò|trà|chè|cà phê|cafe|bia|nước ngọt|đồ uống|thức uống|nước ép|sinh tố|rượu|bữa sáng|bữa trưa|bữa tối|lương thực|ngô|bắp|đậu phộng|lạc'
+    if re.search(food_hanzi, h) or match_vietnamese_phrase(m, food_vi):
+        return SEMANTIC_CATEGORIES['food']
 
-    # 2. Verb check
-    if re.search(r'^(làm|đi|nói|ăn|uống|xem|mua|bán|học|chạy|bay|đến|rời|giúp|tổ chức|chuẩn bị|phát hiện|tham gia|quyết định|giải quyết|sử dụng|cung cấp|tìm|gặp|nhớ|hiểu|yêu|ghét|thích|lo|nghĩ|biết|mặc|đeo|viết|đọc|nghe|sắp xếp|bố trí|ôm|xin lỗi|đăng ký|tốt nghiệp|biểu thị|thể hiện|biểu diễn|khen ngợi|bảo vệ|đảm bảo|thực hiện|hoàn thành|phát triển|mở rộng|thay đổi|tổng kết|du lịch|trao đổi|kết hôn|kinh doanh|nghiên cứu|chiến đấu|chúc mừng|cảm ơn|kính trọng|mời|chờ|đợi|hy vọng|ước|tin|nghi ngờ|chú ý|quan tâm|giảng|dạy|vẽ|hát|múa|bơi|chơi|sửa|chữa|chọn|chọn lựa|ném|bắt|kéo|đẩy|cắt|rửa|nấu|xây|phá|mở|đóng|tắt|bật|gửi|nhận|trả lời|hỏi|dừng|bắt đầu|kết thúc|thắng|thua|trèo|leo|vứt|bỏ|rơi|đổ|ngã|cười|khóc|la|hét|gọi|thăm|gặp gỡ|chia sẻ|trao|tặng|nhận được|chịu|chịu đựng|trải qua|kinh qua)\b', m):
-        return 'verb', 'Verb / Action (Động từ)'
+    # 2. Animal check
+    animal_hanzi = r'^(狗|猫|鸟|鱼|熊猫|老虎|狮子|大象|猴子|兔子|马|牛|羊|猪|鸡|鸭|鹅|蛇|鼠|老鼠|昆虫|蝴蝶|蜜蜂|苍蝇|蚊子|蜘蛛|蚂蚁|龙|企鹅|鲸鱼|鲨鱼|乌龟)$'
+    animal_vi = r'con chó|chó|con mèo|mèo|con chim|chim|con cá|cá|gấu trúc|động vật|thú|con hổ|hổ|cọp|sư tử|con voi|voi|con khỉ|khỉ|con thỏ|thỏ|con ngựa|ngựa|con bò|bò|con dê|dê|con cừu|cừu|con heo|heo|con lợn|lợn|con gà|gà|con vịt|vịt|ngỗng|con rắn|rắn|con chuột|chuột|côn trùng|sâu bọ|bướm|con ong|ong|ruồi|muỗi|nhện|kiến|con rồng|rồng|chim cánh cụt|cá voi|cá mập|con rùa|rùa'
+    if re.search(animal_hanzi, h) or match_vietnamese_phrase(m, animal_vi):
+        return SEMANTIC_CATEGORIES['animal']
 
-    # 3. Abstract / Grammar check
-    if re.search(r'^(thậm chí|đột nhiên|bỗng nhiên|vốn dĩ|hầu như|suýt nữa|không ngờ|chẳng qua|tất nhiên|dường như|hình như|tuy nhiên|tuy rằng|mặc dù|bởi vì|cho nên|do đó|vì vậy|ngay cả|vừa\.\.\. vừa|liệu|chẳng lẽ|hoặc|hay là|nếu|nếu như|giả sử|thực ra|kỳ thực|ngược lại|ngay lập tức|lập tức|luôn luôn|thường xuyên|thỉnh thoảng|chưa bao giờ|đã|đang|sẽ|hơn nữa|vả lại|đồng thời|ngoài ra|tóm lại|nói chung|dù sao|rốt cuộc|cuối cùng|từ từ|dần dần|càng|vẫn|còn|chỉ|cũng|đều|vốn|tự nhiên|nhất định|chắc chắn|vô tình|cố ý|hèn gì|thảo nào|hóa ra|thay vì|miễn là|chỉ cần|bất kể|bất luận|cho dù|càng ngày càng|dần|thế nhưng|nhưng|tuy|bởi)\b', m):
-        return 'abstract', 'Abstract / Grammar / Adverb / Conjunction (Từ trừu tượng, phó từ, liên từ)'
+    # 3. Professions / People check
+    prof_hanzi = r'(老师|教师|教授|医生|大夫|护士|厨师|律师|司机|警察|演员|导游|售货员|服务员|记者|作家|科学家|工程师|经理|校长|总裁|总理|主任|师傅|会计|模特|志愿者|读者|观众|乘客|顾客|客人|朋友|同事|同学|邻居|亲戚|孩子|儿童|父母|父亲|母亲|爸爸|妈妈|爷爷|奶奶|姥姥|外公|叔叔|姑姑|舅舅|哥哥|姐姐|弟弟|妹妹|丈夫|妻子|老公|老婆|先生|女士|小姐|小伙子|姑娘|男人|女人|人物|专家|运动员|学生)$'
+    prof_vi = r'thầy giáo|cô giáo|giáo viên|giảng viên|giáo sư|bác sĩ|y tá|y sĩ|điều dưỡng|đầu bếp|nấu bếp|luật sư|lái xe|tài xế|cảnh sát|công an|diễn viên|hướng dẫn viên|nhân viên|phục vụ|người bán hàng|bồi bàn|nhà báo|phóng viên|nhà văn|nhà khoa học|kỹ sư|giám đốc|hiệu trưởng|thủ tướng|chủ nhiệm|thợ|kế toán|người mẫu|tình nguyện viên|độc giả|khán giả|hành khách|khách hàng|bạn bè|đồng nghiệp|bạn học|hàng xóm|họ hàng|trẻ em|con cái|bố mẹ|cha mẹ|bố|ba|mẹ|ông nội|bà nội|ông ngoại|bà ngoại|chú|bác|cô|dì|anh trai|chị gái|em trai|em gái|chồng|vợ|ông chủ|quý ông|quý bà|quý cô|thanh niên|chàng trai|cô gái|con người|nhân vật|chuyên gia|vận động viên|học sinh|sinh viên'
+    if re.search(prof_hanzi, h) or match_vietnamese_phrase(m, prof_vi):
+        return SEMANTIC_CATEGORIES['profession']
 
-    # 4. Default: Noun
-    return 'noun', 'Noun (Danh từ - vật thể, con người, địa điểm)'
+    # 4. Places / Venues check
+    place_hanzi = r'(学校|大学|中学|小学|教室|图书馆|办公室|实验室|操场|体育馆|医院|诊所|药店|饭店|餐厅|咖啡馆|酒吧|超市|商店|商场|市场|银行|邮局|宾馆|酒店|机场|火车站|地铁站|公车站|公共汽车站|码头|公园|动物园|博物馆|电影院|剧场|街道|马路|高速公路|桥|岛|海洋|海滩|沙滩|河流|河|湖|森林|山|农村|城市|国家|中国|北京|家|房间|卧室|客厅|厨房|洗手间|厕所|阳台)'
+    place_vi = r'trường học|trường đại học|trường trung học|trường tiểu học|lớp học|phòng học|thư viện|văn phòng|phòng thí nghiệm|sân tập|nhà thi đấu|bệnh viện|phòng khám|hiệu thuốc|tiệm thuốc|nhà hàng|quán ăn|quán cà phê|quán bar|siêu thị|cửa hàng|trung tâm thương mại|chợ|ngân hàng|bưu điện|khách sạn|nhà nghỉ|sân bay|phi trường|ga tàu|nhà ga|bến xe|bến cảng|công viên|sở thú|viện bảo tàng|rạp chiếu phim|nhà hát|đường phố|con đường|đường cao tốc|cây cầu|hòn đảo|đại dương|bờ biển|bãi biển|dòng sông|hồ|rừng|ngọn núi|nông thôn|thành phố|đất nước|quốc gia|phòng ngủ|phòng khách|nhà bếp|nhà vệ sinh|ban công'
+    if re.search(place_hanzi, h) or match_vietnamese_phrase(m, place_vi):
+        return SEMANTIC_CATEGORIES['place']
+
+    # 5. Objects / Tools / Vehicles check
+    obj_hanzi = r'(电脑|电视|手机|电话|桌子|椅子|床|门|窗户|笔|铅笔|书|词典|笔记本|纸|报纸|地图|衣服|衬衫|裤子|裙子|大衣|毛衣|帽子|鞋子|皮鞋|袜子|手套|围巾|眼镜|手表|钱包|行李箱|包|钥匙|伞|雨伞|药|杯子|瓶子|盘子|碗|筷子|勺子|刀|叉子|剪刀|钟|照相机|自行车|摩托车|汽车|出租车|公共汽车|火车|地铁|飞机|船|轮船|轮椅|玩具|礼物|镜子|梳子|牙刷|牙膏|毛巾|肥皂|垃圾桶|盒子|绳子|电池|充电器|鼠标|键盘|笛子|吉他|钢琴|提琴)'
+    obj_vi = r'máy tính|vi tính|tivi|ti vi|điện thoại|cái bàn|cái ghế|bàn|ghế|giường|cửa sổ|cánh cửa|bút|bút chì|sách|từ điển|cuốn vở|cuốn sổ|tờ giấy|tờ báo|bản đồ|quần áo|áo sơ mi|chiếc áo|chiếc quần|váy|đầm|áo khoác|áo len|mũ|nón|giày|dép|bít tất|đôi tất|đôi vớ|găng tay|khăn quàng|kính mắt|đồng hồ đeo tay|ví tiền|va li|vali|túi xách|ba lô|cặp sách|chìa khóa|cái ô|chiếc ô|cây dù|thuốc|cái cốc|cái chén|cái ly|tách trà|bình nước|chai nước|cái lọ|chiếc đĩa|chiếc dĩa|cái bát|cái tô|đôi đũa|cái thìa|cái muỗng|con dao|chiếc kéo|đồng hồ treo tường|máy ảnh|máy chụp hình|xe đạp|xe máy|xe mô tô|xe ô tô|taxi|xe buýt|tàu hỏa|tàu lửa|tàu điện ngầm|máy bay|tàu thủy|thuyền|xe lăn|đồ chơi|quà tặng|món quà|gương soi|cái lược|bàn chải|kem đánh răng|khăn mặt|xà phòng|thùng rác|cái hộp|dây thừng|cục pin|dây sạc|chuột máy tính|bàn phím|cây đàn|ống sáo'
+    if re.search(obj_hanzi, h) or match_vietnamese_phrase(m, obj_vi):
+        return SEMANTIC_CATEGORIES['object']
+
+    # 6. Adjective check
+    adj_hanzi = r'(大|小|多|少|高|矮|低|长|短|粗|细|胖|瘦|重|轻|快|慢|新|旧|破|热|冷|暖和|凉快|晴|阴|甜|苦|辣|酸|咸|好吃|难吃|好喝|难喝|贵|便宜|干净|脏|容易|难|简单|复杂|漂亮|美丽|帅|丑|亮|暗|吵|安静|远|近|累|饿|饱|渴|忙|闲|疼|舒服|难受|高兴|快乐|伤心|难过|生气|害怕|紧张|轻松|奇怪|热情|认真|聪明|笨|勇敢|害羞)'
+    if p in ('adj', 'adjective') or re.search(adj_hanzi, h) or match_vietnamese_phrase(m, 'tính từ'):
+        return SEMANTIC_CATEGORIES['adj']
+    adj_vi = r'^(đẹp|tốt|xấu|to|nhỏ|lớn|cao|thấp|lùn|nhanh|chậm|dài|ngắn|nóng|lạnh|mới|cũ|đắt|rẻ|khó|dễ|buồn|vui|sạch|bẩn|ngon|ngọt|đắng|cay|mặn|chua|mệt|đói|no|bận|rảnh|đúng|sai|tiện|phức tạp|đơn giản|quan trọng|an toàn|nguy hiểm|nghiêm túc|cẩn thận|nhiệt tình|tự tin|hạnh phúc|khỏe|yếu|trắng|đen|đỏ|vàng|xanh|gầy|béo|sáng|tối|ấm|mát|sâu|nông|rộng|hẹp|yên tĩnh|ồn ào|tươi|héo|cứng|mềm|khô|ướt|giàu|nghèo|thông minh|ngốc|lười|chăm chỉ|thân thiện|lịch sự|độc ác|hiền lành|dũng cảm|nhút nhát|tuyệt vời|hoàn hảo|kỳ lạ|bình thường|ổn định|rõ ràng)\b'
+    if re.search(adj_vi, m):
+        return SEMANTIC_CATEGORIES['adj']
+
+    # 7. Dynamic verb check
+    verb_hanzi = r'(跑|跑步|游泳|踢|踢足球|打|打篮球|打羽毛球|打网球|骑|骑自行车|跳|跳舞|唱歌|爬|爬山|走|散步|飞|起飞|降落|开车|坐|站|躺|蹲|睡|睡觉|起床|洗|洗澡|洗手|刷牙|梳头|买|卖|拿|抓|扔|推|拉|抬|抱|握手|拥抱|挥手|笑|哭|喊|读书|看书|写字|画画|做饭|打扫|修理)'
+    if p in ('verb', 'action') or re.search(verb_hanzi, h) or match_vietnamese_phrase(m, 'động từ'):
+        return SEMANTIC_CATEGORIES['verb']
+    verb_vi = r'^(làm|đi|nói|ăn|uống|xem|mua|bán|học|chạy|bay|đến|rời|giúp|tổ chức|chuẩn bị|tham gia|quyết định|sử dụng|cung cấp|tìm|gặp|nhớ|hiểu|viết|đọc|nghe|sắp xếp|ôm|xin lỗi|đăng ký|biểu diễn|bảo vệ|thực hiện|hoàn thành|phát triển|du lịch|trao đổi|kết hôn|nghiên cứu|chiến đấu|chúc mừng|cảm ơn|mời|chờ|đợi|hy vọng|giảng|dạy|vẽ|hát|múa|bơi|chơi|sửa|chữa|chọn|ném|bắt|kéo|đẩy|cắt|rửa|nấu|xây|phá|mở|đóng|tắt|bật|gửi|nhận|trả lời|hỏi|dừng|bắt đầu|kết thúc|thắng|thua|trèo|leo|vứt|bỏ|rơi|đổ|ngã|cười|khóc|la|hét|gọi|thăm|tặng|chịu|tắm|đánh|đá|ngồi|đứng|nằm|ngủ)\b'
+    if re.search(verb_vi, m):
+        return SEMANTIC_CATEGORIES['verb']
+
+    # 8. Abstract concept / grammar / fallback
+    return SEMANTIC_CATEGORIES['abstract']
+
+def plan_semantic_scene(word_info):
+    """
+    Formulates a structured semantic scene blueprint before drawing.
+    Ensures the AI understands the vocabulary's real-world meaning,
+    focal subject, professional role/action, setting, and confusable distinctions.
+    """
+    hanzi = word_info.get("hanzi", "").strip()
+    meaning = word_info.get("meaning", "").strip()
+    pinyin = word_info.get("pinyin", "").strip()
+    ex_vi = (word_info.get("example_vi") or "").replace("<u>", "").replace("</u>", "").strip()
+    ex_zh = (word_info.get("example_zh") or word_info.get("example") or "").replace("<u>", "").replace("</u>", "").strip()
+
+    pos_raw = HSK_POS_DB.get(hanzi, "")
+    category = classify_semantic_category(meaning, hanzi, pos_raw)
+    code = category['code']
+
+    if code == 'profession':
+        focal_subject = f"A recognizable professional person accurately representing '{hanzi}' ({meaning}) in authentic work attire and natural human anatomy"
+        role_or_action = "Actively performing their professional duties (e.g. instructing, treating a patient, cooking, driving) with believable pose, expression, and realistic tools"
+        environment_context = "An appropriate, authentic real-world workplace setting (e.g. classroom, hospital examination room, commercial kitchen, driver cabin)"
+        supporting_elements = "Authentic professional instruments and work tools; natural workplace lighting"
+        confusable_distinctions = "Must clearly communicate the professional role rather than a client, patient, or student; absolutely NO generic stick figures, NO flat generic icons, NO sign-holders"
+    elif code == 'animal':
+        focal_subject = f"A recognizable, living {meaning} ('{hanzi}') with realistic anatomy, natural proportions, and authentic physical features"
+        role_or_action = "Natural resting or gentle moving posture characteristic of this animal species"
+        environment_context = "A simple, natural habitat background providing context"
+        supporting_elements = "Subtle environmental ground, soft natural lighting"
+        confusable_distinctions = "Depict the actual animal with believable biology; absolutely NO abstract geometric icons, NO cartoon cliparts, NO emojis"
+    elif code == 'food':
+        focal_subject = f"The actual, appetizing culinary food item '{meaning}' ('{hanzi}') with realistic textures, colors, and authentic fresh appearance"
+        role_or_action = "Freshly prepared, served, or presented ready for consumption"
+        environment_context = "A realistic dining or kitchen setting (e.g. on a ceramic plate, wooden board, or clean dining table)"
+        supporting_elements = "Clean tableware, subtle garnish, soft warm natural lighting"
+        confusable_distinctions = "Depict the real food realistically; absolutely NO abstract fruit icons, NO generic clipart shapes"
+    elif code == 'object':
+        focal_subject = f"The tangible physical object '{meaning}' ('{hanzi}') shown clearly, centered, and accurately with authentic materials"
+        role_or_action = "In its natural orientation or functional resting state"
+        environment_context = "A clean, realistic real-world environment where this item is typically found"
+        supporting_elements = "Clean surface, subtle natural shadow and highlights giving spatial depth"
+        confusable_distinctions = "Must be the actual functional object; absolutely NO flat generic minimalist icons, NO glyph badges"
+    elif code == 'verb':
+        focal_subject = f"A person or subject visibly and dynamically executing the exact action of '{meaning}' ('{hanzi}')"
+        role_or_action = "Natural biomechanical body posture, believable muscle tension, and cause-and-effect interaction"
+        environment_context = "A realistic setting appropriate for this activity (e.g. track for running, pool for swimming, room for reading)"
+        supporting_elements = "Essential props directly involved in the action; dynamic sense of movement"
+        confusable_distinctions = "Show the actual person performing the action; absolutely NO arrows, NO isolated shoe/hand icons, NO stick figures"
+    elif code == 'adj':
+        focal_subject = f"A clear real-world situation or visual comparison vividly demonstrating the characteristic '{meaning}' ('{hanzi}')"
+        role_or_action = "Expressive posture, physical state, or environmental contrast illustrating the quality"
+        environment_context = "A context-rich environment that reinforces the adjective"
+        supporting_elements = "Subtle visual cues (e.g. clothing for weather, scale comparison for size, facial expression for mood)"
+        confusable_distinctions = "Use an intuitive visual scenario; absolutely NO abstract gauges, NO meter dials, NO progress bars"
+    elif code == 'place':
+        focal_subject = f"An unmistakable, recognizable architectural or environmental view of '{meaning}' ('{hanzi}')"
+        role_or_action = "Authentic daily environment with characteristic architectural and spatial landmarks"
+        environment_context = "The real-world location under natural daylight or characteristic ambient illumination"
+        supporting_elements = "Signature environmental details (e.g. runway for airport, desks for classroom, ward for hospital)"
+        confusable_distinctions = "Depict the actual place environment; absolutely NO generic pin icons, NO map markers"
+    else:  # abstract
+        focal_subject = f"An intuitive, relatable real-world human moment grounded in '{meaning}' ('{hanzi}') and example context: \"{ex_vi or ex_zh or meaning}\""
+        role_or_action = "Authentic human interaction, timing, or situation clearly demonstrating the meaning without text"
+        environment_context = "A believable daily life setting providing the natural backdrop"
+        supporting_elements = "Contextual elements that anchor the situation"
+        confusable_distinctions = "Ground in the example sentence story; absolutely NO abstract flowcharts, NO geometric badges, NO misleading metaphors"
+
+    return {
+        "hanzi": hanzi,
+        "pinyin": pinyin,
+        "meaning": meaning,
+        "category": category,
+        "focal_subject": focal_subject,
+        "role_or_action": role_or_action,
+        "environment_context": environment_context,
+        "supporting_elements": supporting_elements,
+        "confusable_distinctions": confusable_distinctions,
+        "example_zh": ex_zh,
+        "example_vi": ex_vi
+    }
+
+def build_semantic_prompt(word_info, plan=None):
+    """
+    Builds the image generation prompt with strict semantic accuracy standards.
+    """
+    if plan is None:
+        plan = plan_semantic_scene(word_info)
+
+    hanzi = plan["hanzi"]
+    pinyin = plan["pinyin"]
+    meaning = plan["meaning"]
+    cat = plan["category"]
+
+    context_note = ""
+    if plan["example_vi"]:
+        context_note = f"\n- Real-world context reference: \"{plan['example_vi']}\""
+    elif plan["example_zh"]:
+        context_note = f"\n- Context usage: \"{plan['example_zh']}\""
+
+    prompt = f"""You are creating a high-quality educational illustration for a Chinese vocabulary flashcard.
+Primary objective: SEMANTIC ACCURACY FIRST. A learner must be able to look at the image and immediately associate it with the correct Chinese vocabulary meaning.
+
+TARGET VOCABULARY:
+- Chinese Word: "{hanzi}"
+- Pinyin: {pinyin}
+- Vietnamese Meaning (Anchor Reference): "{meaning}"
+- Category: {cat['label']} ({cat['name_vi']}){context_note}
+
+SEMANTIC SCENE BLUEPRINT:
+- Focal Subject: {plan['focal_subject']}
+- Role & Action: {plan['role_or_action']}
+- Environment Setting: {plan['environment_context']}
+- Supporting Elements: {plan['supporting_elements']}
+- Disambiguation Rules: {plan['confusable_distinctions']}
+
+VISUAL STANDARDS:
+- Style: Consistent, high-quality educational photography and realistic 3D educational illustration style. Professional, clean, modern educational visuals.
+- Anatomy & Posture: Realistic human anatomy and natural body proportions. Natural facial expressions and believable poses. Appropriate clothing, uniforms, tools, and environmental context.
+- Composition: One clear centered dominant focal subject. Square 1:1 aspect ratio. Balanced composition with simple background that provides relevant context.
+- Lighting: Soft natural lighting, balanced colors, dark blue/slate harmonized container (#1A1D24 or #0f172a to match app dark mode).
+- Mobile Recognizability: Must remain immediately recognizable when displayed at 100-150 pixels on a mobile screen.
+- Canvas & Format: Valid SVG with viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg".
+- Container: Full-bleed container: <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+STRICT NEGATIVE CONSTRAINTS:
+- ABSOLUTELY NO childish elementary-school clipart.
+- ABSOLUTELY NO stick figures (single-stroke limbs or circle-head line bodies).
+- ABSOLUTELY NO flat generic minimalist icons.
+- ABSOLUTELY NO emoji-style illustrations or smiling icon faces.
+- ABSOLUTELY NO abstract geometric representations, badges, sliders, meters, or progress dials.
+- ABSOLUTELY NO random decorative objects competing with the main subject.
+- ABSOLUTELY NO floating hearts (❤️) unless the word is explicitly about romantic love (爱, 恋爱, 结婚) or literal heart anatomy (心脏).
+- ABSOLUTELY NO generic person with a red cross icon for doctor (must be doctor examining patient in clinic).
+- ABSOLUTELY NO gift box for free-of-charge concepts (must be zero-fee transaction or pass).
+- ABSOLUTELY NO sci-fi forcefields or video-game armor for caring/protecting.
+- ABSOLUTELY NO text, NO letters, NO words, NO subtitles, NO Chinese characters (NO {hanzi}), NO English words, NO pinyin, NO labels, NO numbers, NO watermarks, NO brand logos.
+- Return ONLY the raw <svg>...</svg> code, without markdown backticks, without any commentary."""
+    return prompt
+
+def validate_semantic_illustration(word_info, plan, svg_code):
+    """
+    Quality Control & Semantic Validation Engine before accepting an image.
+    """
+    if not svg_code or len(svg_code.strip()) < 60:
+        return False, "Empty or invalid SVG"
+
+    hanzi = word_info.get("hanzi", "").strip()
+
+    # 1. Text & character checks
+    if re.search(r'<text\b', svg_code, re.I) or re.search(r'<tspan\b', svg_code, re.I):
+        return False, "Failed Quality Control: SVG contains embedded <text> tags. Must be 100% text-free."
+
+    # 2. Aspect ratio / viewBox check
+    vb = re.search(r'viewBox=["\']([^"\']+)["\']', svg_code, re.I)
+    if vb:
+        parts = [p for p in re.split(r'[\s,]+', vb.group(1).strip()) if p]
+        if len(parts) == 4:
+            try:
+                w, h = float(parts[2]), float(parts[3])
+                if w != h:
+                    return False, f"Failed Quality Control: Non-square aspect ratio {w}x{h}. Must be 1:1."
+            except Exception:
+                pass
+
+    # 3. Minimum complexity threshold (avoids primitive stick figures or empty shapes)
+    clean_svg = re.sub(r'<!--[\s\S]*?-->', '', svg_code).strip()
+    if len(clean_svg) < 280:
+        return False, f"Failed Quality Control: SVG too simplistic ({len(clean_svg)} bytes). Likely generic icon or stick figure."
+
+    # 4. Role & Confusion Safeguards
+    if plan["category"]["code"] == 'profession':
+        if hanzi == '医生' and re.search(r'red cross|red-cross', svg_code, re.I):
+            return False, "Failed Quality Control: Doctor illustration must not use generic red-cross symbol."
+
+    return True, "Valid"
 
 def load_level_data(file_path):
     if not file_path.exists():
@@ -175,7 +481,7 @@ def load_level_data(file_path):
             data = json.load(f)
             return data if isinstance(data, list) else []
     except Exception as e:
-        print(f"[!] Error loading {file_path}: {e}", flush=True)
+        log_ts(f"[!] Error loading {file_path}: {e}")
         return []
 
 def ensure_directory_structure():
@@ -202,7 +508,7 @@ def build_manifest_and_organize():
     Updates assets/js/word-illustrations.js.
     """
     ensure_directory_structure()
-    print("[*] Building illustration organization and manifest under images/...", flush=True)
+    log_ts("[*] Building illustration organization and manifest under images/...")
 
     hsk2_curriculum = [(f"level{i}", VOCAB_DIR / f"hsk{i}_vocabularies.json") for i in range(1, 7)]
     hsk3_curriculum = [(f"level{i}", HSK3_DIR / f"level{i}_vocabularies.json") for i in range(1, 10)]
@@ -316,7 +622,6 @@ def build_manifest_and_organize():
 
     manifest_json_str = json.dumps(manifest_data, ensure_ascii=False, indent=2)
     (IMAGES_DIR / "generated_manifest.json").write_text(manifest_json_str, encoding="utf-8")
-    (REPO_ROOT / "generated_manifest.json").write_text(manifest_json_str, encoding="utf-8")
 
     # Output README.md
     readme_md = generate_readme_markdown(stats_hsk2, stats_hsk3, len(manifest_entries))
@@ -326,7 +631,7 @@ def build_manifest_and_organize():
     # Update assets/js/word-illustrations.js
     update_word_illustrations_js(manifest_entries)
 
-    print(f"[*] Manifest and images/ organization built successfully. Total indexed: {len(manifest_entries)} words.", flush=True)
+    log_ts(f"[*] Manifest and images/ organization built successfully. Total indexed: {len(manifest_entries)} words.")
     return manifest_data
 
 def generate_readme_markdown(stats_hsk2, stats_hsk3, total_unique):
@@ -423,7 +728,7 @@ images/
 | Cấp độ | Đã có hình / Tổng từ | Tỷ lệ | Tiến độ trực quan | Trạng thái |
 | :--- | :---: | :---: | :--- | :--- |
 {chr(10).join(hsk3_rows)}
-| **TỔNG CỘNG HSK 3.0** | **`{total_hsk3_svg}/{total_hsk3_words}`** | **`{hsk3_pct:.1f}%`** | `{make_progress_bar(f'{hsk3_pct:.1f}%')}` | ⏳ Đang hoàn thiện |
+| **TỔNG CỘNG HSK 3.0** | **`{total_hsk3_svg}/{total_hsk3_words}`** | **`{hsk3_pct:.1f}%`** | `{make_progress_bar(f'{hsk3_pct:.1f}%')}` | {'✅ Đầy đủ' if hsk3_pct == 100 else '⏳ Đang hoàn thiện'} |
 
 ---
 
@@ -433,10 +738,9 @@ images/
 """
 
 def update_word_illustrations_js(manifest_entries):
-    if not WORD_ILLUSTRATIONS_JS.exists() or not manifest_entries:
+    if not manifest_entries:
         return
 
-    content = WORD_ILLUSTRATIONS_JS.read_text(encoding="utf-8")
     js_index = {}
     for hz, item in manifest_entries.items():
         js_index[hz] = {
@@ -445,77 +749,25 @@ def update_word_illustrations_js(manifest_entries):
             "caption": item["meaning"]
         }
 
-    new_block = f"const STATIC_ILLUSTRATIONS_INDEX = {json.dumps(js_index, ensure_ascii=False, indent=2)};"
-
-    match = re.search(r"const STATIC_ILLUSTRATIONS_INDEX = (\{[\s\S]*?\});", content)
-    if match:
-        content = content[:match.start()] + new_block + content[match.end():]
-    else:
-        target = "function getWordIllustration"
-        if target in content:
-            content = content.replace(target, new_block + "\n\n" + target, 1)
-
-    WORD_ILLUSTRATIONS_JS.write_text(content, encoding="utf-8")
+    out_file = REPO_ROOT / "database" / "illustrations" / "illustrations_index.json"
+    out_file.write_text(json.dumps(js_index, ensure_ascii=False, indent=2), encoding="utf-8")
 
     if WORKTREE_DIR.exists():
         try:
-            wt_js = WORKTREE_DIR / "assets" / "js" / "word-illustrations.js"
-            wt_js.write_text(content, encoding="utf-8")
+            wt_out = WORKTREE_DIR / "database" / "illustrations" / "illustrations_index.json"
+            wt_out.write_text(json.dumps(js_index, ensure_ascii=False, indent=2), encoding="utf-8")
         except Exception:
             pass
+
 
 def call_gemini_svg_api(word_info, api_keys, max_retries=3, model_offset=0):
     if isinstance(api_keys, str):
         api_keys = [api_keys] if api_keys else []
     if not api_keys:
         return None
-    hanzi = word_info.get("hanzi", "").strip()
-    meaning = word_info.get("meaning", "").strip()
-    pinyin = word_info.get("pinyin", "").strip()
 
-    pos_type, pos_label = classify_pos(meaning, hanzi)
-    word_info["pos"] = pos_label
-
-    ex_vi = (word_info.get("example_vi") or "").replace("<u>", "").replace("</u>", "").strip()
-    ex_zh = (word_info.get("example_zh") or word_info.get("example") or "").replace("<u>", "").replace("</u>", "").strip()
-
-    context_note = ""
-    if ex_zh or ex_vi:
-        context_note = f"\n- Contextual reference: \"{ex_zh}\" ({ex_vi})"
-
-    if pos_type == 'noun':
-        type_rule = """1. IF NOUN (Danh từ - vật thể, con người, địa điểm):
-   - Center a clear, iconic, and unmistakable physical object or character representing the word. Avoid abstract backgrounds."""
-    elif pos_type == 'verb':
-        type_rule = """2. IF VERB / ACTION (Động từ):
-   - Show a clear, dynamic human character action with motion lines or a direct interaction with an object to show cause and effect.
-   - For protection, sheltering, and caring verbs (e.g. 保护, 照顾, 关照, 爱护): Show genuine, tender protective actions. For environmental/nature protection (like 保护环境), depict caring hands gently cupped around a vibrant delicate green sprout growing from fertile soil, or sheltering it under an open hand/umbrella from harsh weather. NEVER draw sci-fi forcefields, glowing energy bubbles, or video-game armor."""
-    elif pos_type == 'adj':
-        type_rule = """3. IF ADJECTIVE / DESCRIBING WORD (Tính từ / Trạng thái):
-   - Use a distinct visual contrast, scale exaggeration, or clear emotional expression (e.g., contrasting small vs. large, calm vs. chaotic) to represent the quality."""
-    else:  # abstract / grammar / adverb / conjunction
-        type_rule = """4. IF ABSTRACT / GRAMMAR / ADVERB / CONJUNCTION (Từ trừu tượng, phó từ, liên từ như "thậm chí", "đột nhiên", "vốn dĩ", "hầu như"):
-   - DO NOT draw a generic office worker or random desk scene. 
-   - MUST use visual metaphors of "Escalation", "Progression", "Causality", or "Contrast" (e.g., a multi-step staircase, a scale tipping, a domino effect, a magnifying glass zooming into a detail, or a timeline showing a sharp peak).
-   - For words expressing extreme degree, escalation, or unexpectedness (like 甚至): Illustrate a clear progression starting from a normal baseline level and sharply breaking past the limit into an extreme, exaggerated final outcome (e.g., working late at night with towering stacks of paper, a character sweating under an overwhelmingly heavy but clear load of tasks)."""
-
-    prompt = f"""A conceptual educational vector illustration in a sleek, modern flat design style with a dark mode theme, visualizing the exact semantic meaning of the Chinese word "{hanzi}" ({pinyin}, {pos_label}, {meaning}).{context_note}
-
-STRICT VISUAL RULES BASED ON WORD TYPE:
-{type_rule}
-
-GENERAL CONSTRAINTS:
-- Style: Consistent flat vector art, clean lines, dark blue/slate background (#1A1D24 or similar dark theme to match the app interface), professional color palette with high-contrast accent colors (orange/gold for focus).
-- Canvas & Format: Valid SVG with viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg".
-- Container: Full-bleed container: <rect width="240" height="240" rx="24" fill="#1A1D24"/>
-- No random gibberish text inside the image. Keep it clean, focused, and instantly comprehensible at a glance (flashcard optimization).
-- ABSOLUTELY NO abstract symbols, NO geometric badges, NO minimalist icons, NO generic emojis, NO sliders, NO meters, NO progress bars, NO gauge dials.
-- ABSOLUTELY NO floating hearts (❤️), glowing heart icons, or romantic tropes UNLESS the word is explicitly about romantic love (e.g. 爱, 恋爱, 结婚, 谈恋爱) or literal anatomy (心脏). For gratitude, helping, politeness, kindness, teamwork, or friendship, DO NOT draw hearts! Depict genuine respectful social interactions (e.g. slight bow, handshake, warm smile, polite hand gesture) instead of romantic tropes.
-- For free-of-charge / zero-cost concepts (e.g. 免费, 免税, 赠送, 义诊), DO NOT draw generic wrapped birthday gift boxes or souvenir shops! A wrapped gift box conveys 'gift/present' (礼物), NOT 'free of charge'. Instead, depict authentic real-world transactions where fee/payment is waived (e.g. an event entrance/registration counter where attendees are welcomed with a 0-cost admission pass, staff warmly waving off payment with a friendly gesture, or an open gate with crossed-out coin/fee indicator).
-- For protection, sheltering, or caring concepts (e.g. 保护, 照顾, 爱护, 保护环境): ABSOLUTELY NO sci-fi forcefield bubbles, NO glowing energy domes around a person, NO video-game shields or armor. Instead, depict genuine human sheltering actions (e.g. two caring hands gently cupped around a thriving green sprout or fragile life, protecting it from harsh wind/rain, or an adult sheltering a child).
-- ABSOLUTELY NO text, NO letters, NO words, NO subtitles, NO Chinese characters (NO {hanzi}), NO English words, NO pinyin.
-- ABSOLUTELY NO Gemini logo, NO brand logos, NO watermarks.
-- Return ONLY the raw <svg>...</svg> code, without markdown backticks, without any commentary."""
+    plan = plan_semantic_scene(word_info)
+    prompt = build_semantic_prompt(word_info, plan)
 
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
@@ -524,8 +776,8 @@ GENERAL CONSTRAINTS:
 
     rotated_models = MODELS_TO_TRY[model_offset % len(MODELS_TO_TRY):] + MODELS_TO_TRY[:model_offset % len(MODELS_TO_TRY)]
 
-    for attempt in range(10):
-        if all_models_permanently_exhausted(api_keys):
+    for attempt in range(4):
+        if ABORT_EVENT.is_set() or all_models_permanently_exhausted(api_keys):
             return None
 
         available_pairs = []
@@ -535,12 +787,14 @@ GENERAL CONSTRAINTS:
                     available_pairs.append((k_idx, key, model))
 
         if not available_pairs:
-            if all_models_permanently_exhausted(api_keys):
+            if ABORT_EVENT.is_set() or all_models_permanently_exhausted(api_keys):
                 return None
-            time.sleep(3)
+            time.sleep(2)
             continue
 
         for k_idx, key, model in available_pairs:
+            if ABORT_EVENT.is_set():
+                return None
             url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
             try:
                 req = urllib.request.Request(
@@ -558,44 +812,50 @@ GENERAL CONSTRAINTS:
                             m = re.search(r"<svg[\s\S]*?<\/svg>", text, re.IGNORECASE)
                             if m:
                                 svg_str = m.group(0).strip()
-                                if len(svg_str) > 150:
+                                is_valid, reason = validate_semantic_illustration(word_info, plan, svg_str)
+                                if is_valid:
                                     return svg_str
             except urllib.error.HTTPError as he:
                 err_body = he.read().decode("utf-8", errors="ignore")
+                retry_delay = extract_retry_delay(err_body)
                 if he.code == 429:
-                    is_daily = "limit: 500" in err_body.lower() or "limit: 20" in err_body.lower() or "per day" in err_body.lower() or "perday" in err_body.lower() or "daily" in err_body.lower()
-                    mark_model_throttled(k_idx, model, is_daily=is_daily, seconds=5)
+                    err_lower = err_body.lower()
+                    is_daily = (retry_delay and retry_delay > 180) or (("requestsperday" in err_lower or "per day" in err_lower or "requests_per_day" in err_lower or "limit: 20" in err_lower or "limit: 500" in err_lower) and ("quota exceeded" in err_lower or "limit" in err_lower) and not ("perminute" in err_lower or "per minute" in err_lower))
+                    if is_daily:
+                        mark_model_throttled(k_idx, model, is_daily=True, retry_delay=retry_delay, api_keys=api_keys)
+                    else:
+                        mark_model_throttled(k_idx, model, is_daily=False, seconds=12, api_keys=api_keys)
                     continue
                 elif he.code in (404, 400):
-                    mark_model_throttled(k_idx, model, is_daily=True)
+                    mark_model_throttled(k_idx, model, is_daily=True, api_keys=api_keys)
                     continue
                 elif he.code == 503:
-                    mark_model_throttled(k_idx, model, is_daily=False, seconds=3)
+                    mark_model_throttled(k_idx, model, is_daily=False, seconds=5, api_keys=api_keys)
                     continue
                 else:
                     continue
             except Exception:
                 continue
 
-        if attempt < 9:
+        if attempt < 3:
             time.sleep(2)
 
     return None
 
-def git_commit_and_push(batch_count, level_label):
+def git_commit_and_push(batch_count, level_label, no_commit=False, no_push=False):
+    if no_commit:
+        return
     try:
-        print(f"\n[>>> GIT] Committing and pushing batch of {batch_count} newly generated SVGs for {level_label} directly to main...", flush=True)
-        subprocess.run(["git", "add", "images", "assets/images/illustrations", "generated_manifest.json", "README_ILLUSTRATIONS.md", "assets/js/word-illustrations.js"], cwd=REPO_ROOT, check=True)
+        log_ts(f"\n[>>> GIT] Committing batch of {batch_count} newly generated SVGs for {level_label}...")
+        subprocess.run(["git", "add", "images", "assets/images/illustrations", "database/illustrations", "README_ILLUSTRATIONS.md", "assets/js/word-illustrations.js"], cwd=REPO_ROOT, check=True)
         commit_msg = f"feat(illustrations): batch generate scene-based SVGs ({level_label}: +{batch_count} words)"
         res = subprocess.run(["git", "commit", "-m", commit_msg], cwd=REPO_ROOT, capture_output=True, text=True)
-        print(f"[>>> GIT] {res.stdout.strip()}", flush=True)
-        push_res = subprocess.run(["git", "push", "origin", "HEAD:main"], cwd=REPO_ROOT, capture_output=True, text=True)
-        if push_res.returncode != 0:
-            subprocess.run(["git", "pull", "--rebase", "origin", "main"], cwd=REPO_ROOT, capture_output=True, text=True)
+        log_ts(f"[>>> GIT] {res.stdout.strip()}")
+        if not no_push:
             push_res = subprocess.run(["git", "push", "origin", "HEAD:main"], cwd=REPO_ROOT, capture_output=True, text=True)
-        print(f"[>>> GIT] Push result: {push_res.stdout.strip() or push_res.stderr.strip() or 'OK'}", flush=True)
+            log_ts(f"[>>> GIT] Push result: {push_res.stdout.strip() or push_res.stderr.strip() or 'OK'}")
     except Exception as e:
-        print(f"[!] Warning git commit/push encountered error: {e}", flush=True)
+        log_ts(f"[!] Warning git commit/push encountered error: {e}")
 
 def main():
     parser = argparse.ArgumentParser(description="Master batch generator & organizer for all HSK 2.0 & HSK 3.0 levels")
@@ -605,20 +865,22 @@ def main():
     parser.add_argument("--batch-size", type=int, default=50, help="Commit and push every N generated items (default: 50)")
     parser.add_argument("--only-organize", action="store_true", help="Only reorganize existing SVGs, build manifest & README without generating new SVGs")
     parser.add_argument("--target-level", default="all", help="Target specific level (e.g., 'level3', 'level5', 'level6', 'all')")
+    parser.add_argument("--no-commit", action="store_true", help="Do not create git commits automatically")
+    parser.add_argument("--no-push", action="store_true", help="Do not push commits to remote repository")
     args = parser.parse_args()
 
     api_keys = get_api_keys(args.api_key.strip())
     if not api_keys and not args.only_organize:
-        print("[!] No Google AI API key found! Please set GOOGLE_AI_KEY or add to .api_key", flush=True)
+        log_ts("[!] No Google AI API key found! Please set GOOGLE_AI_KEY or add to .api_key")
         return
 
-    print(f"[*] Loaded {len(api_keys)} API key(s) for generation rotation. Concurrency: {args.concurrency} workers, Delay: {args.delay}s.", flush=True)
+    log_ts(f"[*] Loaded {len(api_keys)} API key(s) for generation rotation. Concurrency: {args.concurrency} workers, Delay: {args.delay}s.")
 
     # Step 1: Organization under images/
     manifest_data = build_manifest_and_organize()
 
     if args.only_organize:
-        print("[*] Reorganization completed successfully (--only-organize). Exiting.", flush=True)
+        log_ts("[*] Reorganization completed successfully (--only-organize). Exiting.")
         return
 
     # Step 2: Curriculum roadmap
@@ -648,19 +910,19 @@ def main():
     total_generated_session = 0
     batch_new_count = 0
 
-    print("\n==================================================================", flush=True)
-    print("  HSK Flashcards: Master Scene-Based Illustration Pipeline (HIGH SPEED)", flush=True)
-    print(f"  Target: images/HSK_2.0/level1..6 -> images/HSK_3.0/level1..9", flush=True)
-    print(f"  Concurrency: {args.concurrency} parallel workers | Delay: {args.delay}s", flush=True)
-    print(f"  Batch commit threshold: Every {args.batch_size} newly generated SVGs -> main", flush=True)
-    print("==================================================================\n", flush=True)
+    log_ts("\n==================================================================")
+    log_ts("  HSK Flashcards: Master Scene-Based Illustration Pipeline (HIGH SPEED)")
+    log_ts(f"  Target: images/HSK_2.0/level1..6 -> images/HSK_3.0/level1..9")
+    log_ts(f"  Concurrency: {args.concurrency} parallel workers | Delay: {args.delay}s")
+    log_ts(f"  Batch commit threshold: Every {args.batch_size} newly generated SVGs -> main")
+    log_ts("==================================================================\n")
 
     for level_label, lvl_code, schema_type, file_path in curriculum:
         words = load_level_data(file_path)
         if not words:
             continue
 
-        print(f"\n[*] Scanning {level_label} ({len(words)} words) from {file_path.name}...", flush=True)
+        log_ts(f"\n[*] Scanning {level_label} ({len(words)} words) from {file_path.name}...")
         level_new = 0
         level_skipped = 0
 
@@ -683,25 +945,27 @@ def main():
 
             missing_items.append((idx, item))
 
-        print(f"[*] {level_label}: {len(missing_items)} missing words to generate ({level_skipped} already exist). Spawning {args.concurrency} parallel workers...", flush=True)
+        log_ts(f"[*] {level_label}: {len(missing_items)} missing words to generate ({level_skipped} already exist). Spawning {args.concurrency} parallel workers...")
 
         if not missing_items:
-            print(f"[*] {level_label} is already 100% complete! Skipping to next level.", flush=True)
+            log_ts(f"[*] {level_label} is already 100% complete! Skipping to next level.")
             continue
 
         current_missing = missing_items
         pass_idx = 1
         while current_missing:
             if all_models_permanently_exhausted(api_keys):
-                print(f"[!] All candidate models reached their daily quota. Halting {level_label}.", flush=True)
+                report_exhausted_and_renew()
                 break
 
             if pass_idx > 1:
-                print(f"[*] {level_label} (Pass {pass_idx}): Retrying {len(current_missing)} uncompleted words...", flush=True)
+                log_ts(f"[*] {level_label} (Pass {pass_idx}): Retrying {len(current_missing)} uncompleted words...")
 
             failed_in_pass = []
 
             def process_word(task_info):
+                if ABORT_EVENT.is_set():
+                    return False
                 nonlocal batch_new_count, level_new, total_generated_session
                 orig_idx, item = task_info
                 hanzi = item.get("hanzi", "").strip()
@@ -737,7 +1001,7 @@ def main():
                         level_new += 1
                         batch_new_count += 1
                         total_generated_session += 1
-                        print(f"    ✓ [{orig_idx}/{len(words)}] Generated '{hanzi}' ({pinyin} - {meaning[:22]}) [{len(svg_code)} B] (Total session: {total_generated_session})", flush=True)
+                        log_ts(f"    ✓ [{orig_idx}/{len(words)}] Generated '{hanzi}' ({pinyin} - {meaning[:22]}) [{len(svg_code)} B] (Total session: {total_generated_session})")
                         if batch_new_count >= args.batch_size:
                             batch_new_count = 0
                             should_commit = True
@@ -745,33 +1009,45 @@ def main():
                     if should_commit:
                         with git_lock:
                             build_manifest_and_organize()
-                            git_commit_and_push(args.batch_size, level_label)
+                            git_commit_and_push(args.batch_size, level_label, no_commit=args.no_commit, no_push=args.no_push)
 
                     return True
                 else:
                     return False
 
-            with ThreadPoolExecutor(max_workers=args.concurrency) as executor:
-                futures = {executor.submit(process_word, task): task for task in current_missing}
-                for fut in as_completed(futures):
-                    t = futures[fut]
-                    try:
-                        ok = fut.result()
-                        if not ok:
-                            failed_in_pass.append(t)
-                    except Exception as e:
-                        print(f"[!] Worker exception: {e}", flush=True)
-                        failed_in_pass.append(t)
+            CHUNK_SIZE = 40
+            for chunk_idx in range(0, len(current_missing), CHUNK_SIZE):
+                if ABORT_EVENT.is_set() or all_models_permanently_exhausted(api_keys):
+                    break
+                chunk_items = current_missing[chunk_idx:chunk_idx + CHUNK_SIZE]
+                with ThreadPoolExecutor(max_workers=args.concurrency) as executor:
+                    futures = {executor.submit(process_word, task): task for task in chunk_items}
+                    for fut in as_completed(futures):
+                        t = futures[fut]
+                        try:
+                            ok = fut.result()
+                            if not ok and not ABORT_EVENT.is_set():
+                                failed_in_pass.append(t)
+                        except Exception as e:
+                            log_ts(f"[!] Worker exception: {e}")
+                            if not ABORT_EVENT.is_set():
+                                failed_in_pass.append(t)
+                if ABORT_EVENT.is_set() or all_models_permanently_exhausted(api_keys):
+                    break
+
+            if ABORT_EVENT.is_set() or all_models_permanently_exhausted(api_keys):
+                with git_lock:
+                    build_manifest_and_organize()
+                    if batch_new_count > 0:
+                        git_commit_and_push(batch_new_count, level_label, no_commit=args.no_commit, no_push=args.no_push)
+                report_exhausted_and_renew()
+                sys.exit(0)
 
             if not failed_in_pass:
                 break
 
-            if len(failed_in_pass) == len(current_missing) and all_models_permanently_exhausted(api_keys):
-                print(f"[!] All available models exhausted for today. Stopping at {level_label}.", flush=True)
-                break
-
             if len(failed_in_pass) == len(current_missing) and pass_idx >= 3:
-                print(f"[*] Stopping retries for {level_label} after 3 passes with {len(failed_in_pass)} pending words.", flush=True)
+                log_ts(f"[*] Stopping retries for {level_label} after 3 passes with {len(failed_in_pass)} pending words.")
                 break
 
             current_missing = failed_in_pass
@@ -782,18 +1058,18 @@ def main():
         with git_lock:
             build_manifest_and_organize()
             if batch_new_count > 0:
-                git_commit_and_push(batch_new_count, level_label)
+                git_commit_and_push(batch_new_count, level_label, no_commit=args.no_commit, no_push=args.no_push)
                 batch_new_count = 0
 
-        print(f"[*] Completed {level_label}: {level_new} newly generated, {level_skipped} skipped.", flush=True)
+        log_ts(f"[*] Completed {level_label}: {level_new} newly generated, {level_skipped} skipped.")
 
-        if all_models_permanently_exhausted(api_keys):
-            print(f"\n[!] Daily quota across all models is exhausted for today. Exiting cleanly.", flush=True)
-            break
+        if ABORT_EVENT.is_set() or all_models_permanently_exhausted(api_keys):
+            report_exhausted_and_renew()
+            sys.exit(0)
 
-    print("\n==================================================================", flush=True)
-    print(f"[*] ALL LEVELS COMPLETED! Total newly generated: {total_generated_session}", flush=True)
-    print("==================================================================", flush=True)
+    log_ts("\n==================================================================")
+    log_ts(f"[*] ALL LEVELS COMPLETED! Total newly generated: {total_generated_session}")
+    log_ts("==================================================================")
 
 if __name__ == "__main__":
     main()

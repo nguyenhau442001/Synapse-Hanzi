@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "上映" (Movie Premiere / Theatrical Release) -->
+  <!-- Sleek modern flat design featuring a cinema projector beam, film strip, and screen -->
+  
+  <g transform="translate(0, 0)">
+    <!-- Ambient projection light beam / cone -->
+    <polygon points="50,90 200,45 200,195" fill="#FFC107" opacity="0.08"/>
+    <polygon points="50,90 200,70 200,170" fill="#FFC107" opacity="0.15"/>
+
+    <!-- Cinema Screen representing the theatrical release -->
+    <rect x="200" y="55" width="10" height="130" rx="3" fill="#E2E8F0"/>
+    <path d="M202,65 Q198,120 202,175" stroke="#38BDF8" stroke-width="3" fill="none" opacity="0.8"/>
+
+    <!-- Film Projector Body -->
+    <rect x="35" y="85" width="45" height="50" rx="8" fill="#334155"/>
+    <!-- Projector Lens -->
+    <rect x="75" y="98" width="15" height="24" rx="4" fill="#64748B"/>
+    <ellipse cx="90" cy="110" rx="3" ry="10" fill="#38BDF8" opacity="0.9"/>
+
+    <!-- Film Reels -->
+    <circle cx="50" cy="70" r="18" fill="none" stroke="#64748B" stroke-width="4"/>
+    <circle cx="50" cy="70" r="6" fill="#334155"/>
+    <circle cx="50" cy="150" r="14" fill="none" stroke="#64748B" stroke-width="3"/>
+    <circle cx="50" cy="150" r="4" fill="#334155"/>
+
+    <!-- Projector Stand -->
+    <path d="M45,135 L30,185 L70,185 L55,135 Z" fill="#475569"/>
+    <rect x="25" y="185" width="50" height="6" rx="3" fill="#64748B"/>
+
+    <!-- Film strip gracefully looping through -->
+    <path d="M50,88 C65,88 95,100 130,110 C165,120 190,135 200,135" stroke="#FFC107" stroke-width="6" stroke-dasharray="8 4" fill="none"/>
+
+    <!-- Floating Sparkles / Premiere Atmosphere -->
+    <circle cx="130" cy="80" r="3" fill="#FFC107"/>
+    <path d="M160,150 L163,158 L171,161 L163,164 L160,172 L157,164 L149,161 L157,158 Z" fill="#FFC107" transform="scale(0.6) translate(100, 100)"/>
+    <path d="M110,135 L112,140 L117,142 L112,144 L110,149 L108,144 L103,142 L108,140 Z" fill="#38BDF8" transform="scale(0.7) translate(50, 40)"/>
+  </g>
+</svg>

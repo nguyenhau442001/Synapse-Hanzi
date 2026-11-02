@@ -1,0 +1,35 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Wall / Background Panel for Poster Mounting -->
+    <rect x="52" y="28" width="136" height="184" rx="6" fill="#252A34"/>
+    
+    <!-- Poster Shadow -->
+    <rect x="66" y="42" width="108" height="156" rx="3" fill="#15171E" opacity="0.4"/>
+
+    <!-- Main Poster Sheet -->
+    <rect x="64" y="40" width="108" height="156" rx="3" fill="#F4F5F7"/>
+
+    <!-- Poster Design Content (Stylized Movie/Event Graphic) -->
+      <!-- Background gradient/block for poster art -->
+      <rect x="74" y="50" width="88" height="96" rx="2" fill="#E4E7EC"/>
+      
+      <!-- Abstract geometric movie/art illustration inside poster -->
+      <circle cx="118" cy="88" r="22" fill="#F59E0B"/>
+      <path d="M 86 130 L 108 102 L 126 120 L 142 108 L 150 130 Z" fill="#3B82F6"/>
+      <polygon points="118,60 122,72 134,74 125,82 128,94 118,87 108,94 111,82 102,74 114,72" fill="#FEF3C7"/>
+
+      <!-- Poster text lines mock -->
+      <rect x="76" y="156" width="60" height="8" rx="2" fill="#1F2937"/>
+      <rect x="76" y="170" width="40" height="5" rx="1.5" fill="#9CA3AF"/>
+  </g>
+
+  <!-- Mounting Pin at Top Center -->
+  <circle cx="118" cy="30" r="4" fill="#E2E8F0"/>
+  <circle cx="118" cy="30" r="2" fill="#64748B"/>
+  
+  <!-- Highlight / Gloss Effect -->
+  <path d="M 64 43 L 74 43 L 64 73 Z" fill="#FFFFFF" opacity="0.3"/>
+</svg>

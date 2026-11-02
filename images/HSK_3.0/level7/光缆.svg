@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ocean Depth Background -->
+  <path d="M0 120 C 80 100, 160 140, 240 120 L 240 240 L 0 240 Z" fill="#16191F"/>
+  
+  <!-- Fiber Optic Cable -->
+  <path d="M-20 160 C 60 140, 120 200, 260 180" stroke="#2D3436" stroke-width="24" stroke-linecap="round"/>
+  <path d="M-20 160 C 60 140, 120 200, 260 180" stroke="#3D4448" stroke-width="16" stroke-linecap="round"/>
+  
+  <!-- Internal Fiber Strands with Light Pulses -->
+  <path d="M-20 160 C 60 140, 120 200, 260 180" stroke="#FFB84D" stroke-width="4" stroke-dasharray="10 20" stroke-linecap="round" opacity="0.8"/>
+  <path d="M-20 162 C 60 142, 120 202, 260 182" stroke="#FFD700" stroke-width="2" stroke-dasharray="15 25" stroke-linecap="round" opacity="0.6"/>
+  
+  <!-- Cable Cross-section Detail -->
+  <circle cx="120" cy="165" r="12" fill="#2D3436" stroke="#FFB84D" stroke-width="2"/>
+  <circle cx="120" cy="165" r="6" fill="#1A1D24"/>
+  <circle cx="120" cy="165" r="3" fill="#FFB84D"/>
+  
+  <!-- Seabed Texture -->
+  <circle cx="40" cy="220" r="2" fill="#3D4448"/>
+  <circle cx="180" cy="230" r="3" fill="#3D4448"/>
+  <circle cx="100" cy="210" r="2" fill="#3D4448"/>
+</svg>

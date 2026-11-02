@@ -1,0 +1,55 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Ambient background glow for high-tech commercial market feel -->
+  <circle cx="120" cy="120" r="90" fill="#252A34" opacity="0.6"/>
+
+  <!-- Stylized Global Market / Distribution Orbit Rings -->
+  <ellipse cx="120" cy="120" rx="85" ry="32" fill="none" stroke="#2D3748" stroke-width="1.5" stroke-dasharray="4 4" transform="rotate(-20 120 120)"/>
+  <ellipse cx="120" cy="120" rx="85" ry="32" fill="none" stroke="#2D3748" stroke-width="1.5" stroke-dasharray="4 4" transform="rotate(35 120 120)"/>
+
+  <!-- Dynamic Motion/Sales Flow Arcs (Orange/Gold accent for focus & action) -->
+  <path d="M 45 140 C 60 90, 110 70, 165 95" fill="none" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 6"/>
+  <path d="M 75 160 C 110 110, 160 100, 200 135" fill="none" stroke="#ED8936" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Arrowheads indicating outward distribution/sales flow -->
+  <polygon points="165,90 177,97 163,103" fill="#F6AD55"/>
+  <polygon points="198,130 210,137 195,142" fill="#ED8936"/>
+
+  <!-- Central Product Element: Organic Tea Package (representing the high-mountain green tea from context) -->
+  <g transform="translate(100, 110)">
+    <!-- Tea Box Body -->
+    <rect x="-16" y="-22" width="32" height="44" rx="4" fill="#2F855A"/>
+    <!-- Box Gold Accent Label -->
+    <rect x="-10" y="-12" width="20" height="24" rx="2" fill="#38A169"/>
+    <!-- Leaf Icon on Product -->
+    <path d="M 0 4 C -3 1, -5 -4, 0 -8 C 5 -4, 3 1, 0 4 Z" fill="#F6AD55"/>
+    <!-- Lid/Cap -->
+    <path d="M -18 -22 L 0 -28 L 18 -22 Z" fill="#276749"/>
+  </g>
+
+  <!-- Dynamic Human Character Action (Reaching out, handing over / distributing the product dynamically) -->
+  <g transform="translate(0, 0)">
+    <!-- Character Body / Torso -->
+    <path d="M 60 170 C 60 145, 75 130, 95 130 C 115 130, 130 145, 130 170 Z" fill="#3182CE"/>
+    
+    <!-- Character Head -->
+    <circle cx="95" cy="110" r="14" fill="#CBD5E0"/>
+    <path d="M 83 108 C 83 98, 107 98, 107 108 Z" fill="#4A5568"/> <!-- Hair -->
+
+    <!-- Dynamic Outstretched Arm & Hand (Action of selling / distributing outward) -->
+    <!-- Upper arm & forearm extending rightward towards market flow -->
+    <path d="M 105 140 Q 140 130, 165 115" fill="none" stroke="#3182CE" stroke-width="10" stroke-linecap="round"/>
+    
+    <!-- Hand interacting with the product movement -->
+    <circle cx="168" cy="113" r="6" fill="#CBD5E0"/>
+  </g>
+
+  <!-- Secondary Dynamic Element: Digital / Global Market Transaction Icon (Stylized check/sparkle indicating successful transaction) -->
+  <g transform="translate(175, 70)">
+    <circle cx="0" cy="0" r="14" fill="#2B6CB0"/>
+    <path d="M -5 0 L -1 4 L 6 -3" fill="none" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+</svg>

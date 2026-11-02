@@ -1,0 +1,27 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient background glow for focus -->
+  <circle cx="120" cy="125" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Protective outer hands / arms (Adult enclosing securely) -->
+  <!-- Left protective arm and hand -->
+  <path d="M 65 175 C 50 160, 48 115, 65 85 C 75 68, 95 62, 110 65" fill="none" stroke="#FFA726" stroke-width="14" stroke-linecap="round"/>
+  <!-- Right protective arm and hand -->
+  <path d="M 175 175 C 190 160, 192 115, 175 85 C 165 68, 145 62, 130 65" fill="none" stroke="#FFA726" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- Inner shielded figure (Child / Precious entity being protected) -->
+  <!-- Body/Torso -->
+  <path d="M 100 160 C 100 135, 140 135, 140 160 Z" fill="#64B5F6"/>
+  
+  <!-- Head -->
+  <circle cx="120" cy="115" r="18" fill="#FFCCBC"/>
+  
+  <!-- Hair / Hat detailing -->
+  <path d="M 102 112 C 104 98, 136 98, 138 112 C 132 105, 108 105, 102 112 Z" fill="#4E342E"/>
+
+  <!-- Warm accent glow under the protection -->
+  <ellipse cx="120" cy="178" rx="35" ry="6" fill="#FFB74D" opacity="0.3"/>
+
+</svg>

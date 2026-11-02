@@ -1,4 +1,4 @@
-// Study Help & Shortcuts Modal for Synapse Hanzi
+// Study Help & Shortcuts Modal for 汉字思维 (Hanzi Mind)
 (function () {
   'use strict';
 
@@ -36,10 +36,13 @@
             <span>🎯</span> Phương pháp SRS
           </button>
           <button type="button" class="study-help-tab-btn" data-tab="features" role="tab" aria-selected="false" aria-controls="helpTabFeatures">
-            <span>✨</span> Tính năng học
+            <span>✨</span> Tính năng
           </button>
           <button type="button" class="study-help-tab-btn" data-tab="faq" role="tab" aria-selected="false" aria-controls="helpTabFaq">
             <span>❓</span> Câu hỏi (FAQ)
+          </button>
+          <button type="button" class="study-help-tab-btn" data-tab="about" role="tab" aria-selected="false" aria-controls="helpTabAbout">
+            <span>ℹ️</span> Giới thiệu
           </button>
         </nav>
 
@@ -167,7 +170,7 @@
                   <h3 class="study-info-card-title">Thuật toán Lặp lại ngắt quãng (SRS)</h3>
                 </div>
                 <p class="study-info-card-desc">
-                  Synapse Hanzi áp dụng thuật toán giãn cách thông minh (FSRS &amp; Ebbinghaus). Các từ bạn đánh giá "Chưa nhớ" sẽ xuất hiện lại ngay, còn các từ "Đã thuộc" sẽ được tự động dời lịch ôn sang 3 ngày, 7 ngày hoặc 1 tháng tới để đưa vào vùng trí nhớ dài hạn.
+                  汉字思维 (Hanzi Mind) áp dụng thuật toán giãn cách thông minh (FSRS &amp; Ebbinghaus). Các từ bạn đánh giá "Chưa nhớ" sẽ xuất hiện lại ngay, còn các từ "Đã thuộc" sẽ được tự động dời lịch ôn sang 3 ngày, 7 ngày hoặc 1 tháng tới để đưa vào vùng trí nhớ dài hạn.
                 </p>
               </div>
 
@@ -251,7 +254,7 @@
               <details class="study-faq-item">
                 <summary class="study-faq-summary">Làm sao để dùng ứng dụng khi không có mạng (Offline)?</summary>
                 <div class="study-faq-content">
-                  Synapse Hanzi được thiết kế chuẩn PWA (Progressive Web App). Trên trình duyệt Chrome, Safari hoặc Edge, bạn hãy nhấn nút <strong>"Thêm vào Màn hình chính"</strong> hoặc <strong>"Cài đặt ứng dụng"</strong> để học ngoại tuyến mọi lúc mọi nơi.
+                  汉字思维 (Hanzi Mind) được thiết kế chuẩn PWA (Progressive Web App). Trên trình duyệt Chrome, Safari hoặc Edge, bạn hãy nhấn nút <strong>"Thêm vào Màn hình chính"</strong> hoặc <strong>"Cài đặt ứng dụng"</strong> để học ngoại tuyến mọi lúc mọi nơi.
                 </div>
               </details>
 
@@ -268,6 +271,33 @@
                   Nhấn vào biểu tượng mặt trăng 🌙 / mặt trời ☀️ ở góc trên bên phải thanh tiêu đề (hoặc trong thanh công cụ khi đang lật thẻ) để chuyển đổi nhanh theo nhu cầu mắt nhìn.
                 </div>
               </details>
+            </div>
+          </div>
+
+          <!-- SECTION 5: ABOUT -->
+          <div class="study-help-section" id="helpTabAbout" role="tabpanel">
+            <div class="study-card-grid">
+              <div class="study-info-card">
+                <div class="study-info-card-header">
+                  <span class="study-info-card-icon">⚡</span>
+                  <h3 class="study-info-card-title">Synapse Hanzi</h3>
+                </div>
+                <p class="study-info-card-desc">
+                  Nền tảng học và ghi nhớ chữ Hán thông minh, kết hợp thuật toán lặp lại ngắt quãng (FSRS/SRS), chiết tự bộ thủ, luyện nghe phân cấp và bài đọc tương tác.
+                </p>
+              </div>
+
+              <div class="study-info-card">
+                <div class="study-info-card-header">
+                  <span class="study-info-card-icon">👨‍💻</span>
+                  <h3 class="study-info-card-title">Tác giả &amp; Đóng góp</h3>
+                </div>
+                <p class="study-info-card-desc">
+                  Phát triển bởi <strong>haunguyenngoc442001</strong>.<br>
+                  • Mã nguồn: <a href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer" style="color:var(--brand-primary);text-decoration:underline;">GitHub Repository</a><br>
+                  • Liên hệ: <a href="https://www.facebook.com/haunguyenngoc442001/" target="_blank" rel="noopener noreferrer" style="color:var(--brand-primary);text-decoration:underline;">Facebook cá nhân</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -300,11 +330,17 @@
     activeTabKey = tabKey;
 
     const navBtns = helpModalEl.querySelectorAll('.study-help-tab-btn');
+    let matchedBtn = null;
     navBtns.forEach((btn) => {
       const isMatch = btn.dataset.tab === tabKey;
       btn.classList.toggle('active', isMatch);
       btn.setAttribute('aria-selected', isMatch ? 'true' : 'false');
+      if (isMatch) matchedBtn = btn;
     });
+
+    if (matchedBtn && typeof matchedBtn.scrollIntoView === 'function') {
+      matchedBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+    }
 
     const sections = helpModalEl.querySelectorAll('.study-help-section');
     sections.forEach((sec) => {
@@ -334,6 +370,14 @@
 
     helpModalEl.classList.add('open');
     document.addEventListener('keydown', handleModalKeydown);
+
+    // Ensure active tab button is fully scrolled into view
+    setTimeout(() => {
+      const activeBtn = helpModalEl.querySelector('.study-help-tab-btn.active');
+      if (activeBtn && typeof activeBtn.scrollIntoView === 'function') {
+        activeBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+      }
+    }, 60);
 
     // Focus close button for accessibility
     const closeBtn = helpModalEl.querySelector('.study-help-close-btn');

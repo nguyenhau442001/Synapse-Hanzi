@@ -1,0 +1,39 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle warm window light -->
+  <path d="M70 40 H170 V190 H70 Z" fill="#222733"/>
+  <path d="M120 40 V190" stroke="#1A1D24" stroke-width="4"/>
+  <path d="M70 100 H170" stroke="#1A1D24" stroke-width="4"/>
+
+  <!-- Warm ambient glow representing care/welfare environment -->
+  <circle cx="120" cy="120" r="70" fill="#F5A623" opacity="0.08"/>
+
+  <!-- Child character (孤儿 - Orphan representation: solitary child under protective shelter) -->
+  <!-- Body/Outfit -->
+  <path d="M100 155 C100 145 110 135 120 135 C130 135 140 145 140 155 V180 H100 Z" fill="#4A90E2"/>
+  
+  <!-- Scarf / Warmth (denoting welfare care) -->
+  <path d="M105 138 C105 133 112 130 120 130 C128 130 135 133 135 138 L138 152 H102 Z" fill="#F5A623"/>
+  <path d="M125 148 L135 175 H123 Z" fill="#E09015"/>
+
+  <!-- Head & Hair -->
+  <circle cx="120" cy="112" r="18" fill="#FCE4D6"/>
+  <!-- Simple neat hair -->
+  <path d="M102 110 C102 98 110 94 120 94 C130 94 138 98 138 110 C134 105 127 103 120 103 C113 103 106 105 102 110 Z" fill="#333333"/>
+
+  <!-- Facial expression: gentle, looking forward -->
+  <circle cx="113" cy="112" r="2" fill="#333333"/>
+  <circle cx="127" cy="112" r="2" fill="#333333"/>
+  <path d="M117 121 Q120 124 123 121" fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Protective caring hands (representing social care, welfare home context from reference sentence) -->
+  <!-- Left caring hand -->
+  <path d="M55 160 C55 135 75 120 95 125 C85 135 80 145 80 160 Z" fill="#F5A623" opacity="0.9"/>
+  <!-- Right caring hand -->
+  <path d="M185 160 C185 135 165 120 145 125 C155 135 160 145 160 160 Z" fill="#F5A623" opacity="0.9"/>
+
+  <!-- Ground / Floor -->
+  <rect x="50" y="180" width="140" height="4" rx="2" fill="#2E3544"/>
+</svg>

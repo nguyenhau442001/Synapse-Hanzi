@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Document/File -->
+  <path d="M80 60h80v120H80z" fill="#374151" stroke="#F59E0B" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M100 80h40v8H100zM100 100h40v8H100zM100 120h40v8H100z" fill="#6B7280"/>
+  
+  <!-- Magnifying Glass revealing the content -->
+  <circle cx="140" cy="140" r="35" fill="#1A1D24" stroke="#F59E0B" stroke-width="6"/>
+  <path d="M165 165l25 25" stroke="#F59E0B" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Revealed Content inside the lens -->
+  <rect x="115" y="115" width="50" height="50" fill="#1A1D24" clip-path="url(#lensClip)"/>
+  <defs>
+    <clipPath id="lensClip">
+      <circle cx="140" cy="140" r="32"/>
+    </clipPath>
+  </defs>
+  
+  <!-- The "Secret" revealed: A bright document icon -->
+  <path d="M125 125h30v40h-30z" fill="#F59E0B"/>
+  <path d="M130 135h20v4H130zM130 145h20v4H130z" fill="#1A1D24"/>
+</svg>

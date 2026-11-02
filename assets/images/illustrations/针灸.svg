@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 115)">
+    <!-- Neck and upper back silhouette -->
+    <path d="M-60,75 C-40,65 -25,45 -20,20 C-18,5 -15,-20 -15,-40 C-15,-65 0,-85 20,-90 C45,-95 65,-80 75,-60 C80,-50 82,-35 85,0 C90,40 100,60 110,75 L-60,75 Z" fill="#252A34"/>
+    <path d="M-20,20 C-15,45 0,65 20,75 C45,75 75,55 85,0 C82,-35 80,-50 75,-60 C65,-80 45,-95 20,-90 C0,-85 -15,-65 -15,-40 C-15,-20 -18,5 -20,20 Z" fill="#2D3545"/>
+    
+    <!-- Cervical spine vertebrae markers (subtle anatomical context) -->
+    <circle cx="15" cy="-60" r="4" fill="#3A4454"/>
+    <circle cx="22" cy="-40" r="4.5" fill="#3A4454"/>
+    <circle cx="28" cy="-20" r="5" fill="#3A4454"/>
+    <circle cx="35" cy="0" r="5.5" fill="#3A4454"/>
+    <circle cx="42" cy="20" r="5" fill="#3A4454"/>
+
+    <!-- Pain indicator / focal point (subtle red/orange glow at the neck) -->
+    <circle cx="35" cy="0" r="18" fill="#FF5722" opacity="0.15"/>
+    <circle cx="35" cy="0" r="10" fill="#FF5722" opacity="0.25"/>
+
+    <!-- Acupuncture needles (Haozhen) with gold/silver accents -->
+    <!-- Needle 1 -->
+    <g transform="translate(35, 0)">
+      <!-- Needle shaft -->
+      <line x1="0" y1="0" x2="-45" y2="-25" stroke="#E2E8F0" stroke-width="1.5" stroke-linecap="round"/>
+      <!-- Needle tip glow -->
+      <circle cx="0" cy="0" r="2.5" fill="#38BDF8"/>
+      <!-- Traditional coiled handle (copper/gold) -->
+      <path d="M-45,-25 L-47,-27 L-51,-23 L-49,-21 Z" fill="#F59E0B"/>
+      <ellipse cx="-48" cy="-24" rx="4" ry="6" fill="none" stroke="#F59E0B" stroke-width="2.5" transform="rotate(-30 -48 -24)"/>
+    </g>
+
+    <!-- Needle 2 -->
+    <g transform="translate(28, -20)">
+      <line x1="0" y1="0" x2="-52" y2="-5" stroke="#E2E8F0" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="2.5" fill="#38BDF8"/>
+      <ellipse cx="-55" cy="-5" rx="4" ry="6" fill="none" stroke="#F59E0B" stroke-width="2.5" transform="rotate(10 -55 -5)"/>
+    </g>
+
+    <!-- Needle 3 -->
+    <g transform="translate(42, 20)">
+      <line x1="0" y1="0" x2="-35" y2="-45" stroke="#E2E8F0" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="2.5" fill="#38BDF8"/>
+      <ellipse cx="-37" cy="-47" rx="4" ry="6" fill="none" stroke="#F50E0B" stroke-width="2.5" transform="rotate(-45 -37 -47)"/>
+      <!-- Re-tint handle gold -->
+      <ellipse cx="-37" cy="-47" rx="4" ry="6" fill="none" stroke="#F59E0B" stroke-width="2.5" transform="rotate(-45 -37 -47)"/>
+    </g>
+
+    <!-- Healing / Qi energy flow wave lines (traditional medical motif) -->
+    <path d="M 10,-45 Q 0,-30 15,-15 T 20,15" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <path d="M 25,-55 Q 15,-40 30,-25 T 35,5" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+  </g>
+</svg>

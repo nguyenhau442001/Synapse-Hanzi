@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Character Body -->
+  <path d="M120 100c-20 0-35 15-35 35v60h70v-60c0-20-15-35-35-35z" fill="#4A5568"/>
+  <circle cx="120" cy="75" r="25" fill="#E2E8F0"/>
+  
+  <!-- Mouth area showing the "lie" - a distorted shape -->
+  <path d="M110 85c5-5 15-5 20 0l-10 10z" fill="#1A1D24"/>
+  
+  <!-- Hand gesture: Finger over mouth (shushing/hiding) -->
+  <path d="M145 90c-5-5-15-5-20 0" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <rect x="135" y="65" width="8" height="25" rx="4" fill="#E2E8F0"/>
+  
+  <!-- Motion lines indicating deception/hiding -->
+  <path d="M160 70c5 5 5 15 0 20" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M165 65c8 8 8 25 0 30" stroke="#F6AD55" stroke-width="2" stroke-linecap="round" fill="none"/>
+  
+  <!-- Eyes: One looking away -->
+  <circle cx="110" cy="70" r="3" fill="#1A1D24"/>
+  <circle cx="130" cy="70" r="3" fill="#1A1D24"/>
+  
+  <!-- Subtle visual metaphor: A mask or hidden layer -->
+  <path d="M95 60c-10 0-15 10-15 20s5 20 15 20" stroke="#F6AD55" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+</svg>

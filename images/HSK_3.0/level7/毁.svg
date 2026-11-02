@@ -1,0 +1,70 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ground/horizon line -->
+  <path d="M 40 190 L 200 190" stroke="#2A2F3A" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Unmistakable Physical Object/Scene representing "destruction of a pine forest" -->
+  <!-- Burned terrain & stumps -->
+  <path d="M 60 190 L 60 175 L 75 190 Z" fill="#2E2421"/>
+  <path d="M 170 190 L 165 170 L 180 190 Z" fill="#2E2421"/>
+  <path d="M 110 190 L 115 178 L 125 190 Z" fill="#2E2421"/>
+
+  <!-- Fallen/Broken Pine Tree 1 (Left) -->
+  <g transform="translate(60, 160) rotate(-35)">
+    <path d="M 0 10 L 50 -10 L 45 -25 L -5 -5 Z" fill="#3A2E2B"/>
+    <path d="M 35 -15 L 45 -35 L 55 -20 Z" fill="#E65100"/>
+    <path d="M 15 -5 L 20 -20 L 30 -10 Z" fill="#EF6C00"/>
+  </g>
+
+  <!-- Main Destroyed/Burned Pine Tree (Center-Right) -->
+  <g transform="translate(130, 190)">
+    <!-- Trunk -->
+    <path d="M -5 0 L -8 -110 L 8 -110 L 5 0 Z" fill="#3D3028"/>
+    
+    <!-- Broken/Charred Branches with Ember highlights -->
+    <!-- Lower left branch -->
+    <path d="M -7 -70 L -45 -90 L -40 -98 L -6 -78 Z" fill="#2E2421"/>
+    <path d="M -42 -94 L -47 -96 L -44 -101 Z" fill="#FF5722"/>
+    
+    <!-- Lower right branch -->
+    <path d="M 7 -50 L 50 -70 L 46 -78 L 5 -58 Z" fill="#2E2421"/>
+    <path d="M 45 -72 L 53 -75 L 48 -82 Z" fill="#FF9800"/>
+    
+    <!-- Upper left branch (snapped) -->
+    <path d="M -8 -95 L -30 -120 L -24 -125 L -7 -102 Z" fill="#2E2421"/>
+    
+    <!-- Bare charred top -->
+    <path d="M 0 -110 L -12 -145 L -2 -140 L 4 -155 L 10 -135 L 2 -130 Z" fill="#2A221E"/>
+    
+    <!-- Glowing embers on the top structure -->
+    <circle cx="-6" cy="-142" r="3" fill="#FF3D00"/>
+    <circle cx="6" cy="-150" r="2.5" fill="#FFB300"/>
+    <circle cx="2" cy="-125" r="2" fill="#FF5722"/>
+  </g>
+
+  <!-- Dynamic Flames & Smoke representing the devastating act of "tàn phá, hủy hoại" -->
+  <!-- Smoke clouds in background -->
+  <circle cx="90" cy="80" r="22" fill="#2A303C" opacity="0.8"/>
+  <circle cx="115" cy="65" r="28" fill="#2E3748" opacity="0.8"/>
+  <circle cx="145" cy="75" r="20" fill="#2A303C" opacity="0.8"/>
+
+  <!-- Fierce Flames engulfing the scene -->
+  <!-- Flame 1 (Left) -->
+  <path d="M 80 190 C 80 150 60 120 70 95 C 75 110 90 125 85 150 C 95 140 100 120 105 130 C 110 150 90 170 80 190 Z" fill="#FF6D00"/>
+  <path d="M 83 190 C 83 160 72 135 77 115 C 80 125 90 140 87 160 C 93 150 97 135 100 142 C 103 158 90 175 83 190 Z" fill="#FFEA00"/>
+
+  <!-- Flame 2 (Center/Main) -->
+  <path d="M 115 190 C 115 130 90 95 110 60 C 120 85 145 105 135 140 C 150 120 160 90 165 110 C 170 140 135 170 115 190 Z" fill="#FF3D00"/>
+  <path d="M 120 190 C 120 145 102 115 115 85 C 122 105 140 120 132 145 C 144 130 152 105 156 120 C 160 145 132 168 120 190 Z" fill="#FF9100"/>
+  <path d="M 123 190 C 123 155 112 130 118 105 C 122 120 133 132 128 152 C 136 140 141 125 144 133 C 147 150 131 170 123 190 Z" fill="#FFEE58"/>
+
+  <!-- Embers / Sparks -->
+  <circle cx="75" cy="55" r="2" fill="#FFD54F"/>
+  <circle cx="100" cy="40" r="3" fill="#FF7043"/>
+  <circle cx="130" cy="45" r="1.5" fill="#FFCA28"/>
+  <circle cx="160" cy="55" r="2.5" fill="#FF5722"/>
+  <circle cx="148" cy="32" r="1.5" fill="#FFD54F"/>
+  <circle cx="85" cy="30" r="2" fill="#FF9800"/>
+</svg>

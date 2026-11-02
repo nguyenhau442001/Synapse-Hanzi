@@ -1,0 +1,57 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Atmospheric background elements representing desolation/stagnation -->
+  <g opacity="0.4">
+    <!-- Distant industrial crane, motionless -->
+    <path d="M185 120 L185 85 L200 80 L185 85 L150 95 L145 160" stroke="#3A4454" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <line x1="160" y1="92" x2="185" y2="85" stroke="#3A4454" stroke-width="2"/>
+    
+    <!-- Closed shipping container (idle/abandoned) -->
+    <rect x="130" y="135" width="60" height="25" rx="2" fill="#262D3D" stroke="#3A4454" stroke-width="1.5"/>
+    <line x1="145" y1="135" x2="145" y2="160" stroke="#1A1D24" stroke-width="1.5"/>
+    <line x1="175" y1="135" x2="175" y2="160" stroke="#1A1D24" stroke-width="1.5"/>
+
+    <!-- Ground line -->
+    <line x1="30" y1="160" x2="210" y2="160" stroke="#262D3D" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Central Iconic Object: An idle, weathered cargo shipping container with a rolling tumbleweed/autumn leaf symbolizing desolation and economic stagnation -->
+  <g transform="translate(0, 5)">
+    <!-- Main Shipping Container (Centered physical object) -->
+    <rect x="65" y="80" width="110" height="70" rx="4" fill="#2E384A" stroke="#48556A" stroke-width="2"/>
+    
+    <!-- Container Ribs/Corrugations -->
+    <line x1="82" y1="80" x2="82" y2="150" stroke="#1F2633" stroke-width="3"/>
+    <line x1="99" y1="80" x2="99" y2="150" stroke="#1F2633" stroke-width="3"/>
+    <line x1="116" y1="80" x2="116" y2="150" stroke="#1F2633" stroke-width="3"/>
+    <line x1="133" y1="80" x2="133" y2="150" stroke="#1F2633" stroke-width="3"/>
+    <line x1="150" y1="80" x2="150" y2="150" stroke="#1F2633" stroke-width="3"/>
+
+    <!-- Heavy Rust / Aging Accents (visualizing 萧条/decline) -->
+    <path d="M65 140 Q75 150 90 150 L65 150 Z" fill="#D97706" opacity="0.6"/>
+    <path d="M150 80 Q160 85 175 80 L175 90 Z" fill="#D97706" opacity="0.4"/>
+    <circle cx="165" cy="130" r="3" fill="#D97706" opacity="0.7"/>
+    <circle cx="75" cy="100" r="2" fill="#D97706" opacity="0.5"/>
+
+    <!-- Container lock bars -->
+    <line x1="107" y1="85" x2="107" y2="145" stroke="#1A1D24" stroke-width="2"/>
+    <circle cx="107" cy="115" r="3" fill="#1A1D24"/>
+
+    <!-- Overlay element: A single withered leaf / tumbleweed passing through an empty space, enhancing the feeling of emptiness -->
+    <g transform="translate(85, 125) rotate(-15)">
+      <path d="M0 10 Q10 -5 20 0 Q25 10 15 20 Q5 25 0 10 Z" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+      <path d="M5 12 Q12 8 18 15" fill="none" stroke="#D97706" stroke-width="1.5" opacity="0.8"/>
+    </g>
+  </g>
+
+  <!-- Ground shadow underneath the container -->
+  <ellipse cx="120" cy="162" r="60" rx="60" ry="6" fill="#111317"/>
+
+  <!-- Subtle falling dust/particle elements to reinforce quiet stillness -->
+  <circle cx="55" cy="105" r="1.5" fill="#48556A" opacity="0.5"/>
+  <circle cx="195" cy="115" r="1" fill="#48556A" opacity="0.4"/>
+  <circle cx="140" cy="65" r="1.5" fill="#48556A" opacity="0.6"/>
+  <circle cx="85" cy="60" r="1" fill="#48556A" opacity="0.3"/>
+</svg>

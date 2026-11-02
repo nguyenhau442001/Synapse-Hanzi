@@ -1,0 +1,47 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Glow / Atmosphere -->
+  <circle cx="120" cy="120" r="70" fill="#222834" opacity="0.6"/>
+
+  <!-- Conceptual Object: A majestic falcon/raptor perched calmly and tamely, representing "驯" (tamed, docile, obedient) -->
+  <g transform="translate(0, 5)">
+    <!-- Perch / Glove Base -->
+    <path d="M 80 185 L 160 185" stroke="#3A4252" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 120 185 L 120 205" stroke="#3A4252" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Falcon Body & Wings (Sleek flat vector design) -->
+    <!-- Tail Feathers -->
+    <path d="M 105 145 L 95 175 L 115 170 Z" fill="#4F5D73"/>
+    
+    <!-- Back / Wings -->
+    <path d="M 120 90 C 100 95 90 120 95 150 C 110 155 125 155 135 145 Z" fill="#6C7A9C"/>
+    
+    <!-- Main Body Front -->
+    <path d="M 120 90 C 140 100 145 130 135 155 C 125 155 110 150 105 130 Z" fill="#8FA3C7"/>
+    
+    <!-- Chest feather pattern (clean geometric detail) -->
+    <path d="M 120 105 L 128 120 L 120 135 L 112 120 Z" fill="#A4B7D6" opacity="0.6"/>
+
+    <!-- Head -->
+    <circle cx="125" cy="70" r="22" fill="#6C7A9C"/>
+    
+    <!-- Falcon Hood / Cap Marking (Classic falconry/taming imagery) -->
+    <path d="M 103 65 C 110 50 140 55 147 70 C 140 75 110 75 103 65 Z" fill="#3A4252"/>
+    
+    <!-- Calm/Tamed Eye (Closed or peaceful gentle arc) -->
+    <path d="M 132 68 Q 137 72 142 68" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <circle cx="137" cy="70" r="2" fill="#1A1D24"/>
+
+    <!-- Sharp, controlled Beak (Orange/Gold accent for focus, showing subdued power) -->
+    <path d="M 142 69 L 155 74 L 142 79 Z" fill="#F39C12"/>
+    
+    <!-- Talons gripping perch firmly and safely -->
+    <path d="M 110 177 C 110 182 115 185 120 185 C 125 185 130 182 130 177" stroke="#F39C12" stroke-width="3" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Subtle indicator of guidance/harmony (Gentle minimalist aura arc) -->
+  <path d="M 75 95 C 65 115 65 135 75 155" stroke="#F39C12" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 6" fill="none" opacity="0.8"/>
+  <path d="M 165 95 C 175 115 175 135 165 155" stroke="#F39C12" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 6" fill="none" opacity="0.8"/>
+</svg>

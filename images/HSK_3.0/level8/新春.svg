@@ -1,0 +1,99 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative Background Glow -->
+  <circle cx="120" cy="120" r="80" fill="#FF5722" opacity="0.08" filter="blur(20px)"/>
+
+  <!-- Traditional Chinese Window Lattice (Circle) representing "Chun" / Season framing -->
+  <circle cx="120" cy="115" r="76" fill="none" stroke="#FF5722" stroke-width="3" opacity="0.4"/>
+  <circle cx="120" cy="115" r="70" fill="none" stroke="#FF5722" stroke-width="1.5" opacity="0.3" stroke-dasharray="4 4"/>
+
+  <!-- Plum Blossom Branch (Symbol of early spring / Xin Chun - New Spring) -->
+  <g fill="none" stroke="#D7CCC8" stroke-linecap="round">
+    <!-- Main branch -->
+    <path d="M50 145 C 70 145, 90 120, 110 100 C 130 80, 150 75, 185 60" stroke-width="4"/>
+    <!-- Sub branch -->
+    <path d="M100 110 C 110 110, 125 95, 135 85" stroke-width="2.5"/>
+    <path d="M130 92 C 145 95, 160 110, 175 125" stroke-width="2"/>
+    <path d="M75 130 C 65 115, 60 105, 50 95" stroke-width="2"/>
+  </g>
+
+  <!-- Plum Blossoms (Vibrant Golden-Orange & Red accents for New Spring festivity) -->
+  <g>
+    <!-- Blossom 1 -->
+    <g transform="translate(145, 75)">
+      <circle cx="0" cy="-6" r="4.5" fill="#FFC107"/>
+      <circle cx="5" cy="-2" r="4.5" fill="#FFC107"/>
+      <circle cx="3" cy="5" r="4.5" fill="#FFC107"/>
+      <circle cx="-3" cy="5" r="4.5" fill="#FFC107"/>
+      <circle cx="-5" cy="-2" r="4.5" fill="#FFC107"/>
+      <circle cx="0" cy="0" r="2.5" fill="#FF5722"/>
+    </g>
+
+    <!-- Blossom 2 -->
+    <g transform="translate(110, 100)">
+      <circle cx="0" cy="-6" r="5" fill="#FF5722"/>
+      <circle cx="5" cy="-2" r="5" fill="#FF5722"/>
+      <circle cx="3" cy="5" r="5" fill="#FF5722"/>
+      <circle cx="-3" cy="5" r="5" fill="#FF5722"/>
+      <circle cx="-5" cy="-2" r="5" fill="#FF5722"/>
+      <circle cx="0" cy="0" r="2.5" fill="#FFC107"/>
+    </g>
+
+    <!-- Blossom 3 -->
+    <g transform="translate(75, 130)">
+      <circle cx="0" cy="-5" r="4" fill="#FFC107"/>
+      <circle cx="4" cy="-1" r="4" fill="#FFC107"/>
+      <circle cx="2" cy="4" r="4" fill="#FFC107"/>
+      <circle cx="-2" cy="4" r="4" fill="#FFC107"/>
+      <circle cx="-4" cy="-1" r="4" fill="#FFC107"/>
+      <circle cx="0" cy="0" r="2" fill="#FF5722"/>
+    </g>
+
+    <!-- Blossom 4 -->
+    <g transform="translate(165, 115)">
+      <circle cx="0" cy="-5" r="4" fill="#FF5722"/>
+      <circle cx="4" cy="-1" r="4" fill="#FF5722"/>
+      <circle cx="2" cy="4" r="4" fill="#FF5722"/>
+      <circle cx="-2" cy="4" r="4" fill="#FF5722"/>
+      <circle cx="-4" cy="-1" r="4" fill="#FF5722"/>
+      <circle cx="0" cy="0" r="2" fill="#FFC107"/>
+    </g>
+
+    <!-- Blossom 5 -->
+    <g transform="translate(90, 85)">
+      <circle cx="0" cy="-4" r="3.5" fill="#FFC107"/>
+      <circle cx="3" cy="-1" r="3.5" fill="#FFC107"/>
+      <circle cx="2" cy="3" r="3.5" fill="#FFC107"/>
+      <circle cx="-2" cy="3" r="3.5" fill="#FFC107"/>
+      <circle cx="-3" cy="-1" r="3.5" fill="#FFC107"/>
+      <circle cx="0" cy="0" r="1.5" fill="#FF5722"/>
+    </g>
+  </g>
+
+  <!-- Central Festive Hanging Lantern (Representing New Year / Xin Chun celebration) -->
+  <g transform="translate(0, 0)">
+    <!-- Hanging String -->
+    <line x1="120" y1="35" x2="120" y2="60" stroke="#FFC107" stroke-width="2"/>
+    <rect x="114" y="58" width="12" height="4" rx="1" fill="#E64A19"/>
+    
+    <!-- Lantern Body -->
+    <path d="M 120 62 C 95 62, 90 90, 120 120 C 150 90, 145 62, 120 62 Z" fill="#E53935"/>
+    
+    <!-- Lantern Ribs (Golden Curved Lines) -->
+    <path d="M 120 62 C 110 62, 102 90, 120 120" fill="none" stroke="#FFC107" stroke-width="1.5" opacity="0.8"/>
+    <path d="M 120 62 C 130 62, 138 90, 120 120" fill="none" stroke="#FFC107" stroke-width="1.5" opacity="0.8"/>
+    <line x1="120" y1="62" x2="120" y2="120" stroke="#FFC107" stroke-width="1.5" opacity="0.8"/>
+
+    <!-- Lantern Caps -->
+    <rect x="112" y="118" width="16" height="4" rx="1" fill="#E64A19"/>
+    
+    <!-- Lantern Tassel -->
+    <line x1="120" y1="122" x2="120" y2="136" stroke="#FFC107" stroke-width="1.5"/>
+    <path d="M 120 136 L 115 148 L 125 148 Z" fill="#FFC107"/>
+  </g>
+
+  <!-- Ground / Horizon subtle touch -->
+  <path d="M 70 185 Q 120 178 170 185" fill="none" stroke="#2C313C" stroke-width="3" stroke-linecap="round"/>
+</svg>

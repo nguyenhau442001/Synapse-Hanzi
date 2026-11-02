@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Person representing the volunteer/teacher -->
+  <g transform="translate(120, 120)">
+    <!-- Body -->
+    <path d="M-30 80 L-30 40 C-30 20, -10 10, 0 10 C10 10, 30 20, 30 40 L30 80 Z" fill="#4A90E2"/>
+    
+    <!-- Head -->
+    <circle cx="0" cy="-10" r="25" fill="#FFD700"/>
+    
+    <!-- Enthusiastic expression -->
+    <path d="M-8 -5 Q0 -12 8 -5" stroke="#1A1D24" stroke-width="2" fill="none"/>
+    <circle cx="-8" cy="-15" r="3" fill="#1A1D24"/>
+    <circle cx="8" cy="-15" r="3" fill="#1A1D24"/>
+    
+    <!-- Arm reaching out to teach/help -->
+    <path d="M30 30 L60 10" stroke="#FFD700" stroke-width="12" stroke-linecap="round"/>
+    
+    <!-- Book/Knowledge object being held -->
+    <rect x="50" y="-10" width="40" height="30" rx="4" fill="#E67E22"/>
+    <path d="M55 -5 L85 -5 M55 0 L85 0 M55 5 L85 5 M55 10 L85 10" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Supporting hand gesture -->
+    <path d="M-30 30 L-60 10" stroke="#FFD700" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="-65" cy="5" r="10" fill="#FFD700"/>
+  </g>
+</svg>

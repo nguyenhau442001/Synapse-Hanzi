@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Base layers of history (Sedimentation/Accumulation) -->
+  <path d="M60 190 L180 190 L170 170 L70 170 Z" fill="#2C333F"/>
+  <path d="M70 170 L170 170 L160 150 L80 150 Z" fill="#3D4756"/>
+  <path d="M80 150 L160 150 L150 130 L90 130 Z" fill="#4E5B6D"/>
+  <path d="M90 130 L150 130 L140 110 L100 110 Z" fill="#5F6F85"/>
+  
+  <!-- Ancient Architectural Element (Representing the city/civilization) -->
+  <!-- Roof structure -->
+  <path d="M80 110 L160 110 L175 90 L65 90 Z" fill="#FFB347"/>
+  <path d="M70 90 L170 90 L170 80 L70 80 Z" fill="#E69F3E"/>
+  
+  <!-- Pillar/Structure -->
+  <rect x="105" y="90" width="30" height="40" fill="#FFB347"/>
+  
+  <!-- Decorative details on the structure -->
+  <rect x="110" y="95" width="20" height="5" fill="#1A1D24" opacity="0.2"/>
+  <rect x="110" y="105" width="20" height="5" fill="#1A1D24" opacity="0.2"/>
+  <rect x="110" y="115" width="20" height="5" fill="#1A1D24" opacity="0.2"/>
+  
+  <!-- Subtle ground shadow -->
+  <ellipse cx="120" cy="200" rx="70" ry="10" fill="#000000" opacity="0.3"/>
+</svg>

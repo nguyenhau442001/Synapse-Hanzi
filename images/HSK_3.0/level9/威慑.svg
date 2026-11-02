@@ -1,0 +1,32 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 115)">
+    <!-- Shield Outline representing defense and deterrence -->
+    <path d="M0 -75 L60 -45 L60 20 C60 55 25 80 0 95 C-25 80 -60 55 -60 20 L-60 -45 Z" 
+          fill="#222831" 
+          stroke="#303846" 
+          stroke-width="4"/>
+          
+    <!-- Concentric radar/energy waves emanating outward, signifying overwhelming deterrence -->
+    <path d="M-45 -30 C-20 -45 20 -45 45 -30" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+    <path d="M-60 -10 C-30 -30 30 -30 60 -10" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+    <path d="M-72 15 C-35 -10 35 -10 72 15" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Central powerful physical object: Modern Strategic Defense Launcher / Power Icon -->
+    <!-- Base platform -->
+    <rect x="-35" y="45" width="70" height="12" rx="4" fill="#4B5563"/>
+    <rect x="-25" y="32" width="50" height="15" rx="3" fill="#374151"/>
+    
+    <!-- Angled launcher tubes (representing military might and deterrence readiness) -->
+    <rect x="-22" y="-15" width="12" height="55" rx="3" transform="rotate(-15 -16 12)" fill="#9CA3AF" stroke="#1F2937" stroke-width="2"/>
+    <rect x="10" y="-15" width="12" height="55" rx="3" transform="rotate(15 16 12)" fill="#9CA3AF" stroke="#1F2937" stroke-width="2"/>
+    
+    <rect x="-7" y="-28" width="14" height="65" rx="3" fill="#D1D5DB" stroke="#1F2937" stroke-width="2"/>
+
+    <!-- High-contrast focus glow/accent at the core -->
+    <circle cx="0" cy="-25" r="5" fill="#F59E0B"/>
+    <circle cx="0" cy="-25" r="9" fill="none" stroke="#F59E0B" stroke-width="2" opacity="0.6"/>
+  </g>
+</svg>

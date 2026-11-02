@@ -1,0 +1,55 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Starry Dark Sky / Night Background -->
+  <circle cx="50" cy="45" r="1" fill="#4A5568"/>
+  <circle cx="90" cy="30" r="1.5" fill="#E2E8F0"/>
+  <circle cx="160" cy="40" r="1" fill="#4A5568"/>
+  <circle cx="200" cy="65" r="1.5" fill="#E2E8F0"/>
+  <circle cx="35" cy="85" r="1" fill="#E2E8F0"/>
+  
+  <!-- Distant City Skyline Silhouettes -->
+  <path d="M 20 190 L 20 140 L 35 140 L 35 190 L 55 190 L 55 110 L 75 110 L 75 190 L 95 190 L 95 125 L 115 125 L 115 190 L 135 190 L 135 95 L 165 95 L 165 190 L 185 190 L 185 130 L 205 130 L 205 190 L 220 190 L 220 190 Z" fill="#252A34"/>
+  
+  <!-- City Windows (Lit orange/gold accent) -->
+  <rect x="25" y="148" width="4" height="6" fill="#F6AD55" opacity="0.6"/>
+  <rect x="25" y="160" width="4" height="6" fill="#F6AD55" opacity="0.6"/>
+  <rect x="60" y="120" width="4" height="8" fill="#F6AD55" opacity="0.8"/>
+  <rect x="68" y="120" width="4" height="8" fill="#F6AD55" opacity="0.4"/>
+  <rect x="60" y="135" width="4" height="8" fill="#F6AD55" opacity="0.8"/>
+  <rect x="140" y="105" width="6" height="10" fill="#F6AD55" opacity="0.9"/>
+  <rect x="150" y="105" width="6" height="10" fill="#F6AD55" opacity="0.5"/>
+  <rect x="140" y="125" width="6" height="10" fill="#F6AD55" opacity="0.7"/>
+  <rect x="190" y="140" width="4" height="6" fill="#F6AD55" opacity="0.8"/>
+
+  <!-- Ground Plane -->
+  <rect x="0" y="190" width="240" height="50" fill="#14171F"/>
+  <line x1="0" y1="190" x2="240" y2="190" stroke="#323846" stroke-width="2"/>
+
+  <!-- THE CENTRAL CONCEPT: "Descending" Night Shroud / Veil (Buông xuống, giáng xuống) -->
+  <!-- Layered translucent descending waves representing the arrival/descent of night -->
+  <path d="M 0 60 C 60 40, 140 100, 240 70 L 240 190 L 0 190 Z" fill="#111318" opacity="0.7"/>
+  <path d="M 0 90 C 80 70, 160 130, 240 100 L 240 190 L 0 190 Z" fill="#0D0F12" opacity="0.85"/>
+
+  <!-- Dynamic Descending Light Beams / Neon glow touching down -->
+  <path d="M 70 95 L 40 190" stroke="#F6AD55" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4"/>
+  <path d="M 170 95 L 200 190" stroke="#F6AD55" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4"/>
+
+  <!-- Focal Point: The Great Urban Crescent Moon / Descending Glow Element -->
+  <circle cx="120" cy="55" r="18" fill="#F6AD55"/>
+  <circle cx="126" cy="51" r="16" fill="#1A1D24"/> <!-- Crescent cutout -->
+
+  <!-- Descending Rays / Arrival Vectors -->
+  <g stroke="#F6AD55" stroke-width="2" stroke-linecap="round" opacity="0.8">
+    <!-- Arrow/Beam pointing downward to signify "jiànglín" (descending upon) -->
+    <line x1="120" y1="85" x2="120" y2="115"/>
+    <polyline points="112,107 120,117 128,107" fill="none"/>
+
+    <line x1="75" y1="75" x2="85" y2="95"/>
+    <polyline points="80,88 86,96 89,88" fill="none"/>
+
+    <line x1="165" y1="75" x2="155" y2="95"/>
+    <polyline points="151,88 154,96 160,89" fill="none"/>
+  </g>
+
+</svg>

@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Water surface (lowered level) -->
+  <path d="M40 160 Q120 150 200 160 L200 220 L40 220 Z" fill="#2C3E50" opacity="0.8"/>
+  <path d="M40 160 Q120 150 200 160" stroke="#3498DB" stroke-width="3" fill="none"/>
+  
+  <!-- Exposed Rock (The focus) -->
+  <g transform="translate(120, 170)">
+    <path d="M-30 0 L-20 -40 L10 -50 L40 -20 L30 10 L-10 10 Z" fill="#95A5A6"/>
+    <path d="M-20 -40 L10 -50 L40 -20 L35 -10 L-10 -10 Z" fill="#BDC3C7"/>
+    <path d="M-30 0 L-20 -40 L-10 -10 Z" fill="#7F8C8D"/>
+  </g>
+  
+  <!-- Magnifying glass highlighting the rock -->
+  <circle cx="120" cy="130" r="35" stroke="#F39C12" stroke-width="4" fill="none"/>
+  <line x1="145" y1="155" x2="170" y2="180" stroke="#F39C12" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Subtle light beam/focus effect -->
+  <path d="M100 120 L140 120 L130 170 L110 170 Z" fill="#F39C12" opacity="0.15"/>
+</svg>

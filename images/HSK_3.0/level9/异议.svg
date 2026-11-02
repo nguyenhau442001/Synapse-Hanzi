@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle floor shadow for grounding the physical object -->
+  <ellipse cx="120" cy="188" rx="56" ry="12" fill="#111318" opacity="0.6"/>
+
+  <!-- Physical Object Group: A raised hand holding a traditional wooden gavel / objection indicator, representing a formal objection / dissenting voice (异议) -->
+  <g transform="translate(0, 0)">
+    <!-- Suit sleeve / Arm base coming from bottom right -->
+    <path d="M 150 205 L 185 228 C 190 231 197 228 195 222 L 170 178 Z" fill="#2C3240"/>
+    <path d="M 150 205 L 175 192 L 185 208 L 163 218 Z" fill="#3B4252"/>
+
+    <!-- Hand holding the gavel upright -->
+    <path d="M 132 170 C 130 156 138 145 148 148 C 153 150 156 154 158 158 C 162 154 168 153 172 158 C 175 162 175 168 172 173 C 168 178 158 185 148 185 C 138 185 133 182 132 170 Z" fill="#E5C198"/>
+    <!-- Fingers wrapped around handle -->
+    <path d="M 148 153 C 151 153 154 156 155 160 C 155 164 152 167 149 167" stroke="#D0A678" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 158 159 C 161 160 164 163 164 167 C 164 171 161 174 157 175" stroke="#D0A678" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+    <!-- Gavel Handle -->
+    <path d="M 125 185 L 150 142 C 152 138 149 133 145 135 L 120 178 C 117 182 121 187 125 185 Z" fill="#A0633C"/>
+    <rect x="130" y="157" width="16" height="5" rx="2" transform="rotate(-60 130 157)" fill="#814D2A"/>
+    <rect x="136" y="146" width="16" height="5" rx="2" transform="rotate(-60 136 146)" fill="#814D2A"/>
+
+    <!-- Gavel Head (Horizontal striking block) -->
+    <g transform="translate(108, 95) rotate(-30)">
+      <!-- Main cylindrical block -->
+      <rect x="-35" y="-14" width="70" height="28" rx="6" fill="#C07E4E"/>
+      <!-- Left striking face -->
+      <ellipse cx="-35" cy="0" rx="6" ry="14" fill="#D99B6A"/>
+      <!-- Right striking face -->
+      <ellipse cx="35" cy="0" rx="6" ry="14" fill="#A0633C"/>
+      <!-- Center golden accent ring -->
+      <rect x="-6" y="-15" width="12" height="30" rx="2" fill="#E6B94D"/>
+    </g>
+  </g>
+
+  <!-- High-contrast professional focus indicator: A sharp geometric speech-bubble contour floating subtly above, embodying the dissent/opinion concept without abstract clutter -->
+  <g transform="translate(0, 0)">
+    <!-- Speech bubble representing voice/opinion, styled clean and flat -->
+    <path d="M 68 62 
+             C 68 50, 78 40, 92 40 
+             L 148 40 
+             C 162 40, 172 50, 172 62 
+             L 172 86 
+             C 172 98, 162 108, 148 108 
+             L 116 108 
+             L 98 126 
+             L 98 108 
+             L 92 108 
+             C 78 108, 68 98, 68 86 Z" 
+          fill="#252A34" 
+          stroke="#E6B94D" 
+          stroke-width="3"/>
+
+    <!-- Exclamation mark / Dissent symbol inside speech bubble (clear, iconic visual for objection) -->
+    <circle cx="120" cy="88" r="4" fill="#E6B94D"/>
+    <rect x="117" y="54" width="6" height="22" rx="3" fill="#E6B94D"/>
+  </g>
+
+  <!-- Accent highlight sparks (Professional design touch for modern dark UI) -->
+  <circle cx="182" cy="75" r="3" fill="#E6B94D" opacity="0.8"/>
+  <circle cx="62" cy="115" r="2" fill="#E6B94D" opacity="0.6"/>
+</svg>

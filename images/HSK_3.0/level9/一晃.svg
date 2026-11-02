@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Object: An hourglass combined with dynamic motion lines representing a flash/blink of time passing -->
+  <g transform="translate(120, 120)">
+    <!-- Motion blur trails / "flash" speed lines -->
+    <path d="M-60 -50 L-30 -50" stroke="#4A5568" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+    <path d="M50 -30 L70 -30" stroke="#4A5568" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+    <path d="M-70 10 L-40 10" stroke="#4A5568" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+    <path d="M40 40 L65 40" stroke="#4A5568" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Dynamic swoosh / flash arc representing "yíhuàng" (in a flash) -->
+    <path d="M-75 -20 C-60 -60, 60 -60, 75 -20 C90 20, 60 70, 0 70 C-50 70, -85 20, -75 -20 Z" fill="none" stroke="#F6AD55" stroke-width="3" stroke-dasharray="6 4" opacity="0.6"/>
+
+    <!-- Hourglass Frame Outer Glow / Accent -->
+    <polygon points="-32,-68 32,-68 36,-64 -36,-64" fill="#E2E8F0"/>
+    <polygon points="-32,68 32,68 36,64 -36,64" fill="#E2E8F0"/>
+    <rect x="-38" y="-68" width="76" height="4" rx="2" fill="#CBD5E0"/>
+    <rect x="-38" y="64" width="76" height="4" rx="2" fill="#CBD5E0"/>
+    <rect x="-4" y="-68" width="8" height="136" fill="#CBD5E0" opacity="0.3"/>
+
+    <!-- Upper Glass Bulb -->
+    <path d="M -32 -64 C -32 -64, -28 -20, 0 0 C 28 -20, 32 -64, 32 -64 Z" fill="#2D3748" stroke="#4A5568" stroke-width="2"/>
+    
+    <!-- Lower Glass Bulb -->
+    <path d="M -32 64 C -32 64, -28 20, 0 0 C 28 20, 32 64, 32 64 Z" fill="#2D3748" stroke="#4A5568" stroke-width="2"/>
+
+    <!-- Sand in Upper Bulb (partially drained) -->
+    <path d="M -24 -48 C -20 -30, -10 -15, 0 0 C -5 -10, -15 -30, -24 -48 Z" fill="#F6AD55" opacity="0.4"/>
+    <path d="M -20 -45 C -12 -30, -6 -15, 0 0 C -3 -10, -10 -25, -20 -45 Z" fill="#ED8936"/>
+
+    <!-- Sand in Lower Bulb (mostly filled, representing the swift passage of 20 years) -->
+    <path d="M -30 55 C -15 35, 15 35, 30 55 C 20 61, -20 61, -30 55 Z" fill="#ED8936"/>
+    <path d="M -26 48 C -12 33, 12 33, 26 48 C 18 54, -18 54, -26 48 Z" fill="#F6AD55"/>
+
+    <!-- Falling stream of sand -->
+    <line x1="0" y1="0" x2="0" y2="35" stroke="#F6AD55" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Bright flash / spark accent representing the suddenness ("chớp mắt") -->
+    <g transform="translate(0, 0)">
+      <path d="M 0 -18 L 4 -4 L 18 0 L 4 4 L 0 18 L -4 4 L -18 0 L -4 -4 Z" fill="#F6AD55"/>
+      <circle cx="0" cy="0" r="2" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Additional dynamic sparkle top right -->
+    <g transform="translate(45, -35)">
+      <path d="M 0 -8 L 2 -2 L 8 0 L 2 2 L 0 8 L -2 2 L -8 0 L -2 -2 Z" fill="#ED8936"/>
+    </g>
+  </g>
+</svg>

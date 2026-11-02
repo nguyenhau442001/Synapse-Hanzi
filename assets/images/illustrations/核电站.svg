@@ -1,0 +1,59 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Coastal/Water base -->
+  <path d="M 20 200 C 60 190, 100 205, 140 198 C 180 190, 210 202, 220 205 L 220 220 L 20 220 Z" fill="#162536"/>
+  <path d="M 20 205 C 70 200, 120 210, 220 205 L 220 220 L 20 220 Z" fill="#101924"/>
+
+  <!-- Containment Structure - Left (Reactor 1) -->
+  <g>
+    <!-- Base building -->
+    <rect x="45" y="140" width="50" height="60" rx="4" fill="#2A3442"/>
+    <!-- Dome -->
+    <path d="M 45 140 C 45 110, 95 110, 95 140 Z" fill="#3B485A"/>
+    <!-- Radiation symbol accent -->
+    <circle cx="70" cy="135" r="4" fill="#F59E0B"/>
+  </g>
+
+  <!-- Containment Structure - Right (Reactor 2, Main) -->
+  <g>
+    <!-- Base building -->
+    <rect x="95" y="125" width="60" height="75" rx="4" fill="#334155"/>
+    <!-- Dome -->
+    <path d="M 95 125 C 95 90, 155 90, 155 125 Z" fill="#475569"/>
+    <!-- Glowing accent port -->
+    <circle cx="125" cy="115" r="6" fill="#F59E0B"/>
+    <circle cx="125" cy="115" r="2" fill="#1A1D24"/>
+  </g>
+
+  <!-- Cooling Towers (Iconic hyperbolic shape) -->
+  <!-- Left Cooling Tower -->
+  <g>
+    <path d="M 165 200 L 172 130 C 172 130, 180 120, 188 130 L 195 200 Z" fill="#3B485A"/>
+    <!-- Vapor plume -->
+    <path d="M 175 125 C 170 110, 185 105, 180 90 C 185 95, 190 90, 188 105 C 195 110, 185 120, 180 125 Z" fill="#64748B" opacity="0.4"/>
+  </g>
+
+  <!-- Right Cooling Tower -->
+  <g>
+    <path d="M 190 200 L 196 145 C 196 145, 202 138, 208 145 L 214 200 Z" fill="#2A3442"/>
+    <!-- Vapor plume -->
+    <path d="M 200 140 C 195 125, 210 120, 205 105 C 210 110, 215 105, 213 120 C 220 125, 210 135, 205 140 Z" fill="#64748B" opacity="0.3"/>
+  </g>
+
+  <!-- Ancillary buildings / Turbine hall -->
+  <rect x="35" y="170" width="130" height="30" rx="3" fill="#1E293B"/>
+
+  <!-- Energy / Power Grid Accent Lines -->
+  <path d="M 125 115 L 125 70 L 180 70" stroke="#F59E0B" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="180" cy="70" r="3" fill="#F59E0B"/>
+
+  <!-- High-voltage transmission tower silhouette -->
+  <path d="M 205 200 L 210 160 L 215 200 Z" fill="#0F172A"/>
+  <path d="M 202 168 L 218 168" stroke="#0F172A" stroke-width="2"/>
+  <path d="M 204 176 L 216 176" stroke="#0F172A" stroke-width="2"/>
+
+  <!-- Subtle glowing energy effect representing clean power -->
+  <circle cx="125" cy="115" r="16" stroke="#F59E0B" stroke-width="1.5" fill="none" opacity="0.4"/>
+</svg>

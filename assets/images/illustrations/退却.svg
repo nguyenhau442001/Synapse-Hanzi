@@ -1,0 +1,55 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Atmospheric Background Elements (Subtle mountain/cold reference) -->
+  <path d="M20 180 L80 130 L130 170 L190 110 L220 150 L220 200 L20 200 Z" fill="#222733" opacity="0.5"/>
+  <path d="M0 160 L50 120 L110 160 L170 100 L240 160 L240 220 L0 220 Z" fill="#282E3D" opacity="0.6"/>
+
+  <!-- Snow ground overlay -->
+  <path d="M0 195 Q60 190 120 196 T240 192 L240 240 L0 240 Z" fill="#32394B"/>
+
+  <!-- Conceptual Object: Explorer Character Stepping Back / Withdrawing (退却) -->
+  <g transform="translate(0, 5)">
+    <!-- Heavy Cold Wind / Resistance Lines (Diagonal streaks) -->
+    <g stroke="#4A5568" stroke-width="2" stroke-linecap="round" opacity="0.4">
+      <line x1="170" y1="50" x2="130" y2="70"/>
+      <line x1="190" y1="70" x2="150" y2="90"/>
+      <line x1="150" y1="40" x2="110" y2="60"/>
+    </g>
+
+    <!-- Backpack / Gear (Explorer) -->
+    <rect x="115" y="85" width="22" height="35" rx="6" fill="#D97706"/>
+    <path d="M118 85 L134 85 L130 75 L122 75 Z" fill="#B45309"/>
+
+    <!-- Body (Leaning backward/retreating posture) -->
+    <path d="M125 110 L110 145 L125 175" fill="none" stroke="#38BDF8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Head with Hood and Goggles -->
+    <circle cx="120" cy="70" r="14" fill="#0284C7"/>
+    <!-- Hood flap -->
+    <path d="M106 72 Q125 90 134 78" fill="none" stroke="#0284C7" stroke-width="6" stroke-linecap="round"/>
+    <!-- Goggles -->
+    <rect x="112" y="65" width="14" height="7" rx="3.5" fill="#FBBF24"/>
+
+    <!-- Legs (Stepping backward / shifting weight) -->
+    <!-- Rear leg (planted/sliding back) -->
+    <path d="M120 170 L95 188" stroke="#0F172A" stroke-width="10" stroke-linecap="round"/>
+    <!-- Front leg (lifting/retreating) -->
+    <path d="M125 170 L145 180" stroke="#0284C7" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- Boots -->
+    <rect x="85" y="184" width="16" height="8" rx="4" fill="#E2E8F0"/>
+    <rect x="140" y="177" width="16" height="8" rx="4" fill="#E2E8F0"/>
+
+    <!-- Trekking Pole (Dragging behind as they withdraw) -->
+    <line x1="130" y1="120" x2="80" y2="185" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="80" cy="185" r="4" fill="#64748B"/>
+
+    <!-- Direction Arrow Indicating Retreat/Withdrawal (Sleek, glowing orange accent) -->
+    <g transform="translate(0, -10)">
+      <path d="M 155 115 Q 135 100 115 115" fill="none" stroke="#F59E0B" stroke-width="4" stroke-dasharray="6 4" stroke-linecap="round"/>
+      <path d="M 120 107 L 110 115 L 121 122" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Central Physical Object: A massive, dominating glowing golden structure/vault tightly gripping smaller structural blocks -->
+  <!-- Background glow for dominance -->
+  <circle cx="120" cy="120" r="70" fill="#FFB703" opacity="0.08"/>
+
+  <!-- Subordinate/Crushed elements representing market control -->
+  <!-- Left smaller entity -->
+  <g transform="translate(55, 120)">
+    <rect x="-18" y="-18" width="36" height="36" rx="6" fill="#2D3340" stroke="#4A5568" stroke-width="2"/>
+    <path d="M-8 -4 L8 -4 M-8 4 L8 4" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <!-- Right smaller entity -->
+  <g transform="translate(185, 120)">
+    <rect x="-18" y="-18" width="36" height="36" rx="6" fill="#2D3340" stroke="#4A5568" stroke-width="2"/>
+    <path d="M-8 -4 L8 -4 M-8 4 L8 4" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <!-- Top smaller entity -->
+  <g transform="translate(120, 55)">
+    <rect x="-18" y="-18" width="36" height="36" rx="6" fill="#2D3340" stroke="#4A5568" stroke-width="2"/>
+    <path d="M-8 -4 L8 -4 M-8 4 L8 4" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Connection / Control Lines (Monopoly / Algorithms / Capital grasping) -->
+  <path d="M73 120 L85 120" stroke="#FFB703" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <path d="M167 120 L155 120" stroke="#FFB703" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <path d="M120 73 L120 85" stroke="#FFB703" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Central Dominant Entity (Monopoly: Central vault / fortress firmly clasping the center) -->
+  <g transform="translate(120, 120)">
+    <!-- Outer gripping claws / brackets representing total enclosure -->
+    <path d="M -35 -20 L -35 -35 L 35 -35 L 35 -20" fill="none" stroke="#FB8500" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M -35 20 L -35 35 L 35 35 L 35 20" fill="none" stroke="#FB8500" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Main Central Block (The Monopoly Core) -->
+    <rect x="-26" y="-26" width="52" height="52" rx="10" fill="#1F2430" stroke="#FFB703" stroke-width="3"/>
+    
+    <!-- Inner Vault Symbol / Crown / Dominance Icon -->
+    <path d="M-12 -6 L0 -16 L12 -6 L8 10 L-8 10 Z" fill="#FFB703" opacity="0.9"/>
+    <circle cx="0" cy="-2" r="3" fill="#1F2430"/>
+  </g>
+
+  <!-- Accent control nodes (Algorithm/Capital nodes) -->
+  <circle cx="120" cy="85" r="4" fill="#FFB703"/>
+  <circle cx="85" cy="120" r="4" fill="#FFB703"/>
+  <circle cx="155" cy="120" r="4" fill="#FFB703"/>
+  
+  <!-- Ground Shadow / Base Platform Line -->
+  <path d="M 70 175 L 170 175" stroke="#2D3340" stroke-width="4" stroke-linecap="round"/>
+</svg>

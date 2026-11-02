@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Central Physical Object: A modern cosmetic pump bottle representing the chemical & gentle skincare context "中性" -->
+  <g transform="translate(0, 0)">
+    <!-- Drop Shadow / Glow -->
+    <ellipse cx="120" cy="205" rx="35" ry="6" fill="#000000" opacity="0.4"/>
+    
+    <!-- Bottle Cap / Pump Mechanism -->
+    <!-- Collar -->
+    <rect x="105" y="58" width="30" height="10" rx="3" fill="#64748B"/>
+    <!-- Pump Neck -->
+    <rect x="114" y="48" width="12" height="10" fill="#94A3B8"/>
+    <!-- Pump Head -->
+    <path d="M96 48 H120 V42 C120 40.5 118.5 39 117 39 H99 C97.5 39 96 40.5 96 42 Z" fill="#64748B"/>
+    <rect x="92" y="45" width="8" height="4" rx="2" fill="#64748B"/>
+
+    <!-- Main Bottle Body -->
+    <rect x="90" y="68" width="60" height="124" rx="14" fill="#28303F" stroke="#3B4758" stroke-width="2"/>
+    
+    <!-- Bottle Highlight (Gloss) -->
+    <path d="M96 76 C96 76 96 150 96 175" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.08"/>
+
+    <!-- Center Label (Representing formula/neutral pH zone) -->
+    <rect x="100" y="96" width="40" height="68" rx="6" fill="#1E2530" stroke="#F59E0B" stroke-width="1.5"/>
+    
+    <!-- pH / Neutral Graphic inside Label -->
+    <!-- Center balance marker (Neutral point) -->
+    <circle cx="120" cy="116" r="4" fill="#F59E0B"/>
+    
+    <!-- Balanced scale/spectrum line -->
+    <line x1="106" y1="134" x2="134" y2="134" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Indicator needle pointing straight up (Neutral pH 7) -->
+    <polygon points="120,123 117,134 123,134" fill="#F59E0B"/>
+    
+    <!-- Gentle drop icon indicating skincare/solution -->
+    <path d="M120 142 C120 142 125 148 125 153 C125 155.76 122.76 158 120 158 C117.24 158 115 155.76 115 153 C115 148 120 142 120 142 Z" fill="#38BDF8" opacity="0.85"/>
+  </g>
+</svg>

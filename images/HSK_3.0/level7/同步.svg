@@ -1,0 +1,79 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(12, 12)">
+    <!-- Background atmospheric glow -->
+    <ellipse cx="108" cy="108" rx="80" ry="70" fill="#252A34" opacity="0.5"/>
+
+    <!-- Left Device: Mobile Phone representing "Phone side" -->
+    <g transform="translate(25, 48)">
+      <!-- Phone Body -->
+      <rect x="0" y="0" width="46" height="92" rx="8" fill="#2D3340" stroke="#404B5C" stroke-width="2"/>
+      <!-- Screen -->
+      <rect x="5" y="10" width="36" height="72" rx="3" fill="#15181E"/>
+      <!-- Home Indicator / Notch -->
+      <rect x="16" y="86" width="14" height="2" rx="1" fill="#404B5C"/>
+      <!-- UI elements on phone -->
+      <rect x="9" y="16" width="16" height="12" rx="2" fill="#F59E0B" opacity="0.9"/>
+      <circle cx="28" cy="22" r="3" fill="#15181E"/>
+      <rect x="9" y="34" width="28" height="4" rx="2" fill="#404B5C"/>
+      <rect x="9" y="42" width="20" height="4" rx="2" fill="#404B5C"/>
+      <!-- Document icon inside phone -->
+      <rect x="12" y="52" width="22" height="24" rx="2" fill="#3B82F6" opacity="0.8"/>
+      <rect x="16" y="57" width="14" height="2" fill="#FFFFFF" opacity="0.8"/>
+      <rect x="16" y="62" width="10" height="2" fill="#FFFFFF" opacity="0.8"/>
+    </g>
+
+    <!-- Right Device: Laptop representing "Computer side" -->
+    <g transform="translate(129, 58)">
+      <!-- Laptop Screen Shell -->
+      <rect x="0" y="0" width="62" height="46" rx="6" fill="#2D3340" stroke="#404B5C" stroke-width="2"/>
+      <!-- Screen Display -->
+      <rect x="4" y="4" width="54" height="38" rx="2" fill="#15181E"/>
+      <!-- Laptop Base / Keyboard Deck -->
+      <path d="M-6 48H68C68 51.3 65.3 54 62 54H-2C-5.3 54 -8 51.3 -8 48H-6Z" fill="#3E4859"/>
+      <!-- Trackpad Area -->
+      <rect x="23" y="49" width="16" height="3" rx="1" fill="#2D3340"/>
+      <!-- UI elements on laptop screen matching the phone -->
+      <rect x="8" y="8" width="20" height="14" rx="2" fill="#F59E0B" opacity="0.9"/>
+      <circle cx="26" cy="15" r="3.5" fill="#15181E"/>
+      <rect x="33" y="8" width="21" height="6" rx="2" fill="#404B5C"/>
+      <rect x="33" y="16" width="15" height="4" rx="2" fill="#404B5C"/>
+      <!-- Document icon on laptop screen -->
+      <rect x="10" y="25" width="20" height="14" rx="2" fill="#3B82F6" opacity="0.8"/>
+      <rect x="13" y="28" width="14" height="2" fill="#FFFFFF" opacity="0.8"/>
+      <rect x="13" y="32" width="9" height="2" fill="#FFFFFF" opacity="0.8"/>
+    </g>
+
+    <!-- Cloud (representing Cloud Storage Core) -->
+    <g transform="translate(80, 24)">
+      <path d="M26 28C22.7 28 19.8 29.5 17.8 32C16.3 31.4 14.7 31 13 31C7.5 31 3 35.5 3 41C3 46.5 7.5 51 13 51H45C49.4 51 53 47.4 53 43C53 38.9 49.9 35.5 45.9 35C44.5 30.5 40.3 27.2 35.5 27.2C33.2 27.2 31.1 28 29.4 29.4C28.2 28.5 27.2 28 26 28Z" fill="#252F3F" stroke="#3B82F6" stroke-width="2"/>
+    </g>
+
+    <!-- Synchronization Dynamic Flow Paths & Icons (Representing "同步" / real-time sync action) -->
+    <!-- Curved connection arc top (Phone to Cloud) -->
+    <path d="M 68 62 Q 82 45 92 42" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 4"/>
+    
+    <!-- Curved connection arc top (Cloud to Laptop) -->
+    <path d="M 124 42 Q 134 45 148 60" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 4"/>
+
+    <!-- Direct Bi-directional Sync Stream (Center Flow) -->
+    <g transform="translate(74, 94)">
+      <!-- Flow Track Line -->
+      <line x1="4" y1="0" x2="64" y2="0" stroke="#3B82F6" stroke-width="3" stroke-linecap="round" opacity="0.3"/>
+      
+      <!-- Right-moving sync arrows (Phone -> PC) -->
+      <path d="M 30 -5 L 40 0 L 30 5" fill="none" stroke="#3B82F6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="20" cy="0" r="3.5" fill="#3B82F6"/>
+      
+      <!-- Left-moving sync arrows (PC -> Phone) -->
+      <path d="M 38 -5 L 28 0 L 38 5" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="48" cy="0" r="3.5" fill="#F59E0B"/>
+    </g>
+
+    <!-- Floating synchronized data particles -->
+    <circle cx="90" cy="68" r="3" fill="#3B82F6"/>
+    <circle cx="126" cy="68" r="3" fill="#F59E0B"/>
+    <circle cx="108" cy="52" r="2.5" fill="#FFFFFF" opacity="0.8"/>
+  </g>
+</svg>

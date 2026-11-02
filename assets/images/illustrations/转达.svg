@@ -1,0 +1,57 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle lighting effect -->
+  <circle cx="120" cy="120" r="90" fill="#222732" opacity="0.6"/>
+
+  <!-- Conceptual illustration for "转达" (Message Relay / Transmission) -->
+  <!-- We visualize this as a tangible, physical messenger bird or letter envelope being passed dynamically between profiles, embodying the act of relaying words or greetings. Let's use a stylized letter packet transitioning smoothly along a curved pathway with motion indicators, representing the transfer from one person to another. -->
+
+  <!-- Connection Arc / Pathway -->
+  <path d="M 70,140 Q 120,80 170,140" fill="none" stroke="#3A4252" stroke-width="3" stroke-dasharray="6,4"/>
+
+  <!-- Left Person (Sender) -->
+  <g transform="translate(50, 115)">
+    <!-- Body/Shoulders -->
+    <path d="M 0,50 C 0,35 15,30 25,30 C 35,30 50,35 50,50 Z" fill="#2E3646"/>
+    <!-- Head -->
+    <circle cx="25" cy="12" r="12" fill="#E6EDF5"/>
+    <!-- Subtle friendly posture / leaning forward -->
+  </g>
+
+  <!-- Right Person (Recipient) -->
+  <g transform="translate(140, 115)">
+    <!-- Body/Shoulders -->
+    <path d="M 0,50 C 0,35 15,30 25,30 C 35,30 50,35 50,50 Z" fill="#2E3646"/>
+    <!-- Head -->
+    <circle cx="25" cy="12" r="12" fill="#E6EDF5"/>
+  </g>
+
+  <!-- Central Tangible Object: The Relayed Message / Envelope with Sound/Word Waves indicating spoken message transition -->
+  <g transform="translate(96, 75)">
+    <!-- Glowing Accent Circle -->
+    <circle cx="24" cy="24" r="28" fill="#F59E0B" opacity="0.15"/>
+    
+    <!-- Envelope Base -->
+    <rect x="6" y="14" width="36" height="26" rx="4" fill="#F3F4F6"/>
+    <!-- Envelope Flap -->
+    <path d="M 6,14 L 24,28 L 42,14" fill="none" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Inner letter hint -->
+    <path d="M 12,25 L 36,25" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Motion / Relaying Streamlines (Gold/Orange accent to show active transfer) -->
+  <path d="M 95,95 Q 120,65 145,95" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="142,91 150,97 141,101" fill="#F59E0B"/>
+
+  <path d="M 85,110 Q 120,80 155,110" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Sound/Voice wave elements representing the spoken greetings being conveyed -->
+  <path d="M 40,85 C 38,90 38,95 40,100" fill="none" stroke="#60A5FA" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 33,80 C 30,88 30,97 33,105" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+  <path d="M 200,85 C 202,90 202,95 200,100" fill="none" stroke="#34D399" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 207,80 C 210,88 210,97 207,105" fill="none" stroke="#34D399" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+</svg>

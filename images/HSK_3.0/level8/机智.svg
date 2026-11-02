@@ -1,0 +1,35 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background subtle grid for depth -->
+  <path d="M0 40h240M0 80h240M0 120h240M0 160h240M0 200h240" stroke="#2D343E" stroke-width="1"/>
+  
+  <!-- The "Chaotic" element (The threat/problem) -->
+  <g transform="translate(140, 100)">
+    <circle cx="0" cy="0" r="35" fill="#FF5F5F" opacity="0.2"/>
+    <path d="M-15 -15 L15 15 M-15 15 L15 -15" stroke="#FF5F5F" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- The "Calm/Witty" element (The protagonist) -->
+  <!-- Representing "机智" through a focused, composed figure using a lightbulb moment -->
+  <g transform="translate(80, 120)">
+    <!-- Body -->
+    <path d="M-20 60 C-20 40, 20 40, 20 60 L20 100 L-20 100 Z" fill="#4A90E2"/>
+    <!-- Head -->
+    <circle cx="0" cy="30" r="20" fill="#E0E6ED"/>
+    <!-- Calm expression -->
+    <path d="M-8 25 L-4 25 M4 25 L8 25" stroke="#1A1D24" stroke-width="2"/>
+    <path d="M-5 35 Q0 38 5 35" stroke="#1A1D24" stroke-width="2" fill="none"/>
+    
+    <!-- The "Witty" spark: A glowing golden lightbulb above the head -->
+    <g transform="translate(25, -20)">
+      <path d="M0 0 C-10 -10 -10 -20 0 -25 C10 -20 10 -10 0 0 Z" fill="#FFC107"/>
+      <path d="M-5 -20 L5 -20 M-3 -25 L3 -25" stroke="#FFC107" stroke-width="2"/>
+      <!-- Rays -->
+      <path d="M0 -30 L0 -35 M10 -20 L15 -20 M-10 -20 L-15 -20" stroke="#FFC107" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </g>
+  
+  <!-- Connecting line showing the interaction/strategy -->
+  <path d="M105 100 Q120 80 140 90" stroke="#FFC107" stroke-width="3" fill="none" stroke-dasharray="6 4"/>
+</svg>

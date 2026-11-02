@@ -1,0 +1,50 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient glow/background elements representing inner peace and ease (hǎoshòu) -->
+  <circle cx="120" cy="120" r="80" fill="#222831" opacity="0.6"/>
+  <circle cx="120" cy="120" r="60" fill="#252D3A" opacity="0.4"/>
+  
+  <!-- Soft radiating waves representing deep breath, relief, and tranquility -->
+  <path d="M 85 105 Q 120 90 155 105" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+  <path d="M 75 120 Q 120 100 165 120" fill="none" stroke="#4FD1C5" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+  <path d="M 85 135 Q 120 110 155 135" fill="none" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- Character experiencing "hǎoshòu" (comfortable, at ease, breathing freely) -->
+  <g transform="translate(0, 10)">
+    <!-- Shoulders / Torso -->
+    <path d="M 75 170 Q 120 150 165 170 L 175 195 Q 120 205 65 195 Z" fill="#2D3748"/>
+    <path d="M 120 155 L 120 190" stroke="#1A1D24" stroke-width="2" opacity="0.4"/>
+
+    <!-- Neck -->
+    <rect x="110" y="125" width="20" height="25" rx="8" fill="#F6AD55"/>
+
+    <!-- Head (Calm, relaxed expression, eyes closed peacefully) -->
+    <circle cx="120" cy="105" r="28" fill="#F6AD55"/>
+    
+    <!-- Hair -->
+    <path d="M 92 105 C 92 80 148 80 148 105 C 148 92 140 86 120 86 C 100 86 92 92 92 105 Z" fill="#2D3748"/>
+
+    <!-- Peaceful Facial Features -->
+    <!-- Closed relaxed eyebrows -->
+    <path d="M 106 99 Q 111 96 116 99" fill="none" stroke="#2D3748" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 124 99 Q 129 96 134 99" fill="none" stroke="#2D3748" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <!-- Serene closed eyes (gentle curves upward) -->
+    <path d="M 107 105 Q 111 108 115 105" fill="none" stroke="#2D3748" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 125 105 Q 129 108 133 105" fill="none" stroke="#2D3748" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Gentle, content smile -->
+    <path d="M 115 116 Q 120 120 125 116" fill="none" stroke="#2D3748" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Relaxed hand placed gently on chest, symbolizing heart at ease / deep breath -->
+    <path d="M 100 150 Q 110 145 120 155 Q 125 160 120 165 Q 110 165 105 160 Z" fill="#F6AD55"/>
+    <path d="M 100 150 C 95 153 96 160 102 162" fill="none" stroke="#DD6B20" stroke-width="1" stroke-linecap="round"/>
+  </g>
+
+  <!-- Floating clean accent bubbles/particles denoting light, positive state (ease, comfort) -->
+  <circle cx="75" cy="75" r="4" fill="#4FD1C5" opacity="0.8"/>
+  <circle cx="165" cy="85" r="3" fill="#F6AD55" opacity="0.7"/>
+  <circle cx="150" cy="140" r="2.5" fill="#4FD1C5" opacity="0.6"/>
+  <circle cx="85" cy="145" r="3.5" fill="#F6AD55" opacity="0.5"/>
+</svg>

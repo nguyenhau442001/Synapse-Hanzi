@@ -1,0 +1,22 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(40, 60)">
+    <!-- Elderly hand (left) -->
+    <path d="M20 80 C 20 60, 40 50, 60 50 L 80 50 C 90 50, 95 55, 95 65 L 95 80" fill="#E0A860"/>
+    <path d="M60 50 L 75 30 L 85 35 L 70 55" fill="#C6904E"/>
+    
+    <!-- Child's hand (center) -->
+    <path d="M85 70 C 85 50, 105 40, 125 40 L 135 40 C 145 40, 150 45, 150 55 L 150 70" fill="#F4D03F"/>
+    
+    <!-- Recipient's hand (right) -->
+    <path d="M140 80 C 140 60, 160 50, 180 50 L 200 50 C 210 50, 215 55, 215 65 L 215 80" fill="#E0A860"/>
+    <path d="M180 50 L 195 30 L 205 35 L 190 55" fill="#C6904E"/>
+    
+    <!-- Connecting gesture: The act of placing/entrusting -->
+    <path d="M80 75 C 100 65, 130 65, 150 75" stroke="#FFB74D" stroke-width="4" stroke-linecap="round" fill="none"/>
+    
+    <!-- Supporting base/cuff details -->
+    <rect x="20" y="80" width="75" height="20" fill="#34495E" rx="5"/>
+    <rect x="140" y="80" width="75" height="20" fill="#34495E" rx="5"/>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Progression/Escalation Metaphor: A stepped path leading to a sharp, high-reaching peak -->
+  <!-- Base level -->
+  <path d="M40 180 L80 180 L80 160 L40 160 Z" fill="#3A404D"/>
+  
+  <!-- Middle step -->
+  <path d="M80 160 L120 160 L120 130 L80 130 Z" fill="#4B5566"/>
+  
+  <!-- High step -->
+  <path d="M120 130 L160 130 L160 90 L120 90 Z" fill="#6B7A94"/>
+  
+  <!-- Final sharp peak (The "Progression" result of the guidance) -->
+  <path d="M160 90 L200 90 L180 40 Z" fill="#FFB84D"/>
+  
+  <!-- The "Guidance" vector: A clean, directional arrow originating from the mentor's perspective (implied) 
+       pointing towards the upward trajectory of the skill progression -->
+  <path d="M60 140 L170 70" stroke="#FFB84D" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+  
+  <!-- Focus point: A magnifying glass effect on the peak to show detail/precision -->
+  <circle cx="180" cy="65" r="25" fill="none" stroke="#FFB84D" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M198 83 L210 95" stroke="#FFB84D" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,52 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Architectural Silhouette (Traditional Chinese eaves reference) -->
+  <path d="M40 180 L200 180 L200 170 C160 170 140 155 120 155 C100 155 80 170 40 170 Z" fill="#2A2E39"/>
+  <path d="M50 165 L190 165 L180 150 L60 150 Z" fill="#363C4D"/>
+  
+  <!-- Traditional Wood Carving Detail Line -->
+  <path d="M70 150 C90 155 100 160 120 160 C140 160 150 155 170 150" stroke="#4F566B" stroke-width="2" fill="none"/>
+
+  <!-- Spring Willow Branch Framing -->
+  <path d="M20 30 Q60 20 80 70 Q95 110 90 140" stroke="#363C4D" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M220 50 Q180 30 160 80 Q145 110 150 140" stroke="#363C4D" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Willow Leaves -->
+  <path d="M50 45 C55 40 65 45 60 55 C55 50 45 50 50 45 Z" fill="#4B6B54"/>
+  <path d="M75 80 C82 78 88 85 82 93 C76 88 72 83 75 80 Z" fill="#4B6B54"/>
+  <path d="M190 60 C185 55 178 60 182 68 C188 66 193 63 190 60 Z" fill="#4B6B54"/>
+
+  <!-- Main Subject: The Barn Swallow (燕子) in dynamic flight, sleek flat design with warm accent highlights -->
+  <g transform="translate(15, -5)">
+    <!-- Body & Head -->
+    <path d="M120 95 C105 95 95 105 92 118 C89 130 96 142 108 145 C115 147 122 143 125 138 C128 143 135 147 142 145 C154 142 161 130 158 118 C155 105 145 95 130 95 Z" fill="#2E4057"/>
+    <ellipse cx="138" cy="110" rx="4" ry="4" fill="#2E4057"/>
+    
+    <!-- White Belly / Underparts -->
+    <path d="M110 115 C115 125 125 132 135 132 C145 132 150 125 152 118 C145 126 125 126 110 115 Z" fill="#EAEAEA"/>
+    
+    <!-- Warm Accent: Reddish-Brown Throat Patch (Characteristic of Hirundinidae) -->
+    <path d="M132 112 C138 112 144 116 142 122 C138 123 134 122 132 118 Z" fill="#E67E22"/>
+
+    <!-- Left Wing (Spread high in flight) -->
+    <path d="M105 105 C85 90 50 70 30 80 C45 100 70 120 102 122 Z" fill="#1D2A3A"/>
+    <path d="M98 108 C80 95 55 80 40 88 C52 102 75 118 98 120 Z" fill="#2E4057"/>
+
+    <!-- Right Wing (Swept back dynamically) -->
+    <path d="M140 105 C160 90 195 70 215 80 C200 100 175 120 143 122 Z" fill="#1D2A3A"/>
+    <path d="M145 108 C163 95 188 80 203 88 C191 102 168 118 145 120 Z" fill="#2E4057"/>
+
+    <!-- Distinctive Forked Tail (剪尾) -->
+    <path d="M125 135 L100 185 L118 175 L125 150 L132 175 L150 185 Z" fill="#1D2A3A"/>
+  </g>
+
+  <!-- Secondary Smaller Swallow in Distance (Depth & Context) -->
+  <g transform="translate(45, -35) scale(0.4)" opacity="0.8">
+    <path d="M120 95 C105 95 95 105 92 118 C89 130 96 142 108 145 C125 147 135 135 130 95 Z" fill="#2E4057"/>
+    <path d="M105 105 C70 80 30 75 20 85 C40 100 70 120 102 122 Z" fill="#1D2A3A"/>
+    <path d="M140 105 C175 80 215 75 225 85 C205 100 175 120 143 122 Z" fill="#1D2A3A"/>
+    <path d="M125 135 L110 175 L125 155 L140 175 Z" fill="#1D2A3A"/>
+  </g>
+</svg>

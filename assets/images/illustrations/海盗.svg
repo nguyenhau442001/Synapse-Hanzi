@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background waves representing the sea -->
+  <path d="M 0 170 Q 60 160, 120 170 T 240 170 L 240 240 L 0 240 Z" fill="#222733"/>
+  <path d="M 0 190 Q 60 180, 120 190 T 240 190 L 240 240 L 0 240 Z" fill="#1E232F"/>
+
+  <!-- Pirate Character Group -->
+  <!-- Tricorne Hat -->
+  <path d="M 70 85 Q 120 60 170 85 Q 185 92 175 98 Q 120 78 65 98 Q 55 92 70 85 Z" fill="#2C3242"/>
+  <path d="M 95 72 L 120 52 L 145 72 Q 120 68 95 72 Z" fill="#3B4252"/>
+  <!-- Skull emblem on hat -->
+  <circle cx="120" cy="74" r="6" fill="#E5E9F0"/>
+  <rect x="118" y="77" width="4" height="4" fill="#E5E9F0"/>
+
+  <!-- Head & Bandana -->
+  <circle cx="120" cy="105" r="28" fill="#D08770"/> <!-- Face -->
+  <!-- Red Bandana -->
+  <path d="M 92 95 Q 120 85 148 95 L 152 110 Q 120 100 88 110 Z" fill="#BF616A"/>
+  <path d="M 142 102 L 165 115 L 155 125 Z" fill="#BF616A"/> <!-- Bandana tail -->
+
+  <!-- Eye Patch -->
+  <circle cx="110" cy="102" r="5" fill="#2C3242"/>
+  <path d="M 92 92 L 110 102" stroke="#2C3242" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Right Eye (Determined look) -->
+  <circle cx="132" cy="101" r="3.5" fill="#2C3242"/>
+
+  <!-- Mustache & Beard -->
+  <path d="M 108 116 Q 120 126 132 116 Q 126 112 120 118 Q 114 112 108 116 Z" fill="#2C3242"/>
+  <path d="M 104 118 Q 120 136 136 118 Q 130 132 120 130 Q 110 132 104 118 Z" fill="#4C566A"/>
+
+  <!-- Torso & Coat -->
+  <!-- Striped Shirt -->
+  <path d="M 92 133 L 148 133 L 155 195 L 85 195 Z" fill="#E5E9F0"/>
+  <path d="M 93 145 L 147 145" stroke="#BF616A" stroke-width="4"/>
+  <path d="M 91 160 L 149 160" stroke="#BF616A" stroke-width="4"/>
+  <path d="M 89 175 L 151 175" stroke="#BF616A" stroke-width="4"/>
+  
+  <!-- Coat Lapels -->
+  <path d="M 92 133 L 75 185 L 100 195 L 105 150 Z" fill="#2C3242"/>
+  <path d="M 148 133 L 165 185 L 140 195 L 135 150 Z" fill="#2C3242"/>
+
+  <!-- Belt & Buckle -->
+  <rect x="87" y="180" width="66" height="12" fill="#2E3440"/>
+  <rect x="113" y="181" width="14" height="10" fill="none" stroke="#EBCB8B" stroke-width="3"/>
+
+  <!-- Crossed Cutlasses in background -->
+  <path d="M 70 120 L 170 210" stroke="#88C0D0" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="70" cy="120" r="5" fill="none" stroke="#EBCB8B" stroke-width="3"/>
+  <path d="M 170 120 L 70 210" stroke="#88C0D0" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="170" cy="120" r="5" fill="none" stroke="#EBCB8B" stroke-width="3"/>
+
+  <!-- Foreground decorative golden accent ring -->
+  <circle cx="120" cy="130" r="95" fill="none" stroke="#EBCB8B" stroke-width="1.5" opacity="0.2"/>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(12, 12)">
+    <!-- Desk Background -->
+    <path d="M40 160 H176 V168 H40 Z" fill="#2E3544" rx="2"/>
+    <path d="M52 168 H164 V184 H52 Z" fill="#242936" rx="2"/>
+    <rect x="100" y="168" width="16" height="32" fill="#1E232D" rx="2"/>
+    
+    <!-- Empty School Chair -->
+    <path d="M128 130 C128 118 138 110 150 110 H170 C182 110 192 118 192 130 V156 H128 Z" fill="#3A4454"/>
+    <rect x="136" y="156" width="48" height="6" fill="#2E3544" rx="2"/>
+    <path d="M138 162 L132 200" stroke="#2E3544" stroke-width="4" stroke-linecap="round"/>
+    <path d="M182 162 L188 200" stroke="#2E3544" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- School Bag / Backpack left behind (Absence indicator) -->
+    <g transform="translate(68, 128)">
+      <rect x="0" y="12" width="28" height="32" rx="6" fill="#F08A5D"/>
+      <path d="M8 12 V8 C8 5 10 3 14 3 C18 3 20 5 20 8 V12" fill="none" stroke="#E07A4D" stroke-width="3" stroke-linecap="round"/>
+      <rect x="6" y="20" width="16" height="16" rx="4" fill="#D97449"/>
+      <circle cx="14" cy="28" r="3" fill="#1A1D24"/>
+      <path d="M4 16 C2 18 1 24 2 32" fill="none" stroke="#D97449" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Open Textbook / Notebook on Desk -->
+    <g transform="translate(92, 138)">
+      <path d="M0 12 L24 4 V22 L0 30 Z" fill="#E2E8F0"/>
+      <path d="M48 12 L24 4 V22 L48 30 Z" fill="#CBD5E1"/>
+      <path d="M24 4 V22" stroke="#94A3B8" stroke-width="1.5"/>
+      <!-- Text lines in book -->
+      <line x1="5" y1="10" x2="18" y2="7" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="5" y1="15" x2="16" y2="12" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="30" y1="7" x2="43" y2="10" stroke="#64748B" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="32" y1="12" x2="43" y2="15" stroke="#64748B" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Glowing Absent/Empty Indicator Focus -->
+    <circle cx="160" cy="135" r="35" fill="none" stroke="#F08A5D" stroke-width="2" stroke-dasharray="6 4" opacity="0.6">
+      <animateTransform attributeName="transform" type="rotate" from="0 160 135" to="360 160 135" dur="20s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

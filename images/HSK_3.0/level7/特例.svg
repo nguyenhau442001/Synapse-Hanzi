@@ -1,0 +1,39 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle grid pattern representing strict rules / uniformity -->
+  <g opacity="0.15">
+    <line x1="50" y1="40" x2="50" y2="200" stroke="#60A5FA" stroke-width="2" stroke-dasharray="4 4"/>
+    <line x1="90" y1="40" x2="90" y2="200" stroke="#60A5FA" stroke-width="2" stroke-dasharray="4 4"/>
+    <line x1="130" y1="40" x2="130" y2="200" stroke="#60A5FA" stroke-width="2" stroke-dasharray="4 4"/>
+    <line x1="170" y1="40" x2="170" y2="200" stroke="#60A5FA" stroke-width="2" stroke-dasharray="4 4"/>
+    <line x1="210" y1="40" x2="210" y2="200" stroke="#60A5FA" stroke-width="2" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Uniform standard elements (blue vertical column blocks representing identical items/rules) -->
+  <rect x="42" y="70" width="16" height="100" rx="4" fill="#3B82F6" opacity="0.4"/>
+  <rect x="82" y="70" width="16" height="100" rx="4" fill="#3B82F6" opacity="0.4"/>
+  
+  <!-- The Special Exception (特例) - Center physical object/character breaking the pattern -->
+  <!-- Highlight platform/glow for the exception -->
+  <ellipse cx="150" cy="120" rx="35" ry="35" fill="#F59E0B" opacity="0.15"/>
+  <circle cx="150" cy="120" r="28" fill="#1E293B" stroke="#F59E0B" stroke-width="3"/>
+
+  <!-- Distinctive item representing the "special case" (e.g., a golden key / special token) -->
+  <g transform="translate(138, 108) scale(0.9)">
+    <!-- Key ring -->
+    <circle cx="13" cy="13" r="8" fill="none" stroke="#FBBF24" stroke-width="4"/>
+    <!-- Key shaft -->
+    <line x1="19" y1="13" x2="33" y2="13" stroke="#FBBF24" stroke-width="4" stroke-linecap="round"/>
+    <!-- Key teeth -->
+    <line x1="26" y1="13" x2="26" y2="18" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+    <line x1="31" y1="13" x2="31" y2="17" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- More uniform elements on the right -->
+  <rect x="194" y="70" width="16" height="100" rx="4" fill="#3B82F6" opacity="0.4"/>
+
+  <!-- Spotlight beam from above onto the special case -->
+  <path d="M130 30 L170 30 L185 75 L115 75 Z" fill="#FBBF24" opacity="0.08"/>
+</svg>

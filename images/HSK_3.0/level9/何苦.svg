@@ -1,0 +1,45 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Background subtle glow representing mental burden -->
+    <circle cx="120" cy="120" r="70" fill="#FF5722" opacity="0.08"/>
+
+    <!-- Scale base / Fulcrum -->
+    <path d="M 120 170 L 100 205 L 140 205 Z" fill="#4A5568"/>
+    <rect x="90" y="205" width="60" height="6" rx="3" fill="#718096"/>
+    <rect x="116" y="90" width="8" height="85" fill="#718096" rx="2"/>
+    <circle cx="120" cy="90" r="10" fill="#E2E8F0"/>
+
+    <!-- Balance beam (tilted, representing pointless obsession/conflict) -->
+    <g transform="rotate(-15, 120, 90)">
+      <rect x="50" y="86" width="140" height="8" rx="4" fill="#E2E8F0"/>
+      
+      <!-- Left side: Heavy useless trivialities (chicken feather / petty things symbolized by small clutter) -->
+      <line x1="60" y1="94" x2="60" y2="135" stroke="#A0AEC0" stroke-width="2"/>
+      <path d="M 35 135 Q 60 155 85 135 Z" fill="none" stroke="#CBD5E0" stroke-width="2"/>
+      <!-- Trivial items in pan -->
+      <path d="M 50 130 C 55 120, 65 120, 70 130 Z" fill="#FFB74D"/>
+      <circle cx="55" cy="128" r="4" fill="#E57373"/>
+      <circle cx="65" cy="129" r="5" fill="#64B5F6"/>
+
+      <!-- Right side: Person bearing unnecessary heavy burden / self-inflicted stress (represented by a large heavy oversized boulder/weight on the scale pan) -->
+      <line x1="180" y1="94" x2="180" y2="120" stroke="#A0AEC0" stroke-width="2"/>
+      <path d="M 155 120 Q 180 140 205 120 Z" fill="none" stroke="#CBD5E0" stroke-width="2"/>
+      
+      <!-- Heavy Burden Object (Oversized dark weight causing the tilt) -->
+      <rect x="160" y="95" width="40" height="30" rx="6" fill="#FF5722"/>
+      <path d="M 170 95 C 170 85, 190 85, 190 95" fill="none" stroke="#E64A19" stroke-width="3"/>
+      
+      <!-- Exhausted/Confused human silhouette slumped over the burden -->
+      <circle cx="180" cy="65" r="10" fill="#FFCCBC"/>
+      <path d="M 172 75 C 170 85, 190 85, 188 75 Z" fill="#FF7043"/>
+      <!-- Drooping head / facepalm gesture line -->
+      <path d="M 175 62 Q 183 60 185 66" fill="none" stroke="#37474F" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Questioning / Futility Indicator: Sleek glowing orange question mark floating above, emphasizing "Why bother / 何苦" -->
+    <path d="M 112 35 C 112 28, 128 28, 128 35 C 128 42, 120 45, 120 53" fill="none" stroke="#FF5722" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="120" cy="65" r="3" fill="#FF5722"/>
+  </g>
+</svg>

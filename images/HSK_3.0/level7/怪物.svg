@@ -1,0 +1,88 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Deep sea water gradient effect / atmosphere -->
+  <circle cx="120" cy="120" r="90" fill="#16202B" opacity="0.6"/>
+  
+  <!-- Ambient glowing eyes in the deep background (representing mystery and deep sea monsters) -->
+  <g opacity="0.4">
+    <ellipse cx="75" cy="85" rx="4" ry="2" fill="#FF5722"/>
+    <ellipse cx="90" cy="85" rx="4" ry="2" fill="#FF5722"/>
+    
+    <ellipse cx="155" cy="100" rx="3" ry="1.5" fill="#FFC107"/>
+    <ellipse cx="167" cy="100" rx="3" ry="1.5" fill="#FFC107"/>
+    
+    <ellipse cx="80" cy="160" rx="3.5" ry="1.8" fill="#00E5FF"/>
+    <ellipse cx="93" cy="160" rx="3.5" ry="1.8" fill="#00E5FF"/>
+  </g>
+
+  <!-- Central Monster (Guàiwu - Phượng hoàng biển kỳ bí / Thủy quái) -->
+  <g transform="translate(0, 5)">
+    <!-- Main Body / Head -->
+    <path d="M120 70 C145 70, 165 95, 160 125 C155 150, 135 165, 120 168 C105 165, 85 150, 80 125 C75 95, 95 70, 120 70 Z" fill="#2C3E50"/>
+    <path d="M120 80 C140 80, 155 100, 150 125 C145 145, 130 155, 120 158 C110 155, 95 145, 90 125 C85 100, 100 80, 120 80 Z" fill="#34495E"/>
+
+    <!-- Cute/Striking Horns & Ears -->
+    <!-- Left Horn -->
+    <path d="M98 73 C90 55, 75 45, 65 48 C60 50, 62 60, 72 70 Z" fill="#FF7043"/>
+    <path d="M92 70 C85 58, 75 50, 70 52 C68 53, 70 60, 78 68 Z" fill="#FFAB91"/>
+    <!-- Right Horn -->
+    <path d="M142 73 C150 55, 165 45, 175 48 C180 50, 178 60, 168 70 Z" fill="#FF7043"/>
+    <path d="M148 70 C155 58, 165 50, 170 52 C172 53, 170 60, 162 68 Z" fill="#FFAB91"/>
+
+    <!-- Cute/Mysterious Spikes on Back/Head -->
+    <polygon points="120,62 124,72 116,72" fill="#FF7043"/>
+    <polygon points="105,65 110,74 102,73" fill="#FF7043"/>
+    <polygon points="135,65 138,73 130,74" fill="#FF7043"/>
+
+    <!-- Central Glowing Eye (Fascinating & Iconic) -->
+    <circle cx="120" cy="115" r="22" fill="#1A1D24"/>
+    <circle cx="120" cy="115" r="18" fill="#FFC107"/>
+    <!-- Iris -->
+    <circle cx="120" cy="115" r="12" fill="#FF5722"/>
+    <!-- Pupil (vertical slit for fantasy beast look) -->
+    <ellipse cx="120" cy="115" rx="4" ry="9" fill="#1A1D24"/>
+    <!-- Eye Highlight -->
+    <circle cx="116" cy="110" r="3" fill="#FFFFFF" opacity="0.8"/>
+
+    <!-- Small Tentacles / Feelers (Left & Right) -->
+    <path d="M82 110 C60 100, 50 115, 65 130 C75 140, 78 125, 82 120" fill="#34495E"/>
+    <circle cx="58" cy="120" r="4" fill="#FF7043"/>
+    
+    <path d="M158 110 C180 100, 190 115, 175 130 C165 140, 162 125, 158 120" fill="#34495E"/>
+    <circle cx="182" cy="120" r="4" fill="#FF7043"/>
+
+    <!-- Mouth / Playful Grin with little fangs -->
+    <path d="M106 135 C113 145, 127 145, 134 135 Z" fill="#1A1D24"/>
+    <!-- Fangs -->
+    <polygon points="110,135 114,141 116,135" fill="#FFFFFF"/>
+    <polygon points="130,135 126,141 124,135" fill="#FFFFFF"/>
+
+    <!-- Cheek Details (Bioluminescent spots) -->
+    <circle cx="100" cy="128" r="4" fill="#00E5FF" opacity="0.6"/>
+    <circle cx="140" cy="128" r="4" fill="#00E5FF" opacity="0.6"/>
+
+    <!-- Belly Pattern / Scales -->
+    <ellipse cx="120" cy="155" rx="14" ry="10" fill="#4E6076"/>
+    <path d="M112 153 Q120 159 128 153" stroke="#2C3E50" stroke-width="2" fill="none"/>
+    <path d="M114 158 Q120 164 126 158" stroke="#2C3E50" stroke-width="2" fill="none"/>
+
+    <!-- Tiny Arms -->
+    <path d="M93 145 C80 148, 78 158, 86 160 C92 161, 95 153, 97 148" fill="#34495E"/>
+    <path d="M147 145 C160 148, 162 158, 154 160 C148 161, 145 153, 143 148" fill="#34495E"/>
+
+    <!-- Floating Tail behind -->
+    <path d="M135 163 C155 175, 165 195, 155 205 C145 210, 138 195, 130 180" fill="#2C3E50"/>
+    <path d="M155 205 C160 215, 172 215, 168 200 C162 195, 158 200, 155 205" fill="#FF7043"/>
+  </g>
+
+  <!-- Bubbles floating around (Sea atmosphere) -->
+  <circle cx="65" cy="110" r="3" fill="#00E5FF" opacity="0.5"/>
+  <circle cx="60" cy="100" r="1.5" fill="#00E5FF" opacity="0.4"/>
+  <circle cx="175" cy="90" r="2.5" fill="#00E5FF" opacity="0.5"/>
+  <circle cx="182" cy="80" r="1" fill="#00E5FF" opacity="0.3"/>
+  <circle cx="100" cy="195" r="2" fill="#00E5FF" opacity="0.4"/>
+  <circle cx="145" cy="190" r="3.5" fill="#00E5FF" opacity="0.5"/>
+
+</svg>

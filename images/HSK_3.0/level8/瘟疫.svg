@@ -1,0 +1,59 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambient Glow -->
+  <circle cx="120" cy="115" r="70" fill="#2E1C1F" opacity="0.6"/>
+
+  <!-- Central Physical Object: Ancient Medicine Gourd (Hulu) representing Pestilence/Epidemic context -->
+  <g transform="translate(0, 5)">
+    <!-- Gourd Shadow -->
+    <ellipse cx="120" cy="195" rx="28" ry="6" fill="#101217" opacity="0.8"/>
+
+    <!-- Gourd Body - Lower Bulb -->
+    <path d="M 120,135 C 145,135 158,155 158,175 C 158,195 141,200 120,200 C 99,200 82,195 82,175 C 82,155 95,135 120,135 Z" fill="#C0392B"/>
+    
+    <!-- Gourd Body - Upper Bulb -->
+    <path d="M 120,95 C 137,95 146,110 142,126 C 138,138 130,140 120,140 C 110,140 102,138 98,126 C 94,110 103,95 120,95 Z" fill="#E74C3C"/>
+
+    <!-- Gourd Stem / Stopper -->
+    <path d="M 115,82 L 125,82 L 123,96 L 117,96 Z" fill="#78281F"/>
+    <path d="M 120,76 C 123,76 125,78 125,82 L 115,82 C 115,78 117,76 120,76 Z" fill="#F39C12"/>
+
+    <!-- Highlight for 3D/Flat-Modern depth -->
+    <path d="M 104,103 C 108,98 114,97 118,97 C 112,102 108,110 106,120 C 103,115 102,108 104,103 Z" fill="#F1948A" opacity="0.7"/>
+    <path d="M 92,160 C 97,148 106,141 115,138 C 105,143 96,155 93,172 C 92,168 91,164 92,160 Z" fill="#E74C3C" opacity="0.8"/>
+
+    <!-- Traditional Warning Symbol / Seal on Gourd (Abstract plague representation) -->
+    <circle cx="120" cy="170" r="16" fill="#78281F" opacity="0.6"/>
+    <path d="M 120,157 L 120,183 M 107,170 L 133,170 M 111,161 L 129,179 M 111,179 L 129,161" stroke="#F39C12" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Spreading Pathogen / Virus Particles (Visualizing epidemic transmission) -->
+  <g fill="#E67E22">
+    <!-- Particle 1 -->
+    <circle cx="65" cy="85" r="4" opacity="0.8"/>
+    <path d="M 65,77 L 65,93 M 57,85 L 73,85" stroke="#E67E22" stroke-width="1.5" opacity="0.8"/>
+
+    <!-- Particle 2 -->
+    <circle cx="175" cy="95" r="5" opacity="0.9"/>
+    <path d="M 175,87 L 175,103 M 167,95 L 183,95" stroke="#E67E22" stroke-width="1.5" opacity="0.9"/>
+
+    <!-- Particle 3 -->
+    <circle cx="80" cy="155" r="3" opacity="0.7"/>
+    <path d="M 80,150 L 80,160 M 75,155 L 85,155" stroke="#E67E22" stroke-width="1" opacity="0.7"/>
+
+    <!-- Particle 4 -->
+    <circle cx="160" cy="145" r="4.5" opacity="0.85"/>
+    <path d="M 160,138 L 160,152 M 153,145 L 167,145" stroke="#E67E22" stroke-width="1.5" opacity="0.85"/>
+
+    <!-- Small floating dots -->
+    <circle cx="140" cy="65" r="2" fill="#E74C3C" opacity="0.6"/>
+    <circle cx="95" cy="70" r="2.5" fill="#E74C3C" opacity="0.7"/>
+    <circle cx="170" cy="180" r="2" fill="#E74C3C" opacity="0.6"/>
+    <circle cx="70" cy="130" r="1.5" fill="#E74C3C" opacity="0.5"/>
+  </g>
+
+  <!-- Warning / Hazard Indicator (Subtle framing) -->
+  <path d="M 50,45 L 55,35 L 185,35 L 190,45" fill="none" stroke="#2C3038" stroke-width="2" stroke-linecap="round"/>
+</svg>

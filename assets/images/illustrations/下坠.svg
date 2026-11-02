@@ -1,0 +1,54 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Atmospheric background elements representing high altitude & turbulence -->
+  <g opacity="0.3">
+    <!-- Wind shear lines -->
+    <path d="M20 70 L90 70" stroke="#4A5568" stroke-width="2" stroke-linecap="round" stroke-dasharray="8 6"/>
+    <path d="M150 50 L210 50" stroke="#4A5568" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="12 4"/>
+    <path d="M30 160 L100 160" stroke="#4A5568" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6 8"/>
+    <path d="M140 180 L200 180" stroke="#4A5568" stroke-width="2" stroke-linecap="round" stroke-dasharray="10 5"/>
+  </g>
+
+  <!-- Dynamic Descent Motion Lines (Action / Verb representation) -->
+  <g stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" opacity="0.8">
+    <line x1="120" y1="40" x2="120" y2="85" stroke-dasharray="6 6"/>
+    <line x1="105" y1="50" x2="105" y2="90" stroke-dasharray="4 8"/>
+    <line x1="135" y1="50" x2="135" y2="90" stroke-dasharray="4 8"/>
+  </g>
+
+  <!-- Falling Commercial Airliner (Subject of "下坠") -->
+  <g transform="translate(120, 115) rotate(15)">
+    <!-- Main fuselage -->
+    <ellipse cx="0" cy="0" rx="45" ry="11" fill="#E2E8F0"/>
+    
+    <!-- Cockpit window accent -->
+    <path d="M 32 -3 C 38 -3 42 -1 44 0 C 42 1 38 3 32 3 Z" fill="#3B82F6"/>
+
+    <!-- Wings (angled for perspective) -->
+    <!-- Main wing top -->
+    <path d="M -5 -2 L 15 -35 L 22 -32 L 2 2 Z" fill="#CBD5E1"/>
+    <!-- Main wing underside shadow -->
+    <path d="M -5 2 L 15 35 L 22 32 L 2 -2 Z" fill="#94A3B8"/>
+
+    <!-- Tail fin assembly -->
+    <path d="M -38 0 L -48 -18 L -38 -16 Z" fill="#CBD5E1"/>
+    <path d="M -40 0 L -45 -6 L -38 -4 Z" fill="#F59E0B"/>
+
+    <!-- Engine nacelles -->
+    <ellipse cx="8" cy="18" rx="7" ry="3.5" fill="#64748B"/>
+    <ellipse cx="8" cy="-18" rx="7" ry="3.5" fill="#64748B"/>
+  </g>
+
+  <!-- Secondary Dynamic Motion / Plunge Trajectory Arrow -->
+  <g fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 120 155 Q 120 185 120 200" />
+    <path d="M 112 192 L 120 202 L 128 192" />
+  </g>
+
+  <!-- Gravity / Sudden drop impact particles -->
+  <circle cx="95" cy="180" r="2.5" fill="#F59E0B" opacity="0.9"/>
+  <circle cx="145" cy="175" r="1.5" fill="#F59E0B" opacity="0.7"/>
+  <circle cx="105" cy="195" r="2" fill="#F59E0B" opacity="0.6"/>
+</svg>

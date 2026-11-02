@@ -1,0 +1,59 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow/spotlight for depth -->
+  <circle cx="120" cy="115" r="75" fill="#252A34" opacity="0.6"/>
+
+  <!-- Character / Person representing " tự nhận mình là " / Imposter persona -->
+  <g id="character-imposter">
+    <!-- Body/Suit jacket -->
+    <path d="M 80 185 L 80 160 C 80 145 95 135 120 135 C 145 135 160 145 160 160 L 160 185 Z" fill="#313846"/>
+    <!-- Suit lapels -->
+    <polygon points="120,155 105,135 112,135" fill="#222630"/>
+    <polygon points="120,155 135,135 128,135" fill="#222630"/>
+    <!-- Shirt collar -->
+    <polygon points="120,150 110,138 120,135 130,138" fill="#E2E8F0"/>
+    <!-- Tie -->
+    <polygon points="120,145 117,175 120,180 123,175" fill="#F59E0B"/>
+
+    <!-- Neck -->
+    <rect x="112" y="122" width="16" height="18" rx="4" fill="#E2A786"/>
+
+    <!-- Head -->
+    <circle cx="120" cy="100" r="24" fill="#E2A786"/>
+    
+    <!-- Hair -->
+    <path d="M 97 98 C 96 82 105 74 120 74 C 135 74 144 82 143 98 C 143 98 138 82 120 81 C 102 82 97 98 97 98 Z" fill="#2D3748"/>
+
+    <!-- Confident/Deceptive Smile -->
+    <path d="M 112 110 Q 120 117 128 110" stroke="#1A1D24" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <!-- Eyes -->
+    <circle cx="112" cy="94" r="2.5" fill="#1A1D24"/>
+    <circle cx="128" cy="94" r="2.5" fill="#1A1D24"/>
+  </g>
+
+  <!-- Overlay Persona / Mask representing the "Claimed Identity" (Corporate Executive Mask/Badge) -->
+  <g id="claimed-identity-mask" transform="translate(0, -5)">
+    <!-- Floating projection / golden frame representing the false title/persona -->
+    <rect x="75" y="42" width="90" height="42" rx="8" fill="#1E232F" stroke="#F59E0B" stroke-width="2.5"/>
+    
+    <!-- Executive Golden Crown / Star Emblem inside the badge -->
+    <circle cx="95" cy="63" r="10" fill="#F59E0B" opacity="0.2"/>
+    <path d="M 95 56 L 98 61 L 103 62 L 99 66 L 100 71 L 95 68 L 90 71 L 91 66 L 87 62 L 92 61 Z" fill="#F59E0B"/>
+    
+    <!-- Abstract executive suit lines on the badge -->
+    <line x1="112" y1="56" x2="147" y2="56" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+    <line x1="112" y1="68" x2="138" y2="68" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Visual connecting rays/dots showing the projection/claim of identity -->
+  <g stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.7">
+    <line x1="95" y1="84" x2="105" y2="92"/>
+    <line x1="145" y1="84" x2="135" y2="92"/>
+  </g>
+
+  <!-- Focus accent badge indicator -->
+  <circle cx="150" cy="50" r="6" fill="#F59E0B"/>
+  <circle cx="150" cy="50" r="2" fill="#1A1D24"/>
+</svg>

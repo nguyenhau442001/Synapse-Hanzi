@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle glow/ambiance representing heat/warmth -->
+  <circle cx="120" cy="120" r="70" fill="#FF5722" opacity="0.08"/>
+  <circle cx="120" cy="120" r="45" fill="#FFC107" opacity="0.06"/>
+
+  <!-- Charcoal/Briquette Pile (Noun representation of 炭 - charcoal) -->
+  <g id="charcoal-pile">
+    <!-- Back charcoal lump -->
+    <path d="M 95 110 Q 110 95 130 105 Q 145 115 140 130 Q 125 140 105 135 Q 90 125 95 110 Z" fill="#2C323D"/>
+    
+    <!-- Left charcoal lump -->
+    <path d="M 70 135 Q 85 115 110 125 Q 120 140 115 160 Q 95 165 80 155 Q 65 145 70 135 Z" fill="#252A34"/>
+    <path d="M 85 130 L 95 145 M 105 135 L 90 150" stroke="#3A4250" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Right charcoal lump -->
+    <path d="M 130 125 Q 155 120 165 140 Q 175 160 155 170 Q 135 165 125 150 Q 120 135 130 125 Z" fill="#252A34"/>
+    <path d="M 140 135 L 155 150 M 150 140 L 140 160" stroke="#3A4250" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Main/Front central charcoal lump -->
+    <path d="M 85 145 Q 110 125 140 135 Q 160 150 150 175 Q 120 190 90 175 Q 75 160 85 145 Z" fill="#323846"/>
+    
+    <!-- Textured facets of main charcoal -->
+    <path d="M 100 145 L 115 165 M 125 140 L 130 165 M 140 150 L 135 175 M 95 160 L 115 175" stroke="#222630" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Highlight edges on charcoal (grey sheen) -->
+    <path d="M 90 148 Q 110 133 135 139" stroke="#525B6E" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 105 170 Q 120 178 140 168" stroke="#434C5E" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Glowing Embers & Heat (Indicating burning / context of heating) -->
+  <g id="embers">
+    <!-- Glowing cracks inside the charcoal -->
+    <path d="M 108 152 L 114 158 L 122 153" stroke="#FF5722" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 132 145 L 138 152 L 145 148" stroke="#FF9800" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Ember particles floating up -->
+    <circle cx="105" cy="115" r="2" fill="#FF5722"/>
+    <circle cx="135" cy="100" r="3" fill="#FF9800"/>
+    <circle cx="122" cy="85" r="1.5" fill="#FFC107"/>
+    <circle cx="145" cy="112" r="1.5" fill="#FF5722"/>
+    <circle cx="95" cy="98" r="2.5" fill="#FFB300"/>
+  </g>
+
+  <!-- Heat shimmer lines / rising warmth -->
+  <g id="heat-waves" opacity="0.6">
+    <path d="M 105 75 Q 112 65 105 55" stroke="#FF7043" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 125 70 Q 132 60 125 50" stroke="#FFA726" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 140 80 Q 147 70 140 60" stroke="#FF7043" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

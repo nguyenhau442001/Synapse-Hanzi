@@ -1,0 +1,64 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background sky gradient effect -->
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#222B38"/>
+      <stop offset="100%" stop-color="#1A1D24"/>
+    </linearGradient>
+    <linearGradient id="mountainFar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D3B4E"/>
+      <stop offset="100%" stop-color="#1E2733"/>
+    </linearGradient>
+    <linearGradient id="mountainClose" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3C4F66"/>
+      <stop offset="100%" stop-color="#253242"/>
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFC107"/>
+      <stop offset="100%" stop-color="#FF8F00"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky background -->
+  <rect x="0" y="0" width="240" height="240" rx="24" fill="url(#skyGrad)"/>
+
+  <!-- Glowing majestic sun/horizon aura -->
+  <circle cx="120" cy="115" r="45" fill="#FFC107" opacity="0.12"/>
+  <circle cx="120" cy="115" r="30" fill="url(#goldAccent)" opacity="0.25"/>
+
+  <!-- Distant majestic mountains -->
+  <polygon points="20,165 75,105 130,165" fill="url(#mountainFar)"/>
+  <polygon points="100,165 160,90 220,165" fill="url(#mountainFar)"/>
+
+  <!-- Closer majestic mountain ranges -->
+  <polygon points="-10,180 50,110 120,180" fill="url(#mountainClose)"/>
+  <polygon points="90,180 155,100 235,180" fill="url(#mountainClose)"/>
+
+  <!-- The Great Wall winding across the peaks (representing the contextual anchor) -->
+  <path d="M 50,110 L 60,115 L 75,105 L 85,112 L 100,125 L 115,120 L 130,112 L 145,105 L 155,100 L 165,108" 
+        fill="none" stroke="#E0E6ED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Watchtowers along the Great Wall -->
+  <rect x="56" y="105" width="8" height="12" fill="#FFC107" rx="1"/>
+  <path d="M 55,105 L 60,100 L 65,105 Z" fill="#FF8F00"/>
+
+  <rect x="127" y="108" width="8" height="12" fill="#FFC107" rx="1"/>
+  <path d="M 126,108 L 131,103 L 136,108 Z" fill="#FF8F00"/>
+
+  <rect x="153" y="96" width="9" height="13" fill="#FFC107" rx="1"/>
+  <path d="M 152,96 L 157,90 L 162,96 Z" fill="#FF8F00"/>
+
+  <!-- Foreground base plateau -->
+  <path d="M 0,175 Q 60,165 120,175 T 240,175 L 240,240 L 0,240 Z" fill="#14171F"/>
+
+  <!-- Majestic framing arch / grand gateway structure symbolizing "Tráng lệ" -->
+  <path d="M 20,205 L 20,70 Q 20,40 120,40 Q 220,40 220,70 L 220,205" fill="none" stroke="url(#goldAccent)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 10,210 L 230,210" fill="none" stroke="url(#goldAccent)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Decorative geometric corner accents on the frame -->
+  <rect x="20" y="38" width="12" height="12" fill="#FFC107" rx="2"/>
+  <rect x="208" y="38" width="12" height="12" fill="#FFC107" rx="2"/>
+
+</svg>

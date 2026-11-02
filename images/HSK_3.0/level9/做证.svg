@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Wooden Witness Stand -->
+  <path d="M60 180 L180 180 L170 140 L70 140 Z" fill="#4A5568"/>
+  <path d="M70 140 L70 130 L170 130 L170 140 Z" fill="#718096"/>
+  
+  <!-- Character: The Witness -->
+  <!-- Body -->
+  <path d="M100 190 L140 190 L135 140 L105 140 Z" fill="#A0AEC0"/>
+  <!-- Arm raised in testimony -->
+  <path d="M135 150 L165 120 L175 130 L145 160 Z" fill="#A0AEC0"/>
+  <!-- Hand -->
+  <circle cx="170" cy="125" r="8" fill="#CBD5E0"/>
+  <!-- Head -->
+  <circle cx="120" cy="120" r="20" fill="#CBD5E0"/>
+  
+  <!-- Motion lines for speaking/testifying -->
+  <path d="M180 115 Q195 110 200 95" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M185 125 Q205 120 210 100" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <!-- Gavel (Symbol of Courtroom context) -->
+  <rect x="50" y="190" width="40" height="8" rx="2" fill="#F6AD55"/>
+  <rect x="65" y="170" width="10" height="30" rx="2" fill="#F6AD55"/>
+</svg>

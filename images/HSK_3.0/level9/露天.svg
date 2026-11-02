@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Night sky background -->
+  <path d="M0 0H240V240H0Z" fill="#1A1D24"/>
+  
+  <!-- Glowing stars in the open sky -->
+  <circle cx="50" cy="50" r="1" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="90" cy="35" r="1.5" fill="#FFD166" opacity="0.8"/>
+  <circle cx="150" cy="45" r="1" fill="#FFFFFF" opacity="0.5"/>
+  <circle cx="195" cy="30" r="1.5" fill="#FFFFFF" opacity="0.9"/>
+  <circle cx="215" cy="70" r="1" fill="#FFD166" opacity="0.7"/>
+  <circle cx="35" cy="85" r="1.2" fill="#FFFFFF" opacity="0.8"/>
+  
+  <!-- Crescent Moon -->
+  <path d="M190 65C180 65 172 57 172 47C172 41.5 174.5 36.5 178.5 33C174.5 35.5 172 40.5 172 46C172 56 180 64 190 64C195.5 64 200.5 61.5 203.5 57.5C200 61.5 195 65 190 65Z" fill="#FFD166"/>
+
+  <!-- Ground / Open field -->
+  <path d="M0 185C60 175 180 175 240 185V240H0V185Z" fill="#1E293B"/>
+  <path d="M0 195C80 185 160 185 240 195V240H0V195Z" fill="#0F172A"/>
+
+  <!-- Outdoor Cinema Screen (Lòutiān - Open air) -->
+  <!-- Screen Frame -->
+  <rect x="70" y="85" width="100" height="70" rx="4" fill="#334155"/>
+  <!-- Screen Surface (Glowing) -->
+  <rect x="75" y="90" width="90" height="60" rx="2" fill="#38BDF8" fill-opacity="0.15"/>
+  
+  <!-- Movie Projection Graphics (Abstract mountain/nature scene on screen) -->
+  <path d="M75 140L100 115L120 130L145 105L165 140H75Z" fill="#38BDF8" fill-opacity="0.3"/>
+  <circle cx="105" cy="110" r="4" fill="#FFD166" fill-opacity="0.8"/>
+
+  <!-- Screen Stand / Legs -->
+  <path d="M100 155L85 185" stroke="#475569" stroke-width="4" stroke-linecap="round"/>
+  <path d="M140 155L155 185" stroke="#475569" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Projector Beam (Open air light cone) -->
+  <path d="M120 200L60 235H180L120 200Z" fill="#38BDF8" fill-opacity="0.08"/>
+  
+  <!-- Seating / People silhouettes on the grass -->
+  <circle cx="95" cy="178" r="4" fill="#94A3B8"/>
+  <path d="M90 186C90 182 93 180 95 180C97 180 100 182 100 186" fill="#94A3B8"/>
+
+  <circle cx="125" cy="176" r="4.5" fill="#CBD5E1"/>
+  <path d="M119 186C119 181 122 178 125 178C128 178 131 181 131 186" fill="#CBD5E1"/>
+
+  <circle cx="150" cy="179" r="4" fill="#94A3B8"/>
+  <path d="M145 186C145 182 148 180 150 180C152 180 155 182 155 186" fill="#94A3B8"/>
+
+</svg>

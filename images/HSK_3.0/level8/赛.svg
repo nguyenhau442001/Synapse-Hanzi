@@ -1,0 +1,78 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Elements: Running track curves & speed lines -->
+  <g opacity="0.3">
+    <path d="M 20 180 C 80 180, 140 160, 220 110" stroke="#3A4252" stroke-width="2" stroke-dasharray="6 6" fill="none"/>
+    <path d="M 20 200 C 80 200, 140 180, 220 130" stroke="#3A4252" stroke-width="2" fill="none"/>
+    <line x1="40" y1="120" x2="80" y2="120" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <line x1="60" y1="140" x2="110" y2="140" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <line x1="30" y1="160" x2="90" y2="160" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  </g>
+
+  <!-- Motion Trails / Speed Lines behind runner -->
+  <g opacity="0.6">
+    <path d="M 50 145 L 85 145" stroke="#4A90E2" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 40 165 L 75 165" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 55 185 L 90 185" stroke="#4A90E2" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Running Athlete (Dynamic Action Pose) -->
+  <g transform="translate(15, 0)">
+    <!-- Back Leg (Knee high, sprinting forward) -->
+    <path d="M 95 130 L 75 155 L 95 165" stroke="#E2E8F0" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    
+    <!-- Torso (Lean forward) -->
+    <path d="M 90 110 L 105 150" stroke="#4A90E2" stroke-width="12" stroke-linecap="round"/>
+    
+    <!-- Head -->
+    <circle cx="115" cy="95" r="11" fill="#FCE4D6"/>
+    <!-- Headband / Hair motion -->
+    <path d="M 104 93 C 110 90, 115 92, 122 93" stroke="#F5A623" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 106 97 L 98 102" stroke="#E2E8F0" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Front Arm (Pumped forward) -->
+    <path d="M 100 115 L 125 105 L 140 118" stroke="#E2E8F0" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    
+    <!-- Back Arm (Pumped back) -->
+    <path d="M 100 118 L 80 135 L 68 125" stroke="#E2E8F0" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+    <!-- Front Leg (Planting/Pushing off) -->
+    <path d="M 105 148 L 130 175 L 155 170" stroke="#E2E8F0" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <!-- Running Shoe -->
+    <path d="M 150 166 L 163 170 L 153 178 Z" fill="#F5A623"/>
+  </g>
+
+  <!-- Conceptual Object: Clock / Time (Representing "racing against time" / 赛跑) -->
+  <g transform="translate(155, 60)">
+    <!-- Clock Outer Ring -->
+    <circle cx="25" cy="25" r="22" fill="#252A34" stroke="#F5A623" stroke-width="3.5"/>
+    <!-- Clock Face Detail -->
+    <line x1="25" y1="10" x2="25" y2="14" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round"/>
+    <line x1="25" y1="36" x2="25" y2="40" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round"/>
+    <line x1="10" y1="25" x2="14" y2="25" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round"/>
+    <line x1="36" y1="25" x2="40" y2="25" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Clock Hands (Dynamic angle showing urgency) -->
+    <line x1="25" y1="25" x2="25" y2="15" stroke="#4A90E2" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="25" y1="25" x2="34" y2="22" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="25" cy="25" r="3" fill="#F5A623"/>
+    
+    <!-- Motion/Speed arcs around the clock -->
+    <path d="M 3 15 C -2 22, -2 30, 3 37" stroke="#F5A623" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M 47 15 C 52 22, 52 30, 47 37" stroke="#4A90E2" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Finish Line Ribbon (Symbolizing Competition/赛) -->
+  <g transform="translate(10, 0)">
+    <line x1="190" y1="40" x2="190" y2="200" stroke="#3A4252" stroke-width="4" stroke-linecap="round"/>
+    <!-- Breaking Ribbon Banner -->
+    <path d="M 130 115 L 195 105" stroke="#E74C3C" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 130 135 L 192 125" stroke="#F1C40F" stroke-width="10" stroke-linecap="round"/>
+    <!-- Ribbon tear effect / motion particles -->
+    <circle cx="125" cy="112" r="3" fill="#E74C3C"/>
+    <circle cx="120" cy="125" r="2" fill="#F1C40F"/>
+    <circle cx="127" cy="138" r="2.5" fill="#E74C3C"/>
+  </g>
+</svg>

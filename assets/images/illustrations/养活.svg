@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Mother figure (simplified flat style) -->
+  <g transform="translate(120, 120)">
+    <!-- Body/Clothing -->
+    <path d="M-40 80 L-40 20 C-40 -10 -20 -30 0 -30 C20 -30 40 -10 40 20 L40 80 Z" fill="#4A5568"/>
+    <!-- Head -->
+    <circle cx="0" cy="-45" r="25" fill="#E2E8F0"/>
+    <!-- Hair -->
+    <path d="M-25 -45 C-25 -65 -10 -75 0 -75 C10 -75 25 -65 25 -45 Z" fill="#2D3748"/>
+    
+    <!-- Children figures -->
+    <g transform="translate(-60, 20)">
+      <circle cx="0" cy="0" r="15" fill="#E2E8F0"/>
+      <path d="M-15 15 L-15 60 L15 60 L15 15 Z" fill="#F6AD55"/>
+    </g>
+    <g transform="translate(60, 20)">
+      <circle cx="0" cy="0" r="15" fill="#E2E8F0"/>
+      <path d="M-15 15 L-15 60 L15 60 L15 15 Z" fill="#F6AD55"/>
+    </g>
+    
+    <!-- Hands reaching out to provide/nurture -->
+    <path d="M-30 0 L-50 10 M30 0 L50 10" stroke="#E2E8F0" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Providing food/sustenance (Bowl) -->
+    <path d="M-15 30 L15 30 C15 45 5 50 0 50 C-5 50 -15 45 -15 30 Z" fill="#ECC94B"/>
+  </g>
+</svg>

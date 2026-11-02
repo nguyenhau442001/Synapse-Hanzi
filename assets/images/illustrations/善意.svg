@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for warmth and focus -->
+  <circle cx="120" cy="120" r="70" fill="#FFB703" opacity="0.05"/>
+  
+  <!-- Central Physical Representation of "善意" (Genuine Kind-hearted Intent / Sincere Reminder) -->
+  <!-- Two stylized figures engaging in a respectful, supportive, and caring conversation reflecting the context -->
+  
+  <g transform="translate(0, 10)">
+    <!-- Person 1 (Friend offering sincere reminder/advice) -->
+    <g transform="translate(75, 75)">
+      <!-- Body/Shoulders -->
+      <path d="M-15 75 C-15 55, 0 50, 0 50 C0 50, 15 55, 15 75 Z" fill="#3A4660"/>
+      <!-- Head -->
+      <circle cx="0" cy="30" r="14" fill="#E2E8F0"/>
+      <!-- Friendly expression / head tilt -->
+      <path d="M-6 28 Q 0 32 6 28" stroke="#1A1D24" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+      <!-- Gentle hand gesture extending forward offering well-meaning advice -->
+      <path d="M12 48 Q 28 45 35 48" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round" fill="none"/>
+      <circle cx="37" cy="48" r="3.5" fill="#E2E8F0"/>
+    </g>
+
+    <!-- Person 2 (Receptive recipient, "虚心接受") -->
+    <g transform="translate(165, 75)">
+      <!-- Body/Shoulders -->
+      <path d="M-15 75 C-15 55, 0 50, 0 50 C0 50, 15 55, 15 75 Z" fill="#2B3748"/>
+      <!-- Head (slightly nodding / lowered in humble acceptance) -->
+      <circle cx="0" cy="32" r="14" fill="#CBD5E1"/>
+      <!-- Receptive expression -->
+      <path d="M-4 31 Q 0 34 4 31" stroke="#1A1D24" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+      <!-- Hand gently touching chest in thoughtful acceptance -->
+      <path d="M-10 46 Q -5 48 -2 44" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- Sincere Intent / Warm Goodwill Indicator (Non-romantic, pure golden communicative spark between them) -->
+    <g transform="translate(120, 85)">
+      <!-- Gentle upward radiating warm light representing "善意" (goodwill/kind intent) -->
+      <path d="M -8 12 Q 0 -2 8 12" stroke="#FFB703" stroke-width="3" stroke-linecap="round" fill="none"/>
+      <circle cx="0" cy="-6" r="3.5" fill="#FFB703"/>
+      <!-- Supporting soft rays -->
+      <line x1="-16" y1="5" x2="-22" y2="2" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+      <line x1="16" y1="5" x2="22" y2="2" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+    </g>
+
+    <!-- Stable Grounding Base -->
+    <path d="M60 158 L180 158" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

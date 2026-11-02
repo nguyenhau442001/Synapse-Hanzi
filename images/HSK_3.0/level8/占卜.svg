@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 120)">
+    <!-- Turtle Shell -->
+    <path d="M-50 -20 C -50 -60, 50 -60, 50 -20 L 40 40 L -40 40 Z" fill="#D4AF37"/>
+    <path d="M-45 -25 C -45 -55, 45 -55, 45 -25 L 35 35 L -35 35 Z" fill="#B8860B"/>
+    
+    <!-- Carved Cracks/Lines on Shell -->
+    <path d="M0 -50 L 0 35" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+    <path d="M-40 -10 L 40 -10" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+    <path d="M-20 -40 L -20 30" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+    <path d="M20 -40 L 20 30" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Smoke/Mystical Effect -->
+    <path d="M-60 60 C -80 20, -20 10, -10 40" fill="none" stroke="#FF8C00" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+    <path d="M60 60 C 80 20, 20 10, 10 40" fill="none" stroke="#FF8C00" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+    
+    <!-- Floating Orbs of Divination -->
+    <circle cx="-70" cy="-30" r="8" fill="#FFD700"/>
+    <circle cx="70" cy="-30" r="8" fill="#FFD700"/>
+    <circle cx="0" cy="-70" r="10" fill="#FFD700"/>
+  </g>
+</svg>

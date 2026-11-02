@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Character 1 (The Speaker) -->
+  <g transform="translate(40, 80)">
+    <circle cx="40" cy="30" r="15" fill="#FFB347"/>
+    <path d="M30 60 Q40 50 50 60 L50 120 L30 120 Z" fill="#FFB347"/>
+    <path d="M40 70 L40 100 M40 80 L30 90 M40 80 L50 90" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+    <!-- Speech bubble representation via motion lines -->
+    <path d="M65 40 L90 20 M65 50 L100 40 M65 60 L90 70" stroke="#FFB347" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6"/>
+  </g>
+
+  <!-- Character 2 (The Listener) -->
+  <g transform="translate(130, 80)">
+    <circle cx="40" cy="30" r="15" fill="#88C0D0"/>
+    <path d="M30 60 Q40 50 50 60 L50 120 L30 120 Z" fill="#88C0D0"/>
+    <!-- Open posture -->
+    <path d="M20 80 L10 100 M60 80 L70 100" stroke="#88C0D0" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- The "Truth" Symbol: A clear, unadorned, solid geometric shape (Diamond) representing clarity -->
+  <path d="M120 100 L135 85 L150 100 L135 115 Z" fill="#FFB347" opacity="0.9"/>
+  
+  <!-- Ground line -->
+  <path d="M30 200 L210 200" stroke="#4C566A" stroke-width="2" stroke-linecap="round"/>
+</svg>

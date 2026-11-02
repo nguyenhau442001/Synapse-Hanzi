@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Stage Curtain (The "Behind" aspect) -->
+  <path d="M0 0h240v240H0z" fill="#1A1D24"/>
+  <path d="M0 0h80v240H0z" fill="#2C313C"/>
+  <path d="M160 0h80v240H160z" fill="#2C313C"/>
+  
+  <!-- Backstage Area (The "Mùhòu" space) -->
+  <rect x="40" y="40" width="160" height="160" rx="8" fill="#252932"/>
+  
+  <!-- Technical Equipment (Representing the workers) -->
+  <!-- Lighting Control Console -->
+  <rect x="60" y="140" width="120" height="40" rx="4" fill="#3D4451"/>
+  <rect x="70" y="150" width="10" height="20" rx="2" fill="#FFB347"/>
+  <rect x="90" y="150" width="10" height="20" rx="2" fill="#FFB347"/>
+  <rect x="110" y="150" width="10" height="20" rx="2" fill="#FFB347"/>
+  <rect x="130" y="150" width="10" height="20" rx="2" fill="#FFB347"/>
+  <rect x="150" y="150" width="10" height="20" rx="2" fill="#FFB347"/>
+  
+  <!-- Headset (Symbolizing communication/coordination) -->
+  <path d="M100 80c0-22 18-40 40-40s40 18 40 40v20" stroke="#FFB347" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <circle cx="100" cy="100" r="8" fill="#FFB347"/>
+  <circle cx="180" cy="100" r="8" fill="#FFB347"/>
+  
+  <!-- Spotlight Beam (Subtle indication of the stage in front) -->
+  <path d="M120 140l-40-100h80l-40 100" fill="#FFB347" fill-opacity="0.1"/>
+</svg>

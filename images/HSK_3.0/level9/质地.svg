@@ -1,0 +1,55 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Silk Fabric Representation (质地 - Material/Texture) -->
+    <!-- Shadow for depth -->
+    <path d="M55,145 C80,185 130,185 185,135 C195,125 190,110 175,115 C130,130 95,110 75,85 C65,70 45,95 55,145 Z" fill="#111317" opacity="0.6"/>
+
+    <!-- Main Flowing Silk Wave 1 (Base Layer) -->
+    <path d="M45,130 C75,175 140,175 185,120 C195,108 175,95 155,105 C115,125 80,105 60,85 C45,70 35,105 45,130 Z" fill="#D97706"/>
+
+    <!-- Main Flowing Silk Wave 2 (Top Layer with rich gradient feel via layered paths) -->
+    <path d="M48,125 C75,165 138,168 182,115 C191,104 172,92 154,101 C116,120 83,101 63,82 C50,70 40,100 48,125 Z" fill="#F59E0B"/>
+
+    <!-- Silk Highlight / Smooth Texture Curves -->
+    <path d="M65,95 C85,115 115,130 145,110 C160,100 170,105 178,112" stroke="#FDE68A" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <path d="M55,115 C75,135 105,150 135,130 C150,120 162,125 170,132" stroke="#B45309" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+    <path d="M75,82 C95,98 120,110 150,95" stroke="#FEF3C7" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+    <!-- Micro-texture weave dots representing material structure (质地) -->
+    <g fill="#FDE68A" opacity="0.3">
+      <circle cx="90" cy="120" r="1"/>
+      <circle cx="95" cy="123" r="1"/>
+      <circle cx="100" cy="120" r="1"/>
+      <circle cx="105" cy="123" r="1"/>
+      <circle cx="110" cy="120" r="1"/>
+      
+      <circle cx="115" cy="115" r="1"/>
+      <circle cx="120" cy="118" r="1"/>
+      <circle cx="125" cy="115" r="1"/>
+      <circle cx="130" cy="118" r="1"/>
+      <circle cx="135" cy="115" r="1"/>
+
+      <circle cx="93" cy="128" r="1"/>
+      <circle cx="98" cy="131" r="1"/>
+      <circle cx="103" cy="128" r="1"/>
+      <circle cx="108" cy="131" r="1"/>
+      <circle cx="113" cy="128" r="1"/>
+    </g>
+
+    <!-- Magnifying Glass Inspecting Material (Focusing on Quality/Texture) -->
+    <g transform="translate(115, 65)">
+      <!-- Glass glare -->
+      <path d="M-15,-15 C-5,-22 10,-22 20,-15" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+      
+      <!-- Lens Circle -->
+      <circle cx="0" cy="0" r="32" fill="#3B82F6" fill-opacity="0.15" stroke="#60A5FA" stroke-width="4"/>
+      
+      <!-- Handle -->
+      <path d="M22,22 L42,42" stroke="#60A5FA" stroke-width="6" stroke-linecap="round"/>
+      <path d="M22,22 L42,42" stroke="#93C5FD" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

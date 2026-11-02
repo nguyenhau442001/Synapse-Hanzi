@@ -1,0 +1,64 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Atmospheric background depth (night sky / cliff ambiance) -->
+  <path d="M0 160 Q60 140 120 170 T240 150 L240 240 L0 240 Z" fill="#222733"/>
+
+  <!-- Steep Cliff Edge (悬崖) -->
+  <!-- Dark jagged cliff base -->
+  <path d="M 20 240 L 20 180 Q 50 175 90 190 L 160 210 L 240 195 L 240 240 Z" fill="#12141A"/>
+  <!-- Cliff surface and dramatic edge -->
+  <path d="M 15 185 Q 60 170 120 195 L 240 175 L 240 195 L 120 210 Q 50 195 15 205 Z" fill="#2E3545"/>
+  <path d="M 118 194 L 240 174" stroke="#F59E0B" stroke-width="2" opacity="0.6"/> <!-- Edge highlight -->
+
+  <!-- Winding Road / Curve (弯道) -->
+  <path d="M 240 145 C 180 140, 140 170, 115 195" fill="none" stroke="#3A4255" stroke-width="22" stroke-linecap="round"/>
+  <!-- Road stripe -->
+  <path d="M 235 145 C 180 140, 142 168, 118 193" fill="none" stroke="#F1F5F9" stroke-width="2" stroke-dasharray="6,6" opacity="0.7"/>
+
+  <!-- Drift Motion / Speed Lines -->
+  <path d="M 150 170 C 135 180, 125 185, 110 192" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <path d="M 160 160 C 145 170, 135 178, 120 185" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Smoke / Tire Skid Effect (漂移特效) -->
+  <circle cx="125" cy="180" r="12" fill="#E2E8F0" opacity="0.2"/>
+  <circle cx="140" cy="172" r="8" fill="#E2E8F0" opacity="0.15"/>
+  <circle cx="115" cy="188" r="6" fill="#E2E8F0" opacity="0.25"/>
+
+  <!-- Stunt Car (特技车) - Sleek Modern Flat Sports Car angled dramatically -->
+  <g transform="translate(115, 150) rotate(-18)">
+    <!-- Car Shadow -->
+    <ellipse cx="22" cy="18" rx="25" ry="6" fill="#0A0C10" opacity="0.6"/>
+    
+    <!-- Car Body (Vibrant Orange for High Contrast) -->
+    <path d="M 2 12 Q 10 -2 26 -2 L 38 4 Q 46 8 50 14 L 46 18 L 4 18 Z" fill="#F97316"/>
+    <!-- Windshield & Roof -->
+    <path d="M 18 4 L 28 4 L 35 12 L 14 12 Z" fill="#0F172A"/>
+    <!-- Headlight glow -->
+    <path d="M 2 12 L 5 12 L 5 15 L 2 15 Z" fill="#FEF08A"/>
+    <!-- Spoiler -->
+    <path d="M 45 6 L 49 4 L 49 8 L 45 9 Z" fill="#0F172A"/>
+    
+    <!-- Wheels (with motion blur effect) -->
+    <circle cx="12" cy="16" r="6" fill="#0F172A"/>
+    <circle cx="12" cy="16" r="3" fill="#64748B"/>
+    <circle cx="38" cy="16" r="6" fill="#0F172A"/>
+    <circle cx="38" cy="16" r="3" fill="#64748B"/>
+
+    <!-- Sparks from drifting edge -->
+    <path d="M 8 18 L 4 23" stroke="#FBBF24" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 12 19 L 10 25" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Danger / Thrill Visual Indicators (Thót tim, Gay cấn) -->
+  <!-- Falling loose rock / debris near the cliff edge emphasizing height and danger -->
+  <circle cx="95" cy="215" r="3" fill="#64748B"/>
+  <path d="M 94 214 L 97 218" stroke="#94A3B8" stroke-width="1"/>
+  
+  <circle cx="75" cy="225" r="2" fill="#475569"/>
+
+  <!-- Subtle dynamic diagonal tension lines in background top-left -->
+  <line x1="30" y1="40" x2="50" y2="20" stroke="#334155" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <line x1="45" y1="50" x2="65" y2="30" stroke="#334155" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+</svg>

@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambient Glow representing hidden depth/thought -->
+  <circle cx="120" cy="110" r="60" fill="#3B82F6" opacity="0.08" filter="blur(8px)"/>
+
+  <!-- Central Object: Elegant Open Envelope with a Glowing Document/Message (representing Intent/Purpose/Dụng ý) -->
+  <g transform="translate(0, 5)">
+    <!-- Document Inside (The Core Intent/Message) -->
+    <g transform="translate(0, -10)">
+      <rect x="75" y="45" width="90" height="110" rx="6" fill="#252A34"/>
+      <!-- Document Content Lines (Abstract) -->
+      <rect x="90" y="65" width="60" height="8" rx="4" fill="#60A5FA"/>
+      <rect x="90" y="83" width="45" height="6" rx="3" fill="#4B5563"/>
+      <rect x="90" y="97" width="52" height="6" rx="3" fill="#4B5563"/>
+      <!-- Glowing Focal Point at the bottom of the document -->
+      <circle cx="120" cy="122" r="10" fill="#F59E0B" opacity="0.2"/>
+      <circle cx="120" cy="122" r="5" fill="#F59E0B"/>
+    </g>
+
+    <!-- Envelope Back Pocket -->
+    <path d="M 60 90 L 120 135 L 180 90 L 180 165 C 180 168.3 177.3 171 174 171 L 66 171 C 62.7 171 60 168.3 60 165 Z" fill="#2D3748"/>
+
+    <!-- Envelope Side Flaps -->
+    <path d="M 60 90 L 115 130 L 60 165 Z" fill="#1F2937"/>
+    <path d="M 180 90 L 125 130 L 180 165 Z" fill="#374151"/>
+
+    <!-- Envelope Front Lower Pocket (Depth) -->
+    <path d="M 60 100 L 120 145 L 180 100 L 180 165 C 180 168.3 177.3 171 174 171 L 66 171 C 62.7 171 60 168.3 60 165 Z" fill="#323B4D"/>
+
+    <!-- Envelope Top Flap (Open, pointing upward to reveal meaning) -->
+    <path d="M 60 90 L 120 40 L 180 90 L 120 125 Z" fill="#4A5568"/>
+    <!-- Flap inner shadow/highlight for 3D flat effect -->
+    <path d="M 64 92 L 120 47 L 176 92 L 120 120 Z" fill="#3E4C59"/>
+  </g>
+
+  <!-- Focused Insight Sparkles / Accent Elements -->
+  <!-- Top Right Sparkle -->
+  <path d="M 175 45 C 175 50 170 52 170 52 C 170 52 175 54 175 59 C 175 54 180 52 180 52 C 180 52 175 50 175 45 Z" fill="#F59E0B"/>
+  <!-- Top Left Sparkle -->
+  <path d="M 65 65 C 65 68 62 69 62 69 C 62 69 65 70 65 73 C 65 70 68 69 68 69 C 68 69 65 68 65 65 Z" fill="#60A5FA"/>
+
+  <!-- Subtle bottom ground shadow -->
+  <ellipse cx="120" cy="186" rx="50" ry="5" fill="#111318"/>
+</svg>

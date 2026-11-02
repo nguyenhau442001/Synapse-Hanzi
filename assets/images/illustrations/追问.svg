@@ -1,0 +1,74 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for spotlight effect -->
+  <circle cx="120" cy="115" r="90" fill="#222733" opacity="0.6"/>
+
+  <!-- Journalist Character (Left - Asking/Pressing) -->
+  <g transform="translate(45, 135)">
+    <!-- Body/Suit -->
+    <path d="M-15 45 L-25 75 L25 75 L15 45 Z" fill="#3B4252"/>
+    <path d="M-5 45 L0 55 L5 45 Z" fill="#ECEFF4"/>
+    <!-- Head -->
+    <circle cx="0" cy="20" r="14" fill="#D8DEE9"/>
+    <!-- Hair -->
+    <path d="M-12 15 C-12 10 -5 7 0 7 C5 7 12 10 12 15 C12 13 8 8 0 8 C-8 8 -12 13 -12 15 Z" fill="#4C566A"/>
+    <!-- Pointing / Forward Arm -->
+    <path d="M10 40 L35 35 L42 33" stroke="#D8DEE9" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Microphone in hand -->
+    <rect x="37" y="27" width="10" height="14" rx="3" fill="#EBCB8B"/>
+    <line x1="42" y1="41" x2="42" y2="48" stroke="#D8DEE9" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Responder Character (Right - Calm, composed under questioning) -->
+  <g transform="translate(165, 135)">
+    <!-- Body/Suit -->
+    <path d="M-18 45 L-25 75 L25 75 L18 45 Z" fill="#4C566A"/>
+    <path d="M-6 45 L0 53 L6 45 Z" fill="#ECEFF4"/>
+    <!-- Head -->
+    <circle cx="0" cy="20" r="14" fill="#E5E9F0"/>
+    <!-- Hair -->
+    <path d="M-13 16 C-14 8 -5 6 0 6 C8 6 13 9 14 15 C11 10 4 9 0 10 C-6 10 -11 12 -13 16 Z" fill="#2E3440"/>
+    <!-- Calm composure: hands crossed or relaxed gesturing -->
+    <path d="M-10 42 L0 48 L10 42" stroke="#E5E9F0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Gentle confident expression indicator (optional clean dot eyes/smile implied by geometry) -->
+  </g>
+
+  <!-- Podium / Press Conference Desk -->
+  <path d="M70 185 L170 185 L185 210 L55 210 Z" fill="#3B4252"/>
+  <path d="M80 185 L160 185 L165 192 L75 192 Z" fill="#434C5E"/>
+  <!-- Microphone on Podium -->
+  <line x1="120" y1="185" x2="120" y2="165" stroke="#88C0D0" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="120" cy="162" r="5" fill="#88C0D0"/>
+
+  <!-- Dynamic Questioning Visual Elements (Zhuìwèn / Pressing consecutive questions) -->
+  <g transform="translate(120, 75)">
+    <!-- Central overlapping energetic question marks representing rapid, successive interrogation -->
+    <!-- First background question mark (fading/distant) -->
+    <path d="M-20 -15 C-20 -28 -5 -32 5 -25 C13 -20 15 -10 10 -2 C5 4 0 9 0 16" 
+          fill="none" stroke="#D08770" stroke-width="5" stroke-linecap="round" opacity="0.4"/>
+    <circle cx="0" cy="26" r="3" fill="#D08770" opacity="0.4"/>
+
+    <!-- Second mid-ground question mark -->
+    <path d="M-10 -20 C-10 -30 2 -32 12 -25 C20 -20 22 -10 16 -3 C11 3 5 8 5 15" 
+          fill="none" stroke="#EBCB8B" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+    <circle cx="5" cy="24" r="3.5" fill="#EBCB8B" opacity="0.8"/>
+
+    <!-- Main prominent foreground question mark (crisp & sharp) -->
+    <path d="M-3 -25 C-3 -37 10 -38 20 -30 C28 -24 30 -13 22 -5 C17 1 10 7 10 15" 
+          fill="none" stroke="#D08770" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="10" cy="25" r="4" fill="#D08770"/>
+
+    <!-- Kinetic action lines indicating rapid succession / pressing nature -->
+    <path d="M-30 -10 L-22 -12" stroke="#EBCB8B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M-35 5 L-25 3" stroke="#D08770" stroke-width="3" stroke-linecap="round"/>
+    <path d="M-28 20 L-20 15" stroke="#EBCB8B" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Flash/Camera Shutter Accents (Press Conference Context) -->
+  <circle cx="40" cy="65" r="2" fill="#E5E9F0" opacity="0.8"/>
+  <circle cx="200" cy="75" r="1.5" fill="#E5E9F0" opacity="0.6"/>
+  <circle cx="190" cy="45" r="2.5" fill="#E5E9F0" opacity="0.9"/>
+  <circle cx="55" cy="40" r="1.5" fill="#E5E9F0" opacity="0.5"/>
+</svg>

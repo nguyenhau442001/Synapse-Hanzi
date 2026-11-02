@@ -1,0 +1,38 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Object: A sleek, physical modern price tag combined with a solid upward growth block, representing "mức tăng / biên độ tăng" (growth magnitude/increment object) -->
+  
+  <g transform="translate(0, 0)">
+    <!-- Background subtle grid/shadow for depth -->
+    <path d="M70 170 L170 170" stroke="#2A2F3A" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Step 1: Base low level block -->
+    <rect x="70" y="140" width="30" height="30" rx="4" fill="#2E3544" />
+    
+    <!-- Step 2: Medium level block -->
+    <rect x="105" y="115" width="30" height="55" rx="4" fill="#3B4455" />
+
+    <!-- Step 3: High level block (The "涨" peak) -->
+    <rect x="140" y="80" width="30" height="90" rx="4" fill="#10B981" />
+
+    <!-- Sleek 3D/Flat highlight overlay on the highest block -->
+    <rect x="146" y="86" width="6" height="78" rx="2" fill="#34D399" opacity="0.6"/>
+
+    <!-- Prominent Upward Growth Arrow (Physical Icon element representing the magnitude/biên độ) -->
+    <path d="M 155 45 L 125 75 L 140 75 L 140 95 L 170 95 L 170 75 L 185 75 Z" fill="#F59E0B" />
+    
+    <!-- Accent Spark/Highlight indicating precision of the range ("hợp lý / biên độ") -->
+    <circle cx="155" cy="45" r="4" fill="#FCD34D"/>
+    
+    <!-- Measurement bracket / magnitude indicator representing "幅度" -->
+    <path d="M 185 80 L 195 80 L 195 170 L 185 170" fill="none" stroke="#64748B" stroke-width="2" stroke-dasharray="3 3"/>
+    <path d="M 180 80 L 190 80 L 190 80" stroke="#64748B" stroke-width="2"/>
+    <path d="M 180 170 L 190 170" stroke="#64748B" stroke-width="2"/>
+    
+    <!-- Dot markers for exact semantic boundary -->
+    <circle cx="70" cy="170" r="3" fill="#64748B"/>
+    <circle cx="170" cy="80" r="3" fill="#10B981"/>
+  </g>
+</svg>

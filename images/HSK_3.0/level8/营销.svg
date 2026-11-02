@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle global grid / market glow -->
+  <circle cx="120" cy="120" r="80" fill="none" stroke="#252A34" stroke-width="2" stroke-dasharray="4 4"/>
+  <circle cx="120" cy="120" r="56" fill="none" stroke="#252A34" stroke-width="1.5"/>
+
+  <!-- Global Expansion Lines (representing overseas market reach / 销路) -->
+  <path d="M120 40 L120 200" stroke="#252A34" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M40 120 L200 120" stroke="#252A34" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M64 64 L176 176" stroke="#252A34" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M176 64 L64 176" stroke="#252A34" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Central Physical Object: Modern Smartphone / Megaphone & Global Market Icon representing Marketing (营销) -->
+  
+  <!-- Sales Target / Globe Base -->
+  <circle cx="120" cy="120" r="42" fill="#222733" stroke="#2F3644" stroke-width="3"/>
+
+  <!-- Globe Latitude/Longitude Curves -->
+  <path d="M78 120 C78 100 100 90 120 90 C140 90 162 100 162 120 C162 140 140 150 120 150 C100 150 78 140 78 120 Z" fill="none" stroke="#343B4C" stroke-width="2"/>
+  <path d="M120 78 C100 78 90 100 90 120 C90 140 100 162 120 162 C140 162 150 140 150 120 C150 100 140 78 120 78 Z" fill="none" stroke="#343B4C" stroke-width="2"/>
+
+  <!-- Rising Growth Chart Overlay (Strategy & Success) -->
+  <path d="M88 142 L106 126 L126 134 L154 96" fill="none" stroke="#F39C12" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Growth Data Points -->
+  <circle cx="88" cy="142" r="3.5" fill="#F39C12"/>
+  <circle cx="106" cy="126" r="3.5" fill="#F39C12"/>
+  <circle cx="126" cy="134" r="3.5" fill="#F39C12"/>
+  <circle cx="154" cy="96" r="4.5" fill="#FFA502"/>
+
+  <!-- Prominent Megaphone / Outreach Symbol intersecting the globe (Marketing Action) -->
+  <g transform="translate(120, 120) rotate(-45)">
+    <!-- Megaphone body -->
+    <path d="M-8 -14 L12 -24 L12 24 L-8 14 Z" fill="#FFA502" stroke="#1A1D24" stroke-width="1.5" stroke-linejoin="round"/>
+    <!-- Megaphone handle -->
+    <rect x="-10" y="14" width="6" height="10" rx="2" fill="#E67E22"/>
+    <!-- Sound waves / market reach -->
+    <path d="M18 -16 C23 -10 23 10 18 16" fill="none" stroke="#FFA502" stroke-width="3" stroke-linecap="round"/>
+    <path d="M23 -22 C30 -12 30 12 23 22" fill="none" stroke="#FFA502" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+  </g>
+
+  <!-- Highlight Accent Sparkle (Top Right) -->
+  <path d="M184 64 L187 72 L195 75 L187 78 L184 86 L181 78 L173 75 L181 72 Z" fill="#FFA502"/>
+  
+  <!-- Secondary Sparkle (Bottom Left) -->
+  <path d="M56 168 L58 173 L63 175 L58 177 L56 182 L54 177 L49 175 L54 173 Z" fill="#FFA502" opacity="0.6"/>
+
+</svg>

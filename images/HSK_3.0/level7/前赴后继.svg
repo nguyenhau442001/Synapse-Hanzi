@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(40, 100)">
+    <!-- Person 1 (Falling/Fallen) -->
+    <path d="M20 80 L60 80 L50 40 L30 40 Z" fill="#4A5568"/>
+    <circle cx="40" cy="30" r="10" fill="#4A5568"/>
+    
+    <!-- Person 2 (Advancing) -->
+    <path d="M70 100 L110 100 L100 20 L80 20 Z" fill="#F6AD55"/>
+    <circle cx="90" cy="15" r="12" fill="#F6AD55"/>
+    
+    <!-- Person 3 (Advancing) -->
+    <path d="M120 100 L160 100 L150 20 L130 20 Z" fill="#ED8936"/>
+    <circle cx="140" cy="15" r="12" fill="#ED8936"/>
+    
+    <!-- Person 4 (Advancing) -->
+    <path d="M170 100 L210 100 L200 20 L180 20 Z" fill="#DD6B20"/>
+    <circle cx="190" cy="15" r="12" fill="#DD6B20"/>
+  </g>
+  
+  <!-- Ground line -->
+  <line x1="20" y1="180" x2="220" y2="180" stroke="#2D3748" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background elements: subtle night sky / village evening vibe -->
+  <circle cx="190" cy="50" r="1.5" fill="#4A5568" opacity="0.6"/>
+  <circle cx="50" cy="70" r="1" fill="#4A5568" opacity="0.4"/>
+  <circle cx="80" cy="35" r="1.5" fill="#4A5568" opacity="0.5"/>
+
+  <!-- Ground -->
+  <path d="M30 195 L210 195 L220 205 L20 205 Z" fill="#2D3748"/>
+  <ellipse cx="120" cy="198" rx="90" ry="8" fill="#1A202C"/>
+
+  <!-- Huáishù (Locust Tree) Illustration -->
+  <g id="huashu-tree">
+    <!-- Tree Roots -->
+    <path d="M105 195 C105 190, 100 185, 90 182" stroke="#8B5A2B" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M135 195 C135 190, 140 185, 150 182" stroke="#8B5A2B" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+    <!-- Trunk -->
+    <path d="M110 195 C110 160, 114 140, 112 115 C111 105, 115 95, 115 85 
+             L125 85 C125 95, 129 105, 128 115 C126 140, 130 160, 130 195 Z" fill="#784E2B"/>
+    <!-- Trunk texture lines -->
+    <path d="M117 125 L119 160" stroke="#5C3A21" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M123 130 L122 170" stroke="#5C3A21" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Main Branches -->
+    <path d="M118 100 C100 90, 75 85, 60 70" stroke="#784E2B" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M122 95 C140 85, 165 80, 180 65" stroke="#784E2B" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M120 80 C110 65, 100 50, 95 35" stroke="#784E2B" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M120 80 C130 65, 145 50, 155 38" stroke="#784E2B" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+    <!-- Foliage - Layered lush canopy (Chinese Scholar Tree style - rounded clusters) -->
+    <!-- Back darker layer -->
+    <circle cx="75" cy="70" r="32" fill="#2F6843"/>
+    <circle cx="165" cy="65" r="34" fill="#2F6843"/>
+    <circle cx="120" cy="45" r="38" fill="#2F6843"/>
+
+    <!-- Middle layer -->
+    <circle cx="95" cy="55" r="35" fill="#388553"/>
+    <circle cx="145" cy="50" r="36" fill="#388553"/>
+    <circle cx="60" cy="85" r="25" fill="#388553"/>
+    <circle cx="180" cy="80" r="26" fill="#388553"/>
+
+    <!-- Front bright layer (Highlighting lush summer leaves) -->
+    <circle cx="110" cy="65" r="35" fill="#43A047"/>
+    <circle cx="140" cy="70" r="32" fill="#43A047"/>
+    <circle cx="80" cy="50" r="28" fill="#4EE481" opacity="0.2"/> <!-- Soft highlight -->
+    <circle cx="85" cy="80" r="26" fill="#43A047"/>
+    <circle cx="155" cy="85" r="25" fill="#43A047"/>
+    <circle cx="120" cy="30" r="24" fill="#43A047"/>
+    
+    <!-- Delicate hanging flower clusters (characteristic of Huáishù / pagoda tree blossoms) -->
+    <path d="M85 75 Q88 85, 84 95" stroke="#C8E6C9" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <path d="M100 80 Q98 90, 102 98" stroke="#C8E6C9" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <path d="M140 75 Q145 88, 142 96" stroke="#C8E6C9" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <path d="M155 70 Q152 83, 158 92" stroke="#C8E6C9" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <path d="M120 55 Q120 70, 122 80" stroke="#C8E6C9" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.9"/>
+  </g>
+
+  <!-- Focus accent / ground detail -->
+  <ellipse cx="120" cy="198" rx="45" ry="3" fill="#D4AF37" opacity="0.15"/>
+</svg>

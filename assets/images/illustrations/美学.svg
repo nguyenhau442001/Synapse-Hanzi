@@ -1,0 +1,64 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Moon / Background Glow -->
+    <circle cx="160" cy="85" r="28" fill="#F0C674" opacity="0.15"/>
+    
+    <!-- Distant Mountains (Layers for depth) -->
+    <path d="M 20 170 Q 70 120 120 150 T 220 140 L 220 180 L 20 180 Z" fill="#242B38"/>
+    <path d="M 10 180 Q 80 130 150 170 T 230 160 L 230 190 L 10 190 Z" fill="#2C3545"/>
+
+    <!-- Water Surface -->
+    <rect x="20" y="190" width="200" height="30" fill="#15181E"/>
+    <path d="M 30 198 Q 60 194 90 198 T 150 198 T 210 198" stroke="#3A465B" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M 50 206 Q 80 202 110 206 T 170 206" stroke="#3A465B" stroke-width="1" fill="none" opacity="0.4"/>
+
+    <!-- Classical Pavilion / Architecture -->
+    <!-- Base / Foundation Platform -->
+    <polygon points="50,190 190,190 180,180 60,180" fill="#3B485E"/>
+    <rect x="65" y="175" width="110" height="5" fill="#4E5D78"/>
+
+    <!-- Pillars -->
+    <rect x="75" y="135" width="8" height="40" fill="#D9822B"/>
+    <rect x="105" y="135" width="8" height="40" fill="#D9822B"/>
+    <rect x="127" y="135" width="8" height="40" fill="#D9822B"/>
+    <rect x="157" y="135" width="8" height="40" fill="#D9822B"/>
+
+    <!-- Pavilion Interior Wall & Window (Moon Gate motif) -->
+    <path d="M 83 175 L 157 175 L 157 140 L 83 140 Z" fill="#2A3241"/>
+    <circle cx="120" cy="155" r="14" fill="#1A1D24"/>
+    <circle cx="120" cy="155" r="14" stroke="#D9822B" stroke-width="1.5" fill="none"/>
+
+    <!-- Roof Tier 1 -->
+    <path d="M 60,135 Q 120,130 180,135 L 195,145 Q 120,138 45,145 Z" fill="#4E5D78"/>
+    <path d="M 45,145 Q 120,138 195,145 L 185,138 Q 120,132 55,138 Z" fill="#627493"/>
+
+    <!-- Roof Tier 2 (Main Curved Roof) -->
+    <path d="M 70,115 Q 120,105 170,115 L 190,135 Q 120,120 50,135 Z" fill="#3B485E"/>
+    <!-- Elegant upward sweeping eaves -->
+    <path d="M 50,135 C 35,135 30,125 25,120 C 35,128 45,132 50,135 Z" fill="#D9822B"/>
+    <path d="M 190,135 C 205,135 210,125 215,120 C 205,128 195,132 190,135 Z" fill="#D9822B"/>
+    
+    <!-- Roof Ridge -->
+    <path d="M 85,112 Q 120,108 155,112 L 150,107 Q 120,104 90,107 Z" fill="#D9822B"/>
+
+    <!-- Foreground Element: Pine Branch (Symbol of Traditional Aesthetics/Nature) -->
+    <path d="M 220,60 Q 190,70 175,90 T 150,115" stroke="#242B38" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M 190,75 Q 170,70 160,60" stroke="#242B38" stroke-width="3" stroke-linecap="round" fill="none"/>
+    
+    <!-- Pine Needles / Foliage Clusters -->
+    <circle cx="158" cy="58" r="10" fill="#3B5242" opacity="0.9"/>
+    <circle cx="172" cy="70" r="12" fill="#2E4234" opacity="0.9"/>
+    <circle cx="150" cy="88" r="14" fill="#3B5242" opacity="0.9"/>
+    <circle cx="178" cy="95" r="9" fill="#2E4234" opacity="0.9"/>
+
+    <!-- Artistic Light Beam (Highlighting spatial interplay of light & shadow) -->
+    <polygon points="120,105 190,210 140,210" fill="#F0C674" opacity="0.08"/>
+    <polygon points="120,105 150,210 90,210" fill="#F0C674" opacity="0.05"/>
+
+    <!-- Golden Accent: Falling Blossom / Aesthetic Leaf -->
+    <path d="M 135,115 Q 140,120 138,125 Q 133,123 135,115 Z" fill="#F0C674"/>
+    <path d="M 95,125 Q 98,130 95,134 Q 92,130 95,125 Z" fill="#F0C674" opacity="0.8"/>
+  </g>
+</svg>

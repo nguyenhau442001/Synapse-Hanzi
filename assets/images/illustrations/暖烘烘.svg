@@ -1,0 +1,31 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Stove/Heat Source -->
+  <path d="M90 180h60v20c0 10-10 20-30 20s-30-10-30-20v-20z" fill="#3D4451"/>
+  <path d="M100 170h40v10h-40z" fill="#5D677A"/>
+  <path d="M110 140h20v30h-20z" fill="#FF9F1C"/>
+  <path d="M105 130h30v10h-30z" fill="#FFD93D"/>
+  
+  <!-- Person sitting, wrapped in a blanket (Scale exaggeration of comfort) -->
+  <g transform="translate(120, 120)">
+    <!-- Blanket/Cloak -->
+    <path d="M-40 20c0-30 20-50 40-50s40 20 40 50v30h-80v-30z" fill="#E67E22"/>
+    <path d="M-30 30h60v20h-60z" fill="#D35400"/>
+    
+    <!-- Head -->
+    <circle cx="0" cy="-20" r="25" fill="#FAD7A0"/>
+    
+    <!-- Closed eyes (content expression) -->
+    <path d="M-12 -25l8 5m4 -5l-8 5" stroke="#784212" stroke-width="2" stroke-linecap="round"/>
+    <path d="M12 -25l-8 5m-4 -5l8 5" stroke="#784212" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Smile -->
+    <path d="M-10 -5c5 5 15 5 20 0" stroke="#784212" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Radiant Heat Waves (Visualizing the 'nuan' quality) -->
+  <path d="M80 120c-10-20 0-40 20-50" stroke="#FF9F1C" stroke-width="3" fill="none" stroke-opacity="0.6" stroke-linecap="round"/>
+  <path d="M160 120c10-20 0-40-20-50" stroke="#FF9F1C" stroke-width="3" fill="none" stroke-opacity="0.6" stroke-linecap="round"/>
+  <path d="M120 60c0-20 10-30 20-35" stroke="#FFD93D" stroke-width="2" fill="none" stroke-opacity="0.4" stroke-linecap="round"/>
+</svg>

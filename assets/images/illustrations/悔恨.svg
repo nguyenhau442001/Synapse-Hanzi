@@ -1,0 +1,37 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Ambient Glow / Sorrowful Atmosphere -->
+  <circle cx="120" cy="120" r="80" fill="#222B38" opacity="0.6"/>
+
+  <g transform="translate(0, 10)">
+    <!-- Defendant's Shoulders / Back (Lower body silhouette facing away/down) -->
+    <path d="M 60 185 C 60 145, 85 130, 120 130 C 155 130, 180 145, 180 185 Z" fill="#2C3544"/>
+
+    <!-- Bent Head / Neck (Bowing in deep remorse) -->
+    <path d="M 105 110 L 135 110 L 140 135 L 100 135 Z" fill="#3B4659"/>
+    
+    <!-- Dropped Head (Faceless, bowed completely forward) -->
+    <circle cx="120" cy="95" r="22" fill="#E6EDF5"/>
+    
+    <!-- Slumped Shoulders (Dark outline/contour) -->
+    <path d="M 75 140 C 90 120, 110 115, 120 115 C 130 115, 150 120, 165 140" fill="none" stroke="#525F75" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Clasped / Trembling Hands Pressed Against Face (Signifying deep regret/pain) -->
+    <path d="M 108 100 C 108 90, 132 90, 132 100 C 132 108, 108 108, 108 100 Z" fill="#F0B429"/>
+    
+    <!-- Falling Tears (Emphasizing the emotional weight of '悔恨') -->
+    <!-- Tear 1 -->
+    <path d="M 112 110 C 112 110, 108 118, 108 122 C 108 125, 110 127, 112 127 C 114 127, 116 125, 116 122 C 116 118, 112 110, 112 110 Z" fill="#38BDF8" opacity="0.9"/>
+    
+    <!-- Tear 2 (Lower, dripping down) -->
+    <path d="M 128 116 C 128 116, 125 122, 125 125 C 125 127, 126.5 128, 128 128 C 129.5 128, 131 127, 131 125 C 131 122, 128 116, 128 116 Z" fill="#38BDF8" opacity="0.9"/>
+
+    <!-- Subtle ripple lines from falling tears on hands/clothing -->
+    <path d="M 105 135 Q 120 142 135 135" fill="none" stroke="#38BDF8" stroke-width="1.5" opacity="0.4"/>
+  </g>
+
+  <!-- Dramatic overhead lighting / courtroom beam representing judgment/truth -->
+  <path d="M 120 0 L 60 240 L 180 240 Z" fill="#FFFFFF" opacity="0.03"/>
+</svg>

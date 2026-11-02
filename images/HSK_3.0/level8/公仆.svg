@@ -1,0 +1,52 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Floor shadow -->
+    <ellipse cx="120" cy="195" rx="55" ry="10" fill="#111317" opacity="0.6"/>
+
+    <!-- Servant/Public Servant Character (Bending forward respectfully, holding a tray/offering service) -->
+    <!-- Torso (Professional vest/shirt) -->
+    <path d="M 105 130 L 120 115 L 135 130 L 145 175 L 95 175 Z" fill="#2E4A62"/>
+    <path d="M 120 115 L 120 175" stroke="#1E3243" stroke-width="2"/>
+    <path d="M 105 130 L 120 145 L 135 130" fill="none" stroke="#E2E8F0" stroke-width="2"/>
+
+    <!-- Head & Hair -->
+    <circle cx="120" cy="92" r="16" fill="#FCE4D6"/>
+    <path d="M 104 92 C 104 80, 136 80, 136 92 C 136 85, 130 74, 120 74 C 110 74, 104 85, 104 92 Z" fill="#2C3E50"/>
+    
+    <!-- Gentle, respectful expression (Eyes closed in a polite, humble bow) -->
+    <path d="M 113 92 Q 116 95 119 92" fill="none" stroke="#5A4A42" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 121 92 Q 124 95 127 92" fill="none" stroke="#5A4A42" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 118 99 Q 120 101 122 99" fill="none" stroke="#D99B82" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Arms bowing forward -->
+    <path d="M 108 125 L 85 145 L 105 155" fill="none" stroke="#2E4A62" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 132 125 L 155 145 L 135 155" fill="none" stroke="#2E4A62" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="103" cy="157" r="5" fill="#FCE4D6"/>
+    <circle cx="137" cy="157" r="5" fill="#FCE4D6"/>
+
+    <!-- The Tray representing service / public duty -->
+    <rect x="90" y="152" width="60" height="6" rx="3" fill="#D4AF37"/>
+    <rect x="100" y="146" width="40" height="6" rx="2" fill="#E5C158"/>
+
+    <!-- Symbol of the People (Group of abstract golden figures/community above the tray) -->
+    <g transform="translate(0, 8)">
+      <!-- Left person -->
+      <circle cx="106" cy="115" r="5" fill="#F59E0B"/>
+      <path d="M 98 132 C 98 123, 114 123, 114 132 Z" fill="#F59E0B"/>
+      
+      <!-- Center person (prominent) -->
+      <circle cx="120" cy="107" r="6" fill="#FBBF24"/>
+      <path d="M 111 128 C 111 117, 129 117, 129 128 Z" fill="#FBBF24"/>
+
+      <!-- Right person -->
+      <circle cx="134" cy="115" r="5" fill="#F59E0B"/>
+      <path d="M 126 132 C 126 123, 142 123, 142 132 Z" fill="#F59E0B"/>
+    </g>
+
+    <!-- Base / Support stand -->
+    <rect x="80" y="175" width="80" height="8" rx="4" fill="#3B82F6"/>
+    <rect x="95" y="183" width="50" height="4" rx="2" fill="#2563EB"/>
+  </g>
+</svg>

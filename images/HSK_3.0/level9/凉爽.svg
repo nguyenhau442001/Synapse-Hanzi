@@ -1,0 +1,84 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Glowing Elements / Sunset Horizon transitioning to evening -->
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#242B38"/>
+      <stop offset="100%" stop-color="#151921"/>
+    </linearGradient>
+    <linearGradient id="heatGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF7648" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FF7648" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="coolGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4CE6E6" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#4CE6E6" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="240" height="240" fill="url(#skyGrad)"/>
+
+  <!-- CONTRAST VISUAL REPRESENTATION (Adjective / Quality Contrast) -->
+  <!-- Left side: Scorched / Heat (Scorching sun hint / radiating wave lines) -->
+  <g opacity="0.6">
+    <path d="M 40 90 Q 50 80 60 90 T 80 90" stroke="#FF7648" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 30 110 Q 45 100 60 110 T 90 110" stroke="#FF7648" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <circle cx="50" cy="65" r="12" fill="#FF7648" opacity="0.2"/>
+  </g>
+
+  <!-- Right/Center side: Cool, Refreshing Breeze (凉爽) -->
+  <!-- Flowing dynamic breeze lines sweeping across -->
+  <g>
+    <!-- Wave 1 -->
+    <path d="M 60 140 C 90 130, 110 150, 150 135 C 180 120, 200 130, 220 125" stroke="#4CE6E6" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <!-- Wave 2 (Accent / Focus) -->
+    <path d="M 40 165 C 80 150, 120 175, 170 155 C 195 145, 210 150, 230 145" stroke="#4CE6E6" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <!-- Wave 3 -->
+    <path d="M 70 190 C 100 180, 140 195, 180 180 C 200 170, 210 175, 220 170" stroke="#4CE6E6" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+  </g>
+
+  <!-- Coastal Horizon / Ground silhouette -->
+  <path d="M 0 200 L 240 200 L 240 240 L 0 240 Z" fill="#13161C"/>
+  <rect x="0" y="197" width="240" height="3" fill="#2A313D"/>
+
+  <!-- Human Silhouette experiencing the refreshing breeze (Relaxed posture, arms slightly open, enjoying comfort) -->
+  <g transform="translate(130, 115)">
+    <!-- Head -->
+    <circle cx="20" cy="20" r="8" fill="#E2E8F0"/>
+    <!-- Body / Torso -->
+    <path d="M 20 28 L 16 55 L 24 55 Z" fill="#E2E8F0"/>
+    <!-- Arms stretched out welcoming the breeze -->
+    <path d="M 18 35 Q 5 30 -2 38" stroke="#E2E8F0" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M 22 35 Q 35 30 42 38" stroke="#E2E8F0" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <!-- Legs -->
+    <path d="M 18 55 L 13 80" stroke="#E2E8F0" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 22 55 L 27 80" stroke="#E2E8F0" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Second smaller silhouette for scale/atmosphere -->
+  <g transform="translate(85, 130) scale(0.75)">
+    <!-- Head -->
+    <circle cx="20" cy="20" r="8" fill="#8C9BA5"/>
+    <!-- Body -->
+    <path d="M 20 28 L 16 55 L 24 55 Z" fill="#8C9BA5"/>
+    <!-- Relaxed arms -->
+    <path d="M 18 35 Q 10 42 12 50" stroke="#8C9BA5" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M 22 35 Q 30 42 28 50" stroke="#8C9BA5" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <!-- Legs -->
+    <path d="M 18 55 L 15 80" stroke="#8C9BA5" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 22 55 L 25 80" stroke="#8C9BA5" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Cooling Particle / Leaf floating in the breeze (enhances vector storytelling) -->
+  <g transform="translate(100, 110) rotate(-15)">
+    <path d="M 0 10 Q 10 0 15 10 Q 10 20 0 10 Z" fill="#4CE6E6" opacity="0.9"/>
+  </g>
+  <g transform="translate(175, 95) rotate(35)">
+    <path d="M 0 6 Q 6 0 9 6 Q 6 12 0 6 Z" fill="#4CE6E6" opacity="0.6"/>
+  </g>
+
+  <!-- Focus Accent: High-contrast gold/orange marker framing the core concept cleanly -->
+  <circle cx="150" cy="135" r="45" stroke="#FFA800" stroke-width="1.5" stroke-dasharray="6 4" fill="none" opacity="0.3"/>
+</svg>

@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Table Surface -->
+  <rect x="20" y="180" width="200" height="10" fill="#2D343E" rx="2"/>
+  
+  <!-- Teapot -->
+  <path d="M80 180 C 70 180, 60 160, 60 130 C 60 100, 90 80, 120 80 C 150 80, 180 100, 180 130 C 180 160, 170 180, 160 180 Z" fill="#FFB84D"/>
+  <path d="M170 120 L 200 100 L 180 140 Z" fill="#FFB84D"/>
+  <path d="M70 120 C 50 120, 50 90, 70 90" stroke="#FFB84D" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <ellipse cx="120" cy="80" rx="40" ry="10" fill="#E6A035"/>
+  
+  <!-- Tea Stream -->
+  <path d="M185 115 C 195 125, 200 140, 195 160" stroke="#FFD700" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.8"/>
+  
+  <!-- Teacup -->
+  <path d="M175 180 L 215 180 L 210 210 L 180 210 Z" fill="#FFB84D"/>
+  <ellipse cx="195" cy="180" rx="20" ry="6" fill="#FFD700"/>
+  
+  <!-- Steam -->
+  <path d="M195 170 C 190 160, 200 150, 195 140" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.3"/>
+  <path d="M205 170 C 200 160, 210 150, 205 140" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.2"/>
+</svg>

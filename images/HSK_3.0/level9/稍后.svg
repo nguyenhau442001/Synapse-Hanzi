@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle glow representing technical maintenance/system state -->
+  <circle cx="120" cy="110" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Central Physical Object: A sleek modern mechanical hourglass/timer representing a short moment/later (稍后) -->
+  <g transform="translate(120, 105)">
+    <!-- Stand / Base -->
+    <rect x="-35" y="65" width="70" height="8" rx="4" fill="#3A4252"/>
+    <rect x="-20" y="55" width="40" height="12" fill="#2D3540"/>
+
+    <!-- Top Cap -->
+    <rect x="-35" y="-73" width="70" height="8" rx="4" fill="#3A4252"/>
+    <rect x="-20" y="-67" width="40" height="12" fill="#2D3540"/>
+
+    <!-- Glass bulb container (Outer Frame) -->
+    <path d="M-30 -55 C-30 -20, -25 -10, 0 0 C25 -10, 30 -20, 30 -55 Z" fill="none" stroke="#4A5568" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M-30 55 C-30 20, -25 10, 0 0 C25 10, 30 20, 30 55 Z" fill="none" stroke="#4A5568" stroke-width="4" stroke-linejoin="round"/>
+
+    <!-- Glass transparency effect -->
+    <path d="M-26 -53 C-26 -20, -22 -10, 0 0 C22 -10, 26 -20, 26 -53 Z" fill="#2A3240" opacity="0.5"/>
+    <path d="M-26 53 C-26 20, -22 10, 0 0 C22 10, 26 20, 26 53 Z" fill="#2A3240" opacity="0.5"/>
+
+    <!-- Sand in top bulb (partially drained, indicating "a little later/soon") -->
+    <path d="M-23 -40 C-20 -25, -10 -10, 0 0 C-10 -10, -20 -25, -23 -40 Z" fill="#F59E0B" opacity="0.2"/>
+    <path d="M-23 -40 C-10 -40, 10 -40, 23 -40 C 20 -20, 10 -8, 0 0 C -10 -8, -20 -20, -23 -40 Z" fill="#F59E0B"/>
+
+    <!-- Falling sand stream (representing passage of a brief moment) -->
+    <line x1="0" y1="0" x2="0" y2="25" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 6">
+      <animate attributeName="stroke-dashoffset" values="8;0" dur="1s" repeatCount="indefinite"/>
+    </line>
+
+    <!-- Sand pile accumulating at the bottom bulb -->
+    <path d="M-20 48 L20 48 C15 35, 5 28, 0 25 C-5 28, -15 35, -20 48 Z" fill="#F59E0B"/>
+
+    <!-- Modern accent rings -->
+    <rect x="-8" y="-4" width="16" height="8" rx="2" fill="#F59E0B"/>
+  </g>
+
+  <!-- Contextual decorative element: Minimalist broadcast/signal pause indicator below, matching the maintenance/delay context -->
+  <g transform="translate(120, 195)">
+    <rect x="-40" y="-12" width="80" height="24" rx="12" fill="#252A34" stroke="#3A4252" stroke-width="2"/>
+    <!-- Pause bars -->
+    <rect x="-9" y="-5" width="6" height="10" rx="2" fill="#F59E0B"/>
+    <rect x="3" y="-5" width="6" height="10" rx="2" fill="#F59E0B"/>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Desk surface / Workspace environment -->
+    <path d="M 40 185 L 200 185 C 205 185, 208 188, 208 193 C 208 198, 205 201, 200 201 L 40 201 C 35 201, 32 198, 32 193 C 32 188, 35 185, 40 185 Z" fill="#2D333B" />
+    
+    <!-- Laptop / Project Target Representation -->
+    <path d="M 75 168 L 165 168 L 173 185 L 67 185 Z" fill="#484F58" />
+    <rect x="90" y="140" width="60" height="28" rx="3" fill="#30363D" />
+    <path d="M 105 146 L 135 146 M 100 154 L 140 154" stroke="#F0883E" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Concentrated Character (全身心 - Mind, Body, Spirit fully invested) -->
+    <!-- Head and Upper Body leaning forward into the task -->
+    <g transform="translate(120, 115)">
+      <!-- Body/Torso leaning forward -->
+      <path d="M -25 55 C -25 35, -15 25, 0 25 C 15 25, 25 35, 25 55 Z" fill="#1F6FEB" />
+      
+      <!-- Head -->
+      <circle cx="2" cy="-4" r="16" fill="#FFD8BE" />
+      <!-- Hair -->
+      <path d="M -14 -12 C -14 -20, -2 -22, 10 -16 C 15 -13, 16 -8, 16 -8 C 16 -8, 10 -14, 2 -13 C -6 -12, -12 -8, -14 -12 Z" fill="#2D333B" />
+      
+      <!-- Arms reaching/focused intensely on the workspace -->
+      <path d="M -18 35 L -35 50 L -45 65" stroke="#1F6FEB" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M 18 35 L 38 52 L 50 68" stroke="#1F6FEB" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+      
+      <!-- Hands -->
+      <circle cx="-47" cy="67" r="5" fill="#FFD8BE" />
+      <circle cx="52" cy="70" r="5" fill="#FFD8BE" />
+    </g>
+
+    <!-- Radiating focus / Energy/Mind-Body integration (Golden Accent representing total dedication and mental clarity) -->
+    <g transform="translate(120, 95)" opacity="0.9">
+      <!-- Minimalist abstract energy arcs overhead denoting 'all-in' focus -->
+      <path d="M -35 -25 C -20 -40, 20 -40, 35 -25" fill="none" stroke="#F0883E" stroke-width="3" stroke-linecap="round" />
+      <path d="M -22 -15 C -12 -25, 12 -25, 22 -15" fill="none" stroke="#F0883E" stroke-width="2.5" stroke-linecap="round" />
+      
+      <!-- Glowing focus point above head -->
+      <circle cx="0" cy="-35" r="4" fill="#F0883E" />
+      <circle cx="0" cy="-35" r="8" fill="#F0883E" opacity="0.3" />
+    </g>
+  </g>
+</svg>

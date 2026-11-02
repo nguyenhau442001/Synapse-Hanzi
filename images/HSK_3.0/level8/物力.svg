@@ -1,0 +1,19 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Cargo Container -->
+  <rect x="70" y="100" width="100" height="70" rx="4" fill="#E67E22"/>
+  <rect x="75" y="105" width="90" height="60" rx="2" fill="#D35400"/>
+  <path d="M75 120h90M75 135h90M75 150h90" stroke="#A04000" stroke-width="2"/>
+  
+  <!-- Supply Crates -->
+  <rect x="60" y="145" width="25" height="25" rx="2" fill="#F39C12"/>
+  <rect x="155" y="145" width="25" height="25" rx="2" fill="#F39C12"/>
+  
+  <!-- Crane Hook/Chain representing logistics -->
+  <path d="M120 40v60" stroke="#BDC3C7" stroke-width="4" stroke-linecap="round"/>
+  <path d="M105 100l15-15 15 15" stroke="#BDC3C7" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Ground Shadow -->
+  <ellipse cx="120" cy="185" rx="70" ry="10" fill="#000" opacity="0.3"/>
+</svg>

@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Desk/Lectern -->
+  <path d="M60 180 L180 180 L170 210 L70 210 Z" fill="#34495E"/>
+  <path d="M65 170 L175 170 L180 180 L60 180 Z" fill="#2C3E50"/>
+  
+  <!-- Teacher Figure -->
+  <circle cx="120" cy="85" r="25" fill="#F39C12"/>
+  <path d="M95 110 C95 140 145 140 145 110 L140 180 L100 180 Z" fill="#3498DB"/>
+  
+  <!-- Book on Lectern -->
+  <rect x="90" y="160" width="60" height="10" rx="2" fill="#ECF0F1"/>
+  <rect x="95" y="162" width="50" height="1" fill="#1A1D24"/>
+  <rect x="95" y="165" width="50" height="1" fill="#1A1D24"/>
+  
+  <!-- Focused Hand Gesture -->
+  <path d="M145 120 L165 110 L160 100 Z" fill="#F39C12"/>
+  
+  <!-- Chalk/Writing tool -->
+  <rect x="160" y="105" width="15" height="3" transform="rotate(-20 160 105)" fill="#BDC3C7"/>
+  
+  <!-- Subtle light beam/focus -->
+  <path d="M120 60 L140 160 L100 160 Z" fill="#F39C12" opacity="0.1"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(40, 40)">
+    <!-- Opponent Figure (The "Strong Rival") -->
+    <path d="M120 160C120 140 130 120 150 110C160 105 170 105 180 110C200 120 210 140 210 160V180H120V160Z" fill="#F39C12"/>
+    <circle cx="165" cy="85" r="25" fill="#F39C12"/>
+    <path d="M145 130L135 150M185 130L195 150" stroke="#F39C12" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Stance/Power representation -->
+    <path d="M30 180H110M30 160H90M30 140H70" stroke="#E0E0E0" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Focus/Intensity indicator -->
+    <path d="M165 50C175 50 180 55 180 60C180 65 175 70 165 70C155 70 150 65 150 60C150 55 155 50 165 50Z" fill="#1A1D24"/>
+  </g>
+</svg>

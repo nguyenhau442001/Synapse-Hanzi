@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambient Glow & Depth -->
+  <circle cx="120" cy="120" r="70" fill="#252A35" opacity="0.6"/>
+
+  <!-- Conceptual Object: A Hollow Book (Representing "空洞" - empty, hollow speech/writing) -->
+  <g transform="translate(120, 120)">
+    <!-- Book Shadow -->
+    <ellipse cx="0" cy="65" rx="55" ry="12" fill="#111318"/>
+
+    <!-- Open Book Outer Pages (Dark Edge) -->
+    <path d="M -75 -15 C -75 -20 -40 -35 0 -45 C 40 -35 75 -20 75 -15 L 75 45 C 75 50 40 35 0 25 C -40 35 -75 50 -75 45 Z" fill="#2A303C"/>
+
+    <!-- Left Page Base -->
+    <path d="M -70 -20 C -40 -30 0 -38 0 -38 L 0 32 C 0 32 -40 22 -70 12 Z" fill="#E2E8F0"/>
+    <!-- Right Page Base -->
+    <path d="M 70 -20 C 40 -30 0 -38 0 -38 L 0 32 C 0 32 40 22 70 12 Z" fill="#CBD5E1"/>
+
+    <!-- Hollow Center Void (The "Hollow/Empty" meaning cutout) -->
+    <path d="M 0 -38 C -15 -35 -30 -20 -30 0 C -30 20 -15 28 0 32 C 15 28 30 20 30 0 C 30 -20 15 -35 0 -38 Z" fill="#1A1D24"/>
+    <!-- Inner Void Depth Lines -->
+    <path d="M 0 -38 L 0 32" stroke="#252A35" stroke-width="2" stroke-dasharray="3,3"/>
+
+    <!-- Book Spine / Center Crease -->
+    <path d="M 0 -45 L 0 25" fill="none" stroke="#475569" stroke-width="3"/>
+
+    <!-- Meaningless, Empty Floating Lines (representing hollow text/phrases) -->
+    <!-- Left meaningless lines -->
+    <line x1="-55" y1="-5" x2="-38" y2="-8" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-58" y1="5" x2="-40" y2="2" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Right meaningless lines -->
+    <line x1="38" y1="-8" x2="55" y2="-5" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+    <line x1="40" y1="2" x2="58" y2="5" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Focal Accent: Glowing Gold Rings/Particles floating out of the hollow center, signifying emptiness where substance should be -->
+    <circle cx="0" cy="-3" r="14" fill="none" stroke="#F59E0B" stroke-width="2.5" opacity="0.9"/>
+    <circle cx="0" cy="-3" r="22" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4,6" opacity="0.6"/>
+
+    <!-- Floating Spark/Void Core Accent -->
+    <circle cx="0" cy="-3" r="4" fill="#F59E0B"/>
+  </g>
+</svg>

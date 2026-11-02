@@ -1,0 +1,48 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(12, 12)">
+    <!-- Background subtle legal gavel platform or pedestal base -->
+    <path d="M60 176 L156 176 L168 196 L48 196 Z" fill="#2A313C" />
+    <ellipse cx="108" cy="176" rx="48" ry="6" fill="#353E4E" />
+
+    <!-- Judicial Gavel (Representing precedent/ruling) -->
+    <!-- Handle -->
+    <g transform="rotate(-30 108 120)">
+      <rect x="103" y="60" width="10" height="95" rx="3" fill="#D4AF37"/>
+      <!-- Handle grip rings -->
+      <rect x="103" y="75" width="10" height="4" fill="#AA8C2C"/>
+      <rect x="103" y="90" width="10" height="4" fill="#AA8C2C"/>
+      <rect x="103" y="105" width="10" height="4" fill="#AA8C2C"/>
+      <!-- Pommel -->
+      <circle cx="108" cy="157" rx="7" fill="#F39C12"/>
+    </g>
+
+    <!-- Gavel Head (Striking block) -->
+    <g transform="rotate(-30 108 85)">
+      <rect x="76" y="65" width="64" height="32" rx="6" fill="#E5B13A"/>
+      <!-- Metallic gold bands on gavel head -->
+      <rect x="84" y="65" width="8" height="32" fill="#F5C754"/>
+      <rect x="124" y="65" width="8" height="32" fill="#F5C754"/>
+      <!-- Highlight -->
+      <rect x="96" y="69" width="24" height="4" rx="2" fill="#FFF" opacity="0.3"/>
+    </g>
+
+    <!-- Glowing pathway/path forward (Symbolizing "Precedent" paving the way) -->
+    <path d="M30 140 L216 140 L200 164 L46 164 Z" fill="#16202D" />
+    <path d="M46 164 L200 164" stroke="#F39C12" stroke-width="2" stroke-dasharray="6,4" opacity="0.8"/>
+
+    <!-- Path-breaking glowing beam / Marker pointing forward (First of its kind) -->
+    <path d="M108 40 L108 140" stroke="#F39C12" stroke-width="3" stroke-dasharray="8,6" opacity="0.4"/>
+    
+    <!-- Bright Focal Indicator / First Step Node -->
+    <circle cx="108" cy="152" r="10" fill="#F39C12"/>
+    <circle cx="108" cy="152" r="5" fill="#FFFFFF"/>
+
+    <!-- Sparkles/Stars indicating pioneering legal breakthrough -->
+    <path d="M40 80 L43 88 L51 91 L43 94 L40 102 L37 94 L29 91 L37 88 Z" fill="#F39C12" opacity="0.9"/>
+    <path d="M176 60 L178 65 L183 67 L178 69 L176 74 L174 69 L169 67 L174 65 Z" fill="#F39C12" opacity="0.7"/>
+    <path d="M190 110 L191 113 L194 114 L191 115 L190 118 L189 115 L186 114 L189 113 Z" fill="#F39C12" opacity="0.5"/>
+  </g>
+</svg>

@@ -1,0 +1,47 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background bookshelf silhouette for community library context -->
+  <path d="M48 60H192V180H48V60Z" fill="#222732"/>
+  <rect x="56" y="70" width="38" height="50" fill="#2A303C" rx="2"/>
+  <rect x="98" y="70" width="44" height="50" fill="#2A303C" rx="2"/>
+  <rect x="146" y="70" width="38" height="50" fill="#2A303C" rx="2"/>
+  <rect x="56" y="128" width="42" height="50" fill="#2A303C" rx="2"/>
+  <rect x="102" y="128" width="36" height="50" fill="#2A303C" rx="2"/>
+  <rect x="142" y="128" width="42" height="50" fill="#2A303C" rx="2"/>
+
+  <!-- Subtle ambient glow behind volunteer -->
+  <circle cx="120" cy="120" r="70" fill="#FF9F43" opacity="0.08"/>
+
+  <!-- Volunteer Character (义工) - Friendly librarian/community helper with vest and gentle helpful gesture -->
+  <!-- Torso & Volunteer Vest -->
+  <path d="M95 145H145V200H95V145Z" fill="#323B4C"/>
+  <path d="M100 145L120 170L140 145V200H100V145Z" fill="#FF9F43"/> <!-- Volunteer vest / High-contrast orange accent -->
+  
+  <!-- Neck & Head -->
+  <rect x="112" y="128" width="16" height="20" fill="#E0AC69"/>
+  <circle cx="120" cy="108" r="22" fill="#E0AC69"/>
+  
+  <!-- Hair (Neat, modern style) -->
+  <path d="M98 102C98 90 106 84 120 84C134 84 142 90 142 102V112H98V102Z" fill="#2C221E"/>
+
+  <!-- Friendly Smile & Expression -->
+  <circle cx="112" cy="108" r="2" fill="#3E2723"/>
+  <circle cx="128" cy="108" r="2" fill="#3E2723"/>
+  <path d="M116 116C118 118 122 118 124 116" stroke="#3E2723" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <!-- Arms holding out a stack of books (helpful service action) -->
+  <!-- Left Arm -->
+  <path d="M95 145L75 160L85 170L102 155" fill="#323B4C"/>
+  <!-- Right Arm -->
+  <path d="M145 145L165 160L155 170L138 155" fill="#323B4C"/>
+
+  <!-- Stack of Community Library Books being offered / organized -->
+  <rect x="96" y="152" width="48" height="10" rx="2" fill="#4A90E2"/>
+  <rect x="100" y="143" width="40" height="10" rx="2" fill="#E74C3C"/>
+  <rect x="104" y="134" width="32" height="10" rx="2" fill="#2ECC71"/>
+
+  <!-- Subtle star/sparkle representing community service spirit (non-romantic, professional accent) -->
+  <path d="M180 75L183 83L191 86L183 89L180 97L177 89L169 86L177 83L180 75Z" fill="#FF9F43" opacity="0.8"/>
+  <path d="M60 95L62 99L66 100L62 101L60 105L58 101L54 100L58 99L60 95Z" fill="#FF9F43" opacity="0.6"/>
+</svg>

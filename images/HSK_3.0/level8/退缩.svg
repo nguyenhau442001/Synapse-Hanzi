@@ -1,0 +1,36 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground -->
+  <path d="M40 180 L200 180" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Character representing "Retreat/Shrinking back" -->
+  <!-- Legs planted firmly but body leaning backwards -->
+  <g transform="translate(120, 160)">
+    <!-- Back leg -->
+    <path d="M0 0 L15 20" stroke="#A0AEC0" stroke-width="8" stroke-linecap="round"/>
+    <!-- Front leg -->
+    <path d="M0 0 L-10 20" stroke="#A0AEC0" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Torso leaning back -->
+    <path d="M0 0 L-20 -60" stroke="#F6AD55" stroke-width="12" stroke-linecap="round"/>
+    
+    <!-- Arms tucked in/defensive -->
+    <path d="M-10 -40 L-30 -20" stroke="#F6AD55" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-10 -40 L-35 -45" stroke="#F6AD55" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Head -->
+    <circle cx="-25" cy="-75" r="12" fill="#F6AD55"/>
+  </g>
+  
+  <!-- Visual cue of "Retreat" - Motion lines behind the character -->
+  <g stroke="#4A5568" stroke-width="4" stroke-linecap="round">
+    <path d="M80 140 L60 130"/>
+    <path d="M80 120 L60 110"/>
+    <path d="M80 100 L60 90"/>
+  </g>
+  
+  <!-- Threatening element (The "Waves/Storm" context) -->
+  <path d="M160 100 Q190 80 220 100 T260 100" fill="none" stroke="#E53E3E" stroke-width="6" stroke-linecap="round"/>
+  <path d="M160 130 Q190 110 220 130 T260 130" fill="none" stroke="#E53E3E" stroke-width="6" stroke-linecap="round"/>
+</svg>

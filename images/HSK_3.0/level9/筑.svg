@@ -1,0 +1,63 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Atmospheric Background Elements -->
+  <g opacity="0.3">
+    <!-- Subtle moon/light source -->
+    <circle cx="190" cy="50" r="24" fill="#3A4454" opacity="0.4"/>
+    <circle cx="190" cy="50" r="16" fill="#1A1D24"/>
+  </g>
+
+  <!-- Tree Branch Context (from "鸟儿在树上筑了一个窝") -->
+  <g>
+    <!-- Main branch -->
+    <path d="M 20 180 Q 90 170, 140 140 T 230 110" fill="none" stroke="#2F3746" stroke-width="14" stroke-linecap="round"/>
+    <path d="M 100 156 Q 130 130, 160 110" fill="none" stroke="#2F3746" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Leaves on the tree -->
+    <path d="M 60 165 C 50 150, 70 140, 80 155 Z" fill="#2E4033"/>
+    <path d="M 130 135 C 120 115, 145 110, 150 130 Z" fill="#344E41"/>
+    <path d="M 170 115 C 165 95, 190 95, 185 115 Z" fill="#2E4033"/>
+  </g>
+
+  <!-- Action: Building / Weaving a nest (筑) -->
+  <g>
+    <!-- Motion lines showing the active building action -->
+    <path d="M 115 100 Q 130 90, 145 105" fill="none" stroke="#F4A261" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="3 3"/>
+    <path d="M 100 120 Q 90 100, 110 95" fill="none" stroke="#F4A261" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 2"/>
+
+    <!-- The Nest Structure being built (semi-transparent/in-progress base) -->
+    <path d="M 95 130 C 95 115, 135 115, 135 130 C 135 145, 95 145, 95 130 Z" fill="#4A3B32" stroke="#D4A373" stroke-width="2"/>
+    
+    <!-- Twigs being woven into the nest -->
+    <path d="M 85 135 Q 115 110, 145 132" fill="none" stroke="#E9C46A" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 90 125 Q 115 140, 140 125" fill="none" stroke="#D4A373" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 100 120 Q 115 105, 130 122" fill="none" stroke="#F4A261" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Little Bird (Action Agent) -->
+    <!-- Bird body -->
+    <ellipse cx="85" cy="115" rx="16" ry="12" fill="#E76F51"/>
+    <!-- Bird head -->
+    <circle cx="72" cy="107" r="10" fill="#E76F51"/>
+    <!-- Wing with motion -->
+    <path d="M 80 110 Q 92 115, 88 125" fill="#D64527"/>
+    <!-- Bird eye -->
+    <circle cx="69" cy="105" r="1.5" fill="#1A1D24"/>
+    <!-- Bird beak carrying a twig -->
+    <polygon points="62,107 68,105 68,109" fill="#F4A261"/>
+    <!-- Twig in beak -->
+    <path d="M 52 100 Q 60 104, 66 107" fill="none" stroke="#D4A373" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Bird tail -->
+    <path d="M 101 120 L 110 125 L 105 115 Z" fill="#D64527"/>
+    <!-- Bird feet gripping branch -->
+    <path d="M 80 127 L 80 132 M 84 127 L 84 132" stroke="#F4A261" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Foreground decorative elements for depth -->
+  <g>
+    <path d="M 15 190 C 25 185, 30 195, 40 188" fill="none" stroke="#344E41" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 210 120 C 215 110, 225 115, 220 125" fill="none" stroke="#344E41" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "广义" (Broad sense / Comprehensive scope) -->
+  <g transform="translate(0, 0)">
+    <!-- Expanding Outer Scope (The "Broad" framework) -->
+    <path d="M 60 70 L 180 70 L 200 170 L 40 170 Z" fill="#252A34" opacity="0.6"/>
+    <path d="M 45 60 L 195 60 L 210 180 L 30 180 Z" fill="#2F3644" opacity="0.4"/>
+
+    <!-- Main Central Pedestal / Object Foundation representing the core subject -->
+    <rect x="70" y="165" width="100" height="12" rx="4" fill="#E59D38"/>
+    <rect x="95" y="150" width="50" height="18" rx="2" fill="#D48A25"/>
+
+    <!-- Diverse categorized elements emerging upward to show comprehensive coverage (Material & Spiritual culture / Broad range) -->
+    <!-- Element 1: Physical / Material (Pillar / Architecture) -->
+    <rect x="68" y="100" width="20" height="50" rx="2" fill="#4ECCA3"/>
+    <polygon points="78,85 58,100 98,100" fill="#3DB389"/>
+
+    <!-- Element 2: Intellectual / Spiritual (Book / Scroll) -->
+    <path d="M 105 105 L 125 95 L 145 105 L 145 145 L 125 155 L 105 145 Z" fill="#4B6584"/>
+    <path d="M 125 95 L 125 155" stroke="#1A1D24" stroke-width="2"/>
+    <line x1="112" y1="112" x2="119" y2="108" stroke="#8498AF" stroke-width="2" stroke-linecap="round"/>
+    <line x1="112" y1="122" x2="119" y2="118" stroke="#8498AF" stroke-width="2" stroke-linecap="round"/>
+    <line x1="131" y1="118" x2="138" y2="122" stroke="#8498AF" stroke-width="2" stroke-linecap="round"/>
+    <line x1="131" y1="128" x2="138" y2="132" stroke="#8498AF" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Element 3: Art / Creation (Palette / Abstract form) -->
+    <circle cx="170" cy="115" r="18" fill="#F78FB3"/>
+    <circle cx="175" cy="110" r="3" fill="#FFF"/>
+    <circle cx="165" cy="122" r="3" fill="#FFF"/>
+
+    <!-- Expansion/Broadening Arrows radiating outwards -->
+    <!-- Top Left Expansion Ray -->
+    <path d="M 65 75 L 45 55" stroke="#E59D38" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="42,52 50,53 47,59" fill="#E59D38"/>
+
+    <!-- Top Right Expansion Ray -->
+    <path d="M 175 75 L 195 55" stroke="#E59D38" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="198,52 193,59 190,53" fill="#E59D38"/>
+
+    <!-- Center Upper Focus Star/Node -->
+    <path d="M 120 65 L 123 75 L 133 78 L 123 81 L 120 91 L 117 81 L 107 78 L 117 75 Z" fill="#F9CA24"/>
+  </g>
+</svg>

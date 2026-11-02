@@ -1,0 +1,42 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background grounding element to establish context (workplace post/station) -->
+  <path d="M70 190H170" stroke="#2A2F3B" stroke-width="4" stroke-linecap="round"/>
+  <path d="M120 120V190" stroke="#2A2F3B" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Focused Character / Object representing "坚守" (steadfast commitment at one's post) -->
+  <!-- A stylized, solid, unwavering human figure rooted firmly at a workstation/post -->
+  
+  <!-- Base / Platform of the post -->
+  <path d="M80 185H160" stroke="#3A4252" stroke-width="6" stroke-linecap="round"/>
+  <rect x="105" y="160" width="30" height="25" fill="#2E3646" rx="2"/>
+
+  <!-- Lower body / stance firmly planted -->
+  <path d="M96 160L102 125H138L144 160Z" fill="#3B82F6"/>
+
+  <!-- Torso / Core showing stability and strength -->
+  <path d="M98 85H142V125H98Z" fill="#2563EB"/>
+  
+  <!-- Accent shield core symbolizing steadfastness/堅 -->
+  <path d="M120 93C120 93 131 99 131 110C131 118 120 123 120 123C120 123 109 118 109 110C109 99 120 93 120 93Z" fill="#F59E0B"/>
+
+  <!-- Head determined, looking forward -->
+  <circle cx="120" cy="63" r="14" fill="#E2E8F0"/>
+  
+  <!-- Arms firmly in place -->
+  <!-- Left arm -->
+  <path d="M98 95L86 115L93 120" stroke="#2563EB" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Right arm -->
+  <path d="M142 95L154 115L147 120" stroke="#2563EB" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Focal highlight elements representing unwavering focus/resilience (Golden accent glow, not abstract badge) -->
+  <circle cx="120" cy="36" r="3" fill="#F59E0B"/>
+  <path d="M120 24V28" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M109 29L112 32" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M131 29L128 32" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Grounding steady energy lines (minimal, professional, strictly non-abstract UI) -->
+  <path d="M85 195H155" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+</svg>

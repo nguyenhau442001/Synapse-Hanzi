@@ -1,0 +1,30 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Grass blades in foreground -->
+  <path d="M20 240 Q40 180 60 240" fill="#2D3436"/>
+  <path d="M50 240 Q80 150 110 240" fill="#3D4548"/>
+  <path d="M180 240 Q200 190 220 240" fill="#2D3436"/>
+  
+  <!-- Leopard body (sleek, flat, low profile) -->
+  <g fill="#FFB347">
+    <!-- Head -->
+    <path d="M80 150 Q70 140 85 135 Q100 130 110 145 Z"/>
+    <!-- Body -->
+    <path d="M80 150 C80 150 130 140 160 160 C180 175 160 185 140 180 C120 175 90 180 80 175 Z"/>
+    <!-- Tail -->
+    <path d="M160 170 Q190 170 195 190" stroke="#FFB347" stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Leopard spots (darker accent) -->
+  <circle cx="95" cy="145" r="2" fill="#1A1D24"/>
+  <circle cx="110" cy="160" r="3" fill="#1A1D24"/>
+  <circle cx="130" cy="165" r="2" fill="#1A1D24"/>
+  
+  <!-- Focus/Targeting indicator (subtle, non-geometric) -->
+  <path d="M180 130 L200 130 M190 120 L190 140" stroke="#FFB347" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Grass blades in front of leopard -->
+  <path d="M120 240 Q140 160 160 240" fill="#3D4548"/>
+  <path d="M140 240 Q160 180 180 240" fill="#2D3436"/>
+</svg>

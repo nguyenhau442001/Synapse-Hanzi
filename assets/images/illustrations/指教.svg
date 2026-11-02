@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Visual Metaphor: Progression/Escalation of Knowledge (The "Staircase of Insight") -->
+  <!-- Base level: A small, simple block representing the initial state -->
+  <rect x="40" y="180" width="30" height="20" fill="#3B4252" rx="2"/>
+  
+  <!-- Middle level: A slightly higher, more detailed block -->
+  <rect x="85" y="150" width="30" height="50" fill="#4C566A" rx="2"/>
+  
+  <!-- Final level: The peak of the progression, highlighted with a golden accent to represent "Guidance/Advice" -->
+  <rect x="130" y="110" width="30" height="90" fill="#EBCB8B" rx="2"/>
+  
+  <!-- The "Guidance" element: A magnifying glass focusing on the peak, symbolizing the act of refining/improving through advice -->
+  <circle cx="175" cy="90" r="20" stroke="#88C0D0" stroke-width="4" fill="none"/>
+  <line x1="190" y1="105" x2="210" y2="125" stroke="#88C0D0" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Connecting lines showing the upward trajectory of improvement -->
+  <path d="M 55 180 L 100 150 L 145 110" stroke="#D8DEE9" stroke-width="3" fill="none" stroke-dasharray="4 4"/>
+  
+  <!-- Subtle human element: A hand gesture indicating a polite, open invitation for input -->
+  <path d="M 170 180 C 170 160 180 160 180 180 L 180 200 L 160 200 Z" fill="#D8DEE9"/>
+  <path d="M 180 180 L 195 170 L 205 185 L 185 200" fill="#D8DEE9"/>
+</svg>

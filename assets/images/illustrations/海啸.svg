@@ -1,0 +1,102 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Definitions for Clipping and Gradients -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#141821"/>
+      <stop offset="100%" stop-color="#1A1D24"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="50%" stop-color="#0083B0"/>
+      <stop offset="100%" stop-color="#003459"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF512F"/>
+      <stop offset="100%" stop-color="#F09819"/>
+    </linearGradient>
+    <clipPath id="canvasClip">
+      <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#canvasClip)">
+    <!-- Background glow for focal point -->
+    <circle cx="120" cy="140" r="90" fill="#005B96" opacity="0.15" filter="blur(20px)"/>
+
+    <!-- Seismic activity / Underwater tectonic lines -->
+    <g opacity="0.6">
+      <!-- Ocean Floor -->
+      <path d="M0 190 L60 185 L100 195 L150 183 L200 190 L240 185 L240 240 L0 240 Z" fill="#101318"/>
+      <!-- Fault lines (orange/gold accent) -->
+      <path d="M70 190 L90 210 L110 205 L135 230" fill="none" stroke="url(#accentGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M150 185 L165 200 L185 195" fill="none" stroke="url(#accentGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- Epicenter burst ripples -->
+      <circle cx="90" cy="210" r="12" fill="none" stroke="#FF512F" stroke-width="1.5" opacity="0.8"/>
+      <circle cx="90" cy="210" r="24" fill="none" stroke="#FF512F" stroke-width="1" opacity="0.4"/>
+      <circle cx="90" cy="210" r="36" fill="none" stroke="#FF512F" stroke-width="0.75" opacity="0.2"/>
+    </g>
+
+    <!-- Normal Sea Level & Background Waves -->
+    <path d="M0 110 Q60 105 120 110 T240 110 L240 190 L0 190 Z" fill="#0A192F" opacity="0.5"/>
+
+    <!-- THE TSUNAMI (Giant Wave) -->
+    <!-- Massive towering wave cresting over -->
+    <path d="M 0 160 
+             Q 30 150, 60 130 
+             Q 90 100, 110 70 
+             Q 125 45, 140 40 
+             Q 155 35, 165 55 
+             Q 175 80, 155 110 
+             Q 135 140, 110 160
+             Q 60 180, 0 190 Z" 
+          fill="url(#waveGrad)"/>
+
+    <!-- Wave Crest Foam / Highlights -->
+    <path d="M 130 43 
+             Q 140 37, 152 42 
+             Q 162 48, 167 56 
+             Q 158 52, 148 48 
+             Q 138 45, 130 43 Z" 
+          fill="#FFFFFF" opacity="0.9"/>
+          
+    <path d="M 105 65 
+             Q 115 50, 132 44
+             Q 120 48, 110 60 Z" 
+          fill="#80DEEA" opacity="0.6"/>
+
+    <!-- Crashing ripple texture on the wave face -->
+    <path d="M 60 115 Q 90 95, 115 75" fill="none" stroke="#80DEEA" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+    <path d="M 45 135 Q 75 115, 100 95" fill="none" stroke="#80DEEA" stroke-width="2.5" stroke-linecap="round" opacity="0.3"/>
+
+    <!-- Destructive force indicator (Silhouetted structure/lighthouse being overwhelmed) -->
+    <g transform="translate(190, 140)">
+      <!-- Tiny lighthouse base on coast -->
+      <path d="M 5 50 L 15 20 L 25 20 L 35 50 Z" fill="#2C3E50"/>
+      <rect x="17" y="10" width="6" height="10" fill="#E74C3C"/>
+      <path d="M 12 10 L 28 10 L 20 2 Z" fill="#E74C3C"/>
+      <!-- Warning beam -->
+      <polygon points="20,10 0,0 0,15" fill="#FFE600" opacity="0.3"/>
+    </g>
+
+    <!-- Spray and Splash Particles -->
+    <g fill="#FFFFFF" opacity="0.8">
+      <circle cx="160" cy="45" r="2.5"/>
+      <circle cx="170" cy="40" r="1.5"/>
+      <circle cx="150" cy="32" r="2"/>
+      <circle cx="175" cy="50" r="1"/>
+      <circle cx="140" cy="28" r="1.5"/>
+      <circle cx="130" cy="35" r="2"/>
+    </g>
+
+    <!-- Foreground Water Surge -->
+    <path d="M 0 170 Q 70 155, 130 170 T 240 165 L 240 195 L 0 195 Z" fill="#005B96" opacity="0.7"/>
+    <path d="M 0 180 Q 90 170, 180 185 T 240 180 L 240 200 L 0 200 Z" fill="#003459"/>
+
+    <!-- Sleek Framing Border -->
+    <rect x="1" y="1" width="238" height="238" rx="23" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="2"/>
+  </g>
+</svg>

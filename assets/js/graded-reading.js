@@ -1,6 +1,6 @@
 /**
  * assets/js/graded-reading.js
- * Synapse Graded Reading (HSK Reading Stories) Core Engine
+ * 汉字思维 (Hanzi Mind) Graded Reading (HSK Reading Stories) Core Engine
  * Closed-Loop Learning: Reading -> Click-to-Inspect -> SRS Integration -> Review
  */
 
@@ -455,7 +455,7 @@ const GradedReading = (function() {
         <!-- Hero Header -->
         <header class="graded-hub-hero">
           <div class="graded-hub-badge">📚 Graded Reading</div>
-          <h1 class="graded-hub-title">Synapse Graded Reading</h1>
+          <h1 class="graded-hub-title">汉字思维 · Graded Reading</h1>
           <p class="graded-hub-subtitle">
             Luyện đọc hiểu phân cấp theo ngữ cảnh thực tế · Vòng lặp học từ khép kín · Nhận diện vốn từ SRS cá nhân
           </p>

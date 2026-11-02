@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Farmer character -->
+  <g transform="translate(120, 140)">
+    <circle cx="0" cy="-60" r="15" fill="#FFC107"/>
+    <path d="M-25 -45 L25 -45 L20 -20 L-20 -20 Z" fill="#4CAF50"/>
+    <path d="M-20 -20 L-20 20 L-10 20 L-10 -20 M10 -20 L10 20 L20 20 L20 -20" fill="#2196F3"/>
+  </g>
+
+  <!-- Hands holding coins -->
+  <g transform="translate(120, 160)">
+    <path d="M-40 0 C-40 -20 -20 -20 0 -20 C20 -20 40 -20 40 0" fill="none" stroke="#FFC107" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="-20" cy="-10" r="8" fill="#FFC107"/>
+    <circle cx="0" cy="-15" r="10" fill="#FFC107"/>
+    <circle cx="20" cy="-10" r="8" fill="#FFC107"/>
+  </g>
+
+  <!-- Basket of produce -->
+  <path d="M60 180 L180 180 L170 210 L70 210 Z" fill="#795548"/>
+  <circle cx="85" cy="195" r="6" fill="#F44336"/>
+  <circle cx="105" cy="195" r="6" fill="#F44336"/>
+  <circle cx="125" cy="195" r="6" fill="#F44336"/>
+  <circle cx="145" cy="195" r="6" fill="#F44336"/>
+  <circle cx="165" cy="195" r="6" fill="#F44336"/>
+</svg>

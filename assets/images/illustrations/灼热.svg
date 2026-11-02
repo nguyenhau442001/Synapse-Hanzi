@@ -1,0 +1,35 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Heat distortion / atmosphere waves -->
+  <path d="M 60 180 Q 90 170, 120 180 T 180 180" fill="none" stroke="#FF5722" stroke-width="2" stroke-opacity="0.3" stroke-linecap="round"/>
+  <path d="M 50 195 Q 85 185, 120 195 T 190 195" fill="none" stroke="#FF5722" stroke-width="1.5" stroke-opacity="0.2" stroke-linecap="round"/>
+
+  <!-- Cracked parched ground (Physical object representing the intense heat/scorched earth) -->
+  <path d="M 30 205 L 210 205 L 195 218 L 45 218 Z" fill="#2C2121"/>
+  <path d="M 45 205 L 60 218 M 85 205 L 75 218 M 120 205 L 125 218 M 155 205 L 165 218 M 190 205 L 180 218" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 55 205 L 70 212 L 65 218" fill="none" stroke="#E64A19" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M 130 205 L 140 215" fill="none" stroke="#E64A19" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 175 205 L 165 214" fill="none" stroke="#E64A19" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Scorched / Glowing Sun (Physical object center) -->
+  <circle cx="120" cy="115" r="42" fill="#FFC107"/>
+  <circle cx="120" cy="115" r="35" fill="#FF5722"/>
+
+  <!-- Sun Rays / Scorching Heat spikes -->
+  <g stroke="#FFC107" stroke-width="4" stroke-linecap="round">
+    <line x1="120" y1="53" x2="120" y2="35"/>
+    <line x1="120" y1="177" x2="120" y2="195"/>
+    <line x1="58" y1="115" x2="40" y2="115"/>
+    <line x1="182" y1="115" x2="200" y2="115"/>
+    <line x1="76" y1="71" x2="63" y2="58"/>
+    <line x1="164" y1="71" x2="177" y2="58"/>
+    <line x1="76" y1="159" x2="63" y2="172"/>
+    <line x1="164" y1="159" x2="177" y2="172"/>
+  </g>
+
+  <!-- Intense thermal flare effect inside the sun -->
+  <circle cx="120" cy="115" r="22" fill="#FFEB3B"/>
+  <path d="M 120 100 Q 125 110, 120 120 Q 115 110, 120 100 Z" fill="#FF5722"/>
+  <path d="M 110 115 Q 120 120, 130 115 Q 120 110, 110 115 Z" fill="#FF5722"/>
+</svg>

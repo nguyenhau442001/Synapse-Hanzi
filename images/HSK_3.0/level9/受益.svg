@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Water Pipe System -->
+  <path d="M60 180 L60 120 C60 100 80 100 80 100 L180 100" fill="none" stroke="#4A5568" stroke-width="12" stroke-linecap="round"/>
+  <path d="M180 100 L180 160" fill="none" stroke="#F6AD55" stroke-width="12" stroke-linecap="round"/>
+  
+  <!-- Water Flow -->
+  <path d="M180 160 L180 190" fill="none" stroke="#63B3ED" stroke-width="8" stroke-linecap="round" stroke-dasharray="4 8"/>
+  
+  <!-- Person receiving water -->
+  <g transform="translate(140, 160)">
+    <circle cx="20" cy="20" r="15" fill="#E2E8F0"/>
+    <path d="M5 40 C5 60, 35 60, 35 40 L35 80" fill="none" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+    <path d="M20 55 L5 80 M20 55 L35 80" fill="none" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Basin/Container -->
+  <path d="M160 190 L200 190 L195 210 L165 210 Z" fill="#F6AD55"/>
+  
+  <!-- Thriving Plant representing benefit -->
+  <path d="M80 180 L80 140 M80 150 L70 140 M80 150 L90 140" fill="none" stroke="#68D391" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="70" cy="140" rx="4" ry="6" fill="#68D391" transform="rotate(-30 70 140)"/>
+  <ellipse cx="90" cy="140" rx="4" ry="6" fill="#68D391" transform="rotate(30 90 140)"/>
+</svg>

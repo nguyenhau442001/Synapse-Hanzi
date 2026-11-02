@@ -1,0 +1,88 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements: Gentle breeze lines -->
+  <g opacity="0.25">
+    <path d="M30 75C45 70 60 80 75 75C90 70 105 60 120 65" stroke="#798696" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M15 100C30 95 45 105 60 100C75 95 90 85 105 90" stroke="#798696" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M140 50C155 45 170 55 185 50C200 45 215 35 230 40" stroke="#798696" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Foliage / Tree canopy overhead (shade) -->
+  <path d="M-20 30C10 0 70 -10 120 15C170 -10 230 0 260 30C280 60 250 90 220 95C190 100 160 80 120 85C80 80 50 100 20 95C-10 90 -40 60 -20 30Z" fill="#263836" opacity="0.9"/>
+  <path d="M20 50C40 25 90 20 130 35C170 20 210 30 225 50C235 70 210 90 180 90C150 90 130 75 100 80C70 85 40 90 25 75C15 60 10 55 20 50Z" fill="#2E4F49"/>
+  <path d="M80 20C110 15 150 25 170 45C185 60 160 80 130 75C100 70 85 50 80 20Z" fill="#3A6B61"/>
+
+  <!-- Hanging leaves / details -->
+  <path d="M60 75L65 95L70 80" stroke="#3A6B61" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M160 70L168 92L173 78" stroke="#3A6B61" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Character sitting relaxed in an armchair -->
+  <!-- Armchair -->
+  <rect x="75" y="115" width="90" height="75" rx="16" fill="#332B28"/>
+  <path d="M75 130C75 120 85 110 95 110H145C155 110 165 120 165 130V180H75V130Z" fill="#423733"/>
+  <!-- Cushion -->
+  <rect x="85" y="130" width="70" height="55" rx="10" fill="#52443F"/>
+  <!-- Armrests -->
+  <rect x="68" y="125" width="18" height="50" rx="9" fill="#5E4E48"/>
+  <rect x="154" y="125" width="18" height="50" rx="9" fill="#5E4E48"/>
+  <!-- Chair legs -->
+  <rect x="85" y="190" width="8" height="15" rx="4" fill="#221C1A"/>
+  <rect x="147" y="190" width="8" height="15" rx="4" fill="#221C1A"/>
+
+  <!-- Person -->
+  <!-- Legs / Slacks -->
+  <path d="M100 155L115 185H135L120 155Z" fill="#3D5A80"/>
+  <!-- Shoes / Slippers -->
+  <ellipse cx="112" cy="188" rx="10" ry="5" fill="#E0FBFC"/>
+  <ellipse cx="127" cy="188" rx="10" ry="5" fill="#E0FBFC"/>
+
+  <!-- Torso & Sweater (Warm, cozy color) -->
+  <path d="M90 115C90 100 105 95 120 95C135 95 150 100 150 115V155H90V115Z" fill="#E07A5F"/>
+  
+  <!-- Head & Face (Relaxed eyes closed expression) -->
+  <circle cx="120" cy="78" rx="16" fill="#F4D06F"/>
+  <!-- Closed happy eyes (arcs) -->
+  <path d="M113 77C115 79 117 79 119 77" stroke="#2D3748" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M121 77C123 79 125 79 127 77" stroke="#2D3748" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- Content smile -->
+  <path d="M117 83C118 85 122 85 123 83" stroke="#2D3748" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- Hair -->
+  <path d="M104 78C104 65 112 60 120 60C128 60 136 65 136 78H104Z" fill="#2B2D42"/>
+
+  <!-- Arms & Book/Teacup placement -->
+  <!-- Left arm holding book -->
+  <path d="M95 110C95 110 85 125 95 135L110 130" fill="#E07A5F"/>
+  
+  <!-- Right arm holding teacup -->
+  <path d="M145 110C145 110 155 125 145 135L130 130" fill="#E07A5F"/>
+
+  <!-- Open Book on lap -->
+  <path d="M105 138L120 133L135 138V152L120 157L105 152Z" fill="#F8F9FA"/>
+  <path d="M120 133V157" stroke="#CED4DA" stroke-width="1.5"/>
+  <path d="M109 140L117 138" stroke="#ADB5BD" stroke-width="1" stroke-linecap="round"/>
+  <path d="M109 144L117 142" stroke="#ADB5BD" stroke-width="1" stroke-linecap="round"/>
+  <path d="M123 138L131 140" stroke="#ADB5BD" stroke-width="1" stroke-linecap="round"/>
+  <path d="M123 142L131 144" stroke="#ADB5BD" stroke-width="1" stroke-linecap="round"/>
+
+  <!-- Warm Tea Cup (Small side table or floating nicely near hand) -->
+  <g transform="translate(155, 120)">
+    <!-- Side table -->
+    <ellipse cx="0" cy="28" rx="20" ry="8" fill="#423733"/>
+    <rect x="-16" y="28" width="32" height="25" rx="4" fill="#332B28"/>
+    <!-- Teacup -->
+    <rect x="-6" y="10" width="12" height="12" rx="3" fill="#F4F1DE"/>
+    <path d="M6 13C8 13 9 14 9 16C9 18 8 19 6 19" stroke="#F4F1DE" stroke-width="2" fill="none"/>
+    <!-- Steam / Aroma (signifying comfort/peace) -->
+    <path d="M-1 4C-2 2 0 1 -1 -1" stroke="#F4F1DE" stroke-width="1.5" stroke-linecap="round" opacity="0.6" fill="none"/>
+    <path d="M3 3C2 1 4 0 3 -2" stroke="#F4F1DE" stroke-width="1.5" stroke-linecap="round" opacity="0.6" fill="none"/>
+  </g>
+
+  <!-- Peaceful floating ambient particles (Golden/Warm light specks) -->
+  <circle cx="50" cy="130" r="2" fill="#F4D06F" opacity="0.6"/>
+  <circle cx="65" cy="160" r="1.5" fill="#F4D06F" opacity="0.4"/>
+  <circle cx="190" cy="100" r="2.5" fill="#F4D06F" opacity="0.5"/>
+  <circle cx="175" cy="155" r="1.5" fill="#F4D06F" opacity="0.7"/>
+  <circle cx="105" cy="65" r="2" fill="#F4D06F" opacity="0.8"/>
+</svg>

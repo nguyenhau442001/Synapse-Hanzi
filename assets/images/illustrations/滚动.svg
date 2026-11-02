@@ -1,0 +1,36 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Background slope/cliff representation (steep mountain slope) -->
+    <path d="M 210,40 L 230,210 L 20,210 Z" fill="#252A34" opacity="0.6"/>
+    <path d="M 180,30 L 230,190 L 90,210 Z" fill="#2D323E" opacity="0.7"/>
+
+    <!-- Motion trails / Direction indicators -->
+    <path d="M 150,70 Q 120,110 80,150" stroke="#E67E22" stroke-width="2" stroke-dasharray="4,4" fill="none" opacity="0.5"/>
+    <path d="M 170,90 Q 140,130 100,170" stroke="#E67E22" stroke-width="2" stroke-dasharray="4,4" fill="none" opacity="0.4"/>
+
+    <!-- Giant Rock tumbling / rolling (The central physical object representing the Noun) -->
+    <g transform="translate(110, 110) rotate(25)">
+      <!-- Main Boulder Body -->
+      <path d="M -35,-25 L -10,-42 L 25,-30 L 42,-5 L 30,35 L -5,45 L -40,20 Z" fill="#7F8C8D"/>
+      <!-- Rock Facets / Textures for 3D/Flat-Modern contrast -->
+      <path d="M -35,-25 L -10,-42 L 5,-15 L -20,5 Z" fill="#95A5A6"/>
+      <path d="M 25,-30 L 42,-5 L 15,15 L 5,-15 Z" fill="#BDC3C7"/>
+      <path d="M 42,-5 L 30,35 L -5,25 L 15,15 Z" fill="#5D6D7E"/>
+      <path d="M 30,35 L -5,45 L -40,20 L -5,25 Z" fill="#4A5568"/>
+    </g>
+
+    <!-- Impact dust and debris particles -->
+    <circle cx="75" cy="175" r="5" fill="#95A5A6" opacity="0.8"/>
+    <circle cx="60" cy="185" r="3" fill="#7F8C8D" opacity="0.8"/>
+    <circle cx="130" cy="155" r="4" fill="#95A5A6" opacity="0.6"/>
+    <circle cx="150" cy="140" r="2.5" fill="#BDC3C7" opacity="0.7"/>
+
+    <!-- Dynamic Motion Lines representing tumbling energy -->
+    <path d="M 85,120 L 70,110" stroke="#F39C12" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 135,90 L 120,80" stroke="#F39C12" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 100,160 L 85,150" stroke="#F39C12" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,67 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Isometric-flat style School Building & Fire Drill Simulation Scene -->
+  <!-- Ground Plane -->
+  <path d="M40 180 L120 140 L200 180 L120 220 Z" fill="#222733" stroke="#2F3646" stroke-width="2"/>
+  
+  <!-- School Building Facade (Background) -->
+  <path d="M70 70 L170 70 L170 150 L70 150 Z" fill="#2A3140" rx="4"/>
+  <path d="M170 70 L200 90 L200 170 L170 150 Z" fill="#202530"/>
+  
+  <!-- Building Windows (Lit & Unlit showing organization) -->
+  <rect x="85" y="85" width="20" height="25" rx="2" fill="#3A445A"/>
+  <rect x="115" y="85" width="20" height="25" rx="2" fill="#3A445A"/>
+  <rect x="145" y="85" width="20" height="25" rx="2" fill="#3A445A"/>
+  
+  <rect x="85" y="120" width="20" height="25" rx="2" fill="#3A445A"/>
+  <rect x="115" y="120" width="20" height="25" rx="2" fill="#F6AD55" opacity="0.8"/> <!-- Exit indicator light -->
+  <rect x="145" y="120" width="20" height="25" rx="2" fill="#3A445A"/>
+
+  <!-- Evacuation Pathway / Safety Zone Indicator -->
+  <path d="M120 160 L120 195" stroke="#F6AD55" stroke-width="4" stroke-dasharray="6,4" stroke-linecap="round"/>
+  <polygon points="120,202 114,192 126,192" fill="#F6AD55"/>
+
+  <!-- Emergency / Safety Personnel (Firefighter Guide) -->
+  <g transform="translate(75, 150)">
+    <!-- Body / Uniform -->
+    <path d="M12 25 L24 20 L36 25 L32 48 L16 48 Z" fill="#E53E3E"/>
+    <!-- Reflective Stripes -->
+    <path d="M15 32 L33 32" stroke="#EDF2F7" stroke-width="3"/>
+    <path d="M14 40 L34 40" stroke="#EDF2F7" stroke-width="2"/>
+    <!-- Head & Helmet -->
+    <circle cx="24" cy="12" r="7" fill="#F6AD55"/>
+    <path d="M16 9 C16 5 32 5 32 9 L34 11 L14 11 Z" fill="#DD6B20"/>
+    <!-- Directing Gesture Arm -->
+    <path d="M32 25 L44 18" stroke="#E53E3E" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Students evacuating in an orderly line -->
+  <!-- Student 1 -->
+  <g transform="translate(135, 160)">
+    <circle cx="12" cy="8" r="6" fill="#F6AD55"/>
+    <path d="M6 16 L18 16 L16 35 L8 35 Z" fill="#3182CE"/>
+    <!-- Protective hand gesture over head -->
+    <path d="M16 12 L20 8" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Student 2 -->
+  <g transform="translate(160, 172)">
+    <circle cx="12" cy="8" r="6" fill="#F6AD55"/>
+    <path d="M6 16 L18 16 L16 35 L8 35 Z" fill="#48BB78"/>
+  </g>
+
+  <!-- Focus / Drill Indicator (Subtle tactical crosshair / target framing corners in orange accent) -->
+  <path d="M36 50 L36 36 L50 36" fill="none" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M204 50 L204 36 L190 36" fill="none" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M36 190 L36 204 L50 204" fill="none" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M204 190 L204 204 L190 204" fill="none" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Safety Cone (Drill Marker) -->
+  <g transform="translate(50, 165)">
+    <polygon points="10,0 16,18 4,18" fill="#DD6B20"/>
+    <rect x="7" y="6" width="6" height="3" fill="#EDF2F7"/>
+    <rect x="5" y="12" width="10" height="2" fill="#EDF2F7"/>
+    <ellipse cx="10" cy="18" rx="8" ry="2" fill="#718096"/>
+  </g>
+</svg>

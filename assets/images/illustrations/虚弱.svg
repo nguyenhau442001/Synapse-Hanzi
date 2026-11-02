@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Bed frame -->
+  <path d="M60 180h120v10H60z" fill="#4A5568"/>
+  <path d="M60 150h10v30H60zM170 150h10v30h-10z" fill="#718096"/>
+  
+  <!-- Patient figure (slumped, weak posture) -->
+  <g fill="#A0AEC0">
+    <!-- Head -->
+    <circle cx="120" cy="110" r="15"/>
+    <!-- Body (curved/slumped) -->
+    <path d="M110 125c0 0 5 10 20 10s20-10 20-10l-5 25h-30z"/>
+    <!-- Arm (hanging off bed) -->
+    <path d="M110 130l-15 25" stroke="#A0AEC0" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Blanket/Covering -->
+  <path d="M70 140h100v15c0 10-10 15-20 15H90c-10 0-20-5-20-15z" fill="#2D3748"/>
+  
+  <!-- Accent: Pale/Drained skin tone indicator -->
+  <circle cx="120" cy="110" r="13" fill="#CBD5E0"/>
+  
+  <!-- Subtle visual cue of exhaustion: drooping posture -->
+  <path d="M125 105l5-5" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+  <path d="M110 105l5-5" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+</svg>

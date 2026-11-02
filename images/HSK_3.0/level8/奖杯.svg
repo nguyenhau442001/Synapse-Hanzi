@@ -1,0 +1,22 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 120)">
+    <!-- Trophy Base -->
+    <path d="M-40 80 L40 80 L30 95 L-30 95 Z" fill="#FFD700" opacity="0.8"/>
+    <path d="M-20 95 L20 95 L15 105 L-15 105 Z" fill="#B8860B"/>
+    
+    <!-- Trophy Stem -->
+    <rect x="-10" y="40" width="20" height="40" fill="#FFD700"/>
+    
+    <!-- Trophy Bowl -->
+    <path d="M-50 40 C-50 10, -30 -10, 0 -10 C30 -10, 50 10, 50 40 Z" fill="#FFD700"/>
+    <path d="M-50 40 C-50 10, -30 -10, 0 -10 C30 -10, 50 10, 50 40 L-50 40" fill="#FFC107"/>
+    
+    <!-- Handles -->
+    <path d="M-50 20 C-70 20, -70 0, -50 0" stroke="#FFD700" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M50 20 C70 20, 70 0, 50 0" stroke="#FFD700" stroke-width="8" fill="none" stroke-linecap="round"/>
+    
+    <!-- Shine/Highlight -->
+    <path d="M-30 5 C-20 5, -10 15, -10 25" stroke="#FFFFFF" stroke-width="3" opacity="0.3" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Arm 1 (Giver) -->
+  <path d="M40 160 C 60 140, 80 140, 100 150 L 110 140" stroke="#FFB84D" stroke-width="12" stroke-linecap="round" fill="none"/>
+  
+  <!-- Arm 2 (Receiver) -->
+  <path d="M200 160 C 180 140, 160 140, 140 150 L 130 140" stroke="#4DA6FF" stroke-width="12" stroke-linecap="round" fill="none"/>
+  
+  <!-- Hand 1 (Giver) -->
+  <path d="M100 150 L 115 165 L 105 175 L 90 160 Z" fill="#FFB84D"/>
+  
+  <!-- Hand 2 (Receiver) -->
+  <path d="M140 150 L 125 165 L 135 175 L 150 160 Z" fill="#4DA6FF"/>
+  
+  <!-- Key (The Object being handed over) -->
+  <g transform="translate(120, 120) rotate(45)">
+    <circle cx="0" cy="0" r="8" fill="#FFFFFF"/>
+    <rect x="-3" y="-2" width="30" height="4" rx="2" fill="#FFFFFF"/>
+    <rect x="15" y="-2" width="6" height="12" rx="1" fill="#FFFFFF"/>
+    <rect x="25" y="-2" width="6" height="12" rx="1" fill="#FFFFFF"/>
+  </g>
+</svg>

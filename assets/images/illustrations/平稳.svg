@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle floor shadow / reflection line -->
+  <line x1="40" y1="180" x2="200" y2="180" stroke="#2A2F3A" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Table Surface representing the High-Speed Train Table -->
+  <rect x="50" y="145" width="140" height="8" rx="4" fill="#3A4252"/>
+  <!-- Table Legs -->
+  <path d="M75 153 L70 178" stroke="#2E3542" stroke-width="6" stroke-linecap="round"/>
+  <path d="M165 153 L170 178" stroke="#2E3542" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Water Glass representing "píngwěn" (smooth, stable, unwavering) -->
+  <!-- Glass Body (Semi-transparent vector construction) -->
+  <path d="M95 85 L102 143 C102 145 103 146 105 146 L135 146 C137 146 138 145 138 143 L145 85 Z" fill="#2E384D" opacity="0.6"/>
+  <!-- Glass Side Highlights -->
+  <path d="M98 90 L103 140" stroke="#617596" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+  
+  <!-- Water Level inside the glass (Flat, perfectly horizontal surface showing absolute stability) -->
+  <path d="M100 105 L140 105 L138 143 C138 145 137 146 135 146 L105 146 C103 146 102 145 102 143 Z" fill="#3B82F6" opacity="0.75"/>
+
+  <!-- Water Surface Line (Crisp, perfectly level) -->
+  <line x1="100" y1="105" x2="140" y2="105" stroke="#93C5FD" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Glass Rim (Ellipse top) -->
+  <ellipse cx="120" cy="85" rx="25" ry="5" fill="#3A465B" stroke="#617596" stroke-width="1.5"/>
+  <ellipse cx="120" cy="85" rx="22" ry="3.5" fill="#2E384D"/>
+
+  <!-- Focus / Stability Indicator Accent (Warm Gold / Amber matching prompt rules) -->
+  <!-- Sleek motion/stability indicator lines floating steadily beside the glass -->
+  <g stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" opacity="0.9">
+    <line x1="68" y1="105" x2="82" y2="105"/>
+    <line x1="68" y1="125" x2="82" y2="125"/>
+    <line x1="158" y1="105" x2="172" y2="105"/>
+    <line x1="158" y1="125" x2="172" y2="125"/>
+  </g>
+
+  <!-- Small ambient light details -->
+  <circle cx="120" cy="45" r="1.5" fill="#617596" opacity="0.3"/>
+  <circle cx="185" cy="70" r="1" fill="#617596" opacity="0.2"/>
+  <circle cx="55" cy="80" r="1" fill="#617596" opacity="0.2"/>
+</svg>

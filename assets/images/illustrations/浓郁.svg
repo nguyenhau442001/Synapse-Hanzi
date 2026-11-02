@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Coffee Cup Base -->
+  <path d="M80 140h80l-10 60H90l-10-60z" fill="#3D2B1F"/>
+  <path d="M75 130h90v15H75z" fill="#5D4037"/>
+  
+  <!-- Coffee Liquid -->
+  <ellipse cx="120" cy="130" rx="45" ry="12" fill="#4E342E"/>
+  
+  <!-- Handle -->
+  <path d="M165 145c15 0 20 15 0 20" stroke="#5D4037" stroke-width="8" fill="none" stroke-linecap="round"/>
+  
+  <!-- Aroma Swirls (Visualizing "浓郁" - dense, rich fragrance) -->
+  <path d="M120 115c-10-20 0-40 20-50" stroke="#FFB74D" stroke-width="4" fill="none" stroke-linecap="round" stroke-dasharray="6 6"/>
+  <path d="M100 110c-15-25 5-50 30-55" stroke="#FFB74D" stroke-width="4" fill="none" stroke-linecap="round" stroke-dasharray="6 6"/>
+  <path d="M140 110c15-25-5-50-30-55" stroke="#FFB74D" stroke-width="4" fill="none" stroke-linecap="round" stroke-dasharray="6 6"/>
+  
+  <!-- Steam/Richness Clouds -->
+  <circle cx="120" cy="80" r="8" fill="#FFB74D" opacity="0.6"/>
+  <circle cx="100" cy="70" r="6" fill="#FFB74D" opacity="0.4"/>
+  <circle cx="140" cy="70" r="6" fill="#FFB74D" opacity="0.4"/>
+</svg>

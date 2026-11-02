@@ -1,0 +1,63 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background subtle atmosphere -->
+  <circle cx="120" cy="120" r="80" fill="#222630" opacity="0.5"/>
+
+  <!-- Character representing "失态" (loss of composure / losing decorum) -->
+  <g transform="translate(0, 5)">
+    <!-- Formal suit / posture base -->
+    <path d="M95 190 L95 145 L75 130 L90 100 L120 120 L150 100 L165 130 L145 145 L145 190 Z" fill="#2C3440"/>
+    <!-- Suit lapels -->
+    <path d="M105 125 L120 150 L135 125 L120 110 Z" fill="#3B4656"/>
+    <!-- Tie / Bow tie (slightly askew to show loss of decorum) -->
+    <polygon points="120,118 126,128 120,138 114,128" fill="#FF8C42" transform="rotate(18, 120, 128)"/>
+
+    <!-- Neck -->
+    <rect x="111" y="90" width="18" height="25" fill="#E5C5B1"/>
+
+    <!-- Head (tilting backwards clumsily / lost composure) -->
+    <g transform="translate(120, 75) rotate(-18) translate(-120, -75)">
+      <!-- Head shape -->
+      <circle cx="120" cy="75" r="28" fill="#E5C5B1"/>
+      
+      <!-- Messy/disheveled hair (flying upward/sideways due to loss of control) -->
+      <path d="M93 75 Q92 50 115 48 Q130 46 142 55 Q150 65 148 78 Q135 60 115 58 Q98 60 93 75 Z" fill="#4A3B32"/>
+      <path d="M135 50 Q148 40 155 52 Q148 58 135 50 Z" fill="#4A3B32"/>
+
+      <!-- Facial expression of panic / loss of composure -->
+      <!-- Eyebrows raised high -->
+      <path d="M104 64 Q110 60 116 64" stroke="#4A3B32" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <path d="M124 64 Q130 60 136 64" stroke="#4A3B32" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+      <!-- Wide open eyes in shock/panic -->
+      <circle cx="110" cy="71" r="4.5" fill="#FFFFFF"/>
+      <circle cx="111" cy="71" r="2" fill="#1A1D24"/>
+      <circle cx="130" cy="71" r="4.5" fill="#FFFFFF"/>
+      <circle cx="131" cy="71" r="2" fill="#1A1D24"/>
+
+      <!-- Open mouth (gasping/losing words) -->
+      <ellipse cx="120" cy="88" rx="6" ry="8" fill="#8C2D19"/>
+    </g>
+
+    <!-- Arms flailing / hands out of control (violating formal posture) -->
+    <!-- Left arm flailing up -->
+    <path d="M90 120 Q65 100 55 85" stroke="#2C3440" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <circle cx="52" cy="81" r="7" fill="#E5C5B1"/>
+
+    <!-- Right arm flailing out -->
+    <path d="M150 120 Q175 110 185 95" stroke="#2C3440" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <circle cx="188" cy="91" r="7" fill="#E5C5B1"/>
+  </g>
+
+  <!-- Accent visual indicators for social blunder / awkwardness (Sweat drops flying off) -->
+  <g fill="#4DA8DA">
+    <path d="M82 62 Q78 68 82 72 Q86 68 82 62 Z" transform="rotate(-30 82 67)"/>
+    <path d="M162 55 Q158 61 162 65 Q166 61 162 55 Z" transform="rotate(30 162 60)"/>
+  </g>
+
+  <!-- Focus/Alert marker (Orange warning dot above indicating inappropriate behavior in formal context) -->
+  <circle cx="120" cy="28" r="4" fill="#FF8C42"/>
+  <circle cx="120" cy="28" r="9" stroke="#FF8C42" stroke-width="2" fill="none" opacity="0.6"/>
+</svg>

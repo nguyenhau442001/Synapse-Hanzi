@@ -1,0 +1,22 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Clock Face Representation -->
+  <circle cx="120" cy="120" r="70" fill="none" stroke="#374151" stroke-width="8"/>
+  
+  <!-- Highlighted Time Segment (The "Shiduan" / Time Slot) -->
+  <path d="M120 120 L190 120 A70 70 0 0 0 143.5 56.5 Z" fill="#F59E0B"/>
+  
+  <!-- Clock Hands -->
+  <line x1="120" y1="120" x2="120" y2="70" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <line x1="120" y1="120" x2="160" y2="120" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Center Pin -->
+  <circle cx="120" cy="120" r="8" fill="#1A1D24" stroke="#F59E0B" stroke-width="3"/>
+  
+  <!-- Hour Markers -->
+  <rect x="118" y="55" width="4" height="12" fill="#4B5563"/>
+  <rect x="183" y="118" width="12" height="4" fill="#4B5563"/>
+  <rect x="118" y="173" width="4" height="12" fill="#4B5563"/>
+  <rect x="45" y="118" width="12" height="4" fill="#4B5563"/>
+</svg>

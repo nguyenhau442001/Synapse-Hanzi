@@ -1,0 +1,92 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Grid Detail for High-Tech Presentation Stage -->
+  <g opacity="0.15">
+    <line x1="30" y1="180" x2="210" y2="180" stroke="#60A5FA" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <line x1="60" y1="200" x2="180" y2="200" stroke="#60A5FA" stroke-width="1.5"/>
+    <polygon points="60,180 180,180 200,200 40,200" fill="#3B82F6"/>
+  </g>
+
+  <!-- Holographic Display Screen (Demonstration Projection) -->
+  <g>
+    <!-- Screen Frame -->
+    <rect x="75" y="45" width="90" height="65" rx="6" fill="#1E293B" stroke="#3B82F6" stroke-width="2"/>
+    <rect x="83" y="53" width="74" height="49" rx="3" fill="#0F172A"/>
+    
+    <!-- Holographic Data / Metrics Inside Screen -->
+    <polyline points="92,85 105,70 118,78 135,62 148,75" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="135" cy="62" r="3" fill="#F59E0B"/>
+    
+    <!-- Projection Cone (Light Beam) -->
+    <polygon points="90,110 150,110 180,165 60,165" fill="#3B82F6" opacity="0.12"/>
+    <line x1="90" y1="110" x2="60" y2="165" stroke="#3B82F6" stroke-width="1" opacity="0.3"/>
+    <line x1="150" y1="110" x2="180" y2="165" stroke="#3B82F6" stroke-width="1" opacity="0.3"/>
+  </g>
+
+  <!-- Presenter / Character (Human side, gesturing towards the demonstration) -->
+  <g transform="translate(15, 0)">
+    <!-- Body / Torso -->
+    <path d="M45,165 C45,145 55,140 70,140 C85,140 95,145 95,165 L95,195 L45,195 Z" fill="#2563EB"/>
+    
+    <!-- Head -->
+    <circle cx="70" cy="118" r="14" fill="#CBD5E1"/>
+    <!-- Hair -->
+    <path d="M57,116 C57,106 83,106 83,116 C83,120 70,110 70,110 C70,110 57,120 57,116 Z" fill="#1E293B"/>
+
+    <!-- Presenting Arm (Pointing/Demonstrating) -->
+    <path d="M85,150 L115,135" stroke="#CBD5E1" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="118" cy="133" r="3.5" fill="#F59E0B"/>
+    
+    <!-- Passive Arm -->
+    <path d="M55,150 L48,175" stroke="#CBD5E1" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Robotic Subject (The Bipedal Robot / Innovation Being Demonstrated) -->
+  <g transform="translate(100, 0)">
+    <!-- Robot Head -->
+    <rect x="42" y="108" width="16" height="12" rx="3" fill="#94A3B8"/>
+    <!-- Glowing Visor -->
+    <rect x="45" y="112" width="10" height="4" rx="1" fill="#F59E0B"/>
+
+    <!-- Robot Torso -->
+    <path d="M38,124 L62,124 L66,152 L34,152 Z" fill="#475569"/>
+    <!-- Core Reactor Light -->
+    <circle cx="50" cy="138" r="4" fill="#38BDF8"/>
+
+    <!-- Dynamic Bipedal Legs (Walking/Running Pose) -->
+    <!-- Back Leg -->
+    <path d="M40,152 L32,175 L22,185" fill="none" stroke="#64748B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Front Leg -->
+    <path d="M60,152 L68,175 L78,185" fill="none" stroke="#94A3B8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Robot Arms (Dynamic Balance Pose) -->
+    <path d="M36,130 L22,142" stroke="#64748B" stroke-width="4" stroke-linecap="round"/>
+    <path d="M64,130 L78,142" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Foreground Presentation Podium / Control Console -->
+  <g>
+    <!-- Base Platform -->
+    <path d="M30,195 L210,195 L195,210 L45,210 Z" fill="#334155"/>
+    <path d="M45,210 L195,210 L190,215 L50,215 Z" fill="#475569"/>
+    
+    <!-- Interactive Control Panel Surface -->
+    <path d="M75,195 L165,195 L160,202 L80,202 Z" fill="#1E293B"/>
+    <!-- Glowing Status Lights on Console -->
+    <circle cx="95" cy="198" r="2" fill="#22C55E"/>
+    <circle cx="103" cy="198" r="2" fill="#3B82F6"/>
+    <circle cx="111" cy="198" r="2" fill="#F59E0B"/>
+    
+    <!-- Accent Line (Modern Tech Vibe) -->
+    <line x1="30" y1="195" x2="210" y2="195" stroke="#F59E0B" stroke-width="2"/>
+  </g>
+
+  <!-- Focus Sparkles / Demonstration Energy Highlights -->
+  <g fill="#F59E0B">
+    <path d="M 45,70 Q 45,75 40,75 Q 45,75 45,80 Q 45,75 50,75 Q 45,75 45,70 Z"/>
+    <path d="M 195,85 Q 195,89 191,89 Q 195,89 195,93 Q 195,89 199,89 Q 195,89 195,85 Z"/>
+    <path d="M 175,50 Q 175,53 172,53 Q 175,53 175,56 Q 175,53 178,53 Q 175,53 175,50 Z"/>
+  </g>
+</svg>

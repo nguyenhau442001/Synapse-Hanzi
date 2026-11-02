@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 120)">
+    <!-- Stem and leaves -->
+    <path d="M-5,100 C-5,60 0,40 10,20 L15,20 C5,40 5,60 5,100 Z" fill="#2D5A27"/>
+    <path d="M10,60 C30,55 40,40 35,30 C25,30 15,40 10,60" fill="#3D7A35"/>
+    <path d="M-5,70 C-25,65 -35,50 -30,40 C-20,40 -10,50 -5,70" fill="#3D7A35"/>
+    
+    <!-- Peony Flower -->
+    <circle cx="0" cy="0" r="45" fill="#FFD700"/>
+    <path d="M0,-45 C25,-45 45,-25 45,0 C45,25 25,45 0,45 C-25,45 -45,25 -45,0 C-45,-25 -25,-45 0,-45" fill="#FF4500"/>
+    <path d="M0,-35 C20,-35 35,-20 35,0 C35,20 20,35 0,35 C-20,35 -35,20 -35,0 C-35,-20 -20,-35 0,-35" fill="#FF6347"/>
+    <path d="M0,-25 C15,-25 25,-15 25,0 C25,15 15,25 0,25 C-15,25 -25,15 -25,0 C-25,-15 -15,-25 0,-25" fill="#FF8C00"/>
+    
+    <!-- Petal details for "vivid/bright" effect -->
+    <path d="M0,-40 L5,-20 L-5,-20 Z" fill="#FFD700"/>
+    <path d="M35,0 L15,5 L15,-5 Z" fill="#FFD700"/>
+    <path d="M-35,0 L-15,5 L-15,-5 Z" fill="#FFD700"/>
+    <path d="M0,35 L5,15 L-5,15 Z" fill="#FFD700"/>
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 115)">
+    <!-- Base platform representing structural foundation -->
+    <ellipse cx="0" cy="50" rx="75" ry="25" fill="#2A313C"/>
+    <ellipse cx="0" cy="50" rx="60" ry="18" fill="#323B49"/>
+    
+    <!-- Central giant monolithic structure (representing "巨头" - giant/tycoon) -->
+    <path d="M-30,-20 L30,-20 L40,40 L-40,40 Z" fill="#252D37"/>
+    <path d="M-35,-60 L35,-60 L30,-20 L-30,-20 Z" fill="#303A48"/>
+    <path d="M-40,-75 L40,-75 L35,-60 L-35,-60 Z" fill="#FFB703"/>
+    
+    <!-- Modern tech-inspired geometric facets and server/cloud motif lines -->
+    <rect x="-18" y="-45" width="36" height="6" fill="#1A1D24" rx="2"/>
+    <rect x="-18" y="-33" width="36" height="6" fill="#1A1D24" rx="2"/>
+    
+    <rect x="-24" y="-10" width="48" height="8" fill="#FFB703" rx="2"/>
+    <rect x="-24" y="2" width="48" height="8" fill="#1A1D24" rx="2"/>
+    <rect x="-24" y="14" width="48" height="8" fill="#FFB703" rx="2"/>
+    
+    <!-- Floating dynamic architectural elements (industry leadership scale) -->
+    <circle cx="0" cy="-92" r="8" fill="#FFB703"/>
+    <line x1="0" y1="-75" x2="0" y2="-84" stroke="#FFB703" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Supporting pillars (scale/dominance) -->
+    <rect x="-65" y="-10" width="12" height="50" fill="#2A313C" rx="4"/>
+    <rect x="53" y="-10" width="12" height="50" fill="#2A313C" rx="4"/>
+    
+    <circle cx="-59" cy="-15" r="4" fill="#00D26A"/>
+    <circle cx="59" cy="-15" r="4" fill="#00D26A"/>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Street Intersection Ground -->
+  <path d="M0 140 L240 140 L240 160 L0 160 Z" fill="#2D343E"/>
+  <path d="M110 140 L110 240 M130 140 L130 240" stroke="#4A5568" stroke-width="4" stroke-dasharray="8 8"/>
+  
+  <!-- Vehicle (Car) -->
+  <g transform="translate(40, 115)">
+    <path d="M0 20 L50 20 L45 5 L5 5 Z" fill="#F6AD55"/>
+    <rect x="5" y="5" width="40" height="10" rx="2" fill="#FBD38D"/>
+    <circle cx="12" cy="25" r="6" fill="#4A5568"/>
+    <circle cx="38" cy="25" r="6" fill="#4A5568"/>
+  </g>
+  
+  <!-- Pedestrian 1 -->
+  <g transform="translate(160, 100)">
+    <circle cx="10" cy="15" r="8" fill="#E2E8F0"/>
+    <path d="M10 23 L10 50 M10 30 L2 40 M10 30 L18 40 M10 50 L5 70 M10 50 L15 70" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Pedestrian 2 -->
+  <g transform="translate(190, 110)">
+    <circle cx="10" cy="15" r="8" fill="#F6AD55"/>
+    <path d="M10 23 L10 50 M10 30 L2 40 M10 30 L18 40 M10 50 L5 70 M10 50 L15 70" stroke="#F6AD55" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Motion Lines -->
+  <path d="M20 120 Q30 110 40 120" stroke="#4A5568" stroke-width="2" fill="none"/>
+  <path d="M150 110 Q160 100 170 110" stroke="#4A5568" stroke-width="2" fill="none"/>
+</svg>

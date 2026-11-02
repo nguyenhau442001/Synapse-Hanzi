@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <defs>
+    <!-- Bowl Gradient -->
+    <linearGradient id="bowlGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4F5D73"/>
+      <stop offset="100%" stop-color="#2C3542"/>
+    </linearGradient>
+    <linearGradient id="bowlRim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64748B"/>
+      <stop offset="50%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+
+    <!-- Broth Gradient -->
+    <linearGradient id="brothGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#B45309" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <!-- Meatball Gradient (Handmade texture feel) -->
+    <radialGradient id="meatball1" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#D79B72"/>
+      <stop offset="60%" stop-color="#B4533C"/>
+      <stop offset="100%" stop-color="#883522"/>
+    </radialGradient>
+    <radialGradient id="meatball2" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#E2A67D"/>
+      <stop offset="55%" stop-color="#BD5B44"/>
+      <stop offset="100%" stop-color="#913B27"/>
+    </radialGradient>
+    
+    <!-- Steam Gradient -->
+    <linearGradient id="steamGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#94A3B8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#94A3B8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Glow behind bowl -->
+  <circle cx="120" cy="140" r="70" fill="#F59E0B" opacity="0.08" filter="blur(15px)"/>
+
+  <!-- Steam wisps representing hot soup -->
+  <path d="M95 85 C90 70, 105 55, 95 40" fill="none" stroke="url(#steamGrad)" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M120 80 C125 65, 110 50, 120 32" fill="none" stroke="url(#steamGrad)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M145 85 C150 72, 135 58, 142 42" fill="none" stroke="url(#steamGrad)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Chopsticks resting across -->
+  <g>
+    <line x1="60" y1="75" x2="190" y2="95" stroke="#D97706" stroke-width="4" stroke-linecap="round"/>
+    <line x1="55" y1="82" x2="185" y2="102" stroke="#B45309" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Soup Bowl Back Rim / Interior -->
+  <ellipse cx="120" cy="115" rx="75" ry="25" fill="#334155"/>
+  
+  <!-- Rich Broth Surface -->
+  <ellipse cx="120" cy="117" rx="71" ry="22" fill="url(#brothGrad)"/>
+
+  <!-- Broth Details / Oil Droplets -->
+  <circle cx="95" cy="112" r="3" fill="#FCD34D" opacity="0.6"/>
+  <circle cx="140" cy="122" r="2.5" fill="#FCD34D" opacity="0.6"/>
+  <circle cx="125" cy="110" r="2" fill="#FCD34D" opacity="0.5"/>
+  <circle cx="80" cy="120" r="2" fill="#FCD34D" opacity="0.5"/>
+  <circle cx="155" cy="115" r="3.5" fill="#FCD34D" opacity="0.6"/>
+
+  <!-- Garnishes (Spring onions / Cilantro) -->
+  <path d="M105 110 Q110 105 115 112" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M135 125 Q142 120 145 128" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M90 122 Q94 126 98 122" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+  <path d="M150 110 Q155 106 158 112" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Meatballs (Wánzi) - Layered for depth -->
+  <!-- Meatball 1 (Left Back) -->
+  <circle cx="95" cy="108" r="18" fill="url(#meatball1)"/>
+  <circle cx="90" cy="103" r="4" fill="#FCA5A5" opacity="0.4" filter="blur(1px)"/>
+
+  <!-- Meatball 2 (Right Back) -->
+  <circle cx="145" cy="112" r="19" fill="url(#meatball2)"/>
+  <circle cx="140" cy="106" r="5" fill="#FCA5A5" opacity="0.4" filter="blur(1px)"/>
+
+  <!-- Meatball 3 (Center Foreground - Main Hero Element) -->
+  <circle cx="118" cy="122" r="22" fill="url(#meatball1)"/>
+  <!-- Highlight & Texture for handmade meatball surface -->
+  <circle cx="110" cy="113" r="6" fill="#FCA5A5" opacity="0.4" filter="blur(1.5px)"/>
+  <circle cx="128" cy="132" r="3" fill="#5A2215" opacity="0.5"/>
+  <circle cx="106" cy="128" r="2.5" fill="#5A2215" opacity="0.4"/>
+  <circle cx="124" cy="115" r="2" fill="#5A2215" opacity="0.4"/>
+
+  <!-- Bowl Body & Exterior -->
+  <path d="M 45 115 C 45 155, 75 185, 120 185 C 165 185, 195 155, 195 115 Z" fill="url(#bowlGradient)"/>
+  
+  <!-- Bowl Base / Foot -->
+  <ellipse cx="120" cy="182" rx="45" ry="9" fill="#1E293B"/>
+
+  <!-- Bowl Rim (Front Overlap) -->
+  <path d="M 45 115 C 45 124, 75 130, 120 130 C 165 130, 195 124, 195 115 C 195 106, 165 100, 120 100 C 75 100, 45 106, 45 115 Z" fill="none" stroke="url(#bowlRim)" stroke-width="4"/>
+
+  <!-- Focus Glow Ring (Subtle High-contrast touch for modern flat design) -->
+  <ellipse cx="120" cy="148" rx="85" ry="42" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity="0.25" stroke-dasharray="8 6"/>
+
+</svg>

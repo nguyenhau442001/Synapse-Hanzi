@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- The "Dragon" (Origin/Source) - Represented as a stylized, elegant golden head/spine emerging from the left -->
+  <path d="M40 120 C 40 80, 80 60, 120 60 C 160 60, 180 80, 180 120" stroke="#FFB84D" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <circle cx="40" cy="120" r="12" fill="#FFB84D"/>
+  
+  <!-- The "Pulse/Vein" (The Path/Process) - Connecting the origin to the end -->
+  <path d="M180 120 L 200 120" stroke="#FFB84D" stroke-width="4" stroke-dasharray="6 6"/>
+  
+  <!-- The "End" (The Conclusion/Result) - Represented as a clear, focused magnifying glass inspecting the final point -->
+  <g transform="translate(180, 120)">
+    <circle cx="0" cy="0" r="20" stroke="#FFB84D" stroke-width="4" fill="none"/>
+    <line x1="14" y1="14" x2="30" y2="30" stroke="#FFB84D" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="5" fill="#FFB84D"/>
+  </g>
+  
+  <!-- Subtle ground line for context -->
+  <path d="M30 180 L 210 180" stroke="#374151" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(40, 40)">
+    <!-- Stage Floor -->
+    <path d="M0 140 L160 140 L140 160 L-20 160 Z" fill="#2D343E"/>
+    <!-- Traditional Stage Backdrop (Silhouette) -->
+    <path d="M20 20 L140 20 L140 100 L20 100 Z" fill="#252A33" stroke="#3E4756" stroke-width="2"/>
+    <!-- The Artist (Representing the deep cultural sentiment/dedication) -->
+    <g transform="translate(70, 60)">
+      <!-- Body -->
+      <path d="M-15 80 L15 80 L10 40 L-10 40 Z" fill="#E6B422"/>
+      <!-- Head -->
+      <circle cx="0" cy="25" r="15" fill="#F4F4F4"/>
+      <!-- Gesture: Holding a traditional fan or instrument with care -->
+      <path d="M10 50 L30 40 L35 55 L15 65 Z" fill="#D4A017"/>
+      <!-- Stance: Showing focus and devotion -->
+      <path d="M-5 80 L-5 100 M5 80 L5 100" stroke="#E6B422" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <!-- Spotlight/Focus effect (Gold accent) -->
+    <ellipse cx="70" cy="80" rx="50" ry="70" fill="none" stroke="#E6B422" stroke-width="2" stroke-dasharray="4 4" opacity="0.6"/>
+  </g>
+</svg>

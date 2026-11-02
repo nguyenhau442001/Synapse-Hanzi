@@ -1,0 +1,62 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed dark container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative depth elements (slanting terrain lines for momentum) -->
+  <path d="M 20 180 L 220 120" stroke="#2A313C" stroke-width="2" stroke-dasharray="6 6" stroke-linecap="round"/>
+  <path d="M 10 200 L 230 140" stroke="#252A34" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Obstacles (chông gai trắc trở - sharp minimalist spikes/rocks on the left/lower path) -->
+  <g fill="#3A4454">
+    <polygon points="50,180 60,150 70,180"/>
+    <polygon points="65,185 75,155 85,185"/>
+    <polygon points="40,185 48,165 56,185"/>
+  </g>
+
+  <!-- Ground Path / Dynamic upward slope -->
+  <path d="M 20 185 L 220 135" stroke="#F97316" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Speed lines representing forward momentum / direct progress -->
+  <g stroke="#38BDF8" stroke-width="2" stroke-linecap="round" opacity="0.6">
+    <line x1="80" y1="110" x2="110" y2="105"/>
+    <line x1="100" y1="90" x2="140" y2="82"/>
+    <line x1="70" y1="130" x2="100" y2="124"/>
+  </g>
+
+  <!-- Central Figure: Adjective / Describing Word - Scale Exaggeration & Dynamic Forward Lunge -->
+  <g transform="translate(130, 95)">
+    <!-- Motion blur trails -->
+    <path d="M -40 20 L -15 25" stroke="#F97316" stroke-width="8" stroke-linecap="round" opacity="0.3"/>
+    <path d="M -30 40 L -5 45" stroke="#F97316" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
+
+    <!-- Dynamic Runner Silhouette (Sleek Flat Vector Style) -->
+    <!-- Back leg (striding forward) -->
+    <path d="M -5 35 L 25 50 L 35 40" fill="none" stroke="#CBD5E1" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Torso (leaning forward decisively) -->
+    <path d="M -15 10 L 10 35" stroke="#F8FAFC" stroke-width="12" stroke-linecap="round"/>
+
+    <!-- Front leg (powerfully planted/stepping up) -->
+    <path d="M 10 35 L -10 55 L -25 50" fill="none" stroke="#F8FAFC" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Back arm (pumping) -->
+    <path d="M -15 15 L -35 30" fill="none" stroke="#CBD5E1" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Front arm (reaching forward with determination) -->
+    <path d="M 5 20 L 35 15" fill="none" stroke="#F8FAFC" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Head (focused, forward-looking) -->
+    <circle cx="18" cy="5" r="7" fill="#F8FAFC"/>
+    <!-- Headband / Accent detail -->
+    <path d="M 11 3 C 15 1 21 1 25 4" stroke="#F97316" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Goal / Pinnacle Light (bright accent symbolizing ultimate victory) -->
+  <circle cx="205" cy="70" r="14" fill="#F97316" opacity="0.2"/>
+  <circle cx="205" cy="70" r="8" fill="#F97316"/>
+  <path d="M 205 52 L 205 60" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 205 80 L 205 88" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 187 70 L 195 70" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 215 70 L 223 70" stroke="#FBBF24" stroke-width="3" stroke-linecap="round"/>
+
+</svg>

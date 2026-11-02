@@ -1,0 +1,45 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements (stars and cosmic path) -->
+  <g opacity="0.3">
+    <circle cx="50" cy="50" r="1" fill="#FFFFFF"/>
+    <circle cx="190" cy="40" r="1.5" fill="#FFFFFF"/>
+    <circle cx="200" cy="120" r="1" fill="#FFFFFF"/>
+    <circle cx="40" cy="180" r="1.5" fill="#FFFFFF"/>
+    <circle cx="100" cy="210" r="1" fill="#FFFFFF"/>
+    <path d="M 40 190 Q 90 190 120 140 T 200 70" fill="none" stroke="#3A4454" stroke-width="1.5" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- Glowing base for the milestone marker -->
+  <ellipse cx="120" cy="195" rx="45" ry="10" fill="#FFB703" opacity="0.2"/>
+  <ellipse cx="120" cy="193" rx="30" ry="6" fill="#FFB703" opacity="0.4"/>
+
+  <!-- Milestone Monument / Stone Pillar (里程碑) -->
+  <g id="milestone-pillar">
+    <!-- Pillar Base/Platform -->
+    <path d="M 80 190 L 160 190 L 170 200 L 70 200 Z" fill="#2E384D"/>
+    <path d="M 85 182 L 155 182 L 160 190 L 80 190 Z" fill="#4B5A75"/>
+
+    <!-- Main Obelisk / Marker Body -->
+    <path d="M 95 65 L 145 65 L 155 182 L 85 182 Z" fill="#3B485E"/>
+    <!-- Highlight side for 3D/Flat depth -->
+    <path d="M 120 65 L 145 65 L 155 182 L 120 182 Z" fill="#4B5A75"/>
+
+    <!-- Rounded/Gabled top cap of the pillar -->
+    <path d="M 95 65 Q 120 45 145 65 Z" fill="#5A6D8C"/>
+    <path d="M 120 45 L 145 65 L 120 65 Z" fill="#6E85A8"/>
+
+    <!-- Carved symbol/arrow pointing upward on the pillar (representing progress/history) -->
+    <g transform="translate(120, 115)">
+      <path d="M 0 -25 L 12 -5 L 4 -5 L 4 25 L -4 25 L -4 -5 L -12 -5 Z" fill="#FFB703"/>
+    </g>
+
+    <!-- Glowing accent line running up the pillar -->
+    <line x1="120" y1="145" x2="120" y2="175" stroke="#FFB703" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Foreground cosmic/technological orbit ring wrapping partially around the monument -->
+  <path d="M 60 140 C 60 170 180 170 180 140 C 180 120 140 100 120 100" fill="none" stroke="#FFB703" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <circle cx="173" cy="130" r="4" fill="#FFB703"/>
+</svg>

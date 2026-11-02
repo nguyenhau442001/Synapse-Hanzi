@@ -1,0 +1,30 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground line -->
+  <path d="M40 180 L200 180" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- The "Load" (Representing Economic Growth/Macro Economy) -->
+  <rect x="130" y="130" width="50" height="40" rx="4" fill="#E2E8F0"/>
+  <rect x="135" y="135" width="40" height="30" rx="2" fill="#1A1D24"/>
+  
+  <!-- The Rope -->
+  <path d="M70 150 L130 150" stroke="#F6AD55" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- The "Puller" (Representing the driving force/engine) -->
+  <g>
+    <!-- Body -->
+    <path d="M50 130 C50 110, 80 110, 80 130 L80 170 L50 170 Z" fill="#F6AD55"/>
+    <!-- Arm -->
+    <path d="M70 145 L90 150" stroke="#F6AD55" stroke-width="8" stroke-linecap="round"/>
+    <!-- Head -->
+    <circle cx="65" cy="115" r="12" fill="#F6AD55"/>
+    <!-- Leg -->
+    <path d="M60 170 L55 190" stroke="#F6AD55" stroke-width="6" stroke-linecap="round"/>
+    <path d="M70 170 L75 190" stroke="#F6AD55" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Motion lines to emphasize "拉动" (Pulling/Driving) -->
+  <path d="M100 140 L110 140" stroke="#F6AD55" stroke-width="2" stroke-linecap="round"/>
+  <path d="M100 160 L115 160" stroke="#F6AD55" stroke-width="2" stroke-linecap="round"/>
+</svg>

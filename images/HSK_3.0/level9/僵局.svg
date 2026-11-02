@@ -1,0 +1,47 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "僵局" (Stalemate / Impasse) -->
+  <!-- Two stylized diplomatic/business figures facing each other at a negotiation table, deadlocked with a tension line/barrier between them -->
+
+  <!-- Negotiation Table -->
+  <rect x="50" y="155" width="140" height="12" rx="4" fill="#2D333B"/>
+  <rect x="75" y="167" width="10" height="25" fill="#22262E"/>
+  <rect x="155" y="167" width="10" height="25" fill="#22262E"/>
+
+  <!-- Left Figure (Body & Head) -->
+  <!-- Suit body -->
+  <path d="M 60 155 L 75 115 L 105 115 L 120 155 Z" fill="#2E4057"/>
+  <!-- Shirt & Tie -->
+  <polygon points="85,115 95,115 90,135" fill="#EAEAEA"/>
+  <polygon points="89,125 91,125 90,145" fill="#F05454"/>
+  <!-- Head -->
+  <circle cx="90" cy="95" r="14" fill="#E0AC69"/>
+  <!-- Hair -->
+  <path d="M 77 95 C 77 84 103 84 103 95 Z" fill="#3B3B3B"/>
+  <!-- Left Arm leaning forward in stalemate stance -->
+  <path d="M 75 125 L 105 135 L 105 145 L 75 135 Z" fill="#2E4057"/>
+
+  <!-- Right Figure (Body & Head) -->
+  <!-- Suit body -->
+  <path d="M 180 155 L 165 115 L 135 115 L 120 155 Z" fill="#3B4C5E"/>
+  <!-- Shirt & Tie -->
+  <polygon points="145,115 155,115 150,135" fill="#EAEAEA"/>
+  <polygon points="149,125 151,125 150,145" fill="#438A5E"/>
+  <!-- Head -->
+  <circle cx="150" cy="95" r="14" fill="#D29054"/>
+  <!-- Hair -->
+  <path d="M 137 95 C 137 84 163 84 163 95 Z" fill="#2C2C2C"/>
+  <!-- Right Arm leaning forward in stalemate stance -->
+  <path d="M 165 125 L 135 135 L 135 145 L 165 135 Z" fill="#3B4C5E"/>
+
+  <!-- Central Stalemate Barrier / Tension Symbol -->
+  <!-- Vertical glowing red warning beam / divider representing the deadlock -->
+  <line x1="120" y1="65" x2="120" y2="160" stroke="#F05454" stroke-width="3" stroke-dasharray="6,4" opacity="0.8"/>
+  
+  <!-- Central Lock Icon representing the "Impasse" (locked/stuck situation) -->
+  <rect x="108" y="75" width="24" height="20" rx="4" fill="#F8B400"/>
+  <path d="M 113 75 V 67 C 113 60, 127 60, 127 67 V 75" fill="none" stroke="#F8B400" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="120" cy="85" r="3" fill="#1A1D24"/>
+</svg>

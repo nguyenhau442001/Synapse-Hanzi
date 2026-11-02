@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Object: Tāo Yāobāo (Pocket/Wallet & Cash representing self-funding) -->
+  <g transform="translate(0, 5)">
+    <!-- Outer Garment / Waist Silhouette -->
+    <path d="M50 145 C90 135, 150 135, 190 145 L200 200 C200 208, 192 215, 184 215 L56 215 C48 215, 40 208, 40 200 Z" fill="#242B38" />
+
+    <!-- Jacket Pocket -->
+    <path d="M75 135 L75 190 C75 195, 80 200, 85 200 L155 200 C160 200, 165 195, 165 190 L165 135 Z" fill="#2E3748" />
+    <!-- Pocket Opening / Flap Shadow -->
+    <path d="M72 135 C95 142, 145 142, 168 135 L165 142 C145 149, 95 149, 75 142 Z" fill="#1A1D24" />
+    <line x1="75" y1="135" x2="165" y2="135" stroke="#4A5568" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Cash / Money emerging from the pocket (Representing out-of-pocket spending/donation) -->
+    <!-- Bill 3 (Back) -->
+    <rect x="90" y="85" width="60" height="40" rx="4" fill="#10B981" opacity="0.6" transform="rotate(-8 120 105)" />
+    
+    <!-- Bill 2 (Middle) -->
+    <rect x="95" y="75" width="60" height="40" rx="4" fill="#34D399" opacity="0.8" transform="rotate(5 125 95)" />
+
+    <!-- Bill 1 (Front, Detailed Banknote) -->
+    <g transform="translate(85, 60) rotate(-3 60 40)">
+      <!-- Main note body -->
+      <rect x="0" y="0" width="70" height="46" rx="6" fill="#059669" />
+      <rect x="5" y="4" width="60" height="38" rx="3" fill="#34D399" />
+      <!-- Inner border -->
+      <rect x="9" y="8" width="52" height="30" rx="2" fill="none" stroke="#047857" stroke-width="1.5" stroke-dasharray="3,2" />
+      <!-- Central Coin/Emblem -->
+      <circle cx="35" cy="23" r="10" fill="#059669" />
+      <circle cx="35" cy="23" r="7" fill="#FBBF24" />
+      <!-- Detail lines -->
+      <circle cx="15" cy="14" r="2" fill="#059669" />
+      <circle cx="55" cy="14" r="2" fill="#059669" />
+      <circle cx="15" cy="32" r="2" fill="#059669" />
+      <circle cx="55" cy="32" r="2" fill="#059669" />
+    </g>
+
+    <!-- Hand reaching into pocket / pulling out money -->
+    <g transform="translate(95, 105)">
+      <!-- Arm / Cuff -->
+      <path d="M20 40 C30 20, 50 15, 65 10 L75 25 C60 30, 40 45, 30 55 Z" fill="#3B82F6" />
+      <!-- Hand / Fingers gripping the cash -->
+      <path d="M15 28 C20 22, 32 25, 38 32 C40 35, 38 40, 35 42 C30 45, 20 42, 15 38 Z" fill="#FCD34D" />
+      <!-- Thumb -->
+      <path d="M28 25 C33 22, 42 27, 40 33 C39 34, 35 34, 32 32 Z" fill="#F59E0B" />
+    </g>
+
+    <!-- Action / Sparkle Accents (Generosity/Giving focus) -->
+    <g fill="#FBBF24">
+      <path d="M60 45 L63 52 L70 55 L63 58 L60 65 L57 58 L50 55 L57 52 Z" />
+      <path d="M175 65 L177 70 L182 72 L177 74 L175 79 L173 74 L168 72 L173 70 Z" transform="scale(0.7) translate(80, 0)" />
+      <circle cx="165" cy="50" r="3" />
+      <circle cx="75" cy="80" r="2" />
+    </g>
+  </g>
+</svg>

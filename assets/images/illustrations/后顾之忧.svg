@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Representing "后顾之忧" (worries about the rear/future) being resolved: 
+       A person standing confidently, looking forward, while a heavy, dark, jagged "worry" cloud behind them is being dissolved/removed by a warm, golden light emanating from a house and medical cross symbol, representing the housing and healthcare policy. -->
+  
+  <!-- The Person -->
+  <path d="M120 100c13.8 0 25 11.2 25 25v60h-50v-60c0-13.8 11.2-25 25-25z" fill="#7B8794"/>
+  <circle cx="120" cy="85" r="15" fill="#7B8794"/>
+  
+  <!-- The "Worry" (The Rear/Past) - Being dissolved -->
+  <path d="M60 120c-10 0-15-5-15-15s5-15 15-15c0-15 10-25 25-25s25 10 25 25c5 0 10 5 10 10s-5 10-10 10" fill="#2D3436" stroke="#4A5568" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- The Resolution (House and Medical Cross) -->
+  <g transform="translate(160, 140)">
+    <path d="M0 0l20-20 20 20v30h-40z" fill="#F6AD55"/>
+    <rect x="10" y="10" width="20" height="20" fill="#1A1D24"/>
+    <rect x="18" y="12" width="4" height="16" fill="#F6AD55"/>
+    <rect x="12" y="18" width="16" height="4" fill="#F6AD55"/>
+  </g>
+  
+  <!-- Golden light rays representing the policy support -->
+  <path d="M140 130l30-10" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+  <path d="M145 120l20-5" stroke="#F6AD55" stroke-width="2" stroke-linecap="round"/>
+</svg>

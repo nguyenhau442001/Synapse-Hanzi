@@ -1,0 +1,63 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle Background Grid/Tech Elements -->
+  <g opacity="0.15" stroke="#38BDF8" stroke-width="1" stroke-dasharray="2 4">
+    <line x1="40" y1="60" x2="200" y2="60"/>
+    <line x1="40" y1="120" x2="200" y2="120"/>
+    <line x1="40" y1="180" x2="200" y2="180"/>
+  </g>
+
+  <!-- Central Object: Data Terminal / Keypad / Password Concept being Snatched (The Theft Action - 窃取) -->
+  <g transform="translate(0, 0)">
+    <!-- Main Device / Safe / Terminal Base -->
+    <rect x="70" y="80" width="100" height="90" rx="12" fill="#252A34" stroke="#334155" stroke-width="2"/>
+    
+    <!-- Screen/Display showing password asterisks -->
+    <rect x="85" y="95" width="70" height="25" rx="6" fill="#0F172A"/>
+    <circle cx="100" cy="107" r="3" fill="#F59E0B"/>
+    <circle cx="112" cy="107" r="3" fill="#F59E0B"/>
+    <circle cx="124" cy="107" r="3" fill="#F59E0B"/>
+    <circle cx="136" cy="107" r="3" fill="#F59E0B"/>
+    <circle cx="148" cy="107" r="3" fill="#F59E0B"/>
+
+    <!-- Keypad Dots -->
+    <circle cx="95" cy="138" r="4" fill="#475569"/>
+    <circle cx="120" cy="138" r="4" fill="#475569"/>
+    <circle cx="145" cy="138" r="4" fill="#475569"/>
+    <circle cx="95" cy="155" r="4" fill="#475569"/>
+    <circle cx="120" cy="155" r="4" fill="#475569"/>
+    <circle cx="145" cy="155" r="4" fill="#475569"/>
+
+    <!-- Glowing Data Stream / Key escaping -->
+    <path d="M 120,90 Q 140,60 170,45" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4"/>
+    
+    <!-- Floating Digital Key / Asset being stolen -->
+    <g transform="translate(165, 30) rotate(-25)">
+      <circle cx="8" cy="8" r="6" fill="none" stroke="#F59E0B" stroke-width="3"/>
+      <path d="M 12 12 L 22 22 M 18 20 L 21 17" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Sleek Stealthy Mechanical Hand / Claw (The "Stealing" motion) -->
+    <g transform="translate(10, -5)">
+      <!-- Motion lines showing swift grab -->
+      <path d="M 135 45 L 155 55" stroke="#EF4444" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+      <path d="M 142 35 L 162 45" stroke="#EF4444" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+      
+      <!-- Robotic / Sleek glove fingers reaching in -->
+      <path d="M 190 30 C 170 35 150 45 140 55" fill="none" stroke="#EF4444" stroke-width="6" stroke-linecap="round"/>
+      <path d="M 185 48 C 170 52 155 60 148 70" fill="none" stroke="#EF4444" stroke-width="5" stroke-linecap="round"/>
+      
+      <!-- Hand Cuff / Sleek wrist base fading out -->
+      <path d="M 195 20 L 210 10" stroke="#991B1B" stroke-width="8" stroke-linecap="round"/>
+    </g>
+
+    <!-- Warning / Intrusion Indicator -->
+    <circle cx="155" cy="95" r="4" fill="#EF4444"/>
+    <circle cx="155" cy="95" r="8" fill="none" stroke="#EF4444" stroke-width="1.5" opacity="0.6">
+      <animate attributeName="r" values="4;12;4" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

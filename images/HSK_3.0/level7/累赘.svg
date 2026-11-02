@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Backpack representing the heavy burden/encumbrance -->
+  <g transform="translate(70, 60)">
+    <!-- Main bag body -->
+    <path d="M20 20h60v80a10 10 0 0 1-10 10H30a10 10 0 0 1-10-10V20z" fill="#FFB347"/>
+    <!-- Top flap -->
+    <path d="M20 20l40-20 40 20v10a10 10 0 0 1-10 10H30a10 10 0 0 1-10-10V20z" fill="#E69A30"/>
+    <!-- Straps hanging down -->
+    <rect x="35" y="110" width="10" height="30" rx="2" fill="#FFB347"/>
+    <rect x="55" y="110" width="10" height="30" rx="2" fill="#FFB347"/>
+    <!-- Heavy looking buckle/detail -->
+    <rect x="45" y="40" width="10" height="15" rx="2" fill="#1A1D24" opacity="0.3"/>
+  </g>
+
+  <!-- Chains/Ropes indicating 'vướng víu' (entanglement/burden) -->
+  <path d="M60 140 C 40 160, 20 140, 30 120" stroke="#FFB347" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M140 140 C 160 160, 180 140, 170 120" stroke="#FFB347" stroke-width="6" stroke-linecap="round" fill="none"/>
+  
+  <!-- Ground shadow -->
+  <ellipse cx="120" cy="210" rx="70" ry="10" fill="#000" opacity="0.2"/>
+</svg>

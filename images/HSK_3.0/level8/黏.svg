@@ -1,0 +1,36 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Sticky, stretchable glutinous rice cake (mochi/niangao) visual representation -->
+    <!-- Background glow for high contrast -->
+    <circle cx="120" cy="120" r="70" fill="#2E2318" opacity="0.6"/>
+
+    <!-- Bottom piece resting on surface -->
+    <path d="M 80,150 Q 120,165 160,150 Q 165,175 120,180 Q 75,175 80,150 Z" fill="#E28743"/>
+    <ellipse cx="120" cy="150" rx="40" ry="10" fill="#F4A261"/>
+
+    <!-- Pulling upper piece (showing the stretchy "黏" sticky property) -->
+    <!-- Elastic stretching strands -->
+    <path d="M 100,140 Q 105,100 90,75" stroke="#F4A261" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <path d="M 120,143 Q 130,95 125,70" stroke="#F4A261" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M 140,140 Q 145,105 155,80" stroke="#E28743" stroke-width="9" stroke-linecap="round" fill="none"/>
+
+    <!-- Wisps/strings of sticky residue connecting them -->
+    <path d="M 110,110 Q 115,90 105,75" stroke="#F4A261" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 130,115 Q 120,95 135,80" stroke="#F4A261" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Top lifted piece of rice cake -->
+    <path d="M 85,75 Q 120,55 155,75 Q 160,95 120,90 Q 80,95 85,75 Z" fill="#F4A261"/>
+    <ellipse cx="120" cy="73" rx="35" ry="8" fill="#FFB703"/>
+
+    <!-- Highlight details to emphasize glossy/sticky texture -->
+    <path d="M 95,155 Q 120,162 145,155" stroke="#FFD166" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+    <path d="M 95,73 Q 120,67 145,73" stroke="#FFD166" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8"/>
+    
+    <!-- Small detached sticky droplet/string -->
+    <path d="M 148,88 Q 152,98 147,105" stroke="#F4A261" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <circle cx="146" cy="108" r="2" fill="#F4A261"/>
+  </g>
+</svg>

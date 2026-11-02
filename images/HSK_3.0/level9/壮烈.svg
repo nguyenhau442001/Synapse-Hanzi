@@ -1,0 +1,75 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Atmospheric Background Glow / Flash of Glory -->
+  <circle cx="120" cy="110" r="70" fill="#E65100" opacity="0.15"/>
+  <circle cx="120" cy="110" r="45" fill="#FFC107" opacity="0.12"/>
+
+  <!-- Dramatic Rising Sun / Banner of Resistance Backdrop -->
+  <path d="M50 170 L120 40 L190 170 Z" fill="#2C2E3B" opacity="0.4"/>
+  <path d="M70 170 L120 70 L170 170 Z" fill="#3A3D4D" opacity="0.5"/>
+
+  <!-- Dynamic Energy / Light Rays -->
+  <path d="M120 40 L100 170" stroke="#FFC107" stroke-width="1.5" opacity="0.3" stroke-dasharray="4 4"/>
+  <path d="M120 40 L140 170" stroke="#FFC107" stroke-width="1.5" opacity="0.3" stroke-dasharray="4 4"/>
+  <path d="M120 40 L70 150" stroke="#FFC107" stroke-width="1" opacity="0.2"/>
+  <path d="M120 40 L170 150" stroke="#FFC107" stroke-width="1" opacity="0.2"/>
+
+  <!-- Ground / Battlefield Horizon -->
+  <path d="M30 170 L210 170 L220 185 L20 185 Z" fill="#12141A"/>
+  <line x1="20" y1="170" x2="220" y2="170" stroke="#FF8F00" stroke-width="2"/>
+
+  <!-- Central Character: Heroic Figure (Zhuanglie - Tráng liệt / Oanh liệt kiên cường) -->
+  <!-- Silhouette / Form of an upright, unyielding defender -->
+  <g transform="translate(0, 5)">
+    <!-- Cape / Banner fluttering heroically -->
+    <path d="M120 85 C100 100 75 120 65 155 C90 155 105 140 120 125 Z" fill="#D32F2F"/>
+    
+    <!-- Body / Torso in resolute posture -->
+    <path d="M102 90 L138 90 L145 135 L95 135 Z" fill="#37474F"/>
+    
+    <!-- Chest / Uniform details -->
+    <path d="M120 90 L120 135" stroke="#263238" stroke-width="2"/>
+    <path d="M105 105 L135 105" stroke="#FFA726" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Head and Helmet -->
+    <circle cx="120" cy="72" r="14" fill="#CFD8DC"/>
+    <!-- Steel Helmet -->
+    <path d="M104 70 C104 56 136 56 136 70 C136 73 104 73 104 70 Z" fill="#546E7A"/>
+    <path d="M100 70 C100 68 140 68 142 72 L98 72 Z" fill="#455A64"/>
+
+    <!-- Firm Legs firmly planted -->
+    <path d="M102 135 L108 170 L120 170 L114 135 Z" fill="#37474F"/>
+    <path d="M138 135 L132 170 L120 170 L126 135 Z" fill="#37474F"/>
+
+    <!-- Raising arm holding the banner pole / sword high (unyielding spirit) -->
+    <path d="M135 95 L165 75 L170 82 L140 105 Z" fill="#CFD8DC"/>
+    <!-- Left arm bracing forward -->
+    <path d="M105 98 L85 115 L90 122 L110 105 Z" fill="#CFD8DC"/>
+  </g>
+
+  <!-- Broken Banner / Standard of Resolution (Symbolizing sacrifice and unwavering spirit) -->
+  <g>
+    <!-- Staff -->
+    <line x1="165" y1="40" x2="165" y2="180" stroke="#78909C" stroke-width="4" stroke-linecap="round"/>
+    <!-- Tattered Flag streaming proudly in the wind -->
+    <path d="M165 45 L205 60 L185 80 L210 100 L165 115 Z" fill="#FF5722"/>
+    <path d="M165 45 L195 58 L180 72 L165 72 Z" fill="#FFC107" opacity="0.6"/>
+  </g>
+
+  <!-- Ground Details: Sparks, Embers of Glory -->
+  <circle cx="80" cy="165" r="2.5" fill="#FFC107"/>
+  <circle cx="95" cy="172" r="1.5" fill="#FF5722"/>
+  <circle cx="145" cy="168" r="2" fill="#FFC107"/>
+  <circle cx="155" cy="175" r="1" fill="#FF5722"/>
+  <circle cx="60" cy="160" r="1.5" fill="#FFC107"/>
+
+  <!-- Dramatic Starburst / Heroic Aura overlay -->
+  <path d="M120 25 L122 35 L132 37 L122 39 L120 49 L118 39 L108 37 L118 35 Z" fill="#FFD54F" opacity="0.9"/>
+  <path d="M85 55 L86 60 L91 61 L86 62 L85 67 L84 62 L79 61 L84 60 Z" fill="#FFD54F" opacity="0.7"/>
+  <path d="M155 55 L156 60 L161 61 L156 62 L155 67 L154 62 L149 61 L154 60 Z" fill="#FFD54F" opacity="0.7"/>
+
+  <!-- Outer Border Frame (Sleek Modern UI Card style) -->
+  <rect x="0" y="0" width="240" height="240" rx="24" fill="none" stroke="#2C303E" stroke-width="2"/>
+</svg>

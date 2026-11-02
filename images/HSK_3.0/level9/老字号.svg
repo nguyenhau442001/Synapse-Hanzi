@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Traditional Shop Facade Structure -->
+  <path d="M60 180 L180 180 L180 90 L120 60 L60 90 Z" fill="#2D343E" stroke="#FFB84D" stroke-width="3"/>
+  
+  <!-- Wooden Plaque (The "Lao Zi Hao" sign) -->
+  <rect x="80" y="70" width="80" height="25" rx="2" fill="#D48806"/>
+  <rect x="84" y="74" width="72" height="17" rx="1" fill="#8B4513"/>
+  
+  <!-- Traditional Window/Display -->
+  <rect x="75" y="110" width="40" height="50" fill="#3A424F" stroke="#FFB84D" stroke-width="2"/>
+  <rect x="125" y="110" width="40" height="50" fill="#3A424F" stroke="#FFB84D" stroke-width="2"/>
+  
+  <!-- Pastry Displayed inside -->
+  <circle cx="95" cy="145" r="12" fill="#FFD700"/>
+  <path d="M88 145 A7 7 0 1 0 102 145" fill="#E67E22"/>
+  
+  <!-- Decorative Lantern -->
+  <path d="M190 70 L190 100" stroke="#FFB84D" stroke-width="2"/>
+  <ellipse cx="190" cy="110" rx="12" ry="16" fill="#C0392B"/>
+  <rect x="186" y="126" width="8" height="4" fill="#FFB84D"/>
+  
+  <!-- Architectural detail: Roof tiles -->
+  <path d="M60 90 L120 60 L180 90" fill="none" stroke="#FFB84D" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Ground/Step -->
+  <rect x="50" y="180" width="140" height="10" fill="#FFB84D"/>
+</svg>

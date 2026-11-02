@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow/spotlight -->
+  <circle cx="120" cy="120" r="80" fill="#242B38" opacity="0.6"/>
+
+  <!-- Conceptual illustration for 头衔 (Title / Honorific / Academic position) -->
+  <g transform="translate(0, 5)">
+    <!-- Elegant Podium/Stand base -->
+    <path d="M90 175 L150 175 L155 185 L85 185 Z" fill="#3A4454"/>
+    <rect x="95" y="145" width="50" height="30" fill="#2E3748" rx="2"/>
+    <rect x="80" y="135" width="80" height="12" fill="#435066" rx="3"/>
+
+    <!-- Academic Cap / Mortarboard (representing status/title/achievement) -->
+    <!-- Cap top diamond -->
+    <polygon points="120,70 170,90 120,110 70,90" fill="#3B82F6"/>
+    <polygon points="120,72 168,90 120,108 72,90" fill="#60A5FA"/>
+    
+    <!-- Cap skullcap base underneath -->
+    <path d="M95,98 L95,115 C95,125 145,125 145,115 L145,98 Z" fill="#2563EB"/>
+    
+    <!-- Tassel string and button -->
+    <circle cx="120,90" r="4" fill="#F59E0B"/>
+    <path d="M120,90 Q135,100 145,125" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Tassel fringe -->
+    <circle cx="145" cy="127" r="3" fill="#FBBF24"/>
+
+    <!-- Official Document / Certificate (representing the title certification) -->
+    <g transform="translate(70, 95) rotate(-12)">
+      <rect width="60" height="75" rx="4" fill="#F3F4F6"/>
+      <!-- Ribbon / Seal -->
+      <path d="M45,75 L50,90 L45,85 L40,90 Z" fill="#EF4444"/>
+      <circle cx="45" cy="72" r="8" fill="#DC2626"/>
+      <!-- Document text lines -->
+      <rect x="12" y="15" width="36" height="5" rx="2.5" fill="#9CA3AF"/>
+      <rect x="12" y="28" width="24" height="4" rx="2" fill="#D1D5DB"/>
+      <rect x="12" y="38" width="30" height="4" rx="2" fill="#D1D5DB"/>
+      <rect x="12" y="48" width="20" height="4" rx="2" fill="#D1D5DB"/>
+    </g>
+
+    <!-- Golden Laurel Wreath / Honor Badge (highlighting distinction) -->
+    <g transform="translate(120, 140)">
+      <path d="M-30,-10 C-30,10 -15,20 0,20 C15,20 30,10 30,-10" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+      <!-- Left leaves -->
+      <path d="M-22,-5 C-28,-8 -25,-15 -20,-12 Z" fill="#FBBF24"/>
+      <path d="M-10,10 C-18,9 -18,2 -12,2 Z" fill="#FBBF24"/>
+      <!-- Right leaves -->
+      <path d="M22,-5 C28,-8 25,-15 20,-12 Z" fill="#FBBF24"/>
+      <path d="M10,10 C18,9 18,2 12,2 Z" fill="#FBBF24"/>
+    </g>
+  </g>
+</svg>

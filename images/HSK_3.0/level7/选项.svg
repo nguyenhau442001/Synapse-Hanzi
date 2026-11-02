@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle Background Grid/glow -->
+  <circle cx="120" cy="120" r="85" fill="#222733" opacity="0.6"/>
+
+  <!-- Sleek Modern UI Settings Panel (Physical Object representation of "选项" / Options) -->
+  <g transform="translate(48, 50)">
+    <!-- Panel Body -->
+    <rect width="144" height="140" rx="12" fill="#282E3D" stroke="#3A4255" stroke-width="2"/>
+    
+    <!-- Window Header Dots -->
+    <circle cx="18" cy="16" r="3" fill="#FF5F56"/>
+    <circle cx="28" cy="16" r="3" fill="#FFBD2E"/>
+    <circle cx="38" cy="16" r="3" fill="#27C93F"/>
+
+    <!-- Option Item 1: Checked Checkbox with label line -->
+    <g transform="translate(16, 36)">
+      <rect x="0" y="0" width="14" height="14" rx="3" fill="#3B82F6"/>
+      <!-- Checkmark -->
+      <path d="M4 7l2 2 4-5" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="24" y="3" width="70" height="8" rx="4" fill="#E2E8F0" opacity="0.9"/>
+    </g>
+
+    <!-- Option Item 2: Active Toggle Switch (Highlighting the "Choice/Option" physical UI element) -->
+    <g transform="translate(16, 68)">
+      <rect x="0" y="1" width="14" height="14" rx="3" fill="#3B82F6"/>
+      <path d="M4 8l2 2 4-5" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="24" y="4" width="50" height="8" rx="4" fill="#E2E8F0" opacity="0.6"/>
+    </g>
+
+    <!-- Option Item 3: Dropdown Selector Box (Accent Colored to Focus on "Xuǎnxiàng") -->
+    <g transform="translate(16, 100)">
+      <!-- Unchecked box -->
+      <rect x="0" y="0" width="14" height="14" rx="3" fill="none" stroke="#64748B" stroke-width="2"/>
+      <rect x="24" y="3" width="60" height="8" rx="4" fill="#E2E8F0" opacity="0.4"/>
+      
+      <!-- Selection Indicator Arrow/Badge -->
+      <path d="M124 7l-4 4-4-4" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- Floating Golden Accent Focus Point (Highlighting Selection concept) -->
+  <circle cx="175" cy="85" r="14" fill="#F59E0B" opacity="0.15"/>
+  <circle cx="175" cy="85" r="6" fill="#F59E0B"/>
+  <path d="M172 85l2 2 4-4" fill="none" stroke="#1A1D24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

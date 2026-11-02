@@ -1,0 +1,22 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Mountain Range Background -->
+  <path d="M0 240 L0 140 L40 100 L80 160 L120 90 L160 150 L200 110 L240 160 L240 240 Z" fill="#2C333D"/>
+  <path d="M40 240 L40 160 L80 130 L120 180 L160 140 L200 180 L240 240 Z" fill="#363E4A"/>
+  
+  <!-- Hidden Waterfall -->
+  <path d="M110 120 L130 120 L135 200 L105 200 Z" fill="#4DA6FF" opacity="0.8"/>
+  <path d="M105 200 L135 200 L140 215 L100 215 Z" fill="#82C4FF"/>
+  
+  <!-- Cloud/Mist Veil -->
+  <path d="M80 150 C 70 130, 170 130, 160 150 C 180 160, 160 180, 140 170 C 130 190, 110 190, 100 170 C 80 180, 60 160, 80 150 Z" fill="#F0F4F8" opacity="0.9"/>
+  
+  <!-- Focus Accent: Golden light beam hitting the hidden spot -->
+  <path d="M120 80 L125 140 L115 140 Z" fill="#FFD700" opacity="0.6"/>
+  <circle cx="120" cy="140" r="8" fill="#FFD700" opacity="0.4"/>
+  
+  <!-- Magnifying glass silhouette representing "discovery" -->
+  <circle cx="160" cy="80" r="20" fill="none" stroke="#FFB84D" stroke-width="4"/>
+  <path d="M175 95 L195 115" stroke="#FFB84D" stroke-width="6" stroke-linecap="round"/>
+</svg>

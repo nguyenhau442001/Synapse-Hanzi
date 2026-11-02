@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle decorative background frame/grid -->
+  <circle cx="120" cy="115" r="70" fill="none" stroke="#2A2F3D" stroke-width="1.5" stroke-dasharray="4 4"/>
+  
+  <!-- Main Character / "Tướng mạo" (Facial features, appearance) representation -->
+  <!-- Shoulders & Torso -->
+  <path d="M 70,185 C 70,155 92,145 120,145 C 148,145 170,155 170,185 Z" fill="#2E364F"/>
+  
+  <!-- Neck -->
+  <rect x="108" y="125" width="24" height="30" fill="#FFCBA4" rx="4"/>
+  
+  <!-- Head / Face Base -->
+  <path d="M 85,95 C 85,65 100,50 120,50 C 140,50 155,65 155,95 C 155,125 142,140 120,140 C 98,140 85,125 85,95 Z" fill="#FFCBA4"/>
+  
+  <!-- Hair -->
+  <path d="M 85,95 C 85,65 100,50 120,50 C 140,50 155,65 155,95 C 155,95 155,75 140,60 C 125,45 100,48 90,60 C 80,72 85,95 85,95 Z" fill="#3D2817"/>
+  <path d="M 122,46 C 140,48 155,60 158,80 C 158,80 150,55 130,48 Z" fill="#543822"/>
+
+  <!-- Facial Features (Clean, modern flat design highlighting "zhǎngxiàng") -->
+  <!-- Eyebrows -->
+  <path d="M 97,85 Q 105,81 113,85" stroke="#3D2817" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M 127,85 Q 135,81 143,85" stroke="#3D2817" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <!-- Eyes -->
+  <circle cx="105" cy="94" r="4" fill="#2B2B2B"/>
+  <circle cx="135" cy="94" r="4" fill="#2B2B2B"/>
+  
+  <!-- Nose -->
+  <path d="M 120,98 L 117,112 L 123,112" stroke="#E0A882" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- Smile -->
+  <path d="M 110,122 Q 120,130 130,122" stroke="#D17A5E" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Focus/Highlight UI Frame overlay representing "visual trait / facial identity" -->
+  <path d="M 68,55 L 68,45 C 68,40 72,36 77,36 L 87,36" fill="none" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 172,55 L 172,45 C 172,40 168,36 163,36 L 153,36" fill="none" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 68,165 L 68,175 C 68,180 72,184 77,184 L 87,184" fill="none" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 172,165 L 172,175 C 172,180 168,184 163,184 L 153,184" fill="none" stroke="#F5A623" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Subtle glowing identity scanner dots -->
+  <circle cx="120" cy="36" r="3" fill="#F5A623"/>
+</svg>

@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Silhouette of an athlete in a starting position -->
+  <g transform="translate(70, 60)">
+    <!-- Body -->
+    <path d="M60 120 L40 120 L35 80 L55 60 L75 80 L70 120 Z" fill="#4A90E2"/>
+    <!-- Head -->
+    <circle cx="55" cy="45" r="15" fill="#4A90E2"/>
+    <!-- Arms -->
+    <path d="M35 80 L20 100" stroke="#4A90E2" stroke-width="8" stroke-linecap="round"/>
+    <path d="M75 80 L90 100" stroke="#4A90E2" stroke-width="8" stroke-linecap="round"/>
+    <!-- Legs -->
+    <path d="M40 120 L30 150" stroke="#4A90E2" stroke-width="8" stroke-linecap="round"/>
+    <path d="M60 120 L70 150" stroke="#4A90E2" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Golden aura/energy representing potential inside the silhouette -->
+  <path d="M120 180 C 150 180, 170 150, 170 120 C 170 90, 150 60, 120 60 C 90 60, 70 90, 70 120 C 70 150, 90 180, 120 180 Z" fill="none" stroke="#FFC107" stroke-width="3" stroke-dasharray="6 4"/>
+  
+  <!-- Burst of light/potential emanating from the core -->
+  <g fill="#FFC107">
+    <circle cx="120" cy="120" r="6"/>
+    <path d="M120 100 L125 115 L140 120 L125 125 L120 140 L115 125 L100 120 L115 115 Z"/>
+  </g>
+</svg>

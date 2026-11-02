@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle background glow to create depth for the medical theme -->
+  <circle cx="120" cy="120" r="80" fill="#242B38" opacity="0.6"/>
+
+  <!-- Emergency/Field Tent Roof silhouette (representing the disaster relief context) -->
+  <path d="M60 90 L120 60 L180 90 L195 95 L45 95 Z" fill="#2E3846" opacity="0.8"/>
+
+  <!-- Medical Personnel (Central Character representing "医务人员" / Medical Staff) -->
+  <!-- Body/Scrubs -->
+  <path d="M95 185 L95 155 C95 145 105 140 120 140 C135 140 145 145 145 155 L145 185 Z" fill="#2BB673"/>
+  
+  <!-- Medical Cross on Scrubs -->
+  <rect x="116" y="152" width="8" height="20" rx="2" fill="#FFFFFF"/>
+  <rect x="110" y="158" width="20" height="8" rx="2" fill="#FFFFFF"/>
+
+  <!-- Neck -->
+  <rect x="113" y="132" width="14" height="12" fill="#F4C2C2"/>
+
+  <!-- Head with Surgical Cap -->
+  <circle cx="120" cy="115" r="18" fill="#2BB673"/>
+  <path d="M102 115 C102 103 138 103 138 115 Z" fill="#23945C"/>
+
+  <!-- Face mask -->
+  <path d="M107 115 L133 115 C135 125 105 125 107 115 Z" fill="#EAEAEA"/>
+  <path d="M104 117 C112 120 128 120 136 117" stroke="#B0B0B0" stroke-width="1.5" fill="none"/>
+
+  <!-- Eyes (focused, compassionate) -->
+  <circle cx="113" cy="110" r="2" fill="#1A1D24"/>
+  <circle cx="127" cy="110" r="2" fill="#1A1D24"/>
+
+  <!-- Arms in action (holding medical equipment / stethoscope) -->
+  <!-- Left arm -->
+  <path d="M95 150 C80 155 75 170 75 170" stroke="#2BB673" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <!-- Right arm -->
+  <path d="M145 150 C160 155 165 170 165 170" stroke="#2BB673" stroke-width="10" stroke-linecap="round" fill="none"/>
+
+  <!-- Stethoscope (Professional symbol of medical practice) -->
+  <path d="M113 132 C100 132 90 120 90 105 C90 95 100 90 100 90" stroke="#EAEAEA" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M127 132 C140 132 150 120 150 105 C150 95 140 90 140 90" stroke="#EAEAEA" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="120" cy="175" r="8" fill="#F1C40F"/>
+  <path d="M100 90 L120 175" stroke="#EAEAEA" stroke-width="2.5"/>
+
+  <!-- Accent Focus Glow (Orange/Gold highlights for emergency urgency and importance) -->
+  <circle cx="120" cy="175" r="14" stroke="#F1C40F" stroke-width="2" fill="none" opacity="0.6"/>
+
+  <!-- Professional framing border -->
+  <rect x="12" y="12" width="216" height="216" rx="16" fill="none" stroke="#2E3846" stroke-width="2"/>
+</svg>

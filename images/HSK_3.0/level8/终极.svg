@@ -1,0 +1,54 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Celestial Background / Cosmic Base -->
+  <g opacity="0.6">
+    <!-- Faint distant stars -->
+    <circle cx="50" cy="60" r="1" fill="#4E5D6C"/>
+    <circle cx="190" cy="50" r="1.5" fill="#4E5D6C"/>
+    <circle cx="200" cy="180" r="1" fill="#4E5D6C"/>
+    <circle cx="40" cy="190" r="1.5" fill="#4E5D6C"/>
+    <circle cx="110" cy="40" r="1" fill="#4E5D6C"/>
+    
+    <!-- Orbital Rings (Representing Ultimate Frontier / Universe) -->
+    <ellipse cx="120" cy="140" rx="80" ry="30" fill="none" stroke="#2D3748" stroke-width="1.5" stroke-dasharray="4 4" transform="rotate(-15 120 140)"/>
+    <ellipse cx="120" cy="140" rx="60" ry="22" fill="none" stroke="#2D3748" stroke-width="1.5" transform="rotate(-15 120 140)"/>
+  </g>
+
+  <!-- Central Monumental Object: The Pinnacle Monolith / Ultimate Artifact (Noun representation of "tột cùng / chung cuộc") -->
+  <g transform="translate(0, 0)">
+    <!-- Base Platform / Foundation -->
+    <path d="M 80 185 L 160 185 L 175 195 L 65 195 Z" fill="#2D3748"/>
+    <rect x="90" y="180" width="60" height="5" rx="1.5" fill="#4A5568"/>
+
+    <!-- Central Vertical Pillar (Stepping upwards to the ultimate point) -->
+    <polygon points="110,180 130,180 125,75 115,75" fill="url(#pillarGrad)"/>
+
+    <!-- Floating Energy Core / Apex Object (The Ultimate Destination / "Cứu cánh" / "Tột cùng") -->
+    <!-- Outer Diamond / Pyramid structure -->
+    <polygon points="120,40 145,85 120,100 95,85" fill="#2B6CB0" opacity="0.7"/>
+    <polygon points="120,40 120,100 145,85" fill="#3182CE"/>
+    <polygon points="120,40 95,85 120,100" fill="#4299E1"/>
+
+    <!-- Radiant Core / Focal Point (Gold/Orange Accent for "Ultimate") -->
+    <polygon points="120,50 135,80 120,90 105,80" fill="#ED8936"/>
+    <polygon points="120,50 120,90 135,80" fill="#F6AD55"/>
+    <circle cx="120" cy="70" r="6" fill="#FFF5F5"/>
+    <circle cx="120" cy="70" r="3" fill="#DD6B20"/>
+
+    <!-- Energy Rays / Pinnacle Glow -->
+    <line x1="120" y1="25" x2="120" y2="35" stroke="#F6AD55" stroke-width="2" stroke-linecap="round"/>
+    <line x1="95" y1="45" x2="102" y2="52" stroke="#F6AD55" stroke-width="2" stroke-linecap="round"/>
+    <line x1="145" y1="45" x2="138" y2="52" stroke="#F6AD55" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Definition Gradients -->
+  <defs>
+    <linearGradient id="pillarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2D3748"/>
+      <stop offset="50%" stop-color="#4A5568"/>
+      <stop offset="100%" stop-color="#2D3748"/>
+    </linearGradient>
+  </defs>
+</svg>

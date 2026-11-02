@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle warm ambient lighting behind the interaction -->
+  <circle cx="120" cy="125" r="70" fill="#FFB703" opacity="0.06"/>
+
+  <!-- Shop counter base -->
+  <path d="M 60 170 L 180 170 L 190 195 L 50 195 Z" fill="#2A2F3D"/>
+  <rect x="55" y="165" width="130" height="8" rx="2" fill="#3A4255"/>
+
+  <!-- Shopkeeper (Left character) -->
+  <!-- Body/Apron -->
+  <path d="M 70 165 C 70 145 85 130 100 130 C 115 130 130 145 130 165 Z" fill="#2E4057"/>
+  <path d="M 80 145 L 120 145 L 125 190 L 75 190 Z" fill="#F4F5F7"/>
+  <!-- Head & Friendly Face -->
+  <circle cx="100" cy="105" r="18" fill="#FCEADE"/>
+  <!-- Friendly closed eyes (smiling) -->
+  <path d="M 92 102 Q 96 98 100 102" stroke="#2B2D42" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M 100 102 Q 104 98 108 102" stroke="#2B2D42" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- Warm smile -->
+  <path d="M 96 112 Q 100 116 104 112" stroke="#D90429" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- Hair -->
+  <path d="M 82 102 C 82 90 90 88 100 88 C 110 88 118 90 118 102 Z" fill="#2B2D42"/>
+
+  <!-- Customer (Right character) -->
+  <!-- Body -->
+  <path d="M 140 165 C 140 145 152 135 165 135 C 178 135 190 145 190 165 Z" fill="#00B4D8"/>
+  <!-- Head & Welcoming expression -->
+  <circle cx="165" cy="108" r="16" fill="#FCEADE"/>
+  <!-- Happy eyes -->
+  <circle cx="161" cy="105" r="1.5" fill="#2B2D42"/>
+  <circle cx="171" cy="105" r="1.5" fill="#2B2D42"/>
+  <!-- Smile -->
+  <path d="M 162 114 Q 165 117 168 114" stroke="#2B2D42" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <!-- Hair -->
+  <path d="M 150 106 C 150 94 158 92 165 92 C 172 92 180 94 180 106 Z" fill="#4A4E69"/>
+
+  <!-- Welcoming Hand Gesture (Shopkeeper offering a warm polite hand / harmonious exchange) -->
+  <path d="M 115 138 C 125 136 135 140 140 145" stroke="#FCEADE" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <circle cx="140" cy="145" r="4" fill="#FCEADE"/>
+
+  <!-- Floating polite indicators / Warm glow accents (No hearts! Just harmonious sparkles) -->
+  <g fill="#FFB703">
+    <path d="M 120 75 L 122 80 L 127 82 L 122 84 L 120 89 L 118 84 L 113 82 L 118 80 Z" transform="scale(0.6) translate(80, 40)"/>
+    <path d="M 145 85 L 146.5 88.5 L 150 90 L 146.5 91.5 L 145 95 L 143.5 91.5 L 140 90 L 143.5 88.5 Z" transform="scale(0.5) translate(140, 20)"/>
+  </g>
+
+  <!-- Small shop elements on counter (jar / friendly goods) -->
+  <rect x="62" y="145" width="14" height="20" rx="3" fill="#EAEAEA" opacity="0.8"/>
+  <path d="M 65 145 L 73 145 L 75 142 L 63 142 Z" fill="#FFB703"/>
+</svg>

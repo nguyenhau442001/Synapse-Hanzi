@@ -1,0 +1,60 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Background Desk Surface -->
+    <path d="M 40,175 L 200,175 L 210,205 L 30,205 Z" fill="#242933"/>
+    <line x1="40" y1="175" x2="200" y2="175" stroke="#323846" stroke-width="2"/>
+
+    <!-- Documents / Paperwork (The item being covered) -->
+    <!-- Base Paper 1 (Slightly tilted) -->
+    <g transform="translate(75, 115) rotate(-8)">
+      <rect x="0" y="0" width="70" height="85" rx="4" fill="#E2E8F0"/>
+      <!-- Mock text lines -->
+      <line x1="10" y1="15" x2="50" y2="15" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+      <line x1="10" y1="28" x2="60" y2="28" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+      <line x1="10" y1="41" x2="40" y2="41" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+      <line x1="10" y1="54" x2="55" y2="54" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+      <!-- Red Error Mark (Contextual meaning: mistake/flaw) -->
+      <path d="M 45,65 L 55,75 M 55,65 L 45,75" stroke="#EF4444" stroke-width="4" stroke-linecap="round"/>
+    </g>
+
+    <!-- Base Paper 2 (Main document) -->
+    <g transform="translate(95, 105)">
+      <rect x="0" y="0" width="75" height="90" rx="4" fill="#F8FAFC"/>
+      <!-- Mock text lines -->
+      <line x1="12" y1="16" x2="50" y2="16" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
+      <line x1="12" y1="32" x2="63" y2="32" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
+      <line x1="12" y1="48" x2="45" y2="48" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
+      <line x1="12" y1="64" x2="58" y2="64" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
+      <!-- Red Error Stamp / Cross -->
+      <circle cx="52" cy="72" r="10" fill="none" stroke="#EF4444" stroke-width="3"/>
+      <path d="M 47,67 L 57,77 M 57,67 L 47,77" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- The Cover / Shield / Cloth (Physical object acting as "遮盖" - covering/hiding) -->
+    <g transform="translate(60, 85)">
+      <!-- Drop shadow for depth -->
+      <path d="M 15,35 Q 60,20 105,35 L 125,100 Q 60,115 -5,100 Z" fill="#0F172A" opacity="0.5"/>
+      
+      <!-- Main draping cloth/lid object -->
+      <path d="M 10,30 Q 60,15 110,30 L 125,95 Q 60,110 -5,95 Z" fill="#F59E0B"/>
+      
+      <!-- Fabric folds and lighting highlights -->
+      <path d="M 10,30 Q 60,15 110,30 L 115,45 Q 60,30 5,45 Z" fill="#FBBF24"/>
+      <path d="M 25,40 Q 60,30 95,40 L 100,65 Q 60,55 20,65 Z" fill="#D97706" opacity="0.3"/>
+      
+      <!-- Highlight edge -->
+      <path d="M 8,32 Q 60,17 112,32" fill="none" stroke="#FDE68A" stroke-width="3" stroke-linecap="round"/>
+      
+      <!-- Center fold crease -->
+      <path d="M 60,20 Q 60,60 60,105" fill="none" stroke="#D97706" stroke-width="2" opacity="0.6"/>
+    </g>
+
+    <!-- Action motion lines / Hand sliding the cover to conceal -->
+    <g stroke="#94A3B8" stroke-width="3" stroke-linecap="round" opacity="0.5">
+      <line x1="35" y1="75" x2="45" y2="75"/>
+      <line x1="25" y1="85" x2="40" y2="85"/>
+    </g>
+  </g>
+</svg>

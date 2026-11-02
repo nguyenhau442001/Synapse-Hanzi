@@ -1,0 +1,57 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative law book/gavel motif lines -->
+  <path d="M40 180H200" stroke="#2A2F3D" stroke-width="2" stroke-linecap="round"/>
+  <path d="M70 150H170" stroke="#2A2F3D" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Open Legal Code / Statute Book (Representing 依照 / Legal Basis / Law Document) -->
+  <g transform="translate(48, 55)">
+    <!-- Book Shadow -->
+    <path d="M10 20C40 15 72 25 72 25V125C72 125 40 115 10 120V20Z" fill="#111318"/>
+    <path d="M134 20C104 15 72 25 72 25V125C72 125 104 115 134 120V20Z" fill="#111318"/>
+
+    <!-- Left Page -->
+    <path d="M12 18C40 13 70 23 70 23V120C70 120 40 110 12 115V18Z" fill="#E2E8F0"/>
+    <!-- Left Page Text Lines -->
+    <line x1="22" y1="35" x2="55" y2="39" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    <line x1="22" y1="50" x2="60" y2="54" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    <line x1="22" y1="65" x2="48" y2="68" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    <line x1="22" y1="80" x2="58" y2="84" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    <line x1="22" y1="95" x2="50" y2="98" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Right Page -->
+    <path d="M132 18C104 13 74 23 74 23V120C74 120 104 110 132 115V18Z" fill="#F8FAFC"/>
+    <!-- Right Page Text Lines -->
+    <line x1="89" y1="35" x2="122" y2="39" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round"/>
+    <line x1="89" y1="50" x2="115" y2="54" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round"/>
+    <line x1="89" y1="65" x2="124" y2="68" stroke="#3B82F6" stroke-width="3" stroke-linecap="round"/>
+    <line x1="89" y1="80" x2="118" y2="84" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Spine -->
+    <path d="M70 23C72 23 74 23 74 23V120C74 120 72 120 70 120V23Z" fill="#3B82F6"/>
+  </g>
+
+  <!-- Golden Scale of Justice / Compliance Check Overlay (Focus Accent) -->
+  <g transform="translate(120, 105)">
+    <!-- Scale Beam -->
+    <rect x="-35" y="-15" width="70" height="6" rx="3" fill="#F59E0B"/>
+    <!-- Center Pivot Pillar -->
+    <circle cx="0" cy="-12" r="8" fill="#D97706"/>
+    <circle cx="0" cy="-12" r="4" fill="#FCD34D"/>
+
+    <!-- Left String & Pan -->
+    <path d="M-30 -9L-40 20H-20L-30 -9Z" fill="none" stroke="#F59E0B" stroke-width="2"/>
+    <path d="M-44 22H-16C-16 26 -20 30 -30 30C-40 30 -44 26 -44 22Z" fill="#F59E0B"/>
+
+    <!-- Right String & Pan with Checkmark (Conforming to Rules / 依照) -->
+    <path d="M30 -9L20 20H40L30 -9Z" fill="none" stroke="#F59E0B" stroke-width="2"/>
+    <path d="M16 22H44C44 26 40 30 30 30C20 30 16 26 16 22Z" fill="#F59E0B"/>
+    
+    <!-- Compliance Checkmark Badge Floating Above Right Pan -->
+    <circle cx="30" cy="5" r="14" fill="#10B981" stroke="#1A1D24" stroke-width="3"/>
+    <!-- Checkmark icon -->
+    <path d="M23 5L28 10L38 0" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

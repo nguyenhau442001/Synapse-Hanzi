@@ -1,0 +1,31 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Desk surface -->
+  <rect x="40" y="160" width="160" height="10" fill="#2D343E" rx="2"/>
+  
+  <!-- The Writer (Character) -->
+  <g transform="translate(120, 120)">
+    <!-- Head slumped -->
+    <circle cx="0" cy="-30" r="25" fill="#3D4756"/>
+    <!-- Tired eyes (closed lines) -->
+    <path d="M-12 -35 L-5 -32 M5 -35 L12 -32" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+    <!-- Slumped posture -->
+    <path d="M-20 0 C-20 20, 20 20, 20 0 L15 -20 L-15 -20 Z" fill="#3D4756"/>
+    <!-- Arm resting on desk -->
+    <path d="M-25 5 L-50 40" stroke="#3D4756" stroke-width="12" stroke-linecap="round"/>
+    <path d="M25 5 L50 20" stroke="#3D4756" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Cluttered/Rejected Social items -->
+  <!-- Champagne glass tipped over -->
+  <path d="M170 140 L185 140 L180 160 L175 160 Z" fill="#F59E0B" opacity="0.6"/>
+  <path d="M177.5 140 L177.5 120 M170 120 L185 120" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Stack of invitations/papers pushed away -->
+  <rect x="50" y="145" width="40" height="15" fill="#475569" transform="rotate(-10 70 150)"/>
+  <rect x="45" y="150" width="40" height="15" fill="#64748B" transform="rotate(5 65 155)"/>
+  
+  <!-- Accent light/mood -->
+  <circle cx="120" cy="120" r="80" fill="none" stroke="#334155" stroke-width="1" stroke-dasharray="4 4" opacity="0.3"/>
+</svg>

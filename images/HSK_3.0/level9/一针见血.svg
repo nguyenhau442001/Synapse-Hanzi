@@ -1,0 +1,76 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Subtle Grid / Accent Glow -->
+  <circle cx="150" cy="110" r="70" fill="#FF8C00" opacity="0.05" />
+  <circle cx="90" cy="130" r="50" fill="#4A90E2" opacity="0.05" />
+
+  <!-- Target / Core structure representing "point at issue" (management flaw / core problem) -->
+  <g transform="translate(140, 105)">
+    <!-- Outer target ring -->
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#2C323D" stroke-width="4" stroke-dasharray="6 4" />
+    <!-- Inner target ring -->
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#3A4252" stroke-width="3" />
+    <circle cx="0" cy="0" r="15" fill="none" stroke="#4A5568" stroke-width="2" />
+    
+    <!-- Central core/bullseye (The "flaw" or "vital point") -->
+    <circle cx="0" cy="0" r="8" fill="#FF5252" opacity="0.8" />
+    <circle cx="0" cy="0" r="3" fill="#FFE5E5" />
+  </g>
+
+  <!-- Dynamic Needle/Pin piercing directly into the center (一针见血) -->
+  <g transform="translate(140, 105)">
+    <!-- Motion lines showing direct, precise strike -->
+    <line x1="55" y1="-55" x2="20" y2="-20" stroke="#FFB74D" stroke-width="2" stroke-dasharray="4 4" opacity="0.8" />
+    <line x1="65" y1="-45" x2="25" y2="-15" stroke="#FFB74D" stroke-width="2" stroke-dasharray="4 4" opacity="0.6" />
+
+    <!-- The Needle / Pin itself -->
+    <g transform="rotate(-45)">
+      <!-- Needle body -->
+      <rect x="-3" y="-60" width="6" height="75" rx="3" fill="#E2E8F0" />
+      <rect x="-1.5" y="-60" width="3" height="75" fill="#FFFFFF" opacity="0.5" />
+      
+      <!-- Needle eye -->
+      <ellipse cx="0" cy="-45" rx="1.5" ry="5" fill="#1A1D24" />
+
+      <!-- Needle sharp tip piercing precisely at (0,0) -->
+      <polygon points="-3,15 3,15 0,25" fill="#FFB74D" />
+      <polygon points="0,15 3,15 0,25" fill="#FFA726" />
+    </g>
+
+    <!-- Precise Impact Spark / Effect -->
+    <g transform="translate(0, 0)">
+      <circle cx="0" cy="0" r="12" fill="none" stroke="#FF5252" stroke-width="2" opacity="0.8">
+        <animate attributeName="r" values="4;16" dur="1.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+      <path d="M-8 -8 L8 8 M-8 8 L8 -8" stroke="#FFB74D" stroke-width="2" stroke-linecap="round" />
+    </g>
+  </g>
+
+  <!-- Human Character Action (Indicating/Pointing/Piercing with precision) -->
+  <g transform="translate(45, 120)">
+    <!-- Character Body / Torso (Modern Flat Style) -->
+    <path d="M20 70 C20 45, 45 40, 60 40 C75 40, 100 45, 100 70 L100 95 L20 95 Z" fill="#2E384D" />
+    
+    <!-- Neck & Head -->
+    <rect x="52" y="24" width="16" height="20" fill="#E0A96D" />
+    <circle cx="60" cy="20" r="16" fill="#E0A96D" />
+    
+    <!-- Hair -->
+    <path d="M45 18 C45 8, 55 4, 63 4 C73 4, 77 12, 75 22 C70 20, 60 16, 45 18 Z" fill="#3E4C59" />
+
+    <!-- Focused Eye / Expression -->
+    <circle cx="67" cy="19" r="1.5" fill="#1A1D24" />
+    <path d="M64 15 Q68 14 71 16" stroke="#3E4C59" stroke-width="1.5" fill="none" stroke-linecap="round" />
+
+    <!-- Pointing / Directing Arm -->
+    <path d="M85 50 L115 85 L125 78 L95 45 Z" fill="#E0A96D" />
+    <!-- Extended Index Finger pointing towards target -->
+    <rect x="120" y="74" width="22" height="6" rx="3" fill="#E0A96D" transform="rotate(-15, 120, 74)" />
+
+    <!-- Sleeve -->
+    <path d="M80 48 L98 68 L88 74 L73 54 Z" fill="#4A90E2" />
+  </g>
+</svg>

@@ -1,0 +1,66 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <g transform="translate(0, 0)">
+    <!-- Ambient glow for warmth -->
+    <circle cx="120" cy="125" r="55" fill="#E67E22" opacity="0.1" filter="blur(10px)"/>
+
+    <!-- Main Ginger Root (Central Physical Object) -->
+    <g transform="translate(120, 120)">
+      <!-- Shadow -->
+      <ellipse cx="0" cy="52" rx="42" ry="10" fill="#101216" opacity="0.6"/>
+
+      <!-- Ginger Rhizome Base (Warm Golden-Orange Tones) -->
+      <!-- Back main body node -->
+      <path d="M -30,15 C -45,15 -52,-5 -40,-25 C -35,-33 -20,-35 -15,-25 C -5,-35 15,-32 25,-20 C 38,-15 42,5 30,22 C 15,35 -10,38 -30,15 Z" fill="#D35400"/>
+      
+      <!-- Main body chunks with overlapping contours -->
+      <path d="M -32,12 C -46,10 -50,-8 -38,-24 C -33,-31 -18,-33 -14,-24 C -4,-33 13,-30 22,-19 C 35,-14 38,4 27,20 C 13,32 -10,35 -32,12 Z" fill="#E67E22"/>
+
+      <!-- Secondary overlapping bulbous nodes (classic ginger knobs) -->
+      <!-- Left knob -->
+      <path d="M -35,5 C -52,5 -58,-15 -45,-30 C -38,-38 -25,-35 -22,-22 C -30,-15 -35,-2 -35,5 Z" fill="#F39C12"/>
+      <!-- Top central knob -->
+      <path d="M -15,-20 C -25,-35 -5,-50 10,-40 C 22,-32 18,-15 5,-18 C -5,-20 -10,-18 -15,-20 Z" fill="#F39C12"/>
+      <!-- Right main knob -->
+      <path d="M 8,-15 C 22,-25 42,-15 38,5 C 35,20 18,32 5,20 C -2,12 0,-5 8,-15 Z" fill="#Fabc3c"/>
+      <!-- Bottom front knob -->
+      <path d="M -20,10 C -30,25 -5,40 15,30 C 25,25 20,8 10,10 C -2,12 -10,5 -20,10 Z" fill="#F39C12"/>
+
+      <!-- Ginger Skin Texture Highlights & Growth Rings (Knots/Nodes) -->
+      <!-- Ring 1 (Left knob) -->
+      <path d="M -38,-12 C -42,-16 -40,-22 -32,-25" fill="none" stroke="#D35400" stroke-width="2.5" stroke-linecap="round"/>
+      <ellipse cx="-35" cy="-18" rx="2" ry="1" fill="#D35400" transform="rotate(-30 -35 -18)"/>
+
+      <!-- Ring 2 (Top knob) -->
+      <path d="M -5,-32 C 0,-38 5,-35 8,-28" fill="none" stroke="#D35400" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="2" cy="-33" r="1.5" fill="#D35400"/>
+
+      <!-- Ring 3 (Right knob) -->
+      <path d="M 22,-10 C 30,-5 32,5 25,12" fill="none" stroke="#D35400" stroke-width="2.5" stroke-linecap="round"/>
+      <ellipse cx="27" cy="2" rx="1.5" ry="2.5" fill="#D35400" transform="rotate(20 27 2)"/>
+
+      <!-- Ring 4 (Bottom front knob) -->
+      <path d="M -10,22 C 0,28 8,25 12,18" fill="none" stroke="#D35400" stroke-width="2.5" stroke-linecap="round"/>
+
+      <!-- Highlight Gloss (Clean flat design style sheen) -->
+      <path d="M -22,-15 C -25,-22 -18,-28 -12,-25" fill="none" stroke="#FDEBD0" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+      <path d="M 12,-5 C 18,-8 22,2 18,10" fill="none" stroke="#FDEBD0" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+
+      <!-- Freshly Cut Cross-Section Slice (Showing fibrous juicy interior) -->
+      <g transform="translate(38, 25) rotate(25)">
+        <!-- Slice Shadow -->
+        <ellipse cx="1" cy="3" rx="13" ry="9" fill="#101216" opacity="0.4"/>
+        <!-- Slice Body (Pale yellowish-green inner flesh) -->
+        <ellipse cx="0" cy="0" rx="13" ry="9" fill="#F9E79F"/>
+        <!-- Inner ring / fiber hint -->
+        <ellipse cx="0" cy="0" rx="10" ry="6" fill="none" stroke="#F7DC6F" stroke-width="1.5"/>
+        <!-- Center core dot -->
+        <circle cx="-1" cy="0" rx="1.5" ry="1" fill="#F39C12"/>
+        <!-- Slice Skin Edge -->
+        <path d="M -13,0 C -13,5 -6,9 0,9 C 6,9 13,5 13,0" fill="none" stroke="#E67E22" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

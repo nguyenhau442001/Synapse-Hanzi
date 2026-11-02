@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Wind/Flow representation as a natural force -->
+  <path d="M40 120 C 80 80, 120 80, 160 120 S 200 160, 240 120" stroke="#3A404D" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M20 150 C 60 110, 100 110, 140 150 S 180 190, 220 150" stroke="#3A404D" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- The "Object" (A Sailboat) representing the concept of moving with the momentum/current -->
+  <g transform="translate(120, 120)">
+    <!-- Boat Hull -->
+    <path d="M-40 10 L 40 10 L 25 40 L -25 40 Z" fill="#FFB84D"/>
+    
+    <!-- Mast -->
+    <rect x="-2" y="-60" width="4" height="70" fill="#E0E0E0"/>
+    
+    <!-- Sail catching the wind -->
+    <path d="M0 -55 L 45 0 L 0 0 Z" fill="#FFFFFF" opacity="0.9"/>
+    
+    <!-- Decorative wake/momentum lines -->
+    <path d="M-60 30 L -80 40" stroke="#FFB84D" stroke-width="2" stroke-linecap="round"/>
+    <path d="M-70 45 L -90 55" stroke="#FFB84D" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Outer Glow / Ambient Lighting for Tech Context -->
+  <circle cx="120" cy="120" r="85" fill="#222B38" opacity="0.6"/>
+
+  <!-- Satellite Dish / Radio Telescope (Context: 射电望远镜) -->
+  <g transform="translate(120, 120)">
+    <!-- Dish Back Structure -->
+    <path d="M -70 -20 C -70 40 -30 80 0 80 C 30 80 70 40 70 -20 Z" fill="#2E3B4E" stroke="#4A5D78" stroke-width="2"/>
+    
+    <!-- Dish Inner Reflective Surface -->
+    <ellipse cx="0" cy="0" rx="65" ry="55" fill="#3A4D66"/>
+    <ellipse cx="0" cy="0" rx="55" ry="45" fill="#2A394E"/>
+
+    <!-- Grid / Subreflector Lines for Tech Look -->
+    <path d="M 0 -55 L 0 55 M -65 0 L 65 0 M -45 -35 L 45 35 M -45 35 L 45 -35" stroke="#4A5D78" stroke-width="1" opacity="0.4"/>
+
+    <!-- Central Feed Horn / Receiver -->
+    <line x1="0" y1="0" x2="0" y2="-45" stroke="#94A3B8" stroke-width="3"/>
+    <polygon points="-6,-45 6,-45 4,-55 -4,-55" fill="#FFA726"/>
+
+    <!-- Stands / Mount -->
+    <path d="M -25 50 L -45 90 M 25 50 L 45 90 M -15 75 L 15 75" stroke="#4A5D78" stroke-width="4" stroke-linecap="round"/>
+    <rect x="-35" y="85" width="70" height="8" rx="3" fill="#1E293B"/>
+
+    <!-- EXACT SEMANTIC MEANING: 直径 (Diameter) - High contrast visual indicator -->
+    <!-- Diameter Line passing completely through the center of the ellipse -->
+    <line x1="-65" y1="0" x2="65" y2="0" stroke="#FF7043" stroke-width="3" stroke-dasharray="4,2"/>
+    
+    <!-- Center Point Marker -->
+    <circle cx="0" cy="0" r="4" fill="#FF7043"/>
+
+    <!-- Dimension Arrow Caps (Left) -->
+    <polygon points="-65,0 -55,-4 -55,4" fill="#FF7043"/>
+    
+    <!-- Dimension Arrow Caps (Right) -->
+    <polygon points="65,0 55,-4 55,4" fill="#FF7043"/>
+  </g>
+</svg>

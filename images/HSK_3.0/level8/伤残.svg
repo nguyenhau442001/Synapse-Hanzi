@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background grid/glow for depth -->
+  <circle cx="120" cy="120" r="80" fill="#222733" opacity="0.6"/>
+
+  <!-- Main Subject: Professional Industrial/Worker Safety & Medical Support Concept representing Injury/Disability (伤残) -->
+  <!-- Contextual elements: Safety helmet, medical support brace/cane, structural icon signifying occupational injury/care -->
+  
+  <g transform="translate(0, 5)">
+    <!-- Industrial Safety Helmet (Representing Worker/Occupational Context) -->
+    <path d="M 80 95 C 80 65, 100 55, 120 55 C 140 55, 160 65, 160 95 L 175 95 C 178 95, 180 98, 178 101 L 170 108 C 168 110, 165 110, 163 108 L 155 102 C 145 106, 133 108, 120 108 C 107 108, 95 106, 85 102 L 77 108 C 75 110, 72 110, 70 108 L 62 101 C 60 98, 62 95, 65 95 Z" fill="#F1A208"/>
+    <!-- Helmet Ridge -->
+    <path d="M 120 55 L 120 105" stroke="#D18906" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Medical/Support Symbol (Crutch & Support Brace integrated cleanly) -->
+    <!-- Vertical Support / Cane -->
+    <rect x="113" y="105" width="14" height="95" rx="7" fill="#8C9BAE"/>
+    <!-- Cane Handle -->
+    <path d="M 100 112 C 100 104, 106 98, 114 98 L 126 98 C 134 98, 140 104, 140 112 L 140 115 C 140 118, 137 120, 134 120 L 106 120 C 103 120, 100 118, 100 115 Z" fill="#627D98"/>
+    
+    <!-- Medical Cross Badge (Signifying care, insurance, rehabilitation) -->
+    <circle cx="120" cy="155" r="22" fill="#E2E8F0"/>
+    <rect x="114" y="143" width="12" height="24" rx="3" fill="#D93838"/>
+    <rect x="108" y="149" width="24" height="12" rx="3" fill="#D93838"/>
+    
+    <!-- Protective Shield outline (Signifying rights, insurance security - 保险保障) -->
+    <path d="M 120 30 C 145 30, 175 38, 185 45 C 185 85, 170 140, 120 185 C 70 140, 55 85, 55 45 C 65 38, 95 30, 120 30 Z" fill="none" stroke="#334E68" stroke-width="4" stroke-dasharray="6 4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

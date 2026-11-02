@@ -1,0 +1,53 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Base Platform -->
+    <path d="M70 170 L170 170 L190 195 L50 195 Z" fill="#2A2F3D" stroke="#3E4556" stroke-width="2"/>
+    <ellipse cx="120" cy="170" rx="50" ry="8" fill="#353B4B"/>
+
+    <!-- Left Object (Baseline / Older Version) -->
+    <g transform="translate(85, 115)">
+      <!-- Cube body -->
+      <path d="M-20 15 L0 25 L20 15 L20 -15 L0 -25 L-20 -15 Z" fill="#2D3748" stroke="#4A5568" stroke-width="2"/>
+      <path d="M0 -25 L0 25" stroke="#4A5568" stroke-width="2"/>
+      <path d="M-20 -15 L0 -5 L20 -15" fill="none" stroke="#4A5568" stroke-width="2"/>
+      <!-- Subtle marker -->
+      <circle cx="0" cy="0" r="4" fill="#718096"/>
+    </g>
+
+    <!-- Right Object (Slightly elevated / Newer Version representing "略微提升") -->
+    <g transform="translate(155, 105)">
+      <!-- Glow effect indicating slight enhancement -->
+      <ellipse cx="0" cy="30" rx="22" ry="6" fill="#F6AD55" opacity="0.2"/>
+      
+      <!-- Cube body (lifted higher and highlighted) -->
+      <path d="M-20 15 L0 25 L20 15 L20 -15 L0 -25 L-20 -15 Z" fill="#2B3A4A" stroke="#ED8936" stroke-width="2"/>
+      <path d="M0 -25 L0 25" stroke="#ED8936" stroke-width="2"/>
+      <path d="M-20 -15 L0 -5 L20 -15" fill="none" stroke="#ED8936" stroke-width="2"/>
+      
+      <!-- Highlight marker -->
+      <circle cx="0" cy="0" r="5" fill="#ED8936"/>
+      <circle cx="0" cy="0" r="2" fill="#FFF"/>
+    </g>
+
+    <!-- Precise, subtle indicator bracket showing the minute difference/step -->
+    <g transform="translate(0, 0)">
+      <!-- Vertical reference line for left object -->
+      <line x1="85" y1="90" x2="85" y2="135" stroke="#4A5568" stroke-width="1.5" stroke-dasharray="2 2"/>
+      <!-- Vertical reference line for right object -->
+      <line x1="155" y1="80" x2="155" y2="125" stroke="#ED8936" stroke-width="1.5" stroke-dasharray="2 2"/>
+      
+      <!-- Step-up bracket indicating 'slight' (略微) height delta -->
+      <path d="M 85 85 L 120 85 L 120 75 L 155 75" fill="none" stroke="#ED8936" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- Tiny upward arrow at the end of bracket -->
+      <path d="M 150 70 L 155 75 L 160 70" fill="none" stroke="#ED8936" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Decorative subtle tech particles -->
+    <circle cx="120" cy="115" r="1.5" fill="#ED8936" opacity="0.6"/>
+    <circle cx="105" cy="130" r="1" fill="#718096" opacity="0.6"/>
+    <circle cx="138" cy="95" r="1" fill="#ED8936" opacity="0.8"/>
+  </g>
+</svg>

@@ -1,0 +1,77 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambient / Stage Spotlight Effect -->
+  <path d="M70 40 L170 40 L210 190 L30 190 Z" fill="#222733" opacity="0.6"/>
+  <ellipse cx="120" cy="190" rx="90" ry="15" fill="#121418"/>
+
+  <!-- Audience Silhouettes in the foreground (curved row, reacting with dynamic motion lines) -->
+  <!-- Left audience member laughing hard (leaning back) -->
+  <path d="M25 195 Q35 170 50 160 Q65 175 70 195 Z" fill="#2E3544"/>
+  <circle cx="50" cy="148" r="11" fill="#2E3544"/>
+  <!-- Head tilted back laughing motion -->
+  <path d="M44 140 Q58 132 62 144" stroke="#F5A623" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Left-Center audience member leaning forward holding stomach -->
+  <path d="M75 195 Q85 165 100 170 Q115 175 125 195 Z" fill="#363E52"/>
+  <circle cx="95" cy="155" r="12" fill="#363E52"/>
+  <!-- Motion lines for collective explosion of laughter -->
+  <path d="M85 138 C80 130 75 125 68 120" stroke="#F5A623" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M105 138 C110 130 115 125 122 120" stroke="#F5A623" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <!-- Right-Center audience member clapping/holding hands up -->
+  <path d="M135 195 Q145 168 160 165 Q175 172 185 195 Z" fill="#2E3544"/>
+  <circle cx="160" cy="150" r="12" fill="#2E3544"/>
+
+  <!-- Right audience member leaning -->
+  <path d="M185 195 Q195 172 210 160 Q220 175 225 195 Z" fill="#363E52"/>
+  <circle cx="210" cy="148" r="11" fill="#363E52"/>
+
+  <!-- Center Focal Point: Comedian / Speaker on Stage -->
+  <!-- Stage floor line -->
+  <line x1="20" y1="195" x2="220" y2="195" stroke="#3E485D" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Microphone Stand -->
+  <line x1="120" y1="195" x2="120" y2="120" stroke="#718096" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="120" cy="114" r="5" fill="#A0AEC0"/>
+  <path d="M112 195 L128 195" stroke="#718096" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Speaker Body (Dynamic action: telling the joke, expressive posture) -->
+  <!-- Torso & Jacket -->
+  <path d="M104 140 L136 140 L142 195 L98 195 Z" fill="#F5A623"/>
+  <path d="M112 140 L128 140 L132 195 L108 195 Z" fill="#D97706"/> <!-- Jacket lapel/inner -->
+
+  <!-- Head (tilted dynamically while speaking) -->
+  <circle cx="123" cy="122" r="13" fill="#E2E8F0"/>
+  <!-- Hair -->
+  <path d="M110 120 Q122 106 136 120 Z" fill="#2D3748"/>
+
+  <!-- Gesturing arms (emphasizing the punchline "包袱") -->
+  <!-- Left arm pointing / making comedic gesture -->
+  <path d="M104 145 L78 135 L84 125" stroke="#E2E8F0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Right arm bent near mic -->
+  <path d="M136 145 L148 135" stroke="#E2E8F0" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- Sound/Joy Wave Action Lines radiating outwards (Cả phòng cười ồ / Roaring laughter) -->
+  <!-- Left waves -->
+  <path d="M38 105 C28 115 28 135 38 145" stroke="#F5A623" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M26 95 C12 112 12 138 26 155" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.5"/>
+
+  <!-- Right waves -->
+  <path d="M202 105 C212 115 212 135 202 145" stroke="#F5A623" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M214 95 C228 112 228 138 214 155" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.5"/>
+
+  <!-- Top explosive laughter sparks / kinetic comedy energy -->
+  <circle cx="95" cy="85" r="4" fill="#F5A623"/>
+  <path d="M91 85 L99 85 M95 81 L95 89" stroke="#1A1D24" stroke-width="1.5" stroke-linecap="round"/>
+
+  <circle cx="145" cy="80" r="5" fill="#F5A623"/>
+  <path d="M140 80 L150 80 M145 75 L145 85" stroke="#1A1D24" stroke-width="1.5" stroke-linecap="round"/>
+
+  <circle cx="120" cy="70" r="3.5" fill="#F5A623"/>
+
+  <circle cx="70" cy="100" r="3" fill="#F5A623"/>
+  <circle cx="170" cy="95" r="3" fill="#F5A623"/>
+
+</svg>

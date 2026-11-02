@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Old Paper Ticket (Fading/Exiting) -->
+  <g opacity="0.4">
+    <rect x="60" y="70" width="80" height="40" rx="4" fill="#5D6D7E" stroke="#1A1D24" stroke-width="2"/>
+    <rect x="65" y="80" width="70" height="4" rx="2" fill="#34495E"/>
+    <rect x="65" y="90" width="50" height="4" rx="2" fill="#34495E"/>
+    <circle cx="130" cy="100" r="5" fill="#34495E"/>
+  </g>
+
+  <!-- Arrow indicating transition -->
+  <path d="M145 120 L175 120 M165 110 L175 120 L165 130" stroke="#F39C12" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- New Electronic Ticket (Focus/Active) -->
+  <g>
+    <rect x="100" y="130" width="80" height="40" rx="6" fill="#F39C12" stroke="#1A1D24" stroke-width="2"/>
+    <rect x="110" y="140" width="60" height="20" rx="2" fill="#1A1D24"/>
+    <rect x="115" y="145" width="50" height="2" rx="1" fill="#F39C12"/>
+    <rect x="115" y="152" width="30" height="2" rx="1" fill="#F39C12"/>
+    <circle cx="165" cy="160" r="4" fill="#1A1D24"/>
+  </g>
+</svg>

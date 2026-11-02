@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle grid and atmosphere lines -->
+  <g opacity="0.15">
+    <line x1="30" y1="180" x2="210" y2="180" stroke="#64748B" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="30" y1="130" x2="210" y2="130" stroke="#64748B" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="30" y1="80" x2="210" y2="80" stroke="#64748B" stroke-width="1" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Physical object representing the physical drop/plunge of the market/commodity -->
+  <!-- Falling sleek modern cylindrical barrel / oil drum representing commodity/crude oil plunge -->
+  <g transform="translate(0, 5)">
+    <!-- Motion trail / speed lines -->
+    <path d="M120 40 L120 75" stroke="#EF4444" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 6" opacity="0.6"/>
+    <path d="M100 50 L100 80" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4" opacity="0.4"/>
+    <path d="M140 50 L140 80" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4" opacity="0.4"/>
+
+    <!-- The Oil Barrel (Object of the plunge) -->
+    <g transform="translate(90, 80)">
+      <!-- Barrel Body -->
+      <path d="M0 15 C0 10, 10 5, 30 5 C50 5, 60 10, 60 15 L60 65 C60 70, 50 75, 30 75 C10 75, 0 70, 0 65 Z" fill="#3B82F6"/>
+      <!-- Barrel Top Rim -->
+      <ellipse cx="30" cy="5" rx="30" ry="6" fill="#60A5FA"/>
+      <ellipse cx="30" cy="5" rx="24" ry="4" fill="#2563EB"/>
+      <!-- Ribs / Bands -->
+      <path d="M0 25 C10 28, 50 28, 60 25" stroke="#1D4ED8" stroke-width="4" fill="none"/>
+      <path d="M0 50 C10 53, 50 53, 60 50" stroke="#1D4ED8" stroke-width="4" fill="none"/>
+      <!-- Warning / Accent Stripe -->
+      <path d="M0 32 L60 32 L60 42 L0 42 Z" fill="#F59E0B" opacity="0.9"/>
+      <!-- Barrel Bottom Depth -->
+      <path d="M0 65 C10 70, 50 70, 60 65 C60 72, 50 77, 30 77 C10 77, 0 72, 0 65 Z" fill="#1E40AF"/>
+    </g>
+
+    <!-- Large Sharp Red Downward Arrow piercing through/behind the drop -->
+    <path d="M120 20 L120 170 M120 170 L95 145 M120 170 L145 145" stroke="#EF4444" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M120 20 L120 170 M120 170 L95 145 M120 170 L145 145" stroke="#FCA5A5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- Ground impact / shadow indication at the bottom -->
+  <ellipse cx="120" cy="205" rx="45" ry="8" fill="#0F172A" opacity="0.8"/>
+  <ellipse cx="120" cy="205" rx="25" ry="4" fill="#EF4444" opacity="0.3"/>
+</svg>

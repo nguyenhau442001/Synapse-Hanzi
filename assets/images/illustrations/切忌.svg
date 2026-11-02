@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Pill/Medicine representation -->
+  <rect x="60" y="140" width="40" height="20" rx="10" fill="#FFB800"/>
+  <rect x="100" y="140" width="40" height="20" rx="10" fill="#FFFFFF"/>
+  
+  <!-- Hand gesture representing "Stop/Avoid" (The "切忌" action) -->
+  <path d="M160 150 C160 120 180 110 200 110 C220 110 240 120 240 150 L240 190 C240 200 230 210 220 210 L180 210 C170 210 160 200 160 190 Z" fill="#FF5252"/>
+  <rect x="185" y="130" width="10" height="60" rx="5" fill="#FFFFFF"/>
+  <rect x="170" y="145" width="40" height="10" rx="5" fill="#FFFFFF"/>
+  
+  <!-- Alcohol glass representation (The prohibited item) -->
+  <path d="M70 80 L130 80 L120 130 L80 130 Z" fill="none" stroke="#FF5252" stroke-width="4"/>
+  <line x1="70" y1="80" x2="130" y2="130" stroke="#FF5252" stroke-width="4"/>
+  <line x1="130" y1="80" x2="70" y2="130" stroke="#FF5252" stroke-width="4"/>
+  
+  <!-- Contrast: Medicine is gold/white (safe), Alcohol is red/crossed out (danger/avoid) -->
+  <circle cx="100" cy="150" r="5" fill="#1A1D24"/>
+</svg>

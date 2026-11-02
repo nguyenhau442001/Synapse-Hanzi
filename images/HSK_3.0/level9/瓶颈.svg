@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Graphic Elements representing "瓶颈" (Bottleneck / Narrow neck of a bottle) -->
+  <g transform="translate(120, 120)">
+    <!-- Glow effect behind the bottleneck -->
+    <ellipse cx="0" cy="15" rx="36" ry="12" fill="#F59E0B" opacity="0.15"/>
+    
+    <!-- Main Bottle Body (Wide bottom fading out) -->
+    <path d="M -45 40 
+             L -55 85 
+             Q -58 95 -45 95 
+             L 45 95 
+             Q 58 95 55 85 
+             L 45 40 Z" 
+          fill="#2A3241" opacity="0.8"/>
+    
+    <!-- Bottle Neck (The narrow "瓶颈" point) -->
+    <path d="M -22 15 
+             L -22 -35 
+             Q -22 -45 -12 -45 
+             L 12 -45 
+             Q 22 -45 22 -35 
+             L 22 15 Z" 
+          fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+          
+    <!-- Bottle Rim -->
+    <ellipse cx="0" cy="-45" rx="12" ry="4" fill="#3B82F6" opacity="0.8"/>
+
+    <!-- Flow / Obstruction visualization (Particles blocked at the narrow neck) -->
+    <!-- Blocked / Stressed particles at the bottom of the neck -->
+    <circle cx="-12" cy="22" r="5" fill="#EF4444"/>
+    <circle cx="0" cy="25" r="5" fill="#EF4444"/>
+    <circle cx="12" cy="22" r="5" fill="#EF4444"/>
+    <circle cx="-6" cy="32" r="5" fill="#EF4444"/>
+    <circle cx="6" cy="32" r="5" fill="#EF4444"/>
+
+    <!-- Squeezed particles passing through the bottleneck -->
+    <circle cx="0" cy="-5" r="4" fill="#F59E0B"/>
+    <circle cx="0" cy="-20" r="4" fill="#F59E0B"/>
+    <circle cx="0" cy="-35" r="4" fill="#F59E0B"/>
+
+    <!-- Breakthrough / Success indicator (Glowing particles exiting the top rim) -->
+    <circle cx="0" cy="-58" r="3" fill="#10B981"/>
+    <circle cx="-8" cy="-66" r="2.5" fill="#10B981"/>
+    <circle cx="8" cy="-66" r="2.5" fill="#10B981"/>
+
+    <!-- Upward directional arrows showing breakthrough motion -->
+    <path d="M -15 -80 L 0 -95 L 15 -80" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 0 -88 L 0 -72" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

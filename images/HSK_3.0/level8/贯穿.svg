@@ -1,0 +1,81 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed dark mode container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- City Skyline Background (Modern Flat Design) -->
+  <g fill="#252A34" opacity="0.6">
+    <!-- Left buildings -->
+    <rect x="24" y="110" width="28" height="90" rx="2"/>
+    <rect x="54" y="90" width="34" height="110" rx="2"/>
+    <rect x="90" y="125" width="22" height="75" rx="2"/>
+    <!-- Right buildings -->
+    <rect x="130" y="115" width="26" height="85" rx="2"/>
+    <rect x="158" y="85" width="36" height="115" rx="2"/>
+    <rect x="196" y="105" width="20" height="95" rx="2"/>
+    <!-- Windows pattern (subtle) -->
+    <fill color="#2F3643"/>
+    <rect x="30" y="120" width="6" height="8" fill="#2F3643"/>
+    <rect x="40" y="120" width="6" height="8" fill="#2F3643"/>
+    <rect x="62" y="100" width="8" height="10" fill="#2F3643"/>
+    <rect x="74" y="100" width="8" height="10" fill="#2F3643"/>
+    <rect x="166" y="95" width="8" height="12" fill="#2F3643"/>
+    <rect x="180" y="95" width="8" height="12" fill="#2F3643"/>
+  </g>
+
+  <!-- Ground Plane -->
+  <rect x="0" y="195" width="240" height="5" fill="#15181F"/>
+
+  <!-- The Green Ecological Corridor (贯穿 - Running through from East to West) -->
+  <g>
+    <!-- Corridor Base / Pathway -->
+    <path d="M 0 160 Q 120 135 240 160" fill="none" stroke="#2D3748" stroke-width="26" stroke-linecap="round"/>
+    
+    <!-- Vibrant Green Ecological Path (Xuyên suốt) -->
+    <path d="M 0 160 Q 120 135 240 160" fill="none" stroke="#2ECC71" stroke-width="16" stroke-linecap="round"/>
+    
+    <!-- Center Walking/Biking Lane Dash -->
+    <path d="M 10 160 Q 120 135 230 160" fill="none" stroke="#E2E8F0" stroke-width="2" stroke-dasharray="6,6" stroke-linecap="round" opacity="0.8"/>
+  </g>
+
+  <!-- Foliage / Trees along the Corridor (Accent elements) -->
+  <g>
+    <!-- Tree 1 (Left) -->
+    <circle cx="50" cy="143" r="10" fill="#27AE60"/>
+    <circle cx="45" cy="148" r="8" fill="#2ECC71"/>
+    <line x1="47.5" y1="151" x2="47.5" y2="158" stroke="#7F8C8D" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Tree 2 (Mid-Left) -->
+    <circle cx="95" cy="139" r="12" fill="#27AE60"/>
+    <circle cx="101" cy="145" r="9" fill="#2ECC71"/>
+    <line x1="98" y1="149" x2="98" y2="157" stroke="#7F8C8D" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Tree 3 (Center) -->
+    <circle cx="120" cy="138" r="14" fill="#27AE60"/>
+    <circle cx="115" cy="143" r="10" fill="#2ECC71"/>
+    <line x1="117.5" y1="148" x2="117.5" y2="157" stroke="#7F8C8D" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Tree 4 (Mid-Right) -->
+    <circle cx="155" cy="141" r="11" fill="#27AE60"/>
+    <circle cx="160" cy="147" r="8" fill="#2ECC71"/>
+    <line x1="157.5" y1="150" x2="157.5" y2="158" stroke="#7F8C8D" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Tree 5 (Right) -->
+    <circle cx="195" cy="145" r="10" fill="#27AE60"/>
+    <circle cx="191" cy="150" r="7" fill="#2ECC71"/>
+    <line x1="193" y1="153" x2="193" y2="160" stroke="#7F8C8D" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Directional Flow Indicator (Gold/Orange High-Contrast Accent for Focus) -->
+  <g opacity="0.9">
+    <!-- West to East arrow flow tracing the exact curve -->
+    <path d="M 40 152 Q 120 127 200 152" fill="none" stroke="#F39C12" stroke-width="3" stroke-dasharray="4,8" stroke-linecap="round"/>
+    
+    <!-- Arrowhead at the right end -->
+    <polygon points="198,146 208,152 198,158" fill="#F39C12"/>
+    <!-- Arrowhead at the left start (to emphasize comprehensive spanning) -->
+    <polygon points="42,146 32,152 42,158" fill="#F39C12"/>
+  </g>
+
+  <!-- Foreground Atmospheric Lighting / Modern Touch -->
+  <circle cx="120" cy="40" r="80" fill="#3498DB" opacity="0.05" filter="blur(20px)"/>
+</svg>

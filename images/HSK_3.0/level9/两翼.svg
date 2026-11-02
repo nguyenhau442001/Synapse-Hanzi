@@ -1,0 +1,49 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Strategic Grid / Terrain Lines -->
+  <path d="M40 180 L120 140 L200 180" stroke="#2A313E" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+  <path d="M40 140 L120 100 L200 140" stroke="#2A313E" stroke-width="2" fill="none"/>
+  
+  <!-- Central Main Force (Frontal Assault) -->
+  <g transform="translate(120, 150)">
+    <!-- Shield/Unit Base -->
+    <path d="M-14 10 L0 0 L14 10 L10 22 L-10 22 Z" fill="#3B82F6"/>
+    <polygon points="0,-12 12,6 -12,6" fill="#60A5FA"/>
+    <!-- Forward Arrow (Main Attack) -->
+    <path d="M0 -15 L0 -35 M-6 -25 L0 -35 L6 -25" stroke="#60A5FA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Left Flank (Liǎngyì - Left Wing) -->
+  <g transform="translate(65, 95)">
+    <!-- Glowing Focus Accent Behind Left Flank -->
+    <circle cx="0" cy="0" r="22" fill="#F59E0B" opacity="0.15"/>
+    <!-- Unit Icon -->
+    <path d="M-12 8 L0 -2 L12 8 L8 18 L-8 18 Z" fill="#D97706"/>
+    <polygon points="0,-10 10,4 -10,4" fill="#FBBF24"/>
+    <!-- Envelopment Curved Arrow -->
+    <path d="M12 -8 C25 -5 35 15 45 35" stroke="#FBBF24" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M38 32 L46 38 L42 28" fill="#FBBF24"/>
+  </g>
+
+  <!-- Right Flank (Liǎngyì - Right Wing) -->
+  <g transform="translate(175, 95)">
+    <!-- Glowing Focus Accent Behind Right Flank -->
+    <circle cx="0" cy="0" r="22" fill="#F59E0B" opacity="0.15"/>
+    <!-- Unit Icon -->
+    <path d="M-12 8 L0 -2 L12 8 L8 18 L-8 18 Z" fill="#D97706"/>
+    <polygon points="0,-10 10,4 -10,4" fill="#FBBF24"/>
+    <!-- Envelopment Curved Arrow -->
+    <path d="M-12 -8 C-25 -5 -35 15 -45 35" stroke="#FBBF24" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M-38 32 L-46 38 L-42 28" fill="#FBBF24"/>
+  </g>
+
+  <!-- Enemy Target Position (Top Center) -->
+  <g transform="translate(120, 50)">
+    <circle cx="0" cy="0" r="16" fill="#EF4444" opacity="0.2"/>
+    <circle cx="0" cy="0" r="10" fill="#EF4444" opacity="0.4"/>
+    <circle cx="0" cy="0" r="4" fill="#EF4444"/>
+    <!-- Target Crosshairs -->
+    <path d="M0 -18 L0 -12 M0 12 L0 18 M-18 0 L-12 0 M12 0 L18 0" stroke="#EF4444" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

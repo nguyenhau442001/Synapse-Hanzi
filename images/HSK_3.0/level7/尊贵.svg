@@ -1,0 +1,63 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow to highlight the central subject -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.6"/>
+  <circle cx="120" cy="120" r="50" fill="#D4AF37" opacity="0.08"/>
+
+  <!-- Conceptual Representation of "尊贵" (Noble / Distinguished VIP Personage) -->
+  <g transform="translate(0, 5)">
+    <!-- Floor reflection / shadow -->
+    <ellipse cx="120" cy="195" rx="55" ry="8" fill="#111318"/>
+
+    <!-- Tailored Suit Jacket (Torso) -->
+    <path d="M 85 190 L 88 140 L 105 125 L 120 135 L 135 125 L 152 140 L 155 190 Z" fill="#2C3E50"/>
+    
+    <!-- Inner Shirt -->
+    <polygon points="105,125 120,155 135,125" fill="#FFFFFF"/>
+
+    <!-- Tie & Collar (Gold Accent representing prestige/zunwei) -->
+    <polygon points="115,125 125,125 122,165 118,165" fill="#D4AF37"/>
+    <polygon points="113,125 120,138 127,125" fill="#C5A028"/>
+
+    <!-- Lapels -->
+    <path d="M 105 125 L 115 160 L 120 135 Z" fill="#1E2B37"/>
+    <path d="M 135 125 L 125 160 L 120 135 Z" fill="#1E2B37"/>
+
+    <!-- Shoulders / Suit Outer -->
+    <path d="M 85 145 C 80 145 70 155 65 170 L 88 190 L 95 160 Z" fill="#243342"/>
+    <path d="M 155 145 C 160 145 170 155 175 170 L 152 190 L 145 160 Z" fill="#243342"/>
+
+    <!-- Neck -->
+    <rect x="112" y="112" width="16" height="20" rx="4" fill="#E8BEAC"/>
+
+    <!-- Head / Face (Calm, dignified expression) -->
+    <ellipse cx="120" cy="95" rx="22" ry="26" fill="#E8BEAC"/>
+
+    <!-- Hair (Sleek, modern professional styling) -->
+    <path d="M 98 90 C 96 70 108 66 120 66 C 132 66 144 70 142 90 C 142 94 140 92 140 85 C 140 73 130 70 120 70 C 110 70 100 73 100 85 C 100 92 98 94 98 90 Z" fill="#2C2C2C"/>
+
+    <!-- Facial Features (Subtle, minimalist, dignified) -->
+    <!-- Eyes -->
+    <line x1="110" y1="92" x2="116" y2="94" stroke="#4A3B32" stroke-width="2" stroke-linecap="round"/>
+    <line x1="124" y1="94" x2="130" y2="92" stroke="#4A3B32" stroke-width="2" stroke-linecap="round"/>
+    <!-- Gentle confident smile -->
+    <path d="M 115 106 Q 120 110 125 106" fill="none" stroke="#A77B66" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- VIP Laurel / Crown Elements (Subtle floating gold laurel framing the head to signify "尊贵" / Distinguished status) -->
+    <!-- Left Laurel Leaf -->
+    <path d="M 90 85 C 80 80 75 95 85 105 C 90 110 93 105 90 100 C 87 95 90 90 90 85 Z" fill="#D4AF37"/>
+    <!-- Right Laurel Leaf -->
+    <path d="M 150 85 C 160 80 165 95 155 105 C 150 110 147 105 150 100 C 153 95 150 90 150 85 Z" fill="#D4AF37"/>
+
+    <!-- Elegant Gold Star / Emblem pinned on lapel -->
+    <polygon points="138,145 141,152 149,153 143,158 145,165 138,161 131,165 133,158 127,153 135,152" fill="#F1C40F" transform="translate(0, -3) scale(0.45) translate(160, 320)"/>
+  </g>
+
+  <!-- Framing UI/UX subtle accent dots -->
+  <circle cx="30" cy="30" r="3" fill="#D4AF37" opacity="0.4"/>
+  <circle cx="210" cy="30" r="3" fill="#D4AF37" opacity="0.4"/>
+  <circle cx="30" cy="210" r="3" fill="#D4AF37" opacity="0.4"/>
+  <circle cx="210" cy="210" r="3" fill="#D4AF37" opacity="0.4"/>
+</svg>

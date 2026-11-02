@@ -1,0 +1,18 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(60, 60)">
+    <!-- Senior figure (mentor) -->
+    <path d="M60 40 C60 20 75 5 95 5 C115 5 130 20 130 40 L130 70 L60 70 Z" fill="#4A5568"/>
+    <path d="M70 70 L70 110 C70 115 75 120 80 120 L110 120 C115 120 120 115 120 110 L120 70" fill="#4A5568"/>
+    <circle cx="95" cy="30" r="15" fill="#A0AEC0"/>
+    
+    <!-- Junior figure (successor) -->
+    <path d="M20 80 C20 60 35 45 55 45 C75 45 90 60 90 80 L90 110 L20 110 Z" fill="#F6AD55"/>
+    <path d="M30 110 L30 150 C30 155 35 160 40 160 L70 160 C75 160 80 155 80 150 L80 110" fill="#F6AD55"/>
+    <circle cx="55" cy="70" r="15" fill="#FBD38D"/>
+    
+    <!-- Passing the baton/torch -->
+    <rect x="75" y="85" width="40" height="8" rx="4" fill="#ECC94B" transform="rotate(-20 95 89)"/>
+    <path d="M110 75 L125 60" stroke="#ECC94B" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>

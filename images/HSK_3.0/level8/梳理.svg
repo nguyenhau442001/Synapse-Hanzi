@@ -1,0 +1,71 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle grid/lines representing documents/structure -->
+  <g opacity="0.15" stroke="#4F46E5" stroke-width="1.5" stroke-dasharray="4 4">
+    <line x1="40" y1="60" x2="200" y2="60"/>
+    <line x1="40" y1="100" x2="200" y2="100"/>
+    <line x1="40" y1="140" x2="200" y2="140"/>
+    <line x1="40" y1="180" x2="200" y2="180"/>
+  </g>
+
+  <!-- Central Physical Object: A modern, elegant comb/sorter organizing cascading document layers (Systematizing / Reviewing) -->
+  <g transform="translate(0, 5)">
+    <!-- Scattered Document Cards (Before sorting) -->
+    <g opacity="0.4" transform="translate(0, -5)">
+      <rect x="50" y="35" width="45" height="30" rx="4" fill="#3B82F6"/>
+      <line x1="58" y1="45" x2="85" y2="45" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+      <line x1="58" y1="53" x2="75" y2="53" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+
+      <rect x="145" y="45" width="45" height="30" rx="4" fill="#3B82F6" transform="rotate(15 167 60)"/>
+      <line x1="153" y1="55" x2="180" y2="55" stroke="#1A1D24" stroke-width="2" stroke-linecap="round" transform="rotate(15 167 60)"/>
+    </g>
+
+    <!-- Organized Document Flow (After sorting) -->
+    <g transform="translate(0, 10)">
+      <!-- Document Layer 3 (Back) -->
+      <rect x="65" y="115" width="110" height="65" rx="6" fill="#2563EB" opacity="0.6"/>
+      <line x1="80" y1="135" x2="140" y2="135" stroke="#93C5FD" stroke-width="3" stroke-linecap="round"/>
+      <line x1="80" y1="150" x2="120" y2="150" stroke="#93C5FD" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- Document Layer 2 (Middle) -->
+      <rect x="60" y="95" width="120" height="65" rx="6" fill="#3B82F6" opacity="0.85"/>
+      <line x1="75" y1="115" x2="145" y2="115" stroke="#E0E7FF" stroke-width="3" stroke-linecap="round"/>
+      <line x1="75" y1="130" x2="125" y2="130" stroke="#E0E7FF" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- Document Layer 1 (Front / Focus) -->
+      <rect x="55" y="75" width="130" height="65" rx="6" fill="#60A5FA"/>
+      <!-- Text Lines Mockup -->
+      <line x1="70" y1="95" x2="160" y2="95" stroke="#1E293B" stroke-width="3.5" stroke-linecap="round"/>
+      <line x1="70" y1="110" x2="135" y2="110" stroke="#1E293B" stroke-width="3.5" stroke-linecap="round"/>
+      <!-- Checkmark indicator of systematization -->
+      <circle cx="160" cy="110" r="8" fill="#10B981"/>
+      <path d="M156 110 L159 113 L164 107" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- The physical Comb/Sorting Tool ("梳" - shū) passing through, organizing -->
+    <g transform="translate(15, 0)">
+      <!-- Comb Handle -->
+      <path d="M110,25 C110,19.4772 114.477,15 120,15 L120,15 C125.523,15 130,19.4772 130,25 L130,55 L110,55 Z" fill="#F59E0B"/>
+      
+      <!-- Comb Spine -->
+      <rect x="85" y="55"
+            width="70" height="12" rx="3" fill="#D97706"/>
+
+      <!-- Comb Teeth (Passing down through documents) -->
+      <g fill="#FBBF24">
+        <rect x="91" y="67" width="3" height="90" rx="1.5"/>
+        <rect x="101" y="67" width="3" height="90" rx="1.5"/>
+        <rect x="111" y="67" width="3" height="90" rx="1.5"/>
+        <rect x="121" y="67" width="3" height="90" rx="1.5"/>
+        <rect x="131" y="67" width="3" height="90" rx="1.5"/>
+        <rect x="141" y="67" width="3" height="90" rx="1.5"/>
+        <rect x="151" y="67" width="3" height="90" rx="1.5"/>
+      </g>
+    </g>
+
+    <!-- Motion/Sorting Effect Indicator Arcs -->
+    <path d="M45,85 C35,100 35,120 45,135" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 4"/>
+    <path d="M195,85 C205,100 205,120 195,135" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 4"/>
+  </g>
+</svg>

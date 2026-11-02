@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Father (Left side, older features) -->
+  <g transform="translate(40, 60)">
+    <circle cx="40" cy="40" r="35" fill="#FFB74D"/>
+    <path d="M25 35 Q30 30 35 35 M45 35 Q50 30 55 35" stroke="#1A1D24" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="28" cy="45" r="4" fill="#1A1D24"/>
+    <circle cx="52" cy="45" r="4" fill="#1A1D24"/>
+    <path d="M30 60 Q40 68 50 60" stroke="#1A1D24" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <rect x="35" y="80" width="10" height="40" rx="2" fill="#FFB74D"/>
+  </g>
+
+  <!-- Son (Right side, younger features, identical style) -->
+  <g transform="translate(130, 90)">
+    <circle cx="40" cy="40" r="25" fill="#FFB74D"/>
+    <path d="M30 35 Q33 32 36 35 M44 35 Q47 32 50 35" stroke="#1A1D24" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <circle cx="32" cy="42" r="3" fill="#1A1D24"/>
+    <circle cx="48" cy="42" r="3" fill="#1A1D24"/>
+    <path d="M33 52 Q40 58 47 52" stroke="#1A1D24" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <rect x="35" y="65" width="10" height="30" rx="2" fill="#FFB74D"/>
+  </g>
+
+  <!-- Connection line indicating similarity -->
+  <path d="M115 100 L130 100" stroke="#FFB74D" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>

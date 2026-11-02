@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Elderly person character -->
+  <g transform="translate(120, 130)">
+    <!-- Cane -->
+    <path d="M 25 0 L 25 60 M 20 0 L 30 0" stroke="#FFB347" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Body/Clothing -->
+    <path d="M -30 60 C -30 20, 30 20, 30 60 L 20 100 L -20 100 Z" fill="#7D8597"/>
+    
+    <!-- Head -->
+    <circle cx="0" cy="-10" r="25" fill="#E2E8F0"/>
+    
+    <!-- Hair (White/Grey) -->
+    <path d="M -25 -10 A 25 25 0 0 1 25 -10 A 25 25 0 0 1 -25 -10" fill="#CBD5E1"/>
+    
+    <!-- Facial Features -->
+    <path d="M -8 -5 L -4 -5 M 4 -5 L 8 -5" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+    <path d="M -8 5 Q 0 12 8 5" stroke="#475569" stroke-width="2" fill="none" stroke-linecap="round"/>
+    
+    <!-- Arm -->
+    <path d="M -25 30 L -45 50" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 25 30 L 35 30" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Ground line -->
+  <path d="M 60 210 L 180 210" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
+</svg>

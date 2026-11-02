@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for 顾名思义 (Look at the name, understand the meaning) -->
+  <!-- We visualize a sleek modern name tag / label seamlessly transforming into the glowing core of a self-heating meal box -->
+
+  <!-- Background decorative tech lines -->
+  <path d="M 60 120 L 100 120" stroke="#2D333B" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 140 120 L 180 120" stroke="#2D333B" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Magnifying glass / Inspection lens representing "Thinking/Deducing" (思义) -->
+  <g transform="translate(0, -10)">
+    <!-- Steam / Heat waves representing the literal meaning of the contextual example (Self-heating rice) -->
+    <path d="M 105 75 C 105 65 115 65 115 55" fill="none" stroke="#F18A38" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 120 70 C 120 60 130 60 130 50" fill="none" stroke="#F18A38" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+    <path d="M 135 75 C 135 65 145 65 145 55" fill="none" stroke="#F18A38" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Main Object: Sleek Modern Container / Rice Bowl (Name & Meaning unified) -->
+    <!-- Outer Bowl Base -->
+    <path d="M 80 135 L 90 170 C 90 175 95 178 100 178 L 140 178 C 145 178 150 175 150 170 L 160 135 Z" fill="#2E3846" stroke="#485565" stroke-width="2"/>
+    
+    <!-- Bowl Rim -->
+    <ellipse cx="120" cy="135" rx="42" ry="8" fill="#3A4454" stroke="#5C6C82" stroke-width="2"/>
+    
+    <!-- Inner Rice / Content Level -->
+    <ellipse cx="120" cy="137" rx="37" ry="6" fill="#F4F6F8"/>
+
+    <!-- Glowing Name Tag / Label on front (Visualizing "顾名" - Looking at the name) -->
+    <rect x="96" y="146" width="48" height="18" rx="4" fill="#1A1D24" stroke="#F18A38" stroke-width="2"/>
+    <rect x="103" y="152" width="20" height="3" rx="1.5" fill="#F18A38"/>
+    <circle cx="131" cy="153" r="2" fill="#F18A38"/>
+
+    <!-- Magnifying Glass overlaying the object (Visualizing deduction/understanding) -->
+    <g transform="translate(115, 105)">
+      <!-- Glass Rim -->
+      <circle cx="0" cy="0" r="28" fill="none" stroke="#F18A38" stroke-width="4"/>
+      <circle cx="0" cy="0" r="28" fill="#F18A38" fill-opacity="0.1"/>
+      
+      <!-- Handle -->
+      <path d="M 19 19 L 36 36" stroke="#F18A38" stroke-width="5" stroke-linecap="round"/>
+      <path d="M 19 19 L 36 36" stroke="#2E3846" stroke-width="2" stroke-linecap="round"/>
+
+      <!-- Focus sparkle inside lens -->
+      <path d="M -8 -8 L -2 -8 M -5 -11 L -5 -5" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Ground reflection / accent shadow -->
+  <ellipse cx="120" cy="190" rx="45" ry="4" fill="#111318"/>
+</svg>

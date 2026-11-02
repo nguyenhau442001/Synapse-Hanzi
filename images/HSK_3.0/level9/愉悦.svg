@@ -1,0 +1,71 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative background glow for atmosphere -->
+  <circle cx="120" cy="110" r="70" fill="#252D3D" opacity="0.6"/>
+
+  <!-- Winding path representing the forest trail (漫步在林间小道) -->
+  <path d="M 60 195 Q 120 170 110 135 T 160 80 T 130 40" fill="none" stroke="#2D3748" stroke-width="16" stroke-linecap="round"/>
+  <path d="M 60 195 Q 120 170 110 135 T 160 80 T 130 40" fill="none" stroke="#4A5568" stroke-width="4" stroke-dasharray="6 6" stroke-linecap="round"/>
+
+  <!-- Stylized trees & foliage (鸟语花香) -->
+  <!-- Left background tree -->
+  <path d="M 45 100 Q 40 70 60 50 Q 75 35 90 55 Q 105 75 90 100 Z" fill="#2F3E46"/>
+  <rect x="63" y="90" width="8" height="35" rx="3" fill="#202A31"/>
+  <!-- Right background tree -->
+  <path d="M 180 140 Q 170 110 190 90 Q 205 75 220 95 Q 235 115 220 140 Z" fill="#2F3E46"/>
+  <rect x="196" y="130" width="8" height="35" rx="3" fill="#202A31"/>
+
+  <!-- Small colorful flowers and leaves -->
+  <circle cx="95" cy="155" r="4" fill="#E2E8F0"/>
+  <circle cx="145" cy="115" r="3" fill="#E2E8F0"/>
+  <!-- Little bird silhouette -->
+  <path d="M 85 75 Q 92 70 98 73 Q 93 78 85 75 Z" fill="#64748B"/>
+  <path d="M 98 73 L 102 71 L 100 75 Z" fill="#64748B"/>
+
+  <!-- VISUAL CONTRAST & SCALE EXAGGERATION FOR ADJECTIVE (愉悦 - Joyful/Exhilarated state) -->
+  <!-- We use an expressive character with arms open wide, walking on the path, bathed in warm accent light -->
+  
+  <!-- Warm glowing aura representing lightness and joy -->
+  <circle cx="120" cy="110" r="45" fill="#F59E0B" opacity="0.12"/>
+
+  <!-- Character: Walking dynamically with arms outstretched (Expressing emotional state) -->
+  <!-- Legs walking -->
+  <line x1="120" y1="130" x2="105" y2="160" stroke="#E2E8F0" stroke-width="6" stroke-linecap="round"/>
+  <line x1="120" y1="130" x2="135" y2="155" stroke="#E2E8F0" stroke-width="6" stroke-linecap="round"/>
+  <!-- Shoes -->
+  <ellipse cx="101" cy="162" rx="5" ry="3" fill="#F59E0B"/>
+  <ellipse cx="138" cy="157" rx="5" ry="3" fill="#F59E0B"/>
+
+  <!-- Torso (leaning forward slightly with motion) -->
+  <path d="M 114 100 Q 123 95 125 130 L 115 130 Z" fill="#3B82F6"/>
+
+  <!-- Head with joyful tilted expression -->
+  <circle cx="122" cy="84" r="14" fill="#FDE047"/>
+  <!-- Happy closed eyes (curve) -->
+  <path d="M 116 82 Q 119 86 122 82" fill="none" stroke="#1E293B" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 125 82 Q 128 86 131 82" fill="none" stroke="#1E293B" stroke-width="2" stroke-linecap="round"/>
+  <!-- Big smiling mouth -->
+  <path d="M 118 90 Q 123 95 128 90" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Outstretched arms emphasizing expansive, breezy feeling -->
+  <!-- Left arm raised up -->
+  <path d="M 117 105 L 95 90" stroke="#3B82F6" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="93" cy="89" r="4" fill="#FDE047"/>
+  <!-- Right arm raised up -->
+  <path d="M 123 105 L 148 95" stroke="#3B82F6" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="150" cy="94" r="4" fill="#FDE047"/>
+
+  <!-- Floating musical notes / breeze sparks to signify '鸟语花香' and '心情愉悦' -->
+  <path d="M 80 55 Q 82 50 86 52 T 88 58" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="84" cy="59" r="2" fill="#F59E0B"/>
+  
+  <path d="M 155 65 Q 157 60 161 62 T 163 68" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="159" cy="69" r="2" fill="#F59E0B"/>
+
+  <!-- Ambient glowing floating particles (accentuating the light-hearted mood) -->
+  <circle cx="105" cy="115" r="2" fill="#FDE047" opacity="0.8"/>
+  <circle cx="140" cy="125" r="1.5" fill="#FDE047" opacity="0.6"/>
+  <circle cx="130" cy="65" r="2" fill="#FDE047" opacity="0.9"/>
+</svg>

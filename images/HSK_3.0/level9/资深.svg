@@ -1,0 +1,30 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Senior Expert Figure -->
+  <g transform="translate(120, 120)">
+    <!-- Body/Lab Coat -->
+    <path d="M-40 40 L-40 10 C-40 -20 -20 -40 0 -40 C20 -40 40 -20 40 10 L40 40 Z" fill="#E0E0E0"/>
+    <path d="M-40 40 L-40 10 L-10 10 L-10 40 Z" fill="#BDBDBD"/>
+    <path d="M10 40 L10 10 L40 10 L40 40 Z" fill="#BDBDBD"/>
+    
+    <!-- Head -->
+    <circle cx="0" cy="-50" r="25" fill="#FFCC99"/>
+    
+    <!-- Hair (Graying/Mature) -->
+    <path d="M-20 -55 C-20 -75 0 -85 20 -75 C15 -65 10 -60 5 -55 Z" fill="#757575"/>
+    
+    <!-- Glasses -->
+    <rect x="-15" y="-55" width="10" height="8" rx="2" fill="none" stroke="#333" stroke-width="2"/>
+    <rect x="5" y="-55" width="10" height="8" rx="2" fill="none" stroke="#333" stroke-width="2"/>
+    <line x1="-5" y1="-51" x2="5" y2="-51" stroke="#333" stroke-width="2"/>
+    
+    <!-- Stethoscope (Symbol of Medical Expertise) -->
+    <path d="M-30 -10 C-50 -10 -50 20 -30 20" fill="none" stroke="#FFB300" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="-35" cy="25" r="8" fill="#FFB300"/>
+    
+    <!-- Badge/Gold Accent (Representing Seniority) -->
+    <circle cx="25" cy="-10" r="8" fill="#FFB300"/>
+    <path d="M25 -15 L28 -8 L35 -8 L29 -4 L31 3 L25 -1 L19 3 L21 -4 L15 -8 L22 -8 Z" fill="#FFF"/>
+  </g>
+</svg>

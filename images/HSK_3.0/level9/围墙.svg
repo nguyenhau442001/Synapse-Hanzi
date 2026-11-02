@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground -->
+  <rect x="20" y="180" width="200" height="10" fill="#343A46"/>
+  
+  <!-- Red Brick Wall Sections -->
+  <rect x="40" y="100" width="40" height="80" fill="#E67E22"/>
+  <rect x="100" y="100" width="40" height="80" fill="#E67E22"/>
+  <rect x="160" y="100" width="40" height="80" fill="#E67E22"/>
+  
+  <!-- Brick Pattern Lines -->
+  <line x1="40" y1="120" x2="80" y2="120" stroke="#1A1D24" stroke-width="2"/>
+  <line x1="40" y1="140" x2="80" y2="140" stroke="#1A1D24" stroke-width="2"/>
+  <line x1="40" y1="160" x2="80" y2="160" stroke="#1A1D24" stroke-width="2"/>
+  
+  <line x1="100" y1="120" x2="140" y2="120" stroke="#1A1D24" stroke-width="2"/>
+  <line x1="100" y1="140" x2="140" y2="140" stroke="#1A1D24" stroke-width="2"/>
+  <line x1="100" y1="160" x2="140" y2="160" stroke="#1A1D24" stroke-width="2"/>
+  
+  <line x1="160" y1="120" x2="200" y2="120" stroke="#1A1D24" stroke-width="2"/>
+  <line x1="160" y1="140" x2="200" y2="140" stroke="#1A1D24" stroke-width="2"/>
+  <line x1="160" y1="160" x2="200" y2="160" stroke="#1A1D24" stroke-width="2"/>
+  
+  <!-- Wall Caps -->
+  <rect x="35" y="90" width="50" height="10" fill="#D35400"/>
+  <rect x="95" y="90" width="50" height="10" fill="#D35400"/>
+  <rect x="155" y="90" width="50" height="10" fill="#D35400"/>
+</svg>

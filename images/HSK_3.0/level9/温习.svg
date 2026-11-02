@@ -1,0 +1,58 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 115)">
+    <!-- Open Book (Core Object for Reviewing/Studying) -->
+    <!-- Book Shadow -->
+    <ellipse cx="0" cy="55" rx="75" ry="12" fill="#111317" opacity="0.6"/>
+    
+    <!-- Book Base / Cover (Dark Blue/Grey) -->
+    <path d="M -80 35 Q 0 50 80 35 L 80 45 Q 0 60 -80 45 Z" fill="#2C323E"/>
+    
+    <!-- Left Page -->
+    <path d="M -75 32 C -40 38 -5 36 -3 20 L -3 -42 C -35 -45 -65 -38 -75 -30 Z" fill="#E2E8F0"/>
+    
+    <!-- Right Page -->
+    <path d="M 75 32 C 40 38 5 36 3 20 L 3 -42 C 35 -45 65 -38 75 -30 Z" fill="#EDF2F7"/>
+    
+    <!-- Spine -->
+    <path d="M -3 -42 C 0 -40 0 -40 3 -42 L 3 20 C 0 22 0 22 -3 20 Z" fill="#CBD5E0"/>
+
+    <!-- Text Lines Left Page (Simulated Knowledge/Notes) -->
+    <rect x="-60" y="-24" width="40" height="4" rx="2" fill="#A0AEC0"/>
+    <rect x="-60" y="-14" width="45" height="4" rx="2" fill="#CBD5E0"/>
+    <rect x="-60" y="-4" width="35" height="4" rx="2" fill="#A0AEC0"/>
+    <rect x="-60" y="6" width="42" height="4" rx="2" fill="#CBD5E0"/>
+
+    <!-- Text Lines Right Page -->
+    <rect x="18" y="-24" width="42" height="4" rx="2" fill="#A0AEC0"/>
+    <rect x="18" y="-14" width="38" height="4" rx="2" fill="#CBD5E0"/>
+    <rect x="18" y="-4" width="45" height="4" rx="2" fill="#A0AEC0"/>
+    <rect x="18" y="6" width="30" height="4" rx="2" fill="#CBD5E0"/>
+
+    <!-- Highlighting/Review Accent (Gold/Orange Marker Stroke overlaying text to signify "reviewing/studying again") -->
+    <rect x="-62" y="-27" width="44" height="10" rx="3" fill="#F6AD55" opacity="0.4"/>
+    <rect x="16" y="-7" width="49" height="10" rx="3" fill="#F6AD55" opacity="0.4"/>
+    
+    <!-- Magnifying Glass (Active reviewing, inspecting key concepts) -->
+    <g transform="translate(15, 10) rotate(-15)">
+      <!-- Glass Shadow -->
+      <circle cx="2" cy="2" r="28" fill="#111317" opacity="0.3"/>
+      <!-- Lens Rim -->
+      <circle cx="0" cy="0" r="28" fill="#2C323E"/>
+      <circle cx="0" cy="0" r="23" fill="#EBF8FF" opacity="0.9"/>
+      <!-- Lens glare -->
+      <path d="M -12 -12 A 16 16 0 0 1 12 -12" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.7"/>
+      <!-- Handle -->
+      <rect x="-6" y="24" width="12" height="32" rx="6" fill="#F6AD55" transform="rotate(25 0 24)"/>
+      <rect x="-3" y="24" width="6" height="32" rx="3" fill="#DD6B20" transform="rotate(25 0 24)"/>
+    </g>
+
+    <!-- Sparkles/Focus Dots representing intellectual clarity and mastery -->
+    <circle cx="-50" cy="-60" r="3" fill="#F6AD55"/>
+    <path d="M -50 -68 L -50 -52 M -58 -60 L -42 -60" stroke="#F6AD55" stroke-width="2" stroke-linecap="round"/>
+
+    <circle cx="65" cy="-50" r="2.5" fill="#F6AD55"/>
+    <circle cx="-25" cy="55" r="2" fill="#F6AD55"/>
+  </g>
+</svg>

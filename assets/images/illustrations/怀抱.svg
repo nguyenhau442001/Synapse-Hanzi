@@ -1,0 +1,16 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(40, 40)">
+    <!-- Mother figure -->
+    <path d="M120 60 C120 30 100 10 80 10 C60 10 40 30 40 60 L40 160 L120 160 Z" fill="#FFB347"/>
+    <circle cx="80" cy="40" r="25" fill="#FFD180"/>
+    
+    <!-- Child figure -->
+    <path d="M80 80 C80 60 70 50 60 50 C50 50 40 60 40 80 L40 140 L80 140 Z" fill="#4A90E2"/>
+    <circle cx="60" cy="65" r="15" fill="#81C784"/>
+    
+    <!-- Arms wrapping around -->
+    <path d="M40 80 C20 80 10 100 20 120 L40 110" fill="#FFB347"/>
+    <path d="M120 80 C140 80 150 100 140 120 L120 110" fill="#FFB347"/>
+  </g>
+</svg>

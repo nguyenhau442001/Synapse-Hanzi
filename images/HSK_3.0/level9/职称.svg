@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative subtle elements -->
+  <circle cx="120" cy="120" r="80" fill="none" stroke="#2A2F3D" stroke-width="1.5" stroke-dasharray="4 6"/>
+  
+  <!-- Central Physical Object Group: Professional Academic/Career Rank Insignia & Document (Representing "职称" - Professional Title) -->
+  <g transform="translate(120, 115)">
+    <!-- Professional Certificate / Folder Base -->
+    <rect x="-55" y="-65" width="110" height="130" rx="8" fill="#242B38" stroke="#3A445C" stroke-width="2"/>
+    <path d="M-55 -45 L55 -45" stroke="#3A445C" stroke-width="1.5"/>
+    
+    <!-- Document lines inside folder -->
+    <rect x="-35" y="-30" width="45" height="4" rx="2" fill="#52607A"/>
+    <rect x="-35" y="-18" width="70" height="3" rx="1.5" fill="#3A445C"/>
+    <rect x="-35" y="-10" width="60" height="3" rx="1.5" fill="#3A445C"/>
+
+    <!-- Ribbon / Academic Honor Sash -->
+    <path d="M-20 -65 L-20 -35 L0 -25 L20 -35 L20 -65 Z" fill="#D97706" opacity="0.2"/>
+    
+    <!-- Senior Professional Rank Medal / Star Badge (Representing the "Senior Title" / 正高级职称) -->
+    <!-- Medal Ribbon -->
+    <path d="M-15 -45 L-25 -75 L25 -75 L15 -45 Z" fill="#F59E0B"/>
+    <path d="M-8 -45 L-15 -75 L0 -75 Z" fill="#D97706"/>
+    <path d="M8 -45 L15 -75 L0 -75 Z" fill="#B45309"/>
+
+    <!-- Medal Star Body -->
+    <circle cx="0" cy="-25" r="32" fill="#1E2530" stroke="#F59E0B" stroke-width="3"/>
+    
+    <!-- Gold Star Icon -->
+    <path d="M0 -42 L4 -31 L15 -31 L7 -24 L10 -13 L0 -19 L-10 -13 L-7 -24 L-15 -31 L-4 -31 Z" fill="#F59E0B"/>
+    
+    <!-- Laurel Wreath Around Medal -->
+    <path d="M-22 -8 C-30 -15 -32 -30 -25 -42" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M22 -8 C30 -15 32 -30 25 -42" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Small leaves on wreath -->
+    <path d="M-28 -22 L-24 -20" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <path d="M-30 -30 L-25 -27" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <path d="M28 -22 L24 -20" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <path d="M30 -30 L25 -27" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Pen / Quill representing scholarly/professional achievement -->
+    <path d="M32 20 L58 46 C60 48 60 52 58 54 L54 58 C52 60 48 60 46 58 L20 32 Z" fill="#3B82F6"/>
+    <path d="M50 42 L58 50" stroke="#1E2530" stroke-width="1.5"/>
+    <path d="M20 32 L32 44 L24 52 L12 40 Z" fill="#60A5FA"/>
+  </g>
+</svg>

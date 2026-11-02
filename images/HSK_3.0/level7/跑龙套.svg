@@ -1,0 +1,57 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Stage Spotlight Effect -->
+  <path d="M 60 20 L 180 20 L 220 220 L 20 220 Z" fill="#252A34" opacity="0.4"/>
+  <ellipse cx="120" cy="210" rx="70" ry="15" fill="#323846"/>
+
+  <!-- Dynamic Motion Lines representing "Running / Chugging along" (跑) -->
+  <g stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 6" opacity="0.6">
+    <path d="M 50 140 C 70 140, 80 120, 90 100"/>
+    <path d="M 30 165 C 55 165, 75 145, 85 125"/>
+  </g>
+
+  <!-- Background props: Movie set equipment (龙套 context) -->
+  <!-- Simple Director's Chair / Stand -->
+  <g opacity="0.5">
+    <line x1="185" y1="130" x2="185" y2="180" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+    <line x1="175" y1="150" x2="195" y2="150" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+    <rect x="170" y="115" width="30" height="18" rx="2" fill="none" stroke="#64748B" stroke-width="2"/>
+  </g>
+
+  <!-- Character (Minor extra carrying a prop spear/flag - 龙套) -->
+  <g transform="translate(10, 0)">
+    <!-- Shadow -->
+    <ellipse cx="110" cy="205" rx="22" ry="6" fill="#111318"/>
+
+    <!-- Legs in motion -->
+    <path d="M 100 170 L 85 200 L 95 203" fill="none" stroke="#38BDF8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 115 170 L 125 195 L 135 190" fill="none" stroke="#0284C7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Torso (Simple Costume / Tunic) -->
+    <path d="M 95 120 L 125 120 L 130 170 L 95 170 Z" fill="#0EA5E9"/>
+    <!-- Belt -->
+    <rect x="95" y="150" width="33" height="6" fill="#F59E0B"/>
+
+    <!-- Head -->
+    <circle cx="110" cy="98" rx="14" fill="#FDE047"/>
+    <!-- Simple Face Profile / Hat (Ancient Chinese minor role hairpiece/cap) -->
+    <path d="M 96 92 C 100 82, 120 82, 124 92 Z" fill="#334155"/>
+    <path d="M 104 98 L 112 98" stroke="#1E293B" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Arms holding prop -->
+    <!-- Back Arm -->
+    <path d="M 100 125 L 85 145 L 75 140" fill="none" stroke="#0EA5E9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Front Arm -->
+    <path d="M 120 125 L 140 140 L 145 130" fill="none" stroke="#38BDF8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Prop: Long spear / Flag banner (龙套 prop) -->
+    <line x1="60" y1="50" x2="160" y2="180" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    <!-- Small pennant on the spear -->
+    <path d="M 140 150 L 165 160 L 145 175 Z" fill="#EF4444"/>
+  </g>
+
+  <!-- Focus/Action Accent -->
+  <circle cx="110" cy="140" r="45" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="6 8" opacity="0.4"/>
+</svg>
