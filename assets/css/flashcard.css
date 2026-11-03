@@ -1428,6 +1428,14 @@
   margin-top: 2px;
 }
 
+.today-rating-sub-desktop {
+  display: inline;
+}
+
+.today-rating-sub-mobile {
+  display: none;
+}
+
 /* Chưa nhớ (Again) styling */
 .today-rating-btn--again {
   background: var(--danger-bg);
@@ -1625,8 +1633,29 @@
   .today-rating-sub {
     font-size: 0.72rem;
   }
+  .today-rating-sub-desktop {
+    display: none !important;
+  }
+  .today-rating-sub-mobile {
+    display: inline-block !important;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1;
+  }
   .today-review-footer-bar {
     display: none;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .today-rating-sub-desktop {
+    display: none !important;
+  }
+  .today-rating-sub-mobile {
+    display: inline-block !important;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1;
   }
 }
 .memory-curve-overlay { position: fixed; z-index: 3000; inset: 0; display: grid; place-items: center; padding: 16px; background: rgb(0 0 0 / 55%); }

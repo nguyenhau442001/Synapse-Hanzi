@@ -529,6 +529,14 @@ class TestTodayReviewZenMode(unittest.TestCase):
         self.assertIn(".today-btn-reveal", self.flashcard_css)
         self.assertIn(".today-review-celebration-card", self.flashcard_css)
 
+    def test_today_review_rating_buttons_mobile_arrows_replace_numbers(self):
+        """Today review rating buttons must show only arrows on mobile and hide shortcut numbers 1 and 2."""
+        due_review_js = (REPO_ROOT / "assets" / "js" / "due-review.js").read_text(encoding="utf-8")
+        self.assertIn("today-rating-sub-desktop", due_review_js)
+        self.assertIn("today-rating-sub-mobile", due_review_js)
+        self.assertIn(".today-rating-sub-desktop", self.flashcard_css)
+        self.assertIn(".today-rating-sub-mobile", self.flashcard_css)
+
 
 class TestFlashcardIllustrationIntegration(unittest.TestCase):
     """Test Flashcard SVG illustration integration, responsive sizing, contrast, and toggle preferences."""

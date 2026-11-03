@@ -158,7 +158,10 @@ function renderTodayReviewCard() {
               </span>
               <span class="today-rating-body">
                 <span class="today-rating-main">Chưa nhớ</span>
-                <span class="today-rating-sub">Phím 1 / ←</span>
+                <span class="today-rating-sub">
+                  <span class="today-rating-sub-desktop">Phím 1 / ←</span>
+                  <span class="today-rating-sub-mobile" aria-hidden="true">←</span>
+                </span>
               </span>
             </button>
 
@@ -168,7 +171,10 @@ function renderTodayReviewCard() {
               </span>
               <span class="today-rating-body">
                 <span class="today-rating-main">Đã nhớ</span>
-                <span class="today-rating-sub">Phím 2 / →</span>
+                <span class="today-rating-sub">
+                  <span class="today-rating-sub-desktop">Phím 2 / →</span>
+                  <span class="today-rating-sub-mobile" aria-hidden="true">→</span>
+                </span>
               </span>
             </button>
           </div>
