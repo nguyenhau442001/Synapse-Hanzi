@@ -74,10 +74,11 @@ export default defineConfig({
   base: './',
   server: {
     port: 3000,
-    open: '/'
+    open: '/app.html'
   },
   build: {
     rollupOptions: {
+      input: 'app.html',
       output: {
         entryFileNames: 'assets/js/app-bundle.js',
         chunkFileNames: 'assets/js/[name].js',
