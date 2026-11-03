@@ -1,0 +1,22 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Main Object: A smartphone representing a "shanzhai" (knockoff) product -->
+  <!-- The body of the phone -->
+  <rect x="80" y="50" width="80" height="140" rx="8" fill="#333842" stroke="#FFB800" stroke-width="3"/>
+  
+  <!-- Screen area -->
+  <rect x="90" y="65" width="60" height="100" fill="#252A33"/>
+  
+  <!-- "Glitch" or "Knockoff" visual indicator: A slightly distorted or misaligned UI element -->
+  <rect x="100" y="80" width="40" height="10" fill="#FFB800"/>
+  <rect x="100" y="100" width="30" height="10" fill="#5D6475"/>
+  <rect x="100" y="120" width="40" height="10" fill="#5D6475"/>
+  
+  <!-- The "Fake" indicator: A subtle visual cue of imperfection -->
+  <!-- A slightly crooked or "off" button/element to suggest poor manufacturing -->
+  <circle cx="120" cy="175" r="6" fill="#FFB800"/>
+  
+  <!-- Warning/Caution element: A subtle slash or "X" mark indicating it is not genuine -->
+  <path d="M145 55 L155 65 M155 55 L145 65" stroke="#FF4D4D" stroke-width="4" stroke-linecap="round"/>
+</svg>

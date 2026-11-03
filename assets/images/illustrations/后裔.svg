@@ -1,0 +1,18 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ancestor silhouette (top, faded/ethereal) -->
+  <path d="M120 40c-15 0-25 10-25 25s10 25 25 25 25-10 25-25-10-25-25-25zM95 100c-20 0-35 15-35 35v10h70v-10c0-20-15-35-35-35z" fill="#3D4552"/>
+  
+  <!-- Connecting line (genealogy/lineage) -->
+  <path d="M120 100v30" stroke="#FFB84D" stroke-width="3" stroke-dasharray="6 6"/>
+  
+  <!-- Descendant (bottom, modern, clear) -->
+  <g transform="translate(95, 130)">
+    <circle cx="25" cy="25" r="20" fill="#FFB84D"/>
+    <path d="M5 70c0-15 10-25 20-25h0c10 0 20 10 20 25v20H5v-20z" fill="#FFB84D"/>
+  </g>
+  
+  <!-- Supporting visual: Family tree branch/roots -->
+  <path d="M60 180c20-10 40-10 60 0s40 10 60 0" stroke="#3D4552" stroke-width="4" fill="none"/>
+</svg>

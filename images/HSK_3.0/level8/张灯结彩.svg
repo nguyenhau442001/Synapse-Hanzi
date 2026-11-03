@@ -1,0 +1,79 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Architectural silhouette background (Ancient street rooflines) -->
+  <path d="M20,190 L60,190 L60,165 L50,155 L75,155 L65,165 L65,190 L110,190 L110,140 L90,120 L120,100 L150,120 L130,140 L130,190 L180,190 L180,155 L170,145 L195,145 L185,155 L185,190 L220,190 L220,205 L20,205 Z" fill="#252A34" opacity="0.6"/>
+  <path d="M0,205 H240 V220 H0 Z" fill="#15181F"/>
+
+  <!-- Connecting String / Garland for Lanterns -->
+  <path d="M15,65 Q70,95 120,65 Q170,35 225,75" fill="none" stroke="#F6C90E" stroke-width="2.5" stroke-dasharray="4,2"/>
+  <path d="M30,110 Q90,135 150,105 Q190,85 215,130" fill="none" stroke="#F6C90E" stroke-width="2" opacity="0.7"/>
+
+  <!-- Left Lantern (Red Traditional Hanging Lantern) -->
+  <g transform="translate(45, 75)">
+    <!-- Top cap -->
+    <rect x="-8" y="-18" width="16" height="4" rx="2" fill="#F6C90E"/>
+    <rect x="-4" y="-14" width="8" height="4" fill="#E65F2B"/>
+    <!-- Lantern Body -->
+    <path d="M-22,-10 C-28,10 -28,30 -22,45 C-10,50 10,50 22,45 C28,30 28,10 22,-10 Z" fill="#E63946"/>
+    <!-- Ribs -->
+    <path d="M-22,-10 C-10,-5 10,-5 22,-10" fill="none" stroke="#F6C90E" stroke-width="1.5"/>
+    <path d="M-26,10 C-10,16 10,16 26,10" fill="none" stroke="#F6C90E" stroke-width="1.5"/>
+    <path d="M-27,30 C-10,35 10,35 27,30" fill="none" stroke="#F6C90E" stroke-width="1.5"/>
+    <!-- Bottom cap & Tassel -->
+    <rect x="-6" y="45" width="12" height="4" fill="#E65F2B"/>
+    <line x1="0" y1="49" x2="0" y2="70" stroke="#F6C90E" stroke-width="2"/>
+    <path d="M-6,70 L0,85 L6,70 Z" fill="#E63946"/>
+  </g>
+
+  <!-- Center Lantern (Large Golden-Red Palace Lantern) -->
+  <g transform="translate(120, 55)">
+    <!-- Hanging cord -->
+    <line x1="0" y1="-30" x2="0" y2="-18" stroke="#F6C90E" stroke-width="2"/>
+    <!-- Top structure -->
+    <rect x="-12" y="-18" width="24" height="5" rx="1" fill="#F6C90E"/>
+    <path d="M-16,-13 L16,-13 L12,-8 L-12,-8 Z" fill="#E65F2B"/>
+    <!-- Main Body -->
+    <ellipse cx="0" cy="18" rx="32" ry="24" fill="#E63946"/>
+    <!-- Gold decorative panels -->
+    <path d="M0,-6 C-12,-6 -20,6 -20,18 C-20,30 -12,42 0,42 C12,42 20,30 20,18 C20,6 12,-6 0,-6 Z" fill="none" stroke="#F6C90E" stroke-width="2"/>
+    <circle cx="0" cy="18" r="8" fill="#F6C90E" opacity="0.9"/>
+    <!-- Bottom structure -->
+    <path d="M-12,44 L12,44 L16,49 L-16,49 Z" fill="#E65F2B"/>
+    <rect x="-6" y="49" width="12" height="4" rx="1" fill="#F6C90E"/>
+    <!-- Tassel -->
+    <line x1="0" y1="53" x2="0" y2="80" stroke="#F6C90E" stroke-width="2.5"/>
+    <path d="M-8,80 L0,98 L8,80 Z" fill="#E63946"/>
+  </g>
+
+  <!-- Right Lantern (Smaller Red Lantern) -->
+  <g transform="translate(195, 85)">
+    <!-- Top cap -->
+    <rect x="-6" y="-14" width="12" height="3" rx="1" fill="#F6C90E"/>
+    <!-- Lantern Body -->
+    <path d="M-18,-8 C-22,8 -22,24 -18,36 C-8,40 8,40 18,36 C22,24 22,8 18,-8 Z" fill="#FF4D4D"/>
+    <!-- Ribs -->
+    <path d="M-18,-8 C-8,-4 8,-4 18,-8" fill="none" stroke="#F6C90E" stroke-width="1.2"/>
+    <path d="M-20,14 C-8,18 8,18 20,14" fill="none" stroke="#F6C90E" stroke-width="1.2"/>
+    <!-- Bottom & Tassel -->
+    <rect x="-5" y="36" width="10" height="3" fill="#E65F2B"/>
+    <line x1="0" y1="39" x2="0" y2="58" stroke="#F6C90E" stroke-width="1.5"/>
+    <path d="M-5,58 L0,70 L5,58 Z" fill="#FF4D4D"/>
+  </g>
+
+  <!-- Festive Silk Flowers & Knots (結彩 - Jiécǎi) -->
+  <g transform="translate(85, 120)">
+    <!-- Chinese Knot / Ribbon structure -->
+    <path d="M-15,-5 C-25,-20 -40,-10 -30,5 C-20,20 -10,10 0,25 C10,10 20,20 30,5 C40,-10 25,-20 15,-5 C5,10 -5,10 -15,-5 Z" fill="#F6C90E"/>
+    <circle cx="0" cy="5" r="7" fill="#E63946"/>
+    <!-- Flowing ribbons -->
+    <path d="M-10,15 C-25,25 -35,45 -30,60 C-28,65 -20,60 -22,50 C-25,35 -10,25 -5,20 Z" fill="#FF4D4D"/>
+    <path d="M10,15 C25,25 35,45 30,60 C28,65 20,60 22,50 C25,35 10,25 5,20 Z" fill="#E65F2B"/>
+  </g>
+
+  <!-- Additional decorative sparkling lights/stars -->
+  <path d="M110,25 L112,32 L119,34 L112,36 L110,43 L108,36 L101,34 L108,32 Z" fill="#F6C90E" opacity="0.8"/>
+  <path d="M40,30 L41,34 L45,35 L41,36 L40,40 L39,36 L35,35 L39,34 Z" fill="#F6C90E" opacity="0.6"/>
+  <path d="M175,20 L176,23 L179,24 L176,25 L175,28 L174,25 L171,24 L174,23 Z" fill="#F6C90E" opacity="0.7"/>
+
+</svg>

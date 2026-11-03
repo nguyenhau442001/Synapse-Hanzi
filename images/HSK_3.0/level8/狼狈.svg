@@ -1,0 +1,38 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Rain effect -->
+  <g stroke="#5D6D7E" stroke-width="1.5" stroke-linecap="round">
+    <line x1="40" y1="0" x2="30" y2="40"/>
+    <line x1="80" y1="0" x2="70" y2="40"/>
+    <line x1="120" y1="0" x2="110" y2="40"/>
+    <line x1="160" y1="0" x2="150" y2="40"/>
+    <line x1="200" y1="0" x2="190" y2="40"/>
+    <line x1="60" y1="20" x2="50" y2="60"/>
+    <line x1="140" y1="20" x2="130" y2="60"/>
+    <line x1="180" y1="20" x2="170" y2="60"/>
+  </g>
+
+  <!-- Character: Person in a state of 'langbei' (disheveled, struggling) -->
+  <g transform="translate(120, 140)">
+    <!-- Body/Clothing (soaked) -->
+    <path d="M-30 80 Q-30 40 0 40 T30 80 L30 90 L-30 90 Z" fill="#7F8C8D"/>
+    
+    <!-- Arms (clutched over head) -->
+    <path d="M-25 45 L-10 10 L0 15 L-15 50" fill="#BDC3C7"/>
+    <path d="M25 45 L10 10 L0 15 L15 50" fill="#BDC3C7"/>
+    
+    <!-- Head (disheveled hair) -->
+    <circle cx="0" cy="10" r="25" fill="#BDC3C7"/>
+    <path d="M-20 -5 Q-10 -20 0 -15 T20 -5" fill="#5D6D7E"/>
+    <path d="M-15 0 Q-5 -10 5 -5" fill="#5D6D7E"/>
+    
+    <!-- Facial expression: Distressed/Flustered -->
+    <line x1="-8" y1="5" x2="-2" y2="8" stroke="#1A1D24" stroke-width="2"/>
+    <line x1="8" y1="5" x2="2" y2="8" stroke="#1A1D24" stroke-width="2"/>
+    <path d="M-5 18 Q0 22 5 18" stroke="#1A1D24" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Puddle -->
+  <ellipse cx="120" cy="220" rx="80" ry="15" fill="#2C3E50"/>
+</svg>

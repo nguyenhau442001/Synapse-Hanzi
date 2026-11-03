@@ -1,0 +1,30 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Handshake representing the physical act of keeping a promise/trust -->
+  <g transform="translate(40, 70)">
+    <!-- Arm 1 -->
+    <path d="M20 100 L60 60 L80 80 L40 120 Z" fill="#FFB84D"/>
+    <!-- Hand 1 -->
+    <path d="M60 60 L85 35 L105 55 L80 80 Z" fill="#FFD18C"/>
+    
+    <!-- Arm 2 -->
+    <path d="M160 100 L120 60 L100 80 L140 120 Z" fill="#FF9F1A"/>
+    <!-- Hand 2 -->
+    <path d="M120 60 L95 35 L75 55 L100 80 Z" fill="#FFB84D"/>
+    
+    <!-- Cuff detail -->
+    <rect x="30" y="110" width="20" height="10" rx="2" fill="#E68A00" transform="rotate(-45 40 115)"/>
+    <rect x="130" y="110" width="20" height="10" rx="2" fill="#CC7A00" transform="rotate(45 140 115)"/>
+  </g>
+
+  <!-- Document/Contract icon representing the commitment -->
+  <path d="M90 140 L150 140 L150 190 L90 190 Z" fill="#3B4252" stroke="#FFB84D" stroke-width="3"/>
+  <line x1="105" y1="155" x2="135" y2="155" stroke="#FFB84D" stroke-width="2" stroke-linecap="round"/>
+  <line x1="105" y1="165" x2="135" y2="165" stroke="#FFB84D" stroke-width="2" stroke-linecap="round"/>
+  <line x1="105" y1="175" x2="120" y2="175" stroke="#FFB84D" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Seal of trust -->
+  <circle cx="150" cy="190" r="12" fill="#FFB84D"/>
+  <path d="M145 190 L148 193 L155 187" stroke="#1A1D24" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

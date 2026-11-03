@@ -1,0 +1,65 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(30, 25)">
+    <!-- Ornate Golden Frame -->
+    <rect x="10" y="10" width="160" height="130" rx="4" fill="#111318" stroke="#D4AF37" stroke-width="6"/>
+    <rect x="16" y="16" width="148" height="118" fill="#111318" stroke="#997A15" stroke-width="2"/>
+
+    <!-- Oil Painting Content (Landscape) -->
+    <g clip-path="url(#frameClip)">
+      <clipPath id="frameClip">
+        <rect x="18" y="18" width="144" height="114" rx="1"/>
+      </clipPath>
+      
+      <!-- Sky (Gradient-like layered flat vectors) -->
+      <rect x="18" y="18" width="144" height="70" fill="#2C3E50"/>
+      <path d="M18 60 Q 60 40, 100 55 T 162 45 L 162 88 L 18 88 Z" fill="#E67E22" opacity="0.8"/>
+      <path d="M18 70 Q 70 50, 120 65 T 162 60 L 162 88 L 18 88 Z" fill="#E74C3C" opacity="0.7"/>
+
+      <!-- Sun -->
+      <circle cx="110" cy="55" r="14" fill="#F1C40F"/>
+
+      <!-- Mountains -->
+      <path d="M18 90 L 70 45 L 120 90 Z" fill="#34495E"/>
+      <path d="M80 90 L 130 55 L 180 90 Z" fill="#2C3E50"/>
+      <path d="M10 90 L 50 60 L 90 90 Z" fill="#1B2631"/>
+
+      <!-- Hills / Foreground -->
+      <path d="M18 88 Q 80 75, 162 85 L 162 132 L 18 132 Z" fill="#27AE60"/>
+      <path d="M18 100 Q 100 85, 162 105 L 162 132 L 18 132 Z" fill="#2ECC71"/>
+
+      <!-- Impasto Texture Highlights (Brush strokes simulation) -->
+      <path d="M30 110 Q 45 105, 60 112" stroke="#F1C40F" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+      <path d="M70 118 Q 85 110, 100 115" stroke="#D35400" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.6"/>
+      <path d="M120 105 Q 135 100, 150 108" stroke="#F39C12" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+    </g>
+
+    <!-- Easel Stand (Behind frame subtly) -->
+    <line x1="90" y1="140" x2="60" y2="200" stroke="#7F8C8D" stroke-width="4" stroke-linecap="round"/>
+    <line x1="90" y1="140" x2="120" y2="200" stroke="#7F8C8D" stroke-width="4" stroke-linecap="round"/>
+    <line x1="90" y1="140" x2="90" y2="205" stroke="#7F8C8D" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Palette & Brush (Art Studio context at bottom) -->
+  <g transform="translate(130, 165)">
+    <!-- Wooden Palette -->
+    <ellipse cx="40" cy="30" rx="35" ry="25" fill="#C29B61" transform="rotate(-15 40 30)"/>
+    <!-- Thumb hole -->
+    <ellipse cx="55" cy="35" rx="5" ry="4" fill="#1A1D24" transform="rotate(-15 55 35)"/>
+    
+    <!-- Paint Blobs on Palette -->
+    <circle cx="25" cy="20" r="5" fill="#E74C3C"/>
+    <circle cx="35" cy="15" r="4.5" fill="#F1C40F"/>
+    <circle cx="48" cy="18" r="5" fill="#3498DB"/>
+    <circle cx="22" cy="35" r="4.5" fill="#2ECC71"/>
+    <circle cx="33" cy="40" r="5" fill="#9B59B6"/>
+
+    <!-- Paintbrush resting across -->
+    <path d="M-10 45 L 65 5" stroke="#E67E22" stroke-width="4" stroke-linecap="round"/>
+    <!-- Ferrule -->
+    <line x1="50" y1="13" x2="58" y2="9" stroke="#BDC3C7" stroke-width="5" stroke-linecap="square"/>
+    <!-- Bristles with paint tip -->
+    <path d="M58 9 L 66 5" stroke="#E74C3C" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

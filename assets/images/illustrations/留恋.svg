@@ -1,0 +1,77 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background campus tree silhouettes hinting at the context -->
+  <g opacity="0.15">
+    <path d="M40 200 V120 C30 120 20 100 30 80 C40 60 60 70 70 85 C80 65 100 70 110 90 C120 110 110 130 100 130 V200 Z" fill="#64748B"/>
+    <path d="M200 200 V110 C210 110 225 90 215 70 C205 50 185 60 175 75 C165 55 145 60 135 80 C125 100 135 120 145 120 V200 Z" fill="#64748B"/>
+  </g>
+
+  <!-- Ground line -->
+  <path d="M30 200 H210" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Main Character (Graduate standing, looking back/hesitating, embodying "留恋" - lingering attachment/reluctance to leave) -->
+  <g transform="translate(15, 0)">
+    <!-- Shadow -->
+    <ellipse cx="105" cy="200" rx="25" ry="5" fill="#0F172A"/>
+
+    <!-- Legs (Standing, slightly angled) -->
+    <path d="M95 155 L93 200" stroke="#94A3B8" stroke-width="8" stroke-linecap="round"/>
+    <path d="M115 155 L117 200" stroke="#64748B" stroke-width="8" stroke-linecap="round"/>
+    <path d="M88 198 H98" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+    <path d="M112 198 H122" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Graduation Gown / Body (Dark blue academic gown) -->
+    <path d="M85 110 L125 110 L135 160 L75 160 Z" fill="#1E3A8A"/>
+    <!-- Gown V-neck / Collar trim -->
+    <path d="M105 110 L95 135 H115 Z" fill="#F59E0B"/>
+
+    <!-- Arms (One arm holding a rolled diploma close, posture showing reluctance/hesitation) -->
+    <path d="M85 120 L65 145" stroke="#1E3A8A" stroke-width="8" stroke-linecap="round"/>
+    <!-- Diploma scroll held in hand -->
+    <rect x="55" y="140" width="20" height="8" rx="3" fill="#F1F5F9" transform="rotate(-20 65 144)"/>
+
+    <path d="M125 120 L140 140" stroke="#1E3A8A" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="143" cy="143" r="4" fill="#CBD5E1"/> <!-- Hand -->
+
+    <!-- Neck & Head (Turning back to look at the campus behind them) -->
+    <rect x="101" y="95" width="8" height="18" fill="#CBD5E1"/>
+    <!-- Head profile looking left/back -->
+    <circle cx="105" cy="85" r="14" fill="#CBD5E1"/>
+    <!-- Hair -->
+    <path d="M93 82 C93 72 117 72 117 82 C117 85 115 88 115 88 L95 88 Z" fill="#334155"/>
+
+    <!-- Graduation Cap (Mortarboard) -->
+    <path d="M85 73 L105 65 L125 73 L105 81 Z" fill="#0F172A"/>
+    <!-- Tassel hanging backwards -->
+    <path d="M90 75 Q85 85 82 92" stroke="#F59E0B" stroke-width="2" fill="none"/>
+    <circle cx="82" cy="93" r="2" fill="#F59E0B"/>
+  </g>
+
+  <!-- Physical Object representing the cherished memory/place: A classic campus park bench illuminated by a warm glow, symbolizing the place they are reluctant to leave -->
+  <g transform="translate(130, 145)">
+    <!-- Bench Shadow -->
+    <ellipse cx="35" cy="50" rx="30" ry="6" fill="#0F172A"/>
+    
+    <!-- Warm golden glow emanating from the benchmark location (nostalgia/fond memories) -->
+    <circle cx="35" cy="25" r="30" fill="#F59E0B" opacity="0.15" filter="blur(8px)"/>
+
+    <!-- Park Bench -->
+    <!-- Wooden Slats (Backrest) -->
+    <rect x="10" y="10" width="50" height="6" rx="2" fill="#D97706"/>
+    <rect x="10" y="19" width="50" height="6" rx="2" fill="#D97706"/>
+    
+    <!-- Bench Seat -->
+    <rect x="8" y="30" width="54" height="7" rx="2" fill="#B45309"/>
+
+    <!-- Iron Supports / Legs -->
+    <path d="M14 37 V50 M56 37 V50" stroke="#334155" stroke-width="5" stroke-linecap="round"/>
+    <path d="M12 25 V37 M58 25 V37" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Subtle falling autumn leaf / time passing motif (representing youth slipping away, heightening the emotional longing/liúliàn) -->
+  <path d="M165 70 C170 65 175 72 170 78 C165 84 158 80 165 70 Z" fill="#F59E0B" opacity="0.8" transform="rotate(15 165 75)"/>
+  <path d="M190 100 C194 95 198 101 194 106 C190 111 184 108 190 100 Z" fill="#D97706" opacity="0.6" transform="rotate(-30 190 103)"/>
+
+</svg>

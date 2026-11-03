@@ -1,0 +1,39 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle Wall Background -->
+  <rect x="50" y="30" width="140" height="180" rx="4" fill="#222630"/>
+
+  <!-- Physical Notice Board (Yèshì / Thông báo) -->
+  <g transform="translate(65, 45)">
+    <!-- Board Backing -->
+    <rect x="0" y="0" width="110" height="140" rx="6" fill="#2E3544"/>
+    
+    <!-- Outer Frame / Border -->
+    <rect x="-3" y="-3" width="116" height="146" rx="8" fill="none" stroke="#3E485A" stroke-width="3"/>
+
+    <!-- Pin / Pushpin at the top center -->
+    <circle cx="55" cy="12" r="5" fill="#E67E22"/>
+    <circle cx="55" cy="12" r="2" fill="#F39C12"/>
+
+    <!-- Official Notice Paper / Announcement Sheet -->
+    <rect x="15" y="25" width="80" height="100" rx="3" fill="#F4F6F8"/>
+
+    <!-- Document Header Accent (Red stamp or bold header bar) -->
+    <rect x="25" y="38" width="35" height="6" rx="2" fill="#E74C3C"/>
+
+    <!-- Mock Text Lines (representing official written notice/announcement) -->
+    <rect x="25" y="52" width="60" height="4" rx="2" fill="#BDC3C7"/>
+    <rect x="25" y="62" width="50" height="4" rx="2" fill="#BDC3C7"/>
+    <rect x="25" y="72" width="55" height="4" rx="2" fill="#BDC3C7"/>
+    
+    <!-- Secondary Paragraph -->
+    <rect x="25" y="88" width="60" height="4" rx="2" fill="#BDC3C7"/>
+    <rect x="25" y="98" width="40" height="4" rx="2" fill="#BDC3C7"/>
+
+    <!-- Official Seal / Stamp (Red chop, classic on Chinese notices) -->
+    <circle cx="70" cy="108" r="10" fill="none" stroke="#E74C3C" stroke-width="2" opacity="0.8"/>
+    <circle cx="70" cy="108" r="7" fill="#E74C3C" opacity="0.2"/>
+  </g>
+</svg>

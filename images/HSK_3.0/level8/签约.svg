@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle lighting/glow -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.5"/>
+
+  <!-- Contract Document / Agreement Pad -->
+  <g transform="translate(65, 45)">
+    <!-- Document Base -->
+    <rect x="0" y="0" width="110" height="150" rx="6" fill="#F4F6F9"/>
+    <!-- Document Header Accent -->
+    <rect x="15" y="16" width="40" height="6" rx="3" fill="#E2E8F0"/>
+    
+    <!-- Abstract text lines -->
+    <rect x="15" y="36" width="80" height="4" rx="2" fill="#CBD5E1"/>
+    <rect x="15" y="48" width="65" height="4" rx="2" fill="#CBD5E1"/>
+    <rect x="15" y="60" width="75" height="4" rx="2" fill="#CBD5E1"/>
+
+    <rect x="15" y="80" width="80" height="4" rx="2" fill="#CBD5E1"/>
+    <rect x="15" y="92" width="50" height="4" rx="2" fill="#CBD5E1"/>
+
+    <!-- Seal / Red Stamp (Common in formal Chinese business contracts) -->
+    <circle cx="80" cy="115" r="14" fill="none" stroke="#EF4444" stroke-width="2.5" opacity="0.85"/>
+    <circle cx="80" cy="115" r="10" fill="#EF4444" opacity="0.15"/>
+    <path d="M75 115 L78 118 L86 110" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+  </g>
+
+  <!-- Golden Pen writing the signature -->
+  <g transform="translate(100, 95)">
+    <!-- Pen Body (rotated for writing action) -->
+    <path d="M 50,-50 L 75,-25 L 18,32 L -7,18 Z" fill="#F59E0B"/>
+    <!-- Pen Grip / Details -->
+    <path d="M 38,-38 L 52,-24" stroke="#D97706" stroke-width="4"/>
+    <!-- Pen Nib -->
+    <path d="M 18,32 L -7,18 L 0,10 Z" fill="#94A3B8"/>
+    <path d="M 0,10 L -15,5 L -7,18 Z" fill="#CBD5E1"/>
+    <!-- Nib tip touching paper -->
+    <circle cx="-7" cy="18" r="1.5" fill="#1E293B"/>
+  </g>
+
+  <!-- Dynamic signature ink trail -->
+  <path d="M 108 128 C 115 132, 125 125, 130 135 C 133 141, 122 143, 138 142" fill="none" stroke="#2563EB" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Focus Accent Elements (Corner markers for modern sleek interface feel) -->
+  <path d="M 24 36 L 24 24 L 36 24" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 216 36 L 216 24 L 204 24" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 24 204 L 24 216 L 36 216" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 216 204 L 216 216 L 204 216" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+</svg>

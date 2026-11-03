@@ -1,0 +1,39 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Stage Floor/Base -->
+    <path d="M 40 180 L 200 180 L 210 200 L 30 200 Z" fill="#252A34"/>
+    <ellipse cx="120" cy="180" rx="80" ry="15" fill="#15181F"/>
+
+    <!-- Subtle warm atmospheric background glow (烘托 - foil/enhance effect) -->
+    <ellipse cx="120" cy="120" rx="70" ry="60" fill="#FFB74D" opacity="0.12"/>
+    <ellipse cx="120" cy="110" rx="45" ry="40" fill="#FF8A65" opacity="0.18"/>
+
+    <!-- Spotlight beams radiating softly -->
+    <path d="M 120 30 L 70 180 L 170 180 Z" fill="#FFB74D" opacity="0.06"/>
+    <path d="M 120 30 L 95 180 L 145 180 Z" fill="#FFE082" opacity="0.08"/>
+
+    <!-- Central Object: Elegant Theatrical Stage Props (Arch/Curtain + Centerpiece Sculpture/Vase representing the focal point being highlighted) -->
+    <!-- Curtains/Frame on sides -->
+    <path d="M 30 60 Q 50 120 35 180 L 30 180 L 30 60 Z" fill="#2D3242" opacity="0.8"/>
+    <path d="M 210 60 Q 190 120 205 180 L 210 180 L 210 60 Z" fill="#2D3242" opacity="0.8"/>
+
+    <!-- The Focal Object (The main subject being "tôn lên" / enhanced by the lighting background) -->
+    <!-- Pedestal -->
+    <path d="M 95 160 L 145 160 L 140 175 L 100 175 Z" fill="#3A404D"/>
+    
+    <!-- Elegant art sculpture / decorative item -->
+    <circle cx="120" cy="110" r="28" fill="none" stroke="#FFD54F" stroke-width="4"/>
+    <path d="M 105 125 Q 120 90 135 125 Z" fill="#FFB74D"/>
+    <circle cx="120" cy="105" r="10" fill="#FFE082"/>
+
+    <!-- Warm glowing accent particles floating upward to emphasize the mood -->
+    <circle cx="90" cy="100" r="2.5" fill="#FFE082" opacity="0.9"/>
+    <circle cx="150" cy="115" r="2" fill="#FFB74D" opacity="0.8"/>
+    <circle cx="105" cy="75" r="1.5" fill="#FFE082" opacity="0.7"/>
+    <circle cx="135" cy="85" r="2.5" fill="#FFCC80" opacity="0.9"/>
+    <circle cx="80" cy="140" r="1.5" fill="#FFB74D" opacity="0.6"/>
+    <circle cx="165" cy="95" r="2" fill="#FFE082" opacity="0.8"/>
+  </g>
+</svg>

@@ -1,0 +1,63 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for focus -->
+  <circle cx="120" cy="120" r="80" fill="#2D333B" opacity="0.4"/>
+
+  <!-- Central Physical Object: Legislative Code Book & Gavel (立法的实体象征 - 法律典籍与法槌) -->
+  <g transform="translate(120, 120)">
+    <!-- Document/Law Base (Stacked pages/codified law) -->
+    <path d="M-55,25 L-55,50 C-55,58 -35,64 0,64 C35,64 55,58 55,50 L55,25 C55,33 35,39 0,39 C-35,39 -55,33 -55,25 Z" fill="#2E3846"/>
+    <path d="M-55,0 L-55,25 C-55,33 -35,39 0,39 C35,39 55,33 55,25 L55,0 C55,8 35,14 0,14 C-35,14 -55,8 -55,0 Z" fill="#3E4C5E"/>
+    
+    <!-- Main Book (Open Law Code) -->
+    <path d="M-65,-45 C-65,-45 -25,-55 0,-45 C25,-55 65,-45 65,-45 L65,15 C65,15 25,5 0,15 C-25,5 -65,15 -65,15 Z" fill="#F0F3F6"/>
+    
+    <!-- Book Spine & Pages Depth -->
+    <path d="M0,-45 C-25,-55 -65,-45 -65,-45 L-65,15 C-65,15 -25,5 0,15 Z" fill="#E2E8F0"/>
+    
+    <!-- Text Lines inside Book (Abstracted typography representing legislation text) -->
+    <g fill="#94A3B8" opacity="0.8">
+      <!-- Left Page lines -->
+      <rect x="-52" y="-30" width="35" height="3" rx="1.5"/>
+      <rect x="-52" y="-22" width="28" height="3" rx="1.5"/>
+      <rect x="-52" y="-14" width="32" height="3" rx="1.5"/>
+      <rect x="-52" y="-6" width="20" height="3" rx="1.5"/>
+      
+      <!-- Right Page lines -->
+      <rect x="17" y="-30" width="35" height="3" rx="1.5"/>
+      <rect x="17" y="-22" width="30" height="3" rx="1.5"/>
+      <rect x="17" y="-14" width="25" height="3" rx="1.5"/>
+      <rect x="17" y="-6" width="32" height="3" rx="1.5"/>
+    </g>
+
+    <!-- Center Binding -->
+    <line x1="0" y1="-47" x2="0" y2="17" stroke="#CBD5E1" stroke-width="2"/>
+
+    <!-- Green Leaf motif on the book (representing the environmental legislation context) -->
+    <path d="M0,-12 C8,-20 18,-15 12,-5 C5,5 0,2 0,2 C0,2 -5,5 -12,-5 C-18,-15 -8,-20 0,-12 Z" fill="#10B981" opacity="0.9"/>
+    <path d="M0,-12 C0,-5 2,-2 0,2" stroke="#D1FAE5" stroke-width="1.5" fill="none"/>
+
+    <!-- Judge's Gavel / Formal Legislative Seal Instrument (法槌 - 权威与裁决) -->
+    <!-- Sound Block / Base -->
+    <path d="M-30,78 L30,78 C35,78 38,82 35,86 L-35,86 C-38,82 -35,78 -30,78 Z" fill="#D97706"/>
+    <rect x="-20" y="72" width="40" height="6" rx="2" fill="#F59E0B"/>
+
+    <!-- Gavel Handle -->
+    <path d="M-5,10 L-18,-50 C-20,-56 -14,-62 -8,-60 L-3,20 Z" fill="#B45309"/>
+    <path d="M-11,-35 L-6,-25" stroke="#FBBF24" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Gavel Head (Angled across top) -->
+    <g transform="translate(10, -50) rotate(-25)">
+      <!-- Hammer Body -->
+      <rect x="-25" y="-12" width="50" height="24" rx="4" fill="#F59E0B"/>
+      <!-- Metallic gold bands on gavel head -->
+      <rect x="-20" y="-12" width="6" height="24" fill="#FDE68A"/>
+      <rect x="14" y="-12" width="6" height="24" fill="#FDE68A"/>
+    </g>
+    
+    <!-- Accent Highlight (Golden beam of legality/process) -->
+    <path d="M-45,-75 L45,-75" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+  </g>
+</svg>

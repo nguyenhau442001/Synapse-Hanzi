@@ -1,0 +1,18 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(60, 60)">
+    <!-- Adult figure -->
+    <path d="M60 40C60 25 72 15 85 15C98 15 110 25 110 40V120H60V40Z" fill="#FFB84D"/>
+    <circle cx="85" cy="30" r="15" fill="#FFB84D"/>
+    
+    <!-- Child figure -->
+    <path d="M20 70C20 60 28 55 35 55C42 55 50 60 50 70V120H20V70Z" fill="#4DA6FF"/>
+    <circle cx="35" cy="55" r="10" fill="#4DA6FF"/>
+    
+    <!-- Protective Gesture: Adult hand on child's shoulder -->
+    <path d="M50 75C55 70 65 70 70 75" stroke="#FFB84D" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Ground line -->
+    <line x1="10" y1="120" x2="120" y2="120" stroke="#3E4451" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

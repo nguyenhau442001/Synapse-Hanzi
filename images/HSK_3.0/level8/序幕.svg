@@ -1,0 +1,65 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Stage Background / Ambiance -->
+    <path d="M40 180 L120 140 L200 180 L200 200 L40 200 Z" fill="#252A34"/>
+    <ellipse cx="120" cy="180" rx="90" ry="15" fill="#15181F"/>
+
+    <!-- Dramatic Heavy Stage Curtains (Left and Right) -->
+    <!-- Left Curtain -->
+    <path d="M0 0 L40 0 C50 60, 20 120, 50 180 L0 200 Z" fill="#2A1E33"/>
+    <path d="M0 0 L30 0 C40 50, 15 100, 35 160 L0 180 Z" fill="#3D294A"/>
+    <path d="M0 0 L20 0 C30 40, 10 80, 20 140 L0 150 Z" fill="#523863"/>
+    <!-- Curtain folds shadow highlights -->
+    <path d="M40 0 C50 60, 20 120, 50 180 C40 130, 60 70, 40 0" fill="#1E1424" opacity="0.6"/>
+
+    <!-- Right Curtain -->
+    <path d="M240 0 L200 0 C190 60, 220 120, 190 180 L240 200 Z" fill="#2A1E33"/>
+    <path d="M240 0 L210 0 C200 50, 225 100, 205 160 L240 180 Z" fill="#3D294A"/>
+    <path d="M240 0 L220 0 C210 40, 230 80, 220 140 L240 150 Z" fill="#523863"/>
+    <!-- Curtain folds shadow highlights -->
+    <path d="M200 0 C190 60, 220 120, 190 180 C200 130, 180 70, 200 0" fill="#1E1424" opacity="0.6"/>
+
+    <!-- Opening Stage Light / Dramatic Spotlight beam -->
+    <polygon points="120,40 55,200 185,200" fill="url(#spotlightGlow)" opacity="0.15"/>
+    <ellipse cx="120" cy="195" rx="65" ry="10" fill="#FFC107" opacity="0.2"/>
+
+    <!-- Central Iconic Object: The Rising/Parting Curtain Motif (Opening/Prelude) -->
+    <!-- Stylized golden mechanism / crest at the top center -->
+    <path d="M105 45 L135 45 L140 35 L100 35 Z" fill="#E5A93B"/>
+    <circle cx="120" cy="40" r="8" fill="#FFD54F"/>
+
+    <!-- Dynamic Rising Center Curtain / Prologue Reveal -->
+    <path d="M120 40 C110 80, 120 130, 90 170 C105 175, 135 175, 150 170 C120 130, 130 80, 120 40 Z" fill="#7A4E9B"/>
+    <path d="M120 40 C115 75, 125 120, 105 165 C115 168, 125 168, 135 165 C115 120, 125 75, 120 40 Z" fill="#A069C3"/>
+
+    <!-- Golden Tassels and Tie-backs -->
+    <path d="M50 110 C60 115, 65 125, 60 135" stroke="#E5A93B" stroke-width="3" fill="none"/>
+    <circle cx="60" cy="138" r="4" fill="#FFD54F"/>
+    <path d="M190 110 C180 115, 175 125, 180 135" stroke="#E5A93B" stroke-width="3" fill="none"/>
+    <circle cx="180" cy="138" r="4" fill="#FFD54F"/>
+
+    <!-- Sparkles / Rising Energy (Symbolizing the start of a grand event/prelude) -->
+    <g fill="#FFD54F">
+      <!-- Top center sparkle -->
+      <path d="M120 65 L122 72 L129 74 L122 76 L120 83 L118 76 L111 74 L118 72 Z"/>
+      <!-- Side subtle sparkles -->
+      <path d="M85 90 L86 94 L90 95 L86 96 L85 100 L84 96 L80 95 L84 94 Z" opacity="0.8"/>
+      <path d="M155 90 L156 94 L160 95 L156 96 L155 100 L154 96 L150 95 L154 94 Z" opacity="0.8"/>
+    </g>
+
+    <!-- Floor Reflection Lines -->
+    <line x1="80" y1="185" x2="160" y2="185" stroke="#4A3B5C" stroke-width="2" opacity="0.5"/>
+    <line x1="100" y1="190" x2="140" y2="190" stroke="#4A3B5C" stroke-width="1.5" opacity="0.3"/>
+  </g>
+
+  <!-- Definitions -->
+  <defs>
+    <linearGradient id="spotlightGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD54F" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FFC107" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>

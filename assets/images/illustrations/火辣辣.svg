@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background elements: Scorching sun and barren horizon -->
+  <circle cx="120" cy="75" r="32" fill="#FF5722" opacity="0.3"/>
+  <circle cx="120" cy="75" r="22" fill="#FFB300"/>
+  <path d="M120 30 L120 40 M120 110 L120 120 M75 75 L85 75 M155 75 L165 75 M88 43 L95 50 M145 100 L152 107 M152 43 L145 50 M95 100 L88 107" stroke="#FFB300" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Barren ground silhouette -->
+  <path d="M 40 190 L 200 190" stroke="#374151" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 60 190 L 70 175 L 80 190 Z" fill="#2D3748"/>
+  <path d="M 160 190 L 170 180 L 180 190 Z" fill="#2D3748"/>
+
+  <!-- Character / Physical Object representing the Noun context (Sunburned person in glaring heat) -->
+  <!-- Shoulders and Body -->
+  <path d="M 85 190 C 85 155 155 155 155 190 Z" fill="#2D3748"/>
+
+  <!-- Neck -->
+  <rect x="110" y="130" width="20" height="30" fill="#E0A96D"/>
+
+  <!-- Head (Flushed / Reddened from sunburn) -->
+  <circle cx="120" cy="105" r="25" fill="#E0A96D"/>
+  
+  <!-- Sunburn overlay / intensity (火辣辣 burning effect on cheeks and forehead) -->
+  <circle cx="120" cy="100" r="22" fill="#FF3D00" opacity="0.4"/>
+  <circle cx="107" cy="110" r="7" fill="#D32F2F" opacity="0.7"/>
+  <circle cx="133" cy="110" r="7" fill="#D32F2F" opacity="0.7"/>
+
+  <!-- Pain expression (grimace) -->
+  <path d="M 112 118 Q 120 113 128 118" stroke="#4A2E1B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Closed wincing eyes -->
+  <path d="M 102 98 Q 107 94 112 98" stroke="#4A2E1B" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M 128 98 Q 133 94 138 98" stroke="#4A2E1B" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <!-- Hair -->
+  <path d="M 96 100 C 96 85 110 80 120 80 C 130 80 144 85 144 100 C 140 92 130 88 120 88 C 110 88 100 92 96 100 Z" fill="#2C2C2C"/>
+
+  <!-- Radiating heat / burning pain waves (Semantic visual anchor for '火辣辣' scorching sensation) -->
+  <path d="M 90 95 Q 83 90 90 85" stroke="#FF5722" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M 150 95 Q 157 90 150 85" stroke="#FF5722" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M 95 115 Q 86 112 92 105" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M 145 115 Q 154 112 148 105" stroke="#FF3D00" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+</svg>

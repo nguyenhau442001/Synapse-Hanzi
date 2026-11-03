@@ -1,0 +1,40 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Object: A Precise Architectural Scale (Physical Noun Object representing "考量" - deliberation/weighing options) -->
+  <g transform="translate(0, 0)">
+    <!-- Base Platform & Stand -->
+    <path d="M90 195 L150 195 L140 180 L100 180 Z" fill="#4B5563"/>
+    <rect x="114" y="85" width="12" height="95" fill="#9CA3AF" rx="2"/>
+    <!-- Central Top Ring / Finial -->
+    <circle cx="120" cy="78" r="8" fill="none" stroke="#F59E0B" stroke-width="3"/>
+
+    <!-- Balance Beam -->
+    <path d="M60 90 L180 90 L120 74 Z" fill="#E5E7EB"/>
+    <circle cx="120" cy="90" r="5" fill="#D97706"/>
+
+    <!-- Left Pan (representing urban planning / ecosystem elements) -->
+    <line x1="60" y1="90" x2="45" y2="135" stroke="#9CA3AF" stroke-width="2"/>
+    <line x1="60" y1="90" x2="75" y2="135" stroke="#9CA3AF" stroke-width="2"/>
+    <line x1="60" y1="90" x2="60" y2="135" stroke="#9CA3AF" stroke-width="2"/>
+    <path d="M35 135 C35 130 85 130 85 135 C85 145 35 145 35 135 Z" fill="#F59E0B"/>
+    <ellipse cx="60" cy="135" rx="25" ry="5" fill="#D97706"/>
+    <!-- Left Load: Mini City Block (Commercial Complex) -->
+    <rect x="48" y="112" width="10" height="23" fill="#38BDF8" rx="1"/>
+    <rect x="61" y="118" width="12" height="17" fill="#818CF8" rx="1"/>
+
+    <!-- Right Pan (representing traffic flow / structural weight) -->
+    <line x1="180" y1="90" x2="165" y2="125" stroke="#9CA3AF" stroke-width="2"/>
+    <line x1="180" y1="90" x2="195" y2="125" stroke="#9CA3AF" stroke-width="2"/>
+    <line x1="180" y1="90" x2="180" y2="125" stroke="#9CA3AF" stroke-width="2"/>
+    <path d="M155 125 C155 120 205 120 205 125 C205 135 155 135 155 125 Z" fill="#F59E0B"/>
+    <ellipse cx="180" cy="125" rx="25" ry="5" fill="#D97706"/>
+    <!-- Right Load: Eco / Nature Element -->
+    <circle cx="180" cy="110" r="10" fill="#34D399"/>
+    <rect x="178" y="115" width="4" height="10" fill="#78350F"/>
+  </g>
+
+  <!-- Accent Focus Glow / Highlights representing careful evaluation -->
+  <circle cx="120" cy="90" r="50" fill="none" stroke="#F59E0B" stroke-width="1" opacity="0.3" stroke-dasharray="4 4"/>
+</svg>

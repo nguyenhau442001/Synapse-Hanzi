@@ -1,0 +1,60 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background architectural elements / subtle wall paneling -->
+  <path d="M40 50 L200 50" stroke="#252A34" stroke-width="2" stroke-linecap="round"/>
+  <rect x="70" y="40" width="100" height="20" rx="4" fill="#222732"/>
+  
+  <!-- Reception Desk (前台 Counter) -->
+  <!-- Main counter body -->
+  <path d="M50 135 L190 135 L205 190 L35 190 Z" fill="#2E3544"/>
+  <!-- Front accent panel -->
+  <path d="M60 145 L180 145 L190 180 L50 180 Z" fill="#3B4456"/>
+  <!-- Countertop -->
+  <path d="M40 125 L200 125 L190 135 L50 135 Z" fill="#E5A93B"/>
+  <path d="M43 123 L197 123 L200 125 L40 125 Z" fill="#F3BA4F"/>
+
+  <!-- Items on the Desk -->
+  <!-- Computer / Monitor -->
+  <rect x="100" y="90" width="40" height="28" rx="3" fill="#1A1D24"/>
+  <rect x="103" y="93" width="34" height="22" rx="2" fill="#50617D"/>
+  <path d="M115 118 L125 118 L127 125 L113 125 Z" fill="#8899A6"/>
+  <!-- Small plant on desk -->
+  <ellipse cx="165" cy="118" rx="10" ry="5" fill="#50617D"/>
+  <path d="M165 118 C165 105 170 100 175 95" stroke="#4E9F3D" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="176" cy="93" r="5" fill="#58B368"/>
+  <circle cx="171" cy="98" r="4" fill="#58B368"/>
+
+  <!-- Receptionist (Person behind the desk) -->
+  <!-- Body/Torso -->
+  <path d="M85 135 L155 135 L160 175 L80 175 Z" fill="#247881"/>
+  <!-- Neck -->
+  <rect x="114" y="105" width="12" height="15" fill="#EFC3A5"/>
+  <!-- Head -->
+  <circle cx="120" cy="90" r="16" fill="#EFC3A5"/>
+  <!-- Hair -->
+  <path d="M104 90 C104 78 136 78 136 90 C136 94 133 96 133 96 L130 84 L110 84 L107 96 C107 96 104 94 104 90 Z" fill="#2C3E50"/>
+  <!-- Friendly Smile & Eyes -->
+  <circle cx="115" cy="89" r="1.5" fill="#2C3E50"/>
+  <circle cx="125" cy="89" r="1.5" fill="#2C3E50"/>
+  <path d="M118 94 Q120 97 122 94" stroke="#2C3E50" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Visitor / Guest (Foreground interaction) -->
+  <!-- Guest Head -->
+  <circle cx="120" cy="195" r="14" fill="#F4D0B8"/>
+  <!-- Guest Hair -->
+  <path d="M107 195 C107 184 133 184 133 195 C133 197 131 198 131 198 L129 190 L111 190 L109 198 C109 198 107 197 107 195 Z" fill="#D35400"/>
+  <!-- Registration Clipboard / Form being handed over -->
+  <rect x="105" y="130" width="30" height="22" rx="2" fill="#ECF0F1" transform="rotate(-15 120 140)"/>
+  <line x1="110" y1="135" x2="125" y2="135" stroke="#BDC3C7" stroke-width="2" stroke-linecap="round"/>
+  <line x1="110" y1="141" x2="120" y2="141" stroke="#BDC3C7" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Modern Accent Light / Hanging Lamp -->
+  <path d="M120 20 L120 45" stroke="#E5A93B" stroke-width="2"/>
+  <path d="M105 45 L135 45 L140 55 L100 55 Z" fill="#E5A93B"/>
+  <ellipse cx="120" cy="55" rx="20" ry="4" fill="#F3BA4F"/>
+
+  <!-- Focus Indicator Glow / Floor shadow -->
+  <ellipse cx="120" cy="220" r="70" ry="6" fill="#111318"/>
+</svg>

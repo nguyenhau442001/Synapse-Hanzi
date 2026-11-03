@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Signpost base -->
+  <rect x="115" y="140" width="10" height="80" fill="#4A5568"/>
+  
+  <!-- Signpost arm 1 (Correct direction) -->
+  <path d="M120 140 L180 120 L120 100 Z" fill="#4A5568"/>
+  
+  <!-- Signpost arm 2 (Misleading direction - Orange/Gold focus) -->
+  <path d="M120 80 L60 60 L120 40 Z" fill="#F6AD55"/>
+  
+  <!-- Character: The Consumer -->
+  <circle cx="120" cy="180" r="15" fill="#E2E8F0"/>
+  <path d="M105 195 L135 195 L130 240 L110 240 Z" fill="#E2E8F0"/>
+  
+  <!-- Character's confused gesture -->
+  <path d="M100 170 Q 90 160 85 175" stroke="#E2E8F0" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M140 170 Q 150 160 155 175" stroke="#E2E8F0" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- The misleading product/item icon at the end of the orange sign -->
+  <circle cx="60" cy="60" r="8" fill="#F6AD55"/>
+  <rect x="56" y="56" width="8" height="8" fill="#1A1D24"/>
+</svg>

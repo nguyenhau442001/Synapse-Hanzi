@@ -1,0 +1,61 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative campfire glow / warm light -->
+  <circle cx="120" cy="180" r="70" fill="#FF8C42" opacity="0.1" filter="blur(15px)" />
+
+  <!-- Character: 少女 (Yi minority festive attire inspired by context) -->
+  <g transform="translate(0, 5)">
+    <!-- Head / Hair -->
+    <path d="M96 75 C96 60 106 50 120 50 C134 50 144 60 144 75 L144 95 C144 98 141 100 138 100 L102 100 C99 100 96 98 96 95 Z" fill="#2C313C"/>
+    
+    <!-- Traditional Headdress / Headband detail -->
+    <path d="M94 72 C105 68 135 68 146 72 L148 79 C135 76 105 76 92 79 Z" fill="#E65F2B"/>
+    <circle cx="120" cy="67" r="5" fill="#FFD166"/>
+
+    <!-- Face and Neck -->
+    <path d="M102 85 C102 85 106 110 120 110 C134 110 138 85 138 85 Z" fill="#FFDDC1"/>
+    <rect x="113" y="105" width="14" height="12" fill="#FFDDC1"/>
+
+    <!-- Joyful Expression (Eyes and Smile) -->
+    <path d="M110 92 Q113 89 116 92" stroke="#2C313C" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M124 92 Q127 89 130 92" stroke="#2C313C" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M116 99 Q120 103 124 99" stroke="#E65F2B" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Festive Torso / Colorful Jacket -->
+    <!-- Outer garment -->
+    <path d="M85 130 C85 118 100 115 120 115 C140 115 155 118 155 130 L162 175 C162 178 159 180 156 180 L84 180 C81 180 78 178 78 175 Z" fill="#26547C"/>
+    
+    <!-- Decorative collar / embroidery patterns -->
+    <path d="M100 118 L120 140 L140 118 L148 125 L120 155 L92 125 Z" fill="#FFD166"/>
+    <path d="M108 116 L120 128 L132 116 Z" fill="#E65F2B"/>
+
+    <!-- Dynamic arms / Posture of dancing -->
+    <!-- Left arm raised -->
+    <path d="M88 130 C75 120 60 105 50 110 C45 113 47 120 52 122 C65 128 78 145 85 155 Z" fill="#26547C"/>
+    <!-- Right arm curved gracefully -->
+    <path d="M152 130 C168 122 182 132 180 140 C178 147 165 152 155 150 Z" fill="#26547C"/>
+
+    <!-- Skirt base -->
+    <path d="M78 180 L162 180 L170 215 C170 218 167 220 164 220 L76 220 C73 220 70 218 70 215 Z" fill="#EF476F"/>
+    
+    <!-- Skirt pleats / patterns -->
+    <path d="M90 180 L95 220 M110 180 L115 220 M130 180 L135 220 M150 180 L155 220" stroke="#FFD166" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  </g>
+
+  <!-- Campfire elements at the base (contextual tie-in) -->
+  <g transform="translate(0, 15)">
+    <!-- Logs -->
+    <rect x="95" y="195" width="50" height="8" rx="4" transform="rotate(-15 120 199)" fill="#8D5524"/>
+    <rect x="95" y="195" width="50" height="8" rx="4" transform="rotate(15 120 199)" fill="#65350F"/>
+    
+    <!-- Fire flames -->
+    <path d="M120 175 C120 185 112 192 112 198 C112 203 116 206 120 206 C124 206 128 203 128 198 C128 192 120 185 120 175 Z" fill="#FFD166"/>
+    <path d="M115 182 C115 188 110 193 110 198 C110 202 113 204 115 204 C117 204 120 202 120 198 C120 193 115 188 115 182 Z" fill="#FF8C42"/>
+    <path d="M125 180 C125 186 130 191 130 197 C130 201 127 203 125 203 C123 203 120 201 120 197 C120 191 125 186 125 180 Z" fill="#EF476F"/>
+  </g>
+
+  <!-- Subtle focal lighting ring in corner for design balance -->
+  <circle cx="120" cy="120" r="105" fill="none" stroke="#FFD166" stroke-width="1.5" opacity="0.15" stroke-dasharray="6 6"/>
+</svg>

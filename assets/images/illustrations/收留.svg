@@ -1,0 +1,62 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Shelter / House Structure Background Concept -->
+    <path d="M120 50 L190 90 L190 185 L50 185 L50 90 Z" fill="#242B38"/>
+    <path d="M120 35 L205 85 L35 85 Z" fill="#323D52"/>
+    <warm-glow />
+    
+    <!-- Warm lighting inside shelter -->
+    <path d="M80 100 L160 100 L160 185 L80 185 Z" fill="#2A3445"/>
+    <circle cx="120" cy="70" r="12" fill="#F39C12" opacity="0.3"/>
+
+    <!-- Gentle Sheltering Hands (Concept of 收留 - Taking in / Providing sanctuary) -->
+    <!-- Lower/Outer hands framing the rescue -->
+    <path d="M60 160 C75 180 100 185 120 185 C140 185 165 180 180 160" fill="none" stroke="#E67E22" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Safe Haven Roof/Structure accent -->
+    <path d="M95 95 L120 75 L145 95" fill="none" stroke="#F1C40F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Protected Rescued Animals (Dog & Cat representing 流浪动物) -->
+    <!-- Dog Silhouette -->
+    <g transform="translate(90, 125)">
+      <!-- Body -->
+      <ellipse cx="22" cy="25" rx="14" ry="10" fill="#E59866"/>
+      <!-- Head -->
+      <circle cx="10" cy="18" r="8" fill="#E59866"/>
+      <!-- Ears -->
+      <path d="M5 12 L3 18 L9 15 Z" fill="#D35400"/>
+      <!-- Tail -->
+      <path d="M34 22 C38 18 40 15 42 12" fill="none" stroke="#E59866" stroke-width="3" stroke-linecap="round"/>
+      <!-- Legs -->
+      <rect x="14" y="32" width="3" height="10" rx="1.5" fill="#D35400"/>
+      <rect x="28" y="32" width="3" height="10" rx="1.5" fill="#D35400"/>
+    </g>
+
+    <!-- Cat Silhouette -->
+    <g transform="translate(130, 130)">
+      <!-- Body -->
+      <ellipse cx="15" cy="22" rx="10" ry="8" fill="#F39C12"/>
+      <!-- Head -->
+      <circle cx="15" cy="11" r="7" fill="#F39C12"/>
+      <!-- Ears -->
+      <path d="M10 6 L8 2 L12 5 Z" fill="#D68910"/>
+      <path d="M20 6 L22 2 L18 5 Z" fill="#D68910"/>
+      <!-- Tail -->
+      <path d="M23 24 C27 24 29 20 28 15" fill="none" stroke="#F39C12" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- Legs -->
+      <rect x="10" y="28" width="2.5" height="8" rx="1" fill="#D68910"/>
+      <rect x="18" y="28" width="2.5" height="8" rx="1" fill="#D68910"/>
+    </g>
+
+    <!-- Protective sheltering embrace overlay (Upper arms/hands) -->
+    <path d="M65 110 C50 130 55 150 65 160" fill="none" stroke="#E67E22" stroke-width="6" stroke-linecap="round"/>
+    <path d="M175 110 C190 130 185 150 175 160" fill="none" stroke="#E67E22" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Warm welcoming light beams from above -->
+    <path d="M105 75 L90 55" stroke="#F39C12" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    <path d="M135 75 L150 55" stroke="#F39C12" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    <line x1="120" y1="75" x2="120" y2="50" stroke="#F39C12" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  </g>
+</svg>

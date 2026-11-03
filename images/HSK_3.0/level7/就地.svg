@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground surface -->
+  <path d="M40 180 L200 180 L210 200 L30 200 Z" fill="#2D343E"/>
+  
+  <!-- The "On-the-spot" action: Building a barrier from existing materials -->
+  <!-- Pile of stones/rocks -->
+  <path d="M60 180 L90 180 L85 150 L65 155 Z" fill="#7D8590"/>
+  <path d="M75 180 L105 180 L100 145 L70 150 Z" fill="#9CA3AF"/>
+  
+  <!-- Wooden planks being placed -->
+  <rect x="90" y="130" width="60" height="10" rx="2" fill="#D97706" transform="rotate(-10 120 135)"/>
+  <rect x="100" y="145" width="60" height="10" rx="2" fill="#B45309" transform="rotate(5 130 150)"/>
+  
+  <!-- Character torso/arms working -->
+  <g fill="#F59E0B">
+    <path d="M150 160 C150 140 170 130 180 130 L190 140 C180 145 170 150 170 170 Z"/>
+    <circle cx="185" cy="125" r="12" fill="#F59E0B"/>
+  </g>
+  
+  <!-- Focus highlight/accent -->
+  <circle cx="120" cy="150" r="4" fill="#F59E0B"/>
+  <circle cx="120" cy="150" r="8" fill="none" stroke="#F59E0B" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>

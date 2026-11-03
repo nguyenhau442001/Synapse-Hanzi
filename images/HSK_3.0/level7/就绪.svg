@@ -1,0 +1,61 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient background glow representing stage lights & readiness -->
+  <circle cx="120" cy="110" r="70" fill="#242B38" opacity="0.6"/>
+  <path d="M 60 40 L 120 80 L 180 40" stroke="#2F384A" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
+  
+  <!-- Spotlight beams from top -->
+  <polygon points="120,20 80,180 100,180" fill="#38BDF8" opacity="0.08"/>
+  <polygon points="120,20 140,180 160,180" fill="#F59E0B" opacity="0.08"/>
+
+  <!-- Audio / Stage Equipment (Speakers & Lights) -->
+  <!-- Left Speaker -->
+  <rect x="35" y="110" width="22" height="50" rx="3" fill="#2D3748"/>
+  <circle cx="46" cy="125" r="7" fill="#1A1D24" stroke="#4A5568" stroke-width="1.5"/>
+  <circle cx="46" cy="145" r="5" fill="#1A1D24" stroke="#4A5568" stroke-width="1.5"/>
+
+  <!-- Right Stage Light / Rigging -->
+  <rect x="183" y="110" width="22" height="35" rx="3" fill="#2D3748"/>
+  <path d="M 194 145 L 188 170 L 200 170 Z" fill="#F59E0B"/>
+  <line x1="194" y1="95" x2="194" y2="110" stroke="#4A5568" stroke-width="2"/>
+
+  <!-- Console / Control Desk (System Ready) -->
+  <path d="M 75 160 L 165 160 L 175 190 L 65 190 Z" fill="#2D3748"/>
+  <!-- Console Interface / Lights -->
+  <line x1="85" y1="170" x2="115" y2="170" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="125" y1="170" x2="135" y2="170" stroke="#10B981" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="150" cy="170" r="3" fill="#F59E0B"/>
+  <line x1="85" y1="180" x2="105" y2="180" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="120" cy="180" r="3" fill="#10B981"/>
+  <circle cx="135" cy="180" r="3" fill="#10B981"/>
+  <circle cx="150" cy="180" r="3" fill="#10B981"/>
+
+  <!-- Dynamic Human Character (Technician/Director taking action, ready) -->
+  <!-- Body / Torso -->
+  <path d="M 100 135 C 100 120, 140 120, 140 135 L 145 175 L 95 175 Z" fill="#2563EB"/>
+  
+  <!-- Head -->
+  <circle cx="120" cy="100" r="14" fill="#FDE047"/>
+  <!-- Hair -->
+  <path d="M 107 98 C 107 90, 133 90, 133 98 C 133 98, 128 89, 120 89 C 112 89, 107 98, 107 98 Z" fill="#1E293B"/>
+
+  <!-- Right Arm (Interacting with the console / pressing 'Go') -->
+  <path d="M 135 130 Q 155 145 160 160" stroke="#2563EB" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <!-- Hand -->
+  <circle cx="162" cy="163" r="4" fill="#FDE047"/>
+
+  <!-- Left Arm (Confident posture / ready gesture) -->
+  <path d="M 105 130 Q 85 145 90 160" stroke="#2563EB" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <!-- Hand -->
+  <circle cx="89" cy="163" r="4" fill="#FDE047"/>
+
+  <!-- Motion / Action Lines indicating "All Set" / Ready -->
+  <path d="M 100 70 L 105 60" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 120 65 L 120 53" stroke="#10B981" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 140 70 L 135 60" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Checkmark Emblem (Semantic reinforcement of readiness / "就绪") -->
+  <circle cx="120" cy="38" r="12" fill="#10B981"/>
+  <polyline points="114,38 118,42 127,33" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,64 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Abacus Frame (Suanpan) -->
+  <g transform="translate(48, 62)">
+    <!-- Outer wooden frame -->
+    <rect x="0" y="0" width="144" height="116" rx="10" fill="#2C231B" stroke="#D4AF37" stroke-width="2.5"/>
+    <rect x="6" y="6" width="132" height="104" rx="6" fill="#3D3024"/>
+
+    <!-- Central horizontal dividing bar -->
+    <rect x="6" y="44" width="132" height="10" fill="#D4AF37"/>
+
+    <!-- Vertical metal rods (5 rods) -->
+    <!-- Rod 1 -->
+    <line x1="30" y1="16" x2="30" y2="100" stroke="#8C8C8C" stroke-width="2"/>
+    <!-- Rod 2 -->
+    <line x1="54" y1="16" x2="54" y2="100" stroke="#8C8C8C" stroke-width="2"/>
+    <!-- Rod 3 -->
+    <line x1="78" y1="16" x2="78" y2="100" stroke="#8C8C8C" stroke-width="2"/>
+    <!-- Rod 4 -->
+    <line x1="102" y1="16" x2="102" y2="100" stroke="#8C8C8C" stroke-width="2"/>
+    <!-- Rod 5 -->
+    <line x1="126" y1="16" x2="126" y2="100" stroke="#8C8C8C" stroke-width="2"/>
+
+    <!-- Beads (Upper deck: 1 bead per rod, Lower deck: 4 beads per rod) -->
+    <!-- Highlighting central calculation with bright orange/gold accent -->
+    
+    <!-- Rod 1 (x=30) -->
+    <ellipse cx="30" cy="28" rx="8" ry="5" fill="#C26D38"/>
+    <ellipse cx="30" cy="58" rx="8" ry="5" fill="#C26D38"/>
+    <ellipse cx="30" cy="70" rx="8" ry="5" fill="#C26D38"/>
+    <ellipse cx="30" cy="82" rx="8" ry="5" fill="#C26D38"/>
+    <ellipse cx="30" cy="94" rx="8" ry="5" fill="#C26D38"/>
+
+    <!-- Rod 2 (x=54) -->
+    <ellipse cx="54" cy="28" rx="8" ry="5" fill="#C26D38"/>
+    <ellipse cx="54" cy="58" rx="8" ry="5" fill="#C26D38"/>
+    <ellipse cx="54" cy="70" rx="8" ry="5" fill="#C26D38"/>
+    <ellipse cx="54" cy="82" rx="8" ry="5" fill="#C26D38"/>
+    <ellipse cx="54" cy="94" rx="8" ry="5" fill="#C26D38"/>
+
+    <!-- Rod 3 (x=78) - Active calculating position (shifted up/down) -->
+    <ellipse cx="78" cy="34" rx="8" ry="5" fill="#F39C12"/>
+    <ellipse cx="78" cy="52" rx="8" ry="5" fill="#F39C12"/>
+    <ellipse cx="78" cy="64" rx="8" ry="5" fill="#F39C12"/>
+    <ellipse cx="78" cy="88" rx="8" ry="5" fill="#F39C12"/>
+    <ellipse cx="78" cy="100" rx="8" ry="5" fill="#F39C12"/>
+
+    <!-- Rod 4 (x=102) -->
+    <ellipse cx="102" cy="28" rx="8" ry="5" fill="#C26D38"/>
+    <ellipse cx="102" cy="58" rx="8" ry="5" fill="#C26D38"/>
+    <ellipse cx="102" cy="70" rx="8" ry="5" fill="#C26D38"/>
+    <ellipse cx="102" cy="82" rx="8" ry="5" fill="#C26D38"/>
+    <ellipse cx="102" cy="94" rx="8" ry="5" fill="#C26D38"/>
+
+    <!-- Rod 5 (x=126) -->
+    <ellipse cx="126" cy="28" rx="8" ry="5" fill="#C26D38"/>
+    <ellipse cx="126" cy="58" rx="8" ry="5" fill="#C26D38"/>
+    <ellipse cx="126" cy="70" rx="8" ry="5" fill="#C26D38"/>
+    <ellipse cx="126" cy="82" rx="8" ry="5" fill="#C26D38"/>
+    <ellipse cx="126" cy="94" rx="8" ry="5" fill="#C26D38"/>
+  </g>
+</svg>

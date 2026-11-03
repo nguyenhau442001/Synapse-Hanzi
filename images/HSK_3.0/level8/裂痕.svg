@@ -1,0 +1,13 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Concrete Pillar/Beam Section -->
+  <!-- Centered, slightly taller than wide, representing a physical structure -->
+  <rect x="80" y="50" width="80" height="140" rx="8" fill="#A0A0A0"/>
+
+  <!-- The Crack (裂痕) - highlighted with accent color -->
+  <!-- Using a path with irregular segments for a natural, prominent crack look -->
+  <path d="M 90 70 L 95 78 L 92 88 L 105 92 L 100 102 L 112 108 L 108 118 L 120 125 L 115 135 L 128 142 L 123 152 L 135 160 L 130 170 L 140 178"
+        stroke="#FF9900" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

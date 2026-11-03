@@ -1,0 +1,30 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Character -->
+  <g transform="translate(120, 140)">
+    <!-- Body -->
+    <path d="M-30 80 C-30 40, 30 40, 30 80 L 30 100 L -30 100 Z" fill="#4A5568"/>
+    <!-- Head -->
+    <circle cx="0" cy="-10" r="35" fill="#FBD38D"/>
+    <!-- Eye -->
+    <circle cx="-10" cy="-15" r="4" fill="#2D3748"/>
+    <circle cx="10" cy="-15" r="4" fill="#2D3748"/>
+    <!-- Mouth - Stuttering expression -->
+    <path d="M-12 5 Q 0 15 12 5" stroke="#2D3748" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Speech bubbles representing stuttering/interruption -->
+  <g stroke="#F6AD55" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- First bubble -->
+    <path d="M80 60 L 100 40 L 120 60" />
+    <!-- Second bubble - slightly offset to show hesitation -->
+    <path d="M130 50 L 150 30 L 170 50" />
+    <!-- Third bubble - further offset -->
+    <path d="M180 60 L 200 40 L 220 60" />
+  </g>
+
+  <!-- Motion lines for the stuttering action -->
+  <path d="M100 50 Q 110 40 120 50" stroke="#F6AD55" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M150 40 Q 160 30 170 40" stroke="#F6AD55" stroke-width="2" fill="none" opacity="0.6"/>
+</svg>

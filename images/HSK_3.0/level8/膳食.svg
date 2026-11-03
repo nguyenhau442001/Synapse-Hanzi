@@ -1,0 +1,46 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow to highlight the object -->
+  <circle cx="120" cy="130" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Plate / Bowl representing "膳食" (Diet/Meal structure) -->
+  <!-- Outer rim of the bowl/plate -->
+  <ellipse cx="120" cy="140" rx="80" ry="32" fill="#2D3748" stroke="#4A5568" stroke-width="3"/>
+  <!-- Inner bowl -->
+  <ellipse cx="120" cy="136" rx="70" ry="26" fill="#1A202C"/>
+
+  <!-- Balanced meal components (Vegetables, Protein, Grains) -->
+  <!-- Rice / Grains (left side) -->
+  <path d="M 70 136 C 70 120, 90 115, 105 125 C 115 130, 110 145, 90 145 C 75 145, 70 145, 70 136 Z" fill="#E2E8F0"/>
+  <ellipse cx="88" cy="130" rx="12" ry="6" fill="#CBD5E0" opacity="0.6"/>
+
+  <!-- Leafy Greens / Vegetables (top right) -->
+  <path d="M 130 125 C 140 115, 155 118, 160 130 C 165 140, 150 145, 138 138 Z" fill="#48BB78"/>
+  <path d="M 148 120 C 158 115, 168 122, 165 132 C 162 138, 150 138, 145 132 Z" fill="#38A169"/>
+
+  <!-- Healthy Protein / Salmon fillet (bottom right) -->
+  <path d="M 115 142 C 130 138, 155 140, 150 152 C 145 162, 120 162, 112 152 Z" fill="#ED8936"/>
+  <!-- Salmon grill marks -->
+  <line x1="124" y1="145" x2="132" y2="155" stroke="#DD6B20" stroke-width="2" stroke-linecap="round"/>
+  <line x1="138" y1="144" x2="144" y2="154" stroke="#DD6B20" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Fork and Spoon hovering/flanking for culinary context -->
+  <!-- Fork (Left) -->
+  <g transform="translate(25, 80) rotate(-15)">
+    <rect x="15" y="10" width="3" height="40" rx="1.5" fill="#A0AEC0"/>
+    <path d="M 12 10 L 21 10 L 20 25 L 13 25 Z" fill="#CBD5E0"/>
+    <line x1="13" y1="10" x2="13" y2="18" stroke="#A0AEC0" stroke-width="1"/>
+    <line x1="17" y1="10" x2="17" y2="18" stroke="#A0AEC0" stroke-width="1"/>
+  </g>
+
+  <!-- Spoon (Right) -->
+  <g transform="translate(195, 80) rotate(15)">
+    <rect x="15" y="10" width="3" height="42" rx="1.5" fill="#A0AEC0"/>
+    <ellipse cx="16" cy="14" rx="6" ry="8" fill="#CBD5E0"/>
+  </g>
+
+  <!-- Nutritional sparkle/accent icon denoting "balanced/healthy" (营养) -->
+  <path d="M 120 55 C 120 68, 110 70, 95 70 C 110 70, 120 72, 120 85 C 120 72, 130 70, 145 70 C 130 70, 120 68, 120 55 Z" fill="#ECC94B"/>
+  <path d="M 165 85 C 165 92, 160 93, 150 93 C 160 93, 165 94, 165 101 C 165 94, 170 93, 180 93 C 170 93, 165 92, 165 85 Z" fill="#ECC94B" opacity="0.8"/>
+</svg>

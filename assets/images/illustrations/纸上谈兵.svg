@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Blueprint / Paper Background Base -->
+    <rect x="52" y="44" width="136" height="152" rx="6" fill="#252A34" stroke="#343B48" stroke-width="2"/>
+    
+    <!-- Faint grid lines on paper to represent theory/plans -->
+    <line x1="52" y1="76" x2="188" y2="76" stroke="#2E3644" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="52" y1="108" x2="188" y2="108" stroke="#2E3644" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="52" y1="140" x2="188" y2="140" stroke="#2E3644" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="52" y1="172" x2="188" y2="172" stroke="#2E3644" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="86" y1="44" x2="86" y2="196" stroke="#2E3644" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="120" y1="44" x2="120" y2="196" stroke="#2E3644" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="154" y1="44" x2="154" y2="196" stroke="#2E3644" stroke-width="1" stroke-dasharray="3,3"/>
+
+    <!-- Miniature Toy/Chess Pieces on Paper representing "Bing" (Troops/War) -->
+    <!-- Piece 1: Castle/Tower (Rook representation) -->
+    <path d="M 72 136 L 72 120 L 68 120 L 68 114 L 72 114 L 72 110 L 80 110 L 80 114 L 84 114 L 84 120 L 80 120 L 80 136 Z" fill="#E65F2B" opacity="0.9"/>
+    
+    <!-- Piece 2: Horse/Knight representation -->
+    <path d="M 124 140 L 124 126 C 124 120 128 116 132 116 L 138 110 L 140 114 L 136 118 L 138 122 L 132 140 Z" fill="#F39C12" opacity="0.9"/>
+    <circle cx="132" cy="112" r="3" fill="#F39C12" opacity="0.9"/>
+
+    <!-- Piece 3: General / Flag piece -->
+    <polygon points="168,140 164,140 164,110 152,104 164,98" fill="#E65F2B" opacity="0.9"/>
+    <rect x="162" y="138" width="10" height="4" rx="1" fill="#E65F2B"/>
+
+    <!-- Tactical Arrow/Path drawn on paper (metaphor for empty talk/planning) -->
+    <path d="M 76 120 Q 110 90 148 124" fill="none" stroke="#F39C12" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5,3"/>
+    <polygon points="152,125 142,128 146,120" fill="#F39C12"/>
+
+    <!-- Magnifying glass hovering, showing it's just conceptual/paperwork -->
+    <g transform="translate(110, 85)">
+      <circle cx="0" cy="0" r="26" fill="none" stroke="#6C7A89" stroke-width="4" opacity="0.4"/>
+      <circle cx="0" cy="0" r="26" fill="#1A1D24" opacity="0.2"/>
+      <!-- Handle -->
+      <line x1="18" y1="18" x2="36" y2="36" stroke="#6C7A89" stroke-width="5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Highlight accent frame corner -->
+    <path d="M 52 60 L 52 48 L 64 48" fill="none" stroke="#F39C12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 188 60 L 188 48 L 176 48" fill="none" stroke="#F39C12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 52 180 L 52 192 L 64 192" fill="none" stroke="#F39C12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 188 180 L 188 192 L 176 192" fill="none" stroke="#F39C12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

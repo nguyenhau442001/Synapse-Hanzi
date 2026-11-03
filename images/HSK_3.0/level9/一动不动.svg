@@ -1,0 +1,33 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Grass blades in foreground -->
+  <path d="M20 240 L35 160 L50 240 Z" fill="#2D3436"/>
+  <path d="M80 240 L100 150 L120 240 Z" fill="#2D3436"/>
+  <path d="M160 240 L185 170 L210 240 Z" fill="#2D3436"/>
+  
+  <!-- Siberian Tiger Body (Low profile, flat design) -->
+  <g transform="translate(40, 120)">
+    <!-- Main body -->
+    <path d="M0 60 C 20 20, 140 20, 160 60 L160 80 L0 80 Z" fill="#E67E22"/>
+    
+    <!-- Stripes -->
+    <path d="M30 40 L40 70 M60 35 L70 70 M90 35 L100 70 M120 40 L130 70" stroke="#1A1D24" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Head -->
+    <path d="M140 40 L180 40 L175 80 L145 80 Z" fill="#E67E22"/>
+    <path d="M145 45 L155 45 M165 45 L175 45" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Ears -->
+    <path d="M145 40 L145 30 L155 40 Z" fill="#E67E22"/>
+    <path d="M165 40 L175 30 L175 40 Z" fill="#E67E22"/>
+    
+    <!-- Eye (Focused, unblinking) -->
+    <circle cx="165" cy="55" r="4" fill="#F1C40F"/>
+  </g>
+  
+  <!-- Grass blades in front of tiger -->
+  <path d="M0 240 L20 140 L40 240 Z" fill="#34495E"/>
+  <path d="M190 240 L215 150 L240 240 Z" fill="#34495E"/>
+  <path d="M100 240 L120 180 L140 240 Z" fill="#34495E"/>
+</svg>

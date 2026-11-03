@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Glow & Medical Cross Subtle Accent -->
+  <circle cx="120" cy="120" r="70" fill="#252A34"/>
+  <path d="M120 70 V170 M70 120 H170" stroke="#2D3748" stroke-width="24" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Central Noun Object: Blood Glucose Meter with a drop of blood and sugar cubes -->
+  <!-- Sugar Cubes representing '糖' (Sugar) -->
+  <g transform="translate(65, 125)">
+    <!-- Back sugar cube -->
+    <path d="M25 10 L45 0 L65 10 L45 20 Z" fill="#E2E8F0"/>
+    <path d="M25 10 L25 30 L45 40 L45 20 Z" fill="#CBD5E1"/>
+    <path d="M65 10 L65 30 L45 40 L45 20 Z" fill="#94A3B8"/>
+    <!-- Front sugar cube -->
+    <path d="M10 25 L30 15 L50 25 L30 35 Z" fill="#F8FAFC"/>
+    <path d="M10 25 L10 45 L30 55 L30 35 Z" fill="#E2E8F0"/>
+    <path d="M50 25 L50 45 L30 55 L30 35 Z" fill="#CBD5E1"/>
+  </g>
+
+  <!-- Blood Glucose Meter (Modern Flat Vector) representing '病' (Disease/Monitoring) -->
+  <g transform="translate(100, 50)">
+    <!-- Meter Body -->
+    <rect x="0" y="0" width="56" height="96" rx="12" fill="#334155"/>
+    <!-- Screen -->
+    <rect x="8" y="12" width="40" height="32" rx="4" fill="#0F172A"/>
+    <!-- Screen Content: High Glucose Value Warning -->
+    <text x="28" y="30" font-family="monospace" font-size="14" font-weight="bold" fill="#F43F5E" text-anchor="middle">HI</text>
+    <text x="28" y="39" font-family="sans-serif" font-size="7" fill="#94A3B8" text-anchor="middle">mmol/L</text>
+    <!-- Test Strip inserted at bottom -->
+    <rect x="22" y="90" width="12" height="22" rx="2" fill="#E2E8F0"/>
+    <!-- Button -->
+    <circle cx="28" cy="72" r="8" fill="#475569"/>
+  </g>
+
+  <!-- Blood Drop / Test Droplet with High-Contrast Accent Color -->
+  <path d="M 120 162 C 120 162 108 178 108 186 C 108 192.627 113.373 198 120 198 C 126.627 198 132 192.627 132 186 C 132 178 120 162 120 162 Z" fill="#F43F5E"/>
+  <!-- Highlight on Blood Drop -->
+  <path d="M 115 183 C 115 183 117 180 118 178" stroke="#FFE4E6" stroke-width="2" stroke-linecap="round"/>
+
+</svg>

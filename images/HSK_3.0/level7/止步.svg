@@ -1,0 +1,35 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground line -->
+  <path d="M40 180 L200 180" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Warning Sign Post -->
+  <rect x="160" y="100" width="6" height="80" fill="#718096"/>
+  <rect x="145" y="70" width="36" height="30" rx="4" fill="#E53E3E"/>
+  <path d="M163 78 L163 90" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="163" cy="94" r="2" fill="#FFFFFF"/>
+  
+  <!-- Human Character -->
+  <g transform="translate(60, 180)">
+    <!-- Legs -->
+    <path d="M-10 0 L-10 -40" stroke="#F6AD55" stroke-width="8" stroke-linecap="round"/>
+    <path d="M10 0 L10 -20" stroke="#F6AD55" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Torso -->
+    <path d="M0 -40 L0 -100" stroke="#F6AD55" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Arms (Stopping gesture) -->
+    <path d="M0 -80 L-30 -80" stroke="#F6AD55" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-30 -80 L-40 -70" stroke="#F6AD55" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-30 -80 L-40 -90" stroke="#F6AD55" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Head -->
+    <circle cx="0" cy="-120" r="15" fill="#F6AD55"/>
+  </g>
+  
+  <!-- Motion Lines (Stopping effect) -->
+  <path d="M80 140 L95 140" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M85 130 L95 130" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+  <path d="M80 150 L90 150" stroke="#F6AD55" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+</svg>

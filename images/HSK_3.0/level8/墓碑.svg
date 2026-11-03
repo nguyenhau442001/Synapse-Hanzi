@@ -1,0 +1,60 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow behind the monument -->
+  <circle cx="120" cy="115" r="70" fill="#2A303C" opacity="0.4"/>
+
+  <!-- Ground / Base platform -->
+  <path d="M 70 185 L 170 185 L 180 195 L 60 195 Z" fill="#3A4150"/>
+  <rect x="75" y="180" width="90" height="5" rx="1.5" fill="#4E5668"/>
+
+  <!-- Main Tombstone Body -->
+  <path d="M 90 75 
+           Q 120 45 150 75 
+           L 150 175 
+           L 90 175 
+           Z" 
+        fill="#2E3544" 
+        stroke="#4E5668" 
+        stroke-width="2"/>
+
+  <!-- Inner border detail of tombstone -->
+  <path d="M 98 85 
+           Q 120 63 142 85 
+           L 142 169 
+           L 98 169 
+           Z" 
+        fill="none" 
+        stroke="#3A4150" 
+        stroke-width="1.5"/>
+
+  <!-- Carved Heroic Emblem / Laurel Wreath & Star (Representing heroics/glory as per sentence context) -->
+  <circle cx="120" cy="98" r="14" fill="#D4AF37" opacity="0.15"/>
+  <path d="M 120 87 
+           L 122.5 94.5 
+           L 130 94.5 
+           L 124 99 
+           L 126.5 106.5 
+           L 120 102 
+           L 113.5 106.5 
+           L 116 99 
+           L 110 94.5 
+           L 117.5 94.5 
+           Z" 
+        fill="#D4AF37"/>
+
+  <!-- Simulated Inscription Lines (Representing carved historical records) -->
+  <rect x="105" y="118" width="30" height="3" rx="1" fill="#4E5668"/>
+  <rect x="100" y="127" width="40" height="3" rx="1" fill="#4E5668"/>
+  <rect x="108" y="136" width="24" height="3" rx="1" fill="#4E5668"/>
+  
+  <rect x="102" y="148" width="36" height="2" rx="1" fill="#3A4150"/>
+  <rect x="106" y="154" width="28" height="2" rx="1" fill="#3A4150"/>
+
+  <!-- Decorative small floral/grass accents at base -->
+  <path d="M 80 180 Q 82 172 85 180" fill="none" stroke="#52796F" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 160 180 Q 158 172 155 180" fill="none" stroke="#52796F" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="85" cy="173" r="2" fill="#D4AF37"/>
+  <circle cx="155" cy="173" r="2" fill="#D4AF37"/>
+</svg>

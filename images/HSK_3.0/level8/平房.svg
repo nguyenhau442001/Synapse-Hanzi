@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground -->
+  <rect x="20" y="180" width="200" height="10" fill="#34495E"/>
+  
+  <!-- House Structure -->
+  <rect x="60" y="110" width="120" height="70" fill="#E67E22"/>
+  
+  <!-- Roof -->
+  <path d="M50 110 L120 70 L190 110 Z" fill="#D35400"/>
+  
+  <!-- Door -->
+  <rect x="80" y="135" width="30" height="45" fill="#2C3E50"/>
+  
+  <!-- Window -->
+  <rect x="130" y="130" width="30" height="25" fill="#F1C40F"/>
+  <line x1="145" y1="130" x2="145" y2="155" stroke="#2C3E50" stroke-width="2"/>
+  <line x1="130" y1="142" x2="160" y2="142" stroke="#2C3E50" stroke-width="2"/>
+  
+  <!-- Fence/Yard boundary -->
+  <rect x="30" y="160" width="10" height="20" fill="#95A5A6"/>
+  <rect x="200" y="160" width="10" height="20" fill="#95A5A6"/>
+  <line x1="35" y1="170" x2="205" y2="170" stroke="#95A5A6" stroke-width="2"/>
+  
+  <!-- Tree -->
+  <rect x="200" y="140" width="8" height="40" fill="#795548"/>
+  <circle cx="204" cy="120" r="20" fill="#27AE60"/>
+</svg>

@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Stars/Cosmos Elements -->
+  <circle cx="50" cy="60" r="1" fill="#4A5568"/>
+  <circle cx="190" cy="50" r="1.5" fill="#4A5568"/>
+  <circle cx="70" cy="190" r="1" fill="#4A5568"/>
+  <circle cx="180" cy="170" r="2" fill="#4A5568"/>
+  <circle cx="210" cy="110" r="1" fill="#4A5568"/>
+  <circle cx="40" cy="130" r="1.5" fill="#4A5568"/>
+
+  <!-- Outer Corona / Glow (Layer 1) -->
+  <circle cx="120" cy="120" r="68" fill="#F6AD55" opacity="0.15"/>
+  <!-- Outer Corona / Glow (Layer 2) -->
+  <circle cx="120" cy="120" r="56" fill="#ED8936" opacity="0.25"/>
+
+  <!-- Solar Flares / Rays -->
+  <g fill="#F6AD55" opacity="0.8">
+    <path d="M120 40 L124 55 L120 60 L116 55 Z"/>
+    <path d="M120 180 L124 185 L120 200 L116 185 Z"/>
+    <path d="M40 120 L55 124 L60 120 L55 116 Z"/>
+    <path d="M180 120 L185 124 L200 120 L185 116 Z"/>
+    <path d="M63 63 L75 70 L78 66 L70 58 Z"/>
+    <path d="M177 177 L165 170 L162 174 L170 182 Z"/>
+    <path d="M177 63 L170 70 L174 74 L182 66 Z"/>
+    <path d="M63 177 L70 170 L66 166 L58 174 Z"/>
+  </g>
+
+  <!-- Main Stellar Body (Sun / Star) -->
+  <circle cx="120" cy="120" r="44" fill="url(#starGradient)"/>
+
+  <!-- Internal Surface Details / Solar Prominences (Flat modern shapes) -->
+  <path d="M96 98 C104 90, 136 90, 144 98 C136 96, 104 96, 96 98 Z" fill="#DD6B20" opacity="0.4"/>
+  <path d="M88 120 C96 112, 144 112, 152 120 C144 118, 96 118, 88 120 Z" fill="#DD6B20" opacity="0.4"/>
+  <path d="M100 142 C108 136, 132 136, 140 142 C132 140, 108 140, 100 142 Z" fill="#DD6B20" opacity="0.4"/>
+
+  <!-- Gradients -->
+  <defs>
+    <radialGradient id="starGradient" cx="35%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#FEFCBF"/>
+      <stop offset="40%" stop-color="#F6AD55"/>
+      <stop offset="100%" stop-color="#DD6B20"/>
+    </radialGradient>
+  </defs>
+</svg>

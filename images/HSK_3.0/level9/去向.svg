@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Map Path Representation -->
+  <path d="M60 180 C 60 120, 100 80, 180 80" stroke="#4A5568" stroke-width="6" stroke-dasharray="8 8" fill="none"/>
+  
+  <!-- Starting Point -->
+  <circle cx="60" cy="180" r="8" fill="#718096"/>
+  
+  <!-- Destination Marker (The "去向" - Where it goes) -->
+  <g>
+    <path d="M180 80 L170 50 L190 50 Z" fill="#F6AD55"/>
+    <rect x="177" y="50" width="6" height="30" fill="#F6AD55"/>
+    <circle cx="180" cy="45" r="8" fill="#F6AD55"/>
+  </g>
+  
+  <!-- Object in Transit (Representing the funds/resource) -->
+  <g>
+    <rect x="110" y="115" width="20" height="20" rx="4" fill="#ECC94B"/>
+    <path d="M115 120 L125 130 M125 120 L115 130" stroke="#975A16" stroke-width="2"/>
+  </g>
+  
+  <!-- Destination Building/Location Icon -->
+  <path d="M160 180 L200 180 L200 140 L180 120 L160 140 Z" fill="#2D3748" stroke="#4A5568" stroke-width="2"/>
+  <rect x="170" y="150" width="20" height="30" fill="#4A5568"/>
+</svg>

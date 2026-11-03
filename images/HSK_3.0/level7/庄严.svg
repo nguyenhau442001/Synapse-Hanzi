@@ -1,0 +1,38 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient glow for solemn, dignified atmosphere -->
+  <circle cx="120" cy="110" r="70" fill="#2C3545" opacity="0.4"/>
+
+  <!-- Flagpole representing the national flag raising context -->
+  <rect x="70" y="45" width="6" height="155" fill="#4A5568" rx="3"/>
+  <circle cx="73" cy="42" r="5" fill="#E2E8F0"/>
+
+  <!-- Majestic flag waving gracefully (symbolizing 庄严 - solemn & dignified atmosphere) -->
+  <path d="M76 52 C95 48, 115 56, 134 52 C153 48, 172 56, 190 52 L190 92 C172 96, 153 88, 134 92 C115 96, 95 88, 76 92 Z" fill="#E53E3E"/>
+
+  <!-- Golden star on the flag -->
+  <polygon points="98,66 102,76 112,76 104,82 107,92 98,86 89,92 92,82 84,76 94,76" fill="#ECC94B"/>
+
+  <!-- Dignified Guard Figure (representing the solemn presence) -->
+  <!-- Cap -->
+  <path d="M120 120 L138 126 L120 130 L102 126 Z" fill="#2B6CB0"/>
+  <rect x="110" y="125" width="20" height="3" fill="#ECC94B" rx="1"/>
+
+  <!-- Head & Uniform Collar -->
+  <circle cx="120" cy="138" r="10" fill="#CBD5E0"/>
+  <path d="M106 160 L120 148 L134 160 L140 185 L100 185 Z" fill="#2B6CB0"/>
+  
+  <!-- Golden buttons and insignia -->
+  <circle cx="120" cy="162" r="2" fill="#ECC94B"/>
+  <circle cx="120" cy="172" r="2" fill="#ECC94B"/>
+
+  <!-- Upright, disciplined stance (Straight arms at side) -->
+  <rect x="103" y="160" width="6" height="25" rx="3" fill="#2B6CB0"/>
+  <rect x="131" y="160" width="6" height="25" rx="3" fill="#2B6CB0"/>
+
+  <!-- Base / Platform of the monument/flagpole -->
+  <rect x="50" y="200" width="140" height="10" fill="#4A5568" rx="2"/>
+  <rect x="40" y="210" width="160" height="6" fill="#2D3748" rx="2"/>
+</svg>

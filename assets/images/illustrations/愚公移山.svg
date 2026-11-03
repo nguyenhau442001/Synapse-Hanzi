@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambient / Ground line -->
+  <path d="M 30,190 L 210,190" stroke="#2C323D" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Mountain to be moved (Right side, faded/distant) -->
+  <path d="M 140,190 L 175,120 L 210,190 Z" fill="#242B38"/>
+  <!-- Mountain being moved (Left/Center representation via iconic outline or peak pieces) -->
+  <path d="M 160,190 L 180,145 L 200,190 Z" fill="#2E3748"/>
+  <path d="M 150,160 L 165,130 L 180,160 Z" fill="#FFB703" opacity="0.2"/>
+
+  <!-- Baskets / Pole (Nomic tool of Yugong moving mountains piece by piece) -->
+  <!-- Carrying pole -->
+  <line x1="75" y1="125" x2="145" y2="125" stroke="#D3A054" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Left basket & soil/rock -->
+  <path d="M 60,125 L 68,160 L 92,160 L 100,125 Z" fill="#3E4756"/>
+  <path d="M 66,138 C 72,125 88,125 94,138 Z" fill="#FFB703"/>
+  <!-- Right basket & soil/rock -->
+  <path d="M 120,125 L 128,160 L 152,160 L 160,125 Z" fill="#3E4756"/>
+  <path d="M 126,138 C 132,125 148,125 154,138 Z" fill="#FFB703"/>
+  <!-- Ropes connecting pole to baskets -->
+  <line x1="75" y1="125" x2="68" y2="125" stroke="#8D99AE" stroke-width="1.5"/>
+  <line x1="75" y1="125" x2="92" y2="125" stroke="#8D99AE" stroke-width="1.5"/>
+  <line x1="145" y1="125" x2="128" y2="125" stroke="#8D99AE" stroke-width="1.5"/>
+  <line x1="145" y1="125" x2="152" y2="125" stroke="#8D99AE" stroke-width="1.5"/>
+
+  <!-- Persistent Character (Yugong - determined elder moving forward step by step) -->
+  <!-- Body/Torso leaning forward showing effort/persistence -->
+  <path d="M 100,140 L 115,185 L 95,190 L 82,150 Z" fill="#2B6CB0"/>
+  <!-- Head with headband -->
+  <circle cx="108" cy="116" r="11" fill="#F6AD55"/>
+  <path d="M 97,113 L 119,113" stroke="#E2E8F0" stroke-width="2.5"/>
+  <!-- Gray beard signifying seniority/wisdom -->
+  <path d="M 102,123 C 105,133 115,133 118,123 Z" fill="#E2E8F0"/>
+  
+  <!-- Legs walking -->
+  <path d="M 95,185 L 85,190" stroke="#2B6CB0" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 105,185 L 120,190" stroke="#2B6CB0" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Arms holding the pole -->
+  <path d="M 105,135 L 110,125" stroke="#F6AD55" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Focus/Resilience Accent Element (Glowing steady sun/determination disk rising above) -->
+  <circle cx="120" cy="65" r="18" fill="none" stroke="#FFB703" stroke-width="3" opacity="0.8"/>
+  <path d="M 120,40 L 120,47" stroke="#FFB703" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 120,83 L 120,90" stroke="#FFB703" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 95,65 L 102,65" stroke="#FFB703" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 138,65 L 145,65" stroke="#FFB703" stroke-width="3" stroke-linecap="round"/>
+</svg>

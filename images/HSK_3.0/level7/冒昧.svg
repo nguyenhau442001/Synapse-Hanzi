@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle depth elements -->
+  <circle cx="120" cy="120" r="80" fill="none" stroke="#252A34" stroke-width="2" stroke-dasharray="4 6" opacity="0.6"/>
+
+  <!-- Conceptual illustration for "冒昧" (Intruder/Interrupter in respectful polite posture - representing bold intrusion during rest time) -->
+  <g transform="translate(0, 5)">
+    <!-- Interrupter Character (Polite bow, knocking gesture, representing daring to approach) -->
+    <!-- Head & Hair -->
+    <circle cx="120" cy="78" r="16" fill="#3A4454"/>
+    <path d="M 104 76 Q 120 60 136 76" fill="none" stroke="#E6AF2E" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Body leaning forward respectfully -->
+    <path d="M 100 125 L 115 95 L 135 110 L 125 135 Z" fill="#4C6EF5"/>
+
+    <!-- Raised arm knocking/gesturing cautiously -->
+    <path d="M 115 102 L 138 92" fill="none" stroke="#4C6EF5" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="142" cy="90" r="4" fill="#E2E8F0"/>
+
+    <!-- Other arm tucked/holding a note or subtle question -->
+    <path d="M 108 115 L 95 130" fill="none" stroke="#4C6EF5" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Legs -->
+    <path d="M 112 135 L 105 168" fill="none" stroke="#2B303C" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 122 135 L 132 168" fill="none" stroke="#2B303C" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Desk / Barrier representing "Private time/space" being intruded upon -->
+    <path d="M 60 150 L 180 150 L 170 185 L 50 185 Z" fill="#252A34"/>
+    <rect x="75" y="155" width="40" height="25" rx="3" fill="#3A4454"/>
+
+    <!-- Subtle focal element: Glowing question mark/thought floating above representing the complex inquiry -->
+    <path d="M 148 55 Q 153 45 145 40 Q 137 35 145 27 Q 153 20 160 30 Q 165 38 155 46 L 153 52" fill="none" stroke="#E6AF2E" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="153" cy="62" r="3" fill="#E6AF2E"/>
+
+    <!-- Ripple/Sound waves representing breaking the quietness -->
+    <path d="M 85 85 Q 75 95 85 105" fill="none" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+    <path d="M 75 80 Q 60 95 75 110" fill="none" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round" opacity="0.2"/>
+  </g>
+</svg>

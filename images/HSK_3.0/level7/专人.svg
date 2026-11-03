@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Grid/Atmosphere representing a secure museum environment -->
+  <g opacity="0.15">
+    <line x1="30" y1="120" x2="210" y2="120" stroke="#60A5FA" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="120" y1="30" x2="120" y2="210" stroke="#60A5FA" stroke-width="1" stroke-dasharray="4 4"/>
+    <circle cx="120" cy="120" r="70" fill="none" stroke="#60A5FA" stroke-width="1"/>
+  </g>
+
+  <!-- Central Display Pedestal (Precious Relic Context) -->
+  <path d="M90 180 L150 180 L160 200 L80 200 Z" fill="#2D3748"/>
+  <rect x="70" y="200" width="100" height="100" rx="4" fill="#1E293B"/>
+  
+  <!-- Glass Display Case & Precious Artifact (Ancient bronze vessel/urn) -->
+  <path d="M95 105 L145 105 L150 155 L90 155 Z" fill="#3B82F6" opacity="0.1"/>
+  <path d="M95 105 L145 105 L150 155 L90 155 Z" fill="none" stroke="#60A5FA" stroke-width="1.5" opacity="0.4"/>
+  
+  <!-- Precious Artifact -->
+  <path d="M107 130 C107 122 113 118 120 118 C127 118 133 122 133 130 C135 130 138 132 138 135 C138 138 135 142 132 143 L132 147 C132 148 131 149 130 149 L110 149 C109 149 108 148 108 147 L108 143 C105 142 102 138 102 135 C102 132 105 130 107 130 Z" fill="#F59E0B"/>
+  <circle cx="120" cy="126" r="3" fill="#1A1D24"/>
+
+  <!-- Focused Character / Designated Person (专人 - Professional attendant standing guard) -->
+  <!-- Body/Suit -->
+  <path d="M100 220 L100 190 C100 178 110 168 120 168 C130 168 140 178 140 190 L140 220 Z" fill="#334155"/>
+  <path d="M112 168 L128 168 L125 195 L115 195 Z" fill="#475569"/>
+  <path d="M117 175 L123 175 L120 185 Z" fill="#F8FAFC"/> <!-- Tie -->
+
+  <!-- Head & Face -->
+  <circle cx="120" cy="148" r="14" fill="#CBD5E1"/>
+  <!-- Hair -->
+  <path d="M106 148 C106 138 112 134 120 134 C128 134 134 138 134 148 C132 144 126 142 120 142 C114 142 108 144 106 148 Z" fill="#1E293B"/>
+
+  <!-- Attention / Specialized Focus Element (Golden spotlight beam from above) -->
+  <polygon points="120,40 70,165 170,165" fill="url(#lightBeam)" opacity="0.25"/>
+
+  <!-- Designated/Special Badge or Spotlight Highlight (Orange/Gold accent for "专") -->
+  <circle cx="120" cy="120" r="85" fill="none" stroke="#F59E0B" stroke-width="2" stroke-dasharray="8 6" opacity="0.8"/>
+  <circle cx="120" cy="35" r="6" fill="#F59E0B"/>
+  <path d="M117 33 L121 37 L124 32" fill="none" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="lightBeam" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>

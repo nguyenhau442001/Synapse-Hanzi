@@ -1,0 +1,42 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle agricultural field grid background lines -->
+  <path d="M40 180 L200 180" stroke="#2A303C" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M50 200 L190 200" stroke="#2A303C" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <!-- Central Noun Object: Official Land Deed / Contract Document representing the Transfer (流转) -->
+  <!-- Document Shadow -->
+  <rect x="75" y="45" width="90" height="120" rx="8" fill="#111318"/>
+  <!-- Main Document Base -->
+  <rect x="70" y="40" width="90" height="120" rx="8" fill="#2E3646"/>
+  
+  <!-- Document Header / Seal Accent (Gold/Orange) -->
+  <rect x="85" y="55" width="60" height="8" rx="4" fill="#F59E0B"/>
+  
+  <!-- Content Lines on Document -->
+  <rect x="85" y="75" width="50" height="4" rx="2" fill="#8A99AD"/>
+  <rect x="85" y="87" width="60" height="4" rx="2" fill="#8A99AD"/>
+  <rect x="85" y="99" width="40" height="4" rx="2" fill="#8A99AD"/>
+
+  <!-- Mini Agricultural Plot Graphic on Document -->
+  <rect x="85" y="115" width="60" height="30" rx="4" fill="#1E2430"/>
+  <path d="M95 130 Q105 120 115 130 T135 130" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+  <!-- Sprout icon on document -->
+  <path d="M115 135 L115 122 M115 125 C110 125 107 122 107 118 C112 118 115 122 115 125 Z" fill="#10B981"/>
+
+  <!-- Dynamic Transfer Circular Flow Arrows (Luizhuan concept) -->
+  <!-- Outer glowing/accent curved arrows representing transfer and circulation -->
+  <path d="M 50,110 A 72,72 0 0,1 175,55" fill="none" stroke="#F59E0B" stroke-width="5" stroke-linecap="round"/>
+  <polygon points="175,45 185,58 168,61" fill="#F59E0B"/>
+
+  <path d="M 190,130 A 72,72 0 0,1 65,185" fill="none" stroke="#F59E0B" stroke-width="5" stroke-linecap="round"/>
+  <polygon points="65,195 55,182 72,179" fill="#F59E0B"/>
+
+  <!-- Handshake / Transfer Indicator at the base of the document -->
+  <circle cx="120" cy="185" r="22" fill="#1A1D24" stroke="#F59E0B" stroke-width="4"/>
+  <!-- Simplified Abstract Hands Interlocking / Transferring -->
+  <path d="M110 185 L120 175 L130 185" fill="none" stroke="#10B981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M113 191 L120 184 L127 191" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

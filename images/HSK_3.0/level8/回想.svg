@@ -1,0 +1,30 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Window frame -->
+  <path d="M60 60h120v120H60z" fill="none" stroke="#374151" stroke-width="4"/>
+  <path d="M120 60v120" stroke="#374151" stroke-width="4"/>
+  
+  <!-- Night sky outside -->
+  <circle cx="180" cy="80" r="15" fill="#FDE68A" opacity="0.3"/>
+  <circle cx="70" cy="90" r="2" fill="#FFF"/>
+  <circle cx="150" cy="110" r="1.5" fill="#FFF"/>
+  <circle cx="90" cy="70" r="1" fill="#FFF"/>
+
+  <!-- Character (Elderly person sitting) -->
+  <path d="M85 180h70v-10c0-20-10-30-35-30s-35 10-35 30v10z" fill="#4B5563"/>
+  <path d="M100 140c0-15 10-25 20-25s20 10 20 25" fill="#9CA3AF"/>
+  <circle cx="120" cy="115" r="12" fill="#9CA3AF"/>
+  
+  <!-- Memory projection (The "Action" of recalling) -->
+  <path d="M140 100c20-20 50-20 60 0s10 40-10 50-40 10-50-10" fill="none" stroke="#F59E0B" stroke-width="3" stroke-dasharray="6 6"/>
+  
+  <!-- Memory content: Silhouette of a younger self in action -->
+  <g transform="translate(155, 115) scale(0.6)">
+    <path d="M10 40l10-20 10 20M20 20V5M15 10l10 5M25 10l-10 5" stroke="#FDE68A" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Motion lines indicating the mental process of looking back -->
+  <path d="M110 110 Q 130 90 150 100" fill="none" stroke="#F59E0B" stroke-width="2" opacity="0.6"/>
+  <path d="M110 115 Q 135 95 155 105" fill="none" stroke="#F59E0B" stroke-width="2" opacity="0.4"/>
+</svg>

@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Person 1 (The one slipping) -->
+  <g transform="translate(100, 80)">
+    <circle cx="20" cy="20" r="12" fill="#E0E0E0"/>
+    <path d="M20 32 L20 70 M20 40 L5 60 M20 40 L35 60 M20 70 L10 95 M20 70 L30 95" stroke="#E0E0E0" stroke-width="6" stroke-linecap="round"/>
+    <!-- The sleeve/arm being grabbed -->
+    <path d="M20 45 L-10 65" stroke="#FFB300" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Person 2 (The rescuer) -->
+  <g transform="translate(130, 60)">
+    <circle cx="20" cy="20" r="12" fill="#4A90E2"/>
+    <path d="M20 32 L20 70 M20 40 L5 60 M20 40 L35 60 M20 70 L10 95 M20 70 L30 95" stroke="#4A90E2" stroke-width="6" stroke-linecap="round"/>
+    <!-- The hand grabbing the sleeve -->
+    <circle cx="-10" cy="65" r="10" fill="#FFB300"/>
+  </g>
+
+  <!-- Motion lines to indicate pulling action -->
+  <path d="M115 65 L135 65" stroke="#FFB300" stroke-width="3" stroke-dasharray="4 4" opacity="0.6"/>
+  <path d="M110 60 L130 60" stroke="#FFB300" stroke-width="3" stroke-dasharray="4 4" opacity="0.4"/>
+</svg>

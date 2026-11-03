@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(30, 45)">
+    <!-- Main Wall/Board Background representing the schedule/agenda board -->
+    <rect x="0" y="0" width="180" height="150" rx="8" fill="#222631" stroke="#2F3542" stroke-width="2"/>
+    
+    <!-- Header bar -->
+    <rect x="12" y="12" width="60" height="8" rx="4" fill="#4B5563"/>
+    <circle cx="158" cy="16" r="4" fill="#F59E0B"/>
+    
+    <!-- Compact Schedule Item 1 -->
+    <g transform="translate(12, 32)">
+      <rect x="0" y="0" width="36" height="28" rx="4" fill="#3B82F6" opacity="0.2"/>
+      <circle cx="18" cy="14" r="6" fill="#3B82F6"/>
+      <rect x="44" y="6" width="70" height="6" rx="3" fill="#E5E7EB"/>
+      <rect x="44" y="16" width="45" height="4" rx="2" fill="#9CA3AF"/>
+    </g>
+    
+    <!-- Seamless transition / connecting arrow indicating compactness -->
+    <path d="M 90 68 L 90 76" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 2"/>
+    
+    <!-- Compact Schedule Item 2 (Packed tight) -->
+    <g transform="translate(12, 68)">
+      <rect x="0" y="0" width="36" height="28" rx="4" fill="#10B981" opacity="0.2"/>
+      <circle cx="18" cy="14" r="6" fill="#10B981"/>
+      <rect x="44" y="6" width="85" height="6" rx="3" fill="#E5E7EB"/>
+      <rect x="44" y="16" width="60" height="4" rx="2" fill="#9CA3AF"/>
+    </g>
+    
+    <!-- Seamless transition -->
+    <path d="M 90 104 L 90 112" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 2"/>
+    
+    <!-- Compact Schedule Item 3 (Packed tight) -->
+    <g transform="translate(12, 104)">
+      <rect x="0" y="0" width="36" height="28" rx="4" fill="#F59E0B" opacity="0.2"/>
+      <circle cx="18" cy="14" r="6" fill="#F59E0B"/>
+      <rect x="44" y="6" width="65" height="6" rx="3" fill="#E5E7EB"/>
+      <rect x="44" y="16" width="35" height="4" rx="2" fill="#9CA3AF"/>
+    </g>
+    
+    <!-- Highlight brackets showing tight packing (紧凑) -->
+    <path d="M 4 28 L 2 28 L 2 136 L 4 136" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 176 28 L 178 28 L 178 136 L 176 136" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Focus Indicator Badge -->
+    <circle cx="162" cy="120" r="14" fill="#F59E0B"/>
+    <path d="M 155 120 L 160 125 L 170 113" fill="none" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

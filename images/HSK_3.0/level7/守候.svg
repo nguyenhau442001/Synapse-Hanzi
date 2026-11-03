@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Bed frame -->
+  <rect x="60" y="150" width="120" height="15" rx="2" fill="#4A5568"/>
+  <rect x="65" y="165" width="10" height="20" fill="#4A5568"/>
+  <rect x="165" y="165" width="10" height="20" fill="#4A5568"/>
+  
+  <!-- Child in bed -->
+  <path d="M75 145 Q 120 130 165 145 L 165 150 L 75 150 Z" fill="#E2E8F0"/>
+  <circle cx="90" cy="135" r="12" fill="#FBD38D"/>
+  
+  <!-- Mother sitting -->
+  <path d="M180 100 L 210 100 L 210 185 L 180 185 Z" fill="#718096"/>
+  <circle cx="195" cy="85" r="15" fill="#FBD38D"/>
+  
+  <!-- Protective hand gesture -->
+  <path d="M175 110 C 170 100 160 95 150 100" stroke="#F6AD55" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M150 100 C 140 105 135 115 140 125" stroke="#F6AD55" stroke-width="4" stroke-linecap="round" fill="none"/>
+  
+  <!-- Clock on wall to imply duration -->
+  <circle cx="190" cy="40" r="20" fill="none" stroke="#4A5568" stroke-width="2"/>
+  <line x1="190" y1="40" x2="190" y2="25" stroke="#FBD38D" stroke-width="3" stroke-linecap="round"/>
+  <line x1="190" y1="40" x2="205" y2="40" stroke="#FBD38D" stroke-width="3" stroke-linecap="round"/>
+</svg>

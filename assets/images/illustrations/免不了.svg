@@ -1,0 +1,57 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle depth elements -->
+  <path d="M40 180 L200 180" stroke="#2A2E39" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Conceptual contrast/pathway representing the inevitable obstacles (Adjective/Descriptive state) -->
+  <!-- Smooth path transitioning into unavoidable bumps/hurdles -->
+  <path d="M 40 150 Q 80 150, 100 120 T 140 100 T 180 80 T 210 60" fill="none" stroke="#3A404D" stroke-width="4" stroke-dasharray="6 4" stroke-linecap="round"/>
+
+  <!-- Obstacle pillars / bumps (Visualizing "hard to avoid / inevitable trials") -->
+  <g transform="translate(130, 95)">
+    <!-- Obstacle block (Slate/Orange accent) -->
+    <rect x="-12" y="-15" width="24" height="30" rx="4" fill="#252A34" stroke="#FF9F43" stroke-width="2"/>
+    <path d="M-6 -5 L6 -5 M-6 3 L6 3" stroke="#FF9F43" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  
+  <g transform="translate(175, 75)">
+    <rect x="-12" y="-15" width="24" height="30" rx="4" fill="#252A34" stroke="#FF9F43" stroke-width="2"/>
+    <path d="M-6 -5 L6 -5 M-6 3 L6 3" stroke="#FF9F43" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Main Subject: Young traveler / professional stepping forward (Scale & emotion contrast) -->
+  <!-- Stepping forward with determined yet burdened posture -->
+  <g transform="translate(80, 120)">
+    <!-- Body / Torso angled forward -->
+    <path d="M -5 30 L 5 10 L 15 25 L 10 45 Z" fill="#4B6584"/>
+    
+    <!-- Head -->
+    <circle cx="8" cy="-2" r="9" fill="#E4E7EB"/>
+    <!-- Hair -->
+    <path d="M -1 -7 C 2 -12, 14 -10, 17 -4 C 15 -2, 5 -4, -1 -7 Z" fill="#FF9F43"/>
+
+    <!-- Backpack representing journey / moving out -->
+    <rect x="-14" y="8" width="12" height="22" rx="3" fill="#D18035"/>
+    <path d="M-14 13 L-8 10" stroke="#B26A28" stroke-width="2"/>
+
+    <!-- Legs walking -->
+    <path d="M 5 45 L 12 58 L 22 55" fill="none" stroke="#4B6584" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 10 45 L 2 55 L -4 52" fill="none" stroke="#3A404D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Arms balancing -->
+    <path d="M 10 18 L 22 25" fill="none" stroke="#4B6584" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Scale/Direction Indicator: The forward momentum meeting inevitable elements -->
+  <!-- Wind/friction lines showing the inevitable friction of entering society -->
+  <path d="M 115 110 L 125 105" stroke="#FF9F43" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <path d="M 120 125 L 132 120" stroke="#FF9F43" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <path d="M 160 85 L 170 80" stroke="#FF9F43" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Destination / Horizon marker -->
+  <circle cx="210" cy="60" r="4" fill="#FF9F43"/>
+  <path d="M 205 75 L 210 60 L 215 75" fill="none" stroke="#FF9F43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg>

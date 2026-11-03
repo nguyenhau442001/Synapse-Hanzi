@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background ambient glow representing warmth/spring breeze -->
+  <circle cx="120" cy="120" r="80" fill="#FF8C42" opacity="0.08" filter="blur(20px)"/>
+
+  <!-- River bank background elements -->
+  <path d="M40 160 C 90 150, 150 170, 200 155" stroke="#2D323E" stroke-width="4" stroke-linecap="round" fill="none"/>
+  
+  <!-- Main Frozen/Melting Physical Object (Ice floe transitioning into water) -->
+  <g transform="translate(0, 5)">
+    <!-- Water base / Liquid state -->
+    <path d="M 60 145 C 75 138, 95 142, 120 142 C 145 142, 165 138, 180 145 C 190 150, 195 160, 185 170 C 170 185, 130 185, 120 185 C 110 185, 70 185, 55 170 C 45 160, 50 150, 60 145 Z" fill="#2E69B3" opacity="0.8"/>
+    
+    <!-- Water ripples -->
+    <path d="M 85 160 Q 100 155 115 160" stroke="#5299D6" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M 130 165 Q 145 160 160 165" stroke="#5299D6" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Melting Ice Block (Noun entity representing '融') -->
+    <g transform="translate(70, 75)">
+      <!-- Ice Shadow -->
+      <ellipse cx="50" cy="72" rx="42" ry="10" fill="#111317" opacity="0.6"/>
+
+      <!-- Main Ice Block Body with faceted flat design -->
+      <!-- Back/Darker facets -->
+      <path d="M 25 35 L 50 15 L 75 35 L 65 65 L 35 65 Z" fill="#99C2FF"/>
+      
+      <!-- Front/Bright facets -->
+      <path d="M 15 45 L 50 25 L 85 45 L 75 70 L 25 70 Z" fill="#CCE0FF"/>
+      
+      <!-- Top highlight facet -->
+      <path d="M 50 25 L 75 35 L 65 45 L 45 35 Z" fill="#E6F0FF"/>
+
+      <!-- Melting dripping effect (Liquid merging into water below) -->
+      <path d="M 35 70 C 35 78, 42 78, 42 72" fill="#99C2FF"/>
+      <path d="M 65 70 C 65 82, 72 82, 72 75" fill="#99C2FF"/>
+      <path d="M 50 70 C 50 86, 56 86, 56 78" fill="#CCE0FF"/>
+      
+      <!-- Falling droplets -->
+      <circle cx="53" cy="94" r="3.5" fill="#CCE0FF"/>
+      <path d="M 53 90 C 51.5 92, 51.5 96, 53 97 C 54.5 96, 54.5 92, 53 90 Z" fill="#CCE0FF"/>
+      
+      <circle cx="75" cy="88" r="2.5" fill="#99C2FF"/>
+      <path d="M 75 85 C 73.8 87, 73.8 89, 75 90 C 76.2 89, 76.2 87, 75 85 Z" fill="#99C2FF"/>
+    </g>
+
+    <!-- Warm Spring Sun / Heat source top right -->
+    <circle cx="180" cy="55" r="14" fill="#FF8C42"/>
+    <circle cx="180" cy="55" r="18" fill="#FF8C42" opacity="0.3"/>
+
+    <!-- Spring breeze airflow lines (Warmth touching the ice) -->
+    <path d="M 30 65 Q 50 55, 70 65" stroke="#FF8C42" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+    <path d="M 20 85 Q 40 75, 55 82" stroke="#FF8C42" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+    <path d="M 135 45 Q 150 40, 165 48" stroke="#FF8C42" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+  </g>
+</svg>

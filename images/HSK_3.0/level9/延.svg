@@ -1,0 +1,31 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Runway/Ground -->
+  <path d="M40 180 L200 180 L180 220 L60 220 Z" fill="#2D343E"/>
+  <rect x="40" y="195" width="160" height="10" fill="#4A5568"/>
+  
+  <!-- Airplane (Delayed/Stationary) -->
+  <g transform="translate(120, 120)">
+    <!-- Body -->
+    <path d="M-60 -10 C-60 -25 -30 -30 0 -30 C30 -30 60 -25 60 -10 L60 10 C60 25 30 30 0 30 C-30 30 -60 25 -60 10 Z" fill="#F6AD55"/>
+    <!-- Tail -->
+    <path d="M-55 0 L-75 -20 L-75 20 L-55 0 Z" fill="#F6AD55"/>
+    <!-- Wing -->
+    <path d="M-10 -25 L10 -25 L20 10 L-20 10 Z" fill="#ED8936"/>
+    <!-- Window -->
+    <circle cx="-30" cy="-5" r="4" fill="#1A1D24"/>
+    <circle cx="-15" cy="-5" r="4" fill="#1A1D24"/>
+    <circle cx="0" cy="-5" r="4" fill="#1A1D24"/>
+  </g>
+
+  <!-- Ice/Snow effect on runway -->
+  <circle cx="70" cy="200" r="8" fill="#E2E8F0" opacity="0.6"/>
+  <circle cx="110" cy="210" r="12" fill="#E2E8F0" opacity="0.4"/>
+  <circle cx="160" cy="205" r="10" fill="#E2E8F0" opacity="0.5"/>
+  
+  <!-- Clock/Time constraint element (Representing the 'Delay' aspect) -->
+  <circle cx="180" cy="60" r="30" fill="#2D343E" stroke="#F6AD55" stroke-width="4"/>
+  <line x1="180" y1="60" x2="180" y2="40" stroke="#F6AD55" stroke-width="4" stroke-linecap="round"/>
+  <line x1="180" y1="60" x2="200" y2="60" stroke="#F6AD55" stroke-width="4" stroke-linecap="round"/>
+</svg>

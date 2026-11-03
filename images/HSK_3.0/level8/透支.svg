@@ -1,0 +1,59 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 120)">
+    <!-- ATM / Kiosk Body -->
+    <rect x="-65" y="-75" width="130" height="150" rx="12" fill="#252A34" stroke="#3A4252" stroke-width="3"/>
+    
+    <!-- Screen -->
+    <rect x="-45" y="-55" width="90" height="55" rx="6" fill="#14171C"/>
+    
+    <!-- Exhausted silhouette on screen / Warning glow -->
+    <circle cx="0" cy="-32" r="14" fill="#FF5252" opacity="0.2"/>
+    <path d="M-12,-20 C-12,-28 12,-28 12,-20 C12,-16 9,-12 0,-12 C-9,-12 -12,-16 -12,-20 Z" fill="#FF5252"/>
+    <circle cx="-4" cy="-35" r="2" fill="#FF5252"/>
+    <circle cx="4" cy="-35" r="2" fill="#FF5252"/>
+    <path d="M-4,-26 Q0,-22 4,-26" fill="none" stroke="#FF5252" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <!-- Keypad area -->
+    <rect x="-35" y="10" width="70" height="35" rx="4" fill="#1A1D24"/>
+    <rect x="-27" y="16" width="12" height="6" rx="2" fill="#3A4252"/>
+    <rect x="-6" y="16" width="12" height="6" rx="2" fill="#3A4252"/>
+    <rect x="15" y="16" width="12" height="6" rx="2" fill="#3A4252"/>
+    <rect x="-27" y="26" width="12" height="6" rx="2" fill="#3A4252"/>
+    <rect x="-6" y="26" width="12" height="6" rx="2" fill="#3A4252"/>
+    <rect x="15" y="26" width="12" height="6" rx="2" fill="#3A4252"/>
+
+    <!-- Card Slot -->
+    <rect x="-25" y="-62" width="50" height="4" rx="2" fill="#0E1116"/>
+    
+    <!-- Bank Card being sucked in / Overdrawn state -->
+    <g transform="translate(35, -70) rotate(35)">
+      <rect x="-35" y="-12" width="70" height="44" rx="6" fill="#FFA726"/>
+      <!-- Card Chip -->
+      <rect x="-25" y="-2" width="12" height="10" rx="2" fill="#FFE082"/>
+      <!-- Warning Stripe on Card -->
+      <rect x="-35" y="12" width="70" height="10" fill="#E65100"/>
+    </g>
+
+    <!-- Cash Slot / Depleted Output with Red Alert Glow -->
+    <rect x="-35" y="58" width="70" height="6" rx="3" fill="#0E1116"/>
+    <rect x="-35" y="58" width="70" height="6" rx="3" fill="#FF5252" opacity="0.4"/>
+    
+    <!-- Minus / Debt indicator coins flying out, flashing red -->
+    <g transform="translate(0, 85)">
+      <circle cx="-30" cy="0" r="10" fill="#D32F2F"/>
+      <path d="M-35,0 L-25,0" stroke="#FFF" stroke-width="3" stroke-linecap="round"/>
+      
+      <circle cx="0" cy="-10" r="12" fill="#D32F2F"/>
+      <path d="M-7,-10 L7,-10" stroke="#FFF" stroke-width="3.5" stroke-linecap="round"/>
+      
+      <circle cx="30" cy="0" r="10" fill="#D32F2F"/>
+      <path d="M25,0 L35,0" stroke="#FFF" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    
+    <!-- Dynamic Energy/Resource Drain Lines -->
+    <path d="M-60,-20 C-80,-20 -90,10 -110,10" fill="none" stroke="#FF5252" stroke-width="3" stroke-dasharray="6,4" stroke-linecap="round"/>
+    <path d="M60,-20 C80,-20 90,10 110,10" fill="none" stroke="#FF5252" stroke-width="3" stroke-dasharray="6,4" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Conceptual Illustration for "可想而知" (Evident, imaginable extremes - polar expedition/survival gear) -->
+  <!-- Outer glow representing intense arctic cold atmosphere -->
+  <circle cx="120" cy="115" r="70" fill="#22304A" opacity="0.4"/>
+  
+  <!-- Snow ground / horizon line -->
+  <path d="M 50 170 Q 120 160 190 170 L 205 185 C 160 195 80 195 35 185 Z" fill="#2E3C54"/>
+  
+  <!-- Central Physical Object: Professional Polar Explorer Parka / Heavy Winter Hooded Gear -->
+  <!-- Hood/Helmet Outer -->
+  <path d="M 95 65 C 90 65 85 75 85 90 C 85 110 90 115 95 125 L 90 150 C 90 155 95 160 100 160 L 140 160 C 145 160 150 155 150 150 L 145 125 C 150 115 155 110 155 90 C 155 75 150 65 145 65 Z" fill="#3B4F6C"/>
+  
+  <!-- Fur Trim around Hood -->
+  <path d="M 88 85 C 84 95 84 110 88 120 C 90 115 92 105 92 90 C 92 87 90 86 88 85 Z" fill="#A4B4CC"/>
+  <path d="M 152 85 C 156 95 156 110 152 120 C 150 115 148 105 148 90 C 148 87 150 86 152 85 Z" fill="#A4B4CC"/>
+  <path d="M 95 63 C 105 60 135 60 145 63 C 148 67 145 72 140 70 C 120 67 100 67 100 70 C 95 72 92 67 95 63 Z" fill="#A4B4CC"/>
+
+  <!-- Tinted Visor / Goggles (Reflecting severe environment) -->
+  <path d="M 96 92 C 96 85 144 85 144 92 C 144 102 96 102 96 92 Z" fill="#11151C"/>
+  <path d="M 100 90 C 115 88 130 88 140 90 C 135 95 105 95 100 90 Z" fill="#F0A500" opacity="0.8"/> <!-- High contrast warm amber reflection -->
+
+  <!-- Jacket Collar / Zipper Area -->
+  <path d="M 100 123 L 140 123 L 145 165 L 95 165 Z" fill="#28374D"/>
+  <line x1="120" y1="123" x2="120" y2="165" stroke="#1A2332" stroke-width="3"/>
+  <rect x="116" y="128" width="8" height="12" rx="2" fill="#F0A500"/>
+
+  <!-- Frost/Ice Crystals framing the scene (Visualizing harsh conditions directly perceivable) -->
+  <path d="M 65 80 L 70 95 L 60 90 Z" fill="#7893B3" opacity="0.7"/>
+  <path d="M 175 75 L 170 90 L 180 88 Z" fill="#7893B3" opacity="0.7"/>
+  <path d="M 55 130 L 62 135 L 58 142 Z" fill="#7893B3" opacity="0.6"/>
+  <path d="M 182 125 L 178 138 L 185 135 Z" fill="#7893B3" opacity="0.6"/>
+
+  <!-- Conceptual "Mind's Eye / Thought" indicator: Subtle clean light beam from top illustrating clear mental realization/comprehension ("可想") -->
+  <path d="M 120 25 L 105 55 L 135 55 Z" fill="#F0A500" opacity="0.15"/>
+  <circle cx="120" cy="40" r="3" fill="#F0A500"/>
+
+</svg>

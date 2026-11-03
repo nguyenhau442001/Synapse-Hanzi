@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Architectural storefront structure representing "专卖店" (Exclusive Specialty Store) -->
+  <g transform="translate(30, 45)">
+    <!-- Main building facade background -->
+    <rect x="0" y="35" width="180" height="110" rx="4" fill="#222730" stroke="#323846" stroke-width="2"/>
+    
+    <!-- Modern glass display windows -->
+    <rect x="15" y="65" width="65" height="70" rx="2" fill="#2A313E"/>
+    <rect x="100" y="65" width="65" height="70" rx="2" fill="#2A313E"/>
+    
+    <!-- Display items inside windows (Specialized apparel/gear silhouettes) -->
+    <!-- Left window item: Sports garment / jacket -->
+    <path d="M40 85 L47 80 L54 85 L52 110 L38 110 Z" fill="#F39C12" opacity="0.8"/>
+    <path d="M44 80 L47 83 L50 80" fill="none" stroke="#2A313E" stroke-width="2"/>
+    
+    <!-- Right window item: Outdoor backpack / gear -->
+    <rect x="120" y="85" width="25" height="30" rx="4" fill="#3498DB" opacity="0.8"/>
+    <path d="M127 85 C127 78 138 78 138 85" fill="none" stroke="#3498DB" stroke-width="2"/>
+    
+    <!-- Glass reflections -->
+    <path d="M22 75 L35 125" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.1"/>
+    <path d="M107 75 L120 125" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.1"/>
+    
+    <!-- Central glass double doors -->
+    <path d="M78 95 L90 95 L90 135 L78 135 Z" fill="#1E232D" stroke="#3A4252" stroke-width="1.5"/>
+    <circle cx="87" cy="115" r="1.5" fill="#F39C12"/>
+    <circle cx="81" cy="115" r="1.5" fill="#F39C12"/>
+    
+    <!-- Distinctive Store Awning / Canopy -->
+    <path d="M-5 35 L185 35 L175 15 L5 15 Z" fill="#E74C3C"/>
+    <!-- Awning stripes -->
+    <path d="M30 15 L35 35" stroke="#C0392B" stroke-width="6"/>
+    <path d="M70 15 L75 35" stroke="#C0392B" stroke-width="6"/>
+    <path d="M110 15 L115 35" stroke="#C0392B" stroke-width="6"/>
+    <path d="M150 15 L155 35" stroke="#C0392B" stroke-width="6"/>
+    
+    <!-- Prominent Store Sign / Branding Plaque (denoting exclusive specialty shop) -->
+    <rect x="55" y="-5" width="70" height="24" rx="4" fill="#1A1D24" stroke="#F39C12" stroke-width="2"/>
+    <!-- Focus icon inside sign: Star/Emblem for exclusivity -->
+    <path d="M90 2 L92.5 7 L98 8 L94 12 L95 17 L90 14.5 L85 17 L86 12 L82 8 L87.5 7 Z" fill="#F39C12"/>
+  </g>
+  
+  <!-- Ground pavement line -->
+  <line x1="20" y1="190" x2="220" y2="190" stroke="#323846" stroke-width="3" stroke-linecap="round"/>
+</svg>

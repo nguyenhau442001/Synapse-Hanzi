@@ -1,0 +1,49 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 115)">
+    <!-- Base Documents Shadow/Layer -->
+    <path d="M-65 -45 L-25 -65 L15 -45 L-25 -25 Z" fill="#2D3748" opacity="0.6"/>
+    <path d="M25 -45 L65 -65 L105 -45 L65 -25 Z" fill="#2D3748" opacity="0.6"/>
+
+    <!-- Left Source Document (Ancient Scroll/Book) -->
+    <g transform="translate(-40, -10)">
+      <path d="M-30 -35 L10 -55 L50 -35 L10 -15 Z" fill="#F6AD55"/>
+      <path d="M-30 -35 L-30 45 L10 65 L10 -15 Z" fill="#DD6B20"/>
+      <path d="M10 -15 L10 65 L50 45 L50 -35 Z" fill="#ED8936"/>
+      <!-- Lines representing source text -->
+      <line x1="-15" y1="5" x2="0" y2="12" stroke="#9C4221" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="-10" y1="20" x2="5" y2="27" stroke="#9C4221" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="-5" y1="35" x2="10" y2="42" stroke="#9C4221" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="20" y1="-5" x2="35" y2="2" stroke="#C05621" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="25" y1="10" x2="40" y2="17" stroke="#C05621" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="30" y1="25" x2="45" y2="32" stroke="#C05621" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Right Target Document (Modern Book/Page) -->
+    <g transform="translate(40, -10)">
+      <path d="M-50 -35 L-10 -55 L30 -35 L-10 -15 Z" fill="#63B3ED"/>
+      <path d="M-50 -35 L-50 45 L-10 65 L-10 -15 Z" fill="#3182CE"/>
+      <path d="M-10 -15 L-10 65 L30 45 L30 -35 Z" fill="#4299E1"/>
+      <!-- Lines representing target text -->
+      <line x1="-35" y1="5" x2="-20" y2="12" stroke="#2B6CB0" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="-30" y1="20" x2="-15" y2="27" stroke="#2B6CB0" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="-25" y1="35" x2="-10" y2="42" stroke="#2B6CB0" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="0" y1="-5" x2="15" y2="2" stroke="#63B3ED" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="5" y1="10" x2="20" y2="17" stroke="#63B3ED" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="10" y1="25" x2="25" y2="32" stroke="#63B3ED" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Central Translation Bridge (Connecting Arrow / Pen Nib Metaphor) -->
+    <g transform="translate(0, -15)">
+      <path d="M-18 0 C-18 -15 0 -30 0 -45 C0 -30 18 -15 18 0 C18 12 0 25 0 35 C0 25 -18 12 -18 0 Z" fill="#ECC94B"/>
+      <circle cx="0" cy="-5" r="4" fill="#744210"/>
+      <path d="M-12 12 L12 12 L0 28 Z" fill="#ECC94B"/>
+    </g>
+
+    <!-- Flowing transformation path below -->
+    <path d="M-45 35 C-20 50 20 50 45 35" fill="none" stroke="#4A5568" stroke-width="3" stroke-dasharray="6 6" stroke-linecap="round"/>
+    <polygon points="43,28 53,37 40,41" fill="#4A5568"/>
+    <polygon points="-43,28 -53,37 -40,41" fill="#4A5568" transform="scale(-1, 1) translate(-10, 0)"/>
+  </g>
+</svg>

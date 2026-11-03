@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(40, 40)">
+    <!-- The Person (The "Entity" in the situation) -->
+    <path d="M80 140c0-22.09 17.91-40 40-40s40 17.91 40 40v20h-80v-20z" fill="#E0E0E0"/>
+    <circle cx="120" cy="80" r="20" fill="#E0E0E0"/>
+    
+    <!-- The "Dilemma" - A path splitting into two directions -->
+    <path d="M120 160 L120 120" stroke="#FFB300" stroke-width="6" stroke-linecap="round"/>
+    <path d="M120 120 L80 80" stroke="#FFB300" stroke-width="6" stroke-linecap="round"/>
+    <path d="M120 120 L160 80" stroke="#FFB300" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- The "Perilous" context - Cracks in the ground -->
+    <path d="M60 165 L100 160 L90 175" stroke="#FF5252" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M180 165 L140 160 L150 175" stroke="#FF5252" stroke-width="3" fill="none" stroke-linecap="round"/>
+    
+    <!-- The "Manufacturing/Business" context - A broken gear symbol -->
+    <path d="M120 40 L130 30 M110 30 L120 40" stroke="#FFB300" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="120" cy="40" r="15" fill="none" stroke="#FFB300" stroke-width="4" stroke-dasharray="8 4"/>
+  </g>
+</svg>

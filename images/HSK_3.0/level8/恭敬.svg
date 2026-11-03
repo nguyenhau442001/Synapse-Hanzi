@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow/arch for focal depth -->
+  <path d="M120 40 C155 40 185 70 185 110 L185 200 C185 205 181 210 175 210 L65 210 C59 210 55 205 55 200 L55 110 C55 70 85 40 120 40 Z" fill="#222733"/>
+
+  <!-- Elder / Senior Figure (Right side, slightly taller/seated posture indication) -->
+  <g id="senior-figure">
+    <!-- Body / Robe (Slate blue/teal tone for dignity) -->
+    <path d="M150 120 C165 125 180 145 185 195 L115 195 C120 160 135 130 150 120 Z" fill="#3E4C59"/>
+    <!-- Shoulders -->
+    <path d="M130 135 C145 125 165 125 180 135 C185 145 185 160 185 180 L115 180 C115 160 120 145 130 135 Z" fill="#52606D"/>
+    <!-- Head -->
+    <circle cx="150" cy="100" r="18" fill="#E4E7EB"/>
+    <!-- Hair (Grey/Silver) -->
+    <path d="M136 96 C136 86 144 82 150 82 C156 82 164 86 164 96 C164 98 162 94 160 92 C156 90 144 90 140 92 C138 94 136 98 136 96 Z" fill="#9AA5B1"/>
+    <!-- Calm, warm facial expression (implied minimal style) -->
+    <circle cx="156" cy="99" r="1.5" fill="#1A1D24"/>
+  </g>
+
+  <!-- Junior Figure (Left side, bowing respectfully with clasped hands) -->
+  <g id="junior-figure">
+    <!-- Body leaning forward in a respectful bow -->
+    <path d="M75 130 C90 130 115 145 125 195 L65 195 C60 170 65 145 75 130 Z" fill="#3B82F6"/>
+    <!-- Head bowed down -->
+    <circle cx="82" cy="118" r="16" fill="#F3F4F6"/>
+    <!-- Hair -->
+    <path d="M70 114 C70 106 76 102 82 102 C88 102 94 106 94 114 C92 110 88 108 82 108 C76 108 72 110 70 114 Z" fill="#4B5563"/>
+  </g>
+
+  <!-- Clasped Hands Gesture (Focus of Respect / 恭敬) -->
+  <g id="clasped-hands" transform="translate(98, 138)">
+    <!-- Warm Golden/Amber Accent for the central gesture -->
+    <circle cx="12" cy="12" r="14" fill="#F59E0B" opacity="0.15"/>
+    <!-- Hands shape -->
+    <path d="M4 14 C4 10 8 8 12 10 C16 8 20 10 20 14 C20 18 16 20 12 20 C8 20 4 18 4 14 Z" fill="#FBBF24"/>
+    <path d="M8 12 C10 10 14 10 16 12 C15 15 9 15 8 12 Z" fill="#D97706"/>
+  </g>
+
+  <!-- Floor line -->
+  <rect x="40" y="195" width="160" height="4" rx="2" fill="#2C323D"/>
+  
+  <!-- Subtle respectful aura / golden accent above (Design polish) -->
+  <path d="M120 32 C125 32 128 35 128 40 C128 45 120 52 120 52 C120 52 112 45 112 40 C112 35 115 32 120 32 Z" fill="#FBBF24" opacity="0.8"/>
+</svg>

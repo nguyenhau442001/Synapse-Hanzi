@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Outer glow/shadow for depth -->
+  <rect x="52" y="32" width="136" height="176" rx="14" fill="#111318" opacity="0.6"/>
+  
+  <!-- Main Forum Post Card (Physical object representation) -->
+  <rect x="48" y="28" width="136" height="176" rx="12" fill="#222632" stroke="#2E3445" stroke-width="2"/>
+  
+  <!-- Top bar of the post card (User profile header) -->
+  <circle cx="70" cy="52" r="10" fill="#3B4252"/>
+  <circle cx="70" cy="50" r="4" fill="#F39C12"/>
+  <path d="M62 60 C62 56 65 55 70 55 C75 55 78 56 78 60" fill="#F39C12"/>
+  
+  <!-- Header text lines representing author & timestamp -->
+  <rect x="88" y="46" width="56" height="5" rx="2.5" fill="#E5E9F0"/>
+  <rect x="88" y="55" width="32" height="4" rx="2" fill="#4C566A"/>
+  
+  <!-- Tech-themed post content / AI Algorithm visualization inside the post -->
+  <rect x="64" y="74" width="112" height="72" rx="8" fill="#171A21" stroke="#2B303C" stroke-width="1.5"/>
+  
+  <!-- Neural network node paths inside the content area -->
+  <path d="M80 110 L100 95 L125 120 L150 95 L165 110" fill="none" stroke="#F39C12" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Neural network nodes (dots) -->
+  <circle cx="80" cy="110" r="4" fill="#F39C12"/>
+  <circle cx="100" cy="95" r="4" fill="#E5E9F0"/>
+  <circle cx="125" cy="120" r="5" fill="#F39C12"/>
+  <circle cx="150" cy="95" r="4" fill="#E5E9F0"/>
+  <circle cx="165" cy="110" r="4" fill="#F39C12"/>
+  
+  <!-- Code/Text lines below the visual graphic -->
+  <rect x="64" y="158" width="80" height="5" rx="2.5" fill="#D8DEE9"/>
+  <rect x="64" y="168" width="50" height="4" rx="2" fill="#4C566A"/>
+  
+  <!-- Interaction bar (Comments / Discussion icons) -->
+  <line x1="48" y1="184" x2="184" y2="184" stroke="#2E3445" stroke-width="1.5"/>
+  
+  <!-- Like / Upvote icon & count -->
+  <path d="M64 193 L68 193 L68 200 L64 200 Z" fill="#F39C12"/>
+  <path d="M70 196 L74 196 L74 200 L70 200 Z" fill="#F39C12"/>
+  <circle cx="67" cy="191" r="2.5" fill="#F39C12"/>
+  <rect x="78" y="193" width="16" height="4" rx="2" fill="#F39C12"/>
+  
+  <!-- Comment / Discussion icon & count (representing "thảo luận sôi nổi") -->
+  <path d="M112 191 C112 189 114 188 117 188 L127 188 C130 188 132 189 132 191 L132 197 C132 199 130 200 127 200 L122 200 L116 204 L116 200 L117 200 C114 200 112 199 112 197 Z" fill="none" stroke="#4C566A" stroke-width="1.5" stroke-linejoin="round"/>
+  <rect x="138" y="193" width="16" height="4" rx="2" fill="#4C566A"/>
+  
+  <!-- Active focus accent: notification badge on top right -->
+  <circle cx="178" cy="32" r="10" fill="#F39C12"/>
+  <path d="M174 32 L177 35 L183 29" fill="none" stroke="#1A1D24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

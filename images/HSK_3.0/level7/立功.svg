@@ -1,0 +1,15 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(60, 60)">
+    <!-- Medal Base -->
+    <circle cx="60" cy="60" r="45" fill="#2C313C" stroke="#FFD700" stroke-width="4"/>
+    <!-- Ribbon -->
+    <path d="M45 20 L75 20 L85 5 L35 5 Z" fill="#FFD700"/>
+    <!-- Star Icon -->
+    <path d="M60 35 L68 58 L92 58 L73 72 L80 95 L60 80 L40 95 L47 72 L28 58 L52 58 Z" fill="#FFD700"/>
+    <!-- Laurel Wreath -->
+    <path d="M20 60 C 20 85, 40 105, 60 105 C 80 105, 100 85, 100 60" fill="none" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+    <path d="M25 65 L20 60 L25 55" stroke="#FFD700" stroke-width="2" fill="none"/>
+    <path d="M95 65 L100 60 L95 55" stroke="#FFD700" stroke-width="2" fill="none"/>
+  </g>
+</svg>

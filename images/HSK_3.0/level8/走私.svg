@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle night ocean environment -->
+  <path d="M 0,160 Q 60,150 120,165 T 240,160 L 240,240 L 0,240 Z" fill="#151921"/>
+  <path d="M 0,180 Q 80,170 160,185 T 240,175 L 240,240 L 0,240 Z" fill="#11141B"/>
+
+  <!-- Cargo Ship (Smuggling vessel under moonlight/shadows) -->
+  <g transform="translate(30, 95)">
+    <!-- Hull -->
+    <path d="M 10,65 L 170,65 L 150,95 L 30,95 Z" fill="#2E3646"/>
+    <path d="M 10,65 L 170,65 L 175,55 L 5,55 Z" fill="#3B4456"/>
+    <!-- Water line / hull shadow -->
+    <path d="M 25,80 L 160,80 L 150,95 L 30,95 Z" fill="#1F2530"/>
+    
+    <!-- Superstructure (Bridge/Cabin) -->
+    <rect x="110" y="25" width="45" height="30" rx="3" fill="#4E5D75"/>
+    <rect x="115" y="30" width="10" height="8" rx="1" fill="#FFC542"/>
+    <rect x="130" y="30" width="10" height="8" rx="1" fill="#FFC542"/>
+    <rect x="115" y="42" width="10" height="8" rx="1" fill="#FFC542"/>
+    <rect x="130" y="42" width="10" height="8" rx="1" fill="#FFC542"/>
+
+    <!-- Crane / Mast -->
+    <rect x="85" y="15" width="4" height="40" fill="#6B7C96"/>
+    <path d="M 87,15 L 60,25 L 60,28 L 87,20 Z" fill="#6B7C96"/>
+
+    <!-- Contraband Containers (Marked with distinct focus color for smuggling concept) -->
+    <!-- Regular containers -->
+    <rect x="20" y="40" width="25" height="15" fill="#2E4057"/>
+    <rect x="47" y="40" width="25" height="15" fill="#3E5C76"/>
+    
+    <!-- Hidden / Highlighted Contraband Cargo (Glowing Gold/Orange representing high-value illicit goods) -->
+    <rect x="25" y="22" width="30" height="18" rx="2" fill="#E67E22"/>
+    <line x1="25" y1="31" x2="55" y2="31" stroke="#D35400" stroke-width="2"/>
+    <rect x="58" y="22" width="25" height="18" rx="2" fill="#F39C12"/>
+    <line x1="58" y1="31" x2="83" y2="31" stroke="#D35400" stroke-width="2"/>
+    
+    <!-- Warning beam / Searchlight cutting through from top-left (Customs interdiction theme) -->
+    <path d="M -20,-20 L 55,50 L 35,60 L -30,-5 Z" fill="rgba(255, 255, 255, 0.08)" />
+  </g>
+
+  <!-- Waves -->
+  <path d="M 20,185 C 40,180 50,190 70,185 C 90,180 100,190 120,185 C 140,180 150,190 170,185 C 190,180 200,190 220,185" fill="none" stroke="#232A38" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 40,205 C 60,200 70,210 90,205 C 110,200 120,210 140,205 C 160,200 170,210 190,205" fill="none" stroke="#232A38" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Dramatic spotlight / Customs surveillance element -->
+  <circle cx="190" cy="50" r="35" fill="none" stroke="rgba(243, 156, 18, 0.15)" stroke-width="12"/>
+  <circle cx="190" cy="50" r="15" fill="#F39C12" opacity="0.8"/>
+  <circle cx="190" cy="50" r="6" fill="#FFFFFF"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 120)">
+    <!-- Left Parenthesis -->
+    <path d="M-40 -60 C -65 -60, -80 -20, -80 0 C -80 20, -65 60, -40 60" 
+          fill="none" stroke="#FFB84D" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Right Parenthesis -->
+    <path d="M40 -60 C 65 -60, 80 -20, 80 0 C 80 20, 65 60, 40 60" 
+          fill="none" stroke="#FFB84D" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Central illustrative lines representing text content -->
+    <line x1="-25" y1="-15" x2="25" y2="-15" stroke="#E0E6ED" stroke-width="6" stroke-linecap="round"/>
+    <line x1="-25" y1="5" x2="25" y2="5" stroke="#E0E6ED" stroke-width="6" stroke-linecap="round"/>
+    <line x1="-25" y1="25" x2="10" y2="25" stroke="#E0E6ED" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground/Site Surface -->
+  <path d="M40 180 L200 180 L210 200 L30 200 Z" fill="#2D343E"/>
+  
+  <!-- Ecological Project Elements (Sprouts/Greenery) -->
+  <path d="M70 180 C70 160 80 150 85 150 C90 150 100 160 100 180" fill="#2ECC71"/>
+  <path d="M140 180 C140 160 150 150 155 150 C160 150 170 160 170 180" fill="#2ECC71"/>
+  
+  <!-- Leader Figure (Upper Management) -->
+  <g transform="translate(110, 80)">
+    <!-- Body -->
+    <path d="M-15 80 L15 80 L10 40 L-10 40 Z" fill="#F39C12"/>
+    <!-- Head -->
+    <circle cx="0" cy="25" r="15" fill="#F1C40F"/>
+    <!-- Pointing/Observing Hand -->
+    <path d="M10 50 L30 40" stroke="#F1C40F" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="32" cy="39" r="3" fill="#F1C40F"/>
+  </g>
+  
+  <!-- Clipboard/Inspection Tool -->
+  <rect x="145" y="90" width="30" height="40" rx="2" fill="#BDC3C7"/>
+  <line x1="150" y1="100" x2="170" y2="100" stroke="#7F8C8D" stroke-width="2"/>
+  <line x1="150" y1="110" x2="170" y2="110" stroke="#7F8C8D" stroke-width="2"/>
+  <line x1="150" y1="120" x2="160" y2="120" stroke="#7F8C8D" stroke-width="2"/>
+  
+  <!-- Observation Line (Visualizing the act of inspection) -->
+  <path d="M135 70 Q150 60 160 90" stroke="#F39C12" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+</svg>

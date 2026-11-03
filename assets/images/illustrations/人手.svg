@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle industrial conveyor belt background representing the context -->
+  <g opacity="0.3">
+    <rect x="30" y="150" width="180" height="16" rx="8" fill="#2D333B"/>
+    <line x1="30" y1="158" x2="210" y2="158" stroke="#4F5D73" stroke-width="2" stroke-dasharray="8,6"/>
+    <circle cx="50" cy="158" r="5" fill="#4F5D73"/>
+    <circle cx="90" cy="158" r="5" fill="#4F5D73"/>
+    <circle cx="130" cy="158" r="5" fill="#4F5D73"/>
+    <circle cx="170" cy="158" r="5" fill="#4F5D73"/>
+    <circle cx="210" cy="158" r="5" fill="#4F5D73"/>
+  </g>
+
+  <!-- Central iconic representation of "人手" (Personnel / Workforce / Human Hands) -->
+  <!-- Stylized modern flat illustration of multiple helping/working hands combined with a person silhouette -->
+  <g transform="translate(0, 5)">
+    <!-- Person Head & Shoulders Silhouette (Center) -->
+    <path d="M120 75 C110 75 102 83 102 93 C102 103 110 110 120 110 C130 110 138 103 138 93 C138 83 130 75 120 75 Z" fill="#38BDF8"/>
+    <path d="M85 142 C85 124 100 112 120 112 C140 112 155 124 155 142 L155 146 L85 146 Z" fill="#38BDF8"/>
+
+    <!-- Multiple Hands (representing 人手 - workforce / manpower) -->
+    <!-- Left Hand (Orange accent for focus) -->
+    <g transform="translate(60, 100) rotate(-15)">
+      <path d="M20 40 L20 20 C20 15 25 10 30 10 C35 10 40 15 40 20 L40 30 C45 28 50 28 55 30 C60 32 63 36 65 42 L70 58 C74 72 65 85 50 88 C35 90 20 80 18 65 L18 55 Z" fill="#F59E0B"/>
+      <!-- Cuff -->
+      <rect x="15" y="85" width="25" height="15" rx="3" fill="#334155"/>
+    </g>
+
+    <!-- Right Hand (Orange accent for focus) -->
+    <g transform="translate(180, 100) scale(-1, 1) rotate(-15)">
+      <path d="M20 40 L20 20 C20 15 25 10 30 10 C35 10 40 15 40 20 L40 30 C45 28 50 28 55 30 C60 32 63 36 65 42 L70 58 C74 72 65 85 50 88 C35 90 20 80 18 65 L18 55 Z" fill="#F59E0B"/>
+      <!-- Cuff -->
+      <rect x="15" y="85" width="25" height="15" rx="3" fill="#334155"/>
+    </g>
+
+    <!-- Bottom Center Supporting Hand -->
+    <g transform="translate(120, 165)">
+      <path d="M-18 -10 C-18 -18 -12 -22 -5 -22 C0 -22 6 -18 8 -12 C12 -15 17 -16 22 -14 C27 -12 30 -8 32 -2 C35 10 28 22 15 26 C2 30 -12 25 -16 15 L-18 5 Z" fill="#38BDF8"/>
+      <rect x="-12" y="24" width="24" height="12" rx="3" fill="#334155"/>
+    </g>
+  </g>
+
+  <!-- Industrial Gear Icons symbolizing workshop / assembly line context -->
+  <g fill="#4F5D73">
+    <path d="M45 55 L48 53 L51 57 L49 61 L53 63 L57 60 L61 63 L59 67 L63 69 L61 73 L57 71 L55 75 L51 73 L49 77 L45 75 L47 71 L43 69 L45 65 L41 63 L43 59 L47 61 Z" opacity="0.6"/>
+    <circle cx="51" cy="65" r="4" fill="#1A1D24"/>
+    
+    <path d="M185 55 L188 53 L191 57 L189 61 L193 63 L197 60 L201 63 L199 67 L203 69 L201 73 L197 71 L195 75 L191 73 L189 77 L185 75 L187 71 L183 69 L185 65 L181 63 L183 59 L187 61 Z" opacity="0.6"/>
+    <circle cx="191" cy="65" r="4" fill="#1A1D24"/>
+  </g>
+</svg>

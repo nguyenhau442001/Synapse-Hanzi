@@ -1,0 +1,54 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background grid/glow for depth -->
+  <circle cx="120" cy="115" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Conceptual illustration for "品行" (Moral character / Integrity) -->
+  <!-- We represent this through a human silhouette standing tall with integrity, combined with an upright moral scale/balance motif, executed cleanly as a physical object/character combo. -->
+
+  <!-- Central Character / Bust representing "Person / 干部" -->
+  <g transform="translate(0, 10)">
+    <!-- Shoulders / Suit torso -->
+    <path d="M 80 160 L 80 145 C 80 130, 95 120, 120 120 C 145 120, 160 130, 160 145 L 160 160 Z" fill="#3B4252"/>
+    <!-- Suit lapels -->
+    <path d="M 105 120 L 120 145 L 135 120 Z" fill="#4C566A"/>
+    <!-- Tie -->
+    <polygon points="117,130 123,130 125,155 120,162 115,155" fill="#EBCB8B"/>
+
+    <!-- Neck -->
+    <rect x="112" y="105" width="16" height="20" fill="#D8DEE9"/>
+
+    <!-- Head -->
+    <circle cx="120" cy="90" r="18" fill="#D8DEE9"/>
+
+    <!-- Posture / Upright posture lines (Integrity) -->
+    <line x1="120" y1="35" x2="120" y2="70" stroke="#EBCB8B" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 4" opacity="0.8"/>
+  </g>
+
+  <!-- Balance Scale (symbolizing fairness, high standard of conduct and moral compass) floating gracefully above -->
+  <g transform="translate(0, -5)">
+    <!-- Scale Stand/Pillar -->
+    <rect x="118" y="38" width="4" height="25" fill="#EBCB8B"/>
+    <!-- Scale Base -->
+    <path d="M 106 63 L 134 63" stroke="#EBCB8B" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Scale Beam -->
+    <path d="M 85 45 L 155 45" stroke="#EBCB8B" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="120" cy="45" r="4" fill="#D8DEE9"/>
+
+    <!-- Left Chain & Pan -->
+    <line x1="85" y1="45" x2="85" y2="60" stroke="#EBCB8B" stroke-width="1.5"/>
+    <path d="M 73 60 Q 85 68 97 60" fill="none" stroke="#EBCB8B" stroke-width="1.5"/>
+    <circle cx="85" cy="55" r="3" fill="#EBCB8B"/>
+
+    <!-- Right Chain & Pan -->
+    <line x1="155" y1="45" x2="155" y2="60" stroke="#EBCB8B" stroke-width="1.5"/>
+    <path d="M 143 60 Q 155 68 167 60" fill="none" stroke="#EBCB8B" stroke-width="1.5"/>
+    <circle cx="155" cy="55" r="3" fill="#EBCB8B"/>
+  </g>
+
+  <!-- Accent glow spots for professional focus -->
+  <circle cx="120" cy="40" r="2" fill="#FFFFFF"/>
+</svg>

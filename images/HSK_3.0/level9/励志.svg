@@ -1,0 +1,55 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow to represent inspiration -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.6"/>
+  <circle cx="120" cy="115" r="50" fill="#3D3220" opacity="0.4"/>
+
+  <!-- Conceptual illustration for 励志 (Inspiration/Aspiration/Climbing high through willpower): 
+       A concrete physical object representing the narrative context: 
+       An open book forming the shape of a ascending mountain peak/staircase, with a bright star/sun rising above it. -->
+  <g transform="translate(0, 5)">
+    <!-- Open Book Base / Mountain Foundation -->
+    <!-- Left page / slope -->
+    <path d="M 60,150 L 120,120 L 120,155 L 60,175 Z" fill="#2A3442"/>
+    <path d="M 65,153 L 115,128 L 115,150 L 65,165 Z" fill="#3A4758"/>
+
+    <!-- Right page / slope -->
+    <path d="M 180,150 L 120,120 L 120,155 L 180,175 Z" fill="#2A3442"/>
+    <path d="M 175,153 L 125,128 L 125,150 L 175,165 Z" fill="#3A4758"/>
+
+    <!-- Center spine -->
+    <line x1="120" y1="120" x2="120" y2="155" stroke="#1A1D24" stroke-width="3"/>
+
+    <!-- Ascending Steps / Path on the book/mountain -->
+    <polyline points="120,120 120,105 135,95 135,80 150,70 150,55" fill="none" stroke="#F39C12" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Step markers / milestones -->
+    <circle cx="120" cy="105" r="3" fill="#FFE082"/>
+    <circle cx="135" cy="80" r="3" fill="#FFE082"/>
+    <circle cx="150" cy="55" r="3" fill="#FFE082"/>
+
+    <!-- Figure climbing / striving (representing the youth from the context) -->
+    <g transform="translate(138, 52)">
+      <!-- Head -->
+      <circle cx="5" cy="-7" r="4" fill="#FFA726"/>
+      <!-- Body leaning forward with determination -->
+      <path d="M 3,-2 L 7,5 L 2,12" fill="none" stroke="#FFA726" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Arms -->
+      <path d="M 1,1 L 9,3" fill="none" stroke="#FFA726" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Rising Sun / Beacon of Success at the peak -->
+    <circle cx="120" cy="42" r="16" fill="#F39C12" opacity="0.2"/>
+    <circle cx="120" cy="42" r="10" fill="#F39C12"/>
+    
+    <!-- Rays of achievement -->
+    <line x1="120" y1="20" x2="120" y2="24" stroke="#F39C12" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="98" y1="30" x2="102" y2="33" stroke="#F39C12" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="142" y1="30" x2="138" y2="33" stroke="#F39C12" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Ground reflection / subtle baseline -->
+  <ellipse cx="120" cy="178" rx="60" ry="6" fill="#111418"/>
+</svg>

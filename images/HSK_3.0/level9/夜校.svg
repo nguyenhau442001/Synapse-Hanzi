@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient background glow representing night time education -->
+  <circle cx="120" cy="115" r="70" fill="#242B38" opacity="0.6"/>
+
+  <!-- Conceptual illustration for 夜校 (Night School / Evening Class) -->
+  <!-- Building / Classroom structure -->
+  <path d="M 70 85 L 120 60 L 170 85 L 170 170 L 70 170 Z" fill="#283244"/>
+  
+  <!-- Roof / Architecture accent -->
+  <path d="M 60 85 L 120 55 L 180 85 L 170 90 L 120 65 L 70 90 Z" fill="#F59E0B"/>
+
+  <!-- Warm interior night lighting shining through large windows -->
+  <rect x="85" y="100" width="30" height="55" rx="3" fill="#364156"/>
+  <rect x="90" y="105" width="20" height="45" rx="2" fill="#FBBF24" opacity="0.85"/>
+  
+  <rect x="125" y="100" width="30" height="55" rx="3" fill="#364156"/>
+  <rect x="130" y="105" width="20" height="45" rx="2" fill="#FBBF24" opacity="0.85"/>
+
+  <!-- Window pane dividers -->
+  <line x1="100" y1="105" x2="100" y2="150" stroke="#364156" stroke-width="2"/>
+  <line x1="140" y1="105" x2="140" y2="150" stroke="#364156" stroke-width="2"/>
+
+  <!-- Student silhouette inside studying (focus on adult education / night skilling) -->
+  <circle cx="100" cy="122" r="5" fill="#1A1D24"/>
+  <path d="M 93 138 C 93 130 107 130 107 138 Z" fill="#1A1D24"/>
+
+  <!-- Blackboard / Educational icon element above entrance -->
+  <rect x="105" y="78" width="30" height="15" rx="2" fill="#1E293B"/>
+  <line x1="110" y1="83" x2="120" y2="83" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="110" y1="88" x2="127" y2="88" stroke="#FBBF24" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Crescent moon and stars indicating "night" time context -->
+  <path d="M 185 50 C 185 40 175 32 165 35 C 172 40 172 52 165 57 C 175 60 185 52 185 50 Z" fill="#FBBF24" opacity="0.9"/>
+  <circle cx="55" cy="50" r="1.5" fill="#F8FAFC" opacity="0.8"/>
+  <circle cx="65" cy="38" r="1" fill="#F8FAFC" opacity="0.6"/>
+  <circle cx="145" cy="35" r="1.2" fill="#F8FAFC" opacity="0.7"/>
+
+  <!-- Ground / Base line -->
+  <rect x="50" y="170" width="140" height="6" rx="3" fill="#334155"/>
+
+  <!-- Clock showing evening hours (e.g. 8:00 PM) -->
+  <circle cx="120" cy="35" r="11" fill="#1E293B" stroke="#475569" stroke-width="1.5"/>
+  <circle cx="120" cy="35" r="1.5" fill="#FBBF24"/>
+  <line x1="120" y1="35" x2="120" y2="29" stroke="#F8FAFC" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="120" y1="35" x2="125" y2="35" stroke="#FBBF24" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

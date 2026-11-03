@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for 忌妒 (Envy/Jealousy) -->
+  <!-- Central human-centric character representation showing averted, envious gaze toward an achievement -->
+  <g transform="translate(0, 0)">
+    <!-- Background subtle glow/spotlight framing the scene -->
+    <circle cx="120" cy="120" r="80" fill="#222733" opacity="0.6"/>
+
+    <!-- Subject 1: The Achiever (Holding a glowing star/trophy symbol of success in the background right) -->
+    <g transform="translate(45, 65)">
+      <!-- Achiever body/shoulders -->
+      <path d="M 35 95 L 65 95 L 75 125 L 15 125 Z" fill="#3A4454"/>
+      <!-- Achiever head -->
+      <circle cx="50" cy="65" r="15" fill="#5A687D"/>
+      <!-- Successful achievement item: Trophy/Star held out -->
+      <path d="M 75 60 L 85 50 L 95 60 L 90 75 L 80 75 Z" fill="#F59E0B"/>
+      <circle cx="85" cy="42" r="6" fill="#FBBF24"/>
+    </g>
+
+    <!-- Divider or spatial separation -->
+
+    <!-- Subject 2: The Envious Observer (Foreground left, narrow gaze, tense posture, shadowed face/expression) -->
+    <g transform="translate(95, 65)">
+      <!-- Observer torso -->
+      <path d="M 15 95 L 55 95 L 65 125 L 5 125 Z" fill="#2E3642"/>
+      <!-- Observer neck & head -->
+      <path d="M 28 80 L 38 80 L 38 95 L 28 95 Z" fill="#8B9BB4"/>
+      <circle cx="33" cy="62" r="16" fill="#8B9BB4"/>
+      
+      <!-- Hair -->
+      <path d="M 18 58 C 18 45, 48 45, 48 58 L 45 64 C 40 60, 25 60, 18 64 Z" fill="#475569"/>
+
+      <!-- Narrowed, envious eyes (slanting downward/inward toward the achievement) -->
+      <path d="M 32 60 L 42 62" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M 32 65 L 42 63" stroke="#1A1D24" stroke-width="1.5" stroke-linecap="round"/>
+
+      <!-- Tense downturned mouth -->
+      <path d="M 34 74 Q 38 71 42 74" fill="none" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+
+      <!-- Crossed/folded arms indicating closed, defensive, narrow-minded posture -->
+      <path d="M 12 102 C 20 95, 45 95, 58 102 L 50 115 C 40 108, 25 108, 20 115 Z" fill="#EF4444" opacity="0.85"/>
+    </g>
+
+    <!-- Visual metaphor lines: Sharp contrasting accent rays showing bitter gaze/focus -->
+    <path d="M 90 100 L 125 90" stroke="#EF4444" stroke-width="2" stroke-dasharray="3,3" opacity="0.8"/>
+    <path d="M 85 110 L 130 98" stroke="#EF4444" stroke-width="2" opacity="0.9"/>
+  </g>
+</svg>

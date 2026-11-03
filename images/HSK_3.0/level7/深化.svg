@@ -1,0 +1,30 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground/Foundation -->
+  <path d="M40 180 L200 180 L200 190 L40 190 Z" fill="#343A46"/>
+  
+  <!-- The "Deepening" Action: A hand pushing a foundation pillar deeper into the ground -->
+  <!-- Pillar -->
+  <rect x="105" y="120" width="30" height="70" rx="2" fill="#FFB84D"/>
+  
+  <!-- Motion lines indicating downward movement -->
+  <path d="M120 100 L120 115" stroke="#FFB84D" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4"/>
+  <path d="M115 105 L120 110 L125 105" stroke="#FFB84D" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <!-- Hand pushing the pillar -->
+  <g fill="#FFD580">
+    <path d="M90 110 C90 100 100 90 110 90 L130 90 C140 90 150 100 150 110 L150 120 L90 120 Z"/>
+    <rect x="95" y="80" width="10" height="20" rx="2"/>
+    <rect x="108" y="75" width="10" height="25" rx="2"/>
+    <rect x="121" y="75" width="10" height="25" rx="2"/>
+    <rect x="134" y="80" width="10" height="20" rx="2"/>
+  </g>
+  
+  <!-- Soil layer indicating depth -->
+  <path d="M40 180 L200 180 L200 200 L40 200 Z" fill="#2A2F3A"/>
+  
+  <!-- Decorative structural lines on pillar to show depth -->
+  <line x1="110" y1="140" x2="130" y2="140" stroke="#E69138" stroke-width="2"/>
+  <line x1="110" y1="160" x2="130" y2="160" stroke="#E69138" stroke-width="2"/>
+</svg>

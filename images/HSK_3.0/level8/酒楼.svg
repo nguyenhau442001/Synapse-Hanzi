@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glowing atmospheric elements -->
+  <circle cx="120" cy="120" r="90" fill="#252A34" opacity="0.5"/>
+
+  <!-- Restaurant/Tǐulóu (酒楼) Architectural Illustration -->
+  <g transform="translate(0, 5)">
+    <!-- Base Foundation / Steps -->
+    <path d="M60 185 L180 185 L190 195 L50 195 Z" fill="#3A4150"/>
+    <rect x="65" y="175" width="110" height="10" fill="#2E3440"/>
+
+    <!-- First Floor Structure -->
+    <rect x="70" y="125" width="100" height="50" fill="#2E3440"/>
+    <!-- Restaurant Entrance (Double Doors) -->
+    <rect x="105" y="140" width="30" height="35" rx="3" fill="#1A1D24"/>
+    <line x1="120" y1="140" x2="120" y2="175" stroke="#3A4150" stroke-width="1.5"/>
+    <!-- Windows Lower Floor -->
+    <rect x="80" y="140" width="16" height="20" rx="2" fill="#E5C158" opacity="0.8"/>
+    <rect x="144" y="140" width="16" height="20" rx="2" fill="#E5C158" opacity="0.8"/>
+
+    <!-- First Roof Tier (Eaves) -->
+    <path d="M55 125 L185 125 L195 115 L45 115 Z" fill="#D9534F"/>
+    <!-- Eaves upturned ends -->
+    <path d="M45 115 Q42 112 40 115 Q42 118 45 115" fill="#D9534F"/>
+    <path d="M195 115 Q198 112 200 115 Q198 118 195 115" fill="#D9534F"/>
+
+    <!-- Second Floor Structure (Balcony Level) -->
+    <rect x="80" y="80" width="80" height="35" fill="#2E3440"/>
+    <!-- Balcony Railing -->
+    <line x1="72" y1="105" x2="168" y2="105" stroke="#E5C158" stroke-width="2"/>
+    <line x1="75" y1="95" x2="75" y2="105" stroke="#E5C158" stroke-width="1.5"/>
+    <line x1="90" y1="95" x2="90" y2="105" stroke="#E5C158" stroke-width="1.5"/>
+    <line x1="105" y1="95" x2="105" y2="105" stroke="#E5C158" stroke-width="1.5"/>
+    <line x1="120" y1="95" x2="120" y2="105" stroke="#E5C158" stroke-width="1.5"/>
+    <line x1="135" y1="95" x2="135" y2="105" stroke="#E5C158" stroke-width="1.5"/>
+    <line x1="150" y1="95" x2="150" y2="105" stroke="#E5C158" stroke-width="1.5"/>
+    <line x1="165" y1="95" x2="165" y2="105" stroke="#E5C158" stroke-width="1.5"/>
+
+    <!-- Upper Windows / Openings -->
+    <rect x="92" y="88" width="16" height="20" rx="2" fill="#E5C158" opacity="0.8"/>
+    <rect x="112" y="88" width="16" height="20" rx="2" fill="#E5C158" opacity="0.8"/>
+    <rect x="132" y="88" width="16" height="20" rx="2" fill="#E5C158" opacity="0.8"/>
+
+    <!-- Top Roof Tier (Traditional Chinese Hip-and-Gable Roof) -->
+    <path d="M70 80 L170 80 L185 65 L55 65 Z" fill="#D9534F"/>
+    <!-- Main Ridge and Ornamentation -->
+    <path d="M50 65 L190 65 L195 58 L45 58 Z" fill="#C9302C"/>
+    <!-- Ridge Ends Upward Curve -->
+    <path d="M45 58 Q40 54 38 58 Q40 62 45 58" fill="#C9302C"/>
+    <path d="M195 58 Q200 54 202 58 Q200 62 195 58" fill="#C9302C"/>
+
+    <!-- Hanging Red Lanterns (Traditional touch for Wine/Food House) -->
+    <!-- Left Lantern -->
+    <line x1="68" y1="115" x2="68" y2="130" stroke="#E5C158" stroke-width="1.5"/>
+    <path d="M62 130 Q68 126 74 130 Q78 140 74 150 Q68 154 62 150 Q58 140 62 130 Z" fill="#D9534F"/>
+    <path d="M60 135 L76 135" stroke="#E5C158" stroke-width="1.5"/>
+    <path d="M60 145 L76 145" stroke="#E5C158" stroke-width="1.5"/>
+    <line x1="68" y1="150" x2="68" y2="158" stroke="#E5C158" stroke-width="1.5"/>
+
+    <!-- Right Lantern -->
+    <line x1="172" y1="115" x2="172" y2="130" stroke="#E5C158" stroke-width="1.5"/>
+    <path d="M166 130 Q172 126 178 130 Q182 140 178 150 Q172 154 166 150 Q162 140 166 130 Z" fill="#D9534F"/>
+    <path d="M164 135 L180 135" stroke="#E5C158" stroke-width="1.5"/>
+    <path d="M164 145 L180 145" stroke="#E5C158" stroke-width="1.5"/>
+    <line x1="172" y1="150" x2="172" y2="158" stroke="#E5C158" stroke-width="1.5"/>
+
+    <!-- Traditional Plaque / Signboard Above Entrance -->
+    <rect x="100" y="112" width="40" height="14" rx="2" fill="#E5C158"/>
+    <!-- Abstract representation of calligraphy characters on plaque -->
+    <line x1="106" y1="119" x2="114" y2="119" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+    <line x1="118" y1="117" x2="122" y2="121" stroke="#1A1D24" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="126" y1="119" x2="134" y2="119" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

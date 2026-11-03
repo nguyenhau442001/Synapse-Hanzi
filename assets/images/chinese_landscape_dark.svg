@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <!-- Deep Pine-Soot Ink Canvas Gradient (#16181C to #1F2329) -->
+    <linearGradient id="xuan_paper_dark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#16181C"/>
+      <stop offset="55%" stop-color="#1A1D23"/>
+      <stop offset="100%" stop-color="#1F2329"/>
+    </linearGradient>
+
+    <!-- Microscopic Grain Filter for Dark Canvas -->
+    <filter id="dark_fiber_grain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.02 0" in="noise" result="coloredNoise"/>
+      <feBlend mode="screen" in="SourceGraphic" in2="coloredNoise"/>
+    </filter>
+
+    <!-- Faint Lower Nocturnal Ink Mist -->
+    <linearGradient id="dark_mist_wash" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#16181C" stop-opacity="0"/>
+      <stop offset="70%" stop-color="#242A33" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#282F3A" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Layer 1: Comfortable Deep Nocturnal Paper Base -->
+  <rect width="100%" height="100%" fill="url(#xuan_paper_dark)"/>
+  <rect width="100%" height="100%" fill="#1F2329" opacity="0.3" filter="url(#dark_fiber_grain)"/>
+
+  <!-- Layer 2: Ultra-subtle Lower Nocturnal Mist Diffusion -->
+  <rect y="720" width="100%" height="360" fill="url(#dark_mist_wash)"/>
+</svg>

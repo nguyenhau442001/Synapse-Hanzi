@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <!-- Authentic Xuan Paper Canvas Gradient (Warm Ivory #F7F3EA to #F1EBDD) -->
+    <linearGradient id="xuan_paper_light" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F7F3EA"/>
+      <stop offset="50%" stop-color="#F4EFE5"/>
+      <stop offset="100%" stop-color="#F1EBDD"/>
+    </linearGradient>
+
+    <!-- Microscopic Xuan Paper Fiber Texture Filter -->
+    <filter id="xuan_fiber_grain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.02 0" in="noise" result="coloredNoise"/>
+      <feBlend mode="multiply" in="SourceGraphic" in2="coloredNoise"/>
+    </filter>
+
+    <!-- Faint, Ethereal Atmospheric Ink Mist Wash at Horizon (Very Subtle) -->
+    <linearGradient id="ethereal_mist_wash" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F7F3EA" stop-opacity="0"/>
+      <stop offset="70%" stop-color="#EBE3D3" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#E2D8C5" stop-opacity="0.14"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Layer 1: Pristine Warm Xuan Paper Base -->
+  <rect width="100%" height="100%" fill="url(#xuan_paper_light)"/>
+  <rect width="100%" height="100%" fill="#F1EBDD" opacity="0.4" filter="url(#xuan_fiber_grain)"/>
+
+  <!-- Layer 2: Ultra-subtle Lower Mist Diffusion (Distraction-Free) -->
+  <rect y="720" width="100%" height="360" fill="url(#ethereal_mist_wash)"/>
+</svg>

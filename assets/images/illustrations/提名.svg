@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Podium Base -->
+  <path d="M60 190 L180 190 L170 210 L70 210 Z" fill="#3D4451"/>
+  <rect x="80" y="170" width="80" height="20" fill="#4A5568"/>
+  
+  <!-- Award Statue (The Nominee Object) -->
+  <g transform="translate(120, 140)">
+    <circle cx="0" cy="-30" r="15" fill="#FFB84D"/>
+    <path d="M-20 -10 L20 -10 L15 30 L-15 30 Z" fill="#FFB84D"/>
+    <rect x="-5" y="30" width="10" height="10" fill="#FFB84D"/>
+  </g>
+  
+  <!-- Spotlight/Focus Effect -->
+  <path d="M120 40 L80 170 L160 170 Z" fill="#FFB84D" opacity="0.15"/>
+  
+  <!-- Nomination List/Document representation -->
+  <rect x="160" y="60" width="40" height="50" rx="2" fill="#2D3446" stroke="#FFB84D" stroke-width="2"/>
+  <line x1="170" y1="75" x2="190" y2="75" stroke="#FFB84D" stroke-width="2" stroke-linecap="round"/>
+  <line x1="170" y1="85" x2="185" y2="85" stroke="#FFB84D" stroke-width="2" stroke-linecap="round"/>
+  <line x1="170" y1="95" x2="190" y2="95" stroke="#FFB84D" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Checkmark indicating selection/nomination -->
+  <path d="M180 115 L185 120 L195 105" fill="none" stroke="#FFB84D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

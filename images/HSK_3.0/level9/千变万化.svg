@@ -1,0 +1,65 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Atmospheric Glow & Stars -->
+  <circle cx="120" cy="110" r="75" fill="#242B3A" opacity="0.6"/>
+  <circle cx="60" cy="70" r="1.5" fill="#FFB703" opacity="0.7"/>
+  <circle cx="180" cy="65" r="2" fill="#3A86FF" opacity="0.8"/>
+  <circle cx="195" cy="140" r="1" fill="#FFB703" opacity="0.5"/>
+  <circle cx="50" cy="155" r="1.5" fill="#3A86FF" opacity="0.6"/>
+
+  <!-- Central Object: The Transforming Cloud (千变万化 - Muôn hình vạn trạng) -->
+  <!-- Layer 1: Base/Past shapes fading in background -->
+  <g opacity="0.25" fill="none" stroke="#3A86FF" stroke-width="2" stroke-dasharray="3 3" stroke-linecap="round">
+    <!-- Star-like morphed outline -->
+    <path d="M120 45 C135 45, 145 60, 160 65 C175 70, 190 85, 185 105 C180 125, 160 135, 150 155 C140 175, 120 180, 105 170 C90 160, 85 140, 70 130 C55 120, 45 100, 50 80 C55 60, 75 55, 90 50 C105 45, 105 45, 120 45 Z"/>
+  </g>
+
+  <g opacity="0.4" fill="none" stroke="#FFB703" stroke-width="1.5">
+    <!-- Animal/Bird-like morphed outline -->
+    <path d="M110 55 C130 50, 165 55, 175 75 C185 95, 165 115, 175 135 C185 155, 145 170, 125 165 C105 160, 95 135, 75 135 C55 135, 45 105, 55 85 C65 65, 90 60, 110 55 Z" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Layer 2: Dynamic swirling metamorphosis lines (representing constant change) -->
+  <path d="M85 90 C95 70, 135 70, 145 90 C165 95, 170 125, 150 140 C130 155, 95 155, 80 135 C65 115, 70 95, 85 90 Z" fill="#2A344A" opacity="0.7"/>
+
+  <!-- Layer 3: Main Vibrant Transforming Cloud Object (Central physical focus) -->
+  <!-- Primary cloud body with modern flat gradients/tones -->
+  <path d="M90 95 
+           C80 95, 70 105, 70 118 
+           C70 128, 78 136, 90 138 
+           L150 138 
+           C163 138, 172 128, 172 116 
+           C172 103, 160 93, 147 95 
+           C142 80, 120 75, 108 88 
+           C100 83, 93 88, 90 95 Z" 
+        fill="#FFFFFF" opacity="0.92"/>
+
+  <!-- Metamorphic morphing extensions (Flowing dynamic shapes shifting into new forms) -->
+  <!-- Top soaring peak (bird/mountain morph) -->
+  <path d="M108 88 C115 70, 140 65, 152 82 C160 78, 170 88, 165 98 C155 93, 140 88, 130 92 Z" fill="#FFB703" opacity="0.85"/>
+
+  <!-- Right flowing tendril (fluid transformation) -->
+  <path d="M165 110 C185 112, 195 125, 185 138 C175 145, 162 135, 160 125 Z" fill="#3A86FF" opacity="0.85"/>
+
+  <!-- Left cascading droplet/feather morph -->
+  <path d="M75 125 C55 130, 50 148, 65 155 C75 158, 85 145, 82 135 Z" fill="#FF006E" opacity="0.75"/>
+
+  <!-- Bottom rippling wave morph -->
+  <path d="M95 138 C100 155, 120 162, 135 152 C125 155, 110 150, 105 138 Z" fill="#3A86FF" opacity="0.6"/>
+
+  <!-- Internal dynamic contour lines emphasizing motion and constant shifting -->
+  <path d="M95 110 C105 105, 120 115, 130 105" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.3"/>
+  <path d="M105 125 C120 130, 135 120, 145 128" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.3"/>
+
+  <!-- Sparkles of transformation (Highlighting the magical/ever-changing nature) -->
+  <g fill="#FFB703">
+    <path d="M 168 75 Q 168 85 178 85 Q 168 85 168 95 Q 168 85 158 85 Q 168 85 168 75 Z"/>
+    <path d="M 68 105 Q 68 111 74 111 Q 68 111 68 117 Q 68 111 62 111 Q 68 111 68 105 Z"/>
+  </g>
+  <g fill="#3A86FF">
+    <path d="M 135 55 Q 135 62 142 62 Q 135 62 135 69 Q 135 62 128 62 Q 135 62 135 55 Z"/>
+  </g>
+
+</svg>

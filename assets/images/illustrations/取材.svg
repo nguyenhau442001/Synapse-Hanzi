@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Desk surface -->
+  <rect x="40" y="160" width="160" height="10" rx="2" fill="#2D343E"/>
+  
+  <!-- Open historical book (the source material) -->
+  <path d="M70 160 L170 160 L185 130 L55 130 Z" fill="#3D4756"/>
+  <path d="M70 160 L120 160 L120 130 L55 130 Z" fill="#4A5568"/>
+  <path d="M120 160 L170 160 L185 130 L120 130 Z" fill="#2D343E"/>
+  
+  <!-- Quill pen selecting/extracting -->
+  <path d="M140 130 L150 110 L165 125 L155 145 Z" fill="#FFB84D"/>
+  <path d="M155 145 L180 170" stroke="#FFB84D" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- The "Material" being extracted (glowing essence) -->
+  <circle cx="145" cy="120" r="8" fill="#FFD700"/>
+  <circle cx="145" cy="120" r="12" fill="#FFD700" fill-opacity="0.2"/>
+  
+  <!-- Inkwell -->
+  <rect x="180" y="145" width="25" height="25" rx="3" fill="#3D4756"/>
+  <path d="M185 145 L185 135 L200 135 L200 145" fill="none" stroke="#FFB84D" stroke-width="3" stroke-linecap="round"/>
+</svg>

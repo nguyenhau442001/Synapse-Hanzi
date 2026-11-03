@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Film Strip -->
+  <rect x="40" y="100" width="160" height="40" rx="4" fill="#2D343E"/>
+  <rect x="50" y="105" width="20" height="30" rx="2" fill="#3B4452"/>
+  <rect x="80" y="105" width="20" height="30" rx="2" fill="#3B4452"/>
+  <rect x="110" y="105" width="20" height="30" rx="2" fill="#3B4452"/>
+  <rect x="140" y="105" width="20" height="30" rx="2" fill="#3B4452"/>
+  <rect x="170" y="105" width="20" height="30" rx="2" fill="#3B4452"/>
+  
+  <!-- Scissors Action -->
+  <path d="M120 120 L140 160 M120 120 L100 160" stroke="#FFB86C" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="100" cy="160" r="6" fill="#FFB86C"/>
+  <circle cx="140" cy="160" r="6" fill="#FFB86C"/>
+  
+  <!-- Motion Lines -->
+  <path d="M130 110 L150 90" stroke="#FFB86C" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4"/>
+  <path d="M110 110 L90 90" stroke="#FFB86C" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4"/>
+  
+  <!-- Hand holding scissors -->
+  <path d="M115 170 C115 160 125 160 125 170 L125 190 C125 200 115 200 115 190 Z" fill="#E0E0E0"/>
+  <rect x="118" y="180" width="4" height="20" fill="#E0E0E0"/>
+</svg>

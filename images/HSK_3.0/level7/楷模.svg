@@ -1,0 +1,38 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow to create focus -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.6"/>
+
+  <!-- Pedestal / Standard (representing 'standard/model' - 模) -->
+  <path d="M70 190 L170 190 L160 175 L80 175 Z" fill="#3A4252"/>
+  <rect x="95" y="160" width="50" height="15" fill="#4E5D6C"/>
+
+  <!-- Pillar representing the upright posture / exemplary role -->
+  <rect x="105" y="90" width="30" height="70" fill="#2C3542"/>
+  
+  <!-- Star / Pinnacle Emblem representing excellence (楷模) -->
+  <g transform="translate(120, 65)">
+    <!-- Outer glow / backing circle -->
+    <circle cx="0" cy="0" r="42" fill="#242B38" stroke="#3A4252" stroke-width="3"/>
+    
+    <!-- Golden Achievement Star -->
+    <path d="M0 -28 L8 -8 L28 -6 L13 9 L17 28 L0 18 L-17 28 L-13 9 L-28 -6 L-8 -8 Z" fill="#FFB703"/>
+    
+    <!-- Inner detail -->
+    <path d="M0 -20 L6 -5 L20 -4 L9 7 L12 20 L0 13 L-12 20 L-9 7 L-20 -4 L-6 -5 Z" fill="#FFC933"/>
+  </g>
+
+  <!-- Silhouette of a person standing tall / role model (representing 楷) -->
+  <g fill="#61AFEF">
+    <!-- Head -->
+    <circle cx="120" cy="115" r="14"/>
+    <!-- Body / Shoulders -->
+    <path d="M96 158 C96 138 106 135 120 135 C134 135 144 138 144 158 Z"/>
+  </g>
+
+  <!-- Highlighting laurel/badge accents -->
+  <path d="M85 110 C75 100 75 80 85 70" stroke="#FFB703" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M155 110 C165 100 165 80 155 70" stroke="#FFB703" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+</svg>

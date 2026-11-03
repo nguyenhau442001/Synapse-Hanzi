@@ -1,0 +1,81 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative background aura for feast/celebration -->
+  <circle cx="120" cy="120" r="85" fill="#252A34" opacity="0.6"/>
+  <circle cx="120" cy="120" r="60" fill="#2D323E" opacity="0.4"/>
+
+  <!-- Glowing light rays radiating from the center -->
+  <g opacity="0.15" stroke="#FFD700" stroke-width="2" stroke-linecap="round">
+    <line x1="120" y1="120" x2="120" y2="35"/>
+    <line x1="120" y1="120" x2="120" y2="205"/>
+    <line x1="120" y1="120" x2="35" y2="120"/>
+    <line x1="120" y1="120" x2="205" y2="120"/>
+    <line x1="120" y1="120" x2="60" y2="60"/>
+    <line x1="120" y1="120" x2="180" y2="180"/>
+    <line x1="120" y1="120" x2="180" y2="60"/>
+    <line x1="120" y1="120" x2="60" y2="180"/>
+  </g>
+
+  <!-- Central Banquet Table / Platter Base -->
+  <ellipse cx="120" cy="165" rx="70" ry="22" fill="#363C4E"/>
+  <ellipse cx="120" cy="162" rx="64" ry="18" fill="#1E222B"/>
+  
+  <!-- Fancy Serving Platter (Silver/Gold rim) -->
+  <ellipse cx="120" cy="158" rx="56" ry="14" fill="#FFC107" opacity="0.2"/>
+  <ellipse cx="120" cy="156" rx="52" ry="12" fill="#252A34"/>
+
+  <!-- Main Feast Dish: Roasted Turkey / Roast Platter with Garnish -->
+  <!-- Roast body -->
+  <path d="M90 150 C90 130 110 120 120 120 C130 120 150 130 150 150 C150 162 90 162 90 150 Z" fill="#E65100"/>
+  <path d="M95 148 C95 132 110 123 120 123 C130 123 145 132 145 148 Z" fill="#FF8F00"/>
+  <!-- Highlight on roast -->
+  <ellipse cx="120" cy="137" rx="14" ry="7" fill="#FFB300" opacity="0.6"/>
+
+  <!-- Turkey legs / garnish details -->
+  <path d="M85 152 C80 150 78 142 82 138 C86 134 92 142 90 148 Z" fill="#D7CCC8"/>
+  <path d="M155 152 C160 150 162 142 158 138 C154 134 148 142 150 148 Z" fill="#D7CCC8"/>
+  <circle cx="82" cy="138" r="3" fill="#FFF"/>
+  <circle cx="158" cy="138" r="3" fill="#FFF"/>
+
+  <!-- Cloche / Dome Lid (Lifted/Floating slightly to reveal the feast) -->
+  <!-- Handle -->
+  <rect x="114" y="62" width="12" height="6" rx="3" fill="#FFC107"/>
+  <circle cx="120" cy="61" r="4" fill="#FFD700"/>
+
+  <!-- Dome Body -->
+  <path d="M76 115 C76 85 95 72 120 72 C145 72 164 85 164 115 Z" fill="#3A4252"/>
+  <path d="M79 113 C79 87 97 75 120 75 C143 75 161 87 161 113 Z" fill="#4E5D6C"/>
+  
+  <!-- Metallic sheen on dome -->
+  <path d="M95 85 C105 80 115 80 125 82" stroke="#90A4AE" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <!-- Dome Rim -->
+  <ellipse cx="120" cy="115" rx="44" ry="6" fill="#FFC107"/>
+  <ellipse cx="120" cy="114" rx="41" ry="4" fill="#FFD700"/>
+
+  <!-- Floating Wine Glasses flanking the feast -->
+  <!-- Left Glass -->
+  <path d="M52 110 L68 110 L60 132 Z" fill="#E0F7FA" opacity="0.9"/>
+  <path d="M55 110 L65 110 L62 125 L58 125 Z" fill="#E91E63" opacity="0.8"/> <!-- Wine -->
+  <line x1="60" y1="132" x2="60" y2="152" stroke="#B0BEC5" stroke-width="2" stroke-linecap="round"/>
+  <ellipse cx="60" cy="152" rx="8" ry="3" fill="#B0BEC5"/>
+
+  <!-- Right Glass -->
+  <path d="M172 110 L188 110 L180 132 Z" fill="#E0F7FA" opacity="0.9"/>
+  <path d="M175 110 L185 110 L182 125 L178 125 Z" fill="#E91E63" opacity="0.8"/> <!-- Wine -->
+  <line x1="180" y1="132" x2="180" y2="152" stroke="#B0BEC5" stroke-width="2" stroke-linecap="round"/>
+  <ellipse cx="180" cy="152" rx="8" ry="3" fill="#B0BEC5"/>
+
+  <!-- Festive Sparkles / Magic Elements representing 'Grand Feast' -->
+  <!-- Top Left Sparkle -->
+  <path d="M68 68 L70 76 L78 78 L70 80 L68 88 L66 80 L58 78 L66 76 Z" fill="#FFD700"/>
+  <!-- Top Right Sparkle -->
+  <path d="M172 68 L174 76 L182 78 L174 80 L172 88 L170 80 L162 78 L170 76 Z" fill="#FFC107"/>
+  <!-- Small accent dots -->
+  <circle cx="95" cy="55" r="2.5" fill="#FFD700" opacity="0.8"/>
+  <circle cx="145" cy="55" r="2" fill="#FFC107" opacity="0.8"/>
+  <circle cx="50" cy="90" r="2" fill="#FFA726" opacity="0.8"/>
+  <circle cx="190" cy="90" r="2.5" fill="#FFD700" opacity="0.8"/>
+</svg>

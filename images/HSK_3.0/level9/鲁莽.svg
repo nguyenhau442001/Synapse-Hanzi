@@ -1,0 +1,30 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Character representing "鲁莽" (Impulsiveness/Rashness) -->
+  <!-- A person charging forward blindly, ignoring a clear "STOP" or "DANGER" sign -->
+  
+  <!-- The Obstacle/Edge -->
+  <path d="M40 180 L200 180 L180 140 L60 140 Z" fill="#3A3F4B"/>
+  <path d="M120 140 L120 100" stroke="#FF4D4D" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="120" cy="80" r="20" fill="none" stroke="#FF4D4D" stroke-width="6"/>
+  <line x1="106" y1="66" x2="134" y2="94" stroke="#FF4D4D" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- The Rash Character -->
+  <g transform="translate(80, 120)">
+    <!-- Body leaning forward aggressively -->
+    <path d="M20 60 L60 60 L50 20 L30 20 Z" fill="#FFB84D"/>
+    <!-- Head -->
+    <circle cx="40" cy="15" r="15" fill="#FFB84D"/>
+    <!-- Arms flailing -->
+    <path d="M20 30 L0 10" stroke="#FFB84D" stroke-width="8" stroke-linecap="round"/>
+    <path d="M60 30 L80 10" stroke="#FFB84D" stroke-width="8" stroke-linecap="round"/>
+    <!-- Legs in motion -->
+    <path d="M30 60 L20 90" stroke="#FFB84D" stroke-width="8" stroke-linecap="round"/>
+    <path d="M50 60 L60 90" stroke="#FFB84D" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Motion lines to emphasize speed/lack of thought -->
+  <path d="M20 100 L50 100" stroke="#5D6475" stroke-width="4" stroke-linecap="round"/>
+  <path d="M10 110 L40 110" stroke="#5D6475" stroke-width="4" stroke-linecap="round"/>
+</svg>

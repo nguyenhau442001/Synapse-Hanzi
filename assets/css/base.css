@@ -1,216 +1,316 @@
-/* Theme tokens, reset, and shared app shell. */
+/* Chinese Classical Aesthetics (东方美学) Design Tokens, Reset, and Shared Shell */
 :root {
-  --bg-canvas: #f8fafc;
-  --bg-surface: #ffffff;
-  --bg-elevated: #f1f5f9;
+  /* Authentic Chinese Classical Palette Tokens */
+  --c-vermilion: #A8322A;      /* 朱砂红 / 丹红 - Chinese Vermilion */
+  --c-imperial-red: #8F2525;   /* 故宫红 / 宫墙红 - Imperial Red */
+  --c-antique-gold: #C5A46D;   /* 古铜金 / 泥金 - Antique Gold */
+  --c-antique-gold-hover: #B8965E;
+  --c-ink-black: #292B30;      /* 水墨黑 / 烟墨 - Ink Black */
+  --c-ink-charcoal: #5A564F;   /* 焦墨 / 炭黑 */
+  --c-xuan-paper: #F3EBDD;     /* 宣纸原色 / 象牙宣 - Warm Xuan Paper */
+  --c-xuan-card: #FAF6EE;      /* 熟宣素白 / 精装书页 */
+  --c-jade-green: #527D70;     /* 翡翠绿 / 苍松绿 - Classical Jade Green */
+  --c-jade-text: #375F53;
+  --c-muted-bronze: #A88B62;   /* 青铜褐 / 泥金褐 - Muted Bronze */
+  --c-bronze-text: #7D633E;
 
-  --text-primary: #0f172a;
-  --text-secondary: #334155;
-  --text-tertiary: #475569;
-  --text-muted: #64748b;
-  --text-progress-detail: #334155;
+  /* Typography Font Stacks */
+  --font-sans: Inter, "Be Vietnam Pro", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-cjk: "PingFang SC", "Songti SC", "SimSun", "STSong", "Noto Serif SC", "Hiragino Sans GB", "Microsoft YaHei", serif, sans-serif;
+  --font-classical: "Songti SC", "Noto Serif SC", "STSong", "SimSun", serif;
 
-  --border-subtle: #e2e8f0;
-  --border-strong: #cbd5e1;
+  /* Theme semantic mappings - Light Mode */
+  --bg-canvas: #F7F3EA;
+  --bg-surface: #FFFFFF;
+  --bg-elevated: #F1EBDD;
 
-  --brand-primary: #c05624;
-  --brand-primary-hover: #aa4b1e;
+  --text-primary: #1F2228;
+  --text-secondary: #5A564F;
+  --text-tertiary: #8C857B;
+  --text-muted: #8E877C;
+  --text-progress-detail: #5A564F;
 
-  --status-success: #2e7d5a;
-  --status-warning: #996e1e;
+  --border-subtle: #E8E1D2;
+  --border-strong: #C5A46D;
+
+  --brand-primary: #A8322A;
+  --brand-primary-hover: #8F2525;
+
+  --status-success: #527D70;
+  --status-warning: #A88B62;
 
   /* Aliases & unified token architecture */
-  --bg: #f8fafc;
-  --card-bg: #ffffff;
-  --bg-card: #ffffff;
-  --border: #e2e8f0;
-  --card-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.08), 0 1px 2px -1px rgba(15, 23, 42, 0.05);
-  --card-shadow-hover: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
-  --surface-subtle: #f1f5f9;
-  --surface-chip: #e2e8f0;
-  --progress-track: #e2e8f0;
-  --heatmap-empty: #e2e8f0;
+  --bg: #F7F3EA;
+  --card-bg: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --border: #DDD4C4;
+  --card-shadow: 0 2px 10px -2px rgba(41, 43, 48, 0.05), 0 1px 3px 0 rgba(41, 43, 48, 0.03);
+  --card-shadow-hover: 0 8px 24px -4px rgba(41, 43, 48, 0.08), 0 0 0 1px rgba(197, 164, 109, 0.35);
+  --surface-subtle: #FAF6EE;
+  --surface-chip: #F1EBDD;
+  --progress-track: #E4DACE;
+  --heatmap-empty: #E4DACE;
 
-  --accent: #c05624;
-  --accent-hover: #aa4b1e;
-  --accent-gradient: linear-gradient(135deg, #c05624 0%, #aa4b1e 100%);
-  --accent-gradient-hover: linear-gradient(135deg, #cf6432 0%, #c05624 100%);
-  --accent-light: #fff7ed;
-  /* Text on solid accent, and small accent text on --accent-light; both ≥4.5:1. */
-  --on-accent: #ffffff;
-  --accent-text: #c05624;
+  --accent: #A8322A;
+  --accent-hover: #8F2525;
+  --accent-gold: #C5A46D;
+  --accent-gold-hover: #B8965E;
+  --accent-gradient: linear-gradient(135deg, #A8322A 0%, #8F2525 100%);
+  --accent-gradient-hover: linear-gradient(135deg, #B83A31 0%, #A8322A 100%);
+  --accent-light: rgba(168, 50, 42, 0.08);
+  --on-accent: #FFFFFF;
+  --accent-text: #A8322A;
 
-  --success-bg: #ecfdf5;
-  --success-text: #2e7d5a;
-  --danger-bg: #fef2f2;
-  --danger-text: #dc2626;
-  --danger-solid: #ef4444;
-  --info-bg: #eff6ff;
-  --info-text: #2563eb;
-  --warning-bg: #fffbeb;
-  --warning-text: #996e1e;
+  --success-bg: #EFF5F1;
+  --success-text: #375F53;
+  --danger-bg: #FAF0EE;
+  --danger-text: #A8322A;
+  --danger-solid: #A8322A;
+  --info-bg: #EEF3F5;
+  --info-text: #3D6B78;
+  --warning-bg: #FAF5EB;
+  --warning-text: #7D633E;
 
-  --example-bg: #f8fafc;
-  --example-border: #e2e8f0;
+  --example-bg: #F8F3EA;
+  --example-border: #DDD2BE;
   --radius-lg: 16px;
   --radius-md: 10px;
+  --radius-pill: 999px;
 }
 
-/* Dark palette — warm-neutral charcoal surfaces with muted tangerine & sage green */
+/* Dark palette — Deep nocturnal ink wash (松烟黛墨) with subtle gold ornaments & cinnabar accents */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --bg-canvas: #141719;
-    --bg-surface: #1C2022;
-    --bg-elevated: #252A2C;
+  :root:not([data-theme="light"]) {
+    --bg-canvas: #17191D;
+    --bg-surface: #22252B;
+    --bg-elevated: #2A2F38;
 
-    --text-primary: #E4E5E2;
-    --text-secondary: #A5AAA7;
-    --text-tertiary: #828A86;
-    --text-muted: #828A86;
-    --text-progress-detail: #A5AAA7;
+    --text-primary: #EDE6D8;
+    --text-secondary: #B0A99C;
+    --text-tertiary: #8A8376;
+    --text-muted: #8A8376;
+    --text-progress-detail: #B0A99C;
 
-    --border-subtle: #343A3C;
-    --border-strong: #454D50;
+    --border-subtle: #2D333D;
+    --border-strong: rgba(184, 155, 104, 0.45);
 
-    --brand-primary: #DB8957;
-    --brand-primary-hover: #E5A075;
+    --brand-primary: #A8322A;
+    --brand-primary-hover: #BF3B32;
 
-    --status-success: #72B99A;
-    --status-warning: #D2AD6E;
+    --status-success: #629988;
+    --status-warning: #D4B37F;
 
-    --bg: #141719;
-    --card-bg: #1C2022;
-    --bg-card: #1C2022;
-    --border: #343A3C;
-    --card-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.4), 0 2px 6px -1px rgba(0, 0, 0, 0.25);
-    --surface-subtle: #252A2C;
-    --surface-chip: #2A3032;
-    --progress-track: #262B2D;
-    --heatmap-empty: #262B2D;
+    --bg: #17191D;
+    --card-bg: #22252B;
+    --bg-card: #22252B;
+    --border: #333945;
+    --card-shadow: 0 6px 20px -3px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(184, 155, 104, 0.16);
+    --surface-subtle: #22252B;
+    --surface-chip: #2A303A;
+    --progress-track: #282E38;
+    --heatmap-empty: #282E38;
 
-    --accent: #DB8957;
-    --accent-hover: #E5A075;
-    --accent-gradient: linear-gradient(135deg, #DB8957 0%, #CD7C4B 100%);
-    --accent-gradient-hover: linear-gradient(135deg, #E5A075 0%, #DB8957 100%);
-    --accent-light: rgba(219, 137, 87, 0.14);
-    --on-accent: #141719;
-    --accent-text: #DB8957;
+    --accent: #A8322A;
+    --accent-hover: #BF3B32;
+    --accent-gold: #B89B68;
+    --accent-gold-hover: #C5A46D;
+    --accent-gradient: linear-gradient(135deg, #A8322A 0%, #8F2525 100%);
+    --accent-gradient-hover: linear-gradient(135deg, #BF3B32 0%, #A8322A 100%);
+    --accent-light: rgba(168, 50, 42, 0.15);
+    --on-accent: #EDE6D8;
+    --accent-text: #E06D63;
 
-    --success-bg: rgba(114, 185, 154, 0.14);
-    --success-text: #72B99A;
-    --danger-bg: rgba(239, 68, 68, 0.14);
-    --danger-text: #f87171;
-    --danger-solid: #ef4444;
-    --info-bg: rgba(59, 130, 246, 0.14);
-    --info-text: #60a5fa;
-    --warning-bg: rgba(210, 173, 110, 0.14);
-    --warning-text: #D2AD6E;
-    --example-bg: #181C1E;
-    --example-border: #2B3133;
+    --success-bg: rgba(98, 153, 136, 0.16);
+    --success-text: #7FB8A7;
+    --danger-bg: rgba(168, 50, 42, 0.16);
+    --danger-text: #F0786E;
+    --danger-solid: #A8322A;
+    --info-bg: rgba(82, 125, 112, 0.16);
+    --info-text: #76B4A3;
+    --warning-bg: rgba(184, 155, 104, 0.16);
+    --warning-text: #D4B37F;
+    --example-bg: #1B1E24;
+    --example-border: #2D333D;
+    --radius-lg: 16px;
+    --radius-md: 10px;
+    --radius-pill: 999px;
   }
 }
-/* Manual overrides — :root[data-theme] specificity (0,2,0) beats media-query :root (0,1,0) */
+
+/* Manual theme overrides */
 :root[data-theme="dark"] {
-  --bg-canvas: #141719;
-  --bg-surface: #1C2022;
-  --bg-elevated: #252A2C;
+  --bg-canvas: #17191D;
+  --bg-surface: #22252B;
+  --bg-elevated: #2A2F38;
 
-  --text-primary: #E4E5E2;
-  --text-secondary: #A5AAA7;
-  --text-tertiary: #828A86;
-  --text-muted: #828A86;
-  --text-progress-detail: #A5AAA7;
+  --text-primary: #EDE6D8;
+  --text-secondary: #B0A99C;
+  --text-tertiary: #8A8376;
+  --text-muted: #8A8376;
+  --text-progress-detail: #B0A99C;
 
-  --border-subtle: #343A3C;
-  --border-strong: #454D50;
+  --border-subtle: #2D333D;
+  --border-strong: rgba(184, 155, 104, 0.45);
 
-  --brand-primary: #DB8957;
-  --brand-primary-hover: #E5A075;
+  --brand-primary: #A8322A;
+  --brand-primary-hover: #BF3B32;
 
-  --status-success: #72B99A;
-  --status-warning: #D2AD6E;
+  --status-success: #629988;
+  --status-warning: #D4B37F;
 
-  --bg: #141719;
-  --card-bg: #1C2022;
-  --bg-card: #1C2022;
-  --border: #343A3C;
-  --card-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.4), 0 2px 6px -1px rgba(0, 0, 0, 0.25);
-  --surface-subtle: #252A2C;
-  --surface-chip: #2A3032;
-  --progress-track: #262B2D;
-  --heatmap-empty: #262B2D;
+  --bg: #17191D;
+  --card-bg: #22252B;
+  --bg-card: #22252B;
+  --border: #333945;
+  --card-shadow: 0 6px 20px -3px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(184, 155, 104, 0.16);
+  --surface-subtle: #22252B;
+  --surface-chip: #2A303A;
+  --progress-track: #282E38;
+  --heatmap-empty: #282E38;
 
-  --accent: #DB8957;
-  --accent-hover: #E5A075;
-  --accent-gradient: linear-gradient(135deg, #DB8957 0%, #CD7C4B 100%);
-  --accent-gradient-hover: linear-gradient(135deg, #E5A075 0%, #DB8957 100%);
-  --accent-light: rgba(219, 137, 87, 0.14);
-  --on-accent: #141719;
-  --accent-text: #DB8957;
+  --accent: #A8322A;
+  --accent-hover: #BF3B32;
+  --accent-gold: #B89B68;
+  --accent-gold-hover: #C5A46D;
+  --accent-gradient: linear-gradient(135deg, #A8322A 0%, #8F2525 100%);
+  --accent-gradient-hover: linear-gradient(135deg, #BF3B32 0%, #A8322A 100%);
+  --accent-light: rgba(168, 50, 42, 0.15);
+  --on-accent: #EDE6D8;
+  --accent-text: #E06D63;
 
-  --success-bg: rgba(114, 185, 154, 0.14);
-  --success-text: #72B99A;
-  --danger-bg: rgba(239, 68, 68, 0.14);
-  --danger-text: #f87171;
-  --danger-solid: #ef4444;
-  --info-bg: rgba(59, 130, 246, 0.14);
-  --info-text: #60a5fa;
-  --warning-bg: rgba(210, 173, 110, 0.14);
-  --warning-text: #D2AD6E;
-  --example-bg: #181C1E;
-  --example-border: #2B3133;
+  --success-bg: rgba(98, 153, 136, 0.16);
+  --success-text: #7FB8A7;
+  --danger-bg: rgba(168, 50, 42, 0.16);
+  --danger-text: #F0786E;
+  --danger-solid: #A8322A;
+  --info-bg: rgba(82, 125, 112, 0.16);
+  --info-text: #76B4A3;
+  --warning-bg: rgba(184, 155, 104, 0.16);
+  --warning-text: #D4B37F;
+  --example-bg: #1B1E24;
+  --example-border: #2D333D;
+  --radius-lg: 16px;
+  --radius-md: 10px;
+  --radius-pill: 999px;
 }
+
+  --success-bg: rgba(98, 153, 136, 0.16);
+  --success-text: #7FB8A7;
+  --danger-bg: rgba(200, 70, 59, 0.16);
+  --danger-text: #F0786E;
+  --danger-solid: #C8463B;
+  --info-bg: rgba(82, 125, 112, 0.16);
+  --info-text: #76B4A3;
+  --warning-bg: rgba(212, 179, 127, 0.16);
+  --warning-text: #D4B37F;
+  --example-bg: #181B20;
+  --example-border: #282E38;
+  --radius-lg: 16px;
+  --radius-md: 10px;
+  --radius-pill: 999px;
+}
+
 :root[data-theme="light"] {
-  --bg-canvas: #f8fafc;
-  --bg-surface: #ffffff;
-  --bg-elevated: #f1f5f9;
+  --bg-canvas: #F7F3EA;
+  --bg-surface: #FFFFFF;
+  --bg-elevated: #F1EBDD;
 
-  --text-primary: #0f172a;
-  --text-secondary: #334155;
-  --text-tertiary: #475569;
-  --text-muted: #64748b;
-  --text-progress-detail: #334155;
+  --text-primary: #1F2228;
+  --text-secondary: #5A564F;
+  --text-tertiary: #8C857B;
+  --text-muted: #8E877C;
+  --text-progress-detail: #5A564F;
 
-  --border-subtle: #e2e8f0;
-  --border-strong: #cbd5e1;
+  --border-subtle: #E8E1D2;
+  --border-strong: #C5A46D;
 
-  --brand-primary: #c05624;
-  --brand-primary-hover: #aa4b1e;
+  --brand-primary: #A8322A;
+  --brand-primary-hover: #8F2525;
 
-  --status-success: #2e7d5a;
-  --status-warning: #996e1e;
+  --status-success: #527D70;
+  --status-warning: #A88B62;
 
-  --bg: #f8fafc;
-  --card-bg: #ffffff;
-  --bg-card: #ffffff;
-  --border: #e2e8f0;
-  --border-strong: #cbd5e1;
-  --card-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.08), 0 1px 2px -1px rgba(15, 23, 42, 0.05);
-  --card-shadow-hover: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
-  --surface-subtle: #f1f5f9;
-  --surface-chip: #e2e8f0;
-  --progress-track: #e2e8f0;
-  --heatmap-empty: #e2e8f0;
+  --bg: #F7F3EA;
+  --card-bg: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --border: #DDD4C4;
+  --card-shadow: 0 2px 10px -2px rgba(41, 43, 48, 0.05), 0 1px 3px 0 rgba(41, 43, 48, 0.03);
+  --card-shadow-hover: 0 8px 24px -4px rgba(41, 43, 48, 0.08), 0 0 0 1px rgba(197, 164, 109, 0.35);
+  --surface-subtle: #FAF6EE;
+  --surface-chip: #F1EBDD;
+  --progress-track: #E4DACE;
+  --heatmap-empty: #E4DACE;
 
-  --accent: #c05624;
-  --accent-hover: #aa4b1e;
-  --accent-gradient: linear-gradient(135deg, #c05624 0%, #aa4b1e 100%);
-  --accent-gradient-hover: linear-gradient(135deg, #cf6432 0%, #c05624 100%);
-  --accent-light: #fff7ed;
-  --on-accent: #ffffff;
-  --accent-text: #c05624;
+  --accent: #A8322A;
+  --accent-hover: #8F2525;
+  --accent-gold: #C5A46D;
+  --accent-gold-hover: #B8965E;
+  --accent-gradient: linear-gradient(135deg, #A8322A 0%, #8F2525 100%);
+  --accent-gradient-hover: linear-gradient(135deg, #B83A31 0%, #A8322A 100%);
+  --accent-light: rgba(168, 50, 42, 0.08);
+  --on-accent: #FFFFFF;
+  --accent-text: #A8322A;
 
-  --success-bg: #ecfdf5;
-  --success-text: #2e7d5a;
-  --danger-bg: #fef2f2;
-  --danger-text: #dc2626;
-  --info-bg: #eff6ff;
-  --info-text: #2563eb;
-  --warning-bg: #fffbeb;
-  --warning-text: #996e1e;
-  --example-bg: #f8fafc;
-  --example-border: #e2e8f0;
+  --success-bg: #EFF5F1;
+  --success-text: #375F53;
+  --danger-bg: #FAF0EE;
+  --danger-text: #A8322A;
+  --danger-solid: #A8322A;
+  --info-bg: #EEF3F5;
+  --info-text: #3D6B78;
+  --warning-bg: #FAF5EB;
+  --warning-text: #7D633E;
+
+  --example-bg: #F8F3EA;
+  --example-border: #DDD2BE;
+  --radius-lg: 16px;
+  --radius-md: 10px;
+  --radius-pill: 999px;
 }
+
+/* Chinese Classical Landscape Canvas (梅花与水墨意境背景) */
+.chinese-aesthetic-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: opacity 300ms ease, background-image 300ms ease;
+  opacity: 0.95;
+  overflow: hidden;
+  background-image: url("../images/chinese_landscape_light.svg");
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .chinese-aesthetic-bg {
+    background-image: url("../images/chinese_landscape_dark.svg");
+  }
+}
+}
+:root[data-theme="light"] .chinese-aesthetic-bg {
+  background-image: url("../images/chinese_landscape_light.svg");
+}
+:root[data-theme="dark"] .chinese-aesthetic-bg {
+  background-image: url("../images/chinese_landscape_dark.svg");
+}
+
+/* Layer 3-5: Animated Falling Chinese Plum Blossoms, Mist & Gold Particles Canvas */
+.plum-blossom-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
 /* Smooth theme switch — applied during user-initiated toggles; transitions colors, backgrounds, borders, and shadows without touching complex SVGs/canvas/media */
 html.theme-transition,
 html.theme-transition body,
@@ -224,30 +324,30 @@ html.theme-transition :not(svg, svg *, canvas, img, video) {
 * {
   box-sizing: border-box;
   scrollbar-width: thin;
-  scrollbar-color: #d1d5db transparent;
+  scrollbar-color: #D4BA88 transparent;
 }
 :root[data-theme="dark"] * {
-  scrollbar-color: rgba(255, 255, 255, 0.22) transparent;
+  scrollbar-color: rgba(212, 179, 127, 0.25) transparent;
 }
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #d1d5db;
+  background: #DFD4C2;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #9ca3af;
+  background: #C5A46D;
 }
 :root[data-theme="dark"] ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.22);
+  background: rgba(212, 179, 127, 0.22);
 }
 :root[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.38);
+  background: rgba(212, 179, 127, 0.45);
 }
 .sr-only {
   position: absolute;
@@ -265,51 +365,208 @@ html.theme-transition :not(svg, svg *, canvas, img, video) {
 }
 body {
   margin: 0;
-  font-family: Inter, "Be Vietnam Pro", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: var(--font-sans);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  background: var(--bg);
+  background-color: var(--bg);
   color: var(--text-primary);
   padding: 20px 16px 60px;
+  position: relative;
+  min-height: 100vh;
+}
+.app {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* App Header with Chinese Cultural Branding */
+.app-header {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+.app-header-brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+.chinese-seal-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  background: var(--accent);
+  color: #FAF6EE;
+  font-family: var(--font-classical);
+  font-size: 19px;
+  font-weight: 900;
+  line-height: 1;
+  box-shadow: 0 2px 8px rgba(168, 50, 42, 0.32);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  user-select: none;
+  flex-shrink: 0;
+  letter-spacing: normal;
+}
+:root[data-theme="dark"] .chinese-seal-badge {
+  box-shadow: 0 2px 10px rgba(200, 70, 59, 0.45);
+  border-color: rgba(212, 179, 127, 0.4);
+}
+.app-header h1 {
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+.app-header p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+.author-credit a, .contact-credit a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+.author-credit a:hover, .contact-credit a:hover {
+  text-decoration: underline;
 }
 .app { width: 100%; max-width: none; margin: 0 auto; }
-.app-header { text-align: center; margin-bottom: 18px; position: relative; }
-.app-header h1 { font-size: 20px; font-weight: 600; margin: 0 0 4px; }
-.app-header p { font-size: 13px; color: var(--text-secondary); margin: 0; }
-.author-credit a, .contact-credit a { color: var(--accent); text-decoration: none; font-weight: 600; }
-.author-credit a:hover, .contact-credit a:hover { text-decoration: underline; }
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding: 12px 0 16px;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+.app-header-brand {
+  flex: 0 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.app-header-brand h1 {
+  font-family: var(--font-classical);
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0;
+  color: var(--text-primary);
+  letter-spacing: 0.05em;
+  line-height: 1.15;
+}
+.app-header-brand p {
+  font-size: 11.5px;
+  color: var(--text-tertiary);
+  margin: 3px 0 0;
+  line-height: 1.25;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.app-brand-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+}
+.app-brand-logo-img {
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  flex-shrink: 0;
+  display: block;
+  box-shadow: 0 2px 8px rgba(168, 50, 42, 0.22);
+}
+.app-brand-text-block {
+  min-width: 0;
+}
+.brand-pinyin {
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+.brand-en {
+  font-weight: 500;
+  color: var(--text-primary);
+  opacity: 0.85;
+}
+.brand-tagline {
+  color: var(--text-secondary);
+}
+.brand-sep {
+  color: var(--text-tertiary, #94a3b8);
+  margin: 0 1px;
+}
 .app-header-actions {
-  position: absolute; top: 0; right: 0;
-  display: flex; align-items: center; gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+  position: static;
 }
 .header-streak-badge {
-  display: inline-flex; align-items: center; gap: 5px;
-  height: 38px; padding: 0 12px;
-  border: 1px solid var(--border); border-radius: 999px;
-  background: var(--surface-subtle); color: var(--text-primary);
-  font: inherit; font-size: 13px; font-weight: 650; cursor: pointer;
-  white-space: nowrap; transition: all 160ms ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: var(--surface-subtle);
+  color: var(--text-primary);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 650;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 160ms ease;
+  box-shadow: 0 1px 3px rgba(41, 43, 48, 0.04);
 }
 .header-streak-badge:hover {
-  background: var(--card-bg); border-color: var(--border-strong);
+  background: var(--card-bg);
+  border-color: var(--accent);
   color: var(--brand-primary);
   transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(168, 50, 42, 0.15);
 }
 .header-streak-badge:active { transform: translateY(0); }
 .header-streak-badge:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .header-streak-icon { font-size: 14px; line-height: 1; }
+
 .theme-toggle-btn,
 .header-search-btn,
 .header-help-btn {
-  background: var(--surface-subtle); border: 1px solid var(--border); border-radius: var(--radius-md);
-  padding: 4px 8px; font-size: 15px; line-height: 1; cursor: pointer;
+  background: var(--surface-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 4px 8px;
+  font-size: 15px;
+  line-height: 1;
+  cursor: pointer;
   color: var(--text-secondary);
-  display: inline-flex; align-items: center; justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.15s ease;
 }
 .header-search-btn { display: none; }
 .header-help-btn {
-  width: 32px; height: 32px; padding: 0;
+  width: 32px;
+  height: 32px;
+  padding: 0;
   border-radius: 999px;
   font-weight: 700;
   font-size: 14px;
@@ -317,28 +574,72 @@ body {
 .theme-toggle-btn:hover,
 .header-search-btn:hover,
 .header-help-btn:hover {
-  color: var(--text-primary);
+  color: var(--accent);
   border-color: var(--border-strong);
   background: var(--card-bg);
+  box-shadow: 0 2px 6px rgba(197, 164, 109, 0.2);
 }
 .theme-toggle-btn:focus-visible,
 .header-search-btn:focus-visible,
 .header-help-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-/* Below the desktop dock the left sidebar is gone: search becomes a header icon. */
 @media (max-width: 1279px) {
-  .header-search-btn { display: inline-flex; align-items: center; justify-content: center; }
   .theme-toggle-btn,
   .header-search-btn,
-  .header-help-btn { width: 40px; height: 40px; padding: 0; }
+  .header-help-btn,
+  .header-profile-btn { width: 40px; height: 40px; padding: 0; }
   .header-help-btn { border-radius: 999px; }
   .header-streak-badge { height: 40px; font-size: 13px; }
 }
+
+/* Mobile header styling */
 @media (max-width: 767px) {
-  .app-header { text-align: left; min-height: 44px; padding-right: 210px; }
-  .app-header h1 { font-size: 18px; line-height: 44px; margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .app-header p { display: none; }
-  .header-streak-badge { padding: 0 10px; font-size: 12.5px; }
+  .app-header {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0 14px;
+    min-height: auto;
+  }
+  .app-header-brand {
+    flex: 1 1 auto;
+  }
+  .app-brand-badge {
+    height: auto;
+    gap: 8px;
+    max-width: 100%;
+  }
+  .app-brand-logo-img {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+  }
+  .app-brand-text-block {
+    min-width: 0;
+    overflow: hidden;
+  }
+  .app-header-brand h1 {
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 0;
+  }
+  .app-header-brand p {
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .brand-tagline-wrap {
+    display: none;
+  }
+  .app-header-actions {
+    flex: 0 0 auto;
+    gap: 6px;
+  }
+  .header-streak-badge { padding: 0 8px; font-size: 12px; height: 38px; }
+  .header-action-badge { padding: 0 8px; font-size: 12px; height: 38px; }
+  .theme-toggle-btn,
+  .header-search-btn,
+  .header-help-btn { width: 40px; height: 40px; padding: 0; }
 }
 
 /* Keep the complete study controls visible at 100% zoom on shorter desktop viewports. */

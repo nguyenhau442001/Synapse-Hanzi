@@ -1,0 +1,62 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    {/* Background glow for the medicine bottle */}
+    <circle cx="120" cy="115" r="50" fill="#E2B714" opacity="0.08" filter="blur(8px)"/>
+
+    {/* Herbal / Natural Medicine Bottle (representing "良药" - good medicine / remedy) */}
+    <g transform="translate(0, 0)">
+      {/* Cork / Stopper */}
+      <path d="M 104 52 L 136 52 L 132 64 L 108 64 Z" fill="#A06C43"/>
+      <ellipse cx="120" cy="52" rx="16" ry="3" fill="#C48C5B"/>
+
+      {/* Bottle Neck */}
+      <rect x="110" y="64" width="20" height="12" fill="#3E4C59" rx="2"/>
+
+      {/* Bottle Body */}
+      <path d="M 96 90 
+               C 90 76, 150 76, 144 90 
+               L 156 160 
+               C 158 174, 146 184, 132 184 
+               L 108 184 
+               C 94 184, 82 174, 84 160 Z" 
+            fill="#2B3748" stroke="#486581" stroke-width="3" stroke-linejoin="round"/>
+
+      {/* Liquid / Remedy inside */}
+      <path d="M 88 120 
+               L 152 120 
+               C 154 168, 144 180, 132 180 
+               L 108 180 
+               C 96 180, 86 168, 88 120 Z" 
+            fill="#E2B714" opacity="0.85"/>
+
+      {/* Liquid surface wave */}
+      <path d="M 88 120 C 100 126, 110 114, 120 120 C 130 126, 140 114, 152 120" 
+            fill="none" stroke="#F1C40F" stroke-width="2"/>
+
+      {/* Bottle Glass Highlight */}
+      <path d="M 94 98 C 92 110, 94 140, 92 155" 
+            fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.25"/>
+
+      {/* Label on Bottle indicating "Good/Quality" (Leaf icon) */}
+      <rect x="100" y="130" width="40" height="34" rx="4" fill="#FFFFFF" opacity="0.9"/>
+      {/* Green leaf emblem on label representing natural wellness */}
+      <path d="M 120 140 C 126 140, 128 150, 120 156 C 112 150, 114 140, 120 140 Z" fill="#2ECC71"/>
+      <path d="M 120 144 L 120 154" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+
+    {/* Radiant Star / Sparkle accents representing high quality and efficacy ("良") */}
+    <g transform="translate(0, 0)">
+      {/* Top Left Sparkle */}
+      <path d="M 64 85 Q 64 95 54 95 Q 64 95 64 105 Q 64 95 74 95 Q 64 95 64 85 Z" fill="#E2B714"/>
+      
+      {/* Top Right Sparkle (Larger) */}
+      <path d="M 180 70 Q 180 84 166 84 Q 180 84 180 98 Q 180 84 194 84 Q 180 84 180 70 Z" fill="#E2B714"/>
+      
+      {/* Small accent dot */}
+      <circle cx="170" cy="115" r="2.5" fill="#E2B714" opacity="0.6"/>
+      <circle cx="70" cy="145" r="2" fill="#E2B714" opacity="0.6"/>
+    </g>
+  </g>
+</svg>

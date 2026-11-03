@@ -1,0 +1,66 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative subtle elements -->
+  <g opacity="0.15">
+    <line x1="30" y1="120" x2="210" y2="120" stroke="#8E99A8" stroke-dasharray="4 4" stroke-width="1.5"/>
+    <circle cx="120" cy="120" r="85" fill="none" stroke="#8E99A8" stroke-width="1"/>
+  </g>
+
+  <!-- Left Camp (Blue/Cyan Faction) -->
+  <g transform="translate(45, 75)">
+    <!-- Connecting base / territory -->
+    <path d="M-15 75 L 25 75 L 45 95 L -35 95 Z" fill="#243447" opacity="0.8"/>
+    <path d="M-5 75 L 15 75 L 25 95 L 5 95 Z" fill="#38BDF8" opacity="0.3"/>
+
+    <!-- Structural barricade / banner stand -->
+    <rect x="0" y="25" width="6" height="55" rx="3" fill="#64748B"/>
+    <!-- Faction Flag/Shield (Left) -->
+    <path d="M6 25 L 36 38 L 6 52 Z" fill="#38BDF8"/>
+    <circle cx="15" cy="38" r="4" fill="#1A1D24"/>
+
+    <!-- Human Representatives - Group of 2 -->
+    <!-- Person 1 (Front) -->
+    <circle cx="-10" cy="40" r="9" fill="#93C5FD"/>
+    <path d="M-22 75 C-22 58 2 58 2 75 Z" fill="#0EA5E9"/>
+    <!-- Person 2 (Back) -->
+    <circle cx="12" cy="45" r="7" fill="#60A5FA"/>
+    <path d="M2 75 C2 62 22 62 22 75 Z" fill="#0284C7"/>
+  </g>
+
+  <!-- Right Camp (Orange/Gold Faction) -->
+  <g transform="translate(150, 75)">
+    <!-- Connecting base / territory -->
+    <path d="M-25 75 L 15 75 L 35 95 L -45 95 Z" fill="#3D2E23" opacity="0.8"/>
+    <path d="M-15 75 L 5 75 L 15 95 L -5 95 Z" fill="#FBBF24" opacity="0.3"/>
+
+    <!-- Structural barricade / banner stand -->
+    <rect x="18" y="25" width="6" height="55" rx="3" fill="#64748B"/>
+    <!-- Faction Flag/Shield (Right) -->
+    <path d="M18 25 L -12 38 L 18 52 Z" fill="#F59E0B"/>
+    <circle cx="9" cy="38" r="4" fill="#1A1D24"/>
+
+    <!-- Human Representatives - Group of 2 -->
+    <!-- Person 1 (Front) -->
+    <circle cx="14" cy="40" r="9" fill="#FDE68A"/>
+    <path d="M2 75 C2 58 26 58 26 75 Z" fill="#D97706"/>
+    <!-- Person 2 (Back) -->
+    <circle cx="-8" cy="45" r="7" fill="#FCD34D"/>
+    <path d="M-18 75 C-18 62 2 62 2 75 Z" fill="#B45309"/>
+  </g>
+
+  <!-- Center Division / Opposition Boundary -->
+  <g transform="translate(120, 120)">
+    <!-- Ground fissure / separation line -->
+    <path d="M-5 -45 L 3 -25 L -4 0 L 5 25 L -2 45" fill="none" stroke="#EF4444" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Opposition tension sparks/markers -->
+    <circle cx="0" cy="-15" r="3" fill="#EF4444"/>
+    <circle cx="2" cy="15" r="3" fill="#EF4444"/>
+
+    <!-- Subtle opposing directional arrows across the divide -->
+    <path d="M-25 -20 L-40 -20 M-40 -20 L-33 -26 M-40 -20 L-33 -14" fill="none" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M25 20 L40 20 M40 20 L33 14 M40 20 L33 26" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient background glow for literary depth -->
+  <circle cx="120" cy="120" r="90" fill="#222733" opacity="0.5"/>
+
+  <!-- Character / Object Representative of "刻画" (Sculpting / Vivid Portrayal / Carving Details) -->
+  <g transform="translate(0, 0)">
+    <!-- Wooden / Stone Block Canvas Base (The subject being carved) -->
+    <path d="M 60 160 L 100 190 L 180 150 L 140 120 Z" fill="#2E3440" />
+    <path d="M 60 160 L 100 190 L 100 195 L 60 165 Z" fill="#1F232A" />
+    <path d="M 100 190 L 180 150 L 180 155 L 100 195 Z" fill="#252A33" />
+    
+    <!-- Bust emerging / being carved (Representing character portrayal) -->
+    <path d="M 90 145 C 90 120, 105 105, 120 100 C 135 105, 150 120, 150 145 L 160 160 C 160 160, 140 165, 120 165 C 100 165, 80 160, 80 160 Z" fill="#3B4252" />
+    <circle cx="120" cy="95" r="18" fill="#4C566A" />
+    
+    <!-- Expressive Profile Cutout (Vivid character details) -->
+    <path d="M 115 85 Q 125 90 120 105 Q 110 110 115 115" stroke="#E5C07B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Carving Chisel / Precision Tool (Master's delicate brush/chisel stroke) -->
+    <!-- Tool handle -->
+    <line x1="165" y1="55" x2="115" y2="105" stroke="#434C5E" stroke-width="8" stroke-linecap="round" />
+    <line x1="158" y1="62" x2="122" y2="98" stroke="#D08770" stroke-width="8" stroke-linecap="round" />
+    
+    <!-- Metallic tip / Fine point making the precise mark -->
+    <polygon points="115,105 108,110 112,103" fill="#E5C07B" />
+    
+    <!-- Vivid Creative Sparks / Detail Shimmer (Focus accent) -->
+    <g fill="#E5C07B">
+      <!-- Spark 1 -->
+      <path d="M 105 92 Q 110 90 112 85 Q 114 90 119 92 Q 114 94 112 99 Q 110 94 105 92 Z" />
+      <!-- Spark 2 (Smaller) -->
+      <path d="M 135 75 Q 138 74 139 71 Q 140 74 143 75 Q 140 76 139 79 Q 138 76 135 75 Z" opacity="0.8" />
+      <!-- Dynamic arc lines showing finesse and motion -->
+      <path d="M 95 78 C 105 70, 125 70, 135 78" stroke="#E5C07B" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+      <path d="M 100 70 C 112 62, 128 62, 140 70" stroke="#E5C07B" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.3"/>
+    </g>
+    
+    <!-- Precision shavings / artistic dust -->
+    <circle cx="85" cy="140" r="2" fill="#D8DEE9" opacity="0.7"/>
+    <circle cx="145" cy="135" r="1.5" fill="#D8DEE9" opacity="0.5"/>
+    <path d="M 75 150 Q 80 148 82 152" stroke="#D8DEE9" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+  </g>
+</svg>

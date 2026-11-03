@@ -1,0 +1,55 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Background subtle ambient lighting -->
+    <circle cx="120" cy="110" r="70" fill="#252A34" opacity="0.5"/>
+
+    <!-- Left Person (Professional Business Attire in Slate/Teal) -->
+    <g id="person-left">
+      <!-- Body/Suit -->
+      <path d="M 75 165 L 95 125 L 110 165 Z" fill="#2F3640"/>
+      <path d="M 75 165 L 90 165 L 85 135 Z" fill="#4B6584"/>
+      <!-- Head and Neck -->
+      <circle cx="85" cy="105" r="16" fill="#F19066"/>
+      <path d="M 80 118 Q 85 124 90 118 Z" fill="#E86E3C"/>
+      <!-- Hair -->
+      <path d="M 71 103 Q 80 91 99 103 Q 95 96 85 96 Q 75 96 71 103 Z" fill="#2C3A47"/>
+      <!-- Bowing/Greeting Arm (Left) -->
+      <path d="M 88 128 Q 105 130 112 122" stroke="#2F3640" stroke-width="8" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- Right Person (Professional Business Attire in Navy/Gold Accent) -->
+    <g id="person-right">
+      <!-- Body/Suit -->
+      <path d="M 165 165 L 145 125 L 130 165 Z" fill="#2F3640"/>
+      <path d="M 165 165 L 150 165 L 155 135 Z" fill="#4B6584"/>
+      <!-- Head and Neck -->
+      <circle cx="155" cy="105" r="16" fill="#F19066"/>
+      <path d="M 150 118 Q 155 124 160 118 Z" fill="#E86E3C"/>
+      <!-- Hair -->
+      <path d="M 141 103 Q 150 91 169 103 Q 165 96 155 96 Q 145 96 141 103 Z" fill="#3B3B98"/>
+      <!-- Bowing/Greeting Arm (Right) -->
+      <path d="M 152 128 Q 135 130 128 122" stroke="#2F3640" stroke-width="8" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- Central Bowing / Handshake Intersection (Respectful Interaction) -->
+    <!-- Represented by a polite bow posture (upper bodies leaning inward slightly) -->
+    <!-- The head positions are shifted down and inward to show traditional/diplomatic bowing etiquette -->
+    
+    <!-- Adjusting left person for bow -->
+    <use href="#person-left" x="5" y="10" transform="rotate(8 85 165)" />
+    <!-- Adjusting right person for bow -->
+    <use href="#person-right" x="-5" y="10" transform="rotate(-8 155 165)" />
+
+    <!-- Formal Bowing Indicator / Elegant Golden Arc representing etiquette/harmony -->
+    <path d="M 95 72 Q 120 62 145 72" fill="none" stroke="#F1C40F" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    
+    <!-- Sparkles of polite mutual respect / diplomacy -->
+    <circle cx="120" cy="78" r="3" fill="#F1C40F"/>
+    <path d="M 120 70 L 120 86 M 112 78 L 128 78" stroke="#F1C40F" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Elegant Floor Shadow -->
+    <ellipse cx="120" cy="175" r="65" fill="#111318" opacity="0.6"/>
+  </g>
+</svg>

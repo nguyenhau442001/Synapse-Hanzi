@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background atmosphere (winter chill) -->
+  <path d="M40 80 L60 60 M180 90 L200 70 M70 170 L90 150" stroke="#2A3242" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Character 1: Older figure / protective adult -->
+  <g id="protective-figure">
+    <!-- Body/Coat -->
+    <path d="M100 170 C95 140 80 120 70 100 L95 90 C110 110 125 130 130 170 Z" fill="#3B4860"/>
+    <!-- Head -->
+    <circle cx="85" cy="78" r="14" fill="#E2B291"/>
+    <!-- Gentle leaning posture -->
+    <path d="M75 110 C85 115 95 125 105 140" stroke="#3B4860" stroke-width="12" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Character 2: Vulnerable child / small figure (resembling the orphan in the cold wind) -->
+  <g id="vulnerable-child">
+    <!-- Small body / winter clothes -->
+    <path d="M145 170 C145 150 140 135 135 120 L155 115 C160 130 165 150 165 170 Z" fill="#475C7A"/>
+    <!-- Head -->
+    <circle cx="150" cy="102" r="11" fill="#E2B291"/>
+    <!-- Winter hat (tuque) -->
+    <path d="M139 98 C139 90 161 90 161 98 Z" fill="#E08354"/>
+    <circle cx="150" cy="88" r="4" fill="#E08354"/>
+  </g>
+
+  <!-- Interaction / Compassionate Gesture: Warm sheltering wrap -->
+  <g id="compassionate-shelter">
+    <!-- Protective arm wrapped gently around the child -->
+    <path d="M85 115 C105 100 130 105 145 115" stroke="#E2B291" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <path d="M83 113 C105 95 132 100 148 112" stroke="#3B4860" stroke-width="12" stroke-linecap="round" fill="none"/>
+    
+    <!-- Warm enveloping blanket/shawl representing tender care & sorrow-mixed love (怜惜) -->
+    <path d="M75 110 C90 95 125 90 145 110 C155 120 150 140 140 155 C120 145 90 140 75 110 Z" fill="#D66840" opacity="0.9"/>
+    <!-- Blanket fold detail -->
+    <path d="M90 103 C110 98 130 105 140 115" stroke="#E58A67" stroke-width="3" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Focus Accent: Warm glowing empathy aura (non-magical, atmospheric light of tenderness) -->
+  <circle cx="115" cy="115" r="55" fill="none" stroke="#E08354" stroke-width="1.5" stroke-dasharray="4 8" opacity="0.4"/>
+</svg>

@@ -1,0 +1,45 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle background grid/glow elements for modern dark mode UI feel -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.5"/>
+
+  <!-- Central Physical Object representing "减免" (Tax/Fee reduction voucher document with a scissor-cut reduction effect) -->
+  <g transform="translate(0, 0)">
+    <!-- Document Base (Official Form/Receipt) -->
+    <rect x="75" y="55" width="90" height="130" rx="8" fill="#2D3343" stroke="#3F4863" stroke-width="2"/>
+    
+    <!-- Document Header / Official Stamp Area -->
+    <circle cx="95" cy="78" r="8" fill="#F39C12"/>
+    <rect x="110" y="72" width="40" height="6" rx="3" fill="#4E5D78"/>
+    <rect x="110" y="82" width="25" height="4" rx="2" fill="#3F4863"/>
+
+    <!-- Line items representing official fees / taxes -->
+    <line x1="90" y1="105" x2="150" y2="105" stroke="#3F4863" stroke-width="3" stroke-linecap="round"/>
+    <line x1="90" y1="120" x2="150" y2="120" stroke="#3F4863" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- The "Reduction" (减免) Highlight Section - Strikethrough & Decrease Indicator -->
+    <rect x="85" y="135" width="70" height="32" rx="4" fill="#1A1D24"/>
+    <!-- Original amount struck out -->
+    <line x1="125" y1="145" x2="145" y2="157" stroke="#E74C3C" stroke-width="3" stroke-linecap="round"/>
+    <text x="95" y="156" fill="#718096" font-family="sans-serif" font-weight="bold" font-size="14" text-decoration="line-through">$100</text>
+    
+    <!-- Reduced/Waived Amount (0.00 / Free / Exempt) highlighted in bright gold/orange -->
+    <text x="125" y="156" fill="#F1C40F" font-family="sans-serif" font-weight="bold" font-size="14">0</text>
+
+    <!-- Sleek Modern Scissors cutting/reducing the document (Visualizing "减" - Reduction) -->
+    <g transform="translate(130, 110) rotate(-25)">
+      <!-- Scissor Handles (Modern flat design) -->
+      <circle cx="-35" cy="0" r="10" fill="none" stroke="#F1C40F" stroke-width="3.5"/>
+      <circle cx="-35" cy="25" r="10" fill="none" stroke="#F1C40F" stroke-width="3.5"/>
+      
+      <!-- Scissor Blades -->
+      <path d="M-27 5 L35 -15 L35 -10 L-27 15 Z" fill="#E2E8F0"/>
+      <path d="M-27 20 L35 0 L35 5 L-27 30 Z" fill="#CBD5E1"/>
+      
+      <!-- Pivot screw -->
+      <circle cx="-2" cy="10" r="3.5" fill="#F1C40F"/>
+    </g>
+  </g>
+</svg>

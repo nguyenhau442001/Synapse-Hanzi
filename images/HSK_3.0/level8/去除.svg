@@ -1,0 +1,38 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Fabric/Clothing item background card -->
+    <rect x="40" y="45" width="160" height="150" rx="16" fill="#252A34" stroke="#2F3643" stroke-width="2"/>
+    
+    <!-- Fabric fold/texture lines -->
+    <path d="M 55 45 C 55 45, 60 70, 75 90" stroke="#313946" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 185 45 C 185 45, 180 70, 165 90" stroke="#313946" stroke-width="3" stroke-linecap="round" fill="none"/>
+    
+    <!-- Stain (being removed / fading) -->
+    <path d="M 115 105 C 125 100, 140 105, 145 118 C 150 130, 138 142, 125 140 C 112 138, 105 120, 115 105 Z" fill="#E67E22" opacity="0.3"/>
+    
+    <!-- Spray bottle (cleaning agent) representing "去除" action -->
+    <g transform="translate(20, -5)">
+      <!-- Bottle Body -->
+      <path d="M 90 95 L 90 170 C 90 178, 96 184, 104 184 L 136 184 C 144 184, 150 178, 150 170 L 150 95 Z" fill="#3498DB"/>
+      <!-- Bottle Liquid Level -->
+      <path d="M 92 120 L 148 120 L 148 170 C 148 177, 143 182, 136 182 L 104 182 C 97 182, 92 177, 92 170 Z" fill="#2980B9"/>
+      <!-- Bottle Neck -->
+      <rect x="110" y="78" width="20" height="18" fill="#BDC3C7"/>
+      <!-- Spray Head / Trigger -->
+      <path d="M 100 64 L 140 64 C 146 64, 150 68, 150 74 L 150 78 L 100 78 Z" fill="#ECF0F1"/>
+      <path d="M 125 64 L 125 50 C 125 46, 121 42, 117 42 L 105 42 C 101 42, 98 45, 98 49 L 98 64 Z" fill="#BDC3C7"/>
+      <path d="M 92 56 L 102 52 L 102 68 L 92 64 Z" fill="#7F8C8D"/>
+      
+      <!-- Spray Mist / Action Lines (Removing the stain) -->
+      <path d="M 85 85 L 68 95" stroke="#F1C40F" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 80 100 L 62 115" stroke="#2ECC71" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 88 70 L 72 75" stroke="#F1C40F" stroke-width="3" stroke-linecap="round"/>
+      
+      <!-- Sparkles indicating cleanliness/removal success -->
+      <path d="M 125 110 L 128 118 L 136 121 L 128 124 L 125 132 L 122 124 L 114 121 L 122 118 Z" fill="#F1C40F"/>
+    </g>
+  </g>
+</svg>

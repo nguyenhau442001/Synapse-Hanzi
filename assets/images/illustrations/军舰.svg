@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Sea Waves -->
+  <path d="M0 180 Q 60 160, 120 180 T 240 180 L 240 240 L 0 240 Z" fill="#2C3E50" opacity="0.6"/>
+  <path d="M0 195 Q 60 175, 120 195 T 240 195 L 240 240 L 0 240 Z" fill="#34495E"/>
+  
+  <!-- Warship Hull -->
+  <path d="M40 160 L 200 160 L 190 185 L 50 185 Z" fill="#7F8C8D"/>
+  <path d="M50 185 L 190 185 L 185 195 L 55 195 Z" fill="#95A5A6"/>
+  
+  <!-- Superstructure -->
+  <rect x="80" y="120" width="60" height="40" fill="#BDC3C7"/>
+  <rect x="90" y="100" width="40" height="20" fill="#BDC3C7"/>
+  
+  <!-- Radar/Mast -->
+  <rect x="108" y="70" width="4" height="30" fill="#E67E22"/>
+  <rect x="100" y="80" width="20" height="4" fill="#E67E22"/>
+  
+  <!-- Missile Launcher/Turret -->
+  <rect x="145" y="140" width="20" height="10" fill="#E67E22"/>
+  <rect x="150" y="130" width="10" height="10" fill="#BDC3C7"/>
+  
+  <!-- Bow Detail -->
+  <path d="M40 160 L 55 145 L 65 160 Z" fill="#BDC3C7"/>
+  
+  <!-- Wake -->
+  <path d="M40 170 L 20 190 M35 175 L 15 195" stroke="#ECF0F1" stroke-width="2" opacity="0.4"/>
+</svg>

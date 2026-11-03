@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Clock mechanism representing the precise moment -->
+  <g transform="translate(120, 120)">
+    <!-- Clock outer ring -->
+    <circle cx="0" cy="0" r="70" fill="none" stroke="#374151" stroke-width="8"/>
+    
+    <!-- Clock face markings -->
+    <line x1="0" y1="-60" x2="0" y2="-50" stroke="#4B5563" stroke-width="4" stroke-linecap="round"/>
+    <line x1="60" y1="0" x2="50" y2="0" stroke="#4B5563" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="60" x2="0" y2="50" stroke="#4B5563" stroke-width="4" stroke-linecap="round"/>
+    <line x1="-60" y1="0" x2="-50" y2="0" stroke="#4B5563" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Clock hands set to a precise "right moment" (e.g., 12:15) -->
+    <line x1="0" y1="0" x2="0" y2="-45" stroke="#F59E0B" stroke-width="6" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="35" y2="0" stroke="#F59E0B" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Center pivot -->
+    <circle cx="0" cy="0" r="6" fill="#F59E0B"/>
+  </g>
+  
+  <!-- The "Right Moment" indicator: A golden spark/starburst at the tip of the minute hand -->
+  <path d="M120 65 L124 75 L134 75 L126 82 L129 92 L120 86 L111 92 L114 82 L106 75 L116 75 Z" fill="#FBBF24"/>
+</svg>

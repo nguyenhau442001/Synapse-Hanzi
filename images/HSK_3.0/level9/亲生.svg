@@ -1,0 +1,54 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(20, 25)">
+    <!-- Soft warm ambient background glow representing familial bond -->
+    <circle cx="100" cy="95" r="50" fill="#2D2520" opacity="0.6"/>
+
+    <!-- Adult figure (Parent) -->
+    <g>
+      <!-- Parent body & clothing -->
+      <path d="M 65 145 C 65 125, 80 115, 100 115 C 120 115, 135 125, 135 145 L 145 165 C 145 170, 140 175, 135 175 L 65 175 C 60 175, 55 170, 55 165 Z" fill="#3E506B"/>
+      
+      <!-- Parent neck & head -->
+      <rect x="92" y="96" width="16" height="24" rx="8" fill="#F4C293"/>
+      <circle cx="100" cy="84" r="18" fill="#F4C293"/>
+      
+      <!-- Parent hair -->
+      <path d="M 82 82 C 82 72, 90 64, 100 64 C 110 64, 118 72, 118 82 C 118 86, 116 88, 116 88 L 84 88 C 84 88, 82 86, 82 82 Z" fill="#2C353D"/>
+
+      <!-- Parent warm smiling face profile / expression -->
+      <circle cx="94" cy="83" r="1.5" fill="#5A4A42"/>
+      <path d="M 97 90 C 98 92, 100 92, 101 90" stroke="#5A4A42" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- Child figure (Blood-related / Ruột thịt - born from) -->
+    <g transform="translate(15, 20)">
+      <!-- Child body -->
+      <path d="M 60 135 C 60 120, 70 112, 85 112 C 100 112, 110 120, 110 135 L 116 150 C 116 154, 112 158, 108 158 L 62 158 C 58 158, 54 154, 54 150 Z" fill="#D97757"/>
+      
+      <!-- Child neck & head -->
+      <rect x="79" y="92" width="12" height="18" rx="6" fill="#FAD4B2"/>
+      <circle cx="85" cy="81" r="14" fill="#FAD4B2"/>
+      
+      <!-- Child hair -->
+      <path d="M 73 80 C 73 70, 78 66, 85 66 C 92 66, 97 70, 97 80 C 97 83, 95 84, 95 84 L 75 84 C 75 84, 73 83, 73 80 Z" fill="#3D291D"/>
+
+      <!-- Child face expression -->
+      <circle cx="89" cy="80" r="1.2" fill="#6B4F3A"/>
+      <path d="M 84 86 C 85 88, 87 88, 88 86" stroke="#6B4F3A" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- Intertwining protective & nurturing arms (Symbolizing direct biological lineage and inseparable bond) -->
+    <!-- Parent's arm holding closely -->
+    <path d="M 80 125 C 60 125, 52 140, 58 155 C 62 165, 75 168, 85 160" fill="none" stroke="#3E506B" stroke-width="12" stroke-linecap="round"/>
+    
+    <!-- Unified core link / DNA-inspired warm golden accent badge (representing "Qīnshēng" - biological root/bloodline) -->
+    <g transform="translate(100, 125)">
+      <circle cx="0" cy="0" r="16" fill="#1A1D24" stroke="#F4A261" stroke-width="3"/>
+      <!-- Simplified root/bond node icon -->
+      <path d="M -6 -3 C -6 -7, 6 -7, 6 -3 C 6 2, 0 6, 0 10 C 0 6, -6 2, -6 -3 Z" fill="#F4A261"/>
+    </g>
+  </g>
+</svg>

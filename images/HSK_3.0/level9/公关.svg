@@ -1,0 +1,75 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative blueprint grid for corporate strategy context -->
+  <g opacity="0.15" stroke="#4A5568" stroke-width="0.5" stroke-dasharray="3,3">
+    <line x1="30" y1="40" x2="210" y2="40"/>
+    <line x1="30" y1="80" x2="210" y2="80"/>
+    <line x1="30" y1="120" x2="210" y2="120"/>
+    <line x1="30" y1="160" x2="210" y2="160"/>
+    <line x1="30" y1="200" x2="210" y2="200"/>
+    <line x1="60" y1="20" x2="60" y2="220"/>
+    <line x1="120" y1="20" x2="120" y2="220"/>
+    <line x1="180" y1="20" x2="180" y2="220"/>
+  </g>
+
+  <!-- Central Physical Object: Professional Public Relations Podiums & Media Microphones (PR Event/Press Conference Setting) -->
+  
+  <!-- Wooden/Modern Press Conference Desk -->
+  <g>
+    <!-- Desk Shadow -->
+    <path d="M50 170 L190 170 L205 195 L35 195 Z" fill="#0D0F13" opacity="0.6"/>
+    <!-- Main Desk Body -->
+    <path d="M50 155 L190 155 L198 178 L42 178 Z" fill="#2D3748"/>
+    <!-- Desk Front Panel -->
+    <path d="M42 178 L198 178 L190 190 L50 190 Z" fill="#1A202C"/>
+    <!-- Metal Accent Strip on Desk -->
+    <path d="M46 173 L194 173 L195 176 L45 176 Z" fill="#F6AD55" opacity="0.8"/>
+  </g>
+
+  <!-- Central Media Microphones (PR symbols) -->
+  <g>
+    <!-- Left Microphone (Media) -->
+    <rect x="85" y="125" width="4" height="30" fill="#CBD5E0"/>
+    <path d="M80 112 Q73 122 80 132 L94 132 Q101 122 94 112 Z" fill="#4A5568"/>
+    <path d="M81 114 Q76 122 81 130 L93 130 Q98 122 93 114 Z" fill="#718096"/>
+    <!-- Right Microphone (Media) -->
+    <rect x="151" y="125" width="4" height="30" fill="#CBD5E0"/>
+    <path d="M146 112 Q139 122 146 132 L160 132 Q167 122 160 112 Z" fill="#4A5568"/>
+    <path d="M147 114 Q142 122 147 130 L159 130 Q164 122 159 114 Z" fill="#718096"/>
+    <!-- Center Main Podium Mic -->
+    <rect x="118" y="115" width="4" height="40" fill="#E2E8F0"/>
+    <ellipse cx="120" cy="105" rx="8" ry="11" fill="#F6AD55"/>
+    <ellipse cx="120" cy="105" rx="5" ry="8" fill="#DD6B20"/>
+  </g>
+
+  <!-- Press Flash / Reputation Management Shield Symbol hovering above -->
+  <g transform="translate(0, -5)">
+    <!-- Shield Background Outline representing Corporate Reputation / Crisis Defense -->
+    <path d="M120 45 L155 58 L155 95 C155 115 138 130 120 138 C102 130 85 115 85 95 L85 58 Z" fill="#2B6CB0" fill-opacity="0.2" stroke="#63B3ED" stroke-width="2"/>
+    
+    <!-- Inner Professional Handshake / Communication Icon (Public Relations core) -->
+    <!-- Left Cuffs & Arm -->
+    <path d="M98 88 L112 88 L112 98 L98 98 Z" fill="#E2E8F0"/>
+    <path d="M95 90 L105 85" stroke="#3182CE" stroke-width="4" stroke-linecap="round"/>
+    <!-- Right Cuffs & Arm -->
+    <path d="M142 88 L128 88 L128 98 L142 98 Z" fill="#E2E8F0"/>
+    <path d="M145 90 L135 85" stroke="#3182CE" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Interlocked Hands (Clear, respectful human interaction) -->
+    <circle cx="120" cy="88" r="9" fill="#F6AD55"/>
+    <path d="M113 90 C116 93 124 93 127 90" stroke="#DD6B20" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Camera Flash Effects (Signifying media attention & press conference context) -->
+  <g>
+    <!-- Left Flash Burst -->
+    <path d="M55 75 L63 70 L58 78 L68 76 Z" fill="#F6AD55"/>
+    <circle cx="50" cy="80" r="1.5" fill="#FAF089"/>
+    
+    <!-- Right Flash Burst -->
+    <path d="M185 75 L177 70 L182 78 L172 76 Z" fill="#F6AD55"/>
+    <circle cx="190" cy="80" r="1.5" fill="#FAF089"/>
+  </g>
+</svg>

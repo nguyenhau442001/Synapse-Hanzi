@@ -1,0 +1,54 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background glow/grid effect for tech context -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.5"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Main Device Chassis (Modern Tablet/Terminal - representing OS) -->
+    <rect x="52" y="45" width="136" height="96" rx="12" fill="#2D3748" stroke="#4A5568" stroke-width="2"/>
+    <rect x="62" y="55" width="116" height="76" rx="6" fill="#1A202C"/>
+    
+    <!-- Screen Interface Graphics (Clean abstract system UI) -->
+    <circle cx="78" cy="71" r="5" fill="#E53E3E"/>
+    <circle cx="94" cy="71" r="5" fill="#D69E2E"/>
+    <circle cx="110" cy="71" r="5" fill="#38A169"/>
+    <line x1="126" y1="71" x2="162" y2="71" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- System Core Node -->
+    <circle cx="120" cy="93" r="14" fill="#3182CE"/>
+    <circle cx="120" cy="93" r="6" fill="#E2E8F0"/>
+
+    <!-- STAND / BASE -->
+    <path d="M96 141H144L152 153H88L96 141Z" fill="#4A5568"/>
+    <rect x="80" y="153" width="80" height="6" rx="3" fill="#718096"/>
+
+    <!-- COMPATIBILITY CONNECTIONS (Docked physical objects representing software/hardware) -->
+    <!-- Left Module (Legacy Software Floppy/Drive representation) -->
+    <g transform="translate(32, 115)">
+      <rect x="0" y="0" width="36" height="40" rx="6" fill="#ED8936" stroke="#C05621" stroke-width="2"/>
+      <rect x="6" y="4" width="24" height="12" rx="2" fill="#1A202C"/>
+      <line x1="8" y1="26" x2="28" y2="26" stroke="#C05621" stroke-width="3" stroke-linecap="round"/>
+      <line x1="8" y1="32" x2="22" y2="32" stroke="#C05621" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Right Module (Hardware Plug/Peripheral representation) -->
+    <g transform="translate(172, 115)">
+      <rect x="0" y="0" width="36" height="40" rx="6" fill="#4FD1C5" stroke="#319795" stroke-width="2"/>
+      <circle cx="18" cy="20" r="10" fill="#1A202C" stroke="#319795" stroke-width="2"/>
+      <circle cx="18" cy="20" r="4" fill="#4FD1C5"/>
+    </g>
+
+    <!-- INTERLOCKING CONNECTION CABLES / DATA FLOW -->
+    <!-- Left connection line -->
+    <path d="M50 135 C 50 165, 80 175, 105 175" fill="none" stroke="#ED8936" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 4"/>
+    
+    <!-- Right connection line -->
+    <path d="M190 135 C 190 165, 160 175, 135 175" fill="none" stroke="#4FD1C5" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 4"/>
+
+    <!-- Center integration / harmony indicator -->
+    <circle cx="120" cy="175" r="16" fill="#ECC94B" stroke="#D69E2E" stroke-width="2"/>
+    <path d="M112 175 L117 180 L128 168" fill="none" stroke="#1A202C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

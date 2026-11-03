@@ -1,0 +1,68 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle glow/ambient background light representing completeness -->
+  <circle cx="120" cy="120" r="75" fill="#252D3D" opacity="0.6"/>
+
+  <!-- Modern Apartment / Living Room Cutaway Icon representing "一应俱全" (Fully Equipped) -->
+  <g transform="translate(45, 45)">
+    <!-- Outer Frame / Apartment Outline -->
+    <rect x="0" y="0" width="150" height="150" rx="16" fill="#1E2533" stroke="#3A465F" stroke-width="3"/>
+    
+    <!-- Floor and Walls Interior -->
+    <rect x="12" y="12" width="126" height="126" rx="10" fill="#151A23"/>
+
+    <!-- Bookshelf / Storage (Left) -->
+    <rect x="22" y="30" width="22" height="70" rx="3" fill="#2A3447"/>
+    <!-- Books/Items on Shelf -->
+    <rect x="26" y="36" width="6" height="18" rx="1" fill="#4B5E82"/>
+    <rect x="34" y="38" width="6" height="16" rx="1" fill="#D4AF37"/>
+    <rect x="26" y="60" width="14" height="16" rx="1" fill="#E06D53"/>
+    <rect x="26" y="82" width="14" height="14" rx="1" fill="#5299D3"/>
+
+    <!-- Modern Flat Screen TV on Wall (Top Center) -->
+    <rect x="58" y="28" width="50" height="32" rx="4" fill="#0D1117" stroke="#3A465F" stroke-width="2"/>
+    <rect x="63" y="33" width="40" height="22" rx="2" fill="#5299D3" opacity="0.3"/>
+    <!-- TV Stand -->
+    <path d="M 73 60 L 77 66 H 93 L 97 60 Z" fill="#4B5E82"/>
+
+    <!-- Comfortable Sofa (Bottom Right/Center) -->
+    <!-- Sofa Base -->
+    <rect x="75" y="80" width="52" height="30" rx="6" fill="#D4AF37"/>
+    <!-- Sofa Backrest -->
+    <rect x="75" y="68" width="52" height="18" rx="5" fill="#E6C55C"/>
+    <!-- Sofa Cushions -->
+    <rect x="78" y="82" width="22" height="12" rx="3" fill="#B38F27"/>
+    <rect x="102" y="82" width="22" height="12" rx="3" fill="#B38F27"/>
+    <!-- Sofa Armrests -->
+    <rect x="70" y="74" width="8" height="38" rx="4" fill="#E6C55C"/>
+    <rect x="123" y="74" width="8" height="38" rx="4" fill="#E6C55C"/>
+
+    <!-- Floor Lamp (Right Side) -->
+    <line x1="134" y1="114" x2="134" y2="40" stroke="#4B5E82" stroke-width="3" stroke-linecap="round"/>
+    <!-- Lamp Shade -->
+    <path d="M 124 40 L 144 40 L 149 52 L 119 52 Z" fill="#E06D53"/>
+    <!-- Lamp Base -->
+    <ellipse cx="134" cy="116" rx="8" ry="3" fill="#4B5E82"/>
+
+    <!-- Potted Plant (Left Bottom) representing home warmth -->
+    <path d="M 45 106 L 53 118 H 37 Z" fill="#E06D53"/>
+    <ellipse cx="45" cy="106" rx="8" ry="3" fill="#3A465F"/>
+    <!-- Plant Leaves -->
+    <path d="M 45 103 C 45 95 38 90 38 90 C 38 90 44 98 45 103 Z" fill="#50A868"/>
+    <path d="M 45 103 C 45 92 52 87 52 87 C 52 87 47 97 45 103 Z" fill="#62C47B"/>
+    <path d="M 45 103 C 48 95 55 94 55 94 C 55 94 48 100 45 103 Z" fill="#50A868"/>
+
+    <!-- Coffee Table -->
+    <rect x="78" y="112" width="28" height="14" rx="3" fill="#2A3447" stroke="#4B5E82" stroke-width="1.5"/>
+    <line x1="82" y1="126" x2="80" y2="132" stroke="#4B5E82" stroke-width="2"/>
+    <line x1="102" y1="126" x2="104" y2="132" stroke="#4B5E82" stroke-width="2"/>
+  </g>
+
+  <!-- Accent Focus Indicator: Clean checkmark badge top-right of object to signify "complete / fully equipped" -->
+  <g transform="translate(162, 48)">
+    <circle cx="15" cy="15" r="15" fill="#E06D53"/>
+    <path d="M 9 15 L 13 19 L 21 10" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

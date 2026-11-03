@@ -1,0 +1,30 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 110)">
+    <!-- Heavy storm cloud pressing down (representing 忧愁 / anxiety, sorrow) -->
+    <path d="M-55,-10 C-55,-35 -30,-50 -5,-40 C10,-55 40,-45 50,-25 C65,-22 75,-5 70,12 C65,30 45,35 30,35 L-45,35 C-65,35 -75,15 -65,0 C-70,-8 -63,-12 -55,-10 Z" fill="#2E3648"/>
+    
+    <!-- Heavy downward rain lines / emotional weight -->
+    <line x1="-30" y1="45" x2="-35" y2="65" stroke="#4A5568" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="45" x2="0" y2="70" stroke="#4A5568" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="30" y1="45" x2="35" y2="65" stroke="#4A5568" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Golden dissolving light particles (representing 烟消云散 - clearing away into mist/light) -->
+    <circle cx="-65" cy="-25" r="3.5" fill="#F6AD55" opacity="0.9"/>
+    <circle cx="-50" cy="-55" r="2.5" fill="#F6AD55" opacity="0.8"/>
+    <circle cx="20" cy="-60" r="4" fill="#F6AD55" opacity="0.9"/>
+    <circle cx="55" cy="-45" r="3" fill="#F6AD55" opacity="0.85"/>
+    <circle cx="75" cy="-20" r="2" fill="#F6AD55" opacity="0.9"/>
+
+    <!-- Silhouette of a person sitting with head bowed in contemplation/sorrow -->
+    <!-- Head -->
+    <circle cx="0" cy="55" r="10" fill="#E2E8F0"/>
+    
+    <!-- Body/Shoulders slumped -->
+    <path d="M-16,90 C-16,75 -12,68 0,68 C12,68 16,75 16,90 L22,95 C14,97 -14,97 -22,95 Z" fill="#4A5568"/>
+    
+    <!-- Glowing warm accent light emerging from below (Hope / Relief) -->
+    <path d="M-40,80 Q0,40 40,80" fill="none" stroke="#F6AD55" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.5"/>
+  </g>
+</svg>

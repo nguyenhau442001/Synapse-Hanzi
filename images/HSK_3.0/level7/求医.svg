@@ -1,0 +1,65 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle Ambient Glow -->
+  <circle cx="120" cy="120" r="90" fill="#252D3D" opacity="0.4"/>
+
+  <!-- Medical Cross / Clinic Symbolized in Background (Subtle) -->
+  <path d="M120 70V170 M70 120H170" stroke="#2D3748" stroke-width="24" stroke-linecap="round"/>
+  <path d="M120 75V165 M75 120H165" stroke="#1A1D24" stroke-width="16" stroke-linecap="round"/>
+
+  <!-- Motion Lines indicating journey / seeking ("四处奔波") -->
+  <path d="M50 160C70 140 85 140 100 155" fill="none" stroke="#3A475C" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4"/>
+  <path d="M140 155C155 140 170 140 190 160" fill="none" stroke="#3A475C" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4"/>
+
+  <!-- Medical Desk / Counter -->
+  <path d="M60 175H180V190C180 195.5 175.5 200 170 200H70C64.5 200 60 195.5 60 190V175Z" fill="#323F55"/>
+  <rect x="75" y="183" width="90" height="4" rx="2" fill="#4A5B78"/>
+
+  <!-- Doctor Character (Right Side) -->
+  <!-- Doctor Body / Lab Coat -->
+  <path d="M160 150L175 185H145L140 150H160Z" fill="#E2E8F0"/>
+  <!-- Doctor Head -->
+  <circle cx="155" cy="125" r="14" fill="#F6AD55"/>
+  <!-- Doctor Hair -->
+  <path d="M143 122C143 115 148 111 155 111C162 111 167 115 167 122V127H143V122Z" fill="#2D3748"/>
+  <!-- Medical Head Mirror / Band -->
+  <path d="M143 123H167" stroke="#CBD5E0" stroke-width="2"/>
+  <circle cx="161" cy="120" r="4" fill="#63B3ED"/>
+
+  <!-- Patient Character (Left Side) - Dynamic Action: Leaning forward, seeking help -->
+  <!-- Patient Body -->
+  <path d="M90 145L105 185H75L70 150C75 147 82 145 90 145Z" fill="#4299E1"/>
+  <!-- Patient Head (Tilted forward in earnest inquiry) -->
+  <circle cx="95" cy="122" r="13" fill="#F6AD55"/>
+  <!-- Patient Hair -->
+  <path d="M85 118C85 111 90 108 97 108C104 108 106 113 106 120V124H85V118Z" fill="#4A5568"/>
+
+  <!-- Interaction / Consultation Element: Medical Folder / Prescription Chart -->
+  <!-- Doctor's hand holding chart, pointing to solution -->
+  <path d="M140 155L120 150" stroke="#F6AD55" stroke-width="5" stroke-linecap="round"/>
+  <!-- Patient's hand reaching out earnestly -->
+  <path d="M95 155L115 155" stroke="#F6AD55" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Clipboard / Medical Record floating/held between them -->
+  <rect x="110" y="130" width="20" height="26" rx="3" fill="#EDF2F7"/>
+  <path d="M115 136H125" stroke="#CBD5E0" stroke-width="2" stroke-linecap="round"/>
+  <path d="M115 142H122" stroke="#CBD5E0" stroke-width="2" stroke-linecap="round"/>
+  <path d="M115 148H120" stroke="#CBD5E0" stroke-width="2" stroke-linecap="round"/>
+  <rect x="116" y="127" width="8" height="4" rx="1" fill="#E53E3E"/>
+
+  <!-- Focal Accent: Glowing Medical Cross Symbol above indicating "Seeking Care/Cure" -->
+  <g transform="translate(120, 75)">
+    <!-- Outer Glow -->
+    <circle cx="0" cy="0" r="18" fill="#ED8936" opacity="0.2"/>
+    <circle cx="0" cy="0" r="12" fill="#ED8936" opacity="0.4"/>
+    <!-- Solid Badge -->
+    <circle cx="0" cy="0" r="9" fill="#ED8936"/>
+    <!-- White Plus Icon -->
+    <path d="M-4 0H4 M0 -4V4" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="120" cy="200" rx="70" ry="4" fill="#0D0F12" opacity="0.6"/>
+</svg>

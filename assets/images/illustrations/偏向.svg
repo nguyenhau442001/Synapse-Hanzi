@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements -->
+  <line x1="40" y1="200" x2="200" y2="200" stroke="#2A2F3D" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Scales of Justice (Object representing 偏向 / bias / leaning scale) -->
+  <g transform="translate(120, 115)">
+    <!-- Base stand -->
+    <path d="M-16 75 L16 75 L12 65 L-12 65 Z" fill="#6C7A9C"/>
+    <rect x="-4" y="10" width="8" height="55" fill="#6C7A9C" rx="2"/>
+    
+    <!-- Top finial / ring -->
+    <circle cx="0" cy="5" r="7" fill="none" stroke="#FFB703" stroke-width="4"/>
+    <rect x="-1" y="-5" width="2" height="12" fill="#FFB703"/>
+
+    <!-- Leaning Beam (Indicating bias / 偏向) -->
+    <g transform="rotate(-15)">
+      <!-- Main horizontal beam -->
+      <rect x="-70" y="-3" width="140" height="6" fill="#FFB703" rx="3"/>
+      <circle cx="0" cy="0" r="4" fill="#1A1D24"/>
+
+      <!-- Left Chain & Pan (Higher up) -->
+      <line x1="-60" y1="0" x2="-60" y2="45" stroke="#6C7A9C" stroke-width="2"/>
+      <line x1="-60" y1="0" x2="-45" y2="45" stroke="#6C7A9C" stroke-width="2"/>
+      <path d="M-72 45 C-72 53 -48 53 -48 45 Z" fill="#3A445D"/>
+      <ellipse cx="-60" cy="45" rx="14" ry="4" fill="#6C7A9C"/>
+
+      <!-- Right Chain & Pan (Lower down, heavily weighted) -->
+      <line x1="60" y1="0" x2="60" y2="75" stroke="#6C7A9C" stroke-width="2"/>
+      <line x1="60" y1="0" x2="45" y2="75" stroke="#6C7A9C" stroke-width="2"/>
+      <path d="M48 75 C48 83 72 83 72 75 Z" fill="#3A445D"/>
+      <ellipse cx="60" cy="75" rx="14" ry="4" fill="#6C7A9C"/>
+
+      <!-- Heavy stack on the right pan to visually show the physical tilt -->
+      <rect x="50" y="55" width="20" height="20" fill="#FF6B6B" rx="3"/>
+      <rect x="53" y="40" width="14" height="15" fill="#FFA500" rx="2"/>
+    </g>
+  </g>
+</svg>

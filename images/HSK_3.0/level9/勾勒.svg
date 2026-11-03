@@ -1,0 +1,46 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for 勾勒 (phác họa, phác thảo đường nét): 
+       An artist's hand holding a brush, tracing a clean, elegant golden outline of Jiangnan water town scenery (curved roofs, a bridge, misty water wave lines) against a dark slate canvas. -->
+  
+  <g transform="translate(0, 0)">
+    <!-- Background subtle design elements (Jiangnan silhouette outline in dark slate-blue) -->
+    <path d="M45,155 Q60,135 85,145 T130,140 Q160,130 195,150" fill="none" stroke="#2A303C" stroke-width="2" stroke-linecap="round"/>
+    <!-- Distant bridge & rooftop faint outlines -->
+    <path d="M70,140 Q90,120 110,140" fill="none" stroke="#2A303C" stroke-width="1.5"/>
+    <path d="M135,135 L145,120 L155,135" fill="none" stroke="#2A303C" stroke-width="1.5"/>
+
+    <!-- The primary focal point: The vibrant, fluid golden stroke (勾勒) revealing the scenic outline -->
+    <path d="M40,160 Q70,130 95,145 T140,138 Q175,125 200,155" fill="none" stroke="#FFB020" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M95,145 Q110,165 130,150" fill="none" stroke="#FFB020" stroke-width="3" stroke-linecap="round"/>
+    <path d="M135,138 L147,122 L159,138" fill="none" stroke="#FFB020" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Glowing magical accent nodes along the trace line to show precision and creation -->
+    <circle cx="95" cy="145" r="3" fill="#FFE17D"/>
+    <circle cx="147" cy="122" r="3" fill="#FFE17D"/>
+
+    <!-- Artist's hand and brush dynamically sketching the stroke -->
+    <g transform="translate(10, -5)">
+      <!-- Hand holding brush (modern flat style with professional contrast) -->
+      <!-- Fingers -->
+      <path d="M 125,75 C 120,80 115,90 120,98 C 123,103 130,105 135,102 C 140,99 145,90 143,85 Z" fill="#E0A96D"/>
+      <path d="M 130,70 C 125,73 122,80 126,85 C 130,90 138,88 140,82 C 142,76 135,70 130,70 Z" fill="#F1C27D"/>
+      
+      <!-- Brush handle (sleek dark and gold accent) -->
+      <path d="M 140,78 L 195,35 C 197,33 200,35 198,38 L 143,83 Z" fill="#3E4C59"/>
+      <path d="M 175,48 L 192,36" stroke="#FFB020" stroke-width="4" stroke-linecap="round"/>
+
+      <!-- Ferrule and brush tip -->
+      <path d="M 140,78 L 126,88 L 124,85 L 138,75 Z" fill="#AAB8C2"/>
+      <!-- Soft ink/golden tip -->
+      <path d="M 126,88 Q 120,93 115,97 Q 121,94 124,85 Z" fill="#FFB020"/>
+    </g>
+
+    <!-- Floating ink droplets / artistic dust particles -->
+    <circle cx="108" cy="115" r="1.5" fill="#FFB020" opacity="0.8"/>
+    <circle cx="120" cy="108" r="2" fill="#FFE17D" opacity="0.9"/>
+    <circle cx="85" cy="125" r="1" fill="#FFB020" opacity="0.6"/>
+  </g>
+</svg>

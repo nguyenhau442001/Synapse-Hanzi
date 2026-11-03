@@ -1,0 +1,70 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Subtle Atmosphere -->
+  <circle cx="120" cy="120" r="90" fill="#222733" opacity="0.5"/>
+
+  <!-- Central Character Object: Dedicated Postman Symbolizing "敬业" (Professional Dedication) -->
+  <g transform="translate(0, 5)">
+    <!-- Postman's Satchel / Bag -->
+    <path d="M 85 135 L 155 135 L 165 175 L 75 175 Z" fill="#3B4252" />
+    <path d="M 120 135 L 120 155" stroke="#2E3440" stroke-width="3" stroke-linecap="round" />
+    <path d="M 95 135 C 95 125, 145 125, 145 135" fill="none" stroke="#4C566A" stroke-width="4" />
+    
+    <!-- Uniform Torso -->
+    <path d="M 85 110 L 155 110 L 165 155 C 165 160, 155 165, 120 165 C 85 165, 75 160, 75 155 Z" fill="#2E4057" />
+    
+    <!-- Uniform Collar and Tie/Details -->
+    <polygon points="120,110 105,125 135,125" fill="#E5C07B" />
+    <line x1="120" y1="125" x2="120" y2="150" stroke="#1A1D24" stroke-width="2" />
+
+    <!-- Holding Letters/Mail (Symbol of Duty) -->
+    <!-- Envelope 1 (Back) -->
+    <rect x="95" y="95" width="50" height="35" rx="3" fill="#D8DEE9" transform="rotate(-15 120 110)" />
+    <path d="M 95 95 L 120 112 L 145 95" fill="none" stroke="#99A2B2" stroke-width="2" />
+    
+    <!-- Envelope 2 (Front - Orange Accent for Focus) -->
+    <rect x="90" y="100" width="60" height="40" rx="4" fill="#ECEFF4" />
+    <path d="M 90 100 L 120 120 L 150 100" fill="none" stroke="#D08770" stroke-width="3" />
+    <!-- Small Postage Stamp Indicator -->
+    <rect x="132" y="106" width="12" height="10" rx="1" fill="#D08770" opacity="0.8"/>
+
+    <!-- Head and Cap -->
+    <!-- Neck -->
+    <rect x="110" y="95" width="20" height="20" fill="#D8CBC4" />
+
+    <!-- Face/Head -->
+    <circle cx="120" cy="85" r="22" fill="#E5D3C8" />
+
+    <!-- Friendly Expression / Focus Eyes -->
+    <circle cx="112" cy="83" r="2.5" fill="#2E3440" />
+    <circle cx="128" cy="83" r="2.5" fill="#2E3440" />
+    <!-- Gentle determined smile -->
+    <path d="M 115 92 Q 120 96 125 92" fill="none" stroke="#2E3440" stroke-width="2" stroke-linecap="round" />
+
+    <!-- Postal Worker Cap (Dark Blue with Golden Emblem) -->
+    <path d="M 96 75 C 96 65, 144 65, 144 75 Z" fill="#2E4057" />
+    <!-- Cap Visor -->
+    <path d="M 98 75 Q 120 82 142 75 L 146 78 Q 120 87 94 78 Z" fill="#1F2937" />
+    <!-- Golden Cap Badge -->
+    <circle cx="120" cy="73" r="4" fill="#E5C07B" />
+
+    <!-- Hands holding the mail firmly -->
+    <circle cx="92" cy="118" r="7" fill="#E5D3C8" />
+    <circle cx="148" cy="118" r="7" fill="#E5D3C8" />
+  </g>
+
+  <!-- Weather / Endurance Elements (Subtle snowflakes/rain drops representing "无论严寒冰雪") -->
+  <g fill="#88C0D0" opacity="0.6">
+    <circle cx="50" cy="60" r="2" />
+    <circle cx="70" cy="40" r="1.5" />
+    <circle cx="190" cy="55" r="2" />
+    <circle cx="170" cy="35" r="1.5" />
+    <circle cx="45" cy="110" r="1.5" />
+    <circle cx="195" cy="100" r="2" />
+  </g>
+
+  <!-- Golden Focus Glow Accent (Highlighting dedication and core concept) -->
+  <circle cx="120" cy="120" r="100" fill="none" stroke="#E5C07B" stroke-width="1.5" stroke-dasharray="8 12" opacity="0.3"/>
+</svg>

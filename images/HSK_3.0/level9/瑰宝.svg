@@ -1,0 +1,47 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <g transform="translate(0, 0)">
+    <!-- Ambient Glow / Aura behind the treasure -->
+    <circle cx="120" cy="115" r="55" fill="#F59E0B" opacity="0.12"/>
+    <circle cx="120" cy="115" r="40" fill="#F59E0B" opacity="0.18"/>
+
+    <!-- Decorative Traditional Cloud / Foundation Base -->
+    <path d="M 85,155 C 75,155 70,147 75,140 C 78,135 85,135 90,140 C 95,132 108,132 112,142 C 118,138 126,140 128,146 C 132,142 142,144 142,150 C 146,150 148,155 142,158 L 98,158 Z" fill="#2E384D" opacity="0.6"/>
+    <path d="M 80,165 L 160,165 C 166,165 170,169 166,174 L 158,182 C 155,185 150,186 145,186 L 95,186 C 90,186 85,185 82,182 L 74,174 C 70,169 74,165 80,165 Z" fill="#252D3D"/>
+
+    <!-- Jade/Treasure Vessel (The "Bao" - Container of Essence) -->
+    <!-- Base -->
+    <path d="M 102,150 L 138,150 L 142,165 L 98,165 Z" fill="#10B981" opacity="0.8"/>
+    <!-- Stem -->
+    <rect x="112" y="138" width="16" height="15" fill="#059669" rx="2"/>
+    <!-- Bowl / Body -->
+    <path d="M 84,95 C 84,125 98,138 120,138 C 142,138 156,125 156,95 Z" fill="#34D399"/>
+    <!-- Inner bowl depth effect -->
+    <ellipse cx="120" cy="95" rx="36" ry="10" fill="#059669"/>
+
+    <!-- The "Gui" (Precious Gem / Glowing Essence rising from the vessel) -->
+    <!-- Central Brilliant Jade/Gem -->
+    <path d="M 120,62 L 138,82 L 120,112 L 102,82 Z" fill="#6EE7B7"/>
+    <!-- Gem Facets for 3D/Modern Flat look -->
+    <path d="M 120,62 L 138,82 L 120,112 Z" fill="#34D399"/>
+    <path d="M 120,62 L 102,82 L 110,88 Z" fill="#A7F3D0"/>
+    <path d="M 138,82 L 120,112 L 130,88 Z" fill="#10B981"/>
+
+    <!-- Floating Sparkles / Essence (representing "Jinghua" - Quintessence) -->
+    <!-- Top Sparkle -->
+    <path d="M 120,38 C 120,44 122,46 128,46 C 122,46 120,48 120,54 C 120,48 118,46 112,46 C 118,46 120,44 120,38 Z" fill="#FBBF24"/>
+    
+    <!-- Left Small Sparkle -->
+    <path d="M 90,75 C 90,79 91,80 95,80 C 91,80 90,81 90,85 C 90,81 89,80 85,80 C 89,80 90,79 90,75 Z" fill="#FBBF24"/>
+
+    <!-- Right Small Sparkle -->
+    <path d="M 150,75 C 150,79 151,80 155,80 C 151,80 150,81 150,85 C 150,81 149,80 145,80 C 149,80 150,79 150,75 Z" fill="#FBBF24"/>
+
+    <!-- Tiny decorative light dots -->
+    <circle cx="100" cy="110" r="2" fill="#FDE68A" opacity="0.8"/>
+    <circle cx="142" cy="115" r="1.5" fill="#FDE68A" opacity="0.8"/>
+    <circle cx="132" cy="55" r="1.5" fill="#FDE68A" opacity="0.9"/>
+  </g>
+</svg>

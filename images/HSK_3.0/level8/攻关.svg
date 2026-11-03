@@ -1,0 +1,61 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 115)">
+    <!-- Background glow / tech core grid representation -->
+    <circle cx="0" cy="0" r="75" fill="#252A34" opacity="0.6"/>
+    <circle cx="0" cy="0" r="55" fill="#1E232E" stroke="#303846" stroke-width="2" stroke-dasharray="6 4"/>
+
+    <!-- Central physical object: A high-tech Core Microchip / Processor representing the "Hard Core Problem" (核心芯片) -->
+    <!-- Chip substrate -->
+    <rect x="-36" y="-36" width="72" height="72" rx="10" fill="#2D3748" stroke="#4A5568" stroke-width="2"/>
+    
+    <!-- Chip pins -->
+    <!-- Top pins -->
+    <rect x="-24" y="-44" width="6" height="8" fill="#F6AD55"/>
+    <rect x="-9" y="-44" width="6" height="8" fill="#F6AD55"/>
+    <rect x="6" y="-44" width="6" height="8" fill="#F6AD55"/>
+    <!-- Bottom pins -->
+    <rect x="-24" y="36" width="6" height="8" fill="#F6AD55"/>
+    <rect x="-9" y="36" width="6" height="8" fill="#F6AD55"/>
+    <rect x="6" y="36" width="6" height="8" fill="#F6AD55"/>
+    <!-- Left pins -->
+    <rect x="-44" y="-24" width="8" height="6" fill="#F6AD55"/>
+    <rect x="-44" y="-9" width="8" height="6" fill="#F6AD55"/>
+    <rect x="-44" y="6" width="8" height="6" fill="#F6AD55"/>
+    <!-- Right pins -->
+    <rect x="36" y="-24" width="8" height="6" fill="#F6AD55"/>
+    <rect x="36" y="-9" width="8" height="6" fill="#F6AD55"/>
+    <rect x="36" y="6" width="8" height="6" fill="#F6AD55"/>
+
+    <!-- Inner die -->
+    <rect x="-22" y="-22" width="44" height="44" rx="6" fill="#1A202C" stroke="#ED8936" stroke-width="2"/>
+    <!-- Circuit traces inside chip -->
+    <path d="M-12 -12 L0 -12 L12 0 L0 12 L-12 12" fill="none" stroke="#ED8936" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="0" cy="0" r="5" fill="#ED8936"/>
+
+    <!-- Tool of breakthrough / overcoming: Sleek, high-precision futuristic soldering iron / laser probe (representing "攻关" - piercing through/breaking down barriers) -->
+    <!-- Laser beam / cutting beam piercing into the core problem -->
+    <path d="M-85 -85 L-30 -30" stroke="#E53E3E" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="-30" cy="-30" r="6" fill="#FEB2B2"/>
+    <circle cx="-30" cy="-30" r="3" fill="#E53E3E"/>
+
+    <!-- Tool body -->
+    <path d="M-115 -115 L-80 -80" stroke="#718096" stroke-width="8" stroke-linecap="round"/>
+    <!-- Tool handle -->
+    <path d="M-135 -135 L-110 -110" stroke="#ED8936" stroke-width="12" stroke-linecap="round"/>
+    <path d="M-142 -142 L-128 -128" stroke="#DD6B20" stroke-width="14" stroke-linecap="round"/>
+
+    <!-- Sparks / Breakthrough energy radiating from the point of impact -->
+    <path d="M-38 -20 L-50 -15" stroke="#F6AD55" stroke-width="2" stroke-linecap="round"/>
+    <path d="M-20 -38 L-15 -50" stroke="#F6AD55" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="-45" cy="-45" r="2" fill="#F6AD55"/>
+    <circle cx="-55" cy="-25" r="1.5" fill="#F6AD55"/>
+    <circle cx="-25" cy="-55" r="1.5" fill="#F6AD55"/>
+  </g>
+
+  <!-- Semantic Accent Label Framing (Subtle, clean frame top) -->
+  <line x1="40" y1="20" x2="200" y2="20" stroke="#2D3748" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="120" cy="20" r="3" fill="#ED8936"/>
+</svg>

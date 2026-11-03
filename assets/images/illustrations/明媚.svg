@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Sun representing "bright" (明) -->
+  <circle cx="180" cy="60" r="35" fill="#FFD700" opacity="0.9"/>
+  <path d="M180 15 L180 5 M180 105 L180 115 M225 60 L235 60 M125 60 L115 60 M212 28 L219 21 M141 92 L134 99 M212 92 L219 99 M141 28 L134 21" stroke="#FFD700" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Landscape representing "beautiful/charming" (媚) -->
+  <!-- Rolling hills -->
+  <path d="M0 240 C 40 180, 100 180, 140 240 Z" fill="#2E7D32"/>
+  <path d="M100 240 C 140 170, 200 170, 240 240 Z" fill="#388E3C"/>
+  
+  <!-- Flowers to emphasize the "charming/bright" quality -->
+  <circle cx="60" cy="200" r="8" fill="#FF8A65"/>
+  <circle cx="80" cy="215" r="8" fill="#FF8A65"/>
+  <circle cx="160" cy="210" r="8" fill="#FF8A65"/>
+  <circle cx="190" cy="225" r="8" fill="#FF8A65"/>
+  
+  <!-- Visual contrast: Large radiant sun vs soft, lush ground -->
+  <path d="M180 60 L180 160" stroke="#FFD700" stroke-width="2" stroke-dasharray="6 6" opacity="0.4"/>
+  
+  <!-- Decorative light rays hitting the ground -->
+  <path d="M180 60 L140 180" stroke="#FFD700" stroke-width="2" opacity="0.3"/>
+  <path d="M180 60 L220 180" stroke="#FFD700" stroke-width="2" opacity="0.3"/>
+</svg>

@@ -1,0 +1,43 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle floor shadow / base glow -->
+  <ellipse cx="120" cy="205" rx="55" ry="8" fill="#111318"/>
+
+  <!-- Character / Person Depicting Shame (可耻 - Despicable/Shameful persona context) -->
+  <!-- We focus on a disgraced character archetype (e.g., hiding face in shame, looking down, dishonored) -->
+  
+  <!-- Torso & Shoulders (Slumped posture of shame) -->
+  <path d="M 85 195 L 80 155 Q 120 145 160 155 L 155 195 Z" fill="#2D323F"/>
+  
+  <!-- Neck -->
+  <rect x="110" y="125" width="20" height="30" rx="6" fill="#D69E72"/>
+
+  <!-- Head (bowed downwards and turned slightly away) -->
+  <circle cx="120" cy="110" r="28" fill="#E2B083"/>
+
+  <!-- Hair -->
+  <path d="M 93 110 Q 95 85 120 83 Q 145 85 147 110 Q 140 92 120 92 Q 100 92 93 110 Z" fill="#2C221E"/>
+
+  <!-- Lowered Face features (Eyes closed in shame, downturned mouth) -->
+  <!-- Eyebrows angled downward in distress -->
+  <path d="M 110 108 L 118 111" stroke="#9A6B46" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 126 111 L 134 108" stroke="#9A6B46" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Blush / Embarrassment Red tint on cheeks -->
+  <circle cx="112" cy="117" r="5" fill="#E55B5B" opacity="0.4"/>
+  <circle cx="132" cy="117" r="5" fill="#E55B5B" opacity="0.4"/>
+
+  <!-- Hands covering face / Head hanging low in shame -->
+  <!-- Left Hand -->
+  <path d="M 100 120 Q 95 105 108 100 Q 115 100 112 110 Z" fill="#D69E72"/>
+  <!-- Right Hand -->
+  <path d="M 140 120 Q 145 105 132 100 Q 125 100 128 110 Z" fill="#D69E72"/>
+
+  <!-- Visual Accent: Red warning / dishonor stamp or cross indicator floating behind, symbolizing "unacceptable / disgraceful" behavior -->
+  <circle cx="120" cy="60" r="22" fill="#2A1E20" stroke="#E55B5B" stroke-width="3"/>
+  <!-- Bold X mark inside stamp -->
+  <path d="M 110 50 L 130 70 M 130 50 L 110 70" stroke="#E55B5B" stroke-width="4" stroke-linecap="round"/>
+
+</svg>

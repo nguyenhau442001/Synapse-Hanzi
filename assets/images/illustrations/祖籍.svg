@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle ambient background glow representing geographic roots -->
+  <circle cx="120" cy="120" r="85" fill="#252A34" opacity="0.6"/>
+
+  <!-- Ground / Base map contour representing ancestral homeland ( địa điểm ) -->
+  <path d="M 60 165 Q 120 150 180 165 L 190 180 Q 120 195 50 180 Z" fill="#2D3748" opacity="0.8"/>
+
+  <!-- Ancestral Hall Roof & Architecture (Traditional Chinese roof silhouette symbolizing zǔjí / quê quán tổ tiên) -->
+  <!-- Main roof eaves -->
+  <path d="M 65 105 Q 120 90 175 105 L 195 115 L 165 115 L 120 102 L 75 115 L 45 115 Z" fill="#E2E8F0"/>
+  <!-- Upper ridge -->
+  <path d="M 85 88 Q 120 78 155 88 L 165 98 L 75 98 Z" fill="#CBD5E0"/>
+
+  <!-- Pillars and structure -->
+  <rect x="75" y="115" width="12" height="50" fill="#4A5568"/>
+  <rect x="153" y="115" width="12" height="50" fill="#4A5568"/>
+  <rect x="95" y="115" width="50" height="50" fill="#2D3748"/>
+
+  <!-- Traditional Door / Entrance -->
+  <path d="M 105 165 V 135 Q 120 128 135 135 V 165 Z" fill="#1A1D24"/>
+
+  <!-- Glowing Roots / Connection Tree symbolizing ancestry & origin (祖) -->
+  <!-- Trunk and Canopy -->
+  <path d="M 120 128 V 95" stroke="#D69E2E" stroke-width="4" stroke-linecap="round"/>
+  <!-- Golden Root system branching downward into the homeland base -->
+  <path d="M 120 128 C 120 145, 95 140, 85 155" fill="none" stroke="#D69E2E" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 120 128 C 120 145, 145 140, 155 155" fill="none" stroke="#D69E2E" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 120 135 C 120 150, 110 150, 105 162" fill="none" stroke="#D69E2E" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 120 135 C 120 150, 130 150, 135 162" fill="none" stroke="#D69E2E" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Golden foliage dots (leaves/generations) -->
+  <circle cx="105" cy="85" r="5" fill="#ECC94B"/>
+  <circle cx="135" cy="82" r="6" fill="#ECC94B"/>
+  <circle cx="120" cy="72" r="7" fill="#F6AD55"/>
+  <circle cx="95" cy="92" r="4" fill="#ECC94B"/>
+  <circle cx="145" cy="90" r="4" fill="#ECC94B"/>
+
+  <!-- Compass / Origin indicator pin pointing precisely to the location -->
+  <g transform="translate(120, 52)">
+    <!-- Outer pulse ring -->
+    <circle cx="0" cy="0" r="14" fill="#F6AD55" opacity="0.2"/>
+    <!-- Pin body -->
+    <path d="M 0 -8 C -5 -8 -8 -5 -8 0 C -8 5 0 14 0 14 C 0 14 8 5 8 0 C 8 -5 5 -8 0 -8 Z" fill="#ED8936"/>
+    <!-- Inner white core -->
+    <circle cx="0" cy="-1" r="3.5" fill="#FFFFFF"/>
+  </g>
+</svg>

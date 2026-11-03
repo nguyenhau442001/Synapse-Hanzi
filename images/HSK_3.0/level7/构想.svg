@@ -1,0 +1,67 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient background glow/grid elements representing architecture/design -->
+  <path d="M40 180 L200 180" stroke="#2A2F3D" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <path d="M40 150 L200 150" stroke="#2A2F3D" stroke-width="1" opacity="0.5"/>
+  <path d="M40 120 L200 120" stroke="#2A2F3D" stroke-width="1" opacity="0.3"/>
+
+  <!-- Architectural Blueprint / Concept Structure (Floating isometric eco-city sketch concept) -->
+  <g transform="translate(0, 5)">
+    <!-- Base platform -->
+    <polygon points="120,135 175,165 120,195 65,165" fill="#242B38" stroke="#3A445C" stroke-width="1.5"/>
+    <polygon points="120,143 165,167 120,190 75,167" fill="#1E232E"/>
+
+    <!-- Building 1: Main Eco-Tower (Wireframe/Blueprint style glowing in gold/orange accent) -->
+    <path d="M105,100 L120,90 L135,100 L135,150 L105,150 Z" fill="#242B38" stroke="#F59E0B" stroke-width="1.5"/>
+    <!-- Tower floor lines -->
+    <line x1="105" y1="110" x2="135" y2="110" stroke="#F59E0B" stroke-width="1" opacity="0.6"/>
+    <line x1="105" y1="120" x2="135" y2="120" stroke="#F59E0B" stroke-width="1" opacity="0.6"/>
+    <line x1="105" y1="130" x2="135" y2="130" stroke="#F59E0B" stroke-width="1" opacity="0.6"/>
+    <line x1="105" y1="140" x2="135" y2="140" stroke="#F59E0B" stroke-width="1" opacity="0.6"/>
+    <!-- Tower roof spire -->
+    <line x1="120" y1="90" x2="120" y2="75" stroke="#F59E0B" stroke-width="2"/>
+    <circle cx="120" cy="73" r="2.5" fill="#F59E0B"/>
+
+    <!-- Building 2: Sustainable curved pavilion -->
+    <path d="M80,130 Q92,120 100,135 L100,160 L80,160 Z" fill="#242B38" stroke="#38BDF8" stroke-width="1.5"/>
+    <path d="M85,138 L95,138" stroke="#38BDF8" stroke-width="1"/>
+    <path d="M85,145 L95,145" stroke="#38BDF8" stroke-width="1"/>
+
+    <!-- Building 3: Terraced eco-structure on the right -->
+    <path d="M140,125 L160,135 L160,160 L140,150 Z" fill="#242B38" stroke="#10B981" stroke-width="1.5"/>
+    <line x1="140" y1="135" x2="160" y2="145" stroke="#10B981" stroke-width="1"/>
+    <line x1="140" y1="143" x2="160" y2="153" stroke="#10B981" stroke-width="1"/>
+
+    <!-- Connection lines representing "concept/planning" (构想) -->
+    <path d="M120,73 C90,60 50,80 50,115 C50,130 65,145 65,145" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.8"/>
+    <path d="M120,73 C150,60 190,80 190,115 C190,130 175,145 175,145" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.8"/>
+
+    <!-- Design nodes / spark of ideas floating above -->
+    <circle cx="50" cy="115" r="3" fill="#38BDF8"/>
+    <circle cx="190" cy="115" r="3" fill="#10B981"/>
+    <circle cx="120" cy="55" r="4" fill="#F59E0B"/>
+    <path d="M120,59 L120,70" stroke="#F59E0B" stroke-width="1.5"/>
+  </g>
+
+  <!-- Drafting Compass / Design Tool framing the concept -->
+  <g transform="translate(0, 5)">
+    <!-- Compass legs -->
+    <path d="M120,30 L95,200" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    <path d="M120,30 L145,200" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    <!-- Compass joint -->
+    <circle cx="120" cy="30" r="6" fill="#F59E0B"/>
+    <circle cx="120" cy="30" r="2.5" fill="#1A1D24"/>
+    
+    <!-- Pencil tip indicator on left leg -->
+    <polygon points="93,195 97,195 95,210" fill="#F59E0B"/>
+  </g>
+
+  <!-- Focused highlight elements (Blueprint grid marks) -->
+  <path d="M30,50 L40,50" stroke="#475569" stroke-width="2"/>
+  <path d="M30,50 L30,60" stroke="#475569" stroke-width="2"/>
+  
+  <path d="M210,50 L200,50" stroke="#475569" stroke-width="2"/>
+  <path d="M210,50 L210,60" stroke="#475569" stroke-width="2"/>
+</svg>

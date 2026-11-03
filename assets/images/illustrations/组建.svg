@@ -1,0 +1,64 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(12, 12)">
+    <!-- Ambient connection lines representing organization/formation -->
+    <path d="M108 50 L54 110 M108 50 L162 110 M54 110 L108 130 M162 110 L108 130 M108 130 L108 180" stroke="#2D3748" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
+    
+    <!-- Central core element: Microchip / R&D Team Hub (representing the context of chipping/tech elite) -->
+    <rect x="92" y="34" width="32" height="32" rx="4" fill="#2A3446"/>
+    <rect x="98" y="40" width="20" height="20" rx="2" fill="#E67E22"/>
+    <circle cx="108" cy="50" r="4" fill="#1A1D24"/>
+    <path d="M92 42 H84 M92 50 H82 M92 58 H84 M132 42 H140 M132 50 H142 M132 58 H140 M100 34 V26 M108 34 V24 M116 34 V26" stroke="#E67E22" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Left Team Member (Specialist 1) -->
+    <g transform="translate(38, 90)">
+      <!-- Body/Shoulders -->
+      <path d="M16 45 C16 32 24 28 32 28 C40 28 48 32 48 45 Z" fill="#3182CE"/>
+      <!-- Head -->
+      <circle cx="32" cy="16" r="10" fill="#E2E8F0"/>
+      <!-- Hair -->
+      <path d="M22 14 C22 10 25 7 32 7 C39 7 42 10 42 14 C42 15 41 12 32 12 C23 12 22 15 22 14 Z" fill="#4A5568"/>
+      <!-- Target/Focus Badge overlay -->
+      <circle cx="32" cy="30" r="18" fill="none" stroke="#E67E22" stroke-width="1.5" stroke-dasharray="3 3"/>
+    </g>
+
+    <!-- Right Team Member (Specialist 2) -->
+    <g transform="translate(138, 90)">
+      <!-- Body/Shoulders -->
+      <path d="M16 45 C16 32 24 28 32 28 C40 28 48 32 48 45 Z" fill="#3182CE"/>
+      <!-- Head -->
+      <circle cx="32" cy="16" r="10" fill="#E2E8F0"/>
+      <!-- Hair -->
+      <path d="M22 14 C22 10 25 7 32 7 C39 7 42 10 42 14 C42 15 41 11 32 11 C23 11 22 15 22 14 Z" fill="#2D3748"/>
+      <!-- Target/Focus Badge overlay -->
+      <circle cx="32" cy="30" r="18" fill="none" stroke="#E67E22" stroke-width="1.5" stroke-dasharray="3 3"/>
+    </g>
+
+    <!-- Center/Lead Team Member (Expert / Elite Leader) -->
+    <g transform="translate(88, 105)">
+      <!-- Body/Shoulders -->
+      <path d="M16 50 C16 36 24 30 32 30 C40 30 48 36 48 50 Z" fill="#2B6CB0"/>
+      <!-- Head -->
+      <circle cx="32" cy="16" r="11" fill="#E2E8F0"/>
+      <!-- Hair/Glasses detail -->
+      <path d="M21 15 C21 9 26 7 32 7 C38 7 43 9 43 15 C43 16 42 13 32 13 C22 13 21 16 21 15 Z" fill="#1A202C"/>
+      <rect x="26" y="14" width="12" height="4" rx="1" fill="#E67E22"/>
+    </g>
+
+    <!-- Foundation / Assembling Base (Team Platform) -->
+    <g transform="translate(64, 185)">
+      <path d="M0 12 L16 0 H96 L112 12 L96 24 H16 Z" fill="#2A3446"/>
+      <path d="M16 24 L0 12 M96 24 L112 12" stroke="#4A5568" stroke-width="2"/>
+      <!-- Glowing assembly beam upward -->
+      <path d="M56 0 V-15" stroke="#E67E22" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="56" cy="-18" r="3" fill="#E67E22"/>
+    </g>
+
+    <!-- Structural Assembly Brackets (representing the exact action of "组建" - building/forming a specialized unit) -->
+    <path d="M30 75 V60 H45" stroke="#E67E22" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M186 75 V60 H171" stroke="#E67E22" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M45 160 H30 V145" stroke="#E67E22" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M171 160 H186 V145" stroke="#E67E22" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

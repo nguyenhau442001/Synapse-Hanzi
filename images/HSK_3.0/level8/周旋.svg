@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Negotiation Table / Focal Environment -->
+    <path d="M 60 150 L 180 150 L 160 180 L 80 180 Z" fill="#2A303C"/>
+    <ellipse cx="120" cy="150" rx="60" ry="10" fill="#3A4252"/>
+
+    <!-- Left Diplomat (Calm, composed, interacting strategically) -->
+    <!-- Torso/Suit -->
+    <path d="M 55 175 C 55 155 75 145 90 145 C 105 145 125 155 125 175 Z" fill="#2E4A62"/>
+    <path d="M 75 145 L 90 165 L 105 145 Z" fill="#1E293B"/> <!-- Shirt/Tie area -->
+    <!-- Head & Hair -->
+    <circle cx="90" cy="120" r="16" fill="#F1C27D"/>
+    <path d="M 74 120 C 74 108 106 108 106 120 C 106 112 74 112 74 120 Z" fill="#4A5568"/>
+    <!-- Expressive Gesturing Arm (Flexibility/Tactical response) -->
+    <path d="M 70 155 Q 90 135 105 145" fill="none" stroke="#2E4A62" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="105" cy="145" r="5" fill="#F1C27D"/>
+
+    <!-- Right Opponent/Counterpart (Engaged, dynamic interaction) -->
+    <!-- Torso/Suit -->
+    <path d="M 115 175 C 115 155 135 145 150 145 C 165 145 185 155 185 175 Z" fill="#3B3B4F"/>
+    <path d="M 135 145 L 150 165 L 165 145 Z" fill="#1E293B"/>
+    <!-- Head & Hair -->
+    <circle cx="150" cy="120" r="16" fill="#E0AC69"/>
+    <path d="M 134 120 C 134 110 166 110 166 120 Z" fill="#2D3748"/>
+    <!-- Counterpart Arm -->
+    <path d="M 170 155 Q 150 140 135 145" fill="none" stroke="#3B3B4F" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="135" cy="145" r="5" fill="#E0AC69"/>
+
+    <!-- Strategic Flow Elements (Representing "周旋" - circling, maneuvering, tactful engagement) -->
+    <path d="M 85 95 C 100 80, 140 80, 155 95" fill="none" stroke="#F59E0B" stroke-width="3" stroke-dasharray="5 4" stroke-linecap="round"/>
+    <polygon points="153,92 161,97 153,102" fill="#F59E0B"/>
+    
+    <path d="M 155 105 C 140 120, 100 120, 85 105" fill="none" stroke="#60A5FA" stroke-width="3" stroke-dasharray="5 4" stroke-linecap="round"/>
+    <polygon points="87,108 79,103 87,98" fill="#60A5FA"/>
+
+    <!-- Central Focus Accent (Diplomatic Document / Negotiation Item) -->
+    <rect x="110" y="142" width="20" height="14" rx="2" fill="#F8FAFC"/>
+    <line x1="114" y1="146" x2="126" y2="146" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="114" y1="150" x2="122" y2="150" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+</svg>

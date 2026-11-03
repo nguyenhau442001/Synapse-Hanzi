@@ -1,0 +1,66 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle depth elements -->
+  <path d="M40 200 L200 200" stroke="#2A2F3B" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Iconic Physical Object representing "论述" (A scholarly treatise, bound analytical volume & open manuscript) -->
+  <!-- Shadow / Base Layer -->
+  <ellipse cx="120" cy="182" rx="70" ry="10" fill="#111317"/>
+
+  <!-- Open Manuscript / Underlying Pages -->
+  <path d="M50 160 C70 170 100 175 120 170 C140 175 170 170 190 160 L180 120 C160 128 140 130 120 126 C100 130 80 128 60 120 Z" fill="#2E3646"/>
+  
+  <!-- Left Page -->
+  <path d="M60 120 C80 128 100 130 120 126 L120 165 C100 169 80 166 60 156 Z" fill="#E2E8F0"/>
+  <!-- Right Page -->
+  <path d="M120 126 C140 130 160 128 180 120 L180 156 C160 166 140 169 120 165 Z" fill="#CBD5E1"/>
+
+  <!-- Binding Center crease -->
+  <line x1="120" y1="126" x2="120" y2="165" stroke="#94A3B8" stroke-width="2"/>
+
+  <!-- Text lines on open manuscript (representing analysis/discourse) -->
+  <line x1="72" y1="136" x2="105" y2="136" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="72" y1="144" x2="98" y2="144" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="72" y1="152" x2="102" y2="152" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+  
+  <line x1="135" y1="136" x2="168" y2="136" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="135" y1="144" x2="162" y2="144" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+  <line x1="135" y1="152" x2="158" y2="152" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Main Upright Bound Treatise (The core comprehensive work) -->
+  <!-- Book Cover Back -->
+  <path d="M85 60 L155 60 L165 145 L95 145 Z" fill="#0F172A"/>
+  
+  <!-- Book Spine Extension / Depth -->
+  <path d="M85 60 L75 68 L75 153 L85 145 Z" fill="#1E293B"/>
+
+  <!-- Book Cover Front -->
+  <path d="M90 55 L165 55 L175 140 L100 140 Z" fill="#3B82F6"/>
+  <path d="M90 55 L100 65 L100 140 L90 140 Z" fill="#2563EB"/> <!-- Spine highlight -->
+
+  <!-- Gold/Orange Accent Emblem / Title plate on book cover -->
+  <rect x="115" y="75" width="40" height="30" rx="3" fill="#F59E0B"/>
+  <circle cx="135" cy="90" r="8" fill="#D97706"/>
+  <line x1="123" y1="118" x2="147" y2="118" stroke="#FBBF24" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Bookmark Ribbon hanging down -->
+  <path d="M145 55 L145 105 L152 115 L159 105 L159 55 Z" fill="#EF4444"/>
+
+  <!-- Analytical Pen / Quill resting across (representing articulation/exposition) -->
+  <g transform="rotate(-30 120 100)">
+    <!-- Pen Body -->
+    <rect x="90" y="96" width="60" height="8" rx="4" fill="#E2E8F0"/>
+    <!-- Pen Clip -->
+    <rect x="115" y="93" width="15" height="3" rx="1" fill="#F59E0B"/>
+    <!-- Pen Tip -->
+    <path d="M150 96 L164 100 L150 104 Z" fill="#64748B"/>
+  </g>
+
+  <!-- Floating conceptual highlight sparkles (structured, clean, professional) -->
+  <circle cx="75" cy="75" r="3" fill="#F59E0B"/>
+  <circle cx="180" cy="85" r="2" fill="#3B82F6"/>
+  <circle cx="160" cy="45" r="2.5" fill="#F59E0B"/>
+  
+</svg>

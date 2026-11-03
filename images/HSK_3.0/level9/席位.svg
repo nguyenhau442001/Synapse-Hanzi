@@ -1,0 +1,56 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle parliamentary hemicycle background arc -->
+  <path d="M 60 160 A 70 70 0 0 1 180 160" stroke="#2A2F3D" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+  <path d="M 40 180 A 90 90 0 0 1 200 180" stroke="#2A2F3D" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+
+  <!-- Semi-circle chamber seating rows -->
+  <!-- Back row seats (dimmer) -->
+  <circle cx="80" cy="110" r="4" fill="#3A4255"/>
+  <circle cx="100" cy="102" r="4" fill="#3A4255"/>
+  <circle cx="120" cy="100" r="4" fill="#3A4255"/>
+  <circle cx="140" cy="102" r="4" fill="#3A4255"/>
+  <circle cx="160" cy="110" r="4" fill="#3A4255"/>
+
+  <!-- Middle row seats -->
+  <circle cx="70" cy="135" r="5" fill="#4B556B"/>
+  <circle cx="90" cy="125" r="5" fill="#4B556B"/>
+  <circle cx="120" cy="122" r="5" fill="#E5A93B"/> <!-- Highlighted majority seat -->
+  <circle cx="150" cy="125" r="5" fill="#4B556B"/>
+  <circle cx="170" cy="135" r="5" fill="#4B556B"/>
+
+  <!-- Front row (Main parliamentary seat focus - 席位) -->
+  <!-- Desk / Podium structure -->
+  <path d="M 85 185 L 155 185 L 165 155 L 75 155 Z" fill="#2E3646"/>
+  <path d="M 75 155 L 165 155 L 165 159 L 75 159 Z" fill="#3E485D"/>
+  
+  <!-- Microphone on desk -->
+  <line x1="120" y1="155" x2="120" y2="140" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="120" cy="137" r="3" fill="#E5A93B"/>
+
+  <!-- Executive Leather Chair (The Seat / 席位) -->
+  <!-- Chair Base / Casters -->
+  <line x1="120" y1="210" x2="100" y2="218" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+  <line x1="120" y1="210" x2="140" y2="218" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+  <line x1="120" y1="210" x2="120" y2="216" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="100" cy="218" r="2.5" fill="#94A3B8"/>
+  <circle cx="140" cy="218" r="2.5" fill="#94A3B8"/>
+
+  <!-- Hydraulic gas lift -->
+  <rect x="117" y="195" width="6" height="18" fill="#475569"/>
+
+  <!-- Chair Seat Cushion -->
+  <path d="M 98 185 C 98 180, 142 180, 142 185 C 142 194, 98 194, 98 185 Z" fill="#D97706"/>
+  <path d="M 100 186 C 100 182, 140 182, 140 186 C 140 192, 100 192, 100 186 Z" fill="#F59E0B"/>
+
+  <!-- Chair Backrest -->
+  <path d="M 102 145 C 102 135, 138 135, 138 145 L 140 182 C 140 185, 100 185, 100 182 Z" fill="#D97706"/>
+  <path d="M 105 147 C 105 139, 135 139, 135 147 L 137 180 C 137 182, 103 182, 103 180 Z" fill="#F59E0B"/>
+
+  <!-- Backrest Stitching / Executive Details -->
+  <line x1="120" y1="147" x2="120" y2="178" stroke="#B45309" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <!-- Focus / Authority Glow Accent (Golden Aura framing the seat) -->
+  <circle cx="120" cy="168" r="52" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity="0.4" stroke-dasharray="6 6"/>
+</svg>

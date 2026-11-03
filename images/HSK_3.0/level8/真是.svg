@@ -1,0 +1,37 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Door frame and open door background -->
+  <rect x="70" y="45" width="100" height="160" rx="4" fill="#252A34" stroke="#3A4252" stroke-width="3"/>
+  <path d="M 170 45 L 205 60 L 205 210 L 170 195 Z" fill="#161920" stroke="#3A4252" stroke-width="2"/>
+  
+  <!-- Doormat -->
+  <rect x="85" y="195" width="70" height="15" rx="3" fill="#2E3646"/>
+
+  <!-- Forgotten Key on the floor outside the door -->
+  <g transform="translate(130, 155) rotate(-25)">
+    <!-- Key Ring -->
+    <circle cx="0" cy="0" r="10" fill="none" stroke="#F5A623" stroke-width="4"/>
+    <!-- Key Shaft -->
+    <rect x="10" y="-3.5" width="28" height="7" rx="2" fill="#F5A623"/>
+    <!-- Key Teeth -->
+    <rect x="24" y="3.5" width="5" height="7" rx="1" fill="#F5A623"/>
+    <rect x="32" y="3.5" width="5" height="10" rx="1" fill="#F5A623"/>
+  </g>
+
+  <!-- Mild exasperation / facepalm gesture silhouette representing "真是" (oh goodness / sigh) -->
+  <!-- Hand facepalm icon floating gently above, symbolizing the light sigh of frustration -->
+  <g transform="translate(110, 85)">
+    <!-- Palm & Fingers -->
+    <path d="M -12 12 C -12 5, -5 2, 0 2 C 5 2, 12 5, 12 12 L 10 28 C 10 30, 8 32, 5 32 L -5 32 C -8 32, -10 30, -10 28 Z" fill="#E06C75"/>
+    <!-- Fingers resting on forehead -->
+    <rect x="-9" y="-2" width="4" height="10" rx="2" fill="#E06C75"/>
+    <rect x="-3" y="-5" width="4" height="12" rx="2" fill="#E06C75"/>
+    <rect x="3" y="-5" width="4" height="12" rx="2" fill="#E06C75"/>
+    <rect x="9" y="-2" width="4" height="10" rx="2" fill="#E06C75"/>
+  </g>
+
+  <!-- Gentle motion lines / sigh indicator -->
+  <path d="M 140 80 Q 150 75 145 65" fill="none" stroke="#ABB2BF" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 148 88 Q 160 82 153 70" fill="none" stroke="#ABB2BF" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+</svg>

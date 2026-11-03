@@ -1,0 +1,49 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle grid/blueprint lines in background for professional audit context -->
+  <path d="M48 48H192V192H48z" fill="none" stroke="#252A34" stroke-width="1" stroke-dasharray="4 4"/>
+  <path d="M48 96H192M48 144H192M96 48V192M144 48V192" fill="none" stroke="#252A34" stroke-width="0.5"/>
+
+  <!-- Document Base (Physical Object representing the audit subject) -->
+  <rect x="72" y="56" width="96" height="128" rx="8" fill="#222733" stroke="#3A4254" stroke-width="2"/>
+  
+  <!-- Document Header -->
+  <rect x="88" y="72" width="64" height="8" rx="4" fill="#F59E0B"/>
+  
+  <!-- Financial Data / Ledger Lines -->
+  <rect x="88" y="96" width="48" height="6" rx="3" fill="#4B5563"/>
+  <rect x="144" y="96" width="24" height="6" rx="3" fill="#3B82F6"/>
+  
+  <rect x="88" y="114" width="40" height="6" rx="3" fill="#4B5563"/>
+  <rect x="136" y="114" width="32" height="6" rx="3" fill="#3B82F6"/>
+
+  <rect x="88" y="132" width="52" height="6" rx="3" fill="#4B5563"/>
+  <rect x="148" y="132" width="20" height="6" rx="3" fill="#EF4444"/>
+
+  <rect x="88" y="150" width="36" height="6" rx="3" fill="#4B5563"/>
+  <rect x="132" y="150" width="36" height="6" rx="3" fill="#10B981"/>
+
+  <!-- Magnifying Glass (Audit / Inspection tool) -->
+  <g transform="translate(110, 100)">
+    <!-- Glass lens circle with semi-transparent fill -->
+    <circle cx="45" cy="45" r="32" fill="#1E293B" fill-opacity="0.85" stroke="#F59E0B" stroke-width="6"/>
+    
+    <!-- Highlight on lens -->
+    <path d="M26 30 C 30 22, 40 20, 48 22" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Highlighted document detail under lens -->
+    <rect x="33" y="37" width="24" height="4" rx="2" fill="#10B981"/>
+    <rect x="33" y="47" width="18" height="4" rx="2" fill="#10B981"/>
+    <circle cx="56" cy="49" r="4" fill="#10B981"/>
+
+    <!-- Magnifying glass handle -->
+    <path d="M22 68 L2 88" stroke="#D97706" stroke-width="10" stroke-linecap="round"/>
+    <path d="M22 68 L2 88" stroke="#F59E0B" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Checkmark Badge (Compliance Verification) -->
+  <circle cx="176" cy="72" r="16" fill="#10B981"/>
+  <path d="M168 72L173 77L185 65" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

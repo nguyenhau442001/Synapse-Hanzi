@@ -1,0 +1,43 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for 牵头 (taking the lead / heading up) -->
+  <!-- Sleek modern flat design with dark theme and high-contrast gold/orange accents -->
+  
+  <g transform="translate(0, 0)">
+    <!-- Connection lines/network representing leadership, organization, and coordination -->
+    <path d="M120 70 L70 120 M120 70 L170 120 M120 70 L120 170" stroke="#2A313C" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4"/>
+
+    <!-- Supporting nodes (team members / projects) -->
+    <circle cx="70" cy="120" r="16" fill="#252A34" stroke="#3A4250" stroke-width="2"/>
+    <circle cx="170" cy="120" r="16" fill="#252A34" stroke="#3A4250" stroke-width="2"/>
+    <circle cx="120" cy="170" r="16" fill="#252A34" stroke="#3A4250" stroke-width="2"/>
+
+    <!-- Icons inside supporting nodes -->
+    <!-- Node 1: Code/Tech icon -->
+    <path d="M64 116 L60 120 L64 124 M76 116 L80 120 L76 124" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    
+    <!-- Node 2: Gear/Process icon -->
+    <circle cx="170" cy="120" r="5" stroke="#34D399" stroke-width="2" fill="none"/>
+    
+    <!-- Node 3: Document icon -->
+    <path d="M115 164 H125 M115 170 H123" stroke="#FBBF24" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Central Lead Figure (The Leader / Head) - Highlighting "牵头" (Taking the Lead / Front and Center) -->
+    <!-- Connecting lines from leader to nodes -->
+    <path d="M120 95 L120 70" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M100 70 L140 70" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Central Lead Avatar / Physical Object representing leadership -->
+    <circle cx="120" cy="70" r="24" fill="#F59E0B" opacity="0.15"/>
+    <circle cx="120" cy="70" r="18" fill="#1A1D24" stroke="#F59E0B" stroke-width="3"/>
+    
+    <!-- Leader Icon: Person bust with crown/star indicator -->
+    <circle cx="120" cy="65" r="6" fill="#F59E0B"/>
+    <path d="M108 81 C108 75 113 73 120 73 C127 73 132 75 132 81" fill="#F59E0B"/>
+
+    <!-- Prominent "Leading" Arrow / Forward guiding symbol pointing upwards/outwards -->
+    <path d="M120 40 L120 22 M120 22 L113 29 M120 22 L127 29" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Sea Surface -->
+  <path d="M0 160 Q 60 140, 120 160 T 240 160 L 240 240 L 0 240 Z" fill="#2C3E50"/>
+  
+  <!-- Boat in distress -->
+  <g transform="translate(60, 130)">
+    <!-- Hull -->
+    <path d="M10 20 L 70 20 L 60 45 L 20 45 Z" fill="#E67E22"/>
+    <!-- Mast -->
+    <rect x="35" y="0" width="4" height="20" fill="#BDC3C7"/>
+    <!-- Tilted Sail -->
+    <path d="M39 2 L 65 15 L 39 15 Z" fill="#ECF0F1" transform="rotate(-15 39 15)"/>
+    <!-- Motion/Distress lines -->
+    <path d="M80 10 L 95 5 M85 25 L 100 20" stroke="#F1C40F" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Waves -->
+  <path d="M0 170 Q 30 150, 60 170 T 120 170 T 180 170 T 240 170" stroke="#34495E" stroke-width="4" fill="none"/>
+  
+  <!-- Rescue Ship (Approaching) -->
+  <g transform="translate(150, 170)">
+    <path d="M0 10 L 60 10 L 50 35 L 10 35 Z" fill="#3498DB"/>
+    <rect x="25" y="0" width="10" height="10" fill="#2980B9"/>
+    <!-- Motion lines -->
+    <path d="M-10 15 L -25 15 M-15 25 L -30 25" stroke="#3498DB" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

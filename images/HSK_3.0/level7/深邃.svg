@@ -1,0 +1,58 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Deep Space Background & Stars (Representing Vastness & Depth) -->
+  <g opacity="0.8">
+    <circle cx="50" cy="50" r="1" fill="#FFFFFF" opacity="0.6"/>
+    <circle cx="180" cy="40" r="1.5" fill="#4DF0FF" opacity="0.8"/>
+    <circle cx="210" cy="90" r="1" fill="#FFFFFF" opacity="0.4"/>
+    <circle cx="30" cy="110" r="1.2" fill="#FFFFFF" opacity="0.7"/>
+    <circle cx="190" cy="150" r="1" fill="#FFFFFF" opacity="0.5"/>
+    <circle cx="70" cy="180" r="1.5" fill="#4DF0FF" opacity="0.6"/>
+  </g>
+
+  <!-- Distant Cosmic Nebula / Abyssal Depth (Layered gradients for "深邃") -->
+  <path d="M120 20 C180 20, 220 70, 220 120 C220 170, 170 220, 120 220 C60 220, 20 170, 20 120 C20 70, 70 20, 120 20 Z" fill="#11151C"/>
+  
+  <path d="M120 45 C160 45, 190 75, 190 120 C190 165, 160 195, 120 195 C80 195, 50 165, 50 120 C50 75, 80 45, 120 45 Z" fill="url(#deepSpaceGradient)"/>
+
+  <!-- Glowing celestial horizon / Depth lines -->
+  <ellipse cx="120" cy="120" rx="75" ry="75" fill="none" stroke="#2D3748" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <ellipse cx="120" cy="120" rx="95" ry="95" fill="none" stroke="#1E293B" stroke-width="1"/>
+
+  <!-- Scale Contrast: Tiny Scientist vs Vast Universe -->
+  <!-- Scientist Silhouette/Profile looking up in awe -->
+  <g transform="translate(112, 145)">
+    <!-- Body / Shoulders -->
+    <path d="M-25 45 C-25 30, -5 25, 8 25 C20 25, 40 30, 45 45 Z" fill="#3B82F6"/>
+    <!-- Neck -->
+    <rect x="-3" y="15" width="8" height="15" fill="#CBD5E1"/>
+    <!-- Head tilted up -->
+    <circle cx="3" cy="8" r="10" fill="#CBD5E1"/>
+    <!-- Hair -->
+    <path d="M-6 2 C-6 -2, 2 -4, 10 2 C6 5, 0 5, -6 2 Z" fill="#1E293B"/>
+    <!-- Glowing sense of wonder/fascination in the eye area (Gold/Orange accent) -->
+    <circle cx="8" cy="7" r="1.5" fill="#F59E0B"/>
+  </g>
+
+  <!-- Observatory Platform/Ground line -->
+  <path d="M 60 190 L 180 190" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 75 198 L 165 198" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Telescopic / Focal Element pointing into the depths -->
+  <g transform="rotate(-35 90 150)">
+    <rect x="75" y="142" width="40" height="12" rx="3" fill="#64748B"/>
+    <rect x="65" y="144" width="12" height="8" rx="2" fill="#94A3B8"/>
+    <line x1="95" y1="154" x2="90" y2="175" stroke="#475569" stroke-width="2"/>
+    <line x1="85" y1="154" x2="80" y2="175" stroke="#475569" stroke-width="2"/>
+  </g>
+
+  <!-- Definitions for gradients -->
+  <defs>
+    <radialGradient id="deepSpaceGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1E1B4B" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#0F172A" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0B0F19" stop-opacity="1"/>
+    </radialGradient>
+  </defs>
+</svg>

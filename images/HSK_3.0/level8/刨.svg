@@ -1,0 +1,29 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground Layer -->
+  <path d="M40 160 C 90 155, 150 155, 200 160 L 210 200 C 150 205, 90 205, 30 200 Z" fill="#2C2E3B"/>
+  
+  <!-- Excavation Hole (刨坑) -->
+  <ellipse cx="120" cy="165" rx="45" ry="18" fill="#111318"/>
+  <path d="M 75 165 C 75 185, 165 185, 165 165 Z" fill="#0D0F12"/>
+  
+  <!-- Loose Dirt Pile -->
+  <path d="M 155 160 C 170 155, 190 160, 200 175 C 185 180, 165 175, 155 160 Z" fill="#E59866" opacity="0.9"/>
+  <path d="M 165 155 C 175 145, 195 150, 205 165 C 190 170, 175 165, 165 155 Z" fill="#D35400" opacity="0.8"/>
+
+  <!-- Shovel (Tool for 刨) -->
+  <!-- Handle extending out -->
+  <line x1="160" y1="80" x2="115" y2="135" stroke="#A0522D" stroke-width="6" stroke-linecap="round"/>
+  <!-- Shovel Blade cutting into dirt -->
+  <path d="M 105 140 L 130 130 L 140 155 L 115 165 Z" fill="#E0E0E0"/>
+  <path d="M 115 137 L 128 132 L 133 148 L 120 153 Z" fill="#B0BEC5"/>
+
+  <!-- Flying Dirt Particles -->
+  <circle cx="145" cy="130" r="3" fill="#D35400"/>
+  <circle cx="155" cy="120" r="2" fill="#E59866"/>
+  <circle cx="135" cy="115" r="2.5" fill="#D35400"/>
+
+  <!-- Focus / Action Accent -->
+  <path d="M 100 145 Q 110 135, 125 140" fill="none" stroke="#F39C12" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Locker Unit -->
+  <rect x="70" y="50" width="100" height="140" rx="4" fill="#2D343E" stroke="#FFB800" stroke-width="2"/>
+  
+  <!-- Locker Doors -->
+  <rect x="80" y="60" width="35" height="55" rx="2" fill="#3D4754"/>
+  <rect x="125" y="60" width="35" height="55" rx="2" fill="#3D4754"/>
+  <rect x="80" y="125" width="35" height="55" rx="2" fill="#3D4754"/>
+  <rect x="125" y="125" width="35" height="55" rx="2" fill="#3D4754"/>
+  
+  <!-- Locker Handles/Vents -->
+  <circle cx="97" cy="87" r="3" fill="#FFB800"/>
+  <circle cx="142" cy="87" r="3" fill="#FFB800"/>
+  <circle cx="97" cy="152" r="3" fill="#FFB800"/>
+  <circle cx="142" cy="152" r="3" fill="#FFB800"/>
+  
+  <!-- Bench -->
+  <rect x="50" y="190" width="140" height="15" rx="2" fill="#FFB800"/>
+  <rect x="60" y="205" width="10" height="10" fill="#2D343E"/>
+  <rect x="170" y="205" width="10" height="10" fill="#2D343E"/>
+  
+  <!-- Hanger Icon -->
+  <path d="M110 35 C 110 30, 130 30, 130 35 L 130 40 L 110 40 Z" fill="#FFB800"/>
+  <path d="M120 40 L 120 45" stroke="#FFB800" stroke-width="2"/>
+</svg>

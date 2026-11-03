@@ -1,0 +1,22 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Torso and Harness -->
+  <path d="M80 120 C80 80, 160 80, 160 120 L160 180 C160 200, 80 200, 80 180 Z" fill="#2D3436"/>
+  
+  <!-- The Rope (The focus of "勒") -->
+  <path d="M70 140 C70 130, 170 130, 170 140 C170 150, 70 150, 70 140 Z" fill="#FFB347"/>
+  <path d="M72 138 C72 132, 168 132, 168 138 C168 144, 72 144, 72 138 Z" fill="#E67E22"/>
+  
+  <!-- Tension lines/indentation effect -->
+  <path d="M75 135 L85 145" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+  <path d="M155 135 L165 145" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Climbing gear details -->
+  <rect x="100" y="145" width="40" height="30" rx="4" fill="#34495E"/>
+  <circle cx="120" cy="160" r="8" fill="#1A1D24"/>
+  
+  <!-- Rope ends -->
+  <path d="M165 138 L185 120" stroke="#FFB347" stroke-width="6" stroke-linecap="round"/>
+  <path d="M75 138 L55 120" stroke="#FFB347" stroke-width="6" stroke-linecap="round"/>
+</svg>

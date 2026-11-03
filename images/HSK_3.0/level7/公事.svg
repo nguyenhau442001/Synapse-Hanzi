@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "公事" (Official business / public affairs):
+       A professional desk setup symbolizing a meeting or official duty.
+       Central object: A wooden meeting/office table with an official folder, documents, a professional pen, and a gavel,
+       representing official work, business discussions, and impartial duty. -->
+
+  <!-- Subtle ambient glow on desk surface -->
+  <ellipse cx="120" cy="165" rx="80" ry="25" fill="#252A34"/>
+
+  <!-- Office Table -->
+  <path d="M50 150 L190 150 L210 185 L30 185 Z" fill="#2D3343"/>
+  <path d="M30 185 L210 185 L210 192 L30 192 Z" fill="#222732"/>
+
+  <!-- Document / Official Folder -->
+  <!-- Base folder -->
+  <rect x="75" y="105" width="90" height="65" rx="6" fill="#3B4252" transform="rotate(-5 120 137)"/>
+  <rect x="72" y="100" width="90" height="65" rx="6" fill="#4C566A" transform="rotate(-3 120 132)"/>
+  
+  <!-- Document paper inside -->
+  <rect x="85" y="95" width="70" height="55" rx="3" fill="#ECEFF4" transform="rotate(-3 120 122)"/>
+  <!-- Text lines on document -->
+  <rect x="95" y="108" width="35" height="4" rx="2" fill="#D8DEE9" transform="rotate(-3 120 122)"/>
+  <rect x="95" y="118" width="50" height="3" rx="1.5" fill="#E5E9F0" transform="rotate(-3 120 122)"/>
+  <rect x="95" y="126" width="45" height="3" rx="1.5" fill="#E5E9F0" transform="rotate(-3 120 122)"/>
+  <rect x="95" y="134" width="30" height="3" rx="1.5" fill="#E5E9F0" transform="rotate(-3 120 122)"/>
+
+  <!-- Official Stamp / Seal (Red accent indicating official business) -->
+  <circle cx="138" cy="132" r="11" fill="#BF616A" transform="rotate(-3 120 122)"/>
+  <circle cx="138" cy="132" r="8" fill="none" stroke="#ECEFF4" stroke-width="1.5" transform="rotate(-3 120 122)"/>
+
+  <!-- Professional Pen -->
+  <path d="M140 85 L180 125 L176 129 L136 89 Z" fill="#D08770"/>
+  <polygon points="136,89 140,85 133,83" fill="#4C566A"/>
+  <polygon points="180,125 176,129 183,131" fill="#D8DEE9"/>
+
+  <!-- Gavel (Symbolizing fairness, impartial handling "秉公办理") -->
+  <!-- Gavel Handle -->
+  <path d="M60 145 L115 105 L119 111 L64 151 Z" fill="#88C0D0"/>
+  <!-- Gavel Head Base -->
+  <rect x="45" y="130" width="35" height="18" rx="4" fill="#EBCB8B" transform="rotate(35 62 139)"/>
+  <!-- Gavel Metal Ring -->
+  <rect x="58" y="133" width="7" height="17" fill="#D8DEE9" transform="rotate(35 62 139)"/>
+
+  <!-- Gavel striking block -->
+  <ellipse cx="60" cy="162" rx="22" ry="7" fill="#4C566A"/>
+  <rect x="42" y="159" width="36" height="5" rx="2" fill="#5E81AC"/>
+
+</svg>

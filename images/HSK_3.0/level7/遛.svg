@@ -1,0 +1,48 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative park elements (night/evening park ambiance with warm glow) -->
+  <circle cx="120" cy="120" r="85" fill="#242B38" opacity="0.6"/>
+  <!-- Park ground line -->
+  <path d="M 50 185 Q 120 175 190 185" stroke="#313B4D" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Central iconic object: Traditional Chinese birdcage (representing 遛鸟 - strolling with a bird) -->
+  <!-- Hanging hook -->
+  <path d="M 120 52 C 115 52 112 55 112 60 L 112 70" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <!-- Birdcage Top Dome -->
+  <path d="M 92 82 Q 120 62 148 82 Z" fill="#D97706"/>
+  
+  <!-- Birdcage Body (Cylindrical structure with vertical bars) -->
+  <rect x="94" y="82" width="52" height="75" rx="6" fill="#1F2937" stroke="#F59E0B" stroke-width="2.5"/>
+  
+  <!-- Vertical bars -->
+  <line x1="104" y1="82" x2="104" y2="157" stroke="#F59E0B" stroke-width="1.5" opacity="0.7"/>
+  <line x1="114" y1="82" x2="114" y2="157" stroke="#F59E0B" stroke-width="1.5" opacity="0.7"/>
+  <line x1="126" y1="82" x2="126" y2="157" stroke="#F59E0B" stroke-width="1.5" opacity="0.7"/>
+  <line x1="136" y1="82" x2="136" y2="157" stroke="#F59E0B" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- Horizontal middle accent band -->
+  <rect x="94" y="115" width="52" height="6" fill="#F59E0B" opacity="0.3"/>
+
+  <!-- Birdcage Base -->
+  <rect x="92" y="157" width="56" height="8" rx="3" fill="#D97706"/>
+
+  <!-- Perch inside cage -->
+  <line x1="100" y1="135" x2="140" y2="135" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Cute little songbird inside -->
+  <path d="M 115 130 C 117 125 123 125 126 128 C 128 130 128 133 125 135 Z" fill="#38BDF8"/>
+  <circle cx="127" cy="127" r="3" fill="#38BDF8"/>
+  <path d="M 129 127 L 133 128 L 129 129 Z" fill="#F59E0B"/>
+
+  <!-- Motion lines indicating strolling / walking (遛) -->
+  <path d="M 68 140 C 60 145 52 145 44 140" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M 62 152 C 55 157 47 157 40 152" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+  <path d="M 172 140 C 180 145 188 145 196 140" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M 178 152 C 185 157 193 157 200 152" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+
+  <!-- Ground shadow underneath the action -->
+  <ellipse cx="120" cy="183" rx="35" ry="5" fill="#111827" opacity="0.6"/>
+</svg>

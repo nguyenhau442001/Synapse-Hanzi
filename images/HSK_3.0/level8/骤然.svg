@@ -1,0 +1,18 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Thermometer representing the sudden drop -->
+  <g transform="translate(120, 120)">
+    <!-- Glass tube -->
+    <path d="M-15,-60 L-15,40 A15,15 0 0,0 15,40 L15,-60 Z" fill="#2C333D" stroke="#4A5568" stroke-width="4"/>
+    
+    <!-- Liquid level (Sudden drop indicated by low red level) -->
+    <path d="M-11,20 L-11,38 A11,11 0 0,0 11,38 L11,20 Z" fill="#FF9F1C"/>
+    
+    <!-- Sudden drop indicator: Sharp downward arrow -->
+    <path d="M40,-40 L40,0 L30,-10 M40,0 L50,-10" stroke="#FF9F1C" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    
+    <!-- Frost/Ice effect on the glass to imply cold snap -->
+    <path d="M-15,-40 L-25,-50 M-15,-20 L-25,-30 M15,-30 L25,-40" stroke="#A0AEC0" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

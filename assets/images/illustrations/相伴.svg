@@ -1,0 +1,57 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle winding path representing the journey of life -->
+  <path d="M 30,190 C 80,190 70,120 120,120 C 170,120 160,70 210,70" fill="none" stroke="#2D323F" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Weather elements representing hardships (wind/rain streaks) -->
+  <g opacity="0.4" stroke="#5C677D" stroke-width="2" stroke-linecap="round">
+    <line x1="85" y1="65" x2="75" y2="75" />
+    <line x1="105" y1="55" x2="95" y2="65" />
+    <line x1="145" y1="135" x2="135" y2="145" />
+    <line x1="165" y1="125" x2="155" y2="135" />
+  </g>
+
+  <!-- Umbrella representing shelter through hardships/journey -->
+  <g>
+    <!-- Umbrella canopy -->
+    <path d="M 85,95 Q 120,65 155,95 Q 150,91 120,91 Q 90,91 85,95 Z" fill="#E59C39"/>
+    <path d="M 85,95 C 95,95 105,98 120,98 C 135,98 145,95 155,95 C 145,110 95,110 85,95 Z" fill="#F2B84B"/>
+    <!-- Umbrella shaft & handle -->
+    <line x1="120" y1="91" x2="120" y2="165" stroke="#E6EDF5" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 120,165 C 112,165 108,160 108,155" fill="none" stroke="#E6EDF5" stroke-width="3" stroke-linecap="round"/>
+    <!-- Umbrella tip -->
+    <line x1="120" y1="65" x2="120" y2="60" stroke="#E6EDF5" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Two figures walking side-by-side (Companion / 相伴) -->
+  <g>
+    <!-- Left Person -->
+    <g transform="translate(95, 115)">
+      <!-- Body/Coat -->
+      <path d="M 5,25 L 15,25 L 18,50 L 2,50 Z" fill="#3B82F6"/>
+      <!-- Head -->
+      <circle cx="10" cy="15" r="7" fill="#E6EDF5"/>
+      <!-- Legs walking -->
+      <line x1="6" y1="50" x2="3" y2="72" stroke="#E6EDF5" stroke-width="3" stroke-linecap="round"/>
+      <line x1="14" y1="50" x2="17" y2="68" stroke="#E6EDF5" stroke-width="3" stroke-linecap="round"/>
+      <!-- Arm holding umbrella/each other -->
+      <line x1="12" y1="30" x2="25" y2="35" stroke="#E6EDF5" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Right Person -->
+    <g transform="translate(120, 115)">
+      <!-- Body/Coat -->
+      <path d="M 2,25 L 15,25 L 18,50 L -1,50 Z" fill="#60A5FA"/>
+      <!-- Head -->
+      <circle cx="8" cy="15" r="7" fill="#E6EDF5"/>
+      <!-- Legs walking -->
+      <line x1="4" y1="50" x2="7" y2="70" stroke="#E6EDF5" stroke-width="3" stroke-linecap="round"/>
+      <line x1="12" y1="50" x2="10" y2="72" stroke="#E6EDF5" stroke-width="3" stroke-linecap="round"/>
+      <!-- Arm -->
+      <line x1="5" y1="30" x2="-2" y2="35" stroke="#E6EDF5" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+</svg>

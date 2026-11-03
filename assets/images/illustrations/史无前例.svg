@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "史无前例" (Unprecedented / Unmatched Historical Record) -->
+  <g transform="translate(0, 0)">
+    <!-- Dramatic background water surge to reflect the contextual flood reference -->
+    <path d="M 20 195 Q 60 170 100 185 T 180 180 T 220 190 L 220 220 L 20 220 Z" fill="#1f364d" opacity="0.6"/>
+    <path d="M 10 205 Q 70 190 130 200 T 230 195 L 230 220 L 10 220 Z" fill="#2c4d6f" opacity="0.7"/>
+
+    <!-- Open Historical Record / Ancient Scroll Frame -->
+    <g transform="translate(35, 45)">
+      <!-- Scroll Background -->
+      <rect x="25" y="15" width="120" height="115" rx="4" fill="#242933" stroke="#3A4454" stroke-width="2"/>
+      
+      <!-- Blank Historic Pages / Unbroken lines representing no previous record -->
+      <line x1="45" y1="35" x2="125" y2="35" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+      <line x1="45" y1="50" x2="105" y2="50" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+      <line x1="45" y1="65" x2="115" y2="65" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- Scroll Handles (Top & Bottom Rollers) -->
+      <rect x="20" y="8" width="130" height="10" rx="5" fill="#E2B714"/>
+      <rect x="20" y="122" width="130" height="10" rx="5" fill="#E2B714"/>
+    </g>
+
+    <!-- Monumental Water Level Marker exceeding all previous historic lines -->
+    <g transform="translate(130, 25)">
+      <!-- Vertical Measurement Pole -->
+      <rect x="42" y="10" width="6" height="160" fill="#718096" rx="3"/>
+      
+      <!-- Historic Past Record Ticks (Lower) -->
+      <line x1="32" y1="130" x2="42" y2="130" stroke="#A0AEC0" stroke-width="2"/>
+      <line x1="35" y1="150" x2="42" y2="150" stroke="#A0AEC0" stroke-width="2"/>
+
+      <!-- UNPRECEDENTED HIGHEST PEAK LINE (Breaking the chart / top record) -->
+      <g transform="translate(0, 0)">
+        <!-- Highlight glow/pulse bar -->
+        <rect x="15" y="55" width="65" height="12" rx="3" fill="#E2B714"/>
+        <polygon points="15,61 5,55 5,67" fill="#E2B714"/>
+        
+        <!-- Iconographic Warning / Peak indicator -->
+        <circle cx="45" cy="61" r="4" fill="#1A1D24"/>
+      </g>
+
+      <!-- Giant Exceeding Wave / Crest breaking past the top -->
+      <path d="M 48 55 C 65 55, 75 35, 60 20 C 50 10, 35 15, 30 25" fill="#F6AD55" opacity="0.9"/>
+    </g>
+
+    <!-- Glowing Alert Focus Accent (Orange/Gold theme) -->
+    <circle cx="175" cy="80" r="6" fill="#F6AD55"/>
+    <circle cx="175" cy="80" r="14" stroke="#F6AD55" stroke-width="1.5" fill="none" opacity="0.5"/>
+  </g>
+</svg>

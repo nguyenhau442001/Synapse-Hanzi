@@ -1,0 +1,61 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative ambient lighting (warm golden glow representing warmth, care, safety) -->
+  <circle cx="120" cy="110" r="70" fill="#FFB703" opacity="0.06"/>
+  <circle cx="120" cy="120" r="45" fill="#FFB703" opacity="0.08"/>
+
+  <!-- Floor line / Ground support -->
+  <line x1="60" y1="185" x2="180" y2="185" stroke="#333942" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- MOTION / ACTION LINES (indicating gentle embrace, taking in, sheltering) -->
+  <path d="M 68 105 C 55 115 55 145 68 155" fill="none" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round" opacity="0.4" stroke-dasharray="4 4"/>
+  <path d="M 172 105 C 185 115 185 145 172 155" fill="none" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round" opacity="0.4" stroke-dasharray="4 4"/>
+
+  <!-- LEFT ADULT FIGURE (Caring Parent / Guardian) -->
+  <g id="guardian-left">
+    <!-- Body / Torso -->
+    <path d="M 85 185 L 85 140 C 85 125 95 115 110 115 L 110 185 Z" fill="#2E4057"/>
+    <!-- Head -->
+    <circle cx="95" cy="95" r="14" fill="#E0A96D"/>
+    <!-- Hair -->
+    <path d="M 81 92 C 81 83 90 81 98 81 C 107 81 109 88 109 95 L 81 95 Z" fill="#4A5568"/>
+    <!-- Arm wrapping around in protection/adoption -->
+    <path d="M 105 125 C 115 125 130 135 135 145 C 140 152 135 160 125 158 C 118 156 110 145 105 138 Z" fill="#E0A96D"/>
+    <path d="M 98 120 L 115 135 L 110 145 L 90 130 Z" fill="#2E4057"/>
+  </g>
+
+  <!-- RIGHT ADULT FIGURE (Caring Parent / Guardian) -->
+  <g id="guardian-right">
+    <!-- Body / Torso -->
+    <path d="M 155 185 L 155 140 C 155 125 145 115 130 115 L 130 185 Z" fill="#3D5A80"/>
+    <!-- Head -->
+    <circle cx="145" cy="95" r="14" fill="#E5B27E"/>
+    <!-- Hair -->
+    <path d="M 131 95 C 131 87 138 81 146 81 C 155 81 159 87 159 95 Z" fill="#5C4033"/>
+    <!-- Arm wrapping around in protection/adoption -->
+    <path d="M 135 125 C 125 125 110 135 105 145 C 100 152 105 160 115 158 C 122 156 130 145 135 138 Z" fill="#E5B27E"/>
+    <path d="M 142 120 L 125 135 L 130 145 L 150 130 Z" fill="#3D5A80"/>
+  </g>
+
+  <!-- CENTER CHILD FIGURE (Adopted Orphan being safely sheltered) -->
+  <g id="child-center">
+    <!-- Body / Torso (smaller, safe inside the parents' embrace) -->
+    <rect x="108" y="145" width="24" height="40" rx="6" fill="#E07A5F"/>
+    <!-- Head -->
+    <circle cx="120" cy="125" r="11" fill="#F4D0B4"/>
+    <!-- Hair -->
+    <path d="M 110 122 C 110 114 120 113 130 122 Z" fill="#333333"/>
+    <!-- Happy expression / safe posture: arms slightly raised inside -->
+    <path d="M 112 155 C 112 150 116 148 120 148 C 124 148 128 150 128 155" fill="none" stroke="#F4D0B4" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- OVERLAPPING HANDS ACCENT (Symbolizing legal/formal holding and warm acceptance) -->
+  <circle cx="120" cy="152" r="6" fill="#FFB703"/>
+
+  <!-- UI / Flashcard Framing details -->
+  <!-- Top decorative badge (Subtle structural indicator) -->
+  <rect x="95" y="30" width="50" height="4" rx="2" fill="#333942"/>
+
+</svg>

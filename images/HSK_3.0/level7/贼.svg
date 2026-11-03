@@ -1,0 +1,53 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background graphical elements for context -->
+  <g opacity="0.15">
+    <!-- Train/Bus window frame indicating travel context -->
+    <rect x="35" y="40" width="170" height="120" rx="12" fill="none" stroke="#60A5FA" stroke-width="2"/>
+    <path d="M35 130 L205 130" stroke="#60A5FA" stroke-width="1.5"/>
+    <path d="M120 40 L120 160" stroke="#60A5FA" stroke-width="1.5" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Stealing action / Thief character graphic -->
+  <g transform="translate(0, 5)">
+    <!-- Shadow / Ground element -->
+    <ellipse cx="120" cy="185" rx="55" ry="8" fill="#111318"/>
+
+    <!-- Passenger seat / back context -->
+    <path d="M150 90 L185 110 L185 175 L150 175 Z" fill="#2A2F3D" rx="4"/>
+    <path d="M165 115 L200 135 L200 180 L165 180 Z" fill="#323846" opacity="0.6"/>
+
+    <!-- Stolen Coat / Jacket draped over seat -->
+    <path d="M150 95 C150 95 160 100 168 115 C176 130 180 155 180 175 L140 175 C140 155 145 130 150 95 Z" fill="#3B82F6"/>
+    <path d="M150 95 L140 115 L152 120" fill="none" stroke="#2563EB" stroke-width="2"/>
+
+    <!-- Thief Body (Crouched / Sneaking posture) -->
+    <path d="M90 145 C90 125 105 115 120 120 C135 125 145 145 150 175 L75 175 C78 160 85 150 90 145 Z" fill="#1E293B"/>
+
+    <!-- Thief Head wearing a beanie / hoodie -->
+    <path d="M95 95 C95 80 105 72 120 72 C135 72 145 80 145 95 C145 102 140 108 135 110 L105 110 C100 108 95 102 95 95 Z" fill="#334155"/>
+    <path d="M95 95 L145 95 L140 108 L100 108 Z" fill="#475569"/> <!-- Beanie rim -->
+    <circle cx="120" cy="95" r="14" fill="#CBD5E1"/> <!-- Face profile -->
+    <path d="M125 93 L132 93" stroke="#0F172A" stroke-width="2" stroke-linecap="round"/> <!-- Suspicious eye -->
+
+    <!-- Sneaking Hand reaching out to steal the coat -->
+    <g>
+      <!-- Arm extending -->
+      <path d="M120 120 Q135 115 148 122" fill="none" stroke="#334155" stroke-width="10" stroke-linecap="round"/>
+      <!-- Hand fingers pinching the coat -->
+      <circle cx="152" cy="123" r="5" fill="#CBD5E1"/>
+      <path d="M150 120 L156 126" stroke="#0F172A" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Motion lines indicating stealth / movement -->
+    <path d="M70 100 Q80 95 75 90" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <path d="M62 110 Q72 105 67 100" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  </g>
+
+  <!-- Focal Accent: Glowing gold highlight on the stolen item to draw eye -->
+  <path d="M150 95 C150 95 160 100 168 115" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="152" cy="123" r="7" fill="none" stroke="#F59E0B" stroke-width="2"/>
+
+</svg>

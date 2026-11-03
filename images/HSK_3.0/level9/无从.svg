@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <g transform="translate(120, 115)">
+    <!-- Ancient Stone Stele / Tomb Monument (representing the physical object of study) -->
+    <path d="M-35,-55 L35,-55 C38,-55 40,-53 40,-50 L40,65 C40,68 38,70 35,70 L-35,70 C-38,70 -40,68 -40,65 L-40,-50 C-40,-53 -38,-55 -35,-55 Z" fill="#2D323E" stroke="#4A5265" stroke-width="2"/>
+    <path d="M-40,-55 C-40,-70 40,-70 40,-55 Z" fill="#252934" stroke="#4A5265" stroke-width="2"/>
+
+    <!-- Eroded / Lost Inscriptions (Faded geometric placeholders representing lost records) -->
+    <rect x="-24" y="-38" width="48" height="6" rx="2" fill="#363C4E"/>
+    <rect x="-24" y="-24" width="34" height="6" rx="2" fill="#363C4E"/>
+    <rect x="-24" y="-10" width="42" height="6" rx="2" fill="#363C4E"/>
+    <rect x="-24" y="4" width="28" height="6" rx="2" fill="#363C4E"/>
+    <rect x="-24" y="18" width="40" height="6" rx="2" fill="#363C4E"/>
+
+    <!-- Pedestal Base -->
+    <path d="M-50,70 L50,70 L58,82 L-58,82 Z" fill="#252934" stroke="#4A5265" stroke-width="2"/>
+
+    <!-- Glowing Magnifying Glass (Focusing on the mystery/lack of way to investigate) -->
+    <g transform="translate(12, 10)">
+      <!-- Magnifying Glass Body -->
+      <circle cx="0" cy="0" r="30" fill="#1A1D24" stroke="#F59E0B" stroke-width="4" opacity="0.9"/>
+      <!-- Glass reflection -->
+      <path d="M-15,-15 C-5,-22 5,-22 15,-15" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+      <!-- Handle -->
+      <path d="M21,21 L42,42" stroke="#F59E0B" stroke-width="6" stroke-linecap="round"/>
+      <path d="M21,21 L42,42" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+
+      <!-- Question Mark floating inside lens (signifying "No way to know / No method to verify") -->
+      <path d="M-4,-10 C-4,-15 4,-15 4,-10 C4,-6 -4,-4 -4,3 M-4,9 L-4,12" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- Subtle Dust / Mystery Particles -->
+    <circle cx="-55" cy="-20" r="2" fill="#4A5265" opacity="0.6"/>
+    <circle cx="-45" cy="-45" r="1.5" fill="#4A5265" opacity="0.6"/>
+    <circle cx="-60" cy="25" r="2" fill="#4A5265" opacity="0.6"/>
+    <circle cx="55" cy="-35" r="1.5" fill="#4A5265" opacity="0.6"/>
+  </g>
+</svg>

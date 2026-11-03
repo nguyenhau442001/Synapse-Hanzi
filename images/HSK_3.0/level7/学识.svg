@@ -1,0 +1,31 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Character: Scholar/Elderly figure -->
+  <g transform="translate(60, 80)">
+    <!-- Body -->
+    <path d="M40 140 L80 140 L70 80 L50 80 Z" fill="#4A5568"/>
+    <!-- Head -->
+    <circle cx="60" cy="60" r="25" fill="#E2E8F0"/>
+    <!-- Hair/Beard (Wisdom indicator) -->
+    <path d="M40 60 Q40 80 60 80 Q80 80 80 60" fill="#CBD5E0"/>
+    <!-- Arm reaching out -->
+    <path d="M75 90 L110 70" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Action: Passing/Sharing Knowledge (The "Action" of 学识) -->
+  <!-- Book/Scroll being presented -->
+  <g transform="translate(140, 110)">
+    <rect x="0" y="0" width="40" height="50" rx="4" fill="#F6AD55"/>
+    <rect x="5" y="10" width="30" height="5" fill="#1A1D24"/>
+    <rect x="5" y="20" width="30" height="5" fill="#1A1D24"/>
+    <rect x="5" y="30" width="30" height="5" fill="#1A1D24"/>
+  </g>
+
+  <!-- Motion lines indicating the act of imparting/demonstrating knowledge -->
+  <path d="M120 80 Q135 70 145 90" stroke="#F6AD55" stroke-width="3" stroke-dasharray="6 6" fill="none"/>
+  <path d="M125 90 Q140 80 150 100" stroke="#F6AD55" stroke-width="3" stroke-dasharray="6 6" fill="none"/>
+
+  <!-- Subtle background detail: Ancient scroll/document hint -->
+  <path d="M30 180 L210 180" stroke="#2D3748" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>

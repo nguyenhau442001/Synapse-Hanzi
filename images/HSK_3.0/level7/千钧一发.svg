@@ -1,0 +1,18 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 120)">
+    <!-- The Rock/Weight -->
+    <path d="M-50,-60 L50,-60 L40,40 L-40,40 Z" fill="#FF9F1C" stroke="#1A1D24" stroke-width="4"/>
+    <circle cx="0" cy="-60" r="15" fill="#FF9F1C" stroke="#1A1D24" stroke-width="4"/>
+    
+    <!-- The Single Hair/Thread -->
+    <line x1="0" y1="-75" x2="0" y2="-100" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- The Frayed/Breaking Point -->
+    <path d="M-5,-100 Q0,-105 5,-100" stroke="#FFD700" stroke-width="2" fill="none"/>
+    <path d="M-2,-100 Q0,-102 2,-100" stroke="#FFD700" stroke-width="2" fill="none"/>
+    
+    <!-- Support point -->
+    <path d="M-20,-100 L20,-100" stroke="#E0E0E0" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

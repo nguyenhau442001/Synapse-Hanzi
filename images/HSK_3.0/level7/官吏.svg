@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background subtle architectural element (Traditional Chinese imperial hall silhouette) -->
+  <path d="M40 180 L200 180 L200 190 L40 190 Z" fill="#252A34"/>
+  <path d="M70 120 L170 120 L185 180 L55 180 Z" fill="#222732"/>
+  <path d="M50 120 L190 120 L195 128 L45 128 Z" fill="#323846"/>
+
+  <!-- Official Character (Guānlì - Imperial Court Official) -->
+  <!-- Robes / Body -->
+  <path d="M90 140 L150 140 L160 190 L80 190 Z" fill="#1E3A5F"/>
+  <path d="M100 115 L140 115 L150 140 L90 140 Z" fill="#2C5282"/>
+
+  <!-- Official Court Collar / Insignia (Mandarin square representation) -->
+  <rect x="110" y="125" width="20" height="20" fill="#D69E2E" rx="2"/>
+
+  <!-- Head & Neck -->
+  <circle cx="120" cy="85" r="18" fill="#FEEBC8"/>
+  <rect x="114" y="100" width="12" height="18" fill="#FEEBC8"/>
+
+  <!-- Facial features (stern, dignified expression) -->
+  <path d="M112 85 Q120 89 128 85" stroke="#744210" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <circle cx="114" cy="80" r="2" fill="#744210"/>
+  <circle cx="126" cy="80" r="2" fill="#744210"/>
+  <path d="M116 93 Q120 95 124 93" stroke="#744210" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Traditional Official Headwear (Futou / Wusha mao with wings) -->
+  <path d="M100 68 L140 68 L145 74 L95 74 Z" fill="#0D1117"/>
+  <ellipse cx="120" cy="64" rx="22" ry="8" fill="#0D1117"/>
+  <!-- Wing extensions of official hat -->
+  <path d="M70 60 Q85 55 98 64 L98 70 Q85 62 72 65 Z" fill="#0D1117"/>
+  <path d="M170 60 Q155 55 142 64 L142 70 Q155 62 168 65 Z" fill="#0D1117"/>
+
+  <!-- Imperial Tablet / Hu (Traditional flat board held by officials) -->
+  <rect x="125" y="110" width="10" height="35" rx="2" fill="#C53030"/>
+  <rect x="127" y="112" width="6" height="31" rx="1" fill="#FEB2B2"/>
+
+  <!-- Authority / Scroll accent (representing bureaucratic duties & laws) -->
+  <path d="M75 155 L95 160 L90 175 L70 170 Z" fill="#E2E8F0"/>
+  <circle cx="72" cy="162" r="3" fill="#CBD5E0"/>
+  <circle cx="93" cy="168" r="3" fill="#CBD5E0"/>
+</svg>

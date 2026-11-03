@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Earth cross-section layer -->
+  <path d="M40 160 C 40 120, 200 120, 200 160 L 200 200 C 200 215, 40 215, 40 200 Z" fill="#2D343E"/>
+  
+  <!-- Geological strata -->
+  <path d="M40 160 C 40 140, 200 140, 200 160 L 200 175 C 200 185, 40 185, 40 175 Z" fill="#3D4652"/>
+  
+  <!-- Mineral clusters (Gold/Rare Earths) -->
+  <path d="M70 170 L 85 155 L 100 170 L 85 185 Z" fill="#FFB84D"/>
+  <path d="M140 180 L 155 165 L 170 180 L 155 195 Z" fill="#FFD700"/>
+  <path d="M110 150 L 120 140 L 130 150 L 120 160 Z" fill="#FFB84D"/>
+  
+  <!-- Metallic Ore Veins -->
+  <path d="M50 190 L 70 180 L 90 195 L 60 205 Z" fill="#A0AEC0"/>
+  <path d="M160 190 L 180 180 L 195 195 L 170 205 Z" fill="#A0AEC0"/>
+  
+  <!-- Surface ground line -->
+  <path d="M40 160 L 200 160" stroke="#4A5568" stroke-width="2"/>
+  
+  <!-- Stylized drill/extraction icon representing the resource -->
+  <path d="M120 80 L 120 140 M 110 140 L 130 140" stroke="#FFB84D" stroke-width="6" stroke-linecap="round"/>
+  <path d="M105 80 L 135 80 L 125 60 L 115 60 Z" fill="#FFB84D"/>
+</svg>

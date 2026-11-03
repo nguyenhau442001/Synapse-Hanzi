@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Background subtle beam / spotlight to highlight character -->
+    <path d="M120 20 L160 210 L80 210 Z" fill="#242B38" opacity="0.5"/>
+
+    <!-- Person representing 耿直 (Upright, straightforward person) -->
+    <!-- Head / Face -->
+    <circle cx="120" cy="72" r="26" fill="#F4D0B2"/>
+    <!-- Hair -->
+    <path d="M94 72 C94 54 106 46 120 46 C134 46 146 54 146 72 C146 74 145 78 145 78 C145 78 141 62 120 62 C99 62 95 78 95 78 C95 78 94 74 94 72Z" fill="#38322E"/>
+
+    <!-- Confident upright expression -->
+    <path d="M113 78 Q120 84 127 78" stroke="#38322E" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <circle cx="111" cy="71" r="2.5" fill="#38322E"/>
+    <circle cx="129" cy="71" r="2.5" fill="#38322E"/>
+
+    <!-- Torso with sharp, clean, structured attire (representing integrity/straightforwardness) -->
+    <!-- Shoulders & Suit Jacket -->
+    <path d="M80 160 L80 135 C80 115 95 105 120 105 C145 105 160 115 160 135 L160 160 Z" fill="#2E4A62"/>
+    <!-- Inner Shirt & Tie -->
+    <polygon points="120,115 110,140 130,140" fill="#E8EEF5"/>
+    <polygon points="120,123 116,155 120,165 124,155" fill="#E65F2B"/>
+
+    <!-- Rigid, perfectly straight posture baseline / plumb line symbol floating subtly or integrated -->
+    <line x1="120" y1="46" x2="120" y2="205" stroke="#E65F2B" stroke-width="2" stroke-dasharray="4 4" opacity="0.6"/>
+
+    <!-- Upright posture shoulders line anchor -->
+    <rect x="74" y="160" width="92" height="50" rx="12" fill="#1E3344"/>
+
+    <!-- Core symbol of truth/straightness: A gleaming golden plumb line / level bar held or integrated -->
+    <g transform="translate(120, 185)">
+      <!-- Base handle -->
+      <rect x="-24" y="-8" width="48" height="16" rx="8" fill="#D4AF37"/>
+      <!-- Inner detail -->
+      <rect x="-18" y="-4" width="36" height="8" rx="4" fill="#1E3344"/>
+      <!-- Center glass vial (spirit level bubble indicator pointing dead center) -->
+      <rect x="-8" y="-3" width="16" height="6" rx="3" fill="#E8EEF5"/>
+      <circle cx="0" cy="0" r="2" fill="#E65F2B"/>
+    </g>
+
+    <!-- Radiating confidence/integrity accents (minimalist clean ticks, no clutter) -->
+    <path d="M60 100 L70 105" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M180 100 L170 105" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M55 130 L67 132" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M185 130 L173 132" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>

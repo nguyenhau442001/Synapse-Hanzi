@@ -1,0 +1,42 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Grid / Technical Matrix Backdrop for Cognition/Analysis -->
+  <g opacity="0.15">
+    <line x1="40" y1="60" x2="200" y2="60" stroke="#60A5FA" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="40" y1="100" x2="200" y2="100" stroke="#60A5FA" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="40" y1="140" x2="200" y2="140" stroke="#60A5FA" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="40" y1="180" x2="200" y2="180" stroke="#60A5FA" stroke-width="1" stroke-dasharray="3 3"/>
+    
+    <line x1="80" y1="40" x2="80" y2="200" stroke="#60A5FA" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="120" y1="40" x2="120" y2="200" stroke="#60A5FA" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="160" y1="40" x2="160" y2="200" stroke="#60A5FA" stroke-width="1" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- Visual Metaphor: Escalation / Progression (Stepped cognitive levels scaling upward into a peak) -->
+  <!-- Base platform / Foundation nodes -->
+  <rect x="45" y="155" width="35" height="25" rx="4" fill="#2D3748" stroke="#4A5568" stroke-width="2"/>
+  <rect x="90" y="125" width="35" height="55" rx="4" fill="#2D3748" stroke="#4A5568" stroke-width="2"/>
+  <rect x="135" y="95" width="35" height="85" rx="4" fill="#2D3748" stroke="#4A5568" stroke-width="2"/>
+  
+  <!-- Peak Escalation Node (Gold/Orange accent for Intelligence/Focus) -->
+  <rect x="180" y="60" width="35" height="120" rx="4" fill="#D97706" stroke="#FBBF24" stroke-width="2"/>
+
+  <!-- Progression Trend Line (Causality / Escalation) -->
+  <path d="M 62 155 L 107 125 L 152 95 L 197 60" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Highlight Nodes on the Trend Line -->
+  <circle cx="62" cy="155" r="4" fill="#60A5FA"/>
+  <circle cx="107" cy="125" r="4" fill="#60A5FA"/>
+  <circle cx="152" cy="95" r="4" fill="#60A5FA"/>
+  <circle cx="197" cy="60" r="6" fill="#FFFFFF" stroke="#D97706" stroke-width="3"/>
+
+  <!-- Abstract Cognitive Sparks / Insight Icons at the Peak -->
+  <path d="M 197 42 L 197 48" stroke="#FBBF24" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 185 48 L 189 51" stroke="#FBBF24" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 209 48 L 205 51" stroke="#FBBF24" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Base baseline axis -->
+  <line x1="30" y1="180" x2="215" y2="180" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
+</svg>

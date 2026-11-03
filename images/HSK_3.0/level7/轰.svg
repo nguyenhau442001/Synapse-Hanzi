@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for 轰 (explosion / loud blast in a valley) -->
+  <g transform="translate(0, 0)">
+    <!-- Mountain Valley Silhouette (Background) -->
+    <path d="M 20 190 L 20 140 L 70 100 L 110 130 L 170 80 L 220 130 L 220 190 Z" fill="#242B38"/>
+    
+    <!-- Shockwave / Sound Waves (Concentric rings with vibrant orange/gold accent) -->
+    <circle cx="120" cy="130" r="75" fill="none" stroke="#FF5722" stroke-width="2" stroke-dasharray="6,4" opacity="0.3"/>
+    <circle cx="120" cy="130" r="55" fill="none" stroke="#FF9800" stroke-width="3" opacity="0.5"/>
+    <circle cx="120" cy="130" r="35" fill="none" stroke="#FFC107" stroke-width="4" opacity="0.8"/>
+
+    <!-- Explosion Core (Physical Object / Event representation) -->
+    <path d="M 120 90 L 128 115 L 150 110 L 135 128 L 155 145 L 130 148 L 120 170 L 110 148 L 85 145 L 105 128 L 90 110 L 112 115 Z" fill="#FF5722"/>
+    <circle cx="120" cy="130" r="16" fill="#FFEB3B"/>
+
+    <!-- Debris flying outward -->
+    <rect x="75" y="105" width="6" height="6" rx="1" fill="#78909C" transform="rotate(45 78 108)"/>
+    <rect x="160" y="115" width="8" height="5" rx="1" fill="#607D8B" transform="rotate(-30 164 117)"/>
+    <rect x="145" y="155" width="5" height="5" rx="1" fill="#78909C" transform="rotate(15 147 157)"/>
+    <rect x="85" y="145" width="7" height="4" rx="1" fill="#607D8B" transform="rotate(60 88 147)"/>
+
+    <!-- Valley Floor Foreground -->
+    <path d="M 0 190 L 240 190 L 240 240 L 0 240 Z" fill="#14171D"/>
+    
+    <!-- Ground debris lines -->
+    <line x1="95" y1="190" x2="85" y2="182" stroke="#455A64" stroke-width="3" stroke-linecap="round"/>
+    <line x1="145" y1="190" x2="155" y2="180" stroke="#455A64" stroke-width="3" stroke-linecap="round"/>
+    <line x1="120" y1="190" x2="120" y2="178" stroke="#FF5722" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

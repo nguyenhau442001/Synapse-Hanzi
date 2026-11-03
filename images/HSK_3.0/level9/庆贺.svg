@@ -1,0 +1,69 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background ambient glow representing festive celebration -->
+  <circle cx="120" cy="110" r="70" fill="#FFB703" opacity="0.06"/>
+  <circle cx="120" cy="110" r="40" fill="#FFB703" opacity="0.08"/>
+
+  <!-- Confetti / Motion particles for action and celebration -->
+  <g opacity="0.8">
+    <rect x="65" y="60" width="6" height="3" rx="1" transform="rotate(-25 68 61.5)" fill="#FFB703"/>
+    <rect x="170" y="70" width="7" height="3" rx="1" transform="rotate(35 173.5 71.5)" fill="#FF8500"/>
+    <circle cx="85" cy="135" r="2" fill="#219EBC"/>
+    <circle cx="155" cy="125" r="2.5" fill="#FFB703"/>
+    <rect x="95" y="50" width="4" height="4" rx="0.5" transform="rotate(15 97 52)" fill="#FB8500"/>
+    <rect x="145" y="55" width="5" height="3" rx="1" transform="rotate(-15 147.5 56.5)" fill="#8ECAE6"/>
+  </g>
+
+  <!-- Central Action: Two stylised human characters raising glasses together (庆贺 - verb/action) -->
+  <g>
+    <!-- Left Character -->
+    <!-- Body/Shoulders -->
+    <path d="M55 180 C55 155 75 145 90 145 C105 145 105 160 105 180" fill="#219EBC"/>
+    <!-- Head -->
+    <circle cx="80" cy="125" r="13" fill="#E0FBFC"/>
+    <!-- Hair -->
+    <path d="M67 122 C67 115 75 111 85 112 C93 113 93 120 93 124 Z" fill="#3D5A80"/>
+
+    <!-- Right Character -->
+    <!-- Body/Shoulders -->
+    <path d="M185 180 C185 155 165 145 150 145 C135 145 135 160 135 180" fill="#FFB703"/>
+    <!-- Head -->
+    <circle cx="160" cy="125" r="13" fill="#E0FBFC"/>
+    <!-- Hair -->
+    <path d="M147 124 C147 118 153 111 162 111 C170 111 173 117 173 124 Z" fill="#293241"/>
+
+    <!-- Left Arm & Hand holding glass -->
+    <path d="M75 150 L95 125 L103 130" fill="none" stroke="#219EBC" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Right Arm & Hand holding glass -->
+    <path d="M165 150 L145 125 L137 130" fill="none" stroke="#FFB703" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Dynamic Toasting Glasses (Focal Point) -->
+  <g transform="translate(120, 95)">
+    <!-- Motion lines indicating clinking impact -->
+    <path d="M -12 -5 L -18 -8" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 12 -5 L 18 -8" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="0" cy="-6" r="4" fill="#FFF" opacity="0.9"/>
+    
+    <!-- Left Glass -->
+    <g transform="translate(-10, 0) rotate(-15)">
+      <path d="M-6 -18 L6 -18 L3 4 L-3 4 Z" fill="#E0FBFC" opacity="0.9"/>
+      <path d="M-4 -14 L4 -14 L2 -2 L-2 -2 Z" fill="#FFB703"/> <!-- Liquid -->
+      <rect x="-1" y="4" width="2" height="12" fill="#E0FBFC" opacity="0.8"/>
+      <ellipse cx="0" cy="16" rx="5" ry="2" fill="#E0FBFC" opacity="0.8"/>
+    </g>
+
+    <!-- Right Glass -->
+    <g transform="translate(10, 0) rotate(15)">
+      <path d="M-6 -18 L6 -18 L3 4 L-3 4 Z" fill="#E0FBFC" opacity="0.9"/>
+      <path d="M-4 -14 L4 -14 L2 -2 L-2 -2 Z" fill="#FFB703"/> <!-- Liquid -->
+      <rect x="-1" y="4" width="2" height="12" fill="#E0FBFC" opacity="0.8"/>
+      <ellipse cx="0" cy="16" rx="5" ry="2" fill="#E0FBFC" opacity="0.8"/>
+    </g>
+  </g>
+  
+  <!-- Ground line -->
+  <rect x="40" y="180" width="160" height="3" rx="1.5" fill="#2D323E"/>
+</svg>

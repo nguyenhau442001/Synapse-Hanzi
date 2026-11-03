@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background architectural glow / throne room ambiance -->
+  <path d="M120 40 L160 80 L160 170 L80 170 L80 80 Z" fill="#222733" opacity="0.6"/>
+  <polygon points="120,50 175,90 175,190 65,190 65,90" fill="none" stroke="#2D3342" stroke-width="2"/>
+
+  <!-- Stepped dais / Throne base -->
+  <rect x="70" y="170" width="100" height="12" rx="2" fill="#2E3646"/>
+  <rect x="85" y="160" width="70" height="10" rx="2" fill="#3A445A"/>
+  
+  <!-- Majestic Throne (Imperial Chinese & Classical Architecture Fusion) -->
+  <!-- Throne Backrest -->
+  <path d="M95 70 L145 70 L150 150 L90 150 Z" fill="#2B3447"/>
+  <path d="M100 75 L140 75 L143 145 L97 145 Z" fill="#D4AF37" opacity="0.15"/>
+  <!-- Ornate top arch / roof of throne -->
+  <path d="M90 70 C90 50 150 50 150 70 Z" fill="#E6C547"/>
+  
+  <!-- Throne Seat & Armrests -->
+  <rect x="92" y="135" width="56" height="25" rx="4" fill="#C29B26"/>
+  <rect x="86" y="115" width="10" height="40" rx="3" fill="#E6C547"/>
+  <rect x="144" y="115" width="10" height="40" rx="3" fill="#E6C547"/>
+
+  <!-- Imperial Crown (Mianliu - representing "王朝" Dynasty) -->
+  <!-- Crown Base / Cap -->
+  <rect x="104" y="24" width="32" height="12" rx="4" fill="#C29B26"/>
+  <!-- Crown Flat Board (Top) -->
+  <rect x="96" y="18" width="48" height="6" rx="2" fill="#E6C547"/>
+  <!-- Front Jade Beads Curtain (Mian) -->
+  <line x1="104" y1="30" x2="104" y2="44" stroke="#4DA6FF" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="112" y1="30" x2="112" y2="44" stroke="#E63946" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="120" y1="30" x2="120" y2="44" stroke="#4DA6FF" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="128" y1="30" x2="128" y2="44" stroke="#E63946" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="136" y1="30" x2="136" y2="44" stroke="#4DA6FF" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Imperial Seal / Jade Seal resting on the throne or base (Symbol of mandate & dynasty) -->
+  <g transform="translate(108, 142)">
+    <!-- Seal Base -->
+    <rect x="0" y="0" width="24" height="14" rx="2" fill="#4ADE80"/>
+    <!-- Seal Handle (Dragon/Knob shape abstraction) -->
+    <rect x="8" y="-6" width="8" height="6" rx="2" fill="#22C55E"/>
+    <!-- Golden ribbon/tassel hanging down -->
+    <path d="M12 14 C12 20 8 24 6 28" fill="none" stroke="#E6C547" stroke-width="2"/>
+    <path d="M12 14 C12 20 16 24 18 28" fill="none" stroke="#E6C547" stroke-width="2"/>
+  </g>
+
+  <!-- Dramatic focal lighting/accent -->
+  <circle cx="120" cy="100" r="70" fill="none" stroke="#E6C547" stroke-width="1.5" opacity="0.3" stroke-dasharray="6 6"/>
+</svg>

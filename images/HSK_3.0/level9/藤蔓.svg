@@ -1,0 +1,19 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 120)">
+    <!-- Tree Trunk -->
+    <path d="M-15,80 L-15,-60 C-15,-80 15,-80 15,-60 L15,80 Z" fill="#4A5568"/>
+    <path d="M-15,-40 L-40,-50 L-15,-30 Z" fill="#4A5568"/>
+    <path d="M15,-20 L40,-30 L15,-10 Z" fill="#4A5568"/>
+    
+    <!-- Vines (藤蔓) -->
+    <path d="M-15,40 C-40,40 -40,-20 -15,-20 C10,-20 10,20 -15,20" fill="none" stroke="#F6AD55" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M15,10 C40,10 40,-50 15,-50 C-10,-50 -10,-10 15,-10" fill="none" stroke="#F6AD55" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Leaves -->
+    <ellipse cx="-40" cy="10" rx="8" ry="4" fill="#48BB78" transform="rotate(-20 -40 10)"/>
+    <ellipse cx="-25" cy="-20" rx="8" ry="4" fill="#48BB78" transform="rotate(45 -25 -20)"/>
+    <ellipse cx="40" cy="-20" rx="8" ry="4" fill="#48BB78" transform="rotate(20 40 -20)"/>
+    <ellipse cx="15" cy="-50" rx="8" ry="4" fill="#48BB78" transform="rotate(-45 15 -50)"/>
+  </g>
+</svg>

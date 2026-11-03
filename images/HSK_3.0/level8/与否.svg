@@ -1,0 +1,37 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Conceptual Illustration: A physical split-path scale / physical token representing binary choice ("yes or no", "whether or not") -->
+  <!-- Central structural stand -->
+  <path d="M120 70 L120 170" stroke="#4B5563" stroke-width="6" stroke-linecap="round"/>
+  <rect x="95" y="170" width="50" height="10" rx="4" fill="#374151"/>
+  
+  <!-- Pivot top -->
+  <circle cx="120" cy="70" r="8" fill="#F59E0B"/>
+
+  <!-- Left arm & Success/Check side (Green) -->
+  <path d="M120 85 L70 120" stroke="#4B5563" stroke-width="4" stroke-linecap="round"/>
+  <!-- Left physical token / tray -->
+  <path d="M45 130 L95 130 L85 145 L55 145 Z" fill="#374151"/>
+  <!-- Checkmark physical object on left tray -->
+  <circle cx="70" cy="122" r="16" fill="#065F46"/>
+  <path d="M62 122 L67 127 L78 116" fill="none" stroke="#34D399" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Right arm & Failure/Cross side (Red/Orange) -->
+  <path d="M120 85 L170 120" stroke="#4B5563" stroke-width="4" stroke-linecap="round"/>
+  <!-- Right physical token / tray -->
+  <path d="M145 130 L195 130 L185 145 L155 145 Z" fill="#374151"/>
+  <!-- Cross physical object on right tray -->
+  <circle cx="170" cy="122" r="16" fill="#7F1D1D"/>
+  <path d="M163 115 L177 129 M177 115 L163 129" stroke="#F87171" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Supporting experimental beaker above center to link with context -->
+  <path d="M110 32 L130 32 L130 55 C130 60 125 62 120 62 C115 62 110 60 110 55 Z" fill="none" stroke="#60A5FA" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="106" y1="32" x2="134" y2="32" stroke="#60A5FA" stroke-width="3" stroke-linecap="round"/>
+  <!-- Liquid inside beaker -->
+  <path d="M112 45 L128 45 L128 54 C128 58 124 59 120 59 C116 59 112 58 112 54 Z" fill="#3B82F6" opacity="0.6"/>
+  <!-- Bubbles -->
+  <circle cx="118" cy="40" r="1.5" fill="#93C5FD"/>
+  <circle cx="123" cy="37" r="1" fill="#93C5FD"/>
+</svg>

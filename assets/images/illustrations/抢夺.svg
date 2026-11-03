@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Prey (The object being snatched) -->
+  <path d="M105 110 L135 110 L120 135 Z" fill="#FFB347"/>
+  
+  <!-- Falcon 1 (Left) -->
+  <g fill="#A0AEC0">
+    <path d="M60 100 L105 115 L60 130 Z"/>
+    <path d="M80 80 L90 100 L70 100 Z"/>
+  </g>
+  
+  <!-- Falcon 2 (Right) -->
+  <g fill="#E2E8F0">
+    <path d="M180 100 L135 115 L180 130 Z" transform="scale(-1, 1) translate(-315, 0)"/>
+    <path d="M160 80 L150 100 L170 100 Z"/>
+  </g>
+  
+  <!-- Motion/Action lines -->
+  <path d="M90 90 L100 80" stroke="#FFB347" stroke-width="3" stroke-linecap="round"/>
+  <path d="M150 90 L140 80" stroke="#FFB347" stroke-width="3" stroke-linecap="round"/>
+  <path d="M100 140 L90 150" stroke="#FFB347" stroke-width="3" stroke-linecap="round"/>
+  <path d="M140 140 L150 150" stroke="#FFB347" stroke-width="3" stroke-linecap="round"/>
+</svg>

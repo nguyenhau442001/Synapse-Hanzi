@@ -1,0 +1,58 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative tech grid/stars -->
+  <circle cx="50" cy="50" r="1" fill="#4A5568"/>
+  <circle cx="190" cy="70" r="1.5" fill="#4A5568"/>
+  <circle cx="200" cy="180" r="1" fill="#4A5568"/>
+  <circle cx="60" cy="190" r="1.5" fill="#4A5568"/>
+
+  <!-- Central Special Spacesuit (特制宇航服) representing custom-made/specially manufactured object -->
+  <g transform="translate(0, 5)">
+    <!-- Helmet & Visor -->
+    <circle cx="120" cy="72" r="24" fill="#2D3748" stroke="#4A5568" stroke-width="2"/>
+    <!-- Gold Visor (custom tech feature) -->
+    <path d="M 100 68 C 100 58, 140 58, 140 68 L 142 82 C 142 88, 98 88, 98 82 Z" fill="#D69E2E"/>
+    <path d="M 104 64 C 110 61, 130 61, 136 64" stroke="#FEFCBF" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Suit Collar / Neck Ring -->
+    <rect x="106" y="94" width="28" height="8" rx="2" fill="#E2E8F0"/>
+
+    <!-- Torso (Multi-layered protective specialized body) -->
+    <path d="M 92 102 L 148 102 L 158 135 C 160 148, 148 158, 120 158 C 92 158, 80 148, 82 135 Z" fill="#CBD5E0"/>
+    
+    <!-- Chest Control Unit / Custom Module -->
+    <rect x="108" y="112" width="24" height="20" rx="3" fill="#2D3748" stroke="#E2E8F0" stroke-width="1.5"/>
+    <circle cx="115" cy="122" r="3" fill="#E53E3E"/>
+    <circle cx="125" cy="122" r="3" fill="#3182CE"/>
+
+    <!-- Specialized Arms -->
+    <!-- Left Arm -->
+    <path d="M 92 106 L 70 125 L 75 135 L 94 116 Z" fill="#A0AEC0"/>
+    <!-- Right Arm -->
+    <path d="M 148 106 L 170 125 L 165 135 L 146 116 Z" fill="#A0AEC0"/>
+
+    <!-- Specialized Backpack / Life Support (Custom Built) -->
+    <rect x="102" y="104" width="36" height="42" rx="6" fill="#4A5568" stroke="#CBD5E0" stroke-width="1.5"/>
+    <line x1="110" y1="114" x2="130" y2="114" stroke="#718096" stroke-width="2" stroke-linecap="round"/>
+    <line x1="110" y1="124" x2="130" y2="124" stroke="#718096" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Precision Craftsmanship / Customization Accent Indicators -->
+  <g stroke="#D69E2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Top-left bracket -->
+    <path d="M 44 80 L 36 80 L 36 88"/>
+    <!-- Top-right bracket -->
+    <path d="M 196 80 L 204 80 L 204 88"/>
+    <!-- Bottom-left bracket -->
+    <path d="M 44 170 L 36 170 L 36 162"/>
+    <!-- Bottom-right bracket -->
+    <path d="M 196 170 L 204 170 L 204 162"/>
+  </g>
+
+  <!-- Precision crosshairs / engineering marks -->
+  <circle cx="36" cy="125" r="2" fill="#D69E2E"/>
+  <circle cx="204" cy="125" r="2" fill="#D69E2E"/>
+  <line x1="120" y1="28" x2="120" y2="36" stroke="#D69E2E" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,55 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <g transform="translate(0, 0)">
+    <!-- Converging Flow Metaphor for "In short / Summarizing" -->
+    <!-- Multiple scattered disparate elements converging into a single strong focal point -->
+    
+    <!-- Background grid lines / structure representing complexity -->
+    <path d="M 40,60 L 90,60" stroke="#2A2F3D" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4"/>
+    <path d="M 30,100 L 80,100" stroke="#2A2F3D" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4"/>
+    <path d="M 40,140 L 90,140" stroke="#2A2F3D" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4"/>
+    <path d="M 30,180 L 80,180" stroke="#2A2F3D" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4"/>
+
+    <!-- Dispersed element 1 (Top Left) -->
+    <circle cx="55" cy="60" r="10" fill="#2E3548"/>
+    <rect cx="51" cy="56" width="8" height="8" rx="2" fill="#64748B"/>
+
+    <!-- Dispersed element 2 (Mid-Top Left) -->
+    <rect cx="45" cy="100" width="16" height="12" rx="3" fill="#2E3548"/>
+    <circle cx="53" cy="106" r="3" fill="#64748B"/>
+
+    <!-- Dispersed element 3 (Mid-Bottom Left) -->
+    <polygon points="45,150 61,150 53,136" fill="#2E3548"/>
+    <circle cx="53" cy="145" r="2.5" fill="#64748B"/>
+
+    <!-- Dispersed element 4 (Bottom Left) -->
+    <circle cx="55" cy="180" r="9" fill="#2E3548"/>
+    <path d="M 51,180 L 59,180" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Smooth converging energy paths / streams (Orange accent for culmination) -->
+    <!-- Top stream -->
+    <path d="M 70,60 C 110,60 110,105 140,112" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    <!-- Mid-top stream -->
+    <path d="M 61,100 C 100,100 110,110 140,116" fill="none" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round" opacity="0.8"/>
+    <!-- Mid-bottom stream -->
+    <path d="M 61,140 C 100,140 110,126 140,120" fill="none" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round" opacity="0.8"/>
+    <!-- Bottom stream -->
+    <path d="M 64,180 C 110,180 110,131 140,124" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Central Focus / Conclusion Node (The "Summary" outcome) -->
+    <!-- Outer glow ring -->
+    <circle cx="165" cy="120" r="32" fill="#F59E0B" opacity="0.15"/>
+    <circle cx="165" cy="120" r="26" fill="#F59E0B" opacity="0.25"/>
+    
+    <!-- Solid main node -->
+    <circle cx="165" cy="120" r="20" fill="#1A1D24" stroke="#F59E0B" stroke-width="4"/>
+    
+    <!-- Checkmark/Core symbol inside the node representing definitive conclusion -->
+    <path d="M 155,120 L 162,127 L 177,111" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Supporting directional arrowheads for flow confirmation -->
+    <path d="M 125,116 L 133,120 L 125,124" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

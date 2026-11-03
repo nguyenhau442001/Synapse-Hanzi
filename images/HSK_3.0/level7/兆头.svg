@@ -1,0 +1,46 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient glow indicating a positive omen/portent -->
+  <circle cx="120" cy="115" r="70" fill="#FFC107" opacity="0.08"/>
+  
+  <!-- Ground / Snow layer -->
+  <path d="M40 170 Q120 160 200 170 L200 185 C200 188 197 190 194 190 L46 190 C43 190 40 188 40 185 Z" fill="#2E384D"/>
+  <path d="M35 174 C70 170 110 168 205 174 L205 182 C205 186 201 190 196 190 L44 190 C39 190 35 186 35 182 Z" fill="#E2E8F0" opacity="0.9"/>
+
+  <!-- Winter Wheat Sprout (Representing the context: Winter Wheat & Sign of Harvest) -->
+  <!-- Left Sprout Leaf -->
+  <path d="M120 175 C100 150 90 130 95 105 C100 130 110 150 120 175 Z" fill="#4ADE80"/>
+  <!-- Right Sprout Leaf -->
+  <path d="M120 175 C140 150 150 130 145 105 C140 130 130 150 120 175 Z" fill="#22C55E"/>
+  <!-- Central Sprout Tip -->
+  <path d="M120 175 C120 140 120 120 120 95 C120 120 120 140 120 175 Z" fill="#86EFAC"/>
+
+  <!-- Golden Beacon / Omen Rays (Signifying the positive sign/兆头) -->
+  <g transform="translate(120, 95)">
+    <!-- Central Star / Sparkle of Hope -->
+    <path d="M0 -25 Q0 0 25 0 Q0 0 0 25 Q0 0 -25 0 Q0 0 0 -25 Z" fill="#FFD700"/>
+    <path d="M-10 -10 Q0 0 10 10 Q0 0 10 -10 Q0 0 -10 10 Z" fill="#FFF" opacity="0.8"/>
+  </g>
+
+  <!-- Falling Snowflakes (Stylized to match flat vector aesthetic) -->
+  <g fill="#94A3B8" opacity="0.7">
+    <!-- Snowflake 1 -->
+    <path d="M70 60 L76 60 M73 57 L73 63 M71 58 L75 62 M75 58 L71 62" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Snowflake 2 -->
+    <path d="M170 75 L176 75 M173 72 L173 78 M171 73 L175 77 M175 73 L171 77" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Snowflake 3 -->
+    <path d="M90 110 L94 110 M92 108 L92 112" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Snowflake 4 -->
+    <path d="M150 120 L154 120 M152 118 L152 122" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Small dots for snow -->
+    <circle cx="55" cy="85" r="1.5" fill="#CBD5E1"/>
+    <circle cx="185" cy="115" r="1.5" fill="#CBD5E1"/>
+    <circle cx="80" cy="140" r="1" fill="#CBD5E1"/>
+    <circle cx="160" cy="150" r="1.5" fill="#CBD5E1"/>
+  </g>
+
+  <!-- Focal Golden Glow Ring (Subtle ring highlighting the central auspicious symbol) -->
+  <circle cx="120" cy="95" r="36" fill="none" stroke="#FFD700" stroke-width="2" stroke-dasharray="6 4" opacity="0.6"/>
+</svg>

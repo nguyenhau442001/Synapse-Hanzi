@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Atmospheric Glow & Terrain Background -->
+  <path d="M0 160 Q 60 140, 120 155 T 240 145 L 240 240 L 0 240 Z" fill="#232733"/>
+  <path d="M0 180 Q 90 170, 160 185 T 240 175 L 240 240 L 0 240 Z" fill="#14161C"/>
+
+  <!-- Distant smoke/embers -->
+  <circle cx="180" cy="110" r="2" fill="#F97316" opacity="0.6"/>
+  <circle cx="195" cy="95" r="1.5" fill="#F97316" opacity="0.4"/>
+  <circle cx="60" cy="120" r="1.5" fill="#F97316" opacity="0.5"/>
+
+  <!-- Centerpiece: Iconic Battlefield Elements (Broken Defense Barrier / Trench & Flag) -->
+  
+  <!-- Barbed wire fence / Obstacle left -->
+  <path d="M40 170 L70 140" stroke="#4B5563" stroke-width="4" stroke-linecap="round"/>
+  <path d="M55 155 L65 145" stroke="#4B5563" stroke-width="2"/>
+  <path d="M45 165 L55 175" stroke="#4B5563" stroke-width="2"/>
+  
+  <!-- Broken barrier structure / Barricade -->
+  <path d="M80 180 L90 130 L110 135 L100 185 Z" fill="#374151"/>
+  <rect x="85" y="140" width="20" height="8" rx="2" fill="#4B5563" transform="rotate(-15 95 144)"/>
+
+  <!-- Central Broken Flag / Standard (Symbolizing Conflict) -->
+  <!-- Flagpole tilted -->
+  <line x1="120" y1="190" x2="140" y2="70" stroke="#6B7280" stroke-width="5" stroke-linecap="round"/>
+  
+  <!-- Tattered Flag -->
+  <path d="M138 72 L195 85 L180 110 L190 125 L133 112 Z" fill="#EF4444"/>
+  <!-- Dark shadow fold on flag -->
+  <path d="M165 92 L180 110 L160 105 Z" fill="#B91C1C"/>
+
+  <!-- Ground debris: Broken shield / Helmet silhouette -->
+  <path d="M140 180 Q 150 170, 160 180 Z" fill="#4B5563"/>
+  <ellipse cx="150" cy="177" rx="12" ry="4" fill="#6B7280"/>
+
+  <!-- Dramatic lighting / Ember accent -->
+  <path d="M110 195 L130 160 L150 200 Z" fill="#F97316" opacity="0.15"/>
+  
+  <!-- Foreground craters / roughness -->
+  <ellipse cx="120" cy="185" rx="35" ry="8" fill="#0D0E12" opacity="0.7"/>
+  <ellipse cx="125" cy="184" rx="25" ry="5" fill="#1A1D24"/>
+
+  <!-- Sparks / Glowing Embers floating -->
+  <circle cx="135" cy="130" r="3" fill="#F59E0B"/>
+  <circle cx="155" cy="65" r="2" fill="#F59E0B"/>
+  <circle cx="110" cy="100" r="1.5" fill="#EF4444"/>
+  <circle cx="75" cy="90" r="2.5" fill="#F97316" opacity="0.8"/>
+
+</svg>

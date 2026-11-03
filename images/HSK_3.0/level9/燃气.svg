@@ -1,0 +1,31 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle background glow for the flame/gas source -->
+  <circle cx="120" cy="115" r="70" fill="#FF7043" opacity="0.08"/>
+
+  <!-- Gas Pipe System (Infrastructure context) -->
+  <!-- Horizontal main pipe -->
+  <rect x="70" y="165" width="100" height="16" rx="4" fill="#374151"/>
+  <!-- Pipe joint / valve body -->
+  <rect x="106" y="145" width="28" height="25" rx="3" fill="#4B5563"/>
+  <!-- Valve handle (yellow accent for industrial safety/utility) -->
+  <rect x="96" y="135" width="48" height="10" rx="3" fill="#FBBF24"/>
+  <circle cx="120" cy="140" r="4" fill="#1F2937"/>
+  
+  <!-- Upward burner pipe -->
+  <rect x="112" y="95" width="16" height="52" fill="#374151"/>
+  <ellipse cx="120" cy="95" rx="12" ry="4" fill="#4B5563"/>
+  <ellipse cx="120" cy="95" rx="8" ry="2" fill="#1F2937"/>
+
+  <!-- Natural Gas Flames (Sleek modern flat vector style with high contrast) -->
+  <!-- Outer large flame (orange) -->
+  <path d="M120 50 C135 70, 142 82, 142 98 C142 112, 131 123, 120 123 C109 123, 98 112, 98 98 C98 82, 105 70, 120 50 Z" fill="#F97316"/>
+  <!-- Inner bright flame (yellow core) -->
+  <path d="M120 68 C128 80, 132 88, 132 98 C132 106, 127 112, 120 112 C113 112, 108 106, 108 98 C108 88, 112 80, 120 68 Z" fill="#FDE047"/>
+
+  <!-- Rising heat waves / gas wisps -->
+  <path d="M90 65 Q95 55, 90 45" stroke="#9CA3AF" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <path d="M150 65 Q145 55, 150 45" stroke="#9CA3AF" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+</svg>

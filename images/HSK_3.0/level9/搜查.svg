@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(20, 20)">
+    <!-- Background Document / Floor Plan representing the target of search -->
+    <rect x="20" y="20" width="160" height="160" rx="8" fill="#222733" stroke="#2D3446" stroke-width="2"/>
+    
+    <!-- Interior details of the search area -->
+    <path d="M40 50 H90 V90 H40 Z" fill="#282E3D"/>
+    <path d="M110 50 H180 V80 H110 Z" fill="#282E3D"/>
+    <path d="M40 110 H120 V150 H40 Z" fill="#282E3D"/>
+    <circle cx="150" cy="130" r="20" fill="#282E3D"/>
+    
+    <!-- Legal Document / Search Warrant (Khám xét lệnh) sticking out -->
+    <g transform="translate(70, 70) rotate(-15)">
+      <rect x="0" y="0" width="60" height="75" rx="4" fill="#EAECEF"/>
+      <!-- Seal/Stamp -->
+      <circle cx="45" cy="55" r="8" fill="#D93838"/>
+      <!-- Text lines placeholder -->
+      <rect x="10" y="12" width="40" height="4" rx="2" fill="#8892B0"/>
+      <rect x="10" y="22" width="30" height="3" rx="1.5" fill="#A0AEC0"/>
+      <rect x="10" y="30" width="35" height="3" rx="1.5" fill="#A0AEC0"/>
+      <rect x="10" y="38" width="25" height="3" rx="1.5" fill="#A0AEC0"/>
+    </g>
+
+    <!-- Magnifying Glass representing the search action (搜查 - Lục soát, khám xét) -->
+    <g transform="translate(95, 80)">
+      <!-- Glass Lens Glow/Reflection -->
+      <circle cx="45" cy="45" r="40" fill="#F59E0B" fill-opacity="0.15"/>
+      <circle cx="45" cy="45" r="40" fill="none" stroke="#F59E0B" stroke-width="6"/>
+      
+      <!-- Lens Shine -->
+      <path d="M20 30 Q30 20 40 22" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-opacity="0.6"/>
+
+      <!-- Handle -->
+      <path d="M72 72 L110 110" stroke="#D97706" stroke-width="12" stroke-linecap="round"/>
+      <path d="M72 72 L110 110" stroke="#F59E0B" stroke-width="8" stroke-linecap="round"/>
+      
+      <!-- Handle Grip Details -->
+      <line x1="90" y1="90" x2="102" y2="102" stroke="#B45309" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    
+    <!-- Fingerprint / Hidden Evidence indicator under the lens -->
+    <g transform="translate(120, 105) scale(0.6)">
+      <path d="M10 20 C10 10 20 5 30 10 C40 15 45 25 40 35 C35 45 25 55 25 65" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" stroke-opacity="0.8"/>
+      <path d="M20 22 C20 15 25 12 30 15 C35 18 38 24 35 30 C32 36 26 42 26 50" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-opacity="0.8"/>
+    </g>
+  </g>
+</svg>

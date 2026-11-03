@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Mountain Background -->
+  <path d="M40 200 L120 80 L200 200 Z" fill="#2D343E"/>
+  <path d="M20 200 L80 120 L140 200 Z" fill="#3A424E"/>
+  
+  <!-- Tunnel Entrance (The focus of "兴建") -->
+  <path d="M90 140 C90 110, 150 110, 150 140 L150 180 L90 180 Z" fill="#1A1D24" stroke="#FFB800" stroke-width="4"/>
+  
+  <!-- Construction Elements -->
+  <!-- Excavator Arm -->
+  <path d="M160 160 L190 130 L200 140 L170 170" fill="#FFB800"/>
+  <rect x="185" y="125" width="15" height="10" rx="2" fill="#E0A000"/>
+  
+  <!-- Structural Beams/Scaffolding -->
+  <rect x="95" y="145" width="5" height="35" fill="#FFB800"/>
+  <rect x="140" y="145" width="5" height="35" fill="#FFB800"/>
+  <rect x="95" y="145" width="50" height="5" fill="#FFB800"/>
+  
+  <!-- Ground/Road -->
+  <path d="M0 180 L240 180 L240 240 L0 240 Z" fill="#252A33"/>
+  <path d="M90 180 L150 180 L160 220 L80 220 Z" fill="#3A424E"/>
+  
+  <!-- Construction Light -->
+  <circle cx="120" cy="130" r="8" fill="#FFD700" opacity="0.6"/>
+  <circle cx="120" cy="130" r="4" fill="#FFFFFF"/>
+</svg>

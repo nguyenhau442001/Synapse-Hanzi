@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Winding mountain road (Context: 在狭窄曲折的山道上行车) -->
+  <path d="M40 180 Q120 180 120 130 T200 80" fill="none" stroke="#2A2F3B" stroke-width="28" stroke-linecap="round"/>
+  <path d="M40 180 Q120 180 120 130 T200 80" fill="none" stroke="#3E4556" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- Car body (Modern sleek flat design, dark slate) -->
+  <g transform="translate(110, 95)">
+    <!-- Rear/Main Car Body -->
+    <path d="M -30 35 L 30 35 L 35 15 L 20 -5 L -20 -5 L -35 15 Z" fill="#2E3544"/>
+    <!-- Car Roof / Cabin -->
+    <path d="M -15 -5 L 12 -5 L 18 15 L -20 15 Z" fill="#252A36"/>
+    <!-- Window glass (dark tinted) -->
+    <path d="M -13 -7 L 10 -7 L 15 13 L -17 13 Z" fill="#14171E"/>
+    <!-- Wheels -->
+    <circle cx="-20" cy="35" r="9" fill="#111318"/>
+    <circle cx="-20" cy="35" r="4" fill="#4B5563"/>
+    <circle cx="20" cy="35" r="9" fill="#111318"/>
+    <circle cx="20" cy="35" r="4" fill="#4B5563"/>
+    <!-- Headlights (focus accent) -->
+    <rect x="32" y="16" width="4" height="6" rx="2" fill="#F59E0B"/>
+  </g>
+
+  <!-- Person leaning/stretching out of the window (Visualizing "探" - thò ra, vươn ra) -->
+  <g transform="translate(114, 98)">
+    <!-- Upper body leaning out at an angle -->
+    <path d="M -5 10 L 15 -2 L 25 -12 L 32 -8 L 22 6 L 2 18 Z" fill="#F97316"/> <!-- Clothing (vibrant orange accent for focus) -->
+    <!-- Head turning / looking out -->
+    <circle cx="28" cy="-14" r="7" fill="#FBBF24"/> <!-- Head/Face -->
+    <path d="M 23 -17 Q 27 -20 32 -17" fill="none" stroke="#1F2937" stroke-width="2" stroke-linecap="round"/> <!-- Hair -->
+    <!-- Arm reaching out into the open space -->
+    <path d="M 22 -6 L 36 -2 L 42 -7" fill="none" stroke="#FBBF24" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Motion / Action indicator lines showing projection/stretching outward -->
+  <path d="M 165 72 Q 175 68 185 75" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <path d="M 168 62 Q 178 58 188 65" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+</svg>

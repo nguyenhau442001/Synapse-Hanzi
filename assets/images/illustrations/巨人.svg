@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements (subtle architectural grid/constellation representing knowledge and standing high) -->
+  <g opacity="0.15" stroke="#64748B" stroke-width="1" stroke-dasharray="3 3">
+    <line x1="120" y1="20" x2="120" y2="220" />
+    <circle cx="120" cy="120" r="80" fill="none" />
+    <circle cx="120" cy="120" r="50" fill="none" />
+  </g>
+
+  <!-- Giant (representing the historical figure / giant of knowledge) -->
+  <g transform="translate(0, 10)">
+    <!-- Giant Body / Shoulders -->
+    <path d="M 60 170 C 60 130, 90 120, 120 120 C 150 120, 180 130, 180 170 L 190 210 L 50 210 Z" fill="#334155"/>
+    <path d="M 75 170 C 75 140, 95 130, 120 130 C 145 130, 165 140, 165 170 Z" fill="#475569"/>
+
+    <!-- Giant Head (subtle, abstract, noble profile/form) -->
+    <circle cx="120" cy="95" r="22" fill="#475569"/>
+    
+    <!-- Shoulders flat plateau for standing on -->
+    <rect x="90" y="116" width="60" height="8" rx="3" fill="#64748B"/>
+    <rect x="100" y="112" width="40" height="5" rx="2" fill="#94A3B8"/>
+  </g>
+
+  <!-- Glowing accent on giant's shoulders (focus point) -->
+  <ellipse cx="120" cy="116" rx="20" ry="4" fill="#F59E0B" opacity="0.6"/>
+
+  <!-- The "Standing On" Person (Newton / Successor looking further, orange accent) -->
+  <g transform="translate(0, -5)">
+    <!-- Small Person Body -->
+    <path d="M 112 110 C 112 100, 116 98, 120 98 C 124 98, 128 100, 128 110 L 130 125 L 110 125 Z" fill="#D97706"/>
+    <!-- Small Person Head -->
+    <circle cx="120" cy="90" r="7" fill="#F59E0B"/>
+    
+    <!-- Gesturing arms pointing far / looking into distance -->
+    <path d="M 120 103 L 138 95" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 120 103 L 105 105" stroke="#D97706" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Horizon / Vision line (representing "seeing further") -->
+  <g opacity="0.8">
+    <line x1="138" y1="90" x2="210" y2="70" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4"/>
+    <circle cx="210" cy="70" r="4" fill="#F59E0B"/>
+    <circle cx="220" cy="67" r="2" fill="#F59E0B" opacity="0.5"/>
+  </g>
+
+  <!-- Ambient light glow behind the scene -->
+  <circle cx="120" cy="110" r="40" fill="#F59E0B" opacity="0.08" filter="blur(10px)"/>
+</svg>

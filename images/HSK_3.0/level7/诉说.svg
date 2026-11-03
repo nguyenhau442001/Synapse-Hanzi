@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ancient City Wall -->
+  <path d="M40 180 L200 180 L200 100 L180 100 L180 80 L160 80 L160 100 L120 100 L120 80 L100 80 L100 100 L60 100 L60 80 L40 80 L40 100 Z" fill="#4A5568"/>
+  <path d="M40 180 L200 180 L200 190 L40 190 Z" fill="#2D3748"/>
+  
+  <!-- Cracks/Texture on wall -->
+  <path d="M70 120 L80 140 M150 110 L160 130 M110 150 L125 170" stroke="#2D3748" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Sunset Glow -->
+  <circle cx="120" cy="70" r="30" fill="#D69E2E" opacity="0.3"/>
+  <path d="M40 100 L200 100" stroke="#D69E2E" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Storytelling/Whispering effect (Visualizing the "telling" to the visitor) -->
+  <path d="M120 100 C 120 60, 160 60, 160 100" stroke="#F6AD55" stroke-width="3" fill="none" stroke-dasharray="4 4"/>
+  <path d="M120 100 C 120 40, 180 40, 180 100" stroke="#F6AD55" stroke-width="2" fill="none" stroke-dasharray="6 6" opacity="0.5"/>
+  
+  <!-- Visitor silhouette -->
+  <g transform="translate(180, 160) scale(0.8)">
+    <circle cx="10" cy="10" r="8" fill="#A0AEC0"/>
+    <path d="M2 20 L18 20 L15 40 L5 40 Z" fill="#A0AEC0"/>
+  </g>
+</svg>

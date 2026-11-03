@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for focus -->
+  <circle cx="120" cy="120" r="70" fill="#252A34" opacity="0.6"/>
+
+  <g transform="translate(0, 0)">
+    <!-- Shattered / Broken Old Object (Representing outdated ideas/barrier) -->
+    <!-- Left falling piece -->
+    <path d="M 85,90 L 110,75 L 100,120 Z" fill="#3A4256" stroke="#4F5D75" stroke-width="2" stroke-linejoin="round" transform="rotate(-15 95 100)" />
+    
+    <!-- Right falling piece -->
+    <path d="M 155,90 L 130,75 L 140,130 Z" fill="#2F3644" stroke="#4F5D75" stroke-width="2" stroke-linejoin="round" transform="rotate(20 145 100)" />
+    
+    <!-- Bottom cracked base / fragments -->
+    <path d="M 90,150 L 150,150 L 135,175 L 105,175 Z" fill="#333B4C" stroke="#4F5D75" stroke-width="2" stroke-linejoin="round"/>
+    
+    <!-- Floating debris -->
+    <polygon points="70,110 80,105 78,118" fill="#3A4256"/>
+    <polygon points="170,120 165,135 175,128" fill="#2F3644"/>
+
+    <!-- Dynamic Breaking Hammer / Force (Orange/Gold accent) -->
+    <!-- Handle -->
+    <path d="M 68,188 L 160,82" stroke="#A0AAB8" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 68,188 L 160,82" stroke="#687385" stroke-width="8" stroke-linecap="round" stroke-dasharray="25 15" />
+    
+    <!-- Hammer Head (Impact moment with glowing action lines) -->
+    <path d="M 152,65 L 192,45 L 202,68 L 162,88 Z" fill="#FFB703" stroke="#FD9E02" stroke-width="2" stroke-linejoin="round"/>
+    <rect x="148" y="62" width="10" height="30" rx="3" fill="#FB8500" transform="rotate(26 153 77)"/>
+
+    <!-- Impact Spark / Burst Effect -->
+    <g transform="translate(135, 95)">
+      <line x1="0" y1="0" x2="-22" y2="-18" stroke="#FFB703" stroke-width="3" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="15" y2="-25" stroke="#FFB703" stroke-width="3" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="-25" y2="10" stroke="#FFB703" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="-12" cy="-10" r="3" fill="#FFE169"/>
+      <circle cx="8" cy="-16" r="2" fill="#FFE169"/>
+    </g>
+  </g>
+</svg>

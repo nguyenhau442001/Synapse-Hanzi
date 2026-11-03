@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative subtle background elements (modern dark mode culinary theme) -->
+  <circle cx="120" cy="120" r="88" fill="#222732" opacity="0.6"/>
+  <circle cx="120" cy="120" r="72" fill="#1E232D"/>
+
+  <!-- Stylized Elegant Japanese Bento / Serving Plate (Represents 料理 - Dish/Cuisine) -->
+  <!-- Plate Base -->
+  <rect x="55" y="65" width="130" height="110" rx="16" fill="#282E3D" stroke="#3A4256" stroke-width="2"/>
+  <rect x="63" y="73" width="114" height="94" rx="10" fill="#15181F"/>
+
+  <!-- Bento Compartments / Culinary Elements -->
+  <!-- Left Section: Fresh Sashimi/Salmon slice -->
+  <path d="M78 95 Q90 88 105 95 L108 125 Q90 132 78 125 Z" fill="#FF6B4A"/>
+  <path d="M82 101 Q90 97 100 101" stroke="#FFA38F" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <path d="M80 111 Q90 107 102 111" stroke="#FFA38F" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Right Top Section: Rice / Onigiri with Nori -->
+  <path d="M125 90 C125 82 155 82 155 90 C155 98 125 98 125 90 Z" fill="#E2E8F0"/>
+  <rect x="136" y="87" width="8" height="12" fill="#2D3748" rx="2"/>
+
+  <!-- Right Bottom Section: Fresh Vegetables / Garnish (Broccoli/Herbs) -->
+  <circle cx="140" cy="135" r="10" fill="#38A169"/>
+  <circle cx="152" cy="130" r="8" fill="#48BB78"/>
+  <circle cx="148" cy="142" r="9" fill="#2F855A"/>
+  <rect x="142" y="145" width="4" height="12" fill="#D69E2E" rx="1"/>
+
+  <!-- Professional Chef's Knife (Represents 刀工 / Preparation) slicing across diagonally -->
+  <!-- Knife Blade -->
+  <path d="M45 195 L180 60 L188 68 L60 203 Z" fill="#E2E8F0"/>
+  <!-- Blade Edge Highlight -->
+  <path d="M45 195 L180 60 L176 64 L53 200 Z" fill="#CBD5E1"/>
+  <!-- Knife Handle -->
+  <path d="M45 195 L32 208 C28 212 28 218 32 222 C36 226 42 226 46 222 L58 210 Z" fill="#2D3748"/>
+  <circle cx="39" cy="214" r="1.5" fill="#718096"/>
+  <circle cx="47" cy="218" r="1.5" fill="#718096"/>
+
+  <!-- Steam / Culinary Essence Accents (Gold accent for focus) -->
+  <path d="M100 52 C96 46 104 40 100 34" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M120 48 C116 42 124 36 120 30" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M140 52 C136 46 144 40 140 34" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+</svg>

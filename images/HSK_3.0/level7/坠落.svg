@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Motion lines indicating rapid descent -->
+  <g stroke="#4A5568" stroke-width="2" stroke-dasharray="4 4" opacity="0.6">
+    <line x1="120" y1="40" x2="120" y2="180"/>
+    <line x1="135" y1="30" x2="135" y2="170"/>
+    <line x1="105" y1="30" x2="105" y2="170"/>
+  </g>
+
+  <!-- Drone body -->
+  <g transform="translate(120, 140) rotate(15)">
+    <rect x="-30" y="-10" width="60" height="20" rx="4" fill="#F6AD55"/>
+    <!-- Propellers -->
+    <ellipse cx="-25" cy="-20" rx="15" ry="2" fill="#A0AEC0"/>
+    <ellipse cx="25" cy="-20" rx="15" ry="2" fill="#A0AEC0"/>
+    <!-- Damaged/Tilted effect -->
+    <path d="M-10 -10 L-20 -25 M10 -10 L20 -25" stroke="#2D3748" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Smoke/Turbulence trail -->
+  <path d="M120 140 Q110 100 120 60 Q130 20 120 0" fill="none" stroke="#4A5568" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  
+  <!-- Ground reference -->
+  <rect x="40" y="210" width="160" height="4" rx="2" fill="#2D3748"/>
+</svg>

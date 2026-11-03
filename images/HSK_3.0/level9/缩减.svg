@@ -1,0 +1,33 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Desk surface -->
+  <rect x="40" y="160" width="160" height="12" rx="2" fill="#2D343E"/>
+  
+  <!-- Stack of paper documents (Before) -->
+  <rect x="140" y="100" width="40" height="60" rx="2" fill="#3D4756"/>
+  <rect x="142" y="105" width="36" height="5" rx="1" fill="#5D6B82"/>
+  <rect x="142" y="115" width="36" height="5" rx="1" fill="#5D6B82"/>
+  <rect x="142" y="125" width="36" height="5" rx="1" fill="#5D6B82"/>
+  <rect x="142" y="135" width="36" height="5" rx="1" fill="#5D6B82"/>
+  <rect x="142" y="145" width="36" height="5" rx="1" fill="#5D6B82"/>
+
+  <!-- Character Arm and Scissors -->
+  <path d="M60 160 L80 100" stroke="#FFB84D" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="60" cy="160" r="10" fill="#FFB84D"/>
+  
+  <!-- Scissors -->
+  <g transform="translate(70, 80) rotate(20)">
+    <path d="M10 20 L40 50" stroke="#E0E6ED" stroke-width="4" stroke-linecap="round"/>
+    <path d="M40 20 L10 50" stroke="#E0E6ED" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="10" cy="20" r="5" fill="none" stroke="#E0E6ED" stroke-width="3"/>
+    <circle cx="10" cy="50" r="5" fill="none" stroke="#E0E6ED" stroke-width="3"/>
+  </g>
+  
+  <!-- Motion lines for cutting -->
+  <path d="M120 110 L140 110" stroke="#FFB84D" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Resulting smaller stack -->
+  <rect x="50" y="140" width="40" height="20" rx="2" fill="#FFB84D"/>
+  <rect x="52" y="145" width="36" height="5" rx="1" fill="#2D343E"/>
+</svg>

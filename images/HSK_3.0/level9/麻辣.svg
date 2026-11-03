@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Szechuan Peppercorn (The 'Ma' - Numbing sensation) -->
+  <g transform="translate(70, 120)">
+    <circle cx="0" cy="0" r="25" fill="#FFB84D"/>
+    <circle cx="0" cy="0" r="18" fill="#1A1D24"/>
+    <path d="M-10 -10 L10 10 M-10 10 L10 -10" stroke="#FFB84D" stroke-width="4" stroke-linecap="round"/>
+    <path d="M0 -25 L-5 -35 M0 -25 L5 -35 M0 25 L-5 35 M0 25 L5 35" stroke="#FFB84D" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Chili Pepper (The 'La' - Spicy sensation) -->
+  <g transform="translate(170, 120)">
+    <path d="M0 -40 C 20 -40 30 -20 30 0 C 30 30 10 40 0 40 C -10 40 -30 30 -30 0 C -30 -20 -20 -40 0 -40" fill="#FF4D4D"/>
+    <path d="M0 -40 L5 -50 M-5 -40 L0 -50" stroke="#FF4D4D" stroke-width="4" stroke-linecap="round"/>
+    <path d="M-10 -15 L10 -15 M-15 -5 L15 -5 M-10 5 L10 5" stroke="#1A1D24" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+  </g>
+  
+  <!-- Visualizing the 'Numbing/Spicy' effect (The contrast/sensation) -->
+  <path d="M120 120 L120 120" stroke="#FFB84D" stroke-width="4" stroke-dasharray="8 8"/>
+  <path d="M95 120 L145 120" stroke="#FF4D4D" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Heat waves/Numbing vibration lines -->
+  <path d="M100 80 Q 120 60 140 80" fill="none" stroke="#FFB84D" stroke-width="3" stroke-linecap="round"/>
+  <path d="M100 70 Q 120 50 140 70" fill="none" stroke="#FF4D4D" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Ballot Box representation in background to ground context -->
+    <rect x="150" y="110" width="56" height="66" rx="4" fill="#2B313C" stroke="#3A4250" stroke-width="2"/>
+    <path d="M168 110h20v6h-20z" fill="#4B5563"/>
+    <rect x="170" y="125" width="16" height="4" rx="2" fill="#1A1D24"/>
+
+    <!-- Voter Character (Focused on Noun concept: Cử tri / Eligible Voter) -->
+    <!-- Body/Suit -->
+    <path d="M90 155c0-18.78 15.22-34 34-34s34 15.22 34 34v21H90v-21z" fill="#3B82F6"/>
+    <path d="M124 121l-14 20h28l-14-20z" fill="#1E293B"/> <!-- Collar/Tie base -->
+    <polygon points="124,131 120,155 128,155" fill="#F59E0B"/> <!-- Gold Tie -->
+
+    <!-- Head & Face -->
+    <circle cx="124" cy="91" r="21" fill="#FBBF24"/>
+    <!-- Hair -->
+    <path d="M104 90c0-12 9-22 20-22s20 10 20 22c0 2-4 2-4 2s-2-12-16-12-16 12-16 12-4 0-4-2z" fill="#1E293B"/>
+
+    <!-- Arm holding ballot/ID -->
+    <path d="M154 135c5 5 18 12 25 10l6-15c-5-3-15-2-21-7l-10 12z" fill="#FBBF24"/>
+    
+    <!-- Verified Badge / Identity Card representing the "Registered / Legal" aspect -->
+    <rect x="58" y="95" width="44" height="32" rx="6" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="2"/>
+    <circle cx="72" cy="111" r="7" fill="#9CA3AF"/>
+    <path d="M84 107h12M84 115h8" stroke="#4B5563" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Checkmark Badge highlighting eligibility -->
+    <circle cx="88" cy="119" r="14" fill="#10B981" stroke="#1A1D24" stroke-width="3"/>
+    <path d="M82 119l4 4 8-9" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

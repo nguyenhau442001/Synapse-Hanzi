@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle ambient glow/horizon representing distance and homesickness -->
+  <circle cx="120" cy="115" r="70" fill="#252A34" opacity="0.6"/>
+  <ellipse cx="120" cy="175" rx="80" ry="15" fill="#15181E"/>
+
+  <!-- Distant warm glowing home / window (representing family reunion and destination) -->
+  <g transform="translate(120, 95)">
+    <!-- Roof -->
+    <polygon points="0,-25 -32,0 32,0" fill="#D97706"/>
+    <!-- House body -->
+    <rect x="-24" y="0" width="48" height="38" fill="#B45309"/>
+    <!-- Warm glowing window -->
+    <rect x="-10" y="10" width="20" height="20" rx="3" fill="#FBBF24"/>
+    <line x1="0" y1="10" x2="0" y2="30" stroke="#B45309" stroke-width="2"/>
+    <line x1="-10" y1="20" x2="10" y2="20" stroke="#B45309" stroke-width="2"/>
+  </g>
+
+  <!-- Distance Indicator / Pathway dots leading to home -->
+  <circle cx="120" cy="155" r="3" fill="#4B5563"/>
+  <circle cx="120" cy="142" r="2.5" fill="#6B7280"/>
+  <circle cx="120" cy="130" r="2" fill="#9CA3AF"/>
+
+  <!-- Central Character (Traveler / Wanderer looking out toward the distant home) -->
+  <g transform="translate(120, 140)">
+    <!-- Body / Coat -->
+    <path d="M-18,35 C-18,22 -10,18 0,18 C10,18 18,22 18,35 L22,65 C22,68 19,70 16,70 L-16,70 C-19,70 -22,68 -22,65 Z" fill="#3B82F6"/>
+    <!-- Scarf indicating travel -->
+    <path d="M-12,18 C-5,15 5,15 12,18 C15,19 12,26 8,24 C2,22 -2,22 -8,24 C-12,26 -15,19 -12,18 Z" fill="#F59E0B"/>
+    <!-- Head -->
+    <circle cx="0" cy="5" r="11" fill="#FDE68A"/>
+    <!-- Hair -->
+    <path d="M-11,2 C-8,-5 8,-5 11,2 C8,0 -8,0 -11,2 Z" fill="#1F2937"/>
+  </g>
+
+  <!-- Physical Object: Luggage suitcase standing beside the traveler, signifying journey/wanderer -->
+  <g transform="translate(72, 175)">
+    <!-- Suitcase body -->
+    <rect x="0" y="0" width="26" height="34" rx="4" fill="#EF4444"/>
+    <!-- Suitcase details (handle & straps) -->
+    <path d="M7,0 L7,-5 C7,-7 9,-8 13,-8 C17,-8 19,-7 19,-5 L19,0" fill="none" stroke="#9CA3AF" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="12" x2="26" y2="12" stroke="#DC2626" stroke-width="2"/>
+    <!-- Wheels -->
+    <rect x="3" y="34" width="4" height="3" rx="1" fill="#4B5563"/>
+    <rect x="19" y="34" width="4" height="3" rx="1" fill="#4B5563"/>
+  </g>
+
+  <!-- Expressive "Gaze/Yearning" focal rays directed forward & upward toward home -->
+  <g opacity="0.4">
+    <line x1="120" y1="130" x2="120" y2="100" stroke="#FBBF24" stroke-width="2" stroke-dasharray="3,3"/>
+  </g>
+</svg>

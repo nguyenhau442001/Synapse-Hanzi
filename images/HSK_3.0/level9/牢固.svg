@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Bedrock Layer -->
+  <path d="M20 190 L220 190 L220 220 L20 220 Z" fill="#2D3436"/>
+  <path d="M20 190 L220 190 L230 205 L10 205 Z" fill="#3D4548"/>
+  
+  <!-- Deep Concrete Pillars -->
+  <rect x="50" y="140" width="20" height="60" fill="#7F8C8D"/>
+  <rect x="110" y="120" width="20" height="80" fill="#7F8C8D"/>
+  <rect x="170" y="140" width="20" height="60" fill="#7F8C8D"/>
+  
+  <!-- Bridge Foundation/Base -->
+  <rect x="30" y="110" width="180" height="30" fill="#F39C12"/>
+  <rect x="30" y="100" width="180" height="10" fill="#E67E22"/>
+  
+  <!-- Structural Reinforcement Details -->
+  <line x1="60" y1="140" x2="60" y2="200" stroke="#95A5A6" stroke-width="2" stroke-dasharray="4 4"/>
+  <line x1="120" y1="120" x2="120" y2="200" stroke="#95A5A6" stroke-width="2" stroke-dasharray="4 4"/>
+  <line x1="180" y1="140" x2="180" y2="200" stroke="#95A5A6" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>

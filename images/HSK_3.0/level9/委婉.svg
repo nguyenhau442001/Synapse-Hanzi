@@ -1,0 +1,42 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for 委婉 (Tactful, subtle, polite diplomacy / indirect courteous communication) -->
+  <g transform="translate(0, 0)">
+    <!-- Elegant curving speech bubble / diplomatic gesture representation -->
+    <!-- Soft glowing background aura for warmth and politeness -->
+    <circle cx="120" cy="115" r="55" fill="#252A34" opacity="0.8"/>
+
+    <!-- Subtle waving ribbon / flowing diplomatic scroll symbolizing tact and indirect grace -->
+    <path d="M 75 135 C 90 155, 150 155, 165 135 C 180 115, 150 85, 120 100 C 90 115, 60 115, 75 135 Z" fill="none" stroke="#3A4252" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Primary flowing diplomatic ribbon (Gold/Orange accent for focus, representing polite, graceful speech) -->
+    <path d="M 70 120 C 95 150, 145 140, 170 105 C 185 85, 160 70, 140 85 C 120 100, 95 90, 70 120 Z" fill="#F39C12" opacity="0.15"/>
+    <path d="M 72 118 C 95 145, 145 135, 168 103" fill="none" stroke="#F39C12" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Gentle bowing / respectful silhouette interaction or polite gesture -->
+    <!-- Person A (Offering a polite, measured document / message) -->
+    <circle cx="85" cy="95" r="12" fill="#E2E8F0"/>
+    <path d="M 70 130 C 70 115, 80 110, 85 110 C 90 110, 100 115, 100 130 Z" fill="#3B82F6"/>
+    <!-- Gentle outstretched arm holding a soft-edged card/message -->
+    <path d="M 85 115 L 105 120" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Person B (Receiving with understanding, nodding gesture) -->
+    <circle cx="155" cy="95" r="12" fill="#E2E8F0"/>
+    <path d="M 140 130 C 140 115, 150 110, 155 110 C 160 110, 170 115, 170 130 Z" fill="#475569"/>
+    <!-- Receptive gentle arm -->
+    <path d="M 155 115 L 135 120" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Center elegant bridge / delicate leaf-like envelope representing diplomatic tact -->
+    <g transform="translate(120, 118)">
+      <path d="M -16 0 C -16 -12, 16 -12, 16 0 C 16 12, -16 12, -16 0 Z" fill="#1A1D24" stroke="#F39C12" stroke-width="2.5"/>
+      <path d="M -12 -2 L 0 5 L 12 -2" fill="none" stroke="#F39C12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Subtle decorative harmonious nodes representing constructive dialogue -->
+    <circle cx="120" cy="75" r="3" fill="#F39C12"/>
+    <circle cx="95" cy="78" r="2" fill="#3B82F6"/>
+    <circle cx="145" cy="78" r="2" fill="#3B82F6"/>
+  </g>
+</svg>

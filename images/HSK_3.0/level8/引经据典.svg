@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ancient Scroll Base -->
+  <path d="M70 180h100v15c0 8-8 15-15 15H85c-8 0-15-7-15-15v-15z" fill="#3D4451"/>
+  <path d="M70 45h100v15c0 8-8 15-15 15H85c-8 0-15-7-15-15V45z" fill="#3D4451"/>
+  
+  <!-- Scroll Paper -->
+  <rect x="80" y="60" width="80" height="120" fill="#E0E6ED"/>
+  
+  <!-- Text Lines (Abstracted as lines, not letters) -->
+  <rect x="95" y="75" width="50" height="4" fill="#1A1D24" opacity="0.6"/>
+  <rect x="95" y="85" width="50" height="4" fill="#1A1D24" opacity="0.6"/>
+  <rect x="95" y="95" width="50" height="4" fill="#1A1D24" opacity="0.6"/>
+  
+  <!-- Golden Quill/Pen pointing to the scroll -->
+  <path d="M160 130l30-30c5-5 10-5 15 0l5 5c5 5 5 10 0 15l-30 30" fill="#FFB84D"/>
+  <path d="M160 130l10 10" stroke="#FFB84D" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Decorative highlight on scroll -->
+  <path d="M95 115h50v20H95z" fill="#FFB84D" opacity="0.2"/>
+  <rect x="95" y="115" width="50" height="20" stroke="#FFB84D" stroke-width="2" fill="none"/>
+</svg>

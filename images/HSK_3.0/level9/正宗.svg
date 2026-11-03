@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Bowl of Sichuan Dan Dan Noodles -->
+  <g transform="translate(120, 130)">
+    <!-- Bowl -->
+    <path d="M-60,0 C-60,40 -30,60 0,60 C30,60 60,40 60,0 Z" fill="#2C313C" stroke="#FFB800" stroke-width="3"/>
+    <ellipse cx="0" cy="0" rx="60" ry="15" fill="#3D4454" stroke="#FFB800" stroke-width="3"/>
+    
+    <!-- Noodles -->
+    <path d="M-40,-10 C-20,-30 20,-30 40,-10 M-30,-5 C-10,-25 10,-25 30,-5" fill="none" stroke="#E0A850" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Toppings (Minced meat and chili oil) -->
+    <circle cx="-10" cy="-15" r="8" fill="#D9534F"/>
+    <circle cx="15" cy="-10" r="6" fill="#D9534F"/>
+    <path d="M-20,-5 L-10,5 L0,-5" fill="#5CB85C"/>
+    <path d="M10,-5 L20,5 L30,-5" fill="#5CB85C"/>
+  </g>
+
+  <!-- Stamp of Authenticity (Seal) -->
+  <g transform="translate(180, 60)">
+    <rect x="-25" y="-25" width="50" height="50" rx="5" fill="none" stroke="#FFB800" stroke-width="4" stroke-dasharray="8 4"/>
+    <path d="M-15,-5 L-5,5 L15,-15" fill="none" stroke="#FFB800" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Steam/Aroma lines -->
+  <path d="M-20,-20 C-30,-40 -10,-50 -20,-70" fill="none" stroke="#FFB800" stroke-width="2" opacity="0.6"/>
+  <path d="M20,-20 C30,-40 10,-50 20,-70" fill="none" stroke="#FFB800" stroke-width="2" opacity="0.6"/>
+</svg>

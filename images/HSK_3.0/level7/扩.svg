@@ -1,0 +1,35 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Central Concept: Expanding a factory/production footprint -->
+  <!-- Base structure -->
+  <rect x="80" y="140" width="80" height="60" fill="#3D4451" rx="4"/>
+  <path d="M80 140 L120 110 L160 140 Z" fill="#5D677A"/>
+  
+  <!-- Expanding Action: Human hands pulling outward -->
+  <g fill="#FFB84D">
+    <!-- Left hand -->
+    <path d="M70 150 L50 150 L50 170 L70 170 Z" />
+    <path d="M50 155 L40 155 L40 165 L50 165 Z" />
+  </g>
+  
+  <g fill="#FFB84D">
+    <!-- Right hand -->
+    <path d="M170 150 L190 150 L190 170 L170 170 Z" />
+    <path d="M190 155 L200 155 L200 165 L190 165 Z" />
+  </g>
+
+  <!-- Motion lines indicating expansion -->
+  <g stroke="#FFB84D" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 6">
+    <path d="M70 130 L40 130" />
+    <path d="M70 140 L50 140" />
+    <path d="M170 130 L200 130" />
+    <path d="M170 140 L190 140" />
+  </g>
+
+  <!-- Expanding footprint outline -->
+  <rect x="60" y="130" width="120" height="80" fill="none" stroke="#FFB84D" stroke-width="2" stroke-dasharray="4 4" rx="4"/>
+  
+  <!-- Ground line -->
+  <line x1="40" y1="210" x2="200" y2="210" stroke="#5D677A" stroke-width="2"/>
+</svg>

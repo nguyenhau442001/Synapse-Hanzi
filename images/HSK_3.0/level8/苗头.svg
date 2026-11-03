@@ -1,0 +1,39 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle floor/ground shadow -->
+  <ellipse cx="120" cy="185" rx="60" ry="12" fill="#111318"/>
+
+  <!-- Ceramic Pot -->
+  <g>
+    <!-- Pot Rim -->
+    <path d="M 85 140 L 155 140 L 150 155 L 90 155 Z" fill="#3E4451"/>
+    <!-- Pot Body -->
+    <path d="M 92 155 L 148 155 C 153 190, 127 190, 120 190 C 113 190, 87 190, 92 155 Z" fill="#2E333D"/>
+    <!-- Pot Highlight -->
+    <path d="M 96 160 C 98 175, 102 185, 105 188 C 101 182, 98 172, 96 160 Z" fill="#4E5668" opacity="0.4"/>
+  </g>
+
+  <!-- Soil inside pot -->
+  <ellipse cx="120" cy="147" rx="30" ry="6" fill="#1F232B"/>
+
+  <!-- The "Miáotou" - Sprout with initial spark/flame cue representing fire/early signs -->
+  <g>
+    <!-- Sprout Stem -->
+    <path d="M 120 147 C 120 130, 115 115, 105 105" fill="none" stroke="#68D391" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Left Leaf -->
+    <path d="M 107 115 C 95 110, 85 120, 90 128 C 96 130, 102 125, 107 115 Z" fill="#48BB78"/>
+
+    <!-- Right Leaf -->
+    <path d="M 106 122 C 118 115, 128 123, 122 131 C 116 132, 111 127, 106 122 Z" fill="#38A169"/>
+
+    <!-- Emerging Glowing Bud / Spark Tip (Visualizing "苗头" as initial sign/sprout of fire/events) -->
+    <circle cx="103" cy="101" r="7" fill="#F6AD55"/>
+    <circle cx="103" cy="101" r="3" fill="#FFF5F5"/>
+  </g>
+
+  <!-- Focused Accent Glow overlaying the sprout tip -->
+  <circle cx="103" cy="101" r="16" fill="#F6AD55" opacity="0.15"/>
+</svg>

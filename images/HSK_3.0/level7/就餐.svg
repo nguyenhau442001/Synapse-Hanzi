@@ -1,0 +1,46 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Table Base -->
+  <circle cx="120" cy="130" r="70" fill="#222730" stroke="#313846" stroke-width="4"/>
+  
+  <!-- Buffet Plate (Center) -->
+  <circle cx="120" cy="130" r="42" fill="#2E3644" stroke="#3E4A5C" stroke-width="3"/>
+  <circle cx="120" cy="130" r="32" fill="#1A1D24"/>
+  
+  <!-- Food items on plate (Stylized modern flat vector food) -->
+  <!-- Salad / Green garnish -->
+  <path d="M105 120 C 108 112, 115 110, 120 115 C 125 110, 132 112, 135 120 C 138 128, 130 135, 120 132 C 110 135, 102 128, 105 120 Z" fill="#2ECC71" opacity="0.85"/>
+  <circle cx="115" cy="122" r="3" fill="#E74C3C"/>
+  <circle cx="125" cy="125" r="2.5" fill="#F1C40F"/>
+  
+  <!-- Hot Dish / Slice -->
+  <path d="M125 133 C 132 133, 138 138, 138 145 C 138 150, 130 152, 125 150 Z" fill="#E67E22" opacity="0.9"/>
+
+  <!-- Cutlery: Fork (Left) -->
+  <g transform="translate(48, 90)">
+    <!-- Handle -->
+    <rect x="4" y="36" width="4" height="44" rx="2" fill="#94A3B8"/>
+    <!-- Tines -->
+    <path d="M3 10 L3 36 L9 36 L9 10 Z" fill="#94A3B8"/>
+    <path d="M1 10 C 1 6, 11 6, 11 10 Z" fill="#94A3B8"/>
+    <line x1="6" y1="12" x2="6" y2="30" stroke="#1A1D24" stroke-width="1.5"/>
+  </g>
+
+  <!-- Cutlery: Spoon (Right) -->
+  <g transform="translate(176, 90)">
+    <!-- Handle -->
+    <rect x="4" y="36" width="4" height="44" rx="2" fill="#94A3B8"/>
+    <!-- Bowl -->
+    <ellipse cx="6" cy="20" rx="7" ry="10" fill="#94A3B8"/>
+  </g>
+
+  <!-- Chopsticks (Top) -->
+  <g transform="translate(120, 48)">
+    <rect x="-35" y="0" width="70" height="3.5" rx="1.75" fill="#D97706" transform="rotate(-12)" />
+    <rect x="-35" y="6" width="70" height="3.5" rx="1.75" fill="#F59E0B" transform="rotate(-6)" />
+  </g>
+
+  <!-- Focal Accent Glow / Element -->
+  <circle cx="120" cy="130" r="85" fill="none" stroke="#F59E0B" stroke-width="2" stroke-dasharray="8 8" opacity="0.4"/>
+</svg>

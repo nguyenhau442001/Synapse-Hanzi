@@ -1,0 +1,49 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Main Centerpiece: Professional Handshake / Partnership Object representing 合伙 (Chung vốn / Hợp tác làm ăn) -->
+    
+    <!-- Background subtle glow representing business venture / tech startup -->
+    <circle cx="120" cy="115" r="55" fill="#222A38" opacity="0.8"/>
+
+    <!-- Desk / Surface base -->
+    <path d="M 60 165 L 180 165" stroke="#2E384D" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Document / Contract (Business agreement) -->
+    <g transform="translate(95, 120)">
+      <rect x="0" y="0" width="50" height="40" rx="3" fill="#2E384D"/>
+      <rect x="6" y="8" width="20" height="3" rx="1.5" fill="#4B5E7A"/>
+      <rect x="6" y="15" width="38" height="2" rx="1" fill="#4B5E7A"/>
+      <rect x="6" y="21" width="30" height="2" rx="1" fill="#4B5E7A"/>
+      <circle cx="38" cy="30" r="5" fill="#E6A15C"/>
+    </g>
+
+    <!-- Left Person Cuffs & Arm (Business attire - Deep Blue) -->
+    <path d="M 50 145 L 85 130" stroke="#3B4E6B" stroke-width="18" stroke-linecap="round"/>
+    <path d="M 75 125 L 105 115" stroke="#E2E8F0" stroke-width="10" stroke-linecap="round"/> <!-- Shirt cuff -->
+
+    <!-- Right Person Cuffs & Arm (Business attire - Slate/Teal) -->
+    <path d="M 190 145 L 155 130" stroke="#334155" stroke-width="18" stroke-linecap="round"/>
+    <path d="M 165 125 L 135 115" stroke="#E2E8F0" stroke-width="10" stroke-linecap="round"/> <!-- Shirt cuff -->
+
+    <!-- Handshake Core (Central physical action representing partnership) -->
+    <!-- Left Hand -->
+    <path d="M 95 117 C 105 115, 110 110, 115 113 C 118 115, 118 118, 115 122" fill="none" stroke="#FCE7C8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Right Hand (Interlocking) -->
+    <path d="M 145 117 C 135 115, 130 110, 125 113 C 122 115, 122 118, 125 122" fill="none" stroke="#E8C39E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Focal Accent: Glowing Gold Coin / Venture Capital (Symbolizing capital pooling / chung vốn) -->
+    <circle cx="120" cy="85" r="18" fill="#D97706"/>
+    <circle cx="120" cy="85" r="14" fill="#F59E0B"/>
+    <text x="120" y="90" font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="#78350F" text-anchor="middle">$</text>
+
+    <!-- Accent sparkles for business success / green tech startup concept -->
+    <g fill="#10B981">
+      <path d="M 65 75 Q 65 80 60 80 Q 65 80 65 85 Q 65 80 70 80 Q 65 80 65 75 Z"/>
+      <path d="M 175 75 Q 175 80 170 80 Q 175 80 175 85 Q 175 80 180 80 Q 175 80 175 75 Z"/>
+    </g>
+  </g>
+</svg>

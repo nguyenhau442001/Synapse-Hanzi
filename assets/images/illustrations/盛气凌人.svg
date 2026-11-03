@@ -1,0 +1,42 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for 盛气凌人 (Arrogant, overbearing, looking down on others) -->
+  <g transform="translate(0, 10)">
+    <!-- Floor line -->
+    <line x1="40" y1="180" x2="200" y2="180" stroke="#2A2F3A" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Subordinate / Looked-down person (smaller, leaning back, submissive posture) -->
+    <g transform="translate(65, 125)">
+      <!-- Body/Shoulders -->
+      <path d="M 0,55 C 0,35 15,25 25,25 C 35,25 50,35 50,55 Z" fill="#4A5568"/>
+      <!-- Head -->
+      <circle cx="25" cy="10" r="10" fill="#A0AEC0"/>
+      <!-- Nervous/Submissive arm gesture -->
+      <path d="M 10,35 L 5,45" stroke="#A0AEC0" stroke-width="4" stroke-linecap="round"/>
+    </g>
+
+    <!-- Dominant / Arrogant person (taller, leaning forward, looking down contemptuously) -->
+    <g transform="translate(115, 65)">
+      <!-- Raised Head / Chin up -->
+      <circle cx="35" cy="25" r="14" fill="#F6AD55"/>
+      <!-- Smug facial expression detail (eyebrow angle) -->
+      <line x1="28" y1="20" x2="38" y2="23" stroke="#C05621" stroke-width="2" stroke-linecap="round"/>
+
+      <!-- Broad shoulders / Overbearing posture leaning forward -->
+      <path d="M 0,115 C 0,85 15,65 35,65 C 65,65 75,95 75,115 Z" fill="#DD6B20"/>
+
+      <!-- Pointing/Accusatory arm stretching downward toward the other person -->
+      <path d="M 50,75 L 85,100 L 95,95" fill="none" stroke="#DD6B20" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="95" cy="95" r="5" fill="#F6AD55"/>
+    </g>
+
+    <!-- Visual metaphors of oppressive/arrogant aura (sharp angular shapes overhead) -->
+    <g transform="translate(130, 45)">
+      <polygon points="0,0 15,-15 10,5" fill="#ED8936" opacity="0.4"/>
+      <polygon points="20,-5 35,-25 25,-5" fill="#ED8936" opacity="0.6"/>
+      <polygon points="40,0 60,-15 45,10" fill="#ED8936" opacity="0.5"/>
+    </g>
+  </g>
+</svg>

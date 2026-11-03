@@ -1,0 +1,86 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Adjective Visual Contrast: Left side chaotic/polluted vs Right side pure/clean (洁净) -->
+  <defs>
+    <!-- Left side polluted water gradient -->
+    <linearGradient id="pollutedWater" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3D352A"/>
+      <stop offset="100%" stop-color="#241E18"/>
+    </linearGradient>
+    
+    <!-- Right side pure water gradient -->
+    <linearGradient id="pureWater" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0077FF" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <!-- Glow for pure side -->
+    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Central dividing purifying element / Filter core -->
+  <g transform="translate(120, 120)">
+    <!-- Vertical transition pipeline/core -->
+    <rect x="-6" y="-80" width="12" height="160" rx="4" fill="#2E3440"/>
+    <circle cx="0" cy="0" r="18" fill="#FFB703" filter="url(#cyanGlow)"/>
+    <circle cx="0" cy="0" r="10" fill="#1A1D24"/>
+  </g>
+
+  <!-- LEFT SIDE: Polluted / Turbid state (Untreated industrial water) -->
+  <g transform="translate(0, 0)">
+    <!-- Background container flask left -->
+    <path d="M 50,60 L 70,60 L 70,80 L 95,170 C 98,178 92,185 84,185 L 36,185 C 28,185 22,178 25,170 L 50,80 Z" fill="none" stroke="#4C566A" stroke-width="4" stroke-linejoin="round"/>
+    
+    <!-- Turbid liquid inside -->
+    <path d="M 28,120 Q 40,110 60,125 T 92,120 L 94,170 C 95,176 90,181 84,181 L 36,181 C 30,181 25,176 28,170 Z" fill="url(#pollutedWater)"/>
+    
+    <!-- Impurities / Particles in polluted water -->
+    <circle cx="45" cy="140" r="3.5" fill="#885B3A"/>
+    <circle cx="75" cy="155" r="4.5" fill="#6B4423"/>
+    <circle cx="60" cy="165" r="3" fill="#885B3A"/>
+    <path d="M 35,150 Q 40,145 45,152" stroke="#6B4423" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Upward rising unfiltered particle icons (grey/dark) -->
+    <circle cx="60" cy="95" r="2" fill="#4C566A"/>
+    <circle cx="50" cy="105" r="3" fill="#4C566A"/>
+  </g>
+
+  <!-- RIGHT SIDE: Pristine, Crystal Clear State (洁净) - Scaled up/emphasized for adjective focus -->
+  <g transform="translate(0, 0)">
+    <!-- Background container flask right (Crystal clean) -->
+    <path d="M 170,60 L 190,60 L 190,80 L 215,170 C 218,178 212,185 204,185 L 156,185 C 148,185 142,178 145,170 L 170,80 Z" fill="none" stroke="#00E5FF" stroke-width="4" stroke-linejoin="round" filter="url(#cyanGlow)"/>
+    
+    <!-- Sparkling pure liquid inside -->
+    <path d="M 148,100 Q 165,92 185,105 T 212,100 L 214,170 C 215,176 210,181 204,181 L 156,181 C 150,181 145,176 148,170 Z" fill="url(#pureWater)"/>
+
+    <!-- Sparkles / Purity indicators (Bright Gold & Cyan stars) -->
+    <!-- Sparkle 1 -->
+    <path d="M 180,120 L 182,126 L 188,128 L 182,130 L 180,136 L 178,130 L 172,128 L 178,126 Z" fill="#FFB703"/>
+    <!-- Sparkle 2 -->
+    <path d="M 165,150 L 166,154 L 170,155 L 166,156 L 165,160 L 164,156 L 160,155 L 164,154 Z" fill="#00E5FF"/>
+    <!-- Sparkle 3 -->
+    <path d="M 195,140 L 196,143 L 199,144 L 196,145 L 195,148 L 194,145 L 191,144 L 194,143 Z" fill="#FFFFFF"/>
+
+    <!-- Floating clean bubbles rising -->
+    <circle cx="175" cy="85" r="3" fill="#00E5FF" opacity="0.9"/>
+    <circle cx="185" cy="72" r="4.5" fill="#00E5FF" opacity="0.9"/>
+  </g>
+
+  <!-- Flow indicators passing through the purification center -->
+  <g stroke="#00E5FF" stroke-width="2.5" stroke-linecap="round" fill="none">
+    <!-- Incoming dirty stream fading into filter -->
+    <path d="M 95,145 Q 105,145 114,145" stroke="#885B3A" stroke-dasharray="3,3"/>
+    <!-- Outgoing pure crystal stream emerging -->
+    <path d="M 126,145 Q 135,145 145,145" filter="url(#cyanGlow)"/>
+    <polyline points="138,140 145,145 138,150" filter="url(#cyanGlow)"/>
+  </g>
+
+  <!-- Top accent header line representing modern eco-tech standard -->
+  <line x1="80" y1="35" x2="160" y2="35" stroke="#FFB703" stroke-width="3" stroke-linecap="round" filter="url(#cyanGlow)"/>
+  <circle cx="120" cy="35" r="5" fill="#00E5FF"/>
+</svg>

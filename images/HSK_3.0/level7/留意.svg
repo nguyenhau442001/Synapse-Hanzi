@@ -1,0 +1,76 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Atmospheric background glow to focus on the object -->
+  <circle cx="120" cy="120" r="80" fill="#222733" opacity="0.6"/>
+
+  <!-- Crime scene investigation / Forensic Evidence Theme: Cigarette butt with subtle lipstick mark -->
+  <!-- Magnifying glass highlighting the detail -->
+  <g transform="translate(0, 0)">
+    <!-- Investigator's gloved hand holding the evidence or floating magnifying setup -->
+    
+    <!-- Cigarette Butt Object -->
+    <g transform="rotate(-25 120 120)">
+      <!-- Filter body -->
+      <rect x="95" y="105" width="30" height="40" rx="4" fill="#EAEAEA" stroke="#D1D5DB" stroke-width="1.5"/>
+      <!-- Filter texture dots -->
+      <circle cx="103" cy="115" r="1" fill="#CBD5E1"/>
+      <circle cx="117" cy="125" r="1" fill="#CBD5E1"/>
+      <circle cx="110" cy="135" r="1" fill="#CBD5E1"/>
+      <circle cx="103" cy="130" r="1" fill="#CBD5E1"/>
+      
+      <!-- Tobacco paper part -->
+      <rect x="125" y="105" width="45" height="40" rx="2" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1.5"/>
+      <!-- Burnt tip -->
+      <path d="M 170 105 Q 175 125 170 145" fill="#374151" stroke="#1F2937" stroke-width="1.5"/>
+      <path d="M 167 110 Q 171 125 167 140" fill="#EF4444" opacity="0.8"/>
+      <path d="M 168 115 Q 173 125 168 135" fill="#F59E0B"/>
+
+      <!-- THE CRITICAL DETAIL: Microscopic Lipstick Trace (Pink/Red residue) -->
+      <path d="M 102 105 C 105 103, 112 103, 115 105 C 112 107, 105 107, 102 105 Z" fill="#EC4899" opacity="0.9"/>
+      <ellipse cx="108" cy="106" rx="4" ry="1.5" fill="#F472B6"/>
+    </g>
+
+    <!-- Magnifying Glass focusing intensely on the cigarette filter and lipstick mark -->
+    <g transform="translate(15, -10)">
+      <!-- Glass reflection / lens backdrop -->
+      <circle cx="105" cy="115" r="42" fill="#0F172A" fill-opacity="0.7" stroke="#334155" stroke-width="3"/>
+      
+      <!-- Internal magnified view offset / details -->
+      <g clip-path="url(#lensClip)">
+        <clipPath id="lensClip">
+          <circle cx="105" cy="115" r="40"/>
+        </clipPath>
+        <!-- Scaled up glowing elements inside lens to show attention/focus ("留意") -->
+        <circle cx="105" cy="115" r="40" fill="#1E293B" opacity="0.9"/>
+        
+        <!-- Magnified Cigarette Filter Edge -->
+        <rect x="85" y="95" width="40" height="50" rx="4" fill="#F3F4F6" transform="rotate(-25 105 115)"/>
+        <!-- Magnified Lipstick Mark - Glowing Gold/Orange accent for "Attention/Notice" -->
+        <ellipse cx="98" cy="108" rx="8" ry="3.5" transform="rotate(-25 98 108)" fill="#F43F5E"/>
+        <ellipse cx="97" cy="107" rx="5" ry="2" transform="rotate(-25 97 107)" fill="#FB7185"/>
+        <path d="M 90 100 L 105 120" stroke="#F59E0B" stroke-width="2" stroke-dasharray="2,2" opacity="0.8"/>
+      </g>
+      
+      <!-- Lens glass sheen -->
+      <path d="M 78 95 A 38 38 0 0 1 125 85" stroke="#94A3B8" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+      <!-- Magnifying Glass Rim -->
+      <circle cx="105" cy="115" r="40" fill="none" stroke="#F59E0B" stroke-width="5"/>
+      <circle cx="105" cy="115" r="42.5" fill="none" stroke="#D97706" stroke-width="1.5" opacity="0.5"/>
+
+      <!-- Magnifying Glass Handle -->
+      <rect x="68" y="142" width="14" height="55" rx="7" transform="rotate(45 75 145)" fill="#334155" stroke="#475569" stroke-width="1.5"/>
+      <rect x="72" y="148" width="6" height="42" rx="3" transform="rotate(45 75 145)" fill="#1E293B"/>
+      <!-- Handle connector / collar -->
+      <rect x="70" y="136" width="16" height="10" rx="3" transform="rotate(45 75 145)" fill="#F59E0B"/>
+    </g>
+
+    <!-- Focus / Attention Sparkles (Highlighting the microscopic detail) -->
+    <g transform="translate(10, -5)">
+      <path d="M 92 82 L 95 90 L 103 93 L 95 96 L 92 104 L 89 96 L 81 93 L 89 90 Z" fill="#FACC15" opacity="0.9"/>
+      <circle cx="132" cy="135" r="2.5" fill="#F59E0B"/>
+      <circle cx="75" cy="120" r="2" fill="#FACC15" opacity="0.8"/>
+    </g>
+  </g>
+</svg>

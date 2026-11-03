@@ -1,0 +1,55 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Rain and Window Frame context -->
+  <g opacity="0.3">
+    <!-- Window sill / vertical frame edge -->
+    <rect x="20" y="20" width="8" height="200" rx="4" fill="#2E3440"/>
+    <rect x="20" y="200" width="200" height="8" rx="4" fill="#2E3440"/>
+    
+    <!-- Rain streaks representing the night rain outside -->
+    <line x1="60" y1="40" x2="50" y2="80" stroke="#88C0D0" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="90" y1="30" x2="80" y2="70" stroke="#88C0D0" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="140" y1="50" x2="130" y2="90" stroke="#88C0D0" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="190" y1="35" x2="180" y2="75" stroke="#88C0D0" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Central Physical Object representing "思绪" (Stream of thoughts / mind mapping physical silhouette) -->
+  <!-- Silhouette of a person's head looking down/thoughtful -->
+  <g transform="translate(10, 0)">
+    <!-- Neck and shoulders -->
+    <path d="M100 185 C 100 165, 115 150, 135 150 L 145 150 C 165 150, 180 165, 180 185 Z" fill="#2E3440"/>
+    
+    <!-- Head silhouette -->
+    <path d="M110 120 C 105 100, 115 75, 135 70 C 155 65, 175 80, 175 110 C 175 130, 165 150, 145 150 C 125 150, 115 140, 110 120 Z" fill="#3B4252"/>
+    
+    <!-- Flowing Stream of Thoughts (Dòng suy nghĩ) emanating from the mind -->
+    <!-- Intertwining smooth ribbon paths representing thoughts becoming chaotic/disrupted by rain -->
+    
+    <!-- Peaceful baseline stream (gently curving upward) -->
+    <path d="M 135 90 C 110 80, 80 90, 65 70" fill="none" stroke="#4C566A" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+    
+    <!-- Disrupted / Active stream of thoughts (Gold/Orange accent for focus) -->
+    <path d="M 140 85 C 120 60, 140 40, 115 30" fill="none" stroke="#EBCB8B" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 145 90 C 170 65, 165 45, 195 35" fill="none" stroke="#D08770" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Secondary complex winding thought trails -->
+    <path d="M 150 95 C 185 85, 190 110, 215 100" fill="none" stroke="#88C0D0" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 130 95 C 100 110, 85 125, 60 115" fill="none" stroke="#EBCB8B" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Floating nodes of thought (representing individual ideas being scattered) -->
+    <circle cx="110" cy="30" r="4" fill="#EBCB8B"/>
+    <circle cx="195" cy="35" r="5" fill="#D08770"/>
+    <circle cx="215" cy="100" r="3.5" fill="#88C0D0"/>
+    <circle cx="60" cy="115" r="4" fill="#EBCB8B"/>
+    <circle cx="65" cy="70" r="3" fill="#4C566A"/>
+  </g>
+
+  <!-- Highlighting droplet hitting the thought stream (visualizing "淅沥的夜雨渐渐打乱了") -->
+  <g transform="translate(140, 50)">
+    <circle cx="0" cy="0" r="8" fill="none" stroke="#88C0D0" stroke-width="1.5" opacity="0.8"/>
+    <circle cx="0" cy="0" r="14" fill="none" stroke="#88C0D0" stroke-width="1" opacity="0.4"/>
+    <path d="M 0 -4 C 2 0, 2 3, 0 5 C -2 3, -2 0, 0 -4 Z" fill="#88C0D0"/>
+  </g>
+</svg>

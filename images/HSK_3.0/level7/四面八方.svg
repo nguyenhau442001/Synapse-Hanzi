@@ -1,0 +1,51 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Central Hub/Target Point -->
+  <circle cx="120" cy="120" r="12" fill="#FFB800"/>
+  <circle cx="120" cy="120" r="4" fill="#1A1D24"/>
+  
+  <!-- Directional Paths (8 directions) -->
+  <g stroke="#4A5568" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4">
+    <line x1="120" y1="100" x2="120" y2="40"/> <!-- North -->
+    <line x1="120" y1="140" x2="120" y2="200"/> <!-- South -->
+    <line x1="100" y1="120" x2="40" y2="120"/>  <!-- West -->
+    <line x1="140" y1="120" x2="200" y2="120"/> <!-- East -->
+    <line x1="106" y1="106" x2="65" y2="65"/>   <!-- NW -->
+    <line x1="134" y1="106" x2="175" y2="65"/>  <!-- NE -->
+    <line x1="106" y1="134" x2="65" y2="175"/>  <!-- SW -->
+    <line x1="134" y1="134" x2="175" y2="175"/> <!-- SE -->
+  </g>
+  
+  <!-- Moving Figures (Volunteers) -->
+  <g fill="#FFB800">
+    <!-- North -->
+    <circle cx="120" cy="40" r="6"/>
+    <!-- South -->
+    <circle cx="120" cy="200" r="6"/>
+    <!-- West -->
+    <circle cx="40" cy="120" r="6"/>
+    <!-- East -->
+    <circle cx="200" cy="120" r="6"/>
+    <!-- NW -->
+    <circle cx="65" cy="65" r="6"/>
+    <!-- NE -->
+    <circle cx="175" cy="65" r="6"/>
+    <!-- SW -->
+    <circle cx="65" cy="175" r="6"/>
+    <!-- SE -->
+    <circle cx="175" cy="175" r="6"/>
+  </g>
+  
+  <!-- Motion Lines -->
+  <g stroke="#FFB800" stroke-width="2" opacity="0.6">
+    <path d="M120 40 L120 80" fill="none"/>
+    <path d="M120 200 L120 160" fill="none"/>
+    <path d="M40 120 L80 120" fill="none"/>
+    <path d="M200 120 L160 120" fill="none"/>
+    <path d="M65 65 L95 95" fill="none"/>
+    <path d="M175 65 L145 95" fill="none"/>
+    <path d="M65 175 L95 145" fill="none"/>
+    <path d="M175 175 L145 145" fill="none"/>
+  </g>
+</svg>

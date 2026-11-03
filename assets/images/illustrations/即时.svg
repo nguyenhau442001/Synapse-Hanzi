@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glowing background effect for immediate lightning/speed feeling -->
+  <circle cx="120" cy="120" r="70" fill="#FFB302" opacity="0.08"/>
+
+  <!-- Smartphone Body (Physical Object representing the modern instant communication tool) -->
+  <rect x="80" y="36" width="80" height="168" rx="14" fill="#282C37" stroke="#3A3F4D" stroke-width="2"/>
+  
+  <!-- Phone Screen -->
+  <rect x="88" y="48" width="64" height="144" rx="8" fill="#121418"/>
+
+  <!-- Speaker notch / camera -->
+  <rect x="110" y="42" width="20" height="4" rx="2" fill="#3A3F4D"/>
+
+  <!-- Chat UI Elements inside Screen -->
+  <!-- Incoming message bubble -->
+  <rect x="96" y="64" width="42" height="24" rx="6" fill="#282C37"/>
+  <circle cx="104" cy="76" r="2" fill="#8B949E"/>
+  <circle cx="111" cy="76" r="2" fill="#8B949E"/>
+  <circle cx="118" cy="76" r="2" fill="#8B949E"/>
+
+  <!-- Outgoing instant message bubble -->
+  <rect x="108" y="98" width="36" height="24" rx="6" fill="#FF8C00"/>
+
+  <!-- Video call thumbnail placeholder representing the contextual reference -->
+  <rect x="96" y="130" width="48" height="48" rx="8" fill="#1F242D"/>
+  <circle cx="120" cy="150" r="10" fill="#3A3F4D"/>
+  <path d="M113 162 C113 158 116 156 120 156 C124 156 127 158 127 162" fill="#3A3F4D"/>
+
+  <!-- Central Visual Anchor: High-contrast vibrant orange lightning bolt symbolizing "Immediate / Instantly" (即时) -->
+  <path d="M132 15L102 96H126L108 225L150 120H126L144 15H132Z" fill="#FFB302" filter="drop-shadow(0px 4px 12px rgba(255, 179, 2, 0.4))"/>
+
+  <!-- Speed lines accentuating instant delivery -->
+  <path d="M56 100L72 100" stroke="#FFB302" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <path d="M48 116L68 116" stroke="#FFB302" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M168 100L184 100" stroke="#FFB302" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <path d="M172 116L192 116" stroke="#FFB302" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+</svg>

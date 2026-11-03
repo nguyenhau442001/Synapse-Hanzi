@@ -1,0 +1,65 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle tech grid background -->
+  <g opacity="0.1" stroke="#4A5568" stroke-width="0.5">
+    <line x1="30" y1="120" x2="210" y2="120" />
+    <line x1="120" y1="30" x2="120" y2="210" />
+    <circle cx="120" cy="120" r="70" fill="none" />
+  </g>
+
+  <!-- Central Character / Skilled Apprentice Visualizing "两下子" (Capability/Expertise) -->
+  <g transform="translate(0, 5)">
+    <!-- Apprentice Torso & Body -->
+    <path d="M90 170 L90 145 C90 135 100 130 120 130 C140 130 150 135 150 145 L150 170 Z" fill="#2D3748"/>
+    <!-- Collar & Shirt -->
+    <path d="M105 130 L120 145 L135 130 Z" fill="#4A5568"/>
+    
+    <!-- Head & Face (Focused, professional expression) -->
+    <circle cx="120" cy="100" r="22" fill="#F6AD55"/>
+    <!-- Hair -->
+    <path d="M98 100 C98 85 105 76 120 76 C135 76 142 85 142 100 C142 103 140 102 140 98 C140 86 132 80 120 80 C108 80 100 86 100 98 C100 102 98 103 98 100 Z" fill="#2D3748"/>
+    
+    <!-- Precision Tool / CNC Circuit Element (Representing "ngón nghề", skilled craft) -->
+    <!-- Floating Holographic / Glowing Expert Interface -->
+    <circle cx="120" cy="62" r="14" fill="#1A1D24" stroke="#319795" stroke-width="2"/>
+    <!-- Wrench / Tool Icon inside interface -->
+    <path d="M113 69 L127 55 M115 56 L124 65" stroke="#4FD1C5" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Active Hands fixing complex machinery (Two skilled hands - "两下子") -->
+    <!-- Left Hand -->
+    <path d="M85 125 C80 120 75 128 78 135 C80 140 85 142 90 138 Z" fill="#F6AD55"/>
+    <path d="M72 137 L85 133" stroke="#DD6B20" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Right Hand (Precision adjustment) -->
+    <path d="M155 125 C160 120 165 128 162 135 C160 140 155 142 150 138 Z" fill="#F6AD55"/>
+    <path d="M168 137 L155 133" stroke="#DD6B20" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Precision CNC Component / Circuit Board Base representing the context -->
+  <g transform="translate(0, 10)">
+    <!-- Circuit Board Base -->
+    <rect x="60" y="165" width="120" height="35" rx="6" fill="#111827" stroke="#374151" stroke-width="2"/>
+    
+    <!-- Glowing Circuit Traces (indicating mastery over complex machinery) -->
+    <path d="M75 182 H95 L105 192 H135 L145 182 H165" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Indicator Lights (All functioning perfectly) -->
+    <circle cx="75" cy="182" r="3" fill="#10B981"/>
+    <circle cx="165" cy="182" r="3" fill="#10B981"/>
+    
+    <!-- Central Processing Chip -->
+    <rect x="110" y="175" width="20" height="14" rx="2" fill="#3B82F6"/>
+    <line x1="115" y1="175" x2="115" y2="171" stroke="#93C5FD" stroke-width="1.5"/>
+    <line x1="125" y1="175" x2="125" y2="171" stroke="#93C5FD" stroke-width="1.5"/>
+    <line x1="115" y1="189" x2="115" y2="193" stroke="#93C5FD" stroke-width="1.5"/>
+    <line x1="125" y1="189" x2="125" y2="193" stroke="#93C5FD" stroke-width="1.5"/>
+  </g>
+
+  <!-- Accent Sparkles denoting skill and precision ("bản lĩnh", "có ngón nghề") -->
+  <g fill="#F59E0B">
+    <path d="M 60 70 Q 60 60 50 60 Q 60 60 60 50 Q 60 60 70 60 Q 60 60 60 70" />
+    <path d="M 185 80 Q 185 72 177 72 Q 185 72 185 64 Q 185 72 193 72 Q 185 72 185 80" />
+  </g>
+</svg>

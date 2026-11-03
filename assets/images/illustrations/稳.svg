@@ -1,0 +1,65 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glowing horizon to anchor the scene -->
+  <path d="M 30 160 Q 120 180 210 160" stroke="#2A303C" stroke-width="2" fill="none"/>
+
+  <!-- Conceptual Object: Steering Wheel / Ship's Helm (舵) representing "稳" (vững vàng, chắc chắn, ổn định) -->
+  <g transform="translate(120, 115)">
+    <!-- Outer Rim -->
+    <circle cx="0" cy="0" r="56" fill="none" stroke="#252A34" stroke-width="12"/>
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#3A4454" stroke-width="2"/>
+
+    <!-- Handles (8 spokes extensions) -->
+    <!-- Top -->
+    <rect x="-5" y="-72" width="10" height="24" rx="3" fill="#E5A93B"/>
+    <!-- Bottom -->
+    <rect x="-5" y="48" width="10" height="24" rx="3" fill="#E5A93B"/>
+    <!-- Left -->
+    <rect x="-72" y="-5" width="24" height="10" rx="3" fill="#E5A93B"/>
+    <!-- Right -->
+    <rect x="48" y="-5" width="24" height="10" rx="3" fill="#E5A93B"/>
+    <!-- Top-Left -->
+    <g transform="rotate(-45)">
+      <rect x="-5" y="-72" width="10" height="24" rx="3" fill="#E5A93B"/>
+    </g>
+    <!-- Top-Right -->
+    <g transform="rotate(45)">
+      <rect x="-5" y="-72" width="10" height="24" rx="3" fill="#E5A93B"/>
+    </g>
+    <!-- Bottom-Left -->
+    <g transform="rotate(45)">
+      <rect x="-5" y="48" width="10" height="24" rx="3" fill="#E5A93B"/>
+    </g>
+    <!-- Bottom-Right -->
+    <g transform="rotate(-45)">
+      <rect x="-5" y="48" width="10" height="24" rx="3" fill="#E5A93B"/>
+    </g>
+
+    <!-- Inner Wheel Rim -->
+    <circle cx="0" cy="0" r="38" fill="none" stroke="#D39223" stroke-width="6"/>
+
+    <!-- Spokes -->
+    <line x1="0" y1="-38" x2="0" y2="38" stroke="#252A34" stroke-width="8" stroke-linecap="round"/>
+    <line x1="-38" y1="0" x2="38" y2="0" stroke="#252A34" stroke-width="8" stroke-linecap="round"/>
+    <line x1="-27" y1="-27" x2="27" y2="27" stroke="#252A34" stroke-width="8" stroke-linecap="round"/>
+    <line x1="-27" y1="27" x2="27" y2="-27" stroke="#252A34" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Center Hub -->
+    <circle cx="0" cy="0" r="16" fill="#1A1D24" stroke="#E5A93B" stroke-width="4"/>
+    <circle cx="0" cy="0" r="6" fill="#F4B942"/>
+  </g>
+
+  <!-- Stable Horizon / Wave Base indicating firmness amidst motion -->
+  <path d="M 60 195 C 90 185, 120 205, 150 195 C 180 185, 210 205, 240 195" fill="none" stroke="#4C82FB" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+  <path d="M 0 205 C 30 195, 60 215, 90 205 C 120 195, 150 215, 180 205" fill="none" stroke="#2A437E" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Compass Needle / Stability indicator element smoothly crossing center -->
+  <g transform="translate(120, 115) rotate(-20)">
+    <polygon points="0,-68 5,-52 0,-45" fill="#E74C3C"/>
+    <polygon points="0,-68 -5,-52 0,-45" fill="#C0392B"/>
+    <polygon points="0,68 5,52 0,45" fill="#BDC3C7"/>
+    <polygon points="0,68 -5,52 0,45" fill="#95A5A6"/>
+  </g>
+</svg>

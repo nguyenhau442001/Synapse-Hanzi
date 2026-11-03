@@ -1,0 +1,65 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "漆黑" (pitch dark, absolute darkness after power outage) -->
+  <g transform="translate(0, 0)">
+    <!-- Building Exterior / Interior Architecture (Dimly visible structure fading into dark) -->
+    <!-- Window grid representing a large building -->
+    <g opacity="0.15">
+      <!-- Building outline -->
+      <rect x="40" y="30" width="160" height="180" rx="4" fill="#2C323D"/>
+      
+      <!-- Windows - All completely dark, except one tiny spark/flash of sudden blackout -->
+      <!-- Row 1 -->
+      <rect x="55" y="45" width="25" height="35" rx="2" fill="#1A1D24"/>
+      <rect x="90" y="45" width="25" height="35" rx="2" fill="#1A1D24"/>
+      <rect x="125" y="45" width="25" height="35" rx="2" fill="#1A1D24"/>
+      <rect x="160" y="45" width="25" height="35" rx="2" fill="#1A1D24"/>
+
+      <!-- Row 2 -->
+      <rect x="55" y="90" width="25" height="35" rx="2" fill="#1A1D24"/>
+      <rect x="90" y="90" width="25" height="35" rx="2" fill="#1A1D24"/>
+      <rect x="125" y="90" width="25" height="35" rx="2" fill="#1A1D24"/>
+      <rect x="160" y="90" width="25" height="35" rx="2" fill="#1A1D24"/>
+
+      <!-- Row 3 -->
+      <rect x="55" y="135" width="25" height="35" rx="2" fill="#1A1D24"/>
+      <rect x="90" y="135" width="25" height="35" rx="2" fill="#1A1D24"/>
+      <rect x="125" y="135" width="25" height="35" rx="2" fill="#1A1D24"/>
+      <rect x="160" y="135" width="25" height="35" rx="2" fill="#1A1D24"/>
+    </g>
+
+    <!-- Adjective Contrast: A tiny, startled figure in the center surrounded by absolute, heavy darkness -->
+    <!-- Heavy shadow overlay gradient / deep black engulfing the scene -->
+    <rect x="20" y="20" width="200" height="200" rx="12" fill="#0D0E12" opacity="0.85"/>
+
+    <!-- Focal Point (Visual Contrast for Adjective): A small, bright orange accent symbolizing a sudden power loss / abrupt transition -->
+    <!-- Sudden electrical spark / dying bulb wire -->
+    <circle cx="120" cy="115" r="45" fill="#FF8C37" opacity="0.08"/>
+    <circle cx="120" cy="115" r="25" fill="#FF8C37" opacity="0.12"/>
+
+    <!-- A silhouette of a person caught in the sudden pitch-black environment, holding hands up in surprise -->
+    <g transform="translate(100, 105)">
+      <!-- Head -->
+      <circle cx="20" cy="18" r="9" fill="#8B95A5"/>
+      <!-- Body / Shoulders -->
+      <path d="M7 48 C7 35, 13 32, 20 32 C27 32, 33 35, 33 48 Z" fill="#8B95A5"/>
+      <!-- Surprised outstretched hands (emphasizing the sudden blinding darkness) -->
+      <circle cx="2" cy="38" r="3.5" fill="#8B95A5"/>
+      <circle cx="38" cy="38" r="3.5" fill="#8B95A5"/>
+    </g>
+
+    <!-- Subtle glowing dying spark of a lightbulb just switched off -->
+    <path d="M117 75 L123 75 L121 83 L119 83 Z" fill="#FFB74D" opacity="0.6"/>
+    <path d="M115 73 L125 73" stroke="#FFB74D" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <!-- Tiny fading light rays cut off sharply by darkness -->
+    <line x1="110" y1="68" x2="105" y2="63" stroke="#FFB74D" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+    <line x1="130" y1="68" x2="135" y2="63" stroke="#FFB74D" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+    <line x1="107" y1="78" x2="100" y2="78" stroke="#FFB74D" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+    <line x1="133" y1="78" x2="140" y2="78" stroke="#FFB74D" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Ground reference line barely visible in the deep dark -->
+    <line x1="40" y1="185" x2="200" y2="185" stroke="#2C323D" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  </g>
+</svg>

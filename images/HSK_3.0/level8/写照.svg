@@ -1,0 +1,65 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for 写照 (A true portrayal / vivid reflection / mirror of reality):
+       Represented as an art easel/canvas displaying a vivid, glowing historical landscape reflecting the heroic spirit. -->
+  
+  <g transform="translate(0, 0)">
+    <!-- Floor shadow / Base -->
+    <ellipse cx="120" cy="210" rx="60" ry="6" fill="#12141A"/>
+
+    <!-- Easel Structure -->
+    <!-- Back leg -->
+    <line x1="120" y1="45" x2="135" y2="205" stroke="#3A4252" stroke-width="4" stroke-linecap="round"/>
+    <!-- Front left leg -->
+    <line x1="120" y1="45" x2="70" y2="205" stroke="#4A5568" stroke-width="5" stroke-linecap="round"/>
+    <!-- Front right leg -->
+    <line x1="120" y1="45" x2="170" y2="205" stroke="#4A5568" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Canvas Shelf / Rest -->
+    <rect x="55" y="165" rx="2" width="130" height="8" fill="#5A6578"/>
+    <rect x="110" y="173" rx="1" width="20" height="15" fill="#3A4252"/>
+
+    <!-- Canvas (Framed artwork representing the 'true reflection/portrayal') -->
+    <rect x="65" y="45" rx="6" width="110" height="125" fill="#242B38" stroke="#F59E0B" stroke-width="2.5"/>
+    
+    <!-- Inner Art Content: Snow mountains, banner/pickaxe (representing the heroic pioneering spirit mentioned in context) -->
+    <clipPath id="canvas-clip">
+      <rect x="68" y="48" width="104" height="119" rx="4"/>
+    </clipPath>
+    
+    <g clip-path="url(#canvas-clip)">
+      <!-- Sky background of painting -->
+      <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#1E293B"/>
+        <stop offset="100%" stop-color="#334155"/>
+      </linearGradient>
+      <rect x="68" y="48" width="104" height="119" fill="url(#skyGrad)"/>
+
+      <!-- Distant snowy peaks -->
+      <polygon points="68,130 95,85 125,120 150,90 178,135 178,167 68,167" fill="#3B82F6" opacity="0.3"/>
+      <polygon points="90,120 120,75 150,115 178,167 68,167" fill="#64748B" opacity="0.4"/>
+      <!-- Snow caps -->
+      <path d="M120,75 L132,95 L125,98 L115,92 Z" fill="#F8FAFC"/>
+      <path d="M95,85 L103,98 L98,100 L90,90 Z" fill="#F8FAFC"/>
+      <path d="M150,90 L160,110 L153,112 L145,102 Z" fill="#F8FAFC"/>
+
+      <!-- Glowing warm sunrise/beacon representing spirit -->
+      <circle cx="120" cy="115" r="18" fill="#F59E0B" opacity="0.2"/>
+      <circle cx="120" cy="115" r="10" fill="#F59E0B" opacity="0.8"/>
+
+      <!-- Foreground silhouette of figures/determination (Pickaxe / Construct symbol) -->
+      <path d="M105,167 L112,130 L128,130 L135,167 Z" fill="#0F172A"/>
+      <!-- Pickaxe icon boldly rendered as true reflection -->
+      <line x1="95" y1="115" x2="145" y2="145" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+      <path d="M115,123 L125,118 L123,128 Z" fill="#F59E0B"/>
+    </g>
+
+    <!-- Artistic top clip/holder of the easel -->
+    <rect x="110" y="38" rx="2" width="20" height="9" fill="#5A6578"/>
+
+    <!-- Focus Accent Light / Glow at base of easel -->
+    <circle cx="120" cy="170" r="4" fill="#F59E0B"/>
+  </g>
+</svg>

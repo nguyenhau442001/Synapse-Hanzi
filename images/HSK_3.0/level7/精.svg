@@ -1,0 +1,19 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(40, 40)">
+    <!-- Magnifying Glass -->
+    <circle cx="80" cy="80" r="45" fill="none" stroke="#FFB347" stroke-width="6"/>
+    <line x1="112" y1="112" x2="140" y2="140" stroke="#FFB347" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Micro-carving detail (The focus) -->
+    <rect x="65" y="65" width="30" height="30" fill="#2D343E" rx="2"/>
+    <path d="M70 75 L90 75 M70 85 L90 85 M80 70 L80 90" stroke="#E0E0E0" stroke-width="1.5"/>
+    
+    <!-- Hand holding the tool -->
+    <path d="M110 130 L130 110 L145 125 L125 145 Z" fill="#FFD1A9"/>
+    <path d="M125 125 L140 110" stroke="#FFB347" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- The carving tool tip -->
+    <path d="M138 112 L145 105" stroke="#A0A0A0" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

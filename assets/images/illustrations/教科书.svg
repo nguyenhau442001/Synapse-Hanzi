@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for focus -->
+  <circle cx="120" cy="120" r="70" fill="#FFB703" opacity="0.05"/>
+  
+  <g transform="translate(0, 8)">
+    <!-- Textbook Shadow -->
+    <path d="M52 165 C85 178, 155 178, 188 165 L182 178 C155 188, 85 188, 58 178 Z" fill="#0D0F13" opacity="0.6"/>
+    
+    <!-- Back Cover / Thickness -->
+    <path d="M52 65 C85 78, 155 78, 188 65 L188 165 C155 178, 85 178, 52 165 Z" fill="#2D323E"/>
+    <path d="M55 68 C87 81, 153 81, 185 68 L185 162 C153 175, 87 175, 55 162 Z" fill="#1E232D"/>
+
+    <!-- Pages Block (Side and bottom edges) -->
+    <path d="M58 75 C88 88, 152 88, 182 75 L182 155 C152 168, 88 168, 58 155 Z" fill="#E2E8F0"/>
+    <!-- Page lines effect -->
+    <path d="M62 82 C90 95, 150 95, 178 82" stroke="#CBD5E1" stroke-width="2" fill="none"/>
+    <path d="M62 88 C90 101, 150 101, 178 88" stroke="#CBD5E1" stroke-width="2" fill="none"/>
+    <path d="M62 94 C90 107, 150 107, 178 94" stroke="#CBD5E1" stroke-width="2" fill="none"/>
+
+    <!-- Bookmark Ribbon hanging out -->
+    <path d="M145 71 L157 71 L154 110 L151 115 L148 110 Z" fill="#EF4444"/>
+
+    <!-- Front Cover (Open slightly from left bound) -->
+    <!-- We'll draw the front cover angled / opened, or flat facing. Let's do an isometric/3D stylized textbook facing forward -->
+    <!-- Re-structuring for a clean iconic textbook vector -->
+  </g>
+
+  <!-- Redrawing a pristine, perfectly centered textbook graphic -->
+  <g transform="translate(0, 0)">
+    <!-- Drop Shadow -->
+    <ellipse cx="120" cy="188" r="64" ry="12" fill="#0D0F13" opacity="0.7"/>
+
+    <!-- Book Base / Pages Stack -->
+    <path d="M60 70 L120 50 L180 70 L180 155 L120 175 L60 155 Z" fill="#E2E8F0"/>
+    
+    <!-- Left pages side depth -->
+    <path d="M60 70 L120 50 L120 175 L60 155 Z" fill="#CBD5E1"/>
+    <path d="M120 50 L180 70 L180 155 L120 175 Z" fill="#F1F5F9"/>
+
+    <!-- Center binding crease -->
+    <line x1="120" y1="50" x2="120" y2="175" stroke="#94A3B8" stroke-width="3"/>
+
+    <!-- Left Page Content (Illustrative lines & geometric diagrams representing academic content) -->
+    <g opacity="0.8">
+      <!-- Diagram: Triangle/Star -->
+      <polygon points="90,90 75,120 105,120" fill="none" stroke="#3B82F6" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="90" cy="105" r="4" fill="#3B82F6"/>
+      <!-- Text lines -->
+      <line x1="75" y1="135" x2="108" y2="135" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+      <line x1="75" y1="145" x2="98" y2="145" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Right Page Content (Academic graphs / educational motif) -->
+    <g opacity="0.8">
+      <!-- Bar chart -->
+      <rect x="135" y="115" width="8" height="25" rx="2" fill="#FFB703"/>
+      <rect x="148" y="95" width="8" height="45" rx="2" fill="#3B82F6"/>
+      <rect x="161" y="85" width="8" height="55" rx="2" fill="#10B981"/>
+      <line x1="130" y1="140" x2="174" y2="140" stroke="#64748B" stroke-width="2"/>
+    </g>
+
+    <!-- Hard Covers (Front and Back wrapping) -->
+    <!-- Back cover plate extending slightly -->
+    
+    <!-- Thick authoritative Hardcover binding overlay -->
+    <!-- Let's create a classic dark blue/slate hardcover textbook standing out clearly -->
+    <path d="M52 65 L120 42 L188 65 L188 160 L120 183 L52 160 Z" fill="none"/>
+  </g>
+
+  <!-- Sleeker Redesign: Textbook viewed from front-isometric for maximum clarity -->
+  <g transform="translate(0, -2)">
+    <!-- Base shadow -->
+    <path d="M45 170 C70 185, 170 185, 195 170 L185 185 C160 195, 80 195, 55 185 Z" fill="#0D0F13"/>
+
+    <!-- Book Spine & Back Cover backing -->
+    <path d="M55 70 L120 50 L185 70 L185 165 L120 185 L55 165 Z" fill="#1E293B"/>
+
+    <!-- Pages Block (White/Cream paper thickness visible on sides and bottom) -->
+    <path d="M60 75 L120 57 L180 75 L180 158 L120 176 L60 158 Z" fill="#F8FAFC"/>
+    
+    <!-- Page block shading -->
+    <path d="M60 75 L120 57 L120 176 L60 158 Z" fill="#E2E8F0"/>
+    
+    <!-- Center Binding Line -->
+    <line x1="120" y1="57" x2="120" y2="176" stroke="#CBD5E1" stroke-width="2"/>
+
+    <!-- Left Open Page Graphic: Globe/History symbol -->
+    <circle cx="90" cy="110" r="22" fill="none" stroke="#334155" stroke-width="3"/>
+    <path d="M70 110 H110" stroke="#334155" stroke-width="2"/>
+    <path d="M90 88 C82 98, 82 122, 90 132" stroke="#334155" stroke-width="2" fill="none"/>
+    <path d="M90 88 C98 98, 98 122, 90 132" stroke="#334155" stroke-width="2" fill="none"/>
+    <!-- Lines -->
+    <line x1="75" y1="145" x2="105" y2="145" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    <line x1="80" y1="153" x2="100" y2="153" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Right Open Page Graphic: Atom / Science & Knowledge symbol -->
+    <ellipse cx="150" cy="110" rx="18" ry="8" fill="none" stroke="#3B82F6" stroke-width="2.5" transform="rotate(-30 150 110)"/>
+    <ellipse cx="150" cy="110" rx="18" ry="8" fill="none" stroke="#3B82F6" stroke-width="2.5" transform="rotate(30 150 110)"/>
+    <circle cx="150" cy="110" r="4" fill="#FFB703"/>
+    <!-- Lines -->
+    <line x1="135" y1="145" x2="165" y2="145" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    <line x1="140" y1="153" x2="160" y2="153" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Hardcover Wrap (Front cover frame overlapping slightly or underlining authority) -->
+    <!-- Premium Gold Emblem / Seal on the cover or spine to signify "Official/Authorized Standard" (权威规范) -->
+    <circle cx="120" cy="53" r="10" fill="#FFB703"/>
+    <circle cx="120" cy="53" r="6" fill="#1E293B"/>
+  </g>
+
+  <!-- Focus Accent Elements: Floating subtle star sparkles denoting high quality & authority -->
+  <g fill="#FFB703">
+    <path d="M 52 50 Q 52 58 44 58 Q 52 58 52 66 Q 52 58 60 58 Q 52 58 52 50 Z" opacity="0.8"/>
+    <path d="M 195 90 Q 195 96 189 96 Q 195 96 195 102 Q 195 96 201 96 Q 195 96 195 90 Z" opacity="0.9"/>
+    <path d="M 45 130 Q 45 135 40 135 Q 45 135 45 140 Q 45 135 50 135 Q 45 135 45 130 Z" opacity="0.6"/>
+  </g>
+</svg>

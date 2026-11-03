@@ -1,0 +1,42 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background atmosphere (soft mood lighting representing clinical modernity) -->
+  <circle cx="120" cy="110" r="70" fill="#252A34" opacity="0.5"/>
+  
+  <!-- Medical / Clinical Modern Cross Indicator (Subtle, professional background element) -->
+  <path d="M120 48 V64 M120 64 H104 M120 64 H136" stroke="#3A4252" stroke-width="3" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- Character / Person representing internal psychological weight (Flat Design Style) -->
+  <!-- Shoulders and Body -->
+  <path d="M70 175 C70 150 90 140 120 140 C150 140 170 150 170 175 V190 H70 Z" fill="#2E3648"/>
+  
+  <!-- Slumping Neck -->
+  <rect x="111" y="120" width="18" height="30" rx="4" fill="#E0A983"/>
+
+  <!-- Head bowed down in contemplation/heaviness -->
+  <circle cx="120" cy="108" r="26" fill="#F4B886"/>
+  
+  <!-- Hair (Modern sleek style) -->
+  <path d="M94 105 C94 92 105 82 120 82 C135 82 146 92 146 105 C146 100 142 90 120 88 C98 90 94 100 94 105 Z" fill="#3D4451"/>
+
+  <!-- Metaphorical Weight/Cloud element gently resting on the person (representing clinical depression/bệnh trầm cảm) -->
+  <!-- Modern stylized medical/psychological cloud with clean lines -->
+  <path d="M85 85 
+           C85 68 100 55 118 55 
+           C130 55 142 62 148 72 
+           C160 72 170 82 170 95 
+           C170 108 160 115 148 115 
+           L92 115 
+           C88 115 85 110 85 105 Z" 
+        fill="#364156" opacity="0.9"/>
+        
+  <!-- Accent highlight (Gold/Orange focus color for modern sleek treatment interface) -->
+  <path d="M100 70 A 25 25 0 0 1 140 68" stroke="#F39C12" stroke-width="4" stroke-linecap="round" fill="none"/>
+  
+  <!-- Modern medical cross / healing vector cue integrated cleanly -->
+  <circle cx="120" cy="85" r="8" fill="#F39C12"/>
+  <path d="M120 81 V89 M116 85 H124" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+
+</svg>

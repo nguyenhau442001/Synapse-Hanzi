@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambient Glow representing advanced medical technology / healing energy -->
+  <circle cx="120" cy="115" r="70" fill="#0EA5E9" opacity="0.08"/>
+  <circle cx="120" cy="115" r="45" fill="#10B981" opacity="0.08"/>
+
+  <!-- Motion lines / Action vectors showing the dynamic process of curing/healing -->
+  <path d="M75 95 C 90 85, 105 85, 120 95" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 4" fill="none" opacity="0.6"/>
+  <path d="M120 95 C 135 105, 150 105, 165 95" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 4" fill="none" opacity="0.6"/>
+
+  <!-- Medical / Scientific futuristic technological matrix rings (subtle, non-sci-fi forcefield, strictly medical tech context) -->
+  <circle cx="120" cy="115" r="55" stroke="#334155" stroke-width="1.5" stroke-dasharray="6 6" fill="none"/>
+
+  <!-- Central Character (Patient receiving healing) -->
+  <!-- Patient Body/Torso -->
+  <path d="M95 160 C 95 140, 105 130, 120 130 C 135 130, 145 140, 145 160 Z" fill="#334155"/>
+  <!-- Patient Head -->
+  <circle cx="120" cy="110" r="14" fill="#CBD5E1"/>
+  <!-- Patient gentle expression / calm repose -->
+  <path d="M115 113 Q 120 117 125 113" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Direct Interactive Element: Advanced Medical Laser/Probe Tool causing the cure effect -->
+  <!-- Practitioner/Tech Hand holding diagnostic/healing beam emitter -->
+  <path d="M175 80 L 140 100" stroke="#94A3B8" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="140" cy="100" r="5" fill="#38BDF8"/>
+
+  <!-- Focused Healing Beam (Action/Effect) directed at the patient -->
+  <polygon points="138,102 120,110 123,116" fill="#38BDF8" opacity="0.8"/>
+  <line x1="138" y1="101" x2="123" y2="108" stroke="#7DD3FC" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Sparkles / Success Indicators showing complete recovery (Cured / 治愈) -->
+  <!-- Top Sparkle 1 -->
+  <path d="M120 65 L 122 72 L 129 74 L 122 76 L 120 83 L 118 76 L 111 74 L 118 72 Z" fill="#FBBF24"/>
+  <!-- Side Sparkle 2 -->
+  <path d="M85 95 L 86.5 100 L 91.5 101.5 L 86.5 103 L 85 108 L 83.5 103 L 78.5 101.5 L 83.5 100 Z" fill="#34D399" transform="scale(0.8) translate(30, 0)"/>
+  <!-- Side Sparkle 3 -->
+  <path d="M155 125 L 156 129 L 160 130 L 156 131 L 155 135 L 154 131 L 150 130 L 154 129 Z" fill="#38BDF8"/>
+
+  <!-- Modern UI/Card Base Line -->
+  <rect x="40" y="190" width="160" height="4" rx="2" fill="#334155"/>
+  <rect x="75" y="190" width="90" height="4" rx="2" fill="#10B981"/>
+</svg>

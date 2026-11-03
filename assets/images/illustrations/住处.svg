@@ -1,0 +1,43 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration: A cozy, modern home/apartment building icon representing "住处" (chỗ ở, nơi ở) -->
+  <g transform="translate(0, 0)">
+    <!-- Background glowing warmth or subtle base element -->
+    <circle cx="120" cy="120" r="70" fill="#242B38" />
+
+    <!-- House structure -->
+    <!-- Roof -->
+    <path d="M 120 50 L 180 95 L 60 95 Z" fill="#F39C12" />
+    <!-- Roof shadow/dimension -->
+    <path d="M 120 50 L 180 95 L 170 95 L 120 60 Z" fill="#D68910" opacity="0.4" />
+
+    <!-- Main building body -->
+    <rect x="75" y="95" width="90" height="85" fill="#2C3E50" rx="4" />
+    <rect x="75" y="95" width="10" height="85" fill="#1A252F" opacity="0.3" rx="2" />
+
+    <!-- Warm interior light glowing from windows (symbolizing lived-in home/chỗ ở) -->
+    <!-- Window top left -->
+    <rect x="90" y="110" width="22" height="25" rx="3" fill="#F1C40F" />
+    <line x1="101" y1="110" x2="101" y2="135" stroke="#2C3E50" stroke-width="2" />
+    <line x1="90" y1="122" x2="112" y2="122" stroke="#2C3E50" stroke-width="2" />
+
+    <!-- Window top right -->
+    <rect x="128" y="110" width="22" height="25" rx="3" fill="#F1C40F" />
+    <line x1="139" y1="110" x2="139" y2="135" stroke="#2C3E50" stroke-width="2" />
+    <line x1="128" y1="122" x2="150" y2="122" stroke="#2C3E50" stroke-width="2" />
+
+    <!-- Door / Entrance -->
+    <path d="M 105 180 L 105 155 C 105 150 135 150 135 155 L 135 180 Z" fill="#E67E22" />
+    <!-- Door knob -->
+    <circle cx="128" cy="168" r="2" fill="#F1C40F" />
+
+    <!-- Chimney with a cozy little smoke curl -->
+    <rect x="150" y="65" width="12" height="20" fill="#7F8C8D" rx="2" />
+    <path d="M 156 60 Q 162 52 156 44 Q 150 36 158 28" fill="none" stroke="#7F8C8D" stroke-width="3" stroke-linecap="round" opacity="0.7" />
+
+    <!-- Small decorative ground/foundation line -->
+    <rect x="55" y="180" width="130" height="6" fill="#34495E" rx="3" />
+  </g>
+</svg>

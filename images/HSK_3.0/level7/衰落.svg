@@ -1,0 +1,57 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient background glow for river & wharf context -->
+  <circle cx="120" cy="140" r="90" fill="#222834" opacity="0.6"/>
+
+  <!-- Background Wharf Elements (Faded/Declining State) -->
+  <!-- Distant dilapidated crane/structure -->
+  <path d="M70 120 L75 80 L85 80 L80 120 Z" fill="#3A4454" opacity="0.5"/>
+  <path d="M75 80 L110 95 L108 100 L75 87 Z" fill="#3A4454" opacity="0.5"/>
+  
+  <!-- Old Wooden Pier / Dock extending into water -->
+  <!-- Pilings (rotting/leaning slightly) -->
+  <rect x="55" y="130" width="6" height="40" fill="#2C2320" transform="skewX(-5)"/>
+  <rect x="95" y="135" width="6" height="38" fill="#2C2320"/>
+  <rect x="135" y="140" width="6" height="35" fill="#2C2320" transform="skewX(4)"/>
+  <rect x="175" y="145" width="6" height="32" fill="#2C2320" transform="skewX(8)"/>
+
+  <!-- Wooden Plank Surface (Broken/Worn out) -->
+  <path d="M45 132 L200 142 L198 152 L43 142 Z" fill="#523D33"/>
+  <!-- Broken gap in the dock planks -->
+  <path d="M120 137 L145 139 L144 147 L119 145 Z" fill="#1A1D24"/>
+  
+  <!-- Rusted / Abandoned Crane or Pulley Post on the dock -->
+  <rect x="180" y="105" width="8" height="40" fill="#A85A32"/>
+  <path d="M184 105 L200 90 L204 95 L184 112 Z" fill="#C26A3D"/>
+  <!-- Broken hanging rope -->
+  <path d="M200 95 Q 205 115 195 130" stroke="#7A869A" stroke-width="2" fill="none" stroke-dasharray="3,3"/>
+
+  <!-- Water Surface (Calm, dark, desolate) -->
+  <path d="M20 160 Q 70 155 120 160 T 220 160 L220 200 L20 200 Z" fill="#16202B"/>
+  <path d="M40 172 Q 90 168 140 172 T 200 172" stroke="#253444" stroke-width="1.5" fill="none"/>
+  <path d="M60 185 Q 110 181 160 185" stroke="#253444" stroke-width="1.5" fill="none"/>
+
+  <!-- Foreground / Focus Element: A single weathered, abandoned wooden rowing boat half-sunken/moored -->
+  <g transform="translate(100, 145)">
+    <!-- Hull of the boat -->
+    <path d="M-45 15 Q 0 25 45 15 L 35 30 Q 0 35 -35 30 Z" fill="#6B4F3A"/>
+    <!-- Inside of the boat (darker shadow) -->
+    <path d="M-40 15 Q 0 22 40 15 L 30 10 Q 0 16 -30 10 Z" fill="#3D2C21"/>
+    <!-- Waterline overlap (subtle ripple) -->
+    <ellipse cx="0" cy="22" rx="42" ry="6" fill="#121820" opacity="0.7"/>
+    
+    <!-- Broken/Abandoned Oar resting inside -->
+    <path d="M-25 12 L 20 -5" stroke="#8C6747" stroke-width="3" stroke-linecap="round"/>
+    <!-- Oar blade broken off nearby in water -->
+    <path d="M28 25 L 35 28 L 32 32 L 25 29 Z" fill="#6B4F3A"/>
+  </g>
+
+  <!-- Atmospheric weeds/reeds growing neglected near the dock -->
+  <path d="M35 150 L32 125 M38 150 L42 120 M33 150 L27 128" stroke="#3A5242" stroke-width="2" stroke-linecap="round"/>
+  <path d="M165 155 L162 130 M168 155 L173 125" stroke="#3A5242" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Focus Accent: Warm fading sunlight / amber hue touching the old structure to emphasize the melancholy transition -->
+  <path d="M43 142 L200 142 L200 145 L43 145 Z" fill="#D97736" opacity="0.4"/>
+</svg>

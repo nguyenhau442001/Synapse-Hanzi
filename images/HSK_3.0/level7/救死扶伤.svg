@@ -1,0 +1,33 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements (soft subtle medical cross) -->
+  <path d="M120 50V190M50 120H190" stroke="#252A34" stroke-width="24" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- Central Physical Object: Professional Medical Stethoscope combined with a supporting protective cross structure representing healing, saving lives, and medical vocation -->
+  
+  <!-- Stethoscope tubing forming a caring, protective loop -->
+  <path d="M80 80C80 80 70 140 120 150C170 140 160 80 160 80" fill="none" stroke="#60A5FA" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Ear tubes top -->
+  <path d="M72 70L80 80M168 70L160 80" stroke="#60A5FA" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="70" cy="66" r="4" fill="#93C5FD"/>
+  <circle cx="170" cy="66" r="4" fill="#93C5FD"/>
+
+  <!-- Chest piece at the bottom center (representing direct care and heartbeat/life) -->
+  <circle cx="120" cy="165" r="16" fill="#3B82F6"/>
+  <circle cx="120" cy="165" r="10" fill="#93C5FD"/>
+  <path d="M112 165H128M120 157V173" stroke="#1E3A8A" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Central focal point: Vibrant glowing life-giving medical cross (gold/orange accent for focus and high-contrast) -->
+  <rect x="108" y="92" width="24" height="48" rx="4" fill="#F59E0B"/>
+  <rect x="96" y="104" width="48" height="24" rx="4" fill="#F59E0B"/>
+  
+  <!-- Inner highlight for sleek modern flat look -->
+  <rect x="112" y="96" width="16" height="40" rx="2" fill="#FBBF24"/>
+  <rect x="100" y="108" width="40" height="16" rx="2" fill="#FBBF24"/>
+
+  <!-- Small clean accents representing vitality -->
+  <circle cx="120" cy="72" r="3" fill="#34D399"/>
+</svg>

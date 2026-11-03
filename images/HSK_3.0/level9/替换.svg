@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative technical grid lines (subtle) -->
+  <line x1="30" y1="120" x2="210" y2="120" stroke="#262B35" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- Left: The old component (being replaced) -->
+  <g transform="translate(45, 90)">
+    <!-- Component body -->
+    <rect x="0" y="0" width="50" height="60" rx="6" fill="#2D333F" stroke="#4F5665" stroke-width="2"/>
+    <!-- Internal cooling fins (old, simple) -->
+    <line x1="10" y1="15" x2="40" y2="15" stroke="#68707F" stroke-width="3" stroke-linecap="round"/>
+    <line x1="10" y1="27" x2="40" y2="27" stroke="#68707F" stroke-width="3" stroke-linecap="round"/>
+    <line x1="10" y1="39" x2="40" y2="39" stroke="#68707F" stroke-width="3" stroke-linecap="round"/>
+    <!-- Heat/Warning glow indicator (fading out) -->
+    <circle cx="25" cy="50" r="4" fill="#EF4444"/>
+    <path d="M 21 44 Q 25 38 29 44" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Right: The new, advanced component (replacement object) -->
+  <g transform="translate(145, 80)">
+    <!-- Component body with high-tech finish -->
+    <rect x="0" y="0" width="56" height="72" rx="8" fill="#1E293B" stroke="#0EA5E9" stroke-width="2.5"/>
+    <!-- Advanced heat sink fins (copper/gold accent) -->
+    <line x1="10" y1="14" x2="46" y2="14" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="10" y1="26" x2="46" y2="26" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="10" y1="38" x2="46" y2="38" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="10" y1="50" x2="46" y2="50" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- Stability status indicator (glowing cyan) -->
+    <circle cx="28" cy="62" r="4.5" fill="#0EA5E9"/>
+    <circle cx="28" cy="62" r="7" fill="none" stroke="#0EA5E9" stroke-width="1.5" opacity="0.6"/>
+  </g>
+
+  <!-- Central Swapping / Replacement Action (Curved Arrows & Motion) -->
+  <g transform="translate(120, 120)">
+    <!-- Top swapping arc -->
+    <path d="M -25 -10 C -15 -30 15 -30 25 -10" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="23,-15 32,-8 24,-2" fill="#10B981"/>
+
+    <!-- Bottom swapping arc -->
+    <path d="M 25 10 C 15 30 -15 30 -25 10" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="-23,15 -32,8 -24,2" fill="#10B981"/>
+  </g>
+
+  <!-- Mechanical / Precision Grip Tongs or Alignment Guides -->
+  <path d="M 100 70 L 140 70" stroke="#64748B" stroke-width="2" stroke-dasharray="3 3"/>
+  <path d="M 100 170 L 140 170" stroke="#64748B" stroke-width="2" stroke-dasharray="3 3"/>
+
+  <!-- Top Title Icon Context (Precision Engineering / Hardware) -->
+  <circle cx="120" cy="38" r="16" fill="#232B3B" stroke="#334155" stroke-width="2"/>
+  <path d="M 112 38 L 128 38 M 120 30 L 120 46" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="120" cy="38" r="4" fill="#F59E0B"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- House structure representing "Family/Home" -->
+  <path d="M70 180 L170 180 L170 120 L120 80 L70 120 Z" fill="#3A404D" stroke="#FFB84D" stroke-width="3" stroke-linejoin="round"/>
+  
+  <!-- Window representing the "State/Condition" -->
+  <rect x="90" y="130" width="20" height="25" fill="#2D323E" stroke="#FFB84D" stroke-width="2"/>
+  <rect x="130" y="130" width="20" height="25" fill="#2D323E" stroke="#FFB84D" stroke-width="2"/>
+  
+  <!-- Door representing the "Family" -->
+  <rect x="105" y="145" width="30" height="35" fill="#2D323E" stroke="#FFB84D" stroke-width="2"/>
+  
+  <!-- Patchwork/Mending detail on the roof to signify "Poverty/Hardship" context -->
+  <path d="M95 100 L110 100 L105 110 Z" fill="#FFB84D" opacity="0.6"/>
+  <path d="M135 105 L145 105 L140 115 Z" fill="#FFB84D" opacity="0.6"/>
+  
+  <!-- Ground line -->
+  <line x1="50" y1="180" x2="190" y2="180" stroke="#4A5161" stroke-width="4" stroke-linecap="round"/>
+</svg>

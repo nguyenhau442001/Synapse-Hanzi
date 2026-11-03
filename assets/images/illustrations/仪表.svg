@@ -1,0 +1,32 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 115)">
+    <!-- Suit shoulders & jacket -->
+    <path d="M-65,70 L-65,40 C-65,15 -35,5 0,5 C35,5 65,15 65,40 L65,70 Z" fill="#2D3748"/>
+    
+    <!-- Lapels -->
+    <path d="M-30,5 L-12,50 L0,50 L-12,5 Z" fill="#1A202C"/>
+    <path d="M30,5 L12,50 L0,50 L12,5 Z" fill="#1A202C"/>
+    
+    <!-- Crisp white shirt collar -->
+    <path d="M-22,5 L0,32 L22,5 L12,5 L0,22 L-12,5 Z" fill="#EDF2F7"/>
+    
+    <!-- Professional tie -->
+    <polygon points="-5,18 5,18 3,60 0,68 -3,60" fill="#E2B714"/>
+    
+    <!-- Neck -->
+    <rect x="-10" y="-12" width="20" height="22" rx="4" fill="#F6AD55"/>
+    
+    <!-- Head / Chin -->
+    <path d="M-22,-18 C-22,-45 22,-45 22,-18 C22,-5 15,10 0,10 C-15,10 -22,-5 -22,-18 Z" fill="#F6AD55"/>
+    
+    <!-- Neat hairstyle -->
+    <path d="M-24,-25 C-24,-50 24,-50 24,-25 C24,-30 20,-55 0,-55 C-20,-55 -24,-30 -24,-25 Z" fill="#2D3748"/>
+    
+    <!-- Confident, poised facial features (clean flat profile styling) -->
+    <circle cx="-7" cy="-20" r="2.5" fill="#1A202C"/>
+    <circle cx="7" cy="-20" r="2.5" fill="#1A202C"/>
+    <path d="M-4,-7 C0,-3 4,-3 4,-7" stroke="#1A202C" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

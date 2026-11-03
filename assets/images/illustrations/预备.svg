@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle Track & Start Line -->
+  <g transform="translate(0, 150)">
+    <!-- Running track surface -->
+    <path d="M 10 30 L 230 30" stroke="#2A2F3D" stroke-width="4" stroke-linecap="round"/>
+    <!-- Starting line (White / Orange accented) -->
+    <line x1="85" y1="15" x2="85" y2="45" stroke="#FFA726" stroke-width="3" stroke-dasharray="2 2" opacity="0.8"/>
+  </g>
+
+  <!-- Motion lines for readiness/tension -->
+  <g opacity="0.6">
+    <path d="M 45 135 C 55 135 60 140 65 145" fill="none" stroke="#FF7043" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 35 148 C 45 148 52 150 58 155" fill="none" stroke="#FF7043" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 25 125 C 35 125 42 130 48 135" fill="none" stroke="#FF7043" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  </g>
+
+  <!-- Sprinter Character (Dynamic Action - "预备" / Ready stance) -->
+  <g transform="translate(0, 0)">
+    <!-- Back Foot against starting block -->
+    <path d="M 68 168 L 78 178 L 65 180 Z" fill="#374151"/>
+    <rect x="65" y="174" width="20" height="6" rx="2" fill="#4B5563"/>
+
+    <!-- Left Leg (Back, kneeling/loaded) -->
+    <path d="M 80 150 Q 95 160 78 178" fill="none" stroke="#60A5FA" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Right Leg (Front, crouched) -->
+    <path d="M 105 145 Q 90 165 112 178" fill="none" stroke="#3B82F6" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Torso (Lean forward, poised) -->
+    <path d="M 95 125 Q 110 135 105 150" fill="none" stroke="#60A5FA" stroke-width="12" stroke-linecap="round"/>
+
+    <!-- Head (Focused, looking forward) -->
+    <circle cx="125" cy="115" r="10" fill="#FBBF24"/>
+    <!-- Hair -->
+    <path d="M 116 112 C 117 107 122 105 128 107 C 132 108 134 113 134 113 Z" fill="#1E293B"/>
+
+    <!-- Front Arm (Hand planted firmly on ground behind starting line) -->
+    <path d="M 100 130 L 75 165" fill="none" stroke="#3B82F6" stroke-width="7" stroke-linecap="round"/>
+    <!-- Hand on ground -->
+    <circle cx="73" cy="167" r="4" fill="#FBBF24"/>
+
+    <!-- Back Arm (Cooled, holding tension) -->
+    <path d="M 100 128 Q 115 130 115 150" fill="none" stroke="#60A5FA" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="115" cy="152" r="3" fill="#FBBF24"/>
+  </g>
+
+  <!-- Focus / Readiness Indicator (Modern minimalist highlight, NOT abstract badge) -->
+  <g transform="translate(175, 75)" opacity="0.9">
+    <!-- Pulsing focus bracket top-right -->
+    <path d="M 15 0 L 25 0 L 25 10" fill="none" stroke="#FFA726" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 15 35 L 25 35 L 25 25" fill="none" stroke="#FFA726" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="20" cy="17" r="2" fill="#FF7043"/>
+  </g>
+</svg>

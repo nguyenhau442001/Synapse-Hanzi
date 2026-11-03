@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Path representing the "Road" (Progression/Contrast) -->
+  <path d="M40 180 C 80 180, 120 120, 200 60" stroke="#4A5568" stroke-width="4" fill="none" stroke-dasharray="8 8"/>
+  
+  <!-- Thorns/Obstacles (The "Contrast" element) -->
+  <path d="M80 150 L 85 135 L 90 150 Z" fill="#E53E3E"/>
+  <path d="M120 120 L 125 105 L 130 120 Z" fill="#E53E3E"/>
+  <path d="M160 90 L 165 75 L 170 90 Z" fill="#E53E3E"/>
+  
+  <!-- The "Warrior" (Representing the unwavering focus) -->
+  <g transform="translate(40, 160)">
+    <circle cx="10" cy="-10" r="8" fill="#F6AD55"/>
+    <path d="M10 0 L 10 20 M10 5 L 0 15 M10 5 L 20 15 M10 20 L 5 35 M10 20 L 15 35" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- The "Goal/Belief" (The peak/outcome) -->
+  <circle cx="200" cy="60" r="15" fill="#F6AD55" opacity="0.3"/>
+  <circle cx="200" cy="60" r="8" fill="#F6AD55"/>
+  
+  <!-- Visual Metaphor: The "Contrast" of the path vs the steady movement -->
+  <path d="M40 190 L 200 190" stroke="#718096" stroke-width="2"/>
+  <path d="M40 190 L 200 70" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+</svg>

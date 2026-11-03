@@ -1,0 +1,52 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Deep Space Background Elements -->
+  <!-- Tiny distant stars -->
+  <circle cx="45" cy="50" r="1" fill="#4A5568" opacity="0.6"/>
+  <circle cx="75" cy="30" r="1.5" fill="#E2E8F0" opacity="0.8"/>
+  <circle cx="190" cy="40" r="1" fill="#4A5568" opacity="0.5"/>
+  <circle cx="210" cy="90" r="1.2" fill="#E2E8F0" opacity="0.7"/>
+  <circle cx="30" cy="120" r="1" fill="#E2E8F0" opacity="0.4"/>
+  <circle cx="200" cy="180" r="1.5" fill="#4A5568" opacity="0.6"/>
+  <circle cx="50" cy="205" r="1" fill="#E2E8F0" opacity="0.5"/>
+  <circle cx="115" cy="215" r="1.2" fill="#4A5568" opacity="0.7"/>
+  
+  <!-- Faint distant galaxy / nebula swirl -->
+  <path d="M60,160 Q120,200 180,120 Q140,80 80,120 Z" fill="#2D3748" opacity="0.3"/>
+  <path d="M80,100 Q140,40 190,90" stroke="#3182CE" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.2"/>
+
+  <!-- Giant Spiral Galaxy (The Central Physical Object - Noun representation of the vast universe) -->
+  <!-- Outer arms -->
+  <path d="M120,120 C140,80 180,70 195,95 C210,120 170,160 120,170 C70,180 40,140 55,110 C70,80 100,100 120,120 Z" fill="#2B6CB0" opacity="0.4"/>
+  <path d="M120,120 C100,160 60,170 45,145 C30,120 70,80 120,70 C170,60 200,100 185,130 C170,160 140,140 120,120 Z" fill="#4299E1" opacity="0.3"/>
+  
+  <!-- Mid bright arm layer -->
+  <path d="M120,120 C135,95 165,90 175,105 C185,120 155,145 120,150 C85,155 65,130 75,115 C85,100 105,110 120,120 Z" fill="#63B3ED" opacity="0.5"/>
+  
+  <!-- Spiral Dust Lanes & Star Clusters -->
+  <circle cx="165" cy="95" r="2" fill="#FEFCBF"/>
+  <circle cx="175" cy="115" r="1.5" fill="#FEFCBF"/>
+  <circle cx="145" cy="145" r="2" fill="#FEFCBF"/>
+  <circle cx="105" cy="140" r="1.5" fill="#FEFCBF"/>
+  <circle cx="75" cy="125" r="2" fill="#FEFCBF"/>
+  <circle cx="70" cy="95" r="1.5" fill="#FEFCBF"/>
+  <circle cx="95" cy="75" r="2" fill="#FEFCBF"/>
+  <circle cx="135" cy="80" r="1.5" fill="#FEFCBF"/>
+
+  <!-- Galaxy Core / Bright Center -->
+  <ellipse cx="120" cy="120" rx="22" ry="18" fill="#ED8936" opacity="0.6"/>
+  <ellipse cx="120" cy="120" rx="14" ry="11" fill="#F6AD55" opacity="0.8"/>
+  <ellipse cx="120" cy="120" rx="7" ry="5" fill="#FEFCBF"/>
+  <circle cx="120" cy="120" r="2.5" fill="#FFFFFF"/>
+
+  <!-- Golden Orbit Rings (Representing infinity / boundlessness) -->
+  <ellipse cx="120" cy="120" rx="92" ry="36" fill="none" stroke="#D69E2E" stroke-width="1.5" stroke-dasharray="6,4" transform="rotate(-25 120 120)" opacity="0.7"/>
+  <ellipse cx="120" cy="120" rx="84" ry="30" fill="none" stroke="#ECC94B" stroke-width="2" transform="rotate(35 120 120)" opacity="0.85"/>
+  
+  <!-- Highlight Planet along the orbit -->
+  <circle cx="188" cy="98" r="4.5" fill="#DD6B20"/>
+  <circle cx="186" cy="96" r="1.5" fill="#FBD38D"/>
+
+</svg>

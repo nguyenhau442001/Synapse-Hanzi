@@ -1,0 +1,56 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background ambient glow representing warmth within dark mode -->
+  <circle cx="120" cy="120" r="70" fill="#FFB703" opacity="0.05"/>
+
+  <!-- Central Character: An elder woman (mother) portraying the physical character of "絮叨" (the constant, repetitive nag/chatter) -->
+  <g transform="translate(0, 5)">
+    <!-- Body/Shawl -->
+    <path d="M 85 180 C 85 145, 95 130, 120 130 C 145 130, 155 145, 155 180 Z" fill="#2E384D"/>
+    <!-- Inner collar -->
+    <path d="M 105 130 L 120 148 L 135 130 Z" fill="#3E4C66"/>
+
+    <!-- Neck -->
+    <rect x="112" y="115" width="16" height="20" rx="4" fill="#E5A97D"/>
+
+    <!-- Head -->
+    <circle cx="120" cy="95" r="28" fill="#E5A97D"/>
+
+    <!-- Hair (bun style with warm grey tones) -->
+    <circle cx="120" cy="72" r="24" fill="#78849E"/>
+    <circle cx="138" cy="70" r="10" fill="#626D84"/>
+
+    <!-- Facial features: Gentle, expressive, mid-speech -->
+    <!-- Glasses -->
+    <circle cx="111" cy="94" r="7" fill="none" stroke="#FFB703" stroke-width="2"/>
+    <circle cx="129" cy="94" r="7" fill="none" stroke="#FFB703" stroke-width="2"/>
+    <line x1="118" y1="94" x2="122" y2="94" stroke="#FFB703" stroke-width="2"/>
+
+    <!-- Eyes (closed in warm affectionate talking/reminiscing expression) -->
+    <path d="M 107 88 Q 111 85 115 88" fill="none" stroke="#3E4C66" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 125 88 Q 129 85 133 88" fill="none" stroke="#3E4C66" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Gentle smiling mouth, open mid-speech -->
+    <path d="M 113 105 Q 120 114 127 105 Z" fill="#A83232"/>
+  </g>
+
+  <!-- Visual Semantic Flow: Continuous looped curved lines of speech/words wrapping around, representing endless repeating chatter and nagging ("絮叨") -->
+  <!-- Stream 1 (outer looping ribbon/sound waves) -->
+  <path d="M 75 140 C 45 140, 30 110, 45 85 C 60 60, 90 55, 110 50" fill="none" stroke="#FFB703" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 4" opacity="0.8"/>
+  
+  <!-- Stream 2 -->
+  <path d="M 165 140 C 195 140, 210 110, 195 85 C 180 60, 150 55, 130 50" fill="none" stroke="#FFB703" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 6" opacity="0.6"/>
+
+  <!-- Stream 3 (lower echoing loop of persistent advice/care) -->
+  <path d="M 80 165 C 50 185, 90 215, 120 205 C 150 195, 185 180, 165 155" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 5" opacity="0.5"/>
+
+  <!-- Accent dots representing vocal cadence / stream of endless small reminders -->
+  <circle cx="45" cy="110" r="3" fill="#FFB703"/>
+  <circle cx="55" cy="75" r="2" fill="#FFB703" opacity="0.8"/>
+  <circle cx="190" cy="100" r="3" fill="#FFB703"/>
+  <circle cx="180" cy="70" r="2" fill="#FFB703" opacity="0.7"/>
+  <circle cx="95" cy="200" r="2.5" fill="#3B82F6" opacity="0.8"/>
+  <circle cx="145" cy="203" r="2" fill="#3B82F6" opacity="0.6"/>
+</svg>

@@ -1,0 +1,32 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background subtle tech grid -->
+  <path d="M0 120h240M120 0v240" stroke="#2D343E" stroke-width="1" stroke-dasharray="4 4"/>
+  
+  <!-- The "New/Novel" Object: A glowing, floating geometric prism -->
+  <g transform="translate(120, 120)">
+    <path d="M0 -30 L35 10 L0 50 L-35 10 Z" fill="#FFB800" opacity="0.9"/>
+    <path d="M0 -30 L0 50" stroke="#FFFFFF" stroke-width="2" opacity="0.3"/>
+    <circle cx="0" cy="10" r="8" fill="#FFD700"/>
+  </g>
+
+  <!-- The Observer: A child figure, scaled smaller to emphasize the scale/wonder of the object -->
+  <g transform="translate(60, 160)">
+    <!-- Body -->
+    <path d="M-10 0 L10 0 L8 40 L-8 40 Z" fill="#6C7A89"/>
+    <!-- Head -->
+    <circle cx="0" cy="-15" r="12" fill="#AAB8C2"/>
+    <!-- Eyes looking up in wonder -->
+    <circle cx="-4" cy="-18" r="2" fill="#1A1D24"/>
+    <circle cx="4" cy="-18" r="2" fill="#1A1D24"/>
+    <!-- Hands reaching up -->
+    <path d="M-12 5 L-20 -5 M12 5 L20 -5" stroke="#AAB8C2" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Exaggerated Scale/Wonder Effect: Concentric arcs radiating from the object -->
+  <g stroke="#FFB800" stroke-width="2" fill="none" opacity="0.4">
+    <path d="M120 80 A 40 40 0 0 1 160 120" />
+    <path d="M120 70 A 50 50 0 0 1 170 120" />
+  </g>
+</svg>

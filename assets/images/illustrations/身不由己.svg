@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Puppet strings representing external control -->
+  <path d="M120 40 L120 90" stroke="#FFB800" stroke-width="3" stroke-dasharray="6 4"/>
+  <path d="M80 40 L100 90" stroke="#FFB800" stroke-width="3" stroke-dasharray="6 4"/>
+  <path d="M160 40 L140 90" stroke="#FFB800" stroke-width="3" stroke-dasharray="6 4"/>
+  
+  <!-- Person figure (The "Self") -->
+  <g fill="#E0E0E0">
+    <!-- Head -->
+    <circle cx="120" cy="105" r="15"/>
+    <!-- Body/Torso -->
+    <path d="M105 120 H135 L145 180 H95 Z"/>
+    <!-- Arms (awkward, stiff posture) -->
+    <rect x="85" y="125" width="15" height="40" rx="5" transform="rotate(20 92 145)"/>
+    <rect x="140" y="125" width="15" height="40" rx="5" transform="rotate(-20 147 145)"/>
+    <!-- Legs -->
+    <rect x="100" y="180" width="12" height="35" rx="3"/>
+    <rect x="128" y="180" width="12" height="35" rx="3"/>
+  </g>
+  
+  <!-- Control crossbar at the top -->
+  <rect x="60" y="30" width="120" height="10" rx="2" fill="#FFB800"/>
+  
+  <!-- Subtle shadow for depth -->
+  <ellipse cx="120" cy="225" rx="40" ry="5" fill="#000" opacity="0.3"/>
+</svg>

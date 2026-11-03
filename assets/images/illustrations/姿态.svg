@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for stage/presence -->
+  <circle cx="120" cy="120" r="70" fill="#252A34" opacity="0.6"/>
+  <ellipse cx="120" cy="195" rx="55" ry="8" fill="#111317"/>
+
+  <!-- Character representing posture, confidence, and stride (姿态) -->
+  <g transform="translate(0, 5)">
+    <!-- Dynamic diagonal subtle background lines representing global stage/motion -->
+    <line x1="70" y1="180" x2="170" y2="70" stroke="#2F3644" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round"/>
+    
+    <!-- Shadow beneath steps -->
+    <ellipse cx="120" cy="188" rx="40" ry="5" fill="#14161B"/>
+
+    <!-- Professional figure in confident stride (representing 昂扬姿态, phong thái hiên ngang) -->
+    <!-- Back Leg -->
+    <path d="M110 135 L95 175 L108 178" fill="none" stroke="#60A5FA" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Front Leg -->
+    <path d="M125 135 L145 170 L135 178" fill="none" stroke="#93C5FD" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Torso (leaning slightly forward with confidence) -->
+    <path d="M112 90 L125 138 L100 135 Z" fill="#3B82F6"/>
+    <path d="M112 90 L125 138 L100 135 Z" fill="#F59E0B" opacity="0.15"/>
+
+    <!-- Back Arm (swung back) -->
+    <path d="M115 95 L98 125" fill="none" stroke="#60A5FA" stroke-width="7" stroke-linecap="round"/>
+    
+    <!-- Front Arm (swung forward, open & confident gesture) -->
+    <path d="M118 95 L142 115" fill="none" stroke="#93C5FD" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- Head & Neck -->
+    <circle cx="118" cy="72" r="13" fill="#FDE68A"/>
+    <!-- Hair -->
+    <path d="M106 70 C106 62, 115 60, 126 65 C129 68, 128 73, 128 73 L106 73 Z" fill="#1E293B"/>
+
+    <!-- Glowing Accent representing confidence/openness (开放自信) -->
+    <circle cx="155" cy="85" r="4" fill="#F59E0B"/>
+    <circle cx="168" cy="65" r="3" fill="#F59E0B" opacity="0.8"/>
+    <circle cx="140" cy="55" r="2" fill="#F59E0B" opacity="0.6"/>
+    
+    <!-- Rising upward trajectory indicator -->
+    <path d="M 80 150 Q 120 110 170 65" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 6" opacity="0.8"/>
+  </g>
+</svg>

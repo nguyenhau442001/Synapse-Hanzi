@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Sea and Horizon -->
+  <path d="M0 180 C 80 160, 160 160, 240 180 L 240 240 L 0 240 Z" fill="#2C3E50"/>
+  <path d="M0 175 C 60 170, 180 170, 240 175" stroke="#34495E" stroke-width="2"/>
+  
+  <!-- Distant Coastline -->
+  <path d="M0 150 L 40 140 L 70 155 L 100 145 L 130 160 L 160 150 L 200 165 L 240 155 L 240 180 L 0 180 Z" fill="#263238"/>
+  
+  <!-- Ship Deck (Foreground) -->
+  <path d="M0 240 L 80 190 L 160 190 L 240 240 Z" fill="#37474F"/>
+  <path d="M0 240 L 80 190 M240 240 L 160 190" stroke="#455A64" stroke-width="2"/>
+  
+  <!-- Person (Silhouette) -->
+  <g transform="translate(120, 195)">
+    <circle cx="0" cy="-30" r="12" fill="#FFB300"/>
+    <path d="M-15 -18 L 15 -18 L 10 20 L -10 20 Z" fill="#FFB300"/>
+    <!-- Gaze Line -->
+    <line x1="0" y1="-30" x2="100" y2="-10" stroke="#FFB300" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6"/>
+  </g>
+  
+  <!-- Railing -->
+  <rect x="0" y="190" width="240" height="5" fill="#546E7A"/>
+  <rect x="20" y="190" width="5" height="20" fill="#546E7A"/>
+  <rect x="100" y="190" width="5" height="20" fill="#546E7A"/>
+  <rect x="180" y="190" width="5" height="20" fill="#546E7A"/>
+</svg>

@@ -1,0 +1,61 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient background glow to highlight the central figure -->
+  <circle cx="120" cy="115" r="70" fill="#2B313D" opacity="0.4"/>
+
+  <!-- Conceptual Representation of "头号" (Top figure / Kingpin / Number one leader) -->
+  <!-- We depict a commanding, authoritative central figure (The "Head" / Number One) -->
+
+  <!-- Shoulders & Suit / Jacket -->
+  <path d="M 75 185 L 75 160 C 75 145, 95 135, 120 135 C 145 135, 165 145, 165 160 L 165 185 Z" fill="#252B37"/>
+  <!-- Lapels -->
+  <path d="M 105 135 L 120 165 L 135 135 Z" fill="#1A1D24"/>
+  <path d="M 105 135 L 95 165 L 75 160" fill="#1F242E"/>
+  <path d="M 135 135 L 145 165 L 165 160" fill="#1F242E"/>
+  <!-- Shirt & Tie -->
+  <polygon points="112,135 128,135 124,155 120,165 116,155" fill="#EAECEF"/>
+  <polygon points="118,145 122,145 123,175 120,185 117,175" fill="#D97706"/>
+
+  <!-- Neck -->
+  <rect x="110" y="118" width="20" height="22" fill="#E0A96D"/>
+
+  <!-- Head / Face -->
+  <path d="M 95 85 C 95 65, 105 55, 120 55 C 135 55, 145 65, 145 85 L 145 115 C 145 125, 135 130, 120 130 C 105 130, 95 125, 95 115 Z" fill="#E0A96D"/>
+
+  <!-- Hair / Silhouette Style -->
+  <path d="M 95 85 C 95 65, 105 55, 120 54 C 135 54, 145 65, 145 85 L 145 75 C 145 60, 135 50, 120 50 C 105 50, 95 60, 95 75 Z" fill="#111318"/>
+  <path d="M 94 75 C 98 68, 108 67, 115 66 C 110 75, 105 82, 94 75 Z" fill="#111318"/>
+
+  <!-- Confident/Commanding Facial Features (Shadows and Expression) -->
+  <!-- Eyes (focused, stylized) -->
+  <path d="M 103 92 Q 109 88 115 92" stroke="#111318" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M 125 92 Q 131 88 137 92" stroke="#111318" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Stern Brow -->
+  <path d="M 101 87 L 115 90" stroke="#111318" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 139 87 L 125 90" stroke="#111318" stroke-width="2" stroke-linecap="round"/>
+  <!-- Subtle mouth -->
+  <path d="M 112 112 Q 120 115 128 112" stroke="#111318" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <!-- THE "NUMBER ONE" (#1) CROWN / BADGE ELEMENT -->
+  <!-- Sleek modern golden crown / number 1 motif floating or resting proudly above the head -->
+  <g transform="translate(0, 0)">
+    <!-- Golden halo / crest ring representing "Top rank / 头号" -->
+    <path d="M 85 45 Q 120 30 155 45" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" fill="none"/>
+    
+    <!-- Bold Minimalist '1' integrated as a sleek vertical crest/pinnacle above the leader -->
+    <path d="M 113 28 L 120 22 L 120 42" stroke="#F59E0B" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <line x1="110" y1="42" x2="130" y2="42" stroke="#F59E0B" stroke-width="4.5" stroke-linecap="round"/>
+
+    <!-- Accent gems/nodes for top-tier status -->
+    <circle cx="85" cy="45" r="3.5" fill="#F59E0B"/>
+    <circle cx="155" cy="45" r="3.5" fill="#F59E0B"/>
+  </g>
+
+  <!-- Framing / Focus elements (Subtle corner accents fitting modern UI flashcard style) -->
+  <path d="M 30 45 L 30 30 L 45 30" stroke="#374151" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 210 45 L 210 30 L 195 30" stroke="#374151" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 30 195 L 30 210 L 45 210" stroke="#374151" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 210 195 L 210 210 L 195 210" stroke="#374151" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

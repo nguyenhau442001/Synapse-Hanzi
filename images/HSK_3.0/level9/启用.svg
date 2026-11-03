@@ -1,0 +1,61 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background accent rays representing activation/launch -->
+  <g opacity="0.15">
+    <path d="M120 120 L80 50" stroke="#FFB020" stroke-width="2" stroke-linecap="round"/>
+    <path d="M120 120 L160 50" stroke="#FFB020" stroke-width="2" stroke-linecap="round"/>
+    <path d="M120 120 L50 90" stroke="#FFB020" stroke-width="2" stroke-linecap="round"/>
+    <path d="M120 120 L190 90" stroke="#FFB020" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Central Object: Modern Airport Terminal / Hub Building (Physical Object representing "启用" context) -->
+  <g transform="translate(0, 10)">
+    <!-- Terminal Structure Base -->
+    <path d="M50 140 L190 140 L180 100 L160 85 L80 85 L60 100 Z" fill="#2D3748" stroke="#4A5568" stroke-width="2"/>
+    
+    <!-- Curved Iconic Roof (representing a major transportation hub) -->
+    <path d="M55 100 Q120 60 185 100 L195 105 Q120 65 45 105 Z" fill="#3B82F6" stroke="#60A5FA" stroke-width="2"/>
+    
+    <!-- Glass Facade Windows -->
+    <g fill="#1E293B" stroke="#60A5FA" stroke-width="1.5">
+      <rect x="70" y="110" width="20" height="30" rx="2"/>
+      <rect x="95" y="110" width="20" height="30" rx="2"/>
+      <rect x="120" y="110" width="20" height="30" rx="2"/>
+      <rect x="145" y="110" width="20" height="30" rx="2"/>
+    </g>
+
+    <!-- Entrance Doors -->
+    <rect x="105" y="120" width="30" height="20" fill="#60A5FA" opacity="0.4"/>
+
+    <!-- Activation / Launch Element: Bright golden/orange energy pulse & forward-facing aircraft ready for departure -->
+    <circle cx="120" cy="82" r="28" fill="none" stroke="#FFB020" stroke-width="3" stroke-dasharray="6 4" opacity="0.8"/>
+    
+    <!-- Stylized Modern Airplane taking off / launching upward -->
+    <g transform="translate(120, 75) rotate(-25)">
+      <!-- Fuselage -->
+      <ellipse cx="0" cy="0" rx="18" ry="4" fill="#F8FAFC"/>
+      <!-- Wings -->
+      <path d="M-2 -2 L4 -12 L8 -2 Z" fill="#E2E8F0"/>
+      <path d="M-2 2 L4 12 L8 2 Z" fill="#CBD5E1"/>
+      <!-- Tail -->
+      <path d="M-14 0 L-18 -6 L-12 -3 Z" fill="#FFB020"/>
+    </g>
+
+    <!-- Ground / Runway Platform -->
+    <rect x="35" y="140" width="170" height="6" rx="3" fill="#475569"/>
+    <line x1="50" y1="143" x2="190" y2="143" stroke="#FFB020" stroke-width="1.5" stroke-dasharray="8 6"/>
+  </g>
+
+  <!-- Activation Switch / Power Accent symbolizing "Kích hoạt / Đưa vào sử dụng" -->
+  <g transform="translate(120, 185)">
+    <!-- Base Glow -->
+    <circle cx="0" cy="0" r="16" fill="#FFB020" opacity="0.2"/>
+    <!-- Outer Ring -->
+    <circle cx="0" cy="0" r="12" fill="#1A1D24" stroke="#FFB020" stroke-width="2.5"/>
+    <!-- Power / Activation Icon -->
+    <path d="M0 -6 L0 1" stroke="#FFB020" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M-5 -3 A 6 6 0 1 0 5 -3" fill="none" stroke="#FFB020" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>

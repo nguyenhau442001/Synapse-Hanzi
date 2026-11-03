@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Snake body -->
+  <path d="M60 120 C 80 120, 100 150, 130 150 C 160 150, 180 120, 200 120" fill="none" stroke="#FFB84D" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Snake Head -->
+  <ellipse cx="60" cy="120" rx="12" ry="10" fill="#FFB84D"/>
+  
+  <!-- Human Hand adding the feet -->
+  <g>
+    <path d="M140 150 L 145 180 M 140 150 L 135 180" stroke="#E0E0E0" stroke-width="4" stroke-linecap="round"/>
+    <path d="M130 140 L 120 110 L 140 100 L 150 130 Z" fill="#FF9F43"/>
+    <path d="M150 130 L 160 125 L 165 135 L 155 140 Z" fill="#FF9F43"/>
+  </g>
+  
+  <!-- Motion lines for the action -->
+  <path d="M125 90 Q 135 80 150 90" stroke="#5D6D7E" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+  <path d="M130 85 Q 140 75 155 85" stroke="#5D6D7E" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+</svg>

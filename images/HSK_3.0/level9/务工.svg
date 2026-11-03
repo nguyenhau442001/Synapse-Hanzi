@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background elements: Distant city skyline silhouette -->
+  <path d="M40 180 L80 140 L120 170 L160 130 L200 180 Z" fill="#2A2F38"/>
+  
+  <!-- Human character: Representing the action of going to work (务工) -->
+  <!-- Legs in stride motion -->
+  <path d="M100 180 L115 140 L130 180" stroke="#FFB84D" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M115 180 L135 150 L150 180" stroke="#FFB84D" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- Torso and Backpack -->
+  <rect x="105" y="100" width="30" height="45" rx="5" fill="#FFB84D"/>
+  <rect x="110" y="105" width="20" height="25" rx="3" fill="#E69F30"/>
+  
+  <!-- Head -->
+  <circle cx="120" cy="90" r="12" fill="#FFB84D"/>
+  
+  <!-- Motion lines to emphasize movement/travel -->
+  <path d="M160 100 L180 90" stroke="#5D6575" stroke-width="3" stroke-linecap="round"/>
+  <path d="M165 120 L190 110" stroke="#5D6575" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Tool/Object representing labor (a wrench or construction tool) -->
+  <path d="M140 110 L160 100" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="162" cy="99" r="5" fill="#FFFFFF"/>
+  
+  <!-- Ground line -->
+  <line x1="20" y1="180" x2="220" y2="180" stroke="#3A414F" stroke-width="2"/>
+</svg>

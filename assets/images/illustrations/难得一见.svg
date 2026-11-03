@@ -1,0 +1,41 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle cosmic background stars/dots -->
+  <circle cx="45" cy="50" r="1" fill="#4A5568" opacity="0.6"/>
+  <circle cx="195" cy="40" r="1.5" fill="#4A5568" opacity="0.8"/>
+  <circle cx="205" cy="170" r="1" fill="#4A5568" opacity="0.5"/>
+  <circle cx="35" cy="190" r="1.5" fill="#4A5568" opacity="0.7"/>
+  <circle cx="85" cy="30" r="1" fill="#FFD700" opacity="0.4"/>
+  <circle cx="155" cy="210" r="1" fill="#FFD700" opacity="0.5"/>
+
+  <!-- Observatory Dome Silhouette (Ground element for context) -->
+  <path d="M10,210 L230,210 L230,240 L10,240 Z" fill="#13151A"/>
+  <path d="M80,210 L80,185 C80,171.19 91.19,160 105,160 L135,160 C148.81,160 160,171.19 160,185 L160,210 Z" fill="#252A34"/>
+  <path d="M115,160 L115,210" stroke="#1A1D24" stroke-width="2"/>
+  
+  <!-- The Rare Astronomical Event (Central Noun: Total Solar Eclipse / Rare Celestial Alignment) -->
+  <!-- Outer glowing corona -->
+  <circle cx="120" cy="110" r="54" fill="none" stroke="#FF8C00" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.6"/>
+  <circle cx="120" cy="110" r="48" fill="#FFA500" opacity="0.25"/>
+  <circle cx="120" cy="110" r="42" fill="#FFD700" opacity="0.35"/>
+  
+  <!-- Bright glowing celestial body base -->
+  <circle cx="120" cy="110" r="36" fill="#FFF2B2"/>
+
+  <!-- Occulting body creating the rare corona ring/eclipse effect -->
+  <circle cx="120" cy="110" r="33" fill="#1A1D24"/>
+  
+  <!-- Diamond Ring Effect (Bright flare characteristic of rare eclipses) -->
+  <circle cx="148" cy="88" r="7" fill="#FFFFFF"/>
+  <circle cx="148" cy="88" r="12" fill="#FFD700" opacity="0.5"/>
+  <path d="M148,72 L148,104 M132,88 L164,88" stroke="#FFFFFF" stroke-width="1" opacity="0.7"/>
+
+  <!-- Focused Observation Beam/Telescope indicator -->
+  <path d="M120,110 L60,180" stroke="#4A5568" stroke-width="2" stroke-dasharray="4 4" opacity="0.5"/>
+  
+  <!-- Highlight Star marking "one-in-a-lifetime" rarity -->
+  <path d="M190,75 L193,85 L203,88 L193,91 L190,101 L187,91 L177,88 L187,85 Z" fill="#FFD700"/>
+  <path d="M55,95 L56.5,100 L61.5,101.5 L56.5,103 L55,108 L53.5,103 L48.5,101.5 L53.5,100 Z" fill="#FF8C00"/>
+</svg>

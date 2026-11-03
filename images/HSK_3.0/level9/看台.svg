@@ -1,0 +1,35 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Stadium Stand Structure -->
+  <g transform="translate(40, 80)">
+    <!-- Tier 1 -->
+    <path d="M0 100 L160 100 L150 70 L10 70 Z" fill="#2D343E"/>
+    <path d="M10 70 L150 70 L140 40 L20 40 Z" fill="#3A4350"/>
+    <path d="M20 40 L140 40 L130 10 L30 10 Z" fill="#485363"/>
+    
+    <!-- Crowd silhouettes (simplified) -->
+    <g fill="#FFB800">
+      <circle cx="35" cy="85" r="5"/>
+      <circle cx="55" cy="85" r="5"/>
+      <circle cx="75" cy="85" r="5"/>
+      <circle cx="95" cy="85" r="5"/>
+      <circle cx="115" cy="85" r="5"/>
+      
+      <circle cx="45" cy="55" r="5"/>
+      <circle cx="65" cy="55" r="5"/>
+      <circle cx="85" cy="55" r="5"/>
+      <circle cx="105" cy="55" r="5"/>
+      
+      <circle cx="55" cy="25" r="5"/>
+      <circle cx="75" cy="25" r="5"/>
+      <circle cx="95" cy="25" r="5"/>
+    </g>
+    
+    <!-- Railing -->
+    <line x1="0" y1="100" x2="160" y2="100" stroke="#FFB800" stroke-width="3"/>
+    <line x1="10" y1="70" x2="150" y2="70" stroke="#FFB800" stroke-width="3"/>
+    <line x1="20" y1="40" x2="140" y2="40" stroke="#FFB800" stroke-width="3"/>
+    <line x1="30" y1="10" x2="130" y2="10" stroke="#FFB800" stroke-width="3"/>
+  </g>
+</svg>

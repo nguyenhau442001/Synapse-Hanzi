@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Atmospheric Background & Distant Mountains -->
+  <path d="M 20 180 L 70 120 L 120 170 L 170 110 L 220 180 Z" fill="#222834"/>
+  <path d="M 70 120 L 100 85 L 120 110 L 170 50 L 220 115 L 170 110 Z" fill="#2A3241"/>
+  <path d="M 100 85 L 112 70 L 120 80 Z" fill="#FFFFFF" opacity="0.4"/>
+  <path d="M 170 50 L 187 30 L 200 50 Z" fill="#FFFFFF" opacity="0.6"/>
+
+  <!-- Steep Cliff Edge (Foreground Object representing physical location / "绝" - precipice/cliff) -->
+  <path d="M 20 220 L 20 140 C 20 140, 50 145, 75 130 C 100 115, 120 90, 140 70 L 140 220 Z" fill="#15181F"/>
+  <path d="M 140 70 L 140 220 L 240 220 L 240 85 Z" fill="#0D0F13"/>
+
+  <!-- Dramatic Vertical Rock Face Cut -->
+  <path d="M 140 70 L 138 220" stroke="#FF6B35" stroke-width="2" opacity="0.6"/>
+  <path d="M 140 70 L 145 90 L 138 120 L 142 160 L 139 200" fill="none" stroke="#2A3241" stroke-width="3"/>
+
+  <!-- Warning / Danger Indicator (High contrast orange accent for "绝" absolute prohibition context) -->
+  <polygon points="175,75 195,110 155,110" fill="#FF6B35"/>
+  <rect x="173" y="88" width="4" height="12" rx="2" fill="#1A1D24"/>
+  <circle cx="175" cy="104" r="2.5" fill="#1A1D24"/>
+
+  <!-- Climber Silhouette at the edge, stopped safely (Absolute halt / prohibition) -->
+  <!-- Body -->
+  <path d="M 100 100 L 108 125 L 103 145" fill="none" stroke="#E2E8F0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Head & Helmet -->
+  <circle cx="97" cy="90" r="7" fill="#E2E8F0"/>
+  <path d="M 91 88 A 6 6 0 0 1 103 88" fill="#FF6B35"/>
+  <!-- Backpack -->
+  <rect x="105" y="97" width="8" height="16" rx="3" fill="#FF6B35"/>
+  <!-- Arm outstretched stopping -->
+  <path d="M 102 105 L 118 100" fill="none" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round"/>
+  <!-- Legs planted firmly back -->
+  <path d="M 108 125 L 90 135 L 80 132" fill="none" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Professional Climbing Gear Detail (Rope coiled on backpack) -->
+  <circle cx="109" cy="105" r="5" fill="none" stroke="#F6E05E" stroke-width="2"/>
+
+  <!-- Snow/Ice Accents on the Cliff -->
+  <path d="M 140 70 C 145 75, 150 72, 155 78 C 145 82, 142 75, 140 70 Z" fill="#FFFFFF" opacity="0.8"/>
+  <path d="M 75 130 C 85 125, 95 128, 100 125 C 90 122, 80 124, 75 130 Z" fill="#FFFFFF" opacity="0.5"/>
+
+  <!-- Ground snow line -->
+  <path d="M 20 140 C 40 143, 60 141, 75 130 C 90 119, 110 95, 140 70" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+</svg>

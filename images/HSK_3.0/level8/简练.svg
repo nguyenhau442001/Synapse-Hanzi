@@ -1,0 +1,28 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(36, 36)">
+    <!-- Main Scroll/Document (Representing concise text/speech) -->
+    <rect x="30" y="10" width="108" height="148" rx="8" fill="#2D323F" stroke="#E5C158" stroke-width="3"/>
+    
+    <!-- Header line -->
+    <line x1="48" y1="28" x2="88" y2="28" stroke="#E5C158" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Concentrated/Condensed text lines (short & precise) -->
+    <line x1="48" y1="46" x2="102" y2="46" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    <line x1="48" y1="60" x2="80" y2="60" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Stylized Diamond Cutout / Prism core representing refinement (jiǎnliàn - concise/distilled) -->
+    <polygon points="84,86 102,106 84,126 66,106" fill="#E5C158"/>
+    <polygon points="84,86 102,106 84,106" fill="#F6D87A"/>
+    <polygon points="84,106 84,126 66,106" fill="#C29D38"/>
+    
+    <!-- Lower concise lines -->
+    <line x1="48" y1="140" x2="92" y2="140" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Elegant Pen/Nib pointing to the essence (súc tích / cô đọng) -->
+    <path d="M138,100 L166,72 C171.5,66.5 180.5,66.5 186,72 L190,76 C195.5,81.5 195.5,90.5 190,96 L162,124 Z" fill="#3B82F6"/>
+    <path d="M138,100 L150,112 L162,124 L150,136 L138,124 Z" fill="#2563EB"/>
+    <path d="M138,124 L126,144 L142,142 Z" fill="#1D4ED8"/>
+  </g>
+</svg>

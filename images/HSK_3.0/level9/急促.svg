@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle atmosphere -->
+  <circle cx="120" cy="120" r="70" fill="#252A34" opacity="0.5"/>
+
+  <!-- Character / Physical Object representing "急促" (rapid, heavy breathing / panting stance) -->
+  <g transform="translate(0, 5)">
+    <!-- Head -->
+    <circle cx="120" cy="72" r="14" fill="#E0E6ED"/>
+
+    <!-- Bent body / torso leaning forward slightly -->
+    <path d="M112 86 C112 86, 105 110, 115 130 C120 138, 128 138, 133 130 C143 110, 136 86, 136 86 Z" fill="#3B82F6"/>
+
+    <!-- Arms bent, hands on hips (双手叉腰) -->
+    <!-- Left arm -->
+    <path d="M113 90 Q95 105, 105 125 T120 130" fill="none" stroke="#3B82F6" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Right arm -->
+    <path d="M135 90 Q155 105, 145 125 T130 130" fill="none" stroke="#3B82F6" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Legs -->
+    <path d="M118 130 L102 185" fill="none" stroke="#2563EB" stroke-width="10" stroke-linecap="round"/>
+    <path d="M130 130 L146 185" fill="none" stroke="#2563EB" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- Heavy / Rapid Breathing Visual Elements (急促的气息 - swirling dynamic puffs near mouth) -->
+    <g transform="translate(100, 68)">
+      <!-- Puff 1 -->
+      <path d="M -5 5 C -15 2, -20 -5, -12 -12 C -8 -15, -2 -10, -5 5 Z" fill="#F59E0B" opacity="0.8"/>
+      <!-- Puff 2 -->
+      <path d="M -12 12 C -24 8, -30 0, -22 -8 C -18 -11, -12 -5, -12 12 Z" fill="#F59E0B" opacity="0.5"/>
+      <!-- Puff 3 (larger, rushing outward) -->
+      <path d="M -20 20 C -35 15, -42 5, -33 -3 C -28 -7, -20 0, -20 20 Z" fill="#F59E0B" opacity="0.3"/>
+    </g>
+
+    <!-- Sweat droplets indicating exhaustion/urgency -->
+    <path d="M 136 65 Q 140 70, 136 75 Q 132 70, 136 65 Z" fill="#38BDF8"/>
+    <path d="M 104 62 Q 107 66, 104 70 Q 101 66, 104 62 Z" fill="#38BDF8"/>
+  </g>
+</svg>

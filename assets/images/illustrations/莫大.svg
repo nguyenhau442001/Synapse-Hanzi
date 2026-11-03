@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Representing "莫大" (immense/greatest) through scale contrast: 
+       A small, humble figure standing before a colossal, glowing, 
+       abstract representation of support/encouragement (a massive, 
+       rising golden sun-like structure) to visualize the "immense" 
+       nature of the feeling. -->
+  
+  <!-- Background glow/aura -->
+  <circle cx="120" cy="120" r="80" fill="#FFB347" opacity="0.05"/>
+  <circle cx="120" cy="120" r="50" fill="#FFB347" opacity="0.1"/>
+  
+  <!-- The "Immense" force (The encouragement) -->
+  <path d="M120 40 L150 110 L220 120 L160 160 L180 230 L120 190 L60 230 L80 160 L20 120 L90 110 Z" fill="#FFD700"/>
+  
+  <!-- The humble figure receiving the encouragement -->
+  <g transform="translate(105, 160)">
+    <circle cx="15" cy="25" r="8" fill="#E0E0E0"/>
+    <path d="M15 33 L15 55 M15 40 L5 50 M15 40 L25 50 M15 55 L5 70 M15 55 L25 70" stroke="#E0E0E0" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Scale contrast: The figure is small, the golden symbol of support is massive -->
+</svg>

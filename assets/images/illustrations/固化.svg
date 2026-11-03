@@ -1,0 +1,52 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-bleed background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle grid for modern sleek educational theme -->
+  <g stroke="#262A35" stroke-width="1" opacity="0.5">
+    <line x1="40" y1="0" x2="40" y2="240" />
+    <line x1="100" y1="0" x2="100" y2="240" />
+    <line x1="160" y1="0" x2="160" y2="240" />
+    <line x1="200" y1="0" x2="200" y2="240" />
+    <line x1="0" y1="60" x2="240" y2="60" />
+    <line x1="0" y1="120" x2="240" y2="120" />
+    <line x1="0" y1="180" x2="240" y2="180" />
+  </g>
+
+  <!-- Central physical object representing "固化" (rigified/solidified structure) -->
+  <g transform="translate(120, 120)">
+    <!-- Outer heavy rigid block/container frame -->
+    <rect x="-65" y="-65" width="130" height="130" rx="16" fill="#252A37" stroke="#3A4255" stroke-width="3"/>
+
+    <!-- Inner trapped rigid geometric cube matrix (symbolizing rigid mindset/stagnant structure) -->
+    <!-- Back grid shadow/structure -->
+    <path d="M-30 -30 L10 -40 L40 -10 L0 0 Z" fill="#2E3646" />
+    <path d="M10 -40 L40 -10 L40 30 L10 10 Z" fill="#353E50" />
+
+    <!-- Solidified central block 1 (Orange/Gold focus accent) -->
+    <g transform="translate(-15, -15)">
+      <polygon points="0,-25 35,-10 35,25 0,10" fill="#E59838" />
+      <polygon points="-35,-10 0,-25 0,10 -35,25" fill="#F3A847" />
+      <polygon points="-35,-10 0,-25 35,-10 0,5" fill="#FFB754" />
+    </g>
+
+    <!-- Solidified central block 2 (Slate contrasting block) -->
+    <g transform="translate(15, 15)">
+      <polygon points="0,-20 25,-10 25,15 0,5" fill="#525B6F" />
+      <polygon points="-25,-10 0,-20 0,5 -25,15" fill="#444C5C" />
+      <polygon points="-25,-10 0,-20 25,-10 0,0" fill="#626D84" />
+    </g>
+
+    <!-- Cracking / Rigid boundary indicators (stress lines showing inflexibility) -->
+    <path d="M-50 -50 L-35 -35" stroke="#E59838" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M50 -50 L35 -35" stroke="#E59838" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M-50 50 L-35 35" stroke="#E59838" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M50 50 L35 35" stroke="#E59838" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Corner rivets / mechanical locks emphasizing fixed, unchanging nature -->
+    <circle cx="-52" cy="-52" r="3" fill="#8C96A8"/>
+    <circle cx="52" cy="-52" r="3" fill="#8C96A8"/>
+    <circle cx="-52" cy="52" r="3" fill="#8C96A8"/>
+    <circle cx="52" cy="52" r="3" fill="#8C96A8"/>
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle background grid/glow elements for depth -->
+  <path d="M40 120 H200" stroke="#2A2F3D" stroke-width="1" stroke-dasharray="4 4" opacity="0.4"/>
+  <circle cx="120" cy="120" r="90" fill="#222736" opacity="0.3"/>
+
+  <!-- Newspaper / Main Object Representation for "专栏" (Column/Special Section) -->
+  <g transform="translate(48, 36)">
+    <!-- Newspaper Base Background -->
+    <rect x="0" y="0" width="144" height="168" rx="8" fill="#2E3648" stroke="#3E475C" stroke-width="2"/>
+    
+    <!-- Header banner (Newspaper Nameplate) -->
+    <rect x="16" y="16" width="112" height="16" rx="3" fill="#4B5568"/>
+    
+    <!-- Highlighted "Column" (专栏) Section Box -->
+    <rect x="16" y="44" width="112" height="108" rx="6" fill="#1E232F" stroke="#F59E0B" stroke-width="2.5"/>
+    
+    <!-- Special Column Header / Icon -->
+    <circle cx="32" cy="62" r="8" fill="#F59E0B"/>
+    <rect x="46" y="58" width="64" height="8" rx="2" fill="#F59E0B"/>
+    
+    <!-- Column Content Lines (Article preview) -->
+    <rect x="28" y="78" width="88" height="6" rx="2" fill="#9CA3AF"/>
+    <rect x="28" y="90" width="88" height="6" rx="2" fill="#6B7280"/>
+    <rect x="28" y="102" width="72" height="6" rx="2" fill="#6B7280"/>
+    <rect x="28" y="114" width="80" height="6" rx="2" fill="#6B7280"/>
+    <rect x="28" y="126" width="50" height="6" rx="2" fill="#4B5568"/>
+
+    <!-- Decorative author badge/pencil icon representing commentary column -->
+    <circle cx="104" cy="129" r="7" fill="#F59E0B"/>
+    <path d="M101.5 131.5 L106.5 126.5" stroke="#1E232F" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Magnifying glass / Focus element highlighting the dedicated column -->
+  <g transform="translate(110, 105)">
+    <!-- Glass Rim -->
+    <circle cx="36" cy="36" r="26" fill="none" stroke="#F59E0B" stroke-width="5"/>
+    <!-- Glass Lens Tint -->
+    <circle cx="36" cy="36" r="24" fill="#F59E0B" fill-opacity="0.12"/>
+    <!-- Handle -->
+    <path d="M18 54 L2 70" stroke="#F59E0B" stroke-width="6" stroke-linecap="round"/>
+    <path d="M18 54 L2 70" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

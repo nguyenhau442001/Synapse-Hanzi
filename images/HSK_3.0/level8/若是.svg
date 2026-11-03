@@ -1,0 +1,37 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Causality/Conditional Metaphor: A path splitting into two distinct outcomes based on a condition -->
+  <!-- The "If" point: A central junction -->
+  <circle cx="120" cy="120" r="12" fill="#FFB84D" opacity="0.8"/>
+  
+  <!-- The "Condition" path (The "If" branch) -->
+  <path d="M 120 120 L 180 60" stroke="#FFB84D" stroke-width="6" stroke-linecap="round" stroke-dasharray="8 8"/>
+  
+  <!-- The "Result" path (The "Then" branch) -->
+  <path d="M 180 60 L 210 30" stroke="#FFB84D" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Visualizing the "Clear Weather" outcome (Sun icon) -->
+  <circle cx="210" cy="30" r="15" fill="#FFB84D"/>
+  <path d="M 210 5 L 210 0 M 210 60 L 210 55 M 235 30 L 240 30 M 185 30 L 180 30" stroke="#FFB84D" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- The "Alternative" path (The "Else" branch) -->
+  <path d="M 120 120 L 180 180" stroke="#4A5568" stroke-width="4" stroke-linecap="round" stroke-dasharray="4 4"/>
+  
+  <!-- Visualizing the "Cloudy/Rain" outcome -->
+  <path d="M 170 180 Q 180 170 190 180 Q 200 170 210 180" stroke="#718096" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- The "Subject" (The family/person moving towards the junction) -->
+  <g transform="translate(40, 160)">
+    <circle cx="20" cy="20" r="10" fill="#E2E8F0"/>
+    <path d="M 20 30 L 20 50 M 20 35 L 10 45 M 20 35 L 30 45 M 20 50 L 15 65 M 20 50 L 25 65" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Arrow indicating movement towards the condition -->
+  <path d="M 60 160 L 110 125" stroke="#A0AEC0" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#A0AEC0"/>
+    </marker>
+  </defs>
+</svg>

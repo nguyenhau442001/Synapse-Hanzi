@@ -1,0 +1,47 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual Object: A stylized split-metaphor vessel (Plant rising from dark earth/stone to golden bloom/fruit) representing "Kǔjìn-gānlái" -->
+  <g transform="translate(120, 120)">
+    <!-- Ambient glow for the prosperous half -->
+    <circle cx="0" cy="-20" r="60" fill="#FFB703" opacity="0.08"/>
+
+    <!-- Pot / Base representing the hard journey (dark slate & rugged contour) -->
+    <path d="M-45,30 L-30,75 C-30,78 -27,80 -24,80 L24,80 C27,80 30,78 30,75 L45,30 Z" fill="#2D333B"/>
+    <!-- Earth inside pot -->
+    <ellipse cx="0" cy="30" rx="45" ry="8" fill="#1E232A"/>
+    <!-- Subtle cracked detail on the pot showing hardship -->
+    <path d="M-10,45 L-5,60 L-2,65" stroke="#1A1D24" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Left side: The bitter past (Thorn branch / grey-blue tones) -->
+    <path d="M-5,30 C-25,10 -35,-10 -25,-40" stroke="#6C7A89" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M-18, -5 L-28, -2" stroke="#6C7A89" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M-22, -25 L-32,-22" stroke="#6C7A89" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Right side & Center: The sweet arrival (Golden stem, thriving leaves, and radiant blossom/fruit) -->
+    <path d="M0,30 C10,5 25,-25 10,-60" stroke="#52B788" stroke-width="5" stroke-linecap="round" fill="none"/>
+    
+    <!-- Vibrant green leaves -->
+    <path d="M5, -10 C20,-15 30,-5 20,5 C10,10 5, -10 5,-10 Z" fill="#74B816"/>
+    <path d="M-2, -35 C15,-45 22,-30 15,-20 C5,-10 -2,-35 -2,-35 Z" fill="#51CF66"/>
+
+    <!-- Golden Blossom / Fruit at the top symbolizing the sweet reward (Cam lai) -->
+    <g transform="translate(10, -65)">
+      <!-- Radiant petals -->
+      <circle cx="0" cy="0" r="18" fill="#FFB703"/>
+      <circle cx="-12" cy="-12" r="10" fill="#FFD166"/>
+      <circle cx="12" cy="-12" r="10" fill="#FFD166"/>
+      <circle cx="-12" cy="12" r="10" fill="#FFD166"/>
+      <circle cx="12" cy="12" r="10" fill="#FFD166"/>
+      <!-- Center core -->
+      <circle cx="0" cy="0" r="8" fill="#F77F00"/>
+    </g>
+
+    <!-- Floating golden spark/light particles representing success and renewed life -->
+    <circle cx="-45" cy="-55" r="3" fill="#FFD166" opacity="0.8"/>
+    <circle cx="55" cy="-40" r="2.5" fill="#FFD166" opacity="0.9"/>
+    <circle cx="45" cy="-85" r="4" fill="#FFB703" opacity="0.7"/>
+    <circle cx="-25" cy="-90" r="2" fill="#FFD166" opacity="0.6"/>
+  </g>
+</svg>

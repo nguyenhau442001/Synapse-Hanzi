@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow for structure -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.5"/>
+  
+  <!-- Podium Base / Central Platform representing political institution -->
+  <path d="M 70 170 L 170 170 L 160 190 L 80 190 Z" fill="#2E3440"/>
+  <rect x="75" y="155" width="90" height="15" rx="2" fill="#3B4252"/>
+  
+  <!-- Central podium emblem (abstract balance/law pillar) -->
+  <rect x="114" y="130" width="12" height="30" fill="#4C566A"/>
+  <rect x="106" y="125" width="28" height="6" rx="2" fill="#D8DEE9"/>
+  <rect x="106" y="162" width="28" height="6" rx="2" fill="#D8DEE9"/>
+
+  <!-- Left Political Figure & Podium (Party A - Teal Accent) -->
+  <g transform="translate(45, 60)">
+    <!-- Podium A -->
+    <path d="M 0 85 L 35 85 L 30 110 L 5 110 Z" fill="#3B4252"/>
+    <rect x="3" y="75" width="34" height="12" rx="2" fill="#4C566A"/>
+    <!-- Figure A Body -->
+    <path d="M 17 35 C 10 35 5 45 5 65 L 32 65 C 32 45 24 35 17 35 Z" fill="#88C0D0"/>
+    <!-- Figure A Head -->
+    <circle cx="17" cy="22" r="9" fill="#ECEFF4"/>
+    <!-- Figure A Gesture (Hand raised in speech/cooperation) -->
+    <circle cx="28" cy="50" r="4" fill="#ECEFF4"/>
+  </g>
+
+  <!-- Right Political Figure & Podium (Party B - Gold Accent) -->
+  <g transform="translate(155, 60)">
+    <!-- Podium B -->
+    <path d="M 5 85 L 40 85 L 35 110 L 10 110 Z" fill="#3B4252"/>
+    <rect x="3" y="75" width="34" height="12" rx="2" fill="#4C566A"/>
+    <!-- Figure B Body -->
+    <path d="M 20 35 C 13 35 8 45 8 65 L 35 65 C 35 45 27 35 20 35 Z" fill="#EBCB8B"/>
+    <!-- Figure B Head -->
+    <circle cx="20" cy="22" r="9" fill="#ECEFF4"/>
+    <!-- Figure B Gesture -->
+    <circle cx="9" cy="50" r="4" fill="#ECEFF4"/>
+  </g>
+
+  <!-- Center Interaction Symbol: Dynamic handshake / cooperation arc above podiums -->
+  <path d="M 95 65 Q 120 45 145 65" fill="none" stroke="#EBCB8B" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 105 73 Q 120 58 135 73" fill="none" stroke="#88C0D0" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Stars representing democracy/coalition/representation above -->
+  <polygon points="120,32 122,37 127,37 123,40 125,45 120,42 115,45 117,40 113,37 118,37" fill="#EBCB8B"/>
+  <polygon points="95,38 96,41 100,41 97,43 98,46 95,44 92,46 93,43 90,41 94,41" fill="#88C0D0" opacity="0.8"/>
+  <polygon points="145,38 146,41 150,41 147,43 148,46 145,44 142,46 143,43 140,41 144,41" fill="#EBCB8B" opacity="0.8"/>
+</svg>

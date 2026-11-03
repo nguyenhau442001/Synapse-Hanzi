@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(120, 115)">
+    <!-- Background subtle glow representing positive energy / turnaround -->
+    <circle cx="0" cy="0" r="75" fill="#1E2636" opacity="0.8"/>
+    <circle cx="0" cy="0" r="55" fill="#242E42" opacity="0.6"/>
+
+    <!-- Downward struggling phase (faded gray/blue) -->
+    <path d="M -50 -40 L -20 10 L 0 -10" fill="none" stroke="#4A5568" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+    
+    <!-- The Turnaround Point (Glowing golden inflection node) -->
+    <circle cx="0" cy="-10" r="8" fill="#F6AD55"/>
+    <circle cx="0" cy="-10" r="14" fill="#F6AD55" opacity="0.3"/>
+
+    <!-- Upward thriving trajectory (Vibrant Gold/Orange) -->
+    <path d="M 0 -10 C 20 -10, 45 -40, 65 -75" fill="none" stroke="#ED8936" stroke-width="7" stroke-linecap="round"/>
+    
+    <!-- Arrow head pointing up and right (Success / Breakthrough) -->
+    <path d="M 50 -72 L 66 -76 L 62 -60" fill="none" stroke="#ED8936" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Modern Plant Sprout bursting upward (Symbolizing 'hồi sinh' / rebirth & recovery) -->
+    <!-- Pot base / Foundation -->
+    <path d="M -22 55 L 22 55 L 16 75 L -16 75 Z" fill="#4A5568"/>
+    <rect x="-26" y="50" width="52" height="6" rx="3" fill="#A0AEC0"/>
+
+    <!-- Growing stem and leaves -->
+    <path d="M 0 50 C 0 20, 5 5, 20 -10" fill="none" stroke="#48BB78" stroke-width="5" stroke-linecap="round"/>
+    <!-- Fresh vibrant leaves -->
+    <path d="M 12 5 C 28 0, 35 -15, 20 -10 C 15 -5, 12 0, 12 5 Z" fill="#68D391"/>
+    <path d="M 5 25 C -15 20, -25 5, -10 0 C -2 3, 2 10, 5 25 Z" fill="#48BB78"/>
+
+    <!-- Sparkles / Investment catalyst light effects -->
+    <path d="M 50 -15 L 56 -25 L 66 -31 L 56 -37 L 50 -47 L 44 -37 L 34 -31 L 44 -25 Z" fill="#F6AD55" opacity="0.9"/>
+    <path d="M -45 -65 L -41 -71 L -35 -75 L -41 -79 L -45 -85 L -49 -79 L -55 -75 L -49 -71 Z" fill="#F6AD55" opacity="0.7"/>
+    <circle cx="30" cy="-55" r="3" fill="#FEB2B2"/>
+    <circle cx="-30" cy="-25" r="2.5" fill="#6EE7B7"/>
+  </g>
+</svg>

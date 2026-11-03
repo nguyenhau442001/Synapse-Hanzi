@@ -1,0 +1,22 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Bed representation (Lodging) -->
+  <rect x="130" y="140" width="80" height="50" rx="4" fill="#34495E"/>
+  <rect x="135" y="125" width="70" height="15" rx="2" fill="#E67E22"/>
+  <rect x="135" y="145" width="15" height="40" fill="#2C3E50"/>
+  <rect x="195" y="145" width="15" height="40" fill="#2C3E50"/>
+  
+  <!-- Table representation (Dining) -->
+  <rect x="30" y="150" width="80" height="40" rx="4" fill="#34495E"/>
+  <rect x="35" y="130" width="70" height="20" rx="2" fill="#E67E22"/>
+  <circle cx="55" cy="140" r="8" fill="#F1C40F"/>
+  <rect x="80" y="135" width="15" height="10" rx="2" fill="#ECF0F1"/>
+  
+  <!-- Supporting legs for table -->
+  <rect x="40" y="190" width="10" height="20" fill="#2C3E50"/>
+  <rect x="90" y="190" width="10" height="20" fill="#2C3E50"/>
+  
+  <!-- Visual connection: A stylized house roof outline above both to signify 'accommodation' -->
+  <path d="M20 110 L120 40 L220 110" stroke="#E67E22" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

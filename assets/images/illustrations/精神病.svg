@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Stylized human figure representing the patient -->
+  <g transform="translate(120, 130)">
+    <!-- Body -->
+    <path d="M-20 80 L-20 30 Q-20 0 0 0 Q20 0 20 30 L20 80 Z" fill="#7D8590"/>
+    <!-- Head -->
+    <circle cx="0" cy="-30" r="25" fill="#A0AAB8"/>
+    <!-- Gentle, neutral facial expression -->
+    <path d="M-8 -35 L-4 -35 M4 -35 L8 -35" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+    <path d="M-5 -20 Q0 -15 5 -20" stroke="#1A1D24" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Professional care/support element: Two hands gently cupping the figure to signify support and medical care -->
+  <g fill="#FFB84D">
+    <!-- Left Hand -->
+    <path d="M70 150 C50 150 40 130 45 110 C50 90 70 90 70 110" />
+    <!-- Right Hand -->
+    <path d="M170 150 C190 150 200 130 195 110 C190 90 170 90 170 110" />
+  </g>
+
+  <!-- Medical cross symbol (subtle, professional) -->
+  <rect x="112" y="40" width="16" height="16" rx="2" fill="#FFB84D"/>
+  <rect x="118" y="42" width="4" height="12" fill="#1A1D24"/>
+  <rect x="114" y="46" width="12" height="4" fill="#1A1D24"/>
+</svg>

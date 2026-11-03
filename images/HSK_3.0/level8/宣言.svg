@@ -1,0 +1,57 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle document/declaration glow -->
+  <path d="M72 38h96c4.4 0 8 3.6 8 8v152c0 4.4-3.6 8-8 8H72c-4.4 0-8-3.6-8-8V46c0-4.4 3.6-8 8-8z" fill="#252A34" opacity="0.6"/>
+
+  <!-- Main Scroll / Formal Declaration Document -->
+  <g>
+    <!-- Document Base Shadow -->
+    <path d="M76 46h88c4.4 0 8 3.6 8 8v140c0 4.4-3.6 8-8 8H76c-4.4 0-8-3.6-8-8V54c0-4.4 3.6-8 8-8z" fill="#1E232E"/>
+    
+    <!-- Document Main Body (Scroll Parchment/Paper in dark mode style) -->
+    <path d="M72 42h96c4.4 0 8 3.6 8 8v136c0 4.4-3.6 8-8 8H72c-4.4 0-8-3.6-8-8V50c0-4.4 3.6-8 8-8z" fill="#F0F3F9"/>
+
+    <!-- Top Roller / Scroll Rod -->
+    <path d="M64 38h112c3.3 0 6 2.7 6 6v4c0 3.3-2.7 6-6 6H64c-3.3 0-6-2.7-6-6v-4c0-3.3 2.7-6 6-6z" fill="#E6AF2E"/>
+    <!-- Bottom Roller / Scroll Rod -->
+    <path d="M64 184h112c3.3 0 6 2.7 6 6v4c0 3.3-2.7 6-6 6H64c-3.3 0-6-2.7-6-6v-4c0-3.3 2.7-6 6-6z" fill="#E6AF2E"/>
+
+    <!-- Document Header Accent (representing the formal title/heading) -->
+    <rect x="92" y="62" width="56" height="8" rx="4" fill="#D94E34"/>
+
+    <!-- Text Lines (Abstract semantic lines representing formal proclamation text) -->
+    <rect x="88" y="82" width="64" height="4" rx="2" fill="#3D4451" opacity="0.8"/>
+    <rect x="88" y="94" width="64" height="4" rx="2" fill="#3D4451" opacity="0.8"/>
+    <rect x="88" y="106" width="48" height="4" rx="2" fill="#3D4451" opacity="0.8"/>
+
+    <!-- Environmental / Ocean Biodiversity motif icon embedded on the declaration -->
+    <path d="M120 124c-8 0-14 6-14 14 0 6 4 10 10 12v6h8v-6c6-2 10-6 10-12 0-8-6-14-14-14zm0 20c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z" fill="#2E86AB"/>
+    
+    <!-- More text lines -->
+    <rect x="88" y="152" width="64" height="4" rx="2" fill="#3D4451" opacity="0.8"/>
+    <rect x="88" y="164" width="36" height="4" rx="2" fill="#3D4451" opacity="0.8"/>
+  </g>
+
+  <!-- Official Seal / Wax Stamp (Highlighting formal ratification & official declaration) -->
+  <g transform="translate(142, 148)">
+    <!-- Ribbon hanging down -->
+    <path d="M12 24l6 14-10-4-10 4 6-14z" fill="#C0392B"/>
+    <!-- Seal Base -->
+    <circle cx="8" cy="12" r="14" fill="#D94E34"/>
+    <circle cx="8" cy="12" r="10" fill="none" stroke="#F0F3F9" stroke-width="1.5" stroke-dasharray="2,2"/>
+    <!-- Star/Emblem inside seal -->
+    <path d="M8 7l1.5 3h3l-2.5 1.8.9 3.2-2.9-1.9-2.9 1.9.9-3.2L3.5 10h3L8 7z" fill="#F0F3F9" transform="scale(0.6) translate(5, 5)"/>
+  </g>
+
+  <!-- Quill / Pen Overlay (Symbolizing the active signing and publishing of the declaration) -->
+  <g transform="translate(32, 100) rotate(-35)">
+    <!-- Pen Nib -->
+    <path d="M52 12L44 20L48 24L56 16L52 12Z" fill="#E6AF2E"/>
+    <path d="M52 12L44 20L41 17C40 16 40 14 41 13L49 5C50 4 52 4 53 5L55 7C56 8 56 10 55 11L52 12Z" fill="#F0F3F9"/>
+    <path d="M41 17L35 32L43 35L48 24L41 17Z" fill="#3D4451"/>
+    <!-- Pen Tip Detail -->
+    <path d="M35 32L33 36L37 34L35 32Z" fill="#E6AF2E"/>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Base platform / arena -->
+    <ellipse cx="120" cy="180" rx="90" ry="25" fill="#252A34" stroke="#3A4252" stroke-width="3"/>
+    
+    <!-- Shockwave / Energy collision ring -->
+    <ellipse cx="120" cy="155" rx="45" ry="12" fill="none" stroke="#FF5722" stroke-width="2.5" opacity="0.8"/>
+
+    <!-- Left Figure (Challenger - Small, agile, vibrant orange accent) -->
+    <g transform="translate(70, 110)">
+      <!-- Body / Torso -->
+      <path d="M15 15 L25 45 L5 45 Z" fill="#FF7043"/>
+      <!-- Head -->
+      <circle cx="15" cy="5" r="7" fill="#FFA726"/>
+      <!-- Forward arm pointing / challenging -->
+      <path d="M15 20 L32 15" stroke="#FF7043" stroke-width="4" stroke-linecap="round"/>
+      <!-- Dynamic stance legs -->
+      <path d="M15 45 L8 70 M15 45 L22 65" stroke="#252A34" stroke-width="4" stroke-linecap="round"/>
+    </g>
+
+    <!-- Right Figure (Giant Opponent - Large, formidable, cool blue/slate accent) -->
+    <g transform="translate(130, 90)">
+      <!-- Body / Torso -->
+      <path d="M25 10 L45 55 L5 55 Z" fill="#3B82F6"/>
+      <!-- Head -->
+      <circle cx="25" cy="-2" r="9" fill="#60A5FA"/>
+      <!-- Firm bracing arm -->
+      <path d="M25 20 L8 25" stroke="#3B82F6" stroke-width="5" stroke-linecap="round"/>
+      <!-- Stable stance legs -->
+      <path d="M15 55 L8 90 M35 55 L42 90" stroke="#1E293B" stroke-width="5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Center Confrontation / Tension Elements (Lightning / Clashing Sparks) -->
+    <g transform="translate(115, 115)">
+      <polygon points="5,0 15,12 8,15 18,28 0,13 8,10" fill="#FFC107"/>
+    </g>
+  </g>
+</svg>

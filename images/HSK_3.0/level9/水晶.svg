@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 120)">
+    <!-- Crystal Chandelier Structure -->
+    <path d="M0 -70 L0 -20" stroke="#FFD700" stroke-width="4" stroke-linecap="round"/>
+    <path d="M-60 -20 L60 -20" stroke="#FFD700" stroke-width="4" stroke-linecap="round"/>
+    <path d="M-40 -20 L-20 60 L20 60 L40 -20 Z" fill="#E0F7FA" fill-opacity="0.6" stroke="#B3E5FC" stroke-width="2"/>
+    
+    <!-- Crystal Prisms -->
+    <polygon points="0,-20 -20,10 0,40 20,10" fill="#FFFFFF" fill-opacity="0.9" stroke="#81D4FA" stroke-width="1"/>
+    <polygon points="-40,-20 -50,20 -30,20" fill="#FFFFFF" fill-opacity="0.8" stroke="#81D4FA" stroke-width="1"/>
+    <polygon points="40,-20 50,20 30,20" fill="#FFFFFF" fill-opacity="0.8" stroke="#81D4FA" stroke-width="1"/>
+    
+    <!-- Light Reflections -->
+    <circle cx="-10" cy="0" r="3" fill="#FFF9C4"/>
+    <circle cx="15" cy="20" r="2" fill="#FFF9C4"/>
+    <circle cx="-25" cy="30" r="2" fill="#FFF9C4"/>
+    <circle cx="0" cy="50" r="4" fill="#FFF9C4"/>
+  </g>
+</svg>

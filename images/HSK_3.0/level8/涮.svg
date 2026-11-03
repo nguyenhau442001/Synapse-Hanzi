@@ -1,0 +1,41 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Hot Pot Steam & Background Glow -->
+  <circle cx="120" cy="140" r="55" fill="#E05638" opacity="0.15"/>
+  <path d="M95 85 C90 70 105 60 100 45" stroke="#4A5568" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M120 80 C115 65 130 55 125 40" stroke="#4A5568" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M145 85 C140 70 155 60 150 45" stroke="#4A5568" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+  <!-- Hot Pot Base / Stand -->
+  <path d="M95 185 L145 185 L155 195 L85 195 Z" fill="#2D3748"/>
+  
+  <!-- Hot Pot Body -->
+  <path d="M75 120 C75 160 165 160 165 120 Z" fill="#E2E8F0"/>
+  <ellipse cx="120" cy="120" rx="45" ry="12" fill="#CBD5E0"/>
+  <!-- Broth / Soup Inside -->
+  <ellipse cx="120" cy="122" rx="40" ry="9" fill="#E05638"/>
+  <!-- Spicy chili accents in broth -->
+  <circle cx="110" cy="121" r="2" fill="#C53030"/>
+  <circle cx="130" cy="123" r="2.5" fill="#C53030"/>
+
+  <!-- Pot Handles -->
+  <path d="M68 125 C60 125 60 140 68 140" stroke="#CBD5E0" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M172 125 C180 125 180 140 172 140" stroke="#CBD5E0" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- Dynamic Chopsticks & Food Action (Shuan / Quick dipping motion) -->
+  <!-- Motion lines indicating dipping -->
+  <path d="M105 75 L125 105" stroke="#F6AD55" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
+  <path d="M112 70 L132 100" stroke="#F6AD55" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
+
+  <!-- Food slice (being dipped) -->
+  <path d="M115 95 Q125 100 120 110 Q110 105 115 95 Z" fill="#FEB2B2"/>
+
+  <!-- Chopsticks -->
+  <line x1="90" y1="50" x2="128" y2="115" stroke="#D69E2E" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="95" y1="48" x2="132" y2="113" stroke="#D69E2E" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Character Hand holding chopsticks -->
+  <path d="M75 60 C80 55 95 55 102 65 C107 72 100 80 90 75 Z" fill="#F6AD55"/>
+</svg>

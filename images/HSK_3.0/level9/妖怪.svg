@@ -1,0 +1,33 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Motion lines indicating sudden movement/transformation -->
+  <path d="M180 80 L200 60 M190 90 L210 70 M185 100 L205 80" stroke="#FFB84D" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- The 'Yao' (Monster) character - dynamic, crouching, mischievous pose -->
+  <g transform="translate(60, 100)">
+    <!-- Body -->
+    <path d="M40 80 L80 80 L70 40 L50 40 Z" fill="#FFB84D"/>
+    <!-- Head -->
+    <circle cx="60" cy="30" r="20" fill="#FFB84D"/>
+    <!-- Horns/Ears -->
+    <path d="M45 20 L35 5 M75 20 L85 5" stroke="#FFB84D" stroke-width="6" stroke-linecap="round"/>
+    <!-- Eyes -->
+    <circle cx="53" cy="28" r="3" fill="#1A1D24"/>
+    <circle cx="67" cy="28" r="3" fill="#1A1D24"/>
+    <!-- Tail -->
+    <path d="M80 70 Q110 70 100 40" stroke="#FFB84D" stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- The Action: A monk/warrior character in a defensive/subduing posture -->
+  <g transform="translate(100, 120)">
+    <!-- Staff/Weapon -->
+    <rect x="50" y="-80" width="6" height="100" rx="3" fill="#E0E0E0"/>
+    <!-- Body -->
+    <path d="M20 80 L50 80 L45 30 L25 30 Z" fill="#4D94FF"/>
+    <!-- Head -->
+    <circle cx="35" cy="25" r="15" fill="#E0E0E0"/>
+    <!-- Arm reaching out to subdue -->
+    <path d="M45 40 L70 50" stroke="#E0E0E0" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>

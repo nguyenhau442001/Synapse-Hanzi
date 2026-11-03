@@ -1,0 +1,66 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background subtle atmosphere lines representing upward trajectory -->
+  <g opacity="0.15" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="4 4" fill="none">
+    <path d="M 60 200 L 60 50"/>
+    <path d="M 120 200 L 120 40"/>
+    <path d="M 180 200 L 180 60"/>
+  </g>
+
+  <!-- Mountain peak base and terrain representing challenge/goal -->
+  <polygon points="40,200 120,120 200,200" fill="#222733"/>
+  <polygon points="80,200 120,150 160,200" fill="#2A3140"/>
+
+  <!-- Upward glowing trail / path of ambition -->
+  <path d="M 120,190 C 120,160 90,130 90,95 C 90,75 105,60 120,45 C 135,60 150,75 150,95 C 150,130 120,160 120,190 Z" fill="url(#pathGrad)" opacity="0.3"/>
+
+  <defs>
+    <linearGradient id="pathGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#FFB300" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#FFB300" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="flagGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9800"/>
+      <stop offset="100%" stop-color="#FF5722"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Central physical object/character: Climber reaching the peak (representing "进取" - striving/vươn lên) -->
+  <!-- Mountain Peak -->
+  <polygon points="120,50 85,110 155,110" fill="#323B4D"/>
+  <polygon points="120,50 120,110 155,110" fill="#2B3240"/>
+  
+  <!-- Peak Snowcap -->
+  <path d="M 120,50 L 132,72 L 126,75 L 120,68 L 113,76 L 108,70 Z" fill="#E2E8F0"/>
+
+  <!-- Summit Flag (Success/Goal) -->
+  <line x1="120" y1="50" x2="120" y2="30" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="120,30 142,38 120,46" fill="url(#flagGrad)"/>
+
+  <!-- Dynamic Climbing Character (Physically embodying "chí tiến thủ", active upward motion) -->
+  <!-- Body/Torso leaning forward onto the slope -->
+  <g transform="translate(120, 125)">
+    <!-- Back leg lunging -->
+    <path d="M -5,5 L -20,25 L -10,30" fill="none" stroke="#60A5FA" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Front arm gripping -->
+    <path d="M 2,-5 L 15,-20" fill="none" stroke="#60A5FA" stroke-width="4" stroke-linecap="round"/>
+    <!-- Back arm maintaining balance -->
+    <path d="M -5,0 L -12,-10" fill="none" stroke="#60A5FA" stroke-width="4" stroke-linecap="round"/>
+    <!-- Torso -->
+    <path d="M -8,10 C -5,0 2,-5 8,-10" fill="none" stroke="#3B82F6" stroke-width="7" stroke-linecap="round"/>
+    <!-- Head with determination -->
+    <circle cx="11" cy="-15" r="5" fill="#FDE047"/>
+    <!-- Front leg pushing upward -->
+    <path d="M 5,10 L 18,25 L 25,20" fill="none" stroke="#3B82F6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Bright accent glowing beacon at the summit representing future achievement -->
+  <circle cx="120" cy="24" r="3" fill="#FDE047"/>
+  <circle cx="120" cy="24" r="7" stroke="#FDE047" stroke-width="1.5" fill="none" opacity="0.6"/>
+
+  <!-- Embellished upward energy sparks (Modern flat vector style) -->
+  <path d="M 95,90 L 85,80" stroke="#FFB300" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 145,90 L 155,80" stroke="#FFB300" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 120,105 L 120,95" stroke="#FFB300" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,55 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Grid / Technical background elements representing analysis/investigation -->
+  <g opacity="0.15">
+    <line x1="40" y1="180" x2="200" y2="180" stroke="#8A99AD" stroke-width="2" stroke-dasharray="4 4"/>
+    <line x1="120" y1="60" x2="120" y2="180" stroke="#8A99AD" stroke-width="1" stroke-dasharray="2 2"/>
+    <circle cx="120" cy="120" r="50" fill="none" stroke="#8A99AD" stroke-width="1"/>
+  </g>
+
+  <!-- Timeline / Progression Pathway showing a future step -->
+  <path d="M50 140 L120 140 L190 100" fill="none" stroke="#3A4454" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Completed/Current Stage marker -->
+  <circle cx="70" cy="140" r="6" fill="#4ADE80"/>
+  
+  <!-- Pending / Future Stage marker ("有待" - yet to be reached/proven) -->
+  <g>
+    <!-- Pulsing/Pending indicator rings -->
+    <circle cx="170" cy="115" r="16" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity="0.4"/>
+    <circle cx="170" cy="115" r="22" fill="none" stroke="#F59E0B" stroke-width="1" opacity="0.2"/>
+    
+    <!-- Main pending node -->
+    <circle cx="170" cy="115" r="10" fill="#1A1D24" stroke="#F59E0B" stroke-width="3"/>
+    <circle cx="170" cy="115" r="4" fill="#F59E0B"/>
+  </g>
+
+  <!-- Magnifying Glass (Investigation / 考证) focusing on the pending phase -->
+  <g transform="translate(0, 0)">
+    <!-- Glass shadow -->
+    <circle cx="115" cy="105" r="32" fill="#0F1115" opacity="0.5"/>
+    
+    <!-- Lens area -->
+    <circle cx="110" cy="100" r="30" fill="#242B38" stroke="#F59E0B" stroke-width="3.5"/>
+    <circle cx="110" cy="100" r="24" fill="#1E2530" opacity="0.8"/>
+    
+    <!-- Internal blueprint graphics inside lens -->
+    <path d="M95 105 L105 115 L125 90" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+    
+    <!-- Handle -->
+    <path d="M132 122 L152 142" stroke="#F59E0B" stroke-width="5" stroke-linecap="round"/>
+    <path d="M132 122 L152 142" stroke="#242B38" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Floating particles / conceptual elements of waiting and progression -->
+  <circle cx="145" cy="75" r="3" fill="#8A99AD" opacity="0.6"/>
+  <circle cx="95" cy="155" r="2" fill="#8A99AD" opacity="0.4"/>
+  <circle cx="190" cy="150" r="2.5" fill="#F59E0B" opacity="0.5"/>
+
+  <!-- Structural Base / Foundation blocks representing the theory/practice -->
+  <path d="M50 185 L130 185 L140 195 L40 195 Z" fill="#2A3442"/>
+  <rect x="55" y="165" width="20" height="20" rx="3" fill="#3B4758"/>
+  <rect x="80" y="165" width="20" height="20" rx="3" fill="#3B4758"/>
+  <rect x="105" y="165" width="20" height="20" rx="3" fill="#3B4758"/>
+</svg>

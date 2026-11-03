@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background tropical glow / sun element -->
+  <circle cx="120" cy="120" r="80" fill="#252A34" opacity="0.6"/>
+  <path d="M120 40 L120 20 M120 220 L120 200 M40 120 L20 120 M220 120 L200 120 M64 64 L50 50 M190 190 L176 176 M64 176 L50 190 M190 50 L176 64" stroke="#FFB703" stroke-width="2" stroke-linecap="round" opacity="0.2"/>
+
+  <!-- Coconut Tree Trunk (Stylized, sleek curve) -->
+  <path d="M95 210 C100 170 105 130 115 100 C118 90 122 80 128 70" stroke="#8D6E63" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <path d="M98 210 C103 172 108 133 117 102" stroke="#A1887F" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- Coconut Tree Fronds (Tropical leaves) -->
+  <!-- Top/Center Frond -->
+  <path d="M128 70 C125 40 110 20 85 10 C110 30 125 50 128 70 Z" fill="#2A9D8F"/>
+  <!-- Right Fronds -->
+  <path d="M128 70 C150 50 180 45 200 50 C170 60 145 70 128 70 Z" fill="#21867A"/>
+  <path d="M128 70 C160 75 190 95 205 120 C175 110 150 90 128 70 Z" fill="#2A9D8F"/>
+  <!-- Left Fronds -->
+  <path d="M128 70 C100 50 65 55 40 70 C70 75 100 80 128 70 Z" fill="#21867A"/>
+  <path d="M128 70 C95 85 65 110 50 135 C80 120 105 95 128 70 Z" fill="#264653"/>
+
+  <!-- Coconuts hanging in a cluster -->
+  <circle cx="118" cy="88" r="10" fill="#5D4037"/>
+  <circle cx="118" cy="88" r="8" fill="#4E342E"/>
+  <circle cx="132" cy="92" r="11" fill="#6D4C41"/>
+  <circle cx="132" cy="92" r="9" fill="#5D4037"/>
+  <circle cx="125" cy="102" r="10.5" fill="#4E342E"/>
+  <circle cx="125" cy="102" r="8.5" fill="#3E2723"/>
+
+  <!-- Foreground / Fallen Coconut (Whole + Cut/Halved to show exact semantic meaning: 椰子) -->
+  <!-- Whole Coconut on the ground (bottom right) -->
+  <circle cx="175" cy="185" r="18" fill="#5D4037"/>
+  <circle cx="175" cy="185" r="15" fill="#4E342E"/>
+  <!-- Coconut texture spots -->
+  <circle cx="170" cy="180" r="1.5" fill="#2C1D1A"/>
+  <circle cx="180" cy="183" r="1.2" fill="#2C1D1A"/>
+  <circle cx="174" cy="190" r="1" fill="#2C1D1A"/>
+
+  <!-- Halved Coconut showing white meat and coconut water (bottom left center) -->
+  <!-- Outer shell -->
+  <path d="M 60 170 C 60 195, 95 195, 95 170 Z" fill="#4E342E"/>
+  <!-- White flesh lining -->
+  <path d="M 63 172 C 63 191, 92 191, 92 172 Z" fill="#F4F1DE"/>
+  <!-- Coconut water well inside -->
+  <ellipse cx="77.5" cy="177" rx="11" ry="3.5" fill="#A2D2DF"/>
+
+  <!-- Highlight accent for modern sleek flat vector look -->
+  <path d="M115 84 C117 82 120 83 121 85" stroke="#8D6E63" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <path d="M129 88 C131 86 134 87 135 89" stroke="#A1887F" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+</svg>

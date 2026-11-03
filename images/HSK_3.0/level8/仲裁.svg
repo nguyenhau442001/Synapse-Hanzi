@@ -1,0 +1,62 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glow/pedestal -->
+  <ellipse cx="120" cy="195" rx="70" ry="12" fill="#111317" opacity="0.8"/>
+  
+  <!-- Gavel Head (Horizontal Bar with Gold Accent) -->
+  <g transform="translate(0, 0)">
+    <!-- Wooden Handle (Angled for dynamic balance) -->
+    <path d="M 68 152 L 155 82" stroke="#B8860B" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 70 150 L 153 84" stroke="#DEB887" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Handle End Cap -->
+    <circle cx="63" cy="156" r="5" fill="#DAA520"/>
+
+    <!-- Main Gavel Head Body -->
+    <rect x="122" y="58" width="76" height="34" rx="6" fill="#A0522D" transform="rotate(30 160 75)"/>
+    <rect x="124" y="60" width="72" height="30" rx="4" fill="#CD853F" transform="rotate(30 160 75)"/>
+    
+    <!-- Gold Metallic Bands on Gavel Head -->
+    <rect x="137" y="60" width="8" height="30" rx="2" fill="#FFD700" transform="rotate(30 160 75)"/>
+    <rect x="175" y="60" width="8" height="30" rx="2" fill="#FFD700" transform="rotate(30 160 75)"/>
+  </g>
+
+  <!-- Sounding Block (Base) -->
+  <g transform="translate(0, 0)">
+    <!-- Block Bottom Shadow/Base -->
+    <ellipse cx="120" cy="168" rx="54" ry="16" fill="#8B4513"/>
+    
+    <!-- Block Body -->
+    <path d="M 72 152 C 72 144, 168 144, 168 152 L 174 168 C 174 176, 66 176, 66 168 Z" fill="#D2691E"/>
+    
+    <!-- Block Top Surface (Ellipse) -->
+    <ellipse cx="120" cy="152" rx="48" ry="12" fill="#CD853F"/>
+    
+    <!-- Gold Trim on Block -->
+    <ellipse cx="120" cy="154" rx="42" ry="10" fill="none" stroke="#FFD700" stroke-width="2.5"/>
+  </g>
+
+  <!-- Legal Balance Scales Floating in Background (Subtle Context) -->
+  <g opacity="0.25" transform="translate(0, -10)">
+    <!-- Scale Beam & Stand -->
+    <path d="M 120 45 L 120 75" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 95 62 L 145 62" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="120" cy="45" r="4" fill="#E2E8F0"/>
+    
+    <!-- Left Pan -->
+    <path d="M 95 62 L 87 82 L 103 82 Z" fill="none" stroke="#E2E8F0" stroke-width="2"/>
+    <line x1="87" y1="82" x2="103" y2="82" stroke="#E2E8F0" stroke-width="2"/>
+    
+    <!-- Right Pan -->
+    <path d="M 145 62 L 137 82 L 153 82 Z" fill="none" stroke="#E2E8F0" stroke-width="2"/>
+    <line x1="137" y1="82" x2="153" y2="82" stroke="#E2E8F0" stroke-width="2"/>
+  </g>
+
+  <!-- Focus Sparkles / Decision Indicators -->
+  <g fill="#FFD700">
+    <path d="M 195 48 L 198 56 L 206 59 L 198 62 L 195 70 L 192 62 L 184 59 L 192 56 Z"/>
+    <path d="M 48 85 L 50 90 L 55 92 L 50 94 L 48 99 L 46 94 L 41 92 L 46 90 Z" transform="scale(0.8) translate(10, 0)"/>
+  </g>
+</svg>

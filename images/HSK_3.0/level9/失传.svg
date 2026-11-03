@@ -1,0 +1,60 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Ambient Glow/Shadow representing fading away -->
+  <ellipse cx="120" cy="140" rx="60" ry="12" fill="#111318" opacity="0.8"/>
+
+  <!-- Embroidery Hoop (Physical Object representing the handicraft) -->
+  <g transform="translate(120, 115)">
+    <!-- Outer wooden ring -->
+    <circle cx="0" cy="0" r="62" fill="none" stroke="#A86E38" stroke-width="5"/>
+    <circle cx="0" cy="0" r="58" fill="none" stroke="#C88A4D" stroke-width="2"/>
+    
+    <!-- Tension screw at top -->
+    <rect x="-6" y="-68" width="12" height="10" rx="2" fill="#8C9BA5"/>
+    <rect x="-3" y="-76" width="6" height="10" rx="1" fill="#A8B5C0"/>
+    <circle cx="0" cy="-63" r="2" fill="#1A1D24"/>
+
+    <!-- Fabric inside hoop -->
+    <circle cx="0" cy="0" r="57" fill="#2A303C"/>
+
+    <!-- Fading / Dissolving Embroidery Design -->
+    <!-- Intricate flower center (solid part) -->
+    <path d="M0,15 C-10,15 -15,5 -10,-5 C-5,-15 5,-15 10,-5 C15,5 10,15 0,15 Z" fill="#E06C75" opacity="0.9"/>
+    <circle cx="0" cy="3" r="4" fill="#E5C07B" opacity="0.9"/>
+
+    <!-- Petals starting to fragment into floating pixels/particles (representing "shīchuán" / lost art) -->
+    <!-- Left petals (fading) -->
+    <path d="M-10,-5 C-25,-8 -35,-20 -28,-30 C-22,-38 -12,-30 -8,-15 Z" fill="#E06C75" opacity="0.6"/>
+    <!-- Top petals (more faded) -->
+    <path d="M0,-15 C-5,-30 0,-45 10,-42 C18,-38 15,-25 5,-12 Z" fill="#E06C75" opacity="0.4"/>
+    <!-- Right petals (dissolving into dust) -->
+    <path d="M10,-5 C25,-10 38,0 32,15 C28,22 18,18 12,8 Z" fill="#E06C75" opacity="0.25"/>
+
+    <!-- Disintegrating particles floating upwards and away -->
+    <g fill="#E06C75">
+      <rect x="35" y="-15" width="4" height="4" rx="1" opacity="0.5"/>
+      <rect x="42" y="-28" width="3" height="3" rx="0.5" opacity="0.3"/>
+      <rect x="25" y="-45" width="5" height="5" rx="1" opacity="0.2"/>
+      <rect x="8" y="-55" width="2" height="2" rx="0.5" opacity="0.15"/>
+      <rect x="-15" y="-50" width="4" height="4" rx="1" opacity="0.2"/>
+      <rect x="-35" y="-38" width="3" height="3" rx="0.5" opacity="0.35"/>
+      <rect x="-45" y="-18" width="5" height="5" rx="1" opacity="0.1"/>
+      <circle cx="48" cy="-5" r="1.5" opacity="0.2"/>
+      <circle cx="-30" cy="-50" r="1" opacity="0.15"/>
+      <circle cx="20" cy="-60" r="1.5" opacity="0.1"/>
+    </g>
+
+    <!-- Unfinished needle hanging loosely -->
+    <g transform="translate(-25, 30) rotate(-35)">
+      <rect x="0" y="0" width="3" height="35" rx="1.5" fill="#ABB2BF"/>
+      <circle cx="1.5" cy="5" r="1" fill="#2A303C"/>
+      <!-- Thread dangling and fading -->
+      <path d="M1.5,35 Q 15,45 25,35 T 40,25" fill="none" stroke="#E5C07B" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.4"/>
+    </g>
+  </g>
+
+  <!-- Subtle floor shadow under the object -->
+  <path d="M80,185 Q120,192 160,185" fill="none" stroke="#111318" stroke-width="4" stroke-linecap="round"/>
+</svg>

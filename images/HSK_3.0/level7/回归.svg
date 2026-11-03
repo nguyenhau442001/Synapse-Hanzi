@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground/Path -->
+  <path d="M40 190 C 100 170, 140 170, 200 190 L 200 210 L 40 210 Z" fill="#2D343E"/>
+  
+  <!-- The Person (Returning) -->
+  <g transform="translate(120, 160)">
+    <circle cx="0" cy="-60" r="12" fill="#FFB86C"/>
+    <path d="M-8 -48 L 8 -48 L 5 -20 L -5 -20 Z" fill="#FFB86C"/>
+    <path d="M-15 -35 L -25 -10 M 15 -35 L 25 -10" stroke="#FFB86C" stroke-width="6" stroke-linecap="round"/>
+    <path d="M-5 -20 L -8 20 M 5 -20 L 8 20" stroke="#FFB86C" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Nature/Tree (The Destination) -->
+  <g transform="translate(180, 150)">
+    <rect x="-5" y="0" width="10" height="40" fill="#50FA7B"/>
+    <circle cx="0" cy="-20" r="25" fill="#50FA7B"/>
+    <circle cx="-15" cy="-30" r="15" fill="#50FA7B"/>
+    <circle cx="15" cy="-30" r="15" fill="#50FA7B"/>
+  </g>
+  
+  <!-- Path markers -->
+  <path d="M60 195 L 80 185 L 100 195" stroke="#44475A" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Sun/Light accent -->
+  <circle cx="50" cy="50" r="20" fill="#FFB86C" opacity="0.2"/>
+  <circle cx="50" cy="50" r="10" fill="#FFB86C"/>
+</svg>

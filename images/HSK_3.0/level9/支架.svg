@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  <g transform="translate(120, 120)">
+    <!-- Tripod Legs -->
+    <path d="M-40 80 L-10 20 L20 80" fill="none" stroke="#FFB84D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="-10" y1="20" x2="-10" y2="85" stroke="#FFB84D" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Camera Body -->
+    <rect x="-35" y="-30" width="70" height="50" rx="6" fill="#E0E0E0"/>
+    <rect x="-20" y="-45" width="40" height="15" rx="2" fill="#E0E0E0"/>
+    
+    <!-- Lens -->
+    <circle cx="0" cy="-10" r="18" fill="#333"/>
+    <circle cx="0" cy="-10" r="10" fill="#1A1D24"/>
+    <circle cx="0" cy="-10" r="4" fill="#FFB84D"/>
+    
+    <!-- Mounting Plate/Head -->
+    <rect x="-25" y="15" width="50" height="8" rx="2" fill="#FFB84D"/>
+  </g>
+</svg>

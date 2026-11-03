@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Desk surface -->
+  <rect x="40" y="180" width="160" height="10" rx="2" fill="#2D343E"/>
+  
+  <!-- Manuscript paper -->
+  <rect x="70" y="60" width="100" height="120" rx="4" fill="#E0E6ED"/>
+  <line x1="85" y1="80" x2="155" y2="80" stroke="#B0B8C4" stroke-width="2"/>
+  <line x1="85" y1="100" x2="155" y2="100" stroke="#B0B8C4" stroke-width="2"/>
+  <line x1="85" y1="120" x2="155" y2="120" stroke="#B0B8C4" stroke-width="2"/>
+  <line x1="85" y1="140" x2="155" y2="140" stroke="#B0B8C4" stroke-width="2"/>
+  
+  <!-- Hand holding a pen, poised to edit -->
+  <path d="M130 150 L150 130 L165 145 L145 165 Z" fill="#FFB86C"/>
+  <path d="M145 140 L175 110 L185 120 L155 150 Z" fill="#FFB86C"/>
+  <path d="M170 115 L182 103 L190 111 L178 123 Z" fill="#F8F8F2"/>
+  <path d="M175 118 L185 108" stroke="#333" stroke-width="2"/>
+  
+  <!-- Magnifying glass focusing on a specific word area -->
+  <circle cx="100" cy="100" r="25" fill="none" stroke="#FFB86C" stroke-width="4"/>
+  <path d="M118 118 L140 140" stroke="#FFB86C" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Decorative accent for precision -->
+  <circle cx="100" cy="100" r="3" fill="#FFB86C"/>
+</svg>

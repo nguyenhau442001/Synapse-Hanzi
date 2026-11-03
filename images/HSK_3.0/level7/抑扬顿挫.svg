@@ -1,0 +1,38 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Sound Waves / Melodic Flow representing Intonation and Cadence -->
+    <path d="M 30,120 Q 55,70 80,120 T 130,120 T 180,120 T 210,120" fill="none" stroke="#2A313C" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Dynamic Glowing Wave (Yiyang-Duncuò: Pitch & Rhythm) -->
+    <path d="M 30,120 C 50,40 65,40 85,120 C 105,200 125,70 145,120 C 165,170 190,80 210,120" fill="none" stroke="#FFB703" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Accent Nodes (representing rhythmic stops and rises) -->
+    <circle cx="85" cy="120" r="5" fill="#FFB703"/>
+    <circle cx="145" cy="120" r="5" fill="#FFB703"/>
+    <circle cx="210" cy="120" r="5" fill="#FFB703"/>
+
+    <!-- Upward Pitch Indicator (Yí) -->
+    <path d="M 60,65 L 75,50 L 90,65" fill="none" stroke="#FFB703" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Downward Pitch Indicator (Yáng) -->
+    <path d="M 120,185 L 135,200 L 150,185" fill="none" stroke="#FFB703" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Central Character / Physical Object (Teacher / Speaker character head and microphone emitting melody) -->
+    <!-- Microphone Stand -->
+    <rect x="116" y="130" width="8" height="50" rx="4" fill="#3A4454"/>
+    <rect x="100" y="176" width="40" height="8" rx="4" fill="#3A4454"/>
+
+    <!-- Microphone Head -->
+    <rect x="110" y="85" width="20" height="32" rx="10" fill="#E2E8F0"/>
+    <path d="M 112,95 L 128,95" stroke="#1A1D24" stroke-width="2"/>
+    <path d="M 112,103 L 128,103" stroke="#1A1D24" stroke-width="2"/>
+    <path d="M 112,111 L 128,111" stroke="#1A1D24" stroke-width="2"/>
+    <path d="M 120,117 L 120,130" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Vocal Sound Pulses emanating from the microphone -->
+    <path d="M 98,90 Q 90,101 98,112" fill="none" stroke="#FFB703" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 142,90 Q 150,101 142,112" fill="none" stroke="#FFB703" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

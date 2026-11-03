@@ -1,0 +1,67 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Ambient light / mystical aura -->
+  <circle cx="120" cy="115" r="70" fill="#2D3242" opacity="0.5"/>
+  <circle cx="120" cy="115" r="45" fill="#3D445C" opacity="0.3"/>
+
+  <!-- Light rays / vertical beam of hope -->
+  <path d="M90 30 L120 10 L150 30 L140 210 L100 210 Z" fill="url(#lightRay)" opacity="0.15"/>
+  
+  <defs>
+    <linearGradient id="lightRay" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="handGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F2C94C"/>
+      <stop offset="100%" stop-color="#E2A138"/>
+    </linearGradient>
+    <linearGradient id="sleeveGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Glowing particles / floating sparks of hope -->
+  <circle cx="120" cy="55" r="3" fill="#FFD700" opacity="0.9"/>
+  <circle cx="95" cy="75" r="2" fill="#FFD700" opacity="0.7"/>
+  <circle cx="145" cy="80" r="2.5" fill="#FFD700" opacity="0.8"/>
+  <circle cx="105" cy="110" r="1.5" fill="#FFD700" opacity="0.6"/>
+  <circle cx="135" cy="105" r="2" fill="#FFD700" opacity="0.7"/>
+
+  <!-- Silhouette / Person posture (Head and shoulders bowed in reverence/prayer) -->
+  <!-- Body/Shoulders -->
+  <path d="M 70 210 C 70 170, 95 150, 120 150 C 145 150, 170 170, 170 210 Z" fill="#242938"/>
+  
+  <!-- Neck -->
+  <rect x="112" y="132" width="16" height="22" fill="#D4A373" rx="4"/>
+
+  <!-- Head bowed forward -->
+  <circle cx="120" cy="118" r="18" fill="#E5B285"/>
+  
+  <!-- Hair -->
+  <path d="M 102 115 C 102 100, 112 98, 120 98 C 130 98, 138 102, 138 116 C 130 112, 110 112, 102 115 Z" fill="#2C221E"/>
+
+  <!-- Clasped Hands (Central Icon representing Prayer / 祈祷) -->
+  <!-- Left hand -->
+  <path d="M 105 155 C 105 145, 115 138, 120 135 C 122 142, 122 150, 120 165 C 112 165, 105 160, 105 155 Z" fill="url(#handGrad)"/>
+  
+  <!-- Right hand -->
+  <path d="M 135 155 C 135 145, 125 138, 120 135 C 118 142, 118 150, 120 165 C 128 165, 135 160, 135 155 Z" fill="url(#handGrad)" opacity="0.9"/>
+
+  <!-- Interlocked fingers detail -->
+  <path d="M 117 145 C 120 146, 123 146, 125 145" stroke="#C68B35" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M 116 151 C 120 152, 123 152, 127 151" stroke="#C68B35" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <!-- Forearms / Sleeves -->
+  <path d="M 85 210 L 105 160 L 120 165 Z" fill="url(#sleeveGrad)"/>
+  <path d="M 155 210 L 135 160 L 120 165 Z" fill="url(#sleeveGrad)" opacity="0.9"/>
+
+  <!-- Focal glowing star above hands (symbolizing hope/prayer answered) -->
+  <g transform="translate(120, 85)">
+    <path d="M 0 -12 C 1 -4, 4 -1, 12 0 C 4 1, 1 4, 0 12 C -1 4, -4 1, -12 0 C -4 -1, -1 -4, 0 -12 Z" fill="#FFD700"/>
+    <circle cx="0" cy="0" r="3" fill="#FFFFFF"/>
+  </g>
+</svg>

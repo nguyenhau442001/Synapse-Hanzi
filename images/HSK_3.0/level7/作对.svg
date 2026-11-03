@@ -1,0 +1,23 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Person A (Left) -->
+  <g transform="translate(60, 120)">
+    <circle cx="0" cy="-40" r="12" fill="#FFB84D"/>
+    <path d="M-15 0 L15 0 L10 40 L-10 40 Z" fill="#FFB84D"/>
+    <path d="M-20 10 L-40 20" stroke="#FFB84D" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Person B (Right) -->
+  <g transform="translate(180, 120)">
+    <circle cx="0" cy="-40" r="12" fill="#4D94FF"/>
+    <path d="M-15 0 L15 0 L10 40 L-10 40 Z" fill="#4D94FF"/>
+    <path d="M20 10 L40 20" stroke="#4D94FF" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- The "Opposing" visual: Two arrows pushing against each other -->
+  <g transform="translate(120, 120)">
+    <path d="M-30 0 L-10 0 L-20 -15 M-30 0 L-10 0 L-20 15" stroke="#FF5733" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M30 0 L10 0 L20 -15 M30 0 L10 0 L20 15" stroke="#FF5733" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

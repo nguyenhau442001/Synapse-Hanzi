@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient glow to focus on character -->
+  <circle cx="120" cy="120" r="70" fill="#252A34" opacity="0.6"/>
+
+  <!-- Character representing "难为情" (shy, bashful, embarrassed) -->
+  <g id="shy-character">
+    <!-- Body / Shoulders -->
+    <path d="M 75 195 C 75 165, 95 155, 120 155 C 145 155, 165 165, 165 195 Z" fill="#3B82F6"/>
+    <path d="M 90 195 C 90 175, 103 165, 120 165 C 137 165, 150 175, 150 195 Z" fill="#2563EB" opacity="0.3"/>
+    
+    <!-- Neck -->
+    <rect x="110" y="138" width="20" height="22" rx="4" fill="#FDE047"/>
+
+    <!-- Head / Face (Slightly tilted down/sideways for bashfulness) -->
+    <circle cx="120" cy="115" r="34" fill="#FDE047"/>
+
+    <!-- Blushing Cheeks (Key visual cue for embarrassment/bashfulness) -->
+    <ellipse cx="102" cy="123" rx="7" ry="4" fill="#F43F5E" opacity="0.8"/>
+    <ellipse cx="138" cy="123" rx="7" ry="4" fill="#F43F5E" opacity="0.8"/>
+
+    <!-- Shy Eyes (Closed curves looking downward/sideways) -->
+    <path d="M 106 113 Q 110 117 114 113" fill="none" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 126 113 Q 130 117 134 113" fill="none" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Shy Smile (Small, hesitant) -->
+    <path d="M 115 129 Q 120 132 125 129" fill="none" stroke="#1E293B" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Hair -->
+    <path d="M 86 115 C 86 92, 100 83, 120 83 C 140 83, 154 92, 154 115 C 154 115, 145 102, 120 101 C 95 102, 86 115, 86 115 Z" fill="#1E293B"/>
+    <path d="M 95 97 C 105 88, 135 88, 145 97 C 145 97, 135 91, 120 91 C 105 91, 95 97, 95 97 Z" fill="#334155"/>
+
+    <!-- Hands lifted to cheeks in shyness -->
+    <!-- Left Hand -->
+    <circle cx="98" cy="130" r="8" fill="#FDE047"/>
+    <!-- Right Hand -->
+    <circle cx="142" cy="130" r="8" fill="#FDE047"/>
+  </g>
+
+  <!-- Accent elements indicating social attention/praise (subtle star/sparkle motifs, strictly non-romantic) -->
+  <g fill="#F59E0B" opacity="0.8">
+    <!-- Top Left Sparkle -->
+    <path d="M 65 75 L 67 83 L 75 85 L 67 87 L 65 95 L 63 87 L 55 85 L 63 83 Z"/>
+    <!-- Top Right Sparkle -->
+    <path d="M 175 65 L 176.5 71 L 182.5 72.5 L 176.5 74 L 175 80 L 173.5 74 L 167.5 72.5 L 173.5 71 Z" transform="scale(0.8) translate(50, 10)"/>
+  </g>
+
+</svg>

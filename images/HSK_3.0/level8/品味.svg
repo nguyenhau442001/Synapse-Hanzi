@@ -1,0 +1,37 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambient Glow for Atmosphere -->
+  <circle cx="120" cy="115" r="70" fill="#252A34" opacity="0.6"/>
+  <circle cx="120" cy="110" r="45" fill="#2D3446" opacity="0.4"/>
+
+  <!-- Steam/Aroma flowing upward (representing appreciation of fragrance and taste) -->
+  <path d="M102 75 C 96 60, 108 45, 102 30" fill="none" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round" opacity="0.3"/>
+  <path d="M120 70 C 126 55, 114 40, 120 25" fill="none" stroke="#D4AF37" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M138 75 C 144 60, 132 45, 138 30" fill="none" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- Delicate Tea Saucer -->
+  <ellipse cx="120" cy="155" rx="55" ry="14" fill="#3E4756"/>
+  <ellipse cx="120" cy="153" rx="50" ry="11" fill="#2D3441"/>
+  <ellipse cx="120" cy="151" rx="42" ry="8" fill="#343C4B"/>
+
+  <!-- Elegant Chinese Tea Cup (Gaiwan/Teacup) - Physical Noun representing "品味" (Tasting/Savoring) -->
+  <!-- Cup Body Exterior -->
+  <path d="M 82 105 C 82 142, 158 142, 158 105 Z" fill="#E2E8F0"/>
+  <!-- Cup Rim (Ellipse top) -->
+  <ellipse cx="120" cy="105" rx="38" ry="10" fill="#CBD5E1"/>
+  <!-- Cup Inner Depth / Tea Liquid -->
+  <ellipse cx="120" cy="107" rx="34" ry="8" fill="#8DA651"/>
+  <!-- Tea Surface Shimmer -->
+  <ellipse cx="112" cy="106" rx="18" ry="4" fill="#A4C25B" opacity="0.7"/>
+
+  <!-- Subtle refined pattern on cup -->
+  <path d="M 105 120 Q 120 130 135 120" fill="none" stroke="#CBD5E1" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Focus / Accent highlight on the rim -->
+  <path d="M 85 103 A 38 10 0 0 0 155 103" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.8"/>
+
+  <!-- Focal Golden Glow underneath indicating high quality / refined taste (品味) -->
+  <ellipse cx="120" cy="178" rx="30" ry="4" fill="#D4AF37" opacity="0.3"/>
+</svg>

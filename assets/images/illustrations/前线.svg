@@ -1,0 +1,61 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative glowing line (representing the frontline boundary) -->
+  <path d="M 40,160 L 200,100" stroke="#2D3748" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 6"/>
+
+  <!-- Floor plane / ground gradient effect -->
+  <path d="M 20,180 L 220,150 L 220,200 L 20,200 Z" fill="#252A34" opacity="0.6"/>
+
+  <!-- Frontline Medical Worker (Representing "抗击疫情的最前线") -->
+  <!-- Shadow -->
+  <ellipse cx="120" cy="180" rx="35" ry="8" fill="#111318"/>
+
+  <!-- Legs -->
+  <rect x="107" y="145" rx="6" width="10" height="35" fill="#2B6CB0"/>
+  <rect x="123" y="145" rx="6" width="10" height="35" fill="#2B6CB0"/>
+  <!-- Boots -->
+  <path d="M 103,175 L 117,175 L 117,183 L 99,183 C 99,179 101,175 103,175 Z" fill="#4A5568"/>
+  <path d="M 123,175 L 137,175 L 141,183 L 123,183 Z" fill="#4A5568"/>
+
+  <!-- Body / Medical Protective Suit -->
+  <path d="M 95,95 L 145,95 L 155,150 L 85,150 Z" fill="#EDF2F7"/>
+
+  <!-- Arms - One raised forward with a protective stance/shielding gesture -->
+  <path d="M 90,100 L 65,120 L 75,130 L 98,110 Z" fill="#CBD5E0"/>
+  <path d="M 150,100 L 175,130 L 165,140 L 142,110 Z" fill="#CBD5E0"/>
+
+  <!-- Medical Gloves (Hands) -->
+  <circle cx="68" cy="125" r="7" fill="#E2E8F0"/>
+  <circle cx="172" cy="135" r="7" fill="#E2E8F0"/>
+
+  <!-- Head / Mask & Cap -->
+  <!-- Medical Cap -->
+  <path d="M 102,65 C 102,55 138,55 138,65 L 140,75 L 100,75 Z" fill="#4299E1"/>
+  <!-- Face/Mask area -->
+  <circle cx="120" cy="80" r="16" fill="#CBD5E0"/>
+  <!-- Surgical Mask -->
+  <rect x="110" y="75" rx="4" width="20" height="12" fill="#E2E8F0"/>
+  <path d="M 112,81 L 128,81" stroke="#CBD5E0" stroke-width="1.5"/>
+
+  <!-- Protective Visor / Shield (Subtle high-tech overlay for "frontline") -->
+  <path d="M 98,68 C 98,68 105,95 120,95 C 135,95 142,68 142,68" stroke="rgba(66, 153, 225, 0.4)" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Frontline Marker (Glowing Orange/Gold Accent - Focal Point) -->
+  <g transform="translate(120, 35)">
+    <!-- Vertical marker pin -->
+    <path d="M 0,-10 C -8,-10 -14,-4 -14,3 C -14,12 0,25 0,25 C 0,25 14,12 14,3 C 14,-4 8,-10 0,-10 Z" fill="#ED8936"/>
+    <circle cx="0" cy="2" r="5" fill="#1A1D24"/>
+  </g>
+
+  <!-- Pulsing Ground Wave / Frontline boundary indicator -->
+  <ellipse cx="120" cy="180" rx="70" ry="16" fill="none" stroke="#ED8936" stroke-width="2.5" opacity="0.8"/>
+  <ellipse cx="120" cy="180" rx="95" ry="22" fill="none" stroke="#ED8936" stroke-width="1.5" opacity="0.4" stroke-dasharray="4 4"/>
+
+  <!-- Medical cross symbol on chest -->
+  <g transform="translate(112, 108)">
+    <rect x="4" y="0" width="4" height="12" fill="#E53E3E"/>
+    <rect x="0" y="4" width="12" height="4" fill="#E53E3E"/>
+  </g>
+</svg>

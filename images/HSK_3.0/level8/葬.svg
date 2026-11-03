@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ground Layer -->
+  <path d="M0 180 C 80 170, 160 170, 240 180 L 240 240 L 0 240 Z" fill="#2C313C"/>
+  <path d="M0 180 L 240 180 L 240 240 L 0 240 Z" fill="#252A34"/>
+  
+  <!-- Pine Tree -->
+  <path d="M180 180 L 180 120 M180 120 L 160 140 M180 120 L 200 140 M180 100 L 165 125 M180 100 L 195 125" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+  <path d="M180 80 L 160 110 L 200 110 Z" fill="#2D5A27"/>
+  <path d="M180 100 L 165 130 L 195 130 Z" fill="#387032"/>
+  <path d="M180 120 L 170 150 L 190 150 Z" fill="#458B3D"/>
+  
+  <!-- Burial Site (Urn) -->
+  <rect x="60" y="165" width="40" height="50" rx="4" fill="#D4AF37"/>
+  <rect x="55" y="160" width="50" height="10" rx="2" fill="#B8860B"/>
+  <path d="M70 175 L 90 175 M70 185 L 90 185" stroke="#967009" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Soil Mounds -->
+  <path d="M40 180 C 50 160, 110 160, 120 180" fill="none" stroke="#3E4451" stroke-width="3" stroke-dasharray="4 4"/>
+</svg>

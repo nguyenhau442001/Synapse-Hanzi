@@ -1,0 +1,69 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 10)">
+    <!-- Glowing pool / Central Fund Box representing "Capital / Funds" -->
+    <!-- Drop shadow -->
+    <ellipse cx="120" cy="180" rx="55" ry="12" fill="#0E1015"/>
+    
+    <!-- Treasure Chest / Fund Box Base -->
+    <path d="M 85,145 L 155,145 L 165,175 L 75,175 Z" fill="#2D3748"/>
+    <!-- Chest Rim -->
+    <path d="M 80,140 L 160,140 L 165,145 L 75,145 Z" fill="#4A5568"/>
+    <!-- Chest Lid (Open upward) -->
+    <path d="M 80,140 Q 120,115 160,140 Z" fill="#3D4F5C"/>
+    
+    <!-- Golden Coins accumulating -->
+    <!-- Coin 1 -->
+    <ellipse cx="120" cy="142" rx="14" ry="5" fill="#F6E05E"/>
+    <ellipse cx="120" cy="140" rx="14" ry="5" fill="#ECC94B"/>
+    <!-- Coin 2 -->
+    <ellipse cx="108" cy="147" rx="14" ry="5" fill="#ECC94B"/>
+    <ellipse cx="108" cy="145" rx="14" ry="5" fill="#D69E2E"/>
+    <!-- Coin 3 -->
+    <ellipse cx="132" cy="147" rx="14" ry="5" fill="#ECC94B"/>
+    <ellipse cx="132" cy="145" rx="14" ry="5" fill="#D69E2E"/>
+    <!-- Coin 4 (Center top) -->
+    <ellipse cx="120" cy="135" rx="16" ry="6" fill="#F6E05E"/>
+    <ellipse cx="120" cy="133" rx="16" ry="6" fill="#ED8936"/>
+    
+    <!-- Radiant glow indicating collective effort / pooling resources -->
+    <circle cx="120" cy="135" r="45" fill="none" stroke="#ED8936" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.6"/>
+    
+    <!-- Multiple Hands contributing coins from different directions -->
+    <!-- Left Hand 1 (Top Left) -->
+    <g transform="translate(45, 95)">
+      <path d="M 0,0 C 10,5 20,15 25,25 L 15,30 C 10,20 0,10 -5,5 Z" fill="#ED8936"/>
+      <circle cx="27" cy="22" r="5" fill="#F6E05E"/>
+    </g>
+    
+    <!-- Left Hand 2 (Bottom Left) -->
+    <g transform="translate(50, 155)">
+      <path d="M 0,20 C 10,15 20,5 30,0 L 35,10 C 25,15 15,25 5,30 Z" fill="#DD6B20"/>
+      <circle cx="28" cy="3" r="5" fill="#F6E05E"/>
+    </g>
+    
+    <!-- Right Hand 1 (Top Right) -->
+    <g transform="translate(195, 95) scale(-1, 1)">
+      <path d="M 0,0 C 10,5 20,15 25,25 L 15,30 C 10,20 0,10 -5,5 Z" fill="#4299E1"/>
+      <circle cx="27" cy="22" r="5" fill="#F6E05E"/>
+    </g>
+    
+    <!-- Right Hand 2 (Bottom Right) -->
+    <g transform="translate(190, 155) scale(-1, 1)">
+      <path d="M 0,20 C 10,15 20,5 30,0 L 35,10 C 25,15 15,25 5,30 Z" fill="#3182CE"/>
+      <circle cx="28" cy="3" r="5" fill="#F6E05E"/>
+    </g>
+    
+    <!-- Top Center Hand (Community leader / Participant) -->
+    <g transform="translate(120, 60)">
+      <path d="M -5,0 L 5,0 C 5,10 10,15 15,20 L -15,20 C -10,15 -5,10 -5,0 Z" fill="#48BB78"/>
+      <circle cx="0" cy="-5" r="5" fill="#F6E05E"/>
+    </g>
+    
+    <!-- Connecting flow directional arrows subtly pointing inward -->
+    <path d="M 75,115 Q 90,125 105,130" fill="none" stroke="#ED8936" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 165,115 Q 150,125 135,130" fill="none" stroke="#4299E1" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 120,85 Q 120,105 120,120" fill="none" stroke="#48BB78" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  </g>
+</svg>

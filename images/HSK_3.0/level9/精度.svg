@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- CNC Machining Head -->
+  <g transform="translate(120, 120)">
+    <!-- Main Housing -->
+    <path d="M-40 -60 L40 -60 L30 20 L-30 20 Z" fill="#4A5568"/>
+    <path d="M-30 20 L30 20 L25 50 L-25 50 Z" fill="#718096"/>
+    
+    <!-- Drill Bit / Tool -->
+    <rect x="-4" y="50" width="8" height="60" fill="#A0AEC0"/>
+    <path d="M-4 50 L4 50 L0 110 Z" fill="#CBD5E0"/>
+    
+    <!-- Metal Workpiece -->
+    <rect x="-60" y="110" width="120" height="20" fill="#2D3748"/>
+    
+    <!-- Precision Target / Focus Indicator -->
+    <circle cx="0" cy="110" r="8" fill="none" stroke="#F6AD55" stroke-width="3" stroke-dasharray="4 4"/>
+    <circle cx="0" cy="110" r="3" fill="#F6AD55"/>
+    
+    <!-- Micro-measurement lines -->
+    <line x1="-15" y1="100" x2="-15" y2="105" stroke="#F6AD55" stroke-width="1"/>
+    <line x1="15" y1="100" x2="15" y2="105" stroke="#F6AD55" stroke-width="1"/>
+    <line x1="-5" y1="102" x2="5" y2="102" stroke="#F6AD55" stroke-width="1"/>
+  </g>
+</svg>

@@ -1,0 +1,54 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle floor line for grounding the characters -->
+  <line x1="40" y1="185" x2="200" y2="185" stroke="#2A2F3D" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Character 1: Security Guard (Left, making polite dissuading gesture) -->
+  <g id="security-guard">
+    <!-- Body/Uniform -->
+    <path d="M 85 185 L 85 145 C 85 130 95 120 105 120 L 115 120 C 125 120 135 130 135 145 L 135 185 Z" fill="#2E4057"/>
+    <!-- Guard Cap -->
+    <path d="M 90 105 L 130 105 L 128 115 L 92 115 Z" fill="#1F2E3D"/>
+    <ellipse cx="110" cy="103" rx="18" ry="5" fill="#2E4057"/>
+    <!-- Head -->
+    <circle cx="110" cy="112" rx="12" ry="13" fill="#E0AC9D"/>
+    <!-- Raised Hand (Stopping / Dissuading gesture: palm out, upright) -->
+    <path d="M 125 128 C 135 125 140 120 142 115 C 144 110 140 105 135 107 C 131 109 130 114 125 118 Z" fill="#E0AC9D"/>
+    <!-- Arm -->
+    <path d="M 125 125 L 138 115" stroke="#2E4057" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Smoking Character (Right, holding a cigarette) -->
+  <g id="smoker">
+    <!-- Body -->
+    <path d="M 145 185 L 145 150 C 145 135 155 125 165 125 L 175 125 C 185 125 195 135 195 150 L 195 185 Z" fill="#3E404E"/>
+    <!-- Head -->
+    <circle cx="170" cy="115" rx="12" ry="13" fill="#C68B59"/>
+    <!-- Hand near mouth holding cigarette -->
+    <circle cx="162" cy="118" rx="4" ry="4" fill="#C68B59"/>
+    <!-- Cigarette -->
+    <line x1="155" y1="117" x2="147" y2="114" stroke="#E5E9F0" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="147" cy="114" rx="1.5" ry="1.5" fill="#FF5555"/>
+  </g>
+
+  <!-- Prohibition Sign / No Smoking Symbol floating between them to emphasize context -->
+  <g id="no-smoking-sign" transform="translate(120, 75)">
+    <!-- White background circle -->
+    <circle cx="0" cy="0" r="22" fill="#E5E9F0"/>
+    <!-- Red outer ring -->
+    <circle cx="0" cy="0" r="22" fill="none" stroke="#FF5555" stroke-width="4"/>
+    <!-- Red diagonal slash -->
+    <line x1="-15" y1="15" x2="15" y2="-15" stroke="#FF5555" stroke-width="4" stroke-linecap="round"/>
+    <!-- Cigarette icon inside -->
+    <rect x="-8" y="-2" width="12" height="4" rx="1" fill="#4C566A"/>
+    <rect x="4" y="-2" width="4" height="4" fill="#D08770"/>
+    <!-- Smoke wisps -->
+    <path d="M -6 -8 Q -10 -14 -6 -20" fill="none" stroke="#A3BE8C" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 2 -8 Q 6 -13 2 -18" fill="none" stroke="#A3BE8C" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Accent glow/focus element representing the intervention action -->
+  <circle cx="120" cy="115" r="45" fill="none" stroke="#FFB86C" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.6"/>
+</svg>

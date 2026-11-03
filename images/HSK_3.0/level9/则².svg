@@ -1,0 +1,42 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Visual Metaphor: Escalation, Progression, and Contrast ("则" - then / even stronger contrast) -->
+  <!-- We illustrate the sentence context: "He studies well, THEN his work capability is even stronger." -->
+  <!-- Left Side: Baseline Level (Study / Foundation) -->
+  <g transform="translate(40, 130)">
+    <!-- Baseline Platform -->
+    <rect x="0" y="40" width="60" height="8" rx="4" fill="#2E3440"/>
+    <!-- Stack of books representing study -->
+    <rect x="12" y="24" width="36" height="6" rx="2" fill="#4C566A"/>
+    <rect x="8" y="16" width="44" height="6" rx="2" fill="#5E81AC"/>
+    <rect x="14" y="8" width="32" height="6" rx="2" fill="#88C0D0"/>
+    <!-- Subtle checkmark or indicator of good baseline -->
+    <circle cx="30" cy="-6" r="10" fill="#2E3440"/>
+    <path d="M25 -6 L29 -2 L36 -10" fill="none" stroke="#A3BE8C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Transition / Escalation Arrow (Conjunction / Adverb "则" action) -->
+  <g transform="translate(105, 122)">
+    <path d="M0 16 C12 16, 18 10, 30 10" fill="none" stroke="#D08770" stroke-width="3" stroke-linecap="round"/>
+    <path d="M22 4 L31 10 L22 16" fill="none" stroke="#D08770" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Right Side: Escalated / Higher Outcome (Work capability even stronger) -->
+  <g transform="translate(145, 96)">
+    <!-- Higher/Taller Platform -->
+    <rect x="0" y="74" width="60" height="8" rx="4" fill="#2E3440"/>
+    
+    <!-- Multi-tier upward growth bars representing enhanced capability/performance -->
+    <rect x="10" y="46" width="10" height="24" rx="3" fill="#5E81AC"/>
+    <rect x="25" y="26" width="10" height="44" rx="3" fill="#81A1C1"/>
+    <rect x="40" y="6" width="10" height="64" rx="3" fill="#EBCB8B"/>
+
+    <!-- Peak highlight icon (star / high achievement) -->
+    <g transform="translate(45, -6)">
+      <circle cx="0" cy="0" r="12" fill="#2E3440"/>
+      <path d="M0 -6 L1.5 -2 L5 -2 L2 0.5 L3 4 L0 2 L-3 4 L-2 0.5 L-5 -2 L-1.5 -2 Z" fill="#EBCB8B"/>
+    </g>
+  </g>
+</svg>

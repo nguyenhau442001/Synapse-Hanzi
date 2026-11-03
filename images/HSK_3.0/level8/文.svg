@@ -1,0 +1,37 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Ancient Bronze Ritual Vessel (Ding/Gui) representing historical artifact (Shang/Zhou dynasty context) -->
+  <g transform="translate(0, 5)">
+    <!-- Vessel Body (Bronze dark green/teal-grey patina with metallic rim) -->
+    <path d="M 75 90 C 75 75, 165 75, 165 90 L 180 135 C 180 165, 150 185, 120 185 C 90 185, 60 165, 60 135 Z" fill="#2C4A47" stroke="#4A7A73" stroke-width="3"/>
+    
+    <!-- Vessel Rim / Lip -->
+    <ellipse cx="120" cy="90" rx="45" ry="10" fill="#365C57" stroke="#609A92" stroke-width="2"/>
+    <ellipse cx="120" cy="90" rx="38" ry="7" fill="#1A1D24"/>
+
+    <!-- Handles (Left and Right loops) -->
+    <path d="M 72 95 C 55 95, 55 125, 72 125" fill="none" stroke="#4A7A73" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 168 95 C 185 95, 185 125, 168 125" fill="none" stroke="#4A7A73" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Three Tripod Legs -->
+    <path d="M 80 175 L 65 210 L 85 205 Z" fill="#2C4A47" stroke="#4A7A73" stroke-width="2"/>
+    <path d="M 160 175 L 175 210 L 155 205 Z" fill="#2C4A47" stroke="#4A7A73" stroke-width="2"/>
+    <path d="M 120 183 L 120 215 L 128 212 Z" fill="#243D3A" stroke="#4A7A73" stroke-width="2"/>
+
+    <!-- Decorative Taotie / Archaic Pattern Band on Vessel -->
+    <path d="M 80 105 L 90 115 L 100 105 L 110 115 L 120 105 L 130 115 L 140 105 L 150 115 L 160 105" fill="none" stroke="#609A92" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Glowing Inscriptions (Mingwen / Written characters / Writing / Text on artifact) -->
+  <g transform="translate(0, 5)">
+    <rect x="95" y="125" width="50" height="40" rx="4" fill="#0D1117" opacity="0.8"/>
+    <!-- Abstract ancient seal script / glyph lines representing 'wen' (writing/inscriptions) -->
+    <path d="M 105 135 L 115 135 M 110 132 L 110 148 M 105 148 L 115 148" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 125 132 L 135 132 M 130 132 L 130 148 M 123 140 L 137 140" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 143 132 C 147 136, 147 144, 143 148" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Focus / Archaeological Glow Light -->
+  <circle cx="120" cy="140" r="45" fill="none" stroke="#F5A623" stroke-width="1.5" opacity="0.3" stroke-dasharray="6 4"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Soil/Ground -->
+  <path d="M40 190 C 80 170, 160 170, 200 190 L 200 210 L 40 210 Z" fill="#2D3436"/>
+  
+  <!-- Plant/Agriculture -->
+  <path d="M120 190 L 120 130 M 120 150 L 100 130 M 120 140 L 140 120" stroke="#2ECC71" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="100" cy="130" rx="6" ry="4" fill="#2ECC71"/>
+  <ellipse cx="140" cy="120" rx="6" ry="4" fill="#2ECC71"/>
+  
+  <!-- Human Character (Farmer) -->
+  <g transform="translate(60, 120)">
+    <!-- Body -->
+    <path d="M20 70 L 40 70 L 35 100 L 25 100 Z" fill="#3498DB"/>
+    <!-- Arm reaching out -->
+    <path d="M35 75 L 60 60" stroke="#3498DB" stroke-width="8" stroke-linecap="round"/>
+    <!-- Head -->
+    <circle cx="30" cy="50" r="12" fill="#F1C40F"/>
+  </g>
+  
+  <!-- Wealth/Growth Symbol (Gold Coins rising) -->
+  <g transform="translate(160, 100)">
+    <circle cx="0" cy="0" r="10" fill="#F39C12"/>
+    <circle cx="0" cy="0" r="6" fill="#F1C40F"/>
+    <!-- Motion lines -->
+    <path d="M-5 -15 L 0 -25 L 5 -15" stroke="#F39C12" stroke-width="2" fill="none"/>
+    <path d="M-8 -30 L 0 -40 L 8 -30" stroke="#F39C12" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Interaction: Hand holding/nurturing the process -->
+  <path d="M70 180 C 70 160, 90 150, 110 160" stroke="#E67E22" stroke-width="6" stroke-linecap="round" fill="none"/>
+</svg>

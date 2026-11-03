@@ -1,0 +1,29 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Bus Floor -->
+  <rect x="20" y="180" width="200" height="10" fill="#343A46" rx="2"/>
+  
+  <!-- Passenger Body (Leaning forward due to inertia) -->
+  <g transform="translate(120, 160)">
+    <!-- Legs -->
+    <rect x="-15" y="-60" width="10" height="60" fill="#FFC107" rx="5"/>
+    <rect x="5" y="-60" width="10" height="60" fill="#FFC107" rx="5"/>
+    
+    <!-- Torso (Tilted forward) -->
+    <path d="M-20 -60 L20 -60 L10 -140 L-30 -140 Z" fill="#FF9800"/>
+    
+    <!-- Head -->
+    <circle cx="-10" cy="-160" r="20" fill="#FFC107"/>
+    
+    <!-- Motion Lines indicating forward momentum -->
+    <path d="M40 -100 L70 -100 M50 -80 L80 -80 M45 -120 L75 -120" stroke="#5D6D7E" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Bus Handle/Pole -->
+  <rect x="180" y="60" width="8" height="120" fill="#7F8C8D" rx="4"/>
+  <path d="M184 60 C184 40, 140 40, 140 60" stroke="#7F8C8D" stroke-width="8" fill="none" stroke-linecap="round"/>
+  
+  <!-- Brake Indicator (Visual cue for sudden stop) -->
+  <path d="M40 180 L20 180 L30 160 Z" fill="#E74C3C"/>
+</svg>

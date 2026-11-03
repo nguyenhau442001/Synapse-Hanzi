@@ -1,0 +1,55 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements (concert vibe) -->
+  <circle cx="120" cy="110" r="70" fill="none" stroke="#2A2F3B" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M70 70 L90 90" stroke="#FF9F43" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <path d="M170 70 L150 90" stroke="#FF9F43" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <path d="M70 150 L90 130" stroke="#FF9F43" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <path d="M170 150 L150 130" stroke="#FF9F43" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Central glowing platform / stage glow -->
+  <ellipse cx="120" cy="165" rx="55" ry="18" fill="#FF9F43" opacity="0.15"/>
+  <ellipse cx="120" cy="165" rx="35" ry="10" fill="#FF9F43" opacity="0.3"/>
+
+  <!-- Ticket Icon / Object being presented (Pre-sale action focus) -->
+  <!-- Floating ticket with dynamic motion lines -->
+  <g transform="translate(120, 95)">
+    <!-- Motion lines -->
+    <path d="M-45 -25 L-25 -15" stroke="#FF9F43" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+    <path d="M45 -25 L25 -15" stroke="#FF9F43" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+    
+    <!-- Ticket Body -->
+    <path d="M-36 -18 C-36 -22 -32 -26 -28 -26 L28 -26 C32 -26 36 -22 36 -18 L36 18 C36 22 32 26 28 26 L-28 26 C-32 26 -36 22 -36 18 Z" fill="#2E3544" stroke="#FF9F43" stroke-width="2.5"/>
+    
+    <!-- Ticket Notches -->
+    <path d="M-36 -8 C-30 -8 -30 8 -36 8" fill="#1A1D24" stroke="#FF9F43" stroke-width="2"/>
+    <path d="M36 -8 C30 -8 30 8 36 8" fill="#1A1D24" stroke="#FF9F43" stroke-width="2"/>
+    
+    <!-- Ticket details (abstract graphics) -->
+    <line x1="-18" y1="-8" x2="6" y2="-8" stroke="#FF9F43" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-18" y1="2" x2="16" y2="2" stroke="#6C7A9C" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="22" cy="-8" r="4" fill="#FF9F43"/>
+  </g>
+
+  <!-- Dynamic Character Interaction (Verb action: presenting / launching early sale) -->
+  <!-- Hands reaching upward/forward to present the ticket -->
+  <g transform="translate(120, 155)">
+    <!-- Left Hand -->
+    <path d="M-25 15 C-25 5 -15 0 -5 10 C0 15 5 25 0 30 C-5 35 -15 35 -20 25 Z" fill="#E0A96D"/>
+    <path d="M-25 15 L-32 10" stroke="#E0A96D" stroke-width="4" stroke-linecap="round"/>
+    <!-- Right Hand -->
+    <path d="M25 15 C25 5 15 0 5 10 C0 15 -5 25 0 30 C5 35 15 35 20 25 Z" fill="#E0A96D"/>
+    <path d="M25 15 L32 10" stroke="#E0A96D" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Sleeves -->
+    <path d="M-40 35 L-20 20 L-25 35 Z" fill="#4B6584"/>
+    <path d="M40 35 L20 20 L25 35 Z" fill="#4B6584"/>
+  </g>
+
+  <!-- Star / Sparkle elements emphasizing premiere / early launch -->
+  <path d="M55 75 L58 85 L68 88 L58 91 L55 101 L52 91 L42 88 L52 85 Z" fill="#FF9F43" opacity="0.9"/>
+  <path d="M185 85 L187 91 L193 93 L187 95 L185 101 L183 95 L177 93 L183 91 Z" fill="#FF9F43" opacity="0.9" transform="scale(0.8) translate(50, 10)"/>
+
+</svg>

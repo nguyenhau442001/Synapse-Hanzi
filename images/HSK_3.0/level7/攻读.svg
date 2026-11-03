@@ -1,0 +1,65 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Floor/Desk surface -->
+    <path d="M40 180 L200 180" stroke="#2A2E39" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Graduation Cap (mortarboard) representing advanced/doctoral study -->
+    <g transform="translate(120, 55)">
+      <!-- Cap top square (rotated) -->
+      <polygon points="0,-18 52,0 0,18 -52,0" fill="#3B82F6"/>
+      <polygon points="0,-18 52,0 0,18" fill="#60A5FA"/>
+      <polygon points="0,-15 45,0 0,15" fill="#2563EB"/>
+      
+      <!-- Cap skullcap base -->
+      <path d="M-22,7 C-22,22 22,22 22,7 L22,15 C22,25 -22,25 -22,15 Z" fill="#1E40AF"/>
+      
+      <!-- Tassel hanging down -->
+      <path d="M35,6 Q45,20 40,35" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="40" cy="38" r="4" fill="#F59E0B"/>
+    </g>
+
+    <!-- Thick Academic Book stack (representing 攻读 - diligent study) -->
+    <!-- Bottom Book -->
+    <g transform="translate(120, 155)">
+      <path d="M-75,-12 L0,-24 L75,-12 L75,0 L0,12 L-75,0 Z" fill="#0F172A"/>
+      <path d="M-75,0 L0,12 L75,0 L75,18 L0,30 L-75,18 Z" fill="#334155"/>
+      <path d="M-75,0 L-75,18 L0,30 L0,12 Z" fill="#1E293B"/>
+    </g>
+
+    <!-- Middle Book -->
+    <g transform="translate(120, 130)">
+      <path d="M-65,-10 L0,-20 L65,-10 L65,0 L0,10 L-65,0 Z" fill="#1E3A8A"/>
+      <path d="M-65,0 L0,10 L65,0 L65,15 L0,25 L-65,15 Z" fill="#475569"/>
+      <path d="M-65,0 L-65,15 L0,25 L0,10 Z" fill="#334155"/>
+    </g>
+
+    <!-- Top Open/Focused Book with Pages -->
+    <g transform="translate(120, 95)">
+      <!-- Book spine/shadow -->
+      <polygon points="0,-6 0,14 -4,12 -4,-8" fill="#B45309"/>
+      
+      <!-- Left Page -->
+      <path d="M-4,-8 C-25,-12 -55,-6 -62,2 L-62,20 C-55,12 -25,6 -4,10 Z" fill="#F8FAFC"/>
+      <path d="M-15, -4 C-25, -6 -45, -2 -52, 4" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+      <path d="M-15, 0 C-25, -2 -45, 2 -52, 8" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+      <path d="M-15, 4 C-25, 2 -45, 6 -52, 12" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+
+      <!-- Right Page -->
+      <path d="M4,-8 C25,-12 55,-6 62,2 L62,20 C55,12 25,6 4,10 Z" fill="#FFFFFF"/>
+      <path d="M15, -4 C25, -6 45, -2 52, 4" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+      <path d="M15, 0 C25, -2 45, 2 52, 8" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+      <path d="M15, 4 C25, 2 45, 6 52, 12" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+      
+      <!-- Book Cover Base -->
+      <path d="M-65,2 C-55,-6 -25,-12 -4,-8 L-4,10 C-25,6 -55,12 -62,20 Z" fill="#D97706"/>
+      <path d="M65,2 C55,-6 25,-12 4,-8 L4,10 C25,6 55,12 62,20 Z" fill="#D97706"/>
+    </g>
+
+    <!-- Glowing Focus / Diligence Sparkle Accent -->
+    <g transform="translate(120, 22)">
+      <path d="M0,-8 Q0,0 8,0 Q0,0 0,8 Q0,0 -8,0 Q0,0 0,-8 Z" fill="#F59E0B"/>
+    </g>
+  </g>
+</svg>

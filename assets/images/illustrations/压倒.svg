@@ -1,0 +1,51 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background subtle grid for modern sleek look -->
+  <g opacity="0.15">
+    <line x1="30" y1="120" x2="210" y2="120" stroke="#8E9CAA" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="120" y1="30" x2="120" y2="210" stroke="#8E9CAA" stroke-width="1" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Accent Glow for Dominance/Overwhelming force -->
+  <circle cx="120" cy="120" r="70" fill="#FF8A00" opacity="0.08"/>
+
+  <!-- Conceptual Object: "压倒" (Overwhelming Physical Dominance/Crushing Weight/Supremacy) represented as a massive, towering monolithic structure/weight decisively tipping and pressing down over a smaller, receding element -->
+  
+  <g transform="translate(0, 0)">
+    <!-- Ground / Base Plane -->
+    <path d="M 50 180 L 190 180" stroke="#3A4252" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- The Submissive / Crushed Element (Small sleek block/structure being completely dominated) -->
+    <g transform="translate(75, 145)">
+      <rect x="0" y="0" width="35" height="35" rx="4" fill="#2E384D" />
+      <rect x="8" y="10" width="19" height="4" rx="2" fill="#8E9CAA" opacity="0.5"/>
+      <rect x="8" y="20" width="12" height="4" rx="2" fill="#8E9CAA" opacity="0.3"/>
+    </g>
+
+    <!-- Impact / Subdual Ground ripples -->
+    <path d="M 60 180 Q 95 186 130 180" stroke="#FF8A00" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+    <!-- The Dominant / Overwhelming Force (Massive glowing geometric wedge/monolith descending and pressing down with absolute superiority) -->
+    <g transform="translate(100, 50)">
+      <!-- Motion/Downward pressure speed lines -->
+      <line x1="-15" y1="10" x2="-5" y2="35" stroke="#FF8A00" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+      <line x1="10" y1="0" x2="20" y2="25" stroke="#FF8A00" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+      
+      <!-- Main Dominant Monolith (Angular, heavy, sleek orange-gold accented structure) -->
+      <polygon points="10,0 75,55 35,115 -45,85" fill="#242C3D" stroke="#FF8A00" stroke-width="2.5" stroke-linejoin="round"/>
+      
+      <!-- Facet details representing overwhelming mass and power -->
+      <polygon points="10,0 75,55 35,115" fill="#2E384D" opacity="0.7"/>
+      <polygon points="10,0 35,115 -45,85" fill="#1E2533" opacity="0.9"/>
+      
+      <!-- Core focal energy point of absolute supremacy -->
+      <circle cx="15" cy="55" r="8" fill="#FF8A00"/>
+      <circle cx="15" cy="55" r="14" stroke="#FF8A00" stroke-width="1.5" fill="none" opacity="0.5"/>
+    </g>
+
+    <!-- Dynamic interaction lines emphasizing the crushing downward force -->
+    <path d="M 85 130 L 100 145" stroke="#FF8A00" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

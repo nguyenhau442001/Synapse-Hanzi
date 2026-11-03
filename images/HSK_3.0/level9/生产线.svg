@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle Factory Floor/Grid Elements -->
+  <path d="M30 180 L210 180" stroke="#2A2F3D" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <path d="M40 195 L200 195" stroke="#2A2F3D" stroke-width="1"/>
+
+  <!-- Production Line Assembly System -->
+  <!-- Conveyor Belt Support Structure -->
+  <g fill="#3A4254">
+    <rect x="45" y="150" width="8" height="30" rx="2"/>
+    <rect x="95" y="150" width="8" height="30" rx="2"/>
+    <rect x="145" y="150" width="8" height="30" rx="2"/>
+    <rect x="195" y="150" width="8" height="30" rx="2"/>
+  </g>
+
+  <!-- Conveyor Belt Track -->
+  <rect x="30" y="135" width="180" height="20" rx="4" fill="#252A37"/>
+  <rect x="30" y="140" width="180" height="10" fill="#2E3544"/>
+  <!-- Belt Rollers / Segments -->
+  <line x1="55" y1="140" x2="55" y2="150" stroke="#4A5568" stroke-width="2"/>
+  <line x1="80" y1="140" x2="80" y2="150" stroke="#4A5568" stroke-width="2"/>
+  <line x1="105" y1="140" x2="105" y2="150" stroke="#4A5568" stroke-width="2"/>
+  <line x1="130" y1="140" x2="130" y2="150" stroke="#4A5568" stroke-width="2"/>
+  <line x1="155" y1="140" x2="155" y2="150" stroke="#4A5568" stroke-width="2"/>
+  <line x1="180" y1="140" x2="180" y2="150" stroke="#4A5568" stroke-width="2"/>
+
+  <!-- Automated Mechanical Robotic Arm (Background) -->
+  <g>
+    <!-- Base -->
+    <rect x="100" y="70" width="30" height="25" rx="4" fill="#4A5568"/>
+    <!-- Lower Arm -->
+    <path d="M115 70 L95 45" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+    <!-- Upper Arm -->
+    <path d="M95 45 L130 35" stroke="#FF9F43" stroke-width="6" stroke-linecap="round"/>
+    <!-- Articulation Joints -->
+    <circle cx="115" cy="70" r="5" fill="#1A1D24"/>
+    <circle cx="95" cy="45" r="5" fill="#1A1D24"/>
+    <!-- Laser/Welding Head -->
+    <path d="M130 35 L125 55" stroke="#4A5568" stroke-width="4"/>
+    <polygon points="120,55 130,55 125,65" fill="#FF4757"/>
+  </g>
+
+  <!-- Items on the Production Line (Modern Smart Car Chasses in Progress) -->
+  <!-- Car Body 1 (Left - Raw Frame) -->
+  <g transform="translate(45, 105)">
+    <path d="M5 25 L15 15 L35 15 L45 25 Z" fill="#60A5FA"/>
+    <circle cx="15" cy="27" r="4" fill="#1A1D24"/>
+    <circle cx="35" cy="27" r="4" fill="#1A1D24"/>
+  </g>
+
+  <!-- Car Body 2 (Center - Being Worked On / Gold Accent for Focus) -->
+  <g transform="translate(100, 98)">
+    <!-- Sleek Modern Car Silhouette -->
+    <path d="M3 25 C3 18, 12 12, 22 12 L38 12 C48 12, 57 18, 57 25 Z" fill="#FF9F43"/>
+    <rect x="8" y="22" width="44" height="10" rx="2" fill="#F6AD55"/>
+    <circle cx="16" cy="34" r="6" fill="#1A1D24"/>
+    <circle cx="16" cy="34" r="2" fill="#E2E8F0"/>
+    <circle cx="44" cy="34" r="6" fill="#1A1D24"/>
+    <circle cx="44" cy="34" r="2" fill="#E2E8F0"/>
+    <!-- Precision Welding Spark -->
+    <circle cx="30" cy="12" r="3" fill="#FFFFFF"/>
+    <path d="M30 6 L30 2 M25 9 L22 7 M35 9 L38 7" stroke="#FFF" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Car Body 3 (Right - Completed Product) -->
+  <g transform="translate(160, 102)">
+    <path d="M2 28 C2 19, 10 14, 20 14 L40 14 C50 14, 58 19, 58 28 Z" fill="#38BDF8"/>
+    <path d="M14 14 L20 8 L40 8 L46 14 Z" fill="#7DD3FC"/>
+    <circle cx="15" cy="30" r="5" fill="#1A1D24"/>
+    <circle cx="45" cy="30" r="5" fill="#1A1D24"/>
+  </g>
+
+  <!-- Directional Flow Indicator Chevrons -->
+  <g fill="none" stroke="#FF9F43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.6">
+    <path d="M72 170 L78 175 L72 180"/>
+    <path d="M112 170 L118 175 L112 180"/>
+    <path d="M152 170 L158 175 L152 180"/>
+  </g>
+
+</svg>

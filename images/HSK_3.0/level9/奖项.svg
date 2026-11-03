@@ -1,0 +1,36 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle Background Glow -->
+  <circle cx="120" cy="115" r="70" fill="#FFB703" opacity="0.06"/>
+  
+  <!-- Trophy / Award (奖项) Representation -->
+  <g transform="translate(0, 5)">
+    <!-- Base Platform -->
+    <path d="M 85 175 L 155 175 C 158 175, 160 178, 158 181 L 152 191 C 151 193, 149 194, 147 194 L 93 194 C 91 194, 89 193, 88 191 L 82 181 C 80 178, 82 175, 85 175 Z" fill="#2B303C"/>
+    <rect x="92" y="166" width="56" height="10" rx="2" fill="#3A4252"/>
+    
+    <!-- Trophy Stem -->
+    <rect x="110" y="142" width="20" height="26" fill="#3A4252"/>
+    
+    <!-- Trophy Cup Body -->
+    <path d="M 80 75 C 80 65, 88 56, 98 56 L 142 56 C 152 56, 160 65, 160 75 C 160 100, 145 130, 120 142 C 95 130, 80 100, 80 75 Z" fill="#FFB703"/>
+    
+    <!-- Trophy Cup Inner Highlight / Depth -->
+    <path d="M 88 75 C 88 68, 93 62, 100 62 L 140 62 C 147 62, 152 68, 152 75 C 152 95, 140 120, 120 130 C 100 120, 88 95, 88 75 Z" fill="#FFC933"/>
+    
+    <!-- Trophy Handles -->
+    <path d="M 83 70 C 65 70, 65 95, 85 105" fill="none" stroke="#FFB703" stroke-width="7" stroke-linecap="round"/>
+    <path d="M 157 70 C 175 70, 175 95, 155 105" fill="none" stroke="#FFB703" stroke-width="7" stroke-linecap="round"/>
+    
+    <!-- Star Emblem on Trophy -->
+    <polygon points="120,82 124,92 135,93 127,100 129,110 120,105 111,110 113,100 105,93 116,92" fill="#FFE58F"/>
+    
+    <!-- Sparkles / Award Highlights -->
+    <path d="M 68 45 L 70 52 L 77 54 L 70 56 L 68 63 L 66 56 L 59 54 L 66 52 Z" fill="#FFE58F" opacity="0.9"/>
+    <path d="M 172 105 L 173 110 L 178 111 L 173 112 L 172 117 L 171 112 L 166 111 L 171 110 Z" fill="#FFE58F" opacity="0.8"/>
+    <circle cx="158" cy="45" r="3" fill="#FFE58F" opacity="0.7"/>
+    <circle cx="82" cy="130" r="2.5" fill="#FFE58F" opacity="0.6"/>
+  </g>
+</svg>

@@ -1,0 +1,59 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative elements (Subtle tactical/strategic grid lines) -->
+  <g opacity="0.15" stroke="#4A5568" stroke-width="0.5" stroke-dasharray="2 4">
+    <line x1="40" y1="120" x2="200" y2="120"/>
+    <line x1="120" y1="40" x2="120" y2="200"/>
+    <circle cx="120" cy="120" r="70" fill="none"/>
+    <circle cx="120" cy="120" r="45" fill="none"/>
+  </g>
+
+  <!-- Central Visual Representation for "同盟" (Strategic Alliance / Mutual Shield & Bond) -->
+  <!-- Two stylized opposing/partnering geometric figures joining forces with interconnected shields -->
+
+  <!-- Left Ally Pillar -->
+  <g transform="translate(75, 105)">
+    <!-- Shield base -->
+    <path d="M-15,-35 L15,-35 C15,-35 20,5 0,35 C-20,5 -15,-35 -15,-35 Z" fill="#2D3748" stroke="#4A5568" stroke-width="2"/>
+    <!-- Inner glowing gold emblem -->
+    <path d="M-8,-20 L8,-20 L0,15 Z" fill="#F59E0B" opacity="0.9"/>
+  </g>
+
+  <!-- Right Ally Pillar -->
+  <g transform="translate(165, 105)">
+    <!-- Shield base -->
+    <path d="M-15,-35 L15,-35 C15,-35 20,5 0,35 C-20,5 -15,-35 -15,-35 Z" fill="#2D3748" stroke="#4A5568" stroke-width="2"/>
+    <!-- Inner glowing gold emblem -->
+    <path d="M-8,-20 L8,-20 L0,15 Z" fill="#F59E0B" opacity="0.9"/>
+  </g>
+
+  <!-- Central Interlocking Bond / Strategic Alliance Shield (Larger, prominent) -->
+  <g transform="translate(120, 115)">
+    <!-- Outer Glow / Halo -->
+    <path d="M-28,-48 L28,-48 C28,-48 38,8 0,52 C-38,8 -28,-48 -28,-48 Z" fill="#D97706" opacity="0.15"/>
+    
+    <!-- Main Interlocking Shield -->
+    <path d="M-24,-42 L24,-42 C24,-42 32,6 0,46 C-32,6 -24,-42 -24,-42 Z" fill="#1E293B" stroke="#F59E0B" stroke-width="3"/>
+    
+    <!-- Inner solidarity emblem: Two handshake/link silhouettes formed cleanly -->
+    <!-- Left clasp element -->
+    <path d="M-12,-10 C-12,-18 -4,-22 2,-18 C8,-14 6,-4 0,2 C-6,8 -12,2 -12,-4 Z" fill="#3B82F6"/>
+    
+    <!-- Right clasp element -->
+    <path d="M12,-10 C12,-18 4,-22 -2,-18 C-8,-14 -6,-4 0,2 C6,8 12,2 12,-4 Z" fill="#60A5FA"/>
+
+    <!-- Central core connection star/node -->
+    <circle cx="0" cy="-6" r="5" fill="#F59E0B"/>
+  </g>
+
+  <!-- Connection Nodes / Strategic Partnership Arcs -->
+  <path d="M 85 90 Q 120 70 155 90" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 4"/>
+  <path d="M 85 140 Q 120 160 155 140" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Accent Focus Points -->
+  <circle cx="120" cy="50" r="3" fill="#F59E0B"/>
+  <circle cx="55" cy="120" r="2.5" fill="#3B82F6"/>
+  <circle cx="185" cy="120" r="2.5" fill="#3B82F6"/>
+</svg>

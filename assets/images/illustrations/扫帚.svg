@@ -1,0 +1,64 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle floor shadow / ambient glow -->
+  <ellipse cx="120" cy="195" rx="55" ry="8" fill="#111318"/>
+  <path d="M70,165 Q120,155 170,165" fill="none" stroke="#FFA726" stroke-width="1" stroke-opacity="0.2"/>
+
+  <!-- Broomstick (Handle) -->
+  <line x1="165" y1="45" x2="85" y2="175" stroke="#78909C" stroke-width="5" stroke-linecap="round"/>
+  
+  <!-- Broom Handle Grip / Highlight -->
+  <line x1="161" y1="51" x2="89" y2="169" stroke="#90A4AE" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Broom Head (Binding / Collar) -->
+  <path d="M85,160 L100,160 L108,178 L77,178 Z" fill="#FFA726"/>
+  <path d="M85,160 L100,160 L108,178 L77,178 Z" fill="url(#collarGrad)" opacity="0.3"/>
+
+  <!-- Broom Bristles (Large sweeping brush) -->
+  <g>
+    <!-- Back darker bristles -->
+    <path d="M72,176 L113,176 L125,205 L60,205 Z" fill="#F57C00"/>
+    
+    <!-- Main bristle body -->
+    <path d="M75,178 L110,178 L122,204 L63,204 Z" fill="#FFB74D"/>
+    
+    <!-- Bristle texture lines -->
+    <line x1="80" y1="178" x2="70" y2="204" stroke="#FFA726" stroke-width="2" stroke-linecap="round"/>
+    <line x1="90" y1="178" x2="83" y2="204" stroke="#FFA726" stroke-width="2" stroke-linecap="round"/>
+    <line x1="97" y1="178" x2="95" y2="204" stroke="#FFA726" stroke-width="2" stroke-linecap="round"/>
+    <line x1="105" y1="178" x2="108" y2="204" stroke="#FFA726" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Bristle cut edge (slanted bottom) -->
+    <path d="M63,204 L122,204 L126,208 L59,208 Z" fill="#E65100"/>
+  </g>
+
+  <!-- Dynamic sweeping motion lines & fallen leaves -->
+  <!-- Falling/Swept Leaves -->
+  <g transform="translate(-15, 10)">
+    <!-- Leaf 1 -->
+    <path d="M150,135 Q158,130 162,138 Q155,142 150,135 Z" fill="#81C784"/>
+    <path d="M150,135 L158,136" stroke="#4CAF50" stroke-width="1"/>
+    
+    <!-- Leaf 2 -->
+    <path d="M130,155 Q138,150 142,158 Q135,162 130,155 Z" fill="#81C784"/>
+    <path d="M130,155 L138,156" stroke="#4CAF50" stroke-width="1"/>
+
+    <!-- Leaf 3 (Golden autumn leaf) -->
+    <path d="M45,175 Q53,168 58,177 Q50,183 45,175 Z" fill="#FFB74D"/>
+    <path d="M45,175 L53,174" stroke="#F57C00" stroke-width="1"/>
+  </g>
+
+  <!-- Motion / Action Arcs -->
+  <path d="M 65,150 C 50,165 50,185 65,195" fill="none" stroke="#80DEEA" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 4" opacity="0.6"/>
+  <path d="M 55,158 C 43,170 43,185 55,193" fill="none" stroke="#80DEEA" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Sparkles / Cleanliness accents -->
+  <g fill="#FFF59D">
+    <path d="M185,90 L187,96 L193,98 L187,100 L185,106 L183,100 L177,98 L183,96 Z"/>
+    <path d="M55,85 L56,89 L60,90 L56,91 L55,95 L54,91 L50,90 L54,89 Z" transform="scale(0.8) translate(20, 10)"/>
+    <circle cx="160" cy="75" r="2" fill="#80DEEA"/>
+    <circle cx="75" cy="130" r="1.5" fill="#80DEEA"/>
+  </g>
+</svg>

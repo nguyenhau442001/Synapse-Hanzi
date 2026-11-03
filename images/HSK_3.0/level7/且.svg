@@ -1,0 +1,80 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <defs>
+    <!-- Gradients for modern flat-layered look -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D3748"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Contextual Reference Layer: Elegant garment / presentation structure representing quality & style -->
+  <g transform="translate(40, 35)">
+    <!-- Base Card / Frame -->
+    <rect x="0" y="0" width="160" height="95" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5"/>
+    
+    <!-- First Attribute: Elegance/Style (Left node) -->
+    <g transform="translate(20, 18)">
+      <circle cx="18" cy="18" r="16" fill="#0EA5E9" fill-opacity="0.15"/>
+      <path d="M12 18L16 22L24 14" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="42" y="10" width="60" height="6" rx="3" fill="#94A3B8"/>
+      <rect x="42" y="22" width="40" height="4" rx="2" fill="#64748B"/>
+    </g>
+
+    <!-- Visual Escalation / Conjunction Element ("且" - Moreover / In addition) -->
+    <g transform="translate(80, 50)">
+      <!-- Flowing connecting lines indicating addition and progression -->
+      <path d="M0 0C15 0 25 10 25 22" fill="none" stroke="url(#accentGrad)" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="25" cy="22" r="5" fill="#F59E0B"/>
+    </g>
+
+    <!-- Second Attribute: Value / Affordability (Right node, positioned lower & escalated) -->
+    <g transform="translate(45, 58)">
+      <circle cx="18" cy="18" r="16" fill="#F59E0B" fill-opacity="0.15"/>
+      <path d="M14 11H22M14 18H22M14 25H18" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+      <rect x="42" y="10" width="55" height="6" rx="3" fill="#E2E8F0"/>
+      <rect x="42" y="22" width="35" height="4" rx="2" fill="#94A3B8"/>
+    </g>
+  </g>
+
+  <!-- Progression & Escalation Metaphor (Staircase / Addition concept) -->
+  <g transform="translate(30, 150)">
+    <!-- Base ground line -->
+    <path d="M20 60H190" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Step 1: Initial Quality / Baseline -->
+    <g transform="translate(35, 20)">
+      <rect x="0" y="0" width="45" height="40" rx="6" fill="#1E293B" stroke="#0EA5E9" stroke-width="2"/>
+      <!-- Star/Quality Icon inside step -->
+      <path d="M22.5 10L25.5 16H32L27 20L29 26L22.5 22.5L16 26L18 20L13 16H19.5L22.5 10Z" fill="#38BDF8"/>
+    </g>
+
+    <!-- Plus / Addition Indicator -->
+    <g transform="translate(92, 30)">
+      <circle cx="10" cy="10" r="12" fill="#1E293B" stroke="#F59E0B" stroke-width="2"/>
+      <path d="M10 5V15M5 10H15" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Step 2: Escalated Value (Moreover / 且) -->
+    <g transform="translate(122, 5)">
+      <rect x="0" y="0" width="45" height="55" rx="6" fill="#1E293B" stroke="#F59E0B" stroke-width="2"/>
+      <!-- Upward growth / Value Icon inside step -->
+      <path d="M14 35L22 23L28 28L34 15" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M28 15H34V21" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Forward momentum arrow connecting them -->
+    <path d="M84 40C88 40 88 40 90 40" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 3"/>
+  </g>
+
+</svg>

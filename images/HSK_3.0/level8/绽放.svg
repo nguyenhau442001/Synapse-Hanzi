@@ -1,0 +1,78 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient glow representing spring warmth/radiance -->
+  <circle cx="120" cy="120" r="70" fill="#FFB703" opacity="0.08" filter="blur(15px)"/>
+  
+  <!-- Blooming Peach Blossom (绽放 - Noun / Physical Object) -->
+  <g transform="translate(120, 115)">
+    <!-- Radiating brilliant colorful rays / light from blooming -->
+    <g opacity="0.4">
+      <line x1="0" y1="0" x2="0" y2="-75" stroke="#FFB703" stroke-width="2" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="65" y2="-38" stroke="#FFB703" stroke-width="2" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="65" y2="38" stroke="#FFB703" stroke-width="2" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="0" y2="75" stroke="#FFB703" stroke-width="2" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="-65" y2="38" stroke="#FFB703" stroke-width="2" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="-65" y2="-38" stroke="#FFB703" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Stem and sepals -->
+    <path d="M-5,65 Q-2,40 0,30 Q2,40 5,65 Z" fill="#2D6A4F"/>
+    <path d="M-15,35 Q0,25 15,35 Q0,50 -15,35 Z" fill="#40916C"/>
+
+    <!-- Outer Bloom Petals (Layer 1 - Back) -->
+    <g fill="#FF85A1" opacity="0.9">
+      <ellipse cx="0" cy="-45" rx="16" ry="24" transform="rotate(0, 0, -45)"/>
+      <ellipse cx="43" cy="-25" rx="16" ry="24" transform="rotate(60, 43, -25)"/>
+      <ellipse cx="43" cy="25" rx="16" ry="24" transform="rotate(120, 43, 25)"/>
+      <ellipse cx="0" cy="45" rx="16" ry="24" transform="rotate(180, 0, 45)"/>
+      <ellipse cx="-43" cy="25" rx="16" ry="24" transform="rotate(240, -43, 25)"/>
+      <ellipse cx="-43" cy="-25" rx="16" ry="24" transform="rotate(300, -43, -25)"/>
+    </g>
+
+    <!-- Inner Bloom Petals (Layer 2 - Front, slightly brighter/richer) -->
+    <g fill="#FF4D6D">
+      <ellipse cx="0" cy="-35" rx="14" ry="20" transform="rotate(30, 0, -35)"/>
+      <ellipse cx="35" cy="0" rx="14" ry="20" transform="rotate(90, 35, 0)"/>
+      <ellipse cx="0" cy="35" rx="14" ry="20" transform="rotate(150, 0, 35)"/>
+      <ellipse cx="-35" cy="0" rx="14" ry="20" transform="rotate(210, -35, 0)"/>
+    </g>
+
+    <!-- Flower Center (Stamens & Pistil) -->
+    <circle cx="0" cy="0" r="10" fill="#FFB703"/>
+    <circle cx="0" cy="0" r="6" fill="#F77F00"/>
+    
+    <!-- Delicate stamen lines and dots -->
+    <g stroke="#FFE6A7" stroke-width="1.5" stroke-linecap="round">
+      <line x1="0" y1="0" x2="0" y2="-16"/>
+      <line x1="0" y1="0" x2="12" y2="-12"/>
+      <line x1="0" y1="0" x2="16" y2="0"/>
+      <line x1="0" y1="0" x2="12" y2="12"/>
+      <line x1="0" y1="0" x2="0" y2="16"/>
+      <line x1="0" y1="0" x2="-12" y2="12"/>
+      <line x1="0" y1="0" x2="-16" y2="0"/>
+      <line x1="0" y1="0" x2="-12" y2="-12"/>
+    </g>
+    <g fill="#FFF">
+      <circle cx="0" cy="-18" r="1.5"/>
+      <circle cx="14" cy="-14" r="1.5"/>
+      <circle cx="18" cy="0" r="1.5"/>
+      <circle cx="14" cy="14" r="1.5"/>
+      <circle cx="0" cy="18" r="1.5"/>
+      <circle cx="-14" cy="14" r="1.5"/>
+      <circle cx="-18" cy="0" r="1.5"/>
+      <circle cx="-14" cy="-14" r="1.5"/>
+    </g>
+  </g>
+
+  <!-- Floating pollen/sparkles to emphasize "bừng nở / radiant bursting" -->
+  <circle cx="65" cy="65" r="3" fill="#FFB703" opacity="0.8"/>
+  <circle cx="175" cy="75" r="2" fill="#FF85A1" opacity="0.9"/>
+  <circle cx="160" cy="170" r="3.5" fill="#FFB703" opacity="0.7"/>
+  <circle cx="75" cy="165" r="2" fill="#FF4D6D" opacity="0.8"/>
+  
+  <!-- Tiny decorative sparkles -->
+  <path d="M45,100 L47,105 L52,107 L47,109 L45,114 L43,109 L38,107 L43,105 Z" fill="#FFB703" opacity="0.6"/>
+  <path d="M190,120 L191.5,123.5 L195,125 L191.5,126.5 L190,130 L188.5,126.5 L185,125 L188.5,123.5 Z" fill="#FFB703" opacity="0.5"/>
+</svg>

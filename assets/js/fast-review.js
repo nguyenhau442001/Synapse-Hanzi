@@ -9,17 +9,61 @@ const REVIEW_TONE_MARKS = {
 };
 
 function stripTonePinyin(text) {
-  return String(text || '')
-    .toLowerCase()
-    .split('')
-    .map(ch => REVIEW_TONE_MARKS[ch] || ch)
-    .join('')
-    .replace(/\s+/g, ' ')
-    .trim();
+  let s = String(text || '').toLowerCase();
+  s = s.split('').map(ch => REVIEW_TONE_MARKS[ch] || ch).join('');
+  s = s.replace(/[\u2018\u2019\u02bb\u02bc`´]/g, "'");
+  return s.replace(/\s+/g, ' ').trim();
+}
+
+function cleanPinyin(text, { allowUForV = false, recoverTelexR = false } = {}) {
+  if (!text) return '';
+  let s = String(text).toLowerCase();
+
+  s = s.split('').map(ch => REVIEW_TONE_MARKS[ch] || ch).join('');
+
+  if (recoverTelexR) {
+    s = s.normalize('NFD').replace(/\u0309/g, 'r');
+  }
+
+  s = s.normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/đ/g, 'd');
+
+  s = s.replace(/['\u2018\u2019\u02bb\u02bc`´\-\s0-9\.,!?_]/g, '');
+
+  if (allowUForV) {
+    s = s.replace(/v/g, 'u');
+  }
+  return s;
 }
 
 function pinyinLooseMatch(input, target) {
-  return stripTonePinyin(input) === stripTonePinyin(target);
+  if (!input || !target) return false;
+
+  if (typeof target === 'string' && (target.includes('/') || target.includes(';'))) {
+    const targets = target.split(/[\/;]/).map(t => t.trim()).filter(Boolean);
+    if (targets.some(t => pinyinLooseMatch(input, t))) return true;
+  }
+
+  const strippedIn = stripTonePinyin(input);
+  const strippedTar = stripTonePinyin(target);
+  if (strippedIn && strippedIn === strippedTar) return true;
+
+  const cleanIn = cleanPinyin(input);
+  const cleanTar = cleanPinyin(target);
+  if (cleanIn && cleanIn === cleanTar) return true;
+
+  const telexIn = cleanPinyin(input, { recoverTelexR: true });
+  if (telexIn && telexIn === cleanTar) return true;
+
+  const cleanInU = cleanPinyin(input, { allowUForV: true });
+  const cleanTarU = cleanPinyin(target, { allowUForV: true });
+  if (cleanInU && cleanInU === cleanTarU) return true;
+
+  const telexInU = cleanPinyin(input, { allowUForV: true, recoverTelexR: true });
+  if (telexInU && telexInU === cleanTarU) return true;
+
+  return false;
 }
 
 const REVIEW_RANGE_LEVELS = ['hsk1', 'hsk2', 'hsk3', 'hsk4', 'hsk5', 'hsk6'];
@@ -277,9 +321,11 @@ function removeReviewKeydownListener() {
   }
 }
 
+const REVIEW_MAX_LIVES = 5;
+
 function renderReviewHeartsHtml(lives) {
   let heartsHtml = '<div class="review-hearts" aria-label="' + lives + ' mạng còn lại">';
-  for (let i = 1; i <= 3; i++) {
+  for (let i = 1; i <= REVIEW_MAX_LIVES; i++) {
     const isAlive = i <= lives;
     heartsHtml += `
       <span class="review-heart-item ${isAlive ? 'is-alive' : 'is-lost'}" data-heart-idx="${i}" aria-hidden="true">
@@ -310,7 +356,7 @@ function renderReviewStart() {
 
 function startReviewSession() {
   reviewIndex = 0;
-  reviewLives = 3;
+  reviewLives = REVIEW_MAX_LIVES;
   reviewScore = 0;
   reviewStreak = 0;
   reviewBestStreak = 0;

@@ -1,0 +1,32 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Background subtle mountain/cultural heritage motif -->
+    <path d="M40 180 L80 130 L120 160 L170 110 L200 180 Z" fill="#252A34" opacity="0.5"/>
+    
+    <!-- Central Physical Object: A stylized ancient boundary marker / totem post representing a cultural taboo (禁忌) -->
+    <!-- Base platform -->
+    <path d="M80 190 H160 V198 H80 Z" fill="#3A4252" />
+    <rect x="90" y="182" width="60" height="8" rx="2" fill="#4E586E" />
+    
+    <!-- Main Pillar / Totem Body -->
+    <rect x="105" y="65" width="30" height="117" rx="3" fill="#2E3644" stroke="#4E586E" stroke-width="2"/>
+    
+    <!-- Cultural carvings / geometric patterns on the pillar -->
+    <line x1="105" y1="90" x2="135" y2="90" stroke="#F6AD55" stroke-width="2" stroke-dasharray="3,3"/>
+    <line x1="105" y1="120" x2="135" y2="120" stroke="#F6AD55" stroke-width="2"/>
+    <circle cx="120" cy="150" r="6" fill="none" stroke="#F6AD55" stroke-width="2"/>
+
+    <!-- Decorative Top / Roof of the totem -->
+    <polygon points="95,65 145,65 120,40" fill="#E2E8F0"/>
+    <rect x="117" y="30" width="6" height="12" fill="#F6AD55" />
+
+    <!-- Universal prohibition / boundary symbol: Crossed hands or barrier band -->
+    <circle cx="120" cy="120" r="42" fill="none" stroke="#E53E3E" stroke-width="6" opacity="0.9"/>
+    <line x1="90" y1="90" x2="150" y2="150" stroke="#E53E3E" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+
+    <!-- Focal accent glowing ring behind -->
+    <circle cx="120" cy="120" r="54" fill="none" stroke="#F6AD55" stroke-width="1.5" stroke-dasharray="6,6" opacity="0.6"/>
+  </g>
+</svg>

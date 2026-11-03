@@ -1,0 +1,32 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Victim (Fearful person) -->
+  <g transform="translate(60, 100)">
+    <circle cx="30" cy="20" r="15" fill="#FFD700"/>
+    <path d="M15 50 Q30 40 45 50 L40 90 L20 90 Z" fill="#FFD700"/>
+    <path d="M22 20 L26 20 M34 20 L38 20" stroke="#1A1D24" stroke-width="2"/>
+    <path d="M25 30 Q30 35 35 30" stroke="#1A1D24" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Extortionist (Shadowy figure) -->
+  <g transform="translate(130, 80)">
+    <circle cx="30" cy="20" r="15" fill="#FF6B6B"/>
+    <path d="M15 50 Q30 40 45 50 L40 100 L20 100 Z" fill="#FF6B6B"/>
+    <path d="M25 15 L27 18 M33 15 L35 18" stroke="#1A1D24" stroke-width="2"/>
+    <path d="M25 25 Q30 22 35 25" stroke="#1A1D24" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- The Leverage (Digital screen with private data/lock icon) -->
+  <rect x="90" y="130" width="60" height="45" rx="4" fill="#34495E"/>
+  <rect x="100" y="140" width="40" height="25" rx="2" fill="#2C3E50"/>
+  <circle cx="120" cy="152" r="5" fill="#FFD700"/>
+  <rect x="117" y="152" width="6" height="6" fill="#FFD700"/>
+
+  <!-- Threatening Hand Gesture -->
+  <path d="M135 90 L150 70 L160 80" stroke="#FF6B6B" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Money/Demand indicator -->
+  <circle cx="170" cy="140" r="12" fill="#FFD700"/>
+  <path d="M165 140 L175 140 M170 135 L170 145" stroke="#1A1D24" stroke-width="3"/>
+</svg>

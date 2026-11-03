@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Park Bench -->
+  <path d="M60 170h120v10H60z" fill="#4A5568"/>
+  <path d="M70 180h10v30H70zM160 180h10v30h-10z" fill="#4A5568"/>
+  
+  <!-- Couple sitting -->
+  <!-- Person 1 (Left) -->
+  <g transform="translate(90, 110)">
+    <circle cx="15" cy="20" r="12" fill="#FFD700"/>
+    <path d="M5 35h20l-2 25h-16z" fill="#FFD700"/>
+    <path d="M10 60h10v10h-10z" fill="#FFD700"/>
+  </g>
+  
+  <!-- Person 2 (Right) -->
+  <g transform="translate(125, 110)">
+    <circle cx="15" cy="20" r="12" fill="#FF8C00"/>
+    <path d="M5 35h20l2 25h-16z" fill="#FF8C00"/>
+    <path d="M10 60h10v10h-10z" fill="#FF8C00"/>
+  </g>
+  
+  <!-- Interaction: Leaning towards each other -->
+  <path d="M115 135c10-5 20-5 30 0" stroke="#E2E8F0" stroke-width="2" fill="none"/>
+  
+  <!-- Ground -->
+  <path d="M0 210h240v30H0z" fill="#2D3748"/>
+</svg>

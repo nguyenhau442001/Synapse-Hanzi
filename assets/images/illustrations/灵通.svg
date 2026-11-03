@@ -1,0 +1,62 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative data grid / connection lines to represent network and news flow -->
+  <g opacity="0.15" stroke="#38BDF8" stroke-width="1" stroke-dasharray="3 3">
+    <line x1="30" y1="120" x2="110" y2="120"/>
+    <line x1="130" y1="120" x2="210" y2="120"/>
+    <line x1="120" y1="30" x2="120" y2="100"/>
+    <line x1="120" y1="140" x2="120" y2="210"/>
+    <circle cx="70" cy="120" r="2" fill="#38BDF8"/>
+    <circle cx="170" cy="120" r="2" fill="#38BDF8"/>
+  </g>
+
+  <!-- Contrast scale exaggeration: Small, chaotic background noise/lag (slow news) vs Large, sharp, clear focal point (灵通/敏捷) -->
+  <g opacity="0.3">
+    <!-- Faded, blurry data packets left behind -->
+    <rect x="35" y="95" width="28" height="18" rx="4" fill="#64748B"/>
+    <rect x="45" y="135" width="32" height="18" rx="4" fill="#64748B"/>
+    <circle cx="195" cy="95" r="10" fill="#64748B"/>
+    <circle cx="185" cy="155" r="8" fill="#64748B"/>
+  </g>
+
+  <!-- Dynamic concentric signal waves representing instant information flow & alertness -->
+  <circle cx="120" cy="120" r="85" fill="none" stroke="#F59E0B" stroke-width="1" opacity="0.2"/>
+  <circle cx="120" cy="120" r="65" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="120" cy="120" r="45" fill="none" stroke="#F59E0B" stroke-width="2" opacity="0.7"/>
+
+  <!-- Central Visual Subject: Sleek modern journalist/analyst sharply intercepting and processing key global market data instantaneously -->
+  <!-- Person Bust (Dark theme silhouette with professional tone) -->
+  <path d="M 85 200 C 85 170, 100 160, 120 160 C 140 160, 155 170, 155 200 Z" fill="#334155"/>
+  <circle cx="120" cy="135" r="18" fill="#475569"/>
+  <!-- Professional glasses/visor representing sharp insight -->
+  <path d="M 108 132 L 132 132 L 130 138 L 110 138 Z" fill="#F59E0B"/>
+
+  <!-- Glowing high-priority financial data symbols / globe network elements radiating outward -->
+  <!-- Upward market trend indicator (sharp angle = agility/quick response) -->
+  <polyline points="150,85 170,65 190,75 205,45" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Trend peak glowing dot -->
+  <circle cx="205" cy="45" r="5" fill="#F59E0B"/>
+
+  <!-- Speed lines / instantaneous transmission rays -->
+  <line x1="145" y1="100" x2="175" y2="70" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="95" y1="100" x2="65" y2="70" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Floating real-time data nodes (representing incoming news stream) -->
+  <g transform="translate(0, 0)">
+    <!-- Primary focal node: bright orange/gold representing core intelligence -->
+    <rect x="140" y="85" width="36" height="24" rx="6" fill="#F59E0B" opacity="0.9"/>
+    <polyline points="148,97 155,102 168,91" fill="none" stroke="#1A1D24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(0, 0)">
+    <!-- Secondary data node: cyan representing global connectivity -->
+    <rect x="64" y="85" width="36" height="24" rx="6" fill="#38BDF8" opacity="0.9"/>
+    <circle cx="82" cy="97" r="5" fill="#1A1D24"/>
+  </g>
+
+  <!-- Lightning fast signal flash overlay -->
+  <polygon points="125,75 112,102 124,102 116,128 138,98 126,98" fill="#FBBF24"/>
+
+</svg>

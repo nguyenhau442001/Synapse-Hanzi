@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Person being criticized (The Team Member) -->
+  <g transform="translate(60, 100)">
+    <circle cx="30" cy="30" r="20" fill="#4A5568"/>
+    <rect x="15" y="55" width="30" height="60" rx="5" fill="#4A5568"/>
+    <rect x="20" y="60" width="20" height="10" fill="#2D3748"/>
+  </g>
+
+  <!-- The Criticizer (The Outsider) -->
+  <g transform="translate(130, 80)">
+    <!-- Head -->
+    <circle cx="30" cy="30" r="20" fill="#E2E8F0"/>
+    <!-- Body -->
+    <rect x="15" y="55" width="30" height="80" rx="5" fill="#E2E8F0"/>
+    
+    <!-- Pointing Finger (The "Zhi") -->
+    <path d="M 45 60 L 70 40 L 75 45 L 50 65" fill="#F6AD55"/>
+    
+    <!-- Gesturing Hand (The "Hua") -->
+    <path d="M 15 70 L -10 80 L -5 90 L 20 80" fill="#F6AD55"/>
+    
+    <!-- Expressive lines indicating movement -->
+    <path d="M 75 40 L 85 30" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+    <path d="M -10 80 L -20 85" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

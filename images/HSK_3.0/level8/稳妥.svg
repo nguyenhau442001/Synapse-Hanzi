@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Foundation/Base -->
+  <rect x="60" y="180" width="120" height="12" rx="2" fill="#3B4252"/>
+  
+  <!-- The "稳妥" (Stable/Secure) Object: A heavy, balanced stone archway or solid block structure -->
+  <!-- Main solid block representing stability -->
+  <path d="M70 180 L70 100 C70 80 80 70 100 70 L140 70 C160 70 170 80 170 100 L170 180 Z" fill="#4C566A"/>
+  
+  <!-- Top cap representing the "thorough/settled" aspect -->
+  <rect x="65" y="60" width="110" height="15" rx="4" fill="#EBCB8B"/>
+  
+  <!-- Supporting pillars to emphasize the "sure/certain" nature -->
+  <rect x="80" y="100" width="20" height="80" fill="#5E81AC"/>
+  <rect x="140" y="100" width="20" height="80" fill="#5E81AC"/>
+  
+  <!-- Central focus: A golden lock integrated into the structure to signify security and "sureness" -->
+  <circle cx="120" cy="125" r="20" fill="#D8DEE9"/>
+  <path d="M110 125 A10 10 0 0 1 130 125" fill="none" stroke="#BF616A" stroke-width="4" stroke-linecap="round"/>
+  <rect x="112" y="125" width="16" height="12" rx="2" fill="#BF616A"/>
+  
+  <!-- Subtle shadow for depth -->
+  <ellipse cx="120" cy="195" rx="50" ry="6" fill="#000000" opacity="0.3"/>
+</svg>

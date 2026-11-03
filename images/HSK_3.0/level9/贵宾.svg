@@ -1,0 +1,55 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle luxury hotel lobby background arch/pillar lines -->
+  <path d="M60 200V80C60 68.9543 68.9543 60 80 60H160C171.046 60 180 68.9543 180 80V200" fill="none" stroke="#262B35" stroke-width="2"/>
+  <line x1="30" y1="200" x2="210" y2="200" stroke="#262B35" stroke-width="2"/>
+
+  <!-- Red VIP Carpet -->
+  <path d="M85 200L100 135H140L155 200H85Z" fill="#991B1B"/>
+  <path d="M92 200L103 150H137L148 200H92Z" fill="#DC2626"/>
+
+  <!-- VIP Guest (Character on the left, holding a briefcase, wearing a refined suit) -->
+  <g transform="translate(45, 105)">
+    <!-- Body / Suit -->
+    <path d="M25 95C25 78.4315 38.4315 65 55 65H65C81.5685 65 95 78.4315 95 95V95H25V95Z" fill="#3B82F6"/>
+    <path d="M45 65L60 85L75 65H45Z" fill="#FFFFFF"/>
+    <!-- Tie -->
+    <polygon points="57,75 63,75 61,92 59,92" fill="#F59E0B"/>
+    <!-- Head -->
+    <circle cx="60" cy="45" r="16" fill="#FDE68A"/>
+    <!-- Hair -->
+    <path d="M44 45C44 34 50 30 60 29C70 30 76 34 76 45C76 40 70 33 60 33C50 33 44 40 44 45Z" fill="#1F2937"/>
+    <!-- Briefcase -->
+    <rect x="75" y="75" width="16" height="12" rx="2" fill="#92400E"/>
+    <path d="M80 75V73C80 71.8954 80.8954 71 82 71H88C89.1046 71 90 71.8954 90 73V75" fill="none" stroke="#D97706" stroke-width="1.5"/>
+  </g>
+
+  <!-- Hotel Manager / Host (Character on the right, welcoming gesture) -->
+  <g transform="translate(100, 105)">
+    <!-- Body / Uniform Jacket -->
+    <path d="M25 95C25 78.4315 38.4315 65 55 65H65C81.5685 65 95 78.4315 95 95V95H25V95Z" fill="#1E293B"/>
+    <path d="M45 65L60 85L75 65H45Z" fill="#F8FAFC"/>
+    <!-- Bowtie -->
+    <path d="M54 74L66 74L63 78L66 82L54 82L57 78L54 74Z" fill="#D97706"/>
+    <!-- Head -->
+    <circle cx="60" cy="45" r="16" fill="#FFEDD5"/>
+    <!-- Hair -->
+    <path d="M44 44C44 34 50 30 60 29C70 30 76 34 76 44C74 38 68 35 60 35C52 35 46 38 44 44Z" fill="#334155"/>
+    <!-- Welcoming Open Hand Gesture -->
+    <path d="M15 75C10 70 5 72 2 78C0 82 4 86 8 84" fill="#FFEDD5"/>
+  </g>
+
+  <!-- Golden VIP Badge / Crown Icon floating above to explicitly mark "貴賓" status -->
+  <g transform="translate(120, 32)">
+    <circle cx="0" cy="0" r="18" fill="#1E293B" stroke="#F59E0B" stroke-width="2"/>
+    <path d="M-8 4L-4 -4L0 2L4 -4L8 4H-8Z" fill="#F59E0B"/>
+    <circle cx="-8" cy="-5" r="1.5" fill="#F59E0B"/>
+    <circle cx="0" cy="-7" r="1.5" fill="#F59E0B"/>
+    <circle cx="8" cy="-5" r="1.5" fill="#F59E0B"/>
+  </g>
+
+  <!-- Sparkle details indicating high-end/luxury atmosphere -->
+  <path d="M40 70L42 75L47 77L42 79L40 84L38 79L33 77L38 75L40 70Z" fill="#F59E0B" opacity="0.8"/>
+  <path d="M200 85L201 88L204 89L201 90L200 93L199 90L196 89L199 88L200 85Z" fill="#F59E0B" opacity="0.6"/>
+</svg>

@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Existing small building structure -->
+  <rect x="60" y="140" width="40" height="60" fill="#4A5568" rx="2"/>
+  <rect x="65" y="150" width="10" height="15" fill="#2D3748"/>
+  <rect x="80" y="150" width="10" height="15" fill="#2D3748"/>
+  
+  <!-- Expansion area (The "Action" of building) -->
+  <path d="M100 140 L180 140 L180 200 L100 200 Z" fill="#E2E8F0" opacity="0.3"/>
+  <rect x="100" y="110" width="80" height="90" fill="#F6AD55" rx="2"/>
+  
+  <!-- Construction worker character -->
+  <g>
+    <circle cx="130" cy="90" r="10" fill="#FBD38D"/>
+    <path d="M115 100 L145 100 L140 130 L120 130 Z" fill="#63B3ED"/>
+    <rect x="125" y="130" width="4" height="20" fill="#63B3ED"/>
+    <rect x="131" y="130" width="4" height="20" fill="#63B3ED"/>
+  </g>
+  
+  <!-- Motion/Action lines indicating expansion -->
+  <path d="M185 150 L205 150 M195 140 L195 160" stroke="#F6AD55" stroke-width="3" stroke-linecap="round"/>
+  <path d="M182 115 L195 105" stroke="#F6AD55" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Ground line -->
+  <line x1="40" y1="200" x2="200" y2="200" stroke="#4A5568" stroke-width="4"/>
+</svg>

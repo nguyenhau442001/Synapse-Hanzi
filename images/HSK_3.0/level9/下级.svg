@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Hierarchy representation: Leader (higher) and Subordinate (lower) -->
+  <!-- Leader figure (standing tall) -->
+  <g transform="translate(120, 80)">
+    <circle cx="0" cy="-20" r="12" fill="#FFB84D"/>
+    <path d="M-15 0h30v40h-30z" fill="#FFB84D"/>
+  </g>
+  
+  <!-- Subordinate figure (slightly lower, listening/attentive posture) -->
+  <g transform="translate(120, 150)">
+    <circle cx="0" cy="-20" r="10" fill="#64B5F6"/>
+    <path d="M-12 0h24v35h-24z" fill="#64B5F6"/>
+    <!-- Indicating subordinate status via position and attentive posture -->
+    <path d="M-5 5l10 0" stroke="#1A1D24" stroke-width="2"/>
+  </g>
+
+  <!-- Connecting line to show organizational relationship -->
+  <line x1="120" y1="100" x2="120" y2="130" stroke="#4A5568" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Visual floor/ground line -->
+  <line x1="60" y1="185" x2="180" y2="185" stroke="#2D3748" stroke-width="2"/>
+</svg>

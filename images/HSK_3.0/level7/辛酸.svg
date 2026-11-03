@@ -1,0 +1,27 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Representing "辛酸" (bitterness/hardship) through a contrast of a weary traveler's silhouette and the weight of their journey -->
+  
+  <!-- The Path/Journey -->
+  <path d="M40 180 C 80 180, 120 140, 200 140" stroke="#4A5568" stroke-width="2" stroke-dasharray="6 6" fill="none"/>
+  
+  <!-- The Weary Traveler (Scale exaggeration of weight) -->
+  <g transform="translate(60, 140)">
+    <!-- Body silhouette -->
+    <path d="M0 0 C 5 -10, 5 -20, 0 -30 C -5 -40, 5 -50, 10 -50 C 15 -50, 25 -40, 20 -30 C 15 -20, 15 -10, 20 0 Z" fill="#718096"/>
+    <!-- The heavy burden (Gold/Orange accent representing the 'value' of the struggle) -->
+    <rect x="-15" y="-75" width="40" height="30" rx="4" fill="#D69E2E"/>
+    <path d="M-5 -75 L 5 -85 L 25 -85 L 35 -75 Z" fill="#B7791F"/>
+    <path d="M5 -85 L 5 -75" stroke="#975A16" stroke-width="2"/>
+  </g>
+
+  <!-- The "Bitterness" (Sharp, cold contrast) -->
+  <g transform="translate(160, 80)">
+    <path d="M0 0 L 10 -20 L 20 0 L 10 5 Z" fill="#E53E3E" opacity="0.6"/>
+    <path d="M10 0 L 10 20" stroke="#E53E3E" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Ground/Horizon -->
+  <line x1="30" y1="180" x2="210" y2="180" stroke="#2D3748" stroke-width="2"/>
+</svg>

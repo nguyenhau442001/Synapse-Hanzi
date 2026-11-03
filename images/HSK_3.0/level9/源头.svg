@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Mountain landscape background -->
+  <path d="M0 240 L0 140 L60 80 L120 130 L180 90 L240 140 L240 240 Z" fill="#2C323D"/>
+  <path d="M40 240 L40 160 L100 100 L160 150 L220 110 L240 130 L240 240 Z" fill="#363E4A"/>
+  
+  <!-- The Source (Spring) -->
+  <g transform="translate(120, 140)">
+    <!-- Rock formation -->
+    <path d="M-30 0 C-40 -20 -20 -40 0 -40 C20 -40 40 -20 30 0 Z" fill="#4A5568"/>
+    <path d="M-20 -10 C-25 -25 -10 -35 0 -35 C10 -35 25 -25 20 -10 Z" fill="#718096"/>
+    
+    <!-- Water gushing out -->
+    <path d="M-5 -5 C-15 10 -15 30 0 50 C15 30 15 10 5 -5 Z" fill="#63B3ED" opacity="0.9"/>
+    <path d="M-2 0 C-8 15 -8 30 0 45 C8 30 8 15 2 0 Z" fill="#BEE3F8" opacity="0.8"/>
+    
+    <!-- Stream base -->
+    <ellipse cx="0" cy="55" rx="25" ry="10" fill="#2C323D"/>
+    <path d="M-20 55 L-40 80 L40 80 L20 55 Z" fill="#2B6CB0"/>
+  </g>
+  
+  <!-- Accent highlight on the source -->
+  <circle cx="120" cy="100" r="4" fill="#F6AD55"/>
+  <path d="M120 90 L120 110 M110 100 L130 100" stroke="#F6AD55" stroke-width="2" stroke-linecap="round"/>
+</svg>

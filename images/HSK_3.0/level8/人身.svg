@@ -1,0 +1,56 @@
+<svg width="240" height="240" rx="24" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "人身" (human body / personal safety & physical form) -->
+  <!-- Sleek, modern flat vector representation of a human figure centered, emphasizing physical form and dignity -->
+
+  <!-- Subtle glowing safety/dignity aura ring -->
+  <circle cx="120" cy="120" r="76" fill="none" stroke="#252A34" stroke-width="4"/>
+  <circle cx="120" cy="120" r="76" fill="none" stroke="#3A4356" stroke-width="2" stroke-dasharray="12 8"/>
+  <circle cx="120" cy="120" r="90" fill="none" stroke="#4F46E5" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Background silhouette / structural nodes representing physical integrity -->
+  <g opacity="0.4">
+    <line x1="120" y1="35" x2="120" y2="205" stroke="#6366F1" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="75" y1="100" x2="165" y2="100" stroke="#6366F1" stroke-width="1" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Central Human Figure (Noun: physical body / person) -->
+  <g id="human-body">
+    <!-- Head -->
+    <circle cx="120" cy="72" r="18" fill="#F3F4F6"/>
+    
+    <!-- Neck -->
+    <rect x="114" y="90" width="12" height="10" fill="#F3F4F6"/>
+
+    <!-- Torso / Upper Body with high-contrast professional color blocking -->
+    <path d="M 90 110 C 90 102 98 100 120 100 C 142 100 150 102 150 110 L 160 165 C 160 170 156 175 150 175 L 90 175 C 84 175 80 170 80 165 Z" fill="#4F46E5"/>
+
+    <!-- Inner collar/lapel detail for modern UI feel -->
+    <path d="M 105 100 L 120 125 L 135 100 Z" fill="#1A1D24"/>
+
+    <!-- Arms -->
+    <path d="M 90 110 L 68 145 C 65 150 68 155 74 155 C 80 155 84 150 88 142 L 100 120 Z" fill="#818CF8"/>
+    <path d="M 150 110 L 172 145 C 175 150 172 155 166 155 C 160 155 156 150 152 142 L 140 120 Z" fill="#818CF8"/>
+
+    <!-- Legs -->
+    <path d="M 98 175 L 98 210 C 98 215 104 218 108 215 L 116 200 L 118 175 Z" fill="#312E81"/>
+    <path d="M 142 175 L 142 210 C 142 215 136 218 132 215 L 124 200 L 122 175 Z" fill="#312E81"/>
+  </g>
+
+  <!-- Focus/Protection Accent Elements (Gold/Orange for semantic emphasis) -->
+  <g id="accents">
+    <!-- Top security/integrity shield marker -->
+    <path d="M 120 25 L 129 32 L 129 45 C 129 52 120 58 120 58 C 120 58 111 52 111 45 L 111 32 Z" fill="#F59E0B" opacity="0.9"/>
+    
+    <!-- Supporting baseline bracket indicating legal protection/safety of person -->
+    <path d="M 50 195 L 42 195 C 37 195 34 191 34 186 L 34 140" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 190 195 L 198 195 C 203 195 206 191 206 186 L 206 140" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Small anchor dots -->
+    <circle cx="34" cy="195" r="3" fill="#F59E0B"/>
+    <circle cx="206" cy="195" r="3" fill="#F59E0B"/>
+    <circle cx="120" cy="25" r="2.5" fill="#FFFFFF"/>
+  </g>
+</svg>

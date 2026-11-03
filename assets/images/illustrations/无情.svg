@@ -1,0 +1,71 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <defs>
+    <!-- Background grid pattern for modern analytical look -->
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#252A34" stroke-width="0.5" stroke-dasharray="2 4"/>
+    </pattern>
+    <linearGradient id="coldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="warnGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="240" height="240" fill="url(#grid)" opacity="0.6"/>
+
+  <!-- Causality / Progression Metaphor for "无情" (Impartial, Unyielding Nature vs Human Effort) -->
+  <!-- Left Side: Human / Vulnerable Effort (Staircase / Steps of action) -->
+  <g transform="translate(30, 140)">
+    <!-- Ascending steps breaking off -->
+    <rect x="0" y="30" width="20" height="10" fill="#334155" rx="2"/>
+    <rect x="18" y="15" width="20" height="25" fill="#334155" rx="2"/>
+    <rect x="36" y="0" width="20" height="40" fill="#334155" rx="2"/>
+    
+    <!-- A small structure / fragile effort falling or blocked -->
+    <path d="M 46 -15 L 56 -5 L 46 5 Z" fill="#F59E0B"/>
+    <line x1="20" y1="-5" x2="50" y2="-5" stroke="#F59E0B" stroke-width="2" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- Central Visual Metaphor: Impartial Scale / Unyielding Force of Nature (Contrast / Causality) -->
+  <g transform="translate(120, 110)">
+    <!-- Fulcrum / Pivot -->
+    <polygon points="0,-20 -15,30 15,30" fill="#475569"/>
+    <circle cx="0" cy="-20" r="6" fill="#94A3B8"/>
+
+    <!-- Beam tipped steeply to one side representing absolute, unbending laws -->
+    <line x1="-65" y1="-35" x2="65" y2="-5" stroke="#64748B" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Left pan (light, human endeavors) lifted high -->
+    <line x1="-65" y1="-35" x2="-65" y2="-10" stroke="#475569" stroke-width="2"/>
+    <circle cx="-65" cy="-8" r="14" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+    <!-- Tiny abstract effort symbol -->
+    <circle cx="-65" cy="-8" r="5" fill="#38BDF8"/>
+
+    <!-- Right pan (heavy, cold objective laws / natural consequence) weighed down hard -->
+    <line x1="65" y1="-5" x2="65" y2="30" stroke="#475569" stroke-width="2"/>
+    <circle cx="65" cy="32" r="18" fill="#1E293B" stroke="url(#warnGrad)" stroke-width="2.5"/>
+    <!-- Heavy downward weight indicator -->
+    <path d="M 60 27 L 65 37 L 70 27" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Sharp Escalation / Consequence Vector (Lightning / Cold barrier cutting through) -->
+  <g transform="translate(120, 20)">
+    <!-- Vertical strict boundary line representing the unyielding absolute nature -->
+    <line x1="0" y1="0" x2="0" y2="70" stroke="#38BDF8" stroke-width="2" stroke-opacity="0.4" stroke-dasharray="4 4"/>
+    
+    <!-- Striking cold impact / harsh natural law symbol -->
+    <path d="M 0 10 L -8 32 L 3 32 L -2 55 L 10 28 L -1 28 Z" fill="url(#coldGrad)" filter="drop-shadow(0px 2px 4px rgba(56, 189, 248, 0.3))"/>
+  </g>
+
+  <!-- Accentuation dots for modern flat aesthetic UI feel -->
+  <circle cx="45" cy="50" r="3" fill="#334155"/>
+  <circle cx="195" cy="65" r="3" fill="#334155"/>
+  <circle cx="35" cy="190" r="2" fill="#334155"/>
+  <circle cx="205" cy="180" r="2.5" fill="#334155"/>
+
+</svg>

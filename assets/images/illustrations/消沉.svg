@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle ambient shadow/glow under the character -->
+  <ellipse cx="120" cy="200" rx="45" ry="8" fill="#111318" opacity="0.8"/>
+
+  <!-- Conceptual Object / Character representing "消沉" (Sa sút tinh thần, chán nản) -->
+  <!-- A seated human figure slumped forward in despondency, head down, shoulders drooping -->
+  <g transform="translate(0, 10)">
+    <!-- Chair / Seat -->
+    <path d="M85 160 L155 160 L150 185 L90 185 Z" fill="#2A2F3D" stroke="#3A4154" stroke-width="2" stroke-linejoin="round"/>
+    <rect x="90" y="110" width="60" height="50" rx="4" fill="#232833"/>
+    
+    <!-- Slumped Character Body -->
+    <!-- Head (bowed down low) -->
+    <circle cx="102" cy="115" r="14" fill="#E08A4C"/>
+    <!-- Hair drooping forward -->
+    <path d="M88 112 C88 102 96 98 108 100 C114 101 116 107 114 112 Z" fill="#4A5265"/>
+
+    <!-- Slumped Torso & Shoulders (curved downward in dejection) -->
+    <path d="M92 124 C90 124 82 135 88 148 C94 161 108 165 125 155 C138 147 142 135 138 126 C134 118 122 120 115 125 Z" fill="#3D566E"/>
+
+    <!-- Drooping Arms (hanging down limply towards the floor) -->
+    <path d="M98 135 C90 145 82 155 76 170" fill="none" stroke="#E08A4C" stroke-width="6" stroke-linecap="round"/>
+    <path d="M125 135 C130 145 135 155 142 170" fill="none" stroke="#E08A4C" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Hands hanging low -->
+    <circle cx="74" cy="173" r="4" fill="#E08A4C"/>
+    <circle cx="144" cy="173" r="4" fill="#E08A4C"/>
+
+    <!-- Slumped Legs -->
+    <path d="M95 160 L80 188" fill="none" stroke="#2D4356" stroke-width="8" stroke-linecap="round"/>
+    <path d="M125 160 L135 188" fill="none" stroke="#2D4356" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Heavy/Dark mood visualization: minimalist gray rain-like downward stroke accents over the figure to denote low spirit -->
+    <g opacity="0.3" stroke="#8A99AD" stroke-width="1.5" stroke-linecap="round">
+      <line x1="75" y1="80" x2="73" y2="92"/>
+      <line x1="165" y1="90" x2="163" y2="102"/>
+      <line x1="150" y1="70" x2="148" y2="82"/>
+    </g>
+  </g>
+</svg>

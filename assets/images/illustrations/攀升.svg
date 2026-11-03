@@ -1,0 +1,34 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background grid/glow -->
+  <path d="M40 200 L200 200" stroke="#2A2F3D" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <path d="M40 160 L200 160" stroke="#2A2F3D" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <path d="M40 120 L200 120" stroke="#2A2F3D" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <path d="M40 80 L200 80" stroke="#2A2F3D" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <!-- Dramatic upward growth pillar / surge column representing physical escalation (攀升) -->
+  <!-- Base structure -->
+  <path d="M90 200 L150 200 L140 100 L100 100 Z" fill="#222836"/>
+  
+  <!-- Segmented rising bars (Physical Object - Surge Pillar) -->
+  <rect x="95" y="170" width="50" height="22" rx="4" fill="#323B4D"/>
+  <rect x="92" y="140" width="56" height="22" rx="4" fill="#3D4A61"/>
+  <rect x="88" y="105" width="64" height="27" rx="4" fill="#4E5D78"/>
+  
+  <!-- The surging tip breaking upward into high energy (orange/gold accent) -->
+  <path d="M85 95 L155 95 L140 45 L100 45 Z" fill="#FF9F43"/>
+  <rect x="82" y="32" width="76" height="9" rx="3.5" fill="#FF7043"/>
+
+  <!-- Upward motion arrows integrated into the physical object -->
+  <path d="M120 75 L120 58 M114 64 L120 58 L126 64" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M120 125 L120 110" stroke="#8A9BB8" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M120 175 L120 160" stroke="#8A9BB8" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Sparks / dynamic ascent particles -->
+  <circle cx="105" cy="22" r="2.5" fill="#FFD32A"/>
+  <circle cx="135" cy="25" r="2" fill="#FF9F43"/>
+  <circle cx="120" cy="15" r="3" fill="#FFD32A"/>
+  <path d="M72 65 L82 60" stroke="#FF9F43" stroke-width="2" stroke-linecap="round"/>
+  <path d="M168 65 L158 60" stroke="#FF9F43" stroke-width="2" stroke-linecap="round"/>
+</svg>

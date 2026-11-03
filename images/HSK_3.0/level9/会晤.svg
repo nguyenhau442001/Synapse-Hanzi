@@ -1,0 +1,55 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background conference room elements -->
+  <path d="M40 180 L200 180" stroke="#2A2F3B" stroke-width="2" stroke-linecap="round"/>
+  <rect x="90" y="60" width="60" height="35" rx="4" fill="#222733"/>
+  <rect x="100" y="70" width="40" height="15" rx="2" fill="#2E3646"/>
+
+  <!-- Meeting Table -->
+  <path d="M60 170 L180 170 L195 195 L45 195 Z" fill="#2C3444"/>
+  <path d="M50 195 L190 195" stroke="#3D4A61" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Left Figure (Leader 1) -->
+  <g transform="translate(65, 95)">
+    <!-- Body / Suit -->
+    <path d="M15 75 L35 75 L45 55 L25 40 L5 55 L15 75 Z" fill="#2563EB"/>
+    <!-- Shirt & Tie -->
+    <path d="M22 45 L28 45 L30 65 L20 65 Z" fill="#F8FAFC"/>
+    <polygon points="25,48 23,60 27,60" fill="#EF4444"/>
+    <!-- Head & Hair -->
+    <circle cx="25" cy="24" r="14" fill="#FDE047"/>
+    <path d="M11 22 C11 14 18 10 26 11 C34 11 39 16 39 24 C36 21 32 19 25 19 C18 19 14 21 11 22 Z" fill="#1E293B"/>
+    <!-- Profile / Facing Right -->
+    <path d="M33 22 C34 26 31 29 28 29" stroke="#EAB308" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Right Figure (Leader 2) -->
+  <g transform="translate(135, 95)">
+    <!-- Body / Suit -->
+    <path d="M25 75 L5 75 L-5 55 L15 40 L35 55 L25 75 Z" fill="#0EA5E9"/>
+    <!-- Shirt & Tie -->
+    <path d="M18 45 L22 45 L20 65 L30 65 Z" fill="#F8FAFC"/>
+    <polygon points="20,48 22,60 18,60" fill="#3B82F6"/>
+    <!-- Head & Hair -->
+    <circle cx="15" cy="24" r="14" fill="#FDE047"/>
+    <path d="M29 22 C29 14 22 10 14 11 C6 11 1 16 1 24 C4 21 8 19 15 19 C22 19 26 21 29 22 Z" fill="#334155"/>
+    <!-- Profile / Facing Left -->
+    <path d="M7 22 C6 26 9 29 12 29" stroke="#EAB308" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Handshake in the center (High-level summit gesture) -->
+  <g transform="translate(108, 130)">
+    <path d="M-5 12 L12 2 L29 12" stroke="#FDE047" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <circle cx="12" cy="7" r="5" fill="#EAB308"/>
+  </g>
+
+  <!-- Focus accent: Summit Documents on Table -->
+  <g transform="translate(102, 160)">
+    <rect x="0" y="0" width="20" height="12" rx="1" fill="#F8FAFC"/>
+    <line x1="4" y1="4" x2="12" y2="4" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="4" y1="8" x2="16" y2="8" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+    <rect x="16" y="-2" width="20" height="12" rx="1" fill="#E2E8F0" transform="rotate(12 16 -2)"/>
+  </g>
+</svg>

@@ -1,0 +1,52 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Background Glow / Focus Circle -->
+  <circle cx="120" cy="115" r="75" fill="#252A34"/>
+  <circle cx="120" cy="115" r="60" fill="#2D3542"/>
+
+  <!-- Official Desk / Podium Base -->
+  <path d="M 65 175 L 175 175 L 185 195 L 55 195 Z" fill="#3B4252"/>
+  <path d="M 70 175 L 170 175 L 170 180 L 70 180 Z" fill="#4C566A"/>
+
+  <!-- Character: Surrendering Person (Stepping forward, hands held out towards authority) -->
+  <g transform="translate(-15, 0)">
+    <!-- Body -->
+    <path d="M 95 145 C 95 130 105 120 120 120 C 135 120 145 130 145 145 L 150 175 L 90 175 Z" fill="#88C0D0"/>
+    <!-- Head -->
+    <circle cx="120" cy="102" r="14" fill="#E5E9F0"/>
+    <!-- Arms reaching forward -->
+    <path d="M 105 130 L 135 138 L 135 148 L 105 138 Z" fill="#88C0D0"/>
+  </g>
+
+  <!-- Character: Police Officer (Receiving surrender, authoritative yet welcoming posture) -->
+  <g transform="translate(25, 0)">
+    <!-- Uniform Body -->
+    <path d="M 95 145 C 95 130 105 120 120 120 C 135 120 145 130 145 145 L 150 175 L 90 175 Z" fill="#5E81AC"/>
+    <!-- Police Cap -->
+    <path d="M 106 88 L 134 88 L 138 96 L 102 96 Z" fill="#4C566A"/>
+    <ellipse cx="120" cy="90" rx="14" ry="4" fill="#3B4252"/>
+    <path d="M 112 96 L 128 96 L 132 99 L 108 99 Z" fill="#D8DEE9"/>
+    <!-- Head -->
+    <circle cx="120" cy="102" r="14" fill="#E5E9F0"/>
+    <!-- Arm reaching out to accept / guide -->
+    <path d="M 135 135 L 105 142 L 105 152 L 135 145 Z" fill="#5E81AC"/>
+  </g>
+
+  <!-- Legal / Official Document / Station Icon (Symbolizing police station / turning oneself in) -->
+  <g transform="translate(100, 35)">
+    <rect x="0" y="0" width="40" height="50" rx="4" fill="#E5E9F0"/>
+    <rect x="6" y="8" width="28" height="6" rx="2" fill="#5E81AC"/>
+    <line x1="8" y1="22" x2="28" y2="22" stroke="#4C566A" stroke-width="3" stroke-linecap="round"/>
+    <line x1="8" y1="32" x2="24" y2="32" stroke="#4C566A" stroke-width="3" stroke-linecap="round"/>
+    <!-- Acceptance Checkmark Stamp -->
+    <circle cx="28" cy="38" r="9" fill="#A3BE8C"/>
+    <path d="M 23 38 L 26 41 L 33 34" fill="none" stroke="#2E3440" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Accent Focus Glow (Gold/Orange for semantic emphasis) -->
+  <circle cx="120" cy="73" r="3" fill="#EBCB8B"/>
+  <circle cx="120" cy="73" r="6" fill="none" stroke="#EBCB8B" stroke-width="1.5" opacity="0.6"/>
+
+</svg>

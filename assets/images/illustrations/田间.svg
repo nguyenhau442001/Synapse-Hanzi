@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Sky / Sun -->
+  <circle cx="120" cy="90" r="30" fill="#2E3544" opacity="0.6"/>
+  <circle cx="170" cy="60" r="16" fill="#F59E0B" opacity="0.9"/>
+
+  <!-- Distant Hills / Horizon -->
+  <path d="M 20 120 Q 70 95 120 120 T 220 115 L 220 140 L 20 140 Z" fill="#222733"/>
+
+  <!-- Farmland Terraces / Ridges (田地) -->
+  <path d="M 20 140 L 220 140 L 230 180 L 10 180 Z" fill="#2A3425"/>
+  <path d="M 10 180 L 230 180 L 240 220 L 0 220 Z" fill="#36452F"/>
+
+  <!-- Crop Rows (Perspective lines) -->
+  <path d="M 120 140 L 40 220" stroke="#4A5D3F" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 120 140 L 90 220" stroke="#4A5D3F" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 120 140 L 150 220" stroke="#4A5D3F" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 120 140 L 200 220" stroke="#4A5D3F" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Central Focus: Detailed Green Sprout / Crops in the Field (田间) -->
+  <!-- Left Sprout -->
+  <path d="M 85 175 Q 85 160 75 155 Q 85 165 85 175 Z" fill="#10B981"/>
+  <path d="M 85 175 Q 85 158 95 153 Q 85 163 85 175 Z" fill="#34D399"/>
+  <path d="M 85 185 L 85 170" stroke="#10B981" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Center Main Sprout (Iconic physical object representing the field/crops) -->
+  <path d="M 120 165 Q 120 145 105 135 Q 120 150 120 165 Z" fill="#34D399"/>
+  <path d="M 120 165 Q 120 143 135 133 Q 120 148 120 165 Z" fill="#6EE7B7"/>
+  <path d="M 120 180 L 120 160" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Right Sprout -->
+  <path d="M 155 175 Q 155 160 145 155 Q 155 165 155 175 Z" fill="#10B981"/>
+  <path d="M 155 175 Q 155 158 165 153 Q 155 163 155 175 Z" fill="#34D399"/>
+  <path d="M 155 185 L 155 170" stroke="#10B981" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Foreground Soil Contour / Accent -->
+  <path d="M 0 215 C 60 210, 180 210, 240 215 L 240 240 L 0 240 Z" fill="#1A1D24"/>
+</svg>

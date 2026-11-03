@@ -1,0 +1,28 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Floor Perspective -->
+  <path d="M0 240 L80 160 L160 160 L240 240 Z" fill="#252932"/>
+  
+  <!-- Hallway Walls -->
+  <rect x="0" y="0" width="80" height="240" fill="#2A2F3A"/>
+  <rect x="160" y="80" width="80" height="160" fill="#2A2F3A"/>
+  
+  <!-- Doors (Closed/Empty) -->
+  <rect x="10" y="50" width="40" height="80" rx="4" fill="#363C4A"/>
+  <rect x="190" y="100" width="40" height="80" rx="4" fill="#363C4A"/>
+  
+  <!-- Ceiling Light (Off/Dim) -->
+  <rect x="90" y="0" width="60" height="10" fill="#363C4A"/>
+  
+  <!-- Single abandoned chair to emphasize emptiness -->
+  <g transform="translate(100, 170)">
+    <rect x="5" y="0" width="30" height="5" fill="#FFB800" rx="1"/>
+    <rect x="5" y="5" width="5" height="20" fill="#FFB800" rx="1"/>
+    <rect x="30" y="5" width="5" height="20" fill="#FFB800" rx="1"/>
+  </g>
+  
+  <!-- Perspective Lines -->
+  <line x1="80" y1="160" x2="120" y2="120" stroke="#3D4454" stroke-width="1"/>
+  <line x1="160" y1="160" x2="120" y2="120" stroke="#3D4454" stroke-width="1"/>
+</svg>

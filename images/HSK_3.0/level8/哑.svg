@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient background glow representing strain/voice effort -->
+  <circle cx="120" cy="115" r="70" fill="#FF5722" opacity="0.08"/>
+  <circle cx="120" cy="115" r="50" fill="#FF5722" opacity="0.12"/>
+  
+  <!-- Neck and Shoulders -->
+  <path d="M 80 180 C 80 155, 100 145, 120 145 C 140 145, 160 155, 160 180 Z" fill="#2C313C"/>
+  <path d="M 65 210 C 65 185, 90 170, 120 170 C 150 170, 175 185, 175 210 Z" fill="#242832"/>
+  
+  <!-- Head & Face (profile/semi-profile showing strain) -->
+  <path d="M 95 100 C 95 70, 110 60, 135 65 C 155 70, 165 90, 165 120 C 165 145, 150 160, 125 155 C 105 150, 95 130, 95 100 Z" fill="#3E4553"/>
+  
+  <!-- Ear -->
+  <path d="M 160 105 C 170 105, 170 125, 160 125" fill="none" stroke="#3E4553" stroke-width="5" stroke-linecap="round"/>
+  
+  <!-- Closed/Strained Eyes (showing physical exhaustion/loss of voice) -->
+  <path d="M 135 105 L 152 110" fill="none" stroke="#6C7A9C" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Eyebrow showing tension -->
+  <path d="M 133 97 L 153 100" fill="none" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Neck/Throat Area (Focal Point: Hoarseness / Strained Vocal Chords) -->
+  <!-- Throat region highlight / strain indicator -->
+  <path d="M 125 135 C 135 135, 145 140, 148 150" fill="none" stroke="#FF5722" stroke-width="5" stroke-linecap="round"/>
+  
+  <!-- Soundwaves fading out / broken / blocked at the throat -->
+  <!-- Broken sound wave arcs near neck -->
+  <path d="M 158 135 C 165 140, 165 150, 158 155" fill="none" stroke="#FF5722" stroke-width="3" stroke-linecap="round" stroke-dasharray="2, 4"/>
+  <path d="M 168 130 C 178 138, 178 152, 168 160" fill="none" stroke="#FF5722" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="3, 5" opacity="0.6"/>
+
+  <!-- Muted / Blocked symbol subtly integrated over throat -->
+  <circle cx="138" cy="142" r="12" fill="#1A1D24" stroke="#FF5722" stroke-width="3"/>
+  <line x1="130" y1="134" x2="146" y2="150" stroke="#FF5722" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Sweat drop indicating intense effort / screaming until hoarse -->
+  <path d="M 120 78 C 120 78, 115 86, 115 91 C 115 94, 117 96, 120 96 C 123 96, 125 94, 125 91 C 125 86, 120 78, 120 78 Z" fill="#4FC3F7"/>
+
+</svg>

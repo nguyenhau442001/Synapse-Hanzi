@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- The concept of "竟" (unexpectedness/surprising outcome) visualized as a quiet, unassuming person (small, grey silhouette) 
+       suddenly revealing a brilliant, heroic, and radiant inner strength (gold/orange light) in a moment of crisis. -->
+  
+  <g transform="translate(120, 120)">
+    <!-- The unassuming figure -->
+    <path d="M-20 80 L-20 30 L-35 30 L-10 -10 L15 30 L0 30 L0 80 Z" fill="#7D8590"/>
+    <circle cx="-7" cy="-20" r="12" fill="#7D8590"/>
+    
+    <!-- The unexpected heroic burst (Gold/Orange accent) -->
+    <path d="M0 -30 L15 -70 L30 -30 L70 -30 L35 -5 L50 35 L15 10 L-20 35 L-5 -5 L-40 -30 Z" fill="#FFB800">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Subtle heroic posture: Standing tall, arms slightly out to show resolve -->
+    <path d="M-30 10 L-50 40" stroke="#FFB800" stroke-width="4" stroke-linecap="round"/>
+    <path d="M30 10 L50 40" stroke="#FFB800" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

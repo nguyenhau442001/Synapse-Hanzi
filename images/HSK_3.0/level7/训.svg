@@ -1,0 +1,45 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Subtle floor shadow -->
+  <ellipse cx="120" cy="200" rx="70" ry="10" fill="#14161B"/>
+
+  <!-- Character 1: Father (Stern, standing tall, pointing/admonishing) -->
+  <g id="father">
+    <!-- Body/Torso -->
+    <path d="M75 140 L70 195 L105 195 L100 140 Z" fill="#2C3E50"/>
+    <!-- Head -->
+    <circle cx="85" cy="115" r="16" fill="#E0AC9D"/>
+    <!-- Hair -->
+    <path d="M69 113 Q85 95 101 113 Z" fill="#34495E"/>
+    <!-- Strict facial expression cues (brow) -->
+    <line x1="78" y1="111" x2="86" y2="114" stroke="#2C3E50" stroke-width="2" stroke-linecap="round"/>
+    <line x1="84" y1="114" x2="92" y2="111" stroke="#2C3E50" stroke-width="2" stroke-linecap="round"/>
+    <!-- Arm gesturing firmly (pointing forward) -->
+    <path d="M75 135 L115 145 L110 152 L78 145 Z" fill="#2C3E50"/>
+    <circle cx="117" cy="146" r="5" fill="#E0AC9D"/>
+  </g>
+
+  <!-- Character 2: Son (Regretful, head bowed, standing smaller) -->
+  <g id="son">
+    <!-- Body/Torso -->
+    <path d="M145 150 L140 195 L170 195 L165 150 Z" fill="#E67E22"/>
+    <!-- Head (bowed down) -->
+    <circle cx="150" cy="130" r="13" fill="#E0AC9D"/>
+    <!-- Hair -->
+    <path d="M137 128 Q150 115 163 128 Z" fill="#D35400"/>
+    <!-- Drooped arm -->
+    <path d="M145 155 L138 180" stroke="#E0AC9D" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Accent elements indicating stern lecture / strictness (Sharp angular lines above) -->
+  <g id="lecture-effect" stroke="#F1C40F" stroke-width="3" stroke-linecap="round">
+    <line x1="105" y1="95" x2="115" y2="85" />
+    <line x1="120" y1="90" x2="125" y2="78" />
+    <line x1="135" y1="95" x2="145" y2="85" />
+  </g>
+
+  <!-- Focal highlight ring in background -->
+  <circle cx="120" cy="130" r="75" fill="none" stroke="#2C3E50" stroke-width="2" stroke-dasharray="6 6" opacity="0.4"/>
+</svg>

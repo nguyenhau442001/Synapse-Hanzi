@@ -1,0 +1,50 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 0)">
+    <!-- Mountain Background Source -->
+    <path d="M 60 70 L 40 100 L 80 100 Z" fill="#2D3748" opacity="0.6"/>
+    <path d="M 180 70 L 160 100 L 200 100 Z" fill="#2D3748" opacity="0.6"/>
+    <!-- Snow peaks -->
+    <path d="M 60 70 L 52 82 L 68 82 Z" fill="#E2E8F0" opacity="0.8"/>
+    <path d="M 180 70 L 172 82 L 188 82 Z" fill="#E2E8F0" opacity="0.8"/>
+
+    <!-- Left River Stream -->
+    <path d="M 60 100 C 60 130, 90 140, 118 155" fill="none" stroke="#38BDF8" stroke-width="12" stroke-linecap="round"/>
+    <path d="M 60 100 C 60 130, 90 140, 118 155" fill="none" stroke="#BAE6FD" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right River Stream -->
+    <path d="M 180 100 C 180 130, 150 140, 122 155" fill="none" stroke="#38BDF8" stroke-width="12" stroke-linecap="round"/>
+    <path d="M 180 100 C 180 130, 150 140, 122 155" fill="none" stroke="#BAE6FD" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Convergence Point Glow/Ripple effect -->
+    <circle cx="120" cy="160" r="16" fill="#0284C7" opacity="0.3"/>
+    <circle cx="120" cy="160" r="10" fill="#38BDF8" opacity="0.4"/>
+
+    <!-- Main Confluence River Flowing Down -->
+    <path d="M 115 155 C 115 180, 115 190, 115 210" fill="none" stroke="#0284C7" stroke-width="22" stroke-linecap="round"/>
+    <path d="M 125 155 C 125 180, 125 190, 125 210" fill="none" stroke="#38BDF8" stroke-width="22" stroke-linecap="round"/>
+    <!-- Combined River Highlighting -->
+    <path d="M 120 157 C 120 180, 120 190, 120 210" fill="none" stroke="#E0F2FE" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Terrain banks surrounding the river confluence -->
+    <!-- Left bank top -->
+    <path d="M 20 100 Q 40 105, 60 100 L 60 85 Q 40 80, 20 85 Z" fill="#1E293B"/>
+    <!-- Right bank top -->
+    <path d="M 220 100 Q 200 105, 180 100 L 180 85 Q 200 80, 220 85 Z" fill="#1E293B"/>
+    <!-- Center wedge / landmass between the two converging rivers -->
+    <path d="M 115 130 L 125 130 L 135 150 L 105 150 Z" fill="#1E293B" opacity="0.9"/>
+    <circle cx="120" cy="138" r="3" fill="#34D399"/> <!-- Tree/nature indicator -->
+    <circle cx="115" cy="143" r="2" fill="#34D399"/>
+    <circle cx="125" cy="142" r="2.5" fill="#10B981"/>
+
+    <!-- Flow Direction Indicators (Focus Accent: Gold/Orange) -->
+    <!-- Left stream arrow -->
+    <path d="M 85 125 L 93 130 L 88 136" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Right stream arrow -->
+    <path d="M 155 125 L 147 130 L 152 136" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Downstream powerful current indicator -->
+    <path d="M 120 185 L 120 197" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 115 192 L 120 198 L 125 192" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

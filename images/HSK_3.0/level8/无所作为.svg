@@ -1,0 +1,61 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Ambient Glow -->
+  <circle cx="120" cy="120" r="80" fill="#2D333F" opacity="0.3"/>
+
+  <!-- Central Character Object: Inactive / Unproductive Persona -->
+  <g transform="translate(0, 5)">
+    <!-- Office Chair -->
+    <path d="M120 150 L120 185" stroke="#4A5568" stroke-width="6" stroke-linecap="round"/>
+    <path d="M100 185 L140 185" stroke="#4A5568" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="100" cy="188" r="4" fill="#4A5568"/>
+    <circle cx="140" cy="188" r="4" fill="#4A5568"/>
+    <!-- Chair Backrest -->
+    <path d="M90 95 L90 145 C90 152 96 158 103 158 L137 158 C144 158 150 152 150 145 L150 95 Z" fill="#2D3748"/>
+    <rect x="98" y="103" width="44" height="42" rx="4" fill="#1A202C"/>
+
+    <!-- Slumped Person Body -->
+    <!-- Torso -->
+    <path d="M96 135 C96 125 106 120 120 125 C134 120 144 125 144 135 L148 162 C148 162 135 168 120 168 C105 168 92 162 92 162 Z" fill="#4A5568"/>
+    
+    <!-- Head (Slumped forward) -->
+    <circle cx="120" cy="112" r="16" fill="#E2E8F0"/>
+    <!-- Hair -->
+    <path d="M104 112 C104 100 112 94 124 94 C136 94 136 104 136 104 L132 108 C132 108 126 100 120 100 C110 100 106 106 104 112 Z" fill="#718096"/>
+
+    <!-- Dropped / Idle Hands -->
+    <circle cx="92" cy="155" r="5" fill="#CBD5E0"/>
+    <circle cx="148" cy="155" r="5" fill="#CBD5E0"/>
+    
+    <!-- Legs crossed or hanging idly -->
+    <path d="M105 165 L95 190" stroke="#4A5568" stroke-width="7" stroke-linecap="round"/>
+    <path d="M135 165 L145 190" stroke="#4A5568" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Desk and Idle Elements -->
+  <!-- Desk Surface -->
+  <path d="M60 170 L180 170 L190 195 L50 195 Z" fill="#2D3748"/>
+  <rect x="50" y="195" width="140" height="8" rx="2" fill="#1A202C"/>
+
+  <!-- Unproductive / Blank Paper / Empty Setup -->
+  <!-- Blank Document -->
+  <rect x="130" y="162" width="28" height="20" rx="2" fill="#CBD5E0" transform="rotate(-10 130 162)"/>
+  
+  <!-- Inactive / Idle Icon Overlay: Faded Dust / Empty Symbol -->
+  <g transform="translate(120, 50)" opacity="0.8">
+    <!-- Circle Badge Outline -->
+    <circle cx="0" cy="0" r="26" fill="#2D3748" stroke="#E53E3E" stroke-width="3"/>
+    <!-- Slash / Zero Achievement Symbol -->
+    <line x1="-14" y1="14" x2="14" y2="-14" stroke="#E53E3E" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#E53E3E" stroke-width="3"/>
+  </g>
+
+  <!-- Ambient Inactivity Indicators (Dust/Empty particles) -->
+  <circle cx="75" cy="85" r="2.5" fill="#4A5568" opacity="0.6"/>
+  <circle cx="165" cy="75" r="2" fill="#4A5568" opacity="0.6"/>
+  <circle cx="155" cy="115" r="3" fill="#4A5568" opacity="0.4"/>
+  <circle cx="85" cy="125" r="1.5" fill="#4A5568" opacity="0.5"/>
+
+</svg>

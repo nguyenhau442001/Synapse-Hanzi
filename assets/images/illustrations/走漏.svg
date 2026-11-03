@@ -1,0 +1,56 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Ambient lighting/glow for leak source -->
+  <circle cx="120" cy="85" r="40" fill="#3B82F6" opacity="0.1" filter="blur(8px)"/>
+
+  <!-- Secure Document / Safe Box representing confidential information -->
+  <g transform="translate(85, 55)">
+    <!-- Folder/File Base -->
+    <rect x="0" y="15" width="70" height="50" rx="6" fill="#2D3748" stroke="#4A5568" stroke-width="2"/>
+    <path d="M 0 21 L 25 21 L 32 30 L 70 30" fill="none" stroke="#4A5568" stroke-width="2"/>
+    <rect x="12" y="27" width="46" height="32" rx="4" fill="#1A202C"/>
+    
+    <!-- Lock Icon on Document -->
+    <circle cx="35" cy="40" r="6" fill="#F59E0B"/>
+    <path d="M 32 40 L 32 44 L 38 44 L 38 40" fill="none" stroke="#1A202C" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Dynamic Leaking Action: Glowing data streams escaping downward -->
+  <g>
+    <!-- Motion lines / escape streams -->
+    <path d="M 110 115 C 110 130, 90 140, 75 160" fill="none" stroke="#3B82F6" stroke-width="3" stroke-dasharray="4 4" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" values="8;0" dur="1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 120 115 L 120 165" fill="none" stroke="#60A5FA" stroke-width="3" stroke-dasharray="5 5" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" values="10;0" dur="0.8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 130 115 C 130 130, 150 140, 165 160" fill="none" stroke="#3B82F6" stroke-width="3" stroke-dasharray="4 4" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" values="8;0" dur="1.2s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Escaping data packets / bits -->
+    <circle cx="75" cy="165" r="4" fill="#F59E0B"/>
+    <rect x="117" y="170" width="6" height="6" rx="1" fill="#3B82F6" transform="rotate(45 120 173)"/>
+    <circle cx="165" cy="165" r="3" fill="#60A5FA"/>
+  </g>
+
+  <!-- Character silhouette / Hands attempting to catch/reveal -->
+  <g transform="translate(0, 15)">
+    <!-- Lower frame context: Wall / Desk surface -->
+    <rect x="30" y="185" width="180" height="4" rx="2" fill="#2D3748"/>
+    
+    <!-- Revealing / Leaking hands motion -->
+    <path d="M 75 175 Q 95 185 105 170" fill="none" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 165 175 Q 145 185 135 170" fill="none" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Action Indicator / Spread effect -->
+    <path d="M 95 190 L 85 200" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 145 190 L 155 200" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Warning / Alert Accent Highlights -->
+  <circle cx="120" cy="50" r="3" fill="#EF4444"/>
+  <path d="M 117 40 L 123 40 L 120 34 Z" fill="#EF4444"/>
+</svg>

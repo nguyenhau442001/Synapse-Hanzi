@@ -1,0 +1,75 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle Park/Eco Pathway Background Elements -->
+  <path d="M40 200 Q 120 180 200 200" stroke="#2A2F3D" stroke-width="12" stroke-linecap="round" fill="none"/>
+  
+  <!-- Central Concept: Blossoming Flowers Scattered Everywhere (随处可见 - seen everywhere) -->
+  <!-- Flower 1 (Top Left) -->
+  <g transform="translate(65, 75)">
+    <circle cx="0" cy="0" r="14" fill="#E056FD" opacity="0.8"/>
+    <circle cx="0" cy="0" r="5" fill="#F7B731"/>
+    <path d="M0 14 L0 28" stroke="#2ED573" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Flower 2 (Top Right - Main Focal Object) -->
+  <g transform="translate(170, 65)">
+    <!-- Stem and leaves -->
+    <path d="M0 16 Q -5 30 0 45" stroke="#2ED573" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M-2 30 Q -10 25 -6 20 Z" fill="#2ED573"/>
+    <!-- Petals -->
+    <circle cx="0" cy="-10" r="9" fill="#FF4757"/>
+    <circle cx="9" cy="0" r="9" fill="#FF6B81"/>
+    <circle cx="0" cy="10" r="9" fill="#FF4757"/>
+    <circle cx="-9" cy="0" r="9" fill="#FF6B81"/>
+    <!-- Center -->
+    <circle cx="0" cy="0" r="6" fill="#FFA502"/>
+  </g>
+
+  <!-- Flower 3 (Center Left) -->
+  <g transform="translate(70, 140)">
+    <circle cx="-8" cy="-8" r="8" fill="#FFA502"/>
+    <circle cx="8" cy="-8" r="8" fill="#FF6B81"/>
+    <circle cx="-8" cy="8" r="8" fill="#FF6B81"/>
+    <circle cx="8" cy="8" r="8" fill="#FFA502"/>
+    <circle cx="0" cy="0" r="5" fill="#FFFFFF"/>
+    <path d="M0 12 L0 25" stroke="#2ED573" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Flower 4 (Center Right) -->
+  <g transform="translate(155, 150)">
+    <circle cx="0" cy="0" r="12" fill="#2ED573" opacity="0.2"/>
+    <circle cx="0" cy="-8" r="7" fill="#00D2D3"/>
+    <circle cx="7" cy="3" r="7" fill="#48DBFB"/>
+    <circle cx="-7" cy="3" r="7" fill="#00D2D3"/>
+    <circle cx="0" cy="0" r="4" fill="#FFA502"/>
+    <path d="M0 10 L0 22" stroke="#2ED573" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Flower 5 (Bottom Center) -->
+  <g transform="translate(115, 110)">
+    <!-- Main prominent blossom representing abundance -->
+    <circle cx="0" cy="-14" r="11" fill="#FF6B81"/>
+    <circle cx="13" cy="-4" r="11" fill="#FF4757"/>
+    <circle cx="8" cy="11" r="11" fill="#FF6B81"/>
+    <circle cx="-8" cy="11" r="11" fill="#FF4757"/>
+    <circle cx="-13" cy="-4" r="11" fill="#FF6B81"/>
+    <circle cx="0" cy="0" r="7" fill="#F7B731"/>
+    <!-- Stem -->
+    <path d="M0 14 Q 5 30 0 50" stroke="#2ED573" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M3 35 Q 12 30 10 24 Z" fill="#2ED573"/>
+  </g>
+
+  <!-- Small background buds/accents emphasizing "everywhere" -->
+  <circle cx="45" cy="105" r="3" fill="#FFA502" opacity="0.8"/>
+  <circle cx="195" cy="115" r="3.5" fill="#FF6B81" opacity="0.8"/>
+  <circle cx="110" cy="55" r="3" fill="#00D2D3" opacity="0.8"/>
+  <circle cx="135" cy="190" r="3" fill="#E056FD" opacity="0.8"/>
+  <circle cx="75" cy="45" r="2.5" fill="#F7B731" opacity="0.8"/>
+
+  <!-- Subtle glowing indicator points highlighting wide distribution (Omnipresence/Everywhere concept) -->
+  <circle cx="170" cy="65" r="24" fill="none" stroke="#FFA502" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.6"/>
+  <circle cx="115" cy="110" r="26" fill="none" stroke="#FF4757" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.6"/>
+  <circle cx="70" cy="140" r="22" fill="none" stroke="#2ED573" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.6"/>
+</svg>

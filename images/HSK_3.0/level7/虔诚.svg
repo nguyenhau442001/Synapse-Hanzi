@@ -1,0 +1,24 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Temple Roof Silhouette -->
+  <path d="M40 180 L120 120 L200 180 Z" fill="#2C3440"/>
+  <path d="M60 160 L120 110 L180 160 Z" fill="#3D4756"/>
+  
+  <!-- Person (The Believer) -->
+  <g transform="translate(120, 160)">
+    <!-- Body -->
+    <path d="M-20 60 L-25 20 L25 20 L20 60 Z" fill="#7D8A9E"/>
+    <!-- Head -->
+    <circle cx="0" cy="0" r="20" fill="#E0E6ED"/>
+    <!-- Hands in prayer (Gassho) -->
+    <path d="M-10 15 L-5 40 L5 40 L10 15 Z" fill="#B0B8C4"/>
+    <path d="M-8 18 L-3 38 L3 38 L8 18 Z" fill="#E0E6ED"/>
+  </g>
+  
+  <!-- Golden Accent (Incense/Light) -->
+  <circle cx="120" cy="100" r="8" fill="#FFB84D" opacity="0.8"/>
+  <path d="M120 100 L120 80" stroke="#FFB84D" stroke-width="2" stroke-linecap="round"/>
+  <path d="M120 80 L115 70" stroke="#FFB84D" stroke-width="2" stroke-linecap="round"/>
+  <path d="M120 80 L125 70" stroke="#FFB84D" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,78 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background workshop atmosphere elements (structured shelf and organized items) -->
+  <g opacity="0.3">
+    <!-- Storage shelf structure -->
+    <rect x="30" y="50" width="180" height="6" rx="3" fill="#2E3440"/>
+    <rect x="30" y="110" width="180" height="6" rx="3" fill="#2E3440"/>
+    
+    <!-- Organized tool/box silhouettes on shelves -->
+    <rect x="45" y="30" width="20" height="20" rx="4" fill="#4C566A"/>
+    <rect x="75" y="26" width="30" height="24" rx="4" fill="#4C566A"/>
+    <rect x="150" y="28" width="25" height="22" rx="4" fill="#4C566A"/>
+    
+    <rect x="45" y="85" width="25" height="25" rx="4" fill="#4C566A"/>
+    <rect x="80" y="90" width="18" height="20" rx="3" fill="#4C566A"/>
+    <rect x="170" y="82" width="22" height="28" rx="4" fill="#4C566A"/>
+  </g>
+
+  <!-- Floor line -->
+  <line x1="20" y1="200" x2="220" y2="200" stroke="#2E3440" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Main Character (Diligent/勤快 worker cleaning/organizing swiftly) -->
+  <g transform="translate(0, 5)">
+    <!-- Motion lines representing swiftness/dexterity (手脚勤快) -->
+    <path d="M75 145 C 65 135, 60 120, 68 110" stroke="#D08770" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 4" fill="none" opacity="0.8"/>
+    <path d="M165 145 C 175 135, 180 120, 172 110" stroke="#D08770" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 4" fill="none" opacity="0.8"/>
+
+    <!-- Legs (active, dynamic stance) -->
+    <path d="M105 155 L90 195 C 88 199, 93 202, 97 199 L115 160" fill="#4C566A"/>
+    <path d="M135 155 L150 195 C 152 199, 147 202, 143 199 L125 160" fill="#4C566A"/>
+    <!-- Boots -->
+    <path d="M85 197 C 85 195, 95 195, 100 197 L102 201 C 102 203, 90 203, 85 201 Z" fill="#D08770"/>
+    <path d="M140 197 C 140 195, 150 195, 155 197 L157 201 C 157 203, 145 203, 140 201 Z" fill="#D08770"/>
+
+    <!-- Torso (Worker uniform in modern dark theme style with warm accent) -->
+    <path d="M100 110 L140 110 L145 160 L95 160 Z" fill="#3B4252"/>
+    <!-- Tool belt / Apron accent -->
+    <rect x="95" y="145" width="50" height="12" rx="3" fill="#D08770"/>
+
+    <!-- Head & Cap -->
+    <circle cx="120" cy="85" r="18" fill="#ECEFF4"/>
+    <!-- Cap / Hair -->
+    <path d="M101 82 C 101 70, 139 70, 139 82 L139 88 C 139 88, 120 90, 101 88 Z" fill="#5E81AC"/>
+    <path d="M135 80 L148 83 L135 86 Z" fill="#5E81AC"/> <!-- Cap brim -->
+    <!-- Determined/cheerful face expression -->
+    <circle cx="126" cy="86" r="1.5" fill="#2E3440"/>
+    <path d="M123 93 C 125 95, 127 95, 129 93" stroke="#2E3440" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Arms in dynamic cleaning motion (手脚勤快) -->
+    <!-- Left arm reaching down/cleaning -->
+    <path d="M102 115 L72 145" stroke="#3B4252" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="68" cy="148" r="5" fill="#ECEFF4"/>
+
+    <!-- Right arm sweeping/wiping -->
+    <path d="M138 115 L168 135" stroke="#3B4252" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="172" cy="138" r="5" fill="#ECEFF4"/>
+  </g>
+
+  <!-- Organized elements being handled (Wiping cloth & neatly aligned gear box) -->
+  <!-- Cleaning cloth held in hand -->
+  <path d="M62 145 C 58 140, 72 135, 78 142 C 84 149, 70 156, 62 145 Z" fill="#EBCB8B"/>
+
+  <!-- Neatly arranged toolbox/crate on the floor showing "井井有条" result -->
+  <g transform="translate(145, 160)">
+    <rect x="0" y="15" width="40" height="25" rx="4" fill="#88C0D0"/>
+    <!-- Box latch -->
+    <rect x="17" y="20" width="6" height="4" rx="2" fill="#EBCB8B"/>
+    <!-- Sparkle/Success accent denoting tidy/efficient work -->
+    <path d="M 45 5 L 47 10 L 52 12 L 47 14 L 45 19 L 43 14 L 38 12 L 43 10 Z" fill="#EBCB8B"/>
+  </g>
+
+  <!-- Secondary sparkle/efficiency indicator -->
+  <g transform="translate(35, 115) scale(0.7)">
+    <path d="M 20 2 L 21.5 7.5 L 27 9 L 21.5 10.5 L 20 16 L 18.5 10.5 L 13 9 L 18.5 7.5 Z" fill="#EBCB8B"/>
+  </g>
+</svg>

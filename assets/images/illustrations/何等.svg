@@ -1,0 +1,52 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Motion lines indicating intense emotional surge and dramatic reunion -->
+  <g opacity="0.3">
+    <path d="M 60 70 Q 90 50 120 70" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 6"/>
+    <path d="M 180 70 Q 150 50 120 70" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 6"/>
+    <path d="M 50 100 Q 80 80 110 100" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 190 100 Q 160 80 130 100" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Radiating emotional burst/intensity aura -->
+  <circle cx="120" cy="120" r="70" fill="none" stroke="#F59E0B" stroke-width="1" opacity="0.15" stroke-dasharray="6 6"/>
+  <circle cx="120" cy="120" r="85" fill="none" stroke="#F59E0B" stroke-width="1" opacity="0.08"/>
+
+  <!-- Character 1 (Left - Embracing tightly) -->
+  <g id="character-left">
+    <!-- Body & Torso -->
+    <path d="M 85 180 L 95 130 C 95 115 105 110 110 115 L 125 140 L 115 190 Z" fill="#3B82F6"/>
+    <!-- Head -->
+    <circle cx="95" cy="98" r="14" fill="#FDE047"/>
+    <!-- Hair -->
+    <path d="M 81 95 C 81 85 95 82 105 90 C 109 93 110 98 110 98 L 81 98 Z" fill="#1E293B"/>
+    <!-- Arm wrapping around -->
+    <path d="M 98 128 C 115 125 135 135 145 145 C 150 150 145 155 140 155 C 130 150 115 140 98 138 Z" fill="#3B82F6"/>
+  </g>
+
+  <!-- Character 2 (Right - Embracing tightly, showing immense emotional relief) -->
+  <g id="character-right">
+    <!-- Body & Torso -->
+    <path d="M 155 180 L 145 130 C 145 115 135 110 130 115 L 115 140 L 125 190 Z" fill="#EC4899"/>
+    <!-- Head (Tilted inward against the other, expressing deep emotional impact) -->
+    <circle cx="145" cy="96" r="14" fill="#FDE047"/>
+    <!-- Hair -->
+    <path d="M 159 93 C 159 83 145 80 135 88 C 131 91 130 96 130 96 L 159 96 Z" fill="#1E293B"/>
+    <!-- Arm wrapping around -->
+    <path d="M 142 128 C 125 125 105 135 95 145 C 90 150 95 155 100 155 C 110 150 125 140 142 138 Z" fill="#EC4899"/>
+  </g>
+
+  <!-- Central dynamic action touchpoint (Tight embrace center) -->
+  <circle cx="120" cy="135" r="8" fill="#F59E0B" opacity="0.9"/>
+  <path d="M 120 123 L 122 133 L 132 135 L 122 137 L 120 147 L 118 137 L 108 135 L 118 133 Z" fill="#FEF08A" transform="scale(0.6) translate(80, 80)"/>
+
+  <!-- Accent lighting / Sparkles representing overwhelming intensity ("何等") -->
+  <g fill="#F59E0B">
+    <circle cx="85" cy="65" r="3"/>
+    <circle cx="155" cy="65" r="2"/>
+    <circle cx="135" cy="45" r="2.5"/>
+    <circle cx="105" cy="50" r="1.5"/>
+  </g>
+</svg>

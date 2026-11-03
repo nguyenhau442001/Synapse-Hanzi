@@ -1,0 +1,47 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <g transform="translate(0, 5)">
+    <!-- Shadow for piggy bank -->
+    <ellipse cx="120" cy="180" rx="60" ry="12" fill="#111318"/>
+    
+    <!-- Piggy Bank Body (Rounded vibrant ceramic jar/pig) -->
+    <path d="M 75 140 C 65 110, 70 85, 95 75 C 105 71, 135 71, 145 75 C 170 85, 175 110, 165 140 C 160 155, 150 170, 120 170 C 90 170, 80 155, 75 140 Z" fill="#E05638"/>
+    
+    <!-- Piggy Bank Snout -->
+    <ellipse cx="120" cy="120" rx="16" ry="11" fill="#F27254"/>
+    <circle cx="114" cy="120" rx="2.5" fill="#B83A20"/>
+    <circle cx="126" cy="120" rx="2.5" fill="#B83A20"/>
+    
+    <!-- Piggy Bank Eye -->
+    <circle cx="138" cy="98" rx="3.5" fill="#2A2E39"/>
+    
+    <!-- Piggy Bank Ear -->
+    <path d="M 142 78 L 156 64 L 148 88 Z" fill="#C7452A"/>
+    
+    <!-- Piggy Bank Feet -->
+    <rect x="88" y="165" width="14" height="15" rx="5" fill="#B83A20"/>
+    <rect x="138" y="165" width="14" height="15" rx="5" fill="#B83A20"/>
+    
+    <!-- Gold Coins Stacked Inside / Beside (Accumulated Wealth / Savings) -->
+    <!-- Coin 1 (Base) -->
+    <ellipse cx="120" cy="71" rx="28" ry="6" fill="#D4AF37"/>
+    <path d="M 92 71 L 92 78 C 92 84, 148 84, 148 78 L 148 71 Z" fill="#AA8C2C"/>
+    <ellipse cx="120" cy="78" rx="28" ry="6" fill="#F4D06F"/>
+    
+    <!-- Coin slot -->
+    <rect x="110" y="68" width="20" height="3" rx="1.5" fill="#8C7324"/>
+
+    <!-- Falling/Inserting Coin -->
+    <g transform="translate(0, -15) rotate(-15 120 40)">
+      <ellipse cx="120" cy="40" rx="22" ry="5" fill="#F4D06F"/>
+      <path d="M 98 40 L 98 45 C 98 49, 142 49, 142 45 L 142 40 Z" fill="#D4AF37"/>
+      <ellipse cx="120" cy="45" rx="22" ry="5" fill="#F7E28E"/>
+    </g>
+
+    <!-- Sparkles indicating value and accumulation -->
+    <path d="M 70 95 L 73 102 L 80 105 L 73 108 L 70 115 L 67 108 L 60 105 L 67 102 Z" fill="#F4D06F"/>
+    <path d="M 175 75 L 177 80 L 182 82 L 177 84 L 175 89 L 173 84 L 168 82 L 173 80 Z" fill="#F4D06F"/>
+    <path d="M 165 130 L 166.5 133.5 L 170 135 L 166.5 136.5 L 165 140 L 163.5 136.5 L 160 135 L 163.5 133.5 Z" fill="#F4D06F"/>
+  </g>
+</svg>

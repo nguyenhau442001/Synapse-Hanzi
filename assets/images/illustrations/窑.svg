@@ -1,0 +1,20 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Kiln Structure -->
+  <path d="M70 180 L170 180 L160 100 Q120 70 80 100 Z" fill="#3A3F4B" stroke="#FFB84D" stroke-width="3" stroke-linejoin="round"/>
+  
+  <!-- Kiln Opening -->
+  <path d="M100 180 L100 140 Q120 125 140 140 L140 180 Z" fill="#1A1D24" stroke="#FFB84D" stroke-width="3"/>
+  
+  <!-- Fire/Heat inside -->
+  <path d="M110 175 Q120 160 130 175 Z" fill="#FF8C00" opacity="0.8"/>
+  <path d="M115 170 Q120 155 125 170 Z" fill="#FFD700" opacity="0.9"/>
+  
+  <!-- Ceramic Vase inside (visible through opening) -->
+  <path d="M115 150 C110 150 110 165 120 165 C130 165 130 150 125 150 Z" fill="#87CEEB" stroke="#1A1D24" stroke-width="1"/>
+  
+  <!-- Smoke/Steam -->
+  <path d="M120 90 Q125 70 115 50" stroke="#4A5568" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M130 95 Q135 75 125 55" stroke="#4A5568" stroke-width="4" stroke-linecap="round" fill="none"/>
+</svg>

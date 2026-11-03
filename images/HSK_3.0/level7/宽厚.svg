@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Visual Metaphor: A large, expansive, open-armed figure (representing '宽' - wide/broad) 
+       gently supporting a smaller figure (representing '厚' - thick/solid/kindness), 
+       emphasizing emotional scale and stability. -->
+  
+  <!-- Large, calm, supportive figure (The 'Broad' aspect) -->
+  <path d="M60 180 C60 140, 90 110, 120 110 C150 110, 180 140, 180 180" fill="#FFB84D" opacity="0.3"/>
+  <circle cx="120" cy="95" r="25" fill="#FFB84D"/>
+  
+  <!-- Smaller figure (The 'Recipient' of kindness) -->
+  <circle cx="120" cy="150" r="15" fill="#E0E0E0"/>
+  <path d="M105 165 L105 200 M135 165 L135 200" stroke="#E0E0E0" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Open arms gesture of the large figure -->
+  <path d="M70 130 Q120 100 170 130" stroke="#FFB84D" stroke-width="8" stroke-linecap="round" fill="none"/>
+  
+  <!-- Ground/Base for stability -->
+  <path d="M40 210 L200 210" stroke="#4A5568" stroke-width="4" stroke-linecap="round"/>
+</svg>

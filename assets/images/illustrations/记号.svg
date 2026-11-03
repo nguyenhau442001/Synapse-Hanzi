@@ -1,0 +1,47 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background Forest Elements (Dark, subtle silhouettes) -->
+  <path d="M40 200 L40 120 L25 150 L35 150 L20 180 L30 180 L15 210 L65 210 Z" fill="#242832" opacity="0.6"/>
+  <path d="M200 200 L200 100 L180 135 L195 135 L175 170 L190 170 L170 210 L215 210 Z" fill="#242832" opacity="0.6"/>
+
+  <!-- Main Tree Trunk (Foreground) -->
+  <rect x="90" y="30" width="60" height="180" rx="8" fill="#2C323D"/>
+  
+  <!-- Tree Bark Texture Lines -->
+  <path d="M105 50 C115 65 100 80 110 100" stroke="#232730" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M130 120 C120 135 135 150 125 170" stroke="#232730" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M100 160 C110 175 105 190 115 205" stroke="#232730" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Moss / Foliage details on trunk -->
+  <path d="M90 70 Q95 75 90 85 Z" fill="#364135"/>
+  <path d="M140 145 Q150 155 142 165 Z" fill="#364135"/>
+
+  <!-- THE KEY OBJECT: Red Ribbon Marker (记号) tied around the tree -->
+  <g filter="drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4))">
+    <!-- Ribbon wrapping around the back (darker red) -->
+    <path d="M 90 100 Q 120 115 150 100" stroke="#B91C1C" stroke-width="12" fill="none" stroke-linecap="round"/>
+    
+    <!-- Ribbon front knot -->
+    <ellipse cx="120" cy="107" rx="8" ry="6" fill="#EF4444"/>
+    <ellipse cx="120" cy="107" rx="5" ry="3" fill="#F87171"/>
+
+    <!-- Ribbon loops (Left and Right) -->
+    <path d="M 115 105 C 100 90 95 110 112 113 Z" fill="#EF4444"/>
+    <path d="M 125 105 C 140 90 145 110 128 113 Z" fill="#EF4444"/>
+
+    <!-- Ribbon tails hanging down dynamically -->
+    <path d="M 117 111 Q 110 140 95 155" stroke="#EF4444" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <path d="M 117 111 Q 110 140 95 155" stroke="#F87171" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.4"/>
+    
+    <path d="M 123 111 Q 135 135 145 150" stroke="#DC2626" stroke-width="9" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Focused Lighting Effect (Subtle glow behind the ribbon) -->
+  <circle cx="120" cy="110" r="35" fill="#EF4444" opacity="0.1" filter="blur(8px)"/>
+
+  <!-- Ambient floor grass/foliage -->
+  <path d="M70 210 Q80 195 90 210" stroke="#242832" stroke-width="3" fill="none"/>
+  <path d="M150 210 Q165 190 175 210" stroke="#242832" stroke-width="3" fill="none"/>
+</svg>

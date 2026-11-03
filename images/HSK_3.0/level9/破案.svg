@@ -1,0 +1,48 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Subtle background glowing focus effect -->
+  <circle cx="120" cy="115" r="75" fill="#252A34" opacity="0.6"/>
+
+  <!-- Evidence Board / Case File Background Element -->
+  <g transform="translate(45, 45)">
+    <!-- Document outline -->
+    <rect x="10" y="10" width="130" height="150" rx="4" fill="#222733" stroke="#333B4D" stroke-width="2"/>
+    <!-- Mock case file lines -->
+    <line x1="22" y1="26" x2="70" y2="26" stroke="#3B4459" stroke-width="4" stroke-linecap="round"/>
+    <line x1="22" y1="42" x2="110" y2="42" stroke="#2A313F" stroke-width="3" stroke-linecap="round"/>
+    <line x1="22" y1="56" x2="95" y2="56" stroke="#2A313F" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Red connection string and pin elements (classic detective board trope) -->
+    <circle cx="95" cy="85" r="4" fill="#E65F2B"/>
+    <circle cx="45" cy="120" r="4" fill="#E65F2B"/>
+    <line x1="95" y1="85" x2="45" y2="120" stroke="#E65F2B" stroke-width="2" opacity="0.8"/>
+  </g>
+
+  <!-- Dynamic Action: Magnifying Glass Revealing the Clue (破案 - Solving the case) -->
+  <!-- Motion lines indicating active discovery/search -->
+  <path d="M 60 70 L 45 55" stroke="#E65F2B" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 175 160 L 190 175" stroke="#E65F2B" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 185 70 L 200 55" stroke="#F1C40F" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Glowing core discovery element (Thumbprint / Solution marker under glass) -->
+  <circle cx="115" cy="115" r="28" fill="#1E232E" stroke="#333B4D" stroke-width="2"/>
+  
+  <!-- Stylized fingerprint / solved evidence icon in gold accent -->
+  <path d="M 105 110 C 105 103, 125 103, 125 110 C 125 117, 107 116, 112 124 C 114 127, 119 127, 121 124" 
+        stroke="#F1C40F" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M 100 105 C 98 112, 100 123, 111 129" 
+        stroke="#F1C40F" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+
+  <!-- Sleek Modern Magnifying Glass held dynamically -->
+  <!-- Glass rim -->
+  <circle cx="115" cy="115" r="42" fill="none" stroke="#E65F2B" stroke-width="6"/>
+  <!-- Glass reflection highlight -->
+  <path d="M 87 93 A 42 42 0 0 1 115 73" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Handle -->
+  <path d="M 144 144 L 178 178" stroke="#333B4D" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 144 144 L 178 178" stroke="#E65F2B" stroke-width="6" stroke-linecap="round"/>
+
+</svg>

@@ -1,0 +1,19 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Brain structure -->
+  <g transform="translate(120, 120)">
+    <!-- Left side: Healthy/Structured -->
+    <path d="M-10 -60 C -50 -60 -70 -30 -70 10 C -70 50 -40 70 -10 70 L -10 -60 Z" fill="#4A90E2"/>
+    <path d="M-20 -40 C -40 -40 -50 -20 -50 0 C -50 20 -40 40 -20 40 L -20 -40 Z" fill="#2C3E50"/>
+    
+    <!-- Right side: Degenerated/Fragmented -->
+    <path d="M10 -60 L 70 -60 L 70 10 C 70 50 40 70 10 70 L 10 -60 Z" fill="#F39C12" opacity="0.6"/>
+    <path d="M20 -30 L 50 -30 L 55 -10 L 25 -10 Z" fill="#D35400"/>
+    <path d="M20 10 L 45 10 L 50 30 L 25 30 Z" fill="#D35400"/>
+    <path d="M20 50 L 35 50 L 40 65 L 25 65 Z" fill="#D35400"/>
+    
+    <!-- Dividing line -->
+    <line x1="0" y1="-70" x2="0" y2="80" stroke="#7F8C8D" stroke-width="2" stroke-dasharray="4 4"/>
+  </g>
+</svg>

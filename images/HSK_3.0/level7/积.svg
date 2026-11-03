@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Roof structure -->
+  <path d="M40 120 L120 60 L200 120" fill="none" stroke="#5D6D7E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="40" y="120" width="160" height="20" fill="#34495E" rx="2"/>
+  
+  <!-- Accumulated snow on roof -->
+  <path d="M40 120 C 60 90, 180 90, 200 120 C 180 105, 60 105, 40 120 Z" fill="#E8F6F3" opacity="0.9"/>
+  <path d="M50 115 C 70 85, 170 85, 190 115 C 170 100, 70 100, 50 115 Z" fill="#FFFFFF"/>
+  
+  <!-- Branch -->
+  <path d="M70 180 L100 160 L130 180 L160 160 L190 180" fill="none" stroke="#7F8C8D" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Accumulated snow on branches -->
+  <ellipse cx="100" cy="160" rx="25" ry="12" fill="#E8F6F3"/>
+  <ellipse cx="160" cy="160" rx="25" ry="12" fill="#E8F6F3"/>
+  <ellipse cx="100" cy="160" rx="15" ry="8" fill="#FFFFFF"/>
+  <ellipse cx="160" cy="160" rx="15" ry="8" fill="#FFFFFF"/>
+  
+  <!-- Falling snow accents -->
+  <circle cx="180" cy="80" r="2" fill="#BDC3C7"/>
+  <circle cx="60" cy="70" r="2" fill="#BDC3C7"/>
+  <circle cx="120" cy="90" r="2" fill="#BDC3C7"/>
+  <circle cx="210" cy="140" r="2" fill="#BDC3C7"/>
+</svg>

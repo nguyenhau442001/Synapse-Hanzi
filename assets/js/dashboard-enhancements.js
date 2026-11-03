@@ -28,26 +28,38 @@ function renderDashboardEnhancements() {
   const continuation = document.getElementById('continueLearningCard');
   const summary = learningProgressSummary();
   const target = summary.target;
+  const courseFill = document.getElementById('continueLearningFill');
   if (continuation) {
     if (summary.totalStudied === 0) {
-      document.getElementById('continueLearningTitle').textContent = 'Bắt đầu HSK 1';
-      document.getElementById('continueLearningProgress').textContent = '150 từ nền tảng · Flashcard thông minh';
+      const titleEl = document.getElementById('continueLearningTitle');
+      if (titleEl) titleEl.textContent = 'Bắt đầu HSK 1';
+      const progEl = document.getElementById('continueLearningProgress');
+      if (progEl) progEl.textContent = '150 từ nền tảng · Flashcard thông minh';
       const ctaBtn = continuation.querySelector('.dashboard-primary-btn');
       if (ctaBtn) {
-        ctaBtn.innerHTML = `Học ngay <span aria-hidden="true">→</span>`;
+        ctaBtn.innerHTML = `<span>Bắt đầu HSK 1</span> <span aria-hidden="true">➔</span>`;
+      }
+      if (courseFill) {
+        courseFill.style.width = '0%';
       }
       continuation.dataset.level = 'hsk1';
     } else if (target) {
       const cfg = LEVELS[target.level];
       const ratio = `${target.known.toLocaleString('vi-VN')} / ${cfg.total.toLocaleString('vi-VN')} từ`;
+      const pctNum = Math.min(100, Math.round((target.known / cfg.total) * 100));
       const pctStr = typeof formatProgressPercent === 'function'
         ? formatProgressPercent(target.known, cfg.total)
-        : `${Math.round(target.known / cfg.total * 100)}%`;
-      document.getElementById('continueLearningTitle').textContent = `Học tiếp ${cfg.label}`;
-      document.getElementById('continueLearningProgress').textContent = `${ratio} · ${pctStr} hoàn thành`;
+        : `${pctNum}%`;
+      const titleEl = document.getElementById('continueLearningTitle');
+      if (titleEl) titleEl.textContent = `Học tiếp ${cfg.label}`;
+      const progEl = document.getElementById('continueLearningProgress');
+      if (progEl) progEl.textContent = `${ratio} · ${pctStr} hoàn thành`;
+      if (courseFill) {
+        courseFill.style.width = pctNum + '%';
+      }
       const ctaBtn = continuation.querySelector('.dashboard-primary-btn');
       if (ctaBtn) {
-        ctaBtn.innerHTML = `Học ngay <span aria-hidden="true">→</span>`;
+        ctaBtn.innerHTML = `<span>Tiếp tục ${cfg.label}</span> <span aria-hidden="true">➔</span>`;
       }
       continuation.dataset.level = target.level;
     }
@@ -126,17 +138,14 @@ function renderDashboardEnhancements() {
 }
 
 function initDashboardSidebar() {
-  const desktopQuery = window.matchMedia('(min-width: 1280px)');
-  const placeReviewCard = isDesktop => {
-    const card = document.getElementById('hwForgotten');
-    if (!card) return;
-    const parent = isDesktop
-      ? document.getElementById('workstationLeft')
-      : (document.getElementById('mobileDockDialogBody') || document.getElementById('homeWidgets'));
-    if (parent) parent.appendChild(card);
-  };
-  placeReviewCard(desktopQuery.matches);
-  desktopQuery.addEventListener('change', event => placeReviewCard(event.matches));
+  const card = document.getElementById('hwForgotten');
+  if (card) {
+    const drawerUrgent = document.getElementById('quickDrawerUrgentPane');
+    if (drawerUrgent) {
+      // Urgent cards are rendered into drawer list
+      card.style.display = 'none';
+    }
+  }
   renderDashboardEnhancements();
 }
 

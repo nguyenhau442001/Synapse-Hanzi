@@ -1,0 +1,18 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Envelope Body -->
+  <path d="M60 80h120v90H60z" fill="#2D343E" stroke="#FFB84D" stroke-width="3" stroke-linejoin="round"/>
+  
+  <!-- Envelope Flap -->
+  <path d="M60 80l60 45 60-45" fill="none" stroke="#FFB84D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Seal/Wax Stamp -->
+  <circle cx="120" cy="125" r="12" fill="#FFB84D"/>
+  <path d="M112 125h16M120 117v16" stroke="#1A1D24" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Letter emerging -->
+  <rect x="70" y="60" width="100" height="30" rx="4" fill="#E0E6ED"/>
+  <line x1="80" y1="70" x2="150" y2="70" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+  <line x1="80" y1="80" x2="130" y2="80" stroke="#1A1D24" stroke-width="2" stroke-linecap="round"/>
+</svg>

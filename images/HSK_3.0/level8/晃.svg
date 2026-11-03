@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Water surface -->
+  <path d="M0 160 Q 60 150, 120 160 T 240 160 L 240 240 L 0 240 Z" fill="#2C3E50"/>
+  <path d="M0 160 Q 60 150, 120 160 T 240 160" stroke="#3498DB" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+  
+  <!-- Boat -->
+  <g transform="rotate(-8 120 160)">
+    <path d="M70 160 L 170 160 L 160 190 L 80 190 Z" fill="#D35400"/>
+    <path d="M80 190 L 160 190 L 150 200 L 90 200 Z" fill="#A04000"/>
+    <!-- Mast -->
+    <rect x="120" y="130" width="4" height="30" fill="#BDC3C7"/>
+    <!-- Sail -->
+    <path d="M124 130 L 150 150 L 124 160 Z" fill="#F1C40F"/>
+  </g>
+  
+  <!-- Motion lines -->
+  <path d="M60 155 Q 70 145 80 155" stroke="#F1C40F" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M160 155 Q 170 145 180 155" stroke="#F1C40F" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

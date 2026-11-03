@@ -1,0 +1,59 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Ambient glow / shadow for depth -->
+  <ellipse cx="120" cy="190" rx="70" ry="12" fill="#0E1015" opacity="0.6"/>
+
+  <!-- Document / Report Base (The physical object representing "撰写" / drafting a report) -->
+  <g transform="translate(64, 45)">
+    <!-- Document shadow -->
+    <rect x="4" y="6" width="104" height="135" rx="8" fill="#121418"/>
+    
+    <!-- Main Paper Sheet -->
+    <rect width="104" height="135" rx="8" fill="#F0F3F6"/>
+    
+    <!-- Paper Header Accent -->
+    <rect x="16" y="18" width="40" height="6" rx="3" fill="#3B82F6"/>
+    <rect x="62" y="18" width="26" height="6" rx="3" fill="#D1D5DB"/>
+    
+    <!-- Content lines representing the drafted text -->
+    <rect x="16" y="38" width="72" height="4" rx="2" fill="#D1D5DB"/>
+    <rect x="16" y="48" width="56" height="4" rx="2" fill="#D1D5DB"/>
+    
+    <!-- Chart / Graphic element in report -->
+    <rect x="16" y="66" width="72" height="32" rx="4" fill="#E5E7EB"/>
+    <rect x="24" y="82" width="10" height="10" rx="2" fill="#60A5FA"/>
+    <rect x="38" y="76" width="10" height="16" rx="2" fill="#3B82F6"/>
+    <rect x="52" y="72" width="10" height="20" rx="2" fill="#2563EB"/>
+    <rect x="66" y="78" width="10" height="14" rx="2" fill="#60A5FA"/>
+
+    <!-- More text lines -->
+    <rect x="16" y="112" width="64" height="4" rx="2" fill="#D1D5DB"/>
+    <rect x="16" y="122" width="45" height="4" rx="2" fill="#D1D5DB"/>
+  </g>
+
+  <!-- Modern Pen / Stylus actively writing (Focus accent color: Gold/Orange) -->
+  <g transform="translate(130, 40) rotate(25)">
+    <!-- Pen Shadow -->
+    <path d="M 12 0 L 22 120 L 2 120 Z" fill="#000000" opacity="0.2" transform="translate(4, 4)"/>
+    
+    <!-- Pen Upper Body -->
+    <path d="M 8 0 C 12 0 16 4 16 10 L 16 45 L 4 45 L 4 10 C 4 4 8 0 12 0 Z" fill="#F59E0B"/>
+    
+    <!-- Pen Grip Section -->
+    <rect x="4" y="45" width="12" height="40" fill="#1E293B"/>
+    <line x1="4" y1="53" x2="16" y2="53" stroke="#334155" stroke-width="2"/>
+    <line x1="4" y1="63" x2="16" y2="63" stroke="#334155" stroke-width="2"/>
+    <line x1="4" y1="73" x2="16" y2="73" stroke="#334155" stroke-width="2"/>
+    
+    <!-- Pen Lower Cone -->
+    <path d="M 4 85 L 16 85 L 12 115 C 10 118 10 118 8 115 Z" fill="#D97706"/>
+    
+    <!-- Pen Nib -->
+    <path d="M 8 115 L 12 115 L 10 125 Z" fill="#E2E8F0"/>
+    
+    <!-- Writing Ink Spark / Dynamic Tip -->
+    <circle cx="10" cy="125" r="2.5" fill="#60A5FA"/>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+<svg width="240" height="240" viewBox="0 0 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Studio background ambient light circle -->
+  <circle cx="120" cy="120" r="80" fill="#222733" opacity="0.6"/>
+
+  <!-- Palette base (The physical object representing the noun/substance tool context) -->
+  <path d="M70,140 C70,105 95,85 125,85 C165,85 185,110 185,140 C185,165 170,185 145,185 C130,185 125,175 115,175 C105,175 100,185 85,185 C75,185 70,165 70,140 Z" fill="#2A303C" stroke="#3A4354" stroke-width="3" stroke-linejoin="round"/>
+  
+  <!-- Thumb hole -->
+  <ellipse cx="145" cy="150" rx="12" ry="16" fill="#1A1D24"/>
+
+  <!-- Paint blobs on palette (Vibrant colors to show "颜料") -->
+  <circle cx="95" cy="115" r="10" fill="#E65100"/>
+  <circle cx="120" cy="100" r="11" fill="#FBC02D"/>
+  <circle cx="155" cy="110" r="9" fill="#00ACC1"/>
+  <circle cx="168" cy="135" r="10" fill="#43A047"/>
+
+  <!-- Paintbrush handle, angled dynamically across the composition -->
+  <g transform="rotate(-35 110 120)">
+    <!-- Metal ferrule -->
+    <rect x="75" y="113" width="18" height="14" rx="3" fill="#B0BEC5"/>
+    <rect x="80" y="113" width="6" height="14" fill="#CFD8DC"/>
+    
+    <!-- Wooden handle -->
+    <path d="M 25,116 L 75,116 L 75,127 L 25,127 Z" fill="#D7CCC8"/>
+    <path d="M 15,116 L 25,116 L 25,127 L 15,127 Z" fill="#8D6E63" rx="2"/>
+    <path d="M 10,121 C 10,119 12,116 15,116 L 15,127 C 12,127 10,124 10,121 Z" fill="#6D4C41"/>
+
+    <!-- Brush bristles -->
+    <path d="M 93,113 C 98,113 103,116 107,120 C 103,124 98,127 93,127 Z" fill="#546E7A"/>
+  </g>
+
+  <!-- Smooth stroke application arc (Visualizing "涂均匀" - spreading pigment evenly) -->
+  <path d="M 90,145 Q 120,165 155,140" fill="none" stroke="#FFB74D" stroke-width="7" stroke-linecap="round" opacity="0.9"/>
+  <!-- Glowing spreading effect/particles -->
+  <circle cx="105" cy="153" r="3" fill="#FFE082"/>
+  <circle cx="127" cy="158" r="4" fill="#FFB74D"/>
+  <circle cx="143" cy="150" r="2.5" fill="#FFE082"/>
+
+</svg>

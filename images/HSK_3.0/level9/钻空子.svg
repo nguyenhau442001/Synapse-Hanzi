@@ -1,0 +1,54 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Background decorative tech grid/lines representing "rules/system" -->
+  <g stroke="#2A2F3D" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6">
+    <line x1="40" y1="60" x2="200" y2="60"/>
+    <line x1="40" y1="120" x2="200" y2="120"/>
+    <line x1="40" y1="180" x2="200" y2="180"/>
+  </g>
+
+  <!-- The "System/Wall" (representing laws, rules, regulations) -->
+  <g id="system-wall">
+    <!-- Main Wall Block -->
+    <rect x="70" y="50" width="100" height="140" rx="6" fill="#2E3646" stroke="#46526D" stroke-width="2"/>
+    
+    <!-- Shield/Legal Emblem engraved on the wall -->
+    <path d="M120 70 L145 82 V110 C145 130 120 145 120 145 C120 145 95 130 95 110 V82 Z" fill="#1E2430" stroke="#5A6B8A" stroke-width="2"/>
+  </g>
+
+  <!-- The "Loophole" (The gap/flaw in the rules) -->
+  <g id="loophole">
+    <!-- Glowing cutout exposing the inside / loophole -->
+    <rect x="110" y="105" width="20" height="40" rx="4" fill="#1A1D24"/>
+    <!-- Highlight edges of the gap -->
+    <rect x="111" y="106" width="18" height="38" rx="3" fill="#0D1015"/>
+    <path d="M110 105 V145" stroke="#FF9F43" stroke-width="2" stroke-linecap="round"/>
+    <path d="M130 105 V145" stroke="#FF9F43" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- The "Exploiter/Intruder" (representing the cunning actor slipping through) -->
+  <g id="exploiter-figure">
+    <!-- Body sliding through the gap (slanted character) -->
+    <g transform="translate(120, 125) rotate(90)">
+      <!-- Head -->
+      <circle cx="-25" cy="0" r="10" fill="#FF9F43"/>
+      <!-- Hat / Stealth Mask -->
+      <path d="M -35 -5 Q -25 -15 -15 -5 Z" fill="#E67E22"/>
+      <!-- Torso slipping through -->
+      <rect x="-15" y="-8" width="30" height="16" rx="4" fill="#FF9F43"/>
+      <!-- Arms reaching forward -->
+      <path d="M 15 -6 L 28 -12" stroke="#FF9F43" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 15 6 L 28 12" stroke="#FF9F43" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Accent glow effects indicating the action of slipping through a loophole -->
+  <g id="motion-effects" opacity="0.8">
+    <path d="M 85 125 L 105 125" stroke="#FF9F43" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 2"/>
+    <path d="M 135 125 L 155 125" stroke="#FF9F43" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 2"/>
+    <!-- Warning/Attention accent dot -->
+    <circle cx="120" cy="92" r="3" fill="#FF9F43"/>
+  </g>
+</svg>

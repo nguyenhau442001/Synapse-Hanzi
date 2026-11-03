@@ -1,0 +1,22 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+  
+  <!-- Cityscape Silhouette -->
+  <path d="M20 240 L20 180 L40 180 L40 160 L60 160 L60 190 L80 190 L80 150 L100 150 L100 200 L120 200 L120 170 L140 170 L140 210 L160 210 L160 180 L180 180 L180 220 L200 220 L200 190 L220 190 L220 240 Z" fill="#2C3440"/>
+  
+  <!-- Sea/Coastline -->
+  <path d="M0 220 Q120 200 240 220 L240 240 L0 240 Z" fill="#252B36"/>
+  
+  <!-- Airplane (The Subject) -->
+  <g transform="translate(120, 100)">
+    <path d="M-40 0 L40 0 L20 10 L-30 10 Z" fill="#FFB84D"/>
+    <path d="M-10 -5 L10 -5 L5 0 L-5 0 Z" fill="#FFD699"/>
+    <path d="M-30 0 L-45 15 L-35 15 L-20 5 Z" fill="#FF9F1A"/>
+    <path d="M-30 0 L-45 -15 L-35 -15 L-20 -5 Z" fill="#FF9F1A"/>
+    <path d="M25 0 L40 10 L45 5 L30 0 Z" fill="#FF9F1A"/>
+  </g>
+  
+  <!-- Atmosphere/Clouds -->
+  <path d="M30 80 Q40 70 60 80 T100 80" stroke="#374151" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M160 120 Q170 110 190 120 T230 120" stroke="#374151" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,47 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Conceptual illustration for "作息" (Daily Routine / Schedule & Rest) -->
+  <!-- Combining a stylized modern clock (representing time/schedule) with a resting bed and sun/moon transition elements -->
+
+  <!-- Background Glow & Split representing Day/Night cycle -->
+  <circle cx="120" cy="120" r="80" fill="#222733" />
+  
+  <!-- Left Half: Sun / Day (Work/Action - 作) -->
+  <path d="M 120 40 A 80 80 0 0 0 120 200 Z" fill="#283044" opacity="0.5"/>
+  <circle cx="120" cy="120" r="74" fill="none" stroke="#333B4F" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- Clock Outer Ring -->
+  <circle cx="120" cy="120" r="64" fill="#1E2330" stroke="#3A445D" stroke-width="4"/>
+
+  <!-- Clock Hour Markers -->
+  <line x1="120" y1="60" x2="120" y2="66" stroke="#6C7A9C" stroke-width="3" stroke-linecap="round"/>
+  <line x1="120" y1="174" x2="120" y2="180" stroke="#6C7A9C" stroke-width="3" stroke-linecap="round"/>
+  <line x1="60" y1="120" x2="66" y2="120" stroke="#6C7A9C" stroke-width="3" stroke-linecap="round"/>
+  <line x1="174" y1="120" x2="180" y2="120" stroke="#6C7A9C" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Clock Hands (Indicating routine schedule) -->
+  <!-- Hour hand pointing up-left -->
+  <line x1="120" y1="120" x2="98" y2="98" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  <!-- Minute hand pointing up -->
+  <line x1="120" y1="120" x2="120" y2="82" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round"/>
+  <!-- Center Pin -->
+  <circle cx="120" cy="120" r="5" fill="#F59E0B"/>
+
+  <!-- Central Iconography: Bed/Rest (息) integrated neatly inside or below the clock, combined with a subtle pillow and blanket -->
+  <!-- Let's anchor a cozy minimalist bed graphic at the bottom inner sector -->
+  <rect x="88" y="136" width="64" height="32" rx="6" fill="#2E384D"/>
+  <!-- Pillow -->
+  <rect x="94" y="142" width="18" height="10" rx="3" fill="#60A5FA"/>
+  <!-- Blanket folded -->
+  <path d="M 116 142 H 146 A 4 4 0 0 1 150 146 V 162 H 116 Z" fill="#F59E0B"/>
+
+  <!-- Sun Symbol (Top Right) -->
+  <circle cx="170" cy="74" r="10" fill="#FBBF24"/>
+  <path d="M 170 58 V 62 M 170 86 V 90 M 154 74 H 158 M 182 74 H 186" stroke="#FBBF24" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Moon Symbol (Bottom Left) -->
+  <path d="M 74 156 A 10 10 0 0 1 64 166 A 10 10 0 0 1 54 156 A 10 10 0 0 0 74 156 Z" fill="#818CF8"/>
+
+</svg>

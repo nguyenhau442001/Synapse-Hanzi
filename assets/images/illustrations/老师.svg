@@ -1,36 +1,126 @@
 <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
-      <stop offset="0%" stop-color="#0f172a"/>
+    <linearGradient id="roomBg" x1="0" y1="0" x2="0" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0b1120"/>
       <stop offset="100%" stop-color="#1e293b"/>
     </linearGradient>
+    <linearGradient id="chalkboardGrad" x1="0" y1="20" x2="0" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1e3a34"/>
+      <stop offset="100%" stop-color="#112420"/>
+    </linearGradient>
+    <linearGradient id="boardFrame" x1="0" y1="0" x2="240" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#92400e"/>
+      <stop offset="50%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <linearGradient id="jacketGrad" x1="0" y1="90" x2="0" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#172554"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0" y1="40" x2="0" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fed7aa"/>
+      <stop offset="100%" stop-color="#fcd34d"/>
+    </linearGradient>
+    <linearGradient id="podiumGrad" x1="0" y1="160" x2="0" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
   </defs>
-  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
-  
-  <!-- Chalkboard -->
-  <rect x="30" y="30" width="180" height="120" rx="8" fill="#334155" stroke="#475569" stroke-width="4"/>
-  <line x1="40" y1="60" x2="200" y2="60" stroke="#475569" stroke-width="2"/>
-  <line x1="40" y1="90" x2="200" y2="90" stroke="#475569" stroke-width="2"/>
-  
-  <!-- Teacher -->
-  <g transform="translate(120, 160)">
-    <!-- Body -->
-    <path d="M-30 60 L30 60 L25 10 L-25 10 Z" fill="#38bdf8"/>
-    <!-- Head -->
-    <circle cx="0" cy="-20" r="25" fill="#fde68a"/>
-    <!-- Hair -->
-    <path d="M-25 -25 C-25 -45 25 -45 25 -25 C25 -10 10 -5 0 -5 C-10 -5 -25 -10 -25 -25" fill="#78350f"/>
-    <!-- Glasses -->
-    <circle cx="-8" cy="-22" r="6" fill="none" stroke="#0f172a" stroke-width="2"/>
-    <circle cx="8" cy="-22" r="6" fill="none" stroke="#0f172a" stroke-width="2"/>
-    <line x1="-2" y1="-22" x2="2" y2="-22" stroke="#0f172a" stroke-width="2"/>
-  </g>
-  
-  <!-- Pointer Stick -->
-  <rect x="140" y="120" width="4" height="60" rx="2" fill="#fb923c" transform="rotate(-20 140 120)"/>
-  
-  <!-- Desk/Table -->
-  <rect x="10" y="180" width="220" height="40" rx="4" fill="#1e293b" stroke="#334155" stroke-width="4"/>
-  <rect x="20" y="190" width="40" height="20" rx="2" fill="#10b981"/>
-  <circle cx="200" cy="200" r="10" fill="#ec4899"/>
+
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="url(#roomBg)"/>
+
+  <!-- Classroom Floor & Wall Divide -->
+  <line x1="0" y1="185" x2="240" y2="185" stroke="#334155" stroke-width="2"/>
+  <rect x="0" y="186" width="240" height="54" fill="#0f172a" opacity="0.8"/>
+
+  <!-- Large Classroom Blackboard with Wood Frame -->
+  <rect x="18" y="22" width="204" height="124" rx="6" fill="url(#boardFrame)"/>
+  <rect x="24" y="28" width="192" height="112" rx="4" fill="url(#chalkboardGrad)"/>
+
+  <!-- Chalkboard Educational Diagrams (Geometry & Physics, Zero Text) -->
+  <circle cx="68" cy="72" r="24" fill="none" stroke="#6ee7b7" stroke-width="1.8" stroke-dasharray="3 3"/>
+  <polygon points="68,48 89,84 47,84" fill="none" stroke="#fef08a" stroke-width="2"/>
+  <line x1="68" y1="48" x2="68" y2="84" stroke="#a7f3d0" stroke-width="1" stroke-dasharray="2 2"/>
+  <!-- Lesson coordinate chart -->
+  <line x1="120" y1="105" x2="185" y2="105" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="125" y1="110" x2="125" y2="55" stroke="#94a3b8" stroke-width="1.5"/>
+  <path d="M125 100 Q145 95 155 75 T180 58" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+  <!-- Chalk tray with chalk sticks -->
+  <rect x="35" y="140" width="170" height="5" rx="1.5" fill="#78350f"/>
+  <rect x="50" y="138" width="14" height="3" rx="1" fill="#f8fafc"/>
+  <rect x="70" y="138" width="12" height="3" rx="1" fill="#fef08a"/>
+
+  <!-- Teacher Figure (Realistic proportions, lecturing actively at the board) -->
+  <!-- Legs / Slacks -->
+  <path d="M96 175 L94 232 L108 232 L112 175 Z" fill="#1e293b"/>
+  <path d="M116 175 L120 232 L134 232 L128 175 Z" fill="#0f172a"/>
+  <!-- Leather dress shoes -->
+  <ellipse cx="100" cy="233" rx="10" ry="4" fill="#020617"/>
+  <ellipse cx="128" cy="233" rx="10" ry="4" fill="#020617"/>
+
+  <!-- Torso: Shirt & Professional Blazer -->
+  <path d="M88 108 L136 108 L142 178 L82 178 Z" fill="url(#jacketGrad)"/>
+  <!-- White collared dress shirt and formal tie -->
+  <polygon points="106,108 118,108 116,132 108,132" fill="#f8fafc"/>
+  <polygon points="112,112 116,112 118,142 112,148 108,142" fill="#ef4444"/>
+  <!-- Blazer Lapels -->
+  <polygon points="90,108 106,140 102,175 84,175" fill="#1d4ed8"/>
+  <polygon points="134,108 118,140 122,175 140,175" fill="#1e40af"/>
+
+  <!-- Left Arm: Holding Open Textbook -->
+  <path d="M88 112 L72 138 L76 156 L90 142 L94 125 Z" fill="#1e40af"/>
+  <!-- Left hand -->
+  <ellipse cx="76" cy="155" rx="6" ry="5" fill="url(#skinGrad)"/>
+  <!-- Open Teaching Book -->
+  <polygon points="62,142 76,148 76,166 62,160" fill="#f1f5f9"/>
+  <polygon points="76,148 90,142 90,160 76,166" fill="#e2e8f0"/>
+  <polygon points="61,161 76,168 91,161 91,164 76,171 61,164" fill="#3b82f6"/>
+  <!-- Abstract lines representing book content -->
+  <line x1="65" y1="147" x2="73" y2="150" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="65" y1="152" x2="73" y2="155" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="79" y1="150" x2="87" y2="147" stroke="#94a3b8" stroke-width="1"/>
+
+  <!-- Right Arm: Dynamically Pointing at Blackboard Diagram -->
+  <path d="M136 112 L162 90 L168 98 L142 124 Z" fill="#1e40af"/>
+  <!-- Right hand with pointing gesture -->
+  <circle cx="168" cy="92" r="5" fill="url(#skinGrad)"/>
+  <line x1="168" y1="92" x2="182" y2="80" stroke="#fcd34d" stroke-width="3" stroke-linecap="round"/>
+  <!-- Pointer stick extending to lesson chart -->
+  <line x1="178" y1="84" x2="198" y2="68" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Head, Hair, and Realistic Face -->
+  <!-- Neck -->
+  <rect x="106" y="94" width="12" height="15" fill="url(#skinGrad)"/>
+  <!-- Head base -->
+  <ellipse cx="112" cy="80" rx="14" ry="17" fill="url(#skinGrad)"/>
+  <!-- Hair: Neat professional style -->
+  <path d="M98 78 C98 60, 126 58, 126 74 C126 77, 124 82, 124 82 C120 66, 104 68, 98 78 Z" fill="#1e1b4b"/>
+  <!-- Ears -->
+  <ellipse cx="98" cy="81" rx="2.5" ry="4" fill="#fbcfe8"/>
+  <ellipse cx="126" cy="81" rx="2.5" ry="4" fill="#fbcfe8"/>
+  <!-- Smart Teacher Glasses -->
+  <rect x="103" y="75" width="8" height="6" rx="1.5" fill="none" stroke="#0f172a" stroke-width="1.2"/>
+  <rect x="113" y="75" width="8" height="6" rx="1.5" fill="none" stroke="#0f172a" stroke-width="1.2"/>
+  <line x1="111" y1="78" x2="113" y2="78" stroke="#0f172a" stroke-width="1.2"/>
+  <!-- Eyes & Friendly Focused Expression -->
+  <circle cx="107" cy="78" r="1.2" fill="#0f172a"/>
+  <circle cx="117" cy="78" r="1.2" fill="#0f172a"/>
+  <path d="M109 87 Q112 89 115 87" fill="none" stroke="#b45309" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- Teacher's Podium / Lectern on the Right Side -->
+  <path d="M182 170 L216 170 L212 235 L186 235 Z" fill="url(#podiumGrad)"/>
+  <polygon points="178,170 220,170 216,162 174,162" fill="#64748b"/>
+  <!-- Stacks of reference books & pen holder on podium -->
+  <rect x="180" y="156" width="16" height="6" rx="1" fill="#ef4444"/>
+  <rect x="182" y="151" width="14" height="5" rx="1" fill="#3b82f6"/>
+  <rect x="202" y="152" width="6" height="10" rx="1.5" fill="#e2e8f0"/>
+  <line x1="204" y1="147" x2="204" y2="152" stroke="#f59e0b" stroke-width="1.5"/>
+
+  <!-- Soft Vignette & Classroom Atmosphere Highlight -->
+  <circle cx="112" cy="75" r="70" fill="none" stroke="#38bdf8" stroke-width="0.8" opacity="0.15"/>
 </svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Container background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Glowing accent background glow for focal point -->
+  <circle cx="120" cy="115" r="70" fill="#FFB703" opacity="0.06"/>
+  <circle cx="120" cy="115" r="45" fill="#FFB703" opacity="0.08"/>
+
+  <!-- Stylized Magnifying Glass representing "Spotting/Sensing" (敏锐捕捉) -->
+  <!-- Glass Handle -->
+  <path d="M 82 153 L 56 179" stroke="#FFB703" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 82 153 L 56 179" stroke="#1A1D24" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Glass Rim (Outer) -->
+  <circle cx="125" cy="110" r="46" fill="#1A1D24" stroke="#FFB703" stroke-width="10"/>
+  <!-- Glass Inner Reflection -->
+  <circle cx="125" cy="110" r="41" fill="#252A34"/>
+  <path d="M 98 84 A 38 38 0 0 1 152 84" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.25"/>
+
+  <!-- Object inside the lens: Dynamic Upward Growth/Trend (Cơ hội kinh doanh) -->
+  <!-- Grid / Base line -->
+  <line x1="94" y1="135" x2="156" y2="135" stroke="#3E4553" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Upward Trend Bars -->
+  <rect x="101" y="115" width="10" height="20" rx="2" fill="#2A9D8F"/>
+  <rect x="115" y="102" width="10" height="33" rx="2" fill="#2A9D8F"/>
+  <rect x="129" y="85" width="10" height="50" rx="2" fill="#2A9D8F"/>
+
+  <!-- Sparkling Golden Opportunity Star/Spark -->
+  <path d="M 148 70 L 151 79 L 160 82 L 151 85 L 148 94 L 145 85 L 136 82 L 145 79 Z" fill="#FFB703"/>
+  <path d="M 106 82 L 107.5 86.5 L 112 88 L 107.5 89.5 L 106 94 L 104.5 89.5 L 100 88 L 104.5 86.5 Z" fill="#FFB703" opacity="0.8"/>
+
+  <!-- Dynamic Upward Arrow overlaying trend -->
+  <path d="M 98 120 L 118 100 L 132 112 L 154 84" fill="none" stroke="#E9C46A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 145 84 L 154 84 L 154 93" fill="none" stroke="#E9C46A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

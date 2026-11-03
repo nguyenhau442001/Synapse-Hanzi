@@ -1,0 +1,49 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Container -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative subtle background elements -->
+  <g opacity="0.15" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4 4">
+    <circle cx="120" cy="120" r="85"/>
+  </g>
+
+  <!-- Central Noun: The Mask of Illusion / Trickery (Representing "忽悠" - Swindler/Beguilement) -->
+  <g transform="translate(0, 5)">
+    <!-- Behind-the-scenes hand / strings (manipulation concept) -->
+    <path d="M 120 70 L 120 40" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="120" cy="37" r="4" fill="#94A3B8"/>
+
+    <!-- Smiling Deceptive Mask Base -->
+    <path d="M 75 90 C 75 75, 165 75, 165 90 C 165 140, 150 170, 120 185 C 90 170, 75 140, 75 90 Z" fill="#2D3748" stroke="#F59E0B" stroke-width="3"/>
+
+    <!-- Mask Inner Shadow / Shade -->
+    <path d="M 80 92 C 80 80, 160 80, 160 92 C 160 138, 146 165, 120 178 C 94 165, 80 138, 80 92 Z" fill="#1A202C"/>
+
+    <!-- Half-Hidden / Shift Dual Personality Detail (Sly Smiling Eyes) -->
+    <!-- Left Eye (Winking/Cunning) -->
+    <path d="M 92 102 Q 102 112 112 102" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Right Eye (Wide/Exaggerated) -->
+    <circle cx="138" cy="104" r="7" fill="#F59E0B"/>
+    <circle cx="140" cy="103" r="2.5" fill="#1A202C"/>
+
+    <!-- Exaggerated Arched Eyebrows -->
+    <path d="M 88 92 Q 102 82 114 92" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 126 92 Q 138 80 150 86" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Sly, Exaggerated Grin (Hua Yan Qiao Yu - Sweet Talk) -->
+    <path d="M 98 132 Q 120 155 142 132" fill="none" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 98 132 Q 120 145 142 132" fill="#F59E0B" opacity="0.3"/>
+
+    <!-- Sparkle/Illusion effects (Empty promises floating around) -->
+    <g fill="#F59E0B">
+      <path d="M 60 115 L 63 122 L 70 125 L 63 128 L 60 135 L 57 128 L 50 125 L 57 122 Z" opacity="0.8"/>
+      <path d="M 180 95 L 182 100 L 187 102 L 182 104 L 180 109 L 178 104 L 173 102 L 178 100 Z" opacity="0.6"/>
+      <path d="M 165 155 L 167 159 L 171 161 L 167 163 L 165 167 L 163 163 L 159 161 L 163 159 Z" opacity="0.9"/>
+      <path d="M 75 65 L 76.5 68.5 L 80 70 L 76.5 71.5 L 75 75 L 73.5 71.5 L 70 70 L 73.5 68.5 Z" opacity="0.5"/>
+    </g>
+
+    <!-- Floating "Smoke / Mirage" wisps at the base representing hollowness -->
+    <path d="M 95 195 Q 105 185, 120 195 Q 135 205, 145 195" fill="none" stroke="#4A5568" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  </g>
+</svg>

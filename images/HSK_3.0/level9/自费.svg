@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
+
+  <!-- Decorative subtle background elements -->
+  <circle cx="120" cy="120" r="80" fill="none" stroke="#2A2F3D" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6"/>
+
+  <!-- Central Physical Object Group: A sleek modern leather wallet with emerging currency / credit card representing self-funded/paying out of pocket -->
+  <g transform="translate(0, 5)">
+    <!-- Wallet Shadow -->
+    <ellipse cx="120" cy="180" rx="55" ry="10" fill="#111318" opacity="0.8"/>
+
+    <!-- Wallet Back Layer -->
+    <rect x="65" y="90" width="110" height="85" rx="14" fill="#2E3648"/>
+    
+    <!-- Wallet Inner Pocket Detail -->
+    <rect x="75" y="105" width="90" height="60" rx="8" fill="#242B38"/>
+
+    <!-- Credit Card / ID Card peeking out (representing personal expense) -->
+    <g transform="translate(0, -10)">
+      <rect x="80" y="72" width="80" height="50" rx="6" fill="#3B82F6"/>
+      <!-- Card Strip -->
+      <rect x="80" y="82" width="80" height="10" fill="#1E293B"/>
+      <!-- Card Chip -->
+      <rect x="90" y="98" width="12" height="9" rx="2" fill="#FBBF24"/>
+    </g>
+
+    <!-- Banknotes peeking out beside the card -->
+    <g transform="translate(10, 0)">
+      <!-- Cash Bill 1 -->
+      <path d="M 95 78 L 135 65 L 145 90 L 105 103 Z" fill="#10B981" opacity="0.9"/>
+      <circle cx="120" cy="81" r="5" fill="#047857"/>
+    </g>
+
+    <!-- Wallet Main Body (Front Flap) -->
+    <rect x="65" y="105" width="110" height="72" rx="12" fill="#3B465C"/>
+    
+    <!-- Wallet Stitching Accent -->
+    <rect x="71" y="111" width="98" height="60" rx="8" fill="none" stroke="#4C5975" stroke-width="1.5" stroke-dasharray="5 3"/>
+
+    <!-- Wallet Clasp / Lock Strap -->
+    <rect x="105" y="98" width="30" height="22" rx="6" fill="#2E3648"/>
+    <!-- Gold button on clasp representing personal value/transaction -->
+    <circle cx="120" cy="109" r="5" fill="#F59E0B"/>
+  </g>
+
+  <!-- Floating Gold Coin (representing 'Fèi' - expense/funds) -->
+  <g transform="translate(165, 75)">
+    <circle cx="0" cy="0" r="18" fill="#D97706"/>
+    <circle cx="0" cy="0" r="15" fill="#F59E0B"/>
+    <circle cx="0" cy="0" r="11" fill="none" stroke="#FBBF24" stroke-width="2"/>
+    <!-- Inner symbol representing currency/value -->
+    <path d="M 0 -6 L 0 6 M -4 -2 L 4 -2 M -4 2 L 4 2" stroke="#D97706" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Second Floating Coin for balance -->
+  <g transform="translate(62, 140) scale(0.7)">
+    <circle cx="0" cy="0" r="18" fill="#D97706"/>
+    <circle cx="0" cy="0" r="15" fill="#F59E0B"/>
+    <circle cx="0" cy="0" r="11" fill="none" stroke="#FBBF24" stroke-width="2"/>
+    <path d="M 0 -6 L 0 6 M -4 -2 L 4 -2 M -4 2 L 4 2" stroke="#D97706" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+</svg>
