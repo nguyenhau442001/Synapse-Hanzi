@@ -32,6 +32,11 @@ def test_hsk30_level1_data_repository_config():
     content = repo_file.read_text(encoding="utf-8")
     assert "audioManifestUrl: 'database/prebuilt_audio/hsk30_1/manifest.json'" in content
 
+    # Crucial: static web app runs on assets/js/state.js
+    state_file = REPO_ROOT / "assets" / "js" / "state.js"
+    state_content = state_file.read_text(encoding="utf-8")
+    assert "audioManifestUrl: 'database/prebuilt_audio/hsk30_1/manifest.json'" in state_content
+
 def test_hsk30_illustrations_rechecked():
     pack_file = REPO_ROOT / "database" / "illustrations" / "hsk30_1.json"
     with open(pack_file, "r", encoding="utf-8") as f:
