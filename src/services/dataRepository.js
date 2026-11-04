@@ -13,7 +13,7 @@ export const LEVELS_CONFIG = {
   hsk6: { id: 'hsk6', label: 'HSK 6', version: '2.0', dataUrl: 'database/vocabs/hsk6_vocabularies.json', total: 2500 },
 
   // HSK 3.0
-  hsk30_1: { id: 'hsk30_1', label: 'HSK 3.0 – 1', band: 'Sơ cấp', version: '3.0', dataUrl: 'database/vocabs/hsk3_0/level1_vocabularies.json', total: 300 },
+  hsk30_1: { id: 'hsk30_1', label: 'HSK 3.0 – 1', band: 'Sơ cấp', version: '3.0', dataUrl: 'database/vocabs/hsk3_0/level1_vocabularies.json', audioManifestUrl: 'database/prebuilt_audio/hsk30_1/manifest.json', total: 300 },
   hsk30_2: { id: 'hsk30_2', label: 'HSK 3.0 – 2', band: 'Sơ cấp', version: '3.0', dataUrl: 'database/vocabs/hsk3_0/level2_vocabularies.json', total: 200 },
   hsk30_3: { id: 'hsk30_3', label: 'HSK 3.0 – 3', band: 'Sơ cấp', version: '3.0', dataUrl: 'database/vocabs/hsk3_0/level3_vocabularies.json', total: 500 },
   hsk30_4: { id: 'hsk30_4', label: 'HSK 3.0 – 4', band: 'Trung cấp', version: '3.0', dataUrl: 'database/vocabs/hsk3_0/level4_vocabularies.json', total: 1000 },

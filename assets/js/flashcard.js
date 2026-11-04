@@ -143,7 +143,7 @@ function buildCardArea() {
           <details class="card-accordion" id="cardDecompAccordion" onclick="event.stopPropagation()" style="display: none;">
             <summary class="card-accordion-summary" onclick="event.stopPropagation()">
               <span class="accordion-left">
-                <span class="accordion-icon" aria-hidden="true">🧩</span>
+                <span class="accordion-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7.5" height="18" rx="1.5"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5"/></svg></span>
                 <span class="accordion-title">Cấu tạo chữ</span>
               </span>
               <span class="accordion-chevron" aria-hidden="true">
@@ -158,7 +158,7 @@ function buildCardArea() {
           <details class="card-accordion" id="cardRelatedAccordion" onclick="event.stopPropagation()" style="display: none;">
             <summary class="card-accordion-summary" onclick="event.stopPropagation()">
               <span class="accordion-left">
-                <span class="accordion-icon" aria-hidden="true">🔗</span>
+                <span class="accordion-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></span>
                 <span class="accordion-title">Chữ liên quan</span>
                 <span class="accordion-badge" id="cardRelatedCountBadge" hidden></span>
               </span>

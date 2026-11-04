@@ -74,9 +74,9 @@ def test_subtle_ambient_animation_js():
     assert PLUM_JS.exists(), "Animation script missing"
     js_content = PLUM_JS.read_text(encoding="utf-8")
 
-    # Particle counts bounded between 6 and 12
-    assert "desktopParticles: 12" in js_content
-    assert "mobileParticles: 6" in js_content
+    # Only a handful of faint particles (v3.7.0 noise reduction)
+    assert "desktopParticles: 6" in js_content
+    assert "mobileParticles: 3" in js_content
 
     # Core subtle ink layers
     assert "renderMist" in js_content
@@ -103,31 +103,29 @@ def test_compact_statistics_and_editorial_example():
     assert "Editorial Dictionary Entry" in css_content
 
 
-def test_ink_landscape_svgs_have_mountains_and_orb():
-    """Verify both themes include soft ink-wash mountain ridges and a sun/moon orb."""
+def test_ink_landscape_svgs_have_faint_mountains_and_no_orb():
+    """Both themes keep three very faint ink-wash ridges; the sun/moon orb is gone."""
+    import re
     light = LIGHT_SVG.read_text(encoding="utf-8")
     dark = DARK_SVG.read_text(encoding="utf-8")
     for content in (light, dark):
         assert content.count('class="ink-ridge ') == 3
         assert 'filter="url(#ink_soft_edge)"' in content
-    assert 'class="ink-sun"' in light
-    assert 'class="ink-moon"' in dark
+        assert 'class="ink-sun"' not in content
+        assert 'class="ink-moon"' not in content
+        for opacity in re.findall(r'class="ink-ridge [^>]*opacity="([0-9.]+)"', content):
+            assert float(opacity) <= 0.08
 
 
-def test_plum_petals_ink_blooms_and_calligraphy():
-    """Verify falling plum petals, ink blooms and margin calligraphy stay subtle and bounded."""
+def test_background_has_no_petals_calligraphy_or_seal():
+    """Petals, margin calligraphy and the seal are removed; ink blooms stay rare and in margins."""
     js_content = PLUM_JS.read_text(encoding="utf-8")
+    for removed in ("Petal", "petal", "renderCalligraphy", "sealText", "calligraphyLeft"):
+        assert removed not in js_content
 
-    # Petal counts stay small so the effect never distracts from learning
-    assert "desktopPetals: 10" in js_content
-    assert "mobilePetals: 4" in js_content
-    assert "renderPetals" in js_content
-
-    # Ink blooms are occasional and capped
-    assert "maxInkBlooms: 2" in js_content
+    # Ink blooms: at most one, only in wide empty side margins
+    assert "maxInkBlooms: 1" in js_content
+    assert "inkBloomMinGutter: 160" in js_content
+    assert "if (g < CONFIG.inkBloomMinGutter)" in js_content
     assert "renderInkBlooms" in js_content
-
-    # Calligraphy only renders in wide side margins, never over content
-    assert "calligraphyMinGutter: 120" in js_content
     assert "measureGutter" in js_content
-    assert "renderCalligraphy" in js_content

@@ -2,12 +2,10 @@
  * 汉字思维 (Hànzì Sīwéi) · Synapse Hanzi
  * Modern Chinese Learning × Contemporary Oriental Aesthetics
  * 
- * Subtle Chinese Ink Ambient Effect (水墨微尘 · 墨韵烟岚 · 梅花飘落):
- * - Extremely subtle floating ink & tea-dust particles (微墨细粒)
+ * Subtle Chinese Ink Ambient Effect (水墨微尘 · 墨韵烟岚):
+ * - A handful of extremely faint floating ink & tea-dust particles (微墨细粒)
  * - Gentle, ultra-slow ink-wash diffusion (淡淡墨晕)
- * - A few tumbling plum blossom petals drifting down (梅瓣飘落)
- * - Occasional ink drops blooming on the paper and fading (墨滴晕开)
- * - Vertical calligraphy couplet with a red seal in wide side margins (书法对联 · 印章)
+ * - A rare ink drop blooming in wide side margins only, never behind content (墨滴晕开)
  * - Low opacity, non-distracting, completely secondary to learning content
  * - Full accessibility: prefers-reduced-motion, page visibility pause
  * - Zero interaction blocking: pointer-events: none
@@ -17,18 +15,13 @@
   'use strict';
 
   const CONFIG = {
-    desktopParticles: 12,
-    mobileParticles: 6,
+    desktopParticles: 6,
+    mobileParticles: 3,
     mobileBreakpoint: 768,
     mistLayers: 2,
-    desktopPetals: 10,
-    mobilePetals: 4,
     inkBloomIntervalMs: [6000, 11000],
-    maxInkBlooms: 2,
-    calligraphyMinGutter: 120,
-    calligraphyLeft: '学而时习之',
-    calligraphyRight: '温故而知新',
-    sealText: '汉字',
+    maxInkBlooms: 1,
+    inkBloomMinGutter: 160,
   };
 
   const THEMES = {
@@ -43,13 +36,8 @@
         { color: 'rgba(235, 227, 212, 0.12)', yRatio: 0.75, speed: 0.08, height: 180 },
         { color: 'rgba(242, 235, 222, 0.16)', yRatio: 0.88, speed: 0.12, height: 210 },
       ],
-      petals: ['#C9545B', '#D98A8F', '#E3A9A4', '#B8434A'], // Plum red → blush pink (梅红)
-      petalAlpha: [0.42, 0.7],
-      petalCenter: '#C5A46D',
       inkBloom: '60, 52, 44',
-      inkBloomPeak: 0.055,
-      calligraphy: 'rgba(60, 52, 44, 0.11)',
-      seal: 'rgba(168, 50, 42, 0.42)',
+      inkBloomPeak: 0.035,
     },
     dark: {
       particles: [
@@ -61,13 +49,8 @@
         { color: 'rgba(28, 33, 42, 0.15)', yRatio: 0.75, speed: 0.08, height: 180 },
         { color: 'rgba(22, 26, 33, 0.20)', yRatio: 0.88, speed: 0.12, height: 210 },
       ],
-      petals: ['#C86A6E', '#D9989A', '#B5585E', '#E2B7B2'], // Moonlit muted plum (月下梅)
-      petalAlpha: [0.3, 0.52],
-      petalCenter: '#B89B68',
       inkBloom: '184, 155, 104',
-      inkBloomPeak: 0.045,
-      calligraphy: 'rgba(184, 155, 104, 0.10)',
-      seal: 'rgba(200, 106, 86, 0.45)',
+      inkBloomPeak: 0.03,
     },
   };
 
@@ -81,7 +64,6 @@
 
       this.particles = [];
       this.mistBands = [];
-      this.petals = [];
       this.inkBlooms = [];
       this.nextInkBloomAt = 0;
       this.gutter = 0;
@@ -106,7 +88,6 @@
       this.bindEvents();
       this.initMist();
       this.initParticles();
-      this.initPetals();
       this.measureGutter();
 
       if (this.reducedMotion) {
@@ -142,8 +123,7 @@
         resizeTimer = setTimeout(() => {
           this.resize();
           this.initParticles();
-          this.initPetals();
-          this.measureGutter();
+              this.measureGutter();
           if (this.reducedMotion) this.renderStaticFrame();
         }, 150);
       }, { passive: true });
@@ -162,8 +142,7 @@
           if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
             this.updateTheme();
             this.updatePaletteStyles();
-            this.initPetals();
-            if (this.reducedMotion) this.renderStaticFrame();
+                  if (this.reducedMotion) this.renderStaticFrame();
           }
         }
       });
@@ -183,8 +162,8 @@
       this.ctx.setTransform(this.dpr, 0, 0, this.dpr, 0, 0);
     }
 
-    // Width of the empty side margin beside the main content column; calligraphy
-    // only appears when the margin is wide enough to never overlap content.
+    // Width of the empty side margin beside the main content column; ink blooms
+    // only appear when the margin is wide enough to never overlap content.
     measureGutter() {
       const main = document.getElementById('workstationMiddle') || document.querySelector('.workstation');
       if (!main) { this.gutter = 0; return; }
@@ -192,46 +171,17 @@
       this.gutter = rect.width > 0 ? Math.max(0, Math.min(rect.left, this.width - rect.right)) : 0;
     }
 
-    initPetals() {
-      const isMobile = this.width < CONFIG.mobileBreakpoint;
-      const count = isMobile ? CONFIG.mobilePetals : CONFIG.desktopPetals;
-      this.petals = [];
-      for (let i = 0; i < count; i++) {
-        this.petals.push(this.createPetal(true));
-      }
-    }
-
-    createPetal(initial = false) {
-      const palette = THEMES[this.currentTheme];
-      const [aMin, aMax] = palette.petalAlpha;
-      return {
-        x: Math.random() * this.width,
-        y: initial ? Math.random() * this.height : -20 - Math.random() * 60,
-        size: 5.5 + Math.random() * 5,
-        blossom: Math.random() < 0.28, // some whole five-petal flowers, mostly single petals
-        color: palette.petals[Math.floor(Math.random() * palette.petals.length)],
-        alpha: aMin + Math.random() * (aMax - aMin),
-        vy: 14 + Math.random() * 16,
-        drift: 6 + Math.random() * 10,
-        swayPhase: Math.random() * Math.PI * 2,
-        swaySpeed: 0.5 + Math.random() * 0.6,
-        rotation: Math.random() * Math.PI * 2,
-        spin: (Math.random() - 0.5) * 1.2,
-        flipPhase: Math.random() * Math.PI * 2,
-        flipSpeed: 1 + Math.random() * 1.6,
-      };
-    }
-
     spawnInkBloom(now) {
       const g = this.gutter;
-      let x;
-      if (g >= 90) {
-        const side = Math.random() < 0.5;
-        x = side ? g * (0.2 + Math.random() * 0.6) : this.width - g * (0.2 + Math.random() * 0.6);
-      } else {
-        x = Math.random() * this.width;
+      const [lo, hi] = CONFIG.inkBloomIntervalMs;
+      // Only in wide empty side margins, never behind the learning content
+      if (g < CONFIG.inkBloomMinGutter) {
+        this.nextInkBloomAt = now + lo + Math.random() * (hi - lo);
+        return;
       }
-      const maxR = 50 + Math.random() * (g >= 90 ? Math.min(90, g * 0.6) : 70);
+      const side = Math.random() < 0.5;
+      const x = side ? g * (0.25 + Math.random() * 0.5) : this.width - g * (0.25 + Math.random() * 0.5);
+      const maxR = 40 + Math.random() * Math.min(60, g * 0.35);
       this.inkBlooms.push({
         x,
         y: this.height * (0.15 + Math.random() * 0.6),
@@ -245,7 +195,6 @@
           r: 0.45 + Math.random() * 0.45,
         })),
       });
-      const [lo, hi] = CONFIG.inkBloomIntervalMs;
       this.nextInkBloomAt = now + lo + Math.random() * (hi - lo);
     }
 
@@ -294,7 +243,7 @@
         vx: (Math.random() - 0.5) * 5,
         pulsePhase: Math.random() * Math.PI * 2,
         pulseSpeed: 0.9 + Math.random() * 1.2,
-        baseOpacity: 0.08 + Math.random() * 0.12, // Extremely low opacity (0.08 - 0.2)
+        baseOpacity: 0.06 + Math.random() * 0.08, // Extremely low opacity (0.06 - 0.14)
       };
     }
 
@@ -321,18 +270,6 @@
         }
       });
 
-      // Plum petals tumbling down with a gentle sway
-      this.petals.forEach((p, idx) => {
-        p.swayPhase += p.swaySpeed * sec;
-        p.flipPhase += p.flipSpeed * sec;
-        p.rotation += p.spin * sec;
-        p.y += p.vy * sec;
-        p.x += (Math.sin(p.swayPhase) * p.drift + 4) * sec;
-        if (p.y > this.height + 20 || p.x > this.width + 30) {
-          this.petals[idx] = this.createPetal(false);
-        }
-      });
-
       // Ink blooms appear occasionally and fade away
       const now = performance.now();
       if (now - this.lastGutterCheck > 2000) {
@@ -349,10 +286,8 @@
     render() {
       this.ctx.clearRect(0, 0, this.width, this.height);
       this.renderMist();
-      this.renderCalligraphy();
       this.renderInkBlooms();
       this.renderParticles();
-      this.renderPetals();
     }
 
     renderInkBlooms() {
@@ -378,89 +313,6 @@
           ctx.fill();
         });
       });
-    }
-
-    drawPetalShape(ctx, size) {
-      // Rounded plum petal with a soft notch at the tip
-      ctx.beginPath();
-      ctx.moveTo(0, size * 0.55);
-      ctx.bezierCurveTo(size * 0.75, size * 0.35, size * 0.7, -size * 0.6, size * 0.12, -size * 0.55);
-      ctx.quadraticCurveTo(0, -size * 0.38, -size * 0.12, -size * 0.55);
-      ctx.bezierCurveTo(-size * 0.7, -size * 0.6, -size * 0.75, size * 0.35, 0, size * 0.55);
-      ctx.closePath();
-      ctx.fill();
-    }
-
-    renderPetals() {
-      const ctx = this.ctx;
-      const palette = THEMES[this.currentTheme];
-      this.petals.forEach((p) => {
-        ctx.save();
-        ctx.translate(p.x, p.y);
-        ctx.rotate(p.rotation);
-        ctx.scale(1, 0.35 + 0.65 * Math.abs(Math.cos(p.flipPhase))); // 3D tumble
-        ctx.globalAlpha = p.alpha;
-        ctx.fillStyle = p.color;
-        if (p.blossom) {
-          for (let i = 0; i < 5; i++) {
-            ctx.save();
-            ctx.rotate((i * 2 * Math.PI) / 5);
-            ctx.translate(0, -p.size * 0.62);
-            this.drawPetalShape(ctx, p.size * 0.75);
-            ctx.restore();
-          }
-          ctx.fillStyle = palette.petalCenter;
-          ctx.beginPath();
-          ctx.arc(0, 0, p.size * 0.22, 0, Math.PI * 2);
-          ctx.fill();
-        } else {
-          this.drawPetalShape(ctx, p.size);
-        }
-        ctx.restore();
-      });
-    }
-
-    // Vertical calligraphy couplet in the side margins, with a small red seal.
-    renderCalligraphy() {
-      const g = this.gutter;
-      if (g < CONFIG.calligraphyMinGutter || this.height < 560) return;
-      const ctx = this.ctx;
-      const palette = THEMES[this.currentTheme];
-      const fontSize = Math.round(Math.min(46, Math.max(30, g * 0.22)));
-      const lineGap = fontSize * 1.32;
-      const top = Math.max(120, this.height * 0.2);
-      const columns = [
-        { text: CONFIG.calligraphyLeft, x: g * 0.5 },
-        { text: CONFIG.calligraphyRight, x: this.width - g * 0.5 },
-      ];
-      ctx.save();
-      ctx.font = `600 ${fontSize}px "Songti SC", "Noto Serif SC", "STSong", "SimSun", serif`;
-      ctx.textAlign = 'center';
-      ctx.textBaseline = 'middle';
-      ctx.fillStyle = palette.calligraphy;
-      columns.forEach((col) => {
-        Array.from(col.text).forEach((ch, i) => {
-          ctx.fillText(ch, col.x, top + i * lineGap);
-        });
-      });
-
-      // Seal stamp (印章) under the right column
-      const sealSize = Math.round(fontSize * 0.9);
-      const sx = columns[1].x - sealSize / 2;
-      const sy = top + Array.from(CONFIG.calligraphyRight).length * lineGap - lineGap * 0.2;
-      ctx.fillStyle = palette.seal;
-      ctx.beginPath();
-      if (ctx.roundRect) ctx.roundRect(sx, sy, sealSize, sealSize, sealSize * 0.12);
-      else ctx.rect(sx, sy, sealSize, sealSize);
-      ctx.fill();
-      ctx.globalCompositeOperation = 'destination-out';
-      ctx.font = `700 ${Math.round(sealSize * 0.36)}px "Songti SC", "Noto Serif SC", "STSong", serif`;
-      const [a, b] = Array.from(CONFIG.sealText);
-      // Traditional seals read top-to-bottom, right column first
-      ctx.fillText(a, sx + sealSize * 0.72, sy + sealSize * 0.3);
-      ctx.fillText(b, sx + sealSize * 0.72, sy + sealSize * 0.7);
-      ctx.fillText('印', sx + sealSize * 0.3, sy + sealSize * 0.5);
-      ctx.restore();
     }
 
     renderMist() {
@@ -514,9 +366,7 @@
       this.measureGutter();
       this.ctx.clearRect(0, 0, this.width, this.height);
       this.renderMist();
-      this.renderCalligraphy();
       this.renderParticles();
-      this.renderPetals();
     }
 
     start() {

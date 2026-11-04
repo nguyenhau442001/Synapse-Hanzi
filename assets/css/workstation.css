@@ -5537,3 +5537,235 @@ body.flashcard-study-mode .creator-signature .cs-link:focus-visible {
 @media (min-width: 641px) and (max-width: 1024px) {
   body.flashcard-study-mode .creator-signature { max-width: 720px; }
 }
+
+/* ==========================================================================
+   Visual refinement (v3.7.0) — Chinese editorial × modern minimal
+   One accent (vermilion/terracotta), charcoal type, sage only where it means
+   "remembered". Appended last so it refines without restructuring.
+   ========================================================================== */
+
+/* --- Creator signature: brand left, author + metadata right ------------- */
+body.flashcard-study-mode .creator-signature { align-items: center; }
+body.flashcard-study-mode .creator-signature .cs-credit { gap: 2px; }
+body.flashcard-study-mode .creator-signature .cs-author { font-size: 12.5px; gap: 2px 10px; }
+body.flashcard-study-mode .creator-signature .cs-author strong { font-weight: 650; }
+body.flashcard-study-mode .creator-signature .cs-meta {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  opacity: 0.9;
+}
+body.flashcard-study-mode .creator-signature .cs-link { color: var(--text-tertiary); }
+
+/* --- Progress: accent for primary progress, sage only for "remembered" --- */
+body.flashcard-study-mode .progress-nav-level-tag { font-weight: 700; letter-spacing: 0.02em; }
+body.flashcard-study-mode .progress-nav-metric-val { color: var(--text-primary); font-weight: 700; }
+body.flashcard-study-mode .progress-nav-metric-pct { color: var(--accent); font-weight: 700; }
+body.flashcard-study-mode .progress-nav-track {
+  height: 6px;
+  background: rgba(168, 139, 98, 0.22);
+  border-radius: 999px;
+}
+body.flashcard-study-mode .progress-nav-seg--known,
+body.flashcard-study-mode .progress-nav-stat--known .progress-nav-stat-dot { background: var(--accent); }
+body.flashcard-study-mode .progress-nav-seg--unknown,
+body.flashcard-study-mode .progress-nav-stat--unknown .progress-nav-stat-dot { background: #D2A47E; }
+:root[data-theme="dark"] body.flashcard-study-mode .progress-nav-track { background: rgba(255, 255, 255, 0.1); }
+:root[data-theme="dark"] body.flashcard-study-mode .progress-nav-seg--known,
+:root[data-theme="dark"] body.flashcard-study-mode .progress-nav-stat--known .progress-nav-stat-dot { background: #C8584A; }
+:root[data-theme="dark"] body.flashcard-study-mode .progress-nav-metric-pct { color: #D9786A; }
+
+/* Filter cards: compact, identical height at every viewport */
+body.flashcard-study-mode .progress-nav-card {
+  min-height: 38px !important;
+  height: 38px;
+  padding: 0 12px !important;
+  border-radius: 10px;
+}
+body.flashcard-study-mode .progress-nav-card.is-active {
+  border-color: rgba(168, 50, 42, 0.35);
+  background: rgba(168, 50, 42, 0.05);
+}
+:root[data-theme="dark"] body.flashcard-study-mode .progress-nav-card.is-active {
+  border-color: rgba(217, 120, 106, 0.4);
+  background: rgba(217, 120, 106, 0.08);
+}
+
+/* --- Vocabulary card ----------------------------------------------------- */
+body.flashcard-study-mode .pinyin,
+:root[data-theme="dark"] body.flashcard-study-mode .pinyin { color: var(--accent) !important; }
+:root[data-theme="dark"] body.flashcard-study-mode .pinyin { color: #D9786A !important; }
+body.flashcard-study-mode .card.is-flipped .meaning {
+  font-size: clamp(20px, 2.2vw, 25px);
+  font-weight: 650;
+  color: var(--text-primary);
+  margin: 6px 0 2px;
+}
+body.flashcard-study-mode .card.is-flipped .pinyin-row { margin-top: 2px; }
+body.flashcard-study-mode .card.is-flipped .meta-badges-row { margin: 2px 0 6px; }
+@media (min-width: 768px) {
+  body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration > .hanzi-stage { padding-bottom: 6px; }
+}
+
+/* --- Example: tighter, clear hierarchy, visible audio --------------------- */
+body.flashcard-study-mode .card.is-flipped .example-box {
+  padding: 12px 16px;
+  margin-top: 12px;
+  border-color: rgba(221, 212, 196, 0.6);
+}
+body.flashcard-study-mode .example-box .ex-label {
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  color: var(--text-tertiary);
+}
+body.flashcard-study-mode .example-box .ex-zh {
+  font-size: clamp(17px, 1.6vw, 19px);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 4px;
+}
+body.flashcard-study-mode .example-box .ex-zh u {
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+body.flashcard-study-mode .example-box .ex-py { font-size: 13.5px; color: var(--text-tertiary); margin-top: 2px; }
+body.flashcard-study-mode .example-box .ex-vi { font-size: 15px; color: var(--text-secondary); margin-top: 4px; }
+body.flashcard-study-mode .example-sound-btn {
+  width: 30px;
+  height: 30px;
+  color: var(--accent);
+  background: var(--card-bg, #fff);
+  border-color: rgba(168, 50, 42, 0.25);
+}
+body.flashcard-study-mode .example-sound-btn:hover {
+  background: rgba(168, 50, 42, 0.06);
+  border-color: rgba(168, 50, 42, 0.45);
+}
+:root[data-theme="dark"] body.flashcard-study-mode .example-sound-btn {
+  color: #D9786A;
+  background: transparent;
+  border-color: rgba(217, 120, 106, 0.35);
+}
+
+/* --- Accordions: light rows, clear hover/open states ---------------------- */
+body.flashcard-study-mode .card-accordion {
+  border-color: rgba(221, 212, 196, 0.55);
+  background: transparent;
+  box-shadow: none;
+}
+body.flashcard-study-mode .card-accordion-summary { padding: 7px 12px; font-size: 12.5px; }
+body.flashcard-study-mode .card-accordion-summary:hover { background: rgba(168, 50, 42, 0.035); }
+body.flashcard-study-mode .card-accordion .accordion-icon { display: inline-flex; color: var(--text-tertiary); }
+body.flashcard-study-mode .card-accordion[open] {
+  border-color: rgba(168, 50, 42, 0.28);
+  background: var(--card-bg, #fff);
+  box-shadow: none;
+}
+body.flashcard-study-mode .card-accordion[open] .accordion-icon,
+body.flashcard-study-mode .card-accordion[open] .accordion-title { color: var(--accent); }
+body.flashcard-study-mode .accordion-badge {
+  background: transparent;
+  color: var(--text-tertiary);
+  border: 1px solid var(--border-subtle);
+  font-weight: 600;
+}
+:root[data-theme="dark"] body.flashcard-study-mode .card-accordion { border-color: rgba(255, 255, 255, 0.08); background: transparent; }
+:root[data-theme="dark"] body.flashcard-study-mode .card-accordion[open] { border-color: rgba(217, 120, 106, 0.35); background: rgba(255, 255, 255, 0.03); }
+:root[data-theme="dark"] body.flashcard-study-mode .card-accordion[open] .accordion-icon,
+:root[data-theme="dark"] body.flashcard-study-mode .card-accordion[open] .accordion-title { color: #D9786A; }
+
+/* --- Review actions: softer tones, distinct, tidy shortcut chips ---------- */
+body.flashcard-study-mode .rating-btn { border-radius: 12px; box-shadow: none; }
+body.flashcard-study-mode .rating-btn--again {
+  background: #FBF3F1;
+  border: 1px solid rgba(168, 71, 59, 0.22);
+  color: #A8473B;
+}
+body.flashcard-study-mode .rating-btn--again .rating-icon,
+body.flashcard-study-mode .rating-btn--again .rating-label { color: #A8473B; }
+body.flashcard-study-mode .rating-btn--again:hover { background: #F7E9E5; border-color: rgba(168, 71, 59, 0.38); }
+body.flashcard-study-mode .rating-btn--good {
+  background: #F2F5F1;
+  border: 1px solid rgba(79, 122, 100, 0.22);
+  color: #4F7A64;
+}
+body.flashcard-study-mode .rating-btn--good .rating-icon,
+body.flashcard-study-mode .rating-btn--good .rating-label { color: #4F7A64; }
+body.flashcard-study-mode .rating-btn--good:hover { background: #E8EFE8; border-color: rgba(79, 122, 100, 0.38); }
+:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--again { background: rgba(200, 88, 74, 0.1); border-color: rgba(200, 88, 74, 0.3); }
+:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--again .rating-icon,
+:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--again .rating-label,
+:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--again { color: #E0948A; }
+:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--good { background: rgba(110, 160, 134, 0.1); border-color: rgba(110, 160, 134, 0.3); }
+:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--good .rating-icon,
+:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--good .rating-label,
+:root[data-theme="dark"] body.flashcard-study-mode .rating-btn--good { color: #9CC4AE; }
+body.flashcard-study-mode .rating-kbd-badge {
+  background: transparent;
+  border: 1px solid currentColor;
+  border-radius: 6px;
+  padding: 1px 6px;
+  opacity: 0.55;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* --- Prev / position / next: one centered, balanced group ----------------- */
+body.flashcard-study-mode .study-nav-controls,
+body.flashcard-study-mode .nav-row {
+  justify-content: center;
+  gap: 14px;
+  margin-top: 10px;
+}
+body.flashcard-study-mode .study-nav-btn,
+body.flashcard-study-mode .nav-btn {
+  min-width: 104px;
+  height: 40px;
+  min-height: 40px;
+  padding: 0 16px;
+  border-radius: 10px;
+  box-shadow: none;
+}
+body.flashcard-study-mode .study-nav-position {
+  min-width: 104px;
+  height: 40px;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 14px;
+  border-radius: 10px;
+}
+@media (max-width: 767px) {
+  body.flashcard-study-mode .study-nav-controls,
+  body.flashcard-study-mode .nav-row { gap: 8px; }
+  body.flashcard-study-mode .study-nav-btn,
+  body.flashcard-study-mode .nav-btn,
+  body.flashcard-study-mode .study-nav-position { min-width: 0; flex: 1 1 0; }
+}
+
+/* Signature below 1024px: brand row, then one left-aligned credit row */
+@media (max-width: 1023px) {
+  body.flashcard-study-mode .creator-signature {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  body.flashcard-study-mode .creator-signature .cs-credit {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 2px 14px;
+  }
+  body.flashcard-study-mode .creator-signature .cs-meta,
+  body.flashcard-study-mode .creator-signature .cs-author { justify-content: flex-start; }
+}
+:root[data-theme="dark"] body.flashcard-study-mode .card.is-flipped .example-box { border-color: rgba(255, 255, 255, 0.08); }
+
+/* Mobile: author name on its own line so the two links never split apart */
+@media (max-width: 767px) {
+  body.flashcard-study-mode .creator-signature .cs-author > span:first-child { flex-basis: 100%; }
+}
