@@ -23,7 +23,7 @@ class TestDesignSystemPolish(unittest.TestCase):
     def test_illustration_backdrop_is_repainted_not_replaced(self):
         # The SVG artwork is untouched; only its full-bleed backdrop rect is tagged for CSS.
         self.assertIn('<rect class="illu-backdrop"', JS)
-        self.assertIn(".card-illustration-svg .illu-backdrop { fill: var(--hs-ink-plate); }", POLISH)
+        self.assertIn('.card-illustration-svg svg:not([data-style="editorial"]) .illu-backdrop { fill: var(--hs-ink-plate); }', POLISH)
 
     def test_backdrop_regex_tags_only_the_first_full_bleed_rect(self):
         # Run the exact regex from flashcard.js through Node.

@@ -5909,7 +5909,7 @@ body.flashcard-study-mode .card.is-flipped .meaning {
 body.flashcard-study-mode .card.is-flipped .meta-badges-row { margin: 6px 0 4px; color: var(--text-tertiary); }
 
 /* --- Illustration: one warm ink plate for the whole collection ----------- */
-body.flashcard-study-mode .card-illustration-svg .illu-backdrop { fill: var(--hs-ink-plate); }
+body.flashcard-study-mode .card-illustration-svg svg:not([data-style="editorial"]) .illu-backdrop { fill: var(--hs-ink-plate); }
 body.flashcard-study-mode .card-illustration-svg svg,
 body.flashcard-study-mode .card-illustration-img { filter: saturate(0.82); }
 body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration .card-illustration-frame,
@@ -6106,3 +6106,12 @@ body.flashcard-study-mode .study-nav-position {
   body.flashcard-study-mode .study-nav-position { min-width: 0; flex: 1 1 0; }
   body.flashcard-study-mode .creator-signature .cs-links { width: auto; }
 }
+
+/* Redrawn editorial illustrations (data-style="editorial") carry their own warm
+   cream paper, so the frame matches it instead of the ink plate used for the
+   legacy dark set. */
+body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration .card-illustration-frame:has(svg[data-style="editorial"]) {
+  background: #F4EDE2;
+  box-shadow: 0 0 0 1px rgba(60, 46, 32, 0.1);
+}
+body.flashcard-study-mode .card-illustration-svg svg[data-style="editorial"] { filter: none; }
