@@ -36,14 +36,41 @@
 <script>(function(){try{var m=localStorage.getItem('hsk_theme_manual');var e=parseInt(localStorage.getItem('hsk_theme_manual_expiry')||'0',10);if(m&&(m==='dark'||m==='light')&&Date.now()<e){document.documentElement.dataset.theme=m;}else{var p=new URLSearchParams(window.location.search).get('theme');if(p==='dark'||p==='light'){document.documentElement.dataset.theme=p;}else{var h=new Date().getHours();var d=(h>=6&&h<18)?'light':'dark';document.documentElement.dataset.theme=d;}}}catch(e){}if(localStorage.getItem('hsk_show_hanviet')==='false'){document.documentElement.classList.add('hide-hanviet');}})();</script>
 <script>
 if ('serviceWorker' in navigator) {
-  function showUpdateNotification() {
+  var VERSION_RE = /^\d+\.\d+\.\d+$/;
+  // Ask the new service worker which version it is; fall back to the VERSION file.
+  function getNewVersion(worker) {
+    // Start the file fetch right away so the fallback is ready even if the worker never answers.
+    var fromFile = fetch('VERSION?_=' + Date.now(), { cache: 'no-store' })
+      .then(function(r) { return r.ok ? r.text() : ''; })
+      .then(function(t) { t = (t || '').trim(); return VERSION_RE.test(t) ? t : null; })
+      .catch(function() { return null; });
+    var fromWorker = new Promise(function(resolve) {
+      if (!worker || typeof MessageChannel === 'undefined') return resolve(null);
+      var channel = new MessageChannel();
+      var timer = setTimeout(function() { resolve(null); }, 600);
+      channel.port1.onmessage = function(e) {
+        clearTimeout(timer);
+        resolve(e.data && VERSION_RE.test(e.data.version) ? e.data.version : null);
+      };
+      try { worker.postMessage({ type: 'GET_VERSION' }, [channel.port2]); } catch (err) { clearTimeout(timer); resolve(null); }
+    });
+    return fromWorker.then(function(v) { return v || fromFile; });
+  }
+
+  function getCurrentVersion() {
+    var badge = document.querySelector('.footer-version');
+    var v = badge ? badge.textContent.trim().replace(/^v/, '') : '';
+    return VERSION_RE.test(v) ? v : null;
+  }
+
+  function showUpdateNotification(worker) {
     if (document.getElementById('pwaUpdateBanner')) return;
     var banner = document.createElement('div');
     banner.id = 'pwaUpdateBanner';
     banner.setAttribute('role', 'status');
     banner.setAttribute('aria-live', 'polite');
     banner.style.cssText = 'position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:99999;background:var(--card-bg, #1e293b);color:var(--text-primary, #fff);padding:10px 18px;border-radius:12px;border:1px solid var(--accent, #c05638);box-shadow:0 6px 24px rgba(0,0,0,0.28);display:flex;align-items:center;gap:12px;font-size:13px;font-weight:600;max-width:90vw;animation:welcomeToastIn 0.25s ease;';
-    banner.innerHTML = '<span>🚀 Có phiên bản 汉字思维 mới!</span>' +
+    banner.innerHTML = '<span id="pwaUpdateText">🚀 Có phiên bản 汉字思维 mới!</span>' +
       '<button type="button" id="pwaReloadBtn" style="background:var(--accent, #c05638);color:#fff;border:none;padding:5px 12px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;">Tải lại ngay</button>' +
       '<button type="button" id="pwaDismissBtn" aria-label="Đóng" style="background:none;border:none;color:var(--text-secondary, #94a3b8);font-size:16px;cursor:pointer;padding:0 4px;">✕</button>';
     document.body.appendChild(banner);
@@ -53,19 +80,27 @@ if ('serviceWorker' in navigator) {
     document.getElementById('pwaDismissBtn').onclick = function() {
       banner.remove();
     };
+    getNewVersion(worker).then(function(newVersion) {
+      var text = document.getElementById('pwaUpdateText');
+      if (!text || !newVersion) return;
+      var current = getCurrentVersion();
+      if (current === newVersion) return;
+      text.textContent = '🚀 Đã có phiên bản 汉字思维 mới v' + newVersion +
+        (current ? ' (bạn đang dùng v' + current + ')' : '');
+    });
   }
 
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('sw.js').then(function(reg) {
       if (reg.waiting) {
-        showUpdateNotification();
+        showUpdateNotification(reg.waiting);
       }
       reg.addEventListener('updatefound', function() {
         var newWorker = reg.installing;
         if (newWorker) {
           newWorker.addEventListener('statechange', function() {
             if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-              showUpdateNotification();
+              showUpdateNotification(newWorker);
             }
           });
         }
@@ -680,7 +715,7 @@ if ('serviceWorker' in navigator) {
         </span>
       </div>
       <div class="cs-credit">
-        <span class="cs-meta"><span class="footer-version" title="Phiên bản ứng dụng">v3.5.0</span><span class="cs-dot" aria-hidden="true">·</span><span>Tiến trình tự lưu trên thiết bị này</span></span>
+        <span class="cs-meta"><span class="footer-version" title="Phiên bản ứng dụng">v3.6.0</span><span class="cs-dot" aria-hidden="true">·</span><span>Tiến trình tự lưu trên thiết bị này</span></span>
         <span class="cs-author">
           <span>Phát triển bởi <strong>haunguyenngoc442001</strong></span>
           <a class="cs-link" href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer" aria-label="GitHub của haunguyenngoc442001 (mở tab mới)" title="GitHub">
@@ -1276,7 +1311,7 @@ if ('serviceWorker' in navigator) {
     </div>
     <aside class="workstation-right" id="workstationRight" aria-label="Phòng thực hành tương tác"></aside>
     <footer class="app-footer">
-      <p class="footer-note"><span class="footer-version" title="Phiên bản ứng dụng">v3.5.0</span> · <strong>汉字思维</strong> (Hànzì Sīwéi · Hanzi Mind) · Think in Characters. Master Chinese. · Tiến trình tự lưu trên thiết bị này · Phát triển bởi <a href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer">haunguyenngoc442001</a> · <a href="https://www.facebook.com/haunguyenngoc442001/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+      <p class="footer-note"><span class="footer-version" title="Phiên bản ứng dụng">v3.6.0</span> · <strong>汉字思维</strong> (Hànzì Sīwéi · Hanzi Mind) · Think in Characters. Master Chinese. · Tiến trình tự lưu trên thiết bị này · Phát triển bởi <a href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer">haunguyenngoc442001</a> · <a href="https://www.facebook.com/haunguyenngoc442001/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
     </footer>
   </div>
 </div>

@@ -1,4 +1,4 @@
-const APP_VERSION = '3.5.0';
+const APP_VERSION = '3.6.0';
 const ASSET_VERSION = APP_VERSION;
 const CACHE_NAME = 'hsk-flashcards-v' + ASSET_VERSION;
 const FSRS_CDN_URL = 'https://cdn.jsdelivr.net/npm/ts-fsrs@5.4.1/dist/index.umd.js';
@@ -86,6 +86,9 @@ self.addEventListener('fetch', event => {
 
   if (url.origin !== self.location.origin) return;
 
+  // Version probe used by the update banner: always hit the network, never cache.
+  if (url.pathname.endsWith('/VERSION')) return;
+
   // Bypass Service Worker for Range requests and media streaming (audio/video).
   // Cache Storage API cannot cache 206 Partial Content (throws TypeError), and returning
   // full 200 responses to Range requests causes MEDIA_ELEMENT_ERROR format errors in browsers.
@@ -119,4 +122,12 @@ self.addEventListener('fetch', event => {
     if (response.status === 200) await cache.put(request, response.clone());
     return response;
   })());
+});
+
+// Lets the page show which version is being installed ("v3.6.0") in the update banner.
+self.addEventListener('message', event => {
+  if (!event.data || event.data.type !== 'GET_VERSION') return;
+  const reply = { type: 'VERSION', version: APP_VERSION };
+  if (event.ports && event.ports[0]) event.ports[0].postMessage(reply);
+  else if (event.source) event.source.postMessage(reply);
 });
