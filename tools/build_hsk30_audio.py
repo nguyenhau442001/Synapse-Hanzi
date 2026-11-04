@@ -60,8 +60,8 @@ def file_hash(path: Path) -> str:
         hasher.update(f.read())
     return hasher.hexdigest()[:12]
 
-def synthesize_clip(text: str, out_path: Path, max_retries: int = 3) -> None:
-    """Generate audio using gTTS and normalize via ffmpeg."""
+def synthesize_clip(text: str, out_path: Path, max_retries: int = 1) -> None:
+    """Generate audio using gTTS (with instant macOS Tingting fallback on 429) and normalize via ffmpeg."""
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False) as tmp:
         tmp_name = tmp.name
@@ -78,13 +78,27 @@ def synthesize_clip(text: str, out_path: Path, max_retries: int = 3) -> None:
             ]
             subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
             return
-        except Exception as e:
-            if attempt == max_retries - 1:
-                raise e
-            time.sleep(1.0 + attempt * 1.5)
+        except Exception:
+            pass
         finally:
             if os.path.exists(tmp_name):
                 os.remove(tmp_name)
+
+    # Fallback to macOS local Tingting voice (zh_CN): 0ms latency, zero network dependency, immune to 429
+    with tempfile.NamedTemporaryFile(suffix=".aiff", delete=False) as aiff_tmp:
+        aiff_name = aiff_tmp.name
+
+    try:
+        subprocess.run(["say", "-v", "Tingting", "-o", aiff_name, text], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
+        cmd = [
+            "ffmpeg", "-y", "-i", aiff_name,
+            "-af", "silenceremove=start_periods=1:start_duration=0.02:start_threshold=-40dB:stop_periods=1:stop_duration=0.08:stop_threshold=-40dB",
+            "-ar", "24000", "-b:a", "64k", str(out_path)
+        ]
+        subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
+    finally:
+        if os.path.exists(aiff_name):
+            os.remove(aiff_name)
 
 def git_run_with_retry(cmd: list[str], cwd: Path = REPO_ROOT, env: dict = GIT_ENV, attempts: int = 40):
     for i in range(attempts):
