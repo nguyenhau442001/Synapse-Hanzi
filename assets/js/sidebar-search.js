@@ -1,5 +1,5 @@
-// Global search across HSK 1-6 with instant example sentences, rich previews,
-// and direct one-click flashcard study navigation.
+// Global dictionary search over the HSK 3.0 database (levels 1-9) with instant
+// example sentences, rich previews, and direct one-click flashcard study navigation.
 var sidebarSearchIndex = null;
 var sidebarSearchIndexPromise = null;
 
@@ -33,14 +33,30 @@ function formatSearchExample(text) {
     .replace(/&lt;\/u&gt;/gi, '</u>');
 }
 
+const HSK30_SEARCH_LEVEL_KEYS = ['hsk30_1', 'hsk30_2', 'hsk30_3', 'hsk30_4', 'hsk30_5', 'hsk30_6', 'hsk30_7', 'hsk30_8', 'hsk30_9'];
+
+// Search always reads the HSK 3.0 database. Levels 7-9 share one vocabulary list
+// (sharedVocabularyGroup), so it is fetched once and labelled with the shared range.
+function hsk30SearchSources() {
+  const levelKeys = typeof hsk30LevelKeys === 'function' ? hsk30LevelKeys() : HSK30_SEARCH_LEVEL_KEYS;
+  const sources = new Map();
+  for (const key of levelKeys) {
+    const cfg = LEVELS[key];
+    if (!cfg || !cfg.dataUrl) continue;
+    const groupKey = cfg.sharedVocabularyGroup || cfg.dataUrl;
+    if (!sources.has(groupKey)) {
+      const label = cfg.sharedVocabularyGroup ? `HSK 3.0 – ${cfg.sharedVocabularyGroup}` : cfg.label;
+      sources.set(groupKey, { key, dataUrl: cfg.dataUrl, label });
+    }
+  }
+  return Array.from(sources.values());
+}
+
 function buildSidebarSearchIndex() {
   if (sidebarSearchIndexPromise) return sidebarSearchIndexPromise;
-  const levelKeys = typeof hskLevelKeys === 'function' ? hskLevelKeys() : ['hsk1', 'hsk2', 'hsk3', 'hsk4', 'hsk5', 'hsk6'];
   sidebarSearchIndexPromise = Promise.all(
-    levelKeys.map(key => {
-      const cfg = LEVELS[key];
-      if (!cfg || !cfg.dataUrl) return Promise.resolve([]);
-      return fetch(cfg.dataUrl)
+    hsk30SearchSources().map(src => {
+      return fetch(src.dataUrl)
         .then(r => r.json())
         .then(words => words.map(w => ({
           id: w.id,
@@ -51,8 +67,8 @@ function buildSidebarSearchIndex() {
           example_zh: w.example_zh || w.example || '',
           example_py: w.example_py || '',
           example_vi: w.example_vi || '',
-          levelKey: key,
-          level: cfg.label,
+          levelKey: src.key,
+          level: src.label,
           pinyinStripped: stripTones(w.pinyin),
           meaningLower: String(w.meaning || '').toLowerCase(),
         })))
