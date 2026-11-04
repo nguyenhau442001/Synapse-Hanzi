@@ -86,22 +86,23 @@ def synthesize_clip(text: str, out_path: Path, max_retries: int = 3) -> None:
             if os.path.exists(tmp_name):
                 os.remove(tmp_name)
 
-def git_run_with_retry(cmd: list[str], cwd: Path = REPO_ROOT, env: dict = GIT_ENV, max_retries: int = 5):
-    for i in range(max_retries):
+def git_run_with_retry(cmd: list[str], cwd: Path = REPO_ROOT, env: dict = GIT_ENV, attempts: int = 40):
+    for i in range(attempts):
         res = subprocess.run(cmd, cwd=cwd, env=env, capture_output=True, text=True)
         if res.returncode == 0:
             return res
-        if "index.lock" in res.stderr and i < max_retries - 1:
-            time.sleep(0.4 * (i + 1))
-            continue
-        res.check_returncode()
+        if "index.lock" not in res.stderr and "cannot lock ref" not in res.stderr:
+            raise RuntimeError(f"git {' '.join(cmd)} failed: {res.stderr.strip()}")
+        time.sleep(0.5 + i * 0.25)
+    raise RuntimeError(f"git {' '.join(cmd)} kept failing: {res.stderr.strip()}")
 
 def build_audio(
     level: str = "level2",
     start_idx: int = 0,
     count: int = -1,
     overwrite: bool = False,
-    commit_each: bool = True
+    commit_each: bool = True,
+    push_every: int = 50
 ):
     config = LEVEL_MAP.get(level)
     if not config:
@@ -176,20 +177,27 @@ def build_audio(
 
         # Commit per word if requested
         if commit_each:
-            files_to_add = [str(manifest_path)]
+            files_to_add = [str(manifest_path.relative_to(REPO_ROOT))]
             if w_path.exists():
-                files_to_add.append(str(w_path))
+                files_to_add.append(str(w_path.relative_to(REPO_ROOT)))
             if e_path.exists():
-                files_to_add.append(str(e_path))
-            git_run_with_retry(["git", "add"] + files_to_add)
+                files_to_add.append(str(e_path.relative_to(REPO_ROOT)))
+            git_run_with_retry(["git", "add", "--"] + files_to_add)
 
-            status = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=REPO_ROOT)
-            if status.returncode != 0:
+            status = subprocess.run(["git", "status", "--porcelain", "--"] + files_to_add, cwd=REPO_ROOT, capture_output=True, text=True)
+            if status.stdout.strip():
                 commit_msg = f"feat(audio): add HSK 3.0 L{lvl_num} prebuilt audio for {hanzi} ({pinyin})"
-                git_run_with_retry(["git", "commit", "-m", commit_msg])
+                git_run_with_retry(["git", "commit", "-m", commit_msg, "--"] + files_to_add)
 
         processed += 1
         print(f"[{processed}/{total}] HSK 3.0 L{lvl_num}: {hanzi} ({pinyin}) done.")
+
+        if commit_each and push_every > 0 and (processed % push_every == 0 or processed == total):
+            try:
+                git_run_with_retry(["git", "push", "origin", "HEAD:main"])
+                print(f"  [↑] Pushed progress ({processed}/{total}) to origin main.")
+            except Exception as e:
+                print(f"  [!] Push failed (will retry next interval): {e}")
 
     print(f"[✓] Completed generating audio for {level_key} ({len(manifest['items'])} items in manifest).")
 
@@ -199,6 +207,7 @@ if __name__ == "__main__":
     parser.add_argument("--start", type=int, default=0, help="Start index")
     parser.add_argument("--count", type=int, default=-1, help="Count of items to process")
     parser.add_argument("--overwrite", action="store_true", help="Overwrite existing audio files")
+    parser.add_argument("--push-every", type=int, default=50, help="Push commits every N items")
     parser.add_argument("--no-commit", action="store_true", help="Disable per-word commit")
     args = parser.parse_args()
 
@@ -207,5 +216,6 @@ if __name__ == "__main__":
         start_idx=args.start,
         count=args.count,
         overwrite=args.overwrite,
-        commit_each=not args.no_commit
+        commit_each=not args.no_commit,
+        push_every=args.push_every
     )
