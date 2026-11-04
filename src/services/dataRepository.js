@@ -31,11 +31,17 @@ export const LEVELS_CONFIG = {
 const vocabCache = new Map();
 const audioManifestCache = new Map();
 
+// Display order: HSK 3.0 (current standard) first, then topics, then HSK 2.0 (legacy).
+const VERSION_DISPLAY_ORDER = { '3.0': 0, topic: 1, '2.0': 2 };
+
 /**
- * Get all available levels formatted as a list
+ * Get all available levels formatted as a list, HSK 3.0 first and HSK 2.0 last (legacy).
  */
 export function getLevelsList() {
-  return Object.values(LEVELS_CONFIG);
+  return Object.values(LEVELS_CONFIG)
+    .map((cfg, i) => ({ cfg, i }))
+    .sort((a, b) => ((VERSION_DISPLAY_ORDER[a.cfg.version] ?? 1) - (VERSION_DISPLAY_ORDER[b.cfg.version] ?? 1)) || a.i - b.i)
+    .map(({ cfg }) => cfg);
 }
 
 /**

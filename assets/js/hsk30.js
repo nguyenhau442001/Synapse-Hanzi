@@ -1,6 +1,9 @@
 // HSK 3.0 level picker: version switcher + dynamic grid, reusing the LEVELS/selectLevel pipeline.
-const PICKER_VERSION_STORAGE_KEY = 'hsk_picker_version';
-let pickerVersion = '2.0';
+// HSK 3.0 is the current standard and shown by default; HSK 2.0 is kept as a legacy option.
+// Storage key bumped so earlier saved '2.0' defaults migrate to HSK 3.0 once.
+const PICKER_VERSION_STORAGE_KEY = 'hsk_picker_version_v2';
+const DEFAULT_PICKER_VERSION = '3.0';
+let pickerVersion = DEFAULT_PICKER_VERSION;
 
 function getInitialPickerVersion() {
   try {
@@ -12,7 +15,7 @@ function getInitialPickerVersion() {
     const saved = localStorage.getItem(PICKER_VERSION_STORAGE_KEY);
     if (saved === '2.0' || saved === '3.0') return saved;
   } catch (e) {}
-  return '2.0';
+  return DEFAULT_PICKER_VERSION;
 }
 
 function setPickerVersion(version) {
@@ -30,10 +33,7 @@ function setPickerVersion(version) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const initVer = getInitialPickerVersion();
-  if (initVer && initVer !== '2.0') {
-    setPickerVersion(initVer);
-  }
+  setPickerVersion(getInitialPickerVersion());
 });
 
 function hsk30KnownCount(level) {
