@@ -86,6 +86,16 @@ def synthesize_clip(text: str, out_path: Path, max_retries: int = 3) -> None:
             if os.path.exists(tmp_name):
                 os.remove(tmp_name)
 
+def git_run_with_retry(cmd: list[str], cwd: Path = REPO_ROOT, env: dict = GIT_ENV, max_retries: int = 5):
+    for i in range(max_retries):
+        res = subprocess.run(cmd, cwd=cwd, env=env, capture_output=True, text=True)
+        if res.returncode == 0:
+            return res
+        if "index.lock" in res.stderr and i < max_retries - 1:
+            time.sleep(0.4 * (i + 1))
+            continue
+        res.check_returncode()
+
 def build_audio(
     level: str = "level2",
     start_idx: int = 0,
@@ -171,13 +181,12 @@ def build_audio(
                 files_to_add.append(str(w_path))
             if e_path.exists():
                 files_to_add.append(str(e_path))
-            subprocess.run(["git", "add"] + files_to_add, check=True, cwd=REPO_ROOT)
-            
-            # Check if there are staged changes to commit
+            git_run_with_retry(["git", "add"] + files_to_add)
+
             status = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=REPO_ROOT)
             if status.returncode != 0:
                 commit_msg = f"feat(audio): add HSK 3.0 L{lvl_num} prebuilt audio for {hanzi} ({pinyin})"
-                subprocess.run(["git", "commit", "-m", commit_msg], check=True, cwd=REPO_ROOT, env=GIT_ENV)
+                git_run_with_retry(["git", "commit", "-m", commit_msg])
 
         processed += 1
         print(f"[{processed}/{total}] HSK 3.0 L{lvl_num}: {hanzi} ({pinyin}) done.")
