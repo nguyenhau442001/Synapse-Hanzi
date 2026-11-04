@@ -14,14 +14,14 @@ export const LEVELS_CONFIG = {
 
   // HSK 3.0
   hsk30_1: { id: 'hsk30_1', label: 'HSK 3.0 – 1', band: 'Sơ cấp', version: '3.0', dataUrl: 'database/vocabs/hsk3_0/level1_vocabularies.json', audioManifestUrl: 'database/prebuilt_audio/hsk30_1/manifest.json', total: 300 },
-  hsk30_2: { id: 'hsk30_2', label: 'HSK 3.0 – 2', band: 'Sơ cấp', version: '3.0', dataUrl: 'database/vocabs/hsk3_0/level2_vocabularies.json', total: 200 },
-  hsk30_3: { id: 'hsk30_3', label: 'HSK 3.0 – 3', band: 'Sơ cấp', version: '3.0', dataUrl: 'database/vocabs/hsk3_0/level3_vocabularies.json', total: 500 },
-  hsk30_4: { id: 'hsk30_4', label: 'HSK 3.0 – 4', band: 'Trung cấp', version: '3.0', dataUrl: 'database/vocabs/hsk3_0/level4_vocabularies.json', total: 1000 },
-  hsk30_5: { id: 'hsk30_5', label: 'HSK 3.0 – 5', band: 'Trung cấp', version: '3.0', dataUrl: 'database/vocabs/hsk3_0/level5_vocabularies.json', total: 1600 },
-  hsk30_6: { id: 'hsk30_6', label: 'HSK 3.0 – 6', band: 'Trung cấp', version: '3.0', dataUrl: 'database/vocabs/hsk3_0/level6_vocabularies.json', total: 1800 },
-  hsk30_7: { id: 'hsk30_7', label: 'HSK 3.0 – 7', band: 'Cao cấp', version: '3.0', dataUrl: 'database/vocabs/hsk3_0/level7_vocabularies.json', total: 5600 },
-  hsk30_8: { id: 'hsk30_8', label: 'HSK 3.0 – 8', band: 'Cao cấp', version: '3.0', dataUrl: 'database/vocabs/hsk3_0/level8_vocabularies.json', total: 5600 },
-  hsk30_9: { id: 'hsk30_9', label: 'HSK 3.0 – 9', band: 'Cao cấp', version: '3.0', dataUrl: 'database/vocabs/hsk3_0/level9_vocabularies.json', total: 5600 },
+  hsk30_2: { id: 'hsk30_2', label: 'HSK 3.0 – 2', band: 'Sơ cấp', version: '3.0', dataUrl: 'database/vocabs/hsk3_0/level2_vocabularies.json', audioManifestUrl: 'database/prebuilt_audio/hsk30_2/manifest.json', total: 200 },
+  hsk30_3: { id: 'hsk30_3', label: 'HSK 3.0 – 3', band: 'Sơ cấp', version: '3.0', dataUrl: 'database/vocabs/hsk3_0/level3_vocabularies.json', audioManifestUrl: 'database/prebuilt_audio/hsk30_3/manifest.json', total: 500 },
+  hsk30_4: { id: 'hsk30_4', label: 'HSK 3.0 – 4', band: 'Trung cấp', version: '3.0', dataUrl: 'database/vocabs/hsk3_0/level4_vocabularies.json', audioManifestUrl: 'database/prebuilt_audio/hsk30_4/manifest.json', total: 1000 },
+  hsk30_5: { id: 'hsk30_5', label: 'HSK 3.0 – 5', band: 'Trung cấp', version: '3.0', dataUrl: 'database/vocabs/hsk3_0/level5_vocabularies.json', audioManifestUrl: 'database/prebuilt_audio/hsk30_5/manifest.json', total: 1600 },
+  hsk30_6: { id: 'hsk30_6', label: 'HSK 3.0 – 6', band: 'Trung cấp', version: '3.0', dataUrl: 'database/vocabs/hsk3_0/level6_vocabularies.json', audioManifestUrl: 'database/prebuilt_audio/hsk30_6/manifest.json', total: 1800 },
+  hsk30_7: { id: 'hsk30_7', label: 'HSK 3.0 – 7', band: 'Cao cấp', version: '3.0', dataUrl: 'database/vocabs/hsk3_0/level7_vocabularies.json', audioManifestUrl: 'database/prebuilt_audio/hsk30_7/manifest.json', total: 5600 },
+  hsk30_8: { id: 'hsk30_8', label: 'HSK 3.0 – 8', band: 'Cao cấp', version: '3.0', dataUrl: 'database/vocabs/hsk3_0/level8_vocabularies.json', audioManifestUrl: 'database/prebuilt_audio/hsk30_7/manifest.json', total: 5600 },
+  hsk30_9: { id: 'hsk30_9', label: 'HSK 3.0 – 9', band: 'Cao cấp', version: '3.0', dataUrl: 'database/vocabs/hsk3_0/level9_vocabularies.json', audioManifestUrl: 'database/prebuilt_audio/hsk30_7/manifest.json', total: 5600 },
 
   // Topics
   topic_it: { id: 'topic_it', label: 'Công nghệ thông tin', icon: '💻', version: 'topic', dataUrl: 'database/vocabs/topics/it.json', total: 60 }
