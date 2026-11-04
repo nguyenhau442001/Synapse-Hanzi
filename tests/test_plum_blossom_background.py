@@ -101,3 +101,33 @@ def test_compact_statistics_and_editorial_example():
     # Editorial dictionary entry example box
     assert ".example-box" in css_content
     assert "Editorial Dictionary Entry" in css_content
+
+
+def test_ink_landscape_svgs_have_mountains_and_orb():
+    """Verify both themes include soft ink-wash mountain ridges and a sun/moon orb."""
+    light = LIGHT_SVG.read_text(encoding="utf-8")
+    dark = DARK_SVG.read_text(encoding="utf-8")
+    for content in (light, dark):
+        assert content.count('class="ink-ridge ') == 3
+        assert 'filter="url(#ink_soft_edge)"' in content
+    assert 'class="ink-sun"' in light
+    assert 'class="ink-moon"' in dark
+
+
+def test_plum_petals_ink_blooms_and_calligraphy():
+    """Verify falling plum petals, ink blooms and margin calligraphy stay subtle and bounded."""
+    js_content = PLUM_JS.read_text(encoding="utf-8")
+
+    # Petal counts stay small so the effect never distracts from learning
+    assert "desktopPetals: 10" in js_content
+    assert "mobilePetals: 4" in js_content
+    assert "renderPetals" in js_content
+
+    # Ink blooms are occasional and capped
+    assert "maxInkBlooms: 2" in js_content
+    assert "renderInkBlooms" in js_content
+
+    # Calligraphy only renders in wide side margins, never over content
+    assert "calligraphyMinGutter: 120" in js_content
+    assert "measureGutter" in js_content
+    assert "renderCalligraphy" in js_content
