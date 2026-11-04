@@ -119,13 +119,6 @@ def update_index_html(new_version: str):
     
     if re.search(badge_regex, content):
         content = re.sub(badge_regex, new_badge, content)
-    else:
-        # Insert into footer note
-        content = re.sub(
-            r'(<p class="footer-note">)',
-            rf'\1{new_badge} · ',
-            content
-        )
         
     INDEX_HTML.write_text(content, encoding="utf-8")
     print(f"✓ Updated index.html: footer badge v{new_version}")

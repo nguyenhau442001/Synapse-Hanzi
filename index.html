@@ -58,10 +58,25 @@ if ('serviceWorker' in navigator) {
   }
 
   function getCurrentVersion() {
+    if (window.APP_VERSION && VERSION_RE.test(window.APP_VERSION)) return window.APP_VERSION;
     var badge = document.querySelector('.footer-version');
     var v = badge ? badge.textContent.trim().replace(/^v/, '') : '';
     return VERSION_RE.test(v) ? v : null;
   }
+
+  // Dynamically load and sync version from VERSION file
+  fetch('VERSION?_=' + Date.now(), { cache: 'no-store' })
+    .then(function(r) { return r.ok ? r.text() : ''; })
+    .then(function(t) {
+      t = (t || '').trim();
+      if (VERSION_RE.test(t)) {
+        window.APP_VERSION = t;
+        document.querySelectorAll('.footer-version').forEach(function(el) {
+          el.textContent = 'v' + t;
+        });
+      }
+    })
+    .catch(function() {});
 
   function showUpdateNotification(worker) {
     if (document.getElementById('pwaUpdateBanner')) return;
@@ -1310,9 +1325,6 @@ if ('serviceWorker' in navigator) {
 
     </div>
     <aside class="workstation-right" id="workstationRight" aria-label="Phòng thực hành tương tác"></aside>
-    <footer class="app-footer">
-      <p class="footer-note"><span class="footer-version" title="Phiên bản ứng dụng">v3.8.1</span> · <strong>汉字思维</strong> (Hànzì Sīwéi · Hanzi Mind) · Think in Characters. Master Chinese. · Tiến trình tự lưu trên thiết bị này · Phát triển bởi <a href="https://github.com/nguyenhau442001/synapse-hanzi/" target="_blank" rel="noopener noreferrer">haunguyenngoc442001</a> · <a href="https://www.facebook.com/haunguyenngoc442001/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
-    </footer>
   </div>
 </div>
 

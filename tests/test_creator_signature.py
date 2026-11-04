@@ -36,7 +36,7 @@ class TestCreatorSignature(unittest.TestCase):
 
     def test_version_badges_stay_in_sync_with_version_file(self):
         badges = re.findall(r'<span class="footer-version"[^>]*>v([^<]*)</span>', INDEX)
-        self.assertGreaterEqual(len(badges), 2)
+        self.assertGreaterEqual(len(badges), 1)
         self.assertEqual(set(badges), {VERSION})
 
     def test_desktop_card_reserves_room_for_controls(self):
