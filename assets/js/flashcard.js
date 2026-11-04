@@ -1279,6 +1279,13 @@ function render(animate) {
     if (!/viewBox=/i.test(normalized) && /width=["']240["']/i.test(normalized) && /height=["']240["']/i.test(normalized)) {
       normalized = normalized.replace(/<svg\b([^>]*)>/i, '<svg$1 viewBox="0 0 240 240">');
     }
+    // Presentation hook only (artwork untouched): tag the full-bleed backdrop rect that
+    // ~99.5% of the illustration set starts with, so CSS can repaint the baked-in navy
+    // panel with the app's warm ink tone consistently across the whole collection.
+    normalized = normalized.replace(
+      /(<svg\b[^>]*>(?:\s|<!--[\s\S]*?-->|<defs\b[\s\S]*?<\/defs>)*)<rect\b(?=[^>]*\bwidth=["'](?:240|100%)["'])(?=[^>]*\bheight=["'](?:240|100%)["'])/i,
+      '$1<rect class="illu-backdrop"'
+    );
     return normalized;
   }
 

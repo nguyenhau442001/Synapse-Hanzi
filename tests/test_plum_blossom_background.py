@@ -74,9 +74,9 @@ def test_subtle_ambient_animation_js():
     assert PLUM_JS.exists(), "Animation script missing"
     js_content = PLUM_JS.read_text(encoding="utf-8")
 
-    # Only a handful of faint particles (v3.7.0 noise reduction)
-    assert "desktopParticles: 6" in js_content
-    assert "mobileParticles: 3" in js_content
+    # Only a handful of faint particles (v3.8.2 noise reduction)
+    assert "desktopParticles: 4" in js_content
+    assert "mobileParticles: 2" in js_content
 
     # Core subtle ink layers
     assert "renderMist" in js_content
@@ -123,8 +123,8 @@ def test_background_has_no_petals_calligraphy_or_seal():
     for removed in ("Petal", "petal", "renderCalligraphy", "sealText", "calligraphyLeft"):
         assert removed not in js_content
 
-    # Ink blooms: at most one, only in wide empty side margins
-    assert "maxInkBlooms: 1" in js_content
+    # Ink blooms disabled (v3.8.2); the margin guard stays for safety
+    assert "maxInkBlooms: 0" in js_content
     assert "inkBloomMinGutter: 160" in js_content
     assert "if (g < CONFIG.inkBloomMinGutter)" in js_content
     assert "renderInkBlooms" in js_content

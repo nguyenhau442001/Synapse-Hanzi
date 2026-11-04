@@ -15,12 +15,12 @@
   'use strict';
 
   const CONFIG = {
-    desktopParticles: 6,
-    mobileParticles: 3,
+    desktopParticles: 4,
+    mobileParticles: 2,
     mobileBreakpoint: 768,
     mistLayers: 2,
     inkBloomIntervalMs: [6000, 11000],
-    maxInkBlooms: 1,
+    maxInkBlooms: 0,
     inkBloomMinGutter: 160,
   };
 
