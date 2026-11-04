@@ -1,25 +1,43 @@
 <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240">
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#0f172a"/>
       <stop offset="100%" stop-color="#1e293b"/>
     </linearGradient>
   </defs>
   <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
-  
-  <path d="M40 180h160v20H40z" fill="#334155" opacity="0.6"/>
-  
-  <ellipse cx="120" cy="140" rx="35" ry="45" fill="#fef3c7" stroke="#fbbf24" stroke-width="4"/>
-  <path d="M120 95c15 0 25 10 25 25 0 20-10 30-25 30" fill="#fde68a"/>
-  
-  <circle cx="160" cy="190" r="15" fill="#fb923c"/>
-  <circle cx="80" cy="195" r="10" fill="#fb923c"/>
-  
-  <path d="M150 160l20-10 10 20-20 10z" fill="#10b981" opacity="0.8"/>
-  <path d="M70 170l15-5 5 15-15 5z" fill="#38bdf8" opacity="0.8"/>
-  
-  <path d="M100 130c-5-5-5-15 0-20" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
-  <path d="M140 130c5-5 5-15 0-20" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
-  
-  <circle cx="120" cy="140" r="5" fill="#f59e0b" opacity="0.3"/>
+  <!-- Breakfast Dining Table -->
+  <rect x="0" y="165" width="240" height="75" fill="#334155"/>
+  <line x1="0" y1="165" x2="240" y2="165" stroke="#475569" stroke-width="3"/>
+  <!-- Table Mat / Runner -->
+  <ellipse cx="120" cy="180" rx="95" ry="32" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+  <!-- Fresh Milk Glass (Left) -->
+  <rect x="35" y="125" width="28" height="42" rx="3" fill="#ffffff" opacity="0.9"/>
+  <ellipse cx="49" cy="125" rx="14" ry="4" fill="#f8fafc"/>
+  <rect x="40" y="110" width="4" height="45" rx="2" fill="#f43f5e" transform="rotate(-12 40 110)"/>
+  <!-- Central Ceramic Egg Cup with Boiled Egg -->
+  <g transform="translate(120, 160)">
+    <!-- Egg cup base & stem -->
+    <ellipse cx="0" cy="12" rx="22" ry="6" fill="#0284c7"/>
+    <path d="M-8 12 L-6 0 L6 0 L8 12 Z" fill="#0284c7"/>
+    <!-- Egg cup bowl -->
+    <path d="M-20 -15 C-20 4 20 4 20 -15 Z" fill="#0284c7"/>
+    <!-- The Boiled Egg (with top sliced open revealing golden yolk) -->
+    <!-- White outer shell -->
+    <path d="M-18 -15 C-18 -50 18 -50 18 -15 Z" fill="#f8fafc"/>
+    <!-- Soft boiled golden egg yolk inside -->
+    <ellipse cx="0" cy="-26" rx="11" ry="9" fill="#f59e0b"/>
+    <ellipse cx="-2" cy="-28" rx="8" ry="6" fill="#fbbf24"/>
+    <circle cx="2" cy="-30" r="2" fill="#ffffff" opacity="0.8"/>
+    <!-- Egg spoon beside cup -->
+    <path d="M26 10 Q32 -5 36 -25" stroke="#94a3b8" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <ellipse cx="37" cy="-27" rx="5" ry="3" fill="#cbd5e1"/>
+  </g>
+  <!-- Toasted Bread Slices in Basket (Right) -->
+  <g transform="translate(185, 140)">
+    <rect x="-16" y="5" width="30" height="26" rx="4" fill="#b45309" transform="rotate(-8)"/>
+    <rect x="-13" y="7" width="24" height="22" rx="3" fill="#f59e0b" transform="rotate(-8)"/>
+    <rect x="-8" y="2" width="30" height="26" rx="4" fill="#b45309" transform="rotate(8)"/>
+    <rect x="-5" y="4" width="24" height="22" rx="3" fill="#fbbf24" transform="rotate(8)"/>
+  </g>
 </svg>

@@ -1,1 +1,55 @@
-<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg"><rect width="240" height="240" rx="24" fill="#1A1D24"/><g transform="translate(40, 60)"><path d="M120 120c0-33.137 26.863-60 60-60s60 26.863 60 60" stroke="#FFB800" stroke-width="8" stroke-linecap="round" fill="none"/><circle cx="180" cy="120" r="10" fill="#FFB800"/><path d="M10 140h140v20H10z" fill="#4A5568"/><path d="M30 140v-40h20v40M80 140v-60h20v60M130 140v-30h20v30" fill="#FFB800"/><circle cx="160" cy="50" r="25" fill="#FFB800"/><path d="M150 40l20 20M170 40l-20 20" stroke="#1A1D24" stroke-width="4" stroke-linecap="round"/><path d="M155 55c5 5 15 5 20 0" stroke="#1A1D24" stroke-width="4" stroke-linecap="round"/><path d="M20 100l-10-20M140 100l10-20" stroke="#FFB800" stroke-width="6" stroke-linecap="round"/></g></svg>
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
+  <!-- Carnival Pennant Bunting (String Flags across top) -->
+  <path d="M10 25 Q120 45 230 25" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+  <polygon points="30,28 42,29 36,46" fill="#ef4444"/>
+  <polygon points="55,31 67,32 61,49" fill="#f59e0b"/>
+  <polygon points="80,34 92,35 86,52" fill="#10b981"/>
+  <polygon points="105,35 117,35 111,53" fill="#38bdf8"/>
+  <polygon points="130,35 142,34 136,52" fill="#8b5cf6"/>
+  <polygon points="155,33 167,31 161,49" fill="#ec4899"/>
+  <polygon points="180,30 192,28 186,46" fill="#fbbf24"/>
+  <!-- Park Ground -->
+  <rect x="0" y="185" width="240" height="55" fill="#334155"/>
+  <!-- Grand Glowing Ferris Wheel -->
+  <g transform="translate(100, 115)">
+    <!-- Main wheel supports A-frame -->
+    <line x1="-35" y1="70" x2="0" y2="0" stroke="#64748b" stroke-width="4"/>
+    <line x1="35" y1="70" x2="0" y2="0" stroke="#64748b" stroke-width="4"/>
+    <line x1="-20" y1="40" x2="20" y2="40" stroke="#64748b" stroke-width="2.5"/>
+    <!-- Outer and inner wheel rings -->
+    <circle cx="0" cy="0" r="62" stroke="#38bdf8" stroke-width="3" fill="none" opacity="0.8"/>
+    <circle cx="0" cy="0" r="45" stroke="#f59e0b" stroke-width="2" fill="none" opacity="0.6"/>
+    <!-- Wheel spokes -->
+    <line x1="0" y1="-62" x2="0" y2="62" stroke="#94a3b8" stroke-width="1.5"/>
+    <line x1="-62" y1="0" x2="62" y2="0" stroke="#94a3b8" stroke-width="1.5"/>
+    <line x1="-44" y1="-44" x2="44" y2="44" stroke="#94a3b8" stroke-width="1.5"/>
+    <line x1="44" y1="-44" x2="-44" y2="44" stroke="#94a3b8" stroke-width="1.5"/>
+    <!-- Center hub -->
+    <circle cx="0" cy="0" r="7" fill="#f43f5e"/>
+    <!-- 8 Colorful Passenger Gondolas / Pods -->
+    <circle cx="0" cy="-62" r="7" fill="#ef4444"/>
+    <circle cx="44" cy="-44" r="7" fill="#f59e0b"/>
+    <circle cx="62" cy="0" r="7" fill="#10b981"/>
+    <circle cx="44" cy="44" r="7" fill="#06b6d4"/>
+    <circle cx="0" cy="62" r="7" fill="#3b82f6"/>
+    <circle cx="-44" cy="44" r="7" fill="#8b5cf6"/>
+    <circle cx="-62" cy="0" r="7" fill="#ec4899"/>
+    <circle cx="-44" cy="-44" r="7" fill="#eab308"/>
+  </g>
+  <!-- Cluster of Floating Festive Balloons (Right) -->
+  <g transform="translate(195, 140)">
+    <line x1="0" y1="45" x2="-10" y2="0" stroke="#94a3b8" stroke-width="1"/>
+    <line x1="0" y1="45" x2="2" y2="-12" stroke="#94a3b8" stroke-width="1"/>
+    <line x1="0" y1="45" x2="14" y2="2" stroke="#94a3b8" stroke-width="1"/>
+    <ellipse cx="-10" cy="-2" rx="9" ry="12" fill="#ef4444"/>
+    <ellipse cx="2" cy="-14" rx="9" ry="12" fill="#38bdf8"/>
+    <ellipse cx="14" cy="0" rx="9" ry="12" fill="#facc15"/>
+  </g>
+</svg>

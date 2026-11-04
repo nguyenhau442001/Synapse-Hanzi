@@ -1,1 +1,46 @@
-<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg"><rect width="240" height="240" rx="24" fill="#1A1D24"/><g transform="translate(60, 60)"><path d="M100 120c0-22.09-17.91-40-40-40s-40 17.91-40 40c0 22.09 17.91 40 40 40s40-17.91 40-40z" fill="#FFB347"/><path d="M60 40c-22.09 0-40 17.91-40 40v40h80v-40c0-22.09-17.91-40-40-40z" fill="#E0E0E0"/><path d="M45 55h30v10H45z" fill="#B0B0B0"/><path d="M55 30h10v15H55z" fill="#B0B0B0"/><path d="M30 100h60v5H30z" fill="#FF8C00"/><path d="M20 120h80v10H20z" fill="#FF8C00"/><path d="M35 140h50v10H35z" fill="#FF8C00"/></g></svg>
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
+  <!-- Clinic Room Wall with Cross Emblem -->
+  <circle cx="120" cy="45" r="18" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  <rect x="116" y="34" width="8" height="22" rx="2" fill="#ef4444"/>
+  <rect x="109" y="41" width="22" height="8" rx="2" fill="#ef4444"/>
+  <!-- Clinic Floor -->
+  <rect x="0" y="180" width="240" height="60" fill="#334155"/>
+  <!-- Examination Desk -->
+  <rect x="75" y="130" width="90" height="50" fill="#475569" rx="3"/>
+  <line x1="75" y1="130" x2="165" y2="130" stroke="#64748b" stroke-width="2"/>
+  <!-- Doctor (Left - white coat with stethoscope) -->
+  <g transform="translate(30, 75)">
+    <!-- Head -->
+    <circle cx="20" cy="18" r="15" fill="#fcd34d"/>
+    <path d="M8 18 C8 6 32 6 33 18 Z" fill="#334155"/>
+    <circle cx="25" cy="18" r="2" fill="#0f172a"/>
+    <!-- White Medical Coat -->
+    <path d="M8 38 L32 38 L38 95 L2 95 Z" fill="#f8fafc"/>
+    <!-- Stethoscope around neck -->
+    <path d="M12 38 Q20 58 28 38" stroke="#0284c7" stroke-width="3" fill="none"/>
+    <circle cx="20" cy="58" r="4" fill="#0284c7"/>
+    <!-- Arm with medical clipboard -->
+    <rect x="28" y="55" width="18" height="25" rx="2" fill="#d97706"/>
+    <rect x="31" y="58" width="12" height="19" fill="#f8fafc"/>
+  </g>
+  <!-- Patient (Right - listening attentively to diagnosis) -->
+  <g transform="translate(165, 85)">
+    <!-- Head -->
+    <circle cx="18" cy="16" r="14" fill="#fcd34d"/>
+    <path d="M6 16 C6 4 28 4 30 16 Z" fill="#475569"/>
+    <circle cx="12" cy="16" r="2" fill="#0f172a"/>
+    <!-- Casual Shirt -->
+    <path d="M6 35 L30 35 L36 85 L0 85 Z" fill="#059669"/>
+  </g>
+  <!-- Medicine bottle on desk -->
+  <rect x="110" y="112" width="14" height="20" rx="2" fill="#f59e0b"/>
+  <rect x="112" y="108" width="10" height="4" fill="#e2e8f0"/>
+  <rect x="130" y="118" width="12" height="14" rx="2" fill="#38bdf8"/>
+</svg>

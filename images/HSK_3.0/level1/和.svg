@@ -1,8 +1,50 @@
-<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100" height="100" rx="16" fill="#131b2e" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
-  <line x1="16" y1="38" x2="52" y2="38" stroke="#34d399" stroke-width="3.8" stroke-linecap="round"/>
-  <line x1="34" y1="20" x2="34" y2="78" stroke="#34d399" stroke-width="4" stroke-linecap="round"/>
-  <path d="M34 38 Q22 56 14 68" stroke="#34d399" stroke-width="3.8" stroke-linecap="round"/>
-  <path d="M34 38 Q44 54 50 64" stroke="#34d399" stroke-width="3.8" stroke-linecap="round"/>
-  <rect x="58" y="34" width="26" height="28" rx="2" stroke="#38bdf8" stroke-width="3.8" fill="none"/>
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="24" fill="url(#bgGrad)"/>
+  <!-- Boutique Shop Storefront in the background -->
+  <rect x="135" y="35" width="85" height="120" rx="4" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+  <!-- Striped Awning -->
+  <path d="M130 35 L225 35 L220 55 L125 55 Z" fill="#f43f5e"/>
+  <line x1="145" y1="35" x2="140" y2="55" stroke="#fecdd3" stroke-width="6"/>
+  <line x1="170" y1="35" x2="165" y2="55" stroke="#fecdd3" stroke-width="6"/>
+  <line x1="195" y1="35" x2="190" y2="55" stroke="#fecdd3" stroke-width="6"/>
+  <!-- Warm Display Window -->
+  <rect x="145" y="70" width="40" height="50" rx="3" fill="#fef08a" opacity="0.85"/>
+  <circle cx="165" cy="95" r="10" fill="#ea580c"/>
+  <!-- Ground / Sidewalk -->
+  <rect x="0" y="175" width="240" height="65" fill="#334155"/>
+  <line x1="0" y1="175" x2="240" y2="175" stroke="#64748b" stroke-width="2"/>
+  <!-- Mother (Left) and Child (Right) Holding Hands (和 = with / together) -->
+  <g id="mother" transform="translate(35, 75)">
+    <!-- Mother Head -->
+    <circle cx="20" cy="18" r="15" fill="#fcd34d"/>
+    <!-- Elegant hair bun -->
+    <circle cx="8" cy="14" r="8" fill="#1e293b"/>
+    <path d="M8 18 C8 6 32 6 33 18 Z" fill="#1e293b"/>
+    <!-- Smiling profile -->
+    <circle cx="24" cy="19" r="2" fill="#0f172a"/>
+    <path d="M22 24 Q26 28 30 24" stroke="#0f172a" stroke-width="1.5" fill="none"/>
+    <!-- Dress -->
+    <path d="M10 38 L30 38 L38 100 L2 100 Z" fill="#0284c7"/>
+    <!-- Arm reaching down holding child's hand -->
+    <path d="M26 45 Q42 62 48 72" stroke="#fcd34d" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <g id="child" transform="translate(85, 105)">
+    <!-- Child Head -->
+    <circle cx="15" cy="14" r="12" fill="#fcd34d"/>
+    <path d="M5 14 C5 4 25 4 25 14 Z" fill="#334155"/>
+    <circle cx="18" cy="14" r="1.5" fill="#0f172a"/>
+    <!-- Cute child outfit -->
+    <rect x="5" y="28" width="20" height="42" rx="3" fill="#f59e0b"/>
+    <!-- Arm raised holding mother's hand -->
+    <path d="M6 35 Q-2 42 -2 42" stroke="#fcd34d" stroke-width="4.5" stroke-linecap="round"/>
+  </g>
+  <!-- Joined Hands Clasp Highlight -->
+  <circle cx="83" cy="147" r="5" fill="#fcd34d"/>
+  <circle cx="83" cy="147" r="8" fill="#fbbf24" opacity="0.3"/>
 </svg>
