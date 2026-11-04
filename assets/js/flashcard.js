@@ -1290,6 +1290,9 @@ function render(animate) {
     const hasVisual = Boolean(showIllustration && visualCol && visualCol.style.display !== 'none');
     const radsRow = document.getElementById('cardRadicalsRow');
     const hasDecomp = Boolean(decompWrap && decompWrap.style.display !== 'none' && radsRow && radsRow.children && radsRow.children.length > 0);
+    // Split layout hook: hero becomes info (left) + illustration (right) when an illustration exists.
+    const heroBlock = document.getElementById('wordMainBlock');
+    if (heroBlock) heroBlock.classList.toggle('has-illustration', hasVisual);
     if (hasVisual || hasDecomp) {
       group.hidden = false;
       group.removeAttribute('hidden');

@@ -5296,3 +5296,96 @@ body.flashcard-study-mode .grammar-breakdown-panel[hidden] { display: none !impo
   -ms-overflow-style: none !important;
   scrollbar-width: none !important;
 }
+
+/* ==========================================================================
+   Split vocabulary card (v3.4.0)
+   Flipped card on >= 768px: word info left (60%), illustration right (40%),
+   example + accordions full width underneath. Front face stays centered.
+   ========================================================================== */
+body.flashcard-study-mode .card.is-flipped .card-visual-col[hidden] {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    grid-template-rows: 1fr auto auto auto auto 1fr;
+    grid-template-areas:
+      ".       visual"
+      "hanzi   visual"
+      "pinyin  visual"
+      "meaning visual"
+      "meta    visual"
+      ".       visual";
+    column-gap: clamp(16px, 3vw, 40px);
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    max-width: 870px;
+    margin: 0 auto;
+  }
+  body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration > .hanzi-stage { grid-area: hanzi; }
+  body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration > .pinyin-row { grid-area: pinyin; }
+  body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration > .meaning { grid-area: meaning; }
+  body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration > .meta-badges-row { grid-area: meta; }
+  body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration > .card-supporting-group { display: none !important; }
+
+  body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration > .card-visual-col {
+    grid-area: visual;
+    align-self: center;
+    justify-self: center;
+    flex: none !important;
+    width: auto !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: none !important;
+    margin: 0 !important;
+    padding: 8px 0 !important;
+  }
+  body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration .card-illustration-frame {
+    --split-illu-size: clamp(132px, min(19vw, 26vh), 216px);
+    width: var(--split-illu-size) !important;
+    height: var(--split-illu-size) !important;
+    max-width: var(--split-illu-size) !important;
+    max-height: var(--split-illu-size) !important;
+    border-radius: 18px;
+  }
+  body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration .card-illustration-img,
+  body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration .card-illustration-svg svg {
+    border-radius: 18px;
+  }
+  body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration .card-illustration-frame:hover {
+    transform: none;
+  }
+
+  /* Example + supplementary sections span the full card content width */
+  body.flashcard-study-mode .card.is-flipped .example-box,
+  body.flashcard-study-mode .card.is-flipped .card-expandable-group {
+    width: 100%;
+    max-width: 870px;
+    box-sizing: border-box;
+  }
+}
+
+/* Tablet: smaller illustration so the word info column never feels cramped */
+@media (min-width: 768px) and (max-width: 1023px) {
+  body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration .card-illustration-frame {
+    --split-illu-size: clamp(116px, min(18vw, 22vh), 160px);
+  }
+}
+
+/* Mobile: single column, illustration below the word info at a readable size */
+@media (max-width: 767px) {
+  body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration .card-visual-col {
+    width: auto !important;
+    height: auto !important;
+  }
+  body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration .card-illustration-frame {
+    width: clamp(84px, 24vw, 112px) !important;
+    height: clamp(84px, 24vw, 112px) !important;
+    max-width: none !important;
+    max-height: none !important;
+    border-radius: 14px;
+  }
+}
