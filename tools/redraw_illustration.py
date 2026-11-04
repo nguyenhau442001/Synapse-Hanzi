@@ -29,6 +29,7 @@ import json
 import re
 import subprocess
 import sys
+import time
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
@@ -77,8 +78,16 @@ def minify(svg_text):
     return re.sub(r"\s+", " ", s).strip()
 
 
-def git(*args):
-    return subprocess.run(["git", *args], cwd=REPO, check=True, capture_output=True, text=True).stdout
+def git(*args, attempts=40):
+    """Run git, retrying while another process (e.g. a parallel audio build) holds the index lock."""
+    for i in range(attempts):
+        res = subprocess.run(["git", *args], cwd=REPO, capture_output=True, text=True)
+        if res.returncode == 0:
+            return res.stdout
+        if "index.lock" not in res.stderr and "cannot lock ref" not in res.stderr and "rejected" not in res.stderr:
+            raise RuntimeError(f"git {' '.join(args)} failed: {res.stderr.strip()}")
+        time.sleep(0.5 + i * 0.25)
+    raise RuntimeError(f"git {' '.join(args)} kept failing: {res.stderr.strip()}")
 
 
 def install(level, hanzi, svg_text):
@@ -95,11 +104,26 @@ def install(level, hanzi, svg_text):
         pack_path.write_text(json.dumps(pack, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
         paths.append(str(pack_path.relative_to(REPO)))
 
-    git("add", "--", *paths)
-    if not git("diff", "--cached", "--name-only").strip():
+    # Untracked (brand-new) files must be added first; tracked ones are committed straight from
+    # the working tree so they never sit in the shared index where a parallel job (the audio
+    # build commits whatever is staged) could sweep them into its own commit.
+    untracked = git("ls-files", "--others", "--exclude-standard", "--", *paths).split()
+    if untracked:
+        git("add", "--", *untracked)
+    if not git("status", "--porcelain", "--", *paths).strip():
         return False
-    git("commit", "-q", "-m", f"feat(illustration): redraw {hanzi} for HSK 3.0 level {level}")
+    git("commit", "-q", "-m", f"feat(illustration): redraw {hanzi} for HSK 3.0 level {level}", "--", *paths)
+    heal_index(paths)
     return True
+
+
+def heal_index(paths):
+    """A parallel job can write back a stale index entry right after our commit; if the index
+    no longer matches HEAD for our paths, re-sync it (worktree == HEAD, so this stages nothing new)."""
+    for _ in range(3):
+        time.sleep(0.2)
+        if git("diff", "--cached", "--name-only", "--", *paths).strip():
+            git("add", "--", *paths)
 
 
 def main():
