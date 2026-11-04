@@ -342,6 +342,18 @@ function getWordIllustration(word) {
 
   const hanzi = (word.hanzi || word.word || '').trim();
 
+  // 1.5. Preloaded level illustration pack in SynapseSvgCache (HSK 2.0 & HSK 3.0 packs)
+  if (typeof SynapseSvgCache !== 'undefined' && hanzi) {
+    const cachedSvg = SynapseSvgCache.get(hanzi);
+    if (cachedSvg) {
+      return {
+        type: 'svg',
+        svg: cachedSvg,
+        caption: word.meaning || ''
+      };
+    }
+  }
+
   // 2. Pre-generated static AI illustrations from assets/images/illustrations/
   if (typeof STATIC_ILLUSTRATIONS_INDEX !== 'undefined' && STATIC_ILLUSTRATIONS_INDEX[hanzi]) {
     const item = STATIC_ILLUSTRATIONS_INDEX[hanzi];

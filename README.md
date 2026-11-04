@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/badge/🌐_Mở_Trực_Tuyến_Ngay-https%3A%2F%2Fnguyenhau442001.github.io%2FSynapse--Hanzi-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo">
   </a>
   <img src="https://img.shields.io/badge/Chế_độ-100%25_Offline_(PWA)-22c55e?style=for-the-badge&logo=pwa&logoColor=white" alt="PWA">
-  <img src="https://img.shields.io/badge/Phiên_bản-v3.2.0-blue?style=for-the-badge&logo=semver&logoColor=white" alt="Version v3.2.0">
+  <img src="https://img.shields.io/badge/Phiên_bản-v3.8.1-blue?style=for-the-badge&logo=semver&logoColor=white" alt="Version v3.8.1">
   <img src="https://img.shields.io/badge/Phương_pháp-Flashcard_&_SRS-22c55e?style=for-the-badge&logo=anki&logoColor=white" alt="Flashcards">
   <img src="https://img.shields.io/badge/HSK-HSK_2.0_&_3.0_(1--9)-f59e0b?style=for-the-badge" alt="HSK 1-9">
   <img src="https://img.shields.io/badge/Ôn_thi-Luyện_nghe_&_Đọc_hiểu-3b82f6?style=for-the-badge" alt="HSK Prep">
@@ -35,10 +35,13 @@ Theo dõi mục tiêu học tập hàng ngày, chuỗi ngày học (Streak 🔥)
 
 ---
 
-### 2. 🎴 Thẻ Flashcard tối giản & Nút bấm độ tương phản cao
-Thiết kế tập trung tuyệt đối vào từ vựng (Hero Layout), thanh công cụ gom gọn trên viền thẻ, thao tác lật thẻ và chấm điểm siêu nhanh:
-- ❌ **Chưa nhớ [Phím 1 / ← / Vuốt trái]**: Đưa từ vào danh sách ôn tập ngay trong ngày.
-- ✅ **Đã nhớ [Phím 2 / → / Vuốt phải]**: Tự động tính toán chu kỳ lặp lại ngắt quãng FSRS.
+### 2. 🎴 Thẻ Flashcard chia đôi & Tranh minh họa ngữ cảnh lớn (Split-Card Visual Mnemonic)
+Thiết kế mỹ học thủy mặc Đông phương hiện đại kết hợp bố cục chia đôi (Split Layout) tối ưu cho việc ghi nhớ đa giác quan:
+- 🖼️ **Tranh minh họa ngữ cảnh kích thước lớn:** Mô tả trực quan hành động thực tế dựa theo câu ví dụ, kích hoạt trí nhớ hình ảnh bản chất.
+- 📝 **Thông tin từ vựng tinh gọn:** Chữ Hán tiêu điểm, Pinyin chuẩn, âm Hán - Việt, chiết tự chữ, chữ liên quan và câu ví dụ song ngữ.
+- ⚡ **Thao tác lật thẻ và chấm điểm siêu nhanh:**
+  - ❌ **Chưa nhớ [Phím 1 / ← / Vuốt trái]**: Đưa từ vào danh sách ôn tập ngay trong ngày.
+  - ✅ **Đã nhớ [Phím 2 / → / Vuốt phải]**: Tự động tính toán chu kỳ lặp lại ngắt quãng FSRS.
 
 <p align="center">
   <img src="assets/images/screenshots/02_flashcard_front.png" alt="Mặt trước thẻ Flashcard" width="48%">
@@ -92,7 +95,7 @@ Tra cứu và học bộ thủ theo số nét, ý nghĩa, ví dụ và thống k
   - **Từ vựng theo chủ đề:** Công nghệ thông tin (IT), Du lịch, Kinh doanh...
 - **Spaced Repetition tối ưu:** Thuật toán FSRS v5 tự động tính toán thời điểm ôn tập khoa học, dự đoán tỷ lệ nhớ theo đường cong Ebbinghaus.
 - **Tự động gắn âm Hán - Việt:** Giúp người Việt hiểu nghĩa gốc sâu sắc và ghi nhớ từ vựng nhanh gấp đôi.
-- **Âm thanh giọng thật & Web Speech API:** Nghe phát âm từ vựng và câu ví dụ, tùy chỉnh tốc độ đọc từ 0.25x đến 2.0x.
+- **Âm thanh giọng thật chuẩn phòng thu & Web Speech API:** Tích hợp bộ audio MP3 24kHz tự nhiên cho toàn bộ từ vựng và câu ví dụ (HSK 2.0 Level 1–4 và HSK 3.0 Level 1), tự động fallback Web Speech API thông minh trên mọi trình duyệt.
 - **SPA Router thông minh:** Hỗ trợ nút Back/Forward vật lý của trình duyệt và chia sẻ liên kết trực tiếp (Deep Linking) mà không tải lại trang.
 - **Bộ công cụ bổ trợ ôn thi HSK toàn diện:**
   - **Luyện đề Nghe HSK 4 thực chiến:** Tích hợp audio chuẩn bài thi, script đối thoại và giải thích đáp án.
