@@ -416,24 +416,6 @@ function openForgottenReview(items) {
 
 // ---- Navigation --------------------------------------------------------------
 
-async function openWordInLevel(level, wordId) {
-  if (typeof window.openWordInLevel === 'function' && window.openWordInLevel !== openWordInLevel) {
-    return window.openWordInLevel(level, wordId, true);
-  }
-  if (typeof primaryTab !== 'undefined' && primaryTab !== 'vocab') setPrimaryTab('vocab');
-  window.scrollTo(0, 0);
-  await selectLevel(level);
-  if (currentLevel !== level || !WORDS.length) return;
-  const wordIndex = WORDS.findIndex(word => word.id === wordId);
-  if (wordIndex < 0) return;
-  currentFilter = 'all';
-  filteredOrder = order.slice();
-  const position = filteredOrder.indexOf(wordIndex);
-  idx = position >= 0 ? position : 0;
-  renderFilters();
-  render();
-}
-
 // ---- Lifecycle ---------------------------------------------------------------
 
 function isHomeScreen() {
