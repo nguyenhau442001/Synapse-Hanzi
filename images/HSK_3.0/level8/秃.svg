@@ -1,18 +1,1 @@
-<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
-
-  <!-- Main head and neck shape -->
-  <path d="M 120 195 L 95 195 C 80 190 70 170 70 150 C 70 100 80 70 120 55 C 160 70 170 100 170 150 C 170 170 160 190 145 195 L 120 195 Z" fill="#FFDAB9"/>
-
-  <!-- Ears -->
-  <rect x="60" y="105" width="10" height="30" rx="5" fill="#FFDAB9"/>
-  <rect x="170" y="105" width="10" height="30" rx="5" fill="#FFDAB9"/>
-
-  <!-- Facial features -->
-  <circle cx="105" cy="105" r="5" fill="#333333"/> <!-- Left eye -->
-  <circle cx="135" cy="105" r="5" fill="#333333"/> <!-- Right eye -->
-  <path d="M 110 145 Q 120 155 130 145" stroke="#333333" stroke-width="2" fill="none" stroke-linecap="round"/> <!-- Mouth -->
-
-  <!-- Subtle highlight on bald head -->
-  <ellipse cx="120" cy="70" rx="25" ry="10" fill="white" opacity="0.2"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" data-style="editorial"><rect width="240" height="240" fill="#F4EDE2"/><ellipse cx="120" cy="208" rx="88" ry="9" fill="#E3D5C1"/><g transform="translate(120 332) scale(2 2)"><circle cx="0" cy="-101" r="17" fill="#F0C7AE" stroke="#3A332D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M-17 -101Q-17 -121 0 -121Q17 -121 17 -101Q13 -110 4 -112Q-8 -113 -17 -101Z" fill="#8F857A" stroke="#3A332D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><circle cx="-6" cy="-101" r="2.2" fill="#3A332D"/><circle cx="6" cy="-101" r="2.2" fill="#3A332D"/><path d="M-5 -93Q0 -88 5 -93" fill="none" stroke="#3A332D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /><circle cx="-11" cy="-94" r="3" fill="#E39A62" opacity="0.45"/><circle cx="11" cy="-94" r="3" fill="#E39A62" opacity="0.45"/></g><path d="M80 76Q120 40 160 76" fill="#F0C7AE"  /><circle cx="120" cy="80" r="14" fill="#FBF6EE"  fill-opacity="0.5"/></svg>
