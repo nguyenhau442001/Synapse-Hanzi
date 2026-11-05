@@ -1,13 +1,1 @@
-<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
-
-  <!-- Concrete Pillar/Beam Section -->
-  <!-- Centered, slightly taller than wide, representing a physical structure -->
-  <rect x="80" y="50" width="80" height="140" rx="8" fill="#A0A0A0"/>
-
-  <!-- The Crack (裂痕) - highlighted with accent color -->
-  <!-- Using a path with irregular segments for a natural, prominent crack look -->
-  <path d="M 90 70 L 95 78 L 92 88 L 105 92 L 100 102 L 112 108 L 108 118 L 120 125 L 115 135 L 128 142 L 123 152 L 135 160 L 130 170 L 140 178"
-        stroke="#FF9900" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" data-style="editorial"><rect width="240" height="240" fill="#F4EDE2"/><ellipse cx="120" cy="208" rx="88" ry="9" fill="#E3D5C1"/><g transform="translate(120 140)"><path d="M-20 -40L20 -40L30 40L-30 40Z" fill="#8FA7B3" stroke="#3A332D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><g transform="translate(0 0) scale(0.6 0.6)"><path d="M0 -60L-10 -30L8 -10L-6 20L6 50" fill="none" stroke="#3A332D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /></g></g><g transform="translate(190 60) scale(0.4 0.4)"><path d="M0 12C-18 0 -22 -10 -16 -17C-10 -23 -3 -19 0 -12C3 -19 10 -23 16 -17C22 -10 18 0 0 12Z" fill="#B4532F" stroke="#3A332D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M0 -12L-4 -2L4 2L0 12" fill="none" stroke="#F4EDE2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" /></g></svg>
