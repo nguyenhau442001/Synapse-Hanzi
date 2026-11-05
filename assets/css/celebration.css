@@ -260,14 +260,6 @@
   background: rgba(255, 255, 255, 0.05);
 }
 
-/* Fallback simple confetti pieces */
-.confetti-piece {
-  position: absolute;
-  top: -14px;
-  pointer-events: none;
-  animation: confettiFall linear forwards;
-}
-
 /* ==========================================================================
    In-Card Achievement Hero View (Rendered inside Flashcard when Finished)
    ========================================================================== */
@@ -460,20 +452,6 @@
 :root[data-theme="dark"] .empty-btn--secondary:hover {
   background: rgba(255, 255, 255, 0.1);
 }
-.empty-btn--celebrate {
-  background: rgba(234, 179, 8, 0.12);
-  color: #b45309;
-  border-color: rgba(234, 179, 8, 0.35);
-}
-:root[data-theme="dark"] .empty-btn--celebrate {
-  background: rgba(234, 179, 8, 0.18);
-  color: #facc15;
-  border-color: rgba(234, 179, 8, 0.4);
-}
-.empty-btn--celebrate:hover {
-  background: rgba(234, 179, 8, 0.22);
-  transform: translateY(-1px);
-}
 
 /* Generic Empty State */
 .generic-empty-card {
@@ -482,12 +460,6 @@
   align-items: center;
   text-align: center;
   padding: 24px 16px;
-}
-.generic-empty-icon {
-  font-size: 48px;
-  line-height: 1;
-  margin-bottom: 12px;
-  opacity: 0.85;
 }
 .generic-empty-title {
   font-size: 19px;

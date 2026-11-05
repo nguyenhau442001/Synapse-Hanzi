@@ -25,7 +25,6 @@ body.reading-view-active #learningDashboard,
 body.reading-view-active .dashboard-aux-column,
 body.reading-view-active .quick-quiz-card,
 body.reading-view-active .featured-topics,
-body.reading-view-active .reading-promo-banner,
 body.reading-view-active #primaryTabs,
 body.graded-reading-active .workstation-left,
 body.graded-reading-active .workstation-right,
@@ -33,15 +32,11 @@ body.graded-reading-active #learningDashboard,
 body.graded-reading-active .dashboard-aux-column,
 body.graded-reading-active .quick-quiz-card,
 body.graded-reading-active .featured-topics,
-body.graded-reading-active .reading-promo-banner,
-body.graded-reading-active .graded-reading-promo-banner,
 body.review-view-active .workstation-right,
 body.review-view-active #learningDashboard,
 body.review-view-active .dashboard-aux-column,
 body.review-view-active .quick-quiz-card,
 body.review-view-active .featured-topics,
-body.review-view-active .reading-promo-banner,
-body.review-view-active .graded-reading-promo-banner,
 body.today-reviews-focus-mode .workstation-left,
 body.today-reviews-focus-mode .workstation-right,
 body.today-reviews-focus-mode .app-header,
@@ -50,7 +45,6 @@ body.today-reviews-focus-mode #learningDashboard,
 body.today-reviews-focus-mode .dashboard-aux-column,
 body.today-reviews-focus-mode .quick-quiz-card,
 body.today-reviews-focus-mode .featured-topics,
-body.today-reviews-focus-mode .app-footer,
 body.graded-story-active #primaryTabs {
   display: none !important;
 }
@@ -119,14 +113,6 @@ body.graded-story-active #primaryTabs {
     grid-template-areas: "left middle" !important;
     max-width: 1240px !important;
     gap: 32px;
-  }
-  .app-footer {
-    grid-area: footer;
-    grid-column: 1 / -1;
-    margin-top: 36px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-top: 1px solid var(--border);
   }
   .workstation-right {
     grid-area: right;
@@ -212,9 +198,6 @@ body.graded-story-active #primaryTabs {
     border-color: color-mix(in srgb, var(--accent) 30%, transparent);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     font-weight: 700;
-  }
-  .sidebar-study-tab--all {
-    padding: 6px 10px;
   }
   .sidebar-tab-icon { font-size: 13px; line-height: 1; flex-shrink: 0; }
   .sidebar-tab-label { font-size: 12px; line-height: 1.2; white-space: nowrap; }
@@ -324,24 +307,6 @@ body.graded-story-active #primaryTabs {
     gap: 20px;
     overflow: visible;
   }
-  body.home-screen .app-footer {
-    grid-area: footer;
-    grid-column: 1 / -1;
-    margin-top: 40px;
-    padding-top: 24px;
-    padding-bottom: 28px;
-    border-top: 1px solid var(--border);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  body.home-screen .footer-note {
-    margin: 0; color: var(--text-tertiary); font-size: 12px; line-height: 1.4;
-  }
-  body.home-screen .footer-note a { color: var(--text-secondary); text-decoration: underline; text-underline-offset: 2px; }
-  body.home-screen .footer-note a:hover { color: var(--accent-text); }
-  :root[data-theme="dark"] body.home-screen .footer-note { color: var(--text-secondary); }
-  :root[data-theme="dark"] body.home-screen .footer-note a { color: var(--text-primary); }
 }
 
 /* ==========================================================================
@@ -438,7 +403,6 @@ body.flashcard-study-mode .app {
   max-width: 1280px;
   margin: 0 auto;
 }
-body.flashcard-study-mode .app-footer,
 body.flashcard-study-mode .app-header,
 body.flashcard-study-mode #learningDashboard,
 body.flashcard-study-mode #continueLearningCard,
@@ -761,8 +725,7 @@ body.flashcard-study-mode .study-back-btn:hover {
   border-color: rgba(255, 255, 255, 0.12);
   color: #ffffff;
 }
-body.flashcard-study-mode .study-back-text,
-body.flashcard-study-mode .study-level-badge {
+body.flashcard-study-mode .study-back-text {
   display: inline-block;
   padding: 0;
   border-radius: 0;
@@ -800,9 +763,6 @@ body.flashcard-study-mode .view-tab {
   cursor: pointer;
   transition: all 0.15s ease;
 }
-body.flashcard-study-mode .view-tab-icon {
-  opacity: 0.75;
-}
 body.flashcard-study-mode .view-tab:hover {
   color: var(--text-primary);
 }
@@ -811,10 +771,6 @@ body.flashcard-study-mode .view-tab.active {
   color: var(--text-primary);
   font-weight: 600;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-}
-body.flashcard-study-mode .view-tab.active .view-tab-icon {
-  opacity: 1;
-  color: var(--accent-sage);
 }
 :root[data-theme="dark"] body.flashcard-study-mode .view-tab.active {
   background: rgba(255, 255, 255, 0.1);
@@ -917,15 +873,6 @@ body.flashcard-study-mode .view-tab.active .view-tab-icon {
 }
 .study-drawer-btn svg {
   opacity: 0.85;
-}
-.study-drawer-btn .study-drawer-btn-label {
-  display: none;
-}
-.study-drawer-btn .study-btn-badge-text {
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--accent-sage);
-  line-height: 1;
 }
 .study-drawer-btn:hover {
   background: var(--surface-subtle);
@@ -1412,15 +1359,6 @@ body.flashcard-study-mode .filter-btn.active {
   color: #ffffff;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
 }
-body.flashcard-study-mode .filter-btn .filter-count {
-  opacity: 0.75;
-  font-size: 12px;
-}
-body.flashcard-study-mode .filter-btn.active .filter-count {
-  opacity: 1;
-  color: #fb923c;
-  font-weight: 600;
-}
 
 /* --------------------------------------------------------------------------
    Flashcard Stage & Ergonomic Rating Area
@@ -1572,50 +1510,6 @@ body.flashcard-study-mode .card-header-bar {
   border-bottom: none;
 }
 
-body.flashcard-study-mode .card-position-badge {
-  display: inline-flex;
-  align-items: center;
-  font-size: 12px;
-  font-weight: 500;
-  font-variant-numeric: tabular-nums;
-  color: var(--text-tertiary);
-  padding: 0;
-  background: transparent;
-  border: none;
-  user-select: none;
-  letter-spacing: 0.03em;
-}
-:root[data-theme="dark"] body.flashcard-study-mode .card-position-badge {
-  color: rgba(255, 255, 255, 0.38);
-  background: transparent;
-  border: none;
-}
-
-body.flashcard-study-mode .card-toolbar {
-  position: static;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  z-index: 5;
-}
-body.flashcard-study-mode .card-tool-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  min-width: 32px;
-  max-width: 32px;
-  padding: 0;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  background: var(--surface-subtle);
-  color: var(--text-secondary);
-  font-size: 13px;
-  cursor: pointer;
-  transition: all 0.15s ease;
-}
-
 /* Card More Menu (Unified 3-dots dropdown) */
 .card-more-menu-wrap {
   position: relative;
@@ -1730,8 +1624,7 @@ body.flashcard-study-mode #transferPanel {
 }
 
 /* Centered, Spacious Hanzi Hero Layout */
-body.flashcard-study-mode .word-hero-container,
-body.flashcard-study-mode .word-main-block {
+body.flashcard-study-mode .word-hero-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1759,10 +1652,6 @@ body.flashcard-study-mode .hanzi-stage {
 body.flashcard-study-mode .hanzi-stage:hover {
   background: rgba(168, 50, 42, 0.03);
 }
-body.flashcard-study-mode .hanzi-stage:hover .hanzi-write-hint {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 body.flashcard-study-mode .hanzi {
   font-size: clamp(3.8rem, 7.5vw, 5.2rem);
@@ -1776,28 +1665,6 @@ body.flashcard-study-mode .hanzi {
 }
 body.flashcard-study-mode .hanzi-stage:hover .hanzi {
   transform: scale(1.02);
-}
-
-body.flashcard-study-mode .hanzi-write-hint {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  margin-top: 8px;
-  font-size: 13.2px;
-  font-weight: 600;
-  color: var(--accent);
-  background: var(--accent-light);
-  border: 1px solid rgba(168, 50, 42, 0.18);
-  padding: 3.5px 12px;
-  border-radius: 999px;
-  opacity: 0.8;
-  transform: translateY(2px);
-  transition: all 0.2s ease;
-}
-:root[data-theme="dark"] body.flashcard-study-mode .hanzi-write-hint {
-  color: var(--accent-gold);
-  background: rgba(212, 179, 127, 0.12);
-  border-color: rgba(212, 179, 127, 0.25);
 }
 
 /* Pinyin & Sound */
@@ -1830,7 +1697,6 @@ body.flashcard-study-mode .meta-badges-row {
   margin: 4px 0 10px;
 }
 body.flashcard-study-mode .meta-badges-row .pos-badge,
-body.flashcard-study-mode .meta-badges-row .level-badge,
 body.flashcard-study-mode .meta-badges-row .hanviet-badge {
   background: transparent !important;
   border: none !important;
@@ -1841,7 +1707,6 @@ body.flashcard-study-mode .meta-badges-row .hanviet-badge {
   color: var(--text-muted) !important;
 }
 :root[data-theme="dark"] body.flashcard-study-mode .meta-badges-row .pos-badge,
-:root[data-theme="dark"] body.flashcard-study-mode .meta-badges-row .level-badge,
 :root[data-theme="dark"] body.flashcard-study-mode .meta-badges-row .hanviet-badge {
   color: var(--text-muted) !important;
 }
@@ -1883,7 +1748,6 @@ body.flashcard-study-mode .card:not(.is-flipped) .example-box,
 body.flashcard-study-mode .card:not(.is-flipped) .card-expandable-group,
 body.flashcard-study-mode .card:not(.is-flipped) .card-accordion,
 body.flashcard-study-mode .card:not(.is-flipped) .card-supporting-group,
-body.flashcard-study-mode .card:not(.is-flipped) .card-decomposition-wrap,
 body.flashcard-study-mode .card:not(.is-flipped) .card-related-wrap {
   display: none !important;
 }
@@ -1983,8 +1847,7 @@ body.flashcard-study-mode .card-illustration-frame:hover {
   body.flashcard-study-mode .filter-row,
   .learning-progress-navigator,
   body.flashcard-study-mode #cardArea,
-  body.flashcard-study-mode .word-hero-container,
-  body.flashcard-study-mode .word-main-block {
+  body.flashcard-study-mode .word-hero-container {
     max-width: 720px !important;
   }
   body.flashcard-study-mode #studyView {
@@ -2011,19 +1874,6 @@ body.flashcard-study-mode .card-illustration-frame:hover {
   body.flashcard-study-mode .card-supporting-group.has-both {
     gap: 10px;
   }
-}
-
-body.flashcard-study-mode .card-illustration-skeleton {
-  position: absolute;
-  inset: 0;
-  border-radius: 12px;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.06) 50%, rgba(0, 0, 0, 0.03) 100%);
-  background-size: 200% 100%;
-  animation: cardIlluShimmer 1.8s infinite ease-in-out;
-  pointer-events: none;
-}
-:root[data-theme="dark"] body.flashcard-study-mode .card-illustration-skeleton {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.07) 50%, rgba(255, 255, 255, 0.03) 100%);
 }
 @keyframes cardIlluShimmer {
   0% { background-position: 200% 0; }
@@ -2080,19 +1930,7 @@ body.flashcard-study-mode .card-illustration-svg svg {
   to { opacity: 1; transform: scale(1); }
 }
 
-body.flashcard-study-mode .card-content-col {
-  flex: 1 1 0;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 12px;
-}
-
 /* Part of Speech Tag / Badge in .pinyin-row */
-body.flashcard-study-mode .pos-tag,
 body.flashcard-study-mode .pos-badge {
   display: inline-flex;
   align-items: center;
@@ -2128,19 +1966,19 @@ body.flashcard-study-mode .hanviet-badge {
 }
 
 /* POS tags - Understated editorial labels with calm harmony */
-.pos-tag, .pos-badge,
-.pos-tag--adj, .pos-badge--adj,
-.pos-tag--verb, .pos-badge--verb,
-.pos-tag--noun, .pos-badge--noun,
-.pos-tag--adv, .pos-badge--adv,
-.pos-tag--measure, .pos-badge--measure,
-.pos-tag--pron, .pos-badge--pron,
-.pos-tag--prep, .pos-badge--prep,
-.pos-tag--conj, .pos-badge--conj,
-.pos-tag--num, .pos-badge--num,
-.pos-tag--particle, .pos-badge--particle,
-.pos-tag--phrase, .pos-badge--phrase,
-.pos-tag--idiom, .pos-badge--idiom {
+.pos-badge,
+.pos-badge--adj,
+.pos-badge--verb,
+.pos-badge--noun,
+.pos-badge--adv,
+.pos-badge--measure,
+.pos-badge--pron,
+.pos-badge--prep,
+.pos-badge--conj,
+.pos-badge--num,
+.pos-badge--particle,
+.pos-badge--phrase,
+.pos-badge--idiom {
   color: var(--c-jade-text, #375F53);
   background: rgba(82, 125, 112, 0.1);
   border: 1px solid rgba(82, 125, 112, 0.18);
@@ -2151,19 +1989,19 @@ body.flashcard-study-mode .hanviet-badge {
   line-height: 1.3;
 }
 
-:root[data-theme="dark"] .pos-tag, :root[data-theme="dark"] .pos-badge,
-:root[data-theme="dark"] .pos-tag--adj, :root[data-theme="dark"] .pos-badge--adj,
-:root[data-theme="dark"] .pos-tag--verb, :root[data-theme="dark"] .pos-badge--verb,
-:root[data-theme="dark"] .pos-tag--noun, :root[data-theme="dark"] .pos-badge--noun,
-:root[data-theme="dark"] .pos-tag--adv, :root[data-theme="dark"] .pos-badge--adv,
-:root[data-theme="dark"] .pos-tag--measure, :root[data-theme="dark"] .pos-badge--measure,
-:root[data-theme="dark"] .pos-tag--pron, :root[data-theme="dark"] .pos-badge--pron,
-:root[data-theme="dark"] .pos-tag--prep, :root[data-theme="dark"] .pos-badge--prep,
-:root[data-theme="dark"] .pos-tag--conj, :root[data-theme="dark"] .pos-badge--conj,
-:root[data-theme="dark"] .pos-tag--num, :root[data-theme="dark"] .pos-badge--num,
-:root[data-theme="dark"] .pos-tag--particle, :root[data-theme="dark"] .pos-badge--particle,
-:root[data-theme="dark"] .pos-tag--phrase, :root[data-theme="dark"] .pos-badge--phrase,
-:root[data-theme="dark"] .pos-tag--idiom, :root[data-theme="dark"] .pos-badge--idiom {
+:root[data-theme="dark"] .pos-badge,
+:root[data-theme="dark"] .pos-badge--adj,
+:root[data-theme="dark"] .pos-badge--verb,
+:root[data-theme="dark"] .pos-badge--noun,
+:root[data-theme="dark"] .pos-badge--adv,
+:root[data-theme="dark"] .pos-badge--measure,
+:root[data-theme="dark"] .pos-badge--pron,
+:root[data-theme="dark"] .pos-badge--prep,
+:root[data-theme="dark"] .pos-badge--conj,
+:root[data-theme="dark"] .pos-badge--num,
+:root[data-theme="dark"] .pos-badge--particle,
+:root[data-theme="dark"] .pos-badge--phrase,
+:root[data-theme="dark"] .pos-badge--idiom {
   color: #7FB8A7;
   background: rgba(82, 125, 112, 0.2);
   border: 1px solid rgba(82, 125, 112, 0.3);
@@ -2380,25 +2218,6 @@ body.flashcard-study-mode .meaning {
 :root[data-theme="light"] body.flashcard-study-mode .meaning {
   color: var(--text-primary);
 }
-
-/* Cấu tạo chữ: Bố cục tinh gọn, trung tính, cấu trúc rõ ràng */
-body.flashcard-study-mode .card-decomposition-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 3px;
-}
-body.flashcard-study-mode .card-decomp-title {
-  font-size: 10.5px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--text-tertiary);
-  line-height: 1.3;
-  margin-bottom: 2px;
-}
 body.flashcard-study-mode .card-radicals-row {
   display: flex;
   align-items: center;
@@ -2605,8 +2424,6 @@ body.flashcard-study-mode .hint:empty {
   display: none;
 }
 
-body.flashcard-study-mode .nav-row--progress-only { display: none !important; }
-
 body.flashcard-study-mode .study-nav-controls,
 body.flashcard-study-mode .nav-row {
   display: flex !important;
@@ -2655,8 +2472,7 @@ body.flashcard-study-mode .nav-btn:hover:not(:disabled) {
   border-color: rgba(255, 255, 255, 0.18);
   color: var(--text-primary);
 }
-body.flashcard-study-mode .study-nav-position,
-body.flashcard-study-mode .card-counter {
+body.flashcard-study-mode .study-nav-position {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2699,17 +2515,11 @@ body.is-card-swiping #cardArea {
   overflow: hidden !important;
 }
 
-body.flashcard-study-mode .reveal-btn,
-.reveal-btn {
-  display: none !important;
-}
-
 body.flashcard-study-mode .rating-row[hidden],
 body.flashcard-study-mode .rating-area[hidden],
 body.flashcard-study-mode #studyNavRow[hidden],
 body.flashcard-study-mode .nav-row[hidden],
 body.flashcard-study-mode .card-supporting-group[hidden],
-body.flashcard-study-mode .card-decomposition-wrap[hidden],
 body.flashcard-study-mode .card-radicals-row[hidden],
 body.flashcard-study-mode .card-related-wrap[hidden] {
   display: none !important;
@@ -2745,12 +2555,6 @@ body.flashcard-study-mode .rating-btn {
   border: 1px solid transparent;
   box-shadow: none;
 }
-body.flashcard-study-mode .rating-main-label {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
 body.flashcard-study-mode .rating-icon-wrap {
   display: inline-flex;
   align-items: center;
@@ -2769,9 +2573,6 @@ body.flashcard-study-mode .rating-label {
   line-height: 1.25;
   letter-spacing: -0.01em;
   white-space: nowrap;
-}
-body.flashcard-study-mode .rating-shortcut {
-  display: none !important;
 }
 
 /* Subtle Semantic Neutral - Chưa nhớ (Again): Muted Coral */
@@ -2928,113 +2729,6 @@ body.flashcard-study-mode .rating-btn--good:active {
   margin: 0 auto 12px;
   width: 100%;
 }
-.compact-filter-trigger {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 14px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: var(--card-bg, #ffffff);
-  color: var(--text-primary);
-  font-size: 13px;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
-  transition: all 0.15s ease;
-  user-select: none;
-}
-.compact-filter-trigger:hover {
-  border-color: var(--brand-primary);
-  background: var(--surface-subtle);
-  transform: translateY(-0.5px);
-}
-:root[data-theme="dark"] .compact-filter-trigger {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.1);
-}
-.compact-filter-menu {
-  position: absolute;
-  top: calc(100% + 6px);
-  background: var(--card-bg, #ffffff);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
-  min-width: 200px;
-  padding: 6px;
-  z-index: 1020;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-:root[data-theme="dark"] .compact-filter-menu {
-  background: #1e202e;
-  border-color: rgba(255, 255, 255, 0.12);
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.55);
-}
-.compact-filter-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 8px 12px;
-  border: none;
-  background: transparent;
-  color: var(--text-primary);
-  font-size: 13px;
-  font-weight: 500;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.15s ease;
-}
-.compact-filter-item:hover {
-  background: var(--surface-subtle);
-}
-:root[data-theme="dark"] .compact-filter-item:hover {
-  background: rgba(255, 255, 255, 0.07);
-}
-.compact-filter-item.is-active {
-  font-weight: 700;
-  color: var(--brand-primary);
-  background: var(--accent-light);
-}
-:root[data-theme="dark"] .compact-filter-item.is-active {
-  color: var(--brand-primary);
-  background: var(--accent-light);
-}
-.compact-filter-item-left {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-.compact-filter-item-right {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 12px;
-  color: var(--text-secondary);
-}
-.compact-filter-item-count {
-  font-variant-numeric: tabular-nums;
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--text-tertiary);
-  min-width: 24px;
-  text-align: right;
-}
-.compact-filter-check {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 14px;
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--brand-primary);
-}
-.compact-filter-check-placeholder {
-  display: inline-block;
-  width: 14px;
-}
 
 .card-position-pill {
   font-size: 13.5px;
@@ -3046,28 +2740,6 @@ body.flashcard-study-mode .rating-btn--good:active {
   border: none;
   user-select: none;
   letter-spacing: 0.04em;
-}
-
-/* Compact stroke instruction chips */
-.stroke-instruction-compact {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 8px;
-  padding: 7px 12px;
-  background: var(--surface-subtle);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  margin-top: 4px;
-}
-:root[data-theme="dark"] .stroke-instruction-compact {
-  background: rgba(255, 255, 255, 0.04);
-}
-.stroke-tip-badge {
-  font-size: 11.5px;
-  color: var(--text-tertiary);
-  font-weight: 500;
 }
 
 body.flashcard-study-mode .secondary-actions,
@@ -3125,8 +2797,7 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
     flex-shrink: 0;
   }
 
-  body.flashcard-study-mode .study-back-text,
-  body.flashcard-study-mode .study-level-badge {
+  body.flashcard-study-mode .study-back-text {
     font-size: 11.5px;
   }
 
@@ -3143,11 +2814,6 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
     font-size: 11px;
     gap: 3px;
     border-radius: 6px;
-  }
-
-  body.flashcard-study-mode .view-tab-icon {
-    width: 12px;
-    height: 12px;
   }
 
   body.flashcard-study-mode .study-view-topbar-actions {
@@ -3316,47 +2982,11 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
   .progress-nav-stat {
     font-size: 11px !important;
   }
-  body.flashcard-study-mode .desktop-filter-tabs {
-    display: none !important;
-  }
   body.flashcard-study-mode .filter-btn,
-  body.flashcard-study-mode .mobile-filter-text,
   .progress-nav-card-label {
     overflow: hidden !important;
     text-overflow: ellipsis !important;
     white-space: nowrap !important;
-  }
-  body.flashcard-study-mode .mobile-filter-bar {
-    display: flex !important;
-    justify-content: center !important;
-    width: auto !important;
-    margin: 0 auto !important;
-  }
-  body.flashcard-study-mode .mobile-filter-trigger-btn {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 6px !important;
-    padding: 4px 14px !important;
-    min-height: 28px !important;
-    border-radius: 999px !important;
-    border: 1px solid var(--border) !important;
-    background: var(--card-bg) !important;
-    color: var(--text-primary) !important;
-    font-size: 12px !important;
-    font-weight: 500 !important;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04) !important;
-    cursor: pointer !important;
-    transition: transform 0.1s ease !important;
-  }
-  body.flashcard-study-mode .mobile-filter-trigger-btn:active {
-    transform: scale(0.96) !important;
-  }
-  :root[data-theme="dark"] body.flashcard-study-mode .mobile-filter-trigger-btn {
-    background: rgba(255, 255, 255, 0.06) !important;
-    border-color: rgba(255, 255, 255, 0.12) !important;
-    color: rgba(255, 255, 255, 0.9) !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25) !important;
   }
 
   /* 1. Viewport & Screen Distribution: True Native Mobile Layout */
@@ -3501,13 +3131,6 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
     min-height: 100% !important;
   }
 
-  body.flashcard-study-mode .word-main-block.split-layout {
-    flex-direction: column;
-    gap: 4px;
-    margin: 0 auto;
-    width: 100%;
-  }
-
   /* Clean visual column & decomposition formula on mobile flashcard */
   body.flashcard-study-mode .card-visual-col {
     display: flex;
@@ -3540,13 +3163,6 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
     margin: 0 !important;
     gap: 6px !important;
   }
-  body.flashcard-study-mode .card-decomp-title {
-    font-size: 9.5px !important;
-    font-weight: 700 !important;
-    letter-spacing: 0.1em !important;
-    text-transform: uppercase !important;
-    color: var(--text-tertiary) !important;
-  }
   body.flashcard-study-mode .card-decomp-char {
     font-size: 15px !important;
   }
@@ -3558,14 +3174,6 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
   body.flashcard-study-mode .card-decomp-op {
     font-size: 12px !important;
     color: var(--text-tertiary) !important;
-  }
-
-  body.flashcard-study-mode .card-content-col {
-    gap: 2px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   body.flashcard-study-mode .hanzi {
@@ -3630,9 +3238,7 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
     justify-content: center !important;
   }
 
-  body.flashcard-study-mode .pos-tag,
   body.flashcard-study-mode .pos-badge,
-  body.flashcard-study-mode .level-badge,
   body.flashcard-study-mode .hanviet-badge {
     font-size: 11.5px !important;
     font-weight: 500 !important;
@@ -3941,12 +3547,6 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
     color: var(--text-secondary) !important;
   }
 
-  body.flashcard-study-mode .card-counter {
-    font-size: 12.5px !important;
-    font-weight: 600 !important;
-    color: var(--text-secondary) !important;
-  }
-
   body.flashcard-study-mode .study-nav-btn {
     min-height: 48px !important;
   }
@@ -3988,11 +3588,6 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
     width: 17px !important;
     height: 17px !important;
     flex-shrink: 0 !important;
-  }
-
-  /* Hide desktop shortcut numbers on mobile touch */
-  body.flashcard-study-mode .rating-shortcut {
-    display: none !important;
   }
 
   /* Muted Coral for Chưa nhớ (Again) on mobile */
@@ -4116,16 +3711,6 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
     padding: 3px 5px;
     font-size: 10.5px;
   }
-
-  body.flashcard-study-mode .card-tool-btn {
-    width: 26px;
-    height: 26px;
-    min-width: 26px;
-  }
-
-  body.flashcard-study-mode .card-toolbar {
-    gap: 2px;
-  }
 }
 
 /* 7. Mobile Landscape: keep everything comfortably fitting vertically */
@@ -4143,11 +3728,6 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
   body.flashcard-study-mode #cardArea > .card {
     padding: 38px 14px 12px;
     min-height: auto;
-  }
-
-  body.flashcard-study-mode .word-main-block.split-layout {
-    flex-direction: row;
-    gap: 16px;
   }
 
   body.flashcard-study-mode .card-visual-col {
@@ -4177,8 +3757,7 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
     margin-top: 6px !important;
   }
 
-  body.flashcard-study-mode .rating-btn,
-  body.flashcard-study-mode .reveal-btn {
+  body.flashcard-study-mode .rating-btn {
     min-height: 38px;
   }
 }
@@ -4243,9 +3822,6 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
   body.flashcard-study-mode .study-nav-controls {
     margin: clamp(6px, 0.8vh, 10px) auto 0;
     padding-bottom: clamp(6px, 1vh, 12px);
-  }
-  body.flashcard-study-mode .card-content-col {
-    gap: clamp(4px, 0.8vh, 10px);
   }
   body.flashcard-study-mode.study-sidebar-open .workstation-right {
     height: calc(100dvh - 10px - max(28px, 4.5vh)) !important;
@@ -4624,8 +4200,6 @@ body.flashcard-study-mode .grammar-breakdown-panel[hidden] { display: none !impo
   color: var(--text-tertiary); font-size: 12.5px; font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; flex-shrink: 0;
 }
 
-
-
 /* Mobile/tablet: left panel content is relocated into a dialog by
    sidebar-search.js / sidebar-radicals-filter.js / weak-words.js;
    right panel content is relocated into <details> accordions by
@@ -4806,7 +4380,6 @@ body.flashcard-study-mode .grammar-breakdown-panel[hidden] { display: none !impo
 .sidebar-search-result:focus {
   background: var(--accent-light);
 }
-.sidebar-search-result .ssr-level { margin-left: auto; font-size: 11px; color: var(--text-tertiary); }
 .sidebar-search-empty { padding: 14px 12px; color: var(--text-secondary); font-size: 13px; text-align: center; }
 .sidebar-panel-title {
   font-weight: 600;
@@ -4814,26 +4387,6 @@ body.flashcard-study-mode .grammar-breakdown-panel[hidden] { display: none !impo
   font-size: 13px;
   margin-top: 8px;
 }
-.sidebar-stroke-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-.sidebar-stroke-chip {
-  border: 1px solid var(--border);
-  background: var(--card-bg);
-  color: var(--text-secondary);
-  border-radius: 999px;
-  padding: 4px 10px;
-  font-size: 12px;
-  cursor: pointer;
-}
-.sidebar-stroke-chip.active {
-  background: var(--accent);
-  color: #fff;
-  border-color: var(--accent);
-}
-.sidebar-radicals-grid { position: static; max-height: 240px; }
 .sidebar-radical-summary { margin: 6px 0 12px; color: var(--text-secondary); font-size: 12px; line-height: 1.45; }
 .sidebar-radical-directory-btn {
   width: 100%; padding: 9px 10px; border: 1px solid var(--border); border-radius: var(--radius-md);
@@ -5275,17 +4828,6 @@ body.flashcard-study-mode .grammar-breakdown-panel[hidden] { display: none !impo
   }
 }
 
-/* Utility: hide scrollbar while preserving smooth scrolling */
-.no-scrollbar::-webkit-scrollbar {
-  display: none !important;
-  width: 0 !important;
-  height: 0 !important;
-}
-.no-scrollbar {
-  -ms-overflow-style: none !important;
-  scrollbar-width: none !important;
-}
-
 /* ==========================================================================
    Split vocabulary card (v3.4.0)
    Flipped card on >= 768px: word info left (60%), illustration right (40%),
@@ -5518,7 +5060,6 @@ body.flashcard-study-mode .card.is-flipped .card-visual-col[hidden] {
   #screenVocabHub .creator-signature .cs-meta,
   #screenVocabHub .creator-signature .cs-author { justify-content: flex-start; }
 }
-
 
 /* ==========================================================================
    Visual refinement (v3.7.0) — Chinese editorial × modern minimal

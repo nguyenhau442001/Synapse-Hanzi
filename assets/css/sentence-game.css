@@ -274,24 +274,6 @@
   color: var(--text-secondary);
 }
 
-.sentence-distractor-tag {
-  font-size: 11px;
-  font-weight: 600;
-  padding: 2px 7px;
-  border-radius: 6px;
-  background: var(--warning-bg);
-  color: var(--warning-text);
-  border: 1px solid var(--border);
-}
-
-.sentence-game-meaning {
-  font-size: 22px;
-  font-weight: 650;
-  color: var(--text-primary);
-  line-height: 1.45;
-  letter-spacing: -0.01em;
-}
-
 /* 3. Target Slots (Drop Zone) */
 .sentence-slots-wrapper {
   display: flex;
@@ -362,12 +344,6 @@
   border: 1.5px dashed var(--border);
 }
 
-/* In-Progress State: clean solid border */
-.sentence-game-slots.has-items {
-  background: var(--bg);
-  border: 1.5px solid var(--border);
-}
-
 /* Dragging Over: subtle orange glow */
 .sentence-game-slots.dragover {
   border-color: var(--accent);
@@ -378,106 +354,6 @@
 .sentence-game-slots.is-correct {
   background: rgba(16, 185, 129, 0.04);
   border: 1.5px solid rgba(16, 185, 129, 0.4);
-}
-
-/* Target Slot Item: Empty placeholder */
-.sentence-slot.empty {
-  min-width: 54px;
-  min-height: 54px;
-  border: 1.5px dashed var(--border);
-  border-radius: 12px;
-  background: transparent;
-  color: var(--text-tertiary);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.55;
-  transition: all 0.16s ease;
-  user-select: none;
-}
-
-.sentence-slot.empty .slot-idx-num {
-  font-size: 12px;
-  font-weight: 700;
-  font-variant-numeric: tabular-nums;
-}
-
-.sentence-slot.empty.dragover {
-  border-color: var(--accent);
-  background: var(--accent-light);
-  opacity: 1;
-  transform: scale(1.05);
-}
-
-/* Placed Tile in Slot — Neutral by Default, Subtle Elevation */
-.sentence-slot.filled {
-  min-width: 54px;
-  min-height: 54px;
-  padding: 6px 14px;
-  border-radius: 12px;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-cjk-clean);
-  background: var(--card-bg);
-  border: 1.5px solid var(--border);
-  border-bottom: 3px solid var(--tile-shadow-border);
-  color: var(--text-primary);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
-  cursor: pointer;
-  user-select: none;
-  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
-  animation: tileSnap 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
-  box-sizing: border-box;
-}
-
-/* Orange reserved for hover, focus, and dragging interactions */
-.sentence-slot.filled:not(:disabled):hover {
-  transform: translateY(-2px);
-  border-color: var(--accent);
-  border-bottom-color: var(--accent);
-  box-shadow: 0 5px 12px rgba(234, 88, 12, 0.12);
-}
-
-.sentence-slot.filled:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-  border-color: var(--accent);
-}
-
-.sentence-slot.filled:not(:disabled):active {
-  transform: translateY(1.5px);
-  border-bottom-width: 1.5px;
-}
-
-.sentence-slot.filled.dragging {
-  opacity: 0.88;
-  transform: scale(1.05) rotate(1.5deg);
-  box-shadow: 0 10px 22px rgba(234, 88, 12, 0.18);
-  border-color: var(--accent);
-  cursor: grabbing;
-}
-
-.sentence-slot.filled.has-distractor {
-  border-color: #ef4444;
-  border-bottom-color: #dc2626;
-  background: rgba(239, 68, 68, 0.06);
-}
-
-/* Completed appearance when puzzle is solved */
-.sentence-game-slots.is-correct .sentence-slot.filled {
-  border-color: #a7f3d0;
-  border-bottom-color: #6ee7b7;
-  cursor: default;
-  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.08);
-}
-
-.sentence-game-slots.is-correct .sentence-slot.filled:hover {
-  transform: none;
-  border-color: #a7f3d0;
-  border-bottom-color: #6ee7b7;
-  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.08);
 }
 
 /* 4. Word Bank Area */
@@ -635,118 +511,6 @@
   border-radius: 12px;
   font-size: 13.5px;
   font-weight: 600;
-}
-
-/* Magnetic Word Tiles in Bank */
-.sentence-chip {
-  min-width: 54px;
-  min-height: 54px;
-  padding: 6px 14px;
-  border: 1.5px solid var(--border);
-  border-bottom: 3px solid var(--tile-shadow-border);
-  border-radius: 12px;
-  background: var(--card-bg);
-  font-family: var(--font-cjk-clean);
-  color: var(--text-primary);
-  cursor: grab;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  user-select: none;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
-  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
-  box-sizing: border-box;
-}
-
-.sentence-chip:hover {
-  transform: translateY(-2px);
-  border-color: var(--accent);
-  border-bottom-color: var(--accent);
-  box-shadow: 0 5px 12px rgba(234, 88, 12, 0.12);
-}
-
-.sentence-chip:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-}
-
-.sentence-chip:active {
-  transform: translateY(1.5px);
-  border-bottom-width: 1.5px;
-}
-
-.sentence-chip.dragging {
-  opacity: 0.88;
-  transform: scale(1.05) rotate(1.5deg);
-  box-shadow: 0 10px 22px rgba(234, 88, 12, 0.18);
-  border-color: var(--accent);
-  cursor: grabbing;
-}
-
-/* Ghost placeholder for picked words during play */
-.sentence-chip.is-used {
-  opacity: 0.22;
-  background: transparent;
-  border: 1.5px dashed var(--border);
-  border-bottom-width: 1.5px;
-  box-shadow: none;
-  pointer-events: none;
-  cursor: default;
-}
-
-/* Compact Unused Distractors Summary after completion */
-.sentence-bank-distractors-compact {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 13px;
-  color: var(--text-secondary);
-  background: var(--bg);
-  border: 1px solid var(--border);
-  padding: 5px 14px;
-  border-radius: 20px;
-  margin: 4px auto;
-}
-
-.distractor-compact-label {
-  font-weight: 500;
-}
-
-.distractor-compact-pill {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 4px;
-  padding: 2px 8px;
-  border-radius: 6px;
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  font-family: var(--font-cjk-clean);
-  font-weight: 600;
-  color: var(--text-primary);
-}
-
-.distractor-compact-pill .chip-py {
-  font-size: 11px;
-  color: var(--text-secondary);
-  font-weight: 500;
-}
-
-/* Tile Typography Hierarchy: Hanzi dominant, Pinyin secondary */
-.chip-ruby-py {
-  font-size: 11.5px;
-  line-height: 1.1;
-  color: var(--text-secondary);
-  font-family: var(--font-base, -apple-system, sans-serif);
-  font-weight: 500;
-  margin-bottom: 2px;
-}
-
-.chip-hanzi {
-  font-size: 23px;
-  font-weight: 600;
-  line-height: 1.15;
-  font-family: var(--font-cjk-clean);
 }
 
 /* 5. In-Progress Feedback (Warnings, Errors, Hints) */
@@ -1053,23 +817,10 @@
     border-radius: 16px;
     gap: 18px;
   }
-  .sentence-game-meaning {
-    font-size: 18px;
-  }
   .sentence-game-slots {
     padding: 14px 10px;
     min-height: 84px;
     gap: 8px;
-  }
-  .sentence-chip,
-  .sentence-slot.filled,
-  .sentence-slot.empty {
-    min-width: 48px;
-    min-height: 50px;
-    padding: 6px 12px;
-  }
-  .chip-hanzi {
-    font-size: 21px;
   }
   .sentence-result-zh {
     font-size: 21px;

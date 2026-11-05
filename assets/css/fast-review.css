@@ -12,7 +12,6 @@ body.review-focus-mode #continueLearningCard,
 body.review-focus-mode .dashboard-aux-column,
 body.review-focus-mode .quick-quiz-card,
 body.review-focus-mode .featured-topics,
-body.review-focus-mode .app-footer,
 body.review-focus-mode #reviewSetupCard,
 body.review-focus-mode .review-range-picker {
   display: none !important;
@@ -67,58 +66,12 @@ body.review-focus-mode #reviewResult {
   flex-direction: column !important;
   align-items: center !important;
 }
-
-/* Intro & Empty Screens */
-.review-intro, .review-empty {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 32px 24px;
-  text-align: center;
-  margin: 16px auto;
-  max-width: 600px;
-  width: 100%;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-}
-.review-intro-icon, .review-empty-icon, .review-result-icon {
+.review-result-icon {
   font-size: 48px;
   line-height: 1;
   margin-bottom: 12px;
 }
-.review-intro-title, .review-empty-title {
-  font-size: 22px;
-  font-weight: 800;
-  margin-bottom: 14px;
-  color: var(--text-primary);
-}
-.review-empty-msg {
-  font-size: 14px;
-  color: var(--text-secondary);
-  line-height: 1.6;
-}
-.review-rules {
-  text-align: left;
-  margin: 0 auto 24px;
-  padding: 16px 20px 16px 36px;
-  background: var(--surface-subtle);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  color: var(--text-secondary);
-  font-size: 14px;
-  line-height: 1.8;
-  max-width: 480px;
-}
-.review-rules strong {
-  color: var(--text-primary);
-}
-.review-intro-actions {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.review-start-btn, .review-again-btn {
+.review-again-btn {
   background: var(--accent-gradient, var(--accent));
   color: #fff;
   border: 1px solid color-mix(in srgb, var(--accent) 75%, black 15%);
@@ -131,13 +84,13 @@ body.review-focus-mode #reviewResult {
   box-shadow: 0 3px 10px color-mix(in srgb, var(--accent) 30%, transparent);
   transition: transform 140ms ease, box-shadow 140ms ease, filter 140ms ease;
 }
-.review-start-btn:hover, .review-again-btn:hover {
+.review-again-btn:hover {
   background: var(--accent-gradient-hover, var(--accent));
   filter: brightness(1.05);
   transform: translateY(-2px);
   box-shadow: 0 6px 16px color-mix(in srgb, var(--accent) 40%, transparent);
 }
-.review-start-btn:active, .review-again-btn:active {
+.review-again-btn:active {
   transform: translateY(0);
 }
 .review-back-btn {

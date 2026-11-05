@@ -129,33 +129,6 @@ body:not(.home-screen) .home-widgets { display: none; }
 .hw-bar-col.is-today .hw-bar-value,
 .hw-bar-col.is-today .hw-bar-label { color: var(--accent-text); font-weight: 700; }
 
-/* Hoạt động */
-.hw-stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 14px; }
-.hw-stat { padding: 10px 12px; background: var(--surface-subtle); border-radius: 12px; }
-.hw-stat strong { display: block; font-size: 17px; line-height: 1.2; }
-.hw-stat span { color: var(--text-secondary); font-size: 11.5px; }
-.hw-heatmap {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  grid-template-rows: repeat(7, auto);
-  grid-auto-flow: column;
-  gap: 4px;
-  margin-top: 14px;
-}
-.hw-cell { display: block; aspect-ratio: 1; border-radius: 4px; background: var(--heatmap-empty); transition: background-color 150ms ease; }
-.hw-cell.is-future { background: transparent; }
-.hw-cell[data-level="1"] { background: color-mix(in srgb, var(--accent) 24%, var(--card-bg)); }
-.hw-cell[data-level="2"] { background: color-mix(in srgb, var(--accent) 48%, var(--card-bg)); }
-.hw-cell[data-level="3"] { background: color-mix(in srgb, var(--accent) 74%, var(--card-bg)); }
-.hw-cell[data-level="4"] { background: var(--accent); }
-.hw-legend {
-  display: flex; align-items: center; justify-content: flex-end; gap: 4px;
-  margin-top: 10px; color: var(--text-secondary); font-size: 11px;
-}
-.hw-legend .hw-cell { width: 11px; height: 11px; }
-.hw-legend span:first-child { margin-right: 2px; }
-.hw-legend span:last-child { margin-left: 2px; }
-
 @media (min-width: 1280px) {
   body.home-screen .workstation-right > .home-widgets { gap: 10px; }
   body.home-screen .workstation-right .hw-card { padding: 14px; border-radius: 14px; }
@@ -179,13 +152,6 @@ body:not(.home-screen) .home-widgets { display: none; }
   body.home-screen .workstation-right .hw-bar { max-width: 26px; }
   body.home-screen .workstation-right .hw-bar-value,
   body.home-screen .workstation-right .hw-bar-label { font-size: 10px; }
-  body.home-screen .workstation-right .hw-stats { gap: 7px; margin-top: 10px; }
-  body.home-screen .workstation-right .hw-stat { padding: 8px 10px; }
-  body.home-screen .workstation-right .hw-stat strong { font-size: 15px; }
-  body.home-screen .workstation-right .hw-stat span { font-size: 10px; }
-  body.home-screen .workstation-right .hw-heatmap { gap: 3px; margin-top: 10px; }
-  body.home-screen .workstation-right .hw-cell { border-radius: 3px; }
-  body.home-screen .workstation-right .hw-legend { margin-top: 7px; font-size: 10px; }
 }
 
 /* Từ hay quên */
@@ -245,95 +211,6 @@ body:not(.home-screen) .home-widgets { display: none; }
 .hw-review-speak.hw-icon-btn:hover {
   background: var(--surface-hover); color: var(--text-primary); border-color: var(--border);
 }
-.hw-forgotten > .hw-primary-btn {
-  margin-top: 16px;
-  margin-bottom: 2px;
-}
-
-/* Khám phá nâng cao (Relocated Discovery Section) */
-.hw-discovery-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 14px;
-}
-.hw-discovery-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 12px 14px;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  background: var(--surface-subtle);
-  cursor: pointer;
-  transition: border-color 150ms ease, background-color 150ms ease, transform 150ms ease;
-  user-select: none;
-}
-.hw-discovery-item:hover {
-  border-color: var(--accent);
-  background: color-mix(in srgb, var(--accent) 7%, var(--surface-subtle));
-  transform: translateY(-1px);
-}
-.hw-discovery-item:active {
-  transform: translateY(0);
-}
-.hw-discovery-item:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-}
-.hw-discovery-icon {
-  font-size: 22px;
-  flex: 0 0 auto;
-}
-.hw-discovery-info {
-  flex: 1 1 auto;
-  min-width: 0;
-}
-.hw-discovery-title-row {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.hw-discovery-title-row strong {
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--text-primary);
-}
-.hw-discovery-pill {
-  font-size: 10px;
-  font-weight: 800;
-  padding: 1px 6px;
-  border-radius: 4px;
-  white-space: nowrap;
-}
-.hw-pill-amber {
-  background: #f59e0b;
-  color: #000;
-}
-.hw-pill-accent {
-  background: var(--accent);
-  color: #fff;
-}
-.hw-discovery-desc {
-  margin: 2px 0 0;
-  font-size: 11.5px;
-  color: var(--text-secondary);
-  line-height: 1.35;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.hw-discovery-cta {
-  flex: 0 0 auto;
-  color: var(--text-tertiary);
-  font-size: 14px;
-  font-weight: 700;
-  transition: color 150ms ease, transform 150ms ease;
-}
-.hw-discovery-item:hover .hw-discovery-cta {
-  color: var(--accent-text);
-  transform: translateX(2px);
-}
 
 /* Tablet: widgets join the vocab hub as a 2-column grid under the level grid. */
 @media (max-width: 1279px) {
@@ -353,9 +230,6 @@ body:not(.home-screen) .home-widgets { display: none; }
   .home-widgets > .hw-card { padding: 16px; border-radius: 14px; margin-top: 14px; }
   .home-widgets > .hw-wotd { order: 1; }
   .home-widgets > .hw-forecast { order: 2; }
-  .home-widgets > .hw-forgotten { order: 3; }
-  .home-widgets > .hw-activity { order: 4; }
-  .home-widgets > .hw-discovery { order: 5; }
   .hw-wotd-main { flex-direction: row; align-items: center; gap: 14px; text-align: left; margin-top: 10px; }
   .hw-wotd-hanzi { font-size: 44px; }
   .hw-wotd-hanzi.is-medium { font-size: 34px; }

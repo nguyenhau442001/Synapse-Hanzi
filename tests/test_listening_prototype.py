@@ -210,8 +210,7 @@ def test_listening_polish_v112():
     assert "--listening-player-bg: #f8f4ee" in css
     assert "--listening-border-subtle: #ece5dc" in css
 
-    # 8. Footer prominence reduction
-    assert "body.listening-view-active .app-footer" in css and "display: none !important" in css
+    # 8. Project info lives in the About modal (there is no page footer)
     assert "helpTabAbout" in help_js, "Developer and project info must be available in About modal"
 
     print("   ✓ All v1.1.2 UI polish requirements verified successfully!")

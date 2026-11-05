@@ -295,8 +295,6 @@ body.graded-reading-active #continueLearningCard,
 body.graded-reading-active .dashboard-aux-column,
 body.graded-reading-active .quick-quiz-card,
 body.graded-reading-active .featured-topics,
-body.graded-reading-active .reading-promo-banner,
-body.graded-reading-active .graded-reading-promo-banner,
 body.graded-reading-active #screenVocabHub,
 body.graded-reading-active #screenCards,
 body.graded-reading-active #screenPicker,
@@ -306,8 +304,7 @@ body.graded-reading-active #screenRadicalHub,
 body.graded-reading-active #screenSentenceGame,
 body.graded-reading-active #screenGuessWord,
 body.graded-reading-active #screenSpeedQuiz,
-body.graded-reading-active #screenReadingAnalysis,
-body.graded-reading-active .app-footer {
+body.graded-reading-active #screenReadingAnalysis {
   display: none !important;
 }
 
@@ -644,22 +641,6 @@ body.graded-reading-active #screenGradedReading {
   background: rgba(220, 38, 38, 0.18);
   border-color: rgba(220, 38, 38, 0.35);
   color: #f87171;
-}
-
-.graded-card-read-badge {
-  font-size: 0.72rem;
-  font-weight: 750;
-  padding: 3px 8px;
-  border-radius: 6px;
-  background: var(--graded-read-badge-bg);
-  border: 1px solid var(--graded-read-badge-border);
-  color: var(--graded-read-badge-text);
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  white-space: nowrap;
-  flex-shrink: 0;
-  line-height: 1;
 }
 
 .graded-card-mark-toggle {
@@ -1542,14 +1523,6 @@ body.graded-translation-hidden .graded-sentence-vi {
 /* ==========================================================================
    5. Promo Banners Light/Dark Harmonization
    ========================================================================== */
-.graded-reading-promo-banner {
-  border: 1px solid var(--graded-amber-badge-border) !important;
-}
-
-.graded-reading-promo-banner .primary-tab {
-  color: var(--graded-vi-title) !important;
-  border-color: var(--graded-amber-badge-border) !important;
-}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

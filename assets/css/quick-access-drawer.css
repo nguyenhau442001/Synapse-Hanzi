@@ -246,8 +246,7 @@
 /* Cluster 3: Minimal Ghost Utility Buttons */
 .header-utility-cluster .header-help-btn,
 .header-utility-cluster .theme-toggle-btn,
-.header-utility-cluster .header-profile-btn,
-.header-utility-cluster .header-search-btn {
+.header-utility-cluster .header-profile-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -266,8 +265,7 @@
 
 .header-utility-cluster .header-help-btn:hover,
 .header-utility-cluster .theme-toggle-btn:hover,
-.header-utility-cluster .header-profile-btn:hover,
-.header-utility-cluster .header-search-btn:hover {
+.header-utility-cluster .header-profile-btn:hover {
   background: var(--surface-subtle);
   border-color: var(--border);
   color: var(--text-primary);
@@ -276,15 +274,13 @@
 
 .header-utility-cluster .header-help-btn:active,
 .header-utility-cluster .theme-toggle-btn:active,
-.header-utility-cluster .header-profile-btn:active,
-.header-utility-cluster .header-search-btn:active {
+.header-utility-cluster .header-profile-btn:active {
   transform: translateY(0);
 }
 
 .header-utility-cluster .header-help-btn:focus-visible,
 .header-utility-cluster .theme-toggle-btn:focus-visible,
-.header-utility-cluster .header-profile-btn:focus-visible,
-.header-utility-cluster .header-search-btn:focus-visible {
+.header-utility-cluster .header-profile-btn:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
 }

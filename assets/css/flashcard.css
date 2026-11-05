@@ -20,7 +20,6 @@
 .stat-num { font-size: 19px; font-weight: 600; }
 .stat-lbl { font-size: 10.5px; color: var(--text-secondary); margin-top: 2px; }
 .filter-row { width: 100%; margin-bottom: 12px; }
-.desktop-filter-tabs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; width: 100%; }
 .filter-btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 4px;
   width: 100%; min-width: 0; min-height: 36px; font-size: clamp(11px, 2.2vw, 12.5px); font-weight: 500;
@@ -33,23 +32,6 @@
   background: var(--accent); color: #ffffff; font-weight: 600;
   box-shadow: 0 2px 8px color-mix(in srgb, var(--accent) 30%, transparent);
 }
-.filter-btn .filter-count { opacity: 0.85; font-size: 11px; }
-.filter-btn.active .filter-count { opacity: 1; font-weight: 700; }
-
-.mobile-filter-bar { display: none; }
-.mobile-filter-trigger-btn {
-  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
-  padding: 6px 16px; border-radius: 999px; border: 1px solid var(--border);
-  background: var(--card-bg); color: var(--text-primary); font-size: 12.5px;
-  font-weight: 500; cursor: pointer; transition: all 0.15s ease;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
-}
-.mobile-filter-trigger-btn:active { transform: scale(0.97); }
-.mobile-filter-icon { font-size: 13px; line-height: 1; }
-.mobile-filter-text { font-size: 12.5px; }
-.mobile-filter-text strong { color: var(--accent); font-weight: 600; }
-.mobile-filter-count { opacity: 0.75; font-size: 11.5px; }
-.mobile-filter-chevron { font-size: 10px; color: var(--text-tertiary); margin-left: 2px; }
 
 /* Mobile Filter Bottom Sheet */
 .study-filter-sheet-body { padding: 4px 0 12px; }
@@ -81,7 +63,6 @@
   background: var(--accent-light);
 }
 .filter-sheet-option-left { display: flex; align-items: center; gap: 10px; }
-.filter-sheet-option-icon { font-size: 17px; line-height: 1; }
 .filter-sheet-option-label { font-size: 14.5px; }
 .filter-sheet-option-right { display: flex; align-items: center; gap: 8px; }
 .filter-sheet-option-count { font-size: 13px; color: var(--text-secondary); }
@@ -106,88 +87,6 @@
   border-bottom: none;
   background: transparent;
 }
-.card-position-badge {
-  display: inline-flex;
-  align-items: center;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--text-tertiary);
-  padding: 3px 8px;
-  border-radius: 999px;
-  background: transparent;
-  border: none;
-  user-select: none;
-  letter-spacing: 0.03em;
-}
-:root[data-theme="dark"] .card-position-badge {
-  background: transparent;
-  border: none;
-  color: var(--text-tertiary);
-}
-
-.card-header-nav {
-  display: inline-flex;
-  align-items: center;
-  gap: 2px;
-}
-.card-header-nav-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
-  padding: 0;
-  border-radius: 6px;
-  border: none;
-  background: transparent;
-  color: var(--text-tertiary);
-  cursor: pointer;
-  transition: all 0.15s ease;
-  opacity: 0.65;
-}
-.card-header-nav-btn:hover {
-  background: var(--surface-subtle);
-  color: var(--text-primary);
-  opacity: 1;
-}
-.card-header-nav-btn:active {
-  transform: scale(0.9);
-}
-
-.card-toolbar {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-}
-.card-tool-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  min-width: 30px;
-  max-width: 30px;
-  padding: 0;
-  border-radius: 8px;
-  border: none;
-  background: transparent;
-  color: var(--text-secondary);
-  opacity: 0.7;
-  font-size: 13px;
-  cursor: pointer;
-  transition: all 0.15s ease;
-  box-shadow: none;
-}
-.card-tool-btn:hover {
-  background: var(--surface-subtle);
-  color: var(--text-primary);
-  opacity: 1;
-}
-.card-tool-btn.active, .card-tool-btn.on {
-  color: var(--accent);
-  opacity: 1;
-  background: var(--accent-light);
-}
 
 .toolbar { display: flex; justify-content: flex-end; margin-bottom: 16px; }
 .icon-btn { font-size: 12px; padding: 6px 12px; border-radius: var(--radius-md); border: 1px solid var(--border); background: var(--card-bg); color: var(--text-secondary); cursor: pointer; }
@@ -201,9 +100,6 @@
   .toolbar { justify-content: stretch; }
   .tool-group { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); width: 100%; }
   .tool-group .icon-btn { min-width: 0; padding: 6px 4px; font-size: 11.5px; line-height: 1.25; white-space: normal; }
-  .card-tool-btn { width: 26px; height: 26px; min-width: 26px; max-width: 26px; font-size: 12px; }
-  .card-toolbar { gap: 2px; }
-  .card-position-badge { font-size: 11px; padding: 1px 6px; }
 }
 .card {
   background: var(--card-bg);
@@ -307,15 +203,6 @@
   .card-content.exit-left,.card-content.exit-right,.card-content.exit-fade,
   .card-content.enter-right,.card-content.enter-left,.card-content.enter-fade { animation: none; }
 }
-
-.word-main-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  width: 100%;
-}
 .hanzi {
   font-size: clamp(74px, 14vw, 108px);
   font-weight: 700;
@@ -369,7 +256,6 @@
   text-align: center;
 }
 .meaning.show { display: block; }
-.card-content.is-empty .word-main-block,
 .card-content.is-empty .hint { display: none !important; }
 .card-content.is-empty .meaning { margin-top: 0; }
 
@@ -378,12 +264,10 @@
 .card:not(.is-flipped) .meaning,
 .card:not(.is-flipped) .hanviet-badge,
 .card:not(.is-flipped) .pos-badge,
-.card:not(.is-flipped) .level-badge,
 .card:not(.is-flipped) .example-box,
 .card:not(.is-flipped) .card-expandable-group,
 .card:not(.is-flipped) .card-accordion,
 .card:not(.is-flipped) .card-supporting-group,
-.card:not(.is-flipped) .card-decomposition-wrap,
 .card:not(.is-flipped) .card-radicals-row,
 .card:not(.is-flipped) .card-related-wrap,
 .card:not(.is-flipped) .card-visual-col {
@@ -447,24 +331,6 @@ body.hide-illustrations .card .card-visual-col {
   height: 0 !important;
   margin: 0 !important;
   padding: 0 !important;
-}
-
-/* Card Decomposition: Cấu tạo chữ */
-.card-decomposition-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 3px;
-}
-.card-decomp-title {
-  font-size: 10.5px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--text-muted, #8B918C);
-  line-height: 1.2;
 }
 .card-radicals-row {
   display: flex;
@@ -530,18 +396,6 @@ body.hide-illustrations .card .card-visual-col {
   font-weight: 600;
   color: var(--text-muted, #8B918C);
   margin-right: 2px;
-}
-.card-decomp-names-row {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  font-size: 11.5px;
-  color: var(--text-muted, #8B918C);
-  line-height: 1.3;
-}
-.card-decomp-dot {
-  opacity: 0.6;
 }
 
 /* Khối mở rộng học sâu: Accordion Cấu tạo chữ & Chữ liên quan */
@@ -665,9 +519,6 @@ body.hide-illustrations .card .card-visual-col {
   justify-content: flex-end;
   gap: 8px;
   margin-bottom: 4px;
-}
-.card-related-title {
-  display: none;
 }
 .card-related-back-btn {
   display: inline-flex;
@@ -1095,7 +946,6 @@ body.hide-illustrations .card .card-visual-col {
   margin: 3px 0 10px;
 }
 .meta-badges-row .pos-badge,
-.meta-badges-row .level-badge,
 .meta-badges-row .hanviet-badge {
   background: transparent !important;
   border: none !important;
@@ -1106,7 +956,6 @@ body.hide-illustrations .card .card-visual-col {
   color: var(--text-muted, #8B918C) !important;
 }
 :root[data-theme="dark"] .meta-badges-row .pos-badge,
-:root[data-theme="dark"] .meta-badges-row .level-badge,
 :root[data-theme="dark"] .meta-badges-row .hanviet-badge {
   color: var(--text-muted, #8B918C) !important;
 }
@@ -1230,31 +1079,20 @@ body.hide-illustrations .card .card-visual-col {
   color: var(--text-primary);
   transform: translateY(-0.5px);
 }
-.card-counter {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--text-tertiary);
-  letter-spacing: 0.02em;
-}
 .progress-text { font-size: 13px; color: var(--text-secondary); }
 .action-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 14px; }
 .action-row button { min-width: 0; font-size: 13.5px; padding: 11px 8px; border-radius: var(--radius-md); border: 1px solid var(--border); cursor: pointer; font-weight: 500; }
 .btn-unknown { background: var(--danger-bg); color: var(--danger-text); }
 .btn-known { background: var(--success-bg); color: var(--success-text); }
-.review-preview { display: inline-block; margin-left: 4px; opacity: 0.8; font-size: 0.9em; }
-.nav-row--progress-only { justify-content: center; }
 
 /* SRS rating: one "Lật thẻ" button before the answer, two clean tactile ratings after it. */
 .rating-area {
   margin-top: 14px;
   padding-bottom: max(16px, env(safe-area-inset-bottom, 16px));
 }
-.reveal-btn {
-  display: none !important;
-}
-@media (max-width: 360px) { .rating-label { font-size: 14.5px; } .rating-interval { font-size: 11px; } }
+@media (max-width: 360px) { .rating-label { font-size: 14.5px; } }
 .rating-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; width: 100%; margin-top: 6px; }
-.reveal-btn[hidden], .rating-row[hidden], .rating-area[hidden], #studyNavRow[hidden], .nav-row[hidden], .today-review-answer[hidden] {
+.rating-row[hidden], .rating-area[hidden], #studyNavRow[hidden], .nav-row[hidden] {
   display: none !important;
 }
 .rating-btn {
@@ -1271,8 +1109,7 @@ body.hide-illustrations .card .card-visual-col {
 .rating-btn:active {
   transform: scale(0.98);
 }
-.rating-btn:focus-visible, .reveal-btn:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
-.rating-main-label { display: inline-flex; align-items: center; justify-content: center; gap: 8px; }
+.rating-btn:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
 .rating-icon-wrap { display: inline-flex; align-items: center; justify-content: center; line-height: 1; flex-shrink: 0; }
 .rating-icon { width: 17px; height: 17px; display: block; }
 .rating-label { font-size: 15px; font-weight: 600; line-height: 1; white-space: nowrap; letter-spacing: -0.01em; }
@@ -1303,8 +1140,6 @@ body.hide-illustrations .card .card-visual-col {
   opacity: 0.6;
   font-size: 10px;
 }
-.rating-kbd { display: none; }
-.rating-interval { display: none; }
 
 /* Light Mode Defaults: Subtle Semantic Neutral - Muted Coral & Muted Sage */
 .rating-btn--again {
@@ -1398,22 +1233,7 @@ body.hide-illustrations .card .card-visual-col {
   background-color: rgba(45, 102, 77, 0.34);
   transform: translateY(1px);
 }
-.key-badge { display: none; }
-@media (pointer: fine) {
-  .key-badge {
-    display: inline-block; padding: 0 4px; border: 1px solid currentColor; border-radius: 4px;
-    font-family: inherit; font-size: 10px; font-weight: 600; line-height: 1.4; opacity: 0.55;
-  }
-  .reveal-btn .key-badge {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.4);
-    color: #ffffff;
-    opacity: 1;
-  }
-}
-.today-review-answer .pinyin { margin-top: 6px; }
 .daily-new-limit-message { min-height: 1.2em; margin-top: 6px; color: var(--text-secondary); font-size: 13px; }
-.due-count-badge { display: inline-grid; min-width: 1.6em; height: 1.6em; place-items: center; margin-left: 5px; padding: 0 5px; border-radius: 99px; background: var(--danger-bg); color: var(--danger-text); font-size: 0.85em; }
 /* ==========================================================================
    TODAY REVIEWS / QUICK FORGOTTEN REVIEWS — ZEN FOCUS MODE
    ========================================================================== */
@@ -2315,8 +2135,7 @@ body.hide-illustrations .card .card-visual-col {
     min-height: min-content;
   }
   .study-mode .example-box .ex-label { margin-bottom: 4px; }
-  .study-mode .example-box .ex-line,
-  .study-mode .example-box .ex-zh-row { margin-top: 2px; margin-bottom: 2px; }
+  .study-mode .example-box .ex-line { margin-top: 2px; margin-bottom: 2px; }
   .study-mode .hint { margin-top: 6px; }
 
   .study-mode .nav-row { margin-top: 10px; gap: 10px; }
@@ -2325,7 +2144,6 @@ body.hide-illustrations .card .card-visual-col {
   .study-mode .action-row button { padding-top: 10px; padding-bottom: 10px; }
   .study-mode .rating-area { margin-top: 10px; }
   .study-mode .rating-btn { min-height: 48px; padding-top: 10px; padding-bottom: 10px; }
-  .study-mode .reveal-btn { padding-top: 11px; padding-bottom: 11px; }
 }
 
 /* Sino-Vietnamese (Hán - Việt) Badge and controls */
@@ -2397,15 +2215,4 @@ html.hide-hanviet .active-hv {
 .vocabulary-hanviet {
   font-size: 12px;
   margin-left: 6px;
-}
-
-/* Utility: hide scrollbar while preserving smooth scrolling */
-.no-scrollbar::-webkit-scrollbar {
-  display: none !important;
-  width: 0 !important;
-  height: 0 !important;
-}
-.no-scrollbar {
-  -ms-overflow-style: none !important;
-  scrollbar-width: none !important;
 }
