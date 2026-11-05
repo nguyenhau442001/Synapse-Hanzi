@@ -742,10 +742,10 @@ class TestLearningProgressNavigator(unittest.TestCase):
         self.assertIn(".progress-nav-card:hover", self.workstation_css)
         self.assertIn(".progress-nav-card:active", self.workstation_css)
         self.assertIn(".progress-nav-card:focus-visible", self.workstation_css)
-        # Focus-visible must use brand-primary outline
+        # Focus-visible must use the brand accent outline (--accent == --brand-primary)
         match_focus = re.search(r"\.progress-nav-card:focus-visible\s*\{([^}]+)\}", self.workstation_css)
         self.assertIsNotNone(match_focus)
-        self.assertIn("var(--brand-primary)", match_focus.group(1))
+        self.assertIn("outline: 2px solid var(--accent)", match_focus.group(1))
 
 
 

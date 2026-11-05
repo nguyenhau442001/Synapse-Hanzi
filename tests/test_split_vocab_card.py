@@ -15,13 +15,13 @@ class TestSplitVocabCard(unittest.TestCase):
     def test_hero_gets_illustration_class_from_existing_sync(self):
         self.assertIn("heroBlock.classList.toggle('has-illustration', hasVisual)", FLASHCARD_JS)
 
-    def test_desktop_grid_is_60_40_with_illustration_on_the_right(self):
+    def test_desktop_grid_puts_illustration_on_the_right(self):
         block = WORKSTATION_CSS.split("Split vocabulary card", 1)[1]
         self.assertIn("@media (min-width: 768px)", block)
-        self.assertIn("grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);", block)
+        self.assertIn("grid-template-columns: minmax(0, max-content) auto;", block)
         self.assertIn(f"{SPLIT} > .card-visual-col", block)
         self.assertIn("grid-area: visual;", block)
-        self.assertIn("216px", block)
+        self.assertIn("--split-illu-size", block)
 
     def test_mobile_stays_single_column(self):
         block = WORKSTATION_CSS.split("Split vocabulary card", 1)[1]

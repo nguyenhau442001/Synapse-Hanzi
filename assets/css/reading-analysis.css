@@ -521,12 +521,6 @@ body.dark-mode .token-hl-advanced .token-zh {
   color: var(--accent) !important;
 }
 
-.reading-token-word.active-inspect {
-  background: rgba(var(--accent-rgb, 192, 86, 56), 0.12) !important;
-  outline: 2px solid var(--accent) !important;
-  border-radius: 6px;
-}
-
 .reading-token-word.token-playing {
   background: rgba(var(--accent-rgb, 192, 86, 56), 0.2) !important;
   border-radius: 6px;
@@ -541,10 +535,7 @@ body.dark-mode .token-hl-advanced .token-zh {
    5. SENTENCE TRANSLATIONS (Muted, clear subordination)
    ========================================================================== */
 .reading-sentence-translations {
-  margin-top: 14px;
-  padding-top: 12px;
   margin-bottom: 4px;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 :root[data-theme="dark"] .reading-sentence-translations,
@@ -598,43 +589,8 @@ body.dark-mode .reading-translation-meaning {
    8. GRAMMAR & BREAKDOWN PANELS (Collapsible Focused Drawer)
    ========================================================================== */
 
-.breakdown-table-wrapper {
-  overflow-x: auto;
-}
-
 .breakdown-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.88rem;
   text-align: left;
-}
-
-.breakdown-table th {
-  padding: 8px 12px;
-  background: var(--surface-subtle);
-  color: var(--text-tertiary);
-  font-weight: 600;
-  font-size: 0.76rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  border-bottom: 1px solid var(--border);
-}
-
-:root[data-theme="dark"] .breakdown-table th,
-body.dark-mode .breakdown-table th {
-  background: rgba(255, 255, 255, 0.03);
-  border-bottom-color: rgba(255, 255, 255, 0.06);
-}
-
-.breakdown-table td {
-  padding: 10px 12px;
-  border-bottom: 1px solid var(--border);
-  vertical-align: middle;
-}
-
-:root[data-theme="dark"] .breakdown-table td,
-body.dark-mode .breakdown-table td {
-  border-bottom-color: rgba(255, 255, 255, 0.04);
 }
 
 /* ==========================================================================
@@ -676,17 +632,7 @@ body.dark-mode .reading-practice-card {
 
 /* Sentence Builder (Xếp câu) */
 .practice-slots-area {
-  min-height: 60px;
-  background: var(--surface-subtle);
-  border: 2px dashed var(--border);
-  border-radius: var(--radius-md);
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
   margin-bottom: 16px;
-  transition: all 0.2s ease;
 }
 
 :root[data-theme="dark"] .practice-slots-area,
@@ -697,12 +643,10 @@ body.dark-mode .practice-slots-area {
 
 .practice-slots-area.is-correct {
   border-color: #10b981;
-  background: rgba(16, 185, 129, 0.08);
 }
 
 .practice-slots-area.is-wrong {
   border-color: #ef4444;
-  animation: shake 0.3s ease-in-out;
 }
 
 @keyframes shake {
@@ -712,18 +656,10 @@ body.dark-mode .practice-slots-area {
 }
 
 .practice-empty-placeholder {
-  color: var(--text-tertiary);
-  font-size: 0.85rem;
-  font-style: italic;
   margin: auto;
 }
 
 .practice-bank-area {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-  min-height: 48px;
   margin-bottom: 18px;
 }
 
@@ -733,18 +669,11 @@ body.dark-mode .practice-slots-area {
 }
 
 .builder-tile {
-  padding: 8px 14px;
-  border-radius: 8px;
   background: var(--card-bg);
   border: 1px solid var(--border);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   font-size: 1.1rem;
   font-weight: 600;
-  cursor: pointer;
-  user-select: none;
-  transition: all 0.15s ease;
-  display: inline-flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -765,8 +694,6 @@ body.dark-mode .builder-tile {
 }
 
 .builder-tile.slot-tile {
-  background: rgba(var(--accent-rgb, 192, 86, 56), 0.12);
-  color: var(--accent);
   border-color: var(--accent);
 }
 
@@ -790,21 +717,11 @@ body.dark-mode .builder-tile {
 }
 
 .cloze-blank-spot {
-  display: inline-block;
-  min-width: 70px;
-  padding: 2px 8px;
-  border-bottom: 2px solid var(--accent);
-  color: var(--accent);
-  font-weight: 700;
-  text-align: center;
   background: var(--card-bg);
   border-radius: 4px;
 }
 
 .cloze-options-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
   margin-bottom: 16px;
 }
 
@@ -832,12 +749,6 @@ body.dark-mode .cloze-option-btn {
   background: var(--surface-subtle);
 }
 
-.cloze-opt-zh {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--text-primary);
-}
-
 .cloze-opt-sub {
   font-size: 0.78rem;
   color: var(--text-secondary);
@@ -859,30 +770,9 @@ body.dark-mode .cloze-option-btn {
   margin-bottom: 12px;
 }
 
-/* Practice Actions Bar */
-.practice-actions-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding-top: 14px;
-  border-top: 1px solid var(--border);
-}
-
-.practice-btn-group {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
 .practice-action-btn {
   padding: 8px 16px;
-  border-radius: 8px;
   font-size: 0.88rem;
-  font-weight: 650;
-  cursor: pointer;
-  transition: all 0.16s ease;
   border: 1px solid transparent;
 }
 
@@ -992,20 +882,8 @@ body.dark-mode .reading-nav-btn.next-btn:hover:not(:disabled) {
 }
 
 .reading-jump-select {
-  padding: 8px 34px 8px 14px;
-  border-radius: 8px;
-  border: 1px solid var(--border);
   background: var(--card-bg);
-  color: var(--text-primary);
-  font-size: 0.85rem;
-  font-weight: 600;
-  max-width: 290px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23888888' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  appearance: none;
   -webkit-appearance: none;
-  cursor: pointer;
 }
 
 :root[data-theme="dark"] .reading-jump-select,
@@ -1049,15 +927,6 @@ body.dark-mode .reading-jump-select:focus {
   .reading-unified-nav {
     flex-direction: column;
     align-items: stretch;
-    border-radius: 12px;
-    padding: 10px 12px;
-    gap: 8px;
-  }
-  .reading-nav-left {
-    justify-content: space-between;
-  }
-  .reading-nav-right {
-    justify-content: space-between;
   }
   .token-zh {
     font-size: 1.65rem;
@@ -1067,11 +936,6 @@ body.dark-mode .reading-jump-select:focus {
   }
   .cloze-options-grid {
     grid-template-columns: 1fr;
-  }
-  .reading-jump-select {
-    width: 100%;
-    max-width: none;
-    order: 3;
   }
 }
 

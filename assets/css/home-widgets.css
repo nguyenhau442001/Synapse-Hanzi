@@ -11,7 +11,6 @@ body:not(.home-screen) .home-widgets { display: none; }
   box-shadow: var(--card-shadow);
   color: var(--text-primary);
 }
-.hw-cjk { font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", system-ui, sans-serif; }
 
 .hw-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-width: 0; }
 .hw-title { margin: 0; font-size: 14px; font-weight: 650; line-height: 1.3; }
@@ -83,10 +82,10 @@ body:not(.home-screen) .home-widgets { display: none; }
   gap: 4px 8px; margin-top: 10px;
 }
 .hw-forgot-empty-icon {
-  display: grid; grid-row: 1; width: 28px; height: 28px; place-items: center;
-  border-radius: 9px; background: var(--accent-light); font-size: 16px;
+  display: grid; grid-row: 1; place-items: center;
+  border-radius: 9px; background: var(--accent-light);
 }
-.hw-forgot-empty-copy { margin: 0; color: var(--text-secondary); font-size: 12px; font-weight: 600; line-height: 1.35; }
+.hw-forgot-empty-copy { margin: 0; font-size: 12px; font-weight: 600; line-height: 1.35; }
 .hw-forgot-empty .hw-outline-btn {
   grid-column: 1 / -1; min-height: 32px; margin-top: 3px; padding: 0 10px;
   border-color: var(--border); color: var(--text-secondary); font-size: 11px; font-weight: 600;
@@ -119,11 +118,10 @@ body:not(.home-screen) .home-widgets { display: none; }
   flex: 1 1 0; min-width: 0;
   display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 4px;
 }
-.hw-bar-value { color: var(--text-secondary); font-size: 11px; font-variant-numeric: tabular-nums; }
-.hw-bar { display: block; width: 100%; max-width: 28px; border-radius: 6px; background: var(--border); }
+.hw-bar-value { font-size: 11px; font-variant-numeric: tabular-nums; }
+.hw-bar { display: block; width: 100%; max-width: 28px; border-radius: 6px; }
 .hw-bar-label { color: var(--text-secondary); font-size: 11px; }
 .hw-bar-col.is-today .hw-bar {
-  background: var(--accent-gradient, var(--accent));
   box-shadow: 0 1px 4px color-mix(in srgb, var(--accent) 24%, transparent);
 }
 .hw-bar-col.is-today .hw-bar-value,
@@ -172,10 +170,7 @@ body:not(.home-screen) .home-widgets { display: none; }
   transition: border-color 150ms ease, background-color 150ms ease;
 }
 .hw-forgot-row:hover { border-color: var(--border-strong); background: var(--bg-elevated, var(--card-bg)); }
-.hw-forgot-open {
-  display: flex; align-items: center; gap: 10px;
-  flex: 1 1 auto; min-width: 0; background: transparent; border: none;
-  padding: 0; text-align: left; cursor: pointer; color: inherit; font: inherit;
+.hw-forgot-open { font: inherit;
 }
 .hw-forgot-hanzi {
   flex: 0 0 auto; font-size: 20px; font-weight: 700; line-height: 1.15;
@@ -190,11 +185,6 @@ body:not(.home-screen) .home-widgets { display: none; }
   line-height: 1.35; white-space: nowrap;
   overflow: hidden; text-overflow: ellipsis;
 }
-.hw-level-pill {
-  flex: 0 0 auto; padding: 1px 7px; border-radius: 999px;
-  background: var(--surface-subtle); border: 1px solid var(--border); color: var(--text-secondary);
-  font-size: 10.5px; font-weight: 650; white-space: nowrap;
-}
 .hw-lapse-pill {
   flex: 0 0 auto; padding: 1px 7px; border-radius: 999px;
   background: var(--warning-bg, rgba(210, 173, 110, 0.14));
@@ -202,14 +192,7 @@ body:not(.home-screen) .home-widgets { display: none; }
   color: var(--status-warning, #D2AD6E);
   font-size: 10.5px; font-weight: 700; white-space: nowrap;
 }
-.hw-review-speak.hw-icon-btn {
-  flex: 0 0 32px; width: 32px; height: 32px; border-radius: 8px;
-  border: 1px solid transparent; background: transparent; color: var(--text-tertiary);
-  cursor: pointer; display: grid; place-items: center; padding: 0;
-  transition: all 140ms ease;
-}
-.hw-review-speak.hw-icon-btn:hover {
-  background: var(--surface-hover); color: var(--text-primary); border-color: var(--border);
+.hw-review-speak.hw-icon-btn { place-items: center; padding: 0;
 }
 
 /* Tablet: widgets join the vocab hub as a 2-column grid under the level grid. */
