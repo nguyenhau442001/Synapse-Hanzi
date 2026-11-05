@@ -37,6 +37,7 @@ REPO = Path(__file__).resolve().parent.parent
 VOCAB_DIR = REPO / "database" / "vocabs" / "hsk3_0"
 IMAGES_DIR = REPO / "images" / "HSK_3.0"
 PACK_DIR = REPO / "database" / "illustrations"
+SHARED_MIRRORS = {7: (8, 9)}
 
 ALLOWED_COLORS = {
     "#FBF6EE", "#F4EDE2", "#E3D5C1", "#D8C3A5", "#B4532F", "#E39A62", "#F0C7AE",
@@ -96,6 +97,12 @@ def install(level, hanzi, svg_text):
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(svg_text.strip() + "\n", encoding="utf-8")
     paths = [str(target.relative_to(REPO))]
+    # Levels 7-9 share one vocabulary list; level8/ and level9/ hold identical copies of level7/.
+    for mirror in SHARED_MIRRORS.get(level, ()):
+        copy = IMAGES_DIR / f"level{mirror}" / f"{hanzi}.svg"
+        if copy.parent.exists():
+            copy.write_text(svg_text.strip() + "\n", encoding="utf-8")
+            paths.append(str(copy.relative_to(REPO)))
 
     pack_path = PACK_DIR / f"hsk30_{level}.json"
     if pack_path.exists():
@@ -112,7 +119,8 @@ def install(level, hanzi, svg_text):
         git("add", "--", *untracked)
     if not git("status", "--porcelain", "--", *paths).strip():
         return False
-    git("commit", "-q", "-m", f"feat(illustration): redraw {hanzi} for HSK 3.0 level {level}", "--", *paths)
+    label = "levels 7-9" if level in SHARED_MIRRORS else f"level {level}"
+    git("commit", "-q", "-m", f"feat(illustration): redraw {hanzi} for HSK 3.0 {label}", "--", *paths)
     heal_index(paths)
     return True
 
