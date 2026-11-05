@@ -258,18 +258,18 @@ class TestThemeVariablesAndContrast(unittest.TestCase):
             self.assertIn(token, dark_content, f"Dark theme missing override for {token}")
 
     def test_light_theme_overrides_essential_tokens(self):
-        """Light theme must provide overrides for all essential tokens."""
+        """Light theme (the :root defaults) must define all essential tokens."""
         essential_tokens = ["--bg", "--card-bg", "--text-primary", "--border", "--accent"]
-        light_match = re.search(r":root\[data-theme=[\"']light[\"']\]\s*\{([^}]+)\}", self.base_css)
-        self.assertIsNotNone(light_match, ":root[data-theme='light'] block not found in base.css")
+        light_match = re.search(r"(?m)^:root\s*\{([^}]+)\}", self.base_css)
+        self.assertIsNotNone(light_match, ":root block not found in base.css")
         light_content = light_match.group(1)
         for token in essential_tokens:
             self.assertIn(token, light_content, f"Light theme missing override for {token}")
 
     def test_theme_contrast_safeguard(self):
         """Verify that card background and primary text colors are distinct to prevent invisible text."""
-        for theme in ["light", "dark"]:
-            match = re.search(rf":root\[data-theme=[\"']{theme}[\"']\]\s*\{{([^}}]+)\}}", self.base_css)
+        for theme, selector in (("light", r"(?m)^:root"), ("dark", r":root\[data-theme=[\"']dark[\"']\]")):
+            match = re.search(selector + r"\s*\{([^}]+)\}", self.base_css)
             self.assertIsNotNone(match)
             block = match.group(1)
             bg_match = re.search(r"--card-bg:\s*([^;]+);", block)

@@ -4348,17 +4348,6 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
     margin-top: 6px;
   }
 }
-  }
-}
-
-/* --------------------------------------------------------------------------
-   Companion Studio Modular Panels (Tabs: Stroke, Words, Context, Memory)
-   -------------------------------------------------------------------------- */
-/* Drawer header components — Enlarged for low-vision comfort.
-   Only display inside the study drawer when flashcard-study-mode is active. */
-.study-drawer-header {
-  display: none !important;
-}
 body.flashcard-study-mode.study-sidebar-open .study-drawer-header {
   display: flex !important;
   align-items: center;

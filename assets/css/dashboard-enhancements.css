@@ -149,23 +149,6 @@ body:not(.home-screen) .continue-learning-card { display: none; }
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
-  color: var(--text-primary);
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-}
-.level-status-badge {
-  display: inline-flex;
-  align-items: center;
-  font-size: 11px;
-  font-weight: 650;
-  color: var(--text-tertiary);
-  background: var(--surface-subtle);
-  border: 1px solid var(--border);
-  padding: 3px 9px;
-  border-radius: 999px;
-  white-space: nowrap;
-  letter-spacing: 0.01em;
-}
 .level-status-badge.is-learning {
   color: var(--status-warning, #996e1e);
   background: var(--warning-bg, #fffbeb);
@@ -1857,12 +1840,6 @@ body.home-screen .featured-topics {
     border: 1px solid var(--border);
     box-shadow: var(--card-shadow);
   }
-}
-
-/* Smooth Tab Switch Fade-In Animation */
-.vocab-tab-fade {
-  animation: vocabTabFadeIn 160ms cubic-bezier(0.16, 1, 0.3, 1) both;
-}
 @keyframes vocabTabFadeIn {
   from {
     opacity: 0;

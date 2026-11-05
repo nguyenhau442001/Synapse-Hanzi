@@ -400,9 +400,6 @@
   body:not(.flashcard-study-mode):not(.reading-view-active):not(.reading-zen-active):not(.sentence-game-focus):not(.graded-story-active) #workstationMiddle {
     padding-bottom: calc(16px + env(safe-area-inset-bottom));
   }
-}
-
-.radical-tabs { margin-bottom: 4px; }
 .radical-panel { margin-top: 18px; text-align: center; }
 .radical-panel h2 { font-size: 17px; margin: 0 0 4px; font-weight: 700; }
 .radical-panel-subtitle { margin: 0 auto 14px; color: var(--text-secondary); font-size: 13px; max-width: 320px; }
