@@ -5392,48 +5392,46 @@ body.flashcard-study-mode .card.is-flipped .card-visual-col[hidden] {
 
 /* ==========================================================================
    Creator signature (v3.5.0)
-   Compact product identity + creator credit under the study top bar.
+   Compact product identity + creator credit at the bottom of the home page.
    ========================================================================== */
-.creator-signature { display: none; }
 /* Desktop card height budget. The card scrolls internally, so cap it at the
-   viewport minus everything stacked around it (top bar, signature, progress,
+   viewport minus everything stacked around it (top bar, progress,
    filters, rating and nav rows) - measured, so controls never fall below the
    fold (body is overflow:hidden in study mode, so overflow would be clipped). */
 @media (min-width: 768px) {
-  body.flashcard-study-mode { --study-card-reserve: 380px; }
+  body.flashcard-study-mode { --study-card-reserve: 334px; }
   body.flashcard-study-mode #cardArea > .card {
     max-height: min(640px, calc(100dvh - var(--study-card-reserve)));
   }
 }
 @media (min-width: 768px) and (max-height: 880px) {
-  body.flashcard-study-mode { --study-card-reserve: 368px; }
+  body.flashcard-study-mode { --study-card-reserve: 322px; }
 }
 @media (min-width: 768px) and (max-height: 720px) {
-  body.flashcard-study-mode { --study-card-reserve: 336px; }
+  body.flashcard-study-mode { --study-card-reserve: 300px; }
 }
-body.flashcard-study-mode .creator-signature {
+#screenVocabHub .creator-signature {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 6px 20px;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 870px;
-  margin: -2px auto 8px;
-  padding: 0 10px 8px;
-  border-bottom: 1px solid var(--border-subtle);
+  margin: 8px 0 0;
+  padding: 12px 4px 4px;
+  border-top: 1px solid var(--border-subtle);
   box-sizing: border-box;
   color: var(--text-tertiary);
   font-size: 12px;
   line-height: 1.4;
 }
-body.flashcard-study-mode .creator-signature .cs-identity {
+#screenVocabHub .creator-signature .cs-identity {
   display: flex;
   align-items: center;
   gap: 10px;
   min-width: 0;
 }
-body.flashcard-study-mode .creator-signature .cs-name {
+#screenVocabHub .creator-signature .cs-name {
   font-family: var(--font-classical);
   font-size: 22px;
   font-weight: 700;
@@ -5442,27 +5440,27 @@ body.flashcard-study-mode .creator-signature .cs-name {
   color: var(--accent);
   white-space: nowrap;
 }
-:root[data-theme="dark"] body.flashcard-study-mode .creator-signature .cs-name {
+:root[data-theme="dark"] #screenVocabHub .creator-signature .cs-name {
   color: var(--accent-gold, #D4B37F);
 }
-body.flashcard-study-mode .creator-signature .cs-sub {
+#screenVocabHub .creator-signature .cs-sub {
   display: flex;
   flex-direction: column;
   min-width: 0;
   padding-left: 10px;
   border-left: 1px solid var(--border-subtle);
 }
-body.flashcard-study-mode .creator-signature .cs-pron {
+#screenVocabHub .creator-signature .cs-pron {
   font-size: 12px;
   font-weight: 600;
   color: var(--text-secondary);
 }
-body.flashcard-study-mode .creator-signature .cs-tagline {
+#screenVocabHub .creator-signature .cs-tagline {
   font-size: 11.5px;
   font-style: italic;
   color: var(--text-tertiary);
 }
-body.flashcard-study-mode .creator-signature .cs-credit {
+#screenVocabHub .creator-signature .cs-credit {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -5470,25 +5468,25 @@ body.flashcard-study-mode .creator-signature .cs-credit {
   gap: 1px;
   min-width: 0;
 }
-body.flashcard-study-mode .creator-signature .cs-meta,
-body.flashcard-study-mode .creator-signature .cs-author {
+#screenVocabHub .creator-signature .cs-meta,
+#screenVocabHub .creator-signature .cs-author {
   display: inline-flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 2px 8px;
 }
-body.flashcard-study-mode .creator-signature .cs-dot { opacity: 0.6; margin: 0 -2px; }
-body.flashcard-study-mode .creator-signature .footer-version {
+#screenVocabHub .creator-signature .cs-dot { opacity: 0.6; margin: 0 -2px; }
+#screenVocabHub .creator-signature .footer-version {
   font-size: 10.5px;
   padding: 0 5px;
 }
-body.flashcard-study-mode .creator-signature .cs-author { color: var(--text-secondary); }
-body.flashcard-study-mode .creator-signature .cs-author strong {
+#screenVocabHub .creator-signature .cs-author { color: var(--text-secondary); }
+#screenVocabHub .creator-signature .cs-author strong {
   font-weight: 600;
   color: var(--text-primary);
 }
-body.flashcard-study-mode .creator-signature .cs-link {
+#screenVocabHub .creator-signature .cs-link {
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -5497,46 +5495,41 @@ body.flashcard-study-mode .creator-signature .cs-link {
   border-bottom: 1px solid transparent;
   transition: color 0.15s ease, border-color 0.15s ease;
 }
-body.flashcard-study-mode .creator-signature .cs-link:hover,
-body.flashcard-study-mode .creator-signature .cs-link:focus-visible {
+#screenVocabHub .creator-signature .cs-link:hover,
+#screenVocabHub .creator-signature .cs-link:focus-visible {
   color: var(--accent);
   border-bottom-color: currentColor;
 }
-:root[data-theme="dark"] body.flashcard-study-mode .creator-signature .cs-link:hover,
-:root[data-theme="dark"] body.flashcard-study-mode .creator-signature .cs-link:focus-visible {
+:root[data-theme="dark"] #screenVocabHub .creator-signature .cs-link:hover,
+:root[data-theme="dark"] #screenVocabHub .creator-signature .cs-link:focus-visible {
   color: var(--accent-gold, #D4B37F);
 }
 
 /* Short desktop viewports: keep the credit to a single tight band */
 @media (min-width: 768px) and (max-height: 720px) {
-  body.flashcard-study-mode .creator-signature { margin-bottom: 4px; padding-bottom: 4px; }
-  body.flashcard-study-mode .creator-signature .cs-name { font-size: 19px; }
-  body.flashcard-study-mode .creator-signature .cs-tagline { display: none; }
+    #screenVocabHub .creator-signature .cs-name { font-size: 19px; }
+  #screenVocabHub .creator-signature .cs-tagline { display: none; }
 }
 
 /* Mobile: compact stacked layout, metadata wraps naturally */
 @media (max-width: 767px) {
-  body.flashcard-study-mode .creator-signature {
+  #screenVocabHub .creator-signature {
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
-    margin: 0 auto 8px;
-    padding: 0 2px 8px;
+    margin: 8px 0 0;
+    padding: 12px 2px 4px;
     font-size: 11.5px;
   }
-  body.flashcard-study-mode .creator-signature .cs-name { font-size: 19px; }
-  body.flashcard-study-mode .creator-signature .cs-credit {
+  #screenVocabHub .creator-signature .cs-name { font-size: 19px; }
+  #screenVocabHub .creator-signature .cs-credit {
     align-items: flex-start;
     text-align: left;
   }
-  body.flashcard-study-mode .creator-signature .cs-meta,
-  body.flashcard-study-mode .creator-signature .cs-author { justify-content: flex-start; }
+  #screenVocabHub .creator-signature .cs-meta,
+  #screenVocabHub .creator-signature .cs-author { justify-content: flex-start; }
 }
 
-/* Tablet: match the 720px content column used by the top bar and card */
-@media (min-width: 641px) and (max-width: 1024px) {
-  body.flashcard-study-mode .creator-signature { max-width: 720px; }
-}
 
 /* ==========================================================================
    Visual refinement (v3.7.0) — Chinese editorial × modern minimal
@@ -5545,16 +5538,16 @@ body.flashcard-study-mode .creator-signature .cs-link:focus-visible {
    ========================================================================== */
 
 /* --- Creator signature: brand left, author + metadata right ------------- */
-body.flashcard-study-mode .creator-signature { align-items: center; }
-body.flashcard-study-mode .creator-signature .cs-credit { gap: 2px; }
-body.flashcard-study-mode .creator-signature .cs-author { font-size: 12.5px; gap: 2px 10px; }
-body.flashcard-study-mode .creator-signature .cs-author strong { font-weight: 650; }
-body.flashcard-study-mode .creator-signature .cs-meta {
+#screenVocabHub .creator-signature { align-items: center; }
+#screenVocabHub .creator-signature .cs-credit { gap: 2px; }
+#screenVocabHub .creator-signature .cs-author { font-size: 12.5px; gap: 2px 10px; }
+#screenVocabHub .creator-signature .cs-author strong { font-weight: 650; }
+#screenVocabHub .creator-signature .cs-meta {
   font-size: 11px;
   color: var(--text-tertiary);
   opacity: 0.9;
 }
-body.flashcard-study-mode .creator-signature .cs-link { color: var(--text-tertiary); }
+#screenVocabHub .creator-signature .cs-link { color: var(--text-tertiary); }
 
 /* --- Progress: accent for primary progress, sage only for "remembered" --- */
 body.flashcard-study-mode .progress-nav-level-tag { font-weight: 700; letter-spacing: 0.02em; }
@@ -5747,12 +5740,12 @@ body.flashcard-study-mode .study-nav-position {
 
 /* Signature below 1024px: brand row, then one left-aligned credit row */
 @media (max-width: 1023px) {
-  body.flashcard-study-mode .creator-signature {
+  #screenVocabHub .creator-signature {
     flex-direction: column;
     align-items: flex-start;
     gap: 6px;
   }
-  body.flashcard-study-mode .creator-signature .cs-credit {
+  #screenVocabHub .creator-signature .cs-credit {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -5760,14 +5753,14 @@ body.flashcard-study-mode .study-nav-position {
     text-align: left;
     gap: 2px 14px;
   }
-  body.flashcard-study-mode .creator-signature .cs-meta,
-  body.flashcard-study-mode .creator-signature .cs-author { justify-content: flex-start; }
+  #screenVocabHub .creator-signature .cs-meta,
+  #screenVocabHub .creator-signature .cs-author { justify-content: flex-start; }
 }
 :root[data-theme="dark"] body.flashcard-study-mode .card.is-flipped .example-box { border-color: rgba(255, 255, 255, 0.08); }
 
 /* Mobile: author name on its own line so the two links never split apart */
 @media (max-width: 767px) {
-  body.flashcard-study-mode .creator-signature .cs-author > span:first-child { flex-basis: 100%; }
+  #screenVocabHub .creator-signature .cs-author > span:first-child { flex-basis: 100%; }
 }
 
 /* ==========================================================================
@@ -5840,19 +5833,19 @@ body.flashcard-study-mode #cardArea > .card::before,
 body.flashcard-study-mode #cardArea > .card::after { display: none; }
 
 /* --- Header: brand left | creator + links, then technical metadata -------- */
-body.flashcard-study-mode .creator-signature { border-bottom-color: var(--hs-beige); padding-bottom: 10px; }
-body.flashcard-study-mode .creator-signature .cs-credit { gap: 4px; }
-body.flashcard-study-mode .creator-signature .cs-author { gap: 4px 12px; font-size: 12px; }
-body.flashcard-study-mode .creator-signature .cs-by { color: var(--text-tertiary); }
-body.flashcard-study-mode .creator-signature .cs-handle {
+#screenVocabHub .creator-signature { border-bottom-color: var(--hs-beige); padding-bottom: 10px; }
+#screenVocabHub .creator-signature .cs-credit { gap: 4px; }
+#screenVocabHub .creator-signature .cs-author { gap: 4px 12px; font-size: 12px; }
+#screenVocabHub .creator-signature .cs-by { color: var(--text-tertiary); }
+#screenVocabHub .creator-signature .cs-handle {
   margin-left: 2px;
   font-size: 13px;
   font-weight: 650;
   color: var(--text-primary);
   letter-spacing: 0.01em;
 }
-body.flashcard-study-mode .creator-signature .cs-links { display: inline-flex; gap: 6px; }
-body.flashcard-study-mode .creator-signature .cs-link {
+#screenVocabHub .creator-signature .cs-links { display: inline-flex; gap: 6px; }
+#screenVocabHub .creator-signature .cs-link {
   height: 22px;
   padding: 0 8px;
   gap: 5px;
@@ -5863,16 +5856,16 @@ body.flashcard-study-mode .creator-signature .cs-link {
   font-weight: 550;
   transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
 }
-body.flashcard-study-mode .creator-signature .cs-link:hover,
-body.flashcard-study-mode .creator-signature .cs-link:focus-visible,
-:root[data-theme="dark"] body.flashcard-study-mode .creator-signature .cs-link:hover,
-:root[data-theme="dark"] body.flashcard-study-mode .creator-signature .cs-link:focus-visible {
+#screenVocabHub .creator-signature .cs-link:hover,
+#screenVocabHub .creator-signature .cs-link:focus-visible,
+:root[data-theme="dark"] #screenVocabHub .creator-signature .cs-link:hover,
+:root[data-theme="dark"] #screenVocabHub .creator-signature .cs-link:focus-visible {
   color: var(--hs-accent-ink);
   border-color: var(--hs-accent-line);
   background: var(--hs-accent-tint);
 }
-body.flashcard-study-mode .creator-signature .cs-meta { font-size: 11px; color: var(--text-tertiary); opacity: 1; }
-body.flashcard-study-mode .creator-signature .footer-version {
+#screenVocabHub .creator-signature .cs-meta { font-size: 11px; color: var(--text-tertiary); opacity: 1; }
+#screenVocabHub .creator-signature .footer-version {
   border: 1px solid var(--hs-beige);
   background: transparent;
   color: var(--text-tertiary);
@@ -6104,7 +6097,7 @@ body.flashcard-study-mode .study-nav-position {
   body.flashcard-study-mode .study-nav-btn,
   body.flashcard-study-mode .nav-btn,
   body.flashcard-study-mode .study-nav-position { min-width: 0; flex: 1 1 0; }
-  body.flashcard-study-mode .creator-signature .cs-links { width: auto; }
+  #screenVocabHub .creator-signature .cs-links { width: auto; }
 }
 
 /* Redrawn editorial illustrations (data-style="editorial") carry their own warm

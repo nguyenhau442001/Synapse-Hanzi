@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Static checks for the creator signature on the vocabulary study screen."""
+"""Static checks for the creator signature on the home page."""
 
 import re
 import unittest
@@ -17,10 +17,12 @@ class TestCreatorSignature(unittest.TestCase):
         start = INDEX.index('<section class="creator-signature"')
         self.sig = INDEX[start:INDEX.index("</section>", start)]
 
-    def test_placed_between_study_topbar_and_progress(self):
+    def test_placed_on_home_page_not_study_screen(self):
         pos = INDEX.index('<section class="creator-signature"')
-        self.assertLess(INDEX.index('class="study-view-topbar"'), pos)
-        self.assertLess(pos, INDEX.index('id="studyView"'))
+        self.assertEqual(INDEX.count('<section class="creator-signature"'), 1)
+        self.assertLess(INDEX.index('id="screenVocabHub"'), pos)
+        self.assertLess(pos, INDEX.index('id="screenCards"'))
+        self.assertNotIn("flashcard-study-mode .creator-signature", CSS)
 
     def test_preserves_all_identity_and_credit_text(self):
         for text in ("汉字思维", "Hànzì Sīwéi · Hanzi Mind", "Think in Characters. Master Chinese.",
