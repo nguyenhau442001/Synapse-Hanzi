@@ -259,10 +259,6 @@ function startUnifiedReview() {
   }
 }
 
-function startReviewRangeLoad() {
-  startUnifiedReview();
-}
-
 let reviewCurrentChoices = [];
 let reviewKeydownHandler = null;
 
@@ -348,10 +344,6 @@ function showReviewSetup() {
   if (resultEl) resultEl.hidden = true;
   selectReviewLevel(reviewSelectedLevel || 1);
   updateReviewMobileAuxBadge();
-}
-
-function renderReviewStart() {
-  showReviewSetup();
 }
 
 function startReviewSession() {
@@ -725,10 +717,6 @@ function exitReviewSession() {
     if (!confirmExit) return;
   }
   abandonReviewSession();
-  showReviewSetup();
-}
-
-function renderReviewRangePicker() {
   showReviewSetup();
 }
 

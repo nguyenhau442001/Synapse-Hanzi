@@ -27,16 +27,6 @@ let readingPrefs = {
   grammarExpanded: true
 };
 
-function escapeHtml(str) {
-  if (str === null || str === undefined) return '';
-  return String(str)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#39;');
-}
-
 // Practice State for Current Entry
 let practiceBuilderSlots = [];
 let practiceBuilderBank = [];
@@ -697,33 +687,6 @@ function getCategoryLabel(cat) {
 }
 
 /**
- * Determine default selected token for sidebar detail
- */
-function getInitialSelectedTokenIndex(entry) {
-  if (!entry || !entry.tokens || !entry.tokens.length) return null;
-  // 1. Look for first grammar token that isn't punctuation
-  const grammarIdx = entry.tokens.findIndex(t => {
-    const text = (t.text || '').trim();
-    return t.type === 'grammar' && !/^[，。？！、；：“”‘’（）《》…—]+$/.test(text);
-  });
-  if (grammarIdx !== -1) return grammarIdx;
-
-  // 2. Look for first core token
-  const coreIdx = entry.tokens.findIndex(t => {
-    const text = (t.text || '').trim();
-    return t.type === 'core' && !/^[，。？！、；：“”‘’（）《》…—]+$/.test(text);
-  });
-  if (coreIdx !== -1) return coreIdx;
-
-  // 3. Fallback to first word token
-  const firstWordIdx = entry.tokens.findIndex(t => {
-    const text = (t.text || '').trim();
-    return !/^[，。？！、；：“”‘’（）《》…—]+$/.test(text);
-  });
-  return firstWordIdx !== -1 ? firstWordIdx : 0;
-}
-
-/**
  * Select a word token to inspect in the dedicated sidebar panel
  */
 function selectReadingWord(tokenIdx, shouldSpeak = false) {
@@ -1083,21 +1046,6 @@ function renderSidebarGrammarHtml(entry) {
 }
 
 /**
- * Render Dictation Input Box
- */
-function renderDictationBoxHtml(entry) {
-  return `
-    <div class="reading-dictation-box">
-      <div class="dictation-input-row">
-        <input type="text" id="dictationInput" class="dictation-input" placeholder="Gõ chữ Hán hoặc Pinyin nghe được..." autocomplete="off">
-        <button type="button" class="dictation-check-btn" onclick="checkDictationAnswer()">Kiểm tra</button>
-      </div>
-      <div class="dictation-feedback" id="dictationFeedback"></div>
-    </div>
-  `;
-}
-
-/**
  * Legacy inspectToken alias to selectReadingWord
  */
 function inspectToken(tokenIdx) {
@@ -1114,86 +1062,6 @@ function closeInspector() {
   const inspector = document.getElementById('readingTokenInspector');
   if (inspector) inspector.style.display = 'none';
   document.querySelectorAll('.reading-token-word').forEach(el => el.classList.remove('active-inspect'));
-}
-
-/**
- * Render Grammar & Component Breakdown Panels as a Collapsible Focused Drawer
- */
-function renderBreakdownPanelsHtml(entry) {
-  const gp = entry.grammar_point || {};
-  const breakdown = entry.breakdown || [];
-  const isExpanded = Boolean(readingPrefs.grammarExpanded);
-
-  return `
-    <div class="reading-grammar-drawer ${isExpanded ? 'is-expanded' : ''}" id="readingGrammarDrawer">
-      <button type="button" class="reading-grammar-toggle-bar" onclick="toggleReadingGrammarExpand()" aria-expanded="${isExpanded}">
-        <div class="grammar-toggle-left">
-          <span class="grammar-toggle-icon">⚡</span>
-          <span class="grammar-toggle-title">Phân tích ngữ pháp & Mẹo bẫy thi</span>
-          ${gp.name ? `<span class="grammar-toggle-badge">${gp.name}</span>` : ''}
-        </div>
-        <div class="grammar-toggle-right">
-          <span class="grammar-toggle-hint" id="grammarToggleHint">${isExpanded ? 'Thu gọn' : 'Xem chi tiết (G)'}</span>
-          <span class="grammar-toggle-chevron" id="grammarToggleChevron">${isExpanded ? '▲' : '▼'}</span>
-        </div>
-      </button>
-
-      <div class="reading-grammar-body" id="readingGrammarBody" style="${isExpanded ? '' : 'display: none;'}">
-        <!-- GRAMMAR TRAP & PATTERN CARD (Clean monochromatic with accent border) -->
-        <div class="grammar-trap-card">
-          <div class="grammar-trap-header">
-            <div class="grammar-trap-title">
-              <span>⚡ ${gp.name || 'Phân tích ngữ pháp trọng tâm'}</span>
-            </div>
-            <span class="reading-exam-tag">${gp.level || 'HSK 4 Trọng điểm'}</span>
-          </div>
-
-          ${gp.pattern ? `<div class="grammar-trap-pattern"><strong>Cấu trúc:</strong> <code>${gp.pattern}</code></div>` : ''}
-
-          ${gp.trap_note ? `
-            <div class="grammar-trap-note">
-              <strong>⚠️ Mẹo phòng bẫy thi HSK 4:</strong> ${gp.trap_note}
-            </div>
-          ` : ''}
-
-          ${gp.explanation ? `
-            <div class="grammar-explanation-text">
-              <strong>💡 Phân tích chi tiết:</strong> ${gp.explanation}
-            </div>
-          ` : ''}
-        </div>
-
-        <!-- SVO / COMPONENT BREAKDOWN TABLE (Clean, monochromatic) -->
-        ${breakdown.length > 0 ? `
-          <div class="sentence-breakdown-card">
-            <div class="breakdown-card-title">
-              <span>🔬 Phân tách thành phần cấu trúc câu (Word Order Breakdown)</span>
-            </div>
-            <div class="breakdown-table-wrapper">
-              <table class="breakdown-table">
-                <thead>
-                  <tr>
-                    <th style="width: 140px;">Thành phần ngữ pháp</th>
-                    <th style="width: 180px;">Từ ngữ trong câu</th>
-                    <th>Chức năng & Ý nghĩa ngữ pháp</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  ${breakdown.map(b => `
-                    <tr>
-                      <td><span class="breakdown-role-badge">${b.role}</span></td>
-                      <td><span class="breakdown-text">${b.text}</span></td>
-                      <td><span class="breakdown-desc">${b.desc || ''}</span></td>
-                    </tr>
-                  `).join('')}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        ` : ''}
-      </div>
-    </div>
-  `;
 }
 
 function renderPracticeFeedbackHtml() {

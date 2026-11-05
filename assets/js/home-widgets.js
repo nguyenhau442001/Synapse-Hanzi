@@ -300,20 +300,6 @@ function renderReviewForecast(snapshot) {
 
 // ---- Hoạt động (12 tuần) -----------------------------------------------------
 
-function homeActivityCount(snapshot, key) {
-  const reviews = snapshot.reviewsByDay[key] || 0;
-  return reviews > 0 ? reviews : dayWordCount(snapshot.activity.days[key]);
-}
-
-function homeHeatLevel(count, max) {
-  if (count <= 0) return 0;
-  return Math.min(4, Math.max(1, Math.ceil(count / max * 4)));
-}
-
-function renderActivity(snapshot) {
-  // Activity heatmap removed from dashboard per UI update
-}
-
 // ---- Từ hay quên -------------------------------------------------------------
 
 function topForgottenCards(snapshot, limit = HOME_FORGOTTEN_LIMIT) {
@@ -456,59 +442,6 @@ function isHomeScreen() {
   return !currentLevel
     && Boolean(hub) && hub.style.display !== 'none'
     && (!todayReviews || todayReviews.style.display === 'none');
-}
-
-function renderDiscovery() {
-  const section = document.getElementById('hwDiscovery');
-  if (!section) return;
-  section.replaceChildren();
-  section.appendChild(homeCardHead('Khám phá nâng cao', 'Tính năng mới'));
-
-  const list = homeElement('div', 'hw-discovery-list');
-
-  // Graded Reading
-  const gradedItem = homeElement('div', 'hw-discovery-item');
-  gradedItem.setAttribute('role', 'button');
-  gradedItem.setAttribute('tabindex', '0');
-  gradedItem.setAttribute('aria-label', 'Mở Graded Reading HSK 1–9 · 汉字思维');
-  gradedItem.innerHTML = `
-    <span class="hw-discovery-icon" aria-hidden="true">📚</span>
-    <div class="hw-discovery-info">
-      <div class="hw-discovery-title-row">
-        <strong>Graded Reading</strong>
-        <span class="hw-discovery-pill hw-pill-amber">HSK 1–9</span>
-      </div>
-      <p class="hw-discovery-desc">Đọc hiểu phân cấp ngữ cảnh · Vòng lặp SRS</p>
-    </div>
-    <span class="hw-discovery-cta" aria-hidden="true">→</span>
-  `;
-  const launchGraded = () => { if (typeof setPrimaryTab === 'function') setPrimaryTab('gradedReading'); };
-  gradedItem.addEventListener('click', launchGraded);
-  gradedItem.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); launchGraded(); } });
-
-  // Reading Analysis HSK 4
-  const readingItem = homeElement('div', 'hw-discovery-item');
-  readingItem.setAttribute('role', 'button');
-  readingItem.setAttribute('tabindex', '0');
-  readingItem.setAttribute('aria-label', 'Mở Đọc hiểu & Phân tích ngữ pháp HSK 4');
-  readingItem.innerHTML = `
-    <span class="hw-discovery-icon" aria-hidden="true">📖</span>
-    <div class="hw-discovery-info">
-      <div class="hw-discovery-title-row">
-        <strong>Đọc hiểu HSK 4</strong>
-        <span class="hw-discovery-pill hw-pill-accent">Hanban</span>
-      </div>
-      <p class="hw-discovery-desc">Xếp câu, ngữ cảnh thực tế & ngữ pháp</p>
-    </div>
-    <span class="hw-discovery-cta" aria-hidden="true">→</span>
-  `;
-  const launchReading = () => { if (typeof setPrimaryTab === 'function') setPrimaryTab('reading'); };
-  readingItem.addEventListener('click', launchReading);
-  readingItem.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); launchReading(); } });
-
-  list.appendChild(gradedItem);
-  list.appendChild(readingItem);
-  section.appendChild(list);
 }
 
 function refreshHomeWidgets() {

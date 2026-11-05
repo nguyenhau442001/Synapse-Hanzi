@@ -71,8 +71,8 @@ def test_node_vm_reading_entries():
         context.global = context;
         vm.createContext(context);
 
-        const code = fs.readFileSync('assets/js/reading-analysis.js', 'utf8');
-        vm.runInContext(code, context);
+        vm.runInContext(fs.readFileSync('assets/js/utils.js', 'utf8'), context);
+        vm.runInContext(fs.readFileSync('assets/js/reading-analysis.js', 'utf8'), context);
 
         async function run() {
           await vm.runInContext('startReadingAnalysis()', context);

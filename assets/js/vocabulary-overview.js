@@ -37,16 +37,6 @@ function setViewMode(mode) {
   }
 }
 
-function normalizeSearchText(value) {
-  return String(value || '')
-    .replace(/[đĐ]/g, 'd')
-    .replace(/[ǖǘǚǜü]/g, 'v')
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase()
-    .trim();
-}
-
 function updateOverviewSearch(value) {
   overviewQuery = value;
   renderOverview();

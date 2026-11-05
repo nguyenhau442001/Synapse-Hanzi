@@ -602,12 +602,6 @@ function speakCurrentSentence() {
   }
 }
 
-function escapeHtml(value) {
-  return String(value == null ? '' : value).replace(/[&<>"']/g, character => ({
-    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
-  })[character]);
-}
-
 // Keyboard shortcuts for HSK 4 Sentence Game
 window.addEventListener('keydown', (e) => {
   const screen = document.getElementById('screenSentenceGame');

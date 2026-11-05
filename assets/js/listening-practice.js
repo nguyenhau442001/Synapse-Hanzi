@@ -948,19 +948,7 @@ const ListeningPractice = (function() {
     render();
   }
 
-  // ---------------------------------------------------------------------------
   // Helper: Highlight Evidence within Chinese Sentence
-  // ---------------------------------------------------------------------------
-  function escapeHtml(str) {
-    if (!str) return '';
-    return String(str)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&#39;');
-  }
-
   function highlightEvidenceInSentence(sentZh, evidenceZh) {
     if (!sentZh) return '';
     if (!evidenceZh) return escapeHtml(sentZh);

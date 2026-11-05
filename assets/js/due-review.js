@@ -214,12 +214,6 @@ function speakTodayWord() {
   }
 }
 
-function escapeHtml(value) {
-  return String(value == null ? '' : value).replace(/[&<>"']/g, character => ({
-    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
-  })[character]);
-}
-
 function formatTodayExample(text) {
   if (!text) return '';
   return escapeHtml(text)

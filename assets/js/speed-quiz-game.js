@@ -131,12 +131,6 @@ function getWordInfoSync(hanzi) {
   return { pinyin: '', meaning: 'Từ vựng tiếng Trung', level: '' };
 }
 
-function escapeHtml(value) {
-  return String(value == null ? '' : value).replace(/[&<>"']/g, c => ({
-    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
-  }[c]));
-}
-
 function highlightInSentence(sentenceZh, answer) {
   if (!sentenceZh || !answer) return escapeHtml(sentenceZh || '');
   const escaped = escapeHtml(sentenceZh);

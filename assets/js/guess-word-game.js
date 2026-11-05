@@ -160,12 +160,6 @@ function speakGuessWord(text) {
 }
 window.speakGuessWord = speakGuessWord;
 
-function escapeHtml(str) {
-  return String(str == null ? '' : str).replace(/[&<>"']/g, c => ({
-    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
-  })[c]);
-}
-
 // Keyboard navigation for guess word game
 document.addEventListener('keydown', (e) => {
   const screen = document.getElementById('screenGuessWord');

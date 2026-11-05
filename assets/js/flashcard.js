@@ -637,9 +637,6 @@ function ratingButtonsHtml(handlerName, previewIdPrefix, previews) {
     </button>`;
   }).join('');
 }
-function revealButtonHtml(onclick, id) {
-  return '';
-}
 function formatSrsInterval(preview, fallback) {
   if (preview && preview.intervalText) return preview.intervalText;
   if (!preview) return fallback || '';
@@ -664,10 +661,6 @@ function updateSrsPreviews(word) {
       btn.title = `Đánh giá: ${label}${nextInterval ? ` (${nextInterval})` : ''} • Phím [${key}] hoặc [${arrow}]`;
     }
   });
-}
-function ratingsVisible() {
-  const ratingRow = document.getElementById('ratingRow');
-  return Boolean(ratingRow && !ratingRow.hidden);
 }
 function isCardRevealed() {
   const meaning = document.getElementById('meaning');

@@ -1,12 +1,6 @@
 // Per-card memory recall projection using ts-fsrs retrievability.
 const CURVE_RATING_COLORS = { again: '#e07860', hard: '#e07860', good: '#65bc78', easy: '#65bc78', unknown: '#e07860', known: '#65bc78' };
 
-function openCurrentMemoryCurve() {
-  if (!currentLevel || !filteredOrder.length) return;
-  const word = WORDS[filteredOrder[idx % filteredOrder.length]];
-  openMemoryCurve(currentLevel, word.id);
-}
-
 function formatCurveDate(date) {
   return new Intl.DateTimeFormat('vi-VN', { day: 'numeric', month: 'short', year: 'numeric' }).format(date);
 }

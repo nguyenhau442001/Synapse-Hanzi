@@ -172,10 +172,6 @@ function loadState() {
 function saveProgress() {
   saveSrsRecord(currentLevel, srsCards, true);
 }
-function saveLevelProgress(level, progressObj) {
-  const existing = readSrsRecord(level);
-  if (existing) saveSrsRecord(level, existing.cards, existing.migratedFromV2);
-}
 
 function readSavedLevelProgressLegacy(level) {
   try {

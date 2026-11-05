@@ -8,22 +8,6 @@ const COMMON_RADICALS = [
   { char: '木', name: 'Mộc', set: 'basic50', hint: 'Cây' },
 ];
 
-function openCommonRadical(character) {
-  setPrimaryTab('radicals');
-  ensureRadicalDataLoaded().then(loaded => {
-    if (!loaded || primaryTab !== 'radicals') return;
-    const found = Object.entries(RADICAL_GROUPS).flatMap(([set, groups]) =>
-      groups.flatMap((group, groupIndex) => group
-        .map((item, itemIndex) => ({ set, groupIndex, itemIndex, item }))
-        .filter(entry => entry.item.radical === character || (entry.item.variants || []).includes(character)))
-    )[0];
-    if (!found) return;
-    startRadicalStudy(found.set, found.groupIndex);
-    radicalIdx = found.itemIndex;
-    renderRadicalCard();
-  });
-}
-
 function renderDashboardEnhancements() {
   const continuation = document.getElementById('continueLearningCard');
   const summary = learningProgressSummary();
