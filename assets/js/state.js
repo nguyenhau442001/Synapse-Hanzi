@@ -90,7 +90,7 @@ let showHanViet = (function() {
 })();
 let showIllustration = (function() {
   try {
-    const saved = localStorage.getItem('hsk_show_illustrations');
+    const saved = localStorage.getItem('hsk_show_illustrations_v2');
     return saved !== null ? saved === 'true' : false;
   } catch (e) {
     return false;

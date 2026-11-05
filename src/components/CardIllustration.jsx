@@ -1,7 +1,16 @@
 import { getWordIllustration } from '../services/illustrationService';
 
+// Illustrations are hidden by default; shared preference with the legacy flashcard toggle.
+function illustrationsEnabled() {
+  try {
+    return localStorage.getItem('hsk_show_illustrations_v2') === 'true';
+  } catch (e) {
+    return false;
+  }
+}
+
 export function CardIllustration({ word, size = 160 }) {
-  if (!word) return null;
+  if (!word || !illustrationsEnabled()) return null;
 
   const illu = getWordIllustration(word);
 

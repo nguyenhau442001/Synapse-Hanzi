@@ -117,7 +117,7 @@ class ScreenshotCapturer:
                 "02_flashcard_front.png",
                 f"http://127.0.0.1:{PORT}/index.html?level=hsk30_1&theme=dark",
                 """(async () => {
-                    localStorage.setItem('hsk_show_illustrations', 'true');
+                    localStorage.setItem('hsk_show_illustrations_v2', 'true');
                     showIllustration = true;
                     document.body.classList.remove('hide-illustrations');
                     document.documentElement.classList.remove('hide-illustrations');
@@ -131,7 +131,7 @@ class ScreenshotCapturer:
                 "02_flashcard_back.png",
                 f"http://127.0.0.1:{PORT}/index.html?level=hsk30_1&theme=dark",
                 """(async () => {
-                    localStorage.setItem('hsk_show_illustrations', 'true');
+                    localStorage.setItem('hsk_show_illustrations_v2', 'true');
                     showIllustration = true;
                     document.body.classList.remove('hide-illustrations');
                     document.documentElement.classList.remove('hide-illustrations');

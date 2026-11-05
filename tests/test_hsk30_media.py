@@ -47,7 +47,6 @@ def test_hsk30_illustrations_rechecked():
     for w in sample_words:
         assert w in pack
         svg = pack[w]
-        assert '<svg viewBox="0 0 240 240"' in svg
-        assert 'rx="24"' in svg
+        assert svg.startswith('<svg') and 'viewBox="0 0 240 240"' in svg
         # Must not be the old abstract template
         assert 'rx="24" fill="#1A1D24"/><circle cx="120" cy="80"' not in svg

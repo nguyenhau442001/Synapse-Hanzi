@@ -361,7 +361,7 @@ document.addEventListener('pointerdown', event => {
 
 function toggleIllustration() {
   showIllustration = !showIllustration;
-  try { localStorage.setItem('hsk_show_illustrations', String(showIllustration)); } catch (e) {}
+  try { localStorage.setItem('hsk_show_illustrations_v2', String(showIllustration)); } catch (e) {}
   document.body.classList.toggle('hide-illustrations', !showIllustration);
   document.documentElement.classList.toggle('hide-illustrations', !showIllustration);
   updateCardMoreMenuState();
