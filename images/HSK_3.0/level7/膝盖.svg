@@ -1,15 +1,1 @@
-<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-  <rect width="240" height="240" rx="24" fill="#1A1D24"/>
-  <g transform="translate(60, 60)">
-    <!-- Leg structure -->
-    <path d="M120 100 L120 20 L80 20" fill="none" stroke="#5D6D7E" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M120 100 L120 180" fill="none" stroke="#5D6D7E" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-    
-    <!-- Knee joint focus -->
-    <circle cx="120" cy="100" r="22" fill="#FFB347" stroke="#1A1D24" stroke-width="4"/>
-    <circle cx="120" cy="100" r="12" fill="#1A1D24"/>
-    
-    <!-- Highlight/Accent for the knee area -->
-    <path d="M105 90 A20 20 0 0 1 120 80" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-opacity="0.3" stroke-linecap="round"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" data-style="editorial"><rect width="240" height="240" fill="#F4EDE2"/><ellipse cx="120" cy="208" rx="88" ry="9" fill="#E3D5C1"/><g transform="translate(120 120) scale(1.2 1.2)"><path d="M-20 -80L20 -80L22 -10Q24 10 10 20L10 80L-14 80L-14 20Q-28 10 -24 -10Z" fill="#F0C7AE" stroke="#3A332D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><circle cx="0" cy="0" r="16" fill="#F0C7AE"  /><path d="M-10 0Q0 8 10 0" fill="none" stroke="#B4532F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></g><g transform="translate(120 120) rotate(30) scale(0.4 0.4)"><rect x="-30" y="-10" width="60" height="20" rx="10" fill="#F0C7AE" stroke="#3A332D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><rect x="-10" y="-10" width="20" height="20" rx="2" fill="#FBF6EE" stroke="#3A332D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /></g></svg>
