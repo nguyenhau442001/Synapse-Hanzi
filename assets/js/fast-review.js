@@ -230,7 +230,7 @@ function startUnifiedReview() {
 
   try {
     if (!reviewWorker) {
-      reviewWorker = new Worker('assets/js/fast-review-worker.js?v=20260928');
+      reviewWorker = new Worker('assets/js/fast-review-worker.js?v=' + APP_VERSION);
     }
   } catch (error) {
     loadWithoutWorker(error);

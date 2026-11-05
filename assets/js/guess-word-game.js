@@ -7,7 +7,7 @@ let guessWordSolved = false;
 
 async function ensureGuessWordBankLoaded() {
   if (guessWordBankData) return;
-  const res = await fetch('database/vocabs/guess_word_bank.json?v=20261006-fix-chair1');
+  const res = await fetch('database/vocabs/guess_word_bank.json?v=' + APP_VERSION);
   guessWordBankData = await res.json();
 }
 

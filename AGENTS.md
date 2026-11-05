@@ -24,12 +24,10 @@ Bắt buộc tuân thủ chuẩn phiên bản **`x.x.x` (Semantic Versioning)** 
   - **PATCH (0.0.x)**: Sửa lỗi (`fix: ...`), cải thiện hiệu năng (`perf: ...`), tinh chỉnh UI/UX nhỏ hoặc sửa audio (`fix`, `style`, `refactor`).
 
 ### Đồng bộ phiên bản khi phát hành
-Mỗi lần release, số phiên bản `x.x.x` phải được cập nhật đồng bộ ở các vị trí:
-1. `VERSION`: chứa chuỗi phiên bản `x.x.x`.
-2. `package.json`: trường `"version": "x.x.x"`.
-3. `sw.js`: `const APP_VERSION = 'x.x.x'; const ASSET_VERSION = APP_VERSION;`.
-4. `index.html`: `<span class="footer-version" title="Phiên bản ứng dụng">vx.x.x</span>` ở footer.
-> Tip: Chạy script `python3 tools/bump_version.py [patch|minor|major|X.Y.Z]` để tự động cập nhật đồng bộ tất cả các vị trí trên.
+`VERSION` là nguồn duy nhất. Không sửa tay số phiên bản ở bất kỳ file nào khác — luôn chạy:
+`python3 tools/bump_version.py [patch|minor|major|X.Y.Z]`
+Script ghi đồng bộ vào `package.json`, `APP_VERSION` trong `sw.js` và `assets/js/utils.js`, mọi cache-buster `?v=` trong `index.html` / `assets/flashcards.css`, và badge footer.
+Khi thêm file CSS/JS mới vào `index.html`, dùng `?v=<version hiện tại>` (script sẽ tự cập nhật về sau); trong JS dùng `'?v=' + APP_VERSION`.
 
 ### Quy trình đánh dấu Release & Git Tag
 Sau khi kiểm tra và commit lên `main`:

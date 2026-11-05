@@ -9,7 +9,7 @@ async function ensureHanziDecompLoaded() {
   if (hanziDecompData) return hanziDecompData;
   if (hanziDecompLoadPromise) return hanziDecompLoadPromise;
 
-  hanziDecompLoadPromise = fetch('database/radicals/hanzi_decompositions.json?v=20261014-clean-v3')
+  hanziDecompLoadPromise = fetch('database/radicals/hanzi_decompositions.json?v=' + APP_VERSION)
     .then(res => {
       if (!res.ok) throw new Error('Failed to load hanzi_decompositions.json');
       return res.json();
