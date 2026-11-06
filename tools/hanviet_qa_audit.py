@@ -146,6 +146,16 @@ def audit_and_fix_vocabs(vocab_files, apply_changes=False):
 
     return report
 
+def fixed_token_hanviet(txt, current_hv):
+    """Corrected Hán Việt for a reading token, or None if it is already right."""
+    if txt in WORD_FIXES:
+        return WORD_FIXES[txt] if current_hv != WORD_FIXES[txt] else None
+    for hanzi, wrong, right in (("听", "Dẫn", "Thính"), ("号", "Gào", "Hiệu"), ("儿", "Nhân", "Nhi")):
+        if hanzi in txt and wrong in current_hv:
+            return current_hv.replace(wrong, right)
+    return None
+
+
 def audit_and_fix_readings(reading_files, apply_changes=False):
     report = []
     for fpath in reading_files:
@@ -159,18 +169,7 @@ def audit_and_fix_readings(reading_files, apply_changes=False):
             for tok in tokens:
                 txt = tok.get("text", "")
                 current_hv = tok.get("hanviet", "")
-                new_hv = None
-
-                if txt in WORD_FIXES:
-                    if current_hv != WORD_FIXES[txt]:
-                        new_hv = WORD_FIXES[txt]
-                elif "听" in txt and "Dẫn" in current_hv:
-                    new_hv = current_hv.replace("Dẫn", "Thính")
-                elif "号" in txt and "Gào" in current_hv:
-                    new_hv = current_hv.replace("Gào", "Hiệu")
-                elif "儿" in txt and "Nhân" in current_hv:
-                    new_hv = current_hv.replace("Nhân", "Nhi")
-
+                new_hv = fixed_token_hanviet(txt, current_hv)
                 if new_hv and new_hv != current_hv:
                     report.append(f"[{os.path.basename(fpath)}] Token '{txt}': '{current_hv}' -> '{new_hv}'")
                     tok["hanviet"] = new_hv
@@ -196,17 +195,7 @@ def audit_and_fix_hsk4_reading(hsk4_reading_path, apply_changes=False):
         for tok in item.get("tokens", []):
             txt = tok.get("text", "")
             current_hv = tok.get("hanviet", "")
-            new_hv = None
-            if txt in WORD_FIXES:
-                if current_hv != WORD_FIXES[txt]:
-                    new_hv = WORD_FIXES[txt]
-            elif "听" in txt and "Dẫn" in current_hv:
-                new_hv = current_hv.replace("Dẫn", "Thính")
-            elif "号" in txt and "Gào" in current_hv:
-                new_hv = current_hv.replace("Gào", "Hiệu")
-            elif "儿" in txt and "Nhân" in current_hv:
-                new_hv = current_hv.replace("Nhân", "Nhi")
-
+            new_hv = fixed_token_hanviet(txt, current_hv)
             if new_hv and new_hv != current_hv:
                 report.append(f"[hsk4_reading_analysis Token] '{txt}': '{current_hv}' -> '{new_hv}'")
                 tok["hanviet"] = new_hv

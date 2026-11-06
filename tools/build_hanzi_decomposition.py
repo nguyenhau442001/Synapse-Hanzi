@@ -172,43 +172,38 @@ def load_hanviet():
             pass
     return {}
 
+def iter_vocab_items():
+    """Every word entry in the HSK 2.0 and HSK 3.0 vocab files (unreadable files are skipped)."""
+    files = list(VOCAB_DIR.glob('*.json')) + list((VOCAB_DIR / 'hsk3_0').glob('*.json'))
+    for f in files:
+        if not f.is_file():
+            continue
+        try:
+            with open(f, 'r', encoding='utf-8') as fp:
+                data = json.load(fp)
+        except Exception:
+            continue
+        if isinstance(data, list):
+            yield from data
+
 def load_vocab_meanings():
     meanings = {}
     pinyins = {}
-    files = list(VOCAB_DIR.glob('*.json')) + list((VOCAB_DIR / 'hsk3_0').glob('*.json'))
-    for f in files:
-        if f.is_file():
-            try:
-                with open(f, 'r', encoding='utf-8') as fp:
-                    data = json.load(fp)
-                    if isinstance(data, list):
-                        for item in data:
-                            hz = item.get('hanzi', '')
-                            if len(hz) == 1:
-                                if hz not in meanings and item.get('meaning'):
-                                    meanings[hz] = item['meaning']
-                                if hz not in pinyins and item.get('pinyin'):
-                                    pinyins[hz] = item['pinyin']
-            except Exception:
-                pass
+    for item in iter_vocab_items():
+        hz = item.get('hanzi', '')
+        if len(hz) == 1:
+            if hz not in meanings and item.get('meaning'):
+                meanings[hz] = item['meaning']
+            if hz not in pinyins and item.get('pinyin'):
+                pinyins[hz] = item['pinyin']
     return meanings, pinyins
 
 def get_all_hsk_characters():
     unique_chars = set()
-    files = list(VOCAB_DIR.glob('*.json')) + list((VOCAB_DIR / 'hsk3_0').glob('*.json'))
-    for f in files:
-        if f.is_file():
-            try:
-                with open(f, 'r', encoding='utf-8') as fp:
-                    data = json.load(fp)
-                    if isinstance(data, list):
-                        for item in data:
-                            hz = item.get('hanzi', '')
-                            for c in hz:
-                                if '\u4e00' <= c <= '\u9fff':
-                                    unique_chars.add(c)
-            except Exception:
-                pass
+    for item in iter_vocab_items():
+        for c in item.get('hanzi', ''):
+            if '\u4e00' <= c <= '\u9fff':
+                unique_chars.add(c)
     return unique_chars
 
 def get_makemeahanzi_entries():
