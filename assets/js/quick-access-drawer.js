@@ -130,11 +130,7 @@ function renderQuickSavedWords() {
         </button>
         <div class="quick-word-actions">
           <button type="button" class="quick-word-speak-btn" data-speak="${hanziSafe}" aria-label="Nghe phát âm ${hanziSafe}" title="Phát âm">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-              <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
-              <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
-            </svg>
+            ${speakerIconSvg(16)}
           </button>
           <button type="button" class="quick-word-remove-btn" data-remove="${hanziSafe}" aria-label="Bỏ đánh dấu ${hanziSafe}" title="Bỏ đánh dấu">
             <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -228,11 +224,7 @@ function updateQuickUrgentWords(items) {
         </button>
         <div class="quick-word-actions">
           <button type="button" class="quick-word-speak-btn" data-speak="${hanziSafe}" aria-label="Nghe phát âm ${hanziSafe}" title="Phát âm">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-              <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
-              <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
-            </svg>
+            ${speakerIconSvg(16)}
           </button>
         </div>
       </li>
@@ -369,11 +361,7 @@ function renderQuickSearchResults(results) {
         </div>
         <div class="qsm-result-actions">
           <button type="button" class="qsm-result-speak" data-speak="${hanziSafe}" aria-label="Nghe phát âm ${hanziSafe}" title="Phát âm">
-            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-              <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
-              <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
-            </svg>
+            ${speakerIconSvg(15)}
           </button>
         </div>
       </li>
