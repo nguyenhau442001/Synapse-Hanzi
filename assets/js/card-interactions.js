@@ -148,46 +148,86 @@ function initCardSwipe(options) {
     return !!target.closest(selector);
   }
 
-  // --- TOUCH EVENT HANDLERS (Rock-solid for iOS Safari & Android Chrome) ---
-  function onTouchStart(e) {
-    if (!options.hasCards() || committed) return;
-    if (e.touches.length !== 1) return;
-    if (isInteractive(e.target)) return;
-
-    isTouchGesture = true;
+  function beginGesture(x, y, isTouch) {
     active = true;
+    isTouchGesture = isTouch;
     locked = null;
-    startX = e.touches[0].clientX;
-    startY = e.touches[0].clientY;
+    startX = x;
+    startY = y;
     startTime = performance.now();
     dx = 0;
     dy = 0;
     card.style.transition = '';
   }
 
-  function onTouchMove(e) {
-    if (!active || !isTouchGesture) return;
-    if (e.touches.length !== 1) return;
-
-    dx = e.touches[0].clientX - startX;
-    dy = e.touches[0].clientY - startY;
-
+  // Lock the gesture to an axis once it passes the threshold; a horizontal
+  // lock needs |dx| >= |dy| * hRatio. Horizontal drags move the card.
+  function trackMove(e, x, y, hRatio) {
+    dx = x - startX;
+    dy = y - startY;
     if (!locked) {
       const absDx = Math.abs(dx);
       const absDy = Math.abs(dy);
       if (absDx >= DRAG_LOCK_THRESHOLD || absDy >= DRAG_LOCK_THRESHOLD) {
-        if (absDx >= absDy * 1.15) {
+        if (absDx >= absDy * hRatio) {
           locked = 'h';
         } else {
           locked = 'v';
         }
       }
     }
-
     if (locked === 'h') {
       if (e.cancelable) e.preventDefault();
       applyDrag(dx);
     }
+  }
+
+  // --- TOUCH EVENT HANDLERS (Rock-solid for iOS Safari & Android Chrome) ---
+  function onTouchStart(e) {
+    if (!options.hasCards() || committed) return;
+    if (e.touches.length !== 1) return;
+    if (isInteractive(e.target)) return;
+
+    beginGesture(e.touches[0].clientX, e.touches[0].clientY, true);
+  }
+
+  function onTouchMove(e) {
+    if (!active || !isTouchGesture) return;
+    if (e.touches.length !== 1) return;
+
+    trackMove(e, e.touches[0].clientX, e.touches[0].clientY, 1.15);
+  }
+
+  // Shared end-of-gesture decision for touch and pointer input: commit a
+  // flick/long drag, spring back a short one, or treat a still tap as a flip.
+  function finishGesture({ flickVelocity, flickMinPx, tapMaxPx, tapMaxMs }) {
+    const dt = Math.max(1, performance.now() - startTime);
+    const absDx = Math.abs(dx);
+
+    if (locked === 'h') {
+      const commitPx = Math.min(COMMIT_PX, (card.offsetWidth || 320) * 0.22);
+      const velocity = absDx / dt;
+      const isFlick = velocity >= flickVelocity && absDx >= flickMinPx && dt < 400;
+      const isDistance = absDx >= commitPx;
+      if (isFlick || isDistance) {
+        commitSwipe(dx > 0 ? 'right' : 'left');
+      } else {
+        springBack();
+      }
+      return;
+    }
+    setSwipingState(false);
+    if (!locked && Math.hypot(dx, dy) < tapMaxPx && dt < tapMaxMs) {
+      options.flip();
+    }
+  }
+
+  function releaseCapture(e) {
+    try {
+      if (e && e.pointerId && card.hasPointerCapture && card.hasPointerCapture(e.pointerId)) {
+        card.releasePointerCapture(e.pointerId);
+      }
+    } catch (_) {}
   }
 
   function onTouchEnd(e) {
@@ -195,29 +235,7 @@ function initCardSwipe(options) {
     active = false;
     isTouchGesture = false;
 
-    const dt = Math.max(1, performance.now() - startTime);
-    const velocity = Math.abs(dx) / dt;
-    const absDx = Math.abs(dx);
-
-    if (locked === 'h') {
-      const cardWidth = card.offsetWidth || 320;
-      const dynamicCommit = Math.min(COMMIT_PX, cardWidth * 0.22);
-      const isFlick = velocity >= 0.32 && absDx >= 30 && dt < 400;
-      const isDistance = absDx >= dynamicCommit;
-
-      if (isFlick || isDistance) {
-        commitSwipe(dx > 0 ? 'right' : 'left');
-      } else {
-        springBack();
-      }
-    } else if (locked === 'v') {
-      setSwipingState(false);
-    } else {
-      setSwipingState(false);
-      if (Math.hypot(dx, dy) < 8 && dt < 450) {
-        options.flip();
-      }
-    }
+    finishGesture({ flickVelocity: 0.32, flickMinPx: 30, tapMaxPx: 8, tapMaxMs: 450 });
   }
 
   function onTouchCancel() {
@@ -234,15 +252,7 @@ function initCardSwipe(options) {
     if (e.button !== 0) return;
     if (isInteractive(e.target)) return;
 
-    active = true;
-    isTouchGesture = false;
-    locked = null;
-    startX = e.clientX;
-    startY = e.clientY;
-    startTime = performance.now();
-    dx = 0;
-    dy = 0;
-    card.style.transition = '';
+    beginGesture(e.clientX, e.clientY, false);
 
     try {
       if (card.setPointerCapture) card.setPointerCapture(e.pointerId);
@@ -251,65 +261,21 @@ function initCardSwipe(options) {
 
   function onPointerMove(e) {
     if (!active || isTouchGesture) return;
-    dx = e.clientX - startX;
-    dy = e.clientY - startY;
-
-    if (!locked) {
-      const absDx = Math.abs(dx);
-      const absDy = Math.abs(dy);
-      if (absDx >= DRAG_LOCK_THRESHOLD || absDy >= DRAG_LOCK_THRESHOLD) {
-        locked = absDx >= absDy ? 'h' : 'v';
-      }
-    }
-
-    if (locked === 'h') {
-      if (e.cancelable) e.preventDefault();
-      applyDrag(dx);
-    }
+    trackMove(e, e.clientX, e.clientY, 1);
   }
 
   function onPointerUp(e) {
     if (!active || isTouchGesture) return;
     active = false;
-    try {
-      if (e && e.pointerId && card.hasPointerCapture && card.hasPointerCapture(e.pointerId)) {
-        card.releasePointerCapture(e.pointerId);
-      }
-    } catch (_) {}
+    releaseCapture(e);
 
-    const dt = Math.max(1, performance.now() - startTime);
-    const velocity = Math.abs(dx) / dt;
-    const absDx = Math.abs(dx);
-
-    if (locked === 'h') {
-      const cardWidth = card.offsetWidth || 320;
-      const dynamicCommit = Math.min(COMMIT_PX, cardWidth * 0.22);
-      const isFlick = velocity >= 0.35 && absDx >= 35 && dt < 400;
-      const isDistance = absDx >= dynamicCommit;
-
-      if (isFlick || isDistance) {
-        commitSwipe(dx > 0 ? 'right' : 'left');
-      } else {
-        springBack();
-      }
-    } else if (locked === 'v') {
-      setSwipingState(false);
-    } else {
-      setSwipingState(false);
-      if (Math.hypot(dx, dy) < 6 && dt < 400) {
-        options.flip();
-      }
-    }
+    finishGesture({ flickVelocity: 0.35, flickMinPx: 35, tapMaxPx: 6, tapMaxMs: 400 });
   }
 
   function onPointerCancel(e) {
     if (!active || isTouchGesture) return;
     active = false;
-    try {
-      if (e && e.pointerId && card.hasPointerCapture && card.hasPointerCapture(e.pointerId)) {
-        card.releasePointerCapture(e.pointerId);
-      }
-    } catch (_) {}
+    releaseCapture(e);
     springBack();
   }
 

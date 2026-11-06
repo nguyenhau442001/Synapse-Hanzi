@@ -46,18 +46,8 @@
   }
 
   // Loại bỏ thanh điệu pinyin để đối chiếu âm biểu thanh (phonetic base)
-  const TONE_CHAR_MAP = {
-    'ā':'a','á':'a','ǎ':'a','à':'a',
-    'ē':'e','é':'e','ě':'e','è':'e',
-    'ī':'i','í':'i','ǐ':'i','ì':'i',
-    'ō':'o','ó':'o','ǒ':'o','ò':'o',
-    'ū':'u','ú':'u','ǔ':'u','ù':'u',
-    'ǖ':'v','ǘ':'v','ǚ':'v','ǜ':'v','ü':'v',
-  };
-
   function stripTone(str) {
-    if (!str) return '';
-    return String(str).toLowerCase().replace(/[āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜü]/g, c => TONE_CHAR_MAP[c] || c).trim();
+    return stripPinyinTones(str).trim();
   }
 
   // Singleton Inverted Index
@@ -349,16 +339,13 @@
     const accordion = document.getElementById('cardRelatedAccordion');
     const countBadge = document.getElementById('cardRelatedCountBadge');
     if (!wrap) return;
+    const hideRelated = () => {
+      wrap.innerHTML = '';
+      setCardSectionVisible(accordion, wrap, false);
+    };
 
     if (!word || !word.hanzi) {
-      wrap.style.display = 'none';
-      wrap.hidden = true;
-      wrap.innerHTML = '';
-      if (accordion) {
-        accordion.style.display = 'none';
-        accordion.hidden = true;
-        accordion.open = false;
-      }
+      hideRelated();
       return;
     }
 
@@ -372,28 +359,15 @@
 
     // Quy tắc: Nếu không có chữ liên quan thì ẩn hẳn khối, không để khung trống
     if (!relatedList || relatedList.length === 0) {
-      wrap.style.display = 'none';
-      wrap.hidden = true;
-      wrap.innerHTML = '';
-      if (accordion) {
-        accordion.style.display = 'none';
-        accordion.hidden = true;
-        accordion.open = false;
-      }
+      hideRelated();
       return;
     }
 
-    if (accordion) {
-      accordion.hidden = false;
-      accordion.style.display = 'block';
-      accordion.open = false;
-    }
+    setCardSectionVisible(accordion, wrap, true, 'flex');
     if (countBadge) {
       countBadge.textContent = relatedList.length;
       countBadge.hidden = false;
     }
-    wrap.hidden = false;
-    wrap.style.display = 'flex';
 
     const hasHistory = relatedNavHistory.length > 0;
     const lastItem = hasHistory ? relatedNavHistory[relatedNavHistory.length - 1] : null;

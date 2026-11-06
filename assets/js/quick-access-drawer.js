@@ -107,23 +107,32 @@ function renderQuickSavedWords() {
   if (emptyState) emptyState.hidden = true;
 
   container.innerHTML = list.map(w => {
-    const hanziSafe = escapeHtml(w.hanzi);
-    const pinyinSafe = escapeHtml(w.pinyin || '');
-    const meaningSafe = escapeHtml(w.meaning || '');
     const levelKey = w.level || '';
     const levelPill = levelKey
       ? (typeof formatWeakWordLevel === 'function' ? formatWeakWordLevel(levelKey) : levelKey.toUpperCase())
       : '';
-    const idSafe = escapeHtml(w.id != null ? String(w.id) : '');
+    return renderQuickWordItem(w, levelKey, {
+      verb: 'Xem từ',
+      pillsHtml: levelPill ? `<span class="quick-word-level-pill">${escapeHtml(levelPill)}</span>` : '',
+      removable: true,
+    });
+  }).join('');
+}
 
-    return `
+// One row of the saved/urgent word lists in the quick drawer.
+function renderQuickWordItem(word, levelKey, { verb, pillsHtml, removable }) {
+  const hanziSafe = escapeHtml(word.hanzi || '');
+  const pinyinSafe = escapeHtml(word.pinyin || '');
+  const meaningSafe = escapeHtml(word.meaning || '');
+  const idSafe = escapeHtml(word.id != null ? String(word.id) : '');
+  return `
       <li class="quick-word-item" data-hanzi="${hanziSafe}" data-level="${escapeHtml(levelKey)}" data-id="${idSafe}">
-        <button type="button" class="quick-word-main" aria-label="Xem từ ${hanziSafe}">
+        <button type="button" class="quick-word-main" aria-label="${verb} ${hanziSafe}">
           <span class="quick-word-hanzi" lang="zh-CN">${hanziSafe}</span>
           <span class="quick-word-info">
             <span class="quick-word-meta">
               <span class="quick-word-pinyin">${pinyinSafe}</span>
-              ${levelPill ? `<span class="quick-word-level-pill">${escapeHtml(levelPill)}</span>` : ''}
+              ${pillsHtml}
             </span>
             <span class="quick-word-meaning" title="${meaningSafe}">${meaningSafe}</span>
           </span>
@@ -132,16 +141,17 @@ function renderQuickSavedWords() {
           <button type="button" class="quick-word-speak-btn" data-speak="${hanziSafe}" aria-label="Nghe phát âm ${hanziSafe}" title="Phát âm">
             ${speakerIconSvg(16)}
           </button>
+          ${removable ? `
           <button type="button" class="quick-word-remove-btn" data-remove="${hanziSafe}" aria-label="Bỏ đánh dấu ${hanziSafe}" title="Bỏ đánh dấu">
             <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <line x1="18" y1="6" x2="6" y2="18"/>
               <line x1="6" y1="6" x2="18" y2="18"/>
             </svg>
           </button>
+          ` : ''}
         </div>
       </li>
     `;
-  }).join('');
 }
 
 function updateSavedBadgeCounts(count) {
@@ -200,35 +210,15 @@ function updateQuickUrgentWords(items) {
   }
 
   container.innerHTML = quickUrgentItems.map(item => {
-    const word = item.word || {};
-    const hanziSafe = escapeHtml(word.hanzi || '');
-    const pinyinSafe = escapeHtml(word.pinyin || '');
-    const meaningSafe = escapeHtml(word.meaning || '');
     const levelKey = item.level || '';
     const levelLabel = typeof homeShortLevelLabel === 'function' ? homeShortLevelLabel(levelKey) : levelKey.toUpperCase();
     const lapses = (item.card && item.card.lapses) ? `${item.card.lapses}×` : '1×';
-    const idSafe = escapeHtml(String(word.id != null ? word.id : ''));
-
-    return `
-      <li class="quick-word-item" data-hanzi="${hanziSafe}" data-level="${escapeHtml(levelKey)}" data-id="${idSafe}">
-        <button type="button" class="quick-word-main" aria-label="Ôn từ ${hanziSafe}">
-          <span class="quick-word-hanzi" lang="zh-CN">${hanziSafe}</span>
-          <span class="quick-word-info">
-            <span class="quick-word-meta">
-              <span class="quick-word-pinyin">${pinyinSafe}</span>
-              <span class="quick-word-level-pill">${escapeHtml(levelLabel)}</span>
-              <span class="quick-word-lapse-pill" title="Số lần quên: ${lapses}">${lapses}</span>
-            </span>
-            <span class="quick-word-meaning" title="${meaningSafe}">${meaningSafe}</span>
-          </span>
-        </button>
-        <div class="quick-word-actions">
-          <button type="button" class="quick-word-speak-btn" data-speak="${hanziSafe}" aria-label="Nghe phát âm ${hanziSafe}" title="Phát âm">
-            ${speakerIconSvg(16)}
-          </button>
-        </div>
-      </li>
-    `;
+    return renderQuickWordItem(item.word || {}, levelKey, {
+      verb: 'Ôn từ',
+      pillsHtml: `<span class="quick-word-level-pill">${escapeHtml(levelLabel)}</span>
+              <span class="quick-word-lapse-pill" title="Số lần quên: ${lapses}">${lapses}</span>`,
+      removable: false,
+    });
   }).join('');
 }
 
@@ -373,6 +363,17 @@ function renderQuickSearchResults(results) {
 // 5. Global Keyboard Shortcuts & Event Delegation
 // ---------------------------------------------------------------------------
 
+// Speak the word of a clicked [data-speak] button; returns true if it handled the click.
+function handleQuickSpeakClick(e) {
+  const speakBtn = e.target.closest('[data-speak]');
+  if (!speakBtn) return false;
+  e.stopPropagation();
+  if (typeof speakText === 'function') {
+    speakText(speakBtn.dataset.speak, speakBtn, typeof SPEECH_RATE !== 'undefined' ? SPEECH_RATE : 0.85);
+  }
+  return true;
+}
+
 function initQuickAccessDrawerEvents() {
   // Update keyboard shortcut label for Mac vs Windows
   const isMac = typeof navigator !== 'undefined' && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform);
@@ -460,15 +461,7 @@ function initQuickAccessDrawerEvents() {
   const searchResultsEl = document.getElementById('quickSearchResults');
   if (searchResultsEl) {
     searchResultsEl.addEventListener('click', (e) => {
-      const speakBtn = e.target.closest('[data-speak]');
-      if (speakBtn) {
-        e.stopPropagation();
-        const text = speakBtn.dataset.speak;
-        if (typeof speakText === 'function') {
-          speakText(text, speakBtn, typeof SPEECH_RATE !== 'undefined' ? SPEECH_RATE : 0.85);
-        }
-        return;
-      }
+      if (handleQuickSpeakClick(e)) return;
 
       const item = e.target.closest('.qsm-result-item');
       if (item) {
@@ -488,15 +481,7 @@ function initQuickAccessDrawerEvents() {
   if (drawerPanel) {
     drawerPanel.addEventListener('click', (e) => {
       // Audio speak button
-      const speakBtn = e.target.closest('[data-speak]');
-      if (speakBtn) {
-        e.stopPropagation();
-        const text = speakBtn.dataset.speak;
-        if (typeof speakText === 'function') {
-          speakText(text, speakBtn, typeof SPEECH_RATE !== 'undefined' ? SPEECH_RATE : 0.85);
-        }
-        return;
-      }
+      if (handleQuickSpeakClick(e)) return;
 
       // Remove from saved words
       const removeBtn = e.target.closest('[data-remove]');

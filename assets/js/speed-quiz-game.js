@@ -24,15 +24,6 @@ async function ensureSpeedQuizBankLoaded() {
   speedQuizBankData = (await res.json()).filter(s => s.zh_tokens && s.zh_tokens.length >= 2);
 }
 
-function shuffleSpeedQuizArray(arr) {
-  const copy = arr.slice();
-  for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[j]] = [copy[j], copy[i]];
-  }
-  return copy;
-}
-
 async function ensureVocabMapLoaded() {
   if (speedQuizVocabMap && speedQuizVocabMap.size > 0) return speedQuizVocabMap;
   speedQuizVocabMap = new Map();
@@ -154,7 +145,7 @@ async function startSpeedQuizGame(options = {}) {
 
   await Promise.all([ensureSpeedQuizBankLoaded(), ensureVocabMapLoaded()]);
 
-  speedQuizOrder = shuffleSpeedQuizArray(Array.from({ length: speedQuizBankData.length }, (_, i) => i));
+  speedQuizOrder = shuffledCopy(Array.from({ length: speedQuizBankData.length }, (_, i) => i));
   speedQuizIdx = 0;
   speedQuizScore = 0;
   speedQuizStreak = 0;
@@ -217,7 +208,7 @@ function loadNextSpeedQuizRound() {
   }
 
   if (speedQuizIdx >= speedQuizOrder.length) {
-    speedQuizOrder = shuffleSpeedQuizArray(speedQuizOrder);
+    speedQuizOrder = shuffledCopy(speedQuizOrder);
     speedQuizIdx = 0;
   }
 
@@ -244,35 +235,23 @@ function loadNextSpeedQuizRound() {
   }
 
   // 2. Pick from speedQuizVocabByLength with exact matching character length and valid definitions
-  const poolExact = speedQuizVocabByLength.get(answerLen) || [];
-  if (poolExact.length > 0 && distractors.length < 3) {
-    const shuffled = shuffleSpeedQuizArray(poolExact);
-    for (const item of shuffled) {
+  const addFromVocab = (pool) => {
+    if (distractors.length >= 3) return;
+    for (const item of shuffledCopy(pool)) {
+      if (distractors.length === 3) break;
       const w = item.hanzi;
-      if (w !== answer && !distractors.includes(w) && item.meaning) {
-        distractors.push(w);
-        if (distractors.length === 3) break;
-      }
+      if (w !== answer && !distractors.includes(w) && item.meaning) distractors.push(w);
     }
-  }
+  };
+  addFromVocab(speedQuizVocabByLength.get(answerLen) || []);
 
   // 3. Fallback to similar length words (+/- 1 character)
-  if (distractors.length < 3) {
-    const poolAlt = (speedQuizVocabByLength.get(Math.max(1, answerLen - 1)) || [])
-      .concat(speedQuizVocabByLength.get(answerLen + 1) || []);
-    const shuffled = shuffleSpeedQuizArray(poolAlt);
-    for (const item of shuffled) {
-      const w = item.hanzi;
-      if (w !== answer && !distractors.includes(w) && item.meaning) {
-        distractors.push(w);
-        if (distractors.length === 3) break;
-      }
-    }
-  }
+  addFromVocab((speedQuizVocabByLength.get(Math.max(1, answerLen - 1)) || [])
+    .concat(speedQuizVocabByLength.get(answerLen + 1) || []));
 
   // 4. Absolute safety fallback
   if (distractors.length < 3) {
-    const generalPool = shuffleSpeedQuizArray(
+    const generalPool = shuffledCopy(
       speedQuizBankData.filter(s => s !== sentence).flatMap(s => s.zh_tokens)
     );
     for (const tok of generalPool) {
@@ -283,7 +262,7 @@ function loadNextSpeedQuizRound() {
     }
   }
 
-  const options = shuffleSpeedQuizArray([answer, ...distractors]);
+  const options = shuffledCopy([answer, ...distractors]);
   round.options = options;
 
   document.getElementById('speedQuizWord').innerHTML = round.displayHtml;
@@ -330,30 +309,27 @@ function updateSpeedQuizTimerBar() {
   barEl.classList.toggle('low', pct <= 30);
 }
 
-function handleSpeedQuizTimeout() {
-  if (speedQuizSolved) return;
-  speedQuizSolved = true;
-  clearInterval(speedQuizTimerId);
-  speedQuizStreak = 0;
-  speedQuizLastUserChoice = null;
-
-  const round = speedQuizCurrentRound;
+function setSpeedQuizFeedback(kind, icon, html) {
   const feedbackEl = document.getElementById('speedQuizFeedback');
-  const explainBtn = document.getElementById('speedQuizExplainBtn');
-  const nextBtn = document.getElementById('speedQuizNextBtn');
+  if (!feedbackEl) return;
+  feedbackEl.innerHTML = `<span class="sq-fb-icon">${icon}</span> <span class="sq-fb-text">${html}</span>`;
+  feedbackEl.className = `speed-quiz-feedback ${kind}`;
+}
 
-  if (feedbackEl) {
-    feedbackEl.innerHTML = `<span class="sq-fb-icon">⏱</span> <span class="sq-fb-text">Hết giờ! Đáp án đúng: <strong>${escapeHtml(round.answer)}</strong></span>`;
-    feedbackEl.className = 'speed-quiz-feedback timeout';
-  }
-
+// Lock the options, mark the right answer (and the user's wrong pick, if
+// any), then show the explain/next buttons.
+function revealSpeedQuizAnswer(wrongPick) {
+  const answer = speedQuizCurrentRound.answer;
   document.querySelectorAll('.speed-quiz-option').forEach(btn => {
     btn.disabled = true;
     const optWord = btn.dataset.word;
     const statusIcon = btn.querySelector('.option-status-icon');
-    if (optWord === round.answer) {
+    if (optWord === answer) {
       btn.classList.add('correct');
       if (statusIcon) statusIcon.textContent = '✓';
+    } else if (optWord === wrongPick) {
+      btn.classList.add('incorrect');
+      if (statusIcon) statusIcon.textContent = '✕';
     } else {
       btn.classList.add('is-dimmed');
     }
@@ -361,6 +337,8 @@ function handleSpeedQuizTimeout() {
 
   updateSpeedQuizScoreboard();
 
+  const explainBtn = document.getElementById('speedQuizExplainBtn');
+  const nextBtn = document.getElementById('speedQuizNextBtn');
   if (explainBtn) explainBtn.hidden = false;
   if (nextBtn) {
     nextBtn.hidden = false;
@@ -368,6 +346,18 @@ function handleSpeedQuizTimeout() {
       try { nextBtn.focus(); } catch (_) {}
     }, 50);
   }
+}
+
+function handleSpeedQuizTimeout() {
+  if (speedQuizSolved) return;
+  speedQuizSolved = true;
+  clearInterval(speedQuizTimerId);
+  speedQuizStreak = 0;
+  speedQuizLastUserChoice = null;
+
+  setSpeedQuizFeedback('timeout', '⏱', `Hết giờ! Đáp án đúng: <strong>${escapeHtml(speedQuizCurrentRound.answer)}</strong>`);
+
+  revealSpeedQuizAnswer(null);
 }
 
 function pickSpeedQuizOption(word) {
@@ -378,10 +368,6 @@ function pickSpeedQuizOption(word) {
   const round = speedQuizCurrentRound;
   speedQuizLastUserChoice = word;
   const isCorrect = word === round.answer;
-  const feedbackEl = document.getElementById('speedQuizFeedback');
-  const explainBtn = document.getElementById('speedQuizExplainBtn');
-  const nextBtn = document.getElementById('speedQuizNextBtn');
-
   if (isCorrect) {
     speedQuizStreak++;
     const speedBonus = Math.round((speedQuizTimeLeft / SPEED_QUIZ_TIME_LIMIT) * SPEED_QUIZ_BASE_SCORE);
@@ -392,42 +378,13 @@ function pickSpeedQuizOption(word) {
       speedQuizBest = speedQuizScore;
       localStorage.setItem(SPEED_QUIZ_STORAGE_KEY, String(speedQuizBest));
     }
-    if (feedbackEl) {
-      feedbackEl.innerHTML = `<span class="sq-fb-icon">✓</span> <span class="sq-fb-text">Chính xác! <strong>+${earned} điểm</strong></span>`;
-      feedbackEl.className = 'speed-quiz-feedback correct';
-    }
+    setSpeedQuizFeedback('correct', '✓', `Chính xác! <strong>+${earned} điểm</strong>`);
   } else {
     speedQuizStreak = 0;
-    if (feedbackEl) {
-      feedbackEl.innerHTML = `<span class="sq-fb-icon">✗</span> <span class="sq-fb-text">Chưa chính xác! Đáp án đúng: <strong>${escapeHtml(round.answer)}</strong></span>`;
-      feedbackEl.className = 'speed-quiz-feedback incorrect';
-    }
+    setSpeedQuizFeedback('incorrect', '✗', `Chưa chính xác! Đáp án đúng: <strong>${escapeHtml(round.answer)}</strong>`);
   }
 
-  document.querySelectorAll('.speed-quiz-option').forEach(btn => {
-    btn.disabled = true;
-    const optWord = btn.dataset.word;
-    const statusIcon = btn.querySelector('.option-status-icon');
-    if (optWord === round.answer) {
-      btn.classList.add('correct');
-      if (statusIcon) statusIcon.textContent = '✓';
-    } else if (optWord === word && !isCorrect) {
-      btn.classList.add('incorrect');
-      if (statusIcon) statusIcon.textContent = '✕';
-    } else {
-      btn.classList.add('is-dimmed');
-    }
-  });
-
-  updateSpeedQuizScoreboard();
-
-  if (explainBtn) explainBtn.hidden = false;
-  if (nextBtn) {
-    nextBtn.hidden = false;
-    setTimeout(() => {
-      try { nextBtn.focus(); } catch (_) {}
-    }, 50);
-  }
+  revealSpeedQuizAnswer(isCorrect ? null : word);
 }
 
 function openSpeedQuizExplanationModal() {

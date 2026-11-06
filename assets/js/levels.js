@@ -852,12 +852,7 @@ async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal = false
 
   const targetIdx = targetWordIdOrHanzi ? findWordIndex(targetWordIdOrHanzi) : -1;
   if (targetWordIdOrHanzi) {
-    if (targetIdx >= 0) {
-      currentFilter = 'all';
-      filteredOrder = order.slice();
-      const pos = filteredOrder.indexOf(targetIdx);
-      idx = pos >= 0 ? pos : 0;
-    }
+    if (targetIdx >= 0) showAllWordsAt(targetIdx);
   } else if (filteredOrder.length > 0) {
     // Start with a completely random word whenever entering flashcard study mode
     idx = Math.floor(Math.random() * filteredOrder.length);
@@ -893,10 +888,7 @@ async function openWordInLevel(level, wordIdOrHanzi, autoReveal = true) {
   const wordIndex = findWordIndex(wordIdOrHanzi);
   if (wordIndex < 0) return;
 
-  currentFilter = 'all';
-  filteredOrder = order.slice();
-  const position = filteredOrder.indexOf(wordIndex);
-  idx = position >= 0 ? position : 0;
+  showAllWordsAt(wordIndex);
   if (typeof preloadSingleWordIllustration === 'function') {
     preloadSingleWordIllustration(WORDS[wordIndex], 'high');
   }

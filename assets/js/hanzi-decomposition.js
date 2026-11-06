@@ -151,15 +151,7 @@ function renderCardRadicals(word) {
   const hideDecomp = () => {
     mount.innerHTML = '';
     mount.style.display = 'none';
-    if (wrap) {
-      wrap.hidden = true;
-      wrap.style.display = 'none';
-    }
-    if (accordion) {
-      accordion.hidden = true;
-      accordion.style.display = 'none';
-      accordion.open = false;
-    }
+    setCardSectionVisible(accordion, wrap, false);
     if (typeof syncCardSupportingGroup === 'function') syncCardSupportingGroup();
   };
 
@@ -194,15 +186,7 @@ function renderCardRadicals(word) {
       return;
     }
 
-    if (accordion) {
-      accordion.hidden = false;
-      accordion.style.display = 'block';
-      accordion.open = false;
-    }
-    if (wrap) {
-      wrap.hidden = false;
-      wrap.style.display = 'block';
-    }
+    setCardSectionVisible(accordion, wrap, true);
     mount.style.display = 'flex';
 
     // One "部件 + 部件" row of clickable components for a single character.

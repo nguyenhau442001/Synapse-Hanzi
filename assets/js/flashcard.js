@@ -231,91 +231,47 @@ function buildCardArea() {
   initSwipe();
 }
 
-function toggleStudyHeaderMenu(event) {
-  if (event) event.stopPropagation();
-  const dropdown = document.getElementById('studyHeaderDropdown');
-  const btn = document.getElementById('studyHeaderMoreBtn');
-  if (!dropdown || !btn) return;
-  const isHidden = dropdown.hidden;
-  if (isHidden) {
-    if (typeof closeCardMoreMenu === 'function') closeCardMoreMenu();
-    if (typeof closeCompactFilterMenu === 'function') closeCompactFilterMenu();
-    dropdown.hidden = false;
-    btn.setAttribute('aria-expanded', 'true');
-    dropdown.classList.add('is-open');
-  } else {
-    closeStudyHeaderMenu();
-  }
-}
+// The study-screen dropdown menus. Only one is open at a time, and a
+// pointerdown outside a menu's wrap closes it.
+const STUDY_MENUS = {
+  studyHeader: { menu: 'studyHeaderDropdown', trigger: 'studyHeaderMoreBtn', wrap: '#studyHeaderMenuWrap' },
+  cardMore: { menu: 'cardMoreDropdown', trigger: 'cardMoreBtn', wrap: '#cardMoreMenuWrap', beforeOpen: () => updateCardMoreMenuState() },
+};
 
-function closeStudyHeaderMenu() {
-  const dropdown = document.getElementById('studyHeaderDropdown');
-  const btn = document.getElementById('studyHeaderMoreBtn');
-  if (dropdown) {
-    dropdown.hidden = true;
-    dropdown.classList.remove('is-open');
-  }
-  if (btn) btn.setAttribute('aria-expanded', 'false');
-}
-window.toggleStudyHeaderMenu = toggleStudyHeaderMenu;
-window.closeStudyHeaderMenu = closeStudyHeaderMenu;
-
-function toggleCompactFilterMenu(event) {
-  if (event) event.stopPropagation();
-  const menu = document.getElementById('compactFilterMenu');
-  const trigger = document.getElementById('compactFilterTrigger');
-  if (!menu || !trigger) return;
-  const isHidden = menu.hidden;
-  if (isHidden) {
-    if (typeof closeStudyHeaderMenu === 'function') closeStudyHeaderMenu();
-    if (typeof closeCardMoreMenu === 'function') closeCardMoreMenu();
-    menu.hidden = false;
-    trigger.setAttribute('aria-expanded', 'true');
-    menu.classList.add('is-open');
-  } else {
-    closeCompactFilterMenu();
-  }
-}
-
-function closeCompactFilterMenu() {
-  const menu = document.getElementById('compactFilterMenu');
-  const trigger = document.getElementById('compactFilterTrigger');
+function closeStudyMenu(name) {
+  const { menu: menuId, trigger: triggerId } = STUDY_MENUS[name];
+  const menu = document.getElementById(menuId);
+  const trigger = document.getElementById(triggerId);
   if (menu) {
     menu.hidden = true;
     menu.classList.remove('is-open');
   }
   if (trigger) trigger.setAttribute('aria-expanded', 'false');
 }
-window.toggleCompactFilterMenu = toggleCompactFilterMenu;
-window.closeCompactFilterMenu = closeCompactFilterMenu;
 
-function toggleCardMoreMenu(event) {
+function toggleStudyMenu(name, event) {
   if (event) event.stopPropagation();
-  const dropdown = document.getElementById('cardMoreDropdown');
-  const btn = document.getElementById('cardMoreBtn');
-  if (!dropdown || !btn) return;
-  const isHidden = dropdown.hidden;
-  if (isHidden) {
-    if (typeof closeStudyHeaderMenu === 'function') closeStudyHeaderMenu();
-    if (typeof closeCompactFilterMenu === 'function') closeCompactFilterMenu();
-    updateCardMoreMenuState();
-    dropdown.hidden = false;
-    btn.setAttribute('aria-expanded', 'true');
-    dropdown.classList.add('is-open');
-  } else {
-    closeCardMoreMenu();
+  const config = STUDY_MENUS[name];
+  const menu = document.getElementById(config.menu);
+  const trigger = document.getElementById(config.trigger);
+  if (!menu || !trigger) return;
+  if (!menu.hidden) {
+    closeStudyMenu(name);
+    return;
   }
+  Object.keys(STUDY_MENUS).forEach(other => { if (other !== name) closeStudyMenu(other); });
+  if (config.beforeOpen) config.beforeOpen();
+  menu.hidden = false;
+  trigger.setAttribute('aria-expanded', 'true');
+  menu.classList.add('is-open');
 }
 
-function closeCardMoreMenu() {
-  const dropdown = document.getElementById('cardMoreDropdown');
-  const btn = document.getElementById('cardMoreBtn');
-  if (dropdown) {
-    dropdown.hidden = true;
-    dropdown.classList.remove('is-open');
-  }
-  if (btn) btn.setAttribute('aria-expanded', 'false');
-}
+function toggleStudyHeaderMenu(event) { toggleStudyMenu('studyHeader', event); }
+function closeStudyHeaderMenu() { closeStudyMenu('studyHeader'); }
+function toggleCardMoreMenu(event) { toggleStudyMenu('cardMore', event); }
+function closeCardMoreMenu() { closeStudyMenu('cardMore'); }
+window.toggleStudyHeaderMenu = toggleStudyHeaderMenu;
+window.closeStudyHeaderMenu = closeStudyHeaderMenu;
 
 function updateCardMoreMenuState() {
   const pinyinLabel = document.getElementById('menuPinyinText');
@@ -345,18 +301,10 @@ function updateCardMoreMenuState() {
 }
 
 document.addEventListener('pointerdown', event => {
-  const wrap = document.getElementById('cardMoreMenuWrap');
-  if (wrap && !wrap.contains(event.target)) {
-    closeCardMoreMenu();
-  }
-  const headerWrap = document.getElementById('studyHeaderMenuWrap');
-  if (headerWrap && !headerWrap.contains(event.target)) {
-    closeStudyHeaderMenu();
-  }
-  const filterWrap = document.querySelector('.compact-filter-wrap');
-  if (filterWrap && !filterWrap.contains(event.target)) {
-    closeCompactFilterMenu();
-  }
+  Object.entries(STUDY_MENUS).forEach(([name, { wrap }]) => {
+    const wrapEl = document.querySelector(wrap);
+    if (wrapEl && !wrapEl.contains(event.target)) closeStudyMenu(name);
+  });
 });
 
 function toggleIllustration() {
@@ -919,19 +867,19 @@ window.addEventListener('wheel', (e) => {
   e.preventDefault();
 }, { passive: false });
 
-function toggleStudySidebar(forceOpen) {
+// Open the study sidebar on `tab` (or close it when it is already showing that
+// tab, or when forceOpen === false). onOpen fills the tab's content.
+function toggleStudySidebarTab(tab, forceOpen, onOpen) {
   const isOpen = document.body.classList.contains('study-sidebar-open');
-  const isTargetTab = document.body.dataset.sidebarTab === 'words';
+  const isTargetTab = document.body.dataset.sidebarTab === tab;
   const shouldOpen = typeof forceOpen === 'boolean' ? forceOpen : (!isOpen || !isTargetTab);
 
   if (shouldOpen) {
     document.body.classList.add('study-sidebar-open');
     if (typeof window.setSidebarStudyTab === 'function') {
-      window.setSidebarStudyTab('words');
+      window.setSidebarStudyTab(tab);
     }
-    if (typeof renderStudyWordList === 'function') {
-      renderStudyWordList();
-    }
+    onOpen();
     if (typeof SpaRouter !== 'undefined' && !SpaRouter.isNavigatingFromPopstate()) {
       SpaRouter.pushView({ view: 'cards', level: currentLevel, drawerOpen: true });
     }
@@ -941,28 +889,20 @@ function toggleStudySidebar(forceOpen) {
   updateStudyDrawerButtons();
 }
 
-function toggleStudyWritingPanel(forceOpen) {
-  const isOpen = document.body.classList.contains('study-sidebar-open');
-  const isTargetTab = document.body.dataset.sidebarTab === 'stroke';
-  const shouldOpen = typeof forceOpen === 'boolean' ? forceOpen : (!isOpen || !isTargetTab);
+function toggleStudySidebar(forceOpen) {
+  toggleStudySidebarTab('words', forceOpen, () => {
+    if (typeof renderStudyWordList === 'function') renderStudyWordList();
+  });
+}
 
-  if (shouldOpen) {
-    document.body.classList.add('study-sidebar-open');
-    if (typeof window.setSidebarStudyTab === 'function') {
-      window.setSidebarStudyTab('stroke');
-    }
+function toggleStudyWritingPanel(forceOpen) {
+  toggleStudySidebarTab('stroke', forceOpen, () => {
     if (typeof renderActiveStrokeChar === 'function') {
       setTimeout(() => renderActiveStrokeChar(true), 50);
     } else if (typeof loadStrokeCanvasWord === 'function' && typeof activeStudyWord !== 'undefined') {
       setTimeout(() => loadStrokeCanvasWord(activeStudyWord), 50);
     }
-    if (typeof SpaRouter !== 'undefined' && !SpaRouter.isNavigatingFromPopstate()) {
-      SpaRouter.pushView({ view: 'cards', level: currentLevel, drawerOpen: true });
-    }
-  } else {
-    document.body.classList.remove('study-sidebar-open');
-  }
-  updateStudyDrawerButtons();
+  });
 }
 
 function closeAllStudyDrawers() {
@@ -1030,6 +970,22 @@ function ensureStudyWordList() {
     searchEl.addEventListener('search', renderStudyWordList);
   }
   return panel;
+}
+
+// Show WORDS[wordIndex] on the card, keeping the current filter when the word
+// is in it and falling back to "all" otherwise. Returns whether it moved.
+function jumpToWordByIndex(wordIndex) {
+  if (wordIndex < 0 || !Array.isArray(WORDS) || wordIndex >= WORDS.length) return false;
+  if (!filteredOrder.includes(wordIndex)) {
+    currentFilter = 'all';
+    filteredOrder = order.slice();
+    renderFilters();
+  }
+  const filteredIndex = filteredOrder.indexOf(wordIndex);
+  if (filteredIndex < 0) return false;
+  idx = filteredIndex;
+  render('fade');
+  return true;
 }
 
 function renderStudyWordList() {
@@ -1106,19 +1062,8 @@ function renderStudyWordList() {
       button.addEventListener('touchstart', () => preloadSingleWordIllustration(targetWord, 'high'), { passive: true });
     }
     button.addEventListener('click', () => {
-      let filteredIndex = filteredOrder.indexOf(wordIndex);
-      if (filteredIndex < 0) {
-        currentFilter = 'all';
-        filteredOrder = order.slice();
-        renderFilters();
-        filteredIndex = filteredOrder.indexOf(wordIndex);
-      }
-      if (filteredIndex >= 0) {
-        idx = filteredIndex;
-        render('fade');
-        if (window.innerWidth < 768) {
-          closeAllStudyDrawers();
-        }
+      if (jumpToWordByIndex(wordIndex) && window.innerWidth < 768) {
+        closeAllStudyDrawers();
       }
     });
   });

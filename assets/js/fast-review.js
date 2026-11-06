@@ -1,25 +1,13 @@
 // Fast-review (speed quiz) mode: pool building, timer, grading, screen transitions.
-const REVIEW_TONE_MARKS = {
-  'ā':'a','á':'a','ǎ':'a','à':'a',
-  'ē':'e','é':'e','ě':'e','è':'e',
-  'ī':'i','í':'i','ǐ':'i','ì':'i',
-  'ō':'o','ó':'o','ǒ':'o','ò':'o',
-  'ū':'u','ú':'u','ǔ':'u','ù':'u',
-  'ǖ':'v','ǘ':'v','ǚ':'v','ǜ':'v','ü':'v',
-};
-
 function stripTonePinyin(text) {
-  let s = String(text || '').toLowerCase();
-  s = s.split('').map(ch => REVIEW_TONE_MARKS[ch] || ch).join('');
+  let s = stripPinyinTones(text);
   s = s.replace(/[\u2018\u2019\u02bb\u02bc`´]/g, "'");
   return s.replace(/\s+/g, ' ').trim();
 }
 
 function cleanPinyin(text, { allowUForV = false, recoverTelexR = false } = {}) {
   if (!text) return '';
-  let s = String(text).toLowerCase();
-
-  s = s.split('').map(ch => REVIEW_TONE_MARKS[ch] || ch).join('');
+  let s = stripPinyinTones(text);
 
   if (recoverTelexR) {
     s = s.normalize('NFD').replace(/\u0309/g, 'r');
@@ -136,10 +124,7 @@ function buildReviewPool() {
     const card = reviewCardsByLevel[word._level] && reviewCardsByLevel[word._level][word.id];
     if (levelProgress[word.id] !== 'known' && (canIntroduceNewCards || !card || card.state !== SRS.State.New)) pool.push(i);
   }
-  for (let i = pool.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [pool[i], pool[j]] = [pool[j], pool[i]];
-  }
+  shuffleInPlace(pool);
   return pool;
 }
 
@@ -381,16 +366,10 @@ function buildReviewChoices(correctWordIdx) {
   for (let i = 0; i < reviewWordPool.length; i++) {
     if (i !== correctWordIdx && stripTonePinyin(reviewWordPool[i].pinyin) !== correctPinyin) others.push(i);
   }
-  for (let i = others.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [others[i], others[j]] = [others[j], others[i]];
-  }
+  shuffleInPlace(others);
   const distractors = others.slice(0, 3);
   const choices = [correctWordIdx, ...distractors];
-  for (let i = choices.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [choices[i], choices[j]] = [choices[j], choices[i]];
-  }
+  shuffleInPlace(choices);
   return choices;
 }
 
@@ -769,10 +748,7 @@ function practiceReviewMistakes() {
       newPool.push(i);
     }
   }
-  for (let i = newPool.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [newPool[i], newPool[j]] = [newPool[j], newPool[i]];
-  }
+  shuffleInPlace(newPool);
 
   closeReviewMistakesModal();
   reviewPool = newPool;

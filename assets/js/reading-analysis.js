@@ -183,37 +183,22 @@ function setReadingActiveMode(mode) {
  * Jump to next / prev question
  */
 function nextReadingQuestion() {
-  if (readingCurrentIndex < readingFilteredList.length - 1) {
-    readingCurrentIndex++;
-    readingSelectedTokenIndex = null;
-    resetPracticeState();
-    renderReadingAnalysisScreen();
-    syncRouterReadingQ();
-    try { window.scrollTo({ top: 0, behavior: 'smooth' }); } catch (e) {}
-  }
+  jumpToReadingIndex(readingCurrentIndex + 1);
 }
 
 function prevReadingQuestion() {
-  if (readingCurrentIndex > 0) {
-    readingCurrentIndex--;
-    readingSelectedTokenIndex = null;
-    resetPracticeState();
-    renderReadingAnalysisScreen();
-    syncRouterReadingQ();
-    try { window.scrollTo({ top: 0, behavior: 'smooth' }); } catch (e) {}
-  }
+  jumpToReadingIndex(readingCurrentIndex - 1);
 }
 
 function jumpToReadingIndex(idx) {
   idx = parseInt(idx, 10);
-  if (!isNaN(idx) && idx >= 0 && idx < readingFilteredList.length) {
-    readingCurrentIndex = idx;
-    readingSelectedTokenIndex = null;
-    resetPracticeState();
-    renderReadingAnalysisScreen();
-    syncRouterReadingQ();
-    try { window.scrollTo({ top: 0, behavior: 'smooth' }); } catch (e) {}
-  }
+  if (isNaN(idx) || idx < 0 || idx >= readingFilteredList.length) return;
+  readingCurrentIndex = idx;
+  readingSelectedTokenIndex = null;
+  resetPracticeState();
+  renderReadingAnalysisScreen();
+  syncRouterReadingQ();
+  try { window.scrollTo({ top: 0, behavior: 'smooth' }); } catch (e) {}
 }
 
 function syncRouterReadingQ() {
@@ -1061,6 +1046,51 @@ function closeInspector() {
   document.querySelectorAll('.reading-token-word').forEach(el => el.classList.remove('active-inspect'));
 }
 
+// Tap-to-order exercise (sentence building / A-B-C logic): answer slots,
+// the remaining tile bank, the action bar and the feedback box.
+function renderPracticeBuilderHtml({ placeholder, tileClass, bankClass, tileHtml, withHint, checkFn, checkLabel }) {
+  return `
+        <!-- Target Slots -->
+        <div class="practice-slots-area ${practiceSolved ? 'is-correct' : ''}" id="practiceSlotsArea">
+          ${practiceBuilderSlots.length === 0 ? `
+            <span class="practice-empty-placeholder">${placeholder}</span>
+          ` : practiceBuilderSlots.map((item, i) => `
+            <button type="button" class="builder-tile slot-tile${tileClass}" onclick="removeFromSlots(${i})">
+              ${tileHtml(item)}
+            </button>
+          `).join('')}
+        </div>
+
+        <!-- Available Bank -->
+        <div class="practice-bank-area${bankClass}" id="practiceBankArea">
+          ${practiceBuilderBank.map((item, i) => `
+            <button type="button" class="builder-tile${tileClass}" onclick="moveToSlots(${i})">
+              ${tileHtml(item)}
+            </button>
+          `).join('')}
+        </div>
+
+        <!-- Practice Actions -->
+        <div class="practice-actions-bar">
+          <div class="practice-btn-group">
+            <button type="button" class="practice-action-btn practice-btn-secondary" onclick="resetPracticeState(); renderReadingAnalysisScreen();">
+              ↺ Làm lại
+            </button>
+            ${withHint ? `
+            <button type="button" class="practice-action-btn practice-btn-secondary" onclick="hintPracticeBuilder()">
+              💡 Gợi ý
+            </button>
+            ` : ''}
+          </div>
+
+          <button type="button" class="practice-action-btn practice-btn-primary" onclick="${checkFn}()">
+            ${checkLabel}
+          </button>
+        </div>
+
+        ${renderPracticeFeedbackHtml()}`;
+}
+
 function renderPracticeFeedbackHtml() {
   if (!practiceFeedback) return '<div id="practiceResultFeedback"></div>';
   return `
@@ -1102,43 +1132,15 @@ function renderPracticePanelsHtml(entry) {
           <div class="practice-hint-text">Bấm chọn khối từ để xếp theo thứ tự ngữ pháp đúng</div>
         </div>
 
-        <!-- Target Slots -->
-        <div class="practice-slots-area ${practiceSolved ? 'is-correct' : ''}" id="practiceSlotsArea">
-          ${practiceBuilderSlots.length === 0 ? `
-            <span class="practice-empty-placeholder">Bấm chọn các khối từ bên dưới theo trật tự câu đúng...</span>
-          ` : practiceBuilderSlots.map((chunk, i) => `
-            <button type="button" class="builder-tile slot-tile" onclick="removeFromSlots(${i})">
-              ${chunk}
-            </button>
-          `).join('')}
-        </div>
-
-        <!-- Available Bank -->
-        <div class="practice-bank-area" id="practiceBankArea">
-          ${practiceBuilderBank.map((chunk, i) => `
-            <button type="button" class="builder-tile" onclick="moveToSlots(${i})">
-              ${chunk}
-            </button>
-          `).join('')}
-        </div>
-
-        <!-- Practice Actions -->
-        <div class="practice-actions-bar">
-          <div class="practice-btn-group">
-            <button type="button" class="practice-action-btn practice-btn-secondary" onclick="resetPracticeState(); renderReadingAnalysisScreen();">
-              ↺ Làm lại
-            </button>
-            <button type="button" class="practice-action-btn practice-btn-secondary" onclick="hintPracticeBuilder()">
-              💡 Gợi ý
-            </button>
-          </div>
-
-          <button type="button" class="practice-action-btn practice-btn-primary" onclick="checkPracticeBuilder()">
-            Kiểm tra đáp án
-          </button>
-        </div>
-
-        ${renderPracticeFeedbackHtml()}
+        ${renderPracticeBuilderHtml({
+          placeholder: 'Bấm chọn các khối từ bên dưới theo trật tự câu đúng...',
+          tileClass: '',
+          bankClass: '',
+          tileHtml: chunk => chunk,
+          withHint: true,
+          checkFn: 'checkPracticeBuilder',
+          checkLabel: 'Kiểm tra đáp án',
+        })}
       </div>
     `;
   }
@@ -1195,40 +1197,15 @@ function renderPracticePanelsHtml(entry) {
           <div class="practice-hint-text">Chọn thứ tự các câu để tạo thành đoạn văn logic</div>
         </div>
 
-        <!-- Target Slots -->
-        <div class="practice-slots-area ${practiceSolved ? 'is-correct' : ''}" id="practiceSlotsArea">
-          ${practiceBuilderSlots.length === 0 ? `
-            <span class="practice-empty-placeholder">Bấm chọn các vế câu A, B, C theo thứ tự đúng...</span>
-          ` : practiceBuilderSlots.map((item, i) => `
-            <button type="button" class="builder-tile slot-tile logic-tile" onclick="removeFromSlots(${i})">
-              <strong>${item.key}.</strong> ${item.text}
-            </button>
-          `).join('')}
-        </div>
-
-        <!-- Available Bank -->
-        <div class="practice-bank-area logic-bank-area" id="practiceBankArea">
-          ${practiceBuilderBank.map((item, i) => `
-            <button type="button" class="builder-tile logic-tile" onclick="moveToSlots(${i})">
-              <strong>${item.key}.</strong> ${item.text}
-            </button>
-          `).join('')}
-        </div>
-
-        <!-- Practice Actions -->
-        <div class="practice-actions-bar">
-          <div class="practice-btn-group">
-            <button type="button" class="practice-action-btn practice-btn-secondary" onclick="resetPracticeState(); renderReadingAnalysisScreen();">
-              ↺ Làm lại
-            </button>
-          </div>
-
-          <button type="button" class="practice-action-btn practice-btn-primary" onclick="checkPracticeLogicOrder()">
-            Kiểm tra thứ tự
-          </button>
-        </div>
-
-        ${renderPracticeFeedbackHtml()}
+        ${renderPracticeBuilderHtml({
+          placeholder: 'Bấm chọn các vế câu A, B, C theo thứ tự đúng...',
+          tileClass: ' logic-tile',
+          bankClass: ' logic-bank-area',
+          tileHtml: item => `<strong>${item.key}.</strong> ${item.text}`,
+          withHint: false,
+          checkFn: 'checkPracticeLogicOrder',
+          checkLabel: 'Kiểm tra thứ tự',
+        })}
       </div>
     `;
   }

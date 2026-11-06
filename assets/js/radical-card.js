@@ -249,15 +249,7 @@ function openRadicalInCards(groupIndex, itemIndexInGroup) {
 }
 
 function toggleRadicalTransferPanel(forceOpen) {
-  const panel = document.getElementById('radicalTransferPanel');
-  const button = document.getElementById('radicalTransferToggle');
-  if (!panel) return;
-  const willOpen = typeof forceOpen === 'boolean' ? forceOpen : panel.hidden;
-  panel.hidden = !willOpen;
-  if (button) {
-    button.setAttribute('aria-expanded', String(willOpen));
-    button.classList.toggle('on', willOpen);
-  }
+  toggleDisclosurePanel('radicalTransferPanel', 'radicalTransferToggle', forceOpen);
 }
 
 function radicalRelationLabel(type) {
@@ -411,7 +403,7 @@ function advanceAfterRadicalMark(previousItemIndex) {
   renderRadicalCard('fade');
 }
 function shuffleRadicalDeck() {
-  shuffleArray(radicalOrder);
+  shuffleInPlace(radicalOrder);
   setRadicalFilter(radicalCurrentFilter);
 }
 function toggleRadicalPinyin() {

@@ -172,21 +172,6 @@ function renderWordCompanion(word) {
   panel.innerHTML = html || '<div class="companion-empty">Đang cập nhật thêm ví dụ và từ liên quan cho từ này.</div>';
 }
 
-function jumpToWordByIndex(wordIndex) {
-  if (wordIndex < 0 || !Array.isArray(WORDS) || wordIndex >= WORDS.length) return;
-  let filteredIndex = filteredOrder.indexOf(wordIndex);
-  if (filteredIndex < 0) {
-    currentFilter = 'all';
-    filteredOrder = order.slice();
-    renderFilters();
-    filteredIndex = filteredOrder.indexOf(wordIndex);
-  }
-  if (filteredIndex >= 0) {
-    idx = filteredIndex;
-    render('fade');
-  }
-}
-
 function initWordCompanion() {
   const mount = document.getElementById('workstationRight') || document.getElementById('screenCards');
   if (!mount) return;

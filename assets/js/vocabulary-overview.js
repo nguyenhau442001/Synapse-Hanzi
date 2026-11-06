@@ -213,10 +213,7 @@ function openWordInCards(wordIndex) {
   if (WORDS[wordIndex] && typeof preloadSingleWordIllustration === 'function') {
     preloadSingleWordIllustration(WORDS[wordIndex], 'high');
   }
-  currentFilter = 'all';
-  filteredOrder = order.slice();
-  const position = filteredOrder.indexOf(wordIndex);
-  idx = position >= 0 ? position : 0;
+  showAllWordsAt(wordIndex);
   renderFilters();
   setViewMode('cards');
   render('fade');

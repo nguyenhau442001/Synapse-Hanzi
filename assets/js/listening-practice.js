@@ -7,20 +7,7 @@ const ListeningPractice = (function() {
   // ---------------------------------------------------------------------------
   // Data State
   // ---------------------------------------------------------------------------
-  const AVAILABLE_EXAMS = [
-    { id: 'H41001', name: 'Đề 1 (H41001)' },
-    { id: 'H41002', name: 'Đề 2 (H41002)' },
-    { id: 'H41003', name: 'Đề 3 (H41003)' },
-    { id: 'H41004', name: 'Đề 4 (H41004)' },
-    { id: 'H41005', name: 'Đề 5 (H41005)' },
-    { id: 'H41006', name: 'Đề 6 (H41006)' },
-    { id: 'H41007', name: 'Đề 7 (H41007)' },
-    { id: 'H41008', name: 'Đề 8 (H41008)' },
-    { id: 'H41009', name: 'Đề 9 (H41009)' },
-    { id: 'H41010', name: 'Đề 10 (H41010)' },
-    { id: 'H41011', name: 'Đề 11 (H41011)' },
-    { id: 'H41012', name: 'Đề 12 (H41012)' }
-  ];
+  const AVAILABLE_EXAMS = HSK4_MOCK_EXAMS;
 
   let examData = null;
   let currentExamId = 'H41001';
@@ -850,14 +837,7 @@ const ListeningPractice = (function() {
           <!-- Primary Play/Pause Button -->
           <button type="button" class="listening-play-primary-btn ${isPlayingFull ? 'is-playing' : ''}"
             onclick="ListeningPractice.togglePlayFullQuestion()" aria-label="${isPlayingFull ? 'Tạm dừng' : 'Nghe đoạn này'}">
-            ${isPlayingFull ? `
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
-              <span class="listening-playing-waves" aria-hidden="true"><span></span><span></span><span></span></span>
-              <span>Tạm dừng</span>
-            ` : `
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              <span>Nghe đoạn này</span>
-            `}
+            ${primaryPlayButtonInner(isPlayingFull)}
           </button>
 
           <!-- Right Column: Seek track and time readout -->
@@ -877,20 +857,26 @@ const ListeningPractice = (function() {
     `;
   }
 
+  // Play [startMs, endMs] as the learner's active segment (full question or a
+  // sentence id); the play buttons reset when it finishes.
+  function playLearnerSegment(segmentId, startMs, endMs) {
+    learnerState.activePlayingSegment = segmentId;
+    playSegment(startMs, endMs, {
+      loop: learnerState.loop,
+      onEnd: () => {
+        learnerState.activePlayingSegment = null;
+        updatePlaybackUI();
+      }
+    });
+  }
+
   function togglePlayFullQuestion() {
     if (learnerState.activePlayingSegment === 'full_question') {
       stopAudio();
     } else {
       const seg = currentQuestion.segments.full_question;
       if (!seg || seg.start_ms == null) return;
-      learnerState.activePlayingSegment = 'full_question';
-      playSegment(seg.start_ms, seg.end_ms, {
-        loop: learnerState.loop,
-        onEnd: () => {
-          learnerState.activePlayingSegment = null;
-          updatePlaybackUI();
-        }
-      });
+      playLearnerSegment('full_question', seg.start_ms, seg.end_ms);
     }
     updatePlaybackUI();
   }
@@ -923,14 +909,7 @@ const ListeningPractice = (function() {
         }
       }
 
-      learnerState.activePlayingSegment = sentenceId;
-      playSegment(startMs, endMs, {
-        loop: learnerState.loop,
-        onEnd: () => {
-          learnerState.activePlayingSegment = null;
-          updatePlaybackUI();
-        }
-      });
+      playLearnerSegment(sentenceId, startMs, endMs);
     }
     updatePlaybackUI();
   }
@@ -1035,14 +1014,7 @@ const ListeningPractice = (function() {
                     onclick="ListeningPractice.togglePlaySentence('${evidenceSentenceId}')"
                     title="${isEvidencePlaying ? 'Tạm dừng câu này' : 'Nghe câu này'}"
                     aria-label="${isEvidencePlaying ? 'Tạm dừng câu này' : 'Nghe câu này'}">
-                    ${isEvidencePlaying ? `
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
-                      <span class="listening-playing-waves" aria-hidden="true"><span></span><span></span><span></span></span>
-                      <span>Đang phát</span>
-                    ` : `
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 19 12 6 20 6 4"/></svg>
-                      <span>Nghe câu này</span>
-                    `}
+                    ${evidencePlayButtonInner(isEvidencePlaying)}
                   </button>
                 ` : ''}
                 <div class="listening-evidence-zh" lang="zh-CN">${highlightEvidenceInSentence(evidenceZhText, q.evidence ? q.evidence.zh : '')}</div>
@@ -1115,12 +1087,7 @@ const ListeningPractice = (function() {
                   onclick="ListeningPractice.togglePlaySentence('${s.id}')"
                   ${!hasValidTime ? 'disabled title="Chưa có mốc thời gian"' : `title="${isPlayingThis ? 'Tạm dừng' : 'Nghe câu này'} (${((s.end_ms - s.start_ms)/1000).toFixed(1)}s)"`}
                   aria-label="${isPlayingThis ? 'Tạm dừng' : 'Nghe câu này'}">
-                  ${isPlayingThis ? `
-                    <span class="listening-playing-waves" aria-hidden="true"><span></span><span></span><span></span></span>
-                    <svg class="listening-pause-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
-                  ` : `
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 19 12 6 20 6 4"/></svg>
-                  `}
+                  ${rowPlayButtonInner(isPlayingThis)}
                 </button>
                 <div class="listening-row-content">
                   <div class="listening-row-zh" lang="zh-CN">${highlightEvidenceInSentence(s.zh, q.evidence ? q.evidence.zh : '')}</div>
@@ -1318,13 +1285,7 @@ const ListeningPractice = (function() {
         <div class="listening-preview-controls">
           <button type="button" class="listening-preview-btn ${editorState.previewPlaying ? 'is-playing' : ''}"
             onclick="ListeningPractice.togglePreviewSelectedSegment()">
-            ${editorState.previewPlaying ? `
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
-              <span>Dừng phát thử</span>
-            ` : `
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              <span>Phát thử đoạn đã chọn (Preview)</span>
-            `}
+            ${previewButtonInner(editorState.previewPlaying)}
           </button>
           <div class="listening-duration-readout">
             Độ dài đoạn: <strong>${currentSeg && currentSeg.start_ms != null && currentSeg.end_ms != null ? ((currentSeg.end_ms - currentSeg.start_ms) / 1000).toFixed(3) + 's' : '--'}</strong>
@@ -1634,6 +1595,51 @@ const ListeningPractice = (function() {
   }
 
   // ---------------------------------------------------------------------------
+  // Play/pause button bodies — shared by the initial render and updatePlaybackUI
+  // ---------------------------------------------------------------------------
+  const PLAYING_WAVES = '<span class="listening-playing-waves" aria-hidden="true"><span></span><span></span><span></span></span>';
+
+  function pauseIconSvg(size, { rounded = true, className = '' } = {}) {
+    const rx = rounded ? ' rx="1"' : '';
+    const cls = className ? ` class="${className}"` : '';
+    return `<svg${cls} width="${size}" height="${size}" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"${rx}/><rect x="14" y="4" width="4" height="16"${rx}/></svg>`;
+  }
+
+  function playIconSvg(size, points = '5 3 19 12 5 21 5 3') {
+    return `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="currentColor"><polygon points="${points}"/></svg>`;
+  }
+
+  function primaryPlayButtonInner(isPlaying) {
+    return isPlaying
+      ? `${pauseIconSvg(15)} ${PLAYING_WAVES} <span>Tạm dừng</span>`
+      : `${playIconSvg(15)} <span>Nghe đoạn này</span>`;
+  }
+
+  function evidencePlayButtonInner(isPlaying) {
+    return isPlaying
+      ? `${pauseIconSvg(13)} ${PLAYING_WAVES} <span>Đang phát</span>`
+      : `${playIconSvg(13, '6 4 19 12 6 20 6 4')} <span>Nghe câu này</span>`;
+  }
+
+  function rowPlayButtonInner(isPlaying) {
+    return isPlaying
+      ? `${PLAYING_WAVES} ${pauseIconSvg(14, { className: 'listening-pause-icon' })}`
+      : playIconSvg(14, '6 4 19 12 6 20 6 4');
+  }
+
+  function previewButtonInner(isPlaying) {
+    return isPlaying
+      ? `${pauseIconSvg(13, { rounded: false })} <span>Dừng phát thử</span>`
+      : `${playIconSvg(13)} <span>Phát thử đoạn đã chọn (Preview)</span>`;
+  }
+
+  // Sentence buttons carry their id in onclick="...togglePlaySentence('<id>')".
+  function isButtonSentencePlaying(btn) {
+    const match = (btn.getAttribute('onclick') || '').match(/'([^']+)'/);
+    return Boolean(match && learnerState.activePlayingSegment === match[1]);
+  }
+
+  // ---------------------------------------------------------------------------
   // UI Helpers & Progress Sync
   // ---------------------------------------------------------------------------
   function updatePlaybackUI() {
@@ -1643,14 +1649,7 @@ const ListeningPractice = (function() {
     if (playBtn) {
       playBtn.classList.toggle('is-playing', isPlayingFull);
       playBtn.setAttribute('aria-label', isPlayingFull ? 'Tạm dừng' : 'Nghe đoạn này');
-      playBtn.innerHTML = isPlayingFull ? `
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
-        <span class="listening-playing-waves" aria-hidden="true"><span></span><span></span><span></span></span>
-        <span>Tạm dừng</span>
-      ` : `
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-        <span>Nghe đoạn này</span>
-      `;
+      playBtn.innerHTML = primaryPlayButtonInner(isPlayingFull);
     }
 
     if (!activeSegment && currentMode === 'learner') {
@@ -1669,19 +1668,11 @@ const ListeningPractice = (function() {
     // 2. Sentence replay buttons in transcript rows
     document.querySelectorAll('.listening-row-play-btn').forEach((btn) => {
       const row = btn.closest('.listening-transcript-row');
-      const onclickAttr = btn.getAttribute('onclick') || '';
-      const match = onclickAttr.match(/'([^']+)'/);
-      const sentenceId = match ? match[1] : null;
-      const isPlaying = sentenceId && learnerState.activePlayingSegment === sentenceId;
+      const isPlaying = isButtonSentencePlaying(btn);
       btn.classList.toggle('is-playing', Boolean(isPlaying));
       btn.setAttribute('aria-label', isPlaying ? 'Tạm dừng' : 'Nghe câu này');
       btn.setAttribute('title', isPlaying ? 'Tạm dừng' : 'Nghe câu này');
-      btn.innerHTML = isPlaying ? `
-        <span class="listening-playing-waves" aria-hidden="true"><span></span><span></span><span></span></span>
-        <svg class="listening-pause-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
-      ` : `
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 19 12 6 20 6 4"/></svg>
-      `;
+      btn.innerHTML = rowPlayButtonInner(isPlaying);
       if (row) {
         row.classList.toggle('is-playing-row', Boolean(isPlaying));
       }
@@ -1690,34 +1681,18 @@ const ListeningPractice = (function() {
     // 2b. Evidence replay button in feedback
     const evidenceBtn = document.querySelector('.listening-evidence-play-btn');
     if (evidenceBtn) {
-      const onclickAttr = evidenceBtn.getAttribute('onclick') || '';
-      const match = onclickAttr.match(/'([^']+)'/);
-      const sentenceId = match ? match[1] : null;
-      const isPlaying = sentenceId && learnerState.activePlayingSegment === sentenceId;
+      const isPlaying = isButtonSentencePlaying(evidenceBtn);
       evidenceBtn.classList.toggle('is-playing', Boolean(isPlaying));
       evidenceBtn.setAttribute('title', isPlaying ? 'Tạm dừng câu này' : 'Nghe câu này');
       evidenceBtn.setAttribute('aria-label', isPlaying ? 'Tạm dừng câu này' : 'Nghe câu này');
-      evidenceBtn.innerHTML = isPlaying ? `
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
-        <span class="listening-playing-waves" aria-hidden="true"><span></span><span></span><span></span></span>
-        <span>Đang phát</span>
-      ` : `
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 19 12 6 20 6 4"/></svg>
-        <span>Nghe câu này</span>
-      `;
+      evidenceBtn.innerHTML = evidencePlayButtonInner(isPlaying);
     }
 
     // 3. Editor Preview Button
     const prevBtn = document.querySelector('.listening-preview-btn');
     if (prevBtn) {
       prevBtn.classList.toggle('is-playing', editorState.previewPlaying);
-      prevBtn.innerHTML = editorState.previewPlaying ? `
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
-        <span>Dừng phát thử</span>
-      ` : `
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-        <span>Phát thử đoạn đã chọn (Preview)</span>
-      `;
+      prevBtn.innerHTML = previewButtonInner(editorState.previewPlaying);
     }
 
     updateEditorTimelineReadout();
@@ -1752,20 +1727,19 @@ const ListeningPractice = (function() {
       currentMs = fullSeg.start_ms;
     }
     const targetMs = Math.max(fullSeg.start_ms, Math.min(fullSeg.end_ms, currentMs + deltaSec * 1000));
+    seekFullQuestion(targetMs);
+    updatePlaybackProgressUI(targetMs);
+  }
+
+  // Jump to targetMs inside the full-question segment, starting playback of
+  // that segment if it is not the one already playing.
+  function seekFullQuestion(targetMs) {
     if (activeSegment && learnerState.activePlayingSegment === 'full_question') {
       audio.currentTime = targetMs / 1000;
-    } else {
-      playSegment(targetMs, fullSeg.end_ms, {
-        loop: learnerState.loop,
-        onEnd: () => {
-          learnerState.activePlayingSegment = null;
-          updatePlaybackUI();
-        }
-      });
-      learnerState.activePlayingSegment = 'full_question';
-      updatePlaybackUI();
+      return;
     }
-    updatePlaybackProgressUI(targetMs);
+    playLearnerSegment('full_question', targetMs, currentQuestion.segments.full_question.end_ms);
+    updatePlaybackUI();
   }
 
   function attachDynamicListeners() {
@@ -1779,19 +1753,7 @@ const ListeningPractice = (function() {
         const segDuration = fullSeg.end_ms - fullSeg.start_ms;
         const targetMs = fullSeg.start_ms + pos * segDuration;
 
-        if (activeSegment && learnerState.activePlayingSegment === 'full_question') {
-          audio.currentTime = targetMs / 1000;
-        } else {
-          playSegment(targetMs, fullSeg.end_ms, {
-            loop: learnerState.loop,
-            onEnd: () => {
-              learnerState.activePlayingSegment = null;
-              updatePlaybackUI();
-            }
-          });
-          learnerState.activePlayingSegment = 'full_question';
-          updatePlaybackUI();
-        }
+        seekFullQuestion(targetMs);
       };
 
       track.onkeydown = (e) => {

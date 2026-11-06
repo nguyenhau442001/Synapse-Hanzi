@@ -402,10 +402,7 @@ function togglePinyin() {
   render();
 }
 function shuffleDeck() {
-  for (let i = order.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [order[i], order[j]] = [order[j], order[i]];
-  }
+  shuffleInPlace(order);
   savePrefs();
   setFilter(currentFilter);
 }
@@ -432,15 +429,7 @@ function resetProgress() {
   setFilter(currentFilter);
 }
 function toggleTransferPanel(forceOpen) {
-  const panel = document.getElementById('transferPanel');
-  const button = document.getElementById('transferToggle');
-  if (!panel) return;
-  const willOpen = typeof forceOpen === 'boolean' ? forceOpen : panel.hidden;
-  panel.hidden = !willOpen;
-  if (button) {
-    button.setAttribute('aria-expanded', String(willOpen));
-    button.classList.toggle('on', willOpen);
-  }
+  toggleDisclosurePanel('transferPanel', 'transferToggle', forceOpen);
 }
 
 document.addEventListener('click', event => {

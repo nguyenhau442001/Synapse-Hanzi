@@ -3,19 +3,6 @@
 var sidebarSearchIndex = null;
 var sidebarSearchIndexPromise = null;
 
-const TONE_MARKS = {
-  'ā':'a','á':'a','ǎ':'a','à':'a',
-  'ē':'e','é':'e','ě':'e','è':'e',
-  'ī':'i','í':'i','ǐ':'i','ì':'i',
-  'ō':'o','ó':'o','ǒ':'o','ò':'o',
-  'ū':'u','ú':'u','ǔ':'u','ù':'u',
-  'ǖ':'v','ǘ':'v','ǚ':'v','ǜ':'v','ü':'v',
-};
-
-function stripTones(s) {
-  return String(s || '').toLowerCase().replace(/[āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜü]/g, ch => TONE_MARKS[ch] || ch);
-}
-
 function formatSearchExample(text) {
   if (!text) return '';
   return escapeHtml(text)
@@ -59,7 +46,7 @@ function buildSidebarSearchIndex() {
           example_vi: w.example_vi || '',
           levelKey: src.key,
           level: src.label,
-          pinyinStripped: stripTones(w.pinyin),
+          pinyinStripped: stripPinyinTones(w.pinyin),
           meaningLower: String(w.meaning || '').toLowerCase(),
         })))
         .catch(() => []);
@@ -76,7 +63,7 @@ function searchSidebarIndex(query) {
   const index = sidebarSearchIndex || (typeof window !== 'undefined' ? window.sidebarSearchIndex : null);
   if (!index || !query.trim()) return [];
   const q = query.trim().toLowerCase();
-  const qNorm = typeof normalizeSearchText === 'function' ? normalizeSearchText(query) : stripTones(query);
+  const qNorm = typeof normalizeSearchText === 'function' ? normalizeSearchText(query) : stripPinyinTones(query);
   const qSpaceless = qNorm.replace(/[\s\-_'".]+/g, '');
   const qDigitsStripped = qSpaceless.replace(/[0-5]/g, '');
 

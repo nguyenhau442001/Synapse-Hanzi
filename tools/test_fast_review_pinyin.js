@@ -3,6 +3,7 @@ const fs = require('fs');
 const vm = require('vm');
 const path = require('path');
 
+const utilsCode = fs.readFileSync(path.join(__dirname, '../assets/js/utils.js'), 'utf8');
 const fastReviewCode = fs.readFileSync(path.join(__dirname, '../assets/js/fast-review.js'), 'utf8');
 
 // Provide mock environment to execute fast-review.js in vm context
@@ -26,6 +27,7 @@ const sandbox = {
 sandbox.window = sandbox;
 
 vm.createContext(sandbox);
+vm.runInContext(utilsCode, sandbox);
 vm.runInContext(fastReviewCode, sandbox);
 
 const pinyinLooseMatch = sandbox.pinyinLooseMatch;

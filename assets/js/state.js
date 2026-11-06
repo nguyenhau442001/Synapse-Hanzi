@@ -101,6 +101,13 @@ if (typeof document !== 'undefined') {
   if (document.body) document.body.classList.toggle('hide-illustrations', !showIllustration);
 }
 let currentFilter = 'all';
+
+// Clear the deck filter and point idx at WORDS[wordIndex] (or the first card).
+function showAllWordsAt(wordIndex) {
+  currentFilter = 'all';
+  filteredOrder = order.slice();
+  idx = Math.max(0, filteredOrder.indexOf(wordIndex));
+}
 let transitionTimer = null;
 let celebrationShown = false;
 let cachedVoices = [];

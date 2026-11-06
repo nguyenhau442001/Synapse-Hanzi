@@ -11,27 +11,18 @@ async function ensureGuessWordBankLoaded() {
   guessWordBankData = await res.json();
 }
 
-function shuffleGuessWordArray(arr) {
-  const copy = arr.slice();
-  for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[j]] = [copy[j], copy[i]];
-  }
-  return copy;
-}
-
 async function startGuessWordGame() {
   document.getElementById('guessWordOptions').innerHTML = '<div class="loading-text">Đang tải dữ liệu...</div>';
 
   await ensureGuessWordBankLoaded();
-  guessWordOrder = shuffleGuessWordArray(Array.from({ length: guessWordBankData.length }, (_, i) => i));
+  guessWordOrder = shuffledCopy(Array.from({ length: guessWordBankData.length }, (_, i) => i));
   guessWordIdx = 0;
   loadNextGuessWordRound();
 }
 
 function loadNextGuessWordRound() {
   if (guessWordIdx >= guessWordOrder.length) {
-    guessWordOrder = shuffleGuessWordArray(guessWordOrder);
+    guessWordOrder = shuffledCopy(guessWordOrder);
     guessWordIdx = 0;
   }
   const entry = guessWordBankData[guessWordOrder[guessWordIdx]];
@@ -48,10 +39,10 @@ function loadNextGuessWordRound() {
     levelBadge.textContent = (entry.source || 'HSK 1').toUpperCase();
   }
 
-  const distractors = shuffleGuessWordArray(
+  const distractors = shuffledCopy(
     guessWordBankData.filter(w => w.hanzi !== entry.hanzi)
   ).slice(0, 3);
-  const options = shuffleGuessWordArray([entry, ...distractors]);
+  const options = shuffledCopy([entry, ...distractors]);
 
   const frameEl = document.querySelector('.guess-word-clue-frame');
   const emojiEl = document.getElementById('guessWordEmoji');

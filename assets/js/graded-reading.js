@@ -36,13 +36,17 @@ const GradedReading = (function() {
   }
 
   // Audio Speech Helpers
+  function clearPlaying() {
+    currentlyPlayingSentenceId = null;
+    updateSentenceAudioUI();
+  }
+
   function speakSentence(text, sentId) {
     if (!text) return;
     const isPlaying = currentlyPlayingSentenceId === sentId;
     if (typeof stopSpeaking === 'function') stopSpeaking();
     if (isPlaying) {
-      currentlyPlayingSentenceId = null;
-      updateSentenceAudioUI();
+      clearPlaying();
       return;
     }
     currentlyPlayingSentenceId = sentId;
@@ -52,45 +56,16 @@ const GradedReading = (function() {
     if (typeof speakChinese === 'function') {
       speakChinese(text, {
         rate,
-        onEnd: () => {
-          currentlyPlayingSentenceId = null;
-          updateSentenceAudioUI();
-        },
-        onError: () => {
-          currentlyPlayingSentenceId = null;
-          updateSentenceAudioUI();
-        }
+        onEnd: clearPlaying,
+        onError: clearPlaying
       });
     }
   }
 
   function speakFullStory() {
     if (!activeStory || !activeStory.sentences) return;
-    const isPlaying = currentlyPlayingSentenceId === 'full-story';
-    if (typeof stopSpeaking === 'function') stopSpeaking();
-    if (isPlaying) {
-      currentlyPlayingSentenceId = null;
-      updateSentenceAudioUI();
-      return;
-    }
-    currentlyPlayingSentenceId = 'full-story';
-    updateSentenceAudioUI();
-
     const fullZh = activeStory.sentences.map(s => s.zh || s.text || '').filter(Boolean).join(' ');
-    const rate = typeof exampleSpeechSpeed !== 'undefined' ? exampleSpeechSpeed : 0.8;
-    if (typeof speakChinese === 'function') {
-      speakChinese(fullZh, {
-        rate,
-        onEnd: () => {
-          currentlyPlayingSentenceId = null;
-          updateSentenceAudioUI();
-        },
-        onError: () => {
-          currentlyPlayingSentenceId = null;
-          updateSentenceAudioUI();
-        }
-      });
-    }
+    speakSentence(fullZh, 'full-story');
   }
 
   function updateSentenceAudioUI() {

@@ -3,18 +3,7 @@
 // Official Hanban HSK 4 mock exams (H41001 to H41012 - 120 authentic questions)
 
 const AVAILABLE_SENTENCE_EXAMS = [
-  { id: 'H41001', name: 'Đề 1 (H41001)' },
-  { id: 'H41002', name: 'Đề 2 (H41002)' },
-  { id: 'H41003', name: 'Đề 3 (H41003)' },
-  { id: 'H41004', name: 'Đề 4 (H41004)' },
-  { id: 'H41005', name: 'Đề 5 (H41005)' },
-  { id: 'H41006', name: 'Đề 6 (H41006)' },
-  { id: 'H41007', name: 'Đề 7 (H41007)' },
-  { id: 'H41008', name: 'Đề 8 (H41008)' },
-  { id: 'H41009', name: 'Đề 9 (H41009)' },
-  { id: 'H41010', name: 'Đề 10 (H41010)' },
-  { id: 'H41011', name: 'Đề 11 (H41011)' },
-  { id: 'H41012', name: 'Đề 12 (H41012)' },
+  ...HSK4_MOCK_EXAMS,
   { id: 'all', name: 'Tất cả 12 đề (Luyện tập ngẫu nhiên)' }
 ];
 
@@ -50,15 +39,6 @@ async function ensureSentenceBankLoaded() {
   if (!res.ok) throw new Error('Không tải được cơ sở dữ liệu đề thi HSK 4.');
   sentenceBankData = await res.json();
   return sentenceBankData;
-}
-
-function shuffleSentenceArray(arr) {
-  const copy = arr.slice();
-  for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[j]] = [copy[j], copy[i]];
-  }
-  return copy;
 }
 
 function getQuestionsForCurrentExam() {
@@ -238,10 +218,10 @@ function loadCurrentSentenceQuestion() {
     sentenceGameBankTokens = [];
   } else {
     // Shuffle for user practice
-    let shuffled = shuffleSentenceArray(tokens);
+    let shuffled = shuffledCopy(tokens);
     // Ensure initial shuffle is not accidentally already the solved order
     if (shuffled.length > 2 && shuffled.map(t => t.tok).join('') === (entry.tokens || []).join('')) {
-      shuffled = shuffleSentenceArray(tokens);
+      shuffled = shuffledCopy(tokens);
     }
     sentenceGameBankTokens = shuffled;
     sentenceGameSlots = [];
@@ -265,11 +245,7 @@ function loadCurrentSentenceQuestion() {
   }
 
   // Clear feedback & result card if not yet solved
-  const feedbackEl = document.getElementById('sentenceGameFeedback');
-  if (feedbackEl) {
-    feedbackEl.textContent = '';
-    feedbackEl.className = 'sentence-game-feedback';
-  }
+  clearSentenceGameFeedback();
 
   const resultCard = document.getElementById('sentenceResultCard');
   const actionsEl = document.getElementById('sentenceGameActions');
@@ -385,11 +361,7 @@ function removeSentenceGameSlot(slotIdx) {
   sentenceGameBankTokens.push(token);
   renderSentenceGameBoard();
 
-  const feedbackEl = document.getElementById('sentenceGameFeedback');
-  if (feedbackEl) {
-    feedbackEl.textContent = '';
-    feedbackEl.className = 'sentence-game-feedback';
-  }
+  clearSentenceGameFeedback();
 }
 
 function resetSentenceGameSlots() {
@@ -398,6 +370,10 @@ function resetSentenceGameSlots() {
   sentenceGameSlots = [];
   renderSentenceGameBoard();
 
+  clearSentenceGameFeedback();
+}
+
+function clearSentenceGameFeedback() {
   const feedbackEl = document.getElementById('sentenceGameFeedback');
   if (feedbackEl) {
     feedbackEl.textContent = '';
