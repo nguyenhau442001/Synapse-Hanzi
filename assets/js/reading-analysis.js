@@ -257,10 +257,7 @@ function revealExplanationDirectly() {
   const entry = readingFilteredList[readingCurrentIndex];
   if (entry) playReadingSentenceAudio(entry);
   renderReadingAnalysisScreen();
-  setTimeout(() => {
-    const sheet = document.getElementById('readingExplanationSheet');
-    if (sheet) sheet.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }, 100);
+  scrollToReadingExplanation(100);
 }
 
 function toggleReadingSettingsMenu(e) {
@@ -1282,195 +1279,97 @@ function hintPracticeBuilder() {
   }
 }
 
+// --- Practice feedback banners -------------------------------------------------
+function practiceBanner(icon, messageHtml, actionsHtml = '') {
+  return `<div class="feedback-banner-content">
+    <span class="feedback-badge-icon">${icon}</span>
+    <div class="feedback-msg">${messageHtml}</div>
+    ${actionsHtml}
+  </div>`;
+}
+
+function scrollToReadingExplanation(delay) {
+  setTimeout(() => {
+    const sheet = document.getElementById('readingExplanationSheet');
+    if (sheet) sheet.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, delay);
+}
+
+function warnPracticeNotStarted(messageHtml) {
+  practiceFeedback = { type: 'warning', html: practiceBanner('⚠️', messageHtml) };
+  renderReadingAnalysisScreen();
+}
+
+function markPracticeCorrect(entry, messageHtml) {
+  practiceSolved = true;
+  readingExerciseState = 'reviewed';
+  practiceFeedback = {
+    type: 'success',
+    html: practiceBanner('🎉', messageHtml,
+      '<button type="button" class="feedback-cta-btn" onclick="nextReadingQuestion()">Câu tiếp theo →</button>')
+  };
+  playReadingSentenceAudio(entry);
+  renderReadingAnalysisScreen();
+  scrollToReadingExplanation(120);
+}
+
+function markPracticeWrong(messageHtml, revealLabel = 'Xem đáp án & giải thích', shakeSlots = true) {
+  practiceSolved = false;
+  practiceFeedback = {
+    type: 'error',
+    html: practiceBanner('❌', messageHtml, `<div class="feedback-actions">
+      <button type="button" class="feedback-retry-btn" onclick="retryPractice()">↺ Thử lại</button>
+      <button type="button" class="feedback-reveal-btn" onclick="revealExplanationDirectly()">${revealLabel}</button>
+    </div>`)
+  };
+  renderReadingAnalysisScreen();
+  const slotsArea = shakeSlots && document.getElementById('practiceSlotsArea');
+  if (slotsArea) {
+    slotsArea.classList.add('is-wrong');
+    setTimeout(() => slotsArea.classList.remove('is-wrong'), 450);
+  }
+}
+
 function checkPracticeBuilder() {
   const entry = readingFilteredList[readingCurrentIndex];
   if (!entry || !entry.practice || !entry.practice.target_chunks) return;
-
   if (practiceBuilderSlots.length === 0) {
-    practiceFeedback = {
-      type: 'warning',
-      html: `
-        <div class="feedback-banner-content">
-          <span class="feedback-badge-icon">⚠️</span>
-          <div class="feedback-msg">
-            <strong>Chưa xếp câu:</strong> Hãy bấm chọn các khối từ để ghép câu trước khi kiểm tra!
-          </div>
-        </div>
-      `
-    };
-    renderReadingAnalysisScreen();
+    warnPracticeNotStarted('<strong>Chưa xếp câu:</strong> Hãy bấm chọn các khối từ để ghép câu trước khi kiểm tra!');
     return;
   }
-
-  const userSentence = practiceBuilderSlots.join('');
-  const targetSentence = entry.practice.target_chunks.join('');
-
-  if (userSentence === targetSentence) {
-    practiceSolved = true;
-    readingExerciseState = 'reviewed';
-    practiceFeedback = {
-      type: 'success',
-      html: `
-        <div class="feedback-banner-content">
-          <span class="feedback-badge-icon">🎉</span>
-          <div class="feedback-msg">
-            <strong>Chính xác xuất sắc!</strong> Trật tự ngữ pháp hoàn toàn chuẩn xác.
-          </div>
-          <button type="button" class="feedback-cta-btn" onclick="nextReadingQuestion()">Câu tiếp theo →</button>
-        </div>
-      `
-    };
-    playReadingSentenceAudio(entry);
-    renderReadingAnalysisScreen();
-    setTimeout(() => {
-      const sheet = document.getElementById('readingExplanationSheet');
-      if (sheet) sheet.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 120);
+  if (practiceBuilderSlots.join('') === entry.practice.target_chunks.join('')) {
+    markPracticeCorrect(entry, '<strong>Chính xác xuất sắc!</strong> Trật tự ngữ pháp hoàn toàn chuẩn xác.');
   } else {
-    practiceSolved = false;
-    practiceFeedback = {
-      type: 'error',
-      html: `
-        <div class="feedback-banner-content">
-          <span class="feedback-badge-icon">❌</span>
-          <div class="feedback-msg">
-            <strong>Chưa đúng thứ tự:</strong> Hãy đối chiếu vị trí ngữ pháp hoặc thử lại!
-          </div>
-          <div class="feedback-actions">
-            <button type="button" class="feedback-retry-btn" onclick="retryPractice()">↺ Thử lại</button>
-            <button type="button" class="feedback-reveal-btn" onclick="revealExplanationDirectly()">Xem đáp án & giải thích</button>
-          </div>
-        </div>
-      `
-    };
-    renderReadingAnalysisScreen();
-    const slotsArea = document.getElementById('practiceSlotsArea');
-    if (slotsArea) {
-      slotsArea.classList.add('is-wrong');
-      setTimeout(() => slotsArea && slotsArea.classList.remove('is-wrong'), 450);
-    }
+    markPracticeWrong('<strong>Chưa đúng thứ tự:</strong> Hãy đối chiếu vị trí ngữ pháp hoặc thử lại!');
   }
 }
 
 function checkPracticeLogicOrder() {
   const entry = readingFilteredList[readingCurrentIndex];
   if (!entry || !entry.practice || !entry.practice.correct_order) return;
-
   if (practiceBuilderSlots.length === 0) {
-    practiceFeedback = {
-      type: 'warning',
-      html: `
-        <div class="feedback-banner-content">
-          <span class="feedback-badge-icon">⚠️</span>
-          <div class="feedback-msg">
-            <strong>Chưa chọn thứ tự:</strong> Hãy bấm chọn các câu A, B, C theo thứ tự trước khi kiểm tra!
-          </div>
-        </div>
-      `
-    };
-    renderReadingAnalysisScreen();
+    warnPracticeNotStarted('<strong>Chưa chọn thứ tự:</strong> Hãy bấm chọn các câu A, B, C theo thứ tự trước khi kiểm tra!');
     return;
   }
-
   const userOrder = practiceBuilderSlots.map(item => item.key).join('');
   const targetOrder = entry.practice.correct_order;
-
   if (userOrder === targetOrder) {
-    practiceSolved = true;
-    readingExerciseState = 'reviewed';
-    practiceFeedback = {
-      type: 'success',
-      html: `
-        <div class="feedback-banner-content">
-          <span class="feedback-badge-icon">🎉</span>
-          <div class="feedback-msg">
-            <strong>Chính xác! Thứ tự chuẩn: ${targetOrder}</strong>
-            <p>${entry.practice.explanation || entry.practice.hint || ''}</p>
-          </div>
-          <button type="button" class="feedback-cta-btn" onclick="nextReadingQuestion()">Câu tiếp theo →</button>
-        </div>
-      `
-    };
-    playReadingSentenceAudio(entry);
-    renderReadingAnalysisScreen();
-    setTimeout(() => {
-      const sheet = document.getElementById('readingExplanationSheet');
-      if (sheet) sheet.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 120);
+    markPracticeCorrect(entry, `<strong>Chính xác! Thứ tự chuẩn: ${targetOrder}</strong>
+            <p>${entry.practice.explanation || entry.practice.hint || ''}</p>`);
   } else {
-    practiceSolved = false;
-    practiceFeedback = {
-      type: 'error',
-      html: `
-        <div class="feedback-banner-content">
-          <span class="feedback-badge-icon">❌</span>
-          <div class="feedback-msg">
-            <strong>Chưa chính xác:</strong> Thứ tự "${userOrder}" chưa đúng logic của đoạn văn.
-          </div>
-          <div class="feedback-actions">
-            <button type="button" class="feedback-retry-btn" onclick="retryPractice()">↺ Thử lại</button>
-            <button type="button" class="feedback-reveal-btn" onclick="revealExplanationDirectly()">Xem đáp án & giải thích</button>
-          </div>
-        </div>
-      `
-    };
-    renderReadingAnalysisScreen();
-    const slotsArea = document.getElementById('practiceSlotsArea');
-    if (slotsArea) {
-      slotsArea.classList.add('is-wrong');
-      setTimeout(() => slotsArea && slotsArea.classList.remove('is-wrong'), 450);
-    }
+    markPracticeWrong(`<strong>Chưa chính xác:</strong> Thứ tự "${userOrder}" chưa đúng logic của đoạn văn.`);
   }
 }
 
 function selectClozeOption(word) {
   const entry = readingFilteredList[readingCurrentIndex];
   if (!entry || !entry.practice) return;
-
   practiceSelectedOption = word;
-  const p = entry.practice;
-  const targetWord = p.target_word || p.correct_answer || '';
-  const isCorrect = (word === targetWord);
-
-  if (isCorrect) {
-    practiceSolved = true;
-    readingExerciseState = 'reviewed';
-    practiceFeedback = {
-      type: 'success',
-      html: `
-        <div class="feedback-banner-content">
-          <span class="feedback-badge-icon">🎉</span>
-          <div class="feedback-msg">
-            <strong>Chính xác!</strong> Từ cần điền là <strong>${word}</strong>.
-          </div>
-          <button type="button" class="feedback-cta-btn" onclick="nextReadingQuestion()">Câu tiếp theo →</button>
-        </div>
-      `
-    };
-    playReadingSentenceAudio(entry);
-    renderReadingAnalysisScreen();
-    setTimeout(() => {
-      const sheet = document.getElementById('readingExplanationSheet');
-      if (sheet) sheet.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 120);
+  const targetWord = entry.practice.target_word || entry.practice.correct_answer || '';
+  if (word === targetWord) {
+    markPracticeCorrect(entry, `<strong>Chính xác!</strong> Từ cần điền là <strong>${word}</strong>.`);
   } else {
-    practiceSolved = false;
-    practiceFeedback = {
-      type: 'error',
-      html: `
-        <div class="feedback-banner-content">
-          <span class="feedback-badge-icon">❌</span>
-          <div class="feedback-msg">
-            <strong>Chưa chính xác.</strong> Đáp án đúng là <strong>${targetWord}</strong>.
-          </div>
-          <div class="feedback-actions">
-            <button type="button" class="feedback-retry-btn" onclick="retryPractice()">↺ Thử lại</button>
-            <button type="button" class="feedback-reveal-btn" onclick="revealExplanationDirectly()">Xem giải thích</button>
-          </div>
-        </div>
-      `
-    };
-    renderReadingAnalysisScreen();
+    markPracticeWrong(`<strong>Chưa chính xác.</strong> Đáp án đúng là <strong>${targetWord}</strong>.`, 'Xem giải thích', false);
   }
 }
 
