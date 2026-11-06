@@ -33,25 +33,26 @@ def test_study_help_modal_css_integrity():
 
 
 def test_study_help_modal_js_tabs():
-    js_path = ROOT / "assets" / "js" / "study-help-modal.js"
-    assert js_path.exists(), "study-help-modal.js file not found"
+    js_path = ROOT / "src" / "islands" / "StudyHelpModal.jsx"
+    assert js_path.exists(), "StudyHelpModal.jsx (Preact island) not found"
 
     content = js_path.read_text(encoding="utf-8")
 
     # Check presence of all 5 tabs
     expected_tabs = [
-        'data-tab="shortcuts"',
-        'data-tab="method"',
-        'data-tab="features"',
-        'data-tab="faq"',
-        'data-tab="about"'
+        "key: 'shortcuts'",
+        "key: 'method'",
+        "key: 'features'",
+        "key: 'faq'",
+        "key: 'about'"
     ]
     for tab in expected_tabs:
         assert tab in content, f"Missing tab trigger: {tab}"
 
     # Check presence of 'Giới thiệu' tab label
     assert "Giới thiệu" in content, "Missing 'Giới thiệu' tab label in navigation"
-    assert 'id="helpTabAbout"' in content, "Missing #helpTabAbout section container"
+    assert 'data-tab={key}' in content and 'id={panelId(tabKey)}' in content, "Tabs must map to data-tab buttons and #helpTab<Key> panels"
+    assert '<Panel tabKey="about">' in content, "Missing #helpTabAbout section container"
 
     # Check scrollIntoView behavior when tab is switched
     assert "scrollIntoView" in content, "switchStudyHelpTab must ensure active tab button is scrolled into view"

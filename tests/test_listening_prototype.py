@@ -176,7 +176,7 @@ def test_listening_polish_v112():
     css = (ROOT / "assets/css/listening-practice.css").read_text(encoding="utf-8")
     js = (ROOT / "assets/js/listening-practice.js").read_text(encoding="utf-8")
     html = (ROOT / "index.html").read_text(encoding="utf-8")
-    help_js = (ROOT / "assets/js/study-help-modal.js").read_text(encoding="utf-8")
+    help_js = (ROOT / "src/islands/StudyHelpModal.jsx").read_text(encoding="utf-8")
 
     # 1. Workspace width 900-1040px
     assert "max-width: 960px" in css, "Workspace width must be 960px (within 900-1040px range)"
@@ -211,7 +211,7 @@ def test_listening_polish_v112():
     assert "--listening-border-subtle: #ece5dc" in css
 
     # 8. Project info lives in the About modal (there is no page footer)
-    assert "helpTabAbout" in help_js, "Developer and project info must be available in About modal"
+    assert "<Panel tabKey=\"about\">" in help_js, "Developer and project info must be available in About modal"
 
     print("   ✓ All v1.1.2 UI polish requirements verified successfully!")
 

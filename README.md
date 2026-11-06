@@ -188,6 +188,13 @@ python3 -m http.server 8000
 ```
 Mở trình duyệt truy cập: **`http://localhost:8000/`** (hoặc `http://localhost:3000/` khi dùng Vite).
 
+### Preact islands trong `index.html`
+`index.html` (bản đang chạy thật) được chuyển dần sang Preact theo từng phần: mỗi "island" trong `src/islands/` render **đúng markup và class CSS cũ** nên giao diện không đổi. Bundle được commit sẵn để host tĩnh không cần build:
+```bash
+npm run build:islands   # build src/islands -> assets/js/preact/islands.js (commit file này)
+```
+Đã chuyển: modal Hướng dẫn & Trợ giúp (`StudyHelpModal.jsx`).
+
 ---
 
 ## 🔒 Lưu trữ & Bản sao tiến trình
