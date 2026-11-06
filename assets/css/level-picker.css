@@ -97,7 +97,12 @@
 /* Touch layouts: keep the dashboard buttons at least 44px tall. */
 
 @media (max-width: 767px) {
-  .learning-dashboard-header { align-items: center; flex-wrap: wrap; row-gap: 10px; }
+  .learning-dashboard-header {
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    margin-bottom: 8px;
+  }
 }
 
 .picker-controls {
