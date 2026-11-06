@@ -814,9 +814,7 @@ async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal = false
   // instead of delaying the first card.
   loadPrebuiltAudioManifest(level);
   try {
-    const res = await fetch(LEVELS[level].dataUrl);
-    if (!res.ok) throw new Error('fetch failed');
-    const words = await res.json();
+    const words = await fetchLevelWords(level);
     if (currentLevel !== level) return; // another level was picked while this one downloaded
     WORDS = words;
   } catch (e) {

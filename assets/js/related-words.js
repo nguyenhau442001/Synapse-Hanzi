@@ -79,12 +79,8 @@
           : ['hsk1', 'hsk2', 'hsk3', 'hsk4', 'hsk5', 'hsk6'];
 
         const vocabPromises = levelKeys.map(async key => {
-          const cfg = (typeof LEVELS !== 'undefined' && LEVELS[key]) ? LEVELS[key] : null;
-          const url = cfg && cfg.dataUrl ? cfg.dataUrl : `database/vocabs/${key}_vocabularies.json`;
           try {
-            const res = await fetch(url);
-            if (!res.ok) return [];
-            const words = await res.json();
+            const words = await fetchLevelWords(key);
             return words.map(w => ({
               id: w.id,
               hanzi: w.hanzi,

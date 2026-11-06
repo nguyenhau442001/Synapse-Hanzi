@@ -59,6 +59,14 @@ const TOPICS = {
 };
 Object.assign(LEVELS, TOPICS);
 
+// Download a level's word list; rejects on network or HTTP errors.
+async function fetchLevelWords(level) {
+  const url = LEVELS[level].dataUrl;
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(`fetch failed: ${url} (${response.status})`);
+  return response.json();
+}
+
 function hskLevelKeys() {
   return Object.keys(LEVELS).filter(key => !TOPICS[key] && !LEVELS_HSK30[key]);
 }

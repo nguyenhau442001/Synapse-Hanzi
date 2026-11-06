@@ -129,11 +129,9 @@ async function enrichMissingWeakWordMetadata(list) {
       }
 
       const levelKey = w.level || (typeof currentLevel !== 'undefined' ? currentLevel : 'hsk4');
-      const cfg = typeof LEVELS !== 'undefined' ? LEVELS[levelKey] : null;
-      if (cfg && cfg.dataUrl) {
+      if (typeof LEVELS !== 'undefined' && LEVELS[levelKey]) {
         try {
-          const res = await fetch(cfg.dataUrl);
-          const data = await res.json();
+          const data = await fetchLevelWords(levelKey);
           const match = data.find(item => item.hanzi === w.hanzi);
           if (match) {
             w.pinyin = w.pinyin || match.pinyin || '';

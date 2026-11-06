@@ -25,11 +25,7 @@ function homeLevelKeys() {
 
 function loadHomeVocab(level) {
   if (!homeVocabCache[level]) {
-    homeVocabCache[level] = fetch(LEVELS[level].dataUrl)
-      .then(response => {
-        if (!response.ok) throw new Error('fetch failed');
-        return response.json();
-      })
+    homeVocabCache[level] = fetchLevelWords(level)
       .then(words => words.map(word => HOME_WORD_DATA_FIXES[word.hanzi]
         ? { ...word, ...HOME_WORD_DATA_FIXES[word.hanzi] }
         : word))

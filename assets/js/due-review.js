@@ -27,11 +27,7 @@ function countDueCardsAcrossLevels(now) {
 async function loadTodayReviewQueue() {
   const now = new Date();
   const levels = Object.keys(LEVELS).filter(level => LEVELS[level].available);
-  const datasets = await Promise.all(levels.map(async level => {
-    const response = await fetch(LEVELS[level].dataUrl);
-    if (!response.ok) throw new Error('Không tải được dữ liệu ' + level);
-    return response.json();
-  }));
+  const datasets = await Promise.all(levels.map(fetchLevelWords));
   const queue = [];
   levels.forEach((level, levelIndex) => {
     const words = datasets[levelIndex];

@@ -33,8 +33,7 @@ function buildSidebarSearchIndex() {
   if (sidebarSearchIndexPromise) return sidebarSearchIndexPromise;
   sidebarSearchIndexPromise = Promise.all(
     hsk30SearchSources().map(src => {
-      return fetch(src.dataUrl)
-        .then(r => r.json())
+      return fetchLevelWords(src.key)
         .then(words => words.map(w => ({
           id: w.id,
           hanzi: w.hanzi,

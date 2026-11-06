@@ -129,12 +129,7 @@ function buildReviewPool() {
 }
 
 async function fetchReviewWords(levels) {
-  const results = await Promise.all(levels.map(async level => {
-    const url = LEVELS[level].dataUrl;
-    const response = await fetch(url);
-    if (!response.ok) throw new Error(`fetch failed: ${url} (${response.status})`);
-    return response.json();
-  }));
+  const results = await Promise.all(levels.map(fetchLevelWords));
 
   const words = [];
   for (let i = 0; i < results.length; i++) {
