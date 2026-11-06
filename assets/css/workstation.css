@@ -2427,6 +2427,9 @@ body.flashcard-study-mode .rating-row {
   width: 100%;
   max-width: 550px;
   margin: 0 auto;
+  grid-template-columns: repeat(2, minmax(0, 228px));
+  justify-content: center;
+  gap: 12px;
 }
 body.flashcard-study-mode .rating-btn {
   display: flex;
@@ -4937,26 +4940,13 @@ body.flashcard-study-mode .card-accordion[open] {
 :root[data-theme="dark"] body.flashcard-study-mode .card-accordion { border-color: rgba(255, 255, 255, 0.08); }
 
 /* --- Review actions: softer tones, distinct, tidy shortcut chips ---------- */
-body.flashcard-study-mode .rating-btn--again:hover { background: #F7E9E5; }
-body.flashcard-study-mode .rating-btn--good:hover { background: #E8EFE8; }
 :root[data-theme="dark"] body.flashcard-study-mode .rating-btn--again { border-color: rgba(200, 88, 74, 0.3); }
 :root[data-theme="dark"] body.flashcard-study-mode .rating-btn--good { border-color: rgba(110, 160, 134, 0.3); }
-body.flashcard-study-mode .rating-kbd-badge {
-  border-radius: 6px;
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 11px;
-  font-weight: 600;
-}
 
 /* --- Prev / position / next: one centered, balanced group ----------------- */
 body.flashcard-study-mode .study-nav-controls,
 body.flashcard-study-mode .nav-row {
   justify-content: center;
-}
-body.flashcard-study-mode .study-nav-btn,
-body.flashcard-study-mode .nav-btn {
-  padding: 0 16px;
-  box-shadow: none;
 }
 @media (max-width: 767px) {
   body.flashcard-study-mode .study-nav-controls,
@@ -5254,11 +5244,6 @@ body.flashcard-study-mode .accordion-badge,
 body.flashcard-study-mode .accordion-badge::before { content: "· "; }
 
 /* --- Learning controls: one balanced block ------------------------------- */
-body.flashcard-study-mode .rating-row {
-  grid-template-columns: repeat(2, minmax(0, 228px));
-  justify-content: center;
-  gap: 12px;
-}
 body.flashcard-study-mode .rating-btn {
   min-height: 46px;
   height: 46px;
@@ -5286,10 +5271,20 @@ body.flashcard-study-mode .rating-btn--good .rating-icon,
 body.flashcard-study-mode .rating-btn--good .rating-label,
 :root[data-theme="dark"] body.flashcard-study-mode .rating-btn--good .rating-icon,
 :root[data-theme="dark"] body.flashcard-study-mode .rating-btn--good .rating-label { color: var(--hs-sage); }
-body.flashcard-study-mode .rating-btn--again:hover { border-color: var(--hs-coral); }
-body.flashcard-study-mode .rating-btn--good:hover { border-color: var(--hs-sage); }
+body.flashcard-study-mode .rating-btn--again:hover {
+  background: #F7E9E5;
+  border-color: var(--hs-coral);
+}
+body.flashcard-study-mode .rating-btn--good:hover {
+  background: #E8EFE8;
+  border-color: var(--hs-sage);
+}
 body.flashcard-study-mode .rating-btn .rating-icon { width: 17px; height: 17px; }
 body.flashcard-study-mode .rating-kbd-badge {
+  border-radius: 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+  font-weight: 600;
   display: inline-flex;
   align-items: center;
   gap: 3px;
@@ -5330,6 +5325,8 @@ body.flashcard-study-mode .study-nav-position {
 }
 body.flashcard-study-mode .study-nav-btn,
 body.flashcard-study-mode .nav-btn {
+  padding: 0 16px;
+  box-shadow: none;
   background: var(--hs-card);
   border: 1px solid var(--hs-beige);
   color: var(--text-primary);

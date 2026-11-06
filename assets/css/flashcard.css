@@ -240,6 +240,11 @@
   line-height: 1.3;
   margin: 2px 0 4px;
   flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 28px;
 }
 .meaning {
   font-size: 23px;

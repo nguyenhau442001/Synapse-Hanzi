@@ -534,9 +534,6 @@ body.dark-mode .token-hl-advanced .token-zh {
 /* ==========================================================================
    5. SENTENCE TRANSLATIONS (Muted, clear subordination)
    ========================================================================== */
-.reading-sentence-translations {
-  margin-bottom: 4px;
-}
 
 :root[data-theme="dark"] .reading-sentence-translations,
 body.dark-mode .reading-sentence-translations {
@@ -589,10 +586,6 @@ body.dark-mode .reading-translation-meaning {
    8. GRAMMAR & BREAKDOWN PANELS (Collapsible Focused Drawer)
    ========================================================================== */
 
-.breakdown-table {
-  text-align: left;
-}
-
 /* ==========================================================================
    9. INTERACTIVE PRACTICE SECTION
    ========================================================================== */
@@ -631,9 +624,6 @@ body.dark-mode .reading-practice-card {
 }
 
 /* Sentence Builder (Xếp câu) */
-.practice-slots-area {
-  margin-bottom: 16px;
-}
 
 :root[data-theme="dark"] .practice-slots-area,
 body.dark-mode .practice-slots-area {
@@ -647,26 +637,9 @@ body.dark-mode .practice-slots-area {
   75% { transform: translateX(5px); }
 }
 
-.practice-empty-placeholder {
-  margin: auto;
-}
-
-.practice-bank-area {
-  margin-bottom: 18px;
-}
-
 .practice-bank-area.logic-bank-area {
   flex-direction: column;
   align-items: stretch;
-}
-
-.builder-tile {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-  font-size: 1.1rem;
-  font-weight: 600;
-  justify-content: center;
 }
 
 :root[data-theme="dark"] .builder-tile,
@@ -702,11 +675,6 @@ body.dark-mode .builder-tile {
   border-radius: var(--radius-md);
   background: var(--surface-subtle);
   border: 1px solid var(--border);
-}
-
-.cloze-blank-spot {
-  background: var(--card-bg);
-  border-radius: 4px;
 }
 
 .cloze-option-btn {
@@ -758,6 +726,15 @@ body.dark-mode .cloze-option-btn {
   padding: 8px 16px;
   font-size: 0.88rem;
   border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 999px;
+  font-weight: 650;
+  cursor: pointer;
+  transition: all 0.16s ease;
+  user-select: none;
 }
 
 .practice-btn-primary {
@@ -865,10 +842,6 @@ body.dark-mode .reading-nav-btn.next-btn:hover:not(:disabled) {
   color: #ffffff;
 }
 
-.reading-jump-select {
-  background: var(--card-bg);
-}
-
 :root[data-theme="dark"] .reading-jump-select,
 body.dark-mode .reading-jump-select {
   background-color: #161922;
@@ -907,10 +880,6 @@ body.dark-mode .reading-jump-select:focus {
   .reading-analysis-container {
     padding: 10px 12px 60px;
   }
-  .reading-unified-nav {
-    flex-direction: column;
-    align-items: stretch;
-  }
   .token-zh {
     font-size: 1.65rem;
   }
@@ -927,6 +896,7 @@ body.dark-mode .reading-jump-select:focus {
    ========================================================================== */
 
 .reading-sentence-translations {
+  margin-bottom: 4px;
   margin-top: 16px;
   padding-top: 16px;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
@@ -1631,6 +1601,7 @@ body.dark-mode .sge-content {
 }
 
 .reading-jump-select {
+  background: var(--card-bg);
   width: 100%;
   max-width: 620px;
   padding: 9px 38px 9px 16px;
@@ -1864,6 +1835,7 @@ body.dark-mode .sge-content {
 
 /* Target Slots Area */
 .practice-slots-area {
+  margin-bottom: 16px;
   min-height: 84px;
   padding: 14px 18px;
   border-radius: 14px;
@@ -1896,6 +1868,7 @@ body.dark-mode .sge-content {
 }
 
 .practice-empty-placeholder {
+  margin: auto;
   color: #64748b;
   font-size: 0.95rem;
   font-style: italic;
@@ -1905,6 +1878,7 @@ body.dark-mode .sge-content {
 
 /* Word Bank Area */
 .practice-bank-area {
+  margin-bottom: 18px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1924,6 +1898,12 @@ body.dark-mode .sge-content {
 
 /* Interactive Word Tiles */
 .builder-tile {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  font-size: 1.1rem;
+  font-weight: 600;
+  justify-content: center;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -1970,6 +1950,8 @@ body.dark-mode .sge-content {
 }
 
 .cloze-blank-spot {
+  background: var(--card-bg);
+  border-radius: 4px;
   display: inline-block;
   min-width: 80px;
   padding: 2px 10px;
@@ -2018,18 +2000,6 @@ body.dark-mode .sge-content {
   align-items: center;
   gap: 8px;
   flex-wrap: wrap;
-}
-
-.practice-action-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  border-radius: 999px;
-  font-weight: 650;
-  cursor: pointer;
-  transition: all 0.16s ease;
-  user-select: none;
 }
 
 /* Feedback Banner */
@@ -2410,6 +2380,7 @@ body.dark-mode .sheet-collapsible-content {
 }
 
 .breakdown-table {
+  text-align: left;
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
@@ -2630,6 +2601,8 @@ body.dark-mode .reading-settings-btn {
    ========================================================================== */
 @media (max-width: 768px) {
   .reading-unified-nav {
+    flex-direction: column;
+    align-items: stretch;
     border-radius: 16px;
     padding: 10px 12px;
     gap: 8px;

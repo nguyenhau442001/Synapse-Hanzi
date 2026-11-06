@@ -201,6 +201,9 @@
   width: 100%;
   height: 5.5px;
   margin-top: 2px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--progress-track);
 }
 .level-card-bottom {
   display: flex;
@@ -217,6 +220,7 @@
   line-height: 1.2;
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
+  color: var(--text-secondary);
 }
 .level-card .lvl-action-hint {
   font-size: 11.5px;
@@ -254,7 +258,23 @@
 .featured-topics h2 { font-size: 16px; }
 .featured-topic-more { padding: 5px 0; border: 0; background: transparent; color: var(--accent-text); font: inherit; font-size: 11px; font-weight: 650; cursor: pointer; }
 .featured-topic-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
-.featured-topic-pill { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 0 12px; border: 1px solid var(--border); border-radius: 999px; font: inherit; font-size: 11px; white-space: nowrap; cursor: pointer; transition: border-color 140ms ease, color 140ms ease, background-color 140ms ease; }
+.featured-topic-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font: inherit;
+  font-size: 11px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: border-color 140ms ease, color 140ms ease, background-color 140ms ease;
+  border-color: var(--border);
+  background: var(--surface-chip);
+  color: var(--text-secondary);
+}
 .featured-topic-pill:hover { border-color: var(--accent); color: var(--text-primary); }
 .featured-topic-pill:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
@@ -621,10 +641,6 @@ body.home-screen .dashboard-bottom-widgets .hw-card:hover {
   background: var(--status-success);
 }
 .daily-goal-track, .progress-bar-track { background: var(--progress-track); border-radius: 999px; overflow: hidden; }
-.progress-bar-fill {
-  background: var(--brand-primary);
-  border-radius: 999px;
-}
 .level-card.is-active-level { border-color: var(--brand-primary); box-shadow: 0 0 0 1px var(--brand-primary), 0 4px 14px rgba(0, 0, 0, 0.25); }
 .level-status-badge.is-learning { border-color: color-mix(in srgb, var(--status-warning) 30%, transparent); background: var(--warning-bg); color: var(--status-warning); }
 .hanzi,
@@ -756,17 +772,10 @@ body.home-screen .dashboard-bottom-widgets .hw-card:hover {
 .level-card:not(.is-active-level) .lvl-num { color: var(--text-primary); }
 .level-card .lvl-label,
 .level-card .lvl-count { color: var(--text-secondary); }
-.level-card .lvl-mastery-track {
-  border-radius: 999px;
-  overflow: hidden;
-  background: var(--progress-track);
-}
-.level-card .lvl-mastery-text { color: var(--text-secondary); }
 .level-card .lvl-percent-complete { color: var(--text-secondary); }
 .level-card:hover { border-color: color-mix(in srgb, var(--text-secondary) 40%, var(--border)); }
 .level-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-.picker-controls { justify-content: space-between; }
 .picker-controls > .view-tabs { flex: 0 1 auto; }
 .picker-controls > .view-tabs:first-child {
   gap: 18px; padding: 0; border: 0; border-radius: 0; background: transparent;
@@ -881,14 +890,7 @@ body.dark-mode .picker-version-control select option {
   color: var(--accent);
 }
 
-.featured-topic-pill {
-  border-color: var(--border); background: var(--surface-chip); color: var(--text-secondary);
-}
-.hw-bar-value { color: var(--text-primary); font-weight: 650; }
-.hw-bar { min-height: 9px; background: var(--progress-track); }
 .hw-bar-col.is-today .hw-bar { background: var(--accent); }
-.hw-forgot-empty-icon { width: 36px; height: 36px; font-size: 19px; }
-.hw-forgot-empty-copy { color: var(--text-primary); }
 
 /* Global cleanups: eliminate button overload and visual noise */
 .lvl-action-hint {

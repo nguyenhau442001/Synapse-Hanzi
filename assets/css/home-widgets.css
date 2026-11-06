@@ -82,10 +82,22 @@ body:not(.home-screen) .home-widgets { display: none; }
   gap: 4px 8px; margin-top: 10px;
 }
 .hw-forgot-empty-icon {
-  display: grid; grid-row: 1; place-items: center;
-  border-radius: 9px; background: var(--accent-light);
+  display: grid;
+  grid-row: 1;
+  place-items: center;
+  border-radius: 9px;
+  background: var(--accent-light);
+  width: 36px;
+  height: 36px;
+  font-size: 19px;
 }
-.hw-forgot-empty-copy { margin: 0; font-size: 12px; font-weight: 600; line-height: 1.35; }
+.hw-forgot-empty-copy {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--text-primary);
+}
 .hw-forgot-empty .hw-outline-btn {
   grid-column: 1 / -1; min-height: 32px; margin-top: 3px; padding: 0 10px;
   border-color: var(--border); color: var(--text-secondary); font-size: 11px; font-weight: 600;
@@ -118,8 +130,20 @@ body:not(.home-screen) .home-widgets { display: none; }
   flex: 1 1 0; min-width: 0;
   display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 4px;
 }
-.hw-bar-value { font-size: 11px; font-variant-numeric: tabular-nums; }
-.hw-bar { display: block; width: 100%; max-width: 28px; border-radius: 6px; }
+.hw-bar-value {
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-primary);
+  font-weight: 650;
+}
+.hw-bar {
+  display: block;
+  width: 100%;
+  max-width: 28px;
+  border-radius: 6px;
+  min-height: 9px;
+  background: var(--progress-track);
+}
 .hw-bar-label { color: var(--text-secondary); font-size: 11px; }
 .hw-bar-col.is-today .hw-bar {
   box-shadow: 0 1px 4px color-mix(in srgb, var(--accent) 24%, transparent);
