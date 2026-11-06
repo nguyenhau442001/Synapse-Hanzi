@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'preact/hooks';
 import { fetchRadicals } from '../services/radicalsService';
-import { searchInputStyle } from '../components/styles';
+import { emptyStateStyle, mutedNoteStyle, pageColumnStyle, searchInputStyle, stackStyle, viewSubtitleStyle } from '../components/styles';
 import { speakWithWebSpeech } from '../services/speechService';
 
 export function RadicalsView() {
@@ -35,13 +35,13 @@ export function RadicalsView() {
   const availableStrokes = Array.from(new Set(radicals.map(r => r.stroke_count))).sort((a, b) => a - b);
 
   return (
-    <div style={{ maxWidth: '720px', margin: '0 auto', paddingBottom: '60px' }}>
+    <div style={pageColumnStyle}>
       {/* View Header */}
       <div style={{ marginBottom: '16px' }}>
         <h2 style={{ fontSize: '20px', fontWeight: '800', color: 'var(--brand-primary)', margin: '0 0 4px', display: 'flex', alignItems: 'center', gap: '8px' }}>
           <span>🏛️</span> Khám Phá Bộ Thủ Chữ Hán
         </h2>
-        <p style={{ margin: 0, fontSize: '13px', color: 'var(--text-muted)' }}>
+        <p style={viewSubtitleStyle}>
           Hệ thống 214 Bộ Thủ Khang Hy và 50 Bộ Thủ Cốt Lõi kèm nguồn gốc, chuyện kể và chữ phái sinh.
         </p>
       </div>
@@ -224,7 +224,7 @@ export function RadicalsView() {
                 <div style={{ fontSize: '14px', fontWeight: '700', color: 'var(--text-primary)', marginBottom: '8px' }}>
                   📚 Chữ phái sinh tiêu biểu:
                 </div>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                <div style={stackStyle}>
                   {activeRadical.examples.map((ex, exIdx) => (
                     <div key={exIdx} style={{
                       background: 'var(--bg-elevated)',
@@ -244,7 +244,7 @@ export function RadicalsView() {
                         </span>
                       </div>
                       {ex.relation && (
-                        <div style={{ fontSize: '12px', color: 'var(--text-muted)', lineHeight: 1.4 }}>
+                        <div style={mutedNoteStyle}>
                           {ex.relation}
                         </div>
                       )}
@@ -259,11 +259,11 @@ export function RadicalsView() {
 
       {/* Radicals Grid */}
       {loading ? (
-        <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--text-muted)' }}>
+        <div style={emptyStateStyle}>
           Đang tải dữ liệu bộ thủ...
         </div>
       ) : filteredRadicals.length === 0 ? (
-        <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--text-muted)' }}>
+        <div style={emptyStateStyle}>
           Không tìm thấy bộ thủ nào phù hợp.
         </div>
       ) : (

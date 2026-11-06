@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'preact/hooks';
 import { speakWithWebSpeech } from '../services/speechService';
-import { tabButtonStyle } from '../components/styles';
+import { emptyStateStyle, spacedRowStyle, tabButtonStyle } from '../components/styles';
 
 export function GamesView() {
   const [activeTab, setActiveTab] = useState('sentence'); // 'sentence' | 'guess'
@@ -150,7 +150,7 @@ export function GamesView() {
       {activeTab === 'sentence' && (
         <div>
           {!currentSentence ? (
-            <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--text-muted)' }}>
+            <div style={emptyStateStyle}>
               Đang chuẩn bị câu hỏi ghép câu...
             </div>
           ) : (
@@ -162,7 +162,7 @@ export function GamesView() {
               boxShadow: 'var(--shadow-sm)'
             }}>
               {/* Header */}
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
+              <div style={spacedRowStyle}>
                 <span style={{ fontSize: '12px', background: 'var(--accent-light)', color: 'var(--accent)', padding: '2px 8px', borderRadius: '12px', fontWeight: '700' }}>
                   {currentSentence.level?.toUpperCase()} • Câu {sIndex + 1}
                 </span>
@@ -343,7 +343,7 @@ export function GamesView() {
       {activeTab === 'guess' && (
         <div>
           {!currentGuess ? (
-            <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--text-muted)' }}>
+            <div style={emptyStateStyle}>
               Đang chuẩn bị câu hỏi đuổi hình bắt chữ...
             </div>
           ) : (
@@ -356,7 +356,7 @@ export function GamesView() {
               textAlign: 'center'
             }}>
               {/* Header */}
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
+              <div style={spacedRowStyle}>
                 <span style={{ fontSize: '12px', background: 'var(--accent-light)', color: 'var(--accent)', padding: '2px 8px', borderRadius: '12px', fontWeight: '700' }}>
                   Câu {gIndex + 1}
                 </span>

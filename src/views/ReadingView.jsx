@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'preact/hooks';
 import { fetchReadingsManifest, fetchStory } from '../services/readingService';
-import { searchInputStyle } from '../components/styles';
+import { emptyStateStyle, mutedNoteStyle, pageColumnStyle, searchInputStyle, spacedRowStyle, stackStyle, viewSubtitleStyle } from '../components/styles';
 import { speakWithWebSpeech, stopAllAudio } from '../services/speechService';
 
 export function ReadingView() {
@@ -62,9 +62,9 @@ export function ReadingView() {
   // If a story is open, render Story Reader View
   if (activeStoryMeta) {
     return (
-      <div style={{ maxWidth: '720px', margin: '0 auto', paddingBottom: '60px' }}>
+      <div style={pageColumnStyle}>
         {/* Navigation Bar */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
+        <div style={spacedRowStyle}>
           <button
             onClick={closeStory}
             style={{
@@ -102,7 +102,7 @@ export function ReadingView() {
         </div>
 
         {loadingStory || !activeStory ? (
-          <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--text-muted)' }}>
+          <div style={emptyStateStyle}>
             Đang tải nội dung bài đọc...
           </div>
         ) : (
@@ -298,7 +298,7 @@ export function ReadingView() {
                           Câu {qIdx + 1}: {q.question_vi}
                         </div>
 
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                        <div style={stackStyle}>
                           {q.options_vi?.map((opt, optIdx) => {
                             let btnBg = 'var(--bg-surface)';
                             let btnBorder = 'var(--border-subtle)';
@@ -364,13 +364,13 @@ export function ReadingView() {
 
   // Story Index Browser View
   return (
-    <div style={{ maxWidth: '720px', margin: '0 auto', paddingBottom: '60px' }}>
+    <div style={pageColumnStyle}>
       {/* Title */}
       <div style={{ marginBottom: '16px' }}>
         <h2 style={{ fontSize: '20px', fontWeight: '800', color: 'var(--brand-primary)', margin: '0 0 4px', display: 'flex', alignItems: 'center', gap: '8px' }}>
           <span>📖</span> Luyện Đọc Phân Cấp (Graded Reading)
         </h2>
-        <p style={{ margin: 0, fontSize: '13px', color: 'var(--text-muted)' }}>
+        <p style={viewSubtitleStyle}>
           450 bài đọc phân cấp chuẩn HSK 1–9 kèm phân tích ngữ nghĩa từng từ và bài trắc nghiệm đọc hiểu.
         </p>
       </div>
@@ -413,11 +413,11 @@ export function ReadingView() {
 
       {/* Stories Grid */}
       {loadingManifest ? (
-        <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--text-muted)' }}>
+        <div style={emptyStateStyle}>
           Đang nạp danh mục bài đọc...
         </div>
       ) : filteredStories.length === 0 ? (
-        <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--text-muted)' }}>
+        <div style={emptyStateStyle}>
           Không tìm thấy bài đọc nào phù hợp.
         </div>
       ) : (
@@ -458,7 +458,7 @@ export function ReadingView() {
                 </div>
 
                 {story.description_vi && (
-                  <div style={{ fontSize: '12px', color: 'var(--text-muted)', lineHeight: 1.4 }}>
+                  <div style={mutedNoteStyle}>
                     {story.description_vi}
                   </div>
                 )}

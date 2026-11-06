@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'preact/hooks';
+import { emptyStateStyle } from '../components/styles';
 
 const AVAILABLE_EXAMS = [
   { id: 'H41001', name: 'HSK 4 · Đề 1 (H41001)' },
@@ -135,7 +136,7 @@ export function ListeningView() {
       </div>
 
       {loading ? (
-        <div style={{ textAlign: 'center', padding: '60px 0', color: 'var(--text-muted)' }}>
+        <div style={emptyStateStyle}>
           Đang tải dữ liệu đề thi nghe HSK 4...
         </div>
       ) : !currentQ ? (

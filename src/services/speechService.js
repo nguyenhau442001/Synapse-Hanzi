@@ -94,42 +94,38 @@ export function speakWithWebSpeech(text, rate = 0.85) {
 }
 
 /**
+ * Play a prebuilt MP3 clip, falling back to Web Speech (text, rate) when there is
+ * no clip or it fails to load/play.
+ */
+async function playClipOrSpeak(clipPath, text, rate) {
+  stopAllAudio();
+  if (clipPath) {
+    try {
+      isPlayingAudioSignal.value = true;
+      const audio = new Audio(clipPath);
+      activeAudioElement = audio;
+      audio.onended = () => {
+        isPlayingAudioSignal.value = false;
+        activeAudioElement = null;
+      };
+      audio.onerror = () => speakWithWebSpeech(text, rate);
+      await audio.play();
+      return;
+    } catch (e) {
+      // Audio play blocked or failed: fall through to Web Speech
+    }
+  }
+  await speakWithWebSpeech(text, rate);
+}
+
+/**
  * Play word audio: uses prebuilt MP3 if available in manifest, else Web Speech API
  * @param {Object} word - Word object { id, hanzi, ... }
  * @param {Object} audioManifest - Optional prebuilt audio manifest
  */
 export async function playWordAudio(word, audioManifest = null) {
   if (!word || !word.hanzi) return;
-
-  stopAllAudio();
-
-  // 1. Try prebuilt audio clip
-  const prebuiltPath = audioManifest?.items?.[String(word.id)]?.word;
-  if (prebuiltPath) {
-    try {
-      isPlayingAudioSignal.value = true;
-      const audio = new Audio(prebuiltPath);
-      activeAudioElement = audio;
-
-      audio.onended = () => {
-        isPlayingAudioSignal.value = false;
-        activeAudioElement = null;
-      };
-
-      audio.onerror = () => {
-        // Fallback to Web Speech on audio error
-        speakWithWebSpeech(word.hanzi, 0.85);
-      };
-
-      await audio.play();
-      return;
-    } catch (e) {
-      // Audio play blocked or failed, fallback to Web Speech
-    }
-  }
-
-  // 2. Fallback to Web Speech API
-  await speakWithWebSpeech(word.hanzi, 0.85);
+  await playClipOrSpeak(audioManifest?.items?.[String(word.id)]?.word, word.hanzi, 0.85);
 }
 
 /**
@@ -139,33 +135,5 @@ export async function playWordAudio(word, audioManifest = null) {
  */
 export async function playExampleAudio(word, audioManifest = null) {
   if (!word || !word.example_zh) return;
-
-  stopAllAudio();
-
-  // 1. Try prebuilt example audio
-  const prebuiltPath = audioManifest?.items?.[String(word.id)]?.example;
-  if (prebuiltPath) {
-    try {
-      isPlayingAudioSignal.value = true;
-      const audio = new Audio(prebuiltPath);
-      activeAudioElement = audio;
-
-      audio.onended = () => {
-        isPlayingAudioSignal.value = false;
-        activeAudioElement = null;
-      };
-
-      audio.onerror = () => {
-        const cleanText = cleanSpeechText(word.example_zh);
-        speakWithWebSpeech(cleanText, 0.8);
-      };
-
-      await audio.play();
-      return;
-    } catch (e) {}
-  }
-
-  // 2. Fallback to Web Speech API
-  const cleanText = cleanSpeechText(word.example_zh);
-  await speakWithWebSpeech(cleanText, 0.8);
+  await playClipOrSpeak(audioManifest?.items?.[String(word.id)]?.example, cleanSpeechText(word.example_zh), 0.8);
 }
