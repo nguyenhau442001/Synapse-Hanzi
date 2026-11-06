@@ -20,8 +20,7 @@ function hasSavedProgress() {
     try {
       const srs = readSrsRecord(level);
       if (srs && Object.keys(srs.cards).length > 0) return true;
-      const raw = localStorage.getItem('hsk_' + level + '_progress_v2');
-      return raw && Object.keys(JSON.parse(raw)).length > 0;
+      return Object.keys(readSavedLevelProgressLegacy(level)).length > 0;
     } catch (e) {
       return false;
     }
@@ -37,12 +36,7 @@ const LAST_LEVEL_KEY = 'hsk_last_level_v1';
 function readSavedLevelProgress(level) {
   const srs = readSrsRecord(level);
   if (srs) return progressFromCards(srs.cards);
-  try {
-    const parsed = JSON.parse(localStorage.getItem('hsk_' + level + '_progress_v2'));
-    return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : {};
-  } catch (e) {
-    return {};
-  }
+  return readSavedLevelProgressLegacy(level);
 }
 
 function readStudyActivity() {

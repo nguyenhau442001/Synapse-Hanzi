@@ -145,12 +145,7 @@ function loadSrsForLevel(level, words, legacyProgress) {
 }
 
 function loadState() {
-  let legacy = {};
-  try {
-    const p = localStorage.getItem('hsk_' + currentLevel + '_progress_v2');
-    if (p) legacy = JSON.parse(p);
-  } catch (e) {}
-  srsCards = loadSrsForLevel(currentLevel, WORDS, legacy);
+  srsCards = loadSrsForLevel(currentLevel, WORDS, readSavedLevelProgressLegacy(currentLevel));
   progress = progressFromCards(srsCards);
   reviewLog = readSrsReviewLog(currentLevel);
   // SRS review hides pinyin on the front by default; the old showPinyin pref is ignored on purpose.
@@ -173,6 +168,7 @@ function saveProgress() {
   saveSrsRecord(currentLevel, srsCards, true);
 }
 
+// Pre-FSRS per-level progress map ({ wordId: 'known' | 'unknown' }), kept for migration.
 function readSavedLevelProgressLegacy(level) {
   try {
     const parsed = JSON.parse(localStorage.getItem('hsk_' + level + '_progress_v2'));
