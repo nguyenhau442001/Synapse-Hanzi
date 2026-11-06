@@ -205,51 +205,31 @@ function renderCardRadicals(word) {
     }
     mount.style.display = 'flex';
 
-    if (charDecomps.length === 1) {
-      const { ch, charIdx, comps } = charDecomps[0];
-      mount.innerHTML = `
-        <div class="card-decomp-formula-wrap">
-          <div class="card-decomp-chars-row">
-            ${comps.map((c, idx) => {
-              const compColor = RADICAL_COLOR_PALETTE[idx % RADICAL_COLOR_PALETTE.length];
-              return `
-                <button type="button" class="card-decomp-char-btn"
-                  onclick="event.stopPropagation(); jumpToStudyRadical('${ch}', ${charIdx}, [${(c.stroke_indices || []).join(',')}])"
-                  title="Thành phần: ${c.name.replace('Bộ ', '')}">
-                  <span class="card-decomp-char" style="color: ${compColor}; font-weight: 700;" lang="zh-CN">${c.char}</span>
-                  <span class="card-decomp-sub">${(c.name || c.char).replace('Bộ ', '')}</span>
-                </button>
-                ${idx < comps.length - 1 ? '<span class="card-decomp-op">+</span>' : ''}
-              `;
-            }).join('')}
-          </div>
-        </div>
-      `;
-    } else {
-      mount.innerHTML = `
-        <div class="card-decomp-multi-wrap">
-          ${charDecomps.map(({ ch, charIdx, comps }) => `
+    // One "部件 + 部件" row of clickable components for a single character.
+    const componentButtons = ({ ch, charIdx, comps }) => comps.map((c, idx) => `
+      <button type="button" class="card-decomp-char-btn"
+        onclick="event.stopPropagation(); jumpToStudyRadical('${ch}', ${charIdx}, [${(c.stroke_indices || []).join(',')}])"
+        title="Thành phần: ${c.name.replace('Bộ ', '')}">
+        <span class="card-decomp-char" style="color: ${RADICAL_COLOR_PALETTE[idx % RADICAL_COLOR_PALETTE.length]}; font-weight: 700;" lang="zh-CN">${c.char}</span>
+        <span class="card-decomp-sub">${(c.name || c.char).replace('Bộ ', '')}</span>
+      </button>
+      ${idx < comps.length - 1 ? '<span class="card-decomp-op">+</span>' : ''}
+    `).join('');
+
+    mount.innerHTML = charDecomps.length === 1
+      ? `<div class="card-decomp-formula-wrap">
+          <div class="card-decomp-chars-row">${componentButtons(charDecomps[0])}</div>
+        </div>`
+      : `<div class="card-decomp-multi-wrap">
+          ${charDecomps.map(d => `
             <div class="card-decomp-char-block">
               <div class="card-decomp-chars-row">
-                <span class="card-decomp-target-char" lang="zh-CN">${ch}:</span>
-                ${comps.map((c, idx) => {
-                  const compColor = RADICAL_COLOR_PALETTE[idx % RADICAL_COLOR_PALETTE.length];
-                  return `
-                    <button type="button" class="card-decomp-char-btn"
-                      onclick="event.stopPropagation(); jumpToStudyRadical('${ch}', ${charIdx}, [${(c.stroke_indices || []).join(',')}])"
-                      title="Thành phần: ${c.name.replace('Bộ ', '')}">
-                      <span class="card-decomp-char" style="color: ${compColor}; font-weight: 700;" lang="zh-CN">${c.char}</span>
-                      <span class="card-decomp-sub">${(c.name || c.char).replace('Bộ ', '')}</span>
-                    </button>
-                    ${idx < comps.length - 1 ? '<span class="card-decomp-op">+</span>' : ''}
-                  `;
-                }).join('')}
+                <span class="card-decomp-target-char" lang="zh-CN">${d.ch}:</span>
+                ${componentButtons(d)}
               </div>
             </div>
           `).join('')}
-        </div>
-      `;
-    }
+        </div>`;
 
     if (typeof syncCardSupportingGroup === 'function') syncCardSupportingGroup();
   });
