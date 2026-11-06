@@ -384,45 +384,12 @@ const GradedReading = (function() {
     // Available categories from manifest
     const categoriesSet = new Set();
     manifest.forEach(m => {
-      const cat = (m.topic_vi || '').split('&')[0].trim();
+      const cat = storyCategory(m);
       if (cat) categoriesSet.add(cat);
     });
     const categories = ['all', ...Array.from(categoriesSet).sort()];
 
-    let filtered = manifest.filter(m => {
-      // 1. Level filter
-      if (currentLevelFilter === 'read') {
-        if (!isStoryRead(m.id)) return false;
-      } else if (currentLevelFilter !== 'all') {
-        if (m.level.toLowerCase() !== currentLevelFilter.toLowerCase()) return false;
-      }
-      // 2. Category filter
-      if (currentCategoryFilter !== 'all') {
-        const cat = (m.topic_vi || '').split('&')[0].trim();
-        if (cat !== currentCategoryFilter) return false;
-      }
-      // 3. Keyword search
-      if (searchQuery.trim()) {
-        const q = searchQuery.toLowerCase().trim();
-        const titleZh = (m.title && m.title.zh ? m.title.zh : '').toLowerCase();
-        const titleVi = (m.title && m.title.vi ? m.title.vi : '').toLowerCase();
-        const descVi = (m.description_vi || '').toLowerCase();
-        const topicVi = (m.topic_vi || '').toLowerCase();
-        if (!titleZh.includes(q) && !titleVi.includes(q) && !descVi.includes(q) && !topicVi.includes(q)) {
-          return false;
-        }
-      }
-      return true;
-    });
-
-    // 4. Sort
-    if (currentSort === 'time_asc') {
-      filtered.sort((a, b) => (a.estimatedMinutes || 3) - (b.estimatedMinutes || 3));
-    } else if (currentSort === 'time_desc') {
-      filtered.sort((a, b) => (b.estimatedMinutes || 3) - (a.estimatedMinutes || 3));
-    } else if (currentSort === 'title') {
-      filtered.sort((a, b) => (a.title.vi || '').localeCompare(b.title.vi || ''));
-    }
+    const filtered = getFilteredManifest();
 
     const levels = ['HSK1', 'HSK2', 'HSK3', 'HSK4', 'HSK5', 'HSK6', 'HSK7', 'HSK8', 'HSK9'];
     const levelCounts = {};
@@ -592,6 +559,11 @@ const GradedReading = (function() {
     }
   }
 
+  // A story's category is the first part of its topic ("Gia đình & Bạn bè" -> "Gia đình").
+  function storyCategory(m) {
+    return (m.topic_vi || '').split('&')[0].trim();
+  }
+
   function getFilteredManifest() {
     return manifest.filter(m => {
       if (currentLevelFilter === 'read') {
@@ -599,10 +571,7 @@ const GradedReading = (function() {
       } else if (currentLevelFilter !== 'all') {
         if (m.level.toLowerCase() !== currentLevelFilter.toLowerCase()) return false;
       }
-      if (currentCategoryFilter !== 'all') {
-        const cat = (m.topic_vi || '').split('&')[0].trim();
-        if (cat !== currentCategoryFilter) return false;
-      }
+      if (currentCategoryFilter !== 'all' && storyCategory(m) !== currentCategoryFilter) return false;
       if (searchQuery.trim()) {
         const q = searchQuery.toLowerCase().trim();
         const titleZh = (m.title && m.title.zh ? m.title.zh : '').toLowerCase();
