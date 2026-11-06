@@ -1639,7 +1639,6 @@ body.flashcard-study-mode .pinyin-row {
   margin-top: 4px;
 }
 
-/* Meta badges: Han-Viet & POS - Clean Editorial Context */
 /* Meta badges: POS · Level · Han-Viet - Clean Neutral Editorial Line */
 body.flashcard-study-mode .meta-badges-row {
   display: inline-flex;
@@ -4860,10 +4859,6 @@ body.flashcard-study-mode .card.is-flipped .card-visual-col[hidden] {
   font-size: 10.5px;
   padding: 0 5px;
 }
-#screenVocabHub .creator-signature .cs-author { color: var(--text-secondary); }
-#screenVocabHub .creator-signature .cs-author strong {
-  color: var(--text-primary);
-}
 #screenVocabHub .creator-signature .cs-link {
   display: inline-flex;
   align-items: center;
@@ -4908,7 +4903,10 @@ body.flashcard-study-mode .card.is-flipped .card-visual-col[hidden] {
 
 /* --- Creator signature: brand left, author + metadata right ------------- */
 #screenVocabHub .creator-signature { align-items: center; }
-#screenVocabHub .creator-signature .cs-author strong { font-weight: 650; }
+#screenVocabHub .creator-signature .cs-author strong {
+  color: var(--text-primary);
+  font-weight: 650;
+}
 
 /* --- Progress: accent for primary progress, sage only for "remembered" --- */
 body.flashcard-study-mode .progress-nav-level-tag { font-weight: 700; letter-spacing: 0.02em; }
@@ -4927,12 +4925,6 @@ body.flashcard-study-mode .progress-nav-card {
   height: 38px;
   padding: 0 12px !important;
   border-radius: 10px;
-}
-
-/* --- Vocabulary card ----------------------------------------------------- */
-body.flashcard-study-mode .card.is-flipped .meaning {
-  font-size: clamp(20px, 2.2vw, 25px);
-  font-weight: 650;
 }
 
 /* --- Example: tighter, clear hierarchy, visible audio --------------------- */
@@ -5104,7 +5096,11 @@ body.flashcard-study-mode #cardArea > .card::after { display: none; }
 /* --- Header: brand left | creator + links, then technical metadata -------- */
 #screenVocabHub .creator-signature { border-bottom-color: var(--hs-beige); padding-bottom: 10px; }
 #screenVocabHub .creator-signature .cs-credit { gap: 4px; }
-#screenVocabHub .creator-signature .cs-author { gap: 4px 12px; font-size: 12px; }
+#screenVocabHub .creator-signature .cs-author {
+  color: var(--text-secondary);
+  gap: 4px 12px;
+  font-size: 12px;
+}
 #screenVocabHub .creator-signature .cs-by { color: var(--text-tertiary); }
 #screenVocabHub .creator-signature .cs-handle {
   margin-left: 2px;
@@ -5164,6 +5160,8 @@ body.flashcard-study-mode #cardArea > .card::after { display: none; }
 }
 body.flashcard-study-mode .card.is-flipped .pinyin-row { margin-top: 8px; }
 body.flashcard-study-mode .card.is-flipped .meaning {
+  font-size: clamp(20px, 2.2vw, 25px);
+  font-weight: 650;
   margin: 8px 0 0;
   color: var(--text-primary);
   letter-spacing: -0.005em;

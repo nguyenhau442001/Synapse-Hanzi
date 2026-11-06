@@ -255,15 +255,8 @@ body {
   position: relative;
   min-height: 100vh;
 }
-.app {
-  position: relative;
-  z-index: 1;
-}
 
 /* App Header with Chinese Cultural Branding */
-.app-header {
-  text-align: center;
-}
 .app-header-brand {
   align-items: center;
   gap: 10px;
@@ -282,8 +275,15 @@ body {
   margin: 0;
   letter-spacing: 0.01em;
 }
-.app { width: 100%; max-width: none; margin: 0 auto; }
+.app {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+}
 .app-header {
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: space-between;

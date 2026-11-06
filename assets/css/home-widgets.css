@@ -214,10 +214,14 @@ body:not(.home-screen) .home-widgets { display: none; }
   .home-widgets > .hw-wotd { order: 1; }
   .home-widgets > .hw-forecast { order: 2; }
   .hw-wotd-main { flex-direction: row; align-items: center; gap: 14px; text-align: left; margin-top: 10px; }
-  .hw-wotd-hanzi { font-size: 44px; }
   .hw-wotd-hanzi.is-medium { font-size: 34px; }
   .hw-wotd-hanzi.is-long { font-size: 24px; }
-  .hw-wotd-hanzi { flex: 0 1 auto; min-width: 0; overflow-wrap: anywhere; }
+  .hw-wotd-hanzi {
+    font-size: 44px;
+    flex: 0 1 auto;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
   .hw-wotd-text { flex: 1 1 0; min-width: 96px; overflow-wrap: anywhere; }
   .hw-wotd-pinyin { margin-top: 0; }
 }

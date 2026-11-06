@@ -103,8 +103,12 @@
 .picker-controls {
   display: flex; align-items: center; gap: 8px; margin: 14px 0 8px;
 }
-.picker-controls > .view-tabs { min-width: 0; margin: 0; }
-.picker-controls > .view-tabs { gap: 8px; padding: 5px; }
+.picker-controls > .view-tabs {
+  min-width: 0;
+  margin: 0;
+  gap: 8px;
+  padding: 5px;
+}
 @media (max-width: 767px) {
   .picker-controls > .view-tabs { flex: 0 0 auto; width: 100%; }
   .picker-controls .view-tab { min-height: 40px; font-size: 13px; }
