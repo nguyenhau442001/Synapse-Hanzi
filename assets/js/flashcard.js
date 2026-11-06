@@ -140,36 +140,21 @@ function buildCardArea() {
 
         <!-- Khối mở rộng học sâu: Accordion thu gọn mặc định cho Cấu tạo chữ & Chữ liên quan -->
         <div class="card-expandable-group" id="cardExpandableGroup">
-          <details class="card-accordion" id="cardDecompAccordion" onclick="event.stopPropagation()" style="display: none;">
-            <summary class="card-accordion-summary" onclick="event.stopPropagation()">
-              <span class="accordion-left">
-                <span class="accordion-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7.5" height="18" rx="1.5"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5"/></svg></span>
-                <span class="accordion-title">Cấu tạo chữ</span>
-              </span>
-              <span class="accordion-chevron" aria-hidden="true">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-              </span>
-            </summary>
-            <div class="card-accordion-body" id="cardDecompositionWrap">
-              <div class="card-radicals-row card-interactive" id="cardRadicalsRow" onclick="event.stopPropagation()"></div>
-            </div>
-          </details>
+          ${cardAccordionHtml({
+            id: 'cardDecompAccordion',
+            title: 'Cấu tạo chữ',
+            iconPaths: '<rect x="3" y="3" width="7.5" height="18" rx="1.5"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5"/>',
+            bodyId: 'cardDecompositionWrap',
+            content: '<div class="card-radicals-row card-interactive" id="cardRadicalsRow" onclick="event.stopPropagation()"></div>',
+          })}
 
-          <details class="card-accordion" id="cardRelatedAccordion" onclick="event.stopPropagation()" style="display: none;">
-            <summary class="card-accordion-summary" onclick="event.stopPropagation()">
-              <span class="accordion-left">
-                <span class="accordion-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></span>
-                <span class="accordion-title">Chữ liên quan</span>
-                <span class="accordion-badge" id="cardRelatedCountBadge" hidden></span>
-              </span>
-              <span class="accordion-chevron" aria-hidden="true">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-              </span>
-            </summary>
-            <div class="card-accordion-body">
-              <div class="card-related-wrap" id="cardRelatedWrap" onclick="event.stopPropagation()"></div>
-            </div>
-          </details>
+          ${cardAccordionHtml({
+            id: 'cardRelatedAccordion',
+            title: 'Chữ liên quan',
+            iconPaths: '<path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/>',
+            badgeId: 'cardRelatedCountBadge',
+            content: '<div class="card-related-wrap" id="cardRelatedWrap" onclick="event.stopPropagation()"></div>',
+          })}
         </div>
 
         <div class="card-flip-prompt" id="cardFlipPrompt" onclick="flip()" role="button" tabindex="0" aria-label="Lật thẻ">
@@ -867,6 +852,27 @@ window.addEventListener('wheel', (e) => {
   e.preventDefault();
 }, { passive: false });
 
+// Collapsible section on the back of the card (radical breakdown, related words).
+// Starts hidden; renderCardRadicals / renderCardRelated show it when it has content.
+function cardAccordionHtml({ id, title, iconPaths, badgeId, bodyId, content }) {
+  return `
+          <details class="card-accordion" id="${id}" onclick="event.stopPropagation()" style="display: none;">
+            <summary class="card-accordion-summary" onclick="event.stopPropagation()">
+              <span class="accordion-left">
+                <span class="accordion-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">${iconPaths}</svg></span>
+                <span class="accordion-title">${title}</span>${badgeId ? `
+                <span class="accordion-badge" id="${badgeId}" hidden></span>` : ''}
+              </span>
+              <span class="accordion-chevron" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </summary>
+            <div class="card-accordion-body"${bodyId ? ` id="${bodyId}"` : ''}>
+              ${content}
+            </div>
+          </details>`;
+}
+
 // Open the study sidebar on `tab` (or close it when it is already showing that
 // tab, or when forceOpen === false). onOpen fills the tab's content.
 function toggleStudySidebarTab(tab, forceOpen, onOpen) {
@@ -1097,14 +1103,18 @@ function render(animate) {
   const content = document.getElementById('cardContent');
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  function celebrateDeckMilestone() {
+    if (typeof launchConfettiFireworks === 'function') launchConfettiFireworks();
+    if (typeof playCelebrationChime === 'function') playCelebrationChime();
+  }
+
   function renderEmptyCardState(container) {
     if (!container) return;
     const deck = typeof computeDeckProgress === 'function' ? computeDeckProgress() : { learned: 0, total: WORDS.length, known: 0, unknown: 0, unseen: 0 };
     const levelLabel = (LEVELS[currentLevel] && LEVELS[currentLevel].label) || 'cấp độ này';
 
     if (currentFilter === 'unseen' || (deck.unseen === 0 && deck.total > 0 && currentFilter !== 'unknown' && currentFilter !== 'known')) {
-      if (typeof launchConfettiFireworks === 'function') launchConfettiFireworks();
-      if (typeof playCelebrationChime === 'function') playCelebrationChime();
+      celebrateDeckMilestone();
       container.innerHTML = `
         <div class="achievement-hero-card">
           <div class="achievement-hero-trophy-wrap">
@@ -1148,8 +1158,7 @@ function render(animate) {
 
     if (currentFilter === 'unknown') {
       if (deck.known === deck.total && deck.total > 0) {
-        if (typeof launchConfettiFireworks === 'function') launchConfettiFireworks();
-        if (typeof playCelebrationChime === 'function') playCelebrationChime();
+        celebrateDeckMilestone();
         container.innerHTML = `
           <div class="achievement-hero-card">
             <div class="achievement-hero-trophy-wrap">

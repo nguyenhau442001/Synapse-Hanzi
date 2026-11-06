@@ -27,7 +27,9 @@ class TestVisualRefinement(unittest.TestCase):
     def test_accordion_icons_are_monochrome_svg(self):
         self.assertNotIn('aria-hidden="true">🧩</span>', JS)
         self.assertNotIn('aria-hidden="true">🔗</span>', JS)
-        self.assertEqual(JS.count('<span class="accordion-icon" aria-hidden="true"><svg'), 2)
+        # One shared accordion template renders an inline SVG icon for both accordions.
+        self.assertEqual(JS.count('<span class="accordion-icon" aria-hidden="true"><svg'), 1)
+        self.assertEqual(JS.count('${cardAccordionHtml({'), 2)
 
     def test_signature_author_before_metadata(self):
         sig = INDEX[INDEX.index('<div class="cs-credit">'):]

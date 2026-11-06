@@ -43,9 +43,10 @@ class TestFlashcardActiveRecall(unittest.TestCase):
 
     def test_accordions_present_in_template(self):
         """Flashcard template must contain both decomposition and related words accordions."""
-        self.assertIn('id="cardDecompAccordion"', self.fc_js)
-        self.assertIn('id="cardRelatedAccordion"', self.fc_js)
-        self.assertIn('id="cardDecompositionWrap"', self.fc_js)
+        # Both accordions are rendered through cardAccordionHtml().
+        self.assertIn("id: 'cardDecompAccordion'", self.fc_js)
+        self.assertIn("id: 'cardRelatedAccordion'", self.fc_js)
+        self.assertIn("bodyId: 'cardDecompositionWrap'", self.fc_js)
         self.assertIn('id="cardRelatedWrap"', self.fc_js)
 
     def test_accordions_controlled_in_js(self):
