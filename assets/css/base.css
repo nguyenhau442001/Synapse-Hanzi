@@ -1,22 +1,12 @@
 /* Chinese Classical Aesthetics (东方美学) Design Tokens, Reset, and Shared Shell */
 :root {
-  /* Authentic Chinese Classical Palette Tokens */
-  --c-vermilion: #A8322A;      /* 朱砂红 / 丹红 - Chinese Vermilion */
-  --c-imperial-red: #8F2525;   /* 故宫红 / 宫墙红 - Imperial Red */
-  --c-antique-gold: #C5A46D;   /* 古铜金 / 泥金 - Antique Gold */
-  --c-antique-gold-hover: #B8965E;
-  --c-ink-black: #292B30;      /* 水墨黑 / 烟墨 - Ink Black */
-  --c-ink-charcoal: #5A564F;   /* 焦墨 / 炭黑 */
-  --c-xuan-paper: #F3EBDD;     /* 宣纸原色 / 象牙宣 - Warm Xuan Paper */
-  --c-xuan-card: #FAF6EE;      /* 熟宣素白 / 精装书页 */
+  /* Authentic Chinese Classical Palette Tokens */      /* 朱砂红 / 丹红 - Chinese Vermilion */   /* 故宫红 / 宫墙红 - Imperial Red */
+  --c-antique-gold: #C5A46D;   /* 古铜金 / 泥金 - Antique Gold */      /* 水墨黑 / 烟墨 - Ink Black */   /* 焦墨 / 炭黑 */     /* 宣纸原色 / 象牙宣 - Warm Xuan Paper */      /* 熟宣素白 / 精装书页 */
   --c-jade-green: #527D70;     /* 翡翠绿 / 苍松绿 - Classical Jade Green */
-  --c-jade-text: #375F53;
-  --c-muted-bronze: #A88B62;   /* 青铜褐 / 泥金褐 - Muted Bronze */
-  --c-bronze-text: #7D633E;
+  --c-jade-text: #375F53;   /* 青铜褐 / 泥金褐 - Muted Bronze */
 
   /* Typography Font Stacks */
   --font-sans: Inter, "Be Vietnam Pro", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-cjk: "PingFang SC", "Songti SC", "SimSun", "STSong", "Noto Serif SC", "Hiragino Sans GB", "Microsoft YaHei", serif, sans-serif;
   --font-classical: "Songti SC", "Noto Serif SC", "STSong", "SimSun", serif;
 
   /* Theme semantic mappings - Light Mode */
@@ -28,7 +18,6 @@
   --text-secondary: #5A564F;
   --text-tertiary: #8C857B;
   --text-muted: #8E877C;
-  --text-progress-detail: #5A564F;
 
   --border-subtle: #E8E1D2;
   --border-strong: #C5A46D;
@@ -42,19 +31,15 @@
   /* Aliases & unified token architecture */
   --bg: #F7F3EA;
   --card-bg: #FFFFFF;
-  --bg-card: #FFFFFF;
   --border: #DDD4C4;
   --card-shadow: 0 2px 10px -2px rgba(41, 43, 48, 0.05), 0 1px 3px 0 rgba(41, 43, 48, 0.03);
-  --card-shadow-hover: 0 8px 24px -4px rgba(41, 43, 48, 0.08), 0 0 0 1px rgba(197, 164, 109, 0.35);
   --surface-subtle: #FAF6EE;
   --surface-chip: #F1EBDD;
   --progress-track: #E4DACE;
-  --heatmap-empty: #E4DACE;
 
   --accent: #A8322A;
   --accent-hover: #8F2525;
   --accent-gold: #C5A46D;
-  --accent-gold-hover: #B8965E;
   --accent-gradient: linear-gradient(135deg, #A8322A 0%, #8F2525 100%);
   --accent-gradient-hover: linear-gradient(135deg, #B83A31 0%, #A8322A 100%);
   --accent-light: rgba(168, 50, 42, 0.08);
@@ -65,7 +50,6 @@
   --success-text: #375F53;
   --danger-bg: #FAF0EE;
   --danger-text: #A8322A;
-  --danger-solid: #A8322A;
   --info-bg: #EEF3F5;
   --info-text: #3D6B78;
   --warning-bg: #FAF5EB;
@@ -75,7 +59,6 @@
   --example-border: #DDD2BE;
   --radius-lg: 16px;
   --radius-md: 10px;
-  --radius-pill: 999px;
 }
 
 /* Dark palette — Deep nocturnal ink wash (松烟黛墨) with subtle gold ornaments & cinnabar accents */
@@ -89,7 +72,6 @@
     --text-secondary: #B0A99C;
     --text-tertiary: #8A8376;
     --text-muted: #8A8376;
-    --text-progress-detail: #B0A99C;
 
     --border-subtle: #2D333D;
     --border-strong: rgba(184, 155, 104, 0.45);
@@ -102,18 +84,15 @@
 
     --bg: #17191D;
     --card-bg: #22252B;
-    --bg-card: #22252B;
     --border: #333945;
     --card-shadow: 0 6px 20px -3px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(184, 155, 104, 0.16);
     --surface-subtle: #22252B;
     --surface-chip: #2A303A;
     --progress-track: #282E38;
-    --heatmap-empty: #282E38;
 
     --accent: #A8322A;
     --accent-hover: #BF3B32;
     --accent-gold: #B89B68;
-    --accent-gold-hover: #C5A46D;
     --accent-gradient: linear-gradient(135deg, #A8322A 0%, #8F2525 100%);
     --accent-gradient-hover: linear-gradient(135deg, #BF3B32 0%, #A8322A 100%);
     --accent-light: rgba(168, 50, 42, 0.15);
@@ -124,7 +103,6 @@
     --success-text: #7FB8A7;
     --danger-bg: rgba(168, 50, 42, 0.16);
     --danger-text: #F0786E;
-    --danger-solid: #A8322A;
     --info-bg: rgba(82, 125, 112, 0.16);
     --info-text: #76B4A3;
     --warning-bg: rgba(184, 155, 104, 0.16);
@@ -133,7 +111,6 @@
     --example-border: #2D333D;
     --radius-lg: 16px;
     --radius-md: 10px;
-    --radius-pill: 999px;
   }
 }
 
@@ -147,7 +124,6 @@
   --text-secondary: #B0A99C;
   --text-tertiary: #8A8376;
   --text-muted: #8A8376;
-  --text-progress-detail: #B0A99C;
 
   --border-subtle: #2D333D;
   --border-strong: rgba(184, 155, 104, 0.45);
@@ -160,18 +136,15 @@
 
   --bg: #17191D;
   --card-bg: #22252B;
-  --bg-card: #22252B;
   --border: #333945;
   --card-shadow: 0 6px 20px -3px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(184, 155, 104, 0.16);
   --surface-subtle: #22252B;
   --surface-chip: #2A303A;
   --progress-track: #282E38;
-  --heatmap-empty: #282E38;
 
   --accent: #A8322A;
   --accent-hover: #BF3B32;
   --accent-gold: #B89B68;
-  --accent-gold-hover: #C5A46D;
   --accent-gradient: linear-gradient(135deg, #A8322A 0%, #8F2525 100%);
   --accent-gradient-hover: linear-gradient(135deg, #BF3B32 0%, #A8322A 100%);
   --accent-light: rgba(168, 50, 42, 0.15);
@@ -182,7 +155,6 @@
   --success-text: #7FB8A7;
   --danger-bg: rgba(168, 50, 42, 0.16);
   --danger-text: #F0786E;
-  --danger-solid: #A8322A;
   --info-bg: rgba(82, 125, 112, 0.16);
   --info-text: #76B4A3;
   --warning-bg: rgba(184, 155, 104, 0.16);
@@ -191,7 +163,6 @@
   --example-border: #2D333D;
   --radius-lg: 16px;
   --radius-md: 10px;
-  --radius-pill: 999px;
 }
 /* Chinese Classical Landscape Canvas (梅花与水墨意境背景) */
 .chinese-aesthetic-bg {
