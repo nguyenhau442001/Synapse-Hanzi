@@ -1469,174 +1469,72 @@ function render(animate) {
     document.getElementById('exPy').innerHTML = w.example_py;
     document.getElementById('exVi').innerHTML = w.example_vi;
 
-    // Cập nhật hình ảnh minh họa trực quan (Visual Mnemonic Anchor)
+    // Cập nhật hình ảnh minh họa trực quan (Visual Mnemonic Anchor): inline SVG, or an <img> fallback.
     const visualCol = document.getElementById('cardVisualCol');
     const imgEl = document.getElementById('cardIllustrationImg');
     const svgEl = document.getElementById('cardIllustrationSvg');
     const frameEl = document.getElementById('cardIllustrationFrame');
+    const setShown = (el, display) => {
+      if (!el) return;
+      el.hidden = !display;
+      el.style.display = display || 'none';
+    };
+    const hideIllustration = () => {
+      setShown(visualCol, null);
+      if (svgEl) { setShown(svgEl, null); svgEl.innerHTML = ''; }
+      if (imgEl) { setShown(imgEl, null); imgEl.removeAttribute('src'); }
+      syncCardSupportingGroup();
+    };
+    const finishLoading = () => {
+      if (frameEl) frameEl.classList.remove('is-loading');
+      syncCardSupportingGroup();
+    };
+    const showSvg = svg => {
+      svgEl.innerHTML = normalizeSvgViewBox(svg);
+      setShown(svgEl, 'flex');
+      setShown(imgEl, null);
+      imgEl.removeAttribute('src');
+      finishLoading();
+    };
+    const showImg = src => {
+      imgEl.onerror = hideIllustration;
+      imgEl.onload = () => {
+        setShown(imgEl, 'block');
+        setShown(svgEl, null);
+        svgEl.innerHTML = '';
+        setShown(visualCol, 'flex');
+        syncCardSupportingGroup();
+      };
+      imgEl.src = src;
+      imgEl.alt = 'Minh họa gợi hình';
+      finishLoading();
+    };
+    const cachedSvgFor = (src, word) => (typeof SynapseSvgCache !== 'undefined')
+      ? (SynapseSvgCache.get(src) || (word.hanzi && SynapseSvgCache.get(word.hanzi)))
+      : null;
 
-    if (imgEl && svgEl && typeof getWordIllustration === 'function' && showIllustration) {
-      const illu = getWordIllustration(w);
-      if (illu && !illu.isFallback && (illu.src || (illu.type === 'svg' && illu.svg))) {
-        if (visualCol) {
-          visualCol.hidden = false;
-          visualCol.removeAttribute('hidden');
-          visualCol.style.display = 'flex';
-        }
-        if (frameEl) frameEl.title = 'Minh họa gợi hình';
-
-        if (illu.type === 'svg' && illu.svg) {
-          svgEl.innerHTML = normalizeSvgViewBox(illu.svg);
-          svgEl.hidden = false;
-          svgEl.removeAttribute('hidden');
-          svgEl.style.display = 'flex';
-          imgEl.hidden = true;
-          imgEl.setAttribute('hidden', '');
-          imgEl.style.display = 'none';
-          imgEl.removeAttribute('src');
-          if (frameEl) frameEl.classList.remove('is-loading');
-          syncCardSupportingGroup();
-        } else if (illu.src || w.hanzi) {
-          const cachedSvg = (typeof SynapseSvgCache !== 'undefined')
-            ? (SynapseSvgCache.get(illu.src) || (w.hanzi && SynapseSvgCache.get(w.hanzi)))
-            : null;
-          if (cachedSvg) {
-            // INSTANT RENDER (0ms latency from RAM cache)
-            svgEl.innerHTML = normalizeSvgViewBox(cachedSvg);
-            svgEl.hidden = false;
-            svgEl.removeAttribute('hidden');
-            svgEl.style.display = 'flex';
-            imgEl.hidden = true;
-            imgEl.setAttribute('hidden', '');
-            imgEl.style.display = 'none';
-            imgEl.removeAttribute('src');
-            if (frameEl) frameEl.classList.remove('is-loading');
-            syncCardSupportingGroup();
-          } else {
-            // Cache miss: show smooth shimmer without layout shift
-            const curWord = w;
-            if (frameEl) frameEl.classList.add('is-loading');
-
-            if (typeof preloadIllustration === 'function') {
-              preloadIllustration(illu.src || w, 'high').then(svgText => {
-                if (typeof activeStudyWord !== 'undefined' && activeStudyWord && (activeStudyWord === curWord || activeStudyWord.hanzi === curWord.hanzi)) {
-                  const resolvedSvg = svgText || (typeof SynapseSvgCache !== 'undefined' && (SynapseSvgCache.get(illu.src) || (curWord.hanzi && SynapseSvgCache.get(curWord.hanzi))));
-                  if (resolvedSvg) {
-                    svgEl.innerHTML = normalizeSvgViewBox(resolvedSvg);
-                    svgEl.hidden = false;
-                    svgEl.removeAttribute('hidden');
-                    svgEl.style.display = 'flex';
-                    imgEl.hidden = true;
-                    imgEl.setAttribute('hidden', '');
-                    imgEl.style.display = 'none';
-                    imgEl.removeAttribute('src');
-                  } else {
-                    imgEl.onerror = () => {
-                      if (visualCol) {
-                        visualCol.style.display = 'none';
-                        visualCol.hidden = true;
-                        visualCol.setAttribute('hidden', '');
-                      }
-                      if (svgEl) { svgEl.hidden = true; svgEl.style.display = 'none'; svgEl.innerHTML = ''; }
-                      if (imgEl) { imgEl.hidden = true; imgEl.style.display = 'none'; imgEl.removeAttribute('src'); }
-                      syncCardSupportingGroup();
-                    };
-                    imgEl.onload = () => {
-                      imgEl.hidden = false;
-                      imgEl.removeAttribute('hidden');
-                      imgEl.style.display = 'block';
-                      svgEl.hidden = true;
-                      svgEl.setAttribute('hidden', '');
-                      svgEl.style.display = 'none';
-                      svgEl.innerHTML = '';
-                      if (visualCol) {
-                        visualCol.hidden = false;
-                        visualCol.removeAttribute('hidden');
-                        visualCol.style.display = 'flex';
-                      }
-                      syncCardSupportingGroup();
-                    };
-                    imgEl.src = illu.src;
-                    imgEl.alt = 'Minh họa gợi hình';
-                  }
-                  if (frameEl) frameEl.classList.remove('is-loading');
-                  syncCardSupportingGroup();
-                }
-              }).catch(() => {
-                imgEl.onerror = () => {
-                  if (visualCol) {
-                    visualCol.style.display = 'none';
-                    visualCol.hidden = true;
-                    visualCol.setAttribute('hidden', '');
-                  }
-                  syncCardSupportingGroup();
-                };
-                imgEl.onload = () => {
-                  imgEl.hidden = false;
-                  imgEl.removeAttribute('hidden');
-                  imgEl.style.display = 'block';
-                  svgEl.hidden = true;
-                  svgEl.setAttribute('hidden', '');
-                  svgEl.style.display = 'none';
-                  svgEl.innerHTML = '';
-                  if (visualCol) {
-                    visualCol.hidden = false;
-                    visualCol.removeAttribute('hidden');
-                    visualCol.style.display = 'flex';
-                  }
-                  syncCardSupportingGroup();
-                };
-                imgEl.src = illu.src;
-                imgEl.alt = 'Minh họa gợi hình';
-                if (frameEl) frameEl.classList.remove('is-loading');
-                syncCardSupportingGroup();
-              });
-            } else {
-              imgEl.onerror = () => {
-                if (visualCol) {
-                  visualCol.style.display = 'none';
-                  visualCol.hidden = true;
-                  visualCol.setAttribute('hidden', '');
-                }
-                syncCardSupportingGroup();
-              };
-              imgEl.onload = () => {
-                imgEl.hidden = false;
-                imgEl.removeAttribute('hidden');
-                imgEl.style.display = 'block';
-                svgEl.hidden = true;
-                svgEl.setAttribute('hidden', '');
-                svgEl.style.display = 'none';
-                svgEl.innerHTML = '';
-                if (visualCol) {
-                  visualCol.hidden = false;
-                  visualCol.removeAttribute('hidden');
-                  visualCol.style.display = 'flex';
-                }
-                syncCardSupportingGroup();
-              };
-              imgEl.src = illu.src;
-              imgEl.alt = 'Minh họa gợi hình';
-              if (frameEl) frameEl.classList.remove('is-loading');
-              syncCardSupportingGroup();
-            }
-          }
-        }
+    const illu = (imgEl && svgEl && showIllustration && typeof getWordIllustration === 'function') ? getWordIllustration(w) : null;
+    if (illu && !illu.isFallback && (illu.src || (illu.type === 'svg' && illu.svg))) {
+      setShown(visualCol, 'flex');
+      if (frameEl) frameEl.title = 'Minh họa gợi hình';
+      const readySvg = (illu.type === 'svg' && illu.svg) ? illu.svg : cachedSvgFor(illu.src, w);
+      if (readySvg) {
+        showSvg(readySvg); // instant render from the in-memory cache
+      } else if (typeof preloadIllustration === 'function') {
+        // Cache miss: shimmer while fetching, then render only if the card is still on screen.
+        const curWord = w;
+        if (frameEl) frameEl.classList.add('is-loading');
+        preloadIllustration(illu.src || w, 'high').then(svgText => {
+          if (typeof activeStudyWord === 'undefined' || !activeStudyWord ||
+              (activeStudyWord !== curWord && activeStudyWord.hanzi !== curWord.hanzi)) return;
+          const svg = svgText || cachedSvgFor(illu.src, curWord);
+          if (svg) showSvg(svg); else showImg(illu.src);
+        }).catch(() => showImg(illu.src));
       } else {
-        if (visualCol) {
-          visualCol.style.display = 'none';
-          visualCol.hidden = true;
-          visualCol.setAttribute('hidden', '');
-        }
-        if (svgEl) { svgEl.hidden = true; svgEl.style.display = 'none'; svgEl.innerHTML = ''; }
-        if (imgEl) { imgEl.hidden = true; imgEl.style.display = 'none'; imgEl.removeAttribute('src'); }
+        showImg(illu.src);
       }
-    } else if (visualCol) {
-      visualCol.style.display = 'none';
-      visualCol.hidden = true;
-      visualCol.setAttribute('hidden', '');
-      if (svgEl) { svgEl.hidden = true; svgEl.style.display = 'none'; svgEl.innerHTML = ''; }
-      if (imgEl) { imgEl.hidden = true; imgEl.style.display = 'none'; imgEl.removeAttribute('src'); }
+    } else {
+      hideIllustration();
     }
     syncCardSupportingGroup();
 
