@@ -1193,49 +1193,7 @@ if ('serviceWorker' in navigator) {
   </div>
 
   <!-- SCREEN 8: Guess-the-word (emoji) game -->
-  <div id="screenGuessWord" style="display:none">
-    <div class="guess-word-game">
-      <header class="guess-word-header">
-        <div class="guess-word-header-main">
-          <div class="guess-word-title-group">
-            <h2 class="guess-word-title">🎨 Đuổi hình bắt chữ</h2>
-            <span class="guess-word-level-badge" id="guessWordLevelBadge">HSK 1</span>
-          </div>
-          <div class="guess-word-meta">
-            <span class="guess-word-counter" id="guessWordCounter">Đang tải...</span>
-          </div>
-        </div>
-      </header>
-
-      <section class="guess-word-card" aria-label="Bảng câu hỏi đuổi hình bắt chữ">
-        <div class="guess-word-prompt-box">
-          <div class="guess-word-prompt-label">Gợi ý hình ảnh</div>
-          <div class="guess-word-clue-frame">
-            <span class="guess-word-emoji" id="guessWordEmoji" role="img" aria-label="Gợi ý hình ảnh"></span>
-          </div>
-          <p class="guess-word-question-text">Chọn từ chữ Hán phù hợp nhất với hình ảnh trên:</p>
-        </div>
-
-        <div class="guess-word-options" id="guessWordOptions" role="group" aria-label="Các lựa chọn chữ Hán"></div>
-
-        <div class="guess-word-feedback" id="guessWordFeedback" role="status" aria-live="polite"></div>
-
-        <div class="guess-word-explanation" id="guessWordExplanation" hidden></div>
-
-        <div class="guess-word-actions">
-          <button type="button" class="game-next-btn guess-word-next-btn" id="guessWordNextBtn" onclick="loadNextGuessWordRound()" hidden>
-            <span>Câu tiếp theo</span>
-            <span class="next-btn-arrow">→</span>
-          </button>
-        </div>
-
-        <div class="guess-word-hints-footer">
-          <span class="guess-word-hint-item"><kbd>1</kbd>–<kbd>4</kbd> Chọn đáp án</span>
-          <span class="guess-word-hint-item"><kbd>Enter</kbd> hoặc <kbd>Space</kbd> Sang câu tiếp</span>
-        </div>
-      </section>
-    </div>
-  </div>
+  <div id="screenGuessWord" style="display:none"></div><!-- Preact island: src/islands/GuessWordGame.jsx -->
 
   <!-- SCREEN 9: Speed quiz game -->
   <div id="screenSpeedQuiz" style="display:none">
@@ -1341,7 +1299,6 @@ if ('serviceWorker' in navigator) {
 <script src="assets/js/topics.js?v=3.14.6"></script>
 <script src="assets/js/hsk30.js?v=3.14.6"></script>
 <script src="assets/js/sentence-game.js?v=3.14.6"></script>
-<script src="assets/js/guess-word-game.js?v=3.14.6"></script>
 <script src="assets/js/speed-quiz-game.js?v=3.14.6"></script>
 <script src="assets/js/vocabulary-overview.js?v=3.14.6"></script>
 <script src="assets/js/fast-review.js?v=3.14.6"></script>
