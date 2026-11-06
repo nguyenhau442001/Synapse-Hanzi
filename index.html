@@ -1196,83 +1196,7 @@ if ('serviceWorker' in navigator) {
   <div id="screenGuessWord" style="display:none"></div><!-- Preact island: src/islands/GuessWordGame.jsx -->
 
   <!-- SCREEN 9: Speed quiz game -->
-  <div id="screenSpeedQuiz" style="display:none">
-    <div class="speed-quiz-game">
-      <header class="speed-quiz-header">
-        <div class="speed-quiz-header-main">
-          <div class="speed-quiz-title-group">
-            <h2 class="speed-quiz-title">⚡ Điền từ vào câu</h2>
-            <span class="speed-quiz-badge" id="speedQuizRoundBadge">Thử thách tốc độ</span>
-          </div>
-          <div class="speed-quiz-header-actions">
-            <button type="button" class="speed-quiz-exit-btn" onclick="exitSpeedQuizGame()" title="Thoát trò chơi (Esc)" aria-label="Thoát trò chơi">✕ Thoát</button>
-          </div>
-        </div>
-      </header>
-
-      <section class="speed-quiz-card" aria-label="Bảng câu hỏi điền từ vào câu">
-        <div class="speed-quiz-scoreboard">
-          <span class="speed-quiz-score-badge" id="speedQuizScore">Điểm: 0</span>
-          <span id="speedQuizStreak" class="speed-quiz-streak"></span>
-          <span class="speed-quiz-best-badge" id="speedQuizBest">Kỷ lục: 0</span>
-        </div>
-
-        <div class="speed-quiz-timer-track">
-          <div class="speed-quiz-timer-bar" id="speedQuizTimerBar"></div>
-        </div>
-
-        <div class="speed-quiz-question-box">
-          <div class="speed-quiz-prompt-label">Điền từ thích hợp vào chỗ trống:</div>
-          <div class="speed-quiz-word" id="speedQuizWord"></div>
-          <div class="speed-quiz-meaning" id="speedQuizMeaning"></div>
-        </div>
-
-        <div class="speed-quiz-options" id="speedQuizOptions" role="group" aria-label="Các lựa chọn đáp án"></div>
-
-        <div class="speed-quiz-feedback" id="speedQuizFeedback" role="status" aria-live="polite"></div>
-
-        <div class="speed-quiz-actions">
-          <button type="button" class="speed-quiz-explain-btn" id="speedQuizExplainBtn" onclick="openSpeedQuizExplanationModal()" hidden>
-            <span class="explain-btn-icon" aria-hidden="true">💡</span>
-            <span>Xem giải thích</span>
-          </button>
-          <button type="button" class="game-next-btn speed-quiz-next-btn" id="speedQuizNextBtn" onclick="loadNextSpeedQuizRound()" hidden>
-            <span>Câu tiếp theo</span>
-            <span class="next-btn-arrow">→</span>
-            <kbd class="btn-kbd-hint">Enter ↵</kbd>
-          </button>
-        </div>
-
-        <div class="speed-quiz-hints-footer">
-          <span class="speed-quiz-hint-item"><kbd>1</kbd>–<kbd>4</kbd> Chọn đáp án</span>
-          <span class="speed-quiz-hint-item"><kbd>Enter</kbd> Câu tiếp</span>
-          <span class="speed-quiz-hint-item"><kbd>Esc</kbd> Thoát</span>
-        </div>
-      </section>
-
-      <!-- Detailed Explanation Modal (opens on click 'Xem giải thích') -->
-      <dialog class="speed-quiz-modal" id="speedQuizExplainModal" aria-labelledby="sqmTitle">
-        <div class="sqm-backdrop" onclick="closeSpeedQuizExplanationModal()"></div>
-        <div class="sqm-dialog-content">
-          <header class="sqm-header">
-            <div class="sqm-header-title">
-              <span class="sqm-badge-icon" aria-hidden="true">💡</span>
-              <h3 id="sqmTitle" class="sqm-title">Giải thích đáp án &amp; Ngữ pháp</h3>
-            </div>
-            <button type="button" class="sqm-close-btn" onclick="closeSpeedQuizExplanationModal()" aria-label="Đóng bảng giải thích">✕</button>
-          </header>
-          <div class="sqm-body" id="speedQuizModalBody"></div>
-          <footer class="sqm-footer">
-            <button type="button" class="sqm-btn sqm-btn-secondary" onclick="closeSpeedQuizExplanationModal()">Đóng</button>
-            <button type="button" class="sqm-btn sqm-btn-primary" onclick="closeSpeedQuizExplanationModal(); loadNextSpeedQuizRound();">
-              <span>Câu tiếp theo</span>
-              <span aria-hidden="true">→</span>
-            </button>
-          </footer>
-        </div>
-      </dialog>
-    </div>
-  </div>
+  <div id="screenSpeedQuiz" style="display:none"></div><!-- Preact island: src/islands/SpeedQuizGame.jsx -->
 
   <!-- SCREEN 10: Reading & Analysis -->
   <div id="screenReadingAnalysis" style="display:none"></div>
@@ -1299,7 +1223,6 @@ if ('serviceWorker' in navigator) {
 <script src="assets/js/topics.js?v=3.14.6"></script>
 <script src="assets/js/hsk30.js?v=3.14.6"></script>
 <script src="assets/js/sentence-game.js?v=3.14.6"></script>
-<script src="assets/js/speed-quiz-game.js?v=3.14.6"></script>
 <script src="assets/js/vocabulary-overview.js?v=3.14.6"></script>
 <script src="assets/js/fast-review.js?v=3.14.6"></script>
 <script src="assets/js/hanviet-dict.js?v=3.14.6"></script>

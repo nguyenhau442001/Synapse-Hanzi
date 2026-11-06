@@ -3,6 +3,8 @@
 // rendering identical markup so the existing CSS applies unchanged.
 import { mountStudyHelpModal } from './StudyHelpModal';
 import { mountGuessWordGame } from './GuessWordGame';
+import { mountSpeedQuizGame } from './SpeedQuizGame';
 
 mountStudyHelpModal();
 mountGuessWordGame();
+mountSpeedQuizGame();
