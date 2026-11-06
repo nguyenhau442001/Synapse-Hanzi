@@ -4859,12 +4859,6 @@ body.flashcard-study-mode .card.is-flipped .card-visual-col[hidden] {
   font-size: 10.5px;
   padding: 0 5px;
 }
-#screenVocabHub .creator-signature .cs-link {
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-}
 #screenVocabHub .creator-signature .cs-link:hover,
 #screenVocabHub .creator-signature .cs-link:focus-visible {
   border-bottom-color: currentColor;
@@ -4936,17 +4930,6 @@ body.flashcard-study-mode .example-box .ex-label {
   letter-spacing: 0.12em;
   color: var(--text-tertiary);
 }
-body.flashcard-study-mode .example-box .ex-zh {
-  font-size: clamp(17px, 1.6vw, 19px);
-  font-weight: 600;
-  color: var(--text-primary);
-}
-body.flashcard-study-mode .example-box .ex-zh u {
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
-}
-body.flashcard-study-mode .example-box .ex-py { font-size: 13.5px; }
-body.flashcard-study-mode .example-box .ex-vi { font-size: 15px; }
 body.flashcard-study-mode .example-sound-btn {
   border-color: rgba(168, 50, 42, 0.25);
 }
@@ -4986,13 +4969,6 @@ body.flashcard-study-mode .study-nav-btn,
 body.flashcard-study-mode .nav-btn {
   padding: 0 16px;
   box-shadow: none;
-}
-body.flashcard-study-mode .study-nav-position {
-  box-sizing: border-box;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 14px;
 }
 @media (max-width: 767px) {
   body.flashcard-study-mode .study-nav-controls,
@@ -5111,6 +5087,9 @@ body.flashcard-study-mode #cardArea > .card::after { display: none; }
 }
 #screenVocabHub .creator-signature .cs-links { display: inline-flex; gap: 6px; }
 #screenVocabHub .creator-signature .cs-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
   height: 22px;
   padding: 0 8px;
   gap: 5px;
@@ -5196,10 +5175,27 @@ body.flashcard-study-mode .card.is-flipped .example-box,
   border-radius: 12px;
   box-shadow: none;
 }
-body.flashcard-study-mode .example-box .ex-zh { margin-top: 2px; }
-body.flashcard-study-mode .example-box .ex-zh u { text-decoration-color: var(--accent); }
-body.flashcard-study-mode .example-box .ex-py { margin-top: 1px; color: var(--text-tertiary); }
-body.flashcard-study-mode .example-box .ex-vi { margin-top: 3px; color: var(--text-secondary); }
+body.flashcard-study-mode .example-box .ex-zh {
+  font-size: clamp(17px, 1.6vw, 19px);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 2px;
+}
+body.flashcard-study-mode .example-box .ex-zh u {
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--accent);
+}
+body.flashcard-study-mode .example-box .ex-py {
+  font-size: 13.5px;
+  margin-top: 1px;
+  color: var(--text-tertiary);
+}
+body.flashcard-study-mode .example-box .ex-vi {
+  font-size: 15px;
+  margin-top: 3px;
+  color: var(--text-secondary);
+}
 body.flashcard-study-mode .example-sound-btn,
 :root[data-theme="dark"] body.flashcard-study-mode .example-sound-btn {
   width: 32px;
@@ -5351,6 +5347,11 @@ body.flashcard-study-mode .nav-btn:hover {
   background: var(--hs-card);
 }
 body.flashcard-study-mode .study-nav-position {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 14px;
   border: 1px solid transparent;
   background: transparent;
   font-variant-numeric: tabular-nums;

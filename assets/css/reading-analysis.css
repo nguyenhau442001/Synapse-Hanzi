@@ -721,10 +721,6 @@ body.dark-mode .builder-tile {
   border-radius: 4px;
 }
 
-.cloze-options-grid {
-  margin-bottom: 16px;
-}
-
 .cloze-option-btn {
   padding: 12px 16px;
   border-radius: var(--radius-md);
@@ -1998,6 +1994,7 @@ body.dark-mode .sge-content {
 }
 
 .cloze-options-grid {
+  margin-bottom: 16px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 12px;

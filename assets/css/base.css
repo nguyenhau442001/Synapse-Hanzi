@@ -257,11 +257,6 @@ body {
 }
 
 /* App Header with Chinese Cultural Branding */
-.app-header-brand {
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 4px;
-}
 .app-header h1 {
   font-size: 21px;
   font-weight: 700;
@@ -296,6 +291,9 @@ body {
   box-sizing: border-box;
 }
 .app-header-brand {
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
   flex: 0 0 auto;
   text-align: left;
   display: flex;
