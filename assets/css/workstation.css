@@ -1626,17 +1626,8 @@ body.flashcard-study-mode .hanzi-stage:hover {
   background: rgba(168, 50, 42, 0.03);
 }
 
-body.flashcard-study-mode .hanzi {
-  text-align: center;
-  padding: 0 16px;
-}
 body.flashcard-study-mode .hanzi-stage:hover .hanzi {
   transform: scale(1.02);
-}
-
-/* Pinyin & Sound */
-body.flashcard-study-mode .pinyin-row {
-  margin-top: 4px;
 }
 
 /* Meta badges: POS · Level · Han-Viet - Clean Neutral Editorial Line */
@@ -1950,6 +1941,8 @@ body.flashcard-study-mode .hanviet-badge {
 }
 
 body.flashcard-study-mode .hanzi {
+  text-align: center;
+  padding: 0 16px;
   font-family: "PingFang SC", "Songti SC", "SimSun", "STSong", "Noto Serif SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", serif, sans-serif;
   font-size: clamp(84px, 8.5vw, 104px);
   font-weight: 600;
@@ -4855,10 +4848,6 @@ body.flashcard-study-mode .card.is-flipped .card-visual-col[hidden] {
   gap: 2px 8px;
 }
 #screenVocabHub .creator-signature .cs-dot { opacity: 0.6; margin: 0 -2px; }
-#screenVocabHub .creator-signature .footer-version {
-  font-size: 10.5px;
-  padding: 0 5px;
-}
 #screenVocabHub .creator-signature .cs-link:hover,
 #screenVocabHub .creator-signature .cs-link:focus-visible {
   border-bottom-color: currentColor;
@@ -4903,7 +4892,6 @@ body.flashcard-study-mode .card.is-flipped .card-visual-col[hidden] {
 }
 
 /* --- Progress: accent for primary progress, sage only for "remembered" --- */
-body.flashcard-study-mode .progress-nav-level-tag { font-weight: 700; letter-spacing: 0.02em; }
 body.flashcard-study-mode .progress-nav-metric-val { color: var(--text-primary); font-weight: 700; }
 body.flashcard-study-mode .progress-nav-metric-pct { font-weight: 700; }
 body.flashcard-study-mode .progress-nav-track {
@@ -5051,7 +5039,12 @@ body.flashcard-study-mode .progress-nav-stat--known .progress-nav-stat-dot,
 :root[data-theme="dark"] body.flashcard-study-mode .progress-nav-stat--known .progress-nav-stat-dot { background: var(--accent); }
 body.flashcard-study-mode .progress-nav-seg--unknown,
 body.flashcard-study-mode .progress-nav-stat--unknown .progress-nav-stat-dot { background: #DDB89A; }
-body.flashcard-study-mode .progress-nav-level-tag { color: var(--hs-accent-ink); border-color: var(--hs-accent-line); }
+body.flashcard-study-mode .progress-nav-level-tag {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--hs-accent-ink);
+  border-color: var(--hs-accent-line);
+}
 body.flashcard-study-mode .progress-nav-card.is-active,
 :root[data-theme="dark"] body.flashcard-study-mode .progress-nav-card.is-active {
   border-color: var(--hs-accent-line);
@@ -5110,6 +5103,8 @@ body.flashcard-study-mode #cardArea > .card::after { display: none; }
 }
 #screenVocabHub .creator-signature .cs-meta { font-size: 11px; color: var(--text-tertiary); opacity: 1; }
 #screenVocabHub .creator-signature .footer-version {
+  font-size: 10.5px;
+  padding: 0 5px;
   border: 1px solid var(--hs-beige);
   background: transparent;
   color: var(--text-tertiary);

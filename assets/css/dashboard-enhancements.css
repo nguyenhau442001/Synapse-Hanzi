@@ -205,9 +205,6 @@
   height: 5.5px;
   margin-top: 2px;
 }
-.level-card .lvl-mastery-fill {
-  height: 100%;
-}
 .level-card-bottom {
   display: flex;
   align-items: center;
@@ -617,8 +614,8 @@ body.home-screen .dashboard-bottom-widgets .hw-card:hover {
 }
 
 /* Dashboard contrast and active-level accent */
-.level-card .lvl-mastery-track { border-radius: 999px; overflow: hidden; }
 .level-card .lvl-mastery-fill {
+  height: 100%;
   background: var(--brand-primary);
   border-radius: 999px;
   transition: width 240ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -765,7 +762,11 @@ body.home-screen .dashboard-bottom-widgets .hw-card:hover {
 .level-card:not(.is-active-level) .lvl-num { color: var(--text-primary); }
 .level-card .lvl-label,
 .level-card .lvl-count { color: var(--text-secondary); }
-.level-card .lvl-mastery-track { background: var(--progress-track); }
+.level-card .lvl-mastery-track {
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--progress-track);
+}
 .level-card .lvl-mastery-text { color: var(--text-secondary); }
 .level-card .lvl-percent-complete { color: var(--text-secondary); }
 .level-card:hover { border-color: color-mix(in srgb, var(--text-secondary) 40%, var(--border)); }
