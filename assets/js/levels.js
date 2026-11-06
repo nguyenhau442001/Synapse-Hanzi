@@ -268,6 +268,15 @@ function renderMonthGridHtml(grid) {
     </div>`;
 }
 
+// Summary line + "Ít … Nhiều" intensity legend shown under the month and year views.
+function historyFooterHtml(studiedDays, totalMinutes) {
+  const swatches = [0, 1, 2, 3, 4].map(b => `<span class="history-legend-swatch bucket-${b}"></span>`).join('');
+  return `<div class="history-footer">
+      <div class="history-summary">${studiedDays} ngày học · ${formatStudyDuration(totalMinutes)}</div>
+      <div class="history-legend"><span>Ít</span>${swatches}<span>Nhiều</span></div>
+    </div>`;
+}
+
 function renderMonthView(activity) {
   const { year, month } = historyModalCursor;
   const grid = buildMonthGrid(activity.days, year, month);
@@ -276,18 +285,7 @@ function renderMonthView(activity) {
 
   return `
     ${renderMonthGridHtml(grid)}
-    <div class="history-footer">
-      <div class="history-summary">${studiedDays} ngày học · ${formatStudyDuration(totalMinutes)}</div>
-      <div class="history-legend">
-        <span>Ít</span>
-        <span class="history-legend-swatch bucket-0"></span>
-        <span class="history-legend-swatch bucket-1"></span>
-        <span class="history-legend-swatch bucket-2"></span>
-        <span class="history-legend-swatch bucket-3"></span>
-        <span class="history-legend-swatch bucket-4"></span>
-        <span>Nhiều</span>
-      </div>
-    </div>`;
+    ${historyFooterHtml(studiedDays, totalMinutes)}`;
 }
 
 const MINI_MONTH_LABELS = ['Th 1', 'Th 2', 'Th 3', 'Th 4', 'Th 5', 'Th 6', 'Th 7', 'Th 8', 'Th 9', 'Th 10', 'Th 11', 'Th 12'];
@@ -311,18 +309,7 @@ function renderYearView(activity) {
 
   return `
     <div class="history-year-grid">${months}</div>
-    <div class="history-footer">
-      <div class="history-summary">${summary.studiedDays} ngày học · ${formatStudyDuration(summary.totalMinutes)}</div>
-      <div class="history-legend">
-        <span>Ít</span>
-        <span class="history-legend-swatch bucket-0"></span>
-        <span class="history-legend-swatch bucket-1"></span>
-        <span class="history-legend-swatch bucket-2"></span>
-        <span class="history-legend-swatch bucket-3"></span>
-        <span class="history-legend-swatch bucket-4"></span>
-        <span>Nhiều</span>
-      </div>
-    </div>`;
+    ${historyFooterHtml(summary.studiedDays, summary.totalMinutes)}`;
 }
 
 function renderHistoryModalBody() {
@@ -716,6 +703,42 @@ function goBackToPicker() {
   }
 }
 
+// Index in WORDS of a word given its id or its hanzi (-1 when absent).
+function findWordIndex(wordIdOrHanzi) {
+  return WORDS.findIndex(w => (w.id && String(w.id) === String(wordIdOrHanzi)) || w.hanzi === wordIdOrHanzi);
+}
+
+// Switch the study area to the flashcard tab (hide the vocabulary overview).
+function showFlashcardStudyView() {
+  currentView = 'cards';
+  const studyView = document.getElementById('studyView');
+  const overviewView = document.getElementById('overviewView');
+  if (studyView) studyView.hidden = false;
+  if (overviewView) overviewView.hidden = true;
+  const flashcardTab = document.getElementById('flashcardTab');
+  const overviewTab = document.getElementById('overviewTab');
+  if (flashcardTab) {
+    flashcardTab.classList.add('active');
+    flashcardTab.setAttribute('aria-selected', 'true');
+  }
+  if (overviewTab) {
+    overviewTab.classList.remove('active');
+    overviewTab.setAttribute('aria-selected', 'false');
+  }
+}
+
+// Optionally flip the current card, then scroll the word into view in the study list.
+function revealAndHighlightWord(wordIndex, autoReveal) {
+  if (autoReveal && typeof flip === 'function') {
+    const meaning = document.getElementById('meaning');
+    if (meaning && !meaning.classList.contains('show')) flip();
+  }
+  setTimeout(() => {
+    const listBtn = document.querySelector(`.study-word-list-item[data-word-index="${wordIndex}"]`);
+    if (listBtn) listBtn.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  }, 100);
+}
+
 async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal = false) {
   celebrationShown = false;
   const overlay = document.getElementById('celebrationOverlay');
@@ -820,29 +843,15 @@ async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal = false
   buildCardArea();
   renderFilters();
 
-  currentView = 'cards';
-  const studyView = document.getElementById('studyView');
-  const overviewView = document.getElementById('overviewView');
-  if (studyView) studyView.hidden = false;
-  if (overviewView) overviewView.hidden = true;
-  const flashcardTab = document.getElementById('flashcardTab');
-  const overviewTab = document.getElementById('overviewTab');
-  if (flashcardTab) {
-    flashcardTab.classList.add('active');
-    flashcardTab.setAttribute('aria-selected', 'true');
-  }
-  if (overviewTab) {
-    overviewTab.classList.remove('active');
-    overviewTab.setAttribute('aria-selected', 'false');
-  }
+  showFlashcardStudyView();
 
   if (transitionTimer) {
     clearTimeout(transitionTimer);
     transitionTimer = null;
   }
 
+  const targetIdx = targetWordIdOrHanzi ? findWordIndex(targetWordIdOrHanzi) : -1;
   if (targetWordIdOrHanzi) {
-    const targetIdx = WORDS.findIndex(w => (w.id && String(w.id) === String(targetWordIdOrHanzi)) || w.hanzi === targetWordIdOrHanzi);
     if (targetIdx >= 0) {
       currentFilter = 'all';
       filteredOrder = order.slice();
@@ -855,29 +864,13 @@ async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal = false
   }
 
   // Instant-Load Preloading: Trigger deck-wide progressive background preloading anchored at current idx
-  if (typeof preloadDeckIllustrations === 'function') {
-    preloadDeckIllustrations(WORDS, idx, filteredOrder, currentLevel);
-  } else if (typeof preloadWordsIllustrations === 'function') {
-    preloadWordsIllustrations(WORDS, 50);
-  }
+  preloadDeckIllustrations(WORDS, idx, filteredOrder, currentLevel);
 
   render();
 
-  if (targetWordIdOrHanzi) {
-    const targetIdx = WORDS.findIndex(w => (w.id && String(w.id) === String(targetWordIdOrHanzi)) || w.hanzi === targetWordIdOrHanzi);
-    if (targetIdx >= 0) {
-      setActiveStudyWord(WORDS[targetIdx]);
-      if (autoReveal && typeof flip === 'function') {
-        const meaning = document.getElementById('meaning');
-        if (meaning && !meaning.classList.contains('show')) {
-          flip();
-        }
-      }
-      setTimeout(() => {
-        const listBtn = document.querySelector(`.study-word-list-item[data-word-index="${targetIdx}"]`);
-        if (listBtn) listBtn.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
-      }, 100);
-    }
+  if (targetIdx >= 0) {
+    setActiveStudyWord(WORDS[targetIdx]);
+    revealAndHighlightWord(targetIdx, autoReveal);
   }
 }
 
@@ -895,23 +888,9 @@ async function openWordInLevel(level, wordIdOrHanzi, autoReveal = true) {
     transitionTimer = null;
   }
 
-  currentView = 'cards';
-  const studyView = document.getElementById('studyView');
-  const overviewView = document.getElementById('overviewView');
-  if (studyView) studyView.hidden = false;
-  if (overviewView) overviewView.hidden = true;
-  const flashcardTab = document.getElementById('flashcardTab');
-  const overviewTab = document.getElementById('overviewTab');
-  if (flashcardTab) {
-    flashcardTab.classList.add('active');
-    flashcardTab.setAttribute('aria-selected', 'true');
-  }
-  if (overviewTab) {
-    overviewTab.classList.remove('active');
-    overviewTab.setAttribute('aria-selected', 'false');
-  }
+  showFlashcardStudyView();
 
-  const wordIndex = WORDS.findIndex(w => (w.id && String(w.id) === String(wordIdOrHanzi)) || w.hanzi === wordIdOrHanzi);
+  const wordIndex = findWordIndex(wordIdOrHanzi);
   if (wordIndex < 0) return;
 
   currentFilter = 'all';
@@ -925,17 +904,6 @@ async function openWordInLevel(level, wordIdOrHanzi, autoReveal = true) {
   if (typeof render === 'function') render();
   if (typeof setActiveStudyWord === 'function') setActiveStudyWord(WORDS[wordIndex]);
 
-  if (autoReveal && typeof flip === 'function') {
-    const meaning = document.getElementById('meaning');
-    if (meaning && !meaning.classList.contains('show')) {
-      flip();
-    }
-  }
-
-  setTimeout(() => {
-    const listBtn = document.querySelector(`.study-word-list-item[data-word-index="${wordIndex}"]`);
-    if (listBtn) listBtn.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
-  }, 100);
+  revealAndHighlightWord(wordIndex, autoReveal);
 }
 
-window.openWordInLevel = openWordInLevel;
