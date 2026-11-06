@@ -17,6 +17,22 @@ export function StudyNavigation({
   onShuffle
 }) {
   const currentDisplay = totalCards > 0 ? currentIndex + 1 : 0;
+  const canStep = totalCards > 1;
+  const stepButtonStyle = {
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '6px',
+    padding: '8px 16px',
+    borderRadius: 'var(--radius-full)',
+    border: '1px solid var(--border-subtle)',
+    background: 'var(--bg-surface)',
+    color: 'var(--text-secondary)',
+    fontSize: '13px',
+    fontWeight: '600',
+    cursor: canStep ? 'pointer' : 'not-allowed',
+    opacity: canStep ? 1 : 0.5,
+    transition: 'all 0.15s ease'
+  };
 
   return (
     <nav
@@ -36,24 +52,10 @@ export function StudyNavigation({
       <button
         type="button"
         onClick={onPrev}
-        disabled={totalCards <= 1}
+        disabled={!canStep}
         title="Từ trước (phím ←)"
         aria-label="Từ trước"
-        style={{
-          display: 'inline-flex',
-          alignItems: 'center',
-          gap: '6px',
-          padding: '8px 16px',
-          borderRadius: 'var(--radius-full)',
-          border: '1px solid var(--border-subtle)',
-          background: 'var(--bg-surface)',
-          color: 'var(--text-secondary)',
-          fontSize: '13px',
-          fontWeight: '600',
-          cursor: totalCards <= 1 ? 'not-allowed' : 'pointer',
-          opacity: totalCards <= 1 ? 0.5 : 1,
-          transition: 'all 0.15s ease'
-        }}
+        style={stepButtonStyle}
       >
         <span aria-hidden="true">←</span>
         <span>Trước</span>
@@ -100,24 +102,10 @@ export function StudyNavigation({
       <button
         type="button"
         onClick={onNext}
-        disabled={totalCards <= 1}
+        disabled={!canStep}
         title="Từ tiếp theo (phím →)"
         aria-label="Từ tiếp theo"
-        style={{
-          display: 'inline-flex',
-          alignItems: 'center',
-          gap: '6px',
-          padding: '8px 16px',
-          borderRadius: 'var(--radius-full)',
-          border: '1px solid var(--border-subtle)',
-          background: 'var(--bg-surface)',
-          color: 'var(--text-secondary)',
-          fontSize: '13px',
-          fontWeight: '600',
-          cursor: totalCards <= 1 ? 'not-allowed' : 'pointer',
-          opacity: totalCards <= 1 ? 0.5 : 1,
-          transition: 'all 0.15s ease'
-        }}
+        style={stepButtonStyle}
       >
         <span>Tiếp</span>
         <span aria-hidden="true">→</span>

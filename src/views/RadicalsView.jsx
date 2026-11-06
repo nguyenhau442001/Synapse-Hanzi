@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'preact/hooks';
 import { fetchRadicals } from '../services/radicalsService';
+import { searchInputStyle } from '../components/styles';
 import { speakWithWebSpeech } from '../services/speechService';
 
 export function RadicalsView() {
@@ -87,16 +88,7 @@ export function RadicalsView() {
           value={searchQuery}
           onInput={(e) => setSearchQuery(e.target.value)}
           placeholder="Tìm theo bộ thủ, pinyin, tên bộ hoặc nghĩa (ví dụ: 水, Thủy, nước)..."
-          style={{
-            width: '100%',
-            padding: '10px 14px',
-            borderRadius: 'var(--radius-md)',
-            border: '1px solid var(--border-subtle)',
-            background: 'var(--bg-surface)',
-            color: 'var(--text-primary)',
-            fontSize: '14px',
-            boxSizing: 'border-box'
-          }}
+          style={searchInputStyle}
         />
       </div>
 

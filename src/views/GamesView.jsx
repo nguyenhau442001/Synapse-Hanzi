@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'preact/hooks';
 import { speakWithWebSpeech } from '../services/speechService';
+import { tabButtonStyle } from '../components/styles';
 
 export function GamesView() {
   const [activeTab, setActiveTab] = useState('sentence'); // 'sentence' | 'guess'
@@ -132,32 +133,14 @@ export function GamesView() {
       <div style={{ display: 'flex', gap: '8px', marginBottom: '20px' }}>
         <button
           onClick={() => setActiveTab('sentence')}
-          style={{
-            flex: 1,
-            padding: '10px 14px',
-            borderRadius: 'var(--radius-md)',
-            border: activeTab === 'sentence' ? '1px solid var(--brand-primary)' : '1px solid var(--border-subtle)',
-            background: activeTab === 'sentence' ? 'var(--bg-elevated)' : 'var(--bg-surface)',
-            color: activeTab === 'sentence' ? 'var(--brand-primary)' : 'var(--text-muted)',
-            fontWeight: activeTab === 'sentence' ? '700' : '500',
-            fontSize: '13px'
-          }}
+          style={tabButtonStyle(activeTab === 'sentence')}
         >
           🧩 Ghép Câu Tiếng Trung
         </button>
 
         <button
           onClick={() => setActiveTab('guess')}
-          style={{
-            flex: 1,
-            padding: '10px 14px',
-            borderRadius: 'var(--radius-md)',
-            border: activeTab === 'guess' ? '1px solid var(--brand-primary)' : '1px solid var(--border-subtle)',
-            background: activeTab === 'guess' ? 'var(--bg-elevated)' : 'var(--bg-surface)',
-            color: activeTab === 'guess' ? 'var(--brand-primary)' : 'var(--text-muted)',
-            fontWeight: activeTab === 'guess' ? '700' : '500',
-            fontSize: '13px'
-          }}
+          style={tabButtonStyle(activeTab === 'guess')}
         >
           🎯 Đuổi Hình Bắt Chữ
         </button>
