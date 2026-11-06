@@ -207,10 +207,6 @@
 html.theme-transition,
 html.theme-transition body,
 html.theme-transition :not(svg, svg *, canvas, img, video) {
-  transition: background-color 240ms cubic-bezier(0.4, 0, 0.2, 1),
-              color 240ms cubic-bezier(0.4, 0, 0.2, 1),
-              border-color 240ms cubic-bezier(0.4, 0, 0.2, 1),
-              box-shadow 240ms cubic-bezier(0.4, 0, 0.2, 1) !important;
   transition-delay: 0s !important;
 }
 * {
@@ -240,9 +236,6 @@ html.theme-transition :not(svg, svg *, canvas, img, video) {
 }
 :root[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
   background: rgba(212, 179, 127, 0.45);
-}
-.sr-only {
-  border-width: 0;
 }
 body {
   margin: 0;

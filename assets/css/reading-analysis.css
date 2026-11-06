@@ -641,14 +641,6 @@ body.dark-mode .practice-slots-area {
   border-color: rgba(255, 255, 255, 0.1);
 }
 
-.practice-slots-area.is-correct {
-  border-color: #10b981;
-}
-
-.practice-slots-area.is-wrong {
-  border-color: #ef4444;
-}
-
 @keyframes shake {
   0%, 100% { transform: translateX(0); }
   25% { transform: translateX(-5px); }
@@ -691,10 +683,6 @@ body.dark-mode .builder-tile {
 
 .builder-tile:active {
   transform: scale(0.97);
-}
-
-.builder-tile.slot-tile {
-  border-color: var(--accent);
 }
 
 .builder-tile.logic-tile {
@@ -879,7 +867,6 @@ body.dark-mode .reading-nav-btn.next-btn:hover:not(:disabled) {
 
 .reading-jump-select {
   background: var(--card-bg);
-  -webkit-appearance: none;
 }
 
 :root[data-theme="dark"] .reading-jump-select,

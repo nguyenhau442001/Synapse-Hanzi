@@ -131,9 +131,6 @@
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
-.level-status-badge.is-learning {
-  border-color: color-mix(in srgb, var(--status-warning, #996e1e) 30%, transparent);
-}
 :root[data-theme="dark"] .level-status-badge.is-learning {
   color: var(--status-warning, #D2AD6E);
   background: rgba(210, 173, 110, 0.12);
