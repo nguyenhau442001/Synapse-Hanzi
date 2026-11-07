@@ -15,12 +15,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 def test_reading_analysis_syntax_and_references():
-    js_file = ROOT / "assets/js/reading-analysis.js"
-    assert js_file.exists(), "reading-analysis.js not found"
+    js_file = ROOT / "src/islands/ReadingAnalysis.jsx"
+    assert js_file.exists(), "ReadingAnalysis.jsx (Preact island) not found"
     content = js_file.read_text(encoding="utf-8")
 
-    # Ensure fixed function name
-    assert "renderPracticePanelsHtml(currentEntry)" in content
+    # The practice panels render from the current entry; the old missing helper must not come back
+    assert "<PracticePanels entry={entry} />" in content
     assert "renderInteractiveExerciseForm" not in content
 
 def test_tools_menu_contains_reading_tools():
@@ -32,76 +32,17 @@ def test_tools_menu_contains_reading_tools():
     assert 'id="screenGradedReading"' in index_html
 
 def test_node_vm_reading_entries():
-    cmd = [
-        "node", "-e",
-        """
-        const fs = require('fs');
-        const vm = require('vm');
-        const data = JSON.parse(fs.readFileSync('database/reading/hsk4_reading_analysis.json', 'utf8'));
-
-        const context = {
-          window: {
-            location: { search: '?tab=reading', pathname: '/Synapse-Hanzi/' },
-            scrollTo: () => {},
-            addEventListener: () => {}
-          },
-          URLSearchParams: URLSearchParams,
-          document: {
-            getElementById: (id) => ({
-              style: {},
-              classList: { add: () => {}, remove: () => {}, toggle: () => {} },
-              setAttribute: () => {},
-              innerHTML: '',
-              textContent: '',
-              querySelector: () => ({ textContent: '' }),
-              scrollIntoView: () => {}
-            }),
-            body: {
-              classList: { add: () => {}, remove: () => {}, toggle: () => {} }
-            },
-            addEventListener: () => {}
-          },
-          localStorage: {
-            getItem: () => null,
-            setItem: () => {}
-          },
-          fetch: () => Promise.resolve({ ok: true, json: () => Promise.resolve(data) }),
-          console: console
-        };
-        context.global = context;
-        vm.createContext(context);
-
-        vm.runInContext(fs.readFileSync('assets/js/utils.js', 'utf8'), context);
-        vm.runInContext(fs.readFileSync('assets/js/reading-analysis.js', 'utf8'), context);
-
-        async function run() {
-          await vm.runInContext('startReadingAnalysis()', context);
-          const len = vm.runInContext('readingFilteredList.length', context);
-          if (len !== 135) throw new Error('Expected 135 entries, got ' + len);
-          for (let i = 0; i < len; i++) {
-            vm.runInContext(`
-              jumpToReadingIndex(${i});
-              setReadingActiveMode('practice');
-              setReadingActiveMode('breakdown');
-            `, context);
-          }
-          console.log('Tested all ' + len + ' entries successfully.');
-        }
-        run().catch(err => {
-          console.error(err);
-          process.exit(1);
-        });
-        """
-    ]
-    res = subprocess.run(cmd, cwd=str(ROOT), capture_output=True, text=True)
-    assert res.returncode == 0, f"Node VM test failed:\n{res.stderr}"
+    # Renders the island for all 135 entries in practice and breakdown modes (Vite SSR + render-to-string)
+    res = subprocess.run(["node", "tests/node/render_reading_analysis.mjs"], cwd=str(ROOT), capture_output=True, text=True, timeout=300)
+    assert res.returncode == 0, f"Node render test failed:\n{res.stdout}\n{res.stderr}"
+    assert "Rendered 135 entries" in res.stdout
 
 if __name__ == "__main__":
     print("Running test_reading_views...")
     test_reading_analysis_syntax_and_references()
-    print("  ✓ reading-analysis.js syntax & references valid")
+    print("  ✓ ReadingAnalysis.jsx references valid")
     test_tools_menu_contains_reading_tools()
     print("  ✓ index.html tools menu contains reading tools")
     test_node_vm_reading_entries()
-    print("  ✓ Node VM successfully executed reading analysis on all 135 items")
+    print("  ✓ Reading analysis island rendered all 135 items")
     print("All reading tests passed!")

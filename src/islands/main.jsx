@@ -16,6 +16,7 @@ import { mountTodayReview } from './TodayReview';
 import { mountHanziDecomposition } from './HanziDecomposition';
 import { mountRelatedWords } from './RelatedWords';
 import { mountGradedReading } from './GradedReading';
+import { mountReadingAnalysis } from './ReadingAnalysis';
 
 mountStudyHelpModal();
 mountGuessWordGame();
@@ -32,3 +33,4 @@ mountGrammarBreakdown();
 mountTodayReview();
 mountRelatedWords();
 mountGradedReading();
+mountReadingAnalysis();

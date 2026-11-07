@@ -27,7 +27,6 @@ const PRECACHE_ASSET_URLS = [
   './assets/js/preact/islands.js?v=' + APP_VERSION,
   './assets/js/hsk30.js?v=' + APP_VERSION,
   './assets/js/levels.js?v=' + APP_VERSION,
-  './assets/js/reading-analysis.js?v=' + APP_VERSION,
   './assets/css/listening-practice.css?v=' + APP_VERSION,
   './assets/js/listening-practice.js?v=' + APP_VERSION,
   './assets/images/chinese_landscape_light.svg',
