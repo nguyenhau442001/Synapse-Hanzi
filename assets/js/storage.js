@@ -207,3 +207,29 @@ function reviewSrsCard(level, wordId, rating, cardMap) {
   });
   return result;
 }
+
+// Cross-level review counters (home dashboard badge, daily new-card limit in fast review).
+function countNewReviewsToday() {
+  const today = localDateKey(new Date());
+  const reviewed = new Set();
+  Object.keys(LEVELS).filter(level => LEVELS[level].available).forEach(level => {
+    readSrsReviewLog(level).forEach(entry => {
+      if (entry.stateBefore !== SRS.State.New || !entry.timestamp) return;
+      const timestamp = new Date(entry.timestamp);
+      if (!Number.isFinite(timestamp.getTime()) || localDateKey(timestamp) !== today) return;
+      reviewed.add(level + ':' + entry.wordId);
+    });
+  });
+  return reviewed.size;
+}
+
+function countDueCardsAcrossLevels(now) {
+  const currentTime = (now || new Date()).getTime();
+  return Object.keys(LEVELS).filter(level => LEVELS[level].available).reduce((count, level) => {
+    const record = readSrsRecord(level);
+    if (record) {
+      return count + Object.values(record.cards).filter(card => SRS.isDue(card, currentTime)).length;
+    }
+    return count + Object.values(readSavedLevelProgressLegacy(level)).filter(status => status === 'unknown').length;
+  }, 0);
+}

@@ -12,6 +12,7 @@ import { mountWeakWords } from './WeakWords';
 import { mountSidebarTabs } from './SidebarTabs';
 import { mountWordCompanion } from './WordCompanion';
 import { mountGrammarBreakdown } from './GrammarBreakdown';
+import { mountTodayReview } from './TodayReview';
 
 mountStudyHelpModal();
 mountGuessWordGame();
@@ -24,3 +25,4 @@ mountWeakWords();
 mountSidebarTabs();
 mountWordCompanion(); // before GrammarBreakdown: the grammar panel goes right after it
 mountGrammarBreakdown();
+mountTodayReview();

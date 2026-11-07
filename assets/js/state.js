@@ -142,8 +142,6 @@ let reviewSessionLive = false;
 let reviewWordPool = [];
 let reviewProgressByLevel = {};
 let reviewCardsByLevel = {};
-let todayReviewQueue = [];
-let todayReviewIndex = 0;
 let reviewLoadedRangeMax = 0;
 let reviewWorker = null;
 
