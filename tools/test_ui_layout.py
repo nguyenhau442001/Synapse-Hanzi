@@ -560,7 +560,7 @@ class TestFlashcardIllustrationIntegration(unittest.TestCase):
     def setUp(self):
         self.workstation_css = WORKSTATION_CSS.read_text(encoding="utf-8")
         self.flashcard_js = (REPO_ROOT / "src" / "islands" / "FlashcardStudy.jsx").read_text(encoding="utf-8")
-        self.state_js = (REPO_ROOT / "assets" / "js" / "state.js").read_text(encoding="utf-8")
+        self.state_js = (REPO_ROOT / "src" / "islands" / "AppState.js").read_text(encoding="utf-8")
 
     def test_illustration_frame_responsive_bounds(self):
         """Illustration frame must obey suggested responsive bounds (50-78px mobile, 70-112px desktop)."""
@@ -855,7 +855,7 @@ class TestFastReviewLivesConfiguration(unittest.TestCase):
             cls.fast_review_js = fast_review_path.read_text(encoding="utf-8")
         else:
             cls.fast_review_js = (REPO_ROOT / "src" / "islands" / "FastReview.jsx").read_text(encoding="utf-8")
-        cls.state_js = (REPO_ROOT / "assets" / "js" / "state.js").read_text(encoding="utf-8")
+        cls.state_js = (REPO_ROOT / "src" / "islands" / "AppState.js").read_text(encoding="utf-8")
         cls.fast_review_css = (REPO_ROOT / "assets" / "css" / "fast-review.css").read_text(encoding="utf-8")
 
     def test_review_rules_card_displays_five_lives(self):

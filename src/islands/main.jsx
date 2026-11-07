@@ -2,6 +2,7 @@
 // Each island owns one piece of the page that used to be built by a legacy script,
 // rendering identical markup so the existing CSS applies unchanged.
 import { mountAppUtils } from './AppUtils';
+import { mountAppState } from './AppState';
 import { mountSrsEngine } from './SrsEngine';
 import { mountStorageEngine } from './StorageEngine';
 import { mountAmbientBackground } from './ambientBackground';
@@ -45,6 +46,7 @@ import { mountSpaRouter } from './SpaRouter';
 import { mountAppBootstrap } from './AppBootstrap';
 
 mountAppUtils();
+mountAppState();
 mountSrsEngine();
 mountStorageEngine();
 mountAmbientBackground();
