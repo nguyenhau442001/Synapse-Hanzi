@@ -21,9 +21,11 @@
    - Bundle word illustrations & visual mnemonic engine into islands `src/islands/WordIllustrations.js` (commit `ca9e54325`).
    - Port HSK 3.0 level grid & version switcher sang Preact island `src/islands/Hsk30Grid.jsx` (commit `f66941df0`).
    - Port topic decks grid sang Preact island `src/islands/TopicGrid.jsx` (commit `ec7e8702e`).
+   - Port backup & sync logic sang Preact island `src/islands/BackupSync.jsx` (commit `9e236dae0`).
 2. File `database/prebuilt_audio/hsk30_6/words/0687.mp3` (untracked) là **của người dùng** (họ chạy build audio song song). **Không được `git add` file này**, không dùng `git add -A` / `git add .`.
 3. Tiếp tục port các module legacy còn lại sang Preact island (mục 5), mỗi phần một commit, giao diện phải **giống hệt**. Tiếp theo ưu tiên:
-   - `assets/js/backup.js`.
+   - `assets/js/hanviet-dict.js`.
+   - `assets/js/radicals-state.js`.
    - Màn flashcard chính (`flashcard.js`, `levels.js`).
 
 ---
