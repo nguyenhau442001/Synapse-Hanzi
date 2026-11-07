@@ -33,6 +33,7 @@ import { mountWordIllustrations } from './WordIllustrations';
 import { mountHsk30Grid } from './Hsk30Grid';
 import { mountTopicGrid } from './TopicGrid';
 import { mountBackupSync } from './BackupSync';
+import { mountThemeManager } from './ThemeManager';
 
 mountAmbientBackground();
 mountStudyHelpModal();
@@ -66,3 +67,4 @@ mountWordIllustrations();
 mountHsk30Grid();
 mountTopicGrid();
 mountBackupSync();
+mountThemeManager();

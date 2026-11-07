@@ -13,7 +13,6 @@ const PRECACHE_ASSET_URLS = [
   './assets/css/workstation.css?v=' + APP_VERSION,
   './assets/css/reading-analysis.css?v=' + APP_VERSION,
   './assets/css/study-help-modal.css?v=' + APP_VERSION,
-  './assets/js/theme.js?v=' + APP_VERSION,
   './assets/js/speechService.js?v=' + APP_VERSION,
   './assets/js/speech.js?v=' + APP_VERSION,
   './assets/css/home-widgets.css?v=' + APP_VERSION,

@@ -1,10 +1,12 @@
 // Automatic time-based theme (6:00 - 18:00 Light, 18:00 - 6:00 Dark) with manual override.
-function getTimeBasedTheme() {
+// Preact island/module port of former assets/js/theme.js.
+
+export function getTimeBasedTheme() {
   const hour = new Date().getHours();
   return (hour >= 6 && hour < 18) ? 'light' : 'dark';
 }
 
-function getNextPeriodExpiry() {
+export function getNextPeriodExpiry() {
   const now = new Date();
   const target = new Date(now);
   const hour = now.getHours();
@@ -25,7 +27,7 @@ try {
   if (p === 'dark' || p === 'light') initialUrlTheme = p;
 } catch (e) {}
 
-function getEffectiveTheme() {
+export function getEffectiveTheme() {
   const manual = localStorage.getItem('hsk_theme_manual');
   const expiry = parseInt(localStorage.getItem('hsk_theme_manual_expiry') || '0', 10);
   if (manual && (manual === 'dark' || manual === 'light') && Date.now() < expiry) {
@@ -45,7 +47,7 @@ function getEffectiveTheme() {
 
 let themeTransitionTimer = null;
 
-function applyTheme(theme, animate) {
+export function applyTheme(theme, animate) {
   if (animate && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     if (themeTransitionTimer) {
       clearTimeout(themeTransitionTimer);
@@ -74,7 +76,7 @@ function applyTheme(theme, animate) {
   });
 }
 
-function toggleTheme() {
+export function toggleTheme() {
   const current = document.documentElement.dataset.theme || getEffectiveTheme();
   const next = current === 'dark' ? 'light' : 'dark';
   initialUrlTheme = next;
@@ -93,18 +95,25 @@ function toggleTheme() {
   applyTheme(next, true);
 }
 
-function checkScheduledTheme() {
+export function checkScheduledTheme() {
   const expected = getEffectiveTheme();
   if (document.documentElement.dataset.theme !== expected) {
     applyTheme(expected, true);
   }
 }
 
-(function () {
+export function mountThemeManager() {
+  window.getTimeBasedTheme = getTimeBasedTheme;
+  window.getNextPeriodExpiry = getNextPeriodExpiry;
+  window.getEffectiveTheme = getEffectiveTheme;
+  window.applyTheme = applyTheme;
+  window.toggleTheme = toggleTheme;
+  window.checkScheduledTheme = checkScheduledTheme;
+
   const effective = getEffectiveTheme();
   applyTheme(effective, false);
   setInterval(checkScheduledTheme, 60000);
   document.addEventListener('visibilitychange', () => {
     if (!document.hidden) checkScheduledTheme();
   });
-})();
+}
