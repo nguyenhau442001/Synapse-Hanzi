@@ -45,6 +45,7 @@ import { mountLevels } from './Levels';
 import { mountSpaRouter } from './SpaRouter';
 import { mountMobileBottomNav } from './MobileBottomNav';
 import { mountAppBootstrap } from './AppBootstrap';
+import { registerServiceWorker } from './ServiceWorkerManager';
 
 mountAppUtils();
 mountAppState();
@@ -90,3 +91,4 @@ mountLevels();
 mountSpaRouter();
 mountMobileBottomNav();
 mountAppBootstrap();
+registerServiceWorker();

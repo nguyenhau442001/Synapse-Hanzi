@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-INDEX = (ROOT / "index.html").read_text(encoding="utf-8")
+SW_MGR = (ROOT / "src" / "islands" / "ServiceWorkerManager.js").read_text(encoding="utf-8")
 SW = (ROOT / "sw.js").read_text(encoding="utf-8")
 
 
@@ -19,14 +19,15 @@ class TestUpdateBannerVersion(unittest.TestCase):
         self.assertIn("url.pathname.endsWith('/VERSION')) return;", SW)
 
     def test_banner_asks_new_worker_with_version_file_fallback(self):
-        self.assertIn("worker.postMessage({ type: 'GET_VERSION' }", INDEX)
-        self.assertIn("fetch('VERSION?_=' + Date.now(), { cache: 'no-store' })", INDEX)
-        self.assertIn("showUpdateNotification(newWorker)", INDEX)
-        self.assertIn("showUpdateNotification(reg.waiting)", INDEX)
+        self.assertIn("worker.postMessage({ type: 'GET_VERSION' }", SW_MGR)
+        self.assertIn("fetch('VERSION?_=' + Date.now(), { cache: 'no-store' })", SW_MGR)
+        self.assertIn("showUpdateNotification(newWorker)", SW_MGR)
+        self.assertIn("showUpdateNotification(reg.waiting)", SW_MGR)
 
     def test_banner_text_names_new_and_current_version(self):
-        self.assertIn("'🚀 Đã có phiên bản 汉字思维 mới v' + newVersion", INDEX)
-        self.assertIn("' (bạn đang dùng v' + current + ')'", INDEX)
+        self.assertIn("'🚀 Đã có phiên bản 汉字思维 mới v' +", SW_MGR)
+        self.assertIn("newVersion", SW_MGR)
+        self.assertIn("' (bạn đang dùng v' + current + ')'", SW_MGR)
 
 
 if __name__ == "__main__":
