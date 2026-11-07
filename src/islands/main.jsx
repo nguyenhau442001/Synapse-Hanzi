@@ -34,6 +34,7 @@ import { mountHsk30Grid } from './Hsk30Grid';
 import { mountTopicGrid } from './TopicGrid';
 import { mountBackupSync } from './BackupSync';
 import { mountThemeManager } from './ThemeManager';
+import { mountSpeechAudio } from './SpeechAudio';
 
 mountAmbientBackground();
 mountStudyHelpModal();
@@ -68,3 +69,4 @@ mountHsk30Grid();
 mountTopicGrid();
 mountBackupSync();
 mountThemeManager();
+mountSpeechAudio();
