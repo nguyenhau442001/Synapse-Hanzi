@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-FLASHCARD_JS = (ROOT / "assets" / "js" / "flashcard.js").read_text(encoding="utf-8")
+FLASHCARD_JS = (ROOT / "src" / "islands" / "FlashcardStudy.jsx").read_text(encoding="utf-8")
 WORKSTATION_CSS = (ROOT / "assets" / "css" / "workstation.css").read_text(encoding="utf-8")
 SPLIT = "body.flashcard-study-mode .card.is-flipped .word-hero-container.has-illustration"
 

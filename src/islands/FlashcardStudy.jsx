@@ -1079,6 +1079,34 @@ function renderStudyWordList() {
     if (activeButton && !query) activeButton.scrollIntoView({ block: 'nearest' });
   }
 }
+
+function syncCardSupportingGroup() {
+  const group = document.getElementById('cardSupportingGroup');
+  const visualCol = document.getElementById('cardVisualCol');
+  const decompWrap = document.getElementById('cardDecompositionWrap');
+  if (!group) return;
+  const hasVisual = Boolean(showIllustration && visualCol && visualCol.style.display !== 'none');
+  const radsRow = document.getElementById('cardRadicalsRow');
+  const hasDecomp = Boolean(decompWrap && decompWrap.style.display !== 'none' && radsRow && radsRow.children && radsRow.children.length > 0);
+  // Split layout hook: hero becomes info (left) + illustration (right) when an illustration exists.
+  const heroBlock = document.getElementById('wordMainBlock');
+  if (heroBlock) heroBlock.classList.toggle('has-illustration', hasVisual);
+  if (hasVisual || hasDecomp) {
+    group.hidden = false;
+    group.removeAttribute('hidden');
+    group.style.display = 'flex';
+    group.classList.toggle('has-both', Boolean(hasVisual && hasDecomp));
+    group.classList.toggle('has-only-visual', Boolean(hasVisual && !hasDecomp));
+    group.classList.toggle('has-only-decomp', Boolean(!hasVisual && hasDecomp));
+  } else {
+    group.hidden = true;
+    group.setAttribute('hidden', '');
+    group.style.display = 'none';
+    group.classList.remove('has-both', 'has-only-visual', 'has-only-decomp');
+  }
+}
+window.syncCardSupportingGroup = syncCardSupportingGroup;
+
 function render(animate) {
   stopSpeech();
   if (transitionTimer) { clearTimeout(transitionTimer); transitionTimer = null; }
@@ -1235,33 +1263,6 @@ function render(animate) {
     );
     return normalized;
   }
-
-  function syncCardSupportingGroup() {
-    const group = document.getElementById('cardSupportingGroup');
-    const visualCol = document.getElementById('cardVisualCol');
-    const decompWrap = document.getElementById('cardDecompositionWrap');
-    if (!group) return;
-    const hasVisual = Boolean(showIllustration && visualCol && visualCol.style.display !== 'none');
-    const radsRow = document.getElementById('cardRadicalsRow');
-    const hasDecomp = Boolean(decompWrap && decompWrap.style.display !== 'none' && radsRow && radsRow.children && radsRow.children.length > 0);
-    // Split layout hook: hero becomes info (left) + illustration (right) when an illustration exists.
-    const heroBlock = document.getElementById('wordMainBlock');
-    if (heroBlock) heroBlock.classList.toggle('has-illustration', hasVisual);
-    if (hasVisual || hasDecomp) {
-      group.hidden = false;
-      group.removeAttribute('hidden');
-      group.style.display = 'flex';
-      group.classList.toggle('has-both', Boolean(hasVisual && hasDecomp));
-      group.classList.toggle('has-only-visual', Boolean(hasVisual && !hasDecomp));
-      group.classList.toggle('has-only-decomp', Boolean(!hasVisual && hasDecomp));
-    } else {
-      group.hidden = true;
-      group.setAttribute('hidden', '');
-      group.style.display = 'none';
-      group.classList.remove('has-both', 'has-only-visual', 'has-only-decomp');
-    }
-  }
-  window.syncCardSupportingGroup = syncCardSupportingGroup;
 
   function applyContent() {
     if (content) content.className = 'card-content';
@@ -1525,4 +1526,48 @@ function render(animate) {
     transitionTimer = null;
     applyContent();
   }, 150);
+}
+
+export function mountFlashcardStudy() {
+  window.getCardHintText = getCardHintText;
+  window.buildCardArea = buildCardArea;
+  window.STUDY_MENUS = STUDY_MENUS;
+  window.closeStudyMenu = closeStudyMenu;
+  window.toggleStudyMenu = toggleStudyMenu;
+  window.toggleStudyHeaderMenu = toggleStudyHeaderMenu;
+  window.closeStudyHeaderMenu = closeStudyHeaderMenu;
+  window.toggleCardMoreMenu = toggleCardMoreMenu;
+  window.closeCardMoreMenu = closeCardMoreMenu;
+  window.updateCardMoreMenuState = updateCardMoreMenuState;
+  window.toggleIllustration = toggleIllustration;
+  window.toggleHanViet = toggleHanViet;
+  window.openStudyFilterSheet = openStudyFilterSheet;
+  window.closeStudyFilterSheet = closeStudyFilterSheet;
+  window.renderFilters = renderFilters;
+  window.setFilter = setFilter;
+  window.updateStats = updateStats;
+  window.RATING_BUTTONS = RATING_BUTTONS;
+  window.RATING_KEYS = RATING_KEYS;
+  window.ratingButtonsHtml = ratingButtonsHtml;
+  window.formatSrsInterval = formatSrsInterval;
+  window.updateSrsPreviews = updateSrsPreviews;
+  window.isCardRevealed = isCardRevealed;
+  window.syncRevealControls = syncRevealControls;
+  window.computeDeckProgress = computeDeckProgress;
+  window.updateProgress = updateProgress;
+  window.updateCardPosition = updateCardPosition;
+  window.renderHanziWithClarifier = renderHanziWithClarifier;
+  window.applyHanziLengthFit = applyHanziLengthFit;
+  window.fitHanziToContainer = fitHanziToContainer;
+  window.cardAccordionHtml = cardAccordionHtml;
+  window.toggleStudySidebarTab = toggleStudySidebarTab;
+  window.toggleStudySidebar = toggleStudySidebar;
+  window.toggleStudyWritingPanel = toggleStudyWritingPanel;
+  window.closeAllStudyDrawers = closeAllStudyDrawers;
+  window.updateStudyDrawerButtons = updateStudyDrawerButtons;
+  window.ensureStudyWordList = ensureStudyWordList;
+  window.jumpToWordByIndex = jumpToWordByIndex;
+  window.renderStudyWordList = renderStudyWordList;
+  window.render = render;
+  window.syncCardSupportingGroup = syncCardSupportingGroup;
 }

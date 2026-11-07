@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 CSS = (ROOT / "assets" / "css" / "workstation.css").read_text(encoding="utf-8")
-JS = (ROOT / "assets" / "js" / "flashcard.js").read_text(encoding="utf-8")
+JS = (ROOT / "src" / "islands" / "FlashcardStudy.jsx").read_text(encoding="utf-8")
 INDEX = (ROOT / "index.html").read_text(encoding="utf-8")
 BLOCK = CSS.split("Visual refinement (v3.7.0)", 1)[1]
 

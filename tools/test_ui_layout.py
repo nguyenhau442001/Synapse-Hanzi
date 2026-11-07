@@ -559,7 +559,7 @@ class TestFlashcardIllustrationIntegration(unittest.TestCase):
 
     def setUp(self):
         self.workstation_css = WORKSTATION_CSS.read_text(encoding="utf-8")
-        self.flashcard_js = (REPO_ROOT / "assets" / "js" / "flashcard.js").read_text(encoding="utf-8")
+        self.flashcard_js = (REPO_ROOT / "src" / "islands" / "FlashcardStudy.jsx").read_text(encoding="utf-8")
         self.state_js = (REPO_ROOT / "assets" / "js" / "state.js").read_text(encoding="utf-8")
 
     def test_illustration_frame_responsive_bounds(self):
@@ -636,7 +636,7 @@ class TestLearningProgressNavigator(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.workstation_css = WORKSTATION_CSS.read_text(encoding="utf-8")
-        cls.flashcard_js = (REPO_ROOT / "assets" / "js" / "flashcard.js").read_text(encoding="utf-8")
+        cls.flashcard_js = (REPO_ROOT / "src" / "islands" / "FlashcardStudy.jsx").read_text(encoding="utf-8")
 
     def test_navigator_semantic_structure_rendered(self):
         """renderFilters must construct the learning-progress-navigator component with header, bar, and 4 cards."""
@@ -756,7 +756,7 @@ class TestFlashcardExperienceRefinements(unittest.TestCase):
     def setUpClass(cls):
         cls.workstation_css = WORKSTATION_CSS.read_text(encoding="utf-8")
         cls.flashcard_css = FLASHCARD_CSS.read_text(encoding="utf-8")
-        cls.flashcard_js = (REPO_ROOT / "assets" / "js" / "flashcard.js").read_text(encoding="utf-8")
+        cls.flashcard_js = (REPO_ROOT / "src" / "islands" / "FlashcardStudy.jsx").read_text(encoding="utf-8")
         cls.progress_js = (REPO_ROOT / "src" / "islands" / "StudyProgress.jsx").read_text(encoding="utf-8")
         cls.index_html = INDEX_HTML.read_text(encoding="utf-8")
         cls.levels_js = (REPO_ROOT / "src" / "islands" / "Levels.js").read_text(encoding="utf-8")

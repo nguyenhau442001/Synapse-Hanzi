@@ -12,7 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 INDEX_HTML = ROOT / "index.html"
-FLASHCARD_JS = ROOT / "assets" / "js" / "flashcard.js"
+FLASHCARD_JS = ROOT / "src" / "islands" / "FlashcardStudy.jsx"
 RELATED_JS = ROOT / "src" / "islands" / "RelatedWords.jsx"
 PROGRESS_JS = ROOT / "src" / "islands" / "StudyProgress.jsx"
 FLASHCARD_CSS = ROOT / "assets" / "css" / "flashcard.css"

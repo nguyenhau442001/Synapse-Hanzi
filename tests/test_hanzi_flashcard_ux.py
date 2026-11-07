@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 CARD_INTERACTIONS_JS = ROOT / "src" / "islands" / "CardInteractions.jsx"
-FLASHCARD_JS = ROOT / "assets" / "js" / "flashcard.js"
+FLASHCARD_JS = ROOT / "src" / "islands" / "FlashcardStudy.jsx"
 WORKSTATION_CSS = ROOT / "assets" / "css" / "workstation.css"
 FLASHCARD_CSS = ROOT / "assets" / "css" / "flashcard.css"
 

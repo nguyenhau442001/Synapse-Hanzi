@@ -10,7 +10,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-FLASHCARD_JS = ROOT / "assets" / "js" / "flashcard.js"
+FLASHCARD_JS = ROOT / "src" / "islands" / "FlashcardStudy.jsx"
 FLASHCARD_CSS = ROOT / "assets" / "css" / "flashcard.css"
 WORKSTATION_CSS = ROOT / "assets" / "css" / "workstation.css"
 DECOMP_JS = ROOT / "src" / "islands" / "HanziDecomposition.jsx"
