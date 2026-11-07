@@ -1,5 +1,9 @@
 // Right sidebar: Accessible, spacious, single-focus Hanzi stroke-order & writing studio.
 // Shows ONE large character canvas and ONE clear stroke number + directional arrow at a time.
+// Preact island port of former assets/js/stroke-canvas.js with identical DOM markup and behavior.
+import { onDomReady } from './domReady';
+
+/* global activeStudyWord, onActiveWordChange, renderStrokeDecomposition, HanziWriter */
 
 let currentStrokeWord = null;
 let currentStrokeChars = [];
@@ -14,7 +18,7 @@ let isQuizActive = false;
 let completedCharsMap = {};
 let animationStepTimer = null;
 
-function extractHanziCharacters(text) {
+export function extractHanziCharacters(text) {
   if (!text || typeof text !== 'string') return [];
   const clean = text.replace(/[（\(].*?[）\)]/g, '').trim();
   const target = clean || text;
@@ -23,7 +27,7 @@ function extractHanziCharacters(text) {
   return Array.from(target).filter(ch => ch.trim().length > 0 && !/[\s\p{P}]/u.test(ch));
 }
 
-function getStrokeColors() {
+export function getStrokeColors() {
   const isDark = document.documentElement.dataset.theme === 'dark' ||
     (!document.documentElement.dataset.theme && window.matchMedia('(prefers-color-scheme: dark)').matches);
   return {
@@ -34,14 +38,14 @@ function getStrokeColors() {
   };
 }
 
-function getGridBoxSize() {
+export function getGridBoxSize() {
   const panel = document.getElementById('strokeCanvasWrap');
   const rawWidth = (panel && panel.clientWidth > 180) ? panel.clientWidth - 36 : 360;
   return Math.min(230, Math.max(190, Math.floor(rawWidth * 0.62)));
 }
 
 // Classify basic Chinese stroke type and provide clear Vietnamese directional instructions
-function classifyStrokeType(median) {
+export function classifyStrokeType(median) {
   if (!Array.isArray(median) || median.length < 2) {
     return { symbol: '一', name: 'Nét cơ bản', hint: 'Kéo bút theo hướng mũi tên chỉ dẫn' };
   }
@@ -129,7 +133,7 @@ function classifyStrokeType(median) {
 }
 
 // Compute large, unmistakable directional arrow and start badge position for a single stroke
-function computeSingleStrokeGuideGeometry(median, boxSize, padding) {
+export function computeSingleStrokeGuideGeometry(median, boxSize, padding) {
   if (!Array.isArray(median) || median.length < 2) return null;
   const scale = (boxSize - 2 * padding) / 1024;
   const pts = median.map(([mx, my]) => [
@@ -211,7 +215,7 @@ function computeSingleStrokeGuideGeometry(median, boxSize, padding) {
 }
 
 // Render ONE focused stroke's visuals + large number badge + bold directional arrow
-function renderFocusedStrokeOverlay() {
+export function renderFocusedStrokeOverlay() {
   const target = document.getElementById('strokeSingleGridTarget');
   if (!target) return;
 
@@ -273,7 +277,7 @@ function renderFocusedStrokeOverlay() {
 }
 
 // Render top character switcher bar (only shown if word has >= 2 characters)
-function renderCharacterSwitcherBar() {
+export function renderCharacterSwitcherBar() {
   const wrap = document.getElementById('strokeCharSwitcherWrap');
   if (!wrap) return;
 
@@ -311,7 +315,7 @@ function renderCharacterSwitcherBar() {
 }
 
 // Render the spacious, large-print Stroke Stepper Card below the canvas
-function renderStrokeStepperCard() {
+export function renderStrokeStepperCard() {
   const wrap = document.getElementById('strokeOrderStepsWrap');
   if (!wrap) return;
 
@@ -382,7 +386,7 @@ function renderStrokeStepperCard() {
   }
 }
 
-function stepStrokeBy(delta) {
+export function stepStrokeBy(delta) {
   stopSequentialAnimation();
   if (isQuizActive) {
     cancelActiveQuiz();
@@ -395,7 +399,7 @@ function stepStrokeBy(delta) {
   renderStrokeStepperCard();
 }
 
-function stopSequentialAnimation() {
+export function stopSequentialAnimation() {
   if (animationStepTimer) {
     clearTimeout(animationStepTimer);
     animationStepTimer = null;
@@ -405,7 +409,7 @@ function stopSequentialAnimation() {
   if (animateBtn) animateBtn.classList.remove('active');
 }
 
-function cancelActiveQuiz() {
+export function cancelActiveQuiz() {
   isQuizActive = false;
   strokeWriters.forEach(w => {
     if (w && typeof w.cancelQuiz === 'function') {
@@ -418,7 +422,7 @@ function cancelActiveQuiz() {
   if (quizBtn) quizBtn.classList.remove('active');
 }
 
-function destroyStrokeCanvasWriters() {
+export function destroyStrokeCanvasWriters() {
   stopSequentialAnimation();
   cancelActiveQuiz();
   strokeWriters = [];
@@ -442,7 +446,7 @@ function destroyStrokeCanvasWriters() {
   }
 }
 
-function createWriterForActiveChar() {
+export function createWriterForActiveChar() {
   const target = document.getElementById('strokeSingleGridTarget');
   if (!target || typeof HanziWriter === 'undefined') return;
 
@@ -503,7 +507,7 @@ function createWriterForActiveChar() {
   }
 }
 
-function selectCharacterAtIndex(charIdx, autoAnimate = false) {
+export function selectCharacterAtIndex(charIdx, autoAnimate = false) {
   if (!currentStrokeChars || charIdx < 0 || charIdx >= currentStrokeChars.length) return;
   stopSequentialAnimation();
   cancelActiveQuiz();
@@ -527,7 +531,7 @@ function selectCharacterAtIndex(charIdx, autoAnimate = false) {
   }
 }
 
-function renderStrokeGrids(autoAnimate = true) {
+export function renderStrokeGrids(autoAnimate = true) {
   const container = document.getElementById('strokeGridsContainer');
   const fallback = document.getElementById('strokeCanvasFallback');
   if (!container || !fallback) return;
@@ -630,7 +634,7 @@ function renderStrokeGrids(autoAnimate = true) {
   }
 }
 
-function startQuizOnChar(charIndex = activeCharIndex, isManual = false) {
+export function startQuizOnChar(charIndex = activeCharIndex, isManual = false) {
   if (!currentStrokeChars || charIndex < 0 || charIndex >= currentStrokeChars.length) return;
   stopSequentialAnimation();
 
@@ -744,7 +748,7 @@ function startQuizOnChar(charIndex = activeCharIndex, isManual = false) {
 }
 
 // Step-by-step clear animation showing ONE stroke + number + arrow at a time
-function animateStrokeCanvas() {
+export function animateStrokeCanvas() {
   if (!currentStrokeChars || currentStrokeChars.length === 0) return;
 
   stopSequentialAnimation();
@@ -804,7 +808,7 @@ function animateStrokeCanvas() {
   stepThroughCharStrokes(activeCharIndex, 0);
 }
 
-function loadStrokeCanvasWord(word) {
+export function loadStrokeCanvasWord(word) {
   if (!document.getElementById('strokeCanvasWrap')) {
     initStrokeCanvas();
   }
@@ -813,7 +817,6 @@ function loadStrokeCanvasWord(word) {
   }
   currentStrokeWord = word;
   const badge = document.getElementById('strokeCharBadge');
-  const mobileBadge = document.getElementById('strokeMobileCharBadge');
   const fallback = document.getElementById('strokeCanvasFallback');
 
   if (!word || !word.hanzi) {
@@ -825,7 +828,6 @@ function loadStrokeCanvasWord(word) {
       fallback.textContent = 'Chọn một từ để xem thứ tự nét & luyện viết.';
     }
     if (badge) badge.textContent = '';
-    if (mobileBadge) mobileBadge.textContent = '';
     syncStrokeCanvasControls();
     return;
   }
@@ -838,12 +840,11 @@ function loadStrokeCanvasWord(word) {
   const total = currentStrokeChars.length;
   const badgeText = total > 1 ? `${word.hanzi} · ${total} chữ` : word.hanzi;
   if (badge) badge.textContent = badgeText;
-  if (mobileBadge) mobileBadge.textContent = badgeText;
 
   renderStrokeGrids(true);
 }
 
-function syncStrokeCanvasControls() {
+export function syncStrokeCanvasControls() {
   const hasChars = currentStrokeChars.length > 0;
   ['strokeAnimateBtn', 'strokeQuizBtn'].forEach(id => {
     const button = document.getElementById(id);
@@ -851,7 +852,7 @@ function syncStrokeCanvasControls() {
   });
 }
 
-function initStrokeCanvas() {
+export function initStrokeCanvas() {
   const mount = document.getElementById('workstationRight') || document.getElementById('screenCards');
   if (!mount) return;
 
@@ -926,11 +927,13 @@ function initStrokeCanvas() {
     }, 150);
   });
 
-  onActiveWordChange(loadStrokeCanvasWord);
+  if (typeof onActiveWordChange === 'function') {
+    onActiveWordChange(loadStrokeCanvasWord);
+  }
   loadStrokeCanvasWord(typeof activeStudyWord !== 'undefined' ? activeStudyWord : null);
 }
 
-function renderActiveStrokeChar(autoAnimate = true) {
+export function renderActiveStrokeChar(autoAnimate = true) {
   if (!document.getElementById('strokeCanvasWrap')) {
     initStrokeCanvas();
   }
@@ -950,11 +953,25 @@ function renderActiveStrokeChar(autoAnimate = true) {
   loadStrokeCanvasWord(word);
 }
 
-window.renderActiveStrokeChar = renderActiveStrokeChar;
-window.loadStrokeCanvasWord = loadStrokeCanvasWord;
-window.selectStrokeChar = function(idx) { selectCharacterAtIndex(idx, false); };
-window.animateStrokeCanvas = animateStrokeCanvas;
-window.quizStrokeCanvas = function() { startQuizOnChar(activeCharIndex, true); };
-window.initStrokeCanvas = initStrokeCanvas;
+export function mountStrokeCanvas() {
+  Object.assign(window, {
+    renderActiveStrokeChar,
+    loadStrokeCanvasWord,
+    selectStrokeChar: function(idx) { selectCharacterAtIndex(idx, false); },
+    animateStrokeCanvas,
+    quizStrokeCanvas: function() { startQuizOnChar(activeCharIndex, true); },
+    initStrokeCanvas,
+    selectCharacterAtIndex
+  });
 
-document.addEventListener('DOMContentLoaded', initStrokeCanvas);
+  Object.defineProperty(window, 'currentStrokeChars', {
+    get: () => currentStrokeChars,
+    configurable: true
+  });
+  Object.defineProperty(window, 'activeCharIndex', {
+    get: () => activeCharIndex,
+    configurable: true
+  });
+
+  onDomReady(initStrokeCanvas);
+}

@@ -12,6 +12,7 @@ import { mountSidebarSearch } from './SidebarSearch';
 import { mountSidebarRadicalsFilter } from './SidebarRadicalsFilter';
 import { mountWeakWords } from './WeakWords';
 import { mountSidebarTabs } from './SidebarTabs';
+import { mountStrokeCanvas } from './StrokeCanvas';
 import { mountWordCompanion } from './WordCompanion';
 import { mountGrammarBreakdown } from './GrammarBreakdown';
 import { mountTodayReview } from './TodayReview';
@@ -36,6 +37,7 @@ mountSidebarRadicalsFilter(); // before WeakWords: the weak-words panel goes rig
 mountWeakWords();
 mountHanziDecomposition(); // before SidebarTabs: the initial tab may render the radicals panel
 mountSidebarTabs();
+mountStrokeCanvas(); // before WordCompanion: WordCompanion places itself right after #strokeCanvasWrap
 mountWordCompanion(); // before GrammarBreakdown: the grammar panel goes right after it
 mountGrammarBreakdown();
 mountTodayReview();
