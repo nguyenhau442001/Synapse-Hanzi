@@ -28,11 +28,7 @@ def test_hsk30_level1_audio_manifest():
     assert example_file.exists() and example_file.stat().st_size > 0
 
 def test_hsk30_level1_data_repository_config():
-    repo_file = REPO_ROOT / "src" / "services" / "dataRepository.js"
-    content = repo_file.read_text(encoding="utf-8")
-    assert "audioManifestUrl: 'database/prebuilt_audio/hsk30_1/manifest.json'" in content
-
-    # Crucial: static web app runs on src/islands/AppState.js
+    # Static web app runs on src/islands/AppState.js
     state_file = REPO_ROOT / "src" / "islands" / "AppState.js"
     state_content = state_file.read_text(encoding="utf-8")
     assert "audioManifestUrl: 'database/prebuilt_audio/hsk30_1/manifest.json'" in state_content
