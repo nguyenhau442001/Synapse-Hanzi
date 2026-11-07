@@ -17,6 +17,7 @@ import { mountHanziDecomposition } from './HanziDecomposition';
 import { mountRelatedWords } from './RelatedWords';
 import { mountGradedReading } from './GradedReading';
 import { mountReadingAnalysis } from './ReadingAnalysis';
+import { mountListeningPractice } from './ListeningPractice';
 
 mountStudyHelpModal();
 mountGuessWordGame();
@@ -34,3 +35,4 @@ mountTodayReview();
 mountRelatedWords();
 mountGradedReading();
 mountReadingAnalysis();
+mountListeningPractice();

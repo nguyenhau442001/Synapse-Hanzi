@@ -121,7 +121,8 @@ def test_integration_files():
     assert "screenListeningPractice" in index_html, "screenListeningPractice missing from index.html"
     assert "primaryTabListening" in index_html, "primaryTabListening button missing from index.html"
     assert "assets/css/listening-practice.css" in index_html, "listening CSS link missing from index.html"
-    assert "assets/js/listening-practice.js" in index_html, "listening JS link missing from index.html"
+    assert "assets/js/preact/islands.js" in index_html, "Preact islands bundle (ListeningPractice.jsx) missing from index.html"
+    assert "mountListeningPractice()" in (ROOT / "src/islands/main.jsx").read_text(encoding="utf-8")
 
     # radicals.js
     assert "listening: { tabId: 'primaryTabListening', screenId: 'screenListeningPractice' }" in radicals_js
@@ -134,7 +135,7 @@ def test_integration_files():
 
     # sw.js
     assert "listening-practice.css" in sw_js
-    assert "listening-practice.js" in sw_js
+    assert "preact/islands.js" in sw_js
 
     # non-regression on reading
     assert "screenReadingAnalysis" in index_html
@@ -146,7 +147,7 @@ def test_integration_files():
 def test_ui_refinements():
     print("-> Checking UI refinements in CSS and JS...")
     css_content = (ROOT / "assets/css/listening-practice.css").read_text(encoding="utf-8")
-    js_content = (ROOT / "assets/js/listening-practice.js").read_text(encoding="utf-8")
+    js_content = (ROOT / "src/islands/ListeningPractice.jsx").read_text(encoding="utf-8")
 
     # Layout width 900-1040px (constrained from 1080px)
     assert any(w in css_content for w in ["max-width: 960px", "max-width: 1000px", "max-width: 1040px"]), "Layout must be constrained within 900-1040px"
@@ -174,7 +175,7 @@ def test_ui_refinements():
 def test_listening_polish_v112():
     print("-> Checking specific v1.1.2 UI polish requirements...")
     css = (ROOT / "assets/css/listening-practice.css").read_text(encoding="utf-8")
-    js = (ROOT / "assets/js/listening-practice.js").read_text(encoding="utf-8")
+    js = (ROOT / "src/islands/ListeningPractice.jsx").read_text(encoding="utf-8")
     html = (ROOT / "index.html").read_text(encoding="utf-8")
     help_js = (ROOT / "src/islands/StudyHelpModal.jsx").read_text(encoding="utf-8")
 
@@ -230,7 +231,7 @@ def test_audio_range_and_resilience():
     assert "response.ok" not in sw_code, "sw.js must avoid caching partial 206 responses with response.ok"
 
     # 3. ListeningPractice controller must handle audio errors and readyState cleanly
-    js_path = ROOT / "assets/js/listening-practice.js"
+    js_path = ROOT / "src/islands/ListeningPractice.jsx"
     js_code = js_path.read_text(encoding="utf-8")
     assert "resetAudio" in js_code, "resetAudio must exist to clean up broken audio instances"
     assert "handleAudioError" in js_code, "handleAudioError must exist for resilient recovery"
@@ -247,7 +248,7 @@ def test_audio_range_and_resilience():
 def test_listening_user_feedback_improvements():
     print("-> Checking user feedback improvements (typography, translations, evidence, navigation)...")
     css = (ROOT / "assets/css/listening-practice.css").read_text(encoding="utf-8")
-    js = (ROOT / "assets/js/listening-practice.js").read_text(encoding="utf-8")
+    js = (ROOT / "src/islands/ListeningPractice.jsx").read_text(encoding="utf-8")
 
     # 1. Non-empty sentence translations
     for idx in range(1, 13):
@@ -302,21 +303,19 @@ def test_audio_playback_cut_off_and_playing_indicator():
     assert ".listening-evidence-play-btn.is-playing" in css, "CSS must style .listening-evidence-play-btn.is-playing"
 
     # 3. Check JS updatePlaybackUI handles evidence button and row button with playing wave indicator
-    js = (ROOT / "assets/js/listening-practice.js").read_text(encoding="utf-8")
+    js = (ROOT / "src/islands/ListeningPractice.jsx").read_text(encoding="utf-8")
     assert "listening-replay-evidence-btn" not in js, "Old mismatched selector listening-replay-evidence-btn must be removed"
-    assert "document.querySelector('.listening-evidence-play-btn')" in js, "JS must query .listening-evidence-play-btn"
+    assert "listening-evidence-play-btn" in js, "Evidence replay button must use .listening-evidence-play-btn"
     assert "listening-playing-waves" in js, "JS must render animated sound waves during playback"
     assert "Đang phát" in js, "Evidence button must show 'Đang phát' state when playing"
 
     print("   ✓ Audio cutoff and playing indicator effects verified successfully!")
 
 def test_listening_js_syntax():
-    print("-> Checking listening-practice.js syntax integrity...")
-    js_path = ROOT / "assets/js/listening-practice.js"
-    assert js_path.exists(), "assets/js/listening-practice.js must exist"
-    res = subprocess.run(["node", "-c", str(js_path)], capture_output=True, text=True)
-    assert res.returncode == 0, f"assets/js/listening-practice.js syntax check failed: {res.stderr}"
-    print("   ✓ listening-practice.js syntax is valid!")
+    # The island is JSX; it is compiled (and checked) by the Vite build in tests/test_preact_islands.py
+    js_path = ROOT / "src/islands/ListeningPractice.jsx"
+    assert js_path.exists(), "src/islands/ListeningPractice.jsx must exist"
+    assert "export function mountListeningPractice" in js_path.read_text(encoding="utf-8")
 
 def main():
     print("=== Starting HSK Listening Prototype Automated Verification ===")

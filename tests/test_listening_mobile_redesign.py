@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parent.parent
 class TestListeningMobileRedesign(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.js_content = (ROOT / "assets/js/listening-practice.js").read_text(encoding="utf-8")
+        cls.js_content = (ROOT / "src/islands/ListeningPractice.jsx").read_text(encoding="utf-8")
         cls.css_content = (ROOT / "assets/css/listening-practice.css").read_text(encoding="utf-8")
 
     def test_no_redundant_question_counters(self):
