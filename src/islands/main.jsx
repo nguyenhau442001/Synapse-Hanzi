@@ -28,6 +28,7 @@ import { mountRadicalCards } from './RadicalCards';
 import { mountFastReview } from './FastReview';
 import { mountStudyProgress } from './StudyProgress';
 import { mountDashboardEnhancements } from './DashboardEnhancements';
+import { mountCardInteractions } from './CardInteractions';
 
 mountAmbientBackground();
 mountStudyHelpModal();
@@ -56,3 +57,4 @@ mountRadicalCards();
 mountFastReview();
 mountStudyProgress();
 mountDashboardEnhancements();
+mountCardInteractions();

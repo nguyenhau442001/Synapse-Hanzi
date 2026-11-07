@@ -1,5 +1,11 @@
 // Pointer gestures and card reveal interactions.
-const FLASHCARD_INTERACTIVE_SELECTOR = [
+// Preact island port replacing legacy assets/js/card-interactions.js.
+
+/* global filteredOrder, radicalFilteredOrder, idx, WORDS, showPinyin,
+   markKnown, markUnknown, radicalFlip, markRadicalKnown, markRadicalUnknown,
+   getCardHintText, syncRevealControls */
+
+export const FLASHCARD_INTERACTIVE_SELECTOR = [
   'button',
   'a',
   'input',
@@ -38,10 +44,10 @@ const FLASHCARD_INTERACTIVE_SELECTOR = [
   '#cardFlipPrompt',
   '[role="button"]',
   '[role="menuitem"]',
-  '[role="radio"]'
+  '[role="radio"]',
 ].join(', ');
 
-function initCardSwipe(options) {
+export function initCardSwipe(options) {
   const card = document.getElementById(options.cardId);
   if (!card) return;
 
@@ -292,48 +298,66 @@ function initCardSwipe(options) {
   card.addEventListener('pointercancel', onPointerCancel);
 }
 
-function initSwipe() {
+export function initSwipe() {
   initCardSwipe({
     cardId: 'card',
     knownBadgeId: 'swipeBadgeKnown',
     unknownBadgeId: 'swipeBadgeUnknown',
-    hasCards: () => filteredOrder.length > 0,
+    hasCards: () => (typeof filteredOrder !== 'undefined' ? filteredOrder.length > 0 : false),
     interactiveSelector: FLASHCARD_INTERACTIVE_SELECTOR,
     flip,
-    markKnown,
-    markUnknown,
+    markKnown: () => {
+      if (typeof markKnown === 'function') markKnown();
+      else if (typeof window.markKnown === 'function') window.markKnown();
+    },
+    markUnknown: () => {
+      if (typeof markUnknown === 'function') markUnknown();
+      else if (typeof window.markUnknown === 'function') window.markUnknown();
+    },
   });
 }
 
-function initRadicalSwipe() {
+export function initRadicalSwipe() {
   initCardSwipe({
     cardId: 'radicalCard',
     knownBadgeId: 'radicalSwipeBadgeKnown',
     unknownBadgeId: 'radicalSwipeBadgeUnknown',
-    hasCards: () => radicalFilteredOrder.length > 0,
+    hasCards: () => (typeof radicalFilteredOrder !== 'undefined' ? radicalFilteredOrder.length > 0 : false),
     interactiveSelector: FLASHCARD_INTERACTIVE_SELECTOR,
-    flip: radicalFlip,
-    markKnown: markRadicalKnown,
-    markUnknown: markRadicalUnknown,
+    flip: () => {
+      if (typeof radicalFlip === 'function') radicalFlip();
+      else if (typeof window.radicalFlip === 'function') window.radicalFlip();
+    },
+    markKnown: () => {
+      if (typeof markRadicalKnown === 'function') markRadicalKnown();
+      else if (typeof window.markRadicalKnown === 'function') window.markRadicalKnown();
+    },
+    markUnknown: () => {
+      if (typeof markRadicalUnknown === 'function') markRadicalUnknown();
+      else if (typeof window.markRadicalUnknown === 'function') window.markRadicalUnknown();
+    },
   });
 }
 
-function flip() {
-  if (filteredOrder.length === 0) return;
+export function flip() {
+  if (typeof filteredOrder !== 'undefined' && filteredOrder.length === 0) return;
   const m = document.getElementById('meaning');
   const ex = document.getElementById('exampleBox');
   const card = document.getElementById('card');
+  if (!m) return;
   const willShow = !m.classList.contains('show');
   m.classList.toggle('show');
-  ex.classList.toggle('show', willShow);
+  if (ex) ex.classList.toggle('show', willShow);
   if (card) card.classList.toggle('is-flipped', willShow);
   const soundBtn = document.getElementById('soundBtn');
   if (soundBtn) soundBtn.classList.toggle('show', willShow);
   if (willShow && !showPinyin) {
     const wIdx = filteredOrder[idx % filteredOrder.length];
-    document.getElementById('pinyin').textContent = WORDS[wIdx].pinyin;
+    const pinyinEl = document.getElementById('pinyin');
+    if (pinyinEl && WORDS && WORDS[wIdx]) pinyinEl.textContent = WORDS[wIdx].pinyin;
   } else if (!willShow && !showPinyin) {
-    document.getElementById('pinyin').textContent = '';
+    const pinyinEl = document.getElementById('pinyin');
+    if (pinyinEl) pinyinEl.textContent = '';
   }
   if (!willShow) {
     const decompAcc = document.getElementById('cardDecompAccordion');
@@ -343,7 +367,19 @@ function flip() {
   }
   const hintEl = document.getElementById('hint');
   if (hintEl) {
-    hintEl.textContent = typeof getCardHintText === 'function' ? getCardHintText(willShow) : (willShow ? 'Chạm vào thẻ để ẩn' : 'Chạm vào thẻ để xem nghĩa');
+    hintEl.textContent = typeof getCardHintText === 'function'
+      ? getCardHintText(willShow)
+      : (willShow ? 'Chạm vào thẻ để ẩn' : 'Chạm vào thẻ để xem nghĩa');
   }
-  syncRevealControls();
+  if (typeof syncRevealControls === 'function') {
+    syncRevealControls();
+  }
+}
+
+export function mountCardInteractions() {
+  window.FLASHCARD_INTERACTIVE_SELECTOR = FLASHCARD_INTERACTIVE_SELECTOR;
+  window.initCardSwipe = initCardSwipe;
+  window.initSwipe = initSwipe;
+  window.initRadicalSwipe = initRadicalSwipe;
+  window.flip = flip;
 }
