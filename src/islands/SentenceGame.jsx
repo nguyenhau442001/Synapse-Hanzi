@@ -121,6 +121,24 @@ function focusNextButton() {
   setTimeout(() => { try { nextBtnEl.focus(); } catch (_) { /* not mounted */ } }, 60);
 }
 
+// Order the tokens as they appear in the official solution (the bank JSON stores them in
+// exam order, not answer order). Falls back to the stored order if they cannot be matched.
+function inSolutionOrder(tokens, solution) {
+  const target = (solution || '').replace(STRIP_PUNCT, '');
+  const rest = tokens.slice();
+  const ordered = [];
+  let pos = 0;
+  while (rest.length) {
+    const fits = rest.filter((t) => target.startsWith(t.tok.replace(STRIP_PUNCT, ''), pos));
+    if (!fits.length) return tokens.slice();
+    const pick = fits.reduce((a, b) => (b.tok.length > a.tok.length ? b : a));
+    ordered.push(pick);
+    rest.splice(rest.indexOf(pick), 1);
+    pos += pick.tok.replace(STRIP_PUNCT, '').length;
+  }
+  return pos === target.length ? ordered : tokens.slice();
+}
+
 function loadCurrentQuestion() {
   const list = questions.value;
   if (!list.length) return;
@@ -135,7 +153,7 @@ function loadCurrentQuestion() {
   }));
 
   if (isSolved) {
-    slots.value = tokens.slice();
+    slots.value = inSolutionOrder(tokens, e.solution_zh);
     bank.value = [];
   } else {
     let shuffled = window.shuffledCopy(tokens);
