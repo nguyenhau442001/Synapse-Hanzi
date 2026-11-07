@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 INDEX_HTML = ROOT / "index.html"
 FLASHCARD_JS = ROOT / "assets" / "js" / "flashcard.js"
-RELATED_JS = ROOT / "assets" / "js" / "related-words.js"
+RELATED_JS = ROOT / "src" / "islands" / "RelatedWords.jsx"
 PROGRESS_JS = ROOT / "assets" / "js" / "progress.js"
 FLASHCARD_CSS = ROOT / "assets" / "css" / "flashcard.css"
 WORKSTATION_CSS = ROOT / "assets" / "css" / "workstation.css"
@@ -22,11 +22,12 @@ SW_JS = ROOT / "sw.js"
 class TestRelatedWordsFeature(unittest.TestCase):
     def test_related_script_registered(self):
         html = INDEX_HTML.read_text(encoding="utf-8")
-        self.assertIn("assets/js/related-words.js", html, "related-words.js must be registered in index.html")
+        self.assertIn("assets/js/preact/islands.js", html, "the Preact islands bundle (RelatedWords.jsx) must be loaded by index.html")
+        self.assertIn("mountRelatedWords()", (ROOT / "src" / "islands" / "main.jsx").read_text(encoding="utf-8"))
 
     def test_sw_caches_related_script(self):
         sw = SW_JS.read_text(encoding="utf-8")
-        self.assertIn("related-words.js", sw, "sw.js must precache related-words.js")
+        self.assertIn("preact/islands.js", sw, "sw.js must precache the islands bundle that contains RelatedWords.jsx")
 
     def test_card_related_wrap_in_template(self):
         flashcard_code = FLASHCARD_JS.read_text(encoding="utf-8")
