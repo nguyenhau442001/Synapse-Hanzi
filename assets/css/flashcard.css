@@ -1228,9 +1228,6 @@ body.hide-illustrations .card .card-visual-col {
 :root[data-theme="dark"] .rating-btn--good:hover .rating-label { color: #A7F3D0 !important; }
 :root[data-theme="dark"] .rating-btn--good:active {
   background-color: rgba(16, 185, 129, 0.4) !important;
-}
-:root[data-theme="dark"] .rating-btn--good:active {
-  background-color: rgba(45, 102, 77, 0.34);
   transform: translateY(1px);
 }
 .daily-new-limit-message { min-height: 1.2em; margin-top: 6px; color: var(--text-secondary); font-size: 13px; }

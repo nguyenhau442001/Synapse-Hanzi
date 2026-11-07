@@ -363,24 +363,6 @@ body.flashcard-study-mode::before {
 :root[data-theme="dark"] body.flashcard-study-mode::before {
   opacity: 1;
 }
-:root[data-theme="dark"] body.flashcard-study-mode {
-  --canvas-bg: #141719;
-  --text-primary: #E4E5E2;
-  --text-secondary: #A5AAA7;
-  --text-muted: #828A86;
-  --border-color: #343A3C;
-  --border-subtle: #2A3032;
-  --accent-sage: #72B99A;
-  --accent-sage-subtle: rgba(114, 185, 154, 0.14);
-  --rating-again-bg: rgba(239, 68, 68, 0.12);
-  --rating-again-border: rgba(239, 68, 68, 0.28);
-  --rating-again-text: #F87171;
-  --rating-good-bg: rgba(114, 185, 154, 0.15);
-  --rating-good-border: rgba(114, 185, 154, 0.35);
-  --rating-good-text: #72B99A;
-  background-color: var(--canvas-bg) !important;
-  color: var(--text-primary);
-}
 body.flashcard-study-mode .app {
   position: relative;
   z-index: 1;
@@ -3245,25 +3227,6 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
     gap: 12px !important;
   }
 
-  body.flashcard-study-mode .study-nav-btn {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 6px !important;
-    padding: 8px 16px !important;
-    font-size: 13.5px !important;
-    font-weight: 600 !important;
-    background: var(--card-bg, #ffffff) !important;
-    border: 1px solid var(--border) !important;
-    color: var(--text-secondary) !important;
-    border-radius: 12px !important;
-    cursor: pointer !important;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03) !important;
-    transition: all 0.16s ease !important;
-    user-select: none !important;
-    -webkit-tap-highlight-color: transparent !important;
-  }
-
   body.flashcard-study-mode .study-nav-btn:hover:not(:disabled) {
     background: var(--surface-subtle, rgba(0, 0, 0, 0.04)) !important;
     border-color: rgba(0, 0, 0, 0.18) !important;
@@ -3326,6 +3289,22 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
   }
 
   body.flashcard-study-mode .study-nav-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    padding: 8px 16px !important;
+    font-size: 13.5px !important;
+    font-weight: 600 !important;
+    background: var(--card-bg, #ffffff) !important;
+    border: 1px solid var(--border) !important;
+    color: var(--text-secondary) !important;
+    border-radius: 12px !important;
+    cursor: pointer !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03) !important;
+    transition: all 0.16s ease !important;
+    user-select: none !important;
+    -webkit-tap-highlight-color: transparent !important;
     min-height: 48px !important;
   }
 
@@ -3608,9 +3587,6 @@ body.flashcard-study-mode .memory-curve-panel.is-empty { display: none !importan
 }
 
 @media (min-width: 768px) and (max-height: 720px) {
-  body.flashcard-study-mode {
-    padding: 6px 14px 10px !important;
-  }
   body.flashcard-study-mode .study-view-topbar {
     padding: 4px 4px 6px;
     margin: 0 auto 4px;
@@ -4712,7 +4688,10 @@ body.flashcard-study-mode .card.is-flipped .card-visual-col[hidden] {
   body.flashcard-study-mode { --study-card-reserve: 322px; }
 }
 @media (min-width: 768px) and (max-height: 720px) {
-  body.flashcard-study-mode { --study-card-reserve: 300px; }
+  body.flashcard-study-mode {
+    padding: 6px 14px 10px !important;
+    --study-card-reserve: 300px;
+  }
 }
 #screenVocabHub .creator-signature {
   display: flex;
@@ -4832,14 +4811,6 @@ body.flashcard-study-mode .progress-nav-track {
 }
 :root[data-theme="dark"] body.flashcard-study-mode .progress-nav-track { background: rgba(255, 255, 255, 0.1); }
 
-/* Filter cards: compact, identical height at every viewport */
-body.flashcard-study-mode .progress-nav-card {
-  min-height: 38px !important;
-  height: 38px;
-  padding: 0 12px !important;
-  border-radius: 10px;
-}
-
 /* --- Example: tighter, clear hierarchy, visible audio --------------------- */
 body.flashcard-study-mode .card.is-flipped .example-box {
   border-color: rgba(221, 212, 196, 0.6);
@@ -4887,10 +4858,6 @@ body.flashcard-study-mode .card-accordion[open] {
 }
 
 /* --- Prev / position / next: one centered, balanced group ----------------- */
-body.flashcard-study-mode .study-nav-controls,
-body.flashcard-study-mode .nav-row {
-  justify-content: center;
-}
 @media (max-width: 767px) {
   body.flashcard-study-mode .study-nav-controls,
   body.flashcard-study-mode .nav-row { gap: 8px; }
@@ -4945,6 +4912,22 @@ body.flashcard-study-mode {
   --hs-ink-plate: #2B2723;      /* warm charcoal behind illustrations */
 }
 :root[data-theme="dark"] body.flashcard-study-mode {
+  --canvas-bg: #141719;
+  --text-primary: #E4E5E2;
+  --text-secondary: #A5AAA7;
+  --text-muted: #828A86;
+  --border-color: #343A3C;
+  --border-subtle: #2A3032;
+  --accent-sage: #72B99A;
+  --accent-sage-subtle: rgba(114, 185, 154, 0.14);
+  --rating-again-bg: rgba(239, 68, 68, 0.12);
+  --rating-again-border: rgba(239, 68, 68, 0.28);
+  --rating-again-text: #F87171;
+  --rating-good-bg: rgba(114, 185, 154, 0.15);
+  --rating-good-border: rgba(114, 185, 154, 0.35);
+  --rating-good-text: #72B99A;
+  background-color: var(--canvas-bg) !important;
+  color: var(--text-primary);
   --accent: #D98A62;
   --hs-accent-ink: #E3A07E;
   --hs-accent-tint: rgba(217, 138, 98, 0.1);
@@ -4983,7 +4966,13 @@ body.flashcard-study-mode .progress-nav-card.is-active,
   border-color: var(--hs-accent-line);
   background: var(--hs-accent-tint);
 }
-body.flashcard-study-mode .progress-nav-card { border-color: var(--hs-beige); }
+body.flashcard-study-mode .progress-nav-card {
+  min-height: 38px !important;
+  height: 38px;
+  padding: 0 12px !important;
+  border-radius: 10px;
+  border-color: var(--hs-beige);
+}
 
 /* --- Card shell: warm white, beige hairline, no corner ornaments ---------- */
 body.flashcard-study-mode #cardArea > .card {
@@ -5282,7 +5271,11 @@ body.flashcard-study-mode .rating-kbd-badge kbd {
 body.flashcard-study-mode .rating-kbd-sep { opacity: 0.6; font-size: 10px; }
 
 body.flashcard-study-mode .study-nav-controls,
-body.flashcard-study-mode .nav-row { gap: 12px; margin-top: 10px; }
+body.flashcard-study-mode .nav-row {
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
 body.flashcard-study-mode .study-nav-btn,
 body.flashcard-study-mode .nav-btn,
 body.flashcard-study-mode .study-nav-position {
