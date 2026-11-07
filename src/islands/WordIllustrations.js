@@ -1203,47 +1203,50 @@ function preloadDeckIllustrations(wordList, startIdx = 0, filteredOrder = null, 
   }
 }
 
-// Global exposure
-if (typeof window !== 'undefined') {
-  window.POS_TYPES = POS_TYPES;
-  window.HSK_POS_DB = HSK_POS_DB;
-  window.SEMANTIC_CATEGORIES = SEMANTIC_CATEGORIES;
-  window.classifySemanticCategory = classifySemanticCategory;
-  window.planSemanticVisualScene = planSemanticVisualScene;
-  window.validateSemanticIllustration = validateSemanticIllustration;
-  window.getWordPartOfSpeech = getWordPartOfSpeech;
-  window.WORD_ILLUSTRATIONS_DB = WORD_ILLUSTRATIONS_DB;
-  window.STATIC_ILLUSTRATIONS_INDEX = STATIC_ILLUSTRATIONS_INDEX;
-  window.getWordIllustration = getWordIllustration;
-  window.buildContextualPrompt = buildContextualPrompt;
-  window.SynapseSvgCache = SynapseSvgCache;
-  window.loadLevelIllustrationPack = loadLevelIllustrationPack;
-  window.preloadIllustration = preloadIllustration;
-  window.preloadSingleWordIllustration = preloadSingleWordIllustration;
-  window.preloadWordsIllustrations = preloadWordsIllustrations;
-  window.preloadNearbyIllustrations = preloadNearbyIllustrations;
-  window.preloadDeckIllustrations = preloadDeckIllustrations;
+// Global exposure & island mount
+export function mountWordIllustrations() {
+  if (typeof window !== 'undefined') {
+    window.POS_TYPES = POS_TYPES;
+    window.HSK_POS_DB = HSK_POS_DB;
+    window.SEMANTIC_CATEGORIES = SEMANTIC_CATEGORIES;
+    window.classifySemanticCategory = classifySemanticCategory;
+    window.planSemanticVisualScene = planSemanticVisualScene;
+    window.validateSemanticIllustration = validateSemanticIllustration;
+    window.getWordPartOfSpeech = getWordPartOfSpeech;
+    window.WORD_ILLUSTRATIONS_DB = WORD_ILLUSTRATIONS_DB;
+    window.STATIC_ILLUSTRATIONS_INDEX = STATIC_ILLUSTRATIONS_INDEX;
+    window.getWordIllustration = getWordIllustration;
+    window.buildContextualPrompt = buildContextualPrompt;
+    window.SynapseSvgCache = SynapseSvgCache;
+    window.loadLevelIllustrationPack = loadLevelIllustrationPack;
+    window.preloadIllustration = preloadIllustration;
+    window.preloadSingleWordIllustration = preloadSingleWordIllustration;
+    window.preloadWordsIllustrations = preloadWordsIllustrations;
+    window.preloadNearbyIllustrations = preloadNearbyIllustrations;
+    window.preloadDeckIllustrations = preloadDeckIllustrations;
+  }
 }
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = {
-    POS_TYPES,
-    HSK_POS_DB,
-    SEMANTIC_CATEGORIES,
-    classifySemanticCategory,
-    planSemanticVisualScene,
-    validateSemanticIllustration,
-    getWordPartOfSpeech,
-    WORD_ILLUSTRATIONS_DB,
-    STATIC_ILLUSTRATIONS_INDEX,
-    getWordIllustration,
-    buildContextualPrompt,
-    generateAestheticFallback,
-    SynapseSvgCache,
-    loadLevelIllustrationPack,
-    preloadIllustration,
-    preloadSingleWordIllustration,
-    preloadWordsIllustrations,
-    preloadNearbyIllustrations,
-    preloadDeckIllustrations
-  };
-}
+
+mountWordIllustrations();
+
+export {
+  POS_TYPES,
+  HSK_POS_DB,
+  SEMANTIC_CATEGORIES,
+  classifySemanticCategory,
+  planSemanticVisualScene,
+  validateSemanticIllustration,
+  getWordPartOfSpeech,
+  WORD_ILLUSTRATIONS_DB,
+  STATIC_ILLUSTRATIONS_INDEX,
+  getWordIllustration,
+  buildContextualPrompt,
+  generateAestheticFallback,
+  SynapseSvgCache,
+  loadLevelIllustrationPack,
+  preloadIllustration,
+  preloadSingleWordIllustration,
+  preloadWordsIllustrations,
+  preloadNearbyIllustrations,
+  preloadDeckIllustrations,
+};
