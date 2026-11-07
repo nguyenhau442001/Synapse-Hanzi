@@ -1,12 +1,26 @@
 // Export and import progress snapshots between devices.
-function exportProgress() {
+// Preact island port replacing legacy assets/js/backup.js.
+
+/* global currentLevel, srsCards, readSrsReviewLog, showPinyin, showIllustration, order,
+   srsRetention, progress, WORDS, SRS, migrateLegacyProgress, progressFromCards,
+   appendImportedReviewLog, saveRetention, saveProgress, savePrefs, renderLearningDashboard,
+   setFilter, updateSrsPreviews, toggleTransferPanel, toggleRadicalTransferPanel,
+   radicalProgress, showRadicalPinyin, saveRadicalProgress, saveRadicalPrefs,
+   setRadicalFilter, radicalCurrentFilter, radicalCurrentView, renderRadicalOverview */
+
+export function exportProgress() {
   const data = JSON.stringify({
     schemaVersion: 3,
     level: currentLevel,
     cards: srsCards,
-    reviewLog: readSrsReviewLog(currentLevel),
-    prefs: { showPinyin, showIllustrationV2: showIllustration, order, desiredRetention: srsRetention },
-    progress,
+    reviewLog: typeof readSrsReviewLog === 'function' ? readSrsReviewLog(currentLevel) : [],
+    prefs: {
+      showPinyin: typeof showPinyin !== 'undefined' ? showPinyin : true,
+      showIllustrationV2: typeof showIllustration !== 'undefined' ? showIllustration : false,
+      order: typeof order !== 'undefined' ? order : [],
+      desiredRetention: typeof srsRetention !== 'undefined' ? srsRetention : 0.9,
+    },
+    progress: typeof progress !== 'undefined' ? progress : {},
   }, null, 2);
   const blob = new Blob([data], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
@@ -22,7 +36,7 @@ function exportProgress() {
   }, 400);
 }
 
-function importProgress(event) {
+export function importProgress(event) {
   const file = event.target.files[0];
   if (!file) return;
   const reader = new FileReader();
@@ -44,33 +58,50 @@ function importProgress(event) {
         WORDS.forEach(word => {
           if (!restoredCards[word.id]) restoredCards[word.id] = SRS.createNewCard();
         });
-        srsCards = restoredCards;
+        Object.keys(srsCards).forEach(key => delete srsCards[key]);
+        Object.assign(srsCards, restoredCards);
       } else {
         const legacyProgress = data.progress && typeof data.progress === 'object' ? data.progress : {};
-        srsCards = migrateLegacyProgress(currentLevel, WORDS, legacyProgress, srsRetention);
+        const migrated = migrateLegacyProgress(currentLevel, WORDS, legacyProgress, srsRetention);
+        Object.keys(srsCards).forEach(key => delete srsCards[key]);
+        Object.assign(srsCards, migrated);
       }
-      progress = progressFromCards(srsCards);
+      const newProg = progressFromCards(srsCards);
+      Object.keys(progress).forEach(key => delete progress[key]);
+      Object.assign(progress, newProg);
+
       appendImportedReviewLog(currentLevel, data.reviewLog);
-      if (Array.isArray(backupPrefs.order) && backupPrefs.order.length === WORDS.length) order = backupPrefs.order;
-      if (typeof backupPrefs.showPinyin === 'boolean') showPinyin = backupPrefs.showPinyin;
-      if (typeof backupPrefs.showIllustrationV2 === 'boolean') {
-        showIllustration = backupPrefs.showIllustrationV2;
-        try { localStorage.setItem('hsk_show_illustrations_v2', String(showIllustration)); } catch (e) {}
-        document.body.classList.toggle('hide-illustrations', !showIllustration);
+      if (Array.isArray(backupPrefs.order) && backupPrefs.order.length === WORDS.length) {
+        order.length = 0;
+        backupPrefs.order.forEach(item => order.push(item));
       }
-      if (Number.isFinite(Number(backupPrefs.desiredRetention))) srsRetention = saveRetention(backupPrefs.desiredRetention);
+      if (typeof backupPrefs.showPinyin === 'boolean') {
+        window.showPinyin = backupPrefs.showPinyin;
+      }
+      if (typeof backupPrefs.showIllustrationV2 === 'boolean') {
+        window.showIllustration = backupPrefs.showIllustrationV2;
+        try { localStorage.setItem('hsk_show_illustrations_v2', String(backupPrefs.showIllustrationV2)); } catch (_) {}
+        document.body.classList.toggle('hide-illustrations', !backupPrefs.showIllustrationV2);
+      }
+      if (Number.isFinite(Number(backupPrefs.desiredRetention))) {
+        window.srsRetention = saveRetention(backupPrefs.desiredRetention);
+      }
       const retentionSlider = document.getElementById('desiredRetentionSlider');
       const retentionLabel = document.getElementById('desiredRetentionValue');
       if (retentionSlider) retentionSlider.value = String(srsRetention);
       if (retentionLabel) retentionLabel.textContent = Math.round(srsRetention * 100) + '%';
       saveProgress();
       savePrefs();
-      renderLearningDashboard();
+      if (typeof renderLearningDashboard === 'function') renderLearningDashboard();
       const btn = document.getElementById('pinyinToggle');
-      btn.textContent = showPinyin ? '👁 Đang hiện pinyin' : '🙈 Chế độ thử thách: ẩn pinyin';
-      btn.classList.toggle('on', !showPinyin);
-      setFilter(currentFilter);
-      if (filteredOrder.length) updateSrsPreviews(WORDS[filteredOrder[idx % filteredOrder.length]]);
+      if (btn) {
+        btn.textContent = showPinyin ? '👁 Đang hiện pinyin' : '🙈 Chế độ thử thách: ẩn pinyin';
+        btn.classList.toggle('on', !showPinyin);
+      }
+      if (typeof setFilter === 'function') setFilter(typeof currentFilter !== 'undefined' ? currentFilter : 'all');
+      if (typeof filteredOrder !== 'undefined' && filteredOrder.length && typeof updateSrsPreviews === 'function') {
+        updateSrsPreviews(WORDS[filteredOrder[idx % filteredOrder.length]]);
+      }
       if (typeof toggleTransferPanel === 'function') toggleTransferPanel(false);
       alert('Đã khôi phục tiến trình thành công!');
     } catch (err) {
@@ -81,23 +112,25 @@ function importProgress(event) {
   event.target.value = '';
 }
 
-function updateDesiredRetention(value) {
-  srsRetention = saveRetention(value);
-  savePrefs();
+export function updateDesiredRetention(value) {
+  if (typeof saveRetention === 'function') {
+    window.srsRetention = saveRetention(value);
+  }
+  if (typeof savePrefs === 'function') savePrefs();
   const display = document.getElementById('desiredRetentionValue');
   if (display) display.textContent = Math.round(srsRetention * 100) + '%';
-  if (currentLevel && filteredOrder.length) {
+  if (currentLevel && typeof filteredOrder !== 'undefined' && filteredOrder.length && typeof updateSrsPreviews === 'function') {
     updateSrsPreviews(WORDS[filteredOrder[idx % filteredOrder.length]]);
   }
-  renderLearningDashboard();
+  if (typeof renderLearningDashboard === 'function') renderLearningDashboard();
 }
 
-function exportRadicalProgress() {
+export function exportRadicalProgress() {
   const data = JSON.stringify({
     type: 'radicals',
     version: 1,
-    progress: radicalProgress,
-    showPinyin: showRadicalPinyin,
+    progress: typeof radicalProgress !== 'undefined' ? radicalProgress : {},
+    showPinyin: typeof showRadicalPinyin !== 'undefined' ? showRadicalPinyin : true,
   }, null, 2);
   const blob = new Blob([data], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
@@ -113,7 +146,7 @@ function exportRadicalProgress() {
   }, 400);
 }
 
-function importRadicalProgress(event) {
+export function importRadicalProgress(event) {
   const file = event.target.files[0];
   if (!file) return;
   const reader = new FileReader();
@@ -131,18 +164,27 @@ function importRadicalProgress(event) {
           restoredProgress[key] = status;
         }
       });
-      radicalProgress = restoredProgress;
-      if (typeof data.showPinyin === 'boolean') showRadicalPinyin = data.showPinyin;
-      saveRadicalProgress();
-      saveRadicalPrefs();
+      if (typeof radicalProgress !== 'undefined') {
+        Object.keys(radicalProgress).forEach(key => delete radicalProgress[key]);
+        Object.assign(radicalProgress, restoredProgress);
+      }
+      if (typeof data.showPinyin === 'boolean') {
+        window.showRadicalPinyin = data.showPinyin;
+      }
+      if (typeof saveRadicalProgress === 'function') saveRadicalProgress();
+      if (typeof saveRadicalPrefs === 'function') saveRadicalPrefs();
 
       const pinyinButton = document.getElementById('radicalPinyinToggle');
       if (pinyinButton) {
         pinyinButton.textContent = showRadicalPinyin ? '👁 Đang hiện pinyin' : '🙈 Chế độ thử thách: ẩn pinyin';
         pinyinButton.classList.toggle('on', !showRadicalPinyin);
       }
-      setRadicalFilter(radicalCurrentFilter);
-      if (radicalCurrentView === 'overview') renderRadicalOverview();
+      if (typeof setRadicalFilter === 'function') {
+        setRadicalFilter(typeof radicalCurrentFilter !== 'undefined' ? radicalCurrentFilter : 'all');
+      }
+      if (typeof radicalCurrentView !== 'undefined' && radicalCurrentView === 'overview' && typeof renderRadicalOverview === 'function') {
+        renderRadicalOverview();
+      }
       if (typeof toggleRadicalTransferPanel === 'function') toggleRadicalTransferPanel(false);
       alert('Đã khôi phục tiến trình Bộ thủ thành công!');
     } catch (error) {
@@ -151,4 +193,12 @@ function importRadicalProgress(event) {
   };
   reader.readAsText(file);
   event.target.value = '';
+}
+
+export function mountBackupSync() {
+  window.exportProgress = exportProgress;
+  window.importProgress = importProgress;
+  window.updateDesiredRetention = updateDesiredRetention;
+  window.exportRadicalProgress = exportRadicalProgress;
+  window.importRadicalProgress = importRadicalProgress;
 }

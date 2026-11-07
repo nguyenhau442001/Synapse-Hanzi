@@ -32,6 +32,7 @@ import { mountCardInteractions } from './CardInteractions';
 import { mountWordIllustrations } from './WordIllustrations';
 import { mountHsk30Grid } from './Hsk30Grid';
 import { mountTopicGrid } from './TopicGrid';
+import { mountBackupSync } from './BackupSync';
 
 mountAmbientBackground();
 mountStudyHelpModal();
@@ -64,3 +65,4 @@ mountCardInteractions();
 mountWordIllustrations();
 mountHsk30Grid();
 mountTopicGrid();
+mountBackupSync();
