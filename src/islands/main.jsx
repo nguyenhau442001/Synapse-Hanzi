@@ -13,6 +13,7 @@ import { mountSidebarTabs } from './SidebarTabs';
 import { mountWordCompanion } from './WordCompanion';
 import { mountGrammarBreakdown } from './GrammarBreakdown';
 import { mountTodayReview } from './TodayReview';
+import { mountHanziDecomposition } from './HanziDecomposition';
 
 mountStudyHelpModal();
 mountGuessWordGame();
@@ -22,6 +23,7 @@ mountVocabularyOverview();
 mountMemoryCurve();
 mountSidebarRadicalsFilter(); // before WeakWords: the weak-words panel goes right after it
 mountWeakWords();
+mountHanziDecomposition(); // before SidebarTabs: the initial tab may render the radicals panel
 mountSidebarTabs();
 mountWordCompanion(); // before GrammarBreakdown: the grammar panel goes right after it
 mountGrammarBreakdown();

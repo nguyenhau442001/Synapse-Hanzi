@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parent.parent
 FLASHCARD_JS = ROOT / "assets" / "js" / "flashcard.js"
 FLASHCARD_CSS = ROOT / "assets" / "css" / "flashcard.css"
 WORKSTATION_CSS = ROOT / "assets" / "css" / "workstation.css"
-DECOMP_JS = ROOT / "assets" / "js" / "hanzi-decomposition.js"
+DECOMP_JS = ROOT / "src" / "islands" / "HanziDecomposition.jsx"
 RELATED_JS = ROOT / "assets" / "js" / "related-words.js"
 PROGRESS_JS = ROOT / "assets" / "js" / "progress.js"
 
