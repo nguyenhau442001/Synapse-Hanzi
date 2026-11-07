@@ -1,8 +1,12 @@
+// src/islands/SrsEngine.js
 // FSRS boundary. Application code should use SRS instead of ts-fsrs directly.
-const SRS = (function () {
-  const library = window.FSRS;
+
+import * as tsFsrs from 'ts-fsrs';
+
+function createSrsEngine() {
+  const library = (typeof window !== 'undefined' && window.FSRS) || tsFsrs;
   if (!library || typeof library.fsrs !== 'function') {
-    throw new Error('Không tải được ts-fsrs 5.4.1 (global FSRS không tồn tại).');
+    throw new Error('Không tải được ts-fsrs (global FSRS không tồn tại).');
   }
 
   const RATINGS = {
@@ -228,4 +232,17 @@ const SRS = (function () {
     ratingValue,
     ratingName,
   });
-})();
+}
+
+export const SRS = createSrsEngine();
+
+export function mountSrsEngine() {
+  if (typeof window !== 'undefined') {
+    window.SRS = SRS;
+  }
+  return SRS;
+}
+
+if (typeof window !== 'undefined') {
+  window.SRS = SRS;
+}

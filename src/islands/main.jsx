@@ -1,6 +1,7 @@
 // Entry for the Preact islands mounted inside the legacy index.html.
 // Each island owns one piece of the page that used to be built by a legacy script,
 // rendering identical markup so the existing CSS applies unchanged.
+import { mountSrsEngine } from './SrsEngine';
 import { mountAmbientBackground } from './ambientBackground';
 import { mountStudyHelpModal } from './StudyHelpModal';
 import { mountGuessWordGame } from './GuessWordGame';
@@ -41,6 +42,7 @@ import { mountLevels } from './Levels';
 import { mountSpaRouter } from './SpaRouter';
 import { mountAppBootstrap } from './AppBootstrap';
 
+mountSrsEngine();
 mountAmbientBackground();
 mountStudyHelpModal();
 mountGuessWordGame();
