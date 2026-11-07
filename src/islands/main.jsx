@@ -15,6 +15,7 @@ import { mountGrammarBreakdown } from './GrammarBreakdown';
 import { mountTodayReview } from './TodayReview';
 import { mountHanziDecomposition } from './HanziDecomposition';
 import { mountRelatedWords } from './RelatedWords';
+import { mountGradedReading } from './GradedReading';
 
 mountStudyHelpModal();
 mountGuessWordGame();
@@ -30,3 +31,4 @@ mountWordCompanion(); // before GrammarBreakdown: the grammar panel goes right a
 mountGrammarBreakdown();
 mountTodayReview();
 mountRelatedWords();
+mountGradedReading();
