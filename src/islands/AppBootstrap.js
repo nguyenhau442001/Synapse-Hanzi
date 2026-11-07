@@ -40,6 +40,20 @@ export function initAppBootstrap() {
 
   loadRadicalProgress();
   loadRadicalPrefs();
+
+  const prefetchReading = function() {
+    if (typeof ensureReadingAnalysisLoaded === 'function') ensureReadingAnalysisLoaded();
+    else if (typeof window !== 'undefined' && typeof window.ensureReadingAnalysisLoaded === 'function') {
+      window.ensureReadingAnalysisLoaded();
+    }
+  };
+  if (typeof window !== 'undefined') {
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(prefetchReading, { timeout: 2500 });
+    } else {
+      setTimeout(prefetchReading, 400);
+    }
+  }
 }
 
 export function mountAppBootstrap() {

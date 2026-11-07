@@ -43,6 +43,7 @@ import { mountThemeManager } from './ThemeManager';
 import { mountSpeechAudio } from './SpeechAudio';
 import { mountLevels } from './Levels';
 import { mountSpaRouter } from './SpaRouter';
+import { mountMobileBottomNav } from './MobileBottomNav';
 import { mountAppBootstrap } from './AppBootstrap';
 
 mountAppUtils();
@@ -87,4 +88,5 @@ mountThemeManager();
 mountSpeechAudio();
 mountLevels();
 mountSpaRouter();
+mountMobileBottomNav();
 mountAppBootstrap();
