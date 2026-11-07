@@ -9,6 +9,7 @@ import { mountVocabularyOverview } from './VocabularyOverview';
 import { mountMemoryCurve } from './MemoryCurve';
 import { mountSidebarRadicalsFilter } from './SidebarRadicalsFilter';
 import { mountWeakWords } from './WeakWords';
+import { mountSidebarTabs } from './SidebarTabs';
 import { mountWordCompanion } from './WordCompanion';
 import { mountGrammarBreakdown } from './GrammarBreakdown';
 
@@ -20,5 +21,6 @@ mountVocabularyOverview();
 mountMemoryCurve();
 mountSidebarRadicalsFilter(); // before WeakWords: the weak-words panel goes right after it
 mountWeakWords();
+mountSidebarTabs();
 mountWordCompanion(); // before GrammarBreakdown: the grammar panel goes right after it
 mountGrammarBreakdown();
