@@ -893,7 +893,7 @@ class TestScreenMutualExclusion(unittest.TestCase):
         cls.levels_js = (REPO_ROOT / "src" / "islands" / "Levels.js").read_text(encoding="utf-8")
         cls.radicals_js = (REPO_ROOT / "src" / "islands" / "RadicalHub.jsx").read_text(encoding="utf-8")
         cls.due_review_js = (REPO_ROOT / "src" / "islands" / "TodayReview.jsx").read_text(encoding="utf-8")
-        cls.spa_router_js = (REPO_ROOT / "assets" / "js" / "spa-router.js").read_text(encoding="utf-8")
+        cls.spa_router_js = (REPO_ROOT / "src" / "islands" / "SpaRouter.js").read_text(encoding="utf-8")
 
     def test_select_level_hides_radical_and_review_screens(self):
         """selectLevel must hide screenRadicalCards, screenRadicalHub, and screenTodayReviews."""

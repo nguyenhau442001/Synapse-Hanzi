@@ -1,9 +1,10 @@
-// assets/js/spa-router.js
+// src/islands/SpaRouter.js
 // Single Page Application (SPA) History API Router & Navigation Coordinator
 
-const SpaRouter = (function() {
+export const SpaRouter = (function() {
   let isNavigatingFromPopstate = false;
   let hasNavigatedInApp = false;
+  let initialized = false;
 
   function getCurrentUrlState() {
     const params = new URLSearchParams(window.location.search);
@@ -231,6 +232,8 @@ const SpaRouter = (function() {
   }
 
   function init() {
+    if (initialized) return;
+    initialized = true;
     window.addEventListener('popstate', onPopState);
 
     // Bootstrap current state on initial load
@@ -274,13 +277,6 @@ const SpaRouter = (function() {
     }
   }
 
-  // Auto-init on script load
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
-
   return {
     init,
     pushView,
@@ -290,4 +286,14 @@ const SpaRouter = (function() {
   };
 })();
 
-window.SpaRouter = SpaRouter;
+export function mountSpaRouter() {
+  if (typeof window !== 'undefined') {
+    window.SpaRouter = SpaRouter;
+    SpaRouter.init();
+  }
+  return SpaRouter;
+}
+
+if (typeof window !== 'undefined') {
+  window.SpaRouter = SpaRouter;
+}

@@ -38,6 +38,7 @@ import { mountBackupSync } from './BackupSync';
 import { mountThemeManager } from './ThemeManager';
 import { mountSpeechAudio } from './SpeechAudio';
 import { mountLevels } from './Levels';
+import { mountSpaRouter } from './SpaRouter';
 import { mountAppBootstrap } from './AppBootstrap';
 
 mountAmbientBackground();
@@ -77,4 +78,5 @@ mountBackupSync();
 mountThemeManager();
 mountSpeechAudio();
 mountLevels();
+mountSpaRouter();
 mountAppBootstrap();
