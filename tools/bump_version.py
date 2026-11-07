@@ -22,7 +22,7 @@ SEMVER = re.compile(r"^(\d+)\.(\d+)\.(\d+)$")
 # file -> list of (pattern, replacement template); {v} is the new version
 TARGETS = {
     "sw.js": [(r"const APP_VERSION = '[^']*';", "const APP_VERSION = '{v}';")],
-    "assets/js/utils.js": [(r"const APP_VERSION = '[^']*';", "const APP_VERSION = '{v}';")],
+    "src/islands/AppUtils.js": [(r"const APP_VERSION = '[^']*';", "const APP_VERSION = '{v}';")],
     "assets/flashcards.css": [(r"\?v=[^\"')\s]+", "?v={v}")],
     "index.html": [
         (r"\?v=[^\"')\s]+", "?v={v}"),

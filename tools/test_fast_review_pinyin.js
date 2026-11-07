@@ -3,7 +3,8 @@ const fs = require('fs');
 const vm = require('vm');
 const path = require('path');
 
-const utilsCode = fs.readFileSync(path.join(__dirname, '../assets/js/utils.js'), 'utf8');
+const utilsFile = path.join(__dirname, '../src/islands/AppUtils.js');
+const utilsCode = fs.readFileSync(utilsFile, 'utf8').replace(/export\s+/g, '');
 const fastReviewPath = path.join(__dirname, '../assets/js/fast-review.js');
 const fastReviewCode = fs.existsSync(fastReviewPath) ? fs.readFileSync(fastReviewPath, 'utf8') : '';
 
