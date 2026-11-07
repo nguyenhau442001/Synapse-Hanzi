@@ -50,6 +50,64 @@ function stripPinyinTones(text) {
   return String(text || '').toLowerCase().replace(/[āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜü]/g, ch => PINYIN_TONE_MARKS[ch]);
 }
 
+// Strip tones, normalize quotes/apostrophes, and collapse whitespace.
+function stripTonePinyin(text) {
+  let s = stripPinyinTones(text);
+  s = s.replace(/[\u2018\u2019\u02bb\u02bc`´]/g, "'");
+  return s.replace(/\s+/g, ' ').trim();
+}
+
+// Strip tones, punctuation, spacing, and optionally handle v/u and Telex 'r'.
+function cleanPinyin(text, { allowUForV = false, recoverTelexR = false } = {}) {
+  if (!text) return '';
+  let s = stripPinyinTones(text);
+
+  if (recoverTelexR) {
+    s = s.normalize('NFD').replace(/\u0309/g, 'r');
+  }
+
+  s = s.normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/đ/g, 'd');
+
+  s = s.replace(/['\u2018\u2019\u02bb\u02bc`´\-\s0-9\.,!?_]/g, '');
+
+  if (allowUForV) {
+    s = s.replace(/v/g, 'u');
+  }
+  return s;
+}
+
+// Match user input pinyin against target with loose tone, spacing, Telex, and v/u rules.
+function pinyinLooseMatch(input, target) {
+  if (!input || !target) return false;
+
+  if (typeof target === 'string' && (target.includes('/') || target.includes(';'))) {
+    const targets = target.split(/[\/;]/).map(t => t.trim()).filter(Boolean);
+    if (targets.some(t => pinyinLooseMatch(input, t))) return true;
+  }
+
+  const strippedIn = stripTonePinyin(input);
+  const strippedTar = stripTonePinyin(target);
+  if (strippedIn && strippedIn === strippedTar) return true;
+
+  const cleanIn = cleanPinyin(input);
+  const cleanTar = cleanPinyin(target);
+  if (cleanIn && cleanIn === cleanTar) return true;
+
+  const telexIn = cleanPinyin(input, { recoverTelexR: true });
+  if (telexIn && telexIn === cleanTar) return true;
+
+  const cleanInU = cleanPinyin(input, { allowUForV: true });
+  const cleanTarU = cleanPinyin(target, { allowUForV: true });
+  if (cleanInU && cleanInU === cleanTarU) return true;
+
+  const telexInU = cleanPinyin(input, { allowUForV: true, recoverTelexR: true });
+  if (telexInU && telexInU === cleanTarU) return true;
+
+  return false;
+}
+
 // Fisher–Yates shuffle of arr in place; returns arr.
 function shuffleInPlace(arr) {
   for (let i = arr.length - 1; i > 0; i--) {

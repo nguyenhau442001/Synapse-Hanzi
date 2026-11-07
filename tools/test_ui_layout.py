@@ -850,16 +850,21 @@ class TestFastReviewLivesConfiguration(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.index_html = (REPO_ROOT / "index.html").read_text(encoding="utf-8")
-        cls.fast_review_js = (REPO_ROOT / "assets" / "js" / "fast-review.js").read_text(encoding="utf-8")
+        fast_review_path = REPO_ROOT / "assets" / "js" / "fast-review.js"
+        if fast_review_path.exists():
+            cls.fast_review_js = fast_review_path.read_text(encoding="utf-8")
+        else:
+            cls.fast_review_js = (REPO_ROOT / "src" / "islands" / "FastReview.jsx").read_text(encoding="utf-8")
         cls.state_js = (REPO_ROOT / "assets" / "js" / "state.js").read_text(encoding="utf-8")
         cls.fast_review_css = (REPO_ROOT / "assets" / "css" / "fast-review.css").read_text(encoding="utf-8")
 
     def test_review_rules_card_displays_five_lives(self):
-        """Review setup card in index.html must specify 5 lives."""
-        self.assertIn("5 mạng sinh mệnh", self.index_html,
+        """Review setup card in index.html or FastReview.jsx must specify 5 lives."""
+        content = self.fast_review_js if "5 mạng sinh mệnh" in self.fast_review_js else self.index_html
+        self.assertIn("5 mạng sinh mệnh", content,
                       "Setup rules must state '5 mạng sinh mệnh'")
-        self.assertNotIn("3 mạng sinh mệnh", self.index_html,
-                         "Obsolete '3 mạng sinh mệnh' should no longer be present in index.html")
+        self.assertNotIn("3 mạng sinh mệnh", content,
+                         "Obsolete '3 mạng sinh mệnh' should no longer be present")
 
     def test_fast_review_js_configures_five_lives(self):
         """fast-review.js must declare REVIEW_MAX_LIVES = 5 and initialize session with 5 lives."""

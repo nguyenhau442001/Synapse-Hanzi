@@ -767,130 +767,7 @@ if ('serviceWorker' in navigator) {
   <div id="screenRadicalCards" style="display:none"></div><!-- Preact island: src/islands/RadicalCards.jsx -->
 
   <!-- SCREEN 5: Fast-review (⚡ Ôn nhanh) -->
-  <div id="screenReviewPicker" style="display:none">
-    <div class="review-wrapper">
-      <!-- Unified Review Setup Card -->
-      <section class="review-unified-card" id="reviewSetupCard" aria-labelledby="reviewSetupTitle">
-        <div class="review-card-hero">
-          <div class="review-hero-badge">⚡ THỬ THÁCH PHẢN XẠ</div>
-          <h2 class="review-hero-title" id="reviewSetupTitle">Ôn nhanh từ vựng</h2>
-          <p class="review-hero-desc">Kiểm tra khả năng phản xạ chữ Hán dưới áp lực thời gian và giới hạn sinh mệnh.</p>
-        </div>
-
-        <!-- Scope selection with Filter Chips -->
-        <div class="review-scope-box">
-          <div class="review-scope-header">
-            <div class="review-scope-title-group">
-              <span class="review-scope-icon">🎯</span>
-              <span class="review-scope-heading">Phạm vi ôn tập</span>
-            </div>
-            <span class="review-count-pill" id="reviewRangeCount">150 từ</span>
-          </div>
-
-          <div class="review-chip-group" id="reviewLevelChips" role="group" aria-label="Chọn cấp độ HSK cần ôn">
-            <button type="button" class="review-filter-chip active in-range" data-level="1" onclick="selectReviewLevel(1)">HSK 1</button>
-            <button type="button" class="review-filter-chip" data-level="2" onclick="selectReviewLevel(2)">HSK 2</button>
-            <button type="button" class="review-filter-chip" data-level="3" onclick="selectReviewLevel(3)">HSK 3</button>
-            <button type="button" class="review-filter-chip" data-level="4" onclick="selectReviewLevel(4)">HSK 4</button>
-            <button type="button" class="review-filter-chip" data-level="5" onclick="selectReviewLevel(5)">HSK 5</button>
-            <button type="button" class="review-filter-chip" data-level="6" onclick="selectReviewLevel(6)">HSK 6</button>
-          </div>
-
-          <!-- Hidden input preserving backward compatibility for scripts querying reviewRangeSlider -->
-          <input type="hidden" id="reviewRangeSlider" value="1">
-
-          <div class="review-scope-summary">
-            <span class="review-scope-badge" id="reviewRangeLabel">HSK1</span>
-            <span class="review-scope-subtext" id="reviewScopeSubtext">Bao gồm toàn bộ từ vựng cấp độ HSK 1</span>
-          </div>
-        </div>
-
-        <!-- Rules Summary Grid -->
-        <div class="review-rules-container">
-          <div class="review-rule-card">
-            <div class="review-rule-icon">⏱️</div>
-            <div class="review-rule-content">
-              <div class="review-rule-title">20 giây / câu</div>
-              <div class="review-rule-sub">Đồng hồ đếm ngược</div>
-            </div>
-          </div>
-          <div class="review-rule-card">
-            <div class="review-rule-icon">❤️</div>
-            <div class="review-rule-content">
-              <div class="review-rule-title">5 mạng sinh mệnh</div>
-              <div class="review-rule-sub">Sai / hết giờ mất 1 mạng</div>
-            </div>
-          </div>
-          <div class="review-rule-card">
-            <div class="review-rule-icon">🔀</div>
-            <div class="review-rule-content">
-              <div class="review-rule-title">Pinyin &amp; Trắc nghiệm</div>
-              <div class="review-rule-sub">Xen kẽ ngẫu nhiên</div>
-            </div>
-          </div>
-          <div class="review-rule-card">
-            <div class="review-rule-icon">📊</div>
-            <div class="review-rule-content">
-              <div class="review-rule-title" id="reviewPoolStatus">Từ chưa thuộc</div>
-              <div class="review-rule-sub" id="reviewPoolSub">Tự động ưu tiên thẻ cần ôn</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Single prominent CTA Button -->
-        <div class="review-cta-wrapper">
-          <button type="button" class="review-cta-btn" id="reviewRangeStart" onclick="startUnifiedReview()">
-            <span class="review-cta-icon">⚡</span>
-            <span class="review-cta-label" id="reviewStartBtnLabel">Bắt đầu ôn ngay</span>
-          </button>
-        </div>
-
-        <!-- Mobile auxiliary trigger (Bottom sheet for weak/forgotten words) -->
-        <div class="review-mobile-drawer-trigger">
-          <button type="button" class="review-drawer-btn" onclick="openReviewBottomSheet()">
-            <span class="drawer-btn-icon">📋</span>
-            <span class="drawer-btn-label">
-              <strong>Từ cần ôn gấp &amp; Từ khó</strong>
-              <span id="reviewMobileAuxLabel">Xem danh sách từ cần chú ý</span>
-            </span>
-            <span class="drawer-btn-arrow">Mở bảng ↑</span>
-          </button>
-        </div>
-      </section>
-
-      <!-- Review Body: Session & Results -->
-      <div id="reviewPickerBody">
-        <div id="reviewSession" class="review-session-card" hidden></div>
-        <div id="reviewResult" class="review-result-card" hidden></div>
-        <div id="reviewStart" hidden></div>
-      </div>
-
-      <!-- Mobile Bottom Sheet Dialog -->
-      <dialog id="reviewBottomSheet" class="review-bottom-sheet">
-        <div class="review-bottom-sheet-content">
-          <div class="review-sheet-drag-handle" aria-hidden="true"></div>
-          <div class="review-sheet-topbar">
-            <div class="review-sheet-title-group">
-              <h3>Từ cần chú ý</h3>
-              <p>Danh sách từ hay nhầm lẫn và từ khó đã lưu</p>
-            </div>
-            <button type="button" class="review-sheet-close" onclick="closeReviewBottomSheet()" aria-label="Đóng bảng">✕</button>
-          </div>
-          <div class="review-sheet-nav" role="tablist">
-            <button type="button" class="review-sheet-nav-btn active" id="reviewSheetTabForgot" onclick="switchReviewSheetTab('forgot')">Từ cần ôn gấp</button>
-            <button type="button" class="review-sheet-nav-btn" id="reviewSheetTabWeak" onclick="switchReviewSheetTab('weak')">Từ khó đã đánh dấu</button>
-          </div>
-          <div class="review-sheet-pane" id="reviewSheetForgotPane">
-            <div class="review-sheet-list" id="reviewSheetForgotList"></div>
-            <div class="review-sheet-actions" id="reviewSheetForgotActions"></div>
-          </div>
-          <div class="review-sheet-pane" id="reviewSheetWeakPane" style="display:none">
-            <div class="review-sheet-list" id="reviewSheetWeakList"></div>
-          </div>
-        </div>
-      </dialog>
-    </div>
-  </div>
+  <div id="screenReviewPicker" style="display:none"></div><!-- Preact island: src/islands/FastReview.jsx -->
 
   <!-- SCREEN 7: Sentence Game (HSK 4 Hanban Mock Exams) -->
   <div id="screenSentenceGame" style="display:none"></div><!-- Preact island: src/islands/SentenceGame.jsx -->
@@ -925,7 +802,6 @@ if ('serviceWorker' in navigator) {
 <script src="assets/js/levels.js?v=3.17.0"></script>
 <script src="assets/js/topics.js?v=3.17.0"></script>
 <script src="assets/js/hsk30.js?v=3.17.0"></script>
-<script src="assets/js/fast-review.js?v=3.17.0"></script>
 <script src="assets/js/hanviet-dict.js?v=3.17.0"></script>
 <script src="assets/js/flashcard.js?v=3.17.0"></script>
 <script src="assets/js/card-interactions.js?v=3.17.0"></script>

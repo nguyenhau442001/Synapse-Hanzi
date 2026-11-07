@@ -25,6 +25,7 @@ import { mountQuickAccessDrawer } from './QuickAccessDrawer';
 import { mountHomeWidgets } from './HomeWidgets';
 import { mountRadicalHub } from './RadicalHub';
 import { mountRadicalCards } from './RadicalCards';
+import { mountFastReview } from './FastReview';
 
 mountAmbientBackground();
 mountStudyHelpModal();
@@ -50,3 +51,4 @@ mountQuickAccessDrawer();
 mountHomeWidgets();
 mountRadicalHub();
 mountRadicalCards();
+mountFastReview();
