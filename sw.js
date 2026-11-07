@@ -21,7 +21,6 @@ const PRECACHE_ASSET_URLS = [
   './assets/js/dashboard-enhancements.js?v=' + APP_VERSION,
   './assets/css/dashboard-enhancements.css?v=' + APP_VERSION,
   './assets/css/quick-access-drawer.css?v=' + APP_VERSION,
-  './assets/js/quick-access-drawer.js?v=' + APP_VERSION,
   './assets/js/hanviet-dict.js?v=' + APP_VERSION,
   './assets/js/word-illustrations.js?v=' + APP_VERSION,
   './assets/js/preact/islands.js?v=' + APP_VERSION,

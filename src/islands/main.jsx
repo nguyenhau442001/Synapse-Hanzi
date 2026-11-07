@@ -18,6 +18,7 @@ import { mountRelatedWords } from './RelatedWords';
 import { mountGradedReading } from './GradedReading';
 import { mountReadingAnalysis } from './ReadingAnalysis';
 import { mountListeningPractice } from './ListeningPractice';
+import { mountQuickAccessDrawer } from './QuickAccessDrawer';
 
 mountStudyHelpModal();
 mountGuessWordGame();
@@ -36,3 +37,4 @@ mountRelatedWords();
 mountGradedReading();
 mountReadingAnalysis();
 mountListeningPractice();
+mountQuickAccessDrawer();

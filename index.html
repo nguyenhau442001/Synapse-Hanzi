@@ -172,89 +172,10 @@ if ('serviceWorker' in navigator) {
       <div id="mobileStatsDialogBody" class="mobile-stats-dialog-body"></div>
     </dialog>
     <!-- Quick Access Drawer for Secondary Data (Saved / Urgent Words) -->
-    <aside id="quickAccessDrawer" class="quick-access-drawer" aria-label="Sổ từ &amp; Ôn tập nhanh" aria-hidden="true">
-      <div class="quick-drawer-backdrop" id="quickDrawerBackdrop" onclick="closeQuickAccessDrawer()"></div>
-      <div class="quick-drawer-panel" role="dialog" aria-modal="true" aria-label="Bảng tra cứu nhanh">
-        <div class="quick-drawer-header">
-          <div class="quick-drawer-tabs" role="tablist" aria-label="Chọn danh sách">
-            <button type="button" id="quickTabSaved" class="quick-drawer-tab active" role="tab" aria-selected="true" onclick="switchQuickDrawerTab('saved')">
-              <span class="quick-tab-icon" aria-hidden="true">🔖</span>
-              <span>Từ khó (<strong id="quickSavedTabCount">0</strong>)</span>
-            </button>
-            <button type="button" id="quickTabUrgent" class="quick-drawer-tab" role="tab" aria-selected="false" onclick="switchQuickDrawerTab('urgent')">
-              <span class="quick-tab-icon" aria-hidden="true">⚡</span>
-              <span>Cần ôn gấp (<strong id="quickUrgentTabCount">0</strong>)</span>
-            </button>
-          </div>
-          <button type="button" id="quickDrawerCloseBtn" class="quick-drawer-close" onclick="closeQuickAccessDrawer()" aria-label="Đóng bảng">✕</button>
-        </div>
-        <div class="quick-drawer-body">
-          <div id="quickDrawerSavedPane" class="quick-drawer-pane active">
-            <div class="quick-pane-intro">
-              <span class="quick-pane-title">Sổ từ khó đã lưu</span>
-              <span class="quick-pane-subtitle">Học &amp; nghe phát âm</span>
-            </div>
-            <ul class="quick-word-list" id="quickSavedWordsList"></ul>
-            <div id="quickSavedEmpty" class="quick-drawer-empty" hidden>
-              <span class="quick-empty-icon" aria-hidden="true">🔖</span>
-              <div class="quick-empty-title">Chưa có từ khó nào</div>
-              <div class="quick-empty-desc">Nhấn biểu tượng dấu sao ⭐ khi học từ để lưu vào sổ từ xem lại nhanh tại đây.</div>
-            </div>
-          </div>
-          <div id="quickDrawerUrgentPane" class="quick-drawer-pane" hidden>
-            <div class="quick-pane-intro">
-              <span class="quick-pane-title">Từ vựng hay nhầm lẫn</span>
-              <span class="quick-pane-subtitle">Dựa trên thuật toán SRS</span>
-            </div>
-            <ul class="quick-word-list" id="quickUrgentWordsList"></ul>
-            <div id="quickUrgentEmpty" class="quick-drawer-empty" hidden>
-              <span class="quick-empty-icon" aria-hidden="true">✨</span>
-              <div class="quick-empty-title">Không có từ cần ôn gấp</div>
-              <div class="quick-empty-desc">Trí nhớ của bạn đang rất tốt! Hãy tiếp tục duy trì chuỗi học tập nhé.</div>
-            </div>
-            <div id="quickUrgentActionWrap" class="quick-drawer-action-wrap" hidden>
-              <button type="button" id="quickUrgentReviewBtn" class="quick-urgent-cta-btn">
-                <span>⚡ Ôn tập ngay</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </aside>
+    <aside id="quickAccessDrawer" class="quick-access-drawer" aria-label="Sổ từ &amp; Ôn tập nhanh" aria-hidden="true"></aside><!-- Preact island: src/islands/QuickAccessDrawer.jsx -->
 
     <!-- Quick Search Command Palette Modal (Ctrl+K) -->
-    <dialog id="quickSearchModal" class="quick-search-modal" aria-label="Tìm kiếm từ vựng HSK">
-      <div class="qsm-container" role="document">
-        <div class="qsm-header">
-          <svg class="qsm-search-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-          <input type="search" id="quickSearchInput" class="qsm-input" placeholder="Tra từ (Hán tự, pinyin, nghĩa tiếng Việt)..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="Tìm từ vựng">
-          <button type="button" class="qsm-close-btn" onclick="closeQuickSearchModal()" aria-label="Đóng tìm kiếm">✕</button>
-        </div>
-        <div class="qsm-body">
-          <ul id="quickSearchResults" class="qsm-results-list" role="listbox" aria-label="Kết quả tìm kiếm"></ul>
-          <div id="quickSearchEmpty" class="qsm-empty" hidden>
-            <span class="qsm-empty-icon" aria-hidden="true">🔍</span>
-            <div class="qsm-empty-text">Không tìm thấy từ vựng nào phù hợp.</div>
-            <div class="qsm-empty-hint">Thử tìm theo chữ Hán (vd: 好), Pinyin không dấu (vd: hao, ni hao), hoặc nghĩa tiếng Việt (vd: tốt).</div>
-          </div>
-          <div id="quickSearchInitial" class="qsm-initial">
-            <div class="qsm-initial-hint">Gõ để tra cứu nhanh hơn 11.000 từ vựng HSK 3.0 (cấp 1–9):</div>
-            <div class="qsm-initial-tags">
-              <span class="qsm-tag" onclick="setQuickSearchQuery('你好')">你好</span>
-              <span class="qsm-tag" onclick="setQuickSearchQuery('xiexie')">xiexie</span>
-              <span class="qsm-tag" onclick="setQuickSearchQuery('yundong')">yundong</span>
-              <span class="qsm-tag" onclick="setQuickSearchQuery('bác sĩ')">bác sĩ</span>
-              <span class="qsm-tag" onclick="setQuickSearchQuery('học tập')">học tập</span>
-            </div>
-          </div>
-        </div>
-        <div class="qsm-footer">
-          <span class="qsm-hint"><kbd>↑</kbd><kbd>↓</kbd> để di chuyển</span>
-          <span class="qsm-hint"><kbd>↵</kbd> để học từ</span>
-          <span class="qsm-hint"><kbd>ESC</kbd> để đóng</span>
-        </div>
-      </div>
-    </dialog>
+    <dialog id="quickSearchModal" class="quick-search-modal" aria-label="Tìm kiếm từ vựng HSK"></dialog><!-- Preact island: src/islands/QuickAccessDrawer.jsx -->
 
     <div class="workstation-middle" id="workstationMiddle">
   <header class="app-header" id="appHeader">
@@ -1119,7 +1040,6 @@ window.addEventListener('load', function() {
 </script>
 <script src="assets/js/home-widgets.js?v=3.16.0"></script>
 <script src="assets/js/dashboard-enhancements.js?v=3.16.0"></script>
-<script src="assets/js/quick-access-drawer.js?v=3.16.0"></script>
 <script src="assets/js/plum-blossom-background.js?v=3.16.0"></script>
 <script src="assets/flashcards.js?v=3.16.0"></script>
 <!-- Preact islands (built from src/islands by `npm run build:islands`) -->
