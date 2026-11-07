@@ -53,7 +53,7 @@ def test_history_responsive_media_queries():
 
 
 def test_levels_js_history_structure():
-    js_path = ROOT / "assets" / "js" / "levels.js"
+    js_path = ROOT / "src" / "islands" / "Levels.js"
     content = js_path.read_text(encoding="utf-8")
     
     # Check that toolbar combines switcher & navigation

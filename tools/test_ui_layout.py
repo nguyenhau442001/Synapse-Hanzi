@@ -759,7 +759,7 @@ class TestFlashcardExperienceRefinements(unittest.TestCase):
         cls.flashcard_js = (REPO_ROOT / "assets" / "js" / "flashcard.js").read_text(encoding="utf-8")
         cls.progress_js = (REPO_ROOT / "src" / "islands" / "StudyProgress.jsx").read_text(encoding="utf-8")
         cls.index_html = INDEX_HTML.read_text(encoding="utf-8")
-        cls.levels_js = (REPO_ROOT / "assets" / "js" / "levels.js").read_text(encoding="utf-8")
+        cls.levels_js = (REPO_ROOT / "src" / "islands" / "Levels.js").read_text(encoding="utf-8")
 
     def test_study_view_back_button_displays_home_navigation(self):
         """Top-left back button in flashcard study mode must display home navigation and not duplicate HSK level."""
@@ -890,7 +890,7 @@ class TestScreenMutualExclusion(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.levels_js = (REPO_ROOT / "assets" / "js" / "levels.js").read_text(encoding="utf-8")
+        cls.levels_js = (REPO_ROOT / "src" / "islands" / "Levels.js").read_text(encoding="utf-8")
         cls.radicals_js = (REPO_ROOT / "src" / "islands" / "RadicalHub.jsx").read_text(encoding="utf-8")
         cls.due_review_js = (REPO_ROOT / "src" / "islands" / "TodayReview.jsx").read_text(encoding="utf-8")
         cls.spa_router_js = (REPO_ROOT / "assets" / "js" / "spa-router.js").read_text(encoding="utf-8")

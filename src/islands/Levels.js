@@ -1,12 +1,23 @@
-// Level picker, welcome message, and level data loading.
-function localDateKey(date) {
+// Level picker, welcome message, study streaks, history modal, and level data loading.
+// Preact island/module port of former assets/js/levels.js.
+
+/* global LEVELS, currentLevel, currentView, overviewQuery, overviewStatus, pickerVersion,
+   order, progress, showPinyin, currentFilter, idx, WORDS, filteredOrder, transitionTimer,
+   celebrationShown, SpaRouter, readSrsRecord, readSavedLevelProgressLegacy, progressFromCards,
+   countDueCardsAcrossLevels, fetchLevelWords, loadState, buildCardArea, renderFilters,
+   showAllWordsAt, render, flip, preloadDeckIllustrations, loadLevelIllustrationPack,
+   loadPrebuiltAudioManifest, setActiveStudyWord, setPrimaryTab, setVocabSubTab,
+   renderHsk30Grid, renderDashboardEnhancements, closeAllStudyDrawers, renderStudyWordList,
+   preloadSingleWordIllustration */
+
+export function localDateKey(date) {
   const year = date.getFullYear();
   const month = String(date.getMonth() + 1).padStart(2, '0');
   const day = String(date.getDate()).padStart(2, '0');
   return `${year}-${month}-${day}`;
 }
 
-function calendarDayDifference(fromKey, toKey) {
+export function calendarDayDifference(fromKey, toKey) {
   const from = String(fromKey).split('-').map(Number);
   const to = String(toKey).split('-').map(Number);
   if (from.length !== 3 || to.length !== 3 || from.some(Number.isNaN) || to.some(Number.isNaN)) return null;
@@ -15,31 +26,36 @@ function calendarDayDifference(fromKey, toKey) {
   return Math.round((toDate - fromDate) / 86400000);
 }
 
-function hasSavedProgress() {
-  return Object.keys(LEVELS).some(level => {
+export function hasSavedProgress() {
+  const levels = typeof LEVELS !== 'undefined' ? LEVELS : window.LEVELS;
+  if (!levels) return false;
+  return Object.keys(levels).some(level => {
     try {
-      const srs = readSrsRecord(level);
+      const srs = typeof readSrsRecord === 'function' ? readSrsRecord(level) : (window.readSrsRecord && window.readSrsRecord(level));
       if (srs && Object.keys(srs.cards).length > 0) return true;
-      return Object.keys(readSavedLevelProgressLegacy(level)).length > 0;
+      const legacy = typeof readSavedLevelProgressLegacy === 'function' ? readSavedLevelProgressLegacy(level) : (window.readSavedLevelProgressLegacy && window.readSavedLevelProgressLegacy(level));
+      return legacy && Object.keys(legacy).length > 0;
     } catch (e) {
       return false;
     }
   });
 }
 
-const DEFAULT_DAILY_STUDY_GOAL = 10;
-const DAILY_STUDY_GOAL_OPTIONS = [10, 20, 30, 50];
-const DAILY_STUDY_GOAL_KEY = 'hsk_daily_study_goal_v1';
-const STUDY_ACTIVITY_KEY = 'hsk_study_activity_v1';
-const LAST_LEVEL_KEY = 'hsk_last_level_v1';
+export const DEFAULT_DAILY_STUDY_GOAL = 10;
+export const DAILY_STUDY_GOAL_OPTIONS = [10, 20, 30, 50];
+export const DAILY_STUDY_GOAL_KEY = 'hsk_daily_study_goal_v1';
+export const STUDY_ACTIVITY_KEY = 'hsk_study_activity_v1';
+export const LAST_LEVEL_KEY = 'hsk_last_level_v1';
 
-function readSavedLevelProgress(level) {
-  const srs = readSrsRecord(level);
-  if (srs) return progressFromCards(srs.cards);
-  return readSavedLevelProgressLegacy(level);
+export function readSavedLevelProgress(level) {
+  const srs = typeof readSrsRecord === 'function' ? readSrsRecord(level) : (window.readSrsRecord && window.readSrsRecord(level));
+  if (srs) {
+    return typeof progressFromCards === 'function' ? progressFromCards(srs.cards) : (window.progressFromCards && window.progressFromCards(srs.cards));
+  }
+  return typeof readSavedLevelProgressLegacy === 'function' ? readSavedLevelProgressLegacy(level) : (window.readSavedLevelProgressLegacy && window.readSavedLevelProgressLegacy(level));
 }
 
-function readStudyActivity() {
+export function readStudyActivity() {
   let activity = { days: {} };
   try {
     const parsed = JSON.parse(localStorage.getItem(STUDY_ACTIVITY_KEY));
@@ -54,15 +70,15 @@ function readStudyActivity() {
   return activity;
 }
 
-function dayWordCount(dayEntry) {
+export function dayWordCount(dayEntry) {
   return dayEntry && Array.isArray(dayEntry.words) ? dayEntry.words.length : 0;
 }
 
-function daySeconds(dayEntry) {
+export function daySeconds(dayEntry) {
   return dayEntry && typeof dayEntry.seconds === 'number' ? dayEntry.seconds : 0;
 }
 
-function formatStudyDuration(totalMinutes) {
+export function formatStudyDuration(totalMinutes) {
   const minutes = Math.round(totalMinutes);
   if (minutes <= 0) return '0 phút';
   const hours = Math.floor(minutes / 60);
@@ -72,7 +88,7 @@ function formatStudyDuration(totalMinutes) {
   return `${hours} giờ ${remainder} phút`;
 }
 
-function readDailyStudyGoal() {
+export function readDailyStudyGoal() {
   try {
     const savedGoal = Number(localStorage.getItem(DAILY_STUDY_GOAL_KEY));
     if (DAILY_STUDY_GOAL_OPTIONS.includes(savedGoal)) return savedGoal;
@@ -80,7 +96,7 @@ function readDailyStudyGoal() {
   return DEFAULT_DAILY_STUDY_GOAL;
 }
 
-function updateDailyStudyGoal(value) {
+export function updateDailyStudyGoal(value) {
   const nextGoal = Number(value);
   if (!DAILY_STUDY_GOAL_OPTIONS.includes(nextGoal)) {
     renderLearningDashboard();
@@ -90,7 +106,7 @@ function updateDailyStudyGoal(value) {
   renderLearningDashboard();
 }
 
-function focusDailyGoalSelector() {
+export function focusDailyGoalSelector() {
   const select = document.getElementById('dailyGoalSelect');
   if (!select) return;
   select.focus();
@@ -99,7 +115,7 @@ function focusDailyGoalSelector() {
   }
 }
 
-function studyStreak(days) {
+export function studyStreak(days) {
   const cursor = new Date();
   cursor.setHours(12, 0, 0, 0);
   const today = localDateKey(cursor);
@@ -118,7 +134,7 @@ function studyStreak(days) {
   return streak;
 }
 
-function streakStats(days) {
+export function streakStats(days) {
   const studiedKeys = Object.keys(days)
     .filter(key => dayWordCount(days[key]) > 0)
     .sort();
@@ -152,7 +168,7 @@ function streakStats(days) {
   };
 }
 
-function intensityBucket(minutes) {
+export function intensityBucket(minutes) {
   if (minutes <= 0) return 0;
   if (minutes <= 10) return 1;
   if (minutes <= 30) return 2;
@@ -160,11 +176,11 @@ function intensityBucket(minutes) {
   return 4;
 }
 
-function mondayFirstIndex(jsDay) {
+export function mondayFirstIndex(jsDay) {
   return (jsDay + 6) % 7;
 }
 
-function buildMonthGrid(days, year, month) {
+export function buildMonthGrid(days, year, month) {
   const now = new Date();
   now.setHours(0, 0, 0, 0);
   const todayKey = localDateKey(now);
@@ -200,7 +216,7 @@ function buildMonthGrid(days, year, month) {
   return cells;
 }
 
-function yearSummary(days, year) {
+export function yearSummary(days, year) {
   let studiedDays = 0;
   let totalMinutes = 0;
   Object.keys(days).forEach(key => {
@@ -215,12 +231,12 @@ function yearSummary(days, year) {
 let historyModalView = 'month';
 let historyModalCursor = { year: 0, month: 0 };
 
-function setHistoryView(view) {
+export function setHistoryView(view) {
   historyModalView = view;
   renderHistoryModalBody();
 }
 
-function changeHistoryCursor(delta) {
+export function changeHistoryCursor(delta) {
   const now = new Date();
   if (historyModalView === 'month') {
     const next = new Date(historyModalCursor.year, historyModalCursor.month + delta, 1);
@@ -234,15 +250,15 @@ function changeHistoryCursor(delta) {
   renderHistoryModalBody();
 }
 
-function jumpToMonth(year, month) {
+export function jumpToMonth(year, month) {
   historyModalView = 'month';
   historyModalCursor = { year, month };
   renderHistoryModalBody();
 }
 
-const WEEKDAY_LABELS = ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN'];
+export const WEEKDAY_LABELS = ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN'];
 
-function renderMonthGridHtml(grid) {
+export function renderMonthGridHtml(grid) {
   return `
     <div class="history-weekday-row">
       ${WEEKDAY_LABELS.map(label => `<div class="history-weekday">${label}</div>`).join('')}
@@ -263,7 +279,7 @@ function renderMonthGridHtml(grid) {
 }
 
 // Summary line + "Ít … Nhiều" intensity legend shown under the month and year views.
-function historyFooterHtml(studiedDays, totalMinutes) {
+export function historyFooterHtml(studiedDays, totalMinutes) {
   const swatches = [0, 1, 2, 3, 4].map(b => `<span class="history-legend-swatch bucket-${b}"></span>`).join('');
   return `<div class="history-footer">
       <div class="history-summary">${studiedDays} ngày học · ${formatStudyDuration(totalMinutes)}</div>
@@ -271,7 +287,7 @@ function historyFooterHtml(studiedDays, totalMinutes) {
     </div>`;
 }
 
-function renderMonthView(activity) {
+export function renderMonthView(activity) {
   const { year, month } = historyModalCursor;
   const grid = buildMonthGrid(activity.days, year, month);
   const studiedDays = grid.filter(c => c.inMonth && c.studied).length;
@@ -282,9 +298,9 @@ function renderMonthView(activity) {
     ${historyFooterHtml(studiedDays, totalMinutes)}`;
 }
 
-const MINI_MONTH_LABELS = ['Th 1', 'Th 2', 'Th 3', 'Th 4', 'Th 5', 'Th 6', 'Th 7', 'Th 8', 'Th 9', 'Th 10', 'Th 11', 'Th 12'];
+export const MINI_MONTH_LABELS = ['Th 1', 'Th 2', 'Th 3', 'Th 4', 'Th 5', 'Th 6', 'Th 7', 'Th 8', 'Th 9', 'Th 10', 'Th 11', 'Th 12'];
 
-function renderYearView(activity) {
+export function renderYearView(activity) {
   const { year } = historyModalCursor;
   const summary = yearSummary(activity.days, year);
 
@@ -306,7 +322,7 @@ function renderYearView(activity) {
     ${historyFooterHtml(summary.studiedDays, summary.totalMinutes)}`;
 }
 
-function renderHistoryModalBody() {
+export function renderHistoryModalBody() {
   const body = document.getElementById('historyModalBody');
   if (!body) return;
 
@@ -350,18 +366,18 @@ function renderHistoryModalBody() {
     </div>`;
 }
 
-function closeHistoryModal() {
+export function closeHistoryModal() {
   const overlay = document.getElementById('historyOverlay');
   if (overlay) overlay.remove();
   delete document.body.dataset.historyModalOpen;
   document.removeEventListener('keydown', handleHistoryModalKeydown);
 }
 
-function handleHistoryModalKeydown(e) {
+export function handleHistoryModalKeydown(e) {
   if (e.key === 'Escape') closeHistoryModal();
 }
 
-function showHistoryModal() {
+export function showHistoryModal() {
   const now = new Date();
   historyModalView = 'month';
   historyModalCursor = { year: now.getFullYear(), month: now.getMonth() };
@@ -382,7 +398,7 @@ function showHistoryModal() {
   renderHistoryModalBody();
 }
 
-function recordDailyStudy(wordId, level = currentLevel) {
+export function recordDailyStudy(wordId, level = (typeof currentLevel !== 'undefined' ? currentLevel : window.currentLevel)) {
   if (!level || wordId === undefined || wordId === null) return;
 
   const activity = readStudyActivity();
@@ -396,9 +412,9 @@ function recordDailyStudy(wordId, level = currentLevel) {
   renderLearningDashboard();
 }
 
-const STUDY_HEARTBEAT_SECONDS = 15;
+export const STUDY_HEARTBEAT_SECONDS = 15;
 
-function recordStudySeconds(deltaSeconds) {
+export function recordStudySeconds(deltaSeconds) {
   const activity = readStudyActivity();
   const today = localDateKey(new Date());
   const dayEntry = activity.days[today] || { words: [], seconds: 0 };
@@ -407,15 +423,18 @@ function recordStudySeconds(deltaSeconds) {
   try { localStorage.setItem(STUDY_ACTIVITY_KEY, JSON.stringify(activity)); } catch (e) {}
 }
 
-function startStudyHeartbeat() {
+export function startStudyHeartbeat() {
   setInterval(() => {
     if (document.visibilityState === 'visible') recordStudySeconds(STUDY_HEARTBEAT_SECONDS);
   }, STUDY_HEARTBEAT_SECONDS * 1000);
 }
 
-function learningProgressSummary() {
-  const levels = Object.keys(LEVELS).filter(level => LEVELS[level].available).map(level => {
-    const saved = readSavedLevelProgress(level);
+export function learningProgressSummary() {
+  const levelsObj = typeof LEVELS !== 'undefined' ? LEVELS : window.LEVELS;
+  if (!levelsObj) return { totalKnown: 0, totalStudied: 0, target: null };
+
+  const levels = Object.keys(levelsObj).filter(level => levelsObj[level].available).map(level => {
+    const saved = readSavedLevelProgress(level) || {};
     const statuses = Object.values(saved);
     return {
       level,
@@ -428,13 +447,13 @@ function learningProgressSummary() {
   try { lastLevel = localStorage.getItem(LAST_LEVEL_KEY); } catch (e) {}
 
   let target = levels.find(item => item.level === lastLevel);
-  if (target && target.known >= LEVELS[target.level].total) {
+  if (target && target.known >= levelsObj[target.level].total) {
     const nextIndex = levels.findIndex(item => item.level === target.level) + 1;
-    target = levels.slice(nextIndex).find(item => LEVELS[item.level].available) || target;
+    target = levels.slice(nextIndex).find(item => levelsObj[item.level].available) || target;
   }
   if (!target) {
-    target = levels.find(item => item.studied > 0 && item.known < LEVELS[item.level].total)
-      || levels.find(item => LEVELS[item.level].available);
+    target = levels.find(item => item.studied > 0 && item.known < levelsObj[item.level].total)
+      || levels.find(item => levelsObj[item.level].available);
   }
 
   return {
@@ -444,10 +463,11 @@ function learningProgressSummary() {
   };
 }
 
-// Warm the service-worker data cache for the level the dashboard suggests, so tapping it is instant.
-function prefetchSuggestedLevel() {
-  const target = learningProgressSummary().target;
-  const config = target && LEVELS[target.level];
+export function prefetchSuggestedLevel() {
+  const summary = learningProgressSummary();
+  const target = summary.target;
+  const levelsObj = typeof LEVELS !== 'undefined' ? LEVELS : window.LEVELS;
+  const config = target && levelsObj && levelsObj[target.level];
   if (!config || !config.dataUrl) return;
   const run = () => {
     fetch(config.dataUrl).catch(() => {});
@@ -458,7 +478,7 @@ function prefetchSuggestedLevel() {
   else setTimeout(run, 1500);
 }
 
-function renderLearningDashboard() {
+export function renderLearningDashboard() {
   const dailyCount = document.getElementById('dailyStudyCount');
   const dailyFill = document.getElementById('dailyGoalFill');
   const dailyMessage = document.getElementById('dailyGoalMessage');
@@ -512,189 +532,178 @@ function renderLearningDashboard() {
   }
   if (knownNode) knownNode.textContent = summary.totalKnown;
   if (studiedNode) studiedNode.textContent = summary.totalStudied;
-  const dueTotal = countDueCardsAcrossLevels(new Date());
+  const dueTotal = typeof countDueCardsAcrossLevels === 'function' ? countDueCardsAcrossLevels(new Date()) : (window.countDueCardsAcrossLevels ? window.countDueCardsAcrossLevels(new Date()) : 0);
   if (dueCount) dueCount.textContent = String(dueTotal);
   if (todayReviewButton) todayReviewButton.hidden = dueTotal === 0;
 
   const target = summary.target;
-  if (target && quickButton) {
-    const complete = target.known >= LEVELS[target.level].total;
+  const levelsObj = typeof LEVELS !== 'undefined' ? LEVELS : window.LEVELS;
+  if (target && quickButton && levelsObj && levelsObj[target.level]) {
+    const complete = target.known >= levelsObj[target.level].total;
     quickButton.dataset.level = target.level;
-    quickButton.innerHTML = `${complete ? 'Ôn lại' : target.studied > 0 ? 'Tiếp tục' : 'Bắt đầu'} ${LEVELS[target.level].label} <span aria-hidden="true">→</span>`;
+    quickButton.innerHTML = `${complete ? 'Ôn lại' : target.studied > 0 ? 'Tiếp tục' : 'Bắt đầu'} ${levelsObj[target.level].label} <span aria-hidden="true">→</span>`;
   }
   if (typeof renderDashboardEnhancements === 'function') renderDashboardEnhancements();
+  else if (typeof window.renderDashboardEnhancements === 'function') window.renderDashboardEnhancements();
   invalidateHomeWidgets();
 }
 
-// Home widgets (src/islands/HomeWidgets.jsx) refresh once per progress change, only while home is
-// visible. The scheduling stays here because renderLearningDashboard() runs while scripts load.
-let homeWidgetsDirty = true;
+if (typeof window !== 'undefined' && typeof window.homeWidgetsDirty === 'undefined') {
+  window.homeWidgetsDirty = true;
+}
 let homeWidgetsSyncFrame = 0;
 
-function isHomeScreen() {
+export function isHomeScreen() {
   const hub = document.getElementById('screenVocabHub');
   const todayReviews = document.getElementById('screenTodayReviews');
-  return !currentLevel
+  const curLevel = typeof currentLevel !== 'undefined' ? currentLevel : window.currentLevel;
+  return !curLevel
     && Boolean(hub) && hub.style.display !== 'none'
     && (!todayReviews || todayReviews.style.display === 'none');
 }
 
-// Deferred one frame so callers that change screens right after (selectLevel, openTodayReviews)
-// are settled before we decide whether home is showing.
-function syncHomeScreen() {
+export function syncHomeScreen() {
   if (homeWidgetsSyncFrame) return;
   homeWidgetsSyncFrame = requestAnimationFrame(() => {
     homeWidgetsSyncFrame = 0;
     const home = isHomeScreen();
     document.body.classList.toggle('home-screen', home);
-    if (home && homeWidgetsDirty && typeof window.refreshHomeWidgets === 'function') window.refreshHomeWidgets();
+    if (home && window.homeWidgetsDirty && typeof window.refreshHomeWidgets === 'function') window.refreshHomeWidgets();
   });
 }
 
-function invalidateHomeWidgets() {
-  homeWidgetsDirty = true;
+export function invalidateHomeWidgets() {
+  window.homeWidgetsDirty = true;
   syncHomeScreen();
 }
 
-function quickStartLearning() {
+export function quickStartLearning() {
   const button = document.getElementById('quickStudyButton');
   const continuation = document.getElementById('continueLearningCard');
   const level = (button && button.dataset.level) || (continuation && continuation.dataset.level) || 'hsk1';
-  if (level && LEVELS[level] && LEVELS[level].available) selectLevel(level);
+  const levelsObj = typeof LEVELS !== 'undefined' ? LEVELS : window.LEVELS;
+  if (level && levelsObj && levelsObj[level] && levelsObj[level].available) {
+    selectLevel(level);
+  }
 }
 
-function timeGreeting(hour) {
+export function timeGreeting(hour) {
   if (hour < 5) return 'Học giờ này là chăm chỉ hay chưa chịu ngủ vậy bạn? 👀';
   if (hour < 8) return 'Chim sẻ dậy sớm, từ vựng tự chui vào đầu 🐦';
   if (hour < 11) return 'Buổi sáng học vài từ, cả ngày thấy mình tri thức ☀️';
   if (hour < 14) return 'Ăn trưa nhớ ăn, học từ cũng nhớ học nha 🍜';
-  if (hour < 18) return 'Buổi chiều hơi buồn ngủ, làm vài flashcard cho tỉnh ☕';
-  if (hour < 22) return 'Tối nay không lướt vô tri, mình lướt flashcard nhé 😌';
-  return 'Cú đêm học bài — mai dậy nhớ được bao nhiêu tính sau 🦉';
+  if (hour < 17) return 'Buổi chiều hơi oải, nạp vài từ cho tỉnh táo nè ☕';
+  if (hour < 21) return 'Tối rồi, hoàn thành nốt mục tiêu hôm nay nào 🎯';
+  return 'Sắp hết ngày rồi, ôn nhẹ vài từ rồi đi ngủ thôi 🌙';
 }
 
-function pickGreeting(candidates, previousGreeting) {
-  const freshCandidates = candidates.filter(message => message !== previousGreeting);
-  const pool = freshCandidates.length ? freshCandidates : candidates;
+export function pickGreeting(candidates, previousGreeting) {
+  if (!candidates || candidates.length === 0) return '';
+  const filtered = candidates.filter(g => g !== previousGreeting);
+  const pool = filtered.length > 0 ? filtered : candidates;
   return pool[Math.floor(Math.random() * pool.length)];
 }
 
-function showWelcomeToast() {
+export function showWelcomeToast() {
   const toast = document.getElementById('welcomeToast');
-  const messageNode = document.getElementById('welcomeToastMessage');
-  if (!toast || !messageNode) return;
-
-  try {
-    if (sessionStorage.getItem('hsk_welcome_shown_v1')) return;
-    sessionStorage.setItem('hsk_welcome_shown_v1', '1');
-  } catch (e) {}
+  if (!toast) return;
 
   const now = new Date();
-  const today = localDateKey(now);
-  let history = null;
-  let previousGreeting = '';
+  const hour = now.getHours();
+  const timeBased = timeGreeting(hour);
+  const activity = readStudyActivity();
+  const streak = studyStreak(activity.days);
 
-  try {
-    history = JSON.parse(localStorage.getItem('hsk_visit_history_v1'));
-    previousGreeting = localStorage.getItem('hsk_last_greeting_v1') || '';
-  } catch (e) {}
+  const streakGreetings = [];
+  if (streak >= 30) streakGreetings.push(`🔥 Chuỗi ${streak} ngày! Bạn đang biến việc học thành phản xạ tự nhiên rồi đó.`);
+  else if (streak >= 14) streakGreetings.push(`🔥 2 tuần liên tiếp! Kỷ luật này xứng đáng nhận điểm 10.`);
+  else if (streak >= 7) streakGreetings.push(`🔥 Tròn 1 tuần học liên tục! Đừng để chuỗi bị đứt nha.`);
+  else if (streak >= 3) streakGreetings.push(`🔥 Chuỗi ${streak} ngày rồi đó, giữ vững phong độ nhé!`);
 
-  let greeting;
-  const firstVisit = !history || !history.lastVisit;
-  const streak = studyStreak(readStudyActivity().days);
+  const generalGreetings = [
+    'Mỗi ngày một chút, tiếng Trung không khó như bạn nghĩ đâu ✨',
+    'Chậm mà chắc, quan trọng là ngày nào cũng gặp nhau 🌿',
+    'Não bộ thích sự lặp lại — hôm nay ôn gì nào? 🧠',
+    'Tích tiểu thành đại, từ vựng hôm nay là tự tin ngày mai 🚀',
+    'Học tiếng Trung kiểu khoa học: hiểu bản chất, nhớ dài lâu 💡',
+  ];
 
-  if (firstVisit) {
-    greeting = 'Chào mừng bạn! Chọn một cấp độ rồi mình chiến thôi 👋';
-  } else {
-    const dayDifference = calendarDayDifference(history.lastVisit, today);
-    const continuedStreak = dayDifference === 1;
+  const candidates = [timeBased, ...streakGreetings, ...generalGreetings];
+  const lastGreeting = sessionStorage.getItem('hsk_last_greeting');
+  const greeting = pickGreeting(candidates, lastGreeting);
+  sessionStorage.setItem('hsk_last_greeting', greeting);
 
-    const contextualGreetings = [];
+  const quoteEl = toast.querySelector('.welcome-quote');
+  if (quoteEl) quoteEl.textContent = greeting;
 
-    if (hasSavedProgress()) {
-      contextualGreetings.push('Lại gặp nhau rồi! Hôm nay mình xử tiếp mấy từ hôm qua nhé.');
+  const summary = learningProgressSummary();
+  const progressText = toast.querySelector('.welcome-progress-text');
+  if (progressText) {
+    if (summary.totalStudied > 0) {
+      progressText.textContent = `Bạn đã thuộc ${summary.totalKnown} từ trên tổng số ${summary.totalStudied} từ đã học.`;
+    } else {
+      progressText.textContent = 'Chọn một cấp độ bên dưới để bắt đầu bài học đầu tiên!';
     }
-    if (continuedStreak && streak >= 2) {
-      contextualGreetings.push('Chuỗi học vẫn còn nóng, đừng để nó nguội nha 🔥');
-    }
-    contextualGreetings.push(
-      timeGreeting(now.getHours()),
-      'Mừng bạn quay trở lại! Não bộ đã sẵn sàng nạp tiếng Trung chưa? 🧠',
-    );
-
-    const playfulGreetings = [
-      'Không học hôm nay thì ngày mai… vẫn phải học thôi 😌',
-      'Một từ cũng là học, 50 từ là hơi tham.',
-      'HSK không khó, chỉ là từ vựng hơi đông.',
-      'Bạn học đi, chiếc app này tin bạn.',
-      'Não đang loading… flashcard đang hỗ trợ.',
-      'Học nhẹ vài từ, flex mạnh một đời.',
-      'Vuốt phải vì đã nhớ, không phải vì định mệnh.',
-      'Từ này quen lắm, nhưng nghĩa là gì thì chưa chắc.',
-      'Thêm một từ vào não, bớt một chút hoang mang.',
-      'Đừng để chữ Hán nhìn bạn như người xa lạ.',
-    ];
-
-    const playfulGreeting = pickGreeting(playfulGreetings, previousGreeting);
-    greeting = pickGreeting([...contextualGreetings, playfulGreeting], previousGreeting);
   }
 
-  try {
-    localStorage.setItem('hsk_visit_history_v1', JSON.stringify({ lastVisit: today }));
-    localStorage.setItem('hsk_last_greeting_v1', greeting);
-  } catch (e) {}
+  const dismissed = sessionStorage.getItem('hsk_welcome_dismissed');
+  if (!dismissed) {
+    toast.classList.add('show');
+  }
 
-  messageNode.textContent = greeting;
-  toast.hidden = false;
-  requestAnimationFrame(() => toast.classList.add('show'));
-
-  setTimeout(() => {
-    toast.classList.remove('show');
-    setTimeout(() => { toast.hidden = true; }, 220);
-  }, 4200);
+  const closeBtn = toast.querySelector('.welcome-close');
+  if (closeBtn) {
+    closeBtn.onclick = () => {
+      toast.classList.remove('show');
+      sessionStorage.setItem('hsk_welcome_dismissed', 'true');
+    };
+  }
 }
 
-function formatProgressPercent(known, total) {
-  if (!total || total <= 0 || !known || known <= 0) return '0%';
-  if (known >= total) return '100%';
-  const rawPct = (known / total) * 100;
-  const rounded = Math.round(rawPct);
-  if (rounded === 0 && known > 0) return '<1%';
-  if (rounded === 100 && known < total) return '99%';
-  return `${rounded}%`;
+export function formatProgressPercent(known, total) {
+  if (known === 0) return '0%';
+  const raw = (known / total) * 100;
+  if (raw > 0 && raw < 1) return '<1%';
+  return Math.round(raw) + '%';
 }
-window.formatProgressPercent = formatProgressPercent;
 
-function renderLevelProgress() {
-  Object.keys(LEVELS).forEach(level => {
-    const total = LEVELS[level].total;
-    const data = readSavedLevelProgress(level);
-    const known = Object.values(data).filter(status => status === 'known').length;
-    const rawPct = total > 0 ? (known / total * 100) : 0;
-    const pctStr = formatProgressPercent(known, total);
-    const bar = document.getElementById('bar-' + level);
-    const text = document.getElementById('text-' + level);
-    const card = document.querySelector(`.level-card[data-level="${level}"]`);
-    const pctEl = card ? card.querySelector('.lvl-percent-value') : null;
-    if (bar) bar.style.width = (known > 0 ? Math.max(rawPct, 0.75) : 0) + '%';
-    if (text) text.textContent = known.toLocaleString('vi-VN') + ' / ' + total.toLocaleString('vi-VN') + ' từ';
-    if (pctEl) pctEl.textContent = pctStr;
+export function renderLevelProgress() {
+  const levelsObj = typeof LEVELS !== 'undefined' ? LEVELS : window.LEVELS;
+  if (!levelsObj) return;
+
+  document.querySelectorAll('.level-card[data-level]').forEach(card => {
+    const level = card.dataset.level;
+    const cfg = levelsObj[level];
+    if (!cfg || !cfg.available) return;
+
+    const saved = readSavedLevelProgress(level) || {};
+    const known = Object.values(saved).filter(s => s === 'known').length;
+    const total = cfg.total;
+
+    const fill = card.querySelector('.progress-fill');
+    if (fill) fill.style.width = ((known / total) * 100) + '%';
+
+    const text = card.querySelector('.progress-text');
+    if (text) {
+      text.textContent = `${known} / ${total} từ (${formatProgressPercent(known, total)})`;
+    }
   });
+
+  if (typeof renderTopicGrid === 'function') renderTopicGrid();
+  else if (typeof window.renderTopicGrid === 'function') window.renderTopicGrid();
 }
 
+export function goBackToPicker() {
+  const curLevel = typeof currentLevel !== 'undefined' ? currentLevel : window.currentLevel;
+  const levelsObj = typeof LEVELS !== 'undefined' ? LEVELS : window.LEVELS;
+  const wasTopic = curLevel && levelsObj && levelsObj[curLevel] && levelsObj[curLevel].isTopic;
 
-
-function goBackToPicker() {
-  stopSpeech();
-  abandonReviewSession();
-  if (typeof closeAllStudyDrawers === 'function') closeAllStudyDrawers();
-  setActiveStudyWord(null);
   document.body.classList.remove('study-mode');
   document.body.classList.remove('flashcard-study-mode');
   document.documentElement.classList.remove('flashcard-study-mode');
-  document.body.classList.remove('today-reviews-focus-mode');
-  const wasTopic = currentLevel && LEVELS[currentLevel] && LEVELS[currentLevel].isTopic;
   document.getElementById('screenCards').style.display = 'none';
+  document.getElementById('screenPicker').style.display = '';
+  document.getElementById('screenTopicPicker').style.display = '';
   const radicalCards = document.getElementById('screenRadicalCards');
   if (radicalCards) radicalCards.style.display = 'none';
   const radicalHub = document.getElementById('screenRadicalHub');
@@ -710,31 +719,51 @@ function goBackToPicker() {
   document.getElementById('appTitle').textContent = '汉字思维';
   document.getElementById('primaryTabs').style.display = '';
   document.getElementById('pickerControls').style.display = '';
-  setPrimaryTab('vocab');
+
+  if (typeof setPrimaryTab === 'function') setPrimaryTab('vocab');
+  else if (typeof window.setPrimaryTab === 'function') window.setPrimaryTab('vocab');
+
   document.getElementById('learningDashboard').style.display = wasTopic ? 'none' : '';
-  setVocabSubTab(wasTopic ? 'topic' : 'level');
-  currentLevel = null;
-  currentView = 'cards';
-  overviewQuery = '';
-  overviewStatus = 'all';
+
+  if (typeof setVocabSubTab === 'function') setVocabSubTab(wasTopic ? 'topic' : 'level');
+  else if (typeof window.setVocabSubTab === 'function') window.setVocabSubTab(wasTopic ? 'topic' : 'level');
+
+  window.currentLevel = null;
+  /* eslint-disable no-global-assign */
+  try { currentLevel = null; } catch (e) {}
+  window.currentView = 'cards';
+  try { currentView = 'cards'; } catch (e) {}
+  window.overviewQuery = '';
+  try { overviewQuery = ''; } catch (e) {}
+  window.overviewStatus = 'all';
+  try { overviewStatus = 'all'; } catch (e) {}
+
   const overlay = document.getElementById('celebrationOverlay');
   if (overlay) overlay.remove();
+
   renderLevelProgress();
-  if (pickerVersion === '3.0') renderHsk30Grid();
+  const pVersion = typeof pickerVersion !== 'undefined' ? pickerVersion : window.pickerVersion;
+  if (pVersion === '3.0') {
+    if (typeof renderHsk30Grid === 'function') renderHsk30Grid();
+    else if (typeof window.renderHsk30Grid === 'function') window.renderHsk30Grid();
+  }
   renderLearningDashboard();
+
   if (typeof SpaRouter !== 'undefined' && !SpaRouter.isNavigatingFromPopstate()) {
     SpaRouter.pushView({ view: 'vocab' });
   }
 }
 
-// Index in WORDS of a word given its id or its hanzi (-1 when absent).
-function findWordIndex(wordIdOrHanzi) {
-  return WORDS.findIndex(w => (w.id && String(w.id) === String(wordIdOrHanzi)) || w.hanzi === wordIdOrHanzi);
+export function findWordIndex(wordIdOrHanzi) {
+  const words = typeof WORDS !== 'undefined' ? WORDS : window.WORDS;
+  if (!Array.isArray(words)) return -1;
+  return words.findIndex(w => (w.id && String(w.id) === String(wordIdOrHanzi)) || w.hanzi === wordIdOrHanzi);
 }
 
-// Switch the study area to the flashcard tab (hide the vocabulary overview).
-function showFlashcardStudyView() {
-  currentView = 'cards';
+export function showFlashcardStudyView() {
+  window.currentView = 'cards';
+  try { currentView = 'cards'; } catch (e) {}
+
   const studyView = document.getElementById('studyView');
   const overviewView = document.getElementById('overviewView');
   if (studyView) studyView.hidden = false;
@@ -751,11 +780,13 @@ function showFlashcardStudyView() {
   }
 }
 
-// Optionally flip the current card, then scroll the word into view in the study list.
-function revealAndHighlightWord(wordIndex, autoReveal) {
+export function revealAndHighlightWord(wordIndex, autoReveal) {
   if (autoReveal && typeof flip === 'function') {
     const meaning = document.getElementById('meaning');
     if (meaning && !meaning.classList.contains('show')) flip();
+  } else if (autoReveal && typeof window.flip === 'function') {
+    const meaning = document.getElementById('meaning');
+    if (meaning && !meaning.classList.contains('show')) window.flip();
   }
   setTimeout(() => {
     const listBtn = document.querySelector(`.study-word-list-item[data-word-index="${wordIndex}"]`);
@@ -763,18 +794,28 @@ function revealAndHighlightWord(wordIndex, autoReveal) {
   }, 100);
 }
 
-async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal = false) {
-  celebrationShown = false;
+export async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal = false) {
+  window.celebrationShown = false;
+  try { celebrationShown = false; } catch (e) {}
+
   const overlay = document.getElementById('celebrationOverlay');
   if (overlay) overlay.remove();
   const celebCanvas = document.getElementById('celebrationCanvas');
   if (celebCanvas) celebCanvas.remove();
-  setActiveStudyWord(null);
-  currentLevel = level;
+
+  if (typeof setActiveStudyWord === 'function') setActiveStudyWord(null);
+  else if (typeof window.setActiveStudyWord === 'function') window.setActiveStudyWord(null);
+
+  window.currentLevel = level;
+  try { currentLevel = level; } catch (e) {}
+
   if (typeof SpaRouter !== 'undefined') {
     SpaRouter.pushView({ view: 'cards', level: level });
   }
+
   if (typeof closeAllStudyDrawers === 'function') closeAllStudyDrawers();
+  else if (typeof window.closeAllStudyDrawers === 'function') window.closeAllStudyDrawers();
+
   document.body.classList.remove('today-reviews-focus-mode');
   document.body.classList.add('study-mode');
   document.body.classList.add('flashcard-study-mode');
@@ -782,17 +823,38 @@ async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal = false
   window.scrollTo({ top: 0, behavior: 'instant' });
   const wsMid = document.getElementById('workstationMiddle');
   if (wsMid) wsMid.scrollTop = 0;
-  if (transitionTimer) { clearTimeout(transitionTimer); transitionTimer = null; }
-  WORDS = [];
-  filteredOrder = [];
+
+  if (typeof transitionTimer !== 'undefined' && transitionTimer) {
+    clearTimeout(transitionTimer);
+    try { transitionTimer = null; } catch (e) {}
+  }
+  if (window.transitionTimer) {
+    clearTimeout(window.transitionTimer);
+    window.transitionTimer = null;
+  }
+
+  window.WORDS = [];
+  try { WORDS = []; } catch (e) {}
+  window.filteredOrder = [];
+  try { filteredOrder = []; } catch (e) {}
+
   const studyWordSearch = document.getElementById('studyWordListSearch');
   if (studyWordSearch) studyWordSearch.value = '';
+
   if (typeof renderStudyWordList === 'function') renderStudyWordList();
-  currentView = 'cards';
-  overviewQuery = '';
-  overviewStatus = 'all';
+  else if (typeof window.renderStudyWordList === 'function') window.renderStudyWordList();
+
+  window.currentView = 'cards';
+  try { currentView = 'cards'; } catch (e) {}
+  window.overviewQuery = '';
+  try { overviewQuery = ''; } catch (e) {}
+  window.overviewStatus = 'all';
+  try { overviewStatus = 'all'; } catch (e) {}
+
   try { localStorage.setItem(LAST_LEVEL_KEY, level); } catch (e) {}
-  document.getElementById('appTitle').textContent = LEVELS[level].label + ' · 汉字思维';
+
+  const levelsObj = typeof LEVELS !== 'undefined' ? LEVELS : window.LEVELS;
+  document.getElementById('appTitle').textContent = levelsObj[level].label + ' · 汉字思维';
   document.getElementById('primaryTabs').style.display = 'none';
   document.getElementById('pickerControls').style.display = 'none';
   document.getElementById('learningDashboard').style.display = 'none';
@@ -830,79 +892,120 @@ async function selectLevel(level, targetWordIdOrHanzi = null, autoReveal = false
       <div class="skel-line skel-action-btn"></div>
     </div>`;
 
-  // Preload illustration pack in parallel with vocabulary download for 0ms zero-latency card images
   if (typeof loadLevelIllustrationPack === 'function') {
     loadLevelIllustrationPack(level).catch(() => {});
+  } else if (typeof window.loadLevelIllustrationPack === 'function') {
+    window.loadLevelIllustrationPack(level).catch(() => {});
   }
 
-  // Yield to the browser's paint pipeline so the skeleton renders at least one frame
-  // before the fetch begins — necessary for local file:// loads where fetch is instant.
   await new Promise(r => requestAnimationFrame(r));
   await new Promise(r => requestAnimationFrame(r));
 
-  // Audio manifest is optional (speech falls back to Web Speech), so it loads alongside the words
-  // instead of delaying the first card.
-  loadPrebuiltAudioManifest(level);
+  if (typeof loadPrebuiltAudioManifest === 'function') {
+    loadPrebuiltAudioManifest(level);
+  } else if (typeof window.loadPrebuiltAudioManifest === 'function') {
+    window.loadPrebuiltAudioManifest(level);
+  }
+
   try {
-    const words = await fetchLevelWords(level);
-    if (currentLevel !== level) return; // another level was picked while this one downloaded
-    WORDS = words;
+    const words = typeof fetchLevelWords === 'function' ? await fetchLevelWords(level) : await window.fetchLevelWords(level);
+    const curLvl = typeof currentLevel !== 'undefined' ? currentLevel : window.currentLevel;
+    if (curLvl !== level) return;
+    window.WORDS = words;
+    try { WORDS = words; } catch (e) {}
   } catch (e) {
-    if (currentLevel !== level) return;
+    const curLvl = typeof currentLevel !== 'undefined' ? currentLevel : window.currentLevel;
+    if (curLvl !== level) return;
     document.getElementById('cardArea').innerHTML = '<div class="error-text">Không thể tải dữ liệu. Vui lòng thử lại.</div>';
     return;
   }
 
   document.getElementById('overviewTab').disabled = false;
-  order = Array.from({length: WORDS.length}, (_, i) => i);
-  progress = {};
-  showPinyin = true;
-  currentFilter = 'all';
-  idx = 0;
+  const wordsList = typeof WORDS !== 'undefined' ? WORDS : window.WORDS;
+  const newOrder = Array.from({ length: wordsList.length }, (_, i) => i);
+  window.order = newOrder;
+  try { order = newOrder; } catch (e) {}
+  window.progress = {};
+  try { progress = {}; } catch (e) {}
+  window.showPinyin = true;
+  try { showPinyin = true; } catch (e) {}
+  window.currentFilter = 'all';
+  try { currentFilter = 'all'; } catch (e) {}
+  window.idx = 0;
+  try { idx = 0; } catch (e) {}
 
-  loadState();
+  if (typeof loadState === 'function') loadState();
+  else if (typeof window.loadState === 'function') window.loadState();
 
-  buildCardArea();
-  renderFilters();
+  if (typeof buildCardArea === 'function') buildCardArea();
+  else if (typeof window.buildCardArea === 'function') window.buildCardArea();
+
+  if (typeof renderFilters === 'function') renderFilters();
+  else if (typeof window.renderFilters === 'function') window.renderFilters();
 
   showFlashcardStudyView();
 
-  if (transitionTimer) {
+  if (typeof transitionTimer !== 'undefined' && transitionTimer) {
     clearTimeout(transitionTimer);
-    transitionTimer = null;
+    try { transitionTimer = null; } catch (e) {}
+  }
+  if (window.transitionTimer) {
+    clearTimeout(window.transitionTimer);
+    window.transitionTimer = null;
   }
 
   const targetIdx = targetWordIdOrHanzi ? findWordIndex(targetWordIdOrHanzi) : -1;
+  const filtered = typeof filteredOrder !== 'undefined' ? filteredOrder : window.filteredOrder;
   if (targetWordIdOrHanzi) {
-    if (targetIdx >= 0) showAllWordsAt(targetIdx);
-  } else if (filteredOrder.length > 0) {
-    // Start with a completely random word whenever entering flashcard study mode
-    idx = Math.floor(Math.random() * filteredOrder.length);
+    if (targetIdx >= 0) {
+      if (typeof showAllWordsAt === 'function') showAllWordsAt(targetIdx);
+      else if (typeof window.showAllWordsAt === 'function') window.showAllWordsAt(targetIdx);
+    }
+  } else if (filtered && filtered.length > 0) {
+    const randIdx = Math.floor(Math.random() * filtered.length);
+    window.idx = randIdx;
+    try { idx = randIdx; } catch (e) {}
   }
 
-  // Instant-Load Preloading: Trigger deck-wide progressive background preloading anchored at current idx
-  preloadDeckIllustrations(WORDS, idx, filteredOrder, currentLevel);
+  const curIdx = typeof idx !== 'undefined' ? idx : window.idx;
+  if (typeof preloadDeckIllustrations === 'function') {
+    preloadDeckIllustrations(wordsList, curIdx, filtered, level);
+  } else if (typeof window.preloadDeckIllustrations === 'function') {
+    window.preloadDeckIllustrations(wordsList, curIdx, filtered, level);
+  }
 
-  render();
+  if (typeof render === 'function') render();
+  else if (typeof window.render === 'function') window.render();
 
   if (targetIdx >= 0) {
-    setActiveStudyWord(WORDS[targetIdx]);
+    if (typeof setActiveStudyWord === 'function') setActiveStudyWord(wordsList[targetIdx]);
+    else if (typeof window.setActiveStudyWord === 'function') window.setActiveStudyWord(wordsList[targetIdx]);
     revealAndHighlightWord(targetIdx, autoReveal);
   }
 }
 
-async function openWordInLevel(level, wordIdOrHanzi, autoReveal = true) {
-  if (typeof primaryTab !== 'undefined' && primaryTab !== 'vocab') setPrimaryTab('vocab');
+export async function openWordInLevel(level, wordIdOrHanzi, autoReveal = true) {
+  const pTab = typeof primaryTab !== 'undefined' ? primaryTab : window.primaryTab;
+  if (typeof pTab !== 'undefined' && pTab !== 'vocab') {
+    if (typeof setPrimaryTab === 'function') setPrimaryTab('vocab');
+    else if (typeof window.setPrimaryTab === 'function') window.setPrimaryTab('vocab');
+  }
   window.scrollTo(0, 0);
 
-  if (currentLevel !== level || !Array.isArray(WORDS) || WORDS.length === 0) {
+  const curLvl = typeof currentLevel !== 'undefined' ? currentLevel : window.currentLevel;
+  const wordsList = typeof WORDS !== 'undefined' ? WORDS : window.WORDS;
+  if (curLvl !== level || !Array.isArray(wordsList) || wordsList.length === 0) {
     await selectLevel(level, wordIdOrHanzi, autoReveal);
     return;
   }
 
-  if (transitionTimer) {
+  if (typeof transitionTimer !== 'undefined' && transitionTimer) {
     clearTimeout(transitionTimer);
-    transitionTimer = null;
+    try { transitionTimer = null; } catch (e) {}
+  }
+  if (window.transitionTimer) {
+    clearTimeout(window.transitionTimer);
+    window.transitionTimer = null;
   }
 
   showFlashcardStudyView();
@@ -910,14 +1013,83 @@ async function openWordInLevel(level, wordIdOrHanzi, autoReveal = true) {
   const wordIndex = findWordIndex(wordIdOrHanzi);
   if (wordIndex < 0) return;
 
-  showAllWordsAt(wordIndex);
+  if (typeof showAllWordsAt === 'function') showAllWordsAt(wordIndex);
+  else if (typeof window.showAllWordsAt === 'function') window.showAllWordsAt(wordIndex);
+
   if (typeof preloadSingleWordIllustration === 'function') {
-    preloadSingleWordIllustration(WORDS[wordIndex], 'high');
+    preloadSingleWordIllustration(wordsList[wordIndex], 'high');
+  } else if (typeof window.preloadSingleWordIllustration === 'function') {
+    window.preloadSingleWordIllustration(wordsList[wordIndex], 'high');
   }
+
   if (typeof renderFilters === 'function') renderFilters();
+  else if (typeof window.renderFilters === 'function') window.renderFilters();
+
   if (typeof render === 'function') render();
-  if (typeof setActiveStudyWord === 'function') setActiveStudyWord(WORDS[wordIndex]);
+  else if (typeof window.render === 'function') window.render();
+
+  if (typeof setActiveStudyWord === 'function') setActiveStudyWord(wordsList[wordIndex]);
+  else if (typeof window.setActiveStudyWord === 'function') window.setActiveStudyWord(wordsList[wordIndex]);
 
   revealAndHighlightWord(wordIndex, autoReveal);
 }
 
+export function mountLevels() {
+  window.localDateKey = localDateKey;
+  window.calendarDayDifference = calendarDayDifference;
+  window.hasSavedProgress = hasSavedProgress;
+  window.DEFAULT_DAILY_STUDY_GOAL = DEFAULT_DAILY_STUDY_GOAL;
+  window.DAILY_STUDY_GOAL_OPTIONS = DAILY_STUDY_GOAL_OPTIONS;
+  window.DAILY_STUDY_GOAL_KEY = DAILY_STUDY_GOAL_KEY;
+  window.STUDY_ACTIVITY_KEY = STUDY_ACTIVITY_KEY;
+  window.LAST_LEVEL_KEY = LAST_LEVEL_KEY;
+  window.readSavedLevelProgress = readSavedLevelProgress;
+  window.readStudyActivity = readStudyActivity;
+  window.dayWordCount = dayWordCount;
+  window.daySeconds = daySeconds;
+  window.formatStudyDuration = formatStudyDuration;
+  window.readDailyStudyGoal = readDailyStudyGoal;
+  window.updateDailyStudyGoal = updateDailyStudyGoal;
+  window.focusDailyGoalSelector = focusDailyGoalSelector;
+  window.studyStreak = studyStreak;
+  window.streakStats = streakStats;
+  window.intensityBucket = intensityBucket;
+  window.mondayFirstIndex = mondayFirstIndex;
+  window.buildMonthGrid = buildMonthGrid;
+  window.yearSummary = yearSummary;
+  window.setHistoryView = setHistoryView;
+  window.changeHistoryCursor = changeHistoryCursor;
+  window.jumpToMonth = jumpToMonth;
+  window.WEEKDAY_LABELS = WEEKDAY_LABELS;
+  window.renderMonthGridHtml = renderMonthGridHtml;
+  window.historyFooterHtml = historyFooterHtml;
+  window.renderMonthView = renderMonthView;
+  window.MINI_MONTH_LABELS = MINI_MONTH_LABELS;
+  window.renderYearView = renderYearView;
+  window.renderHistoryModalBody = renderHistoryModalBody;
+  window.closeHistoryModal = closeHistoryModal;
+  window.handleHistoryModalKeydown = handleHistoryModalKeydown;
+  window.showHistoryModal = showHistoryModal;
+  window.recordDailyStudy = recordDailyStudy;
+  window.STUDY_HEARTBEAT_SECONDS = STUDY_HEARTBEAT_SECONDS;
+  window.recordStudySeconds = recordStudySeconds;
+  window.startStudyHeartbeat = startStudyHeartbeat;
+  window.learningProgressSummary = learningProgressSummary;
+  window.prefetchSuggestedLevel = prefetchSuggestedLevel;
+  window.renderLearningDashboard = renderLearningDashboard;
+  window.isHomeScreen = isHomeScreen;
+  window.syncHomeScreen = syncHomeScreen;
+  window.invalidateHomeWidgets = invalidateHomeWidgets;
+  window.quickStartLearning = quickStartLearning;
+  window.timeGreeting = timeGreeting;
+  window.pickGreeting = pickGreeting;
+  window.showWelcomeToast = showWelcomeToast;
+  window.formatProgressPercent = formatProgressPercent;
+  window.renderLevelProgress = renderLevelProgress;
+  window.goBackToPicker = goBackToPicker;
+  window.findWordIndex = findWordIndex;
+  window.showFlashcardStudyView = showFlashcardStudyView;
+  window.revealAndHighlightWord = revealAndHighlightWord;
+  window.selectLevel = selectLevel;
+  window.openWordInLevel = openWordInLevel;
+}

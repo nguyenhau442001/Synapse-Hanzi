@@ -298,7 +298,7 @@ export function openForgottenReview(items) {
 // ---- Lifecycle -----------------------------------------------------------------------------------
 
 export function refreshHomeWidgets() {
-  homeWidgetsDirty = false; // eslint-disable-line no-global-assign -- levels.js scheduling flag
+  window.homeWidgetsDirty = false; // levels.js scheduling flag
   const seq = ++renderSeq;
   const snapshot = collectHomeSnapshot(new Date());
   forecast.value = buildReviewForecast(snapshot);

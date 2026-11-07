@@ -36,6 +36,7 @@ import { mountTopicGrid } from './TopicGrid';
 import { mountBackupSync } from './BackupSync';
 import { mountThemeManager } from './ThemeManager';
 import { mountSpeechAudio } from './SpeechAudio';
+import { mountLevels } from './Levels';
 import { mountAppBootstrap } from './AppBootstrap';
 
 mountAmbientBackground();
@@ -73,4 +74,5 @@ mountTopicGrid();
 mountBackupSync();
 mountThemeManager();
 mountSpeechAudio();
+mountLevels();
 mountAppBootstrap();

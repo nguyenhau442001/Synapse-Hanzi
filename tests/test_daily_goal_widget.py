@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parent.parent
 INDEX_HTML = ROOT / "index.html"
 DASHBOARD_CSS = ROOT / "assets" / "css" / "dashboard-enhancements.css"
 LEVEL_PICKER_CSS = ROOT / "assets" / "css" / "level-picker.css"
-LEVELS_JS = ROOT / "assets" / "js" / "levels.js"
+LEVELS_JS = ROOT / "src" / "islands" / "Levels.js"
 
 class TestDailyGoalWidget(unittest.TestCase):
     @classmethod
