@@ -15,7 +15,7 @@ FLASHCARD_CSS = ROOT / "assets" / "css" / "flashcard.css"
 WORKSTATION_CSS = ROOT / "assets" / "css" / "workstation.css"
 DECOMP_JS = ROOT / "src" / "islands" / "HanziDecomposition.jsx"
 RELATED_JS = ROOT / "src" / "islands" / "RelatedWords.jsx"
-PROGRESS_JS = ROOT / "assets" / "js" / "progress.js"
+PROGRESS_JS = ROOT / "src" / "islands" / "StudyProgress.jsx"
 
 class TestFlashcardActiveRecall(unittest.TestCase):
     @classmethod

@@ -1,11 +1,37 @@
 // Study navigation, mastery actions, celebration, and progress controls.
-function nextCard() { if (filteredOrder.length===0) return; idx = (idx + 1) % filteredOrder.length; render('next'); }
-function prevCard() { if (filteredOrder.length===0) return; idx = (idx - 1 + filteredOrder.length) % filteredOrder.length; render('prev'); }
-function jumpToRandomWord() {
+// Preact island port replacing legacy assets/js/progress.js.
+import { render } from 'preact';
+import { useEffect } from 'preact/hooks';
+import { signal } from '@preact/signals';
+
+/* global filteredOrder, idx, order, progress, srsCards, WORDS, currentLevel, currentView,
+   currentFilter, showPinyin, celebrationShown, LEVELS, SRS, RATING_KEYS,
+   computeDeckProgress, reviewSrsCard, saveProgress, recordDailyStudy, updateStats,
+   showRelatedClusterHint, renderOverview, renderFilters, shuffleInPlace, savePrefs,
+   toggleDisclosurePanel, toggleRadicalTransferPanel, closeCardMoreMenu,
+   closeAllStudyDrawers, SpaRouter, goBackToPicker, toggleStudyWritingPanel,
+   toggleStudyRadicalsPanel, toggleStudySidebar, toggleHanViet, speakWord,
+   isCardRevealed, flip, setActiveStudyWord */
+
+const celebrationState = signal(null);
+
+export function nextCard() {
+  if (filteredOrder.length === 0) return;
+  idx = (idx + 1) % filteredOrder.length;
+  window.render('next');
+}
+
+export function prevCard() {
+  if (filteredOrder.length === 0) return;
+  idx = (idx - 1 + filteredOrder.length) % filteredOrder.length;
+  window.render('prev');
+}
+
+export function jumpToRandomWord() {
   if (!filteredOrder || filteredOrder.length === 0) return;
   if (filteredOrder.length === 1) {
     idx = 0;
-    render('fade');
+    window.render('fade');
     return;
   }
   const currentPos = idx % filteredOrder.length;
@@ -16,12 +42,14 @@ function jumpToRandomWord() {
   } while (nextPos === currentPos && filteredOrder.length > 1);
 
   idx = nextPos;
-  render('fade');
+  window.render('fade');
 
   // Sync stroke order and sidebar list
   const wIdx = filteredOrder[idx % filteredOrder.length];
   if (wIdx >= 0 && WORDS[wIdx]) {
-    setActiveStudyWord(WORDS[wIdx]);
+    if (typeof setActiveStudyWord === 'function') {
+      setActiveStudyWord(WORDS[wIdx]);
+    }
     setTimeout(() => {
       const listBtn = document.querySelector(`.study-word-list-item[data-word-index="${wIdx}"]`);
       if (listBtn) listBtn.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
@@ -29,11 +57,7 @@ function jumpToRandomWord() {
   }
 }
 
-// Global aliases so users and other components can invoke it easily
-window.jumpToRandomWord = jumpToRandomWord;
-window.randomWord = jumpToRandomWord;
-window.randomizeFlashcardWord = jumpToRandomWord;
-function rateCurrentCard(rating) {
+export function rateCurrentCard(rating) {
   if (filteredOrder.length === 0) return;
   const wIdx = filteredOrder[idx % filteredOrder.length];
   const word = WORDS[wIdx];
@@ -48,14 +72,22 @@ function rateCurrentCard(rating) {
   if (rating === 'again' && typeof showRelatedClusterHint === 'function') {
     showRelatedClusterHint(word);
   }
-  if (currentView === 'overview') renderOverview();
+  if (currentView === 'overview' && typeof renderOverview === 'function') {
+    renderOverview();
+  }
   checkCelebration(prevDeck);
   if (currentFilter !== 'all') advanceAfterMark(wIdx); else nextCard();
 }
-function markKnown() { rateCurrentCard('good'); }
-function markUnknown() { rateCurrentCard('again'); }
 
-function playCelebrationChime() {
+export function markKnown() {
+  rateCurrentCard('good');
+}
+
+export function markUnknown() {
+  rateCurrentCard('again');
+}
+
+export function playCelebrationChime() {
   try {
     const AudioCtx = window.AudioContext || window.webkitAudioContext;
     if (!AudioCtx) return;
@@ -93,7 +125,7 @@ function playCelebrationChime() {
 }
 
 let activeConfettiAnim = null;
-function launchConfettiFireworks() {
+export function launchConfettiFireworks() {
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   const existingCanvas = document.getElementById('celebrationCanvas');
   if (existingCanvas) existingCanvas.remove();
@@ -225,7 +257,7 @@ function launchConfettiFireworks() {
   activeConfettiAnim = requestAnimationFrame(frame);
 }
 
-function checkCelebration(prevDeck) {
+export function checkCelebration(prevDeck) {
   if (!Array.isArray(WORDS) || WORDS.length === 0 || !currentLevel) return;
   const deck = typeof computeDeckProgress === 'function' ? computeDeckProgress() : { learned: 0, total: WORDS.length, known: 0, unknown: 0 };
 
@@ -261,19 +293,20 @@ function checkCelebration(prevDeck) {
   }
 }
 
-function closeCelebrationOverlay() {
+export function closeCelebrationOverlay() {
+  celebrationState.value = null;
   const overlay = document.getElementById('celebrationOverlay');
   if (overlay) overlay.remove();
 }
 
-function setFilterAndCloseCelebration(filterKey) {
+export function setFilterAndCloseCelebration(filterKey) {
   closeCelebrationOverlay();
-  if (typeof setFilter === 'function') {
-    setFilter(filterKey);
+  if (typeof window.setFilter === 'function') {
+    window.setFilter(filterKey);
   }
 }
 
-function triggerAchievementCelebration(type, force) {
+export function triggerAchievementCelebration(type, force) {
   if (!force && celebrationShown && !type) return;
   celebrationShown = true;
 
@@ -284,107 +317,37 @@ function triggerAchievementCelebration(type, force) {
   const levelLabel = (LEVELS[currentLevel] && LEVELS[currentLevel].label) || 'cấp độ này';
   const isMastered = type === 'mastered' || (deck.known === deck.total && deck.total > 0);
 
-  closeCelebrationOverlay();
-
-  const overlay = document.createElement('div');
-  overlay.id = 'celebrationOverlay';
-  overlay.className = 'celebration-overlay';
-
-  const badgeHtml = isMastered
-    ? '<div class="celebration-badge">👑 ĐẠI THÀNH TỰU · MASTERED</div>'
-    : '<div class="celebration-badge">✨ THÀNH TỰU MỞ KHÓA · LEVEL COMPLETED</div>';
-
-  const titleText = isMastered
-    ? `Tuyệt Đỉnh! Tinh Thông 100% Từ Vựng!`
-    : `Chúc Mừng! Bạn Đã Hoàn Thành ${levelLabel}!`;
-
-  const msgText = isMastered
-    ? `Bạn đã nhớ xuất sắc toàn bộ <strong>${deck.total} / ${deck.total}</strong> từ vựng. Không còn từ nào chưa nhớ!`
-    : `Bạn đã học qua tất cả <strong>${deck.total} / ${deck.total}</strong> từ vựng của <strong>${levelLabel}</strong>. Cột mốc 100% cực kỳ ấn tượng!`;
-
-  const primaryBtnHtml = deck.unknown > 0
-    ? `<button type="button" class="celebration-btn celebration-btn--primary" onclick="setFilterAndCloseCelebration('unknown')">
-        🔁 Ôn tập ngay ${deck.unknown} từ chưa nhớ
-      </button>`
-    : `<button type="button" class="celebration-btn celebration-btn--primary" onclick="closeCelebrationOverlay()">
-        🎉 Tuyệt vời, tiếp tục phát huy!
-      </button>`;
-
-  const secondaryBtnHtml = `<button type="button" class="celebration-btn celebration-btn--secondary" onclick="setFilterAndCloseCelebration('all'); if (typeof shuffleDeck==='function') shuffleDeck();">
-    🔀 Xáo trộn & ôn tất cả từ
-  </button>`;
-
-  overlay.innerHTML = `
-    <div class="celebration-box" role="dialog" aria-modal="true" aria-labelledby="celebrationTitle">
-      <button type="button" class="celebration-close-btn" onclick="closeCelebrationOverlay()" aria-label="Đóng">✕</button>
-      <div class="celebration-trophy-wrap">
-        <div class="celebration-trophy-halo"></div>
-        <span class="celebration-trophy">${isMastered ? '👑' : '🏆'}</span>
-        <span class="celebration-sparkle celebration-sparkle-1">✨</span>
-        <span class="celebration-sparkle celebration-sparkle-2">⭐</span>
-      </div>
-      ${badgeHtml}
-      <h2 class="celebration-title" id="celebrationTitle">${titleText}</h2>
-      <p class="celebration-msg">${msgText}</p>
-      <div class="celebration-stats-grid">
-        <div class="celebration-stat-pill">
-          <span class="celebration-stat-val">${deck.total}</span>
-          <span class="celebration-stat-name">Tổng từ</span>
-        </div>
-        <div class="celebration-stat-pill celebration-stat-pill--known">
-          <span class="celebration-stat-val">${deck.known}</span>
-          <span class="celebration-stat-name">Đã nhớ tốt</span>
-        </div>
-        <div class="celebration-stat-pill celebration-stat-pill--unknown">
-          <span class="celebration-stat-val">${deck.unknown}</span>
-          <span class="celebration-stat-name">Cần củng cố</span>
-        </div>
-      </div>
-      <div class="celebration-actions">
-        ${primaryBtnHtml}
-        ${secondaryBtnHtml}
-      </div>
-    </div>`;
-
-  overlay.addEventListener('click', e => {
-    if (e.target === overlay) closeCelebrationOverlay();
-  });
-
-  const onKeydown = e => {
-    if (e.key === 'Escape') {
-      closeCelebrationOverlay();
-      document.removeEventListener('keydown', onKeydown);
-    }
+  celebrationState.value = {
+    type,
+    isMastered,
+    levelLabel,
+    deck,
   };
-  document.addEventListener('keydown', onKeydown);
-
-  document.body.appendChild(overlay);
 }
 
-function showCelebration(type, force) {
+export function showCelebration(type, force) {
   triggerAchievementCelebration(type || 'learned', typeof force === 'boolean' ? force : true);
 }
 
-window.showCelebration = showCelebration;
-window.triggerAchievementCelebration = triggerAchievementCelebration;
-window.launchConfettiFireworks = launchConfettiFireworks;
-window.playCelebrationChime = playCelebrationChime;
-window.closeCelebrationOverlay = closeCelebrationOverlay;
-window.setFilterAndCloseCelebration = setFilterAndCloseCelebration;
-function advanceAfterMark(prevWIdx) {
+export function advanceAfterMark(prevWIdx) {
   const prevIdx = idx;
   if (currentFilter === 'unseen') filteredOrder = order.filter(i => !progress[WORDS[i].id]);
   else filteredOrder = order.filter(i => progress[WORDS[i].id] === currentFilter);
-  renderFilters();
-  if (filteredOrder.length === 0) { idx = 0; render('fade'); return; }
+  if (typeof renderFilters === 'function') renderFilters();
+  if (filteredOrder.length === 0) {
+    idx = 0;
+    window.render('fade');
+    return;
+  }
   if (filteredOrder.includes(prevWIdx)) {
     idx = (prevIdx + 1) % filteredOrder.length;
   } else {
     idx = Math.min(prevIdx, filteredOrder.length - 1);
   }
-  render('fade');
+  window.render('fade');
 }
-function togglePinyin() {
+
+export function togglePinyin() {
   showPinyin = !showPinyin;
   const btn = document.getElementById('pinyinToggle');
   if (btn) {
@@ -399,14 +362,16 @@ function togglePinyin() {
     btn.classList.toggle('on', !showPinyin);
   }
   savePrefs();
-  render();
+  window.render();
 }
-function shuffleDeck() {
+
+export function shuffleDeck() {
   shuffleInPlace(order);
   savePrefs();
-  setFilter(currentFilter);
+  window.setFilter(currentFilter);
 }
-function resetProgress() {
+
+export function resetProgress() {
   const cards = Object.values(srsCards);
   const started = cards.filter(card => card.state !== SRS.State.New).length;
   const known = cards.filter(card => card.state === SRS.State.Review).length;
@@ -422,35 +387,21 @@ function resetProgress() {
     'Không thể hoàn tác. Nên bấm "Sao lưu" trước nếu muốn giữ lại.',
   ].join('\n');
   if (!confirm(message)) return;
-  srsCards = {};
+  Object.keys(srsCards).forEach(key => delete srsCards[key]);
   WORDS.forEach(word => { srsCards[word.id] = SRS.createNewCard(); });
-  progress = {};
+  Object.keys(progress).forEach(key => delete progress[key]);
   saveProgress();
-  setFilter(currentFilter);
+  window.setFilter(currentFilter);
 }
-function toggleTransferPanel(forceOpen) {
+
+export function toggleTransferPanel(forceOpen) {
   toggleDisclosurePanel('transferPanel', 'transferToggle', forceOpen);
 }
 
-document.addEventListener('click', event => {
-  const panel = document.getElementById('transferPanel');
-  if (panel && !panel.hidden) {
-    const button = document.getElementById('transferToggle');
-    if (!panel.contains(event.target) && (!button || !button.contains(event.target))) {
-      toggleTransferPanel(false);
-    }
-  }
-  const radicalPanel = document.getElementById('radicalTransferPanel');
-  if (radicalPanel && !radicalPanel.hidden) {
-    const radButton = document.getElementById('radicalTransferToggle');
-    if (!radicalPanel.contains(event.target) && (!radButton || !radButton.contains(event.target))) {
-      if (typeof toggleRadicalTransferPanel === 'function') toggleRadicalTransferPanel(false);
-    }
-  }
-});
-function toggleUnknownWords() {
+export function toggleUnknownWords() {
   const box = document.getElementById('unknownWordsList');
   const button = document.getElementById('unknownWordsToggle');
+  if (!box || !button) return;
   const isOpen = box.classList.contains('show');
 
   if (isOpen) {
@@ -473,7 +424,108 @@ function toggleUnknownWords() {
   button.setAttribute('aria-expanded', 'true');
 }
 
-document.addEventListener('keydown', event => {
+export function CelebrationModal() {
+  const data = celebrationState.value;
+
+  useEffect(() => {
+    if (!data) return;
+    const onKeydown = (e) => {
+      if (e.key === 'Escape') {
+        closeCelebrationOverlay();
+      }
+    };
+    document.addEventListener('keydown', onKeydown);
+    return () => document.removeEventListener('keydown', onKeydown);
+  }, [data]);
+
+  if (!data) return null;
+
+  const { isMastered, levelLabel, deck } = data;
+  const badgeText = isMastered
+    ? '👑 ĐẠI THÀNH TỰU · MASTERED'
+    : '✨ THÀNH TỰU MỞ KHÓA · LEVEL COMPLETED';
+  const titleText = isMastered
+    ? 'Tuyệt Đỉnh! Tinh Thông 100% Từ Vựng!'
+    : `Chúc Mừng! Bạn Đã Hoàn Thành ${levelLabel}!`;
+  const msgHtml = isMastered
+    ? `Bạn đã nhớ xuất sắc toàn bộ <strong>${deck.total} / ${deck.total}</strong> từ vựng. Không còn từ nào chưa nhớ!`
+    : `Bạn đã học qua tất cả <strong>${deck.total} / ${deck.total}</strong> từ vựng của <strong>${levelLabel}</strong>. Cột mốc 100% cực kỳ ấn tượng!`;
+
+  return (
+    <div
+      id="celebrationOverlay"
+      className="celebration-overlay"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) closeCelebrationOverlay();
+      }}
+    >
+      <div className="celebration-box" role="dialog" aria-modal="true" aria-labelledby="celebrationTitle">
+        <button
+          type="button"
+          className="celebration-close-btn"
+          onClick={closeCelebrationOverlay}
+          aria-label="Đóng"
+        >
+          ✕
+        </button>
+        <div className="celebration-trophy-wrap">
+          <div className="celebration-trophy-halo"></div>
+          <span className="celebration-trophy">{isMastered ? '👑' : '🏆'}</span>
+          <span className="celebration-sparkle celebration-sparkle-1">✨</span>
+          <span className="celebration-sparkle celebration-sparkle-2">⭐</span>
+        </div>
+        <div className="celebration-badge">{badgeText}</div>
+        <h2 className="celebration-title" id="celebrationTitle">{titleText}</h2>
+        <p className="celebration-msg" dangerouslySetInnerHTML={{ __html: msgHtml }} />
+        <div className="celebration-stats-grid">
+          <div className="celebration-stat-pill">
+            <span className="celebration-stat-val">{deck.total}</span>
+            <span className="celebration-stat-name">Tổng từ</span>
+          </div>
+          <div className="celebration-stat-pill celebration-stat-pill--known">
+            <span className="celebration-stat-val">{deck.known}</span>
+            <span className="celebration-stat-name">Đã nhớ tốt</span>
+          </div>
+          <div className="celebration-stat-pill celebration-stat-pill--unknown">
+            <span className="celebration-stat-val">{deck.unknown}</span>
+            <span className="celebration-stat-name">Cần củng cố</span>
+          </div>
+        </div>
+        <div className="celebration-actions">
+          {deck.unknown > 0 ? (
+            <button
+              type="button"
+              className="celebration-btn celebration-btn--primary"
+              onClick={() => setFilterAndCloseCelebration('unknown')}
+            >
+              {`🔁 Ôn tập ngay ${deck.unknown} từ chưa nhớ`}
+            </button>
+          ) : (
+            <button
+              type="button"
+              className="celebration-btn celebration-btn--primary"
+              onClick={closeCelebrationOverlay}
+            >
+              🎉 Tuyệt vời, tiếp tục phát huy!
+            </button>
+          )}
+          <button
+            type="button"
+            className="celebration-btn celebration-btn--secondary"
+            onClick={() => {
+              setFilterAndCloseCelebration('all');
+              if (typeof shuffleDeck === 'function') shuffleDeck();
+            }}
+          >
+            🔀 Xáo trộn & ôn tất cả từ
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function handleStudyKeydown(event) {
   if (event.key === 'Escape') {
     const cardMoreDropdown = document.getElementById('cardMoreDropdown');
     if (cardMoreDropdown && !cardMoreDropdown.hidden) {
@@ -587,4 +639,57 @@ document.addEventListener('keydown', event => {
     jumpToRandomWord();
     return;
   }
-});
+}
+
+function handleDocumentClick(event) {
+  const panel = document.getElementById('transferPanel');
+  if (panel && !panel.hidden) {
+    const button = document.getElementById('transferToggle');
+    if (!panel.contains(event.target) && (!button || !button.contains(event.target))) {
+      toggleTransferPanel(false);
+    }
+  }
+  const radicalPanel = document.getElementById('radicalTransferPanel');
+  if (radicalPanel && !radicalPanel.hidden) {
+    const radButton = document.getElementById('radicalTransferToggle');
+    if (!radicalPanel.contains(event.target) && (!radButton || !radButton.contains(event.target))) {
+      if (typeof toggleRadicalTransferPanel === 'function') toggleRadicalTransferPanel(false);
+    }
+  }
+}
+
+export function mountStudyProgress() {
+  let host = document.getElementById('celebrationRoot');
+  if (!host) {
+    host = document.createElement('div');
+    host.id = 'celebrationRoot';
+    document.body.appendChild(host);
+  }
+  render(<CelebrationModal />, host);
+
+  document.addEventListener('click', handleDocumentClick);
+  document.addEventListener('keydown', handleStudyKeydown);
+
+  // Re-export study controls on window for template event handlers and external scripts
+  window.nextCard = nextCard;
+  window.prevCard = prevCard;
+  window.jumpToRandomWord = jumpToRandomWord;
+  window.randomWord = jumpToRandomWord;
+  window.randomizeFlashcardWord = jumpToRandomWord;
+  window.rateCurrentCard = rateCurrentCard;
+  window.markKnown = markKnown;
+  window.markUnknown = markUnknown;
+  window.advanceAfterMark = advanceAfterMark;
+  window.playCelebrationChime = playCelebrationChime;
+  window.launchConfettiFireworks = launchConfettiFireworks;
+  window.checkCelebration = checkCelebration;
+  window.closeCelebrationOverlay = closeCelebrationOverlay;
+  window.setFilterAndCloseCelebration = setFilterAndCloseCelebration;
+  window.triggerAchievementCelebration = triggerAchievementCelebration;
+  window.showCelebration = showCelebration;
+  window.togglePinyin = togglePinyin;
+  window.shuffleDeck = shuffleDeck;
+  window.resetProgress = resetProgress;
+  window.toggleTransferPanel = toggleTransferPanel;
+  window.toggleUnknownWords = toggleUnknownWords;
+}

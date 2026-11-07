@@ -26,6 +26,7 @@ import { mountHomeWidgets } from './HomeWidgets';
 import { mountRadicalHub } from './RadicalHub';
 import { mountRadicalCards } from './RadicalCards';
 import { mountFastReview } from './FastReview';
+import { mountStudyProgress } from './StudyProgress';
 
 mountAmbientBackground();
 mountStudyHelpModal();
@@ -52,3 +53,4 @@ mountHomeWidgets();
 mountRadicalHub();
 mountRadicalCards();
 mountFastReview();
+mountStudyProgress();

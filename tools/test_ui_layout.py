@@ -757,7 +757,7 @@ class TestFlashcardExperienceRefinements(unittest.TestCase):
         cls.workstation_css = WORKSTATION_CSS.read_text(encoding="utf-8")
         cls.flashcard_css = FLASHCARD_CSS.read_text(encoding="utf-8")
         cls.flashcard_js = (REPO_ROOT / "assets" / "js" / "flashcard.js").read_text(encoding="utf-8")
-        cls.progress_js = (REPO_ROOT / "assets" / "js" / "progress.js").read_text(encoding="utf-8")
+        cls.progress_js = (REPO_ROOT / "src" / "islands" / "StudyProgress.jsx").read_text(encoding="utf-8")
         cls.index_html = INDEX_HTML.read_text(encoding="utf-8")
         cls.levels_js = (REPO_ROOT / "assets" / "js" / "levels.js").read_text(encoding="utf-8")
 
