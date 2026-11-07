@@ -32,9 +32,9 @@
    - Port localStorage persistence & cross-level progress coordinator sang Preact island `src/islands/StorageEngine.js` (commit `9944ec96c`).
    - Port shared utils, Pinyin matchers & version constants sang Preact island `src/islands/AppUtils.js` (commit `a2bc2d562`).
    - Port global state & application configuration sang Preact island `src/islands/AppState.js` (commit `3e3bc0385`).
+   - Gỡ bỏ script CDN `ts-fsrs` thừa (commit `8abe813ac`) do `SrsEngine` đã đóng gói trực tiếp thư viện.
 2. File `database/prebuilt_audio/hsk30_6/words/0687.mp3` (untracked) là **của người dùng** (họ chạy build audio song song). **Không được `git add` file này**, không dùng `git add -A` / `git add .`.
-3. Tiếp tục port các module legacy còn lại sang Preact island (mục 5), mỗi phần một commit, giao diện phải **giống hệt**. Tiếp theo ưu tiên:
-   - `assets/js/hanviet-dict.js`.
+3. Toàn bộ 12 module mã nguồn classic trong `assets/js/` và `assets/` đã hoàn tất chuyển đổi 100% sang hệ thống Preact islands hiện đại. `assets/js/hanviet-dict.js` là file dữ liệu từ điển Hán-Việt 341KB được sinh và đồng bộ bởi các tool Python (`tools/build_hanviet_data.py`).
 
 ---
 
@@ -219,17 +219,23 @@ git push origin HEAD:main && git push origin v3.17.0
 
 ---
 
-## 5. Còn lại cần port (legacy vẫn là classic script)
+## 5. Tình trạng chuyển đổi mã nguồn
 
-File trong `assets/js/` hiện còn (load theo thứ tự trong `index.html`):
-`hanviet-dict.js`.
+Toàn bộ các file logic JavaScript cũ trong `assets/js/` và `assets/flashcards.js` đã được port 100% sang Preact island modules:
+- `assets/js/theme.js` → `src/islands/ThemeManager.js`
+- `assets/js/speechService.js` + `speech.js` → `src/islands/SpeechAudio.js`
+- `assets/js/backup.js` → `src/islands/BackupSync.jsx`
+- `assets/js/radicals-state.js` → `src/islands/radicalsState.js`
+- `assets/flashcards.js` → `src/islands/AppBootstrap.js`
+- `assets/js/levels.js` → `src/islands/Levels.js`
+- `assets/js/flashcard.js` → `src/islands/FlashcardStudy.jsx`
+- `assets/js/spa-router.js` → `src/islands/SpaRouter.js`
+- `assets/js/srs.js` → `src/islands/SrsEngine.js`
+- `assets/js/storage.js` → `src/islands/StorageEngine.js`
+- `assets/js/utils.js` → `src/islands/AppUtils.js`
+- `assets/js/state.js` → `src/islands/AppState.js`
 
-Gợi ý thứ tự (ưu tiên module tự chứa: có màn hình/modal riêng + API `window.*` rõ ràng):
-1. `backup.js`.
-2. Màn flashcard chính (`flashcard.js`, `levels.js`) — lớn và là lõi.
-4. Services (`state`, `storage`, `srs`, `speech*`, `utils`, `spa-router`, `theme`, `backup`): có thể giữ classic lâu dài; chỉ chuyển khi không còn classic code nào gọi chúng ở top-level.
-
-**Không được chuyển sang module** những gì classic code gọi ở top-level lúc load (ví dụ `assets/flashcards.js` → `renderLearningDashboard` → `countDueCardsAcrossLevels`) hoặc phải chạy trước lần vẽ đầu tiên (`theme.js`, inline script theme ở đầu `<head>`).
+Trong `index.html` chỉ còn lại duy nhất `assets/js/hanviet-dict.js` (file dữ liệu tĩnh 341KB tra cứu âm Hán-Việt, được build bởi `tools/build_hanviet_data.py`).
 
 ---
 
