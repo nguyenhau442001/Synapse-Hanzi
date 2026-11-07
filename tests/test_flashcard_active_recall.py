@@ -14,7 +14,7 @@ FLASHCARD_JS = ROOT / "assets" / "js" / "flashcard.js"
 FLASHCARD_CSS = ROOT / "assets" / "css" / "flashcard.css"
 WORKSTATION_CSS = ROOT / "assets" / "css" / "workstation.css"
 DECOMP_JS = ROOT / "src" / "islands" / "HanziDecomposition.jsx"
-RELATED_JS = ROOT / "assets" / "js" / "related-words.js"
+RELATED_JS = ROOT / "src" / "islands" / "RelatedWords.jsx"
 PROGRESS_JS = ROOT / "assets" / "js" / "progress.js"
 
 class TestFlashcardActiveRecall(unittest.TestCase):
