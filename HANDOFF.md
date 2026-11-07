@@ -33,8 +33,9 @@
    - Port shared utils, Pinyin matchers & version constants sang Preact island `src/islands/AppUtils.js` (commit `a2bc2d562`).
    - Port global state & application configuration sang Preact island `src/islands/AppState.js` (commit `3e3bc0385`).
    - Gỡ bỏ script CDN `ts-fsrs` thừa (commit `8abe813ac`) do `SrsEngine` đã đóng gói trực tiếp thư viện.
+   - Port mobile navigation & stats dialog controller sang Preact island `src/islands/MobileBottomNav.js`, dọn sạch 160 dòng inline scripts trong `index.html` (commit `57904ce21`).
 2. File `database/prebuilt_audio/hsk30_6/words/0687.mp3` (untracked) là **của người dùng** (họ chạy build audio song song). **Không được `git add` file này**, không dùng `git add -A` / `git add .`.
-3. Toàn bộ 12 module mã nguồn classic trong `assets/js/` và `assets/` đã hoàn tất chuyển đổi 100% sang hệ thống Preact islands hiện đại. `assets/js/hanviet-dict.js` là file dữ liệu từ điển Hán-Việt 341KB được sinh và đồng bộ bởi các tool Python (`tools/build_hanviet_data.py`).
+3. Toàn bộ 100% các module mã nguồn và script tính năng trong ứng dụng đã chuyển đổi sang hệ thống Preact islands hiện đại. `index.html` hoàn toàn sạch sẽ, chỉ còn load dữ liệu từ điển `hanviet-dict.js` và bundle islands.
 
 ---
 
