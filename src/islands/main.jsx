@@ -7,6 +7,7 @@ import { mountSpeedQuizGame } from './SpeedQuizGame';
 import { mountSentenceGame } from './SentenceGame';
 import { mountVocabularyOverview } from './VocabularyOverview';
 import { mountMemoryCurve } from './MemoryCurve';
+import { mountWeakWords } from './WeakWords';
 
 mountStudyHelpModal();
 mountGuessWordGame();
@@ -14,3 +15,4 @@ mountSpeedQuizGame();
 mountSentenceGame();
 mountVocabularyOverview();
 mountMemoryCurve();
+mountWeakWords();
