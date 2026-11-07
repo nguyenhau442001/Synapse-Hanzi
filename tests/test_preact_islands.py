@@ -37,3 +37,12 @@ def test_islands_bundle_is_up_to_date():
         )
         fresh = (Path(tmp) / "islands.js").read_bytes()
     assert fresh == BUNDLE.read_bytes(), "assets/js/preact/islands.js is stale: run `npm run build:islands`"
+
+
+def test_service_worker_precaches_only_existing_files():
+    # Legacy scripts are deleted as they move into islands; a stale precache entry would make
+    # the service worker install fail.
+    import re
+    sw = (ROOT / "sw.js").read_text(encoding="utf-8")
+    missing = [p for p in re.findall(r"'\./(assets/[^'?]+)", sw) if not (ROOT / p).exists()]
+    assert not missing, f"sw.js precaches missing files: {missing}"
