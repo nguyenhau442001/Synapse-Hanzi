@@ -14,10 +14,11 @@
    - Release `v3.17.0` (tag `v3.17.0`).
    - Port bảng tập viết nét chữ sang Preact island `src/islands/StrokeCanvas.jsx` (commit `b3b6fcfbc`).
    - Port hub danh sách bộ thủ & primary tab router sang Preact island `src/islands/RadicalHub.jsx` (commit `1b317374d`).
+   - Port màn Ôn nhanh 5 mạng & modal câu sai sang Preact island `src/islands/FastReview.jsx` (commit `1c5aaa041`).
 2. File `database/prebuilt_audio/hsk30_6/words/0687.mp3` (untracked) là **của người dùng** (họ chạy build audio song song). **Không được `git add` file này**, không dùng `git add -A` / `git add .`.
 3. Tiếp tục port các module legacy còn lại sang Preact island (mục 5), mỗi phần một commit, giao diện phải **giống hệt**. Tiếp theo ưu tiên:
-   - `assets/js/fast-review.js` (ôn nhanh 5 mạng, worker `fast-review-worker.js`).
    - `assets/js/progress.js`, `assets/js/dashboard-enhancements.js`.
+   - `assets/js/word-illustrations.js`, `assets/js/card-interactions.js`.
 
 ---
 
@@ -205,14 +206,13 @@ git push origin HEAD:main && git push origin v3.17.0
 ## 5. Còn lại cần port (legacy vẫn là classic script)
 
 File trong `assets/js/` hiện còn (load theo thứ tự trong `index.html` dòng ~918–955):
-`utils.js`, `state.js`, `storage.js`, (ts-fsrs CDN), `srs.js`, `spa-router.js`, `word-illustrations.js`, `levels.js`, `topics.js`, `hsk30.js`, `fast-review.js` (+ `fast-review-worker.js`), `hanviet-dict.js`, `flashcard.js`, `card-interactions.js`, `speechService.js`, `speech.js`, `progress.js`, `theme.js`, `backup.js`, `radicals-state.js`, một inline `<script>`, `dashboard-enhancements.js`, `assets/flashcards.js`.
+`utils.js`, `state.js`, `storage.js`, (ts-fsrs CDN), `srs.js`, `spa-router.js`, `word-illustrations.js`, `levels.js`, `topics.js`, `hsk30.js`, `hanviet-dict.js`, `flashcard.js`, `card-interactions.js`, `speechService.js`, `speech.js`, `progress.js`, `theme.js`, `backup.js`, `radicals-state.js`, một inline `<script>`, `dashboard-enhancements.js`, `assets/flashcards.js`.
 
 Gợi ý thứ tự (ưu tiên module tự chứa: có màn hình/modal riêng + API `window.*` rõ ràng):
-1. `fast-review.js` (ôn nhanh 5 mạng; có worker riêng `fast-review-worker.js`).
-2. `progress.js`, `dashboard-enhancements.js`.
-3. `word-illustrations.js`, `card-interactions.js`.
-4. Màn flashcard chính (`flashcard.js`, `levels.js`) — lớn và là lõi, để sau cùng.
-5. Services (`state`, `storage`, `srs`, `speech*`, `utils`, `spa-router`, `theme`, `backup`): có thể giữ classic lâu dài; chỉ chuyển khi không còn classic code nào gọi chúng ở top-level.
+1. `progress.js`, `dashboard-enhancements.js`.
+2. `word-illustrations.js`, `card-interactions.js`.
+3. Màn flashcard chính (`flashcard.js`, `levels.js`) — lớn và là lõi, để sau cùng.
+4. Services (`state`, `storage`, `srs`, `speech*`, `utils`, `spa-router`, `theme`, `backup`): có thể giữ classic lâu dài; chỉ chuyển khi không còn classic code nào gọi chúng ở top-level.
 
 **Không được chuyển sang module** những gì classic code gọi ở top-level lúc load (ví dụ `assets/flashcards.js` → `renderLearningDashboard` → `countDueCardsAcrossLevels`) hoặc phải chạy trước lần vẽ đầu tiên (`theme.js`, inline script theme ở đầu `<head>`).
 
