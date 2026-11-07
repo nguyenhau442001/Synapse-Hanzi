@@ -850,11 +850,7 @@ class TestFastReviewLivesConfiguration(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.index_html = (REPO_ROOT / "index.html").read_text(encoding="utf-8")
-        fast_review_path = REPO_ROOT / "assets" / "js" / "fast-review.js"
-        if fast_review_path.exists():
-            cls.fast_review_js = fast_review_path.read_text(encoding="utf-8")
-        else:
-            cls.fast_review_js = (REPO_ROOT / "src" / "islands" / "FastReview.jsx").read_text(encoding="utf-8")
+        cls.fast_review_js = (REPO_ROOT / "src" / "islands" / "FastReview.jsx").read_text(encoding="utf-8")
         cls.state_js = (REPO_ROOT / "src" / "islands" / "AppState.js").read_text(encoding="utf-8")
         cls.fast_review_css = (REPO_ROOT / "assets" / "css" / "fast-review.css").read_text(encoding="utf-8")
 

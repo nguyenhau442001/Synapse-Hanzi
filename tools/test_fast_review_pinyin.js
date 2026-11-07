@@ -5,10 +5,8 @@ const path = require('path');
 
 const utilsFile = path.join(__dirname, '../src/islands/AppUtils.js');
 const utilsCode = fs.readFileSync(utilsFile, 'utf8').replace(/export\s+/g, '');
-const fastReviewPath = path.join(__dirname, '../assets/js/fast-review.js');
-const fastReviewCode = fs.existsSync(fastReviewPath) ? fs.readFileSync(fastReviewPath, 'utf8') : '';
 
-// Provide mock environment to execute fast-review.js in vm context
+// Provide mock environment to execute AppUtils in vm context
 const sandbox = {
   document: {
     addEventListener: () => {},
@@ -30,7 +28,6 @@ sandbox.window = sandbox;
 
 vm.createContext(sandbox);
 vm.runInContext(utilsCode, sandbox);
-vm.runInContext(fastReviewCode, sandbox);
 
 const pinyinLooseMatch = sandbox.pinyinLooseMatch;
 const stripTonePinyin = sandbox.stripTonePinyin;

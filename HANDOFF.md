@@ -274,11 +274,11 @@ Trong `index.html` chỉ còn lại duy nhất `assets/js/hanviet-dict.js` (file
 
 ## 7. Bản đồ file hữu ích
 
-- `index.html` — app thật; script legacy ở dòng ~918–955, islands bundle ở ~955.
-- `src/islands/` — 21 island `.jsx` (tính cả `RadicalCards.jsx` chưa commit) + `main.jsx` (entry) + `domReady.js` + `ambientBackground.js`.
+- `index.html` — app chính thức chạy Preact islands và PWA offline.
+- `src/islands/` — toàn bộ các Preact island `.jsx` và module `.js` của ứng dụng.
 - `assets/js/preact/islands.js` — bundle đã build, **commit cùng source**.
 - `vite.islands.config.mjs` — config build islands (lib mode, ES, minify).
-- `vite.config.*` + `src/views` + `app.html` — bản redesign cũ, không dùng.
+- `vite.config.mjs` — dev server config (`npm run dev` mở `index.html`).
 - `tools/bump_version.py` — đồng bộ phiên bản.
 - `tests/` (pytest, gồm `test_preact_islands.py` kiểm bundle stale), `tools/test_ui_layout.py`, `tools/test_related_words.py`, `tools/test_fast_review_pinyin.js` (`npm test`).
 - `sw.js` — service worker, danh sách precache + `APP_VERSION`.

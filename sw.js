@@ -1,6 +1,5 @@
 const APP_VERSION = '3.18.0';
 const CACHE_NAME = 'hsk-flashcards-v' + APP_VERSION;
-const FSRS_CDN_URL = 'https://cdn.jsdelivr.net/npm/ts-fsrs@5.4.1/dist/index.umd.js';
 const APP_SHELL_URL = new URL('./index.html', self.registration.scope).href;
 const INDEX_SHELL_URL = new URL('./index.html', self.registration.scope).href;
 const ROOT_SHELL_URL = new URL('./', self.registration.scope).href;
@@ -18,6 +17,7 @@ const PRECACHE_ASSET_URLS = [
   './assets/css/quick-access-drawer.css?v=' + APP_VERSION,
   './assets/js/hanviet-dict.js?v=' + APP_VERSION,
   './assets/js/preact/islands.js?v=' + APP_VERSION,
+  './assets/js/fast-review-worker.js?v=' + APP_VERSION,
   './assets/css/listening-practice.css?v=' + APP_VERSION,
   './assets/images/chinese_landscape_light.svg',
   './assets/images/chinese_landscape_dark.svg',
@@ -33,7 +33,6 @@ self.addEventListener('install', event => {
     await Promise.allSettled([
       cache.add(APP_SHELL_URL),
       ...PRECACHE_ASSET_URLS.map(url => cache.add(url)),
-      cache.add(new Request(FSRS_CDN_URL, { mode: 'cors' })),
     ]);
     await self.skipWaiting();
   })());
@@ -54,18 +53,6 @@ self.addEventListener('fetch', event => {
   const request = event.request;
   if (request.method !== 'GET') return;
   const url = new URL(request.url);
-
-  if (url.href === FSRS_CDN_URL) {
-    event.respondWith((async () => {
-      const cache = await caches.open(CACHE_NAME);
-      const cached = await cache.match(request);
-      if (cached) return cached;
-      const response = await fetch(request);
-      if (response.status === 200 || response.type === 'opaque') await cache.put(request, response.clone());
-      return response;
-    })());
-    return;
-  }
 
   if (url.origin !== self.location.origin) return;
 

@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --config vite.islands.config.mjs",
     "build:islands": "vite build --config vite.islands.config.mjs",
     "preview": "vite preview",
     "test": "node tools/test_fast_review_pinyin.js",
