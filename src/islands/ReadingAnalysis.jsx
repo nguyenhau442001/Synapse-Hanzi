@@ -515,8 +515,19 @@ function PracticeHeader({ title, hint }) {
 const ChunkTile = ({ item }) => item;
 const LogicTile = ({ item }) => <><strong>{`${item.key}.`}</strong>{` ${item.text}`}</>;
 
-function ClozeSentence({ text }) {
-  const marker = '（ ____ ）';
+// Cloze data comes in two shapes: { blank_sentence '（ ____ ）', options: [{ word, pinyin, hanviet, meaning }], target_word }
+// and { cloze_text '（  ）', options: ['word', ...], correct_answer }.
+function normalizeCloze(p) {
+  const fromText = !p.blank_sentence && p.cloze_text;
+  return {
+    sentence: p.blank_sentence || p.cloze_text || '',
+    marker: fromText ? '（  ）' : '（ ____ ）',
+    options: (p.options || []).map((opt) => (typeof opt === 'string' ? { word: opt } : opt)),
+    target: p.target_word || p.correct_answer || ''
+  };
+}
+
+function ClozeSentence({ text, marker }) {
   const at = text.indexOf(marker);
   if (at < 0) return text;
   return <>{text.slice(0, at)}<span class="cloze-blank-spot">{selectedOption || '？'}</span>{text.slice(at + marker.length)}</>;
@@ -534,24 +545,25 @@ function PracticePanels({ entry }) {
     );
   }
   if (p.type === 'cloze') {
+    const cloze = normalizeCloze(p);
     return (
       <div class="reading-practice-card">
         <PracticeHeader title="📝 Dạng 2: Bài tập Điền khuyết (Cloze Test) theo ngữ cảnh" hint="Chọn từ thích hợp nhất để điền vào chỗ trống" />{' '}
-        <div class="cloze-blank-text"><ClozeSentence text={p.blank_sentence || ''} /></div>{' '}
+        <div class="cloze-blank-text"><ClozeSentence text={cloze.sentence} marker={cloze.marker} /></div>{' '}
         <div class="cloze-options-grid">
-          {(p.options || []).map((opt) => {
+          {cloze.options.map((opt) => {
             let optClass = '';
             if (selectedOption) {
-              if (opt.word === p.target_word) optClass = 'selected-correct';
+              if (opt.word === cloze.target) optClass = 'selected-correct';
               else if (opt.word === selectedOption) optClass = 'selected-wrong';
             }
             return [' ', (
-              <button key={`${opt.word}`} type="button" class={`cloze-option-btn ${optClass}`} onClick={() => selectClozeOption(`${opt.word}`)} disabled={Boolean(selectedOption)}>
+              <button key={opt.word} type="button" class={`cloze-option-btn ${optClass}`} onClick={() => selectClozeOption(opt.word)} disabled={Boolean(selectedOption)}>
                 <div>
-                  <div class="cloze-opt-zh">{`${opt.word}`}</div>{' '}
-                  <div class="cloze-opt-sub">{`${opt.pinyin} · [${opt.hanviet}]`}</div>
-                </div>{' '}
-                <div class="cloze-opt-sub">{`${opt.meaning}`}</div>
+                  <div class="cloze-opt-zh">{opt.word}</div>
+                  {opt.pinyin && <>{' '}<div class="cloze-opt-sub">{`${opt.pinyin} · [${opt.hanviet}]`}</div></>}
+                </div>
+                {opt.meaning && <>{' '}<div class="cloze-opt-sub">{opt.meaning}</div></>}
               </button>
             )];
           })}

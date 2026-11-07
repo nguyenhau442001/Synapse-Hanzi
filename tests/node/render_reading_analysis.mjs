@@ -29,6 +29,7 @@ try {
       mod.setReadingActiveMode(mode);
       const html = renderToString(h(mod.ReadingAnalysisScreen, {}));
       if (!html.includes(`Câu ${i + 1}/${data.length}`)) throw new Error(`entry ${i} (${mode}) did not render its header`);
+      if (/undefined/.test(html)) throw new Error(`entry ${i} (${mode}) renders "undefined"`);
       rendered++;
     }
   }
