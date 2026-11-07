@@ -1,6 +1,7 @@
 // Entry for the Preact islands mounted inside the legacy index.html.
 // Each island owns one piece of the page that used to be built by a legacy script,
 // rendering identical markup so the existing CSS applies unchanged.
+import { mountAmbientBackground } from './ambientBackground';
 import { mountStudyHelpModal } from './StudyHelpModal';
 import { mountGuessWordGame } from './GuessWordGame';
 import { mountSpeedQuizGame } from './SpeedQuizGame';
@@ -22,6 +23,7 @@ import { mountListeningPractice } from './ListeningPractice';
 import { mountQuickAccessDrawer } from './QuickAccessDrawer';
 import { mountHomeWidgets } from './HomeWidgets';
 
+mountAmbientBackground();
 mountStudyHelpModal();
 mountGuessWordGame();
 mountSpeedQuizGame();

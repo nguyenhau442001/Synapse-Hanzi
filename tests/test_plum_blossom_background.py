@@ -6,7 +6,7 @@ ROOT = Path(__file__).resolve().parent.parent
 INDEX_HTML = ROOT / "index.html"
 BASE_CSS = ROOT / "assets/css/base.css"
 WORKSTATION_CSS = ROOT / "assets/css/workstation.css"
-PLUM_JS = ROOT / "assets/js/plum-blossom-background.js"
+PLUM_JS = ROOT / "src/islands/ambientBackground.js"
 LIGHT_SVG = ROOT / "assets/images/chinese_landscape_light.svg"
 DARK_SVG = ROOT / "assets/images/chinese_landscape_dark.svg"
 
@@ -21,8 +21,9 @@ def test_html_includes_canvas_and_script():
     assert 'class="plum-blossom-canvas"' in html_content
     assert 'aria-hidden="true"' in html_content
 
-    # Script inclusion
-    assert 'assets/js/plum-blossom-background.js' in html_content
+    # The ambient engine ships in the Preact islands bundle (src/islands/ambientBackground.js)
+    assert 'assets/js/preact/islands.js' in html_content
+    assert "mountAmbientBackground()" in (ROOT / "src/islands/main.jsx").read_text(encoding="utf-8")
 
 
 def test_base_css_tokens_and_layering():

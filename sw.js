@@ -29,7 +29,6 @@ const PRECACHE_ASSET_URLS = [
   './assets/images/chinese_landscape_light.svg',
   './assets/images/chinese_landscape_dark.svg',
   './assets/images/chinese_seal_stamp.svg',
-  './assets/js/plum-blossom-background.js?v=' + APP_VERSION,
 ].map(path => (path.startsWith('http') ? path : new URL(path, self.registration.scope).href));
 // Vocabulary/audio JSON lives in its own cache so app deploys don't force every level to re-download.
 const DATA_CACHE_NAME = 'hsk-data-v12';
