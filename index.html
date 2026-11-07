@@ -764,94 +764,7 @@ if ('serviceWorker' in navigator) {
   </div>
 
   <!-- SCREEN 4: Radical flashcards -->
-  <div id="screenRadicalCards" style="display:none">
-    <button class="back-btn" onclick="SpaRouter.navigateBack()">← Quay lại Bộ thủ</button>
-
-    <div class="view-tabs" role="tablist" aria-label="Chế độ xem bộ thủ">
-      <button id="radicalFlashcardTab" class="view-tab active" role="tab" aria-selected="true"
-        aria-controls="radicalStudyView" onclick="setRadicalViewMode('cards')">🗂 Học flashcard</button>
-      <button id="radicalOverviewTab" class="view-tab" role="tab" aria-selected="false"
-        aria-controls="radicalOverviewView" onclick="setRadicalViewMode('overview')">📋 Tổng quan bộ thủ</button>
-    </div>
-
-    <div id="radicalStudyView" role="tabpanel" aria-labelledby="radicalFlashcardTab">
-      <div class="stat-grid">
-        <div class="stat-box"><div class="stat-num" id="rs-total">0</div><div class="stat-lbl">tổng số bộ</div></div>
-        <div class="stat-box"><div class="stat-num" id="rs-unknown" style="color:var(--danger-text)">0</div><div class="stat-lbl">chưa nhớ</div></div>
-        <div class="stat-box"><div class="stat-num" id="rs-known" style="color:var(--success-text)">0</div><div class="stat-lbl">đã nhớ</div></div>
-        <div class="stat-box"><div class="stat-num" id="rs-unseen" style="color:var(--text-secondary)">0</div><div class="stat-lbl">chưa học</div></div>
-      </div>
-
-      <div class="filter-row" id="radicalFilterRow"></div>
-
-      <div class="transfer-panel" id="radicalTransferPanel" hidden>
-        <div class="transfer-panel-header">
-          <div class="transfer-panel-title">Sao lưu và chuyển thiết bị</div>
-          <button type="button" class="transfer-panel-close-btn" onclick="toggleRadicalTransferPanel(false)" aria-label="Đóng bảng sao lưu" title="Đóng (Esc)">✕</button>
-        </div>
-        <div class="transfer-panel-content">
-          <div class="transfer-actions">
-            <button onclick="exportRadicalProgress()">💾 Tải bản sao tiến trình</button>
-            <button onclick="document.getElementById('radicalImportFile').click()">📂 Khôi phục từ bản sao</button>
-          </div>
-          <p class="transfer-note">Bản sao Bộ thủ gồm toàn bộ tiến trình 50 bộ cơ bản và 214 bộ Khang Hy.</p>
-        </div>
-      </div>
-      <input type="file" id="radicalImportFile" accept="application/json" style="display:none" onchange="importRadicalProgress(event)">
-
-      <div class="toolbar">
-        <div class="tool-group">
-          <button class="icon-btn" id="radicalShuffleBtn" onclick="shuffleRadicalDeck()">🔀 Xáo trộn</button>
-          <button class="icon-btn" id="radicalPinyinToggle" onclick="toggleRadicalPinyin()">👁 Đang hiện pinyin</button>
-          <button class="icon-btn" id="radicalTransferToggle" onclick="toggleRadicalTransferPanel()" aria-controls="radicalTransferPanel" aria-expanded="false">💾 Sao lưu</button>
-        </div>
-      </div>
-
-      <div id="radicalCardArea">
-        <div class="loading-text">Đang tải dữ liệu...</div>
-      </div>
-    </div>
-
-    <div id="radicalOverviewView" role="tabpanel" aria-labelledby="radicalOverviewTab" hidden>
-      <div class="overview-heading">
-        <div>
-          <h2 id="radicalOverviewTitle">Toàn bộ bộ thủ</h2>
-          <p id="radicalOverviewDescription">Xem trước nhóm bộ thủ này.</p>
-        </div>
-        <span class="overview-total" id="radicalOverviewTotal">0 bộ</span>
-      </div>
-
-      <div class="overview-controls">
-        <label class="overview-search">
-          <span aria-hidden="true">⌕</span>
-          <input id="radicalOverviewSearch" type="search" autocomplete="off"
-            placeholder="Tìm bộ thủ, pinyin hoặc nghĩa..."
-            aria-label="Tìm trong danh sách bộ thủ"
-            oninput="updateRadicalOverviewSearch(this.value)">
-        </label>
-        <label class="overview-status-label">
-          <span class="sr-only">Lọc bộ thủ theo số nét</span>
-          <select id="radicalOverviewStroke" aria-label="Lọc bộ thủ theo số nét"
-            onchange="updateRadicalOverviewStroke(this.value)">
-            <option value="all">Tất cả số nét</option>
-          </select>
-        </label>
-        <label class="overview-status-label">
-          <span class="sr-only">Lọc bộ thủ theo trạng thái học</span>
-          <select id="radicalOverviewStatus" aria-label="Lọc bộ thủ theo trạng thái học"
-            onchange="updateRadicalOverviewStatus(this.value)">
-            <option value="all">Tất cả trạng thái</option>
-            <option value="unseen">Chưa học</option>
-            <option value="unknown">Chưa nhớ</option>
-            <option value="known">Đã nhớ</option>
-          </select>
-        </label>
-      </div>
-
-      <div class="overview-result-summary" id="radicalOverviewResultSummary" role="status"></div>
-      <div class="vocabulary-list radical-overview-list" id="radicalOverviewList"></div>
-    </div>
-  </div>
+  <div id="screenRadicalCards" style="display:none"></div><!-- Preact island: src/islands/RadicalCards.jsx -->
 
   <!-- SCREEN 5: Fast-review (⚡ Ôn nhanh) -->
   <div id="screenReviewPicker" style="display:none">
@@ -1023,7 +936,6 @@ if ('serviceWorker' in navigator) {
 <script src="assets/js/backup.js?v=3.16.0"></script>
 <script src="assets/js/radicals-state.js?v=3.16.0"></script>
 <script src="assets/js/radicals.js?v=3.16.0"></script>
-<script src="assets/js/radical-card.js?v=3.16.0"></script>
 <script src="assets/js/stroke-canvas.js?v=3.16.0"></script>
 <script>
 window.addEventListener('load', function() {

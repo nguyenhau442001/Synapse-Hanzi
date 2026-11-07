@@ -22,6 +22,7 @@ import { mountReadingAnalysis } from './ReadingAnalysis';
 import { mountListeningPractice } from './ListeningPractice';
 import { mountQuickAccessDrawer } from './QuickAccessDrawer';
 import { mountHomeWidgets } from './HomeWidgets';
+import { mountRadicalCards } from './RadicalCards';
 
 mountAmbientBackground();
 mountStudyHelpModal();
@@ -44,3 +45,4 @@ mountReadingAnalysis();
 mountListeningPractice();
 mountQuickAccessDrawer();
 mountHomeWidgets();
+mountRadicalCards();
