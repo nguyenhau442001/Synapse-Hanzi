@@ -539,7 +539,7 @@ class TestTodayReviewZenMode(unittest.TestCase):
 
     def test_today_review_rating_buttons_mobile_arrows_replace_numbers(self):
         """Today review rating buttons must show only arrows on mobile and hide shortcut numbers 1 and 2."""
-        due_review_js = (REPO_ROOT / "assets" / "js" / "due-review.js").read_text(encoding="utf-8")
+        due_review_js = (REPO_ROOT / "src" / "islands" / "TodayReview.jsx").read_text(encoding="utf-8")
         self.assertIn("today-rating-sub-desktop", due_review_js)
         self.assertIn("today-rating-sub-mobile", due_review_js)
         self.assertIn(".today-rating-sub-desktop", self.flashcard_css)
@@ -547,9 +547,9 @@ class TestTodayReviewZenMode(unittest.TestCase):
 
     def test_today_review_example_markup_support(self):
         """Today review must format example markup with <u> tags instead of escaping them as raw text."""
-        due_review_js = (REPO_ROOT / "assets" / "js" / "due-review.js").read_text(encoding="utf-8")
-        self.assertIn("formatTodayExample(item.word.example_zh)", due_review_js)
-        self.assertIn("formatTodayExample(item.word.example_vi)", due_review_js)
+        due_review_js = (REPO_ROOT / "src" / "islands" / "TodayReview.jsx").read_text(encoding="utf-8")
+        self.assertIn("formatTodayExample(word.example_zh)", due_review_js)
+        self.assertIn("formatTodayExample(word.example_vi)", due_review_js)
         self.assertIn("function formatTodayExample", due_review_js)
         self.assertIn(".today-card-example u", self.flashcard_css)
 
@@ -887,7 +887,7 @@ class TestScreenMutualExclusion(unittest.TestCase):
     def setUpClass(cls):
         cls.levels_js = (REPO_ROOT / "assets" / "js" / "levels.js").read_text(encoding="utf-8")
         cls.radicals_js = (REPO_ROOT / "assets" / "js" / "radicals.js").read_text(encoding="utf-8")
-        cls.due_review_js = (REPO_ROOT / "assets" / "js" / "due-review.js").read_text(encoding="utf-8")
+        cls.due_review_js = (REPO_ROOT / "src" / "islands" / "TodayReview.jsx").read_text(encoding="utf-8")
         cls.spa_router_js = (REPO_ROOT / "assets" / "js" / "spa-router.js").read_text(encoding="utf-8")
 
     def test_select_level_hides_radical_and_review_screens(self):
