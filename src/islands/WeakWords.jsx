@@ -4,6 +4,7 @@
 // helpers exported below.
 import { render } from 'preact';
 import { signal } from '@preact/signals';
+import { onDomReady } from './domReady';
 
 /* global activeStudyWord, currentLevel, WORDS, LEVELS -- classic-script globals */
 
@@ -283,12 +284,5 @@ export function mountWeakWords() {
     loadWeakWords, saveWeakWords, isWeakWord, escapeWeakWordHtml, formatWeakWordLevel,
     toggleWeakWord, updateWeakWordToggleButton, renderWeakWordsList
   });
-  // Deferred modules run while readyState is already 'interactive' but before DOMContentLoaded;
-  // wait for it so the legacy sidebar cards mounted on DOMContentLoaded come first.
-  const mountOnce = () => { if (!mounted) mountPanel(); };
-  if (document.readyState === 'complete') mountOnce();
-  else {
-    document.addEventListener('DOMContentLoaded', mountOnce, { once: true });
-    window.addEventListener('load', mountOnce, { once: true });
-  }
+  onDomReady(mountPanel);
 }

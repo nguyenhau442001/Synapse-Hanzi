@@ -7,7 +7,9 @@ import { mountSpeedQuizGame } from './SpeedQuizGame';
 import { mountSentenceGame } from './SentenceGame';
 import { mountVocabularyOverview } from './VocabularyOverview';
 import { mountMemoryCurve } from './MemoryCurve';
+import { mountSidebarRadicalsFilter } from './SidebarRadicalsFilter';
 import { mountWeakWords } from './WeakWords';
+import { mountGrammarBreakdown } from './GrammarBreakdown';
 
 mountStudyHelpModal();
 mountGuessWordGame();
@@ -15,4 +17,6 @@ mountSpeedQuizGame();
 mountSentenceGame();
 mountVocabularyOverview();
 mountMemoryCurve();
+mountSidebarRadicalsFilter(); // before WeakWords: the weak-words panel goes right after it
 mountWeakWords();
+mountGrammarBreakdown();
