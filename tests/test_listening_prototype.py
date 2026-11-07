@@ -113,7 +113,7 @@ def test_all_12_listening_exams():
 def test_integration_files():
     print("-> Checking web integration files...")
     index_html = (ROOT / "index.html").read_text(encoding="utf-8")
-    radicals_js = (ROOT / "assets/js/radicals.js").read_text(encoding="utf-8")
+    radicals_js = (ROOT / "src/islands/RadicalHub.jsx").read_text(encoding="utf-8")
     router_js = (ROOT / "assets/js/spa-router.js").read_text(encoding="utf-8")
     sw_js = (ROOT / "sw.js").read_text(encoding="utf-8")
 

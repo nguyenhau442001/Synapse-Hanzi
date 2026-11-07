@@ -886,7 +886,7 @@ class TestScreenMutualExclusion(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.levels_js = (REPO_ROOT / "assets" / "js" / "levels.js").read_text(encoding="utf-8")
-        cls.radicals_js = (REPO_ROOT / "assets" / "js" / "radicals.js").read_text(encoding="utf-8")
+        cls.radicals_js = (REPO_ROOT / "src" / "islands" / "RadicalHub.jsx").read_text(encoding="utf-8")
         cls.due_review_js = (REPO_ROOT / "src" / "islands" / "TodayReview.jsx").read_text(encoding="utf-8")
         cls.spa_router_js = (REPO_ROOT / "assets" / "js" / "spa-router.js").read_text(encoding="utf-8")
 

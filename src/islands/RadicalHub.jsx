@@ -1,39 +1,26 @@
-// Radical hub: primary/secondary tab switching, data loading, hub rendering.
-async function fetchJson(url) {
-  const res = await fetch(url);
-  if (!res.ok) throw new Error('fetch failed: ' + url);
-  return res.json();
-}
+// Radical (Bộ thủ) hub screen #screenRadicalHub: tab switcher (50 basic / 214 Kangxi),
+// group cards by stroke count with character previews and learning progress,
+// plus the primary tab router and skills menu navigation.
+// Preact port of the former assets/js/radicals.js with identical markup and behavior.
+import { render } from 'preact';
 
+/* global RADICAL_STROKE_COUNTS, RADICAL_GROUPS, radicalTab, radicalDataLoaded, radicalStrokeUrl, primaryTab,
+   radicalProgress, radicalProgressKey, radicalReturnTab, radicalGroupIndex, radicalWords, radicalOrder,
+   radicalFilteredOrder, radicalIdx, radicalCurrentFilter, radicalCurrentView, radicalOverviewQuery,
+   radicalOverviewStatus, radicalOverviewStroke, radicalOverviewItems, currentLevel,
+   setActiveStudyWord, startReadingAnalysis, GradedReading, ListeningPractice,
+   showReviewSetup, updateReviewRangeLabel, updateReviewMobileAuxBadge, renderTopicGrid,
+   startSentenceGame, startGuessWordGame, startSpeedQuizGame, abandonReviewSession, closeReviewBottomSheet,
+   syncHomeScreen, SpaRouter, buildRadicalCardArea, renderRadicalFilters, setRadicalViewMode, renderRadicalCard,
+   closeMobileStatsSheet */
+/* eslint-disable no-global-assign */
+
+let hubEl = null;
+let hubLoading = false;
+let hubError = false;
 let radicalDataLoadPromise = null;
 
-async function ensureRadicalDataLoaded() {
-  if (radicalDataLoaded) { renderRadicalHub(); return true; }
-  if (radicalDataLoadPromise) return radicalDataLoadPromise;
-  const hub = document.getElementById('radicalHub');
-  hub.innerHTML = '<div class="loading-text">Đang tải dữ liệu...</div>';
-  radicalDataLoadPromise = (async () => {
-    try {
-      const [basic50Groups, kangxi214Groups] = await Promise.all([
-        Promise.all(Array.from({ length: RADICAL_STROKE_COUNTS.basic50 }, (_, i) => fetchJson(radicalStrokeUrl('basic50', i + 1)))),
-        Promise.all(Array.from({ length: RADICAL_STROKE_COUNTS.kangxi214 }, (_, i) => fetchJson(radicalStrokeUrl('kangxi214', i + 1)))),
-      ]);
-      RADICAL_GROUPS.basic50 = basic50Groups;
-      RADICAL_GROUPS.kangxi214 = kangxi214Groups;
-      radicalDataLoaded = true;
-      renderRadicalHub();
-      return true;
-    } catch (e) {
-      hub.innerHTML = '<div class="error-text">Không thể tải dữ liệu. Vui lòng thử lại.</div>';
-      return false;
-    } finally {
-      radicalDataLoadPromise = null;
-    }
-  })();
-  return radicalDataLoadPromise;
-}
-
-const PRIMARY_TAB_SCREENS = {
+export const PRIMARY_TAB_SCREENS = {
   vocab: { tabId: 'primaryTabVocab', screenId: 'screenVocabHub' },
   radicals: { tabId: 'primaryTabRadicals', screenId: 'screenRadicalHub' },
   review: { tabId: 'primaryTabReview', screenId: 'screenReviewPicker' },
@@ -47,7 +34,52 @@ const PRIMARY_TAB_SCREENS = {
 
 let vocabSubTab = 'level';
 
-function setVocabSubTab(tab) {
+export async function fetchJson(url) {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error('fetch failed: ' + url);
+  return res.json();
+}
+
+export function rerender() {
+  if (hubEl) {
+    render(<RadicalHubComponent />, hubEl);
+  }
+}
+
+export async function ensureRadicalDataLoaded() {
+  if (radicalDataLoaded) {
+    renderRadicalHub();
+    return true;
+  }
+  if (radicalDataLoadPromise) return radicalDataLoadPromise;
+  hubLoading = true;
+  hubError = false;
+  rerender();
+  radicalDataLoadPromise = (async () => {
+    try {
+      const [basic50Groups, kangxi214Groups] = await Promise.all([
+        Promise.all(Array.from({ length: RADICAL_STROKE_COUNTS.basic50 }, (_, i) => fetchJson(radicalStrokeUrl('basic50', i + 1)))),
+        Promise.all(Array.from({ length: RADICAL_STROKE_COUNTS.kangxi214 }, (_, i) => fetchJson(radicalStrokeUrl('kangxi214', i + 1)))),
+      ]);
+      RADICAL_GROUPS.basic50 = basic50Groups;
+      RADICAL_GROUPS.kangxi214 = kangxi214Groups;
+      radicalDataLoaded = true;
+      hubLoading = false;
+      renderRadicalHub();
+      return true;
+    } catch (e) {
+      hubLoading = false;
+      hubError = true;
+      rerender();
+      return false;
+    } finally {
+      radicalDataLoadPromise = null;
+    }
+  })();
+  return radicalDataLoadPromise;
+}
+
+export function setVocabSubTab(tab) {
   vocabSubTab = tab;
   try { localStorage.setItem('hsk_vocab_subtab', tab); } catch (e) {}
   const tabLevel = document.getElementById('vocabSubTabLevel');
@@ -80,21 +112,10 @@ function setVocabSubTab(tab) {
   }
   const versionControls = document.getElementById('pickerVersionControls');
   if (versionControls) versionControls.hidden = tab !== 'level';
-  if (tab === 'topic') renderTopicGrid();
+  if (tab === 'topic' && typeof renderTopicGrid === 'function') renderTopicGrid();
 }
 
-try {
-  const savedVocabTab = localStorage.getItem('hsk_vocab_subtab');
-  if (savedVocabTab === 'topic') {
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', () => setVocabSubTab('topic'));
-    } else {
-      setVocabSubTab('topic');
-    }
-  }
-} catch (e) {}
-
-function setPrimaryTab(tab, options) {
+export function setPrimaryTab(tab, options) {
   const previousTab = primaryTab;
   primaryTab = tab;
   // Ensure non-tab study screens are hidden when switching primary tabs
@@ -156,7 +177,7 @@ function setPrimaryTab(tab, options) {
   if (dashboard) dashboard.style.display = tab === 'vocab' ? '' : 'none';
   const continueCard = document.getElementById('continueLearningCard');
   if (continueCard) continueCard.style.display = tab === 'vocab' ? '' : 'none';
-  if (tab !== 'vocab') setActiveStudyWord(null);
+  if (tab !== 'vocab' && typeof setActiveStudyWord === 'function') setActiveStudyWord(null);
   if (tab === 'radicals') ensureRadicalDataLoaded();
   if (tab === 'reading') {
     if (typeof startReadingAnalysis === 'function') startReadingAnalysis();
@@ -189,18 +210,18 @@ function setPrimaryTab(tab, options) {
     }
     if (typeof updateReviewMobileAuxBadge === 'function') updateReviewMobileAuxBadge();
   }
-  if (tab === 'vocab' && vocabSubTab === 'topic') renderTopicGrid();
-  if (tab === 'sentenceGame') startSentenceGame();
+  if (tab === 'vocab' && vocabSubTab === 'topic' && typeof renderTopicGrid === 'function') renderTopicGrid();
+  if (tab === 'sentenceGame' && typeof startSentenceGame === 'function') startSentenceGame();
   if (previousTab === 'sentenceGame' && tab !== 'sentenceGame') {
     document.body.classList.remove('sentence-game-focus');
   }
-  if (tab === 'guessWord') startGuessWordGame();
-  if (tab === 'speedQuiz') startSpeedQuizGame(options || {});
+  if (tab === 'guessWord' && typeof startGuessWordGame === 'function') startGuessWordGame();
+  if (tab === 'speedQuiz' && typeof startSpeedQuizGame === 'function') startSpeedQuizGame(options || {});
   if (previousTab === 'review' && tab !== 'review') {
     if (typeof abandonReviewSession === 'function') abandonReviewSession();
     if (typeof closeReviewBottomSheet === 'function') closeReviewBottomSheet();
   }
-  syncHomeScreen();
+  if (typeof syncHomeScreen === 'function') syncHomeScreen();
   // Reset scroll position to top and focus container/heading
   window.scrollTo({ top: 0, behavior: 'instant' });
   const workstationMiddle = document.getElementById('workstationMiddle');
@@ -221,7 +242,7 @@ function setPrimaryTab(tab, options) {
   }
 }
 
-async function openRadicalDirectory() {
+export async function openRadicalDirectory() {
   setPrimaryTab('radicals');
   const loaded = await ensureRadicalDataLoaded();
   if (!loaded || primaryTab !== 'radicals') return;
@@ -229,87 +250,29 @@ async function openRadicalDirectory() {
   openRadicalOverviewFromHub('kangxi214');
 }
 
-function setRadicalTab(tab) {
+export function setRadicalTab(tab) {
   radicalTab = tab;
-  const basicTab = document.getElementById('radicalTabBasic50');
-  const kangxiTab = document.getElementById('radicalTabKangxi214');
-  const basicPanel = document.getElementById('radicalBasic50Panel');
-  const kangxiPanel = document.getElementById('radicalKangxi214Panel');
-  if (!basicTab) return;
-  basicTab.classList.toggle('active', tab === 'basic50');
-  kangxiTab.classList.toggle('active', tab === 'kangxi214');
-  basicTab.setAttribute('aria-selected', String(tab === 'basic50'));
-  kangxiTab.setAttribute('aria-selected', String(tab === 'kangxi214'));
-  basicPanel.hidden = tab !== 'basic50';
-  kangxiPanel.hidden = tab !== 'kangxi214';
+  rerender();
 }
 
-function radicalKnownCount(items) {
-  return items.filter(item => radicalProgress[radicalProgressKey(item)] === 'known').length;
+export function radicalKnownCount(items) {
+  const getProgressKey = typeof window.radicalProgressKey === 'function' ? window.radicalProgressKey : radicalProgressKey;
+  return items.filter((item) => radicalProgress[getProgressKey(item)] === 'known').length;
 }
 
-function renderRadicalHub() {
-  const hub = document.getElementById('radicalHub');
-  hub.innerHTML = `
-    <div class="radical-tabs view-tabs" role="tablist" aria-label="Bộ Bộ thủ">
-      <button id="radicalTabBasic50" class="view-tab active" role="tab" aria-selected="true" onclick="setRadicalTab('basic50')">50 bộ cơ bản</button>
-      <button id="radicalTabKangxi214" class="view-tab" role="tab" aria-selected="false" onclick="setRadicalTab('kangxi214')">214 bộ Khang Hy</button>
-    </div>
-
-    <div id="radicalBasic50Panel" class="radical-panel">
-      <div class="radical-panel-header">
-        <div>
-          <h2>50 BỘ THỦ CƠ BẢN</h2>
-          <p class="radical-panel-subtitle">Dành cho người mới bắt đầu · phân loại từ 1–10 nét</p>
-        </div>
-        <button type="button" class="radical-overview-btn" onclick="openRadicalOverviewFromHub('basic50')">📋 Tổng quan 50 bộ</button>
-      </div>
-      <div class="radical-group-grid" id="radicalGroupGridBasic50"></div>
-    </div>
-
-    <div id="radicalKangxi214Panel" class="radical-panel" hidden>
-      <div class="radical-panel-header">
-        <div>
-          <h2>214 BỘ THỦ KHANG HY</h2>
-          <p class="radical-panel-subtitle">Đầy đủ 214 bộ · phân loại từ 1–17 nét</p>
-        </div>
-        <button type="button" class="radical-overview-btn" onclick="openRadicalOverviewFromHub('kangxi214')">📋 Tổng quan 214 bộ</button>
-      </div>
-      <div class="radical-group-grid" id="radicalGroupGridKangxi214"></div>
-    </div>
-  `;
-  setRadicalTab(radicalTab);
-  renderRadicalHubProgress();
+export function renderRadicalHub() {
+  rerender();
 }
 
-function renderRadicalGroupGrid(set, gridId) {
-  const grid = document.getElementById(gridId);
-  if (!grid) return;
-  grid.innerHTML = RADICAL_GROUPS[set].map((group, i) => {
-    const strokeNum = i + 1;
-    // Keep previews identical between both tabs for the shared 1–10 stroke groups.
-    // The basic set is the canonical preview; group counts and study decks stay separate.
-    const previewGroup = RADICAL_GROUPS.basic50[i]?.length
-      ? RADICAL_GROUPS.basic50[i]
-      : group;
-    const preview = previewGroup.slice(0, 4).map(item => item.radical).join(' ');
-    const known = radicalKnownCount(group);
-    return `
-      <button class="radical-group-card" type="button" onclick="startRadicalStudy('${set}', ${i})">
-        <div class="radical-group-stroke">${strokeNum} NÉT</div>
-        <div class="radical-group-preview">${preview}</div>
-        <div class="radical-group-count">${group.length} bộ</div>
-        <div class="radical-group-known">${known} / ${group.length} nhớ</div>
-      </button>`;
-  }).join('');
+export function renderRadicalGroupGrid(set, gridId) {
+  rerender();
 }
 
-function renderRadicalHubProgress() {
-  renderRadicalGroupGrid('basic50', 'radicalGroupGridBasic50');
-  renderRadicalGroupGrid('kangxi214', 'radicalGroupGridKangxi214');
+export function renderRadicalHubProgress() {
+  rerender();
 }
 
-function buildRadicalOverviewItems(mode) {
+export function buildRadicalOverviewItems(mode) {
   const groups = RADICAL_GROUPS[mode];
   const items = [];
   groups.forEach((group, groupIndex) => {
@@ -320,7 +283,7 @@ function buildRadicalOverviewItems(mode) {
   return items;
 }
 
-function startRadicalStudy(mode, groupIndex, options) {
+export function startRadicalStudy(mode, groupIndex, options) {
   const openOverview = !!(options && options.overview);
   radicalReturnTab = mode;
   radicalGroupIndex = groupIndex;
@@ -356,11 +319,11 @@ function startRadicalStudy(mode, groupIndex, options) {
   renderRadicalCard();
 }
 
-function openRadicalOverviewFromHub(mode) {
+export function openRadicalOverviewFromHub(mode) {
   startRadicalStudy(mode, 0, { overview: true });
 }
 
-function goBackToRadicalHub() {
+export function goBackToRadicalHub() {
   document.body.classList.remove('study-mode', 'flashcard-study-mode', 'today-reviews-focus-mode');
   document.getElementById('screenRadicalCards').style.display = 'none';
   const screenCards = document.getElementById('screenCards');
@@ -377,30 +340,7 @@ function goBackToRadicalHub() {
   }
 }
 
-// Close primary tools & skills menu on click outside or item selection
-document.addEventListener('click', event => {
-  const menu = document.getElementById('primaryGamesMenu');
-  if (!menu || !menu.open) return;
-  if (!menu.contains(event.target) || event.target.closest('.primary-games-menu-panel button')) {
-    menu.open = false;
-  }
-});
-
-// Close primary tools & skills menu on Escape and return focus to trigger
-document.addEventListener('keydown', event => {
-  if (event.key === 'Escape' || event.key === 'Esc') {
-    const menu = document.getElementById('primaryGamesMenu');
-    if (menu && menu.open) {
-      event.preventDefault();
-      menu.open = false;
-      const trigger = menu.querySelector('.primary-menu-trigger');
-      if (trigger) trigger.focus();
-    }
-  }
-});
-
-// Keyboard arrow navigation for primary skills menu
-(function initPrimaryMenuKeyboard() {
+export function initPrimaryMenuKeyboard() {
   function handleMenuKeydown(event) {
     const menu = document.getElementById('primaryGamesMenu');
     if (!menu) return;
@@ -452,10 +392,9 @@ document.addEventListener('keydown', event => {
       if (el) el.addEventListener('keydown', handleMenuKeydown);
     });
   }
-})();
+}
 
-// Sync aria-expanded state on toggle
-(function initPrimaryMenuAria() {
+export function initPrimaryMenuAria() {
   function bindToggle() {
     const menu = document.getElementById('primaryGamesMenu');
     if (menu) {
@@ -472,5 +411,170 @@ document.addEventListener('keydown', event => {
   } else {
     bindToggle();
   }
-})();
+}
 
+function GroupCards({ set }) {
+  const groups = RADICAL_GROUPS[set] || [];
+  return (
+    <>
+      {groups.map((group, i) => {
+        const strokeNum = i + 1;
+        const previewGroup = RADICAL_GROUPS.basic50[i]?.length
+          ? RADICAL_GROUPS.basic50[i]
+          : group;
+        const preview = previewGroup.slice(0, 4).map((item) => item.radical).join(' ');
+        const known = radicalKnownCount(group);
+        return (
+          <button
+            key={`${set}-${i}`}
+            class="radical-group-card"
+            type="button"
+            onClick={() => startRadicalStudy(set, i)}
+          >
+            <div class="radical-group-stroke">{`${strokeNum} NÉT`}</div>
+            <div class="radical-group-preview">{preview}</div>
+            <div class="radical-group-count">{`${group.length} bộ`}</div>
+            <div class="radical-group-known">{`${known} / ${group.length} nhớ`}</div>
+          </button>
+        );
+      })}
+    </>
+  );
+}
+
+function RadicalHubComponent() {
+  if (hubLoading) {
+    return <div class="loading-text">Đang tải dữ liệu...</div>;
+  }
+  if (hubError) {
+    return <div class="error-text">Không thể tải dữ liệu. Vui lòng thử lại.</div>;
+  }
+  if (!radicalDataLoaded) {
+    return null;
+  }
+  return (
+    <>
+      <div class="radical-tabs view-tabs" role="tablist" aria-label="Bộ Bộ thủ">
+        <button
+          id="radicalTabBasic50"
+          class={`view-tab${radicalTab === 'basic50' ? ' active' : ''}`}
+          role="tab"
+          aria-selected={String(radicalTab === 'basic50')}
+          onClick={() => setRadicalTab('basic50')}
+        >
+          50 bộ cơ bản
+        </button>{' '}
+        <button
+          id="radicalTabKangxi214"
+          class={`view-tab${radicalTab === 'kangxi214' ? ' active' : ''}`}
+          role="tab"
+          aria-selected={String(radicalTab === 'kangxi214')}
+          onClick={() => setRadicalTab('kangxi214')}
+        >
+          214 bộ Khang Hy
+        </button>
+      </div>
+
+      <div id="radicalBasic50Panel" class="radical-panel" hidden={radicalTab !== 'basic50'}>
+        <div class="radical-panel-header">
+          <div>
+            <h2>50 BỘ THỦ CƠ BẢN</h2>
+            <p class="radical-panel-subtitle">Dành cho người mới bắt đầu · phân loại từ 1–10 nét</p>
+          </div>
+          <button type="button" class="radical-overview-btn" onClick={() => openRadicalOverviewFromHub('basic50')}>
+            📋 Tổng quan 50 bộ
+          </button>
+        </div>
+        <div class="radical-group-grid" id="radicalGroupGridBasic50">
+          <GroupCards set="basic50" />
+        </div>
+      </div>
+
+      <div id="radicalKangxi214Panel" class="radical-panel" hidden={radicalTab !== 'kangxi214'}>
+        <div class="radical-panel-header">
+          <div>
+            <h2>214 BỘ THỦ KHANG HY</h2>
+            <p class="radical-panel-subtitle">Đầy đủ 214 bộ · phân loại từ 1–17 nét</p>
+          </div>
+          <button type="button" class="radical-overview-btn" onClick={() => openRadicalOverviewFromHub('kangxi214')}>
+            📋 Tổng quan 214 bộ
+          </button>
+        </div>
+        <div class="radical-group-grid" id="radicalGroupGridKangxi214">
+          <GroupCards set="kangxi214" />
+        </div>
+      </div>
+    </>
+  );
+}
+
+export function mountRadicalHub() {
+  Object.assign(window, {
+    fetchJson,
+    ensureRadicalDataLoaded,
+    setVocabSubTab,
+    setPrimaryTab,
+    openRadicalDirectory,
+    setRadicalTab,
+    radicalKnownCount,
+    renderRadicalHub,
+    renderRadicalGroupGrid,
+    renderRadicalHubProgress,
+    buildRadicalOverviewItems,
+    startRadicalStudy,
+    openRadicalOverviewFromHub,
+    goBackToRadicalHub,
+    PRIMARY_TAB_SCREENS,
+    initPrimaryMenuKeyboard,
+    initPrimaryMenuAria,
+  });
+
+  try {
+    Object.defineProperty(window, 'vocabSubTab', {
+      get: () => vocabSubTab,
+      set: (v) => { vocabSubTab = v; },
+      configurable: true,
+    });
+  } catch (e) {}
+
+  // Close primary tools & skills menu on click outside or item selection
+  document.addEventListener('click', (event) => {
+    const menu = document.getElementById('primaryGamesMenu');
+    if (!menu || !menu.open) return;
+    if (!menu.contains(event.target) || event.target.closest('.primary-games-menu-panel button')) {
+      menu.open = false;
+    }
+  });
+
+  // Close primary tools & skills menu on Escape and return focus to trigger
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' || event.key === 'Esc') {
+      const menu = document.getElementById('primaryGamesMenu');
+      if (menu && menu.open) {
+        event.preventDefault();
+        menu.open = false;
+        const trigger = menu.querySelector('.primary-menu-trigger');
+        if (trigger) trigger.focus();
+      }
+    }
+  });
+
+  initPrimaryMenuKeyboard();
+  initPrimaryMenuAria();
+
+  try {
+    const savedVocabTab = localStorage.getItem('hsk_vocab_subtab');
+    if (savedVocabTab === 'topic') {
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => setVocabSubTab('topic'));
+      } else {
+        setVocabSubTab('topic');
+      }
+    }
+  } catch (e) {}
+
+  hubEl = document.getElementById('radicalHub');
+  if (radicalDataLoaded) {
+    rerender();
+  }
+}

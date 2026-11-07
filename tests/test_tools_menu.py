@@ -89,7 +89,7 @@ def test_tools_menu_skill_grouping_and_order():
     assert "openStudyHelpModal()" in help_items[0]["onclick"]
 
 def test_keyboard_navigation_and_events():
-    radicals_js = (ROOT / "assets/js/radicals.js").read_text(encoding="utf-8")
+    radicals_js = (ROOT / "src/islands/RadicalHub.jsx").read_text(encoding="utf-8")
     assert "initPrimaryMenuKeyboard" in radicals_js
     assert "ArrowDown" in radicals_js
     assert "ArrowUp" in radicals_js
