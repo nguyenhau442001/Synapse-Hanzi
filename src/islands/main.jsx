@@ -6,9 +6,11 @@ import { mountGuessWordGame } from './GuessWordGame';
 import { mountSpeedQuizGame } from './SpeedQuizGame';
 import { mountSentenceGame } from './SentenceGame';
 import { mountVocabularyOverview } from './VocabularyOverview';
+import { mountMemoryCurve } from './MemoryCurve';
 
 mountStudyHelpModal();
 mountGuessWordGame();
 mountSpeedQuizGame();
 mountSentenceGame();
 mountVocabularyOverview();
+mountMemoryCurve();
