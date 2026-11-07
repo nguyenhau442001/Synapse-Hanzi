@@ -12,6 +12,7 @@ import { mountSidebarSearch } from './SidebarSearch';
 import { mountSidebarRadicalsFilter } from './SidebarRadicalsFilter';
 import { mountWeakWords } from './WeakWords';
 import { mountSidebarTabs } from './SidebarTabs';
+import { mountRadicalsState } from './radicalsState';
 import { mountStrokeCanvas } from './StrokeCanvas';
 import { mountWordCompanion } from './WordCompanion';
 import { mountGrammarBreakdown } from './GrammarBreakdown';
@@ -35,6 +36,7 @@ import { mountTopicGrid } from './TopicGrid';
 import { mountBackupSync } from './BackupSync';
 import { mountThemeManager } from './ThemeManager';
 import { mountSpeechAudio } from './SpeechAudio';
+import { mountAppBootstrap } from './AppBootstrap';
 
 mountAmbientBackground();
 mountStudyHelpModal();
@@ -44,6 +46,7 @@ mountSentenceGame();
 mountVocabularyOverview();
 mountMemoryCurve();
 mountSidebarSearch(); // first: the dock panels below are placed relative to the search box
+mountRadicalsState(); // radical state variables initialized before sidebar filter & radical hub
 mountSidebarRadicalsFilter(); // before WeakWords: the weak-words panel goes right after it
 mountWeakWords();
 mountHanziDecomposition(); // before SidebarTabs: the initial tab may render the radicals panel
@@ -70,3 +73,4 @@ mountTopicGrid();
 mountBackupSync();
 mountThemeManager();
 mountSpeechAudio();
+mountAppBootstrap();
