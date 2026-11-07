@@ -16,6 +16,7 @@ export default defineConfig({
     emptyOutDir: true,
     copyPublicDir: false,
     minify: true,
+    target: 'es2020',
     rolldownOptions: { output: { minify: true } },
     lib: {
       entry: 'src/islands/main.jsx',

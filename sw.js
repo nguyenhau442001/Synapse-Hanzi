@@ -8,7 +8,6 @@ const PRECACHE_ASSET_URLS = [
   INDEX_SHELL_URL,
   ROOT_SHELL_URL,
   './assets/flashcards.css?v=' + APP_VERSION,
-  './assets/css/listening-practice.css?v=' + APP_VERSION,
   './assets/js/hanviet-dict.js?v=' + APP_VERSION,
   './assets/js/preact/islands.js?v=' + APP_VERSION,
   './assets/js/fast-review-worker.js?v=' + APP_VERSION,

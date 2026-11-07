@@ -120,7 +120,8 @@ def test_integration_files():
     # index.html
     assert "screenListeningPractice" in index_html, "screenListeningPractice missing from index.html"
     assert "primaryTabListening" in index_html, "primaryTabListening button missing from index.html"
-    assert "assets/css/listening-practice.css" in index_html, "listening CSS link missing from index.html"
+    assert "assets/flashcards.css" in index_html, "flashcards CSS bundle link missing from index.html"
+    assert "--listening-canvas" in (ROOT / "assets/flashcards.css").read_text(encoding="utf-8")
     assert "assets/js/preact/islands.js" in index_html, "Preact islands bundle (ListeningPractice.jsx) missing from index.html"
     assert "mountListeningPractice()" in (ROOT / "src/islands/main.jsx").read_text(encoding="utf-8")
 
@@ -134,7 +135,7 @@ def test_integration_files():
     assert "tab === 'listening'" in router_js
 
     # sw.js
-    assert "listening-practice.css" in sw_js
+    assert "flashcards.css" in sw_js
     assert "preact/islands.js" in sw_js
 
     # non-regression on reading
