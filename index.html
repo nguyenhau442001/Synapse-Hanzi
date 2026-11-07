@@ -69,7 +69,7 @@
           <span class="mobile-dock-sheet-icon" aria-hidden="true">📊</span>
           <span>Thống kê &amp; Hoạt động học tập</span>
         </div>
-        <button type="button" id="mobileStatsClose" class="mobile-dock-close" aria-label="Đóng" onclick="closeMobileStatsSheet()">✕</button>
+        <button type="button" id="mobileStatsClose" class="mobile-dock-close" aria-label="Đóng">✕</button>
       </div>
       <div id="mobileStatsDialogBody" class="mobile-stats-dialog-body"></div>
     </dialog>
@@ -102,7 +102,7 @@
     <div class="app-header-actions">
       <!-- Cluster 1: Streak / Gamification -->
       <div class="header-cluster header-streak-cluster">
-        <button type="button" id="headerStreakBadge" class="header-streak-badge" onclick="showHistoryModal()" aria-label="Xem lịch sử học tập" title="Chuỗi ngày học liên tục (Lịch sử học tập)">
+        <button type="button" id="headerStreakBadge" class="header-streak-badge" aria-label="Xem lịch sử học tập" title="Chuỗi ngày học liên tục (Lịch sử học tập)">
           <span class="header-streak-icon" aria-hidden="true">🔥</span>
           <span class="header-streak-text" id="headerStreakText">0 ngày</span>
         </button>
@@ -112,11 +112,11 @@
 
       <!-- Cluster 2: Quick Review Triggers -->
       <div class="header-cluster header-review-cluster" role="group" aria-label="Truy cập nhanh từ vựng">
-        <button type="button" id="headerSavedWordsBtn" class="header-action-badge header-badge-saved" onclick="openQuickAccessDrawer('saved')" title="Từ khó đã đánh dấu (Sổ từ)" aria-label="Từ khó đã đánh dấu">
+        <button type="button" id="headerSavedWordsBtn" class="header-action-badge header-badge-saved" title="Từ khó đã đánh dấu (Sổ từ)" aria-label="Từ khó đã đánh dấu">
           <span class="header-badge-icon" aria-hidden="true">🔖</span>
           <span class="header-badge-count" id="headerSavedCount">0</span>
         </button>
-        <button type="button" id="headerUrgentReviewBtn" class="header-action-badge header-badge-urgent" onclick="openQuickAccessDrawer('urgent')" title="Từ cần ôn gấp" aria-label="Từ cần ôn gấp">
+        <button type="button" id="headerUrgentReviewBtn" class="header-action-badge header-badge-urgent" title="Từ cần ôn gấp" aria-label="Từ cần ôn gấp">
           <span class="header-badge-icon" aria-hidden="true">⚡</span>
           <span class="header-badge-count" id="headerUrgentCount">0</span>
         </button>
@@ -126,11 +126,11 @@
 
       <!-- Cluster 3: System Utilities (Ghost Minimal Icons) -->
       <div class="header-cluster header-utility-cluster" role="group" aria-label="Công cụ hệ thống">
-        <button type="button" id="headerHelpBtn" class="header-help-btn" onclick="openStudyHelpModal()" title="Hướng dẫn &amp; Trợ giúp học tập (?)" aria-label="Hướng dẫn học tập và phím tắt">
+        <button type="button" id="headerHelpBtn" class="header-help-btn" title="Hướng dẫn &amp; Trợ giúp học tập (?)" aria-label="Hướng dẫn học tập và phím tắt">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
         </button>
-        <button id="themeToggle" class="theme-toggle-btn" onclick="toggleTheme()" title="Đổi giao diện Sáng / Tối" aria-label="Đổi giao diện Sáng / Tối">🌙</button>
-        <button type="button" id="headerProfileBtn" class="header-profile-btn" onclick="showHistoryModal()" title="Hồ sơ &amp; Thống kê học tập" aria-label="Hồ sơ học viên">
+        <button id="themeToggle" class="theme-toggle-btn" title="Đổi giao diện Sáng / Tối" aria-label="Đổi giao diện Sáng / Tối">🌙</button>
+        <button type="button" id="headerProfileBtn" class="header-profile-btn" title="Hồ sơ &amp; Thống kê học tập" aria-label="Hồ sơ học viên">
           <span class="header-avatar-icon" aria-hidden="true">👤</span>
         </button>
       </div>
@@ -151,8 +151,8 @@
       <div class="learning-title-row">
         <h2 id="learningDashboardTitle">Mỗi ngày một chút, nhớ lâu hơn</h2>
         <div class="goal-settings-wrap" title="Sửa mục tiêu học mỗi ngày">
-          <button class="goal-settings-btn" type="button" aria-label="Sửa mục tiêu học mỗi ngày" onclick="focusDailyGoalSelector()">⚙️</button>
-          <select id="dailyGoalSelect" class="goal-settings-select" aria-label="Mục tiêu số từ học mỗi ngày" onchange="updateDailyStudyGoal(this.value)">
+          <button class="goal-settings-btn" type="button" aria-label="Sửa mục tiêu học mỗi ngày">⚙️</button>
+          <select id="dailyGoalSelect" class="goal-settings-select" aria-label="Mục tiêu số từ học mỗi ngày">
             <option value="10">10 từ / ngày</option>
             <option value="20">20 từ / ngày</option>
             <option value="30">30 từ / ngày</option>
@@ -183,12 +183,12 @@
   <nav class="primary-tabs" id="primaryTabs" aria-label="Chế độ học">
     <div class="primary-tabs-group" role="tablist" aria-label="Chế độ học chính">
       <button id="primaryTabVocab" class="primary-tab active" type="button" role="tab" aria-pressed="true"
-        aria-controls="screenVocabHub" onclick="setPrimaryTab('vocab')">
+        aria-controls="screenVocabHub" data-tab="vocab">
         <svg class="nav-tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
         <span>Từ vựng</span>
       </button>
       <button id="primaryTabReview" class="primary-tab" type="button" role="tab" aria-pressed="false"
-        aria-controls="screenReviewPicker" onclick="setPrimaryTab('review')">
+        aria-controls="screenReviewPicker" data-tab="review">
         <svg class="nav-tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
         <span>Ôn nhanh</span>
       </button>
@@ -197,7 +197,7 @@
       <label class="picker-version-control" id="pickerVersionControls" for="pickerVersionSelect">
         <span class="picker-version-label">Chuẩn HSK</span>
         <div class="picker-version-select-wrap">
-          <select id="pickerVersionSelect" aria-label="Chuẩn HSK" onchange="setPickerVersion(this.value)">
+          <select id="pickerVersionSelect" aria-label="Chuẩn HSK">
             <option value="3.0" selected>HSK 3.0</option>
             <option value="2.0">HSK 2.0 (Legacy)</option>
           </select>
@@ -214,7 +214,7 @@
           <!-- 1. Nghe -->
           <div class="primary-menu-section-title" role="presentation">Nghe</div>
           <button id="primaryTabListening" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
-            aria-controls="screenListeningPractice" onclick="setPrimaryTab('listening')" aria-label="Luyện nghe HSK4">
+            aria-controls="screenListeningPractice" data-tab="listening" aria-label="Luyện nghe HSK4">
             <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
             <span>Luyện nghe HSK4</span>
           </button>
@@ -222,12 +222,12 @@
           <!-- 2. Đọc -->
           <div class="primary-menu-section-title" role="presentation">Đọc</div>
           <button id="primaryTabGradedReading" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
-            aria-controls="screenGradedReading" onclick="setPrimaryTab('gradedReading')" aria-label="Bài đọc phân cấp">
+            aria-controls="screenGradedReading" data-tab="gradedReading" aria-label="Bài đọc phân cấp">
             <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
             <span>Bài đọc phân cấp</span>
           </button>
           <button id="primaryTabReading" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
-            aria-controls="screenReadingAnalysis" onclick="setPrimaryTab('reading')" aria-label="Đọc hiểu HSK4">
+            aria-controls="screenReadingAnalysis" data-tab="reading" aria-label="Đọc hiểu HSK4">
             <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
             <span>Đọc hiểu HSK4</span>
           </button>
@@ -235,12 +235,12 @@
           <!-- 3. Viết -->
           <div class="primary-menu-section-title" role="presentation">Viết</div>
           <button id="primaryTabSentenceGame" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
-            aria-controls="screenSentenceGame" onclick="setPrimaryTab('sentenceGame')" aria-label="Xếp câu HSK4">
+            aria-controls="screenSentenceGame" data-tab="sentenceGame" aria-label="Xếp câu HSK4">
             <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19.5 14.5A2.5 2.5 0 0 0 22 12a2.5 2.5 0 0 0-2.5-2.5v-4a2 2 0 0 0-2-2h-4a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0-2.5-2.5h-4a2 2 0 0 0-2 2v4A2.5 2.5 0 0 0 2 12a2.5 2.5 0 0 0 2.5 2.5v4a2 2 0 0 0 2 2h4a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0 2.5 2.5h4a2 2 0 0 0 2-2v-4z"/></svg>
             <span>Xếp câu HSK4</span>
           </button>
           <button id="primaryTabSpeedQuiz" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
-            aria-controls="screenSpeedQuiz" onclick="setPrimaryTab('speedQuiz')" aria-label="Điền từ">
+            aria-controls="screenSpeedQuiz" data-tab="speedQuiz" aria-label="Điền từ">
             <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 5-3-3L3 14v4h4L18 5z"/><line x1="14" x2="17" y1="2" y2="5"/></svg>
             <span>Điền từ</span>
           </button>
@@ -250,24 +250,24 @@
           <!-- 5. Từ vựng & chữ Hán -->
           <div class="primary-menu-section-title" role="presentation">Từ vựng &amp; chữ Hán</div>
           <button id="primaryTabGuessWord" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
-            aria-controls="screenGuessWord" onclick="setPrimaryTab('guessWord')" aria-label="Đuổi hình bắt chữ">
+            aria-controls="screenGuessWord" data-tab="guessWord" aria-label="Đuổi hình bắt chữ">
             <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
             <span>Đuổi hình bắt chữ</span>
           </button>
           <button id="primaryTabRadicals" class="primary-tab" type="button" role="menuitem" aria-pressed="false"
-            aria-controls="screenRadicalHub" onclick="setPrimaryTab('radicals')" aria-label="Bộ thủ">
+            aria-controls="screenRadicalHub" data-tab="radicals" aria-label="Bộ thủ">
             <span class="nav-tab-glyph" aria-hidden="true">部</span>
             <span>Bộ thủ</span>
           </button>
-          <button class="primary-tab primary-menu-radical-lookup" type="button" role="menuitem"
-            onclick="openRadicalDirectory()" aria-label="Tra cứu 214 bộ thủ">
+          <button class="primary-tab primary-menu-radical-lookup" id="primaryMenuRadicalLookup" type="button" role="menuitem"
+            data-tab="radicalLookup" aria-label="Tra cứu 214 bộ thủ">
             <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
             <span>Tra cứu 214 bộ thủ</span>
           </button>
 
           <!-- 6. Trợ giúp -->
           <div class="primary-menu-section-title" role="presentation">Trợ giúp</div>
-          <button class="primary-tab" type="button" role="menuitem" onclick="openStudyHelpModal()" aria-label="Hướng dẫn &amp; Phím tắt">
+          <button class="primary-tab" id="primaryMenuHelpBtn" type="button" role="menuitem" data-tab="help" aria-label="Hướng dẫn &amp; Phím tắt">
             <svg class="nav-tab-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
             <span>Hướng dẫn &amp; Phím tắt</span>
           </button>
@@ -281,9 +281,9 @@
     <div class="picker-controls" id="pickerControls">
       <div class="view-tabs" role="tablist" aria-label="Loại từ vựng">
         <button id="vocabSubTabLevel" class="view-tab active" role="tab" aria-selected="true"
-          aria-controls="screenPicker" onclick="setVocabSubTab('level')">Theo cấp độ</button>
+          aria-controls="screenPicker">Theo cấp độ</button>
         <button id="vocabSubTabTopic" class="view-tab" role="tab" aria-selected="false"
-          aria-controls="screenTopicPicker" onclick="setVocabSubTab('topic')">Theo chủ đề</button>
+          aria-controls="screenTopicPicker">Theo chủ đề</button>
       </div>
     </div>
     <div id="screenPicker">
@@ -448,19 +448,19 @@
           <h2 id="quickQuizTitle">Thử thách 1 phút</h2>
           <p>5 từ ngẫu nhiên trong 1 phút.</p>
         </div>
-        <button class="dashboard-primary-btn" type="button" onclick="setPrimaryTab('speedQuiz', { roundLimit: 5 })">Kiểm tra ngay <span aria-hidden="true">→</span></button>
+        <button id="dashboardQuickQuizBtn" class="dashboard-primary-btn" type="button">Kiểm tra ngay <span aria-hidden="true">→</span></button>
       </section>
 
       <section class="featured-topics" aria-labelledby="featuredTopicsTitle">
         <div class="featured-topics-heading">
           <div><span class="dashboard-kicker">HỌC THEO NGỮ CẢNH</span><h2 id="featuredTopicsTitle">Chủ đề nổi bật</h2></div>
-          <button type="button" class="featured-topic-more" onclick="setVocabSubTab('topic')">Xem chủ đề →</button>
+          <button type="button" class="featured-topic-more">Xem chủ đề →</button>
         </div>
         <div class="featured-topic-list" aria-label="Một số chủ đề học phổ biến">
-          <button type="button" class="featured-topic-pill" onclick="setVocabSubTab('topic')"><span aria-hidden="true">🍜</span> Ẩm thực</button>
-          <button type="button" class="featured-topic-pill" onclick="setVocabSubTab('topic')"><span aria-hidden="true">✈️</span> Du lịch</button>
-          <button type="button" class="featured-topic-pill" onclick="setVocabSubTab('topic')"><span aria-hidden="true">💼</span> Công sở</button>
-          <button type="button" class="featured-topic-pill" onclick="setVocabSubTab('topic')"><span aria-hidden="true">🛍️</span> Mua sắm</button>
+          <button type="button" class="featured-topic-pill"><span aria-hidden="true">🍜</span> Ẩm thực</button>
+          <button type="button" class="featured-topic-pill"><span aria-hidden="true">✈️</span> Du lịch</button>
+          <button type="button" class="featured-topic-pill"><span aria-hidden="true">💼</span> Công sở</button>
+          <button type="button" class="featured-topic-pill"><span aria-hidden="true">🛍️</span> Mua sắm</button>
         </div>
       </section>
     </div>
@@ -505,18 +505,18 @@
   <div id="screenCards" style="display:none">
     <div class="study-view-topbar">
       <div class="study-view-topbar-left">
-        <button class="back-btn study-back-btn" onclick="SpaRouter.navigateBack()" title="Quay về trang chủ (Esc)" aria-label="Quay về trang chủ">
+        <button class="back-btn study-back-btn" title="Quay về trang chủ (Esc)" aria-label="Quay về trang chủ">
           <span class="back-arrow" aria-hidden="true">←</span>
           <span class="study-back-text" id="studyBackBtnText">Quay về trang chủ</span>
         </button>
         <!-- Accessible hidden tab references for backward compatibility with router/overview scripts -->
         <div class="view-tabs" role="tablist" aria-label="Chế độ xem" style="display:none" hidden>
           <button id="flashcardTab" class="view-tab active" role="tab" aria-selected="true"
-            aria-controls="studyView" onclick="setViewMode('cards')">
+            aria-controls="studyView">
             <span>Thẻ</span>
           </button>
           <button id="overviewTab" class="view-tab" role="tab" aria-selected="false"
-            aria-controls="overviewView" onclick="setViewMode('overview')">
+            aria-controls="overviewView">
             <span>Tổng quan</span>
           </button>
         </div>
@@ -533,11 +533,11 @@
       </div>
 
       <div class="study-view-topbar-actions">
-        <button type="button" class="study-drawer-btn study-theme-toggle-btn" onclick="toggleTheme()" title="Đổi giao diện Sáng / Tối" aria-label="Đổi giao diện Sáng / Tối">
+        <button type="button" class="study-drawer-btn study-theme-toggle-btn" title="Đổi giao diện Sáng / Tối" aria-label="Đổi giao diện Sáng / Tối">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
         </button>
         <div class="study-header-menu-wrap" id="studyHeaderMenuWrap">
-          <button type="button" class="study-drawer-btn study-header-more-btn" id="studyHeaderMoreBtn" onclick="toggleStudyHeaderMenu(event)" title="Tùy chọn khác" aria-haspopup="menu" aria-expanded="false" aria-label="Menu tùy chọn">
+          <button type="button" class="study-drawer-btn study-header-more-btn" id="studyHeaderMoreBtn" title="Tùy chọn khác" aria-haspopup="menu" aria-expanded="false" aria-label="Menu tùy chọn">
             <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <circle cx="5" cy="12" r="2.2"/>
               <circle cx="12" cy="12" r="2.2"/>
@@ -545,23 +545,23 @@
             </svg>
           </button>
           <div class="study-header-dropdown" id="studyHeaderDropdown" role="menu" hidden>
-            <button type="button" class="study-dropdown-item" id="headerMenuOverview" onclick="setViewMode('overview'); closeStudyHeaderMenu();" role="menuitem">
+            <button type="button" class="study-dropdown-item" id="headerMenuOverview" role="menuitem">
               <span class="dropdown-item-icon">📋</span>
               <span class="dropdown-item-label">Tổng quan danh sách từ</span>
             </button>
-            <button type="button" class="study-dropdown-item" id="studyWritingToggleBtn" onclick="toggleStudyWritingPanel(true); closeStudyHeaderMenu();" role="menuitem">
+            <button type="button" class="study-dropdown-item" id="studyWritingToggleBtn" role="menuitem">
               <span class="dropdown-item-icon">✍️</span>
               <span class="dropdown-item-label">Luyện viết chữ Hán</span>
             </button>
-            <button type="button" class="study-dropdown-item" id="studyHelpToggleBtn" onclick="openStudyHelpModal(); closeStudyHeaderMenu();" role="menuitem">
+            <button type="button" class="study-dropdown-item" id="studyHelpToggleBtn" role="menuitem">
               <span class="dropdown-item-icon">❓</span>
               <span class="dropdown-item-label">Hướng dẫn &amp; phím tắt</span>
             </button>
-            <button type="button" class="study-dropdown-item" id="headerMenuTransfer" onclick="toggleTransferPanel(true); closeStudyHeaderMenu();" role="menuitem">
+            <button type="button" class="study-dropdown-item" id="headerMenuTransfer" role="menuitem">
               <span class="dropdown-item-icon">💾</span>
               <span class="dropdown-item-label">Sao lưu tiến trình</span>
             </button>
-            <button type="button" class="study-dropdown-item study-dropdown-danger" id="headerMenuReset" onclick="resetProgress(); closeStudyHeaderMenu();" role="menuitem">
+            <button type="button" class="study-dropdown-item study-dropdown-danger" id="headerMenuReset" role="menuitem">
               <span class="dropdown-item-icon">↻</span>
               <span class="dropdown-item-label">Học lại cấp độ này</span>
             </button>
@@ -570,19 +570,19 @@
       </div>
     </div>
 
-    <div class="study-drawer-backdrop" id="studyDrawerBackdrop" onclick="closeAllStudyDrawers()"></div>
+    <div class="study-drawer-backdrop" id="studyDrawerBackdrop"></div>
 
     <div id="studyView" role="tabpanel" aria-labelledby="flashcardTab">
       <div class="filter-row" id="filterRow"></div>
 
-      <dialog id="studyFilterDialog" class="mobile-dock-dialog study-filter-dialog" onclick="if (event.target === this) this.close()">
+      <dialog id="studyFilterDialog" class="mobile-dock-dialog study-filter-dialog">
         <div class="mobile-dock-sheet-handle" aria-hidden="true"></div>
         <div class="mobile-dock-sheet-header">
           <div class="mobile-dock-sheet-title">
             <span class="mobile-dock-sheet-icon" aria-hidden="true">🏷️</span>
             <span>Lọc danh sách thẻ</span>
           </div>
-          <button type="button" class="mobile-dock-close" onclick="closeStudyFilterSheet()" aria-label="Đóng">✕</button>
+          <button type="button" class="mobile-dock-close" aria-label="Đóng">✕</button>
         </div>
         <div class="study-filter-sheet-body" id="studyFilterSheetBody"></div>
       </dialog>
@@ -590,22 +590,22 @@
       <div class="transfer-panel" id="transferPanel" hidden>
         <div class="transfer-panel-header">
           <div class="transfer-panel-title">Sao lưu và chuyển thiết bị</div>
-          <button type="button" class="transfer-panel-close-btn" onclick="toggleTransferPanel(false)" aria-label="Đóng bảng sao lưu" title="Đóng (Esc)">✕</button>
+          <button type="button" class="transfer-panel-close-btn" aria-label="Đóng bảng sao lưu" title="Đóng (Esc)">✕</button>
         </div>
         <div class="transfer-panel-content">
           <div class="transfer-actions">
-            <button onclick="exportProgress()">💾 Tải bản sao tiến trình</button>
-            <button onclick="document.getElementById('importFile').click()">📂 Khôi phục từ bản sao</button>
+            <button type="button" id="exportProgressBtn">💾 Tải bản sao tiến trình</button>
+            <button type="button" id="importTriggerBtn">📂 Khôi phục từ bản sao</button>
           </div>
           <label class="retention-setting">
             <span>Độ ghi nhớ mong muốn: <strong id="desiredRetentionValue">90%</strong></span>
             <input id="desiredRetentionSlider" type="range" min="0.80" max="0.97" step="0.01" value="0.90"
-              aria-label="Độ ghi nhớ mong muốn" oninput="updateDesiredRetention(this.value)">
+              aria-label="Độ ghi nhớ mong muốn">
           </label>
           <p class="transfer-note">Tiến trình đã được tự động lưu trên thiết bị này. Bạn chỉ cần sao lưu khi muốn chuyển sang thiết bị khác.</p>
         </div>
       </div>
-      <input type="file" id="importFile" accept="application/json" style="display:none" onchange="importProgress(event)">
+      <input type="file" id="importFile" accept="application/json" style="display:none">
 
       <div id="cardArea">
         <div class="loading-text" id="loadingText">Đang tải dữ liệu...</div>
@@ -619,7 +619,7 @@
   <!-- SCREEN 2: Today reviews & quick forgotten reviews (Zen Focus Mode) -->
   <div id="screenTodayReviews" class="today-reviews-screen" style="display:none">
     <header class="today-review-topbar">
-      <button class="today-review-back-btn" type="button" onclick="SpaRouter.navigateBack()" aria-label="Quay lại">
+      <button class="today-review-back-btn" type="button" aria-label="Quay lại">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
         <span>Quay lại</span>
       </button>
@@ -699,22 +699,22 @@
 <script type="module" src="assets/js/preact/islands.js?v=3.18.0"></script>
 <!-- Mobile Bottom Navigation Bar -->
 <nav class="mobile-bottom-nav" id="mobileBottomNav" aria-label="Điều hướng di động">
-  <button type="button" class="mobile-nav-item active" id="mobNavVocab" onclick="setPrimaryTab('vocab')" aria-label="Trang chủ Từ vựng">
+  <button type="button" class="mobile-nav-item active" id="mobNavVocab" aria-label="Trang chủ Từ vựng">
     <svg class="mobile-nav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
     <span class="mobile-nav-label">Từ vựng</span>
   </button>
-  <button type="button" class="mobile-nav-item" id="mobNavReview" onclick="setPrimaryTab('review')" aria-label="Ôn nhanh từ vựng">
+  <button type="button" class="mobile-nav-item" id="mobNavReview" aria-label="Ôn nhanh từ vựng">
     <svg class="mobile-nav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
     <span class="mobile-nav-label">Ôn nhanh</span>
   </button>
-  <button type="button" class="mobile-nav-item" id="mobNavNotebook" onclick="openMobileNotebookSheet()" aria-label="Mở sổ từ và tra cứu">
+  <button type="button" class="mobile-nav-item" id="mobNavNotebook" aria-label="Mở sổ từ và tra cứu">
     <div class="mobile-nav-icon-wrap">
       <svg class="mobile-nav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>
       <span class="mobile-nav-badge" id="mobNotebookBadge" hidden>0</span>
     </div>
     <span class="mobile-nav-label">Sổ từ</span>
   </button>
-  <button type="button" class="mobile-nav-item" id="mobNavProfile" onclick="openMobileProfileOrStats()" aria-label="Thống kê học tập">
+  <button type="button" class="mobile-nav-item" id="mobNavProfile" aria-label="Thống kê học tập">
     <svg class="mobile-nav-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
     <span class="mobile-nav-label">Thống kê</span>
   </button>

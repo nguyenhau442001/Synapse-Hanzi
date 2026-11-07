@@ -237,7 +237,7 @@ Toàn bộ các file logic JavaScript cũ trong `assets/js/` và `assets/flashca
 - `assets/js/state.js` → `src/islands/AppState.js`
 - Inline SW Registration & Update Banner (~100 dòng trong `<head>`) → `src/islands/ServiceWorkerManager.js`
 
-Trong `index.html` chỉ còn lại duy nhất `assets/js/hanviet-dict.js` (file dữ liệu tĩnh 341KB tra cứu âm Hán-Việt, được build bởi `tools/build_hanviet_data.py`), còn lại 100% logic ứng dụng và vòng đời Service Worker chạy qua Preact islands bundle. Toàn bộ 4.3k LOC của prototype SPA cũ đã được dọn sạch khỏi `src/`.
+Trong `index.html` chỉ còn lại duy nhất `assets/js/hanviet-dict.js` (file dữ liệu tĩnh 341KB tra cứu âm Hán-Việt, được build bởi `tools/build_hanviet_data.py`), toàn bộ inline `onclick`/`onchange`/`oninput` đã được dọn sạch và chuyển sang event listener bindings trong `AppBootstrap.js`. Toàn bộ 4.3k LOC của prototype SPA cũ đã được dọn sạch khỏi `src/`.
 
 ---
 

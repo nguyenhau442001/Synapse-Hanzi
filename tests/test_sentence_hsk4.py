@@ -70,7 +70,7 @@ def test_index_html_sentence_game_ui_integration():
     # Tools menu tab label
     assert "Xếp câu HSK4" in content
     assert 'aria-controls="screenSentenceGame"' in content
-    assert "setPrimaryTab('sentenceGame')" in content
+    assert 'data-tab="sentenceGame"' in content
 
     # Screen DOM elements (the screen body is rendered by the Preact island)
     assert 'id="screenSentenceGame"' in content

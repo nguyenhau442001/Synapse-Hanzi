@@ -26,8 +26,8 @@ def test_reading_analysis_syntax_and_references():
 def test_tools_menu_contains_reading_tools():
     index_html = (ROOT / "index.html").read_text(encoding="utf-8")
     assert 'id="primaryGamesMenu"' in index_html
-    assert 'onclick="setPrimaryTab(\'gradedReading\')"' in index_html
-    assert 'onclick="setPrimaryTab(\'reading\')"' in index_html
+    assert 'data-tab="gradedReading"' in index_html
+    assert 'data-tab="reading"' in index_html
     assert 'id="screenReadingAnalysis"' in index_html
     assert 'id="screenGradedReading"' in index_html
 
