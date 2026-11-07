@@ -20,6 +20,7 @@ import { mountGradedReading } from './GradedReading';
 import { mountReadingAnalysis } from './ReadingAnalysis';
 import { mountListeningPractice } from './ListeningPractice';
 import { mountQuickAccessDrawer } from './QuickAccessDrawer';
+import { mountHomeWidgets } from './HomeWidgets';
 
 mountStudyHelpModal();
 mountGuessWordGame();
@@ -40,3 +41,4 @@ mountGradedReading();
 mountReadingAnalysis();
 mountListeningPractice();
 mountQuickAccessDrawer();
+mountHomeWidgets();

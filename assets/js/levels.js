@@ -526,6 +526,36 @@ function renderLearningDashboard() {
   invalidateHomeWidgets();
 }
 
+// Home widgets (src/islands/HomeWidgets.jsx) refresh once per progress change, only while home is
+// visible. The scheduling stays here because renderLearningDashboard() runs while scripts load.
+let homeWidgetsDirty = true;
+let homeWidgetsSyncFrame = 0;
+
+function isHomeScreen() {
+  const hub = document.getElementById('screenVocabHub');
+  const todayReviews = document.getElementById('screenTodayReviews');
+  return !currentLevel
+    && Boolean(hub) && hub.style.display !== 'none'
+    && (!todayReviews || todayReviews.style.display === 'none');
+}
+
+// Deferred one frame so callers that change screens right after (selectLevel, openTodayReviews)
+// are settled before we decide whether home is showing.
+function syncHomeScreen() {
+  if (homeWidgetsSyncFrame) return;
+  homeWidgetsSyncFrame = requestAnimationFrame(() => {
+    homeWidgetsSyncFrame = 0;
+    const home = isHomeScreen();
+    document.body.classList.toggle('home-screen', home);
+    if (home && homeWidgetsDirty && typeof window.refreshHomeWidgets === 'function') window.refreshHomeWidgets();
+  });
+}
+
+function invalidateHomeWidgets() {
+  homeWidgetsDirty = true;
+  syncHomeScreen();
+}
+
 function quickStartLearning() {
   const button = document.getElementById('quickStudyButton');
   const continuation = document.getElementById('continueLearningCard');
