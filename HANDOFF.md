@@ -1,17 +1,22 @@
 # Bàn giao cho Antigravity — Synapse Hanzi (汉字思维 · Hanzi Mind)
 
-> Cập nhật: 2026-11-07, sau commit `5087a34c5`, phiên bản `3.16.0` (tag `v3.16.0`).
-> Tài liệu này tóm tắt mọi việc Claude đã làm ở các session trước và những việc còn dở, để agent khác làm tiếp mà không phải đoán.
+> Cập nhật: 2026-11-07, sau commit `e6fdc14ef`, phiên bản `3.17.0` (tag `v3.17.0`).
+> Tài liệu này tóm tắt mọi việc đã làm ở các session trước và những việc còn dở, để agent khác làm tiếp mà không phải đoán.
 > **Đọc `AGENTS.md` và `CLAUDE.md` trước** — các quy tắc ở đó là bắt buộc.
 
 ---
 
-## 0. TL;DR — việc cần làm ngay
+## 0. TL;DR — việc cần làm tiếp theo
 
-1. **Có một phần đang làm dở, CHƯA commit**: port màn hình flashcard Bộ thủ (`assets/js/radical-card.js`) sang Preact island `src/islands/RadicalCards.jsx`. Code đã viết xong, bundle đã build, toàn bộ test đều pass, nhưng **chưa được kiểm chứng parity giao diện** (so DOM/ảnh chụp với bản cũ) và **chưa commit**. Xem mục 4.
-2. Trong working tree còn **các thay đổi CSS (`assets/css/workstation.css`, `assets/css/flashcard.css`) từ 2026-11-06** không thuộc phần Bộ thủ — đó là việc gộp các rule CSS trùng selector (tiếp nối loạt `refactor(css): fold ...`). Commit riêng, xem mục 4.3.
-3. File `database/prebuilt_audio/hsk30_6/words/0687.mp3` (untracked) là **của người dùng** (họ chạy build audio song song). **Không được `git add` file này**, không dùng `git add -A` / `git add .`.
-4. Sau đó tiếp tục port các module legacy còn lại sang Preact island (mục 5), mỗi phần một commit, giao diện phải **giống hệt**.
+1. **Đã hoàn thành và release v3.17.0**:
+   - Gộp CSS trùng lặp trong `assets/css/workstation.css` và `assets/css/flashcard.css` (commit `ad25b331e`).
+   - Port flashcard Bộ thủ và tab tổng quan sang Preact island `src/islands/RadicalCards.jsx` với parity 100% verified (commit `754e7eebd`).
+   - Release `v3.17.0` (tag `v3.17.0`).
+2. File `database/prebuilt_audio/hsk30_6/words/0687.mp3` (untracked) là **của người dùng** (họ chạy build audio song song). **Không được `git add` file này**, không dùng `git add -A` / `git add .`.
+3. Tiếp tục port các module legacy còn lại sang Preact island (mục 5), mỗi phần một commit, giao diện phải **giống hệt**. Tiếp theo ưu tiên:
+   - `assets/js/radicals.js` (hub danh sách bộ thủ & router tab bộ thủ).
+   - `assets/js/stroke-canvas.js` (canvas luyện viết nét chữ).
+   - `assets/js/fast-review.js` (ôn nhanh).
 
 ---
 
