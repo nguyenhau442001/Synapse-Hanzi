@@ -1090,107 +1090,7 @@ if ('serviceWorker' in navigator) {
   </div>
 
   <!-- SCREEN 7: Sentence Game (HSK 4 Hanban Mock Exams) -->
-  <div id="screenSentenceGame" style="display:none">
-    <div class="sentence-game">
-      <header class="sentence-game-header">
-        <div class="sentence-game-top-bar">
-          <div class="sentence-game-title-group">
-            <h2 class="sentence-game-title">🧩 Xếp câu HSK4</h2>
-            <span class="sentence-game-counter" id="sentenceGameCounter">Đề 1 (H41001) · Câu 86</span>
-          </div>
-          <div class="sentence-game-tools">
-            <div class="sentence-exam-selector-group">
-              <label for="sentenceGameExamSelect" class="sentence-exam-label">Đề thi:</label>
-              <select id="sentenceGameExamSelect" class="sentence-exam-select" onchange="setSentenceGameExam(this.value)" aria-label="Chọn đề thi HSK 4"></select>
-            </div>
-            <button type="button" class="sentence-tool-btn active" id="sentenceGamePinyinBtn" onclick="toggleSentenceGamePinyin()" title="Bật hoặc tắt Pinyin" aria-label="Bật hoặc tắt Pinyin">
-              <span id="sentenceGamePinyinIcon">👁</span> <span id="sentenceGamePinyinLabel">Pinyin: Bật</span>
-            </button>
-            <button type="button" class="sentence-tool-btn" id="sentenceGameFocusBtn" onclick="toggleSentenceGameFocus()" title="Bật hoặc tắt chế độ tập trung" aria-label="Bật hoặc tắt chế độ tập trung">
-              <span id="sentenceGameFocusIcon">🎯</span> <span id="sentenceGameFocusLabel">Tập trung</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Question Navigator (Q86 - Q95) -->
-        <nav class="sentence-question-nav-container" aria-label="Điều hướng câu hỏi">
-          <span class="sentence-question-nav-label">Câu hỏi:</span>
-          <div class="sentence-question-nav" id="sentenceQuestionNav" role="tablist" aria-label="Danh sách câu hỏi đề thi"></div>
-        </nav>
-      </header>
-
-      <!-- Sentence card board -->
-      <section class="sentence-card-board" aria-label="Bàn sắp xếp câu">
-        <div class="sentence-prompt">
-          <div class="sentence-prompt-header">
-            <span class="sentence-prompt-title">HSK 4 · 书写 第一部分: 完成句子</span>
-            <div class="sentence-card-meta">
-              <span class="sentence-level-tag" id="sentenceLevelTag">HSK 4 · Câu 86</span>
-            </div>
-          </div>
-          <div class="sentence-game-instruction">Sắp xếp các cụm từ bên dưới thành câu hoàn chỉnh theo ngữ pháp tiếng Trung:</div>
-        </div>
-
-        <!-- Target slots area -->
-        <div class="sentence-slots-wrapper">
-          <div class="sentence-slots-label">
-            <span class="sentence-sub-title">Ghép các thẻ từ thành câu hoàn chỉnh:</span>
-            <button type="button" class="sentence-reset-slots-btn" id="sentenceGameResetBtn" onclick="resetSentenceGameSlots()" title="Đặt lại câu để ghép lại từ đầu" disabled>
-              <span class="reset-icon">↺</span> <span>Làm lại</span>
-            </button>
-          </div>
-          <div class="sentence-game-slots is-empty" id="sentenceGameSlots" role="region" aria-label="Khu vực xếp từ"></div>
-        </div>
-
-        <!-- Word bank area -->
-        <div class="sentence-bank-wrapper" id="sentenceBankWrapper">
-          <div class="sentence-bank-label">
-            <span class="sentence-sub-title" id="sentenceBankTitle">Kho cụm từ (Bấm hoặc dùng phím số 1-9):</span>
-          </div>
-          <div class="sentence-game-bank" id="sentenceGameBank" role="group" aria-label="Kho cụm từ để chọn"></div>
-        </div>
-
-        <!-- Dynamic feedback message (errors, warnings, hints) -->
-        <div class="sentence-game-feedback" id="sentenceGameFeedback" role="status" aria-live="polite"></div>
-
-        <!-- Consolidated Result Card (when solved) -->
-        <div class="sentence-result-card" id="sentenceResultCard" hidden>
-          <div class="sentence-result-header">
-            <div class="sentence-result-status">
-              <span class="sentence-result-check-icon">✓</span>
-              <span class="sentence-result-status-text" id="sentenceResultStatusText">Chính xác! Bạn đã hoàn thành câu.</span>
-            </div>
-            <div class="sentence-result-actions">
-              <button type="button" class="sentence-result-speak-btn" id="sentenceResultSpeakBtn" onclick="speakCurrentSentence()" title="Nghe đọc lại câu" aria-label="Nghe đọc câu">
-                <span>🔊</span> <span>Nghe đọc</span>
-              </button>
-              <button type="button" class="sentence-action-btn sentence-action-btn--success" id="sentenceResultNextBtn" onclick="loadNextSentenceGameRound()">
-                <span>Câu tiếp theo →</span>
-              </button>
-            </div>
-          </div>
-          <div class="sentence-result-body">
-            <div class="sentence-result-zh" id="sentenceResultZh"></div>
-            <div class="sentence-result-py" id="sentenceResultPy"></div>
-            <div class="sentence-result-vi" id="sentenceResultVi"></div>
-          </div>
-          <details class="sentence-grammar-disclosure" id="sentenceGrammarDisclosure" hidden>
-            <summary class="sentence-grammar-summary">
-              <span>💡 Phân tích cấu trúc ngữ pháp</span>
-              <span class="disclosure-arrow">▾</span>
-            </summary>
-            <div class="sentence-grammar-content" id="sentenceGrammarContent"></div>
-          </details>
-        </div>
-
-        <!-- Primary in-progress actions -->
-        <div class="sentence-game-actions" id="sentenceGameActions">
-          <button type="button" class="sentence-action-btn sentence-action-btn--secondary" id="sentenceGameHintBtn" onclick="revealSentenceHint()" title="Xem gợi ý câu">💡 Gợi ý</button>
-          <button type="button" class="sentence-action-btn sentence-action-btn--primary" id="sentenceGameCheckBtn" onclick="checkSentenceGameAnswer()">Kiểm tra đáp án</button>
-        </div>
-      </section>
-    </div>
-  </div>
+  <div id="screenSentenceGame" style="display:none"></div><!-- Preact island: src/islands/SentenceGame.jsx -->
 
   <!-- SCREEN 8: Guess-the-word (emoji) game -->
   <div id="screenGuessWord" style="display:none"></div><!-- Preact island: src/islands/GuessWordGame.jsx -->
@@ -1222,7 +1122,6 @@ if ('serviceWorker' in navigator) {
 <script src="assets/js/levels.js?v=3.14.6"></script>
 <script src="assets/js/topics.js?v=3.14.6"></script>
 <script src="assets/js/hsk30.js?v=3.14.6"></script>
-<script src="assets/js/sentence-game.js?v=3.14.6"></script>
 <script src="assets/js/vocabulary-overview.js?v=3.14.6"></script>
 <script src="assets/js/fast-review.js?v=3.14.6"></script>
 <script src="assets/js/hanviet-dict.js?v=3.14.6"></script>

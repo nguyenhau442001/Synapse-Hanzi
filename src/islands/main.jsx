@@ -4,7 +4,9 @@
 import { mountStudyHelpModal } from './StudyHelpModal';
 import { mountGuessWordGame } from './GuessWordGame';
 import { mountSpeedQuizGame } from './SpeedQuizGame';
+import { mountSentenceGame } from './SentenceGame';
 
 mountStudyHelpModal();
 mountGuessWordGame();
 mountSpeedQuizGame();
+mountSentenceGame();

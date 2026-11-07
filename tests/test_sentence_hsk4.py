@@ -1,3 +1,4 @@
+from pathlib import Path
 import json
 import os
 import re
@@ -71,8 +72,9 @@ def test_index_html_sentence_game_ui_integration():
     assert 'aria-controls="screenSentenceGame"' in content
     assert "setPrimaryTab('sentenceGame')" in content
 
-    # Screen DOM elements
+    # Screen DOM elements (the screen body is rendered by the Preact island)
     assert 'id="screenSentenceGame"' in content
+    content = (Path(INDEX_PATH).parent / "src" / "islands" / "SentenceGame.jsx").read_text(encoding="utf-8")
     assert 'id="sentenceGameExamSelect"' in content
     assert 'id="sentenceQuestionNav"' in content
     assert 'id="sentenceGameSlots"' in content

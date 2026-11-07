@@ -193,7 +193,7 @@ Mở trình duyệt truy cập: **`http://localhost:8000/`** (hoặc `http://loc
 ```bash
 npm run build:islands   # build src/islands -> assets/js/preact/islands.js (commit file này)
 ```
-Đã chuyển: modal Hướng dẫn & Trợ giúp (`StudyHelpModal.jsx`), game Đuổi hình bắt chữ (`GuessWordGame.jsx`), game Điền từ vào câu (`SpeedQuizGame.jsx`).
+Đã chuyển: modal Hướng dẫn & Trợ giúp (`StudyHelpModal.jsx`), game Đuổi hình bắt chữ (`GuessWordGame.jsx`), game Điền từ vào câu (`SpeedQuizGame.jsx`), game Xếp câu HSK4 (`SentenceGame.jsx`).
 
 ---
 
