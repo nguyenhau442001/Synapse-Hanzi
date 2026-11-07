@@ -1,11 +1,14 @@
 // HSK 3.0 level picker: version switcher + dynamic grid, reusing the LEVELS/selectLevel pipeline.
-// HSK 3.0 is the current standard and shown by default; HSK 2.0 is kept as a legacy option.
-// Storage key bumped so earlier saved '2.0' defaults migrate to HSK 3.0 once.
-const PICKER_VERSION_STORAGE_KEY = 'hsk_picker_version_v2';
-const DEFAULT_PICKER_VERSION = '3.0';
-let pickerVersion = DEFAULT_PICKER_VERSION;
+// Preact island port replacing legacy assets/js/hsk30.js.
+import { onDomReady } from './domReady';
 
-function getInitialPickerVersion() {
+/* global LEVELS_HSK30, hsk30LevelKeys, readSavedLevelProgress, formatProgressPercent, selectLevel */
+
+export const PICKER_VERSION_STORAGE_KEY = 'hsk_picker_version_v2';
+export const DEFAULT_PICKER_VERSION = '3.0';
+export let pickerVersion = DEFAULT_PICKER_VERSION;
+
+export function getInitialPickerVersion() {
   try {
     const params = new URLSearchParams(window.location.search);
     const paramVer = params.get('version');
@@ -18,8 +21,11 @@ function getInitialPickerVersion() {
   return DEFAULT_PICKER_VERSION;
 }
 
-function setPickerVersion(version) {
+export function setPickerVersion(version) {
   pickerVersion = version;
+  if (typeof window !== 'undefined') {
+    window.pickerVersion = version;
+  }
   try {
     localStorage.setItem(PICKER_VERSION_STORAGE_KEY, version);
   } catch (e) {}
@@ -32,21 +38,18 @@ function setPickerVersion(version) {
   if (version === '3.0') renderHsk30Grid();
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  setPickerVersion(getInitialPickerVersion());
-});
-
-function hsk30KnownCount(level) {
-  const data = readSavedLevelProgress(level);
+export function hsk30KnownCount(level) {
+  const data = typeof readSavedLevelProgress === 'function' ? readSavedLevelProgress(level) : {};
   return Object.values(data).filter(status => status === 'known').length;
 }
 
-function renderHsk30Grid() {
+export function renderHsk30Grid() {
   const grid = document.getElementById('levelGrid30');
-  if (!grid) return;
+  if (!grid || typeof hsk30LevelKeys !== 'function' || typeof LEVELS_HSK30 === 'undefined') return;
 
   grid.innerHTML = hsk30LevelKeys().map(key => {
     const cfg = LEVELS_HSK30[key];
+    if (!cfg) return '';
     const known = hsk30KnownCount(key);
     const rawPct = cfg.total > 0 ? (known / cfg.total * 100) : 0;
     const pctStr = typeof formatProgressPercent === 'function'
@@ -90,3 +93,16 @@ function renderHsk30Grid() {
   }).join('');
 }
 
+export function mountHsk30Grid() {
+  window.pickerVersion = pickerVersion;
+  window.setPickerVersion = setPickerVersion;
+  window.hsk30KnownCount = hsk30KnownCount;
+  window.renderHsk30Grid = renderHsk30Grid;
+  window.getInitialPickerVersion = getInitialPickerVersion;
+  window.PICKER_VERSION_STORAGE_KEY = PICKER_VERSION_STORAGE_KEY;
+  window.DEFAULT_PICKER_VERSION = DEFAULT_PICKER_VERSION;
+
+  onDomReady(() => {
+    setPickerVersion(getInitialPickerVersion());
+  });
+}

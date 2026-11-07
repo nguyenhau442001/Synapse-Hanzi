@@ -30,6 +30,7 @@ import { mountStudyProgress } from './StudyProgress';
 import { mountDashboardEnhancements } from './DashboardEnhancements';
 import { mountCardInteractions } from './CardInteractions';
 import { mountWordIllustrations } from './WordIllustrations';
+import { mountHsk30Grid } from './Hsk30Grid';
 
 mountAmbientBackground();
 mountStudyHelpModal();
@@ -60,3 +61,4 @@ mountStudyProgress();
 mountDashboardEnhancements();
 mountCardInteractions();
 mountWordIllustrations();
+mountHsk30Grid();

@@ -21,7 +21,6 @@ const PRECACHE_ASSET_URLS = [
   './assets/css/quick-access-drawer.css?v=' + APP_VERSION,
   './assets/js/hanviet-dict.js?v=' + APP_VERSION,
   './assets/js/preact/islands.js?v=' + APP_VERSION,
-  './assets/js/hsk30.js?v=' + APP_VERSION,
   './assets/js/levels.js?v=' + APP_VERSION,
   './assets/css/listening-practice.css?v=' + APP_VERSION,
   './assets/images/chinese_landscape_light.svg',
