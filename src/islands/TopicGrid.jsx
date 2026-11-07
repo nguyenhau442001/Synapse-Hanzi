@@ -1,12 +1,16 @@
 // Topic tab: dynamic grid of topic decks, reusing the LEVELS/selectLevel pipeline.
-function topicKnownCount(topicKey) {
-  const data = readSavedLevelProgress(topicKey);
+// Preact island port replacing legacy assets/js/topics.js.
+
+/* global TOPICS, readSavedLevelProgress, formatProgressPercent, selectLevel */
+
+export function topicKnownCount(topicKey) {
+  const data = typeof readSavedLevelProgress === 'function' ? readSavedLevelProgress(topicKey) : {};
   return Object.values(data).filter(status => status === 'known').length;
 }
 
-function renderTopicGrid() {
+export function renderTopicGrid() {
   const grid = document.getElementById('topicGrid');
-  if (!grid) return;
+  if (!grid || typeof TOPICS === 'undefined') return;
   const keys = Object.keys(TOPICS);
   if (keys.length === 0) {
     grid.innerHTML = '<div class="loading-text">Chưa có chủ đề nào.</div>';
@@ -28,4 +32,9 @@ function renderTopicGrid() {
         <div class="lvl-mastery-text">${known} / ${topic.total} đã nhớ (${pctStr})</div>
       </button>`;
   }).join('');
+}
+
+export function mountTopicGrid() {
+  window.topicKnownCount = topicKnownCount;
+  window.renderTopicGrid = renderTopicGrid;
 }

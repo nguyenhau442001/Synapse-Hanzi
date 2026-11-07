@@ -31,6 +31,7 @@ import { mountDashboardEnhancements } from './DashboardEnhancements';
 import { mountCardInteractions } from './CardInteractions';
 import { mountWordIllustrations } from './WordIllustrations';
 import { mountHsk30Grid } from './Hsk30Grid';
+import { mountTopicGrid } from './TopicGrid';
 
 mountAmbientBackground();
 mountStudyHelpModal();
@@ -62,3 +63,4 @@ mountDashboardEnhancements();
 mountCardInteractions();
 mountWordIllustrations();
 mountHsk30Grid();
+mountTopicGrid();

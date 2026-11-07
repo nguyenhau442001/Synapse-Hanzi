@@ -530,4 +530,11 @@ var e={desktopParticles:4,mobileParticles:2,mobileBreakpoint:768,mistLayers:2,in
           <span class="lvl-mastery-text">${n.toLocaleString(`vi-VN`)} / ${t.total.toLocaleString(`vi-VN`)} đã nhớ</span>
           ${u}
         </div>
-      </button>`}).join(``))}function ev(){window.pickerVersion=Y_,window.setPickerVersion=Z_,window.hsk30KnownCount=Q_,window.renderHsk30Grid=$_,window.getInitialPickerVersion=X_,window.PICKER_VERSION_STORAGE_KEY=J_,window.DEFAULT_PICKER_VERSION=`3.0`,Ni(()=>{Z_(X_())})}r(),Kt(),un(),or(),$r(),gi(),Mi(),na(),ia(),Da(),Ps(),za(),vo(),Do(),Io(),fs(),ec(),Tl(),cd(),dp(),Zp(),km(),th(),Jh(),Vg(),f_(),g_(),S_(),q_(),ev();
+      </button>`}).join(``))}function ev(){window.pickerVersion=Y_,window.setPickerVersion=Z_,window.hsk30KnownCount=Q_,window.renderHsk30Grid=$_,window.getInitialPickerVersion=X_,window.PICKER_VERSION_STORAGE_KEY=J_,window.DEFAULT_PICKER_VERSION=`3.0`,Ni(()=>{Z_(X_())})}function tv(e){let t=typeof readSavedLevelProgress==`function`?readSavedLevelProgress(e):{};return Object.values(t).filter(e=>e===`known`).length}function nv(){let e=document.getElementById(`topicGrid`);if(!e||typeof TOPICS>`u`)return;let t=Object.keys(TOPICS);e.innerHTML=t.length===0?`<div class="loading-text">Chưa có chủ đề nào.</div>`:t.map(e=>{let t=TOPICS[e],n=tv(e),r=t.total>0?n/t.total*100:0,i=typeof formatProgressPercent==`function`?formatProgressPercent(n,t.total):`${Math.round(r)}%`;return`
+      <button class="level-card" type="button" ${t.available?`onclick="selectLevel('${e}')"`:`disabled`}>
+        <div class="lvl-num">${t.icon||`🏷️`}</div>
+        <div class="lvl-label">${t.label}</div>
+        <div class="lvl-count">${t.total} từ</div>
+        <div class="lvl-mastery-track"><div class="lvl-mastery-fill" style="width:${n>0?Math.max(r,.75):0}%"></div></div>
+        <div class="lvl-mastery-text">${n} / ${t.total} đã nhớ (${i})</div>
+      </button>`}).join(``)}function rv(){window.topicKnownCount=tv,window.renderTopicGrid=nv}r(),Kt(),un(),or(),$r(),gi(),Mi(),na(),ia(),Da(),Ps(),za(),vo(),Do(),Io(),fs(),ec(),Tl(),cd(),dp(),Zp(),km(),th(),Jh(),Vg(),f_(),g_(),S_(),q_(),ev(),rv();
