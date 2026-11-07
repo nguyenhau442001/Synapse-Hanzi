@@ -5,8 +5,10 @@ import { mountStudyHelpModal } from './StudyHelpModal';
 import { mountGuessWordGame } from './GuessWordGame';
 import { mountSpeedQuizGame } from './SpeedQuizGame';
 import { mountSentenceGame } from './SentenceGame';
+import { mountVocabularyOverview } from './VocabularyOverview';
 
 mountStudyHelpModal();
 mountGuessWordGame();
 mountSpeedQuizGame();
 mountSentenceGame();
+mountVocabularyOverview();

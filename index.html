@@ -789,38 +789,7 @@ if ('serviceWorker' in navigator) {
       </div>
     </div>
 
-    <div id="overviewView" role="tabpanel" aria-labelledby="overviewTab" hidden>
-      <div class="overview-heading">
-        <div>
-          <h2 id="overviewTitle">Toàn bộ từ vựng</h2>
-          <p id="overviewDescription">Xem trước trọn bộ từ của cấp độ này.</p>
-        </div>
-        <span class="overview-total" id="overviewTotal">0 từ</span>
-      </div>
-
-      <div class="overview-controls">
-        <label class="overview-search">
-          <span aria-hidden="true">⌕</span>
-          <input id="overviewSearch" type="search" autocomplete="off"
-            placeholder="Tìm chữ Hán, pinyin hoặc nghĩa..."
-            aria-label="Tìm trong danh sách từ vựng"
-            oninput="updateOverviewSearch(this.value)">
-        </label>
-        <label class="overview-status-label">
-          <span class="sr-only">Lọc theo trạng thái học</span>
-          <select id="overviewStatus" aria-label="Lọc theo trạng thái học"
-            onchange="updateOverviewStatus(this.value)">
-            <option value="all">Tất cả trạng thái</option>
-            <option value="unseen">Chưa học</option>
-            <option value="unknown">Chưa nhớ</option>
-            <option value="known">Đã nhớ</option>
-          </select>
-        </label>
-      </div>
-
-      <div class="overview-result-summary" id="overviewResultSummary" role="status"></div>
-      <div class="vocabulary-list" id="vocabularyList"></div>
-    </div>
+    <div id="overviewView" role="tabpanel" aria-labelledby="overviewTab" hidden></div><!-- Preact island: src/islands/VocabularyOverview.jsx -->
 
   </div>
 
@@ -1122,7 +1091,6 @@ if ('serviceWorker' in navigator) {
 <script src="assets/js/levels.js?v=3.15.0"></script>
 <script src="assets/js/topics.js?v=3.15.0"></script>
 <script src="assets/js/hsk30.js?v=3.15.0"></script>
-<script src="assets/js/vocabulary-overview.js?v=3.15.0"></script>
 <script src="assets/js/fast-review.js?v=3.15.0"></script>
 <script src="assets/js/hanviet-dict.js?v=3.15.0"></script>
 <script src="assets/js/flashcard.js?v=3.15.0"></script>
