@@ -23,10 +23,11 @@
    - Port topic decks grid sang Preact island `src/islands/TopicGrid.jsx` (commit `ec7e8702e`).
    - Port backup & sync logic sang Preact island `src/islands/BackupSync.jsx` (commit `9e236dae0`).
    - Port time-based theme and toggle logic sang Preact island `src/islands/ThemeManager.js` (commit `8aab75e75`).
+   - Port TTS Web Speech & prebuilt audio player sang Preact island `src/islands/SpeechAudio.js` (commit `bbe6a5c80`).
 2. File `database/prebuilt_audio/hsk30_6/words/0687.mp3` (untracked) là **của người dùng** (họ chạy build audio song song). **Không được `git add` file này**, không dùng `git add -A` / `git add .`.
 3. Tiếp tục port các module legacy còn lại sang Preact island (mục 5), mỗi phần một commit, giao diện phải **giống hệt**. Tiếp theo ưu tiên:
-   - `assets/js/speechService.js` & `assets/js/speech.js`.
    - `assets/js/radicals-state.js`.
+   - `assets/flashcards.js`.
    - Màn flashcard chính (`flashcard.js`, `levels.js`).
 
 ---
