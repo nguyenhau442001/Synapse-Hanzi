@@ -31,9 +31,9 @@
    - Port FSRS spaced repetition engine wrapper sang Preact island `src/islands/SrsEngine.js` (commit `a7b660ccb`).
    - Port localStorage persistence & cross-level progress coordinator sang Preact island `src/islands/StorageEngine.js` (commit `9944ec96c`).
    - Port shared utils, Pinyin matchers & version constants sang Preact island `src/islands/AppUtils.js` (commit `a2bc2d562`).
+   - Port global state & application configuration sang Preact island `src/islands/AppState.js` (commit `3e3bc0385`).
 2. File `database/prebuilt_audio/hsk30_6/words/0687.mp3` (untracked) là **của người dùng** (họ chạy build audio song song). **Không được `git add` file này**, không dùng `git add -A` / `git add .`.
 3. Tiếp tục port các module legacy còn lại sang Preact island (mục 5), mỗi phần một commit, giao diện phải **giống hệt**. Tiếp theo ưu tiên:
-   - Core services (`state.js`).
    - `assets/js/hanviet-dict.js`.
 
 ---
@@ -222,7 +222,7 @@ git push origin HEAD:main && git push origin v3.17.0
 ## 5. Còn lại cần port (legacy vẫn là classic script)
 
 File trong `assets/js/` hiện còn (load theo thứ tự trong `index.html`):
-`state.js`, `hanviet-dict.js`.
+`hanviet-dict.js`.
 
 Gợi ý thứ tự (ưu tiên module tự chứa: có màn hình/modal riêng + API `window.*` rõ ràng):
 1. `backup.js`.
