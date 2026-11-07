@@ -20,9 +20,10 @@
    - Port flashcard touch gestures & reveal interactions sang Preact island `src/islands/CardInteractions.jsx` (commit `22b2fe0d4`).
    - Bundle word illustrations & visual mnemonic engine into islands `src/islands/WordIllustrations.js` (commit `ca9e54325`).
    - Port HSK 3.0 level grid & version switcher sang Preact island `src/islands/Hsk30Grid.jsx` (commit `f66941df0`).
+   - Port topic decks grid sang Preact island `src/islands/TopicGrid.jsx` (commit `ec7e8702e`).
 2. File `database/prebuilt_audio/hsk30_6/words/0687.mp3` (untracked) là **của người dùng** (họ chạy build audio song song). **Không được `git add` file này**, không dùng `git add -A` / `git add .`.
 3. Tiếp tục port các module legacy còn lại sang Preact island (mục 5), mỗi phần một commit, giao diện phải **giống hệt**. Tiếp theo ưu tiên:
-   - `assets/js/topics.js`, `assets/js/backup.js`.
+   - `assets/js/backup.js`.
    - Màn flashcard chính (`flashcard.js`, `levels.js`).
 
 ---
@@ -211,10 +212,10 @@ git push origin HEAD:main && git push origin v3.17.0
 ## 5. Còn lại cần port (legacy vẫn là classic script)
 
 File trong `assets/js/` hiện còn (load theo thứ tự trong `index.html` dòng ~918–955):
-`utils.js`, `state.js`, `storage.js`, (ts-fsrs CDN), `srs.js`, `spa-router.js`, `levels.js`, `topics.js`, `hanviet-dict.js`, `flashcard.js`, `speechService.js`, `speech.js`, `theme.js`, `backup.js`, `radicals-state.js`, một inline `<script>`, `assets/flashcards.js`.
+`utils.js`, `state.js`, `storage.js`, (ts-fsrs CDN), `srs.js`, `spa-router.js`, `levels.js`, `hanviet-dict.js`, `flashcard.js`, `speechService.js`, `speech.js`, `theme.js`, `backup.js`, `radicals-state.js`, một inline `<script>`, `assets/flashcards.js`.
 
 Gợi ý thứ tự (ưu tiên module tự chứa: có màn hình/modal riêng + API `window.*` rõ ràng):
-1. `topics.js`, `backup.js`.
+1. `backup.js`.
 2. Màn flashcard chính (`flashcard.js`, `levels.js`) — lớn và là lõi.
 4. Services (`state`, `storage`, `srs`, `speech*`, `utils`, `spa-router`, `theme`, `backup`): có thể giữ classic lâu dài; chỉ chuyển khi không còn classic code nào gọi chúng ở top-level.
 
