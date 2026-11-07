@@ -7,6 +7,7 @@ import { mountSpeedQuizGame } from './SpeedQuizGame';
 import { mountSentenceGame } from './SentenceGame';
 import { mountVocabularyOverview } from './VocabularyOverview';
 import { mountMemoryCurve } from './MemoryCurve';
+import { mountSidebarSearch } from './SidebarSearch';
 import { mountSidebarRadicalsFilter } from './SidebarRadicalsFilter';
 import { mountWeakWords } from './WeakWords';
 import { mountSidebarTabs } from './SidebarTabs';
@@ -26,6 +27,7 @@ mountSpeedQuizGame();
 mountSentenceGame();
 mountVocabularyOverview();
 mountMemoryCurve();
+mountSidebarSearch(); // first: the dock panels below are placed relative to the search box
 mountSidebarRadicalsFilter(); // before WeakWords: the weak-words panel goes right after it
 mountWeakWords();
 mountHanziDecomposition(); // before SidebarTabs: the initial tab may render the radicals panel
